@@ -66,3 +66,28 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Quietus Ore | FU cevheri | Kaynak | Quietus Cevheri | Quietus Ore | LOCKED | Quietus özel terim olarak korunur |
 | Ammonium Sulfate | Kimyasal kaynak | Kaynak | Amonyum Sülfat | Ammonium Sulfate | LOCKED | Yerleşik bilimsel karşılık |
 | Hand Mill | Çıkarma makinesi | Nesne | El Değirmeni | Hand Mill | LOCKED | Tarım görevlerindeki kullanımla eşleştirildi |
+| Improved | Araştırma seviye sıfatı | Sıfat | Geliştirilmiş | İyileştirilmiş | LOCKED | Advanced ve Superior'dan ayrılır |
+| Advanced | Araştırma seviye sıfatı | Sıfat | Gelişmiş | İleri | LOCKED | |
+| Superior | Araştırma seviye sıfatı | Sıfat | Üstün | Eşsiz | LOCKED | Peerless'tan ayrılır |
+| Peerless | Araştırma seviye sıfatı | Sıfat | Eşsiz | Üstün | LOCKED | Jeoloji ve Mühendislikle standartlaştırıldı |
+| Mech | Oyun sistemi / araç | Sistem | Mech | Mek, Mekanik | LOCKED | Starbound sistem adı olarak korunur |
+| Tech | Oyun sistemi | Sistem | Tech | Teknoloji | LOCKED | Starbound sistem adı olarak korunur |
+| EPP | Oyun sistemi / ekipman | Sistem | EPP | - | LOCKED | Yerleşik kısaltma korunur |
+| FTL | Uzay yolculuğu sistemi | Sistem | FTL | - | LOCKED | Yerleşik bilimkurgu/oyun kısaltması korunur |
+| STL Drive | Gemi motoru | Nesne | STL Motoru | STL Sürücüsü | LOCKED | Sistem içi yolculuk motoru |
+| Extraction Device | Makine kategorisi | Sistem | Çıkarma Cihazı | Extraction Device | LOCKED | |
+| Extraction Lab | Çıkarma makinesi | Nesne | Çıkarma Laboratuvarı | Extraction Lab | LOCKED | |
+| Extraction Lab MKII | Çıkarma makinesi | Nesne | Çıkarma Laboratuvarı MKII | Extraction Lab MKII | LOCKED | |
+| Research Rate | Araştırma makinesi etiketi | UI | Araştırma Hızı | Research Rate | LOCKED | |
+| Focusing Array | Mühendislik kaynağı | Kaynak | Odaklama Dizisi | Focusing Array | LOCKED | |
+| Power Core | Mühendislik kaynağı | Kaynak | Güç Çekirdeği | Power Core | LOCKED | |
+| Nuclear Core | Mühendislik kaynağı | Kaynak | Nükleer Çekirdek | Nuclear Core | LOCKED | |
+| Particle Core | Mühendislik kaynağı | Kaynak | Parçacık Çekirdeği | Particle Core | LOCKED | |
+| Teleporter Core | Mühendislik kaynağı | Kaynak | Işınlayıcı Çekirdeği | Teleporter Core | LOCKED | Teleporter -> Işınlayıcı kararıyla uyumlu |
+| Molten Core | Mühendislik kaynağı | Kaynak | Erimiş Çekirdek | Molten Core | LOCKED | |
+| Ship Component Assembler | Gemi üretim makinesi | Nesne | Gemi Bileşeni Birleştirici | Ship Component Assembler | LOCKED | Kaynak araştırma metnindeki Ship Crafting Table yerine gerçek nesne adı esas alındı |
+| Quantum Manipulator | Araç | Nesne | Kuantum Manipülatörü | Quantum Manipulator | LOCKED | Matter Manipulator terminolojisiyle uyumlu |
+| Mech Part Crafting Table | Mech üretim makinesi | Nesne | Mech Parçası Üretim Tezgâhı | Mech Part Crafting Table | LOCKED | |
+| Core Fragments | Kaynak | Kaynak | Çekirdek Parçaları | Core Fragments | LOCKED | |
+| Atomic Furnace | Vanilla üretim makinesi | Nesne | Atomik Fırın | Atomic Furnace | APPROVED | FU Mühendislik ağacındaki referans |
+| Power Systems | Araştırma ağacı | Sistem | Güç Sistemleri | Power Systems | APPROVED | Güç ağacı ele alınırken LOCKED yapılacak |
