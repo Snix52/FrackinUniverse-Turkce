@@ -105,6 +105,8 @@ def allowed(a,p):
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
     if a.startswith('quests/fu_questlines/tutorial/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
+    if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
+        return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='radiomessages/fu_quests.radiomessages':
         return bool(re.fullmatch(r'/[A-Za-z0-9_-]+/text',p))
     if a in ('objects/crafting/matterassembler/prototyper.object','objects/crafting/designlab/designlab.object','objects/crafting/chemlab/chemlab.object'):
