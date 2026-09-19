@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.5.0-beta",
-  "note": "v0.5 Güç Sistemleri: fu_power araştırma ağacı yerelleştirildi; bağlı makineler aynı sürümde tamamlanıyor.",
+  "translation_version": "0.6.0-dev",
+  "note": "v0.6 geliştirme: Zanaatkârlık araştırma ağacı çalışma dalında yerelleştiriliyor; bağlı eşya/makine adları ve LQA henüz tamamlanmadı.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -6379,6 +6379,1105 @@
       "en": " For everything to do with wiring",
       "tr": " Kablolamayla ilgili her şey için",
       "section": "Güç Sistemleri makineleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/trees/fu_craftsmanship",
+      "en": "Craftsmanship",
+      "tr": "Zanaatkârlık",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/default/0",
+      "en": "Instructions",
+      "tr": "Kullanım Rehberi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/default/1",
+      "en": "Select a research by clicking one of the icons on the grid.\nYou can navigate the grid by dragging with the left mouse button.\n\n- The left most button at the upper part of the screen opens a list of research trees to pick from.\n\n- The second button opens a list of non-hidden research options. Click a research on the displayed to center the view on it. Click again to hide the list.\n\n- The third button will center the view on the middle of the tree, or the currently selected research.\n\n- The last button toggles ^orange;low quality mode^reset;. This makes the GUI jump to a position instead of panning to it, or the center button. In addition, dragging/navigating on the the main screen will update only after you release the mouse button. It is best to use the search list with this mode enabled.",
+      "tr": "Izgaradaki simgelerden birine tıklayarak bir araştırma seç.\nSol fare tuşunu basılı tutup sürükleyerek ağaçta gezinebilirsin.\n\n- Ekranın üst kısmındaki en soldaki düğme, seçebileceğin araştırma ağaçlarını listeler.\n\n- İkinci düğme, gizli olmayan araştırmaları listeler. Listedeki bir araştırmaya tıklayınca görünüm ona odaklanır. Listeyi kapatmak için düğmeye tekrar bas.\n\n- Üçüncü düğme, görünümü ağacın ortasına veya seçili araştırmaya odaklar.\n\n- Son düğme ^orange;düşük kalite modunu^reset; açıp kapatır. Bu modda görünüm kayarak ilerlemek yerine doğrudan hedefe geçer. Ana ekranda sürüklerken görünüm, fare tuşunu bıraktığında güncellenir. Bu mod açıkken arama listesini kullanmak daha pratiktir.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/survival_1/0",
+      "en": "Basic Training",
+      "tr": "Temel Eğitim",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/survival_1/1",
+      "en": "^orange;Tier 0^reset;\n\nYour training, thanks to four years in the Protectorate Academy, provides you with basic survival skills to keep you alive for extended periods in the event of a crash.",
+      "tr": "^orange;Kademe 0^reset;\n\nProtectorate Akademisi’nde aldığın dört yıllık eğitim, bir kaza sonrasında uzun süre hayatta kalmanı sağlayacak temel becerileri kazandırdı.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing1/0",
+      "en": "Plant Fibre Sewing",
+      "tr": "Bitki Lifi Dikişi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned the basics of sewing and can now create simple articles out of woven plant fibre.",
+      "tr": "^orange;Kademe 1^reset;\n\nDikişin temellerini öğrendin; artık dokunmuş bitki lifinden basit giysiler ve eşyalar üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/fashion1/0",
+      "en": "Simple Fashion",
+      "tr": "Basit Moda",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/fashion1/1",
+      "en": "^orange;Tier 1^reset;\n\nBy applying your knowledge of sewing, you can now make many simple fashionable items out of plant fibre fabric.",
+      "tr": "^orange;Kademe 1^reset;\n\nDikiş bilgini kullanarak bitki lifi kumaşından çeşitli basit ve şık giysiler yapabilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing2/0",
+      "en": "Cotton Sewing",
+      "tr": "Pamuk Dikişi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing2/1",
+      "en": "^orange;Tier 2^reset;\n\nYour sewing skill has improved. You are now able to spin cotton into usable wool for use in all sorts of stuff.",
+      "tr": "^orange;Kademe 2^reset;\n\nDikiş becerin gelişti. Artık pamuğu eğirip pek çok üretimde kullanılan yüne dönüştürebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/fashion2/0",
+      "en": "Advanced Fashion",
+      "tr": "Gelişmiş Moda",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/fashion2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've become quite knowledgeable about galactic fashion trends and can make better cotton-based clothing to spice up your appearance.",
+      "tr": "^orange;Kademe 2^reset;\n\nGalaktik moda akımlarında epey bilgili oldun; görünümünü zenginleştirecek daha kaliteli pamuklu giysiler üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing3/0",
+      "en": "Silk Sewing",
+      "tr": "İpek Dikişi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou now have the talent to weave silk into sheets used for crafting advanced armors and furniture.",
+      "tr": "^orange;Kademe 3^reset;\n\nArtık ipeği, gelişmiş zırh ve mobilya üretiminde kullanılan kumaşlara dokuyabilecek kadar ustasın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/fashion3/0",
+      "en": "Fashion Mastery",
+      "tr": "Moda Ustalığı",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/fashion3/1",
+      "en": "^orange;Tier 3^reset;\n\nSo great is your artistry with fashionable clothing creation that you can make beautiful gowns that are sure to get you a discount when trading goods with space stations by virtue of your sheer magnificence.",
+      "tr": "^orange;Kademe 3^reset;\n\nModa tasarımındaki ustalığın öyle bir seviyeye ulaştı ki uzay istasyonlarında sırf ihtişamından dolayı sana indirim yaptırabilecek güzellikte kıyafetler dikebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing4a/0",
+      "en": "Synthetic Fabrics",
+      "tr": "Sentetik Kumaşlar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing4a/1",
+      "en": "^orange;Tier 4^reset;\n\nNot just limited to natural threads, you can weave fabrics out of inorganic materials. You are now able to create a synthetic material which is as durable as kevlar, but far more comfortable to wear.",
+      "tr": "^orange;Kademe 4^reset;\n\nArtık yalnızca doğal ipliklerle sınırlı değilsin. İnorganik malzemelerden kumaş dokuyabilir, Kevlar kadar dayanıklı ama çok daha rahat bir sentetik malzeme üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing4b/0",
+      "en": "Mutavisk Sewing",
+      "tr": "Mutavisk Dikişi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing4b/1",
+      "en": "^orange;Tier 4^reset;\n\nMutavisk is the hardest natural fibre to weave, but you've figured out how by applying fungal ichor during the weaving process. You can now spin Bio-Thread, which, in addition to being exquisitely beautiful, is incredibly resistant to radiation.",
+      "tr": "^orange;Kademe 4^reset;\n\nMutavisk en zor dokunan doğal liflerden biridir; ancak dokuma sırasında mantar özsuyu kullanarak bunun yolunu buldun. Artık son derece güzel olmasının yanında radyasyona olağanüstü dayanıklı Biyo-İplik eğirebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing5/0",
+      "en": "Peerless Sewing",
+      "tr": "Eşsiz Dikiş",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/sewing5/1",
+      "en": "^orange;Tier 5^reset;\n\nYou've mastered the art of sewing. So great is your skill that you can weave the atom-thick Graphene into your synthetic material, creating a nearly indestructible cloth for use in the highest-quality armors available.",
+      "tr": "^orange;Kademe 5^reset;\n\nDikiş sanatında ustalaştın. Becerin öyle ilerledi ki tek atom kalınlığındaki Grafeni sentetik malzemene dokuyarak en üst kalite zırhlarda kullanılabilecek, neredeyse yok edilemez bir kumaş üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/cooking1/0",
+      "en": "Culinary Arts",
+      "tr": "Mutfak Sanatları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/cooking1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou're learning to prepare something more complex than simple campfire food. You can now create a Kitchen Counter to prepare advanced dishes. You also learn quite a few basic recipes.",
+      "tr": "^orange;Kademe 1^reset;\n\nBasit kamp ateşi yemeklerinin ötesine geçmeyi öğreniyorsun. Artık gelişmiş yemekler hazırlamak için bir Mutfak Tezgâhı üretebilir ve birçok temel tarifi öğrenebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/booze1/0",
+      "en": "Alcohol Creation",
+      "tr": "Alkollü İçki Üretimi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/booze1/1",
+      "en": "^orange;Tier 2^reset;\n\nBrewing and winemaking are some pretty handy skills to know for an aspiring alcoholic. You can now dip your toes into the craft of booze-making. A word of warning, though - it's a complicated process. You may want to ask a master brewer at the ^orange;Science Outpost^reset; for advice.\n\n^yellow;Did you know?^reset; Frackin' Universe incorporated the beer-brewing system from the Starbooze mod way back in 2015!",
+      "tr": "^orange;Kademe 2^reset;\n\nBira ve şarap yapımı, hevesli bir alkolik için epey kullanışlı beceriler. Artık içki yapımına ilk adımını atabilirsin. Yalnız dikkat, süreç biraz karmaşıktır. Tavsiye için ^orange;Bilim Karakolundaki^reset; usta bira üreticisine danışmak isteyebilirsin.\n\n^yellow;Biliyor muydun?^reset; Frackin' Universe, Starbooze modundaki bira üretim sistemini daha 2015'te bünyesine kattı!",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/booze2/0",
+      "en": "Advanced Alcohols",
+      "tr": "Gelişmiş İçkiler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/booze2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've become quite skilled at brewing. Such talent comes with benefits: you've put to paper some recipes for strange beverages that are sure to be the talk of connoisseurs across the galaxy.",
+      "tr": "^orange;Kademe 3^reset;\n\nİçki yapımında epey ustalaştın. Bunun da getirileri var: Galaksinin dört bir yanındaki içki meraklılarını konuşturacak sıra dışı içecek tariflerini kâğıda döktün.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/booze3/0",
+      "en": "Brewing Mastery",
+      "tr": "İçki Ustalığı",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/booze3/1",
+      "en": "^orange;Tier 4^reset;\n\nYour mastery of alcohol is so great that you can make bizarre and esoteric brews with flavors that trascend reality in ways never seen before.",
+      "tr": "^orange;Kademe 4^reset;\n\nİçki yapımındaki ustalığın öyle ileri gitti ki daha önce görülmemiş biçimlerde gerçekliğin sınırlarını aşan tatlara sahip tuhaf ve ezoterik içkiler üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony1/0",
+      "en": "Colony Creation",
+      "tr": "Koloni Kurma",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've gained the skills needed to govern a large colony. You can now build a ^orange;Colony Station^reset; at your Inventor's Table, allowing you to craft several colony automation devices.\n\n^yellow;Colony System Guide^reset;: The basis of your colony is the Colony Core, a device which passively collects rent from (and only from) Mk2 Tenant Deeds, which generate no rent on their own - they are co-dependent.\n\nThe happier your tenants are, the more rent they will pay. Happiness can be increased by constructing various add-ons for your colony, which can also generate resources, doing so faster the more tenants you have. There is a limit of one of each add-on per colony.",
+      "tr": "^orange;Kademe 1^reset;\n\nKalabalık bir koloniyi yönetmek için gereken becerileri kazandın. Artık Mucit Tezgâhında bir ^orange;Koloni İstasyonu^reset; üretebilir ve çeşitli koloni otomasyon cihazlarına erişebilirsin.\n\n^yellow;Koloni Sistemi Rehberi^reset;: Koloninin temeli, yalnızca kendi başına kira üretmeyen Mk2 Kiracı Tapularından pasif olarak kira toplayan Koloni Çekirdeğidir; ikisi birbirine bağımlıdır.\n\nKiracıların ne kadar mutluysa o kadar fazla kira öder. Çeşitli koloni eklentileri inşa ederek mutluluğu artırabilir, aynı zamanda kaynak üretebilirsin. Kiracı sayısı arttıkça bu eklentiler daha hızlı çalışır. Her kolonide her eklentiden yalnızca bir tane bulunabilir.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/canvas/0",
+      "en": "Canvas Creation",
+      "tr": "Tuval Üretimi",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/canvas/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've gotten pretty good at working with cotton. You can now spin cotton into durable and useful canvas sheets at your Sewing Machine.",
+      "tr": "^orange;Kademe 3^reset;\n\nPamukla çalışma konusunda iyice geliştin. Artık Dikiş Makinesinde pamuğu dayanıklı ve kullanışlı tuval bezlerine dönüştürebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/painting/0",
+      "en": "Painting",
+      "tr": "Resim",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/painting/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've taken up the hobby of painting. With canvas as your... canvas, you can now create pretty decorative art pieces to hang around your lab.\n\nIf you delve into more...^cyan;unusual^reset; artistic pursuits, you'll find a whole new world of strangeness awaiting you.",
+      "tr": "^orange;Kademe 3^reset;\n\nResim yapmayı hobi edindin. Tuvali... tuvalin olarak kullanıp laboratuvarına asabileceğin hoş dekoratif eserler yapabilirsin.\n\nDaha...^cyan;sıra dışı^reset; sanatsal uğraşlara yönelirsen seni bekleyen bambaşka bir tuhaflık dünyası bulacaksın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony2/0",
+      "en": "Improved Colonies",
+      "tr": "Geliştirilmiş Koloniler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make some more add-ons for your colony. You've also realized that your colonists might make perfect test subjects... who cares how happy they are if you're making good use of them?",
+      "tr": "^orange;Kademe 2^reset;\n\nKolonin için daha fazla eklenti yapabilirsin. Bir de kolonistlerinin kusursuz test denekleri olabileceğini fark ettin... işe yarıyorlarsa ne kadar mutlu olduklarını kim takar?",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony3/0",
+      "en": "Advanced Colonies",
+      "tr": "Gelişmiş Koloniler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've made some even more advanced colony add-ons, some of which may overstep some ethical bounds. People are a resource, after all!",
+      "tr": "^orange;Kademe 3^reset;\n\nKolonin için daha da gelişmiş eklentiler yaptın; bazıları etik sınırları biraz aşabilir. Sonuçta insanlar da bir kaynak!",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/cooking3/0",
+      "en": "Bizarre Cooking",
+      "tr": "Tuhaf Aşçılık",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/cooking3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou're not satisfied with just 'edible' or 'tasty' food ingredients. You've made some home recipes for meals that could be charitably called experimental.",
+      "tr": "^orange;Kademe 3^reset;\n\n'Yenilebilir' ya da 'lezzetli' malzemeler artık sana yetmiyor. En kibar ifadeyle deneysel denebilecek yemekler için kendi tariflerini hazırladın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchaether/0",
+      "en": "Aetheric Construction",
+      "tr": "Aetheric Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchaether/1",
+      "en": "^orange;Tier 5^reset;\n\nYou've figured out how to work with Aetheric materials to create sturdy decorative furniture and blocks.",
+      "tr": "^orange;Kademe 5^reset;\n\nAetheric malzemeleri işleyerek sağlam dekoratif mobilyalar ve bloklar yapmanın yolunu buldun.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchcute/0",
+      "en": "Cute Construction",
+      "tr": "Sevimli Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchcute/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've used a bunch of shiny dirt and crystals to make cute dollhouse-themed furniture and blocks.",
+      "tr": "^orange;Kademe 4^reset;\n\nBir sürü parlak toprak ve kristal kullanarak oyuncak ev temalı sevimli mobilyalar ve bloklar yapmayı öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchatechy/0",
+      "en": "Techy Construction",
+      "tr": "Teknolojik Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchatechy/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've acquired a techy building style, allowing you to make many lab and high tech-themed blocks and furniture.",
+      "tr": "^orange;Kademe 3^reset;\n\nTeknolojik bir yapı tarzı geliştirdin; artık laboratuvar ve yüksek teknoloji temalı birçok blok ve mobilya üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchxithricite/0",
+      "en": "Xithricite Construction",
+      "tr": "Xithricite Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchxithricite/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've fashioned Xithricite into fancy furniture.",
+      "tr": "^orange;Kademe 6^reset;\n\nXithricite'ı gösterişli mobilyalara dönüştürdün.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchatropus/0",
+      "en": "Fleshy Construction",
+      "tr": "Etli Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchatropus/1",
+      "en": "^orange;Tier 3^reset;\n\nYour uniquely twisted mind has produced some rather... interesting furniture made out of still-living meat.",
+      "tr": "^orange;Kademe 3^reset;\n\nBenzersiz derecede çarpık zihnin, hâlâ canlı etten yapılmış oldukça... ilginç mobilyalar ortaya çıkardı.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchcarbon/0",
+      "en": "Carbon Construction",
+      "tr": "Karbon Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchcarbon/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a line of sleek carbon-based furniture.",
+      "tr": "^orange;Kademe 3^reset;\n\nŞık, karbon tabanlı bir mobilya serisi tasarladın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchdensealloy/0",
+      "en": "Dense Alloy Construction",
+      "tr": "Yoğun Alaşım Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchdensealloy/1",
+      "en": "^orange;Tier 5^reset;\n\nYou've designed a line of Dense Alloy furniture that you definitely shouldn't kick out of anger.",
+      "tr": "^orange;Kademe 5^reset;\n\nYoğun Alaşımdan bir mobilya serisi tasarladın. Sinirlenip tekmelememen kesinlikle tavsiye edilir.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchdensinium/0",
+      "en": "Densinium Construction",
+      "tr": "Densinium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchdensinium/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've fashioned Densinium into the most indestructible furniture in the universe.",
+      "tr": "^orange;Kademe 6^reset;\n\nDensinium'u evrendeki en dayanıklı mobilyalara dönüştürdün.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbencheffigium/0",
+      "en": "Effigium Construction",
+      "tr": "Effigium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbencheffigium/1",
+      "en": "^orange;Tier 5^reset;\n\nYou've made furniture out of Effigium. It's invisible half the time, but you figure that's part of the charm.",
+      "tr": "^orange;Kademe 5^reset;\n\nEffigium'dan mobilyalar yaptın. Zamanın yarısında görünmezler ama herhâlde çekiciliği de burada.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchirradium/0",
+      "en": "Irradium Construction",
+      "tr": "Irradium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchirradium/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've taken one of the most radioactive metals in existence and made furniture out of it. This will surely end well.",
+      "tr": "^orange;Kademe 4^reset;\n\nVar olan en radyoaktif metallerden birini alıp mobilya yaptın. Bunun sonu kesin iyi bitecek.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchisogen/0",
+      "en": "Isogen Construction",
+      "tr": "Isogen Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchisogen/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've turned Isogen metal into furniture, in case you want to freeze to death while having dinner.",
+      "tr": "^orange;Kademe 6^reset;\n\nIsogen metalini mobilyaya dönüştürdün; akşam yemeğinde donarak ölmek istersen birebir.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchlunari/0",
+      "en": "Lunari Construction",
+      "tr": "Lunari Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchlunari/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've made furniture out of lunari crystals. They're very glowy and shiny.",
+      "tr": "^orange;Kademe 3^reset;\n\nLunari kristallerinden mobilya yaptın. Fazlasıyla parlak ve ışıl ışıllar.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchnoxcium/0",
+      "en": "Nocxium Construction",
+      "tr": "Nocxium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchnoxcium/1",
+      "en": "^orange;Tier 7^reset;\n\nYou've made furniture out of Nocxium metal. It should be safe as long as you don't touch them with your bare skin.",
+      "tr": "^orange;Kademe 7^reset;\n\nNocxium metalinden mobilya yaptın. Çıplak elle dokunmadığın sürece güvenli olmalı.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchpenumbrite/0",
+      "en": "Penumbrite Construction",
+      "tr": "Penumbrite Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchpenumbrite/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a set of Penumbrite furniture perfect for the dark and brooding type.",
+      "tr": "^orange;Kademe 3^reset;\n\nKaranlık ve melankolik tarza düşkün olanlara uygun bir Penumbrite mobilya takımı tasarladın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchperfect/0",
+      "en": "Perfectly Generic Construction",
+      "tr": "Kusursuz Sıradan Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchperfect/1",
+      "en": "^orange;Tier 7^reset;\n\nYou've used the mysterious PGIs to create furniture that is both perfectly generic and generically perfect.",
+      "tr": "^orange;Kademe 7^reset;\n\nGizemli PGI'ları kullanarak hem kusursuz derecede sıradan hem de sıradanlıkta kusursuz mobilyalar yaptın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchpyreite/0",
+      "en": "Pyreite Construction",
+      "tr": "Pyreite Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchpyreite/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've designed furniture out of Pyreite metal. Don't put them in a wooden house.",
+      "tr": "^orange;Kademe 6^reset;\n\nPyreite metalinden mobilyalar tasarladın. Ahşap bir evin içine koyma.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtelebrium/0",
+      "en": "Telebrium Construction",
+      "tr": "Telebrium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtelebrium/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've made a bunch of Telebrium-based furniture items.",
+      "tr": "^orange;Kademe 2^reset;\n\nTelebrium tabanlı bir sürü mobilya yaptın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtriangulum/0",
+      "en": "Trianglium Construction",
+      "tr": "Trianglium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtriangulum/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've turned Trianglium into some very triangular and pointy furniture.",
+      "tr": "^orange;Kademe 4^reset;\n\nTrianglium'u oldukça üçgen ve sivri mobilyalara dönüştürdün.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchzerchesium/0",
+      "en": "Zerchesium Construction",
+      "tr": "Zerchesium Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchzerchesium/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a whole bunch of Zerchesium-based furniture items.",
+      "tr": "^orange;Kademe 3^reset;\n\nBir sürü Zerchesium tabanlı mobilya tasarladın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchenergywood/0",
+      "en": "Energy Wood Construction",
+      "tr": "EnergyWood Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchenergywood/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a whole bunch of EnergyWood-based furniture items.",
+      "tr": "^orange;Kademe 3^reset;\n\nBir sürü EnergyWood tabanlı mobilya tasarladın.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchnightar/0",
+      "en": "Nightar Construction",
+      "tr": "Nightar Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchnightar/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to imitate the Nightar building style, allowing you to create a lot of furniture and blocks of their design.",
+      "tr": "^orange;Kademe 3^reset;\n\nNightar yapı tarzını taklit etmeyi öğrendin; artık onların tasarımındaki birçok mobilya ve bloğu üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchnightar2/0",
+      "en": "Nightar Construction 2",
+      "tr": "Nightar Yapıları 2",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchnightar2/1",
+      "en": "^orange;Tier 3^reset;\n\nAdditional elements of nightar design.",
+      "tr": "^orange;Kademe 3^reset;\n\nNightar tasarımının ek unsurları.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchpeglaci/0",
+      "en": "Peglaci Construction",
+      "tr": "Peglaci Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchpeglaci/1",
+      "en": "^orange;Tier 3^reset;\n\nLong ago, the Peglaci were a race of arctic carnivores, the apex predators of their world, until they were uplifted by a race they know only as the Wanderers. You've learned to replicate their unique crafting style, a mix of ice and lignin developed in their race's infancy and metallically augmented by gifted knkowledge.",
+      "tr": "^orange;Kademe 3^reset;\n\nUzun zaman önce Peglaci, kendi dünyalarının tepe avcısı olan kutup etçillerinden oluşan bir ırktı. Ta ki yalnızca Gezginler olarak bildikleri bir ırk tarafından ileri bir düzeye taşınana kadar. Irklarının ilk dönemlerinde geliştirdikleri buz ve lignin karışımını, sonradan kendilerine aktarılan bilgiyle metal kullanarak geliştirdikleri özgün üretim tarzını taklit etmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchsnowpeople/0",
+      "en": "Peglaci Sculpting",
+      "tr": "Peglaci Heykeltıraşlığı",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchsnowpeople/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've picked up the ancient Peglaci art of snow-sculpting, developed on their homeworld aeons ago and practiced even still across all levels of their society.\n\n^cyan;The Snowprinter can be found at the Inventor's Table.^reset;",
+      "tr": "^orange;Kademe 3^reset;\n\nPeglaci'nin ana dünyalarında çağlar önce doğan ve toplumun her katmanında hâlâ sürdürülen kadim kar heykeltıraşlığı sanatını öğrendin.\n\n^cyan;Kar Yazıcısını Mucit Tezgâhında bulabilirsin.^reset;",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchbees/0",
+      "en": "Honey Construction",
+      "tr": "Bal Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchbees/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to turn bee products like honey and amber into furniture and blocks.",
+      "tr": "^orange;Kademe 2^reset;\n\nBal ve kehribar gibi arı ürünlerini mobilya ve bloklara dönüştürmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchmantizi/0",
+      "en": "Mantizi Construction",
+      "tr": "Mantizi Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchmantizi/1",
+      "en": "^orange;Tier 3^reset;\n\nMantizi style is among the most pretentious in the galaxy, but you can now imitate it with your own hands.",
+      "tr": "^orange;Kademe 3^reset;\n\nMantizi tarzı galaksideki en gösterişli ve kasıntı tarzlardan biri ama artık kendi ellerinle taklit edebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchfloran/0",
+      "en": "Floran Construction",
+      "tr": "Floran Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchfloran/1",
+      "en": "^orange;Tier 1^reset;\n\nFlorans make all their gear from primitive materials, despite being a spacefaring species. This is due to many factors, none of which are relevant to building their furniture.",
+      "tr": "^orange;Kademe 1^reset;\n\nFloranlar uzay yolculuğu yapan bir tür olmalarına rağmen tüm eşyalarını ilkel malzemelerden yapar. Bunun birçok nedeni var ama hiçbiri mobilyalarını yapman için önemli değil.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchthelusian/0",
+      "en": "Thelusian Construction",
+      "tr": "Thelusian Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchthelusian/1",
+      "en": "^orange;Tier 2^reset;\n\nThelusian hives form their furniture communally from their own saliva, shed chitin and farmed fungi. You've substituted Thelusian chitin and saliva for insect shells and water, but hand-shape their furniture just as its creators do.",
+      "tr": "^orange;Kademe 2^reset;\n\nThelusian kovanları mobilyalarını kendi salyaları, döktükleri kitin ve yetiştirdikleri mantarlarla ortaklaşa biçimlendirir. Sen Thelusian kitini ve salyası yerine böcek kabukları ile su kullanıyorsun ama mobilyaları yaratıcılarının yaptığı gibi elle şekillendiriyorsun.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchgoodwood/0",
+      "en": "Improved Wooden Construction",
+      "tr": "Geliştirilmiş Ahşap Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchgoodwood/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to treat wood and create more visually stunning and ornate wood blocks than you could before.",
+      "tr": "^orange;Kademe 1^reset;\n\nAhşabı işlemeyi ve eskisinden daha gösterişli, daha süslü ahşap bloklar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchfenerox/0",
+      "en": "Fenerox Construction",
+      "tr": "Fenerox Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchfenerox/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to imitate the Fenerox 'style' to create primitive wood-and-hide furniture.",
+      "tr": "^orange;Kademe 1^reset;\n\nFenerox 'tarzını' taklit ederek ilkel ahşap ve post mobilyalar yapmayı öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchshadow/0",
+      "en": "Shadow Construction",
+      "tr": "Gölge Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchshadow/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've learned to imitate Tenebrhae styles to create shadowy blocks and furniture.",
+      "tr": "^orange;Kademe 4^reset;\n\nTenebrhae tarzını taklit ederek karanlık görünümlü bloklar ve mobilyalar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchelder/0",
+      "en": "Elder Construction",
+      "tr": "Elder Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchelder/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've learned to create eldritch-themed furniture, though exactly how remains a mystery to you. It just...came to you.",
+      "tr": "^orange;Kademe 6^reset;\n\nEldritch temalı mobilyalar yapmayı öğrendin; gerçi nasıl yaptığın sana bile hâlâ gizemli. Bilgi sanki... bir anda zihnine geldi.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchbamboo/0",
+      "en": "Bamboo Construction",
+      "tr": "Bambu Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchbamboo/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to make bamboo furniture.",
+      "tr": "^orange;Kademe 1^reset;\n\nBambu mobilyalar yapmayı öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchveluu/0",
+      "en": "Vel'uuish Construction",
+      "tr": "Vel'uu Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchveluu/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to create special crystal-gold alloy ship paneling.",
+      "tr": "^orange;Kademe 3^reset;\n\nKristal-altın alaşımından özel gemi kaplamaları üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbench1/0",
+      "en": "Wooden Construction",
+      "tr": "Ahşap Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbench1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned the basics of carpentry and can make simple blocks and furniture out of wood at a Wooden Workbench.",
+      "tr": "^orange;Kademe 1^reset;\n\nMarangozluğun temellerini öğrendin; artık Ahşap Tezgâhta ahşaptan basit bloklar ve mobilyalar yapabilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchcopper/0",
+      "en": "Copper Construction",
+      "tr": "Bakır Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchcopper/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to build structures out of copper.",
+      "tr": "^orange;Kademe 1^reset;\n\nBakırdan yapılar inşa etmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchiron/0",
+      "en": "Iron Construction",
+      "tr": "Demir Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchiron/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to build blocks and furniture out of iron.",
+      "tr": "^orange;Kademe 1^reset;\n\nDemirden bloklar ve mobilyalar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtungsten/0",
+      "en": "Tungsten Construction",
+      "tr": "Tungsten Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtungsten/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to build furniture and more durable blocks out of tungsten.",
+      "tr": "^orange;Kademe 2^reset;\n\nTungstenden mobilyalar ve daha dayanıklı bloklar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtitanium/0",
+      "en": "Titanium Construction",
+      "tr": "Titanyum Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtitanium/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to build titanium blocks and furniture.",
+      "tr": "^orange;Kademe 3^reset;\n\nTitanyum bloklar ve mobilyalar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchdurasteel/0",
+      "en": "Durasteel Construction",
+      "tr": "Durasteel Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchdurasteel/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've learned to build furniture and super-durable blocks out of durasteel.",
+      "tr": "^orange;Kademe 4^reset;\n\nDurasteel'den mobilyalar ve son derece dayanıklı bloklar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchplants/0",
+      "en": "Decorative Plants",
+      "tr": "Dekoratif Bitkiler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchplants/1",
+      "en": "^orange;Tier 1^reset;\n\nYou can now create some decorative plant-themed objects.",
+      "tr": "^orange;Kademe 1^reset;\n\nArtık bitki temalı bazı dekoratif nesneler üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtechy/0",
+      "en": "Techy Construction",
+      "tr": "Teknolojik Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchtechy/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to create high tech blocks and furniture out of plastics and similar materials.",
+      "tr": "^orange;Kademe 3^reset;\n\nPlastik ve benzeri malzemelerden yüksek teknoloji görünümlü bloklar ve mobilyalar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchbone/0",
+      "en": "Bone Construction",
+      "tr": "Kemik Yapılar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchbone/1",
+      "en": "^orange;Tier 1^reset;\n\nYou can create dragon-themed furniture out of leather and sculpted bone.",
+      "tr": "^orange;Kademe 1^reset;\n\nDeri ve şekillendirilmiş kemikten ejderha temalı mobilyalar üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchprecious/0",
+      "en": "Precious Metal Construction",
+      "tr": "Değerli Metal Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchprecious/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make some blocks out of precious materials.",
+      "tr": "^orange;Kademe 2^reset;\n\nDeğerli malzemelerden çeşitli bloklar üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchavian/0",
+      "en": "Avian Construction",
+      "tr": "Avian Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchavian/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to make ornate Avian-styled blocks.",
+      "tr": "^orange;Kademe 3^reset;\n\nSüslü Avian tarzı bloklar yapmayı öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchslime/0",
+      "en": "Slime Construction",
+      "tr": "Balçık Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchslime/1",
+      "en": "^orange;Tier 1^reset;\n\nYou can shape furniture out of jelly and slime! Why would you want to do this? Unclear.\n\nMost recipes require the ^cyan;Biochemist Table^reset;. Research it in the ^green;Geology tree^reset;.",
+      "tr": "^orange;Kademe 1^reset;\n\nJöle ve balçıktan mobilyalara şekil verebilirsin! Bunu neden yapmak isteyesin? Belli değil.\n\nTariflerin çoğu ^cyan;Biyokimyacı Tezgâhını^reset; gerektirir. Onu ^green;Jeoloji ağacında^reset; araştır.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchelduu/0",
+      "en": "Elduu'khar Construction",
+      "tr": "Elduu'khar Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchelduu/1",
+      "en": "^orange;Tier 2^reset;\n\nGleaming, beautiful crystalline furniture awaits if you pursue this particular knowledge!",
+      "tr": "^orange;Kademe 2^reset;\n\nBu bilgiyi takip edersen ışıldayan, güzel kristal mobilyalar seni bekliyor!",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchskath/0",
+      "en": "Skath Construction",
+      "tr": "Skath Yapıları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchskath/1",
+      "en": "^orange;Tier 3^reset;\n\nThe engimatic Skath are quite adept with technology, and this seeps into just about everything they make.",
+      "tr": "^orange;Kademe 3^reset;\n\nGizemli Skath teknoloji konusunda oldukça beceriklidir; bu da yaptıkları hemen her şeye yansır.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/pixelprinter/0",
+      "en": "Pixel Manipulation",
+      "tr": "Piksel Manipülasyonu",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/pixelprinter/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned work with pixels, compressing them into storeable voxels or printing them into decorative furniture that you've scanned.",
+      "tr": "^orange;Kademe 3^reset;\n\nPiksellerle çalışmayı öğrendin; onları depolanabilir voksellere sıkıştırabilir veya taradığın dekoratif mobilyaları piksellerden yazdırabilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/dye1/0",
+      "en": "Dyes",
+      "tr": "Boyalar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/dye1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to make dyes which can recolor your worn clothing and armor.",
+      "tr": "^orange;Kademe 1^reset;\n\nGiydiğin kıyafet ve zırhların rengini değiştirebilen boyalar üretmeyi öğrendin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/dye2/0",
+      "en": "Advanced Dyes",
+      "tr": "Gelişmiş Boyalar",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/dye2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make more advanced dyes out of metals and other more complex materials.",
+      "tr": "^orange;Kademe 2^reset;\n\nMetaller ve diğer daha karmaşık malzemelerden gelişmiş boyalar üretebilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/coffee/0",
+      "en": "Coffee",
+      "tr": "Kahve",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/coffee/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to make your own coffee, which can provide extra energy and movement speed.",
+      "tr": "^orange;Kademe 2^reset;\n\nKendi kahveni yapmayı öğrendin; kahve sana ekstra enerji ve hareket hızı sağlayabilir.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew1/0",
+      "en": "Mercs",
+      "tr": "Paralı Askerler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew1/1",
+      "en": "^orange;Tier 1^reset;\n\nSure, there's merit to traveling with friends, but with mercenaries you won't need friends. Though 'reliable' mercs may pass you up, you can nonetheless hire some greenhorns eager for work at the ^orange;Science Outpost^reset;.\n\nHold ^green;shift^reset; while using a crew contract to satisfy your inner xenophobe, and guarantee a recruit of the same race as you.",
+      "tr": "^orange;Kademe 1^reset;\n\nArkadaşlarla seyahat etmenin elbette güzel yanları var; ama paralı askerlerin varsa arkadaşa ihtiyacın kalmaz. 'Güvenilir' olanlar seni pas geçebilir ama ^orange;Bilim Karakolunda^reset; iş arayan bazı acemileri yine de kiralayabilirsin.\n\nİçindeki yabancı düşmanını memnun etmek ve kendi ırkından birini kesin olarak işe almak için mürettebat sözleşmesini kullanırken ^green;shift^reset; tuşunu basılı tut.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew2/0",
+      "en": "Skilled Mercs",
+      "tr": "Yetenekli Paralı Askerler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've got the leadership skill (and pockets) to get the attention of more talented mercenaries, whom you can now hire.",
+      "tr": "^orange;Kademe 2^reset;\n\nLiderlik becerin ve cebindeki para, daha yetenekli paralı askerlerin dikkatini çekmeye yetecek düzeyde. Artık onları kiralayabilirsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew3/0",
+      "en": "Superior Mercs",
+      "tr": "Üstün Paralı Askerler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew3/1",
+      "en": "^orange;Tier 3^reset;\n\nLeading and commanding comes naturally to you, and money is no object when it comes to talent. You've paid off informants for knowledge of some very talented individuals who you can convince to work under you for the right price.",
+      "tr": "^orange;Kademe 3^reset;\n\nLiderlik etmek ve emir vermek sana doğal geliyor; yetenek söz konusu olduğunda para da sorun değil. Doğru ücret karşılığında senin için çalışmaya ikna edebileceğin çok yetenekli bazı kişileri öğrenmek için muhbirlere para yedirdin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew4/0",
+      "en": "Peerless Mercs",
+      "tr": "Eşsiz Paralı Askerler",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/crew4/1",
+      "en": "^orange;Tier 4^reset;\n\nAmong the galactic crew-for-hire scene, you're something of a minor celebrity. You've got the prestige, money, and charisma to command some of the galaxy's most elite mercenaries and shipworkers.",
+      "tr": "^orange;Kademe 4^reset;\n\nGalaksideki kiralık mürettebat çevrelerinde küçük çaplı bir ünlü sayılırsın. Galaksinin en seçkin paralı askerleri ve gemi çalışanlarından bazılarını yönetmek için gereken itibara, paraya ve karizmaya sahipsin.",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/lamps/0",
+      "en": "Lava Lamps",
+      "tr": "Lav Lambaları",
+      "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/lamps/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can create decorative lava lamps at a ^orange;Lamporium^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\n^orange;Lamporium^reset; kullanarak dekoratif lav lambaları üretebilirsin.",
+      "section": "Zanaatkârlık"
     }
   ]
 }
