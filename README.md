@@ -60,6 +60,10 @@ Güncel statik QA'da **97/97 yapılandırılmış hedef asset ve 909/909 kaynak 
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
+## v0.6 çalışma dalı
+
+`work/v0.6-craftsmanship` dalında Zanaatkârlık araştırma ağacının 78 düğümü / 157 görünür alanı çevrildi ve exact-source ön QA'dan geçti. Bağlı eşya/makine adları tamamlanmadan v0.6 ana beta sürümüne alınmayacak.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
