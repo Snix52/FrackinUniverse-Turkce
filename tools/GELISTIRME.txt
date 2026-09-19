@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1312 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1276 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -20,6 +20,7 @@ build_validate.py
   Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
+  Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
 
 Yeni çıktı:
   python build_validate.py --output yeni_cikti
@@ -29,40 +30,40 @@ Açılmış FU kaynaklarıyla tam doğrulama:
 
 v0.5 güncel kaynak kontrolü:
   97/97 JSON/JSONC patch asset
-  909/909 kaynak pointer/değer
+  877/877 aktif kaynak pointer/değer
   1/1 ham Lua override asset
   15/15 Lua görünür metin fragmenti
-  v0.5 yeni içerik: 33 asset / 220 alan
-  toplam 924 yerelleştirilmiş görünür metin birimi
+  v0.5 yeni içerik: 33 asset / 216 aktif alan
+  toplam 892 yerelleştirilmiş görünür metin birimi
   exact FU commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 
 Oyun içi LQA, font ve panel taşma testi ayrıca yapılmalıdır.
 
 v0.6 beta QA:
   fu_craftsmanship: 76 gerçek araştırma düğümü
-  ağaç + default/fallback görünür alan: 155
+  aktif ağaç alanı: 153
   bağlı makine/tezgâh: 131 alan
-  v0.6 toplam ekleme: 286 alan / 12 hedef asset
-  toplam yapılandırılmış alan: 1195
-  toplam görünür birim: 1210 (1195 yapılandırılmış + 15 Lua)
-  FU-owned exact-source: 243/243 PASS
+  v0.6 toplam ekleme: 284 aktif alan / 12 hedef asset
+  retroaktif düzeltilmiş toplam yapılandırılmış alan: 1161
+  toplam yerelleştirilmiş birim: 1176 (1161 yapılandırılmış + 15 Lua)
+  FU-owned exact-source: 241/241 PASS
   FU layered patch exact-source: 33/33 PASS
   vanilla kısa ad harici doğrulama: 10/10 PASS
-  patch eşleşmesi: 286 test + 286 replace PASS
+  patch eşleşmesi: 284 test + 284 replace PASS
   benzersiz pointer / boş çeviri / renk-kontrol kodu: PASS
   workbenchatechy ölü stringi: dağıtımdan çıkarıldı
   oyun içi LQA: BEKLİYOR
 
 v0.7 beta QA:
   fu_warcraft: 47 gerçek araştırma düğümü
-  ağaç + default/fallback görünür alan: 97
+  aktif ağaç alanı: 95
   bağlı istasyon/EPP: 20 alan
-  v0.7 toplam ekleme: 117 alan / 4 hedef asset
-  toplam yapılandırılmış alan: 1312
-  toplam görünür birim: 1327 (1312 yapılandırılmış + 15 Lua)
-  pinned FU exact-source: 111/111 PASS
+  v0.7 toplam ekleme: 115 aktif alan / 4 hedef asset
+  toplam yapılandırılmış alan: 1276
+  toplam yerelleştirilmiş birim: 1291 (1276 yapılandırılmış + 15 Lua)
+  pinned FU exact-source: 109/109 PASS
   vanilla Örs test doğrulaması: 4/4 PASS
   vanilla Solunum EPP asset doğrulaması: 2/2 PASS
-  patch eşleşmesi: 117 test + 117 replace PASS
+  patch eşleşmesi: 115 test + 115 replace PASS
   benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
   oyun içi LQA: BEKLİYOR

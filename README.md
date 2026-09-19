@@ -25,7 +25,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **1.312 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.327 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **1.276 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.291 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -60,21 +60,21 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da v0.5 ve v0.6 kapsamları korunurken v0.7 için **111 alan pinned FU kaynağından**, **4 vanilla Örs zinciri alanı bağımsız test değerlerinden** ve **2 Solunum EPP alanı vanilla asset kaynağından** doğrulandı. Toplam yapılandırılmış kapsam **1.312 alan / 113 patch asset**tir. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da v0.5 ve v0.6 kapsamları korunurken v0.7 için **109 alan pinned FU kaynağından**, **4 vanilla Örs zinciri alanı bağımsız test değerlerinden** ve **2 Solunum EPP alanı vanilla asset kaynağından** doğrulandı. Geriye dönük aktif-düğüm QA sonrasında toplam yapılandırılmış kapsam **1.276 alan / 113 patch asset**tir. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
 ## v0.6 Zanaatkârlık
 
-Zanaatkârlık ağacındaki **76 gerçek araştırma düğümü**, `default` yardım/fallback metni ve ağaç adı yerelleştirildi. Kaynakta bulunan ancak hiçbir düğüme bağlı olmayan `workbenchatechy` stringi oyuncuya görünmediği için yamaya alınmadı. Doğrudan yönlendirme yapılan temel istasyon adları envanter adlarıyla eşleştirildi.
+Zanaatkârlık ağacındaki **76 gerçek araştırma düğümü** ve ağaç adı yerelleştirildi. Kaynakta bulunan ancak arayüz kodunda kullanılmayan `default` yardım/fallback çifti ile hiçbir düğüme bağlı olmayan `workbenchatechy` stringi oyuncuya görünmediği için yamaya alınmadı. Doğrudan yönlendirme yapılan temel istasyon adları envanter adlarıyla eşleştirildi.
 
-v0.6 eklemesi: **286 yapılandırılmış alan / 12 hedef asset**. Oyun içi LQA ve panel taşma kontrolleri hâlâ bekliyor.
+v0.6 eklemesi: **284 aktif yapılandırılmış alan / 12 hedef asset**. Oyun içi LQA ve panel taşma kontrolleri hâlâ bekliyor.
 
 ## v0.7 Zırh ve Silahlar
 
-Zırh ve Silahlar ağacındaki **47 gerçek araştırma düğümü**, görünür `default` yardım/fallback metni ve ağaç adı yerelleştirildi. Araştırmanın doğrudan yönlendirdiği ana istasyonlar gerçek envanter adlarıyla eşleştirildi: **Zırh Atölyesi → Montaj Hattı → Cephanelik**, **Örs → Dövme Ocağı → Çoğaltıcı** ve **Solunum EPP'si**.
+Zırh ve Silahlar ağacındaki **47 gerçek araştırma düğümü** ve ağaç adı yerelleştirildi. Kaynaktaki `default` yardım/fallback çifti arayüz kodu tarafından kullanılmadığı için yamadan çıkarıldı. Araştırmanın doğrudan yönlendirdiği ana istasyonlar gerçek envanter adlarıyla eşleştirildi: **Zırh Atölyesi → Montaj Hattı → Cephanelik**, **Örs → Dövme Ocağı → Çoğaltıcı** ve **Solunum EPP'si**.
 
-v0.7 eklemesi: **117 yapılandırılmış alan / 4 hedef asset**. Oyun içi LQA ve panel taşma kontrolleri bekliyor.
+v0.7 eklemesi: **115 aktif yapılandırılmış alan / 4 hedef asset**. Oyun içi LQA ve panel taşma kontrolleri bekliyor.
 
 ## Yol haritası
 
@@ -90,6 +90,7 @@ v0.7 eklemesi: **117 yapılandırılmış alan / 4 hedef asset**. Oyun içi LQA 
 - [x] Güç Sistemleri araştırma ağacı
 - [x] Zanaatkârlık araştırma ağacı
 - [x] Zırh ve Silahlar araştırma ağacı
+- [x] v0.7 geriye dönük aktif-düğüm / ölü-string QA
 - [ ] Delilik araştırma ağacı
 - [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi
 - [ ] Görevlerin kalan bölümü
