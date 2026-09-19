@@ -176,9 +176,15 @@ def allowed(a,p):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
     layered_craftsmanship_assets={
+        'objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object',
+        'objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object',
         'objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object',
         'objects/crafting/woodencookingtable/woodencookingtable.object'
     }
+    if a=='objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[01]/itemSpawnParameters/shortdescription',p))
+    if a=='objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[012]/itemSpawnParameters/shortdescription',p))
     if a=='objects/crafting/woodencookingtable/woodencookingtable.object':
         return bool(re.fullmatch(r'/upgradeStages/[01]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
     if a=='objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object':
