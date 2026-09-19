@@ -180,3 +180,18 @@
 - 111 v0.7 alanı pinned FU kaynağından, 4 Örs zinciri alanı bağımsız vanilla test değerlerinden, 2 Solunum EPP alanı vanilla Starbound asset kaynağından doğrulandı.
 - Zırh Atölyesi yükseltme ailesi **Zırh Atölyesi -> Montaj Hattı -> Cephanelik**; vanilla silah istasyonu ailesi **Örs -> Dövme Ocağı -> Çoğaltıcı** olarak LOCKED.
 - Oyun içi LQA, font ve panel taşma testleri tamamlanmadığı için sürüm Beta olarak kalır.
+
+## 2026-09-20 - v0.7 geriye dönük aktif-düğüm ve anlam QA
+
+- Pinned FU 6.5.8 araştırma ağaçları ile `researchTree.lua` birlikte yeniden incelendi.
+- `strings.research.default` çiftlerinin arayüz kodu tarafından okunmadığı; boş seçimde gerçek fallback'in `data.strings.info` üzerinden geldiği doğrulandı.
+- Aktif `researchTree` düğümleri ile ledger pointer'ları çaprazlandı. Toplam **36 runtime-inaktif araştırma alanı** yamadan çıkarıldı: Jeoloji 20, Tarım 2, Kimya 4, Mühendislik 2, Güç Sistemleri 4, Zanaatkârlık 2, Zırh ve Silahlar 2.
+- Jeolojide eski/bağlantısız `metals_tier7`, `metals_morphite`, `metals_nocxium`, `metals_plasmiccrystal`, `metals_diamond`, `metals_alloy5`, `metals_alloy6`, `isotopes6`, `terraforming1-3`; Kimyada `elduucrystals`; Güç Sistemlerinde `ansible` araştırma metinleri aktif düğüm olmadığı için dağıtımdan çıkarıldı.
+- Önceki **1312 yapılandırılmış / 1327 toplam görünür birim** sayımı bu ölü alanları içeriyordu. Güncel aktif kapsam **1276 yapılandırılmış alan + 15 Lua UI metni = 1291 yerelleştirilmiş görünür birim** olarak düzeltildi.
+- Kilitli terim hatası düzeltildi: `Arc Smelter` referansındaki **Ark Eritici** -> **Ark Ergitici**.
+- Bilimsel/terminoloji hatası düzeltildi: `organic silicon` içindeki **organik silikon** -> **organik silisyum**; `Silicon -> Silisyum` LOCKED kararıyla eşlendi.
+- Başlangıç görevindeki üç hedefte kalan “alanında araştırma yap” yapısı kaldırıldı; oyuncuya ilgili araştırma ağacında hangi nesne araştırmasını açıp üretmesi gerektiği açıkça yazıldı.
+- Başlangıç telsizinde Karanlık Mağara enerji kaynağı cümlesi ve Tarım araştırma yönlendirmesi daha açık, takip edilebilir Türkçeye çevrildi.
+- `build_validate.py` artık pinned 6.5.8 kaynağında aktif düğüme bağlı olmadığı bilinen araştırma stringleri ledger'a yeniden eklenirse build'i durdurur.
+- Bu tur statik/kaynak QA'dır. Oyun içi LQA, font ve panel taşma testleri hâlâ ayrı olarak bekliyor.
+
