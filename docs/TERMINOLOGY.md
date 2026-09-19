@@ -36,10 +36,6 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Ancient Essence | Vanilla/FU kaynak adı | Kaynak | Antik Öz | - | REVIEW | Ana Starbound Türkçe terminolojisiyle karşılaştırılacak |
 | Augment | Eşya sistemi | Sistem | Eklenti | - | REVIEW | Ana oyun terminolojisiyle doğrulanacak |
 
-## Kural
-
-Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
-Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılmaz.
 | Sprouting Table | Tarım/genetik makinesi | Nesne | Filizlendirme Tezgâhı | Sprouting Table | LOCKED | |
 | Xeno Research Lab / Xeno Lab | Gen çıkarım makinesi | Nesne | Xeno Araştırma Laboratuvarı | Xeno Lab | LOCKED | Xeno özel ad olarak korunur |
 | Advanced Xenolab | Gen çıkarım makinesi | Nesne | Gelişmiş Xeno Laboratuvarı | Advanced Xenolab | LOCKED | |
@@ -94,3 +90,15 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Terraforming | Araştırma başlığı / sistem | Sistem | Gezegen Biçimlendirme | Gezegen Dönüşümü | LOCKED | Jeoloji ve Mühendislik arasında standardize edildi |
 | Microformer | Gezegen biçimlendirme cihazı | Nesne | Mikro Biçimlendirici | Mikro Dönüştürücü | LOCKED | Terraforming terminolojisiyle aynı aile |
 | Terraformer | Gezegen biçimlendirme cihazı | Nesne | Gezegen Biçimlendirici | Gezegen Dönüştürücü | LOCKED | Terraforming terminolojisiyle aynı aile |
+| Complex | Araştırma seviye sıfatı | Sıfat | Karmaşık | Gelişmiş | LOCKED | Advanced ile aynılaştırılmaz |
+| Small FTL Drive | Gemi motoru | Nesne | Küçük FTL Motoru | Small FTL Drive, Küçük FTL Sürücüsü | LOCKED | BYOS yıldızlararası yolculuk zincirindeki gerçek nesne adı |
+| Armor and Weapons | Araştırma ağacı | Sistem | Zırh ve Silahlar | Armor and Weapons | LOCKED | Başlangıç/BYOS yönlendirmeleriyle eşleştirildi |
+| Armorworks | Üretim makinesi | Nesne | Zırh Atölyesi | Armorworks | LOCKED | Başlangıç yönlendirmelerindeki gerçek makine adı |
+| Garp Berry | FU bitkisi / ürün | Özel ad | Garp Berry | Garp Meyvesi | LOCKED | Eşya adıyla birebir eşleşme için özel ad korunur |
+| Blister Bush | FU bitkisi | Özel ad | Blister Bush | Kabarcık Çalısı | LOCKED | FU bitki adı olarak korunur; çevirilmemiş kaçak sayılmaz |
+| Protheon | FU araştırma kaynağı | Özel ad | Protheon | - | REVIEW | Precursor araştırma ağacı ele alınırken yeniden doğrulanacak |
+## Kural
+
+Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
+Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılmaz.
+
