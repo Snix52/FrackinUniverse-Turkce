@@ -100,7 +100,7 @@ def allowed(a,p):
         return bool(re.fullmatch(r'/strings/(info/[01]|currencies/(money|essence|fuscienceresource|fumadnessresource|fugeneticmaterial))',p))
     if a=='zb/researchTree/researchTree.config':
         return p in ('/gui/researchButton/caption','/gui/infoList/children/unlocksLabel/value','/gui/title/value','/gui/consumptionText/value')
-    if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config'):
+    if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config','zb/researchTree/fu_warcraft.config'):
         tree=PurePosixPath(a).stem
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
     if a.startswith('quests/fu_questlines/tutorial/') and a.endswith('.questtemplate'):
@@ -191,6 +191,12 @@ def allowed(a,p):
         return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[01]/itemSpawnParameters/shortdescription',p)) or bool(re.fullmatch(r'/upgradeStages/2/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
     if a=='objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object':
         return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
+    if a=='objects/crafting/armory/armory.object':
+        return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
+    if a=='objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[012]/itemSpawnParameters/shortdescription',p))
+    if a=='items/armors/backitems/breathprotection/breathprotection.back':
+        return p in ('/description','/shortdescription')
     craftsmanship_assets={
         'objects/colonysystem2/colonystation/colonystation.object',
         'objects/colonysystem2/colonycore/colonycore.object',
@@ -280,10 +286,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri ve Zanaatkârlık (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri, Zanaatkârlık ve Zırh-Silah (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri ve Zanaatkârlık kapsamı içerir; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Araştırma sisteminin ana bilim, üretim, güç, zanaatkârlık ve zırh-silah ağaçlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
