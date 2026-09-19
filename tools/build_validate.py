@@ -178,6 +178,34 @@ def main():
             simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
         patches[a]=patch
 
+    # Lua gibi JSON Patch uygulanamayan görünür metinler için kaynak-kilitli ham override.
+    raw_assets={};raw_string_count=0
+    raw_manifest_path=Path(__file__).with_name('raw_text_translations.json')
+    if raw_manifest_path.is_file():
+        raw_manifest=json.loads(raw_manifest_path.read_text(encoding='utf-8'))
+        for spec in raw_manifest.get('assets',[]):
+            a=spec['asset']
+            if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:raise ValueError('Güvensiz ham asset yolu: '+a)
+            replacements=spec.get('replacements',[])
+            if args.source_dir:
+                source=args.source_dir/a
+                if not source.is_file():raise FileNotFoundError(source)
+                content=source.read_text(encoding='utf-8-sig')
+                for r in replacements:
+                    expected=int(r.get('expected_count',1))
+                    if content.count(r['old'])!=expected:raise ValueError('Ham kaynak uyuşmazlığı: '+a+' | '+r.get('display_en',r['old']))
+                    content=content.replace(r['old'],r['new'])
+                    raw_string_count+=expected
+            else:
+                template=Path(__file__).parent/'raw_overrides'/a
+                if not template.is_file():raise FileNotFoundError(template)
+                content=template.read_text(encoding='utf-8-sig')
+                for r in replacements:
+                    expected=int(r.get('expected_count',1))
+                    if content.count(r['old'])!=0 or content.count(r['new'])!=expected:raise ValueError('Ham override doğrulaması başarısız: '+a+' | '+r.get('display_tr',r['new']))
+                    raw_string_count+=expected
+            raw_assets[a]=content
+
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya ve Mühendislik (Beta)',
@@ -189,7 +217,10 @@ def main():
     for a,p in patches.items():
         d=mod/(a+'.patch');d.parent.mkdir(parents=True,exist_ok=True)
         d.write_text(json.dumps(p,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps({'fields':len(rows),'assets':len(patches),'color_fixes':colorfix,'static_qa':'PASS','in_game_lqa':'NOT TESTED'},ensure_ascii=False))
+    for a,content in raw_assets.items():
+        d=mod/a;d.parent.mkdir(parents=True,exist_ok=True)
+        d.write_text(content,encoding='utf-8')
+    print(json.dumps({'fields':len(rows),'patch_assets':len(patches),'raw_assets':len(raw_assets),'assets':len(patches)+len(raw_assets),'raw_strings':raw_string_count,'color_fixes':colorfix,'static_qa':'PASS','in_game_lqa':'NOT TESTED'},ensure_ascii=False))
     return 0
 
 if __name__=='__main__':
