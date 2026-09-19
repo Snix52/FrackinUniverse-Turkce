@@ -120,7 +120,7 @@ def allowed(a,p):
     if a=='objects/crafting/handmill/handmill.object':
         return p in ('/category','/description','/shortdescription','/subtitle')
     if a=='interface/windowconfig/beerefuge.config':
-        return p in ('/paneLayout/lblTitle/value','/paneLayout/lblSubTitle/value','/paneLayout/lblProduct/value')
+        return p in ('/paneLayout/lblTitle/value','/paneLayout/lblSubTitle/value','/paneLayout/lblProduct/value','/paneLayout/btnCraft/caption','/paneLayout/btnStopCraft/caption','/paneLayout/filter/hint','/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value')
     if a in ('items/generic/crafting/matterassembler/ff_focusingarray.item','items/generic/crafting/matterassembler/powercore.item','items/generic/crafting/matterassembler/nuclearcore.item','items/generic/crafting/matterassembler/particlecore.item','objects/crafting/fu_shipcraftingtable/fu_shipcraftingtable.object'):
         return p in ('/description','/shortdescription')
     if a in ('objects/crafting/extractionlab/extractionlab.object','objects/crafting/extractionlabadv/extractionlabadv.object'):
