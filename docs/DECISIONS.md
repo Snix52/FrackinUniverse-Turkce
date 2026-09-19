@@ -118,3 +118,12 @@
 - Improved / Advanced / Superior / Peerless için mevcut kilitli sıfatlar korunarak Geliştirilmiş / Gelişmiş / Üstün / Eşsiz kullanıldı.
 - Bilim Karakolu, Mucit Tezgâhı, Grafen, Penumbrite, Nocxium, Trianglium ve Durasteel gibi daha önce kilitlenmiş adlar aynen korundu.
 - Ağaç metninde geçen Mutfak Tezgâhı, Koloni İstasyonu, Koloni Çekirdeği, Dikiş Makinesi, Kar Yazıcısı ve Biyokimyacı Tezgâhı gibi doğrudan oyuncu referansları bağlı asset geçişinde kaynak adlarıyla doğrulanacak; bu çalışma tamamlanmadan v0.6 sürümü bitmiş sayılmayacak.
+
+### v0.6 bağlı makine ilk geçişi
+
+- İlk bağlı paket 6 FU-owned asset / 50 oyuncu metni olarak eklendi.
+- Colony Station -> **Koloni İstasyonu**, Colony Core -> **Koloni Çekirdeği**, Colony Deed Mark II -> **Koloni Tapusu Mark II**, Snowprinter -> **Kar Yazıcısı**, The Lamporium -> **Lamporium** LOCKED.
+- Zanaatkârlık araştırma metni kaynakta `Mk2 Tenant Deeds` derken gerçek eşya `shortdescription` değeri **Colony Deed Mark II**. Oyuncunun araştırma ekranından envantere aynı adı takip edebilmesi için Türkçede **Koloni Tapusu Mark II** kullanıldı.
+- Aynı nedenle Koloni Çekirdeği açıklamasındaki kaynak `MK2 deeds` ifadesi de gerçek eşya adına eşlendi. Bu iki alan sayı-token QA istisnası olarak açıkça kayıt altına alındı.
+- v0.6 mevcut kapsamı 207/207 exact-source, 0 yinelenen pointer, 0 boş çeviri ve sağlam renk/kontrol kodlarıyla PASS.
+- Vanilla nesneleri FU `.patch` katmanıyla değiştiren Mutfak Tezgâhı, dikiş istasyonu ve benzeri bağlı istasyonlar doğrudan FU-owned nesneler gibi ele alınmayacak; güvenli birleşik patch yöntemi doğrulanmadan ana dala alınmayacak.
