@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.5.0-beta",
+  "translation_version": "0.6.0-dev",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 909,
+  "translated_display_fields": 1066,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 924,
-  "patched_assets": 97,
+  "total_localized_display_units": 1081,
+  "patched_assets": 98,
   "raw_override_assets": 1,
-  "target_assets_total": 98,
+  "target_assets_total": 99,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 104,
@@ -23,13 +23,14 @@
     "Mühendislik": 139,
     "Mühendislik makineleri ve kaynakları": 61,
     "Güç Sistemleri": 81,
-    "Güç Sistemleri makineleri": 139
+    "Güç Sistemleri makineleri": 139,
+    "Zanaatkârlık": 157
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (909/909)",
+    "unique_paths": "PASS (1066/1066)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
@@ -48,7 +49,9 @@
     "v05_new_source_pointer_validation": "PASS (220/220 across 33 source assets)",
     "v05_build_allowlist": "PASS (220/220 new paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS"
+    "build_allowlist_current_scope": "PASS",
+    "craftsmanship_source_pointer_validation": "PASS (157/157)",
+    "craftsmanship_patch_pairing": "PASS (157 test + 157 replace)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -79,7 +82,13 @@
   ],
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
-  "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "PASS: 97 structured patch assets / 909 ledger source values validated against FU 6.5.8 source commit 329e714b3fe87571055c8ad7aa38135d199d3317; 1 raw Lua override / 15 visible strings protected by exact source-fragment validation.",
-  "polish_pass": "PASS: v0.5 Güç Sistemleri araştırma metinleri ve bağlı temel makine metinleri doğal Türkçe, gerçek envanter adları, bilim terminolojisi ve oyuncu takip bütünlüğü açısından gözden geçirildi. Oyun içi LQA bekliyor."
+  "constitution_status": "V0.6_TREE_STATIC_PRE_QA_PASS_LINKED_ASSETS_PENDING",
+  "full_source_validation": "Existing v0.5 scope retained from prior PASS; v0.6 adds 157/157 exact-source validated Craftsmanship tree fields. Linked Craftsmanship assets are still pending.",
+  "polish_pass": "PASS for the Craftsmanship research tree text pass; linked inventory/machine names and in-game LQA remain pending.",
+  "v06_dev_scope": [
+    "Localized all 157 player-visible tree/title/description fields in zb/researchTree/fu_craftsmanship.config.",
+    "Locked Craftsmanship -> Zanaatkârlık.",
+    "Verified the 157 new fields exactly against the pinned FU 6.5.8 source commit.",
+    "Directly referenced Craftsmanship items/machines are being verified before v0.6 is considered complete."
+  ]
 }
