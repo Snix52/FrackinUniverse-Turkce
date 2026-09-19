@@ -1,33 +1,33 @@
 FU TÜRKÇE v0.7.0 BETA | STATİK QA KONTROL ÖZETİ
 
-1312 yapılandırılmış oyuncu metni alanı / 113 patch asset.
+1276 aktif yapılandırılmış oyuncu metni alanı / 113 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 1327 görünür metin birimi / 114 hedef asset.
+TOPLAM: 1291 yerelleştirilmiş görünür metin birimi / 114 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
-- Jeoloji: 104
+- Jeoloji: 84
 - Görevler: 46
 - Tezgâhlar: 14
 - Başlangıç telsiz mesajları: 26
-- Tarım: 101
+- Tarım: 99
 - Tarım makineleri: 61
 - Tarım görevleri: 23
-- Kimya: 71
+- Kimya: 67
 - Kimya makineleri ve kaynakları: 32
-- Mühendislik: 139
+- Mühendislik: 137
 - Mühendislik makineleri ve kaynakları: 61
-- Güç Sistemleri: 81
+- Güç Sistemleri: 77
 - Güç Sistemleri makineleri: 139
-- Zanaatkârlık: 155
+- Zanaatkârlık: 153
 - Zanaatkârlık makineleri: 131
-- Zırh ve Silahlar: 97
+- Zırh ve Silahlar: 95
 - Zırh ve Silahlar makineleri: 20
 
 v0.5 YENİ İÇERİK
-- fu_power araştırma ağacı: 39 düğüm / 81 oyuncu metni.
+- fu_power araştırma ağacı: 39 düğüm / 77 aktif oyuncu metni.
 - Doğrudan bağlı Güç Sistemleri makineleri: 32 asset / 139 oyuncu metni.
-- v0.5 toplam ekleme: 33 asset / 220 alan.
+- v0.5 toplam ekleme: 33 asset / 216 aktif alan.
 - Solar, rüzgâr, yanmalı, fisyon, füzyon ve kuantum üretim zincirleri.
 - Elektrikli Fırın, Yüksek Fırın ve Ark Ergitici.
 - Piller, santrifüjler, Toz Eleği, Üretim İstasyonu.
@@ -35,9 +35,9 @@ v0.5 YENİ İÇERİK
 - Kablolama İstasyonu ve Alternatör.
 
 GEÇEN STATİK KONTROLLER
-- Exact FU kaynak commit doğrulaması: 909/909 yapılandırılmış alan.
+- Exact FU kaynak commit doğrulaması: 877/877 aktif yapılandırılmış alan.
 - Patchlenen yapılandırılmış asset: 97/97.
-- v0.5 yeni içerik exact-source: 220/220 alan, 33/33 asset.
+- v0.5 yeni içerik exact-source: 216/216 aktif alan, 33/33 asset.
 - Lua görünür metin exact-fragment doğrulaması: 15/15.
 - Ham Lua override asset: 1/1.
 - Benzersiz asset/pointer: 909/909 PASS.
@@ -90,22 +90,22 @@ YAPILMAYAN LQA
 
 SONUÇ
 Statik Anayasa QA: PASS.
-Exact kaynak doğrulaması: PASS (909/909 + Lua 15/15).
-v0.5 yeni içerik doğrulaması: PASS (220/220).
+Exact kaynak doğrulaması: PASS (877/877 aktif + Lua 15/15).
+v0.5 yeni içerik doğrulaması: PASS (216/216 aktif).
 Oyun içi LQA: BEKLİYOR.
 
 
 v0.6 ZANAATKÂRLIK BETA QA
 - Araştırma ağacı: 76 gerçek düğüm.
-- Görünür ağaç/fallback alanı: 155.
+- Aktif ağaç alanı: 153.
 - Bağlı temel makine/tezgâh alanı: 131.
-- v0.6 toplam ekleme: 286 yapılandırılmış alan / 12 hedef asset.
-- Proje toplamı: 1195 yapılandırılmış alan + 15 Lua UI metni = 1210 görünür metin birimi.
-- FU-owned exact kaynak doğrulaması: 243/243 PASS.
+- v0.6 toplam ekleme: 284 aktif yapılandırılmış alan / 12 hedef asset.
+- Retroaktif düzeltilmiş proje toplamı: 1161 yapılandırılmış alan + 15 Lua UI metni = 1176 yerelleştirilmiş birim.
+- FU-owned exact kaynak doğrulaması: 241/241 PASS.
 - FU katmanlı patch kaynak doğrulaması: 33/33 PASS.
 - Vanilla kısa ad harici test doğrulaması: 10/10 PASS.
-- v0.6 birleşik kaynak/provenans doğrulaması: 286/286 PASS.
-- Patch eşleşmesi: 286 test + 286 replace PASS.
+- v0.6 birleşik kaynak/provenans doğrulaması: 284/284 PASS.
+- Patch eşleşmesi: 284 test + 284 replace PASS.
 - Yinelenen asset/pointer: 0.
 - Boş Türkçe değer: 0.
 - Renk/kontrol kodu bütünlüğü: PASS; 10 belgeli ^white; -> ^reset; düzeltmesi.
@@ -116,22 +116,22 @@ v0.6 ZANAATKÂRLIK BETA QA
 
 SONUÇ
 Statik Anayasa QA: PASS.
-v0.6 kaynak/provenans doğrulaması: PASS (286/286).
-Proje yapılandırılmış alan bütünlüğü: PASS (1195 benzersiz alan).
+v0.6 kaynak/provenans doğrulaması: PASS (284/284 aktif).
+Retroaktif yapılandırılmış alan bütünlüğü: PASS (1161 benzersiz aktif alan).
 Oyun içi LQA: BEKLİYOR.
 
 
 v0.7 ZIRH VE SİLAHLAR BETA QA
 - Araştırma ağacı: 47 gerçek düğüm.
-- Görünür ağaç/fallback alanı: 97.
+- Aktif ağaç alanı: 95.
 - Bağlı temel istasyon/EPP alanı: 20.
-- v0.7 toplam ekleme: 117 yapılandırılmış alan / 4 hedef asset.
-- Proje toplamı: 1312 yapılandırılmış alan + 15 Lua UI metni = 1327 görünür metin birimi.
-- Pinned FU kaynak doğrulaması: 111/111 PASS.
+- v0.7 toplam ekleme: 115 aktif yapılandırılmış alan / 4 hedef asset.
+- Proje toplamı: 1276 aktif yapılandırılmış alan + 15 Lua UI metni = 1291 yerelleştirilmiş görünür metin birimi.
+- Pinned FU kaynak doğrulaması: 109/109 PASS.
 - Vanilla Örs zinciri harici test doğrulaması: 4/4 PASS.
 - Vanilla Solunum EPP asset doğrulaması: 2/2 PASS.
-- v0.7 birleşik kaynak/provenans doğrulaması: 117/117 PASS.
-- Patch eşleşmesi: 117 test + 117 replace PASS.
+- v0.7 birleşik kaynak/provenans doğrulaması: 115/115 PASS.
+- Patch eşleşmesi: 115 test + 115 replace PASS.
 - Yinelenen asset/pointer: 0.
 - Boş Türkçe değer: 0.
 - Renk/kontrol kodu ve sayı bütünlüğü: PASS; Örs ailesinde 4 belgeli ^white; -> ^reset; düzeltmesi.
@@ -141,6 +141,21 @@ v0.7 ZIRH VE SİLAHLAR BETA QA
 
 SONUÇ
 Statik Anayasa QA: PASS.
-v0.7 kaynak/provenans doğrulaması: PASS (117/117).
-Proje yapılandırılmış alan bütünlüğü: PASS (1312 benzersiz alan).
+v0.7 kaynak/provenans doğrulaması: PASS (115/115 aktif).
+Proje yapılandırılmış alan bütünlüğü: PASS (1276 benzersiz aktif alan).
 Oyun içi LQA: BEKLİYOR.
+
+GERİYE DÖNÜK v0.7 AKTİF-DÜĞÜM / ANLAM QA
+- 7 araştırma ağacının researchTree düğümleri pinned FU 6.5.8 kaynağıyla yeniden çaprazlandı.
+- researchTree.lua incelendi: strings.research.default runtime'da okunmuyor; gerçek boş-seçim fallback'i data.strings.info.
+- Runtime-inaktif 36 ledger alanı ve bunların patch işlemleri dağıtımdan çıkarıldı.
+- Aktif araştırma kapsamına yanlışlıkla ölü string eklenmesini engelleyen build guard eklendi.
+- Ark Eritici -> Ark Ergitici düzeltildi.
+- organik silikon -> organik silisyum düzeltildi.
+- 3 başlangıç görev hedefi oyuncuya araştırma ağacı + açılacak nesneyi açık söyleyecek şekilde düzeltildi.
+- 2 başlangıç telsiz yönlendirmesi anlam/takip açısından netleştirildi.
+- Aktif görev/telsiz kapsamı ayrıca kontrol edildi: 18 assetin izin verilen görünür alanlarında eksik pointer 0, fazla pointer 0.
+- Güncel yapılandırılmış kapsam: 1276 benzersiz aktif alan.
+- Lua UI: 15/15 kaynak-kilitli metin.
+- Toplam yerelleştirilmiş birim: 1291.
+- Oyun içi LQA / font / taşma: BEKLİYOR.
