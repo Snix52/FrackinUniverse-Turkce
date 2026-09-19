@@ -160,3 +160,15 @@
 - 243 v0.6 alanı pinned FU-owned kaynaklardan, 33 alan pinned FU `.patch` katmanlarından, 10 vanilla kısa ad alanı bağımsız test değerlerinden doğrulandı.
 - `workbenchatechy` string çifti kaynakta mevcut olsa da `researchTree.fu_craftsmanship` içinde karşılık gelen düğüm bulunmadığından oyuncuya görünür kapsam sayılmadı ve yamadan çıkarıldı.
 - Oyun içi LQA, font ve panel taşma testleri tamamlanmadığı için sürüm Beta olarak kalır.
+
+## 2026-09-20 - v0.7 Zırh ve Silahlar
+
+- Çalışma `work/v0.7-warcraft` dalında başlatıldı; main dalındaki v0.6 beta korunuyor.
+- `fu_warcraft` ağacında **47 gerçek araştırma düğümü** var. `default` yardım/fallback çifti ve ağaç adıyla ilk geçiş **97 görünür alan** içeriyor; ölü/bağlantısız string bulunmadı.
+- Armor and Weapons -> **Zırh ve Silahlar** mevcut LOCKED kararı korunuyor.
+- Kaynakta araştırmanın açtığı gerçek FU `armory` nesnesi aynı pakete bağlandı: **Zırh Atölyesi -> Montaj Hattı -> Cephanelik**.
+- Eski vanilla silah istasyonu zinciri harici vanilla test değerleriyle doğrulandı: **Örs -> Dövme Ocağı -> Çoğaltıcı**.
+- Tungsten araştırmasının açtığı `breathprotectionback` gerçek kısa adı **Breathing EPP** olarak vanilla kaynaktan doğrulandı; Türkçesi **Solunum EPP'si** LOCKED.
+- `depleted uranium` bilimsel olarak **tüketilmiş uranyum** karşılığıyla standardize edildi; önceki geçici `seyreltilmiş uranyum` kullanılmayacak.
+- `Wastelander Equipment` özel ad olmadığı ve açıklama doğrudan kıyamet sonrası hurda ekipmanını anlattığı için **Kıyamet Sonrası Ekipman** olarak çevrildi.
+- İlk v0.7 bağlı paketle mevcut kapsam **117 yeni alan** oldu. Oyun içi LQA henüz yapılmadı.
