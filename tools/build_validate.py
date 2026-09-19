@@ -175,6 +175,18 @@ def allowed(a,p):
         if a=='objects/crafting/wiringstation/wiringstation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
+    craftsmanship_assets={
+        'objects/colonysystem2/colonystation/colonystation.object',
+        'objects/colonysystem2/colonycore/colonycore.object',
+        'objects/colonysystem2/colonydeedmk2/colonydeedmk2.object',
+        'objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object',
+        'objects/peglaci/snowpersongenerator/snowpersongenerator.object',
+        'objects/crafting/lavalampstation/lavalampstation.object'
+    }
+    if a in craftsmanship_assets:
+        if a=='objects/colonysystem2/colonystation/colonystation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
+            return True
+        return bool(re.fullmatch(r'/(description|shortdescription|[A-Za-z]+Description)',p))
     return False
 
 def main():
@@ -198,7 +210,7 @@ def main():
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
             colorfix+=1
         if Counter(CONTROL.findall(r['en']))!=Counter(CONTROL.findall(r['tr'])):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
-        if nums(r['en'])!=nums(r['tr']):raise ValueError('Sayı uyuşmazlığı: '+a+p)
+        if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
         groups[a].append(r)
 
     patches={}
