@@ -1,30 +1,34 @@
 {
-  "translation_version": "0.1.1-beta",
+  "translation_version": "0.2.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "variant": "Turkish Unicode",
-  "translated_display_fields": 185,
-  "patched_assets": 14,
-  "constitution_adjusted_fields": 87,
+  "translated_display_fields": 360,
+  "patched_assets": 36,
+  "categories": {
+    "Araştırma arayüzü": 9,
+    "Jeoloji": 104,
+    "Görevler": 36,
+    "Tezgâhlar": 14,
+    "Başlangıç telsiz mesajları": 22,
+    "Tarım": 101,
+    "Tarım makineleri": 51,
+    "Tarım görevleri": 23
+  },
   "checks": {
     "unique_paths": "PASS",
-    "exact_source_pointer_validation": "PASS (185/185; önceki Anayasa denetiminde exact source commit ile doğrulandı)",
-    "valid_patch_json": "PASS",
-    "english_parenthetical_glosses": "PASS (0)",
-    "source_added_english_name_notes": "PASS (0)",
-    "unicode_only_policy": "PASS",
-    "ascii_distribution": "REMOVED",
-    "control_token_multisets": "PASS",
-    "numeric_values": "PASS (localized decimal separator allowed)",
-    "documented_color_fixes": 1,
+    "agriculture_source_pointer_validation": "PASS (101/101)",
+    "token_integrity": "PASS except documented source fixes",
     "fixture_application": "PASS",
-    "source_mismatch_rejection_cases": 185,
-    "source_mismatch_rejection": "PASS"
+    "source_mismatch_rejection_cases": 360,
+    "source_mismatch_rejection": "PASS",
+    "unicode_only_policy": "PASS"
   },
-  "full_source_validation": "PASS: 14/14 source files and 185/185 pointer values were checked against exact source commit before this text-only normalization; English source values/pointers were not modified.",
+  "documented_source_fixes": [
+    "create_growingtray: ^oraange; -> ^orange;",
+    "create_growingtray turnInDescription: Armorworks -> Yetiştirme Tepsisi (condition itemName=fu_growingtray)"
+  ],
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
-  "compatibility_with_user_workshop_build": "NOT VERIFIED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING"
 }

@@ -40,3 +40,18 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
 Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılmaz.
+| Sprouting Table | Tarım/genetik makinesi | Nesne | Filizlendirme Tezgâhı | Sprouting Table | LOCKED | |
+| Xeno Research Lab / Xeno Lab | Gen çıkarım makinesi | Nesne | Xeno Araştırma Laboratuvarı | Xeno Lab | LOCKED | Xeno özel ad olarak korunur |
+| Advanced Xenolab | Gen çıkarım makinesi | Nesne | Gelişmiş Xeno Laboratuvarı | Advanced Xenolab | LOCKED | |
+| Growing Tray | Tarım makinesi | Nesne | Yetiştirme Tepsisi | Growing Tray | LOCKED | |
+| Heatlamp Tray | Tarım makinesi | Nesne | Isı Lambalı Tepsi | Heatlamp Tray | LOCKED | |
+| Hydro Tray | Tarım makinesi | Nesne | Hidroponik Tepsi | Hydro Tray | LOCKED | |
+| Botany Lab | Sera yükseltmesi | Nesne | Botanik Laboratuvarı | Botany Lab | LOCKED | |
+| Gene Design Lab | Sera yükseltmesi | Nesne | Gen Tasarım Laboratuvarı | Gene Design Lab | LOCKED | |
+| Apiary Crafting Station | Arıcılık makinesi | Nesne | Arıcılık Üretim İstasyonu | Apiary Crafting Station | LOCKED | |
+| Bee Refuge | Bilim Karakolu arıcılık noktası | Yer/Nesne | Arı Barınağı | Bee Refuge | LOCKED | |
+| Power Station | Elektronik Merkezi yükseltmesi | Nesne | Güç İstasyonu | Power Station | LOCKED | |
+| Quantum Fluid | FU kaynağı | Kaynak | Kuantum Sıvısı | Quantum Fluid | LOCKED | |
+| Alien Compound | FU kaynağı | Kaynak | Uzaylı Bileşiği | Alien Compound | LOCKED | |
+| Caliginous Gas | FU gazı | Kaynak | Caliginous Gazı | Caliginous Gas | LOCKED | Caliginous özel terim olarak korunur |
+| Gravitic Rain | Çevresel tehlike | Kavram | gravitik yağmur | - | REVIEW | İlgili biyom/status çevirisinde tekrar doğrulanacak |
