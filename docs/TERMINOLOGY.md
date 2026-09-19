@@ -86,7 +86,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Mech Part Crafting Table | Mech üretim makinesi | Nesne | Mech Parçası Üretim Tezgâhı | Mech Part Crafting Table | LOCKED | |
 | Core Fragments | Kaynak | Kaynak | Çekirdek Parçaları | Core Fragments | LOCKED | |
 | Atomic Furnace | Vanilla üretim makinesi | Nesne | Atomik Fırın | Atomic Furnace | APPROVED | FU Mühendislik ağacındaki referans |
-| Power Systems | Araştırma ağacı | Sistem | Güç Sistemleri | Power Systems | APPROVED | Güç ağacı ele alınırken LOCKED yapılacak |
+| Power Systems / fu_power | Araştırma ağacı | Sistem | Güç Sistemleri | Electronics, Power Systems | LOCKED | Kaynak ağaç başlığı Electronics olsa da oyun içi çapraz referans Power Systems; oyuncu takibi için tek ad kullanılır |
 | Terraforming | Araştırma başlığı / sistem | Sistem | Gezegen Biçimlendirme | Gezegen Dönüşümü | LOCKED | Jeoloji ve Mühendislik arasında standardize edildi |
 | Microformer | Gezegen biçimlendirme cihazı | Nesne | Mikro Biçimlendirici | Mikro Dönüştürücü | LOCKED | Terraforming terminolojisiyle aynı aile |
 | Terraformer | Gezegen biçimlendirme cihazı | Nesne | Gezegen Biçimlendirici | Gezegen Dönüştürücü | LOCKED | Terraforming terminolojisiyle aynı aile |
@@ -97,6 +97,40 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Garp Berry | FU bitkisi / ürün | Özel ad | Garp Berry | Garp Meyvesi | LOCKED | Eşya adıyla birebir eşleşme için özel ad korunur |
 | Blister Bush | FU bitkisi | Özel ad | Blister Bush | Kabarcık Çalısı | LOCKED | FU bitki adı olarak korunur; çevirilmemiş kaçak sayılmaz |
 | Protheon | FU araştırma kaynağı | Özel ad | Protheon | - | REVIEW | Precursor araştırma ağacı ele alınırken yeniden doğrulanacak |
+| Electronics | Güç Sistemleri içindeki araştırma düğümü | Sistem | Elektronik | - | LOCKED | Ağaç adından ayrı tutulur |
+| Silicon | Malzeme / elektronik | Kaynak | Silisyum | Silikon | LOCKED | Bilimsel element adı |
+| Solar Panel | Güç üretim makinesi | Nesne | Güneş Paneli | Solar Panel | LOCKED | |
+| Solar Array | Güç üretim makinesi | Nesne | Güneş Dizisi | Solar Array | LOCKED | |
+| Solar Tower | Güç üretim makinesi | Nesne | Güneş Kulesi | Solar Tower | LOCKED | |
+| Hydraulic Dynamo | Güç üretim makinesi | Nesne | Hidrolik Dinamo | Hydraulic Dynamo | LOCKED | Kaynak araştırma açıklamasındaki hydraulic piston yerine gerçek nesne adı esas alınır |
+| Wind Turbine | Güç üretim makinesi | Nesne | Rüzgâr Türbini | Wind Turbine | LOCKED | |
+| Combustion Generator | Güç üretim makinesi | Nesne | Yanmalı Jeneratör | Combustion Engine | LOCKED | Kaynak araştırma metni Combustion Engine dese de açılan nesnenin gerçek adı Combustion Generator |
+| Alternator Generator | Güç üretim makinesi | Nesne | Alternatör | Alternator Generator | LOCKED | Türkçede alternatör zaten jeneratör anlamını taşır |
+| Electric Furnace | Ergitme makinesi | Nesne | Elektrikli Fırın | Electric Furnace | LOCKED | |
+| Blast Furnace | Ergitme makinesi | Nesne | Yüksek Fırın | Blast Furnace | LOCKED | Yerleşik metalurji karşılığı |
+| Arc Smelter | Ergitme makinesi | Nesne | Ark Ergitici | Arc Smelter | LOCKED | |
+| Fission Reactor | Güç üretim makinesi | Nesne | Fisyon Reaktörü | Fission Reactor | LOCKED | |
+| Small Fusion Reactor | Güç üretim makinesi | Nesne | Küçük Füzyon Reaktörü | Small Fusion Reactor | LOCKED | |
+| Large Fusion Reactor | Güç üretim makinesi | Nesne | Büyük Füzyon Reaktörü | Large Fusion Reactor | LOCKED | |
+| Quantum Reactor | Güç üretim makinesi | Nesne | Kuantum Reaktörü | Quantum Reactor | LOCKED | |
+| Quantum Nucleonics | Araştırma başlığı | Bilim | Kuantum Nükleoniği | Kuantum Nükleer Bilimi | LOCKED | Nucleonics için teknik Türkçe kullanım nükleonik |
+| Quantum Extractor | Çıkarma makinesi | Nesne | Kuantum Çıkarıcı | Quantum Extractor | LOCKED | |
+| Centrifuge | Makine kategorisi | Sistem | Santrifüj | Centrifuge | LOCKED | |
+| Industrial Centrifuge | Makine | Nesne | Endüstriyel Santrifüj | Industrial Centrifuge | LOCKED | |
+| Lab Centrifuge | Makine | Nesne | Laboratuvar Santrifüjü | Lab Centrifuge | LOCKED | |
+| Gas Centrifuge | Makine | Nesne | Gaz Santrifüjü | Gas Centrifuge | LOCKED | |
+| Powder Sifter | Çıkarma makinesi | Nesne | Toz Eleği | Powder Sifter | LOCKED | |
+| Rock Crusher | Çıkarma makinesi | Nesne | Kaya Kırıcı | Rock Crusher | LOCKED | Araştırma açıklamasındaki referans |
+| Item Networks | Otomasyon sistemi | Sistem | Eşya Ağları | Item Networks | LOCKED | |
+| Wiring Station | Üretim makinesi | Nesne | Kablolama İstasyonu | Wiring Station | LOCKED | |
+| Manufacturing Station | Üretim makinesi | Nesne | Üretim İstasyonu | Manufacturing Station | LOCKED | |
+| Liquid Collector | Atmosfer makinesi | Nesne | Sıvı Toplayıcı | Liquid Collector | LOCKED | |
+| Atmospheric Condenser | Atmosfer makinesi | Nesne | Atmosfer Yoğuşturucusu | Atmospheric Condenser | LOCKED | |
+| Liquid Mixer | Sıvı işleme makinesi | Nesne | Sıvı Karıştırıcı | Liquid Mixer | LOCKED | |
+| Atmospheric Filter | Atmosfer makinesi | Nesne | Atmosfer Filtresi | Atmospheric Filter | LOCKED | |
+| Atmospheric Regulator | Atmosfer makinesi | Nesne | Atmosfer Düzenleyici | Atmospheric Regulator | LOCKED | |
+| Regeneration Matrix | İyileştirme makinesi | Nesne | Yenilenme Matrisi | Regeneration Matrix | LOCKED | |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
