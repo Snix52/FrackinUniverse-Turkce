@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.6.0-dev
+GELİŞTİRME / DOĞRULAMA | v0.6.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1116 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1195 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -38,14 +38,17 @@ v0.5 güncel kaynak kontrolü:
 
 Oyun içi LQA, font ve panel taşma testi ayrıca yapılmalıdır.
 
-v0.6 çalışma dalı güncel QA:
-  fu_craftsmanship: 78 araştırma düğümü / 157 alan
-  ilk bağlı FU-owned makine paketi: 6 asset / 50 alan
-  v0.6 mevcut toplam: 7 asset / 207 alan
-  toplam yapılandırılmış alan: 1116
-  toplam görünür birim: 1131 (1116 yapılandırılmış + 15 Lua)
-  yeni alan exact-source: 207/207 PASS
-  patch eşleşmesi: 207 test + 207 replace PASS
+v0.6 beta QA:
+  fu_craftsmanship: 76 gerçek araştırma düğümü
+  ağaç + default/fallback görünür alan: 155
+  bağlı makine/tezgâh: 131 alan
+  v0.6 toplam ekleme: 286 alan / 12 hedef asset
+  toplam yapılandırılmış alan: 1195
+  toplam görünür birim: 1210 (1195 yapılandırılmış + 15 Lua)
+  FU-owned exact-source: 243/243 PASS
+  FU layered patch exact-source: 33/33 PASS
+  vanilla kısa ad harici doğrulama: 10/10 PASS
+  patch eşleşmesi: 286 test + 286 replace PASS
   benzersiz pointer / boş çeviri / renk-kontrol kodu: PASS
-  sayı bütünlüğü: PASS; 2 belgeli Colony Deed Mark II ad eşleme istisnası
-  vanilla üzerine FU patch katmanı kullanan bağlı istasyonlar: DEVAM EDİYOR
+  workbenchatechy ölü stringi: dağıtımdan çıkarıldı
+  oyun içi LQA: BEKLİYOR
