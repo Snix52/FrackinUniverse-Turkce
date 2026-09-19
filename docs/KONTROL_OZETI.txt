@@ -1,39 +1,52 @@
-FU TÜRKÇE v0.3.0 BETA | ANAYASA KONTROL ÖZETİ
+FU TÜRKÇE v0.4.0 BETA | ANAYASA KONTROL ÖZETİ
 
-463 çevrilmiş oyuncu metni alanı / 46 hedef asset.
+654 çevrilmiş oyuncu metni alanı / 62 hedef asset.
 
 KAPSAM
-- Önceki v0.2.0 kapsamı: 360 alan / 36 asset
-- Kimya araştırma ağacı: 71 alan
-- Kimya bağlı makineleri ve kaynakları: 32 alan
-- v0.3 yeni içerik: 103 alan / 10 asset
+- Önceki v0.3.0 kapsamı: 463 alan / 46 asset
+- Mühendislik araştırma ağacı: 139 alan
+- Mühendislik bağlı makineleri ve kaynakları: 52 alan
+- v0.4 yeni içerik: 191 alan / 16 asset
 
 GEÇEN STATİK KONTROLLER
-- Exact FU kaynak commit doğrulaması: 463/463 alan.
-- Patchlenen asset kaynak doğrulaması: 46/46.
-- v0.3 yeni içerik doğrulaması: 103/103 alan, 10/10 kaynak asset.
-- Benzersiz JSON alan yolları: PASS.
-- JSON Patch fixture uygulaması: 463/463 PASS.
-- Kaynak uyuşmazlığı guard kapsamı: 463 alan.
+- Exact FU kaynak commit doğrulaması: 654/654 alan.
+- Patchlenen asset kaynak doğrulaması: 62/62.
+- v0.4 yeni içerik doğrulaması: 191/191 alan, 16/16 kaynak asset.
+- Benzersiz JSON alan yolları: 654/654 PASS.
+- JSON Patch fixture uygulaması: 654/654 PASS.
 - Token / sayı / biçimlendirme kontrolleri: PASS.
-- Kimya build allowlist: 103/103 PASS.
+- Mühendislik build allowlist: 191/191 PASS.
 - Unicode Türkçe politika: PASS.
 - ASCII dağıtım: yok.
 
-BELGELİ KAYNAK HATALARI
+TERMİNOLOJİ STANDARDİZASYONU
+- Improved -> Geliştirilmiş
+- Advanced -> Gelişmiş
+- Superior -> Üstün
+- Peerless -> Eşsiz
+- Mech, Tech, EPP ve FTL sistem adları korunur.
+- Ship Component Assembler -> Gemi Bileşeni Birleştirici.
+- STL Drive -> STL Motoru.
+- Extraction Lab -> Çıkarma Laboratuvarı.
+
+BELGELİ KAYNAK / BAĞLAM DÜZELTMELERİ
 1. create_growingtray kaynak metnindeki "^oraange;" kodu "^orange;" olarak düzeltildi.
 2. Aynı görevin kaynak turnInDescription alanı yanlışlıkla Armorworks istiyor.
    Gerçek koşul itemName=fu_growingtray olduğu için Türkçede Yetiştirme Tepsisi kullanıldı.
+3. Mühendislik araştırma metni "Ship Crafting Table" diyor.
+   Gerçek FU nesnesi fu_shipcraftingtable oyuncuya "Ship Component Assembler" olarak gösterildiğinden
+   Türkçede Gemi Bileşeni Birleştirici kullanıldı.
 
 YAPILMAYAN LQA
 - Oyunu gerçek Workshop kurulumu üzerinde başlatma.
 - Font ve büyük/küçük Türkçe karakter testi.
-- Research açıklamalarının panelden taşma kontrolü.
-- Görev -> araştırma -> üretim menüsü -> makine -> teslim zincirinin baştan sona testi.
-- Kimya Laboratuvarı yükseltme kademelerinin oyun içinde isim/açıklama kontrolü.
+- Mühendislik araştırma açıklamalarının panelden taşma kontrolü.
+- Çıkarma Laboratuvarı ve araştırma bilgisayarlarının oyun içi isim/açıklama kontrolü.
+- Gemi Bileşeni Birleştirici arayüzü ve buton taşma kontrolü.
+- STL Motoru, FTL ve Mech zincirinin oyun içinde baştan sona kontrolü.
 - Diğer modlarla uyumluluk/yükleme sırası.
 
 SONUÇ
 Statik Anayasa QA: PASS.
-Exact kaynak doğrulaması: PASS (463/463).
+Exact kaynak doğrulaması: PASS (654/654).
 Oyun içi LQA: BEKLİYOR.
