@@ -1,134 +1,30 @@
 {
-  "translation_version": "0.1.0-beta",
+  "translation_version": "0.1.1-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
   "variant": "Turkish Unicode",
   "translated_display_fields": 185,
   "patched_assets": 14,
-  "categories": {
-    "Araştırma arayüzü": 9,
-    "Jeoloji": 104,
-    "Görevler": 36,
-    "Tezgâhlar": 14,
-    "Başlangıç telsiz mesajları": 22
-  },
+  "constitution_adjusted_fields": 87,
   "checks": {
     "unique_paths": "PASS",
-    "display_field_allowlist": "PASS",
-    "valid_json": "PASS",
-    "color_token_multisets": "PASS",
+    "exact_source_pointer_validation": "PASS (185/185; önceki Anayasa denetiminde exact source commit ile doğrulandı)",
+    "valid_patch_json": "PASS",
+    "english_parenthetical_glosses": "PASS (0)",
+    "source_added_english_name_notes": "PASS (0)",
+    "unicode_only_policy": "PASS",
+    "ascii_distribution": "REMOVED",
     "control_token_multisets": "PASS",
-    "numeric_token_multisets": "PASS",
+    "numeric_values": "PASS (localized decimal separator allowed)",
+    "documented_color_fixes": 1,
     "fixture_application": "PASS",
-    "unchanged_fixture_sentinel": "PASS",
     "source_mismatch_rejection_cases": 185,
     "source_mismatch_rejection": "PASS"
   },
-  "full_source_validation": "NOT PERFORMED; checked against inspected-field ledger only",
+  "full_source_validation": "PASS: 14/14 source files and 185/185 pointer values were checked against exact source commit before this text-only normalization; English source values/pointers were not modified.",
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "compatibility_with_user_workshop_build": "NOT VERIFIED",
-  "important": "Per-asset guards: if ANY guarded English field differs, this entire asset patch is skipped. No promise of all future-version compatibility.",
-  "assets": [
-    {
-      "asset": "objects/crafting/matterassembler/prototyper.object",
-      "translated_fields": 14,
-      "guard_tests": 14,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/start_basics.questtemplate",
-      "translated_fields": 4,
-      "guard_tests": 4,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/create_alchemy.questtemplate",
-      "translated_fields": 3,
-      "guard_tests": 3,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/create_electronics.questtemplate",
-      "translated_fields": 3,
-      "guard_tests": 3,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate",
-      "translated_fields": 3,
-      "guard_tests": 3,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/create_matterassembler.questtemplate",
-      "translated_fields": 9,
-      "guard_tests": 9,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/create_matterassembler2.questtemplate",
-      "translated_fields": 4,
-      "guard_tests": 4,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/create_tinkertable.questtemplate",
-      "translated_fields": 3,
-      "guard_tests": 3,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/fu_scienceoutpost.questtemplate",
-      "translated_fields": 3,
-      "guard_tests": 3,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "quests/fu_questlines/tutorial/vinj/fu_start_MA.questtemplate",
-      "translated_fields": 4,
-      "guard_tests": 4,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "radiomessages/fu_quests.radiomessages",
-      "translated_fields": 22,
-      "guard_tests": 22,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "zb/researchTree/data.config",
-      "translated_fields": 7,
-      "guard_tests": 7,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "zb/researchTree/fu_geology.config",
-      "translated_fields": 104,
-      "guard_tests": 104,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    },
-    {
-      "asset": "zb/researchTree/researchTree.config",
-      "translated_fields": 2,
-      "guard_tests": 2,
-      "fixture_check": "PASS",
-      "local_full_source_verified": false
-    }
-  ],
-  "catalog_sha256": "8d2f0cfbfb61911678f1090f432a5bfb59e88c3735a19bac0aceabfa610fa9d1"
+  "constitution_status": "STATIC_QA_PASS_LQA_PENDING"
 }
