@@ -6616,7 +6616,8 @@
       "section": "Zanaatkârlık",
       "qa": {
         "allow_number_fix": true,
-        "reason": "Kaynak 'Mk2 Tenant Deeds' diyor; gerçek eşya adı 'Colony Deed Mark II'. Oyuncu takibi için envanter adı kullanıldı."
+        "reason": "Kaynak 'Mk2 Tenant Deeds' diyor; gerçek eşya adı 'Colony Deed Mark II'. Oyuncu takibi için envanter adı kullanıldı. Inventor's Table vanilla gerçek adıyla doğrulandı; Türkçede Mucit Tezgâhı.",
+        "linked_inventory_verified": true
       }
     },
     {
@@ -7027,7 +7028,11 @@
       "pointer": "/strings/research/workbenchsnowpeople/1",
       "en": "^orange;Tier 3^reset;\n\nYou've picked up the ancient Peglaci art of snow-sculpting, developed on their homeworld aeons ago and practiced even still across all levels of their society.\n\n^cyan;The Snowprinter can be found at the Inventor's Table.^reset;",
       "tr": "^orange;Kademe 3^reset;\n\nPeglaci'nin ana dünyalarında çağlar önce doğan ve toplumun her katmanında hâlâ sürdürülen kadim kar heykeltıraşlığı sanatını öğrendin.\n\n^cyan;Kar Yazıcısını Mucit Tezgâhında bulabilirsin.^reset;",
-      "section": "Zanaatkârlık"
+      "section": "Zanaatkârlık",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Inventor's Table vanilla gerçek adıyla doğrulandı; Türkçede Mucit Tezgâhı."
+      }
     },
     {
       "asset": "zb/researchTree/fu_craftsmanship.config",
@@ -7181,7 +7186,11 @@
       "pointer": "/strings/research/workbench1/1",
       "en": "^orange;Tier 1^reset;\n\nYou've learned the basics of carpentry and can make simple blocks and furniture out of wood at a Wooden Workbench.",
       "tr": "^orange;Kademe 1^reset;\n\nMarangozluğun temellerini öğrendin; artık Ahşap Tezgâhta ahşaptan basit bloklar ve mobilyalar yapabilirsin.",
-      "section": "Zanaatkârlık"
+      "section": "Zanaatkârlık",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Wooden Workbench vanilla gerçek adıyla doğrulandı; Türkçede Ahşap Tezgâh."
+      }
     },
     {
       "asset": "zb/researchTree/fu_craftsmanship.config",
@@ -8554,6 +8563,111 @@
         "layered_source": true,
         "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
         "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Wooden Workbench^white;",
+      "tr": "^orange;Ahşap Tezgâh^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "9abd8887edfaeb62594df92d08ed71e2760ee76a",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Wooden Workbench^white;",
+      "tr": "^orange;Ahşap Tezgâh^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "9abd8887edfaeb62594df92d08ed71e2760ee76a",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Industrial Workbench^white;",
+      "tr": "^orange;Endüstriyel Tezgâh^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "9abd8887edfaeb62594df92d08ed71e2760ee76a",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Inventor's Table^white;",
+      "tr": "^orange;Mucit Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Inventor's Table^white;",
+      "tr": "^orange;Mucit Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Engineer's Table^white;",
+      "tr": "^orange;Mühendis Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Architect's Table^white;",
+      "tr": "^orange;Mimar Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
       }
     }
   ]
