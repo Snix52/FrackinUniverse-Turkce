@@ -10,7 +10,7 @@ from collections import Counter, defaultdict
 from pathlib import Path, PurePosixPath
 
 COLOR=re.compile(r'\^[^;\s]*;')
-CONTROL=re.compile(r'\[[^\]]+\]|<[^>]+>')
+CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
 ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 
@@ -23,7 +23,8 @@ NONVISIBLE_RESEARCH_IDS = {
     'zb/researchTree/fu_engineering.config': {'default'},
     'zb/researchTree/fu_power.config': {'default','ansible'},
     'zb/researchTree/fu_craftsmanship.config': {'default','workbenchatechy'},
-    'zb/researchTree/fu_warcraft.config': {'default'}
+    'zb/researchTree/fu_warcraft.config': {'default'},
+    'zb/researchTree/madness.config': {'default'}
 }
 
 def nonvisible_research_pointer(a,p):
@@ -119,6 +120,8 @@ def allowed(a,p):
     if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config','zb/researchTree/fu_warcraft.config'):
         tree=PurePosixPath(a).stem
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
+    if a=='zb/researchTree/madness.config':
+        return p=='/strings/trees/frackinuniversemadness' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
     if a.startswith('quests/fu_questlines/tutorial/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
@@ -207,6 +210,29 @@ def allowed(a,p):
         return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[01]/itemSpawnParameters/shortdescription',p)) or bool(re.fullmatch(r'/upgradeStages/2/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
     if a=='objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object':
         return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
+    madness_simple_assets={
+        'items/currency/fumadnessresource.currency',
+        'items/active/weapons/other/brainharvester/brainharvester.activeitem',
+        'items/active/weapons/ranged/unique/psiejector/psiejector.activeitem',
+        'items/generic/crafting/darkmatter.item',
+        'objects/crafting/instafreud/instafreud.object',
+        'objects/crafting/psionicbench/psionicbench.object',
+        'items/generic/crafting/matterconverter.item',
+        'items/generic/crafting/psionicenergy.item',
+        'items/generic/crafting/psionicenergy2.item',
+        'items/generic/crafting/psionicenergy3.item',
+        'items/generic/crafting/psionicenergy4.item',
+        'objects/power/braingenerator/braingenerator.object',
+        'objects/power/brainbattery/brainbattery.object'
+    }
+    if a in madness_simple_assets:
+        return p in ('/description','/shortdescription')
+    if a in ('objects/minibiome/elder/embalmingtable/embalmingtable.object','objects/power/psioniclab/psioniclab.object'):
+        return p in ('/description','/shortdescription','/category')
+    if a=='objects/crafting/psionicloader/psionicloader.object':
+        return p in ('/description','/shortdescription','/subtitle')
+    if a=='interface/windowconfig/psionicbench.config':
+        return p in ('/paneLayout/lblProduct/value','/paneLayout/btnCraft/caption','/paneLayout/btnStopCraft/caption','/paneLayout/filter/hint','/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value')
     if a=='objects/crafting/armory/armory.object':
         return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
     if a=='objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object':
@@ -264,7 +290,13 @@ def main():
         if args.source_dir:
             source=args.source_dir/a
             if source.is_file():
-                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+                if all(r.get('qa',{}).get('raw_source_value_guard') for r in rs):
+                    source_text=source.read_text(encoding='utf-8-sig')
+                    for r in rs:
+                        if source_text.count(r['en'])<1:
+                            raise ValueError('Ham JSON kaynak değeri bulunamadı: '+a+r['pointer'])
+                else:
+                    simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
             elif all(r.get('qa',{}).get('layered_source') for r in rs):
                 # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
                 # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
@@ -303,10 +335,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri, Zanaatkârlık ve Zırh-Silah (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Ana Araştırma Sistemleri + Delilik (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Araştırma sisteminin ana bilim, üretim, güç, zanaatkârlık ve zırh-silah ağaçlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma ağaçları ile Delilik/Metafizik sistemini ve doğrudan bağlı temel içerikleri kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

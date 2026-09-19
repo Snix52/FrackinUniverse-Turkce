@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.7.0-beta",
+  "translation_version": "0.8.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 1276,
+  "translated_display_fields": 1379,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 1291,
-  "patched_assets": 113,
+  "total_localized_display_units": 1394,
+  "patched_assets": 131,
   "raw_override_assets": 1,
-  "target_assets_total": 114,
+  "target_assets_total": 132,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -27,21 +27,23 @@
     "Zanaatkârlık": 153,
     "Zanaatkârlık makineleri": 131,
     "Zırh ve Silahlar": 95,
-    "Zırh ve Silahlar makineleri": 20
+    "Zırh ve Silahlar makineleri": 20,
+    "Delilik": 63,
+    "Delilik eşya ve makineleri": 40
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (1276/1276)",
+    "unique_paths": "PASS (1379/1379)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (current 1276-field catalog; inactive research pointers rejected before patch generation)",
-    "source_mismatch_rejection_cases": 909,
-    "source_mismatch_rejection": "PASS",
+    "fixture_application": "PASS (current 1379-field catalog; inactive research pointers rejected before patch generation)",
+    "source_mismatch_rejection_cases": 1379,
+    "source_mismatch_rejection": "PASS (1379 synthetic source-mismatch cases rejected by test guards/patch semantics)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (877/877 active baseline fields across 97 structured source assets)",
+    "exact_source_pointer_validation": "PASS (980/980 active pinned-FU fields; layered/external provenance checks retained separately)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
     "agriculture_source_pointer_validation": "PASS (99/99 active fields)",
@@ -68,7 +70,12 @@
     "v07_new_source_pointer_validation": "PASS (115/115 active fields)",
     "v07_build_allowlist": "PASS (115/115 active paths covered)",
     "v07_patch_pairing": "PASS (115 test + 115 replace)",
-    "active_research_scope_guard": "PASS (0 runtime-inactive research pointers in ledger; pinned 6.5.8 deny-guard enabled)"
+    "active_research_scope_guard": "PASS (0 runtime-inactive research pointers in ledger; pinned 6.5.8 deny-guard enabled)",
+    "madness_source_pointer_validation": "PASS (103/103 across 18 pinned FU source assets)",
+    "madness_tree_active_scope": "PASS (31/31 active nodes; 63/63 active tree/title fields; runtime-unused default pair excluded)",
+    "v08_new_source_pointer_validation": "PASS (103/103)",
+    "v08_build_allowlist": "PASS (103/103 new paths covered)",
+    "v08_patch_pairing": "PASS (103 test + 103 replace)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -106,8 +113,8 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "Retroactive active-node baseline: v0.5 877 active fields + v0.6 284 active fields + v0.7 115 active fields = 1276 structured fields. Lua remains 15 source-guarded strings. Runtime-unused research defaults and disconnected source strings are excluded.",
-  "polish_pass": "PASS for v0.7 static scope: Zırh ve Silahlar research tree plus directly referenced Armorworks, Anvil upgrade chain and Breathing EPP. In-game LQA, font and layout tests remain pending.",
+  "full_source_validation": "Active baseline 1276 structured fields + v0.8 Delilik 103 pinned-FU fields = 1379 structured fields. Lua remains 15 source-guarded strings. Runtime-unused research defaults and disconnected source strings are excluded.",
+  "polish_pass": "PASS for v0.8 static scope: 31-node Delilik/Metafizik research tree plus core psionic, mental-health and matter-processing follow-up items. In-game LQA, font and layout tests remain pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
     "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
@@ -122,5 +129,12 @@
     "Verified Breathing EPP from a vanilla Starbound asset and localized it as Solunum EPP'si.",
     "Standardized depleted uranium -> tüketilmiş uranyum and translated Wastelander Equipment contextually as Kıyamet Sonrası Ekipman.",
     "Validated all 115 active v0.7 fields and 115 test/replace patch pairs."
+  ],
+  "v08_scope": [
+    "Localized all 31 active Madness research nodes plus the tree name: 63 active fields; runtime-unused default/fallback pair excluded.",
+    "Localized 40 player-visible fields across 17 directly linked core Madness assets.",
+    "Standardized Delilik, Metafizik, Psiyonik, Karanlık Madde, Beyin Çıkarıcı, Psiyonik Odak and core Psi energy terminology.",
+    "Verified all 103 v0.8 structured fields against pinned FU 6.5.8 source values.",
+    "Updated Psionics Table UI labels so the main crafting flow no longer falls back to English."
   ]
 }

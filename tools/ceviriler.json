@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.7.0-beta",
-  "note": "v0.7 Zırh ve Silahlar: 47 gerçek araştırma düğümü, görünür default yardım/fallback metni ve doğrudan bağlı Zırh Atölyesi, Örs zinciri ve Solunum EPP'si yerelleştirildi; oyun içi LQA bekliyor.",
+  "translation_version": "0.8.0-beta",
+  "note": "v0.8 Delilik: 31 aktif araştırma düğümü ve Delilik sisteminin doğrudan bağlı temel psiyonik/ruh sağlığı/malzeme öğeleri yerelleştirildi; oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -9276,6 +9276,743 @@
         "external_path": "assets/packed/items/armors/backitems/breathprotection/breathprotection.back",
         "reason": "Vanilla Starbound eşya kaynağından exact doğrulandı; FU bu item ID'yi tungstengear düğümünde açıyor."
       }
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/trees/frackinuniversemadness",
+      "en": "Metaphysics [ ^#1fbbfd;Madness^reset; ]",
+      "tr": "Metafizik [ ^#1fbbfd;Delilik^reset; ]",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/starteroption/0",
+      "en": "Dream Whispers",
+      "tr": "Rüya Fısıltıları",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/starteroption/1",
+      "en": "^orange;Tier 0^reset;\n\nLately, you've been thinking of things in new ways. The numerous sciences feel new to you again, and you are anxious to utilize fresh methodologies in your experimentation and theorizing.\n\nThis all came about thanks to your dreams, where you swear you've heard voices whispering new theories and formulas to you. Obviously it's just your genius manifesting while you sleep, but it ^green;feels like more^reset; to you. You are compelled to investigate these thoughts.",
+      "tr": "^orange;Kademe 0^reset;\n\nSon zamanlarda olaylara bambaşka açılardan bakmaya başladın. Bilimin farklı dalları sana yeniden yepyeni görünmeye başladı ve deneylerinde, kuramlarında taze yöntemler kullanmak için sabırsızlanıyorsun.\n\nHer şey rüyalarınla başladı. Rüyalarında sana yeni kuramlar ve formüller fısıldayan sesler duyduğuna yemin edebilirsin. Elbette bu sadece dehanın uykudayken kendini göstermesidir ama sana ^green;bundan fazlası varmış gibi geliyor^reset;. Bu düşüncelerin peşine düşmeden duramıyorsun.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/basicelder/0",
+      "en": "Metaphysics",
+      "tr": "Metafizik",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/basicelder/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've done a fair amount of pondering things beyond the limits of modern science thanks to your new insights.\n\nYou know without a doubt that you can revitalize the entire scientific community, but to do it you'll need to be willing to take ethical and moral steps outside of the conventional. \n\nPsychic powers, otherworldly entities and more are all within your grasp if you're willing to step above and beyond silly limits put in place by cowards afraid to truly discover.",
+      "tr": "^orange;Kademe 1^reset;\n\nYeni kavrayışların sayesinde modern bilimin sınırlarının ötesindeki şeyler üzerine epey kafa yordun.\n\nBilim dünyasını baştan canlandırabileceğinden hiç şüphen yok; ama bunu yapmak için geleneksel etik ve ahlak sınırlarının dışına çıkmaya hazır olman gerekecek.\n\nPsişik güçler, başka dünyalardan varlıklar ve daha fazlası elinin altında. Yeter ki gerçekten keşfetmekten korkanların koyduğu saçma sınırların ötesine geçmeye razı ol.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics1/0",
+      "en": "Psionics",
+      "tr": "Psiyonik",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics1/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned that the brain is a marvellous thing, and unlocking its secrets is only the beginning. To really dig in you'll need to...dig in. Are there ethical issues with removing brains from subjects? Yes. Do you care? Probably not...\n\nYou can now harvest brains from subjects for further study with the use of a Brain Extractor.",
+      "tr": "^orange;Kademe 2^reset;\n\nBeynin olağanüstü bir şey olduğunu ve sırlarını çözmenin yalnızca başlangıç olduğunu öğrendin. Gerçekten derine inmek istiyorsan... gerçekten derine inmen gerekecek. Deneklerin beyinlerini çıkarmanın etik sorunları var mı? Evet. Umurunda mı? Muhtemelen değil...\n\nArtık daha ileri çalışmalar için Beyin Çıkarıcı kullanarak deneklerden beyin toplayabilirsin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics2/0",
+      "en": "Mental Energy",
+      "tr": "Zihinsel Enerji",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics2/1",
+      "en": "^orange;Tier 3^reset;\n\nThe energy that binds all things, the very life-essence of the cosmos, is at long last a thing you can quantify. While the results are less than concrete, you cannot deny the truths you have discovered in your studies.\n\nYou can now use brains and their 'Psionic Energy' to accomplish incredible things.",
+      "tr": "^orange;Kademe 3^reset;\n\nHer şeyi birbirine bağlayan enerji, kozmosun yaşam özü, sonunda ölçebildiğin bir şeye dönüştü. Sonuçlar pek somut olmasa da araştırmalarında ortaya çıkardığın gerçekleri inkâr edemezsin.\n\nArtık inanılmaz işler başarmak için beyinleri ve içlerindeki 'Psiyonik Enerji'yi kullanabilirsin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics3/0",
+      "en": "Astral Projection",
+      "tr": "Astral Projeksiyon",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics3/1",
+      "en": "^orange;Tier 5^reset;\n\nNot only have you proven psionics are real, you've learned to harness the brain itself to grant untold possibilities to science! Your next task is to learn to use your own mind to do impossible things. You can start by connecting with your Astral self...who knows what awaits beyond that.",
+      "tr": "^orange;Kademe 5^reset;\n\nPsiyonik güçlerin gerçek olduğunu kanıtlamakla kalmadın, beynin kendisini kullanarak bilime akıl almaz olanaklar kazandırmayı da öğrendin! Şimdiki görevin, kendi zihninle imkânsız şeyler yapmayı öğrenmek. Astral benliğinle bağlantı kurarak başlayabilirsin... ötesinde seni neyin beklediğini kim bilir.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics4/0",
+      "en": "Psionic Channeling",
+      "tr": "Psiyonik Yönlendirme",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionics4/1",
+      "en": "^orange;Tier 6^reset;\n\nYou can harness the raw essence of mental energy and utilize it to accomplish impossible feats, power technology, and so much more. None can doubt your mastery of the mind. If only you could stop the voices from whispering to you when nobody is looking...",
+      "tr": "^orange;Kademe 6^reset;\n\nZihinsel enerjinin ham özünü yönlendirip imkânsız görünen işler başarabilir, teknolojiye güç sağlayabilir ve çok daha fazlasını yapabilirsin. Zihin üzerindeki ustalığından artık kimse şüphe edemez. Keşke kimse bakmıyorken sana fısıldayan sesleri de susturabilseydin...",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionicpower1/0",
+      "en": "Psionic Power",
+      "tr": "Psiyonik Güç",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionicpower1/1",
+      "en": "^orange;Tier 3^reset;\n\nNow that you have a basic grasp of Psionic powers, you can begin to experiment in new ways to focus that power. You're able to fabricate various types of attacks for your Psionic Focus.",
+      "tr": "^orange;Kademe 3^reset;\n\nPsiyonik güçlerin temellerini kavradığına göre bu gücü odaklamanın yeni yollarını deneyebilirsin. Psiyonik Odağın için çeşitli saldırı türleri üretebilirsin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionicpower2/0",
+      "en": "Psionic Power II",
+      "tr": "Psiyonik Güç II",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionicpower2/1",
+      "en": "^orange;Tier 4^reset;\n\nNow that you have a basic grasp of Psionic powers, you can begin to experiment in new ways to focus that power. You're able to fabricate various types of attacks for your Psionic Focus.",
+      "tr": "^orange;Kademe 4^reset;\n\nPsiyonik güçlerin temellerini kavradığına göre bu gücü odaklamanın yeni yollarını deneyebilirsin. Psiyonik Odağın için çeşitli saldırı türleri üretebilirsin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionicpower3/0",
+      "en": "Psionic Power III",
+      "tr": "Psiyonik Güç III",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psionicpower3/1",
+      "en": "^orange;Tier 5^reset;\n\nNow that you have a basic grasp of Psionic powers, you can begin to experiment in new ways to focus that power. You're able to fabricate various types of attacks for your Psionic Focus.",
+      "tr": "^orange;Kademe 5^reset;\n\nPsiyonik güçlerin temellerini kavradığına göre bu gücü odaklamanın yeni yollarını deneyebilirsin. Psiyonik Odağın için çeşitli saldırı türleri üretebilirsin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic1/0",
+      "en": "Cosmic Mysteries",
+      "tr": "Kozmik Gizemler",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic1/1",
+      "en": "^orange;Tier 2^reset;\n\nUnhappy with the paltry offerings of knowledge provided in conventional educational facilities, private collections and 'reputable' locations of the sort, you have begun to delve into the more fantastic and unknown. \n\nWild theories that defy physics, ludicrous tales about things living just outside our reality - you've determined through experiments that its all real. To prove it to the galaxy, you are willing to do just about anything.",
+      "tr": "^orange;Kademe 2^reset;\n\nGeleneksel eğitim kurumlarının, özel koleksiyonların ve diğer 'saygın' yerlerin sunduğu cılız bilgiyle yetinmeyip daha fantastik ve bilinmeyen konulara dalmaya başladın.\n\nFiziğe meydan okuyan çılgın kuramlar, gerçekliğimizin hemen dışında yaşayan şeylere dair akıl dışı hikâyeler... deneylerin sayesinde bunların hepsinin gerçek olduğuna karar verdin. Galaksiye bunu kanıtlamak için neredeyse her şeyi yapmaya hazırsın.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic2/0",
+      "en": "Dark Matter",
+      "tr": "Karanlık Madde",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou have not only discovered Dark Matter, but also how to harvest and harness it for your own ends. Through perseverance and know-how you have done what billions before you failed to accomplish! \n\nThis should prove both profitable and educational, and the changess this may bring to all areas of galactic life will make you a public name in no time.",
+      "tr": "^orange;Kademe 3^reset;\n\nKaranlık Maddeyi yalnızca keşfetmekle kalmadın, onu nasıl toplayıp kendi amaçların için kullanacağını da öğrendin. Azim ve bilgiyle, senden önce milyarlarca kişinin başaramadığını başardın!\n\nBu keşif hem kârlı hem öğretici olacak. Galaktik yaşamın her alanında yaratabileceği değişimler, adını kısa sürede herkesin duymasını sağlayabilir.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic3/0",
+      "en": "Dimensional Phasing",
+      "tr": "Boyutsal Faz Geçişi",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic3/1",
+      "en": "^orange;Tier 5^reset;\n\nYou have proven that there are multiple dimensions, and are close to devising a way to connect them.\n\nWith a bit of patience and study you could even learn to send messages or even -cross over- to the other side! The potential here is staggering, but the risk is equally high. You should take precautions before doing anything too crazy.",
+      "tr": "^orange;Kademe 5^reset;\n\nBirden fazla boyut olduğunu kanıtladın ve onları birbirine bağlamanın yolunu bulmaya çok yaklaştın.\n\nBiraz sabır ve çalışmayla karşı tarafa mesaj göndermeyi, hatta -geçiş yapmayı- bile öğrenebilirsin! Buradaki potansiyel akıl almaz, ancak risk de aynı ölçüde büyük. Fazla çılgınca bir şey yapmadan önce önlem almak iyi fikir olabilir.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic4/0",
+      "en": "The Calling",
+      "tr": "Çağrı",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmic4/1",
+      "en": "^orange;Tier 6^reset;\n\nYou have, beyond a doubt, communicated with a being from another reality. Such was its voice that you are forever changed, and all of this dimension must know the truth you have gleaned.\n\n They will all worship the glory of the Thing you have glimpsed beyond the veil. If they know what is good for them.",
+      "tr": "^orange;Kademe 6^reset;\n\nBaşka bir gerçeklikten gelen bir varlıkla, hiçbir şüpheye yer bırakmayacak şekilde iletişim kurdun. Sesi seni sonsuza dek değiştirdi ve bu boyuttaki herkes öğrendiğin gerçeği bilmeli.\n\nPerdenin ötesinde gördüğün Şey'in ihtişamına hepsi tapacak. Kendi iyiliklerini düşünüyorlarsa.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/forbidden1/0",
+      "en": "The Void",
+      "tr": "Boşluk",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/forbidden1/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've discovered how to see past our own dimension, and the limits of our own minds and bodies, and find a way to transcend into greater realms of existence. Unfortunately, the cost is rather high for this sort of research, but whats a few extra test subjects?",
+      "tr": "^orange;Kademe 4^reset;\n\nKendi boyutumuzun, zihnimizin ve bedenimizin sınırlarının ötesini görmenin ve daha yüce varoluş düzlemlerine geçmenin yolunu keşfettin. Ne yazık ki bu tür araştırmaların bedeli oldukça yüksek ama birkaç fazladan denek nedir ki?",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/forbidden2/0",
+      "en": "Forbidden Knowledge",
+      "tr": "Yasak Bilgi",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/forbidden2/1",
+      "en": "^orange;Tier 4^reset;\n\nYou're ready to move into new areas of research few even dare to attempt. Mostly because of law, ethics and morality...but those in the pursuit of science cannot waver in the face of adversity.",
+      "tr": "^orange;Kademe 4^reset;\n\nÇok az kişinin denemeye bile cesaret ettiği yeni araştırma alanlarına girmeye hazırsın. Bunun başlıca nedeni yasalar, etik ve ahlak olabilir... ama bilimin peşindekiler zorluklar karşısında tereddüt edemez.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/myphis/0",
+      "en": "Chemical Experiments",
+      "tr": "Kimyasal Deneyler",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/myphis/1",
+      "en": "^orange;Tier 1^reset;\n\nWho needs knowledge and chemistry education when you can just jam things into beakers until something neat happens? That's your process, and so far it works well. You see no reason to change.",
+      "tr": "^orange;Kademe 1^reset;\n\nBilgiye ve kimya eğitimine kimin ihtiyacı var? Güzel bir şey çıkana kadar beherlere rastgele bir şeyler tıkarsın olur biter. Senin yöntemin bu ve şimdilik gayet iyi çalışıyor. Değiştirmen için de bir sebep görmüyorsun.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/myphis2/0",
+      "en": "Applied Narcotics",
+      "tr": "Narkotik Uygulamaları",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/myphis2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou bad little scientist, you! You've gone and devised illegal substances that can alter perception of reality itself...provided you don't die of course! Also, you've got poutine. What could go wrong?",
+      "tr": "^orange;Kademe 2^reset;\n\nSeni küçük haylaz bilim insanı! Gerçeklik algısını bile değiştirebilen yasa dışı maddeler geliştirmişsin... tabii ölmezsen! Üstelik poutine de var. Ne ters gidebilir ki?",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/myphis3/0",
+      "en": "Weird Concoctions",
+      "tr": "Tuhaf Karışımlar",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/myphis3/1",
+      "en": "^orange;Tier 3^reset;\n\nWell, you've gone and learned stuff about chemicals after all. Turns out it was actually pretty useful, because now you can make narcotics and stimulants that don't even make sense in this reality! You'll be the talk of the town. Or simply insane. Either way, awesome.",
+      "tr": "^orange;Kademe 3^reset;\n\nEh, sonunda kimyasallar hakkında gerçekten bir şeyler öğrendin. Meğer epey işe yarıyormuş; artık bu gerçeklikte hiçbir anlam ifade etmeyen narkotikler ve uyarıcılar üretebilirsin! Kasabanın diline düşeceksin. Ya da düpedüz aklını kaçıracaksın. İki türlü de şahane.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmicweapons/0",
+      "en": "Dark Matter Gear",
+      "tr": "Karanlık Madde Ekipmanı",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/cosmicweapons/1",
+      "en": "^orange;Tier 4^reset;\n\nNow that you've uncovered a new form of particle and the sciences to utilize it, it's obviously time to start weaponizing it to shoot at other beings to see what happens!\n\nNot only have you utilized its more defensive properties to design new armor suits, but you've also devised a line of weapons that should cause ample amounts of pain and misery! Enjoy.",
+      "tr": "^orange;Kademe 4^reset;\n\nYeni bir parçacık türünü ve onu kullanacak bilim dallarını keşfettiğine göre yapılacak en mantıklı şey onu silaha dönüştürüp başka canlılara ateş ederek ne olduğuna bakmak!\n\nSavunma özelliklerinden yararlanıp yeni zırhlar tasarlamakla kalmadın, bolca acı ve sefalet yaratması gereken bir silah serisi de geliştirdin! Tadını çıkar.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psychiatry/0",
+      "en": "Psychiatric Help",
+      "tr": "Psikiyatrik Destek",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psychiatry/1",
+      "en": "^orange;Tier 1^reset;\n\nThanks to modern psychiatric help you can seek out a bit of aid should you feel disconnected from reality. Sure, they'll psychoanalyze you. Sure, it's expensive. Sure, they think you're nuts...but all of that is still better than eating your own face or ruining yourself with crippling addictions. It definitely won't be as fun, however.",
+      "tr": "^orange;Kademe 1^reset;\n\nModern psikiyatrik destek sayesinde gerçeklikten koptuğunu hissedersen biraz yardım alabilirsin. Evet, seni psikanaliz edecekler. Evet, pahalı. Evet, deli olduğunu düşünüyorlar... ama bunların hepsi kendi yüzünü yemekten ya da ağır bağımlılıklarla kendini mahvetmekten daha iyi. Gerçi kesinlikle o kadar eğlenceli olmayacak.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psychiatry2/0",
+      "en": "Psychiatric Help II",
+      "tr": "Psikiyatrik Destek II",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psychiatry2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can hire more reliable help, thanks to your rapidly escalating mental issues. It's much easier to get approved on your health plan now!",
+      "tr": "^orange;Kademe 2^reset;\n\nHızla büyüyen zihinsel sorunların sayesinde artık daha güvenilir uzmanlardan yardım alabilirsin. Sağlık planından onay çıkarmak da artık çok daha kolay!",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psychiatry3/0",
+      "en": "Psychiatric Help III",
+      "tr": "Psikiyatrik Destek III",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/psychiatry3/1",
+      "en": "^orange;Tier 3^reset;\n\nWhy settle for a conventional psychiatrist when you can hire an empath? That's where this spiralling madness you keep fostering has taken you, so you may as well benefit from all the modern advancements in mental help. Don't ignore your problems, they will never get better.",
+      "tr": "^orange;Kademe 3^reset;\n\nBir empat tutabiliyorken neden sıradan bir psikiyatrla yetinesin? Besleyip durduğun bu büyüyen delilik seni buraya kadar getirdi; bari zihinsel destek alanındaki modern gelişmelerden yararlan. Sorunlarını görmezden gelme, kendiliğinden düzelmeyecekler.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/dreams/0",
+      "en": "Dream Visions",
+      "tr": "Rüya Görüleri",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/dreams/1",
+      "en": "^orange;Monstrous Visages^reset;\n\nYour dreams just get weirder and weirder as time goes on. You keep seeing this many-tentacled face in your dreams, so much so that you feel you can recreate its horrible form in reality...through using adorable plush toys suitable for all! Share the insanity with kids and adults alike! They'll thank you for it...eventually.",
+      "tr": "^orange;Canavarımsı Suretler^reset;\n\nZaman geçtikçe rüyaların daha da tuhaflaşıyor. Rüyalarında sürekli çok dokunaçlı bir yüz görüyorsun; öyle sık ki o korkunç biçimi gerçek dünyada yeniden yaratabileceğini hissediyorsun... hem de herkes için uygun, sevimli pelüş oyuncaklarla! Deliliği çocuklarla ve yetişkinlerle paylaş! Sana teşekkür edeceklerdir... eninde sonunda.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes1/0",
+      "en": "Cryptobiology",
+      "tr": "Kriptobiyoloji",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes1/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've seen strange things, and know that there are beings out there we cannot comprehend with our limited perception of reality. You seek to learn of how living things work, no matter how exotic. What you do with that knowledge then, well...that's another matter entirely.\n\nFlesh is your canvas, and many would disagree with your methods. So long as nobody knows...nobody will mind. Right?",
+      "tr": "^orange;Kademe 2^reset;\n\nTuhaf şeyler gördün ve sınırlı gerçeklik algımızla kavrayamayacağımız varlıkların dışarıda bir yerlerde olduğunu biliyorsun. Ne kadar yabancı olurlarsa olsunlar canlıların nasıl çalıştığını öğrenmek istiyorsun. Bu bilgiyle ne yapacağın ise... bambaşka bir mesele.\n\nEt senin tuvalin ve yöntemlerine karşı çıkacak çok kişi var. Kimsenin haberi olmazsa... kimse rahatsız olmaz. Değil mi?",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes2/0",
+      "en": "Genetic Aberration",
+      "tr": "Genetik Sapma",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes2/1",
+      "en": "^orange;Tier 3^reset;\n\nThrough examination of corpses, you've learned a great deal about how life and death work. But you aren't interested in just the DNA sequences...no, you seek something grander. A symphony you can play on flesh and show the universe how truly beautiful life is, whether they agree with you or not.",
+      "tr": "^orange;Kademe 3^reset;\n\nCesetleri inceleyerek yaşamın ve ölümün nasıl işlediğine dair çok şey öğrendin. Ama yalnızca DNA dizileriyle ilgilenmiyorsun... hayır, daha büyük bir şey arıyorsun. Et üzerinde çalabileceğin bir senfoni; evrene, kabul etseler de etmeseler de yaşamın ne kadar güzel olduğunu gösterecek bir eser.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes3/0",
+      "en": "Reanimation",
+      "tr": "Yeniden Canlandırma",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes3/1",
+      "en": "^orange;Tier 5^reset;\n\nLife and Death are only suggestions to you. You have learned to work within both the realm of the living and that of the dead. By fusing the two, you will accomplish the long-sought secret of eternal life, and so much more. \n\nYour perception of reality isn't what it used to be, though, and you've a tenuous grasp on things...at best.",
+      "tr": "^orange;Kademe 5^reset;\n\nYaşam ve Ölüm senin için yalnızca öneriden ibaret. Hem yaşayanların hem de ölülerin dünyasında çalışmayı öğrendin. İkisini birleştirerek uzun zamandır aranan sonsuz yaşam sırrını ve çok daha fazlasını elde edeceksin.\n\nGerçeklik algın eskisi gibi değil gerçi ve olup bitenlere tutunuşun... en iyi ihtimalle pamuk ipliğine bağlı.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes4/0",
+      "en": "Genesis",
+      "tr": "Yaratılış",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/genes4/1",
+      "en": "^orange;Tier 6^reset;\n\nYou are a god among sentient beings. You, the one who has mastery over life and death can now simply create life at a whim. You will seed the universe with your creations and change the very face of the cosmos.",
+      "tr": "^orange;Kademe 6^reset;\n\nBilinç sahibi varlıkların arasında bir tanrısın. Yaşam ve ölüm üzerinde ustalaşan sen, artık istediğin anda yaşam yaratabilirsin. Evreni kendi yarattıklarınla dolduracak ve kozmosun çehresini değiştireceksin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon1/0",
+      "en": "Emergent Technology",
+      "tr": "Gelişen Teknoloji",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon1/1",
+      "en": "^orange;Tier 2^reset;\n\nYou're trying to delve into ways to improve existing technology as well as new sorts of machines and ideas beyond those of your peers. No topic is too strange! \n\nYou've been dreaming of a mathmatical formula that has been driving you slowly mad...and the only solution is to unscramble the numbers until the formulas speak to you. Whatever comes of it will surely be amazing!",
+      "tr": "^orange;Kademe 2^reset;\n\nMevcut teknolojiyi geliştirmenin yollarını ve çağdaşlarının ötesindeki yeni makine ve fikirleri araştırıyorsun. Hiçbir konu fazla tuhaf değil!\n\nSeni yavaş yavaş delirten matematiksel bir formülü rüyanda görüp duruyorsun... tek çözüm, formüller seninle konuşana kadar sayıları doğru düzene sokmak. Bundan ne çıkarsa çıksın kesinlikle muhteşem olacak!",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon2/0",
+      "en": "Particle Entropy",
+      "tr": "Parçacık Entropisi",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon2/1",
+      "en": "^orange;Tier 3^reset;\n\nConventional physics says that all energy simply becomes something else, and that nothing is truly ever destroyed. You're out to prove this wrong, because you know better! You can reach right into subspace and manipulate the fabric of reality to create a new sort of matter, and can construct potent robotic minions.",
+      "tr": "^orange;Kademe 3^reset;\n\nGeleneksel fizik, tüm enerjinin yalnızca başka bir şeye dönüştüğünü ve hiçbir şeyin gerçekten yok olmadığını söyler. Ama sen daha iyi bildiğin için bunun yanlış olduğunu kanıtlamaya kararlısın! Altuzaya doğrudan uzanıp gerçekliğin dokusunu değiştirerek yeni bir madde türü yaratabilir ve güçlü robotik hizmetkârlar inşa edebilirsin.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon3/0",
+      "en": "Biomorphic Particles",
+      "tr": "Biyomorfik Parçacıklar",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon3/1",
+      "en": "^orange;Tier 5^reset;\n\nBeing this smart sure is great! Nobody understands particles quite like you do, and you've got a way to prove it: By combining particles with biomass to form entirely new constructs that violate the ordinary laws of existence!",
+      "tr": "^orange;Kademe 5^reset;\n\nBu kadar zeki olmak gerçekten harika! Parçacıkları senin kadar iyi anlayan kimse yok ve bunu kanıtlamanın bir yolu var: parçacıkları biyokütleyle birleştirip varoluşun sıradan yasalarını çiğneyen yepyeni yapılar oluşturmak!",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon4/0",
+      "en": "Reality Bridge",
+      "tr": "Gerçeklik Köprüsü",
+      "section": "Delilik"
+    },
+    {
+      "asset": "zb/researchTree/madness.config",
+      "pointer": "/strings/research/weapon4/1",
+      "en": "^orange;Tier 6^reset;\n\nThe Reality Bridge is a new theory you've formulated that states that all things in creation are connected to all other things, regardless of their dimensional phase or location. You can link biology with technology, biomass with particle antimatter...and limitless other things.\n\nThis is what they get for doubting you.",
+      "tr": "^orange;Kademe 6^reset;\n\nGerçeklik Köprüsü, yaratılıştaki her şeyin boyutsal fazı veya konumu ne olursa olsun diğer her şeyle bağlantılı olduğunu öne süren yeni kuramın. Biyolojiyi teknolojiyle, biyokütleyi parçacık antimaddesiyle... ve sayısız başka şeyi birbirine bağlayabilirsin.\n\nSenden şüphe etmenin bedeli bu.",
+      "section": "Delilik"
+    },
+    {
+      "asset": "items/active/weapons/other/brainharvester/brainharvester.activeitem",
+      "pointer": "/description",
+      "en": "Extracts a targets brain at the moment of death.\n^cyan;Collects Brains from enemies^reset;\n^yellow;Counts as Bio-Weapon^reset;",
+      "tr": "Hedefin beynini ölüm anında çıkarır.\n^cyan;Düşmanlardan Beyin toplar^reset;\n^yellow;Biyo-Silah sayılır^reset;",
+      "section": "Delilik eşya ve makineleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/other/brainharvester/brainharvester.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Brain Extractor",
+      "tr": "Beyin Çıkarıcı",
+      "section": "Delilik eşya ve makineleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/psiejector/psiejector.activeitem",
+      "pointer": "/description",
+      "en": "Focuses mental power via Psionic energy.\n^yellow;Can use various types of ammo.^reset;",
+      "tr": "Zihinsel gücü Psiyonik enerji aracılığıyla odaklar.\n^yellow;Çeşitli cephane türleri kullanabilir.^reset;",
+      "section": "Delilik eşya ve makineleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/psiejector/psiejector.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Psionic Focus",
+      "tr": "Psiyonik Odak",
+      "section": "Delilik eşya ve makineleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/darkmatter.item",
+      "pointer": "/description",
+      "en": "The stuff of raw entropy across the universe.",
+      "tr": "Evrene yayılmış ham entropinin özü.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/darkmatter.item",
+      "pointer": "/shortdescription",
+      "en": "Dark Matter",
+      "tr": "Karanlık Madde",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/currency/fumadnessresource.currency",
+      "pointer": "/description",
+      "en": "Some things are best left alone.",
+      "tr": "Bazı şeyleri kendi hâline bırakmak en iyisidir.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/currency/fumadnessresource.currency",
+      "pointer": "/shortdescription",
+      "en": "Madness",
+      "tr": "Delilik",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/instafreud/instafreud.object",
+      "pointer": "/description",
+      "en": "A one-stop mental health kiosk.",
+      "tr": "Tek noktadan ruh sağlığı hizmeti veren bir kiosk.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/instafreud/instafreud.object",
+      "pointer": "/shortdescription",
+      "en": "Insta-Freud",
+      "tr": "Insta-Freud",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/minibiome/elder/embalmingtable/embalmingtable.object",
+      "pointer": "/description",
+      "en": "Primarily for investigating (or experimenting on) the deceased. Has other lab applications.",
+      "tr": "Öncelikle ölüleri incelemek (veya üzerlerinde deney yapmak) için kullanılır. Başka laboratuvar uygulamaları da vardır.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/minibiome/elder/embalmingtable/embalmingtable.object",
+      "pointer": "/shortdescription",
+      "en": "Autopsy Table",
+      "tr": "Otopsi Masası",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/minibiome/elder/embalmingtable/embalmingtable.object",
+      "pointer": "/category",
+      "en": "Extractor",
+      "tr": "Çıkarıcı",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/psionicbench/psionicbench.object",
+      "pointer": "/description",
+      "en": "Create psionic weapons and gear.",
+      "tr": "Psiyonik silahlar ve ekipman üret.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/psionicbench/psionicbench.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Psionics Table^reset;",
+      "tr": "^orange;Psiyonik Tezgâhı^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/psioniclab/psioniclab.object",
+      "pointer": "/description",
+      "en": "Generates nascent psionic energy with a little help from some brains. ^cyan;Requires ^orange;100J^cyan; per extraction.^reset;",
+      "tr": "Birkaç beynin yardımıyla yeni oluşan psiyonik enerji üretir. ^cyan;Her çıkarım için ^orange;100J^cyan; gerekir.^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/psioniclab/psioniclab.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Psionic Amplifier^reset;",
+      "tr": "^cyan;Psiyonik Yükselteç^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/psioniclab/psioniclab.object",
+      "pointer": "/category",
+      "en": "^#d1d1d1;Extractor^reset;",
+      "tr": "^#d1d1d1;Çıkarıcı^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/matterconverter.item",
+      "pointer": "/description",
+      "en": "Converts matter into new states. Quite useful for gas/liquid/solid conversions.",
+      "tr": "Maddeyi yeni hâllere dönüştürür. Gaz/sıvı/katı dönüşümleri için oldukça kullanışlıdır.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/matterconverter.item",
+      "pointer": "/shortdescription",
+      "en": "Matter Converter",
+      "tr": "Madde Dönüştürücü",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy.item",
+      "pointer": "/description",
+      "en": "The harnessed mental energy of sapient beings, ready to be used as power.\n^blue;+^white;10 ^blue;Fuel^reset;",
+      "tr": "Bilinçli varlıklardan elde edilen zihinsel enerji; güç kaynağı olarak kullanılmaya hazır.\n^blue;+^white;10 ^blue;Yakıt^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy.item",
+      "pointer": "/shortdescription",
+      "en": "Psi-1 Energy",
+      "tr": "Psi-1 Enerjisi",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy2.item",
+      "pointer": "/description",
+      "en": "Infused with additional power.\n^blue;+^white;20 ^blue;Fuel^reset;",
+      "tr": "Ek güçle yüklenmiştir.\n^blue;+^white;20 ^blue;Yakıt^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy2.item",
+      "pointer": "/shortdescription",
+      "en": "Psi-2 Energy",
+      "tr": "Psi-2 Enerjisi",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy3.item",
+      "pointer": "/description",
+      "en": "A massively charged psionic energy cell.\n^blue;+^white;35 ^blue;Fuel^reset;",
+      "tr": "Yoğun biçimde yüklenmiş bir psiyonik enerji hücresi.\n^blue;+^white;35 ^blue;Yakıt^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy3.item",
+      "pointer": "/shortdescription",
+      "en": "Psi-3 Energy",
+      "tr": "Psi-3 Enerjisi",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy4.item",
+      "pointer": "/description",
+      "en": "The most potent form of psionic energy.\n^blue;+^white;50 ^blue;Fuel^reset;",
+      "tr": "Psiyonik enerjinin en güçlü biçimi.\n^blue;+^white;50 ^blue;Yakıt^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/psionicenergy4.item",
+      "pointer": "/shortdescription",
+      "en": "Psi-4 Energy",
+      "tr": "Psi-4 Enerjisi",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/psionicloader/psionicloader.object",
+      "pointer": "/description",
+      "en": "Loads Psionic Focii.",
+      "tr": "Psiyonik Odakları doldurur.",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/psionicloader/psionicloader.object",
+      "pointer": "/shortdescription",
+      "en": "Psionic Focus Loader",
+      "tr": "Psiyonik Odak Yükleyici",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/crafting/psionicloader/psionicloader.object",
+      "pointer": "/subtitle",
+      "en": "Fill Empty Focii",
+      "tr": "Boş Odakları Doldur",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/braingenerator/braingenerator.object",
+      "pointer": "/description",
+      "en": "A product of mad science that appears to run from cannisters of still-living brains. ^orange;Gradually wakes up, consciousness determines output.^reset; Maximum power ^orange;60W^reset;. ^blue;Left Input^reset;: On/Off Switch",
+      "tr": "Hâlâ canlı beyinlerle dolu kapsüllerle çalışıyor gibi görünen bir çılgın bilim ürünü. ^orange;Yavaş yavaş uyanır; bilinç düzeyi üretimi belirler.^reset; Azami güç ^orange;60W^reset;. ^blue;Sol Giriş^reset;: Aç/Kapat Anahtarı",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/braingenerator/braingenerator.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Neuro-Psionic Generator^reset;",
+      "tr": "^cyan;Nöro-Psiyonik Jeneratör^reset;",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/brainbattery/brainbattery.object",
+      "pointer": "/description",
+      "en": "Use brains to store and transfer electrical energy! Substantial storage!^truncate; ^red;Scan for Info^reset;\nStorage Capacity: ^green;5000^reset;J",
+      "tr": "Elektrik enerjisini depolayıp aktarmak için beyinleri kullan! Yüksek kapasite!^truncate; ^red;Bilgi için Tara^reset;\nDepolama Kapasitesi: ^green;5000^reset;J",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "objects/power/brainbattery/brainbattery.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Psionic^reset; Battery",
+      "tr": "^cyan;Psiyonik^reset; Pil",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/psionicbench.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/psionicbench.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/psionicbench.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/psionicbench.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/psionicbench.config",
+      "pointer": "/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value",
+      "en": "Replace Me",
+      "tr": "Beni Değiştir",
+      "section": "Delilik eşya ve makineleri"
     }
   ]
 }
