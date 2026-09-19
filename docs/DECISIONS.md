@@ -172,3 +172,11 @@
 - `depleted uranium` bilimsel olarak **tüketilmiş uranyum** karşılığıyla standardize edildi; önceki geçici `seyreltilmiş uranyum` kullanılmayacak.
 - `Wastelander Equipment` özel ad olmadığı ve açıklama doğrudan kıyamet sonrası hurda ekipmanını anlattığı için **Kıyamet Sonrası Ekipman** olarak çevrildi.
 - İlk v0.7 bağlı paketle mevcut kapsam **117 yeni alan** oldu. Oyun içi LQA henüz yapılmadı.
+
+### v0.7 beta kapsam kapanışı
+
+- Zırh ve Silahlar beta kapsamı **97 ağaç/fallback alanı + 20 bağlı istasyon/EPP alanı = 117 yeni yapılandırılmış alan** olarak kapatıldı.
+- Proje toplamı **1312 yapılandırılmış alan + 15 Lua UI metni = 1327 görünür metin birimi** oldu.
+- 111 v0.7 alanı pinned FU kaynağından, 4 Örs zinciri alanı bağımsız vanilla test değerlerinden, 2 Solunum EPP alanı vanilla Starbound asset kaynağından doğrulandı.
+- Zırh Atölyesi yükseltme ailesi **Zırh Atölyesi -> Montaj Hattı -> Cephanelik**; vanilla silah istasyonu ailesi **Örs -> Dövme Ocağı -> Çoğaltıcı** olarak LOCKED.
+- Oyun içi LQA, font ve panel taşma testleri tamamlanmadığı için sürüm Beta olarak kalır.
