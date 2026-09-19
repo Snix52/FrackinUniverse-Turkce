@@ -55,3 +55,14 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Alien Compound | FU kaynağı | Kaynak | Uzaylı Bileşiği | Alien Compound | LOCKED | |
 | Caliginous Gas | FU gazı | Kaynak | Caliginous Gazı | Caliginous Gas | LOCKED | Caliginous özel terim olarak korunur |
 | Gravitic Rain | Çevresel tehlike | Kavram | gravitik yağmur | - | REVIEW | İlgili biyom/status çevirisinde tekrar doğrulanacak |
+| Chemistry Lab | Kimya makinesi | Nesne | Kimya Laboratuvarı | Chemistry Lab | LOCKED | Simya Tezgâhının ikinci kademesi |
+| Bio-Chem Lab | Kimya makinesi | Nesne | Biyokimya Laboratuvarı | Bio-Chem Lab | LOCKED | Kimya tezgâhının üst kademesi |
+| Advanced Plastic | Kimya kaynağı | Kaynak | Gelişmiş Plastik | Advanced Plastic | LOCKED | |
+| Graphene | Kimya / malzeme bilimi | Kaynak | Grafen | Graphene | LOCKED | Yerleşik bilimsel karşılık |
+| Cell Material | Kimya / genetik kaynağı | Kaynak | Hücre Materyali | Cell Material | LOCKED | |
+| Spliced Cell | Kimya / genetik kaynağı | Kaynak | Birleştirilmiş Hücre | Spliced Cell | LOCKED | |
+| Unstable Particles | Kimya / nükleer kaynak | Kaynak | Kararsız Parçacıklar | Unstable Particles | LOCKED | |
+| Metallic Hydrogen | Kimya / enerji kaynağı | Kaynak | Metalik Hidrojen | Metallic Hydrogen | LOCKED | Yerleşik bilimsel karşılık |
+| Quietus Ore | FU cevheri | Kaynak | Quietus Cevheri | Quietus Ore | LOCKED | Quietus özel terim olarak korunur |
+| Ammonium Sulfate | Kimyasal kaynak | Kaynak | Amonyum Sülfat | Ammonium Sulfate | LOCKED | Yerleşik bilimsel karşılık |
+| Hand Mill | Çıkarma makinesi | Nesne | El Değirmeni | Hand Mill | LOCKED | Tarım görevlerindeki kullanımla eşleştirildi |
