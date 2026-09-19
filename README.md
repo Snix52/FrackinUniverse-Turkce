@@ -62,7 +62,7 @@ Güncel statik QA'da **97/97 yapılandırılmış hedef asset ve 909/909 kaynak 
 
 ## v0.6 çalışma dalı
 
-`work/v0.6-craftsmanship` dalında Zanaatkârlık araştırma ağacının 78 düğümü / 157 görünür alanı çevrildi ve exact-source ön QA'dan geçti. Bağlı eşya/makine adları tamamlanmadan v0.6 ana beta sürümüne alınmayacak.
+`work/v0.6-craftsmanship` dalında Zanaatkârlık araştırma ağacının 78 düğümü / 157 görünür alanı ve ilk 6 bağlı FU makinesindeki 50 alan çevrildi. Mevcut v0.6 kapsamı 207/207 exact-source QA'dan geçti. Vanilla assetler üzerine FU patch katmanı kullanan kalan bağlı istasyonlar güvenli biçimde tamamlanmadan v0.6 ana beta sürümüne alınmayacak.
 
 ## Yol haritası
 
