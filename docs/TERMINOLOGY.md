@@ -158,6 +158,16 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 | Clothing Fabricator | FU dikiş istasyonu 3. kademe | Nesne | Giysi Üreticisi | Clothing Fabricator | LOCKED | FU craftingwheel patchi ekler |
 
+| Wooden Workbench | Vanilla üretim tezgâhı | Nesne | Ahşap Tezgâh | Wooden Workbench | LOCKED | Zanaatkârlık workbench1 referansı |
+
+| Industrial Workbench | Ahşap Tezgâh yükseltmesi | Nesne | Endüstriyel Tezgâh | Industrial Workbench | LOCKED | |
+
+| Inventor's Table | Vanilla ana üretim tezgâhı | Nesne | Mucit Tezgâhı | Inventor's Table | LOCKED | Daha önce Jeoloji/Zanaatkârlık metinlerinde kullanılan ad resmileştirildi |
+
+| Engineer's Table | Mucit Tezgâhı yükseltmesi | Nesne | Mühendis Tezgâhı | Engineer's Table | LOCKED | |
+
+| Architect's Table | Mucit Tezgâhı yükseltmesi | Nesne | Mimar Tezgâhı | Architect's Table | LOCKED | |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
