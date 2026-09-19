@@ -14,6 +14,22 @@ CONTROL=re.compile(r'\[[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
 ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 
+# FU 6.5.8 pinned kaynağında strings.research altında dursa da aktif researchTree
+# düğümüne bağlı olmayan metinler. Oyuncuya görünmedikleri için yamaya alınmaz.
+NONVISIBLE_RESEARCH_IDS = {
+    'zb/researchTree/fu_geology.config': {'default','metals_tier7','metals_morphite','metals_nocxium','metals_plasmiccrystal','metals_diamond','metals_alloy5','metals_alloy6','isotopes6','terraforming1','terraforming2','terraforming3'},
+    'zb/researchTree/fu_agriculture.config': {'default'},
+    'zb/researchTree/fu_chemistry.config': {'default','elduucrystals'},
+    'zb/researchTree/fu_engineering.config': {'default'},
+    'zb/researchTree/fu_power.config': {'default','ansible'},
+    'zb/researchTree/fu_craftsmanship.config': {'default','workbenchatechy'},
+    'zb/researchTree/fu_warcraft.config': {'default'}
+}
+
+def nonvisible_research_pointer(a,p):
+    m=re.fullmatch(r'/strings/research/([^/]+)/[01]',p)
+    return bool(m and m.group(1) in NONVISIBLE_RESEARCH_IDS.get(a,set()))
+
 def tokens(p):
     if not p.startswith('/'): raise ValueError('Geçersiz JSON Pointer: '+p)
     return [x.replace('~1','/').replace('~0','~') for x in p[1:].split('/')]
@@ -227,6 +243,7 @@ def main():
         if (a,p) in seen:raise ValueError('Yinelenen alan: '+a+p)
         seen.add((a,p))
         if not allowed(a,p):raise ValueError('Oyuncu metni olmayan alan: '+a+p)
+        if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
         if 'İngilizce adı:' in r['tr']:raise ValueError('İngilizce fallback/gloss: '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
