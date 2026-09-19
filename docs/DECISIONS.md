@@ -31,3 +31,18 @@
 - Quietus özel FU terimi olarak korunur; yalnızca nesne türü olan “Ore” Türkçeleştirilir.
 - Yeni 103 alan, FU 6.5.8 kaynak commit'i `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında **103/103 PASS** doğrulandı.
 - Renk/kontrol kodu ve sayı bütünlüğü yeni alanlarda **PASS**. Oyun içi LQA henüz yapılmadı.
+
+## 2026-09-20 - v0.4 Mühendislik
+
+- Mühendislik araştırma ağacının 69 düğümündeki 139 oyuncu metni bütün olarak yerelleştirildi.
+- Doğrudan bağlı 15 temel makine/kaynak assetindeki 52 oyuncu metni aynı pakete alındı.
+- v0.4 yeni içerik toplamı: **16 asset / 191 oyuncu metni**.
+- Engineering -> **Mühendislik** mevcut LOCKED kararı korundu.
+- Mech, Tech, EPP, FTL sistem/kısaltma adları çevrilmeden korunacak şekilde LOCKED yapıldı.
+- STL Drive -> **STL Motoru**, Extraction Lab -> **Çıkarma Laboratuvarı**, Ship Component Assembler -> **Gemi Bileşeni Birleştirici**, Quantum Manipulator -> **Kuantum Manipülatörü** LOCKED.
+- Focusing Array -> **Odaklama Dizisi**, Power Core -> **Güç Çekirdeği**, Nuclear Core -> **Nükleer Çekirdek**, Particle Core -> **Parçacık Çekirdeği** LOCKED.
+- Araştırma seviye sıfatları standardize edildi: Improved -> **Geliştirilmiş**, Advanced -> **Gelişmiş**, Superior -> **Üstün**, Peerless -> **Eşsiz**.
+- Bu karar nedeniyle Kimya ağacındaki üç eski Peerless başlığı **Eşsiz** karşılığına geçirildi.
+- Kaynak Mühendislik metninde “Ship Crafting Table” denmesine rağmen gerçek FU nesnesi fu_shipcraftingtable oyuncuya **Ship Component Assembler** adıyla gösterildiği için Türkçede gerçek nesne adı **Gemi Bileşeni Birleştirici** kullanıldı. Bu, oyuncu takip bütünlüğü için bilinçli kaynak-ad uyarlamasıdır.
+- Yeni 191 alan, FU 6.5.8 kaynak commit'i `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında **191/191 PASS** doğrulandı.
+- Oyun içi LQA henüz yapılmadı.
