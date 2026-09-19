@@ -91,13 +91,20 @@ v0.5 yeni içerik doğrulaması: PASS (220/220).
 Oyun içi LQA: BEKLİYOR.
 
 
-v0.6 ÇALIŞMA DALI ÖN QA
+v0.6 ÇALIŞMA DALI GÜNCEL QA
 - Dal: work/v0.6-craftsmanship
-- Craftsmanship -> Zanaatkârlık.
-- fu_craftsmanship: 78 araştırma düğümü / 157 yeni görünür alan.
-- Proje çalışma dalı toplamı: 1066 yapılandırılmış alan + 15 Lua UI metni = 1081 görünür metin birimi.
-- Yeni alan exact-source: 157/157 PASS.
-- Yeni patch: 157 test + 157 replace = 314 işlem, eşleşme PASS.
-- Yinelenen pointer: 0; boş Türkçe: 0; renk/kontrol kodu ve sayı bütünlüğü: PASS.
-- Durum: ARAŞTIRMA AĞACI PASS; bağlı eşya/makine terminoloji ve asset geçişi DEVAM EDİYOR.
-- v0.5 ana beta paketi bu çalışma sırasında değiştirilmedi.
+- Craftsmanship -> Zanaatkârlık LOCKED.
+- Araştırma ağacı: 78 düğüm / 157 görünür alan.
+- İlk bağlı makine paketi: 6 asset / 50 görünür alan.
+- v0.6 mevcut ekleme: 7 asset / 207 yapılandırılmış alan.
+- Çalışma dalı toplamı: 1116 yapılandırılmış alan + 15 Lua UI metni = 1131 görünür metin birimi.
+- Yapılandırılmış hedef asset: 104; Lua override: 1; toplam hedef asset: 105.
+- v0.6 exact-source: 207/207 PASS.
+- Patch eşleşmesi: 207 test + 207 replace PASS.
+- Yinelenen pointer: 0; boş Türkçe: 0.
+- Renk / kontrol kodu bütünlüğü: PASS.
+- Sayı bütünlüğü: PASS; 2 belgeli envanter-adı istisnası var (Mk2 Tenant Deeds -> Colony Deed Mark II / Koloni Tapusu Mark II).
+- Gerçek envanter adlarıyla eşlenen ilk paket: Koloni İstasyonu, Koloni Çekirdeği, Koloni Tapusu Mark II, Kar Yazıcısı, Lamporium.
+- FU'nun vanilla asset üzerine patch katmanı kullandığı Mutfak Tezgâhı / dikiş istasyonu gibi bağlı istasyonlar güvenli patch stratejisiyle ayrıca ele alınacak.
+- Oyun içi LQA: BEKLİYOR.
+- main dalındaki v0.5 beta paketi değiştirilmedi.
