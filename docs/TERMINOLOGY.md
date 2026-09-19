@@ -152,6 +152,12 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 | Biochemist Microseparator | Biyokimya üretim makinesi | Nesne | Biyokimyacı Mikroayırıcısı | Biochemist Microseparator | LOCKED | |
 
+| Spinning Wheel | Vanilla/FU dikiş istasyonu 1. kademe | Nesne | Çıkrık | Spinning Wheel | LOCKED | craftingwheel |
+
+| Sewing Machine | Vanilla/FU dikiş istasyonu 2. kademe | Nesne | Dikiş Makinesi | Sewing Machine | LOCKED | Zanaatkârlık Canvas referansıyla eşleşir |
+
+| Clothing Fabricator | FU dikiş istasyonu 3. kademe | Nesne | Giysi Üreticisi | Clothing Fabricator | LOCKED | FU craftingwheel patchi ekler |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
