@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.4.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik / statik geriye dönük QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.5.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -10,6 +10,8 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Tarım araştırma ağacının tamamı
 - Kimya araştırma ağacının tamamı
 - Mühendislik araştırma ağacının tamamı
+- Güç Sistemleri araştırma ağacının tamamı
+- Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
 - Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
 - Başlangıç telsiz/öğretici mesajlarının mevcut dosyadaki 26/26 metni
 - İmalat Tezgâhı yükseltme kademeleri ve seçili arayüz metinleri
@@ -19,7 +21,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **689 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **704 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **909 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **924 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -45,7 +47,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** `dist/FU_Turkce_v0.4.0_Beta.zip` eski QA öncesi içeriği taşıdığı için kaldırıldı. Güncel kaynak doğrudan `FU_Turkce` klasörüdür. `.github/workflows/build-package.yml` etkin GitHub Actions ortamında statik QA'yı çalıştırıp güncel v0.4 Beta ZIP'ini otomatik yeniden üretir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.5.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -54,7 +56,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da **64/64 yapılandırılmış hedef asset ve 689/689 kaynak alanı** exact kaynak üzerinden doğrulandı. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da **97/97 yapılandırılmış hedef asset ve 909/909 kaynak alanı** exact kaynak üzerinden doğrulandı. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -68,7 +70,8 @@ Güncel statik QA'da **64/64 yapılandırılmış hedef asset ve 689/689 kaynak 
 - [x] Kimya araştırma ağacı
 - [x] Mühendislik araştırma ağacı
 - [x] v0.4 geriye dönük statik QA ve eksik alan temizliği
-- [ ] Enerji araştırma ağacı
+- [x] v0.5 Güç Sistemleri ve bağlı temel makineler
+- [x] Güç Sistemleri araştırma ağacı
 - [ ] Zanaatkârlık araştırma ağacı
 - [ ] Savaş araştırma ağacı
 - [ ] Delilik araştırma ağacı
