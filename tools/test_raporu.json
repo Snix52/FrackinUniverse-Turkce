@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.4.0-beta",
+  "translation_version": "0.5.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 689,
+  "translated_display_fields": 909,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 704,
-  "patched_assets": 64,
+  "total_localized_display_units": 924,
+  "patched_assets": 97,
   "raw_override_assets": 1,
-  "target_assets_total": 65,
+  "target_assets_total": 98,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 104,
@@ -21,28 +21,32 @@
     "Kimya": 71,
     "Kimya makineleri ve kaynakları": 32,
     "Mühendislik": 139,
-    "Mühendislik makineleri ve kaynakları": 61
+    "Mühendislik makineleri ve kaynakları": 61,
+    "Güç Sistemleri": 81,
+    "Güç Sistemleri makineleri": 139
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (689/689)",
+    "unique_paths": "PASS (909/909)",
     "empty_translations": "PASS (0)",
-    "token_integrity": "PASS except documented source fixes (2 approved color-code correction)",
+    "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (689/689)",
-    "source_mismatch_rejection_cases": 689,
+    "fixture_application": "PASS (909/909)",
+    "source_mismatch_rejection_cases": 909,
     "source_mismatch_rejection": "PASS",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (689/689 across 64 structured source assets)",
+    "exact_source_pointer_validation": "PASS (909/909 across 97 structured source assets)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
     "agriculture_source_pointer_validation": "PASS (101/101)",
     "chemistry_source_pointer_validation": "PASS (71/71)",
     "engineering_source_pointer_validation": "PASS (139/139)",
-    "retroactive_changed_high_impact_assets": "PASS (432/432 across 8 rechecked assets)",
-    "retroactive_missing_field_assets": "PASS (77/77 across 10 rechecked assets)",
+    "power_source_pointer_validation": "PASS (81/81)",
+    "power_linked_source_pointer_validation": "PASS (139/139 across 32 source assets)",
+    "v05_new_source_pointer_validation": "PASS (220/220 across 33 source assets)",
+    "v05_build_allowlist": "PASS (220/220 new paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
     "build_allowlist_current_scope": "PASS"
   },
@@ -53,7 +57,10 @@
     "create_greenhouse turnInDescription: Armorworks -> Sera (condition itemName=designlab)",
     "create_tinkertable turnInDescription: Armorworks -> İnce İşçilik Tezgâhı (condition itemName=nanofabricator)",
     "fu_engineering shipcrafting: source says Ship Crafting Table; Turkish uses Gemi Bileşeni Birleştirici because actual fu_shipcraftingtable shortdescription is Ship Component Assembler.",
-    "fu_agriculture farming3 prose says Growing Tray; Turkish uses Hidroponik Tepsi because the research node actually unlocks isn_hydroponicstray (Hydro Tray)."
+    "fu_agriculture farming3 prose says Growing Tray; Turkish uses Hidroponik Tepsi because the research node actually unlocks isn_hydroponicstray (Hydro Tray).",
+    "fu_power tree source title is Electronics while FU cross-reference names it Power Systems; Turkish uses Güç Sistemleri for one trackable tree name.",
+    "fu_power Steam Power prose says hydraulic piston; Turkish uses Hidrolik Dinamo because the research actually unlocks hydraulicdynamo.",
+    "fu_power Combustion prose says Combustion Engine; Turkish uses Yanmalı Jeneratör because the actual unlocked object's shortdescription is Combustion Generator."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
@@ -64,9 +71,15 @@
     "Localized the linked Interstellar Travel BYOS quest and Small FTL Drive object.",
     "Localized 15 hard-coded researchTree.lua UI strings through a source-guarded raw override."
   ],
+  "v05_scope": [
+    "Localized all 81 player-visible fields in zb/researchTree/fu_power.config.",
+    "Localized 139 player-visible fields across 32 directly linked power, processing and atmosphere machine assets.",
+    "Standardized real inventory names for power-generation, reactor, centrifuge and atmosphere machinery.",
+    "Verified all 220 new structured fields against the pinned FU 6.5.8 source commit."
+  ],
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "PASS: 64 structured patch asset / 689 ledger source value validated against FU 6.5.8 source commit 329e714b3fe87571055c8ad7aa38135d199d3317; 1 raw Lua override / 15 visible strings protected by exact source-fragment validation.",
-  "polish_pass": "PASS: retroactive semantic, terminology, missing-field, quest-chain and UI coverage review completed for the current v0.4 scope. In-game LQA remains pending."
+  "full_source_validation": "PASS: 97 structured patch assets / 909 ledger source values validated against FU 6.5.8 source commit 329e714b3fe87571055c8ad7aa38135d199d3317; 1 raw Lua override / 15 visible strings protected by exact source-fragment validation.",
+  "polish_pass": "PASS: v0.5 Güç Sistemleri araştırma metinleri ve bağlı temel makine metinleri doğal Türkçe, gerçek envanter adları, bilim terminolojisi ve oyuncu takip bütünlüğü açısından gözden geçirildi. Oyun içi LQA bekliyor."
 }
