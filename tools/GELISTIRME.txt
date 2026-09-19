@@ -1,0 +1,27 @@
+GELİŞTİRME / DOĞRULAMA
+Bu dosyalar oyunun mods klasörüne konulmaz. Kurulum için gerekli değildir.
+
+ceviriler.json: İncelenen kaynak alanları ve Türkçe hedefleri.
+build_validate.py: Python 3.9+ standart kütüphanesiyle yama üretir; ödeme,
+API anahtarı, dış kütüphane veya internet gerekmez. Mevcut çıktıyı ezmez.
+
+Yeni bir klasöre normal paketi üretmek:
+  python build_validate.py --output yeni_cikti
+
+ASCII paketi üretmek:
+  python build_validate.py --output yeni_ascii_cikti --ascii
+
+İsteğe bağlı, açılmış FU dosyalarınla BAĞIMSIZ kaynak eşleştirmesi:
+  python build_validate.py --source-dir "D:\FU_acilmis" --output dogrulanmis_cikti
+
+Son komut kaynak dosyalarını değiştirmez. Yanlış/eksik kaynakta çıktı üretmeden
+hata verir. Bu dağıtım hazırlanırken --source-dir doğrulaması yapılmadı.
+JSON yorumlarını ve dizilerdeki sondaki virgülleri destekler.
+
+ÖNEMLİ: Mevcut otomatik testler, İngilizce değerlerin transkripsiyonunu içeren
+aynı kayıttan türetilmiş küçük örnek JSON yapıları üzerinde çalışır. Kontrol
+sonuçları, asıl FU dosyalarının bütünüyle bağımsız eşleştiğini veya oyunun
+yamayı yüklediğini kanıtlamaz. Tam oyun/içerik testi kullanıcı tarafında gerekir.
+
+Kaynaklar.json içindeki blob SHA'ları GitHub'ın bildirdiği kaynak kimlikleridir.
+Yerel olarak indirilmiş tam kaynak dosyaları üzerinden yeniden hesaplanmadı.
