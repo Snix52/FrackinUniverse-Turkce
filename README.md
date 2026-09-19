@@ -2,19 +2,21 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.2.0 Beta / Başlangıç + Jeoloji + Tarım / oyun içi LQA bekliyor.**
+**Durum: v0.3.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya / oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
 - Jeoloji araştırma ağacındaki seçili metinler
 - Tarım araştırma ağacının tamamı
+- Kimya araştırma ağacının tamamı
 - Başlangıç görevlerinin bir bölümü
 - Başlangıç telsiz ve öğretici mesajları
 - İmalat Tezgâhı yükseltme kademeleri ve seçili arayüz metinleri
 - Tarım/genetik makineleri ve temel Tarım öğretici görevleri
+- Kimya Laboratuvarı ve doğrudan bağlı temel kimya kaynakları
 - Araştırma ekranındaki seçili açıklamalar
 
-Toplam **360 oyuncu metni alanı** çevrilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **463 oyuncu metni alanı** çevrilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -47,7 +49,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-v0.1.1 hazırlanırken **14/14 hedef kaynak dosya ve 185/185 kaynak alanı exact commit üzerinden pointer bazında doğrulandı**.
+v0.3.0 kapanışında **46/46 hedef kaynak asset ve 463/463 kaynak alanı exact commit üzerinden pointer bazında yeniden doğrulandı**.
 
 ## Yol haritası
 
@@ -56,7 +58,7 @@ v0.1.1 hazırlanırken **14/14 hedef kaynak dosya ve 185/185 kaynak alanı exact
 - [x] Başlangıç telsiz ve öğretici mesajlarının ilk paketi
 - [x] v0.1.1 Anayasa uyum düzeltmesi
 - [x] Tarım araştırma ağacı
-- [ ] Kimya araştırma ağacı
+- [x] Kimya araştırma ağacı
 - [ ] Mühendislik araştırma ağacı
 - [ ] Enerji araştırma ağacı
 - [ ] Zanaatkârlık araştırma ağacı
