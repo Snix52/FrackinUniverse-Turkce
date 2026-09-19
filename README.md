@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.4.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik / oyun içi LQA bekliyor.**
+**Durum: v0.4.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik / statik geriye dönük QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -10,15 +10,16 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Tarım araştırma ağacının tamamı
 - Kimya araştırma ağacının tamamı
 - Mühendislik araştırma ağacının tamamı
-- Başlangıç görevlerinin bir bölümü
-- Başlangıç telsiz ve öğretici mesajları
+- Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
+- Başlangıç telsiz/öğretici mesajlarının mevcut dosyadaki 26/26 metni
 - İmalat Tezgâhı yükseltme kademeleri ve seçili arayüz metinleri
 - Tarım/genetik makineleri ve temel Tarım öğretici görevleri
 - Kimya Laboratuvarı ve doğrudan bağlı temel kimya kaynakları
 - Mühendislikteki temel çıkarma, araştırma, gemi ve çekirdek makineleri/kaynakları
-- Araştırma ekranındaki seçili açıklamalar
+- STL Motoru ve Küçük FTL Motoru oyuncu metinleri
+- Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **654 oyuncu metni alanı** çevrilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **689 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **704 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -51,7 +52,9 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-v0.4.0 kapanışında **62/62 hedef kaynak asset ve 654/654 kaynak alanı exact commit üzerinden pointer bazında doğrulandı**.
+Güncel statik QA'da **64/64 yapılandırılmış hedef asset ve 689/689 kaynak alanı** exact kaynak üzerinden doğrulandı. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+
+`build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
 ## Yol haritası
 
@@ -62,6 +65,7 @@ v0.4.0 kapanışında **62/62 hedef kaynak asset ve 654/654 kaynak alanı exact 
 - [x] Tarım araştırma ağacı
 - [x] Kimya araştırma ağacı
 - [x] Mühendislik araştırma ağacı
+- [x] v0.4 geriye dönük statik QA ve eksik alan temizliği
 - [ ] Enerji araştırma ağacı
 - [ ] Zanaatkârlık araştırma ağacı
 - [ ] Savaş araştırma ağacı
