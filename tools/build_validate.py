@@ -131,6 +131,8 @@ def allowed(a,p):
         return p in ('/paneLayout/windowtitle/title','/paneLayout/windowtitle/subtitle','/paneLayout/btnCraft/caption','/paneLayout/btnStopCraft/caption','/paneLayout/lblProduct/value','/paneLayout/filter/hint','/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value')
     if a=='objects/ship/fu_ftldrive/fu_stldrive.object':
         return p in ('/description','/shortdescription','/apexDescription','/avianDescription','/floranDescription','/glitchDescription','/humanDescription','/hylotlDescription','/novakidDescription')
+    if a=='objects/ship/fu_ftldrive/fu_ftldrivesmall.object':
+        return p in ('/description','/shortdescription','/apexDescription','/avianDescription','/floranDescription','/glitchDescription','/humanDescription','/hylotlDescription','/novakidDescription')
     if a=='items/tools/mmgravgun2.beamaxe':
         return p in ('/description','/shortdescription','/category')
     return False
