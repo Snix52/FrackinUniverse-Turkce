@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1066 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1116 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -38,9 +38,14 @@ v0.5 güncel kaynak kontrolü:
 
 Oyun içi LQA, font ve panel taşma testi ayrıca yapılmalıdır.
 
-v0.6 çalışma dalı ön QA:
-  fu_craftsmanship: 78 araştırma düğümü / 157 yeni alan
-  toplam yapılandırılmış alan: 1066
-  yeni alan exact-source: 157/157 PASS
-  benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
-  bağlı Zanaatkârlık eşya ve makineleri: DEVAM EDİYOR
+v0.6 çalışma dalı güncel QA:
+  fu_craftsmanship: 78 araştırma düğümü / 157 alan
+  ilk bağlı FU-owned makine paketi: 6 asset / 50 alan
+  v0.6 mevcut toplam: 7 asset / 207 alan
+  toplam yapılandırılmış alan: 1116
+  toplam görünür birim: 1131 (1116 yapılandırılmış + 15 Lua)
+  yeni alan exact-source: 207/207 PASS
+  patch eşleşmesi: 207 test + 207 replace PASS
+  benzersiz pointer / boş çeviri / renk-kontrol kodu: PASS
+  sayı bütünlüğü: PASS; 2 belgeli Colony Deed Mark II ad eşleme istisnası
+  vanilla üzerine FU patch katmanı kullanan bağlı istasyonlar: DEVAM EDİYOR
