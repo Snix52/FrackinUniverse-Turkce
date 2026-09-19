@@ -1,0 +1,51 @@
+name: FU Turkce Build and QA
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "dist/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate Python
+        run: python -m py_compile tools/build_validate.py
+
+      - name: Build and run static QA
+        run: python tools/build_validate.py --output build_output
+
+      - name: Package mod
+        run: |
+          rm -f dist/FU_Turkce_v0.4.0_Beta.zip
+          cd build_output
+          zip -r ../dist/FU_Turkce_v0.4.0_Beta.zip FU_Turkce
+
+      - name: Verify ZIP
+        run: unzip -t dist/FU_Turkce_v0.4.0_Beta.zip
+
+      - name: Refresh tracked beta package
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/FU_Turkce_v0.4.0_Beta.zip
+          if git diff --cached --quiet; then
+            echo "Package is already current."
+          else
+            git commit -m "build: refresh v0.4.0 beta package [skip ci]"
+            git push
+          fi
