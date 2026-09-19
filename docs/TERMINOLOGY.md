@@ -91,3 +91,6 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Core Fragments | Kaynak | Kaynak | Çekirdek Parçaları | Core Fragments | LOCKED | |
 | Atomic Furnace | Vanilla üretim makinesi | Nesne | Atomik Fırın | Atomic Furnace | APPROVED | FU Mühendislik ağacındaki referans |
 | Power Systems | Araştırma ağacı | Sistem | Güç Sistemleri | Power Systems | APPROVED | Güç ağacı ele alınırken LOCKED yapılacak |
+| Terraforming | Araştırma başlığı / sistem | Sistem | Gezegen Biçimlendirme | Gezegen Dönüşümü | LOCKED | Jeoloji ve Mühendislik arasında standardize edildi |
+| Microformer | Gezegen biçimlendirme cihazı | Nesne | Mikro Biçimlendirici | Mikro Dönüştürücü | LOCKED | Terraforming terminolojisiyle aynı aile |
+| Terraformer | Gezegen biçimlendirme cihazı | Nesne | Gezegen Biçimlendirici | Gezegen Dönüştürücü | LOCKED | Terraforming terminolojisiyle aynı aile |
