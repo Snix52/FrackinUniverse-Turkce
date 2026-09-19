@@ -11,6 +11,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Engineering | Araştırma ağacı | Sistem | Mühendislik | Engineering | LOCKED | |
 | Agriculture | Araştırma ağacı | Sistem | Tarım | Agriculture | LOCKED | |
 | Chemistry | Araştırma ağacı | Sistem | Kimya | Chemistry | LOCKED | |
+| Craftsmanship | Araştırma ağacı | Sistem | Zanaatkârlık | Craftsmanship | LOCKED | v0.6 ana araştırma ağacı adı |
 | Machining Table | Makine | Nesne | İmalat Tezgâhı | Machining Table | LOCKED | |
 | Auto-Assembler | Makine | Nesne | Otomatik Birleştirici | Auto-Assembler | LOCKED | |
 | Matter Assembler | Makine | Nesne | Madde Birleştirici | Matter Assembler | LOCKED | |
@@ -130,6 +131,42 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Atmospheric Filter | Atmosfer makinesi | Nesne | Atmosfer Filtresi | Atmospheric Filter | LOCKED | |
 | Atmospheric Regulator | Atmosfer makinesi | Nesne | Atmosfer Düzenleyici | Atmospheric Regulator | LOCKED | |
 | Regeneration Matrix | İyileştirme makinesi | Nesne | Yenilenme Matrisi | Regeneration Matrix | LOCKED | |
+
+| Colony Station | Koloni sistemi makinesi | Nesne | Koloni İstasyonu | Colony Station | LOCKED | Zanaatkârlık koloni dalı |
+
+| Colony Core | Koloni sistemi çekirdeği | Nesne | Koloni Çekirdeği | Colony Core | LOCKED | |
+
+| Colony Deed Mark II | Koloni kiracı tapusu | Nesne | Koloni Tapusu Mark II | Mk2 Kiracı Tapusu | LOCKED | Kaynak araştırma metni Mk2 Tenant Deeds dese de gerçek envanter adı esas alınır |
+
+| Snowprinter | Peglaci üretim makinesi | Nesne | Kar Yazıcısı | Snowprinter | LOCKED | |
+
+| The Lamporium | Lav lambası üretim makinesi | Özel ad/Nesne | Lamporium | The Lamporium | LOCKED | Özel makine adı; İngilizce artikel atılır |
+
+| Kitchen Counter | Yemek üretim istasyonu | Nesne | Mutfak Tezgâhı | Kitchen Counter | LOCKED | FU vanilla woodencookingtable üstüne patch ile tanımlar |
+
+| Chef's Kitchen | Mutfak Tezgâhı yükseltmesi | Nesne | Şef Mutfağı | Chef's Kitchen | LOCKED | |
+
+| Biochemist Table | Balçık/biyokimya üretim makinesi | Nesne | Biyokimyacı Tezgâhı | Biochemist Table | LOCKED | |
+
+| Biochemist Centrifuge | Biyokimya üretim makinesi | Nesne | Biyokimyacı Santrifüjü | Biochemist Centrifuge | LOCKED | |
+
+| Biochemist Microseparator | Biyokimya üretim makinesi | Nesne | Biyokimyacı Mikroayırıcısı | Biochemist Microseparator | LOCKED | |
+
+| Spinning Wheel | Vanilla/FU dikiş istasyonu 1. kademe | Nesne | Çıkrık | Spinning Wheel | LOCKED | craftingwheel |
+
+| Sewing Machine | Vanilla/FU dikiş istasyonu 2. kademe | Nesne | Dikiş Makinesi | Sewing Machine | LOCKED | Zanaatkârlık Canvas referansıyla eşleşir |
+
+| Clothing Fabricator | FU dikiş istasyonu 3. kademe | Nesne | Giysi Üreticisi | Clothing Fabricator | LOCKED | FU craftingwheel patchi ekler |
+
+| Wooden Workbench | Vanilla üretim tezgâhı | Nesne | Ahşap Tezgâh | Wooden Workbench | LOCKED | Zanaatkârlık workbench1 referansı |
+
+| Industrial Workbench | Ahşap Tezgâh yükseltmesi | Nesne | Endüstriyel Tezgâh | Industrial Workbench | LOCKED | |
+
+| Inventor's Table | Vanilla ana üretim tezgâhı | Nesne | Mucit Tezgâhı | Inventor's Table | LOCKED | Daha önce Jeoloji/Zanaatkârlık metinlerinde kullanılan ad resmileştirildi |
+
+| Engineer's Table | Mucit Tezgâhı yükseltmesi | Nesne | Mühendis Tezgâhı | Engineer's Table | LOCKED | |
+
+| Architect's Table | Mucit Tezgâhı yükseltmesi | Nesne | Mimar Tezgâhı | Architect's Table | LOCKED | |
 
 ## Kural
 
