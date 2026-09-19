@@ -8703,7 +8703,11 @@
       "pointer": "/strings/research/irongear/1",
       "en": "^orange;Tier 1^reset;\n\nYou've learned the basics of making weapons and armor. You can now create an ^orange;Armorworks^reset; at your ^orange;Machining Table^reset; where you can create a huge variety of EPPs, armor, and weapons out of many materials. There, you can now make a variety of basic armor and equipment out of simple metals like iron.\n\n^yellow;Note^reset;: While the old Anvil is still available, it has essentially been superseded by the Armorworks in function. You no longer really have a reason to make one.",
       "tr": "^orange;Kademe 1^reset;\n\nSilah ve zırh üretmenin temellerini öğrendin. Artık ^orange;İmalat Tezgâhında^reset; bir ^orange;Zırh Atölyesi^reset; üretebilirsin. Burada birçok farklı malzemeden çok çeşitli EPP'ler, zırhlar ve silahlar yapabilir; demir gibi basit metallerden temel zırh ve ekipman üretebilirsin.\n\n^yellow;Not^reset;: Eski Örs hâlâ kullanılabilir olsa da işlev açısından yerini büyük ölçüde Zırh Atölyesine bıraktı. Artık onu üretmek için pek bir sebep yok.",
-      "section": "Zırh ve Silahlar"
+      "section": "Zırh ve Silahlar",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Armorworks FU armory nesnesiyle; Anvil vanilla craftinganvil adıyla doğrulandı."
+      }
     },
     {
       "asset": "zb/researchTree/fu_warcraft.config",
@@ -8801,7 +8805,11 @@
       "pointer": "/strings/research/tungstengear/1",
       "en": "^orange;Tier 2^reset;\n\nYou've learned to work Tungsten like steel in the creation of more advanced forged weapons, armors, and the especially useful ^orange;Breathing EPP^reset;. Besides being generally quite durable when forged correctly, Tungsten also has the heat tolerance to start making useful energy weapons.",
       "tr": "^orange;Kademe 2^reset;\n\nDaha gelişmiş dövme silahlar, zırhlar ve özellikle kullanışlı ^orange;Solunum EPP'si^reset; üretmek için Tungsteni çelik gibi işlemeyi öğrendin. Doğru dövüldüğünde oldukça dayanıklı olmasının yanında, Tungstenin ısıya dayanımı kullanışlı enerji silahları üretmeye başlamanı da sağlar.",
-      "section": "Zırh ve Silahlar"
+      "section": "Zırh ve Silahlar",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Breathing EPP vanilla gerçek shortdescription ile doğrulandı; Türkçede Solunum EPP'si."
+      }
     },
     {
       "asset": "zb/researchTree/fu_warcraft.config",
@@ -9334,6 +9342,192 @@
       "en": "^orange;Tier 5^reset;\n\nIt might seem pretty gross, but with some clever engineering you could form solid slime capable of being used as weapons or armor. Don't argue. Just accept.",
       "tr": "^orange;Kademe 5^reset;\n\nBiraz iğrenç gelebilir ama akıllıca mühendislikle katı balçıktan silah ve zırh üretilebilir. İtiraz etme. Kabullen.",
       "section": "Zırh ve Silahlar"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/description",
+      "en": "Create weapons and armor.",
+      "tr": "Silah ve zırh üret.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Armorworks^reset;",
+      "tr": "^orange;Zırh Atölyesi^reset;",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Create weapons and armor.",
+      "tr": "Silah ve zırh üret.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Armorworks^reset;",
+      "tr": "^orange;Zırh Atölyesi^reset;",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#ffea00;Armorworks",
+      "tr": " ^#ffea00;Zırh Atölyesi",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Basic weapons and armor.",
+      "tr": " ^#dddddd;Temel silah ve zırhlar.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "Even more advanced gear.",
+      "tr": "Daha da gelişmiş ekipman.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Assembly Line^reset;",
+      "tr": "^orange;Montaj Hattı^reset;",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#ffea00;Assembly Line",
+      "tr": " ^#ffea00;Montaj Hattı",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Intermediate weapons and armor.",
+      "tr": " ^#dddddd;Orta seviye silah ve zırhlar.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "The best weapons and armor.",
+      "tr": "En iyi silah ve zırhlar.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Armory^reset;",
+      "tr": "^orange;Cephanelik^reset;",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#ffea00;Armory",
+      "tr": " ^#ffea00;Cephanelik",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/armory/armory.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Advanced weapons and armor.",
+      "tr": " ^#dddddd;Gelişmiş silah ve zırhlar.",
+      "section": "Zırh ve Silahlar makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Anvil^white;",
+      "tr": "^orange;Örs^reset;",
+      "section": "Zırh ve Silahlar makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Anvil^white;",
+      "tr": "^orange;Örs^reset;",
+      "section": "Zırh ve Silahlar makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Forge^white;",
+      "tr": "^orange;Dövme Ocağı^reset;",
+      "section": "Zırh ve Silahlar makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Replicator^white;",
+      "tr": "^orange;Çoğaltıcı^reset;",
+      "section": "Zırh ve Silahlar makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "items/armors/backitems/breathprotection/breathprotection.back",
+      "pointer": "/description",
+      "en": "Produces breathable air. Helpful in places with ^red;no breathable atmosphere^reset;.",
+      "tr": "Solunabilir hava üretir. ^red;Solunabilir atmosferin olmadığı^reset; yerlerde kullanışlıdır.",
+      "section": "Zırh ve Silahlar makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/armors/backitems/breathprotection/breathprotection.back",
+        "reason": "Vanilla Starbound eşya kaynağından exact doğrulandı; FU bu item ID'yi tungstengear düğümünde açıyor."
+      }
+    },
+    {
+      "asset": "items/armors/backitems/breathprotection/breathprotection.back",
+      "pointer": "/shortdescription",
+      "en": "Breathing EPP",
+      "tr": "Solunum EPP'si",
+      "section": "Zırh ve Silahlar makineleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/armors/backitems/breathprotection/breathprotection.back",
+        "reason": "Vanilla Starbound eşya kaynağından exact doğrulandı; FU bu item ID'yi tungstengear düğümünde açıyor."
+      }
     }
   ]
 }
