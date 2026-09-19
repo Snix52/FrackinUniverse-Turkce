@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.4.0 BETA | GERİYE DÖNÜK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.5.0 BETA | STATİK QA KONTROL ÖZETİ
 
-689 yapılandırılmış oyuncu metni alanı / 64 patch asset.
+909 yapılandırılmış oyuncu metni alanı / 97 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 704 görünür metin birimi / 65 hedef asset.
+TOPLAM: 924 görünür metin birimi / 98 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -17,71 +17,75 @@ KAPSAM
 - Kimya makineleri ve kaynakları: 32
 - Mühendislik: 139
 - Mühendislik makineleri ve kaynakları: 61
+- Güç Sistemleri: 81
+- Güç Sistemleri makineleri: 139
+
+v0.5 YENİ İÇERİK
+- fu_power araştırma ağacı: 39 düğüm / 81 oyuncu metni.
+- Doğrudan bağlı Güç Sistemleri makineleri: 32 asset / 139 oyuncu metni.
+- v0.5 toplam ekleme: 33 asset / 220 alan.
+- Solar, rüzgâr, yanmalı, fisyon, füzyon ve kuantum üretim zincirleri.
+- Elektrikli Fırın, Yüksek Fırın ve Ark Ergitici.
+- Piller, santrifüjler, Toz Eleği, Üretim İstasyonu.
+- Atmosfer Yoğuşturucusu, Sıvı Karıştırıcı, Atmosfer Filtresi, Atmosfer Düzenleyici ve Yenilenme Matrisi.
+- Kablolama İstasyonu ve Alternatör.
 
 GEÇEN STATİK KONTROLLER
-- Exact FU kaynak commit doğrulaması: 689/689 yapılandırılmış alan.
-- Patchlenen yapılandırılmış asset kaynak doğrulaması: 64/64.
+- Exact FU kaynak commit doğrulaması: 909/909 yapılandırılmış alan.
+- Patchlenen yapılandırılmış asset: 97/97.
+- v0.5 yeni içerik exact-source: 220/220 alan, 33/33 asset.
 - Lua görünür metin exact-fragment doğrulaması: 15/15.
 - Ham Lua override asset: 1/1.
-- Benzersiz asset/pointer: 689/689 PASS.
+- Benzersiz asset/pointer: 909/909 PASS.
 - Boş Türkçe değer: 0.
-- JSON Patch fixture uygulaması: 689/689 PASS.
+- JSON Patch fixture uygulaması: 909/909 PASS.
 - Placeholder / kontrol kodu / sayı bütünlüğü: PASS.
-- Renk kodu bütünlüğü: PASS; 2 kaynak renk-yazım düzeltmesi belgeli istisna.
+- Renk kodu bütünlüğü: PASS; önceki belgeli kaynak renk-yazım istisnaları korunuyor.
 - Unicode Türkçe politika: PASS.
 - ASCII dağıtım: yok.
-- Başlangıç radiomessages kapsaması: 26/26.
-- Geriye dönük yüksek etkili 8 asset yeniden kontrolü: 432/432 PASS.
-- Eksik alan bulunan 10 asset yeniden kontrolü: 77/77 PASS.
 
-TERMİNOLOJİ STANDARDİZASYONU
-- Improved -> Geliştirilmiş
-- Advanced -> Gelişmiş
-- Complex -> Karmaşık
-- Superior -> Üstün
-- Peerless -> Eşsiz
-- Mech, Tech, EPP ve FTL sistem adları korunur.
-- Ship Component Assembler -> Gemi Bileşeni Birleştirici.
-- STL Drive -> STL Motoru.
-- Small FTL Drive -> Küçük FTL Motoru.
-- Extraction Lab -> Çıkarma Laboratuvarı.
-- Terraforming -> Gezegen Biçimlendirme.
-- Microformer -> Mikro Biçimlendirici.
-- Terraformer -> Gezegen Biçimlendirici.
-- Garp Berry ve Blister Bush FU özel bitki/eşya adları olarak korunur.
+v0.5 TERMİNOLOJİ KARARLARI
+- fu_power kaynak ağaç başlığı Electronics olsa da diğer FU metinleri bu ağaca Power Systems diyor.
+  Oyuncu takip bütünlüğü için ağaç adı Güç Sistemleri LOCKED.
+- Ağacın içindeki Electronics düğümü Elektronik olarak kalır.
+- Silicon -> Silisyum.
+- Solar Panel -> Güneş Paneli.
+- Solar Array -> Güneş Dizisi.
+- Solar Tower -> Güneş Kulesi.
+- Hydraulic Dynamo -> Hidrolik Dinamo.
+- Combustion Generator -> Yanmalı Jeneratör.
+- Alternator Generator -> Alternatör.
+- Electric Furnace -> Elektrikli Fırın.
+- Blast Furnace -> Yüksek Fırın.
+- Arc Smelter -> Ark Ergitici.
+- Fission Reactor -> Fisyon Reaktörü.
+- Small/Large Fusion Reactor -> Küçük/Büyük Füzyon Reaktörü.
+- Quantum Reactor -> Kuantum Reaktörü.
+- Quantum Extractor -> Kuantum Çıkarıcı.
+- Quantum Nucleonics -> Kuantum Nükleoniği.
+- Centrifuge -> Santrifüj.
+- Wiring Station -> Kablolama İstasyonu.
+- Manufacturing Station -> Üretim İstasyonu.
 
-GERİYE DÖNÜK DÜZELTMELER
-1. Kalan (Inventor’s Table) İngilizce parantez açıklaması kaldırıldı.
-2. Özütleme Laboratuvarı -> Çıkarma Laboratuvarı.
-3. İleri Arıcılık -> Gelişmiş Arıcılık.
-4. Gezegen Dönüşümü / Mikro Dönüştürücü / Gezegen Dönüştürücü ailesi standardize edildi.
-5. Teknoloji Yükseltmeleri -> Tech Yükseltmeleri.
-6. Complex Plastics -> Karmaşık Plastikler.
-7. Görev yönlendirmelerindeki belirsiz/İngilizce kokan araştırma cümleleri düzeltildi.
-8. Filizlendirme Tezgâhının eksik 6 ırk inceleme cümlesi eklendi.
-9. Arı Barınağının eksik Buy / Cancel / Search / Replace Me UI metinleri eklendi.
-10. Başlangıç radiomessages dosyasındaki eksik 4 BYOS/FTL mesajı eklendi.
-11. BYOS Yıldızlararası Yolculuk görevi ve gerçek Küçük FTL Motoru nesnesi yerelleştirildi.
-12. Araştırma ekranının Lua içine gömülü 15 sabit İngilizce UI metni kaynak-korumalı override ile çevrildi.
-
-BELGELİ KAYNAK / BAĞLAM DÜZELTMELERİ
-1. create_growingtray kaynak metnindeki "^oraange;" kodu "^orange;" olarak düzeltildi.
-2. create_growingtray teslim metnindeki Armorworks, gerçek condition itemName=fu_growingtray olduğu için Yetiştirme Tepsisi yapıldı.
-3. create_electronics teslim metnindeki Armorworks, condition itemName=powerstation olduğu için Elektronik Merkezi yapıldı.
-4. create_greenhouse teslim metnindeki Armorworks, condition itemName=designlab olduğu için Sera yapıldı.
-5. create_tinkertable teslim metnindeki Armorworks, condition itemName=nanofabricator olduğu için İnce İşçilik Tezgâhı yapıldı.
-6. Mühendislik araştırma metnindeki Ship Crafting Table yerine gerçek fu_shipcraftingtable oyuncu adı Gemi Bileşeni Birleştirici kullanıldı.
-7. Tarım farming3 metnindeki Growing Tray yerine araştırmanın gerçekten açtığı isn_hydroponicstray oyuncu adı Hidroponik Tepsi kullanıldı.
+BELGELİ v0.5 KAYNAK / BAĞLAM UYARLAMALARI
+1. fu_power ağacının kaynak görünen adı "Electronics", ancak Mühendislik ağacındaki kaynak çapraz referansı "Power Systems".
+   Türkçede tek ve takip edilebilir ad olarak Güç Sistemleri kullanıldı.
+2. Steam Power açıklaması kaynakta "hydraulic piston" diyor; düğüm gerçekte hydraulicdynamo nesnesini açıyor.
+   Türkçede gerçek eşya adı Hidrolik Dinamo kullanıldı.
+3. Combustion araştırması "Combustion Engine" diyor; gerçek açılan nesne shortdescription olarak "Combustion Generator".
+   Türkçede envanter adıyla eşleşmesi için Yanmalı Jeneratör kullanıldı.
 
 YAPILMAYAN LQA
 - Oyunu gerçek Workshop kurulumu üzerinde başlatma.
 - Font ve büyük/küçük Türkçe karakter testi.
-- Araştırma açıklamalarının panelden taşma kontrolü.
-- Araştırma ekranı Lua override'ının gerçek oyunda etkileşim testi.
-- Görev zincirlerinin oyun içinde baştan sona takibi.
+- Güç Sistemleri araştırma açıklamalarının panelden taşma kontrolü.
+- Reaktör ve pil bilgi ekranlarının oyun içi taşma kontrolü.
+- Kablolama İstasyonu ve atmosfer makinelerinin UI/LQA kontrolü.
+- Füzyon/fisyon yakıt-soğutucu zincirinin oyun içinde baştan sona doğrulanması.
 - Diğer modlarla uyumluluk/yükleme sırası.
 
 SONUÇ
 Statik Anayasa QA: PASS.
-Exact kaynak doğrulaması: PASS (689/689 + Lua 15/15).
+Exact kaynak doğrulaması: PASS (909/909 + Lua 15/15).
+v0.5 yeni içerik doğrulaması: PASS (220/220).
 Oyun içi LQA: BEKLİYOR.
