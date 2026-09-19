@@ -6553,7 +6553,11 @@
       "pointer": "/strings/research/cooking1/1",
       "en": "^orange;Tier 1^reset;\n\nYou're learning to prepare something more complex than simple campfire food. You can now create a Kitchen Counter to prepare advanced dishes. You also learn quite a few basic recipes.",
       "tr": "^orange;Kademe 1^reset;\n\nBasit kamp ateşi yemeklerinin ötesine geçmeyi öğreniyorsun. Artık gelişmiş yemekler hazırlamak için bir Mutfak Tezgâhı üretebilir ve birçok temel tarifi öğrenebilirsin.",
-      "section": "Zanaatkârlık"
+      "section": "Zanaatkârlık",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Kitchen Counter gerçek FU final kademe adıyla Mutfak Tezgâhı olarak eşlendi."
+      }
     },
     {
       "asset": "zb/researchTree/fu_craftsmanship.config",
@@ -7327,7 +7331,11 @@
       "pointer": "/strings/research/workbenchslime/1",
       "en": "^orange;Tier 1^reset;\n\nYou can shape furniture out of jelly and slime! Why would you want to do this? Unclear.\n\nMost recipes require the ^cyan;Biochemist Table^reset;. Research it in the ^green;Geology tree^reset;.",
       "tr": "^orange;Kademe 1^reset;\n\nJöle ve balçıktan mobilyalara şekil verebilirsin! Bunu neden yapmak isteyesin? Belli değil.\n\nTariflerin çoğu ^cyan;Biyokimyacı Tezgâhını^reset; gerektirir. Onu ^green;Jeoloji ağacında^reset; araştır.",
-      "section": "Zanaatkârlık"
+      "section": "Zanaatkârlık",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Biochemist Table gerçek FU nesne adıyla Biyokimyacı Tezgâhı olarak eşlendi."
+      }
     },
     {
       "asset": "zb/researchTree/fu_craftsmanship.config",
@@ -7835,6 +7843,536 @@
       "pointer": "/novakidDescription",
       "en": "This is mighty pretty.",
       "tr": "Pek bi' güzelmiş.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Used to produce wholesome foods with a variety of effects.",
+      "tr": "Çeşitli etkiler sağlayan sağlıklı yemekler hazırlamak için kullanılır.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Kitchen Counter^reset;",
+      "tr": "^orange;Mutfak Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/apexDescription",
+      "en": "This table contains everything one could need to create almost any dish.",
+      "tr": "Bu tezgahta neredeyse her yemeği hazırlamak için gereken her şey var.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/avianDescription",
+      "en": "Almost any Avian dish could be prepared here. And many non-Avian dishes too, for that matter!",
+      "tr": "Burada neredeyse her Avian yemeğini hazırlayabilirim. Hatta Avian olmayan pek çok yemeği de!",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/floranDescription",
+      "en": "Floran prepare food with bare handsss. But table also ussseful.",
+      "tr": "Floran yemeği çıplak ellerle hazırlarrr. Ama tezgâh da işe yarar.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/glitchDescription",
+      "en": "Inspired. Let's create food!",
+      "tr": "İlhamlı. Hadi yemek yapalım!",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/humanDescription",
+      "en": "A chef's table. A whole bunch of different implements for making food.",
+      "tr": "Bir şef tezgâhı. Yemek yapmak için bir sürü farklı araç var.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/hylotlDescription",
+      "en": "Food preparation is an art and this is the paintbrush.",
+      "tr": "Yemek hazırlamak bir sanattır; bu da onun fırçası.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/novakidDescription",
+      "en": "I could cook up a storm on this 'ere thing.",
+      "tr": "Bununla ortalığı yemek kokusuna boğarım.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Kitchen Counter",
+      "tr": " Mutfak Tezgâhı",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Delicious food.",
+      "tr": " ^#b9b5b2;Lezzetli yemekler.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "Used to produce wholesome foods with a variety of effects.",
+      "tr": "Çeşitli etkiler sağlayan sağlıklı yemekler hazırlamak için kullanılır.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Chef's Kitchen^reset;",
+      "tr": "^orange;Şef Mutfağı^reset;",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/apexDescription",
+      "en": "This table contains everything one could need to create almost any dish.",
+      "tr": "Bu tezgahta neredeyse her yemeği hazırlamak için gereken her şey var.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/avianDescription",
+      "en": "Almost any Avian dish could be prepared here. And many non-Avian dishes too, for that matter!",
+      "tr": "Burada neredeyse her Avian yemeğini hazırlayabilirim. Hatta Avian olmayan pek çok yemeği de!",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/floranDescription",
+      "en": "Floran prepare food with bare handsss. But table also ussseful.",
+      "tr": "Floran yemeği çıplak ellerle hazırlarrr. Ama tezgâh da işe yarar.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/glitchDescription",
+      "en": "Inspired. Let's create food!",
+      "tr": "İlhamlı. Hadi yemek yapalım!",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/humanDescription",
+      "en": "A chef's table. A whole bunch of different implements for making food.",
+      "tr": "Bir şef tezgâhı. Yemek yapmak için bir sürü farklı araç var.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/hylotlDescription",
+      "en": "Food preparation is an art and this is the paintbrush.",
+      "tr": "Yemek hazırlamak bir sanattır; bu da onun fırçası.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/novakidDescription",
+      "en": "I could cook up a storm on this 'ere thing.",
+      "tr": "Bununla ortalığı yemek kokusuna boğarım.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Chef's Kitchen",
+      "tr": " Şef Mutfağı",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;A much nicer kitchen.",
+      "tr": " ^#b9b5b2;Çok daha iyi bir mutfak.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/description",
+      "en": "The Biochemist table is used to change the bonds between slimes.",
+      "tr": "Biyokimyacı Tezgâhı, balçıkların bağlarını değiştirmek için kullanılır.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Biochemist Table^reset;",
+      "tr": "^orange;Biyokimyacı Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "The Biochemist table is used to change the bonds between slime.",
+      "tr": "Biyokimyacı Tezgâhı, balçığın bağlarını değiştirmek için kullanılır.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Biochemist Table^reset;",
+      "tr": "^orange;Biyokimyacı Tezgâhı^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/apexDescription",
+      "en": "A Biochemist table. The Apex haven't used these like they're used here.",
+      "tr": "Bir Biyokimyacı Tezgâhı. Apex'ler bunları burada kullanıldığı şekilde kullanmaz.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/avianDescription",
+      "en": "I don't like glass bottles, these are almost invisible to us.",
+      "tr": "Cam şişeleri sevmiyorum; bizim için neredeyse görünmezler.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/floranDescription",
+      "en": "Very sssothing, goo sssalvation.",
+      "tr": "Çok yatışştırıcı, balçık kurtuluşşş.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/glitchDescription",
+      "en": "Confused. The Glitch don't know the purpose of these Biochemist tables.",
+      "tr": "Şaşkın. Glitch'ler bu Biyokimyacı Tezgâhlarının ne işe yaradığını bilmiyor.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/humanDescription",
+      "en": "A biochemist table, these were used alot when the earth was still whole.",
+      "tr": "Bir Biyokimyacı Tezgâhı. Dünya hâlâ bütünken bunlar çok kullanılırdı.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/hylotlDescription",
+      "en": "Probably used to mix elements.",
+      "tr": "Muhtemelen elementleri karıştırmak için kullanılıyor.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/novakidDescription",
+      "en": "Ah, biochemistry, lovely aspect of science.",
+      "tr": "Biyokimya ha, bilimin pek hoş bir yanı.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/slimepersonDescription",
+      "en": "I can bond other slime here.",
+      "tr": "Burada diğer balçıkları bağlayabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Biochemist Table",
+      "tr": " Biyokimyacı Tezgâhı",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Slimy stuff",
+      "tr": " ^#b9b5b2;Balçıklı işler",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "The Biochemist centrifuge is used to change the bonds between slime.",
+      "tr": "Biyokimyacı Santrifüjü, balçığın bağlarını değiştirmek için kullanılır.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Biochemist Centrifuge^reset;",
+      "tr": "^orange;Biyokimyacı Santrifüjü^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/apexDescription",
+      "en": "A forge. I can use titanium and other materials here.",
+      "tr": "Bir dövme ocağı. Burada titanyum ve başka malzemeler kullanabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/avianDescription",
+      "en": "A forge for creating equipment out of metal.",
+      "tr": "Metalden ekipman üretmek için bir dövme ocağı.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/floranDescription",
+      "en": "Floran make ssstrong weapon on sssstation.",
+      "tr": "Floran isssstasyonda güçlü silah yapar.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/glitchDescription",
+      "en": "Eager. I can make titanium equipment and more here.",
+      "tr": "Hevesli. Burada titanyum ekipman ve daha fazlasını yapabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/humanDescription",
+      "en": "This forge let's me craft equipment out of metal!",
+      "tr": "Bu dövme ocağıyla metalden ekipman üretebilirim!",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/hylotlDescription",
+      "en": "A crafting station dedicated to creatin' equipment out of metal.",
+      "tr": "Metalden ekipman üretmeye adanmış bir üretim istasyonu.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/novakidDescription",
+      "en": "This forge will come in handy for creatin' equipment out of metal.",
+      "tr": "Bu dövme ocağı metal ekipman üretirken çok işime yarayacak.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/slimepersonDescription",
+      "en": "I can bond other slime here.",
+      "tr": "Burada diğer balçıkları bağlayabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Biochemist Centrifuge",
+      "tr": " Biyokimyacı Santrifüjü",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Slimy stuff",
+      "tr": " ^#b9b5b2;Balçıklı işler",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "The Biochemist Microseparator is used to change the bonds between slime.",
+      "tr": "Biyokimyacı Mikroayırıcısı, balçığın bağlarını değiştirmek için kullanılır.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Biochemist Microseparator^reset;",
+      "tr": "^orange;Biyokimyacı Mikroayırıcısı^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/apexDescription",
+      "en": "A replicator. I can create high quality equipment with this.",
+      "tr": "Bir çoğaltıcı. Bununla yüksek kaliteli ekipman üretebilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/avianDescription",
+      "en": "I can turn ores into good quality equipment from here.",
+      "tr": "Burada cevherleri kaliteli ekipmanlara dönüştürebilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/floranDescription",
+      "en": "Floran make ssstrong weapon here.",
+      "tr": "Floran burada güçlü sssilah yapar.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/glitchDescription",
+      "en": "Neutral. I can make equipment and more with this.",
+      "tr": "Nötr. Bununla ekipman ve daha fazlasını üretebilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/humanDescription",
+      "en": "I can create super strong equipment from this replicator.",
+      "tr": "Bu çoğaltıcıyla çok güçlü ekipmanlar üretebilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/hylotlDescription",
+      "en": "This replicator enables me to create high quality equipment from good quality materials.",
+      "tr": "Bu çoğaltıcı, kaliteli malzemelerden yüksek kaliteli ekipman üretmemi sağlıyor.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/novakidDescription",
+      "en": "I can make myself some great equipment using this replicator.",
+      "tr": "Bu çoğaltıcıyla kendime şahane ekipmanlar yapabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/slimepersonDescription",
+      "en": "I can bond other slime here.",
+      "tr": "Burada diğer balçıkları bağlayabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Biochemist Microseparator",
+      "tr": " Biyokimyacı Mikroayırıcısı",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Slimy stuff",
+      "tr": " ^#b9b5b2;Balçıklı işler",
       "section": "Zanaatkârlık makineleri"
     }
   ]
