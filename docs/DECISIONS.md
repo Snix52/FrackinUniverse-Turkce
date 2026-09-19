@@ -195,3 +195,20 @@
 - `build_validate.py` artık pinned 6.5.8 kaynağında aktif düğüme bağlı olmadığı bilinen araştırma stringleri ledger'a yeniden eklenirse build'i durdurur.
 - Bu tur statik/kaynak QA'dır. Oyun içi LQA, font ve panel taşma testleri hâlâ ayrı olarak bekliyor.
 
+## 2026-09-20 - v0.8 Delilik / Metafizik
+
+- `zb/researchTree/madness.config` içinde **31 aktif araştırma düğümü** doğrulandı.
+- Kaynaktaki `strings.research.default` yardım çifti `researchTree.lua` tarafından kullanılmadığı için v0.8 kapsamına alınmadı.
+- Ağaç adı **Metafizik [ Delilik ]** olarak yerelleştirildi.
+- Aktif ağaç kapsamı: **31 düğüm x 2 alan + ağaç adı = 63 alan**.
+- Delilik sisteminin takip edilebilirliği için 17 bağlı assette **40 oyuncu metni** aynı sürüme alındı.
+- v0.8 toplam ekleme: **103 yapılandırılmış alan / 18 hedef asset**.
+- Madness -> **Delilik**, Metaphysics -> **Metafizik**, Psionics -> **Psiyonik**, Psionic Energy -> **Psiyonik Enerji**, Psionic Focus -> **Psiyonik Odak** LOCKED.
+- Brain Extractor -> **Beyin Çıkarıcı**, Psionics Table -> **Psiyonik Tezgâhı**, Psionic Amplifier -> **Psiyonik Yükselteç**, Matter Converter -> **Madde Dönüştürücü**, Autopsy Table -> **Otopsi Masası** LOCKED.
+- Insta-Freud özel ürün/cihaz adı olarak korunur.
+- Astral Projection -> **Astral Projeksiyon**, Dimensional Phasing -> **Boyutsal Faz Geçişi** LOCKED.
+- Psi enerji zinciri **Psi-1 Enerjisi -> Psi-2 Enerjisi -> Psi-3 Enerjisi -> Psi-4 Enerjisi** olarak standardize edildi.
+- Eski çalışma dalındaki geçici **Psionik**, **Astral Yansıtma**, **Psionik Kanallama**, **Ortaya Çıkan Teknoloji** ve **Karanlık Madde Teçhizatı** karşılıkları ana sürüme taşınmadı.
+- Delilik ağacı ve bağlı 18 assetteki **103/103 kaynak değer** pinned FU 6.5.8 commitinden exact doğrulandı.
+- Oyun içi LQA, panel taşması ve Delilik ilerleme zincirinin oyun içi testi hâlâ bekliyor.
+
