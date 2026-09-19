@@ -286,10 +286,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri ve Zanaatkârlık (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri, Zanaatkârlık ve Zırh-Silah (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri ve Zanaatkârlık kapsamı içerir; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Araştırma sisteminin ana bilim, üretim, güç, zanaatkârlık ve zırh-silah ağaçlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
