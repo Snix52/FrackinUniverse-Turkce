@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.5.0
+GELİŞTİRME / DOĞRULAMA | v0.6.0-dev
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  909 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1066 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
 
@@ -37,3 +37,10 @@ v0.5 güncel kaynak kontrolü:
   exact FU commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 
 Oyun içi LQA, font ve panel taşma testi ayrıca yapılmalıdır.
+
+v0.6 çalışma dalı ön QA:
+  fu_craftsmanship: 78 araştırma düğümü / 157 yeni alan
+  toplam yapılandırılmış alan: 1066
+  yeni alan exact-source: 157/157 PASS
+  benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
+  bağlı Zanaatkârlık eşya ve makineleri: DEVAM EDİYOR
