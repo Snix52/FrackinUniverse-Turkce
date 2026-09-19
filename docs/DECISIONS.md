@@ -108,3 +108,13 @@
 - Yeni 220 alan FU 6.5.8 kaynak commit'i `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında **220/220 PASS** doğrulandı.
 - Renk kodu, kontrol kodu, sayı ve yinelenen pointer kontrolleri v0.5 yeni içerikte **PASS**.
 - Oyun içi LQA, panel taşması ve üretim/yakıt zinciri testi henüz yapılmadı.
+
+## 2026-09-20 - v0.6 Zanaatkârlık
+
+- Çalışma `work/v0.6-craftsmanship` dalında başlatıldı; mevcut v0.5 beta paketi değiştirilmedi.
+- `fu_craftsmanship` araştırma ağacındaki 78 araştırma düğümünün başlık ve açıklamaları bütün olarak yerelleştirildi.
+- Ağaç adıyla birlikte ilk v0.6 geçişinde **157 yeni yapılandırılmış oyuncu metni alanı** eklendi.
+- Craftsmanship -> **Zanaatkârlık** LOCKED.
+- Improved / Advanced / Superior / Peerless için mevcut kilitli sıfatlar korunarak Geliştirilmiş / Gelişmiş / Üstün / Eşsiz kullanıldı.
+- Bilim Karakolu, Mucit Tezgâhı, Grafen, Penumbrite, Nocxium, Trianglium ve Durasteel gibi daha önce kilitlenmiş adlar aynen korundu.
+- Ağaç metninde geçen Mutfak Tezgâhı, Koloni İstasyonu, Koloni Çekirdeği, Dikiş Makinesi, Kar Yazıcısı ve Biyokimyacı Tezgâhı gibi doğrudan oyuncu referansları bağlı asset geçişinde kaynak adlarıyla doğrulanacak; bu çalışma tamamlanmadan v0.6 sürümü bitmiş sayılmayacak.
