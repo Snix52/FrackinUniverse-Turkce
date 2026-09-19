@@ -46,3 +46,14 @@
 - Kaynak Mühendislik metninde “Ship Crafting Table” denmesine rağmen gerçek FU nesnesi fu_shipcraftingtable oyuncuya **Ship Component Assembler** adıyla gösterildiği için Türkçede gerçek nesne adı **Gemi Bileşeni Birleştirici** kullanıldı. Bu, oyuncu takip bütünlüğü için bilinçli kaynak-ad uyarlamasıdır.
 - Yeni 191 alan, FU 6.5.8 kaynak commit'i `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında **191/191 PASS** doğrulandı.
 - Oyun içi LQA henüz yapılmadı.
+## 2026-09-20 - Geriye dönük QA düzeltmeleri
+
+- Mevcut 654 oyuncu metni; boş çeviri, yinelenen pointer, placeholder/renk/escape bütünlüğü, aynı kaynak string tutarlılığı, kilitli terminoloji ve İngilizce parantez kalıntıları açısından yeniden tarandı.
+- Jeoloji metninde kalan `(Inventor’s Table)` İngilizce parantez açıklaması kaldırıldı.
+- Tarım ağacındaki `Extraction Lab` kullanımı **Çıkarma Laboratuvarı** ile, `Advanced Beekeeping` başlığı **Gelişmiş Arıcılık** ile yeniden eşleştirildi.
+- Jeoloji ve Mühendislik arasında farklı çevrilen Terraforming ailesi tekleştirildi: **Gezegen Biçimlendirme**, **Mikro Biçimlendirici**, **Gezegen Biçimlendirici** LOCKED.
+- Başlangıç telsiz mesajındaki Starbound sistem adı `Tech Upgrades`, kilitli **Tech** terminolojisine uygun olarak **Tech Yükseltmeleri** yapıldı.
+- Mühendislikte Mech Parçası Üretim Tezgâhına gönderme yapan belirsiz “bir tane araştırabilir” ifadesi, araştırılan nesnenin tezgâh olduğunu açıkça belirtecek şekilde düzeltildi.
+- Gelişmiş Xeno Laboratuvarının açıklaması, aynı nesnenin kilitli görünen adıyla eşleştirildi; “Quantum Xeno Lab” ifadesi nesne adı gibi kullanılmayıp kuantum teknolojisi bilgisi açıklamada korundu.
+- Teknik ID, JSON path, placeholder, biçimlendirme kodu veya kaynak pointer değiştirilmedi. Çevrilen alan sayısı **654** olarak kaldı.
+
