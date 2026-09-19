@@ -11,6 +11,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Engineering | Araştırma ağacı | Sistem | Mühendislik | Engineering | LOCKED | |
 | Agriculture | Araştırma ağacı | Sistem | Tarım | Agriculture | LOCKED | |
 | Chemistry | Araştırma ağacı | Sistem | Kimya | Chemistry | LOCKED | |
+| Craftsmanship | Araştırma ağacı | Sistem | Zanaatkârlık | Craftsmanship | LOCKED | v0.6 ana araştırma ağacı adı |
 | Machining Table | Makine | Nesne | İmalat Tezgâhı | Machining Table | LOCKED | |
 | Auto-Assembler | Makine | Nesne | Otomatik Birleştirici | Auto-Assembler | LOCKED | |
 | Matter Assembler | Makine | Nesne | Madde Birleştirici | Matter Assembler | LOCKED | |
