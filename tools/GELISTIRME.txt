@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.7.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.8.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1276 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1379 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -66,4 +66,18 @@ v0.7 beta QA:
   vanilla Solunum EPP asset doğrulaması: 2/2 PASS
   patch eşleşmesi: 115 test + 115 replace PASS
   benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
+  oyun içi LQA: BEKLİYOR
+
+
+v0.8 beta QA:
+  Delilik/Metafizik: 31 gerçek araştırma düğümü
+  aktif ağaç alanı: 63
+  bağlı temel eşya/makine/UI: 40 alan
+  v0.8 toplam ekleme: 103 aktif alan / 18 hedef asset
+  toplam yapılandırılmış alan: 1379
+  toplam yerelleştirilmiş birim: 1394 (1379 yapılandırılmış + 15 Lua)
+  pinned FU exact-source: 103/103 PASS
+  aktif düğüm kapsamı: 31/31 PASS
+  patch eşleşmesi: 103 test + 103 replace PASS
+  runtime-unused default yardım çifti: dağıtımdan çıkarıldı
   oyun içi LQA: BEKLİYOR
