@@ -100,7 +100,7 @@ def allowed(a,p):
         return bool(re.fullmatch(r'/strings/(info/[01]|currencies/(money|essence|fuscienceresource|fumadnessresource|fugeneticmaterial))',p))
     if a=='zb/researchTree/researchTree.config':
         return p in ('/gui/researchButton/caption','/gui/infoList/children/unlocksLabel/value','/gui/title/value','/gui/consumptionText/value')
-    if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config'):
+    if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config'):
         tree=PurePosixPath(a).stem
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
     if a.startswith('quests/fu_questlines/tutorial/') and a.endswith('.questtemplate'):
@@ -175,6 +175,34 @@ def allowed(a,p):
         if a=='objects/crafting/wiringstation/wiringstation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
+    layered_craftsmanship_assets={
+        'objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object',
+        'objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object',
+        'objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object',
+        'objects/crafting/woodencookingtable/woodencookingtable.object'
+    }
+    if a=='objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[01]/itemSpawnParameters/shortdescription',p))
+    if a=='objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[012]/itemSpawnParameters/shortdescription',p))
+    if a=='objects/crafting/woodencookingtable/woodencookingtable.object':
+        return bool(re.fullmatch(r'/upgradeStages/[01]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
+    if a=='objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[01]/itemSpawnParameters/shortdescription',p)) or bool(re.fullmatch(r'/upgradeStages/2/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
+    if a=='objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object':
+        return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
+    craftsmanship_assets={
+        'objects/colonysystem2/colonystation/colonystation.object',
+        'objects/colonysystem2/colonycore/colonycore.object',
+        'objects/colonysystem2/colonydeedmk2/colonydeedmk2.object',
+        'objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object',
+        'objects/peglaci/snowpersongenerator/snowpersongenerator.object',
+        'objects/crafting/lavalampstation/lavalampstation.object'
+    }
+    if a in craftsmanship_assets:
+        if a=='objects/colonysystem2/colonystation/colonystation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
+            return True
+        return bool(re.fullmatch(r'/(description|shortdescription|[A-Za-z]+Description)',p))
     return False
 
 def main():
@@ -198,7 +226,7 @@ def main():
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
             colorfix+=1
         if Counter(CONTROL.findall(r['en']))!=Counter(CONTROL.findall(r['tr'])):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
-        if nums(r['en'])!=nums(r['tr']):raise ValueError('Sayı uyuşmazlığı: '+a+p)
+        if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
         groups[a].append(r)
 
     patches={}
@@ -212,8 +240,14 @@ def main():
             if read_at(result,r['pointer'])!=r['tr']:raise AssertionError(a+r['pointer'])
         if args.source_dir:
             source=args.source_dir/a
-            if not source.is_file():raise FileNotFoundError(source)
-            simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            if source.is_file():
+                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            elif all(r.get('qa',{}).get('layered_source') for r in rs):
+                # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
+                # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
+                pass
+            else:
+                raise FileNotFoundError(source)
         patches[a]=patch
 
     # Lua gibi JSON Patch uygulanamayan görünür metinler için kaynak-kilitli ham override.
@@ -246,10 +280,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik ve Güç Sistemleri (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri ve Zanaatkârlık (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik ve Güç Sistemleri kapsamı içerir; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Başlangıç, Jeoloji, Tarım, Kimya, Mühendislik, Güç Sistemleri ve Zanaatkârlık kapsamı içerir; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

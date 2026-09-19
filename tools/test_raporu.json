@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.5.0-beta",
+  "translation_version": "0.6.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 909,
+  "translated_display_fields": 1195,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 924,
-  "patched_assets": 97,
+  "total_localized_display_units": 1210,
+  "patched_assets": 109,
   "raw_override_assets": 1,
-  "target_assets_total": 98,
+  "target_assets_total": 110,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 104,
@@ -23,17 +23,19 @@
     "Mühendislik": 139,
     "Mühendislik makineleri ve kaynakları": 61,
     "Güç Sistemleri": 81,
-    "Güç Sistemleri makineleri": 139
+    "Güç Sistemleri makineleri": 139,
+    "Zanaatkârlık": 155,
+    "Zanaatkârlık makineleri": 131
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (909/909)",
+    "unique_paths": "PASS (1195/1195)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (909/909)",
+    "fixture_application": "PASS (v0.6 catalog/patch pairing 286/286; previous 909-field baseline retained)",
     "source_mismatch_rejection_cases": 909,
     "source_mismatch_rejection": "PASS",
     "unicode_only_policy": "PASS",
@@ -48,7 +50,15 @@
     "v05_new_source_pointer_validation": "PASS (220/220 across 33 source assets)",
     "v05_build_allowlist": "PASS (220/220 new paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS"
+    "build_allowlist_current_scope": "PASS",
+    "craftsmanship_source_pointer_validation": "PASS (155/155 visible tree/default fields; 2 unused workbenchatechy fields intentionally excluded)",
+    "craftsmanship_patch_pairing": "PASS (157 test + 157 replace)",
+    "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
+    "v06_new_source_pointer_validation": "PASS (286/286)",
+    "v06_build_allowlist": "PASS (286/286 new paths covered)",
+    "craftsmanship_layered_source_validation": "PASS (33/33)",
+    "craftsmanship_external_base_name_validation": "PASS (10/10)",
+    "v06_patch_pairing": "PASS (286 test + 286 replace)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -60,7 +70,8 @@
     "fu_agriculture farming3 prose says Growing Tray; Turkish uses Hidroponik Tepsi because the research node actually unlocks isn_hydroponicstray (Hydro Tray).",
     "fu_power tree source title is Electronics while FU cross-reference names it Power Systems; Turkish uses Güç Sistemleri for one trackable tree name.",
     "fu_power Steam Power prose says hydraulic piston; Turkish uses Hidrolik Dinamo because the research actually unlocks hydraulicdynamo.",
-    "fu_power Combustion prose says Combustion Engine; Turkish uses Yanmalı Jeneratör because the actual unlocked object's shortdescription is Combustion Generator."
+    "fu_power Combustion prose says Combustion Engine; Turkish uses Yanmalı Jeneratör because the actual unlocked object's shortdescription is Combustion Generator.",
+    "fu_craftsmanship colony prose says Mk2 Tenant Deeds; actual inventory item is Colony Deed Mark II, so Turkish uses Koloni Tapusu Mark II. Same canonical name is used in Colony Core description; number-token mismatch is explicitly QA-approved for these two fields."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
@@ -80,6 +91,13 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "PASS: 97 structured patch assets / 909 ledger source values validated against FU 6.5.8 source commit 329e714b3fe87571055c8ad7aa38135d199d3317; 1 raw Lua override / 15 visible strings protected by exact source-fragment validation.",
-  "polish_pass": "PASS: v0.5 Güç Sistemleri araştırma metinleri ve bağlı temel makine metinleri doğal Türkçe, gerçek envanter adları, bilim terminolojisi ve oyuncu takip bütünlüğü açısından gözden geçirildi. Oyun içi LQA bekliyor."
+  "full_source_validation": "v0.5 baseline 909 fields retained. v0.6 adds 286 validated fields: 243 pinned FU-owned, 33 pinned FU layered-patch, 10 vanilla short-name fields independently verified. Total ledger: 1195 structured + 15 source-guarded Lua strings.",
+  "polish_pass": "PASS for v0.6 static scope: Zanaatkârlık visible tree/fallback text and directly referenced core crafting stations. In-game LQA, font and layout tests remain pending.",
+  "v06_dev_scope": [
+    "Localized 76 real research nodes plus the visible default/fallback help pair and tree name: 155 fields.",
+    "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
+    "Localized 131 fields across directly referenced colony, kitchen, sewing, biochemistry and core crafting stations.",
+    "Aligned research references with real inventory names such as Mucit Tezgâhı, Mutfak Tezgâhı, Dikiş Makinesi, Biyokimyacı Tezgâhı and Koloni Tapusu Mark II.",
+    "Validated all 286 v0.6 fields through pinned FU source, pinned FU patch layers or documented vanilla test values."
+  ]
 }

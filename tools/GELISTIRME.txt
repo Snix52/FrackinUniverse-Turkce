@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.5.0
+GELİŞTİRME / DOĞRULAMA | v0.6.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  909 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1195 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
 
@@ -37,3 +37,18 @@ v0.5 güncel kaynak kontrolü:
   exact FU commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 
 Oyun içi LQA, font ve panel taşma testi ayrıca yapılmalıdır.
+
+v0.6 beta QA:
+  fu_craftsmanship: 76 gerçek araştırma düğümü
+  ağaç + default/fallback görünür alan: 155
+  bağlı makine/tezgâh: 131 alan
+  v0.6 toplam ekleme: 286 alan / 12 hedef asset
+  toplam yapılandırılmış alan: 1195
+  toplam görünür birim: 1210 (1195 yapılandırılmış + 15 Lua)
+  FU-owned exact-source: 243/243 PASS
+  FU layered patch exact-source: 33/33 PASS
+  vanilla kısa ad harici doğrulama: 10/10 PASS
+  patch eşleşmesi: 286 test + 286 replace PASS
+  benzersiz pointer / boş çeviri / renk-kontrol kodu: PASS
+  workbenchatechy ölü stringi: dağıtımdan çıkarıldı
+  oyun içi LQA: BEKLİYOR
