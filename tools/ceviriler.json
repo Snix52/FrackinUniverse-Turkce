@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.3.0-beta",
-  "note": "v0.3 Kimya: Kimya araştırma ağacı ve doğrudan bağlı makine/kaynak adları eklendi.",
+  "translation_version": "0.4.0-beta",
+  "note": "v0.4 Mühendislik: Mühendislik araştırma ağacı ve doğrudan bağlı temel makine/kaynaklar eklendi.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -3257,6 +3257,1343 @@
       "en": "Block Extractor",
       "tr": "Blok Çıkarıcı",
       "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/trees/fu_engineering",
+      "en": "Engineering",
+      "tr": "Mühendislik",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/default/0",
+      "en": "Instructions",
+      "tr": "Kullanım Rehberi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/default/1",
+      "en": "Select a research by clicking one of the icons on the grid.\nYou can navigate the grid by dragging with the left mouse button.\n\n- The left most button at the upper part of the screen opens a list of research trees to pick from.\n\n- The second button opens a list of non-hidden research options. Click a research on the displayed to center the view on it. Click again to hide the list.\n\n- The third button will center the view on the middle of the tree, or the currently selected research.\n\n- The last button toggles ^orange;low quality mode^reset;. This makes the GUI jump to a position instead of panning to it, or the center button. In addition, dragging/navigating on the the main screen will update only after you release the mouse button. It is best to use the search list with this mode enabled.",
+      "tr": "Bir araştırma seçmek için ızgaradaki simgelerden birine tıkla.\nSol fare tuşunu basılı tutup sürükleyerek ağaçta gezinebilirsin.\n\n- Ekranın üst kısmındaki en soldaki düğme, seçebileceğin araştırma ağaçlarını listeler.\n\n- İkinci düğme, gizli olmayan araştırmaları listeler. Listedeki bir araştırmaya tıklarsan görünüm ona odaklanır. Listeyi kapatmak için tekrar tıkla.\n\n- Üçüncü düğme, görünümü ağacın ortasına veya seçili araştırmaya odaklar.\n\n- Son düğme ^orange;düşük kalite modunu^reset; açıp kapatır. Bu modda arayüz hedefe kaymak yerine doğrudan geçer. Ana ekranda sürükleme sırasında görünüm, fare tuşunu bıraktıktan sonra güncellenir. Bu mod açıkken arama listesini kullanmak daha pratiktir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/survival_1/0",
+      "en": "Basic Training",
+      "tr": "Temel Eğitim",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/survival_1/1",
+      "en": "^orange;Tier 1^reset;\n\nYour training, thanks to four years in the Protectorate Academy, provides you with basic survival skills to keep you alive for extended periods in the event of a crash.",
+      "tr": "^orange;Kademe 1^reset;\n\nProtectorate Akademisi’nde aldığın dört yıllık eğitim, bir kaza sonrasında uzun süre hayatta kalmanı sağlayacak temel becerileri kazandırdı.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/engineering/0",
+      "en": "Machining",
+      "tr": "İmalat",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/engineering/1",
+      "en": "^orange;Tier 1^reset;\n\nThe ^orange;Machining Table^reset; is the place to produce mechanical components, and will serve as the base workstation for many of your scientific forays. You've learned to create one yourself along with variety of basic items used in engineering.\n\nTo craft a ^orange;Machining Table^reset; you'll need to use your basic ^green;[C]rafting^reset; menu.",
+      "tr": "^orange;Kademe 1^reset;\n\n^orange;İmalat Tezgâhı^reset; mekanik bileşenler üretmenin ana merkezidir ve bilimsel çalışmalarının çoğunda temel çalışma tezgâhı olarak kullanılır. Artık bu tezgâhı ve mühendislikte kullanılan çeşitli temel eşyaları kendin üretebilirsin.\n\nBir ^orange;İmalat Tezgâhı^reset; üretmek için temel ^green;[C] Üretim^reset; menünü kullanmalısın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/goldcircuitry/0",
+      "en": "Gold Circuits",
+      "tr": "Altın Devreler",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/goldcircuitry/1",
+      "en": "^orange;Tier 2^reset;\n\nGold has many useful applications in computing. You can now put it to use in the creation of useful processors and RAM sticks. Make sure to upgrade your Machining Table into an ^orange;Auto Assembler^reset; first!",
+      "tr": "^orange;Kademe 2^reset;\n\nAltının bilgisayar teknolojisinde birçok yararlı kullanımı vardır. Artık onu işlemci ve RAM modülü üretiminde kullanabilirsin. Önce İmalat Tezgâhını ^orange;Otomatik Birleştiriciye^reset; yükseltmeyi unutma!",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/shields/0",
+      "en": "Shields",
+      "tr": "Kalkanlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/shields/1",
+      "en": "^orange;Tier 3^reset;\n\nWith a solid understanding of computer technology and physics you can now create Force Fields that ^green;protect your base from harm^reset;, ^green;control gravity^reset; and ^green;provide breathable air^reset;. Quite useful!\n\nTo protect a location, place two field markers at the opposite corners of a square around the area, and wire them to the field generator's output connector. Field extenders can be used as relays, to connect the field markers beyond the normal wiring range.",
+      "tr": "^orange;Kademe 3^reset;\n\nBilgisayar teknolojisi ve fizik konusundaki sağlam bilgin sayesinde artık ^green;üssünü hasardan koruyan^reset;, ^green;yerçekimini kontrol eden^reset; ve ^green;solunabilir hava sağlayan^reset; Kuvvet Alanları oluşturabilirsin. Oldukça kullanışlı!\n\nBir alanı korumak için bölgenin çevresindeki karenin karşılıklı köşelerine iki alan işaretleyicisi yerleştir ve bunları alan jeneratörünün çıkış bağlantısına kabloyla bağla. Alan genişleticiler röle görevi görerek işaretleyicileri normal kablo menzilinin ötesine bağlamanı sağlar.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/graphenecircuitry/0",
+      "en": "Graphene Circuits",
+      "tr": "Grafen Devreleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/graphenecircuitry/1",
+      "en": "^orange;Tier 2^reset;\n\nThe wonderful material known as Graphene conducts electricity far better than its carbon origins might indicate. With it, you can create very durable, heat resistant circuits that will be useful in heavy machinery.",
+      "tr": "^orange;Kademe 2^reset;\n\nGrafen, karbon kökeninin düşündüreceğinden çok daha iyi elektrik iletir. Onunla ağır makinelerde kullanılabilecek son derece dayanıklı ve ısıya dirençli devreler üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/modulecrafting/0",
+      "en": "Upgrade Crafting",
+      "tr": "Yükseltme Üretimi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/modulecrafting/1",
+      "en": "^orange;Tier 3^reset;\n\nUsing your knowledge of microengineering, you can now fabricate your own upgrade modules, manipulator modules and tech cards at your Auto Assembler.",
+      "tr": "^orange;Kademe 3^reset;\n\nMikromühendislik bilgini kullanarak artık Otomatik Birleştiricide kendi yükseltme modüllerini, manipülatör modüllerini ve Tech kartlarını üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/protocitecircuitry/0",
+      "en": "Protocite Circuits",
+      "tr": "Protocite Devreleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/protocitecircuitry/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've put the insane energy-transferring properties of Protocite to work in highly complex processors which work with quantum bits - no longer just 1 or 0, but sometimes both! Quantum Procesors have many uses in higher-end electronics.",
+      "tr": "^orange;Kademe 3^reset;\n\nProtocite'ın olağanüstü enerji aktarım özelliklerini, kuantum bitleriyle çalışan son derece karmaşık işlemcilerde kullanmayı başardın. Artık yalnızca 1 veya 0 değil, bazen ikisi birden! Kuantum İşlemcilerin ileri seviye elektroniklerde birçok kullanım alanı vardır.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/focusingarray/0",
+      "en": "Focusing Arrays",
+      "tr": "Odaklama Dizileri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/focusingarray/1",
+      "en": "^orange;Tier 4^reset;\n\nBy combining quantum computing with specialized crystals, you can create energy-focusing devices that are excellent in high-tech machines as well as powerful energy weapons.",
+      "tr": "^orange;Kademe 4^reset;\n\nKuantum bilişimi özel kristallerle birleştirerek enerji akışını odaklayan cihazlar üretebilirsin. Bunlar ileri teknoloji makinelerde ve güçlü enerji silahlarında son derece kullanışlıdır.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/microformer/0",
+      "en": "Terraforming",
+      "tr": "Gezegen Biçimlendirme",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/microformer/1",
+      "en": "^orange;Tier 5^reset;\n\nThrough the combination of Ancient Essence and robust particle focusers, you can now alter a small part of a planet to better suit your desires using microformation devices.",
+      "tr": "^orange;Kademe 5^reset;\n\nAntik Özü sağlam parçacık odaklayıcılarla birleştirerek mikro biçimlendirme cihazlarıyla bir gezegenin küçük bir bölümünü istediğin koşullara uyarlayabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/terraformer/0",
+      "en": "Terraforming II",
+      "tr": "Gezegen Biçimlendirme II",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/terraformer/1",
+      "en": "^orange;Tier 5^reset;\n\nYou can now shape entire planets to your liking, altering their environment to new types. Note that this will not work for Ocean worlds, which is why no such terraformers exist.",
+      "tr": "^orange;Kademe 5^reset;\n\nArtık tüm gezegenleri istediğin biçime sokabilir ve çevrelerini farklı türlere dönüştürebilirsin. Bunun Okyanus dünyalarında çalışmadığını unutma; bu yüzden onlar için biçimlendirici bulunmaz.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/terraformer2/0",
+      "en": "Terraforming III",
+      "tr": "Gezegen Biçimlendirme III",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/terraformer2/1",
+      "en": "^orange;Tier 6^reset;\n\nThanks to your understanding of terraforming devices you can now create even more interesting forms of worlds.",
+      "tr": "^orange;Kademe 6^reset;\n\nGezegen biçimlendirme cihazları konusundaki bilgin sayesinde artık çok daha ilginç dünya türleri oluşturabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/morphitecircuitry/0",
+      "en": "Morphite Circuits",
+      "tr": "Morphite Devreleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/morphitecircuitry/1",
+      "en": "^orange;Tier 5^reset;\n\nWith access to Morphite, even AI technology is within your reach, allowing the creation of supremely fast computing components that are capable of self-improvement and basic decision-making. It's no surprise that many governments ban this technology outright for fear of what amazing things it can do.",
+      "tr": "^orange;Kademe 5^reset;\n\nMorphite sayesinde yapay zekâ teknolojisi bile erişebileceğin bir alan hâline geldi. Kendini geliştirebilen ve temel kararlar verebilen son derece hızlı bilgi işlem bileşenleri üretebilirsin. Pek çok hükûmetin, yapabileceklerinden korktuğu için bu teknolojiyi tamamen yasaklaması şaşırtıcı değil.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/powercores1/0",
+      "en": "Energy Cores",
+      "tr": "Enerji Çekirdekleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/powercores1/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a trio of powerful energy cores, each with their own laundry list of scientific and military applications. Molten Cores are excellent when dealing with intense heat such as in blast furnaces or lava-spewing flamethrowers. Power Cores shine in kinetic applications, and are useful in machines with many moving parts and high-end ballistic weaponry. Nuclear Cores are useful for channeling radiation, such as in a fission reactor, or just plain making tons of energy for high-demand inventions.",
+      "tr": "^orange;Kademe 3^reset;\n\nHer birinin uzun bir bilimsel ve askerî kullanım listesi olan üç güçlü enerji çekirdeği tasarladın. Erimiş Çekirdekler yüksek fırınlar veya lav püskürten alev silahları gibi aşırı ısıyla çalışan sistemlerde mükemmeldir. Güç Çekirdekleri kinetik uygulamalarda öne çıkar; çok sayıda hareketli parçaya sahip makinelerde ve ileri seviye balistik silahlarda kullanışlıdır. Nükleer Çekirdekler ise fisyon reaktörlerinde radyasyonu yönlendirmek veya yüksek enerji isteyen icatlar için devasa miktarda enerji üretmekte kullanılır.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/powercores2/0",
+      "en": "Improved Cores",
+      "tr": "Geliştirilmiş Çekirdekler",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/powercores2/1",
+      "en": "^orange;Tier 4^reset;\n\nYour skill with compact power sources has allowed you to make two more useful cores, expanding your engineering capability greatly. Teleporter Cores are perfect for transportation and constructing large, automated item networks, while Particle Cores are unmatched at channeling atomic and subatomic particles - the photons in a powerful laser, for example.",
+      "tr": "^orange;Kademe 4^reset;\n\nKompakt güç kaynaklarındaki ustalığın iki yeni kullanışlı çekirdek üretmeni sağladı ve mühendislik olanaklarını ciddi biçimde genişletti. Işınlayıcı Çekirdekleri ulaşım ve büyük otomatik eşya ağları kurmak için idealdir. Parçacık Çekirdekleri ise güçlü bir lazerdeki fotonlar gibi atomik ve atomaltı parçacıkları yönlendirmede rakipsizdir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/teleporters/0",
+      "en": "DIY Teleportation",
+      "tr": "Kişisel Işınlayıcılar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/teleporters/1",
+      "en": "^orange;Tier 4^reset;\n\nNo longer do you need to pay a professional - you ^green;are^reset; that professional! You can make a variety of personal teleporters on your own.",
+      "tr": "^orange;Kademe 4^reset;\n\nArtık bir uzmana para vermene gerek yok; o uzman ^green;sensin^reset;! Kendi başına çeşitli kişisel ışınlayıcılar üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers1/0",
+      "en": "Research Computers",
+      "tr": "Araştırma Bilgisayarları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers1/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've put your knowledge of computer parts to use to produce handy laptops that will automatically research items for you.",
+      "tr": "^orange;Kademe 2^reset;\n\nBilgisayar bileşenleri konusundaki bilgini, eşyaları senin için otomatik olarak araştıran kullanışlı dizüstü bilgisayarlar üretmekte kullandın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers2/0",
+      "en": "Improved Researchers",
+      "tr": "Geliştirilmiş Araştırma Bilgisayarları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers2/1",
+      "en": "^orange;Tier 3^reset;\n\nAccess to quantum computing means you can make stronger computers that research more quickly and store more data.",
+      "tr": "^orange;Kademe 3^reset;\n\nKuantum bilişime erişimin sayesinde daha hızlı araştırma yapan ve daha fazla veri depolayan güçlü bilgisayarlar üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers3/0",
+      "en": "Neural Networks",
+      "tr": "Sinir Ağları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers3/1",
+      "en": "^orange;Tier 4^reset;\n\nWith AI technology, you've designed a data tower which will generate huge amounts of research for your benefit, vastly outstripping all computers that came before it.",
+      "tr": "^orange;Kademe 4^reset;\n\nYapay zekâ teknolojisiyle, önceki tüm bilgisayarları açık ara geride bırakarak senin için devasa miktarda Araştırma üreten bir veri kulesi tasarladın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers4/0",
+      "en": "Superior Networks",
+      "tr": "Üstün Ağlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/computers4/1",
+      "en": "^orange;Tier 5^reset;\n\nYour AI is super-advanced now, and generate huge amounts of research for your benefit, allowing you to kick off your shoes and finally let something do the work for you that you can rely on.",
+      "tr": "^orange;Kademe 5^reset;\n\nYapay zekân artık son derece gelişmiş ve senin için devasa miktarda Araştırma üretebiliyor. Böylece ayaklarını uzatıp işi sonunda güvenebileceğin bir sisteme bırakabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/extraction1/0",
+      "en": "Extraction Basics",
+      "tr": "Kaynak Çıkarma Temelleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/extraction1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned the basics of resource extraction and can now build rudimentary devices to extract, research and centrifuge materials. \n\n^cyan;Extractor^reset;\n\nPut almost anything in and it will convert it into something else. Most items are processed in groups of 50. \n\n^cyan;Centrifuge^reset;\n\nPut any liquid inside and the centrifuge will start working - though the wooden one isn't quite durable enough to handle lava and other volatile stuff. Researched in the ^orange;Power Systems^reset; tree. \n\n^cyan;Research Computer^reset;\n\nPut an item with a value greater than 0 in one and it will automatically convert it into an amount of research equal to ^green;5% of the item's pixel value^reset;. Faster computers can be built by pursuing ^orange;Gold Circuits^reset; research.",
+      "tr": "^orange;Kademe 1^reset;\n\nKaynak çıkarmanın temellerini öğrendin ve artık malzemeleri çıkarmak, araştırmak ve santrifüjlemek için basit cihazlar üretebilirsin.\n\n^cyan;Çıkarıcı^reset;\n\nİçine neredeyse her şeyi koyabilirsin; onu başka bir şeye dönüştürür. Çoğu eşya 50'li gruplar hâlinde işlenir.\n\n^cyan;Santrifüj^reset;\n\nİçine herhangi bir sıvı koyduğunda çalışmaya başlar. Ancak ahşap olanı lav ve diğer uçucu maddelere dayanacak kadar sağlam değildir. ^orange;Güç Sistemleri^reset; ağacından araştırılır.\n\n^cyan;Araştırma Bilgisayarı^reset;\n\nDeğeri 0'dan büyük bir eşya koyduğunda, onu eşyanın piksel değerinin ^green;%5'i^reset; kadar Araştırmaya otomatik olarak dönüştürür. Daha hızlı bilgisayarları ^orange;Altın Devreler^reset; araştırmasında ilerleyerek üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/extraction2/0",
+      "en": "Extraction Labs",
+      "tr": "Çıkarma Laboratuvarları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/extraction2/1",
+      "en": "^orange;Tier 2^reset;\n\nThe extraction lab is a big step up over the hand mill, working much more quickly. You'll want many extraction labs to process all sorts of resources.",
+      "tr": "^orange;Kademe 2^reset;\n\nÇıkarma Laboratuvarı, El Değirmenine göre büyük bir sıçramadır ve çok daha hızlı çalışır. Her türden kaynağı işlemek için birden fazla Çıkarma Laboratuvarı kurmak isteyeceksin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/extraction3/0",
+      "en": "Advanced Extraction",
+      "tr": "Gelişmiş Çıkarma",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/extraction3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've greatly improved upon your extraction lab design, producing a lab that is faster than ever at processing resources and even gives some bonus outputs.",
+      "tr": "^orange;Kademe 3^reset;\n\nÇıkarma Laboratuvarı tasarımını ciddi biçimde geliştirdin. Yeni sürüm kaynakları her zamankinden hızlı işler ve hatta ek çıktılar sağlayabilir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/robotics1/0",
+      "en": "Basic Robotics",
+      "tr": "Temel Robotik",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/robotics1/1",
+      "en": "^orange;Tier 2^reset;\n\nWith your engineering knowledge, you have designed a few basic depolyable robot minions to help you out.",
+      "tr": "^orange;Kademe 2^reset;\n\nMühendislik bilginle sana yardımcı olacak birkaç temel konuşlandırılabilir robot yardımcısı tasarladın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/robotics2/0",
+      "en": "Stronger Robots",
+      "tr": "Güçlendirilmiş Robotlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/robotics2/1",
+      "en": "^orange;Tier 3^reset;\n\nYour robotic knowledge is growing, and it shows in your handy new designs. You now have access to stronger robots.",
+      "tr": "^orange;Kademe 3^reset;\n\nRobotik bilgin gelişiyor ve yeni tasarımlarında bunun etkisi açıkça görülüyor. Artık daha güçlü robotlara erişebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/robotics3/0",
+      "en": "Murderbots",
+      "tr": "Katil Robotlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/robotics3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou're a master at making combat drones. Your latest creations are deadlier than ever and will protect you quite nicely.",
+      "tr": "^orange;Kademe 4^reset;\n\nSavaş dronları üretmede ustalaştın. Son tasarımların her zamankinden daha ölümcül ve seni gayet iyi koruyacak.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/tinkering1/0",
+      "en": "Tinkering",
+      "tr": "İnce İşçilik",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/tinkering1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou're learning that engineering isn't just about making new things, but improving on the ones you already made. To this end, you've learned to create a ^orange;Tinkering Table^reset; which will allow you to make EPP modules, mining gear, special weapon upgrades, and useful tools such as a Hookshot or Mining Laser.",
+      "tr": "^orange;Kademe 1^reset;\n\nMühendisliğin yalnızca yeni şeyler üretmekten değil, elindekileri geliştirmekten de ibaret olduğunu öğreniyorsun. Bu amaçla EPP modülleri, madencilik ekipmanları, özel silah yükseltmeleri ve Kanca Atıcı ya da Madencilik Lazeri gibi kullanışlı araçlar üretmeni sağlayan bir ^orange;İnce İşçilik Tezgâhı^reset; yapmayı öğrendin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmbasic/0",
+      "en": "Basic EPP Modules",
+      "tr": "Temel EPP Modülleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmbasic/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've developed a suite of simple EPP modules which can be installed to gain useful benefits in addition to the effects your EPP already provides.",
+      "tr": "^orange;Kademe 2^reset;\n\nEPP'nin zaten sağladığı etkilere ek yararlar kazandırmak için takılabilen bir dizi basit EPP modülü geliştirdin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmadv/0",
+      "en": "Improved Modules",
+      "tr": "Geliştirilmiş Modüller",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmadv/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've improved upon your EPP module design, developing upgrades for many of your modules and inventing a few new ones, too.",
+      "tr": "^orange;Kademe 3^reset;\n\nEPP modülü tasarımını geliştirdin; birçok modülün daha güçlü sürümlerini ve birkaç tamamen yeni modülü tasarladın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmres1/0",
+      "en": "Defensive Modules",
+      "tr": "Savunma Modülleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmres1/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a lot of new EPP modules which will protect you from heat, radiation, cold and other hazards. Surviving hostile environments has never been so easy.",
+      "tr": "^orange;Kademe 3^reset;\n\nSeni sıcaklık, radyasyon, soğuk ve diğer tehlikelerden koruyacak çok sayıda yeni EPP modülü tasarladın. Düşmanca ortamlarda hayatta kalmak hiç bu kadar kolay olmamıştı.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmres2/0",
+      "en": "Advanced Protection",
+      "tr": "Gelişmiş Koruma",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmres2/1",
+      "en": "^orange;Tier 4^reset;\n\nYour defensive modules have gotten even better, allowing you to resist more exotic elements like Cosmic and Shadow and completely protect from hot, cold or radioactive planets.",
+      "tr": "^orange;Kademe 4^reset;\n\nSavunma modüllerin daha da gelişti. Artık Kozmik ve Gölge gibi sıra dışı etkilere direnebilir; sıcak, soğuk veya radyoaktif gezegenlere karşı tam koruma sağlayabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmbest/0",
+      "en": "Module Mastery",
+      "tr": "Modül Ustalığı",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/eppmbest/1",
+      "en": "^orange;Tier 5^reset;\n\nWith mastery of EPP modules comes several new amazingly useful creations that will provide incredible benefits. In addition to improving your already considerably impressive designs, you can even ward off Erchius Ghosts, insanity, sheer darkness or the need to eat!",
+      "tr": "^orange;Kademe 5^reset;\n\nEPP modüllerindeki ustalığın son derece yararlı yeni tasarımların önünü açtı. Zaten etkileyici olan modüllerini daha da geliştirmenin yanında Erchius Hayaletlerinden, delilikten, mutlak karanlıktan ve hatta yemek yeme ihtiyacından bile korunabilirsin!",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/musicplayers/0",
+      "en": "Music",
+      "tr": "Müzik",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/musicplayers/1",
+      "en": "^orange;Tier 1^reset;\n\nYou can now create a variety of music boxes at your Tinkering Table. These can play any music from Starbound, Frackin' Universe or the add-on Frackin' Music, if you have it installed.",
+      "tr": "^orange;Kademe 1^reset;\n\nArtık İnce İşçilik Tezgâhında çeşitli müzik kutuları üretebilirsin. Bunlar Starbound, Frackin' Universe veya kuruluysa Frackin' Music eklentisindeki tüm müzikleri çalabilir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mining1/0",
+      "en": "Improved Mining",
+      "tr": "Geliştirilmiş Madencilik",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mining1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've gained the ability to make a variety of more useful mining tools. Of particular note is the Mining Laser, which can be upgraded with Manipulator Modules and uses your energy instead of durability. With enough upgrades, they get quite fast, and are a worthy investment.",
+      "tr": "^orange;Kademe 1^reset;\n\nDaha kullanışlı çeşitli madencilik araçları üretmeyi öğrendin. Özellikle Madencilik Lazeri dikkat çekicidir: Manipülatör Modülleriyle yükseltilebilir ve dayanıklılık yerine enerjini kullanır. Yeterince yükseltildiğinde oldukça hızlanır ve yatırımına değer.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mining2/0",
+      "en": "Power Mining",
+      "tr": "Hızlı Madencilik",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mining2/1",
+      "en": "^orange;Tier 3^reset;\n\nThey may not last forever, but they sure do mine fast. You gain access to a few more consumable mining tools.",
+      "tr": "^orange;Kademe 3^reset;\n\nSonsuza kadar dayanmayabilirler ama gerçekten çok hızlı kazıyorlar. Birkaç yeni tüketilebilir madencilik aracına erişim kazandın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/gadgets1/0",
+      "en": "Gadgetry",
+      "tr": "Aygıtlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/gadgets1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've developed a number of useful tools. Their functionality can be improved by upgrading them with manipulator modules.",
+      "tr": "^orange;Kademe 1^reset;\n\nBir dizi kullanışlı araç geliştirdin. İşlevlerini manipülatör modülleriyle yükselterek geliştirebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/gadgets2/0",
+      "en": "Advanced Gadgets",
+      "tr": "Gelişmiş Aygıtlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/gadgets2/1",
+      "en": "^orange;Tier 3^reset;\n\nYour experimentation has led to the creation of a few cool new toys.",
+      "tr": "^orange;Kademe 3^reset;\n\nDeneylerin birkaç havalı yeni oyuncak ortaya çıkardı.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/gadgets3/0",
+      "en": "Gadgeteering Mastery",
+      "tr": "Aygıt Ustalığı",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/gadgets3/1",
+      "en": "^orange;Tier 5^reset;\n\nYour desire for progress has led you to experiment with Morphite to plan a brand-new, super-awesome Matter Manipulator, as well as a few other creations on the side.",
+      "tr": "^orange;Kademe 5^reset;\n\nİlerleme tutkun seni Morphite ile deneyler yapmaya itti. Yepyeni ve müthiş bir Madde Manipülatörü ile birkaç yan proje daha tasarladın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/manipulator1/0",
+      "en": "Quantum Manipulation",
+      "tr": "Kuantum Manipülasyonu",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/manipulator1/1",
+      "en": "^orange;Tier 6^reset;\n\nTurns out you could do better than just Morphite. With a Quantum Manipulator, you can rewrite the fabric of reality itself to excavate vast amounts of material in record time. The Protectorate would be quite jealous, if it still existed.",
+      "tr": "^orange;Kademe 6^reset;\n\nMorphite'tan daha iyisini yapabileceğin ortaya çıktı. Kuantum Manipülatörü ile gerçekliğin dokusunu yeniden yazarak devasa miktarda malzemeyi rekor sürede kazabilirsin. Protectorate hâlâ var olsaydı epey kıskanırdı.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/experimentweapons/0",
+      "en": "Experimental Weapons",
+      "tr": "Deneysel Silahlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/experimentweapons/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've just got so many ideas floating around in your head that there's nothing else to do but put them all onto paper. You can now upgrade several pre-existing weapons into bizarre and lethal new forms.",
+      "tr": "^orange;Kademe 6^reset;\n\nAklında o kadar çok fikir dönüyor ki hepsini kâğıda dökmekten başka çaren kalmadı. Artık mevcut birkaç silahı tuhaf ve ölümcül yeni biçimlere yükseltebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spacebasic/0",
+      "en": "Spacefaring and Vehicles",
+      "tr": "Uzay Yolculuğu ve Araçlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spacebasic/1",
+      "en": "^orange;Tier 1^reset;\n\nYour spaceship may have broken down, but that doesn't mean you can't fix it. Using parts from your old junked FTL drive and the thermal power of Core Fragments, you are now able to make a basic ship engine (^cyan;STL Engine^reset;, created at a ^orange;Machining Table^reset;).\n\nWhile fine for intrastellar travel, the STL engine isn't nearly powerful enough to leave your system - you'll need to ^orange;Research^reset; proper FTL technology to do that.\n\nIf ^cyan;Fuel^reset; is proving an issue to find for your ship: head to a ^green;Moon^reset; or produce some ^cyan;Hydrogen^reset; by processing water (via ^orange;Extraction^reset; or ^orange;Centrifuge^reset;).\n\nAdditionally, you can craft a very simple mech for EVA or planetary usage (created at a ^orange;Mech Part Crafting Table^reset;. You can ^green;Research^reset; one later, or use the one at the ^orange;Outpost^reset;).\n\nMechs will provide a large amount of damage resistance and help you stay alive for longer in harsh situations, and are able to ^green;Fly^reset; in an atmosphere as well as space.\n\nIf you're having trouble finding ^orange;Core Fragments^reset;, just dig towards the planet core. You'll find some there.",
+      "tr": "^orange;Kademe 1^reset;\n\nUzay gemin bozulmuş olabilir ama bu onu onaramayacağın anlamına gelmez. Eski ve hurdaya çıkmış FTL motorunun parçalarını, Çekirdek Parçalarının ısıl gücüyle birleştirerek temel bir gemi motoru (^cyan;STL Motoru^reset;, ^orange;İmalat Tezgâhında^reset; üretilir) yapabilirsin.\n\nSTL Motoru yıldız sistemi içindeki yolculuklar için yeterlidir ancak sistemden çıkacak kadar güçlü değildir. Bunun için gerçek FTL teknolojisini ^orange;Araştırman^reset; gerekir.\n\nGemine ^cyan;Yakıt^reset; bulmakta zorlanıyorsan bir ^green;Aya^reset; git veya suyu ^orange;Çıkarma^reset; ya da ^orange;Santrifüj^reset; yoluyla işleyerek ^cyan;Hidrojen^reset; üret.\n\nAyrıca EVA veya gezegen yüzeyinde kullanım için çok basit bir mech üretebilirsin. Bunu ^orange;Mech Parçası Üretim Tezgâhında^reset; yapabilirsin. Daha sonra bir tane ^green;Araştırabilir^reset; veya ^orange;Karakoldaki^reset; tezgâhı kullanabilirsin.\n\nMech'ler yüksek miktarda hasar direnci sağlar, zorlu koşullarda daha uzun süre hayatta kalmana yardımcı olur ve hem atmosferde hem de uzayda ^green;Uçabilir^reset;.\n\n^orange;Çekirdek Parçaları^reset; bulmakta zorlanıyorsan gezegenin çekirdeğine doğru kaz. Orada mutlaka bulursun.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl1/0",
+      "en": "Faster than Light",
+      "tr": "Işıktan Hızlı Yolculuk",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl1/1",
+      "en": "^orange;Tier 2^reset;\n\nThe science behind Erchius Crystals is still very vague, but one thing is known for certain: these crystals hold the key to FTL travel. With the ability to make your own FTL drives, the whole galaxy is now open to exploration.\n\nWhen Erchius-based drives were still in their infancy, only Erchius fuel could power FTL travel. However, it has since been discovered how to fuel drives with a variety of sources such as ^green;radioactive isotopes^reset; or ^green;biofuel^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nErchius Kristallerinin arkasındaki bilim hâlâ oldukça belirsiz ancak kesin olarak bilinen bir şey var: bu kristaller FTL yolculuğunun anahtarıdır. Kendi FTL motorlarını üretebildiğine göre artık tüm galaksi keşfe açık.\n\nErchius tabanlı motorların ilk dönemlerinde FTL yolculuğu yalnızca Erchius yakıtıyla mümkün oluyordu. Daha sonra motorların ^green;radyoaktif izotoplar^reset; veya ^green;biyoyakıt^reset; gibi çeşitli kaynaklarla da çalıştırılabildiği keşfedildi.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/shipcrafting/0",
+      "en": "Shipcrafting",
+      "tr": "Gemi Üretimi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/shipcrafting/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've designed a Ship Crafting Table to produce more advanced ship components.",
+      "tr": "^orange;Kademe 2^reset;\n\nDaha gelişmiş gemi bileşenleri üretmek için bir Gemi Bileşeni Birleştirici tasarladın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/shipdecorative/0",
+      "en": "Ship Decoration",
+      "tr": "Gemi Dekorasyonu",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/shipdecorative/1",
+      "en": "^orange;Tier 2^reset;\n\nYou gain access to a large number of decorative ship objects. They don't do anything, but maybe they'll make your ship look cooler?",
+      "tr": "^orange;Kademe 2^reset;\n\nÇok sayıda dekoratif gemi nesnesine erişim kazandın. Hiçbir işe yaramıyorlar ama belki gemini biraz daha havalı gösterirler?",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbasic/0",
+      "en": "Mech Creation",
+      "tr": "Mech Üretimi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbasic/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned a lot about building modular mechs and can now make galactic-standard mech parts at a ^orange;Mech Crafting Table^reset;.\n\nThe weight of your mech is very important. Lighter mechs get around more easily and burn less fuel, while heavy mechs are more durable and can crush things by jumping on them.\n\n^yellow;Note:^reset; You no longer need to gather \"salvage\" components to make mechs - they are now made with other resources such as circuit boards and energy cores. Salvage can be ^orange;extracted^reset; to provide potentially useful resources instead.",
+      "tr": "^orange;Kademe 2^reset;\n\nModüler mech üretimi hakkında çok şey öğrendin ve artık ^orange;Mech Parçası Üretim Tezgâhında^reset; galaktik standartlarda mech parçaları üretebilirsin.\n\nMech'inin ağırlığı çok önemlidir. Hafif mech'ler daha rahat hareket eder ve daha az yakıt tüketir; ağır mech'ler ise daha dayanıklıdır ve üzerlerine atlayarak nesneleri ezebilir.\n\n^yellow;Not:^reset; Artık mech üretmek için \"hurda\" bileşenler toplaman gerekmiyor. Bunun yerine devre kartları ve enerji çekirdekleri gibi kaynaklar kullanılır. Hurda parçalar ise yararlı kaynaklar elde etmek için ^orange;çıkarılabilir^reset;.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbody1/0",
+      "en": "Improved Mech Bodies",
+      "tr": "Geliştirilmiş Mech Gövdeleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbody1/1",
+      "en": "^orange;Tier 3^reset;\n\nWith increased crafting skill comes the ability to make more advanced mech bodies that resist damage and store more fuel and survive in dangerous atmospheres more easily.",
+      "tr": "^orange;Kademe 3^reset;\n\nÜretim becerin geliştikçe hasara daha dayanıklı, daha fazla yakıt depolayan ve tehlikeli atmosferlerde daha kolay hayatta kalan gelişmiş mech gövdeleri üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbody2/0",
+      "en": "Advanced Mech Bodies",
+      "tr": "Gelişmiş Mech Gövdeleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbody2/1",
+      "en": "^orange;Tier 4^reset;\n\nYou can now make even stronger mech bodies using more complex materials.",
+      "tr": "^orange;Kademe 4^reset;\n\nArtık daha karmaşık malzemeler kullanarak çok daha güçlü mech gövdeleri üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbody3/0",
+      "en": "Superior Mech Bodies",
+      "tr": "Üstün Mech Gövdeleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbody3/1",
+      "en": "^orange;Tier 5^reset;\n\nThe strongest mech bodies around are now within your ability thanks to your mech-building talent.",
+      "tr": "^orange;Kademe 5^reset;\n\nMech üretimindeki yeteneğin sayesinde en güçlü mech gövdelerini artık kendin yapabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmobility1/0",
+      "en": "Improved Mech Mobility",
+      "tr": "Geliştirilmiş Mech Hareketliliği",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmobility1/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've improved on the movement systems of your mech and can now craft faster legs and boosters.",
+      "tr": "^orange;Kademe 3^reset;\n\nMech'inin hareket sistemlerini geliştirdin ve artık daha hızlı bacaklar ile iticiler üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmobility2/0",
+      "en": "Advanced Mech Mobility",
+      "tr": "Gelişmiş Mech Hareketliliği",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmobility2/1",
+      "en": "^orange;Tier 4^reset;\n\nIt's not enough to just go fast - you've got to go really, really fast. You're one step closer to that goal with your newly improved designs.",
+      "tr": "^orange;Kademe 4^reset;\n\nYalnızca hızlı olmak yetmez; gerçekten çok, çok hızlı olmalısın. Yeni tasarımlarınla bu hedefe bir adım daha yaklaştın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmobility3/0",
+      "en": "Superior Mech Mobility",
+      "tr": "Üstün Mech Hareketliliği",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmobility3/1",
+      "en": "^orange;Tier 5^reset;\n\nYour talent has produced some of the highest-end mech parts around, letting you run, jump and fly your mech through the stars at record pace.",
+      "tr": "^orange;Kademe 5^reset;\n\nYeteneğin, piyasadaki en ileri mech parçalarından bazılarını ortaya çıkardı. Mech'inle yıldızların arasında rekor hızlarda koşabilir, zıplayabilir ve uçabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsweapons1/0",
+      "en": "Improved Mech Weapons",
+      "tr": "Geliştirilmiş Mech Silahları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsweapons1/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to make some stronger weaponry for your mechs.",
+      "tr": "^orange;Kademe 3^reset;\n\nMech'lerin için daha güçlü silahlar üretmeyi öğrendin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsweapons2/0",
+      "en": "Advanced Mech Weapons",
+      "tr": "Gelişmiş Mech Silahları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsweapons2/1",
+      "en": "^orange;Tier 4^reset;\n\nThe universe can be a dangerous place, but not if you've got a really big gun. You can make even better mech weapons.",
+      "tr": "^orange;Kademe 4^reset;\n\nEvren tehlikeli bir yer olabilir ama elinde gerçekten büyük bir silah varsa o kadar da değil. Artık daha iyi mech silahları üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsweapons3/0",
+      "en": "Superior Mech Weapons",
+      "tr": "Üstün Mech Silahları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsweapons3/1",
+      "en": "^orange;Tier 5^reset;\n\nThe way you see it, there's no reason to own a mech if you can't strap a BFG to it and go to town on someone (or something) that deserves it. Your newest death-dealing mech weapons are perfect for doing just that.",
+      "tr": "^orange;Kademe 5^reset;\n\nSana göre üzerine bir BFG takıp hak eden birine veya bir şeye ateş açamayacaksan mech sahibi olmanın pek anlamı yok. Yeni ölüm makinelerin tam da bunun için biçilmiş kaftan.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmodules1/0",
+      "en": "Improved Mech Modules",
+      "tr": "Geliştirilmiş Mech Modülleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmodules1/1",
+      "en": "^orange;Tier 3^reset;\n\nYou can now craft better modules for your mech which grant better stats or increased utility.",
+      "tr": "^orange;Kademe 3^reset;\n\nMech'in için daha iyi özellikler veya daha fazla işlev sağlayan gelişmiş modüller üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmodules2/0",
+      "en": "Advanced Mech Modules",
+      "tr": "Gelişmiş Mech Modülleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmodules2/1",
+      "en": "^orange;Tier 4^reset;\n\nYou are able to craft even better mech modules.",
+      "tr": "^orange;Kademe 4^reset;\n\nArtık daha da iyi mech modülleri üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmodules3/0",
+      "en": "Superior Mech Modules",
+      "tr": "Üstün Mech Modülleri",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsmodules3/1",
+      "en": "^orange;Tier 5^reset;\n\nYou can make incredibly powerful mech modules.",
+      "tr": "^orange;Kademe 5^reset;\n\nİnanılmaz derecede güçlü mech modülleri üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbest/0",
+      "en": "Peerless Mech Crafting",
+      "tr": "Eşsiz Mech Üretimi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/mechsbest/1",
+      "en": "^orange;Tier 6^reset;\n\nYou know everything there is to know about modular mechs. You can make extremely amazing mech parts that blow the competition away, and summon your mech to you in the field.",
+      "tr": "^orange;Kademe 6^reset;\n\nModüler mech'ler hakkında öğrenilebilecek her şeyi biliyorsun. Rakiplerini açık ara geride bırakan olağanüstü mech parçaları üretebilir ve mech'ini sahadayken yanına çağırabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl2/0",
+      "en": "Improved FTL Tech",
+      "tr": "Geliştirilmiş FTL Teknolojisi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've improved on your FTL design, allowing for the creation of bigger, more powerful engines and a way to further purify and enhance your ship's fuel.",
+      "tr": "^orange;Kademe 3^reset;\n\nFTL tasarımını geliştirdin. Artık daha büyük ve güçlü motorlar üretebilir, gemi yakıtını daha da arıtıp güçlendirebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl3/0",
+      "en": "Advanced FTL Tech",
+      "tr": "Gelişmiş FTL Teknolojisi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've studied erchius crystals extensively and know a great deal about their functionality. You can build even better FTL drives and fuel purifiers.",
+      "tr": "^orange;Kademe 4^reset;\n\nErchius kristallerini kapsamlı biçimde inceledin ve nasıl çalıştıkları konusunda çok şey biliyorsun. Daha iyi FTL motorları ve yakıt arıtıcıları üretebilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl4/0",
+      "en": "Peerless FTL Tech",
+      "tr": "Eşsiz FTL Teknolojisi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/spaceftl4/1",
+      "en": "^orange;Tier 5^reset;\n\nYour knowledge of FTL tech is mind-boggling to anyone but you. You can make the fastest FTL drives and boosters around, and can purify and enhance FTL fuel so efficiently that you can cross the distance between stars with only a few drops of fuel.",
+      "tr": "^orange;Kademe 5^reset;\n\nFTL teknolojisi konusundaki bilgin senden başkasının aklını durduracak seviyede. En hızlı FTL motorlarını ve güçlendiricilerini üretebilir, FTL yakıtını öylesine verimli arıtıp geliştirebilirsin ki yıldızlar arasındaki mesafeyi yalnızca birkaç damla yakıtla aşabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/sciencestuff/0",
+      "en": "Lab Utilities",
+      "tr": "Laboratuvar Ekipmanları",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/sciencestuff/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can now create a variety of helpful objects at your Machining Table, though you may have to upgrade it first to do so.",
+      "tr": "^orange;Kademe 2^reset;\n\nArtık İmalat Tezgâhında çeşitli yararlı nesneler üretebilirsin; ancak bazıları için önce tezgâhını yükseltmen gerekebilir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/vehicles1/0",
+      "en": "Vehicle Creation",
+      "tr": "Araç Üretimi",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/vehicles1/1",
+      "en": "^orange;Tier 3^reset;\n\nTurns out making cool vehicles isn't too different from working with spaceships. You can make submarines and VTOL craft that can operate both in space and in atmosphere. Make them at your Auto Assembler/Matter Assembler.",
+      "tr": "^orange;Kademe 3^reset;\n\nHavalı araçlar üretmenin uzay gemileriyle çalışmaktan çok da farklı olmadığını fark ettin. Hem uzayda hem atmosferde çalışabilen denizaltılar ve VTOL araçları üretebilirsin. Bunları Otomatik Birleştiricide veya Madde Birleştiricide üret.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/vehicles2/0",
+      "en": "Supreme Vehicles",
+      "tr": "Üstün Araçlar",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/vehicles2/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've designed a couple more vehicles that are deadlier, faster, more durable and all around, super useful.",
+      "tr": "^orange;Kademe 6^reset;\n\nDaha ölümcül, daha hızlı, daha dayanıklı ve genel olarak son derece kullanışlı birkaç yeni araç tasarladın.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/batteries/0",
+      "en": "Compact Power",
+      "tr": "Kompakt Güç",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/batteries/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to make space-efficient batteries at an ^orange;Atomic Furnace^reset; which will be useful as surplus power sources in machinery and some weapons.",
+      "tr": "^orange;Kademe 3^reset;\n\n^orange;Atomik Fırında^reset; az yer kaplayan piller üretmeyi öğrendin. Bunlar makinelerde ve bazı silahlarda yedek güç kaynağı olarak oldukça kullanışlıdır.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs1/0",
+      "en": "Homemade Techs",
+      "tr": "Ev Yapımı Tech'ler",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to make your own body-enhancing Techs and can create a few basic ones in your ^orange;Personal Tricorder^reset;.",
+      "tr": "^orange;Kademe 1^reset;\n\nBedenini güçlendiren kendi Tech'lerini üretmeyi öğrendin ve birkaç temel modeli ^orange;Kişisel Tricorder'ında^reset; oluşturabilirsin.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs2/0",
+      "en": "Improved Techs",
+      "tr": "Geliştirilmiş Tech'ler",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make improved Techs that provide greater utility and function. They are accessed via your ^orange;Personal Tricorder^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nDaha fazla işlev ve yarar sağlayan geliştirilmiş Tech'ler üretebilirsin. Bunlara ^orange;Kişisel Tricorder'ından^reset; erişilir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs3/0",
+      "en": "Superior Techs",
+      "tr": "Üstün Tech'ler",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou can make significantly improved Techs that provide even more benefit. They are accessed via your ^orange;Personal Tricorder^reset;.",
+      "tr": "^orange;Kademe 4^reset;\n\nÇok daha fazla avantaj sağlayan, ciddi biçimde geliştirilmiş Tech'ler üretebilirsin. Bunlara ^orange;Kişisel Tricorder'ından^reset; erişilir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs4/0",
+      "en": "Peerless Techs",
+      "tr": "Eşsiz Tech'ler",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "zb/researchTree/fu_engineering.config",
+      "pointer": "/strings/research/techs4/1",
+      "en": "^orange;Tier 5^reset;\n\nYou're one of the best tech engineers in the whole galaxy, and your creations are the envy of just about everyone in the field. You can make extremely powerful techs. They are accessed via your ^orange;Personal Tricorder^reset;.",
+      "tr": "^orange;Kademe 5^reset;\n\nGalaksideki en iyi Tech mühendislerinden birisin ve tasarımların bu alandaki neredeyse herkesin imrendiği seviyede. Son derece güçlü Tech'ler üretebilirsin. Bunlara ^orange;Kişisel Tricorder'ından^reset; erişilir.",
+      "section": "Mühendislik"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/ff_focusingarray.item",
+      "pointer": "/description",
+      "en": "An array that can redirect passing particle streams.",
+      "tr": "Geçen parçacık akışlarını farklı yönlere çevirebilen bir dizi.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/ff_focusingarray.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Focusing Array^reset;",
+      "tr": "^#88e25b;Odaklama Dizisi^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/powercore.item",
+      "pointer": "/description",
+      "en": "A power core used to energize tech.",
+      "tr": "Tech sistemlerine enerji sağlamak için kullanılan bir güç çekirdeği.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/powercore.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Power Core^reset;",
+      "tr": "^#88e25b;Güç Çekirdeği^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/nuclearcore.item",
+      "pointer": "/description",
+      "en": "Great and terrible nuclear power. Handle with care.",
+      "tr": "Muazzam ve korkutucu nükleer güç. Dikkatli kullan.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/nuclearcore.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Nuclear Core^reset;",
+      "tr": "^#88e25b;Nükleer Çekirdek^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/particlecore.item",
+      "pointer": "/description",
+      "en": "The energy source for particle weapons.",
+      "tr": "Parçacık silahlarının enerji kaynağı.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/particlecore.item",
+      "pointer": "/shortdescription",
+      "en": "^#77acc3;Particle Core^reset;",
+      "tr": "^#77acc3;Parçacık Çekirdeği^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlab/extractionlab.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlab/extractionlab.object",
+      "pointer": "/description",
+      "en": "Extracts useful materials from most blocks. ^cyan;Requires ^orange;10J^cyan; per extraction.^reset; Can be placed on floors -or- ceilings.",
+      "tr": "Çoğu bloktan yararlı malzemeler çıkarır. ^cyan;Her çıkarma işlemi için ^orange;10J^cyan; gerekir.^reset; Zemine veya tavana yerleştirilebilir.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlab/extractionlab.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Extraction Lab^reset;",
+      "tr": "^cyan;Çıkarma Laboratuvarı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlab/extractionlab.object",
+      "pointer": "/subtitle",
+      "en": "Resource converter",
+      "tr": "Kaynak Dönüştürücü",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlabadv/extractionlabadv.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlabadv/extractionlabadv.object",
+      "pointer": "/description",
+      "en": "Efficiently extracts useful materials from most blocks. ^cyan;Requires ^orange;30J^cyan; per extraction.^reset; Can be placed on floors -or- ceilings.",
+      "tr": "Çoğu bloktan yararlı malzemeleri verimli biçimde çıkarır. ^cyan;Her çıkarma işlemi için ^orange;30J^cyan; gerekir.^reset; Zemine veya tavana yerleştirilebilir.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlabadv/extractionlabadv.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Extraction Lab MKII^reset;",
+      "tr": "^cyan;Çıkarma Laboratuvarı MKII^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/extractionlabadv/extractionlabadv.object",
+      "pointer": "/subtitle",
+      "en": "Resource converter",
+      "tr": "Kaynak Dönüştürücü",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop0.object",
+      "pointer": "/description",
+      "en": "A bulky and simple computer which slowly researches items.\n^cyan;Research Rate^reset;: 5%, 10s",
+      "tr": "Eşyaları yavaşça araştıran kaba ve basit bir bilgisayar.\n^cyan;Araştırma Hızı^reset;: %5, 10 sn",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop0.object",
+      "pointer": "/shortdescription",
+      "en": "Basic Computer",
+      "tr": "Temel Bilgisayar",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop0.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop1.object",
+      "pointer": "/description",
+      "en": "Performs basic research on items.\n^cyan;Research Rate^reset;: 5%, 2s",
+      "tr": "Eşyalar üzerinde temel araştırma yapar.\n^cyan;Araştırma Hızı^reset;: %5, 2 sn",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop1.object",
+      "pointer": "/shortdescription",
+      "en": "Personal Computer",
+      "tr": "Kişisel Bilgisayar",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop1.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop2.object",
+      "pointer": "/description",
+      "en": "Performs more advanced research on items.\n^cyan;Research Rate^reset;: 5%, 1.5s",
+      "tr": "Eşyalar üzerinde daha gelişmiş araştırma yapar.\n^cyan;Araştırma Hızı^reset;: %5, 1,5 sn",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop2.object",
+      "pointer": "/shortdescription",
+      "en": "Advanced Computer",
+      "tr": "Gelişmiş Bilgisayar",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/sciencelaptop2.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/dataserver.object",
+      "pointer": "/description",
+      "en": "Performs much more advanced research on items.\n^cyan;Research Rate^reset;: 5%, 1s",
+      "tr": "Eşyalar üzerinde çok daha gelişmiş araştırma yapar.\n^cyan;Araştırma Hızı^reset;: %5, 1 sn",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/dataserver.object",
+      "pointer": "/shortdescription",
+      "en": "Research Server",
+      "tr": "Araştırma Sunucusu",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/sciencelaptop/dataserver.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/generic/labfurniture/fulargeterminal/fulargeterminal.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/generic/labfurniture/fulargeterminal/fulargeterminal.object",
+      "pointer": "/description",
+      "en": "A huge central mainframe accessing multiple simultaneous data streams.\n^cyan;Research Rate^reset;: 6%, 0.5s",
+      "tr": "Aynı anda birden fazla veri akışına erişen devasa bir merkezi ana bilgisayar.\n^cyan;Araştırma Hızı^reset;: %6, 0,5 sn",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/generic/labfurniture/fulargeterminal/fulargeterminal.object",
+      "pointer": "/shortdescription",
+      "en": "Research Mainframe",
+      "tr": "Araştırma Ana Bilgisayarı",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/fu_shipcraftingtable/fu_shipcraftingtable.object",
+      "pointer": "/description",
+      "en": "Used to produce ship components.",
+      "tr": "Gemi bileşenleri üretmek için kullanılır.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/fu_shipcraftingtable/fu_shipcraftingtable.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Ship Component Assembler^reset;",
+      "tr": "^orange;Gemi Bileşeni Birleştirici^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": "^orange;Ship Component Assembler^reset;",
+      "tr": "^orange;Gemi Bileşeni Birleştirici^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": "Craft all sorts of ship components!",
+      "tr": "Her tür gemi bileşenini üret!",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Assemble",
+      "tr": "Birleştir",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
+      "pointer": "/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value",
+      "en": "Replace Me",
+      "tr": "Beni Değiştir",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/description",
+      "en": "An STL drive for a space ship. Allows travel within a system, but isn't strong enough to travel to others.\n^red;BYOS Only^reset;",
+      "tr": "Uzay gemileri için bir STL motoru. Aynı yıldız sistemi içinde yolculuk sağlar ancak başka sistemlere ulaşacak kadar güçlü değildir.\n^red;Yalnızca BYOS^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/shortdescription",
+      "en": "^red;STL Drive^reset;",
+      "tr": "^red;STL Motoru^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/apexDescription",
+      "en": "Sometimes rebels try to escape the Miniknog with engines like this. They never get far.",
+      "tr": "Bazen asiler Miniknog'dan böyle motorlarla kaçmaya çalışır. Pek uzağa gidemezler.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/avianDescription",
+      "en": "I better not fall into any gravity wells with an engine like this.",
+      "tr": "Böyle bir motorla herhangi bir yerçekimi kuyusuna düşmesem iyi olur.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/floranDescription",
+      "en": "Ssslow engine.",
+      "tr": "Yavaşşş motor.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/glitchDescription",
+      "en": "Irked. Core Fragments are nowhere near as powerful as Erchius Crystals.",
+      "tr": "Rahatsız. Çekirdek Parçaları, Erchius Kristalleri kadar güçlü olmaya yaklaşamaz bile.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/humanDescription",
+      "en": "Humans colonized the Sol system with engines like this, so I shouldn't complain.",
+      "tr": "İnsanlar Sol sistemini böyle motorlarla kolonileştirdiğine göre şikâyet etmemeliyim.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/hylotlDescription",
+      "en": "Going somewhere slowly is better than going nowhere fast.",
+      "tr": "Bir yere yavaşça gitmek, hiçbir yere hızlıca gidememekten iyidir.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/ship/fu_ftldrive/fu_stldrive.object",
+      "pointer": "/novakidDescription",
+      "en": "It's basically just a steam engine, but that's just fine.",
+      "tr": "Aslında buharlı motordan pek farkı yok ama iş görür.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/tools/mmgravgun2.beamaxe",
+      "pointer": "/description",
+      "en": "It doesn't get any better than this.",
+      "tr": "Bundan daha iyisi olmaz.",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/tools/mmgravgun2.beamaxe",
+      "pointer": "/shortdescription",
+      "en": "^#b84cbc;Quantum Manipulator^reset;",
+      "tr": "^#b84cbc;Kuantum Manipülatörü^reset;",
+      "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/tools/mmgravgun2.beamaxe",
+      "pointer": "/category",
+      "en": "Matter Manipulator",
+      "tr": "Madde Manipülatörü",
+      "section": "Mühendislik makineleri ve kaynakları"
     }
   ]
 }
