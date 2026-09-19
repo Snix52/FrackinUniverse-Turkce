@@ -189,3 +189,19 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
 Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılmaz.
 
+| Madness | Sistem / para birimi | Sistem | Delilik | Madness | LOCKED | Delilik/Metafizik sisteminin ana kaynağı |
+| Metaphysics | Araştırma ağacı | Sistem | Metafizik | Metaphysics | LOCKED | v0.8 ana araştırma ağacı |
+| Psionics | Delilik araştırması / bilimkurgu kavramı | Bilim | Psiyonik | Psionik, Psişik | LOCKED | Türkçe bilimkurgu kullanımına göre standardize edildi |
+| Psionic Energy | Delilik / enerji kaynağı | Kavram | Psiyonik Enerji | Psionik Enerji, Psişik Enerji | LOCKED | |
+| Psionic Focus | Delilik / psiyonik silah | Nesne | Psiyonik Odak | Psionik Odak | LOCKED | psiejector gerçek kısa adı |
+| Psionics Table | Delilik üretim tezgâhı | Nesne | Psiyonik Tezgâhı | Psionik Tezgâhı | LOCKED | |
+| Psionic Amplifier | Delilik enerji makinesi | Nesne | Psiyonik Yükselteç | Psionik Amplifikatör | LOCKED | |
+| Brain Extractor | Delilik / silah | Nesne | Beyin Çıkarıcı | Brain Extractor | LOCKED | Gerçek activeitem kısa adı |
+| Dark Matter | Kozmik araştırma / malzeme | Kaynak | Karanlık Madde | Dark Matter | LOCKED | Yerleşik bilimsel karşılık |
+| Matter Converter | Delilik / madde işleme | Nesne | Madde Dönüştürücü | Matter Converter | LOCKED | |
+| Autopsy Table | Delilik / laboratuvar | Nesne | Otopsi Masası | Autopsy Table | LOCKED | |
+| Insta-Freud | Ruh sağlığı cihazı | Özel ad | Insta-Freud | - | LOCKED | Ürün/cihaz adı korunur |
+| Astral Projection | Delilik araştırması | Kavram | Astral Projeksiyon | Astral Yansıtma | LOCKED | Yerleşik kullanım |
+| Dimensional Phasing | Delilik araştırması | Kavram | Boyutsal Faz Geçişi | Boyutsal Fazlama | LOCKED | |
+| Psi-1/2/3/4 Energy | Psiyonik enerji zinciri | Kaynak | Psi-1/2/3/4 Enerjisi | Psi-X Energy | LOCKED | Kademe numarası korunur |
+
