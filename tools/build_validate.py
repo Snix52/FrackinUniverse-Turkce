@@ -172,6 +172,8 @@ def allowed(a,p):
         'objects/power/fu_alternatorgenerator/fu_alternatorgenerator.object'
     }
     if a in power_assets:
+        if a=='objects/crafting/wiringstation/wiringstation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
+            return True
         return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
     return False
 
