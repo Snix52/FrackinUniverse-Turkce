@@ -6,11 +6,19 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  654 oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  689 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+
+raw_text_translations.json
+  JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
+  Mevcut kapsam: zb/researchTree/researchTree.lua / 15 görünür metin.
+
+tools/raw_overrides/
+  Kaynak klasörü verilmeden build alınırken kullanılan, FU 6.5.8 için doğrulanmış ham override şablonlarını tutar.
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
   Jeoloji + Tarım + Kimya + Mühendislik + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
 
 Yeni çıktı:
@@ -19,8 +27,12 @@ Yeni çıktı:
 Açılmış FU kaynaklarıyla tam doğrulama:
   python build_validate.py --source-dir "D:\FU_acilmis" --output dogrulanmis_cikti
 
-v0.4 kaynak kontrolü:
-  62/62 patch asset
-  654/654 kaynak pointer/değer
-  v0.4 yeni içerik: 16 asset / 191 alan
+v0.4 güncel kaynak kontrolü:
+  64/64 JSON/JSONC patch asset
+  689/689 kaynak pointer/değer
+  1/1 ham Lua override asset
+  15/15 Lua görünür metin fragmenti
+  toplam 704 yerelleştirilmiş görünür metin birimi
   exact FU commit: 329e714b3fe87571055c8ad7aa38135d199d3317
+
+Oyun içi LQA, font ve panel taşma testi ayrıca yapılmalıdır.
