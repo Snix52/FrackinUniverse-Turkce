@@ -93,3 +93,18 @@
 - Önceki 654/654 exact-source doğrulaması korunuyor; eklenen 35 yapılandırılmış alan kaynak ve patch değerleriyle doğrulandı. Bugün değiştirilen yüksek etkili 8 asset ayrıca **432/432**, eksik yakalanan 10 asset ise **77/77** kaynak/ledger/patch eşleşmesiyle yeniden kontrol edildi.
 - Oyun içi LQA, font ve panel taşma testi bu statik denetimin parçası değildir ve hâlâ yapılmalıdır.
 
+## 2026-09-20 - v0.5 Güç Sistemleri
+
+- `fu_power` araştırma ağacındaki 39 düğümün 81 oyuncu metni bütün olarak yerelleştirildi.
+- Doğrudan bağlı 32 güç/işleme/atmosfer makinesi assetindeki 139 oyuncu metni aynı sürüme alındı.
+- v0.5 yeni içerik toplamı: **33 asset / 220 yapılandırılmış alan**.
+- Proje toplamı **909 yapılandırılmış alan + 15 Lua UI metni = 924 görünür metin birimi** oldu.
+- Kaynak `fu_power` ağaç başlığı **Electronics**, fakat FU içi çapraz referanslar bu ağacı **Power Systems** diye adlandırıyor. Oyuncunun yönlendirmeleri takip edebilmesi için ağaç adı Türkçede **Güç Sistemleri** olarak LOCKED yapıldı; ağacın içindeki Electronics düğümü **Elektronik** olarak ayrıştırıldı.
+- Steam Power kaynak açıklamasındaki “hydraulic piston” ifadesi, araştırmanın gerçekten açtığı `hydraulicdynamo` nesnesinin oyuncu adıyla eşleştirilerek **Hidrolik Dinamo** olarak kullanıldı.
+- Combustion kaynak metnindeki **Combustion Engine**, gerçek açılan nesnenin `shortdescription` değeri **Combustion Generator** olduğu için Türkçede **Yanmalı Jeneratör** olarak standardize edildi.
+- Silicon -> **Silisyum**, Blast Furnace -> **Yüksek Fırın**, Arc Smelter -> **Ark Ergitici**, Fission Reactor -> **Fisyon Reaktörü**, Quantum Nucleonics -> **Kuantum Nükleoniği** LOCKED.
+- Güneş üretim zinciri **Güneş Paneli -> Güneş Dizisi -> Güneş Kulesi** olarak standardize edildi.
+- Santrifüj zinciri **Endüstriyel Santrifüj -> Laboratuvar Santrifüjü -> Gaz Santrifüjü** olarak standardize edildi.
+- Yeni 220 alan FU 6.5.8 kaynak commit'i `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında **220/220 PASS** doğrulandı.
+- Renk kodu, kontrol kodu, sayı ve yinelenen pointer kontrolleri v0.5 yeni içerikte **PASS**.
+- Oyun içi LQA, panel taşması ve üretim/yakıt zinciri testi henüz yapılmadı.
