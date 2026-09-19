@@ -45,6 +45,8 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
+> **Paket notu:** `dist/FU_Turkce_v0.4.0_Beta.zip` eski QA öncesi içeriği taşıdığı için kaldırıldı. Güncel kaynak doğrudan `FU_Turkce` klasörüdür. `.github/workflows/build-package.yml` etkin GitHub Actions ortamında statik QA'yı çalıştırıp güncel v0.4 Beta ZIP'ini otomatik yeniden üretir.
+
 ## Sürüm uyumluluğu
 
 ```text
