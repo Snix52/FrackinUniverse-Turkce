@@ -6608,8 +6608,12 @@
       "asset": "zb/researchTree/fu_craftsmanship.config",
       "pointer": "/strings/research/colony1/1",
       "en": "^orange;Tier 1^reset;\n\nYou've gained the skills needed to govern a large colony. You can now build a ^orange;Colony Station^reset; at your Inventor's Table, allowing you to craft several colony automation devices.\n\n^yellow;Colony System Guide^reset;: The basis of your colony is the Colony Core, a device which passively collects rent from (and only from) Mk2 Tenant Deeds, which generate no rent on their own - they are co-dependent.\n\nThe happier your tenants are, the more rent they will pay. Happiness can be increased by constructing various add-ons for your colony, which can also generate resources, doing so faster the more tenants you have. There is a limit of one of each add-on per colony.",
-      "tr": "^orange;Kademe 1^reset;\n\nKalabalık bir koloniyi yönetmek için gereken becerileri kazandın. Artık Mucit Tezgâhında bir ^orange;Koloni İstasyonu^reset; üretebilir ve çeşitli koloni otomasyon cihazlarına erişebilirsin.\n\n^yellow;Koloni Sistemi Rehberi^reset;: Koloninin temeli, yalnızca kendi başına kira üretmeyen Mk2 Kiracı Tapularından pasif olarak kira toplayan Koloni Çekirdeğidir; ikisi birbirine bağımlıdır.\n\nKiracıların ne kadar mutluysa o kadar fazla kira öder. Çeşitli koloni eklentileri inşa ederek mutluluğu artırabilir, aynı zamanda kaynak üretebilirsin. Kiracı sayısı arttıkça bu eklentiler daha hızlı çalışır. Her kolonide her eklentiden yalnızca bir tane bulunabilir.",
-      "section": "Zanaatkârlık"
+      "tr": "^orange;Kademe 1^reset;\n\nKalabalık bir koloniyi yönetmek için gereken becerileri kazandın. Artık Mucit Tezgâhında bir ^orange;Koloni İstasyonu^reset; üretebilir ve çeşitli koloni otomasyon cihazlarına erişebilirsin.\n\n^yellow;Koloni Sistemi Rehberi^reset;: Koloninin temeli, yalnızca kendi başına kira üretmeyen Koloni Tapusu Mark II'lerden pasif olarak kira toplayan Koloni Çekirdeğidir; ikisi birbirine bağımlıdır.\n\nKiracıların ne kadar mutluysa o kadar fazla kira öder. Çeşitli koloni eklentileri inşa ederek mutluluğu artırabilir, aynı zamanda kaynak üretebilirsin. Kiracı sayısı arttıkça bu eklentiler daha hızlı çalışır. Her kolonide her eklentiden yalnızca bir tane bulunabilir.",
+      "section": "Zanaatkârlık",
+      "qa": {
+        "allow_number_fix": true,
+        "reason": "Kaynak 'Mk2 Tenant Deeds' diyor; gerçek eşya adı 'Colony Deed Mark II'. Oyuncu takibi için envanter adı kullanıldı."
+      }
     },
     {
       "asset": "zb/researchTree/fu_craftsmanship.config",
@@ -7478,6 +7482,360 @@
       "en": "^orange;Tier 2^reset;\n\nYou can create decorative lava lamps at a ^orange;Lamporium^reset;.",
       "tr": "^orange;Kademe 2^reset;\n\n^orange;Lamporium^reset; kullanarak dekoratif lav lambaları üretebilirsin.",
       "section": "Zanaatkârlık"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/description",
+      "en": "Used to create a large colony.",
+      "tr": "Büyük bir koloni kurmak için kullanılır.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Colony Station^reset;",
+      "tr": "^orange;Koloni İstasyonu^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/apexDescription",
+      "en": "It will be nice to be in charge of something for a change.",
+      "tr": "Değişiklik olsun, bu kez bir şeylerin başında olmak güzel olacak.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/avianDescription",
+      "en": "I've always wanted to be a mayor.",
+      "tr": "Hep belediye başkanı olmak istemiştim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/floranDescription",
+      "en": "Floran can gather fleshlingss with workbench.",
+      "tr": "Floran bu tezgâhla etlileri toplayabilir.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/glitchDescription",
+      "en": "Ambitious. I can become a feudal lord with this.",
+      "tr": "Hırslı. Bununla feodal bir lord olabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/humanDescription",
+      "en": "Humans never really settled other planets. I should fix that.",
+      "tr": "İnsanlar başka gezegenlere hiç doğru düzgün yerleşmedi. Bunu düzeltmeliyim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/hylotlDescription",
+      "en": "I can create a sizable settlement with this table.",
+      "tr": "Bu tezgâhla oldukça büyük bir yerleşim kurabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/novakidDescription",
+      "en": "Perfect for makin' a frontier town.",
+      "tr": "Sınırda kasaba kurmak için birebir.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Colony Station",
+      "tr": " Koloni İstasyonu",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonystation/colonystation.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " Colony components, cores, and deeds.",
+      "tr": " Koloni bileşenleri, çekirdekler ve tapular.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonycore/colonycore.object",
+      "pointer": "/description",
+      "en": "The basis of a large colony. Collects rent from MK2 deeds passively.",
+      "tr": "Büyük bir koloninin temelidir. Koloni Tapusu Mark II'lerden pasif olarak kira toplar.",
+      "section": "Zanaatkârlık makineleri",
+      "qa": {
+        "allow_number_fix": true,
+        "reason": "Kaynak MK2 diyor; kilitli envanter adı Koloni Tapusu Mark II olarak kullanılıyor."
+      }
+    },
+    {
+      "asset": "objects/colonysystem2/colonycore/colonycore.object",
+      "pointer": "/shortdescription",
+      "en": "Colony Core",
+      "tr": "Koloni Çekirdeği",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/description",
+      "en": "A colony deed designed for use with a Colony Core. Only collects rent with a Core present.  ^red;Requires a bed in the room.^reset;",
+      "tr": "Koloni Çekirdeği ile kullanılmak üzere tasarlanmış bir koloni tapusu. Yalnızca bir Çekirdek varken kira toplar.  ^red;Odada bir yatak gerekir.^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/shortdescription",
+      "en": "^yellow;Colony Deed Mark II^reset;",
+      "tr": "^yellow;Koloni Tapusu Mark II^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/apexDescription",
+      "en": "With these I can create a conclave of tenants... or test subjects.",
+      "tr": "Bunlarla kiracılardan... ya da deneklerden oluşan bir topluluk kurabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/avianDescription",
+      "en": "This sure beats pestering my tenants for rent individually.",
+      "tr": "Kirayı tek tek istemek için kiracıların peşinde koşmaktan kesinlikle daha iyi.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/floranDescription",
+      "en": "If tenants don't pay rent, Floran will sssstab.",
+      "tr": "Kiracılar kira ödemezse Floran sssaplar.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/glitchDescription",
+      "en": "Greedy. It's time to make some real money.",
+      "tr": "Açgözlü. Gerçek para kazanmanın zamanı geldi.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/humanDescription",
+      "en": "With these, I can become a landlord for real.",
+      "tr": "Bunlarla gerçekten ev sahibi olabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/hylotlDescription",
+      "en": "Rent-seeking is immoral. Good thing I have no morals.",
+      "tr": "Kira sömürüsü ahlaksızca. İyi ki benim ahlakım yok.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
+      "pointer": "/novakidDescription",
+      "en": "There's good money in runnin' a boarding house.",
+      "tr": "Pansiyon işletmekte iyi para var.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/description",
+      "en": "A colony deed designed for use with a Colony Core. Only collects rent with a Core present. ^red;Requires a bed in the room.^reset;",
+      "tr": "Koloni Çekirdeği ile kullanılmak üzere tasarlanmış bir koloni tapusu. Yalnızca bir Çekirdek varken kira toplar. ^red;Odada bir yatak gerekir.^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/shortdescription",
+      "en": "^yellow;Colony Deed Mark II (Tiny)^reset;",
+      "tr": "^yellow;Koloni Tapusu Mark II (Küçük)^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/apexDescription",
+      "en": "With these I can create a conclave of tenants... or test subjects.",
+      "tr": "Bunlarla kiracılardan... ya da deneklerden oluşan bir topluluk kurabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/avianDescription",
+      "en": "This sure beats pestering my tenants for rent individually.",
+      "tr": "Kirayı tek tek istemek için kiracıların peşinde koşmaktan kesinlikle daha iyi.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/floranDescription",
+      "en": "If tenants don't pay rent, Floran will sssstab.",
+      "tr": "Kiracılar kira ödemezse Floran sssaplar.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/glitchDescription",
+      "en": "Greedy. It's time to make some real money.",
+      "tr": "Açgözlü. Gerçek para kazanmanın zamanı geldi.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/humanDescription",
+      "en": "With these, I can become a landlord for real.",
+      "tr": "Bunlarla gerçekten ev sahibi olabilirim.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/hylotlDescription",
+      "en": "Rent-seeking is immoral. Good thing I have no morals.",
+      "tr": "Kira sömürüsü ahlaksızca. İyi ki benim ahlakım yok.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object",
+      "pointer": "/novakidDescription",
+      "en": "There's good money in runnin' a boarding house.",
+      "tr": "Pansiyon işletmekte iyi para var.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/description",
+      "en": "This compact 3D printer works in the medium of snow to generate cunning replicas of a variety of races.",
+      "tr": "Bu kompakt 3D yazıcı, çeşitli ırkların ustaca kopyalarını üretmek için baskı malzemesi olarak kar kullanır.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Snowprinter^reset;",
+      "tr": "^orange;Kar Yazıcısı^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/apexDescription",
+      "en": "A 3D printer that... creates snowmen?",
+      "tr": "Bir 3D yazıcı ve... kardan adam mı yapıyor?",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/avianDescription",
+      "en": "A snowman machine? Odd use of advanced technology, but okay.",
+      "tr": "Kardan adam makinesi mi? İleri teknolojinin garip bir kullanımı ama peki.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/floranDescription",
+      "en": "Floran make ssnowpeople with fancy machine!",
+      "tr": "Floran havalı makineyle karr insanı yapar!",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/glitchDescription",
+      "en": "Amused. This machine can create snowmen.",
+      "tr": "Eğlenmiş. Bu makine kardan adam yapabiliyor.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/humanDescription",
+      "en": "A 3d printer for making snowmen? Now I feel like a kid again!",
+      "tr": "Kardan adam yapmak için 3D yazıcı mı? Yeniden çocuk gibi hissettim!",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/hylotlDescription",
+      "en": "With this machine, I shall master the art of snowman crafting.",
+      "tr": "Bu makineyle kardan adam yapma sanatında ustalaşacağım.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/novakidDescription",
+      "en": "That's something y'don't see every day. I reckon I can make a snowvakid with this!",
+      "tr": "Bunu her gün görmezsin. Bununla bir kar-Novakid yapabilirim herhâlde!",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/peglaci/snowpersongenerator/snowpersongenerator.object",
+      "pointer": "/fupeglaciDescription",
+      "en": "This prototype of our own pixel printers uses snow as a printing medium. Unfortunately, this one is only good for producing snowpeople.",
+      "tr": "Kendi piksel yazıcılarımızın bu prototipi baskı malzemesi olarak kar kullanıyor. Ne yazık ki bu model yalnızca kar insanı üretebiliyor.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/description",
+      "en": "A station for creating different lava lamps.",
+      "tr": "Farklı lav lambaları üretmek için kullanılan bir istasyon.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;The Lamporium^reset;",
+      "tr": "^orange;Lamporium^reset;",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/apexDescription",
+      "en": "A large lava lamp.",
+      "tr": "Büyük bir lav lambası.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/avianDescription",
+      "en": "A very large lamp.",
+      "tr": "Çok büyük bir lamba.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/floranDescription",
+      "en": "Floran likesss pretty lamp.",
+      "tr": "Floran güzel lambayı ssssever.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/glitchDescription",
+      "en": "Observant. A large lamp.",
+      "tr": "Gözlemci. Büyük bir lamba.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/humanDescription",
+      "en": "A massive lamp! It's so pretty.",
+      "tr": "Devasa bir lamba! Çok güzel.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/hylotlDescription",
+      "en": "This is beautiful to look at.",
+      "tr": "Bakması çok güzel.",
+      "section": "Zanaatkârlık makineleri"
+    },
+    {
+      "asset": "objects/crafting/lavalampstation/lavalampstation.object",
+      "pointer": "/novakidDescription",
+      "en": "This is mighty pretty.",
+      "tr": "Pek bi' güzelmiş.",
+      "section": "Zanaatkârlık makineleri"
     }
   ]
 }
