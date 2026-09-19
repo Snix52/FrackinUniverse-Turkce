@@ -6,7 +6,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 
 ## Mevcut kapsam
 
-- Jeoloji araştırma ağacındaki seçili metinler
+- Jeoloji araştırma ağacındaki aktif çevrilebilir metinler
 - Tarım araştırma ağacının tamamı
 - Kimya araştırma ağacının tamamı
 - Mühendislik araştırma ağacının tamamı
