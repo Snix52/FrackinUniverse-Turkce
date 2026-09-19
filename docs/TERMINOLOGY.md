@@ -142,6 +142,16 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 | The Lamporium | Lav lambası üretim makinesi | Özel ad/Nesne | Lamporium | The Lamporium | LOCKED | Özel makine adı; İngilizce artikel atılır |
 
+| Kitchen Counter | Yemek üretim istasyonu | Nesne | Mutfak Tezgâhı | Kitchen Counter | LOCKED | FU vanilla woodencookingtable üstüne patch ile tanımlar |
+
+| Chef's Kitchen | Mutfak Tezgâhı yükseltmesi | Nesne | Şef Mutfağı | Chef's Kitchen | LOCKED | |
+
+| Biochemist Table | Balçık/biyokimya üretim makinesi | Nesne | Biyokimyacı Tezgâhı | Biochemist Table | LOCKED | |
+
+| Biochemist Centrifuge | Biyokimya üretim makinesi | Nesne | Biyokimyacı Santrifüjü | Biochemist Centrifuge | LOCKED | |
+
+| Biochemist Microseparator | Biyokimya üretim makinesi | Nesne | Biyokimyacı Mikroayırıcısı | Biochemist Microseparator | LOCKED | |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
