@@ -145,7 +145,16 @@
     "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object": "9615f6f9dd6b537177a6ba61ba6ae7dab9535657",
     "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object": "18616e3eed2a7f2579a96c16d8c7122104a791d2",
     "objects/peglaci/snowpersongenerator/snowpersongenerator.object": "5df35a31e357361171f33f78a474eea38589c2e0",
-    "objects/crafting/lavalampstation/lavalampstation.object": "da605444c4e47387b7efa43ff69afd1fe3077684"
+    "objects/crafting/lavalampstation/lavalampstation.object": "da605444c4e47387b7efa43ff69afd1fe3077684",
+    "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object": "b7ee83fb64a18d16f4a241998686922f91893e4a"
   },
-  "validation_note": "v0.6 çalışma dalı: fu_craftsmanship 157 alan + ilk bağlı asset geçişi 50 alan. Gerçek envanter adları Koloni İstasyonu, Koloni Çekirdeği, Koloni Tapusu Mark II, Kar Yazıcısı ve Lamporium ile eşlendi; diğer bağlı istasyonlar sürüyor."
+  "validation_note": "v0.6 çalışma dalı: Zanaatkârlık ağacı ve doğrudan bağlı FU-owned/katmanlı üretim istasyonları genişletiliyor. Kitchen Counter layered FU patch kaynağından, Biochemist hattı FU-owned object kaynağından exact doğrulanır.",
+  "layered_assets": {
+    "objects/crafting/woodencookingtable/woodencookingtable.object": {
+      "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+      "github_blob_sha": "204247b35db3a2c09f4e74202132f65985fd51b5",
+      "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+      "note": "FU vanilla woodencookingtable nesnesinin /upgradeStages alanını bu patch içinde tamamen oluşturuyor; Türkçe test/replace değerleri bu FU katmanından exact alınır."
+    }
+  }
 }
