@@ -137,6 +137,42 @@ def allowed(a,p):
         return p in ('/description','/shortdescription','/apexDescription','/avianDescription','/floranDescription','/glitchDescription','/humanDescription','/hylotlDescription','/novakidDescription')
     if a=='items/tools/mmgravgun2.beamaxe':
         return p in ('/description','/shortdescription','/category')
+    power_assets={
+        'objects/power/isn_solarpanel/isn_solarpanel.object',
+        'objects/power/fu_solararray/fu_solararray.object',
+        'objects/power/fu_solararrayadv/fu_solararrayadv.object',
+        'objects/power/hydraulicdynamo/hydraulicdynamo.object',
+        'objects/power/fu_windarray/isn_windarray.object',
+        'objects/power/isn_thermalgenerator/isn_thermalgenerator.object',
+        'objects/power/electricfurnace/electricfurnace.object',
+        'objects/power/fu_blastfurnace/fu_blastfurnace.object',
+        'objects/power/isn_arcsmelter/isn_arcsmelter.object',
+        'objects/power/isn_fissionreactornew/isn_fissionreactornew.object',
+        'objects/power/makeshiftreactor/makeshiftreactor.object',
+        'objects/skath/skathfusionreactor/skathfusionreactor.object',
+        'objects/power/fu_quantumgenerator/fu_quantumgenerator.object',
+        'objects/power/quantumextractor/quantumextractor.object',
+        'objects/bees/industrialcentrifuge/industrialcentrifuge.object',
+        'objects/power/centrifuge/centrifuge.object',
+        'objects/power/isn_powdersifter/isn_powdersifter.object',
+        'objects/power/centrifuge2/centrifuge2.object',
+        'objects/power/manufacturing/mfgstation.object',
+        'objects/power/fu_liquidcondenser/fu_liquidcondenser.object',
+        'objects/power/isn_battery_t1/isn_battery_t1.object',
+        'objects/power/isn_battery_t2/isn_battery_t2.object',
+        'objects/power/isn_battery_t3_ceru/isn_battery_t3_ceru.object',
+        'objects/power/isn_battery_t3_fero/isn_battery_t3_fero.object',
+        'objects/power/isn_battery_t4_fero/isn_battery_t4_fero.object',
+        'objects/power/isn_atmoscondenser/isn_atmoscondenser.object',
+        'objects/power/fu_liquidmixer/fu_liquidmixer.object',
+        'objects/power/fu_atmosfilter/fu_atmosfilter.object',
+        'objects/power/isn_atmosregulator/isn_atmosregulatornew.object',
+        'objects/power/isn_atmosregulator/isn_atmosregulator.object',
+        'objects/crafting/wiringstation/wiringstation.object',
+        'objects/power/fu_alternatorgenerator/fu_alternatorgenerator.object'
+    }
+    if a in power_assets:
+        return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
     return False
 
 def main():
