@@ -127,3 +127,11 @@
 - Aynı nedenle Koloni Çekirdeği açıklamasındaki kaynak `MK2 deeds` ifadesi de gerçek eşya adına eşlendi. Bu iki alan sayı-token QA istisnası olarak açıkça kayıt altına alındı.
 - v0.6 mevcut kapsamı 207/207 exact-source, 0 yinelenen pointer, 0 boş çeviri ve sağlam renk/kontrol kodlarıyla PASS.
 - Vanilla nesneleri FU `.patch` katmanıyla değiştiren Mutfak Tezgâhı, dikiş istasyonu ve benzeri bağlı istasyonlar doğrudan FU-owned nesneler gibi ele alınmayacak; güvenli birleşik patch yöntemi doğrulanmadan ana dala alınmayacak.
+
+### v0.6 katmanlı vanilla asset stratejisi
+
+- FU bazı vanilla Starbound nesnelerini tam nesne olarak değil `.object.patch` ile değiştiriyor. Bunlar FU-owned `.object` assetleriyle aynı şekilde kaynak doğrulanamaz.
+- İlk güvenli örnek `woodencookingtable`: FU patchi `/upgradeStages` dizisini tamamen oluşturduğu için Mutfak Tezgâhı ve Şef Mutfağı metinleri doğrudan bu FU patchinden exact kaynak değeriyle alınır. Türkçe mod, FU'dan sonra aynı hedef assete test/replace patch uygular.
+- Kitchen Counter -> **Mutfak Tezgâhı**, Chef's Kitchen -> **Şef Mutfağı** LOCKED.
+- `slimecentrifuge` FU-owned tam nesne olduğu için standart exact-source yöntemiyle çevrildi. Biochemist Table -> **Biyokimyacı Tezgâhı**, Biochemist Centrifuge -> **Biyokimyacı Santrifüjü**, Biochemist Microseparator -> **Biyokimyacı Mikroayırıcısı** LOCKED.
+- Dikiş Makinesi / `craftingwheel` FU patchi yalnızca vanilla nesnenin bazı kademelerini değiştiriyor. İlk kademe gerçek envanter adı vanilla kaynak doğrulanmadan kilitlenmeyecek; araştırma metnindeki ad tek başına kaynak kabul edilmeyecek.
