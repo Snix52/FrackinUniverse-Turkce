@@ -144,3 +144,11 @@
 - Türkçe aile: **Çıkrık -> Dikiş Makinesi -> Giysi Üreticisi**. Üçü LOCKED.
 - Vanilla kısa adlarındaki hatalı/eski `^white;` kapanışı Türkçe yamada `^reset;` ile kapatılır; bu bilinçli renk-kodu QA düzeltmesidir.
 - Zanaatkârlık `canvas` araştırmasındaki Sewing Machine referansı gerçek 2. kademe envanter adıyla doğrulandı.
+
+### v0.6 vanilla tezgâh adları
+
+- Zanaatkârlık ağacının doğrudan yönlendirdiği vanilla tezgâh adları, kaynak değerlerini test eden bağımsız Starbound Patch Project kayıtlarıyla doğrulandı.
+- **Wooden Workbench -> Ahşap Tezgâh**, **Industrial Workbench -> Endüstriyel Tezgâh** LOCKED.
+- **Inventor's Table -> Mucit Tezgâhı**, **Engineer's Table -> Mühendis Tezgâhı**, **Architect's Table -> Mimar Tezgâhı** LOCKED.
+- FU bu iki vanilla nesneye kendi kaynak ağacında ek `.object.patch` uygulamıyor. Bu yüzden yalnızca exact doğrulanmış kısa adlar çevrildi; açıklamalar tahmin edilmedi.
+- Vanilla kısa adlarındaki `^white;` kapanışı Türkçe patchte `^reset;` olarak düzeltilir ve belgeli renk-kodu istisnası sayılır.
