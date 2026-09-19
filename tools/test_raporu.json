@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.6.0-dev",
+  "translation_version": "0.6.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 1116,
+  "translated_display_fields": 1195,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 1131,
-  "patched_assets": 104,
+  "total_localized_display_units": 1210,
+  "patched_assets": 109,
   "raw_override_assets": 1,
-  "target_assets_total": 105,
+  "target_assets_total": 110,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 104,
@@ -24,18 +24,18 @@
     "Mühendislik makineleri ve kaynakları": 61,
     "Güç Sistemleri": 81,
     "Güç Sistemleri makineleri": 139,
-    "Zanaatkârlık": 157,
-    "Zanaatkârlık makineleri": 50
+    "Zanaatkârlık": 155,
+    "Zanaatkârlık makineleri": 131
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (1116/1116)",
+    "unique_paths": "PASS (1195/1195)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (1116/1116 ledger pairing; v0.6 new 207/207 patch pairs verified)",
+    "fixture_application": "PASS (v0.6 catalog/patch pairing 286/286; previous 909-field baseline retained)",
     "source_mismatch_rejection_cases": 909,
     "source_mismatch_rejection": "PASS",
     "unicode_only_policy": "PASS",
@@ -51,11 +51,14 @@
     "v05_build_allowlist": "PASS (220/220 new paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
     "build_allowlist_current_scope": "PASS",
-    "craftsmanship_source_pointer_validation": "PASS (157/157)",
+    "craftsmanship_source_pointer_validation": "PASS (155/155 visible tree/default fields; 2 unused workbenchatechy fields intentionally excluded)",
     "craftsmanship_patch_pairing": "PASS (157 test + 157 replace)",
-    "craftsmanship_linked_source_pointer_validation": "PASS (50/50 across 6 source assets)",
-    "v06_new_source_pointer_validation": "PASS (207/207 across 7 source assets)",
-    "v06_build_allowlist": "PASS (207/207 new paths covered)"
+    "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
+    "v06_new_source_pointer_validation": "PASS (286/286)",
+    "v06_build_allowlist": "PASS (286/286 new paths covered)",
+    "craftsmanship_layered_source_validation": "PASS (33/33)",
+    "craftsmanship_external_base_name_validation": "PASS (10/10)",
+    "v06_patch_pairing": "PASS (286 test + 286 replace)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -87,14 +90,14 @@
   ],
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
-  "constitution_status": "V0.6_CURRENT_SCOPE_STATIC_QA_PASS_LINKED_VANILLA_LAYERED_ASSETS_PENDING",
-  "full_source_validation": "v0.5 baseline retained; v0.6 current scope adds 207/207 exact-source validated fields across 7 source assets. Total ledger: 1116 structured fields + 15 source-guarded Lua strings.",
-  "polish_pass": "PASS for current v0.6 scope: Zanaatkârlık tree plus first 6 linked FU-owned machine assets. Layered vanilla/FU stations and in-game LQA remain pending.",
+  "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
+  "full_source_validation": "v0.5 baseline 909 fields retained. v0.6 adds 286 validated fields: 243 pinned FU-owned, 33 pinned FU layered-patch, 10 vanilla short-name fields independently verified. Total ledger: 1195 structured + 15 source-guarded Lua strings.",
+  "polish_pass": "PASS for v0.6 static scope: Zanaatkârlık visible tree/fallback text and directly referenced core crafting stations. In-game LQA, font and layout tests remain pending.",
   "v06_dev_scope": [
-    "Localized all 157 player-visible tree/title/description fields in zb/researchTree/fu_craftsmanship.config.",
-    "Localized 50 player-visible fields across 6 directly linked FU colony/decor machine assets.",
-    "Locked Craftsmanship -> Zanaatkârlık and aligned Colony Station/Core/Deed, Snowprinter and Lamporium references with real inventory names.",
-    "Verified all 207 v0.6 fields exactly against the pinned FU 6.5.8 source commit.",
-    "Remaining linked stations whose FU data is layered over vanilla assets are still pending a safe patch strategy before inclusion."
+    "Localized 76 real research nodes plus the visible default/fallback help pair and tree name: 155 fields.",
+    "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
+    "Localized 131 fields across directly referenced colony, kitchen, sewing, biochemistry and core crafting stations.",
+    "Aligned research references with real inventory names such as Mucit Tezgâhı, Mutfak Tezgâhı, Dikiş Makinesi, Biyokimyacı Tezgâhı and Koloni Tapusu Mark II.",
+    "Validated all 286 v0.6 fields through pinned FU source, pinned FU patch layers or documented vanilla test values."
   ]
 }
