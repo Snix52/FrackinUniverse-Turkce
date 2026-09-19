@@ -1,52 +1,87 @@
-FU TÜRKÇE v0.4.0 BETA | ANAYASA KONTROL ÖZETİ
+FU TÜRKÇE v0.4.0 BETA | GERİYE DÖNÜK QA KONTROL ÖZETİ
 
-654 çevrilmiş oyuncu metni alanı / 62 hedef asset.
+689 yapılandırılmış oyuncu metni alanı / 64 patch asset.
+15 Lua UI metni / 1 ham override asset.
+TOPLAM: 704 görünür metin birimi / 65 hedef asset.
 
 KAPSAM
-- Önceki v0.3.0 kapsamı: 463 alan / 46 asset
-- Mühendislik araştırma ağacı: 139 alan
-- Mühendislik bağlı makineleri ve kaynakları: 52 alan
-- v0.4 yeni içerik: 191 alan / 16 asset
+- Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
+- Jeoloji: 104
+- Görevler: 46
+- Tezgâhlar: 14
+- Başlangıç telsiz mesajları: 26
+- Tarım: 101
+- Tarım makineleri: 61
+- Tarım görevleri: 23
+- Kimya: 71
+- Kimya makineleri ve kaynakları: 32
+- Mühendislik: 139
+- Mühendislik makineleri ve kaynakları: 61
 
 GEÇEN STATİK KONTROLLER
-- Exact FU kaynak commit doğrulaması: 654/654 alan.
-- Patchlenen asset kaynak doğrulaması: 62/62.
-- v0.4 yeni içerik doğrulaması: 191/191 alan, 16/16 kaynak asset.
-- Benzersiz JSON alan yolları: 654/654 PASS.
-- JSON Patch fixture uygulaması: 654/654 PASS.
-- Token / sayı / biçimlendirme kontrolleri: PASS.
-- Mühendislik build allowlist: 191/191 PASS.
+- Exact FU kaynak commit doğrulaması: 689/689 yapılandırılmış alan.
+- Patchlenen yapılandırılmış asset kaynak doğrulaması: 64/64.
+- Lua görünür metin exact-fragment doğrulaması: 15/15.
+- Ham Lua override asset: 1/1.
+- Benzersiz asset/pointer: 689/689 PASS.
+- Boş Türkçe değer: 0.
+- JSON Patch fixture uygulaması: 689/689 PASS.
+- Placeholder / kontrol kodu / sayı bütünlüğü: PASS.
+- Renk kodu bütünlüğü: PASS; 2 kaynak renk-yazım düzeltmesi belgeli istisna.
 - Unicode Türkçe politika: PASS.
 - ASCII dağıtım: yok.
+- Başlangıç radiomessages kapsaması: 26/26.
+- Geriye dönük yüksek etkili 8 asset yeniden kontrolü: 432/432 PASS.
+- Eksik alan bulunan 10 asset yeniden kontrolü: 77/77 PASS.
 
 TERMİNOLOJİ STANDARDİZASYONU
 - Improved -> Geliştirilmiş
 - Advanced -> Gelişmiş
+- Complex -> Karmaşık
 - Superior -> Üstün
 - Peerless -> Eşsiz
 - Mech, Tech, EPP ve FTL sistem adları korunur.
 - Ship Component Assembler -> Gemi Bileşeni Birleştirici.
 - STL Drive -> STL Motoru.
+- Small FTL Drive -> Küçük FTL Motoru.
 - Extraction Lab -> Çıkarma Laboratuvarı.
+- Terraforming -> Gezegen Biçimlendirme.
+- Microformer -> Mikro Biçimlendirici.
+- Terraformer -> Gezegen Biçimlendirici.
+- Garp Berry ve Blister Bush FU özel bitki/eşya adları olarak korunur.
+
+GERİYE DÖNÜK DÜZELTMELER
+1. Kalan (Inventor’s Table) İngilizce parantez açıklaması kaldırıldı.
+2. Özütleme Laboratuvarı -> Çıkarma Laboratuvarı.
+3. İleri Arıcılık -> Gelişmiş Arıcılık.
+4. Gezegen Dönüşümü / Mikro Dönüştürücü / Gezegen Dönüştürücü ailesi standardize edildi.
+5. Teknoloji Yükseltmeleri -> Tech Yükseltmeleri.
+6. Complex Plastics -> Karmaşık Plastikler.
+7. Görev yönlendirmelerindeki belirsiz/İngilizce kokan araştırma cümleleri düzeltildi.
+8. Filizlendirme Tezgâhının eksik 6 ırk inceleme cümlesi eklendi.
+9. Arı Barınağının eksik Buy / Cancel / Search / Replace Me UI metinleri eklendi.
+10. Başlangıç radiomessages dosyasındaki eksik 4 BYOS/FTL mesajı eklendi.
+11. BYOS Yıldızlararası Yolculuk görevi ve gerçek Küçük FTL Motoru nesnesi yerelleştirildi.
+12. Araştırma ekranının Lua içine gömülü 15 sabit İngilizce UI metni kaynak-korumalı override ile çevrildi.
 
 BELGELİ KAYNAK / BAĞLAM DÜZELTMELERİ
 1. create_growingtray kaynak metnindeki "^oraange;" kodu "^orange;" olarak düzeltildi.
-2. Aynı görevin kaynak turnInDescription alanı yanlışlıkla Armorworks istiyor.
-   Gerçek koşul itemName=fu_growingtray olduğu için Türkçede Yetiştirme Tepsisi kullanıldı.
-3. Mühendislik araştırma metni "Ship Crafting Table" diyor.
-   Gerçek FU nesnesi fu_shipcraftingtable oyuncuya "Ship Component Assembler" olarak gösterildiğinden
-   Türkçede Gemi Bileşeni Birleştirici kullanıldı.
+2. create_growingtray teslim metnindeki Armorworks, gerçek condition itemName=fu_growingtray olduğu için Yetiştirme Tepsisi yapıldı.
+3. create_electronics teslim metnindeki Armorworks, condition itemName=powerstation olduğu için Elektronik Merkezi yapıldı.
+4. create_greenhouse teslim metnindeki Armorworks, condition itemName=designlab olduğu için Sera yapıldı.
+5. create_tinkertable teslim metnindeki Armorworks, condition itemName=nanofabricator olduğu için İnce İşçilik Tezgâhı yapıldı.
+6. Mühendislik araştırma metnindeki Ship Crafting Table yerine gerçek fu_shipcraftingtable oyuncu adı Gemi Bileşeni Birleştirici kullanıldı.
+7. Tarım farming3 metnindeki Growing Tray yerine araştırmanın gerçekten açtığı isn_hydroponicstray oyuncu adı Hidroponik Tepsi kullanıldı.
 
 YAPILMAYAN LQA
 - Oyunu gerçek Workshop kurulumu üzerinde başlatma.
 - Font ve büyük/küçük Türkçe karakter testi.
-- Mühendislik araştırma açıklamalarının panelden taşma kontrolü.
-- Çıkarma Laboratuvarı ve araştırma bilgisayarlarının oyun içi isim/açıklama kontrolü.
-- Gemi Bileşeni Birleştirici arayüzü ve buton taşma kontrolü.
-- STL Motoru, FTL ve Mech zincirinin oyun içinde baştan sona kontrolü.
+- Araştırma açıklamalarının panelden taşma kontrolü.
+- Araştırma ekranı Lua override'ının gerçek oyunda etkileşim testi.
+- Görev zincirlerinin oyun içinde baştan sona takibi.
 - Diğer modlarla uyumluluk/yükleme sırası.
 
 SONUÇ
 Statik Anayasa QA: PASS.
-Exact kaynak doğrulaması: PASS (654/654).
+Exact kaynak doğrulaması: PASS (689/689 + Lua 15/15).
 Oyun içi LQA: BEKLİYOR.
