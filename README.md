@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.6.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.7.0 Beta / Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -12,6 +12,8 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Mühendislik araştırma ağacının tamamı
 - Güç Sistemleri araştırma ağacının tamamı
 - Zanaatkârlık araştırma ağacının tamamı
+- Zırh ve Silahlar araştırma ağacının tamamı
+- Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
 - Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
@@ -23,7 +25,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **1.195 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.210 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **1.312 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.327 görünür metin birimi** yerelleştirilmiştir. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -49,7 +51,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.6.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.7.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -58,7 +60,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da önceki 909 alan korunurken v0.6 için 243 FU-owned alan pinned FU kaynağından, 33 FU katman alanı pinned FU `.patch` kaynaklarından ve 10 vanilla kısa ad alanı bağımsız test değerlerinden doğrulandı. Toplam yapılandırılmış kapsam **1.195 alan / 109 patch asset**tir. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da v0.5 ve v0.6 kapsamları korunurken v0.7 için **111 alan pinned FU kaynağından**, **4 vanilla Örs zinciri alanı bağımsız test değerlerinden** ve **2 Solunum EPP alanı vanilla asset kaynağından** doğrulandı. Toplam yapılandırılmış kapsam **1.312 alan / 113 patch asset**tir. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -67,6 +69,12 @@ Güncel statik QA'da önceki 909 alan korunurken v0.6 için 243 FU-owned alan pi
 Zanaatkârlık ağacındaki **76 gerçek araştırma düğümü**, `default` yardım/fallback metni ve ağaç adı yerelleştirildi. Kaynakta bulunan ancak hiçbir düğüme bağlı olmayan `workbenchatechy` stringi oyuncuya görünmediği için yamaya alınmadı. Doğrudan yönlendirme yapılan temel istasyon adları envanter adlarıyla eşleştirildi.
 
 v0.6 eklemesi: **286 yapılandırılmış alan / 12 hedef asset**. Oyun içi LQA ve panel taşma kontrolleri hâlâ bekliyor.
+
+## v0.7 Zırh ve Silahlar
+
+Zırh ve Silahlar ağacındaki **47 gerçek araştırma düğümü**, görünür `default` yardım/fallback metni ve ağaç adı yerelleştirildi. Araştırmanın doğrudan yönlendirdiği ana istasyonlar gerçek envanter adlarıyla eşleştirildi: **Zırh Atölyesi → Montaj Hattı → Cephanelik**, **Örs → Dövme Ocağı → Çoğaltıcı** ve **Solunum EPP'si**.
+
+v0.7 eklemesi: **117 yapılandırılmış alan / 4 hedef asset**. Oyun içi LQA ve panel taşma kontrolleri bekliyor.
 
 ## Yol haritası
 
@@ -81,7 +89,7 @@ v0.6 eklemesi: **286 yapılandırılmış alan / 12 hedef asset**. Oyun içi LQA
 - [x] v0.5 Güç Sistemleri ve bağlı temel makineler
 - [x] Güç Sistemleri araştırma ağacı
 - [x] Zanaatkârlık araştırma ağacı
-- [ ] Savaş araştırma ağacı
+- [x] Zırh ve Silahlar araştırma ağacı
 - [ ] Delilik araştırma ağacı
 - [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi
 - [ ] Görevlerin kalan bölümü

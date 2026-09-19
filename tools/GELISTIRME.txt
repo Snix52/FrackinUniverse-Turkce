@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.6.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.7.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1195 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1312 yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
 
@@ -51,4 +51,18 @@ v0.6 beta QA:
   patch eşleşmesi: 286 test + 286 replace PASS
   benzersiz pointer / boş çeviri / renk-kontrol kodu: PASS
   workbenchatechy ölü stringi: dağıtımdan çıkarıldı
+  oyun içi LQA: BEKLİYOR
+
+v0.7 beta QA:
+  fu_warcraft: 47 gerçek araştırma düğümü
+  ağaç + default/fallback görünür alan: 97
+  bağlı istasyon/EPP: 20 alan
+  v0.7 toplam ekleme: 117 alan / 4 hedef asset
+  toplam yapılandırılmış alan: 1312
+  toplam görünür birim: 1327 (1312 yapılandırılmış + 15 Lua)
+  pinned FU exact-source: 111/111 PASS
+  vanilla Örs test doğrulaması: 4/4 PASS
+  vanilla Solunum EPP asset doğrulaması: 2/2 PASS
+  patch eşleşmesi: 117 test + 117 replace PASS
+  benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
   oyun içi LQA: BEKLİYOR

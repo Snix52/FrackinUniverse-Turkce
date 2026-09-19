@@ -76,7 +76,7 @@
       "url": "https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/radiomessages/fu_quests.radiomessages"
     }
   ],
-  "translation_version": "0.6.0-beta",
+  "translation_version": "0.7.0-beta",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "assets": {
     "zb/researchTree/fu_agriculture.config": "c5d1acc20ce35c8220cff577efb459c8b41ff54f",
@@ -146,9 +146,11 @@
     "objects/colonysystem2/colonydeedmk2/colonydeedmk2tiny.object": "18616e3eed2a7f2579a96c16d8c7122104a791d2",
     "objects/peglaci/snowpersongenerator/snowpersongenerator.object": "5df35a31e357361171f33f78a474eea38589c2e0",
     "objects/crafting/lavalampstation/lavalampstation.object": "da605444c4e47387b7efa43ff69afd1fe3077684",
-    "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object": "b7ee83fb64a18d16f4a241998686922f91893e4a"
+    "objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object": "b7ee83fb64a18d16f4a241998686922f91893e4a",
+    "zb/researchTree/fu_warcraft.config": "24341919b9b9d14632a8d053bb7fccdaa15a853e",
+    "objects/crafting/armory/armory.object": "dcdc1471cca23eaa1072d7e24cd3d23bb7c86281"
   },
-  "validation_note": "v0.6 Zanaatkârlık beta: 155 ağaç/fallback alanı + 131 bağlı makine/tezgâh alanı = 286 yeni yapılandırılmış alan. 245 FU-owned alan pinned FU 6.5.8 kaynağından exact; 33 FU katman alanı pinned FU patchlerinden exact; 10 vanilla kısa ad alanı bağımsız Starbound test değerleriyle doğrulandı. Toplam ledger 1195 yapılandırılmış alan + 15 Lua görünür metin.",
+  "validation_note": "v0.7 Zırh ve Silahlar beta: 97 araştırma ağacı/fallback alanı + 20 bağlı istasyon/EPP alanı = 117 yeni yapılandırılmış alan. 111 pinned FU source exact, 4 vanilla Anvil zinciri test değeri, 2 vanilla Breathing EPP asset değeri doğrulandı. Toplam ledger 1312 yapılandırılmış alan + 15 Lua görünür metin.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
@@ -186,6 +188,22 @@
         "blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc"
       },
       "note": "FU kaynak ağacında tam vanilla .object bulunmadığı için yalnızca kısa adlar bağımsız test değerleriyle doğrulanır; açıklamalar kaynak görülmeden çevrilmez."
+    },
+    "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object": {
+      "vanilla_name_verification": {
+        "repository": "jss2a98aj/Starbound-Patch-Project",
+        "commit": "d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505"
+      },
+      "note": "Vanilla Anvil/Forge/Replicator kısa adları bağımsız test değerleriyle doğrulanır; ^white; Türkçede ^reset; ile kapatılır."
+    },
+    "items/armors/backitems/breathprotection/breathprotection.back": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/armors/backitems/breathprotection/breathprotection.back"
+      },
+      "note": "Breathing EPP kısa ad ve açıklaması vanilla Starbound asset kaynağından exact doğrulanır."
     }
   }
 }

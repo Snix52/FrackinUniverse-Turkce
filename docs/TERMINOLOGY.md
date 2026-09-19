@@ -168,6 +168,22 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 | Architect's Table | Mucit Tezgâhı yükseltmesi | Nesne | Mimar Tezgâhı | Architect's Table | LOCKED | |
 
+| Assembly Line | Zırh Atölyesi 2. kademe | Nesne | Montaj Hattı | Assembly Line | LOCKED | FU armory yükseltmesi |
+
+| Armory | Zırh Atölyesi 3. kademe | Nesne | Cephanelik | Armory | LOCKED | FU armory yükseltmesi |
+
+| Anvil | Vanilla silah üretim istasyonu 1. kademe | Nesne | Örs | Anvil | LOCKED | craftinganvil |
+
+| Forge | Vanilla silah üretim istasyonu 2. kademe | Nesne | Dövme Ocağı | Forge | LOCKED | craftinganvil |
+
+| Replicator | Vanilla silah üretim istasyonu 3. kademe | Nesne | Çoğaltıcı | Replicator | LOCKED | craftinganvil |
+
+| Breathing EPP | Vanilla EPP | Nesne | Solunum EPP'si | Breathing EPP | LOCKED | breathprotectionback |
+
+| Wastelander Equipment | Araştırma başlığı | Sistem | Kıyamet Sonrası Ekipman | Wastelander Ekipmanı | LOCKED | Özel ad değil; hurda/kıyamet sonrası ekipman bağlamı |
+
+| depleted uranium | Bilimsel/mühimmat bağlamı | Malzeme | tüketilmiş uranyum | seyreltilmiş uranyum | LOCKED | Yerleşik teknik karşılık |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
