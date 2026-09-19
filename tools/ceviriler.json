@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.2.0-beta",
-  "note": "v0.2 Tarım: Tarım araştırma ağacı, bağlı FU makineleri/kaynakları ve temel öğretici görevleri eklendi.",
+  "translation_version": "0.3.0-beta",
+  "note": "v0.3 Kimya: Kimya araştırma ağacı ve doğrudan bağlı makine/kaynak adları eklendi.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -2536,6 +2536,727 @@
       "en": "Animals do not produce resources unless they are fed and happy. Keeping them fed means lots of resources. The happier they are, the faster they will produce for you! Just feed them what they actually eat! Mooshi do not enjoy meat, and raptors hate carrots.",
       "tr": "Hayvanlar beslenip mutlu olmadıkça kaynak üretmez. Onları tok tutmak bol kaynak demektir. Ne kadar mutlu olurlarsa o kadar hızlı üretirler! Yalnız gerçekten yedikleri şeyleri ver. Mooshi etten hoşlanmaz, raptorlar da havuçtan nefret eder.",
       "section": "Tarım görevleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/trees/fu_chemistry",
+      "en": "Chemistry",
+      "tr": "Kimya",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/default/0",
+      "en": "Instructions",
+      "tr": "Kullanım Rehberi",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/default/1",
+      "en": "Select a research by clicking one of the icons on the grid.\nYou can navigate the grid by dragging with the left mouse button.\n\n- The left most button at the upper part of the screen opens a list of research trees to pick from.\n\n- The second button opens a list of non-hidden research options. Click a research on the displayed to center the view on it. Click again to hide the list.\n\n- The third button will center the view on the middle of the tree, or the currently selected research.\n\n- The last button toggles ^orange;low quality mode^reset;. This makes the GUI jump to a position instead of panning to it, or the center button. In addition, dragging/navigating on the the main screen will update only after you release the mouse button. It is best to use the search list with this mode enabled.",
+      "tr": "Bir araştırma seçmek için ızgaradaki simgelerden birine tıkla.\nSol fare tuşunu basılı tutup sürükleyerek ağaçta gezinebilirsin.\n\n- Ekranın üst kısmındaki en soldaki düğme, seçebileceğin araştırma ağaçlarını listeler.\n\n- İkinci düğme, gizli olmayan araştırmaları listeler. Listedeki bir araştırmaya tıklarsan görünüm ona odaklanır. Listeyi kapatmak için tekrar tıkla.\n\n- Üçüncü düğme, görünümü ağacın ortasına veya seçili araştırmaya odaklar.\n\n- Son düğme ^orange;düşük kalite modunu^reset; açıp kapatır. Bu modda arayüz hedefe kaymak yerine doğrudan geçer. Ana ekranda sürükleme sırasında görünüm, fare tuşunu bıraktıktan sonra güncellenir. Bu mod açıkken arama listesini kullanmak daha pratiktir.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/survival_1/0",
+      "en": "Basic Training",
+      "tr": "Temel Eğitim",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/survival_1/1",
+      "en": "^orange;Tier 0^reset;\n\nYour training, thanks to four years in the Protectorate Academy, provides you with basic survival skills to keep you alive for extended periods in the event of a crash. This includes basic chemistry knowledge.",
+      "tr": "^orange;Kademe 0^reset;\n\nProtectorate Akademisi’nde aldığın dört yıllık eğitim, bir kaza durumunda uzun süre hayatta kalmanı sağlayacak temel becerileri kazandırdı. Buna temel kimya bilgisi de dâhil.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/chemistryn/0",
+      "en": "Chemistry",
+      "tr": "Kimya",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/chemistryn/1",
+      "en": "^orange;Tier 1^reset;\n\nChemistry is a wonderful field with many practical applications such as the creation of plastics, bombs, medicine, fertilizer or biodiesel. With the ability to make an ^orange;Alchemy Table^reset; at your ^orange;Machining Table^reset;, you're now ready to start exploring its potential.",
+      "tr": "^orange;Kademe 1^reset;\n\nKimya; plastik, bomba, ilaç, gübre ve biyodizel üretimi gibi birçok pratik kullanım alanına sahip harika bir bilim dalı. ^orange;İmalat Tezgâhında^reset; bir ^orange;Simya Tezgâhı^reset; üretebildiğine göre artık potansiyelini keşfetmeye hazırsın.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics1/0",
+      "en": "Simple Optics",
+      "tr": "Basit Optik",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics1/1",
+      "en": "^orange;Tier 2^reset;\n\nMicroscopes are extremely useful, allowing you to scan Bees for their genetic capabilities as well as generate research from investigated artifacts and equipment.\n\nThis microscope is available in an ^orange;Auto-Assembler^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nMikroskoplar son derece kullanışlıdır; arıların genetik özelliklerini taramana, ayrıca incelediğin eser ve ekipmanlardan Araştırma üretmene olanak tanır.\n\nBu mikroskobu ^orange;Otomatik Birleştiricide^reset; üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics2/0",
+      "en": "Complex Optics",
+      "tr": "Karmaşık Optik",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou're able to create much better microscopes now, enhancing your production rates.\n\nThis microscope is available in a ^orange;Matter Assembler^reset;.",
+      "tr": "^orange;Kademe 3^reset;\n\nArtık çok daha iyi mikroskoplar üretebilir ve üretim hızını artırabilirsin.\n\nBu mikroskobu ^orange;Madde Birleştiricide^reset; üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics3/0",
+      "en": "Advanced Optics",
+      "tr": "Gelişmiş Optik",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics3/1",
+      "en": "^orange;Tier 4^reset;\n\nYour microscopes are getting quite good now, allowing extreme zoom and fantastic clarity.\n\nThis microscope is available in a ^orange;Matter Assembler^reset;.",
+      "tr": "^orange;Kademe 4^reset;\n\nMikroskopların artık oldukça gelişmiş; çok yüksek büyütme ve müthiş netlik sağlıyor.\n\nBu mikroskobu ^orange;Madde Birleştiricide^reset; üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics4/0",
+      "en": "Master Optics",
+      "tr": "Optik Ustalığı",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/optics4/1",
+      "en": "^orange;Tier 5^reset;\n\nYour microscopes are a thing of beauty, allowing you to see into microcosms previously unknown.\n\nThis microscope is available in a ^orange;Power Station^reset;.",
+      "tr": "^orange;Kademe 5^reset;\n\nMikroskopların artık birer sanat eseri; daha önce bilinmeyen mikro dünyaları görmeni sağlıyor.\n\nBu mikroskobu ^orange;Güç İstasyonunda^reset; üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/plastic1/0",
+      "en": "Simple Plastics",
+      "tr": "Temel Plastikler",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/plastic1/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to create a simple, flexible plastic material that is especially helpful in the creation of electronics and wearables.",
+      "tr": "^orange;Kademe 2^reset;\n\nÖzellikle elektronik ve giyilebilir ekipman üretiminde işe yarayan basit ve esnek bir plastik malzeme üretmeyi öğrendin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/plastic2/0",
+      "en": "Complex Plastics",
+      "tr": "Gelişmiş Plastikler",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/plastic2/1",
+      "en": "^orange;Tier 3^reset;\n\nHaving learned a lot about plastic creation, you can now create a much more potent rigid plastic that is extremely durable and quite heat-proof. Advanced Plastic is a key ingredient in tons of things, and you can almost never have enough. Luckily, you've learned of several different ways to make this substance, though you'll probably be deriving it from petrol most of the time.",
+      "tr": "^orange;Kademe 3^reset;\n\nPlastik üretiminde epey ilerledin. Artık son derece dayanıklı ve ısıya dirençli, çok daha güçlü sert bir plastik üretebilirsin. Gelişmiş Plastik sayısız üretimin temel malzemesidir ve neredeyse hiçbir zaman fazlası olmaz. Neyse ki bu maddeyi üretmenin birkaç farklı yolunu öğrendin; çoğu zaman petrolden elde edeceksin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/graphene/0",
+      "en": "Carbon Latticing",
+      "tr": "Karbon Örgüsü",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/graphene/1",
+      "en": "^orange;Tier 3^reset;\n\nGraphene is one of the most wonderful substances ever created, and now you know how to make it yourself. A one-atom thick sheet of hexagonal graphite, graphene is ridiculously durable. In addition to being a key component in many powerful weapons and armor, graphene is also very useful in the creation of complex circuitry.",
+      "tr": "^orange;Kademe 3^reset;\n\nGrafen, üretilebilen en etkileyici maddelerden biridir ve artık onu kendin yapmayı biliyorsun. Tek atom kalınlığındaki altıgen grafit tabakası inanılmaz derecede dayanıklıdır. Güçlü silah ve zırhlarda temel bileşen olmasının yanında karmaşık devrelerin üretiminde de son derece kullanışlıdır.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/morphite/0",
+      "en": "Morphic Super-Compounds",
+      "tr": "Morfik Süper Bileşikler",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/morphite/1",
+      "en": "^orange;Tier 4^reset;\n\nThrough intense experimentation, you've learned to create an amazing substance that exploits the strange properties of phase matter to be simultaneously incredibly durable and highly moldable. Besides its use in weapons and armor, it's also quite conductive and will allow amazing new electronic devices to be made.\n\nYour knowledge of phasic materials has also allowed you to create 'blocks' of raw matter in your lab that are useful for a couple different esoteric reactions.",
+      "tr": "^orange;Kademe 4^reset;\n\nYoğun deneyler sonucunda faz maddesinin tuhaf özelliklerinden yararlanan, aynı anda hem son derece dayanıklı hem de kolay şekillendirilebilir olağanüstü bir madde üretmeyi öğrendin. Silah ve zırhlarda kullanılmasının yanı sıra oldukça iletkendir ve yeni nesil elektronik cihazların önünü açar.\n\nFaz maddeleri hakkındaki bilgin, laboratuvarında bazı sıra dışı tepkimelerde kullanılan ham maddeden \"bloklar\" üretmeni de sağlıyor.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/chemistrystuff1/0",
+      "en": "Chemical Reactions",
+      "tr": "Kimyasal Tepkimeler",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/chemistrystuff1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to make chunks of pure carbon in your lab and a couple different compounds that will be useful in agriculture and medicine.",
+      "tr": "^orange;Kademe 1^reset;\n\nLaboratuvarında saf karbon parçaları ve tarım ile tıpta işe yarayacak birkaç farklı bileşik üretmeyi öğrendin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/chemistrystuff2/0",
+      "en": "Elemental Synthesis",
+      "tr": "Elementel Sentez",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/chemistrystuff2/1",
+      "en": "^orange;Tier 2^reset;\n\nWith your newfound chemistry knowledge, you can now create various elemental compounds that would normally be obtained from slain foes. You can also create more advanced crystals. You'll have to upgrade to a ^orange;Chemistry Lab^reset; first, though.",
+      "tr": "^orange;Kademe 2^reset;\n\nYeni kimya bilgin sayesinde normalde öldürülen düşmanlardan elde edilen çeşitli elementel bileşikleri artık üretebilirsin. Daha gelişmiş kristaller de oluşturabilirsin. Ancak önce ^orange;Kimya Laboratuvarına^reset; yükseltmen gerekecek.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/aliencompound/0",
+      "en": "Bio-Metallic Compounds",
+      "tr": "Biyometalik Bileşikler",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/aliencompound/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've learned how to mix living material and metals in chemistry to do some bizarre things. You can produce useful Alien Compound and Quietus Ore in your lab.",
+      "tr": "^orange;Kademe 4^reset;\n\nKimyada canlı materyalleri ve metalleri bir araya getirerek oldukça tuhaf sonuçlar elde etmeyi öğrendin. Laboratuvarında Uzaylı Bileşiği ve Quietus Cevheri üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/explosives1/0",
+      "en": "Explosives",
+      "tr": "Patlayıcılar",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/explosives1/1",
+      "en": "^orange;Tier 1^reset;\n\nPerhaps one of the most classic chemical reactions is something going boom. Now, you can make that happen on demand with some neat new explodables to help you mine.",
+      "tr": "^orange;Kademe 1^reset;\n\nEn klasik kimyasal tepkimelerden biri bir şeyin güm diye patlamasıdır. Artık madencilikte işine yarayacak birkaç yeni patlayıcıyla bunu istediğin zaman yapabilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/explosives2/0",
+      "en": "Advanced Explosives",
+      "tr": "Gelişmiş Patlayıcılar",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/explosives2/1",
+      "en": "^orange;Tier 3^reset;\n\nBy using plastic in the creation of explosives, you can not only more safely contain bigger and deadlier bombs, but also easily shape your charges to make them more effective when they blow.",
+      "tr": "^orange;Kademe 3^reset;\n\nPatlayıcı üretiminde plastik kullanarak daha büyük ve ölümcül bombaları daha güvenli biçimde muhafaza edebilir, ayrıca patlayıcı yüklerini kolayca şekillendirip etkilerini artırabilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/fertilizer1/0",
+      "en": "Fertilizer",
+      "tr": "Gübre",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/fertilizer1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've begun to learn how to make useful crop-growing aids out of chemicals and can now craft basic fertilizer at your ^orange;Alchemy Table^reset;\n\nAmmonium Sulfate can be extracted from many sources. Try grinding up some Core Fragments or Poop in your Hand Mill.\n\nYou'll need a ^orange;Growing Tray^reset; to do anything with your fertilizer - if you're just growing plants out of the ground with a hoe and watering can, it won't be of any use to you.",
+      "tr": "^orange;Kademe 1^reset;\n\nKimyasallardan yararlı tarım destekleri üretmeyi öğrenmeye başladın ve artık ^orange;Simya Tezgâhında^reset; temel gübre hazırlayabilirsin.\n\nAmonyum Sülfat birçok kaynaktan çıkarılabilir. El Değirmeninde biraz Çekirdek Parçası veya Dışkı öğütmeyi dene.\n\nGübreni kullanmak için bir ^orange;Yetiştirme Tepsisine^reset; ihtiyacın var. Bitkileri yalnızca çapa ve sulama kabıyla toprağa ekiyorsan gübre sana bir fayda sağlamaz.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/fertilizer2/0",
+      "en": "Improved Fertilizer",
+      "tr": "Geliştirilmiş Gübre",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/fertilizer2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make even better fertilizer using more complex chemicals. Your plants will thank you with faster growth and more yields.",
+      "tr": "^orange;Kademe 2^reset;\n\nDaha karmaşık kimyasallarla daha iyi gübre üretebilirsin. Bitkilerin daha hızlı büyüme ve daha yüksek verimle karşılığını verecek.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/fertilizer3/0",
+      "en": "Peerless Fertilizer",
+      "tr": "Üstün Gübre",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/fertilizer3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've mastered not just plant fertilization, but also the making of pesticides. Just make sure to wash it before you eat it.",
+      "tr": "^orange;Kademe 3^reset;\n\nYalnızca bitki gübrelemede değil, pestisit üretiminde de ustalaştın. Ürünü yemeden önce iyice yıkamayı unutma.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/biofuel1/0",
+      "en": "Biofuel",
+      "tr": "Biyoyakıt",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/biofuel1/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned how to make fuel out of organic matter, which can be used to fuel various generators, ship engines and mechs.",
+      "tr": "^orange;Kademe 2^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve mech sistemlerinde kullanılabilir.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/biofuel2/0",
+      "en": "Improved Biofuel",
+      "tr": "Geliştirilmiş Biyoyakıt",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/biofuel2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned how to make fuel out of organic matter, which can be used to fuel various generators, ship engines and mechs.",
+      "tr": "^orange;Kademe 3^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve mech sistemlerinde kullanılabilir.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/biofuel3/0",
+      "en": "Amazing Biofuel",
+      "tr": "Üstün Biyoyakıt",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/biofuel3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've learned how to make fuel out of organic matter, which can be used to fuel various generators, ship engines and mechs.",
+      "tr": "^orange;Kademe 4^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve mech sistemlerinde kullanılabilir.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/liquidcrafting1/0",
+      "en": "Liquid Creation",
+      "tr": "Sıvı Üretimi",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/liquidcrafting1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned the basics of liquid creation and can now artifically create a few different liquid types at your lab.\n\nYou've also learned to create Cell Material, a useful resource when engineering novel plants.",
+      "tr": "^orange;Kademe 1^reset;\n\nSıvı üretiminin temellerini öğrendin ve artık laboratuvarında birkaç farklı sıvı türünü yapay olarak üretebilirsin.\n\nAyrıca yeni bitkiler tasarlarken kullanışlı bir kaynak olan Hücre Materyalini üretmeyi öğrendin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/liquidcrafting2/0",
+      "en": "Advanced Liquids",
+      "tr": "Gelişmiş Sıvılar",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/liquidcrafting2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou now know how to make a few more types of liquid, including some really hot or really cold ones.\n\nWith the engineered Spliced Cell, you have access to even greater genetic engineering.",
+      "tr": "^orange;Kademe 2^reset;\n\nArtık çok sıcak veya çok soğuk olanlar da dâhil birkaç yeni sıvı türü üretebiliyorsun.\n\nTasarlanmış Birleştirilmiş Hücre sayesinde daha ileri genetik mühendisliği çalışmalarına erişebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/liquidcrafting3/0",
+      "en": "Peerless Liquid Creation",
+      "tr": "Üstün Sıvı Üretimi",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/liquidcrafting3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou can make even more complicated liquids at your lab.",
+      "tr": "^orange;Kademe 4^reset;\n\nLaboratuvarında daha da karmaşık sıvılar üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/mechfuel/0",
+      "en": "Liquid Fuels",
+      "tr": "Sıvı Yakıtlar",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/mechfuel/1",
+      "en": "^orange;Tier 2^reset;\n\nYour combined knowledge of fluid creation and biofuel has led to you designing an enhanced, efficient fuel for use in mechs and combustion generators.",
+      "tr": "^orange;Kademe 2^reset;\n\nSıvı üretimi ile biyoyakıt konusundaki bilgini birleştirerek mech sistemleri ve yanmalı jeneratörlerde kullanılabilecek daha verimli, geliştirilmiş bir yakıt tasarladın.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/cells1/0",
+      "en": "Cell Manipulation",
+      "tr": "Hücre Manipülasyonu",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/cells1/1",
+      "en": "^orange;Tier 3^reset;\n\nYou are now able to engineer advanced cells and mutagenic samples in your lab that are especially useful in bioweapons and plant design as well as craft and utilize bizarre biological slimes.",
+      "tr": "^orange;Kademe 3^reset;\n\nLaboratuvarında özellikle biyolojik silahlar ve bitki tasarımında işe yarayan gelişmiş hücreler ile mutajenik örnekler üretebilirsin. Ayrıca tuhaf biyolojik balçıkları üretip kullanmayı da öğrendin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/cells2/0",
+      "en": "Cell Mastery",
+      "tr": "Hücre Ustalığı",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/cells2/1",
+      "en": "^orange;Tier 5^reset;\n\nYour knowledge of cells is vast. You can make even more strange cells and mutagenic samples.",
+      "tr": "^orange;Kademe 5^reset;\n\nHücreler konusundaki bilgin artık çok ileri düzeyde. Daha da tuhaf hücreler ve mutajenik örnekler üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/elduucrystals/0",
+      "en": "Crystal Horticulture",
+      "tr": "Kristal Yetiştiriciliği",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/elduucrystals/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've studied the Eld'uukhar art of growing crystals like plants and can now do so yourself.",
+      "tr": "^orange;Kademe 3^reset;\n\nEld'uukhar halkının kristalleri bitki gibi yetiştirme sanatını inceledin ve artık bunu kendin de yapabilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/glowinggels/0",
+      "en": "Specialized Gels",
+      "tr": "Özel Jeller",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/glowinggels/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've developed some weird gels that glow in the dark and can accelerate anything that touches them to a high speed.",
+      "tr": "^orange;Kademe 3^reset;\n\nKaranlıkta parlayan ve temas eden her şeyi yüksek hıza çıkarabilen tuhaf jeller geliştirdin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/unstableparticles/0",
+      "en": "Particle Destabilization",
+      "tr": "Parçacık Kararsızlaştırma",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/unstableparticles/1",
+      "en": "^orange;Tier 4^reset;\n\nTurns out all that explosives knowledge was good for something besides making things explode: making things _prone_ to exploding. Unstable Particles are crucial in developing nuclear technology.",
+      "tr": "^orange;Kademe 4^reset;\n\nPatlayıcılar konusundaki bilginin yalnızca bir şeyleri patlatmaya değil, patlamaya yatkın şeyler üretmeye de yaradığını keşfettin. Kararsız Parçacıklar nükleer teknoloji geliştirmede kritik öneme sahip.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/metallichydrogen/0",
+      "en": "Metallic Hydrogen",
+      "tr": "Metalik Hidrojen",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/metallichydrogen/1",
+      "en": "^orange;Tier 5^reset;\n\nNormally, this stuff is only found in the depths of gas giants, but you found a way to make it in your lab by yourself. Metallic Hydrogen is a powerful superconductor, and an amazing fuel source. Also, you found the best way to weaponize Unstable Particles - by combining them with Metallic Hydrogen to build ridiculously destructive grenades.",
+      "tr": "^orange;Kademe 5^reset;\n\nNormalde yalnızca gaz devlerinin derinliklerinde bulunan bu maddeyi artık laboratuvarında kendin üretebiliyorsun. Metalik Hidrojen güçlü bir süperiletken ve müthiş bir yakıt kaynağıdır. Kararsız Parçacıkları silaha dönüştürmenin en iyi yolunu da buldun: onları Metalik Hidrojenle birleştirip inanılmaz derecede yıkıcı el bombaları üretmek.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/medicinen1/0",
+      "en": "Basic Medicine",
+      "tr": "Temel Tıp",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/medicinen1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've taught yourself some basic medical knowledge and can make simple healing items.\n\n^yellow;Did you know?^reset; Healing items in Frackin' Universe impose a moderately long cooldown upon use during which no other healing items can be used. Don't expect to spam bandages to victory!",
+      "tr": "^orange;Kademe 1^reset;\n\nKendine temel tıp bilgisi öğrettin ve artık basit iyileştirme eşyaları üretebilirsin.\n\n^yellow;Biliyor muydun?^reset; Frackin' Universe'de iyileştirme eşyası kullandığında, başka bir iyileştirme eşyası kullanamayacağın orta uzunlukta bir bekleme süresi uygulanır. Bandajları art arda basıp zafer bekleme!",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/medicinen2/0",
+      "en": "Advanced Medicine",
+      "tr": "Gelişmiş Tıp",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/medicinen2/1",
+      "en": "^orange;Tier 3^reset;\n\nYour medical knowledge has grown quite a bit. You're able to make superior healing items.",
+      "tr": "^orange;Kademe 3^reset;\n\nTıp bilgin epey gelişti. Artık çok daha etkili iyileştirme eşyaları üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/medicinen3/0",
+      "en": "Peerless Medicine",
+      "tr": "Üstün Tıp",
+      "section": "Kimya"
+    },
+    {
+      "asset": "zb/researchTree/fu_chemistry.config",
+      "pointer": "/strings/research/medicinen3/1",
+      "en": "^orange;Tier 5^reset;\n\nIt's no exaggeration to say that you're one of the best medics in the galaxy. You can craft impossibly potent healing items which can cure any wound.",
+      "tr": "^orange;Kademe 5^reset;\n\nGalaksideki en iyi sağlıkçılardan biri olduğunu söylemek abartı olmaz. Her türlü yarayı iyileştirebilecek kadar güçlü tedavi eşyaları üretebilirsin.",
+      "section": "Kimya"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/description",
+      "en": "Play with chemicals. Endless fun.",
+      "tr": "Kimyasallarla oyna. Eğlence hiç bitmez.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Alchemy Table^reset;",
+      "tr": "^orange;Simya Tezgâhı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Experiment with chemicals.",
+      "tr": "Kimyasallarla deneyler yap.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Alchemy Table^reset;",
+      "tr": "^orange;Simya Tezgâhı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^orange;Alchemy Table^reset;",
+      "tr": " ^orange;Simya Tezgâhı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Experiment with chemicals.",
+      "tr": " ^#dddddd;Kimyasallarla deneyler yap.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "More advanced experiments. More kaboom.",
+      "tr": "Daha gelişmiş deneyler. Daha büyük patlamalar.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Chemistry Lab^reset;",
+      "tr": "^orange;Kimya Laboratuvarı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^orange;Chemistry Lab^reset;",
+      "tr": " ^orange;Kimya Laboratuvarı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;More advanced experiments. More kaboom.",
+      "tr": " ^#dddddd;Daha gelişmiş deneyler. Daha büyük patlamalar.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Superior chemistry and biology experiments.",
+      "tr": "İleri düzey kimya ve biyoloji deneyleri.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Bio-Chem Lab^reset;",
+      "tr": "^orange;Biyokimya Laboratuvarı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^orange;Bio-Chem Lab^reset;",
+      "tr": " ^orange;Biyokimya Laboratuvarı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlab.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Superior chemistry and biology experiments.",
+      "tr": " ^#dddddd;İleri düzey kimya ve biyoloji deneyleri.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/ff_plastic.item",
+      "pointer": "/description",
+      "en": "By the power of science, behold Polyetheretherketone! This synthetic compound is strong, heat-resistant, and bio-compatible.",
+      "tr": "Bilimin gücüyle karşında Polietereterketon! Bu sentetik bileşik güçlü, ısıya dayanıklı ve biyouyumludur.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/ff_plastic.item",
+      "pointer": "/shortdescription",
+      "en": "Advanced Plastic",
+      "tr": "Gelişmiş Plastik",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/cellmateria.item",
+      "pointer": "/description",
+      "en": "A material produced from various mixtures of cells.",
+      "tr": "Çeşitli hücre karışımlarından üretilen bir materyal.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/cellmateria.item",
+      "pointer": "/shortdescription",
+      "en": "Cell Material",
+      "tr": "Hücre Materyali",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/cell_spliced.item",
+      "pointer": "/description",
+      "en": "An engineered cell.",
+      "tr": "Tasarlanmış bir hücre.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/cell_spliced.item",
+      "pointer": "/shortdescription",
+      "en": "Spliced Cell",
+      "tr": "Birleştirilmiş Hücre",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/unstableparticles.item",
+      "pointer": "/description",
+      "en": "Unstable but contained particles for use in weapons, energy projection and more.",
+      "tr": "Silahlarda, enerji yansıtmada ve daha fazlasında kullanılmak üzere kontrol altında tutulan kararsız parçacıklar.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/unstableparticles.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Unstable Particles^reset;",
+      "tr": "^#88e25b;Kararsız Parçacıklar^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/fu_hydrogenmetallic.item",
+      "pointer": "/description",
+      "en": "A quantum-viable super-conductor.\n^blue;+^white;10 ^blue;Fuel^reset;",
+      "tr": "Kuantum uygulamalarına uygun bir süperiletken.\n^blue;+^white;10 ^blue;Yakıt^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/fu_hydrogenmetallic.item",
+      "pointer": "/shortdescription",
+      "en": "Metallic Hydrogen",
+      "tr": "Metalik Hidrojen",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/quietusore.item",
+      "pointer": "/description",
+      "en": "A strange ore that challenges the scientific definition of \"life\".",
+      "tr": "Bilimsel \"yaşam\" tanımına meydan okuyan tuhaf bir cevher.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/quietusore.item",
+      "pointer": "/shortdescription",
+      "en": "Quietus Ore",
+      "tr": "Quietus Cevheri",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/ammoniumsulfate.item",
+      "pointer": "/description",
+      "en": "A sulfur-rich inorganic salt.",
+      "tr": "Kükürt bakımından zengin inorganik bir tuz.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "items/generic/crafting/ammoniumsulfate.item",
+      "pointer": "/shortdescription",
+      "en": "Ammonium Sulfate",
+      "tr": "Amonyum Sülfat",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/handmill/handmill.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/handmill/handmill.object",
+      "pointer": "/description",
+      "en": "Extracts useful materials from most block types.",
+      "tr": "Çoğu blok türünden yararlı malzemeler çıkarır.",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/handmill/handmill.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Hand Mill^reset;",
+      "tr": "^cyan;El Değirmeni^reset;",
+      "section": "Kimya makineleri ve kaynakları"
+    },
+    {
+      "asset": "objects/crafting/handmill/handmill.object",
+      "pointer": "/subtitle",
+      "en": "Block Extractor",
+      "tr": "Blok Çıkarıcı",
+      "section": "Kimya makineleri ve kaynakları"
     }
   ]
 }
