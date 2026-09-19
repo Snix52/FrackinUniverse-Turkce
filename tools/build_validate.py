@@ -175,6 +175,13 @@ def allowed(a,p):
         if a=='objects/crafting/wiringstation/wiringstation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
+    layered_craftsmanship_assets={
+        'objects/crafting/woodencookingtable/woodencookingtable.object'
+    }
+    if a in layered_craftsmanship_assets:
+        return bool(re.fullmatch(r'/upgradeStages/[01]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
+    if a=='objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object':
+        return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
     craftsmanship_assets={
         'objects/colonysystem2/colonystation/colonystation.object',
         'objects/colonysystem2/colonycore/colonycore.object',
