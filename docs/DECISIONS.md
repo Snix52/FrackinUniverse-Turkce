@@ -135,3 +135,12 @@
 - Kitchen Counter -> **Mutfak Tezgâhı**, Chef's Kitchen -> **Şef Mutfağı** LOCKED.
 - `slimecentrifuge` FU-owned tam nesne olduğu için standart exact-source yöntemiyle çevrildi. Biochemist Table -> **Biyokimyacı Tezgâhı**, Biochemist Centrifuge -> **Biyokimyacı Santrifüjü**, Biochemist Microseparator -> **Biyokimyacı Mikroayırıcısı** LOCKED.
 - Dikiş Makinesi / `craftingwheel` FU patchi yalnızca vanilla nesnenin bazı kademelerini değiştiriyor. İlk kademe gerçek envanter adı vanilla kaynak doğrulanmadan kilitlenmeyecek; araştırma metnindeki ad tek başına kaynak kabul edilmeyecek.
+
+### v0.6 craftingwheel doğrulaması
+
+- `craftingwheel` vanilla tabanlı, FU tarafından kısmen patchlenen üç kademeli bir istasyondur.
+- Vanilla adları bağımsız Starbound Patch Project test değerleriyle doğrulandı: **Spinning Wheel** (ana/1. kademe) ve **Sewing Machine** (2. kademe). FU bu iki kısa adı değiştirmiyor.
+- FU pinned kaynak patchi 3. kademe olarak **Clothing Fabricator** ekliyor.
+- Türkçe aile: **Çıkrık -> Dikiş Makinesi -> Giysi Üreticisi**. Üçü LOCKED.
+- Vanilla kısa adlarındaki hatalı/eski `^white;` kapanışı Türkçe yamada `^reset;` ile kapatılır; bu bilinçli renk-kodu QA düzeltmesidir.
+- Zanaatkârlık `canvas` araştırmasındaki Sewing Machine referansı gerçek 2. kademe envanter adıyla doğrulandı.
