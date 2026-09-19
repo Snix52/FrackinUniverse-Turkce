@@ -1,102 +1,55 @@
-BU ARŞİV: TÜRKÇE HARFLİ NORMAL SÜRÜM
-
-FRACKIN' UNIVERSE TÜRKÇE | v0.1.0 BETA
-Başlangıç ve Jeoloji paketi
+FRACKIN' UNIVERSE TÜRKÇE | v0.1.1 BETA
+Anayasa uyum düzeltmesi
 Hazırlanma tarihi: 19 Eylül 2026
 
 ÖNCE BUNU OKU
-Bu, FU'nun TAM Türkçe çevirisi değildir. Küçük, kısmi bir deneme paketidir.
-185 metin alanı için çeviri içerir. Oyun içinde çalıştırılıp test edilmedi.
-JSON yapısı, izin verilen metin alanları, renk/tuş/sayı kodları ve örnek
-veriler üzerindeki yama davranışı kontrol edildi. Bu kontroller, gerçek
-oyun testi veya tam kaynak dosyalarıyla bağımsız eşleştirme değildir.
+Bu, FU'nun tam Türkçe çevirisi değildir. 185 oyuncu metni alanını kapsayan
+kısmi beta paketidir. Statik QA ve exact kaynak doğrulaması geçti; oyun içi
+LQA, font ve pencere taşması kontrolleri henüz tamamlanmadı.
 
 GEREKLİ OLAN
-Starbound ve Frackin' Universe zaten kurulu olmalı. Ana modun kopyası yoktur.
-Paket, FU deposunda 6.5.8 olarak belirtilen sürümün şu kaynak kaydından
-incelenen metinlere dayanır:
+Starbound ve Frackin' Universe kurulu olmalı.
+Hedef FU sürümü: 6.5.8
+Kaynak commit:
 329e714b3fe87571055c8ad7aa38135d199d3317
-Senin Workshop sürümün ve diğer modlarınla uyumu henüz doğrulanmadı.
 
 KURULUM
-1. Starbound'u kapat. Oyunun "storage" klasörünü başka bir yere kopyalayarak
-   karakter ve evren yedeğini al. Var olan kayıtlarını silme.
-2. ZIP'i bir klasöre çıkar. İçinden yalnızca "FU_Turkce" klasörünü,
-   Starbound'un "mods" klasörüne kopyala.
-   Kurulum yeri örneği:
-   C:\Program Files (x86)\Steam\steamapps\common\Starbound\mods\FU_Turkce
-   Steam başka diskteyse kendi Starbound klasörünü kullan.
-3. Şu dosya yolu oluşmalı:
+1. Starbound'u kapat.
+2. Oyunun "storage" klasörünü yedekle.
+3. ZIP'i çıkar ve yalnızca "FU_Turkce" klasörünü Starbound'un "mods"
+   klasörüne kopyala.
+4. Yol şu biçimde olmalı:
    Starbound\mods\FU_Turkce\_metadata
-   Yanlış: Starbound\mods\FU_Turkce\FU_Turkce\_metadata
-   Ana FU .pak dosyasına veya Workshop klasörüne dokunma.
-4. Oyunu aç. Tercihen yeni bir TEST karakteriyle başla. İlk olarak araştırma
-   ekranındaki "Geology" dalında "Jeoloji" yazıp yazmadığını kontrol et.
-   "Basic Training" açıklaması da Türkçe olmalı. Eski kayıtlarına dokunma.
+5. Ana FU .pak dosyasına veya Workshop klasörüne dokunma.
+6. Tercihen yeni bir test karakteriyle aç.
 
-İKİ SÜRÜM ARASINDA SEÇİM
-Normal sürüm: ç, ğ, ı, ö, ş, ü gibi Türkçe harflerle hazırlanmıştır.
-ASCII sürümü: "Araştırma" yerine "Arastirma" gibi özel harfsiz metinlerdir.
-Sadece BİR sürümü kur. Harfler kare veya boş görünürse oyunu kapat,
-mods/FU_Turkce klasörünü kaldır ve ASCII paketindeki aynı adlı klasörü koy.
-Paketler yazı tipi içermez veya oyunun yazı tipini değiştirmez.
-ASCII paketinde yalnızca hedef çeviriler dönüştürülür; kaynak kontrolleri
-ve oyun kimlikleri orijinal hâlinde kalır.
+TÜRKÇE KARAKTER POLİTİKASI
+Yamada gerçek Türkçe karakterler kullanılır: ç, ğ, ı, İ, ö, ş, ü.
+ASCII / "Arastirma, Turkce, Uretim" sürümü yoktur.
+Karakterler kare veya bozuk görünürse bu bir font/LQA hatasıdır; Türkçeyi
+bozarak geçici çözüm üretilmez.
 
-ÇEVRİLEN KAPSAM
-- Jeoloji: 62 açıklama, değişmesi gereken başlıklar ve dal adı.
-  104 metin değişikliği. Kaynaktaki gizli/etkin olmayan tanımlar da dahildir;
-  bu sayı 62 görünür veya kilidi açılmış araştırma anlamına gelmez.
-- 9 görev dosyasında 36 metin alanı: gemi onarımı, başlangıç tezgâhı,
-  ışınlayıcı, simya, elektronik, sera, ince işçilik, Bilim Karakolu ve
-  Welchie'nin ilk patates görevi. Bazı görevlerin kaynakta gizli/eski
-  tanımları vardır; hepsinin oyunda mutlaka gösterileceği söylenemez.
-- 22 başlangıç telsiz/öğretici mesajı.
-- İmalat Tezgâhı / Otomatik Birleştirici / Madde Birleştirici:
-  3 yükseltme kademesinin toplam 14 ad, açıklama ve pencere metni.
-- Seçili araştırma arayüzü metinleri: 9 alan.
+İLK TEST
+- Araştırma ekranında "Geology" yerine "Jeoloji" görünmeli.
+- "Basic Training" yerine "Temel Eğitim" görünmeli.
+- Görev ve telsizlerde "(Machining Table)", "(Wire)" gibi İngilizce
+  parantez açıklamaları görünmemeli.
+- İmalat Tezgâhı, Kablo, Fırın, Sera ve Bilim Karakolu adları görev ile
+  envanter/arayüz arasında tutarlı görünmeli.
+- Türkçe karakter, renk ve satır taşmalarını kontrol et.
 
-ŞİMDİLİK İNGİLİZCE KALANLAR
-Diğer araştırma dallarının açıklamaları, eşyaların ve makinelerin büyük
-çoğunluğu, kalan görevler, çoğu diyalog, Lua kodundan üretilen dinamik
-arayüz metinleri ve genel oyun metinleri. Bu paket vanilla Starbound'u
-Türkçeleştirmez. Başka bir ana oyun çevirisiyle birlikte kullanımı da test
-edilmedi. Tam mod için bir tamamlanma yüzdesi hesaplanmadı.
-
-NASIL ÇALIŞIR?
-Ana FU dosyalarını değiştirmez. 14 ayrı .patch dosyası, yalnızca ekranda
-okunan metin alanlarına "test" ve "replace" işlemleri uygular. Üretim
-bedelleri, tarifler, eşya/görev kimlikleri, araştırma bağlantıları, Lua
-scriptleri, ödüller ve kaynak miktarları bu paketin hedefi değildir.
-
-Sürüm koruması dosya bazındadır: Bir kaynak dosyada çevrilecek alanların
-orijinal İngilizce metinlerinden BİRİ BİLE beklenenden farklıysa o dosyaya
-ait çevirilerin tamamı atlanır. Diğer yama dosyaları ayrı değerlendirilir.
-Bu, yeni sürüme eski metin yazmayı önler; güncellemelerden sonra bazı
-bölümlerin İngilizce kalması normal olabilir. Başka bir çeviri aynı alanı
-önceden değiştirdiyse de bu kontrol takılabilir. Tüm uyumsuzluklara karşı
-koruma veya gelecekteki tüm sürümlerde çalışma garantisi değildir.
-
-İLK DENEME VE SORUN TESPİTİ
-- Jeoloji dal adını ve bir açıklamayı kontrol et.
-- Yeni başlayan Vinalisj konuşmalarını ve gemi onarımını kontrol et.
-- Tricorder öğreticisinde tuşların ve renklerin görünüp görünmediğine bak.
-- Tezgâh penceresini yeniden açarak başlığı kontrol et.
-- Taşma, eksik Türkçe harf veya çevrilmeyen bölüm için ekran görüntüsü al.
-- Oyun açılmazsa çeviri klasörünü kaldırıp tekrar dene. Ana FU'yu kaldırma.
-- Hata incelemesi için Starbound/storage/starbound.log dosyasını sakla.
-  Bu dosya küçüktür; büyük FU paketini göndermene gerek yoktur.
-- Mevcut görev veya eşya metinleri kayıtta tutulmuş olabilir. Yeni bir
-  test karakterindeki sonucu ayrıca kontrol etmek daha açıklayıcıdır.
+KAPSAM
+- Araştırma arayüzü: 9 alan
+- Jeoloji: 104 alan
+- Görevler: 36 alan
+- Tezgâhlar: 14 alan
+- Başlangıç telsiz/öğretici mesajları: 22 alan
+Toplam: 185 alan / 14 hedef asset
 
 KALDIRMA
-Oyunu kapatıp yalnızca Starbound/mods/FU_Turkce klasörünü kaldır.
-Ana Frackin' Universe modunu kaldırmakla bu metin yamasını kaldırmak
-aynı şey değildir. Ana mod kayıtları ve evreni etkiler; kurcalama.
-Kayda daha önce yazılmış metinlerin geri dönüşü ayrıca test edilmedi.
+Oyunu kapat ve yalnızca Starbound/mods/FU_Turkce klasörünü kaldır.
+Ana Frackin' Universe modunu kaldırma.
 
-DOSYALAR
-FU_Turkce/ : Kurulacak tek klasör. _metadata ve 14 .patch içerir.
-GELISTIRME/ : Düzenlenebilir çeviri kaydı, üretim/kontrol aracı ve raporlar.
-KAYNAK_VE_LISANS.txt : Kaynak, atıf ve lisans bilgileri.
-Kurulum için Python veya başka bir uygulama çalıştırman gerekmez.
+HATA RAPORU
+Sorun varsa ekran görüntüsüyle birlikte Starbound/storage/starbound.log
+dosyasını sakla. Büyük FU paketini göndermene gerek yok.
