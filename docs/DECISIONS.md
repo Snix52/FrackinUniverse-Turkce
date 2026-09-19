@@ -48,12 +48,48 @@
 - Oyun içi LQA henüz yapılmadı.
 ## 2026-09-20 - Geriye dönük QA düzeltmeleri
 
-- Mevcut 654 oyuncu metni; boş çeviri, yinelenen pointer, placeholder/renk/escape bütünlüğü, aynı kaynak string tutarlılığı, kilitli terminoloji ve İngilizce parantez kalıntıları açısından yeniden tarandı.
+- v0.4 tabanındaki **654 yapılandırılmış oyuncu metni** yeniden denetlendi; eksik görünür alan taramasıyla kapsam **689 JSON/JSONC alanına** çıkarıldı.
+- Araştırma ekranındaki JSON Patch ile değiştirilemeyen **15 Lua sabit UI metni** ayrıca kaynak-kilitli ham override olarak yerelleştirildi. Toplam yerelleştirilmiş görünür metin birimi **704** oldu.
+- Yapılandırılmış kapsam **64 patch asset**, Lua kapsamı **1 ham override asset** olmak üzere toplam **65 hedef asset** içeriyor.
+- FU kaynağı sabit referans olarak 6.5.8 / `329e714b3fe87571055c8ad7aa38135d199d3317` commit'inde tutuluyor.
+
+### Düzeltilen çeviri ve terminoloji hataları
+
 - Jeoloji metninde kalan `(Inventor’s Table)` İngilizce parantez açıklaması kaldırıldı.
-- Tarım ağacındaki `Extraction Lab` kullanımı **Çıkarma Laboratuvarı** ile, `Advanced Beekeeping` başlığı **Gelişmiş Arıcılık** ile yeniden eşleştirildi.
-- Jeoloji ve Mühendislik arasında farklı çevrilen Terraforming ailesi tekleştirildi: **Gezegen Biçimlendirme**, **Mikro Biçimlendirici**, **Gezegen Biçimlendirici** LOCKED.
-- Başlangıç telsiz mesajındaki Starbound sistem adı `Tech Upgrades`, kilitli **Tech** terminolojisine uygun olarak **Tech Yükseltmeleri** yapıldı.
-- Mühendislikte Mech Parçası Üretim Tezgâhına gönderme yapan belirsiz “bir tane araştırabilir” ifadesi, araştırılan nesnenin tezgâh olduğunu açıkça belirtecek şekilde düzeltildi.
-- Gelişmiş Xeno Laboratuvarının açıklaması, aynı nesnenin kilitli görünen adıyla eşleştirildi; “Quantum Xeno Lab” ifadesi nesne adı gibi kullanılmayıp kuantum teknolojisi bilgisi açıklamada korundu.
-- Teknik ID, JSON path, placeholder, biçimlendirme kodu veya kaynak pointer değiştirilmedi. Çevrilen alan sayısı **654** olarak kaldı.
+- `Extraction Lab` kullanımı **Çıkarma Laboratuvarı**, `Advanced Beekeeping` **Gelişmiş Arıcılık** ile eşleştirildi.
+- Terraforming ailesi tekleştirildi: **Gezegen Biçimlendirme**, **Mikro Biçimlendirici**, **Gezegen Biçimlendirici** LOCKED.
+- `Tech Upgrades` -> **Tech Yükseltmeleri** yapılarak Starbound sistem adı olan **Tech** korundu.
+- `Complex Plastics` yanlışlıkla `Advanced` ile aynılaştırılmıştı; **Karmaşık Plastikler** yapıldı. `Complex` -> **Karmaşık** LOCKED.
+- Gelişmiş Xeno Laboratuvarı açıklamasında “Quantum Xeno Lab” nesne adı gibi kullanılmıyor; nesne adı **Gelişmiş Xeno Laboratuvarı**, kuantum bilgisi açıklama niteliğinde tutuluyor.
+- Mühendislikte Mech Parçası Üretim Tezgâhına gönderme yapan belirsiz “bir tane araştırabilir” ifadesi, araştırılan nesneyi açıkça belirtecek şekilde düzeltildi.
+- Görev yönlendirmelerindeki “alanını araştır” gibi İngilizce söz dizimi temizlenerek oyuncunun menüde ne açacağı açıklaştırıldı.
+
+### Eksik metin ve kaynak-hata düzeltmeleri
+
+- **Filizlendirme Tezgâhı** için kaynakta bulunan ancak yamada eksik kalan Apex, Avian, Floran, Glitch, Human ve Hylotl inceleme cümleleri eklendi.
+- **Arı Barınağı** arayüzünde eksik kalan `Buy`, `Cancel`, `Search` ve `Replace Me` metinleri çevrildi.
+- `radiomessages/fu_quests.radiomessages` dosyasındaki 26 oyuncu mesajının tamamı karşılaştırıldı; eksik kalan 4 BYOS/FTL mesajı eklendi.
+- Bu mesajların bağlı olduğu `fu_byosftldrive` görevi bütünüyle yerelleştirildi: başlık, ana metin, tamamlanma metni ve 3 hedef.
+- Görev zincirinin açtığı gerçek `fu_ftldrivesmall` nesnesi **Küçük FTL Motoru** olarak çevrildi; açıklama ve 7 ırka özel inceleme metni de eklendi.
+- `create_electronics`, `create_greenhouse` ve `create_tinkertable` kaynaklarında teslim metni yanlışlıkla **Armorworks** diyor. Türkçe metinler kaynak koşullarındaki gerçek `itemName` değerleri esas alınarak sırasıyla **Elektronik Merkezi**, **Sera** ve **İnce İşçilik Tezgâhı** yapıldı.
+- Daha önce belgelenen `create_growingtray` Armorworks hatasında da aynı ilke korunuyor: gerçek koşul `fu_growingtray` olduğu için **Yetiştirme Tepsisi** kullanılıyor.
+- Tarım `farming3` açıklaması kaynakta “Growing Tray” dese de düğümün gerçek açtığı nesne `isn_hydroponicstray` / **Hidroponik Tepsi** olduğu için oyuncu takip bütünlüğü adına gerçek nesne adı korunuyor.
+- **Garp Berry** ve **Blister Bush**, FU eşya/bitki adlarıyla eşleşen özel adlar olarak LOCKED; İngilizce kaçak sayılmıyor.
+
+### Araştırma ekranı Lua güvenliği
+
+- `researchTree.lua` içinde config dışında kalan 15 sabit oyuncu metni Türkçeleştirildi: araştırma ağacı seçimi, arama yönlendirmesi, kaynak/eşya tüketim uyarıları, boş-ağaç uyarıları, salt-okunur metni, Piksel/Öz etiketleri ve hata/fallback metinleri.
+- Script mantığı elle yeniden yazılmadı. `tools/raw_text_translations.json` yalnızca beklenen kaynak kod parçalarını ve Türkçe karşılıklarını tutuyor.
+- `build_validate.py`, açılmış FU kaynağı verilirse her ham metnin exact-match sayısını doğrulayıp o kaynak script üzerinden override üretir; eşleşme bozulursa build hata verir.
+- Kaynak klasörü verilmeden build alındığında 6.5.8 için doğrulanmış `tools/raw_overrides/zb/researchTree/researchTree.lua` şablonu kullanılır.
+
+### QA sonucu
+
+- Yapılandırılmış **689 alanda** yinelenen asset/pointer: **0**.
+- Boş Türkçe değer: **0**.
+- Belgeli kaynak renk-kodu düzeltmeleri dışında placeholder / kontrol kodu / renk kodu / sayı bütünlüğü: **PASS**.
+- Eski hatalı karşılıklar (`Özütleme Laboratuvarı`, `İleri Arıcılık`, `Gezegen Dönüşümü`, `Mikro Dönüştürücü`, `Gezegen Dönüştürücü`, `Teknoloji Yükseltmeleri`, `Kuantum Xeno Laboratuvarı`, `Gelişmiş Plastikler`) repository ledger'ında kalmadı.
+- Aynı kaynak stringin farklı Türkçeye çevrildiği iki durum bilinçlidir: **Research -> Araştırma/Araştır** bağlam ayrımı ve FU'nun hatalı Armorworks teslim metinlerinin gerçek görev koşuluna göre düzeltilmesi.
+- Önceki 654/654 exact-source doğrulaması korunuyor; eklenen 35 yapılandırılmış alan kaynak ve patch değerleriyle doğrulandı. Bugün değiştirilen yüksek etkili 8 asset ayrıca **432/432**, eksik yakalanan 10 asset ise **77/77** kaynak/ledger/patch eşleşmesiyle yeniden kontrol edildi.
+- Oyun içi LQA, font ve panel taşma testi bu statik denetimin parçası değildir ve hâlâ yapılmalıdır.
 
