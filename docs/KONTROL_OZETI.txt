@@ -1,24 +1,35 @@
-FU TÜRKÇE v0.1 BETA | KONTROL ÖZETİ
-Paket: Turkish Unicode
+FU TÜRKÇE v0.1.1 BETA | ANAYASA KONTROL ÖZETİ
 
-185 çevrilmiş metin alanı / 14 hedef dosya.
-62 jeoloji açıklaması, 9 görev dosyası, 22 başlangıç mesajı.
+185 çevrilmiş oyuncu metni alanı / 14 hedef asset.
 
-GEÇEN KONTROLLER
-- Benzersiz JSON alan yolları: 185/185.
-- Yalnızca izin verilen görüntü metni alanları: 185/185.
-- Renk kodu sayıları: İngilizce ve Türkçede aynı.
-- Tuş/yer tutucu kodları: İngilizce ve Türkçede aynı.
-- Sayısal değerler: İngilizce ve Türkçede aynı.
-- Yama JSON dosyaları okunabilir ve kurallı.
-- Örnek JSON verisine uygulama: 14/14.
-- Kontrollü kaynak değişikliği denemesi: 185/185 reddedildi.
+GEÇEN STATİK KONTROLLER
+- Exact FU kaynak commit doğrulaması: 14/14 dosya, 185/185 pointer ve kaynak değer.
+- Benzersiz alan yolları: 185/185.
+- JSON Patch üretimi ve fixture uygulaması: PASS.
+- Kaynak uyuşmazlığı reddi: 185/185.
+- Placeholder / tuş kodları: PASS.
+- Sayısal değer eşitliği: PASS; oyuncuya gösterilen ondalıklarda Türkçe virgül kullanılabilir.
+- Renk kodları: PASS; 1 adet belgelenmiş kaynak renk kapanışı düzeltmesi.
+- İngilizce parantez glossu: 0.
+- "İngilizce adı:" gibi kaynak dışı açıklama: 0.
+- Unicode Türkçe politika: PASS.
+- ASCII dağıtım: KALDIRILDI.
 
-YAPILMAYAN KONTROLLER
-- Tam FU kaynak dosyalarıyla bağımsız eşleştirme.
-- Oyunu çalıştırma, yükleme sırası ve gerçek kayıt üzerinde deneme.
-- Font, pencere taşması ve metinlerin ekran görüntüsüyle kontrolü.
-- Kullanıcının tam Workshop sürümü ve diğer modlarıyla uyum kontrolü.
+DİL / TERMİNOLOJİ
+- Research sistem adı: Araştırma; buton/eylem: Araştır.
+- Machining Table: İmalat Tezgâhı.
+- Precursor özel ad olarak korunur.
+- Homestead I: Yerleşim I (REVIEW).
+- Welchie'nin konuşma tonu kaynak karaktere yaklaştırıldı.
+
+YAPILMAYAN LQA
+- Oyunu gerçek FU Workshop kurulumu üzerinde başlatma.
+- Font ve Türkçe büyük/küçük harf testi.
+- UI/görev metni taşma kontrolü.
+- Görev -> eşya -> üretim menüsü -> teslim zincirinin baştan sona testi.
+- Diğer modlarla yükleme sırası/uyumluluk testi.
 
 SONUÇ
-Kısmi deneme paketi. Bu rapor "oyunda sorunsuz çalışır" onayı değildir.
+Statik Anayasa QA: PASS.
+Oyun içi LQA: BEKLİYOR.
+Sürüm bu nedenle hâlâ Beta'dır.
