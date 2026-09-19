@@ -112,8 +112,8 @@
 ## 2026-09-20 - v0.6 Zanaatkârlık
 
 - Çalışma `work/v0.6-craftsmanship` dalında başlatıldı; mevcut v0.5 beta paketi değiştirilmedi.
-- `fu_craftsmanship` araştırma ağacındaki 78 araştırma düğümünün başlık ve açıklamaları bütün olarak yerelleştirildi.
-- Ağaç adıyla birlikte ilk v0.6 geçişinde **157 yeni yapılandırılmış oyuncu metni alanı** eklendi.
+- `fu_craftsmanship` araştırma ağacındaki 76 gerçek araştırma düğümünün başlık ve açıklamaları bütün olarak yerelleştirildi.
+- Ağaç adı, görünür `default` yardım/fallback çifti ve 76 düğüm metniyle **155 yapılandırılmış oyuncu metni alanı** eklendi. Kaynakta olup hiçbir düğüme bağlı olmayan `workbenchatechy/0-1` oyuncuya görünmediği için dağıtımdan çıkarıldı.
 - Craftsmanship -> **Zanaatkârlık** LOCKED.
 - Improved / Advanced / Superior / Peerless için mevcut kilitli sıfatlar korunarak Geliştirilmiş / Gelişmiş / Üstün / Eşsiz kullanıldı.
 - Bilim Karakolu, Mucit Tezgâhı, Grafen, Penumbrite, Nocxium, Trianglium ve Durasteel gibi daha önce kilitlenmiş adlar aynen korundu.
@@ -125,7 +125,7 @@
 - Colony Station -> **Koloni İstasyonu**, Colony Core -> **Koloni Çekirdeği**, Colony Deed Mark II -> **Koloni Tapusu Mark II**, Snowprinter -> **Kar Yazıcısı**, The Lamporium -> **Lamporium** LOCKED.
 - Zanaatkârlık araştırma metni kaynakta `Mk2 Tenant Deeds` derken gerçek eşya `shortdescription` değeri **Colony Deed Mark II**. Oyuncunun araştırma ekranından envantere aynı adı takip edebilmesi için Türkçede **Koloni Tapusu Mark II** kullanıldı.
 - Aynı nedenle Koloni Çekirdeği açıklamasındaki kaynak `MK2 deeds` ifadesi de gerçek eşya adına eşlendi. Bu iki alan sayı-token QA istisnası olarak açıkça kayıt altına alındı.
-- v0.6 mevcut kapsamı 207/207 exact-source, 0 yinelenen pointer, 0 boş çeviri ve sağlam renk/kontrol kodlarıyla PASS.
+- v0.6 nihai beta kapsamı **286/286** kaynak/provenans doğrulaması, 0 yinelenen pointer, 0 boş çeviri ve sağlam renk/kontrol kodlarıyla PASS.
 - Vanilla nesneleri FU `.patch` katmanıyla değiştiren Mutfak Tezgâhı, dikiş istasyonu ve benzeri bağlı istasyonlar doğrudan FU-owned nesneler gibi ele alınmayacak; güvenli birleşik patch yöntemi doğrulanmadan ana dala alınmayacak.
 
 ### v0.6 katmanlı vanilla asset stratejisi
@@ -152,3 +152,11 @@
 - **Inventor's Table -> Mucit Tezgâhı**, **Engineer's Table -> Mühendis Tezgâhı**, **Architect's Table -> Mimar Tezgâhı** LOCKED.
 - FU bu iki vanilla nesneye kendi kaynak ağacında ek `.object.patch` uygulamıyor. Bu yüzden yalnızca exact doğrulanmış kısa adlar çevrildi; açıklamalar tahmin edilmedi.
 - Vanilla kısa adlarındaki `^white;` kapanışı Türkçe patchte `^reset;` olarak düzeltilir ve belgeli renk-kodu istisnası sayılır.
+
+### v0.6 beta kapsam kapanışı
+
+- Zanaatkârlık beta kapsamı **155 ağaç/fallback alanı + 131 bağlı makine/tezgâh alanı = 286 yeni yapılandırılmış alan** olarak kapatıldı.
+- Proje toplamı **1195 yapılandırılmış alan + 15 Lua UI metni = 1210 görünür metin birimi** oldu.
+- 243 v0.6 alanı pinned FU-owned kaynaklardan, 33 alan pinned FU `.patch` katmanlarından, 10 vanilla kısa ad alanı bağımsız test değerlerinden doğrulandı.
+- `workbenchatechy` string çifti kaynakta mevcut olsa da `researchTree.fu_craftsmanship` içinde karşılık gelen düğüm bulunmadığından oyuncuya görünür kapsam sayılmadı ve yamadan çıkarıldı.
+- Oyun içi LQA, font ve panel taşma testleri tamamlanmadığı için sürüm Beta olarak kalır.
