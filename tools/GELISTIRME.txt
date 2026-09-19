@@ -1,21 +1,25 @@
-GELİŞTİRME / DOĞRULAMA
+GELİŞTİRME / DOĞRULAMA | v0.2.0
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
 Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
-ceviriler.json kaynak İngilizce alanları, Türkçe hedefleri, asset ve JSON
-pointer kayıtlarını tutar.
+ceviriler.json
+  360 oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
-build_validate.py Python 3.9+ standart kütüphanesiyle patch üretir.
-ASCII sürüm üretmez. Türkçe karakterler zorunludur.
+build_validate.py
+  Python 3.9+ standart kütüphanesiyle patch üretir.
+  Jeoloji + Tarım + bağlı görev/makine allowlist'lerini doğrular.
+  ASCII sürüm üretmez.
 
 Yeni çıktı:
   python build_validate.py --output yeni_cikti
 
-Açılmış FU kaynaklarıyla doğrulama:
+Açılmış FU kaynaklarıyla tam doğrulama:
   python build_validate.py --source-dir "D:\FU_acilmis" --output dogrulanmis_cikti
 
-v0.1.1 hazırlanırken exact GitHub kaynak commitine karşı 14/14 dosya ve
-185/185 alan ayrıca doğrulandı.
+v0.2 kaynak kontrolü:
+  36/36 patch asset
+  360/360 kaynak pointer/değer
+  exact FU commit: 329e714b3fe87571055c8ad7aa38135d199d3317

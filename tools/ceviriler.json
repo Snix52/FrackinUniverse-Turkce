@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.1.1-beta",
-  "note": "FU TÜRKÇE Anayasası v1.0 uyum düzeltmesi: İngilizce parantez açıklamaları kaldırıldı, terminoloji ve görev dili standardize edildi, Unicode-only dağıtım benimsendi.",
+  "translation_version": "0.2.0-beta",
+  "note": "v0.2 Tarım: Tarım araştırma ağacı, bağlı FU makineleri/kaynakları ve temel öğretici görevleri eklendi.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -1303,6 +1303,1239 @@
       "en": "You can research the ^orange;STL Drive^reset; in your ^cyan;Engineering^reset; tree, dear. You'll need a few core fragments to get it working, so you might have to do a little digging!",
       "tr": "^orange;STL Motoru^reset; araştırmasını ^cyan;Mühendislik^reset; ağacında açabilirsin, canım. Çalıştırmak için birkaç çekirdek parçasına ihtiyacın olacak; biraz kazman gerekebilir!",
       "section": "Başlangıç telsiz mesajları"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/trees/fu_agriculture",
+      "en": "Agriculture",
+      "tr": "Tarım",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/default/0",
+      "en": "Instructions",
+      "tr": "Kullanım Rehberi",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/default/1",
+      "en": "Select a research by clicking one of the icons on the grid.\nYou can navigate the grid by dragging with the left mouse button.\n\n- The left most button at the upper part of the screen opens a list of research trees to pick from.\n\n- The second button opens a list of non-hidden research options. Click a research on the displayed to center the view on it. Click again to hide the list.\n\n- The third button will center the view on the middle of the tree, or the currently selected research.\n\n- The last button toggles ^orange;low quality mode^reset;. This makes the GUI jump to a position instead of panning to it, or the center button. In addition, dragging/navigating on the the main screen will update only after you release the mouse button. It is best to use the search list with this mode enabled.",
+      "tr": "Bir araştırma seçmek için ızgaradaki simgelerden birine tıkla.\nSol fare tuşunu basılı tutup sürükleyerek ağaçta gezinebilirsin.\n\n- Ekranın üst kısmındaki en soldaki düğme, seçebileceğin araştırma ağaçlarını listeler.\n\n- İkinci düğme, gizli olmayan araştırmaları listeler. Listedeki bir araştırmaya tıklarsan görünüm ona odaklanır. Listeyi kapatmak için tekrar tıkla.\n\n- Üçüncü düğme, görünümü ağacın ortasına veya seçili araştırmaya odaklar.\n\n- Son düğme ^orange;düşük kalite modunu^reset; açıp kapatır. Bu modda arayüz hedefe kaymak yerine doğrudan geçer. Ana ekranda sürükleme sırasında görünüm, fare tuşunu bıraktıktan sonra güncellenir. Bu mod açıkken arama listesini kullanmak daha pratiktir.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival_1/0",
+      "en": "Basic Training",
+      "tr": "Temel Eğitim",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival_1/1",
+      "en": "^orange;Tier 1^reset;\n\nYour training, thanks to four years in the Protectorate Academy, provides you with basic survival skills to keep you alive for extended periods in the event of a crash.",
+      "tr": "^orange;Kademe 1^reset;\n\nProtectorate Akademisi’nde aldığın dört yıllık eğitim, bir kaza sonrasında uzun süre hayatta kalmanı sağlayacak temel becerileri kazandırdı.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/foragingn/0",
+      "en": "Agriculture",
+      "tr": "Tarım",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/foragingn/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned how to build a ^orange;Foraging Table^reset; which is the place to invest into agricultural pursuits and hunting. You also learn to make some simple farming tools and a means to capture useful wild bugs.\n\nInvesting into this tree will allow you to learn to create your own plant seeds to grow foodstuffs or useful effect-granting plants, how to raise farm beasts, how to hunt and fish, advanced farming techniques and how to raise bees.",
+      "tr": "^orange;Kademe 1^reset;\n\nTarımsal üretim ve avcılık için ana çalışma alanın olan ^orange;Toplayıcılık Tezgâhını^reset; üretmeyi öğrendin. Ayrıca birkaç basit tarım aracı ve yararlı yabani böcekleri yakalamana yarayan bir araç da yapabilirsin.\n\nBu araştırma ağacında ilerledikçe yiyecek veya yararlı etkiler sağlayan bitkiler için kendi tohumlarını üretmeyi, çiftlik hayvanları yetiştirmeyi, avlanmayı, balık tutmayı, gelişmiş tarım yöntemlerini ve arıcılığı öğreneceksin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/crops1/0",
+      "en": "Basic Crops",
+      "tr": "Temel Ekinler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/crops1/1",
+      "en": "^orange;Tier 1^reset;\n\nThough the universe is filled with many strange plants, the Protectorate academy taught you about quite a few. You've learned to start culvtivating these plants for yourself at a ^orange;Greenhouse^reset; which can be made at your ^orange;Machining Table^reset;. You can also (crudely) extract genetic material from plants for use in the creation of more complex plants at a ^cyan;Sprouting Table^reset;, also made at your Machining Table.\n\n^yellow;Tip:^reset; Grow lots of corn! Corn is an incredibly versatile crop, being a source of oil, cattle feed, and the basis of many more complex plants.",
+      "tr": "^orange;Kademe 1^reset;\n\nEvren tuhaf bitkilerle dolu olsa da Protectorate Akademisi sana pek çoğunu tanıttı. Artık bu bitkileri ^orange;İmalat Tezgâhında^reset; üretebileceğin bir ^orange;Serada^reset; yetiştirebilirsin. Daha karmaşık bitkiler oluşturmak için gerekli genetik materyali, yine İmalat Tezgâhında üretilen ^cyan;Filizlendirme Tezgâhında^reset; bitkilerden ilkel yöntemlerle çıkarabilirsin.\n\n^yellow;İpucu:^reset; Bol bol mısır yetiştir! Mısır; yağ, hayvan yemi ve daha karmaşık birçok bitki için temel malzeme sağlayan son derece çok yönlü bir ekindir.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/crops2/0",
+      "en": "Advanced Crops",
+      "tr": "Gelişmiş Ekinler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/crops2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've mastered all the plants the Protectorate Academy taught you about, allowing you to artificially create many more plants, including the all-important ^yellow;Cotton^reset;.\n\nYou're ready to start branching into making various medicinal plants that don't provide satiation, but don't spoil and provide useful buffs like environmental resistance, healing, increased stats, or even act as weapons!\n\nYou'll need ^orange;genes^reset; from this point on - found by processing seeds, saplings and some produce in the ^cyan;Sprouting Table^reset; or its upgrades. Some plants produce more seeds than others: flowers unsuited for dye-making are a good early source of seeds.",
+      "tr": "^orange;Kademe 2^reset;\n\nProtectorate Akademisinin öğrettiği bütün bitkilerde ustalaştın. Artık çok önemli ^yellow;Pamuk^reset; da dâhil olmak üzere daha birçok bitkiyi yapay olarak üretebilirsin.\n\nDoygunluk sağlamayan ama bozulmayan; çevresel direnç, iyileşme, özellik artışı gibi yararlı etkiler veren, hatta silah olarak kullanılabilen çeşitli tıbbi bitkilere geçmeye hazırsın!\n\nBundan sonra ^orange;genlere^reset; ihtiyacın olacak. Genleri tohumları, fidanları ve bazı ürünleri ^cyan;Filizlendirme Tezgâhında^reset; ya da yükseltmelerinde işleyerek elde edebilirsin. Bazı bitkiler diğerlerinden daha çok tohum verir; boya yapımına uygun olmayan çiçekler başlangıçta iyi bir tohum kaynağıdır.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants1/0",
+      "en": "Basic Exploration Plants",
+      "tr": "Temel Keşif Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants1/1",
+      "en": "^orange;Tier 3^reset;\n\nThe universe is a dangerous place, filled with many environments your physiology isn't equipped to handle. Your research has given you access to a number of plants that make the universe a little more forgiving, including plants that assist in traversing difficult terrain, produce natural antitoxins, and shore up your physiology from dangerous climates.",
+      "tr": "^orange;Kademe 3^reset;\n\nEvren tehlikeli bir yer; fizyolojinin başa çıkmaya uygun olmadığı birçok ortamla dolu. Araştırmaların, zorlu arazilerde ilerlemene yardımcı olan, doğal antitoksinler üreten ve tehlikeli iklimlere karşı bedenini güçlendiren çeşitli bitkilere erişim sağladı.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants2/0",
+      "en": "Advanced Exploration Plants",
+      "tr": "Gelişmiş Keşif Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants2/1",
+      "en": "^orange;Tier 4^reset;\n\nFurther research has given you plants that can protect you entirely from poisons and acid, as well as shield you from the dangerous radiation of many alien materials.",
+      "tr": "^orange;Kademe 4^reset;\n\nİleri araştırmalar sayesinde zehir ve aside karşı tam koruma sağlayan, ayrıca birçok uzaylı malzemenin tehlikeli radyasyonuna karşı seni koruyan bitkiler geliştirdin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants3/0",
+      "en": "Superior Exploration Plants",
+      "tr": "Üstün Keşif Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants3/1",
+      "en": "^orange;Tier 5^reset;\n\nYou're becoming especially adept at exploring alien worlds through the use of bioengineering, and have created several new plants protecting from more esoteric threats, including the crushing pressure of gas giants, eldritch ghosts, and even the poor mental health hours of slaving away over a gene lab results in.",
+      "tr": "^orange;Kademe 5^reset;\n\nBiyomühendislik sayesinde uzaylı dünyaları keşfetme konusunda iyice ustalaşıyorsun. Gaz devlerinin ezici basıncı, tekinsiz hayaletler ve hatta gen laboratuvarında saatlerce didinmenin ruh sağlığına verdiği zarar gibi daha sıra dışı tehditlere karşı koruma sağlayan yeni bitkiler geliştirdin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants4/0",
+      "en": "Master Exploration Plants",
+      "tr": "Usta Keşif Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/explorationplants4/1",
+      "en": "^orange;Tier 6^reset;\n\nYour latest plants are a thing of beauty, protecting you from even the most dangerous worlds. Equipped only with the contents of your herb pouch, you're now equipped to explore nearly any world imaginable, including those with lead-melting heat, atmospheres so cold it falls to the ground as snow and environments so radioactive that even the ground glistens with energy.",
+      "tr": "^orange;Kademe 6^reset;\n\nSon geliştirdiğin bitkiler gerçekten göz alıcı; en tehlikeli dünyalarda bile seni koruyabiliyor. Bitki çantandaki malzemelerle kurşunu eritecek kadar sıcak, atmosferi kar olarak yere çökecek kadar soğuk veya toprağı bile enerjiyle parlayacak kadar radyoaktif dünyalar dâhil neredeyse her yeri keşfedebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants1/0",
+      "en": "Basic Utility Plants",
+      "tr": "Temel Yardımcı Bitkiler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants1/1",
+      "en": "^orange;Tier 3^reset;\n\nThe universe is a gruelling place, requiring great effort to extract the meanest of resources from it. Your research uses the miracle of life to lift this burden, by creating plants which provide silk, genetic resources, healing, and mining aids, saving your valuable resources and effort for where they're needed elsewhere.",
+      "tr": "^orange;Kademe 3^reset;\n\nEvren yorucu bir yer; en sıradan kaynakları çıkarmak bile büyük emek ister. Araştırmaların, yaşamın gücünden yararlanarak bu yükü hafifletiyor. İpek, genetik kaynaklar, iyileştirme ve madencilik desteği sağlayan bitkiler sayesinde değerli malzemelerini ve emeğini başka işler için saklayabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants2/0",
+      "en": "Advanced Utility Plants",
+      "tr": "Gelişmiş Yardımcı Bitkiler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants2/1",
+      "en": "^orange;Tier 4^reset;\n\nThrough careful experimentation, you've created plants that produce incredibly useful resources, including organic silicon, radiation-resistant silk and enhanced algae which can be processed into fuel for your ship and mech.",
+      "tr": "^orange;Kademe 4^reset;\n\nDikkatli deneylerle organik silikon, radyasyona dayanıklı ipek ve geminle mech'in için yakıta dönüştürülebilen geliştirilmiş algler dâhil son derece yararlı kaynaklar üreten bitkiler geliştirdin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants3/0",
+      "en": "Superior Utility Plants",
+      "tr": "Üstün Yardımcı Bitkiler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants3/1",
+      "en": "^orange;Tier 5^reset;\n\nAn adept at genetic engineering, you've begun to create plants which greatly light your way in the darkness, beyond the level that Gold Shroom was capable of. You're also experimenting with organic performance enhancers, including those which protect your body from lethal falls and gravitic rain.",
+      "tr": "^orange;Kademe 5^reset;\n\nGenetik mühendisliğinde ustalaştıkça, Gold Shroom'un sağlayabildiğinin çok ötesinde karanlığı aydınlatan bitkiler geliştirmeye başladın. Ölümcül düşüşlere ve gravitik yağmura karşı bedenini koruyan türler dâhil organik performans artırıcılarla da deney yapıyorsun.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants4/0",
+      "en": "Master Utility Plants",
+      "tr": "Usta Yardımcı Bitkiler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/utilityplants4/1",
+      "en": "^orange;Tier 6^reset;\n\nThe plants you've learned to make would be illegal in any Olympics, if Earth still existed. You can now run at breakneck speeds, jump up sheer surfaces and even alter the strength of gravity on your body, all with the use of plants. You've also dipped into stranger, less corporeal realms, and created a type of plant which can be eaten in a life-or-death situation to pull you away to safety.",
+      "tr": "^orange;Kademe 6^reset;\n\nDünya hâlâ var olsaydı geliştirdiğin bitkiler her türlü olimpiyatta yasaklanırdı. Bitkiler sayesinde baş döndürücü hızlarda koşabilir, dimdik yüzeylere sıçrayabilir ve hatta bedenine etki eden kütleçekimin gücünü değiştirebilirsin. Maddesel olmayan, daha tuhaf alanlara da el attın ve ölüm kalım anında yenildiğinde seni güvenli bir yere çekebilen bir bitki türü geliştirdin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/soulleaf/0",
+      "en": "Essence Cultivation",
+      "tr": "Öz Yetiştiriciliği",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/soulleaf/1",
+      "en": "^orange;Tier 7^reset;\n\nUsing the properties of Quantum Fluid, you are able to make a plant that grows Ancient Essence botanically. Essence is very useful for upgrading weapons at ancient crucibles.",
+      "tr": "^orange;Kademe 7^reset;\n\nKuantum Sıvısının özelliklerinden yararlanarak Antik Öz üreten bir bitki geliştirebiliyorsun. Öz, antik potalarda silah yükseltmek için son derece kullanışlıdır.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants1/0",
+      "en": "Basic Combat Plants",
+      "tr": "Temel Savaş Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants1/1",
+      "en": "^orange;Tier 3^reset;\n\nThe universe is a hostile place, with countless monsters and enemies out for your blood and few allies to stand alongside. Your research levels the playing field, fortifying your health and increasing your defenses to shield you from harm.",
+      "tr": "^orange;Kademe 3^reset;\n\nEvren düşmanca bir yer; kanının peşinde sayısız yaratık ve düşman var, yanında duracak müttefikse pek az. Araştırmaların sağlığını güçlendiren ve savunmanı artırarak seni hasardan koruyan bitkilerle şartları eşitliyor.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants2/0",
+      "en": "Advanced Combat Plants",
+      "tr": "Gelişmiş Savaş Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants2/1",
+      "en": "^orange;Tier 4^reset;\n\nYour studies have borne fruit, granting you the ability to grow stronger varieties of fortifying plants, as well as a curious tentacled plant that reflects damage back at those who would seek to harm you.",
+      "tr": "^orange;Kademe 4^reset;\n\nÇalışmaların meyvesini verdi. Artık seni güçlendiren bitkilerin daha etkili türlerini ve sana zarar vermeye çalışanlara aldığın hasarı geri yansıtan, dokunaçlı tuhaf bir bitkiyi yetiştirebiliyorsun.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants3/0",
+      "en": "Superior Combat Plants",
+      "tr": "Üstün Savaş Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants3/1",
+      "en": "^orange;Tier 5^reset;\n\nThrough much experimentation, you're gradually becoming a force to be reckoned with. Your plants can strengthen you to inhuman levels, sap your enemies' life and increase the damage you deal out.",
+      "tr": "^orange;Kademe 5^reset;\n\nSayısız deneyin ardından giderek hesaba katılması gereken bir güce dönüşüyorsun. Bitkilerin seni insanüstü seviyelere taşıyabilir, düşmanlarının yaşam gücünü emebilir ve verdiğin hasarı artırabilir.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants4/0",
+      "en": "Master Combat Plants",
+      "tr": "Usta Savaş Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/combatplants4/1",
+      "en": "^orange;Tier 6^reset;\n\nAn unstoppable juggernaut, you now hunt those who used to prey upon you, draining their vitality even as you slay them with your organic weapons. The universe is yours to take now, and your genetic weaponry is unparalelled.",
+      "tr": "^orange;Kademe 6^reset;\n\nDurdurulamaz bir güce dönüştün; artık eskiden seni avlayanları sen avlıyor, organik silahlarınla öldürürken yaşam güçlerini emiyorsun. Artık evreni dilediğin gibi fethedebilirsin ve genetik silahların rakipsiz.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/kadavan/0",
+      "en": "Kadavan Crops",
+      "tr": "Kadavan Ekinleri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/kadavan/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to cultivate some strange Avikan crops, farmed by a race of starfaring nomads originally from the planet Kadavan.",
+      "tr": "^orange;Kademe 2^reset;\n\nAslen Kadavan gezegeninden gelen, yıldızlar arasında dolaşan göçebe Avikanların yetiştirdiği bazı tuhaf ekinleri yetiştirmeyi öğrendin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/aquaticplants/0",
+      "en": "Aquatic Plants",
+      "tr": "Su Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/aquaticplants/1",
+      "en": "^orange;Tier 4.5^reset;\n\nYou've learned how to develop some specialized plants that enhance your mobility in water, and created Vorit, a strange jelly-like mushroom which allows you to breathe normally underwater or even in a total vacuum for a while, then harmlessly passes through your system.\n\nAquapods are especially useful for the copious amounts of genetic information they contain, in both the seeds and bulbs.",
+      "tr": "^orange;Kademe 4,5^reset;\n\nSuda hareket kabiliyetini artıran özel bitkiler geliştirmeyi öğrendin. Ayrıca Vorit adlı, su altında hatta tam vakumda bir süre normal nefes almanı sağlayan ve ardından vücudundan zararsızca atılan jelimsi, tuhaf bir mantar geliştirdin.\n\nAquapod'lar hem tohumlarında hem soğanlarında barındırdıkları büyük miktardaki genetik bilgi sayesinde özellikle kullanışlıdır.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/garpberry/0",
+      "en": "Garp Berries",
+      "tr": "Garp Berry",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/garpberry/1",
+      "en": "^orange;Tier 5.5^reset;\n\nYou've created Garp berries, an incredibly useful plant which can be used both eaten to protect yourself from radioactive burns, and processed in your extraction lab to create the rare and extremely useful Alien Compound.",
+      "tr": "^orange;Kademe 5,5^reset;\n\nSon derece yararlı Garp Berry bitkisini geliştirdin. Meyvesini yiyerek radyoaktif yanıklara karşı korunabilir veya Özütleme Laboratuvarında işleyerek nadir ve çok kullanışlı Uzaylı Bileşiği elde edebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/blisterbush/0",
+      "en": "Blister Bush",
+      "tr": "Blister Bush",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/blisterbush/1",
+      "en": "^orange;Tier 3.5^reset;\n\nYou've learned to grow the gross-but-useful Blister Pods. They're bioluminescent, and can be used in making weapons and armor, as well as lights for decorating your base.",
+      "tr": "^orange;Kademe 3,5^reset;\n\nİğrenç görünümlü ama yararlı Blister Pod'ları yetiştirmeyi öğrendin. Biyolüminesans özelliğine sahip bu bitkiler silah ve zırh yapımında, ayrıca üssünü süsleyecek ışıklarda kullanılabilir.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/energeticplants/0",
+      "en": "Energetic Plants",
+      "tr": "Enerji Bitkileri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/energeticplants/1",
+      "en": "^orange;Tier 4.5^reset;\n\nYou've created a family of plants that fortify your natural energy reserves, including Energiflower, a plant so packed with energy that it can even power your ship's FTL drive.",
+      "tr": "^orange;Kademe 4,5^reset;\n\nDoğal enerji rezervlerini güçlendiren bir bitki ailesi geliştirdin. Bunlara, geminin FTL motoruna bile yakıt olabilecek kadar enerji yüklü Energiflower da dâhil.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/aenema/0",
+      "en": "Aenema Flowers",
+      "tr": "Aenema Çiçekleri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/aenema/1",
+      "en": "^orange;Tier 5.5^reset;\n\nThe searing hot petals of the Aenema plant are packed with useful Caliginous Gas just waiting to be extracted. Now that you can cultivate your own Aenema, you will have easy access to that resource.",
+      "tr": "^orange;Kademe 5,5^reset;\n\nAenema bitkisinin kavurucu sıcaklıktaki taç yaprakları, özütlenmeyi bekleyen yararlı Caliginous Gazıyla doludur. Artık kendi Aenema bitkilerini yetiştirebildiğin için bu kaynağa kolayca erişebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/thornitox/0",
+      "en": "Thornitox Weaponry",
+      "tr": "Thornitox Silahları",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/thornitox/1",
+      "en": "^orange;Tier 3.5^reset;\n\nThornitox isn't good for eating, but it's a thick, tough vine that can create weapons perfect for killing.",
+      "tr": "^orange;Kademe 3,5^reset;\n\nThornitox yemeye pek uygun değildir ama öldürmek için son derece etkili silahlar üretmeye yarayan kalın ve dayanıklı bir sarmaşıktır.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/throwableplants1/0",
+      "en": "Throwable Plants",
+      "tr": "Fırlatılabilir Bitkiler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/throwableplants1/1",
+      "en": "^orange;Tier 4.5^reset;\n\nUnsatisfied with simply eating the plants you grow, you've created new strains which can be thrown as weapons, to share them with your foes as well.",
+      "tr": "^orange;Kademe 4,5^reset;\n\nYetiştirdiğin bitkileri yalnızca yemekle yetinmeyip düşmanlarınla da paylaşmak için silah gibi fırlatılabilen yeni türler geliştirdin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/throwableplants2/0",
+      "en": "Advanced Throwable Plants",
+      "tr": "Gelişmiş Fırlatılabilir Bitkiler",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/throwableplants2/1",
+      "en": "^orange;Tier 5^reset;\n\nYou've created a number of even stronger plants, which are devastating when thrown, and in the case of hellfire plants can even be used to create some powerful weapons, with some further research in the weaponry tree.",
+      "tr": "^orange;Kademe 5^reset;\n\nFırlatıldığında yıkıcı etki yaratan daha da güçlü bitkiler geliştirdin. Hellfire bitkileri, Silahlar araştırma ağacında biraz daha ilerlediğinde güçlü silahların üretiminde bile kullanılabilir.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/xenolab1/0",
+      "en": "Improved Gene Extraction",
+      "tr": "Geliştirilmiş Gen Çıkarımı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/xenolab1/1",
+      "en": "^orange;Tier 2^reset;\n\nThe sprouting table is a little slow for your liking, so you made a more complex electronic version, which will be critical to your future research efforts. Craft it at your ^orange;Auto-Assembler^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nFilizlendirme Tezgâhı sana biraz yavaş geldi, bu yüzden gelecekteki araştırmalarında kritik olacak daha karmaşık elektronik bir sürüm geliştirdin. ^orange;Otomatik Birleştiricide^reset; üret.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/xenolab2/0",
+      "en": "Amazing Gene Extraction",
+      "tr": "Üstün Gen Çıkarımı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/xenolab2/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've improved even further on your Xenolab design. Your new ^cyan;Advanced Xenolab^reset; works incredibly fast.",
+      "tr": "^orange;Kademe 4^reset;\n\nXeno Araştırma Laboratuvarı tasarımını daha da geliştirdin. Yeni ^cyan;Gelişmiş Xeno Laboratuvarın^reset; inanılmaz hızlı çalışıyor.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/treecloner/0",
+      "en": "Tree Cloning",
+      "tr": "Ağaç Klonlama",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/treecloner/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've used your knowledge of genetic engineering to splice trees together into strange combined forms with the trunk of one tree and the leaves of another. The possibilities are immense, and experimentation will yield great results.",
+      "tr": "^orange;Kademe 3^reset;\n\nGenetik mühendisliği bilgini kullanarak bir ağacın gövdesini diğerinin yapraklarıyla birleştiren tuhaf melez ağaçlar geliştirdin. Olasılıklar neredeyse sınırsız; deney yapmak çok iyi sonuçlar verebilir.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/farming1/0",
+      "en": "Farming",
+      "tr": "Çiftçilik",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/farming1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned some more complex methods of farming and can now build several helpful farming objects. The ^cyan;Growing Tray^reset; is the most important of these, as it will automatically grow seeds placed inside with the help of fertilizers that increase yields far beyond what is possible through manual labor. Craft it at your ^orange;Foraging Table^reset;.",
+      "tr": "^orange;Kademe 1^reset;\n\nDaha karmaşık tarım yöntemleri öğrendin ve artık çeşitli yararlı tarım araçları üretebilirsin. Bunların en önemlisi ^cyan;Yetiştirme Tepsisi^reset;. İçine yerleştirilen tohumları otomatik yetiştirir; gübre kullanımıyla elle tarımın ulaşamayacağı kadar yüksek verim sağlayabilir. ^orange;Toplayıcılık Tezgâhında^reset; üret.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/farming2/0",
+      "en": "Advanced Farming",
+      "tr": "Gelişmiş Çiftçilik",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/farming2/1",
+      "en": "^orange;Tier 2^reset;\n\nWith a ^cyan;Heatlamp Tray^reset; made at your ^orange;Electronics Center^reset;, you can turn electrical power into faster plant growth. They'll use more water per plant than a Growing Tray, but the added speed is worth it! \n\nIn addition, you've learned to create hydroponic and aeroponic tubing, more advanced sprinkler systems, and other useful farming enhancements for farming the old-fashioned way if you prefer that.",
+      "tr": "^orange;Kademe 2^reset;\n\n^orange;Elektronik Merkezinde^reset; üretilen ^cyan;Isı Lambalı Tepsi^reset; ile elektrik gücünü daha hızlı bitki büyümesine dönüştürebilirsin. Yetiştirme Tepsisine göre bitki başına daha fazla su tüketir ama sağladığı hız buna değer!\n\nAyrıca klasik usul tarımı tercih edersen kullanabileceğin hidroponik ve aeroponik borular, daha gelişmiş sulama sistemleri ve başka yararlı tarım geliştirmeleri üretmeyi öğrendin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/farming3/0",
+      "en": "Farming Mastery",
+      "tr": "Çiftçilik Ustalığı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/farming3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou can make an hydroponics-powered Growing Tray that operates even faster when powered, and doesn't use extra water like the Heatlamp Tray does. You can find it at your ^orange;Electronics Center^reset;.",
+      "tr": "^orange;Kademe 3^reset;\n\nElektrikle çalıştığında daha da hızlı olan ve Isı Lambalı Tepsi gibi ekstra su tüketmeyen bir Hidroponik Tepsi üretebilirsin. Bunu ^orange;Elektronik Merkezinde^reset; bulabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/gathering1/0",
+      "en": "Gathering",
+      "tr": "Toplayıcılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/gathering1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned hunter-gatherer skills like trapping, fishing and creating specialized weapons designed to maximize usable material from the things you kill.",
+      "tr": "^orange;Kademe 1^reset;\n\nTuzak kurma, balık tutma ve öldürdüğün canlılardan elde edilebilir malzeme miktarını artırmak için tasarlanmış özel silahlar üretme gibi avcı-toplayıcı becerileri öğrendin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/gathering2/0",
+      "en": "Advanced Gathering",
+      "tr": "Gelişmiş Toplayıcılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/gathering2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've vastly improved in hunter-gathering tactics and can create far more capable hunting tools than before.",
+      "tr": "^orange;Kademe 3^reset;\n\nAvcı-toplayıcı tekniklerinde büyük ilerleme kaydettin ve artık eskisinden çok daha etkili av araçları üretebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/gathering3/0",
+      "en": "Master Gathering",
+      "tr": "Toplayıcılık Ustalığı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/gathering3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've mastered hunter-gatherer tactics and can make top-shelf hunting gear.",
+      "tr": "^orange;Kademe 4^reset;\n\nAvcı-toplayıcı tekniklerinde ustalaştın ve artık üst düzey av ekipmanları üretebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/husbandry1/0",
+      "en": "Husbandry",
+      "tr": "Hayvancılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/husbandry1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned how to raise farm animals and also designed a few cabinets designed to lure and capture wild bugs.",
+      "tr": "^orange;Kademe 1^reset;\n\nÇiftlik hayvanı yetiştirmeyi ve yabani böcekleri cezbedip yakalamak için tasarlanmış birkaç dolap yapmayı öğrendin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/husbandry2/0",
+      "en": "Advanced Husbandry",
+      "tr": "Gelişmiş Hayvancılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/husbandry2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make even better animal feed and some automated devices to collect products from them, saving you the trouble.",
+      "tr": "^orange;Kademe 2^reset;\n\nDaha iyi hayvan yemleri ve hayvanların ürettiği ürünleri senin yerine otomatik toplayan cihazlar yapabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/husbandry3/0",
+      "en": "Master Husbandry",
+      "tr": "Hayvancılık Ustalığı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/husbandry3/1",
+      "en": "^orange;Tier 3^reset;\n\nTop of the line gear for keeping your farm animals healthy and happy.",
+      "tr": "^orange;Kademe 3^reset;\n\nÇiftlik hayvanlarını sağlıklı ve mutlu tutmak için en iyi ekipmanları üretebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival1/0",
+      "en": "Survival",
+      "tr": "Hayatta Kalma",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to create some simple survival aids - namely portable light sources to help with exploration.",
+      "tr": "^orange;Kademe 1^reset;\n\nKeşif sırasında işine yarayacak basit hayatta kalma araçları, özellikle taşınabilir ışık kaynakları üretmeyi öğrendin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival2/0",
+      "en": "Advanced Survival",
+      "tr": "Gelişmiş Hayatta Kalma",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make brighter, better lights and a few advanced survival tools.",
+      "tr": "^orange;Kademe 2^reset;\n\nDaha parlak ve daha iyi ışık kaynaklarının yanı sıra birkaç gelişmiş hayatta kalma aracı üretebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival3/0",
+      "en": "Master Survival",
+      "tr": "Hayatta Kalma Ustalığı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/survival3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou can craft top of the line lights and survival tools.",
+      "tr": "^orange;Kademe 3^reset;\n\nEn üst düzey ışık kaynaklarını ve hayatta kalma araçlarını üretebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees1/0",
+      "en": "Beekeeping",
+      "tr": "Arıcılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees1/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've learned to raise bees in an apiary to provide you with useful resources. Make an ^cyan;Apiary Crafting Station^reset; at your ^orange;Machining Table^reset; to get started.\n\nRaising bees is pretty complex. If you're not sure how, buy a guide from the Bee Refuge in the Science Outpost, accessible once you leave your starter planet.\n\nAs a simple starter tip, you need a microscope-identified queen, a matching microscope-identified drone, one or more frames, and some flowers planted nearby for production to start.",
+      "tr": "^orange;Kademe 1^reset;\n\nArıları bir arılıkta yetiştirerek yararlı kaynaklar elde etmeyi öğrendin. Başlamak için ^orange;İmalat Tezgâhında^reset; bir ^cyan;Arıcılık Üretim İstasyonu^reset; yap.\n\nArıcılık oldukça karmaşıktır. Nasıl yapılacağından emin değilsen, başlangıç gezegeninden ayrıldıktan sonra erişebileceğin Bilim Karakolundaki Arı Barınağından bir rehber satın al.\n\nBasit bir başlangıç ipucu: Üretimin başlaması için mikroskopla tanımlanmış bir kraliçe arıya, onunla eşleşen mikroskopla tanımlanmış bir erkek arıya, bir veya daha fazla çerçeveye ve yakına dikilmiş birkaç çiçeğe ihtiyacın var.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees2/0",
+      "en": "Improved Beekeeping",
+      "tr": "Geliştirilmiş Arıcılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou can make bigger bee apiaries and more useful Frames to supplement their production.",
+      "tr": "^orange;Kademe 2^reset;\n\nDaha büyük arılıklar ve üretimi destekleyecek daha kullanışlı Çerçeveler yapabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees3/0",
+      "en": "Advanced Beekeeping",
+      "tr": "İleri Arıcılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees3/1",
+      "en": "^orange;Tier 4^reset;\n\nYou can make even more powerful Frames that drastically improve your bees' efficiency.",
+      "tr": "^orange;Kademe 4^reset;\n\nArılarının verimliliğini ciddi ölçüde artıran daha güçlü Çerçeveler yapabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees4/0",
+      "en": "Efficient Beekeeping",
+      "tr": "Verimli Arıcılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees4/1",
+      "en": "^orange;Tier 5^reset;\n\nYou can make advanced Frames that drastically improve your hives.",
+      "tr": "^orange;Kademe 5^reset;\n\nKovanlarının verimini ciddi ölçüde artıran gelişmiş Çerçeveler yapabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees5/0",
+      "en": "Ultimate Beekeeping",
+      "tr": "Arıcılık Ustalığı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/bees5/1",
+      "en": "^orange;Tier 6^reset;\n\nYou have achieved a truly enviable master's degree. You have managed to make your hives produce efficiently.",
+      "tr": "^orange;Kademe 6^reset;\n\nGerçekten imrenilecek bir yüksek lisans derecesine ulaştın. Kovanlarının verimli üretim yapmasını sağlamayı başardın.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/fishing1/0",
+      "en": "Basic Fishing",
+      "tr": "Temel Balıkçılık",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/fishing1/1",
+      "en": "^orange;Tier 3^reset;\n\nFishing is both a useful survival skill and a relaxing hobby. You can now create a basic fishing rod and use it to catch fish in bodies of water.\n\n^red;Only works on ocean-like planets (Ocean, Arctic, Tidewater, etc.), not in lakes and puddles.^reset;",
+      "tr": "^orange;Kademe 3^reset;\n\nBalıkçılık hem yararlı bir hayatta kalma becerisi hem de dinlendirici bir hobidir. Artık temel bir olta üretip su kütlelerinde balık tutabilirsin.\n\n^red;Yalnızca Ocean, Arctic, Tidewater ve benzeri okyanus gezegenlerinde çalışır; göl ve su birikintilerinde çalışmaz.^reset;",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/fishing2/0",
+      "en": "Fishing Techniques",
+      "tr": "Balıkçılık Teknikleri",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/fishing2/1",
+      "en": "^orange;Tier 4^reset;\n\nYou can craft better quality fishing tackle, enabling you to catch fish with greater ease.",
+      "tr": "^orange;Kademe 4^reset;\n\nDaha kaliteli olta takımları üretebilir ve balıkları daha kolay yakalayabilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/fishing3/0",
+      "en": "Master Wrangler",
+      "tr": "Usta Balıkçı",
+      "section": "Tarım"
+    },
+    {
+      "asset": "zb/researchTree/fu_agriculture.config",
+      "pointer": "/strings/research/fishing3/1",
+      "en": "^orange;Tier 5^reset;\n\nWith your knowledge of fishing, you can create a nearly perfect fishing rod.",
+      "tr": "^orange;Kademe 5^reset;\n\nBalıkçılık bilgin sayesinde neredeyse kusursuz bir olta üretebilirsin.",
+      "section": "Tarım"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/description",
+      "en": "Create plants from raw materials.",
+      "tr": "Hammaddelerden bitkiler üret.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Greenhouse^reset;",
+      "tr": "^orange;Sera^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Breed basic plants.",
+      "tr": "Temel bitkiler yetiştir.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Greenhouse^reset;",
+      "tr": "^orange;Sera^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^green;Greenhouse^reset;",
+      "tr": " ^green;Sera^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Basic horticulture and agriculture.",
+      "tr": " ^#dddddd;Temel bahçecilik ve tarım.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "More advanced seed experimentation.",
+      "tr": "Daha gelişmiş tohum deneyleri yap.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Botany Lab^reset;",
+      "tr": "^orange;Botanik Laboratuvarı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^green;Botany Lab^reset;",
+      "tr": " ^green;Botanik Laboratuvarı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Create more complex plants.",
+      "tr": " ^#dddddd;Daha karmaşık bitkiler oluştur.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Create bizarre alien plantlife.",
+      "tr": "Sıra dışı uzaylı bitkiler oluştur.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Gene Design Lab^reset;",
+      "tr": "^orange;Gen Tasarım Laboratuvarı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^green;Gene Design Lab^reset;",
+      "tr": " ^green;Gen Tasarım Laboratuvarı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlab.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Create advanced plant life.",
+      "tr": " ^#dddddd;Gelişmiş bitkiler oluştur.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/sproutingtable/sproutingtable.object",
+      "pointer": "/description",
+      "en": "Extracts useful Genes from Seeds.",
+      "tr": "Tohumlardan yararlı Genler çıkarır.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/sproutingtable/sproutingtable.object",
+      "pointer": "/subtitle",
+      "en": "Seed Extractor",
+      "tr": "Tohum Özütleyici",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/sproutingtable/sproutingtable.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Sprouting Table^reset;",
+      "tr": "^cyan;Filizlendirme Tezgâhı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/xenostation/xenolab.object",
+      "pointer": "/description",
+      "en": "This station is designed to pull genes from seeds for study and experimentation.",
+      "tr": "Araştırma ve deneyler için tohumlardan gen çıkarmaya yönelik bir laboratuvar.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/xenostation/xenolab.object",
+      "pointer": "/subtitle",
+      "en": "Seed Extractor",
+      "tr": "Tohum Özütleyici",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/xenostation/xenolab.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Xeno Research Lab^reset;",
+      "tr": "^cyan;Xeno Araştırma Laboratuvarı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/xenostationadvnew/xenostationadvnew.object",
+      "pointer": "/description",
+      "en": "A top of the line Quantum Xeno Lab for efficiently extracting genes from seeds.",
+      "tr": "Tohumlardan verimli biçimde gen çıkarmak için geliştirilmiş üst düzey bir Kuantum Xeno Laboratuvarı.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/xenostationadvnew/xenostationadvnew.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Advanced Xenolab^reset;",
+      "tr": "^cyan;Gelişmiş Xeno Laboratuvarı^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/fu_growingtray/fu_growingtray.object",
+      "pointer": "/description",
+      "en": "Grows crops more quickly and efficiently via fertilizers and controlled conditions. Requires 3 seeds and water. Scan for info.",
+      "tr": "Gübre ve kontrollü koşullar sayesinde ekinleri daha hızlı ve verimli yetiştirir. 3 tohum ve su gerekir. Bilgi için tara.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/fu_growingtray/fu_growingtray.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Growing Tray^reset;",
+      "tr": "^cyan;Yetiştirme Tepsisi^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/power/irongrowingtray/irongrowingtray.object",
+      "pointer": "/description",
+      "en": "A heatlamp powered growing tray. Requires 3 seeds and ^red;additional^reset; water. ^cyan;Requires ^orange;1W ^cyan;power^reset; to increase production. Scan for info.",
+      "tr": "Isı lambasıyla çalışan bir yetiştirme tepsisi. 3 tohum ve ^red;ekstra^reset; su gerekir. ^cyan;Üretimi artırmak için ^orange;1W ^cyan;güç gerekir^reset;. Bilgi için tara.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/power/irongrowingtray/irongrowingtray.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Heatlamp Tray^reset;",
+      "tr": "^cyan;Isı Lambalı Tepsi^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/power/isn_hydroponicstray/isn_hydroponicstray.object",
+      "pointer": "/description",
+      "en": "An hydroponic powered growing tray. Requires 3 seeds and water. ^cyan;Requires ^orange;4W ^cyan;power^reset; to increase production. Scan for info.",
+      "tr": "Hidroponik sistemle çalışan bir yetiştirme tepsisi. 3 tohum ve su gerekir. ^cyan;Üretimi artırmak için ^orange;4W ^cyan;güç gerekir^reset;. Bilgi için tara.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/power/isn_hydroponicstray/isn_hydroponicstray.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Hydro Tray^reset;",
+      "tr": "^cyan;Hidroponik Tepsi^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/bees/beestation/beestation.object",
+      "pointer": "/description",
+      "en": "Craft all sorts of bee related items!",
+      "tr": "Arıcılıkla ilgili çeşitli eşyalar üret!",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/bees/beestation/beestation.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Apiary Crafting Station^reset;",
+      "tr": "^cyan;Arıcılık Üretim İstasyonu^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/bees/beerefuge/beerefuge.object",
+      "pointer": "/description",
+      "en": "Turn in bees for money! Save the bees!",
+      "tr": "Arıları para karşılığında teslim et! Arıları kurtar!",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/bees/beerefuge/beerefuge.object",
+      "pointer": "/shortdescription",
+      "en": "Bee Refuge",
+      "tr": "Arı Barınağı",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/beerefuge.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Bee Refuge",
+      "tr": " Arı Barınağı",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/beerefuge.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " We pay for your bees!",
+      "tr": " Arıların için ödeme yapıyoruz!",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "interface/windowconfig/beerefuge.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/description",
+      "en": "Create powered gear.",
+      "tr": "Elektrikli ekipman üret.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Electronics Center^reset;",
+      "tr": "^orange;Elektronik Merkezi^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Create powered gear.",
+      "tr": "Elektrikli ekipman üret.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Electronics Center^reset;",
+      "tr": "^orange;Elektronik Merkezi^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#e158ff;Electronics Center^reset;",
+      "tr": " ^#e158ff;Elektronik Merkezi^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Create powered gear.",
+      "tr": " ^#dddddd;Elektrikli ekipman üret.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "High-tech powered devices.",
+      "tr": "İleri teknoloji elektrikli cihazlar.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Power Station^reset;",
+      "tr": "^orange;Güç İstasyonu^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#e158ff;Power Station^reset;",
+      "tr": " ^#e158ff;Güç İstasyonu^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstation.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Hi-Tech power and wiring solutions.",
+      "tr": " ^#dddddd;İleri teknoloji güç ve kablolama çözümleri.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/precursor/precursorfluid.item",
+      "pointer": "/description",
+      "en": "A nearly magical space-time fluid suspended in a portable gravity well.\n^blue;+^white;200 ^blue;Fuel^reset;",
+      "tr": "Taşınabilir bir kütleçekim kuyusunda askıda duran, neredeyse büyülü bir uzay-zaman sıvısı.\n^blue;+^white;200 ^blue;Yakıt^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/precursor/precursorfluid.item",
+      "pointer": "/shortdescription",
+      "en": "Quantum Fluid",
+      "tr": "Kuantum Sıvısı",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/aliencompound.item",
+      "pointer": "/description",
+      "en": "Strange compounds with various amazing uses in scientific research.",
+      "tr": "Bilimsel araştırmalarda şaşırtıcı kullanım alanları olan tuhaf bileşikler.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/aliencompound.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Alien Compound^reset;",
+      "tr": "^#88e25b;Uzaylı Bileşiği^reset;",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "items/liquids/shadowgasliquid.liqitem",
+      "pointer": "/description",
+      "en": "WF6CF4Po. Able to absorb light and alter gravitic force through unusual carbon nanotube formations. Toxic.\n^yellow;Centrifugable^reset;.",
+      "tr": "WF6CF4Po. Sıra dışı karbon nanotüp oluşumları sayesinde ışığı emebilir ve kütleçekim kuvvetini değiştirebilir. Zehirlidir.\n^yellow;Santrifüjlenebilir^reset;.",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "items/liquids/shadowgasliquid.liqitem",
+      "pointer": "/shortdescription",
+      "en": "Caliginous Gas",
+      "tr": "Caliginous Gazı",
+      "section": "Tarım makineleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_sprouting.questtemplate",
+      "pointer": "/title",
+      "en": "Genetics",
+      "tr": "Genetik",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_sprouting.questtemplate",
+      "pointer": "/text",
+      "en": "^orange;Sprouting Tables^reset; and ^orange;Xeno Labs^reset; are useful devices that extract ^orange;Genes^reset; from plant seeds. You will most certainly require them, so ^orange;go ahead and make a ^orange;Sprouting Table^reset; now^reset;.",
+      "tr": "^orange;Filizlendirme Tezgâhları^reset; ve ^orange;Xeno Araştırma Laboratuvarları^reset;, bitki tohumlarından ^orange;Genler^reset; çıkaran yararlı cihazlardır. Bunlara kesinlikle ihtiyacın olacak; o yüzden ^orange;hemen bir ^orange;Filizlendirme Tezgâhı^reset; üret^reset;.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_sprouting.questtemplate",
+      "pointer": "/completionText",
+      "en": "Try tossing some seeds in there, and wait a bit. You'll soon get some ^orange;Genes^reset; that you can stockpile to create ^green;new types of plants^reset; in the ^orange;Greenhouse.^reset;",
+      "tr": "İçine birkaç tohum atıp biraz bekle. Kısa sürede ^orange;Genler^reset; elde edersin. Bunları biriktirip ^orange;Serada^reset; ^green;yeni bitki türleri^reset; oluşturabilirsin.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_sprouting.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;Sprouting Table^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^green;Filizlendirme Tezgâhını^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+      "pointer": "/title",
+      "en": "Growing",
+      "tr": "Yetiştirme Tepsisi",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+      "pointer": "/text",
+      "en": "While you can farm the old-fashioned way with a hoe , dirt and your own two hands there is another option: ^orange;Growing Trays^reset;. Build one of these at a ^orange;Foraging Table^reset; now, if you have researched it in ^oraange;Agriculture^reset;.",
+      "tr": "Çapa, toprak ve iki elinle klasik usul çiftçilik yapabilirsin; ama başka bir seçeneğin daha var: ^orange;Yetiştirme Tepsileri^reset;. ^orange;Tarım^reset; araştırmasını açtıysan şimdi ^orange;Toplayıcılık Tezgâhında^reset; bir tane üret.",
+      "section": "Tarım görevleri",
+      "qa": {
+        "allow_color_fix": true,
+        "reason": "Kaynakta ^oraange; yazım hatası var; Türkçe yamada ^orange; olarak düzeltildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+      "pointer": "/completionText",
+      "en": "In the first slot, place 3 seeds. In the second, place a liquid to feed the plant with. The third slot is for fertilizer. ^green;Different fertilizers^reset; will result in ^green;different production and growth rates^reset; for plants.",
+      "tr": "İlk yuvaya 3 tohum koy. İkinci yuvaya bitkiyi besleyecek bir sıvı, üçüncüye gübre koy. ^green;Farklı gübreler^reset;, bitkilerde ^green;farklı üretim ve büyüme hızları^reset; sağlar.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^green;Yetiştirme Tepsisini^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "section": "Tarım görevleri",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak yanlışlıkla Armorworks istiyor; gerçek görev koşulu fu_growingtray."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_xeno.questtemplate",
+      "pointer": "/title",
+      "en": "Using the Sprouting Table",
+      "tr": "Filizlendirme Tezgâhını Kullanmak",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_xeno.questtemplate",
+      "pointer": "/text",
+      "en": "So you've built a ^orange;Sprouting Table^reset;? Why are you looking so clueless? It's simple: Toss in a ^orange;Potato Seed^reset; and wait about 60 seconds. You'll get a useful ^green;Gene^reset; for your botany research, or other goods",
+      "tr": "Demek bir ^orange;Filizlendirme Tezgâhı^reset; yaptın? Neden öyle boş boş bakıyorsun? Basit: İçine bir ^orange;Patates Tohumu^reset; at ve yaklaşık 60 saniye bekle. Botanik araştırmalarında kullanabileceğin bir ^green;Gen^reset; veya başka ürünler elde edersin.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_xeno.questtemplate",
+      "pointer": "/completionText",
+      "en": "Constructing a ^orange;Xeno Lab^reset; upon upgrading your ^orange;Machining Table^reset; is a good idea, as they are ^green;much faster^reset;! Effectively every plant seed can be placed within seed labs, and each one will produce ^green;Genes^reset;.",
+      "tr": "^orange;İmalat Tezgâhını^reset; yükselttikten sonra bir ^orange;Xeno Araştırma Laboratuvarı^reset; kurmak iyi fikirdir; ^green;çok daha hızlıdır^reset;! Neredeyse her bitki tohumu tohum laboratuvarlarında işlenebilir ve her biri ^green;Genler^reset; üretir.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming1.questtemplate",
+      "pointer": "/title",
+      "en": "Feeling Thirsty?",
+      "tr": "Susadın mı?",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming1.questtemplate",
+      "pointer": "/text",
+      "en": "A ^orange;Well^reset; is extremely important, for it provides life-giving ^orange;Water^reset; for numerous purposes. Build one at a ^orange;Foraging Table^reset;. Once it fills for a while, harvest some ^orange;Water^reset;.",
+      "tr": "Bir ^orange;Kuyu^reset; son derece önemlidir; birçok işte kullanacağın hayat kaynağı ^orange;Suyu^reset; sağlar. ^orange;Toplayıcılık Tezgâhında^reset; bir tane üret. Bir süre dolmasını bekledikten sonra biraz ^orange;Su^reset; topla.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming1.questtemplate",
+      "pointer": "/completionText",
+      "en": "Water in wells will gradually increase. When you have 100 or more, you can harvest it. It can be used in crafting, thrown to create lakes or placed in a Hydroponics Tray.",
+      "tr": "Kuyulardaki su zamanla artar. 100 veya daha fazlası biriktiğinde toplayabilirsin. Üretimde kullanılabilir, göl oluşturmak için fırlatılabilir veya Hidroponik Tepsiye konabilir.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming2.questtemplate",
+      "pointer": "/title",
+      "en": "Stab for Noms",
+      "tr": "Avla da Ye",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming2.questtemplate",
+      "pointer": "/text",
+      "en": "When you're starving, you have some options. A ^orange;Campfire^reset; cooks your meat. It's fast, but you'll need a ^green;bow^reset;, ^orange;Hunting Spear^reset;, ^orange;Bone Spear^reset; or ^orange;Hunting Rifle^reset; to obtain the meat. Get some and cook it. Then noms.",
+      "tr": "Açlıktan ölüyorsan birkaç seçeneğin var. ^orange;Kamp Ateşi^reset; etini pişirir. Hızlıdır ama eti elde etmek için bir ^green;yay^reset;, ^orange;Av Mızrağı^reset;, ^orange;Kemik Mızrak^reset; veya ^orange;Av Tüfeği^reset; kullanman gerekir. Biraz et bul, pişir, sonra afiyetle ye.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming2.questtemplate",
+      "pointer": "/completionText",
+      "en": "You can craft a ^orange;Hoe^reset;, but take mine instead. Try making a viable farm! It will feed you and could even lead to a thriving community if you built a ^orange;Colony^reset; by placing a ^green;Colony Deed^reset;.",
+      "tr": "Bir ^orange;Çapa^reset; üretebilirsin ama şimdilik benimkini al. İşe yarar bir çiftlik kurmayı dene! Seni besler; hatta bir ^green;Koloni Tapusu^reset; yerleştirip ^orange;Koloni^reset; kurarsan gelişen bir topluluğun başlangıcı bile olabilir.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming3.questtemplate",
+      "pointer": "/title",
+      "en": "Incubation",
+      "tr": "Kuluçka",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming3.questtemplate",
+      "pointer": "/text",
+      "en": "An ^orange;Incubator^reset; might be a worthwhile idea if you want to hatch eggs! With it, you can toss in an egg and quickly generate a baby animal. Well, quicker than letting nature handle it, anyhow. Make one at a ^orange;Foraging Table^reset;.",
+      "tr": "Yumurta çıkarmak istiyorsan bir ^orange;Kuluçka Makinesi^reset; iyi fikir olabilir! İçine bir yumurta koyup kısa sürede yavru bir hayvan elde edebilirsin. En azından doğanın kendi hâline bırakmaktan daha hızlı. ^orange;Toplayıcılık Tezgâhında^reset; bir tane üret.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming3.questtemplate",
+      "pointer": "/completionText",
+      "en": "Try incubating different eggs, and see what sort of wonderful animals you can bring to life!",
+      "tr": "Farklı yumurtaları kuluçkaya yatır ve nasıl harika hayvanlar çıkarabileceğini gör!",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming4.questtemplate",
+      "pointer": "/title",
+      "en": "Feeding Livestock",
+      "tr": "Çiftlik Hayvanlarını Beslemek",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming4.questtemplate",
+      "pointer": "/text",
+      "en": "^green;Livestock^reset; grow a whole lot faster when you toss them some ^orange;Cattle Feed^reset; to munch on. Grind up ^orange;Corn^reset; in your ^orange;Hand Mill^reset; to get some. Then place it in a ^orange;Trough^reset; crafted from a ^orange;Foraging Table^reset;.",
+      "tr": "^green;Çiftlik hayvanları^reset;, önlerine biraz ^orange;Hayvan Yemi^reset; koyduğunda çok daha hızlı büyür. Yem elde etmek için ^orange;Mısırı^reset; ^orange;El Değirmeninde^reset; öğüt. Ardından yemi ^orange;Toplayıcılık Tezgâhında^reset; üretilen bir ^orange;Yemliğe^reset; koy.",
+      "section": "Tarım görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/fuquest_farming4.questtemplate",
+      "pointer": "/completionText",
+      "en": "Animals do not produce resources unless they are fed and happy. Keeping them fed means lots of resources. The happier they are, the faster they will produce for you! Just feed them what they actually eat! Mooshi do not enjoy meat, and raptors hate carrots.",
+      "tr": "Hayvanlar beslenip mutlu olmadıkça kaynak üretmez. Onları tok tutmak bol kaynak demektir. Ne kadar mutlu olurlarsa o kadar hızlı üretirler! Yalnız gerçekten yedikleri şeyleri ver. Mooshi etten hoşlanmaz, raptorlar da havuçtan nefret eder.",
+      "section": "Tarım görevleri"
     }
   ]
 }

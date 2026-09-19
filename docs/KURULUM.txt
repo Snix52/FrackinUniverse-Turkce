@@ -1,55 +1,58 @@
-FRACKIN' UNIVERSE TÜRKÇE | v0.1.1 BETA
-Anayasa uyum düzeltmesi
+FRACKIN' UNIVERSE TÜRKÇE | v0.2.0 BETA
+Başlangıç + Jeoloji + Tarım
 Hazırlanma tarihi: 19 Eylül 2026
 
 ÖNCE BUNU OKU
-Bu, FU'nun tam Türkçe çevirisi değildir. 185 oyuncu metni alanını kapsayan
-kısmi beta paketidir. Statik QA ve exact kaynak doğrulaması geçti; oyun içi
-LQA, font ve pencere taşması kontrolleri henüz tamamlanmadı.
+Bu, FU'nun tam Türkçe çevirisi değildir. Şu anda 360 oyuncu metni alanını
+ve 36 hedef asset'i kapsar. Statik QA ve exact kaynak doğrulaması geçti;
+oyun içi LQA, font ve pencere taşması kontrolleri henüz tamamlanmadı.
 
-GEREKLİ OLAN
-Starbound ve Frackin' Universe kurulu olmalı.
-Hedef FU sürümü: 6.5.8
+HEDEF SÜRÜM
+Frackin' Universe: 6.5.8
 Kaynak commit:
 329e714b3fe87571055c8ad7aa38135d199d3317
 
 KURULUM
 1. Starbound'u kapat.
 2. Oyunun "storage" klasörünü yedekle.
-3. ZIP'i çıkar ve yalnızca "FU_Turkce" klasörünü Starbound'un "mods"
-   klasörüne kopyala.
-4. Yol şu biçimde olmalı:
+3. Dağıtım ZIP'ini çıkar.
+4. İçindeki "FU_Turkce" klasörünü Starbound'un "mods" klasörüne kopyala.
+5. Yol şu biçimde olmalı:
    Starbound\mods\FU_Turkce\_metadata
-5. Ana FU .pak dosyasına veya Workshop klasörüne dokunma.
-6. Tercihen yeni bir test karakteriyle aç.
+6. Ana FU .pak dosyasına veya Workshop klasörüne dokunma.
+7. Tercihen yeni bir test karakteriyle kontrol et.
 
-TÜRKÇE KARAKTER POLİTİKASI
-Yamada gerçek Türkçe karakterler kullanılır: ç, ğ, ı, İ, ö, ş, ü.
-ASCII / "Arastirma, Turkce, Uretim" sürümü yoktur.
-Karakterler kare veya bozuk görünürse bu bir font/LQA hatasıdır; Türkçeyi
-bozarak geçici çözüm üretilmez.
+TÜRKÇE KARAKTERLER
+Gerçek Türkçe karakterler kullanılır: ç, ğ, ı, İ, ö, ş, ü.
+ASCII yedek sürüm yoktur. Font sorunu varsa Türkçeyi bozmak yerine font/LQA
+sorunu olarak ele alınır.
 
-İLK TEST
-- Araştırma ekranında "Geology" yerine "Jeoloji" görünmeli.
-- "Basic Training" yerine "Temel Eğitim" görünmeli.
-- Görev ve telsizlerde "(Machining Table)", "(Wire)" gibi İngilizce
-  parantez açıklamaları görünmemeli.
-- İmalat Tezgâhı, Kablo, Fırın, Sera ve Bilim Karakolu adları görev ile
-  envanter/arayüz arasında tutarlı görünmeli.
-- Türkçe karakter, renk ve satır taşmalarını kontrol et.
-
-KAPSAM
+v0.2 KAPSAMI
 - Araştırma arayüzü: 9 alan
 - Jeoloji: 104 alan
-- Görevler: 36 alan
-- Tezgâhlar: 14 alan
-- Başlangıç telsiz/öğretici mesajları: 22 alan
-Toplam: 185 alan / 14 hedef asset
+- Önceki görevler: 36 alan
+- İmalat Tezgâhı: 14 alan
+- Başlangıç telsiz mesajları: 22 alan
+- Tarım araştırma ağacı: 101 alan / 50 araştırma düğümü + ağaç adı
+- Tarım/genetik makineleri ve kaynakları: 51 alan
+- Tarım öğretici görevleri: 23 alan
+Toplam: 360 alan / 36 asset
+
+TARIMDA İLK KONTROL
+- Araştırma ekranında Agriculture yerine "Tarım" görünmeli.
+- Temel Ekinler, Çiftçilik, Arıcılık ve Balıkçılık dallarını açıp açıklamaları kontrol et.
+- Sera, Filizlendirme Tezgâhı, Xeno Araştırma Laboratuvarı,
+  Yetiştirme Tepsisi, Isı Lambalı Tepsi, Hidroponik Tepsi ve
+  Arıcılık Üretim İstasyonu adlarını envanter/makine ekranında kontrol et.
+- Elektronik Merkezi ve Güç İstasyonu yükseltmelerini kontrol et.
+- Kuantum Sıvısı, Uzaylı Bileşiği ve Caliginous Gazı adlarını kontrol et.
+- "Yetiştirme Tepsisi" görevinde hedefin yanlışlıkla Armorworks olmadığını doğrula.
+- Türkçe karakter, satır taşması ve renk kodlarını ekran görüntüsüyle kontrol et.
 
 KALDIRMA
 Oyunu kapat ve yalnızca Starbound/mods/FU_Turkce klasörünü kaldır.
 Ana Frackin' Universe modunu kaldırma.
 
 HATA RAPORU
-Sorun varsa ekran görüntüsüyle birlikte Starbound/storage/starbound.log
-dosyasını sakla. Büyük FU paketini göndermene gerek yok.
+Ekran görüntüsü ve Starbound/storage/starbound.log dosyasını sakla.
+Büyük FU paketini göndermene gerek yok.

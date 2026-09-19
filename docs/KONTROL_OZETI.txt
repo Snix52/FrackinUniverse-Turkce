@@ -1,35 +1,38 @@
-FU TÜRKÇE v0.1.1 BETA | ANAYASA KONTROL ÖZETİ
+FU TÜRKÇE v0.2.0 BETA | ANAYASA KONTROL ÖZETİ
 
-185 çevrilmiş oyuncu metni alanı / 14 hedef asset.
+360 çevrilmiş oyuncu metni alanı / 36 hedef asset.
+
+KAPSAM
+- Önceki v0.1.1 kapsamı: 185 alan
+- Tarım araştırma ağacı: 101 alan
+- Tarım/genetik makineleri ve FU kaynakları: 51 alan
+- Tarım öğretici görevleri: 23 alan
 
 GEÇEN STATİK KONTROLLER
-- Exact FU kaynak commit doğrulaması: 14/14 dosya, 185/185 pointer ve kaynak değer.
-- Benzersiz alan yolları: 185/185.
-- JSON Patch üretimi ve fixture uygulaması: PASS.
-- Kaynak uyuşmazlığı reddi: 185/185.
-- Placeholder / tuş kodları: PASS.
-- Sayısal değer eşitliği: PASS; oyuncuya gösterilen ondalıklarda Türkçe virgül kullanılabilir.
-- Renk kodları: PASS; 1 adet belgelenmiş kaynak renk kapanışı düzeltmesi.
-- İngilizce parantez glossu: 0.
-- "İngilizce adı:" gibi kaynak dışı açıklama: 0.
+- Exact FU kaynak commit doğrulaması: 360/360 alan.
+- Patchlenen asset kaynak doğrulaması: 36/36.
+- v0.2 yeni içerik doğrulaması: 175/175 alan, 22/22 kaynak asset.
+- Benzersiz JSON alan yolları: PASS.
+- JSON Patch fixture uygulaması: PASS.
+- Kaynak uyuşmazlığı guard testi: 360/360.
+- Tuş / sayı / biçimlendirme kontrolleri: PASS.
 - Unicode Türkçe politika: PASS.
-- ASCII dağıtım: KALDIRILDI.
+- Tarım build allowlist: PASS.
+- ASCII dağıtım: yok.
 
-DİL / TERMİNOLOJİ
-- Research sistem adı: Araştırma; buton/eylem: Araştır.
-- Machining Table: İmalat Tezgâhı.
-- Precursor özel ad olarak korunur.
-- Homestead I: Yerleşim I (REVIEW).
-- Welchie'nin konuşma tonu kaynak karaktere yaklaştırıldı.
+BELGELİ KAYNAK HATALARI
+1. create_growingtray kaynak metnindeki "^oraange;" kodu "^orange;" olarak düzeltildi.
+2. Aynı görevin kaynak turnInDescription alanı yanlışlıkla Armorworks istiyor.
+   Gerçek koşul itemName=fu_growingtray olduğu için Türkçede Yetiştirme Tepsisi kullanıldı.
 
 YAPILMAYAN LQA
-- Oyunu gerçek FU Workshop kurulumu üzerinde başlatma.
-- Font ve Türkçe büyük/küçük harf testi.
-- UI/görev metni taşma kontrolü.
-- Görev -> eşya -> üretim menüsü -> teslim zincirinin baştan sona testi.
-- Diğer modlarla yükleme sırası/uyumluluk testi.
+- Oyunu gerçek Workshop kurulumu üzerinde başlatma.
+- Font ve büyük/küçük Türkçe karakter testi.
+- Research açıklamalarının panelden taşma kontrolü.
+- Görev -> araştırma -> üretim menüsü -> makine -> teslim zincirinin baştan sona testi.
+- Diğer modlarla uyumluluk/yükleme sırası.
 
 SONUÇ
 Statik Anayasa QA: PASS.
+Exact kaynak doğrulaması: PASS.
 Oyun içi LQA: BEKLİYOR.
-Sürüm bu nedenle hâlâ Beta'dır.
