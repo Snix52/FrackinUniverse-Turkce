@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.4.0-beta",
-  "note": "v0.4 Mühendislik: Mühendislik araştırma ağacı ve doğrudan bağlı temel makine/kaynaklar eklendi.",
+  "translation_version": "0.5.0-beta",
+  "note": "v0.5 Güç Sistemleri: fu_power araştırma ağacı yerelleştirildi; bağlı makineler aynı sürümde tamamlanıyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -4839,6 +4839,573 @@
       "en": "This faster'n 'light machine is workin' fine, though it's quite small.",
       "tr": "Bu ışıktan hızlı makine gayet iyi çalışıyo, biraz ufak ama.",
       "section": "Mühendislik makineleri ve kaynakları"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/trees/fu_power",
+      "en": "Electronics",
+      "tr": "Güç Sistemleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/default/0",
+      "en": "Instructions",
+      "tr": "Kullanım Rehberi",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/default/1",
+      "en": "Select a research by clicking one of the icons on the grid.\nYou can navigate the grid by dragging with the left mouse button.\n\n- The left most button at the upper part of the screen opens a list of research trees to pick from.\n\n- The second button opens a list of non-hidden research options. Click a research on the displayed to center the view on it. Click again to hide the list.\n\n- The third button will center the view on the middle of the tree, or the currently selected research.\n\n- The last button toggles ^orange;low quality mode^reset;. This makes the GUI jump to a position instead of panning to it, or the center button. In addition, dragging/navigating on the the main screen will update only after you release the mouse button. It is best to use the search list with this mode enabled.",
+      "tr": "Bir araştırma seçmek için ızgaradaki simgelerden birine tıkla.\nSol fare tuşunu basılı tutup sürükleyerek ağaçta gezinebilirsin.\n\n- Ekranın üst kısmındaki en soldaki düğme, seçebileceğin araştırma ağaçlarını listeler.\n\n- İkinci düğme, gizli olmayan araştırmaları listeler. Listedeki bir araştırmaya tıklarsan görünüm ona odaklanır. Listeyi kapatmak için tekrar tıkla.\n\n- Üçüncü düğme, görünümü ağacın ortasına veya seçili araştırmaya odaklar.\n\n- Son düğme ^orange;düşük kalite modunu^reset; açıp kapatır. Bu modda arayüz hedefe kaymak yerine doğrudan geçer. Ana ekranda sürükleme sırasında görünüm, fare tuşunu bıraktıktan sonra güncellenir. Bu mod açıkken arama listesini kullanmak daha pratiktir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/survival_1/0",
+      "en": "Basic Training",
+      "tr": "Temel Eğitim",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/survival_1/1",
+      "en": "^orange;Tier 1^reset;\n\nYour training, thanks to four years in the Protectorate Academy, provides you with basic survival skills to keep you alive for extended periods in the event of a crash.",
+      "tr": "^orange;Kademe 1^reset;\n\nProtectorate Akademisi’nde aldığın dört yıllık eğitim, bir kaza sonrasında uzun süre hayatta kalmanı sağlayacak temel becerileri kazandırdı.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/electronicsbasic/0",
+      "en": "Electronics",
+      "tr": "Elektronik",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/electronicsbasic/1",
+      "en": "^orange;Tier 1^reset;\n\nYou've taught yourself some basic electronics and can now make a variety of rudimentary wired machinery at the ^orange;Electronics Center.^reset;",
+      "tr": "^orange;Kademe 1^reset;\n\nTemel elektronik konusunda kendi kendini eğittin. Artık ^orange;Elektronik Merkezinde^reset; çeşitli basit kablolu makineler üretebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/solar1/0",
+      "en": "Solar Power",
+      "tr": "Güneş Enerjisi",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/solar1/1",
+      "en": "^orange;Tier 2^reset;\n\nThe free energy of stars is now within your reach with your understanding of solar technology. You can now build solar panels at your ^orange;Electronics Center^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nGüneş teknolojisi bilgin sayesinde yıldızların bedava enerjisi artık elinin altında. ^orange;Elektronik Merkezinde^reset; Güneş Panelleri üretebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/solar2/0",
+      "en": "Improved Solar Cells",
+      "tr": "Geliştirilmiş Güneş Hücreleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/solar2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to use graphene to enhance your solar panels, allowing you to build bigger and more efficient solar arrays.",
+      "tr": "^orange;Kademe 3^reset;\n\nGüneş panellerini Grafenle geliştirmeyi öğrendin. Artık daha büyük ve daha verimli Güneş Dizileri üretebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/solar3/0",
+      "en": "Peerless Solar Cells",
+      "tr": "Eşsiz Güneş Hücreleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/solar3/1",
+      "en": "^orange;Tier 4^reset;\n\nBy combining nanofibre and Quietus metals, you can create incredibly potent solar towers which harvest vast amounts of renewable energy.",
+      "tr": "^orange;Kademe 4^reset;\n\nNanofiber ile Quietus metallerini birleştirerek muazzam miktarda yenilenebilir enerji toplayan son derece güçlü Güneş Kuleleri üretebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/hydraulicdynamo/0",
+      "en": "Steam Power",
+      "tr": "Buhar Gücü",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/hydraulicdynamo/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've mastered the primitive-but-useful art of steam power. You can build a hydraulic piston that boils water using 'hot' fuels like lava or core fragments to generate early power.",
+      "tr": "^orange;Kademe 2^reset;\n\nİlkel ama kullanışlı buhar gücünde ustalaştın. Lav veya Çekirdek Parçaları gibi sıcak yakıtlarla suyu kaynatıp başlangıç seviyesinde elektrik üreten bir Hidrolik Dinamo yapabilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/windpower/0",
+      "en": "Wind Turbines",
+      "tr": "Rüzgâr Türbinleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/windpower/1",
+      "en": "^orange;Tier 3^reset;\n\nWith access to hardier metals like Titanium, you've developed a durable wind turbine which will generate lots of renewable energy in the right environment.",
+      "tr": "^orange;Kademe 3^reset;\n\nTitanyum gibi daha dayanıklı metallere erişince, uygun ortamda bol miktarda yenilenebilir enerji üretebilen sağlam bir Rüzgâr Türbini geliştirdin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/combustion/0",
+      "en": "Combustion Engines",
+      "tr": "Yanmalı Jeneratörler",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/combustion/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've improved upon your fossil-fuel-burner design. With a Combustion Engine, you can generate more power than an Alternator using a wider array of fuel types.",
+      "tr": "^orange;Kademe 2^reset;\n\nFosil yakıtlı jeneratör tasarımını geliştirdin. Yanmalı Jeneratör, Alternatörden daha fazla güç üretebilir ve çok daha geniş bir yakıt yelpazesiyle çalışır.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/electricfurnace/0",
+      "en": "Powered Smelting",
+      "tr": "Elektrikli Ergitme",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/electricfurnace/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to use electrically-generated heat to smelt materials automatically. The ^orange;Electric Furnace^reset; can only process ^gray;common^reset; and ^green;uncommon^reset; ores, but it's great for getting extra materials from ores and blocks.",
+      "tr": "^orange;Kademe 2^reset;\n\nElektrikle üretilen ısıyı kullanarak malzemeleri otomatik işlemeyi öğrendin. ^orange;Elektrikli Fırın^reset; yalnızca ^gray;yaygın^reset; ve ^green;yaygın olmayan^reset; cevherleri işleyebilir; buna karşılık cevher ve bloklardan ek malzeme çıkarmakta oldukça iyidir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/blastfurnace/0",
+      "en": "Industrial Smelting",
+      "tr": "Endüstriyel Ergitme",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/blastfurnace/1",
+      "en": "^orange;Tier 3^reset;\n\nExperimentation with heat-resistant alloys have lead to your creation of a powerful Blast Furnace which can efficiently smelt ^cyan;rare^reset; ores, and many materials which regular furnaces can't handle.",
+      "tr": "^orange;Kademe 3^reset;\n\nIsıya dayanıklı alaşımlarla yaptığın deneyler, ^cyan;nadir^reset; cevherleri ve normal fırınların işleyemediği pek çok malzemeyi verimli biçimde eritebilen güçlü bir Yüksek Fırın geliştirmeni sağladı.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/arcsmelter/0",
+      "en": "Arc Smelting",
+      "tr": "Ark Ergitme",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/arcsmelter/1",
+      "en": "^orange;Tier 6^reset;\n\nUsing your newfound quantum knowledge, you've designed an incredibly powerful electric furnace that smelts even more efficiently and quickly than a blast furnace, but can also perform quantum conversions by pressurizing its contents to levels that surpass gas giants.",
+      "tr": "^orange;Kademe 6^reset;\n\nYeni kuantum bilginle, Yüksek Fırından bile daha hızlı ve verimli çalışan son derece güçlü bir Ark Ergitici tasarladın. İçindekileri gaz devlerinin basıncını aşan seviyelere sıkıştırarak kuantum dönüşümleri de gerçekleştirebilir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/fission/0",
+      "en": "Nuclear Power",
+      "tr": "Nükleer Enerji",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/fission/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've gotten a hang of nuclear fission, and can now build Fission Reactors that not only provide tons of power, but also generate useful fission by-products. Just mind the radiation.",
+      "tr": "^orange;Kademe 3^reset;\n\nNükleer fisyonu kavradın. Artık hem çok büyük miktarda enerji üreten hem de yararlı fisyon yan ürünleri sağlayan Fisyon Reaktörleri kurabilirsin. Radyasyona dikkat et.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/fusion/0",
+      "en": "Basic Fusion",
+      "tr": "Temel Füzyon",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/fusion/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've done it! You've determined how to create stable fusion reactions! This is an efficient producer of energy, but ^red;requires coolant such as water or liquid nitrogen^reset; or you risk potentially fatal explosion.\nCan be fueled with hydrogen isotopes such as Hydrogen, Helium 3 and Tritium.",
+      "tr": "^orange;Kademe 4^reset;\n\nBaşardın! Kararlı füzyon tepkimeleri oluşturmayı çözdün. Son derece verimli enerji üretir ancak ^red;su veya sıvı azot gibi bir soğutucu gerektirir^reset;; aksi hâlde ölümcül bir patlama yaşanabilir.\nHidrojen, Helyum 3 ve Trityum gibi hidrojen izotoplarıyla yakıtlanabilir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/fusion2/0",
+      "en": "Advanced Fusion",
+      "tr": "Gelişmiş Füzyon",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/fusion2/1",
+      "en": "^orange;Tier 5^reset;\n\nWhy stop at -basic- fusion when you can create something far more appealing? While expensive, the ^orange;Large Fusion Reactor^reset; is well worth its weight for the power it can produce using hydrogen isotopes. It still ^red;requires coolant such as water or liquid nitrogen^reset;.",
+      "tr": "^orange;Kademe 5^reset;\n\nTemel füzyonla yetinmek zorunda değilsin. Pahalı olsa da ^orange;Büyük Füzyon Reaktörü^reset;, hidrojen izotoplarından üretebildiği enerjiyle maliyetini fazlasıyla karşılar. Yine de ^red;su veya sıvı azot gibi bir soğutucu gerektirir^reset;.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/quantumpower/0",
+      "en": "Quantum Nucleonics",
+      "tr": "Kuantum Nükleoniği",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/quantumpower/1",
+      "en": "^orange;Tier 6^reset;\n\nGenerating electricity from quantum mechanics is something very few people have done, but you can count yourself among them with your new Quantum Reactor. Capable of burning both traditional and esoteric fuels, it generates unfathomably large amounts of power.",
+      "tr": "^orange;Kademe 6^reset;\n\nKuantum mekaniğinden elektrik üretmeyi başarabilen çok az kişi var. Yeni Kuantum Reaktörün sayesinde artık sen de onlardan birisin. Hem geleneksel hem de sıra dışı yakıtları kullanabilir ve akıl almaz miktarda güç üretebilir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/quantumextractor/0",
+      "en": "Quantum Processing",
+      "tr": "Kuantum İşleme",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/quantumextractor/1",
+      "en": "^orange;Tier 6^reset;\n\nNot satisfied with traditional extraction machines, you've improved on the design with quantum mechanics. Quantum Extractors not only work faster than ever, but produce twice as much from their extractions.",
+      "tr": "^orange;Kademe 6^reset;\n\nGeleneksel çıkarma makineleri sana yetmedi ve tasarımı kuantum mekaniğiyle geliştirdin. Kuantum Çıkarıcılar yalnızca çok daha hızlı çalışmakla kalmaz, her işlemden iki kat ürün verir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery1/0",
+      "en": "Silicon Batteries",
+      "tr": "Silisyum Pilleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery1/1",
+      "en": "^orange;Tier 2^reset;\n\nUsing silicon, you've learned to create simple solid-state batteries at your ^orange;Electronics Center^reset;- a big step up from junky old lead-acid ones.",
+      "tr": "^orange;Kademe 2^reset;\n\nSilisyum kullanarak ^orange;Elektronik Merkezinde^reset; basit katı hâl pilleri üretmeyi öğrendin. Eski kurşun-asit pillere göre büyük bir sıçrama.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery2/0",
+      "en": "Improved Batteries",
+      "tr": "Geliştirilmiş Piller",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've improved your skills building batteries with silicon, and can now create batteries that hold much more charge than before.",
+      "tr": "^orange;Kademe 3^reset;\n\nSilisyum pil üretimindeki becerini geliştirdin. Artık eskisinden çok daha fazla enerji depolayan piller üretebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery3/0",
+      "en": "Protocite Batteries",
+      "tr": "Protocite Pilleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery3/1",
+      "en": "^orange;Tier 4^reset;\n\nUsing Protocite's amazing ability to store and channel energy, you've designed a new kind of battery that is better than silicon in every way.",
+      "tr": "^orange;Kademe 4^reset;\n\nProtocite'ın enerjiyi depolama ve aktarmadaki olağanüstü yeteneğini kullanarak Silisyum pillerden her açıdan daha iyi yeni bir pil tasarladın.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery4/0",
+      "en": "Advanced Batteries",
+      "tr": "Gelişmiş Piller",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery4/1",
+      "en": "^orange;Tier 5^reset;\n\nCombining Quantum technology and Quietus metals, you have developed a bizarre sort of battery that stores energy almost like a living creature. This comes with even better storage capacity.",
+      "tr": "^orange;Kademe 5^reset;\n\nKuantum teknolojisini Quietus metalleriyle birleştirerek enerjiyi adeta canlı bir varlık gibi depolayan tuhaf bir pil geliştirdin. Depolama kapasitesi de çok daha yüksek.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery5a/0",
+      "en": "Hydrogen Batteries",
+      "tr": "Hidrojen Pilleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/battery5a/1",
+      "en": "^orange;Tier 6^reset;\n\nLiquid Metallic Hydrogen is such a potent energy medium that it blows any solid-state battery out of the water. With it, you've designed what may well be the best battery in the galaxy.",
+      "tr": "^orange;Kademe 6^reset;\n\nSıvı Metalik Hidrojen öylesine güçlü bir enerji ortamıdır ki katı hâl pilleri yanında sönük kalır. Onunla, galaksideki en iyi pil olabilecek bir tasarım geliştirdin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/centrifuge1/0",
+      "en": "Industrial Centrifuging",
+      "tr": "Endüstriyel Santrifüj",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/centrifuge1/1",
+      "en": "^orange;Tier 2^reset;\n\nWith Tungsten, you can now build a big, bulky centrifuge that more efficiently processes liquids and can also receive external attachments to jar honey. Build one at your ^orange;Electronics Center^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nTungsten sayesinde sıvıları daha verimli işleyen, büyük ve hantal bir Endüstriyel Santrifüj kurabilirsin. Bal kavanozlamak için haricî eklentiler de bağlanabilir. ^orange;Elektronik Merkezinde^reset; üret.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/centrifuge2/0",
+      "en": "Laboratory Centrifuging",
+      "tr": "Laboratuvar Santrifüjü",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/centrifuge2/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've developed a sleek new centrifuge that is better at its job than before thanks to the power of Protocite processing.",
+      "tr": "^orange;Kademe 3^reset;\n\nProtocite işleme teknolojisi sayesinde önceki tasarımından çok daha başarılı, şık bir Laboratuvar Santrifüjü geliştirdin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/sifter2/0",
+      "en": "Powered Sifting",
+      "tr": "Elektrikli Eleme",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/sifter2/1",
+      "en": "^orange;Tier 3^reset;\n\nHaving improved upon your Sifter design, you can now harvest the hidden treasures of blocks much more efficiently. You can also create a Rock Crusher, which breaks up hard materials like cobblestone and conglomerate instead of sands and silts.",
+      "tr": "^orange;Kademe 3^reset;\n\nElek tasarımını geliştirerek blokların içindeki gizli kaynakları çok daha verimli biçimde çıkarabilirsin. Ayrıca kum ve silt yerine parke taşı ve konglomera gibi sert malzemeleri parçalayan bir Kaya Kırıcı da üretebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/centrifuge3/0",
+      "en": "Isotope Processing",
+      "tr": "İzotop İşleme",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/centrifuge3/1",
+      "en": "^orange;Tier 4^reset;\n\nWith AI technology, you've designed a centrifuge that is so efficient and capable that it can even process radioactive isotopes into exciting new forms.",
+      "tr": "^orange;Kademe 4^reset;\n\nYapay zekâ teknolojisiyle, radyoaktif izotopları bile işleyip yeni biçimlere dönüştürebilecek kadar verimli ve yetenekli bir Gaz Santrifüjü tasarladın.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/itemnetwork/0",
+      "en": "Item Utilities",
+      "tr": "Eşya Ağı Araçları",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/itemnetwork/1",
+      "en": "^orange;Tier 2^reset;\n\nUsing Item Networks, you can automate a huge number of processes and improve your quality of life dramatically. Researching Item Utilities will give you access to a laundry list of useful utility objects at your ^orange;Electronics Center^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nEşya Ağlarıyla çok sayıda süreci otomatikleştirebilir ve işlerini ciddi ölçüde kolaylaştırabilirsin. Bu araştırma, ^orange;Elektronik Merkezinde^reset; üretebileceğin uzun bir kullanışlı ağ aracı listesine erişim sağlar.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/worker2/0",
+      "en": "Improved Producers",
+      "tr": "Geliştirilmiş Üreticiler",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/worker2/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've learned to upgrade your copper pumps and quarries into iron versions, which work more quickly.",
+      "tr": "^orange;Kademe 2^reset;\n\nBakır pompa ve taş ocaklarını daha hızlı çalışan demir sürümlere yükseltmeyi öğrendin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/worker3/0",
+      "en": "Advanced Producers",
+      "tr": "Gelişmiş Üreticiler",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/worker3/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've learned to upgrade your iron pumps and quarries into titanium versions, which work more quickly still.",
+      "tr": "^orange;Kademe 3^reset;\n\nDemir pompa ve taş ocaklarını daha da hızlı çalışan Titanyum sürümlere yükseltmeyi öğrendin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/worker4/0",
+      "en": "Peerless Producers",
+      "tr": "Eşsiz Üreticiler",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/worker4/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've learned to upgrade your titanium pumps and quarries into Densinium versions, which work extremely quickly.",
+      "tr": "^orange;Kademe 4^reset;\n\nTitanyum pompa ve taş ocaklarını son derece hızlı çalışan Densinium sürümlere yükseltmeyi öğrendin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/wiringadv/0",
+      "en": "Technical Wiring",
+      "tr": "Teknik Kablolama",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/wiringadv/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've designed a crafting table for creating logic gates, sensors, traps and other large-scale wiring objects.",
+      "tr": "^orange;Kademe 3^reset;\n\nMantık kapıları, sensörler, tuzaklar ve diğer büyük ölçekli kablolama nesnelerini üretmek için özel bir tezgâh tasarladın.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/turrets/0",
+      "en": "Defense Systems",
+      "tr": "Savunma Sistemleri",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/turrets/1",
+      "en": "^orange;Tier 4^reset;\n\nYou've put your wiring expertise to work, and can now create many autonomous turrets for defense or automation.",
+      "tr": "^orange;Kademe 4^reset;\n\nKablolama uzmanlığını kullanarak savunma veya otomasyon için çok sayıda otonom taret üretebilecek duruma geldin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/manufacturing/0",
+      "en": "Automated Assembly",
+      "tr": "Otomatik Üretim",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/manufacturing/1",
+      "en": "^orange;Tier 4^reset;\n\nUsing advanced metals and machinery, you've created an automatic manufacturer which can be configured to quickly craft any item or object you want when provided with materials.",
+      "tr": "^orange;Kademe 4^reset;\n\nGelişmiş metaller ve makineler kullanarak, gerekli malzemeler sağlandığında istediğin eşya veya nesneyi hızla üretecek şekilde yapılandırılabilen otomatik bir Üretim İstasyonu geliştirdin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/ansible/0",
+      "en": "Subspace Communications",
+      "tr": "Altuzay İletişimi",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/ansible/1",
+      "en": "^orange;Tier 5^reset;\n\nThe interstellar ansible internet is a bustling and lucrative place to be, and now you can access it with your newly devised machine.",
+      "tr": "^orange;Kademe 5^reset;\n\nYıldızlararası ansible ağı hareketli ve kazançlı bir yer. Geliştirdiğin yeni makineyle artık sen de bu ağa erişebilirsin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/liquidcollector/0",
+      "en": "Condensation",
+      "tr": "Yoğuşturma",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/liquidcollector/1",
+      "en": "^orange;Tier 2^reset;\n\nYou've designed a device that will condense the atmosphere into liquid when powered. What liquid is produced depends on the planet.",
+      "tr": "^orange;Kademe 2^reset;\n\nElektrik verildiğinde atmosferi sıvıya yoğuşturan bir cihaz tasarladın. Üretilen sıvı gezegene göre değişir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/condenser/0",
+      "en": "Advanced Condensation",
+      "tr": "Gelişmiş Yoğuşturma",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/condenser/1",
+      "en": "^orange;Tier 3^reset;\n\nYou've improved upon your condenser design to create a much more potent device which will condense many useful reagents and elements in addition to liquids.",
+      "tr": "^orange;Kademe 3^reset;\n\nYoğuşturucu tasarımını geliştirerek sıvıların yanı sıra pek çok yararlı reaktif ve elementi de atmosferden toplayabilen çok daha güçlü bir cihaz ürettin.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/mixer/0",
+      "en": "Controlled Reactions",
+      "tr": "Kontrollü Tepkimeler",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/mixer/1",
+      "en": "^orange;Tier 3^reset;\n\nMixing liquids can have many beneficial effects, especially now that you designed a machine to do just that. The liquid mixer can not only produce liquid reactions quickly and cleanly, but also allows for some reactions that couldn't happen when mixing liquid manually.",
+      "tr": "^orange;Kademe 3^reset;\n\nSıvıları karıştırmak birçok yararlı sonuç doğurabilir. Tasarladığın Sıvı Karıştırıcı tepkimeleri hızlı ve temiz biçimde gerçekleştirir; ayrıca sıvıları elle karıştırırken mümkün olmayan bazı tepkimelere de izin verir.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/filter/0",
+      "en": "Atmospheric Cleansing",
+      "tr": "Atmosfer Arıtma",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/filter/1",
+      "en": "^orange;Tier 4^reset;\n\nUsing your knowledge of atmospheric mechanics, you've designed a device which filters the air and regulates temperature, providing protection against many hazards while nearby.",
+      "tr": "^orange;Kademe 4^reset;\n\nAtmosfer mekaniği bilginle havayı filtreleyip sıcaklığı düzenleyen bir cihaz tasarladın. Yakınındayken birçok çevresel tehlikeye karşı koruma sağlar.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/regulator/0",
+      "en": "Total Purification",
+      "tr": "Tam Arıtma",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/regulator/1",
+      "en": "^orange;Tier 6^reset;\n\nYou've mastered atmospheric cleansing. With the Atmospheric Regulator, there is no place you can't settle - butt-naked, if you so choose.",
+      "tr": "^orange;Kademe 6^reset;\n\nAtmosfer arıtma işinde ustalaştın. Atmosfer Düzenleyici sayesinde yerleşemeyeceğin yer yok; istersen üstünde tek parça kıyafet olmadan bile.",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/regenmatrix/0",
+      "en": "Healing Vapors",
+      "tr": "İyileştirici Buharlar",
+      "section": "Güç Sistemleri"
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/research/regenmatrix/1",
+      "en": "^orange;Tier 5^reset;\n\nBy applying your knowledge of medicine to electronics, you've created a field generator that rapidly heals everything within a wide radius.",
+      "tr": "^orange;Kademe 5^reset;\n\nTıp bilgini elektroniğe uygulayarak geniş bir yarıçap içindeki her şeyi hızla iyileştiren bir alan jeneratörü geliştirdin.",
+      "section": "Güç Sistemleri"
     }
   ]
 }
