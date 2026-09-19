@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.6.0 BETA | STATİK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.7.0 BETA | STATİK QA KONTROL ÖZETİ
 
-1195 yapılandırılmış oyuncu metni alanı / 109 patch asset.
+1312 yapılandırılmış oyuncu metni alanı / 113 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 1210 görünür metin birimi / 110 hedef asset.
+TOPLAM: 1327 görünür metin birimi / 114 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -21,6 +21,8 @@ KAPSAM
 - Güç Sistemleri makineleri: 139
 - Zanaatkârlık: 155
 - Zanaatkârlık makineleri: 131
+- Zırh ve Silahlar: 97
+- Zırh ve Silahlar makineleri: 20
 
 v0.5 YENİ İÇERİK
 - fu_power araştırma ağacı: 39 düğüm / 81 oyuncu metni.
@@ -116,4 +118,29 @@ SONUÇ
 Statik Anayasa QA: PASS.
 v0.6 kaynak/provenans doğrulaması: PASS (286/286).
 Proje yapılandırılmış alan bütünlüğü: PASS (1195 benzersiz alan).
+Oyun içi LQA: BEKLİYOR.
+
+
+v0.7 ZIRH VE SİLAHLAR BETA QA
+- Araştırma ağacı: 47 gerçek düğüm.
+- Görünür ağaç/fallback alanı: 97.
+- Bağlı temel istasyon/EPP alanı: 20.
+- v0.7 toplam ekleme: 117 yapılandırılmış alan / 4 hedef asset.
+- Proje toplamı: 1312 yapılandırılmış alan + 15 Lua UI metni = 1327 görünür metin birimi.
+- Pinned FU kaynak doğrulaması: 111/111 PASS.
+- Vanilla Örs zinciri harici test doğrulaması: 4/4 PASS.
+- Vanilla Solunum EPP asset doğrulaması: 2/2 PASS.
+- v0.7 birleşik kaynak/provenans doğrulaması: 117/117 PASS.
+- Patch eşleşmesi: 117 test + 117 replace PASS.
+- Yinelenen asset/pointer: 0.
+- Boş Türkçe değer: 0.
+- Renk/kontrol kodu ve sayı bütünlüğü: PASS; Örs ailesinde 4 belgeli ^white; -> ^reset; düzeltmesi.
+- Ana takip zincirleri eşlendi: İmalat Tezgâhı -> Zırh Atölyesi -> Montaj Hattı -> Cephanelik; Örs -> Dövme Ocağı -> Çoğaltıcı; Solunum EPP'si.
+- depleted uranium -> tüketilmiş uranyum bilimsel karşılığıyla düzeltildi.
+- Oyun içi LQA: BEKLİYOR.
+
+SONUÇ
+Statik Anayasa QA: PASS.
+v0.7 kaynak/provenans doğrulaması: PASS (117/117).
+Proje yapılandırılmış alan bütünlüğü: PASS (1312 benzersiz alan).
 Oyun içi LQA: BEKLİYOR.
