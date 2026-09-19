@@ -1,23 +1,23 @@
-FU TÜRKÇE v0.2.0 BETA | ANAYASA KONTROL ÖZETİ
+FU TÜRKÇE v0.3.0 BETA | ANAYASA KONTROL ÖZETİ
 
-360 çevrilmiş oyuncu metni alanı / 36 hedef asset.
+463 çevrilmiş oyuncu metni alanı / 46 hedef asset.
 
 KAPSAM
-- Önceki v0.1.1 kapsamı: 185 alan
-- Tarım araştırma ağacı: 101 alan
-- Tarım/genetik makineleri ve FU kaynakları: 51 alan
-- Tarım öğretici görevleri: 23 alan
+- Önceki v0.2.0 kapsamı: 360 alan / 36 asset
+- Kimya araştırma ağacı: 71 alan
+- Kimya bağlı makineleri ve kaynakları: 32 alan
+- v0.3 yeni içerik: 103 alan / 10 asset
 
 GEÇEN STATİK KONTROLLER
-- Exact FU kaynak commit doğrulaması: 360/360 alan.
-- Patchlenen asset kaynak doğrulaması: 36/36.
-- v0.2 yeni içerik doğrulaması: 175/175 alan, 22/22 kaynak asset.
+- Exact FU kaynak commit doğrulaması: 463/463 alan.
+- Patchlenen asset kaynak doğrulaması: 46/46.
+- v0.3 yeni içerik doğrulaması: 103/103 alan, 10/10 kaynak asset.
 - Benzersiz JSON alan yolları: PASS.
-- JSON Patch fixture uygulaması: PASS.
-- Kaynak uyuşmazlığı guard testi: 360/360.
-- Tuş / sayı / biçimlendirme kontrolleri: PASS.
+- JSON Patch fixture uygulaması: 463/463 PASS.
+- Kaynak uyuşmazlığı guard kapsamı: 463 alan.
+- Token / sayı / biçimlendirme kontrolleri: PASS.
+- Kimya build allowlist: 103/103 PASS.
 - Unicode Türkçe politika: PASS.
-- Tarım build allowlist: PASS.
 - ASCII dağıtım: yok.
 
 BELGELİ KAYNAK HATALARI
@@ -30,9 +30,10 @@ YAPILMAYAN LQA
 - Font ve büyük/küçük Türkçe karakter testi.
 - Research açıklamalarının panelden taşma kontrolü.
 - Görev -> araştırma -> üretim menüsü -> makine -> teslim zincirinin baştan sona testi.
+- Kimya Laboratuvarı yükseltme kademelerinin oyun içinde isim/açıklama kontrolü.
 - Diğer modlarla uyumluluk/yükleme sırası.
 
 SONUÇ
 Statik Anayasa QA: PASS.
-Exact kaynak doğrulaması: PASS.
+Exact kaynak doğrulaması: PASS (463/463).
 Oyun içi LQA: BEKLİYOR.
