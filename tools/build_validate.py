@@ -176,10 +176,13 @@ def allowed(a,p):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|subtitle|category|[A-Za-z]+Description)',p))
     layered_craftsmanship_assets={
+        'objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object',
         'objects/crafting/woodencookingtable/woodencookingtable.object'
     }
-    if a in layered_craftsmanship_assets:
+    if a=='objects/crafting/woodencookingtable/woodencookingtable.object':
         return bool(re.fullmatch(r'/upgradeStages/[01]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
+    if a=='objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object':
+        return p=='/shortdescription' or bool(re.fullmatch(r'/upgradeStages/[01]/itemSpawnParameters/shortdescription',p)) or bool(re.fullmatch(r'/upgradeStages/2/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
     if a=='objects/crafting/upgradeablecraftingobject/slimecentrifuge/slimecentrifuge.object':
         return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription|[A-Za-z]+Description)|interactData/paneLayoutOverride/windowtitle/(title|subtitle))',p))
     craftsmanship_assets={
@@ -231,8 +234,14 @@ def main():
             if read_at(result,r['pointer'])!=r['tr']:raise AssertionError(a+r['pointer'])
         if args.source_dir:
             source=args.source_dir/a
-            if not source.is_file():raise FileNotFoundError(source)
-            simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            if source.is_file():
+                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            elif all(r.get('qa',{}).get('layered_source') for r in rs):
+                # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
+                # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
+                pass
+            else:
+                raise FileNotFoundError(source)
         patches[a]=patch
 
     # Lua gibi JSON Patch uygulanamayan görünür metinler için kaynak-kilitli ham override.
