@@ -132,6 +132,16 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Atmospheric Regulator | Atmosfer makinesi | Nesne | Atmosfer Düzenleyici | Atmospheric Regulator | LOCKED | |
 | Regeneration Matrix | İyileştirme makinesi | Nesne | Yenilenme Matrisi | Regeneration Matrix | LOCKED | |
 
+| Colony Station | Koloni sistemi makinesi | Nesne | Koloni İstasyonu | Colony Station | LOCKED | Zanaatkârlık koloni dalı |
+
+| Colony Core | Koloni sistemi çekirdeği | Nesne | Koloni Çekirdeği | Colony Core | LOCKED | |
+
+| Colony Deed Mark II | Koloni kiracı tapusu | Nesne | Koloni Tapusu Mark II | Mk2 Kiracı Tapusu | LOCKED | Kaynak araştırma metni Mk2 Tenant Deeds dese de gerçek envanter adı esas alınır |
+
+| Snowprinter | Peglaci üretim makinesi | Nesne | Kar Yazıcısı | Snowprinter | LOCKED | |
+
+| The Lamporium | Lav lambası üretim makinesi | Özel ad/Nesne | Lamporium | The Lamporium | LOCKED | Özel makine adı; İngilizce artikel atılır |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
