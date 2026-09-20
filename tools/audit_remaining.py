@@ -30,7 +30,7 @@ BINARY_SUFFIXES = {
 
 EXCLUDED_PARTS = {
     "a_notyetadded", "a_modders", "deprecated", "obsolete", "unused",
-    "disabled", "attic", "archive", "backup", "backups",
+    "disabled", "attic", "archive", "backup", "backups", ".git", "tilesets",
 }
 
 EXPLICIT_VISIBLE_KEYS = {
@@ -40,7 +40,7 @@ EXPLICIT_VISIBLE_KEYS = {
     "buttontext", "prompt", "question", "response", "message",
     "successmessage", "failuremessage", "errormessage", "statustext",
     "objectivetext", "chargentext", "charcreationtooltip", "speciesname",
-    "sendername", "author", "nameplate", "windowtitle", "maintitle",
+    "sendername", "nameplate", "windowtitle", "maintitle", "hint", "category",
 }
 
 VISIBLE_CONTAINERS = {
@@ -51,8 +51,8 @@ VISIBLE_CONTAINERS = {
 }
 
 TECHNICAL_KEYS = {
-    "type", "kind", "id", "itemname", "objectname", "questid", "species",
-    "category", "rarity", "inventoryicon", "image", "icon", "portrait",
+    "type", "kind", "id", "messageid", "itemname", "objectname", "questid", "species",
+    "rarity", "inventoryicon", "image", "icon", "portrait",
     "script", "scripts", "animation", "animationparts", "animationcustom",
     "config", "path", "file", "directory", "projectiletype", "statuseffect",
     "effect", "action", "command", "function", "parameters", "item",
@@ -185,6 +185,9 @@ def visible_confidence(parts: list[str], value: str) -> str | None:
         return None
     key = parts[-1].lower() if parts else ""
     ancestors = {part.lower() for part in parts[:-1]}
+    if key.startswith("//"):
+        # Tiled editörünün açıklama/metaveri alanları; oyunda gösterilmez.
+        return None
     if key in TECHNICAL_KEYS:
         return None
     if looks_like_resource(value):
@@ -195,10 +198,13 @@ def visible_confidence(parts: list[str], value: str) -> str | None:
         return "confirmed"
     if ancestors & VISIBLE_CONTAINERS:
         return "confirmed"
-    if key == "value" and ancestors & {
-        "gui", "window", "windowconfig", "widget", "widgets", "button", "buttons",
-        "title", "subtitle", "label", "labels", "caption", "textbox", "list",
-    }:
+    if key == "value" and (
+        ancestors & {
+            "gui", "window", "windowconfig", "widget", "widgets", "button", "buttons",
+            "title", "subtitle", "label", "labels", "caption", "textbox", "list",
+        }
+        or any("layout" in ancestor or ancestor.startswith(("lbl", "btn")) for ancestor in ancestors)
+    ):
         return "confirmed"
     if ancestors & {"gui", "interface", "windowconfig", "scriptconfig"}:
         # Bu bağlamdaki key'lenmemiş değerlerin bir bölümü kullanıcı metnidir;
@@ -352,6 +358,18 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             for name in sorted(fields)
         }
 
+    def grouped_roots(rows: dict[tuple[str, str], Candidate]) -> dict[str, dict[str, int]]:
+        fields: Counter[str] = Counter()
+        assets: defaultdict[str, set[str]] = defaultdict(set)
+        for row in rows.values():
+            root = row.asset.split("/", 1)[0]
+            fields[root] += 1
+            assets[root].add(row.asset)
+        return {
+            root: {"assets": len(assets[root]), "fields": fields[root]}
+            for root in sorted(fields, key=lambda item: (-fields[item], item))
+        }
+
     samples: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in sorted(remaining_confirmed.values(), key=lambda item: (item.category, item.asset, item.pointer)):
         if len(samples[row.category]) < 20:
@@ -395,13 +413,15 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             "review_assets": len({row.asset for row in remaining_review.values()}),
             "confirmed_by_category": grouped(remaining_confirmed),
             "review_by_category": grouped(remaining_review),
+            "confirmed_by_source_root": grouped_roots(remaining_confirmed),
+            "review_by_source_root": grouped_roots(remaining_review),
         },
         "remaining_confirmed_key_frequency": dict(key_frequency.most_common()),
         "samples_by_category": dict(samples),
         "parse_failures": parse_failures,
-        "translated_not_found_samples": [
+        "translated_not_found": [
             {"asset": asset, "pointer": field_pointer}
-            for asset, field_pointer in sorted(translated_not_found)[:100]
+            for asset, field_pointer in sorted(translated_not_found)
         ],
     }
     return result
