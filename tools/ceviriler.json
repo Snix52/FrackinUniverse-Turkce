@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.19.0-beta",
-  "note": "v0.19 items/generic/crafting: 261 kalan aday runtime tarifleri, görev ödülleri, çıkarma tabloları, ganimet havuzları ve aktif araştırma bağlantılarıyla denetlendi; erişilebilir 235 assette 470 oyuncuya görünür alan yerelleştirildi, 26 ölü/deprecated/bağlantısız asset dışarıda bırakıldı. Toplam 3259 structured + 15 Lua, 735 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.20.0-beta",
+  "note": "v0.20 görev runtime taraması: daha önce çevrilmemiş 97 questtemplate adayı ve 1 hatalı uzantılı test dosyası denetlendi. Oyuncuya gerçekten ulaşan 29 görevde 112 görünür alan yerelleştirildi; 68 erişilemez, kapalı, geliştiriciye özel veya görünmez takip görevi ile 1 bozuk test dosyası dışarıda bırakıldı. Toplam 3371 structured + 15 Lua, 764 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -23728,6 +23728,793 @@
       "en": "Can be refined into a nearly unmeltable alloy.",
       "tr": "Neredeyse eritilemez bir alaşıma dönüştürülebilir.",
       "section": "v0.19 Üretim malzemeleri"
+    },
+    {
+      "asset": "quests/alienjungle.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Brine Star",
+      "tr": "^green;Brine Star",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/alienjungle.questtemplate",
+      "pointer": "/text",
+      "en": "The ancient map gives me directions to a deep underground jungle on a far-off, remote planet. What will I find there?",
+      "tr": "Kadim harita, uzak bir gezegende yerin derinliklerindeki bir ormana giden yolu gösteriyor. Orada ne bulacağım?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/alienjungle.questtemplate",
+      "pointer": "/completionText",
+      "en": "That was truly harrowing! Did I manage to find all the secret rooms?",
+      "tr": "Gerçekten dehşet vericiydi! Acaba tüm gizli odaları bulabildim mi?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/alienjungle.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Explore the entirety of the Brine Star ruins.",
+      "tr": "Brine Star harabelerinin tamamını keşfet.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/ancienttemple.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Ancient Temple",
+      "tr": "^green;Ancient Temple",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/ancienttemple.questtemplate",
+      "pointer": "/text",
+      "en": "The map shows me the coordinates to an ancient Avian temple in the desert wilderness.",
+      "tr": "Harita, çölün ortasındaki kadim bir Avian tapınağının koordinatlarını gösteriyor.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/ancienttemple.questtemplate",
+      "pointer": "/completionText",
+      "en": "Phew, that was quite a jaunt through the temple. Did I manage to find all the secret treasure?",
+      "tr": "Off, tapınağın içinde epey dolaştım. Acaba bütün gizli hazineleri bulabildim mi?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/ancienttemple.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Go to the Ancient Temple and explore it.",
+      "tr": "Ancient Temple'a git ve tapınağı keşfet.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/avianhydro.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Hydro Center",
+      "tr": "^green;Hydro Center",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/avianhydro.questtemplate",
+      "pointer": "/text",
+      "en": "The map shows me coordinates to an underwater hydro distribution center on a far-off obscure planet. It apparently holds a great treasure. ",
+      "tr": "Harita, uzak ve ıssız bir gezegendeki su altı hidro dağıtım merkezinin koordinatlarını gösteriyor. Söylentiye göre içeride büyük bir hazine var.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/avianhydro.questtemplate",
+      "pointer": "/completionText",
+      "en": "I think there was more than meets the eye to this facility. Did I explore it sufficiently, sawblades notwithstanding?",
+      "tr": "Bu tesiste görünenden fazlası vardı. Testere bıçaklarına rağmen yeterince araştırabildim mi acaba?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/avianhydro.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Search the Hydro Distribution Center for great treasure.",
+      "tr": "Hydro Center'da büyük hazineyi ara.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs1.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Challenge Labs Complete!",
+      "tr": "^green;Challenge Labs Tamamlandı!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs1.questtemplate",
+      "pointer": "/text",
+      "en": "I should poke the crystal again to get my reward.",
+      "tr": "Ödülümü almak için kristale tekrar dokunmalıyım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs1.questtemplate",
+      "pointer": "/completionText",
+      "en": "This was all just so weird.",
+      "tr": "Bunların hepsi gerçekten çok tuhaftı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs1.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Poke the strange crystal again to get your reward.",
+      "tr": "Ödülünü almak için tuhaf kristale tekrar dokun.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs2.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Challenge Labs Complete!",
+      "tr": "^green;Challenge Labs Tamamlandı!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs2.questtemplate",
+      "pointer": "/text",
+      "en": "I should poke the crystal again to get my reward.",
+      "tr": "Ödülümü almak için kristale tekrar dokunmalıyım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs2.questtemplate",
+      "pointer": "/completionText",
+      "en": "This was all just so weird.",
+      "tr": "Bunların hepsi gerçekten çok tuhaftı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs2.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Poke the strange crystal again to get your reward.",
+      "tr": "Ödülünü almak için tuhaf kristale tekrar dokun.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs3.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Challenge Labs Complete!",
+      "tr": "^green;Challenge Labs Tamamlandı!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs3.questtemplate",
+      "pointer": "/text",
+      "en": "I should poke the crystal again to get my reward.",
+      "tr": "Ödülümü almak için kristale tekrar dokunmalıyım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs3.questtemplate",
+      "pointer": "/completionText",
+      "en": "This was all just so weird.",
+      "tr": "Bunların hepsi gerçekten çok tuhaftı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs3.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Poke the strange crystal again to get your reward.",
+      "tr": "Ödülünü almak için tuhaf kristale tekrar dokun.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs4.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Challenge Labs Complete!",
+      "tr": "^green;Challenge Labs Tamamlandı!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs4.questtemplate",
+      "pointer": "/text",
+      "en": "I should poke the crystal again to get my reward.",
+      "tr": "Ödülümü almak için kristale tekrar dokunmalıyım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs4.questtemplate",
+      "pointer": "/completionText",
+      "en": "This was all just so weird.",
+      "tr": "Bunların hepsi gerçekten çok tuhaftı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/challengelabs/extrachallengelabs4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Poke the strange crystal again to get your reward.",
+      "tr": "Ödülünü almak için tuhaf kristale tekrar dokun.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/evernight.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Evernight Jungle",
+      "tr": "^green;Evernight Jungle",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/evernight.questtemplate",
+      "pointer": "/text",
+      "en": "I've discovered the location of ancient ruins deep in a far-off planet's jungle. This could make for interesting exploration.",
+      "tr": "Uzak bir gezegenin ormanlarının derinliklerindeki kadim harabelerin yerini keşfettim. Araştırmaya değer olabilir.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/evernight.questtemplate",
+      "pointer": "/completionText",
+      "en": "What were cultists doing in here? They were up to something with the locals, but I don't know what. Well, it doesn't matter now. Their loot is mine!",
+      "tr": "Tarikatçıların burada ne işi vardı? Yerlilerle bir işler çeviriyorlardı ama ne olduğunu bilmiyorum. Neyse, artık önemi yok. Ganimetleri benim!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/evernight.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Follow the coordinates to the jungle via SAIL and investigate.",
+      "tr": "SAIL üzerinden koordinatları takip ederek Evernight Jungle'a git ve araştır.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/forestoffae.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Forest of Fae",
+      "tr": "^green;Forest of Fae",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/forestoffae.questtemplate",
+      "pointer": "/text",
+      "en": "The cultists' map shows a certain beautiful forest planet which they're trying to corrupt. There's also a whole load of loot stored there, too. I could try and crash their party...",
+      "tr": "Tarikatçıların haritası, yozlaştırmaya çalıştıkları güzel bir orman gezegenini gösteriyor. Üstelik orada yığınla ganimet saklamışlar. Partilerine davetsiz katılabilirim...",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/forestoffae.questtemplate",
+      "pointer": "/completionText",
+      "en": "With the cultists gone, hopefully the forest will recover in time. Either way, my job here is done.",
+      "tr": "Tarikatçılar ortadan kalktığına göre orman zamanla toparlanır umarım. Her hâlükârda buradaki işim bitti.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/forestoffae.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Stop the cultists from corrupting the Forest of Fae.",
+      "tr": "Tarikatçıların Forest of Fae'yi yozlaştırmasını engelle.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/grandarena.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Grand Arena",
+      "tr": "^green;Grand Arena",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/grandarena.questtemplate",
+      "pointer": "/text",
+      "en": "The map shows me the way to a grand jungle arena where Floran hunters go test their strength. There's a prize advertised for those who manage to survive...",
+      "tr": "Harita, Floran avcılarının güçlerini sınadığı büyük bir orman arenasına giden yolu gösteriyor. Hayatta kalmayı başaranlara ödül vadedilmiş...",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/grandarena.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now that was one hell of a brawl! Time to claim my hard-earned loot!",
+      "tr": "İşte buna kavga denir! Dişimle tırnağımla kazandığım ganimeti alma vakti!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/grandarena.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Survive all waves in the Grand Arena without dying.",
+      "tr": "Ölmeden Grand Arena'daki tüm saldırı dalgalarını atlat.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/infiltration.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Infiltration",
+      "tr": "^green;Sızma",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/infiltration.questtemplate",
+      "pointer": "/text",
+      "en": "The map shows the way to a remote Miniknog stronghold on a distant planet. Seems like the rebels need help.",
+      "tr": "Harita, uzak bir gezegendeki ıssız bir Miniknog kalesine giden yolu gösteriyor. Anlaşılan asilerin yardıma ihtiyacı var.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/infiltration.questtemplate",
+      "pointer": "/completionText",
+      "en": "The deed is done. Let's get out of here.",
+      "tr": "İş tamam. Buradan çıkalım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/infiltration.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Infiltrate the Miniknog facility and assassinate the research team.",
+      "tr": "Miniknog tesisine sız ve araştırma ekibini ortadan kaldır.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/japaneseruins.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Mount Gigant",
+      "tr": "^green;Mount Gigant",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/japaneseruins.questtemplate",
+      "pointer": "/text",
+      "en": "An ancient Hylotl mountain is said to be cursed. Dare you investigate?",
+      "tr": "Kadim bir Hylotl dağının lanetli olduğu söyleniyor. Araştırmaya cesaretin var mı?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/japaneseruins.questtemplate",
+      "pointer": "/completionText",
+      "en": "I've traversed the entirety of this mountain. Whatever was going on here, seems like the ancients were ultimately responsible for it.",
+      "tr": "Bu dağın her yerini dolaştım. Burada ne yaşandıysa sonuçta Kadimler sorumlu gibi görünüyor.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/japaneseruins.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Investigate the peak of Mount Gigant.",
+      "tr": "Mount Gigant'ın zirvesini araştır.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafacility.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Letheia Facility",
+      "tr": "^green;Letheia Tesisi",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafacility.questtemplate",
+      "pointer": "/text",
+      "en": "Discovered in the Letheia Fleet is a map to a secluded Letheia Corporation facility. There's enough evidence here to warrant an investigation.",
+      "tr": "Letheia Filosunda, Letheia Corporation'ın gözlerden uzak bir tesisine ait harita buldum. Buradaki kanıtlar araştırma yapmayı gerektirecek kadar ciddi.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafacility.questtemplate",
+      "pointer": "/completionText",
+      "en": "Perhaps with the facility shut down, the Letheia Corporation will stop its deeds... haha, who are you kidding?",
+      "tr": "Tesis kapandığına göre Letheia Corporation belki yaptıklarına son verir... Hah, kimi kandırıyorsun?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafacility.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Raid the Letheia bioweapons facility.",
+      "tr": "Letheia'nın biyolojik silah tesisine baskın düzenle.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafleet.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Letheia Fleet Complete!",
+      "tr": "^green;Letheia Filosu Tamamlandı!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafleet.questtemplate",
+      "pointer": "/text",
+      "en": "I did it! I took on the entire fleet and survived!",
+      "tr": "Başardım! Bütün filoya karşı savaşıp hayatta kaldım!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafleet.questtemplate",
+      "pointer": "/completionText",
+      "en": "It seems like a miracle that I survived this onslaught. Perhaps the battleship has leads on Letheia Corp's dastardly deeds.",
+      "tr": "Bu saldırıdan sağ çıkmam mucize gibi. Belki savaş gemisinde Letheia Corporation'ın alçakça işlerine dair ipuçları vardır.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/letheiafleet.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Poke the strange crystal again to get your reward.",
+      "tr": "Ödülünü almak için tuhaf kristale tekrar dokun.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/lethialabs.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Letheia Labs",
+      "tr": "^green;Letheia Laboratuvarları",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/lethialabs.questtemplate",
+      "pointer": "/text",
+      "en": "The map is broadcasting a distress signal, along with coordinates to a remote lunar facility. Perhaps I should investigate.",
+      "tr": "Harita, uzak bir ay tesisinin koordinatlarıyla birlikte imdat sinyali yayıyor. Orayı araştırmalıyım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/lethialabs.questtemplate",
+      "pointer": "/completionText",
+      "en": "Having survived this horrific place, I must follow S.A.I.L.'s instructions and destroy it. There's no time to waste!",
+      "tr": "Bu korkunç yerden sağ çıktım. Şimdi SAIL'in talimatlarını izleyip tesisi yok etmeliyim. Kaybedecek vakit yok!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/lethialabs.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Investigate the distress signal.",
+      "tr": "İmdat sinyalini araştır.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/magickaforest.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Away In A Longship^reset;",
+      "tr": "^green;Uzun Gemiyle Uzaklara^reset;",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/magickaforest.questtemplate",
+      "pointer": "/text",
+      "en": "Alpaca raiders are threatening an ancient Glitch monastery. The defenders look like they could use a little help.",
+      "tr": "Alpaka akıncıları kadim bir Glitch manastırını tehdit ediyor. Savunmacıların biraz yardıma ihtiyacı var gibi.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/magickaforest.questtemplate",
+      "pointer": "/completionText",
+      "en": "These ruins sure are expansive, and the alpaca well-hidden! Hopefully all this was worth it!",
+      "tr": "Bu harabeler gerçekten çok geniş, alpakalar da iyi saklanmış! Umarım bütün bunlara değmiştir!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/magickaforest.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Defeat the leader of the alpaca raiders.",
+      "tr": "Alpaka akıncılarının liderini yen.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator.questtemplate",
+      "pointer": "/title",
+      "en": "The Master Manipulator",
+      "tr": "Usta Manipülatör",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator.questtemplate",
+      "pointer": "/text",
+      "en": "The Master Manipulator is now mine. It seems that if I am to fully be able to use it, however, I'll first need to ^orange;repair it at a nanofabricator^reset;",
+      "tr": "Usta Manipülatör artık bende. Ancak tüm gücünü kullanabilmek için önce onu ^orange;Nanoüreticide onarmam^reset; gerekiyor.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator.questtemplate",
+      "pointer": "/completionText",
+      "en": "I have obtained the ultimate in Manipulator tech and bound it to my genetic code. I can mine nearly anything with the greatest of ease.",
+      "tr": "Manipülatör teknolojisinin zirvesini ele geçirip genetik koduma bağladım. Artık neredeyse her şeyi kolayca kazabilirim.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Repair the master manipulator",
+      "tr": "Usta Manipülatörü onar.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator2.questtemplate",
+      "pointer": "/title",
+      "en": "The Broken Master Manipulator",
+      "tr": "Kırık Usta Manipülatör",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator2.questtemplate",
+      "pointer": "/text",
+      "en": "I should recover the Master Manipulator...or what's left of it, anyways. Khe probably has it at the Science Outpost, I saw her even though she tried to be sneaky.",
+      "tr": "Usta Manipülatörü ya da ondan geriye kalanı geri almalıyım. Khe muhtemelen Bilim Karakolunda saklıyor; gizlice davranmaya çalışsa da onu gördüm.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator2.questtemplate",
+      "pointer": "/completionText",
+      "en": "The Master Manipulator is now mine. It seems that if I am to fully be able to use it, however, I'll first need to ^orange;repair it at a nanofabricator^reset;",
+      "tr": "Usta Manipülatör artık bende. Ancak tüm gücünü kullanabilmek için önce onu ^orange;Nanoüreticide onarmam^reset; gerekiyor.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/mmupgrade/mastermanipulator2.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Recover the master manipulator",
+      "tr": "Usta Manipülatörü geri al.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/pavillion.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Castle Takeshi",
+      "tr": "^green;Castle Takeshi",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/pavillion.questtemplate",
+      "pointer": "/text",
+      "en": "Ninjas in the employ of Shogun Takeshi have kidnapped the Hylotl princess Koto. Are you a bad enough dude to rescue the princess?",
+      "tr": "Shogun Takeshi'nin emrindeki ninjalar Hylotl prensesi Koto'yu kaçırdı. Prensesi kurtaracak kadar gözü kara mısın?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/pavillion.questtemplate",
+      "pointer": "/completionText",
+      "en": "A thousand thanks! I will ensure that my father rewards you appropriately for your heroic efforts!",
+      "tr": "Binlerce teşekkür! Kahramanca çabalarının karşılığını babamın hakkıyla vermesini sağlayacağım!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/pavillion.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Storm Castle Takeshi and save Princess Koto!",
+      "tr": "Castle Takeshi'ye hücum et ve Prenses Koto'yu kurtar!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/penguinhighway.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Highway Havoc",
+      "tr": "^green;Otoyol Kargaşası",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/penguinhighway.questtemplate",
+      "pointer": "/text",
+      "en": "The penguins' map shows their next assault target: a city on a distant planet known as Techno City. I should put a wrench in their invasion plans!",
+      "tr": "Penguenlerin haritası bir sonraki saldırı hedeflerini gösteriyor: Uzak bir gezegendeki Techno City. İşgal planlarına çomak sokmalıyım!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/penguinhighway.questtemplate",
+      "pointer": "/completionText",
+      "en": "Wow, that was quite the horde of penguins! Something about this city gives me nostalgia, though...",
+      "tr": "Vay canına, ne penguen sürüsüydü ama! Yine de bu şehir nedense bana nostaljik geliyor...",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/penguinhighway.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Defeat the penguins attacking Techno City.",
+      "tr": "Techno City'ye saldıran penguenleri yen.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/skytemple.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Sky Boulevard",
+      "tr": "^green;Sky Boulevard",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/skytemple.questtemplate",
+      "pointer": "/text",
+      "en": "The map gives me directions to one of the greatest Avian sacred sites, the Sky Boulevard. I ought to be extremely well-prepared before attempting any tomb raiding.",
+      "tr": "Harita, Avianların en kutsal yerlerinden biri olan Sky Boulevard'a giden yolu gösteriyor. Mezar soygununa kalkışmadan önce çok iyi hazırlanmalıyım.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/skytemple.questtemplate",
+      "pointer": "/completionText",
+      "en": "The view from up here is grandiose and inspiring! Did I manage to discover all the secrets this place holds?",
+      "tr": "Buradan manzara görkemli ve ilham verici! Acaba buranın bütün sırlarını keşfedebildim mi?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/skytemple.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Ascend to the heavens of the Sky Boulevard.",
+      "tr": "Sky Boulevard'ın göklere uzanan zirvesine çık.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/snowcrash.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Snow Crash",
+      "tr": "^green;Snow Crash",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/snowcrash.questtemplate",
+      "pointer": "/text",
+      "en": "The map has directions showing the coordinates to a far-off snowy world where an Apex rebel outpost lies. It seems they have a hostage situation on their hands...you could help, if you're interested.",
+      "tr": "Harita, uzaklardaki karlı bir dünyada bulunan Apex asi karakolunun koordinatlarını gösteriyor. Görünüşe bakılırsa bir rehine krizi yaşıyorlar... İstersem yardım edebilirim.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/snowcrash.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thank you for rescuing me! There's a teleporter in the basement, we can use that to escape! Before that, though, take this! You've earned it.",
+      "tr": "Beni kurtardığın için teşekkür ederim! Bodrumda bir ışınlayıcı var; oradan kaçabiliriz! Ama önce şunu al. Bunu hak ettin.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/snowcrash.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Help the Apex Rebels with their hostage situation.",
+      "tr": "Apex asilerine rehine krizinde yardım et.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/sunsetriders.questtemplate",
+      "pointer": "/title",
+      "en": "^green;Sunset Riders",
+      "tr": "^green;Sunset Riders",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/sunsetriders.questtemplate",
+      "pointer": "/text",
+      "en": "Along with the map is a bounty for a certain Hank 'Hawkeye' Hatfield, worth 2000 pixels. I might follow these coordinates to the fort mentioned and check in first.",
+      "tr": "Haritanın yanında, Hank 'Hawkeye' Hatfield için konmuş 2000 Piksel ödüllü bir ilan var. Bu koordinatları takip edip önce sözü edilen kaleye uğrayabilirim.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/sunsetriders.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now that was a fight! The bounty should be wired to my ship any time now.",
+      "tr": "İşte buna çatışma denir! Ödül her an gemime aktarılmalı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/sunsetriders.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Claim the bounty on Hank 'Hawkeye' Hatfield.",
+      "tr": "Hank 'Hawkeye' Hatfield'ın başındaki ödülü al.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
+      "pointer": "/title",
+      "en": "Dodge",
+      "tr": "Kaçınma",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
+      "pointer": "/text",
+      "en": "The strange artifact washes some sort of energy over you when you step near. You feel stronger! ^orange;[You can now double-tap left or right to activate a short dodge^reset;]",
+      "tr": "Tuhaf eser yanına yaklaştığında üzerine bir çeşit enerji yayıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin^reset;]",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
+      "pointer": "/completionText",
+      "en": "The strange artifact washes some sort of energy over you when you step near. You feel stronger! ^orange;[You can now double-tap left or right to activate a short dodge]^reset;",
+      "tr": "Tuhaf eser yanına yaklaştığında üzerine bir çeşit enerji yayıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin]^reset;",
+      "section": "v0.20 Aktif özel görevler",
+      "qa": {
+        "allow_control_fix": true
+      }
+    },
+    {
+      "asset": "quests/tech/distortionsphere/distortionsphere.questtemplate",
+      "pointer": "/title",
+      "en": "Distortion Sphere",
+      "tr": "Çarpıtma Küresi",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/distortionsphere/distortionsphere.questtemplate",
+      "pointer": "/text",
+      "en": "I've discovered an unusual technology that allows me to turn into a ball. With it I can access areas I otherwise couldn't. ^green;Press [F]^reset; to activate it.",
+      "tr": "Topa dönüşmemi sağlayan sıra dışı bir teknoloji keşfettim. Böylece normalde ulaşamayacağım yerlere girebilirim. Etkinleştirmek için ^green;[F] tuşuna bas^reset;.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/distortionsphere/distortionsphere.questtemplate",
+      "pointer": "/completionText",
+      "en": "I've discovered an unusual technology that allows me to turn into a ball. With it I can access areas I otherwise couldn't. ^green;Press [F]^reset; to activate.",
+      "tr": "Topa dönüşmemi sağlayan sıra dışı bir teknoloji keşfettim. Böylece normalde ulaşamayacağım yerlere girebilirim. Etkinleştirmek için ^green;[F] tuşuna bas^reset;.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/distortionsphere/microsphereprecursor.questtemplate",
+      "pointer": "/title",
+      "en": "Precursor Microsphere",
+      "tr": "Precursor Mikroküresi",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/distortionsphere/microsphereprecursor.questtemplate",
+      "pointer": "/text",
+      "en": "I've uncovered a unique tech! The Precursor Microsphere! You get wall-cling, increased movement speed, and pressing ^green;[FIRE]^reset; will cause a Repulsor Blast that stuns and pushes enemies. It has been equipped.",
+      "tr": "Benzersiz bir Tech buldum: Precursor Mikroküresi! Duvarlara tutunabiliyor, daha hızlı hareket edebiliyorum. Ayrıca ^green;[FIRE]^reset; tuşuna basınca düşmanları sersemletip geri iten bir İtici Patlama oluşturuyor. Tech kuşanıldı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/distortionsphere/microsphereprecursor.questtemplate",
+      "pointer": "/completionText",
+      "en": "I've uncovered a unique tech! The Precursor Microsphere! You get wall-cling, increased movement speed, and pressing ^green;[FIRE]^reset; will cause a Repulsor Blast that stuns and pushes enemies. It has been equipped.",
+      "tr": "Benzersiz bir Tech buldum: Precursor Mikroküresi! Duvarlara tutunabiliyor, daha hızlı hareket edebiliyorum. Ayrıca ^green;[FIRE]^reset; tuşuna basınca düşmanları sersemletip geri iten bir İtici Patlama oluşturuyor. Tech kuşanıldı.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/jump/longjump0.questtemplate",
+      "pointer": "/title",
+      "en": "Enhanced Jump",
+      "tr": "Geliştirilmiş Sıçrama",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/jump/longjump0.questtemplate",
+      "pointer": "/text",
+      "en": "I've found some sort of ancient tech in a ruin. I wonder what it does?",
+      "tr": "Harabelerde bir tür kadim Tech buldum. Acaba ne işe yarıyor?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/tech/jump/longjump0.questtemplate",
+      "pointer": "/completionText",
+      "en": "This strange new technology has ^green;fused into my body^reset;. I seem to have ^orange;increased jumping ability^reset;.",
+      "tr": "Bu tuhaf yeni teknoloji ^green;bedenimle bütünleşti^reset;. Görünüşe göre ^orange;artık daha yükseğe sıçrayabiliyorum^reset;.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/towerinvincible.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Tower Invincible",
+      "tr": "^green;Tower Invincible",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/towerinvincible.questtemplate",
+      "pointer": "/text",
+      "en": "A dread Glitch warlord has been terrorising nearby planets from his tower on a far-off planet. I should do something about this.",
+      "tr": "Korkunç bir Glitch savaş ağası, uzak bir gezegendeki kulesinden çevredeki gezegenlere dehşet saçıyor. Buna bir son vermeliyim.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/towerinvincible.questtemplate",
+      "pointer": "/completionText",
+      "en": "Ha ha! A true test and proof of my stremf! Now time to help myself to all this sweet, sweet loot!",
+      "tr": "Ha ha! Gerçek bir sınav ve gücümün kanıtı! Şimdi şu tatlı mı tatlı ganimetleri toplama vakti!",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/towerinvincible.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Defeat the dread warlord of the Tower Invincible.",
+      "tr": "Tower Invincible'ın korkunç savaş ağasını yen.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/verdantruins.questtemplate",
+      "pointer": "/title",
+      "en": "^green;The Verdant Ruins",
+      "tr": "^green;Verdant Ruins",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/verdantruins.questtemplate",
+      "pointer": "/text",
+      "en": "The map shows me how to get to some ancient, overgrown ruins. It supposedly holds a wealth of Floran artifacts.",
+      "tr": "Harita, kadim ve bitkilerle kaplanmış harabelere nasıl ulaşacağımı gösteriyor. Söylentiye göre içeride çok sayıda Floran eseri var.",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/verdantruins.questtemplate",
+      "pointer": "/completionText",
+      "en": "Well, looks like the ruins weren't as abandoned as I thought they would be. Did I manage to discover all of its secrets?",
+      "tr": "Görünüşe göre harabeler sandığım kadar terk edilmiş değilmiş. Acaba bütün sırlarını keşfedebildim mi?",
+      "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "quests/verdantruins.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Explore the Verdant Ruins.",
+      "tr": "Verdant Ruins'i keşfet.",
+      "section": "v0.20 Aktif özel görevler"
     }
   ]
 }

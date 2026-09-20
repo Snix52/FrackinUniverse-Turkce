@@ -449,3 +449,15 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | X'ian | Tür/teknoloji özel adı | Özel ad | X'ian | Şiyan | LOCKED | Kesme işareti ve yazım korunur |
 | Aether | FU dünya/malzeme özel adı | Özel ad | Aether | Eter | LOCKED | Aether Worlds terminolojisiyle eşlendi |
 | Avian | Starbound tür adı | Özel ad | Avian | Kuş | LOCKED | Gen eşyasında da tür adı korunur |
+
+## v0.20 Aktif özel görev terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Master Manipulator | Görev / araç | Nesne | Usta Manipülatör | Ana Manipülatör | LOCKED | Matter Manipulator ailesiyle uyumlu |
+| Distortion Sphere | Tech görevi | Tech | Çarpıtma Küresi | Bozulma Topu | LOCKED | |
+| Precursor Microsphere | Tech görevi | Tech | Precursor Mikroküresi | Öncül Mikroküre | LOCKED | Precursor özel adı korunur |
+| Dodge | Tech görevi | Tech | Kaçınma | Sıyrılma | LOCKED | Kısa yönlü kaçınma hareketi |
+| Repulsor Blast | Tech işlevi | Yetenek | İtici Patlama | Geri Tepme Patlaması | LOCKED | |
+| Challenge Labs | Özel görev bölgesi | Özel ad | Challenge Labs | Meydan Okuma Laboratuvarları | LOCKED | SAIL/dungeon adıyla eşleşir |
+| Letheia Corporation | Fraksiyon / şirket | Özel ad | Letheia Corporation | Letheia Şirketi | LOCKED | Marka adı korunur |

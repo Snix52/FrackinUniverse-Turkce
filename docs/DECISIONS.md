@@ -428,3 +428,16 @@
 - İzotoplar için yerleşik Türkçe element adları kullanıldı: **Döteryum, Neptünyum, Plütonyum, Toryum, Uranyum**. `Precursor`, `X'ian`, `Aether`, `Lunari` ve FU malzeme özel adları korunurken işlevsel son ekler Türkçeleştirildi.
 - Yeni kapsam **470 yapılandırılmış alan / 235 patch asset**tir. Tamamı pinned FU 6.5.8 kaynak değerleri ve blob SHA'larıyla doğrulandı; 470 `test` + 470 `replace` eşleşmesi PASS.
 - Proje toplamı **3259 structured + 15 Lua / 735 patch asset** oldu. Oyun içi envanter, tooltip, font, satır sonu ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.20 Aktif özel görevler
+
+- Daha önce çevrilmemiş **97 `.questtemplate` adayı** ile yanlış `.questtemplat` uzantılı 1 test dosyası runtime açısından denetlendi.
+- Erişilebilir kapsam **29 görev / 112 görünür alan** olarak belirlendi: 19 harita ve özel bölge görevi, 4 Challenge Labs görevi, 2 Usta Manipülatör görevi ve eşya/artefakt kazanımıyla gerçekten başlayan 4 Tech görevi.
+- 49 teknoloji görevinden yalnız `combatmaneuvering1`, `fudistortionsphere`, `microsphereprecursor` ve `longjump0` gerçek pickup/artefakt zincirine bağlıdır. 44 eski teknoloji görevi ile yalnız geliştirici gemisindeki `fudevtech` normal oyuncu kapsamına alınmadı.
+- Optional Hardmode'un 12 görevlik zinciri kaynakta bulunuyor ancak başlangıç görevi Khe'nin `offeredQuests` listesinde açıkça yorum satırına alınmış. Zincir normal oyunda başlayamadığı için tamamı dağıtım dışı ve deny-guard altındadır.
+- `mmgravgun`, `mmgravgun2` ve `mmgravgun3` görev şablonlarını başlatan bir tetikleyici bulunmadı. Buna karşılık `mastermanipulator2` Khe tarafından sunuluyor; ödül olarak verilen `humanartifactaugment` da `mastermanipulator` görevini başlatıyor.
+- `fu_asraNoxSailFix`, `madnessquestdata` ve `fuelDataQuest` runtime'da çalışan fakat bütün görev pencereleri kapalı uyumluluk/takip görevleridir. Oyuncuya görünür metin üretmedikleri için yamaya alınmadı. `ancientpowerconduit` ise aynı adlı eşya ve radyo mesajına sahip olsa da görevi başlatan bir bağlantı taşımıyor.
+- Challenge Labs teslim kristalleri gerçek dungeon Tiled katmanlarında ayrı ayrı yerleştirilmiş olduğundan 4 görev de erişilebilir kabul edildi. 19 harita/özel bölge görevi SAIL, görev haritası, teslim nesnesi veya gerçek Tiled yerleşimiyle doğrulandı.
+- `Brine Star`, `Ancient Temple`, `Hydro Center`, `Evernight Jungle`, `Forest of Fae`, `Grand Arena`, `Mount Gigant`, `Castle Takeshi`, `Techno City`, `Sky Boulevard`, `Snow Crash`, `Sunset Riders`, `Tower Invincible` ve `Verdant Ruins` SAIL/harita zinciriyle eşleşen özel görev adları olarak özgün bırakıldı.
+- `combatmaneuvering1` tamamlanma metnindeki köşeli parantezler oyuncuya gösterilen açıklama cümlesidir; kontrol etiketi değildir. Yalnız bu alan için field-specific `allow_control_fix` kullanıldı, renk kodları ve parantez düzeni korundu.
+- Yeni kapsamın **112/112 alanı** pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **112 test + 112 replace PASS**. Proje toplamı **3371 structured + 15 Lua / 764 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca bekliyor.

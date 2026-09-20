@@ -156,6 +156,122 @@ V019_DEAD_CRAFTING_ITEM_ASSETS = {
     'items/generic/crafting/tethydefurnitureplating.item',
 }
 
+# v0.20: FU ana görev aileleri dışındaki 97 questtemplate adayı runtime
+# başlangıçları, pickupQuestTemplates, NPC offeredQuests, SAIL görevleri,
+# Tiled yerleşimleri ve görev ödülleri üzerinden denetlendi. Aşağıdaki 29
+# görev oyuncuya gerçekten ulaşır; yalnızca görünür görev metni alanları
+# yerelleştirilir.
+V020_ACTIVE_QUEST_ASSETS = {
+    'quests/alienjungle.questtemplate',
+    'quests/ancienttemple.questtemplate',
+    'quests/avianhydro.questtemplate',
+    'quests/challengelabs/extrachallengelabs1.questtemplate',
+    'quests/challengelabs/extrachallengelabs2.questtemplate',
+    'quests/challengelabs/extrachallengelabs3.questtemplate',
+    'quests/challengelabs/extrachallengelabs4.questtemplate',
+    'quests/evernight.questtemplate',
+    'quests/forestoffae.questtemplate',
+    'quests/grandarena.questtemplate',
+    'quests/infiltration.questtemplate',
+    'quests/japaneseruins.questtemplate',
+    'quests/letheiafacility.questtemplate',
+    'quests/letheiafleet.questtemplate',
+    'quests/lethialabs.questtemplate',
+    'quests/magickaforest.questtemplate',
+    'quests/mmupgrade/mastermanipulator.questtemplate',
+    'quests/mmupgrade/mastermanipulator2.questtemplate',
+    'quests/pavillion.questtemplate',
+    'quests/penguinhighway.questtemplate',
+    'quests/skytemple.questtemplate',
+    'quests/snowcrash.questtemplate',
+    'quests/sunsetriders.questtemplate',
+    'quests/tech/dash/combatmaneuvering1.questtemplate',
+    'quests/tech/distortionsphere/distortionsphere.questtemplate',
+    'quests/tech/distortionsphere/microsphereprecursor.questtemplate',
+    'quests/tech/jump/longjump0.questtemplate',
+    'quests/towerinvincible.questtemplate',
+    'quests/verdantruins.questtemplate',
+}
+
+# Kaynakta bulunmasına rağmen normal oyuncu akışına bağlı olmayan v0.20
+# adayları. Optional Hardmode'un başlangıcı NPC dosyasında devre dışıdır;
+# çoğu eski teknoloji görevi techshop tarafından başlatılmaz; görünmez
+# takip/fix görevleri de oyuncu metni üretmez.
+V020_INACTIVE_QUEST_ASSETS = {
+    'quests/ancientpowerconduit.questtemplate',
+    'quests/bounty/fu_asraNoxSailFix.questtemplate',
+    'quests/madness/madnessquest.questtemplate',
+    'quests/mechfuel/fuelData.questtemplate',
+    'quests/mmupgrade/mmgravgun.questtemplate',
+    'quests/mmupgrade/mmgravgun2.questtemplate',
+    'quests/mmupgrade/mmgravgun3.questtemplate',
+    'quests/optionalhardmode/fu_t10_apex_mission2.questtemplate',
+    'quests/optionalhardmode/fu_t10_avian_mission2.questtemplate',
+    'quests/optionalhardmode/fu_t10_floran_mission2.questtemplate',
+    'quests/optionalhardmode/fu_t10_floranarena1.questtemplate',
+    'quests/optionalhardmode/fu_t10_floranarena2.questtemplate',
+    'quests/optionalhardmode/fu_t10_floranarena3.questtemplate',
+    'quests/optionalhardmode/fu_t10_gaterepair.questtemplate',
+    'quests/optionalhardmode/fu_t10_glitch_mission2.questtemplate',
+    'quests/optionalhardmode/fu_t10_human_mission1.questtemplate',
+    'quests/optionalhardmode/fu_t10_hylotl_mission2.questtemplate',
+    'quests/optionalhardmode/fu_t10_initial.questtemplate',
+    'quests/optionalhardmode/fu_t10_precursor.questtemplate',
+    'quests/story/protectorateapex.questtemplate',
+    'quests/story/protectorateelunite.questtemplate',
+    'quests/story/protectoratefu.questtemplate',
+    'quests/story/protectoratehylotl.questtemplate',
+    'quests/tech/dash/airdash2.questtemplate',
+    'quests/tech/dash/blinkdash2.questtemplate',
+    'quests/tech/dash/combatmaneuvering2.questtemplate',
+    'quests/tech/dash/dashcombat.questtemplate',
+    'quests/tech/dash/fadesprint.questtemplate',
+    'quests/tech/dash/fadesprint2.questtemplate',
+    'quests/tech/dash/fadesprint3.questtemplate',
+    'quests/tech/dash/speedboots.questtemplate',
+    'quests/tech/dash/speedboots2.questtemplate',
+    'quests/tech/dash/speedboots3.questtemplate',
+    'quests/tech/dash/speedbootsprecursor.questtemplate',
+    'quests/tech/dash/speedbootsweak.questtemplate',
+    'quests/tech/dash/teleportdash.questtemplate',
+    'quests/tech/dash/zeroburst1.questtemplate',
+    'quests/tech/dash/zeroburst2.questtemplate',
+    'quests/tech/dash/zeroburst3.questtemplate',
+    'quests/tech/dash/zeroburst4.questtemplate',
+    'quests/tech/distortionsphere/armorsphere.questtemplate',
+    'quests/tech/distortionsphere/bouncesphere.questtemplate',
+    'quests/tech/distortionsphere/distortionsphere2.questtemplate',
+    'quests/tech/distortionsphere/funball.questtemplate',
+    'quests/tech/distortionsphere/microsphere.questtemplate',
+    'quests/tech/distortionsphere/microspherebomb.questtemplate',
+    'quests/tech/distortionsphere/microspherespider.questtemplate',
+    'quests/tech/distortionsphere/powerboost.questtemplate',
+    'quests/tech/jump/fuwallcling.questtemplate',
+    'quests/tech/jump/fuwallcling2.questtemplate',
+    'quests/tech/jump/fuwalljump.questtemplate',
+    'quests/tech/jump/fuwalljump2.questtemplate',
+    'quests/tech/jump/fuwalljump3.questtemplate',
+    'quests/tech/jump/longjump.questtemplate',
+    'quests/tech/jump/longjump2.questtemplate',
+    'quests/tech/jump/longjump3.questtemplate',
+    'quests/tech/jump/longjump4.questtemplate',
+    'quests/tech/jump/quadjump.questtemplate',
+    'quests/tech/jump/quintjump.questtemplate',
+    'quests/tech/jump/rocketboots.questtemplate',
+    'quests/tech/other/emergencybounce.questtemplate',
+    'quests/tech/other/fuarmorboost.questtemplate',
+    'quests/tech/other/fuarmorboost2.questtemplate',
+    'quests/tech/other/fuarmorboost3.questtemplate',
+    'quests/tech/other/fudevtech.questtemplate',
+    'quests/tech/other/physicsfield.questtemplate',
+    'quests/tech/other/physicsfield2.questtemplate',
+    'quests/tech/other/physicsfield3.questtemplate',
+    'quests/scripts/neb-damagetypekills.questtemplat',
+}
+
+def v020_quest_pointer(p):
+    return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription')
+
 def v019_crafting_item(a,p):
     return (a.startswith('items/generic/crafting/')
             and (a.endswith('.item') or a.endswith('.consumable'))
@@ -353,6 +469,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V020_ACTIVE_QUEST_ASSETS:
+        return v020_quest_pointer(p)
     if v019_crafting_item(a,p):
         return True
     if a in V018_OBJECT_ASSETS:
@@ -720,6 +838,7 @@ def main():
         seen.add((a,p))
         if a in V018_DEAD_OBJECT_ASSETS:raise ValueError('Runtime bağlantısı olmayan v0.18 nesnesi: '+a)
         if a in V019_DEAD_CRAFTING_ITEM_ASSETS:raise ValueError('Runtime bağlantısı olmayan/deprecated v0.19 üretim eşyası: '+a)
+        if a in V020_INACTIVE_QUEST_ASSETS:raise ValueError('Oyuncuya görünmeyen/erişilemeyen v0.20 görevi: '+a)
         if not allowed(a,p):raise ValueError('Oyuncu metni olmayan alan: '+a+p)
         if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
         if a in NONVISIBLE_QUEST_ASSETS:raise ValueError('Aktif görev zincirine bağlı olmayan/kırık görev: '+a)

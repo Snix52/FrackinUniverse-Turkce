@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.19 Beta / Ana araştırma sistemleri + erişilebilir görev zincirleri + üretim makineleri, seçili işlevsel dünya nesneleri ve erişilebilir `items/generic/crafting` malzemeleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.20 Beta / Ana araştırma sistemleri + runtime'da erişilebilir görevler + üretim makineleri, seçili işlevsel dünya nesneleri ve erişilebilir `items/generic/crafting` malzemeleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -33,6 +33,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - `objects/crafting` altındaki 84/84 etkin nesnede seçili oyuncuya görünür ad, açıklama, alt başlık, panel başlığı ve ırka özel inceleme metinleri
 - `objects/power`, `objects/bees` ve `objects/scienceoutpost` altındaki v0.18 adaylarının runtime denetimi: 47 erişilebilir nesnede ad, açıklama, inceleme, panel ve sohbet metinleri; 10 ölü/bağlantısız nesne dağıtım dışı
 - `items/generic/crafting` altındaki kalan 261 adayın runtime denetimi: 235 erişilebilir eşya/malzemede envanter adı ve açıklama; 26 ölü, deprecated veya bağlantısız asset dağıtım dışı
+- Ana görev aileleri dışında kalan 97 `questtemplate` adayının runtime denetimi: 29 erişilebilir görevde 112 görünür alan; 68 erişilemez, devre dışı, geliştiriciye özel veya görünmez görev dağıtım dışı
 - Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
 - Başlangıç telsiz/öğretici mesajlarının mevcut dosyadaki 26/26 metni
 - İmalat Tezgâhı yükseltme kademeleri ve seçili arayüz metinleri
@@ -42,7 +43,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **3.259 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **3.274 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **3.371 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **3.386 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -68,7 +69,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.19.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.20.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -77,7 +78,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **3.259 alan / 735 patch asset**tir. v0.19'da `items/generic/crafting` altındaki kalan 261 adayın tarif, araştırma, görev ödülü, çıkarma tablosu ve ganimet bağlantıları denetlendi; erişilebilir 235 assetteki **470/470 yeni alan pinned FU 6.5.8 kaynağıyla exact doğrulandı**, 26 ölü/deprecated/bağlantısız asset build guard ile dışarıda tutuldu. Toplam provenans **3.171 pinned FU + 88 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **3.371 alan / 764 patch asset**tir. v0.20'de daha önce çevrilmemiş 97 `questtemplate` adayı runtime başlangıçları, eşya tetikleyicileri, NPC görev listeleri, SAIL görevleri ve gerçek Tiled yerleşimleriyle denetlendi; erişilebilir 29 görevdeki **112/112 yeni alan pinned FU 6.5.8 kaynağıyla exact doğrulandı**. 68 erişilemez, kapalı, geliştiriciye özel veya görünmez görev ile hatalı uzantılı 1 test dosyası build guard altında tutuldu. Toplam provenans **3.283 pinned FU + 88 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -233,6 +234,14 @@ Her etkin assette yalnız oyuncuya görünen `/shortdescription` ve `/descriptio
 
 v0.19 eklemesi **470 yapılandırılmış alan / 235 yeni patch asset**tir. Yeni alanların **470/470'i pinned FU 6.5.8 kaynağıyla exact doğrulandı**; patch eşleşmesi **470 test + 470 replace PASS**. Proje toplamı **3.259 structured + 15 Lua = 3.274 görünür birim / 735 patch asset** oldu. Oyun içi envanter, tooltip, font ve bağlam LQA'sı ayrıca yapılmalıdır.
 
+## v0.20 Aktif Özel Görevler
+
+Ana `fu_questlines` kapsamı dışında kalan **97 questtemplate adayı** runtime bağlantılarıyla tek tek denetlendi. Görev başlangıcı, `pickupQuestTemplates`, NPC `offeredQuests`, SAIL görev tablosu, gerçek Tiled dungeon yerleşimi ve görev ödülü zinciri erişilebilirlik kanıtı sayıldı. Sonuçta **29 görev / 112 görünür alan** dağıtıma alındı.
+
+Kapsam; 19 harita/özel bölge görevi, 4 Challenge Labs görevi, 2 Usta Manipülatör görevi ve gerçekten eşya kazanımıyla başlayan 4 Tech görevinden oluşur. Eski teknoloji görevlerinin 44'ü, başlangıcı yorum satırıyla kapatılmış 12 Optional Hardmode görevi, 3 eski Manipülatör görevi, 4 bağlantısız Protectorate alternatifi ve 5 görünmez/geliştirici/yanlış tetiklenmiş görev dağıtım dışı bırakıldı. Ayrıca yanlış `.questtemplat` uzantılı test dosyası canlı görev sayılmadı.
+
+Özel görev yerleri SAIL ve mevcut görev zincirleriyle aynı kalacak biçimde `Brine Star`, `Ancient Temple`, `Evernight Jungle`, `Verdant Ruins` ve benzeri özgün adlarıyla korundu. v0.20 eklemesi **112 yapılandırılmış alan / 29 yeni patch asset**tir; **112 test + 112 replace PASS**. Proje toplamı **3.371 structured + 15 Lua = 3.386 görünür birim / 764 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -256,6 +265,7 @@ v0.19 eklemesi **470 yapılandırılmış alan / 235 yeni patch asset**tir. Yeni
 - [x] Other görev zincirleri (8 erişilebilir; 5 görünmez takipçi dağıtım dışı)
 - [x] BYOS kalan görevleri (2 erişilebilir; 1 bağlantısız legacy dağıtım dışı)
 - [x] Exploration görev zinciri (1 bağlantısız legacy runtime denetimiyle dağıtım dışı)
+- [x] Ana görev aileleri dışındaki özel görevlerin runtime denetimi (29 erişilebilir görev; 68 erişilemez/görünmez dosya dağıtım dışı)
 - [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi (`objects/crafting`: 84/84; v0.18 Power/Bees/Science Outpost: 47/47 erişilebilir; v0.19 `items/generic/crafting`: 235/235 erişilebilir aday tamamlandı; diğer klasörler sürüyor)
 - [x] Planlanan görev klasörlerinin runtime denetimi ve erişilebilir çevirileri
 - [ ] Oyun içi tam LQA ve taşma kontrolleri

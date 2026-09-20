@@ -15,6 +15,9 @@ Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol öze
 - Aday nesnelerde salt dosya/tileset tanımı erişilebilirlik kanıtı sayılmamalı; tarif, araştırma, görev, dükkân veya gerçek Tiled yerleşimiyle runtime bağlantısı doğrulanmalı.
 - Aday eşyalarda yalnız tanım dosyasının bulunması veya `/spawnitem` ile çağrılabilmesi erişilebilirlik kanıtı sayılmamalı; etkin tarif, araştırma, görev ödülü, çıkarma/işleme tablosu, ganimet ya da gerçek başlangıç/blueprint zinciri aranmalı.
 - `.disabled` tarifler, yorum satırları, deprecated geri-kazanım girdileri ve üretim kaynağı olmayan filtre/blueprint kayıtları tek başına canlı içerik sayılmamalı.
+- Görevlerde yalnız dosya, `id`, prerequisite veya aynı adlı eşya bulunması erişilebilirlik kanıtı sayılmamalı; gerçek başlangıç, `pickupQuestTemplates`, NPC `offeredQuests`, SAIL görevi ya da Tiled yerleşimi doğrulanmalı.
+- `showInLog`, kabul/tamamlama/hata pencereleri kapalı takip ve uyumluluk görevlerinin metinleri oyuncuya görünür sayılmamalı.
+- NPC `offeredQuests` içinde yorum satırına alınmış görev zincirleri ve yalnız geliştirici gemisi/hazine havuzuna bağlı görevler normal oyuncu kapsamına alınmamalı.
 - `items/generic/crafting` kapsamındaki item/consumable dosyalarında bu sürüm için yalnız `/shortdescription` ve `/description` çevrilebilir; `itemName`, efekt, fiyat, kategori ve tooltip mekanikleri teknik alan olarak korunmalı.
 - Starbound'un ham satır sonu içeren JSON benzeri assetleri de kaynak simülasyonundan kaçmamalı.
 
