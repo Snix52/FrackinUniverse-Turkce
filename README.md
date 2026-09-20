@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.17 Beta / Ana araştırma sistemleri + erişilebilir görev zincirleri + `objects/crafting` üretim makineleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.18 Beta / Ana araştırma sistemleri + erişilebilir görev zincirleri + `objects/crafting` ve seçili işlevsel Power/Bees/Science Outpost nesneleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -31,6 +31,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
 - `objects/crafting` altındaki 84/84 etkin nesnede seçili oyuncuya görünür ad, açıklama, alt başlık, panel başlığı ve ırka özel inceleme metinleri
+- `objects/power`, `objects/bees` ve `objects/scienceoutpost` altındaki v0.18 adaylarının runtime denetimi: 47 erişilebilir nesnede ad, açıklama, inceleme, panel ve sohbet metinleri; 10 ölü/bağlantısız nesne dağıtım dışı
 - Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
 - Başlangıç telsiz/öğretici mesajlarının mevcut dosyadaki 26/26 metni
 - İmalat Tezgâhı yükseltme kademeleri ve seçili arayüz metinleri
@@ -40,7 +41,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **2.449 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **2.464 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **2.789 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **2.804 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -66,7 +67,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.17.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.18.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -75,7 +76,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **2.449 alan / 453 patch asset**tir. v0.17'de `objects/crafting` altındaki daha önce çevrilmemiş 54 etkin nesnede **295/295 yeni alan pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Böylece bu klasördeki seçili oyuncuya görünür alanlar asset düzeyinde **84/84** kapsanıyor: 30 nesne önceki sürümlerde, 54 nesne bu pakette. Toplam provenans **2.359 pinned FU + 90 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **2.789 alan / 500 patch asset**tir. v0.18'de üç nesne klasöründeki 57 adayın tarif, araştırma, dükkân ve Tiled harita bağlantıları denetlendi; erişilebilir 47 nesnedeki **340/340 yeni alan pinned FU 6.5.8 kaynağıyla exact doğrulandı**, 10 ölü/bağlantısız nesne build guard ile dışarıda tutuldu. Toplam provenans **2.701 pinned FU + 88 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -215,6 +216,14 @@ Yeni 295 alanın tamamı pinned FU 6.5.8 bloblarıyla exact-source doğrulaması
 
 Proje toplamı **2.449 structured + 15 Lua = 2.464 görünür birim / 453 patch asset** oldu. Bu klasörün seçili görünür kapsamı tamamlandı; diğer eşya/nesne klasörleri ve oyun içi font/panel taşma LQA'sı sonraki turlarda devam eder.
 
+## v0.18 İşlevsel Power, Bees ve Science Outpost Nesneleri
+
+`objects/power`, `objects/bees` ve `objects/scienceoutpost` altındaki daha önce çevrilmemiş **57 aday nesne**, yalnız dosya varlığına göre değil runtime bağlantılarıyla denetlendi. Tarifler, araştırma düğümleri, dükkânlar ve Tiled dungeon yerleşimleri sonucunda **47 erişilebilir nesne** dağıtıma alındı; yalnız tanım veya kullanılmayan tileset kaydı bulunan **10 ölü/bağlantısız nesne** dışarıda bırakıldı.
+
+Yeni kapsam **340 yapılandırılmış alan / 47 patch asset**tir: Power 59, Arıcılık 142, Bilim Karakolu 139. Envanter adları ve açıklamaların yanında ırka özel incelemeler, makine panel başlıkları, güç sensörü/hava istasyonu runtime etiketleri ve Vinalisj, Danışma Noktası ile Starbucks sohbet havuzları da çevrildi. `%s` ve `%%` biçim belirteçleri için yeni regresyon kontrolü eklendi; ham satır sonu içeren geçerli Starbound assetleri de full-source doğrulamaya alındı.
+
+Yeni alanların **340/340'ı pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Proje toplamı **2.789 structured + 15 Lua = 2.804 görünür birim / 500 patch asset** oldu. Oyun içi font, panel taşması, etkileşim ve bağlam LQA'sı hâlâ bekliyor.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -238,7 +247,7 @@ Proje toplamı **2.449 structured + 15 Lua = 2.464 görünür birim / 453 patch 
 - [x] Other görev zincirleri (8 erişilebilir; 5 görünmez takipçi dağıtım dışı)
 - [x] BYOS kalan görevleri (2 erişilebilir; 1 bağlantısız legacy dağıtım dışı)
 - [x] Exploration görev zinciri (1 bağlantısız legacy runtime denetimiyle dağıtım dışı)
-- [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi (`objects/crafting`: 84/84 etkin asset tamamlandı; diğer klasörler sürüyor)
+- [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi (`objects/crafting`: 84/84; v0.18 Power/Bees/Science Outpost: 47/47 erişilebilir aday tamamlandı; diğer klasörler sürüyor)
 - [x] Planlanan görev klasörlerinin runtime denetimi ve erişilebilir çevirileri
 - [ ] Oyun içi tam LQA ve taşma kontrolleri
 

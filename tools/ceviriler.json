@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.17.0-beta",
-  "note": "v0.17 üretim makineleri: objects/crafting altındaki 84 etkin .object assetinin daha önce çevrilmemiş 54'ünde 295 oyuncuya görünür alan yerelleştirildi. Klasördeki seçili görünür ad, açıklama, alt başlık, panel başlığı ve ırka özel inceleme kapsamı 84/84 asset düzeyinde tamamlandı. Pet Healing Station kaynak altyazısındaki yanlış robot ifadesi nesnenin gerçek işlevine göre düzeltildi. Toplam 2449 structured + 15 Lua, 453 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.18.0-beta",
+  "note": "v0.18 işlevsel dünya nesneleri: objects/power, objects/bees ve objects/scienceoutpost altındaki 57 aday runtime bağlantılarıyla denetlendi; erişilebilir 47 assette 340 oyuncuya görünür alan yerelleştirildi, 10 ölü/bağlantısız asset dışarıda bırakıldı. Nesne adları, açıklamalar, ırka özel incelemeler, panel başlıkları ve runtime sohbet metinleri kapsandı. Toplam 2789 structured + 15 Lua, 500 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -14920,32 +14920,16 @@
     {
       "asset": "items/generic/produce/orange.consumable",
       "pointer": "/description",
-      "en": "It's an orange.",
-      "tr": "Bu bir portakal.",
-      "section": "Outpost - Kevin/Khe hedefleri",
-      "qa": {
-        "layered_source": true,
-        "external_base_verified": true,
-        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
-        "external_path": "assets/packed/items/generic/produce/orange.consumable",
-        "external_blob_sha": "602f73a99ed3f50ca0658e87de3185fe51cee308",
-        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
-      }
+      "en": "It's an orange. ^green;Type: Plant^reset;",
+      "tr": "Bu bir portakal. ^green;Tür: Bitki^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
     },
     {
       "asset": "items/generic/produce/orange.consumable",
       "pointer": "/shortdescription",
       "en": "Orange",
       "tr": "Portakal",
-      "section": "Outpost - Kevin/Khe hedefleri",
-      "qa": {
-        "layered_source": true,
-        "external_base_verified": true,
-        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
-        "external_path": "assets/packed/items/generic/produce/orange.consumable",
-        "external_blob_sha": "602f73a99ed3f50ca0658e87de3185fe51cee308",
-        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
-      }
+      "section": "Outpost - Kevin/Khe hedefleri"
     },
     {
       "asset": "items/generic/crafting/goldbar.item",
@@ -18074,6 +18058,2386 @@
       "en": "X'ian Well",
       "tr": "X'ian Kuyusu",
       "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/description",
+      "en": "A candle made with blue beeswax.",
+      "tr": "Mavi balmumundan yapılmış bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/shortdescription",
+      "en": "Blue Candle",
+      "tr": "Mavi Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/apexDescription",
+      "en": "A small candle.",
+      "tr": "Küçük bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/humanDescription",
+      "en": "A pretty little candle.",
+      "tr": "Küçük, hoş bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandle.object",
+      "pointer": "/novakidDescription",
+      "en": "A neat lil candle.",
+      "tr": "Şirin mi şirin ufak bi' mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/description",
+      "en": "Two candles made with blue beeswax.",
+      "tr": "Mavi balmumundan yapılmış iki mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/shortdescription",
+      "en": "Two Blue Candles",
+      "tr": "İki Mavi Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/apexDescription",
+      "en": "Two small candles.",
+      "tr": "İki küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandledouble.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/description",
+      "en": "Three candles made with blue beeswax.",
+      "tr": "Mavi balmumundan yapılmış üç mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/shortdescription",
+      "en": "Three Blue Candles",
+      "tr": "Üç Mavi Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/apexDescription",
+      "en": "Three small candles.",
+      "tr": "Üç küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/bluecandletriple.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/description",
+      "en": "A candle made with flowers.",
+      "tr": "Çiçeklerden yapılmış bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/shortdescription",
+      "en": "Aromatic Candle",
+      "tr": "Aromatik Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/apexDescription",
+      "en": "A small candle.",
+      "tr": "Küçük bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/humanDescription",
+      "en": "A pretty little candle.",
+      "tr": "Küçük, hoş bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandle.object",
+      "pointer": "/novakidDescription",
+      "en": "A neat lil candle.",
+      "tr": "Şirin mi şirin ufak bi' mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/description",
+      "en": "Two candles made with flowers.",
+      "tr": "Çiçeklerden yapılmış iki mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/shortdescription",
+      "en": "Two Aromatic Candles",
+      "tr": "İki Aromatik Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/apexDescription",
+      "en": "Two small candles.",
+      "tr": "İki küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandledouble.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/description",
+      "en": "Three candles made with flowers.",
+      "tr": "Çiçeklerden yapılmış üç mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/shortdescription",
+      "en": "Three Aromatic Candles",
+      "tr": "Üç Aromatik Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/apexDescription",
+      "en": "Three small candles.",
+      "tr": "Üç küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/flowercandletriple.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/description",
+      "en": "A candle made with clear beeswax.",
+      "tr": "Şeffaf balmumundan yapılmış bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/shortdescription",
+      "en": "Ghostly Candle",
+      "tr": "Hayalet Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/apexDescription",
+      "en": "A small candle.",
+      "tr": "Küçük bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/humanDescription",
+      "en": "A pretty little candle.",
+      "tr": "Küçük, hoş bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandle.object",
+      "pointer": "/novakidDescription",
+      "en": "A neat lil candle.",
+      "tr": "Şirin mi şirin ufak bi' mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/description",
+      "en": "Two candles made with clear beeswax.",
+      "tr": "Şeffaf balmumundan yapılmış iki mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/shortdescription",
+      "en": "Two Ghostly Candles",
+      "tr": "İki Hayalet Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/apexDescription",
+      "en": "Two small candles.",
+      "tr": "İki küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandledouble.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/description",
+      "en": "Three candles made with clear beeswax.",
+      "tr": "Şeffaf balmumundan yapılmış üç mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/shortdescription",
+      "en": "Three Ghostly Candles",
+      "tr": "Üç Hayalet Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/apexDescription",
+      "en": "Three small candles.",
+      "tr": "Üç küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/ghostcandletriple.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/description",
+      "en": "A candle made with red beeswax.",
+      "tr": "Kırmızı balmumundan yapılmış bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/shortdescription",
+      "en": "Red Candle",
+      "tr": "Kırmızı Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/apexDescription",
+      "en": "A small candle.",
+      "tr": "Küçük bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/humanDescription",
+      "en": "A pretty little candle.",
+      "tr": "Küçük, hoş bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandle.object",
+      "pointer": "/novakidDescription",
+      "en": "A neat lil candle.",
+      "tr": "Şirin mi şirin ufak bi' mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/description",
+      "en": "Two candles made with red beeswax.",
+      "tr": "Kırmızı balmumundan yapılmış iki mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/shortdescription",
+      "en": "Two Red Candles",
+      "tr": "İki Kırmızı Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/apexDescription",
+      "en": "Two small candles.",
+      "tr": "İki küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandledouble.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/description",
+      "en": "Three candles made with red beeswax.",
+      "tr": "Kırmızı balmumundan yapılmış üç mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/shortdescription",
+      "en": "Three Red Candles",
+      "tr": "Üç Kırmızı Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/apexDescription",
+      "en": "Three small candles.",
+      "tr": "Üç küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/redcandletriple.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/description",
+      "en": "A candle made with beeswax.",
+      "tr": "Balmumundan yapılmış bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/shortdescription",
+      "en": "Candle",
+      "tr": "Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/apexDescription",
+      "en": "A small candle.",
+      "tr": "Küçük bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/humanDescription",
+      "en": "A pretty little candle.",
+      "tr": "Küçük, hoş bir mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandle.object",
+      "pointer": "/novakidDescription",
+      "en": "A neat lil candle.",
+      "tr": "Şirin mi şirin ufak bi' mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/description",
+      "en": "Two candles made with beeswax.",
+      "tr": "Balmumundan yapılmış iki mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/shortdescription",
+      "en": "Two Candles",
+      "tr": "İki Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/apexDescription",
+      "en": "Two small candles.",
+      "tr": "İki küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandledouble.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/description",
+      "en": "Three candles made with beeswax.",
+      "tr": "Balmumundan yapılmış üç mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/shortdescription",
+      "en": "Three Candles",
+      "tr": "Üç Mum",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/apexDescription",
+      "en": "Three small candles.",
+      "tr": "Üç küçük mum.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/avianDescription",
+      "en": "Avian priests often work by candlelight.",
+      "tr": "Avian rahipleri genellikle mum ışığında çalışır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/floranDescription",
+      "en": "Hsss take it away!",
+      "tr": "Tısss, götür onu!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/glitchDescription",
+      "en": "Explanation. The Glitch do not yet have the technology to produce electric lights.",
+      "tr": "Açıklama. Glitch'ler henüz elektrikli ışık üretecek teknolojiye sahip değil.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/humanDescription",
+      "en": "Pretty little candles.",
+      "tr": "Küçük, hoş mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/hylotlDescription",
+      "en": "Little is as beautiful as the flickering of a candle flame.",
+      "tr": "Mum alevinin titreşimi kadar güzel çok az şey vardır.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/candle/waxcandletriple.object",
+      "pointer": "/novakidDescription",
+      "en": "Neat lil candles.",
+      "tr": "Şirin mi şirin ufak mumlar.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeycooking/honeytable.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Honey Cooking Table",
+      "tr": " Bal Pişirme Tezgâhı",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeycooking/honeytable.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Prepare and cook honey!",
+      "tr": " ^#b9b5b2;Bal hazırla ve pişir!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeycooking/honeytable.object",
+      "pointer": "/description",
+      "en": "Cook honey based food on this!",
+      "tr": "Burada ballı yiyecekler pişirebilirsin!",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeycooking/honeytable.object",
+      "pointer": "/shortdescription",
+      "en": "Honey Cooking Table",
+      "tr": "Bal Pişirme Tezgâhı",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeyextractor/honeyextractor.object",
+      "pointer": "/description",
+      "en": "Slowly turns ^green;combs and bottles^reset; into ^orange;honey^reset;.",
+      "tr": "^green;Petekleri ve şişeleri^reset; yavaşça ^orange;bala^reset; dönüştürür.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeyextractor/honeyextractor.object",
+      "pointer": "/shortdescription",
+      "en": "Honey Extractor",
+      "tr": "Bal Özütleyici",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeyextractor/honeyextractor.object",
+      "pointer": "/subtitle",
+      "en": "Fill bottles with awesome honey.",
+      "tr": "Şişeleri nefis balla doldurur.",
+      "section": "v0.18 Arıcılık"
+    },
+    {
+      "asset": "objects/power/fu_conduit/fu_conduit.object",
+      "pointer": "/description",
+      "en": "Transmits power. Use with care. ^blue;Upper Input^reset;: On/Off Switch. You may need ^cyan;Watchers^reset; to keep distant stations running.",
+      "tr": "Güç aktarır. Dikkatli kullan. ^blue;Üst Giriş^reset;: Açma/Kapama Anahtarı. Uzaktaki istasyonların çalışmayı sürdürmesi için ^cyan;Gözcüler^reset; gerekebilir.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_conduit/fu_conduit.object",
+      "pointer": "/shortdescription",
+      "en": "Power Relay",
+      "tr": "Güç Rölesi",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_fieldgenerator/fieldgen.object",
+      "pointer": "/description",
+      "en": "You didn't see anything.",
+      "tr": "Hiçbir şey görmedin.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_fieldgenerator/fieldgen.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Field Generator^reset;",
+      "tr": "^orange;Alan Jeneratörü^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_nocturnarray/fu_nocturnarray.object",
+      "pointer": "/description",
+      "en": "Generates energy out of darkness. Can potentially generate ^orange;10W^reset;.",
+      "tr": "Karanlıktan enerji üretir. ^orange;10W^reset; değerine kadar güç üretebilir.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_nocturnarray/fu_nocturnarray.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Nocturn Array^reset;",
+      "tr": "^cyan;Gece Dizisi^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_powersensorlarge/fu_powersensorlarge.object",
+      "pointer": "/description",
+      "en": "A large sensor that displays power levels flowing into it. This one goes up to 9999.",
+      "tr": "İçinden geçen güç seviyesini gösteren büyük bir sensör. 9999'a kadar ölçer.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_powersensorlarge/fu_powersensorlarge.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Large Power Sensor^reset;",
+      "tr": "^cyan;Büyük Güç Sensörü^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rechargesensor/fu_rechargesensor.object",
+      "pointer": "/description",
+      "en": "Starts sending ^green;ON^reset; signal if all batteries are less than 10% full. Doesn't stop sending ^green;ON^reset; signal until all batteries become completely full. Knows about all batteries on this power conduit.\n^cyan;Useful for turning the reactors On/Off.^reset;",
+      "tr": "Tüm pillerin doluluk oranı %10'un altına düştüğünde ^green;AÇIK^reset; sinyali göndermeye başlar. Tüm piller tamamen dolana kadar ^green;AÇIK^reset; sinyali göndermeyi sürdürür. Bu güç hattındaki bütün pilleri algılar.\n^cyan;Reaktörleri açıp kapatmak için kullanışlıdır.^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rechargesensor/fu_rechargesensor.object",
+      "pointer": "/shortdescription",
+      "en": "Empty Batteries Sensor",
+      "tr": "Boş Pil Sensörü",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rechargesensor/fu_rechargesensor.object",
+      "pointer": "/chatStrings/noBatteries",
+      "en": "No batteries found.",
+      "tr": "Pil bulunamadı.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rechargesensor/fu_rechargesensor.object",
+      "pointer": "/chatStrings/tooltip",
+      "en": "Found batteries: ^green;%s^reset; (^yellow;%s%%^reset; full)\nCurrent state: %s.",
+      "tr": "Bulunan piller: ^green;%s^reset; (^yellow;%s%%^reset; dolu)\nMevcut durum: %s.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rechargesensor/fu_rechargesensor.object",
+      "pointer": "/chatStrings/statusOn",
+      "en": "^green;ON^reset; (needs charging) until all batteries become ^yellow;%s%%^reset; full",
+      "tr": "Tüm piller ^yellow;%s%%^reset; dolana kadar ^green;AÇIK^reset; (şarj gerekli)",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rechargesensor/fu_rechargesensor.object",
+      "pointer": "/chatStrings/statusOff",
+      "en": "^red;OFF^reset; (doesn't need charging) until all batteries are less than ^yellow;%s%%^reset; full",
+      "tr": "Tüm pillerin doluluk oranı ^yellow;%s%%^reset; altına düşene kadar ^red;KAPALI^reset; (şarj gerekmiyor)",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rockcrusher/fu_rockcrusher.object",
+      "pointer": "/description",
+      "en": "A device for pulverizing rocky material into useful items. ^cyan;Requires ^orange;30W ^cyan;power.^reset;",
+      "tr": "Kayalık malzemeleri yararlı ürünlere öğüten bir cihaz. ^cyan;^orange;30W ^cyan;güç gerekir.^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rockcrusher/fu_rockcrusher.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Rock Crusher^reset;",
+      "tr": "^cyan;Kaya Kırıcı^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_rockcrusher/fu_rockcrusher.object",
+      "pointer": "/category",
+      "en": "^orange;Extraction Device^reset;",
+      "tr": "^orange;Çıkarma Cihazı^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/description",
+      "en": "A scanning radar used to measure light and wind levels.",
+      "tr": "Işık ve rüzgâr seviyelerini ölçen bir tarama radarı.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/shortdescription",
+      "en": "Weather Beacon",
+      "tr": "Hava İstasyonu",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/chatStrings/solarPanel",
+      "en": "Solar Panel: ",
+      "tr": "Güneş Paneli: ",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/chatStrings/solarArray",
+      "en": "Solar Array: ",
+      "tr": "Güneş Dizisi: ",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/chatStrings/solarTower",
+      "en": "Solar Tower: ",
+      "tr": "Güneş Kulesi: ",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/chatStrings/nocturnArray",
+      "en": "Nocturn Array: ",
+      "tr": "Gece Dizisi: ",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/fu_weatherbeacon/fu_weatherbeacon.object",
+      "pointer": "/chatStrings/windTurbine",
+      "en": "Wind Turbine: ",
+      "tr": "Rüzgâr Türbini: ",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/description",
+      "en": "Uses gnome slave labor to craft your stuff. This is super illegal, but who's going to stop you? Certainly not the gnomes.",
+      "tr": "Eşyalarını üretmek için gnom kölelerin emeğini kullanır. Bu tamamen yasa dışı ama seni kim durduracak? Gnomlar kesinlikle değil.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Gnome Workshop^reset;",
+      "tr": "^orange;Gnom Atölyesi^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/apexDescription",
+      "en": "This seems like something the Miniknog would do.",
+      "tr": "Bu, Miniknog'un yapacağı türden bir şeye benziyor.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/avianDescription",
+      "en": "They work hard for my benefit.",
+      "tr": "Benim yararım için çok çalışıyorlar.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/floranDescription",
+      "en": "Work harder, little ssslaves!",
+      "tr": "Daha çok çalışşşın, küçük köleler!",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/glitchDescription",
+      "en": "Oppresive. These gnomes will work ceaselessly.",
+      "tr": "Baskıcı. Bu gnomlar durmaksızın çalışacak.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/humanDescription",
+      "en": "It's like Santa's workshop. But crueler.",
+      "tr": "Noel Baba'nın atölyesi gibi. Ama daha zalimce.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/hylotlDescription",
+      "en": "I'm sure most Hylotl would disapprove of this.",
+      "tr": "Çoğu Hylotl'un bunu onaylamayacağına eminim.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/gnomefactory/gnomefactory.object",
+      "pointer": "/novakidDescription",
+      "en": "Them little folk sure are hard working!",
+      "tr": "Şu ufaklıklar hakikaten sıkı çalışıyo!",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_atmoscondenser/isn_atmoscondensermadness.object",
+      "pointer": "/description",
+      "en": "Siphons and warps the atmosphere into usable reagents. ^cyan;Requires ^orange;42J^cyan; every 8.7 seconds. ^red;Slower production  when stacked^reset;.",
+      "tr": "Atmosferi çekip büker ve kullanılabilir reaktiflere dönüştürür. ^cyan;Her 8.7 saniyede ^orange;42J^cyan; gerekir. ^red;Yan yana kurulduklarında üretim yavaşlar^reset;.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_atmoscondenser/isn_atmoscondensermadness.object",
+      "pointer": "/shortdescription",
+      "en": "Entropic Converter",
+      "tr": "Entropik Dönüştürücü",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_atmosregulator/isn_atmosregulatorwarped.object",
+      "pointer": "/description",
+      "en": "Generates a mysterious field at significantly higher range. ^cyan;Requires ^orange;320W^cyan; of power^reset;.",
+      "tr": "Çok daha geniş bir alanda gizemli bir alan oluşturur. ^cyan;^orange;320W^cyan; güç gerekir^reset;.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_atmosregulator/isn_atmosregulatorwarped.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Warped Regulator^reset;",
+      "tr": "^cyan;Çarpıtılmış Düzenleyici^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_battery_t0/isn_battery_t0.object",
+      "pointer": "/description",
+      "en": "A very primitive battery.^truncate; ^red;Scan for Info^reset;\nStorage Capacity: ^green;350^reset;J",
+      "tr": "Oldukça ilkel bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;350^reset;J",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_battery_t0/isn_battery_t0.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Simple^reset; Battery",
+      "tr": "^orange;Basit^reset; Pil",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/description",
+      "en": "Instantly destroys any item placed within. Good for mass disposal.",
+      "tr": "İçine konan her eşyayı anında yok eder. Toplu imha için kullanışlıdır.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/shortdescription",
+      "en": "Incinerator",
+      "tr": "İmha Fırını",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/apexDescription",
+      "en": "Anything going in here is gone forever.",
+      "tr": "Buraya giren her şey sonsuza dek yok olur.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/avianDescription",
+      "en": "I should be careful not to put anything I don't want to lose in here.",
+      "tr": "Kaybetmek istemediğim hiçbir şeyi buraya koymamaya dikkat etmeliyim.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/floranDescription",
+      "en": "Floran hate ssstupid can of fire.",
+      "tr": "Floran aptal ateşşş kutusundan nefret eder.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/glitchDescription",
+      "en": "Content. This should allow me to dispose of anything cleanly.",
+      "tr": "Memnun. Bununla her şeyi temizce ortadan kaldırabilirim.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/humanDescription",
+      "en": "What goes in does not come out.",
+      "tr": "İçeri giren bir daha çıkmaz.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+      "pointer": "/hylotlDescription",
+      "en": "A clean method of disposal. Excellent.",
+      "tr": "Temiz bir imha yöntemi. Mükemmel.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_powersensor/isn_powersensor.object",
+      "pointer": "/description",
+      "en": "A small sensor that displays power levels flowing into it.",
+      "tr": "İçinden geçen güç seviyesini gösteren küçük bir sensör.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_powersensor/isn_powersensor.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Power Sensor^reset;",
+      "tr": "^cyan;Güç Sensörü^reset;",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_radiostation/isn_radiostationnew.object",
+      "pointer": "/description",
+      "en": "A fancy terminal.",
+      "tr": "Gösterişli bir terminal.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/isn_radiostation/isn_radiostationnew.object",
+      "pointer": "/shortdescription",
+      "en": "Large Network Terminal",
+      "tr": "Büyük Ağ Terminali",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/description",
+      "en": "Instantly destroys any item placed within. Great for mass disposal.",
+      "tr": "İçine konan her eşyayı anında yok eder. Toplu imha için idealdir.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/shortdescription",
+      "en": "Mass Incinerator",
+      "tr": "Toplu İmha Fırını",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/apexDescription",
+      "en": "Anything going in here is gone forever.",
+      "tr": "Buraya giren her şey sonsuza dek yok olur.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/avianDescription",
+      "en": "I should be careful not to put anything I don't want to lose in here.",
+      "tr": "Kaybetmek istemediğim hiçbir şeyi buraya koymamaya dikkat etmeliyim.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/floranDescription",
+      "en": "Floran hate ssstupid can of fire.",
+      "tr": "Floran aptal ateşşş kutusundan nefret eder.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/glitchDescription",
+      "en": "Content. This should allow me to dispose of anything cleanly.",
+      "tr": "Memnun. Bununla her şeyi temizce ortadan kaldırabilirim.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/humanDescription",
+      "en": "What goes in does not come out.",
+      "tr": "İçeri giren bir daha çıkmaz.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/power/massincinerator/massincinerator.object",
+      "pointer": "/hylotlDescription",
+      "en": "A clean method of disposal. Excellent.",
+      "tr": "Temiz bir imha yöntemi. Mükemmel.",
+      "section": "v0.18 Power"
+    },
+    {
+      "asset": "objects/scienceoutpost/burgerfool/burgerfool.object",
+      "pointer": "/description",
+      "en": "Overpriced, crappy burgers, fries and expired milk with bees.",
+      "tr": "Fahiş fiyatlı, berbat burgerler, patates kızartmaları ve arılı, tarihi geçmiş süt.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/burgerfool/burgerfool.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Burger Fool^reset;",
+      "tr": "^orange;Burger Fool^reset;",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/fupetshop/fupetshop.object",
+      "pointer": "/description",
+      "en": "Clearly their primary goods are pet-related.",
+      "tr": "Başlıca ürünlerinin evcil hayvanlarla ilgili olduğu belli.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/fupetshop/fupetshop.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;SuperPet^reset;",
+      "tr": "^orange;SuperPet^reset;",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/guidestorage/guidestorage.object",
+      "pointer": "/description",
+      "en": "It should be stocked full of science journals and lab reports.",
+      "tr": "Bilim dergileri ve laboratuvar raporlarıyla dolu olmalı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/guidestorage/guidestorage.object",
+      "pointer": "/shortdescription",
+      "en": "Lab Bookcase",
+      "tr": "Laboratuvar Kitaplığı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/description",
+      "en": "Famous scientist of the rare Xarwiek race",
+      "tr": "Nadir Xarwiek ırkının ünlü bilim insanı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/shortdescription",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/0",
+      "en": "My large size means I require rather absurd amounts of nutrients. I don't suppose you have an Orange? I do love those. Rare. Especially now...",
+      "tr": "İri cüssem yüzünden gülünç miktarda besine ihtiyacım var. Yanında Portakal yoktur herhalde? Onlara bayılırım. Nadir bulunuyorlar. Özellikle de şimdi...",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/1",
+      "en": "It's not that I am not brave, or have no backbone...I just can't seem to get the motivation to fire Kevin.",
+      "tr": "Cesur olmadığım ya da omurgasız olduğumdan değil... Kevin'ı kovacak motivasyonu bir türlü bulamıyorum.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/2",
+      "en": "Have you ever stopped to think at just how many coincidences occurred to get you to this specific point in time?",
+      "tr": "Seni tam da şu ana getirmek için kaç tesadüfün art arda yaşandığını hiç düşündün mü?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/3",
+      "en": "I should probably find a better communications specialist for my Staff. Someone who can make sense of this strange transmission we found...",
+      "tr": "Ekibime daha iyi bir iletişim uzmanı bulmalıyım. Bulduğumuz bu garip yayını çözebilecek biri...",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/4",
+      "en": "I am not a slug. I don't look like it, according to most people, but I'm actually in the monotreme family. I will be very furry in the future, when I'm older.",
+      "tr": "Ben bir sümüklüböcek değilim. Çoğu kişiye göre benzemesem de aslında tek delikliler ailesindeyim. Büyüdüğümde çok tüylü olacağım.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/5",
+      "en": "You should definitely make regular use of your ^orange;Tricorder^reset;. It will help you in many ways.",
+      "tr": "^orange;Tricorder^reset;'ını kesinlikle düzenli kullanmalısın. Sana pek çok yönden yardım eder.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/6",
+      "en": "I'd love to chat about science at just about any time. Except right now. I'm too hungry.",
+      "tr": "Neredeyse her zaman bilim hakkında sohbet etmek isterim. Şu an hariç. Fazla açım.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/7",
+      "en": "If you can't find oil to make plastic...you can always use Milk. It's not optimal, but it'll do the trick in a serious bind.",
+      "tr": "Plastik yapmak için petrol bulamazsan... her zaman Süt kullanabilirsin. İdeal değil ama dara düştüğünde iş görür.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/8",
+      "en": "I hear rumors of some strange new forays into scientific study that, frankly, terrify me.",
+      "tr": "Bilimsel araştırmalarda bazı tuhaf yeni girişimler olduğuna dair söylentiler duyuyorum; açıkçası beni korkutuyorlar.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/9",
+      "en": "If you ever find yourself in dire need of fuel, you can pull hydrogen straight from water and use that. It's a lifesaver when you're in dire straits.",
+      "tr": "Bir gün acilen yakıta ihtiyaç duyarsan hidrojeni doğrudan sudan çıkarıp kullanabilirsin. Zor durumda hayat kurtarır.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/moonlitcomet.object",
+      "pointer": "/chatOptions/10",
+      "en": "It may not sound like it by name, but the Science Outpost has a bustling and varied marketplace.",
+      "tr": "Adından öyle anlaşılmasa da Bilim Karakolu'nun hareketli ve çeşitli bir pazarı var.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/vina_plush.object",
+      "pointer": "/description",
+      "en": "The greatest plush toy ever created. Fact.",
+      "tr": "Bugüne kadar yapılmış en iyi pelüş oyuncak. Bu bir gerçek.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/moonlit_comet/vina_plush.object",
+      "pointer": "/shortdescription",
+      "en": "Vina Plushy",
+      "tr": "Vina Pelüşü",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/radienshopdrug/drugdealer.object",
+      "pointer": "/description",
+      "en": "I'm not sure I understand. Am I expected to purchase dirt?",
+      "tr": "Anladığımdan emin değilim. Benden toprak satın almam mı bekleniyor?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/radienshopdrug/drugdealer.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Munchies' Dirt^reset;",
+      "tr": "^orange;Munchies'in Toprağı^reset;",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushlarge.object",
+      "pointer": "/description",
+      "en": "A beautiful rose bush.",
+      "tr": "Güzel bir gül çalısı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushlarge.object",
+      "pointer": "/shortdescription",
+      "en": "Rose Bush Large",
+      "tr": "Büyük Gül Çalısı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushlarge_box.object",
+      "pointer": "/description",
+      "en": "A beautiful rose bush.",
+      "tr": "Güzel bir gül çalısı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushlarge_box.object",
+      "pointer": "/shortdescription",
+      "en": "Rose Bush Large",
+      "tr": "Büyük Gül Çalısı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushmed.object",
+      "pointer": "/description",
+      "en": "A beautiful rose bush.",
+      "tr": "Güzel bir gül çalısı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushmed.object",
+      "pointer": "/shortdescription",
+      "en": "Rose Bush Medium",
+      "tr": "Orta Gül Çalısı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushmed_box.object",
+      "pointer": "/description",
+      "en": "A beautiful rose bush.",
+      "tr": "Güzel bir gül çalısı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushmed_box.object",
+      "pointer": "/shortdescription",
+      "en": "Rose Bush Medium",
+      "tr": "Orta Gül Çalısı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushsmall.object",
+      "pointer": "/description",
+      "en": "A beautiful rose bush.",
+      "tr": "Güzel bir gül çalısı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushsmall.object",
+      "pointer": "/shortdescription",
+      "en": "Rose Bush Small",
+      "tr": "Küçük Gül Çalısı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushsmall_box.object",
+      "pointer": "/description",
+      "en": "A beautiful rose bush.",
+      "tr": "Güzel bir gül çalısı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/roses/rosebushsmall_box.object",
+      "pointer": "/shortdescription",
+      "en": "Rose Bush Small",
+      "tr": "Küçük Gül Çalısı",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/description",
+      "en": "A good source of information.",
+      "tr": "İyi bir bilgi kaynağı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/shortdescription",
+      "en": "Info Booth",
+      "tr": "Danışma Noktası",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/0",
+      "en": "Welcome to the ^green;Science Outpost^reset;! Any friend of Vinalisj is a friend of ours. If you need some advice, I'm here! Just... try to stay away from Kevin.",
+      "tr": "^green;Bilim Karakolu^reset;'na hoş geldin! Vinalisj'in dostu bizim de dostumuzdur. Tavsiyeye ihtiyacın olursa buradayım! Yalnız... Kevin'dan uzak durmaya çalış.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/1",
+      "en": "First things first, I'd recommend you take a look at the Frackin' Universe guide codexes - you should have a set of them in your ship's locker, but just in case, there's also a set of them in a bookshelf near the west side of this building.",
+      "tr": "Her şeyden önce Frackin' Universe rehber kitaplarına göz atmanı öneririm. Geminin dolabında bir set bulunmalı; ne olur ne olmaz diye bu binanın batı tarafındaki bir kitaplığa da bir set koyduk.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/2",
+      "en": "Some of the information in those codexes might not seem relevant right now, but even some of our veteran researchers have learned something they didn't know through those books, so keep them in mind!",
+      "tr": "O kitaplardaki bazı bilgiler şu an ilgisiz görünebilir ama deneyimli araştırmacılarımız bile onlardan yeni şeyler öğrendi. Aklında bulunsun!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/3",
+      "en": "Looks like most of your Protectorate crafting databanks have been scrambled at some point - You'll need to use your Tricorder to research how to craft a lot of things.",
+      "tr": "Koruyuculuk üretim veri bankalarının çoğu bir noktada karışmış görünüyor. Birçok şeyin nasıl üretileceğini araştırmak için Tricorder'ını kullanman gerekecek.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/4",
+      "en": "I'd recommend researching extraction technology sooner rather than later. A Hand Mill might not be as fast as a full Extraction Lab, but it's still one of the most powerful tools in your arsenal.",
+      "tr": "Çıkarma teknolojisini erkenden araştırmanı öneririm. El Değirmeni tam donanımlı bir Çıkarma Laboratuvarı kadar hızlı olmayabilir ama yine de elindeki en güçlü araçlardan biridir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/5",
+      "en": "Having trouble keeping your ship's tank topped up? Remember, Erchius isn't the only fuel you can use - Isotopes, bio-fuels, and even Hydrogen can all act as fuel sources - and some are more effective than others!",
+      "tr": "Geminin deposunu dolu tutmakta zorlanıyor musun? Erchius kullanabileceğin tek yakıt değil. İzotoplar, biyoyakıtlar ve hatta Hidrojen de yakıt olabilir; bazıları diğerlerinden daha verimlidir!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/6",
+      "en": "Having trouble gaining research? Your passive research gain will increase the longer you play.",
+      "tr": "Araştırma kazanmakta zorlanıyor musun? Oyunda geçirdiğin süre uzadıkça pasif araştırma kazancın artar.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/7",
+      "en": "Research will also increase based on the tier of the planet you're on - Exploring more dangerous planets lets you gather research more quickly!",
+      "tr": "Araştırma kazancı bulunduğun gezegenin kademesine göre de artar. Daha tehlikeli gezegenleri keşfederek daha hızlı araştırma toplayabilirsin!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/8",
+      "en": "Okay, so a couple of coworkers were saying they were leaving to go snarsh some garflipps, and I asked them what that meant, and they looked at me like I was an idiot. Is that normal? Am I the weird one for not knowing what that means?",
+      "tr": "Pekâlâ, birkaç iş arkadaşım biraz garflipp snarsh'lamaya gideceklerini söyledi. Ne demek olduğunu sorunca bana aptalmışım gibi baktılar. Bu normal mi? Ne anlama geldiğini bilmediğim için tuhaf olan ben miyim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/9",
+      "en": "A randomly-generated weapon will almost always be weaker than one you've crafted yourself. Crafted weapons also generally have special abilities designed to complement the weapon.",
+      "tr": "Rastgele oluşturulmuş bir silah neredeyse her zaman kendi ürettiğin silahtan daha zayıf olur. Üretilen silahlar genellikle kendilerini tamamlayan özel yeteneklere de sahiptir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/10",
+      "en": "Consider using a computer to turn randomly-generated weapons into research, instead! It can prove to be quite useful, especially with more valuable weapons. This applies to objects and items as well.",
+      "tr": "Rastgele oluşturulmuş silahları bir bilgisayarda araştırmaya dönüştürmeyi düşün! Özellikle değerli silahlarda oldukça işe yarayabilir. Bu, nesneler ve eşyalar için de geçerlidir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/11",
+      "en": "Have a favorite weapon or armor set that you don't want to leave behind as you progress? Good news - you don't have to! Using your Tricorder's Upgrade function.",
+      "tr": "İlerlerken geride bırakmak istemediğin sevdiğin bir silah ya da zırh setin mi var? İyi haber: Bırakmak zorunda değilsin! Tricorder'ının Yükseltme işlevini kullan.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/12",
+      "en": "You can use Upgrade modules to improve almost all Frackin' Universe weapons or armor. By doing this, you can ensure that any armor or weapon stays viable!",
+      "tr": "Neredeyse tüm Frackin' Universe silah ve zırhlarını Yükseltme modülleriyle geliştirebilirsin. Böylece istediğin zırhın ya da silahın işe yarar kalmasını sağlayabilirsin!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/13",
+      "en": "Does an enemy seem almost invincible? It might just be resistant to the damage type you're using. Try switching things up with different weapons to find a weakness!",
+      "tr": "Bir düşman neredeyse yenilmez mi görünüyor? Kullandığın hasar türüne dirençli olabilir. Zayıf noktasını bulmak için farklı silahlar dene!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/14",
+      "en": "Don't know where to find a specific item or material? A Lab Directory can tell you if it's an output from any of your nearby machines. If that fails, check the official wiki displayed on the main menu!",
+      "tr": "Belirli bir eşya ya da malzemeyi nerede bulacağını bilmiyor musun? Laboratuvar Dizini, yakındaki makinelerinden birinin onu üretip üretmediğini gösterebilir. Bu da işe yaramazsa ana menüdeki resmî wikiye bak!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/15",
+      "en": "Even carnivores have a reason to set up plant farms - many of the growable plants that Frackin' Universe adds can be eaten by anyone.",
+      "tr": "Etçillerin bile bitki çiftliği kurmak için bir nedeni var. Frackin' Universe'ün eklediği yetiştirilebilir bitkilerin çoğunu herkes yiyebilir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/16",
+      "en": "For example, Meatvine is a reliable source of nutrition for carnivores. Nevermind the fact that a plant is growing raw meat from its bulbs.",
+      "tr": "Örneğin Et Sarmaşığı, etçiller için güvenilir bir besin kaynağıdır. Bir bitkinin yumrularında çiğ et yetiştirmesini dert etme.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/17",
+      "en": "Most plants and their seeds can be extracted into useful materials! They can be a benefit in a wide array of circumstances. Experiment and try many!",
+      "tr": "Çoğu bitki ve tohumu yararlı malzemelere ayrıştırılabilir! Pek çok durumda işine yarayabilirler. Deney yap ve farklılarını dene!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/18",
+      "en": "Sorry we can't let you use most of the crafting and processing machines - We had to restrict access after Kevin tried to use them to create a gun that shot smaller versions of itself.",
+      "tr": "Üretim ve işleme makinelerinin çoğunu kullanmana izin veremediğimiz için üzgünüz. Kevin, kendisinin küçük kopyalarını ateşleyen bir silah yapmaya kalkınca erişimi kısıtlamak zorunda kaldık.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/19",
+      "en": "Most hazardous environmental effects can be prevented with either an immunity to that effect, or often through a high enough resistance to specific damage types.",
+      "tr": "Çoğu tehlikeli çevre etkisi, o etkiye bağışıklık kazanarak ya da belirli hasar türlerine yeterince yüksek direnç edinerek önlenebilir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/20",
+      "en": "Immunities and resistances are seperate - Even if you're immune to a planet's extreme heat, that won't reduce damage from fiery attacks unless you increase your heat resistance.",
+      "tr": "Bağışıklıklar ve dirençler ayrıdır. Bir gezegenin aşırı sıcağına bağışık olsan bile ısı direncini artırmadıkça ateşli saldırılardan aldığın hasar azalmaz.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/21",
+      "en": "If things don't seem to be working right, first check to make sure you don't have any incompatible mods installed. If that doesn't work, post your full log file to the bug channel on the Frackin' Universe Discord.",
+      "tr": "Bir şeyler düzgün çalışmıyorsa önce uyumsuz mod kurulu olmadığından emin ol. Sorun çözülmezse tam günlük dosyanı Frackin' Universe Discord'undaki hata kanalına gönder.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/22",
+      "en": "Take your time - if you rush to advance as fast as possible, you'll miss all sorts of fun things - like these hints!",
+      "tr": "Acele etme. Olabildiğince hızlı ilerlemeye çalışırsan bu ipuçları gibi türlü eğlenceli şeyi kaçırırsın!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/23",
+      "en": "Mixing certain liquids can have unexpected results - do things right, and you can make more of almost any liquid!",
+      "tr": "Bazı sıvıları karıştırmak beklenmedik sonuçlar doğurabilir. Doğru yaparsan neredeyse her sıvıdan daha fazlasını üretebilirsin!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/24",
+      "en": "Liquids will drain away if there's not a background block keeping them there - though oceans are an exception.",
+      "tr": "Sıvıları yerinde tutan bir arka plan bloğu yoksa akıp giderler. Okyanuslar bunun istisnasıdır.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/25",
+      "en": "Don't feel like using the teleporter to descend to the planet you're orbiting? Go down far enough outside your ship, and you'll fall to the planet below!",
+      "tr": "Yörüngesindeki gezegene inmek için ışınlayıcıyı kullanmak istemiyor musun? Geminin dışında yeterince aşağı inersen alttaki gezegene düşersin!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/26",
+      "en": "If some of my advice doesn't make sense to you right now, don't worry about it. You never know - it might come up later!",
+      "tr": "Tavsiyelerimin bazıları şu an anlamsız geliyorsa dert etme. Belli olmaz, ileride karşına çıkabilir!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/27",
+      "en": "If you ever find alien ruins with grey bricks and purple or blue glyphs, you've probably found something built by the Ancients, a long-extinct race.",
+      "tr": "Gri tuğlalarla mor ya da mavi gliflerden oluşan uzaylı harabeleri bulursan muhtemelen soyu çoktan tükenmiş Kadimler'in yaptığı bir yapıya rastlamışsındır.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/28",
+      "en": "Apparently, many Peglaci claim that there was another race even older than the Ancients, but not much is known about that time period of galactic history. It has been lost to time.",
+      "tr": "Birçok Peglaci, Kadimler'den bile eski başka bir ırk olduğunu söylüyor. Ancak galaksi tarihinin o dönemi hakkında pek bir şey bilinmiyor; bilgiler zamanla kaybolmuş.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/29",
+      "en": "If you are looking to trade, head to a space station. You'll find you can invest, play the market, or hire custom mercenaries and unique medical procedures.",
+      "tr": "Ticaret yapmak istiyorsan bir uzay istasyonuna git. Yatırım yapabilir, piyasada işlem yapabilir, özel paralı askerler tutabilir ve benzersiz tıbbi işlemler satın alabilirsin.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/30",
+      "en": "The Kirhosi also have set up special sections on each one of these space stations. I couldn't tell you what is inisde them, though: Specialized access is required in order to enter.",
+      "tr": "Kirhoslar da bu uzay istasyonlarının her birinde özel bölümler kurdu. İçlerinde ne olduğunu söyleyemem; girmek için özel erişim gerekiyor.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/31",
+      "en": "A second reminder: Kevin is a genius, he really is. Super smart. However, I am absolutely certain he is at least a little bit insane. Read the infraction log, and you'll very swiftly understand what I mean.",
+      "tr": "Bir kez daha hatırlatayım: Kevin gerçekten bir dâhi. Müthiş zeki. Ama en azından biraz deli olduğundan kesinlikle eminim. İhlal kaydını okursan ne demek istediğimi hemen anlarsın.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/32",
+      "en": "I mean, the whole lip gloss thing? Yea, it was me that came across it first. I'm always the first one to show up for the day. Trust me - that was awe-inspiringly confusing. I remain uncertain of how he coated the entire base in less than 5 hours. Every surface. Even ones behind objects weighing several tons.",
+      "tr": "Şu dudak parlatıcısı meselesi mi? Evet, ilk ben gördüm. Sabahları hep önce ben gelirim. İnan bana, akıl almaz derecede kafa karıştırıcıydı. Tüm üssü 5 saatten kısa sürede nasıl kapladığını hâlâ bilmiyorum. Her yüzeyi. Tonlarca ağırlıktaki nesnelerin arkasını bile.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/33",
+      "en": "Suffice it to say, we have a love-hate relationship with Kevin. He does bring in a rather large amount of income in funding, purchases -and- donations, though the means through which even this is accomplished defy explanation.",
+      "tr": "Kevin'la aramızda sevgi-nefret ilişkisi var desem yeter. Finansman, alışveriş ve bağışlarla epey gelir getiriyor ama bunu nasıl başardığını açıklamak bile mümkün değil.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/34",
+      "en": "Did you know that one time he obtained a 3-trillion pixel donation from a wealthy investor solely because, as he went on to claim, he made a really good sandwich for the man. Is any sandwich that good? I am sceptical.",
+      "tr": "Bir keresinde zengin bir yatırımcıdan 3 trilyon piksellik bağış aldığını biliyor muydun? İddiasına göre tek yaptığı adama çok iyi bir sandviç hazırlamaktı. Herhangi bir sandviç o kadar iyi olabilir mi? Şüpheliyim.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/35",
+      "en": "In your travels, you will find some truly unusual things. Be advised that those which are too far out-there are likely to cause just a tiny bit of madness or insanity. This can cause a wide variety of side-effects (both positive and negative).",
+      "tr": "Yolculuklarında gerçekten sıra dışı şeylerle karşılaşacaksın. Aşırı tuhaf olanların biraz deliliğe yol açabileceğini unutma. Bunun hem olumlu hem olumsuz pek çok yan etkisi olabilir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/36",
+      "en": "When you are suffering from this madness, you should go ahead and have a seat in the InstaFreud to the left of us. That nifty device is essentially an AI-Driven Psychologist that is reknowned for its ability to fix even some of the most dramatic mental afflictions, given enough time.",
+      "tr": "Bu delilikten mustarip olduğunda solumuzdaki Insta-Freud'a otur. Bu kullanışlı cihaz aslında yapay zekâ destekli bir psikologdur ve yeterince zaman verilirse en ağır zihinsel rahatsızlıklardan bazılarını bile iyileştirmesiyle tanınır.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/37",
+      "en": "^red;Do not^reset; use Kevins Kill-Pod technology. It does to you exactly what it says on the tin. This is likely not your desire. It sure wasn't the desire of Dr.Demento, revered Mime of Nippango IV. He ignored the warning. Now he's dead. So yea. Careful.",
+      "tr": "Kevin'ın Ölüm Kapsülü teknolojisini ^red;kullanma^reset;. Adı ne diyorsa sana aynısını yapar. Muhtemelen istediğin bu değildir. Nippango IV'ün saygın pandomim sanatçısı Dr. Demento da bunu istemiyordu. Uyarıyı dinlemedi. Şimdi öldü. Yani evet, dikkatli ol.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/38",
+      "en": "My favorite thing in the entire universe is probably fish. Yum. A close second, though, is the Darklight Flower. Personally, I don't think any flora is more beautiful and haunting.",
+      "tr": "Tüm evrende en sevdiğim şey muhtemelen balık. Nefis. Hemen ardından Karanlık Işık Çiçeği gelir. Bence hiçbir bitki bu kadar güzel ve ürpertici değil.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/39",
+      "en": "When I get bored at this desk, I tend to talk a little bit. Some might even say too much. I just drone on, and on, and on...I'd be less bored if there was anything fun to do.",
+      "tr": "Bu masada sıkılınca biraz konuşurum. Hatta bazıları fazla konuştuğumu söyler. Durmadan konuşur da konuşurum... Yapacak eğlenceli bir şey olsa daha az sıkılırdım.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/40",
+      "en": "It should go without saying, but the 'meat shop' in the market here at the Science Outpost sells some rather...morally questionable wares that sane folk would probably be wise to avoid.",
+      "tr": "Söylemeye gerek olmamalı ama Bilim Karakolu pazarındaki 'et dükkânı' ahlaken biraz... şüpheli ürünler satıyor. Aklı başında insanların uzak durması daha iyi olur.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/41",
+      "en": "Mechs might be beefy and cumbersome but long-term they are quite useful. Why wouldn't you want a walking tank equipped with a flight mode that can decimate entire swathes of enemies with huge guns?",
+      "tr": "Mech'ler iri ve hantal olabilir ama uzun vadede çok işe yararlar. Dev silahlarla düşman ordularını yok edebilen, uçuş modlu yürüyen bir tankı kim istemez?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/42",
+      "en": "Of course, you'll need to craft it yourself, but that's okay. Totally worth the effort for the extra protection and power.",
+      "tr": "Elbette onu kendin üretmen gerekecek ama sorun değil. Sağladığı ek koruma ve güç için uğraşmaya kesinlikle değer.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/43",
+      "en": "Sorry, I am just too loquacious for my own good sometimes, I swear. I don't mean to be, but it isn't often that someone actually talks to me for this long. I'm starting to wonder if maybe there's more to it. Do you have a thing for aquatic women?",
+      "tr": "Üzgünüm, bazen gereğinden fazla konuşuyorum, yemin ederim. Kasıtlı değil ama birinin benimle bu kadar uzun konuştuğu pek olmaz. Acaba bunun altında başka bir şey mi var diye düşünmeye başladım. Suda yaşayan kadınlara ilgin mi var?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/44",
+      "en": "You aren't really my type, but there is certainly something about you that I can't quite define that I find interesting. Compelling, even. Maybe its your aroma.",
+      "tr": "Aslında pek benim tipim değilsin ama sende tanımlayamadığım, ilginç bulduğum bir şey var. Hatta çekici. Belki de kokundur.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/45",
+      "en": "Eek! That's far too personal, sorry. Please, don't take offense. That's the last thing I wanted to do!",
+      "tr": "Ayy! Bu fazlasıyla kişiseldi, özür dilerim. Lütfen alınma. Seni gücendirmek isteyeceğim son şey!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/46",
+      "en": "Back on topic, I guess: The market here at the science outpost has a whole bunch of super-useful stuff you can purchase to help make your life a little easier. You should check it out.",
+      "tr": "Konuya dönersek: Bilim Karakolu'ndaki pazarda hayatını biraz kolaylaştıracak bir sürü kullanışlı şey satılıyor. Bir göz atmalısın.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/47",
+      "en": "When you -do- check it out, though, maybe wear pants. Kevin has a habit of shopping before he even gets dressed in the morning. If it wasn't for his carapace...well, let's just say there would be entirely too much alien wing-wong around.",
+      "tr": "Ama bakmaya gittiğinde pantolon giy. Kevin'ın sabah giyinmeden alışverişe çıkma huyu var. Dış iskeleti olmasa... ortalıkta gereğinden fazla uzaylı mahremiyeti olurdu diyelim.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/48",
+      "en": "Kevin has absolutely no issue with you randomly dropping into his office to use his autopsy table. This is rather unsettling. Sometimes you can hear the squishing sounds in the lunch room.",
+      "tr": "Kevin, ofisine habersiz girip otopsi masasını kullanmana hiç itiraz etmiyor. Bu oldukça rahatsız edici. Bazen yemekhaneden ezilme sesleri duyuluyor.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/49",
+      "en": "My fingernails? Oh, thanks! ^red;*blush*^reset;. I have pretty much nothing to do most of the time, so I spent essentially 3 hours on any given day preeing myself. I think it pays off. Don't you?",
+      "tr": "Tırnaklarım mı? Ah, teşekkürler! ^red;*kızarır*^reset;. Çoğu zaman yapacak hiçbir şeyim yok; bu yüzden her gün yaklaşık 3 saatimi bakımıma ayırıyorum. Bence karşılığını veriyor. Sence de öyle değil mi?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/50",
+      "en": "Fenerox are adorable. I'm fairly sure this is the only reason their acute xenophobic racism is tolerated. It's too cute to not love! Just listen to them talk about insectoids, and you'll understand.",
+      "tr": "Feneroxlar çok sevimli. Aşırı yabancı düşmanı ırkçılıklarına katlanılmasının tek nedeni bu olsa gerek. Sevmemek için fazla tatlılar! Böceksiler hakkında konuşmalarını dinle, anlarsın.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/51",
+      "en": "No matter how many times he asks, do not go with Kevin to 'Fun Town'. It is neither fun, nor a town. Just heed the advice, or you might end up like me: taped to a wall in an office screaming obscenities into a fan.",
+      "tr": "Kaç kez sorarsa sorsun Kevin'la 'Eğlence Kasabası'na gitme. Ne eğlenceli ne de kasaba. Bu tavsiyeyi dinle, yoksa benim gibi bir ofiste duvara bantlanmış hâlde vantilatöre küfürler haykırırken bulabilirsin kendini.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/52",
+      "en": "Is it lunch yet? If sure feels like it. I am incredibly hungry, and my coffee hole is empty. I think I'll head to the Starbucks on the lower west floor soon. Advice: leave the Chunky Meat Coffee for the carnivores.",
+      "tr": "Öğle yemeği vakti gelmedi mi? Gelmiş gibi hissediyorum. İnanılmaz açım ve kahve boşluğum bomboş. Yakında alt batı kattaki Starbucks'a gideceğim. Tavsiye: Parçalı Et Kahvesi'ni etçillere bırak.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object",
+      "pointer": "/chatOptions/53",
+      "en": "Why are you still here? It's great having someone to talk to, but I seem to be doing all of the talking while you listen and make non-commital grunts like some kind of Apex simpleton.",
+      "tr": "Neden hâlâ buradasın? Konuşacak birinin olması harika ama bütün konuşmayı ben yapıyorum; sen de bir Apex budalası gibi dinleyip belirsiz homurtular çıkarıyorsun.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceoutpostbanner1/scienceoutpostbanner1.object",
+      "pointer": "/description",
+      "en": "An intergalactic convenience store. It seems an ideal place to stock up.",
+      "tr": "Galaksiler arası bir market. Erzak depolamak için ideal görünüyor.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/scienceoutpostbanner1/scienceoutpostbanner1.object",
+      "pointer": "/shortdescription",
+      "en": "Infinity Express",
+      "tr": "Infinity Express",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/description",
+      "en": "Overpriced, crappy coffee and baked goods.",
+      "tr": "Fahiş fiyatlı, berbat kahve ve unlu mamuller.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Starbucks^reset;",
+      "tr": "^orange;Starbucks^reset;",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/0",
+      "en": "Cheery. Take advantage of our new 'double the price' special! ^green;Now pay 2x the usual price^reset;!",
+      "tr": "Neşeli. Yeni 'fiyatı ikiye katla' kampanyamızdan yararlanın! ^green;Artık normal fiyatın 2 katını ödeyin^reset;!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/1",
+      "en": "Nervous. Will that be a short, a tall, a grande, a venti, or a... Frustrated. Oh no, I've lost track again...",
+      "tr": "Gergin. Küçük mü, uzun mu, grande mi, venti mi, yoksa... Bıkkın. Hayır, yine karıştırdım...",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/2",
+      "en": "Cordial. Welcome, guest! What can I brew for you today?",
+      "tr": "İçten. Hoş geldin! Bugün senin için ne demleyebilirim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/3",
+      "en": "Annoyed. Kevin won't stop replacing the stir sticks with garflipps when I'm on break.",
+      "tr": "Rahatsız. Ben moladayken Kevin karıştırma çubuklarını sürekli garflipp'lerle değiştiriyor.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/4",
+      "en": "Annoyed. Can I take your order?",
+      "tr": "Rahatsız. Siparişini alabilir miyim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/5",
+      "en": "Sarcastic. Our coffee is amazing.",
+      "tr": "Alaycı. Kahvemiz muhteşemdir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/6",
+      "en": "Sarcastic. Working here is truly a joy.",
+      "tr": "Alaycı. Burada çalışmak gerçekten büyük bir zevk.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/7",
+      "en": "Sarcastic. I get paid well for the work I do.",
+      "tr": "Alaycı. Yaptığım işin karşılığını çok iyi alıyorum.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/8",
+      "en": "Gleeful. My shift is over soon. Until then, what can I get you?",
+      "tr": "Sevinçli. Vardiyam yakında bitiyor. O zamana kadar sana ne verebilirim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/9",
+      "en": "Angry. Kim didn't show up for her shift for the third time this month. She's probably with that ^red;%$#@^reset; Stacy again.",
+      "tr": "Öfkeli. Kim bu ay üçüncü kez vardiyasına gelmedi. Muhtemelen yine şu ^red;%$#@^reset; Stacy'yle birliktedir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/10",
+      "en": "Angry. Can you believe Kim missed her shift ^red;*again*^reset;? She claims she's sick. Have you ever seen a sick Novakid?",
+      "tr": "Öfkeli. Kim'in vardiyasını ^red;*yine*^reset; kaçırdığına inanabiliyor musun? Hasta olduğunu söylüyor. Hiç hasta bir Novakid gördün mü?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/11",
+      "en": "Stupid. Hi. Where am I?",
+      "tr": "Aptal. Selam. Ben neredeyim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/12",
+      "en": "Curious. Ever had a feeling of Deja Vu? I swear I served you earlier...yet here you are now.",
+      "tr": "Meraklı. Hiç dejavu yaşadın mı? Yemin ederim sana az önce servis yaptım... ama şimdi yine buradasın.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/13",
+      "en": "Curious. Are you an art student like me?",
+      "tr": "Meraklı. Sen de benim gibi sanat öğrencisi misin?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/14",
+      "en": "Sarcastic. A degree in fine arts is perfectly valid career choice that will not end in working here.",
+      "tr": "Alaycı. Güzel sanatlar diploması, insanı burada çalışmaya mahkûm etmeyecek kadar geçerli bir kariyer tercihidir.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/15",
+      "en": "Curious. I wonder why we stopped getting orders from the folks at that Delta Freya research base? They were *fiends* for this stuff!",
+      "tr": "Meraklı. Delta Freya araştırma üssündekilerden neden artık sipariş almadığımızı merak ediyorum. Bu şeyin *müptelasıydılar*!",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/16",
+      "en": "Raging. I am going to strangle the next ^red;@$#@^reset; that says their order is wrong when they placed it via the ^red;@$#@^reset; app! Honestly. Sorry, what can I get you?",
+      "tr": "Kudurmuş. Siparişini ^red;@$#@^reset; uygulamadan verdiği hâlde yanlış olduğunu söyleyen bir sonraki ^red;@$#@^reset; kişiyi boğacağım! Cidden. Özür dilerim, sana ne verebilirim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/17",
+      "en": "^yellow;*horrible trendy pop music plays*^reset;",
+      "tr": "^yellow;*korkunç, moda bir pop şarkısı çalar*^reset;",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/18",
+      "en": "Sarcastic. *sigh* I'm sworn to carry your burdens...",
+      "tr": "Alaycı. *iç çeker* Yüklerini taşımaya yemin ettim...",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/19",
+      "en": "Casual. I used to be an adventurer like you. But then I took an arrow to the knee.",
+      "tr": "Rahat. Ben de eskiden senin gibi maceracıydım. Sonra dizime bir ok yedim.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/20",
+      "en": "Casual. Let me guess: Someone stole your sweetroll?",
+      "tr": "Rahat. Dur tahmin edeyim: Tatlı çöreğini biri mi çaldı?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/21",
+      "en": "Angry. It is 5 minutes till closing and they won't let me close the till.",
+      "tr": "Öfkeli. Kapanışa 5 dakika kaldı ama kasayı kapatmama izin vermiyorlar.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/22",
+      "en": "Devious. Do you think anyone will notice the taste of motor oil in their coffee? I feel an 'accident' coming on...",
+      "tr": "Sinsi. Kahvesindeki motor yağı tadını fark eden olur mu sence? Bir 'kaza' yaklaşıyor gibi...",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/23",
+      "en": "Confused. Why would you want to pay these prices? Honestly...I'm truly curious if people are this stupid or if its just convenience?",
+      "tr": "Şaşkın. Bu fiyatları neden ödemek isteyesin ki? Cidden... İnsanlar bu kadar aptal mı, yoksa tek sebep kolaylık mı, gerçekten merak ediyorum.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/24",
+      "en": "Sarcastic. I've made sure the coffee is bugfreebugfreebugfree ^red;--ERROR RECOVERED--^reset; May I take your order?",
+      "tr": "Alaycı. Kahvenin böceksizböceksizböceksiz olduğundan emin oldum ^red;--HATA DÜZELTİLDİ--^reset; Siparişini alabilir miyim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/25",
+      "en": "Cheerful. I've pre-bent this coffee for you.",
+      "tr": "Neşeli. Bu kahveyi senin için önceden büktüm.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/26",
+      "en": "Cheerful. How do you take it? Double-double? Bent? Square?",
+      "tr": "Neşeli. Nasıl alırsın? Duble duble? Bükülmüş? Kare?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/27",
+      "en": "Elated. Management said they would consider my cubed coffee concept.",
+      "tr": "Coşkulu. Yönetim, küp kahve fikrimi değerlendireceklerini söyledi.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/28",
+      "en": "Silly. Want to hear me make armpit farts?",
+      "tr": "Şapşal. Koltuk altımla osurma sesi çıkarmamı ister misin?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/29",
+      "en": "Whimsical. I can create the greatest coffee art in the universe using only my dipstick. Want to see?",
+      "tr": "Tuhaf. Yalnızca seviye çubuğumu kullanarak evrendeki en iyi kahve sanatını yapabilirim. Görmek ister misin?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/30",
+      "en": "Mathmatical. I had to use a straightedge to get the fold on the coffee right.",
+      "tr": "Matematiksel. Kahvenin kıvrımını düzgün yapmak için cetvel kullanmak zorunda kaldım.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/31",
+      "en": "Annoyed. I am not naturally gold in color. Management insisted I get a paint job to show they also hire minorities. Scummy.",
+      "tr": "Rahatsız. Doğal rengim altın değil. Yönetim, azınlıkları da işe aldıklarını göstermek için boyanmamda ısrar etti. Rezillik.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/32",
+      "en": "Confused. Wh.... wh.. where did my portable Snarsher go? Oh. Hi. What can I get you?",
+      "tr": "Şaşkın. Taş... taşınabilir Snarsher'ım nereye gitti? Aa, selam. Sana ne verebilirim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/33",
+      "en": "Annoyed. Some dipstick stuck their dipstick in the coffee before I could.",
+      "tr": "Rahatsız. Bir geri zekâlı, ben yapamadan seviye çubuğunu kahveye soktu.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/34",
+      "en": "Curious. I tried social lubrication once, but it only seemed to scare people.",
+      "tr": "Meraklı. Bir kez sosyal yağlama denedim ama insanları korkutmaktan başka işe yaramadı.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/35",
+      "en": "Surveying. Do you take your bloody meat coffee with or without the eyes?",
+      "tr": "İnceleyen. Kanlı et kahveni gözlü mü, gözsüz mü alırsın?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/36",
+      "en": "Excited. A customer. What can I get you? ........ Hi. Welcome. Can I take your order? .... wait. Who am I?",
+      "tr": "Heyecanlı. Bir müşteri. Sana ne verebilirim? ........ Selam. Hoş geldin. Siparişini alabilir miyim? .... dur. Ben kimim?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/37",
+      "en": "Informative. If you force-feed a human cake and coffee non-stop for approximately 1 year they will gain between 12kg and 64kg pounds depending on volume consumed.",
+      "tr": "Bilgilendirici. Bir insanı yaklaşık 1 yıl boyunca durmadan pasta ve kahveyle zorla beslersen tükettiği miktara bağlı olarak 12kg ile 64kg arasında kilo alır.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/38",
+      "en": "Angry. I can heat the beans to optimum tempature, but management says my deposit method would turn off customers. What's wrong with thermic exhaust liquid process?",
+      "tr": "Öfkeli. Çekirdekleri ideal sıcaklığa getirebilirim ama yönetim boşaltım yöntemimin müşterileri kaçıracağını söylüyor. Termik egzoz sıvısı işleminde ne varmış?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/39",
+      "en": "Curious. What is your favorite flavor: Vegetable? Meat? Bike? We carry goods catered to all diet types. Except mine. So, no bikes. @%$#ing management.",
+      "tr": "Meraklı. En sevdiğin tat hangisi: Sebze mi? Et mi? Bisiklet mi? Her beslenme türüne uygun ürünümüz var. Benimki hariç. Yani bisiklet yok. @%$# yönetim.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/40",
+      "en": "Proud. As a barista, I can safely say I have mastered the art of flavor. I gave my last customer a free shot of Polonium Syrup. They asked for a remake.",
+      "tr": "Gururlu. Bir barista olarak lezzet sanatında ustalaştığımı rahatlıkla söyleyebilirim. Son müşterime bedava bir ölçek Polonyum Şurubu verdim. Yeniden yapmamı istedi.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/41",
+      "en": "Confused. Nobody has tried the Radium Foam option.",
+      "tr": "Şaşkın. Radyum Köpüğü seçeneğini kimse denemedi.",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/42",
+      "en": "Surprised. You are actually going to pay these prices, willingly, without any encouragement from our marketing department?",
+      "tr": "Şaşkın. Bu fiyatları pazarlama bölümümüzün hiçbir teşviki olmadan gerçekten kendi isteğinle mi ödeyeceksin?",
+      "section": "v0.18 Bilim Karakolu"
+    },
+    {
+      "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+      "pointer": "/chatOptions/43",
+      "en": "Queried. Kevin? He does make the sandwiches, yes. His McChitin is a crunchy dream.",
+      "tr": "Sorgulayan. Kevin mı? Evet, sandviçleri o hazırlıyor. McChitin'i çıtır çıtır bir rüya.",
+      "section": "v0.18 Bilim Karakolu"
     }
   ]
 }

@@ -402,3 +402,17 @@
 - `objects/crafting/pethealingstation/pethealingstationauto.object` kaynağındaki **For broken robots** altyazısı nesnenin adı ve açıklamasıyla çeliştiği için **Yaralı evcil hayvanlar için** olarak düzeltildi ve regresyon guard'ına bağlandı.
 - Yeni alanların **295/295'i pinned FU 6.5.8 kaynağıyla exact doğrulandı**; proje toplamı 2449 structured + 15 Lua / 453 patch asset oldu.
 - Bu sonuç FU'nun bütün eşya ve nesne klasörlerinin tamamlandığı anlamına gelmez; oyun içi LQA ve diğer klasörlerin kapsam taraması sürer.
+
+## 2026-09-20 - v0.18 İşlevsel Power, Bees ve Science Outpost nesneleri
+
+- Daha önce çevrilmemiş 57 aday `.object` dosyası yalnız klasör varlığına göre değil; tarif, araştırma, dükkân, görev ve Tiled dungeon yerleşimleri üzerinden runtime'da denetlendi.
+- Erişilebilir kapsam **47 asset / 340 görünür alan** olarak belirlendi: Power 15 asset/59 alan, Bees 17 asset/142 alan, Science Outpost 15 asset/139 alan.
+- Aşağıdaki 10 asset için gerçek kullanım bağlantısı bulunmadı ve dağıtıma alınmadı: `fu_solararrayscienceoutpost`, `fu_upgrade`, `makeshiftreactor2`, `scentedalveary`, `scentedapiary`, `deeponegame`, `moonlitcomet2`, `scienceoutpostbanner2`, `scienceoutpostbanner3`, `scienceoutpostbanner4`.
+- `fu_upgrade` yalnız kullanılmayan bir tileset tanımı ve kaynakta açıkça kırık/geliştirme artığı olduğunu belirten metinler içerir. `scentedalveary` yalnız yorum satırındaki blueprint kaydında, `scentedapiary` ile bazı bannerlar ise kullanılmayan tileset tanımlarında geçer. Bu tür tanımlar erişilebilirlik kanıtı sayılmadı.
+- Standart ad/açıklama/ırk incelemesi alanlarına ek olarak `fu_rechargesensor` ve `fu_weatherbeacon` runtime etiketleri ile Vinalisj, Danışma Noktası ve Starbucks `chatOptions` havuzları oyuncuya görünür kabul edildi.
+- Kaynaktaki boş `gnomefactory/subtitle` teknik olarak görünür bir değer üretmediği için yamaya eklenmedi. Özel ürün/kişi adları Burger Fool, SuperPet, Vinalisj, Infinity Express ve Starbucks korunurken açıklamaları Türkçeleştirildi.
+- Power Relay -> **Güç Rölesi**, Field Generator -> **Alan Jeneratörü**, Nocturn Array -> **Gece Dizisi**, Weather Beacon -> **Hava İstasyonu**, Gnome Workshop -> **Gnom Atölyesi**, Honey Extractor -> **Bal Özütleyici**, Info Booth -> **Danışma Noktası** olarak kilitlendi.
+- Derleyiciye `%s`, `%%` ve diğer printf biçim belirteçlerinin birebir korunması için yeni kontrol eklendi. Starbound'un alıntılı metin içindeki ham satır sonlarını kabul eden assetleri `strict=False` ile parse edilerek artık full-source simülasyona giriyor.
+- Geriye dönük full-source taramasında FU'nun `orange.consumable` açıklamasının vanilla tabandan farklı olduğu saptandı. Kaynak kilidi gerçek FU değeri olan `It's an orange. ^green;Type: Plant^reset;` ile düzeltildi; iki alan pinned FU provenansına taşındı.
+- Yeni alanların **340/340'ı pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Proje toplamı **2789 structured + 15 Lua / 500 patch asset**; provenans **2701 pinned FU + 88 layered/external**, izlenmeyen alan **0**.
+- Oyun içi font, panel taşması, etkileşim ve bağlam LQA'sı ayrıca bekliyor.

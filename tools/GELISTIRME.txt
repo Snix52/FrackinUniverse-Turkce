@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.17.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.18.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  2449 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  2789 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görev/hedefleri ve v0.17 objects/crafting allowlist'ini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görev/hedefleri + v0.17 objects/crafting ve v0.18 işlevsel Power/Bees/Science Outpost allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -283,3 +283,22 @@ v0.17 üretim makineleri QA:
   toplam patch asset: 453
   objects/crafting seçili görünür kapsamı: 84/84 asset TAMAMLANDI
   diğer eşya/nesne klasörleri ve oyun içi LQA: BEKLİYOR
+
+v0.18 işlevsel nesneler QA:
+  aday klasörler: objects/power + objects/bees + objects/scienceoutpost
+  daha önce çevrilmemiş aday: 57 asset
+  runtime erişilebilir: 47 asset
+  ölü/bağlantısız: 10 asset (dağıtım dışı + build guard)
+  Power: 15 asset / 59 alan
+  Bees: 17 asset / 142 alan
+  Science Outpost: 15 asset / 139 alan
+  v0.18 toplam ekleme: 340 structured alan / 47 patch asset
+  pinned FU exact-source: 340/340 PASS
+  patch pairing: 340 test + 340 replace PASS
+  printf placeholder bütünlüğü (%s / %%): PASS
+  ham satır sonlu Starbound JSON kaynak simülasyonu: PASS
+  kaynak/provenans toplamı: 2701 pinned FU + 88 layered/external; 0 izlenmeyen
+  proje toplamı: 2789 structured + 15 Lua = 2804 görünür birim
+  toplam patch asset: 500
+  toplam hedef asset: 501 (500 patch + 1 ham Lua override)
+  oyun içi font/panel/etkileşim LQA: BEKLİYOR

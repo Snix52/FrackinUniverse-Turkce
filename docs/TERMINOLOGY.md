@@ -387,3 +387,33 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Crystal Loom | Üretim makinesi | Nesne | Kristal Dokuma Tezgâhı | Kristal Tezgâh | LOCKED | |
 | Weapon Shuffler | Üretim makinesi | Nesne | Silah Karıştırıcı | Silah Rastgeleştirici | LOCKED | |
 | Hyper Compressor | Üretim makinesi | Nesne | Hiper Sıkıştırıcı | Aşırı Kompresör | LOCKED | |
+
+## v0.18 Power / Bees / Science Outpost nesne terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Power Relay | Güç ağı nesnesi | Nesne | Güç Rölesi | Güç Aktarıcı | LOCKED | |
+| Field Generator | Güç nesnesi | Nesne | Alan Jeneratörü | Saha Üreteci | LOCKED | |
+| Nocturn Array | Karanlık enerji üretimi | Nesne | Gece Dizisi | Nocturn Dizisi | LOCKED | Weather Beacon etiketiyle eşlendi |
+| Power Sensor | Güç ağı sensörü | Nesne | Güç Sensörü | Enerji Sensörü | LOCKED | |
+| Large Power Sensor | Güç ağı sensörü | Nesne | Büyük Güç Sensörü | Geniş Güç Sensörü | LOCKED | |
+| Empty Batteries Sensor | Güç ağı sensörü | Nesne | Boş Pil Sensörü | Bitik Pil Sensörü | LOCKED | |
+| Weather Beacon | Işık/rüzgâr ölçüm cihazı | Nesne | Hava İstasyonu | Hava Feneri | LOCKED | İşlevi esas alan oyuncu adı |
+| Gnome Workshop | Üretim nesnesi | Nesne | Gnom Atölyesi | Cüce Atölyesi | LOCKED | Gnome, dwarf/cüceden ayrı FU varlığıdır |
+| Entropic Converter | Atmosfer makinesi | Nesne | Entropik Dönüştürücü | Entropi Çevirici | LOCKED | |
+| Warped Regulator | Atmosfer makinesi | Nesne | Çarpıtılmış Düzenleyici | Bükülmüş Regülatör | LOCKED | |
+| Simple Battery | Güç depolama | Nesne | Basit Pil | Basit Batarya | LOCKED | |
+| Incinerator | İmha makinesi | Nesne | İmha Fırını | Yakma Makinesi | LOCKED | |
+| Mass Incinerator | İmha makinesi | Nesne | Toplu İmha Fırını | Büyük Yakma Makinesi | LOCKED | |
+| Large Network Terminal | Eşya ağı terminali | Nesne | Büyük Ağ Terminali | Geniş Ağ Terminali | LOCKED | |
+| Aromatic Candle | Arıcılık dekoru | Nesne | Aromatik Mum | Kokulu Mum | LOCKED | Flower Candle ailesinin oyuncu adı |
+| Ghostly Candle | Arıcılık dekoru | Nesne | Hayalet Mum | Ruhani Mum | LOCKED | |
+| Honey Cooking Table | Arıcılık/yemek makinesi | Nesne | Bal Pişirme Tezgâhı | Ballı Yemek Masası | LOCKED | |
+| Honey Extractor | Arıcılık makinesi | Nesne | Bal Özütleyici | Bal Çıkarıcı | LOCKED | Honey Jarring Machine'den ayrı nesne |
+| Lab Bookcase | Bilim Karakolu mobilyası | Nesne | Laboratuvar Kitaplığı | Laboratuvar Rafı | LOCKED | |
+| Info Booth | Bilim Karakolu danışma NPC nesnesi | Nesne | Danışma Noktası | Bilgi Kulübesi | LOCKED | |
+| Vina Plushy | Bilim Karakolu dekoru | Nesne | Vina Pelüşü | Vina Pelüş Oyuncağı | LOCKED | |
+| Munchies' Dirt | Radien dükkân nesnesi | Nesne | Munchies'in Toprağı | Munchies Toprağı | LOCKED | Munchies özel adı korunur |
+| Lab Directory | Bilim Karakolu ipucu / makine | Nesne | Laboratuvar Dizini | Laboratuvar Rehberi | LOCKED | Yakındaki makine çıktısı arama işlevi |
+| Meatvine | FU bitkisi | Nesne | Et Sarmaşığı | Et Asması | LOCKED | Danışma Noktası ipucuyla standartlaştırıldı |
+| Darklight Flower | FU bitkisi | Nesne | Karanlık Işık Çiçeği | Karanlıkışık Çiçeği | LOCKED | |

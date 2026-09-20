@@ -12,6 +12,7 @@ from pathlib import Path, PurePosixPath
 COLOR=re.compile(r'\^[^;\s]*;')
 CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
+PRINTF=re.compile(r'%(?:\d+\$)?[-+0#]*(?:\d+|\*)?(?:\.\d+|\.\*)?(?:hh|h|ll|l|L|z|j|t)?[diuoxXfFeEgGaAcspn%]')
 ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 LOWERCASE_MECH=re.compile(r'\bmech\b')
 
@@ -48,6 +49,96 @@ SCIENCE_EXTERNAL_QUEST_ASSETS = {
     'quests/fu_questlines/deprecated/fuquest_battery.questtemplate',
     'quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate'
 }
+
+# v0.18: objects/power, objects/bees ve objects/scienceoutpost altındaki 57
+# aday runtime tarifleri, araştırma düğümleri, dükkânlar ve Tiled yerleşimleriyle
+# denetlendi. Aşağıdaki 47 asset gerçekten erişilebilir; kalan 10 asset bilinçli
+# olarak dışarıda tutulur.
+V018_OBJECT_ASSETS = {
+    'objects/power/fu_conduit/fu_conduit.object',
+    'objects/power/fu_fieldgenerator/fieldgen.object',
+    'objects/power/fu_nocturnarray/fu_nocturnarray.object',
+    'objects/power/fu_powersensorlarge/fu_powersensorlarge.object',
+    'objects/power/fu_rechargesensor/fu_rechargesensor.object',
+    'objects/power/fu_rockcrusher/fu_rockcrusher.object',
+    'objects/power/fu_weatherbeacon/fu_weatherbeacon.object',
+    'objects/power/gnomefactory/gnomefactory.object',
+    'objects/power/isn_atmoscondenser/isn_atmoscondensermadness.object',
+    'objects/power/isn_atmosregulator/isn_atmosregulatorwarped.object',
+    'objects/power/isn_battery_t0/isn_battery_t0.object',
+    'objects/power/isn_incinerator/isn_incinerator.object',
+    'objects/power/isn_powersensor/isn_powersensor.object',
+    'objects/power/isn_radiostation/isn_radiostationnew.object',
+    'objects/power/massincinerator/massincinerator.object',
+    'objects/bees/candle/bluecandle.object',
+    'objects/bees/candle/bluecandledouble.object',
+    'objects/bees/candle/bluecandletriple.object',
+    'objects/bees/candle/flowercandle.object',
+    'objects/bees/candle/flowercandledouble.object',
+    'objects/bees/candle/flowercandletriple.object',
+    'objects/bees/candle/ghostcandle.object',
+    'objects/bees/candle/ghostcandledouble.object',
+    'objects/bees/candle/ghostcandletriple.object',
+    'objects/bees/candle/redcandle.object',
+    'objects/bees/candle/redcandledouble.object',
+    'objects/bees/candle/redcandletriple.object',
+    'objects/bees/candle/waxcandle.object',
+    'objects/bees/candle/waxcandledouble.object',
+    'objects/bees/candle/waxcandletriple.object',
+    'objects/bees/honeycooking/honeytable.object',
+    'objects/bees/honeyextractor/honeyextractor.object',
+    'objects/scienceoutpost/burgerfool/burgerfool.object',
+    'objects/scienceoutpost/fupetshop/fupetshop.object',
+    'objects/scienceoutpost/guidestorage/guidestorage.object',
+    'objects/scienceoutpost/moonlit_comet/moonlitcomet.object',
+    'objects/scienceoutpost/moonlit_comet/vina_plush.object',
+    'objects/scienceoutpost/radienshopdrug/drugdealer.object',
+    'objects/scienceoutpost/roses/rosebushlarge.object',
+    'objects/scienceoutpost/roses/rosebushlarge_box.object',
+    'objects/scienceoutpost/roses/rosebushmed.object',
+    'objects/scienceoutpost/roses/rosebushmed_box.object',
+    'objects/scienceoutpost/roses/rosebushsmall.object',
+    'objects/scienceoutpost/roses/rosebushsmall_box.object',
+    'objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object',
+    'objects/scienceoutpost/scienceoutpostbanner1/scienceoutpostbanner1.object',
+    'objects/scienceoutpost/starbucks/fustarbucks.object',
+}
+
+V018_DEAD_OBJECT_ASSETS = {
+    'objects/power/fu_solararrayscienceoutpost/fu_solararrayscienceoutpost.object',
+    'objects/power/fu_upgrade/fu_upgrade.object',
+    'objects/power/makeshiftreactor/makeshiftreactor2.object',
+    'objects/bees/scentedalveary/scentedalveary.object',
+    'objects/bees/scentedapiary/scentedapiary.object',
+    'objects/scienceoutpost/game/deeponegame.object',
+    'objects/scienceoutpost/moonlit_comet/moonlitcomet2.object',
+    'objects/scienceoutpost/scienceoutpostbanner2/scienceoutpostbanner2.object',
+    'objects/scienceoutpost/scienceoutpostbanner3/scienceoutpostbanner3.object',
+    'objects/scienceoutpost/scienceoutpostbanner4/scienceoutpostbanner4.object',
+}
+
+V018_CHAT_OPTION_ASSETS = {
+    'objects/scienceoutpost/moonlit_comet/moonlitcomet.object',
+    'objects/scienceoutpost/scienceinfobooth/scienceinfobooth.object',
+    'objects/scienceoutpost/starbucks/fustarbucks.object',
+}
+
+def v018_object_pointer(a,p):
+    if p in ('/shortdescription','/description','/subtitle'):
+        return True
+    if re.fullmatch(r'/[A-Za-z0-9_]+Description',p):
+        return True
+    if re.fullmatch(r'/interactData/paneLayoutOverride/(windowtitle/(title|subtitle)|lbl(Title|SubTitle)/value)',p):
+        return True
+    if a=='objects/power/fu_rockcrusher/fu_rockcrusher.object' and p=='/category':
+        return True
+    if a=='objects/power/fu_rechargesensor/fu_rechargesensor.object':
+        return bool(re.fullmatch(r'/chatStrings/(noBatteries|tooltip|statusOn|statusOff)',p))
+    if a=='objects/power/fu_weatherbeacon/fu_weatherbeacon.object':
+        return bool(re.fullmatch(r'/chatStrings/(solarPanel|solarArray|solarTower|nocturnArray|windTurbine)',p))
+    if a in V018_CHAT_OPTION_ASSETS:
+        return bool(re.fullmatch(r'/chatOptions/\d+',p))
+    return False
 
 OUTPOST_SHOP_QUEST_ASSETS = {
     'quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate',
@@ -216,12 +307,16 @@ def parse_jsonc(text):
             while j<len(clean) and clean[j].isspace():j+=1
             if j<len(clean) and clean[j] in ']}':i+=1;continue
         out.append(c);i+=1
-    return json.loads(''.join(out))
+    # Starbound bazı assetlerde alıntılı metinlerin içinde ham satır sonlarına
+    # izin veriyor; strict=False bu motor-tarafı biçimi kaynak kilidiyle okur.
+    return json.loads(''.join(out),strict=False)
 
 def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V018_OBJECT_ASSETS:
+        return v018_object_pointer(a,p)
     if a in V017_CRAFTING_ASSETS:
         return v017_crafting_pointer(p)
     if a=='zb/researchTree/data.config':
@@ -583,6 +678,7 @@ def main():
         if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:raise ValueError('Güvensiz asset yolu: '+a)
         if (a,p) in seen:raise ValueError('Yinelenen alan: '+a+p)
         seen.add((a,p))
+        if a in V018_DEAD_OBJECT_ASSETS:raise ValueError('Runtime bağlantısı olmayan v0.18 nesnesi: '+a)
         if not allowed(a,p):raise ValueError('Oyuncu metni olmayan alan: '+a+p)
         if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
         if a in NONVISIBLE_QUEST_ASSETS:raise ValueError('Aktif görev zincirine bağlı olmayan/kırık görev: '+a)
@@ -598,6 +694,8 @@ def main():
             colorfix+=1
         if Counter(CONTROL.findall(r['en']))!=Counter(CONTROL.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_control_fix'):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
+        if Counter(PRINTF.findall(r['en']))!=Counter(PRINTF.findall(r['tr'])):
+            raise ValueError('Printf yer tutucusu uyuşmazlığı: '+a+p)
         if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
         groups[a].append(r)
 
@@ -613,13 +711,7 @@ def main():
         if args.source_dir:
             source=args.source_dir/a
             if source.is_file():
-                if all(r.get('qa',{}).get('raw_source_value_guard') for r in rs):
-                    source_text=source.read_text(encoding='utf-8-sig')
-                    for r in rs:
-                        if source_text.count(r['en'])<1:
-                            raise ValueError('Ham JSON kaynak değeri bulunamadı: '+a+r['pointer'])
-                else:
-                    simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
             elif all(r.get('qa',{}).get('layered_source') for r in rs):
                 # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
                 # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
@@ -658,10 +750,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim Makineleri (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + İşlevsel Nesneler (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri ve objects/crafting üretim makinelerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, objects/crafting üretim makineleri ve seçili işlevsel Power/Bees/Science Outpost nesnelerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

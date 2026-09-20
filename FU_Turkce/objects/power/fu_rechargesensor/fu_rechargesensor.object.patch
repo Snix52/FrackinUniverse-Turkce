@@ -1,0 +1,62 @@
+[
+  {
+    "op": "test",
+    "path": "/description",
+    "value": "Starts sending ^green;ON^reset; signal if all batteries are less than 10% full. Doesn't stop sending ^green;ON^reset; signal until all batteries become completely full. Knows about all batteries on this power conduit.\n^cyan;Useful for turning the reactors On/Off.^reset;"
+  },
+  {
+    "op": "test",
+    "path": "/shortdescription",
+    "value": "Empty Batteries Sensor"
+  },
+  {
+    "op": "test",
+    "path": "/chatStrings/noBatteries",
+    "value": "No batteries found."
+  },
+  {
+    "op": "test",
+    "path": "/chatStrings/tooltip",
+    "value": "Found batteries: ^green;%s^reset; (^yellow;%s%%^reset; full)\nCurrent state: %s."
+  },
+  {
+    "op": "test",
+    "path": "/chatStrings/statusOn",
+    "value": "^green;ON^reset; (needs charging) until all batteries become ^yellow;%s%%^reset; full"
+  },
+  {
+    "op": "test",
+    "path": "/chatStrings/statusOff",
+    "value": "^red;OFF^reset; (doesn't need charging) until all batteries are less than ^yellow;%s%%^reset; full"
+  },
+  {
+    "op": "replace",
+    "path": "/description",
+    "value": "Tüm pillerin doluluk oranı %10'un altına düştüğünde ^green;AÇIK^reset; sinyali göndermeye başlar. Tüm piller tamamen dolana kadar ^green;AÇIK^reset; sinyali göndermeyi sürdürür. Bu güç hattındaki bütün pilleri algılar.\n^cyan;Reaktörleri açıp kapatmak için kullanışlıdır.^reset;"
+  },
+  {
+    "op": "replace",
+    "path": "/shortdescription",
+    "value": "Boş Pil Sensörü"
+  },
+  {
+    "op": "replace",
+    "path": "/chatStrings/noBatteries",
+    "value": "Pil bulunamadı."
+  },
+  {
+    "op": "replace",
+    "path": "/chatStrings/tooltip",
+    "value": "Bulunan piller: ^green;%s^reset; (^yellow;%s%%^reset; dolu)\nMevcut durum: %s."
+  },
+  {
+    "op": "replace",
+    "path": "/chatStrings/statusOn",
+    "value": "Tüm piller ^yellow;%s%%^reset; dolana kadar ^green;AÇIK^reset; (şarj gerekli)"
+  },
+  {
+    "op": "replace",
+    "path": "/chatStrings/statusOff",
+    "value": "Tüm pillerin doluluk oranı ^yellow;%s%%^reset; altına düşene kadar ^red;KAPALI^reset; (şarj gerekmiyor)"
+  }
+]

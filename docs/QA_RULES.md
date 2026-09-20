@@ -6,12 +6,14 @@ Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol öze
 - JSON/JSON Patch geçerli olmalı.
 - Yalnızca oyuncuya gösterilen alanlar değişmeli.
 - Teknik key, ID, asset yolu ve script referansı değiştirilmemeli.
-- Placeholder ve tuş kodları korunmalı.
+- Placeholder, printf biçim belirteçleri (`%s`, `%%` vb.) ve tuş kodları birebir korunmalı.
 - Renk kodu değişikliği yalnızca açıkça kaydedilmiş kaynak hatası düzeltmesinde kabul edilir.
 - Oyuncu metninde geçici İngilizce parantez glossu bırakılmamalı.
 - Türkçe karaktersiz ASCII sürümü üretilmemeli.
 - Terminoloji sözlüğündeki LOCKED kararlar ihlal edilmemeli.
 - Exact FU kaynak commitindeki tüm pointer ve İngilizce kaynak değerleri doğrulanmalı.
+- Aday nesnelerde salt dosya/tileset tanımı erişilebilirlik kanıtı sayılmamalı; tarif, araştırma, görev, dükkân veya gerçek Tiled yerleşimiyle runtime bağlantısı doğrulanmalı.
+- Starbound'un ham satır sonu içeren JSON benzeri assetleri de kaynak simülasyonundan kaçmamalı.
 
 ## LQA kapısı
 Statik QA geçse bile sürüm TAMAM sayılmaz. Oyunda:
