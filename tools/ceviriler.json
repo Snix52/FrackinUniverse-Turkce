@@ -3,7 +3,7 @@
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
   "translation_version": "0.13.3-beta",
-  "note": "v0.13.3 geriye dönük bağlam QA: Tutorial'da adı geçen Iron Centrifuge, görev metninde Demir Santrifüj olarak düzeltildi ve doğrudan hedef envanter nesnesinin 4 görünür alanı yerelleştirildi. Önceki v0.13.1/v0.13.2 QA düzeltmeleri korunuyor; oyun içi LQA bekliyor.",
+  "note": "v0.13.3 üçüncü geriye dönük QA: 3 runtime listTemplate dummy alanı çıkarıldı; vanilla/eldritch İngilizce sızıntıları temizlendi; Sifter tutorialındaki Loose Silt/Gravel hedefleri Gevşek Mil/Çakıl olarak envanterle eşlendi; Wooden Centrifuge yönlendirmesindeki Iron Centrifuge eksikliği Demir Santrifüj envanter nesnesinin 4 görünür alanı eklenerek kapatıldı. Toplam 1934 structured + 15 Lua / 325 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -10488,7 +10488,11 @@
       "pointer": "/completionText",
       "en": "While not incredibly effective, a ^orange;Wooden Centrifuge^reset; is able to process basic liquids and grind up honeycombs to get at the goodies inside. As soon as possible, upgrade to an ^orange;Iron Centrifuge^reset; for far more utility.",
       "tr": "Çok etkili olmasa da ^orange;Ahşap Santrifüj^reset; temel sıvıları işleyebilir ve bal peteklerini öğüterek içindekileri çıkarabilir. Mümkün olan en kısa sürede bunu çok daha kullanışlı bir ^orange;Demir Santrifüje^reset; yükselt.",
-      "section": "v0.9 Tutorial Görevleri"
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Kaynak completionText gerçek ironcentrifuge nesnesini 'Iron Centrifuge' adıyla yönlendiriyor; envanter nesnesi doğrulandı ve Demir Santrifüj olarak eşlendi."
+      }
     },
     {
       "asset": "quests/fu_questlines/tutorial/vinj/create_woodencentrifuge.questtemplate",
@@ -14278,28 +14282,28 @@
       "pointer": "/description",
       "en": "This powered upgrade of the wooden centrifuge more efficiently performs extraction involving liquids. ^cyan;Requires ^orange;4W ^cyan;power.^reset;",
       "tr": "Ahşap Santrifüjün elektrikle çalışan yükseltilmiş sürümüdür; sıvı içeren maddeleri daha verimli işler. ^cyan;^orange;4W ^cyan;güç gerektirir.^reset;",
-      "section": "v0.13.3 Geriye Dönük Hedefler"
+      "section": "v0.13.3 Retro QA Hedefleri"
     },
     {
       "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
       "pointer": "/shortdescription",
       "en": "^cyan;Iron Centrifuge^reset;",
       "tr": "^cyan;Demir Santrifüj^reset;",
-      "section": "v0.13.3 Geriye Dönük Hedefler"
+      "section": "v0.13.3 Retro QA Hedefleri"
     },
     {
       "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
       "pointer": "/subtitle",
       "en": "Powered Centrifuge",
       "tr": "Elektrikli Santrifüj",
-      "section": "v0.13.3 Geriye Dönük Hedefler"
+      "section": "v0.13.3 Retro QA Hedefleri"
     },
     {
       "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
       "pointer": "/category",
       "en": "^orange;Centrifuge^reset;",
       "tr": "^orange;Santrifüj^reset;",
-      "section": "v0.13.3 Geriye Dönük Hedefler"
+      "section": "v0.13.3 Retro QA Hedefleri"
     }
   ]
 }
