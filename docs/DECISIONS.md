@@ -277,3 +277,14 @@
 - `create_blackglass` başlangıç metni gerçek quest koşulundaki hedefi açık söylemiyordu; Türkçede Yüksek Fırında Obsidiyen eritip **Siyah Cam** elde etme hedefi açıklaştırıldı.
 - Siyah Cam vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı; ırk inceleme metinleri de aynı assette yerelleştirildi.
 - Mechanical yeni alanları **41/41 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **41 test + 41 replace PASS**.
+
+### v0.10 Physics geçişi
+
+- `fu_physics` quest-listindeki **4/4 görev** yerelleştirildi.
+- Physics görevleri **16 görünür görev alanı**; Protocite Külçesi, Trityum Çubuğu ve Işınlayıcı Çekirdeği hedeflerinde **6 görünür alan** olmak üzere toplam **22 yeni yapılandırılmış alan / 7 yeni patch asset** içeriyor.
+- Industrial Furnace -> **Endüstriyel Fırın**, Protocite Bar -> **Protocite Külçesi**, Tritium Rod -> **Trityum Çubuğu** LOCKED; Işınlayıcı Çekirdeği mevcut LOCKED kararına göre vanilla envanter assetinde de çevrildi.
+- `create_protocite` kaynak metnindeki **Fission Furnace** güncel değildir. Pinned `protocitebar` tarifi `craftingfurnace2` grubundadır; vanilla gerçek kademe adı **Industrial Furnace / Endüstriyel Fırın** olduğundan Türkçe görev gerçek üretim zincirine göre düzeltildi.
+- `create_tritium` kaynak metni Fisyon Reaktörü üretmeyi söylese de gerçek quest koşulu yalnız 1 `tritium` ister. Pinned Tritium tarifi `craftingfurnace3`, yani **Atomik Fırın** grubundadır. Türkçe görev gerçek hedefe göre düzeltildi.
+- Kaynak teslim metinlerinde adet yazmayan Protocite ve Trityum hedeflerinde gerçek quest koşulları olan **2** ve **1** açıkça gösterildi.
+- Işınlayıcı Çekirdeği vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
+- Physics yeni alanları **22/22 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **22 test + 22 replace PASS**.
