@@ -368,3 +368,15 @@
 - Kevin/Khe görevlerinin doğrudan andığı FU ve vanilla hedeflerin görünen envanter alanları aynı pakette çevrildi; İngilizce eşya adını bilme zorunluluğu kaldırıldı.
 - Yeni kapsam: **94 structured alan / 33 yeni patch asset**; kaynak/provenans **94/94 PASS** (84 pinned FU + 10 vanilla). Proje toplamı **2028 structured + 15 Lua / 358 patch asset**.
 - Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.15 Battle görevleri
+
+- Battle klasöründeki 13 ham görev, `zb/questList/data.config`, NPC `offeredQuests` / `turnInQuests` alanları ve takip referanslarıyla denetlendi.
+- `fu_gear` 6/6 ve `fu_monsters` 4/4 olmak üzere **10 erişilebilir görev** dağıtıma alındı.
+- `fuquest_gorgolith`, `fuquest_gorillaking` ve `fuquest_titan` hiçbir quest-list, NPC veya follow-up tarafından başlatılmıyor. Tüccar havuzundaki `prerequisiteQuest` kullanımları görev başlatmadığı için bu üç dosya bağlantısız legacy kabul edildi ve build guard'a eklendi.
+- **Battle -> Savaş**, **Gear -> Ekipman**, **Monsters and Villains -> Canavarlar ve Düşmanlar**, **[BOSS] -> [PATRON]** olarak kilitlendi.
+- Görev hedefleri gerçek kısa adlarla eşlendi: **Sıradan Şapka, Kol Topu, F4 Enerji Tüfeği, Lazer Tabancası, Çelik Savaş Kılıcı, Ferozium Satırı, Yadigâr Kalkanı, Anne Poptop Pençesi, Ağ Atıcı, Hiper Hedefleme Çipi**.
+- Mama Poptop görevinin generic **Poptop Claw** teslim metni, gerçek envanter adı **Mama Poptop Claw / Anne Poptop Pençesi** ile düzeltildi.
+- `plebiancap.questtemplate` kaynak metnindeki literal sekme standart JSON'a aykırı olduğundan üç görünür alan exact ham-kaynak guard ile doğrulanır.
+- Yeni kapsam: **64 structured alan / 20 yeni patch asset**; kaynak/provenans **64/64 pinned FU PASS**. Proje toplamı **2092 structured + 15 Lua / 378 patch asset**.
+- Oyun içi görev akışı, font ve panel taşma kontrolleri ayrıca bekliyor.

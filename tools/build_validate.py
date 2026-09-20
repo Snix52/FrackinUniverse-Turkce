@@ -30,7 +30,10 @@ NONVISIBLE_QUEST_ASSETS = {
     'quests/fu_questlines/tutorial/start_basics1.questtemplate',
     'quests/fu_questlines/science/chemistry/fuquest_dna.questtemplate',
     'quests/fu_questlines/science/chemistry/fuquest_mineral.questtemplate',
-    'quests/fu_questlines/outpost/bees/13mites.questtemplate'
+    'quests/fu_questlines/outpost/bees/13mites.questtemplate',
+    'quests/fu_questlines/battle/monsters/fuquest_gorgolith.questtemplate',
+    'quests/fu_questlines/battle/monsters/fuquest_gorillaking.questtemplate',
+    'quests/fu_questlines/battle/monsters/fuquest_titan.questtemplate'
 }
 
 SCIENCE_EXTERNAL_QUEST_ASSETS = {
@@ -150,7 +153,7 @@ def allowed(a,p):
     if a=='zb/researchTree/researchTree.config':
         return p in ('/gui/researchButton/caption','/gui/infoList/children/unlocksLabel/value','/gui/title/value','/gui/consumptionText/value')
     if a=='zb/questList/data.config':
-        return p in ('/strings/questlines/fu_sciences/title','/strings/questlines/fu_sciences/description','/strings/questlines/fu_kevin_tasks/title','/strings/questlines/fu_kevin_tasks/description','/strings/sublines/fu_kevin') or bool(re.fullmatch(r'/strings/sublines/fu_(physics|chemistry|electronics|genetics|mechanical)',p))
+        return p in ('/strings/questlines/fu_sciences/title','/strings/questlines/fu_sciences/description','/strings/questlines/fu_kevin_tasks/title','/strings/questlines/fu_kevin_tasks/description','/strings/sublines/fu_kevin','/strings/questlines/fu_battle/title','/strings/questlines/fu_battle/description','/strings/sublines/fu_monsters','/strings/sublines/fu_gear') or bool(re.fullmatch(r'/strings/sublines/fu_(physics|chemistry|electronics|genetics|mechanical)',p))
     if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config','zb/researchTree/fu_warcraft.config'):
         tree=PurePosixPath(a).stem
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
@@ -168,6 +171,8 @@ def allowed(a,p):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if (a.startswith('quests/fu_questlines/outpost/kevin_tasks/') or a.startswith('quests/fu_questlines/outpost/khe_stuff/')) and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
+    if a.startswith('quests/fu_questlines/battle/') and a.endswith('.questtemplate'):
+        return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription')
     if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
         return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='radiomessages/fu_quests.radiomessages':
@@ -303,6 +308,20 @@ def allowed(a,p):
     }
     if a in outpost_kevin_khe_assets:
         return p in ('/description','/shortdescription') or (a=='items/throwables/beebriefcase/fu_beebriefcasekevin.activeitem' and p=='/notOnPlanetMessage')
+    battle_target_assets={
+        'items/active/weapons/ranged/unique/theblackmarket/armcannon/armcannon.activeitem',
+        'items/active/weapons/ranged/unique/energyassault.activeitem',
+        'items/active/weapons/ranged/unique/laspistol.activeitem',
+        'items/active/weapons/melee/shortsword/hardenedsteelblade.activeitem',
+        'items/active/weapons/melee/broadsword/warcleaver.activeitem',
+        'items/armors/tier1/plebeian/mantizitier1.head',
+        'items/active/shields/furelicshield.activeitem',
+        'items/active/weapons/melee/axe/poptopclaw.activeitem',
+        'items/active/grapplinghooks/websnapper/websnapper.activeitem',
+        'items/augments/quest/warbotartifact.augment'
+    }
+    if a in battle_target_assets:
+        return p in ('/description','/shortdescription') or (a=='items/augments/quest/warbotartifact.augment' and p=='/augment/displayName')
     power_assets={
         'objects/power/isn_solarpanel/isn_solarpanel.object',
         'objects/power/fu_solararray/fu_solararray.object',
@@ -548,7 +567,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Görevler (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki, Arıcılık, Bilim Karakolu dükkânları ve Kevin/Khe görevlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki, Arıcılık, Bilim Karakolu dükkânları, Kevin/Khe ve Battle görevlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

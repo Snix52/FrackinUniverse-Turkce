@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.14.0-beta",
+  "translation_version": "0.15.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 2028,
+  "translated_display_fields": 2092,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 2043,
-  "patched_assets": 358,
+  "total_localized_display_units": 2107,
+  "patched_assets": 378,
   "raw_override_assets": 1,
-  "target_assets_total": 359,
+  "target_assets_total": 379,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -43,21 +43,22 @@
     "v0.12 Outpost - Arıcılık": 78,
     "v0.13 Outpost Dükkân Görevleri": 48,
     "v0.13.3 Retro QA Hedefleri": 8,
-    "v0.14 Outpost - Kevin ve Khe": 94
+    "v0.14 Outpost - Kevin ve Khe": 94,
+    "v0.15 Battle": 64
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (2028/2028)",
+    "unique_paths": "PASS (2092/2092)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (current 2028-field catalog; inactive research, disconnected start_basics1, dead Science fuquest_dna/fuquest_mineral and dead Outpost 13mites rejected before patch generation)",
-    "source_mismatch_rejection_cases": 2028,
-    "source_mismatch_rejection": "PASS (2028 test-guarded structured fields)",
+    "fixture_application": "PASS (current 2092-field catalog; inactive research, disconnected start_basics1, dead Science fuquest_dna/fuquest_mineral, dead Outpost 13mites and disconnected Battle Gorgolith/War-Born/Wrexor Nar rejected before patch generation)",
+    "source_mismatch_rejection_cases": 2092,
+    "source_mismatch_rejection": "PASS (2092 test-guarded structured fields)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (1940/1940 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
+    "exact_source_pointer_validation": "PASS (2004/2004 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
     "agriculture_source_pointer_validation": "PASS (99/99 active fields)",
@@ -68,7 +69,7 @@
     "v05_new_source_pointer_validation": "PASS (216/216 active fields across 33 source assets)",
     "v05_build_allowlist": "PASS (216/216 active paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS (GitHub Actions run 35508618807)",
+    "build_allowlist_current_scope": "PASS (v0.15 catalog/tool static verification; GitHub Actions pending)",
     "craftsmanship_source_pointer_validation": "PASS (153/153 active tree fields; runtime-unused default pair and workbenchatechy excluded)",
     "craftsmanship_patch_pairing": "PASS (153 test + 153 replace)",
     "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
@@ -117,7 +118,14 @@
     "v12_outpost_bees_vanilla_source_validation": "PASS (6/6 independently verified vanilla fields)",
     "v12_outpost_bees_source_provenance": "PASS (78/78)",
     "v12_patch_pairing": "PASS (78 test + 78 replace across 31 new patch assets)",
-    "v12_build_allowlist": "PASS (78/78 new structured paths covered)"
+    "v12_build_allowlist": "PASS (78/78 new structured paths covered)",
+    "v15_battle_source_inventory": "PASS (13 source questtemplates = 10 reachable/localized + 3 disconnected legacy)",
+    "v15_battle_reachable_coverage": "PASS (10/10 reachable Battle quests)",
+    "v15_battle_dead_quest_guard": "PASS (fuquest_gorgolith, fuquest_gorillaking and fuquest_titan excluded and rejected by build guard)",
+    "v15_battle_pinned_fu_source_validation": "PASS (64/64)",
+    "v15_battle_source_provenance": "PASS (64/64)",
+    "v15_patch_pairing": "PASS (64 test + 64 replace across 20 new patch assets plus existing quest-list patch)",
+    "v15_build_allowlist": "PASS (64/64 new structured paths covered)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -147,7 +155,8 @@
     "v0.13.2: Bee Refuge mixed exchange verified: bee->money/material recipes coexist with money->bee-guide recipes; player action label normalized to neutral 'Takas Et'.",
     "v0.14 Kevin create_clothingfabricator: source Sewing Wheel guidance normalized to the actual Sewing Machine / Dikiş Makinesi crafting stage.",
     "v0.14 Kevin create_clothingfabricator3e: source average quality Brains turn-in normalized to actual brain item shortdescription Superior Brain / Üstün Beyin.",
-    "v0.14 Khe fabric: generic material prose normalized to exact gatherItem inventory names while preserving count 3."
+    "v0.14 Khe fabric: generic material prose normalized to exact gatherItem inventory names while preserving count 3.",
+    "v0.15 fuquest_mamapoptop: generic Poptop Claw turn-in normalized to actual item shortdescription Mama Poptop Claw / Anne Poptop Pençesi."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
@@ -184,8 +193,8 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.14 project total: 2028 structured fields. Provenance coverage is complete: 1940 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
-  "polish_pass": "PASS for v0.14 static Outpost Kevin/Khe scope: 13/13 live quest files, runtime connection checks, quest-condition clarifications and directly referenced inventory targets. In-game quest-flow/font/layout LQA remains pending.",
+  "full_source_validation": "v0.15 project total: 2092 structured fields. Provenance coverage is complete: 2004 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
+  "polish_pass": "PASS for v0.15 static Battle scope: 10/10 reachable quest files, 3 disconnected legacy files excluded, quest-list and directly referenced inventory targets aligned. In-game quest-flow/font/layout LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
     "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
@@ -322,6 +331,29 @@
     "localized_display_units_after_release": 2043,
     "patch_assets_after_release": 358,
     "target_assets_total": 359,
+    "in_game_lqa": "NOT PERFORMED"
+  },
+  "v015_scope": {
+    "battle_source_questtemplates": 13,
+    "reachable_battle_quests": 10,
+    "disconnected_legacy_quests": [
+      "quests/fu_questlines/battle/monsters/fuquest_gorgolith.questtemplate",
+      "quests/fu_questlines/battle/monsters/fuquest_gorillaking.questtemplate",
+      "quests/fu_questlines/battle/monsters/fuquest_titan.questtemplate"
+    ],
+    "quest_display_fields": 39,
+    "quest_list_fields": 4,
+    "linked_inventory_assets": 10,
+    "linked_inventory_fields": 21,
+    "added_structured_fields": 64,
+    "added_patch_assets": 20,
+    "pinned_fu_new_fields": 64,
+    "layered_external_new_fields": 0,
+    "source_provenance": "PASS (64/64)",
+    "structured_field_count_after_release": 2092,
+    "localized_display_units_after_release": 2107,
+    "patch_assets_after_release": 378,
+    "target_assets_total": 379,
     "in_game_lqa": "NOT PERFORMED"
   }
 }

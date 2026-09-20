@@ -76,7 +76,7 @@
       "url": "https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/radiomessages/fu_quests.radiomessages"
     }
   ],
-  "translation_version": "0.14.0-beta",
+  "translation_version": "0.15.0-beta",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "assets": {
     "zb/researchTree/fu_agriculture.config": "c5d1acc20ce35c8220cff577efb459c8b41ff54f",
@@ -412,9 +412,29 @@
     "items/generic/loot/mission/luckycoin_khe.item": "fa6ea4e6322f58b49dcd7bc57cfae332063eb1ae",
     "items/generic/loot/mission/temple_trophy_khe.item": "62085d24ad564aaf1d8024c0ff02eb46f27d146b",
     "items/armors/tier1/booster/kirhosbooster.chest": "25c54fba5fdae47ad253b866954ef48d9c7256a2",
-    "items/generic/crafting/algaegreen.item": "1e82cda82071324f70e7e5a175d3a9489585ceae"
+    "items/generic/crafting/algaegreen.item": "1e82cda82071324f70e7e5a175d3a9489585ceae",
+    "quests/fu_questlines/battle/gear/create_armcannon.questtemplate": "ff26a4fddb7decf259cece5377f9d223f967267a",
+    "quests/fu_questlines/battle/gear/create_energyassault.questtemplate": "51bf8d2041798ca6b8bc804a95c4e8df1dc6c0d7",
+    "quests/fu_questlines/battle/gear/create_laspistol.questtemplate": "017fbca8dc218f5b256166429eeefde73ee389ff",
+    "quests/fu_questlines/battle/gear/create_steelwarblade.questtemplate": "48aece0d99f75c5e47ad0e6b9c13d9eb54fc3a6b",
+    "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate": "159c3e58ecae28262d16b5b4d48a4888b1b6ad39",
+    "quests/fu_questlines/battle/gear/plebiancap.questtemplate": "de13dd99d687a5fe3a0f14df964435c2a6cc6ffe",
+    "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate": "20b4da4f20be2244635b6fd0a84f4dda5f386919",
+    "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate": "6d8d782e80a224d4bd9ca6ed0cc487059a1290ff",
+    "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate": "1e50fb2293c3dd84e14e315c6f8ae68e8e9027f0",
+    "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate": "3a64d7661018634b73585196e0791307bb4f5ef8",
+    "items/active/weapons/ranged/unique/theblackmarket/armcannon/armcannon.activeitem": "ab29de36d41c79ebb141bf1d8657f65c40444321",
+    "items/active/weapons/ranged/unique/energyassault.activeitem": "a790446c1b23a665a91504796f11c1b91740e16e",
+    "items/active/weapons/ranged/unique/laspistol.activeitem": "1226fd226da75167e0c1f3458605f8df04e169a2",
+    "items/active/weapons/melee/shortsword/hardenedsteelblade.activeitem": "7c7fd1ef697effbdba2509d75b379cd612d5a3f3",
+    "items/active/weapons/melee/broadsword/warcleaver.activeitem": "e4c026a1965f748fe246ec0e67545f0ee905f241",
+    "items/armors/tier1/plebeian/mantizitier1.head": "7ddcc7390c72838c7a4a8000401bfe22ab10ecc1",
+    "items/active/shields/furelicshield.activeitem": "35df00f4cfe951c0eb588cbcc38eced8f0b293e2",
+    "items/active/weapons/melee/axe/poptopclaw.activeitem": "ec3bb68657a7efe9677fddac403e6b70f7095fe7",
+    "items/active/grapplinghooks/websnapper/websnapper.activeitem": "351bfe889d0e961ade466b8c9135b7f040bf007c",
+    "items/augments/quest/warbotartifact.augment": "903ce8b66a47c053cdc48103ea8fe61cc78634cc"
   },
-  "validation_note": "v0.14 Outpost Kevin + Khe: 9 Kevin ve 4 Khe görevi runtime NPC/pickup bağlantılarıyla doğrulandı; görev listesi ve doğrudan bağlı envanter hedefleri dahil 94 yeni structured alan eklendi. Yeni kaynak/provenans 94/94 PASS (84 pinned FU + 10 vanilla); toplam 2028 structured + 15 Lua, 358 patch asset. Oyun içi LQA bekliyor.",
+  "validation_note": "v0.15 Battle: 13 ham görev runtime bağlantılarıyla denetlendi; quest-list/NPC üzerinden erişilebilir 10 görev, 4 Battle görev-listesi alanı ve 10 hedef envanter asseti dahil 64 yeni pinned-FU alan eklendi. Gorgolith, Apex War-Born ve Wrexor Nar görevleri hiçbir quest-list/NPC/follow-up bağlantısı taşımadığı için dağıtım dışı ve build guard altında. Yeni kaynak/provenans 64/64 PASS; toplam 2092 structured + 15 Lua, 378 patch asset. Oyun içi LQA bekliyor.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
