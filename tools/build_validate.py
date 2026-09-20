@@ -16,6 +16,10 @@ ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 
 # FU 6.5.8 pinned kaynağında strings.research altında dursa da aktif researchTree
 # düğümüne bağlı olmayan metinler. Oyuncuya görünmedikleri için yamaya alınmaz.
+NONVISIBLE_QUEST_ASSETS = {
+    'quests/fu_questlines/tutorial/start_basics1.questtemplate'
+}
+
 NONVISIBLE_RESEARCH_IDS = {
     'zb/researchTree/fu_geology.config': {'default','metals_tier7','metals_morphite','metals_nocxium','metals_plasmiccrystal','metals_diamond','metals_alloy5','metals_alloy6','isotopes6','terraforming1','terraforming2','terraforming3'},
     'zb/researchTree/fu_agriculture.config': {'default'},
@@ -233,6 +237,28 @@ def allowed(a,p):
         return p in ('/description','/shortdescription','/subtitle')
     if a=='interface/windowconfig/psionicbench.config':
         return p in ('/paneLayout/lblProduct/value','/paneLayout/btnCraft/caption','/paneLayout/btnStopCraft/caption','/paneLayout/filter/hint','/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value')
+    tutorial_target_simple_assets={
+        'items/armors/backitems/lanternstick/lanternstick.back',
+        'items/active/weapons/ranged/unique/miners/minertest/basicminertest.activeitem',
+        'items/generic/crafting/methanol.item',
+        'items/generic/crafting/fu_hydrogen.item',
+        'items/generic/crafting/ff_silicon.item',
+        'items/active/weapons/melee/spear/stonespear.activeitem',
+        'items/generic/mechparts/legs/mechlegssimpleupgrade.item',
+        'items/generic/mechparts/legs/mechlegssimpleupgrade2.item',
+        'items/active/unsorted/mechTablet/mechtablet.activeitem',
+        'items/active/unsorted/techtablet/techtablet.activeitem',
+        'items/tools/wiretoolfu.wiretool',
+        'objects/kheAA/kheAA_containerLink/kheAA_containerLink.object',
+        'items/generic/crafting/paper.item',
+        'items/generic/crafting/silverbar.item',
+        'items/liquids/oil.liqitem',
+        'objects/upgrade/techconsole/techconsole.object'
+    }
+    if a in tutorial_target_simple_assets:
+        return p in ('/description','/shortdescription')
+    if a in ('objects/power/fu_rockbreaker/fu_rockbreaker.object','objects/bees/woodencentrifuge/woodencentrifuge.object','objects/crafting/fu_woodensifter/fu_woodensifter.object'):
+        return p in ('/description','/shortdescription','/category')
     if a=='objects/crafting/armory/armory.object':
         return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
     if a=='objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object':
@@ -270,6 +296,7 @@ def main():
         seen.add((a,p))
         if not allowed(a,p):raise ValueError('Oyuncu metni olmayan alan: '+a+p)
         if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
+        if a in NONVISIBLE_QUEST_ASSETS:raise ValueError('Aktif görev zincirine bağlı olmayan/kırık görev: '+a)
         if 'İngilizce adı:' in r['tr']:raise ValueError('İngilizce fallback/gloss: '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
@@ -335,10 +362,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Ana Araştırma Sistemleri + Delilik (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Ana Araştırma Sistemleri + Delilik + Tutorial Görevleri (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma ağaçları ile Delilik/Metafizik sistemini ve doğrudan bağlı temel içerikleri kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik ve bağlı tutorial görev ailesini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

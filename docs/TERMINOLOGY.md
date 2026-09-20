@@ -205,3 +205,20 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Dimensional Phasing | Delilik araştırması | Kavram | Boyutsal Faz Geçişi | Boyutsal Fazlama | LOCKED | |
 | Psi-1/2/3/4 Energy | Psiyonik enerji zinciri | Kaynak | Psi-1/2/3/4 Enerjisi | Psi-X Energy | LOCKED | Kademe numarası korunur |
 
+| Lantern Stick | Tutorial / sırt ekipmanı | Nesne | Fener Çubuğu | Lantern Stick | LOCKED | |
+| Methanol | Kimyasal / tutorial hedefi | Kaynak | Metanol | Methanol | LOCKED | |
+| Primitive Spear | Avcılık tutorialı | Silah | İlkel Mızrak | Primitive Spear | LOCKED | |
+| Rock Breaker | Güç / taş işleme makinesi | Nesne | Kaya Parçalayıcı | Kaya Kırıcı | LOCKED | Rock Crusher = Kaya Kırıcı; iki makine karıştırılmaz |
+| Wooden Centrifuge | Tutorial / santrifüj | Nesne | Ahşap Santrifüj | Wooden Centrifuge | LOCKED | |
+| Sifter | Tutorial / işleme makinesi | Nesne | Elek | Sifter | LOCKED | Powder Sifter = Toz Eleği |
+| Stock Mech Legs | Mech parçası | Nesne | Standart Mech Bacakları | Stock Mech Legs | LOCKED | |
+| Improved Mech Legs | Mech parçası | Nesne | Geliştirilmiş Mech Bacakları | Improved Mech Legs | LOCKED | |
+| Mech Tablet | Tutorial aracı | Nesne | Mech Tableti | Mech Tablet | LOCKED | |
+| Tech Tablet | Tutorial aracı | Nesne | Tech Tableti | Tech Tablet | LOCKED | |
+| Mechanic's Wrench | Kablolama aracı | Nesne | Tamirci Anahtarı | Mechanic's Wrench | LOCKED | |
+| Storage Bridge | Eşya ağı nesnesi | Nesne | Depolama Köprüsü | Storage Bridge | LOCKED | |
+| Tech Console | Vanilla/FU tutorial | Nesne | Tech Konsolu | Tech Console | LOCKED | vanilla kaynak doğrulandı |
+| Paper | Vanilla tutorial hedefi | Kaynak | Kağıt | Paper | LOCKED | |
+| Silver Bar | Vanilla tutorial hedefi | Kaynak | Gümüş Külçesi | Silver Bar | LOCKED | |
+| Oil | Vanilla tutorial hedefi | Kaynak | Yağ | Oil | LOCKED | liquidoil |
+
