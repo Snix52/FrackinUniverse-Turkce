@@ -173,6 +173,20 @@ def allowed(a,p):
     }
     if a in science_electronics_assets:
         return p in ('/description','/shortdescription')
+    science_genetics_assets={
+        'objects/farmables/miraclegrassseed/miraclegrassseed.object',
+        'objects/farmables/brackentree/brackentreeseed.object',
+        'objects/farmables/mutavisk/mutaviskseed.object',
+        'objects/farmables/oonfortaseed/oonfortaseed.object',
+        'objects/farmables/ignuschili/ignuschiliseed.object',
+        'items/armors/tier3/mutaviskarmor/mutavisk.head',
+        'items/generic/produce/guam.consumable',
+        'objects/farmables/thornitoxplant/thornitoxseed.object'
+    }
+    if a in science_genetics_assets:
+        return p in ('/description','/shortdescription')
+    if a=='objects/crafting/clonelab/clonelab.object':
+        return p in ('/subtitle','/description','/shortdescription')
     if a=='objects/crafting/handmill/handmill.object':
         return p in ('/category','/description','/shortdescription','/subtitle')
     if a=='interface/windowconfig/beerefuge.config':
