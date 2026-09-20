@@ -13,6 +13,7 @@ COLOR=re.compile(r'\^[^;\s]*;')
 CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
 ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
+LOWERCASE_MECH=re.compile(r'\bmech\b')
 
 # Geriye dönük LQA'da yakalanan ve tekrar projeye sızmaması gereken Türkçe hatalar.
 BAD_TR_PATTERNS = (
@@ -446,6 +447,8 @@ def main():
         if 'İngilizce adı:' in r['tr']:raise ValueError('İngilizce fallback/gloss: '+a+p)
         if any(x in r['tr'] for x in BAD_TR_PATTERNS):raise ValueError('Bilinen Türkçe LQA hatası: '+a+p)
         if 'kraliçe arı' in r['tr'].casefold():raise ValueError('Kilitli arıcılık terimi ihlali (Ana Arı): '+a+p)
+        if LOWERCASE_MECH.search(r['tr']):raise ValueError('Kilitli Mech yazımı ihlali (Mech büyük harfle): '+a+p)
+        if a=='interface/windowconfig/beerefuge.config' and p=='/paneLayout/btnCraft/caption' and r['tr']!='Takas Et':raise ValueError('Arı Barınağı karma eylem etiketi Takas Et olmalı: '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
             colorfix+=1

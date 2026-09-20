@@ -1,5 +1,5 @@
 {
-  "translation_version": "0.13.1-beta",
+  "translation_version": "0.13.2-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
@@ -140,7 +140,9 @@
     "v0.11 3hops: source prose says at least 2 Hops; actual gatherItem condition is 1 hops, so Turkish avoids the wrong count.",
     "v0.11 2brew_c: quest completes with 1 Grape Mash but the following Wart Wine recipe needs 2; Turkish explains the distinction.",
     "v0.11 6beer: source prose says make 3 Beer; actual gatherItem condition is 1 beer and the recipe outputs 2, so Turkish follows the real condition.",
-    "v0.12 12breeding: source Giant Apiary is not a real inventory name; Turkish uses the actual normalalveary item name Large Apiary / Büyük Arılık."
+    "v0.12 12breeding: source Giant Apiary is not a real inventory name; Turkish uses the actual normalalveary item name Large Apiary / Büyük Arılık.",
+    "v0.13.2: LOCKED Mech system name normalized from lowercase mech to Mech in 16 Turkish fields.",
+    "v0.13.2: Bee Refuge mixed exchange verified: bee->money/material recipes coexist with money->bee-guide recipes; player action label normalized to neutral 'Takas Et'."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
@@ -171,7 +173,7 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.13 project total: 1929 structured fields. v0.13 adds 48 pinned FU fields across 18 new assets for 6/6 live Science Outpost shop quests, their target artifacts and shop objects; Lua remains 15 source-guarded strings. v0.11 Starbooze and v0.12 Beekeeping scopes are preserved. v0.13.1 retro QA changes Turkish target text only; source EN/provenance pointers unchanged.",
+  "full_source_validation": "v0.13 project total: 1929 structured fields. v0.13 adds 48 pinned FU fields across 18 new assets for 6/6 live Science Outpost shop quests, their target artifacts and shop objects; Lua remains 15 source-guarded strings. v0.11 Starbooze and v0.12 Beekeeping scopes are preserved. v0.13.1 retro QA changes Turkish target text only; source EN/provenance pointers unchanged. v0.13.2 changes Turkish target text only; source EN/provenance pointers and 322-asset patch scope unchanged.",
   "polish_pass": "PASS for v0.11 static Outpost/Starbooze scope: 12/12 quest files, quest-condition corrections and directly referenced inventory targets. In-game quest-flow/font/layout LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
@@ -247,6 +249,22 @@
     "color_control_number_integrity": "PASS",
     "locked_bee_terminology": "PASS",
     "known_bad_turkish_patterns": "0 remaining",
+    "in_game_lqa": "BEKLİYOR"
+  },
+  "v0132_scope": {
+    "reviewed_structured_fields": 1929,
+    "reviewed_lua_ui_strings": 15,
+    "corrected_structured_fields": 17,
+    "lowercase_mech_fixed": 16,
+    "bee_refuge_action": "Takas Et",
+    "bee_refuge_reason": "Same crafting panel contains bee->money/material exchanges and money->guide recipes.",
+    "structured_field_count_after_review": 1929,
+    "localized_display_units_after_review": 1944,
+    "patch_assets_after_review": 322,
+    "duplicate_pointers": 0,
+    "empty_translations": 0,
+    "lowercase_mech_remaining": 0,
+    "static_qa": "PENDING_BRANCH_CI",
     "in_game_lqa": "BEKLİYOR"
   }
 }
