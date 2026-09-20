@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.13.3-beta",
-  "note": "v0.13.3 üçüncü geriye dönük QA: 3 runtime listTemplate dummy alanı çıkarıldı; vanilla/eldritch İngilizce sızıntıları temizlendi; Sifter tutorialındaki Loose Silt/Gravel hedefleri Gevşek Mil/Çakıl olarak envanterle eşlendi; Wooden Centrifuge yönlendirmesindeki Iron Centrifuge eksikliği Demir Santrifüj envanter nesnesinin 4 görünür alanı eklenerek kapatıldı. Toplam 1934 structured + 15 Lua / 325 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.14.0-beta",
+  "note": "v0.14 Outpost Kevin 9 + Khe 4: 13 canlı görev, Kevin görev listesi ve doğrudan bağlı envanter hedefleri Türkçeleştirildi; 94 yeni structured alan / 33 yeni patch asset. Toplam 2028 structured + 15 Lua; 358 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -14304,6 +14304,768 @@
       "en": "^orange;Centrifuge^reset;",
       "tr": "^orange;Santrifüj^reset;",
       "section": "v0.13.3 Retro QA Hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator.questtemplate",
+      "pointer": "/title",
+      "en": "Why do they hate Kevin?",
+      "tr": "Kevin'dan Neden Nefret Ediyorlar?",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator.questtemplate",
+      "pointer": "/text",
+      "en": "I need to remind someone they aren't young and attractive anymore. Can you make me a ^orange;Booster Croptop^reset; that I can mail them? You can make one on a ^green;Sewing Wheel^reset;! I'll pay you.",
+      "tr": "Birine artık genç ve çekici olmadığını hatırlatmam gerek. Postayla gönderebilmem için bana bir ^orange;Booster Kısa Üstü^reset; yapar mısın? Bir ^green;Dikiş Makinesinde^reset; yapabilirsin! Parasını veririm.",
+      "section": "Outpost - Kevin",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak Sewing Wheel der; boosterchest gerçek craftingwheel 2. kademe Sewing Machine / Dikiş Makinesinde üretilir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now for phase two! She'll never see it coming! Thanks for the help. Take this awesome briefcase. Don't open it here, or everyone will get ^green;super jealous^reset; and try to steal it. Trust me.",
+      "tr": "Şimdi ikinci aşama! Bunu asla beklemeyecek! Yardımın için sağ ol. Şu harika evrak çantasını al. Burada açma, yoksa herkes ^green;aşırı kıskanır^reset; ve onu çalmaya çalışır. Güven bana.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Booster Croptop^reset; to ^red;Kevin^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Booster Kısa Üstünü^reset; ^orange;Bilim Karakolundaki^reset; ^red;Kevin'a^reset; götür.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator2.questtemplate",
+      "pointer": "/title",
+      "en": "I just don't know...",
+      "tr": "Ben de Bilemiyorum...",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator2.questtemplate",
+      "pointer": "/text",
+      "en": "5 ^orange;Biofuel Canisters^reset; would be all that I needed to create a ^cyan;rocket-powered guinea pig^reset;. With some ^orange;Algae^reset; found in a ^orange;Bog^reset; biome you'd have no problem making some. I promise to ^red;not^reset; reward you with deadly bees this time!",
+      "tr": "^cyan;Roketli bir kobay^reset; yapmak için ihtiyacım olan tek şey 5 ^orange;Biyoyakıt Kapsülü^reset;. Bir ^orange;Bataklık^reset; biyomunda bulacağın ^orange;Yosunla^reset; bunları kolayca üretebilirsin. Bu kez ödül olarak ölümcül arılar vermeyeceğime ^red;söz^reset;!",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator2.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks. You look like you could use some ^orange;party time^reset;! It's dangerous to go alone! Take ^green;this^reset;! Also, if you feel up to it and want to die, I could use help testing my newest invention. It's called a ^orange;Kill Pod^reset; and it's super neat!",
+      "tr": "Sağ ol. Biraz ^orange;eğlenceye^reset; ihtiyacın var gibi! Tek başına gitmek tehlikelidir! ^green;Şunu^reset; al! Ayrıca kendini hazır hissediyor ve ölmek istiyorsan en yeni icadımı denememe yardım edebilirsin. Adı ^orange;Ölüm Kapsülü^reset; ve süper bir şey!",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator2.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the Glorious ^red;Kevin^reset; 5 ^orange;Biofuel Canisters^reset;",
+      "tr": "Muhteşem ^red;Kevin'a^reset; 5 ^orange;Biyoyakıt Kapsülü^reset; götür.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3.questtemplate",
+      "pointer": "/title",
+      "en": "Okay, I kinda get why...",
+      "tr": "Tamam, Nedenini Biraz Anlıyorum...",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3.questtemplate",
+      "pointer": "/text",
+      "en": "I cannot possibly poison-tip the ^cyan;rocket-powered guinea pigs^reset; without a supply of 5 ^orange;Alien Compound^reset;. Perhaps you could get me some? I would (in theory) handsomely reward you!",
+      "tr": "5 ^orange;Uzaylı Bileşiği^reset; olmadan ^cyan;roketli kobayları^reset; zehirle donatmam mümkün değil. Bana biraz bulabilir misin? Seni (teoride) cömertçe ödüllendiririm!",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks, Dave. Now I can construct a weapon the likes of which nobody has ever seen. Bonus: They're also ^green;delicious^reset;!",
+      "tr": "Sağ ol, Dave. Artık kimsenin daha önce görmediği türden bir silah yapabilirim. Bonus: Üstelik ^green;çok lezzetliler^reset;!",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^red;Kevin, your overlord^reset; 5 ^orange;Alien Compound^reset;",
+      "tr": "Efendin ^red;Kevin'a^reset; 5 ^orange;Uzaylı Bileşiği^reset; getir.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3b.questtemplate",
+      "pointer": "/title",
+      "en": "Infantile Deliciousness",
+      "tr": "Bebeksi Lezzet",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3b.questtemplate",
+      "pointer": "/text",
+      "en": "You ever wonder how many ^orange;baby heads^reset; you can fit in a refrigerator? I do! Let's find out, shall we? If you were to gather say...200 ^orange;baby heads on sticks^reset; I'd be ever so thankful.",
+      "tr": "Bir buzdolabına kaç ^orange;bebek kafası^reset; sığdırabileceğini hiç merak ettin mi? Ben ettim! Hadi öğrenelim. Diyelim ki... 200 ^orange;Çubukta Bebek Kafası^reset; toplarsan sana pek minnettar olurum.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3b.questtemplate",
+      "pointer": "/completionText",
+      "en": "Many thanks, Lester. This time I have an ^orange;honestly good^reset; thing for you! Promise!",
+      "tr": "Çok sağ ol, Lester. Bu kez sana ^orange;gerçekten iyi^reset; bir şey vereceğim! Söz!",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3b.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^red;Kevin, your overlord^reset; 200 ^orange;Baby Heads on Sticks^reset;",
+      "tr": "Efendin ^red;Kevin'a^reset; 200 ^orange;Çubukta Bebek Kafası^reset; getir.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3c.questtemplate",
+      "pointer": "/title",
+      "en": "This guy is annoying.",
+      "tr": "Bu Herif Sinir Bozucu.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3c.questtemplate",
+      "pointer": "/text",
+      "en": "There is no such thing as an orange fruit. Prove me wrong.",
+      "tr": "Portakal diye bir meyve yok. Aksini kanıtla.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3c.questtemplate",
+      "pointer": "/completionText",
+      "en": "That isn't orange. But thanks for trying, loser.",
+      "tr": "Bu turuncu değil. Ama denediğin için sağ ol, ezik.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3c.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^red;Kevin^reset; 1 ^orange;orange fruit^reset;.",
+      "tr": "^red;Kevin'a^reset; 1 ^orange;Portakal^reset; götür.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3d.questtemplate",
+      "pointer": "/title",
+      "en": "Insanity and Rage.",
+      "tr": "Delilik ve Öfke.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3d.questtemplate",
+      "pointer": "/text",
+      "en": "I'm unsure I can trust you after that whole ^orange;orange fruit^reset; thing, but we'll try again I guess. You ever laid hands on some ^orange;Plasmic Crystal^reset;? If so, I could use about 20. For...reasons. Certainly not involving large flightless birds and carnage.",
+      "tr": "Şu ^orange;portakal^reset; meselesinden sonra sana güvenebilir miyim bilmiyorum ama sanırım yine deneyeceğiz. Hiç ^orange;Plazmik Kristal^reset; ele geçirdin mi? Geçirdiysen yaklaşık 20 tane işime yarar. Şey... nedenlerle. Büyük, uçamayan kuşlar ve katliamla kesinlikle ilgisi yok.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3d.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent. Now I can distill raw rage into crystalline form and feed it to my babies! Just in time for the ballet! Take this crap as a thanks.",
+      "tr": "Mükemmel. Artık saf öfkeyi kristal hâline damıtıp yavrularıma yedirebilirim! Hem de baleye tam zamanında! Teşekkür olarak şu zırvaları al.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3d.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^red;Kevin^reset; 20 ^orange;Plasmic Crystals^reset;.",
+      "tr": "^red;Kevin'a^reset; 20 ^orange;Plazmik Kristal^reset; götür.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3e.questtemplate",
+      "pointer": "/title",
+      "en": "Madness and Death",
+      "tr": "Delilik ve Ölüm",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3e.questtemplate",
+      "pointer": "/text",
+      "en": "I bet you can't collect more brains than I can! In fact, I ^orange;double-dog-dare^reset; you to collect ^orange;more brains^reset; than I can! Remove ^orange;50 brains^reset; from random life-forms...that's a decent start.",
+      "tr": "Benden daha çok beyin toplayamazsın! Hatta sana ^orange;hodri meydan^reset;: benden ^orange;daha çok beyin^reset; topla bakalım! Rastgele canlılardan ^orange;50 beyin^reset; çıkarmak... iyi bir başlangıç.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3e.questtemplate",
+      "pointer": "/completionText",
+      "en": "That's a whole lot of brains! Also, I didn't even bother collecting any. You beat me! You're also now ^orange;a murderer^reset;! Congratulations!",
+      "tr": "Ne çok beyin! Üstelik ben bir tane bile toplamaya uğraşmadım. Beni yendin! Artık sen de ^orange;bir katilsin^reset;! Tebrikler!",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3e.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^red;Kevin^reset; 50 ^orange;Brains^reset; of average quality.",
+      "tr": "^red;Kevin'a^reset; 50 ^orange;Üstün Beyin^reset; götür.",
+      "section": "Outpost - Kevin",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak average quality Brains der; gatherItem itemName=brain ister ve gerçek envanter kısa adı Superior Brain / Üstün Beyindir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator4.questtemplate",
+      "pointer": "/title",
+      "en": "He's insane. I like it.",
+      "tr": "O Delirmiş. Hoşuma Gitti.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator4.questtemplate",
+      "pointer": "/text",
+      "en": "Wanna try something ^orange;super fun^reset;? Let's create something previously thought to be ^green;hypothetical^reset;! Let's try making ^orange;Neutronium^reset; and ^orange;Anti-Neutronium^reset;! I'll give you something ^red;truly amazing^reset; if you can do it! I promise. For real, this time.",
+      "tr": "^orange;Çok eğlenceli^reset; bir şey denemek ister misin? Daha önce yalnızca ^green;varsayımsal^reset; olduğu düşünülen bir şeyi yapalım! ^orange;Nötronyum Çubuğu^reset; ve ^orange;Anti-Nötronyum Çubuğu^reset; üretmeye çalışalım! Başarırsan sana ^red;gerçekten inanılmaz^reset; bir şey vereceğim! Söz. Bu kez ciddiyim.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator4.questtemplate",
+      "pointer": "/completionText",
+      "en": "Holy forking shirtballs, you did it. I guess you aren't the dumbass I had assumed. In return, I give you this super-neat technology blueprint I found in the ^orange;Anti-Realm^reset;! No, I won't tell you where that is. You can't know, because you aren't special like ^cyan;Dave^reset;.",
+      "tr": "Vay çatal kaşık gömlek aşkına, başardın. Demek sandığım kadar aptal değilmişsin. Karşılığında sana ^orange;Anti-Diyar'da^reset; bulduğum şu acayip teknoloji planını veriyorum! Hayır, oranın nerede olduğunu söylemeyeceğim. Bilemezsin; çünkü ^cyan;Dave^reset; kadar özel değilsin.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^red;Kevin^reset; 1 ^orange;Neutronium and Anti-Neutronium^reset;",
+      "tr": "^red;Kevin'a^reset; 1'er ^orange;Nötronyum Çubuğu ve Anti-Nötronyum Çubuğu^reset; götür.",
+      "section": "Outpost - Kevin",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Gerçek envanter kısa adları Neutronium Rod ve Anti-Neutronium Rod olduğundan görev teslim adı çubuk biçimiyle eşlendi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/kevin_feedkhe.questtemplate",
+      "pointer": "/title",
+      "en": "Feed Khe.",
+      "tr": "Khe'yi Besle.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/kevin_feedkhe.questtemplate",
+      "pointer": "/text",
+      "en": "Minion, I have an ^red;extremely important^reset; task for you: my pet cat is starving and needs food. Only the finest sustenance will do, so I need you to feed her one ^red;Neutron Bomb^reset;.",
+      "tr": "Minyon, sana ^red;son derece önemli^reset; bir görevim var: evcil kedim açlıktan ölüyor ve yemek istiyor. Yalnızca en kaliteli besin ona layık. Bu yüzden ona bir ^red;Nötron Bombası^reset; yedirmeni istiyorum.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/kevin_feedkhe.questtemplate",
+      "pointer": "/completionText",
+      "en": "...pet? Well...that's awkward and completely wrong. Won't turn down good food, though. Don't tell anyone about him saying that...and take this blueprint. It's not 'useful', but it was certainly fun to design.",
+      "tr": "...evcil hayvan mı? Ee...bu tuhaf ve tamamen yanlış. Ama güzel yemeğe hayır demem. Onun böyle dediğini kimseye söyleme...şu planı da al. 'Yararlı' değil ama tasarlaması kesinlikle eğlenceliydi.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/kevin_feedkhe.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^cyan;Khe^reset; 1 ^orange;Neutron Bomb^reset;",
+      "tr": "^cyan;Khe'ye^reset; 1 ^orange;Nötron Bombası^reset; götür.",
+      "section": "Outpost - Kevin"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khecoinbreadcrumb.questtemplate",
+      "pointer": "/title",
+      "en": "Shiny Coin",
+      "tr": "Parlak Sikke",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khecoinbreadcrumb.questtemplate",
+      "pointer": "/text",
+      "en": "You hear a voice from inside the Arc Smelter say 'Ooh, shiny noms! My turn. Come visit. Get recipe!'",
+      "tr": "Ark Ergiticinin içinden bir ses duyuyorsun: 'Ooh, parlak mama! Sıra bende. Gel beni gör. Tarif al!'",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khecoinbreadcrumb.questtemplate",
+      "pointer": "/completionText",
+      "en": "You hear a voice from inside the Arc Smelter say 'Ooh, shiny noms! My turn. Here, have recipe!'",
+      "tr": "Ark Ergiticinin içinden bir ses duyuyorsun: 'Ooh, parlak mama! Sıra bende. Al, tarif senin!'",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khecrystalbreadcrumb.questtemplate",
+      "pointer": "/title",
+      "en": "Shiny Crystal",
+      "tr": "Parlak Kristal",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khecrystalbreadcrumb.questtemplate",
+      "pointer": "/text",
+      "en": "You hear a voice from the nearby extractor say 'Khe sees you. Come get special shiny!'",
+      "tr": "Yakındaki Çıkarıcıdan bir ses duyuyorsun: 'Khe seni görüyor. Gel, özel parlak şey al!'",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khecrystalbreadcrumb.questtemplate",
+      "pointer": "/completionText",
+      "en": "You hear a voice from the nearby extractor say 'Khe sees you. Have shiny recipe!'",
+      "tr": "Yakındaki Çıkarıcıdan bir ses duyuyorsun: 'Khe seni görüyor. Al sana parlak tarif!'",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_fabric.questtemplate",
+      "pointer": "/title",
+      "en": "Perfect Threads",
+      "tr": "Kusursuz İplikler",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_fabric.questtemplate",
+      "pointer": "/text",
+      "en": "Mew. I like shiny. You like shiny too, right? How about we make the shiniest outfit ever? Need specific, very special ingredients. Fetch 3 each. Gold, diamond, crystal, core fragments, pure erchius. Quickly. Mew.",
+      "tr": "Miyav. Parlak şey severim. Sen de seversin, değil mi? Gelmiş geçmiş en parlak kıyafeti yapalım mı? Özel, çok özel malzemeler gerek. Her birinden 3 tane getir: Altın Külçe, Elmas, Kristal, Çekirdek Parçası ve Saf Erchius Kristali. Çabuk. Miyav.",
+      "section": "Outpost - Khe",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak genel Gold/Core Fragments/Pure Erchius der; gatherItem koşulları goldbar, corefragmentore ve pureerchius gerçek envanter adlarıyla açıklaştırıldı."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_fabric.questtemplate",
+      "pointer": "/completionText",
+      "en": "A bit of weaving here, a bit of trimming there, *burp* mrr... and it's done. If you need a replacement set, I'll have some for sale.",
+      "tr": "Biraz dokuma buraya, biraz kırpma şuraya, *geğirir* mır... ve bitti. Yenisini istersen bende satılık olacak.",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_fabric.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^cyan;Khe^reset; the ingredients.",
+      "tr": "Malzemeleri ^cyan;Khe'ye^reset; götür.",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_lantern.questtemplate",
+      "pointer": "/title",
+      "en": "Cat Toys",
+      "tr": "Kedi Oyuncakları",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_lantern.questtemplate",
+      "pointer": "/text",
+      "en": "Hey, you. Mew lantern broke. Sad, sad mew. You found another for mew?",
+      "tr": "Hey, sen. Miyav fener bozuldu. Miyav çok üzgün. Bana yenisini buldun mu?",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_lantern.questtemplate",
+      "pointer": "/completionText",
+      "en": "Yay! Happy kitty! You can keep the old lantern. I got lots of those.",
+      "tr": "Yaşasın! Mutlu kedi! Eski fener sende kalsın. Bende onlardan çok var.",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_lantern.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the Ghost Lantern to ^cyan;Khe^reset; at the Science Outpost.",
+      "tr": "Hayalet Fenerini Bilim Karakolundaki ^cyan;Khe'ye^reset; götür.",
+      "section": "Outpost - Khe"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_kevin_tasks/title",
+      "en": "Kevin's Amazing Tasks",
+      "tr": "Kevin'ın Muhteşem Görevleri",
+      "section": "Görev listesi"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_kevin_tasks/description",
+      "en": "These tasks are of the utmost importance. Without completing them nobody will think you are as awesome as I am. That is clearly not something you would desire. I guarantee it is worth your while.",
+      "tr": "Bu görevler son derece önemli. Onları tamamlamazsan kimse senin benim kadar harika olduğunu düşünmez. Bunu kesinlikle istemezsin. Harcadığın zamana değeceğini garanti ederim.",
+      "section": "Görev listesi"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_kevin",
+      "en": "Kevin",
+      "tr": "Kevin",
+      "section": "Görev listesi"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/biofuelcannister.item",
+      "pointer": "/description",
+      "en": "A decent biofuel.\n^blue;+^white;8 ^blue;Fuel^reset;",
+      "tr": "İdare eder bir biyoyakıt.\n^blue;+^white;8 ^blue;Yakıt^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/biofuelcannister.item",
+      "pointer": "/shortdescription",
+      "en": "Biofuel Canister",
+      "tr": "Biyoyakıt Kapsülü",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/loot/babyheadonastick.consumable",
+      "pointer": "/description",
+      "en": "Floran delicacy.\n^red;-^white;5% ^red;HP ^gray;(^white;10s^gray;) ^blue;Madness Gain^reset; 1\n^red;Type: Raw Meat^reset;",
+      "tr": "Bir Floran lezzeti.\n^red;-^white;%5 ^red;Can ^gray;(^white;10 sn^gray;) ^blue;Delilik Kazanımı^reset; 1\n^red;Tür: Çiğ Et^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/loot/babyheadonastick.consumable",
+      "pointer": "/shortdescription",
+      "en": "Baby Head (on a stick)",
+      "tr": "Çubukta Bebek Kafası",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/blooddiamond.item",
+      "pointer": "/description",
+      "en": "Purified, extracted bloodstone.",
+      "tr": "Arıtılıp özütlenmiş kan taşı.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/blooddiamond.item",
+      "pointer": "/shortdescription",
+      "en": "Plasmic Crystal",
+      "tr": "Plazmik Kristal",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/brain.item",
+      "pointer": "/description",
+      "en": "This brain looks to be perfect for experimentation.",
+      "tr": "Bu beyin deneyler için kusursuz görünüyor.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/brain.item",
+      "pointer": "/shortdescription",
+      "en": "Superior Brain",
+      "tr": "Üstün Beyin",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/isotopes/antineutronium.item",
+      "pointer": "/description",
+      "en": "A 'natural' opposite to neutronium. Exceptionally unsafe.\n^blue;+^white;600 ^blue;Fuel^reset;",
+      "tr": "Nötronyumun 'doğal' karşıtı. Son derece tehlikeli.\n^blue;+^white;600 ^blue;Yakıt^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/isotopes/antineutronium.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Anti-Neutronium Rod^reset;",
+      "tr": "^#88e25b;Anti-Nötronyum Çubuğu^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/isotopes/neutronium.item",
+      "pointer": "/description",
+      "en": "A substance composed purely of neutrons. Ultra-dense.\n^blue;+^white;300 ^blue;Fuel^reset;",
+      "tr": "Yalnızca nötronlardan oluşan, aşırı yoğun bir madde.\n^blue;+^white;300 ^blue;Yakıt^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/isotopes/neutronium.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;Neutronium Rod^reset;",
+      "tr": "^#88e25b;Nötronyum Çubuğu^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/pureerchius.item",
+      "pointer": "/description",
+      "en": "You've never seen a more pristine erchius crystal.\n^blue;+^white;25 ^blue;Fuel^reset;",
+      "tr": "Bundan daha saf bir Erchius kristali görmedin.\n^blue;+^white;25 ^blue;Yakıt^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/pureerchius.item",
+      "pointer": "/shortdescription",
+      "en": "Pure Erchius Crystal",
+      "tr": "Saf Erchius Kristali",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/active/flashlights/lanterror/lanterror.activeitem",
+      "pointer": "/description",
+      "en": "Said to repel moon ghosts and punish those who harm you.",
+      "tr": "Ay hayaletlerini uzak tuttuğu ve sana zarar verenleri cezalandırdığı söylenir.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/active/flashlights/lanterror/lanterror.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ghost Lantern",
+      "tr": "Hayalet Feneri",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/other/killpod.consumable",
+      "pointer": "/description",
+      "en": "For when you absolutely need to die immediately. 100% Guaranteed or your money back. Also available in Strawberry.",
+      "tr": "Derhâl ölmen kesinlikle gerektiğinde kullanılır. %100 garanti, yoksa paran iade. Çileklisi de mevcut.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/other/killpod.consumable",
+      "pointer": "/shortdescription",
+      "en": "Kill Pod by Kevin-Tek",
+      "tr": "Kevin-Tek Ölüm Kapsülü",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/throwables/neutronbomb.thrownitem",
+      "pointer": "/shortdescription",
+      "en": "Neutron Bomb",
+      "tr": "Nötron Bombası",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/throwables/neutronbomb.thrownitem",
+      "pointer": "/description",
+      "en": "20 second fuse. Planet-busting power. Run. ^red;DO NOT THROW IN BASE, EVER^reset;.",
+      "tr": "20 saniyelik fitil. Bir gezegeni parçalayacak güçte. Kaç. ^red;ÜSTE ASLA ATMA^reset;.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/throwables/beebriefcase/fu_beebriefcasekevin.activeitem",
+      "pointer": "/description",
+      "en": "Use this to open it and reveal its contents. How exciting!",
+      "tr": "Kullanarak aç ve içindekileri ortaya çıkar. Ne kadar heyecanlı!",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/throwables/beebriefcase/fu_beebriefcasekevin.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Briefcase o' Rewards",
+      "tr": "Ödül Dolu Evrak Çantası",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/throwables/beebriefcase/fu_beebriefcasekevin.activeitem",
+      "pointer": "/notOnPlanetMessage",
+      "en": "This item can only be used on planets so that you can get the most out of your rewards.",
+      "tr": "Ödüllerinden en iyi şekilde yararlanabilmen için bu eşya yalnızca gezegenlerde kullanılabilir.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/luckycoin_khe.item",
+      "pointer": "/description",
+      "en": "A rare, ancient lucky coin. Somehow, it has been gnawed and is no longer recognizable.",
+      "tr": "Nadir ve kadim bir uğur sikkesi. Bir şekilde kemirilmiş; artık tanınmıyor.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/luckycoin_khe.item",
+      "pointer": "/shortdescription",
+      "en": "Gnawed Coin",
+      "tr": "Kemirilmiş Sikke",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/temple_trophy_khe.item",
+      "pointer": "/description",
+      "en": "A formerly valuable crystal trophy. Now it's just gnawed and broken.",
+      "tr": "Bir zamanlar değerli olan kristal bir kupa. Şimdiyse kemirilmiş ve kırılmış.",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/temple_trophy_khe.item",
+      "pointer": "/shortdescription",
+      "en": "Broken Crystalline Trophy",
+      "tr": "Kırık Kristal Kupa",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/armors/tier1/booster/kirhosbooster.chest",
+      "pointer": "/description",
+      "en": "Popular lower-street wear.\n+^green;5^reset;% Crit Chance",
+      "tr": "Alt-sokak modasında popüler bir kıyafet.\n+^green;5^reset;% Kritik Şansı",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU assetindeki açıklama literal satır sonu içerdiği için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "items/armors/tier1/booster/kirhosbooster.chest",
+      "pointer": "/shortdescription",
+      "en": "Booster Croptop",
+      "tr": "Booster Kısa Üstü",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU assetindeki gerçek boosterchest envanter adıyla exact eşleşir."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/algaegreen.item",
+      "pointer": "/description",
+      "en": "A decent fuel source once refined.\n^green;Growth Rate x^white;1.25 ^gray;& ^green;+^white;1 ^green;produce.\n^cyan;Uses -^white;0.5 ^cyan;fluid use ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;",
+      "tr": "Arıtıldığında makul bir yakıt kaynağıdır.\n^green;Büyüme Hızı x^white;1,25 ^gray;& ^green;+^white;1 ^green;ürün.\n^cyan;Tüketim -^white;0,5 ^cyan;sıvı ^gray;& ^cyan;-^white;1 ^cyan;tohum^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/crafting/algaegreen.item",
+      "pointer": "/shortdescription",
+      "en": "Algae",
+      "tr": "Yosun",
+      "section": "Outpost - Kevin/Khe hedefleri"
+    },
+    {
+      "asset": "items/generic/produce/orange.consumable",
+      "pointer": "/description",
+      "en": "It's an orange.",
+      "tr": "Bu bir portakal.",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/produce/orange.consumable",
+        "external_blob_sha": "602f73a99ed3f50ca0658e87de3185fe51cee308",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/produce/orange.consumable",
+      "pointer": "/shortdescription",
+      "en": "Orange",
+      "tr": "Portakal",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/produce/orange.consumable",
+        "external_blob_sha": "602f73a99ed3f50ca0658e87de3185fe51cee308",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/goldbar.item",
+      "pointer": "/description",
+      "en": "Ore for gold bars is found at great depths on most planets around all stars.",
+      "tr": "Altın cevheri, her tür yıldızın çevresindeki çoğu gezegende çok derinlerde bulunur.",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/goldbar.item",
+        "external_blob_sha": "8b4c64e73b114f13aa56d2b45313a70adfe45f0b",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/goldbar.item",
+      "pointer": "/shortdescription",
+      "en": "Gold Bar",
+      "tr": "Altın Külçe",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/goldbar.item",
+        "external_blob_sha": "8b4c64e73b114f13aa56d2b45313a70adfe45f0b",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/diamond.item",
+      "pointer": "/description",
+      "en": "It's a beautifully cut diamond.",
+      "tr": "Güzelce kesilmiş bir elmas.",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/diamond.item",
+        "external_blob_sha": "c6ccb32fe1e9e766de4266c6765e5f4cb91ad414",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/diamond.item",
+      "pointer": "/shortdescription",
+      "en": "Diamond",
+      "tr": "Elmas",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/diamond.item",
+        "external_blob_sha": "c6ccb32fe1e9e766de4266c6765e5f4cb91ad414",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/crystal.item",
+      "pointer": "/description",
+      "en": "Shiny crystal.",
+      "tr": "Parlak bir kristal.",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/crystal.item",
+        "external_blob_sha": "93fc26681bc8482e6d97c9f6690c40ce0453cf55",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/crystal.item",
+      "pointer": "/shortdescription",
+      "en": "Crystal",
+      "tr": "Kristal",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/crystal.item",
+        "external_blob_sha": "93fc26681bc8482e6d97c9f6690c40ce0453cf55",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/corefragmentore.item",
+      "pointer": "/description",
+      "en": "These naturally occurring crystals produce energy.",
+      "tr": "Doğal olarak oluşan bu kristaller enerji üretir.",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/corefragmentore.item",
+        "external_blob_sha": "b34dfc05b60152072f843ad0881f59dedffb4de7",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/corefragmentore.item",
+      "pointer": "/shortdescription",
+      "en": "Core Fragment",
+      "tr": "Çekirdek Parçası",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/corefragmentore.item",
+        "external_blob_sha": "b34dfc05b60152072f843ad0881f59dedffb4de7",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
     }
   ]
 }

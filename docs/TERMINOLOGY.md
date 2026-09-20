@@ -315,3 +315,22 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Silver Bar | Vanilla tutorial hedefi | Kaynak | Gümüş Külçesi | Silver Bar | LOCKED | |
 | Oil | Vanilla tutorial hedefi | Kaynak | Yağ | Oil | LOCKED | liquidoil |
 
+## v0.14 Kevin ve Khe terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Booster Croptop | Kevin görev hedefi / zırh | Nesne | Booster Kısa Üstü | Booster Croptop | LOCKED | boosterchest gerçek envanter adı |
+| Biofuel Canister | Kevin görev hedefi / yakıt | Kaynak | Biyoyakıt Kapsülü | Biyoyakıt Bidonu | LOCKED | |
+| Algae | Biyoyakıt girdisi | Kaynak | Yosun | Alg | LOCKED | Oyuncu için doğal ve kısa ad |
+| Baby Head (on a stick) | Kevin görev hedefi / yiyecek | Nesne | Çubukta Bebek Kafası | Bebek Başı | LOCKED | |
+| Orange | Kevin görev hedefi / vanilla ürün | Nesne | Portakal | Turuncu Meyve | LOCKED | Kaynaktaki orange kelime oyunu bağlamda korunur |
+| Plasmic Crystal | Kevin görev hedefi / blooddiamond | Kaynak | Plazmik Kristal | Plazma Kristali | LOCKED | Gerçek envanter adı |
+| Superior Brain | Kevin görev hedefi / brain | Kaynak | Üstün Beyin | Ortalama Beyin | LOCKED | Kaynak görev generic/yanlış average quality der; envanter adı esas |
+| Neutronium Rod | Kevin görev hedefi / yakıt | Kaynak | Nötronyum Çubuğu | Nötronyum | LOCKED | |
+| Anti-Neutronium Rod | Kevin görev hedefi / yakıt | Kaynak | Anti-Nötronyum Çubuğu | Anti-Nötronyum | LOCKED | |
+| Neutron Bomb | Kevin/Khe görev hedefi | Silah | Nötron Bombası | Nötronyum Bombası | LOCKED | |
+| Kill Pod | Kevin icadı | Nesne | Ölüm Kapsülü | Öldürme Podu | LOCKED | Tam envanter adı: Kevin-Tek Ölüm Kapsülü |
+| Pure Erchius Crystal | Khe görev hedefi | Kaynak | Saf Erchius Kristali | Saf Erchius | LOCKED | |
+| Ghost Lantern | Khe görev hedefi | Nesne | Hayalet Feneri | Ruh Feneri | LOCKED | |
+| Gnawed Coin | Khe pickup artefaktı | Nesne | Kemirilmiş Sikke | Kemirilmiş Para | LOCKED | Lucky Coin'den ayrı eşya |
+| Broken Crystalline Trophy | Khe pickup artefaktı | Nesne | Kırık Kristal Kupa | Kırık Kristal Ödülü | LOCKED | |
