@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.14 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkânları + Kevin/Khe görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.15 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost + Battle görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -24,6 +24,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Bilim Karakolu dükkânlarından doğrudan açılan 6/6 Outpost görevi ve ilgili görev artefaktları
 - Arıcılık görevlerinde yönlendirilen temel arı türleri, çerçeveler, Arılık, mikroskop, bal işleme makinesi ve vanilla hedef eşyaların envanter adları
 - Bilim Karakolundaki altı canlı dükkân görevi (6/6), hedef artefaktları ve dükkân nesneleri
+- Battle klasöründeki 10/10 erişilebilir görev, Battle görev-listesi ve doğrudan hedeflenen 10 envanter asseti
 - Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
@@ -62,7 +63,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.14.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.15.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -71,7 +72,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **2.028 alan / 358 patch asset**tir. v0.14 Kevin/Khe paketindeki **94/94 yeni alan kaynak/provenans açısından doğrulandı**: 84 pinned FU ve 10 vanilla alan. Önceki Outpost paketlerinin provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **2.092 alan / 378 patch asset**tir. v0.15 Battle paketindeki **64/64 yeni alan pinned FU kaynağıyla doğrulandı**. Battle klasöründeki 13 ham görevin 10'u runtime'da erişilebilir; bağlantısız 3 legacy patron görevi dağıtım dışı ve build guard altındadır. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -104,7 +105,7 @@ v0.9'da daha önce çevrilmemiş **25 tutorial görev dosyasında 90 oyuncu metn
 
 Kaynakta oyuncuyu yanlış yönlendiren eski tutorial metinleri gerçek quest koşullarına göre düzeltildi: Extractor IV/V'nin eski Tissue Culture / Genetic Material yönlendirmeleri, `create_silicon` içindeki 10 yerine gerçek 1 Silisyum koşulu, Wooden Centrifuge teslim hedefindeki yanlış Armorworks adı ve Rock Breaker metnindeki bozuk renk kapanışı.
 
-Science cephesi v0.10 ile kapandı. Outpost'ta v0.11 İçki, v0.12 Arıcılık, v0.13 Bilim Karakolu dükkânları ve v0.14 Kevin/Khe görevleri işlendi; Arıcılıktaki `13mites` runtime'da bağlantısız olduğu için dağıtım dışı bırakıldı. Klasör-bazlı yol haritasında sırada **30 ham görev dosyası** bulunuyor: Battle 13, Other 13, BYOS 3 ve Exploration 1. Her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
+Science v0.10, Outpost v0.14 ve Battle v0.15 ile erişilebilir kapsam düzeyinde kapandı. Arıcılıktaki `13mites` ile Battle altındaki `fuquest_gorgolith`, `fuquest_gorillaking` ve `fuquest_titan` runtime'da bağlantısız olduğu için dağıtım dışı bırakıldı. Klasör-bazlı yol haritasında sırada **17 ham görev dosyası** bulunuyor: Other 13, BYOS 3 ve Exploration 1. Her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
 
 ## v0.10 Science Görevleri
 
@@ -187,6 +188,14 @@ Kaynak görevdeki Sewing Wheel, gerçek üretim istasyonu olan **Sewing Machine 
 
 v0.14 eklemesi **94 yapılandırılmış alan / 33 yeni patch asset**tir: 50 görev alanı, 3 görev-listesi alanı ve 41 bağlı envanter alanı. Kaynak/provenans sonucu **94/94 PASS** (84 pinned FU + 10 vanilla). Proje toplamı **2.028 structured + 15 Lua = 2.043 görünür birim / 358 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
 
+## v0.15 Battle Görevleri
+
+Battle klasöründeki **13 ham questtemplate** görev listesi, NPC teklif/teslim alanları ve prerequisite/follow-up referanslarıyla denetlendi. `fu_gear` altındaki 6/6 ve `fu_monsters` altındaki 4/4 erişilebilir görev yerelleştirildi. **Gorgolith, Apex War-Born ve Wrexor Nar** görevleri yalnız kendi dosyalarında ve tamamlanma sonrası tüccar kilitlerinde geçiyor; hiçbir quest-list, NPC veya takip zinciri tarafından başlatılmadıkları için bağlantısız legacy kabul edilip dağıtım dışı bırakıldı.
+
+Görev hedefleri gerçek envanter adlarıyla eşlendi: **Sıradan Şapka, Kol Topu, F4 Enerji Tüfeği, Lazer Tabancası, Çelik Savaş Kılıcı, Ferozium Satırı, Yadigâr Kalkanı, Anne Poptop Pençesi, Ağ Atıcı** ve **Hiper Hedefleme Çipi**. Kaynaktaki genel “Poptop Claw” yönlendirmesi, gerçek envanter adı **Mama Poptop Claw / Anne Poptop Pençesi** ile açıklaştırıldı.
+
+v0.15 eklemesi **64 yapılandırılmış alan / 20 yeni patch asset**tir: 39 görev alanı, 4 görev-listesi alanı ve 21 bağlı envanter alanı. Kaynak/provenans sonucu **64/64 PASS** (tamamı pinned FU). Proje toplamı **2.092 structured + 15 Lua = 2.107 görünür birim / 378 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -206,7 +215,7 @@ v0.14 eklemesi **94 yapılandırılmış alan / 33 yeni patch asset**tir: 50 gö
 - [x] Tutorial görev ailesi
 - [x] Science görev zincirleri
 - [x] Outpost görev zincirleri (İçki 12/12 + Arıcılık 13/13 + Bilim Karakolu dükkânları 6/6 + Kevin 9/9 + Khe 4/4)
-- [ ] Battle görev zincirleri
+- [x] Battle görev zincirleri (10/10 erişilebilir; 3 bağlantısız legacy dağıtım dışı)
 - [ ] Other görev zincirleri
 - [ ] BYOS kalan görevleri
 - [ ] Exploration görev zinciri

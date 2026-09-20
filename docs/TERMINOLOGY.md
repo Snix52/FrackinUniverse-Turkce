@@ -334,3 +334,25 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Ghost Lantern | Khe görev hedefi | Nesne | Hayalet Feneri | Ruh Feneri | LOCKED | |
 | Gnawed Coin | Khe pickup artefaktı | Nesne | Kemirilmiş Sikke | Kemirilmiş Para | LOCKED | Lucky Coin'den ayrı eşya |
 | Broken Crystalline Trophy | Khe pickup artefaktı | Nesne | Kırık Kristal Kupa | Kırık Kristal Ödülü | LOCKED | |
+
+## v0.15 Battle terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Battle | Görev-listesi ana grubu | Sistem | Savaş | Muharebe | LOCKED | Kısa UI başlığı |
+| Gear | Battle alt grubu | Sistem | Ekipman | Donanım | LOCKED | Mevcut görev-listesi bağlamı |
+| Monsters and Villains | Battle alt grubu | Sistem | Canavarlar ve Düşmanlar | Canavarlar ve Kötüler | LOCKED | |
+| [BOSS] | Görev başlığı etiketi | UI | [PATRON] | [BOSS] | LOCKED | |
+| Plebeian Cap | Battle görev hedefi / zırh | Nesne | Sıradan Şapka | Avam Şapkası | LOCKED | `fumantizitier1head` gerçek kısa adı |
+| Arm Cannon | Battle görev hedefi / silah | Nesne | Kol Topu | Kol Silahı | LOCKED | |
+| F4 Energy Rifle | Battle görev hedefi / silah | Nesne | F4 Enerji Tüfeği | F4 Enerji Silahı | LOCKED | |
+| Laser Pistol | Battle görev hedefi / silah | Nesne | Lazer Tabancası | Lazer Silahı | LOCKED | |
+| Steel Warblade | Battle görev hedefi / silah | Nesne | Çelik Savaş Kılıcı | Çelik Savaş Bıçağı | LOCKED | |
+| Ferozium Cleaver | Battle görev hedefi / silah | Nesne | Ferozium Satırı | Ferozium Balta | LOCKED | |
+| Relic Shield | Patron görev hedefi / kalkan | Nesne | Yadigâr Kalkanı | Kalıntı Kalkanı | LOCKED | |
+| Mama Poptop | Patron adı | Özel ad | Anne Poptop | Ana Poptop | LOCKED | |
+| Mama Poptop Claw | Patron görev hedefi / silah | Nesne | Anne Poptop Pençesi | Poptop Pençesi | LOCKED | Gerçek envanter adı |
+| Web Shooter | Patron görev hedefi / araç | Nesne | Ağ Atıcı | Ağ Fırlatıcı | LOCKED | |
+| Hyper Targeting Chip | Patron görev hedefi / augment | Nesne | Hiper Hedefleme Çipi | Hiper Hedef Çipi | LOCKED | |
+| Aberrant Sentry | Patron adı | Düşman | Bozulmuş Nöbetçi | Aykırı Nöbetçi | LOCKED | |
+| Warbot | Patron adı | Düşman | Savaş Robotu | Warbot | LOCKED | |
