@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.13.1-beta",
-  "note": "v0.13.1 geriye dönük QA: görev teslim dilbilgisi, arıcılık terminolojisi, Glitch ton etiketleri, Bee Refuge satış butonu, Penumbrite yazımı ve v0.13 dükkân yönlendirmeleri düzeltildi. Alan sayısı değişmedi; oyun içi LQA bekliyor.",
+  "translation_version": "0.13.2-beta",
+  "note": "v0.13.2 geriye dönük terminoloji/UI QA: LOCKED Mech yazımı 16 alanda büyük-küçük harf açısından tekilleştirildi; Arı Barınağı aynı panelde hem arı teslimi hem rehber alımı yaptığı için eylem düğmesi nötr ve doğru 'Takas Et' olarak düzeltildi. Teknik kapsam/provenans değişmedi; oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -1420,7 +1420,7 @@
       "asset": "zb/researchTree/fu_agriculture.config",
       "pointer": "/strings/research/utilityplants2/1",
       "en": "^orange;Tier 4^reset;\n\nThrough careful experimentation, you've created plants that produce incredibly useful resources, including organic silicon, radiation-resistant silk and enhanced algae which can be processed into fuel for your ship and mech.",
-      "tr": "^orange;Kademe 4^reset;\n\nDikkatli deneylerle organik silisyum, radyasyona dayanıklı ipek ve geminle mech'in için yakıta dönüştürülebilen geliştirilmiş algler dâhil son derece yararlı kaynaklar üreten bitkiler geliştirdin.",
+      "tr": "^orange;Kademe 4^reset;\n\nDikkatli deneylerle organik silisyum, radyasyona dayanıklı ipek ve geminle Mech'in için yakıta dönüştürülebilen geliştirilmiş algler dâhil son derece yararlı kaynaklar üreten bitkiler geliştirdin.",
       "section": "Tarım"
     },
     {
@@ -2260,7 +2260,7 @@
       "asset": "interface/windowconfig/beerefuge.config",
       "pointer": "/paneLayout/btnCraft/caption",
       "en": "Buy",
-      "tr": "Sat",
+      "tr": "Takas Et",
       "section": "Tarım makineleri"
     },
     {
@@ -2835,7 +2835,7 @@
       "asset": "zb/researchTree/fu_chemistry.config",
       "pointer": "/strings/research/biofuel1/1",
       "en": "^orange;Tier 2^reset;\n\nYou've learned how to make fuel out of organic matter, which can be used to fuel various generators, ship engines and mechs.",
-      "tr": "^orange;Kademe 2^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve mech sistemlerinde kullanılabilir.",
+      "tr": "^orange;Kademe 2^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve Mech sistemlerinde kullanılabilir.",
       "section": "Kimya"
     },
     {
@@ -2849,7 +2849,7 @@
       "asset": "zb/researchTree/fu_chemistry.config",
       "pointer": "/strings/research/biofuel2/1",
       "en": "^orange;Tier 3^reset;\n\nYou've learned how to make fuel out of organic matter, which can be used to fuel various generators, ship engines and mechs.",
-      "tr": "^orange;Kademe 3^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve mech sistemlerinde kullanılabilir.",
+      "tr": "^orange;Kademe 3^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve Mech sistemlerinde kullanılabilir.",
       "section": "Kimya"
     },
     {
@@ -2863,7 +2863,7 @@
       "asset": "zb/researchTree/fu_chemistry.config",
       "pointer": "/strings/research/biofuel3/1",
       "en": "^orange;Tier 4^reset;\n\nYou've learned how to make fuel out of organic matter, which can be used to fuel various generators, ship engines and mechs.",
-      "tr": "^orange;Kademe 4^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve mech sistemlerinde kullanılabilir.",
+      "tr": "^orange;Kademe 4^reset;\n\nOrganik maddeden yakıt üretmeyi öğrendin. Bu yakıt çeşitli jeneratörlerde, gemi motorlarında ve Mech sistemlerinde kullanılabilir.",
       "section": "Kimya"
     },
     {
@@ -2919,7 +2919,7 @@
       "asset": "zb/researchTree/fu_chemistry.config",
       "pointer": "/strings/research/mechfuel/1",
       "en": "^orange;Tier 2^reset;\n\nYour combined knowledge of fluid creation and biofuel has led to you designing an enhanced, efficient fuel for use in mechs and combustion generators.",
-      "tr": "^orange;Kademe 2^reset;\n\nSıvı üretimi ile biyoyakıt konusundaki bilgini birleştirerek mech sistemleri ve yanmalı jeneratörlerde kullanılabilecek daha verimli, geliştirilmiş bir yakıt tasarladın.",
+      "tr": "^orange;Kademe 2^reset;\n\nSıvı üretimi ile biyoyakıt konusundaki bilgini birleştirerek Mech sistemleri ve yanmalı jeneratörlerde kullanılabilecek daha verimli, geliştirilmiş bir yakıt tasarladın.",
       "section": "Kimya"
     },
     {
@@ -3822,7 +3822,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/spacebasic/1",
       "en": "^orange;Tier 1^reset;\n\nYour spaceship may have broken down, but that doesn't mean you can't fix it. Using parts from your old junked FTL drive and the thermal power of Core Fragments, you are now able to make a basic ship engine (^cyan;STL Engine^reset;, created at a ^orange;Machining Table^reset;).\n\nWhile fine for intrastellar travel, the STL engine isn't nearly powerful enough to leave your system - you'll need to ^orange;Research^reset; proper FTL technology to do that.\n\nIf ^cyan;Fuel^reset; is proving an issue to find for your ship: head to a ^green;Moon^reset; or produce some ^cyan;Hydrogen^reset; by processing water (via ^orange;Extraction^reset; or ^orange;Centrifuge^reset;).\n\nAdditionally, you can craft a very simple mech for EVA or planetary usage (created at a ^orange;Mech Part Crafting Table^reset;. You can ^green;Research^reset; one later, or use the one at the ^orange;Outpost^reset;).\n\nMechs will provide a large amount of damage resistance and help you stay alive for longer in harsh situations, and are able to ^green;Fly^reset; in an atmosphere as well as space.\n\nIf you're having trouble finding ^orange;Core Fragments^reset;, just dig towards the planet core. You'll find some there.",
-      "tr": "^orange;Kademe 1^reset;\n\nUzay gemin bozulmuş olabilir ama bu onu onaramayacağın anlamına gelmez. Eski ve hurdaya çıkmış FTL motorunun parçalarını, Çekirdek Parçalarının ısıl gücüyle birleştirerek temel bir gemi motoru (^cyan;STL Motoru^reset;, ^orange;İmalat Tezgâhında^reset; üretilir) yapabilirsin.\n\nSTL Motoru yıldız sistemi içindeki yolculuklar için yeterlidir ancak sistemden çıkacak kadar güçlü değildir. Bunun için gerçek FTL teknolojisini ^orange;Araştırman^reset; gerekir.\n\nGemine ^cyan;Yakıt^reset; bulmakta zorlanıyorsan bir ^green;Aya^reset; git veya suyu ^orange;Çıkarma^reset; ya da ^orange;Santrifüj^reset; yoluyla işleyerek ^cyan;Hidrojen^reset; üret.\n\nAyrıca EVA veya gezegen yüzeyinde kullanım için çok basit bir mech üretebilirsin. Bunu ^orange;Mech Parçası Üretim Tezgâhında^reset; yapabilirsin. Tezgâhın araştırmasını daha sonra ^green;açabilir^reset; veya ^orange;Karakoldaki^reset; tezgâhı kullanabilirsin.\n\nMech'ler yüksek miktarda hasar direnci sağlar, zorlu koşullarda daha uzun süre hayatta kalmana yardımcı olur ve hem atmosferde hem de uzayda ^green;Uçabilir^reset;.\n\n^orange;Çekirdek Parçaları^reset; bulmakta zorlanıyorsan gezegenin çekirdeğine doğru kaz. Orada mutlaka bulursun.",
+      "tr": "^orange;Kademe 1^reset;\n\nUzay gemin bozulmuş olabilir ama bu onu onaramayacağın anlamına gelmez. Eski ve hurdaya çıkmış FTL motorunun parçalarını, Çekirdek Parçalarının ısıl gücüyle birleştirerek temel bir gemi motoru (^cyan;STL Motoru^reset;, ^orange;İmalat Tezgâhında^reset; üretilir) yapabilirsin.\n\nSTL Motoru yıldız sistemi içindeki yolculuklar için yeterlidir ancak sistemden çıkacak kadar güçlü değildir. Bunun için gerçek FTL teknolojisini ^orange;Araştırman^reset; gerekir.\n\nGemine ^cyan;Yakıt^reset; bulmakta zorlanıyorsan bir ^green;Aya^reset; git veya suyu ^orange;Çıkarma^reset; ya da ^orange;Santrifüj^reset; yoluyla işleyerek ^cyan;Hidrojen^reset; üret.\n\nAyrıca EVA veya gezegen yüzeyinde kullanım için çok basit bir Mech üretebilirsin. Bunu ^orange;Mech Parçası Üretim Tezgâhında^reset; yapabilirsin. Tezgâhın araştırmasını daha sonra ^green;açabilir^reset; veya ^orange;Karakoldaki^reset; tezgâhı kullanabilirsin.\n\nMech'ler yüksek miktarda hasar direnci sağlar, zorlu koşullarda daha uzun süre hayatta kalmana yardımcı olur ve hem atmosferde hem de uzayda ^green;Uçabilir^reset;.\n\n^orange;Çekirdek Parçaları^reset; bulmakta zorlanıyorsan gezegenin çekirdeğine doğru kaz. Orada mutlaka bulursun.",
       "section": "Mühendislik"
     },
     {
@@ -3878,7 +3878,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsbasic/1",
       "en": "^orange;Tier 2^reset;\n\nYou've learned a lot about building modular mechs and can now make galactic-standard mech parts at a ^orange;Mech Crafting Table^reset;.\n\nThe weight of your mech is very important. Lighter mechs get around more easily and burn less fuel, while heavy mechs are more durable and can crush things by jumping on them.\n\n^yellow;Note:^reset; You no longer need to gather \"salvage\" components to make mechs - they are now made with other resources such as circuit boards and energy cores. Salvage can be ^orange;extracted^reset; to provide potentially useful resources instead.",
-      "tr": "^orange;Kademe 2^reset;\n\nModüler mech üretimi hakkında çok şey öğrendin ve artık ^orange;Mech Parçası Üretim Tezgâhında^reset; galaktik standartlarda mech parçaları üretebilirsin.\n\nMech'inin ağırlığı çok önemlidir. Hafif mech'ler daha rahat hareket eder ve daha az yakıt tüketir; ağır mech'ler ise daha dayanıklıdır ve üzerlerine atlayarak nesneleri ezebilir.\n\n^yellow;Not:^reset; Artık mech üretmek için \"hurda\" bileşenler toplaman gerekmiyor. Bunun yerine devre kartları ve enerji çekirdekleri gibi kaynaklar kullanılır. Hurda parçalar ise yararlı kaynaklar elde etmek için ^orange;çıkarılabilir^reset;.",
+      "tr": "^orange;Kademe 2^reset;\n\nModüler Mech üretimi hakkında çok şey öğrendin ve artık ^orange;Mech Parçası Üretim Tezgâhında^reset; galaktik standartlarda Mech parçaları üretebilirsin.\n\nMech'inin ağırlığı çok önemlidir. Hafif Mech'ler daha rahat hareket eder ve daha az yakıt tüketir; ağır Mech'ler ise daha dayanıklıdır ve üzerlerine atlayarak nesneleri ezebilir.\n\n^yellow;Not:^reset; Artık Mech üretmek için \"hurda\" bileşenler toplaman gerekmiyor. Bunun yerine devre kartları ve enerji çekirdekleri gibi kaynaklar kullanılır. Hurda parçalar ise yararlı kaynaklar elde etmek için ^orange;çıkarılabilir^reset;.",
       "section": "Mühendislik"
     },
     {
@@ -3892,7 +3892,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsbody1/1",
       "en": "^orange;Tier 3^reset;\n\nWith increased crafting skill comes the ability to make more advanced mech bodies that resist damage and store more fuel and survive in dangerous atmospheres more easily.",
-      "tr": "^orange;Kademe 3^reset;\n\nÜretim becerin geliştikçe hasara daha dayanıklı, daha fazla yakıt depolayan ve tehlikeli atmosferlerde daha kolay hayatta kalan gelişmiş mech gövdeleri üretebilirsin.",
+      "tr": "^orange;Kademe 3^reset;\n\nÜretim becerin geliştikçe hasara daha dayanıklı, daha fazla yakıt depolayan ve tehlikeli atmosferlerde daha kolay hayatta kalan gelişmiş Mech gövdeleri üretebilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -3906,7 +3906,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsbody2/1",
       "en": "^orange;Tier 4^reset;\n\nYou can now make even stronger mech bodies using more complex materials.",
-      "tr": "^orange;Kademe 4^reset;\n\nArtık daha karmaşık malzemeler kullanarak çok daha güçlü mech gövdeleri üretebilirsin.",
+      "tr": "^orange;Kademe 4^reset;\n\nArtık daha karmaşık malzemeler kullanarak çok daha güçlü Mech gövdeleri üretebilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -3920,7 +3920,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsbody3/1",
       "en": "^orange;Tier 5^reset;\n\nThe strongest mech bodies around are now within your ability thanks to your mech-building talent.",
-      "tr": "^orange;Kademe 5^reset;\n\nMech üretimindeki yeteneğin sayesinde en güçlü mech gövdelerini artık kendin yapabilirsin.",
+      "tr": "^orange;Kademe 5^reset;\n\nMech üretimindeki yeteneğin sayesinde en güçlü Mech gövdelerini artık kendin yapabilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -3962,7 +3962,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsmobility3/1",
       "en": "^orange;Tier 5^reset;\n\nYour talent has produced some of the highest-end mech parts around, letting you run, jump and fly your mech through the stars at record pace.",
-      "tr": "^orange;Kademe 5^reset;\n\nYeteneğin, piyasadaki en ileri mech parçalarından bazılarını ortaya çıkardı. Mech'inle yıldızların arasında rekor hızlarda koşabilir, zıplayabilir ve uçabilirsin.",
+      "tr": "^orange;Kademe 5^reset;\n\nYeteneğin, piyasadaki en ileri Mech parçalarından bazılarını ortaya çıkardı. Mech'inle yıldızların arasında rekor hızlarda koşabilir, zıplayabilir ve uçabilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -3990,7 +3990,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsweapons2/1",
       "en": "^orange;Tier 4^reset;\n\nThe universe can be a dangerous place, but not if you've got a really big gun. You can make even better mech weapons.",
-      "tr": "^orange;Kademe 4^reset;\n\nEvren tehlikeli bir yer olabilir ama elinde gerçekten büyük bir silah varsa o kadar da değil. Artık daha iyi mech silahları üretebilirsin.",
+      "tr": "^orange;Kademe 4^reset;\n\nEvren tehlikeli bir yer olabilir ama elinde gerçekten büyük bir silah varsa o kadar da değil. Artık daha iyi Mech silahları üretebilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -4004,7 +4004,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsweapons3/1",
       "en": "^orange;Tier 5^reset;\n\nThe way you see it, there's no reason to own a mech if you can't strap a BFG to it and go to town on someone (or something) that deserves it. Your newest death-dealing mech weapons are perfect for doing just that.",
-      "tr": "^orange;Kademe 5^reset;\n\nSana göre üzerine bir BFG takıp hak eden birine veya bir şeye ateş açamayacaksan mech sahibi olmanın pek anlamı yok. Yeni ölüm makinelerin tam da bunun için biçilmiş kaftan.",
+      "tr": "^orange;Kademe 5^reset;\n\nSana göre üzerine bir BFG takıp hak eden birine veya bir şeye ateş açamayacaksan Mech sahibi olmanın pek anlamı yok. Yeni ölüm makinelerin tam da bunun için biçilmiş kaftan.",
       "section": "Mühendislik"
     },
     {
@@ -4032,7 +4032,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsmodules2/1",
       "en": "^orange;Tier 4^reset;\n\nYou are able to craft even better mech modules.",
-      "tr": "^orange;Kademe 4^reset;\n\nArtık daha da iyi mech modülleri üretebilirsin.",
+      "tr": "^orange;Kademe 4^reset;\n\nArtık daha da iyi Mech modülleri üretebilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -4046,7 +4046,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsmodules3/1",
       "en": "^orange;Tier 5^reset;\n\nYou can make incredibly powerful mech modules.",
-      "tr": "^orange;Kademe 5^reset;\n\nİnanılmaz derecede güçlü mech modülleri üretebilirsin.",
+      "tr": "^orange;Kademe 5^reset;\n\nİnanılmaz derecede güçlü Mech modülleri üretebilirsin.",
       "section": "Mühendislik"
     },
     {
@@ -4060,7 +4060,7 @@
       "asset": "zb/researchTree/fu_engineering.config",
       "pointer": "/strings/research/mechsbest/1",
       "en": "^orange;Tier 6^reset;\n\nYou know everything there is to know about modular mechs. You can make extremely amazing mech parts that blow the competition away, and summon your mech to you in the field.",
-      "tr": "^orange;Kademe 6^reset;\n\nModüler mech'ler hakkında öğrenilebilecek her şeyi biliyorsun. Rakiplerini açık ara geride bırakan olağanüstü mech parçaları üretebilir ve mech'ini sahadayken yanına çağırabilirsin.",
+      "tr": "^orange;Kademe 6^reset;\n\nModüler Mech'ler hakkında öğrenilebilecek her şeyi biliyorsun. Rakiplerini açık ara geride bırakan olağanüstü Mech parçaları üretebilir ve Mech'ini sahadayken yanına çağırabilirsin.",
       "section": "Mühendislik"
     },
     {
