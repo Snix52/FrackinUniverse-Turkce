@@ -184,6 +184,36 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 | depleted uranium | Bilimsel/mühimmat bağlamı | Malzeme | tüketilmiş uranyum | seyreltilmiş uranyum | LOCKED | Yerleşik teknik karşılık |
 
+| Fertilizer | Kimya / tarım kaynağı | Kaynak | Gübre | Fertilizer | LOCKED | Science görevleri ve Kimya araştırma ağacıyla eşlendi |
+| Iodine | Kimyasal element / kaynak | Kaynak | İyot | İyodin, Iodine | LOCKED | Yerleşik Türkçe element adı |
+| Methyl Iodide | Kimyasal reaktif | Kaynak | Metil İyodür | Metil İyodid, Methyl Iodide | LOCKED | Yerleşik Türkçe kimya kullanımı |
+| Contaminated Water | Kimya sıvısı | Kaynak | Kirlenmiş Su | Kontamine Su, Contaminated Water | LOCKED | Oyuncu için açık ve doğal karşılık |
+| Mulch | Tarım / gübre malzemesi | Kaynak | Malç | Mulch | LOCKED | Yerleşik tarım terimi |
+| Caliche Stone | Jeolojik malzeme | Kaynak | Kaliş Taşı | Caliche Stone | LOCKED | Türkçe jeoloji literatüründeki kaliş terimi esas alındı |
+| Bonemeal | Malzeme | Kaynak | Kemik Unu | Bonemeal | LOCKED | |
+| Ice Crystal | Vanilla/FU üretim kaynağı | Kaynak | Buz Kristali | Ice Crystal | LOCKED | Vanilla envanter adıyla eşleştirildi |
+
+| AI Chip / A.I. Chip | Elektronik / yapay zekâ bileşeni | Kaynak | Yapay Zekâ Çipi | AI Çipi, A.I. Chip | LOCKED | Görev ve gerçek envanter adı eşleştirildi |
+| Silicon Board | Elektronik bileşeni | Kaynak | Silisyum Devre Kartı | Silikon Kart, Silicon Board | LOCKED | Vanilla envanter adı; Silicon -> Silisyum kararıyla uyumlu |
+| Watcher | Güç sistemi / chunk loader cihazı | Nesne | Gözcü | Watcher, Nöbetçi | LOCKED | Uzaktayken çevresindeki cihazları etkin tutan FU cihazı |
+
+| Miracle Grass Seed | FU bitki tohumu | Nesne | Mucize Otu Tohumu | Miracle Grass | LOCKED | Seed object olduğu oyuncuya açık gösterilir |
+| Bracken Tree Seed | FU bitki tohumu | Nesne | Bracken Ağacı Tohumu | Bracken Tree Seed | LOCKED | Bracken özel ad olarak korunur |
+| Mutavisk Seed | FU bitki tohumu | Nesne | Mutavisk Tohumu | Mutavisk Seed | LOCKED | Mutavisk özel ad olarak korunur |
+| Oonforta Seed | FU bitki tohumu | Nesne | Oonforta Tohumu | Oonforta Seed | LOCKED | Oonforta özel ad olarak korunur |
+| Cloning Lab | Genetik makinesi | Nesne | Klonlama Laboratuvarı | Cloning Lab | LOCKED | |
+| Ignus Chili Seed | FU bitki tohumu | Nesne | Ignus Biberi Tohumu | Ignus Chili Seed | LOCKED | Ignus özel ad olarak korunur |
+| Mutavisk Helm | Zırh | Nesne | Mutavisk Miğferi | Mutavisk Helm | LOCKED | |
+| Rad-Leaf / Rad Leaf | FU ürünü | Nesne | Radyasyon Yaprağı | Rad Leaf, Rad-Leaf | LOCKED | Aşırı radyasyon bağışıklığı veren ürün |
+| Thornitox Seed | FU bitki tohumu | Nesne | Thornitox Tohumu | Thornitox Seed | LOCKED | Thornitox özel ad olarak korunur |
+
+| Acid Shield | EPP eklentisi | Nesne | Asit Kalkanı | Acid Shield | LOCKED | Sülfürik asit bağışıklığı veren eklenti |
+| Black Glass | Vanilla/FU malzeme | Kaynak | Siyah Cam | Black Glass | LOCKED | Vanilla envanter adıyla eşleştirildi |
+
+| Industrial Furnace | Vanilla fırın 2. kademe | Nesne | Endüstriyel Fırın | Fission Furnace | LOCKED | craftingfurnace2 gerçek kademe adı |
+| Protocite Bar | FU metal kaynağı | Kaynak | Protocite Külçesi | Protocite Bar | LOCKED | Protocite özel ad olarak korunur |
+| Tritium Rod | İzotop / yakıt kaynağı | Kaynak | Trityum Çubuğu | Tritium Rod | LOCKED | Yerleşik bilimsel Türkçe: trityum |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.

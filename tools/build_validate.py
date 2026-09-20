@@ -17,7 +17,15 @@ ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 # FU 6.5.8 pinned kaynağında strings.research altında dursa da aktif researchTree
 # düğümüne bağlı olmayan metinler. Oyuncuya görünmedikleri için yamaya alınmaz.
 NONVISIBLE_QUEST_ASSETS = {
-    'quests/fu_questlines/tutorial/start_basics1.questtemplate'
+    'quests/fu_questlines/tutorial/start_basics1.questtemplate',
+    'quests/fu_questlines/science/chemistry/fuquest_dna.questtemplate',
+    'quests/fu_questlines/science/chemistry/fuquest_mineral.questtemplate'
+}
+
+SCIENCE_EXTERNAL_QUEST_ASSETS = {
+    'quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate',
+    'quests/fu_questlines/deprecated/fuquest_battery.questtemplate',
+    'quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate'
 }
 
 NONVISIBLE_RESEARCH_IDS = {
@@ -121,12 +129,16 @@ def allowed(a,p):
         return bool(re.fullmatch(r'/strings/(info/[01]|currencies/(money|essence|fuscienceresource|fumadnessresource|fugeneticmaterial))',p))
     if a=='zb/researchTree/researchTree.config':
         return p in ('/gui/researchButton/caption','/gui/infoList/children/unlocksLabel/value','/gui/title/value','/gui/consumptionText/value')
+    if a=='zb/questList/data.config':
+        return p in ('/strings/questlines/fu_sciences/title','/strings/questlines/fu_sciences/description') or bool(re.fullmatch(r'/strings/sublines/fu_(physics|chemistry|electronics|genetics|mechanical)',p))
     if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config','zb/researchTree/fu_warcraft.config'):
         tree=PurePosixPath(a).stem
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
     if a=='zb/researchTree/madness.config':
         return p=='/strings/trees/frackinuniversemadness' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
     if a.startswith('quests/fu_questlines/tutorial/') and a.endswith('.questtemplate'):
+        return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
+    if (a.startswith('quests/fu_questlines/science/') or a in SCIENCE_EXTERNAL_QUEST_ASSETS) and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
         return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
@@ -141,6 +153,47 @@ def allowed(a,p):
     if a=='objects/crafting/xenostation/xenolab.object':
         return p in ('/description','/subtitle','/shortdescription')
     if a in ('objects/crafting/xenostationadvnew/xenostationadvnew.object','objects/crafting/fu_growingtray/fu_growingtray.object','objects/power/irongrowingtray/irongrowingtray.object','objects/power/isn_hydroponicstray/isn_hydroponicstray.object','objects/bees/beestation/beestation.object','objects/bees/beerefuge/beerefuge.object','items/generic/crafting/precursor/precursorfluid.item','items/generic/crafting/chemlab/aliencompound.item','items/liquids/shadowgasliquid.liqitem','items/generic/crafting/ff_plastic.item','items/generic/crafting/cellmateria.item','items/generic/crafting/chemlab/cell_spliced.item','items/generic/crafting/chemlab/unstableparticles.item','items/generic/crafting/fu_hydrogenmetallic.item','items/generic/crafting/quietusore.item','items/generic/crafting/ammoniumsulfate.item'):
+        return p in ('/description','/shortdescription')
+    science_chemistry_assets={
+        'items/generic/crafting/chemlab/ff_fertilizer.item',
+        'items/generic/crafting/iodine.item',
+        'items/generic/crafting/chemlab/methyliodide.item',
+        'items/liquids/liquidwastewater.liqitem',
+        'items/generic/crafting/chemlab/fu_mulch.item',
+        'items/materials/calichewall.matitem',
+        'items/materials/bonemealmaterial.matitem',
+        'items/generic/crafting/icecrystal.item'
+    }
+    if a in science_chemistry_assets:
+        return p in ('/description','/shortdescription')
+    science_electronics_assets={
+        'items/generic/crafting/matterassembler/aichip.item',
+        'items/generic/crafting/siliconboard.item',
+        'objects/fu_watcher/fu_watcher.object'
+    }
+    if a in science_electronics_assets:
+        return p in ('/description','/shortdescription')
+    science_genetics_assets={
+        'objects/farmables/miraclegrassseed/miraclegrassseed.object',
+        'objects/farmables/brackentree/brackentreeseed.object',
+        'objects/farmables/mutavisk/mutaviskseed.object',
+        'objects/farmables/oonfortaseed/oonfortaseed.object',
+        'objects/farmables/ignuschili/ignuschiliseed.object',
+        'items/armors/tier3/mutaviskarmor/mutavisk.head',
+        'items/generic/produce/guam.consumable',
+        'objects/farmables/thornitoxplant/thornitoxseed.object'
+    }
+    if a in science_genetics_assets:
+        return p in ('/description','/shortdescription')
+    if a=='objects/crafting/clonelab/clonelab.object':
+        return p in ('/subtitle','/description','/shortdescription')
+    if a=='items/generic/crafting/matterassembler/electromagnet.item':
+        return p in ('/description','/shortdescription')
+    if a=='items/augments/back/environment/acidimmunity.augment':
+        return p in ('/description','/shortdescription','/augment/displayName')
+    if a=='items/materials/blackglass.matitem':
+        return p in ('/description','/shortdescription','/glitchdescription','/florandescription','/novakiddescription')
+    if a in ('items/generic/crafting/fissionfurnace/protocitebar.item','items/generic/crafting/isotopes/tritium.item','items/generic/crafting/teleportercore.item'):
         return p in ('/description','/shortdescription')
     if a=='objects/crafting/handmill/handmill.object':
         return p in ('/category','/description','/shortdescription','/subtitle')
@@ -362,10 +415,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Ana Araştırma Sistemleri + Delilik + Tutorial Görevleri (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Delilik + Tutorial + Science Görevleri (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik ve bağlı tutorial görev ailesini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, bağlı tutorial görev ailesi ve Science görev zincirlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

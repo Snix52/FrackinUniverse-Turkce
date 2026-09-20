@@ -229,3 +229,62 @@
 - Tutorial dışındaki bağlı FU görevlerinde 111 dosya hâlâ bekliyor.
 - Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
 
+## 2026-09-20 - v0.10 Science görev envanteri ve Chemistry ilk geçiş
+
+- `quests/fu_questlines/science` altında ham olarak **36 questtemplate** bulunuyor.
+- `fuquest_dna` ve `fuquest_mineral` yalnızca kendi dosyalarında geçiyor; NPC, prerequisite zinciri veya `zb/questList/data.config` tarafından çağrılmıyor. İkisi de runtime-bağlantısız kabul edilerek dağıtım dışı bırakıldı ve build guard'a eklendi.
+- Science klasöründeki erişilebilir görev sayısı bu nedenle **34**.
+- Oyundaki `fu_sciences` quest-list'i **35 görev** başlatabiliyor. Bu liste Science klasörü dışındaki üç `deprecated` asseti hâlâ aktif kullanıyor: `fuquest_powerstation`, `fuquest_battery`, `fuquest_prototyper`.
+- `create_blackglass` Science quest-list'inde görünmese de Bilim Karakolu NPC'si tarafından veriliyor ve `create_arcsmelter` zincirine bağlı; aktiftir.
+- `fuquest_biochem` Science quest-list'inde değil, `fu_tutorial > fu_vinj` alt zincirinde `player.startQuest()` üzerinden erişilebilir; v0.9 klasör-tabanlı Tutorial kapsamının dışında kaldığı için v0.10 Chemistry geçişinde ayrıca ele alındı.
+- Böylece oyuncuya ulaşabilen Science bağlantılı benzersiz görev havuzu **37 görev** olarak belirlendi: Science quest-list 35 + `create_blackglass` + `fuquest_biochem`.
+- İlk Chemistry paketi: Science quest-list UI'sındaki 7 görünür alan + 8 erişilebilir Chemistry görevinin 31 metni + 8 hedef eşya/malzemenin 16 alanı = **54 yeni yapılandırılmış alan**.
+- Caliche Stone -> **Kaliş Taşı**, Iodine -> **İyot**, Methyl Iodide -> **Metil İyodür**, Contaminated Water -> **Kirlenmiş Su**, Mulch -> **Malç**, Fertilizer -> **Gübre**, Bonemeal -> **Kemik Unu**, Ice Crystal -> **Buz Kristali** LOCKED.
+- `create_plastic` kaynak metni güncel üretim zinciriyle uyuşmuyor: metin `Bio Lab` diyor, pinned FU 6.5.8 tarifleri `ff_plastic` üretimini `chemlab2` altında yapıyor. Türkçe yönlendirme gerçek makine adı olan **Kimya Laboratuvarı** üzerinden düzeltildi; Kemik Ununun santrifüjde Yağ verebildiği kaynak tarifle ayrıca doğrulandı.
+- Buz Kristali vanilla Starbound kaynağı olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact kaynak doğrulamasına bağlandı.
+- Bu tur statik kaynak/terminoloji çalışmasıdır; oyun içi LQA ayrıca yapılacaktır.
+
+### v0.10 Electronics geçişi
+
+- `fu_electronics` quest-listindeki **8/8 görev** yerelleştirildi; `fuquest_powerstation` ve `fuquest_battery` dosya olarak `deprecated` altında olsa da quest-list tarafından `player.startQuest()` ile hâlâ aktiftir.
+- Electronics görevleri **30 görünür görev alanı** içeriyor. Yapay Zekâ Çipi, Silisyum Devre Kartı ve Gözcü hedef assetlerindeki 6 alanla paket toplamı **36 yeni yapılandırılmış alan / 11 yeni patch asset** oldu.
+- AI Chip / A.I. Chip -> **Yapay Zekâ Çipi**, Silicon Board -> **Silisyum Devre Kartı**, Watcher -> **Gözcü** LOCKED.
+- `create_circuitboard` kaynak metni güncel tarifle uyuşmuyor: eski metin Silisyum + Bakır Kabloyu Madde Birleştiricide birleştirmeyi söylüyor. Vanilla pinned tarif `siliconboard` için `craftingfurnace3` grubunu, yani **Atomik Fırını**, ve Kum + Kömür girdilerini kullanıyor. FU Madde Birleştirici yalnız `prototyper1/2/3` filtrelerini gösteriyor. Türkçe görev gerçek üretim zincirine göre düzeltildi.
+- `fuquest_battery` kaynak metni eski **Wiring Tool** adını kullanıyor. FU'daki ilgili araç `wiretoolfu` ve gerçek kısa adı **Mechanic's Wrench**; projede **Tamirci Anahtarı** olarak zaten LOCKED/çevrilmiş olduğundan görev buna eşlendi.
+- `create_centrifuge` tamamlanma metnindeki generic `advanced centrifuge`, gerçek sonraki envanter adı olan **Gaz Santrifüjü** ile açıklaştırıldı.
+- Silisyum Devre Kartı vanilla asset olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
+- Electronics yeni alanları pinned/vanilla kaynakta **36/36 PASS**; renk, kontrol kodu ve sayı bütünlüğü **PASS**; üretilen patchlerde **36 test + 36 replace PASS**.
+
+### v0.10 Genetics geçişi
+
+- `fu_genetics` quest-listindeki **9/9 görev** yerelleştirildi.
+- Genetics görevleri **32 görünür görev alanı**; doğrudan hedef 9 assette **19 görünür alan** olmak üzere toplam **51 yeni yapılandırılmış alan / 18 yeni patch asset** içeriyor.
+- Mucize Otu Tohumu, Bracken Ağacı Tohumu, Mutavisk Tohumu, Oonforta Tohumu, Klonlama Laboratuvarı, Ignus Biberi Tohumu, Mutavisk Miğferi, Radyasyon Yaprağı ve Thornitox Tohumu LOCKED.
+- Pinned tarifler `designlab1 = Sera`, `designlab2 = Botanik Laboratuvarı`, `designlab3 = Gen Tasarım Laboratuvarı` kademeleriyle çaprazlandı. Kaynak görevlerdeki eski/yanlış istasyon yönlendirmeleri buna göre düzeltildi.
+- `create_miraclegrass`: kaynak gereksiz yere Gen Tasarım Laboratuvarı isterken gerçek tarif `designlab1`; Türkçe görev **Sera** üzerinden düzeltildi.
+- `fuquest_bracken` ve `fuquest_oonforta`: kaynak Sera ile üretim yapılabileceğini ima ediyor, ancak gerçek tarifler `designlab2`; Türkçe görevler **Botanik Laboratuvarı** gereksinimini açıkça söylüyor.
+- `fuquest_mutavisk` ve `create_ignuschili`: belirsiz/gereksiz yüksek laboratuvar yönlendirmeleri gerçek `designlab2` tarifine göre **Botanik Laboratuvarı** olarak açıklaştırıldı.
+- Kaynak metinde adet yazmayan ancak quest koşulu 3 olan Bracken, Mutavisk, Oonforta, Ignus Biberi ve Radyasyon Yaprağı hedeflerinde gerçek adet oyuncuya açıkça gösterildi.
+- `fuquest_cloning` kaynak metni hedefi açık söylemek yerine cihaz kullanımını iki kez tekrar ediyor; Türkçe başlangıç metni doğrudan **Klonlama Laboratuvarı üret** hedefini anlatacak şekilde düzenlendi.
+- Genetics yeni alanları **51/51 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **51 test + 51 replace PASS**.
+
+### v0.10 Mechanical geçişi
+
+- `fu_mechanical` quest-listindeki 7 görev + Bilim Karakolu NPC'sinin verdiği `create_blackglass` olmak üzere **8/8 erişilebilir Mechanical görevi** yerelleştirildi.
+- Mechanical görevleri **31 görünür görev alanı**; Elektromıknatıs, Asit Kalkanı ve Siyah Cam hedeflerinde **10 görünür alan** olmak üzere toplam **41 yeni yapılandırılmış alan / 11 yeni patch asset** içeriyor.
+- Acid Shield -> **Asit Kalkanı**, Black Glass -> **Siyah Cam** LOCKED; Elektromıknatıs mevcut LOCKED kararına göre envanterde de çevrildi.
+- `create_atmosregulator` teslim metnindeki eski `Atmosphere Regulator`, gerçek eşya adı `Atmospheric Regulator` ile eşlenerek **Atmosfer Düzenleyici** kullanıldı.
+- `create_blackglass` başlangıç metni gerçek quest koşulundaki hedefi açık söylemiyordu; Türkçede Yüksek Fırında Obsidiyen eritip **Siyah Cam** elde etme hedefi açıklaştırıldı.
+- Siyah Cam vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı; ırk inceleme metinleri de aynı assette yerelleştirildi.
+- Mechanical yeni alanları **41/41 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **41 test + 41 replace PASS**.
+
+### v0.10 Physics geçişi
+
+- `fu_physics` quest-listindeki **4/4 görev** yerelleştirildi.
+- Physics görevleri **16 görünür görev alanı**; Protocite Külçesi, Trityum Çubuğu ve Işınlayıcı Çekirdeği hedeflerinde **6 görünür alan** olmak üzere toplam **22 yeni yapılandırılmış alan / 7 yeni patch asset** içeriyor.
+- Industrial Furnace -> **Endüstriyel Fırın**, Protocite Bar -> **Protocite Külçesi**, Tritium Rod -> **Trityum Çubuğu** LOCKED; Işınlayıcı Çekirdeği mevcut LOCKED kararına göre vanilla envanter assetinde de çevrildi.
+- `create_protocite` kaynak metnindeki **Fission Furnace** güncel değildir. Pinned `protocitebar` tarifi `craftingfurnace2` grubundadır; vanilla gerçek kademe adı **Industrial Furnace / Endüstriyel Fırın** olduğundan Türkçe görev gerçek üretim zincirine göre düzeltildi.
+- `create_tritium` kaynak metni Fisyon Reaktörü üretmeyi söylese de gerçek quest koşulu yalnız 1 `tritium` ister. Pinned Tritium tarifi `craftingfurnace3`, yani **Atomik Fırın** grubundadır. Türkçe görev gerçek hedefe göre düzeltildi.
+- Kaynak teslim metinlerinde adet yazmayan Protocite ve Trityum hedeflerinde gerçek quest koşulları olan **2** ve **1** açıkça gösterildi.
+- Işınlayıcı Çekirdeği vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
+- Physics yeni alanları **22/22 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **22 test + 22 replace PASS**.
