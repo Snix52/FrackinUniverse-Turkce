@@ -397,6 +397,160 @@ items/active/weapons/whip/stingwhip.activeitem
 items/active/weapons/whip/telebriumwhip.activeitem
 '''.split())
 
+# Aktif fu_warcraft ağacındaki irradiumgear, triangliumgear, prisilitegear,
+# quietusgear ve bioweaponsgear düğümlerinin açtığı, gerçek üretim tarifi
+# bulunan v0.24 Kademe 4 savaş ekipmanı. Burada 148 yeni asset vardır.
+V024_TIER4_REMAINING_COMBAT_ASSETS = set('''
+items/active/shields/atropusshield.activeitem
+items/active/shields/cuteshield.activeitem
+items/active/shields/diamondshield.activeitem
+items/active/shields/irradiumshield.activeitem
+items/active/shields/quietusshield.activeitem
+items/active/weapons/boomerang/cuteboomerang.activeitem
+items/active/weapons/boomerang/quietusboomerang.activeitem
+items/active/weapons/bow/carnagebow/carnagebow.activeitem
+items/active/weapons/bow/cutebow/cutebow.activeitem
+items/active/weapons/bow/irradiumbow/irradiumbow.activeitem
+items/active/weapons/bow/prismaticbow/prismaticbow.activeitem
+items/active/weapons/bow/quietusbow/quietusbow.activeitem
+items/active/weapons/bow/quietuscrossbow/quietuscrossbow.activeitem
+items/active/weapons/chakram/cutechakram.activeitem
+items/active/weapons/fist/cutecestus.activeitem
+items/active/weapons/fist/cutegauntlet.activeitem
+items/active/weapons/fist/monsterclaw.activeitem
+items/active/weapons/melee/axe/advalloyaxe.activeitem
+items/active/weapons/melee/axe/cuteaxe.activeitem
+items/active/weapons/melee/axe/fuatropusaxe.activeitem
+items/active/weapons/melee/axe/irradiumaxe.activeitem
+items/active/weapons/melee/axe/quietusaxe.activeitem
+items/active/weapons/melee/broadsword/advalloybroadsword.activeitem
+items/active/weapons/melee/broadsword/coralstinger.activeitem
+items/active/weapons/melee/broadsword/coralsword.activeitem
+items/active/weapons/melee/broadsword/cutebroadsword.activeitem
+items/active/weapons/melee/broadsword/fuatropusbroadsword.activeitem
+items/active/weapons/melee/broadsword/irradiumsword.activeitem
+items/active/weapons/melee/broadsword/mineralblade.activeitem
+items/active/weapons/melee/broadsword/quietusemperor.activeitem
+items/active/weapons/melee/broadsword/quietusknight.activeitem
+items/active/weapons/melee/broadsword/triangliumbroadsword.activeitem
+items/active/weapons/melee/dagger/advalloydagger.activeitem
+items/active/weapons/melee/dagger/cutedagger.activeitem
+items/active/weapons/melee/dagger/fuatropusdagger.activeitem
+items/active/weapons/melee/dagger/irradiumdagger.activeitem
+items/active/weapons/melee/dagger/quietusknave.activeitem
+items/active/weapons/melee/dagger/quietusrogue.activeitem
+items/active/weapons/melee/greataxe/cutegreataxe.activeitem
+items/active/weapons/melee/greataxe/fuatropusgreataxe.activeitem
+items/active/weapons/melee/greataxe/irradiumgreataxe.activeitem
+items/active/weapons/melee/greataxe/quietusgreataxe.activeitem
+items/active/weapons/melee/hammer/advalloyhammer.activeitem
+items/active/weapons/melee/hammer/cutehammer.activeitem
+items/active/weapons/melee/hammer/fuatropushammer.activeitem
+items/active/weapons/melee/hammer/irradiumhammer.activeitem
+items/active/weapons/melee/hammer/quietushammer.activeitem
+items/active/weapons/melee/katana/advalloykatana.activeitem
+items/active/weapons/melee/katana/cutekatana.activeitem
+items/active/weapons/melee/katana/irradiumkatana.activeitem
+items/active/weapons/melee/katana/quietuskatana.activeitem
+items/active/weapons/melee/katana/triangliumkatana.activeitem
+items/active/weapons/melee/longsword/crystallineblade.activeitem
+items/active/weapons/melee/longsword/cutelongsword.activeitem
+items/active/weapons/melee/longsword/irradiumlongsword.activeitem
+items/active/weapons/melee/longsword/quietusgeneral.activeitem
+items/active/weapons/melee/longsword/triangliumlongsword.activeitem
+items/active/weapons/melee/mace/cutemace.activeitem
+items/active/weapons/melee/mace/goldmace.activeitem
+items/active/weapons/melee/mace/hellfiremace.activeitem
+items/active/weapons/melee/mace/irradiummace.activeitem
+items/active/weapons/melee/mace/quietusmace.activeitem
+items/active/weapons/melee/quarterstaff/cutequarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/irradiumquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/quietusquarterstaff.activeitem
+items/active/weapons/melee/rapier/advalloyrapier.activeitem
+items/active/weapons/melee/rapier/cuterapier.activeitem
+items/active/weapons/melee/rapier/diamondrapier.activeitem
+items/active/weapons/melee/rapier/irradiumrapier.activeitem
+items/active/weapons/melee/rapier/mineralrapier.activeitem
+items/active/weapons/melee/rapier/quietusrapier.activeitem
+items/active/weapons/melee/scythe/cutescythe.activeitem
+items/active/weapons/melee/scythe/fuatropusscythe.activeitem
+items/active/weapons/melee/scythe/irradiumscythe.activeitem
+items/active/weapons/melee/scythe/quietusscythe.activeitem
+items/active/weapons/melee/shortspear/advalloyshortspear.activeitem
+items/active/weapons/melee/shortspear/cuteshortspear.activeitem
+items/active/weapons/melee/shortspear/fuatropusshortspear.activeitem
+items/active/weapons/melee/shortspear/irradiumshortspear.activeitem
+items/active/weapons/melee/shortspear/quietusshortspear.activeitem
+items/active/weapons/melee/shortsword/advalloyshortsword.activeitem
+items/active/weapons/melee/shortsword/coralsword2.activeitem
+items/active/weapons/melee/shortsword/cuteshortsword.activeitem
+items/active/weapons/melee/shortsword/diamondblade.activeitem
+items/active/weapons/melee/shortsword/fuatropusshortsword.activeitem
+items/active/weapons/melee/shortsword/irradiumblade.activeitem
+items/active/weapons/melee/shortsword/quietusassassin.activeitem
+items/active/weapons/melee/shortsword/quietuscaptain.activeitem
+items/active/weapons/melee/shortsword/quietusmercenary.activeitem
+items/active/weapons/melee/spear/advalloyspear.activeitem
+items/active/weapons/melee/spear/coralspear.activeitem
+items/active/weapons/melee/spear/cutespear.activeitem
+items/active/weapons/melee/spear/fuatropusspear.activeitem
+items/active/weapons/melee/spear/irradiumspear.activeitem
+items/active/weapons/melee/spear/quietusspear.activeitem
+items/active/weapons/other/magnorbs/magnorbatropus/magnorbatropus.activeitem
+items/active/weapons/ranged/unique/biogun.activeitem
+items/active/weapons/ranged/unique/biopistol.activeitem
+items/active/weapons/ranged/unique/blastgun.activeitem
+items/active/weapons/ranged/unique/curveblaster.activeitem
+items/active/weapons/ranged/unique/cutearmgun.activeitem
+items/active/weapons/ranged/unique/cutemachinegun.activeitem
+items/active/weapons/ranged/unique/cuteorblauncher.activeitem
+items/active/weapons/ranged/unique/cutepistol.activeitem
+items/active/weapons/ranged/unique/cuterocketlauncher.activeitem
+items/active/weapons/ranged/unique/cuteshotgun.activeitem
+items/active/weapons/ranged/unique/cutesmg.activeitem
+items/active/weapons/ranged/unique/cutesniperrifle.activeitem
+items/active/weapons/ranged/unique/energycutter.activeitem
+items/active/weapons/ranged/unique/eyecannon.activeitem
+items/active/weapons/ranged/unique/fualienlaser.activeitem
+items/active/weapons/ranged/unique/furainbowgun.activeitem
+items/active/weapons/ranged/unique/futriangliumpistol.activeitem
+items/active/weapons/ranged/unique/futriangliumsmg.activeitem
+items/active/weapons/ranged/unique/goregun.activeitem
+items/active/weapons/ranged/unique/irradiumpistol2.activeitem
+items/active/weapons/ranged/unique/irradiumrifle.activeitem
+items/active/weapons/ranged/unique/manstopper.activeitem
+items/active/weapons/ranged/unique/manstoppersmg.activeitem
+items/active/weapons/ranged/unique/mineralcannon.activeitem
+items/active/weapons/ranged/unique/mineralpistol.activeitem
+items/active/weapons/ranged/unique/peglaci/irradiumpistol/irradiumpistol.activeitem
+items/active/weapons/ranged/unique/peglaci/irradiumshotgun/irradiumshotgun.activeitem
+items/active/weapons/ranged/unique/pistolquietusfu.activeitem
+items/active/weapons/ranged/unique/quietusassaultrifle.activeitem
+items/active/weapons/ranged/unique/quietuspistol.activeitem
+items/active/weapons/ranged/unique/quietusrocketlauncher.activeitem
+items/active/weapons/ranged/unique/quietusshotgun.activeitem
+items/active/weapons/ranged/unique/quietussmg.activeitem
+items/active/weapons/ranged/unique/quietussniper.activeitem
+items/active/weapons/ranged/unique/riflequietusfu.activeitem
+items/active/weapons/ranged/unique/rifletriangliumfu.activeitem
+items/active/weapons/ranged/unique/science/irradiator/isn_irradiator.activeitem
+items/active/weapons/ranged/unique/tinydancer.activeitem
+items/active/weapons/staff/cutestaff/cutestaff.activeitem
+items/active/weapons/staff/orestaffs/corruptstaff.activeitem
+items/active/weapons/staff/orestaffs/irradiumstaff.activeitem
+items/active/weapons/staff/orestaffs/prismaticstaff.activeitem
+items/active/weapons/staff/orestaffs/quietusstaff.activeitem
+items/active/weapons/wand/fubiowand/fubiowand.activeitem
+items/active/weapons/wand/orewands/corruptwand.activeitem
+items/active/weapons/wand/orewands/irradiumwand.activeitem
+items/active/weapons/wand/orewands/prismaticwand.activeitem
+items/active/weapons/wand/orewands/quietuswand.activeitem
+items/active/weapons/whip/cutewhip.activeitem
+items/active/weapons/whip/irradiumwhip.activeitem
+items/active/weapons/whip/lasherwhip.activeitem
+items/active/weapons/whip/triwhip.activeitem
+'''.split())
+
 # Aktif fu_warcraft ağacındaki advancealloygear ve durasteelgear
 # düğümlerinin açtığı, gerçek üretim tarifi bulunan v0.23 Kademe 4
 # çekirdek savaş ekipmanı. Burada 48 yeni asset vardır.
@@ -825,6 +979,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V024_TIER4_REMAINING_COMBAT_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V023_TIER4_CORE_COMBAT_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V022_TIER3_COMBAT_ASSETS:

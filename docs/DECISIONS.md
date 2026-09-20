@@ -467,3 +467,11 @@
 - 48 assette yalnız `/shortdescription` ve `/description` alanları çevrildi. Bir adet Matter Manipulator sınıfı `.beamaxe` de araştırma + tarif zinciriyle açıldığı için savaş ekipmanı kapsamındaki aynı görünür alan kuralıyla işlendi.
 - `Gauss`, `Breach` ve `Stynger` aile/model adları korundu. `Railgun` -> **Raylı Tüfek**, `Sonic Cannon` -> **Sonik Top**, `Gravity Wand` -> **Yerçekimi Değneği**, `Orbital Strike` -> **Yörünge Saldırısı** olarak kilitlendi.
 - Yeni kapsam **96 yapılandırılmış alan / 48 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **96 test + 96 replace PASS**. Proje toplamı **4028 structured + 15 Lua / 1092 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.24 Kademe 4 kalan savaş ekipmanı
+
+- Aktif Zırh ve Silahlar ağacındaki `irradiumgear`, `triangliumgear`, `prisilitegear`, `quietusgear` ve `bioweaponsgear` düğümleri seçildi. Beş düğümdeki 209 araştırma açılımından **148 benzersiz savaş ekipmanı**, gerçek ve etkin `.recipe` çıktısıyla doğrulandı.
+- Düğümler arasında tekrar veya önceden kapsanmış asset bulunmadı. 148 assette yalnız `/shortdescription` ve `/description` yerelleştirildi; teknik `itemName`, hasar, yetenek, mermi, kategori, tarif ve script alanları değiştirilmedi.
+- Irradium, Trianglium, Prisilite ve Quietus FU malzeme adları korundu. Prisilite silahlarındaki `Prismatic` sıfatı **Prizmatik**, Atropus biyosilah ailesindeki `Fleshweave` adı **Et Örgüsü**, `Plague Bearing` etkisi **Veba taşır** olarak kilitlendi.
+- `Breach`, `Gishinanki`, `Justicar`, `Manstopper`, `Ocu`, `Quellhound` ve `Lasher` model/özel adları korundu. Silah sınıfları önceki kararlarla eşlendi: **Büyük Kılıç, Dövüş Asası, Meç, Makineli Tabanca, Taarruz Tüfeği, Roketatar**.
+- Yeni kapsam **296 yapılandırılmış alan / 148 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **296 test + 296 replace PASS**. Proje toplamı **4324 structured + 15 Lua / 1240 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.

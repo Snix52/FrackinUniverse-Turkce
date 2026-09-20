@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.23.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.24.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  4028 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  4324 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23 Kademe 4 çekirdek savaş ekipmanı allowlist/deny-guard kapsamını doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23-v0.24 Kademe 4 savaş ekipmanı allowlist/deny-guard kapsamını doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -403,4 +403,25 @@ v0.23 Kademe 4 çekirdek savaş ekipmanı QA:
   toplam hedef asset: 1093 (1092 patch + 1 ham Lua override)
   GitHub Actions build/QA/ZIP: PASS (run 35525361862)
   otomatik paket: dist/FU_Turkce_v0.23.0_Beta.zip / 803880 bayt
+  oyun içi envanter/tooltip/font/bağlam LQA: BEKLİYOR
+
+v0.24 Kademe 4 kalan savaş ekipmanı QA:
+  aktif araştırma düğümleri: irradiumgear + triangliumgear + prisilitegear + quietusgear + bioweaponsgear
+  araştırma açılımı: 209 benzersiz item ID
+  gerçek recipe çıktısıyla doğrulanan savaş ekipmanı: 148/148 asset
+  önceden kapsanan veya düğümler arası tekrar: 0
+  yeni yerelleştirilen: 148 asset / 296 alan
+  çevrilen pointer sınıfları: shortdescription + description
+  yeni structured alan: 296
+  yeni patch asset: 148
+  pinned FU exact-source: 296/296 PASS
+  patch pairing: 296 test + 296 replace PASS
+  kapsam dışı ekipman negatif guard: PASS
+  teknik itemName alanı negatif guard: PASS
+  kaynak/provenans toplamı: 4236 pinned FU + 88 layered/external; 0 izlenmeyen
+  proje toplamı: 4324 structured + 15 Lua = 4339 görünür birim
+  toplam patch asset: 1240
+  toplam hedef asset: 1241 (1240 patch + 1 ham Lua override)
+  GitHub Actions build/QA/ZIP: BEKLİYOR
+  otomatik paket: dist/FU_Turkce_v0.24.0_Beta.zip / BEKLİYOR
   oyun içi envanter/tooltip/font/bağlam LQA: BEKLİYOR

@@ -517,3 +517,19 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Gravity Wand | Silah sınıfı | Silah | Yerçekimi Değneği | Gravite Asası | LOCKED | Wand kilidiyle uyumlu |
 | Orbital Strike | Silah / saldırı adı | Silah | Yörünge Saldırısı | Orbital Vuruş | LOCKED | |
 | Breach | Silah ailesi / model adı | Özel ad | Breach | Gedik | LOCKED | Aile/model adı korunur |
+
+## v0.24 Kademe 4 kalan savaş ekipmanı terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Prismatic | Prisilite silah ailesi sıfatı | Nesne | Prizmatik | Gökkuşağı | LOCKED | Kaynaktaki işlevsel aile sıfatı çevrilir |
+| Fleshweave | Atropus biyosilah ailesi | Nesne | Et Örgüsü | Et Dokuma | LOCKED | Kısa ve tanınabilir aile adı |
+| Rad-Burn | Silah durum etkisi | UI | Radyasyon Yanığı | Radyasyon Yakması | LOCKED | v0.22 Radiation Burn kararıyla aynı |
+| Plague Bearing | Biyosilah tooltip etkisi | UI | Veba taşır | Veba verir | LOCKED | Oyuncuya etkisi kısa ve doğrudan anlatılır |
+| Bioweapon | Silah türü | Silah | Biyosilah | Biyo Silah | LOCKED | Bitişik yazılır |
+| Assault Rifle | Silah sınıfı | Silah | Taarruz Tüfeği | Saldırı Tüfeği | LOCKED | Önceki Kademe 2-3 silahlarıyla eşlendi |
+| Rocket Launcher | Silah sınıfı | Silah | Roketatar | Roket Fırlatıcı | LOCKED | Bitişik yazılır |
+| Machine Pistol / SMG | Silah sınıfı | Silah | Makineli Tabanca | Hafif Makineli Tüfek | LOCKED | LMG sınıfından ayrılır |
+| HP Regen | Kalkan tooltip etkisi | UI | Can Yenilenmesi | HP Rejenerasyonu | LOCKED | |
+| Immune / Immunity | Kalkan tooltip etkisi | UI | Bağışıklık | Muafiyet | LOCKED | |
+| Irradium / Trianglium / Prisilite / Quietus | FU malzeme adları | Özel ad | Kaynaktaki yazım korunur | Türkçeleştirilmiş yazımlar | LOCKED | Silah sınıfları ayrıca Türkçeleştirilir |
