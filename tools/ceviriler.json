@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.27.0-beta",
-  "note": "v0.27 Kademe 4 aktif zırh setleri: Zırh ve Silahlar araştırma ağacındaki advancealloygear, durasteelgear, irradiumgear, triangliumgear, prisilitegear, quietusgear ve bioweaponsgear düğümlerinin açtığı, gerçek üretim tarifi bulunan 87 yeni zırh parçasında 174 görünür alan yerelleştirildi. Toplam 4876 structured + 15 Lua, 1516 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
+  "translation_version": "0.28.0-beta",
+  "note": "v0.28 Kademe 5 savaş ekipmanı: Zırh ve Silahlar araştırma ağacındaki tritaniumgear, enrichedgear, violiumgear, feroziumgear, aegisaltgear, densealloygear ve effigiumgear düğümlerinin açtığı, gerçek üretim tarifi bulunan 97 savaş ekipmanı doğrulandı. Önceden çevrilmiş Ferozium Satırı korunarak kalan 96 assette 192 görünür alan yerelleştirildi. Toplam 5068 structured + 15 Lua, 1612 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -35050,6 +35050,1350 @@
       "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Cute Weapons: Damage x^green;1.2^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Shadow Taint",
       "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Sevimli Silahlar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gölge Lekesi",
       "section": "v0.27 Kademe 4 aktif zırh setleri"
+    },
+    {
+      "asset": "items/active/shields/bubbleshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Aqua Shield",
+      "tr": "Su Kalkanı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/bubbleshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+0.1% HP Regen, +20% Energy^reset;",
+      "tr": "^green;+0.1% Can Yenilenmesi, +20% Enerji^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/hellfireshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Shield",
+      "tr": "Cehennem Ateşi Kalkanı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/hellfireshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+9% Energy Regen, Immune: Lava, Burning^reset;",
+      "tr": "^green;+9% Enerji Yenilenmesi, Bağışıklık: Lav, Yanma^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/nightar1.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Warsworn Shield",
+      "tr": "Savaş Yeminlisi Kalkanı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/nightar1.activeitem",
+      "pointer": "/description",
+      "en": "^green;-20% Fall Damage, +10 Shield Bash^reset;",
+      "tr": "^green;-20% Düşme Hasarı, +10 Kalkan Darbesi^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/shadowshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shadow Shield",
+      "tr": "Gölge Kalkanı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/shadowshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+3 Defense^reset;\n^cyan;Immune: Acid^reset;",
+      "tr": "^green;+3 Savunma^reset;\n^cyan;Bağışıklık: Asit^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/tritaniumshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tritanium Shield",
+      "tr": "Tritanium Kalkanı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/tritaniumshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;-30% Fall Damage^reset;",
+      "tr": "^green;-30% Düşme Hasarı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/lightningcrossbow/lightningcrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Lightning Crossbow",
+      "tr": "Yıldırım Arbaleti",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/lightningcrossbow/lightningcrossbow.activeitem",
+      "pointer": "/description",
+      "en": "Electrifying!",
+      "tr": "Elektrik saçıyor!",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/lightningstynger/lightningstynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Lightning Stynger",
+      "tr": "Yıldırım Stynger",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/lightningstynger/lightningstynger.activeitem",
+      "pointer": "/description",
+      "en": "Send out bolts like a lightning storm.",
+      "tr": "Yıldırım fırtınası gibi oklar yağdırır.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/shadowstring/shadowstring.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shadowstring",
+      "tr": "Gölge Kirişi",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/shadowstring/shadowstring.activeitem",
+      "pointer": "/description",
+      "en": "The darkest bow on the market",
+      "tr": "Piyasadaki en karanlık yay.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/effigiumaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Axe",
+      "tr": "Hayalet Balta",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/effigiumaxe.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.",
+      "tr": "Bir ruh kadar hayaletimsi.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/poweraxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tritanium Axe",
+      "tr": "Tritanium Balta",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/poweraxe.activeitem",
+      "pointer": "/description",
+      "en": "Smile for the birdy!\n^cyan;Inflicts Electrified and Bouncy^reset;",
+      "tr": "Kuş çıkacak, gülümse!\n^cyan;Elektriklenmeye ve Sekmeye yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/uraniumaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium Axe",
+      "tr": "Uranyum Balta",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/uraniumaxe.activeitem",
+      "pointer": "/description",
+      "en": "Made of enriched uranium.",
+      "tr": "Zenginleştirilmiş uranyumdan yapılmış.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/effigiumbroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Greatblade",
+      "tr": "Hayalet Büyük Kılıç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/effigiumbroadsword.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.\n^cyan;Inflicts Caliginous Gas^reset;",
+      "tr": "Bir ruh kadar hayaletimsi.\n^cyan;Caliginous Gazına yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/uraniumbroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium Blade",
+      "tr": "Uranyum Kılıcı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/uraniumbroadsword.activeitem",
+      "pointer": "/description",
+      "en": "Well this seems like a good idea!",
+      "tr": "Bu kesinlikle iyi bir fikre benziyor!",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/effigiumdagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Knife",
+      "tr": "Hayalet Bıçak",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/effigiumdagger.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.",
+      "tr": "Bir ruh kadar hayaletimsi.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/fushadowdagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shadeclaw",
+      "tr": "Gölgepençe",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/fushadowdagger.activeitem",
+      "pointer": "/description",
+      "en": "Shadow-forged dagger.\n^cyan;Shadow Damage^reset;",
+      "tr": "Gölgede dövülmüş bir hançer.\n^cyan;Gölge Hasarı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/uraniumdagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium Knife",
+      "tr": "Uranyum Bıçak",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/uraniumdagger.activeitem",
+      "pointer": "/description",
+      "en": "Swift and radioactive.",
+      "tr": "Hızlı ve radyoaktif.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailaegisalt.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Aegisalt Striker",
+      "tr": "Aegisalt Ezici",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailaegisalt.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;",
+      "tr": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flaileffigium.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Effigium Striker",
+      "tr": "Effigium Ezici",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flaileffigium.activeitem",
+      "pointer": "/description",
+      "en": "Emits dense shadow matter.\n^cyan;Breaks blocks^reset;",
+      "tr": "Yoğun gölge maddesi yayar.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/effigiumhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Hammer",
+      "tr": "Hayalet Çekiç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/effigiumhammer.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.",
+      "tr": "Bir ruh kadar hayaletimsi.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fuquantumhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Quantum Hammer",
+      "tr": "Kuantum Çekici",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fuquantumhammer.activeitem",
+      "pointer": "/description",
+      "en": "Straddles two universes. Amazing.\n^red;Deals Physical Damage^reset;",
+      "tr": "İki evrenin arasında duruyor. İnanılmaz.\n^red;Fiziksel Hasar verir^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/uraniumhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium Hammer",
+      "tr": "Uranyum Çekiç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/uraniumhammer.activeitem",
+      "pointer": "/description",
+      "en": "Forged from uranium and advanced alloy. Quite radioactive.",
+      "tr": "Uranyum ve gelişmiş alaşımdan dövülmüş. Oldukça radyoaktif.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/blooddiamondkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasmic Crystal Katana",
+      "tr": "Plazmik Kristal Katana",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/blooddiamondkatana.activeitem",
+      "pointer": "/description",
+      "en": "Gleaming with lethal promise.\n^yellow;6 hit combo^reset;\n^green;Combos cause bleeding^reset;",
+      "tr": "Ölümcül bir vaatle parıldıyor.\n^yellow;6 vuruşluk kombo^reset;\n^green;Kombolar kanamaya yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/diamondkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Diamond Katana",
+      "tr": "Elmas Katana",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/diamondkatana.activeitem",
+      "pointer": "/description",
+      "en": "Two-handed, shining diamond. Exceptionally beautiful and deadly.\n^yellow;8 hit combo^reset;",
+      "tr": "İki elle kullanılan, ışıl ışıl bir elmas. Olağanüstü güzel ve ölümcül.\n^yellow;8 vuruşluk kombo^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/blooddiamondlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasmic Crystal Longsword",
+      "tr": "Plazmik Kristal Uzun Kılıç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/blooddiamondlongsword.activeitem",
+      "pointer": "/description",
+      "en": "Shines with crystalline hatred.",
+      "tr": "Kristalimsi bir nefretle parlıyor.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/effigiumlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Blade",
+      "tr": "Hayalet Kılıç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/effigiumlongsword.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.\n^cyan;Inflicts Caliginous Gas^reset;",
+      "tr": "Bir ruh kadar hayaletimsi.\n^cyan;Caliginous Gazına yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/violiumlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Violium Longsword",
+      "tr": "Violium Uzun Kılıç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/violiumlongsword.activeitem",
+      "pointer": "/description",
+      "en": "Forged from stellar violium particulates and carbon.",
+      "tr": "Yıldız kökenli Violium parçacıkları ve karbondan dövülmüş.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/aegisaltmace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Aegisalt Mace",
+      "tr": "Aegisalt Topuz",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/aegisaltmace.activeitem",
+      "pointer": "/description",
+      "en": "A dense slab of whackin' fun.",
+      "tr": "Yoğun bir külçe dolusu ezme eğlencesi.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/densealloymace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Dense Mace",
+      "tr": "Yoğun Alaşım Topuzu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/densealloymace.activeitem",
+      "pointer": "/description",
+      "en": "Well crafted, but heavy. Design by Gezbo.",
+      "tr": "İyi işlenmiş ama ağır. Tasarım: Gezbo.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/effigiummace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Mace",
+      "tr": "Hayalet Topuz",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/effigiummace.activeitem",
+      "pointer": "/description",
+      "en": "Phantoms don't care. They'll still kill ya. Design by Gezbo.",
+      "tr": "Hayaletlerin umurunda olmaz. Seni yine de öldürürler. Tasarım: Gezbo.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/quantummace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Quantum Mace",
+      "tr": "Kuantum Topuzu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/quantummace.activeitem",
+      "pointer": "/description",
+      "en": "Don't ask, because Science.",
+      "tr": "Sorma, çünkü Bilim.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/uraniummace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium Mace",
+      "tr": "Uranyum Topuzu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/uraniummace.activeitem",
+      "pointer": "/description",
+      "en": "Completely non-toxic",
+      "tr": "Kesinlikle zehirsiz.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/diamondquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Diamond Quarterstaff",
+      "tr": "Elmas Dövüş Asası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/diamondquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "This is a very high-value weapon.",
+      "tr": "Son derece değerli bir silah.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/effigiumrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Rapier",
+      "tr": "Hayalet Meç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/effigiumrapier.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.",
+      "tr": "Bir ruh kadar hayaletimsi.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/tritaniumshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tritanium Shortspear",
+      "tr": "Tritanium Kısa Mızrak",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/tritaniumshortspear.activeitem",
+      "pointer": "/description",
+      "en": "A marvelously stabby device.\n^cyan;Inflicts Electrified^reset;\n^cyan;Hunting weapon^reset;",
+      "tr": "Şahane bir saplama aleti.\n^cyan;Elektriklenmeye yol açar^reset;\n^cyan;Av silahı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/effigiumshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm War-Knife",
+      "tr": "Hayalet Savaş Bıçağı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/effigiumshortsword.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.",
+      "tr": "Bir ruh kadar hayaletimsi.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/heliosblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Helios",
+      "tr": "Helios",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/heliosblade.activeitem",
+      "pointer": "/description",
+      "en": "Morphite honed to dangerous perfection.",
+      "tr": "Morphite, tehlikeli bir kusursuzlukla bilenmiş.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/obsidianblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Obsidian Sword",
+      "tr": "Obsidyen Kılıç",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/obsidianblade.activeitem",
+      "pointer": "/description",
+      "en": "Volcanic glass is so lovely and sharp.",
+      "tr": "Volkanik cam ne kadar güzel ve keskin.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/shadowburst.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shadow Reaper",
+      "tr": "Gölge Biçici",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/shadowburst.activeitem",
+      "pointer": "/description",
+      "en": "A soul-cleaver of ageless, unknown materials.\n^red;Inflicts Bleeding^reset;",
+      "tr": "Kadim ve bilinmeyen malzemelerden yapılmış bir ruh parçalayıcı.\n^red;Kanamaya yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/uraniumshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium War-Knife",
+      "tr": "Uranyum Savaş Bıçağı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/uraniumshortsword.activeitem",
+      "pointer": "/description",
+      "en": "It's actually quite deadly.",
+      "tr": "Aslında oldukça ölümcül.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/banespear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bane Spear",
+      "tr": "Felaket Mızrağı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/banespear.activeitem",
+      "pointer": "/description",
+      "en": "A piercing weapon of great style and sophistication.\n^cyan;Hunting weapon^reset;",
+      "tr": "Son derece şık ve incelikli bir delici silah.\n^cyan;Av silahı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/effigiumspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phantasm Spear",
+      "tr": "Hayalet Mızrak",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/effigiumspear.activeitem",
+      "pointer": "/description",
+      "en": "Ghostly as a spirit.\n^cyan;Hunting weapon^reset;",
+      "tr": "Bir ruh kadar hayaletimsi.\n^cyan;Av silahı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/tritaniumspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tritanium Spear",
+      "tr": "Tritanium Mızrağı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/tritaniumspear.activeitem",
+      "pointer": "/description",
+      "en": "You should shove this in a foe. For science!\n^cyan;Inflicts Electrified^reset;\n^cyan;Hunting weapon^reset;",
+      "tr": "Bunu bilim uğruna bir düşmana saplamalısın!\n^cyan;Elektriklenmeye yol açar^reset;\n^cyan;Av silahı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/uraniumspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Uranium Lance",
+      "tr": "Uranyum Kargısı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/uraniumspear.activeitem",
+      "pointer": "/description",
+      "en": "Infused with deadly enriched uranium. That's kind of you.\n^cyan;Hunting weapon^reset;",
+      "tr": "Ölümcül zenginleştirilmiş uranyumla doldurulmuş. Ne kadar düşüncelisin.\n^cyan;Av silahı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbhellfire/magnorbhellfire.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Orbs",
+      "tr": "Cehennem Ateşi Küreleri",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbhellfire/magnorbhellfire.activeitem",
+      "pointer": "/description",
+      "en": "Full of scorchy fun.",
+      "tr": "Yakıp kavuran eğlenceyle dolu.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbneutron/magnorbneutron.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Neutron Star Orbs",
+      "tr": "Nötron Yıldızı Küreleri",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbneutron/magnorbneutron.activeitem",
+      "pointer": "/description",
+      "en": "Superior gravity orbs. ^cyan;Counts as 'energy' weapon^reset;",
+      "tr": "Üstün yerçekimi küreleri. ^cyan;Set bonusları için 'enerji' silahı sayılır^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbshadow/magnorbshadow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shadow Orbs",
+      "tr": "Gölge Küreleri",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbshadow/magnorbshadow.activeitem",
+      "pointer": "/description",
+      "en": "Fires solidified shadow at foes.",
+      "tr": "Düşmanlara katılaşmış gölge fırlatır.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/violium/artillerygun1.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Volatile Missile Salvo",
+      "tr": "Kararsız Füze Salvosu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/violium/artillerygun1.activeitem",
+      "pointer": "/description",
+      "en": "Call in a devastating missile strike. Obliterates tiles.\n^cyan;Alt-fire increases damage^reset;",
+      "tr": "Yıkıcı bir füze saldırısı çağırır. Blokları yok eder.\n^cyan;Alternatif atış hasarı artırır^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/bigdaddy.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Instigator",
+      "tr": "Kışkırtıcı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/bigdaddy.activeitem",
+      "pointer": "/description",
+      "en": "A massive energy sniper rifle. Big impact.\n^yellow;AoE Denial Primary^reset;",
+      "tr": "Devasa bir enerji keskin nişancı tüfeği. Büyük darbe.\n^yellow;Birincil atış alanı engeller^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/farsight.activeitem",
+      "pointer": "/shortdescription",
+      "en": "FarSight XR-20",
+      "tr": "FarSight XR-20",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/farsight.activeitem",
+      "pointer": "/description",
+      "en": "Brutal long ranged rifle.\n^yellow;Inflicts bleeding^reset;",
+      "tr": "Acımasız bir uzun menzil tüfeği.\n^yellow;Kanamaya yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fucyclone.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Cyclone",
+      "tr": "Siklon",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fucyclone.activeitem",
+      "pointer": "/description",
+      "en": "Launches tiny little pellets of death. Really, really fast.",
+      "tr": "Minik ölüm saçmaları fırlatır. Hem de çok, çok hızlı.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuplasmacannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasma Eruptor",
+      "tr": "Plazma Püskürtücü",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuplasmacannon.activeitem",
+      "pointer": "/description",
+      "en": "Focuses energy for supreme damage output.\n^cyan;Counts as plasma weapon for set bonuses^reset;\n^yellow;Destroys tiles^reset;",
+      "tr": "En yüksek hasar çıktısı için enerjiyi odaklar.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Blokları yok eder^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuplasmagun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasma Rifle",
+      "tr": "Plazma Tüfeği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuplasmagun.activeitem",
+      "pointer": "/description",
+      "en": "Focuses energy for supreme damage output.\n^cyan;Counts as plasma weapon for set bonuses^reset;\n^yellow;Destroys tiles^reset;",
+      "tr": "En yüksek hasar çıktısı için enerjiyi odaklar.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Blokları yok eder^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/futritaniumpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Wildfire",
+      "tr": "Azgın Ateş",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/futritaniumpistol.activeitem",
+      "pointer": "/description",
+      "en": "Supreme fire rate with wild projectiles.",
+      "tr": "Deli mermilerle olağanüstü bir atış hızı sunar.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/gravgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gravity Gun",
+      "tr": "Yerçekimi Silahı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/gravgun.activeitem",
+      "pointer": "/description",
+      "en": "Condenses gravity into focused blasts.\n^cyan;Moves enemies. A lot.^reset;\n^yellow;Extreme Knockback (Alt)^reset;",
+      "tr": "Yerçekimini odaklanmış patlamalara yoğunlaştırır.\n^cyan;Düşmanları hem de çok fazla hareket ettirir.^reset;\n^yellow;Aşırı Geri Tepme (Alternatif)^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/gravitongun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Graviton Gun",
+      "tr": "Graviton Tüfeği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/gravitongun.activeitem",
+      "pointer": "/description",
+      "en": "Micro-gravity turned into a weapon.\n^yellow;Wave-burst primary^reset;\nAlt: ^green;Big knockback, Major Vulnerability^reset;",
+      "tr": "Mikro yerçekimi silaha dönüştürülmüş.\n^yellow;Birincil atış dalga patlamasıdır^reset;\nAlternatif: ^green;Güçlü geri tepme, Büyük Savunmasızlık^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/gravitonpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Graviton Pistol",
+      "tr": "Graviton Tabancası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/gravitonpistol.activeitem",
+      "pointer": "/description",
+      "en": "Micro-gravity turned into a weapon.\n^yellow;Short-ranged^reset;\n^green;Huge knockback^reset;",
+      "tr": "Mikro yerçekimi silaha dönüştürülmüş.\n^yellow;Kısa menzilli^reset;\n^green;Muazzam geri tepme^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/mineralcannonadv.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Particle Cannon",
+      "tr": "Parçacık Tüfeği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/mineralcannonadv.activeitem",
+      "pointer": "/description",
+      "en": "Enormous blasting potential.\n^yellow;Destroys tiles^reset;",
+      "tr": "Muazzam bir patlama potansiyeli.\n^yellow;Blokları yok eder^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/nitrogengun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nitrogen Cannon",
+      "tr": "Azot Topu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/nitrogengun.activeitem",
+      "pointer": "/description",
+      "en": "Effective in most situations, though somewhat chilling.\n^yellow;Inflicts freezing^reset;",
+      "tr": "Biraz dondurucu olsa da çoğu durumda etkilidir.\n^yellow;Donma etkisi uygular^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/nitrogenpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nitrogen SMG",
+      "tr": "Azot Makineli Tabanca",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/nitrogenpistol.activeitem",
+      "pointer": "/description",
+      "en": "Effective in most situations, though somewhat chilling.\n^yellow;Inflicts freezing^reset;",
+      "tr": "Biraz dondurucu olsa da çoğu durumda etkilidir.\n^yellow;Donma etkisi uygular^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/chargecannon/chargecannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Rad Charger",
+      "tr": "Radyasyon Yükleyici",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/chargecannon/chargecannon.activeitem",
+      "pointer": "/description",
+      "en": "Charge and release radioactive-electric blasts.\n^yellow;Increases damage with charge^reset;",
+      "tr": "Radyoaktif-elektrik patlamalarını doldurup serbest bırakır.\n^yellow;Dolduruldukça hasarı artar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/cripplermachinegun/chargemachinegun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Crippler Machinegun",
+      "tr": "Sakatlayıcı Makineli Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/cripplermachinegun/chargemachinegun.activeitem",
+      "pointer": "/description",
+      "en": "Rapid fire radioactive joy!\n^yellow;Inflicts Radiation Burn^reset;",
+      "tr": "Seri atışlı radyoaktif eğlence!\n^yellow;Radyasyon Yanığına yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/freezecannon/fufreezecannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Coldsnap",
+      "tr": "Ani Soğuk",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/freezecannon/fufreezecannon.activeitem",
+      "pointer": "/description",
+      "en": "A cloud-laying ice weapon.\n^yellow;Blasts cause targets to slip^reset;\n^cyan;Alt-fire freezes enemies^reset;",
+      "tr": "Buz bulutları bırakan bir silah.\n^yellow;Patlamalar hedefleri kaydırır^reset;\n^cyan;Alternatif atış düşmanları dondurur^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/frostcannonarm/frostcannonarm.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Mistral Icethrower",
+      "tr": "Mistral Buz Püskürtücü",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/frostcannonarm/frostcannonarm.activeitem",
+      "pointer": "/description",
+      "en": "Freezing mists weaponized for your enjoyment\n^yellow;Inflicts freezing^reset;\n^green;Multi-shot^reset;",
+      "tr": "Dondurucu sisler keyfin için silaha dönüştürülmüş.\n^yellow;Donma etkisi uygular^reset;\n^green;Çoklu atış^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fubeamgun/fubeamgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Beam Gun",
+      "tr": "Işın Tüfeği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fubeamgun/fubeamgun.activeitem",
+      "pointer": "/description",
+      "en": "A solid beam guaranteed to roast your foes.",
+      "tr": "Düşmanlarını kavurması garanti, yoğun bir ışın.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fucloudgun/fucloudgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Boom Cannon",
+      "tr": "Patlama Topu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fucloudgun/fucloudgun.activeitem",
+      "pointer": "/description",
+      "en": "Fires clouds of exploding gas.\n^yellow;Extremely loud^reset;\n^green;Massive explosive area^reset;",
+      "tr": "Patlayıcı gaz bulutları ateşler.\n^yellow;Aşırı gürültülü^reset;\n^green;Devasa patlama alanı^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fuenergyblaster/fuenergyblaster.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Energy Lobber",
+      "tr": "Enerji Atıcı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fuenergyblaster/fuenergyblaster.activeitem",
+      "pointer": "/description",
+      "en": "An extremely useful weapon utilizing controlled energy.\n^yellow;Exceptional utility^reset;\n^cyan;Inflicts Electrified status^reset;",
+      "tr": "Denetimli enerji kullanan son derece yararlı bir silah.\n^yellow;Olağanüstü işlevsellik^reset;\n^cyan;Elektriklenmeye yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fuenergymachinegun/fuenergymachinegun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Thresher",
+      "tr": "Biçici",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fuenergymachinegun/fuenergymachinegun.activeitem",
+      "pointer": "/description",
+      "en": "Brutal violium-derived blasts shred opponents.\n^yellow;Inflicts electrified status^reset;\n^cyan;Inflicts Slow status^reset;",
+      "tr": "Violium kökenli acımasız patlamalar düşmanları parçalar.\n^yellow;Elektriklenmeye yol açar^reset;\n^cyan;Yavaşlatma etkisi uygular^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fuminelayer/fuminelayer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Mine Launcher",
+      "tr": "Mayın Fırlatıcı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fuminelayer/fuminelayer.activeitem",
+      "pointer": "/description",
+      "en": "Make minced-meat with minefields.\n^yellow;Inflicts burning^reset;\n^green;Devastates large area^reset;",
+      "tr": "Mayın tarlalarıyla düşmanlarını kıymaya çevir.\n^yellow;Yanma etkisi uygular^reset;\n^green;Geniş bir alanı mahveder^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/furailgun/furailgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Railgun",
+      "tr": "Raylı Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/furailgun/furailgun.activeitem",
+      "pointer": "/description",
+      "en": "A devastating long-ranged rifle.\n^yellow;Pierces tiles, increases damage with range^reset;\n^cyan;Efficient alt-fire^reset;",
+      "tr": "Yıkıcı bir uzun menzil tüfeği.\n^yellow;Blokları deler, menzille birlikte hasarı artar^reset;\n^cyan;Verimli alternatif atış^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fushocklance/fushocklance.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shocklance",
+      "tr": "Şok Kargısı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/fushocklance/fushocklance.activeitem",
+      "pointer": "/description",
+      "en": "Shockingly deadly.\n^yellow;Destructive Alt-Fire^reset;\n^cyan;Primary fire does secondary physical damage^reset;",
+      "tr": "Şok edici derecede ölümcül.\n^yellow;Yıkıcı alternatif atış^reset;\n^cyan;Birincil atış ek fiziksel hasar verir^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/imperius/chargemachinegun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Imperius Minigun",
+      "tr": "Imperius Döner Makineli Tüfeği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/imperius/chargemachinegun.activeitem",
+      "pointer": "/description",
+      "en": "Exceptionally powerful.\n^yellow;Alt-Fire slows enemies^reset;\n^green;+Sustained Fire^reset;\n^red;-Slowed^reset;",
+      "tr": "Olağanüstü güçlü.\n^yellow;Alternatif atış düşmanları yavaşlatır^reset;\n^green;+Kesintisiz Atış^reset;\n^red;-Yavaşlatılmış^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/splittergun/splittergun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fissure Splitrifle",
+      "tr": "Fissure Ayrık Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/splittergun/splittergun.activeitem",
+      "pointer": "/description",
+      "en": "The Peglaci honed them, but you perfected them. A devastating weapon.",
+      "tr": "Peglaci onları geliştirdi, sen ise kusursuzlaştırdın. Yıkıcı bir silah.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolaegisaltfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Aegisalt Revolver",
+      "tr": "Aegisalt Revolver",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolaegisaltfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoleffigiumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Effigium Revolver",
+      "tr": "Effigium Revolver",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoleffigiumfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolferoziumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ferozium Revolver",
+      "tr": "Ferozium Revolver",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolferoziumfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolirradiumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Irradium Revolver",
+      "tr": "Irradium Revolver",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolirradiumfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolvioliumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Violium Revolver",
+      "tr": "Violium Revolver",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolvioliumfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleaegisaltfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Aegisalt Rifle",
+      "tr": "Aegisalt Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleaegisaltfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleeffigiumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Effigium Rifle",
+      "tr": "Effigium Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleeffigiumfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleferoziumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ferozium Rifle",
+      "tr": "Ferozium Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleferoziumfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleirradiumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Irradium Rifle",
+      "tr": "Irradium Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleirradiumfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/riflevioliumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Violium Rifle",
+      "tr": "Violium Tüfek",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/riflevioliumfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/annihilator/isn_annihilator.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Wave Gun",
+      "tr": "Dalga Tüfeği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/annihilator/isn_annihilator.activeitem",
+      "pointer": "/description",
+      "en": "Fires unusual blasts that ignore physics.\n^yellow;Ignores walls^reset;",
+      "tr": "Fizik kurallarını yok sayan sıra dışı patlamalar ateşler.\n^yellow;Duvarları yok sayar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/flamecannon/isn_flamethrower4.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Inferno",
+      "tr": "İnferno",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/flamecannon/isn_flamethrower4.activeitem",
+      "pointer": "/description",
+      "en": "A rather large flame weapon.\n^yellow;Inflicts burning^reset;",
+      "tr": "Oldukça büyük bir alev silahı.\n^yellow;Yanma etkisi uygular^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/fusioncannon/isn_fusioncannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fusion Cannon",
+      "tr": "Füzyon Topu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/fusioncannon/isn_fusioncannon.activeitem",
+      "pointer": "/description",
+      "en": "A super-heavy fusion rocket launcher.\n^yellow;Huge radius^reset;\n^green;Destroys tiles^reset;",
+      "tr": "Süper ağır bir füzyon roketatarı.\n^yellow;Devasa etki alanı^reset;\n^green;Blokları yok eder^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/plasmabeam/isn_plasmabeam.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasma Beam Cannon",
+      "tr": "Plazma Işın Topu",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/plasmabeam/isn_plasmabeam.activeitem",
+      "pointer": "/description",
+      "en": "Slow but devastating. Forbidden in the Helyn Sector.\n^cyan;Counts as plasma weapon for set bonuses^reset;\n^yellow;Extreme explosion^reset;\n^red;Heavy^reset;",
+      "tr": "Yavaş ama yıkıcı. Helyn Sektöründe yasaktır.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Aşırı güçlü patlama^reset;\n^red;Ağır^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/plasmapistol/isn_plasmapistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasma Pistol",
+      "tr": "Plazma Tabancası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/plasmapistol/isn_plasmapistol.activeitem",
+      "pointer": "/description",
+      "en": "Unusual sidearm for an unusual age.\n^cyan;Counts as plasma weapon for set bonuses^reset;\n^yellow;Bouncing projectiles^reset;",
+      "tr": "Sıra dışı bir çağ için sıra dışı bir tabanca.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Seken mermiler^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/terawattlaser/isn_terawattlaser.activeitem",
+      "pointer": "/shortdescription",
+      "en": "XT Laser Repeater",
+      "tr": "XT Lazer Tekrarlayıcı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/terawattlaser/isn_terawattlaser.activeitem",
+      "pointer": "/description",
+      "en": "You wanted firing speed? You've got it!\n^yellow;Bouncing projectiles^reset;",
+      "tr": "Atış hızı mı istedin? Al sana!\n^yellow;Seken mermiler^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/veilbreaker.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Veilbreaker",
+      "tr": "Perdekıran",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/veilbreaker.activeitem",
+      "pointer": "/description",
+      "en": "A brutal and efficient weapon.",
+      "tr": "Acımasız ve verimli bir silah.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/gravitystaff/gravitystaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Matter Staff",
+      "tr": "Madde Asası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/gravitystaff/gravitystaff.activeitem",
+      "pointer": "/description",
+      "en": "^orange;Primary^reset;: Foreground, ^orange;Secondary^reset;: Background.",
+      "tr": "^orange;Birincil^reset;: Ön Plan, ^orange;İkincil^reset;: Arka Plan.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/effigiumstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Effigium Staff",
+      "tr": "Effigium Asası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/effigiumstaff.activeitem",
+      "pointer": "/description",
+      "en": "Conjures a cloud of shadowgas.",
+      "tr": "Bir Caliginous Gazı bulutu oluşturur.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/tritaniumstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tritanium Staff",
+      "tr": "Tritanium Asası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/tritaniumstaff.activeitem",
+      "pointer": "/description",
+      "en": "Conjures up thunderheads.",
+      "tr": "Fırtına bulutları oluşturur.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/shadowstaff/shadowstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shadow Staff",
+      "tr": "Gölge Asası",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/shadowstaff/shadowstaff.activeitem",
+      "pointer": "/description",
+      "en": "This powerful staff summons a deadly shadow snake.",
+      "tr": "Bu güçlü asa, ölümcül bir gölge yılanı çağırır.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/effigiumwand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Effigium Wand",
+      "tr": "Effigium Değneği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/effigiumwand.activeitem",
+      "pointer": "/description",
+      "en": "Sufficiently Advanced Technology.",
+      "tr": "Yeterince Gelişmiş Teknoloji.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/tritaniumwand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tritanium Wand",
+      "tr": "Tritanium Değneği",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/tritaniumwand.activeitem",
+      "pointer": "/description",
+      "en": "Sufficiently Advanced Technology.",
+      "tr": "Yeterince Gelişmiş Teknoloji.",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/effigiumwhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Effigium Whip",
+      "tr": "Effigium Kırbacı",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/effigiumwhip.activeitem",
+      "pointer": "/description",
+      "en": "A ghostly lash. Rather short but swings fast.\n^cyan;Inflicts Caliginous Gas^reset;",
+      "tr": "Hayaletimsi bir kamçı. Oldukça kısa ama hızlı savrulur.\n^cyan;Caliginous Gazına yol açar^reset;",
+      "section": "v0.28 Kademe 5 savaş ekipmanı"
     }
   ]
 }

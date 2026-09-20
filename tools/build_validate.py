@@ -517,6 +517,108 @@ items/armors/tier3/stalkers/fudarkrobespants.legs
 items/armors/uniques/fuhoodedmask/fuhoodedmask.head
 '''.split())
 
+# Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
+# gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
+# Battle paketinde çevrildiği için burada 96 yeni asset vardır.
+V028_TIER5_COMBAT_ASSETS = set('''
+items/active/shields/bubbleshield.activeitem
+items/active/shields/hellfireshield.activeitem
+items/active/shields/nightar1.activeitem
+items/active/shields/shadowshield.activeitem
+items/active/shields/tritaniumshield.activeitem
+items/active/weapons/bow/lightningcrossbow/lightningcrossbow.activeitem
+items/active/weapons/bow/lightningstynger/lightningstynger.activeitem
+items/active/weapons/bow/shadowstring/shadowstring.activeitem
+items/active/weapons/melee/axe/effigiumaxe.activeitem
+items/active/weapons/melee/axe/poweraxe.activeitem
+items/active/weapons/melee/axe/uraniumaxe.activeitem
+items/active/weapons/melee/broadsword/effigiumbroadsword.activeitem
+items/active/weapons/melee/broadsword/uraniumbroadsword.activeitem
+items/active/weapons/melee/dagger/effigiumdagger.activeitem
+items/active/weapons/melee/dagger/fushadowdagger.activeitem
+items/active/weapons/melee/dagger/uraniumdagger.activeitem
+items/active/weapons/melee/flail/flailaegisalt.activeitem
+items/active/weapons/melee/flail/flaileffigium.activeitem
+items/active/weapons/melee/hammer/effigiumhammer.activeitem
+items/active/weapons/melee/hammer/fuquantumhammer.activeitem
+items/active/weapons/melee/hammer/uraniumhammer.activeitem
+items/active/weapons/melee/katana/blooddiamondkatana.activeitem
+items/active/weapons/melee/katana/diamondkatana.activeitem
+items/active/weapons/melee/longsword/blooddiamondlongsword.activeitem
+items/active/weapons/melee/longsword/effigiumlongsword.activeitem
+items/active/weapons/melee/longsword/violiumlongsword.activeitem
+items/active/weapons/melee/mace/aegisaltmace.activeitem
+items/active/weapons/melee/mace/densealloymace.activeitem
+items/active/weapons/melee/mace/effigiummace.activeitem
+items/active/weapons/melee/mace/quantummace.activeitem
+items/active/weapons/melee/mace/uraniummace.activeitem
+items/active/weapons/melee/quarterstaff/diamondquarterstaff.activeitem
+items/active/weapons/melee/rapier/effigiumrapier.activeitem
+items/active/weapons/melee/shortspear/tritaniumshortspear.activeitem
+items/active/weapons/melee/shortsword/effigiumshortsword.activeitem
+items/active/weapons/melee/shortsword/heliosblade.activeitem
+items/active/weapons/melee/shortsword/obsidianblade.activeitem
+items/active/weapons/melee/shortsword/shadowburst.activeitem
+items/active/weapons/melee/shortsword/uraniumshortsword.activeitem
+items/active/weapons/melee/spear/banespear.activeitem
+items/active/weapons/melee/spear/effigiumspear.activeitem
+items/active/weapons/melee/spear/tritaniumspear.activeitem
+items/active/weapons/melee/spear/uraniumspear.activeitem
+items/active/weapons/other/magnorbs/magnorbhellfire/magnorbhellfire.activeitem
+items/active/weapons/other/magnorbs/magnorbneutron/magnorbneutron.activeitem
+items/active/weapons/other/magnorbs/magnorbshadow/magnorbshadow.activeitem
+items/active/weapons/ranged/unique/artillery/violium/artillerygun1.activeitem
+items/active/weapons/ranged/unique/bigdaddy.activeitem
+items/active/weapons/ranged/unique/farsight.activeitem
+items/active/weapons/ranged/unique/fucyclone.activeitem
+items/active/weapons/ranged/unique/fuplasmacannon.activeitem
+items/active/weapons/ranged/unique/fuplasmagun.activeitem
+items/active/weapons/ranged/unique/futritaniumpistol.activeitem
+items/active/weapons/ranged/unique/gravgun.activeitem
+items/active/weapons/ranged/unique/gravitongun.activeitem
+items/active/weapons/ranged/unique/gravitonpistol.activeitem
+items/active/weapons/ranged/unique/mineralcannonadv.activeitem
+items/active/weapons/ranged/unique/nitrogengun.activeitem
+items/active/weapons/ranged/unique/nitrogenpistol.activeitem
+items/active/weapons/ranged/unique/peglaci/chargecannon/chargecannon.activeitem
+items/active/weapons/ranged/unique/peglaci/cripplermachinegun/chargemachinegun.activeitem
+items/active/weapons/ranged/unique/peglaci/freezecannon/fufreezecannon.activeitem
+items/active/weapons/ranged/unique/peglaci/frostcannonarm/frostcannonarm.activeitem
+items/active/weapons/ranged/unique/peglaci/fubeamgun/fubeamgun.activeitem
+items/active/weapons/ranged/unique/peglaci/fucloudgun/fucloudgun.activeitem
+items/active/weapons/ranged/unique/peglaci/fuenergyblaster/fuenergyblaster.activeitem
+items/active/weapons/ranged/unique/peglaci/fuenergymachinegun/fuenergymachinegun.activeitem
+items/active/weapons/ranged/unique/peglaci/fuminelayer/fuminelayer.activeitem
+items/active/weapons/ranged/unique/peglaci/furailgun/furailgun.activeitem
+items/active/weapons/ranged/unique/peglaci/fushocklance/fushocklance.activeitem
+items/active/weapons/ranged/unique/peglaci/imperius/chargemachinegun.activeitem
+items/active/weapons/ranged/unique/peglaci/splittergun/splittergun.activeitem
+items/active/weapons/ranged/unique/pistolaegisaltfu.activeitem
+items/active/weapons/ranged/unique/pistoleffigiumfu.activeitem
+items/active/weapons/ranged/unique/pistolferoziumfu.activeitem
+items/active/weapons/ranged/unique/pistolirradiumfu.activeitem
+items/active/weapons/ranged/unique/pistolvioliumfu.activeitem
+items/active/weapons/ranged/unique/rifleaegisaltfu.activeitem
+items/active/weapons/ranged/unique/rifleeffigiumfu.activeitem
+items/active/weapons/ranged/unique/rifleferoziumfu.activeitem
+items/active/weapons/ranged/unique/rifleirradiumfu.activeitem
+items/active/weapons/ranged/unique/riflevioliumfu.activeitem
+items/active/weapons/ranged/unique/science/annihilator/isn_annihilator.activeitem
+items/active/weapons/ranged/unique/science/flamecannon/isn_flamethrower4.activeitem
+items/active/weapons/ranged/unique/science/fusioncannon/isn_fusioncannon.activeitem
+items/active/weapons/ranged/unique/science/plasmabeam/isn_plasmabeam.activeitem
+items/active/weapons/ranged/unique/science/plasmapistol/isn_plasmapistol.activeitem
+items/active/weapons/ranged/unique/science/terawattlaser/isn_terawattlaser.activeitem
+items/active/weapons/ranged/unique/veilbreaker.activeitem
+items/active/weapons/staff/gravitystaff/gravitystaff.activeitem
+items/active/weapons/staff/orestaffs/effigiumstaff.activeitem
+items/active/weapons/staff/orestaffs/tritaniumstaff.activeitem
+items/active/weapons/staff/shadowstaff/shadowstaff.activeitem
+items/active/weapons/wand/orewands/effigiumwand.activeitem
+items/active/weapons/wand/orewands/tritaniumwand.activeitem
+items/active/weapons/whip/effigiumwhip.activeitem
+'''.split())
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 4 zırh kolunun açtığı ve
 # gerçek üretim tarifi bulunan v0.27 zırh parçaları. Dosya yolu tier5
 # olsa da Cute seti bu Kademe 4 araştırma/tarif zincirinden açılır.
@@ -1273,6 +1375,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V028_TIER5_COMBAT_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V027_TIER4_ARMOR_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V026_TIER3_ARMOR_ASSETS:
@@ -1735,7 +1839,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif Kademe 1-4 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri, Kademe 1-5 savaş ekipmanları ve aktif Kademe 1-4 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

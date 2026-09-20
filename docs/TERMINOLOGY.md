@@ -601,3 +601,18 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Star-Killer | Zırh seti | Nesne | Yıldız Katili | Yıldız Öldüren | LOCKED | |
 | Maverick / Intersec / Primus | Zırh modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel parça adları ayrıca çevrilir |
 | Graphene | Zırh malzemesi | Kaynak | Grafen | Graphene | LOCKED | Yerleşik bilimsel karşılık |
+
+## v0.28 Kademe 5 savaş ekipmanı terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Phantasm | Effigium silah ailesi | Silah | Hayalet | Fantazm | LOCKED | İşlevsel aile adı |
+| Shadow Reaper | Silah adı | Silah | Gölge Biçici | Gölge Orakçısı | LOCKED | Reaper sınıfından çok özel silah adı |
+| Veilbreaker | Silah adı | Silah | Perdekıran | Veilbreaker | LOCKED | Bileşik özel ad |
+| Minigun | Döner namlulu silah sınıfı | Silah | Döner Makineli Tüfek | Minigun | LOCKED | Oyuncuya işlevi açıklar |
+| Bouncy | Silah durum etkisi | Durum | Sekme | Zıplama | LOCKED | Mermi/etki sekmesi bağlamı |
+| Major Vulnerability | Silah durum etkisi | Durum | Büyük Savunmasızlık | Majör Zayıflık | LOCKED | |
+| Sustained Fire | Silah tooltip işlevi | UI | Kesintisiz Atış | Sürekli Ateş | LOCKED | |
+| Wave-burst | Silah tooltip işlevi | UI | Dalga Patlaması | Dalga Atışı | LOCKED | |
+| Plasmic Crystal | Silah malzemesi | Kaynak | Plazmik Kristal | Plazma Kristali | LOCKED | Önceki görev-eşya kararıyla uyumlu |
+| FarSight / Helios / Imperius / Fissure | Silah modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel sınıf adı ayrıca çevrilir |

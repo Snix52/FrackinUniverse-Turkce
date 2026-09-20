@@ -503,3 +503,11 @@
 - Tooltip terimleri **Kalkan Dayanıklılığı, Kalkan Darbesi, Zihinsel Direnç, Parıltı, Yavaş Düşüş, Yerçekimi Normalleştirmesi, Açlık Tüketim Hızı, Buzda Kayma, Karda Yavaşlama, Gölge Lekesi** ve **Ateş Novası** biçiminde kilitlendi.
 - `Maverick`, `Intersec` ve `Primus` model/özel adları korundu. `Cellular`, `Pustule`, `Star-Killer` ve `Graphene` sırasıyla **Hücresel, Püstül, Yıldız Katili** ve **Grafen** olarak yerelleştirildi.
 - Yeni kapsam **174 yapılandırılmış alan / 87 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **4876 structured + 15 Lua / 1516 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.28 Kademe 5 savaş ekipmanı
+
+- Aktif Zırh ve Silahlar ağacındaki `tritaniumgear`, `enrichedgear`, `violiumgear`, `feroziumgear`, `aegisaltgear`, `densealloygear` ve `effigiumgear` düğümleri seçildi. Yedi düğümdeki açılımlar gerçek ve etkin `.recipe` çıktılarıyla çaprazlandı.
+- **97 tarif destekli savaş ekipmanı** doğrulandı. Battle görevi kapsamında daha önce çevrilmiş `warcleaver` / **Ferozium Satırı** korundu; kalan **96 assette** yalnız `/shortdescription` ve `/description` yerelleştirildi.
+- `itemName`, hasar, yetenek, mermi, kategori, tarif ve script alanları değiştirilmedi. Beş kalkan da araştırma + tarif zincirinden açılan savaş ekipmanı olduğu için aynı görünür alan kuralıyla kapsama alındı.
+- Tritanium, Effigium, Aegisalt, Ferozium ve Violium özel malzeme adları korundu. **Phantasm → Hayalet, Shadow Reaper → Gölge Biçici, Veilbreaker → Perdekıran, Minigun → Döner Makineli Tüfek** kararları kilitlendi; `FarSight`, `Helios`, `Imperius` ve `Fissure` model/özel ad olarak korundu.
+- Yeni kapsam **192 yapılandırılmış alan / 96 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **5068 structured + 15 Lua / 1612 patch asset** oldu. Oyun içi silah adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.

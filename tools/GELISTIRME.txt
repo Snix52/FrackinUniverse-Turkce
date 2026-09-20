@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.27.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.28.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  4876 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  5068 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23-v0.24 Kademe 4 savaş ekipmanı + v0.25-v0.27 Kademe 1-4 aktif zırh setleri allowlist/deny-guard kapsamını doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23-v0.24 Kademe 4 savaş ekipmanı + v0.25-v0.27 Kademe 1-4 aktif zırh setleri + v0.28 Kademe 5 savaş ekipmanı allowlist/deny-guard kapsamını doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -478,3 +478,20 @@ v0.27 Kademe 4 aktif zırh setleri QA:
   GitHub Actions build/QA/ZIP: PASS (paket commit 29b13f229c65295ebd08590ed6f14b7b41594573)
   otomatik paket: dist/FU_Turkce_v0.27.0_Beta.zip / 1056685 bayt / blob 74a1161fecfd3bf576d0e07bb22b47af89cae1ab
   oyun içi zırh tooltip/font/bağlam LQA: BEKLİYOR
+
+v0.28 Kademe 5 savaş ekipmanı QA:
+  aktif araştırma düğümleri: tritaniumgear + enrichedgear + violiumgear + feroziumgear + aegisaltgear + densealloygear + effigiumgear
+  gerçek recipe çıktısıyla doğrulanan savaş ekipmanı: 97/97 asset
+  önceden çevrilmiş Ferozium Satırı: 1 asset korundu
+  yeni yerelleştirilen: 96 asset / 192 alan
+  çevrilen pointer sınıfları: shortdescription + description
+  pinned FU exact-source: 192/192 PASS
+  patch pairing: 192 test + 192 replace PASS
+  renk/kontrol/sayı bütünlüğü: PASS
+  kaynak/provenans toplamı: 4980 pinned FU + 88 layered/external; 0 izlenmeyen
+  proje toplamı: 5068 structured + 15 Lua = 5083 görünür birim
+  toplam patch asset: 1612
+  toplam hedef asset: 1613 (1612 patch + 1 ham Lua override)
+  GitHub Actions build/QA/ZIP: BEKLİYOR
+  otomatik paket: dist/FU_Turkce_v0.28.0_Beta.zip / BEKLİYOR
+  oyun içi silah tooltip/font/bağlam LQA: BEKLİYOR
