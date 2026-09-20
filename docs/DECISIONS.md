@@ -357,3 +357,14 @@
 - Eski `create_alchemy`, `create_electronics`, `create_greenhouse`, `create_tinkertable` teslim metinlerinde daha önce doğru yapılmış kaynak/ID düzeltmelerine eksik QA provenans notları eklendi.
 - Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
 - Tutorial `create_woodencentrifuge` tamamlanma metni gerçek bir sonraki yükseltme olan `ironcentrifuge` nesnesini **Iron Centrifuge** adıyla yönlendiriyor. Eski Türkçe yalnız **Santrifüj** diyerek envanter adını kaybediyordu; **Iron Centrifuge -> Demir Santrifüj** LOCKED edildi ve nesnenin görünür envanter alanları aynı pakette çevrildi.
+
+## 2026-09-20 - v0.14 Outpost Kevin ve Khe
+
+- Kevin'in fuoutposthylotlscientist üzerinden açılan **9/9** görevi ve Khe'nin teslim NPC'si/eşya pickup zincirleriyle açılan **4/4** görevi runtime'da doğrulandı.
+- Kaynak Sewing Wheel yönlendirmesi, boosterchest üretiminin gerçek 2. kademe istasyonu **Sewing Machine / Dikiş Makinesi** ile eşlendi.
+- create_clothingfabricator3e teslim metnindeki generic average quality Brains, gerçek brain kısa adı **Superior Brain / Üstün Beyin** ile düzeltildi.
+- Nötronyum hedefleri generic madde adları yerine gerçek envanter adları **Nötronyum Çubuğu** ve **Anti-Nötronyum Çubuğu** olarak kullanıldı.
+- Khe kumaş görevinin genel malzeme adları gerçek koşullarla eşlenerek **Altın Külçe, Elmas, Kristal, Çekirdek Parçası, Saf Erchius Kristali** biçiminde açıklaştırıldı.
+- Kevin/Khe görevlerinin doğrudan andığı FU ve vanilla hedeflerin görünen envanter alanları aynı pakette çevrildi; İngilizce eşya adını bilme zorunluluğu kaldırıldı.
+- Yeni kapsam: **94 structured alan / 33 yeni patch asset**; kaynak/provenans **94/94 PASS** (84 pinned FU + 10 vanilla). Proje toplamı **2028 structured + 15 Lua / 358 patch asset**.
+- Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca bekliyor.
