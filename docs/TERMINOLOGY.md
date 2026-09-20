@@ -197,6 +197,16 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Silicon Board | Elektronik bileşeni | Kaynak | Silisyum Devre Kartı | Silikon Kart, Silicon Board | LOCKED | Vanilla envanter adı; Silicon -> Silisyum kararıyla uyumlu |
 | Watcher | Güç sistemi / chunk loader cihazı | Nesne | Gözcü | Watcher, Nöbetçi | LOCKED | Uzaktayken çevresindeki cihazları etkin tutan FU cihazı |
 
+| Miracle Grass Seed | FU bitki tohumu | Nesne | Mucize Otu Tohumu | Miracle Grass | LOCKED | Seed object olduğu oyuncuya açık gösterilir |
+| Bracken Tree Seed | FU bitki tohumu | Nesne | Bracken Ağacı Tohumu | Bracken Tree Seed | LOCKED | Bracken özel ad olarak korunur |
+| Mutavisk Seed | FU bitki tohumu | Nesne | Mutavisk Tohumu | Mutavisk Seed | LOCKED | Mutavisk özel ad olarak korunur |
+| Oonforta Seed | FU bitki tohumu | Nesne | Oonforta Tohumu | Oonforta Seed | LOCKED | Oonforta özel ad olarak korunur |
+| Cloning Lab | Genetik makinesi | Nesne | Klonlama Laboratuvarı | Cloning Lab | LOCKED | |
+| Ignus Chili Seed | FU bitki tohumu | Nesne | Ignus Biberi Tohumu | Ignus Chili Seed | LOCKED | Ignus özel ad olarak korunur |
+| Mutavisk Helm | Zırh | Nesne | Mutavisk Miğferi | Mutavisk Helm | LOCKED | |
+| Rad-Leaf / Rad Leaf | FU ürünü | Nesne | Radyasyon Yaprağı | Rad Leaf, Rad-Leaf | LOCKED | Aşırı radyasyon bağışıklığı veren ürün |
+| Thornitox Seed | FU bitki tohumu | Nesne | Thornitox Tohumu | Thornitox Seed | LOCKED | Thornitox özel ad olarak korunur |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
