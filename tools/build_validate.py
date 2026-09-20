@@ -370,7 +370,9 @@ def allowed(a,p):
         'items/generic/crafting/paper.item',
         'items/generic/crafting/silverbar.item',
         'items/liquids/oil.liqitem',
-        'objects/upgrade/techconsole/techconsole.object'
+        'objects/upgrade/techconsole/techconsole.object',
+        'items/materials/sand.matitem',
+        'items/materials/gravel.matitem'
     }
     if a in tutorial_target_simple_assets:
         return p in ('/description','/shortdescription')
@@ -445,6 +447,7 @@ def main():
         if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
         if a in NONVISIBLE_QUEST_ASSETS:raise ValueError('Aktif görev zincirine bağlı olmayan/kırık görev: '+a)
         if 'İngilizce adı:' in r['tr']:raise ValueError('İngilizce fallback/gloss: '+a+p)
+        if r['en'].strip()=='Replace Me':raise ValueError('Runtime listTemplate dummy metni kataloğa alınamaz: '+a+p)
         if any(x in r['tr'] for x in BAD_TR_PATTERNS):raise ValueError('Bilinen Türkçe LQA hatası: '+a+p)
         if 'kraliçe arı' in r['tr'].casefold():raise ValueError('Kilitli arıcılık terimi ihlali (Ana Arı): '+a+p)
         if LOWERCASE_MECH.search(r['tr']):raise ValueError('Kilitli Mech yazımı ihlali (Mech büyük harfle): '+a+p)
