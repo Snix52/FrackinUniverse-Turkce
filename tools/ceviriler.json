@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.13.0-beta",
-  "note": "v0.13 Outpost Bilim Karakolu dükkân görevleri: 6/6 canlı dükkân görevi, hedef artefaktlar ve dükkân nesneleri yerelleştirildi. Özel görev/konum adları (Verdant Ruins, Ancient Temple, Evernight Jungle) geniş kapsamlı görev/konum yerelleştirmesi yapılana kadar korunuyor. Oyun içi LQA bekliyor.",
+  "translation_version": "0.13.1-beta",
+  "note": "v0.13.1 geriye dönük QA: görev teslim dilbilgisi, arıcılık terminolojisi, Glitch ton etiketleri, Bee Refuge satış butonu, Penumbrite yazımı ve v0.13 dükkân yönlendirmeleri düzeltildi. Alan sayısı değişmedi; oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -814,7 +814,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_alchemy.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Chemlab^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^green;Simya Tezgâhını^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "tr": "^green;Simya Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
       "section": "Görevler"
     },
     {
@@ -842,7 +842,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_electronics.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^green;Elektronik Merkezini^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "tr": "^green;Elektronik Merkezini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
       "section": "Görevler"
     },
     {
@@ -874,7 +874,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^green;Serayı^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "tr": "^green;Serayı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
       "section": "Görevler"
     },
     {
@@ -902,7 +902,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_tinkertable.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^green;İnce İşçilik Tezgâhını^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "tr": "^green;İnce İşçilik Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
       "section": "Görevler"
     },
     {
@@ -1868,7 +1868,7 @@
       "asset": "zb/researchTree/fu_agriculture.config",
       "pointer": "/strings/research/bees1/1",
       "en": "^orange;Tier 1^reset;\n\nYou've learned to raise bees in an apiary to provide you with useful resources. Make an ^cyan;Apiary Crafting Station^reset; at your ^orange;Machining Table^reset; to get started.\n\nRaising bees is pretty complex. If you're not sure how, buy a guide from the Bee Refuge in the Science Outpost, accessible once you leave your starter planet.\n\nAs a simple starter tip, you need a microscope-identified queen, a matching microscope-identified drone, one or more frames, and some flowers planted nearby for production to start.",
-      "tr": "^orange;Kademe 1^reset;\n\nArıları bir arılıkta yetiştirerek yararlı kaynaklar elde etmeyi öğrendin. Başlamak için ^orange;İmalat Tezgâhında^reset; bir ^cyan;Arıcılık Üretim İstasyonu^reset; yap.\n\nArıcılık oldukça karmaşıktır. Nasıl yapılacağından emin değilsen, başlangıç gezegeninden ayrıldıktan sonra erişebileceğin Bilim Karakolundaki Arı Barınağından bir rehber satın al.\n\nBasit bir başlangıç ipucu: Üretimin başlaması için mikroskopla tanımlanmış bir kraliçe arıya, onunla eşleşen mikroskopla tanımlanmış bir erkek arıya, bir veya daha fazla çerçeveye ve yakına dikilmiş birkaç çiçeğe ihtiyacın var.",
+      "tr": "^orange;Kademe 1^reset;\n\nArıları bir arılıkta yetiştirerek yararlı kaynaklar elde etmeyi öğrendin. Başlamak için ^orange;İmalat Tezgâhında^reset; bir ^cyan;Arıcılık Üretim İstasyonu^reset; yap.\n\nArıcılık oldukça karmaşıktır. Nasıl yapılacağından emin değilsen, başlangıç gezegeninden ayrıldıktan sonra erişebileceğin Bilim Karakolundaki Arı Barınağından bir rehber satın al.\n\nBasit bir başlangıç ipucu: Üretimin başlaması için mikroskopla tanımlanmış bir ana arıya, onunla eşleşen mikroskopla tanımlanmış bir erkek arıya, bir veya daha fazla çerçeveye ve yakına dikilmiş birkaç çiçeğe ihtiyacın var.",
       "section": "Tarım"
     },
     {
@@ -2260,7 +2260,7 @@
       "asset": "interface/windowconfig/beerefuge.config",
       "pointer": "/paneLayout/btnCraft/caption",
       "en": "Buy",
-      "tr": "Satın Al",
+      "tr": "Sat",
       "section": "Tarım makineleri"
     },
     {
@@ -2421,7 +2421,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_sprouting.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Sprouting Table^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^green;Filizlendirme Tezgâhını^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "tr": "^green;Filizlendirme Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
       "section": "Tarım görevleri"
     },
     {
@@ -2453,7 +2453,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^green;Yetiştirme Tepsisini^reset; ^orange;Bilim Karakolundaki^reset; bana getir.",
+      "tr": "^green;Yetiştirme Tepsisini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
       "section": "Tarım görevleri",
       "qa": {
         "source_bug_fix": true,
@@ -7351,7 +7351,7 @@
       "asset": "objects/colonysystem2/colonydeedmk2/colonydeedmk2.object",
       "pointer": "/description",
       "en": "A colony deed designed for use with a Colony Core. Only collects rent with a Core present.  ^red;Requires a bed in the room.^reset;",
-      "tr": "Koloni Çekirdeği ile kullanılmak üzere tasarlanmış bir koloni tapusu. Yalnızca bir Çekirdek varken kira toplar.  ^red;Odada bir yatak gerekir.^reset;",
+      "tr": "Koloni Çekirdeği ile kullanılmak üzere tasarlanmış bir koloni tapusu. Yalnızca bir Çekirdek varken kira toplar. ^red;Odada bir yatak gerekir.^reset;",
       "section": "Zanaatkârlık makineleri"
     },
     {
@@ -7670,7 +7670,7 @@
       "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
       "pointer": "/upgradeStages/0/itemSpawnParameters/glitchDescription",
       "en": "Inspired. Let's create food!",
-      "tr": "İlhamlı. Hadi yemek yapalım!",
+      "tr": "İlhamlanmış. Hadi yemek yapalım!",
       "section": "Zanaatkârlık makineleri",
       "qa": {
         "layered_source": true,
@@ -7802,7 +7802,7 @@
       "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
       "pointer": "/upgradeStages/1/itemSpawnParameters/glitchDescription",
       "en": "Inspired. Let's create food!",
-      "tr": "İlhamlı. Hadi yemek yapalım!",
+      "tr": "İlhamlanmış. Hadi yemek yapalım!",
       "section": "Zanaatkârlık makineleri",
       "qa": {
         "layered_source": true,
@@ -8612,7 +8612,7 @@
       "asset": "zb/researchTree/fu_warcraft.config",
       "pointer": "/strings/research/penumbritegear/1",
       "en": "^orange;Tier 3^reset;\n\nPenumbrite is a potent metal that holds a sharp edge better than Titanium, making it ideal in many weapons. It alloys with Silver especially well, creating a unique style of weapon that deals damage that is resisted by only a few creatures.",
-      "tr": "^orange;Kademe 3^reset;\n\nPenumbrite, keskinlığını Titanyumdan daha iyi koruyan güçlü bir metaldir; bu nedenle birçok silah için idealdir. Özellikle Gümüşle çok iyi alaşım oluşturur ve yalnızca az sayıda yaratığın direnebildiği türde hasar veren özgün silahlar üretmeyi sağlar.",
+      "tr": "^orange;Kademe 3^reset;\n\nPenumbrite, keskinliğini Titanyumdan daha iyi koruyan güçlü bir metaldir; bu nedenle birçok silah için idealdir. Özellikle Gümüşle çok iyi alaşım oluşturur; ortaya yalnızca az sayıda yaratığın direnebildiği türde hasar veren özgün silahlar çıkar.",
       "section": "Zırh ve Silahlar"
     },
     {
@@ -11907,7 +11907,7 @@
       "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^orange;Ignus Chili Seeds^reset; to the monocled Thelusian at the ^orange;Science Outpost^reset;",
-      "tr": "3 ^orange;Ignus Biberi Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; monokllü Thelusian'a götür.",
+      "tr": "3 ^orange;Ignus Biberi Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; monokl takan Thelusian'a götür.",
       "section": "v0.10 Science - Genetics",
       "qa": {
         "allow_number_fix": true,
@@ -12197,7 +12197,7 @@
       "asset": "quests/fu_questlines/science/mechanical/create_extractor.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^orange;Extraction Lab^reset; to the ^green;Human Scientist^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Çıkarma Laboratuvarını^reset; ^orange;Bilim Karakolundaki^reset; ^green;İnsan bilim insanına^reset; götür.",
+      "tr": "^orange;Çıkarma Laboratuvarını^reset; ^orange;Bilim Karakolundaki^reset; ^green;insan bilimciye^reset; götür.",
       "section": "v0.10 Science - Mechanical"
     },
     {
@@ -12441,7 +12441,7 @@
       "asset": "items/materials/blackglass.matitem",
       "pointer": "/glitchdescription",
       "en": "Interested. This glass has been so darkly tinted it is almost not transparent.",
-      "tr": "İlgili. Bu cam o kadar koyu renklendirilmiş ki neredeyse saydam değil.",
+      "tr": "Meraklı. Bu cam o kadar koyu renklendirilmiş ki neredeyse saydam değil.",
       "section": "v0.10 Science - Mechanical",
       "qa": {
         "layered_source": true,
@@ -12533,7 +12533,7 @@
       "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^orange;Protocite Bars^reset; to the monocled Hylotl at the ^orange;Science Outpost^reset;",
-      "tr": "2 ^orange;Protocite Külçesini^reset; ^orange;Bilim Karakolundaki^reset; monokllü Hylotl'a götür.",
+      "tr": "2 ^orange;Protocite Külçesini^reset; ^orange;Bilim Karakolundaki^reset; monokl takan Hylotl'a götür.",
       "section": "v0.10 Science - Physics",
       "qa": {
         "allow_number_fix": true,
@@ -13906,7 +13906,7 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring a ^orange;Greenfinger Medal^reset; to the ^green;Floran Meat Shop^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Greenfinger Madalyası^reset; eşyasını ^green;Floran Et Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "tr": "^orange;Greenfinger Madalyasını^reset; ^orange;Bilim Karakolundaki^reset; ^green;Floran Et Dükkânına^reset; götür.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
@@ -13934,14 +13934,14 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_foodShop.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^orange;rare Lucky Coin^reset; to the ^green;Food Shop^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "Nadir ^orange;Uğurlu Parayı^reset; ^green;Yiyecek Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "tr": "Nadir ^orange;Uğurlu Parayı^reset; ^orange;Bilim Karakolundaki^reset; ^green;Yiyecek Dükkânına^reset; götür.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
       "asset": "quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate",
       "pointer": "/title",
       "en": "Crystalline Perfection",
-      "tr": "Kristal Kusursuzluk",
+      "tr": "Kristal Mükemmellik",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
@@ -13962,7 +13962,7 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring a ^orange;Crystalline Trophy^reset; to the ^green;Gem Shop^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Kristal Kupa^reset; eşyasını ^green;Mücevher Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "tr": "^orange;Kristal Kupayı^reset; ^orange;Bilim Karakolundaki^reset; ^green;Mücevher Dükkânına^reset; götür.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
@@ -13983,14 +13983,14 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate",
       "pointer": "/completionText",
       "en": "You've no idea how much this means to me. As thanks for this most wonderous technology I bequeath to you another sort of rarity. May it bring you fortune in your travels.",
-      "tr": "Bunun benim için ne kadar önemli olduğunu tahmin bile edemezsin. Bu harika teknoloji için teşekkür olarak sana başka bir nadirlik bırakıyorum. Yolculuklarında şans getirsin.",
+      "tr": "Bunun benim için ne kadar önemli olduğunu tahmin bile edemezsin. Bu harika teknoloji için teşekkür olarak sana başka bir nadir eşya armağan ediyorum. Yolculuklarında şans getirsin.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
       "asset": "quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring a ^orange;Alien Broadcast Node^reset; to the ^green;Kirhosi Shop^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Uzaylı Yayın Düğümü^reset; eşyasını ^green;Kirhos Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "tr": "^orange;Uzaylı Yayın Düğümünü^reset; ^orange;Bilim Karakolundaki^reset; ^green;Kirhos Dükkânına^reset; götür.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
@@ -14011,14 +14011,14 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate",
       "pointer": "/completionText",
       "en": "Can it truly be? A ^green;Vexinarri Glaff^reset;? Where did you find this?!?! I thought these were only a legend! As promised, your reward. It has been a pleasure.",
-      "tr": "Gerçekten bu olabilir mi? Bir ^green;Vexinarri Glaff^reset;? Bunu nerede buldun?!?! Bunların yalnızca efsane olduğunu sanıyordum! Söz verdiğim gibi, ödülün. Seninle iş yapmak güzeldi.",
+      "tr": "Gerçekten bu olabilir mi? Bir ^green;Vexinarri Glaff^reset;? Bunu nerede buldun?!?! Bunların yalnızca efsane olduğunu sanıyordum! Söz verdiğim gibi, ödülün. Memnun oldum.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
       "asset": "quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring a ^orange;X'i Relic^reset; to the ^green;X'i Shop^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;X'i Kalıntısı^reset; eşyasını ^green;X'i Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "tr": "^orange;X'i Kalıntısını^reset; ^orange;Bilim Karakolundaki^reset; ^green;X'i Dükkânına^reset; götür.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
@@ -14043,7 +14043,7 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
       "pointer": "/completionText",
       "en": "<Great joy is felt by this being. Appreciation will be shown with gratuitous monetary payment. Fleshlings appreciate such gestures. With it you could purchase goods and services.>",
-      "tr": "<Bu varlık büyük sevinç hissediyor. Minnettarlık gereğinden fazla para ödenerek gösterilecek. Et varlıklar böyle jestleri sever. Bununla mal ve hizmet satın alabilirsin.>",
+      "tr": "<Bu varlık büyük sevinç hissediyor. Minnettarlık, gereğinden fazla para ödenerek gösterilecek. Et bedenliler böyle jestleri takdir eder. Bununla mal ve hizmet satın alabilirsin.>",
       "section": "v0.13 Outpost Dükkân Görevleri",
       "qa": {
         "allow_control_fix": true,
@@ -14054,7 +14054,7 @@
       "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring an ^orange;Ancient Remote^reset; to the ^green;Shadow Shop^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Kadim Kumanda^reset; eşyasını ^green;Gölge Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "tr": "^orange;Kadim Kumandayı^reset; ^orange;Bilim Karakolundaki^reset; ^green;Gölge Dükkânına^reset; götür.",
       "section": "v0.13 Outpost Dükkân Görevleri"
     },
     {
