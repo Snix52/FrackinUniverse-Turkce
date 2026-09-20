@@ -143,6 +143,8 @@ def allowed(a,p):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a.startswith('quests/fu_questlines/outpost/bees/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
+    if a.startswith('quests/fu_questlines/outpost/booze/') and a.endswith('.questtemplate'):
+        return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
         return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='radiomessages/fu_quests.radiomessages':
@@ -355,6 +357,36 @@ def allowed(a,p):
         if a=='objects/colonysystem2/colonystation/colonystation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|[A-Za-z]+Description)',p))
+    booze_machine_assets={
+        'objects/generic/boozekit/boozekit.object',
+        'objects/crafting/starbooze/mashingtun/mashingtun.object',
+        'objects/crafting/starbooze/fruitpress/fruitpress.object',
+        'objects/crafting/starbooze/fermenter/fermenter.object',
+        'objects/crafting/starbooze/rainbarrel/rainbarrel.object',
+        'objects/crafting/starbooze/distillery/distillery.object'
+    }
+    if a in booze_machine_assets:
+        return p in ('/description','/shortdescription') or (a=='objects/crafting/starbooze/rainbarrel/rainbarrel.object' and p=='/subtitle')
+    booze_item_assets={
+        'items/generic/crafting/starbooze/yeastwater.item',
+        'items/generic/crafting/starbooze/grainwater.item',
+        'items/generic/crafting/starbooze/grapemash.item',
+        'items/generic/crafting/starbooze/wartwine.consumable',
+        'items/generic/crafting/starbooze/hops.item',
+        'items/generic/crafting/starbooze/malt.item',
+        'items/generic/crafting/starbooze/wort.item',
+        'items/generic/drinks/beer/beer.consumable',
+        'items/generic/crafting/starbooze/applemash.item',
+        'items/generic/crafting/starbooze/pearmash.item',
+        'items/generic/crafting/starbooze/peachmash.item',
+        'items/generic/drinks/vodka/spirits.consumable',
+        'items/generic/crafting/starbooze/honeybucket.item',
+        'items/generic/drinks/ciders/meadbottle.consumable',
+        'items/generic/crafting/fu_carbondioxide.item',
+        'items/liquids/fu_liquidhoney.liqitem'
+    }
+    if a in booze_item_assets:
+        return p in ('/description','/shortdescription')
     return False
 
 def main():
@@ -440,10 +472,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma + Tutorial + Science + Outpost Arıcılık (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Görevler (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, bağlı tutorial görev ailesi, Science ve Outpost Arıcılık görev zincirlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki ve Arıcılık zincirlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

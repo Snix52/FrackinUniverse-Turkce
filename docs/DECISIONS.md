@@ -289,15 +289,27 @@
 - Işınlayıcı Çekirdeği vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
 - Physics yeni alanları **22/22 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **22 test + 22 replace PASS**.
 
-## 2026-09-20 - v0.11 Outpost Arıcılık
+## 2026-09-20 - v0.11 Outpost / İçki zinciri
+
+- Outpost içindeki Starbooze görev ailesi tek zincir olarak ele alındı: 12/12 görev dosyası birlikte yerelleştirildi.
+- `Mash` ailesi için **Mayşe**, `Wort` için **Şıra**, `Hops` için **Şerbetçiotu**, `Mashing Tun` için **Mayşeleme Kazanı**, `Fermenter` için **Fermentör** ve `Distillery / Still` için **Damıtıcı** kilitlendi.
+- `2brew_a` kaynak metni üç, sonra dört şişe isterken gerçek `gatherItem` koşulu 1 `bottle` istiyor. Türkçe görev metni gerçek koşula göre 1 Şişe ister.
+- `3hops` kaynak metni en az 2 Hops derken gerçek koşul 1 `hops` istiyor. Türkçe metinde yanlış adet verilmedi; görev koşuluyla çelişmeyecek şekilde “yetiştirip topla” denildi.
+- `2brew_c` görevi 1 Grape Mash ile tamamlanıyor ancak bir sonraki Wart Wine tarifi 2 Grape Mash istiyor. Türkçe metin bu farkı açıkça anlatır.
+- `6beer` kaynak metni 3 Beer üret derken gerçek görev koşulu 1 `beer` istiyor; tarif tek üretimde 2 verir. Türkçe görev gerçek koşula göre yazıldı ve envanter adı **Buğday Birası** ile eşleştirildi.
+- İçki görevlerinde geçen FU makineleri ve ana ara ürünlerin envanter adları aynı pakette çevrildi; görev zinciri İngilizce eşya adını bilmeyi gerektirmeyecek şekilde bağlandı.
+- Oyun içi LQA, görev akışı ve crafting panel taşma testi hâlâ ayrı aşamadır.
+
+
+## 2026-09-20 - v0.12 Outpost Arıcılık
 
 - `quests/fu_questlines/outpost/bees` altında **14 ham görev dosyası** bulunuyor.
 - Runtime bağlantıları Arıcı NPC + `fu_bees` quest-list + follow-up zinciri üzerinden çaprazlandı. Oyuncuya erişilebilir benzersiz Arıcılık görevi **13/13**.
 - `13mites` yalnız kendi dosyasında prerequisite olarak `12breeding` yazmasına rağmen hiçbir NPC, quest-list veya follow-up tarafından başlatılmıyor. Bu nedenle bağlantısız legacy kabul edildi; dağıtım dışı bırakıldı ve build guard'a eklendi.
-- Arıcılık görevlerinde **39 görünür görev alanı**, bağlı/yönlendirilen **18 hedef assette 39 alan** olmak üzere v0.11 toplamı **78 yeni yapılandırılmış alan / 31 yeni patch asset**.
+- Arıcılık görevlerinde **39 görünür görev alanı**, bağlı/yönlendirilen **18 hedef assette 39 alan** olmak üzere v0.12 toplamı **78 yeni yapılandırılmış alan / 31 yeni patch asset**.
 - Apiary -> **Arılık**, Large Apiary -> **Büyük Arılık**, Queen -> **Ana Arı**, Drone -> **Erkek Arı**, Honeycomb -> **Bal Peteği**, Beeswax -> **Balmumu**, Honey Jarring Machine -> **Bal Kavanozlama Makinesi** ve ilgili arı/çerçeve adları LOCKED.
 - `12breeding` kaynak metnindeki **Giant Apiary** gerçek bir item/object adı değil. Görev zincirinde kullanılan `normalalveary` nesnesinin gerçek kısa adı **Large Apiary** olduğundan Türkçede **Büyük Arılık** kullanıldı.
 - Vanilla Böcek Ağı, Kırmızı Çiçek ve Boş Şişe ad/açıklamaları `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
 - Yeni alan kaynak/provenansı: **72/72 pinned FU + 6/6 vanilla = 78/78 PASS**. Patch pairing: **78 test + 78 replace PASS**.
-- Proje toplamı **1792 yapılandırılmış alan + 15 Lua = 1807 yerelleştirilmiş görünür birim**; toplam patch asset **270**.
+- v0.11 Outpost İçki kapsamı aynen korunarak proje toplamı **1881 yapılandırılmış alan + 15 Lua = 1896 yerelleştirilmiş görünür birim**; toplam patch asset **304** oldu.
 - Oyun içi Arıcılık görev akışı, eşya adları, font ve panel taşma LQA'sı ayrıca yapılmalıdır.

@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.11.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.12.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1792 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1881 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost Arıcılık görev/hedef + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost İçki görev/hedef + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -121,17 +121,35 @@ v0.10 beta QA:
 
 
 v0.11 beta QA:
+  Outpost Starbooze / İçki görevi: 12/12
+  görev alanı: 44
+  bağlı makine alanı: 13 / 6 asset
+  bağlı malzeme/içki alanı: 32 / 16 asset
+  v0.11 toplam ekleme: 89 yapılandırılmış alan / 34 yeni patch asset
+  pinned FU yeni alan: 89/89 exact-source PASS
+  kaynak/provenans: 89/89 PASS
+  patch eşleşmesi: 89 test + 89 replace PASS
+  build allowlist: 89/89 PASS
+  benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
+  proje toplam yapılandırılmış alan: 1803
+  toplam yerelleştirilmiş görünür birim: 1818 (1803 yapılandırılmış + 15 Lua)
+  toplam patch asset: 273
+  oyun içi LQA: BEKLİYOR
+
+
+v0.12 beta QA:
+  v0.11 Outpost İçki kapsamı: KORUNUYOR (89 alan / 34 asset)
   Outpost Arıcılık ham questtemplate: 14
   bağlantısız legacy görev: 1 (13mites; dağıtım dışı + build guard)
   erişilebilir Arıcılık görevi: 13/13
   görev alanı: 39
   hedef eşya/makine alanı: 39 / 18 asset
-  v0.11 toplam ekleme: 78 yapılandırılmış alan / 31 yeni patch asset
+  v0.12 toplam ekleme: 78 yapılandırılmış alan / 31 yeni patch asset
   pinned FU yeni alan: 72/72 exact-source PASS
   bağımsız vanilla yeni alan: 6/6 exact-source PASS
   patch eşleşmesi: 78 test + 78 replace PASS
   benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
-  proje toplam yapılandırılmış alan: 1792
-  toplam yerelleştirilmiş görünür birim: 1807 (1792 yapılandırılmış + 15 Lua)
-  toplam patch asset: 270
+  proje toplam yapılandırılmış alan: 1881
+  toplam yerelleştirilmiş görünür birim: 1896 (1881 yapılandırılmış + 15 Lua)
+  toplam patch asset: 304
   oyun içi LQA: BEKLİYOR

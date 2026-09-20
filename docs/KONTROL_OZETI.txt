@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.10.0 BETA | STATİK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.11.0 BETA | STATİK QA KONTROL ÖZETİ
 
-1714 aktif yapılandırılmış oyuncu metni alanı / 239 patch asset.
+1803 aktif yapılandırılmış oyuncu metni alanı / 273 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 1729 yerelleştirilmiş görünür metin birimi / 240 hedef asset.
+TOPLAM: 1818 yerelleştirilmiş görünür metin birimi / 274 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -32,6 +32,9 @@ KAPSAM
 - v0.10 Science - Genetics: 51
 - v0.10 Science - Mechanical: 41
 - v0.10 Science - Physics: 22
+- v0.11 Outpost - İçki: 44
+- v0.11 İçki makineleri: 13
+- v0.11 İçki malzemeleri: 32
 
 v0.5 YENİ İÇERİK
 - fu_power araştırma ağacı: 39 düğüm / 77 aktif oyuncu metni.
@@ -260,13 +263,44 @@ Proje yapılandırılmış alan bütünlüğü: PASS (1714 benzersiz alan).
 Oyun içi LQA: BEKLİYOR.
 
 
-v0.11 OUTPOST ARICILIK BETA QA
+v0.11 OUTPOST / İÇKİ BETA QA
+- Outpost Starbooze / İçki görev zinciri: 12/12 görev dosyası.
+- Görev metinleri: 44 yeni alan.
+- Bağlı makineler: 13 yeni alan / 6 asset.
+- Bağlı hedef malzemeler ve içkiler: 32 yeni alan / 16 asset.
+- v0.11 toplam ekleme: 89 yapılandırılmış alan / 34 yeni patch asset.
+- Pinned FU 6.5.8 exact-source: 89/89 PASS.
+- Kaynak/provenans: 89/89 PASS.
+- Patch eşleşmesi: 89 test + 89 replace PASS.
+- Build allowlist: 89/89 PASS.
+- Proje genelinde benzersiz asset/pointer: 1803/1803 PASS.
+- Boş Türkçe değer: 0.
+- Renk/kontrol kodu ve sayı bütünlüğü: PASS; belgeli adet düzeltmeleri QA istisnası olarak kayıtlı.
+- Proje toplamı: 1803 yapılandırılmış alan + 15 Lua = 1818 yerelleştirilmiş görünür birim.
+- Toplam patch asset: 273.
+
+ÖNEMLİ v0.11 KAYNAK / KOŞUL DÜZELTMELERİ
+- 2brew_a: kaynak üç/dört Şişe diyor; gerçek gatherItem koşulu 1 Şişe. Türkçe gerçek koşulu kullanır.
+- 3hops: kaynak en az 2 Şerbetçiotu diyor; gerçek koşul 1. Türkçe yanlış adet vermez.
+- 2brew_c: görev 1 Üzüm Mayşesiyle tamamlanır; sonraki Wartweed Şarabı tarifi 2 ister. Türkçe bu farkı açıklar.
+- 6beer: kaynak 3 Bira der; gerçek görev koşulu 1, tarif çıktısı 2. Türkçe gerçek koşula ve envanter adına göre yazıldı.
+- Görevlerde geçen İçki Kiti, Mayşeleme Kazanı, Meyve Presi, Fermentör, Yağmur Varili ve Damıtıcı aynı pakette envanter adlarıyla eşlendi.
+
+SONUÇ
+v0.11 statik Anayasa QA: PASS.
+v0.11 pinned FU kaynak/provenans doğrulaması: PASS (89/89).
+Outpost İçki görev kapsamı: PASS (12/12).
+Proje yapılandırılmış alan bütünlüğü: PASS (1803 benzersiz alan).
+Oyun içi LQA / font / panel taşması / gerçek görev akışı: BEKLİYOR.
+
+
+v0.12 OUTPOST ARICILIK BETA QA
 - Ham Arıcılık questtemplate: 14.
 - Erişilebilir Arıcılık görevi: 13/13.
 - Bağlantısız legacy: 13mites (dağıtım dışı + build guard).
 - Yeni görev alanı: 39.
 - Hedef eşya/makine alanı: 39 / 18 asset.
-- v0.11 toplam ekleme: 78 yapılandırılmış alan / 31 yeni patch asset.
+- v0.12 toplam ekleme: 78 yapılandırılmış alan / 31 yeni patch asset.
 - Pinned FU exact-source: 72/72 PASS.
 - Vanilla exact-source: 6/6 PASS.
 - Kaynak/provenans: 78/78 PASS.
@@ -274,12 +308,13 @@ v0.11 OUTPOST ARICILIK BETA QA
 - Yinelenen pointer: 0.
 - Renk/kontrol/placeholder/sayı bütünlüğü: PASS.
 - Kaynak düzeltmesi: 12breeding Giant Apiary -> gerçek Large Apiary / Büyük Arılık.
-- Proje toplamı: 1792 yapılandırılmış alan + 15 Lua = 1807 görünür birim; 270 patch asset.
+- v0.11 Outpost İçki kapsamı korunuyor.
+- Proje toplamı: 1881 yapılandırılmış alan + 15 Lua = 1896 görünür birim; 304 patch asset.
 - Oyun içi LQA: BEKLİYOR.
 
 SONUÇ
-v0.11 statik Anayasa QA: PASS.
-v0.11 kaynak/provenans doğrulaması: PASS (78/78).
+v0.12 statik Anayasa QA: PASS.
+v0.12 kaynak/provenans doğrulaması: PASS (78/78).
 Arıcılık erişilebilir görev kapsamı: PASS (13/13).
-Proje yapılandırılmış alan bütünlüğü: PASS (1792 benzersiz alan).
+Proje yapılandırılmış alan bütünlüğü: PASS (1881 benzersiz alan).
 Oyun içi LQA: BEKLİYOR.
