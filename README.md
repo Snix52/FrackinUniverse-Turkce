@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.13.3 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.14 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkânları + Kevin/Khe görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -62,7 +62,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.13.3_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.14.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -71,7 +71,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **1.934 alan / 325 patch asset**tir. v0.13 Bilim Karakolu dükkân paketindeki **48/48 yeni alan pinned FU 6.5.8 kaynağından exact doğrulandı**. v0.11 Outpost İçki ve v0.12 Arıcılık provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **2.028 alan / 358 patch asset**tir. v0.14 Kevin/Khe paketindeki **94/94 yeni alan kaynak/provenans açısından doğrulandı**: 84 pinned FU ve 10 vanilla alan. Önceki Outpost paketlerinin provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -104,7 +104,7 @@ v0.9'da daha önce çevrilmemiş **25 tutorial görev dosyasında 90 oyuncu metn
 
 Kaynakta oyuncuyu yanlış yönlendiren eski tutorial metinleri gerçek quest koşullarına göre düzeltildi: Extractor IV/V'nin eski Tissue Culture / Genetic Material yönlendirmeleri, `create_silicon` içindeki 10 yerine gerçek 1 Silisyum koşulu, Wooden Centrifuge teslim hedefindeki yanlış Armorworks adı ve Rock Breaker metnindeki bozuk renk kapanışı.
 
-Science cephesi v0.10 ile kapandı. Outpost'ta v0.11 İçki zinciri, v0.12 Arıcılık zinciri ve v0.13 Bilim Karakolu dükkân görevleri işlendi; Arıcılıktaki `13mites` runtime'da bağlantısız olduğu için dağıtım dışı bırakıldı. Klasör-bazlı yol haritasında sırada **43 ham görev dosyası** bulunuyor: Outpost 13, Battle 13, Other 13, BYOS 3 ve Exploration 1. Her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
+Science cephesi v0.10 ile kapandı. Outpost'ta v0.11 İçki, v0.12 Arıcılık, v0.13 Bilim Karakolu dükkânları ve v0.14 Kevin/Khe görevleri işlendi; Arıcılıktaki `13mites` runtime'da bağlantısız olduğu için dağıtım dışı bırakıldı. Klasör-bazlı yol haritasında sırada **30 ham görev dosyası** bulunuyor: Battle 13, Other 13, BYOS 3 ve Exploration 1. Her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
 
 ## v0.10 Science Görevleri
 
@@ -179,6 +179,14 @@ Sifter tutorialında İngilizce kalan **Loose Silt / Gravel** hedefleri gerçek 
 
 Ayrıca oyuncuya dönük iki `eldritch` sızıntısı **tekinsiz**, `vanilla` meta ifadesi **ana oyun** olarak düzeltildi. Net sonuç: **1.934 structured + 15 Lua = 1.949 görünür birim / 325 patch asset**. Oyun içi LQA hâlâ ayrı aşamadır.
 
+## v0.14 Outpost Kevin ve Khe
+
+Kevin'in **9/9**, Khe'nin **4/4** canlı görevi; Kevin'in NPC teklif/teslim zinciri, Khe'nin teslim NPC'si ve iki eşya-tetikli breadcrumb bağlantısı üzerinden doğrulandı. Görevlerde görünen hedef adları envanterle birebir eşlendi: **Booster Kısa Üstü, Biyoyakıt Kapsülü, Uzaylı Bileşiği, Çubukta Bebek Kafası, Portakal, Plazmik Kristal, Üstün Beyin, Nötronyum Çubuğu, Anti-Nötronyum Çubuğu, Nötron Bombası, Saf Erchius Kristali** ve **Hayalet Feneri**.
+
+Kaynak görevdeki Sewing Wheel, gerçek üretim istasyonu olan **Sewing Machine / Dikiş Makinesi** ile; average quality Brains, gerçek brain envanter adı **Superior Brain / Üstün Beyin** ile açıklaştırıldı. Khe'nin kısa, kedimsi konuşma biçimi; Kevin'in kendini beğenmiş ve absürt tonu korunarak doğal Türkçeye aktarıldı.
+
+v0.14 eklemesi **94 yapılandırılmış alan / 33 yeni patch asset**tir: 50 görev alanı, 3 görev-listesi alanı ve 41 bağlı envanter alanı. Kaynak/provenans sonucu **94/94 PASS** (84 pinned FU + 10 vanilla). Proje toplamı **2.028 structured + 15 Lua = 2.043 görünür birim / 358 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -197,7 +205,7 @@ Ayrıca oyuncuya dönük iki `eldritch` sızıntısı **tekinsiz**, `vanilla` me
 - [x] Delilik araştırma ağacı
 - [x] Tutorial görev ailesi
 - [x] Science görev zincirleri
-- [ ] Outpost görev zincirleri (İçki 12/12 + Arıcılık 13/13 + Bilim Karakolu dükkânları 6/6 tamamlandı; Kevin 9 + Khe 4 bekliyor)
+- [x] Outpost görev zincirleri (İçki 12/12 + Arıcılık 13/13 + Bilim Karakolu dükkânları 6/6 + Kevin 9/9 + Khe 4/4)
 - [ ] Battle görev zincirleri
 - [ ] Other görev zincirleri
 - [ ] BYOS kalan görevleri

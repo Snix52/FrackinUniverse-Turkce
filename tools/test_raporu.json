@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.13.3-beta",
+  "translation_version": "0.14.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 1934,
+  "translated_display_fields": 2028,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 1949,
-  "patched_assets": 325,
+  "total_localized_display_units": 2043,
+  "patched_assets": 358,
   "raw_override_assets": 1,
-  "target_assets_total": 326,
+  "target_assets_total": 359,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -42,21 +42,22 @@
     "v0.11 İçki malzemeleri": 32,
     "v0.12 Outpost - Arıcılık": 78,
     "v0.13 Outpost Dükkân Görevleri": 48,
-    "v0.13.3 Retro QA Hedefleri": 8
+    "v0.13.3 Retro QA Hedefleri": 8,
+    "v0.14 Outpost - Kevin ve Khe": 94
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (1934/1934)",
+    "unique_paths": "PASS (2028/2028)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (current 1934-field catalog; inactive research, disconnected start_basics1, dead Science fuquest_dna/fuquest_mineral and dead Outpost 13mites rejected before patch generation)",
-    "source_mismatch_rejection_cases": 1934,
-    "source_mismatch_rejection": "PASS (1934 test-guarded structured fields)",
+    "fixture_application": "PASS (current 2028-field catalog; inactive research, disconnected start_basics1, dead Science fuquest_dna/fuquest_mineral and dead Outpost 13mites rejected before patch generation)",
+    "source_mismatch_rejection_cases": 2028,
+    "source_mismatch_rejection": "PASS (2028 test-guarded structured fields)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (1856/1856 pinned-FU fields; 78/78 layered/external provenance fields; 0 untracked)",
+    "exact_source_pointer_validation": "PASS (1940/1940 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
     "agriculture_source_pointer_validation": "PASS (99/99 active fields)",
@@ -143,7 +144,10 @@
     "v0.11 6beer: source prose says make 3 Beer; actual gatherItem condition is 1 beer and the recipe outputs 2, so Turkish follows the real condition.",
     "v0.12 12breeding: source Giant Apiary is not a real inventory name; Turkish uses the actual normalalveary item name Large Apiary / Büyük Arılık.",
     "v0.13.2: LOCKED Mech system name normalized from lowercase mech to Mech in 16 Turkish fields.",
-    "v0.13.2: Bee Refuge mixed exchange verified: bee->money/material recipes coexist with money->bee-guide recipes; player action label normalized to neutral 'Takas Et'."
+    "v0.13.2: Bee Refuge mixed exchange verified: bee->money/material recipes coexist with money->bee-guide recipes; player action label normalized to neutral 'Takas Et'.",
+    "v0.14 Kevin create_clothingfabricator: source Sewing Wheel guidance normalized to the actual Sewing Machine / Dikiş Makinesi crafting stage.",
+    "v0.14 Kevin create_clothingfabricator3e: source average quality Brains turn-in normalized to actual brain item shortdescription Superior Brain / Üstün Beyin.",
+    "v0.14 Khe fabric: generic material prose normalized to exact gatherItem inventory names while preserving count 3."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
@@ -180,8 +184,8 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.13.3 project total: 1934 structured fields. Provenance coverage is complete: 1856 fields map to exact pinned FU 6.5.8 asset blobs and 78 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
-  "polish_pass": "PASS for v0.11 static Outpost/Starbooze scope: 12/12 quest files, quest-condition corrections and directly referenced inventory targets. In-game quest-flow/font/layout LQA remains pending.",
+  "full_source_validation": "v0.14 project total: 2028 structured fields. Provenance coverage is complete: 1940 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
+  "polish_pass": "PASS for v0.14 static Outpost Kevin/Khe scope: 13/13 live quest files, runtime connection checks, quest-condition clarifications and directly referenced inventory targets. In-game quest-flow/font/layout LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
     "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
@@ -300,5 +304,24 @@
     "color_control_number_integrity": "PASS",
     "static_qa": "PASS (GitHub Actions run 35508618807)",
     "in_game_lqa": "BEKLİYOR"
+  },
+  "v014_scope": {
+    "live_kevin_quests": 9,
+    "live_khe_quests": 4,
+    "quest_assets": 13,
+    "quest_display_fields": 50,
+    "quest_list_fields": 3,
+    "linked_inventory_assets": 20,
+    "linked_inventory_fields": 41,
+    "added_structured_fields": 94,
+    "added_patch_assets": 33,
+    "pinned_fu_new_fields": 84,
+    "layered_external_new_fields": 10,
+    "source_provenance": "PASS (94/94)",
+    "structured_field_count_after_release": 2028,
+    "localized_display_units_after_release": 2043,
+    "patch_assets_after_release": 358,
+    "target_assets_total": 359,
+    "in_game_lqa": "NOT PERFORMED"
   }
 }

@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.13.3-beta
+GELİŞTİRME / DOĞRULAMA | v0.14.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1934 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  2028 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -215,3 +215,19 @@ v0.13.3 üçüncü geriye dönük QA:
   Gevşek Mil / Çakıl / Demir Santrifüj envanter eşlemesi: PASS
   oyun içi LQA: BEKLİYOR
   GitHub Actions build/QA/ZIP: PASS (run 35508618807)
+
+v0.14 Outpost Kevin + Khe QA:
+  Kevin görevi: 9/9 runtime bağlı
+  Khe görevi: 4/4 runtime bağlı
+  görev alanı: 50 / 13 quest asset
+  görev-listesi alanı: 3
+  bağlı envanter alanı: 41 / 20 asset
+  yeni structured alan: 94
+  yeni patch asset: 33
+  yeni pinned FU alan: 84/84 exact-source PASS
+  yeni vanilla/layered alan: 10/10 exact-source PASS
+  kaynak/provenans: 94/94 PASS
+  proje toplamı: 2028 structured + 15 Lua = 2043 görünür birim
+  toplam patch asset: 358
+  Outpost aktif zincirleri: TAMAMLANDI
+  oyun içi LQA: BEKLİYOR
