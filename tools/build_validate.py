@@ -166,6 +166,13 @@ def allowed(a,p):
     }
     if a in science_chemistry_assets:
         return p in ('/description','/shortdescription')
+    science_electronics_assets={
+        'items/generic/crafting/matterassembler/aichip.item',
+        'items/generic/crafting/siliconboard.item',
+        'objects/fu_watcher/fu_watcher.object'
+    }
+    if a in science_electronics_assets:
+        return p in ('/description','/shortdescription')
     if a=='objects/crafting/handmill/handmill.object':
         return p in ('/category','/description','/shortdescription','/subtitle')
     if a=='interface/windowconfig/beerefuge.config':
