@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.10.0-beta",
-  "note": "v0.10 Science: oyuncuya erişebilen 37 Science bağlantılı görev tamamlandı. 204 yeni yapılandırılmış alan eklendi; fuquest_dna ve fuquest_mineral bağlantısız olduğu için dağıtım dışı. Oyun içi LQA bekliyor.",
+  "translation_version": "0.11.0-beta",
+  "note": "v0.11 Outpost başlangıcı: İçki/Starbooze görev zinciri 12/12; bağlı temel içki makineleri ve hedef malzemeler yerelleştirildi. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -12659,6 +12659,641 @@
         "external_source_repository": "FerreiraJGB/Starbound",
         "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
       }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "pointer": "/title",
+      "en": "Making a Booze Kit",
+      "tr": "İçki Kiti Yapımı",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "pointer": "/text",
+      "en": "So you want to make your own booze? Great! I'll help you. You must start by crafting a ^orange;Booze Kit^reset;. Place it against a wall and you can start your path to becoming a Brew Master!",
+      "tr": "Kendi içkini yapmak istiyorsun, öyle mi? Güzel! Yardım ederim. Önce bir ^orange;İçki Kiti^reset; üret. Duvara yerleştir; ardından içki ustası olma yoluna koyulabilirsin!",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "pointer": "/completionText",
+      "en": "Your path to brewing enlightment has started. Before we really start with the alcohol though, you must first use the Booze Kit to craft the other stations you'll require.",
+      "tr": "İçki yapımında ustalaşma yolculuğun başladı. Ama alkole geçmeden önce, ihtiyaç duyacağın diğer istasyonları İçki Kitiyle üretmelisin.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;booze kit^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;İçki Kitini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "pointer": "/title",
+      "en": "Brewing",
+      "tr": "Mayalama",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "pointer": "/text",
+      "en": "Now let's start. Make some ^green;bottles^reset; with your ^orange;Furnace^reset;. Three...no, four bottles should do.",
+      "tr": "Şimdi başlayalım. ^orange;Fırında^reset; bir ^green;Şişe^reset; üret.",
+      "section": "v0.11 Outpost - İçki",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak metin üç/dört şişe diyor; gerçek gatherItem koşulu 1 bottle istiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now we need to fill'em up, right? Here, take some seeds, you'll need them. Make sure you grow and harvest them.",
+      "tr": "Şimdi içini doldurmamız gerek, değil mi? Al şu tohumları; lazım olacak. Ekip biçmeyi unutma.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_b.questtemplate",
+      "pointer": "/title",
+      "en": "Brewing II",
+      "tr": "Mayalama II",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_b.questtemplate",
+      "pointer": "/text",
+      "en": "Next, you'll need to make ^orange;Yeast Water^reset;. Use ^orange;Water^reset; and ^orange;Wheat^reset; in the ^orange;Mashing Tun^reset; to make 3 ^orange;Grain Water^reset;. Use ^orange;Sugar^reset; with the ^orange;Grain Water^reset; in the ^orange;Mashing Tun^reset; to make ^orange;Yeast Water^reset;.",
+      "tr": "Sırada ^orange;Maya Suyu^reset; var. ^orange;Mayşeleme Kazanında^reset; ^orange;Su^reset; ile ^orange;Buğdayı^reset; kullanarak 3 ^orange;Tahıl Suyu^reset; üret. Ardından ^orange;Tahıl Suyunu^reset; ve ^orange;Şekeri^reset; yine ^orange;Mayşeleme Kazanında^reset; kullanarak ^orange;Maya Suyu^reset; üret.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_b.questtemplate",
+      "pointer": "/completionText",
+      "en": "Great. Did you harvest your crops yet? Do that, if not. Also, take these ^orange;Bottles^reset; for the next step.",
+      "tr": "Harika. Ekinlerini biçtin mi? Biçmediysen şimdi hallet. Sonraki adım için şu ^orange;Şişeleri^reset; de al.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_c.questtemplate",
+      "pointer": "/title",
+      "en": "Brewing III",
+      "tr": "Mayalama III",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_c.questtemplate",
+      "pointer": "/text",
+      "en": "Use some ^orange;Grapes^reset; and a ^orange;Bottle^reset; in the ^orange;Fruit Press^reset; to make ^orange;Grape Mash^reset;. You'll want two units of it for the wine you'll be making.",
+      "tr": "^orange;Meyve Presinde^reset; biraz ^orange;Üzüm^reset; ve bir ^orange;Şişe^reset; kullanarak ^orange;Üzüm Mayşesi^reset; yap. Görev için bir tane yeterli ama birazdan şarap yaparken iki tane gerekecek.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_c.questtemplate",
+      "pointer": "/completionText",
+      "en": "Nice. Now we have everything we need to make a delicious wartwine.",
+      "tr": "Güzel. Artık nefis bir Wartweed Şarabı yapmak için gereken her şeyimiz var.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_d.questtemplate",
+      "pointer": "/title",
+      "en": "Brewing IV",
+      "tr": "Mayalama IV",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_d.questtemplate",
+      "pointer": "/text",
+      "en": "And now let's make some ^green;Wartwine^reset;. Combine a ^orange;Bottle^reset;, ^orange;Yeast Water^reset;, 2 ^orange;Wartweed^reset;, and 2 ^orange;Grape Mash^reset; in the ^orange;Fermenter^reset;.",
+      "tr": "Şimdi biraz ^green;Wartweed Şarabı^reset; yapalım. ^orange;Fermentörde^reset; bir ^orange;Şişe^reset;, ^orange;Maya Suyu^reset;, 2 ^orange;Wartweed^reset; ve 2 ^orange;Üzüm Mayşesi^reset; kullan.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_d.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent! It looks tasty, doesn't it? But this is just the beginning. You'll craft even more glorious alcohol soon!",
+      "tr": "Mükemmel! Lezzetli görünüyor, değil mi? Ama bu daha başlangıç. Yakında çok daha görkemli içkiler yapacaksın!",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
+      "pointer": "/title",
+      "en": "I hops",
+      "tr": "Şerbetçiotu",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
+      "pointer": "/text",
+      "en": "For the next steps you'll need some ^orange;Hops^reset;. Make them grow and gather at least 2 ^orange;Hops^reset;. Because without ^orange;hops^reset;, we get no ^green;beer^reset;. And without beer we cry.",
+      "tr": "Sonraki adımlar için biraz ^orange;Şerbetçiotu^reset; lazım. Yetiştirip topla. Çünkü ^orange;şerbetçiotu^reset; olmazsa ^green;bira^reset; olmaz. Bira olmazsa da ağlarız.",
+      "section": "v0.11 Outpost - İçki",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak metin en az 2 Şerbetçiotu diyor; gerçek gatherItem koşulu 1 hops istiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
+      "pointer": "/completionText",
+      "en": "That's a good start. Be sure to keep some wheat as you'll need it next.",
+      "tr": "İyi başlangıç. Biraz buğday ayırmayı unutma; sırada ona ihtiyacın olacak.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;hops^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Şerbetçiotunu^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
+      "pointer": "/title",
+      "en": "Malt",
+      "tr": "Malt",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
+      "pointer": "/text",
+      "en": "Time to use some new stations. First, put one piece of ^orange;Wheat^reset; into the ^orange;Rain Barrel^reset;. Once it's soaked, put it into the ^orange;Sprouting Table^reset;. Then take your sprouted wheat and place it into a ^orange;Campfire^reset;.",
+      "tr": "Şimdi yeni istasyonları kullanalım. Önce bir ^orange;Buğdayı^reset; ^orange;Yağmur Variline^reset; koy. Islanınca ^orange;Filizlendirme Tezgâhına^reset; aktar. Filizlenmiş buğdayı da ^orange;Kamp Ateşinde^reset; kavur.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
+      "pointer": "/completionText",
+      "en": "Nice. Note that if you need dark malt, you just need to put back your malt into the ^orange;Furnace^reset; and cook it some more.",
+      "tr": "Güzel. Koyu malt gerekirse maltı tekrar ^orange;Fırına^reset; koyup biraz daha kavurman yeterli.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;malt^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Maltı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
+      "pointer": "/title",
+      "en": "Wort",
+      "tr": "Şıra",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
+      "pointer": "/text",
+      "en": "First, make one measure of ^orange;Yeast Water^reset;. I already taught you how to do this. Next, use the ^orange;Mashing Tun^reset; to mix your malt with water. We need one flask of ^orange;Wort^reset;.",
+      "tr": "Önce bir ölçü ^orange;Maya Suyu^reset; hazırla. Bunu nasıl yapacağını öğrettim. Sonra ^orange;Mayşeleme Kazanında^reset; maltı suyla karıştır. Bir şişe ^orange;Şıra^reset; lazım.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now we have everything we need to make ^green;beer^reset;, the glory of the Gods.",
+      "tr": "Artık tanrıların şanı olan ^green;birayı^reset; yapmak için gereken her şeyimiz var.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;wort and yeast water^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Şıra ve Maya Suyunu^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
+      "pointer": "/title",
+      "en": "Beer, beer, beer",
+      "tr": "Bira, Bira, Bira",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
+      "pointer": "/text",
+      "en": "It's ^blue;beer time^reset;! Go to your ^orange;Fermenter^reset; to make 3 ^green;Beer^reset;. You'll need ^orange;Wort^reset;, ^orange;Hops^reset;, ^orange;Carbon Dioxide^reset;, and ^orange;Yeast Water^reset;, plus an ^orange;Empty Bottle^reset;.",
+      "tr": "^blue;Bira zamanı^reset;! ^orange;Fermentörde^reset; ^green;Buğday Birası^reset; üret. Bunun için ^orange;Şıra^reset;, ^orange;Şerbetçiotu^reset;, ^orange;Karbondioksit^reset;, ^orange;Maya Suyu^reset; ve ^orange;Boş Şişe^reset; gerekiyor.",
+      "section": "v0.11 Outpost - İçki",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak metin 3 bira diyor; gerçek gatherItem koşulu 1 beer istiyor. Beer tarifi tek üretimde 2 verir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
+      "pointer": "/completionText",
+      "en": "Cheers! Now that you can make your own beer, your life is one step closer to perfection.",
+      "tr": "Şerefe! Artık kendi biranı yapabildiğine göre hayatın mükemmelliğe bir adım daha yakın.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;beer^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Buğday Birasını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
+      "pointer": "/title",
+      "en": "Distillation",
+      "tr": "Damıtma",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
+      "pointer": "/text",
+      "en": "Let's get what we need for our next beverage. Mash some ^green;apples, pears, grapes and peaches^reset;.",
+      "tr": "Sıradaki içki için malzemeleri hazırlayalım. ^green;Elma, armut, üzüm ve şeftaliden mayşe^reset; yap.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now let's move on to something a little harder. Something with some oomph!",
+      "tr": "Şimdi biraz daha zor, daha sert bir şeye geçelim!",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;mashed fruits^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Elma, Armut, Üzüm ve Şeftali Mayşelerini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
+      "pointer": "/title",
+      "en": "Spirits",
+      "tr": "Damıtılmış İçki",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
+      "pointer": "/text",
+      "en": "So *hic* with all these mashed fruits we're ready to make some ^green;shpirits^white;. You'll need some ^orange;Yeast Water^reset; and ^orange;Water^reset; too. Bring all to the ^green;distiller^reset; and do yer magic! *hic*",
+      "tr": "Şimdi *hık* bu meyve mayşeleriyle ^green;damıtılmış içki^white; yapmaya hazırız. Biraz ^orange;Maya Suyu^reset; ve ^orange;Su^reset; da lazım. Hepsini ^green;Damıtıcıya^reset; götür, döktür marifetini! *hık*",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
+      "pointer": "/completionText",
+      "en": "Nice work! Now, we'll have one last recipe to do.",
+      "tr": "İyi iş! Şimdi son bir tarifimiz kaldı.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;spirits^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Damıtılmış İçkiyi^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
+      "pointer": "/title",
+      "en": "Merry mead",
+      "tr": "Bal Şarabı",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
+      "pointer": "/text",
+      "en": "I's not able ter *hic* do much ter help. Make ^green;mead^reset;. Hard work. You'll need to find shome ^orange;Pure Honey^reset; and purpare fer a complimicated brewing process. Bring some for me to *hic* taste when you're done!",
+      "tr": "Pek yardımcı olamıyom *hık*. ^green;Meadbee Bal Şarabı^reset; yap. Zor iştir. Biraz ^orange;Saf Bal^reset; bulup karmaşık bir mayalama sürecine hazırlanman gerekecek. Bitirince tadına bakmam için biraz getir! *hık*",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
+      "pointer": "/completionText",
+      "en": "You did it. Now you can truly call yourself a brewer.",
+      "tr": "Başardın. Artık kendine gerçekten içki ustası diyebilirsin.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;mead^reset; to ^green;the drunk^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Meadbee Bal Şarabını^reset; ^orange;Bilim Karakolundaki^reset; ^green;sarhoşa^reset; götür.",
+      "section": "v0.11 Outpost - İçki"
+    },
+    {
+      "asset": "objects/generic/boozekit/boozekit.object",
+      "pointer": "/description",
+      "en": "Your very own homebrewing kit.",
+      "tr": "Evde kendi içkini yapmak için gereken kit.",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/generic/boozekit/boozekit.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Booze Kit^reset;",
+      "tr": "^orange;İçki Kiti^reset;",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/mashingtun/mashingtun.object",
+      "pointer": "/description",
+      "en": "A vat to make mash.",
+      "tr": "Mayşe hazırlamak için kullanılan bir kazan.",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/mashingtun/mashingtun.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Mashing Tun^reset;",
+      "tr": "^orange;Mayşeleme Kazanı^reset;",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/fruitpress/fruitpress.object",
+      "pointer": "/description",
+      "en": "A machine used to squeeze juices from fruits.",
+      "tr": "Meyvelerin suyunu sıkmak için kullanılan bir pres.",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/fruitpress/fruitpress.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Fruit Press^reset;",
+      "tr": "^orange;Meyve Presi^reset;",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/fermenter/fermenter.object",
+      "pointer": "/description",
+      "en": "A machine that allows fermentation to create alcohol!",
+      "tr": "Alkol üretmek için fermantasyon yapan bir cihaz!",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/fermenter/fermenter.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Fermenter^reset;",
+      "tr": "^orange;Fermentör^reset;",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/rainbarrel/rainbarrel.object",
+      "pointer": "/description",
+      "en": "A barrel to collect rainwater!",
+      "tr": "Yağmur suyu toplamak için kullanılan bir varil!",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/rainbarrel/rainbarrel.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Rain Barrel^reset;",
+      "tr": "^orange;Yağmur Varili^reset;",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/rainbarrel/rainbarrel.object",
+      "pointer": "/subtitle",
+      "en": "Rain Barrel.",
+      "tr": "Yağmur Varili.",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/distillery/distillery.object",
+      "pointer": "/description",
+      "en": "A machine that allows distillation of alcohol!",
+      "tr": "Alkol damıtmak için kullanılan bir cihaz!",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "objects/crafting/starbooze/distillery/distillery.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Distillery / Still^reset;",
+      "tr": "^orange;Damıtıcı^reset;",
+      "section": "v0.11 İçki makineleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/yeastwater.item",
+      "pointer": "/description",
+      "en": "A bottle filled with brewing yeast.",
+      "tr": "İçki mayasıyla dolu bir şişe.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/yeastwater.item",
+      "pointer": "/shortdescription",
+      "en": "Yeast Water",
+      "tr": "Maya Suyu",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/grainwater.item",
+      "pointer": "/description",
+      "en": "A bottle filled with the basis of yeast.",
+      "tr": "Maya hazırlamanın temelini oluşturan bir şişe sıvı.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/grainwater.item",
+      "pointer": "/shortdescription",
+      "en": "Grain Water",
+      "tr": "Tahıl Suyu",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/grapemash.item",
+      "pointer": "/description",
+      "en": "Grape Mash, the product of crushed and squeezed grapes.",
+      "tr": "Ezilip sıkılmış üzümlerden elde edilen mayşe.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/grapemash.item",
+      "pointer": "/shortdescription",
+      "en": "Grape Mash",
+      "tr": "Üzüm Mayşesi",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/wartwine.consumable",
+      "pointer": "/description",
+      "en": "Mmm. Warty alcohol. That sounds... tasty?\n^green;Heal ^white;10 ^gray;(^white;2s^gray;)^reset;, 35% ^red;Slow^reset;, ^red;Drunk^gray; (^white;30s^gray;)^reset;",
+      "tr": "Hmm. Wartweed'den yapılmış alkol. Kulağa... lezzetli mi geliyor?\n^green;İyileştir ^white;10 ^gray;(^white;2s^gray;)^reset;, 35% ^red;Yavaşlık^reset;, ^red;Sarhoş^gray; (^white;30s^gray;)^reset;",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/wartwine.consumable",
+      "pointer": "/shortdescription",
+      "en": "Wart Wine",
+      "tr": "Wartweed Şarabı",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/hops.item",
+      "pointer": "/description",
+      "en": "Hops! Used for making beer!",
+      "tr": "Şerbetçiotu! Bira yapımında kullanılır!",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/hops.item",
+      "pointer": "/shortdescription",
+      "en": "Hops",
+      "tr": "Şerbetçiotu",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/malt.item",
+      "pointer": "/description",
+      "en": "Roasted sprouted wheat!",
+      "tr": "Kavrulmuş filizlenmiş buğday!",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/malt.item",
+      "pointer": "/shortdescription",
+      "en": "Malt",
+      "tr": "Malt",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/wort.item",
+      "pointer": "/description",
+      "en": "Wort! Used for making beer!",
+      "tr": "Şıra! Bira yapımında kullanılır!",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/wort.item",
+      "pointer": "/shortdescription",
+      "en": "Wort",
+      "tr": "Şıra",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/drinks/beer/beer.consumable",
+      "pointer": "/description",
+      "en": "A mug of beer!\n^cyan;+^white;3 ^cyan;Defense ^gray;(^white;45s^gray;)\n^white;35% ^red;Slow ^gray;(^white;10s^gray;)\n^red;Drunk ^gray;(^white;25s^gray;)^reset;",
+      "tr": "Bir kupa bira!\n^cyan;+^white;3 ^cyan;Savunma ^gray;(^white;45s^gray;)\n^white;35% ^red;Yavaşlık ^gray;(^white;10s^gray;)\n^red;Sarhoş ^gray;(^white;25s^gray;)^reset;",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/drinks/beer/beer.consumable",
+      "pointer": "/shortdescription",
+      "en": "Wheat Beer",
+      "tr": "Buğday Birası",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/applemash.item",
+      "pointer": "/description",
+      "en": "Apple Mash, the product of crushed and squeezed apples.",
+      "tr": "Ezilip sıkılmış elmalardan elde edilen mayşe.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/applemash.item",
+      "pointer": "/shortdescription",
+      "en": "Apple Mash",
+      "tr": "Elma Mayşesi",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/pearmash.item",
+      "pointer": "/description",
+      "en": "Pear Mash, the product of crushed and squeezed pears.",
+      "tr": "Ezilip sıkılmış armutlardan elde edilen mayşe.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/pearmash.item",
+      "pointer": "/shortdescription",
+      "en": "Pear Mash",
+      "tr": "Armut Mayşesi",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/peachmash.item",
+      "pointer": "/description",
+      "en": "Peach Mash, the product of crushed and squeezed peaches.",
+      "tr": "Ezilip sıkılmış şeftalilerden elde edilen mayşe.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/peachmash.item",
+      "pointer": "/shortdescription",
+      "en": "Peach Mash",
+      "tr": "Şeftali Mayşesi",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/drinks/vodka/spirits.consumable",
+      "pointer": "/description",
+      "en": "A bottle of fruit-infused rectified spirits!\n^white;35% ^red;Slow ^gray;, ^red;Drunk ^gray;(^white;10s^gray;)^reset;",
+      "tr": "Meyve aromalı bir şişe damıtılmış içki!\n^white;35% ^red;Yavaşlık ^gray;, ^red;Sarhoş ^gray;(^white;10s^gray;)^reset;",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/drinks/vodka/spirits.consumable",
+      "pointer": "/shortdescription",
+      "en": "Rectified Spirits",
+      "tr": "Damıtılmış İçki",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/honeybucket.item",
+      "pointer": "/description",
+      "en": "A wooden bucket dripping with golden honey",
+      "tr": "Altın renkli balla dolup taşan ahşap bir kova.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/starbooze/honeybucket.item",
+      "pointer": "/shortdescription",
+      "en": "Honey-filled Bucket",
+      "tr": "Bal Dolu Kova",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/drinks/ciders/meadbottle.consumable",
+      "pointer": "/description",
+      "en": "A jug of sweet meadbee mead!\n^cyan;+^white;3 ^cyan;Defense ^gray;(^white;45s^gray;)\n^white;35% ^red;Slow^gray;, ^red;Drunk ^gray;(^white;1m^gray;)^reset;",
+      "tr": "Bir sürahi tatlı Meadbee bal şarabı!\n^cyan;+^white;3 ^cyan;Savunma ^gray;(^white;45s^gray;)\n^white;35% ^red;Yavaşlık^gray;, ^red;Sarhoş ^gray;(^white;1m^gray;)^reset;",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/drinks/ciders/meadbottle.consumable",
+      "pointer": "/shortdescription",
+      "en": "Meadbee Mead",
+      "tr": "Meadbee Bal Şarabı",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/fu_carbondioxide.item",
+      "pointer": "/description",
+      "en": "A common trace gas with many applications.",
+      "tr": "Birçok kullanım alanı olan yaygın bir iz gaz.",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/generic/crafting/fu_carbondioxide.item",
+      "pointer": "/shortdescription",
+      "en": "Carbon Dioxide",
+      "tr": "Karbondioksit",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/liquids/fu_liquidhoney.liqitem",
+      "pointer": "/shortdescription",
+      "en": "Pure Honey",
+      "tr": "Saf Bal",
+      "section": "v0.11 İçki malzemeleri"
+    },
+    {
+      "asset": "items/liquids/fu_liquidhoney.liqitem",
+      "pointer": "/description",
+      "en": "A measure of sweet, sweet honey.\n^yellow;Centrifugable^reset;.",
+      "tr": "Bir ölçü mis gibi tatlı bal.\n^yellow;Santrifüjlenebilir^reset;.",
+      "section": "v0.11 İçki malzemeleri"
     }
   ]
 }
