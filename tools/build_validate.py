@@ -19,7 +19,8 @@ ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 NONVISIBLE_QUEST_ASSETS = {
     'quests/fu_questlines/tutorial/start_basics1.questtemplate',
     'quests/fu_questlines/science/chemistry/fuquest_dna.questtemplate',
-    'quests/fu_questlines/science/chemistry/fuquest_mineral.questtemplate'
+    'quests/fu_questlines/science/chemistry/fuquest_mineral.questtemplate',
+    'quests/fu_questlines/outpost/bees/13mites.questtemplate'
 }
 
 SCIENCE_EXTERNAL_QUEST_ASSETS = {
@@ -140,7 +141,7 @@ def allowed(a,p):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if (a.startswith('quests/fu_questlines/science/') or a in SCIENCE_EXTERNAL_QUEST_ASSETS) and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
-    if a.startswith('quests/fu_questlines/outpost/booze/') and a.endswith('.questtemplate'):
+    if a.startswith('quests/fu_questlines/outpost/bees/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
         return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
@@ -215,6 +216,28 @@ def allowed(a,p):
         return p in ('/description','/shortdescription','/apexDescription','/avianDescription','/floranDescription','/glitchDescription','/humanDescription','/hylotlDescription','/novakidDescription')
     if a=='items/tools/mmgravgun2.beamaxe':
         return p in ('/description','/shortdescription','/category')
+    outpost_bee_assets={
+        'bees/objects/apiary/apiary.object',
+        'bees/frames/basic.item',
+        'bees/objects/beeexaminer/beeExaminer.object',
+        'bees/bees/honey_queen.item',
+        'bees/bees/honey_drone.item',
+        'bees/combs/normalcomb.consumable',
+        'items/generic/crafting/waxchunk.item',
+        'bees/objects/apiarylarge/apiarylarge.object',
+        'objects/bees/honeyjarrer/honeyjarrer.object',
+        'bees/frames/tungsten.item',
+        'items/materials/honey/goldenwood.matitem',
+        'bees/bees/orchid_queen.item',
+        'bees/bees/orchid_drone.item',
+        'bees/bees/bumble_queen.item',
+        'bees/bees/bumble_drone.item',
+        'items/active/unsorted/bugnet/bugnet.activeitem',
+        'objects/farmables/flowerred/flowerred.object',
+        'items/generic/crafting/bottle.item'
+    }
+    if a in outpost_bee_assets:
+        return p in ('/description','/shortdescription','/subtitle')
     power_assets={
         'objects/power/isn_solarpanel/isn_solarpanel.object',
         'objects/power/fu_solararray/fu_solararray.object',
@@ -332,36 +355,6 @@ def allowed(a,p):
         if a=='objects/colonysystem2/colonystation/colonystation.object' and p in ('/interactData/paneLayoutOverride/windowtitle/title','/interactData/paneLayoutOverride/windowtitle/subtitle'):
             return True
         return bool(re.fullmatch(r'/(description|shortdescription|[A-Za-z]+Description)',p))
-    booze_machine_assets={
-        'objects/generic/boozekit/boozekit.object',
-        'objects/crafting/starbooze/mashingtun/mashingtun.object',
-        'objects/crafting/starbooze/fruitpress/fruitpress.object',
-        'objects/crafting/starbooze/fermenter/fermenter.object',
-        'objects/crafting/starbooze/rainbarrel/rainbarrel.object',
-        'objects/crafting/starbooze/distillery/distillery.object'
-    }
-    if a in booze_machine_assets:
-        return p in ('/description','/shortdescription') or (a=='objects/crafting/starbooze/rainbarrel/rainbarrel.object' and p=='/subtitle')
-    booze_item_assets={
-        'items/generic/crafting/starbooze/yeastwater.item',
-        'items/generic/crafting/starbooze/grainwater.item',
-        'items/generic/crafting/starbooze/grapemash.item',
-        'items/generic/crafting/starbooze/wartwine.consumable',
-        'items/generic/crafting/starbooze/hops.item',
-        'items/generic/crafting/starbooze/malt.item',
-        'items/generic/crafting/starbooze/wort.item',
-        'items/generic/drinks/beer/beer.consumable',
-        'items/generic/crafting/starbooze/applemash.item',
-        'items/generic/crafting/starbooze/pearmash.item',
-        'items/generic/crafting/starbooze/peachmash.item',
-        'items/generic/drinks/vodka/spirits.consumable',
-        'items/generic/crafting/starbooze/honeybucket.item',
-        'items/generic/drinks/ciders/meadbottle.consumable',
-        'items/generic/crafting/fu_carbondioxide.item',
-        'items/liquids/fu_liquidhoney.liqitem'
-    }
-    if a in booze_item_assets:
-        return p in ('/description','/shortdescription')
     return False
 
 def main():
@@ -447,10 +440,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Görevler (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma + Tutorial + Science + Outpost Arıcılık (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki zincirini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, bağlı tutorial görev ailesi, Science ve Outpost Arıcılık görev zincirlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

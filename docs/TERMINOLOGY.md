@@ -215,23 +215,26 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Tritium Rod | İzotop / yakıt kaynağı | Kaynak | Trityum Çubuğu | Tritium Rod | LOCKED | Yerleşik bilimsel Türkçe: trityum |
 
 
-| Booze Kit | İçki üretim başlangıç istasyonu | Nesne | İçki Kiti | Booze Kit | LOCKED | Starbooze görev zinciri |
-| Mash | İçki üretim ara ürünü | Kavram | Mayşe | Püre, Ezme | LOCKED | Grape/Apple/Pear/Peach Mash ailesinde ortak terim |
-| Mashing Tun | İçki üretim makinesi | Nesne | Mayşeleme Kazanı | Mashing Tun | LOCKED | |
-| Fruit Press | İçki üretim makinesi | Nesne | Meyve Presi | Fruit Press | LOCKED | |
-| Fermenter | İçki üretim makinesi | Nesne | Fermentör | Fermenter | LOCKED | |
-| Rain Barrel | İçki üretim makinesi | Nesne | Yağmur Varili | Rain Barrel | LOCKED | |
-| Distillery / Still | İçki üretim makinesi | Nesne | Damıtıcı | Distillery, Still | LOCKED | Tek oyuncu adı kullanılır |
-| Yeast Water | İçki üretim malzemesi | Kaynak | Maya Suyu | Yeast Water | LOCKED | |
-| Grain Water | İçki üretim malzemesi | Kaynak | Tahıl Suyu | Grain Water | LOCKED | |
-| Hops | İçki üretim malzemesi | Kaynak | Şerbetçiotu | Hops | LOCKED | Yerleşik bira üretim terimi |
-| Wort | İçki üretim malzemesi | Kaynak | Şıra | Wort | LOCKED | Bira üretimindeki teknik ara ürün |
-| Wartweed | Vanilla ürün / Starbooze girdisi | Özel ad | Wartweed | Siğil Otu | LOCKED | Envanter adıyla eşleşme için özel ad korunur |
-| Wart Wine | Starbooze içkisi | Nesne | Wartweed Şarabı | Wart Wine | LOCKED | |
-| Carbon Dioxide | Kimyasal / içki üretim girdisi | Kaynak | Karbondioksit | Carbon Dioxide | LOCKED | Yerleşik bilimsel karşılık |
-| Rectified Spirits | Starbooze içkisi | Nesne | Damıtılmış İçki | Rektifiye İspirto | LOCKED | Oyuncu için açık, işlevsel ad |
-| Meadbee Mead | Starbooze içkisi | Nesne | Meadbee Bal Şarabı | Meadbee Mead | LOCKED | Meadbee özel ad olarak korunur |
-| Pure Honey | Arıcılık / içki girdisi | Kaynak | Saf Bal | Pure Honey | LOCKED | |
+| Apiary | Arıcılık yapısı | Nesne | Arılık | Apiary | LOCKED | Arı yetiştirme ana yapısı |
+| Basic Frame | Arıcılık çerçevesi | Nesne | Temel Çerçeve | Basic Frame | LOCKED | |
+| Queen / Queen Bee | Arıcılık rolü | Terim | Ana Arı | Kraliçe Arı | LOCKED | Türkçe arıcılık terminolojisi |
+| Drone / Drone Bee | Arıcılık rolü | Terim | Erkek Arı | Drone | LOCKED | Türkçe arıcılık terminolojisi |
+| Honey Queen | Arı eşyası | Nesne | Bal Ana Arısı | Honey Queen | LOCKED | |
+| Honey Drone | Arı eşyası | Nesne | Bal Erkek Arısı | Honey Drone | LOCKED | |
+| Basic Microscope | Arıcılık makinesi | Nesne | Temel Mikroskop | Basic Microscope | LOCKED | |
+| Honeycomb | Arıcılık kaynağı | Kaynak | Bal Peteği | Honeycomb | LOCKED | |
+| Beeswax | Arıcılık kaynağı | Kaynak | Balmumu | Beeswax | LOCKED | |
+| Large Apiary | Arıcılık yapısı | Nesne | Büyük Arılık | Alveary, Giant Apiary | LOCKED | Gerçek normalalveary envanter adı |
+| Honey Jarring Machine / Honey Jarrer | Arıcılık makinesi | Nesne | Bal Kavanozlama Makinesi | Honey Jarrer | LOCKED | |
+| Tungsten Frame | Arıcılık çerçevesi | Nesne | Tungsten Çerçeve | Tungsten Frame | LOCKED | |
+| Golden Wood | Arıcılık malzemesi | Kaynak | Altın Odun | Golden Wood | LOCKED | |
+| Orchid Queen | Arı eşyası | Nesne | Orkide Ana Arısı | Orchid Queen | LOCKED | |
+| Orchid Drone | Arı eşyası | Nesne | Orkide Erkek Arısı | Orchid Drone | LOCKED | |
+| Bumblebee Queen | Arı eşyası | Nesne | Bombus Ana Arısı | Bumblebee Queen | LOCKED | |
+| Bumblebee Drone | Arı eşyası | Nesne | Bombus Erkek Arısı | Bumblebee Drone | LOCKED | |
+| Bug Net | Vanilla araç | Nesne | Böcek Ağı | Bug Net | LOCKED | v0.11 vanilla kaynak doğrulandı |
+| Red Flower | Vanilla bitki | Nesne | Kırmızı Çiçek | Red Flower | LOCKED | v0.11 vanilla kaynak doğrulandı |
+| Empty Bottle | Vanilla üretim malzemesi | Kaynak | Boş Şişe | Empty Bottle | LOCKED | v0.11 vanilla kaynak doğrulandı |
 
 ## Kural
 

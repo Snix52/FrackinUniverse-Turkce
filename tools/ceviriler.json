@@ -3,7 +3,7 @@
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
   "translation_version": "0.11.0-beta",
-  "note": "v0.11 Outpost başlangıcı: İçki/Starbooze görev zinciri 12/12; bağlı temel içki makineleri ve hedef malzemeler yerelleştirildi. Oyun içi LQA bekliyor.",
+  "note": "v0.10 Science: oyuncuya erişebilen 37 Science bağlantılı görev tamamlandı. 204 yeni yapılandırılmış alan eklendi; fuquest_dna ve fuquest_mineral bağlantısız olduğu için dağıtım dışı. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -12661,639 +12661,590 @@
       }
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "asset": "quests/fu_questlines/outpost/bees/1beestation.questtemplate",
       "pointer": "/title",
-      "en": "Making a Booze Kit",
-      "tr": "İçki Kiti Yapımı",
-      "section": "v0.11 Outpost - İçki"
+      "en": "Beekeeping 101",
+      "tr": "Arıcılık 101",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "asset": "quests/fu_questlines/outpost/bees/1beestation.questtemplate",
       "pointer": "/text",
-      "en": "So you want to make your own booze? Great! I'll help you. You must start by crafting a ^orange;Booze Kit^reset;. Place it against a wall and you can start your path to becoming a Brew Master!",
-      "tr": "Kendi içkini yapmak istiyorsun, öyle mi? Güzel! Yardım ederim. Önce bir ^orange;İçki Kiti^reset; üret. Duvara yerleştir; ardından içki ustası olma yoluna koyulabilirsin!",
-      "section": "v0.11 Outpost - İçki"
+      "en": "Care to try a simpler life, ^green;breeding bees^reset; and reaping the profits? Build an ^orange;Apiary Crafting Station^reset; and you can get started.",
+      "tr": "Daha sade bir hayat denemek ister misin? ^green;Arı yetiştirip^reset; ürünlerini toplamak kârlı olabilir. Bir ^orange;Arıcılık Üretim İstasyonu^reset; kur, başlayabilirsin.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
+      "asset": "quests/fu_questlines/outpost/bees/1beestation.questtemplate",
       "pointer": "/completionText",
-      "en": "Your path to brewing enlightment has started. Before we really start with the alcohol though, you must first use the Booze Kit to craft the other stations you'll require.",
-      "tr": "İçki yapımında ustalaşma yolculuğun başladı. Ama alkole geçmeden önce, ihtiyaç duyacağın diğer istasyonları İçki Kitiyle üretmelisin.",
-      "section": "v0.11 Outpost - İçki"
+      "en": "With the ^orange;Apiary Crafting Station^reset;, you'll be able to craft a whole new array of goods you've likely not seen before!",
+      "tr": "^orange;Arıcılık Üretim İstasyonu^reset; ile muhtemelen daha önce görmediğin yepyeni bir sürü ürün üretebilirsin!",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/1boozekit.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;booze kit^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;İçki Kitini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "asset": "quests/fu_questlines/outpost/bees/2apiary.questtemplate",
       "pointer": "/title",
-      "en": "Brewing",
-      "tr": "Mayalama",
-      "section": "v0.11 Outpost - İçki"
+      "en": "House of Bees",
+      "tr": "Arıların Yuvası",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "asset": "quests/fu_questlines/outpost/bees/2apiary.questtemplate",
       "pointer": "/text",
-      "en": "Now let's start. Make some ^green;bottles^reset; with your ^orange;Furnace^reset;. Three...no, four bottles should do.",
-      "tr": "Şimdi başlayalım. ^orange;Fırında^reset; bir ^green;Şişe^reset; üret.",
-      "section": "v0.11 Outpost - İçki",
+      "en": "Before you take care of bees, you need a place to put them. Build an ^orange;Apiary^reset; for this.",
+      "tr": "Arılarla ilgilenmeden önce onları barındıracak bir yer gerek. Bunun için bir ^orange;Arılık^reset; üret.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/2apiary.questtemplate",
+      "pointer": "/completionText",
+      "en": "The ^orange;Apiary^reset; is essential for a beekeeper. You'll likely want more than one. You need them to breed your little buddies.",
+      "tr": "^orange;Arılık^reset; bir arıcı için olmazsa olmaz. Muhtemelen birden fazlasını isteyeceksin. Minik dostlarını yetiştirmek için bunlara ihtiyacın var.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/3basicframe.questtemplate",
+      "pointer": "/title",
+      "en": "Basic Frame",
+      "tr": "Temel Çerçeve",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/3basicframe.questtemplate",
+      "pointer": "/text",
+      "en": "A ^orange;Basic Frame^reset; is placed within an ^green;apiary^reset; to act as housing for the bees. Create one now.",
+      "tr": "Bir ^orange;Temel Çerçeve^reset;, arılara yaşam alanı sağlamak için ^green;Arılığın^reset; içine yerleştirilir. Şimdi bir tane üret.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/3basicframe.questtemplate",
+      "pointer": "/completionText",
+      "en": "There are ^green;many types of frames^reset;, and different bees will prefer certain types. You'll need to be creative.",
+      "tr": "^green;Birçok çerçeve türü^reset; var ve farklı arılar farklı türleri tercih eder. Biraz yaratıcı olman gerekecek.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/4bees.questtemplate",
+      "pointer": "/title",
+      "en": "Queen and Drone",
+      "tr": "Ana Arı ve Erkek Arı",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/4bees.questtemplate",
+      "pointer": "/text",
+      "en": "Now you need to ^green;catch a queen and a drone honey bee^reset; and let them loose inside your apiary. You'll need a ^orange;Bug Net^reset; for this. Bees can be found on most biomes, usually during the daylight hours.",
+      "tr": "Şimdi birer ^green;Bal Ana Arısı ve Bal Erkek Arısı yakala^reset; ve Arılığa bırak. Bunun için bir ^orange;Böcek Ağı^reset; gerekir. Arıları çoğu biyomda, genellikle gündüz saatlerinde bulabilirsin.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/4bees.questtemplate",
+      "pointer": "/completionText",
+      "en": "Find ^green;other types of bees^reset;, and cross-breed them! How? Just place a different type of drone in there for your queen to check out. You may see some pretty swift results!",
+      "tr": "^green;Başka arı türleri^reset; bulup çaprazla! Nasıl mı? Ana arının yanına farklı türden bir erkek arı koyman yeterli. Sonuçları epey hızlı görebilirsin!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/4bbees.questtemplate",
+      "pointer": "/title",
+      "en": "Researching Queens",
+      "tr": "Ana Arıları İncelemek",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/4bbees.questtemplate",
+      "pointer": "/text",
+      "en": "When you catch wild queens, you can't tell much about them. You can't use them well through guesswork. So, try building a ^orange;Basic Microscope^reset; in the bee station.",
+      "tr": "Yabani ana arıları yakaladığında özelliklerini pek anlayamazsın. Tahminle verimli kullanmak zor. Arıcılık Üretim İstasyonunda bir ^orange;Temel Mikroskop^reset; üret.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/4bbees.questtemplate",
+      "pointer": "/completionText",
+      "en": "Placing a ^cyan;Wild Queen^reset; in a microscope will allow you to scan her stats, which can greatly influence your breeding choices.",
+      "tr": "Bir ^cyan;Yabani Ana Arıyı^reset; mikroskoba koyarak özelliklerini tarayabilirsin. Bu bilgiler hangi arıları eşleştireceğini seçerken çok işine yarar.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/5plantflowers.questtemplate",
+      "pointer": "/title",
+      "en": "Flowers",
+      "tr": "Çiçekler",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/5plantflowers.questtemplate",
+      "pointer": "/text",
+      "en": "Bees won't be happy without flowers to pollinate. Get a ^orange;Red Flower^reset; to plant next to your apiary and your bees will get going!",
+      "tr": "Arılar, tozlaştıracak çiçek olmadan mutlu olmaz. Arılığın yanına dikmek için bir ^orange;Kırmızı Çiçek^reset; edin, arıların işe koyulsun!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/5plantflowers.questtemplate",
+      "pointer": "/completionText",
+      "en": "Pretty much any flower will do, by the way. And be patient. Bees take time to breed, and they only ^green;'do it'^reset; when there are flowers and sun. ^orange;Some plants^reset; are more appealing to certain species.",
+      "tr": "Bu arada hemen her çiçek iş görür. Sabırlı ol. Arıların üremesi zaman alır ve yalnızca çiçeklerle güneş varken ^green;'işi hallederler'^reset;. ^orange;Bazı bitkiler^reset; belirli türlere daha çekici gelir.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/6centrifuge.questtemplate",
+      "pointer": "/title",
+      "en": "Round and Round we go...",
+      "tr": "Döne Döne...",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/6centrifuge.questtemplate",
+      "pointer": "/text",
+      "en": "To extract the goodies from ^green;honeycombs^reset; produced by your bees, you are going to need a ^orange;Wooden Centrifuge^reset;.",
+      "tr": "Arılarının ürettiği ^green;bal peteklerinin^reset; içindekileri çıkarmak için bir ^orange;Ahşap Santrifüje^reset; ihtiyacın olacak.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/6centrifuge.questtemplate",
+      "pointer": "/completionText",
+      "en": "As your bee-tech gets more advanced you'll get ^green;superior output^reset; from your bee farm.",
+      "tr": "Arıcılık teknolojini geliştirdikçe çiftliğinden ^green;daha yüksek verim^reset; alırsın.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/7combs.questtemplate",
+      "pointer": "/title",
+      "en": "Honeycombs",
+      "tr": "Bal Petekleri",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/7combs.questtemplate",
+      "pointer": "/text",
+      "en": "Once your bees have been busy a while ^green;collect the combs from your apiary^reset;.",
+      "tr": "Arıların bir süre çalıştıktan sonra ^green;Arılıktaki petekleri topla^reset;.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/7combs.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now you'll need another station to process this resource. Shall we continue?",
+      "tr": "Şimdi bu kaynağı işleyecek başka bir istasyona ihtiyacın var. Devam edelim mi?",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/8extractcombs.questtemplate",
+      "pointer": "/title",
+      "en": "Wax and Wane",
+      "tr": "Petekten Balmumuna",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/8extractcombs.questtemplate",
+      "pointer": "/text",
+      "en": "Place the combs within a ^orange;Wooden Centrifuge^reset;, which you can build at the Machining Table, and collect the ^green;wax chunks^reset; from within.",
+      "tr": "Petekleri, İmalat Tezgâhında üretebileceğin bir ^orange;Ahşap Santrifüje^reset; koy ve içlerinden ^green;Balmumu^reset; çıkar.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/8extractcombs.questtemplate",
+      "pointer": "/completionText",
+      "en": "Different combs contain very different resources. Experimentation is part of the challenge!",
+      "tr": "Farklı petekler çok farklı kaynaklar içerir. Deneyip keşfetmek işin bir parçası!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/9alveary.questtemplate",
+      "pointer": "/title",
+      "en": "Alveary",
+      "tr": "Büyük Arılık",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/9alveary.questtemplate",
+      "pointer": "/text",
+      "en": "Now we can get a bit more adventurous. Create a ^orange;Large Apiary^reset; to double your bee farm potential. You'll need some ^orange;Golden Wood^reset; to build it. Try ^cyan;Bumblebees or Orchid bees^reset;.",
+      "tr": "Şimdi biraz daha ileri gidebiliriz. Arı çiftliğinin kapasitesini ikiye katlamak için bir ^orange;Büyük Arılık^reset; üret. Bunun için biraz ^orange;Altın Odun^reset; gerekecek. ^cyan;Bombus veya Orkide arılarını^reset; dene.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/9alveary.questtemplate",
+      "pointer": "/completionText",
+      "en": "These sweet babies can hold ^green;two frames^reset;, and twice as many drones means twice as much production, too. The gains are quite substantial!",
+      "tr": "Bu güzellikler ^green;iki çerçeve^reset; taşıyabilir. Erkek arı sayısının iki katına çıkması üretimi de ikiye katlar. Verim artışı ciddi!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/10industrialcentrifuge.questtemplate",
+      "pointer": "/title",
+      "en": "Industrial Edge",
+      "tr": "Endüstriyel Avantaj",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/10industrialcentrifuge.questtemplate",
+      "pointer": "/text",
+      "en": "Now it's time to maximize your output. Build an ^orange;Industrial Centrifuge^reset;. You'll need to find some ^orange;Sand^reset; to make the glass you need. Try a desert!",
+      "tr": "Şimdi verimi en üst düzeye çıkarma zamanı. Bir ^orange;Endüstriyel Santrifüj^reset; üret. Gereken cam için biraz ^orange;Kum^reset; bulmalısın. Bir çöl biyomuna bak!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/10industrialcentrifuge.questtemplate",
+      "pointer": "/completionText",
+      "en": "I should mention that this station requires power to run, which you can get from an Alternator or better power source.",
+      "tr": "Bu istasyonun çalışmak için güce ihtiyacı olduğunu da söyleyeyim. Gücü bir Alternatörden veya daha iyi bir güç kaynağından sağlayabilirsin.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/11honeyjarrer.questtemplate",
+      "pointer": "/title",
+      "en": "Jarring Honey",
+      "tr": "Bal Kavanozlama",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/11honeyjarrer.questtemplate",
+      "pointer": "/text",
+      "en": "To make the most out of your bee farm, you'll want to harvest honey. Try to build a ^orange;Honey Jarrer^reset; to aid with this process. Toss in some ^orange;Empty Bottles^reset; and ^orange;honey combs^reset; while you're at it.",
+      "tr": "Arı çiftliğinden en iyi verimi almak istiyorsan bal toplamalısın. Bunun için bir ^orange;Bal Kavanozlama Makinesi^reset; üret. Hazır başlamışken içine biraz ^orange;Boş Şişe^reset; ve ^orange;bal peteği^reset; at.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/11honeyjarrer.questtemplate",
+      "pointer": "/completionText",
+      "en": "The ^orange;Honey Jarrer^reset; creates ^green;Honey Jars^reset; with different effects, depending on the combs you centrifuge. It's up to you to experiment!",
+      "tr": "^orange;Bal Kavanozlama Makinesi^reset;, santrifüjlediğin petek türüne göre farklı etkilere sahip ^green;Bal Kavanozları^reset; üretir. Gerisini deneyerek keşfet!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/12breeding.questtemplate",
+      "pointer": "/title",
+      "en": "Breeding New Variants",
+      "tr": "Yeni Varyantlar Yetiştirmek",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/12breeding.questtemplate",
+      "pointer": "/text",
+      "en": "So, you've got apiaries and honey bees. Now, I wonder: what would happen if you put a ^orange;Orchid Queen^reset; and some ^orange;Honey Drones^reset; into that ^orange;Giant Apiary^reset;? And what about if you added a ^orange;Tungsten Frame^reset;?",
+      "tr": "Demek Arılıkların ve bal arıların hazır. Peki bir ^orange;Orkide Ana Arısı^reset; ile birkaç ^orange;Bal Erkek Arısını^reset; o ^orange;Büyük Arılığa^reset; koyarsan ne olur? Bir de ^orange;Tungsten Çerçeve^reset; eklersen?",
+      "section": "v0.11 Outpost - Arıcılık",
       "qa": {
-        "allow_number_fix": true,
-        "semantic_override": "Kaynak metin üç/dört şişe diyor; gerçek gatherItem koşulu 1 bottle istiyor."
+        "semantic_source_fix": true,
+        "reason": "Kaynak metindeki Giant Apiary gerçek bir envanter adı değil; görev zincirindeki normalalveary nesnesinin gerçek adı Large Apiary olduğundan Türkçede Büyük Arılık kullanıldı."
       }
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "asset": "quests/fu_questlines/outpost/bees/12breeding.questtemplate",
       "pointer": "/completionText",
-      "en": "Now we need to fill'em up, right? Here, take some seeds, you'll need them. Make sure you grow and harvest them.",
-      "tr": "Şimdi içini doldurmamız gerek, değil mi? Al şu tohumları; lazım olacak. Ekip biçmeyi unutma.",
-      "section": "v0.11 Outpost - İçki"
+      "en": "You can create countless bee variants by selectively choosing traits in queens and drones to influence their offspring. ^red;Not all bees^reset; can be bred with every family-type. You'll need to experiment yourself to find out what works.",
+      "tr": "Ana ve erkek arılardaki özellikleri seçerek yavrularını etkileyebilir, sayısız arı varyantı yetiştirebilirsin. ^red;Her arı^reset; her aile türüyle çiftleşemez. Neyin işe yaradığını deneyerek bulman gerekecek.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_b.questtemplate",
-      "pointer": "/title",
-      "en": "Brewing II",
-      "tr": "Mayalama II",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_b.questtemplate",
-      "pointer": "/text",
-      "en": "Next, you'll need to make ^orange;Yeast Water^reset;. Use ^orange;Water^reset; and ^orange;Wheat^reset; in the ^orange;Mashing Tun^reset; to make 3 ^orange;Grain Water^reset;. Use ^orange;Sugar^reset; with the ^orange;Grain Water^reset; in the ^orange;Mashing Tun^reset; to make ^orange;Yeast Water^reset;.",
-      "tr": "Sırada ^orange;Maya Suyu^reset; var. ^orange;Mayşeleme Kazanında^reset; ^orange;Su^reset; ile ^orange;Buğdayı^reset; kullanarak 3 ^orange;Tahıl Suyu^reset; üret. Ardından ^orange;Tahıl Suyunu^reset; ve ^orange;Şekeri^reset; yine ^orange;Mayşeleme Kazanında^reset; kullanarak ^orange;Maya Suyu^reset; üret.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_b.questtemplate",
-      "pointer": "/completionText",
-      "en": "Great. Did you harvest your crops yet? Do that, if not. Also, take these ^orange;Bottles^reset; for the next step.",
-      "tr": "Harika. Ekinlerini biçtin mi? Biçmediysen şimdi hallet. Sonraki adım için şu ^orange;Şişeleri^reset; de al.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_c.questtemplate",
-      "pointer": "/title",
-      "en": "Brewing III",
-      "tr": "Mayalama III",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_c.questtemplate",
-      "pointer": "/text",
-      "en": "Use some ^orange;Grapes^reset; and a ^orange;Bottle^reset; in the ^orange;Fruit Press^reset; to make ^orange;Grape Mash^reset;. You'll want two units of it for the wine you'll be making.",
-      "tr": "^orange;Meyve Presinde^reset; biraz ^orange;Üzüm^reset; ve bir ^orange;Şişe^reset; kullanarak ^orange;Üzüm Mayşesi^reset; yap. Görev için bir tane yeterli ama birazdan şarap yaparken iki tane gerekecek.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_c.questtemplate",
-      "pointer": "/completionText",
-      "en": "Nice. Now we have everything we need to make a delicious wartwine.",
-      "tr": "Güzel. Artık nefis bir Wartweed Şarabı yapmak için gereken her şeyimiz var.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_d.questtemplate",
-      "pointer": "/title",
-      "en": "Brewing IV",
-      "tr": "Mayalama IV",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_d.questtemplate",
-      "pointer": "/text",
-      "en": "And now let's make some ^green;Wartwine^reset;. Combine a ^orange;Bottle^reset;, ^orange;Yeast Water^reset;, 2 ^orange;Wartweed^reset;, and 2 ^orange;Grape Mash^reset; in the ^orange;Fermenter^reset;.",
-      "tr": "Şimdi biraz ^green;Wartweed Şarabı^reset; yapalım. ^orange;Fermentörde^reset; bir ^orange;Şişe^reset;, ^orange;Maya Suyu^reset;, 2 ^orange;Wartweed^reset; ve 2 ^orange;Üzüm Mayşesi^reset; kullan.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/2brew_d.questtemplate",
-      "pointer": "/completionText",
-      "en": "Excellent! It looks tasty, doesn't it? But this is just the beginning. You'll craft even more glorious alcohol soon!",
-      "tr": "Mükemmel! Lezzetli görünüyor, değil mi? Ama bu daha başlangıç. Yakında çok daha görkemli içkiler yapacaksın!",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
-      "pointer": "/title",
-      "en": "I hops",
-      "tr": "Şerbetçiotu",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
-      "pointer": "/text",
-      "en": "For the next steps you'll need some ^orange;Hops^reset;. Make them grow and gather at least 2 ^orange;Hops^reset;. Because without ^orange;hops^reset;, we get no ^green;beer^reset;. And without beer we cry.",
-      "tr": "Sonraki adımlar için biraz ^orange;Şerbetçiotu^reset; lazım. Biraz ^orange;Şerbetçiotu^reset; yetiştirip topla. Çünkü ^orange;şerbetçiotu^reset; olmazsa ^green;bira^reset; olmaz. Bira olmazsa da ağlarız.",
-      "section": "v0.11 Outpost - İçki",
-      "qa": {
-        "allow_number_fix": true,
-        "semantic_override": "Kaynak metin en az 2 Şerbetçiotu diyor; gerçek gatherItem koşulu 1 hops istiyor."
-      }
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
-      "pointer": "/completionText",
-      "en": "That's a good start. Be sure to keep some wheat as you'll need it next.",
-      "tr": "İyi başlangıç. Biraz buğday ayırmayı unutma; sırada ona ihtiyacın olacak.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;hops^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Şerbetçiotunu^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
-      "pointer": "/title",
-      "en": "Malt",
-      "tr": "Malt",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
-      "pointer": "/text",
-      "en": "Time to use some new stations. First, put one piece of ^orange;Wheat^reset; into the ^orange;Rain Barrel^reset;. Once it's soaked, put it into the ^orange;Sprouting Table^reset;. Then take your sprouted wheat and place it into a ^orange;Campfire^reset;.",
-      "tr": "Şimdi yeni istasyonları kullanalım. Önce bir ^orange;Buğdayı^reset; ^orange;Yağmur Variline^reset; koy. Islanınca ^orange;Filizlendirme Tezgâhına^reset; aktar. Filizlenmiş buğdayı da ^orange;Kamp Ateşinde^reset; kavur.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
-      "pointer": "/completionText",
-      "en": "Nice. Note that if you need dark malt, you just need to put back your malt into the ^orange;Furnace^reset; and cook it some more.",
-      "tr": "Güzel. Koyu malt gerekirse maltı tekrar ^orange;Fırına^reset; koyup biraz daha kavurman yeterli.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/4malt.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;malt^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Maltı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
-      "pointer": "/title",
-      "en": "Wort",
-      "tr": "Şıra",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
-      "pointer": "/text",
-      "en": "First, make one measure of ^orange;Yeast Water^reset;. I already taught you how to do this. Next, use the ^orange;Mashing Tun^reset; to mix your malt with water. We need one flask of ^orange;Wort^reset;.",
-      "tr": "Önce bir ölçü ^orange;Maya Suyu^reset; hazırla. Bunu nasıl yapacağını öğrettim. Sonra ^orange;Mayşeleme Kazanında^reset; maltı suyla karıştır. Bir şişe ^orange;Şıra^reset; lazım.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
-      "pointer": "/completionText",
-      "en": "Now we have everything we need to make ^green;beer^reset;, the glory of the Gods.",
-      "tr": "Artık tanrıların şanı olan ^green;birayı^reset; yapmak için gereken her şeyimiz var.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/5wort.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;wort and yeast water^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Şıra ve Maya Suyunu^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
-      "pointer": "/title",
-      "en": "Beer, beer, beer",
-      "tr": "Bira, Bira, Bira",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
-      "pointer": "/text",
-      "en": "It's ^blue;beer time^reset;! Go to your ^orange;Fermenter^reset; to make 3 ^green;Beer^reset;. You'll need ^orange;Wort^reset;, ^orange;Hops^reset;, ^orange;Carbon Dioxide^reset;, and ^orange;Yeast Water^reset;, plus an ^orange;Empty Bottle^reset;.",
-      "tr": "^blue;Bira zamanı^reset;! ^orange;Fermentörde^reset; ^green;Buğday Birası^reset; üret. Bunun için ^orange;Şıra^reset;, ^orange;Şerbetçiotu^reset;, ^orange;Karbondioksit^reset;, ^orange;Maya Suyu^reset; ve ^orange;Boş Şişe^reset; gerekiyor.",
-      "section": "v0.11 Outpost - İçki",
-      "qa": {
-        "allow_number_fix": true,
-        "semantic_override": "Kaynak metin 3 bira diyor; gerçek gatherItem koşulu 1 beer istiyor. Beer tarifi tek üretimde 2 verir."
-      }
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
-      "pointer": "/completionText",
-      "en": "Cheers! Now that you can make your own beer, your life is one step closer to perfection.",
-      "tr": "Şerefe! Artık kendi biranı yapabildiğine göre hayatın mükemmelliğe bir adım daha yakın.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;beer^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Buğday Birasını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
-      "pointer": "/title",
-      "en": "Distillation",
-      "tr": "Damıtma",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
-      "pointer": "/text",
-      "en": "Let's get what we need for our next beverage. Mash some ^green;apples, pears, grapes and peaches^reset;.",
-      "tr": "Sıradaki içki için malzemeleri hazırlayalım. ^green;Elma, armut, üzüm ve şeftaliden mayşe^reset; yap.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
-      "pointer": "/completionText",
-      "en": "Now let's move on to something a little harder. Something with some oomph!",
-      "tr": "Şimdi biraz daha zor, daha sert bir şeye geçelim!",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/7distill.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;mashed fruits^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Elma, Armut, Üzüm ve Şeftali Mayşelerini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
-      "pointer": "/title",
-      "en": "Spirits",
-      "tr": "Damıtılmış İçki",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
-      "pointer": "/text",
-      "en": "So *hic* with all these mashed fruits we're ready to make some ^green;shpirits^white;. You'll need some ^orange;Yeast Water^reset; and ^orange;Water^reset; too. Bring all to the ^green;distiller^reset; and do yer magic! *hic*",
-      "tr": "Şimdi *hık* bu meyve mayşeleriyle ^green;damıtılmış içki^white; yapmaya hazırız. Biraz ^orange;Maya Suyu^reset; ve ^orange;Su^reset; da lazım. Hepsini ^green;Damıtıcıya^reset; götür, döktür marifetini! *hık*",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
-      "pointer": "/completionText",
-      "en": "Nice work! Now, we'll have one last recipe to do.",
-      "tr": "İyi iş! Şimdi son bir tarifimiz kaldı.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/8spirits.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;spirits^reset; to me at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Damıtılmış İçkiyi^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
-      "pointer": "/title",
-      "en": "Merry mead",
-      "tr": "Bal Şarabı",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
-      "pointer": "/text",
-      "en": "I's not able ter *hic* do much ter help. Make ^green;mead^reset;. Hard work. You'll need to find shome ^orange;Pure Honey^reset; and purpare fer a complimicated brewing process. Bring some for me to *hic* taste when you're done!",
-      "tr": "Pek yardımcı olamıyom *hık*. ^green;Meadbee Bal Şarabı^reset; yap. Zor iştir. Biraz ^orange;Saf Bal^reset; bulup karmaşık bir mayalama sürecine hazırlanman gerekecek. Bitirince tadına bakmam için biraz getir! *hık*",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
-      "pointer": "/completionText",
-      "en": "You did it. Now you can truly call yourself a brewer.",
-      "tr": "Başardın. Artık kendine gerçekten içki ustası diyebilirsin.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "quests/fu_questlines/outpost/booze/9merrymead.questtemplate",
-      "pointer": "/scriptConfig/turnInDescription",
-      "en": "Bring the ^orange;mead^reset; to ^green;the drunk^reset; at the ^orange;Science Outpost^reset;",
-      "tr": "^orange;Meadbee Bal Şarabını^reset; ^orange;Bilim Karakolundaki^reset; ^green;sarhoşa^reset; götür.",
-      "section": "v0.11 Outpost - İçki"
-    },
-    {
-      "asset": "objects/generic/boozekit/boozekit.object",
+      "asset": "bees/objects/apiary/apiary.object",
       "pointer": "/description",
-      "en": "Your very own homebrewing kit.",
-      "tr": "Evde kendi içkini yapmak için gereken kit.",
-      "section": "v0.11 İçki makineleri"
+      "en": "A bee breeding apiary.",
+      "tr": "Arı yetiştirmek için kullanılan bir Arılık.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "objects/generic/boozekit/boozekit.object",
+      "asset": "bees/objects/apiary/apiary.object",
       "pointer": "/shortdescription",
-      "en": "^orange;Booze Kit^reset;",
-      "tr": "^orange;İçki Kiti^reset;",
-      "section": "v0.11 İçki makineleri"
+      "en": "Apiary",
+      "tr": "Arılık",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "objects/crafting/starbooze/mashingtun/mashingtun.object",
-      "pointer": "/description",
-      "en": "A vat to make mash.",
-      "tr": "Mayşe hazırlamak için kullanılan bir kazan.",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/mashingtun/mashingtun.object",
-      "pointer": "/shortdescription",
-      "en": "^orange;Mashing Tun^reset;",
-      "tr": "^orange;Mayşeleme Kazanı^reset;",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/fruitpress/fruitpress.object",
-      "pointer": "/description",
-      "en": "A machine used to squeeze juices from fruits.",
-      "tr": "Meyvelerin suyunu sıkmak için kullanılan bir pres.",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/fruitpress/fruitpress.object",
-      "pointer": "/shortdescription",
-      "en": "^orange;Fruit Press^reset;",
-      "tr": "^orange;Meyve Presi^reset;",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/fermenter/fermenter.object",
-      "pointer": "/description",
-      "en": "A machine that allows fermentation to create alcohol!",
-      "tr": "Alkol üretmek için fermantasyon yapan bir cihaz!",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/fermenter/fermenter.object",
-      "pointer": "/shortdescription",
-      "en": "^orange;Fermenter^reset;",
-      "tr": "^orange;Fermentör^reset;",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/rainbarrel/rainbarrel.object",
-      "pointer": "/description",
-      "en": "A barrel to collect rainwater!",
-      "tr": "Yağmur suyu toplamak için kullanılan bir varil!",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/rainbarrel/rainbarrel.object",
-      "pointer": "/shortdescription",
-      "en": "^orange;Rain Barrel^reset;",
-      "tr": "^orange;Yağmur Varili^reset;",
-      "section": "v0.11 İçki makineleri"
-    },
-    {
-      "asset": "objects/crafting/starbooze/rainbarrel/rainbarrel.object",
+      "asset": "bees/objects/apiary/apiary.object",
       "pointer": "/subtitle",
-      "en": "Rain Barrel.",
-      "tr": "Yağmur Varili.",
-      "section": "v0.11 İçki makineleri"
+      "en": "Harvest honey!",
+      "tr": "Bal hasat et!",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "objects/crafting/starbooze/distillery/distillery.object",
+      "asset": "bees/frames/basic.item",
       "pointer": "/description",
-      "en": "A machine that allows distillation of alcohol!",
-      "tr": "Alkol damıtmak için kullanılan bir cihaz!",
-      "section": "v0.11 İçki makineleri"
+      "en": "Basic frame for an apiary. Does nothing special.\n<beeData>",
+      "tr": "Arılık için temel bir çerçeve. Özel bir etkisi yok.\n<beeData>",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "objects/crafting/starbooze/distillery/distillery.object",
+      "asset": "bees/frames/basic.item",
       "pointer": "/shortdescription",
-      "en": "^orange;Distillery / Still^reset;",
-      "tr": "^orange;Damıtıcı^reset;",
-      "section": "v0.11 İçki makineleri"
+      "en": "Basic Frame",
+      "tr": "Temel Çerçeve",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/yeastwater.item",
+      "asset": "bees/objects/beeexaminer/beeExaminer.object",
       "pointer": "/description",
-      "en": "A bottle filled with brewing yeast.",
-      "tr": "İçki mayasıyla dolu bir şişe.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "A basic microscope designed to inspect queen bees. User must be present.",
+      "tr": "Ana arıları incelemek için tasarlanmış temel bir mikroskop. Kullanıcının başında durması gerekir.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/yeastwater.item",
+      "asset": "bees/objects/beeexaminer/beeExaminer.object",
       "pointer": "/shortdescription",
-      "en": "Yeast Water",
-      "tr": "Maya Suyu",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "^orange;Basic^reset; Microscope",
+      "tr": "^orange;Temel^reset; Mikroskop",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/grainwater.item",
+      "asset": "bees/objects/beeexaminer/beeExaminer.object",
+      "pointer": "/subtitle",
+      "en": "Inspect Bees & Items",
+      "tr": "Arıları ve Eşyaları İncele",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "bees/bees/honey_queen.item",
       "pointer": "/description",
-      "en": "A bottle filled with the basis of yeast.",
-      "tr": "Maya hazırlamanın temelini oluşturan bir şişe sıvı.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Honey Queen",
+      "tr": "Bal Ana Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/grainwater.item",
+      "asset": "bees/bees/honey_queen.item",
       "pointer": "/shortdescription",
-      "en": "Grain Water",
-      "tr": "Tahıl Suyu",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Honey Queen",
+      "tr": "Bal Ana Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/grapemash.item",
+      "asset": "bees/bees/honey_drone.item",
       "pointer": "/description",
-      "en": "Grape Mash, the product of crushed and squeezed grapes.",
-      "tr": "Ezilip sıkılmış üzümlerden elde edilen mayşe.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Honey Drone",
+      "tr": "Bal Erkek Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/grapemash.item",
+      "asset": "bees/bees/honey_drone.item",
       "pointer": "/shortdescription",
-      "en": "Grape Mash",
-      "tr": "Üzüm Mayşesi",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Honey Drone",
+      "tr": "Bal Erkek Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/wartwine.consumable",
+      "asset": "bees/combs/normalcomb.consumable",
       "pointer": "/description",
-      "en": "Mmm. Warty alcohol. That sounds... tasty?\n^green;Heal ^white;10 ^gray;(^white;2s^gray;)^reset;, 35% ^red;Slow^reset;, ^red;Drunk^gray; (^white;30s^gray;)^reset;",
-      "tr": "Hmm. Wartweed'den yapılmış alkol. Kulağa... lezzetli mi geliyor?\n^green;İyileştir ^white;10 ^gray;(^white;2s^gray;)^reset;, 35% ^red;Yavaşlık^reset;, ^red;Sarhoş^gray; (^white;30s^gray;)^reset;",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "A delicious honeycomb with mild medicinal properties.",
+      "tr": "Hafif tıbbi özelliklere sahip lezzetli bir bal peteği.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/wartwine.consumable",
+      "asset": "bees/combs/normalcomb.consumable",
       "pointer": "/shortdescription",
-      "en": "Wart Wine",
-      "tr": "Wartweed Şarabı",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Honeycomb",
+      "tr": "Bal Peteği",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/hops.item",
+      "asset": "items/generic/crafting/waxchunk.item",
       "pointer": "/description",
-      "en": "Hops! Used for making beer!",
-      "tr": "Şerbetçiotu! Bira yapımında kullanılır!",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "A chunk of beeswax.",
+      "tr": "Bir parça balmumu.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/hops.item",
+      "asset": "items/generic/crafting/waxchunk.item",
       "pointer": "/shortdescription",
-      "en": "Hops",
-      "tr": "Şerbetçiotu",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Beeswax",
+      "tr": "Balmumu",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/malt.item",
+      "asset": "bees/objects/apiarylarge/apiarylarge.object",
       "pointer": "/description",
-      "en": "Roasted sprouted wheat!",
-      "tr": "Kavrulmuş filizlenmiş buğday!",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Provides more slots for frames and drones.",
+      "tr": "Çerçeveler ve erkek arılar için daha fazla yer sağlar.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/malt.item",
+      "asset": "bees/objects/apiarylarge/apiarylarge.object",
       "pointer": "/shortdescription",
-      "en": "Malt",
-      "tr": "Malt",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Large Apiary",
+      "tr": "Büyük Arılık",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/wort.item",
+      "asset": "bees/objects/apiarylarge/apiarylarge.object",
+      "pointer": "/subtitle",
+      "en": "Harvest honey!",
+      "tr": "Bal hasat et!",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "objects/bees/honeyjarrer/honeyjarrer.object",
       "pointer": "/description",
-      "en": "Wort! Used for making beer!",
-      "tr": "Şıra! Bira yapımında kullanılır!",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Turns ^green;combs and bottles^reset; into ^orange;honey^reset;. Looks nice connected to an Industrial Centrifuge.",
+      "tr": "^green;Petek ve şişelerden^reset; ^orange;bal^reset; üretir. Endüstriyel Santrifüje bağlandığında hoş görünür.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/wort.item",
+      "asset": "objects/bees/honeyjarrer/honeyjarrer.object",
       "pointer": "/shortdescription",
-      "en": "Wort",
-      "tr": "Şıra",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Honey Jarring Machine",
+      "tr": "Bal Kavanozlama Makinesi",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/drinks/beer/beer.consumable",
+      "asset": "objects/bees/honeyjarrer/honeyjarrer.object",
+      "pointer": "/subtitle",
+      "en": "Fill bottles with awesome honey.",
+      "tr": "Şişeleri nefis balla doldurur.",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "bees/frames/tungsten.item",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Frame",
+      "tr": "Tungsten Çerçeve",
+      "section": "v0.11 Outpost - Arıcılık"
+    },
+    {
+      "asset": "items/materials/honey/goldenwood.matitem",
       "pointer": "/description",
-      "en": "A mug of beer!\n^cyan;+^white;3 ^cyan;Defense ^gray;(^white;45s^gray;)\n^white;35% ^red;Slow ^gray;(^white;10s^gray;)\n^red;Drunk ^gray;(^white;25s^gray;)^reset;",
-      "tr": "Bir kupa bira!\n^cyan;+^white;3 ^cyan;Savunma ^gray;(^white;45s^gray;)\n^white;35% ^red;Yavaşlık ^gray;(^white;10s^gray;)\n^red;Sarhoş ^gray;(^white;25s^gray;)^reset;",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "A golden-looking wooden log.\n^green;Extractable^reset;.",
+      "tr": "Altın renginde bir odun kütüğü.\n^green;Çıkarılabilir^reset;.",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/drinks/beer/beer.consumable",
+      "asset": "items/materials/honey/goldenwood.matitem",
       "pointer": "/shortdescription",
-      "en": "Wheat Beer",
-      "tr": "Buğday Birası",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Golden Wood",
+      "tr": "Altın Odun",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/applemash.item",
+      "asset": "bees/bees/orchid_queen.item",
       "pointer": "/description",
-      "en": "Apple Mash, the product of crushed and squeezed apples.",
-      "tr": "Ezilip sıkılmış elmalardan elde edilen mayşe.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Orchid Queen",
+      "tr": "Orkide Ana Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/applemash.item",
+      "asset": "bees/bees/orchid_queen.item",
       "pointer": "/shortdescription",
-      "en": "Apple Mash",
-      "tr": "Elma Mayşesi",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Orchid Queen",
+      "tr": "Orkide Ana Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/pearmash.item",
+      "asset": "bees/bees/orchid_drone.item",
       "pointer": "/description",
-      "en": "Pear Mash, the product of crushed and squeezed pears.",
-      "tr": "Ezilip sıkılmış armutlardan elde edilen mayşe.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Orchid Drone",
+      "tr": "Orkide Erkek Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/pearmash.item",
+      "asset": "bees/bees/orchid_drone.item",
       "pointer": "/shortdescription",
-      "en": "Pear Mash",
-      "tr": "Armut Mayşesi",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Orchid Drone",
+      "tr": "Orkide Erkek Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/peachmash.item",
+      "asset": "bees/bees/bumble_queen.item",
       "pointer": "/description",
-      "en": "Peach Mash, the product of crushed and squeezed peaches.",
-      "tr": "Ezilip sıkılmış şeftalilerden elde edilen mayşe.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Bumblebee Queen",
+      "tr": "Bombus Ana Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/peachmash.item",
+      "asset": "bees/bees/bumble_queen.item",
       "pointer": "/shortdescription",
-      "en": "Peach Mash",
-      "tr": "Şeftali Mayşesi",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Bumblebee Queen",
+      "tr": "Bombus Ana Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/drinks/vodka/spirits.consumable",
+      "asset": "bees/bees/bumble_drone.item",
       "pointer": "/description",
-      "en": "A bottle of fruit-infused rectified spirits!\n^white;35% ^red;Slow ^gray;, ^red;Drunk ^gray;(^white;10s^gray;)^reset;",
-      "tr": "Meyve aromalı bir şişe damıtılmış içki!\n^white;35% ^red;Yavaşlık ^gray;, ^red;Sarhoş ^gray;(^white;10s^gray;)^reset;",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Bumblebee Drone",
+      "tr": "Bombus Erkek Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/drinks/vodka/spirits.consumable",
+      "asset": "bees/bees/bumble_drone.item",
       "pointer": "/shortdescription",
-      "en": "Rectified Spirits",
-      "tr": "Damıtılmış İçki",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Bumblebee Drone",
+      "tr": "Bombus Erkek Arısı",
+      "section": "v0.11 Outpost - Arıcılık"
     },
     {
-      "asset": "items/generic/crafting/starbooze/honeybucket.item",
+      "asset": "items/active/unsorted/bugnet/bugnet.activeitem",
       "pointer": "/description",
-      "en": "A wooden bucket dripping with golden honey",
-      "tr": "Altın renkli balla dolup taşan ahşap bir kova.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "A net for catching bugs! Hunt insects down, capture them, and grow your collection!",
+      "tr": "Böcek yakalamak için bir ağ! Böcekleri avla, yakala ve koleksiyonunu büyüt!",
+      "section": "v0.11 Outpost - Arıcılık",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
     },
     {
-      "asset": "items/generic/crafting/starbooze/honeybucket.item",
+      "asset": "items/active/unsorted/bugnet/bugnet.activeitem",
       "pointer": "/shortdescription",
-      "en": "Honey-filled Bucket",
-      "tr": "Bal Dolu Kova",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Bug Net",
+      "tr": "Böcek Ağı",
+      "section": "v0.11 Outpost - Arıcılık",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
     },
     {
-      "asset": "items/generic/drinks/ciders/meadbottle.consumable",
+      "asset": "objects/farmables/flowerred/flowerred.object",
       "pointer": "/description",
-      "en": "A jug of sweet meadbee mead!\n^cyan;+^white;3 ^cyan;Defense ^gray;(^white;45s^gray;)\n^white;35% ^red;Slow^gray;, ^red;Drunk ^gray;(^white;1m^gray;)^reset;",
-      "tr": "Bir sürahi tatlı Meadbee bal şarabı!\n^cyan;+^white;3 ^cyan;Savunma ^gray;(^white;45s^gray;)\n^white;35% ^red;Yavaşlık^gray;, ^red;Sarhoş ^gray;(^white;1m^gray;)^reset;",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "A flower with bright red petals. Useful for making dye.",
+      "tr": "Parlak kırmızı taç yapraklı bir çiçek. Boya yapmak için kullanılır.",
+      "section": "v0.11 Outpost - Arıcılık",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
     },
     {
-      "asset": "items/generic/drinks/ciders/meadbottle.consumable",
+      "asset": "objects/farmables/flowerred/flowerred.object",
       "pointer": "/shortdescription",
-      "en": "Meadbee Mead",
-      "tr": "Meadbee Bal Şarabı",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Red Flower",
+      "tr": "Kırmızı Çiçek",
+      "section": "v0.11 Outpost - Arıcılık",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
     },
     {
-      "asset": "items/generic/crafting/fu_carbondioxide.item",
+      "asset": "items/generic/crafting/bottle.item",
       "pointer": "/description",
-      "en": "A common trace gas with many applications.",
-      "tr": "Birçok kullanım alanı olan yaygın bir iz gaz.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Perfect for storing liquids.",
+      "tr": "Sıvıları saklamak için ideal.",
+      "section": "v0.11 Outpost - Arıcılık",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
     },
     {
-      "asset": "items/generic/crafting/fu_carbondioxide.item",
+      "asset": "items/generic/crafting/bottle.item",
       "pointer": "/shortdescription",
-      "en": "Carbon Dioxide",
-      "tr": "Karbondioksit",
-      "section": "v0.11 İçki malzemeleri"
-    },
-    {
-      "asset": "items/liquids/fu_liquidhoney.liqitem",
-      "pointer": "/shortdescription",
-      "en": "Pure Honey",
-      "tr": "Saf Bal",
-      "section": "v0.11 İçki malzemeleri"
-    },
-    {
-      "asset": "items/liquids/fu_liquidhoney.liqitem",
-      "pointer": "/description",
-      "en": "A measure of sweet, sweet honey.\n^yellow;Centrifugable^reset;.",
-      "tr": "Bir ölçü mis gibi tatlı bal.\n^yellow;Santrifüjlenebilir^reset;.",
-      "section": "v0.11 İçki malzemeleri"
+      "en": "Empty Bottle",
+      "tr": "Boş Şişe",
+      "section": "v0.11 Outpost - Arıcılık",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
     }
   ]
 }
