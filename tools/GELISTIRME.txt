@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.16.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.17.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  2154 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  2449 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görev/hedef allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görev/hedefleri ve v0.17 objects/crafting allowlist'ini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -268,3 +268,18 @@ v0.16 kalan görevler QA:
   toplam patch asset: 399
   planlanan görev klasörü runtime kapsamı: TAMAMLANDI
   oyun içi LQA: BEKLİYOR
+
+v0.17 üretim makineleri QA:
+  objects/crafting .object envanteri: 84
+  önceden kapsanan asset: 30
+  yeni kapsanan asset: 54
+  yeni structured alan: 295
+  yeni patch asset: 54
+  yeni pinned FU alan: 295/295 exact-source PASS
+  patch pairing: 295 test + 295 replace PASS
+  kaynak/provenans toplamı: 2359 pinned FU + 90 layered/external; 0 izlenmeyen
+  Pet Healing Station yanlış robot altyazısı: BELGELİ + REGRESYON GUARD AKTİF
+  proje toplamı: 2449 structured + 15 Lua = 2464 görünür birim
+  toplam patch asset: 453
+  objects/crafting seçili görünür kapsamı: 84/84 asset TAMAMLANDI
+  diğer eşya/nesne klasörleri ve oyun içi LQA: BEKLİYOR

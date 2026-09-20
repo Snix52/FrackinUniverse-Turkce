@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.16.0-beta",
-  "note": "v0.16 kalan görev taraması: Other 13 + BYOS 3 + Exploration 1 olmak üzere 17 ham dosya runtime açısından denetlendi; 10 erişilebilir görev, BYOS görev-listesi ve 11 bağlı hedef/teslim asseti Türkçeleştirildi. Görünmez/bağlantısız 7 dosya dağıtım dışı ve build guard altında. 62 yeni structured alan / 21 yeni patch asset; toplam 2154 structured + 15 Lua, 399 patch asset. Battle Siberküre terminolojisi de düzeltildi. Oyun içi LQA bekliyor.",
+  "translation_version": "0.17.0-beta",
+  "note": "v0.17 üretim makineleri: objects/crafting altındaki 84 etkin .object assetinin daha önce çevrilmemiş 54'ünde 295 oyuncuya görünür alan yerelleştirildi. Klasördeki seçili görünür ad, açıklama, alt başlık, panel başlığı ve ırka özel inceleme kapsamı 84/84 asset düzeyinde tamamlandı. Pet Healing Station kaynak altyazısındaki yanlış robot ifadesi nesnenin gerçek işlevine göre düzeltildi. Toplam 2449 structured + 15 Lua, 453 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -16006,6 +16006,2074 @@
       "en": "A turn-in item for a quest!",
       "tr": "Görevi teslim etmek için kullanılan bir nesne!",
       "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/description",
+      "en": "Create special weapons and armor.",
+      "tr": "Özel silahlar ve zırhlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Armorworks^reset;",
+      "tr": "^orange;Zırh Atölyesi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Create special weapons and armor.",
+      "tr": "Özel silahlar ve zırhlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Armorworks^reset;",
+      "tr": "^orange;Zırh Atölyesi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "Even more advanced gear.",
+      "tr": "Daha da gelişmiş ekipman.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Assembly Line^reset;",
+      "tr": "^orange;Montaj Hattı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "The best weapons and armor. Period.",
+      "tr": "En iyi silah ve zırhlar. Nokta.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Armory^reset;",
+      "tr": "^orange;Cephanelik^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/armory/armoryoutpost.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/bothealingstation/pethealingstation.object",
+      "pointer": "/description",
+      "en": "This bot repair station is used to repair compressed robots.",
+      "tr": "Bu bot onarım istasyonu, sıkıştırılmış robotları onarmak için kullanılır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/bothealingstation/pethealingstation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Bot Healing Station^reset;",
+      "tr": "^orange;Bot Onarım İstasyonu^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/bothealingstation/pethealingstation.object",
+      "pointer": "/subtitle",
+      "en": "For broken robots",
+      "tr": "Bozuk robotlar için",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/bothealingstation/pethealingstationauto.object",
+      "pointer": "/description",
+      "en": "This bot repair station is used to repair compressed robots, and is automated and Item Network capable.",
+      "tr": "Bu otomatik bot onarım istasyonu, sıkıştırılmış robotları onarır ve Eşya Ağına bağlanabilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/bothealingstation/pethealingstationauto.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Automatic Bot Healer^reset;",
+      "tr": "^orange;Otomatik Bot Onarıcı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/bothealingstation/pethealingstationauto.object",
+      "pointer": "/subtitle",
+      "en": "For broken robots",
+      "tr": "Bozuk robotlar için",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/catalystfuelrefinery/catalystfuelrefinery.object",
+      "pointer": "/description",
+      "en": "Refines mech fuel into a superior grade.",
+      "tr": "Mech yakıtını daha üstün bir kaliteye rafine eder.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/catalystfuelrefinery/catalystfuelrefinery.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Fuel Refinery^reset;",
+      "tr": "^orange;Yakıt Rafinerisi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/catalystfuelrefinery/catalystfuelrefinery.object",
+      "pointer": "/subtitle",
+      "en": "Refine oil into fuel",
+      "tr": "Yağı yakıta rafine et",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/description",
+      "en": "Play with chemicals. Endless fun.",
+      "tr": "Kimyasallarla oyna. Eğlence hiç bitmez.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Alchemy Table^reset;",
+      "tr": "^orange;Simya Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Experiment with chemicals. Super fun.",
+      "tr": "Kimyasallarla deney yap. Çok eğlenceli.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Alchemy Table^reset;",
+      "tr": "^orange;Simya Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "More advanced experiments. More kaboom.",
+      "tr": "Daha gelişmiş deneyler. Daha büyük patlamalar.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Chemistry Lab^reset;",
+      "tr": "^orange;Kimya Laboratuvarı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Superior chemistry and biology experiments.",
+      "tr": "İleri düzey kimya ve biyoloji deneyleri.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/chemlab/chemlaboutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Bio-Chem Lab^reset;",
+      "tr": "^orange;Biyokimya Laboratuvarı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/clothingfabricator/clothingfabricator.object",
+      "pointer": "/description",
+      "en": "Fabricates clothing and complex fabric-based armors. Use the Armory for Weapons and Ore-based armors.",
+      "tr": "Giysiler ve kumaş tabanlı karmaşık zırhlar üretir. Silahlar ve cevher tabanlı zırhlar için Cephaneliği kullan.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/clothingfabricator/clothingfabricator.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Clothing Fabricator^reset;",
+      "tr": "^orange;Giysi Üreticisi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/description",
+      "en": "Create plants from raw materials.",
+      "tr": "Hammaddelerden bitkiler üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Greenhouse^reset;",
+      "tr": "^orange;Sera^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Breed basic plants",
+      "tr": "Temel bitkiler yetiştir",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Greenhouse^reset;",
+      "tr": "^orange;Sera^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "More advanced seed experimentation.",
+      "tr": "Daha gelişmiş tohum deneyleri yap.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Botany Lab^reset;",
+      "tr": "^orange;Botanik Laboratuvarı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Create bizarre alien plantlife",
+      "tr": "Sıra dışı uzaylı bitkiler oluştur",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/designlab/designlaboutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Gene Design Lab^reset;",
+      "tr": "^orange;Gen Tasarım Laboratuvarı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/description",
+      "en": "A chicken nest.",
+      "tr": "Bir tavuk yuvası.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/shortdescription",
+      "en": "Chicken Nest",
+      "tr": "Tavuk Yuvası",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/apexDescription",
+      "en": "A nest for eggs.",
+      "tr": "Yumurtalar için bir yuva.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/avianDescription",
+      "en": "A baby birdy home.",
+      "tr": "Minik kuşlara yuva.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/floranDescription",
+      "en": "A box of tassssty.",
+      "tr": "Lezzzzet dolu bir kutu.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/glitchDescription",
+      "en": "Identify. Egg Nest.",
+      "tr": "Tanımlama. Yumurta Yuvası.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/chickennest/chickennest.object",
+      "pointer": "/hylotlDescription",
+      "en": "An egg nest.",
+      "tr": "Bir yumurta yuvası.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/description",
+      "en": "This bell calls the livestock home.",
+      "tr": "Bu çan çiftlik hayvanlarını yuvaya çağırır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/shortdescription",
+      "en": "Dinner Bell",
+      "tr": "Yemek Çanı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/apexDescription",
+      "en": "An iron bell. How Pavlovian.",
+      "tr": "Demir bir çan. Ne kadar Pavlovcu.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/avianDescription",
+      "en": "Dinner time!",
+      "tr": "Yemek vakti!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/floranDescription",
+      "en": "Big bell go ding dong!",
+      "tr": "Büyük çan ding dong yapar!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/glitchDescription",
+      "en": "Informative. This bell signals food.",
+      "tr": "Bilgilendirici. Bu çan yemeği haber veriyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/humanDescription",
+      "en": "A dinner bell. Can I ring it? Please!",
+      "tr": "Bir yemek çanı. Çalabilir miyim? Lütfen!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/cowbell/cowbell.object",
+      "pointer": "/hylotlDescription",
+      "en": "The sound of bells is something most Hylotl have never heard.",
+      "tr": "Çan sesi, çoğu Hylotl'ın daha önce hiç duymadığı bir şey.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/description",
+      "en": "An egg incubator.",
+      "tr": "Bir yumurta kuluçka makinesi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/shortdescription",
+      "en": "Incubator",
+      "tr": "Kuluçka Makinesi",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/apexDescription",
+      "en": "An incubator for eggs.",
+      "tr": "Yumurtalar için bir kuluçka makinesi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/avianDescription",
+      "en": "A baby birdy home.",
+      "tr": "Minik kuşlara yuva.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/floranDescription",
+      "en": "A box of tassssty.",
+      "tr": "Lezzzzet dolu bir kutu.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/glitchDescription",
+      "en": "Identify. Egg Incubation.",
+      "tr": "Tanımlama. Yumurta Kuluçkası.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/eggincubator/eggincubator.object",
+      "pointer": "/humanDescription",
+      "en": "An incubator.",
+      "tr": "Bir kuluçka makinesi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/farmclock/farmclock.object",
+      "pointer": "/description",
+      "en": "Tick, tock, tick, tock.",
+      "tr": "Tik tak, tik tak.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/farmclock/farmclock.object",
+      "pointer": "/shortdescription",
+      "en": "Wall Clock",
+      "tr": "Duvar Saati",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/description",
+      "en": "It's a trough for feeding livestock.",
+      "tr": "Çiftlik hayvanlarını beslemek için kullanılan bir yalak.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/shortdescription",
+      "en": "Iron Trough",
+      "tr": "Demir Yalak",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/apexDescription",
+      "en": "A trough of iron. It's empty.",
+      "tr": "Demirden bir yalak. Boş.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/avianDescription",
+      "en": "An empty iron container.",
+      "tr": "Boş bir demir kap.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/floranDescription",
+      "en": "Floran ssmell food here.",
+      "tr": "Floran burada yemeğin kokusssunu alıyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/glitchDescription",
+      "en": "Bored. A trough, like many used for feeding livestock.",
+      "tr": "Sıkılmış. Çiftlik hayvanlarını beslemek için kullanılan diğer birçok yalak gibi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/humanDescription",
+      "en": "One of those things used for feeding livestock. I forget its name.",
+      "tr": "Çiftlik hayvanlarını beslemekte kullanılan şeylerden biri. Adını unuttum.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/hylotlDescription",
+      "en": "Some kind of food container. Perhaps used for feeding animals.",
+      "tr": "Bir çeşit yemek kabı. Muhtemelen hayvanları beslemek için kullanılıyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/irontrough.object",
+      "pointer": "/novakidDescription",
+      "en": "A perfect place to feed a mighty steed. Or just livestock.",
+      "tr": "Güçlü bir bineği beslemek için biçilmiş kaftan. Ya da sıradan çiftlik hayvanlarını.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/description",
+      "en": "It's a trough for feeding livestock.",
+      "tr": "Çiftlik hayvanlarını beslemek için kullanılan bir yalak.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/shortdescription",
+      "en": "Large Trough",
+      "tr": "Büyük Yalak",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/apexDescription",
+      "en": "A wooden trough. It's empty.",
+      "tr": "Ahşap bir yalak. Boş.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/avianDescription",
+      "en": "An empty wooden container.",
+      "tr": "Boş bir ahşap kap.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/floranDescription",
+      "en": "Floran ssmell food here.",
+      "tr": "Floran burada yemeğin kokusssunu alıyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/glitchDescription",
+      "en": "Bored. A trough, like many used for feeding livestock.",
+      "tr": "Sıkılmış. Çiftlik hayvanlarını beslemek için kullanılan diğer birçok yalak gibi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/humanDescription",
+      "en": "One of those things used for feeding livestock. I forget its name.",
+      "tr": "Çiftlik hayvanlarını beslemekte kullanılan şeylerden biri. Adını unuttum.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/hylotlDescription",
+      "en": "Some kind of food container. Perhaps used for feeding animals.",
+      "tr": "Bir çeşit yemek kabı. Muhtemelen hayvanları beslemek için kullanılıyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/eggstra/largetrough/largetrough.object",
+      "pointer": "/novakidDescription",
+      "en": "A perfect place to feed a mighty steed. Or just livestock.",
+      "tr": "Güçlü bir bineği beslemek için biçilmiş kaftan. Ya da sıradan çiftlik hayvanlarını.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elderhealingstation/elderhealingstation.object",
+      "pointer": "/description",
+      "en": "A station to heal pets, robots and...others.",
+      "tr": "Evcil hayvanları, robotları ve... diğerlerini iyileştiren bir istasyon.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elderhealingstation/elderhealingstation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Mutari Healing Station^reset;",
+      "tr": "^orange;Mutari İyileştirme İstasyonu^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elderhealingstation/elderhealingstation.object",
+      "pointer": "/subtitle",
+      "en": "For dead pets, broken bots, and more.",
+      "tr": "Ölü evcil hayvanlar, bozuk botlar ve daha fazlası için.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elderhealingstation/pethealingstationauto.object",
+      "pointer": "/description",
+      "en": "A station to heal pets, robots and...others.\nAutomated and Item Network capable.",
+      "tr": "Evcil hayvanları, robotları ve... diğerlerini iyileştiren bir istasyon.\nOtomatiktir ve Eşya Ağına bağlanabilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elderhealingstation/pethealingstationauto.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Mutari Automatic Healer^reset;",
+      "tr": "^orange;Mutari Otomatik İyileştiricisi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elderhealingstation/pethealingstationauto.object",
+      "pointer": "/subtitle",
+      "en": "For dead pets, broken bots, and more.",
+      "tr": "Ölü evcil hayvanlar, bozuk botlar ve daha fazlası için.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/description",
+      "en": "A loom built to spin crystals into materials.",
+      "tr": "Kristalleri işleyip malzemeye dönüştürmek için yapılmış bir dokuma tezgâhı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Crystal Loom^reset;",
+      "tr": "^orange;Kristal Dokuma Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/apexDescription",
+      "en": "A spinning wheel. A tool for tailors.",
+      "tr": "Bir çıkrık. Terzilerin kullandığı bir araç.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/avianDescription",
+      "en": "A tool for working crystals into threads.",
+      "tr": "Kristalleri ipliğe dönüştürmek için kullanılan bir araç.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/floranDescription",
+      "en": "Floran ssspin wheel, work thread.",
+      "tr": "Floran çarkı döndürür, iplik işşşler.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/glitchDescription",
+      "en": "Observant. A tailoring tool.",
+      "tr": "Gözlemci. Bir terzilik aracı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/humanDescription",
+      "en": "A wooden spinning wheel. So old-fashioned it's almost quaint.",
+      "tr": "Ahşap bir çıkrık. O kadar eski moda ki neredeyse şirin.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/hylotlDescription",
+      "en": "The Hylotl consider spinning yarn an art-form. Spinning crystals is new to me.",
+      "tr": "Hylotl'lar iplik eğirmeyi bir sanat sayar. Kristal eğirmek benim için yeni.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/crystalloom/crystalloom.object",
+      "pointer": "/novakidDescription",
+      "en": "Maybe I can make myself a new shirt on this.",
+      "tr": "Belki bununla kendime yeni bir gömlek yaparım.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/description",
+      "en": "A workbench for creating furniture and decorations.",
+      "tr": "Mobilya ve dekorasyon üretmek için kullanılan bir çalışma tezgâhı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Crystal Workbench^reset;",
+      "tr": "^orange;Kristal Çalışma Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/apexDescription",
+      "en": "A table that's fit for basic carpentry.",
+      "tr": "Temel marangozluk için uygun bir tezgâh.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/avianDescription",
+      "en": "A chance to showcase one's carpentry abilities.",
+      "tr": "Marangozluk becerilerini sergilemek için bir fırsat.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/floranDescription",
+      "en": "Floran ussse table to make nice housse.",
+      "tr": "Floran tezgâhı kullanır, güzel ev yaparrr.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/glitchDescription",
+      "en": "Inspired. Crafting module activated.",
+      "tr": "İlhamlanmış. Üretim modülü etkinleştirildi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/humanDescription",
+      "en": "I could make a well furnished home with this.",
+      "tr": "Bununla güzelce döşenmiş bir ev yapabilirim.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/hylotlDescription",
+      "en": "All you need to make a house into a home.",
+      "tr": "Bir yapıyı yuvaya çevirmek için gereken her şey.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/furniturestation/furniturestation.object",
+      "pointer": "/novakidDescription",
+      "en": "I could make some mighty fine furniture with this table.",
+      "tr": "Bu tezgâhla pek güzel mobilyalar yapabilirim.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/description",
+      "en": "A station to create new gem plants.",
+      "tr": "Yeni değerli taş bitkileri oluşturmak için kullanılan bir istasyon.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Crystal Fusion Station^reset;",
+      "tr": "^orange;Kristal Füzyon İstasyonu^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/apexDescription",
+      "en": "A crafting station. It creates new plants.",
+      "tr": "Bir üretim istasyonu. Yeni bitkiler oluşturur.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/avianDescription",
+      "en": "A tool for creating new types of crystal.",
+      "tr": "Yeni kristal türleri oluşturmak için kullanılan bir araç.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/floranDescription",
+      "en": "Floran make new ssshiniesss.",
+      "tr": "Floran yeni parıltılı şşşeyler yapar.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/glitchDescription",
+      "en": "Observant. A gardening tool.",
+      "tr": "Gözlemci. Bir bahçecilik aracı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/humanDescription",
+      "en": "A fancy looking station for gemstones.",
+      "tr": "Değerli taşlar için gösterişli bir istasyon.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/hylotlDescription",
+      "en": "This kind of technology is certainly interesting.",
+      "tr": "Bu tür bir teknoloji kesinlikle ilgi çekici.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/elduu/gemstation/gemstation.object",
+      "pointer": "/novakidDescription",
+      "en": "I ain't one for playin' with plants.",
+      "tr": "Bitkilerle uğraşmak bana göre değil.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/description",
+      "en": "A small stall. It seems to be offering various items in exchange for ancient essence.",
+      "tr": "Antik Öz karşılığında çeşitli eşyalar sunan küçük bir tezgâha benziyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/shortdescription",
+      "en": "Svetlana's Stall!",
+      "tr": "Svetlana'nın Tezgâhı!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/title",
+      "en": "Svetlana's Stall",
+      "tr": "Svetlana'nın Tezgâhı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": "Repurchase Past Rewards!",
+      "tr": "Geçmiş Ödülleri Yeniden Satın Al!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/apexDescription",
+      "en": "No Apex would dare leave their store unattended like this.",
+      "tr": "Hiçbir Apex dükkânını böyle sahipsiz bırakmaya cesaret edemezdi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/avianDescription",
+      "en": "Buying and selling on the honour system is something the grounded take pride in.",
+      "tr": "Karşılıklı güvene dayalı alışveriş, yeryüzünde yaşayanların gurur duyduğu bir gelenektir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/floranDescription",
+      "en": "Floran would not ssteal from sstall. No meatss.",
+      "tr": "Floran tezgâhtan çalmazzz. Et yok.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/glitchDescription",
+      "en": "Interested. The goods displayed on this stall are remarkably rare.",
+      "tr": "Meraklı. Bu tezgahta sergilenen mallar son derece nadir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/humanDescription",
+      "en": "The stuff here looks like it ought to be in the hands of a statue...",
+      "tr": "Buradaki eşyalar sanki bir heykelin elinde olmalıymış gibi...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/hylotlDescription",
+      "en": "Shops operating on the honour system denote a high level of societal trust.",
+      "tr": "Karşılıklı güvene dayalı dükkânlar, toplumdaki güven düzeyinin yüksek olduğunu gösterir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/novakidDescription",
+      "en": "These here wares certainly are catching my interest.",
+      "tr": "Buradaki mallar kesinlikle ilgimi çekiyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/description",
+      "en": "This advanced ancient technology can raise the effectiveness of some weapons.",
+      "tr": "Bu gelişmiş antik teknoloji bazı silahların etkinliğini artırabilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/shortdescription",
+      "en": "Super Weapon Upgrade Anvil",
+      "tr": "Süper Silah Yükseltme Örsü",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/apexDescription",
+      "en": "My scanner indicates that this anvil functions off crystal resonance. Is this Avian in origin?",
+      "tr": "Tarayıcım bu örsün kristal rezonansıyla çalıştığını gösteriyor. Avian kökenli olabilir mi?",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/avianDescription",
+      "en": "This would appear to be Avian of make, and yet profoundly out of the reach of current Avian technology.",
+      "tr": "Avian yapımı gibi görünüyor ama günümüz Avian teknolojisinin erişemeyeceği kadar gelişmiş.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/floranDescription",
+      "en": "Floran push buttons. Make thingsss happen!",
+      "tr": "Floran düğmelere basarrr. Bir şeyler olur!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/glitchDescription",
+      "en": "Confused. This anvil appears to serve different purposes in different realities.",
+      "tr": "Şaşkın. Bu örs farklı gerçekliklerde farklı amaçlara hizmet ediyor gibi görünüyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/humanDescription",
+      "en": "It reminds me of something out of an ancient video game. Bird-people, but not Avian. Hm.",
+      "tr": "Eski bir video oyunundan çıkmış bir şeyi hatırlatıyor. Kuş insanlar ama Avian değiller. Hımm.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/hylotlDescription",
+      "en": "This looks familiar, and yet...",
+      "tr": "Bu tanıdık geliyor ama yine de...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object",
+      "pointer": "/novakidDescription",
+      "en": "This here thing is confusin' the heck outta me. I need a time-out an' a stiff drink.",
+      "tr": "Bu şey aklımı fena hâlde karıştırdı. Bir mola ve sert bir içki lazım.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/farmwell/farmwell.object",
+      "pointer": "/description",
+      "en": "Generates water for use around your home. Stores up to 200 water. Less effective when stacked. Scan for Info.",
+      "tr": "Evinin çevresinde kullanılmak üzere su üretir. 200 birime kadar su depolar. Yan yana yerleştirildiğinde verimi düşer. Bilgi için tara.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/farmwell/farmwell.object",
+      "pointer": "/shortdescription",
+      "en": "Well",
+      "tr": "Kuyu",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fissionfurnacenew/fissionfurnacenew.object",
+      "pointer": "/description",
+      "en": "This reliable unit is capable of making even the toughest alloys into usable metal.",
+      "tr": "Bu güvenilir ünite en dayanıklı alaşımları bile kullanılabilir metale dönüştürebilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fissionfurnacenew/fissionfurnacenew.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Fission Furnace^reset;",
+      "tr": "^orange;Fisyon Fırını^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_petrenamer/fu_petrenamer.object",
+      "pointer": "/description",
+      "en": "The pet renamer is used to rename captured creatures.",
+      "tr": "Evcil Hayvan Adlandırıcı, yakalanmış yaratıkların adını değiştirmek için kullanılır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_petrenamer/fu_petrenamer.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Pet Renamer^reset;",
+      "tr": "^orange;Evcil Hayvan Adlandırıcı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_petrenamer/fu_petrenamer.object",
+      "pointer": "/subtitle",
+      "en": "For sad pets",
+      "tr": "Üzgün evcil hayvanlar için",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_racialiser/fu_racialiser.object",
+      "pointer": "/description",
+      "en": "Can be used to change the race of certain ship objects.",
+      "tr": "Belirli gemi nesnelerinin ırksal görünümünü değiştirmek için kullanılabilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_racialiser/fu_racialiser.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Racialiser^reset;",
+      "tr": "^cyan;Irk Dönüştürücü^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_racializer/fu_racializer.object",
+      "pointer": "/description",
+      "en": "Used to change ship components into various racial styles.",
+      "tr": "Gemi bileşenlerini farklı ırksal tarzlara dönüştürmek için kullanılır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_racializer/fu_racializer.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Ship Component Racializer^reset;",
+      "tr": "^orange;Gemi Bileşeni Irk Dönüştürücüsü^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_upgradetable/fu_upgradetable.object",
+      "pointer": "/description",
+      "en": "Can be used to access your tricorder's upgrade interface. Largely cosmetic.",
+      "tr": "Tricorder'ının yükseltme arayüzüne erişmek için kullanılabilir. Büyük ölçüde görsel amaçlıdır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fu_upgradetable/fu_upgradetable.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Upgrade Table^reset;",
+      "tr": "^cyan;Yükseltme Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fuincubator/fuincubator.object",
+      "pointer": "/description",
+      "en": "Hatch eggs into creatures.",
+      "tr": "Yumurtalardan yaratık çıkarır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fuincubator/fuincubator.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Incubator^reset;",
+      "tr": "^orange;Kuluçka Makinesi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fuincubator/fuincubator.object",
+      "pointer": "/subtitle",
+      "en": "Resource converter",
+      "tr": "Kaynak Dönüştürücü",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fuwaterbarrel/fuwaterbarrel.object",
+      "pointer": "/description",
+      "en": "Ideal for storing excess water or other liquids.",
+      "tr": "Fazla suyu veya diğer sıvıları depolamak için idealdir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/fuwaterbarrel/fuwaterbarrel.object",
+      "pointer": "/shortdescription",
+      "en": "Water Barrel",
+      "tr": "Su Varili",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/genesequencer/genesequencer.object",
+      "pointer": "/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#00ccff;Gene Sequencer^reset;",
+      "tr": " ^#00ccff;Gen Dizileyici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/genesequencer/genesequencer.object",
+      "pointer": "/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Create genes from scratch.",
+      "tr": " ^#dddddd;Sıfırdan gen oluştur.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/genesequencer/genesequencer.object",
+      "pointer": "/description",
+      "en": "Create genes from scratch.",
+      "tr": "Sıfırdan gen oluştur.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/genesequencer/genesequencer.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Gene Sequencer^reset;",
+      "tr": "^orange;Gen Dizileyici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/liquidpumpwell/liquidpumpwell.object",
+      "pointer": "/description",
+      "en": "Generates water better than a Well. Stores up to 1000 water. Less effective when stacked. Scan for Info.",
+      "tr": "Kuyudan daha verimli su üretir. 1000 birime kadar su depolar. Yan yana yerleştirildiğinde verimi düşer. Bilgi için tara.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/liquidpumpwell/liquidpumpwell.object",
+      "pointer": "/shortdescription",
+      "en": "Water Generator",
+      "tr": "Su Üreteci",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/lobstertrap/lobstertrap.object",
+      "pointer": "/description",
+      "en": "Occasionally catches delicious lobsters when placed in ocean water. Can hold 1 lobster. Scan for Info.",
+      "tr": "Okyanus suyuna yerleştirildiğinde ara sıra lezzetli ıstakozlar yakalar. 1 ıstakoz tutar. Bilgi için tara.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/lobstertrap/lobstertrap.object",
+      "pointer": "/shortdescription",
+      "en": "Lobster Trap",
+      "tr": "Istakoz Tuzağı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/madnesscodex/madnesscodex.object",
+      "pointer": "/description",
+      "en": "A place to write down magnificent, totally safe theories and lost knowledge.",
+      "tr": "Görkemli, tamamen güvenli teorileri ve kayıp bilgileri kaydetmek için bir yer.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/madnesscodex/madnesscodex.object",
+      "pointer": "/shortdescription",
+      "en": "Tome Dais",
+      "tr": "Kitap Kürsüsü",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/description",
+      "en": "^cyan;(Frackin' Universe main table)^reset; Craft all sorts of useful gear.",
+      "tr": "^cyan;(Frackin' Universe ana tezgâhı)^reset; Çeşitli yararlı donanımlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Machining Table^reset;",
+      "tr": "^orange;İmalat Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Craft all sorts of complex gear.",
+      "tr": "Çeşitli karmaşık donanımlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Machining Table^reset;",
+      "tr": "^orange;İmalat Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "Create more complicated gear.",
+      "tr": "Daha karmaşık donanımlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Auto-Assembler^reset;",
+      "tr": "^orange;Otomatik Birleştirici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Create advanced technology.",
+      "tr": "İleri teknoloji üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Matter Assembler^reset;",
+      "tr": "^orange;Madde Birleştirici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/matterassembler/prototyperoutpost.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/mechfuelrefinery/fuelrefinery.object",
+      "pointer": "/description",
+      "en": "Refines Oil into unrefined mech fuel.",
+      "tr": "Yağı işlenmemiş Mech yakıtına dönüştürür.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/mechfuelrefinery/fuelrefinery.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Oil Distiller^reset;",
+      "tr": "^orange;Yağ Damıtıcısı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/mechfuelrefinery/fuelrefinery.object",
+      "pointer": "/subtitle",
+      "en": "Convert Oil into Fuel",
+      "tr": "Yağı Yakıta Dönüştür",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/medievalworkstation/medievalworkstation.object",
+      "pointer": "/description",
+      "en": "A large, somewhat primitive workstation. Crafts basic gear, but can't be upgraded.",
+      "tr": "Büyük ve biraz ilkel bir çalışma istasyonu. Temel ekipman üretir ancak yükseltilemez.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/medievalworkstation/medievalworkstation.object",
+      "pointer": "/glitchDescription",
+      "en": "Wistful. This brings back memories of the village I was built in.",
+      "tr": "Özlemli. Bu, üretildiğim köyü hatırlattı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/medievalworkstation/medievalworkstation.object",
+      "pointer": "/feneroxDescription",
+      "en": "Large. Is solid. Make manyt sorts of basic things. Is good!",
+      "tr": "Büyük. Sağlamdır. Çok çeşit temel şey yapar. İyidir!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/medievalworkstation/medievalworkstation.object",
+      "pointer": "/shortdescription",
+      "en": "Medieval Workstation",
+      "tr": "Orta Çağ Çalışma İstasyonu",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/medievalworkstation/medievalworkstation.object",
+      "pointer": "/category",
+      "en": "Primitive Crafting",
+      "tr": "İlkel Üretim",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/miningbench/miningbench.object",
+      "pointer": "/description",
+      "en": "Can be used to access your tricorder's upgrade interface. Largely cosmetic.",
+      "tr": "Tricorder'ının yükseltme arayüzüne erişmek için kullanılabilir. Büyük ölçüde görsel amaçlıdır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/miningbench/miningbench.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Upgrade Table^reset;",
+      "tr": "^cyan;Yükseltme Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/miningbench/weaponshuffler.object",
+      "pointer": "/description",
+      "en": "Re-randomizes items using Upgrade Modules.",
+      "tr": "Yükseltme Modüllerini kullanarak eşyaların özelliklerini yeniden rastgele belirler.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/miningbench/weaponshuffler.object",
+      "pointer": "/shortdescription",
+      "en": "Weapon Shuffler",
+      "tr": "Silah Karıştırıcı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/description",
+      "en": "This station helps with upgrading gear and creating ideas.",
+      "tr": "Bu istasyon ekipman yükseltmeye ve yeni fikirler geliştirmeye yardımcı olur.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Tinkering Table^reset;",
+      "tr": "^orange;İnce İşçilik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Tools and specialized equipment.",
+      "tr": "Araçlar ve özel ekipmanlar.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Tinkering Table^reset;",
+      "tr": "^orange;İnce İşçilik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#00b097;Tinkering Table^reset;",
+      "tr": " ^#00b097;İnce İşçilik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Tools and specialized equipment.",
+      "tr": " ^#dddddd;Araçlar ve özel ekipmanlar.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "Upgrade and enhance, conceptualize and experiment.",
+      "tr": "Yükselt, geliştir, fikir üret ve deney yap.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Engineering Bench^reset;",
+      "tr": "^orange;Mühendislik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#00b097;Engineering Bench^reset;",
+      "tr": " ^#00b097;Mühendislik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Create more advanced tools and equipment.",
+      "tr": " ^#dddddd;Daha gelişmiş araç ve ekipmanlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Create upgrades and hi-tech gear with nanites.",
+      "tr": "Nanitlerle yükseltmeler ve ileri teknoloji ekipmanlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Nanofabricator^reset;",
+      "tr": "^orange;Nanoüretici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#00b097;Nanofabricator^reset;",
+      "tr": " ^#00b097;Nanoüretici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricator.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Assemble state-of-the-art equipment and tools.",
+      "tr": " ^#dddddd;Son teknoloji ekipman ve araçlar birleştir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/description",
+      "en": "This station helps with upgrading gear and creating ideas.",
+      "tr": "Bu istasyon ekipman yükseltmeye ve yeni fikirler geliştirmeye yardımcı olur.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Tinkering Table^reset;",
+      "tr": "^orange;İnce İşçilik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "This station helps with upgrading gear and creating ideas.",
+      "tr": "Bu istasyon ekipman yükseltmeye ve yeni fikirler geliştirmeye yardımcı olur.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Tinkering Table^reset;",
+      "tr": "^orange;İnce İşçilik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "Upgrade and enhance, conceptualize and experiment.",
+      "tr": "Yükselt, geliştir, fikir üret ve deney yap.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Engineering Table^reset;",
+      "tr": "^orange;Mühendislik Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "en": "Create upgrades and hi-tech gear with nanites.",
+      "tr": "Nanitlerle yükseltmeler ve ileri teknoloji ekipmanlar üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "en": "^orange;Nanofabricator^reset;",
+      "tr": "^orange;Nanoüretici^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/nanofabricator/nanofabricatoroutpost.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pesttrap/pesttrap.object",
+      "pointer": "/description",
+      "en": "Great for catching smaller sources of meat. Holds 1 rat. Scan for Info.",
+      "tr": "Küçük avları yakalamak için idealdir. 1 sıçan tutar. Bilgi için tara.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pesttrap/pesttrap.object",
+      "pointer": "/shortdescription",
+      "en": "Pest Trap",
+      "tr": "Haşere Tuzağı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pethealingstation/pethealingstationauto.object",
+      "pointer": "/description",
+      "en": "This pet healing station is used to heal pets, and is automated and Item Network capable.",
+      "tr": "Bu otomatik evcil hayvan iyileştirme istasyonu evcil hayvanları iyileştirir ve Eşya Ağına bağlanabilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pethealingstation/pethealingstationauto.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Automatic Pet Healer^reset;",
+      "tr": "^orange;Otomatik Evcil Hayvan İyileştiricisi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pethealingstation/pethealingstationauto.object",
+      "pointer": "/subtitle",
+      "en": "For broken robots",
+      "tr": "Yaralı evcil hayvanlar için",
+      "section": "v0.17 Üretim makineleri - objects/crafting",
+      "qa": {
+        "reason": "Kaynak altyazısı yanlışlıkla broken robots der; nesne pethealingstation ve ana açıklaması evcil hayvan iyileştirmeyi doğrular."
+      }
+    },
+    {
+      "asset": "objects/crafting/petpicrepair/petpicrepair.object",
+      "pointer": "/description",
+      "en": "Repairs broken capture pod images.",
+      "tr": "Bozuk Yakalama Kapsülü görüntülerini onarır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/petpicrepair/petpicrepair.object",
+      "pointer": "/shortdescription",
+      "en": "Capture Pod Re-Imager",
+      "tr": "Yakalama Kapsülü Görüntü Yenileyici",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pixelcompressor/hypercompressor.object",
+      "pointer": "/description",
+      "en": "Compress pixels and research for storage instantly, for a small fee.",
+      "tr": "Pikselleri ve Araştırmayı küçük bir ücret karşılığında anında depolanabilir hâle sıkıştırır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/pixelcompressor/hypercompressor.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Hyper Compressor^reset;",
+      "tr": "^orange;Hiper Sıkıştırıcı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/description",
+      "en": "Make decorative objects out of home cooked meals!",
+      "tr": "Ev yapımı yemeklerden dekoratif nesneler hazırla!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Plating Table^reset;",
+      "tr": "^orange;Sunum Tezgâhı^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/apexDescription",
+      "en": "Food in Apex territory is an artificially scarce resource. I'm not sure I'm comfortable just flippantly displaying it.",
+      "tr": "Apex bölgesinde yiyecek yapay olarak kıt tutulur. Onu böylesine umursamazca sergilemek içime sinmiyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/avianDescription",
+      "en": "The smell of plated food is so tempting, I fear I won't have it to decorate with for long.",
+      "tr": "Sunulan yemeğin kokusu öyle cezbedici ki onu uzun süre dekor olarak tutabileceğimi sanmıyorum.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/floranDescription",
+      "en": "SSShowing off food is wasteful. Food is for eating!",
+      "tr": "Yemeği sssergilemek israftır. Yemek yenmek içindir!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/glitchDescription",
+      "en": "Confused. Why would one waste food by just displaying it? Won't it spoil?",
+      "tr": "Şaşkın. İnsan neden yemeği sergileyerek ziyan eder? Bozulmaz mı?",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/humanDescription",
+      "en": "A step up from wax fruit bowls for sure.",
+      "tr": "Balmumu meyve kâselerinden kesinlikle bir adım ileride.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/hylotlDescription",
+      "en": "Any Hylotl chef worth their salt knows presentation is half of any quality meal.",
+      "tr": "İşinin ehli her Hylotl şef, iyi bir yemeğin yarısının sunum olduğunu bilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/platingtable/platingtable.object",
+      "pointer": "/novakidDescription",
+      "en": "Food just for showing off? What a waste...",
+      "tr": "Sadece gösteriş için yemek mi? Ne israf...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/description",
+      "en": "Create powered gear.",
+      "tr": "Elektrikli ekipman üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Electronics Center^reset;",
+      "tr": "^orange;Elektronik Merkezi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "en": "Create powered gear.",
+      "tr": "Elektrikli ekipman üret.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "en": "^orange;Electronics Center^reset;",
+      "tr": "^orange;Elektronik Merkezi^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "en": "High-tech powered devices.",
+      "tr": "İleri teknoloji elektrikli cihazlar.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "en": "^orange;Power Station^reset;",
+      "tr": "^orange;Güç İstasyonu^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^red;UNAUTHORIZED ACCESS DETECTED^reset;",
+      "tr": " ^red;YETKİSİZ ERİŞİM ALGILANDI^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/powerstation/powerstatiooutpost.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;Access to terminal disabled.",
+      "tr": " ^#dddddd;Terminal erişimi devre dışı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/description",
+      "en": "Prop Packaging's finest products avaliable at the touch of a button!",
+      "tr": "Prop Packaging'in en iyi ürünleri tek dokunuşla elinin altında!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Prop Pack Online Catalog^reset;",
+      "tr": "^orange;Prop Pack Çevrim İçi Kataloğu^reset;",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/apexDescription",
+      "en": "An online catalog! How convient.",
+      "tr": "Çevrim içi bir katalog! Ne kadar kullanışlı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/avianDescription",
+      "en": "Brand new furniture delivered in microseconds. The future is now!",
+      "tr": "Yepyeni mobilyalar mikrosaniyeler içinde teslim ediliyor. Gelecek şimdi!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/floranDescription",
+      "en": "Floran likes to play with sssmooth touch screen.",
+      "tr": "Floran pürüzsüz dokunmatik ekranla oynamayı sssever.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/glitchDescription",
+      "en": "Overjoyed. So many options to choose from!",
+      "tr": "Çok sevinçli. Aralarından seçim yapılacak ne çok seçenek var!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/humanDescription",
+      "en": "Huh. This catalog seems... familiar?",
+      "tr": "Ha. Bu katalog... tanıdık mı geliyor?",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/hylotlDescription",
+      "en": "The furniture featured here very quality... And reasonably priced, as well!",
+      "tr": "Burada sergilenen mobilyalar çok kaliteli... Üstelik fiyatları da makul!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshopmini/ppshopmini.object",
+      "pointer": "/novakidDescription",
+      "en": "A mini virtual furniture catalog. Ain't that the darnedest thing.",
+      "tr": "Minik bir sanal mobilya kataloğu. Şu işe bak hele.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/description",
+      "en": "A perfectly original and legitimate furniture shipment company.",
+      "tr": "Tamamen özgün ve yasal bir mobilya nakliye şirketi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/shortdescription",
+      "en": "Prop Pack Truck",
+      "tr": "Prop Pack Kamyonu",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/apexDescription",
+      "en": "A delivery truck. Is this penguin manning it or just loitering?",
+      "tr": "Bir teslimat kamyonu. Bu penguen kamyonu mu işletiyor, yoksa aylaklık mı ediyor?",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/avianDescription",
+      "en": "A penguin? Alone with a truck? I ought to be on guard.",
+      "tr": "Bir penguen mi? Bir kamyonla yalnız başına mı? Tedbirli olmalıyım.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/floranDescription",
+      "en": "Little penguin hasss wares!",
+      "tr": "Küçük penguenin malları varrr!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/glitchDescription",
+      "en": "Suspicious. This delivery truck is unoccupied save for one penguin \"employee\"...",
+      "tr": "Kuşkulu. Bu teslimat kamyonunda bir penguen \"çalışan\" dışında kimse yok...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/humanDescription",
+      "en": "I'm not too sure I can trust this guy... but just look at his stock!",
+      "tr": "Bu adama güvenebileceğimden emin değilim... ama mallarına bir bak!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/hylotlDescription",
+      "en": "A penguin delinquent, claiming to be running a shop. I might alert the authorities if this goes south. ",
+      "tr": "Dükkân işlettiğini iddia eden penguen bir suçlu. İşler kötüye giderse yetkililere haber verebilirim.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/ppshoptruck/ppshoptruck.object",
+      "pointer": "/novakidDescription",
+      "en": "Somethin' tells me this stock wasn't legally obtained...",
+      "tr": "İçimden bir ses bu malların yasal yoldan alınmadığını söylüyor...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/radiencrafting/radiencrafting.object",
+      "pointer": "/interactData/paneLayoutOverride/lblTitle/value",
+      "en": " ^#ffea00;X'ian Forming Bulb",
+      "tr": " ^#ffea00;X'ian Biçimlendirme Tomurcuğu",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/radiencrafting/radiencrafting.object",
+      "pointer": "/interactData/paneLayoutOverride/lblSubTitle/value",
+      "en": " ^#dddddd;For everything to do with X'i",
+      "tr": " ^#dddddd;X'i ile ilgili her şey için",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/radiencrafting/radiencrafting.object",
+      "pointer": "/description",
+      "en": "Allows a X'i to craft pieces of itself through direct melding.",
+      "tr": "Bir X'i'nin doğrudan kaynaşma yoluyla kendinden parçalar üretmesini sağlar.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/radiencrafting/radiencrafting.object",
+      "pointer": "/shortdescription",
+      "en": "X'ian Forming Bulb",
+      "tr": "X'ian Biçimlendirme Tomurcuğu",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/servitorloader/servitorloader.object",
+      "pointer": "/description",
+      "en": "Activates Bots for portable use (via special Capture Pods).",
+      "tr": "Botları özel Yakalama Kapsülleriyle taşınabilir kullanım için etkinleştirir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/servitorloader/servitorloader.object",
+      "pointer": "/shortdescription",
+      "en": "Bot Loader",
+      "tr": "Bot Yükleyici",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/shrineofsouls/shrineofsouls.object",
+      "pointer": "/description",
+      "en": "An altar dedicated to the souls of the lost.",
+      "tr": "Kayıp ruhlara adanmış bir sunak.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/shrineofsouls/shrineofsouls.object",
+      "pointer": "/shortdescription",
+      "en": "Shrine of Lost Souls",
+      "tr": "Kayıp Ruhlar Tapınağı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/shrineofsouls/shrineofsouls.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/title",
+      "en": "Shrine of Lost Souls",
+      "tr": "Kayıp Ruhlar Tapınağı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/description",
+      "en": "This slimy counter seems to be used for food preparation.",
+      "tr": "Bu balçıklı tezgâh yiyecek hazırlamak için kullanılıyor gibi görünüyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/shortdescription",
+      "en": "Slime Cooking Table",
+      "tr": "Balçık Yemek Tezgâhı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/title",
+      "en": " Slime Cooking Table",
+      "tr": " Balçık Yemek Tezgâhı",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Prepare and cook food",
+      "tr": " ^#b9b5b2;Yemek hazırla ve pişir",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/apexDescription",
+      "en": "Slimy cooking table.",
+      "tr": "Balçıklı bir yemek tezgâhı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/avianDescription",
+      "en": "I can use this to make delicious food. But it might turn sticky.",
+      "tr": "Bununla lezzetli yemekler yapabilirim. Ama biraz yapışkan olabilir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/floranDescription",
+      "en": "Floran can use thisss to make very very tasty food!",
+      "tr": "Floran bununla çok çok lezzzzetli yemekler yapabilir!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/glitchDescription",
+      "en": "Shocked. A cooking table covered in slime.",
+      "tr": "Şaşkın. Balçıkla kaplı bir yemek tezgâhı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/humanDescription",
+      "en": "Messy cooking table!",
+      "tr": "Dağınık bir yemek tezgâhı!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/hylotlDescription",
+      "en": "A slimy table, to be used for the preparation of food.",
+      "tr": "Yemek hazırlamak için kullanılan balçıklı bir tezgâh.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/novakidDescription",
+      "en": "These Slimes never cease to surprise me, such a messy kitchen!",
+      "tr": "Bu Balçıklar beni şaşırtmayı hiç bırakmıyor; ne dağınık mutfak!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/slimepersonDescription",
+      "en": "Very good stove, I can make good food here.",
+      "tr": "Çok iyi ocak, burada iyi yemek yapabilirim.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/slimenpcDescription",
+      "en": "Food...cook here...very good...",
+      "tr": "Yemek... burada pişir... çok iyi...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimecookingtable/slimecookingtable.object",
+      "pointer": "/slimenpchumanDescription",
+      "en": "Flame inside to produce heat, very good for cooking.",
+      "tr": "İçindeki alev ısı üretiyor, yemek pişirmek için çok iyi.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/description",
+      "en": "Flame engulfed in slime, how does it get oxygen?.",
+      "tr": "Balçıkla sarılmış bir alev; oksijeni nasıl alıyor?",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/shortdescription",
+      "en": "Slime Fire",
+      "tr": "Balçık Ateşi",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/apexDescription",
+      "en": "A fire, inside a blob of slime.",
+      "tr": "Bir balçık kütlesinin içindeki ateş.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/avianDescription",
+      "en": "This fire works like a stove, it's useful for very basic cooking.",
+      "tr": "Bu ateş bir ocak gibi çalışıyor; en temel yemekleri pişirmek için kullanışlı.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/floranDescription",
+      "en": "Floran hate flamesss. Floran happy it's in slime.",
+      "tr": "Floran alevlerden nefret eder. Balçığın içinde olduğu için mutlu.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/glitchDescription",
+      "en": "Informed. Heating meat with fire is a basic form of cooking.",
+      "tr": "Bilgili. Eti ateşle ısıtmak temel bir pişirme yöntemidir.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/humanDescription",
+      "en": "I thought flames stop burning when they have no oxygen.",
+      "tr": "Alevlerin oksijen olmadığında söndüğünü sanıyordum.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/hylotlDescription",
+      "en": "This flame is well protected. It could burn underwater!",
+      "tr": "Bu alev iyi korunuyor. Su altında bile yanabilir!",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/novakidDescription",
+      "en": "Seems like burning flames inside a slime forms different kind of plasma.",
+      "tr": "Balçığın içinde yanan alevler farklı bir plazma türü oluşturuyor gibi görünüyor.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/slimepersonDescription",
+      "en": "Stove, I can cook here.",
+      "tr": "Ocak, burada yemek yapabilirim.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/slimenpcDescription",
+      "en": "Food...cook here...",
+      "tr": "Yemek... burada pişir...",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/slimefire/slimefire.object",
+      "pointer": "/slimenpchumanDescription",
+      "en": "Flame heats up the plate, great for cooking.",
+      "tr": "Alev plakayı ısıtıyor, yemek pişirmek için harika.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/weaponupgradeanvil2/fuweaponupgradeanvil.object",
+      "pointer": "/description",
+      "en": "Ancient technology capable of enhancing weapons, armor and equipment.",
+      "tr": "Silahları, zırhları ve ekipmanları geliştirebilen antik teknoloji.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/weaponupgradeanvil2/fuweaponupgradeanvil.object",
+      "pointer": "/shortdescription",
+      "en": "Cosmic Crucible",
+      "tr": "Kozmik Pota",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/xiwell/xiwell.object",
+      "pointer": "/description",
+      "en": "Siphons atmospheric particulates and recycles them into water. Must be ^red;25 tiles^reset; from other X'ian wells.",
+      "tr": "Atmosferdeki parçacıkları çeker ve suya dönüştürür. Diğer X'ian kuyularından ^red;25 blok^reset; uzakta olmalıdır.",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
+    },
+    {
+      "asset": "objects/crafting/xiwell/xiwell.object",
+      "pointer": "/shortdescription",
+      "en": "X'ian Well",
+      "tr": "X'ian Kuyusu",
+      "section": "v0.17 Üretim makineleri - objects/crafting"
     }
   ]
 }

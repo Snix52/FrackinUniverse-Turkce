@@ -370,3 +370,20 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Crappy Crew Bed | Gemi nesnesi | Nesne | Berbat Mürettebat Yatağı | Kötü Ekip Yatağı | LOCKED | BYOS görevi |
 | Crew Deed | Gemi nesnesi | Nesne | Mürettebat Tapusu | Ekip Tapusu | LOCKED | BYOS görevi |
 | Cyber Sphere | Canavar | Varlık | Siberküre | Siber Küre | LOCKED | Çoğul: Siberküreler |
+
+## v0.17 Üretim makinesi terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Armorworks | Üretim makinesi | Nesne | Zırh Atölyesi | Zırh İşleri | LOCKED | |
+| Assembly Line | Üretim makinesi | Nesne | Montaj Hattı | Birleştirme Hattı | LOCKED | |
+| Armory | Üretim makinesi | Nesne | Cephanelik | Silahhane | LOCKED | |
+| Fuel Refinery | Üretim makinesi | Nesne | Yakıt Rafinerisi | Yakıt Arıtıcısı | LOCKED | |
+| Fission Furnace | Üretim makinesi | Nesne | Fisyon Fırını | Bölünme Fırını | LOCKED | |
+| Gene Sequencer | Üretim makinesi | Nesne | Gen Dizileyici | Gen Sıralayıcı | LOCKED | |
+| Nanofabricator | Üretim makinesi | Nesne | Nanoüretici | Nano Fabrikatör | LOCKED | |
+| Cosmic Crucible | Üretim makinesi | Nesne | Kozmik Pota | Kozmik Eritici | LOCKED | |
+| Racialiser / Racializer | Dönüştürme makinesi | Nesne | Irk Dönüştürücü | Irksallaştırıcı | LOCKED | Kaynaktaki iki yazım aynı oyuncu kavramıdır |
+| Crystal Loom | Üretim makinesi | Nesne | Kristal Dokuma Tezgâhı | Kristal Tezgâh | LOCKED | |
+| Weapon Shuffler | Üretim makinesi | Nesne | Silah Karıştırıcı | Silah Rastgeleştirici | LOCKED | |
+| Hyper Compressor | Üretim makinesi | Nesne | Hiper Sıkıştırıcı | Aşırı Kompresör | LOCKED | |

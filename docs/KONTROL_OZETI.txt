@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.16.0 BETA | STATİK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.17.0 BETA | STATİK QA KONTROL ÖZETİ
 
-2154 aktif yapılandırılmış oyuncu metni alanı / 399 patch asset.
+2449 aktif yapılandırılmış oyuncu metni alanı / 453 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 2169 yerelleştirilmiş görünür metin birimi / 400 hedef asset.
+TOPLAM: 2464 yerelleştirilmiş görünür metin birimi / 454 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -41,6 +41,7 @@ KAPSAM
 - v0.14 Outpost - Kevin ve Khe: 94
 - v0.15 Battle: 64
 - v0.16 Kalan görevler: 62
+- v0.17 Üretim makineleri: 295
 
 v0.5 YENİ İÇERİK
 - fu_power araştırma ağacı: 39 düğüm / 77 aktif oyuncu metni.
@@ -477,4 +478,23 @@ v0.16 KALAN GÖREV KLASÖRLERİ QA
 
 SONUÇ
 v0.16 statik Anayasa QA hazırlığı: PASS.
+GitHub Actions nihai build/QA: BEKLİYOR.
+
+v0.17 ÜRETİM MAKİNELERİ QA
+- objects/crafting ham .object envanteri: 84.
+- Önceden kapsanan asset: 30.
+- Yeni kapsanan etkin asset: 54.
+- Yeni oyuncuya görünür alan: 295.
+- Yeni pinned FU alanı: 295/295 exact-source PASS.
+- Patch eşleşmesi: 295 test + 295 replace PASS.
+- Benzersiz asset/pointer, boş çeviri, renk/kontrol kodu ve sayı bütünlüğü: PASS.
+- Küçük harfli mech regresyonu: 0.
+- Kaynak düzeltmesi: Pet Healing Station /subtitle "For broken robots" -> "Yaralı evcil hayvanlar için"; belgeli guard AKTİF.
+- Proje toplamı: 2449 structured + 15 Lua = 2464 görünür birim; 453 patch asset.
+- Kaynak/provenans: 2359 pinned FU + 90 layered/external; izlenmeyen alan 0.
+- objects/crafting seçili görünür kapsamı: 84/84 asset TAMAMLANDI.
+- Diğer eşya/nesne klasörleri ve oyun içi LQA / font / panel taşması: BEKLİYOR.
+
+SONUÇ
+v0.17 statik Anayasa QA hazırlığı: PASS.
 GitHub Actions nihai build/QA: BEKLİYOR.

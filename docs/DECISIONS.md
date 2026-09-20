@@ -392,3 +392,13 @@
 - Precursor görevinin genel data-disc yönlendirmesi gerçek hedef envanter adı **Precursor Veri Anahtarı** ile açıklaştırıldı.
 - Battle kapsamındaki tekil Cyber Sphere kullanımı, mevcut kilitli çoğul **Siberküreler** terimiyle uyumlu **Siberküre** olarak düzeltildi.
 - Yeni kapsam 62 yapılandırılmış alan / 21 yeni patch assettir; 60 pinned FU ve 2 vanilla alanın tamamı exact-source/provenans kontrolünden geçti.
+
+## 2026-09-20 - v0.17 Üretim makineleri
+
+- `objects/crafting` ağacındaki 84 .object asseti envanterlendi; 30'u önceki sürümlerde kapsanmıştı, kalan 54 etkin asset bu sürümde yerelleştirildi.
+- Yeni kapsam **295 yapılandırılmış oyuncu alanı / 54 yeni patch asset**tir. Ad, açıklama, alt başlık, panel başlığı ve mevcut ırka özel inceleme metinleri birlikte ele alındı.
+- Armorworks -> **Zırh Atölyesi**, Assembly Line -> **Montaj Hattı**, Armory -> **Cephanelik**, Fuel Refinery -> **Yakıt Rafinerisi**, Fission Furnace -> **Fisyon Fırını**, Gene Sequencer -> **Gen Dizileyici**, Nanofabricator -> **Nanoüretici**, Cosmic Crucible -> **Kozmik Pota** LOCKED.
+- Racialiser/Racializer aynı oyuncu kavramı olarak **Irk Dönüştürücü** biçiminde tekilleştirildi; Precursor ve X'ian özel adları çevrilmeden korundu, Mech büyük harf kilidi sürdürüldü.
+- `objects/crafting/pethealingstation/pethealingstationauto.object` kaynağındaki **For broken robots** altyazısı nesnenin adı ve açıklamasıyla çeliştiği için **Yaralı evcil hayvanlar için** olarak düzeltildi ve regresyon guard'ına bağlandı.
+- Yeni alanların **295/295'i pinned FU 6.5.8 kaynağıyla exact doğrulandı**; proje toplamı 2449 structured + 15 Lua / 453 patch asset oldu.
+- Bu sonuç FU'nun bütün eşya ve nesne klasörlerinin tamamlandığı anlamına gelmez; oyun içi LQA ve diğer klasörlerin kapsam taraması sürer.
