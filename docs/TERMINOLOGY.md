@@ -255,6 +255,18 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Red Flower | Vanilla bitki | Nesne | Kırmızı Çiçek | Red Flower | LOCKED | v0.12 vanilla kaynak doğrulandı |
 | Empty Bottle | Vanilla üretim malzemesi | Kaynak | Boş Şişe | Empty Bottle | LOCKED | v0.12 vanilla kaynak doğrulandı |
 
+| Greenfinger Medal | Outpost görev artefaktı | Nesne | Greenfinger Madalyası | Greenfinger Medal | LOCKED | Greenfinger özel unvanı korunur |
+| Lucky Coin | Outpost görev artefaktı | Nesne | Uğurlu Para | Lucky Coin | LOCKED | |
+| Crystalline Trophy | Outpost görev artefaktı | Nesne | Kristal Kupa | Crystalline Trophy | LOCKED | |
+| Alien Broadcast Node | Outpost görev artefaktı | Nesne | Uzaylı Yayın Düğümü | Alien Broadcast Node | LOCKED | |
+| X'i Relic | Outpost görev artefaktı | Nesne | X'i Kalıntısı | X'i Relic | LOCKED | X'i özel ad olarak korunur |
+| Ancient Remote | Outpost görev artefaktı | Nesne | Kadim Kumanda | Ancient Remote | LOCKED | Ancients -> Kadimler ailesiyle uyumlu |
+| Sstabbed-Thingss Emporium | Bilim Karakolu Floran dükkânı | Özel ad/Nesne | Saplanmış Şeyler Pazarı | Sstabbed-Thingss Emporium | LOCKED | |
+| Murder-Twig's Yum-Yums | Bilim Karakolu yiyecek dükkânı | Özel ad/Nesne | Murder-Twig'in Lezzetleri | Murder-Twig's Yum-Yums | LOCKED | Murder-Twig özel adı korunur |
+| Gems of Soul | Bilim Karakolu Eld'uukhar dükkânı | Özel ad/Nesne | Ruhun Mücevherleri | Gems of Soul | LOCKED | |
+| Lorewalker's Shop | Bilim Karakolu Kirhos dükkânı | Özel ad/Nesne | Lorewalker'ın Dükkânı | Lorewalker's Shop | LOCKED | Lorewalker unvanı korunur |
+| Silenes' Minerals | Bilim Karakolu Radien dükkânı | Özel ad/Nesne | Silene'nin Mineralleri | Silenes' Minerals | LOCKED | Silene kişi adı olarak korunur |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
