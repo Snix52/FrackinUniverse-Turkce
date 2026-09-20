@@ -301,6 +301,8 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Primitive Spear | Avcılık tutorialı | Silah | İlkel Mızrak | Primitive Spear | LOCKED | |
 | Rock Breaker | Güç / taş işleme makinesi | Nesne | Kaya Parçalayıcı | Kaya Kırıcı | LOCKED | Rock Crusher = Kaya Kırıcı; iki makine karıştırılmaz |
 | Wooden Centrifuge | Tutorial / santrifüj | Nesne | Ahşap Santrifüj | Wooden Centrifuge | LOCKED | |
+| Iron Centrifuge | Tutorial / santrifüj yükseltmesi | Nesne | Demir Santrifüj | Iron Centrifuge | LOCKED | Ahşap Santrifüjün elektrikli yükseltmesi |
+| Powered Centrifuge | Demir Santrifüj alt başlığı | UI | Elektrikli Santrifüj | Powered Centrifuge | LOCKED | |
 | Sifter | Tutorial / işleme makinesi | Nesne | Elek | Sifter | LOCKED | Powder Sifter = Toz Eleği |
 | Stock Mech Legs | Mech parçası | Nesne | Standart Mech Bacakları | Stock Mech Legs | LOCKED | |
 | Improved Mech Legs | Mech parçası | Nesne | Geliştirilmiş Mech Bacakları | Improved Mech Legs | LOCKED | |
