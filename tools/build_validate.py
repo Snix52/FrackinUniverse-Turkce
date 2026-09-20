@@ -380,6 +380,8 @@ def allowed(a,p):
         return p in ('/description','/shortdescription','/category')
     if a=='objects/bees/ironcentrifuge/ironcentrifuge.object':
         return p in ('/description','/shortdescription','/subtitle','/category')
+    if a=='objects/bees/ironcentrifuge/ironcentrifuge.object':
+        return p in ('/description','/shortdescription','/subtitle','/category')
     if a=='objects/crafting/armory/armory.object':
         return p in ('/description','/shortdescription') or bool(re.fullmatch(r'/upgradeStages/[012]/(itemSpawnParameters/(description|shortdescription)|interactData/paneLayoutOverride/lbl(Title|SubTitle)/value)',p))
     if a=='objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object':
