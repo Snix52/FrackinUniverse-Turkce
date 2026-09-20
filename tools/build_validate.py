@@ -29,6 +29,15 @@ SCIENCE_EXTERNAL_QUEST_ASSETS = {
     'quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate'
 }
 
+OUTPOST_SHOP_QUEST_ASSETS = {
+    'quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate',
+    'quests/fu_questlines/outpost/scienceoutpost_foodShop.questtemplate',
+    'quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate',
+    'quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate',
+    'quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate',
+    'quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate'
+}
+
 NONVISIBLE_RESEARCH_IDS = {
     'zb/researchTree/fu_geology.config': {'default','metals_tier7','metals_morphite','metals_nocxium','metals_plasmiccrystal','metals_diamond','metals_alloy5','metals_alloy6','isotopes6','terraforming1','terraforming2','terraforming3'},
     'zb/researchTree/fu_agriculture.config': {'default'},
@@ -145,6 +154,8 @@ def allowed(a,p):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a.startswith('quests/fu_questlines/outpost/booze/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
+    if a in OUTPOST_SHOP_QUEST_ASSETS:
+        return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
         return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='radiomessages/fu_quests.radiomessages':
@@ -240,6 +251,22 @@ def allowed(a,p):
     }
     if a in outpost_bee_assets:
         return p in ('/description','/shortdescription','/subtitle')
+    outpost_shop_assets={
+        'items/generic/loot/mission/greenfinger_trophy.item',
+        'items/generic/loot/mission/luckycoin.item',
+        'items/generic/loot/mission/temple_trophy.item',
+        'items/generic/loot/mission/alien_trophy.item',
+        'items/generic/loot/mission/radien_trophy.item',
+        'items/generic/loot/mission/ancient_tech.item',
+        'objects/scienceoutpost/fufoodshopfloran/fufoodshopfloran.object',
+        'objects/scienceoutpost/fufoodshop/fufoodshop.object',
+        'objects/scienceoutpost/fugemshop/fugemshop.object',
+        'objects/scienceoutpost/kirhosshop/kirhosshop.object',
+        'objects/scienceoutpost/radienshop/silene_shop.object',
+        'objects/scienceoutpost/fushadowstore/fushadowstore.object'
+    }
+    if a in outpost_shop_assets:
+        return p in ('/description','/shortdescription')
     power_assets={
         'objects/power/isn_solarpanel/isn_solarpanel.object',
         'objects/power/fu_solararray/fu_solararray.object',
@@ -475,7 +502,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Görevler (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki ve Arıcılık zincirlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki, Arıcılık ve Bilim Karakolu dükkân görevlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
