@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.9.0-beta",
+  "translation_version": "0.10.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 1510,
+  "translated_display_fields": 1714,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 1525,
-  "patched_assets": 175,
+  "total_localized_display_units": 1729,
+  "patched_assets": 239,
   "raw_override_assets": 1,
-  "target_assets_total": 176,
+  "target_assets_total": 240,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -31,21 +31,26 @@
     "Delilik": 63,
     "Delilik eşya ve makineleri": 40,
     "v0.9 Tutorial Görevleri": 90,
-    "v0.9 Tutorial Hedefleri": 41
+    "v0.9 Tutorial Hedefleri": 41,
+    "v0.10 Science - Chemistry": 54,
+    "v0.10 Science - Electronics": 36,
+    "v0.10 Science - Genetics": 51,
+    "v0.10 Science - Mechanical": 41,
+    "v0.10 Science - Physics": 22
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (1510/1510)",
+    "unique_paths": "PASS (1714/1714)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (current 1510-field catalog; inactive research and disconnected start_basics1 rejected before patch generation)",
-    "source_mismatch_rejection_cases": 1510,
-    "source_mismatch_rejection": "PASS (1510 test-guarded structured fields)",
+    "fixture_application": "PASS (current 1714-field catalog; inactive research, disconnected start_basics1 and dead Science fuquest_dna/fuquest_mineral rejected before patch generation)",
+    "source_mismatch_rejection_cases": 1714,
+    "source_mismatch_rejection": "PASS (1714 test-guarded structured fields)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (980/980 active pinned-FU fields; layered/external provenance checks retained separately)",
+    "exact_source_pointer_validation": "PASS (1173/1173 active pinned-FU fields; layered/external provenance checks retained separately)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
     "agriculture_source_pointer_validation": "PASS (99/99 active fields)",
@@ -85,7 +90,16 @@
     "v09_patch_pairing": "PASS (131 test + 131 replace across 44 target assets)",
     "v09_broken_quest_guard": "PASS (start_basics1 rejected)",
     "v09_build_allowlist": "PASS (131/131 new structured paths covered)",
-    "v09_tutorial_source_inventory": "PASS (42 source questtemplates = 41 connected/localized + 1 broken/disconnected start_basics1)"
+    "v09_tutorial_source_inventory": "PASS (42 source questtemplates = 41 connected/localized + 1 broken/disconnected start_basics1)",
+    "v10_science_connected_coverage": "PASS (37/37 reachable Science-linked quest files)",
+    "v10_science_questlist_coverage": "PASS (35/35 fu_sciences quest-list entries localized)",
+    "v10_science_extra_runtime_coverage": "PASS (fuquest_biochem via fu_tutorial/fu_vinj + create_blackglass via Science Outpost NPC)",
+    "v10_science_dead_quest_guard": "PASS (fuquest_dna and fuquest_mineral excluded and rejected by build guard)",
+    "v10_science_pinned_fu_source_validation": "PASS (193/193)",
+    "v10_science_vanilla_source_validation": "PASS (11/11 independently verified vanilla fields)",
+    "v10_science_source_provenance": "PASS (204/204)",
+    "v10_patch_pairing": "PASS (204 test + 204 replace across 64 new patch assets)",
+    "v10_build_allowlist": "PASS (204/204 new structured paths covered)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -98,7 +112,14 @@
     "fu_power tree source title is Electronics while FU cross-reference names it Power Systems; Turkish uses Güç Sistemleri for one trackable tree name.",
     "fu_power Steam Power prose says hydraulic piston; Turkish uses Hidrolik Dinamo because the research actually unlocks hydraulicdynamo.",
     "fu_power Combustion prose says Combustion Engine; Turkish uses Yanmalı Jeneratör because the actual unlocked object's shortdescription is Combustion Generator.",
-    "fu_craftsmanship colony prose says Mk2 Tenant Deeds; actual inventory item is Colony Deed Mark II, so Turkish uses Koloni Tapusu Mark II. Same canonical name is used in Colony Core description; number-token mismatch is explicitly QA-approved for these two fields."
+    "fu_craftsmanship colony prose says Mk2 Tenant Deeds; actual inventory item is Colony Deed Mark II, so Turkish uses Koloni Tapusu Mark II. Same canonical name is used in Colony Core description; number-token mismatch is explicitly QA-approved for these two fields.",
+    "v0.10 create_plastic: old Bio Lab direction replaced with current Chemistry Lab production chain.",
+    "v0.10 create_circuitboard: old Matter Assembler/Silicon+Copper Wire direction replaced with vanilla craftingfurnace3/Atomic Furnace Sand+Coal recipe.",
+    "v0.10 fuquest_battery: old Wiring Tool name replaced with real FU inventory item Mechanic's Wrench / Tamirci Anahtarı.",
+    "v0.10 Genetics: outdated Greenhouse/Gene Design Lab directions corrected to real designlab1/2 recipe tiers; actual quest counts surfaced.",
+    "v0.10 create_atmosregulator: Atmosphere Regulator typo/name drift normalized to real Atmospheric Regulator / Atmosfer Düzenleyici.",
+    "v0.10 create_protocite: obsolete Fission Furnace direction replaced with craftingfurnace2 Industrial Furnace / Endüstriyel Fırın.",
+    "v0.10 create_tritium: stale Fission Reactor objective removed; actual condition is 1 Tritium and recipe is craftingfurnace3/Atomic Furnace."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
