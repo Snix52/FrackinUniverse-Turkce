@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.13.2-beta
+GELİŞTİRME / DOĞRULAMA | v0.13.3-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1929 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1934 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -198,5 +198,20 @@ v0.13.2 ikinci geriye dönük QA:
   duplicate / boş çeviri: 0 / 0
   lowercase mech regresyon guard: AKTİF
   Bee Refuge Takas Et guard: AKTİF
+  oyun içi LQA: BEKLİYOR
+
+v0.13.3 üçüncü geriye dönük QA:
+  başlangıç structured alan: 1929
+  runtime listTemplate dummy alanı çıkarıldı: 3
+  mevcut çeviri düzeltmesi: 5 alan (vanilla/eldritch/Sifter/Iron Centrifuge yönlendirmesi)
+  yeni envanter alanı: 8 (Loose Silt 2 + Gravel 2 + Iron Centrifuge 4)
+  net structured alan değişimi: +5
+  proje toplam yapılandırılmış alan: 1934
+  toplam görünür: 1949 (1934 yapılandırılmış + 15 Lua)
+  toplam patch asset: 325
+  yeni patch asset: 3
+  yeni provenans: 4 pinned FU + 4 vanilla/layered
+  Replace Me runtime dummy guard: AKTİF
+  Gevşek Mil / Çakıl / Demir Santrifüj envanter eşlemesi: PASS
   oyun içi LQA: BEKLİYOR
 
