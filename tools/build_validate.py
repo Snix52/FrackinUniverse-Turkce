@@ -584,6 +584,16 @@ items/armors/tier6/replicant/kirhostier6accelerator.head
 items/armors/tier6/replicant/kirhostier6accelerator.legs
 '''.split())
 
+# v0.30: etkin fu_warcraft düğümü + gerçek tarif çıktısı + görünür ekipman
+# kesişiminde kalan 413 asset. Yol listesi çeviri manifestinde tek kaynak olarak
+# tutulur; yalnız ad ve açıklama alanlarına izin verilir.
+_V030_MANIFEST = json.loads(
+    Path(__file__).with_name('v030_translations.json').read_text(encoding='utf-8')
+)
+V030_RESEARCH_GEAR_ASSETS = {spec['asset'] for spec in _V030_MANIFEST.values()}
+if len(_V030_MANIFEST) != 413 or len(V030_RESEARCH_GEAR_ASSETS) != 413:
+    raise ValueError('v0.30 ekipman manifesti 413 benzersiz asset içermeli')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -1442,6 +1452,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V030_RESEARCH_GEAR_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V029_TIER5_ARMOR_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V028_TIER5_COMBAT_ASSETS:
@@ -1908,7 +1920,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri, Kademe 1-5 savaş ekipmanları ve aktif Kademe 1-5 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif araştırma ağacındaki tarif destekli savaş ekipmanlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
