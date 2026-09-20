@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.16 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.17 Beta / Ana araştırma sistemleri + erişilebilir görev zincirleri + `objects/crafting` üretim makineleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -30,6 +30,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
+- `objects/crafting` altındaki 84/84 etkin nesnede seçili oyuncuya görünür ad, açıklama, alt başlık, panel başlığı ve ırka özel inceleme metinleri
 - Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
 - Başlangıç telsiz/öğretici mesajlarının mevcut dosyadaki 26/26 metni
 - İmalat Tezgâhı yükseltme kademeleri ve seçili arayüz metinleri
@@ -39,7 +40,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **2.154 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **2.169 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **2.449 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **2.464 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -65,7 +66,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.16.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.17.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -74,7 +75,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **2.154 alan / 399 patch asset**tir. v0.16 kalan görev taramasındaki **62/62 yeni alan kaynak/provenansla doğrulandı**: 60 pinned FU, 2 bağımsız doğrulanmış vanilla alan. Denetlenen 17 ham dosyanın 10'u runtime'da erişilebilir ve yerelleştirildi; oyuncuya gösterilmemesi amaçlanan 5 takipçi ile bağlantısız 2 legacy görev dağıtım dışı ve build guard altındadır. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **2.449 alan / 453 patch asset**tir. v0.17'de `objects/crafting` altındaki daha önce çevrilmemiş 54 etkin nesnede **295/295 yeni alan pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Böylece bu klasördeki seçili oyuncuya görünür alanlar asset düzeyinde **84/84** kapsanıyor: 30 nesne önceki sürümlerde, 54 nesne bu pakette. Toplam provenans **2.359 pinned FU + 90 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -206,6 +207,14 @@ Görev hedefleri gerçek envanter adlarıyla eşlendi: **Densinium Miğferi, Cth
 
 v0.16 eklemesi **62 yapılandırılmış alan / 21 yeni patch asset**tir: 37 görev alanı, 3 görev-listesi alanı ve 22 bağlı hedef alanı. Kaynak/provenans sonucu **62/62 PASS** (60 pinned FU + 2 vanilla). Proje toplamı **2.154 structured + 15 Lua = 2.169 görünür birim / 399 patch asset** oldu. Planlanan görev klasörlerinin runtime erişilebilir kapsam taraması tamamlandı; oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
 
+## v0.17 Üretim Makineleri
+
+FU'nun `objects/crafting` ağacındaki **84 .object asseti** envanterlendi. Önceki sürümlerde kapsanan 30 nesne korunarak kalan **54 etkin üretim/makine nesnesinin 295 oyuncuya görünür alanı** yerelleştirildi. Kapsam; envanter adlarını, açıklamaları, alt başlıkları, makine panel başlıklarını ve mevcut ırka özel inceleme cümlelerini içerir.
+
+Yeni 295 alanın tamamı pinned FU 6.5.8 bloblarıyla exact-source doğrulamasından geçti. Patch eşleşmesi **295 test + 295 replace PASS**; renk kodu, kontrol kodu, sayı, yinelenen pointer, boş çeviri ve küçük harfli `mech` kontrolleri temizdir. Pet Healing Station kaynağındaki yanlış **For broken robots** altyazısı, nesnenin gerçek işleviyle uyumlu **Yaralı evcil hayvanlar için** olarak belgeli biçimde düzeltildi.
+
+Proje toplamı **2.449 structured + 15 Lua = 2.464 görünür birim / 453 patch asset** oldu. Bu klasörün seçili görünür kapsamı tamamlandı; diğer eşya/nesne klasörleri ve oyun içi font/panel taşma LQA'sı sonraki turlarda devam eder.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -229,7 +238,7 @@ v0.16 eklemesi **62 yapılandırılmış alan / 21 yeni patch asset**tir: 37 gö
 - [x] Other görev zincirleri (8 erişilebilir; 5 görünmez takipçi dağıtım dışı)
 - [x] BYOS kalan görevleri (2 erişilebilir; 1 bağlantısız legacy dağıtım dışı)
 - [x] Exploration görev zinciri (1 bağlantısız legacy runtime denetimiyle dağıtım dışı)
-- [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi
+- [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi (`objects/crafting`: 84/84 etkin asset tamamlandı; diğer klasörler sürüyor)
 - [x] Planlanan görev klasörlerinin runtime denetimi ve erişilebilir çevirileri
 - [ ] Oyun içi tam LQA ve taşma kontrolleri
 

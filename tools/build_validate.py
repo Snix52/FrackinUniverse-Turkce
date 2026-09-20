@@ -69,6 +69,73 @@ NONVISIBLE_RESEARCH_IDS = {
     'zb/researchTree/madness.config': {'default'}
 }
 
+# v0.17: objects/crafting ağacındaki daha önce çevrilmemiş etkin üretim nesneleri.
+V017_CRAFTING_ASSETS = {
+    'objects/crafting/armory/armoryoutpost.object',
+    'objects/crafting/bothealingstation/pethealingstation.object',
+    'objects/crafting/bothealingstation/pethealingstationauto.object',
+    'objects/crafting/catalystfuelrefinery/catalystfuelrefinery.object',
+    'objects/crafting/chemlab/chemlaboutpost.object',
+    'objects/crafting/clothingfabricator/clothingfabricator.object',
+    'objects/crafting/designlab/designlaboutpost.object',
+    'objects/crafting/eggstra/chickennest/chickennest.object',
+    'objects/crafting/eggstra/cowbell/cowbell.object',
+    'objects/crafting/eggstra/eggincubator/eggincubator.object',
+    'objects/crafting/eggstra/farmclock/farmclock.object',
+    'objects/crafting/eggstra/largetrough/irontrough.object',
+    'objects/crafting/eggstra/largetrough/largetrough.object',
+    'objects/crafting/elderhealingstation/elderhealingstation.object',
+    'objects/crafting/elderhealingstation/pethealingstationauto.object',
+    'objects/crafting/elduu/crystalloom/crystalloom.object',
+    'objects/crafting/elduu/furniturestation/furniturestation.object',
+    'objects/crafting/elduu/gemstation/gemstation.object',
+    'objects/crafting/extraavianaugments/extraavianaugments.object',
+    'objects/crafting/extraweaponupgradeanvil/extraweaponupgradeanvil.object',
+    'objects/crafting/farmwell/farmwell.object',
+    'objects/crafting/fissionfurnacenew/fissionfurnacenew.object',
+    'objects/crafting/fu_petrenamer/fu_petrenamer.object',
+    'objects/crafting/fu_racialiser/fu_racialiser.object',
+    'objects/crafting/fu_racializer/fu_racializer.object',
+    'objects/crafting/fu_upgradetable/fu_upgradetable.object',
+    'objects/crafting/fuincubator/fuincubator.object',
+    'objects/crafting/fuwaterbarrel/fuwaterbarrel.object',
+    'objects/crafting/genesequencer/genesequencer.object',
+    'objects/crafting/liquidpumpwell/liquidpumpwell.object',
+    'objects/crafting/lobstertrap/lobstertrap.object',
+    'objects/crafting/madnesscodex/madnesscodex.object',
+    'objects/crafting/matterassembler/prototyperoutpost.object',
+    'objects/crafting/mechfuelrefinery/fuelrefinery.object',
+    'objects/crafting/medievalworkstation/medievalworkstation.object',
+    'objects/crafting/miningbench/miningbench.object',
+    'objects/crafting/miningbench/weaponshuffler.object',
+    'objects/crafting/nanofabricator/nanofabricator.object',
+    'objects/crafting/nanofabricator/nanofabricatoroutpost.object',
+    'objects/crafting/pesttrap/pesttrap.object',
+    'objects/crafting/pethealingstation/pethealingstationauto.object',
+    'objects/crafting/petpicrepair/petpicrepair.object',
+    'objects/crafting/pixelcompressor/hypercompressor.object',
+    'objects/crafting/platingtable/platingtable.object',
+    'objects/crafting/powerstation/powerstatiooutpost.object',
+    'objects/crafting/ppshopmini/ppshopmini.object',
+    'objects/crafting/ppshoptruck/ppshoptruck.object',
+    'objects/crafting/radiencrafting/radiencrafting.object',
+    'objects/crafting/servitorloader/servitorloader.object',
+    'objects/crafting/shrineofsouls/shrineofsouls.object',
+    'objects/crafting/slimecookingtable/slimecookingtable.object',
+    'objects/crafting/slimefire/slimefire.object',
+    'objects/crafting/weaponupgradeanvil2/fuweaponupgradeanvil.object',
+    'objects/crafting/xiwell/xiwell.object',
+}
+
+def v017_crafting_pointer(p):
+    if p in ('/shortdescription','/description','/subtitle','/category'):
+        return True
+    if re.fullmatch(r'/[A-Za-z0-9_]+Description',p):
+        return True
+    if re.fullmatch(r'/interactData/paneLayoutOverride/(windowtitle/(title|subtitle)|lbl(Title|SubTitle)/value)',p):
+        return True
+    return bool(re.fullmatch(r'/upgradeStages/\d+/(itemSpawnParameters/(shortdescription|description|subtitle|[A-Za-z0-9_]+Description)|interactData/paneLayoutOverride/(windowtitle/(title|subtitle)|lbl(Title|SubTitle)/value))',p))
+
 def nonvisible_research_pointer(a,p):
     m=re.fullmatch(r'/strings/research/([^/]+)/[01]',p)
     return bool(m and m.group(1) in NONVISIBLE_RESEARCH_IDS.get(a,set()))
@@ -155,6 +222,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V017_CRAFTING_ASSETS:
+        return v017_crafting_pointer(p)
     if a=='zb/researchTree/data.config':
         return bool(re.fullmatch(r'/strings/(info/[01]|currencies/(money|essence|fuscienceresource|fumadnessresource|fugeneticmaterial))',p))
     if a=='zb/researchTree/researchTree.config':
@@ -522,6 +591,7 @@ def main():
         if any(x in r['tr'] for x in BAD_TR_PATTERNS):raise ValueError('Bilinen Türkçe LQA hatası: '+a+p)
         if 'kraliçe arı' in r['tr'].casefold():raise ValueError('Kilitli arıcılık terimi ihlali (Ana Arı): '+a+p)
         if LOWERCASE_MECH.search(r['tr']):raise ValueError('Kilitli Mech yazımı ihlali (Mech büyük harfle): '+a+p)
+        if a=='objects/crafting/pethealingstation/pethealingstationauto.object' and p=='/subtitle' and r['tr']!='Yaralı evcil hayvanlar için':raise ValueError('Pet Healing Station kaynak-anlam düzeltmesi korunmalı: '+a+p)
         if a=='interface/windowconfig/beerefuge.config' and p=='/paneLayout/btnCraft/caption' and r['tr']!='Takas Et':raise ValueError('Arı Barınağı karma eylem etiketi Takas Et olmalı: '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
@@ -588,10 +658,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Görevler (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim Makineleri (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost, Battle, Other ve BYOS görevlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri ve objects/crafting üretim makinelerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
