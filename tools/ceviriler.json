@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.8.0-beta",
+  "translation_version": "0.9.0-dev",
   "note": "v0.8 Delilik: 31 aktif araştırma düğümü ve Delilik sisteminin doğrudan bağlı temel psiyonik/ruh sağlığı/malzeme öğeleri yerelleştirildi; oyun içi LQA bekliyor.",
   "translations": [
     {
@@ -10013,6 +10013,374 @@
       "en": "Replace Me",
       "tr": "Beni Değiştir",
       "section": "Delilik eşya ve makineleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics2.questtemplate",
+      "pointer": "/title",
+      "en": "Homestead II",
+      "tr": "Yerleşim II",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics2.questtemplate",
+      "pointer": "/text",
+      "en": "I've got a tip for you: You can make ^orange;Paper^reset; in a ^orange;Furnace^reset;! I could use say, ^orange;10^reset; pieces. I'm fixin' to write some letters to loved ones.",
+      "tr": "Sana bir tüyo vereyim: ^orange;Kağıdı^reset; ^orange;Fırında^reset; üretebilirsin! Bana şöyle ^orange;10^reset; tane lazım. Sevdiklerime birkaç mektup yazmayı düşünüyorum.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics2.questtemplate",
+      "pointer": "/completionText",
+      "en": "It may not seem like much...but paper will come in handy when yer least expectin' it. Besides, it's great for writin', no matter how pretty a computer can make things look.",
+      "tr": "Çok önemli görünmeyebilir... ama kâğıt hiç beklemediğin anda işine yarar. Hem bilgisayar ne kadar şık gösterirse göstersin, yazı yazmanın tadı başkadır.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics2.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Craft ^orange;10 Paper^reset; at a ^orange;Furnace^reset; and return to ^green;Welchie^reset;.",
+      "tr": "^orange;Fırında^reset; ^orange;10 Kağıt^reset; üret. Sonra ^green;Welchie^reset; ile konuş.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3.questtemplate",
+      "pointer": "/title",
+      "en": "Homestead III (pt 1)",
+      "tr": "Yerleşim III (1. Bölüm)",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3.questtemplate",
+      "pointer": "/text",
+      "en": "Ya ever come across ^orange;Oil^reset;? It's quite rare round these 'ere parts. I hear ye kin get some without much hassle by tossin ^orange;Corn^reset; or ^orange;Bone^reset; in a ^orange;Hand Mill^reset;.",
+      "tr": "Hiç ^orange;Yağ^reset; buldun mu? Buralarda epey nadirdir. Duyduğuma göre ^orange;Mısır^reset; ya da ^orange;Kemik^reset; malzemesini ^orange;El Değirmenine^reset; atarsan pek uğraşmadan elde edebilirsin.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3.questtemplate",
+      "pointer": "/completionText",
+      "en": "Oil kin be quite useful for a number o' things, but I suggest you save that ^orange;Oil^reset; for a very different task. Talk ter me again ta learn more.",
+      "tr": "Yağ pek çok işe yarar ama o ^orange;Yağı^reset; bambaşka bir iş için saklamanı öneririm. Daha fazlasını öğrenmek için benimle tekrar konuş.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Craft some ^green;Oil^reset; and return to ^green;Welchie^reset;.",
+      "tr": "^green;5 Yağ^reset; elde et ve ^green;Welchie^reset; ile konuş.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Gerçek gatherItem koşulu 5 liquidoil; kaynak hedef metni sayıyı belirtmiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3b.questtemplate",
+      "pointer": "/title",
+      "en": "Homestead III (pt 2)",
+      "tr": "Yerleşim III (2. Bölüm)",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3b.questtemplate",
+      "pointer": "/text",
+      "en": "Sometimes, the darkness can prove a horrible hindrance. That's where tha ^orange;Oil^reset; I got ya ter make comes in: You can craft a ^orange;Lantern Stick^reset; to see in the dark at a ^orange;Foraging Table^reset;. ^green;Research^reset; into ^orange;Agriculture^reset; to learn how.",
+      "tr": "Bazen karanlık başına bela olur. İşte sana yaptırdığım ^orange;Yağ^reset; burada işe yarayacak: ^orange;Toplayıcılık Tezgâhında^reset; karanlıkta görmeni sağlayan bir ^orange;Fener Çubuğu^reset; üretebilirsin. Nasıl yapıldığını öğrenmek için ^orange;Tarım^reset; ağacında ilgili araştırmayı aç.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3b.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now you'll be able to slap that on your back and travel without needing to hold a flashlight! Also, I found some ^orange;Plant Fibre^reset; in storage. Why don't you take it?",
+      "tr": "Artık onu sırtına takıp el feneri tutmadan yolculuk edebilirsin! Depoda biraz ^orange;Bitki Lifi^reset; de buldum. Al, senin olsun.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3b.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Craft a ^green;Lantern Stick^reset; at the ^orange;Foraging Table^reset; and return to ^green;Welchie^reset;.",
+      "tr": "^orange;Toplayıcılık Tezgâhında^reset; bir ^green;Fener Çubuğu^reset; üret. Sonra ^green;Welchie^reset; ile konuş.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics4.questtemplate",
+      "pointer": "/title",
+      "en": "Homestead IV",
+      "tr": "Yerleşim IV",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics4.questtemplate",
+      "pointer": "/text",
+      "en": "I'm lookin' to acquire some ^orange;Silver^reset;, but I ain't no good in enclosed spaces. ^green;Rarer ores are more commonly found at depths below the surface^reset;. ^orange;1 Silver Bar^reset; should be plenty. You'll need to ^orange;Research^reset; into ^orange;Geology^reset; to learn how.",
+      "tr": "Biraz ^orange;Gümüş^reset; lazım ama kapalı yerlerde pek iyi değilim. ^green;Nadir cevherler genellikle yüzeyin daha derinlerinde bulunur^reset;. ^orange;1 Gümüş Külçesi^reset; yeter. Nasıl işleyeceğini öğrenmek için ^orange;Jeoloji^reset; ağacında ilgili araştırmayı aç.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics4.questtemplate",
+      "pointer": "/completionText",
+      "en": "I kin finally make ^green;Clementine^reset; the ^orange;symbol of our love^reset; I always promised 'afore her tragic passing back in '72. Take this and my thanks, friend.",
+      "tr": "Sonunda ^green;Clementine^reset; için, '72'deki o trajik vefatından önce söz verdiğim ^orange;sevgimizin simgesini^reset; yapabileceğim. Bunu da al, teşekkürler dostum.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Craft a ^green;Silver Bar^reset; at a ^orange;Furnace^reset; and return to ^green;Welchie^reset;.",
+      "tr": "^orange;Fırında^reset; ^green;1 Gümüş Külçesi^reset; üret. Sonra ^green;Welchie^reset; ile konuş.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics5.questtemplate",
+      "pointer": "/title",
+      "en": "Homestead V",
+      "tr": "Yerleşim V",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics5.questtemplate",
+      "pointer": "/text",
+      "en": "I've heard of some fancy stuff in my day, but I'd most like ta see me a ^orange;Mining Laser^reset; 'afore I die. I heard you kin make one in a ^orange;Tinkering Table^reset;. That's ^orange;Researched^reset; in the ^orange;Engineering^reset; sciences.",
+      "tr": "Hayatımda çok acayip şey duydum ama ölmeden önce en çok bir ^orange;Madencilik Lazeri^reset; görmek isterim. Duyduğuma göre ^orange;İnce İşçilik Tezgâhında^reset; yapılabiliyormuş. Araştırmasını ^orange;Mühendislik^reset; ağacında açabilirsin.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics5.questtemplate",
+      "pointer": "/completionText",
+      "en": "You've made an ol' Novakid happy today. Thanks so much, friend. Take this unusual stone I found as a thanks. It looks valuable.",
+      "tr": "Bugün yaşlı bir Novakid'i mutlu ettin. Çok sağ ol dostum. Teşekkür olarak bulduğum şu tuhaf taşı al. Değerli gibi duruyor.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics5.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Craft a ^green;Mining Laser^reset; at a ^orange;Tinkering Table^reset; and return.",
+      "tr": "^orange;İnce İşçilik Tezgâhında^reset; bir ^green;Madencilik Lazeri^reset; üret ve geri dön.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor1.questtemplate",
+      "pointer": "/title",
+      "en": "The Extractor",
+      "tr": "Çıkarıcı",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor1.questtemplate",
+      "pointer": "/text",
+      "en": "So you now have a ^orange;Hand Mill^reset; or ^orange;Extraction Lab^reset;, but aren't sure what to do with it? It's simple, really. Go place it somewhere, and toss a bunch of ^green;logs^reset; in there. 10 should do. Create 10 ^orange;Methanol^reset; with them.",
+      "tr": "Artık bir ^orange;El Değirmenin^reset; veya ^orange;Çıkarma Laboratuvarın^reset; var ama ne yapacağını bilmiyor musun? Aslında basit. Bir yere yerleştir ve içine bir deste ^green;odun^reset; at. 10 tane yeter. Bunlardan 10 ^orange;Metanol^reset; üret.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor1.questtemplate",
+      "pointer": "/completionText",
+      "en": "That, my friend, is how you make ^orange;Methanol^reset; from scratch. Now let's move on to ^orange;Cobblestone^reset;! ",
+      "tr": "İşte dostum, ^orange;Metanolü^reset; sıfırdan böyle üretirsin. Şimdi ^orange;Parke Taşına^reset; geçelim!",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor1.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the 10 ^orange;Methanol^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "10 ^orange;Metanolü^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor2.questtemplate",
+      "pointer": "/title",
+      "en": "The Extractor II",
+      "tr": "Çıkarıcı II",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor2.questtemplate",
+      "pointer": "/text",
+      "en": "Next, why don't you go and fetch 50 ^green;of nearly any natural tile^reset; and toss it in your extractor. ^orange;Research^reset; should be produced.",
+      "tr": "Şimdi gidip ^green;neredeyse herhangi bir doğal bloktan 50 tane^reset; topla ve çıkarıcına at. Sonuçta ^orange;Araştırma^reset; elde etmelisin.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor2.questtemplate",
+      "pointer": "/completionText",
+      "en": "I think maybe you're starting to see how this works. Depending on the resource you input, the outcome will vary. ^orange;Research^reset; is common, and can be stockpiled as a currency.",
+      "tr": "Sanırım sistemin nasıl çalıştığını anlamaya başladın. İçeri koyduğun kaynağa göre çıktı değişir. ^orange;Araştırma^reset; sık elde edilir ve para birimi gibi biriktirilebilir.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor2.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Gather ^green;Research^reset; from ^orange;Extraction^reset;",
+      "tr": "^orange;Çıkarma^reset; işlemlerinden ^green;5 Araştırma^reset; elde et.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor3.questtemplate",
+      "pointer": "/title",
+      "en": "The Extractor III",
+      "tr": "Çıkarıcı III",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor3.questtemplate",
+      "pointer": "/text",
+      "en": "If you have spare ^orange;Dirt^reset;...and you certainly will...^green;why not extract it^reset;? You'll get something useful for 50 ^orange;Dirt^reset;.",
+      "tr": "Elinde fazladan ^orange;Toprak^reset; varsa... ki kesin vardır... ^green;neden çıkarıcıda işlemeyesin^reset;? ^orange;50 Toprak^reset; karşılığında işe yarar bir şeyler elde edebilirsin.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor3.questtemplate",
+      "pointer": "/completionText",
+      "en": "See? Not so hard. Let's move on, shall we?",
+      "tr": "Gördün mü? O kadar zor değil. Devam edelim mi?",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor3.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Collect ^green;Research^reset;",
+      "tr": "^green;5 Araştırma^reset; elde et.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/title",
+      "en": "The Extractor IV",
+      "tr": "Çıkarıcı IV",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/text",
+      "en": "^orange;Plant Fibre^reset; is plentiful enough that extracting some for a little ^green;tissue culture^reset; won't hurt. Bring me 5.",
+      "tr": "Biraz daha pratik yapalım. Çıkarıcıda farklı malzemeleri işleyerek ^green;Araştırma^reset; elde et. Bana 5 tane getir.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/completionText",
+      "en": "You're doing great. As a thanks, take this. It's rare, but it might come in handy some day.",
+      "tr": "Harika gidiyorsun. Teşekkür olarak bunu al. Nadir bir şey; bir gün işine yarayabilir.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;Tissue Culture^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "5 ^green;Araştırmayı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/title",
+      "en": "The Extractor V",
+      "tr": "Çıkarıcı V",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/text",
+      "en": "^green;Meat^reset; is both delicious and useful. Extract some ^green;meat^reset; and bring me 5 of the results.",
+      "tr": "Son bir kez daha çıkarma işlemi yapalım. 5 ^green;Araştırma^reset; daha elde edip bana getir.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/completionText",
+      "en": "Genetic material comes from many things, not just meat. Remember that if it is alive and full of cells, it just might give you some.",
+      "tr": "Çıkarma işlemlerinde sonuç, kullandığın malzemeye göre değişir. Farklı girdileri denemeyi unutma.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Genetic Material^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "5 ^green;Araştırmayı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor6.questtemplate",
+      "pointer": "/title",
+      "en": "Hydrogen",
+      "tr": "Hidrojen",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor6.questtemplate",
+      "pointer": "/text",
+      "en": "^orange;Water^reset; is never in short supply. If you have upgraded your ^orange;Matter Manipulator^reset; to pick up liquids...^green;extract some^reset;, ^yellow;come to the Science Outpost^reset; and bring me 5 ^orange;Hydrogen^reset; if you don't mind?",
+      "tr": "^orange;Su^reset; bulmak genellikle sorun değildir. ^orange;Madde Manipülatörünü^reset; sıvıları toplayacak şekilde yükselttiysen biraz suyu ^green;çıkarıcıda işle^reset;. Sonra ^yellow;Bilim Karakoluna gel^reset; ve bana 5 ^orange;Hidrojen^reset; getirir misin?",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor6.questtemplate",
+      "pointer": "/completionText",
+      "en": "Great. Thanks so very much. Now I can complete this power cell! Take this as payment for your deeds.",
+      "tr": "Harika, çok teşekkürler. Artık bu güç hücresini tamamlayabilirim! Yardımının karşılığı olarak bunu al.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor6.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;Hydrogen^reset; to the purple Thelusian at the ^orange;Science Outpost^reset;",
+      "tr": "5 ^green;Hidrojeni^reset; ^orange;Bilim Karakolundaki^reset; mor Thelusian'a getir.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/create_silicon.questtemplate",
+      "pointer": "/title",
+      "en": "Silicon Knight",
+      "tr": "Silisyum Şövalyesi",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/create_silicon.questtemplate",
+      "pointer": "/text",
+      "en": "With a ^orange;Hand Mill^reset; you can start cutting your teeth on all sorts of new creations. Try getting at least 50 ^orange;Sand^reset; and extracting it to get some ^orange;Silicon^reset;.",
+      "tr": "Bir ^orange;El Değirmeni^reset; ile türlü yeni üretimlere girişebilirsin. En az 50 ^orange;Kum^reset; topla ve çıkarıcıda işleyerek biraz ^orange;Silisyum^reset; elde et.",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/create_silicon.questtemplate",
+      "pointer": "/completionText",
+      "en": "Encouraging results! Try the same thing with other materials such as wood, dirt, stone...heck, almost anything really. You'll find all sorts of things if you just give it a try!",
+      "tr": "Umut verici sonuçlar! Aynı şeyi odun, toprak, taş gibi başka malzemelerle de dene... hatta aklına gelen hemen her şeyle. Denemeden ne çıkacağını bilemezsin!",
+      "section": "v0.9 Tutorial Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/create_silicon.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;10 silicon^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^green;1 Silisyumu^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak teslim metni 10 Silicon diyor; gerçek gatherItem koşulu 1 ff_silicon."
+      }
     }
   ]
 }
