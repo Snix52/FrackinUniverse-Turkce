@@ -31,12 +31,12 @@ jobs:
 
       - name: Package mod
         run: |
-          rm -f dist/FU_Turkce_v0.12.0_Beta.zip dist/FU_Turkce_v0.12.0_Beta.zip
+          rm -f dist/FU_Turkce_v0.13.0_Beta.zip dist/FU_Turkce_v0.13.0_Beta.zip
           cd build_output
-          zip -r ../dist/FU_Turkce_v0.12.0_Beta.zip FU_Turkce
+          zip -r ../dist/FU_Turkce_v0.13.0_Beta.zip FU_Turkce
 
       - name: Verify ZIP
-        run: unzip -t dist/FU_Turkce_v0.12.0_Beta.zip
+        run: unzip -t dist/FU_Turkce_v0.13.0_Beta.zip
 
       - name: Refresh tracked beta package
         run: |
@@ -46,6 +46,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Package is already current."
           else
-            git commit -m "build: refresh v0.12.0 beta package [skip ci]"
+            git commit -m "build: refresh v0.13.0 beta package [skip ci]"
             git push
           fi

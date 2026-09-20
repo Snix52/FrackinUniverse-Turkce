@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.12.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.13.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1881 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1929 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost İçki görev/hedef + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görev/hedef allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -153,3 +153,21 @@ v0.12 beta QA:
   toplam yerelleştirilmiş görünür birim: 1896 (1881 yapılandırılmış + 15 Lua)
   toplam patch asset: 304
   oyun içi LQA: BEKLİYOR
+
+
+v0.13 beta QA:
+  Bilim Karakolu dükkân görevi: 6/6 canlı runtime bağlantısı
+  görev alanı: 24
+  hedef artefakt: 12 alan / 6 asset
+  dükkân nesnesi: 12 alan / 6 asset
+  v0.13 toplam ekleme: 48 yapılandırılmış alan / 18 yeni patch asset
+  pinned FU yeni alan: 48/48 exact-source PASS
+  kaynak/provenans: 48/48 PASS
+  build allowlist: 48/48 PASS
+  proje toplam yapılandırılmış alan: 1929
+  toplam yerelleştirilmiş görünür birim: 1944 (1929 yapılandırılmış + 15 Lua)
+  toplam patch asset: 322
+  Outpost kalan ham görev dosyası: 13 (Kevin 9 + Khe 4)
+  özel mission/konum adları: Verdant Ruins / Ancient Temple / Evernight Jungle korunuyor
+  oyun içi LQA: BEKLİYOR
+
