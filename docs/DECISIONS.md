@@ -212,3 +212,20 @@
 - Delilik ağacı ve bağlı 18 assetteki **103/103 kaynak değer** pinned FU 6.5.8 commitinden exact doğrulandı.
 - Oyun içi LQA, panel taşması ve Delilik ilerleme zincirinin oyun içi testi hâlâ bekliyor.
 
+## 2026-09-20 - v0.9 Tutorial görev ailesi
+
+- FU `quests/fu_questlines/tutorial` kapsamı envanterlendi: kaynakta 42 questtemplate var.
+- `start_basics1` yalnızca kendi dosyasında geçen, metni `Try making` ile yarıda kesilmiş, başlığı Armament iken koşulu tekrar 5 patates isteyen kırık/bağlantısız bir kaynak. Oyuncuya ulaşan zincire bağlı olmadığı için dağıtıma alınmadı ve build guard ile yeniden eklenmesi engellendi.
+- Daha önce çevrilmiş 16 tutorial görevine ek olarak kalan **25 çalışan tutorial dosyasında 90 oyuncu metni** çevrildi. Böylece bağlı tutorial görevi kapsamı **41/41** oldu.
+- Görev ile envanter adı tutarlılığı için **19 hedef eşya/makine assetinde 41 alan** aynı sürüme bağlandı. v0.9 toplam ekleme: **131 yapılandırılmış alan / 44 hedef asset**.
+- Kaynak `extractor4` Plant Fibre -> Tissue Culture, `extractor5` Meat -> Genetic Material anlatıyor; pinned extraction tariflerinde bu dönüşümler yok ve gerçek quest koşulu her ikisinde de 5 `fuscienceresource`. Türkçe görev metinleri gerçek koşul olan **5 Araştırma** üzerinden yazıldı.
+- `create_silicon` teslim metni 10 Silicon derken gerçek `gatherItem` koşulu 1 `ff_silicon`. Türkçede **1 Silisyum** yazıldı.
+- `create_woodencentrifuge` teslim metni yanlışlıkla Armorworks derken gerçek koşul `woodencentrifuge`. Türkçede **Ahşap Santrifüj** kullanıldı.
+- `create_rockbreaker` içindeki bozuk `^;` kapanışı Türkçede `^reset;` ile düzeltildi.
+- Kaynak hedef metninde adet yazmayan fakat quest koşulunda adet bulunan Yağ, Gümüş Külçesi, Araştırma ve Hidrojen hedeflerinde Türkçe hedef gerçek sayıyı açıkça gösterir.
+- Rock Breaker -> **Kaya Parçalayıcı**, Rock Crusher -> **Kaya Kırıcı** ayrımı LOCKED; iki farklı makine aynı adla çevrilmeyecek.
+- Tutorial hedefleri için Fener Çubuğu, Madencilik Lazeri, Metanol, Hidrojen, Silisyum, İlkel Mızrak, Elek, Ahşap Santrifüj, Kaya Parçalayıcı, Standart/Geliştirilmiş Mech Bacakları, Mech Tableti, Tech Tableti, Tamirci Anahtarı, Depolama Köprüsü ve Tech Konsolu adları envanterle eşlendi.
+- Vanilla Kağıt, Gümüş Külçesi, Yağ ve Tech Konsolu adları bağımsız Starbound kaynak commitinden exact doğrulandı.
+- Tutorial dışındaki bağlı FU görevlerinde 111 dosya hâlâ bekliyor.
+- Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+
