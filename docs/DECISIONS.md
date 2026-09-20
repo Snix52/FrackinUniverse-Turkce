@@ -254,3 +254,16 @@
 - `create_centrifuge` tamamlanma metnindeki generic `advanced centrifuge`, gerçek sonraki envanter adı olan **Gaz Santrifüjü** ile açıklaştırıldı.
 - Silisyum Devre Kartı vanilla asset olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
 - Electronics yeni alanları pinned/vanilla kaynakta **36/36 PASS**; renk, kontrol kodu ve sayı bütünlüğü **PASS**; üretilen patchlerde **36 test + 36 replace PASS**.
+
+### v0.10 Genetics geçişi
+
+- `fu_genetics` quest-listindeki **9/9 görev** yerelleştirildi.
+- Genetics görevleri **32 görünür görev alanı**; doğrudan hedef 9 assette **19 görünür alan** olmak üzere toplam **51 yeni yapılandırılmış alan / 18 yeni patch asset** içeriyor.
+- Mucize Otu Tohumu, Bracken Ağacı Tohumu, Mutavisk Tohumu, Oonforta Tohumu, Klonlama Laboratuvarı, Ignus Biberi Tohumu, Mutavisk Miğferi, Radyasyon Yaprağı ve Thornitox Tohumu LOCKED.
+- Pinned tarifler `designlab1 = Sera`, `designlab2 = Botanik Laboratuvarı`, `designlab3 = Gen Tasarım Laboratuvarı` kademeleriyle çaprazlandı. Kaynak görevlerdeki eski/yanlış istasyon yönlendirmeleri buna göre düzeltildi.
+- `create_miraclegrass`: kaynak gereksiz yere Gen Tasarım Laboratuvarı isterken gerçek tarif `designlab1`; Türkçe görev **Sera** üzerinden düzeltildi.
+- `fuquest_bracken` ve `fuquest_oonforta`: kaynak Sera ile üretim yapılabileceğini ima ediyor, ancak gerçek tarifler `designlab2`; Türkçe görevler **Botanik Laboratuvarı** gereksinimini açıkça söylüyor.
+- `fuquest_mutavisk` ve `create_ignuschili`: belirsiz/gereksiz yüksek laboratuvar yönlendirmeleri gerçek `designlab2` tarifine göre **Botanik Laboratuvarı** olarak açıklaştırıldı.
+- Kaynak metinde adet yazmayan ancak quest koşulu 3 olan Bracken, Mutavisk, Oonforta, Ignus Biberi ve Radyasyon Yaprağı hedeflerinde gerçek adet oyuncuya açıkça gösterildi.
+- `fuquest_cloning` kaynak metni hedefi açık söylemek yerine cihaz kullanımını iki kez tekrar ediyor; Türkçe başlangıç metni doğrudan **Klonlama Laboratuvarı üret** hedefini anlatacak şekilde düzenlendi.
+- Genetics yeni alanları **51/51 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **51 test + 51 replace PASS**.
