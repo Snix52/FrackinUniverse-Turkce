@@ -635,3 +635,17 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Grav-Rain | Tehlike / hava etkisi | Durum | Yerçekimi Yağmuru | Grav-Yağmur | LOCKED | |
 | Single Sword / Dual Swords | Zırh set bonusu | UI | Tek Kılıç / Çift Kılıçlar | Yalnız Kılıç / İkili Kılıç | LOCKED | |
 | Capturenaut / Gishinanki / Decker / Legionii / Millenion / Morphite / Rifter / Valkyrie / Warframe | Zırh modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel parça adları ayrıca çevrilir |
+
+## v0.30 aktif araştırma ekipmanı terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Minor Vulnerability | Silah durum etkisi | Durum | Hafif Savunmasızlık | Küçük Güvenlik Açığı | LOCKED | Major Vulnerability → Büyük Savunmasızlık kararıyla uyumlu |
+| Alt-Fire | Silah tooltip işlevi | UI | Alternatif Atış | Alt Ateş | LOCKED | Cümle içinde küçük harfle kullanılabilir |
+| Spawns Minions | Set bonusu / ekipman işlevi | UI | Minyon Çağırır | Minyon Üretir | LOCKED | Oyuncu eylemi yerine ekipman etkisini anlatır |
+| Heating EPP | Soğuk ortam EPP'si | Nesne | Isıtma EPP'si | Sıcak EPP | LOCKED | Kaynak işlevine göre adlandırılır |
+| Cooling EPP | Sıcak ortam EPP'si | Nesne | Soğutma EPP'si | Soğuk EPP | LOCKED | Kaynak işlevine göre adlandırılır |
+| E. Block | Enerji paketi kısaltması | UI | Enerji Yenilenme Gecikmesi | Enerji Kilitlenmesi | LOCKED | Energy Regen Block kararıyla aynı mekanik |
+| Electrified | Silah durum etkisi | Durum | Elektriklenme | Elektrikli | LOCKED | Fiil bağlamında “Elektriklenmeye yol açar” |
+| Frost Burn | Silah durum etkisi | Durum | Ayaz Yanığı | Don Yanması | LOCKED | Soğuk kaynaklı durum etkisi |
+| Oceanite / Thanatite / Nhydri | Elduu malzeme ve model adları | Özel ad | Kaynaktaki yazım korunur | Okyanusit / Tanatit / Nhidri | LOCKED | İşlevsel silah sınıfı ayrıca çevrilir |
