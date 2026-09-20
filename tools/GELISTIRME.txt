@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.8.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.9.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1379 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1510 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + tutorial görev/hedef + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -80,4 +80,19 @@ v0.8 beta QA:
   aktif düğüm kapsamı: 31/31 PASS
   patch eşleşmesi: 103 test + 103 replace PASS
   runtime-unused default yardım çifti: dağıtımdan çıkarıldı
+  oyun içi LQA: BEKLİYOR
+
+
+v0.9 beta QA:
+  tutorial kaynak dosyası: 42
+  kırık/bağlantısız start_basics1: 1 (dağıtım dışı + build guard)
+  bağlı tutorial görevi: 41/41
+  v0.9 yeni görev: 25 dosya / 90 alan
+  v0.9 hedef eşya/makine: 19 asset / 41 alan
+  v0.9 toplam ekleme: 131 alan / 44 hedef asset
+  pinned FU yeni alan: 123/123 exact-source
+  harici vanilla alan: 8/8 exact-source
+  proje toplam yapılandırılmış alan: 1510
+  toplam yerelleştirilmiş birim: 1525 (1510 yapılandırılmış + 15 Lua)
+  tutorial dışı kalan bağlı görev dosyası: 111
   oyun içi LQA: BEKLİYOR
