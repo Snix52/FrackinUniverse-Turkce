@@ -21,6 +21,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Science görevlerinde doğrudan hedef gösterilen temel eşya, malzeme ve makinelerin envanter adları
 - Outpost Starbooze / İçki görev zincirinin tamamı (12/12 görev dosyası) ve doğrudan bağlı temel makineler/malzemeler
 - Outpost Arıcılık zincirindeki erişilebilir görevlerin tamamı (13/13; `13mites` bağlantısız legacy olduğu için dağıtım dışı)
+- Bilim Karakolu dükkânlarından doğrudan açılan 6/6 Outpost görevi ve ilgili görev artefaktları
 - Arıcılık görevlerinde yönlendirilen temel arı türleri, çerçeveler, Arılık, mikroskop, bal işleme makinesi ve vanilla hedef eşyaların envanter adları
 - Bilim Karakolundaki altı canlı dükkân görevi (6/6), hedef artefaktları ve dükkân nesneleri
 - Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
@@ -140,6 +141,17 @@ Outpost kökündeki altı `scienceoutpost_*Shop` görevi, ilgili dükkân nesnel
 Görev hedefi olan **Greenfinger Madalyası, Uğurlu Para, Kristal Kupa, Uzaylı Yayın Düğümü, X'i Kalıntısı ve Kadim Kumanda** envanter adlarıyla aynı pakette eşlendi. Altı dükkân nesnesinin görünen ad ve açıklamaları da Türkçeleştirildi. `Verdant Ruins`, `Ancient Temple` ve `Evernight Jungle` ise ilgili mission/harita zincirleri bütünüyle yerelleştirilene kadar özel yer adı olarak korunuyor.
 
 v0.13 eklemesi **48 yapılandırılmış alan / 18 yeni patch asset**tir. Yeni alanların **48/48'i pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Gölge dükkânının iki metnindeki `<...>` işaretleri teknik tag değil, karakterin konuşma biçimidir; dış açı parantezleri korunarak alan-bazlı QA istisnası belgelendi. Oyun içi görev işaretçisi, font ve dükkân etkileşim LQA'sı ayrıca yapılmalıdır.
+
+
+## v0.13 Outpost Bilim Karakolu Dükkânları
+
+Bilim Karakolundaki altı dükkân görevi, ilgili dükkân nesnelerinin `offeredQuests` / `turnInQuests` bağlantıları üzerinden runtime'da doğrulandı ve **6/6 canlı görev** olarak yerelleştirildi.
+
+Görev metinlerindeki hedeflerin envanterle birebir eşleşmesi için **Greenfinger Madalyası, Uğurlu Para, Kristal Kupa, Uzaylı Yayın Düğümü, X'i Kalıntısı ve Kadim Kumanda** aynı pakette çevrildi. Altı dükkân nesnesinin görünür ad/açıklamaları da yerelleştirildi.
+
+v0.13 eklemesi **48 yapılandırılmış alan / 18 yeni patch asset**tir. Yeni alanların tamamı pinned FU 6.5.8 kaynağıyla doğrulandı: **48/48 PASS**. `Verdant Ruins`, `Ancient Temple` ve `Evernight Jungle` gibi özel görev/konum adları, ilgili mission zincirleri bütünüyle yerelleştirilene kadar özgün bırakıldı.
+
+Bu paketle Outpost tarafında geriye **13 ham görev dosyası** kaldı: Kevin 9 + Khe 4. Oyun içi görev işaretçisi, dükkân etkileşimi, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
 
 ## Yol haritası
 
