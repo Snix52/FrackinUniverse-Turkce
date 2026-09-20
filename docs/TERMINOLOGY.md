@@ -267,6 +267,14 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Lorewalker's Shop | Bilim Karakolu Kirhos dükkânı | Özel ad/Nesne | Lorewalker'ın Dükkânı | Lorewalker's Shop | LOCKED | Lorewalker unvanı korunur |
 | Silenes' Minerals | Bilim Karakolu Radien dükkânı | Özel ad/Nesne | Silene'nin Mineralleri | Silenes' Minerals | LOCKED | Silene kişi adı olarak korunur |
 
+
+| Vanilla / vanilla | Oyuncuya dönük ana oyun karşılaştırması | Meta terim | ana oyun | vanilla | LOCKED | İngilizce bilmeden anlaşılabilir olmalı |
+| Eldritch | Genel sıfat / kozmik-korku tonu | Sıfat | tekinsiz | eldritch | LOCKED | Özel ad olmadığı sürece doğal Türkçe kullanılır |
+| Silt | Jeolojik malzeme | Kaynak | Mil | Silt | LOCKED | Türkçe jeoloji kullanımındaki karşılık |
+| Loose Silt | Vanilla blok/eşya adı | Nesne | Gevşek Mil | Loose Silt | LOCKED | Sifter tutorial hedefiyle envanter adı eşlendi |
+| Gravel | Vanilla blok/eşya adı | Nesne | Çakıl | Gravel | LOCKED | Sifter tutorial hedefiyle envanter adı eşlendi |
+
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
@@ -293,6 +301,8 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Primitive Spear | Avcılık tutorialı | Silah | İlkel Mızrak | Primitive Spear | LOCKED | |
 | Rock Breaker | Güç / taş işleme makinesi | Nesne | Kaya Parçalayıcı | Kaya Kırıcı | LOCKED | Rock Crusher = Kaya Kırıcı; iki makine karıştırılmaz |
 | Wooden Centrifuge | Tutorial / santrifüj | Nesne | Ahşap Santrifüj | Wooden Centrifuge | LOCKED | |
+| Iron Centrifuge | Tutorial / santrifüj yükseltmesi | Nesne | Demir Santrifüj | Iron Centrifuge | LOCKED | Ahşap Santrifüjün elektrikli yükseltmesi |
+| Powered Centrifuge | Demir Santrifüj alt başlığı | UI | Elektrikli Santrifüj | Powered Centrifuge | LOCKED | |
 | Sifter | Tutorial / işleme makinesi | Nesne | Elek | Sifter | LOCKED | Powder Sifter = Toz Eleği |
 | Stock Mech Legs | Mech parçası | Nesne | Standart Mech Bacakları | Stock Mech Legs | LOCKED | |
 | Improved Mech Legs | Mech parçası | Nesne | Geliştirilmiş Mech Bacakları | Improved Mech Legs | LOCKED | |

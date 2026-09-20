@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.13.2-beta",
-  "note": "v0.13.2 geriye dönük terminoloji/UI QA: LOCKED Mech yazımı 16 alanda büyük-küçük harf açısından tekilleştirildi; Arı Barınağı aynı panelde hem arı teslimi hem rehber alımı yaptığı için eylem düğmesi nötr ve doğru 'Takas Et' olarak düzeltildi. Teknik kapsam/provenans değişmedi; oyun içi LQA bekliyor.",
+  "translation_version": "0.13.3-beta",
+  "note": "v0.13.3 üçüncü geriye dönük QA: 3 runtime listTemplate dummy alanı çıkarıldı; vanilla/eldritch İngilizce sızıntıları temizlendi; Sifter tutorialındaki Loose Silt/Gravel hedefleri Gevşek Mil/Çakıl olarak envanterle eşlendi; Wooden Centrifuge yönlendirmesindeki Iron Centrifuge eksikliği Demir Santrifüj envanter nesnesinin 4 görünür alanı eklenerek kapatıldı. Toplam 1934 structured + 15 Lua / 325 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -815,7 +815,11 @@
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Chemlab^reset; to me at the ^orange;Science Outpost^reset;",
       "tr": "^green;Simya Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "Görevler"
+      "section": "Görevler",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Koşul itemName=chemlab ister; bu nesnenin oyuncuya görünen 1. kademe adı Alchemy Table / Simya Tezgâhıdır."
+      }
     },
     {
       "asset": "quests/fu_questlines/tutorial/vinj/create_electronics.questtemplate",
@@ -843,7 +847,11 @@
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
       "tr": "^green;Elektronik Merkezini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "Görevler"
+      "section": "Görevler",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak turnInDescription yanlışlıkla Armorworks der; gerçek gatherItem koşulu itemName=powerstation, oyuncu adı Elektronik Merkezi."
+      }
     },
     {
       "asset": "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate",
@@ -875,7 +883,11 @@
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
       "tr": "^green;Serayı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "Görevler"
+      "section": "Görevler",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak turnInDescription yanlışlıkla Armorworks der; gerçek gatherItem koşulu itemName=designlab, oyuncu adı Sera."
+      }
     },
     {
       "asset": "quests/fu_questlines/tutorial/vinj/create_tinkertable.questtemplate",
@@ -903,7 +915,11 @@
       "pointer": "/scriptConfig/turnInDescription",
       "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
       "tr": "^green;İnce İşçilik Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
-      "section": "Görevler"
+      "section": "Görevler",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak turnInDescription yanlışlıkla Armorworks der; gerçek gatherItem koşulu itemName=nanofabricator, oyuncu adı İnce İşçilik Tezgâhı."
+      }
     },
     {
       "asset": "quests/fu_questlines/tutorial/vinj/fu_scienceoutpost.questtemplate",
@@ -2275,13 +2291,6 @@
       "pointer": "/paneLayout/filter/hint",
       "en": "Search",
       "tr": "Ara",
-      "section": "Tarım makineleri"
-    },
-    {
-      "asset": "interface/windowconfig/beerefuge.config",
-      "pointer": "/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value",
-      "en": "Replace Me",
-      "tr": "Beni Değiştir",
       "section": "Tarım makineleri"
     },
     {
@@ -4488,13 +4497,6 @@
       "pointer": "/paneLayout/filter/hint",
       "en": "Search",
       "tr": "Ara",
-      "section": "Mühendislik makineleri ve kaynakları"
-    },
-    {
-      "asset": "interface/windowconfig/fu_shipcraftingtable.config",
-      "pointer": "/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value",
-      "en": "Replace Me",
-      "tr": "Beni Değiştir",
       "section": "Mühendislik makineleri ve kaynakları"
     },
     {
@@ -6891,7 +6893,7 @@
       "asset": "zb/researchTree/fu_craftsmanship.config",
       "pointer": "/strings/research/workbenchelder/1",
       "en": "^orange;Tier 6^reset;\n\nYou've learned to create eldritch-themed furniture, though exactly how remains a mystery to you. It just...came to you.",
-      "tr": "^orange;Kademe 6^reset;\n\nEldritch temalı mobilyalar yapmayı öğrendin; gerçi nasıl yaptığın sana bile hâlâ gizemli. Bilgi sanki... bir anda zihnine geldi.",
+      "tr": "^orange;Kademe 6^reset;\n\nTekinsiz temalı mobilyalar yapmayı öğrendin; gerçi nasıl yaptığın sana bile hâlâ gizemli. Bilgi sanki... bir anda zihnine geldi.",
       "section": "Zanaatkârlık"
     },
     {
@@ -8962,7 +8964,7 @@
       "asset": "zb/researchTree/fu_warcraft.config",
       "pointer": "/strings/research/aetheriumgear/1",
       "en": "^orange;Tier 7^reset;\n\nThough you only recently discovered what you've dubbed 'Aetherium' alloy, you've already set about weaponizing it in the creation of the literal best weapons and armor known to man, Floran, and everything in between. You'd have to make a pact with an eldritch god to do better than this.",
-      "tr": "^orange;Kademe 7^reset;\n\n'Aetherium' adını verdiğin alaşımı daha yeni keşfetmiş olmana rağmen şimdiden onu insan, Floran ve aradaki herkesin bildiği en iyi silah ve zırhları üretmek için kullanmaya başladın. Bundan daha iyisini yapmak için eldritch bir tanrıyla anlaşma yapman gerekir.",
+      "tr": "^orange;Kademe 7^reset;\n\n'Aetherium' adını verdiğin alaşımı daha yeni keşfetmiş olmana rağmen şimdiden onu insan, Floran ve aradaki herkesin bildiği en iyi silah ve zırhları üretmek için kullanmaya başladın. Bundan daha iyisini yapmak için tekinsiz bir tanrıyla anlaşma yapman gerekir.",
       "section": "Zırh ve Silahlar"
     },
     {
@@ -8990,7 +8992,7 @@
       "asset": "zb/researchTree/fu_warcraft.config",
       "pointer": "/strings/research/epps1/1",
       "en": "^orange;Tier 2^reset;\n\nYou've learned make better EPPs which improve on the basic breathing model or do other useful things like resisting elements or improving your combat capability.\n\n^yellow;Reminder^reset;: EPPs in Frackin' Universe are much different than vanilla! There's no one EPP that is perfect for all situations, and the kind of EPP you choose should be tailored to the planet you want to explore.",
-      "tr": "^orange;Kademe 2^reset;\n\nTemel solunum modelini geliştiren ya da elementlere direnç sağlamak ve savaş yeteneklerini artırmak gibi başka yararlar sunan daha iyi EPP'ler üretmeyi öğrendin.\n\n^yellow;Hatırlatma^reset;: Frackin' Universe'deki EPP'ler vanilla oyundakilerden oldukça farklıdır! Her duruma kusursuz uyan tek bir EPP yoktur; seçeceğin EPP, keşfetmek istediğin gezegene göre belirlenmelidir.",
+      "tr": "^orange;Kademe 2^reset;\n\nTemel solunum modelini geliştiren ya da elementlere direnç sağlamak ve savaş yeteneklerini artırmak gibi başka yararlar sunan daha iyi EPP'ler üretmeyi öğrendin.\n\n^yellow;Hatırlatma^reset;: Frackin' Universe'deki EPP'ler ana oyundakilerden oldukça farklıdır! Her duruma kusursuz uyan tek bir EPP yoktur; seçeceğin EPP, keşfetmek istediğin gezegene göre belirlenmelidir.",
       "section": "Zırh ve Silahlar"
     },
     {
@@ -10008,13 +10010,6 @@
       "section": "Delilik eşya ve makineleri"
     },
     {
-      "asset": "interface/windowconfig/psionicbench.config",
-      "pointer": "/paneLayout/scrollArea/children/itemList/schema/listTemplate/itemName/value",
-      "en": "Replace Me",
-      "tr": "Beni Değiştir",
-      "section": "Delilik eşya ve makineleri"
-    },
-    {
       "asset": "quests/fu_questlines/tutorial/start_basics2.questtemplate",
       "pointer": "/title",
       "en": "Homestead II",
@@ -10492,8 +10487,12 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_woodencentrifuge.questtemplate",
       "pointer": "/completionText",
       "en": "While not incredibly effective, a ^orange;Wooden Centrifuge^reset; is able to process basic liquids and grind up honeycombs to get at the goodies inside. As soon as possible, upgrade to an ^orange;Iron Centrifuge^reset; for far more utility.",
-      "tr": "Çok etkili olmasa da ^orange;Ahşap Santrifüj^reset; temel sıvıları işleyebilir ve bal peteklerini öğüterek içindekileri çıkarabilir. Mümkün olan en kısa sürede daha kullanışlı bir ^orange;Santrifüje^reset; yükselt.",
-      "section": "v0.9 Tutorial Görevleri"
+      "tr": "Çok etkili olmasa da ^orange;Ahşap Santrifüj^reset; temel sıvıları işleyebilir ve bal peteklerini öğüterek içindekileri çıkarabilir. Mümkün olan en kısa sürede bunu çok daha kullanışlı bir ^orange;Demir Santrifüje^reset; yükselt.",
+      "section": "v0.9 Tutorial Görevleri",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Kaynak completionText gerçek ironcentrifuge nesnesini 'Iron Centrifuge' adıyla yönlendiriyor; envanter nesnesi doğrulandı ve Demir Santrifüj olarak eşlendi."
+      }
     },
     {
       "asset": "quests/fu_questlines/tutorial/vinj/create_woodencentrifuge.questtemplate",
@@ -10516,7 +10515,7 @@
       "asset": "quests/fu_questlines/tutorial/vinj/create_woodensifter.questtemplate",
       "pointer": "/text",
       "en": "If you have stacks of loose grit like ^orange;silt^reset;, ^orange;Gravel^reset; or ^green;other powdery materials^reset; then just toss them in a ^orange;Sifter^reset; and you can pull resources right out of them! Build a ^orange;Sifter^reset; when you can do so.",
-      "tr": "Elinde ^orange;silt^reset;, ^orange;Çakıl^reset; veya başka ^green;tozlu ve gevşek malzemeler^reset; yığıldıysa bunları bir ^orange;Eleğe^reset; atarak içlerindeki kaynakları çıkarabilirsin! Fırsat bulduğunda bir ^orange;Elek^reset; üret.",
+      "tr": "Elinde ^orange;Gevşek Mil^reset;, ^orange;Çakıl^reset; veya başka ^green;tozlu ve gevşek malzemeler^reset; yığıldıysa bunları bir ^orange;Eleğe^reset; atarak içlerindeki kaynakları çıkarabilirsin! Fırsat bulduğunda bir ^orange;Elek^reset; üret.",
       "section": "v0.9 Tutorial Görevleri"
     },
     {
@@ -14224,6 +14223,87 @@
       "en": "^orange;...^reset;",
       "tr": "^orange;...^reset;",
       "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/materials/sand.matitem",
+      "pointer": "/description",
+      "en": "It's Silt. It's very silty.\n^green;Extractable^reset;, ^orange;Siftable^reset;, ^red;Smeltable^reset;.",
+      "tr": "Bu mil. Hem de epey ince taneli.\n^green;Çıkarılabilir^reset;, ^orange;Elenebilir^reset;, ^red;Eritilebilir^reset;.",
+      "section": "v0.13.3 Retro QA Hedefleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/materials/sand.matitem.patch",
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/sand.matitem",
+      "pointer": "/shortdescription",
+      "en": "Loose Silt",
+      "tr": "Gevşek Mil",
+      "section": "v0.13.3 Retro QA Hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/gravel.matitem",
+      "pointer": "/description",
+      "en": "Coarse gravel.",
+      "tr": "İri taneli çakıl.",
+      "section": "v0.13.3 Retro QA Hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/gravel.matitem",
+      "pointer": "/shortdescription",
+      "en": "Gravel",
+      "tr": "Çakıl",
+      "section": "v0.13.3 Retro QA Hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
+      "pointer": "/description",
+      "en": "This powered upgrade of the wooden centrifuge more efficiently performs extraction involving liquids. ^cyan;Requires ^orange;4W ^cyan;power.^reset;",
+      "tr": "Ahşap Santrifüjün elektrikle çalışan yükseltilmiş sürümüdür; sıvı içeren maddeleri daha verimli işler. ^cyan;^orange;4W ^cyan;güç gerektirir.^reset;",
+      "section": "v0.13.3 Retro QA Hedefleri"
+    },
+    {
+      "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Iron Centrifuge^reset;",
+      "tr": "^cyan;Demir Santrifüj^reset;",
+      "section": "v0.13.3 Retro QA Hedefleri"
+    },
+    {
+      "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
+      "pointer": "/subtitle",
+      "en": "Powered Centrifuge",
+      "tr": "Elektrikli Santrifüj",
+      "section": "v0.13.3 Retro QA Hedefleri"
+    },
+    {
+      "asset": "objects/bees/ironcentrifuge/ironcentrifuge.object",
+      "pointer": "/category",
+      "en": "^orange;Centrifuge^reset;",
+      "tr": "^orange;Santrifüj^reset;",
+      "section": "v0.13.3 Retro QA Hedefleri"
     }
   ]
 }
