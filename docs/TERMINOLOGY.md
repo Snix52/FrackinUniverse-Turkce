@@ -267,6 +267,14 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Lorewalker's Shop | Bilim Karakolu Kirhos dükkânı | Özel ad/Nesne | Lorewalker'ın Dükkânı | Lorewalker's Shop | LOCKED | Lorewalker unvanı korunur |
 | Silenes' Minerals | Bilim Karakolu Radien dükkânı | Özel ad/Nesne | Silene'nin Mineralleri | Silenes' Minerals | LOCKED | Silene kişi adı olarak korunur |
 
+
+| Vanilla / vanilla | Oyuncuya dönük ana oyun karşılaştırması | Meta terim | ana oyun | vanilla | LOCKED | İngilizce bilmeden anlaşılabilir olmalı |
+| Eldritch | Genel sıfat / kozmik-korku tonu | Sıfat | tekinsiz | eldritch | LOCKED | Özel ad olmadığı sürece doğal Türkçe kullanılır |
+| Silt | Jeolojik malzeme | Kaynak | Mil | Silt | LOCKED | Türkçe jeoloji kullanımındaki karşılık |
+| Loose Silt | Vanilla blok/eşya adı | Nesne | Gevşek Mil | Loose Silt | LOCKED | Sifter tutorial hedefiyle envanter adı eşlendi |
+| Gravel | Vanilla blok/eşya adı | Nesne | Çakıl | Gravel | LOCKED | Sifter tutorial hedefiyle envanter adı eşlendi |
+
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
