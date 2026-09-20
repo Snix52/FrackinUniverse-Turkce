@@ -356,3 +356,4 @@
 - `sand.matitem` final açıklaması FU'nun `items/materials/sand.matitem.patch` katmanından; kısa adı vanilla `sand.matitem` tabanından exact doğrulandı. `gravel.matitem` açıklama ve kısa adı vanilla kaynaktan exact doğrulandı.
 - Eski `create_alchemy`, `create_electronics`, `create_greenhouse`, `create_tinkertable` teslim metinlerinde daha önce doğru yapılmış kaynak/ID düzeltmelerine eksik QA provenans notları eklendi.
 - Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
+- Tutorial `create_woodencentrifuge` tamamlanma metni gerçek bir sonraki yükseltme olan `ironcentrifuge` nesnesini **Iron Centrifuge** adıyla yönlendiriyor. Eski Türkçe yalnız **Santrifüj** diyerek envanter adını kaybediyordu; **Iron Centrifuge -> Demir Santrifüj** LOCKED edildi ve nesnenin görünür envanter alanları aynı pakette çevrildi.
