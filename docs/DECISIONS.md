@@ -520,3 +520,13 @@
 - **Beastmaster → Canavar Ustası, Skill Quiver → Beceri Sadakı, Peerless Quiver → Eşsiz Sadak, Kingslayer → Kral Katili, Sentry → Nöbetçi, Champion → Şampiyon, Sunwalker → Güneş Gezgini, Replicant → Replikant** kararları kilitlendi. `Capturenaut`, `Gishinanki`, `Decker`, `Legionii`, `Millenion`, `Morphite`, `Rifter`, `Valkyrie` ve `Warframe` model/özel ad olarak korundu.
 - Tooltip terimleri **Havada Hasar, Germe Hızı, Atış Başına Enerji, Katana Ustalığı, Yerçekimi Yağmuru, Ağır Giysi, Tek Kılıç** ve **Çift Kılıçlar** biçiminde kilitlendi.
 - Yeni kapsam **122 yapılandırılmış alan / 61 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **5190 structured + 15 Lua / 1673 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.30 aktif araştırma ekipmanı kapanışı
+
+- Aktif `fu_warcraft` ağacı tam olarak yeniden denetlendi. Kapsama alınmak için araştırma düğümü açılımı, gerçek `.recipe` çıktısı ve görünür bir ekipman asseti birlikte zorunlu tutuldu; yalnız dosya varlığı veya `/spawnitem` erişimi yeterli sayılmadı.
+- Daha önce yerelleştirilmemiş **413 tarif destekli asset** bulundu: 6 erken kalkan, 126 erken yan dal ekipmanı, 85 Kirhos/Lunari/Elduu/Skath/Vel'uuish silahı, 28 EPP/sırt ekipmanı, 130 Kademe 6 ve 38 Kademe 7 ekipmanı. Sınıf dağılımı **288 silah/kalkan + 125 zırh/EPP** olarak doğrulandı.
+- Her assette yalnız `/shortdescription` ve `/description` çevrildi. Teknik `itemName`, tarifler, stat hesapları, efekt listeleri, yetenekler, mermiler, kategori ve script alanları değiştirilmedi.
+- Sayıların değeri ve sırası, renk kodları, tooltip simgeleri, satır sonları ve sekmeler kaynakla birebir kilitlendi. 826 yeni alanın tamamı pinned FU 6.5.8 kaynağına karşı exact test/replace korumasına alındı.
+- `EPP`, `Aether`, `Stynger`, `Magnorb`, `Xithricite`, `Isogen`, `Pyreite`, `Solarium`, `Densinium`, `Oceanite`, `Thanatite` ve `Nhydri` özel yazımları korundu. **Minor Vulnerability → Hafif Savunmasızlık, Alt-Fire → Alternatif Atış, Spawns Minions → Minyon Çağırır, Electrified → Elektriklenme, Frost Burn → Ayaz Yanığı** kararları kilitlendi.
+- EPP enerji paketlerindeki `E. Block`, mevcut `Energy Regen Block` kararıyla aynı mekanik kabul edilerek **Enerji Yenilenme Gecikmesi** olarak çevrildi. `Heating EPP` ve `Cooling EPP` işlev yönünü açıkça korumak için **Isıtma EPP'si** ve **Soğutma EPP'si** oldu.
+- Yeni kapsam **826 yapılandırılmış alan / 413 patch asset**tir. Proje toplamı **6016 structured + 15 Lua / 2086 patch asset** oldu. Böylece aktif Zırh ve Silahlar araştırma ağacındaki tarif destekli ekipman kapsamı kapandı; oyun içi tooltip, font ve bağlam LQA'sı ayrıca bekliyor.
