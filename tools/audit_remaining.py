@@ -365,10 +365,22 @@ def audit_lua(source: Path, raw_catalog: Path) -> dict[str, Any]:
             mode = next((candidate_mode for marker, candidate_mode in LUA_DISPLAY_CALLS if marker in lowered), None)
             if not mode:
                 continue
-            literals = [bytes(match.group(2), "utf-8").decode("unicode_escape") for match in LUA_LITERAL.finditer(stripped)]
-            if not literals:
+            literal_matches = list(LUA_LITERAL.finditer(stripped))
+            if not literal_matches:
                 continue
-            value = literals[-1] if mode == "last" else literals[0]
+            selected = literal_matches[-1] if mode == "last" else literal_matches[0]
+            if "widget.settext" in lowered:
+                call_start = lowered.find("widget.settext")
+                comma = stripped.find(",", call_start)
+                if comma < 0:
+                    continue
+                # Tek literal ilk argümansa widget kimliğidir, gösterilen metin değildir.
+                if len(literal_matches) == 1 and selected.start() < comma:
+                    continue
+                between = lowered[comma:selected.start()]
+                if "getparameter" in between or "assetjson" in between:
+                    continue
+            value = bytes(selected.group(2), "utf-8").decode("unicode_escape")
             clean = re.sub(r"\^[^;\s]*;", "", value).strip()
             if not clean or not ALPHA_RE.search(clean) or looks_like_resource(clean):
                 continue
@@ -438,10 +450,16 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
     def grouped(rows: dict[tuple[str, str], Candidate]) -> dict[str, dict[str, int]]:
         fields = Counter(row.category for row in rows.values())
         assets: defaultdict[str, set[str]] = defaultdict(set)
+        values: defaultdict[str, set[str]] = defaultdict(set)
         for row in rows.values():
             assets[row.category].add(row.asset)
+            values[row.category].add(row.value)
         return {
-            name: {"assets": len(assets[name]), "fields": fields[name]}
+            name: {
+                "assets": len(assets[name]),
+                "fields": fields[name],
+                "unique_source_strings": len(values[name]),
+            }
             for name in sorted(fields)
         }
 
@@ -498,6 +516,9 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             "confirmed_assets": len({row.asset for row in remaining_confirmed.values()}),
             "review_fields": len(remaining_review),
             "review_assets": len({row.asset for row in remaining_review.values()}),
+            "confirmed_unique_source_strings": len({row.value for row in remaining_confirmed.values()}),
+            "review_unique_source_strings": len({row.value for row in remaining_review.values()}),
+            "confirmed_source_characters": sum(len(row.value) for row in remaining_confirmed.values()),
             "confirmed_by_category": grouped(remaining_confirmed),
             "review_by_category": grouped(remaining_review),
             "confirmed_by_source_root": grouped_roots(remaining_confirmed),
@@ -536,11 +557,14 @@ def markdown_report(result: dict[str, Any]) -> str:
         "",
         "## Kalan doğrulanmış kapsam",
         "",
-        "| Kategori | Asset | Alan |",
-        "|---|---:|---:|",
+        "| Kategori | Asset | Alan | Benzersiz kaynak metin |",
+        "|---|---:|---:|---:|",
     ]
     for category, counts in remaining["confirmed_by_category"].items():
-        lines.append(f"| {category} | {counts['assets']:,} | {counts['fields']:,} |")
+        lines.append(
+            f"| {category} | {counts['assets']:,} | {counts['fields']:,} | "
+            f"{counts['unique_source_strings']:,} |"
+        )
     lines.extend([
         "",
         "## Denetim sağlığı",
