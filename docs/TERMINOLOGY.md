@@ -207,6 +207,9 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Rad-Leaf / Rad Leaf | FU ürünü | Nesne | Radyasyon Yaprağı | Rad Leaf, Rad-Leaf | LOCKED | Aşırı radyasyon bağışıklığı veren ürün |
 | Thornitox Seed | FU bitki tohumu | Nesne | Thornitox Tohumu | Thornitox Seed | LOCKED | Thornitox özel ad olarak korunur |
 
+| Acid Shield | EPP eklentisi | Nesne | Asit Kalkanı | Acid Shield | LOCKED | Sülfürik asit bağışıklığı veren eklenti |
+| Black Glass | Vanilla/FU malzeme | Kaynak | Siyah Cam | Black Glass | LOCKED | Vanilla envanter adıyla eşleştirildi |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
