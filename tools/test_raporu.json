@@ -1,5 +1,5 @@
 {
-  "translation_version": "0.13.0-beta",
+  "translation_version": "0.13.1-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
@@ -154,7 +154,13 @@
     "Corrected Arc Smelter reference: Ark Eritici -> Ark Ergitici.",
     "Corrected scientific/locked terminology: organik silikon -> organik silisyum.",
     "Rewrote three tutorial objectives to name the research tree and research item explicitly.",
-    "Clarified Dark Cavern energy-source and Agriculture research radio guidance."
+    "Clarified Dark Cavern energy-source and Agriculture research radio guidance.",
+    "v0.13.1: 6 malformed 'Bilim Karakolundaki bana getir' tutorial turn-in strings corrected to 'Bilim Karakolunda bana getir'.",
+    "v0.13.1: 6 Science Outpost shop turn-in strings restructured to one clear destination: 'Bilim Karakolundaki X Dükkânına'.",
+    "v0.13.1: Bee terminology leak 'kraliçe arı' normalized to locked 'Ana Arı'.",
+    "v0.13.1: Bee Refuge action verified from recipes (bee input -> money output); button localized from 'Satın Al' to player-facing 'Sat'.",
+    "v0.13.1: Penumbrite typo, Glitch emotion labels, monocled NPC phrasing and selected v0.13 unnatural Turkish polished.",
+    "v0.13.1: Added regression guards for known malformed Turkish patterns and Queen Bee terminology."
   ],
   "v05_scope": [
     "Localized all 77 active player-visible fields in zb/researchTree/fu_power.config.",
@@ -165,7 +171,7 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.13 project total: 1929 structured fields. v0.13 adds 48 pinned FU fields across 18 new assets for 6/6 live Science Outpost shop quests, their target artifacts and shop objects; Lua remains 15 source-guarded strings. v0.11 Starbooze and v0.12 Beekeeping scopes are preserved.",
+  "full_source_validation": "v0.13 project total: 1929 structured fields. v0.13 adds 48 pinned FU fields across 18 new assets for 6/6 live Science Outpost shop quests, their target artifacts and shop objects; Lua remains 15 source-guarded strings. v0.11 Starbooze and v0.12 Beekeeping scopes are preserved. v0.13.1 retro QA changes Turkish target text only; source EN/provenance pointers unchanged.",
   "polish_pass": "PASS for v0.11 static Outpost/Starbooze scope: 12/12 quest files, quest-condition corrections and directly referenced inventory targets. In-game quest-flow/font/layout LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
@@ -228,5 +234,19 @@
     "in_game_lqa": "BEKLİYOR",
     "decorative_angle_bracket_exceptions": 2,
     "control_exception_note": "scienceoutpost_shadowShop /text ve /completionText: <...> teknik tag değil, karakter konuşma biçimi; dış parantezler korunur."
+  },
+  "v0131_scope": {
+    "reviewed_structured_fields": 1929,
+    "reviewed_lua_ui_strings": 15,
+    "corrected_structured_fields": 26,
+    "structured_field_count_after_review": 1929,
+    "localized_display_units_after_review": 1944,
+    "patch_assets_after_review": 322,
+    "duplicate_pointers": 0,
+    "empty_translations": 0,
+    "color_control_number_integrity": "PASS",
+    "locked_bee_terminology": "PASS",
+    "known_bad_turkish_patterns": "0 remaining",
+    "in_game_lqa": "BEKLİYOR"
   }
 }
