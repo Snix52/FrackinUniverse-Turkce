@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.12.0 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.13.0 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -22,6 +22,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Outpost Starbooze / İçki görev zincirinin tamamı (12/12 görev dosyası) ve doğrudan bağlı temel makineler/malzemeler
 - Outpost Arıcılık zincirindeki erişilebilir görevlerin tamamı (13/13; `13mites` bağlantısız legacy olduğu için dağıtım dışı)
 - Arıcılık görevlerinde yönlendirilen temel arı türleri, çerçeveler, Arılık, mikroskop, bal işleme makinesi ve vanilla hedef eşyaların envanter adları
+- Bilim Karakolundaki altı canlı dükkân görevi (6/6), hedef artefaktları ve dükkân nesneleri
 - Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
@@ -34,7 +35,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **1.881 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.896 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **1.929 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.944 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -60,7 +61,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.12.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.13.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -69,7 +70,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **1.881 alan / 304 patch asset**tir. v0.11 Outpost İçki kapsamındaki **89 pinned FU alanı** korunuyor; v0.12 Outpost Arıcılık eklemesindeki **78 yeni alanın 72'si pinned FU 6.5.8 kaynağından**, **6'sı bağımsız vanilla kaynağından** exact doğrulandı. Önceki v0.10 Science provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **1.929 alan / 322 patch asset**tir. v0.13 Bilim Karakolu dükkân paketindeki **48/48 yeni alan pinned FU 6.5.8 kaynağından exact doğrulandı**. v0.11 Outpost İçki ve v0.12 Arıcılık provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -102,7 +103,7 @@ v0.9'da daha önce çevrilmemiş **25 tutorial görev dosyasında 90 oyuncu metn
 
 Kaynakta oyuncuyu yanlış yönlendiren eski tutorial metinleri gerçek quest koşullarına göre düzeltildi: Extractor IV/V'nin eski Tissue Culture / Genetic Material yönlendirmeleri, `create_silicon` içindeki 10 yerine gerçek 1 Silisyum koşulu, Wooden Centrifuge teslim hedefindeki yanlış Armorworks adı ve Rock Breaker metnindeki bozuk renk kapanışı.
 
-Science cephesi v0.10 ile kapandı. Outpost'ta v0.11 İçki klasöründeki 12 dosya ve v0.12 Arıcılık klasöründeki 14 ham dosya işlendi; Arıcılıktaki `13mites` runtime'da bağlantısız olduğu için dağıtım dışı bırakıldı. Klasör-bazlı yol haritasında sırada **49 ham görev dosyası** bulunuyor: Outpost 19, Battle 13, Other 13, BYOS 3 ve Exploration 1. Her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
+Science cephesi v0.10 ile kapandı. Outpost'ta v0.11 İçki zinciri, v0.12 Arıcılık zinciri ve v0.13 Bilim Karakolu dükkân görevleri işlendi; Arıcılıktaki `13mites` runtime'da bağlantısız olduğu için dağıtım dışı bırakıldı. Klasör-bazlı yol haritasında sırada **43 ham görev dosyası** bulunuyor: Outpost 13, Battle 13, Other 13, BYOS 3 ve Exploration 1. Her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
 
 ## v0.10 Science Görevleri
 
@@ -132,6 +133,14 @@ Görevlerde kullanılan Arılık, Büyük Arılık, Temel Çerçeve, Temel Mikro
 
 Kaynak `12breeding` metnindeki **Giant Apiary** gerçek bir envanter nesnesi değildir; aynı zincirdeki gerçek `normalalveary` nesnesinin adı **Large Apiary** olduğundan Türkçede **Büyük Arılık** kullanıldı. v0.12 eklemesi **78 yapılandırılmış alan / 31 yeni patch asset**tir: **72/72 pinned FU + 6/6 vanilla = 78/78 kaynak/provenans PASS**. Oyun içi LQA ayrıca yapılmalıdır.
 
+## v0.13 Bilim Karakolu Dükkân Görevleri
+
+Outpost kökündeki altı `scienceoutpost_*Shop` görevi, ilgili dükkân nesnelerinin `offeredQuests` ve `turnInQuests` alanlarıyla runtime'da doğrudan doğrulandı. Quest List'te yer almamalarına rağmen oyuncuya erişilebilir oldukları için **6/6 görev** yerelleştirildi.
+
+Görev hedefi olan **Greenfinger Madalyası, Uğurlu Para, Kristal Kupa, Uzaylı Yayın Düğümü, X'i Kalıntısı ve Kadim Kumanda** envanter adlarıyla aynı pakette eşlendi. Altı dükkân nesnesinin görünen ad ve açıklamaları da Türkçeleştirildi. `Verdant Ruins`, `Ancient Temple` ve `Evernight Jungle` ise ilgili mission/harita zincirleri bütünüyle yerelleştirilene kadar özel yer adı olarak korunuyor.
+
+v0.13 eklemesi **48 yapılandırılmış alan / 18 yeni patch asset**tir. Yeni alanların **48/48'i pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Gölge dükkânının iki metnindeki `<...>` işaretleri teknik tag değil, karakterin konuşma biçimidir; dış açı parantezleri korunarak alan-bazlı QA istisnası belgelendi. Oyun içi görev işaretçisi, font ve dükkân etkileşim LQA'sı ayrıca yapılmalıdır.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -150,7 +159,7 @@ Kaynak `12breeding` metnindeki **Giant Apiary** gerçek bir envanter nesnesi de�
 - [x] Delilik araştırma ağacı
 - [x] Tutorial görev ailesi
 - [x] Science görev zincirleri
-- [ ] Outpost görev zincirleri (İçki 12/12 + Arıcılık 13/13 tamamlandı; Kevin, Khe ve Bilim Karakolu dükkân görevleri bekliyor)
+- [ ] Outpost görev zincirleri (İçki 12/12 + Arıcılık 13/13 + Bilim Karakolu dükkânları 6/6 tamamlandı; Kevin 9 + Khe 4 bekliyor)
 - [ ] Battle görev zincirleri
 - [ ] Other görev zincirleri
 - [ ] BYOS kalan görevleri
