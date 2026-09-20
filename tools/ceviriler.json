@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.20.0-beta",
-  "note": "v0.20 görev runtime taraması: daha önce çevrilmemiş 97 questtemplate adayı ve 1 hatalı uzantılı test dosyası denetlendi. Oyuncuya gerçekten ulaşan 29 görevde 112 görünür alan yerelleştirildi; 68 erişilemez, kapalı, geliştiriciye özel veya görünmez takip görevi ile 1 bozuk test dosyası dışarıda bırakıldı. Toplam 3371 structured + 15 Lua, 764 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.21.0-beta",
+  "note": "v0.21 erken oyun silahları: aktif Zırh ve Silahlar araştırma ağacındaki bonegear, irongear, telebriumgear ve tungstengear düğümlerinin açtığı 124 silah doğrulandı. Önceden kapsanan 3 silah korundu; kalan 121 erişilebilir silahta 242 görünür alan yerelleştirildi. Toplam 3613 structured + 15 Lua, 885 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -24515,6 +24515,1700 @@
       "en": "Explore the Verdant Ruins.",
       "tr": "Verdant Ruins'i keşfet.",
       "section": "v0.20 Aktif özel görevler"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/bonespur.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Spur",
+      "tr": "Kemik Mahmuz",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/bonespur.activeitem",
+      "pointer": "/description",
+      "en": "A cheery little maiming device. Keep out of children.\n^cyan;Floran^reset;",
+      "tr": "Neşeli görünen küçük bir sakatlama aleti. Çocuklardan uzak tut.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/fufrisbee.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Stack o' Frisbees",
+      "tr": "Frizbi Yığını",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/fufrisbee.activeitem",
+      "pointer": "/description",
+      "en": "A seemingly infinite supply of frisbees.",
+      "tr": "Tükenmek bilmeyen bir frizbi kaynağı gibi.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/ironboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Boomerang",
+      "tr": "Demir Bumerang",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/ironboomerang.activeitem",
+      "pointer": "/description",
+      "en": "Iron. Whoosh.",
+      "tr": "Demirden. Vınnn.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/telebriumboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Boomerang",
+      "tr": "Telebrium Bumerang",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/telebriumboomerang.activeitem",
+      "pointer": "/description",
+      "en": "Contained lunar energy. Fun for tossing.",
+      "tr": "İçine ay enerjisi hapsedilmiş. Fırlatması eğlenceli.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/tungstenboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Boomerang",
+      "tr": "Tungsten Bumerang",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/tungstenboomerang.activeitem",
+      "pointer": "/description",
+      "en": "This will help with friend making.",
+      "tr": "Arkadaş edinmene yardımcı olur.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/warspinner.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Warspinner",
+      "tr": "Savaş Çarkı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/warspinner.activeitem",
+      "pointer": "/description",
+      "en": "Sharpened edges make this boomerang cut foes deeply.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Keskin kenarları bu bumerangın düşmanları derinden yaralamasını sağlar.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/bonebow/bonebow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Bow",
+      "tr": "Kemik Yay",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/bonebow/bonebow.activeitem",
+      "pointer": "/description",
+      "en": "A primitive bone bow, almost too stiff to draw.\n^cyan;Floran^reset;",
+      "tr": "Neredeyse gerilemeyecek kadar sert, ilkel bir kemik yay.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/ironcrossbow/ironcrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Crossbow",
+      "tr": "Demir Arbalet",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/ironcrossbow/ironcrossbow.activeitem",
+      "pointer": "/description",
+      "en": "A dangerous iron crossbow.",
+      "tr": "Tehlikeli bir demir arbalet.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/ironstynger/ironstynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Stynger",
+      "tr": "Demir Stynger",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/ironstynger/ironstynger.activeitem",
+      "pointer": "/description",
+      "en": "Pump action for turning enemies into pin cushions.",
+      "tr": "Pompalı mekanizmasıyla düşmanları iğne yastığına çevirir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/telebriumbow/telebriumbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Bow",
+      "tr": "Telebrium Yayı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/telebriumbow/telebriumbow.activeitem",
+      "pointer": "/description",
+      "en": "Poison-tipped arrows promise pain.",
+      "tr": "Zehir uçlu oklar acı vadediyor.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/telebriumcrossbow/telebriumcrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Crossbow",
+      "tr": "Telebrium Arbalet",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/telebriumcrossbow/telebriumcrossbow.activeitem",
+      "pointer": "/description",
+      "en": "High-impact poison bolts.",
+      "tr": "Yüksek darbeli zehirli oklar atar.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/telebriumstynger/telebriumstynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Stynger",
+      "tr": "Telebrium Stynger",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/telebriumstynger/telebriumstynger.activeitem",
+      "pointer": "/description",
+      "en": "High firerate poison bolts.",
+      "tr": "Zehirli okları yüksek atış hızıyla fırlatır.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/tungstencrossbow/tungstencrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Crossbow",
+      "tr": "Tungsten Arbalet",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/tungstencrossbow/tungstencrossbow.activeitem",
+      "pointer": "/description",
+      "en": "A heavy tungsten crossbow.",
+      "tr": "Ağır bir tungsten arbalet.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/tungstenstynger/tungstenstynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Stynger",
+      "tr": "Tungsten Stynger",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/bow/tungstenstynger/tungstenstynger.activeitem",
+      "pointer": "/description",
+      "en": "Pump action for turning enemies into pin cushions.",
+      "tr": "Pompalı mekanizmasıyla düşmanları iğne yastığına çevirir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/chakram/goldchakram.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Golden Chakram",
+      "tr": "Altın Çakram",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/chakram/goldchakram.activeitem",
+      "pointer": "/description",
+      "en": "Expensive. Sharpened. Fun.",
+      "tr": "Pahalı. Keskin. Eğlenceli.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/chakram/telebriumchakram.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Chakram",
+      "tr": "Telebrium Çakram",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/chakram/telebriumchakram.activeitem",
+      "pointer": "/description",
+      "en": "^yellow;Bounces off walls^reset;\n^yellow;Counts as 'energy' for set bonuses^reset;",
+      "tr": "^yellow;Duvarlardan seker^reset;\n^yellow;Set bonusları için 'enerji' sayılır^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/boneclaws.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Claw",
+      "tr": "Kemik Pençe",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/boneclaws.activeitem",
+      "pointer": "/description",
+      "en": "Kinda strange choice of weapon... but hey, it's sharp.\n^cyan;Floran^reset;",
+      "tr": "Bir silah için biraz tuhaf... ama neyse, keskin sonuçta.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/hellclaw.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Hellion Claw",
+      "tr": "Hellion Pençesi",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/hellclaw.activeitem",
+      "pointer": "/description",
+      "en": "Flaming claws? Yes please. Just... don't burn your hands.\n^cyan;Inflicts Burning^reset;",
+      "tr": "Alevli pençeler mi? Elbette. Yalnız... ellerini yakma.\n^cyan;Yanma etkisi uygular^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/stabfists.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Fists",
+      "tr": "Demir Yumruklar",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/stabfists.activeitem",
+      "pointer": "/description",
+      "en": "Strap these blades to your hands. Fun ensues.",
+      "tr": "Bu bıçakları ellerine bağla. Eğlence başlasın.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/telebriumfist.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Cestus",
+      "tr": "Telebrium Cestus",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/fist/telebriumfist.activeitem",
+      "pointer": "/description",
+      "en": "Refined for light and deadly punches.",
+      "tr": "Hafif ve ölümcül yumruklar için incelikle işlenmiş.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/fuboneaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Axe",
+      "tr": "Kemik Balta",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/fuboneaxe.activeitem",
+      "pointer": "/description",
+      "en": "Great for those lost in the wilds.\n^cyan;Floran^reset;",
+      "tr": "Yabanıl doğada yolunu kaybedenler için harikadır.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/fucultaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Cruel Axe",
+      "tr": "Zalim Balta",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/fucultaxe.activeitem",
+      "pointer": "/description",
+      "en": "Sturdy iron. Deadly edge.",
+      "tr": "Sağlam demir. Ölümcül ağız.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/telebriumaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Hatchet",
+      "tr": "Telebrium El Baltası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/telebriumaxe.activeitem",
+      "pointer": "/description",
+      "en": "Honed from pure telebrium.",
+      "tr": "Saf Telebriumdan bilenmiş.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/telebriumbroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Broadsword",
+      "tr": "Telebrium Büyük Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/telebriumbroadsword.activeitem",
+      "pointer": "/description",
+      "en": "Sharp and moony.",
+      "tr": "Keskin ve ay ışığıyla dolu.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/tungstenbroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Broadsword",
+      "tr": "Tungsten Büyük Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/tungstenbroadsword.activeitem",
+      "pointer": "/description",
+      "en": "A large, heavy tungsten blade.",
+      "tr": "Büyük ve ağır bir tungsten kılıç.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/feneroxdagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fenerox Knife",
+      "tr": "Fenerox Bıçağı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/feneroxdagger.activeitem",
+      "pointer": "/description",
+      "en": "Strange shape, but actually quite useful.\n^cyan;Hunting Weapon^reset;",
+      "tr": "Tuhaf biçimli ama aslında oldukça kullanışlı.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/fubonepickaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Curved Bone Blade",
+      "tr": "Kavisli Kemik Bıçak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/fubonepickaxe.activeitem",
+      "pointer": "/description",
+      "en": "Primitive weaponry.",
+      "tr": "İlkel bir silah.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/silverseablade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Silver Sea Blade",
+      "tr": "Gümüş Deniz Kılıcı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/silverseablade.activeitem",
+      "pointer": "/description",
+      "en": "Able to damage all elements equally.",
+      "tr": "Tüm elementlere eşit hasar verebilir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/telebriumdagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Knife",
+      "tr": "Telebrium Bıçağı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/telebriumdagger.activeitem",
+      "pointer": "/description",
+      "en": "Double-pronged for twice the fun.",
+      "tr": "İki uçlu; iki kat eğlence.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailiron.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Striker",
+      "tr": "Demir Ezici",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailiron.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;",
+      "tr": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailtelebrium.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Striker",
+      "tr": "Telebrium Ezici",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailtelebrium.activeitem",
+      "pointer": "/description",
+      "en": "Laced with telebrium. Pretty.\n^cyan;Breaks blocks^reset;\n^yellow;Inflicts Poisoned^reset;",
+      "tr": "Telebriumla bezenmiş. Pek hoş.\n^cyan;Blokları kırar^reset;\n^yellow;Zehirlenmeye yol açar^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailtungsten.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Striker",
+      "tr": "Tungsten Ezici",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailtungsten.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;",
+      "tr": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/irongreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Greataxe",
+      "tr": "Demir Büyük Balta",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/irongreataxe.activeitem",
+      "pointer": "/description",
+      "en": "A somewhat crude iron greataxe.",
+      "tr": "Biraz kaba işlenmiş demirden büyük bir balta.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/telebriumgreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Greataxe",
+      "tr": "Telebrium Büyük Balta",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/telebriumgreataxe.activeitem",
+      "pointer": "/description",
+      "en": "Surprisingly light and agile.",
+      "tr": "Şaşırtıcı derecede hafif ve çevik.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/tungstengreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Greataxe",
+      "tr": "Tungsten Büyük Balta",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/tungstengreataxe.activeitem",
+      "pointer": "/description",
+      "en": "Quite heavy, but also quite sharp.",
+      "tr": "Oldukça ağır ama bir o kadar keskin.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fishboneheadbasher.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fishbone Basher",
+      "tr": "Balık Kemiği Ezicisi",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fishboneheadbasher.activeitem",
+      "pointer": "/description",
+      "en": "Fishbone, sea-steel and tears.",
+      "tr": "Balık kemiği, deniz çeliği ve gözyaşı.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fubonehammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Cudgel",
+      "tr": "Kemik Tokmak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fubonehammer.activeitem",
+      "pointer": "/description",
+      "en": "Primitive murder in the palm of your hand.\n^cyan;Floran^reset;",
+      "tr": "Avucuna sığan ilkel bir ölüm makinesi.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/telebriumhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Hammer",
+      "tr": "Telebrium Çekiç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/telebriumhammer.activeitem",
+      "pointer": "/description",
+      "en": "Infused with moon-laced hate.",
+      "tr": "Ay enerjisiyle yoğrulmuş nefret taşır.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/ironkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Katana",
+      "tr": "Demir Katana",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/ironkatana.activeitem",
+      "pointer": "/description",
+      "en": "Well crafted, but heavy.\n^yellow;3 hit combo^reset;",
+      "tr": "İyi işlenmiş ama ağır.\n^yellow;3 vuruşluk kombo^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/telebriumkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Katana",
+      "tr": "Telebrium Katana",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/telebriumkatana.activeitem",
+      "pointer": "/description",
+      "en": "Super light and agile.\n^yellow;4 hit combo^reset;",
+      "tr": "Son derece hafif ve çevik.\n^yellow;4 vuruşluk kombo^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/tungstenkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Katana",
+      "tr": "Tungsten Katana",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/tungstenkatana.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, but sharp as heck.\n^yellow;4 hit combo^reset;",
+      "tr": "Ağır ama fena keskin.\n^yellow;4 vuruşluk kombo^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/fubonesword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Longsword",
+      "tr": "Kemik Uzun Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/fubonesword.activeitem",
+      "pointer": "/description",
+      "en": "Hellishly creepy. Devilishly stylish.\n^cyan;Floran^reset;",
+      "tr": "Ürkütücü derecede korkunç, şeytani derecede şık.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/fucellsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Cell Blade",
+      "tr": "Hücre Kılıcı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/fucellsword.activeitem",
+      "pointer": "/description",
+      "en": "A bizarre amalgamation of gene and metal.",
+      "tr": "Gen ve metalin tuhaf bir birleşimi.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/ironlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Longsword",
+      "tr": "Demir Uzun Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/ironlongsword.activeitem",
+      "pointer": "/description",
+      "en": "A heavy iron longsword.",
+      "tr": "Ağır, demir bir uzun kılıç.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/silverlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Silver Longsword",
+      "tr": "Gümüş Uzun Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/silverlongsword.activeitem",
+      "pointer": "/description",
+      "en": "Silver is capable of harming even non-corporeal beasts.",
+      "tr": "Gümüş, bedensiz yaratıklara bile zarar verebilir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/telebriumlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Longsword",
+      "tr": "Telebrium Uzun Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/telebriumlongsword.activeitem",
+      "pointer": "/description",
+      "en": "Pure honed Telebrium. Ribbed for her pleasure.",
+      "tr": "Saf ve bilenmiş Telebrium. Onun zevki için tırtıklı.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/tungstenlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Longsword",
+      "tr": "Tungsten Uzun Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/tungstenlongsword.activeitem",
+      "pointer": "/description",
+      "en": "A large, heavy tungsten blade.",
+      "tr": "Büyük ve ağır bir tungsten kılıç.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/bonemace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Mace",
+      "tr": "Kemik Gürz",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/bonemace.activeitem",
+      "pointer": "/description",
+      "en": "Simple, but effective. Design by Sacre.\n^cyan;Floran^reset;",
+      "tr": "Basit ama etkili. Sacre tasarımı.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/fu_wrenchweapon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Wrench",
+      "tr": "İngiliz Anahtarı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/fu_wrenchweapon.activeitem",
+      "pointer": "/description",
+      "en": "Delivers a hefty whack, perfect for beating disobedient machinery into order.",
+      "tr": "Ağır bir darbe indirir; söz dinlemeyen makineleri hizaya getirmek için birebirdir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/ironmace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Mace",
+      "tr": "Demir Gürz",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/ironmace.activeitem",
+      "pointer": "/description",
+      "en": "Well crafted, but heavy.",
+      "tr": "İyi işlenmiş ama ağır.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/telebriummace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Mace",
+      "tr": "Telebrium Gürz",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/telebriummace.activeitem",
+      "pointer": "/description",
+      "en": "Heavy as air.",
+      "tr": "Hava kadar hafif.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/tungstenmace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Mace",
+      "tr": "Tungsten Gürz",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/tungstenmace.activeitem",
+      "pointer": "/description",
+      "en": "Super-useful death dealer.",
+      "tr": "Son derece kullanışlı bir ölüm dağıtıcı.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/copperquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Copper Quarterstaff",
+      "tr": "Bakır Dövüş Asası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/copperquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "This quarterstaff is perfect for enemies just out of reach.",
+      "tr": "Menzilin hemen dışındaki düşmanlara ulaşmak için kusursuz bir dövüş asası.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/ironquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Quarterstaff",
+      "tr": "Demir Dövüş Asası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/ironquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "This quarterstaff is perfect for enemies just out of reach.",
+      "tr": "Menzilin hemen dışındaki düşmanlara ulaşmak için kusursuz bir dövüş asası.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/silverquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Silver Quarterstaff",
+      "tr": "Gümüş Dövüş Asası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/silverquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "Damage any elemental defense type.",
+      "tr": "Her tür element savunmasına karşı etkilidir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/telebriumquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Quarterstaff",
+      "tr": "Telebrium Dövüş Asası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/telebriumquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "Light as a penny, dangerous as...dangerous things.",
+      "tr": "Bozuk para kadar hafif, tehlikeli şeyler kadar... tehlikeli.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/tungstenquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Quarterstaff",
+      "tr": "Tungsten Dövüş Asası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/tungstenquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "This quarterstaff is perfect for enemies just out of reach.",
+      "tr": "Menzilin hemen dışındaki düşmanlara ulaşmak için kusursuz bir dövüş asası.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/goldrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gold Rapier",
+      "tr": "Altın Meç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/goldrapier.activeitem",
+      "pointer": "/description",
+      "en": "Flash em with flashy gold!",
+      "tr": "Gösterişli altınınla gözlerini kamaştır!",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/ironrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Rapier",
+      "tr": "Demir Meç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/ironrapier.activeitem",
+      "pointer": "/description",
+      "en": "It's a rapier. Made of iron.",
+      "tr": "Demirden yapılmış bir meç.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/silverrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Silver Rapier",
+      "tr": "Gümüş Meç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/silverrapier.activeitem",
+      "pointer": "/description",
+      "en": "Pierces through any elemental defenses.",
+      "tr": "Her tür element savunmasını deler.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/telebriumrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Rapier",
+      "tr": "Telebrium Meç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/telebriumrapier.activeitem",
+      "pointer": "/description",
+      "en": "Stab faster than a ninja.",
+      "tr": "Bir ninjadan hızlı saplanır.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/tungstenrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Rapier",
+      "tr": "Tungsten Meç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/tungstenrapier.activeitem",
+      "pointer": "/description",
+      "en": "Reliable, sturdy and stabby.",
+      "tr": "Güvenilir, sağlam ve delici.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/fubonescythe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Scythe",
+      "tr": "Kemik Tırpan",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/fubonescythe.activeitem",
+      "pointer": "/description",
+      "en": "A jagged and cruel edge. Not friendly, but bad-assed.\n^cyan;Floran^reset;",
+      "tr": "Tırtıklı ve acımasız bir ağız. Pek dost canlısı değil ama fena havalı.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/goldscythe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Golden Scythe",
+      "tr": "Altın Tırpan",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/goldscythe.activeitem",
+      "pointer": "/description",
+      "en": "Polished to shiny perfection.\n^cyan;Poisoned Edge^reset;",
+      "tr": "Parlak bir kusursuzluğa ulaşana dek cilalanmış.\n^cyan;Zehirli ağız^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/ironscythe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Scythe",
+      "tr": "Demir Tırpan",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/ironscythe.activeitem",
+      "pointer": "/description",
+      "en": "Good ol' sharp and deadly iron!",
+      "tr": "Eski usul, keskin ve ölümcül demir!",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/telebriumscythe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Scythe",
+      "tr": "Telebrium Tırpan",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/telebriumscythe.activeitem",
+      "pointer": "/description",
+      "en": "Nearly magically light, yet sharp as a razor.",
+      "tr": "Neredeyse sihirli ölçüde hafif, yine de jilet kadar keskin.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/coreshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Core Shortspear",
+      "tr": "Çekirdek Kısa Mızrağı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/coreshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Searingly fun for everyone!\n^cyan;Hunting weapon^reset;",
+      "tr": "Herkes için yakıcı bir eğlence!\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/ironshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Shortspear",
+      "tr": "Demir Kısa Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/ironshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Doesn't feel so short to enemies.\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanlara hiç de kısa gelmez.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/telebriumshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Shortspear",
+      "tr": "Telebrium Kısa Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/telebriumshortspear.activeitem",
+      "pointer": "/description",
+      "en": "So light, they won't even realize you killed them.\n^cyan;Hunting weapon^reset;",
+      "tr": "Öyle hafif ki öldüklerini bile fark etmezler.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/tungstenshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Shortspear",
+      "tr": "Tungsten Kısa Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/tungstenshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Doesn't feel so short to enemies.\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanlara hiç de kısa gelmez.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/boneblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Sword",
+      "tr": "Kemik Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/boneblade.activeitem",
+      "pointer": "/description",
+      "en": "Roughly-hewn. Causes slight bleeding.\n^cyan;Floran^reset;",
+      "tr": "Kabaca yontulmuş. Hafif kanamaya yol açar.\n^cyan;Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/goldenseascion.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gold Sea Scion",
+      "tr": "Altın Deniz Varisi",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/goldenseascion.activeitem",
+      "pointer": "/description",
+      "en": "A classy and deadly-looking weapon.\n^green;Inflicts Poisoned^reset;",
+      "tr": "Şık ve ölümcül görünen bir silah.\n^green;Zehirlenmeye yol açar^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/telebriumshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Sword",
+      "tr": "Telebrium Kılıcı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/telebriumshortsword.activeitem",
+      "pointer": "/description",
+      "en": "Endowed with energies of the moon.",
+      "tr": "Ayın enerjileriyle güçlendirilmiş.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/bonespear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Spear",
+      "tr": "Kemik Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/bonespear.activeitem",
+      "pointer": "/description",
+      "en": "Primitive hunting weapon.\n^cyan;Hunting weapon, Floran^reset;",
+      "tr": "İlkel bir av silahı.\n^cyan;Av silahı, Floran^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/lavaspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Core Lance",
+      "tr": "Çekirdek Kargısı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/lavaspear.activeitem",
+      "pointer": "/description",
+      "en": "Searing heat, and puncture-fresh lethality.\n^orange;Inflicts Burning^reset;\n^cyan;Hunting weapon^reset;",
+      "tr": "Kavurucu ısı, saplandığı anda ölüm getirir.\n^orange;Yanma etkisi uygular^reset;\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/telebriumspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Spear",
+      "tr": "Telebrium Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/telebriumspear.activeitem",
+      "pointer": "/description",
+      "en": "Sparkling with moon-endowed power.\n^cyan;Hunting weapon^reset;",
+      "tr": "Ayın bahşettiği güçle parıldar.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironlmg.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron LMG",
+      "tr": "Demir Hafif Makineli Tüfek",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironlmg.activeitem",
+      "pointer": "/description",
+      "en": "Dangerous, but inaccurate.",
+      "tr": "Tehlikeli ama isabetsiz.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironmachinepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Machine Pistol",
+      "tr": "Demir Makineli Tabanca",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironmachinepistol.activeitem",
+      "pointer": "/description",
+      "en": "A large handgun that packs a kick.",
+      "tr": "Güçlü geri tepmeye sahip büyük bir tabanca.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Shotgun",
+      "tr": "Demir Pompalı Tüfek",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Fires a spread that's lethal at close range.",
+      "tr": "Yakın mesafede ölümcül saçmalar ateşler.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironsniperrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Sniper Rifle",
+      "tr": "Demir Keskin Nişancı Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/ironsniperrifle.activeitem",
+      "pointer": "/description",
+      "en": "Powerfully strong to cover long distances.",
+      "tr": "Uzak mesafelerde son derece güçlüdür.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/tungstenassaultrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Assault Rifle",
+      "tr": "Tungsten Taarruz Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/tungstenassaultrifle.activeitem",
+      "pointer": "/description",
+      "en": "A fully-automatic tungsten-cased rifle.",
+      "tr": "Tungsten gövdeli, tam otomatik bir tüfek.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/tungstenmachinepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Machine Pistol",
+      "tr": "Tungsten Makineli Tabanca",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/tungstenmachinepistol.activeitem",
+      "pointer": "/description",
+      "en": "A large handgun that packs a kick.",
+      "tr": "Güçlü geri tepmeye sahip büyük bir tabanca.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/tungstensniperrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Sniper Rifle",
+      "tr": "Tungsten Keskin Nişancı Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/novakid/tungstensniperrifle.activeitem",
+      "pointer": "/description",
+      "en": "Powerfully strong to cover long distances.",
+      "tr": "Uzak mesafelerde son derece güçlüdür.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbmoonstone/magnorbmoonstone.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Orbs",
+      "tr": "Telebrium Küreleri",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbmoonstone/magnorbmoonstone.activeitem",
+      "pointer": "/description",
+      "en": "Blast foes with these energy-infused pellucid orbs. One handed. ^cyan;Counts as 'energy' weapon^reset;",
+      "tr": "Enerjiyle doldurulmuş bu saydam kürelerle düşmanlarını patlat. Tek elle kullanılır. ^cyan;Set bonusları için 'enerji' silahı sayılır^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/ironaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Axe",
+      "tr": "Demir Balta",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/ironaxe.activeitem",
+      "pointer": "/description",
+      "en": "A roughly-made iron axe.",
+      "tr": "Kabaca yapılmış demir bir balta.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/irondagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Dagger",
+      "tr": "Demir Hançer",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/irondagger.activeitem",
+      "pointer": "/description",
+      "en": "A crudely-made iron dagger.",
+      "tr": "Kaba işlenmiş demir bir hançer.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/ironhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Hammer",
+      "tr": "Demir Çekiç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/ironhammer.activeitem",
+      "pointer": "/description",
+      "en": "A somewhat-crude iron hammer.",
+      "tr": "Biraz kaba işlenmiş demir bir çekiç.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/ironspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Spear",
+      "tr": "Demir Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/ironspear.activeitem",
+      "pointer": "/description",
+      "en": "A shoddy iron spear.\n^cyan;Hunting weapon^reset;",
+      "tr": "Kalitesiz bir demir mızrak.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/tungstendagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Dagger",
+      "tr": "Tungsten Hançer",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/tungstendagger.activeitem",
+      "pointer": "/description",
+      "en": "A hefty tungsten dagger.",
+      "tr": "İri ve ağır bir tungsten hançer.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/tungstenshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Shortsword",
+      "tr": "Tungsten Kısa Kılıç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/tungstenshortsword.activeitem",
+      "pointer": "/description",
+      "en": "This shortsword is quite heavy.",
+      "tr": "Oldukça ağır bir kısa kılıç.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/tungstenspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Spear",
+      "tr": "Tungsten Mızrak",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/tungstenspear.activeitem",
+      "pointer": "/description",
+      "en": "This tungsten spear is quite heavy.\n^cyan;Hunting weapon^reset;",
+      "tr": "Bu tungsten mızrak oldukça ağırdır.\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/aegisaltpistol3.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protectorate Pistol",
+      "tr": "Protectorate Tabancası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/aegisaltpistol3.activeitem",
+      "pointer": "/description",
+      "en": "A basic Protectorate sidearm. Reliable and compact.",
+      "tr": "Temel bir Protectorate yan silahı. Güvenilir ve kompakt.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/crappy/crappyartillery.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Missile Strike",
+      "tr": "Füze Saldırısı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/crappy/crappyartillery.activeitem",
+      "pointer": "/description",
+      "en": "Call in a minor missile assault from above.",
+      "tr": "Yukarıdan küçük çaplı bir füze saldırısı çağırır.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/burster.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Blast Buddy",
+      "tr": "Patlama Dostu",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/burster.activeitem",
+      "pointer": "/description",
+      "en": "A basic but dangerous weapon.\n^green;Explosive^reset;",
+      "tr": "Basit ama tehlikeli bir silah.\n^green;Patlayıcı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/bushmaster.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bushmaster",
+      "tr": "Bushmaster",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/bushmaster.activeitem",
+      "pointer": "/description",
+      "en": "A sturdy, reliable grenade launcher.\n^green;Explosive^reset;",
+      "tr": "Sağlam ve güvenilir bir el bombası fırlatıcı.\n^green;Patlayıcı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/corerifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Core Rifle",
+      "tr": "Çekirdek Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/corerifle.activeitem",
+      "pointer": "/description",
+      "en": "A primitive ^cyan;Energy^reset; blaster.\n^red;Prone to overheating^reset;\n^cyan;Upgrade to Empower^reset;",
+      "tr": "İlkel bir ^cyan;Enerji^reset; silahı.\n^red;Çabuk aşırı ısınır^reset;\n^cyan;Güçlendirmek için yükselt^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/ff_bubblegun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bubblegun",
+      "tr": "Baloncuk Tabancası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/ff_bubblegun.activeitem",
+      "pointer": "/description",
+      "en": "It looks like a harmless bubble gun. It isn't.\n^yellow;Inflicts Poisoned^reset;",
+      "tr": "Zararsız bir baloncuk tabancasına benziyor. Değil.\n^yellow;Zehirlenmeye yol açar^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/ff_icechucker.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ice Blaster",
+      "tr": "Buz Atıcı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/ff_icechucker.activeitem",
+      "pointer": "/description",
+      "en": "Be cruel and shoot freezing icicles at enemies.\n^yellow;Icy fun!^reset;",
+      "tr": "Acımasız ol ve düşmanlarına dondurucu buz sarkıtları fırlat.\n^yellow;Buz gibi eğlence!^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuprotectoraterifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protectorate Carbine",
+      "tr": "Protectorate Karabinası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuprotectoraterifle.activeitem",
+      "pointer": "/description",
+      "en": "The standard-issue for Protectorate peacekeepers.",
+      "tr": "Protectorate barış koruyucularının standart silahı.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuprotectoratesniper.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protectorate Rifle",
+      "tr": "Protectorate Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fuprotectoratesniper.activeitem",
+      "pointer": "/description",
+      "en": "A lightweight, accurate rifle with a built-in ultra-zoom scope.",
+      "tr": "Dâhili ultra yakınlaştırmalı dürbüne sahip, hafif ve isabetli bir tüfek.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/lasrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Laser Rifle",
+      "tr": "Lazer Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/lasrifle.activeitem",
+      "pointer": "/description",
+      "en": "The most popular weapon in the galaxy.\n^yellow;Reliable^reset;\n^yellow;Counts as 'Energy' for set bonuses^reset;",
+      "tr": "Galaksideki en popüler silah.\n^yellow;Güvenilir^reset;\n^yellow;Set bonusları için 'Enerji' sayılır^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolironfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Magnum",
+      "tr": "Demir Magnum",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolironfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoltungstenfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Revolver",
+      "tr": "Tungsten Revolver",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoltungstenfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/randomharpoongun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Harpoon Gun",
+      "tr": "Zıpkın Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/randomharpoongun.activeitem",
+      "pointer": "/description",
+      "en": "Impale your enemies, rather than just killing them.\n^yellow;Inflicts bleeding^reset;\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanlarını yalnız öldürmekle kalma, kazığa geçir.\n^yellow;Kanamaya yol açar^reset;\n^cyan;Av silahı^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleironfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Iron Rifle",
+      "tr": "Demir Tüfek",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifleironfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretmesi ucuz.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifletungstenfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tungsten Rifle",
+      "tr": "Tungsten Tüfek",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifletungstenfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretmesi ucuz.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/isn_flintlock/isn_flintlock.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fellshot Revolver",
+      "tr": "Fellshot Revolveri",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/isn_flintlock/isn_flintlock.activeitem",
+      "pointer": "/description",
+      "en": "Astounding stopping power.",
+      "tr": "Olağanüstü durdurma gücü.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/sniperknife.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Sniper Knife",
+      "tr": "Keskin Nişancı Bıçağı",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/sniperknife.activeitem",
+      "pointer": "/description",
+      "en": "Shoots knives. For some reason.\n^yellow;Why is this a thing? Surprisingly effective.^reset;\n^green;Where are they coming from?!?!?!^reset;",
+      "tr": "Bıçak ateşler. Nedeni bilinmiyor.\n^yellow;Bu neden var ki? Şaşırtıcı derecede etkili.^reset;\n^green;Bunlar nereden geliyor?!?!?!^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriummachinepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium SMG",
+      "tr": "Telebrium Makineli Tabanca",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriummachinepistol.activeitem",
+      "pointer": "/description",
+      "en": "Rapid fire poison-tipped rounds.",
+      "tr": "Zehir uçlu mermileri seri biçimde ateşler.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Pistol",
+      "tr": "Telebrium Tabancası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumpistol.activeitem",
+      "pointer": "/description",
+      "en": "Poisonous rounds are handy in a pinch.\n^cyan;Fast projectiles^reset;",
+      "tr": "Zehirli mermiler zor anlarda çok işe yarar.\n^cyan;Hızlı mermiler^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Carbine",
+      "tr": "Telebrium Karabina",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumrifle.activeitem",
+      "pointer": "/description",
+      "en": "Poisonous rounds are handy in a pinch.\n^cyan;Fast projectiles^reset;",
+      "tr": "Zehirli mermiler zor anlarda çok işe yarar.\n^cyan;Hızlı mermiler^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumrocketlauncher.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Rocket",
+      "tr": "Telebrium Roketi",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumrocketlauncher.activeitem",
+      "pointer": "/description",
+      "en": "Poison explosions, endless fun.",
+      "tr": "Zehirli patlamalar, bitmeyen eğlence.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Shotgun",
+      "tr": "Telebrium Pompalı Tüfek",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumshotgun.activeitem",
+      "pointer": "/description",
+      "en": "A strange, poisonous shotgun.",
+      "tr": "Tuhaf ve zehirli bir pompalı tüfek.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumsniperrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Sniper Rifle",
+      "tr": "Telebrium Keskin Nişancı Tüfeği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/telebriumsniperrifle.activeitem",
+      "pointer": "/description",
+      "en": "Poisonous rounds are handy in a pinch.\n^cyan;Fast projectiles^reset;",
+      "tr": "Zehirli mermiler zor anlarda çok işe yarar.\n^cyan;Hızlı mermiler^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/telebriumstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Staff",
+      "tr": "Telebrium Asası",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/telebriumstaff.activeitem",
+      "pointer": "/description",
+      "en": "Powerful toxins emit from this weapon.",
+      "tr": "Bu silah güçlü toksinler salar.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/wand/fuflamewand/fuflamewand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Bone Wand",
+      "tr": "Kemik Değnek",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/wand/fuflamewand/fuflamewand.activeitem",
+      "pointer": "/description",
+      "en": "Primitive shaman's implement.",
+      "tr": "İlkel bir şaman gereci.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/wand/fuicewand/fuicewand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Frost Wand",
+      "tr": "Ayaz Değneği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/wand/fuicewand/fuicewand.activeitem",
+      "pointer": "/description",
+      "en": "Freeze your enemies.",
+      "tr": "Düşmanlarını dondurur.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/telebriumwand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Wand",
+      "tr": "Telebrium Değneği",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/telebriumwand.activeitem",
+      "pointer": "/description",
+      "en": "Toxifies the air, poisoning enemies.",
+      "tr": "Havayı toksik hâle getirerek düşmanları zehirler.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/whip/silverwhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Silver Whip",
+      "tr": "Gümüş Kırbaç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/whip/silverwhip.activeitem",
+      "pointer": "/description",
+      "en": "Vanquish monsters with stylish silver!\n^cyan;Able to damage all elements equally^reset;",
+      "tr": "Şık gümüşle canavarların hakkından gel!\n^cyan;Tüm elementlere eşit hasar verir^reset;",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/whip/stingwhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Stinger Whip",
+      "tr": "İğneli Kırbaç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/whip/stingwhip.activeitem",
+      "pointer": "/description",
+      "en": "Real jellyfish aren't electric, but this bad boy sure is. Deals great damage at the tip.",
+      "tr": "Gerçek denizanaları elektrikli değildir ama bu kerata kesinlikle öyle. Ucuyla ağır hasar verir.",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/whip/telebriumwhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Whip",
+      "tr": "Telebrium Kırbaç",
+      "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/active/weapons/whip/telebriumwhip.activeitem",
+      "pointer": "/description",
+      "en": "A poisonous lash made from telebrium. Not for recreational use.",
+      "tr": "Telebriumdan yapılmış zehirli bir kırbaç. Eğlence amaçlı değildir.",
+      "section": "v0.21 Erken oyun silahları"
     }
   ]
 }

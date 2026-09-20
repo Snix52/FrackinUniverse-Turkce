@@ -441,3 +441,12 @@
 - `Brine Star`, `Ancient Temple`, `Hydro Center`, `Evernight Jungle`, `Forest of Fae`, `Grand Arena`, `Mount Gigant`, `Castle Takeshi`, `Techno City`, `Sky Boulevard`, `Snow Crash`, `Sunset Riders`, `Tower Invincible` ve `Verdant Ruins` SAIL/harita zinciriyle eşleşen özel görev adları olarak özgün bırakıldı.
 - `combatmaneuvering1` tamamlanma metnindeki köşeli parantezler oyuncuya gösterilen açıklama cümlesidir; kontrol etiketi değildir. Yalnız bu alan için field-specific `allow_control_fix` kullanıldı, renk kodları ve parantez düzeni korundu.
 - Yeni kapsamın **112/112 alanı** pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **112 test + 112 replace PASS**. Proje toplamı **3371 structured + 15 Lua / 764 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.21 Erken oyun silahları
+
+- `items/active/weapons` altında **1201 `.activeitem`** bulundu. Bütün klasörü kör biçimde çevirmek yerine oyuncunun erken oyunda aktif Zırh ve Silahlar araştırma ağacından açtığı `bonegear`, `irongear`, `telebriumgear` ve `tungstengear` düğümleri seçildi.
+- Dört düğüm toplam **124 gerçek silah asseti** açıyor. Bu silahların **124/124'ü** etkin `.recipe` çıktısıyla doğrulandı; yalnız dosya varlığı erişilebilirlik kanıtı sayılmadı.
+- Daha önce görev/makine zincirleri kapsamında çevrilmiş `hardenedsteelblade`, `laspistol` ve `armcannon` korundu. Kalan **121 silahta** yalnız `/shortdescription` ve `/description` alanları yerelleştirildi; `itemName`, yetenek, hasar, kategori, script ve teknik parametrelere dokunulmadı.
+- Silah türleri oyuncuya kısa ve ayırt edilebilir adlarla kilitlendi: Broadsword -> **Büyük Kılıç**, Quarterstaff -> **Dövüş Asası**, Rapier -> **Meç**, Staff -> **Asa**, Wand -> **Değnek**. `Stynger`, `Cestus`, `Protectorate`, `Telebrium`, `Bushmaster`, `Fellshot` ve `Hellion` özel/model adları korundu.
+- Kaynaktaki mizahi veya yetişkin ton temizlenmedi; örneğin Telebrium Uzun Kılıç açıklamasındaki ima, Türkçede doğal fakat kaynakla aynı şiddette bırakıldı. Kaynakta olmayan küfür veya yeni şaka eklenmedi.
+- Yeni kapsam **242 yapılandırılmış alan / 121 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağı ve blob SHA'larıyla exact doğrulandı; patch pairing **242 test + 242 replace PASS**. Proje toplamı **3613 structured + 15 Lua / 885 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.

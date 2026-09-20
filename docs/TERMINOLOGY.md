@@ -461,3 +461,26 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Repulsor Blast | Tech işlevi | Yetenek | İtici Patlama | Geri Tepme Patlaması | LOCKED | |
 | Challenge Labs | Özel görev bölgesi | Özel ad | Challenge Labs | Meydan Okuma Laboratuvarları | LOCKED | SAIL/dungeon adıyla eşleşir |
 | Letheia Corporation | Fraksiyon / şirket | Özel ad | Letheia Corporation | Letheia Şirketi | LOCKED | Marka adı korunur |
+
+## v0.21 Erken oyun silah terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Boomerang | Silah türü | Silah | Bumerang | Boomerang | LOCKED | |
+| Crossbow | Silah türü | Silah | Arbalet | Tatar Yayı | LOCKED | Kısa envanter adı |
+| Broadsword | İki elli geniş kılıç sınıfı | Silah | Büyük Kılıç | Geniş Kılıç | LOCKED | Oyuncu için sınıf işlevini daha açık anlatır |
+| Greataxe | İki elli balta sınıfı | Silah | Büyük Balta | Dev Balta | LOCKED | |
+| Quarterstaff | Uzun yakın dövüş sopası | Silah | Dövüş Asası | Çeyrek Asa | LOCKED | Kelime kelime karşılıktan kaçınıldı |
+| Rapier | İnce delici kılıç sınıfı | Silah | Meç | Rapier | LOCKED | Yerleşik Türkçe silah adı |
+| Shortspear | Kısa mızrak sınıfı | Silah | Kısa Mızrak | Kısa Kargı | LOCKED | |
+| Shortsword | Kısa kılıç sınıfı | Silah | Kısa Kılıç | Kısa Pala | LOCKED | |
+| Staff | Büyü silahı sınıfı | Silah | Asa | Değnek | LOCKED | Wand sınıfından ayrılır |
+| Wand | Tek elli büyü silahı sınıfı | Silah | Değnek | Asa | LOCKED | Staff sınıfından ayrılır |
+| LMG | Hafif otomatik tüfek sınıfı | Silah | Hafif Makineli Tüfek | LMG | LOCKED | |
+| SMG | Yakın menzil otomatik silah sınıfı | Silah | Makineli Tabanca | Hafif Makineli Tüfek | LOCKED | LMG sınıfından ayrılır |
+| Hunting weapon | Tooltip işlev etiketi | UI | Av silahı | Avcılık silahı | LOCKED | İlkel Mızrak çevirisiyle eşlendi |
+| Inflicts bleeding | Tooltip durum etiketi | UI | Kanamaya yol açar | Kanama verir | LOCKED | Poptop Pençesi çevirisiyle eşlendi |
+| Breaks blocks | Tooltip işlev etiketi | UI | Blokları kırar | Blok kırıcı | LOCKED | |
+| Stynger | Pompalı ok silahı modeli | Özel ad | Stynger | İğneleyici | LOCKED | Kaynaktaki stilize model adı korunur |
+| Cestus | Yumruk silahı sınıfı | Silah | Cestus | Yumrukluk | LOCKED | Tarihî silah adı |
+| Protectorate | Fraksiyon / ekipman ailesi | Özel ad | Protectorate | Koruyuculuk | LOCKED | Mevcut görev ve Akademi terminolojisiyle eşlendi |

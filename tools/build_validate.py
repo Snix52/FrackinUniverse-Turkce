@@ -269,6 +269,137 @@ V020_INACTIVE_QUEST_ASSETS = {
     'quests/scripts/neb-damagetypekills.questtemplat',
 }
 
+# Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
+# tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
+# erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
+# kalır; burada yalnız v0.21'de eklenen 121 asset bulunur.
+V021_EARLY_WEAPON_ASSETS = set('''
+items/active/weapons/boomerang/bonespur.activeitem
+items/active/weapons/boomerang/fufrisbee.activeitem
+items/active/weapons/boomerang/ironboomerang.activeitem
+items/active/weapons/boomerang/telebriumboomerang.activeitem
+items/active/weapons/boomerang/tungstenboomerang.activeitem
+items/active/weapons/boomerang/warspinner.activeitem
+items/active/weapons/bow/bonebow/bonebow.activeitem
+items/active/weapons/bow/ironcrossbow/ironcrossbow.activeitem
+items/active/weapons/bow/ironstynger/ironstynger.activeitem
+items/active/weapons/bow/telebriumbow/telebriumbow.activeitem
+items/active/weapons/bow/telebriumcrossbow/telebriumcrossbow.activeitem
+items/active/weapons/bow/telebriumstynger/telebriumstynger.activeitem
+items/active/weapons/bow/tungstencrossbow/tungstencrossbow.activeitem
+items/active/weapons/bow/tungstenstynger/tungstenstynger.activeitem
+items/active/weapons/chakram/goldchakram.activeitem
+items/active/weapons/chakram/telebriumchakram.activeitem
+items/active/weapons/fist/boneclaws.activeitem
+items/active/weapons/fist/hellclaw.activeitem
+items/active/weapons/fist/stabfists.activeitem
+items/active/weapons/fist/telebriumfist.activeitem
+items/active/weapons/melee/axe/fuboneaxe.activeitem
+items/active/weapons/melee/axe/fucultaxe.activeitem
+items/active/weapons/melee/axe/telebriumaxe.activeitem
+items/active/weapons/melee/broadsword/telebriumbroadsword.activeitem
+items/active/weapons/melee/broadsword/tungstenbroadsword.activeitem
+items/active/weapons/melee/dagger/feneroxdagger.activeitem
+items/active/weapons/melee/dagger/fubonepickaxe.activeitem
+items/active/weapons/melee/dagger/silverseablade.activeitem
+items/active/weapons/melee/dagger/telebriumdagger.activeitem
+items/active/weapons/melee/flail/flailiron.activeitem
+items/active/weapons/melee/flail/flailtelebrium.activeitem
+items/active/weapons/melee/flail/flailtungsten.activeitem
+items/active/weapons/melee/greataxe/irongreataxe.activeitem
+items/active/weapons/melee/greataxe/telebriumgreataxe.activeitem
+items/active/weapons/melee/greataxe/tungstengreataxe.activeitem
+items/active/weapons/melee/hammer/fishboneheadbasher.activeitem
+items/active/weapons/melee/hammer/fubonehammer.activeitem
+items/active/weapons/melee/hammer/telebriumhammer.activeitem
+items/active/weapons/melee/katana/ironkatana.activeitem
+items/active/weapons/melee/katana/telebriumkatana.activeitem
+items/active/weapons/melee/katana/tungstenkatana.activeitem
+items/active/weapons/melee/longsword/fubonesword.activeitem
+items/active/weapons/melee/longsword/fucellsword.activeitem
+items/active/weapons/melee/longsword/ironlongsword.activeitem
+items/active/weapons/melee/longsword/silverlongsword.activeitem
+items/active/weapons/melee/longsword/telebriumlongsword.activeitem
+items/active/weapons/melee/longsword/tungstenlongsword.activeitem
+items/active/weapons/melee/mace/bonemace.activeitem
+items/active/weapons/melee/mace/fu_wrenchweapon.activeitem
+items/active/weapons/melee/mace/ironmace.activeitem
+items/active/weapons/melee/mace/telebriummace.activeitem
+items/active/weapons/melee/mace/tungstenmace.activeitem
+items/active/weapons/melee/quarterstaff/copperquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/ironquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/silverquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/telebriumquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/tungstenquarterstaff.activeitem
+items/active/weapons/melee/rapier/goldrapier.activeitem
+items/active/weapons/melee/rapier/ironrapier.activeitem
+items/active/weapons/melee/rapier/silverrapier.activeitem
+items/active/weapons/melee/rapier/telebriumrapier.activeitem
+items/active/weapons/melee/rapier/tungstenrapier.activeitem
+items/active/weapons/melee/scythe/fubonescythe.activeitem
+items/active/weapons/melee/scythe/goldscythe.activeitem
+items/active/weapons/melee/scythe/ironscythe.activeitem
+items/active/weapons/melee/scythe/telebriumscythe.activeitem
+items/active/weapons/melee/shortspear/coreshortspear.activeitem
+items/active/weapons/melee/shortspear/ironshortspear.activeitem
+items/active/weapons/melee/shortspear/telebriumshortspear.activeitem
+items/active/weapons/melee/shortspear/tungstenshortspear.activeitem
+items/active/weapons/melee/shortsword/boneblade.activeitem
+items/active/weapons/melee/shortsword/goldenseascion.activeitem
+items/active/weapons/melee/shortsword/telebriumshortsword.activeitem
+items/active/weapons/melee/spear/bonespear.activeitem
+items/active/weapons/melee/spear/lavaspear.activeitem
+items/active/weapons/melee/spear/telebriumspear.activeitem
+items/active/weapons/novakid/ironlmg.activeitem
+items/active/weapons/novakid/ironmachinepistol.activeitem
+items/active/weapons/novakid/ironshotgun.activeitem
+items/active/weapons/novakid/ironsniperrifle.activeitem
+items/active/weapons/novakid/tungstenassaultrifle.activeitem
+items/active/weapons/novakid/tungstenmachinepistol.activeitem
+items/active/weapons/novakid/tungstensniperrifle.activeitem
+items/active/weapons/other/magnorbs/magnorbmoonstone/magnorbmoonstone.activeitem
+items/active/weapons/protectorate/ironaxe.activeitem
+items/active/weapons/protectorate/irondagger.activeitem
+items/active/weapons/protectorate/ironhammer.activeitem
+items/active/weapons/protectorate/ironspear.activeitem
+items/active/weapons/protectorate/tungstendagger.activeitem
+items/active/weapons/protectorate/tungstenshortsword.activeitem
+items/active/weapons/protectorate/tungstenspear.activeitem
+items/active/weapons/ranged/unique/aegisaltpistol3.activeitem
+items/active/weapons/ranged/unique/artillery/crappy/crappyartillery.activeitem
+items/active/weapons/ranged/unique/burster.activeitem
+items/active/weapons/ranged/unique/bushmaster.activeitem
+items/active/weapons/ranged/unique/corerifle.activeitem
+items/active/weapons/ranged/unique/ff_bubblegun.activeitem
+items/active/weapons/ranged/unique/ff_icechucker.activeitem
+items/active/weapons/ranged/unique/fuprotectoraterifle.activeitem
+items/active/weapons/ranged/unique/fuprotectoratesniper.activeitem
+items/active/weapons/ranged/unique/lasrifle.activeitem
+items/active/weapons/ranged/unique/pistolironfu.activeitem
+items/active/weapons/ranged/unique/pistoltungstenfu.activeitem
+items/active/weapons/ranged/unique/randomharpoongun.activeitem
+items/active/weapons/ranged/unique/rifleironfu.activeitem
+items/active/weapons/ranged/unique/rifletungstenfu.activeitem
+items/active/weapons/ranged/unique/science/isn_flintlock/isn_flintlock.activeitem
+items/active/weapons/ranged/unique/sniperknife.activeitem
+items/active/weapons/ranged/unique/telebriummachinepistol.activeitem
+items/active/weapons/ranged/unique/telebriumpistol.activeitem
+items/active/weapons/ranged/unique/telebriumrifle.activeitem
+items/active/weapons/ranged/unique/telebriumrocketlauncher.activeitem
+items/active/weapons/ranged/unique/telebriumshotgun.activeitem
+items/active/weapons/ranged/unique/telebriumsniperrifle.activeitem
+items/active/weapons/staff/orestaffs/telebriumstaff.activeitem
+items/active/weapons/wand/fuflamewand/fuflamewand.activeitem
+items/active/weapons/wand/fuicewand/fuicewand.activeitem
+items/active/weapons/wand/orewands/telebriumwand.activeitem
+items/active/weapons/whip/silverwhip.activeitem
+items/active/weapons/whip/stingwhip.activeitem
+items/active/weapons/whip/telebriumwhip.activeitem
+'''.split())
+
+def v021_weapon_pointer(p):
+    return p in ('/shortdescription','/description')
+
 def v020_quest_pointer(p):
     return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription')
 
@@ -469,6 +600,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V021_EARLY_WEAPON_ASSETS:
+        return v021_weapon_pointer(p)
     if a in V020_ACTIVE_QUEST_ASSETS:
         return v020_quest_pointer(p)
     if v019_crafting_item(a,p):
