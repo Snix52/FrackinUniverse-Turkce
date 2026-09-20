@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.13.2-beta",
+  "translation_version": "0.13.3-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 1929,
+  "translated_display_fields": 1934,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 1944,
-  "patched_assets": 322,
+  "total_localized_display_units": 1949,
+  "patched_assets": 325,
   "raw_override_assets": 1,
-  "target_assets_total": 323,
+  "target_assets_total": 326,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -173,7 +173,7 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.13 project total: 1929 structured fields. v0.13 adds 48 pinned FU fields across 18 new assets for 6/6 live Science Outpost shop quests, their target artifacts and shop objects; Lua remains 15 source-guarded strings. v0.11 Starbooze and v0.12 Beekeeping scopes are preserved. v0.13.1 retro QA changes Turkish target text only; source EN/provenance pointers unchanged. v0.13.2 changes Turkish target text only; source EN/provenance pointers and 322-asset patch scope unchanged.",
+  "full_source_validation": "v0.13.3 project total: 1934 structured fields + 15 source-guarded Lua UI strings. Retro QA removes 3 runtime listTemplate dummy fields, adds 4 independently verified vanilla/layered Silt/Gravel fields and 4 pinned FU Iron Centrifuge fields, and preserves all previous v0.11-v0.13 runtime quest scopes. Patch asset total: 325.",
   "polish_pass": "PASS for v0.11 static Outpost/Starbooze scope: 12/12 quest files, quest-condition corrections and directly referenced inventory targets. In-game quest-flow/font/layout LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
@@ -265,6 +265,33 @@
     "empty_translations": 0,
     "lowercase_mech_remaining": 0,
     "static_qa": "PASS (GitHub Actions run 35499671787)",
+    "in_game_lqa": "BEKLİYOR"
+  },
+  "v0133_scope": {
+    "reviewed_previous_structured_fields": 1929,
+    "removed_runtime_dummy_fields": 3,
+    "corrected_existing_player_fields": 5,
+    "new_inventory_fields": 8,
+    "new_structured_fields_net": 5,
+    "structured_field_count_after_review": 1934,
+    "localized_display_units_after_review": 1949,
+    "patch_assets_after_review": 325,
+    "new_patch_assets": 3,
+    "pinned_fu_new_fields": 4,
+    "vanilla_or_layered_new_fields": 4,
+    "removed_dummy_assets": [
+      "interface/windowconfig/beerefuge.config listTemplate Replace Me",
+      "interface/windowconfig/fu_shipcraftingtable.config listTemplate Replace Me",
+      "interface/windowconfig/psionicbench.config listTemplate Replace Me"
+    ],
+    "inventory_alignment": [
+      "Loose Silt -> Gevşek Mil",
+      "Gravel -> Çakıl",
+      "Iron Centrifuge -> Demir Santrifüj"
+    ],
+    "duplicate_pointers": 0,
+    "empty_translations": 0,
+    "static_qa": "PENDING CI",
     "in_game_lqa": "BEKLİYOR"
   }
 }
