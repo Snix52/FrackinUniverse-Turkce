@@ -187,6 +187,12 @@ def allowed(a,p):
         return p in ('/description','/shortdescription')
     if a=='objects/crafting/clonelab/clonelab.object':
         return p in ('/subtitle','/description','/shortdescription')
+    if a=='items/generic/crafting/matterassembler/electromagnet.item':
+        return p in ('/description','/shortdescription')
+    if a=='items/augments/back/environment/acidimmunity.augment':
+        return p in ('/description','/shortdescription','/augment/displayName')
+    if a=='items/materials/blackglass.matitem':
+        return p in ('/description','/shortdescription','/glitchdescription','/florandescription','/novakiddescription')
     if a=='objects/crafting/handmill/handmill.object':
         return p in ('/category','/description','/shortdescription','/subtitle')
     if a=='interface/windowconfig/beerefuge.config':
