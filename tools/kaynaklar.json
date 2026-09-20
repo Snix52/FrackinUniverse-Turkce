@@ -76,7 +76,7 @@
       "url": "https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/radiomessages/fu_quests.radiomessages"
     }
   ],
-  "translation_version": "0.13.2-beta",
+  "translation_version": "0.13.3-beta",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "assets": {
     "zb/researchTree/fu_agriculture.config": "c5d1acc20ce35c8220cff577efb459c8b41ff54f",
@@ -348,7 +348,7 @@
     "objects/scienceoutpost/radienshop/silene_shop.object": "d9ee139e6afcd354fc6f37297ed51ec5829b40c6",
     "objects/scienceoutpost/fushadowstore/fushadowstore.object": "09b4474ac201c99d4415f4e9e4ca5a0c4ac78862"
   },
-  "validation_note": "v0.13.2 ikinci geriye dönük QA: 16 Mech yazımı + Arı Barınağı karma eylem etiketi düzeltildi. Kaynak İngilizce değerleri, asset/pointer kapsamı ve provenans değişmedi. Toplam 1929 structured + 15 Lua; 322 patch asset. Oyun içi LQA bekliyor.",
+  "validation_note": "v0.13.3 üçüncü geriye dönük QA: 3 runtime listTemplate dummy alanı çıkarıldı; vanilla/eldritch İngilizce sızıntıları temizlendi; Sifter tutorialı için Loose Silt/Gravel envanter adları Gevşek Mil/Çakıl olarak 4 layered/vanilla alanla eşlendi. Toplam 1930 structured + 15 Lua; 324 patch asset. Oyun içi LQA bekliyor.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
@@ -501,6 +501,27 @@
         "blob_sha": "58a61ea338d3a6f57766b92701e3c5401838fc68"
       },
       "note": "v0.11 Outpost Arıcılık görevindeki Boş Şişe envanter adıyla eşleştirmek için vanilla kaynaktan exact doğrulandı."
+    },
+    "items/materials/sand.matitem": {
+      "fu_source_patch": "items/materials/sand.matitem.patch",
+      "fu_github_blob_sha": "1d64114a4e733875dbcbb0be74cb6ec413934593",
+      "fu_source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/materials/sand.matitem",
+        "blob_sha": "e0b7a64f636ddd980277fbe2b1d3736af6d5ea52"
+      },
+      "note": "Sifter tutorialında adı geçen Loose Silt. FU final description değerini sand.matitem.patch ile değiştirir; shortdescription vanilla tabandan doğrulanır."
+    },
+    "items/materials/gravel.matitem": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/materials/gravel.matitem",
+        "blob_sha": "38df8a475e3cc0c7779a9129030e8686a69fd786"
+      },
+      "note": "Sifter tutorialında adı geçen Gravel hedefini Çakıl envanter adıyla eşlemek için vanilla açıklama/kısa ad exact doğrulandı."
     }
   }
 }
