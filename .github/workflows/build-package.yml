@@ -24,19 +24,19 @@ jobs:
           python-version: "3.11"
 
       - name: Validate Python
-        run: python -m py_compile tools/build_validate.py tools/add_v022.py tools/add_v023.py tools/add_v024.py
+        run: python -m py_compile tools/build_validate.py tools/add_v022.py tools/add_v023.py tools/add_v024.py tools/add_v025.py
 
       - name: Build and run static QA
         run: python tools/build_validate.py --output build_output
 
       - name: Package mod
         run: |
-          rm -f dist/FU_Turkce_v0.20.0_Beta.zip dist/FU_Turkce_v0.21.0_Beta.zip dist/FU_Turkce_v0.22.0_Beta.zip dist/FU_Turkce_v0.23.0_Beta.zip dist/FU_Turkce_v0.24.0_Beta.zip
+          rm -f dist/FU_Turkce_v0.20.0_Beta.zip dist/FU_Turkce_v0.21.0_Beta.zip dist/FU_Turkce_v0.22.0_Beta.zip dist/FU_Turkce_v0.23.0_Beta.zip dist/FU_Turkce_v0.24.0_Beta.zip dist/FU_Turkce_v0.25.0_Beta.zip
           cd build_output
-          zip -r ../dist/FU_Turkce_v0.24.0_Beta.zip FU_Turkce
+          zip -r ../dist/FU_Turkce_v0.25.0_Beta.zip FU_Turkce
 
       - name: Verify ZIP
-        run: unzip -t dist/FU_Turkce_v0.24.0_Beta.zip
+        run: unzip -t dist/FU_Turkce_v0.25.0_Beta.zip
 
       - name: Refresh tracked beta package
         run: |
@@ -46,6 +46,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Package is already current."
           else
-            git commit -m "build: refresh v0.24.0 beta package [skip ci]"
+            git commit -m "build: refresh v0.25.0 beta package [skip ci]"
             git push
           fi

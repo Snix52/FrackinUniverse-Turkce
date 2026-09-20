@@ -397,6 +397,126 @@ items/active/weapons/whip/stingwhip.activeitem
 items/active/weapons/whip/telebriumwhip.activeitem
 '''.split())
 
+# Aktif fu_warcraft ağacındaki Kademe 1-2 zırh kollarının açtığı,
+# gerçek üretim tarifi bulunan v0.25 zırh parçaları. EPP düğümleri ayrı
+# sistem olarak sonraki kapsama bırakılmıştır. Burada 114 yeni asset vardır.
+V025_EARLY_ARMOR_ASSETS = set('''
+items/armors/backitems/noobpack/noobpack.back
+items/armors/backitems/slimeinvisibleback/invisible.back
+items/armors/bees/fubeesuit/fubeesuit.chest
+items/armors/bees/fubeesuit/fubeesuit.head
+items/armors/bees/fubeesuit/fubeesuit.legs
+items/armors/biome/garden/quiver/quiver2/quiver2.back
+items/armors/elduukhar/invis/inviselduu.chest
+items/armors/elduukhar/invis/inviselduu.head
+items/armors/elduukhar/invis/inviselduu.legs
+items/armors/elduukhar/templeguard/templeguard.chest
+items/armors/elduukhar/templeguard/templeguard.head
+items/armors/elduukhar/templeguard/templeguard.legs
+items/armors/elduukhar/worshipper/worshipper.chest
+items/armors/elduukhar/worshipper/worshipper.head
+items/armors/elduukhar/worshipper/worshipper.legs
+items/armors/elduukhar/worshipper/worshipper2.head
+items/armors/elduukhar/worshipper/worshipper3.head
+items/armors/elduukhar/worshipper/worshipper4.head
+items/armors/elduukhar/worshipper/worshipper5.head
+items/armors/other/visors/snowgoggles/snowgoggles.head
+items/armors/skath/skath-tier1/skathtier1.chest
+items/armors/skath/skath-tier1/skathtier1.head
+items/armors/skath/skath-tier1/skathtier1.legs
+items/armors/skath/skath-tier2/skathtier2.chest
+items/armors/skath/skath-tier2/skathtier2.head
+items/armors/skath/skath-tier2/skathtier2.legs
+items/armors/skath/skath-tier3accelerator/skathtier3accelerator.chest
+items/armors/skath/skath-tier3accelerator/skathtier3accelerator.head
+items/armors/skath/skath-tier3accelerator/skathtier3accelerator.legs
+items/armors/skath/skath-tier3manipulator/skathtier3manipulator.chest
+items/armors/skath/skath-tier3manipulator/skathtier3manipulator.head
+items/armors/skath/skath-tier3manipulator/skathtier3manipulator.legs
+items/armors/skath/skath-tier3separator/skathtier3separator.chest
+items/armors/skath/skath-tier3separator/skathtier3separator.head
+items/armors/skath/skath-tier3separator/skathtier3separator.legs
+items/armors/slimeperson/slimeperson-invisible/invisible.chest
+items/armors/slimeperson/slimeperson-invisible/invisible.head
+items/armors/slimeperson/slimeperson-invisible/invisible.legs
+items/armors/tier1/armoredsnowpants/armoredsnowpants.legs
+items/armors/tier1/bloodhound/bloodhound.chest
+items/armors/tier1/bloodhound/bloodhound.head
+items/armors/tier1/bloodhound/bloodhound.legs
+items/armors/tier1/fubonearmor/fubone.chest
+items/armors/tier1/fubonearmor/fubone.head
+items/armors/tier1/fubonearmor/fubone.legs
+items/armors/tier1/leatherarmor/leatherarmor.chest
+items/armors/tier1/leatherarmor/leatherarmor.head
+items/armors/tier1/leatherarmor/leatherarmor.legs
+items/armors/tier1/missionary/missionaryrobe.chest
+items/armors/tier1/missionary/missionaryrobe.head
+items/armors/tier1/missionary/missionaryrobe.legs
+items/armors/tier1/plebeian/mantizitier1.chest
+items/armors/tier1/plebeian/mantizitier1.legs
+items/armors/tier1/spacediver/spacediver.chest
+items/armors/tier1/spacediver/spacediver.head
+items/armors/tier1/spacediver/spacediver.legs
+items/armors/tier1/underworld/kirhostier1.chest
+items/armors/tier1/underworld/kirhostier1.head
+items/armors/tier1/underworld/kirhostier1.legs
+items/armors/tier2/battletotem/beararmor.chest
+items/armors/tier2/battletotem/beararmor.head
+items/armors/tier2/battletotem/beararmor.legs
+items/armors/tier2/fangshaman/wolf.chest
+items/armors/tier2/fangshaman/wolf.head
+items/armors/tier2/fangshaman/wolf.legs
+items/armors/tier2/ff_slimearmor/ff_slimearmor.chest
+items/armors/tier2/ff_slimearmor/ff_slimearmor.head
+items/armors/tier2/ff_slimearmor/ff_slimearmor.legs
+items/armors/tier2/fubonearmor2/fubone2.chest
+items/armors/tier2/fubonearmor2/fubone2.head
+items/armors/tier2/fubonearmor2/fubone2.legs
+items/armors/tier2/furecon/furecon.chest
+items/armors/tier2/furecon/furecon.head
+items/armors/tier2/furecon/furecon.legs
+items/armors/tier2/hacker/kirhostier2.chest
+items/armors/tier2/hacker/kirhostier2.head
+items/armors/tier2/hacker/kirhostier2.legs
+items/armors/tier2/lunariarmor/lunari.chest
+items/armors/tier2/lunariarmor/lunari.head
+items/armors/tier2/lunariarmor/lunari.legs
+items/armors/tier2/mantiziroyalguard/royalguard.chest
+items/armors/tier2/mantiziroyalguard/royalguard.head
+items/armors/tier2/mantiziroyalguard/royalguard.legs
+items/armors/tier2/mantiziroyalguardornate/royalguardornate.chest
+items/armors/tier2/mantiziroyalguardornate/royalguardornate.head
+items/armors/tier2/mantiziroyalguardornate/royalguardornate.legs
+items/armors/tier2/militia/mantizitier2.chest
+items/armors/tier2/militia/mantizitier2.head
+items/armors/tier2/militia/mantizitier2.legs
+items/armors/tier2/nomad/fudesertwalker.chest
+items/armors/tier2/nomad/fudesertwalker.head
+items/armors/tier2/nomad/fudesertwalker.legs
+items/armors/tier2/operative/fuoperative.chest
+items/armors/tier2/operative/fuoperative.head
+items/armors/tier2/operative/fuoperative.legs
+items/armors/tier2/samurai/fusamuraiarmor.chest
+items/armors/tier2/samurai/fusamuraiarmor.head
+items/armors/tier2/samurai/fusamuraiarmor.legs
+items/armors/tier2/sanguine/bloodgarb.chest
+items/armors/tier2/sanguine/bloodgarb.head
+items/armors/tier2/sanguine/bloodgarb.legs
+items/armors/tier2/swashbuckler/cannoneer.chest
+items/armors/tier2/swashbuckler/cannoneer.head
+items/armors/tier2/swashbuckler/cannoneer.legs
+items/armors/tier2/tw_spacesuit/tw_spacesuit.chest
+items/armors/tier2/tw_spacesuit/tw_spacesuit.head
+items/armors/tier2/tw_spacesuit/tw_spacesuit.legs
+items/armors/tier2/vagabond/deckardchest.chest
+items/armors/tier2/vagabond/deckardhead.head
+items/armors/tier2/vagabond/deckardpants.legs
+items/armors/tier3/stalkers/fudarkrobeschest.chest
+items/armors/tier3/stalkers/fudarkrobeshelmet.head
+items/armors/tier3/stalkers/fudarkrobespants.legs
+items/armors/uniques/fuhoodedmask/fuhoodedmask.head
+'''.split())
+
 # Aktif fu_warcraft ağacındaki irradiumgear, triangliumgear, prisilitegear,
 # quietusgear ve bioweaponsgear düğümlerinin açtığı, gerçek üretim tarifi
 # bulunan v0.24 Kademe 4 savaş ekipmanı. Burada 148 yeni asset vardır.
@@ -979,6 +1099,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V025_EARLY_ARMOR_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V024_TIER4_REMAINING_COMBAT_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V023_TIER4_CORE_COMBAT_ASSETS:
@@ -1435,7 +1557,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri ve erişilebilir items/generic/crafting malzemelerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif erken oyun zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

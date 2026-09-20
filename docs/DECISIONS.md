@@ -475,3 +475,13 @@
 - Irradium, Trianglium, Prisilite ve Quietus FU malzeme adları korundu. Prisilite silahlarındaki `Prismatic` sıfatı **Prizmatik**, Atropus biyosilah ailesindeki `Fleshweave` adı **Et Örgüsü**, `Plague Bearing` etkisi **Veba taşır** olarak kilitlendi.
 - `Breach`, `Gishinanki`, `Justicar`, `Manstopper`, `Ocu`, `Quellhound` ve `Lasher` model/özel adları korundu. Silah sınıfları önceki kararlarla eşlendi: **Büyük Kılıç, Dövüş Asası, Meç, Makineli Tabanca, Taarruz Tüfeği, Roketatar**.
 - Yeni kapsam **296 yapılandırılmış alan / 148 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **296 test + 296 replace PASS**. Proje toplamı **4324 structured + 15 Lua / 1240 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.25 Kademe 1-2 aktif zırh setleri
+
+- Aktif Zırh ve Silahlar ağacındaki `bonegear`, `slimegear1`, `irongear`, `cottongear`, `telebriumgear`, `lunarigear`, `elduugear`, `skathgear` ve `tungstengear` düğümleri seçildi. Bütün `items/armors` klasörünü kör çevirmek yerine araştırma açılımı ile gerçek `.recipe` çıktısı birlikte erişilebilirlik kanıtı sayıldı.
+- Dokuz düğümde daha önce çevrilmemiş ve tarif destekli **114 zırh parçası** bulundu. Her assette yalnız `/shortdescription` ile `/description` alanı yerelleştirildi; `itemName`, stat hesapları, efektler, tooltip türü, tarif ve script alanları korunur.
+- `epps1`-`epps4` düğümleri sırt ekipmanı/EPP sistemi olarak ayrı tutuldu. Bunlar zırh seti dilimine karıştırılmayacak ve kendi işlev zincirleriyle ayrıca denetlenecek.
+- Zırh istatistiklerinde **Set Bonusları, Kritik Şansı, Kritik Hasarı, Geri Tepme Direnci, Kalkan Canı ve Yenilenmesi, İyileştirme Gücü, Can Çalma, Germe Hızı, Atış Başına Enerji** terminolojisi kilitlendi.
+- `Oxygen` bağışıklık etiketi bu bağlamda element değil, oksijensiz ortam tehlikesidir; oyuncuya etkisini doğru anlatmak için **Oksijensizlik** kullanıldı. `Bio-Ooze`, `Slush`, `Chill` ve `Quicksand` sırasıyla **Biyo-Balçık, Sulu Kar, Üşüme** ve **Batak Kum** olarak kilitlendi.
+- `Dracon` ve `Warscorned`, anlamı oyun içinde açıklanmayan Skath model adları olduğundan özel ad olarak korundu. İşlevsel parça adları ve tooltip metinleri Türkçeleştirildi.
+- Yeni kapsam **228 yapılandırılmış alan / 114 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **4552 structured + 15 Lua / 1354 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.

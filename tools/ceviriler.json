@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.24.0-beta",
-  "note": "v0.24 Kademe 4 kalan savaş ekipmanı: aktif Zırh ve Silahlar araştırma ağacındaki irradiumgear, triangliumgear, prisilitegear, quietusgear ve bioweaponsgear düğümlerinin açtığı, gerçek üretim tarifi bulunan 148 savaş ekipmanında 296 görünür alan yerelleştirildi. Toplam 4324 structured + 15 Lua, 1240 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
+  "translation_version": "0.25.0-beta",
+  "note": "v0.25 Kademe 1-2 aktif zırh setleri: Zırh ve Silahlar araştırma ağacındaki bonegear, slimegear1, irongear, cottongear, telebriumgear, lunarigear, elduugear, skathgear ve tungstengear düğümlerinin açtığı, gerçek üretim tarifi bulunan 114 zırh parçasında 228 görünür alan yerelleştirildi. Toplam 4552 structured + 15 Lua, 1354 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -31186,6 +31186,1602 @@
       "en": "Trianglium shards gravitated into a whip. Don't ask, just whip.\n^cyan;Shoots radioactive exploding shards^reset;",
       "tr": "Trianglium parçaları yerçekimiyle bir kırbaç oluşturmuş. Sorma, kırbacı salla.\n^cyan;Radyoaktif, patlayan parçalar fırlatır^reset;",
       "section": "v0.24 Kademe 4 kalan savaş ekipmanı"
+    },
+    {
+      "asset": "items/armors/backitems/noobpack/noobpack.back",
+      "pointer": "/shortdescription",
+      "en": "Core Pack",
+      "tr": "Çekirdek Paketi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/backitems/noobpack/noobpack.back",
+      "pointer": "/description",
+      "en": "A very basic tank which provides ^yellow;60s^reset; oxygen, a ^orange;dim glow^reset;, and 10% ^blue;cold resistance^reset;.",
+      "tr": "^yellow;60 sn^reset; oksijen, ^orange;soluk bir ışık^reset; ve %10 ^blue;soğuk direnci^reset; sağlayan son derece basit bir tüp.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/backitems/slimeinvisibleback/invisible.back",
+      "pointer": "/shortdescription",
+      "en": "Invisible Back",
+      "tr": "Görünmez Sırtlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/backitems/slimeinvisibleback/invisible.back",
+      "pointer": "/description",
+      "en": "Nothing to see here.",
+      "tr": "Burada görülecek bir şey yok.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/bees/fubeesuit/fubeesuit.chest",
+      "pointer": "/shortdescription",
+      "en": "Bee Keeper's Armor",
+      "tr": "Arıcı Zırhı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/bees/fubeesuit/fubeesuit.chest",
+      "pointer": "/description",
+      "en": "Prevents nasty bee stings!",
+      "tr": "Can yakıcı arı sokmalarını önler!",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/bees/fubeesuit/fubeesuit.head",
+      "pointer": "/shortdescription",
+      "en": "Bee Keeper's Helm",
+      "tr": "Arıcı Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/bees/fubeesuit/fubeesuit.head",
+      "pointer": "/description",
+      "en": "Prevents nasty bee stings!",
+      "tr": "Can yakıcı arı sokmalarını önler!",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/bees/fubeesuit/fubeesuit.legs",
+      "pointer": "/shortdescription",
+      "en": "Bee Keeper's Pants",
+      "tr": "Arıcı Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/bees/fubeesuit/fubeesuit.legs",
+      "pointer": "/description",
+      "en": "Prevents nasty bee stings!",
+      "tr": "Can yakıcı arı sokmalarını önler!",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/biome/garden/quiver/quiver2/quiver2.back",
+      "pointer": "/shortdescription",
+      "en": "Quality Quiver",
+      "tr": "Kaliteli Sadak",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/biome/garden/quiver/quiver2/quiver2.back",
+      "pointer": "/description",
+      "en": "+^green;15^reset;% Damage (Bows)\n+^green;15^reset;% Draw Speed (Bows)\n+^green;4^reset;% Airborne Damage (Bows)\n-^green;3^reset; Energy Per Shot (Bows)",
+      "tr": "+^green;15^reset;% Hasar (Yaylar)\n+^green;15^reset;% Germe Hızı (Yaylar)\n+^green;4^reset;% Havada Hasar (Yaylar)\n-^green;3^reset; Atış Başına Enerji (Yaylar)",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/invis/inviselduu.chest",
+      "pointer": "/shortdescription",
+      "en": "Invisible Shirt",
+      "tr": "Görünmez Gömlek",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/invis/inviselduu.chest",
+      "pointer": "/description",
+      "en": "Are you sure these are clothes?",
+      "tr": "Bunların giysi olduğuna emin misin?",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/invis/inviselduu.head",
+      "pointer": "/shortdescription",
+      "en": "Invisible Hat",
+      "tr": "Görünmez Şapka",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/invis/inviselduu.head",
+      "pointer": "/description",
+      "en": "Are you sure these are clothes?",
+      "tr": "Bunların giysi olduğuna emin misin?",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/invis/inviselduu.legs",
+      "pointer": "/shortdescription",
+      "en": "Invisible Pants",
+      "tr": "Görünmez Pantolon",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/invis/inviselduu.legs",
+      "pointer": "/description",
+      "en": "Are you sure these are clothes?",
+      "tr": "Bunların giysi olduğuna emin misin?",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/templeguard/templeguard.chest",
+      "pointer": "/shortdescription",
+      "en": "Temple Shirt",
+      "tr": "Tapınak Gömleği",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/templeguard/templeguard.chest",
+      "pointer": "/description",
+      "en": "A sleeveless shirt woven from crystal.",
+      "tr": "Kristalden dokunmuş kolsuz bir gömlek.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/templeguard/templeguard.head",
+      "pointer": "/shortdescription",
+      "en": "Temple Helmet",
+      "tr": "Tapınak Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/templeguard/templeguard.head",
+      "pointer": "/description",
+      "en": "A helmet worn by Eld'uukhar guards.",
+      "tr": "Eld'uukhar muhafızlarının giydiği bir miğfer.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/templeguard/templeguard.legs",
+      "pointer": "/shortdescription",
+      "en": "Temple Shorts",
+      "tr": "Tapınak Şortu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/templeguard/templeguard.legs",
+      "pointer": "/description",
+      "en": "A pair of shorts with gold anklets.",
+      "tr": "Altın halhallı bir şort.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper.chest",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Shirt",
+      "tr": "Mürit Gömleği",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper.chest",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper.head",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Helmet",
+      "tr": "Mürit Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper.head",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper.legs",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Cloth",
+      "tr": "Mürit Örtüsü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper.legs",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper2.head",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Helmet",
+      "tr": "Mürit Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper2.head",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper3.head",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Helmet",
+      "tr": "Mürit Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper3.head",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper4.head",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Helmet",
+      "tr": "Mürit Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper4.head",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper5.head",
+      "pointer": "/shortdescription",
+      "en": "Worshipper's Helmet",
+      "tr": "Mürit Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/elduukhar/worshipper/worshipper5.head",
+      "pointer": "/description",
+      "en": "Ahvis worshipper's garb.",
+      "tr": "Ahvis müritlerinin giysisi.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/visors/snowgoggles/snowgoggles.head",
+      "pointer": "/shortdescription",
+      "en": "Snow Goggles",
+      "tr": "Kar Gözlüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/visors/snowgoggles/snowgoggles.head",
+      "pointer": "/description",
+      "en": "This will protect your eyes in blizzards.\n+^green;8^reset;% Ice Resist",
+      "tr": "Tipide gözlerini korur.\n+^green;8^reset;% Buz Direnci",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier1/skathtier1.chest",
+      "pointer": "/shortdescription",
+      "en": "Webber Breastplate",
+      "tr": "Ağcı Göğüslüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier1/skathtier1.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.1^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.1^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier1/skathtier1.head",
+      "pointer": "/shortdescription",
+      "en": "Webber Helmet",
+      "tr": "Ağcı Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier1/skathtier1.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.1^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.1^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier1/skathtier1.legs",
+      "pointer": "/shortdescription",
+      "en": "Webber Trousers",
+      "tr": "Ağcı Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier1/skathtier1.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.1^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.1^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier2/skathtier2.chest",
+      "pointer": "/shortdescription",
+      "en": "Bogwalker Chestpiece",
+      "tr": "Bataklık Gezgini Göğüslüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier2/skathtier2.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.13^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.13^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier2/skathtier2.head",
+      "pointer": "/shortdescription",
+      "en": "Bogwalker Helm",
+      "tr": "Bataklık Gezgini Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier2/skathtier2.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.13^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.13^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier2/skathtier2.legs",
+      "pointer": "/shortdescription",
+      "en": "Bogwalker Trousers",
+      "tr": "Bataklık Gezgini Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier2/skathtier2.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.13^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.13^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3accelerator/skathtier3accelerator.chest",
+      "pointer": "/shortdescription",
+      "en": "Warscorned Chestguard",
+      "tr": "Warscorned Göğüs Koruması",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3accelerator/skathtier3accelerator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.22^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.22^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3accelerator/skathtier3accelerator.head",
+      "pointer": "/shortdescription",
+      "en": "Warscorned Helmet",
+      "tr": "Warscorned Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3accelerator/skathtier3accelerator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.22^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.22^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3accelerator/skathtier3accelerator.legs",
+      "pointer": "/shortdescription",
+      "en": "Warscorned Trousers",
+      "tr": "Warscorned Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3accelerator/skathtier3accelerator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.22^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.22^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3manipulator/skathtier3manipulator.chest",
+      "pointer": "/shortdescription",
+      "en": "Dracon Chestguard",
+      "tr": "Dracon Göğüs Koruması",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3manipulator/skathtier3manipulator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.19^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.19^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3manipulator/skathtier3manipulator.head",
+      "pointer": "/shortdescription",
+      "en": "Dracon Helmet",
+      "tr": "Dracon Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3manipulator/skathtier3manipulator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.19^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.19^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3manipulator/skathtier3manipulator.legs",
+      "pointer": "/shortdescription",
+      "en": "Dracon Trousers",
+      "tr": "Dracon Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3manipulator/skathtier3manipulator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.19^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.19^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3separator/skathtier3separator.chest",
+      "pointer": "/shortdescription",
+      "en": "Visionary Techjacket",
+      "tr": "Vizyoner Tekno Ceketi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3separator/skathtier3separator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.16^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.16^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3separator/skathtier3separator.head",
+      "pointer": "/shortdescription",
+      "en": "Visionary Helm",
+      "tr": "Vizyoner Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3separator/skathtier3separator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.16^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.16^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3separator/skathtier3separator.legs",
+      "pointer": "/shortdescription",
+      "en": "Visionary Trousers",
+      "tr": "Vizyoner Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/skath/skath-tier3separator/skathtier3separator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle/Shortsword: Damage x^green;1.16^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği/Kısa Kılıç: Hasar x^green;1.16^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/slimeperson/slimeperson-invisible/invisible.chest",
+      "pointer": "/shortdescription",
+      "en": "Invisible Shirt",
+      "tr": "Görünmez Gömlek",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/slimeperson/slimeperson-invisible/invisible.chest",
+      "pointer": "/description",
+      "en": "Nothing to see here.",
+      "tr": "Burada görülecek bir şey yok.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/slimeperson/slimeperson-invisible/invisible.head",
+      "pointer": "/shortdescription",
+      "en": "Invisible Mask",
+      "tr": "Görünmez Maske",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/slimeperson/slimeperson-invisible/invisible.head",
+      "pointer": "/description",
+      "en": "Nothing to see here.",
+      "tr": "Burada görülecek bir şey yok.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/slimeperson/slimeperson-invisible/invisible.legs",
+      "pointer": "/shortdescription",
+      "en": "Invisible Pants",
+      "tr": "Görünmez Pantolon",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/slimeperson/slimeperson-invisible/invisible.legs",
+      "pointer": "/description",
+      "en": "Nothing to see here.",
+      "tr": "Burada görülecek bir şey yok.",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/armoredsnowpants/armoredsnowpants.legs",
+      "pointer": "/shortdescription",
+      "en": "Reinforced Snowpants",
+      "tr": "Takviyeli Kar Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/armoredsnowpants/armoredsnowpants.legs",
+      "pointer": "/description",
+      "en": "Snow won't slow these puppies down.\n+^green;15^reset;% Ice Resist\n^cyan;Immune: Snow, Ice and Slush^reset;",
+      "tr": "Bu pantolonla karda hız kesmezsin.\n+^green;15^reset;% Buz Direnci\n^cyan;Bağışıklık: Kar, Buz ve Sulu Kar^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/bloodhound/bloodhound.chest",
+      "pointer": "/shortdescription",
+      "en": "Bloodhound Chestpiece",
+      "tr": "Kan Tazısı Göğüslüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/bloodhound/bloodhound.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Damage x^green;1.05^reset;\n^yellow;^reset; Scythe/Sniper: +^green;2^reset;% Crit Chance, Damage x^green;1.15^reset;\n^yellow;^reset; Wasteland/Eden: Damage/Health x^green;1.25^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Hasar x^green;1.05^reset;\n^yellow;^reset; Tırpan/Keskin Nişancı Tüfeği: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.15^reset;\n^yellow;^reset; Çorak/Eden: Hasar/Can x^green;1.25^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/bloodhound/bloodhound.head",
+      "pointer": "/shortdescription",
+      "en": "Bloodhound Helmet",
+      "tr": "Kan Tazısı Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/bloodhound/bloodhound.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Damage x^green;1.05^reset;\n^yellow;^reset; Scythe/Sniper: +^green;2^reset;% Crit Chance, Damage x^green;1.15^reset;\n^yellow;^reset; Wasteland/Eden: Damage/Health x^green;1.25^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Hasar x^green;1.05^reset;\n^yellow;^reset; Tırpan/Keskin Nişancı Tüfeği: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.15^reset;\n^yellow;^reset; Çorak/Eden: Hasar/Can x^green;1.25^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/bloodhound/bloodhound.legs",
+      "pointer": "/shortdescription",
+      "en": "Bloodhound Greaves",
+      "tr": "Kan Tazısı Baldırlığı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/bloodhound/bloodhound.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Damage x^green;1.05^reset;\n^yellow;^reset; Scythe/Sniper: +^green;2^reset;% Crit Chance, Damage x^green;1.15^reset;\n^yellow;^reset; Wasteland/Eden: Damage/Health x^green;1.25^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Hasar x^green;1.05^reset;\n^yellow;^reset; Tırpan/Keskin Nişancı Tüfeği: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.15^reset;\n^yellow;^reset; Çorak/Eden: Hasar/Can x^green;1.25^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/fubonearmor/fubone.chest",
+      "pointer": "/shortdescription",
+      "en": "Bone Chest",
+      "tr": "Kemik Göğüslük",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/fubonearmor/fubone.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.05^reset;, Fall Damage x^green;0.85^reset;^reset;\n^yellow;^reset; Longsword or Axe: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Lush/Forest^reset;: Health x^green;1.05^reset;, Damage x^green;1.05^reset;, +^green;5^reset;% Phys. Resist^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.05^reset;, Düşme Hasarı x^green;0.85^reset;^reset;\n^yellow;^reset; Uzun Kılıç veya Balta: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Yemyeşil/Orman^reset;: Can x^green;1.05^reset;, Hasar x^green;1.05^reset;, +^green;5^reset;% Fiziksel Direnç^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/fubonearmor/fubone.head",
+      "pointer": "/shortdescription",
+      "en": "Bone Mask",
+      "tr": "Kemik Maske",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/fubonearmor/fubone.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.05^reset;, Fall Damage x^green;0.85^reset;^reset;\n^yellow;^reset; Longsword or Axe: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Lush/Forest^reset;: Health x^green;1.05^reset;, Damage x^green;1.05^reset;, +^green;5^reset;% Phys. Resist^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.05^reset;, Düşme Hasarı x^green;0.85^reset;^reset;\n^yellow;^reset; Uzun Kılıç veya Balta: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Yemyeşil/Orman^reset;: Can x^green;1.05^reset;, Hasar x^green;1.05^reset;, +^green;5^reset;% Fiziksel Direnç^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/fubonearmor/fubone.legs",
+      "pointer": "/shortdescription",
+      "en": "Bone Legs",
+      "tr": "Kemik Baldırlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/fubonearmor/fubone.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.05^reset;, Fall Damage x^green;0.85^reset;^reset;\n^yellow;^reset; Longsword or Axe: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Lush/Forest^reset;: Health x^green;1.05^reset;, Damage x^green;1.05^reset;, +^green;5^reset;% Phys. Resist^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.05^reset;, Düşme Hasarı x^green;0.85^reset;^reset;\n^yellow;^reset; Uzun Kılıç veya Balta: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Yemyeşil/Orman^reset;: Can x^green;1.05^reset;, Hasar x^green;1.05^reset;, +^green;5^reset;% Fiziksel Direnç^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/leatherarmor/leatherarmor.chest",
+      "pointer": "/shortdescription",
+      "en": "Leather Jerkin",
+      "tr": "Deri Yelek",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/leatherarmor/leatherarmor.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;1^reset;% Crit Chance, +^green;2.5^reset;% Speed\n^yellow;^reset; Garden/Forest: Energy x^green;1.05^reset;, +^green;5^reset;% Knockback Resistance\n^yellow;^reset; Bow/XBow^reset;: +^green;2^reset;% Crit Chance, Damage x^green;1.15^reset;, -^green;4^reset; Energy Per Shot, +^green;5^reset; Air Dmg, +^green;10^reset;% Draw Speed",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;1^reset;% Kritik Şansı, +^green;2.5^reset;% Hız\n^yellow;^reset; Bahçe/Orman: Enerji x^green;1.05^reset;, +^green;5^reset;% Geri Tepme Direnci\n^yellow;^reset; Yay/Arbalet^reset;: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.15^reset;, -^green;4^reset; Atış Başına Enerji, +^green;5^reset; Havada Hasar, +^green;10^reset;% Germe Hızı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/leatherarmor/leatherarmor.head",
+      "pointer": "/shortdescription",
+      "en": "Leather Cap",
+      "tr": "Deri Başlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/leatherarmor/leatherarmor.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;1^reset;% Crit Chance, +^green;2.5^reset;% Speed\n^yellow;^reset; Garden/Forest: Energy x^green;1.05^reset;, +^green;5^reset;% Knockback Resistance\n^yellow;^reset; Bow/XBow^reset;: +^green;2^reset;% Crit Chance, Damage x^green;1.15^reset;, -^green;4^reset; Energy Per Shot, +^green;5^reset; Air Dmg, +^green;10^reset;% Draw Speed",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;1^reset;% Kritik Şansı, +^green;2.5^reset;% Hız\n^yellow;^reset; Bahçe/Orman: Enerji x^green;1.05^reset;, +^green;5^reset;% Geri Tepme Direnci\n^yellow;^reset; Yay/Arbalet^reset;: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.15^reset;, -^green;4^reset; Atış Başına Enerji, +^green;5^reset; Havada Hasar, +^green;10^reset;% Germe Hızı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/leatherarmor/leatherarmor.legs",
+      "pointer": "/shortdescription",
+      "en": "Leather Leggings",
+      "tr": "Deri Pantolon",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/leatherarmor/leatherarmor.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;1^reset;% Crit Chance, +^green;2.5^reset;% Speed\n^yellow;^reset; Garden/Forest: Energy x^green;1.05^reset;, +^green;5^reset;% Knockback Resistance\n^yellow;^reset; Bow/XBow^reset;: +^green;2^reset;% Crit Chance, Damage x^green;1.15^reset;, -^green;4^reset; Energy Per Shot, +^green;5^reset; Air Dmg, +^green;10^reset;% Draw Speed",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;1^reset;% Kritik Şansı, +^green;2.5^reset;% Hız\n^yellow;^reset; Bahçe/Orman: Enerji x^green;1.05^reset;, +^green;5^reset;% Geri Tepme Direnci\n^yellow;^reset; Yay/Arbalet^reset;: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.15^reset;, -^green;4^reset; Atış Başına Enerji, +^green;5^reset; Havada Hasar, +^green;10^reset;% Germe Hızı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/missionary/missionaryrobe.chest",
+      "pointer": "/shortdescription",
+      "en": "Monk's Robe",
+      "tr": "Keşiş Cübbesi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/missionary/missionaryrobe.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;5^reset;% Speed and Jump\n^yellow;^reset; +^green;5^reset;% Crit Damage^reset;\n^yellow;^reset; Dual Fist/Quarterstaff: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;5^reset;% Hız ve Zıplama\n^yellow;^reset; +^green;5^reset;% Kritik Hasarı^reset;\n^yellow;^reset; Çift Yumruk/Dövüş Asası: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/missionary/missionaryrobe.head",
+      "pointer": "/shortdescription",
+      "en": "Monk's Hood",
+      "tr": "Keşiş Kapüşonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/missionary/missionaryrobe.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;5^reset;% Speed and Jump\n^yellow;^reset; +^green;5^reset;% Crit Damage^reset;\n^yellow;^reset; Dual Fist/Quarterstaff: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;5^reset;% Hız ve Zıplama\n^yellow;^reset; +^green;5^reset;% Kritik Hasarı^reset;\n^yellow;^reset; Çift Yumruk/Dövüş Asası: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/missionary/missionaryrobe.legs",
+      "pointer": "/shortdescription",
+      "en": "Monk's Leggings",
+      "tr": "Keşiş Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/missionary/missionaryrobe.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;5^reset;% Speed and Jump\n^yellow;^reset; +^green;5^reset;% Crit Damage^reset;\n^yellow;^reset; Dual Fist/Quarterstaff: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;5^reset;% Hız ve Zıplama\n^yellow;^reset; +^green;5^reset;% Kritik Hasarı^reset;\n^yellow;^reset; Çift Yumruk/Dövüş Asası: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/plebeian/mantizitier1.chest",
+      "pointer": "/shortdescription",
+      "en": "Plebeian Plates",
+      "tr": "Sıradan Zırh",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/plebeian/mantizitier1.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;15^reset;% Shield Health and Regen\n^yellow;^reset; Sword/Mace + Shield: Health x^green;1.2^reset;, +^green;15^reset;% Knockback Resist",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;15^reset;% Kalkan Canı ve Yenilenmesi\n^yellow;^reset; Kılıç/Topuz + Kalkan: Can x^green;1.2^reset;, +^green;15^reset;% Geri Tepme Direnci",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/plebeian/mantizitier1.legs",
+      "pointer": "/shortdescription",
+      "en": "Plebeian Greaves",
+      "tr": "Sıradan Baldırlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/plebeian/mantizitier1.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;15^reset;% Shield Health and Regen\n^yellow;^reset; Sword/Mace + Shield: Health x^green;1.2^reset;, +^green;15^reset;% Knockback Resist",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;15^reset;% Kalkan Canı ve Yenilenmesi\n^yellow;^reset; Kılıç/Topuz + Kalkan: Can x^green;1.2^reset;, +^green;15^reset;% Geri Tepme Direnci",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/spacediver/spacediver.chest",
+      "pointer": "/shortdescription",
+      "en": "Space Diver Suit",
+      "tr": "Uzay Dalgıcı Giysisi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/spacediver/spacediver.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;20^reset;% Knockback Resist, ^green;2x^reset; Breath\n^yellow;^reset; Harpoon Gun: Damage x^green;1.2^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;20^reset;% Geri Tepme Direnci, ^green;2x^reset; Nefes\n^yellow;^reset; Zıpkın Tüfeği: Hasar x^green;1.2^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/spacediver/spacediver.head",
+      "pointer": "/shortdescription",
+      "en": "Space Diver Helmet",
+      "tr": "Uzay Dalgıcı Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/spacediver/spacediver.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;20^reset;% Knockback Resist, ^green;2x^reset; Breath\n^yellow;^reset; Harpoon Gun: Damage x^green;1.2^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;20^reset;% Geri Tepme Direnci, ^green;2x^reset; Nefes\n^yellow;^reset; Zıpkın Tüfeği: Hasar x^green;1.2^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/spacediver/spacediver.legs",
+      "pointer": "/shortdescription",
+      "en": "Space Diver Pants",
+      "tr": "Uzay Dalgıcı Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/spacediver/spacediver.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;20^reset;% Knockback Resist, ^green;2x^reset; Breath\n^yellow;^reset; Harpoon Gun: Damage x^green;1.2^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;20^reset;% Geri Tepme Direnci, ^green;2x^reset; Nefes\n^yellow;^reset; Zıpkın Tüfeği: Hasar x^green;1.2^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/underworld/kirhostier1.chest",
+      "pointer": "/shortdescription",
+      "en": "Underworld Chestpiece",
+      "tr": "Yeraltı Göğüslüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/underworld/kirhostier1.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; (Machine) Pistols: +^green;1^reset;/+^green;2.5^reset;% Crit Chance\n^yellow;^reset; Assault/Sniper Rifles: +^green;2^reset;% Crit Chance^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Tabanca/Makineli Tabanca: +^green;1^reset;/+^green;2.5^reset;% Kritik Şansı\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: +^green;2^reset;% Kritik Şansı^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/underworld/kirhostier1.head",
+      "pointer": "/shortdescription",
+      "en": "Underworld Goggles",
+      "tr": "Yeraltı Gözlüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/underworld/kirhostier1.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; (Machine) Pistols: +^green;1^reset;/+^green;2.5^reset;% Crit Chance\n^yellow;^reset; Assault/Sniper Rifles: +^green;2^reset;% Crit Chance^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Tabanca/Makineli Tabanca: +^green;1^reset;/+^green;2.5^reset;% Kritik Şansı\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: +^green;2^reset;% Kritik Şansı^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/underworld/kirhostier1.legs",
+      "pointer": "/shortdescription",
+      "en": "Underworld Greaves",
+      "tr": "Yeraltı Baldırlığı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier1/underworld/kirhostier1.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; (Machine) Pistols: +^green;1^reset;/+^green;2.5^reset;% Crit Chance\n^yellow;^reset; Assault/Sniper Rifles: +^green;2^reset;% Crit Chance^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Tabanca/Makineli Tabanca: +^green;1^reset;/+^green;2.5^reset;% Kritik Şansı\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: +^green;2^reset;% Kritik Şansı^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/battletotem/beararmor.chest",
+      "pointer": "/shortdescription",
+      "en": "Battle Totem Jerkin",
+      "tr": "Savaş Totemi Zırhı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/battletotem/beararmor.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Hammer & Greataxe Mastery: +^green;20^reset;%\n^yellow;^reset; +^green;20^reset;% Knockback Resist\n^yellow;^reset; Axes, Two-handed Melee: +^green;3.5^reset;% Crit Chance, Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Slush, Chill",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Çekiç ve Büyük Balta Ustalığı: +^green;20^reset;%\n^yellow;^reset; +^green;20^reset;% Geri Tepme Direnci\n^yellow;^reset; Baltalar, Çift Elli Yakın Dövüş: +^green;3.5^reset;% Kritik Şansı, Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sulu Kar, Üşüme",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/battletotem/beararmor.head",
+      "pointer": "/shortdescription",
+      "en": "Battle Totem Mask",
+      "tr": "Savaş Totemi Maskesi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/battletotem/beararmor.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Hammer & Greataxe Mastery: +^green;20^reset;%\n^yellow;^reset; +^green;20^reset;% Knockback Resist\n^yellow;^reset; Axes, Two-handed Melee: +^green;3.5^reset;% Crit Chance, Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Slush, Chill",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Çekiç ve Büyük Balta Ustalığı: +^green;20^reset;%\n^yellow;^reset; +^green;20^reset;% Geri Tepme Direnci\n^yellow;^reset; Baltalar, Çift Elli Yakın Dövüş: +^green;3.5^reset;% Kritik Şansı, Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sulu Kar, Üşüme",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/battletotem/beararmor.legs",
+      "pointer": "/shortdescription",
+      "en": "Battle Totem Greaves",
+      "tr": "Savaş Totemi Baldırlığı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/battletotem/beararmor.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Hammer & Greataxe Mastery: +^green;20^reset;%\n^yellow;^reset; +^green;20^reset;% Knockback Resist\n^yellow;^reset; Axes, Two-handed Melee: +^green;3.5^reset;% Crit Chance, Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Slush, Chill",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Çekiç ve Büyük Balta Ustalığı: +^green;20^reset;%\n^yellow;^reset; +^green;20^reset;% Geri Tepme Direnci\n^yellow;^reset; Baltalar, Çift Elli Yakın Dövüş: +^green;3.5^reset;% Kritik Şansı, Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sulu Kar, Üşüme",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fangshaman/wolf.chest",
+      "pointer": "/shortdescription",
+      "en": "Fang Shaman Coat",
+      "tr": "Diş Şamanı Paltosu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fangshaman/wolf.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Dagger Mastery: +^green;15^reset;%\n^yellow;^reset; Dagger/Shortsword: +^green;10^reset;/^green;20^reset;% Crit Damage\n^yellow;^reset; ^cyan;Immune^reset;: Snow, Chill^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Hançer Ustalığı: +^green;15^reset;%\n^yellow;^reset; Hançer/Kısa Kılıç: +^green;10^reset;/^green;20^reset;% Kritik Hasarı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Kar, Üşüme^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fangshaman/wolf.head",
+      "pointer": "/shortdescription",
+      "en": "Fang Shaman Hood",
+      "tr": "Diş Şamanı Kapüşonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fangshaman/wolf.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Dagger Mastery: +^green;15^reset;%\n^yellow;^reset; Dagger/Shortsword: +^green;10^reset;/^green;20^reset;% Crit Damage\n^yellow;^reset; ^cyan;Immune^reset;: Snow, Chill^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Hançer Ustalığı: +^green;15^reset;%\n^yellow;^reset; Hançer/Kısa Kılıç: +^green;10^reset;/^green;20^reset;% Kritik Hasarı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Kar, Üşüme^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fangshaman/wolf.legs",
+      "pointer": "/shortdescription",
+      "en": "Fang Shaman Leggings",
+      "tr": "Diş Şamanı Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fangshaman/wolf.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Dagger Mastery: +^green;15^reset;%\n^yellow;^reset; Dagger/Shortsword: +^green;10^reset;/^green;20^reset;% Crit Damage\n^yellow;^reset; ^cyan;Immune^reset;: Snow, Chill^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Hançer Ustalığı: +^green;15^reset;%\n^yellow;^reset; Hançer/Kısa Kılıç: +^green;10^reset;/^green;20^reset;% Kritik Hasarı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Kar, Üşüme^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/ff_slimearmor/ff_slimearmor.chest",
+      "pointer": "/shortdescription",
+      "en": "Slime Chest",
+      "tr": "Balçık Göğüslük",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/ff_slimearmor/ff_slimearmor.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Spawns Minions^reset;: Slimes\n^yellow;^reset; Health x^green;1.1^reset;\n^yellow;^reset; Slime weapons: Damage x^green;1.1^reset;/^green;1.2^reset;, +^green;5%^reset; Crit Chance;\n^yellow;^reset; ^cyan;Immune^reset;: Slime, Mud, Clay",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yardımcı Çağırır^reset;: Balçıklar\n^yellow;^reset; Can x^green;1.1^reset;\n^yellow;^reset; Balçık silahları: Hasar x^green;1.1^reset;/^green;1.2^reset;, +^green;5%^reset; Kritik Şansı;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Balçık, Çamur, Kil",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/ff_slimearmor/ff_slimearmor.head",
+      "pointer": "/shortdescription",
+      "en": "Slime Helm",
+      "tr": "Balçık Miğfer",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/ff_slimearmor/ff_slimearmor.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Spawns Minions^reset;: Slimes\n^yellow;^reset; Health x^green;1.1^reset;\n^yellow;^reset; Slime weapons: Damage x^green;1.1^reset;/^green;1.2^reset;, +^green;5%^reset; Crit Chance;\n^yellow;^reset; ^cyan;Immune^reset;: Slime, Mud, Clay",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yardımcı Çağırır^reset;: Balçıklar\n^yellow;^reset; Can x^green;1.1^reset;\n^yellow;^reset; Balçık silahları: Hasar x^green;1.1^reset;/^green;1.2^reset;, +^green;5%^reset; Kritik Şansı;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Balçık, Çamur, Kil",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/ff_slimearmor/ff_slimearmor.legs",
+      "pointer": "/shortdescription",
+      "en": "Slime Greaves",
+      "tr": "Balçık Baldırlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/ff_slimearmor/ff_slimearmor.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Spawns Minions^reset;: Slimes\n^yellow;^reset; Health x^green;1.1^reset;\n^yellow;^reset; Slime weapons: Damage x^green;1.1^reset;/^green;1.2^reset;, +^green;5%^reset; Crit Chance;\n^yellow;^reset; ^cyan;Immune^reset;: Slime, Mud, Clay",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yardımcı Çağırır^reset;: Balçıklar\n^yellow;^reset; Can x^green;1.1^reset;\n^yellow;^reset; Balçık silahları: Hasar x^green;1.1^reset;/^green;1.2^reset;, +^green;5%^reset; Kritik Şansı;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Balçık, Çamur, Kil",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fubonearmor2/fubone2.chest",
+      "pointer": "/shortdescription",
+      "en": "Bone-Steel Chest",
+      "tr": "Kemik Çelik Göğüslük",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fubonearmor2/fubone2.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; Swords: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Kılıçlar: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fubonearmor2/fubone2.head",
+      "pointer": "/shortdescription",
+      "en": "Bone-Steel Mask",
+      "tr": "Kemik Çelik Maske",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fubonearmor2/fubone2.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; Swords: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Kılıçlar: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fubonearmor2/fubone2.legs",
+      "pointer": "/shortdescription",
+      "en": "Bone-Steel Legs",
+      "tr": "Kemik Çelik Baldırlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/fubonearmor2/fubone2.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; Swords: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Kılıçlar: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/furecon/furecon.chest",
+      "pointer": "/shortdescription",
+      "en": "Recon Vest",
+      "tr": "Keşif Yeleği",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/furecon/furecon.chest",
+      "pointer": "/description",
+      "en": "^orange;^orange;Set Bonuses^reset;: ^reset;\n^yellow;^reset; +^green;5^reset;% Speed\n^yellow;^reset; Assault/Sniper Rifle: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Radiation Burn^reset;",
+      "tr": "^orange;^orange;Set Bonusları^reset;: ^reset;\n^yellow;^reset; +^green;5^reset;% Hız\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Radyasyon Yanığı^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/furecon/furecon.head",
+      "pointer": "/shortdescription",
+      "en": "Recon Headgear",
+      "tr": "Keşif Başlığı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/furecon/furecon.head",
+      "pointer": "/description",
+      "en": "^orange;^orange;Set Bonuses^reset;: ^reset;\n^yellow;^reset; +^green;5^reset;% Speed\n^yellow;^reset; Assault/Sniper Rifle: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Radiation Burn^reset;",
+      "tr": "^orange;^orange;Set Bonusları^reset;: ^reset;\n^yellow;^reset; +^green;5^reset;% Hız\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Radyasyon Yanığı^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/furecon/furecon.legs",
+      "pointer": "/shortdescription",
+      "en": "Recon Leggings",
+      "tr": "Keşif Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/furecon/furecon.legs",
+      "pointer": "/description",
+      "en": "^orange;^orange;Set Bonuses^reset;: ^reset;\n^yellow;^reset; +^green;5^reset;% Speed\n^yellow;^reset; Assault/Sniper Rifle: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Radiation Burn^reset;",
+      "tr": "^orange;^orange;Set Bonusları^reset;: ^reset;\n^yellow;^reset; +^green;5^reset;% Hız\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Radyasyon Yanığı^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/hacker/kirhostier2.chest",
+      "pointer": "/shortdescription",
+      "en": "Hacker Overcoat",
+      "tr": "Hacker Paltosu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/hacker/kirhostier2.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;25^reset;% Energy Regen\n^yellow;^reset; Striker: +^green;1^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;25^reset;% Enerji Yenilenmesi\n^yellow;^reset; Ezici: +^green;1^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/hacker/kirhostier2.head",
+      "pointer": "/shortdescription",
+      "en": "Hacker Mask",
+      "tr": "Hacker Maskesi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/hacker/kirhostier2.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;25^reset;% Energy Regen\n^yellow;^reset; Striker: +^green;1^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;25^reset;% Enerji Yenilenmesi\n^yellow;^reset; Ezici: +^green;1^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/hacker/kirhostier2.legs",
+      "pointer": "/shortdescription",
+      "en": "Hacker Pants",
+      "tr": "Hacker Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/hacker/kirhostier2.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;25^reset;% Energy Regen\n^yellow;^reset; Striker: +^green;1^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;25^reset;% Enerji Yenilenmesi\n^yellow;^reset; Ezici: +^green;1^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/lunariarmor/lunari.chest",
+      "pointer": "/shortdescription",
+      "en": "Lunari Armor",
+      "tr": "Lunari Zırh",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/lunariarmor/lunari.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;12^reset;% Energy Regen\n^yellow;^reset; Lunari weapons: Damage x^green;1.15^reset;, +^green;4^reset;% Crit Chance",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;12^reset;% Enerji Yenilenmesi\n^yellow;^reset; Lunari silahları: Hasar x^green;1.15^reset;, +^green;4^reset;% Kritik Şansı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/lunariarmor/lunari.head",
+      "pointer": "/shortdescription",
+      "en": "Lunari Helm",
+      "tr": "Lunari Miğfer",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/lunariarmor/lunari.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;12^reset;% Energy Regen\n^yellow;^reset; Lunari weapons: Damage x^green;1.15^reset;, +^green;4^reset;% Crit Chance",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;12^reset;% Enerji Yenilenmesi\n^yellow;^reset; Lunari silahları: Hasar x^green;1.15^reset;, +^green;4^reset;% Kritik Şansı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/lunariarmor/lunari.legs",
+      "pointer": "/shortdescription",
+      "en": "Lunari Greaves",
+      "tr": "Lunari Baldırlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/lunariarmor/lunari.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;12^reset;% Energy Regen\n^yellow;^reset; Lunari weapons: Damage x^green;1.15^reset;, +^green;4^reset;% Crit Chance",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;12^reset;% Enerji Yenilenmesi\n^yellow;^reset; Lunari silahları: Hasar x^green;1.15^reset;, +^green;4^reset;% Kritik Şansı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguard/royalguard.chest",
+      "pointer": "/shortdescription",
+      "en": "Stalwart Top",
+      "tr": "Yılmaz Zırh",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguard/royalguard.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shortspear Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;15^reset;% Knockback Resist\n^yellow;^reset; Defense x^green;1.15^reset;\n^yellow;^reset; All Spears: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Kısa Mızrak Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;15^reset;% Geri Tepme Direnci\n^yellow;^reset; Savunma x^green;1.15^reset;\n^yellow;^reset; Tüm Mızraklar: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguard/royalguard.head",
+      "pointer": "/shortdescription",
+      "en": "Stalwart Helmet",
+      "tr": "Yılmaz Miğfer",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguard/royalguard.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shortspear Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;15^reset;% Knockback Resist\n^yellow;^reset; Defense x^green;1.15^reset;\n^yellow;^reset; All Spears: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Kısa Mızrak Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;15^reset;% Geri Tepme Direnci\n^yellow;^reset; Savunma x^green;1.15^reset;\n^yellow;^reset; Tüm Mızraklar: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguard/royalguard.legs",
+      "pointer": "/shortdescription",
+      "en": "Stalwart Leggings",
+      "tr": "Yılmaz Pantolon",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguard/royalguard.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shortspear Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;15^reset;% Knockback Resist\n^yellow;^reset; Defense x^green;1.15^reset;\n^yellow;^reset; All Spears: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Kısa Mızrak Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;15^reset;% Geri Tepme Direnci\n^yellow;^reset; Savunma x^green;1.15^reset;\n^yellow;^reset; Tüm Mızraklar: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguardornate/royalguardornate.chest",
+      "pointer": "/shortdescription",
+      "en": "Footman Plate",
+      "tr": "Piyade Zırhı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguardornate/royalguardornate.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shortsword/Longsword/Mace Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;17^reset;% Shield Health and Regen\n^yellow;^reset; Sword/Mace and Shield: +^green;2^reset;% Crit Chance, +^green;15^reset;% Crit Damage, +^green;15^reset;% Knockback Resist",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Kısa Kılıç/Uzun Kılıç/Topuz Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;17^reset;% Kalkan Canı ve Yenilenmesi\n^yellow;^reset; Kılıç/Topuz ve Kalkan: +^green;2^reset;% Kritik Şansı, +^green;15^reset;% Kritik Hasarı, +^green;15^reset;% Geri Tepme Direnci",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguardornate/royalguardornate.head",
+      "pointer": "/shortdescription",
+      "en": "Footman Helmet",
+      "tr": "Piyade Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguardornate/royalguardornate.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shortsword/Longsword/Mace Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;17^reset;% Shield Health and Regen\n^yellow;^reset; Sword/Mace and Shield: +^green;2^reset;% Crit Chance, +^green;15^reset;% Crit Damage, +^green;15^reset;% Knockback Resist",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Kısa Kılıç/Uzun Kılıç/Topuz Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;17^reset;% Kalkan Canı ve Yenilenmesi\n^yellow;^reset; Kılıç/Topuz ve Kalkan: +^green;2^reset;% Kritik Şansı, +^green;15^reset;% Kritik Hasarı, +^green;15^reset;% Geri Tepme Direnci",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguardornate/royalguardornate.legs",
+      "pointer": "/shortdescription",
+      "en": "Footman Leggings",
+      "tr": "Piyade Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/mantiziroyalguardornate/royalguardornate.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shortsword/Longsword/Mace Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;17^reset;% Shield Health and Regen\n^yellow;^reset; Sword/Mace and Shield: +^green;2^reset;% Crit Chance, +^green;15^reset;% Crit Damage, +^green;15^reset;% Knockback Resist",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Kısa Kılıç/Uzun Kılıç/Topuz Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;17^reset;% Kalkan Canı ve Yenilenmesi\n^yellow;^reset; Kılıç/Topuz ve Kalkan: +^green;2^reset;% Kritik Şansı, +^green;15^reset;% Kritik Hasarı, +^green;15^reset;% Geri Tepme Direnci",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/militia/mantizitier2.chest",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Armor",
+      "tr": "Telebrium Zırh",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/militia/mantizitier2.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.1^reset;\n^yellow;^reset; Shotgun/Assault Rifle: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.1^reset;\n^yellow;^reset; Pompalı/Taarruz Tüfeği: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/militia/mantizitier2.head",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Helmet",
+      "tr": "Telebrium Miğfer",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/militia/mantizitier2.head",
+      "pointer": "/description",
+      "en": "^cyan;Headlamp^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.1^reset;\n^yellow;^reset; Shotgun/Assault Rifle: Damage x^green;1.15^reset;",
+      "tr": "^cyan;Kafa Lambası^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.1^reset;\n^yellow;^reset; Pompalı/Taarruz Tüfeği: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/militia/mantizitier2.legs",
+      "pointer": "/shortdescription",
+      "en": "Telebrium Greaves",
+      "tr": "Telebrium Baldırlık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/militia/mantizitier2.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.1^reset;\n^yellow;^reset; Shotgun/Assault Rifle: Damage x^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.1^reset;\n^yellow;^reset; Pompalı/Taarruz Tüfeği: Hasar x^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/nomad/fudesertwalker.chest",
+      "pointer": "/shortdescription",
+      "en": "Nomad Robes",
+      "tr": "Göçebe Cübbesi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/nomad/fudesertwalker.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;20^reset;% Shield Regen^reset;\n^yellow;^reset; Dagger/Shortspear: Damage x^green;1.15^reset;\n^yellow;^reset; Assault/Sniper Rifle: Damage x^green;1.08^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning, Sandstorms, Quicksand",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;20^reset;% Kalkan Yenilenmesi^reset;\n^yellow;^reset; Hançer/Kısa Mızrak: Hasar x^green;1.15^reset;\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: Hasar x^green;1.08^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma, Kum Fırtınaları, Batak Kum",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/nomad/fudesertwalker.head",
+      "pointer": "/shortdescription",
+      "en": "Nomad Hood",
+      "tr": "Göçebe Kapüşonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/nomad/fudesertwalker.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;20^reset;% Shield Regen^reset;\n^yellow;^reset; Dagger/Shortspear: Damage x^green;1.15^reset;\n^yellow;^reset; Assault/Sniper Rifle: Damage x^green;1.08^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning, Sandstorms, Quicksand",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;20^reset;% Kalkan Yenilenmesi^reset;\n^yellow;^reset; Hançer/Kısa Mızrak: Hasar x^green;1.15^reset;\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: Hasar x^green;1.08^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma, Kum Fırtınaları, Batak Kum",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/nomad/fudesertwalker.legs",
+      "pointer": "/shortdescription",
+      "en": "Nomad Pants",
+      "tr": "Göçebe Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/nomad/fudesertwalker.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;20^reset;% Shield Regen^reset;\n^yellow;^reset; Dagger/Shortspear: Damage x^green;1.15^reset;\n^yellow;^reset; Assault/Sniper Rifle: Damage x^green;1.08^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning, Sandstorms, Quicksand",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;20^reset;% Kalkan Yenilenmesi^reset;\n^yellow;^reset; Hançer/Kısa Mızrak: Hasar x^green;1.15^reset;\n^yellow;^reset; Taarruz/Keskin Nişancı Tüfeği: Hasar x^green;1.08^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma, Kum Fırtınaları, Batak Kum",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/operative/fuoperative.chest",
+      "pointer": "/shortdescription",
+      "en": "Operative Chest Armor",
+      "tr": "Ajan Göğüs Zırhı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/operative/fuoperative.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;4^reset;% Crit Chance, +^green;20^reset;% Crit Damage\n^yellow;^reset; +^green;8^reset;% Speed/Jump",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;4^reset;% Kritik Şansı, +^green;20^reset;% Kritik Hasarı\n^yellow;^reset; +^green;8^reset;% Hız/Zıplama",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/operative/fuoperative.head",
+      "pointer": "/shortdescription",
+      "en": "Operative Cap",
+      "tr": "Ajan Başlığı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/operative/fuoperative.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;4^reset;% Crit Chance, +^green;20^reset;% Crit Damage\n^yellow;^reset; +^green;8^reset;% Speed/Jump",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;4^reset;% Kritik Şansı, +^green;20^reset;% Kritik Hasarı\n^yellow;^reset; +^green;8^reset;% Hız/Zıplama",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/operative/fuoperative.legs",
+      "pointer": "/shortdescription",
+      "en": "Operative Leg Armor",
+      "tr": "Ajan Bacak Zırhı",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/operative/fuoperative.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;4^reset;% Crit Chance, +^green;20^reset;% Crit Damage\n^yellow;^reset; +^green;8^reset;% Speed/Jump",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;4^reset;% Kritik Şansı, +^green;20^reset;% Kritik Hasarı\n^yellow;^reset; +^green;8^reset;% Hız/Zıplama",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/samurai/fusamuraiarmor.chest",
+      "pointer": "/shortdescription",
+      "en": "Samurai Breastplate",
+      "tr": "Samuray Göğüslüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/samurai/fusamuraiarmor.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Katana Mastery: +^green;15^reset;%\n^yellow;^reset; Dodge Techs: +^green;10^reset;%\n^yellow;^reset; Defense Techs: +^green;10^reset;%",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Katana Ustalığı: +^green;15^reset;%\n^yellow;^reset; Kaçınma Teknolojileri: +^green;10^reset;%\n^yellow;^reset; Savunma Teknolojileri: +^green;10^reset;%",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/samurai/fusamuraiarmor.head",
+      "pointer": "/shortdescription",
+      "en": "Samurai Helmet",
+      "tr": "Samuray Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/samurai/fusamuraiarmor.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Katana Mastery: +^green;15^reset;%\n^yellow;^reset; Dodge Techs: +^green;10^reset;%\n^yellow;^reset; Defense Techs: +^green;10^reset;%",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Katana Ustalığı: +^green;15^reset;%\n^yellow;^reset; Kaçınma Teknolojileri: +^green;10^reset;%\n^yellow;^reset; Savunma Teknolojileri: +^green;10^reset;%",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/samurai/fusamuraiarmor.legs",
+      "pointer": "/shortdescription",
+      "en": "Samurai Pants",
+      "tr": "Samuray Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/samurai/fusamuraiarmor.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Katana Mastery: +^green;15^reset;%\n^yellow;^reset; Dodge Techs: +^green;10^reset;%\n^yellow;^reset; Defense Techs: +^green;10^reset;%",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Katana Ustalığı: +^green;15^reset;%\n^yellow;^reset; Kaçınma Teknolojileri: +^green;10^reset;%\n^yellow;^reset; Savunma Teknolojileri: +^green;10^reset;%",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/sanguine/bloodgarb.chest",
+      "pointer": "/shortdescription",
+      "en": "Sanguine Vest",
+      "tr": "Kan Kızılı Yelek",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/sanguine/bloodgarb.chest",
+      "pointer": "/description",
+      "en": "+^green;5^reset;% Healing Strength\n^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;10^reset;% Speed\n^yellow;^reset; +^green;5^reset;% Life Leech\n^yellow;^reset; Dagger/Whip/Striker: +^green;4^reset;% Crit Chance, +^green;5^reset;% Life Leech",
+      "tr": "+^green;5^reset;% İyileştirme Gücü\n^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;10^reset;% Hız\n^yellow;^reset; +^green;5^reset;% Can Çalma\n^yellow;^reset; Hançer/Kırbaç/Ezici: +^green;4^reset;% Kritik Şansı, +^green;5^reset;% Can Çalma",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/sanguine/bloodgarb.head",
+      "pointer": "/shortdescription",
+      "en": "Sanguine Crown",
+      "tr": "Kan Kızılı Taç",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/sanguine/bloodgarb.head",
+      "pointer": "/description",
+      "en": "+^green;5^reset;% Healing Strength\n^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;10^reset;% Speed\n^yellow;^reset; +^green;5^reset;% Life Leech\n^yellow;^reset; Dagger/Whip/Striker: +^green;4^reset;% Crit Chance, +^green;5^reset;% Life Leech",
+      "tr": "+^green;5^reset;% İyileştirme Gücü\n^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;10^reset;% Hız\n^yellow;^reset; +^green;5^reset;% Can Çalma\n^yellow;^reset; Hançer/Kırbaç/Ezici: +^green;4^reset;% Kritik Şansı, +^green;5^reset;% Can Çalma",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/sanguine/bloodgarb.legs",
+      "pointer": "/shortdescription",
+      "en": "Sanguine Boots",
+      "tr": "Kan Kızılı Çizme",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/sanguine/bloodgarb.legs",
+      "pointer": "/description",
+      "en": "+^green;5^reset;% Healing Strength\n^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;10^reset;% Speed\n^yellow;^reset; +^green;5^reset;% Life Leech\n^yellow;^reset; Dagger/Whip/Striker: +^green;4^reset;% Crit Chance, +^green;5^reset;% Life Leech",
+      "tr": "+^green;5^reset;% İyileştirme Gücü\n^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;10^reset;% Hız\n^yellow;^reset; +^green;5^reset;% Can Çalma\n^yellow;^reset; Hançer/Kırbaç/Ezici: +^green;4^reset;% Kritik Şansı, +^green;5^reset;% Can Çalma",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/swashbuckler/cannoneer.chest",
+      "pointer": "/shortdescription",
+      "en": "Swashbuckler Coat",
+      "tr": "Kılıçbaz Paltosu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/swashbuckler/cannoneer.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Rapier Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;8^reset;% Jump, -^green;20^reset;% Hunger Drain\n^yellow;^reset; Rapier/Pistol: Damage x^green;1.075^reset;/^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Meç Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;8^reset;% Zıplama, -^green;20^reset;% Açlık Tüketimi\n^yellow;^reset; Meç/Tabanca: Hasar x^green;1.075^reset;/^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/swashbuckler/cannoneer.head",
+      "pointer": "/shortdescription",
+      "en": "Swashbuckler Hat",
+      "tr": "Kılıçbaz Şapkası",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/swashbuckler/cannoneer.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Rapier Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;8^reset;% Jump, -^green;20^reset;% Hunger Drain\n^yellow;^reset; Rapier/Pistol: Damage x^green;1.075^reset;/^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Meç Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;8^reset;% Zıplama, -^green;20^reset;% Açlık Tüketimi\n^yellow;^reset; Meç/Tabanca: Hasar x^green;1.075^reset;/^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/swashbuckler/cannoneer.legs",
+      "pointer": "/shortdescription",
+      "en": "Swashbuckler Pants",
+      "tr": "Kılıçbaz Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/swashbuckler/cannoneer.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Rapier Mastery: +^green;15^reset;%\n^yellow;^reset; +^green;8^reset;% Jump, -^green;20^reset;% Hunger Drain\n^yellow;^reset; Rapier/Pistol: Damage x^green;1.075^reset;/^green;1.15^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Meç Ustalığı: +^green;15^reset;%\n^yellow;^reset; +^green;8^reset;% Zıplama, -^green;20^reset;% Açlık Tüketimi\n^yellow;^reset; Meç/Tabanca: Hasar x^green;1.075^reset;/^green;1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/tw_spacesuit/tw_spacesuit.chest",
+      "pointer": "/shortdescription",
+      "en": "Hazard Breastplate",
+      "tr": "Tehlikeli Ortam Göğüslüğü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/tw_spacesuit/tw_spacesuit.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Max Breath x^green;2^reset;\n^yellow;^reset; Longsword/Energy: Damage x^green;1.12^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Azami Nefes x^green;2^reset;\n^yellow;^reset; Uzun Kılıç/Enerji: Hasar x^green;1.12^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/tw_spacesuit/tw_spacesuit.head",
+      "pointer": "/shortdescription",
+      "en": "Hazard Helmet",
+      "tr": "Tehlikeli Ortam Miğferi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/tw_spacesuit/tw_spacesuit.head",
+      "pointer": "/description",
+      "en": "^cyan;Headlamp^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; Max Breath x^green;2^reset;\n^yellow;^reset; Longsword/Energy: Damage x^green;1.12^reset;",
+      "tr": "^cyan;Kafa Lambası^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; Azami Nefes x^green;2^reset;\n^yellow;^reset; Uzun Kılıç/Enerji: Hasar x^green;1.12^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/tw_spacesuit/tw_spacesuit.legs",
+      "pointer": "/shortdescription",
+      "en": "Hazard Leggings",
+      "tr": "Tehlikeli Ortam Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/tw_spacesuit/tw_spacesuit.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Max Breath x^green;2^reset;\n^yellow;^reset; Longsword/Energy: Damage x^green;1.12^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Azami Nefes x^green;2^reset;\n^yellow;^reset; Uzun Kılıç/Enerji: Hasar x^green;1.12^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/vagabond/deckardchest.chest",
+      "pointer": "/shortdescription",
+      "en": "Vagabond's Coat",
+      "tr": "Avare Paltosu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/vagabond/deckardchest.chest",
+      "pointer": "/description",
+      "en": "^orange;^orange;Set Bonuses^reset;: ^reset;\n^yellow;^reset; +^green;10^reset;% Speed\n^yellow;^reset; (Machine) Pistol: Damage x^green;1.075/1.15^reset;",
+      "tr": "^orange;^orange;Set Bonusları^reset;: ^reset;\n^yellow;^reset; +^green;10^reset;% Hız\n^yellow;^reset; Tabanca/Makineli Tabanca: Hasar x^green;1.075/1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/vagabond/deckardhead.head",
+      "pointer": "/shortdescription",
+      "en": "Vagabond's Visor",
+      "tr": "Avare Vizörü",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/vagabond/deckardhead.head",
+      "pointer": "/description",
+      "en": "^orange;^orange;Set Bonuses^reset;: ^reset;\n^yellow;^reset; +^green;10^reset;% Speed\n^yellow;^reset; (Machine) Pistol: Damage x^green;1.075/1.15^reset;",
+      "tr": "^orange;^orange;Set Bonusları^reset;: ^reset;\n^yellow;^reset; +^green;10^reset;% Hız\n^yellow;^reset; Tabanca/Makineli Tabanca: Hasar x^green;1.075/1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/vagabond/deckardpants.legs",
+      "pointer": "/shortdescription",
+      "en": "Vagabond's Pants",
+      "tr": "Avare Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier2/vagabond/deckardpants.legs",
+      "pointer": "/description",
+      "en": "^orange;^orange;Set Bonuses^reset;: ^reset;\n^yellow;^reset; +^green;10^reset;% Speed\n^yellow;^reset; (Machine) Pistol: Damage x^green;1.075/1.15^reset;",
+      "tr": "^orange;^orange;Set Bonusları^reset;: ^reset;\n^yellow;^reset; +^green;10^reset;% Hız\n^yellow;^reset; Tabanca/Makineli Tabanca: Hasar x^green;1.075/1.15^reset;",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier3/stalkers/fudarkrobeschest.chest",
+      "pointer": "/shortdescription",
+      "en": "Stalker's Robe",
+      "tr": "İz Sürücü Cübbesi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier3/stalkers/fudarkrobeschest.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;8^reset;% Speed, Fall Damage x^green;0.75^reset;\n^yellow;^reset; Bows/Crossbows, Sniper Rifles: Damage x^green;1.15^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Poisoned, Bio-Ooze",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;8^reset;% Hız, Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Yay/Arbalet, Keskin Nişancı Tüfeği: Hasar x^green;1.15^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Zehirlenme, Biyo-Balçık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier3/stalkers/fudarkrobeshelmet.head",
+      "pointer": "/shortdescription",
+      "en": "Stalker's Hood",
+      "tr": "İz Sürücü Kapüşonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier3/stalkers/fudarkrobeshelmet.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;8^reset;% Speed, Fall Damage x^green;0.75^reset;\n^yellow;^reset; Bows/Crossbows, Sniper Rifles: Damage x^green;1.15^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Poisoned, Bio-Ooze",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;8^reset;% Hız, Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Yay/Arbalet, Keskin Nişancı Tüfeği: Hasar x^green;1.15^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Zehirlenme, Biyo-Balçık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier3/stalkers/fudarkrobespants.legs",
+      "pointer": "/shortdescription",
+      "en": "Stalker's Legs",
+      "tr": "İz Sürücü Pantolonu",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier3/stalkers/fudarkrobespants.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;8^reset;% Speed, Fall Damage x^green;0.75^reset;\n^yellow;^reset; Bows/Crossbows, Sniper Rifles: Damage x^green;1.15^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Poisoned, Bio-Ooze",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;8^reset;% Hız, Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Yay/Arbalet, Keskin Nişancı Tüfeği: Hasar x^green;1.15^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Zehirlenme, Biyo-Balçık",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/uniques/fuhoodedmask/fuhoodedmask.head",
+      "pointer": "/shortdescription",
+      "en": "Hooded Survival Mask",
+      "tr": "Kapüşonlu Hayatta Kalma Maskesi",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/uniques/fuhoodedmask/fuhoodedmask.head",
+      "pointer": "/description",
+      "en": "Regenerative plating and some mystery. Fun!",
+      "tr": "Yenileyici kaplama ve biraz gizem. Eğlenceli!",
+      "section": "v0.25 Kademe 1-2 aktif zırh setleri"
     }
   ]
 }

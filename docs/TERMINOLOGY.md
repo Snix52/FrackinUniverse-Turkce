@@ -533,3 +533,27 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | HP Regen | Kalkan tooltip etkisi | UI | Can Yenilenmesi | HP Rejenerasyonu | LOCKED | |
 | Immune / Immunity | Kalkan tooltip etkisi | UI | Bağışıklık | Muafiyet | LOCKED | |
 | Irradium / Trianglium / Prisilite / Quietus | FU malzeme adları | Özel ad | Kaynaktaki yazım korunur | Türkçeleştirilmiş yazımlar | LOCKED | Silah sınıfları ayrıca Türkçeleştirilir |
+
+## v0.25 Kademe 1-2 zırh terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Set Bonuses | Zırh tooltip başlığı | UI | Set Bonusları | Takım Bonusları | LOCKED | Önceki tekil zırhlarla eşlendi |
+| Greaves | Zırh parçası | Nesne | Baldırlık | Pantolon | LOCKED | Kaynak parça gerçekten greaves ise kullanılır |
+| Chestpiece / Breastplate | Zırh parçası | Nesne | Göğüslük | Göğüs Parçası | LOCKED | Doğal ve kısa envanter adı |
+| Helm / Helmet | Zırh parçası | Nesne | Miğfer | Kask | LOCKED | Fantezi/savaş zırhlarında kullanılır |
+| Crit Chance | Zırh tooltip istatistiği | UI | Kritik Şansı | Kritik İhtimali | LOCKED | |
+| Crit Damage | Zırh tooltip istatistiği | UI | Kritik Hasarı | Kritik Vuruş Hasarı | LOCKED | Kısa tooltip biçimi |
+| Knockback Resist | Zırh tooltip istatistiği | UI | Geri Tepme Direnci | Savrulma Direnci | LOCKED | |
+| Shield Health and Regen | Zırh tooltip istatistiği | UI | Kalkan Canı ve Yenilenmesi | Kalkan HP/Rejenerasyonu | LOCKED | |
+| Healing Strength | Zırh tooltip istatistiği | UI | İyileştirme Gücü | Şifa Kuvveti | LOCKED | |
+| Life Leech | Zırh tooltip istatistiği | UI | Can Çalma | Hayat Sömürme | LOCKED | |
+| Draw Speed | Yay tooltip istatistiği | UI | Germe Hızı | Çekme Hızı | LOCKED | Yay kirişini germe bağlamı |
+| Energy Per Shot | Silah tooltip istatistiği | UI | Atış Başına Enerji | Mermi Enerjisi | LOCKED | |
+| Headlamp | Zırh tooltip işlevi | UI | Kafa Lambası | Baş Lambası | LOCKED | |
+| Oxygen | Tehlike bağışıklığı | Durum | Oksijensizlik | Oksijen | LOCKED | Kaynak etiketi oksijen yokluğu tehlikesini temsil eder |
+| Bio-Ooze | Tehlike / durum etkisi | Durum | Biyo-Balçık | Biyo-Sızıntı | LOCKED | Slime -> Balçık kararıyla uyumlu |
+| Slush | Tehlike / zemin etkisi | Durum | Sulu Kar | Çamurlu Kar | LOCKED | |
+| Chill | Tehlike / durum etkisi | Durum | Üşüme | Soğuk | LOCKED | Durum adı olarak kullanılır |
+| Quicksand | Tehlike / zemin etkisi | Durum | Batak Kum | Hızlı Kum | LOCKED | Yerleşik Türkçe karşılık |
+| Dracon / Warscorned | Skath zırh modeli | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | Bağlamı açıklanmayan model adları |
