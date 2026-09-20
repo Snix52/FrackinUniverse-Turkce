@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.14.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.16.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  2028 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  2154 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görev/hedef allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görev/hedef allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -246,4 +246,25 @@ v0.15 Battle QA:
   proje toplamı: 2092 structured + 15 Lua = 2107 görünür birim
   toplam patch asset: 378
   Battle erişilebilir zincirleri: TAMAMLANDI
+  oyun içi LQA: BEKLİYOR
+
+
+v0.16 kalan görevler QA:
+  kalan ham questtemplate: 17
+  runtime erişilebilir görev: 10/10 (Other 8 + BYOS 2)
+  görünmez sinematik takipçi: 5 (dağıtım dışı + build guard)
+  bağlantısız legacy: 2 (fu_byosshipcraftingtable + fuquest_explore1)
+  görev alanı: 37 / 10 quest asset
+  görev-listesi alanı: 3
+  bağlı hedef alanı: 22 / 11 asset
+  yeni structured alan: 62
+  yeni patch asset: 21
+  yeni pinned FU alan: 60/60 exact-source PASS
+  yeni vanilla/layered alan: 2/2 exact-source PASS
+  kaynak/provenans: 62/62 PASS
+  create_densinium renk kapanışı ve precursor gerçek hedef açıklaştırması: BELGELİ
+  Battle Cyber Sphere -> Siberküre retro terminoloji guard: AKTİF
+  proje toplamı: 2154 structured + 15 Lua = 2169 görünür birim
+  toplam patch asset: 399
+  planlanan görev klasörü runtime kapsamı: TAMAMLANDI
   oyun içi LQA: BEKLİYOR

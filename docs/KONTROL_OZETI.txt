@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.14.0 BETA | STATİK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.16.0 BETA | STATİK QA KONTROL ÖZETİ
 
-2028 aktif yapılandırılmış oyuncu metni alanı / 358 patch asset.
+2154 aktif yapılandırılmış oyuncu metni alanı / 399 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 2043 yerelleştirilmiş görünür metin birimi / 359 hedef asset.
+TOPLAM: 2169 yerelleştirilmiş görünür metin birimi / 400 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -35,6 +35,12 @@ KAPSAM
 - v0.11 Outpost - İçki: 44
 - v0.11 İçki makineleri: 13
 - v0.11 İçki malzemeleri: 32
+- v0.12 Outpost - Arıcılık: 78
+- v0.13 Outpost Dükkân Görevleri: 48
+- v0.13.3 Retro QA Hedefleri: 8
+- v0.14 Outpost - Kevin ve Khe: 94
+- v0.15 Battle: 64
+- v0.16 Kalan görevler: 62
 
 v0.5 YENİ İÇERİK
 - fu_power araştırma ağacı: 39 düğüm / 77 aktif oyuncu metni.
@@ -445,4 +451,30 @@ v0.15 BATTLE GÖREVLERİ QA
 
 SONUÇ
 v0.15 statik Anayasa QA hazırlığı: PASS.
+GitHub Actions nihai build/QA: BEKLİYOR.
+
+
+v0.16 KALAN GÖREV KLASÖRLERİ QA
+- Denetlenen ham questtemplate: 17.
+- Runtime erişilebilir görev: 10/10 (Other 8 + BYOS 2).
+- Oyuncuya görünmemesi amaçlanan sinematik takipçi: 5 (dağıtım dışı + build guard).
+- Bağlantısız legacy: 2 (fu_byosshipcraftingtable, fuquest_explore1; dağıtım dışı + build guard).
+- Görev alanı: 37 / 10 quest asset.
+- BYOS görev-listesi alanı: 3.
+- Bağlı envanter/teslim hedefi alanı: 22 / 11 asset.
+- v0.16 toplam ekleme: 62 yapılandırılmış alan / 21 yeni patch asset.
+- Pinned FU yeni alan: 60/60 exact-source PASS.
+- Vanilla Molten Core alanı: 2/2 bağımsız kaynak doğrulaması PASS.
+- Kaynak/provenans: 62/62 PASS.
+- Patch eşleşmesi: 62 test + 62 replace PASS.
+- Renk/kontrol/placeholder/sayı bütünlüğü: PASS.
+- Kaynak düzeltmesi: create_densinium hatalı renk kapanışı ^orange; -> ^reset;.
+- Hedef açıklaştırması: generic data-disc -> gerçek Precursor Data-Key / Precursor Veri Anahtarı.
+- Retro terminoloji: Battle Cyber Sphere -> Siberküre.
+- Proje toplamı: 2154 structured + 15 Lua = 2169 görünür birim; 399 patch asset.
+- Planlanan görev klasörlerinin runtime erişilebilir kapsamı: TAMAMLANDI.
+- Oyun içi LQA / font / panel taşması: BEKLİYOR.
+
+SONUÇ
+v0.16 statik Anayasa QA hazırlığı: PASS.
 GitHub Actions nihai build/QA: BEKLİYOR.
