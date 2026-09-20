@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.29 Beta / Ana araştırma sistemleri + runtime'da erişilebilir görevler + üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir `items/generic/crafting` malzemeleri, Kademe 1-5 araştırma savaş ekipmanları ve Kademe 1-5 aktif zırh setleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.30 Beta / Ana araştırma sistemleri + runtime'da erişilebilir görevler + üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir `items/generic/crafting` malzemeleri ve aktif Zırh ve Silahlar araştırma ağacındaki tarif destekli ekipman kapsamı / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -43,6 +43,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Aktif Zırh ve Silahlar ağacındaki altı Kademe 3 kolunun açtığı, gerçek tarifle doğrulanan 76 zırh parçası; önceden çevrilmiş Mutavisk miğferi korunarak 75 yeni assette envanter adı ve set bonusu/açıklama metni
 - Aktif Zırh ve Silahlar ağacındaki yedi Kademe 4 kolunun açtığı, gerçek tarifle doğrulanan 87 zırh parçasında envanter adı ve set bonusu/açıklama metni
 - Aktif Zırh ve Silahlar ağacındaki yedi Kademe 5 kolunun açtığı, gerçek tarifle doğrulanan 61 zırh parçasında envanter adı ve set bonusu/açıklama metni
+- Aktif Zırh ve Silahlar ağacında daha önce açık kalan erken kalkan/yan dallar, Kirhos-Lunari-Elduu-Skath-Vel'uuish silahları, EPP sırt ekipmanları ve Kademe 6-7 dalları: gerçek tarifle doğrulanan 413 yeni assette ad ve açıklama
 - Usta Manipülatör görev-eşya zincirindeki kırık augment ve tamamlanmış aracın görünen ad/açıklamaları görev terminolojisiyle eşlendi
 - Başlangıç görevlerinin bir bölümü ve BYOS Yıldızlararası Yolculuk zinciri
 - Başlangıç telsiz/öğretici mesajlarının mevcut dosyadaki 26/26 metni
@@ -53,7 +54,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **5.190 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **5.205 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **6.016 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **6.031 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -79,7 +80,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.29.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.30.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -88,7 +89,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **5.190 alan / 1.673 patch asset**tir. v0.29'da aktif Zırh ve Silahlar ağacındaki yedi Kademe 5 kolunun açtığı **61 tarif destekli zırh parçasının** yalnız ad ve açıklama alanlarından oluşan **122 alanı pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Toplam provenans **5.102 pinned FU + 88 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **6.016 alan / 2.086 patch asset**tir. v0.30'da aktif Zırh ve Silahlar ağacında daha önce açık kalan **413 tarif destekli ekipman assetinin** yalnız ad ve açıklama alanlarından oluşan **826 alanı pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Toplam provenans **5.928 pinned FU + 88 belgeli layered/external alan**, izlenmeyen alan **0**. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -324,6 +325,14 @@ Bu sürümde yalnız `/shortdescription` ve `/description` alanları çevrildi. 
 
 v0.29 eklemesi **122 yapılandırılmış alan / 61 yeni patch asset**tir. Proje toplamı **5.190 structured + 15 Lua = 5.205 görünür birim / 1.673 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.
 
+## v0.30 Aktif Araştırma Ekipmanı Kapanışı
+
+Aktif Zırh ve Silahlar araştırma ağacı yeniden tarandı. Araştırma düğümü açılımı, gerçek `.recipe` çıktısı ve görünür ekipman asseti birlikte zorunlu tutularak daha önce açık kalan **413 asset** doğrulandı: 6 erken kalkan, 126 erken yan dal ekipmanı, 85 ırksal silah, 28 EPP/sırt ekipmanı, 130 Kademe 6 ve 38 Kademe 7 ekipmanı. Bunların **288'i silah/kalkan**, **125'i zırh veya EPP** sınıfındadır.
+
+Her assette yalnız `/shortdescription` ve `/description` çevrildi. Teknik `itemName`, tarifler, stat hesapları, efektler, yetenekler, mermiler, kategori ve script alanları korunurken sayı sırası, renk kodları, tooltip simgeleri, satır sonları ve sekmeler birebir doğrulandı. `EPP`, `Aether`, `Stynger`, `Magnorb`, `Xithricite`, `Isogen`, `Pyreite`, `Solarium` ve `Densinium` yazımları korunarak işlevsel silah sınıfları ve durum etkileri Türkçeleştirildi.
+
+v0.30 eklemesi **826 yapılandırılmış alan / 413 yeni patch asset**tir. Proje toplamı **6.016 structured + 15 Lua = 6.031 görünür birim / 2.086 patch asset** oldu. Böylece aktif Zırh ve Silahlar araştırma ağacındaki tarif destekli ekipman kapsamı kapandı; oyun içi tooltip genişliği, font, animasyonlu durum satırları ve bağlam LQA'sı ayrıca bekliyor.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -348,7 +357,7 @@ v0.29 eklemesi **122 yapılandırılmış alan / 61 yeni patch asset**tir. Proje
 - [x] BYOS kalan görevleri (2 erişilebilir; 1 bağlantısız legacy dağıtım dışı)
 - [x] Exploration görev zinciri (1 bağlantısız legacy runtime denetimiyle dağıtım dışı)
 - [x] Ana görev aileleri dışındaki özel görevlerin runtime denetimi (29 erişilebilir görev; 68 erişilemez/görünmez dosya dağıtım dışı)
-- [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi (`objects/crafting`: 84/84; v0.18 Power/Bees/Science Outpost: 47/47; v0.19 `items/generic/crafting`: 235/235; v0.21 erken oyun: 124/124; v0.22 Kademe 3: 158/158; v0.23-v0.24 Kademe 4: 196/196 üretilebilir savaş ekipmanı; v0.28 Kademe 5: 97/97 üretilebilir savaş ekipmanı; v0.25-v0.29 Kademe 1-5 aktif zırhlar: 337 yeni asset tamamlandı; kalan zırh kademeleri ve diğer eşya/nesne klasörleri sürüyor)
+- [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi (`objects/crafting`: 84/84; v0.18 Power/Bees/Science Outpost: 47/47; v0.19 `items/generic/crafting`: 235/235; v0.21-v0.30 aktif araştırma ağacındaki tarif destekli ekipman kapsamı tamamlandı; araştırma dışındaki diğer eşya/nesne klasörleri sürüyor)
 - [x] Planlanan görev klasörlerinin runtime denetimi ve erişilebilir çevirileri
 - [ ] Oyun içi tam LQA ve taşma kontrolleri
 
