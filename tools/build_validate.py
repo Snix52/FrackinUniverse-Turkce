@@ -193,6 +193,8 @@ def allowed(a,p):
         return p in ('/description','/shortdescription','/augment/displayName')
     if a=='items/materials/blackglass.matitem':
         return p in ('/description','/shortdescription','/glitchdescription','/florandescription','/novakiddescription')
+    if a in ('items/generic/crafting/fissionfurnace/protocitebar.item','items/generic/crafting/isotopes/tritium.item','items/generic/crafting/teleportercore.item'):
+        return p in ('/description','/shortdescription')
     if a=='objects/crafting/handmill/handmill.object':
         return p in ('/category','/description','/shortdescription','/subtitle')
     if a=='interface/windowconfig/beerefuge.config':
