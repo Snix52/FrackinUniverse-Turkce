@@ -210,6 +210,10 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Acid Shield | EPP eklentisi | Nesne | Asit Kalkanı | Acid Shield | LOCKED | Sülfürik asit bağışıklığı veren eklenti |
 | Black Glass | Vanilla/FU malzeme | Kaynak | Siyah Cam | Black Glass | LOCKED | Vanilla envanter adıyla eşleştirildi |
 
+| Industrial Furnace | Vanilla fırın 2. kademe | Nesne | Endüstriyel Fırın | Fission Furnace | LOCKED | craftingfurnace2 gerçek kademe adı |
+| Protocite Bar | FU metal kaynağı | Kaynak | Protocite Külçesi | Protocite Bar | LOCKED | Protocite özel ad olarak korunur |
+| Tritium Rod | İzotop / yakıt kaynağı | Kaynak | Trityum Çubuğu | Tritium Rod | LOCKED | Yerleşik bilimsel Türkçe: trityum |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
