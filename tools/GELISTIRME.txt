@@ -512,3 +512,23 @@ v0.29 Kademe 5 aktif zırh setleri QA:
   GitHub Actions build/QA/ZIP: PASS (paket commit 3f08390db7b6a9d4100b52b20ec1fc6a37cc3563)
   otomatik paket: dist/FU_Turkce_v0.29.0_Beta.zip / 1149753 bayt / blob bda570edc532a6e8c85f48d0135d8d596d33d64d
   oyun içi zırh tooltip/font/bağlam LQA: BEKLİYOR
+
+v0.30 aktif araştırma ekipmanı kapanışı QA:
+  seçim kuralı: etkin fu_warcraft düğümü + gerçek recipe çıktısı + görünür ekipman asseti
+  aktif araştırma düğümü: 25
+  yeni yerelleştirilen: 413 asset / 826 alan
+  kapsam dağılımı: erken kalkan 6 + erken yan dal 126 + ırksal 85 + EPP 28 + Kademe 6 130 + Kademe 7 38
+  sınıf dağılımı: 288 silah/kalkan + 125 zırh/EPP
+  çevrilen pointer sınıfları: shortdescription + description
+  pinned FU exact-source: 826/826 PASS
+  patch pairing: 826 test + 826 replace PASS
+  renk/kontrol/sayı/simge/satır/sekme bütünlüğü: PASS
+  negatif korumalar: kaynak farkı + teknik pointer + sayı farkı reddi PASS
+  kaynak/provenans toplamı: 5928 pinned FU + 88 layered/external; 0 izlenmeyen
+  proje toplamı: 6016 structured + 15 Lua = 6031 görünür birim
+  toplam patch asset: 2086
+  toplam hedef asset: 2087 (2086 patch + 1 ham Lua override)
+  GitHub Actions build/QA/ZIP: PASS (paket commit 855ed270b82950302d574bb37b443baedf6ea340)
+  otomatik paket: dist/FU_Turkce_v0.30.0_Beta.zip / blob 87bb96d611d41e72601e83e15b18bfe85da7c019
+  yerel ZIP bütünlüğü: PASS / 1385175 bayt / SHA-256 d76430d7ca8dca3b9528b66ec0bc5c5f26bf984e5bfd051b106d681c97ac0f65
+  oyun içi tooltip/font/bağlam LQA: BEKLİYOR
