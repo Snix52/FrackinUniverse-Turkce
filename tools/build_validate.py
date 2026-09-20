@@ -438,7 +438,8 @@ def main():
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
             colorfix+=1
-        if Counter(CONTROL.findall(r['en']))!=Counter(CONTROL.findall(r['tr'])):\n            if not r.get('qa',{}).get('allow_control_fix'):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
+        if Counter(CONTROL.findall(r['en']))!=Counter(CONTROL.findall(r['tr'])):
+            if not r.get('qa',{}).get('allow_control_fix'):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
         if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
         groups[a].append(r)
 
