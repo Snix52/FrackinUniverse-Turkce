@@ -321,3 +321,18 @@
 - `Shards` Eld'uukhar söyleminde büyük harfle kullanılan lore özel adı olarak geçici biçimde özgün bırakılır; Eld'uukhar lore paketi ele alındığında yeniden değerlendirilecek.
 - Turn-in metinlerinde kaynakta geçen generic dükkân tarifleri doğal Türkçeyle aktarıldı; hedef artefakt adları envanterle birebir eşleştirildi.
 - Oyun içi LQA, görev işaretçisi ve dükkân etkileşim testi ayrıca yapılacaktır.
+
+## 2026-09-20 - v0.13.1 geriye dönük Türkçe QA
+
+- v0.1-v0.13 arasındaki **1929 yapılandırılmış alan + 15 Lua UI metni** yeniden tarandı.
+- Altı eski tutorial teslim metnindeki bozuk **"Bilim Karakolundaki bana getir"** kalıbı **"Bilim Karakolunda bana getir"** olarak düzeltildi.
+- v0.13 dükkân teslim metinleri iki ayrı hedef varmış gibi okunan yapıdan çıkarılarak **"Bilim Karakolundaki X Dükkânına götür"** biçiminde netleştirildi.
+- Arıcılıkta eski **kraliçe arı** kullanımı, kilitli gerçek arıcılık terimi **Ana Arı** ile eşlendi.
+- Arı Barınağı tariflerinin arıyı tüketip para verdiği kaynak tariflerden doğrulandı; oyuncu eylemi satın alma değil satış olduğundan UI düğmesi **Satın Al -> Sat** düzeltildi.
+- Penumbrite açıklamasındaki **keskinlığını -> keskinliğini** yazım hatası ve cümlenin yapay devamı düzeltildi.
+- Glitch ton etiketlerinde **Interested -> Meraklı**, **Inspired -> İlhamlanmış** kullanıldı; "İlgili" ve "İlhamlı" anlam/akıcılık hataları temizlendi.
+- monocled görev tariflerinde yapay **monokllü** yerine **monokl takan** kullanıldı; Human Scientist ifadesi doğal **insan bilimci** yapısına çekildi.
+- v0.13 Kirhos/Radien/Shadow metinlerindeki yapay Türkçe ifadeler ve **Kristal Kusursuzluk** başlığı doğal Türkçeyle düzeltildi.
+- **Homestead -> Yerleşim** kararı, I-V zinciri tamamlandığı için REVIEW'dan LOCKED durumuna geçirildi.
+- Alan/pointer sayısı değişmedi. Bu tur kaynak anlamı veya teknik ID değiştirmeyen dil/terminoloji düzeltmesidir.
+- Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
