@@ -313,3 +313,11 @@
 - Yeni alan kaynak/provenansı: **72/72 pinned FU + 6/6 vanilla = 78/78 PASS**. Patch pairing: **78 test + 78 replace PASS**.
 - v0.11 Outpost İçki kapsamı aynen korunarak proje toplamı **1881 yapılandırılmış alan + 15 Lua = 1896 yerelleştirilmiş görünür birim**; toplam patch asset **304** oldu.
 - Oyun içi Arıcılık görev akışı, eşya adları, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+## 2026-09-20 - v0.13 Outpost Bilim Karakolu dükkânları
+
+- Altı `scienceoutpost_*Shop` görevi ilgili dükkân nesnelerinin `offeredQuests` / `turnInQuests` alanlarıyla runtime'da doğrudan doğrulandı; quest-listte görünmemeleri bağlantısız oldukları anlamına gelmiyor.
+- Görev hedefi olan altı artefaktın envanter adları aynı pakette kilitlendi: **Greenfinger Madalyası, Uğurlu Para, Kristal Kupa, Uzaylı Yayın Düğümü, X'i Kalıntısı, Kadim Kumanda**.
+- `Verdant Ruins`, `Ancient Temple` ve `Evernight Jungle` şu aşamada özel görev/konum adları olarak korunur. Bu adlar, ilgili görev/mission/harita zinciri bütünüyle yerelleştirilmeden tek bir Outpost metninde Türkçeleştirilmez.
+- `Shards` Eld'uukhar söyleminde büyük harfle kullanılan lore özel adı olarak geçici biçimde özgün bırakılır; Eld'uukhar lore paketi ele alındığında yeniden değerlendirilecek.
+- Turn-in metinlerinde kaynakta geçen generic dükkân tarifleri doğal Türkçeyle aktarıldı; hedef artefakt adları envanterle birebir eşleştirildi.
+- Oyun içi LQA, görev işaretçisi ve dükkân etkileşim testi ayrıca yapılacaktır.
