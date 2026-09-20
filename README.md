@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.15 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost + Battle görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.16 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost + Battle + erişilebilir Other/BYOS görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -25,6 +25,8 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Arıcılık görevlerinde yönlendirilen temel arı türleri, çerçeveler, Arılık, mikroskop, bal işleme makinesi ve vanilla hedef eşyaların envanter adları
 - Bilim Karakolundaki altı canlı dükkân görevi (6/6), hedef artefaktları ve dükkân nesneleri
 - Battle klasöründeki 10/10 erişilebilir görev, Battle görev-listesi ve doğrudan hedeflenen 10 envanter asseti
+- Other klasöründeki 8/8 erişilebilir görev ve doğrudan hedeflenen eşya/teslim nesneleri
+- BYOS kalan kapsamındaki 2/2 erişilebilir görev ve BYOS görev-listesi metinleri
 - Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
@@ -37,7 +39,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **1.934 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.949 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **2.154 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **2.169 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -63,7 +65,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.15.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.16.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -72,7 +74,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **2.092 alan / 378 patch asset**tir. v0.15 Battle paketindeki **64/64 yeni alan pinned FU kaynağıyla doğrulandı**. Battle klasöründeki 13 ham görevin 10'u runtime'da erişilebilir; bağlantısız 3 legacy patron görevi dağıtım dışı ve build guard altındadır. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **2.154 alan / 399 patch asset**tir. v0.16 kalan görev taramasındaki **62/62 yeni alan kaynak/provenansla doğrulandı**: 60 pinned FU, 2 bağımsız doğrulanmış vanilla alan. Denetlenen 17 ham dosyanın 10'u runtime'da erişilebilir ve yerelleştirildi; oyuncuya gösterilmemesi amaçlanan 5 takipçi ile bağlantısız 2 legacy görev dağıtım dışı ve build guard altındadır. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -196,6 +198,14 @@ Görev hedefleri gerçek envanter adlarıyla eşlendi: **Sıradan Şapka, Kol To
 
 v0.15 eklemesi **64 yapılandırılmış alan / 20 yeni patch asset**tir: 39 görev alanı, 4 görev-listesi alanı ve 21 bağlı envanter alanı. Kaynak/provenans sonucu **64/64 PASS** (tamamı pinned FU). Proje toplamı **2.092 structured + 15 Lua = 2.107 görünür birim / 378 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
 
+## v0.16 Kalan Görev Klasörleri
+
+Other, BYOS ve Exploration klasörlerinde kalan **17 ham questtemplate** runtime tetikleyicileri, görev-listesi, NPC, pickup ve takip zinciri referanslarıyla denetlendi. Other içindeki **8**, BYOS içindeki **2** erişilebilir görev yerelleştirildi. Other içindeki 5 dosya kaynakta açıkça görünmez sinematik takipçi olarak tanımlandığı, BYOS'taki fu_byosshipcraftingtable ve Exploration'daki fuquest_explore1 ise hiçbir runtime tetikleyicisine bağlı olmadığı için dağıtım dışı bırakıldı.
+
+Görev hedefleri gerçek envanter adlarıyla eşlendi: **Densinium Miğferi, Cthulhu Heykeli, Hidroponik Tepsi, Erimiş Çekirdek, Shoggoth Eti, Wagner'ın Kimlik Kartı, Yıpranmış Büyü Kitabı, Precursor Veri Anahtarı, Berbat Mürettebat Yatağı** ve **Mürettebat Tapusu**. create_densinium kaynak renk kapanışı düzeltildi; Precursor görevinin genel “data-disc” ifadesi gerçek hedef olan **Precursor Veri Anahtarı** ile açıklaştırıldı. Geriye dönük kontrolde Battle görevindeki **Cyber Sphere** kullanımı kilitli **Siberküre** terminolojisine birleştirildi.
+
+v0.16 eklemesi **62 yapılandırılmış alan / 21 yeni patch asset**tir: 37 görev alanı, 3 görev-listesi alanı ve 22 bağlı hedef alanı. Kaynak/provenans sonucu **62/62 PASS** (60 pinned FU + 2 vanilla). Proje toplamı **2.154 structured + 15 Lua = 2.169 görünür birim / 399 patch asset** oldu. Planlanan görev klasörlerinin runtime erişilebilir kapsam taraması tamamlandı; oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+
 ## Yol haritası
 
 - [x] Jeoloji araştırma ağacının ilk çevirisi
@@ -216,11 +226,11 @@ v0.15 eklemesi **64 yapılandırılmış alan / 20 yeni patch asset**tir: 39 gö
 - [x] Science görev zincirleri
 - [x] Outpost görev zincirleri (İçki 12/12 + Arıcılık 13/13 + Bilim Karakolu dükkânları 6/6 + Kevin 9/9 + Khe 4/4)
 - [x] Battle görev zincirleri (10/10 erişilebilir; 3 bağlantısız legacy dağıtım dışı)
-- [ ] Other görev zincirleri
-- [ ] BYOS kalan görevleri
-- [ ] Exploration görev zinciri
+- [x] Other görev zincirleri (8 erişilebilir; 5 görünmez takipçi dağıtım dışı)
+- [x] BYOS kalan görevleri (2 erişilebilir; 1 bağlantısız legacy dağıtım dışı)
+- [x] Exploration görev zinciri (1 bağlantısız legacy runtime denetimiyle dağıtım dışı)
 - [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi
-- [ ] Görevlerin kalan bölümü
+- [x] Planlanan görev klasörlerinin runtime denetimi ve erişilebilir çevirileri
 - [ ] Oyun içi tam LQA ve taşma kontrolleri
 
 ## Kaynak ve lisans

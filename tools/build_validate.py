@@ -33,7 +33,14 @@ NONVISIBLE_QUEST_ASSETS = {
     'quests/fu_questlines/outpost/bees/13mites.questtemplate',
     'quests/fu_questlines/battle/monsters/fuquest_gorgolith.questtemplate',
     'quests/fu_questlines/battle/monsters/fuquest_gorillaking.questtemplate',
-    'quests/fu_questlines/battle/monsters/fuquest_titan.questtemplate'
+    'quests/fu_questlines/battle/monsters/fuquest_titan.questtemplate',
+    'quests/fu_questlines/other/crucible_upgrades.questtemplate',
+    'quests/fu_questlines/other/kevin_annoyance.questtemplate',
+    'quests/fu_questlines/other/madness_reduction.questtemplate',
+    'quests/fu_questlines/other/station_upgrades.questtemplate',
+    'quests/fu_questlines/other/tricorder.questtemplate',
+    'quests/fu_questlines/byos/fu_byosshipcraftingtable.questtemplate',
+    'quests/fu_questlines/exploration/fuquest_explore1.questtemplate'
 }
 
 SCIENCE_EXTERNAL_QUEST_ASSETS = {
@@ -153,7 +160,7 @@ def allowed(a,p):
     if a=='zb/researchTree/researchTree.config':
         return p in ('/gui/researchButton/caption','/gui/infoList/children/unlocksLabel/value','/gui/title/value','/gui/consumptionText/value')
     if a=='zb/questList/data.config':
-        return p in ('/strings/questlines/fu_sciences/title','/strings/questlines/fu_sciences/description','/strings/questlines/fu_kevin_tasks/title','/strings/questlines/fu_kevin_tasks/description','/strings/sublines/fu_kevin','/strings/questlines/fu_battle/title','/strings/questlines/fu_battle/description','/strings/sublines/fu_monsters','/strings/sublines/fu_gear') or bool(re.fullmatch(r'/strings/sublines/fu_(physics|chemistry|electronics|genetics|mechanical)',p))
+        return p in ('/strings/questlines/fu_sciences/title','/strings/questlines/fu_sciences/description','/strings/questlines/fu_kevin_tasks/title','/strings/questlines/fu_kevin_tasks/description','/strings/sublines/fu_kevin','/strings/questlines/fu_battle/title','/strings/questlines/fu_battle/description','/strings/sublines/fu_monsters','/strings/sublines/fu_gear','/strings/questlines/fu_byos/title','/strings/questlines/fu_byos/description','/strings/sublines/fu_byosbasics') or bool(re.fullmatch(r'/strings/sublines/fu_(physics|chemistry|electronics|genetics|mechanical)',p))
     if a in ('zb/researchTree/fu_geology.config','zb/researchTree/fu_agriculture.config','zb/researchTree/fu_chemistry.config','zb/researchTree/fu_engineering.config','zb/researchTree/fu_power.config','zb/researchTree/fu_craftsmanship.config','zb/researchTree/fu_warcraft.config'):
         tree=PurePosixPath(a).stem
         return p==f'/strings/trees/{tree}' or bool(re.fullmatch(r'/strings/research/[A-Za-z0-9_]+/[01]',p))
@@ -173,7 +180,9 @@ def allowed(a,p):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a.startswith('quests/fu_questlines/battle/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription')
-    if a=='quests/fu_questlines/byos/fu_byosftldrive.questtemplate':
+    if a.startswith('quests/fu_questlines/other/') and a.endswith('.questtemplate'):
+        return p in ('/title','/text','/completionText','/scriptConfig/turnInDescription')
+    if a.startswith('quests/fu_questlines/byos/') and a.endswith('.questtemplate'):
         return p in ('/title','/text','/completionText') or bool(re.fullmatch(r'/scriptConfig/descriptions/[A-Za-z0-9_]+',p))
     if a=='radiomessages/fu_quests.radiomessages':
         return bool(re.fullmatch(r'/[A-Za-z0-9_-]+/text',p))
@@ -322,6 +331,21 @@ def allowed(a,p):
     }
     if a in battle_target_assets:
         return p in ('/description','/shortdescription') or (a=='items/augments/quest/warbotartifact.augment' and p=='/augment/displayName')
+    remaining_quest_target_assets={
+        'items/armors/tier6/densiniumarmor/densinium.head',
+        'objects/minibiome/elder/elderstatue.object',
+        'items/generic/crafting/moltencore.item',
+        'items/generic/crafting/shoggothflesh.item',
+        'items/generic/mission/wagneridcard.item',
+        'items/generic/crafting/mythos/fugrimoire.item',
+        'items/active/unsorted/precursorkey/sciencebrochure2.activeitem',
+        'objects/ship/fu_crewbed0/fu_crewbed0.object',
+        'objects/ship/fu_crewdeed/fu_crewdeed.object',
+        'objects/questturnins/elderturnin.object',
+        'objects/questturnins/precursorturnin.object'
+    }
+    if a in remaining_quest_target_assets:
+        return p in ('/description','/shortdescription')
     power_assets={
         'objects/power/isn_solarpanel/isn_solarpanel.object',
         'objects/power/fu_solararray/fu_solararray.object',
@@ -567,7 +591,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma Sistemleri + Görevler (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost İçki, Arıcılık, Bilim Karakolu dükkânları, Kevin/Khe ve Battle görevlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, Delilik/Metafizik, Tutorial ve Science görevleri ile Outpost, Battle, Other ve BYOS görevlerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

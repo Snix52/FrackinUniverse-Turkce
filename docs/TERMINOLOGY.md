@@ -356,3 +356,17 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Hyper Targeting Chip | Patron görev hedefi / augment | Nesne | Hiper Hedefleme Çipi | Hiper Hedef Çipi | LOCKED | |
 | Aberrant Sentry | Patron adı | Düşman | Bozulmuş Nöbetçi | Aykırı Nöbetçi | LOCKED | |
 | Warbot | Patron adı | Düşman | Savaş Robotu | Warbot | LOCKED | |
+
+## v0.16 Other / BYOS görevleri
+
+
+| Densinium Helm | Zırh | Nesne | Densinium Miğferi | Densinium Başlığı | LOCKED | v0.16 görev ve envanter eşleşmesi |
+| Cthulhu Statue | Nesne | Nesne | Cthulhu Heykeli | Cthulhu Statüsü | LOCKED | v0.16 görev ve envanter eşleşmesi |
+| Molten Core | Malzeme | Nesne | Erimiş Çekirdek | Erimiş Kor | LOCKED | Vanilla hedef; bağımsız kaynak doğrulandı |
+| Shoggoth Flesh | Malzeme | Nesne | Shoggoth Eti | Shoggoth Parçası | LOCKED | |
+| Wagner's ID card | Görev eşyası | Nesne | Wagner'ın Kimlik Kartı | Wagner Kimliği | LOCKED | |
+| Tattered Grimoire | Görev eşyası | Nesne | Yıpranmış Büyü Kitabı | Yırtık Grimoire | LOCKED | |
+| Precursor Data-Key | Görev eşyası | Nesne | Precursor Veri Anahtarı | Öncü Veri Anahtarı | LOCKED | Precursor özel adı çevrilmeden korunur |
+| Crappy Crew Bed | Gemi nesnesi | Nesne | Berbat Mürettebat Yatağı | Kötü Ekip Yatağı | LOCKED | BYOS görevi |
+| Crew Deed | Gemi nesnesi | Nesne | Mürettebat Tapusu | Ekip Tapusu | LOCKED | BYOS görevi |
+| Cyber Sphere | Canavar | Varlık | Siberküre | Siber Küre | LOCKED | Çoğul: Siberküreler |
