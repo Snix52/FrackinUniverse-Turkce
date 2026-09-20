@@ -517,6 +517,73 @@ items/armors/tier3/stalkers/fudarkrobespants.legs
 items/armors/uniques/fuhoodedmask/fuhoodedmask.head
 '''.split())
 
+# Aktif fu_warcraft ağacındaki yedi Kademe 5 kolunun açtığı ve gerçek
+# üretim tarifi bulunan v0.29 zırh parçaları. Runtime araştırma/tarif
+# zinciri esas olduğu için kaynak yolu tier4 veya tier6 olan parçalar da vardır.
+V029_TIER5_ARMOR_ASSETS = set('''
+items/armors/biome/garden/quiver/air/airback.back
+items/armors/biome/garden/quiver/quiver5/quiver5.back
+items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.chest
+items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.head
+items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.legs
+items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenautpack.back
+items/armors/tier4/kingslayer/test1.chest
+items/armors/tier4/kingslayer/test1.head
+items/armors/tier4/kingslayer/test1.legs
+items/armors/tier5/arctic/sciencefu.chest
+items/armors/tier5/arctic/sciencefu.head
+items/armors/tier5/arctic/sciencefu.legs
+items/armors/tier5/decker/kirhostier5manipulator.chest
+items/armors/tier5/decker/kirhostier5manipulator.head
+items/armors/tier5/decker/kirhostier5manipulator.legs
+items/armors/tier5/ff_diamondarmor/ff_diamondarmor.chest
+items/armors/tier5/ff_diamondarmor/ff_diamondarmor.head
+items/armors/tier5/ff_diamondarmor/ff_diamondarmor.legs
+items/armors/tier5/fudiver3/fudiver3.chest
+items/armors/tier5/fudiver3/fudiver3.head
+items/armors/tier5/fudiver3/fudiver3.legs
+items/armors/tier5/fuwarphunter/fuwarphunter.chest
+items/armors/tier5/fuwarphunter/fuwarphunter.head
+items/armors/tier5/fuwarphunter/fuwarphunter.legs
+items/armors/tier5/hellfire/hellfire.chest
+items/armors/tier5/hellfire/hellfire.legs
+items/armors/tier5/hellfire/hellfirehelm.head
+items/armors/tier5/legionii/mantizitier5manipulator.chest
+items/armors/tier5/legionii/mantizitier5manipulator.head
+items/armors/tier5/legionii/mantizitier5manipulator.legs
+items/armors/tier5/millenion/mantizitier5separator.chest
+items/armors/tier5/millenion/mantizitier5separator.head
+items/armors/tier5/millenion/mantizitier5separator.legs
+items/armors/tier5/morphite/fuquantum.chest
+items/armors/tier5/morphite/fuquantum.head
+items/armors/tier5/morphite/fuquantum.legs
+items/armors/tier5/rifter/kirhostier5separator.chest
+items/armors/tier5/rifter/kirhostier5separator.head
+items/armors/tier5/rifter/kirhostier5separator.legs
+items/armors/tier5/sentryarmor/mobiusarmor.chest
+items/armors/tier5/sentryarmor/mobiusarmor.head
+items/armors/tier5/sentryarmor/mobiusarmor.legs
+items/armors/tier5/valkyrie/althelm/kirhostier5accelerator2.head
+items/armors/tier5/valkyrie/kirhostier5accelerator.chest
+items/armors/tier5/valkyrie/kirhostier5accelerator.head
+items/armors/tier5/valkyrie/kirhostier5accelerator.legs
+items/armors/tier5/warframe/mantizitier5accelerator.chest
+items/armors/tier5/warframe/mantizitier5accelerator.head
+items/armors/tier5/warframe/mantizitier5accelerator.legs
+items/armors/tier6/champion/mantizitier6separator.chest
+items/armors/tier6/champion/mantizitier6separator.head
+items/armors/tier6/champion/mantizitier6separator.legs
+items/armors/tier6/fusunwalker/fusunwalker.chest
+items/armors/tier6/fusunwalker/fusunwalker.head
+items/armors/tier6/fusunwalker/fusunwalker.legs
+items/armors/tier6/morphite2/fuquantumadv.chest
+items/armors/tier6/morphite2/fuquantumadv.head
+items/armors/tier6/morphite2/fuquantumadv.legs
+items/armors/tier6/replicant/kirhostier6accelerator.chest
+items/armors/tier6/replicant/kirhostier6accelerator.head
+items/armors/tier6/replicant/kirhostier6accelerator.legs
+'''.split())
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -1375,6 +1442,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V029_TIER5_ARMOR_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V028_TIER5_COMBAT_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V027_TIER4_ARMOR_ASSETS:
@@ -1839,7 +1908,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri, Kademe 1-5 savaş ekipmanları ve aktif Kademe 1-4 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri, Kademe 1-5 savaş ekipmanları ve aktif Kademe 1-5 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

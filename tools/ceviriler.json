@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.28.0-beta",
-  "note": "v0.28 Kademe 5 savaş ekipmanı: Zırh ve Silahlar araştırma ağacındaki tritaniumgear, enrichedgear, violiumgear, feroziumgear, aegisaltgear, densealloygear ve effigiumgear düğümlerinin açtığı, gerçek üretim tarifi bulunan 97 savaş ekipmanı doğrulandı. Önceden çevrilmiş Ferozium Satırı korunarak kalan 96 assette 192 görünür alan yerelleştirildi. Toplam 5068 structured + 15 Lua, 1612 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
+  "translation_version": "0.29.0-beta",
+  "note": "v0.29 Kademe 5 aktif zırh setleri: Zırh ve Silahlar araştırma ağacındaki tritaniumgear, enrichedgear, violiumgear, feroziumgear, aegisaltgear, densealloygear ve effigiumgear düğümlerinin açtığı, gerçek üretim tarifi bulunan 61 zırh assetinde 122 görünür alan yerelleştirildi. Runtime araştırma ve tarif zinciri esas alındığı için kaynak yolu tier4 veya tier6 olan erişilebilir parçalar da kapsama dahildir. Toplam 5190 structured + 15 Lua, 1673 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -36394,6 +36394,860 @@
       "en": "A ghostly lash. Rather short but swings fast.\n^cyan;Inflicts Caliginous Gas^reset;",
       "tr": "Hayaletimsi bir kamçı. Oldukça kısa ama hızlı savrulur.\n^cyan;Caliginous Gazına yol açar^reset;",
       "section": "v0.28 Kademe 5 savaş ekipmanı"
+    },
+    {
+      "asset": "items/armors/biome/garden/quiver/air/airback.back",
+      "pointer": "/shortdescription",
+      "en": "Skill Quiver",
+      "tr": "Beceri Sadakı",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/biome/garden/quiver/air/airback.back",
+      "pointer": "/description",
+      "en": "+^green;30^reset;% Airborne Damage (Bows)",
+      "tr": "+^green;30^reset;% Havada Hasar (Yaylar)",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/biome/garden/quiver/quiver5/quiver5.back",
+      "pointer": "/shortdescription",
+      "en": "Peerless Quiver",
+      "tr": "Eşsiz Sadak",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/biome/garden/quiver/quiver5/quiver5.back",
+      "pointer": "/description",
+      "en": "+^green;30^reset;% Damage (Bows)\n+^green;30^reset;% Draw Speed (Bows)\n+^green;20^reset;% Airborne Damage (Bows)\n-^green;9^reset; Energy Per Shot (Bows)",
+      "tr": "+^green;30^reset;% Hasar (Yaylar)\n+^green;30^reset;% Germe Hızı (Yaylar)\n+^green;20^reset;% Havada Hasar (Yaylar)\n-^green;9^reset; Atış Başına Enerji (Yaylar)",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.chest",
+      "pointer": "/shortdescription",
+      "en": "Capturenaut Breastplate",
+      "tr": "Capturenaut Göğüslüğü",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Beastmaster^reset;: 30%\n^yellow;^reset; ^cyan;Capturenaut^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Canavar Ustası^reset;: 30%\n^yellow;^reset; ^cyan;Capturenaut^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.head",
+      "pointer": "/shortdescription",
+      "en": "Capturenaut Helmet",
+      "tr": "Capturenaut Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Beastmaster^reset;: 30%\n^yellow;^reset; ^cyan;Capturenaut^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Canavar Ustası^reset;: 30%\n^yellow;^reset; ^cyan;Capturenaut^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.legs",
+      "pointer": "/shortdescription",
+      "en": "Capturenaut Trousers",
+      "tr": "Capturenaut Pantolonu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenaut.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Beastmaster^reset;: 30%\n^yellow;^reset; ^cyan;Capturenaut^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Canavar Ustası^reset;: 30%\n^yellow;^reset; ^cyan;Capturenaut^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenautpack.back",
+      "pointer": "/shortdescription",
+      "en": "Capturenaut Pack",
+      "tr": "Capturenaut Paketi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/other/pandorasboxcapturenaut/pandorasboxcapturenautpack.back",
+      "pointer": "/description",
+      "en": "A backpack that allows you to have an additional pet.",
+      "tr": "Yanında ek bir evcil hayvan bulundurmanı sağlayan bir sırt çantası.",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier4/kingslayer/test1.chest",
+      "pointer": "/shortdescription",
+      "en": "Kingslayer Plate",
+      "tr": "Kral Katili Plakası",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier4/kingslayer/test1.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.12^reset;\n^yellow;^reset; Melee: +^green;3^reset;%/^green;6^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.12^reset;\n^yellow;^reset; Yakın Dövüş: +^green;3^reset;%/^green;6^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier4/kingslayer/test1.head",
+      "pointer": "/shortdescription",
+      "en": "Kingslayer Helm",
+      "tr": "Kral Katili Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier4/kingslayer/test1.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.12^reset;\n^yellow;^reset; Melee: +^green;3^reset;%/^green;6^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.12^reset;\n^yellow;^reset; Yakın Dövüş: +^green;3^reset;%/^green;6^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier4/kingslayer/test1.legs",
+      "pointer": "/shortdescription",
+      "en": "Kingslayer Greaves",
+      "tr": "Kral Katili Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier4/kingslayer/test1.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Health x^green;1.12^reset;\n^yellow;^reset; Melee: +^green;3^reset;%/^green;6^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Can x^green;1.12^reset;\n^yellow;^reset; Yakın Dövüş: +^green;3^reset;%/^green;6^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/arctic/sciencefu.chest",
+      "pointer": "/shortdescription",
+      "en": "Arctic Parka",
+      "tr": "Kutup Parkası",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/arctic/sciencefu.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: All Cold",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Soğuk Etkileri",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/arctic/sciencefu.head",
+      "pointer": "/shortdescription",
+      "en": "Arctic Hood",
+      "tr": "Kutup Kapüşonu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/arctic/sciencefu.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: All Cold",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Soğuk Etkileri",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/arctic/sciencefu.legs",
+      "pointer": "/shortdescription",
+      "en": "Arctic Snowpants",
+      "tr": "Kutup Kar Pantolonu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/arctic/sciencefu.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: All Cold",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Soğuk Etkileri",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/decker/kirhostier5manipulator.chest",
+      "pointer": "/shortdescription",
+      "en": "Decker's Suit",
+      "tr": "Decker Giysisi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/decker/kirhostier5manipulator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shotgun/Grenade Launcher: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Liq. Nitrogen, Pus, Poisoned",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Pompalı Tüfek/Bombaatar: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sıvı Azot, İrin, Zehirlenme",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/decker/kirhostier5manipulator.head",
+      "pointer": "/shortdescription",
+      "en": "Decker's Visor",
+      "tr": "Decker Vizörü",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/decker/kirhostier5manipulator.head",
+      "pointer": "/description",
+      "en": "^cyan;Headlamp 2^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; Shotgun/Grenade Launcher: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Liq. Nitrogen, Pus, Poisoned",
+      "tr": "^cyan;Kafa Lambası 2^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; Pompalı Tüfek/Bombaatar: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sıvı Azot, İrin, Zehirlenme",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/decker/kirhostier5manipulator.legs",
+      "pointer": "/shortdescription",
+      "en": "Decker's Greaves",
+      "tr": "Decker Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/decker/kirhostier5manipulator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Shotgun/Grenade Launcher: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Liq. Nitrogen, Pus, Poisoned",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Pompalı Tüfek/Bombaatar: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sıvı Azot, İrin, Zehirlenme",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/ff_diamondarmor/ff_diamondarmor.chest",
+      "pointer": "/shortdescription",
+      "en": "Gishinanki Chestpiece",
+      "tr": "Gishinanki Göğüslüğü",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/ff_diamondarmor/ff_diamondarmor.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Katana Mastery:  +^cyan;32^reset;%\n^yellow;^reset; Dodge Techs:  +^green;20^reset;%\n^yellow;^reset; Defense Techs:  +^green;20^reset;%\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Bio-ooze",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Katana Ustalığı:  +^cyan;32^reset;%\n^yellow;^reset; Kaçınma Teknolojileri:  +^green;20^reset;%\n^yellow;^reset; Savunma Teknolojileri:  +^green;20^reset;%\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Biyo-Balçık",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/ff_diamondarmor/ff_diamondarmor.head",
+      "pointer": "/shortdescription",
+      "en": "Gishinanki Helmet",
+      "tr": "Gishinanki Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/ff_diamondarmor/ff_diamondarmor.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Katana Mastery:  +^cyan;32^reset;%\n^yellow;^reset; Dodge Techs:  +^green;20^reset;%\n^yellow;^reset; Defense Techs:  +^green;20^reset;%\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Bio-ooze",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Katana Ustalığı:  +^cyan;32^reset;%\n^yellow;^reset; Kaçınma Teknolojileri:  +^green;20^reset;%\n^yellow;^reset; Savunma Teknolojileri:  +^green;20^reset;%\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Biyo-Balçık",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/ff_diamondarmor/ff_diamondarmor.legs",
+      "pointer": "/shortdescription",
+      "en": "Gishinanki Greaves",
+      "tr": "Gishinanki Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/ff_diamondarmor/ff_diamondarmor.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Katana Mastery:  +^cyan;32^reset;%\n^yellow;^reset; Dodge Techs:  +^green;20^reset;%\n^yellow;^reset; Defense Techs:  +^green;20^reset;%\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Bio-ooze",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Katana Ustalığı:  +^cyan;32^reset;%\n^yellow;^reset; Kaçınma Teknolojileri:  +^green;20^reset;%\n^yellow;^reset; Savunma Teknolojileri:  +^green;20^reset;%\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Biyo-Balçık",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fudiver3/fudiver3.chest",
+      "pointer": "/shortdescription",
+      "en": "Leviathan Cuirass",
+      "tr": "Leviathan Zırhı",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fudiver3/fudiver3.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Swim Boost 3^reset;\n^yellow;^reset; Ocean/Tidewater: +^green;5^reset;% Crit, Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Poisoned, Bio-Ooze, Gas, Pressure, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yüzme Takviyesi 3^reset;\n^yellow;^reset; Okyanus/Tidewater: +^green;5^reset;% Kritik, Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Zehirlenme, Biyo-Balçık, Gaz, Basınç, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fudiver3/fudiver3.head",
+      "pointer": "/shortdescription",
+      "en": "Leviathan Helmet",
+      "tr": "Leviathan Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fudiver3/fudiver3.head",
+      "pointer": "/description",
+      "en": "^cyan;Headlamp 4^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Swim Boost 3^reset;\n^yellow;^reset; Ocean/Tidewater: +^green;5^reset;% Crit, Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Poisoned, Bio-Ooze, Gas, Pressure, Oxygen",
+      "tr": "^cyan;Kafa Lambası 4^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yüzme Takviyesi 3^reset;\n^yellow;^reset; Okyanus/Tidewater: +^green;5^reset;% Kritik, Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Zehirlenme, Biyo-Balçık, Gaz, Basınç, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fudiver3/fudiver3.legs",
+      "pointer": "/shortdescription",
+      "en": "Leviathan Leggings",
+      "tr": "Leviathan Tozlukları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fudiver3/fudiver3.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Swim Boost 3^reset;\n^yellow;^reset; Ocean/Tidewater: +^green;5^reset;% Crit, Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Acid, Poisoned, Bio-Ooze, Gas, Pressure, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yüzme Takviyesi 3^reset;\n^yellow;^reset; Okyanus/Tidewater: +^green;5^reset;% Kritik, Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Asit, Zehirlenme, Biyo-Balçık, Gaz, Basınç, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fuwarphunter/fuwarphunter.chest",
+      "pointer": "/shortdescription",
+      "en": "Warp Miner Techjacket",
+      "tr": "Warp Madencisi Tekno Ceketi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fuwarphunter/fuwarphunter.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Gravity Normalization^reset;\n^yellow;^reset; Mining Laser: Combat Damage x^green;3.4^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning, Proto-Poison, Pressure, Oxygen, Gas, Ice Slip, Grav-Rain",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yerçekimi Normalleştirmesi^reset;\n^yellow;^reset; Maden Lazeri: Savaş Hasarı x^green;3.4^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma, Proto-Zehir, Basınç, Oksijensizlik, Gaz, Buzda Kayma, Yerçekimi Yağmuru",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fuwarphunter/fuwarphunter.head",
+      "pointer": "/shortdescription",
+      "en": "Warp Miner Helm",
+      "tr": "Warp Madencisi Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fuwarphunter/fuwarphunter.head",
+      "pointer": "/description",
+      "en": "^cyan;Headlamp 3^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Gravity Normalization^reset;\n^yellow;^reset; Mining Laser: Combat Damage x^green;3.4^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning, Proto-Poison, Pressure, Oxygen, Gas, Ice Slip, Grav-Rain",
+      "tr": "^cyan;Kafa Lambası 3^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yerçekimi Normalleştirmesi^reset;\n^yellow;^reset; Maden Lazeri: Savaş Hasarı x^green;3.4^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma, Proto-Zehir, Basınç, Oksijensizlik, Gaz, Buzda Kayma, Yerçekimi Yağmuru",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fuwarphunter/fuwarphunter.legs",
+      "pointer": "/shortdescription",
+      "en": "Warp Miner Techpants",
+      "tr": "Warp Madencisi Tekno Pantolonu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/fuwarphunter/fuwarphunter.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Gravity Normalization^reset;\n^yellow;^reset; Mining Laser: Combat Damage x^green;3.4^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning, Proto-Poison, Pressure, Oxygen, Gas, Ice Slip, Grav-Rain",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yerçekimi Normalleştirmesi^reset;\n^yellow;^reset; Maden Lazeri: Savaş Hasarı x^green;3.4^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma, Proto-Zehir, Basınç, Oksijensizlik, Gaz, Buzda Kayma, Yerçekimi Yağmuru",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/hellfire/hellfire.chest",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Chest",
+      "tr": "Cehennem Ateşi Göğüslüğü",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/hellfire/hellfire.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Fire Nova when hit^reset;\n^yellow;^reset; ^#ac522b;Glow^reset;\n^yellow;^reset; Flamethrower/Hellfire: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat, Burning",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Darbe Alınca Ateş Novası^reset;\n^yellow;^reset; ^#ac522b;Parıltı^reset;\n^yellow;^reset; Alev Makinesi/Cehennem Ateşi: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak, Yanma",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/hellfire/hellfire.legs",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Greaves",
+      "tr": "Cehennem Ateşi Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/hellfire/hellfire.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Fire Nova when hit^reset;\n^yellow;^reset; ^#ac522b;Glow^reset;\n^yellow;^reset; Flamethrower/Hellfire: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat, Burning",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Darbe Alınca Ateş Novası^reset;\n^yellow;^reset; ^#ac522b;Parıltı^reset;\n^yellow;^reset; Alev Makinesi/Cehennem Ateşi: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak, Yanma",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/hellfire/hellfirehelm.head",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Helm",
+      "tr": "Cehennem Ateşi Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/hellfire/hellfirehelm.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Fire Nova when hit^reset;\n^yellow;^reset; ^#ac522b;Glow^reset;\n^yellow;^reset; Flamethrower/Hellfire: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat, Burning",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Darbe Alınca Ateş Novası^reset;\n^yellow;^reset; ^#ac522b;Parıltı^reset;\n^yellow;^reset; Alev Makinesi/Cehennem Ateşi: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak, Yanma",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/legionii/mantizitier5manipulator.chest",
+      "pointer": "/shortdescription",
+      "en": "Legionii Segmentorum",
+      "tr": "Legionii Segmentorum",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/legionii/mantizitier5manipulator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;30^reset;% Shield Regen, +^green;20^reset;% Knockback Resist\n^yellow;^reset; Spear, Shortspear: +^green;4^reset;% Crit\n^yellow;^reset; ^cyan;Immune^reset;: Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;30^reset;% Kalkan Yenilenmesi, +^green;20^reset;% Geri Tepme Direnci\n^yellow;^reset; Mızrak, Kısa Mızrak: +^green;4^reset;% Kritik\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/legionii/mantizitier5manipulator.head",
+      "pointer": "/shortdescription",
+      "en": "Legionii Helm",
+      "tr": "Legionii Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/legionii/mantizitier5manipulator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;30^reset;% Shield Regen, +^green;20^reset;% Knockback Resist\n^yellow;^reset; Spear, Shortspear: +^green;4^reset;% Crit\n^yellow;^reset; ^cyan;Immune^reset;: Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;30^reset;% Kalkan Yenilenmesi, +^green;20^reset;% Geri Tepme Direnci\n^yellow;^reset; Mızrak, Kısa Mızrak: +^green;4^reset;% Kritik\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/legionii/mantizitier5manipulator.legs",
+      "pointer": "/shortdescription",
+      "en": "Legionii Greaves",
+      "tr": "Legionii Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/legionii/mantizitier5manipulator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;30^reset;% Shield Regen, +^green;20^reset;% Knockback Resist\n^yellow;^reset; Spear, Shortspear: +^green;4^reset;% Crit\n^yellow;^reset; ^cyan;Immune^reset;: Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;30^reset;% Kalkan Yenilenmesi, +^green;20^reset;% Geri Tepme Direnci\n^yellow;^reset; Mızrak, Kısa Mızrak: +^green;4^reset;% Kritik\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/millenion/mantizitier5separator.chest",
+      "pointer": "/shortdescription",
+      "en": "Millenion's Coat",
+      "tr": "Millenion Paltosu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/millenion/mantizitier5separator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;30^reset;% Shield Regen, Block, Stamina\n^yellow;^reset; Shield + Sword: Health x^green;1.2^reset;, +^green;25^reset;% Knockback Resist\n^yellow;^reset; ^cyan;Immune^reset;: Tar, Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;30^reset;% Kalkan Yenilenmesi, Blok, Dayanıklılık\n^yellow;^reset; Kalkan + Kılıç: Can x^green;1.2^reset;, +^green;25^reset;% Geri Tepme Direnci\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Katran, Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/millenion/mantizitier5separator.head",
+      "pointer": "/shortdescription",
+      "en": "Millenion's Helm",
+      "tr": "Millenion Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/millenion/mantizitier5separator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;30^reset;% Shield Regen, Block, Stamina\n^yellow;^reset; Shield + Sword: Health x^green;1.2^reset;, +^green;25^reset;% Knockback Resist\n^yellow;^reset; ^cyan;Immune^reset;: Tar, Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;30^reset;% Kalkan Yenilenmesi, Blok, Dayanıklılık\n^yellow;^reset; Kalkan + Kılıç: Can x^green;1.2^reset;, +^green;25^reset;% Geri Tepme Direnci\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Katran, Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/millenion/mantizitier5separator.legs",
+      "pointer": "/shortdescription",
+      "en": "Millenion's Greaves",
+      "tr": "Millenion Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/millenion/mantizitier5separator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;30^reset;% Shield Regen, Block, Stamina\n^yellow;^reset; Shield + Sword: Health x^green;1.2^reset;, +^green;25^reset;% Knockback Resist\n^yellow;^reset; ^cyan;Immune^reset;: Tar, Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;30^reset;% Kalkan Yenilenmesi, Blok, Dayanıklılık\n^yellow;^reset; Kalkan + Kılıç: Can x^green;1.2^reset;, +^green;25^reset;% Geri Tepme Direnci\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Katran, Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/morphite/fuquantum.chest",
+      "pointer": "/shortdescription",
+      "en": "Morphite Chestpiece",
+      "tr": "Morphite Göğüslüğü",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/morphite/fuquantum.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: Sulphuric Acid",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sülfürik Asit",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/morphite/fuquantum.head",
+      "pointer": "/shortdescription",
+      "en": "Morphite Helm",
+      "tr": "Morphite Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/morphite/fuquantum.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: Sulphuric Acid",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sülfürik Asit",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/morphite/fuquantum.legs",
+      "pointer": "/shortdescription",
+      "en": "Morphite Greaves",
+      "tr": "Morphite Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/morphite/fuquantum.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: Sulphuric Acid",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Sülfürik Asit",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/rifter/kirhostier5separator.chest",
+      "pointer": "/shortdescription",
+      "en": "Rifter Hardsuit",
+      "tr": "Rifter Ağır Giysisi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/rifter/kirhostier5separator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; Magnorb, Chakram, Boomerang: Damage x^green;1.25^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Gas, Proto-Poison",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Magnorb, Çakram, Bumerang: Hasar x^green;1.25^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz, Proto-Zehir",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/rifter/kirhostier5separator.head",
+      "pointer": "/shortdescription",
+      "en": "Rifter Helm",
+      "tr": "Rifter Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/rifter/kirhostier5separator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; Magnorb, Chakram, Boomerang: Damage x^green;1.25^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Gas, Proto-Poison",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Magnorb, Çakram, Bumerang: Hasar x^green;1.25^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz, Proto-Zehir",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/rifter/kirhostier5separator.legs",
+      "pointer": "/shortdescription",
+      "en": "Rifter Greaves",
+      "tr": "Rifter Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/rifter/kirhostier5separator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; Magnorb, Chakram, Boomerang: Damage x^green;1.25^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Gas, Proto-Poison",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; Magnorb, Çakram, Bumerang: Hasar x^green;1.25^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz, Proto-Zehir",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/sentryarmor/mobiusarmor.chest",
+      "pointer": "/shortdescription",
+      "en": "Sentry Plate",
+      "tr": "Nöbetçi Plakası",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/sentryarmor/mobiusarmor.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Energy/Health x^green;1.15^reset;\n^yellow;^reset; Energy Rifles: Damage x^green;1.25^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Enerji/Can x^green;1.15^reset;\n^yellow;^reset; Enerji Tüfekleri: Hasar x^green;1.25^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/sentryarmor/mobiusarmor.head",
+      "pointer": "/shortdescription",
+      "en": "Sentry Helmet",
+      "tr": "Nöbetçi Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/sentryarmor/mobiusarmor.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Energy/Health x^green;1.15^reset;\n^yellow;^reset; Energy Rifles: Damage x^green;1.25^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Enerji/Can x^green;1.15^reset;\n^yellow;^reset; Enerji Tüfekleri: Hasar x^green;1.25^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/sentryarmor/mobiusarmor.legs",
+      "pointer": "/shortdescription",
+      "en": "Sentry Pants",
+      "tr": "Nöbetçi Pantolonu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/sentryarmor/mobiusarmor.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Energy/Health x^green;1.15^reset;\n^yellow;^reset; Energy Rifles: Damage x^green;1.25^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Enerji/Can x^green;1.15^reset;\n^yellow;^reset; Enerji Tüfekleri: Hasar x^green;1.25^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/althelm/kirhostier5accelerator2.head",
+      "pointer": "/shortdescription",
+      "en": "Valkyrie Fullhelm",
+      "tr": "Valkyrie Tam Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/althelm/kirhostier5accelerator2.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Slow Fall^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, Pressure, Gas, Extreme Radiation",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yavaş Düşüş^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Basınç, Gaz, Aşırı Radyasyon",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/kirhostier5accelerator.chest",
+      "pointer": "/shortdescription",
+      "en": "Valkyrie Hardsuit",
+      "tr": "Valkyrie Ağır Giysisi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/kirhostier5accelerator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Slow Fall^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, Pressure, Gas, Extreme Radiation",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yavaş Düşüş^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Basınç, Gaz, Aşırı Radyasyon",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/kirhostier5accelerator.head",
+      "pointer": "/shortdescription",
+      "en": "Valkyrie Helm",
+      "tr": "Valkyrie Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/kirhostier5accelerator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Slow Fall^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, Pressure, Gas, Extreme Radiation",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yavaş Düşüş^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Basınç, Gaz, Aşırı Radyasyon",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/kirhostier5accelerator.legs",
+      "pointer": "/shortdescription",
+      "en": "Valkyrie Greaves",
+      "tr": "Valkyrie Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/valkyrie/kirhostier5accelerator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Slow Fall^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, Pressure, Gas, Extreme Radiation",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Yavaş Düşüş^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Basınç, Gaz, Aşırı Radyasyon",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/warframe/mantizitier5accelerator.chest",
+      "pointer": "/shortdescription",
+      "en": "Warframe Armor",
+      "tr": "Warframe Zırhı",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/warframe/mantizitier5accelerator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle, Pistol: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Pressure, Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği, Tabanca: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Basınç, Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/warframe/mantizitier5accelerator.head",
+      "pointer": "/shortdescription",
+      "en": "Warframe Helmet",
+      "tr": "Warframe Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/warframe/mantizitier5accelerator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle, Pistol: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Pressure, Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği, Tabanca: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Basınç, Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/warframe/mantizitier5accelerator.legs",
+      "pointer": "/shortdescription",
+      "en": "Warframe Pants",
+      "tr": "Warframe Pantolonu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier5/warframe/mantizitier5accelerator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Assault Rifle, Pistol: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Pressure, Gas",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Taarruz Tüfeği, Tabanca: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Basınç, Gaz",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/champion/mantizitier6separator.chest",
+      "pointer": "/shortdescription",
+      "en": "Champion's Carapace",
+      "tr": "Şampiyon Kabuğu",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/champion/mantizitier6separator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Hammer, Axe, Mace: Damage x^green;1.3^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;:  Moderate Cold, Tar, Mud, Clay",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Çekiç, Balta, Topuz: Hasar x^green;1.3^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Orta Dereceli Soğuk, Katran, Çamur, Kil",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/champion/mantizitier6separator.head",
+      "pointer": "/shortdescription",
+      "en": "Champion's Maw",
+      "tr": "Şampiyon Çenesi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/champion/mantizitier6separator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Hammer, Axe, Mace: Damage x^green;1.3^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;:  Moderate Cold, Tar, Mud, Clay",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Çekiç, Balta, Topuz: Hasar x^green;1.3^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Orta Dereceli Soğuk, Katran, Çamur, Kil",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/champion/mantizitier6separator.legs",
+      "pointer": "/shortdescription",
+      "en": "Champion's Tights",
+      "tr": "Şampiyon Taytı",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/champion/mantizitier6separator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Hammer, Axe, Mace: Damage x^green;1.3^reset;, +^green;3^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;:  Moderate Cold, Tar, Mud, Clay",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Çekiç, Balta, Topuz: Hasar x^green;1.3^reset;, +^green;3^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Orta Dereceli Soğuk, Katran, Çamur, Kil",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/fusunwalker/fusunwalker.chest",
+      "pointer": "/shortdescription",
+      "en": "Sunwalker Chest",
+      "tr": "Güneş Gezgini Göğüslüğü",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/fusunwalker/fusunwalker.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Plasma Weapons: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat/Cold/Radiation, Pressure, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Plazma Silahları: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak/Soğuk/Radyasyon, Basınç, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/fusunwalker/fusunwalker.head",
+      "pointer": "/shortdescription",
+      "en": "Sunwalker Helm",
+      "tr": "Güneş Gezgini Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/fusunwalker/fusunwalker.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Plasma Weapons: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat/Cold/Radiation, Pressure, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Plazma Silahları: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak/Soğuk/Radyasyon, Basınç, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/fusunwalker/fusunwalker.legs",
+      "pointer": "/shortdescription",
+      "en": "Sunwalker Robes",
+      "tr": "Güneş Gezgini Cübbesi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/fusunwalker/fusunwalker.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Plasma Weapons: Damage x^green;1.15^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat/Cold/Radiation, Pressure, Oxygen",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Plazma Silahları: Hasar x^green;1.15^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak/Soğuk/Radyasyon, Basınç, Oksijensizlik",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/morphite2/fuquantumadv.chest",
+      "pointer": "/shortdescription",
+      "en": "Morphite Chestpiece MK2",
+      "tr": "Morphite Göğüslüğü Mk. 2",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/morphite2/fuquantumadv.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat/Cold/Radiation, Acid",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak/Soğuk/Radyasyon, Asit",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/morphite2/fuquantumadv.head",
+      "pointer": "/shortdescription",
+      "en": "Morphite Helm MK2",
+      "tr": "Morphite Miğferi Mk. 2",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/morphite2/fuquantumadv.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat/Cold/Radiation, Acid",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak/Soğuk/Radyasyon, Asit",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/morphite2/fuquantumadv.legs",
+      "pointer": "/shortdescription",
+      "en": "Morphite Greaves MK2",
+      "tr": "Morphite Baldırlıkları Mk. 2",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/morphite2/fuquantumadv.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: Extreme Heat/Cold/Radiation, Acid",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Aşırı Sıcak/Soğuk/Radyasyon, Asit",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/replicant/kirhostier6accelerator.chest",
+      "pointer": "/shortdescription",
+      "en": "Replicant's Hardsuit",
+      "tr": "Replikant Ağır Giysisi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/replicant/kirhostier6accelerator.chest",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Single Sword: +^green;2^reset;% Crit,\n^yellow;^reset; Dual Swords: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Gas, Shadow Taint, Tar^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Tek Kılıç: +^green;2^reset;% Kritik,\n^yellow;^reset; Çift Kılıçlar: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz, Gölge Lekesi, Katran^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/replicant/kirhostier6accelerator.head",
+      "pointer": "/shortdescription",
+      "en": "Replicant's Helm",
+      "tr": "Replikant Miğferi",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/replicant/kirhostier6accelerator.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Single Sword: +^green;2^reset;% Crit,\n^yellow;^reset; Dual Swords: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Gas, Shadow Taint, Tar^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Tek Kılıç: +^green;2^reset;% Kritik,\n^yellow;^reset; Çift Kılıçlar: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz, Gölge Lekesi, Katran^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/replicant/kirhostier6accelerator.legs",
+      "pointer": "/shortdescription",
+      "en": "Replicant's Greaves",
+      "tr": "Replikant Baldırlıkları",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
+    },
+    {
+      "asset": "items/armors/tier6/replicant/kirhostier6accelerator.legs",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Single Sword: +^green;2^reset;% Crit,\n^yellow;^reset; Dual Swords: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Gas, Shadow Taint, Tar^reset;",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Tek Kılıç: +^green;2^reset;% Kritik,\n^yellow;^reset; Çift Kılıçlar: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gaz, Gölge Lekesi, Katran^reset;",
+      "section": "v0.29 Kademe 5 aktif zırh setleri"
     }
   ]
 }

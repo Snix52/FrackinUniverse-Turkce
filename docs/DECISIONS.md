@@ -511,3 +511,12 @@
 - `itemName`, hasar, yetenek, mermi, kategori, tarif ve script alanları değiştirilmedi. Beş kalkan da araştırma + tarif zincirinden açılan savaş ekipmanı olduğu için aynı görünür alan kuralıyla kapsama alındı.
 - Tritanium, Effigium, Aegisalt, Ferozium ve Violium özel malzeme adları korundu. **Phantasm → Hayalet, Shadow Reaper → Gölge Biçici, Veilbreaker → Perdekıran, Minigun → Döner Makineli Tüfek** kararları kilitlendi; `FarSight`, `Helios`, `Imperius` ve `Fissure` model/özel ad olarak korundu.
 - Yeni kapsam **192 yapılandırılmış alan / 96 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **5068 structured + 15 Lua / 1612 patch asset** oldu. Oyun içi silah adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.29 Kademe 5 aktif zırh setleri
+
+- Aktif Zırh ve Silahlar ağacındaki `tritaniumgear`, `enrichedgear`, `violiumgear`, `feroziumgear`, `aegisaltgear`, `densealloygear` ve `effigiumgear` düğümleri zırh çıktıları için seçildi. Araştırma açılımı ile gerçek `.recipe` çıktısı birlikte erişilebilirlik kanıtı sayıldı.
+- Yedi düğümde daha önce yerelleştirilmemiş **61 üretilebilir zırh asseti** doğrulandı. Her assette yalnız `/shortdescription` ve `/description` çevrildi; teknik `itemName`, stat hesapları, efekt listeleri, tooltip türü, kategori, tarif ve script alanları korundu.
+- Kaynak klasör kademesi yerine runtime araştırma zinciri esas alındı. Bu nedenle dosya yolu `tier4` altında olan Kral Katili ile `tier6` altında olan Şampiyon, Güneş Gezgini, Morphite Mk. 2 ve Replikant setleri Kademe 5 kapsamında yerelleştirildi.
+- **Beastmaster → Canavar Ustası, Skill Quiver → Beceri Sadakı, Peerless Quiver → Eşsiz Sadak, Kingslayer → Kral Katili, Sentry → Nöbetçi, Champion → Şampiyon, Sunwalker → Güneş Gezgini, Replicant → Replikant** kararları kilitlendi. `Capturenaut`, `Gishinanki`, `Decker`, `Legionii`, `Millenion`, `Morphite`, `Rifter`, `Valkyrie` ve `Warframe` model/özel ad olarak korundu.
+- Tooltip terimleri **Havada Hasar, Germe Hızı, Atış Başına Enerji, Katana Ustalığı, Yerçekimi Yağmuru, Ağır Giysi, Tek Kılıç** ve **Çift Kılıçlar** biçiminde kilitlendi.
+- Yeni kapsam **122 yapılandırılmış alan / 61 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **5190 structured + 15 Lua / 1673 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.

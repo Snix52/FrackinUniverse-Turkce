@@ -616,3 +616,22 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Wave-burst | Silah tooltip işlevi | UI | Dalga Patlaması | Dalga Atışı | LOCKED | |
 | Plasmic Crystal | Silah malzemesi | Kaynak | Plazmik Kristal | Plazma Kristali | LOCKED | Önceki görev-eşya kararıyla uyumlu |
 | FarSight / Helios / Imperius / Fissure | Silah modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel sınıf adı ayrıca çevrilir |
+
+## v0.29 Kademe 5 zırh terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Beastmaster | Zırh set bonusu | UI | Canavar Ustası | Beastmaster | LOCKED | |
+| Skill Quiver | Zırh parçası | Nesne | Beceri Sadakı | Yetenek Okluğu | LOCKED | Quiver için yerleşik Sadak kullanılır |
+| Peerless Quiver | Zırh parçası | Nesne | Eşsiz Sadak | Rakipsiz Okluk | LOCKED | |
+| Kingslayer | Zırh seti | Nesne | Kral Katili | Kingslayer | LOCKED | |
+| Sentry | Zırh seti | Nesne | Nöbetçi | Sentry | LOCKED | |
+| Champion | Zırh seti | Nesne | Şampiyon | Champion | LOCKED | |
+| Sunwalker | Zırh seti | Nesne | Güneş Gezgini | Güneşte Yürüyen | LOCKED | |
+| Replicant | Zırh seti | Nesne | Replikant | Kopya | LOCKED | Bilimkurgu model adı |
+| Hardsuit | Zırh parçası | Nesne | Ağır Giysi | Sert Giysi | LOCKED | Koruyucu teknik giysi bağlamı |
+| Airborne Damage | Yay tooltip istatistiği | UI | Havada Hasar | Havadaki Hasar | LOCKED | |
+| Katana Mastery | Zırh set bonusu | UI | Katana Ustalığı | Katana Uzmanlığı | LOCKED | |
+| Grav-Rain | Tehlike / hava etkisi | Durum | Yerçekimi Yağmuru | Grav-Yağmur | LOCKED | |
+| Single Sword / Dual Swords | Zırh set bonusu | UI | Tek Kılıç / Çift Kılıçlar | Yalnız Kılıç / İkili Kılıç | LOCKED | |
+| Capturenaut / Gishinanki / Decker / Legionii / Millenion / Morphite / Rifter / Valkyrie / Warframe | Zırh modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel parça adları ayrıca çevrilir |
