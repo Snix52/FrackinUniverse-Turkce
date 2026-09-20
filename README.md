@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.13.0 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.13.1 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -62,7 +62,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.13.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.13.1_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -152,6 +152,15 @@ Görev metinlerindeki hedeflerin envanterle birebir eşleşmesi için **Greenfin
 v0.13 eklemesi **48 yapılandırılmış alan / 18 yeni patch asset**tir. Yeni alanların tamamı pinned FU 6.5.8 kaynağıyla doğrulandı: **48/48 PASS**. `Verdant Ruins`, `Ancient Temple` ve `Evernight Jungle` gibi özel görev/konum adları, ilgili mission zincirleri bütünüyle yerelleştirilene kadar özgün bırakıldı.
 
 Bu paketle Outpost tarafında geriye **13 ham görev dosyası** kaldı: Kevin 9 + Khe 4. Oyun içi görev işaretçisi, dükkân etkileşimi, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
+
+
+## v0.13.1 Geriye Dönük Türkçe QA
+
+v0.1-v0.13 arasında yerelleştirilmiş **1.929 yapılandırılmış alan** ve **15 Lua UI metni** yeniden tarandı. Toplam **26 alanda** dilbilgisi, terminoloji, UI anlamı veya doğal Türkçe düzeltmesi yapıldı; teknik kapsam ve kaynak pointerları değişmedi.
+
+Başlıca düzeltmeler: bozuk Bilim Karakolu teslim cümleleri, Arıcılıkta **Ana Arı** terminolojisi, Arı Barınağındaki ters anlamlı **Satın Al -> Sat** düğmesi, Penumbrite yazım hatası, Glitch duygu etiketleri, monokl tarifleri ve v0.13 dükkân görevlerinin yönlendirme/akıcılık sorunları. Bilinen hata kalıpları için build regresyon korumaları da eklendi.
+
+Statik QA sonucu: **0 duplicate, 0 boş çeviri, renk/kontrol/placeholder/sayı bütünlüğü PASS**. Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
 
 ## Yol haritası
 
