@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.26.0-beta",
+  "translation_version": "0.27.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 4702,
+  "translated_display_fields": 4876,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 4717,
-  "patched_assets": 1429,
+  "total_localized_display_units": 4891,
+  "patched_assets": 1516,
   "raw_override_assets": 1,
-  "target_assets_total": 1430,
+  "target_assets_total": 1517,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -58,22 +58,23 @@
     "v0.23 Kademe 4 çekirdek savaş ekipmanı": 96,
     "v0.24 Kademe 4 kalan savaş ekipmanı": 296,
     "v0.25 Kademe 1-2 aktif zırh setleri": 228,
-    "v0.26 Kademe 3 aktif zırh setleri": 150
+    "v0.26 Kademe 3 aktif zırh setleri": 150,
+    "v0.27 Kademe 4 aktif zırh setleri": 174
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (4702/4702)",
+    "unique_paths": "PASS (4876/4876)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
     "printf_placeholder_integrity": "PASS (%s / %% and supported printf specifiers)",
-    "fixture_application": "PASS (current 4702-field catalog; inactive research, disconnected quest assets, 10 runtime-dead v0.18 objects, 26 runtime-dead/deprecated v0.19 crafting items and 69 v0.20 inactive/broken quest files rejected before patch generation; v0.21 restricted to 121, v0.22 to 157, v0.23 to 48, v0.24 to 148, v0.25 to 114 and v0.26 to 75 exact research/recipe-backed equipment assets)",
-    "source_mismatch_rejection_cases": 4702,
-    "source_mismatch_rejection": "PASS (4702 test-guarded structured fields)",
+    "fixture_application": "PASS (current 4876-field catalog; inactive research, disconnected quest assets, 10 runtime-dead v0.18 objects, 26 runtime-dead/deprecated v0.19 crafting items and 69 v0.20 inactive/broken quest files rejected before patch generation; v0.21 restricted to 121, v0.22 to 157, v0.23 to 48, v0.24 to 148, v0.25 to 114, v0.26 to 75 and v0.27 to 87 exact research/recipe-backed equipment assets)",
+    "source_mismatch_rejection_cases": 4876,
+    "source_mismatch_rejection": "PASS (4876 test-guarded structured fields)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (4614/4614 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
+    "exact_source_pointer_validation": "PASS (4788/4788 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
     "starbound_raw_newline_json_validation": "PASS (strict=False parse plus exact pointer simulation)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
@@ -85,7 +86,7 @@
     "v05_new_source_pointer_validation": "PASS (216/216 active fields across 33 source assets)",
     "v05_build_allowlist": "PASS (216/216 active paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS (v0.26 catalog/tool full-source local static verification; GitHub Actions pending)",
+    "build_allowlist_current_scope": "PASS (v0.27 catalog/tool full-source local static verification; GitHub Actions pending)",
     "craftsmanship_source_pointer_validation": "PASS (153/153 active tree fields; runtime-unused default pair and workbenchatechy excluded)",
     "craftsmanship_patch_pairing": "PASS (153 test + 153 replace)",
     "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
@@ -184,7 +185,7 @@
     "v21_weapon_build_allowlist": "PASS (121 exact weapon assets; shortdescription and description only)",
     "v21_out_of_scope_weapon_guard": "PASS (unlisted Titanium weapon rejected before patch generation)",
     "v21_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "github_actions_build_and_zip": "PASS (GitHub Actions run 35529030761)",
+    "github_actions_build_and_zip": "PENDING (v0.27 publish not yet triggered)",
     "v022_tier3_research_recipe_coverage": "PASS (158/158 combat assets across six active Tier 3 nodes; 1 previously covered + 157 newly localized)",
     "v022_master_manipulator_inventory_consistency": "PASS (2/2 reachable inventory assets; 5/5 visible fields use Usta Manipülatör)",
     "v022_quest_prose_correction": "PASS (combatmaneuvering1 text + completionText use Tuhaf eserin)",
@@ -217,7 +218,16 @@
     "v025_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
     "v025_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
     "v025_number_integrity_guard": "PASS (mutated armor stat rejected)",
-    "v025_out_of_scope_armor_guard": "PASS (unlisted Tier 3 armor rejected before patch generation)"
+    "v025_out_of_scope_armor_guard": "PASS (unlisted Tier 3 armor rejected before patch generation)",
+    "v027_tier4_armor_research_recipe_coverage": "PASS (87/87 newly localized armor assets across seven active Tier 4 research branches; all have real recipe outputs)",
+    "v027_pinned_fu_source_validation": "PASS (174/174)",
+    "v027_patch_pairing": "PASS (174 test + 174 replace across 87 new patch assets)",
+    "v027_build_allowlist": "PASS (174/174 new structured paths covered; shortdescription and description only)",
+    "v027_translation_memory_consistency": "PASS (repeated source strings use one Turkish translation in armor scope)",
+    "v027_functional_english_residue": "PASS (0 checked functional English tooltip terms)",
+    "v027_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
+    "v027_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
+    "v027_number_integrity_guard": "PASS (mutated armor stat rejected)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -290,8 +300,8 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.26 project total: 4702 structured fields. Provenance coverage is complete: 4614 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
-  "polish_pass": "PASS for v0.26 static scope: six active Tier 3 Warcraft branches yield 76/76 recipe-backed armor assets; one previously localized Mutavisk helmet is preserved and the remaining 75 assets add 150 source-locked shortdescription/description fields. In-game inventory/tooltip/font/layout/context LQA remains pending.",
+  "full_source_validation": "v0.27 project total: 4876 structured fields. Provenance coverage is complete: 4788 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
+  "polish_pass": "PASS for v0.27 static scope: seven active Tier 4 Warcraft branches yield 87/87 recipe-backed armor assets and add 174 source-locked shortdescription/description fields. The Cute set is included from its runtime Tier 4 research/recipe chain despite its tier5 source path. In-game inventory/tooltip/font/layout/context LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
     "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
@@ -859,6 +869,41 @@
       "path": "dist/FU_Turkce_v0.26.0_Beta.zip",
       "bytes": 1000929,
       "git_blob_sha": "bf04b73ee357822656c391d32bdafd6cb609f46b"
+    },
+    "in_game_lqa": "NOT PERFORMED"
+  },
+  "v027_scope": {
+    "active_tier4_armor_research_nodes": [
+      "advancealloygear",
+      "durasteelgear",
+      "irradiumgear",
+      "triangliumgear",
+      "prisilitegear",
+      "quietusgear",
+      "bioweaponsgear"
+    ],
+    "research_unlocked_recipe_backed_armor_assets": 87,
+    "newly_localized_recipe_backed_armor_assets": 87,
+    "added_structured_fields": 174,
+    "added_patch_assets": 87,
+    "pinned_fu_new_fields": 174,
+    "layered_external_new_fields": 0,
+    "source_provenance": "PASS (174/174)",
+    "structured_field_count_after_release": 4876,
+    "localized_display_units_after_release": 4891,
+    "patch_assets_after_release": 1516,
+    "target_assets_total": 1517,
+    "translated_pointers": [
+      "/shortdescription",
+      "/description"
+    ],
+    "static_qa": "PASS",
+    "github_actions_run": null,
+    "package_commit": null,
+    "package_zip": {
+      "path": "dist/FU_Turkce_v0.27.0_Beta.zip",
+      "bytes": null,
+      "git_blob_sha": null
     },
     "in_game_lqa": "NOT PERFORMED"
   }

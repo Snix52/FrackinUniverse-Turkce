@@ -517,6 +517,99 @@ items/armors/tier3/stalkers/fudarkrobespants.legs
 items/armors/uniques/fuhoodedmask/fuhoodedmask.head
 '''.split())
 
+# Aktif fu_warcraft ağacındaki yedi Kademe 4 zırh kolunun açtığı ve
+# gerçek üretim tarifi bulunan v0.27 zırh parçaları. Dosya yolu tier5
+# olsa da Cute seti bu Kademe 4 araştırma/tarif zincirinden açılır.
+V027_TIER4_ARMOR_ASSETS = set('''
+items/armors/backitems/cutewings/cutewings.back
+items/armors/backitems/shadowbonecape/shadowbonecape.back
+items/armors/biome/garden/quiver/power/powerback.back
+items/armors/biome/garden/quiver/quiver4/quiver4.back
+items/armors/biome/garden/quiver/speed/speedback.back
+items/armors/tier4/Ranger/quietus.chest
+items/armors/tier4/Ranger/quietus.head
+items/armors/tier4/Ranger/quietus.legs
+items/armors/tier4/bearenhanced/beararmor2.chest
+items/armors/tier4/bearenhanced/beararmor2.head
+items/armors/tier4/bearenhanced/beararmor2.legs
+items/armors/tier4/blisteralt/blisterarmoralt.chest
+items/armors/tier4/blisteralt/blisterarmoralt.head
+items/armors/tier4/blisteralt/blisterarmoralt.legs
+items/armors/tier4/cellular/cellulararmor.chest
+items/armors/tier4/cellular/cellulararmor.head
+items/armors/tier4/cellular/cellulararmor.legs
+items/armors/tier4/cultflesh/cultflesh.chest
+items/armors/tier4/cultflesh/cultflesh.head
+items/armors/tier4/cultflesh/cultflesh.legs
+items/armors/tier4/enforcerarmor/enforcerarmor.chest
+items/armors/tier4/enforcerarmor/enforcerarmor.head
+items/armors/tier4/enforcerarmor/enforcerarmor.legs
+items/armors/tier4/fieldscience/fieldscientist.chest
+items/armors/tier4/fieldscience/fieldscientist.head
+items/armors/tier4/fieldscience/fieldscientist.legs
+items/armors/tier4/fuarmoredcultist/fuarmoredcultist.back
+items/armors/tier4/fuarmoredcultist/fuarmoredcultist.chest
+items/armors/tier4/fuarmoredcultist/fuarmoredcultist.head
+items/armors/tier4/fuarmoredcultist/fuarmoredcultist.legs
+items/armors/tier4/fudiver2/fudiver2.chest
+items/armors/tier4/fudiver2/fudiver2.head
+items/armors/tier4/fudiver2/fudiver2.legs
+items/armors/tier4/fuguardian/fuguardian.chest
+items/armors/tier4/fuguardian/fuguardian.head
+items/armors/tier4/fuguardian/fuguardian.legs
+items/armors/tier4/fuinferno/fuinferno.chest
+items/armors/tier4/fuinferno/fuinferno.head
+items/armors/tier4/fuinferno/fuinferno.legs
+items/armors/tier4/fuinvader/fuinvader.chest
+items/armors/tier4/fuinvader/fuinvader.head
+items/armors/tier4/fuinvader/fuinvader.legs
+items/armors/tier4/fuprotector/fuprotector.chest
+items/armors/tier4/fuprotector/fuprotector.head
+items/armors/tier4/fuprotector/fuprotector.legs
+items/armors/tier4/furavager/furavager.chest
+items/armors/tier4/furavager/furavager.head
+items/armors/tier4/furavager/furavager.legs
+items/armors/tier4/fustarkiller/fustarkiller.chest
+items/armors/tier4/fustarkiller/fustarkiller.head
+items/armors/tier4/fustarkiller/fustarkiller.legs
+items/armors/tier4/graphene/graphene.chest
+items/armors/tier4/graphene/graphene.head
+items/armors/tier4/graphene/graphene.legs
+items/armors/tier4/hunter/wasteland2.chest
+items/armors/tier4/hunter/wasteland2.head
+items/armors/tier4/hunter/wasteland2.legs
+items/armors/tier4/intersec/kirhostier4.chest
+items/armors/tier4/intersec/kirhostier4.head
+items/armors/tier4/intersec/kirhostier4.legs
+items/armors/tier4/irradiumarmor/irradiumarmor.chest
+items/armors/tier4/irradiumarmor/irradiumarmor.head
+items/armors/tier4/irradiumarmor/irradiumarmor.legs
+items/armors/tier4/maverickhunter/maverickhunter.chest
+items/armors/tier4/maverickhunter/maverickhunter.head
+items/armors/tier4/maverickhunter/maverickhunter.legs
+items/armors/tier4/primus/mantizitier4.chest
+items/armors/tier4/primus/mantizitier4.head
+items/armors/tier4/primus/mantizitier4.legs
+items/armors/tier4/scoutarmor_melee/ff_scoutarmor_melee.chest
+items/armors/tier4/scoutarmor_melee/ff_scoutarmor_melee.head
+items/armors/tier4/scoutarmor_melee/ff_scoutarmor_melee.legs
+items/armors/tier4/shadowbonearmor/shadowbonearmor.chest
+items/armors/tier4/shadowbonearmor/shadowbonearmor.head
+items/armors/tier4/shadowbonearmor/shadowbonearmor.legs
+items/armors/tier4/spacefareradv/spacefareradv.chest
+items/armors/tier4/spacefareradv/spacefareradv.head
+items/armors/tier4/spacefareradv/spacefareradv.legs
+items/armors/tier4/survivors/wasteland.chest
+items/armors/tier4/survivors/wasteland.head
+items/armors/tier4/survivors/wasteland.legs
+items/armors/tier4/x10/xeno.chest
+items/armors/tier4/x10/xeno.head
+items/armors/tier4/x10/xeno.legs
+items/armors/tier5/cute/cute.chest
+items/armors/tier5/cute/cute.head
+items/armors/tier5/cute/cute.legs
+'''.split())
+
 # Aktif fu_warcraft ağacındaki altı Kademe 3 zırh kolunun açtığı,
 # gerçek üretim tarifi bulunan v0.26 zırh parçaları. Mutavisk miğferi
 # önceki Science paketinde çevrildiği için burada 75 yeni asset vardır.
@@ -1180,6 +1273,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V027_TIER4_ARMOR_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V026_TIER3_ARMOR_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V025_EARLY_ARMOR_ASSETS:
@@ -1640,7 +1735,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif Kademe 1-3 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif Kademe 1-4 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

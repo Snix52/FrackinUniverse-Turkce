@@ -580,3 +580,24 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Battleborn | Zırh seti | Nesne | Savaşdoğan | Savaş Doğumlu | LOCKED | Kısa sınıf/set adı |
 | Spacefarer | Zırh seti | Nesne | Uzay Yolcusu | Uzay Gezgini | LOCKED | |
 | Spacepunk / Neishin / Nightar / Tenebrhae | Zırh modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel parça adları ayrıca çevrilir |
+
+## v0.27 Kademe 4 zırh terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Shield Stamina | Zırh tooltip istatistiği | UI | Kalkan Dayanıklılığı | Kalkan Staminası | LOCKED | Stamina kararıyla uyumlu |
+| Shield Bash | Zırh tooltip istatistiği | UI | Kalkan Darbesi | Kalkan Vuruşu | LOCKED | |
+| Mental Resist | Zırh tooltip istatistiği | UI | Zihinsel Direnç | Mental Direnç | LOCKED | |
+| Glow | Zırh tooltip işlevi | UI | Parıltı | Glow | LOCKED | |
+| Slowfall | Zırh tooltip işlevi | UI | Yavaş Düşüş | Yavaş Düşme | LOCKED | |
+| Gravity Normalization | Zırh tooltip işlevi | UI | Yerçekimi Normalleştirmesi | Gravite Normalizasyonu | LOCKED | |
+| Hunger Drain Rate | Zırh tooltip istatistiği | UI | Açlık Tüketim Hızı | Açlık Boşalma Oranı | LOCKED | Önceki Hunger Drain → Açlık Tüketimi kararıyla uyumlu |
+| Ice Slip | Tehlike / zemin etkisi | Durum | Buzda Kayma | Buz Kayması | LOCKED | |
+| Snow Slow | Tehlike / zemin etkisi | Durum | Karda Yavaşlama | Kar Yavaşlatması | LOCKED | |
+| Shadow Taint | Tehlike / durum etkisi | Durum | Gölge Lekesi | Gölge Zehri | LOCKED | |
+| Fire Nova | Zırh tetiklenen etkisi | UI | Ateş Novası | Ateş Patlaması | LOCKED | Mekanik etki adı korunur |
+| Cellular | Zırh seti | Nesne | Hücresel | Hücreli | LOCKED | |
+| Pustule | Zırh seti | Nesne | Püstül | Kabarcık | LOCKED | Tıbbi karşılık |
+| Star-Killer | Zırh seti | Nesne | Yıldız Katili | Yıldız Öldüren | LOCKED | |
+| Maverick / Intersec / Primus | Zırh modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel parça adları ayrıca çevrilir |
+| Graphene | Zırh malzemesi | Kaynak | Grafen | Graphene | LOCKED | Yerleşik bilimsel karşılık |
