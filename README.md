@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.13.2 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.13.3 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science + Outpost İçki + Arıcılık + Bilim Karakolu dükkân görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -36,7 +36,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **1.929 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.944 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **1.934 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.949 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -62,7 +62,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.13.2_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.13.3_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -71,7 +71,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da toplam yapılandırılmış kapsam **1.929 alan / 322 patch asset**tir. v0.13 Bilim Karakolu dükkân paketindeki **48/48 yeni alan pinned FU 6.5.8 kaynağından exact doğrulandı**. v0.11 Outpost İçki ve v0.12 Arıcılık provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **1.934 alan / 325 patch asset**tir. v0.13 Bilim Karakolu dükkân paketindeki **48/48 yeni alan pinned FU 6.5.8 kaynağından exact doğrulandı**. v0.11 Outpost İçki ve v0.12 Arıcılık provenans kontrolleri de korunuyor. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -170,6 +170,14 @@ v0.13.1 sonrasında bütün katalog tekrar tarandı. Kilitli **Mech** sistem ad�
 Arı Barınağı kaynak tarifleri yeniden incelendi. Panel yalnızca arıları para veya malzemeye çevirmiyor; aynı arayüzde 1 Piksel karşılığında arıcılık rehberleri de alınabiliyor. Bu nedenle tek yönlü **Sat** etiketi de eksik kaldığından eylem düğmesi her iki işlemi kapsayan **Takas Et** olarak düzeltildi.
 
 Bu turda **17 yapılandırılmış alan** değişti. Alan/pointer sayısı, provenans ve patch asset kapsamı değişmedi: **1.929 structured + 15 Lua = 1.944 görünür birim / 322 patch asset**. Küçük harf `mech` ve Arı Barınağı eylemi için yeni build regresyon guardları eklendi.
+
+## v0.13.3 Üçüncü Geriye Dönük QA
+
+Bütün mevcut katalog üçüncü kez bağlam ve envanter takibi açısından tarandı. Crafting listelerinde runtime sırasında gerçek eşya adıyla değiştirilen üç `Replace Me` şablon alanı oyuncu metni olmadığı için kapsamdan çıkarıldı.
+
+Sifter tutorialında İngilizce kalan **Loose Silt / Gravel** hedefleri gerçek envanter adlarıyla **Gevşek Mil / Çakıl** olarak eşlendi. Wooden Centrifuge tutorialında ise kaynak açıkça ayrı bir **Iron Centrifuge** nesnesine yönlendirdiği hâlde Türkçe metin yalnız “Santrifüj” diyordu. Gerçek `ironcentrifuge` nesnesi doğrulandı, **Demir Santrifüj** olarak LOCKED edildi ve envanterdeki açıklama/ad/alt başlık/kategori de çevrildi.
+
+Ayrıca oyuncuya dönük iki `eldritch` sızıntısı **tekinsiz**, `vanilla` meta ifadesi **ana oyun** olarak düzeltildi. Net sonuç: **1.934 structured + 15 Lua = 1.949 görünür birim / 325 patch asset**. Oyun içi LQA hâlâ ayrı aşamadır.
 
 ## Yol haritası
 
