@@ -193,6 +193,10 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Bonemeal | Malzeme | Kaynak | Kemik Unu | Bonemeal | LOCKED | |
 | Ice Crystal | Vanilla/FU üretim kaynağı | Kaynak | Buz Kristali | Ice Crystal | LOCKED | Vanilla envanter adıyla eşleştirildi |
 
+| AI Chip / A.I. Chip | Elektronik / yapay zekâ bileşeni | Kaynak | Yapay Zekâ Çipi | AI Çipi, A.I. Chip | LOCKED | Görev ve gerçek envanter adı eşleştirildi |
+| Silicon Board | Elektronik bileşeni | Kaynak | Silisyum Devre Kartı | Silikon Kart, Silicon Board | LOCKED | Vanilla envanter adı; Silicon -> Silisyum kararıyla uyumlu |
+| Watcher | Güç sistemi / chunk loader cihazı | Nesne | Gözcü | Watcher, Nöbetçi | LOCKED | Uzaktayken çevresindeki cihazları etkin tutan FU cihazı |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
