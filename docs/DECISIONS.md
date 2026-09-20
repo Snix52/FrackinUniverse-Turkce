@@ -267,3 +267,13 @@
 - Kaynak metinde adet yazmayan ancak quest koşulu 3 olan Bracken, Mutavisk, Oonforta, Ignus Biberi ve Radyasyon Yaprağı hedeflerinde gerçek adet oyuncuya açıkça gösterildi.
 - `fuquest_cloning` kaynak metni hedefi açık söylemek yerine cihaz kullanımını iki kez tekrar ediyor; Türkçe başlangıç metni doğrudan **Klonlama Laboratuvarı üret** hedefini anlatacak şekilde düzenlendi.
 - Genetics yeni alanları **51/51 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **51 test + 51 replace PASS**.
+
+### v0.10 Mechanical geçişi
+
+- `fu_mechanical` quest-listindeki 7 görev + Bilim Karakolu NPC'sinin verdiği `create_blackglass` olmak üzere **8/8 erişilebilir Mechanical görevi** yerelleştirildi.
+- Mechanical görevleri **31 görünür görev alanı**; Elektromıknatıs, Asit Kalkanı ve Siyah Cam hedeflerinde **10 görünür alan** olmak üzere toplam **41 yeni yapılandırılmış alan / 11 yeni patch asset** içeriyor.
+- Acid Shield -> **Asit Kalkanı**, Black Glass -> **Siyah Cam** LOCKED; Elektromıknatıs mevcut LOCKED kararına göre envanterde de çevrildi.
+- `create_atmosregulator` teslim metnindeki eski `Atmosphere Regulator`, gerçek eşya adı `Atmospheric Regulator` ile eşlenerek **Atmosfer Düzenleyici** kullanıldı.
+- `create_blackglass` başlangıç metni gerçek quest koşulundaki hedefi açık söylemiyordu; Türkçede Yüksek Fırında Obsidiyen eritip **Siyah Cam** elde etme hedefi açıklaştırıldı.
+- Siyah Cam vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı; ırk inceleme metinleri de aynı assette yerelleştirildi.
+- Mechanical yeni alanları **41/41 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **41 test + 41 replace PASS**.
