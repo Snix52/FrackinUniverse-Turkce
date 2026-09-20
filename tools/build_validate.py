@@ -14,6 +14,15 @@ CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
 ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 
+# Geriye dönük LQA'da yakalanan ve tekrar projeye sızmaması gereken Türkçe hatalar.
+BAD_TR_PATTERNS = (
+    'Bilim Karakolundaki^reset; bana getir',
+    'Dükkânına^reset;, ^orange;Bilim Karakoluna',
+    'keskinlığ',
+    'monokllü',
+    'Et varlıklar'
+)
+
 # FU 6.5.8 pinned kaynağında strings.research altında dursa da aktif researchTree
 # düğümüne bağlı olmayan metinler. Oyuncuya görünmedikleri için yamaya alınmaz.
 NONVISIBLE_QUEST_ASSETS = {
@@ -435,6 +444,8 @@ def main():
         if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
         if a in NONVISIBLE_QUEST_ASSETS:raise ValueError('Aktif görev zincirine bağlı olmayan/kırık görev: '+a)
         if 'İngilizce adı:' in r['tr']:raise ValueError('İngilizce fallback/gloss: '+a+p)
+        if any(x in r['tr'] for x in BAD_TR_PATTERNS):raise ValueError('Bilinen Türkçe LQA hatası: '+a+p)
+        if 'kraliçe arı' in r['tr'].casefold():raise ValueError('Kilitli arıcılık terimi ihlali (Ana Arı): '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
             colorfix+=1
