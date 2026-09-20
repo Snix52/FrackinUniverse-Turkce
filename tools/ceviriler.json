@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.14.0-beta",
-  "note": "v0.14 Outpost Kevin 9 + Khe 4: 13 canlı görev, Kevin görev listesi ve doğrudan bağlı envanter hedefleri Türkçeleştirildi; 94 yeni structured alan / 33 yeni patch asset. Toplam 2028 structured + 15 Lua; 358 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.15.0-beta",
+  "note": "v0.15 Battle: klasördeki 13 görevin runtime bağlantıları denetlendi; 10 erişilebilir görev, Battle görev-listesi ve 10 doğrudan hedef envanteri Türkçeleştirildi. Bağlantısız 3 legacy patron görevi dağıtım dışı bırakıldı. 64 yeni structured alan / 20 yeni patch asset; toplam 2092 structured + 15 Lua, 378 patch asset. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -15066,6 +15066,485 @@
         "external_blob_sha": "b34dfc05b60152072f843ad0881f59dedffb4de7",
         "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
       }
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_battle/title",
+      "en": "Battle",
+      "tr": "Savaş",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_battle/description",
+      "en": "Quests in this grouping tend to be related to battle, be it killing monsters or creating new sorts of weaponry.",
+      "tr": "Bu gruptaki görevler; canavar öldürmekten yeni silah türleri üretmeye kadar genellikle çatışmayla ilgilidir.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_monsters",
+      "en": "Monsters and Villains",
+      "tr": "Canavarlar ve Düşmanlar",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_gear",
+      "en": "Gear",
+      "tr": "Ekipman",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/plebiancap.questtemplate",
+      "pointer": "/title",
+      "en": "Armor Up",
+      "tr": "Zırhını Kuşan",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU görev kaynağındaki literal sekme standart JSON ayrıştırmasını bozduğu için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/plebiancap.questtemplate",
+      "pointer": "/text",
+      "en": "I'm sure you don't need to be told what your ^orange;Armorworks^reset; does!\tThe armor and weapons you can create here are varied. Let's test it out by building a ^orange;Plebeian Cap^reset;.",
+      "tr": "^orange;Zırh Atölyesinin^reset; ne işe yaradığını sana anlatmama gerek yok! Burada pek çok farklı zırh ve silah üretebilirsin. Bir ^orange;Sıradan Şapka^reset; yaparak deneyelim.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU görev kaynağındaki literal sekme standart JSON ayrıştırmasını bozduğu için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/plebiancap.questtemplate",
+      "pointer": "/completionText",
+      "en": "As you unlock more blueprints, you will find your potential for death, destruction and protection will increase exponentially.",
+      "tr": "Daha fazla plan açtıkça öldürme, yok etme ve korunma imkânlarının katlanarak arttığını göreceksin.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU görev kaynağındaki literal sekme standart JSON ayrıştırmasını bozduğu için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_armcannon.questtemplate",
+      "pointer": "/title",
+      "en": "Gunnery Chief",
+      "tr": "Topçu Ustası",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_armcannon.questtemplate",
+      "pointer": "/text",
+      "en": "Troubled: I am in need of aid. I must admit I am a terrible engineer and cannot craft an ^green;arm cannon^reset; at the ^orange;armory^reset;. Might you assist? I am wealthy and can pay you!",
+      "tr": "Kaygılı: Yardıma ihtiyacım var. Berbat bir mühendis olduğumu itiraf etmeliyim; ^orange;Cephanelikte^reset; bir ^green;Kol Topu^reset; üretemiyorum. Bana yardım eder misin? Varlıklıyım ve sana ödeme yapabilirim!",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_armcannon.questtemplate",
+      "pointer": "/completionText",
+      "en": "Delighted: Thank you for you aid. As promised: the cash ! Take this off my hands too, if you don't mind.",
+      "tr": "Sevinçli: Yardımın için teşekkür ederim. Söz verdiğim gibi, paran! Sakıncası yoksa şunu da elimden al.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_armcannon.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;arm cannon^reset; to the ^green;annoying guy^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Kol Topunu^reset; ^orange;Bilim Karakolundaki^reset; ^green;sinir bozucu adama^reset; götür.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_energyassault.questtemplate",
+      "pointer": "/title",
+      "en": "The Pew Pew",
+      "tr": "Piyuv Piyuv",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_energyassault.questtemplate",
+      "pointer": "/text",
+      "en": "I keep getting devoured on this planet! It sucks! Could you build me an ^orange;F4 Energy Rifle^reset; to help me survive? I'd compensate you well enough...",
+      "tr": "Bu gezegende durmadan bir şeylere yem oluyorum! Berbat bir yer! Hayatta kalabilmem için bana bir ^orange;F4 Enerji Tüfeği^reset; yapabilir misin? Emeğinin karşılığını veririm...",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_energyassault.questtemplate",
+      "pointer": "/completionText",
+      "en": "I'm not much of a scientist... so umm take this.",
+      "tr": "Bilim insanı sayılmam... O yüzden, şey... şunu al.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_energyassault.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;f4 Energy Rifle^reset; to the Novakid by the crew sign at the ^orange;Science Outpost^reset;.",
+      "tr": "^orange;F4 Enerji Tüfeğini^reset; ^orange;Bilim Karakolunda^reset; mürettebat tabelasının yanındaki Novakid'e götür.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_laspistol.questtemplate",
+      "pointer": "/title",
+      "en": "I need a sidearm",
+      "tr": "Bir Yan Silah Lazım",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_laspistol.questtemplate",
+      "pointer": "/text",
+      "en": "Kevin dressed a doll as my mother, naked, in my living room when I was passed out. I need a ^orange;Laser Pistol^reset; to blast his head right off of his torso. Can you make one?",
+      "tr": "Kevin, ben baygınken bir bebeği anneme benzetip çırılçıplak hâlde oturma odama bıraktı. Kafasını gövdesinden uçurmak için bir ^orange;Lazer Tabancası^reset; lazım. Bir tane yapabilir misin?",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_laspistol.questtemplate",
+      "pointer": "/completionText",
+      "en": "Fantastic. Now I just need to somehow get the sack to do it. Ugh. That guy. Screw that guy.",
+      "tr": "Harika. Şimdi bunu yapacak cesareti bir şekilde toplamam gerek. Of. Şu adama bak. Canı cehenneme.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_laspistol.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Laser Pistol^reset; to the monocled Hylotl at the ^orange;Science Outpost^reset;.",
+      "tr": "^orange;Lazer Tabancasını^reset; ^orange;Bilim Karakolundaki^reset; monokl takan Hylotl'a götür.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_steelwarblade.questtemplate",
+      "pointer": "/title",
+      "en": "Sharpening the Blade",
+      "tr": "Bıçağı Bilemek",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_steelwarblade.questtemplate",
+      "pointer": "/text",
+      "en": "I'll be blunt. My sword sucks. Make me a new one. Go craft a ^orange;Steel Warblade^reset; in your ^orange;Assembly Line^reset;! You'll need to upgrade your ^orange;Armorworks^reset; first.",
+      "tr": "Açık konuşayım: Kılıcım berbat. Bana yenisini yap. ^orange;Montaj Hattında^reset; bir ^orange;Çelik Savaş Kılıcı^reset; üret! Önce ^orange;Zırh Atölyeni^reset; yükseltmen gerekecek.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_steelwarblade.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent, enjoy cutting stuff up. Here, take this off my hands.",
+      "tr": "Mükemmel. Bir şeyleri doğramanın tadını çıkar. Al, şunu da benden al.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_steelwarblade.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;steel warblade^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Çelik Savaş Kılıcını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate",
+      "pointer": "/title",
+      "en": "A Heavy Weapon",
+      "tr": "Ağır Bir Silah",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate",
+      "pointer": "/text",
+      "en": "I'll be frank: My favorite murder tool broke and I need a replacement. If you can bring me a ^orange;Ferozium Cleaver^reset; I'd compensate you for the effort.",
+      "tr": "Açık konuşayım: En sevdiğim cinayet aleti kırıldı, yerine yenisi lazım. Bana bir ^orange;Ferozium Satırı^reset; getirirsen emeğinin karşılığını veririm.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent. And as promised, a reward: ^green;A rare artifact^reset;! It never did work for me...",
+      "tr": "Mükemmel. Söz verdiğim gibi ödülün: ^green;Nadir bir eser^reset;! Bende hiç işe yaramadı...",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Ferozium Cleaver^reset; to the ^green;annoying guy^reset; at the ^orange;Science Outpost^reset;.",
+      "tr": "^orange;Ferozium Satırını^reset; ^orange;Bilim Karakolundaki^reset; ^green;sinir bozucu adama^reset; götür.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate",
+      "pointer": "/title",
+      "en": "Aberrant Sentry [BOSS]",
+      "tr": "Bozulmuş Nöbetçi [PATRON]",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate",
+      "pointer": "/text",
+      "en": "Find and kill an ^orange;Aberrant Sentry^reset; in an ancient ruin.",
+      "tr": "Antik bir harabede ^orange;Bozulmuş Nöbetçi^reset; bulup öldür.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate",
+      "pointer": "/completionText",
+      "en": "Exceptional work. That was no simple feat!",
+      "tr": "Olağanüstü iş. Bu hiç de kolay değildi!",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Find the ^orange;Relic Shield^reset; carried by an ^orange;Aberrant Sentry^reset;.",
+      "tr": "Bir ^orange;Bozulmuş Nöbetçinin^reset; taşıdığı ^orange;Yadigâr Kalkanını^reset; bul.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/title",
+      "en": "Mama Poptop [BOSS]",
+      "tr": "Anne Poptop [PATRON]",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/text",
+      "en": "I've heard that there is a rather large and aggressive beast lurking in the ^green;lush mines^reset;. Perhaps you could take it out for the safety of all?",
+      "tr": "^green;Yemyeşil madenlerde^reset; iri ve saldırgan bir canavarın gizlendiğini duydum. Herkesin güvenliği için onu ortadan kaldırabilir misin?",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/completionText",
+      "en": "Well done. And a grisly trophy of your victory, too! Have a bit of spending cash for the effort.",
+      "tr": "Aferin. Zaferinin tüyler ürpertici bir hatırasını da getirmişsin! Emeğin için biraz harçlık al.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;Poptop Claw^reset; to me at my ^orange;vacation house^reset;",
+      "tr": "^green;Anne Poptop Pençesini^reset; ^orange;tatil evimde^reset; bana getir.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "reason": "Kaynak görevdeki genel hedef adı, gerçek envanter adı Mama Poptop Claw ile eşleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate",
+      "pointer": "/title",
+      "en": "Megarachnid [BOSS]",
+      "tr": "Megarachnid [PATRON]",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate",
+      "pointer": "/text",
+      "en": "If you thought large spiders were a threat, try taking out a ^orange;Megarachnid^reset;...they're the largest spiders in the galaxy. I dare you, in fact! Kill a ^orange;Megarachnid^reset; and you'll get my respect.",
+      "tr": "İri örümcekleri tehdit sanıyorsan bir de ^orange;Megarachnid^reset; avlamayı dene... Onlar galaksideki en büyük örümceklerdir. Hatta sana meydan okuyorum! Bir ^orange;Megarachnid^reset; öldür de saygımı kazan.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate",
+      "pointer": "/completionText",
+      "en": "Few can say they have hunted and killed one of these. I salute your skill.",
+      "tr": "Bu yaratıklardan birini avlayıp öldürdüğünü pek az kişi söyleyebilir. Becerini selamlıyorum.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^green;Web Shooter^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^green;Ağ Atıcıyı^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/title",
+      "en": "Warbot [BOSS]",
+      "tr": "Savaş Robotu [PATRON]",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/text",
+      "en": "On ^orange;Cyber Spheres^reset; or ^orange;Wasteland^reset; planets there often walk dangerous battle machines known as ^orange;War Bots^reset;. Take one down, and I'll pay you well.",
+      "tr": "^orange;Siber Küre^reset; ya da ^orange;Çorak Dünya^reset; türü gezegenlerde ^orange;Savaş Robotu^reset; denen tehlikeli savaş makinelerine sıkça rastlanır. Birini devirirsen sana iyi ödeme yaparım.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/completionText",
+      "en": "Good job. The fact that you survived that firepower says much of your prowess in battle. I would not want to mess with you.",
+      "tr": "İyi iş. O ateş gücünden sağ çıkman, savaş becerin hakkında çok şey söylüyor. Seninle karşı karşıya gelmek istemem.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Hyper Targeting Chip^reset; to me at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Hiper Hedefleme Çipini^reset; ^orange;Bilim Karakolunda^reset; bana getir.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/armcannon/armcannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Arm Cannon",
+      "tr": "Kol Topu",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/armcannon/armcannon.activeitem",
+      "pointer": "/description",
+      "en": "Attaches to the forearm. Fires energy blasts.\n^yellow;Counts as 'energy' for set bonuses^reset;",
+      "tr": "Ön kola takılır. Enerji patlamaları ateşler.\n^yellow;Set bonusları için 'enerji' sayılır^reset;",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/energyassault.activeitem",
+      "pointer": "/shortdescription",
+      "en": "F4 Energy Rifle",
+      "tr": "F4 Enerji Tüfeği",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/energyassault.activeitem",
+      "pointer": "/description",
+      "en": "One of the most popular energy rifles on the galactic market\n^yellow;High efficiency^reset;\n^yellow;Counts as 'Energy' for set bonuses^reset;",
+      "tr": "Galaksi pazarının en popüler enerji tüfeklerinden biri.\n^yellow;Yüksek verimlilik^reset;\n^yellow;Set bonusları için 'Enerji' sayılır^reset;",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/laspistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Laser Pistol",
+      "tr": "Lazer Tabancası",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/laspistol.activeitem",
+      "pointer": "/description",
+      "en": "A common sidearm in the galaxy.\n^yellow;Reliable^reset;\n^yellow;Counts as 'Energy' for set bonuses^reset;",
+      "tr": "Galakside yaygın kullanılan bir yan silah.\n^yellow;Güvenilir^reset;\n^yellow;Set bonusları için 'Enerji' sayılır^reset;",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/hardenedsteelblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Steel Warblade",
+      "tr": "Çelik Savaş Kılıcı",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/hardenedsteelblade.activeitem",
+      "pointer": "/description",
+      "en": "A mainstay of Fenerox warfare",
+      "tr": "Fenerox savaşçılarının vazgeçilmez silahı.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/warcleaver.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ferozium Cleaver",
+      "tr": "Ferozium Satırı",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/warcleaver.activeitem",
+      "pointer": "/description",
+      "en": "A curious mix of organic and metallic.",
+      "tr": "Organik ve metalik malzemelerin ilginç bir karışımı.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/armors/tier1/plebeian/mantizitier1.head",
+      "pointer": "/shortdescription",
+      "en": "Plebeian Cap",
+      "tr": "Sıradan Şapka",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/armors/tier1/plebeian/mantizitier1.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;15^reset;% Shield Health and Regen\n^yellow;^reset; Sword/Mace + Shield: Health x^green;1.2^reset;, +^green;15^reset;% Knockback Resist",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;15^reset;% Kalkan Canı ve Yenilenmesi\n^yellow;^reset; Kılıç/Topuz + Kalkan: Can x^green;1.2^reset;, +^green;15^reset;% Geri Tepme Direnci",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/shields/furelicshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Relic Shield",
+      "tr": "Yadigâr Kalkanı",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/shields/furelicshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+3% Crit Chance^reset;",
+      "tr": "^green;+3% Kritik Şansı^reset;",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/poptopclaw.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Mama Poptop Claw",
+      "tr": "Anne Poptop Pençesi",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/poptopclaw.activeitem",
+      "pointer": "/description",
+      "en": "Carved from the still-twitching corpse of a Mama Poptop. You monster.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Hâlâ seğiren bir Anne Poptop cesedinden kesilip alınmış. Seni canavar.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/grapplinghooks/websnapper/websnapper.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Web Shooter",
+      "tr": "Ağ Atıcı",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/active/grapplinghooks/websnapper/websnapper.activeitem",
+      "pointer": "/description",
+      "en": "Well, that's pretty useful. And a bit horrifying. Weighted.",
+      "tr": "Oldukça kullanışlı. Biraz da ürkütücü. Ucu ağırlıklıdır.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/augments/quest/warbotartifact.augment",
+      "pointer": "/shortdescription",
+      "en": "Hyper Targeting Chip",
+      "tr": "Hiper Hedefleme Çipi",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/augments/quest/warbotartifact.augment",
+      "pointer": "/description",
+      "en": "^green;+3%^reset; Crit Chance\n^green;+20%^reset; Crit Damage",
+      "tr": "^green;+3%^reset; Kritik Şansı\n^green;+20%^reset; Kritik Hasarı",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "items/augments/quest/warbotartifact.augment",
+      "pointer": "/augment/displayName",
+      "en": "Targeting Chip",
+      "tr": "Hedefleme Çipi",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri"
     }
   ]
 }
