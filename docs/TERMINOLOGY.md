@@ -184,6 +184,15 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 
 | depleted uranium | Bilimsel/mühimmat bağlamı | Malzeme | tüketilmiş uranyum | seyreltilmiş uranyum | LOCKED | Yerleşik teknik karşılık |
 
+| Fertilizer | Kimya / tarım kaynağı | Kaynak | Gübre | Fertilizer | LOCKED | Science görevleri ve Kimya araştırma ağacıyla eşlendi |
+| Iodine | Kimyasal element / kaynak | Kaynak | İyot | İyodin, Iodine | LOCKED | Yerleşik Türkçe element adı |
+| Methyl Iodide | Kimyasal reaktif | Kaynak | Metil İyodür | Metil İyodid, Methyl Iodide | LOCKED | Yerleşik Türkçe kimya kullanımı |
+| Contaminated Water | Kimya sıvısı | Kaynak | Kirlenmiş Su | Kontamine Su, Contaminated Water | LOCKED | Oyuncu için açık ve doğal karşılık |
+| Mulch | Tarım / gübre malzemesi | Kaynak | Malç | Mulch | LOCKED | Yerleşik tarım terimi |
+| Caliche Stone | Jeolojik malzeme | Kaynak | Kaliş Taşı | Caliche Stone | LOCKED | Türkçe jeoloji literatüründeki kaliş terimi esas alındı |
+| Bonemeal | Malzeme | Kaynak | Kemik Unu | Bonemeal | LOCKED | |
+| Ice Crystal | Vanilla/FU üretim kaynağı | Kaynak | Buz Kristali | Ice Crystal | LOCKED | Vanilla envanter adıyla eşleştirildi |
+
 ## Kural
 
 Oyuncuya gösterilen metinde onaylı Türkçe adın yanına parantez içinde İngilizce ad eklenmez.
