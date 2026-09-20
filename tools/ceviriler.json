@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.12.0-beta",
-  "note": "v0.11 Outpost başlangıcı: İçki/Starbooze görev zinciri 12/12; bağlı temel içki makineleri ve hedef malzemeler yerelleştirildi. Oyun içi LQA bekliyor.",
+  "translation_version": "0.13.0-beta",
+  "note": "v0.13 Outpost Bilim Karakolu dükkân görevleri: 6/6 canlı dükkân görevi, hedef artefaktlar ve dükkân nesneleri yerelleştirildi. Özel görev/konum adları (Verdant Ruins, Ancient Temple, Evernight Jungle) geniş kapsamlı görev/konum yerelleştirmesi yapılana kadar korunuyor. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -13880,6 +13880,342 @@
         "external_source_repository": "FerreiraJGB/Starbound",
         "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
       }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate",
+      "pointer": "/title",
+      "en": "Ssad losst thingss.",
+      "tr": "Üzücü kayıp şeyss.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate",
+      "pointer": "/text",
+      "en": "Floran hass losst fatherss ^orange;Greenfinger Medal^reset;. Iss sspecial becausse father hunted besst in tribe and killed many Hylotl in war. Perhapss you iss find in ^green;Verdant Ruins^reset;?",
+      "tr": "Floran babassından kalan şeyi kaybetti: ^orange;Greenfinger Madalyası^reset;. Çok özel, çünkü babassı kabilede en iyi avcıydı ve savaşta çok Hylotl öldürdü. Belki ^green;Verdant Ruins^reset; içinde bulursun?",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "Oooooh! Floran thankss! Iss family heirloom! Floran givess friend reward! I ssteal thesse from Kevin when him not lookss because Kevin sstealss my pantss every week.",
+      "tr": "Oooooh! Floran teşekkürss! Bu aile yadigârı! Floran arkadaşına ödül verir! Kevin bakmazken bunları çalıyorum, çünkü Kevin her hafta pantolonumu çalıyor.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring a ^orange;Greenfinger Medal^reset; to the ^green;Floran Meat Shop^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Greenfinger Madalyası^reset; eşyasını ^green;Floran Et Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_foodShop.questtemplate",
+      "pointer": "/title",
+      "en": "Lucky Coin",
+      "tr": "Uğurlu Para",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_foodShop.questtemplate",
+      "pointer": "/text",
+      "en": "I've looked everywhere and can't figure out where the heck Kevin hid my damned lucky coin. I ^red;know^reset; it was that buffoon. He left a note that claimed he was getting it repaired. A coin. Honestly. If you come across a rare 12th century Earth coin...it's mine. Please bring it to me. I'll be ^green;quite^reset; generous in return.",
+      "tr": "Her yere baktım ama Kevin'ın lanet olası uğurlu paramı nereye sakladığını çözemedim. Bunu o sersemin yaptığını ^red;biliyorum^reset;. Tamire götürdüğünü söyleyen bir not bırakmış. Bir para. Cidden. 12. yüzyıldan kalma nadir bir Dünya parasına rastlarsan... o benim. Lütfen bana getir. Karşılığında ^green;epey^reset; cömert davranacağım.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_foodShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "The depths of my thanks cannot even be expressed. Replacing this is literally impossible now, what with Earth being slightly destroyed and all. Have this in exchange for your time and bravery.",
+      "tr": "Ne kadar teşekkür etsem az. Dünya'nın birazcık yok olmuş olması yüzünden bunun yenisini bulmak artık gerçekten imkânsız. Zamanın ve cesaretin için bunu al.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_foodShop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;rare Lucky Coin^reset; to the ^green;Food Shop^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "Nadir ^orange;Uğurlu Parayı^reset; ^green;Yiyecek Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate",
+      "pointer": "/title",
+      "en": "Crystalline Perfection",
+      "tr": "Kristal Kusursuzluk",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate",
+      "pointer": "/text",
+      "en": "Good day, being of carbon and flesh. I wonder if you might give aid to this Eld'uukhar? I seek the glorious aspect of a ^orange;Crystalline Trophy^reset;. I've heard that they can be found in ^orange;Ancient Temples^reset;. If you find one, I would reward you handsomely for your efforts.",
+      "tr": "İyi günler, karbon ve etten oluşan varlık. Bu Eld'uukhar'a yardım eder misin? Görkemli bir ^orange;Kristal Kupa^reset; arıyorum. Bunların ^orange;Ancient Temple^reset; bölgelerinde bulunabildiğini duydum. Bir tane bulursan çabalarının karşılığını fazlasıyla veririm.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "Ah, most exceptional, fleshling. My gratitude showers upon you, and the glory of the Shards will shine on your soul forevermore.",
+      "tr": "Ah, olağanüstü, etten varlık. Minnettarlığım üzerine yağsın; Shards'ın ihtişamı ruhunda sonsuza dek parlasın.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_gemShop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring a ^orange;Crystalline Trophy^reset; to the ^green;Gem Shop^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Kristal Kupa^reset; eşyasını ^green;Mücevher Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate",
+      "pointer": "/title",
+      "en": "A rare treasure",
+      "tr": "Nadir Bir Hazine",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate",
+      "pointer": "/text",
+      "en": "I've heard that there is a rare component called a ^orange;Alien Broadcast Node^reset; that could be utilized for a truly great FTL drive just waiting to be found somewhere in the ^green;Evernight Jungle^reset;. It's a rumour, granted, but hypothetically, if you found one, I might have something for you...",
+      "tr": "^green;Evernight Jungle^reset; bölgesinde bir yerlerde bulunmayı bekleyen, ^orange;Uzaylı Yayın Düğümü^reset; adlı nadir bir bileşen olduğunu duydum. Gerçekten güçlü bir FTL motorunda kullanılabilirmiş. Şimdilik söylentiden ibaret ama... diyelim ki bir tane buldun, sana verecek bir şeyim olabilir.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "You've no idea how much this means to me. As thanks for this most wonderous technology I bequeath to you another sort of rarity. May it bring you fortune in your travels.",
+      "tr": "Bunun benim için ne kadar önemli olduğunu tahmin bile edemezsin. Bu harika teknoloji için teşekkür olarak sana başka bir nadirlik bırakıyorum. Yolculuklarında şans getirsin.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_kirhosShop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring a ^orange;Alien Broadcast Node^reset; to the ^green;Kirhosi Shop^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Uzaylı Yayın Düğümü^reset; eşyasını ^green;Kirhos Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate",
+      "pointer": "/title",
+      "en": "X'ian History",
+      "tr": "X'i Tarihi",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate",
+      "pointer": "/text",
+      "en": "I am what you might call a collector, of sorts. My people have little knowledge of our past, and I make it my mission to find more information about our history. If you find a ^orange;X'i Relic^reset;, could you bring it back to me? I'd be ever so thankful.",
+      "tr": "Bana bir çeşit koleksiyoncu diyebilirsin. Halkım geçmişimiz hakkında çok az şey biliyor; ben de tarihimiz hakkında daha fazla bilgi bulmayı kendime görev edindim. Bir ^orange;X'i Kalıntısı^reset; bulursan bana getirir misin? Çok minnettar olurum.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "Can it truly be? A ^green;Vexinarri Glaff^reset;? Where did you find this?!?! I thought these were only a legend! As promised, your reward. It has been a pleasure.",
+      "tr": "Gerçekten bu olabilir mi? Bir ^green;Vexinarri Glaff^reset;? Bunu nerede buldun?!?! Bunların yalnızca efsane olduğunu sanıyordum! Söz verdiğim gibi, ödülün. Seninle iş yapmak güzeldi.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_radienShop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring a ^orange;X'i Relic^reset; to the ^green;X'i Shop^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;X'i Kalıntısı^reset; eşyasını ^green;X'i Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/title",
+      "en": "...",
+      "tr": "...",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/text",
+      "en": "<^red;A voice speaks in your head:^reset; Most upsetting. Expedition was a failure. Could not locate ^orange;Ancient Remote^reset; to sell at exorbitant price. If mortal biped locates one, I would be most grateful to purchase it.>",
+      "tr": "<^red;Zihninde bir ses konuşuyor:^reset; Çok can sıkıcı. Sefer başarısız oldu. Fahiş fiyata satılacak ^orange;Kadim Kumanda^reset; bulunamadı. Ölümlü iki ayaklı bir tane bulursa satın almaktan büyük memnuniyet duyarım.>",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "<Great joy is felt by this being. Appreciation will be shown with gratuitous monetary payment. Fleshlings appreciate such gestures. With it you could purchase goods and services.>",
+      "tr": "<Bu varlık büyük sevinç hissediyor. Minnettarlık gereğinden fazla para ödenerek gösterilecek. Et varlıklar böyle jestleri sever. Bununla mal ve hizmet satın alabilirsin.>",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring an ^orange;Ancient Remote^reset; to the ^green;Shadow Shop^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Kadim Kumanda^reset; eşyasını ^green;Gölge Dükkânına^reset;, ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/greenfinger_trophy.item",
+      "pointer": "/description",
+      "en": "Given to accomplished Greenfingers as a mark of honor.\n^green;Research in a microscope.^reset;",
+      "tr": "Başarılı Greenfinger'lara onur nişanı olarak verilir.\n^green;Mikroskopta araştırılabilir.^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/greenfinger_trophy.item",
+      "pointer": "/shortdescription",
+      "en": "Greenfinger Medal",
+      "tr": "Greenfinger Madalyası",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/luckycoin.item",
+      "pointer": "/description",
+      "en": "A rare, ancient lucky coin.\n^green;Research in a microscope.^reset;",
+      "tr": "Nadir ve kadim bir uğurlu para.\n^green;Mikroskopta araştırılabilir.^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/luckycoin.item",
+      "pointer": "/shortdescription",
+      "en": "Lucky Coin",
+      "tr": "Uğurlu Para",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/temple_trophy.item",
+      "pointer": "/description",
+      "en": "A valuable crystal trophy.\n^green;Research in a microscope.^reset;",
+      "tr": "Değerli bir kristal kupa.\n^green;Mikroskopta araştırılabilir.^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/temple_trophy.item",
+      "pointer": "/shortdescription",
+      "en": "Crystalline Trophy",
+      "tr": "Kristal Kupa",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/alien_trophy.item",
+      "pointer": "/description",
+      "en": "Some form of broadcasting device.\n^green;Research in a microscope.^reset;",
+      "tr": "Bir tür yayın cihazı.\n^green;Mikroskopta araştırılabilir.^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/alien_trophy.item",
+      "pointer": "/shortdescription",
+      "en": "Alien Broadcast Node",
+      "tr": "Uzaylı Yayın Düğümü",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/radien_trophy.item",
+      "pointer": "/description",
+      "en": "A relic of importance to none but a X'i.\n^green;Research in a microscope.^reset;",
+      "tr": "Yalnızca X'i için önem taşıyan bir kalıntı.\n^green;Mikroskopta araştırılabilir.^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/radien_trophy.item",
+      "pointer": "/shortdescription",
+      "en": "X'i Relic",
+      "tr": "X'i Kalıntısı",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/ancient_tech.item",
+      "pointer": "/description",
+      "en": "A remote for some sort of device of the Ancients.\n^green;Research in a microscope.^reset;",
+      "tr": "Kadimlere ait bir tür cihazın kumandası.\n^green;Mikroskopta araştırılabilir.^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "items/generic/loot/mission/ancient_tech.item",
+      "pointer": "/shortdescription",
+      "en": "Ancient Remote",
+      "tr": "Kadim Kumanda",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fufoodshopfloran/fufoodshopfloran.object",
+      "pointer": "/description",
+      "en": "A meat shop.",
+      "tr": "Bir et dükkânı.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fufoodshopfloran/fufoodshopfloran.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Sstabbed-Thingss Emporium^reset;",
+      "tr": "^orange;Saplanmış Şeyler Pazarı^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fufoodshop/fufoodshop.object",
+      "pointer": "/description",
+      "en": "Tassties!",
+      "tr": "Lezzetss!",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fufoodshop/fufoodshop.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Murder-Twig's Yum-Yums^reset;",
+      "tr": "^orange;Murder-Twig'in Lezzetleri^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fugemshop/fugemshop.object",
+      "pointer": "/description",
+      "en": "An Eld'uukhar shop featuring various crystals.",
+      "tr": "Çeşitli kristaller satan bir Eld'uukhar dükkânı.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fugemshop/fugemshop.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Gems of Soul^reset;",
+      "tr": "^orange;Ruhun Mücevherleri^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/kirhosshop/kirhosshop.object",
+      "pointer": "/description",
+      "en": "Sells all manner of interesting wares.",
+      "tr": "Her türden ilginç eşya satar.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/kirhosshop/kirhosshop.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Lorewalker's Shop^reset;",
+      "tr": "^orange;Lorewalker'ın Dükkânı^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/radienshop/silene_shop.object",
+      "pointer": "/description",
+      "en": "This might come in handy.",
+      "tr": "Bu işe yarayabilir.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/radienshop/silene_shop.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Silenes' Minerals^reset;",
+      "tr": "^orange;Silene'nin Mineralleri^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fushadowstore/fushadowstore.object",
+      "pointer": "/description",
+      "en": "A strange and creepy shop.",
+      "tr": "Tuhaf ve ürpertici bir dükkân.",
+      "section": "v0.13 Outpost Dükkân Görevleri"
+    },
+    {
+      "asset": "objects/scienceoutpost/fushadowstore/fushadowstore.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;...^reset;",
+      "tr": "^orange;...^reset;",
+      "section": "v0.13 Outpost Dükkân Görevleri"
     }
   ]
 }
