@@ -336,3 +336,13 @@
 - **Homestead -> Yerleşim** kararı, I-V zinciri tamamlandığı için REVIEW'dan LOCKED durumuna geçirildi.
 - Alan/pointer sayısı değişmedi. Bu tur kaynak anlamı veya teknik ID değiştirmeyen dil/terminoloji düzeltmesidir.
 - Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
+
+## 2026-09-20 - v0.13.2 ikinci geriye dönük QA
+
+- Terminoloji sözlüğünde **Mech** LOCKED olmasına rağmen eski içeriklerde 16 oyuncu metninde küçük harf `mech` kalmıştı. Tamamı **Mech** biçimine getirildi ve lowercase regresyon guard eklendi.
+- Arı Barınağı yeniden kaynak tarifleriyle denetlendi. Panelde arı -> para/malzeme dönüşümleri yanında `money -> bees1-codex / bees2-codex` rehber tarifleri de bulunuyor.
+- Bu nedenle v0.13.1'deki tek yönlü **Sat** etiketi de eksik kabul edildi. Her iki kullanım biçimini doğru kapsayan kısa UI eylemi **Takas Et** olarak kilitlendi.
+- 15 Lua UI metni yeniden gözden geçirildi; değişiklik gerektirmedi.
+- Teknik alan/pointer/provenans değişmedi; tur yalnız Türkçe hedef metin ve regresyon güvenliği düzeltmesidir.
+- Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
+
