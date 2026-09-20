@@ -76,7 +76,7 @@
       "url": "https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/radiomessages/fu_quests.radiomessages"
     }
   ],
-  "translation_version": "0.9.0-beta",
+  "translation_version": "0.10.0-beta",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "assets": {
     "zb/researchTree/fu_agriculture.config": "c5d1acc20ce35c8220cff577efb459c8b41ff54f",
@@ -206,9 +206,69 @@
     "items/active/unsorted/mechTablet/mechtablet.activeitem": "6fa6211bacccf6e96392052e797733bf75f1bb02",
     "items/active/unsorted/techtablet/techtablet.activeitem": "4a270adfaed8faa14ae3bcb13e4c98a0bdc37949",
     "items/tools/wiretoolfu.wiretool": "024ba2ee0cbea95d96e871e1a74ad1c92194aec5",
-    "objects/kheAA/kheAA_containerLink/kheAA_containerLink.object": "7b72abd1e3d0b1e7cfb5916510e86694f751b404"
+    "objects/kheAA/kheAA_containerLink/kheAA_containerLink.object": "7b72abd1e3d0b1e7cfb5916510e86694f751b404",
+    "quests/fu_questlines/science/chemistry/create_fertilizer.questtemplate": "ab5a707c5ba1c1116ecd7374bfb0418a433bf2fd",
+    "quests/fu_questlines/science/chemistry/create_icecrystal.questtemplate": "905dfdc25ff8a5692f2b30d70117b036694f3ece",
+    "quests/fu_questlines/science/chemistry/create_iodine.questtemplate": "339f64e0c1225753f93c71540cc2f3ebc9f87b3a",
+    "quests/fu_questlines/science/chemistry/create_methanol.questtemplate": "ca3e19f68cc2fda68c39e6b7b194dd4cbb3cdcd9",
+    "quests/fu_questlines/science/chemistry/create_methyliodide.questtemplate": "7558ed90c41e9e04668b076ca55a293172870de4",
+    "quests/fu_questlines/science/chemistry/create_plastic.questtemplate": "6df797a9db95e1adc430c29e8bec0a961d38b613",
+    "quests/fu_questlines/science/chemistry/create_wastewater.questtemplate": "2c97c6e1835b51d463288e58ef89c725f74721ce",
+    "quests/fu_questlines/science/chemistry/fuquest_biochem.questtemplate": "a90a932936a12b8f15692638201cf1156b6dc5ec",
+    "zb/questList/data.config": "a1f377d638a9f08ac55cea559aa5dc22e2668d42",
+    "items/generic/crafting/chemlab/ff_fertilizer.item": "68533135d8fdb4fa8e8a486a25125f6e70d1cd19",
+    "items/generic/crafting/iodine.item": "2dea0e087f7578c1a00dd9d756031bad0dc65d3e",
+    "items/generic/crafting/chemlab/methyliodide.item": "6ba67fe3486b9ef6fb2016764d272e7dea999da9",
+    "items/liquids/liquidwastewater.liqitem": "a67e52f2fa47d28238d23c31e0dd0190513183fc",
+    "items/generic/crafting/chemlab/fu_mulch.item": "3caaff96c1209bbaba892e7e327a05a0110a8197",
+    "items/materials/calichewall.matitem": "d0d41c4ef7c486cf936e73df878ac4378ecafd67",
+    "items/materials/bonemealmaterial.matitem": "644639db2a9d02a45fffe91df06af2a38bde25ec",
+    "quests/fu_questlines/science/electronics/create_aichip.questtemplate": "313122cdb6ef272297c1ea74943a20595c5d92b5",
+    "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate": "7cf32644651fa9d73d65b76cb08e8c7e2c804c32",
+    "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate": "b5ae0747a8691b42084381ae62e687cdf3b82267",
+    "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate": "311ce0b0d0a841c4bedcc98e74660dbe76a540b4",
+    "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate": "dbc96d9bb5831109538251c9a17d639c2beccdc5",
+    "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate": "673bcebf8bff3b772144276a8a9cb3d4892ee9d8",
+    "quests/fu_questlines/science/electronics/create_watcher.questtemplate": "633b919975e87721bd8b5ca448b7e114fd46d82b",
+    "quests/fu_questlines/deprecated/fuquest_battery.questtemplate": "2ddc0835ddb1e68edb1d687994502c75644e853f",
+    "items/generic/crafting/matterassembler/aichip.item": "f0b59e2d261b44ba3524486bc6df0cd85f6c5047",
+    "objects/fu_watcher/fu_watcher.object": "9104a9d5dcd445bf08d5a4efa441e80f12622400",
+    "quests/fu_questlines/science/genetics/create_miraclegrass.questtemplate": "b170a451bf6ce0f20386dede66a10a1c3ac1b7c1",
+    "quests/fu_questlines/science/genetics/fuquest_bracken.questtemplate": "7fe16b331eee69708de6db2dce72be1100133e3c",
+    "quests/fu_questlines/science/genetics/fuquest_mutavisk.questtemplate": "c4c1ab9c1fe0bc76c8ebe24c72529f7e75c63618",
+    "quests/fu_questlines/science/genetics/fuquest_oonforta.questtemplate": "8e8bdf80d66eff1dd35257d82af5afdb6d09fc01",
+    "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate": "9b192df1e9d4b2b75549f1ef0b6dcaa5e798c4ec",
+    "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate": "2cc8c4dd4b55e4417cd23a6bc11a5232c62761fa",
+    "quests/fu_questlines/science/genetics/create_mutavisk.questtemplate": "0fc0593033b869ac5706d90657d4649d8d82c009",
+    "quests/fu_questlines/science/genetics/create_radleaf.questtemplate": "03788fb2c8fe9d0a78cc933a044cc349ff594a54",
+    "quests/fu_questlines/science/genetics/create_regengene.questtemplate": "b2b3b3f8ca89ba14cd69059e914b07f62cc7d46b",
+    "objects/farmables/miraclegrassseed/miraclegrassseed.object": "6100420c4af434fbf5acf9f8df88c204274ad1fd",
+    "objects/farmables/brackentree/brackentreeseed.object": "9d3757fc299e70f1af4e32db881038ece2239c7d",
+    "objects/farmables/mutavisk/mutaviskseed.object": "63554bb78acac4628a0a640dfcfc2fa81a0ce7a8",
+    "objects/farmables/oonfortaseed/oonfortaseed.object": "2e3ea72fc341320ada6a2c373f50179a4ef99707",
+    "objects/crafting/clonelab/clonelab.object": "7df289a3305f98b7a70de47a6eddaeba5890f0d8",
+    "objects/farmables/ignuschili/ignuschiliseed.object": "2dad2933526cb6ea47ba3a503a5ce147ba08171a",
+    "items/armors/tier3/mutaviskarmor/mutavisk.head": "c47c0a2765ea7832818298513b6162c47a5ce8d9",
+    "items/generic/produce/guam.consumable": "d9793161611bcdb257961e79cfcb3b013328576b",
+    "objects/farmables/thornitoxplant/thornitoxseed.object": "24461fc8b2ba7af05bc88e7e2e3f7616a7f611a0",
+    "quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate": "49a0374a821be1c8aa0007f8e97f177bd5ea781c",
+    "quests/fu_questlines/science/mechanical/create_extractor.questtemplate": "b82de06140e536977509705f4a4a77dcd623a0ca",
+    "quests/fu_questlines/science/mechanical/create_advxeno.questtemplate": "6cf01969fdbf6cfecd02494cbe5cae873bdcf05a",
+    "quests/fu_questlines/science/mechanical/create_blastfurnace.questtemplate": "6c9dd2efc95246c2142adcebc79aa8877cd3c83b",
+    "quests/fu_questlines/science/mechanical/create_arcsmelter.questtemplate": "0763a950e8dd3bf73884194683b64cfc6a0a30ff",
+    "quests/fu_questlines/science/mechanical/create_atmosregulator.questtemplate": "490623b6c21ab4406d0c777dc992032545b8ad60",
+    "quests/fu_questlines/science/mechanical/create_augment.questtemplate": "68816e62cc3d6404c86d16cb843dd9893eebdb63",
+    "quests/fu_questlines/science/mechanical/create_blackglass.questtemplate": "8acf992727683bd0bcf87396ff8fe6ba59edaecc",
+    "items/generic/crafting/matterassembler/electromagnet.item": "b54d6ae8c86a6802f5bc31974beb6f9e1d1af88a",
+    "items/augments/back/environment/acidimmunity.augment": "e3aa6162bd107591c5274fab37e0b3d29bfd6c88",
+    "quests/fu_questlines/science/physics/create_fission.questtemplate": "fb3dfba4a2da3ab7851524d1500338dd0d5dfe50",
+    "quests/fu_questlines/science/physics/create_protocite.questtemplate": "d8ac41ab84e6ba9bf1ea296aed388b258079b29d",
+    "quests/fu_questlines/science/physics/create_teleportercore.questtemplate": "60399c5ddf3bea19e863c61ab90b07994378a396",
+    "quests/fu_questlines/science/physics/create_tritium.questtemplate": "f83992d92742ee32fd148e145588284db466d3f0",
+    "items/generic/crafting/fissionfurnace/protocitebar.item": "1c94f1eaca7dd96dce1deec426ea35e9fa29b193",
+    "items/generic/crafting/isotopes/tritium.item": "6716bbd3674d492f37ca22ca361a608e7bd9bb14"
   },
-  "validation_note": "v0.9 tutorial paketi: 25 çalışan eksik tutorial görev dosyasında 90 alan + 19 hedef eşya/makine assetinde 41 alan = 131 yeni yapılandırılmış alan. start_basics1 kırık ve bağlantısız olduğu için dağıtıma alınmadı. 4 kaynak-anlam hatası gerçek quest koşullarına göre belgeli olarak düzeltildi.",
+  "validation_note": "v0.10 Science: 37/37 erişilebilir Science bağlantılı görev, Science quest-list UI ve doğrudan hedef eşya/malzemeler yerelleştirildi. 204 yeni alan; 193 pinned FU alanı + 11 bağımsız vanilla alanı exact doğrulandı. fuquest_dna/fuquest_mineral bağlantısız ve build guard ile dışarıda.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
@@ -298,6 +358,42 @@
         "blob_sha": "cca1f0a155256e72b532961cbf75f483def4da03"
       },
       "note": "FU tarifi vanilla Tech Console'u açar; görev adıyla envanter adını eşlemek için exact vanilla kaynak doğrulaması."
+    },
+    "items/generic/crafting/icecrystal.item": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/generic/crafting/icecrystal.item",
+        "blob_sha": "1c242abc30adfc5d7b3b5e40617b018fdab88cdd"
+      },
+      "note": "Science Chemistry göreviyle envanter adını eşlemek için vanilla Buz Kristali kısa ad/açıklama exact doğrulandı."
+    },
+    "items/generic/crafting/siliconboard.item": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/generic/crafting/siliconboard.item",
+        "blob_sha": "5b49280ab346a33b9c7e6fcc5187795fc752d408"
+      },
+      "note": "Science Electronics göreviyle envanter adını eşlemek için vanilla Silisyum Devre Kartı kısa ad/açıklama exact doğrulandı."
+    },
+    "items/materials/blackglass.matitem": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/materials/blackglass.matitem",
+        "blob_sha": "06a807005cfa67b6a682fa9aae73bd9c4ac532d1"
+      },
+      "note": "Science Mechanical create_blackglass hedefiyle envanter adını ve inceleme metinlerini eşlemek için vanilla Black Glass exact doğrulandı."
+    },
+    "items/generic/crafting/teleportercore.item": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/generic/crafting/teleportercore.item",
+        "blob_sha": "08989533b03903bfa91bdcf23f52c89097ab4eec"
+      },
+      "note": "Science Physics göreviyle Işınlayıcı Çekirdeği envanter adını eşlemek için vanilla kaynak exact doğrulandı."
     }
   }
 }

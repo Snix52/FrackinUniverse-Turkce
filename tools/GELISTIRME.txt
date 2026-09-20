@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.9.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.10.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  1510 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  1714 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + tutorial görev/hedef + bağlı görev/makine/kaynak allowlist'lerini doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + Tutorial + Science görev/hedef + bağlı görev/makine/kaynak allowlist'lerini doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -95,4 +95,26 @@ v0.9 beta QA:
   proje toplam yapılandırılmış alan: 1510
   toplam yerelleştirilmiş birim: 1525 (1510 yapılandırılmış + 15 Lua)
   tutorial dışı kalan bağlı görev dosyası: 111
+  oyun içi LQA: BEKLİYOR
+
+v0.10 beta QA:
+  Science ham klasör questtemplate: 36
+  Science klasöründe bağlantısız legacy görev: 2 (fuquest_dna, fuquest_mineral; dağıtım dışı + build guard)
+  fu_sciences quest-list görevi: 35/35
+  quest-list dışında erişilebilir Science bağlantılı görev: 2 (fuquest_biochem, create_blackglass)
+  erişilebilir benzersiz Science bağlantılı görev: 37/37
+  Science quest-list UI: 7 alan
+  Chemistry: 54 yeni alan
+  Electronics: 36 yeni alan
+  Genetics: 51 yeni alan
+  Mechanical: 41 yeni alan
+  Physics: 22 yeni alan
+  v0.10 toplam ekleme: 204 yapılandırılmış alan / 64 yeni patch asset
+  pinned FU yeni alan: 193/193 exact-source PASS
+  bağımsız vanilla yeni alan: 11/11 exact-source PASS
+  patch eşleşmesi: 204 test + 204 replace PASS
+  benzersiz pointer / boş çeviri / renk-kontrol kodu / sayı bütünlüğü: PASS
+  proje toplam yapılandırılmış alan: 1714
+  toplam yerelleştirilmiş görünür birim: 1729 (1714 yapılandırılmış + 15 Lua)
+  toplam patch asset: 239
   oyun içi LQA: BEKLİYOR

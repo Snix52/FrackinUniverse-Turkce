@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.9.0-beta",
-  "note": "v0.9 Tutorial: 41/41 bağlı tutorial görev dosyası tamamlandı; 25 yeni görev dosyasında 90 metin ve 19 hedef eşya/makine assetinde 41 alan eklendi. start_basics1 kırık/bağlantısız olduğu için dağıtım dışı. Oyun içi LQA bekliyor.",
+  "translation_version": "0.10.0-beta",
+  "note": "v0.10 Science: oyuncuya erişebilen 37 Science bağlantılı görev tamamlandı. 204 yeni yapılandırılmış alan eklendi; fuquest_dna ve fuquest_mineral bağlantısız olduğu için dağıtım dışı. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -11065,6 +11065,1594 @@
       "en": "Tech Console",
       "tr": "Tech Konsolu",
       "section": "v0.9 Tutorial Hedefleri",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_sciences/title",
+      "en": "Scientific Study",
+      "tr": "Bilimsel Çalışmalar",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_sciences/description",
+      "en": "To build a lab, you have a great number of things to do. This set of quests will serve to aid you in doing exactly that. Learn the function of each station, how it is used in conjunction with other stations in your arsenal and more!",
+      "tr": "Bir laboratuvar kurmak için yapman gereken çok şey var. Bu görev dizisi tam da buna yardımcı olacak. Her istasyonun ne işe yaradığını, elindeki diğer istasyonlarla nasıl birlikte kullanıldığını ve daha fazlasını öğreneceksin!",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_physics",
+      "en": "Physics",
+      "tr": "Fizik",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_chemistry",
+      "en": "Chemistry",
+      "tr": "Kimya",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_electronics",
+      "en": "Electronics",
+      "tr": "Elektronik",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_genetics",
+      "en": "Genetics",
+      "tr": "Genetik",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_mechanical",
+      "en": "Mechanical",
+      "tr": "Mekanik",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_fertilizer.questtemplate",
+      "pointer": "/title",
+      "en": "Fertile Ground",
+      "tr": "Verimli Toprak",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_fertilizer.questtemplate",
+      "pointer": "/text",
+      "en": "^orange;Fertilizer^reset; is essential to produce plants of any real value. To make some, you will first need an ^orange;Alchemy Table^reset;. I need 1 barrel of ^orange;Fertilizer^reset; for this project. Bring me some, would you?",
+      "tr": "^orange;Gübre^reset;, gerçekten verimli bitkiler yetiştirmek için şart. Üretmek için önce bir ^orange;Simya Tezgâhına^reset; ihtiyacın var. Bu proje için 1 varil ^orange;Gübre^reset; gerekiyor. Bana biraz getirir misin?",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_fertilizer.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now you can create some more advanced chemicals, and grow even better crops! Upgrade your ^orange;Alchemy Table^reset; into a ^orange;Chemistry Lab^reset; as soon as you are able.",
+      "tr": "Artık daha gelişmiş kimyasallar üretebilir ve daha iyi ürünler yetiştirebilirsin! Fırsat bulur bulmaz ^orange;Simya Tezgâhını^reset; ^orange;Kimya Laboratuvarına^reset; yükselt.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_fertilizer.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Fertilizer^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Gübreyi^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_icecrystal.questtemplate",
+      "pointer": "/title",
+      "en": "Icy Situation ",
+      "tr": "Buzlu Bir Mesele",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_icecrystal.questtemplate",
+      "pointer": "/text",
+      "en": "I've heard of ^orange;Ice Crystals^reset; before, but I have yet to actually see one. Can you bring me one? I have no idea where they even come from!",
+      "tr": "Daha önce ^orange;Buz Kristallerini^reset; duydum ama bugüne kadar hiç görmedim. Bana bir tane getirebilir misin? Nereden çıktıkları hakkında hiçbir fikrim yok!",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_icecrystal.questtemplate",
+      "pointer": "/completionText",
+      "en": "Have a nice hunk of cash as my thanks.",
+      "tr": "Teşekkür niyetine şu yüklüce parayı al.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_icecrystal.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Ice Crystal^reset; to the ^green;scientist^reset; at the first floor of the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Buz Kristalini^reset; ^orange;Bilim Karakolunun^reset; birinci katındaki ^green;bilim insanına^reset; götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_iodine.questtemplate",
+      "pointer": "/title",
+      "en": "Essential Ingredient",
+      "tr": "Temel Bileşen",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_iodine.questtemplate",
+      "pointer": "/text",
+      "en": "You'll need to find some ^orange;Caliche Stone^reset; if you want to get ^orange;Iodine^reset;. Throw batches of ^orange;Caliche Stone^reset; into your ^green;extraction lab^reset; and bring me some! You'll find them in ^orange;Desert^reset; biomes.",
+      "tr": "Biraz ^orange;Kaliş Taşı^reset; bulman gerek; ^orange;İyot^reset; elde etmenin yolu bu. ^orange;Kaliş Taşını^reset; gruplar hâlinde ^green;Çıkarma Laboratuvarına^reset; atıp bana biraz İyot getir! Kaliş Taşını ^orange;Çöl^reset; biyomlarında bulabilirsin.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_iodine.questtemplate",
+      "pointer": "/completionText",
+      "en": "Good work! Several basic ingredients such as ^orange;Iodine^reset; are essential. So stay stocked! You'll need ^orange;Iodine^reset; specifically to make ^orange;Graphene^reset; and high quality ^green;fertilizers^reset;!",
+      "tr": "Güzel iş! ^orange;İyot^reset; gibi bazı temel bileşenler çok önemli; stokta tut. Özellikle ^orange;Grafen^reset; ve yüksek kaliteli ^green;gübreler^reset; üretmek için ^orange;İyot^reset; gerekir!",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_iodine.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Iodine^reset; to ^green;Bella^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;İyodu^reset; ^orange;Bilim Karakolundaki^reset; ^green;Bella'ya^reset; götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methanol.questtemplate",
+      "pointer": "/title",
+      "en": "A Useful Alcohol",
+      "tr": "Faydalı Bir Alkol",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methanol.questtemplate",
+      "pointer": "/text",
+      "en": "I could use some ^orange;Methanol^reset; but don't have the materials handy. Bring me 10 ^orange;Methanol^reset; and I'll toss you something useful in return. Not a grenade. Promise.",
+      "tr": "Biraz ^orange;Metanol^reset; lazım ama malzemem yok. Bana 10 ^orange;Metanol^reset; getir, karşılığında işe yarar bir şey vereyim. El bombası değil. Söz.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methanol.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent. This will be quite useful, and goes quite appreciated. Take ^green;this augment^reset;, perhaps you can get more use out of it than I ever could.",
+      "tr": "Harika. Bu çok işime yarayacak, sağ ol. ^green;Şu eklentiyi^reset; al; belki sen benden daha çok kullanırsın.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methanol.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the 10 ^orange;Methanol^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;",
+      "tr": "10 ^orange;Metanolü^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methyliodide.questtemplate",
+      "pointer": "/title",
+      "en": "Deadly Chemistry",
+      "tr": "Ölümcül Kimya",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methyliodide.questtemplate",
+      "pointer": "/text",
+      "en": "I need a particularly dangerous chemical known as ^orange;Methyl Iodide^reset;. That will do the trick for this mixture. I'd grab it myself but this might explode! Can you help me out?",
+      "tr": "Özellikle tehlikeli bir kimyasal olan ^orange;Metil İyodüre^reset; ihtiyacım var. Bu karışım için tam da gereken şey. Kendim alırdım ama bu şey patlayabilir! Yardım eder misin?",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methyliodide.questtemplate",
+      "pointer": "/completionText",
+      "en": "^orange;Methyl Iodide^reset; is your key ingredient in ^green;fertilizers^reset;. You'll want it if you are going to be growing plants in growing/hydroponic trays.",
+      "tr": "^orange;Metil İyodür^reset;, ^green;gübrelerin^reset; temel bileşenlerinden biridir. Yetiştirme veya Hidroponik Tepsilerde bitki yetiştireceksen işine yarar.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_methyliodide.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Methyl Iodide^reset; to the ^green;purple-armored scientist^reset; at the top floor of the ^orange;Science Outpost^reset;.",
+      "tr": "^orange;Metil İyodürü^reset; ^orange;Bilim Karakolunun^reset; en üst katındaki ^green;mor zırhlı bilim insanına^reset; götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_plastic.questtemplate",
+      "pointer": "/title",
+      "en": "Getting into Plastics",
+      "tr": "Plastiğe Giriş",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_plastic.questtemplate",
+      "pointer": "/text",
+      "en": "If you're going to make it as a scientist, you are going to need ^orange;Advanced Plastic^reset;. Find some ^orange;Oil^reset; from a ^green;Desert^reset; or from ^orange;Bonemeal^reset; and then head to your ^orange;Bio Lab^reset;. Bring me back one single piece!",
+      "tr": "Bilim insanı olarak ilerleyeceksen ^orange;Gelişmiş Plastik^reset; gerekir. ^green;Çöl^reset; biyomlarında bulabileceğin ^orange;Yağ^reset; ile çalışabilirsin; ^orange;Kemik Unu^reset; da santrifüjde Yağ verebilir. Ardından ^orange;Kimya Laboratuvarında^reset; Gelişmiş Plastik üret ve bana bir parça getir!",
+      "section": "v0.10 Science - Chemistry",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak 'Bio Lab' diyor; pinned FU 6.5.8 plastic recipes ff_plastic'i chemlab2/Kimya Laboratuvarında üretir. Bonemeal ise santrifüjde yağ verebilir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_plastic.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent! You'll need a lot of plastic, so keep well stocked.",
+      "tr": "Harika! Çok fazla plastiğe ihtiyacın olacak, bolca stokla.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_plastic.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Advanced Plastic^reset; to the scientist at the ^green;Science Outpost^reset;",
+      "tr": "^orange;Gelişmiş Plastiği^reset; ^green;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_wastewater.questtemplate",
+      "pointer": "/title",
+      "en": "Useful Liquid",
+      "tr": "Yararlı Sıvı",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_wastewater.questtemplate",
+      "pointer": "/text",
+      "en": "I just can't figure out how to make the ^orange;Contaminated Water^reset; for some of my chemical stock. Can you help and make me some in a ^green;centrifuge^reset;?",
+      "tr": "Kimyasal stokum için gereken ^orange;Kirlenmiş Suyu^reset; nasıl elde edeceğimi bir türlü çözemedim. Bir ^green;santrifüjde^reset; biraz üretip bana yardım eder misin?",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_wastewater.questtemplate",
+      "pointer": "/completionText",
+      "en": "When you are able to, ^green;upgrade to an advanced centrifuge^reset; to really step up your lab game! Oh and be sure to keep your ^orange;Contaminated Water^reset;, you might need it.",
+      "tr": "Fırsatın olduğunda laboratuvarını gerçekten geliştirmek için ^green;daha gelişmiş bir santrifüje geç^reset;! Bir de ^orange;Kirlenmiş Suyunu^reset; sakla; sonra lazım olabilir.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_wastewater.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Contaminated Water^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Kirlenmiş Suyu^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/fuquest_biochem.questtemplate",
+      "pointer": "/title",
+      "en": "Alchemy, Chemistry...whatever",
+      "tr": "Simya, Kimya... Neyse İşte",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/fuquest_biochem.questtemplate",
+      "pointer": "/text",
+      "en": "So you've built an ^orange;Alchemy Table^reset; and want to learn to use it? Simple enough. Just don't blow yourself to bits, please. Place it down and start by making some ^orange;Mulch^reset; for fertilizer.",
+      "tr": "Demek bir ^orange;Simya Tezgâhı^reset; kurdun ve kullanmayı öğrenmek istiyorsun? Kolay. Yalnız kendini havaya uçurma, lütfen. Tezgâhı yerleştir ve gübre olarak kullanmak üzere biraz ^orange;Malç^reset; üreterek başla.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/fuquest_biochem.questtemplate",
+      "pointer": "/completionText",
+      "en": "^orange;Mulch^reset; is useful in a ^orange;Growing Tray^reset; as a ^green;weak fertilizer^reset;. You can craft all sorts of chemicals, plastics and lab-made materials. Be sure to upgrade the ^orange;Alchemy Table^reset; when you can!",
+      "tr": "^orange;Malç^reset;, ^orange;Yetiştirme Tepsisinde^reset; ^green;zayıf bir gübre^reset; olarak işe yarar. Çeşit çeşit kimyasal, plastik ve laboratuvarda üretilen malzeme hazırlayabilirsin. Fırsat bulduğunda ^orange;Simya Tezgâhını^reset; yükseltmeyi unutma!",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/ff_fertilizer.item",
+      "pointer": "/description",
+      "en": "It's what plants crave.\n^green;Growth Rate x^white;2 ^gray;& ^green;+^white;1 ^green;produce.\n^cyan;-^white;1 ^cyan;seed use^reset;",
+      "tr": "Bitkilerin aradığı şey.\n^green;Büyüme Hızı x^white;2 ^gray;& ^green;+^white;1 ^green;ürün.\n^cyan;-^white;1 ^cyan;tohum kullanımı^reset;",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/ff_fertilizer.item",
+      "pointer": "/shortdescription",
+      "en": "Fertilizer",
+      "tr": "Gübre",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/iodine.item",
+      "pointer": "/description",
+      "en": "Iodine ^gray;I^reset; is extremely useful as it is the heaviest and therefore most heat-resistant halogen.",
+      "tr": "İyot ^gray;I^reset;, en ağır ve dolayısıyla ısıya en dayanıklı halojen olduğundan son derece kullanışlıdır.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/iodine.item",
+      "pointer": "/shortdescription",
+      "en": "Iodine",
+      "tr": "İyot",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/methyliodide.item",
+      "pointer": "/description",
+      "en": "An extremely toxic, but useful lab reagent.",
+      "tr": "Son derece zehirli ama kullanışlı bir laboratuvar reaktifi.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/methyliodide.item",
+      "pointer": "/shortdescription",
+      "en": "Methyl Iodide",
+      "tr": "Metil İyodür",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/liquids/liquidwastewater.liqitem",
+      "pointer": "/description",
+      "en": "A measure of filthy, brackish water.\n^yellow;Centrifugable^reset;.",
+      "tr": "Bir miktar kirli, acı su.\n^yellow;Santrifüjlenebilir^reset;.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/liquids/liquidwastewater.liqitem",
+      "pointer": "/shortdescription",
+      "en": "Contaminated Water",
+      "tr": "Kirlenmiş Su",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/fu_mulch.item",
+      "pointer": "/description",
+      "en": "Great for fertilizing a hydroponics tray.\n^green;Growth Rate x^white;1.25 ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;",
+      "tr": "Hidroponik Tepsiyi gübrelemek için idealdir.\n^green;Büyüme Hızı x^white;1.25 ^gray;& ^cyan;-^white;1 ^cyan;tohum kullanımı^reset;",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/chemlab/fu_mulch.item",
+      "pointer": "/shortdescription",
+      "en": "Mulch",
+      "tr": "Malç",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/materials/calichewall.matitem",
+      "pointer": "/description",
+      "en": "Rich in iodine.\n^green;Extractable^reset;.",
+      "tr": "İyot bakımından zengindir.\n^green;Çıkarılabilir^reset;.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/materials/calichewall.matitem",
+      "pointer": "/shortdescription",
+      "en": "Caliche Stone",
+      "tr": "Kaliş Taşı",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/materials/bonemealmaterial.matitem",
+      "pointer": "/description",
+      "en": "A block of bone gritted down into dust.\n^green;Extractable^reset;, ^orange;Siftable^reset;.",
+      "tr": "Toz hâline öğütülmüş kemikten oluşan bir blok.\n^green;Çıkarılabilir^reset;, ^orange;Elenebilir^reset;.",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/materials/bonemealmaterial.matitem",
+      "pointer": "/shortdescription",
+      "en": "Bonemeal",
+      "tr": "Kemik Unu",
+      "section": "v0.10 Science - Chemistry"
+    },
+    {
+      "asset": "items/generic/crafting/icecrystal.item",
+      "pointer": "/description",
+      "en": "A cold ice crystal, it never seems to thaw.",
+      "tr": "Hiç erimeyecekmiş gibi duran soğuk bir buz kristali.",
+      "section": "v0.10 Science - Chemistry",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/icecrystal.item",
+      "pointer": "/shortdescription",
+      "en": "Ice Crystal",
+      "tr": "Buz Kristali",
+      "section": "v0.10 Science - Chemistry",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/title",
+      "en": "Contraband",
+      "tr": "Kaçak Mal",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/text",
+      "en": "AI is expressly forbidden on my homeworld. But I need an ^orange;AI Chip^reset; for my research! Can you please bring me one? I would reward you nicely.",
+      "tr": "Yapay zekâ benim gezegenimde kesinlikle yasak. Ama araştırmam için bir ^orange;Yapay Zekâ Çipine^reset; ihtiyacım var! Bana bir tane getirebilir misin? Karşılığını iyi veririm.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks. I've transferred payment for your troubles directly to your account.",
+      "tr": "Teşekkürler. Zahmetin için ödemeni doğrudan hesabına aktardım.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;AI Chip^reset; to the goggled Novakid at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Yapay Zekâ Çipini^reset; ^orange;Bilim Karakolundaki^reset; gözlüklü Novakid'e götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/title",
+      "en": "Centrifusion",
+      "tr": "Santrifüzyon",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/text",
+      "en": "If you want to advance your lab, you are going to want ^orange;Lab Centrifuge^reset;. Without one, you can't get ^green;an advanced centrifuge^reset; to produce high-end fissionable materials. Make a ^orange;Lab Centrifuge^reset; in a ^orange;Power Station^reset; and bring it to me.",
+      "tr": "Laboratuvarını geliştireceksen bir ^orange;Laboratuvar Santrifüjüne^reset; ihtiyacın olacak. O olmadan ^green;gelişmiş bir santrifüje^reset; geçip üst düzey bölünebilir malzemeler üretemezsin. ^orange;Güç İstasyonunda^reset; bir ^orange;Laboratuvar Santrifüjü^reset; üret ve bana getir.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/completionText",
+      "en": "When you are able to, ^green;upgrade to an advanced centrifuge^reset; to really step up your lab game!",
+      "tr": "Fırsatın olduğunda laboratuvarını gerçekten geliştirmek için ^green;Gaz Santrifüjüne yükselt^reset;!",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak generic 'advanced centrifuge' diyor; gerçek sonraki yükseltme envanter adı Gas Centrifuge/Gaz Santrifüjü."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Lab Centrifuge^reset; to the ^green;annoying guy^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Laboratuvar Santrifüjünü^reset; ^orange;Bilim Karakolundaki^reset; ^green;sinir bozucu adama^reset; götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/title",
+      "en": "Hardware Matters",
+      "tr": "Donanım Önemlidir",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/text",
+      "en": "Instructive: Now that you have ^orange;Silicon^reset; and ^orange;Copper Wire^reset; why not combine the two at your ^orange;Matter Assembler^reset; and craft a ^orange;Silicon Board^reset;?",
+      "tr": "Bilgilendirici: Bir ^orange;Atomik Fırında^reset; ^orange;Kum^reset; ve ^orange;Kömür^reset; kullanarak bir ^orange;Silisyum Devre Kartı^reset; üret.",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak eski tarifte Silicon + Copper Wire ve Matter Assembler diyor. Pinned vanilla tarif siliconboard'u craftingfurnace3/Atomik Fırında Sand + Coal ile üretir; FU Matter Assembler yalnız prototyper1/2/3 filtrelerini kullanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/completionText",
+      "en": "Encouraging: You will need a large amount of boards, for they are the building block of many more advanced chipsets.",
+      "tr": "Teşvik edici: Bu kartlardan bolca gerekecek; pek çok gelişmiş yonga setinin temelini oluştururlar.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Silicon Board^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Silisyum Devre Kartını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/title",
+      "en": "Powdery Power",
+      "tr": "Toz Gücü",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/text",
+      "en": "I've heard of ^orange;Powder Sifters^reset; before but have never seen one in action. Build one in a ^orange;Power Station^reset; and bring it to me, and maybe I'll help you out.",
+      "tr": "^orange;Toz Eleklerini^reset; daha önce duydum ama çalışırken hiç görmedim. ^orange;Güç İstasyonunda^reset; bir tane üretip bana getir; belki ben de sana yardım ederim.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/completionText",
+      "en": "As promised, your reward. May this ^green;cash^reset; serve you well!",
+      "tr": "Söz verdiğim gibi, ödülün. Bu ^green;para^reset; işine yarasın!",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Powder Sifter^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Toz Eleğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/title",
+      "en": "Solar Power",
+      "tr": "Güneş Enerjisi",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/text",
+      "en": "Powered stations are a ^green;huge productivity booster^reset;. To start with, you'll need a ^orange;Solar Panel^reset; to produce energy. Build one on a ^orange;Power Station^reset;.",
+      "tr": "Elektrikle çalışan istasyonlar ^green;üretkenliği ciddi biçimde artırır^reset;. Başlangıç için enerji üretecek bir ^orange;Güneş Paneline^reset; ihtiyacın var. ^orange;Güç İstasyonunda^reset; bir tane üret.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now you've started the engineering path of your adventure. I suggest getting some other machines up soon!",
+      "tr": "Artık maceranın mühendislik tarafına da adım attın. Yakında birkaç makine daha kurmanı öneririm!",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Solar Panel^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Güneş Panelini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate",
+      "pointer": "/title",
+      "en": "Wind Power",
+      "tr": "Rüzgâr Enerjisi",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate",
+      "pointer": "/text",
+      "en": "You can generate power in many ways. ^orange;Alternator^reset; generators are just the simplest. Try building a ^orange;Wind Turbine^reset;, and see how useful they get in a windstorm!",
+      "tr": "Enerjiyi birçok şekilde üretebilirsin. ^orange;Alternatör^reset; yalnızca en basit seçenek. Bir ^orange;Rüzgâr Türbini^reset; kur ve fırtınalı havada ne kadar işe yaradığını gör!",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate",
+      "pointer": "/completionText",
+      "en": "Other options for power include Solar, Combustion, Fission and Quantum power generation. Each has pros and cons. You'll definitely want to try them all.",
+      "tr": "Diğer enerji seçenekleri arasında güneş, yanma, fisyon ve kuantum üretimi bulunur. Her birinin artıları ve eksileri var; hepsini denemek isteyeceksin.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/title",
+      "en": "Long Distance Power",
+      "tr": "Uzaktan Güç",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/text",
+      "en": "Powered stations are a ^green;huge productivity booster^reset;. With a ^orange;Watcher^reset; they are even more versatile! Try crafting a ^orange;Watcher^reset; in your ^orange;Power Station^reset; and bring it to me.",
+      "tr": "Elektrikle çalışan istasyonlar ^green;üretkenliği ciddi biçimde artırır^reset;. Bir ^orange;Gözcü^reset; ile çok daha kullanışlı hâle gelirler! ^orange;Güç İstasyonunda^reset; bir ^orange;Gözcü^reset; üretip bana getir.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/completionText",
+      "en": "^orange;Watchers^reset; are special. They will keep powered devices within their range ^gray;(20 blocks)^reset; running while you are away, planetside. ^red;Leaving a planet will reset all of your Watchers.^reset; Your SAIL can only track so many before it slows down.^red;Don't over-use them^reset;.",
+      "tr": "^orange;Gözcüler^reset; özel cihazlardır. Gezegendeyken başka yerde olsan bile menzillerindeki ^gray;(20 blok)^reset; elektrikli cihazları çalışır durumda tutarlar. ^red;Gezegenden ayrılmak tüm Gözcülerini sıfırlar.^reset; SAIL yavaşlamadan önce yalnızca belirli sayıda Gözcüyü takip edebilir.^red;Aşırı kullanma.^reset;",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Watcher^reset; to the ^green;purple-armored scientist^reset; at the top floor of the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Gözcüyü^reset; ^orange;Bilim Karakolunun^reset; en üst katındaki ^green;mor zırhlı bilim insanına^reset; götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/title",
+      "en": "Fuel Your Power",
+      "tr": "Gücünü Besle",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/text",
+      "en": "You don't need batteries, but they will be extremely useful. Create a ^orange;Basic Battery^reset; in your ^orange;Electronics Center^reset; to try one out.",
+      "tr": "Pil kullanmak zorunda değilsin ama çok işine yararlar. Denemek için ^orange;Elektronik Merkezinde^reset; bir ^orange;Temel Pil^reset; üret.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/completionText",
+      "en": "Once you place it, use your ^orange;Wiring Tool^reset; to link to a ^green;generator^reset; to a ^blue;blue node^reset; on your battery.",
+      "tr": "Pili yerleştirdikten sonra ^orange;Tamirci Anahtarını^reset; kullanarak bir ^green;jeneratörün çıkışını^reset; pilindeki ^blue;mavi düğüme^reset; bağla.",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak eski 'Wiring Tool' adını kullanıyor; FU'nun ilgili aracı wiretoolfu ve gerçek envanter adı Mechanic's Wrench, Türkçede Tamirci Anahtarı olarak LOCKED."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/aichip.item",
+      "pointer": "/description",
+      "en": "An unrivaled chipset capable of impossibly complex processes.",
+      "tr": "İnanılmaz karmaşık işlemleri gerçekleştirebilen eşsiz bir yonga seti.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/aichip.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;A.I. Chip^reset;",
+      "tr": "^#88e25b;Yapay Zekâ Çipi^reset;",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "items/generic/crafting/siliconboard.item",
+      "pointer": "/description",
+      "en": "A silicon board. Can be used to craft electronics.",
+      "tr": "Elektronik üretiminde kullanılabilen bir silisyum devre kartı.",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/siliconboard.item",
+      "pointer": "/shortdescription",
+      "en": "Silicon Board",
+      "tr": "Silisyum Devre Kartı",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/fu_watcher/fu_watcher.object",
+      "pointer": "/description",
+      "en": "Used to keep ^blue;everything within 20 tiles^reset; loaded while away, if turned on. Shuts off when you leave the planet.^red;\nAvoid over-use. Will impact performance.^reset;",
+      "tr": "Açıkken, sen uzaktayken ^blue;20 blok içindeki her şeyi^reset; etkin tutar. Gezegenden ayrıldığında kapanır.^red;\nAşırı kullanma. Performansı etkiler.^reset;",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "objects/fu_watcher/fu_watcher.object",
+      "pointer": "/shortdescription",
+      "en": "Watcher",
+      "tr": "Gözcü",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_miraclegrass.questtemplate",
+      "pointer": "/title",
+      "en": "Grass of Life",
+      "tr": "Yaşam Otu",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_miraclegrass.questtemplate",
+      "pointer": "/text",
+      "en": "I am in need of 3 ^orange;Miracle Grass^reset; seeds to try a new regeneration experiment. You'll find them at your ^orange;Gene Design Lab^reset;. Can you fetch me some?",
+      "tr": "Yeni bir yenilenme deneyi için 3 ^orange;Mucize Otu Tohumuna^reset; ihtiyacım var. Bunları ^orange;Serada^reset; üretebilirsin. Bana getirir misin?",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Pinned miraclegrassseed tarifi designlab1 grubunda; Sera yeterli. Kaynak gereksiz yere Gene Design Lab istiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_miraclegrass.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks, now I can complete this research project and wow the investors! ^green;I'll send replacement seeds^reset; later.",
+      "tr": "Teşekkürler, artık bu araştırma projesini tamamlayıp yatırımcıları etkileyebilirim! ^green;Yedek tohumları^reset; sonra yollarım.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_miraclegrass.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the 3 ^orange;Miracle Grass Seeds^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "3 ^orange;Mucize Otu Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_bracken.questtemplate",
+      "pointer": "/title",
+      "en": "Silky Smooth",
+      "tr": "İpek Gibi",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_bracken.questtemplate",
+      "pointer": "/text",
+      "en": "Sweet. Now that you have a ^orange;Greenhouse^reset; we can really get working! The first plant you'll probably want to make is the ^orange;Bracken Tree^reset;, as the ^green;Silk^reset; it creates ultimately leads to ^green;Advanced Plastic^reset;. Try making some ^orange;Bracken Tree Seeds^reset; now.",
+      "tr": "Güzel. Seran hazır ama ^orange;Bracken Ağacı Tohumu^reset; üretmek için önce ^orange;Botanik Laboratuvarına^reset; yükseltmen gerekiyor. Bracken'ın ürettiği ^green;İpek^reset;, sonunda ^green;Gelişmiş Plastik^reset; üretiminde kullanılır. Şimdi 3 ^orange;Bracken Ağacı Tohumu^reset; üret.",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_correction": true,
+        "allow_number_fix": true,
+        "reason": "Bracken tarifi designlab2/Botanik Laboratuvarı gerektiriyor; kaynak yalnız Sera varmış gibi yönlendiriyor. Gerçek görev koşulu 3 tohum."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_bracken.questtemplate",
+      "pointer": "/completionText",
+      "en": "Bravo. You'll need ^green;a lot of plastic^reset; so keep stocked! Now let's help you see in the dark, shall we?",
+      "tr": "Bravo. ^green;Bol miktarda plastiğe^reset; ihtiyacın olacak, stokta tut! Şimdi karanlıkta işini kolaylaştıralım.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_mutavisk.questtemplate",
+      "pointer": "/title",
+      "en": "Advanced Textiles",
+      "tr": "Gelişmiş Tekstiller",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_mutavisk.questtemplate",
+      "pointer": "/text",
+      "en": "The ^orange;Mutavisk^reset; seed is extremely useful, being the sole source in the galaxy of the wonderous textile known as ^orange;Mutavisk Silk^reset;. Why not try crafting a few seeds? You'll need to upgrade to a ^green;more powerful lab^reset; first.",
+      "tr": "^orange;Mutavisk Tohumu^reset; son derece değerlidir; ^orange;Mutavisk İpeği^reset; denen özel tekstilin galaksideki tek kaynağıdır. Önce ^green;Botanik Laboratuvarına^reset; yükselt, ardından 3 Mutavisk Tohumu üret.",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_clarification": true,
+        "allow_number_fix": true,
+        "reason": "Mutavisk tarifi designlab2 grubunda; gerçek gerekli kademe Botanik Laboratuvarı. Koşul 3 tohum ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_mutavisk.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now that you know the basics, you should be able to whip up a wide array of useful plants. Each provides different benefits, so tailor your farm to your personal needs!",
+      "tr": "Temelleri öğrendiğine göre artık pek çok yararlı bitki üretebilirsin. Her biri farklı avantajlar sağlar; çiftliğini ihtiyaçlarına göre şekillendir!",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_oonforta.questtemplate",
+      "pointer": "/title",
+      "en": "Light in the Darkness",
+      "tr": "Karanlıktaki Işık",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_oonforta.questtemplate",
+      "pointer": "/text",
+      "en": "The ^orange;Oonforta^reset; is a weird but useful fungus. It produces light when thrown, and will be invaluable to you. Create some at your ^orange;Greenhouse^reset; and try them out!",
+      "tr": "^orange;Oonforta^reset; tuhaf ama yararlı bir mantardır. Ürettiği yumrular fırlatıldığında ışık saçar. ^orange;Botanik Laboratuvarında^reset; 3 Oonforta Tohumu üretip dene!",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_correction": true,
+        "allow_number_fix": true,
+        "reason": "Oonforta tarifi designlab2/Botanik Laboratuvarı gerektiriyor; kaynak Greenhouse diyor. Koşul 3 tohum ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_oonforta.questtemplate",
+      "pointer": "/completionText",
+      "en": "Great work. Next, I suggest you start getting to work crafting ^orange;Mutavisk Seeds^reset; and start a farm. You'll want the textiles they can create fairly soon.",
+      "tr": "Güzel iş. Sırada ^orange;Mutavisk Tohumları^reset; üretip bir çiftlik kurmanı öneririm. Sağladıkları tekstile yakında ihtiyacın olacak.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate",
+      "pointer": "/title",
+      "en": "Cloning Trees",
+      "tr": "Ağaç Klonlama",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate",
+      "pointer": "/text",
+      "en": "^orange;Cloning Labs^reset; have one single purpose: Making custom trees. Place one sapling on the left, one on the right and you're good to go!",
+      "tr": "Bir ^orange;Klonlama Laboratuvarı^reset; üret. Bu cihaz iki fidanın özelliklerini birleştirerek özel ağaçlar oluşturur.",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Görev koşulu clonelab toplamaktır; kaynak metin yalnız kullanımını anlatıp üretim hedefini açık söylemiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate",
+      "pointer": "/completionText",
+      "en": "^orange;Cloning Labs^reset; have one single purpose: Making custom trees. Place one sapling on the left, one on the right and you're good to go!",
+      "tr": "^orange;Klonlama Laboratuvarında^reset; sol yuvaya bir fidan, sağ yuvaya başka bir fidan yerleştir. Cihaz bu ikisinden özel bir ağaç oluşturur.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
+      "pointer": "/title",
+      "en": "I like it Hot!",
+      "tr": "Acıyı Severim!",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
+      "pointer": "/text",
+      "en": "I love spicy foods but getting what I need here is a pain. Using a ^orange;Gene Design Lab^reset; could you perhaps make me some ^orange;Ignus Chili Seeds^reset;? I'd reward you for the effort.",
+      "tr": "Acılı yemeklere bayılırım ama burada gerekeni bulmak dert. ^orange;Botanik Laboratuvarında^reset; 3 ^orange;Ignus Biberi Tohumu^reset; üretip bana getirebilir misin? Emeğinin karşılığını veririm.",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_correction": true,
+        "allow_number_fix": true,
+        "reason": "Ignus Chili tarifi designlab2/Botanik Laboratuvarında açılır; Gene Design Lab gereksiz üst kademe. Koşul 3 tohum ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
+      "pointer": "/completionText",
+      "en": "I can't wait to make some chili with these! Take this ^green;alloy^reset;: it should do you more good than I. Enjoy.",
+      "tr": "Bunlarla acılı bir şeyler yapmak için sabırsızlanıyorum! Şu ^green;alaşımı^reset; al; senin daha çok işine yarar. Güle güle kullan.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Ignus Chili Seeds^reset; to the monocled Thelusian at the ^orange;Science Outpost^reset;",
+      "tr": "3 ^orange;Ignus Biberi Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; monokllü Thelusian'a götür.",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu 3 tohum ister; kaynak teslim metni adedi söylemiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_mutavisk.questtemplate",
+      "pointer": "/title",
+      "en": "Mutavisk Headware",
+      "tr": "Mutavisk Miğferi",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_mutavisk.questtemplate",
+      "pointer": "/text",
+      "en": "A task for you: Research ^cyan;Penumbrite Equipment^reset; and create a ^orange;Mutavisk Helm^reset;. I'll pay well for it, as I am in dire need.",
+      "tr": "Sana bir görev: ^cyan;Penumbrite Ekipmanını^reset; araştır ve bir ^orange;Mutavisk Miğferi^reset; üret. Ona acilen ihtiyacım var; iyi para veririm.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_mutavisk.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks to you, I can finally take a trip to an ^orange;Irradiated^reset; world with my complete ^orange;Mutavisk Armor Set^reset;!",
+      "tr": "Senin sayende sonunda tam ^orange;Mutavisk Zırh Setimle^reset; ^orange;radyasyonlu^reset; bir dünyaya gidebilirim!",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_mutavisk.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Mutavisk Helm^reset; to the Novakid by the crew sign at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Mutavisk Miğferini^reset; ^orange;Bilim Karakolundaki^reset; mürettebat tabelasının yanındaki Novakid'e götür.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_radleaf.questtemplate",
+      "pointer": "/title",
+      "en": "Rad Leaves",
+      "tr": "Radyasyon Yaprakları",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_radleaf.questtemplate",
+      "pointer": "/text",
+      "en": "I'm trying to study this material but I have no radiation protection. Specifically, I would like some ^orange;Rad Leaf^reset; to ingest. Care to get me some?",
+      "tr": "Bu malzemeyi incelemeye çalışıyorum ama radyasyon korumam yok. Özellikle yemek için 3 ^orange;Radyasyon Yaprağı^reset; istiyorum. Bana getirir misin?",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu ve teslim metni 3 Rad Leaf ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_radleaf.questtemplate",
+      "pointer": "/completionText",
+      "en": "It never hurts to help! And since you helped me, I'll help you. Here's a ^green;big bag of pixels^reset;!",
+      "tr": "Yardımın zararı olmaz! Sen bana yardım ettin, ben de sana edeyim. Al sana ^green;koca bir Piksel kesesi^reset;!",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_radleaf.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the 3 ^orange;Rad Leaf^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;",
+      "tr": "3 ^orange;Radyasyon Yaprağını^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_regengene.questtemplate",
+      "pointer": "/title",
+      "en": "Gene Splicing 101",
+      "tr": "Gen Birleştirme 101",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_regengene.questtemplate",
+      "pointer": "/text",
+      "en": "My ^orange;Xeno Lab^reset; is on the fritz, and I need 3 ^orange;Thornitox^reset; seeds for a client or I don't eat this month! Can you help me out?",
+      "tr": "^orange;Xeno Araştırma Laboratuvarım^reset; bozuldu. Bir müşteri için 3 ^orange;Thornitox Tohumu^reset; lazım, yoksa bu ay aç kalacağım! Yardım eder misin?",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_regengene.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks so much. It's not much, but take this data I uncovered by scanning ^orange;Technology of the Ancients^reset;. Maybe you can make use of it.",
+      "tr": "Çok teşekkürler. Pek bir şey değil ama ^orange;Kadimlerin Teknolojisini^reset; tararken bulduğum şu veriyi al. Belki işine yarar.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_regengene.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring ^orange;3 Thornitox Seeds^reset; to the yellow Avian at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;3 Thornitox Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; sarı Avian'a götür.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/miraclegrassseed/miraclegrassseed.object",
+      "pointer": "/description",
+      "en": "Grass renowned for its healing ability. Produces a weak long-term regeneration effect.",
+      "tr": "İyileştirici özelliğiyle bilinen bir ot. Uzun süreli, zayıf bir yenilenme etkisi sağlar.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/miraclegrassseed/miraclegrassseed.object",
+      "pointer": "/shortdescription",
+      "en": "Miracle Grass",
+      "tr": "Mucize Otu Tohumu",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Asset bir seed object olmasına rağmen kaynak kısa ad 'Miracle Grass'; Türkçede görev-hedef takibi için tohum olduğu açık yazılır."
+      }
+    },
+    {
+      "asset": "objects/farmables/brackentree/brackentreeseed.object",
+      "pointer": "/description",
+      "en": "Bracken provide essential Silk.",
+      "tr": "Bracken, temel bir kaynak olan İpek sağlar.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/brackentree/brackentreeseed.object",
+      "pointer": "/shortdescription",
+      "en": "Bracken Tree Seed",
+      "tr": "Bracken Ağacı Tohumu",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/mutavisk/mutaviskseed.object",
+      "pointer": "/description",
+      "en": "A strange and wonderful plant that produces an unrivaled silk-like material.",
+      "tr": "Eşi benzeri olmayan, ipeksi bir malzeme üreten tuhaf ve değerli bir bitki.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/mutavisk/mutaviskseed.object",
+      "pointer": "/shortdescription",
+      "en": "Mutavisk",
+      "tr": "Mutavisk Tohumu",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Asset bir seed object; Türkçede görev-hedef takibi için tohum olduğu açık yazılır."
+      }
+    },
+    {
+      "asset": "objects/farmables/oonfortaseed/oonfortaseed.object",
+      "pointer": "/description",
+      "en": "The Oonforta grows glowing bulbs on tails that can be tossed for light.",
+      "tr": "Oonforta, ışık elde etmek için fırlatılabilen parlak yumrular yetiştirir.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/oonfortaseed/oonfortaseed.object",
+      "pointer": "/shortdescription",
+      "en": "Oonforta Seed",
+      "tr": "Oonforta Tohumu",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/crafting/clonelab/clonelab.object",
+      "pointer": "/subtitle",
+      "en": "Mash together tree genetics",
+      "tr": "Ağaç genlerini birleştir",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/crafting/clonelab/clonelab.object",
+      "pointer": "/description",
+      "en": "Create modified versions of saplings for unique trees.",
+      "tr": "Benzersiz ağaçlar için değiştirilmiş fidanlar oluşturur.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/crafting/clonelab/clonelab.object",
+      "pointer": "/shortdescription",
+      "en": "^orange;Cloning Lab^reset;",
+      "tr": "^orange;Klonlama Laboratuvarı^reset;",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/ignuschili/ignuschiliseed.object",
+      "pointer": "/description",
+      "en": "200% spicier than a normal chili. Also makes a handy weapon.",
+      "tr": "Normal bir bibere göre %200 daha acıdır. Ayrıca kullanışlı bir silah olur.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/ignuschili/ignuschiliseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ignus Chili Seed",
+      "tr": "Ignus Biberi Tohumu",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "items/armors/tier3/mutaviskarmor/mutavisk.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Fall Damage x^green;0.75^reset;\n^yellow;^reset; ^cyan;Immune^reset;: All Radiation",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Düşme Hasarı x^green;0.75^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Radyasyon",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/armors/tier3/mutaviskarmor/mutavisk.head",
+      "pointer": "/shortdescription",
+      "en": "Mutavisk Helm",
+      "tr": "Mutavisk Miğferi",
+      "section": "v0.10 Science - Genetics",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/generic/produce/guam.consumable",
+      "pointer": "/description",
+      "en": "^yellow;^reset;^cyan;Immune^reset;: Extreme Radiation: 3m",
+      "tr": "^yellow;^reset;^cyan;Bağışıklık^reset;: Aşırı Radyasyon: 3 dk",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "items/generic/produce/guam.consumable",
+      "pointer": "/shortdescription",
+      "en": "Rad-Leaf",
+      "tr": "Radyasyon Yaprağı",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/thornitoxplant/thornitoxseed.object",
+      "pointer": "/description",
+      "en": "Poisonous and spiky. Thornitox could have use in weapons manufacture.",
+      "tr": "Zehirli ve dikenlidir. Thornitox, silah üretiminde işe yarayabilir.",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "objects/farmables/thornitoxplant/thornitoxseed.object",
+      "pointer": "/shortdescription",
+      "en": "Thornitox Seed",
+      "tr": "Thornitox Tohumu",
+      "section": "v0.10 Science - Genetics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate",
+      "pointer": "/title",
+      "en": "Expanding Knowledge",
+      "tr": "Bilgiyi Genişletmek",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate",
+      "pointer": "/text",
+      "en": "You've taken your first steps in ^cyan;Frackin' Universe^reset;. With the ^orange;Machining Table^reset; you can now branch out into a wide assortment of ^green;Lab Stations and Equipment^reset; as well as ^green;crafting resources^reset;. Let's start by making an ^orange;Electromagnet^reset;.",
+      "tr": "^cyan;Frackin' Universe^reset; dünyasında ilk adımlarını attın. ^orange;İmalat Tezgâhıyla^reset; artık pek çok ^green;laboratuvar istasyonu ve ekipmana^reset;, ayrıca ^green;üretim kaynağına^reset; erişebilirsin. Bir ^orange;Elektromıknatıs^reset; üreterek başlayalım.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_prototyper.questtemplate",
+      "pointer": "/completionText",
+      "en": "Try building a few more basic goods such as the extremely useful ^orange;Extraction Lab^reset;. The ^orange;Machining Table^reset; and its ^green;upgrades^reset; are necessary for every FU crafting station. Use it well.",
+      "tr": "Şimdi son derece yararlı ^orange;Çıkarma Laboratuvarı^reset; gibi birkaç temel şey daha üret. ^orange;İmalat Tezgâhı^reset; ve ^green;yükseltmeleri^reset;, FU'daki üretim istasyonlarının temelidir. İyi kullan.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_extractor.questtemplate",
+      "pointer": "/title",
+      "en": "Extraction 101",
+      "tr": "Çıkarma 101",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_extractor.questtemplate",
+      "pointer": "/text",
+      "en": "Any self-respecting scientist has an ^orange;Extraction Lab^reset;. It's like sorcery! Stuff goes in, better stuff comes out! Make one in your ^orange;Auto-Assembler^reset;.",
+      "tr": "Kendine saygısı olan her bilim insanının bir ^orange;Çıkarma Laboratuvarı^reset; vardır. Neredeyse sihir gibi: bir şey girer, daha iyisi çıkar! ^orange;Otomatik Birleştiricide^reset; bir tane üret.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_extractor.questtemplate",
+      "pointer": "/completionText",
+      "en": "You'll have limitless options when it comes to using that thing. Try building some other science stations now, such as a ^orange;Bio-Chem Lab^reset;.",
+      "tr": "Bunu kullanmanın sayısız yolu var. Şimdi ^orange;Biyokimya Laboratuvarı^reset; gibi başka bilim istasyonları da kurmayı dene.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_extractor.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Extraction Lab^reset; to the ^green;Human Scientist^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Çıkarma Laboratuvarını^reset; ^orange;Bilim Karakolundaki^reset; ^green;İnsan bilim insanına^reset; götür.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_advxeno.questtemplate",
+      "pointer": "/title",
+      "en": "Advanced Genetics",
+      "tr": "Gelişmiş Genetik",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_advxeno.questtemplate",
+      "pointer": "/text",
+      "en": "Can you out-science me? I doubt it. If you think you can, prove it by bringing me a completed ^orange;Advanced Xeno Lab^reset;!",
+      "tr": "Benden daha iyi bilim yapabilir misin? Sanmıyorum. Yapabileceğini düşünüyorsan bir ^orange;Gelişmiş Xeno Laboratuvarı^reset; üretip bana getirerek kanıtla!",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_advxeno.questtemplate",
+      "pointer": "/completionText",
+      "en": "Well...I guess that settles it. I suck. Since you bested me fair and square, have these ^orange;Tech Cards^reset;",
+      "tr": "Pekâlâ... Sanırım konu kapandı. Ben bu işte kötüyüm. Beni hakkıyla geçtiğine göre şu ^orange;Tech Kartlarını^reset; al.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_advxeno.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Advanced Xenolab^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Gelişmiş Xeno Laboratuvarını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blastfurnace.questtemplate",
+      "pointer": "/title",
+      "en": "Smelting Champion",
+      "tr": "Ergitme Şampiyonu",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blastfurnace.questtemplate",
+      "pointer": "/text",
+      "en": "If you can build a ^orange;Blast Furnace^reset; with a ^orange;Power Station^reset; and bring it here, so I can analyze it, I would prove most grateful and perhaps reward you.",
+      "tr": "^orange;Güç İstasyonunda^reset; bir ^orange;Yüksek Fırın^reset; üretip incelemem için buraya getirirsen çok minnettar kalırım. Belki karşılığını da veririm.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blastfurnace.questtemplate",
+      "pointer": "/completionText",
+      "en": "Fantastic work! Truly amazing. Thank you for the help. As thanks, here's payment for your troubles.",
+      "tr": "Harika iş! Gerçekten etkileyici. Yardımın için teşekkürler; zahmetinin karşılığı burada.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blastfurnace.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Blast Furnace^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Yüksek Fırını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_arcsmelter.questtemplate",
+      "pointer": "/title",
+      "en": "Smelting Masterclass",
+      "tr": "Ergitme Ustalığı",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_arcsmelter.questtemplate",
+      "pointer": "/text",
+      "en": "There is an expensive but ^green;very powerful^reset; piece of technology called an ^orange;Arc Smelter^reset; which will increase smelting yields a great deal. Prove you can build one with your ^orange;Power Station^reset; and I'll toss you a bonus.",
+      "tr": "^orange;Ark Ergitici^reset; pahalı ama ^green;çok güçlü^reset; bir teknolojidir ve ergitme verimini ciddi biçimde artırır. ^orange;Güç İstasyonunda^reset; bir tane üretebildiğini kanıtla, ben de sana bonus vereyim.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_arcsmelter.questtemplate",
+      "pointer": "/completionText",
+      "en": "Fantastic work! Truly amazing. As promised, your reward: ^green;lots of money^reset;",
+      "tr": "Harika iş! Gerçekten etkileyici. Söz verdiğim gibi ödülün: ^green;bolca para^reset;.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_arcsmelter.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Arc Smelter^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Ark Ergiticiyi^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_atmosregulator.questtemplate",
+      "pointer": "/title",
+      "en": "Protective Measures",
+      "tr": "Koruyucu Önlemler",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_atmosregulator.questtemplate",
+      "pointer": "/text",
+      "en": "I need to ^green;borrow^reset; an ^orange;Atmospheric Regulator^reset; so I can colonize a hostile world. You'll find it at your ^orange;Power Station^reset;. I'll need to keep it for a while but I'll pay top dollar for it.",
+      "tr": "Tehlikeli bir dünyada koloni kurabilmek için bir ^orange;Atmosfer Düzenleyiciyi^reset; bir süreliğine ^green;ödünç almam^reset; gerekiyor. ^orange;Güç İstasyonunda^reset; üretebilirsin. Bir süre bende kalacak ama iyi para öderim.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_atmosregulator.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent, and the one I ordered is already on the way. There we go. As promised, ^green;a ton of money.^green;",
+      "tr": "Mükemmel, sipariş ettiğim de yola çıkmış bile. Tamamdır. Söz verdiğim gibi, ^green;bir ton para.^green;",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_atmosregulator.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Atmosphere Regulator^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Atmosfer Düzenleyiciyi^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak teslim metni 'Atmosphere Regulator' diyor; gerçek item shortdescription 'Atmospheric Regulator'."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_augment.questtemplate",
+      "pointer": "/title",
+      "en": "Augments",
+      "tr": "Eklentiler",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_augment.questtemplate",
+      "pointer": "/text",
+      "en": "You're probably starting to have some issues surviving by now in different biomes. So let's get you building ^green;augments^reset;! Show me an ^orange;Acid Shield^reset; augment made by your own two hands!",
+      "tr": "Farklı biyomlarda hayatta kalmak artık zorlaşmaya başlamıştır. O hâlde ^green;eklentiler^reset; üretmeye geçelim! Kendi ellerinle bir ^orange;Asit Kalkanı^reset; eklentisi üret ve bana göster.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_augment.questtemplate",
+      "pointer": "/completionText",
+      "en": "Perhaps one day I might call on your talents to help me with a little problem I am having...I'll need to consider.",
+      "tr": "Belki bir gün yaşadığım küçük bir sorun için yeteneklerine başvururum... Bunu düşüneceğim.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_augment.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Acid Shield^reset; augment to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Asit Kalkanı^reset; eklentisini ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blackglass.questtemplate",
+      "pointer": "/title",
+      "en": "Dark Stained Glass",
+      "tr": "Koyu Renkli Cam",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blackglass.questtemplate",
+      "pointer": "/text",
+      "en": "Do you have a ^orange;Blast Furnace^reset; yet? If so, try to smelt ^orange;Obsidian^reset; and bring me the results. I will be most grateful for your assistance.",
+      "tr": "Bir ^orange;Yüksek Fırının^reset; var mı? Varsa içinde ^orange;Obsidiyen^reset; erit ve çıkan Siyah Camı bana getir. Yardımın için minnettar kalırım.",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Quest condition gerçek çıktı itemi blackglass; hedef metinde ad açık yazmıyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blackglass.questtemplate",
+      "pointer": "/completionText",
+      "en": "Fantastic work! Truly amazing. Thank you for the help. As thanks, here's payment for your troubles.",
+      "tr": "Harika iş! Gerçekten etkileyici. Yardımın için teşekkürler; zahmetinin karşılığı burada.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blackglass.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Black Glass^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Siyah Camı^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/electromagnet.item",
+      "pointer": "/description",
+      "en": "An advanced electromagnet.",
+      "tr": "Gelişmiş bir elektromıknatıs.",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/electromagnet.item",
+      "pointer": "/shortdescription",
+      "en": "^#77acc3;Electromagnet^reset;",
+      "tr": "^#77acc3;Elektromıknatıs^reset;",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "items/augments/back/environment/acidimmunity.augment",
+      "pointer": "/description",
+      "en": "An EPP module that protects against sulphuric acid. ^cyan;Immune: Acid^reset;",
+      "tr": "Sülfürik aside karşı koruma sağlayan bir EPP modülü. ^cyan;Bağışıklık: Asit^reset;",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "items/augments/back/environment/acidimmunity.augment",
+      "pointer": "/shortdescription",
+      "en": "Acid Shield",
+      "tr": "Asit Kalkanı",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "items/augments/back/environment/acidimmunity.augment",
+      "pointer": "/augment/displayName",
+      "en": "Acid Shield",
+      "tr": "Asit Kalkanı",
+      "section": "v0.10 Science - Mechanical"
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/description",
+      "en": "A dark-tinted panel of glass.",
+      "tr": "Koyu renklendirilmiş bir cam panel.",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/shortdescription",
+      "en": "Black Glass",
+      "tr": "Siyah Cam",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/glitchdescription",
+      "en": "Interested. This glass has been so darkly tinted it is almost not transparent.",
+      "tr": "İlgili. Bu cam o kadar koyu renklendirilmiş ki neredeyse saydam değil.",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/florandescription",
+      "en": "Floran can hide behind dark glasss.",
+      "tr": "Floran koyu camın arkasına saklanabilir.",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/novakiddescription",
+      "en": "Glass so dark the sun'll hardly shine through.",
+      "tr": "Öyle koyu bir cam ki güneş ışığı bile zar zor geçer.",
+      "section": "v0.10 Science - Mechanical",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_fission.questtemplate",
+      "pointer": "/title",
+      "en": "Quaid's Start",
+      "tr": "Quaid'in Başlangıcı",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_fission.questtemplate",
+      "pointer": "/text",
+      "en": "You can generate a lot of power with a ^orange;Fission Reactor^reset; in your lab. Show you can make one using your ^orange;Power Station^reset; and you can have this ^green;crew contract^reset;. I don't have room for crew on my ship anyhow.",
+      "tr": "Laboratuvarında bir ^orange;Fisyon Reaktörü^reset; ile çok fazla enerji üretebilirsin. ^orange;Güç İstasyonunda^reset; bir tane üretebildiğini göster, şu ^green;mürettebat sözleşmesi^reset; senin olsun. Zaten gemimde yeni mürettebata yer yok.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_fission.questtemplate",
+      "pointer": "/completionText",
+      "en": "Great! As thanks: This ^green;contract^reset; will allow you to recruit a ^cyan;unique^reset; hired crewmember!",
+      "tr": "Harika! Teşekkür olarak bu ^green;sözleşmeyi^reset; al. Bununla ^cyan;özel^reset; bir ücretli mürettebat üyesini ekibine katabilirsin!",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_fission.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Fission Reactor^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Fisyon Reaktörünü^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
+      "pointer": "/title",
+      "en": "Proto-Potency",
+      "tr": "Proto-Güç",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
+      "pointer": "/text",
+      "en": "There is a rare metal native ^red;only^reset; to ^orange;Proto Worlds^reset; that I am in dire need of. I need 2 ^orange;Protocite Bars^reset;. You can smelt them in a ^orange;Fission Furnace^reset;.",
+      "tr": "^red;Yalnızca^reset; ^orange;Proto Dünyalarda^reset; bulunan nadir bir metale acilen ihtiyacım var. 2 ^orange;Protocite Külçesi^reset; getir. Bunları ^orange;Endüstriyel Fırında^reset; ergitebilirsin.",
+      "section": "v0.10 Science - Physics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Pinned protocitebar tarifi craftingfurnace2 grubunda; vanilla stage adı Industrial Furnace. Kaynaktaki Fission Furnace güncel değil."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
+      "pointer": "/completionText",
+      "en": "Without ^green;protocite^reset; you won't be able to make some of the more essential high-end gear. So stay stocked! In return for that bit of help, perhaps try ^green;this thing^reset; on!",
+      "tr": "^green;Protocite^reset; olmadan bazı önemli üst düzey ekipmanları üretemezsin, bu yüzden stokta tut! Yardımın karşılığında ^green;şunu^reset; bir dene.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Protocite Bars^reset; to the monocled Hylotl at the ^orange;Science Outpost^reset;",
+      "tr": "2 ^orange;Protocite Külçesini^reset; ^orange;Bilim Karakolundaki^reset; monokllü Hylotl'a götür.",
+      "section": "v0.10 Science - Physics",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu 2 Protocite Külçesi ister; kaynak teslim metni adedi yazmıyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_teleportercore.questtemplate",
+      "pointer": "/title",
+      "en": "Shortest distance is zero",
+      "tr": "En Kısa Mesafe Sıfırdır",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_teleportercore.questtemplate",
+      "pointer": "/text",
+      "en": "I am in dire need of your assistance. I need a ^orange;Teleporter Core^reset; to finish my teleporter, but ^green;the courier delivering my supplies is late^reset; and I'm running out of time. You can craft one in your ^orange;Matter Assembler^reset;.",
+      "tr": "Yardımına acilen ihtiyacım var. Işınlayıcımı tamamlamak için bir ^orange;Işınlayıcı Çekirdeği^reset; gerekiyor ama ^green;malzemeleri getiren kurye gecikti^reset; ve zamanım daralıyor. Bir tane ^orange;Madde Birleştiricide^reset; üretebilirsin.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_teleportercore.questtemplate",
+      "pointer": "/completionText",
+      "en": "Without ^orange;Teleporter Cores^reset;, you won't be able to craft several useful technologies. Plus, teleporters are just plain fun!!! Oh, there's the courier with ^green;your replacement core^reset;.",
+      "tr": "^orange;Işınlayıcı Çekirdekleri^reset; olmadan birçok yararlı teknolojiyi üretemezsin. Hem ışınlayıcılar düpedüz eğlenceli! Kurye de geldi, yanında ^green;yerine koyacağın çekirdek^reset; var.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_teleportercore.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Teleporter Core^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Işınlayıcı Çekirdeğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_tritium.questtemplate",
+      "pointer": "/title",
+      "en": "Three is a crowd",
+      "tr": "Üçün Biri Fazla",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_tritium.questtemplate",
+      "pointer": "/text",
+      "en": "You can generate a lot of power with a ^orange;Fission Reactor^reset; in your lab. Show you can make one using your ^orange;Power Station^reset; and bring me some ^orange;Tritium^reset;.",
+      "tr": "Bir ^orange;Atomik Fırında^reset; ^orange;Trityum Çubuğu^reset; üret ve bana ^orange;bir tane^reset; getir.",
+      "section": "v0.10 Science - Physics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Gerçek quest koşulu yalnız 1 tritium ister; pinned tritium tarifi craftingfurnace3/Atomic Furnace grubundadır. Kaynaktaki Fission Reactor hedefi koşulda yok."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_tritium.questtemplate",
+      "pointer": "/completionText",
+      "en": "^orange;Tritium^reset; is actually quite useful, you can throw it in a centrifuge or use it for fuel.",
+      "tr": "^orange;Trityum^reset; oldukça kullanışlıdır; santrifüjde işleyebilir veya yakıt olarak kullanabilirsin.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_tritium.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Tritium^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "1 ^orange;Trityum Çubuğunu^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Physics",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu 1 tritium ister; kaynak teslim metni adedi yazmıyor."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/fissionfurnace/protocitebar.item",
+      "pointer": "/description",
+      "en": "A bar of compressed protocite, found on Protoworlds.",
+      "tr": "Proto Dünyalarda bulunan sıkıştırılmış Protocite'tan yapılmış bir külçe.",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "items/generic/crafting/fissionfurnace/protocitebar.item",
+      "pointer": "/shortdescription",
+      "en": "Protocite Bar",
+      "tr": "Protocite Külçesi",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "items/generic/crafting/isotopes/tritium.item",
+      "pointer": "/description",
+      "en": "A rod of tritium. Product of fission.\n^blue;+^white;3 ^blue;Fuel^reset;",
+      "tr": "Bir trityum çubuğu. Fisyon ürünüdür.\n^blue;+^white;3 ^blue;Yakıt^reset;",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "items/generic/crafting/isotopes/tritium.item",
+      "pointer": "/shortdescription",
+      "en": "Tritium Rod",
+      "tr": "Trityum Çubuğu",
+      "section": "v0.10 Science - Physics"
+    },
+    {
+      "asset": "items/generic/crafting/teleportercore.item",
+      "pointer": "/description",
+      "en": "A rare, hi-tech key component of a personal teleporter.",
+      "tr": "Kişisel bir ışınlayıcının nadir ve ileri teknoloji temel bileşeni.",
+      "section": "v0.10 Science - Physics",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/teleportercore.item",
+      "pointer": "/shortdescription",
+      "en": "Teleporter Core",
+      "tr": "Işınlayıcı Çekirdeği",
+      "section": "v0.10 Science - Physics",
       "qa": {
         "layered_source": true,
         "external_base_verified": true,

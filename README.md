@@ -2,7 +2,7 @@
 
 Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme projesi.
 
-**Durum: v0.9.0 Beta / Ana araştırma sistemleri + Delilik/Metafizik + tutorial görev ailesi / statik QA tamamlandı, oyun içi LQA bekliyor.**
+**Durum: v0.10.0 Beta / Ana araştırma sistemleri + Delilik/Metafizik + Tutorial + Science görevleri / statik QA tamamlandı, oyun içi LQA bekliyor.**
 
 ## Mevcut kapsam
 
@@ -17,6 +17,8 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - Delilik sisteminin temel psiyonik, ruh sağlığı ve madde işleme eşya/makineleri
 - Tutorial görev ailesindeki bağlı görevlerin tamamı (41/41 görev dosyası)
 - Tutorial görevlerinde doğrudan hedef gösterilen temel eşya ve makinelerin envanter adları
+- Science bağlantılı erişilebilir görevlerin tamamı (37/37 benzersiz görev; 35 quest-list + 2 çapraz akış görevi)
+- Science görevlerinde doğrudan hedef gösterilen temel eşya, malzeme ve makinelerin envanter adları
 - Zırh ve Silahlar ağacının doğrudan yönlendirdiği Zırh Atölyesi, Örs yükseltmeleri ve Solunum EPP'si
 - Zanaatkârlığın doğrudan referans verdiği koloni, mutfak, dikiş, biyokimya ve temel üretim istasyonları
 - Güç Sistemlerinin doğrudan bağlı temel üretim, reaktör, pil, santrifüj ve atmosfer makineleri
@@ -29,7 +31,7 @@ Frackin' Universe için topluluk tabanlı, gayriresmî Türkçe yerelleştirme p
 - STL Motoru ve Küçük FTL Motoru oyuncu metinleri
 - Araştırma ekranındaki seçili açıklamalar, fallback metinleri ve Lua içine gömülü sabit UI metinleri
 
-Toplam **1.510 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.525 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
+Toplam **1.714 yapılandırılmış oyuncu metni alanı** ve **15 Lua UI metni**, yani **1.729 yerelleştirilmiş görünür metin birimi** bulunmaktadır. Bu, FU'nun tamamının Türkçe olduğu anlamına gelmez.
 
 ## Anayasa ve terminoloji
 
@@ -55,7 +57,7 @@ Ana Frackin' Universe `.pak` dosyasına veya Workshop klasörüne dokunma.
 
 Ayrıntılı bilgi: `docs/KURULUM.txt`.
 
-> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.9.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
+> **Paket notu:** Güncel beta paketi `dist/FU_Turkce_v0.10.0_Beta.zip` olarak GitHub Actions tarafından statik QA sonrasında otomatik üretilir.
 
 ## Sürüm uyumluluğu
 
@@ -64,7 +66,7 @@ FU sürümü: 6.5.8
 Kaynak commit: 329e714b3fe87571055c8ad7aa38135d199d3317
 ```
 
-Güncel statik QA'da v0.5 ve v0.6 kapsamları korunurken v0.7 için **109 alan pinned FU kaynağından**, **4 vanilla Örs zinciri alanı bağımsız test değerlerinden** ve **2 Solunum EPP alanı vanilla asset kaynağından** doğrulandı. v0.9 tutorial eklemesiyle toplam yapılandırılmış kapsam **1.510 alan / 175 patch asset**tir. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
+Güncel statik QA'da toplam yapılandırılmış kapsam **1.714 alan / 239 patch asset**tir. v0.10 Science eklemesindeki **204 yeni alanın 193'ü pinned FU 6.5.8 kaynağından**, **11'i bağımsız vanilla kaynağından** exact doğrulandı. Araştırma ekranının JSON Patch dışında kalan **1 Lua assetindeki 15 görünür metin** exact kaynak-fragment korumasıyla ayrıca doğrulanır.
 
 `build_validate.py`, kaynak klasörü verilirse Lua override'ını doğrudan o kaynak script üzerinden üretir; beklenen kaynak metinlerinden biri değişmişse build durur.
 
@@ -97,7 +99,17 @@ v0.9'da daha önce çevrilmemiş **25 tutorial görev dosyasında 90 oyuncu metn
 
 Kaynakta oyuncuyu yanlış yönlendiren eski tutorial metinleri gerçek quest koşullarına göre düzeltildi: Extractor IV/V'nin eski Tissue Culture / Genetic Material yönlendirmeleri, `create_silicon` içindeki 10 yerine gerçek 1 Silisyum koşulu, Wooden Centrifuge teslim hedefindeki yanlış Armorworks adı ve Rock Breaker metnindeki bozuk renk kapanışı.
 
-Tutorial dışında bağlı FU görevlerinden **111 görev dosyası** hâlâ çevrilmeyi bekliyor: Science, Outpost, Battle, Other, BYOS ve Exploration zincirleri.
+Science cephesi v0.10 ile kapandı. Klasör-bazlı yol haritasında sırada **75 görev dosyası** bulunuyor: Outpost 45, Battle 13, Other 13, BYOS 3 ve Exploration 1. Science denetiminde görüldüğü gibi, her kategori işlenirken yalnız klasör sayısına değil runtime quest-list/NPC bağlantılarına da bakılacak.
+
+## v0.10 Science Görevleri
+
+Science klasöründe ham olarak **36 questtemplate** bulunmasına rağmen runtime akışı klasör yapısıyla birebir değildir. `fuquest_dna` ve `fuquest_mineral` hiçbir NPC, prerequisite zinciri veya quest-list tarafından çağrılmadığı için bağlantısız legacy görev olarak dağıtım dışı bırakıldı. Buna karşılık `deprecated` klasöründeki `fuquest_powerstation`, `fuquest_battery` ve `fuquest_prototyper` hâlâ Science quest-list tarafından başlatılıyor. Ayrıca `fuquest_biochem` Tutorial alt zincirinden, `create_blackglass` ise Bilim Karakolu NPC'sinden erişilebilir.
+
+Bu nedenle oyuncunun ulaşabildiği benzersiz Science bağlantılı kapsam **37/37 görev** olarak yerelleştirildi: Chemistry 8, Electronics 8, Genetics 9, Mechanical 8 ve Physics 4.
+
+v0.10 eklemesi **204 yapılandırılmış alan / 64 yeni patch asset**tir. Görevlerdeki eski veya hatalı üretim yönlendirmeleri gerçek tarif ve quest koşullarıyla karşılaştırıldı. Öne çıkan düzeltmeler arasında eski Bio Lab yönlendirmesi, Silisyum Devre Kartının eski Madde Birleştirici tarifi, Wiring Tool adı, Genetics laboratuvar kademe hataları, eski Fission Furnace adı ve Tritium görevindeki artık geçerli olmayan Fisyon Reaktörü hedefi bulunur.
+
+Yeni alanların tamamı kaynak/provenans kontrolünden geçti: **193/193 pinned FU alanı + 11/11 bağımsız vanilla alanı**, toplam **204/204 PASS**. Patch pairing **204 test + 204 replace PASS**. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca yapılmalıdır.
 
 ## Yol haritası
 
@@ -116,6 +128,12 @@ Tutorial dışında bağlı FU görevlerinden **111 görev dosyası** hâlâ çe
 - [x] v0.7 geriye dönük aktif-düğüm / ölü-string QA
 - [x] Delilik araştırma ağacı
 - [x] Tutorial görev ailesi
+- [x] Science görev zincirleri
+- [ ] Outpost görev zincirleri
+- [ ] Battle görev zincirleri
+- [ ] Other görev zincirleri
+- [ ] BYOS kalan görevleri
+- [ ] Exploration görev zinciri
 - [ ] Eşya ve makine açıklamalarının geniş kapsamlı çevirisi
 - [ ] Görevlerin kalan bölümü
 - [ ] Oyun içi tam LQA ve taşma kontrolleri

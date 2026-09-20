@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.7.0 BETA | STATİK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.10.0 BETA | STATİK QA KONTROL ÖZETİ
 
-1276 aktif yapılandırılmış oyuncu metni alanı / 113 patch asset.
+1714 aktif yapılandırılmış oyuncu metni alanı / 239 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 1291 yerelleştirilmiş görünür metin birimi / 114 hedef asset.
+TOPLAM: 1729 yerelleştirilmiş görünür metin birimi / 240 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -23,6 +23,15 @@ KAPSAM
 - Zanaatkârlık makineleri: 131
 - Zırh ve Silahlar: 95
 - Zırh ve Silahlar makineleri: 20
+- Delilik: 63
+- Delilik eşya ve makineleri: 40
+- v0.9 Tutorial Görevleri: 90
+- v0.9 Tutorial Hedefleri: 41
+- v0.10 Science - Chemistry: 54
+- v0.10 Science - Electronics: 36
+- v0.10 Science - Genetics: 51
+- v0.10 Science - Mechanical: 41
+- v0.10 Science - Physics: 22
 
 v0.5 YENİ İÇERİK
 - fu_power araştırma ağacı: 39 düğüm / 77 aktif oyuncu metni.
@@ -208,3 +217,44 @@ v0.9 kaynak/provenans doğrulaması: PASS (131/131).
 Proje yapılandırılmış alan bütünlüğü: PASS (1510 benzersiz alan).
 Oyun içi LQA: BEKLİYOR.
 
+v0.10 SCIENCE GÖREVLERİ BETA QA
+- Science ham klasör kapsamı: 36 questtemplate.
+- Bağlantısız legacy Science dosyası: fuquest_dna, fuquest_mineral (2; dağıtım dışı + build guard).
+- fu_sciences quest-list kapsamı: 35/35.
+- Quest-list dışında erişilebilir Science bağlantılı görev: fuquest_biochem ve create_blackglass.
+- Oyuncuya erişilebilir benzersiz Science bağlantılı görev: 37/37.
+- Chemistry: 54 yeni alan.
+- Electronics: 36 yeni alan.
+- Genetics: 51 yeni alan.
+- Mechanical: 41 yeni alan.
+- Physics: 22 yeni alan.
+- v0.10 toplam ekleme: 204 yapılandırılmış alan / 64 yeni patch asset.
+- Pinned FU exact-source: 193/193 PASS.
+- Bağımsız vanilla exact-source: 11/11 PASS.
+- Birleşik kaynak/provenans: 204/204 PASS.
+- Patch eşleşmesi: 204 test + 204 replace PASS.
+- Yeni Science patch asset varlığı: 64/64 PASS.
+- Erişilebilir Science görev patch kapsamı: 37/37 PASS.
+- Dead Science patch sızıntısı: 0.
+- Proje genelinde benzersiz asset/pointer: 1714/1714 PASS.
+- Boş Türkçe değer: 0.
+- Renk/kontrol/placeholder/sayı bütünlüğü: PASS; yalnızca belgeli semantik kaynak düzeltmeleri.
+- Proje toplamı: 1714 yapılandırılmış alan + 15 Lua = 1729 yerelleştirilmiş görünür birim.
+- Toplam patch asset: 239.
+- Oyun içi LQA / font / panel taşması / gerçek görev akışı: BEKLİYOR.
+
+ÖNEMLİ v0.10 KAYNAK DÜZELTMELERİ
+- create_plastic: eski Bio Lab yönlendirmesi -> güncel Kimya Laboratuvarı üretim zinciri.
+- create_circuitboard: eski Madde Birleştirici tarifi -> gerçek Atomik Fırın tarifi.
+- fuquest_battery: eski Wiring Tool adı -> gerçek Tamirci Anahtarı envanter adı.
+- Genetics görevleri: Sera/Botanik Laboratuvarı/Gen Tasarım Laboratuvarı kademeleri gerçek designlab tarifleriyle eşlendi.
+- create_atmosregulator: Atmosphere Regulator -> gerçek Atmospheric Regulator / Atmosfer Düzenleyici.
+- create_protocite: eski Fission Furnace -> gerçek Endüstriyel Fırın.
+- create_tritium: koşulda olmayan Fisyon Reaktörü hedefi kaldırıldı; gerçek 1 Trityum Çubuğu / Atomik Fırın akışı kullanıldı.
+
+SONUÇ
+v0.10 statik Anayasa QA: PASS.
+v0.10 Science kaynak/provenans doğrulaması: PASS (204/204).
+Science erişilebilir görev kapsamı: PASS (37/37).
+Proje yapılandırılmış alan bütünlüğü: PASS (1714 benzersiz alan).
+Oyun içi LQA: BEKLİYOR.
