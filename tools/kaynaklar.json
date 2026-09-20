@@ -76,7 +76,7 @@
       "url": "https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/radiomessages/fu_quests.radiomessages"
     }
   ],
-  "translation_version": "0.13.2-beta",
+  "translation_version": "0.13.3-beta",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "assets": {
     "zb/researchTree/fu_agriculture.config": "c5d1acc20ce35c8220cff577efb459c8b41ff54f",
@@ -346,9 +346,47 @@
     "objects/scienceoutpost/fugemshop/fugemshop.object": "cb50ba6ef6437fbac3b903d8bf6c181b0f672e1b",
     "objects/scienceoutpost/kirhosshop/kirhosshop.object": "bd02e92a386f8c498eba6d4f0f79afe1a94eadc2",
     "objects/scienceoutpost/radienshop/silene_shop.object": "d9ee139e6afcd354fc6f37297ed51ec5829b40c6",
-    "objects/scienceoutpost/fushadowstore/fushadowstore.object": "09b4474ac201c99d4415f4e9e4ca5a0c4ac78862"
+    "objects/scienceoutpost/fushadowstore/fushadowstore.object": "09b4474ac201c99d4415f4e9e4ca5a0c4ac78862",
+    "objects/bees/ironcentrifuge/ironcentrifuge.object": "ba5611799835fa49d6f7593737641d99e32548e7",
+    "interface/windowconfig/beerefuge.config": "16e2a6cdfb87efdf6f7566d311aeeeac4fbd0e47",
+    "items/generic/crafting/chemlab/aliencompound.item": "a84d15fd3694f88baaa42c842a13da238549faea",
+    "items/generic/crafting/precursor/precursorfluid.item": "5690a8576e94f32ca0f1d1648cf4c3354616e157",
+    "items/liquids/shadowgasliquid.liqitem": "879db5c9b66a96f4b61ec270ffd9b4547c9d85e2",
+    "objects/bees/beerefuge/beerefuge.object": "9921259f853f873cc4a9c7ee301ff6b56258b4ea",
+    "objects/bees/beestation/beestation.object": "aa4d0e3c3ae9db3c412a432195c1b4e747bdff4e",
+    "objects/crafting/designlab/designlab.object": "dc19addb99e432b2f6991d3f460232a5465d19b1",
+    "objects/crafting/fu_growingtray/fu_growingtray.object": "cfc002cda5c26594c80c814a68c9846e70610632",
+    "objects/crafting/matterassembler/prototyper.object": "eb6360266e1213ba5baf7a1d11fa1c1e72b9ec3e",
+    "objects/crafting/powerstation/powerstation.object": "18d0078826ecb1c7b65811918f63022c20507194",
+    "objects/crafting/sproutingtable/sproutingtable.object": "f5f98c51ebee54e17139e7f9f64059ee7b5250cc",
+    "objects/crafting/xenostation/xenolab.object": "3e0b7463c83510daab06fd8cac32c9a4cfbc26eb",
+    "objects/crafting/xenostationadvnew/xenostationadvnew.object": "bcf26295fb350aef4dddd17c21bcf0e9c243df8b",
+    "objects/power/irongrowingtray/irongrowingtray.object": "c1275e42784796bef362df3965aa71a14d49335d",
+    "objects/power/isn_hydroponicstray/isn_hydroponicstray.object": "aaec96fe15afd65a3d4b8c9560c4ca28a8a260f8",
+    "objects/ship/fu_ftldrive/fu_ftldrivesmall.object": "9958c4d9c36b503cdcc3225abf3aee9cb250b20e",
+    "quests/fu_questlines/byos/fu_byosftldrive.questtemplate": "184a8049cef9d7392516ba70f4e0f3023cab3b9a",
+    "quests/fu_questlines/tutorial/start_basics.questtemplate": "f74d946c6f10b37d415d2e2a192cabf6db943b5b",
+    "quests/fu_questlines/tutorial/vinj/create_alchemy.questtemplate": "1af14feecf170ad03a682632a0b578d1f2db912e",
+    "quests/fu_questlines/tutorial/vinj/create_electronics.questtemplate": "6869ec31c708b323b4ecd09072f559694f049ab8",
+    "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate": "860e8d99149dda56af9bc4148a76a116de2665e9",
+    "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate": "826c053f5aafd54a018d62e5c1025ee99882e044",
+    "quests/fu_questlines/tutorial/vinj/create_matterassembler.questtemplate": "2e7b55fcf1dbbcdd2a8d64fc42071696d36c8367",
+    "quests/fu_questlines/tutorial/vinj/create_matterassembler2.questtemplate": "06fdab0060f40b49d2621632a439bcd753aa3c6f",
+    "quests/fu_questlines/tutorial/vinj/create_sprouting.questtemplate": "1d070f81ed65af3000bff905e4e1d609626a6ab6",
+    "quests/fu_questlines/tutorial/vinj/create_tinkertable.questtemplate": "c889824844c9e38d5accbeabbab6f8ed09ab6b9d",
+    "quests/fu_questlines/tutorial/vinj/fu_scienceoutpost.questtemplate": "912f5a39da357a1d1c1c433ee1bf9e1ea80554a1",
+    "quests/fu_questlines/tutorial/vinj/fu_start_MA.questtemplate": "19ef6ba860fa2a50f23a95eb513d9bc558bef84d",
+    "quests/fu_questlines/tutorial/vinj/fuquest_farming1.questtemplate": "448293faae304f88021554eaf0ec199bae62aaeb",
+    "quests/fu_questlines/tutorial/vinj/fuquest_farming2.questtemplate": "625fd962ac258c4fba2c1f6df67e284933ff81da",
+    "quests/fu_questlines/tutorial/vinj/fuquest_farming3.questtemplate": "513c4c2f64aecf75f0a59bf17d11a9fccbd591af",
+    "quests/fu_questlines/tutorial/vinj/fuquest_farming4.questtemplate": "ba55fbdfdc9b5d141d8d21a2089370ed1fd9ed26",
+    "quests/fu_questlines/tutorial/vinj/fuquest_xeno.questtemplate": "78fb61265f1b8ba0c940beccbc75f23c254a51f5",
+    "radiomessages/fu_quests.radiomessages": "d4b1d1466eb69f9dff6fd7234c2b171f6cb2eb0c",
+    "zb/researchTree/data.config": "73e8730d81b5d3aeefc4c78a1970684a984dd96a",
+    "zb/researchTree/fu_geology.config": "49bc6bcdd609d9f73d96dbd218db2c251e1fe994",
+    "zb/researchTree/researchTree.config": "5f66d5a7f42d3c268690a914840a853118712b73"
   },
-  "validation_note": "v0.13.2 ikinci geriye dönük QA: 16 Mech yazımı + Arı Barınağı karma eylem etiketi düzeltildi. Kaynak İngilizce değerleri, asset/pointer kapsamı ve provenans değişmedi. Toplam 1929 structured + 15 Lua; 322 patch asset. Oyun içi LQA bekliyor.",
+  "validation_note": "v0.13.3 üçüncü geriye dönük QA: eski v0.1-v0.4 kapsamındaki 37 FU assetin eksik SHA provenansı tamamlandı; Demir Santrifüj ve Sifter tutorial hedefleri envanterle eşlendi; 3 runtime dummy alan çıkarıldı; vanilla/eldritch sızıntıları temizlendi. Toplam 1934 structured + 15 Lua; 325 patch asset. Oyun içi LQA bekliyor.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
@@ -501,6 +539,27 @@
         "blob_sha": "58a61ea338d3a6f57766b92701e3c5401838fc68"
       },
       "note": "v0.11 Outpost Arıcılık görevindeki Boş Şişe envanter adıyla eşleştirmek için vanilla kaynaktan exact doğrulandı."
+    },
+    "items/materials/sand.matitem": {
+      "fu_source_patch": "items/materials/sand.matitem.patch",
+      "fu_github_blob_sha": "1d64114a4e733875dbcbb0be74cb6ec413934593",
+      "fu_source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/materials/sand.matitem",
+        "blob_sha": "e0b7a64f636ddd980277fbe2b1d3736af6d5ea52"
+      },
+      "note": "Sifter tutorialında adı geçen Loose Silt. FU final description değerini sand.matitem.patch ile değiştirir; shortdescription vanilla tabandan doğrulanır."
+    },
+    "items/materials/gravel.matitem": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/materials/gravel.matitem",
+        "blob_sha": "38df8a475e3cc0c7779a9129030e8686a69fd786"
+      },
+      "note": "Sifter tutorialında adı geçen Gravel hedefini Çakıl envanter adıyla eşlemek için vanilla açıklama/kısa ad exact doğrulandı."
     }
   }
 }

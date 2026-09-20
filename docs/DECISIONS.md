@@ -346,3 +346,14 @@
 - Teknik alan/pointer/provenans değişmedi; tur yalnız Türkçe hedef metin ve regresyon güvenliği düzeltmesidir.
 - Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
 
+## 2026-09-20 - v0.13.3 üçüncü geriye dönük QA
+
+- `Replace Me` değeri crafting listelerindeki runtime `listTemplate` dummy etiketidir; gerçek eşya adı çalışma anında bu alanın yerine yazılır. Oyuncuya ait içerik olmadığı için Arı Barınağı, Gemi Bileşeni Birleştirici ve Psiyonik Tezgâhı kataloglarından **3 alan çıkarıldı** ve yeniden eklenmesini engelleyen build guard eklendi.
+- Oyuncuya dönük metindeki **vanilla** ifadesi **ana oyun** olarak yerelleştirildi. İngilizce bilmeden anlam takibi ilkesi gereği meta terim LOCKED.
+- Generic **eldritch** sıfatı mevcut Tarım kullanımındaki **tekinsiz** ile birleştirildi; iki İngilizce sızıntı temizlendi.
+- Sifter tutorialında `silt` İngilizce kalmış, `Gravel` ise görevde **Çakıl** olmasına rağmen envanterde İngilizceydi. Vanilla envanter adları bağımsız Starbound kaynağından doğrulandı ve **Loose Silt -> Gevşek Mil**, **Gravel -> Çakıl** olarak eşlendi.
+- **Silt -> Mil** kararı Türkçe jeoloji/zemin terminolojisindeki yerleşik kullanıma göre alındı. Görev metni envanter adıyla birebir takip edilebilmesi için **Gevşek Mil** kullanır.
+- `sand.matitem` final açıklaması FU'nun `items/materials/sand.matitem.patch` katmanından; kısa adı vanilla `sand.matitem` tabanından exact doğrulandı. `gravel.matitem` açıklama ve kısa adı vanilla kaynaktan exact doğrulandı.
+- Eski `create_alchemy`, `create_electronics`, `create_greenhouse`, `create_tinkertable` teslim metinlerinde daha önce doğru yapılmış kaynak/ID düzeltmelerine eksik QA provenans notları eklendi.
+- Oyun içi LQA, font ve panel taşma kontrolleri ayrıca bekliyor.
+- Tutorial `create_woodencentrifuge` tamamlanma metni gerçek bir sonraki yükseltme olan `ironcentrifuge` nesnesini **Iron Centrifuge** adıyla yönlendiriyor. Eski Türkçe yalnız **Santrifüj** diyerek envanter adını kaybediyordu; **Iron Centrifuge -> Demir Santrifüj** LOCKED edildi ve nesnenin görünür envanter alanları aynı pakette çevrildi.

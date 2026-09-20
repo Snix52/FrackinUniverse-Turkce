@@ -1,8 +1,8 @@
-FU TÜRKÇE v0.13.0 BETA | STATİK QA KONTROL ÖZETİ
+FU TÜRKÇE v0.13.3 BETA | STATİK QA KONTROL ÖZETİ
 
-1929 aktif yapılandırılmış oyuncu metni alanı / 322 patch asset.
+1934 aktif yapılandırılmış oyuncu metni alanı / 325 patch asset.
 15 Lua UI metni / 1 ham override asset.
-TOPLAM: 1944 yerelleştirilmiş görünür metin birimi / 323 hedef asset.
+TOPLAM: 1949 yerelleştirilmiş görünür metin birimi / 326 hedef asset.
 
 KAPSAM
 - Araştırma arayüzü: 11 yapılandırılmış + 15 Lua UI metni
@@ -11,12 +11,12 @@ KAPSAM
 - Tezgâhlar: 14
 - Başlangıç telsiz mesajları: 26
 - Tarım: 99
-- Tarım makineleri: 61
+- Tarım makineleri: 60
 - Tarım görevleri: 23
 - Kimya: 67
 - Kimya makineleri ve kaynakları: 32
 - Mühendislik: 137
-- Mühendislik makineleri ve kaynakları: 61
+- Mühendislik makineleri ve kaynakları: 60
 - Güç Sistemleri: 77
 - Güç Sistemleri makineleri: 139
 - Zanaatkârlık: 153
@@ -24,7 +24,7 @@ KAPSAM
 - Zırh ve Silahlar: 95
 - Zırh ve Silahlar makineleri: 20
 - Delilik: 63
-- Delilik eşya ve makineleri: 40
+- Delilik eşya ve makineleri: 39
 - v0.9 Tutorial Görevleri: 90
 - v0.9 Tutorial Hedefleri: 41
 - v0.10 Science - Chemistry: 54
@@ -386,4 +386,25 @@ v0.13.2 İKİNCİ GERİYE DÖNÜK QA
 SONUÇ
 v0.13.2 ikinci retro statik QA: PASS (GitHub Actions run 35499671787).
 Teknik kapsam/provenans: DEĞİŞMEDİ.
+
+v0.13.3 ÜÇÜNCÜ GERİYE DÖNÜK QA
+- Başlangıç: 1929 structured + 15 Lua / 322 patch asset.
+- Runtime listTemplate dummy "Replace Me" alanı çıkarıldı: 3.
+- İngilizce/meta sızıntısı: vanilla -> ana oyun; generic eldritch -> tekinsiz.
+- Sifter hedefleri: Loose Silt -> Gevşek Mil; Gravel -> Çakıl.
+- Wooden Centrifuge takip zinciri: Iron Centrifuge -> Demir Santrifüj.
+- Demir Santrifüj envanteri: description + shortdescription + subtitle + category = 4 yeni pinned FU alanı.
+- Loose Silt / Gravel envanteri: 4 vanilla/layered alan.
+- Net structured alan: 1934.
+- Görünür toplam: 1949 (1934 structured + 15 Lua).
+- Patch asset: 325.
+- Yeni patch asset: 3.
+- Yeni kaynak/provenans: 8/8 (4 pinned FU + 4 vanilla/layered).
+- Duplicate: 0.
+- Boş Türkçe: 0.
+- Oyun içi LQA: BEKLİYOR.
+
+SONUÇ
+v0.13.3 statik katalog/provenans hazırlığı: PASS.
+GitHub Actions nihai build/QA: BEKLİYOR.
 
