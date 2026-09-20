@@ -89,7 +89,7 @@
     "v05_new_source_pointer_validation": "PASS (216/216 active fields across 33 source assets)",
     "v05_build_allowlist": "PASS (216/216 active paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS (v0.30 catalog/tool full-source local static verification; GitHub Actions package build pending)",
+    "build_allowlist_current_scope": "PASS (v0.30 catalog/tool full-source local static verification and GitHub Actions package build)",
     "craftsmanship_source_pointer_validation": "PASS (153/153 active tree fields; runtime-unused default pair and workbenchatechy excluded)",
     "craftsmanship_patch_pairing": "PASS (153 test + 153 replace)",
     "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
@@ -188,7 +188,7 @@
     "v21_weapon_build_allowlist": "PASS (121 exact weapon assets; shortdescription and description only)",
     "v21_out_of_scope_weapon_guard": "PASS (unlisted Titanium weapon rejected before patch generation)",
     "v21_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "github_actions_build_and_zip": "PASS (automated package commit 3f08390db7b6a9d4100b52b20ec1fc6a37cc3563)",
+    "github_actions_build_and_zip": "PASS (automated package commit 855ed270b82950302d574bb37b443baedf6ea340)",
     "v022_tier3_research_recipe_coverage": "PASS (158/158 combat assets across six active Tier 3 nodes; 1 previously covered + 157 newly localized)",
     "v022_master_manipulator_inventory_consistency": "PASS (2/2 reachable inventory assets; 5/5 visible fields use Usta Manipülatör)",
     "v022_quest_prose_correction": "PASS (combatmaneuvering1 text + completionText use Tuhaf eserin)",
@@ -1061,9 +1061,13 @@
       "unzip_test": "PASS"
     },
     "github_actions_run": null,
-    "package_commit": null,
-    "package_zip": null,
+    "package_commit": "855ed270b82950302d574bb37b443baedf6ea340",
+    "package_zip": {
+      "path": "dist/FU_Turkce_v0.30.0_Beta.zip",
+      "bytes": null,
+      "git_blob_sha": "87bb96d611d41e72601e83e15b18bfe85da7c019"
+    },
     "in_game_lqa": "NOT PERFORMED",
-    "github_actions_evidence": "PENDING"
+    "github_actions_evidence": "PASS (automated package commit 855ed270b82950302d574bb37b443baedf6ea340)"
   }
 }
