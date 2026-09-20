@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.21.0-beta",
-  "note": "v0.21 erken oyun silahları: aktif Zırh ve Silahlar araştırma ağacındaki bonegear, irongear, telebriumgear ve tungstengear düğümlerinin açtığı 124 silah doğrulandı. Önceden kapsanan 3 silah korundu; kalan 121 erişilebilir silahta 242 görünür alan yerelleştirildi. Toplam 3613 structured + 15 Lua, 885 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.22.0-beta",
+  "note": "v0.22 Kademe 3 savaş ekipmanı ve görev-eşya tutarlılığı: aktif Zırh ve Silahlar araştırma ağacındaki altı Kademe 3 düğümünün açtığı, gerçek üretim tarifi bulunan 158 combat asseti doğrulandı. Önceden kapsanan 1 silah korundu; 157 yeni assette 314 görünür alan yerelleştirildi. Usta Manipülatör zincirinde 2 asset/5 alan eşitlendi ve iki görev cümlesi düzeltildi. Toplam 3932 structured + 15 Lua, 1044 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -24384,14 +24384,14 @@
       "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
       "pointer": "/text",
       "en": "The strange artifact washes some sort of energy over you when you step near. You feel stronger! ^orange;[You can now double-tap left or right to activate a short dodge^reset;]",
-      "tr": "Tuhaf eser yanına yaklaştığında üzerine bir çeşit enerji yayıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin^reset;]",
+      "tr": "Tuhaf eserin yanına yaklaştığında üzerine bir çeşit enerji yayıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin^reset;]",
       "section": "v0.20 Aktif özel görevler"
     },
     {
       "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
       "pointer": "/completionText",
       "en": "The strange artifact washes some sort of energy over you when you step near. You feel stronger! ^orange;[You can now double-tap left or right to activate a short dodge]^reset;",
-      "tr": "Tuhaf eser yanına yaklaştığında üzerine bir çeşit enerji yayıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin]^reset;",
+      "tr": "Tuhaf eserin yanına yaklaştığında üzerine bir çeşit enerji yayıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin]^reset;",
       "section": "v0.20 Aktif özel görevler",
       "qa": {
         "allow_control_fix": true
@@ -26209,6 +26209,2239 @@
       "en": "A poisonous lash made from telebrium. Not for recreational use.",
       "tr": "Telebriumdan yapılmış zehirli bir kırbaç. Eğlence amaçlı değildir.",
       "section": "v0.21 Erken oyun silahları"
+    },
+    {
+      "asset": "items/augments/quest/humanartifact.augment",
+      "pointer": "/shortdescription",
+      "en": "^cyan;Broken Master Manipulator^reset;",
+      "tr": "^cyan;Kırık Usta Manipülatör^reset;",
+      "section": "v0.22 Görev-eşya tutarlılığı"
+    },
+    {
+      "asset": "items/augments/quest/humanartifact.augment",
+      "pointer": "/description",
+      "en": "+^green;20^reset;% Ammo Mastery\nMax Food x^green;1.5^reset;,+^green;20^reset;% Charisma\n+^green;2^reset;% Crit Chance\n+^green;15^reset;% Shotgun Mastery^reset;",
+      "tr": "+^green;20^reset;% Cephane Ustalığı\nAzami Doygunluk x^green;1.5^reset;,+^green;20^reset;% Karizma\n+^green;2^reset;% Kritik Şansı\n+^green;15^reset;% Pompalı Tüfek Ustalığı^reset;",
+      "section": "v0.22 Görev-eşya tutarlılığı"
+    },
+    {
+      "asset": "items/augments/quest/humanartifact.augment",
+      "pointer": "/augment/displayName",
+      "en": "Master Manipulator",
+      "tr": "Usta Manipülatör",
+      "section": "v0.22 Görev-eşya tutarlılığı"
+    },
+    {
+      "asset": "items/tools/fumastermanipulator.beamaxe",
+      "pointer": "/shortdescription",
+      "en": "^#b84cbc;Master Manipulator^reset;",
+      "tr": "^#b84cbc;Usta Manipülatör^reset;",
+      "section": "v0.22 Görev-eşya tutarlılığı"
+    },
+    {
+      "asset": "items/tools/fumastermanipulator.beamaxe",
+      "pointer": "/description",
+      "en": "God-like power to reshape matter.",
+      "tr": "Maddeyi yeniden şekillendiren tanrısal bir güç.",
+      "section": "v0.22 Görev-eşya tutarlılığı"
+    },
+    {
+      "asset": "items/active/shields/gladiatorshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gladiator Shield",
+      "tr": "Gladyatör Kalkanı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/gladiatorshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+4 Defense^reset;",
+      "tr": "^green;+4 Savunma^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/nightar2.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Battler Shield",
+      "tr": "Savaşçı Kalkanı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/nightar2.activeitem",
+      "pointer": "/description",
+      "en": "^green;+10% Shield Bash^reset;",
+      "tr": "^green;+10% Kalkan Darbesi^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/penumbriteshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Shield",
+      "tr": "Penumbrite Kalkan",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/penumbriteshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+12% Energy Regen^reset;",
+      "tr": "^green;+12% Enerji Yenilenmesi^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/titaniumshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Shield",
+      "tr": "Titanyum Kalkan",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/titaniumshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;Acid Protection, +5 Shieldbash Push^reset;",
+      "tr": "^green;Asit Koruması, +5 Kalkan Darbesi İtme Gücü^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/zerchesiumshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Shield",
+      "tr": "Zerchesium Kalkan",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/zerchesiumshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;Fire Protection, +7 Shieldbash Push, 0.2 Regen^reset;",
+      "tr": "^green;Ateş Koruması, +7 Kalkan Darbesi İtme Gücü, 0.2 Yenilenme^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/penumbriteboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Boomerang",
+      "tr": "Penumbrite Bumerang",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/penumbriteboomerang.activeitem",
+      "pointer": "/description",
+      "en": "Honed to a sharp, crackling edge.",
+      "tr": "Çıtırdayan, keskin bir ağız verilmiş.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/titaniumboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Boomerang",
+      "tr": "Titanyum Bumerang",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/titaniumboomerang.activeitem",
+      "pointer": "/description",
+      "en": "Great for beer parties and death-causing.",
+      "tr": "Bira partileri ve ölüm saçmak için harika.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/zerchesiumboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Boomerang",
+      "tr": "Zerchesium Bumerang",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/zerchesiumboomerang.activeitem",
+      "pointer": "/description",
+      "en": "Cold as ice, swift and deadly.",
+      "tr": "Buz gibi soğuk, hızlı ve ölümcül.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/carbonbow/carbonbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Hunting Bow",
+      "tr": "Karbon Av Yayı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/carbonbow/carbonbow.activeitem",
+      "pointer": "/description",
+      "en": "A carbon hunting bow, monsters killed with a bow drop tasty meat.",
+      "tr": "Karbon bir av yayı; yayla öldürülen canavarlar leziz et düşürür.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/carboncrossbow/carboncrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Crossbow",
+      "tr": "Karbon Arbalet",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/carboncrossbow/carboncrossbow.activeitem",
+      "pointer": "/description",
+      "en": "Packs serious punch.",
+      "tr": "Ciddi bir darbe gücüne sahiptir.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/carbonstynger/carbonstynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Stynger",
+      "tr": "Karbon Stynger",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/carbonstynger/carbonstynger.activeitem",
+      "pointer": "/description",
+      "en": "Pump action for turning enemies into pin cushions.",
+      "tr": "Düşmanları iğne yastığına çevirmek için pompalı mekanizma.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/penumbrabow/penumbrabow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Enigma Bow",
+      "tr": "Muamma Yayı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/penumbrabow/penumbrabow.activeitem",
+      "pointer": "/description",
+      "en": "Made of penumbrite and rage.",
+      "tr": "Penumbrite ve öfkeden yapılmış.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/protobow/protobow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protocite Bow",
+      "tr": "Protocite Yayı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/protobow/protobow.activeitem",
+      "pointer": "/description",
+      "en": "Made of protocite and other high quality materials.",
+      "tr": "Protocite ve başka yüksek kaliteli malzemelerden yapılmış.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/zerchesiumbow/zerchesiumbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Bow",
+      "tr": "Zerchesium Yayı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/zerchesiumbow/zerchesiumbow.activeitem",
+      "pointer": "/description",
+      "en": "Full of frosty menace.\n^cyan;Slows enemies^reset;",
+      "tr": "Ayaz gibi bir tehditle dolu.\n^cyan;Düşmanları yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/zerchesiumcrossbow/zerchesiumcrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Crossbow",
+      "tr": "Zerchesium Arbalet",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/zerchesiumcrossbow/zerchesiumcrossbow.activeitem",
+      "pointer": "/description",
+      "en": "A crossbow, probably designed for hunting.",
+      "tr": "Muhtemelen avlanmak için tasarlanmış bir arbalet.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/zerchesiumstynger/zerchesiumstynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Stynger",
+      "tr": "Zerchesium Stynger",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/zerchesiumstynger/zerchesiumstynger.activeitem",
+      "pointer": "/description",
+      "en": "Makes blizzards out of frozen bolts.",
+      "tr": "Donmuş oklarla tipi koparır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/funeochakram.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Proto Chakram",
+      "tr": "Proto Çakram",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/funeochakram.activeitem",
+      "pointer": "/description",
+      "en": "Crackling with destructive energy.",
+      "tr": "Yıkıcı enerjiyle çıtırdıyor.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/penumbritechakram.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Chakram",
+      "tr": "Penumbrite Çakram",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/penumbritechakram.activeitem",
+      "pointer": "/description",
+      "en": "Precise and powerful, and shiny!",
+      "tr": "Hassas, güçlü ve parlak!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/titaniumchakram.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Chakram",
+      "tr": "Titanyum Çakram",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/titaniumchakram.activeitem",
+      "pointer": "/description",
+      "en": "Crackling with destructive energy.",
+      "tr": "Yıkıcı enerjiyle çıtırdıyor.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/zerchesiumchakram.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Chakram",
+      "tr": "Zerchesium Çakram",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/chakram/zerchesiumchakram.activeitem",
+      "pointer": "/description",
+      "en": "Zerchesium power of crystalline destruction.",
+      "tr": "Kristalimsi yıkımın Zerchesium gücü.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/fist/penumbritefist.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Thresher",
+      "tr": "Penumbrite Biçici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/fist/penumbritefist.activeitem",
+      "pointer": "/description",
+      "en": "Sharp, puncturing edge provides fun for all.",
+      "tr": "Keskin, delici ağzıyla herkese eğlence sunar.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/fist/zerchesiumfist.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Fistblade",
+      "tr": "Zerchesium Yumruk Bıçağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/fist/zerchesiumfist.activeitem",
+      "pointer": "/description",
+      "en": "Chillingly effective. Freeze'em dead.",
+      "tr": "Ürpertici derecede etkili. Dondurup öldürür.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/carbonaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Hatchet",
+      "tr": "Karbon Nacak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/carbonaxe.activeitem",
+      "pointer": "/description",
+      "en": "Sturdy, and ideal for survivalists.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Sağlamdır ve hayatta kalma uzmanları için idealdir.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/penumbriteaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Axe",
+      "tr": "Penumbrite Balta",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/penumbriteaxe.activeitem",
+      "pointer": "/description",
+      "en": "Flows with shadow energy.",
+      "tr": "Gölge enerjisiyle akıyor.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/zerchesiumaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Axe",
+      "tr": "Zerchesium Balta",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/zerchesiumaxe.activeitem",
+      "pointer": "/description",
+      "en": "Nearly unbreakable.",
+      "tr": "Neredeyse kırılmaz.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/hylotlgreatscion.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Great Scion",
+      "tr": "Büyük Varis",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/hylotlgreatscion.activeitem",
+      "pointer": "/description",
+      "en": "A traditional Hylotl weapon of war.\n^cyan;Huge striking power. Cold edged^reset;.\n^green;Slowing Alt^reset;",
+      "tr": "Geleneksel bir Hylotl savaş silahı.\n^cyan;Muazzam darbe gücü. Soğuk ağızlı^reset;.\n^green;Alternatif atış yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/metalliccleaver.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Junk Cleaver",
+      "tr": "Hurda Satır",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/metalliccleaver.activeitem",
+      "pointer": "/description",
+      "en": "Junk forged into deadly weaponry.",
+      "tr": "Ölümcül bir silaha dönüştürülmüş hurda.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/metallicsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Junk Blade",
+      "tr": "Hurda Bıçak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/metallicsword.activeitem",
+      "pointer": "/description",
+      "en": "A heavy blade made of junk.",
+      "tr": "Hurdadan yapılmış ağır bir bıçak.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/penumbritebroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Broadsword",
+      "tr": "Penumbra Büyük Kılıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/penumbritebroadsword.activeitem",
+      "pointer": "/description",
+      "en": "A keen edge for slashing things to pieces.",
+      "tr": "Her şeyi parçalara ayıracak keskin bir ağız.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/titaniumbroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Broadsword",
+      "tr": "Titanyum Büyük Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/titaniumbroadsword.activeitem",
+      "pointer": "/description",
+      "en": "A large, heavy titanium blade.",
+      "tr": "Büyük, ağır bir titanyum bıçak.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/zerchesiumbroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Broadsword",
+      "tr": "Zerchesium Büyük Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/zerchesiumbroadsword.activeitem",
+      "pointer": "/description",
+      "en": "Attack with absolute certainty that your foe will fall.",
+      "tr": "Düşmanının düşeceğinden kesinlikle emin olarak saldır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/carbondagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Knife",
+      "tr": "Karbon Bıçak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/carbondagger.activeitem",
+      "pointer": "/description",
+      "en": "Sturdy, and keeps a keen edge.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Sağlamdır ve keskinliğini korur.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/nightardagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nightarian Knife",
+      "tr": "Nightar Bıçağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/nightardagger.activeitem",
+      "pointer": "/description",
+      "en": "Dull and nearly lifeless, but still dangerous. Upgrade for lethality.",
+      "tr": "Kör ve neredeyse cansız ama hâlâ tehlikeli. Ölümcüllük için yükselt.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/penumbriredagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Dagger",
+      "tr": "Penumbra Hançeri",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/penumbriredagger.activeitem",
+      "pointer": "/description",
+      "en": "Forged from lustrous penumbrite.",
+      "tr": "Parlak Penumbritedan dövülmüş.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/zerchesiumknife.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Knife",
+      "tr": "Zerchesium Bıçak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/zerchesiumknife.activeitem",
+      "pointer": "/description",
+      "en": "Impale and stab with razor-sharp zerchesium steel.",
+      "tr": "Jilet keskinliğindeki Zerchesium çeliğiyle sapla ve del.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailpenumbrite.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Striker",
+      "tr": "Penumbrite Ezici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailpenumbrite.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, cumbersome and awesome.",
+      "tr": "Ağır, hantal ve muhteşem.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailtitanium.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Striker",
+      "tr": "Titanyum Ezici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailtitanium.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;",
+      "tr": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailzerchesium.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Striker",
+      "tr": "Zerchesium Ezici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flailzerchesium.activeitem",
+      "pointer": "/description",
+      "en": "Freezing cold impact hammer.\n^cyan;Breaks blocks^reset;",
+      "tr": "Dondurucu soğukta bir darbe çekici.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/nightarwarblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nightar War Cleaver",
+      "tr": "Nightar Savaş Satırı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/nightarwarblade.activeitem",
+      "pointer": "/description",
+      "en": "Easily the heaviest and most valuable of Nightar weapons.\n^green;Counts as Greataxe or Broadsword^reset;\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Nightar silahlarının açık ara en ağırı ve en değerlisi.\n^green;Büyük Balta veya Büyük Kılıç sayılır^reset;\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/penumbritegreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Greataxe",
+      "tr": "Penumbrite Büyük Balta",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/penumbritegreataxe.activeitem",
+      "pointer": "/description",
+      "en": "Fantastically stylish.",
+      "tr": "İnanılmaz derecede şık.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/titaniumgreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Greataxe",
+      "tr": "Titanyum Büyük Balta",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/titaniumgreataxe.activeitem",
+      "pointer": "/description",
+      "en": "An extremely durable titanium greataxe.",
+      "tr": "Son derece dayanıklı bir titanyum büyük balta.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/zerchesiumgreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Greataxe",
+      "tr": "Zerchesium Büyük Balta",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/zerchesiumgreataxe.activeitem",
+      "pointer": "/description",
+      "en": "A freezing and dangerous edge.",
+      "tr": "Dondurucu ve tehlikeli bir ağız.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fucarbonhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Hammerpick",
+      "tr": "Karbon Çekiç Kazma",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/fucarbonhammer.activeitem",
+      "pointer": "/description",
+      "en": "A heavy, reliable carbon hammer.",
+      "tr": "Ağır ve güvenilir bir karbon çekiç.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/kelpsteelhatchet.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Kelp Hammer",
+      "tr": "Yosun Çekici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/kelpsteelhatchet.activeitem",
+      "pointer": "/description",
+      "en": "Hylotl engineering. A plant as a weapon. Odd.",
+      "tr": "Hylotl mühendisliği. Silaha dönüştürülmüş bir bitki. Tuhaf.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/metallichammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Junk Hammer",
+      "tr": "Hurda Çekiç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/metallichammer.activeitem",
+      "pointer": "/description",
+      "en": "Sturdy. These junk parts make a solid weapon.",
+      "tr": "Sağlam. Bu hurda parçaları iyi bir silah olmuş.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/penumbritehammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Hammer",
+      "tr": "Penumbra Çekici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/penumbritehammer.activeitem",
+      "pointer": "/description",
+      "en": "Shadowy impacts, deadly fun.",
+      "tr": "Gölgeli darbeler, ölümcül eğlence.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/zerchesiumhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Hammer",
+      "tr": "Zerchesium Çekiç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/hammer/zerchesiumhammer.activeitem",
+      "pointer": "/description",
+      "en": "Shiny, dangerous, and fun!",
+      "tr": "Parlak, tehlikeli ve eğlenceli!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/carbonkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Katana",
+      "tr": "Karbon Katana",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/carbonkatana.activeitem",
+      "pointer": "/description",
+      "en": "A lethal edge cuts foes deep.\n^cyan;Inflicts bleeding^reset;\n^yellow;6 hit combo^reset;",
+      "tr": "Ölümcül ağzı düşmanları derinden keser.\n^cyan;Kanamaya yol açar^reset;\n^yellow;6 vuruşluk kombo^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/coralkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Coral Katana",
+      "tr": "Mercan Katana",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/coralkatana.activeitem",
+      "pointer": "/description",
+      "en": "This looks uncomfortable to get stabbed by.\n^yellow;4 hit combo^reset;",
+      "tr": "Bununla bıçaklanmak pek hoş olmasa gerek.\n^yellow;4 vuruşluk kombo^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/penumbritekatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Katana",
+      "tr": "Penumbra Katana",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/penumbritekatana.activeitem",
+      "pointer": "/description",
+      "en": "Shiny, honed and deadly.",
+      "tr": "Parlak, bilenmiş ve ölümcül.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/titaniumkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Katana",
+      "tr": "Titanyum Katana",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/titaniumkatana.activeitem",
+      "pointer": "/description",
+      "en": "An exceptionally fine sword.\n^yellow;4 hit combo^reset;",
+      "tr": "Olağanüstü nitelikli bir kılıç.\n^yellow;4 vuruşluk kombo^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/zerchesiumkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Katana",
+      "tr": "Zerchesium Katana",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/zerchesiumkatana.activeitem",
+      "pointer": "/description",
+      "en": "A lethally-edged weapon. Two-handed.\n^yellow;5 hit combo^reset;",
+      "tr": "Ölümcül ağızlı, iki elli bir silah.\n^yellow;5 vuruşluk kombo^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/carbonlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Longsword",
+      "tr": "Karbon Uzun Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/carbonlongsword.activeitem",
+      "pointer": "/description",
+      "en": "A heavy carbon longsword.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Ağır bir karbon uzun kılıç.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/coraldullblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Coral Longsword",
+      "tr": "Mercan Uzun Kılıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/coraldullblade.activeitem",
+      "pointer": "/description",
+      "en": "Made from the depths. And hate. Lots and lots of hate.\n^cyan;Inflicts Poisoned^reset;",
+      "tr": "Derinliklerden yapılmış. Bir de nefretten. Tonla nefretten.\n^cyan;Zehirlenmeye yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/kaicleaver.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Kai Cleaver",
+      "tr": "Kai Satırı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/kaicleaver.activeitem",
+      "pointer": "/description",
+      "en": "A brutal-looking zerchesium cleaver.\n^cyan;Causes long bleed^reset;\n^green;Counts as Hunting weapon^reset;",
+      "tr": "Acımasız görünen bir Zerchesium satırı.\n^cyan;Uzun süreli kanamaya yol açar^reset;\n^green;Av silahı sayılır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/penumbritelongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Longsword",
+      "tr": "Penumbra Uzun Kılıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/penumbritelongsword.activeitem",
+      "pointer": "/description",
+      "en": "Cuts with shadowy purpose.",
+      "tr": "Gölgeli bir amaçla keser.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/titaniumlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Longsword",
+      "tr": "Titanyum Uzun Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/titaniumlongsword.activeitem",
+      "pointer": "/description",
+      "en": "A lightweight, yet strong blade.",
+      "tr": "Hafif ama sağlam bir bıçak.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/zerchesiumlongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Longsword",
+      "tr": "Zerchesium Uzun Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/zerchesiumlongsword.activeitem",
+      "pointer": "/description",
+      "en": "Heavy-edged and freezing cold.\n^cyan;Counts as Hunting weapon^reset;",
+      "tr": "Ağır ağızlı ve dondurucu soğukta.\n^cyan;Av silahı sayılır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/ballmace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Balls of Steel",
+      "tr": "Çelik Gülleler",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/ballmace.activeitem",
+      "pointer": "/description",
+      "en": "Well crafted, but heavy. Design by zimberzimber.",
+      "tr": "İyi işlenmiş ama ağır. Tasarım: zimberzimber.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/penumbramace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbra Mace",
+      "tr": "Penumbra Topuzu",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/penumbramace.activeitem",
+      "pointer": "/description",
+      "en": "Potent and heavy. Serious impact damage.",
+      "tr": "Güçlü ve ağır. Ciddi darbe hasarı.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/titaniummace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Mace",
+      "tr": "Titanyum Topuz",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/titaniummace.activeitem",
+      "pointer": "/description",
+      "en": "Expensive and painful!",
+      "tr": "Pahalı ve acı verici!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/zerchesiummace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Mace",
+      "tr": "Zerchesium Topuz",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/zerchesiummace.activeitem",
+      "pointer": "/description",
+      "en": "Well crafted, but heavy.",
+      "tr": "İyi işlenmiş ama ağır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/carbonquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Quarterstaff",
+      "tr": "Karbon Dövüş Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/carbonquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "Fantastic quality. Dangerous.",
+      "tr": "Müthiş kaliteli. Tehlikeli.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/goldquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gold Quarterstaff",
+      "tr": "Altın Dövüş Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/goldquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "Cumbersome, but light and pretty.",
+      "tr": "Hantal ama hafif ve güzel.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/penumbritestaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Quarterstaff",
+      "tr": "Penumbra Dövüş Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/penumbritestaff.activeitem",
+      "pointer": "/description",
+      "en": "Shadow-infused metal for deadly power.",
+      "tr": "Ölümcül güç için gölgeyle işlenmiş metal.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/zerchesiumquarterstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Quarterstaff",
+      "tr": "Zerchesium Dövüş Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/zerchesiumquarterstaff.activeitem",
+      "pointer": "/description",
+      "en": "Dense and deadly.",
+      "tr": "Yoğun ve ölümcül.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/penumbriterapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Rapier",
+      "tr": "Penumbra Meç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/penumbriterapier.activeitem",
+      "pointer": "/description",
+      "en": "Swiftly kills with shadowy promise.",
+      "tr": "Gölgelerin vaadiyle hızla öldürür.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/zerchesiumrapier.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Rapier",
+      "tr": "Zerchesium Meç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/rapier/zerchesiumrapier.activeitem",
+      "pointer": "/description",
+      "en": "Sturdy, fine, freezing metal.",
+      "tr": "Sağlam, ince işlenmiş ve dondurucu bir metal.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/penumbralscythe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Scythe",
+      "tr": "Penumbra Tırpanı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/penumbralscythe.activeitem",
+      "pointer": "/description",
+      "en": "Pulsing with dark promise.",
+      "tr": "Karanlık bir vaatle zonkluyor.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/zerchesiumscythe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Scythe",
+      "tr": "Zerchesium Tırpan",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/scythe/zerchesiumscythe.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, freezing metallic death.\n^cyan;Frozen Edge^reset;",
+      "tr": "Ağır, dondurucu, metalik ölüm.\n^cyan;Donmuş Ağız^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/carbonshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Shortspear",
+      "tr": "Karbon Kısa Mızrak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/carbonshortspear.activeitem",
+      "pointer": "/description",
+      "en": "A dense metal spear for puncturing enemies.\n^cyan;Inflicts bleeding^reset;\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanları delmek için yoğun metalden yapılmış bir mızrak.\n^cyan;Kanamaya yol açar^reset;\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/penumbriteshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Shortspear",
+      "tr": "Penumbra Kısa Mızrağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/penumbriteshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Stab from the shadows...with shadow.",
+      "tr": "Gölgelerin içinden sapla... hem de gölgeyle.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/titaniumshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Shortspear",
+      "tr": "Titanyum Kısa Mızrak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/titaniumshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Doesn't feel so short to enemies.\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanlara hiç de kısa gelmez.\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/zerchesiumshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Shortspear",
+      "tr": "Zerchesium Kısa Mızrak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/zerchesiumshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Cold, calculating murder tool.\n^cyan;Hunting weapon^reset;",
+      "tr": "Soğuk ve hesapçı bir cinayet aleti.\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/carbonblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Shortsword",
+      "tr": "Karbon Kısa Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/carbonblade.activeitem",
+      "pointer": "/description",
+      "en": "Finely made.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "İnce işçilikli.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/fushroomsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Mushroom Blade",
+      "tr": "Mantar Bıçağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/fushroomsword.activeitem",
+      "pointer": "/description",
+      "en": "Fungus, somehow turned into a weapon.\n^cyan;Floran^reset;",
+      "tr": "Bir şekilde silaha dönüştürülmüş mantar.\n^cyan;Floran^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/hylotllesserscion.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Scion Clawblade",
+      "tr": "Varis Pençe Bıçağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/hylotllesserscion.activeitem",
+      "pointer": "/description",
+      "en": "Coral and steel. Blood and glory.",
+      "tr": "Mercan ve çelik. Kan ve zafer.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/nightarshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nightarian Shortsword",
+      "tr": "Nightar Kısa Kılıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/nightarshortsword.activeitem",
+      "pointer": "/description",
+      "en": "Poor balance, but holds a sharp edge.\tUpgrade for lethality.",
+      "tr": "Dengesi kötü ama ağzı keskin kalır. Ölümcüllük için yükselt.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/penumbriteshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Shortsword",
+      "tr": "Penumbra Kısa Kılıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/penumbriteshortsword.activeitem",
+      "pointer": "/description",
+      "en": "This keen edge is laced with shadow power.",
+      "tr": "Bu keskin ağız gölge gücüyle kaplı.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/zerchesiumsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Shortsword",
+      "tr": "Zerchesium Kısa Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/zerchesiumsword.activeitem",
+      "pointer": "/description",
+      "en": "Finely honed zerchesium steel.",
+      "tr": "İnce bilenmiş Zerchesium çeliği.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/carbonspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Spear",
+      "tr": "Karbon Mızrak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/carbonspear.activeitem",
+      "pointer": "/description",
+      "en": "A dense metal spear for puncturing enemies.\n^cyan;Inflicts bleeding^reset;\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanları delmek için yoğun metalden yapılmış bir mızrak.\n^cyan;Kanamaya yol açar^reset;\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/metallicspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Junk Spear",
+      "tr": "Hurda Mızrak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/metallicspear.activeitem",
+      "pointer": "/description",
+      "en": "Made from all sorts of junk.\n^cyan;Hunting weapon^reset;",
+      "tr": "Her tür hurdadan yapılmış.\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/penumbritespear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbral Spear",
+      "tr": "Penumbra Mızrağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/penumbritespear.activeitem",
+      "pointer": "/description",
+      "en": "The shadowy tip is great for poking.",
+      "tr": "Gölgeli ucu dürtmek için harikadır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/siliconspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tek Lance",
+      "tr": "Tek Kargısı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/siliconspear.activeitem",
+      "pointer": "/description",
+      "en": "This heavy spear will puncture even well-armored foes.\n^cyan;Hunting weapon^reset;",
+      "tr": "Bu ağır mızrak, iyi zırhlanmış düşmanları bile deler.\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/wraithwind.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Wraithveil Spear",
+      "tr": "Hayalet Örtüsü Mızrağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/wraithwind.activeitem",
+      "pointer": "/description",
+      "en": "A specially designed spear laced with various metals.\n^cyan;Inflicts Poisoned^reset;.\n^cyan;Hunting weapon^reset;.",
+      "tr": "Çeşitli metallerle işlenmiş özel tasarım bir mızrak.\n^cyan;Zehirlenmeye yol açar^reset;.\n^cyan;Av silahı^reset;.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/zerchesiumspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Spear",
+      "tr": "Zerchesium Mızrak",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/zerchesiumspear.activeitem",
+      "pointer": "/description",
+      "en": "A wonderfully made tool of war.\n^cyan;Hunting weapon^reset;",
+      "tr": "Harika işlenmiş bir savaş aracı.\n^cyan;Av silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/titaniumassaultrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Assault Rifle",
+      "tr": "Titanyum Taarruz Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/titaniumassaultrifle.activeitem",
+      "pointer": "/description",
+      "en": "A fully-automatic titanium-cased rifle.",
+      "tr": "Titanyum kasalı, tam otomatik bir tüfek.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/titaniumrevolver.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Revolver",
+      "tr": "Titanyum Revolver",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/titaniumrevolver.activeitem",
+      "pointer": "/description",
+      "en": "A large handgun that packs a punch.",
+      "tr": "Ciddi darbe gücüne sahip büyük bir tabanca.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/titaniumshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Shotgun",
+      "tr": "Titanyum Pompalı Tüfek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/titaniumshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Fires a spread that's lethal at close range.",
+      "tr": "Yakın mesafede ölümcül bir saçma yayılımıyla ateş eder.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbpenumbrite/magnorbpenumbrite.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Magnorb",
+      "tr": "Penumbrite Magnorb",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbpenumbrite/magnorbpenumbrite.activeitem",
+      "pointer": "/description",
+      "en": "Frosty balls of danger decimate the enemy.",
+      "tr": "Ayaz gibi tehlike küreleri düşmanı mahveder.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbproto/magnorbproto.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tauntra Orbs",
+      "tr": "Tauntra Küreleri",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbproto/magnorbproto.activeitem",
+      "pointer": "/description",
+      "en": "This unusual weapon is quite dangerous. ^cyan;Counts as 'energy' weapon^reset;",
+      "tr": "Bu sıra dışı silah oldukça tehlikeli. ^cyan;\"Enerji\" silahı sayılır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbzerchesium/magnorbzerchesium.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Magnorb",
+      "tr": "Zerchesium Magnorb",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbzerchesium/magnorbzerchesium.activeitem",
+      "pointer": "/description",
+      "en": "Frosty balls of danger decimate the enemy.",
+      "tr": "Ayaz gibi tehlike küreleri düşmanı mahveder.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/titaniumaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Axe",
+      "tr": "Titanyum Balta",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/titaniumaxe.activeitem",
+      "pointer": "/description",
+      "en": "This axe is light, but strong.",
+      "tr": "Bu balta hafif ama sağlamdır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/titaniumhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Hammer",
+      "tr": "Titanyum Çekiç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/titaniumhammer.activeitem",
+      "pointer": "/description",
+      "en": "An extremely durable titanium hammer.",
+      "tr": "Son derece dayanıklı bir titanyum çekiç.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/titaniumshortsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Shortsword",
+      "tr": "Titanyum Kısa Kılıç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/titaniumshortsword.activeitem",
+      "pointer": "/description",
+      "en": "A lightweight titanium shortsword.",
+      "tr": "Hafif bir titanyum kısa kılıç.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/assaultrifle/floranneedler.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Floran Spike Launcher",
+      "tr": "Floran Diken Fırlatıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/assaultrifle/floranneedler.activeitem",
+      "pointer": "/description",
+      "en": "Randomly generated weapon. Ejects poison-tipped darts.",
+      "tr": "Rastgele üretilmiş silah. Zehir uçlu iğneler fırlatır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/airstrike/airstrike.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Missile Salvo",
+      "tr": "Füze Salvosu",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/airstrike/airstrike.activeitem",
+      "pointer": "/description",
+      "en": "Call in a deadly air-to-surface missile barrage.",
+      "tr": "Ölümcül bir havadan karaya füze bombardımanı çağırır.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/blizzardcannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Blizzard Cannon",
+      "tr": "Tipi Topu",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/blizzardcannon.activeitem",
+      "pointer": "/description",
+      "en": "Freeze enemies with cryogenic rockets!\n^cyan;Freeze enemies^reset;\n^#e43774;Area Clear^reset;",
+      "tr": "Düşmanları kriyojenik roketlerle dondur!\n^cyan;Düşmanları dondurur^reset;\n^#e43774;Alan Temizleme^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/carbonshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "S-Mart Special",
+      "tr": "S-Mart Özel Yapımı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/carbonshotgun.activeitem",
+      "pointer": "/description",
+      "en": "S-mart's top of the line.\n^cyan;Stuns enemies^reset;",
+      "tr": "S-Mart'ın en üst modeli.\n^cyan;Düşmanları sersemletir^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/carvelle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carvelle Sniper Rifle",
+      "tr": "Carvelle Keskin Nişancı Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/carvelle.activeitem",
+      "pointer": "/description",
+      "en": "A powerful sniper rifle.\n^yellow;Homing bullet^reset;",
+      "tr": "Güçlü bir keskin nişancı tüfeği.\n^yellow;Güdümlü mermi^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/crankgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Crank Cannon",
+      "tr": "Kurmalı Top",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/crankgun.activeitem",
+      "pointer": "/description",
+      "en": "Fires bursts of nasty sharpened flechettes.\n^yellow;Inflicts bleeding^reset;",
+      "tr": "Keskin ve çirkin fleşetleri seri hâlinde ateşler.\n^yellow;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/crankpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Crank Pistol",
+      "tr": "Kurmalı Tabanca",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/crankpistol.activeitem",
+      "pointer": "/description",
+      "en": "Rusty nail pistol! Super fun!\n^yellow;Inflicts bleeding^reset;",
+      "tr": "Paslı çivi tabancası! Çok eğlenceli!\n^yellow;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/crankrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Puncturer",
+      "tr": "Delici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/crankrifle.activeitem",
+      "pointer": "/description",
+      "en": "Penetrating rounds cause devastating wounds.\n^yellow;Inflicts bleeding^reset;",
+      "tr": "Delici mermileri yıkıcı yaralar açar.\n^yellow;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/discrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Disc Rifle",
+      "tr": "Disk Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/discrifle.activeitem",
+      "pointer": "/description",
+      "en": "An unusual weapon for an unusual time.\n^yellow;Fires rebounding discs^reset;\n^green;Sets traps^reset;",
+      "tr": "Sıra dışı zamanlar için sıra dışı bir silah.\n^yellow;Sekerek ilerleyen diskler fırlatır^reset;\n^green;Tuzak kurar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/biooozegun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ooze Gun",
+      "tr": "Balçık Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/biooozegun.activeitem",
+      "pointer": "/description",
+      "en": "Spews toxic poison. Fun!",
+      "tr": "Zehirli balçık püskürtür. Eğlenceli!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/healingliquidgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Healing Water Gun",
+      "tr": "Şifalı Su Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/healingliquidgun.activeitem",
+      "pointer": "/description",
+      "en": "This gun shoots healing water. Nifty.",
+      "tr": "Bu tabanca şifalı su püskürtür. Hoş.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/liquidacidgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Acid Gun",
+      "tr": "Asit Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/liquidacidgun.activeitem",
+      "pointer": "/description",
+      "en": "This gun shoots sulphuric acid! Fun!",
+      "tr": "Bu tabanca sülfürik asit püskürtür! Eğlenceli!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/liquidpoisongun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Poison Gun",
+      "tr": "Zehir Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fu_liquidguns/liquidpoisongun.activeitem",
+      "pointer": "/description",
+      "en": "This gun shoots poison!",
+      "tr": "Bu tabanca zehir püskürtür!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugrinder.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Grinder",
+      "tr": "Öğütücü",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugrinder.activeitem",
+      "pointer": "/description",
+      "en": "This is the pinnacle of kinetic rifle technology.\n^yellow;Extreme Fire Rate^reset;",
+      "tr": "Kinetik tüfek teknolojisinin zirvesi.\n^yellow;Aşırı Atış Hızı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/funomadassaultrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nomad Combat Rifle",
+      "tr": "Göçebe Savaş Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/funomadassaultrifle.activeitem",
+      "pointer": "/description",
+      "en": "The weapon of choice for desert wanderers.\n^yellow;Counts as Hunting weapon^reset;\n^green;Causes Radiation Burn^reset;",
+      "tr": "Çöl gezginlerinin gözde silahı.\n^yellow;Av silahı sayılır^reset;\n^green;Radyasyon Yanığına yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/funomadrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Nomad Rifle",
+      "tr": "Göçebe Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/funomadrifle.activeitem",
+      "pointer": "/description",
+      "en": "Highly useful weapon for wanderers.\n^yellow;Counts as Hunting weapon^reset;\n^green;Causes Radiation Burn^reset;",
+      "tr": "Gezginler için son derece kullanışlı bir silah.\n^yellow;Av silahı sayılır^reset;\n^green;Radyasyon Yanığına yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/ionrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Ion Rifle",
+      "tr": "İyon Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/ionrifle.activeitem",
+      "pointer": "/description",
+      "en": "Reliable infantry weapon for anti-robot warfare.\n^yellow;Inflicts Electrified^reset;\n^green;Area-Denial Alt^reset;",
+      "tr": "Robotlara karşı savaşta güvenilir bir piyade silahı.\n^yellow;Elektriklenmeye yol açar^reset;\n^green;Alternatif atışla alanı kapatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/k3rifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "K3 Double-Tap",
+      "tr": "K3 Çifte Atış",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/k3rifle.activeitem",
+      "pointer": "/description",
+      "en": "Made with that second shot in mind. Sporting.\n^yellow;Burst fire^reset;",
+      "tr": "İkinci atış düşünülerek yapılmış. Sportif.\n^yellow;Seri atış^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/longarm.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Longarm Shotgun",
+      "tr": "Longarm Pompalı Tüfek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/longarm.activeitem",
+      "pointer": "/description",
+      "en": "A shotgun custom-tailored to spread like crazy and look great doing it.",
+      "tr": "Saçmaları çılgınca dağıtıp bunu yaparken harika görünmesi için özel üretilmiş bir pompalı tüfek.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/longarmpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Longarm Pistol",
+      "tr": "Longarm Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/longarmpistol.activeitem",
+      "pointer": "/description",
+      "en": "A shotgun. In a pistol. Definitely fun.",
+      "tr": "Tabancanın içine pompalı tüfek koymuşlar. Kesinlikle eğlenceli.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/miners/weaponminer/weaponminer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Phaser",
+      "tr": "Fazer",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/miners/weaponminer/weaponminer.activeitem",
+      "pointer": "/description",
+      "en": "A trusty beam weapon.",
+      "tr": "Güvenilir bir ışın silahı.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/minirocketlauncher.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Micro-Rocket Launcher",
+      "tr": "Mikro Roketatar",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/minirocketlauncher.activeitem",
+      "pointer": "/description",
+      "en": "Fires mini-missiles that enemies prefer to avoid...but can't!\n^yellow;Homing projectiles^reset;",
+      "tr": "Düşmanların kaçınmayı tercih ettiği ama kaçamadığı mini füzeler ateşler!\n^yellow;Güdümlü mermiler^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/murdermanipulator.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Murder Manipulator",
+      "tr": "Katliam Manipülatörü",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/murdermanipulator.activeitem",
+      "pointer": "/description",
+      "en": "A repurposed manipulator. This one murders! Yay!\n^cyan;Floran^reset;",
+      "tr": "Başka amaca uyarlanmış bir manipülatör. Bu öldürüyor! Yaşasın!\n^cyan;Floran^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/mushroomgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fungal Gun",
+      "tr": "Mantar Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/mushroomgun.activeitem",
+      "pointer": "/description",
+      "en": "Tiny little explosive buddies spew out of this thing.\n^yellow;Area-Damage weapon, ^cyan;Floran^reset;^reset;",
+      "tr": "Bu şeyden minik patlayıcı dostlar fışkırıyor.\n^yellow;Alan hasarı silahı, ^cyan;Floran^reset;^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/napalmcannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Napalm Launcher",
+      "tr": "Napalm Fırlatıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/napalmcannon.activeitem",
+      "pointer": "/description",
+      "en": "Not the sort of thing you fire indoors at a carpentry show.\n^yellow;Inflicts burning^reset;",
+      "tr": "Bir marangozluk gösterisinde kapalı alanda ateşlenecek türden değil.\n^yellow;Yanma etkisi uygular^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/burstgun/chargeshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fahrenheit 451",
+      "tr": "Fahrenheit 451",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/burstgun/chargeshotgun.activeitem",
+      "pointer": "/description",
+      "en": "A potent incendiary weapon.\n^yellow;Inflicts Burn^reset;",
+      "tr": "Güçlü bir yangın çıkarıcı silah.\n^yellow;Yanma etkisi uygular^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/glacialpistol/chargepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Glacial Pistol",
+      "tr": "Buzul Tabancası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/peglaci/glacialpistol/chargepistol.activeitem",
+      "pointer": "/description",
+      "en": "Eject super-cold fun at enemies.\n^yellow;Charge increases damage^reset;",
+      "tr": "Düşmanlara dondurucu eğlence püskürtür.\n^yellow;Şarj, hasarı artırır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbriteassaultrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Assault Rifle",
+      "tr": "Penumbrite Taarruz Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbriteassaultrifle.activeitem",
+      "pointer": "/description",
+      "en": "Specially treated rounds for a well-rounded barrage.",
+      "tr": "Dengeli bir yaylım için özel işlenmiş mermiler.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbritepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Revolver",
+      "tr": "Penumbrite Revolver",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbritepistol.activeitem",
+      "pointer": "/description",
+      "en": "Specially treated rounds for a special occasion. High calibre.",
+      "tr": "Özel bir gün için özel işlenmiş, yüksek kalibreli mermiler.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbriterocketlauncher.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Cannon",
+      "tr": "Penumbrite Topu",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbriterocketlauncher.activeitem",
+      "pointer": "/description",
+      "en": "Fast-moving blasts of attuned power.",
+      "tr": "Uyumlanmış gücün hızlı patlamalarını ateşler.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbriteshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Shotgun",
+      "tr": "Penumbrite Pompalı Tüfek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbriteshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Specially treated rounds, cleanup crew not included.",
+      "tr": "Özel işlenmiş mermiler; temizlik ekibi dâhil değildir.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbritesmg.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Machine Pistol",
+      "tr": "Penumbrite Makineli Tabanca",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbritesmg.activeitem",
+      "pointer": "/description",
+      "en": "Specially treated rounds, and a comfortable wrist strap.",
+      "tr": "Özel işlenmiş mermiler ve rahat bir bilek kayışı.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbritesniperrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Sniper Rifle",
+      "tr": "Penumbrite Keskin Nişancı Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/penumbritesniperrifle.activeitem",
+      "pointer": "/description",
+      "en": "Specially treated rounds for a special send-off.",
+      "tr": "Özel bir uğurlama için özel işlenmiş mermiler.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolprotofu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protocite Revolver",
+      "tr": "Protocite Revolver",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistolprotofu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;\n^green;Counts as 'energy' for set bonus.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;\n^green;Set bonusu için \"enerji\" silahı sayılır.^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoltitaniumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Magnum",
+      "tr": "Titanyum Magnum",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoltitaniumfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/protogun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Proto Gun",
+      "tr": "Proto Tüfek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/protogun.activeitem",
+      "pointer": "/description",
+      "en": "Blast foes happily with this energy shotgun.\n^yellow;Bouncing projectiles^reset;",
+      "tr": "Bu enerji pompalısıyla düşmanlarını neşeyle patlat.\n^yellow;Seken mermiler^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/protopistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Proto Pistol",
+      "tr": "Proto Tabanca",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/protopistol.activeitem",
+      "pointer": "/description",
+      "en": "A useful, if unorthodox, pistol.\n^yellow;Bouncing projectiles^reset;",
+      "tr": "Alışılmadık olsa da kullanışlı bir tabanca.\n^yellow;Seken mermiler^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/protorifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Proto Rifle",
+      "tr": "Proto Keskin Nişancı Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/protorifle.activeitem",
+      "pointer": "/description",
+      "en": "An energy-based sniper rifle with a bouncy projectile.",
+      "tr": "Seken mermi kullanan enerji tabanlı bir keskin nişancı tüfeği.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifletitaniumfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Titanium Rifle",
+      "tr": "Titanyum Tüfek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifletitaniumfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/flamepistol/isn_flamethrower.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Incinerator",
+      "tr": "Yakıcı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/flamepistol/isn_flamethrower.activeitem",
+      "pointer": "/description",
+      "en": "What greater joy than cooking flesh?\n^yellow;Inflicts burning^reset;",
+      "tr": "Et pişirmekten daha büyük neşe var mı?\n^yellow;Yanma etkisi uygular^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/kineticrifle/kineticrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Redirector",
+      "tr": "Yönlendirici",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/kineticrifle/kineticrifle.activeitem",
+      "pointer": "/description",
+      "en": "A truly unique weapon!\n^yellow;Incapacitate enemies^reset;\n^green;Redirect in zero-g^reset;",
+      "tr": "Gerçekten eşsiz bir silah!\n^yellow;Düşmanları etkisiz hâle getirir^reset;\n^green;Sıfır yerçekiminde yön değiştirir^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/napalmsprayer/isn_napalmsprayer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Scorchburst",
+      "tr": "Kavurucu Püskürtücü",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/napalmsprayer/isn_napalmsprayer.activeitem",
+      "pointer": "/description",
+      "en": "Huge gouts of dangerous napalm. Keep away from children.\n^yellow;Inflicts burning^reset;",
+      "tr": "Devasa ve tehlikeli napalm akımları. Çocuklardan uzak tut.\n^yellow;Yanma etkisi uygular^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/silverslayer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Carbine",
+      "tr": "Penumbrite Karabina",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/silverslayer.activeitem",
+      "pointer": "/description",
+      "en": "Specially treated rounds in a convenient package.",
+      "tr": "Kullanışlı bir pakette özel işlenmiş mermiler.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/snubber.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Snub Gun",
+      "tr": "Kısa Namlulu Tabanca",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/snubber.activeitem",
+      "pointer": "/description",
+      "en": "Fires 3-round bursts of diamond-tipped rounds.\n^cyan;Piercing bursts^reset;\n^#e43774;Hunting Weapon^reset;",
+      "tr": "Elmas uçlu mermileri 3'lü seri hâlinde ateşler.\n^cyan;Delici seri atış^reset;\n^#e43774;Av Silahı^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/teslagun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tesla Gun",
+      "tr": "Tesla Silahı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/teslagun.activeitem",
+      "pointer": "/description",
+      "en": "A supreme long-ranged option for snipers.\n^yellow;Inflicts Electrified^reset;\n^cyan;Amazing crowd control^reset;",
+      "tr": "Keskin nişancılar için üstün bir uzun menzil seçeneği.\n^yellow;Elektriklenmeye yol açar^reset;\n^cyan;Müthiş kitle kontrolü^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumassaultrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Assault Rifle",
+      "tr": "Zerchesium Taarruz Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumassaultrifle.activeitem",
+      "pointer": "/description",
+      "en": "Put your enemies on ice.\n^cyan;Grenade Launcher^reset;",
+      "tr": "Düşmanlarını buz üstüne yatır.\n^cyan;Bombaatar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumpistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Pistol",
+      "tr": "Zerchesium Tabanca",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumpistol.activeitem",
+      "pointer": "/description",
+      "en": "Put your enemies on ice.\n^cyan;Slows enemies^reset;",
+      "tr": "Düşmanlarını buz üstüne yatır.\n^cyan;Düşmanları yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumrocketlauncher.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Rocketlauncher",
+      "tr": "Zerchesium Roketatar",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumrocketlauncher.activeitem",
+      "pointer": "/description",
+      "en": "A rapid fire ice rocket launcher.\n^cyan;Slows enemies^reset;",
+      "tr": "Hızlı ateş eden bir buz roketatarı.\n^cyan;Düşmanları yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Shotgun",
+      "tr": "Zerchesium Pompalı Tüfek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Freezing slugs mince foes.\n^cyan;Slows enemies^reset;",
+      "tr": "Dondurucu misketler düşmanları kıyma eder.\n^cyan;Düşmanları yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumsmg.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium SMG",
+      "tr": "Zerchesium Makineli Tabanca",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumsmg.activeitem",
+      "pointer": "/description",
+      "en": "Put your enemies on ice.\n^cyan;Slows enemies^reset;",
+      "tr": "Düşmanlarını buz üstüne yatır.\n^cyan;Düşmanları yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumsniper.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Sniper Rifle",
+      "tr": "Zerchesium Keskin Nişancı Tüfeği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/zerchesiumsniper.activeitem",
+      "pointer": "/description",
+      "en": "Put your enemies on ice.\n^green;Generate drones^reset;\n^cyan;Slows enemies^reset;",
+      "tr": "Düşmanlarını buz üstüne yatır.\n^green;Dron üretir^reset;\n^cyan;Düşmanları yavaşlatır^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/penumbrastaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbra Staff",
+      "tr": "Penumbra Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/penumbrastaff.activeitem",
+      "pointer": "/description",
+      "en": "Penumbral Power.",
+      "tr": "Penumbra Gücü.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/protocitestaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protocite Staff",
+      "tr": "Protocite Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/protocitestaff.activeitem",
+      "pointer": "/description",
+      "en": "Raw energy imbued within.",
+      "tr": "Ham enerjiyle dolu.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/zerchesiumstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Staff",
+      "tr": "Zerchesium Asası",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/orestaffs/zerchesiumstaff.activeitem",
+      "pointer": "/description",
+      "en": "Frosty death in a convenient size.",
+      "tr": "Kullanışlı boyutta ayaz gibi ölüm.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/fupoisonwand/fupoisonwand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Toxic Wand",
+      "tr": "Zehirli Değnek",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/fupoisonwand/fupoisonwand.activeitem",
+      "pointer": "/description",
+      "en": "Poison your enemies.",
+      "tr": "Düşmanlarını zehirler.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/penumbrawand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbra Wand",
+      "tr": "Penumbra Değneği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/penumbrawand.activeitem",
+      "pointer": "/description",
+      "en": "Sufficiently Advanced Technology.",
+      "tr": "Yeterince Gelişmiş Teknoloji.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/protocitewand.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Protocite Wand",
+      "tr": "Protocite Değneği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/orewands/protocitewand.activeitem",
+      "pointer": "/description",
+      "en": "Sufficiently Advanced Technology.",
+      "tr": "Yeterince Gelişmiş Teknoloji.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/teslawand/teslastaff1.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Tesla's Wand",
+      "tr": "Tesla'nın Değneği",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/teslawand/teslastaff1.activeitem",
+      "pointer": "/description",
+      "en": "The fury of storms in the palm of your hand.",
+      "tr": "Fırtınaların öfkesi avucunun içinde.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/carbonwhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Carbon Whip",
+      "tr": "Karbon Kırbaç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/carbonwhip.activeitem",
+      "pointer": "/description",
+      "en": "A whip fashioned from finely woven carbon fibers.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "İnce dokunmuş karbon liflerinden yapılmış bir kırbaç.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/corewhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Fiery Whip",
+      "tr": "Alevli Kırbaç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/corewhip.activeitem",
+      "pointer": "/description",
+      "en": "A fiery whip formed from core fragments. Nice and hot!",
+      "tr": "Çekirdek parçalarından yapılmış alevli bir kırbaç. Sıcacık!",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/penumbritewhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Penumbrite Chain Knife",
+      "tr": "Penumbrite Zincir Bıçağı",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/penumbritewhip.activeitem",
+      "pointer": "/description",
+      "en": "A chain knife fashioned from penumbrite, also makes a great glowstick.",
+      "tr": "Penumbritedan yapılmış bir zincir bıçak; harika bir ışıklı çubuk da olur.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/zerchesiumwhip.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Zerchesium Whip",
+      "tr": "Zerchesium Kırbaç",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/whip/zerchesiumwhip.activeitem",
+      "pointer": "/description",
+      "en": "A whip with an ice cold tip. Swings with a zip.",
+      "tr": "Buz gibi ucu olan bir kırbaç. Vınlayarak savrulur.",
+      "section": "v0.22 Kademe 3 savaş ekipmanı"
     }
   ]
 }

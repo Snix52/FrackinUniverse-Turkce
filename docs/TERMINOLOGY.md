@@ -484,3 +484,20 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Stynger | Pompalı ok silahı modeli | Özel ad | Stynger | İğneleyici | LOCKED | Kaynaktaki stilize model adı korunur |
 | Cestus | Yumruk silahı sınıfı | Silah | Cestus | Yumrukluk | LOCKED | Tarihî silah adı |
 | Protectorate | Fraksiyon / ekipman ailesi | Özel ad | Protectorate | Koruyuculuk | LOCKED | Mevcut görev ve Akademi terminolojisiyle eşlendi |
+
+## v0.22 Kademe 3 savaş ekipmanı terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Shield Bash | Kalkan tooltip etkisi | UI | Kalkan Darbesi | Kalkan Vuruşu | LOCKED | |
+| Shieldbash Push | Kalkan tooltip etkisi | UI | Kalkan Darbesi İtme Gücü | Kalkan İtişi | LOCKED | Sayısal değer aynen korunur |
+| Energy Regen | Kalkan tooltip etkisi | UI | Enerji Yenilenmesi | Enerji Rejenerasyonu | LOCKED | |
+| Inflicts Electrified | Silah tooltip etkisi | UI | Elektriklenmeye yol açar | Elektrik verir | LOCKED | |
+| Inflicts Burning / Burn | Silah tooltip etkisi | UI | Yanma etkisi uygular | Yakma verir | LOCKED | |
+| Slows enemies | Silah tooltip etkisi | UI | Düşmanları yavaşlatır | Yavaşlık verir | LOCKED | |
+| Homing projectile | Silah tooltip etkisi | UI | Güdümlü mermi | Takip eden mermi | LOCKED | |
+| Grenade Launcher | Silah/alt atış türü | Silah | Bombaatar | Bomba Atar | LOCKED | Bitişik yazılır |
+| Radiation Burn | Silah durum etkisi | UI | Radyasyon Yanığı | Radyasyon Yakması | LOCKED | |
+| Penumbral | Penumbrite silah ailesi sıfatı | Nesne | Penumbra | Gölgeli | LOCKED | Malzeme ailesinin özel adıyla bağ korunur |
+| Scion | Hylotl silah modeli | Nesne | Varis | Soy | LOCKED | Önceki Altın Deniz Varisi adıyla eşlendi |
+| Magnorb | Özel silah modeli | Özel ad | Magnorb | Manyetik Küre | LOCKED | Model adı korunur |

@@ -397,6 +397,177 @@ items/active/weapons/whip/stingwhip.activeitem
 items/active/weapons/whip/telebriumwhip.activeitem
 '''.split())
 
+# Aktif fu_warcraft ağacındaki altı Kademe 3 düğümünün açtığı ve gerçek
+# üretim tarifi bulunan v0.22 savaş ekipmanı. Daha önce çevrilen
+# energyassault kendi eski allowlist'inde kalır; burada 157 yeni asset vardır.
+V022_TIER3_COMBAT_ASSETS = set('''
+items/active/shields/gladiatorshield.activeitem
+items/active/shields/nightar2.activeitem
+items/active/shields/penumbriteshield.activeitem
+items/active/shields/titaniumshield.activeitem
+items/active/shields/zerchesiumshield.activeitem
+items/active/weapons/boomerang/penumbriteboomerang.activeitem
+items/active/weapons/boomerang/titaniumboomerang.activeitem
+items/active/weapons/boomerang/zerchesiumboomerang.activeitem
+items/active/weapons/bow/carbonbow/carbonbow.activeitem
+items/active/weapons/bow/carboncrossbow/carboncrossbow.activeitem
+items/active/weapons/bow/carbonstynger/carbonstynger.activeitem
+items/active/weapons/bow/penumbrabow/penumbrabow.activeitem
+items/active/weapons/bow/protobow/protobow.activeitem
+items/active/weapons/bow/zerchesiumbow/zerchesiumbow.activeitem
+items/active/weapons/bow/zerchesiumcrossbow/zerchesiumcrossbow.activeitem
+items/active/weapons/bow/zerchesiumstynger/zerchesiumstynger.activeitem
+items/active/weapons/chakram/funeochakram.activeitem
+items/active/weapons/chakram/penumbritechakram.activeitem
+items/active/weapons/chakram/titaniumchakram.activeitem
+items/active/weapons/chakram/zerchesiumchakram.activeitem
+items/active/weapons/fist/penumbritefist.activeitem
+items/active/weapons/fist/zerchesiumfist.activeitem
+items/active/weapons/melee/axe/carbonaxe.activeitem
+items/active/weapons/melee/axe/penumbriteaxe.activeitem
+items/active/weapons/melee/axe/zerchesiumaxe.activeitem
+items/active/weapons/melee/broadsword/hylotlgreatscion.activeitem
+items/active/weapons/melee/broadsword/metalliccleaver.activeitem
+items/active/weapons/melee/broadsword/metallicsword.activeitem
+items/active/weapons/melee/broadsword/penumbritebroadsword.activeitem
+items/active/weapons/melee/broadsword/titaniumbroadsword.activeitem
+items/active/weapons/melee/broadsword/zerchesiumbroadsword.activeitem
+items/active/weapons/melee/dagger/carbondagger.activeitem
+items/active/weapons/melee/dagger/nightardagger.activeitem
+items/active/weapons/melee/dagger/penumbriredagger.activeitem
+items/active/weapons/melee/dagger/zerchesiumknife.activeitem
+items/active/weapons/melee/flail/flailpenumbrite.activeitem
+items/active/weapons/melee/flail/flailtitanium.activeitem
+items/active/weapons/melee/flail/flailzerchesium.activeitem
+items/active/weapons/melee/greataxe/nightarwarblade.activeitem
+items/active/weapons/melee/greataxe/penumbritegreataxe.activeitem
+items/active/weapons/melee/greataxe/titaniumgreataxe.activeitem
+items/active/weapons/melee/greataxe/zerchesiumgreataxe.activeitem
+items/active/weapons/melee/hammer/fucarbonhammer.activeitem
+items/active/weapons/melee/hammer/kelpsteelhatchet.activeitem
+items/active/weapons/melee/hammer/metallichammer.activeitem
+items/active/weapons/melee/hammer/penumbritehammer.activeitem
+items/active/weapons/melee/hammer/zerchesiumhammer.activeitem
+items/active/weapons/melee/katana/carbonkatana.activeitem
+items/active/weapons/melee/katana/coralkatana.activeitem
+items/active/weapons/melee/katana/penumbritekatana.activeitem
+items/active/weapons/melee/katana/titaniumkatana.activeitem
+items/active/weapons/melee/katana/zerchesiumkatana.activeitem
+items/active/weapons/melee/longsword/carbonlongsword.activeitem
+items/active/weapons/melee/longsword/coraldullblade.activeitem
+items/active/weapons/melee/longsword/kaicleaver.activeitem
+items/active/weapons/melee/longsword/penumbritelongsword.activeitem
+items/active/weapons/melee/longsword/titaniumlongsword.activeitem
+items/active/weapons/melee/longsword/zerchesiumlongsword.activeitem
+items/active/weapons/melee/mace/ballmace.activeitem
+items/active/weapons/melee/mace/penumbramace.activeitem
+items/active/weapons/melee/mace/titaniummace.activeitem
+items/active/weapons/melee/mace/zerchesiummace.activeitem
+items/active/weapons/melee/quarterstaff/carbonquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/goldquarterstaff.activeitem
+items/active/weapons/melee/quarterstaff/penumbritestaff.activeitem
+items/active/weapons/melee/quarterstaff/zerchesiumquarterstaff.activeitem
+items/active/weapons/melee/rapier/penumbriterapier.activeitem
+items/active/weapons/melee/rapier/zerchesiumrapier.activeitem
+items/active/weapons/melee/scythe/penumbralscythe.activeitem
+items/active/weapons/melee/scythe/zerchesiumscythe.activeitem
+items/active/weapons/melee/shortspear/carbonshortspear.activeitem
+items/active/weapons/melee/shortspear/penumbriteshortspear.activeitem
+items/active/weapons/melee/shortspear/titaniumshortspear.activeitem
+items/active/weapons/melee/shortspear/zerchesiumshortspear.activeitem
+items/active/weapons/melee/shortsword/carbonblade.activeitem
+items/active/weapons/melee/shortsword/fushroomsword.activeitem
+items/active/weapons/melee/shortsword/hylotllesserscion.activeitem
+items/active/weapons/melee/shortsword/nightarshortsword.activeitem
+items/active/weapons/melee/shortsword/penumbriteshortsword.activeitem
+items/active/weapons/melee/shortsword/zerchesiumsword.activeitem
+items/active/weapons/melee/spear/carbonspear.activeitem
+items/active/weapons/melee/spear/metallicspear.activeitem
+items/active/weapons/melee/spear/penumbritespear.activeitem
+items/active/weapons/melee/spear/siliconspear.activeitem
+items/active/weapons/melee/spear/wraithwind.activeitem
+items/active/weapons/melee/spear/zerchesiumspear.activeitem
+items/active/weapons/novakid/titaniumassaultrifle.activeitem
+items/active/weapons/novakid/titaniumrevolver.activeitem
+items/active/weapons/novakid/titaniumshotgun.activeitem
+items/active/weapons/other/magnorbs/magnorbpenumbrite/magnorbpenumbrite.activeitem
+items/active/weapons/other/magnorbs/magnorbproto/magnorbproto.activeitem
+items/active/weapons/other/magnorbs/magnorbzerchesium/magnorbzerchesium.activeitem
+items/active/weapons/protectorate/titaniumaxe.activeitem
+items/active/weapons/protectorate/titaniumhammer.activeitem
+items/active/weapons/protectorate/titaniumshortsword.activeitem
+items/active/weapons/ranged/assaultrifle/floranneedler.activeitem
+items/active/weapons/ranged/unique/artillery/airstrike/airstrike.activeitem
+items/active/weapons/ranged/unique/blizzardcannon.activeitem
+items/active/weapons/ranged/unique/carbonshotgun.activeitem
+items/active/weapons/ranged/unique/carvelle.activeitem
+items/active/weapons/ranged/unique/crankgun.activeitem
+items/active/weapons/ranged/unique/crankpistol.activeitem
+items/active/weapons/ranged/unique/crankrifle.activeitem
+items/active/weapons/ranged/unique/discrifle.activeitem
+items/active/weapons/ranged/unique/fu_liquidguns/biooozegun.activeitem
+items/active/weapons/ranged/unique/fu_liquidguns/healingliquidgun.activeitem
+items/active/weapons/ranged/unique/fu_liquidguns/liquidacidgun.activeitem
+items/active/weapons/ranged/unique/fu_liquidguns/liquidpoisongun.activeitem
+items/active/weapons/ranged/unique/fugrinder.activeitem
+items/active/weapons/ranged/unique/funomadassaultrifle.activeitem
+items/active/weapons/ranged/unique/funomadrifle.activeitem
+items/active/weapons/ranged/unique/ionrifle.activeitem
+items/active/weapons/ranged/unique/k3rifle.activeitem
+items/active/weapons/ranged/unique/longarm.activeitem
+items/active/weapons/ranged/unique/longarmpistol.activeitem
+items/active/weapons/ranged/unique/miners/weaponminer/weaponminer.activeitem
+items/active/weapons/ranged/unique/minirocketlauncher.activeitem
+items/active/weapons/ranged/unique/murdermanipulator.activeitem
+items/active/weapons/ranged/unique/mushroomgun.activeitem
+items/active/weapons/ranged/unique/napalmcannon.activeitem
+items/active/weapons/ranged/unique/peglaci/burstgun/chargeshotgun.activeitem
+items/active/weapons/ranged/unique/peglaci/glacialpistol/chargepistol.activeitem
+items/active/weapons/ranged/unique/penumbriteassaultrifle.activeitem
+items/active/weapons/ranged/unique/penumbritepistol.activeitem
+items/active/weapons/ranged/unique/penumbriterocketlauncher.activeitem
+items/active/weapons/ranged/unique/penumbriteshotgun.activeitem
+items/active/weapons/ranged/unique/penumbritesmg.activeitem
+items/active/weapons/ranged/unique/penumbritesniperrifle.activeitem
+items/active/weapons/ranged/unique/pistolprotofu.activeitem
+items/active/weapons/ranged/unique/pistoltitaniumfu.activeitem
+items/active/weapons/ranged/unique/protogun.activeitem
+items/active/weapons/ranged/unique/protopistol.activeitem
+items/active/weapons/ranged/unique/protorifle.activeitem
+items/active/weapons/ranged/unique/rifletitaniumfu.activeitem
+items/active/weapons/ranged/unique/science/flamepistol/isn_flamethrower.activeitem
+items/active/weapons/ranged/unique/science/kineticrifle/kineticrifle.activeitem
+items/active/weapons/ranged/unique/science/napalmsprayer/isn_napalmsprayer.activeitem
+items/active/weapons/ranged/unique/silverslayer.activeitem
+items/active/weapons/ranged/unique/snubber.activeitem
+items/active/weapons/ranged/unique/teslagun.activeitem
+items/active/weapons/ranged/unique/zerchesiumassaultrifle.activeitem
+items/active/weapons/ranged/unique/zerchesiumpistol.activeitem
+items/active/weapons/ranged/unique/zerchesiumrocketlauncher.activeitem
+items/active/weapons/ranged/unique/zerchesiumshotgun.activeitem
+items/active/weapons/ranged/unique/zerchesiumsmg.activeitem
+items/active/weapons/ranged/unique/zerchesiumsniper.activeitem
+items/active/weapons/staff/orestaffs/penumbrastaff.activeitem
+items/active/weapons/staff/orestaffs/protocitestaff.activeitem
+items/active/weapons/staff/orestaffs/zerchesiumstaff.activeitem
+items/active/weapons/wand/fupoisonwand/fupoisonwand.activeitem
+items/active/weapons/wand/orewands/penumbrawand.activeitem
+items/active/weapons/wand/orewands/protocitewand.activeitem
+items/active/weapons/wand/teslawand/teslastaff1.activeitem
+items/active/weapons/whip/carbonwhip.activeitem
+items/active/weapons/whip/corewhip.activeitem
+items/active/weapons/whip/penumbritewhip.activeitem
+items/active/weapons/whip/zerchesiumwhip.activeitem
+'''.split())
+
+# v0.22 görev metninde Usta Manipülatör olarak anılan iki erişilebilir
+# eşyanın oyuncuya gösterilen alanları. Kırık augment Khe görevinden gelir;
+# tamamlanmış araç da Nanoüretici tarifinin gerçek çıktısıdır.
+V022_MASTER_MANIPULATOR_ASSETS = {
+    'items/augments/quest/humanartifact.augment',
+    'items/tools/fumastermanipulator.beamaxe',
+}
+
 def v021_weapon_pointer(p):
     return p in ('/shortdescription','/description')
 
@@ -600,6 +771,12 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V022_TIER3_COMBAT_ASSETS:
+        return p in ('/shortdescription','/description')
+    if a in V022_MASTER_MANIPULATOR_ASSETS:
+        if a=='items/augments/quest/humanartifact.augment':
+            return p in ('/shortdescription','/description','/augment/displayName')
+        return p in ('/shortdescription','/description')
     if a in V021_EARLY_WEAPON_ASSETS:
         return v021_weapon_pointer(p)
     if a in V020_ACTIVE_QUEST_ASSETS:

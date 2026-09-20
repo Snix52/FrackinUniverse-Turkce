@@ -19,7 +19,8 @@ Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol öze
 - `showInLog`, kabul/tamamlama/hata pencereleri kapalı takip ve uyumluluk görevlerinin metinleri oyuncuya görünür sayılmamalı.
 - NPC `offeredQuests` içinde yorum satırına alınmış görev zincirleri ve yalnız geliştirici gemisi/hazine havuzuna bağlı görevler normal oyuncu kapsamına alınmamalı.
 - `items/generic/crafting` kapsamındaki item/consumable dosyalarında bu sürüm için yalnız `/shortdescription` ve `/description` çevrilebilir; `itemName`, efekt, fiyat, kategori ve tooltip mekanikleri teknik alan olarak korunmalı.
-- Silah kapsamına alınan `.activeitem` dosyalarında aktif araştırma düğümü ile gerçek `.recipe` çıktısı birlikte doğrulanmalı; yalnız araştırma listesi veya tanım dosyası yeterli sayılmamalı. v0.21 için yalnız exact allowlist'teki 121 yeni assette `/shortdescription` ve `/description` çevrilebilir; hasar, yetenek, mermi, kategori ve script alanları korunmalı.
+- Silah kapsamına alınan `.activeitem` dosyalarında aktif araştırma düğümü ile gerçek `.recipe` çıktısı birlikte doğrulanmalı; yalnız araştırma listesi veya tanım dosyası yeterli sayılmamalı. v0.21 için exact allowlist'teki 121, v0.22 için exact allowlist'teki 157 yeni savaş ekipmanı assetinde yalnız `/shortdescription` ve `/description` çevrilebilir; hasar, yetenek, mermi, kategori ve script alanları korunmalı.
+- Usta Manipülatör tutarlılık düzeltmesinde yalnız iki runtime-bağlı assetin görünür alanları kapsama alınmalı: kırık augment için `/shortdescription`, `/description`, `/augment/displayName`; tamamlanmış araç için `/shortdescription`, `/description`. `itemName`, pickup görevi, blueprint ve araç mekaniği alanları korunmalı.
 - Starbound'un ham satır sonu içeren JSON benzeri assetleri de kaynak simülasyonundan kaçmamalı.
 
 ## LQA kapısı

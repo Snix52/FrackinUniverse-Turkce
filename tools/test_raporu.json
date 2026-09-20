@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.21.0-beta",
+  "translation_version": "0.22.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 3613,
+  "translated_display_fields": 3932,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 3628,
-  "patched_assets": 885,
+  "total_localized_display_units": 3947,
+  "patched_assets": 1044,
   "raw_override_assets": 1,
-  "target_assets_total": 886,
+  "target_assets_total": 1045,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -52,22 +52,24 @@
     "v0.18 Bilim Karakolu": 139,
     "v0.19 Üretim malzemeleri": 470,
     "v0.20 Aktif özel görevler": 112,
-    "v0.21 Erken oyun silahları": 242
+    "v0.21 Erken oyun silahları": 242,
+    "v0.22 Görev-eşya tutarlılığı": 5,
+    "v0.22 Kademe 3 savaş ekipmanı": 314
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (3613/3613)",
+    "unique_paths": "PASS (3932/3932)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
     "printf_placeholder_integrity": "PASS (%s / %% and supported printf specifiers)",
-    "fixture_application": "PASS (current 3613-field catalog; inactive research, disconnected quest assets, 10 runtime-dead v0.18 objects, 26 runtime-dead/deprecated v0.19 crafting items and 69 v0.20 inactive/broken quest files rejected before patch generation; v0.21 restricted to 121 exact weapon assets)",
-    "source_mismatch_rejection_cases": 3613,
-    "source_mismatch_rejection": "PASS (3613 test-guarded structured fields)",
+    "fixture_application": "PASS (current 3932-field catalog; inactive research, disconnected quest assets, 10 runtime-dead v0.18 objects, 26 runtime-dead/deprecated v0.19 crafting items and 69 v0.20 inactive/broken quest files rejected before patch generation; v0.21 restricted to 121 and v0.22 to 157 exact research/recipe-backed combat assets)",
+    "source_mismatch_rejection_cases": 3932,
+    "source_mismatch_rejection": "PASS (3932 test-guarded structured fields)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (3525/3525 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
+    "exact_source_pointer_validation": "PASS (3844/3844 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
     "starbound_raw_newline_json_validation": "PASS (strict=False parse plus exact pointer simulation)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
@@ -79,7 +81,7 @@
     "v05_new_source_pointer_validation": "PASS (216/216 active fields across 33 source assets)",
     "v05_build_allowlist": "PASS (216/216 active paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS (v0.21 catalog/tool full-source static verification; GitHub Actions run 35522873075)",
+    "build_allowlist_current_scope": "PASS (v0.22 catalog/tool full-source static verification; GitHub Actions pending)",
     "craftsmanship_source_pointer_validation": "PASS (153/153 active tree fields; runtime-unused default pair and workbenchatechy excluded)",
     "craftsmanship_patch_pairing": "PASS (153 test + 153 replace)",
     "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
@@ -178,7 +180,16 @@
     "v21_weapon_build_allowlist": "PASS (121 exact weapon assets; shortdescription and description only)",
     "v21_out_of_scope_weapon_guard": "PASS (unlisted Titanium weapon rejected before patch generation)",
     "v21_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "github_actions_build_and_zip": "PASS (run 35522873075; package commit 00642868b4e2c160c26f28609c1e1de362940aa4)"
+    "github_actions_build_and_zip": "PENDING for v0.22 (v0.21 last success: run 35522873075)",
+    "v022_tier3_research_recipe_coverage": "PASS (158/158 combat assets across six active Tier 3 nodes; 1 previously covered + 157 newly localized)",
+    "v022_master_manipulator_inventory_consistency": "PASS (2/2 reachable inventory assets; 5/5 visible fields use Usta Manipülatör)",
+    "v022_quest_prose_correction": "PASS (combatmaneuvering1 text + completionText use Tuhaf eserin)",
+    "v022_pinned_fu_source_validation": "PASS (319/319)",
+    "v022_patch_pairing": "PASS (319 test + 319 replace across 159 new patch assets)",
+    "v022_build_allowlist": "PASS (319/319 new structured paths covered)",
+    "v022_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
+    "v022_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
+    "v022_number_integrity_guard": "PASS (mutated shield stat rejected)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -635,6 +646,39 @@
       "bytes": 695989,
       "git_blob_sha": "19104b1ef49638c18b5d6c08626a53c31761bdcc"
     },
+    "in_game_lqa": "NOT PERFORMED"
+  },
+  "v022_scope": {
+    "active_tier3_research_nodes": [
+      "titaniumgear",
+      "carbonarmorgear",
+      "wastelandgear",
+      "protocitegear",
+      "penumbritegear",
+      "zerchesiumgear"
+    ],
+    "research_unlocked_combat_assets": 158,
+    "combat_assets_with_recipe_output": 158,
+    "previously_covered_combat_assets": 1,
+    "newly_localized_combat_assets": 157,
+    "tier3_added_structured_fields": 314,
+    "master_manipulator_inventory_assets": 2,
+    "master_manipulator_added_structured_fields": 5,
+    "combatmaneuvering_prose_fields_corrected": 2,
+    "added_structured_fields": 319,
+    "added_patch_assets": 159,
+    "pinned_fu_new_fields": 319,
+    "layered_external_new_fields": 0,
+    "source_provenance": "PASS (319/319)",
+    "structured_field_count_after_release": 3932,
+    "localized_display_units_after_release": 3947,
+    "patch_assets_after_release": 1044,
+    "target_assets_total": 1045,
+    "translated_pointers": [
+      "/shortdescription",
+      "/description",
+      "/augment/displayName"
+    ],
     "in_game_lqa": "NOT PERFORMED"
   }
 }

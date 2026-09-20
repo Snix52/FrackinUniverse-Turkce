@@ -450,3 +450,12 @@
 - Silah türleri oyuncuya kısa ve ayırt edilebilir adlarla kilitlendi: Broadsword -> **Büyük Kılıç**, Quarterstaff -> **Dövüş Asası**, Rapier -> **Meç**, Staff -> **Asa**, Wand -> **Değnek**. `Stynger`, `Cestus`, `Protectorate`, `Telebrium`, `Bushmaster`, `Fellshot` ve `Hellion` özel/model adları korundu.
 - Kaynaktaki mizahi veya yetişkin ton temizlenmedi; örneğin Telebrium Uzun Kılıç açıklamasındaki ima, Türkçede doğal fakat kaynakla aynı şiddette bırakıldı. Kaynakta olmayan küfür veya yeni şaka eklenmedi.
 - Yeni kapsam **242 yapılandırılmış alan / 121 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağı ve blob SHA'larıyla exact doğrulandı; patch pairing **242 test + 242 replace PASS**. Proje toplamı **3613 structured + 15 Lua / 885 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.22 Kademe 3 savaş ekipmanı ve tutarlılık düzeltmeleri
+
+- Aktif Zırh ve Silahlar ağacındaki `titaniumgear`, `carbonarmorgear`, `wastelandgear`, `protocitegear`, `penumbritegear` ve `zerchesiumgear` düğümleri seçildi. Bu düğümlerin açtığı **158/158 savaş ekipmanı** etkin `.recipe` çıktısıyla doğrulandı.
+- Daha önce Battle görevi kapsamında çevrilen `energyassault` korundu. Kalan **157 assette** yalnız `/shortdescription` ve `/description` yerelleştirildi; teknik `itemName`, hasar, yetenek, mermi, kategori ve script alanları değiştirilmedi.
+- Araştırma düğümlerinin açtığı beş kalkan da üretilebilir savaş ekipmanı olduğundan aynı kapsamda tutuldu. Salt dosya varlığı veya yalnız araştırma listesi yeterli sayılmadı.
+- `mastermanipulator2` görevi ödül olarak `humanartifactaugment` verir; bu augment `mastermanipulator` görevini başlatır ve Nanoüretici tarifiyle `fumastermanipulator` aracına dönüşür. Bu nedenle kırık augmentin 3 görünür alanı ile tamamlanmış aracın 2 görünür alanı birlikte **Usta Manipülatör** terminolojisine eşlendi.
+- `combatmaneuvering1` içindeki iki “Tuhaf eser yanına yaklaştığında...” çevirisi özneyi belirsizleştirdiği için “Tuhaf eserin yanına yaklaştığında...” olarak düzeltildi. Kaynak değer, renk ve köşeli parantez QA istisnası değişmedi.
+- Yeni kapsam **319 yapılandırılmış alan / 159 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **319 test + 319 replace PASS**. Proje toplamı **3932 structured + 15 Lua / 1044 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.
