@@ -243,3 +243,14 @@
 - `create_plastic` kaynak metni güncel üretim zinciriyle uyuşmuyor: metin `Bio Lab` diyor, pinned FU 6.5.8 tarifleri `ff_plastic` üretimini `chemlab2` altında yapıyor. Türkçe yönlendirme gerçek makine adı olan **Kimya Laboratuvarı** üzerinden düzeltildi; Kemik Ununun santrifüjde Yağ verebildiği kaynak tarifle ayrıca doğrulandı.
 - Buz Kristali vanilla Starbound kaynağı olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact kaynak doğrulamasına bağlandı.
 - Bu tur statik kaynak/terminoloji çalışmasıdır; oyun içi LQA ayrıca yapılacaktır.
+
+### v0.10 Electronics geçişi
+
+- `fu_electronics` quest-listindeki **8/8 görev** yerelleştirildi; `fuquest_powerstation` ve `fuquest_battery` dosya olarak `deprecated` altında olsa da quest-list tarafından `player.startQuest()` ile hâlâ aktiftir.
+- Electronics görevleri **30 görünür görev alanı** içeriyor. Yapay Zekâ Çipi, Silisyum Devre Kartı ve Gözcü hedef assetlerindeki 6 alanla paket toplamı **36 yeni yapılandırılmış alan / 11 yeni patch asset** oldu.
+- AI Chip / A.I. Chip -> **Yapay Zekâ Çipi**, Silicon Board -> **Silisyum Devre Kartı**, Watcher -> **Gözcü** LOCKED.
+- `create_circuitboard` kaynak metni güncel tarifle uyuşmuyor: eski metin Silisyum + Bakır Kabloyu Madde Birleştiricide birleştirmeyi söylüyor. Vanilla pinned tarif `siliconboard` için `craftingfurnace3` grubunu, yani **Atomik Fırını**, ve Kum + Kömür girdilerini kullanıyor. FU Madde Birleştirici yalnız `prototyper1/2/3` filtrelerini gösteriyor. Türkçe görev gerçek üretim zincirine göre düzeltildi.
+- `fuquest_battery` kaynak metni eski **Wiring Tool** adını kullanıyor. FU'daki ilgili araç `wiretoolfu` ve gerçek kısa adı **Mechanic's Wrench**; projede **Tamirci Anahtarı** olarak zaten LOCKED/çevrilmiş olduğundan görev buna eşlendi.
+- `create_centrifuge` tamamlanma metnindeki generic `advanced centrifuge`, gerçek sonraki envanter adı olan **Gaz Santrifüjü** ile açıklaştırıldı.
+- Silisyum Devre Kartı vanilla asset olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
+- Electronics yeni alanları pinned/vanilla kaynakta **36/36 PASS**; renk, kontrol kodu ve sayı bütünlüğü **PASS**; üretilen patchlerde **36 test + 36 replace PASS**.
