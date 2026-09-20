@@ -31,7 +31,7 @@ jobs:
 
       - name: Package mod
         run: |
-          rm -f dist/FU_Turkce_v0.10.0_Beta.zip dist/FU_Turkce_v0.11.0_Beta.zip
+          rm -f dist/FU_Turkce_v0.11.0_Beta.zip
           cd build_output
           zip -r ../dist/FU_Turkce_v0.11.0_Beta.zip FU_Turkce
 
@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A dist
+          git add dist/FU_Turkce_v0.11.0_Beta.zip
           if git diff --cached --quiet; then
             echo "Package is already current."
           else
