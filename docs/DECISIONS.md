@@ -416,3 +416,15 @@
 - Geriye dönük full-source taramasında FU'nun `orange.consumable` açıklamasının vanilla tabandan farklı olduğu saptandı. Kaynak kilidi gerçek FU değeri olan `It's an orange. ^green;Type: Plant^reset;` ile düzeltildi; iki alan pinned FU provenansına taşındı.
 - Yeni alanların **340/340'ı pinned FU 6.5.8 kaynağıyla exact doğrulandı**. Proje toplamı **2789 structured + 15 Lua / 500 patch asset**; provenans **2701 pinned FU + 88 layered/external**, izlenmeyen alan **0**.
 - Oyun içi font, panel taşması, etkileşim ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.19 Üretim malzemeleri
+
+- `items/generic/crafting` altında 290 `.item` ve 23 `.consumable`, toplam **313 asset** envanterlendi. Önceden kapsanan 52 asset çıkarılınca kalan **261 aday** runtime bağlantılarıyla denetlendi.
+- Tarif girdisi/çıktısı, araştırma açılımı, görev ödülü, çıkarma veya işleme tablosu, ganimet havuzu ve etkin tür blueprint zinciri erişilebilirlik kanıtı sayıldı. Yalnız dosyanın var olması, yorum satırı, `.disabled` tarif veya üretim tarifi olmayan blueprint kaydı yeterli sayılmadı.
+- **235 erişilebilir assette** yalnız `/shortdescription` ve `/description` alanları yerelleştirildi. `itemName`, kategori, fiyat, efekt, tooltip türü, script, tarif ve diğer teknik alanlar değiştirilmedi.
+- **19 assetin** kendi tanımı dışında hiçbir exact item-ID referansı bulunmadı. **7 ek asset** yalnız yorum satırı, `.disabled` tarif, deprecated geri-kazanım girdisi, ürün kaynağı olmayan kargo kabul listesi veya karşılığı bulunmayan tür blueprint kaydında geçti. Toplam **26 asset** dağıtım dışı bırakılıp build deny-guard'a alındı.
+- Deprecated `kheWarpedAIChip`, yalnız eski kayıtların kaynaklarını geri kazanmasına yarayan çıkarma girdisi olarak korunur; yeni oyun akışında üretilemediği ve kendi açıklaması da açıkça deprecated dediği için yerelleştirme kapsamına alınmadı.
+- `fufleshalien`, aynı otopsi/embalming tablosunda hem `cadaveralien` çıktısı hem de işlenebilir girdi olduğundan erişilebilir kabul edildi. `sciencebrochure`, etkin `fu_start_MA` görevinin ödülü olduğundan kapsama alındı.
+- İzotoplar için yerleşik Türkçe element adları kullanıldı: **Döteryum, Neptünyum, Plütonyum, Toryum, Uranyum**. `Precursor`, `X'ian`, `Aether`, `Lunari` ve FU malzeme özel adları korunurken işlevsel son ekler Türkçeleştirildi.
+- Yeni kapsam **470 yapılandırılmış alan / 235 patch asset**tir. Tamamı pinned FU 6.5.8 kaynak değerleri ve blob SHA'larıyla doğrulandı; 470 `test` + 470 `replace` eşleşmesi PASS.
+- Proje toplamı **3259 structured + 15 Lua / 735 patch asset** oldu. Oyun içi envanter, tooltip, font, satır sonu ve bağlam LQA'sı ayrıca bekliyor.

@@ -123,6 +123,44 @@ V018_CHAT_OPTION_ASSETS = {
     'objects/scienceoutpost/starbucks/fustarbucks.object',
 }
 
+# v0.19: items/generic/crafting altındaki daha önce kapsanmayan 261 adayın
+# runtime bağlantıları denetlendi. 235 etkin asset yalnızca envanter adı ve
+# açıklama alanlarıyla kapsanır. Aşağıdaki 26 asset etkin tarif/ganimet/görev
+# akışına bağlı değildir ya da yalnız deprecated kayıt temizliği içindir.
+V019_DEAD_CRAFTING_ITEM_ASSETS = {
+    'items/generic/crafting/chemlab/narcotics/fu_expiravittar.consumable',
+    'items/generic/crafting/chemlab/narcotics/fu_malware.consumable',
+    'items/generic/crafting/chemlab/narcotics/fu_prerolled.consumable',
+    'items/generic/crafting/chemlab/narcotics/fu_radiant.consumable',
+    'items/generic/crafting/chemlab/narcotics/fu_toxictop_blotter.consumable',
+    'items/generic/crafting/chemlab/narcotics/fu_vexpill.consumable',
+    'items/generic/crafting/chemlab/narcotics/fu_wubwub.consumable',
+    'items/generic/crafting/circuitboard.item',
+    'items/generic/crafting/ff_resin.item',
+    'items/generic/crafting/fissionfurnace/ebonshard.item',
+    'items/generic/crafting/fissionfurnace/morphitebar.item',
+    'items/generic/crafting/fu_holodisc.item',
+    'items/generic/crafting/fuguts.item',
+    'items/generic/crafting/imperviumfurnitureplating.item',
+    'items/generic/crafting/matterassembler/coil.item',
+    'items/generic/crafting/matterassembler/kheWarpedRegulatorChip.item',
+    'items/generic/crafting/matterassembler/magneticshielding.item',
+    'items/generic/crafting/matterassembler/microchip.item',
+    'items/generic/crafting/pelt.item',
+    'items/generic/crafting/reactormagnet.item',
+    'items/generic/crafting/servitorbehaviorchip.item',
+    'items/generic/crafting/servitorchassis.item',
+    'items/generic/crafting/servitorlaser.item',
+    'items/generic/crafting/skathimpervium.item',
+    'items/generic/crafting/starbooze/emptybottle2.item',
+    'items/generic/crafting/tethydefurnitureplating.item',
+}
+
+def v019_crafting_item(a,p):
+    return (a.startswith('items/generic/crafting/')
+            and (a.endswith('.item') or a.endswith('.consumable'))
+            and p in ('/shortdescription','/description'))
+
 def v018_object_pointer(a,p):
     if p in ('/shortdescription','/description','/subtitle'):
         return True
@@ -315,6 +353,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if v019_crafting_item(a,p):
+        return True
     if a in V018_OBJECT_ASSETS:
         return v018_object_pointer(a,p)
     if a in V017_CRAFTING_ASSETS:
@@ -679,6 +719,7 @@ def main():
         if (a,p) in seen:raise ValueError('Yinelenen alan: '+a+p)
         seen.add((a,p))
         if a in V018_DEAD_OBJECT_ASSETS:raise ValueError('Runtime bağlantısı olmayan v0.18 nesnesi: '+a)
+        if a in V019_DEAD_CRAFTING_ITEM_ASSETS:raise ValueError('Runtime bağlantısı olmayan/deprecated v0.19 üretim eşyası: '+a)
         if not allowed(a,p):raise ValueError('Oyuncu metni olmayan alan: '+a+p)
         if nonvisible_research_pointer(a,p):raise ValueError('Aktif araştırma düğümüne bağlı olmayan metin: '+a+p)
         if a in NONVISIBLE_QUEST_ASSETS:raise ValueError('Aktif görev zincirine bağlı olmayan/kırık görev: '+a)
@@ -750,10 +791,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + İşlevsel Nesneler (Beta)',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, objects/crafting üretim makineleri ve seçili işlevsel Power/Bees/Science Outpost nesnelerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri ve erişilebilir items/generic/crafting malzemelerini kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():

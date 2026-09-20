@@ -13,6 +13,9 @@ Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol öze
 - Terminoloji sözlüğündeki LOCKED kararlar ihlal edilmemeli.
 - Exact FU kaynak commitindeki tüm pointer ve İngilizce kaynak değerleri doğrulanmalı.
 - Aday nesnelerde salt dosya/tileset tanımı erişilebilirlik kanıtı sayılmamalı; tarif, araştırma, görev, dükkân veya gerçek Tiled yerleşimiyle runtime bağlantısı doğrulanmalı.
+- Aday eşyalarda yalnız tanım dosyasının bulunması veya `/spawnitem` ile çağrılabilmesi erişilebilirlik kanıtı sayılmamalı; etkin tarif, araştırma, görev ödülü, çıkarma/işleme tablosu, ganimet ya da gerçek başlangıç/blueprint zinciri aranmalı.
+- `.disabled` tarifler, yorum satırları, deprecated geri-kazanım girdileri ve üretim kaynağı olmayan filtre/blueprint kayıtları tek başına canlı içerik sayılmamalı.
+- `items/generic/crafting` kapsamındaki item/consumable dosyalarında bu sürüm için yalnız `/shortdescription` ve `/description` çevrilebilir; `itemName`, efekt, fiyat, kategori ve tooltip mekanikleri teknik alan olarak korunmalı.
 - Starbound'un ham satır sonu içeren JSON benzeri assetleri de kaynak simülasyonundan kaçmamalı.
 
 ## LQA kapısı

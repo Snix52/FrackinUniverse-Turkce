@@ -417,3 +417,35 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Lab Directory | Bilim Karakolu ipucu / makine | Nesne | Laboratuvar Dizini | Laboratuvar Rehberi | LOCKED | Yakındaki makine çıktısı arama işlevi |
 | Meatvine | FU bitkisi | Nesne | Et Sarmaşığı | Et Asması | LOCKED | Danışma Noktası ipucuyla standartlaştırıldı |
 | Darklight Flower | FU bitkisi | Nesne | Karanlık Işık Çiçeği | Karanlıkışık Çiçeği | LOCKED | |
+
+## v0.19 Üretim malzemeleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Ore | Envanter malzeme son eki | Terim | Cevher | Maden | LOCKED | Özel malzeme adı korunur: Densinium Cevheri |
+| Bar | Envanter metal son eki | Terim | Külçe | Çubuk | LOCKED | İzotop rod kullanımından ayrılır |
+| Rod | İzotop/yakıt son eki | Terim | Çubuk | Külçe | LOCKED | Döteryum Çubuğu, Toryum Çubuğu |
+| Shard | Kristal/artefakt parçası | Terim | Parça | Kırık | LOCKED | Lunari Parçası, Protheon Parçası |
+| Fuel | Tooltip durum satırı | UI | Yakıt | Fuel | LOCKED | Renk ve sayı kodları korunur |
+| Type | Tooltip sınıf satırı | UI | Tür | Tip | LOCKED | |
+| Madness Gain | Narkotik tooltipi | UI | Delilik Kazanımı | Delilik Kazancı | LOCKED | Mevcut tüketilebilir eşya terminolojisiyle eşlendi |
+| Deuterium | İzotop | Kaynak | Döteryum | Deuterium | LOCKED | Yerleşik bilimsel karşılık |
+| Neptunium | Element/izotop | Kaynak | Neptünyum | Neptunium | LOCKED | Yerleşik bilimsel karşılık |
+| Plutonium | Element/izotop | Kaynak | Plütonyum | Plutonium | LOCKED | Yerleşik bilimsel karşılık |
+| Thorium | Element/izotop | Kaynak | Toryum | Thorium | LOCKED | Yerleşik bilimsel karşılık |
+| Uranium | Element/izotop | Kaynak | Uranyum | Uranium | LOCKED | Yerleşik bilimsel karşılık |
+| Nitrogen | Element | Kaynak | Azot | Nitrojen | LOCKED | Yerleşik Türkçe element adı |
+| Oxygen | Element | Kaynak | Oksijen | Oxygen | LOCKED | |
+| Sulphur | Element | Kaynak | Kükürt | Sülfür | LOCKED | Element adı; bileşiklerde sülfat kullanımı ayrıdır |
+| Phosphorus | Element | Kaynak | Fosfor | Phosphorus | LOCKED | |
+| Fungal Ichor | Üretim malzemesi | Kaynak | Mantar Özsuyu | Mantar İkoru | LOCKED | Mutavisk araştırma metniyle eşlendi |
+| Bio Thread | Üretim malzemesi | Kaynak | Biyo-İplik | Biyo İp | LOCKED | Mutavisk araştırma metniyle eşlendi |
+| Mutavisk Silk | Üretim malzemesi | Kaynak | Mutavisk İpeği | Mutavisk Silk | LOCKED | Science görevleriyle eşlendi |
+| Carbon Plate | Üretim malzemesi | Kaynak | Karbon Plaka | Karbon Levha | LOCKED | Carbon Plating / Karbon Kaplama genel kavramından ayrı gerçek eşya adı |
+| Advanced Alloy | Üretim malzemesi | Kaynak | Gelişmiş Alaşım | İleri Alaşım | LOCKED | Advanced sıfat kilidiyle uyumlu |
+| Dense Alloy | Üretim malzemesi | Kaynak | Yoğun Alaşım | Sıkı Alaşım | LOCKED | Araştırma adıyla eşlendi |
+| Lunari Crystal | Üretim malzemesi | Kaynak | Lunari Kristali | Lunari Cevheri | LOCKED | Lunari özel adı korunur |
+| Precursor Alloy | Üretim malzemesi | Kaynak | Precursor Alaşımı | Öncül Alaşımı | LOCKED | Precursor özel adı korunur |
+| X'ian | Tür/teknoloji özel adı | Özel ad | X'ian | Şiyan | LOCKED | Kesme işareti ve yazım korunur |
+| Aether | FU dünya/malzeme özel adı | Özel ad | Aether | Eter | LOCKED | Aether Worlds terminolojisiyle eşlendi |
+| Avian | Starbound tür adı | Özel ad | Avian | Kuş | LOCKED | Gen eşyasında da tür adı korunur |
