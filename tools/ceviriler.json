@@ -11465,6 +11465,282 @@
         "external_source_repository": "FerreiraJGB/Starbound",
         "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
       }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/title",
+      "en": "Contraband",
+      "tr": "Kaçak Mal",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/text",
+      "en": "AI is expressly forbidden on my homeworld. But I need an ^orange;AI Chip^reset; for my research! Can you please bring me one? I would reward you nicely.",
+      "tr": "Yapay zekâ benim gezegenimde kesinlikle yasak. Ama araştırmam için bir ^orange;Yapay Zekâ Çipine^reset; ihtiyacım var! Bana bir tane getirebilir misin? Karşılığını iyi veririm.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/completionText",
+      "en": "Thanks. I've transferred payment for your troubles directly to your account.",
+      "tr": "Teşekkürler. Zahmetin için ödemeni doğrudan hesabına aktardım.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_aichip.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;AI Chip^reset; to the goggled Novakid at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Yapay Zekâ Çipini^reset; ^orange;Bilim Karakolundaki^reset; gözlüklü Novakid'e götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/title",
+      "en": "Centrifusion",
+      "tr": "Santrifüzyon",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/text",
+      "en": "If you want to advance your lab, you are going to want ^orange;Lab Centrifuge^reset;. Without one, you can't get ^green;an advanced centrifuge^reset; to produce high-end fissionable materials. Make a ^orange;Lab Centrifuge^reset; in a ^orange;Power Station^reset; and bring it to me.",
+      "tr": "Laboratuvarını geliştireceksen bir ^orange;Laboratuvar Santrifüjüne^reset; ihtiyacın olacak. O olmadan ^green;gelişmiş bir santrifüje^reset; geçip üst düzey bölünebilir malzemeler üretemezsin. ^orange;Güç İstasyonunda^reset; bir ^orange;Laboratuvar Santrifüjü^reset; üret ve bana getir.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/completionText",
+      "en": "When you are able to, ^green;upgrade to an advanced centrifuge^reset; to really step up your lab game!",
+      "tr": "Fırsatın olduğunda laboratuvarını gerçekten geliştirmek için ^green;Gaz Santrifüjüne yükselt^reset;!",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak generic 'advanced centrifuge' diyor; gerçek sonraki yükseltme envanter adı Gas Centrifuge/Gaz Santrifüjü."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Lab Centrifuge^reset; to the ^green;annoying guy^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Laboratuvar Santrifüjünü^reset; ^orange;Bilim Karakolundaki^reset; ^green;sinir bozucu adama^reset; götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/title",
+      "en": "Hardware Matters",
+      "tr": "Donanım Önemlidir",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/text",
+      "en": "Instructive: Now that you have ^orange;Silicon^reset; and ^orange;Copper Wire^reset; why not combine the two at your ^orange;Matter Assembler^reset; and craft a ^orange;Silicon Board^reset;?",
+      "tr": "Bilgilendirici: Bir ^orange;Atomik Fırında^reset; ^orange;Kum^reset; ve ^orange;Kömür^reset; kullanarak bir ^orange;Silisyum Devre Kartı^reset; üret.",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak eski tarifte Silicon + Copper Wire ve Matter Assembler diyor. Pinned vanilla tarif siliconboard'u craftingfurnace3/Atomik Fırında Sand + Coal ile üretir; FU Matter Assembler yalnız prototyper1/2/3 filtrelerini kullanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/completionText",
+      "en": "Encouraging: You will need a large amount of boards, for they are the building block of many more advanced chipsets.",
+      "tr": "Teşvik edici: Bu kartlardan bolca gerekecek; pek çok gelişmiş yonga setinin temelini oluştururlar.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Silicon Board^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Silisyum Devre Kartını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/title",
+      "en": "Powdery Power",
+      "tr": "Toz Gücü",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/text",
+      "en": "I've heard of ^orange;Powder Sifters^reset; before but have never seen one in action. Build one in a ^orange;Power Station^reset; and bring it to me, and maybe I'll help you out.",
+      "tr": "^orange;Toz Eleklerini^reset; daha önce duydum ama çalışırken hiç görmedim. ^orange;Güç İstasyonunda^reset; bir tane üretip bana getir; belki ben de sana yardım ederim.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/completionText",
+      "en": "As promised, your reward. May this ^green;cash^reset; serve you well!",
+      "tr": "Söz verdiğim gibi, ödülün. Bu ^green;para^reset; işine yarasın!",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_powdersifter.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Powder Sifter^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Toz Eleğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/title",
+      "en": "Solar Power",
+      "tr": "Güneş Enerjisi",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/text",
+      "en": "Powered stations are a ^green;huge productivity booster^reset;. To start with, you'll need a ^orange;Solar Panel^reset; to produce energy. Build one on a ^orange;Power Station^reset;.",
+      "tr": "Elektrikle çalışan istasyonlar ^green;üretkenliği ciddi biçimde artırır^reset;. Başlangıç için enerji üretecek bir ^orange;Güneş Paneline^reset; ihtiyacın var. ^orange;Güç İstasyonunda^reset; bir tane üret.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/completionText",
+      "en": "Now you've started the engineering path of your adventure. I suggest getting some other machines up soon!",
+      "tr": "Artık maceranın mühendislik tarafına da adım attın. Yakında birkaç makine daha kurmanı öneririm!",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_solarpanel.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Solar Panel^reset; to the scientist at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Güneş Panelini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate",
+      "pointer": "/title",
+      "en": "Wind Power",
+      "tr": "Rüzgâr Enerjisi",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate",
+      "pointer": "/text",
+      "en": "You can generate power in many ways. ^orange;Alternator^reset; generators are just the simplest. Try building a ^orange;Wind Turbine^reset;, and see how useful they get in a windstorm!",
+      "tr": "Enerjiyi birçok şekilde üretebilirsin. ^orange;Alternatör^reset; yalnızca en basit seçenek. Bir ^orange;Rüzgâr Türbini^reset; kur ve fırtınalı havada ne kadar işe yaradığını gör!",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_powerstation.questtemplate",
+      "pointer": "/completionText",
+      "en": "Other options for power include Solar, Combustion, Fission and Quantum power generation. Each has pros and cons. You'll definitely want to try them all.",
+      "tr": "Diğer enerji seçenekleri arasında güneş, yanma, fisyon ve kuantum üretimi bulunur. Her birinin artıları ve eksileri var; hepsini denemek isteyeceksin.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/title",
+      "en": "Long Distance Power",
+      "tr": "Uzaktan Güç",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/text",
+      "en": "Powered stations are a ^green;huge productivity booster^reset;. With a ^orange;Watcher^reset; they are even more versatile! Try crafting a ^orange;Watcher^reset; in your ^orange;Power Station^reset; and bring it to me.",
+      "tr": "Elektrikle çalışan istasyonlar ^green;üretkenliği ciddi biçimde artırır^reset;. Bir ^orange;Gözcü^reset; ile çok daha kullanışlı hâle gelirler! ^orange;Güç İstasyonunda^reset; bir ^orange;Gözcü^reset; üretip bana getir.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/completionText",
+      "en": "^orange;Watchers^reset; are special. They will keep powered devices within their range ^gray;(20 blocks)^reset; running while you are away, planetside. ^red;Leaving a planet will reset all of your Watchers.^reset; Your SAIL can only track so many before it slows down.^red;Don't over-use them^reset;.",
+      "tr": "^orange;Gözcüler^reset; özel cihazlardır. Gezegendeyken başka yerde olsan bile menzillerindeki ^gray;(20 blok)^reset; elektrikli cihazları çalışır durumda tutarlar. ^red;Gezegenden ayrılmak tüm Gözcülerini sıfırlar.^reset; SAIL yavaşlamadan önce yalnızca belirli sayıda Gözcüyü takip edebilir.^red;Aşırı kullanma.^reset;",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_watcher.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Watcher^reset; to the ^green;purple-armored scientist^reset; at the top floor of the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Gözcüyü^reset; ^orange;Bilim Karakolunun^reset; en üst katındaki ^green;mor zırhlı bilim insanına^reset; götür.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/title",
+      "en": "Fuel Your Power",
+      "tr": "Gücünü Besle",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/text",
+      "en": "You don't need batteries, but they will be extremely useful. Create a ^orange;Basic Battery^reset; in your ^orange;Electronics Center^reset; to try one out.",
+      "tr": "Pil kullanmak zorunda değilsin ama çok işine yararlar. Denemek için ^orange;Elektronik Merkezinde^reset; bir ^orange;Temel Pil^reset; üret.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/completionText",
+      "en": "Once you place it, use your ^orange;Wiring Tool^reset; to link to a ^green;generator^reset; to a ^blue;blue node^reset; on your battery.",
+      "tr": "Pili yerleştirdikten sonra ^orange;Tamirci Anahtarını^reset; kullanarak bir ^green;jeneratörün çıkışını^reset; pilindeki ^blue;mavi düğüme^reset; bağla.",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak eski 'Wiring Tool' adını kullanıyor; FU'nun ilgili aracı wiretoolfu ve gerçek envanter adı Mechanic's Wrench, Türkçede Tamirci Anahtarı olarak LOCKED."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/aichip.item",
+      "pointer": "/description",
+      "en": "An unrivaled chipset capable of impossibly complex processes.",
+      "tr": "İnanılmaz karmaşık işlemleri gerçekleştirebilen eşsiz bir yonga seti.",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "items/generic/crafting/matterassembler/aichip.item",
+      "pointer": "/shortdescription",
+      "en": "^#88e25b;A.I. Chip^reset;",
+      "tr": "^#88e25b;Yapay Zekâ Çipi^reset;",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "items/generic/crafting/siliconboard.item",
+      "pointer": "/description",
+      "en": "A silicon board. Can be used to craft electronics.",
+      "tr": "Elektronik üretiminde kullanılabilen bir silisyum devre kartı.",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/siliconboard.item",
+      "pointer": "/shortdescription",
+      "en": "Silicon Board",
+      "tr": "Silisyum Devre Kartı",
+      "section": "v0.10 Science - Electronics",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/fu_watcher/fu_watcher.object",
+      "pointer": "/description",
+      "en": "Used to keep ^blue;everything within 20 tiles^reset; loaded while away, if turned on. Shuts off when you leave the planet.^red;\nAvoid over-use. Will impact performance.^reset;",
+      "tr": "Açıkken, sen uzaktayken ^blue;20 blok içindeki her şeyi^reset; etkin tutar. Gezegenden ayrıldığında kapanır.^red;\nAşırı kullanma. Performansı etkiler.^reset;",
+      "section": "v0.10 Science - Electronics"
+    },
+    {
+      "asset": "objects/fu_watcher/fu_watcher.object",
+      "pointer": "/shortdescription",
+      "en": "Watcher",
+      "tr": "Gözcü",
+      "section": "v0.10 Science - Electronics"
     }
   ]
 }
