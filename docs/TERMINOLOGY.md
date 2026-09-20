@@ -557,3 +557,26 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Chill | Tehlike / durum etkisi | Durum | Üşüme | Soğuk | LOCKED | Durum adı olarak kullanılır |
 | Quicksand | Tehlike / zemin etkisi | Durum | Batak Kum | Hızlı Kum | LOCKED | Yerleşik Türkçe karşılık |
 | Dracon / Warscorned | Skath zırh modeli | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | Bağlamı açıklanmayan model adları |
+
+## v0.26 Kademe 3 zırh terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Shield Regen | Zırh tooltip istatistiği | UI | Kalkan Yenilenmesi | Kalkan Rejenerasyonu | LOCKED | |
+| Breath Regen | Zırh tooltip istatistiği | UI | Nefes Yenilenmesi | Solunum Rejenerasyonu | LOCKED | |
+| Proto-Poison | Tehlike / durum etkisi | Durum | Proto-Zehir | Proto Zehri | LOCKED | Bileşik durum adı kısa tutulur |
+| Energy Regen Block | Zırh tooltip istatistiği | UI | Enerji Yenilenme Gecikmesi | Enerji Yenilenme Bloğu | LOCKED | Oyuncuya mekanik etkiyi açıklar |
+| Bomb Tech Damage | Tech tooltip istatistiği | UI | Bomba Teknolojisi Hasarı | Bomba Tech Hasarı | LOCKED | |
+| Defense Tech Efficiency | Tech tooltip istatistiği | UI | Savunma Teknolojisi Verimliliği | Savunma Tech Etkinliği | LOCKED | |
+| Research Bonus | Zırh tooltip istatistiği | UI | Araştırma Bonusu | Araştırma Artısı | LOCKED | |
+| Moderate Radiation | Tehlike / durum etkisi | Durum | Orta Dereceli Radyasyon | Orta Radyasyon | LOCKED | |
+| Moderate Cold | Tehlike / durum etkisi | Durum | Orta Dereceli Soğuk | Ilımlı Soğuk | LOCKED | |
+| Pus | Tehlike / durum etkisi | Durum | İrin | Pus | LOCKED | İngilizce tıbbi anlam kullanılır |
+| Black Tar | Tehlike / zemin etkisi | Durum | Kara Katran | Siyah Tar | LOCKED | |
+| Swim Boost | Zırh tooltip işlevi | UI | Yüzme Takviyesi | Yüzme Boostu | LOCKED | |
+| Thorns | Zırh tooltip işlevi | UI | Dikenler | Diken Hasarı | LOCKED | Kaynak yalnız etki adını verir |
+| Stamina | Zırh tooltip istatistiği | UI | Dayanıklılık | Stamina | LOCKED | |
+| Block | Zırh tooltip istatistiği | UI | Blok | Engelleme | LOCKED | Kalkan mekaniği etiketi |
+| Battleborn | Zırh seti | Nesne | Savaşdoğan | Savaş Doğumlu | LOCKED | Kısa sınıf/set adı |
+| Spacefarer | Zırh seti | Nesne | Uzay Yolcusu | Uzay Gezgini | LOCKED | |
+| Spacepunk / Neishin / Nightar / Tenebrhae | Zırh modeli veya özel ad | Özel ad | Kaynaktaki yazım korunur | Zoraki kelime çevirileri | LOCKED | İşlevsel parça adları ayrıca çevrilir |

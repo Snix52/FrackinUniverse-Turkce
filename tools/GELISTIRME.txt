@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.25.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.26.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  4552 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  4702 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23-v0.24 Kademe 4 savaş ekipmanı + v0.25 Kademe 1-2 aktif zırh setleri allowlist/deny-guard kapsamını doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23-v0.24 Kademe 4 savaş ekipmanı + v0.25-v0.26 Kademe 1-3 aktif zırh setleri allowlist/deny-guard kapsamını doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -440,4 +440,22 @@ v0.25 Kademe 1-2 aktif zırh setleri QA:
   proje toplamı: 4552 structured + 15 Lua = 4567 görünür birim
   toplam patch asset: 1354
   toplam hedef asset: 1355 (1354 patch + 1 ham Lua override)
+  GitHub Actions build/QA/ZIP: PASS (run 35528054146)
+  otomatik paket: dist/FU_Turkce_v0.25.0_Beta.zip / 952029 bayt
+  oyun içi zırh tooltip/font/bağlam LQA: BEKLİYOR
+
+v0.26 Kademe 3 aktif zırh setleri QA:
+  aktif araştırma düğümleri: titaniumgear + carbonarmorgear + wastelandgear + protocitegear + penumbritegear + zerchesiumgear
+  gerçek recipe çıktısıyla doğrulanan zırh: 76/76 asset
+  önceden çevrilmiş Mutavisk miğferi: 1 asset korundu
+  yeni yerelleştirilen: 75 asset / 150 alan
+  çevrilen pointer sınıfları: shortdescription + description
+  pinned FU exact-source: 150/150 PASS
+  patch pairing: 150 test + 150 replace PASS
+  renk/kontrol/sayı bütünlüğü: PASS
+  kaynak/provenans toplamı: 4614 pinned FU + 88 layered/external; 0 izlenmeyen
+  proje toplamı: 4702 structured + 15 Lua = 4717 görünür birim
+  toplam patch asset: 1429
+  toplam hedef asset: 1430 (1429 patch + 1 ham Lua override)
+  GitHub Actions build/QA/ZIP: BEKLİYOR
   oyun içi zırh tooltip/font/bağlam LQA: BEKLİYOR

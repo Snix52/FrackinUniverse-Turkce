@@ -485,3 +485,12 @@
 - `Oxygen` bağışıklık etiketi bu bağlamda element değil, oksijensiz ortam tehlikesidir; oyuncuya etkisini doğru anlatmak için **Oksijensizlik** kullanıldı. `Bio-Ooze`, `Slush`, `Chill` ve `Quicksand` sırasıyla **Biyo-Balçık, Sulu Kar, Üşüme** ve **Batak Kum** olarak kilitlendi.
 - `Dracon` ve `Warscorned`, anlamı oyun içinde açıklanmayan Skath model adları olduğundan özel ad olarak korundu. İşlevsel parça adları ve tooltip metinleri Türkçeleştirildi.
 - Yeni kapsam **228 yapılandırılmış alan / 114 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **4552 structured + 15 Lua / 1354 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.26 Kademe 3 aktif zırh setleri
+
+- Aktif Zırh ve Silahlar ağacındaki `titaniumgear`, `carbonarmorgear`, `wastelandgear`, `protocitegear`, `penumbritegear` ve `zerchesiumgear` düğümleri seçildi. Araştırma açılımı ile gerçek `.recipe` çıktısı birlikte erişilebilirlik kanıtı sayıldı.
+- Altı düğümde **76 üretilebilir zırh parçası** doğrulandı. Science kapsamında daha önce yerelleştirilmiş Mutavisk miğferi korundu; kalan **75 assette** yalnız `/shortdescription` ve `/description` alanları çevrildi.
+- Kaynak klasör kademesi yerine runtime araştırma zinciri esas alındı. Bu nedenle dosya yolu `items/armors/tier4` altında bulunan ancak Kademe 3 araştırma düğümlerinden açılan üç Ödül Avcısı parçası kapsama dâhil edildi.
+- Tooltip terimleri **Kalkan Yenilenmesi, Nefes Yenilenmesi, Proto-Zehir, Enerji Yenilenme Gecikmesi, Bomba Teknolojisi Hasarı, Savunma Teknolojisi Verimliliği** ve **Araştırma Bonusu** biçiminde kilitlendi.
+- `Spacepunk`, `Neishin`, `Nightar` ve `Tenebrhae` özel/model adları korundu. `Battleborn` kısa set adı olarak **Savaşdoğan**, `Spacefarer` ise **Uzay Yolcusu** biçiminde yerelleştirildi.
+- Yeni kapsam **150 yapılandırılmış alan / 75 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **4702 structured + 15 Lua / 1429 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.

@@ -517,6 +517,87 @@ items/armors/tier3/stalkers/fudarkrobespants.legs
 items/armors/uniques/fuhoodedmask/fuhoodedmask.head
 '''.split())
 
+# Aktif fu_warcraft ağacındaki altı Kademe 3 zırh kolunun açtığı,
+# gerçek üretim tarifi bulunan v0.26 zırh parçaları. Mutavisk miğferi
+# önceki Science paketinde çevrildiği için burada 75 yeni asset vardır.
+V026_TIER3_ARMOR_ASSETS = set('''
+items/armors/biome/garden/quiver/energy/energyback.back
+items/armors/biome/garden/quiver/quiver3/quiver3.back
+items/armors/nightar/daywalker/daywalker.chest
+items/armors/nightar/daywalker/daywalker.head
+items/armors/nightar/daywalker/daywalker.legs
+items/armors/other/visors/bmcglowscoutvisor/bmcglowscoutvisor.head
+items/armors/other/visors/bmcjumpscoutvisor/bmcjumpscoutvisor.head
+items/armors/other/visors/bmcspeedscoutvisor/bmcspeedscoutvisor.head
+items/armors/tier3/assaultarmor/fuexplorer.chest
+items/armors/tier3/assaultarmor/fuexplorer.head
+items/armors/tier3/assaultarmor/fuexplorer.legs
+items/armors/tier3/battleborn/test1.chest
+items/armors/tier3/battleborn/test1.head
+items/armors/tier3/battleborn/test1.legs
+items/armors/tier3/corsair/kirhostier3.chest
+items/armors/tier3/corsair/kirhostier3.head
+items/armors/tier3/corsair/kirhostier3.legs
+items/armors/tier3/evaarmor/eva.chest
+items/armors/tier3/evaarmor/eva.head
+items/armors/tier3/evaarmor/eva.legs
+items/armors/tier3/evader/fuplatinumarmor.chest
+items/armors/tier3/evader/fuplatinumarmor.head
+items/armors/tier3/evader/fuplatinumarmor.legs
+items/armors/tier3/fuhoplite/fuhoplite.chest
+items/armors/tier3/fuhoplite/fuhoplite.head
+items/armors/tier3/fuhoplite/fuhoplite.legs
+items/armors/tier3/fuintrepid/fuintrepid.chest
+items/armors/tier3/fuintrepid/fuintrepid.head
+items/armors/tier3/fuintrepid/fuintrepid.legs
+items/armors/tier3/fujunker/fujunker.chest
+items/armors/tier3/fujunker/fujunker.head
+items/armors/tier3/fujunker/fujunker.legs
+items/armors/tier3/gendarme/furusted.chest
+items/armors/tier3/gendarme/furusted.head
+items/armors/tier3/gendarme/furusted.legs
+items/armors/tier3/masquerade/test1.chest
+items/armors/tier3/masquerade/test1.head
+items/armors/tier3/masquerade/test1.legs
+items/armors/tier3/mutaviskarmor/mutavisk.chest
+items/armors/tier3/mutaviskarmor/mutavisk.legs
+items/armors/tier3/nautilus/fudiver.chest
+items/armors/tier3/nautilus/fudiver.head
+items/armors/tier3/nautilus/fudiver.legs
+items/armors/tier3/samurai2/samurai2.chest
+items/armors/tier3/samurai2/samurai2.head
+items/armors/tier3/samurai2/samurai2.legs
+items/armors/tier3/scoutarmor/ff_scoutarmor.chest
+items/armors/tier3/scoutarmor/ff_scoutarmor.head
+items/armors/tier3/scoutarmor/ff_scoutarmor.legs
+items/armors/tier3/shielded/rust2.chest
+items/armors/tier3/shielded/rust2.head
+items/armors/tier3/shielded/rust2.legs
+items/armors/tier3/slayer/mantizitier3.chest
+items/armors/tier3/slayer/mantizitier3.head
+items/armors/tier3/slayer/mantizitier3.legs
+items/armors/tier3/spacefarer/spacefarer.chest
+items/armors/tier3/spacefarer/spacefarer.head
+items/armors/tier3/spacefarer/spacefarer.legs
+items/armors/tier3/steampunk/fusteampunk.chest
+items/armors/tier3/steampunk/fusteampunk.head
+items/armors/tier3/steampunk/fusteampunk.legs
+items/armors/tier3/tw_fieldresearch/alts/1/researchalt1.head
+items/armors/tier3/tw_fieldresearch/alts/2/researchalt2.head
+items/armors/tier3/tw_fieldresearch/tw_fieldresearch.chest
+items/armors/tier3/tw_fieldresearch/tw_fieldresearch.head
+items/armors/tier3/tw_fieldresearch/tw_fieldresearch.legs
+items/armors/tier3/tw_spacepunk/tw_spacepunk.chest
+items/armors/tier3/tw_spacepunk/tw_spacepunk.head
+items/armors/tier3/tw_spacepunk/tw_spacepunk.legs
+items/armors/tier3/wanderer/fupioneer.chest
+items/armors/tier3/wanderer/fupioneer.head
+items/armors/tier3/wanderer/fupioneer.legs
+items/armors/tier4/fubountyhunter/fubountyhunter.chest
+items/armors/tier4/fubountyhunter/fubountyhunter.head
+items/armors/tier4/fubountyhunter/fubountyhunter.legs
+'''.split())
+
 # Aktif fu_warcraft ağacındaki irradiumgear, triangliumgear, prisilitegear,
 # quietusgear ve bioweaponsgear düğümlerinin açtığı, gerçek üretim tarifi
 # bulunan v0.24 Kademe 4 savaş ekipmanı. Burada 148 yeni asset vardır.
@@ -1099,6 +1180,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V026_TIER3_ARMOR_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V025_EARLY_ARMOR_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V024_TIER4_REMAINING_COMBAT_ASSETS:
@@ -1557,7 +1640,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
       'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif erken oyun zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif Kademe 1-3 zırhlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
