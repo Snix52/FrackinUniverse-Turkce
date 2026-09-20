@@ -288,3 +288,15 @@
 - Kaynak teslim metinlerinde adet yazmayan Protocite ve Trityum hedeflerinde gerçek quest koşulları olan **2** ve **1** açıkça gösterildi.
 - Işınlayıcı Çekirdeği vanilla Starbound itemi olduğu için `FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc` üzerinden exact doğrulandı.
 - Physics yeni alanları **22/22 kaynak PASS**, renk/kontrol/sayı QA **PASS**, patch pairing **22 test + 22 replace PASS**.
+
+## 2026-09-20 - v0.11 Outpost / İçki zinciri
+
+- Outpost içindeki Starbooze görev ailesi tek zincir olarak ele alındı: 12/12 görev dosyası birlikte yerelleştirildi.
+- `Mash` ailesi için **Mayşe**, `Wort` için **Şıra**, `Hops` için **Şerbetçiotu**, `Mashing Tun` için **Mayşeleme Kazanı**, `Fermenter` için **Fermentör** ve `Distillery / Still` için **Damıtıcı** kilitlendi.
+- `2brew_a` kaynak metni üç, sonra dört şişe isterken gerçek `gatherItem` koşulu 1 `bottle` istiyor. Türkçe görev metni gerçek koşula göre 1 Şişe ister.
+- `3hops` kaynak metni en az 2 Hops derken gerçek koşul 1 `hops` istiyor. Türkçe metinde yanlış adet verilmedi; görev koşuluyla çelişmeyecek şekilde “yetiştirip topla” denildi.
+- `2brew_c` görevi 1 Grape Mash ile tamamlanıyor ancak bir sonraki Wart Wine tarifi 2 Grape Mash istiyor. Türkçe metin bu farkı açıkça anlatır.
+- `6beer` kaynak metni 3 Beer üret derken gerçek görev koşulu 1 `beer` istiyor; tarif tek üretimde 2 verir. Türkçe görev gerçek koşula göre yazıldı ve envanter adı **Buğday Birası** ile eşleştirildi.
+- İçki görevlerinde geçen FU makineleri ve ana ara ürünlerin envanter adları aynı pakette çevrildi; görev zinciri İngilizce eşya adını bilmeyi gerektirmeyecek şekilde bağlandı.
+- Oyun içi LQA, görev akışı ve crafting panel taşma testi hâlâ ayrı aşamadır.
+
