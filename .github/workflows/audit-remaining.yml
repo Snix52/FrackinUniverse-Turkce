@@ -1,0 +1,43 @@
+name: FU Turkce Remaining Scope Audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/audit_remaining.py"
+      - ".github/workflows/audit-remaining.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout translation repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch pinned Frackin Universe source
+        run: |
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout 329e714b3fe87571055c8ad7aa38135d199d3317
+
+      - name: Compile audit tool
+        run: python -m py_compile tools/audit_remaining.py
+
+      - name: Audit remaining player-visible strings
+        run: python tools/audit_remaining.py --source fu_source
+
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: fu-turkce-remaining-scope
+          path: audit_output
+          if-no-files-found: error
