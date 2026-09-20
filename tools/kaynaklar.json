@@ -76,7 +76,7 @@
       "url": "https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/radiomessages/fu_quests.radiomessages"
     }
   ],
-  "translation_version": "0.15.0-beta",
+  "translation_version": "0.16.0-beta",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "assets": {
     "zb/researchTree/fu_agriculture.config": "c5d1acc20ce35c8220cff577efb459c8b41ff54f",
@@ -432,9 +432,29 @@
     "items/active/shields/furelicshield.activeitem": "35df00f4cfe951c0eb588cbcc38eced8f0b293e2",
     "items/active/weapons/melee/axe/poptopclaw.activeitem": "ec3bb68657a7efe9677fddac403e6b70f7095fe7",
     "items/active/grapplinghooks/websnapper/websnapper.activeitem": "351bfe889d0e961ade466b8c9135b7f040bf007c",
-    "items/augments/quest/warbotartifact.augment": "903ce8b66a47c053cdc48103ea8fe61cc78634cc"
+    "items/augments/quest/warbotartifact.augment": "903ce8b66a47c053cdc48103ea8fe61cc78634cc",
+    "quests/fu_questlines/other/create_densinium.questtemplate": "b1ca066c57917a853a49f908cf0b62a4f1c8ef8f",
+    "quests/fu_questlines/other/create_elder.questtemplate": "ee5cf92b19dea0de4c93fb6ecde68c0d4ac0cbf0",
+    "quests/fu_questlines/other/create_hydrotray.questtemplate": "66b0405f6ed738d3f4a8ab5b3c29f082ec2dd38a",
+    "quests/fu_questlines/other/frozenwastes/shoggoth_defeat.questtemplate": "f447b9616d2ca7f3e67f9f8acd60733a05cf1185",
+    "quests/fu_questlines/other/frozenwastes/shoggoth_unlock.questtemplate": "d40118129c1630d59526c594e84652a193ac34a7",
+    "quests/fu_questlines/other/frozenwastes/shoggoth_unlocknew.questtemplate": "2b14a7bdba86c49b826928a815e41a28cd0b0d49",
+    "quests/fu_questlines/other/frozenwastes/shoggoth_wagner.questtemplate": "efa7a1e832763b717bd7c3fc5e1478c211e66047",
+    "quests/fu_questlines/other/precursor/precursor_unlock.questtemplate": "72465b26b6798b487ad080a2f3fdaf50ac8fd24e",
+    "quests/fu_questlines/byos/fu_byoscrew.questtemplate": "6092b0a220a59dbea43a9f9c42b71abfa1b834cc",
+    "quests/fu_questlines/byos/fu_byoscrewdeed.questtemplate": "069d0f0b18cc57b7bee9ce2abf7be5af28962de9",
+    "items/armors/tier6/densiniumarmor/densinium.head": "f09d4809b7f0209dcb1309f6e4c118e4de5d2e54",
+    "objects/minibiome/elder/elderstatue.object": "dc242ae8f5e3352b1c59685bd6a8ff5cf1f78423",
+    "items/generic/crafting/shoggothflesh.item": "688e377cf26d16228a4526305560c45c09807165",
+    "items/generic/mission/wagneridcard.item": "7edc2c055e7e229cffdf8d44748ce806d895b429",
+    "items/generic/crafting/mythos/fugrimoire.item": "ab55ab5210a9b050eb118e65fe8b6924ae2b69c9",
+    "items/active/unsorted/precursorkey/sciencebrochure2.activeitem": "1fc0dd919d499760cd84fc940287bf3bf84ed469",
+    "objects/ship/fu_crewbed0/fu_crewbed0.object": "f17f1a909426ab00aab863db42d04d1347fcc910",
+    "objects/ship/fu_crewdeed/fu_crewdeed.object": "32e2c3fde92823987a44031b5a918b7ff2e30caa",
+    "objects/questturnins/elderturnin.object": "a7045f20ecd6522a75b16935e4599ec11b840da7",
+    "objects/questturnins/precursorturnin.object": "674ddc7b3a5f05096014cedd63e19af80fea4b20"
   },
-  "validation_note": "v0.15 Battle: 13 ham görev runtime bağlantılarıyla denetlendi; quest-list/NPC üzerinden erişilebilir 10 görev, 4 Battle görev-listesi alanı ve 10 hedef envanter asseti dahil 64 yeni pinned-FU alan eklendi. Gorgolith, Apex War-Born ve Wrexor Nar görevleri hiçbir quest-list/NPC/follow-up bağlantısı taşımadığı için dağıtım dışı ve build guard altında. Yeni kaynak/provenans 64/64 PASS; toplam 2092 structured + 15 Lua, 378 patch asset. Oyun içi LQA bekliyor.",
+  "validation_note": "v0.16 kalan görev taraması: Other 13, kalan BYOS 3 ve Exploration 1 dosyası denetlendi. 10 erişilebilir görev + 3 BYOS görev-listesi alanı + 11 bağlı hedef/teslim assetinde 62 yeni alan eklendi; 60 pinned FU + 2 bağımsız vanilla exact doğrulandı. Beş görünmez sinematik takipçisi ile bağlantısız fu_byosshipcraftingtable ve fuquest_explore1 dağıtım dışı/build guard altında. Toplam 2154 structured + 15 Lua, 399 patch asset. Oyun içi LQA bekliyor.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
@@ -653,6 +673,15 @@
         "blob_sha": "b34dfc05b60152072f843ad0881f59dedffb4de7"
       },
       "note": "v0.14 Kevin/Khe görev hedefini Türkçe envanter adıyla birebir eşlemek için vanilla kısa ad ve açıklama exact doğrulandı."
+    },
+    "items/generic/crafting/moltencore.item": {
+      "vanilla_source_verification": {
+        "repository": "FerreiraJGB/Starbound",
+        "commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "path": "assets/packed/items/generic/crafting/moltencore.item",
+        "blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376"
+      },
+      "note": "v0.16 Shoggoth görevinin Erimiş Çekirdek hedefini gerçek vanilla envanter adıyla eşlemek için kısa ad ve açıklama exact doğrulandı."
     }
   }
 }

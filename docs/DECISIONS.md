@@ -380,3 +380,15 @@
 - `plebiancap.questtemplate` kaynak metnindeki literal sekme standart JSON'a aykırı olduğundan üç görünür alan exact ham-kaynak guard ile doğrulanır.
 - Yeni kapsam: **64 structured alan / 20 yeni patch asset**; kaynak/provenans **64/64 pinned FU PASS**. Proje toplamı **2092 structured + 15 Lua / 378 patch asset**.
 - Oyun içi görev akışı, font ve panel taşma kontrolleri ayrıca bekliyor.
+
+## 2026-09-20 - v0.16 Kalan görev klasörleri
+
+- Other, BYOS ve Exploration altındaki kalan 17 ham görev dosyası runtime referansları üzerinden tek tek denetlendi.
+- Other'da 8, BYOS'ta 2 erişilebilir görev yerelleştirildi. Kaynakta oyuncuya görünmemesi açıkça belirtilen 5 sinematik takipçi dağıtım dışı tutuldu.
+- fu_byosshipcraftingtable ve fuquest_explore1 için görev-listesi, NPC, pickup, prerequisite veya follow-up tetikleyicisi bulunamadı; bağlantısız legacy olarak build guard'a alındı.
+- Görevde geçen hedef adları gerçek envanter adlarıyla eşlendi. Densinium Helm -> **Densinium Miğferi**, Cthulhu Statue -> **Cthulhu Heykeli**, Shoggoth Flesh -> **Shoggoth Eti**, Tattered Grimoire -> **Yıpranmış Büyü Kitabı**, Precursor Data-Key -> **Precursor Veri Anahtarı**, Crew Deed -> **Mürettebat Tapusu** LOCKED.
+- Vanilla Molten Core -> **Erimiş Çekirdek** adı bağımsız pinned vanilla kaynak üzerinden doğrulandı.
+- create_densinium kaynak metnindeki hatalı kapanış ^orange; Türkçe yamada ^reset; olarak düzeltildi.
+- Precursor görevinin genel data-disc yönlendirmesi gerçek hedef envanter adı **Precursor Veri Anahtarı** ile açıklaştırıldı.
+- Battle kapsamındaki tekil Cyber Sphere kullanımı, mevcut kilitli çoğul **Siberküreler** terimiyle uyumlu **Siberküre** olarak düzeltildi.
+- Yeni kapsam 62 yapılandırılmış alan / 21 yeni patch assettir; 60 pinned FU ve 2 vanilla alanın tamamı exact-source/provenans kontrolünden geçti.

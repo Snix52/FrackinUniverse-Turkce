@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.15.0-beta",
-  "note": "v0.15 Battle: klasördeki 13 görevin runtime bağlantıları denetlendi; 10 erişilebilir görev, Battle görev-listesi ve 10 doğrudan hedef envanteri Türkçeleştirildi. Bağlantısız 3 legacy patron görevi dağıtım dışı bırakıldı. 64 yeni structured alan / 20 yeni patch asset; toplam 2092 structured + 15 Lua, 378 patch asset. Oyun içi LQA bekliyor.",
+  "translation_version": "0.16.0-beta",
+  "note": "v0.16 kalan görev taraması: Other 13 + BYOS 3 + Exploration 1 olmak üzere 17 ham dosya runtime açısından denetlendi; 10 erişilebilir görev, BYOS görev-listesi ve 11 bağlı hedef/teslim asseti Türkçeleştirildi. Görünmez/bağlantısız 7 dosya dağıtım dışı ve build guard altında. 62 yeni structured alan / 21 yeni patch asset; toplam 2154 structured + 15 Lua, 399 patch asset. Battle Siberküre terminolojisi de düzeltildi. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -15382,8 +15382,12 @@
       "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
       "pointer": "/text",
       "en": "On ^orange;Cyber Spheres^reset; or ^orange;Wasteland^reset; planets there often walk dangerous battle machines known as ^orange;War Bots^reset;. Take one down, and I'll pay you well.",
-      "tr": "^orange;Siber Küre^reset; ya da ^orange;Çorak Dünya^reset; türü gezegenlerde ^orange;Savaş Robotu^reset; denen tehlikeli savaş makinelerine sıkça rastlanır. Birini devirirsen sana iyi ödeme yaparım.",
-      "section": "v0.15 Battle - etkin görevler ve hedefleri"
+      "tr": "^orange;Siberküre^reset; ya da ^orange;Çorak Dünya^reset; türü gezegenlerde ^orange;Savaş Robotu^reset; denen tehlikeli savaş makinelerine sıkça rastlanır. Birini devirirsen sana iyi ödeme yaparım.",
+      "section": "v0.15 Battle - etkin görevler ve hedefleri",
+      "qa": {
+        "retro_terminology_fix": true,
+        "reason": "v0.16 tam görev QA: mevcut LOCKED Cyberspheres -> Siberküreler terimiyle birleştirildi."
+      }
     },
     {
       "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
@@ -15545,6 +15549,463 @@
       "en": "Targeting Chip",
       "tr": "Hedefleme Çipi",
       "section": "v0.15 Battle - etkin görevler ve hedefleri"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_byos/title",
+      "en": "Build Your Own Ship",
+      "tr": "Kendi Gemini İnşa Et",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/questlines/fu_byos/description",
+      "en": "The basics of manual ship building.",
+      "tr": "Elle gemi inşa etmenin temelleri.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "zb/questList/data.config",
+      "pointer": "/strings/sublines/fu_byosbasics",
+      "en": "Basics",
+      "tr": "Temel Bilgiler",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_densinium.questtemplate",
+      "pointer": "/title",
+      "en": "Toughest of Metals",
+      "tr": "Metallerin En Dayanıklısı",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_densinium.questtemplate",
+      "pointer": "/text",
+      "en": "Simply put: I need better protection for the cold outside. A ^orange;Densinium Helm^orange; would be perfect. I would handsomely compensate you for the materials.",
+      "tr": "Kısacası dışarıdaki soğuğa karşı daha iyi korunmam gerek. Bir ^orange;Densinium Miğferi^reset; kusursuz olurdu. Malzemelerin karşılığını cömertçe öderim.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler",
+      "qa": {
+        "allow_color_fix": true,
+        "reason": "Kaynakta Densinium Helm renk kodu yanlışlıkla ^orange; ile kapanıyor; Türkçede ^reset; ile güvenli biçimde düzeltilir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_densinium.questtemplate",
+      "pointer": "/completionText",
+      "en": "Excellent. Now I can really cut my teeth on exploring this frozen hell. As promised: ^green;your payment^reset;.",
+      "tr": "Mükemmel. Artık bu buz cehennemini keşfetmeye gerçekten koyulabilirim. Söz verdiğim gibi: ^green;ödemen^reset;.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_densinium.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Deliver the ^orange;Densinium Helm^reset;!",
+      "tr": "^orange;Densinium Miğferini^reset; teslim et!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_elder.questtemplate",
+      "pointer": "/title",
+      "en": "Dark Obsession",
+      "tr": "Karanlık Saplantı",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_elder.questtemplate",
+      "pointer": "/text",
+      "en": "I am obsessed with ancient civilizations. Truly. I hear tell of an ^orange;elder race^reset; that once wandered the stars. If you can ^orange;bring me a Cthulhu Statue^reset; I would reward you very well.",
+      "tr": "Kadim uygarlıklara saplantılıyım. Cidden. Bir zamanlar yıldızlar arasında dolaşan ^orange;kadim bir ırktan^reset; söz edildiğini duydum. Bana ^orange;bir Cthulhu Heykeli getirirsen^reset; seni fazlasıyla ödüllendiririm.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_elder.questtemplate",
+      "pointer": "/completionText",
+      "en": "This is a ^green;breathtaking specimen^reset;, but oddly maddening to look at. Your reward? Of course! It's all I have in savings, but it should cover your costs.",
+      "tr": "Bu ^green;nefes kesici bir örnek^reset;, ama ona bakmak tuhaf biçimde insanın aklını bozuyor. Ödülün mü? Elbette! Tüm birikimim bu ama masraflarını karşılamalı.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_elder.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Cthulhu Statue^reset; to the ^green;obsessed scientist by the flower beds^reset; at the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Cthulhu Heykelini^reset; ^green;çiçek tarhlarının yanındaki saplantılı bilim insanına^reset;, ^orange;Bilim Karakolunda^reset; götür.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_hydrotray.questtemplate",
+      "pointer": "/title",
+      "en": "Hydroponic Potence",
+      "tr": "Hidroponik Güç",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_hydrotray.questtemplate",
+      "pointer": "/text",
+      "en": "Kevin urinated on my ^orange;Hydroponics Tray^reset; during a drunken staff party and broke it! I don't have a ^orange;Power Station^reset; to craft a new one... could you bring one to me?",
+      "tr": "Kevin sarhoş bir personel partisinde ^orange;Hidroponik Tepsime^reset; işedi ve onu bozdu! Yenisini üretmek için bir ^orange;Güç İstasyonum^reset; yok... Bana bir tane getirebilir misin?",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_hydrotray.questtemplate",
+      "pointer": "/completionText",
+      "en": "Awesome. You are good people. As a thanks, have a contract that summons some most assuredly ^red;not^reset; good people!",
+      "tr": "Harika. Sen iyi birisin. Teşekkür olarak, kesinlikle ^red;iyi olmayan^reset; bazı kişileri çağıran bir sözleşme al!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_hydrotray.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Deliver the ^orange;Hydroponics Tray^reset;.",
+      "tr": "^orange;Hidroponik Tepsiyi^reset; teslim et.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_defeat.questtemplate",
+      "pointer": "/title",
+      "en": "What Lies Beneath",
+      "tr": "Derinlerde Yatan",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_defeat.questtemplate",
+      "pointer": "/text",
+      "en": "From deep below me, I can hear...no, feel...^red;something dark and terrible^reset; lurking in the abyssal darkness. Dare I investigate the ^red;source of that slurping, wet cacaphony^reset;?",
+      "tr": "Derinlerden... hayır, duymuyorum... uçurum karanlığında pusuya yatmış ^red;karanlık ve korkunç bir şeyi^reset; hissediyorum. O şapırdayan, ıslak kakofoninin ^red;kaynağını araştırmaya^reset; cesaret edebilir miyim?",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_defeat.questtemplate",
+      "pointer": "/completionText",
+      "en": "That's it. I'm done. That place was terrifying beyond my capacity to tolerate. But I killed that abomination, and feel pretty darned amazing now.",
+      "tr": "İşte bu kadar. Benden bu kadar. O yer dayanabileceğimin çok ötesinde korkunçtu. Ama o iğrenç yaratığı öldürdüm ve şimdi kendimi inanılmaz iyi hissediyorum.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlock.questtemplate",
+      "pointer": "/title",
+      "en": "Molten Power",
+      "tr": "Erimiş Güç",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlock.questtemplate",
+      "pointer": "/text",
+      "en": "I'm trying to fix this relay, but the damned thing just won't relent. I desperately need to reach a friend. Could you perhaps craft a ^orange;Molten Core^reset; in your ^orange;Matter Assembler^reset;? That should solve my predicament.",
+      "tr": "Bu röleyi onarmaya çalışıyorum ama lanet şey bir türlü düzelmiyor. Bir arkadaşıma acilen ulaşmam gerek. ^orange;Madde Birleştiricinde^reset; bir ^orange;Erimiş Çekirdek^reset; üretebilir misin? Bu sorunumu çözer.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlock.questtemplate",
+      "pointer": "/completionText",
+      "en": "That did it, thanks!...hmm, that's odd. No signal from the ^green;lab on Delta Freya II^reset;. Not even static. I'll have to investigate this. Thanks for this Core, it will go a long way to helping communications here.",
+      "tr": "Oldu, teşekkürler!... Hımm, tuhaf. ^green;Delta Freya II'deki laboratuvardan^reset; sinyal gelmiyor. Parazit bile yok. Bunu araştırmam gerekecek. Bu çekirdek için teşekkürler; buradaki iletişimi düzeltmeye çok yardımcı olacak.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlock.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Bring the ^orange;Molten Core^reset; to the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Erimiş Çekirdeği^reset; ^orange;Bilim Karakoluna^reset; getir.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlocknew.questtemplate",
+      "pointer": "/title",
+      "en": "Strange Visions",
+      "tr": "Tuhaf Görüler",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlocknew.questtemplate",
+      "pointer": "/text",
+      "en": "Lifting up this book has triggered ^red;strange visions^reset; of a place covered in snow and ice, and coordinates to that place. I should enter the coordinates for ^orange;Delta Freya II^reset; into my SAIL. It calls to me. I am compelled to obey.",
+      "tr": "Bu yıpranmış büyü kitabını elime alınca kar ve buzla kaplı bir yere dair ^red;tuhaf görüler^reset; ile o yerin koordinatları zihnimde belirdi. ^orange;Delta Freya II'nin^reset; koordinatlarını SAIL sistemime girmeliyim. Beni çağırıyor. İtaat etmek zorundayım.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlocknew.questtemplate",
+      "pointer": "/completionText",
+      "en": "There are no words to express the madness and strangeness that tugs now at the very roots of my soul. A piece of myself has been forever lost to that hellish place.",
+      "tr": "Artık ruhumun köklerine kadar uzanan deliliği ve tuhaflığı anlatmaya söz yetmez. Benliğimin bir parçası o cehennemlik yerde sonsuza dek kayboldu.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_unlocknew.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Explore Delta Freya II",
+      "tr": "Delta Freya II'yi Keşfet",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_wagner.questtemplate",
+      "pointer": "/title",
+      "en": "A Missing Friend",
+      "tr": "Kayıp Bir Arkadaş",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_wagner.questtemplate",
+      "pointer": "/text",
+      "en": "I've no idea how to reach my friend. ^orange;All of the teleporters^reset; leading to Delta Freya II appear to be down, and I can't get word to them. If you find a way there, could you please search for my pal Wagner?",
+      "tr": "Arkadaşıma nasıl ulaşacağımı hiç bilmiyorum. Delta Freya II'ye giden ^orange;tüm ışınlayıcılar^reset; devre dışı görünüyor; ondan da haber alamıyorum. Oraya gitmenin bir yolunu bulursan dostum Wagner'ı arar mısın?",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_wagner.questtemplate",
+      "pointer": "/completionText",
+      "en": "Oh no. Wagner is...dead? Thank you...^orange;sad news is better than no news at all^reset;. Please take this for your efforts, and leave me. Now go, please. ^green;I need to be alone^reset;  for a while.",
+      "tr": "Olamaz. Wagner... ölmüş mü? Teşekkürler... ^orange;Acı haber, hiç haber alamamaktan iyidir^reset;. Emeğin için bunu al ve beni yalnız bırak. Şimdi lütfen git. Bir süre ^green;yalnız kalmam gerek^reset;.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/frozenwastes/shoggoth_wagner.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Return ^orange;Wagner's ID^reset; to the ^orange;Science Outpost^reset;",
+      "tr": "^orange;Wagner'ın Kimlik Kartını^reset; ^orange;Bilim Karakoluna^reset; götür.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/precursor/precursor_unlock.questtemplate",
+      "pointer": "/title",
+      "en": "A Strange Place",
+      "tr": "Tuhaf Bir Yer",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/precursor/precursor_unlock.questtemplate",
+      "pointer": "/text",
+      "en": "Where am I? This ^green;data-disc^reset; at least presents the coordinates. What is odd, is that this sector has always been devoid of...everything. I should definitely explore this place.",
+      "tr": "Neredeyim? Bu ^green;Precursor Veri Anahtarı^reset; en azından koordinatları gösteriyor. Tuhaf olan şu ki bu sektör her zaman... her şeyden yoksundu. Burayı kesinlikle keşfetmeliyim.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler",
+      "qa": {
+        "reason": "Kaynak genel data-disc der; Türkçe metin görevi başlatan gerçek Precursor Data-Key envanter adıyla eşleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/other/precursor/precursor_unlock.questtemplate",
+      "pointer": "/completionText",
+      "en": "I've explored the mysteries of the Precursor ruins, and it was worth every minute.",
+      "tr": "Precursor harabelerinin sırlarını keşfettim; ayırdığım her dakikaya değdi.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/other/precursor/precursor_unlock.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "en": "Explore the Precursor Dungeon",
+      "tr": "Precursor Zindanını Keşfet",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/byos/fu_byoscrew.questtemplate",
+      "pointer": "/title",
+      "en": "Crew Beds",
+      "tr": "Mürettebat Yatakları",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/byos/fu_byoscrew.questtemplate",
+      "pointer": "/text",
+      "en": "If you want to ^orange;Hire Crewmates^reset; then you first need to build a ^green;Crappy Crew Bed^reset;. Build one at a ^orange;Ship Component Assembler^reset; and place it on your ship!",
+      "tr": "^orange;Mürettebat Üyesi Kiralamak^reset; istiyorsan önce bir ^green;Berbat Mürettebat Yatağı^reset; üretmelisin. ^orange;Gemi Bileşeni Birleştiricide^reset; bir tane üretip gemine yerleştir!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/byos/fu_byoscrew.questtemplate",
+      "pointer": "/completionText",
+      "en": "For each additional crewmate you'll need a new bed. Some beds can house more than one, such as Bunk Beds.",
+      "tr": "Her ek mürettebat üyesi için yeni bir yatak gerekir. Ranza gibi bazı yataklarda birden fazla kişi kalabilir.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/byos/fu_byoscrewdeed.questtemplate",
+      "pointer": "/title",
+      "en": "Crew Quarters",
+      "tr": "Mürettebat Kamaraları",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/byos/fu_byoscrewdeed.questtemplate",
+      "pointer": "/text",
+      "en": "^green;Crew Deeds^reset; allow you to ^orange;Hire Crewmates^reset; if you place them in an enclosed room that contains at least 1 ^orange;Door^reset;, 1 ^orange;Light^reset; and 1 ^orange;Bed^reset;. Build one at a ^orange;Ship Component Assembler^reset; and place it on your ship!",
+      "tr": "^green;Mürettebat Tapuları^reset;, en az 1 ^orange;Kapı^reset;, 1 ^orange;Işık^reset; ve 1 ^orange;Yatak^reset; bulunan kapalı bir odaya yerleştirildiğinde ^orange;Mürettebat Üyesi Kiralamanı^reset; sağlar. ^orange;Gemi Bileşeni Birleştiricide^reset; bir tane üretip gemine yerleştir!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "quests/fu_questlines/byos/fu_byoscrewdeed.questtemplate",
+      "pointer": "/completionText",
+      "en": "For each additional crewmate you'll need a new crew deed. Interacting with the ^green;Crew Deed^reset; when it has issues will show what they are.",
+      "tr": "Her ek mürettebat üyesi için yeni bir Mürettebat Tapusu gerekir. Sorun yaşandığında ^green;Mürettebat Tapusuyla^reset; etkileşime geçersen sorunun ne olduğunu gösterir.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/armors/tier6/densiniumarmor/densinium.head",
+      "pointer": "/shortdescription",
+      "en": "Densinium Helm",
+      "tr": "Densinium Miğferi",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/armors/tier6/densiniumarmor/densinium.head",
+      "pointer": "/description",
+      "en": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Densinium Weapons: +^green;2^reset;% Crit Chance, Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Poisoned, Oxygen, Gas, Pressure",
+      "tr": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Densinium Silahları: +^green;2^reset;% Kritik Şansı, Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Zehirlenme, Oksijensizlik, Gaz, Basınç",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/minibiome/elder/elderstatue.object",
+      "pointer": "/shortdescription",
+      "en": "Cthulhu Statue",
+      "tr": "Cthulhu Heykeli",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/minibiome/elder/elderstatue.object",
+      "pointer": "/description",
+      "en": "Even looking at this feels unclean. Whatever being this represents, it violates the senses.",
+      "tr": "Buna bakmak bile insanı kirlenmiş hissettiriyor. Temsil ettiği varlık her neyse, duyulara aykırı.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/generic/crafting/moltencore.item",
+      "pointer": "/shortdescription",
+      "en": "Molten Core",
+      "tr": "Erimiş Çekirdek",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/moltencore.item",
+        "external_blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376",
+        "reason": "Shoggoth görev hedefini gerçek vanilla envanter adıyla birebir eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/moltencore.item",
+      "pointer": "/description",
+      "en": "A very powerful molten core. Can be used to craft a metalwork station!",
+      "tr": "Son derece güçlü, erimiş bir çekirdek. Bir metal işleme istasyonu üretmek için kullanılabilir!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/moltencore.item",
+        "external_blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376",
+        "reason": "Shoggoth görev hedefini gerçek vanilla envanter adıyla birebir eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/shoggothflesh.item",
+      "pointer": "/shortdescription",
+      "en": "Shoggoth Flesh",
+      "tr": "Shoggoth Eti",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/generic/crafting/shoggothflesh.item",
+      "pointer": "/description",
+      "en": "Chunks of flesh from a horrifying Shoggoth.",
+      "tr": "Korkunç bir Shoggoth'tan kopmuş et parçaları.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/generic/mission/wagneridcard.item",
+      "pointer": "/shortdescription",
+      "en": "Wagner's ID card",
+      "tr": "Wagner'ın Kimlik Kartı",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/generic/mission/wagneridcard.item",
+      "pointer": "/description",
+      "en": "I guess that settles it. This...thing...was Wagner.",
+      "tr": "Demek mesele çözüldü. Bu... şey... Wagner'mış.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/generic/crafting/mythos/fugrimoire.item",
+      "pointer": "/shortdescription",
+      "en": "^#ffe50e;Tattered Grimoire^reset;",
+      "tr": "^#ffe50e;Yıpranmış Büyü Kitabı^reset;",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/generic/crafting/mythos/fugrimoire.item",
+      "pointer": "/description",
+      "en": "Whispers from the cosmos compel you to write this text.",
+      "tr": "Kozmostan gelen fısıltılar seni bu metni yazmaya zorluyor.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/active/unsorted/precursorkey/sciencebrochure2.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Precursor Data-Key",
+      "tr": "Precursor Veri Anahtarı",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "items/active/unsorted/precursorkey/sciencebrochure2.activeitem",
+      "pointer": "/description",
+      "en": "Holds multiple sets of coordinates and some encrypted data. One set points to the ^orange;Science Outpost^reset;",
+      "tr": "Birden fazla koordinat kümesi ve bazı şifreli veriler içeriyor. Kümelerden biri ^orange;Bilim Karakolunu^reset; gösteriyor.",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/ship/fu_crewbed0/fu_crewbed0.object",
+      "pointer": "/shortdescription",
+      "en": "Crappy Crew Bed",
+      "tr": "Berbat Mürettebat Yatağı",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/ship/fu_crewbed0/fu_crewbed0.object",
+      "pointer": "/description",
+      "en": "These crappy beds attach to a wall. Horribly uncomfortable. Can only place 4. ^yellow;Crew +1^reset;. Counts as a deed. ^red;BYOS Only^reset;",
+      "tr": "Bu berbat yataklar duvara takılır. İnanılmaz rahatsızdır. En fazla 4 tane yerleştirilebilir. ^yellow;Mürettebat +1^reset;. Mürettebat tapusu sayılır. ^red;Yalnızca BYOS^reset;",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/ship/fu_crewdeed/fu_crewdeed.object",
+      "pointer": "/shortdescription",
+      "en": "^yellow;Crew Deed^reset;",
+      "tr": "^yellow;Mürettebat Tapusu^reset;",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/ship/fu_crewdeed/fu_crewdeed.object",
+      "pointer": "/description",
+      "en": "Place in an enclosed building with at least one door, a light source and some furniture to gain ^yellow;Crew +1^reset;! ^red;BYOS Only^reset;",
+      "tr": "En az bir kapı, ışık kaynağı ve biraz mobilya bulunan kapalı bir odaya yerleştirerek ^yellow;Mürettebat +1^reset; kazan! ^red;Yalnızca BYOS^reset;",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/questturnins/elderturnin.object",
+      "pointer": "/shortdescription",
+      "en": "Turn in the quest!",
+      "tr": "Görevi Teslim Et!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/questturnins/elderturnin.object",
+      "pointer": "/description",
+      "en": "A turn-in item for a quest!",
+      "tr": "Görevi teslim etmek için kullanılan bir nesne!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/questturnins/precursorturnin.object",
+      "pointer": "/shortdescription",
+      "en": "Turn in the quest!",
+      "tr": "Görevi Teslim Et!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
+    },
+    {
+      "asset": "objects/questturnins/precursorturnin.object",
+      "pointer": "/description",
+      "en": "A turn-in item for a quest!",
+      "tr": "Görevi teslim etmek için kullanılan bir nesne!",
+      "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler"
     }
   ]
 }

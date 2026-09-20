@@ -1,14 +1,14 @@
 {
-  "translation_version": "0.15.0-beta",
+  "translation_version": "0.16.0-beta",
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translated_display_fields": 2092,
+  "translated_display_fields": 2154,
   "raw_script_display_strings": 15,
-  "total_localized_display_units": 2107,
-  "patched_assets": 378,
+  "total_localized_display_units": 2169,
+  "patched_assets": 399,
   "raw_override_assets": 1,
-  "target_assets_total": 379,
+  "target_assets_total": 400,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -44,21 +44,22 @@
     "v0.13 Outpost Dükkân Görevleri": 48,
     "v0.13.3 Retro QA Hedefleri": 8,
     "v0.14 Outpost - Kevin ve Khe": 94,
-    "v0.15 Battle": 64
+    "v0.15 Battle": 64,
+    "v0.16 Kalan görevler": 62
   },
   "raw_categories": {
     "Araştırma arayüzü (Lua)": 15
   },
   "checks": {
-    "unique_paths": "PASS (2092/2092)",
+    "unique_paths": "PASS (2154/2154)",
     "empty_translations": "PASS (0)",
     "token_integrity": "PASS except documented source fixes",
     "number_integrity": "PASS",
-    "fixture_application": "PASS (current 2092-field catalog; inactive research, disconnected start_basics1, dead Science fuquest_dna/fuquest_mineral, dead Outpost 13mites and disconnected Battle Gorgolith/War-Born/Wrexor Nar rejected before patch generation)",
-    "source_mismatch_rejection_cases": 2092,
-    "source_mismatch_rejection": "PASS (2092 test-guarded structured fields)",
+    "fixture_application": "PASS (current 2154-field catalog; inactive research, disconnected start_basics1, dead Science fuquest_dna/fuquest_mineral, dead Outpost 13mites, disconnected Battle Gorgolith/War-Born/Wrexor Nar, 5 invisible cinematic trackers and disconnected BYOS/Exploration legacy quests rejected before patch generation)",
+    "source_mismatch_rejection_cases": 2154,
+    "source_mismatch_rejection": "PASS (2154 test-guarded structured fields)",
     "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (2004/2004 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
+    "exact_source_pointer_validation": "PASS (2064/2064 pinned-FU fields; 90/90 layered/external provenance fields; 0 untracked)",
     "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
     "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
     "agriculture_source_pointer_validation": "PASS (99/99 active fields)",
@@ -69,7 +70,7 @@
     "v05_new_source_pointer_validation": "PASS (216/216 active fields across 33 source assets)",
     "v05_build_allowlist": "PASS (216/216 active paths covered)",
     "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS (v0.15 catalog/tool static verification; GitHub Actions pending)",
+    "build_allowlist_current_scope": "PASS (v0.16 catalog/tool static verification; GitHub Actions pending)",
     "craftsmanship_source_pointer_validation": "PASS (153/153 active tree fields; runtime-unused default pair and workbenchatechy excluded)",
     "craftsmanship_patch_pairing": "PASS (153 test + 153 replace)",
     "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
@@ -125,7 +126,15 @@
     "v15_battle_pinned_fu_source_validation": "PASS (64/64)",
     "v15_battle_source_provenance": "PASS (64/64)",
     "v15_patch_pairing": "PASS (64 test + 64 replace across 20 new patch assets plus existing quest-list patch)",
-    "v15_build_allowlist": "PASS (64/64 new structured paths covered)"
+    "v15_build_allowlist": "PASS (64/64 new structured paths covered)",
+    "v16_remaining_source_inventory": "PASS (17 source questtemplates = 10 reachable/localized + 5 invisible cinematic trackers + 2 disconnected legacy)",
+    "v16_remaining_reachable_coverage": "PASS (10/10 reachable Other/BYOS quests)",
+    "v16_dead_quest_guard": "PASS (5 invisible trackers plus fu_byosshipcraftingtable and fuquest_explore1 excluded and rejected by build guard)",
+    "v16_pinned_fu_source_validation": "PASS (60/60)",
+    "v16_vanilla_source_validation": "PASS (2/2 independently verified Molten Core fields)",
+    "v16_source_provenance": "PASS (62/62)",
+    "v16_patch_pairing": "PASS (62 test + 62 replace across 21 new patch assets plus existing BYOS quest-list patch)",
+    "v16_build_allowlist": "PASS (62/62 new structured paths covered)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -156,7 +165,10 @@
     "v0.14 Kevin create_clothingfabricator: source Sewing Wheel guidance normalized to the actual Sewing Machine / Dikiş Makinesi crafting stage.",
     "v0.14 Kevin create_clothingfabricator3e: source average quality Brains turn-in normalized to actual brain item shortdescription Superior Brain / Üstün Beyin.",
     "v0.14 Khe fabric: generic material prose normalized to exact gatherItem inventory names while preserving count 3.",
-    "v0.15 fuquest_mamapoptop: generic Poptop Claw turn-in normalized to actual item shortdescription Mama Poptop Claw / Anne Poptop Pençesi."
+    "v0.15 fuquest_mamapoptop: generic Poptop Claw turn-in normalized to actual item shortdescription Mama Poptop Claw / Anne Poptop Pençesi.",
+    "v0.16 create_densinium: malformed ^orange; closing color code normalized to ^reset; in Turkish.",
+    "v0.16 precursor_unlock: generic data-disc wording normalized to the actual Precursor Data-Key / Precursor Veri Anahtarı inventory target.",
+    "v0.16 retro QA: Battle Cyber Sphere wording normalized to locked Cyber Spheres / Siberküreler terminology (singular Siberküre)."
   ],
   "retroactive_qa_fixes": [
     "Removed leftover (Inventor’s Table) English parenthetical.",
@@ -193,8 +205,8 @@
   "in_game_test": "NOT PERFORMED",
   "font_and_visual_layout_test": "NOT PERFORMED",
   "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.15 project total: 2092 structured fields. Provenance coverage is complete: 2004 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
-  "polish_pass": "PASS for v0.15 static Battle scope: 10/10 reachable quest files, 3 disconnected legacy files excluded, quest-list and directly referenced inventory targets aligned. In-game quest-flow/font/layout LQA remains pending.",
+  "full_source_validation": "v0.16 project total: 2154 structured fields. Provenance coverage is complete: 2064 fields map to exact pinned FU 6.5.8 asset blobs and 90 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
+  "polish_pass": "PASS for v0.16 remaining-quest static scope: 10/10 reachable Other/BYOS quest files localized; 5 invisible trackers and 2 disconnected legacy files excluded; quest-list and directly referenced inventory targets aligned. Battle Cyber Sphere terminology was normalized to Siberküre. In-game quest-flow/font/layout LQA remains pending.",
   "v06_dev_scope": [
     "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
     "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
@@ -354,6 +366,37 @@
     "localized_display_units_after_release": 2107,
     "patch_assets_after_release": 378,
     "target_assets_total": 379,
+    "in_game_lqa": "NOT PERFORMED"
+  },
+  "v016_scope": {
+    "remaining_source_questtemplates": 17,
+    "other_source_questtemplates": 13,
+    "other_reachable_quests": 8,
+    "invisible_cinematic_trackers": 5,
+    "byos_remaining_source_questtemplates": 3,
+    "byos_reachable_quests": 2,
+    "byos_disconnected_legacy_quests": [
+      "quests/fu_questlines/byos/fu_byosshipcraftingtable.questtemplate"
+    ],
+    "exploration_source_questtemplates": 1,
+    "exploration_reachable_quests": 0,
+    "exploration_disconnected_legacy_quests": [
+      "quests/fu_questlines/exploration/fuquest_explore1.questtemplate"
+    ],
+    "quest_display_fields": 37,
+    "quest_list_fields": 3,
+    "linked_inventory_assets": 11,
+    "linked_inventory_fields": 22,
+    "added_structured_fields": 62,
+    "added_patch_assets": 21,
+    "pinned_fu_new_fields": 60,
+    "layered_external_new_fields": 2,
+    "source_provenance": "PASS (62/62)",
+    "structured_field_count_after_release": 2154,
+    "localized_display_units_after_release": 2169,
+    "patch_assets_after_release": 399,
+    "target_assets_total": 400,
+    "retroactive_terminology_corrections": 1,
     "in_game_lqa": "NOT PERFORMED"
   }
 }
