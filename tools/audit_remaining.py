@@ -33,6 +33,16 @@ EXCLUDED_PARTS = {
     "disabled", "attic", "archive", "backup", "backups", ".git", "tilesets",
 }
 
+EXCLUDED_ROOTS = {"behaviors", "particles", "projectiles", "recipes"}
+REVIEW_ONLY_ROOTS = {"dungeons"}
+
+CATEGORY_VISIBLE_SUFFIXES = {
+    ".object", ".activeitem", ".item", ".matitem", ".consumable", ".head",
+    ".chest", ".legs", ".back", ".augment", ".thrownitem", ".liqitem",
+    ".beamaxe", ".miningtool", ".harvestingtool", ".inspectiontool",
+    ".flashlight", ".wiretool", ".painttool", ".tillingtool", ".blueprint",
+}
+
 EXPLICIT_VISIBLE_KEYS = {
     "shortdescription", "description", "title", "subtitle", "text",
     "completiontext", "turnindescription", "displayname", "friendlyname",
@@ -40,7 +50,7 @@ EXPLICIT_VISIBLE_KEYS = {
     "buttontext", "prompt", "question", "response", "message",
     "successmessage", "failuremessage", "errormessage", "statustext",
     "objectivetext", "chargentext", "charcreationtooltip", "speciesname",
-    "sendername", "nameplate", "windowtitle", "maintitle", "hint", "category",
+    "sendername", "nameplate", "windowtitle", "maintitle", "hint",
 }
 
 VISIBLE_CONTAINERS = {
@@ -180,7 +190,7 @@ def looks_like_resource(value: str) -> bool:
     return False
 
 
-def visible_confidence(parts: list[str], value: str) -> str | None:
+def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
     if not isinstance(value, str) or not value.strip() or not ALPHA_RE.search(value):
         return None
     key = parts[-1].lower() if parts else ""
@@ -188,6 +198,8 @@ def visible_confidence(parts: list[str], value: str) -> str | None:
     if key.startswith("//"):
         # Tiled editörünün açıklama/metaveri alanları; oyunda gösterilmez.
         return None
+    if key == "category":
+        return "confirmed" if PurePosixPath(asset).suffix.lower() in CATEGORY_VISIBLE_SUFFIXES else None
     if key in TECHNICAL_KEYS:
         return None
     if looks_like_resource(value):
@@ -248,7 +260,11 @@ def excluded_path(path: PurePosixPath) -> bool:
     lowered = {part.lower() for part in path.parts}
     if lowered & EXCLUDED_PARTS:
         return True
+    if path.parts and path.parts[0].lower() in EXCLUDED_ROOTS:
+        return True
     name = path.name.lower()
+    if name in {".metadata", "steamtext_info.txt"}:
+        return True
     return any(token in name for token in (".disabled", ".unused", ".old", ".bak", "~"))
 
 
@@ -265,8 +281,10 @@ def walk_values(
         for index, value in enumerate(node):
             yield from walk_values(asset, value, parts + [str(index)], origin)
     elif isinstance(node, str):
-        confidence = visible_confidence(parts, node)
+        confidence = visible_confidence(asset, parts, node)
         if confidence:
+            if asset.split("/", 1)[0].lower() in REVIEW_ONLY_ROOTS:
+                confidence = "review"
             yield Candidate(
                 asset=asset,
                 pointer=pointer(parts),
@@ -302,6 +320,75 @@ def load_translations(catalog_path: Path) -> tuple[set[tuple[str, str]], int]:
         if isinstance(row, dict) and row.get("asset") and row.get("pointer")
     }
     return keys, len(rows)
+
+
+def load_raw_lua_translations(path: Path) -> set[tuple[str, str]]:
+    if not path.exists():
+        return set()
+    data = json.loads(path.read_text(encoding="utf-8"))
+    translated: set[tuple[str, str]] = set()
+    for asset in data.get("assets", []):
+        asset_path = str(asset.get("asset", ""))
+        for replacement in asset.get("replacements", []):
+            visible = str(replacement.get("display_en", ""))
+            if asset_path and visible:
+                translated.add((asset_path, visible))
+    return translated
+
+
+LUA_LITERAL = re.compile(r"(['\"])((?:\\.|(?!\1).)*)\1")
+LUA_DISPLAY_CALLS = (
+    ("widget.settext", "last"),
+    ("canvas:drawtext", "first"),
+    ("object.say", "first"),
+    ("npc.say", "first"),
+    ("say(", "first"),
+)
+
+
+def audit_lua(source: Path, raw_catalog: Path) -> dict[str, Any]:
+    translated = load_raw_lua_translations(raw_catalog)
+    rows: list[dict[str, Any]] = []
+    for path in sorted(source.rglob("*.lua")):
+        rel = PurePosixPath(path.relative_to(source).as_posix())
+        if excluded_path(rel):
+            continue
+        try:
+            lines = path.read_text(encoding="utf-8-sig").splitlines()
+        except (UnicodeDecodeError, OSError):
+            continue
+        for line_number, line in enumerate(lines, 1):
+            stripped = line.strip()
+            if not stripped or stripped.startswith("--"):
+                continue
+            lowered = stripped.lower()
+            mode = next((candidate_mode for marker, candidate_mode in LUA_DISPLAY_CALLS if marker in lowered), None)
+            if not mode:
+                continue
+            literals = [bytes(match.group(2), "utf-8").decode("unicode_escape") for match in LUA_LITERAL.finditer(stripped)]
+            if not literals:
+                continue
+            value = literals[-1] if mode == "last" else literals[0]
+            clean = re.sub(r"\^[^;\s]*;", "", value).strip()
+            if not clean or not ALPHA_RE.search(clean) or looks_like_resource(clean):
+                continue
+            if (rel.as_posix(), clean) in translated:
+                continue
+            # Tek kelimelik küçük harfli widget kimliklerini metin sanma.
+            if re.fullmatch(r"[a-z][a-z0-9_.]*", clean):
+                continue
+            rows.append({
+                "asset": rel.as_posix(),
+                "line": line_number,
+                "source": clean[:500],
+            })
+    return {
+        "detected_remaining_literals": len(rows),
+        "assets": len({row["asset"] for row in rows}),
+        "known_translated_literals": len(translated),
+        "samples": rows[:100],
+        "scope_note": "Heuristic review pool for direct widget/canvas/NPC display calls; not a full Lua semantic analysis.",
+    }
 
 
 def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
@@ -423,6 +510,7 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             {"asset": asset, "pointer": field_pointer}
             for asset, field_pointer in sorted(translated_not_found)
         ],
+        "lua_review": audit_lua(source, catalog_path.with_name("raw_text_translations.json")),
     }
     return result
 
@@ -444,6 +532,7 @@ def markdown_report(result: dict[str, Any]) -> str:
         f"| Mevcut kataloğun benzersiz structured kapsamı | - | {catalog['unique_structured_fields']:,} |",
         f"| Kalan doğrulanmış kapsam | {remaining['confirmed_assets']:,} | {remaining['confirmed_fields']:,} |",
         f"| Elle bağlam kontrolü gereken ek havuz | {remaining['review_assets']:,} | {remaining['review_fields']:,} |",
+        f"| Doğrudan ekrana basılan Lua inceleme havuzu | {result['lua_review']['assets']:,} | {result['lua_review']['detected_remaining_literals']:,} |",
         "",
         "## Kalan doğrulanmış kapsam",
         "",
