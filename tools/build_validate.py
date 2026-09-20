@@ -397,6 +397,60 @@ items/active/weapons/whip/stingwhip.activeitem
 items/active/weapons/whip/telebriumwhip.activeitem
 '''.split())
 
+# Aktif fu_warcraft ağacındaki advancealloygear ve durasteelgear
+# düğümlerinin açtığı, gerçek üretim tarifi bulunan v0.23 Kademe 4
+# çekirdek savaş ekipmanı. Burada 48 yeni asset vardır.
+V023_TIER4_CORE_COMBAT_ASSETS = set('''
+items/active/shields/durasteelshield.activeitem
+items/active/shields/xenoshield.activeitem
+items/active/weapons/boomerang/durasteelboomerang.activeitem
+items/active/weapons/bow/advalloycrossbow/advalloycrossbow.activeitem
+items/active/weapons/bow/advalloystynger/advalloystynger.activeitem
+items/active/weapons/bow/nigtarbow/nigtarbow.activeitem
+items/active/weapons/melee/axe/fucoralcleaver.activeitem
+items/active/weapons/melee/axe/moltenaxe.activeitem
+items/active/weapons/melee/broadsword/curvebroadsword.activeitem
+items/active/weapons/melee/broadsword/energyblade.activeitem
+items/active/weapons/melee/dagger/curvedagger.activeitem
+items/active/weapons/melee/flail/flaildurasteel.activeitem
+items/active/weapons/melee/greataxe/durasteelgreataxe.activeitem
+items/active/weapons/melee/katana/durasteelkatana.activeitem
+items/active/weapons/melee/longsword/advalloylongsword.activeitem
+items/active/weapons/melee/mace/durasteelmace.activeitem
+items/active/weapons/melee/quarterstaff/curvestaff.activeitem
+items/active/weapons/melee/shortspear/durasteelshortspear.activeitem
+items/active/weapons/novakid/durasteelassaultrifle2.activeitem
+items/active/weapons/novakid/durasteelmachinepistol.activeitem
+items/active/weapons/novakid/durasteelshotgun.activeitem
+items/active/weapons/novakid/durasteelsniperrifle.activeitem
+items/active/weapons/other/magnorbs/magnorbfrost/magnorbfrost.activeitem
+items/active/weapons/protectorate/durasteelaxe.activeitem
+items/active/weapons/protectorate/durasteeldagger.activeitem
+items/active/weapons/protectorate/durasteelhammer.activeitem
+items/active/weapons/protectorate/durasteelspear.activeitem
+items/active/weapons/ranged/unique/advalloyshotgun.activeitem
+items/active/weapons/ranged/unique/artillery/ionstrike/ionstrike.activeitem
+items/active/weapons/ranged/unique/curvepistol.activeitem
+items/active/weapons/ranged/unique/curvesmg.activeitem
+items/active/weapons/ranged/unique/friendmaker.activeitem
+items/active/weapons/ranged/unique/fucarbonhandcannon.activeitem
+items/active/weapons/ranged/unique/fucellgun.activeitem
+items/active/weapons/ranged/unique/fugaussmachinegun.activeitem
+items/active/weapons/ranged/unique/fugausspistol.activeitem
+items/active/weapons/ranged/unique/fugaussrifle.activeitem
+items/active/weapons/ranged/unique/fugaussshotgun.activeitem
+items/active/weapons/ranged/unique/fugausssniper.activeitem
+items/active/weapons/ranged/unique/pistoldurasteelfu.activeitem
+items/active/weapons/ranged/unique/rifledurasteelfu.activeitem
+items/active/weapons/ranged/unique/science/microwavegun/isn_microwaveray.activeitem
+items/active/weapons/ranged/unique/shurikencannon.activeitem
+items/active/weapons/ranged/unique/theblackmarket/sentryguns/mobiuspistol.activeitem
+items/active/weapons/ranged/unique/theblackmarket/sentryguns/mobiusrifle.activeitem
+items/active/weapons/ranged/unique/theblackmarket/sentryguns/railgun/mobiusrailgun.activeitem
+items/active/weapons/staff/lasereyestaff/fu_lasereyestaff.activeitem
+items/active/weapons/wand/floatwand/floatstaff.activeitem
+'''.split())
+
 # Aktif fu_warcraft ağacındaki altı Kademe 3 düğümünün açtığı ve gerçek
 # üretim tarifi bulunan v0.22 savaş ekipmanı. Daha önce çevrilen
 # energyassault kendi eski allowlist'inde kalır; burada 157 yeni asset vardır.
@@ -771,6 +825,8 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if a in V023_TIER4_CORE_COMBAT_ASSETS:
+        return p in ('/shortdescription','/description')
     if a in V022_TIER3_COMBAT_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V022_MASTER_MANIPULATOR_ASSETS:

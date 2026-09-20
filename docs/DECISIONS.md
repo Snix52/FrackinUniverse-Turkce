@@ -459,3 +459,11 @@
 - `mastermanipulator2` görevi ödül olarak `humanartifactaugment` verir; bu augment `mastermanipulator` görevini başlatır ve Nanoüretici tarifiyle `fumastermanipulator` aracına dönüşür. Bu nedenle kırık augmentin 3 görünür alanı ile tamamlanmış aracın 2 görünür alanı birlikte **Usta Manipülatör** terminolojisine eşlendi.
 - `combatmaneuvering1` içindeki iki “Tuhaf eser yanına yaklaştığında...” çevirisi özneyi belirsizleştirdiği için “Tuhaf eserin yanına yaklaştığında...” olarak düzeltildi. Kaynak değer, renk ve köşeli parantez QA istisnası değişmedi.
 - Yeni kapsam **319 yapılandırılmış alan / 159 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **319 test + 319 replace PASS**. Proje toplamı **3932 structured + 15 Lua / 1044 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-20 - v0.23 Kademe 4 çekirdek savaş ekipmanı
+
+- Kademe 4'ün tamamına kör toplu çeviri yapılmadı. Aktif Zırh ve Silahlar ağacındaki çekirdek `advancealloygear` ve `durasteelgear` düğümleri seçildi; Irradium, Trianglium, Prisilite, Quietus ve biyosilah dalları ayrı sürümlere bırakıldı.
+- İki düğümün açtığı **48/48 savaş ekipmanı**, gerçek ve etkin `.recipe` çıktısıyla doğrulandı. Salt research listesi, asset varlığı veya `/spawnitem` erişimi yeterli kanıt sayılmadı.
+- 48 assette yalnız `/shortdescription` ve `/description` alanları çevrildi. Bir adet Matter Manipulator sınıfı `.beamaxe` de araştırma + tarif zinciriyle açıldığı için savaş ekipmanı kapsamındaki aynı görünür alan kuralıyla işlendi.
+- `Gauss`, `Breach` ve `Stynger` aile/model adları korundu. `Railgun` -> **Raylı Tüfek**, `Sonic Cannon` -> **Sonik Top**, `Gravity Wand` -> **Yerçekimi Değneği**, `Orbital Strike` -> **Yörünge Saldırısı** olarak kilitlendi.
+- Yeni kapsam **96 yapılandırılmış alan / 48 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **96 test + 96 replace PASS**. Proje toplamı **4028 structured + 15 Lua / 1092 patch asset** oldu. Oyun içi envanter adı, tooltip genişliği, font ve bağlam LQA'sı ayrıca bekliyor.

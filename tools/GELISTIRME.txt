@@ -1,4 +1,4 @@
-GELİŞTİRME / DOĞRULAMA | v0.22.0-beta
+GELİŞTİRME / DOĞRULAMA | v0.23.0-beta
 
 Ana standart: docs/STYLE_GUIDE.md
 Terminoloji: docs/TERMINOLOGY.md
@@ -6,7 +6,7 @@ Karar kaydı: docs/DECISIONS.md
 QA: docs/QA_RULES.md
 
 ceviriler.json
-  3932 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
+  4028 aktif yapılandırılmış oyuncu metni alanını ve kaynak İngilizce değerleri tutar.
 
 raw_text_translations.json
   JSON Patch uygulanamayan Lua oyuncu metinlerini tutar.
@@ -17,7 +17,7 @@ tools/raw_overrides/
 
 build_validate.py
   Python 3.9+ standart kütüphanesiyle patch üretir.
-  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı ve Usta Manipülatör tutarlılığı allowlist/deny-guard kapsamını doğrular.
+  Jeoloji + Tarım + Kimya + Mühendislik + Güç Sistemleri + Zanaatkârlık + Zırh ve Silahlar + Delilik + erişilebilir görev/hedefler + v0.17 üretim makineleri + v0.18 işlevsel nesneler + v0.19 üretim malzemeleri + v0.20 aktif özel görevler + v0.21 erken oyun silahları + v0.22 Kademe 3 savaş ekipmanı/Usta Manipülatör tutarlılığı + v0.23 Kademe 4 çekirdek savaş ekipmanı allowlist/deny-guard kapsamını doğrular.
   Ham Lua çevirilerinde beklenen kaynak kod parçalarını exact-match sayısıyla doğrular.
   ASCII sürüm üretmez.
   Pinned FU 6.5.8 kaynağında aktif researchTree düğümüne bağlı olmayan bilinen araştırma stringlerini reddeder.
@@ -383,4 +383,24 @@ v0.22 Kademe 3 savaş ekipmanı ve tutarlılık QA:
   toplam hedef asset: 1045 (1044 patch + 1 ham Lua override)
   GitHub Actions build/QA/ZIP: PASS (run 35523998458)
   otomatik paket: dist/FU_Turkce_v0.22.0_Beta.zip / 777869 bayt
+  oyun içi envanter/tooltip/font/bağlam LQA: BEKLİYOR
+
+v0.23 Kademe 4 çekirdek savaş ekipmanı QA:
+  aktif araştırma düğümleri: advancealloygear + durasteelgear
+  araştırmanın açtığı savaş ekipmanı: 48 asset
+  gerçek recipe çıktısıyla doğrulanan: 48/48 asset
+  yeni yerelleştirilen: 48 asset / 96 alan
+  çevrilen pointer sınıfları: shortdescription + description
+  yeni structured alan: 96
+  yeni patch asset: 48
+  pinned FU exact-source: 96/96 PASS
+  patch pairing: 96 test + 96 replace PASS
+  kapsam dışı Kademe 4 ekipmanı negatif guard: PASS
+  teknik itemName alanı negatif guard: PASS
+  kaynak/provenans toplamı: 3940 pinned FU + 88 layered/external; 0 izlenmeyen
+  proje toplamı: 4028 structured + 15 Lua = 4043 görünür birim
+  toplam patch asset: 1092
+  toplam hedef asset: 1093 (1092 patch + 1 ham Lua override)
+  GitHub Actions build/QA/ZIP: BEKLİYOR
+  otomatik paket: dist/FU_Turkce_v0.23.0_Beta.zip / BEKLİYOR
   oyun içi envanter/tooltip/font/bağlam LQA: BEKLİYOR

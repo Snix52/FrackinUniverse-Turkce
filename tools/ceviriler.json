@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.22.0-beta",
-  "note": "v0.22 Kademe 3 savaş ekipmanı ve görev-eşya tutarlılığı: aktif Zırh ve Silahlar araştırma ağacındaki altı Kademe 3 düğümünün açtığı, gerçek üretim tarifi bulunan 158 combat asseti doğrulandı. Önceden kapsanan 1 silah korundu; 157 yeni assette 314 görünür alan yerelleştirildi. Usta Manipülatör zincirinde 2 asset/5 alan eşitlendi ve iki görev cümlesi düzeltildi. Toplam 3932 structured + 15 Lua, 1044 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
+  "translation_version": "0.23.0-beta",
+  "note": "v0.23 Kademe 4 çekirdek savaş ekipmanı: aktif Zırh ve Silahlar araştırma ağacındaki advancealloygear ve durasteelgear düğümlerinin açtığı, gerçek üretim tarifi bulunan 48 savaş ekipmanında 96 görünür alan yerelleştirildi. Toplam 4028 structured + 15 Lua, 1092 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -28442,6 +28442,678 @@
       "en": "A whip with an ice cold tip. Swings with a zip.",
       "tr": "Buz gibi ucu olan bir kırbaç. Vınlayarak savrulur.",
       "section": "v0.22 Kademe 3 savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/durasteelshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Shield",
+      "tr": "Durasteel Kalkan",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/durasteelshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;Crit Chance +3%, Crit Damage +5^reset;",
+      "tr": "^green;Kritik Şansı +3%, Kritik Hasarı +5^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/xenoshield.activeitem",
+      "pointer": "/shortdescription",
+      "en": "X10 Shield",
+      "tr": "X10 Kalkan",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/shields/xenoshield.activeitem",
+      "pointer": "/description",
+      "en": "^green;+0.05 HP Regen, -20% Fall Damage^reset;",
+      "tr": "^green;+0.05 Can Yenilenmesi, -20% Düşme Hasarı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/durasteelboomerang.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Boomerang",
+      "tr": "Durasteel Bumerang",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/boomerang/durasteelboomerang.activeitem",
+      "pointer": "/description",
+      "en": "Sassy and dangerous.",
+      "tr": "Havalı ve tehlikeli.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/advalloycrossbow/advalloycrossbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Alloy Crossbow",
+      "tr": "Alaşım Arbalet",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/advalloycrossbow/advalloycrossbow.activeitem",
+      "pointer": "/description",
+      "en": "A bulky crossbow. But it's not actually that heavy.",
+      "tr": "Hantal bir arbalet. Ama aslında o kadar da ağır değil.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/advalloystynger/advalloystynger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Alloy Stynger",
+      "tr": "Alaşım Stynger",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/advalloystynger/advalloystynger.activeitem",
+      "pointer": "/description",
+      "en": "Incredibly lightweight considering the extra mass.",
+      "tr": "Ek kütlesine rağmen inanılmaz derecede hafif.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/nigtarbow/nigtarbow.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Brightsteel Bow",
+      "tr": "Parlak Çelik Yayı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/bow/nigtarbow/nigtarbow.activeitem",
+      "pointer": "/description",
+      "en": "Specially constructed arrows damage all elements equally, but still work for hunting.",
+      "tr": "Özel üretilmiş okları tüm elementlere eşit hasar verir ama avlanmada da işe yarar.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/fucoralcleaver.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Coral Cleaver",
+      "tr": "Mercan Satırı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/fucoralcleaver.activeitem",
+      "pointer": "/description",
+      "en": "Sharp and dangerous. Give to a friend!",
+      "tr": "Keskin ve tehlikeli. Bir arkadaşına ver!",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/moltenaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Molten Axe",
+      "tr": "Erimiş Balta",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/axe/moltenaxe.activeitem",
+      "pointer": "/description",
+      "en": "Fire and brimstone",
+      "tr": "Ateş ve kükürt.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/curvebroadsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Breach Plasma Cleaver",
+      "tr": "Breach Plazma Satırı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/curvebroadsword.activeitem",
+      "pointer": "/description",
+      "en": "Plasma-edged melee cleaver.\n^cyan;Counts as plasma weapon for set bonuses^reset;\n^yellow;Inflicts Burning^reset;",
+      "tr": "Plazma ağızlı bir yakın dövüş satırı.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Yanma etkisi uygular^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/energyblade.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Energy Blade",
+      "tr": "Enerji Bıçağı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/broadsword/energyblade.activeitem",
+      "pointer": "/description",
+      "en": "A weapon from the kingdom of Fife.",
+      "tr": "Fife Krallığı'ndan bir silah.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/curvedagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Breach Knife",
+      "tr": "Breach Bıçağı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/dagger/curvedagger.activeitem",
+      "pointer": "/description",
+      "en": "Charged plasma-laced dagger. Handy, that.\n^cyan;Inflicts Burning^reset;",
+      "tr": "Plazmayla yüklenmiş bir bıçak. Pek kullanışlı.\n^cyan;Yanma etkisi uygular^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flaildurasteel.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Striker",
+      "tr": "Durasteel Ezici",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/flail/flaildurasteel.activeitem",
+      "pointer": "/description",
+      "en": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;",
+      "tr": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/durasteelgreataxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Greataxe",
+      "tr": "Durasteel Büyük Balta",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/greataxe/durasteelgreataxe.activeitem",
+      "pointer": "/description",
+      "en": "A finely crafted durasteel greataxe.",
+      "tr": "Özenle işlenmiş bir Durasteel büyük balta.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/durasteelkatana.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Katana",
+      "tr": "Durasteel Katana",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/katana/durasteelkatana.activeitem",
+      "pointer": "/description",
+      "en": "A weapon to rival most.\n^yellow;5 hit combo^reset;\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Çoğu silahla boy ölçüşebilecek güçte.\n^yellow;5 vuruşluk kombo^reset;\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/advalloylongsword.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Master's Longsword",
+      "tr": "Ustanın Uzun Kılıcı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/longsword/advalloylongsword.activeitem",
+      "pointer": "/description",
+      "en": "Forged from carbon. Bolstered by rage.\n^cyan;Inflicts bleeding^reset;",
+      "tr": "Karbondan dövülmüş. Öfkeyle sağlamlaştırılmış.\n^cyan;Kanamaya yol açar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/durasteelmace.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Mace",
+      "tr": "Durasteel Topuz",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/mace/durasteelmace.activeitem",
+      "pointer": "/description",
+      "en": "Thick and weighty. Design by Sacre.",
+      "tr": "Kalın ve ağır. Tasarım: Sacre.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/curvestaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Plasma Quarterstaff",
+      "tr": "Plazma Dövüş Asası",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/quarterstaff/curvestaff.activeitem",
+      "pointer": "/description",
+      "en": "Kinda swordy, for a staff. Ziiiip zaaaap!\n^cyan;Counts as plasma weapon for set bonuses^reset;",
+      "tr": "Bir asa için epey kılıcımsı. Ziiiip zaaaap!\n^cyan;Set bonusları için plazma silahı sayılır^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/durasteelshortspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Shortspear",
+      "tr": "Durasteel Kısa Mızrak",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/melee/shortspear/durasteelshortspear.activeitem",
+      "pointer": "/description",
+      "en": "Doesn't feel so short to enemies.\n^cyan;Hunting weapon^reset;",
+      "tr": "Düşmanlara hiç de kısa gelmez.\n^cyan;Av silahı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelassaultrifle2.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Burst Rifle",
+      "tr": "Durasteel Seri Atış Tüfeği",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelassaultrifle2.activeitem",
+      "pointer": "/description",
+      "en": "A burst-fire automatic military grade rifle.",
+      "tr": "Seri atış yapan, askerî sınıf otomatik bir tüfek.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelmachinepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Machine Pistol",
+      "tr": "Durasteel Makineli Tabanca",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelmachinepistol.activeitem",
+      "pointer": "/description",
+      "en": "A large handgun that packs a kick.",
+      "tr": "Ciddi tepme gücüne sahip büyük bir tabanca.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Shotgun",
+      "tr": "Durasteel Pompalı Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Fires a spread that's lethal at close range.",
+      "tr": "Yakın mesafede ölümcül bir saçma yayılımıyla ateş eder.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelsniperrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Sniper Rifle",
+      "tr": "Durasteel Keskin Nişancı Tüfeği",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/novakid/durasteelsniperrifle.activeitem",
+      "pointer": "/description",
+      "en": "Powerfully strong to cover long distances.",
+      "tr": "Uzun mesafeleri aşacak kadar güçlü.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbfrost/magnorbfrost.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Frost Lobber",
+      "tr": "Ayaz Fırlatıcı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/other/magnorbs/magnorbfrost/magnorbfrost.activeitem",
+      "pointer": "/description",
+      "en": "Cold as ice.",
+      "tr": "Buz gibi soğuk.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteelaxe.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Axe",
+      "tr": "Durasteel Balta",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteelaxe.activeitem",
+      "pointer": "/description",
+      "en": "Few axes would surpass this masterpiece.",
+      "tr": "Bu şaheseri aşabilecek balta sayısı pek azdır.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteeldagger.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Dagger",
+      "tr": "Durasteel Hançer",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteeldagger.activeitem",
+      "pointer": "/description",
+      "en": "A finely-crafted dagger made of durasteel.",
+      "tr": "Durasteel'den özenle işlenmiş bir hançer.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteelhammer.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Hammer",
+      "tr": "Durasteel Çekiç",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteelhammer.activeitem",
+      "pointer": "/description",
+      "en": "A formidable durasteel hammer.",
+      "tr": "Heybetli bir Durasteel çekiç.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteelspear.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Spear",
+      "tr": "Durasteel Mızrak",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/protectorate/durasteelspear.activeitem",
+      "pointer": "/description",
+      "en": "A durasteel spear. Among the finest.\n^cyan;Hunting weapon^reset;",
+      "tr": "En iyiler arasında yer alan bir Durasteel mızrak.\n^cyan;Av silahı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/advalloyshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Alloy Shotgun",
+      "tr": "Alaşım Pompalı Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/advalloyshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Super-quality shotgun with a hair trigger.",
+      "tr": "Hassas tetikli, üstün kaliteli bir pompalı tüfek.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/ionstrike/ionstrike.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Orbital Strike",
+      "tr": "Yörünge Saldırısı",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/artillery/ionstrike/ionstrike.activeitem",
+      "pointer": "/description",
+      "en": "A brutal salvo of energy blasts.\n^cyan;Counts as Rocket or Energy^reset;",
+      "tr": "Acımasız bir enerji patlaması salvosu.\n^cyan;Roket veya Enerji sayılır^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/curvepistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Breach Pistol",
+      "tr": "Breach Tabancası",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/curvepistol.activeitem",
+      "pointer": "/description",
+      "en": "A space pirate plasma sidearm.\n^yellow;+Bouncy and Burny^reset;",
+      "tr": "Uzay korsanlarına özgü bir plazma tabancası.\n^yellow;+Seker ve yakar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/curvesmg.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Breach Blaster",
+      "tr": "Breach Püskürtücü",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/curvesmg.activeitem",
+      "pointer": "/description",
+      "en": "A space pirate favorite in plasma technology.\n^yellow;+Bouncy and Burny^reset;",
+      "tr": "Uzay korsanlarının gözde plazma silahı.\n^yellow;+Seker ve yakar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/friendmaker.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Friendmaker",
+      "tr": "Dost Yapan",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/friendmaker.activeitem",
+      "pointer": "/description",
+      "en": "Enormous damage potential.",
+      "tr": "Muazzam hasar potansiyeli.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fucarbonhandcannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Blasthammer",
+      "tr": "Patlama Çekici",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fucarbonhandcannon.activeitem",
+      "pointer": "/description",
+      "en": "A brutally effective pistol.\n^cyan;Shotgun - style bursts ^reset;",
+      "tr": "Acımasız derecede etkili bir tabanca.\n^cyan;Pompalı tarzı seri atışlar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fucellgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Cellular Rifle",
+      "tr": "Hücresel Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fucellgun.activeitem",
+      "pointer": "/description",
+      "en": "A truly unique long-ranged rifle, firing ^cyan;freezing^reset;, ^green;poisonous^reset; blasts of cellular matter.",
+      "tr": "Hücresel maddeden ^cyan;dondurucu^reset; ve ^green;zehirli^reset; patlamalar ateşleyen, gerçekten eşsiz bir uzun menzil tüfeği.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugaussmachinegun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gauss Machinegun",
+      "tr": "Gauss Makineli Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugaussmachinegun.activeitem",
+      "pointer": "/description",
+      "en": "Brutally effective magnet-based weaponry.\n^yellow;Area damage^reset;\n^yellow;Hunting weapon^reset;",
+      "tr": "Manyetik temelli, acımasız derecede etkili bir silah.\n^yellow;Alan hasarı^reset;\n^yellow;Av silahı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugausspistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gauss Pistol",
+      "tr": "Gauss Tabancası",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugausspistol.activeitem",
+      "pointer": "/description",
+      "en": "Brutally effective magnet-based weaponry.\n^yellow;Area damage^reset;\n^yellow;Hunting weapon^reset;",
+      "tr": "Manyetik temelli, acımasız derecede etkili bir silah.\n^yellow;Alan hasarı^reset;\n^yellow;Av silahı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugaussrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gauss Rifle",
+      "tr": "Gauss Tüfeği",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugaussrifle.activeitem",
+      "pointer": "/description",
+      "en": "Brutally effective magnet-based weaponry.\n^yellow;Area damage^reset;\n^yellow;Hunting weapon^reset;",
+      "tr": "Manyetik temelli, acımasız derecede etkili bir silah.\n^yellow;Alan hasarı^reset;\n^yellow;Av silahı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugaussshotgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gauss Shotgun",
+      "tr": "Gauss Pompalı Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugaussshotgun.activeitem",
+      "pointer": "/description",
+      "en": "Brutally effective magnet-based weaponry.\n^yellow;Area damage^reset;\n^yellow;Hunting weapon^reset;",
+      "tr": "Manyetik temelli, acımasız derecede etkili bir silah.\n^yellow;Alan hasarı^reset;\n^yellow;Av silahı^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugausssniper.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gauss Sniper Rifle",
+      "tr": "Gauss Keskin Nişancı Tüfeği",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/fugausssniper.activeitem",
+      "pointer": "/description",
+      "en": "Powerful capacitors with several coil stages.\n^yellow;Area damage^reset;\n^yellow;Hunting weapon^reset;\n^yellow;High velocity projectile^reset;",
+      "tr": "Çok kademeli bobinlere bağlı güçlü kapasitörler.\n^yellow;Alan hasarı^reset;\n^yellow;Av silahı^reset;\n^yellow;Yüksek hızlı mermi^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoldurasteelfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Magnum",
+      "tr": "Durasteel Magnum",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/pistoldurasteelfu.activeitem",
+      "pointer": "/description",
+      "en": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;",
+      "tr": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifledurasteelfu.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Durasteel Rifle",
+      "tr": "Durasteel Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/rifledurasteelfu.activeitem",
+      "pointer": "/description",
+      "en": "Reliable and accurate, and cheap to produce.",
+      "tr": "Güvenilir, isabetli ve üretimi ucuz.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/microwavegun/isn_microwaveray.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Sonic Cannon",
+      "tr": "Sonik Top",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/microwavegun/isn_microwaveray.activeitem",
+      "pointer": "/description",
+      "en": "Fires waves of sound that look spiffy!\n^yellow;It's okay I guess^reset;\n^green;You might like it?^reset;",
+      "tr": "Gösterişli görünen ses dalgaları ateşler!\n^yellow;Sanırım fena değil^reset;\n^green;Belki seversin?^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/shurikencannon.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Shuriken Cannon",
+      "tr": "Shuriken Topu",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/shurikencannon.activeitem",
+      "pointer": "/description",
+      "en": "I'm sure this will help make friends in a real hurry.",
+      "tr": "Bunun çabucak arkadaş edinmeye yarayacağına eminim.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/sentryguns/mobiuspistol.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Sentry Pistol",
+      "tr": "Nöbetçi Tabancası",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/sentryguns/mobiuspistol.activeitem",
+      "pointer": "/description",
+      "en": "A pistol with shrouded origins.\n^yellow;Inflicts frozen-fire^reset;",
+      "tr": "Kökeni sırlarla örtülü bir tabanca.\n^yellow;Donmuş ateşe yol açar^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/sentryguns/mobiusrifle.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Sentry Rifle",
+      "tr": "Nöbetçi Tüfeği",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/sentryguns/mobiusrifle.activeitem",
+      "pointer": "/description",
+      "en": "A mainstay of advanced forces. Rivaled by few.\n^yellow;Inflicts frozen-fire^reset;\n^cyan;Summons Shield Drones^reset;",
+      "tr": "Gelişmiş birliklerin vazgeçilmez silahı. Pek azı onunla boy ölçüşebilir.\n^yellow;Donmuş ateşe yol açar^reset;\n^cyan;Kalkan Dronları çağırır^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/sentryguns/railgun/mobiusrailgun.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Sentry Railgun",
+      "tr": "Nöbetçi Raylı Tüfek",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/theblackmarket/sentryguns/railgun/mobiusrailgun.activeitem",
+      "pointer": "/description",
+      "en": "This beast absolutely murders the enemy!\n^yellow;Inflicts frozen-fire^reset;\n^cyan;Summons Assault Drones^reset;",
+      "tr": "Bu canavar düşmanı resmen katleder!\n^yellow;Donmuş ateşe yol açar^reset;\n^cyan;Taarruz Dronları çağırır^reset;",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/lasereyestaff/fu_lasereyestaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Cane of Eyes",
+      "tr": "Göz Bastonu",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/staff/lasereyestaff/fu_lasereyestaff.activeitem",
+      "pointer": "/description",
+      "en": "A fairly interesting technological weapon.",
+      "tr": "Oldukça ilginç bir teknolojik silah.",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/floatwand/floatstaff.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Gravity Wand",
+      "tr": "Yerçekimi Değneği",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
+    },
+    {
+      "asset": "items/active/weapons/wand/floatwand/floatstaff.activeitem",
+      "pointer": "/description",
+      "en": "Forged by ^cyan;quiqksilver^reset;. Control gravity!",
+      "tr": "^cyan;quiqksilver^reset; tarafından dövülmüş. Yerçekimini kontrol et!",
+      "section": "v0.23 Kademe 4 çekirdek savaş ekipmanı"
     }
   ]
 }

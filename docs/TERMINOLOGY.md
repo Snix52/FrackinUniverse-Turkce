@@ -501,3 +501,19 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | Penumbral | Penumbrite silah ailesi sıfatı | Nesne | Penumbra | Gölgeli | LOCKED | Malzeme ailesinin özel adıyla bağ korunur |
 | Scion | Hylotl silah modeli | Nesne | Varis | Soy | LOCKED | Önceki Altın Deniz Varisi adıyla eşlendi |
 | Magnorb | Özel silah modeli | Özel ad | Magnorb | Manyetik Küre | LOCKED | Model adı korunur |
+
+## v0.23 Kademe 4 çekirdek savaş ekipmanı terimleri
+
+| English source | Context | Type | Turkish | Avoid | Status | Notes |
+|---|---|---|---|---|---|---|
+| Gauss | Silah ailesi / fizik terimi | Özel ad | Gauss | Gaus | LOCKED | Yerleşik özel ad korunur |
+| Railgun | Silah sınıfı | Silah | Raylı Tüfek | Ray Silahı | LOCKED | Kısa envanter adı |
+| Plasma weapon | Silah türü | Silah | Plazma silahı | Plazmik silah | LOCKED | |
+| Area damage | Silah tooltip etkisi | UI | Alan hasarı | Bölge hasarı | LOCKED | |
+| High velocity projectile | Silah tooltip etkisi | UI | Yüksek hızlı mermi | Hızlı projektil | LOCKED | |
+| Assault Drone | Silah çağrısı | Nesne | Taarruz Dronu | Saldırı Drone'u | LOCKED | Drone -> Dron |
+| Shield Drone | Silah çağrısı | Nesne | Kalkan Dronu | Kalkan Drone'u | LOCKED | Drone -> Dron |
+| Sonic Cannon | Silah sınıfı | Silah | Sonik Top | Ses Topu | LOCKED | |
+| Gravity Wand | Silah sınıfı | Silah | Yerçekimi Değneği | Gravite Asası | LOCKED | Wand kilidiyle uyumlu |
+| Orbital Strike | Silah / saldırı adı | Silah | Yörünge Saldırısı | Orbital Vuruş | LOCKED | |
+| Breach | Silah ailesi / model adı | Özel ad | Breach | Gedik | LOCKED | Aile/model adı korunur |
