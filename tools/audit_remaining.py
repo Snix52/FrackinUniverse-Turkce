@@ -333,6 +333,29 @@ def walk_values(
 
 
 def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
+    if source_path.endswith(".sbvn") and isinstance(data, dict):
+        scenes = data.get("scenes")
+        if isinstance(scenes, dict):
+            for scene_id, scene in scenes.items():
+                if not isinstance(scene, dict) or not isinstance(scene.get("options"), list):
+                    continue
+                for option_index, option in enumerate(scene["options"]):
+                    if not isinstance(option, list) or not option or not isinstance(option[0], str):
+                        continue
+                    label = option[0]
+                    visible_text = re.sub(r"\^[^;\s]*;", "", label).strip()
+                    if not visible_text or not ALPHA_RE.search(visible_text) or looks_like_resource(label):
+                        continue
+                    yield Candidate(
+                        asset=source_path,
+                        pointer=pointer(["scenes", str(scene_id), "options", str(option_index), "0"]),
+                        value=label,
+                        confidence="confirmed",
+                        category=category_for(source_path),
+                        origin=source_path,
+                        key="optionLabel",
+                    )
+
     if (source_path.endswith(".questtemplate") and isinstance(data, dict)
             and data.get("invisible") is True and data.get("logOnly") is True
             and data.get("showInLog") is False and data.get("showAcceptDialog") is False):
