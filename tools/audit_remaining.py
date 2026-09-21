@@ -46,6 +46,10 @@ EXCLUDED_PARTS = {
 
 EXCLUDED_ROOTS = {"behaviors", "particles", "projectiles", "recipes"}
 REVIEW_ONLY_ROOTS = {"dungeons"}
+TITLE_FROM_ENTITY_FALLBACK_POINTERS = {
+    "/paneLayout/windowtitle/title",
+    "/paneLayout/windowtitle/subtitle",
+}
 
 CATEGORY_VISIBLE_SUFFIXES = {
     ".object", ".activeitem", ".item", ".matitem", ".consumable", ".head",
@@ -373,7 +377,15 @@ def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
             return
         yield from walk_values(asset, data, [], source_path)
         return
-    yield from walk_values(source_path, data, [], source_path)
+    title_from_entity = (
+        source_path.startswith("interface/windowconfig/")
+        and isinstance(data, dict)
+        and data.get("titleFromEntity") is True
+    )
+    for candidate in walk_values(source_path, data, [], source_path):
+        if title_from_entity and candidate.pointer in TITLE_FROM_ENTITY_FALLBACK_POINTERS:
+            continue
+        yield candidate
 
 
 def nonvisible_research_candidate(asset: str, field_pointer: str) -> bool:
