@@ -159,6 +159,14 @@ def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path
             raw_count += count
     if raw_count != report['raw_strings']:
         raise ValueError('Raw string count mismatch')
+    runtime_manifest = TOOLS / 'raw_runtime_overrides.json'
+    if runtime_manifest.is_file():
+        for spec in read_json(runtime_manifest).get('assets', []):
+            text = files[spec['asset']].decode('utf-8')
+            for replacement in spec.get('replacements', []):
+                count = int(replacement.get('expected_count', 1))
+                if text.count(replacement['new']) != count or replacement['old'] in text:
+                    raise ValueError('Packaged runtime override mismatch: ' + spec['asset'])
     data = zip_path.read_bytes()
     return {'schema_version': 2, 'generated_at_utc': datetime.now(timezone.utc).isoformat(),
             'workflow_run_id': str(run_id), 'source_commit': source_commit,
