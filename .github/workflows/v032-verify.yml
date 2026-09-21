@@ -1,0 +1,77 @@
+name: FU Turkce v0.32 Machine Verification
+
+on:
+  push:
+    branches: [v032/machines-crafting]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fu-v032-machines
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout v0.32 branch
+        uses: actions/checkout@v7
+        with:
+          ref: v032/machines-crafting
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Fetch pinned Frackin Universe source
+        run: |
+          FU_SOURCE_COMMIT="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json", encoding="utf-8"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$FU_SOURCE_COMMIT"
+
+      - name: Generate v0.32 manifest and catalog
+        run: python tools/generate_v032.py --source fu_source
+
+      - name: Compile and run regression tests
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+
+      - name: Full-source static QA
+        run: python tools/build_validate.py --source-dir fu_source --output build_output
+
+      - name: Remaining scope audit
+        run: python tools/audit_remaining.py --source fu_source
+
+      - name: Require machine category closeout
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("audit_output/kalan_kapsam.json").read_text(encoding="utf-8"))
+          category = "Makineler, üretim ve dükkân nesneleri"
+          remaining = report["remaining"]["confirmed_by_category"].get(category)
+          if remaining:
+              raise SystemExit(f"v0.32 machine category still has confirmed fields: {remaining}")
+          print("v0.32 machine category closeout: PASS")
+          PY
+
+      - name: Check diff
+        run: git diff --check
+
+      - name: Commit verified v0.32 catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/v032_translations.json tools/ceviriler.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo "No generated v0.32 changes."
+            exit 0
+          fi
+          git commit -m "feat: apply v0.32 machine and crafting translations [skip ci]"
+          git push origin HEAD:v032/machines-crafting
