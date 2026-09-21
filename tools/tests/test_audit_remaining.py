@@ -31,6 +31,18 @@ class AuditVisibilityTests(unittest.TestCase):
             audit.AUDIT_EXCLUDED_PATHS,
         )
 
+    def test_cockpit_runtime_templates_are_excluded_by_pointer(self):
+        asset = "interface/cockpit/cockpit.config"
+        excluded = audit.AUDIT_EXCLUDED_FIELDS[asset]
+        self.assertEqual(len(excluded), 21)
+        self.assertIn("/gui/jumpDialog/children/text/value", excluded)
+        self.assertIn("/gui/systeminfo/children/inner/children/view/caption", excluded)
+        self.assertTrue(audit.audit_excluded_candidate(
+            asset, "/gui/bookmarksFrame/children/bookmarkList/children/bookmarkItemList/schema/listTemplate/name/value"
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(asset, "/gui/windowtitle/title"))
+        self.assertFalse(audit.audit_excluded_candidate(asset, "/displayOres/copper/displayName"))
+
     def test_dead_research_ids_follow_build_policy(self):
         self.assertTrue(audit.nonvisible_research_candidate(
             "zb/researchTree/fu_geology.config", "/strings/research/default/0"
