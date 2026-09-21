@@ -40,7 +40,7 @@ TR = {
     "fushroomsword": ("Mantar Bıçağı", "Bir şekilde silaha dönüştürülmüş mantar.\n^cyan;Floran^reset;"),
     "titaniumassaultrifle": ("Titanyum Taarruz Tüfeği", "Titanyum kasalı, tam otomatik bir tüfek."),
     "titaniumrevolver": ("Titanyum Revolver", "Ciddi darbe gücüne sahip büyük bir tabanca."),
-    "titaniumshotgun": ("Titanyum Pompalı Tüfek", "Yakın mesafede ölümcül bir saçma yayılımıyla ateş eder."),
+    "titaniumshotgun": ("Titanyum Pompalı Tüfek", "Yakın mesafede ölümcül saçmalar ateşler."),
     "titaniumaxe": ("Titanyum Balta", "Bu balta hafif ama sağlamdır."),
     "titaniumhammer": ("Titanyum Çekiç", "Son derece dayanıklı bir titanyum çekiç."),
     "titaniumshortsword": ("Titanyum Kısa Kılıç", "Hafif bir titanyum kısa kılıç."),
