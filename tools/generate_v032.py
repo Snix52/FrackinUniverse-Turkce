@@ -87,6 +87,13 @@ def main():
                 "en": r.value,
                 "tr": TRANSLATIONS[r.value],
                 "section": SECTION,
+                **({
+                    "qa": {
+                        "layered_source": True,
+                        "source_patch": r.origin.split("#", 1)[0],
+                        "external_base_verified": True,
+                    }
+                } if not (args.source / r.asset).is_file() and ".patch" in r.origin else {}),
             }
             for r in rows
         ],
