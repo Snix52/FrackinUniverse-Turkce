@@ -1872,7 +1872,9 @@ def main():
         for rule in locked_forbidden:
             flags=re.IGNORECASE if rule.get('ignore_case') else 0
             if re.search(rule['pattern'],r['tr'],flags):raise ValueError(rule.get('message','Terminoloji ihlali')+' '+a+p)
-        if p=='/shortdescription' and re.search(r'\bGreaves\b', r['en']) and not re.search(r'Baldırl(?:ık|ığı)(?: Mk\. 2)?        if a=='objects/crafting/pethealingstation/pethealingstationauto.object' and p=='/subtitle' and r['tr']!='Yaralı evcil hayvanlar için':raise ValueError('Pet Healing Station kaynak-anlam düzeltmesi korunmalı: '+a+p)
+        if p=='/shortdescription' and re.search(r'\bGreaves\b', r['en']) and not re.search(r'Baldırl(?:ık|ığı|ıkları)(?: Mk\. 2)?', r['tr']):
+            raise ValueError('Kilitli Greaves terimi ihlali (Baldırlık): '+a+p)
+        if a=='objects/crafting/pethealingstation/pethealingstationauto.object' and p=='/subtitle' and r['tr']!='Yaralı evcil hayvanlar için':raise ValueError('Pet Healing Station kaynak-anlam düzeltmesi korunmalı: '+a+p)
         if a=='interface/windowconfig/beerefuge.config' and p=='/paneLayout/btnCraft/caption' and r['tr']!='Takas Et':raise ValueError('Arı Barınağı karma eylem etiketi Takas Et olmalı: '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
             if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
