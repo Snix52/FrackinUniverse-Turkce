@@ -214,7 +214,8 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
         if field_pointer == prefix or field_pointer.startswith(prefix + "/"):
             return "confirmed"
     visible_container_keys = AUDIT_VISIBLE_CONTAINER_KEYS.get(asset, {})
-    if parts and key in {str(item).lower() for item in visible_container_keys.get(parts[0], [])}:
+    configured_keys = {str(item).lower() for item in visible_container_keys.get(parts[0], [])} if parts else set()
+    if parts and ("*" in configured_keys or key in configured_keys) and not looks_like_resource(value):
         return "confirmed"
     if (key == "value" and len(parts) >= 2 and str(parts[-2]).lower() == "path"
             and "/" in value and re.fullmatch(r"[A-Za-z0-9_./-]+", value.strip())):
