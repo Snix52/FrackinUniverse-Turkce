@@ -590,6 +590,34 @@ def main():
                     raw_string_count+=expected
             raw_assets[a]=content
 
+    # Kaynak-kilitli Lua davranış düzeltmeleri. Bunlar çeviri birimi sayılmaz,
+    # fakat pinned FU kodunda exact-match doğrulaması olmadan pakete giremez.
+    runtime_manifest_path=Path(__file__).with_name('raw_runtime_overrides.json')
+    if runtime_manifest_path.is_file():
+        runtime_manifest=json.loads(runtime_manifest_path.read_text(encoding='utf-8'))
+        for spec in runtime_manifest.get('assets',[]):
+            a=spec['asset']
+            if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:
+                raise ValueError('Güvensiz runtime override yolu: '+a)
+            if args.source_dir:
+                source=args.source_dir/a
+                if not source.is_file():raise FileNotFoundError(source)
+                content=raw_assets.get(a, source.read_text(encoding='utf-8-sig'))
+                for r in spec.get('replacements',[]):
+                    expected=int(r.get('expected_count',1))
+                    if content.count(r['old'])!=expected:
+                        raise ValueError('Runtime override kaynak uyuşmazlığı: '+a)
+                    content=content.replace(r['old'],r['new'])
+            else:
+                template=Path(__file__).parent/'raw_overrides'/a
+                if not template.is_file():raise FileNotFoundError(template)
+                content=raw_assets.get(a, template.read_text(encoding='utf-8-sig'))
+                for r in spec.get('replacements',[]):
+                    expected=int(r.get('expected_count',1))
+                    if content.count(r['old'])!=0 or content.count(r['new'])!=expected:
+                        raise ValueError('Runtime override şablon doğrulaması başarısız: '+a)
+            raw_assets[a]=content
+
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe (Beta)',
