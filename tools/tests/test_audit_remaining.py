@@ -25,6 +25,12 @@ class AuditVisibilityTests(unittest.TestCase):
         }
         self.assertEqual(list(audit.candidates_from_data("zb/handler.questtemplate", data)), [])
 
+    def test_unreachable_pandora_field_guide_is_audit_excluded(self):
+        self.assertIn(
+            "interface/scripted/sbvn/games/pandorasboxmonsterfieldguide/pandorasboxmonsterfieldguide.sbvn",
+            audit.AUDIT_EXCLUDED_PATHS,
+        )
+
     def test_dead_research_ids_follow_build_policy(self):
         self.assertTrue(audit.nonvisible_research_candidate(
             "zb/researchTree/fu_geology.config", "/strings/research/default/0"
