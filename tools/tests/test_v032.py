@@ -55,9 +55,9 @@ class V032Tests(unittest.TestCase):
         rows = manifest["translations"]
         self.assertEqual(manifest["translation_version"], "0.32.0-beta")
         self.assertEqual(catalog["translation_version"], "0.32.0-beta")
-        self.assertEqual(len(rows), 105)
+        self.assertEqual(len(rows), 107)
         self.assertEqual(len({r["asset"] for r in rows}), 38)
-        self.assertEqual(len({r["en"] for r in rows}), 74)
+        self.assertEqual(len({r["en"] for r in rows}), 76)
         self.assertEqual(len({(r["asset"], r["pointer"]) for r in rows}), 118)
         index = {(r["asset"], r["pointer"]): r for r in catalog["translations"]}
         dead = load_rule("V018_DEAD_OBJECT_ASSETS")
