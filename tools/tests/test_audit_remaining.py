@@ -134,14 +134,19 @@ class AuditVisibilityTests(unittest.TestCase):
                 "btnCraft": {"caption": "Craft"},
             },
         }
-        rows = list(audit.candidates_from_data("interface/windowconfig/test.config", data))
+        rows = list(audit.candidates_from_data("interface/windowconfig/beestation.config", data))
         by_pointer = {row.pointer: row for row in rows}
         self.assertNotIn("/paneLayout/windowtitle/title", by_pointer)
         self.assertNotIn("/paneLayout/windowtitle/subtitle", by_pointer)
         self.assertEqual(by_pointer["/paneLayout/btnCraft/caption"].value, "Craft")
 
+        rows = list(audit.candidates_from_data("interface/windowconfig/tomedais.config", data))
+        by_pointer = {row.pointer: row for row in rows}
+        self.assertIn("/paneLayout/windowtitle/title", by_pointer)
+        self.assertIn("/paneLayout/windowtitle/subtitle", by_pointer)
+
         data["titleFromEntity"] = False
-        rows = list(audit.candidates_from_data("interface/windowconfig/test.config", data))
+        rows = list(audit.candidates_from_data("interface/windowconfig/beestation.config", data))
         by_pointer = {row.pointer: row for row in rows}
         self.assertIn("/paneLayout/windowtitle/title", by_pointer)
         self.assertIn("/paneLayout/windowtitle/subtitle", by_pointer)
