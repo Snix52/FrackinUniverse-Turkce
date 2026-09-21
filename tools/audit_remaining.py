@@ -201,7 +201,10 @@ def looks_like_resource(value: str) -> bool:
 
 
 def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
-    if not isinstance(value, str) or not value.strip() or not ALPHA_RE.search(value):
+    if not isinstance(value, str) or not value.strip():
+        return None
+    visible_text = re.sub(r"\^[^;\s]*;", "", value).strip()
+    if not visible_text or not ALPHA_RE.search(visible_text):
         return None
     key = parts[-1].lower() if parts else ""
     ancestors = {part.lower() for part in parts[:-1]}
