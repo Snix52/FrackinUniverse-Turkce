@@ -59,6 +59,18 @@ def main():
         raise ValueError(f"v0.32 asset sayısı değişti: {len(assets)} != {EXPECTED_ASSETS}")
     if len(sources) != EXPECTED_UNIQUE:
         raise ValueError(f"v0.32 kaynak metin sayısı değişti: {len(sources)} != {EXPECTED_UNIQUE}")
+    catalog_path = Path(__file__).with_name("ceviriler.json")
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    existing_by_source = {}
+    for current in catalog["translations"]:
+        if current["en"] not in TRANSLATIONS:
+            continue
+        existing_by_source.setdefault(current["en"], set()).add(current["tr"])
+    for source, choices in existing_by_source.items():
+        if len(choices) != 1:
+            raise ValueError(f"Mevcut çeviri belleği zaten tutarsız: {source!r} -> {sorted(choices)!r}")
+        TRANSLATIONS[source] = next(iter(choices))
+
     missing = sorted(sources - TRANSLATIONS.keys())
     unused = sorted(TRANSLATIONS.keys() - sources)
     if missing or unused:
@@ -82,8 +94,6 @@ def main():
     manifest_path = Path(__file__).with_name("v032_translations.json")
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    catalog_path = Path(__file__).with_name("ceviriler.json")
-    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     index = {(r["asset"], r["pointer"]): r for r in catalog["translations"]}
     for row in manifest["translations"]:
         key = (row["asset"], row["pointer"])
