@@ -29,6 +29,7 @@ NONVISIBLE_RESEARCH_IDS = load_rule('NONVISIBLE_RESEARCH_IDS')
 V018_DEAD_OBJECT_ASSETS = load_rule('V018_DEAD_OBJECT_ASSETS')
 AUDIT_TECHNICAL_CATEGORY_VALUES = load_rule('AUDIT_TECHNICAL_CATEGORY_VALUES')
 AUDIT_EXCLUDED_PATHS = load_rule('AUDIT_EXCLUDED_PATHS')
+AUDIT_EXCLUDED_FIELDS = load_rule('AUDIT_EXCLUDED_FIELDS')
 AUDIT_PATCH_APPEND_INDEXES = load_rule('AUDIT_PATCH_APPEND_INDEXES')
 
 BINARY_SUFFIXES = {
@@ -349,6 +350,10 @@ def nonvisible_research_candidate(asset: str, field_pointer: str) -> bool:
     )
 
 
+def audit_excluded_candidate(asset: str, field_pointer: str) -> bool:
+    return field_pointer in AUDIT_EXCLUDED_FIELDS.get(asset, frozenset())
+
+
 def load_translations(catalog_path: Path) -> tuple[set[tuple[str, str]], int]:
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     rows = catalog.get("translations", [])
@@ -474,6 +479,8 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
         parsed_files += 1
         for candidate in candidates_from_data(rel.as_posix(), data):
             if candidate.asset in V018_DEAD_OBJECT_ASSETS or candidate.asset in AUDIT_EXCLUDED_PATHS:
+                continue
+            if audit_excluded_candidate(candidate.asset, candidate.pointer):
                 continue
             if nonvisible_research_candidate(candidate.asset, candidate.pointer):
                 continue
