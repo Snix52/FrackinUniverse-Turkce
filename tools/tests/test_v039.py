@@ -52,6 +52,13 @@ class V039Tests(unittest.TestCase):
         self.assertEqual(matches[0]["tr"], "Araştırma")
         self.assertTrue(matches[0]["reason"].strip())
 
+    def test_tile_marker_control_code_is_preserved(self):
+        rows = json.loads((TOOLS / "v039_translations.json").read_text(encoding="utf-8"))["translations"]
+        tile_rows = [r for r in rows if "[Tile]" in r["en"]]
+        self.assertEqual(len(tile_rows), 5)
+        self.assertTrue(all("[Tile]" in r["tr"] for r in tile_rows))
+        self.assertTrue(all("[Zemin]" not in r["tr"] for r in tile_rows))
+
     def test_runtime_racial_strings_are_translated(self):
         raw = json.loads((TOOLS / "raw_text_translations.json").read_text(encoding="utf-8"))
         spec = next(x for x in raw["assets"] if x["asset"] == LUA_ASSET)
