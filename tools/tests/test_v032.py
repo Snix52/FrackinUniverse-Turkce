@@ -43,6 +43,11 @@ class V032Tests(unittest.TestCase):
         self.assertIn("wire", technical)
         self.assertIn("objects/power/fu_atmosfilter/warpedItemList.json", excluded)
         self.assertIn("objects/power/fu_upgrade/fu_upgrade.object", dead)
+        append_indexes = load_rule("AUDIT_PATCH_APPEND_INDEXES")
+        self.assertEqual(
+            append_indexes["objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object"],
+            2,
+        )
 
     def test_v032_manifest_is_applied_exactly(self):
         manifest = json.loads((TOOLS / "v032_translations.json").read_text(encoding="utf-8"))
@@ -50,9 +55,9 @@ class V032Tests(unittest.TestCase):
         rows = manifest["translations"]
         self.assertEqual(manifest["translation_version"], "0.32.0-beta")
         self.assertEqual(catalog["translation_version"], "0.32.0-beta")
-        self.assertEqual(len(rows), 118)
-        self.assertEqual(len({r["asset"] for r in rows}), 39)
-        self.assertEqual(len({r["en"] for r in rows}), 87)
+        self.assertEqual(len(rows), 105)
+        self.assertEqual(len({r["asset"] for r in rows}), 38)
+        self.assertEqual(len({r["en"] for r in rows}), 74)
         self.assertEqual(len({(r["asset"], r["pointer"]) for r in rows}), 118)
         index = {(r["asset"], r["pointer"]): r for r in catalog["translations"]}
         dead = load_rule("V018_DEAD_OBJECT_ASSETS")
