@@ -7,8 +7,17 @@ on:
       - main
     paths:
       - "tools/audit_remaining.py"
+      - "tools/ceviriler.json"
+      - "tools/raw_text_translations.json"
+      - "tools/v030_translations.json"
+      - "tools/translation_memory_exceptions.json"
+      - "tools/locked_terms.json"
       - "tools/kaynaklar.json"
       - ".github/workflows/audit-remaining.yml"
+
+concurrency:
+  group: fu-turkce-scope-audit
+  cancel-in-progress: true
 
 permissions:
   contents: read

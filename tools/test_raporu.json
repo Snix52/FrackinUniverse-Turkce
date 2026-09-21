@@ -188,7 +188,7 @@
     "v21_weapon_build_allowlist": "PASS (121 exact weapon assets; shortdescription and description only)",
     "v21_out_of_scope_weapon_guard": "PASS (unlisted Titanium weapon rejected before patch generation)",
     "v21_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "github_actions_build_and_zip": "PASS (automated package commit 855ed270b82950302d574bb37b443baedf6ea340)",
+    "github_actions_build_and_zip": "PASS (güncel artifact kanıtı her buildde dist/build-evidence.json dosyasına yazılır)",
     "v022_tier3_research_recipe_coverage": "PASS (158/158 combat assets across six active Tier 3 nodes; 1 previously covered + 157 newly localized)",
     "v022_master_manipulator_inventory_consistency": "PASS (2/2 reachable inventory assets; 5/5 visible fields use Usta Manipülatör)",
     "v022_quest_prose_correction": "PASS (combatmaneuvering1 text + completionText use Tuhaf eserin)",
@@ -243,7 +243,14 @@
     "generic_placeholder_integrity": "PASS ({0}/{name} and $variable/${variable} parity checked across current 6016-field catalog)",
     "newline_integrity": "PASS (structured source/translation newline parity checked across current 6016-field catalog)",
     "ci_full_source_validation": "ENFORCED (main build checks out tools/kaynaklar.json pinned FU commit and runs build_validate.py --source-dir)",
-    "tracked_install_tree_sync": "ENFORCED (FU_Turkce/ and dist ZIP are refreshed from the same build_output)"
+    "tracked_install_tree_sync": "ENFORCED (FU_Turkce/ and dist ZIP are refreshed from the same build_output)",
+    "current_build_evidence": "GENERATED (dist/build-evidence.json: workflow run, translation source commit, upstream commit, ZIP bytes, SHA-256 ve Git blob SHA)",
+    "translation_memory_consistency": "PASS (aynı kaynak metin tek Türkçe karşılık kullanır; belgeli bağlam istisnaları tools/translation_memory_exceptions.json)",
+    "locked_terminology_machine_rules": "PASS (tools/locked_terms.json exact ve forbidden kuralları build sırasında uygulanır)",
+    "signed_number_integrity": "PASS (işaretli sayıların + / - bilgisi dahil birebir korunur)",
+    "tooltip_icon_integrity": "PASS (Private Use Area tooltip ikonları birebir korunur)",
+    "tab_integrity": "PASS except documented allow_tab_fix cases",
+    "percent_sign_integrity": "PASS (% işareti sayısı kaynakla birebir korunur)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",
@@ -1060,18 +1067,16 @@
     },
     "local_package_zip": {
       "path": "dist/FU_Turkce_v0.30.0_Beta.zip",
-      "bytes": 1385175,
-      "sha256": "d76430d7ca8dca3b9528b66ec0bc5c5f26bf984e5bfd051b106d681c97ac0f65",
-      "unzip_test": "PASS"
+      "current_evidence": "dist/build-evidence.json",
+      "note": "Güncel paket boyutu ve hash değerleri build sırasında üretilen kanıt dosyasındadır."
     },
     "github_actions_run": null,
-    "package_commit": "855ed270b82950302d574bb37b443baedf6ea340",
+    "package_commit": null,
     "package_zip": {
       "path": "dist/FU_Turkce_v0.30.0_Beta.zip",
-      "bytes": null,
-      "git_blob_sha": "87bb96d611d41e72601e83e15b18bfe85da7c019"
+      "current_evidence": "dist/build-evidence.json"
     },
     "in_game_lqa": "NOT PERFORMED",
-    "github_actions_evidence": "PASS (automated package commit 855ed270b82950302d574bb37b443baedf6ea340)"
+    "github_actions_evidence": "CURRENT: dist/build-evidence.json"
   }
 }

@@ -79,6 +79,8 @@ Buna rağmen statik kontrol tek başına yeterli değil. Oyun içinde özellikle
 
 Bu yüzden proje hâlâ **Beta** olarak işaretleniyor.
 
+Her başarılı CI paketinde güncel kaynak commit, sabitlenmiş FU commit, ZIP boyutu, SHA-256 ve Git blob SHA bilgileri `dist/build-evidence.json` dosyasına otomatik yazılır.
+
 ## Kaynak ve lisans
 
 Frackin' Universe, sayter ve katkıda bulunanların çalışmasıdır. Bu proje FU ekibi, Chucklefish veya Starbound geliştiricileri tarafından hazırlanmış ya da onaylanmış resmî bir Türkçe sürüm değildir.

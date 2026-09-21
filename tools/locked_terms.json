@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "note": "Yüksek güvenli LOCKED terminoloji kuralları. Biçim kodları çıkarıldıktan sonra tam kaynak adı eşleşirse uygulanır.",
+  "exact_source_rules": {
+    "Master Manipulator": "Usta Manipülatör",
+    "Matter Manipulator": "Madde Manipülatörü",
+    "Science Outpost": "Bilim Karakolu",
+    "Arc Smelter": "Ark Ergitici",
+    "Hydraulic Dynamo": "Hidrolik Dinamo",
+    "Combustion Generator": "Yanmalı Jeneratör",
+    "Machining Table": "İmalat Tezgâhı",
+    "Sprouting Table": "Filizlendirme Tezgâhı",
+    "Chemistry Lab": "Kimya Laboratuvarı",
+    "Geology": "Jeoloji",
+    "Agriculture": "Tarım",
+    "Engineering": "Mühendislik",
+    "Craftsmanship": "Zanaatkârlık",
+    "Power Systems": "Güç Sistemleri",
+    "Armor and Weapons": "Zırh ve Silahlar",
+    "Queen Bee": "Ana Arı"
+  },
+  "forbidden_regexes": [
+    {
+      "pattern": "\\bkraliçe arı\\b",
+      "ignore_case": true,
+      "message": "Kilitli arıcılık terimi ihlali: Ana Arı kullanılmalı."
+    },
+    {
+      "pattern": "\\bArk Eritici\\b",
+      "ignore_case": true,
+      "message": "Kilitli terim ihlali: Ark Ergitici kullanılmalı."
+    },
+    {
+      "pattern": "\\bmech\\b",
+      "ignore_case": false,
+      "message": "Kilitli Mech yazımı ihlali: Mech büyük harfle yazılmalı."
+    }
+  ]
+}

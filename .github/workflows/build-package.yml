@@ -9,6 +9,10 @@ on:
       - "FU_Turkce/**"
   workflow_dispatch:
 
+concurrency:
+  group: fu-turkce-main-build
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -25,7 +29,7 @@ jobs:
           python-version: "3.11"
 
       - name: Validate Python
-        run: python -m py_compile tools/build_validate.py tools/add_v022.py tools/add_v023.py tools/add_v024.py tools/add_v025.py tools/add_v026.py tools/add_v027.py tools/add_v028.py tools/add_v029.py tools/add_v030.py
+        run: python -m py_compile tools/build_validate.py tools/write_build_evidence.py tools/add_v022.py tools/add_v023.py tools/add_v024.py tools/add_v025.py tools/add_v026.py tools/add_v027.py tools/add_v028.py tools/add_v029.py tools/add_v030.py
 
       - name: Fetch pinned Frackin Universe source
         run: |
@@ -51,14 +55,32 @@ jobs:
       - name: Verify ZIP
         run: unzip -t dist/FU_Turkce_v0.30.0_Beta.zip
 
+      - name: Write current build evidence
+        run: |
+          python tools/write_build_evidence.py \
+            --zip dist/FU_Turkce_v0.30.0_Beta.zip \
+            --output dist/build-evidence.json \
+            --translation-source-commit "$GITHUB_SHA" \
+            --workflow-run-id "$GITHUB_RUN_ID"
+
       - name: Refresh tracked beta package and install tree
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin main
+          if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
+            echo "Main advanced while this build was running; stale artifact publication skipped."
+            exit 0
+          fi
+
           git add -A dist FU_Turkce
           if git diff --cached --quiet; then
             echo "Package and install tree are already current."
           else
             git commit -m "build: refresh v0.30.0 beta package and install tree [skip ci]"
-            git push
+            if ! git push; then
+              echo "Main moved during artifact publication; newer workflow run will publish the current package."
+              exit 0
+            fi
           fi

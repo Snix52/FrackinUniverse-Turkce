@@ -7,15 +7,20 @@ Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol öze
 - Yalnızca oyuncuya gösterilen alanlar değişmeli.
 - Teknik key, ID, asset yolu ve script referansı değiştirilmemeli.
 - Placeholder, printf biçim belirteçleri (`%s`, `%%` vb.) ve tuş kodları birebir korunmalı.
+- Tooltip ikon glifleri, `%` işaretleri ve `+` / `-` dahil işaretli sayılar kaynakla birebir korunmalı.
+- Literal sekme sayısı korunmalı; yalnız `allow_tab_fix` ve gerekçe kaydı bulunan alanlarda bilinçli düzeltmeye izin verilir.
 - `{0}`, `{item}` gibi süslü parantez placeholder'ları ile `$variable` / `${variable}` biçimindeki değişkenler kaynakla birebir eşleşmeli.
 - Yapılandırılmış oyuncu metinlerinde kaynak ve Türkçe satır sonu sayısı korunmalı; bilinçli bir istisna gerekiyorsa açık QA kuralı eklenmeden kabul edilmemeli.
 - Renk kodu değişikliği yalnızca açıkça kaydedilmiş kaynak hatası düzeltmesinde kabul edilir.
 - Oyuncu metninde geçici İngilizce parantez glossu bırakılmamalı.
 - Türkçe karaktersiz ASCII sürümü üretilmemeli.
-- Terminoloji sözlüğündeki LOCKED kararlar ihlal edilmemeli.
+- Terminoloji sözlüğündeki LOCKED kararlar ihlal edilmemeli; yüksek güvenli makine kuralları `tools/locked_terms.json` üzerinden build sırasında uygulanmalı.
+- Aynı İngilizce kaynak metin varsayılan olarak tek Türkçe karşılık kullanmalı; yalnız belgeli bağlam istisnaları `tools/translation_memory_exceptions.json` içinde tutulmalı.
 - Exact FU kaynak commitindeki tüm pointer ve İngilizce kaynak değerleri doğrulanmalı.
 - Ana paket CI'ı `tools/kaynaklar.json` içindeki pinned FU commitini checkout edip `build_validate.py --source-dir` ile gerçek kaynak üzerinde patch simülasyonu çalıştırmalı.
 - Repository'deki `FU_Turkce/` kurulum ağacı ile `dist` ZIP aynı `build_output` ağacından üretilip birlikte güncellenmeli.
+- Her başarılı paket buildinde güncel workflow/source/upstream/hash kanıtı `dist/build-evidence.json` dosyasına otomatik yazılmalı; statik raporda eski artifact hashleri güncel kanıt gibi tutulmamalı.
+- Hızlı ardışık main commitlerinde eski workflow çalışmaları iptal edilmeli ve main ilerlediyse eski build artifact'i push edilmemeli.
 - Aday nesnelerde salt dosya/tileset tanımı erişilebilirlik kanıtı sayılmamalı; tarif, araştırma, görev, dükkân veya gerçek Tiled yerleşimiyle runtime bağlantısı doğrulanmalı.
 - Aday eşyalarda yalnız tanım dosyasının bulunması veya `/spawnitem` ile çağrılabilmesi erişilebilirlik kanıtı sayılmamalı; etkin tarif, araştırma, görev ödülü, çıkarma/işleme tablosu, ganimet ya da gerçek başlangıç/blueprint zinciri aranmalı.
 - `.disabled` tarifler, yorum satırları, deprecated geri-kazanım girdileri ve üretim kaynağı olmayan filtre/blueprint kayıtları tek başına canlı içerik sayılmamalı.
