@@ -46,7 +46,7 @@ TR = {
     "irradiumsword": ("Irradium Kılıcı", "Irradium kullanılarak dövülmüş.\n^cyan;Radyasyon Yanığına yol açar^reset;"),
     "irradiumwand": ("Irradium Değneği", "Yeterince Gelişmiş Teknoloji."),
     "irradiumwhip": ("Irradium Kırbaç", "Irradium kaplı bir kırbaç. Radyoaktif ve havalı.\n^cyan;Radyasyon Yanığına yol açar^reset;"),
-    "isn_irradiator": ("Işınlayıcı", "Galaksiler arası silah yasalarına kesinlikle aykırı.\n^yellow;Alan etkili silah^reset;\n^green;Radyasyon Yanığına yol açar^reset;"),
+    "isn_irradiator": ("Radyasyon Yayıcı", "Galaksiler arası silah yasalarına kesinlikle aykırı.\n^yellow;Alan etkili silah^reset;\n^green;Radyasyon Yanığına yol açar^reset;"),
 
     # Trianglium / Advanced Alloy
     "advalloyaxe": ("Ustanın Savaş Baltası", "Efsanevi bir Glitch şövalyesinin baltası örnek alınarak yapılmış. Densiniumu kolayca kestiği söylenir.\n^cyan;Kanamaya yol açar^reset;"),
