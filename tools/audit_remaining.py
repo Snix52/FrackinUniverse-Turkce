@@ -29,6 +29,7 @@ NONVISIBLE_RESEARCH_IDS = load_rule('NONVISIBLE_RESEARCH_IDS')
 V018_DEAD_OBJECT_ASSETS = load_rule('V018_DEAD_OBJECT_ASSETS')
 AUDIT_TECHNICAL_CATEGORY_VALUES = load_rule('AUDIT_TECHNICAL_CATEGORY_VALUES')
 AUDIT_EXCLUDED_PATHS = load_rule('AUDIT_EXCLUDED_PATHS')
+AUDIT_PATCH_APPEND_INDEXES = load_rule('AUDIT_PATCH_APPEND_INDEXES')
 
 BINARY_SUFFIXES = {
     ".png", ".jpg", ".jpeg", ".gif", ".ogg", ".wav", ".ase", ".aseprite",
@@ -329,6 +330,8 @@ def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
                 if not isinstance(operation, dict) or "value" not in operation:
                     continue
                 base = split_pointer(str(operation.get("path", "")))
+                if "-" in base and asset in AUDIT_PATCH_APPEND_INDEXES:
+                    base = [str(AUDIT_PATCH_APPEND_INDEXES[asset]) if part == "-" else part for part in base]
                 yield from walk_values(asset, operation["value"], base, f"{source_path}#{index}")
             return
         yield from walk_values(asset, data, [], source_path)
