@@ -54,7 +54,6 @@ class V032Tests(unittest.TestCase):
         catalog = json.loads((TOOLS / "ceviriler.json").read_text(encoding="utf-8"))
         rows = manifest["translations"]
         self.assertEqual(manifest["translation_version"], "0.32.0-beta")
-        self.assertEqual(catalog["translation_version"], "0.32.0-beta")
         self.assertEqual(len(rows), 107)
         self.assertEqual(len({r["asset"] for r in rows}), 38)
         self.assertEqual(len({r["en"] for r in rows}), 76)

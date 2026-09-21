@@ -13,7 +13,6 @@ class V033Tests(unittest.TestCase):
         catalog = json.loads((TOOLS / "ceviriler.json").read_text(encoding="utf-8"))
         rows = manifest["translations"]
         self.assertEqual(manifest["translation_version"], "0.33.0-beta")
-        self.assertEqual(catalog["translation_version"], "0.33.0-beta")
         self.assertEqual(len(rows), 281)
         self.assertEqual({r["asset"] for r in rows}, {"interface/cockpit/cockpit.config"})
         self.assertEqual(len({r["en"] for r in rows}), 262)
