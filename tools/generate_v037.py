@@ -7,7 +7,7 @@ ASSET="interface/kheAA/kheAA_router/kheAA_routerGui.config"
 SECTION="v0.37 KheAA yönlendirici arayüzü"
 EXPECTED_FIELDS=35
 EXPECTED_UNIQUE=18
-TRANSLATIONS=json.loads(r'''{"Filtered Items:":"Filtrelenen Eşyalar:","^yellow;Help Mode^reset;:":"^yellow;Yardım Modu^reset;:","Input Slots:":"Giriş Yuvaları:","I":"T","Inv. Logic":"Ters Mantık","Item 1":"Eşya 1","Item 2":"Eşya 2","Item 3":"Eşya 3","Item 4":"Eşya 4","Item 5":"Eşya 5","Category":"Kategori","Exact":"Tam","Type":"Tür","Leave One":"1 Bırak","Stack Only":"Yığına Ekle","Output Slots:":"Çıkış Yuvaları:","Even Split":"Eşit Böl","Slot Split":"Yuvaya Böl"}''')
+TRANSLATIONS=json.loads(r'''{"Filtered Items:":"Filtrelenen Eşyalar:","^yellow;Help Mode^reset;:":"^yellow;Yardım Modu^reset;:","Input Slots:":"Giriş Yuvaları:","I":"T","Inv. Logic":"Ters Mantık","Item 1":"Eşya 1","Item 2":"Eşya 2","Item 3":"Eşya 3","Item 4":"Eşya 4","Item 5":"Eşya 5","Category":"Kategori","Exact":"Tam","Type":"Tür","Leave One":"Birini Bırak","Stack Only":"Yığına Ekle","Output Slots:":"Çıkış Yuvaları:","Even Split":"Eşit Böl","Slot Split":"Yuvaya Böl"}''')
 def remaining_rows(source:Path):
     translated,_=audit.load_translations(Path(__file__).with_name("ceviriler.json"))
     data=audit.parse_jsonc((source/ASSET).read_text(encoding="utf-8-sig"))
