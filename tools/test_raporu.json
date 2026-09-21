@@ -1,13 +1,42 @@
 {
+  "schema_version": 2,
+  "generated_at_utc": "2026-09-21T13:49:36.689224+00:00",
+  "workflow_run_id": "35607996990",
+  "source_commit": "3b85d474fba321f9cecdf35ce0c1a92cf21be68a",
+  "translation_source_commit": "3b85d474fba321f9cecdf35ce0c1a92cf21be68a",
   "translation_version": "0.30.0-beta",
-  "source_repository": "sayterdarkwynd/FrackinUniverse",
-  "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
-  "source_declared_version": "6.5.8",
+  "upstream_repository": "sayterdarkwynd/FrackinUniverse",
+  "upstream_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+  "upstream_declared_version": "6.5.8",
+  "localized_units": {
+    "structured_fields": 6016,
+    "patch_assets": 2086,
+    "raw_override_assets": 1,
+    "raw_script_strings": 15
+  },
+  "package": {
+    "path": "dist/FU_Turkce_v0.30.0_Beta.zip",
+    "bytes": 1133667,
+    "sha256": "2c617a931e7f8228f256adf2960fa645e555db69c978cb11c059c3784709d0ba",
+    "git_blob_sha": "5a545638926b7b21155bbadd05006b844abbbc3f",
+    "zip_integrity": "PASS",
+    "root_install_tree_parity": "PASS"
+  },
+  "install_tree_sha256": "6d1c062da8dad4bf7adb575bc137d2ff207fd83efc52aeed52ce3f4cd4f09182",
+  "catalog_sha256": "20da16219d9ec111c5e92418667f111377273028db855200a3df35f7dc1c4b0c",
+  "static_qa": "PASS",
+  "source_validation": {
+    "status": "PASS",
+    "pinned_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+    "verified_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+    "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
+  },
+  "in_game_lqa": "NOT TESTED",
   "translated_display_fields": 6016,
-  "raw_script_display_strings": 15,
-  "total_localized_display_units": 6031,
   "patched_assets": 2086,
   "raw_override_assets": 1,
+  "raw_script_display_strings": 15,
+  "total_localized_display_units": 6031,
   "target_assets_total": 2087,
   "categories": {
     "Araştırma arayüzü": 11,
@@ -43,12 +72,15 @@
     "v0.12 Outpost - Arıcılık": 78,
     "v0.13 Outpost Dükkân Görevleri": 48,
     "v0.13.3 Retro QA Hedefleri": 8,
-    "v0.14 Outpost - Kevin ve Khe": 94,
-    "v0.15 Battle": 64,
-    "v0.16 Kalan görevler": 62,
-    "v0.17 Üretim makineleri": 295,
-    "v0.18 Power": 59,
+    "Outpost - Kevin": 36,
+    "Outpost - Khe": 14,
+    "Görev listesi": 3,
+    "Outpost - Kevin/Khe hedefleri": 41,
+    "v0.15 Battle - etkin görevler ve hedefleri": 64,
+    "v0.16 Kalan görevler - Other, BYOS ve hedefler": 62,
+    "v0.17 Üretim makineleri - objects/crafting": 295,
     "v0.18 Arıcılık": 142,
+    "v0.18 Power": 59,
     "v0.18 Bilim Karakolu": 139,
     "v0.19 Üretim malzemeleri": 470,
     "v0.20 Aktif özel görevler": 112,
@@ -64,1019 +96,1677 @@
     "v0.29 Kademe 5 aktif zırh setleri": 122,
     "v0.30 Aktif araştırma ekipmanı kapanışı": 826
   },
-  "raw_categories": {
-    "Araştırma arayüzü (Lua)": 15
-  },
   "checks": {
-    "unique_paths": "PASS (6016/6016)",
-    "empty_translations": "PASS (0)",
-    "token_integrity": "PASS except documented source fixes",
-    "number_integrity": "PASS",
-    "printf_placeholder_integrity": "PASS (%s / %% and supported printf specifiers)",
-    "fixture_application": "PASS (current 6016-field catalog; inactive research, disconnected quest assets, 10 runtime-dead v0.18 objects, 26 runtime-dead/deprecated v0.19 crafting items and 69 v0.20 inactive/broken quest files rejected before patch generation; v0.21-v0.29 exact research/recipe-backed equipment guards preserved and v0.30 restricted to 413 remaining active research/recipe-backed equipment assets)",
-    "source_mismatch_rejection_cases": 6016,
-    "source_mismatch_rejection": "PASS (6016 test-guarded structured fields)",
-    "unicode_only_policy": "PASS",
-    "exact_source_pointer_validation": "PASS (5928/5928 pinned-FU fields; 88/88 layered/external provenance fields; 0 untracked)",
-    "starbound_raw_newline_json_validation": "PASS (strict=False parse plus exact pointer simulation)",
-    "raw_text_exact_replacements": "PASS (15/15 across zb/researchTree/researchTree.lua)",
-    "raw_override_build_guard": "PASS (exact source-fragment count required; mismatch aborts build)",
-    "agriculture_source_pointer_validation": "PASS (99/99 active fields)",
-    "chemistry_source_pointer_validation": "PASS (67/67 active fields)",
-    "engineering_source_pointer_validation": "PASS (137/137 active fields)",
-    "power_source_pointer_validation": "PASS (77/77 active fields)",
-    "power_linked_source_pointer_validation": "PASS (139/139 across 32 source assets)",
-    "v05_new_source_pointer_validation": "PASS (216/216 active fields across 33 source assets)",
-    "v05_build_allowlist": "PASS (216/216 active paths covered)",
-    "radiomessages_coverage": "PASS (26/26 text messages)",
-    "build_allowlist_current_scope": "PASS (v0.30 catalog/tool full-source local static verification and GitHub Actions package build)",
-    "craftsmanship_source_pointer_validation": "PASS (153/153 active tree fields; runtime-unused default pair and workbenchatechy excluded)",
-    "craftsmanship_patch_pairing": "PASS (153 test + 153 replace)",
-    "craftsmanship_linked_source_pointer_validation": "PASS (131/131 with provenance split: 88 FU-owned, 33 FU-layered, 10 vanilla externally verified)",
-    "v06_new_source_pointer_validation": "PASS (284/284 active fields)",
-    "v06_build_allowlist": "PASS (284/284 active paths covered)",
-    "craftsmanship_layered_source_validation": "PASS (33/33)",
-    "craftsmanship_external_base_name_validation": "PASS (10/10)",
-    "v06_patch_pairing": "PASS (284 test + 284 replace)",
-    "warcraft_source_pointer_validation": "PASS (95/95 active fields)",
-    "warcraft_linked_fu_source_validation": "PASS (14/14 Armorworks chain)",
-    "warcraft_external_anvil_validation": "PASS (4/4)",
-    "warcraft_external_epp_validation": "PASS (2/2)",
-    "v07_new_source_pointer_validation": "PASS (115/115 active fields)",
-    "v07_build_allowlist": "PASS (115/115 active paths covered)",
-    "v07_patch_pairing": "PASS (115 test + 115 replace)",
-    "active_research_scope_guard": "PASS (0 runtime-inactive research pointers in ledger; pinned 6.5.8 deny-guard enabled)",
-    "madness_source_pointer_validation": "PASS (103/103 across 18 pinned FU source assets)",
-    "madness_tree_active_scope": "PASS (31/31 active nodes; 63/63 active tree/title fields; runtime-unused default pair excluded)",
-    "v08_new_source_pointer_validation": "PASS (103/103)",
-    "v08_build_allowlist": "PASS (103/103 new paths covered)",
-    "v08_patch_pairing": "PASS (103 test + 103 replace)",
-    "v09_tutorial_connected_coverage": "PASS (41/41 connected tutorial quest files; broken/disconnected start_basics1 excluded)",
-    "v09_new_fu_source_validation": "PASS (123/123 across 40 pinned FU source assets)",
-    "v09_vanilla_source_validation": "PASS (8/8 across 4 independently pinned vanilla assets)",
-    "v09_new_source_provenance": "PASS (131/131)",
-    "v09_patch_pairing": "PASS (131 test + 131 replace across 44 target assets)",
-    "v09_broken_quest_guard": "PASS (start_basics1 rejected)",
-    "v09_build_allowlist": "PASS (131/131 new structured paths covered)",
-    "v09_tutorial_source_inventory": "PASS (42 source questtemplates = 41 connected/localized + 1 broken/disconnected start_basics1)",
-    "v10_science_connected_coverage": "PASS (37/37 reachable Science-linked quest files)",
-    "v10_science_questlist_coverage": "PASS (35/35 fu_sciences quest-list entries localized)",
-    "v10_science_extra_runtime_coverage": "PASS (fuquest_biochem via fu_tutorial/fu_vinj + create_blackglass via Science Outpost NPC)",
-    "v10_science_dead_quest_guard": "PASS (fuquest_dna and fuquest_mineral excluded and rejected by build guard)",
-    "v10_science_pinned_fu_source_validation": "PASS (193/193)",
-    "v10_science_vanilla_source_validation": "PASS (11/11 independently verified vanilla fields)",
-    "v10_science_source_provenance": "PASS (204/204)",
-    "v10_patch_pairing": "PASS (204 test + 204 replace across 64 new patch assets)",
-    "v10_build_allowlist": "PASS (204/204 new structured paths covered)",
-    "v11_outpost_booze_quest_coverage": "PASS (12/12 Starbooze Outpost quest files)",
-    "v11_pinned_fu_source_validation": "PASS (89/89 across 34 pinned FU source assets)",
-    "v11_source_provenance": "PASS (89/89)",
-    "v11_patch_pairing": "PASS (89 test + 89 replace across 34 new patch assets)",
-    "v11_build_allowlist": "PASS (89/89 new structured paths covered)",
-    "v12_outpost_bees_connected_coverage": "PASS (13/13 reachable beekeeping quests; 13mites excluded as runtime-disconnected legacy)",
-    "v12_outpost_bees_pinned_fu_source_validation": "PASS (72/72)",
-    "v12_outpost_bees_vanilla_source_validation": "PASS (6/6 independently verified vanilla fields)",
-    "v12_outpost_bees_source_provenance": "PASS (78/78)",
-    "v12_patch_pairing": "PASS (78 test + 78 replace across 31 new patch assets)",
-    "v12_build_allowlist": "PASS (78/78 new structured paths covered)",
-    "v15_battle_source_inventory": "PASS (13 source questtemplates = 10 reachable/localized + 3 disconnected legacy)",
-    "v15_battle_reachable_coverage": "PASS (10/10 reachable Battle quests)",
-    "v15_battle_dead_quest_guard": "PASS (fuquest_gorgolith, fuquest_gorillaking and fuquest_titan excluded and rejected by build guard)",
-    "v15_battle_pinned_fu_source_validation": "PASS (64/64)",
-    "v15_battle_source_provenance": "PASS (64/64)",
-    "v15_patch_pairing": "PASS (64 test + 64 replace across 20 new patch assets plus existing quest-list patch)",
-    "v15_build_allowlist": "PASS (64/64 new structured paths covered)",
-    "v16_remaining_source_inventory": "PASS (17 source questtemplates = 10 reachable/localized + 5 invisible cinematic trackers + 2 disconnected legacy)",
-    "v16_remaining_reachable_coverage": "PASS (10/10 reachable Other/BYOS quests)",
-    "v16_dead_quest_guard": "PASS (5 invisible trackers plus fu_byosshipcraftingtable and fuquest_explore1 excluded and rejected by build guard)",
-    "v16_pinned_fu_source_validation": "PASS (60/60)",
-    "v16_vanilla_source_validation": "PASS (2/2 independently verified Molten Core fields)",
-    "v16_source_provenance": "PASS (62/62)",
-    "v16_patch_pairing": "PASS (62 test + 62 replace across 21 new patch assets plus existing BYOS quest-list patch)",
-    "v16_build_allowlist": "PASS (62/62 new structured paths covered)",
-    "v17_crafting_source_inventory": "PASS (84 .object assets: 30 previous + 54 new)",
-    "v17_crafting_pinned_fu_source_validation": "PASS (295/295 exact pinned-FU fields)",
-    "v17_crafting_source_provenance": "PASS (295/295 pinned FU; 0 layered/external)",
-    "v17_crafting_patch_pairing": "PASS (295 test + 295 replace across 54 new assets)",
-    "v17_crafting_build_allowlist": "PASS (54 exact assets; visible pointer classes only)",
-    "v17_pet_healing_subtitle_fix": "PASS (source robot wording corrected to pet-healing meaning; regression guard active)",
-    "v18_object_candidate_inventory": "PASS (57 candidates = 47 reachable/localized + 10 runtime-dead excluded)",
-    "v18_reachable_object_coverage": "PASS (47/47 reachable assets)",
-    "v18_dead_object_guard": "PASS (10 disconnected/development leftovers rejected)",
-    "v18_pinned_fu_source_validation": "PASS (340/340 exact pinned-FU fields)",
-    "v18_patch_pairing": "PASS (340 test + 340 replace across 47 new assets)",
-    "v18_build_allowlist": "PASS (47 exact assets; visible pointer classes and explicit runtime chat fields only)",
-    "v19_crafting_item_source_inventory": "PASS (313 item assets = 52 previously covered + 261 runtime-audited candidates)",
-    "v19_crafting_item_candidate_inventory": "PASS (261 candidates = 235 reachable/localized + 26 dead/deprecated/disconnected excluded)",
-    "v19_crafting_item_reachable_coverage": "PASS (235/235 reachable assets; shortdescription + description)",
-    "v19_crafting_item_dead_guard": "PASS (26 dead/deprecated/disconnected assets rejected before patch generation)",
-    "v19_crafting_item_pinned_fu_source_validation": "PASS (470/470 exact pinned-FU fields)",
-    "v19_crafting_item_patch_pairing": "PASS (470 test + 470 replace across 235 new assets)",
-    "v19_crafting_item_build_allowlist": "PASS (items/generic/crafting item/consumable assets; only shortdescription and description; explicit dead-asset deny guard)",
-    "v20_quest_candidate_inventory": "PASS (97 untranslated questtemplate candidates runtime-audited plus 1 malformed-extension test file)",
-    "v20_active_quest_coverage": "PASS (29/29 reachable player-visible quests; 112 visible fields)",
-    "v20_inactive_quest_guard": "PASS (68 unreachable/disabled/developer/hidden questtemplates plus 1 malformed-extension test file rejected)",
-    "v20_quest_pinned_fu_source_validation": "PASS (112/112 exact pinned-FU fields)",
-    "v20_quest_patch_pairing": "PASS (112 test + 112 replace across 29 new assets)",
-    "v20_quest_build_allowlist": "PASS (29 exact quest assets; title, text, completionText and turnInDescription only)",
-    "v21_weapon_source_inventory": "PASS (1201 items/active/weapons .activeitem assets inventoried)",
-    "v21_research_unlock_inventory": "PASS (124 unique weapon assets unlocked by active bonegear, irongear, telebriumgear and tungstengear nodes)",
-    "v21_recipe_reachability": "PASS (124/124 weapon assets have active recipe outputs)",
-    "v21_previous_coverage": "PASS (3 previously localized assets preserved; 121 new assets)",
-    "v21_weapon_pinned_fu_source_validation": "PASS (242/242 exact pinned-FU fields)",
-    "v21_weapon_patch_pairing": "PASS (242 test + 242 replace across 121 new assets)",
-    "v21_weapon_build_allowlist": "PASS (121 exact weapon assets; shortdescription and description only)",
-    "v21_out_of_scope_weapon_guard": "PASS (unlisted Titanium weapon rejected before patch generation)",
-    "v21_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "github_actions_build_and_zip": "PASS (güncel artifact kanıtı her buildde dist/build-evidence.json dosyasına yazılır)",
-    "v022_tier3_research_recipe_coverage": "PASS (158/158 combat assets across six active Tier 3 nodes; 1 previously covered + 157 newly localized)",
-    "v022_master_manipulator_inventory_consistency": "PASS (2/2 reachable inventory assets; 5/5 visible fields use Usta Manipülatör)",
-    "v022_quest_prose_correction": "PASS (combatmaneuvering1 text + completionText use Tuhaf eserin)",
-    "v022_pinned_fu_source_validation": "PASS (319/319)",
-    "v022_patch_pairing": "PASS (319 test + 319 replace across 159 new patch assets)",
-    "v022_build_allowlist": "PASS (319/319 new structured paths covered)",
-    "v022_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
-    "v022_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v022_number_integrity_guard": "PASS (mutated shield stat rejected)",
-    "v023_tier4_core_research_recipe_coverage": "PASS (48/48 combat assets across advancealloygear and durasteelgear; 48 newly localized)",
-    "v023_pinned_fu_source_validation": "PASS (96/96)",
-    "v023_patch_pairing": "PASS (96 test + 96 replace across 48 new patch assets)",
-    "v023_build_allowlist": "PASS (96/96 new structured paths covered)",
-    "v023_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
-    "v023_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v023_number_integrity_guard": "PASS (mutated Durasteel shield stat rejected)",
-    "v024_tier4_remaining_research_recipe_coverage": "PASS (148/148 combat assets across irradiumgear, triangliumgear, prisilitegear, quietusgear and bioweaponsgear; 0 previous/duplicate + 148 newly localized)",
-    "v024_pinned_fu_source_validation": "PASS (296/296)",
-    "v024_patch_pairing": "PASS (296 test + 296 replace across 148 new patch assets)",
-    "v024_build_allowlist": "PASS (296/296 new structured paths covered)",
-    "v024_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
-    "v024_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v024_number_integrity_guard": "PASS (mutated shield stat rejected)",
-    "v025_early_armor_research_recipe_coverage": "PASS (114/114 newly localized armor assets across nine active Tier 1-2 research branches; all have real recipe outputs)",
-    "v025_pinned_fu_source_validation": "PASS (228/228)",
-    "v025_patch_pairing": "PASS (228 test + 228 replace across 114 new patch assets)",
-    "v025_build_allowlist": "PASS (228/228 new structured paths covered; shortdescription and description only)",
-    "v025_translation_memory_consistency": "PASS (repeated source strings use one Turkish translation in armor scope)",
-    "v025_functional_english_residue": "PASS (0 checked functional English tooltip terms)",
-    "v025_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
-    "v025_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v025_number_integrity_guard": "PASS (mutated armor stat rejected)",
-    "v025_out_of_scope_armor_guard": "PASS (unlisted Tier 3 armor rejected before patch generation)",
-    "v027_tier4_armor_research_recipe_coverage": "PASS (87/87 newly localized armor assets across seven active Tier 4 research branches; all have real recipe outputs)",
-    "v027_pinned_fu_source_validation": "PASS (174/174)",
-    "v027_patch_pairing": "PASS (174 test + 174 replace across 87 new patch assets)",
-    "v027_build_allowlist": "PASS (174/174 new structured paths covered; shortdescription and description only)",
-    "v027_translation_memory_consistency": "PASS (repeated source strings use one Turkish translation in armor scope)",
-    "v027_functional_english_residue": "PASS (0 checked functional English tooltip terms)",
-    "v027_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
-    "v027_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v027_number_integrity_guard": "PASS (mutated armor stat rejected)",
-    "v028_tier5_combat_research_recipe_coverage": "PASS (97/97 recipe-backed combat assets across seven active Tier 5 research branches; 1 previously covered + 96 newly localized)",
-    "v028_pinned_fu_source_validation": "PASS (192/192)",
-    "v028_patch_pairing": "PASS (192 test + 192 replace across 96 new patch assets)",
-    "v028_build_allowlist": "PASS (192/192 new structured paths covered; shortdescription and description only)",
-    "v028_translation_memory_consistency": "PASS (repeated source strings use one Turkish translation in Tier 5 combat scope)",
-    "v028_functional_english_residue": "PASS (0 checked functional English tooltip terms)",
-    "v028_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
-    "v028_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v028_number_integrity_guard": "PASS (mutated weapon stat rejected)",
-    "generic_placeholder_integrity": "PASS ({0}/{name} and $variable/${variable} parity checked across current 6016-field catalog)",
-    "newline_integrity": "PASS (structured source/translation newline parity checked across current 6016-field catalog)",
-    "ci_full_source_validation": "ENFORCED (main build checks out tools/kaynaklar.json pinned FU commit and runs build_validate.py --source-dir)",
-    "tracked_install_tree_sync": "ENFORCED (FU_Turkce/ and dist ZIP are refreshed from the same build_output)",
-    "current_build_evidence": "GENERATED (dist/build-evidence.json: workflow run, translation source commit, upstream commit, ZIP bytes, SHA-256 ve Git blob SHA)",
-    "translation_memory_consistency": "PASS (aynı kaynak metin tek Türkçe karşılık kullanır; belgeli bağlam istisnaları tools/translation_memory_exceptions.json)",
-    "locked_terminology_machine_rules": "PASS (tools/locked_terms.json exact ve forbidden kuralları build sırasında uygulanır)",
-    "signed_number_integrity": "PASS (işaretli sayıların + / - bilgisi dahil birebir korunur)",
-    "tooltip_icon_integrity": "PASS (Private Use Area tooltip ikonları birebir korunur)",
-    "tab_integrity": "PASS except documented allow_tab_fix cases",
-    "percent_sign_integrity": "PASS (% işareti sayısı kaynakla birebir korunur)"
+    "static_qa": "PASS",
+    "source_validation": {
+      "status": "PASS",
+      "pinned_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+      "verified_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+      "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
+    },
+    "zip_integrity": "PASS",
+    "root_install_tree_parity": "PASS"
   },
   "documented_source_fixes": [
-    "create_growingtray: ^oraange; -> ^orange;",
-    "create_growingtray turnInDescription: Armorworks -> Yetiştirme Tepsisi (condition itemName=fu_growingtray)",
-    "create_electronics turnInDescription: Armorworks -> Elektronik Merkezi (condition itemName=powerstation)",
-    "create_greenhouse turnInDescription: Armorworks -> Sera (condition itemName=designlab)",
-    "create_tinkertable turnInDescription: Armorworks -> İnce İşçilik Tezgâhı (condition itemName=nanofabricator)",
-    "fu_engineering shipcrafting: source says Ship Crafting Table; Turkish uses Gemi Bileşeni Birleştirici because actual fu_shipcraftingtable shortdescription is Ship Component Assembler.",
-    "fu_agriculture farming3 prose says Growing Tray; Turkish uses Hidroponik Tepsi because the research node actually unlocks isn_hydroponicstray (Hydro Tray).",
-    "fu_power tree source title is Electronics while FU cross-reference names it Power Systems; Turkish uses Güç Sistemleri for one trackable tree name.",
-    "fu_power Steam Power prose says hydraulic piston; Turkish uses Hidrolik Dinamo because the research actually unlocks hydraulicdynamo.",
-    "fu_power Combustion prose says Combustion Engine; Turkish uses Yanmalı Jeneratör because the actual unlocked object's shortdescription is Combustion Generator.",
-    "fu_craftsmanship colony prose says Mk2 Tenant Deeds; actual inventory item is Colony Deed Mark II, so Turkish uses Koloni Tapusu Mark II. Same canonical name is used in Colony Core description; number-token mismatch is explicitly QA-approved for these two fields.",
-    "v0.10 create_plastic: old Bio Lab direction replaced with current Chemistry Lab production chain.",
-    "v0.10 create_circuitboard: old Matter Assembler/Silicon+Copper Wire direction replaced with vanilla craftingfurnace3/Atomic Furnace Sand+Coal recipe.",
-    "v0.10 fuquest_battery: old Wiring Tool name replaced with real FU inventory item Mechanic's Wrench / Tamirci Anahtarı.",
-    "v0.10 Genetics: outdated Greenhouse/Gene Design Lab directions corrected to real designlab1/2 recipe tiers; actual quest counts surfaced.",
-    "v0.10 create_atmosregulator: Atmosphere Regulator typo/name drift normalized to real Atmospheric Regulator / Atmosfer Düzenleyici.",
-    "v0.10 create_protocite: obsolete Fission Furnace direction replaced with craftingfurnace2 Industrial Furnace / Endüstriyel Fırın.",
-    "v0.10 create_tritium: stale Fission Reactor objective removed; actual condition is 1 Tritium and recipe is craftingfurnace3/Atomic Furnace.",
-    "v0.11 2brew_a: source prose says three/four bottles; actual gatherItem condition is 1 bottle, so Turkish follows the real quest condition.",
-    "v0.11 3hops: source prose says at least 2 Hops; actual gatherItem condition is 1 hops, so Turkish avoids the wrong count.",
-    "v0.11 2brew_c: quest completes with 1 Grape Mash but the following Wart Wine recipe needs 2; Turkish explains the distinction.",
-    "v0.11 6beer: source prose says make 3 Beer; actual gatherItem condition is 1 beer and the recipe outputs 2, so Turkish follows the real condition.",
-    "v0.12 12breeding: source Giant Apiary is not a real inventory name; Turkish uses the actual normalalveary item name Large Apiary / Büyük Arılık.",
-    "v0.13.2: LOCKED Mech system name normalized from lowercase mech to Mech in 16 Turkish fields.",
-    "v0.13.2: Bee Refuge mixed exchange verified: bee->money/material recipes coexist with money->bee-guide recipes; player action label normalized to neutral 'Takas Et'.",
-    "v0.14 Kevin create_clothingfabricator: source Sewing Wheel guidance normalized to the actual Sewing Machine / Dikiş Makinesi crafting stage.",
-    "v0.14 Kevin create_clothingfabricator3e: source average quality Brains turn-in normalized to actual brain item shortdescription Superior Brain / Üstün Beyin.",
-    "v0.14 Khe fabric: generic material prose normalized to exact gatherItem inventory names while preserving count 3.",
-    "v0.15 fuquest_mamapoptop: generic Poptop Claw turn-in normalized to actual item shortdescription Mama Poptop Claw / Anne Poptop Pençesi.",
-    "v0.16 create_densinium: malformed ^orange; closing color code normalized to ^reset; in Turkish.",
-    "v0.16 precursor_unlock: generic data-disc wording normalized to the actual Precursor Data-Key / Precursor Veri Anahtarı inventory target.",
-    "v0.16 retro QA: Battle Cyber Sphere wording normalized to locked Cyber Spheres / Siberküreler terminology (singular Siberküre).",
-    "v0.17 Pet Healing Station: source subtitle 'For broken robots' conflicts with the pet-healing object and description; Turkish uses 'Yaralı evcil hayvanlar için'.",
-    "v0.18 retro QA: orange.consumable source guard updated from vanilla 'It's an orange.' to the actual pinned-FU value with the visible Type: Plant suffix."
-  ],
-  "retroactive_qa_fixes": [
-    "Removed leftover (Inventor’s Table) English parenthetical.",
-    "Standardized Extraction Lab, Advanced Beekeeping, Terraforming/Microformer/Terraformer, Tech Upgrades and Complex Plastics terminology.",
-    "Added 6 missing Sprouting Table race descriptions.",
-    "Added 4 missing Bee Refuge UI strings.",
-    "Added 4 missing BYOS/FTL radio messages.",
-    "Localized the linked Interstellar Travel BYOS quest and Small FTL Drive object.",
-    "Localized 15 hard-coded researchTree.lua UI strings through a source-guarded raw override.",
-    "Removed 36 runtime-inactive research string fields after cross-checking active researchTree node IDs and researchTree.lua fallback behavior.",
-    "Corrected Arc Smelter reference: Ark Eritici -> Ark Ergitici.",
-    "Corrected scientific/locked terminology: organik silikon -> organik silisyum.",
-    "Rewrote three tutorial objectives to name the research tree and research item explicitly.",
-    "Clarified Dark Cavern energy-source and Agriculture research radio guidance.",
-    "v0.13.1: 6 malformed 'Bilim Karakolundaki bana getir' tutorial turn-in strings corrected to 'Bilim Karakolunda bana getir'.",
-    "v0.13.1: 6 Science Outpost shop turn-in strings restructured to one clear destination: 'Bilim Karakolundaki X Dükkânına'.",
-    "v0.13.1: Bee terminology leak 'kraliçe arı' normalized to locked 'Ana Arı'.",
-    "v0.13.1: Bee Refuge action verified from recipes (bee input -> money output); button localized from 'Satın Al' to player-facing 'Sat'.",
-    "v0.13.1: Penumbrite typo, Glitch emotion labels, monocled NPC phrasing and selected v0.13 unnatural Turkish polished.",
-    "v0.13.1: Added regression guards for known malformed Turkish patterns and Queen Bee terminology.",
-    "v0.13.3: Removed 3 non-player-visible listTemplate 'Replace Me' dummy fields from the catalog and added a build regression guard.",
-    "v0.13.3: Normalized player-facing vanilla -> ana oyun and remaining generic eldritch -> tekinsiz.",
-    "v0.13.3: Localized Sifter tutorial materials Loose Silt -> Gevşek Mil and Gravel -> Çakıl with inventory-backed vanilla/layered provenance.",
-    "v0.13.3: Added Iron Centrifuge -> Demir Santrifüj inventory fields because the tutorial already directs the player to this upgrade.",
-    "v0.13.3: Backfilled exact pinned-FU blob SHA provenance for 37 legacy v0.1-v0.4 assets; all 1934 structured fields now have pinned or layered provenance.",
-    "v0.13.3: Added missing QA source-fix notes for create_alchemy/create_electronics/create_greenhouse/create_tinkertable turn-in targets."
-  ],
-  "v05_scope": [
-    "Localized all 77 active player-visible fields in zb/researchTree/fu_power.config.",
-    "Localized 139 player-visible fields across 32 directly linked power, processing and atmosphere machine assets.",
-    "Standardized real inventory names for power-generation, reactor, centrifuge and atmosphere machinery.",
-    "Verified all 216 active new structured fields against the pinned FU 6.5.8 source commit."
-  ],
-  "in_game_test": "NOT PERFORMED",
-  "font_and_visual_layout_test": "NOT PERFORMED",
-  "constitution_status": "STATIC_QA_PASS_LQA_PENDING",
-  "full_source_validation": "v0.30 project total: 6016 structured fields. Provenance coverage is complete: 5928 fields map to exact pinned FU 6.5.8 asset blobs and 88 fields use documented layered/external source verification; 0 untracked structured fields. Lua remains 15 source-guarded strings.",
-  "polish_pass": "PASS for v0.29 static scope: seven active Tier 5 Warcraft branches yield 61/61 recipe-backed armor assets, adding 122 source-locked shortdescription/description fields. Runtime research/recipe order is authoritative for tier4/tier6 source paths. In-game inventory/tooltip/font/layout/context LQA remains pending.",
-  "v06_dev_scope": [
-    "Localized 76 real research nodes plus the tree name: 153 active fields; runtime-unused default/fallback pair excluded.",
-    "Excluded unused workbenchatechy/0-1 strings because no researchTree node references them.",
-    "Localized 131 fields across directly referenced colony, kitchen, sewing, biochemistry and core crafting stations.",
-    "Aligned research references with real inventory names such as Mucit Tezgâhı, Mutfak Tezgâhı, Dikiş Makinesi, Biyokimyacı Tezgâhı and Koloni Tapusu Mark II.",
-    "Validated all 284 active v0.6 fields through pinned FU source, pinned FU patch layers or documented vanilla test values."
-  ],
-  "v07_scope": [
-    "Localized all 47 real Armor and Weapons research nodes plus tree name: 95 active fields; runtime-unused default/fallback pair excluded.",
-    "Localized the directly referenced FU armory chain: Zırh Atölyesi -> Montaj Hattı -> Cephanelik.",
-    "Verified and localized the vanilla Anvil -> Forge -> Replicator name chain.",
-    "Verified Breathing EPP from a vanilla Starbound asset and localized it as Solunum EPP'si.",
-    "Standardized depleted uranium -> tüketilmiş uranyum and translated Wastelander Equipment contextually as Kıyamet Sonrası Ekipman.",
-    "Validated all 115 active v0.7 fields and 115 test/replace patch pairs."
-  ],
-  "v08_scope": [
-    "Localized all 31 active Madness research nodes plus the tree name: 63 active fields; runtime-unused default/fallback pair excluded.",
-    "Localized 40 player-visible fields across 17 directly linked core Madness assets.",
-    "Standardized Delilik, Metafizik, Psiyonik, Karanlık Madde, Beyin Çıkarıcı, Psiyonik Odak and core Psi energy terminology.",
-    "Verified all 103 v0.8 structured fields against pinned FU 6.5.8 source values.",
-    "Updated Psionics Table UI labels so the main crafting flow no longer falls back to English."
-  ],
-  "v09_scope": [
-    "Completed all 41 connected tutorial quest files; broken/disconnected start_basics1 excluded.",
-    "Added 90 player-facing fields across the 25 previously untranslated connected tutorial quests.",
-    "Added 41 fields across 19 direct quest-target item/machine assets so quest names match inventory names.",
-    "Corrected stale source guidance in Extractor IV/V, create_silicon, create_woodencentrifuge and create_rockbreaker using real quest conditions/source mechanics.",
-    "Verified 123/123 new FU-owned fields and 8/8 vanilla fields from pinned sources."
-  ],
-  "v11_scope": [
-    "Localized the complete 12-file Starbooze/booze Outpost quest chain.",
-    "Added 44 quest fields, 13 machine fields and 32 material/item fields: 89 structured fields across 34 new target assets.",
-    "Locked Mayşe, Şıra, Şerbetçiotu, Mayşeleme Kazanı, Fermentör and Damıtıcı terminology.",
-    "Corrected source-count drift in 2brew_a, 3hops and 6beer against real gatherItem/recipe conditions; clarified the 2brew_c one-vs-two Grape Mash transition.",
-    "Verified all 89 new fields against pinned FU 6.5.8 source values and preserved exact patch test/replace pairing."
-  ],
-  "v12_scope": {
-    "outpost_beekeeping_reachable_quests": 13,
-    "disconnected_legacy_quests": [
-      "quests/fu_questlines/outpost/bees/13mites.questtemplate"
-    ],
-    "new_structured_fields": 78,
-    "new_patch_assets": 31,
-    "pinned_fu_fields": 72,
-    "vanilla_fields": 6,
-    "static_qa": "PASS",
-    "in_game_lqa": "BEKLİYOR"
-  },
-  "v13_scope": {
-    "science_outpost_shop_live_quests": 6,
-    "new_structured_fields": 48,
-    "new_patch_assets": 18,
-    "pinned_fu_fields": 48,
-    "vanilla_fields": 0,
-    "runtime_linkage": "PASS (6/6 shop objects offeredQuests/turnInQuests)",
-    "source_provenance": "PASS (48/48 pinned FU)",
-    "special_location_policy": "Verdant Ruins / Ancient Temple / Evernight Jungle preserved pending mission-location localization",
-    "static_qa": "PASS",
-    "in_game_lqa": "BEKLİYOR",
-    "decorative_angle_bracket_exceptions": 2,
-    "control_exception_note": "scienceoutpost_shadowShop /text ve /completionText: <...> teknik tag değil, karakter konuşma biçimi; dış parantezler korunur."
-  },
-  "v0131_scope": {
-    "reviewed_structured_fields": 1929,
-    "reviewed_lua_ui_strings": 15,
-    "corrected_structured_fields": 26,
-    "structured_field_count_after_review": 1929,
-    "localized_display_units_after_review": 1944,
-    "patch_assets_after_review": 322,
-    "duplicate_pointers": 0,
-    "empty_translations": 0,
-    "color_control_number_integrity": "PASS",
-    "locked_bee_terminology": "PASS",
-    "known_bad_turkish_patterns": "0 remaining",
-    "in_game_lqa": "BEKLİYOR"
-  },
-  "v0132_scope": {
-    "reviewed_structured_fields": 1929,
-    "reviewed_lua_ui_strings": 15,
-    "corrected_structured_fields": 17,
-    "lowercase_mech_fixed": 16,
-    "bee_refuge_action": "Takas Et",
-    "bee_refuge_reason": "Same crafting panel contains bee->money/material exchanges and money->guide recipes.",
-    "structured_field_count_after_review": 1929,
-    "localized_display_units_after_review": 1944,
-    "patch_assets_after_review": 322,
-    "duplicate_pointers": 0,
-    "empty_translations": 0,
-    "lowercase_mech_remaining": 0,
-    "static_qa": "PASS (GitHub Actions run 35499671787)",
-    "in_game_lqa": "BEKLİYOR"
-  },
-  "v0133_scope": {
-    "reviewed_structured_fields": 1934,
-    "reviewed_lua_ui_strings": 15,
-    "existing_text_corrections": 4,
-    "added_linked_inventory_fields": 8,
-    "removed_nonvisible_dummy_fields": 3,
-    "net_structured_field_change": 5,
-    "structured_field_count_after_review": 1934,
-    "localized_display_units_after_review": 1949,
-    "patch_assets_after_review": 325,
-    "target_assets_total": 326,
-    "legacy_fu_assets_provenance_backfilled": 37,
-    "pinned_fu_fields": 1856,
-    "layered_external_fields": 78,
-    "untracked_fields": 0,
-    "silt_term": "Mil / Gevşek Mil",
-    "gravel_term": "Çakıl",
-    "iron_centrifuge_term": "Demir Santrifüj",
-    "duplicate_pointers": 0,
-    "empty_translations": 0,
-    "dummy_replace_me_remaining": 0,
-    "lowercase_mech_remaining": 0,
-    "english_vanilla_eldritch_leaks_remaining": 0,
-    "color_control_number_integrity": "PASS",
-    "static_qa": "PASS (GitHub Actions run 35508618807)",
-    "in_game_lqa": "BEKLİYOR"
-  },
-  "v014_scope": {
-    "live_kevin_quests": 9,
-    "live_khe_quests": 4,
-    "quest_assets": 13,
-    "quest_display_fields": 50,
-    "quest_list_fields": 3,
-    "linked_inventory_assets": 20,
-    "linked_inventory_fields": 41,
-    "added_structured_fields": 94,
-    "added_patch_assets": 33,
-    "pinned_fu_new_fields": 84,
-    "layered_external_new_fields": 10,
-    "source_provenance": "PASS (94/94)",
-    "structured_field_count_after_release": 2028,
-    "localized_display_units_after_release": 2043,
-    "patch_assets_after_release": 358,
-    "target_assets_total": 359,
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v015_scope": {
-    "battle_source_questtemplates": 13,
-    "reachable_battle_quests": 10,
-    "disconnected_legacy_quests": [
-      "quests/fu_questlines/battle/monsters/fuquest_gorgolith.questtemplate",
-      "quests/fu_questlines/battle/monsters/fuquest_gorillaking.questtemplate",
-      "quests/fu_questlines/battle/monsters/fuquest_titan.questtemplate"
-    ],
-    "quest_display_fields": 39,
-    "quest_list_fields": 4,
-    "linked_inventory_assets": 10,
-    "linked_inventory_fields": 21,
-    "added_structured_fields": 64,
-    "added_patch_assets": 20,
-    "pinned_fu_new_fields": 64,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (64/64)",
-    "structured_field_count_after_release": 2092,
-    "localized_display_units_after_release": 2107,
-    "patch_assets_after_release": 378,
-    "target_assets_total": 379,
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v016_scope": {
-    "remaining_source_questtemplates": 17,
-    "other_source_questtemplates": 13,
-    "other_reachable_quests": 8,
-    "invisible_cinematic_trackers": 5,
-    "byos_remaining_source_questtemplates": 3,
-    "byos_reachable_quests": 2,
-    "byos_disconnected_legacy_quests": [
-      "quests/fu_questlines/byos/fu_byosshipcraftingtable.questtemplate"
-    ],
-    "exploration_source_questtemplates": 1,
-    "exploration_reachable_quests": 0,
-    "exploration_disconnected_legacy_quests": [
-      "quests/fu_questlines/exploration/fuquest_explore1.questtemplate"
-    ],
-    "quest_display_fields": 37,
-    "quest_list_fields": 3,
-    "linked_inventory_assets": 11,
-    "linked_inventory_fields": 22,
-    "added_structured_fields": 62,
-    "added_patch_assets": 21,
-    "pinned_fu_new_fields": 60,
-    "layered_external_new_fields": 2,
-    "source_provenance": "PASS (62/62)",
-    "structured_field_count_after_release": 2154,
-    "localized_display_units_after_release": 2169,
-    "patch_assets_after_release": 399,
-    "target_assets_total": 400,
-    "retroactive_terminology_corrections": 1,
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v017_scope": {
-    "crafting_object_assets_in_source": 84,
-    "previously_covered_assets": 30,
-    "newly_covered_assets": 54,
-    "added_structured_fields": 295,
-    "added_patch_assets": 54,
-    "pinned_fu_new_fields": 295,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (295/295)",
-    "structured_field_count_after_release": 2449,
-    "localized_display_units_after_release": 2464,
-    "patch_assets_after_release": 453,
-    "target_assets_total": 454,
-    "documented_source_fixes": 1,
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v018_scope": {
-    "candidate_object_assets": 57,
-    "reachable_object_assets": 47,
-    "runtime_dead_object_assets": 10,
-    "runtime_dead_assets": [
-      "objects/power/fu_solararrayscienceoutpost/fu_solararrayscienceoutpost.object",
-      "objects/power/fu_upgrade/fu_upgrade.object",
-      "objects/power/makeshiftreactor/makeshiftreactor2.object",
-      "objects/bees/scentedalveary/scentedalveary.object",
-      "objects/bees/scentedapiary/scentedapiary.object",
-      "objects/scienceoutpost/game/deeponegame.object",
-      "objects/scienceoutpost/moonlit_comet/moonlitcomet2.object",
-      "objects/scienceoutpost/scienceoutpostbanner2/scienceoutpostbanner2.object",
-      "objects/scienceoutpost/scienceoutpostbanner3/scienceoutpostbanner3.object",
-      "objects/scienceoutpost/scienceoutpostbanner4/scienceoutpostbanner4.object"
-    ],
-    "power_assets": 15,
-    "power_fields": 59,
-    "bee_assets": 17,
-    "bee_fields": 142,
-    "science_outpost_assets": 15,
-    "science_outpost_fields": 139,
-    "added_structured_fields": 340,
-    "added_patch_assets": 47,
-    "pinned_fu_new_fields": 340,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (340/340)",
-    "structured_field_count_after_release": 2789,
-    "localized_display_units_after_release": 2804,
-    "patch_assets_after_release": 500,
-    "target_assets_total": 501,
-    "runtime_chat_fields": 118,
-    "printf_placeholder_guard": "PASS",
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v019_scope": {
-    "crafting_item_assets_in_source": 313,
-    "previously_covered_assets": 52,
-    "candidate_item_assets": 261,
-    "reachable_item_assets": 235,
-    "runtime_dead_or_deprecated_assets": 26,
-    "runtime_dead_assets": [
-      "items/generic/crafting/chemlab/narcotics/fu_expiravittar.consumable",
-      "items/generic/crafting/chemlab/narcotics/fu_malware.consumable",
-      "items/generic/crafting/chemlab/narcotics/fu_prerolled.consumable",
-      "items/generic/crafting/chemlab/narcotics/fu_radiant.consumable",
-      "items/generic/crafting/chemlab/narcotics/fu_toxictop_blotter.consumable",
-      "items/generic/crafting/chemlab/narcotics/fu_vexpill.consumable",
-      "items/generic/crafting/chemlab/narcotics/fu_wubwub.consumable",
-      "items/generic/crafting/circuitboard.item",
-      "items/generic/crafting/ff_resin.item",
-      "items/generic/crafting/fissionfurnace/ebonshard.item",
-      "items/generic/crafting/fissionfurnace/morphitebar.item",
-      "items/generic/crafting/fu_holodisc.item",
-      "items/generic/crafting/fuguts.item",
-      "items/generic/crafting/imperviumfurnitureplating.item",
-      "items/generic/crafting/matterassembler/coil.item",
-      "items/generic/crafting/matterassembler/kheWarpedRegulatorChip.item",
-      "items/generic/crafting/matterassembler/magneticshielding.item",
-      "items/generic/crafting/matterassembler/microchip.item",
-      "items/generic/crafting/pelt.item",
-      "items/generic/crafting/reactormagnet.item",
-      "items/generic/crafting/servitorbehaviorchip.item",
-      "items/generic/crafting/servitorchassis.item",
-      "items/generic/crafting/servitorlaser.item",
-      "items/generic/crafting/skathimpervium.item",
-      "items/generic/crafting/starbooze/emptybottle2.item",
-      "items/generic/crafting/tethydefurnitureplating.item"
-    ],
-    "reachable_assets_by_subfolder": {
-      "root": 104,
-      "xenostation": 33,
-      "fissionfurnace": 20,
-      "chemlab": 17,
-      "starbooze": 17,
-      "mythos": 16,
-      "precursor": 13,
-      "isotopes": 12,
-      "matterassembler": 3
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_alchemy.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Koşul itemName=chemlab ister; bu nesnenin oyuncuya görünen 1. kademe adı Alchemy Table / Simya Tezgâhıdır."
+      }
     },
-    "added_structured_fields": 470,
-    "added_patch_assets": 235,
-    "pinned_fu_new_fields": 470,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (470/470)",
-    "structured_field_count_after_release": 3259,
-    "localized_display_units_after_release": 3274,
-    "patch_assets_after_release": 735,
-    "target_assets_total": 736,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "in_game_lqa": "NOT PERFORMED",
-    "github_actions_run": 35519786589,
-    "package_commit": "f61e8c2daa35200d29b111e5b2a2f7651130216c",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.19.0_Beta.zip",
-      "bytes": 609568,
-      "git_blob_sha": "e8a7442ce735d1cdda328f9c949cb08fc5aa8f31"
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_electronics.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak turnInDescription yanlışlıkla Armorworks der; gerçek gatherItem koşulu itemName=powerstation, oyuncu adı Elektronik Merkezi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_color_fix": true,
+        "reason": "Kaynak metinde ikinci Greenhouse için renk ^orange; ile yeniden açılıp kapatılmıyor. Türkçe metinde ^reset; ile güvenli biçimde kapatıldı."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak turnInDescription yanlışlıkla Armorworks der; gerçek gatherItem koşulu itemName=designlab, oyuncu adı Sera."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_tinkertable.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak turnInDescription yanlışlıkla Armorworks der; gerçek gatherItem koşulu itemName=nanofabricator, oyuncu adı İnce İşçilik Tezgâhı."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_color_fix": true,
+        "reason": "Kaynakta ^oraange; yazım hatası var; Türkçe yamada ^orange; olarak düzeltildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak yanlışlıkla Armorworks istiyor; gerçek görev koşulu fu_growingtray."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/cooking1/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Kitchen Counter gerçek FU final kademe adıyla Mutfak Tezgâhı olarak eşlendi."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/colony1/1",
+      "qa": {
+        "allow_number_fix": true,
+        "reason": "Kaynak 'Mk2 Tenant Deeds' diyor; gerçek eşya adı 'Colony Deed Mark II'. Oyuncu takibi için envanter adı kullanıldı. Inventor's Table vanilla gerçek adıyla doğrulandı; Türkçede Mucit Tezgâhı.",
+        "linked_inventory_verified": true
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/canvas/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Sewing Machine vanilla craftingwheel 2. kademe gerçek adıyla doğrulandı; Türkçede Dikiş Makinesi."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchsnowpeople/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Inventor's Table vanilla gerçek adıyla doğrulandı; Türkçede Mucit Tezgâhı."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbench1/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Wooden Workbench vanilla gerçek adıyla doğrulandı; Türkçede Ahşap Tezgâh."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_craftsmanship.config",
+      "pointer": "/strings/research/workbenchslime/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Biochemist Table gerçek FU nesne adıyla Biyokimyacı Tezgâhı olarak eşlendi."
+      }
+    },
+    {
+      "asset": "objects/colonysystem2/colonycore/colonycore.object",
+      "pointer": "/description",
+      "qa": {
+        "allow_number_fix": true,
+        "reason": "Kaynak MK2 diyor; kilitli envanter adı Koloni Tapusu Mark II olarak kullanılıyor."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/apexDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/avianDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/floranDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/humanDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/hylotlDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/novakidDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/windowtitle/title",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/0/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/apexDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/avianDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/floranDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/humanDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/hylotlDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/novakidDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/windowtitle/title",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/woodencookingtable/woodencookingtable.object",
+      "pointer": "/upgradeStages/1/interactData/paneLayoutOverride/windowtitle/subtitle",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
+        "reason": "FU bu vanilla nesnenin /upgradeStages dizisini kendi .object.patch dosyasında oluşturuyor; beklenen İngilizce değer FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "c78ad0fe85d175cadacc8cf96de30995fb5623a9",
+        "reason": "Vanilla Starbound kısa adı Patch Project test değeriyle doğrulandı; FU bu alanı değiştirmiyor.",
+        "allow_color_fix": true
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "c78ad0fe85d175cadacc8cf96de30995fb5623a9",
+        "reason": "Vanilla Starbound 1. kademe adı Patch Project test değeriyle doğrulandı; FU bu alanı değiştirmiyor.",
+        "allow_color_fix": true
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "c78ad0fe85d175cadacc8cf96de30995fb5623a9",
+        "reason": "Vanilla Starbound 2. kademe adı Patch Project test değeriyle doğrulandı; FU araştırma metnindeki Sewing Machine referansıyla eşleşir.",
+        "allow_color_fix": true
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/apexDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/avianDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/floranDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/humanDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/hylotlDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/novakidDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblTitle/value",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object",
+      "pointer": "/upgradeStages/2/interactData/paneLayoutOverride/lblSubTitle/value",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object.patch",
+        "reason": "FU bu üçüncü craftingwheel kademesini /upgradeStages/- ile ekliyor; İngilizce değer pinned FU patchinden exact alındı."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "9abd8887edfaeb62594df92d08ed71e2760ee76a",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "9abd8887edfaeb62594df92d08ed71e2760ee76a",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftingfurniture/craftingfurniture.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "9abd8887edfaeb62594df92d08ed71e2760ee76a",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/inventorstable/inventorstable.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "023a6370504ed4f12e0319d792a473577e397bbc",
+        "reason": "Vanilla Starbound kısa adı bağımsız Patch Project test değeriyle doğrulandı; FU bu hedef nesneyi patchlemiyor. ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_warcraft.config",
+      "pointer": "/strings/research/irongear/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Armorworks FU armory nesnesiyle; Anvil vanilla craftinganvil adıyla doğrulandı."
+      }
+    },
+    {
+      "asset": "zb/researchTree/fu_warcraft.config",
+      "pointer": "/strings/research/tungstengear/1",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Breathing EPP vanilla gerçek shortdescription ile doğrulandı; Türkçede Solunum EPP'si."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "objects/crafting/upgradeablecraftingobjects/craftinganvil/craftinganvil.object",
+      "pointer": "/upgradeStages/2/itemSpawnParameters/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "allow_color_fix": true,
+        "external_source": "jss2a98aj/Starbound-Patch-Project @ d1808ad88411fb1e06b650f4cbc99e895ee4a0ce",
+        "external_blob_sha": "86b4ac1f2310c21ae81da3d649c6a4441cce8505",
+        "reason": "Vanilla Starbound kısa adı bağımsız test değeriyle doğrulandı; ^white; kapanışı Türkçede ^reset; ile düzeltilir."
+      }
+    },
+    {
+      "asset": "items/armors/backitems/breathprotection/breathprotection.back",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/armors/backitems/breathprotection/breathprotection.back",
+        "reason": "Vanilla Starbound eşya kaynağından exact doğrulandı; FU bu item ID'yi tungstengear düğümünde açıyor."
+      }
+    },
+    {
+      "asset": "items/armors/backitems/breathprotection/breathprotection.back",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/armors/backitems/breathprotection/breathprotection.back",
+        "reason": "Vanilla Starbound eşya kaynağından exact doğrulandı; FU bu item ID'yi tungstengear düğümünde açıyor."
+      }
+    },
+    {
+      "asset": "items/active/weapons/other/brainharvester/brainharvester.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/other/brainharvester/brainharvester.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/psiejector/psiejector.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/psiejector/psiejector.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "FU activeitem açıklaması literal satır sonları içeriyor; exact kaynak değeri ham metin üzerinden doğrulanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics3.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Gerçek gatherItem koşulu 5 liquidoil; kaynak hedef metni sayıyı belirtmiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/start_basics4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Türkçe hedef, gerçek gatherItem adetini oyuncuya açıkça gösterir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor2.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Türkçe hedef, gerçek gatherItem adetini oyuncuya açıkça gösterir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor3.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Türkçe hedef, gerçek gatherItem adetini oyuncuya açıkça gösterir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "semantic_override": "Kaynak Plant Fibre/Tissue Culture anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource. Türkçe hedef, gerçek gatherItem adetini oyuncuya açıkça gösterir.",
+        "allow_number_fix": true
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor5.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "semantic_override": "Kaynak Meat/Genetic Material anlatımı güncel extraction çıktılarıyla uyuşmuyor; gerçek görev koşulu 5 fuscienceresource. Türkçe hedef, gerçek gatherItem adetini oyuncuya açıkça gösterir.",
+        "allow_number_fix": true
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/extractor6.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Türkçe hedef, gerçek gatherItem adetini oyuncuya açıkça gösterir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/extractor/create_silicon.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak teslim metni 10 Silicon diyor; gerçek gatherItem koşulu 1 ff_silicon."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_rockbreaker.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_color_fix": true,
+        "semantic_override": "Kaynak Electronics Center kapanışında hatalı ^; kullanıyor; Türkçede ^reset; ile kapatıldı."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_woodencentrifuge.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "linked_inventory_verified": true,
+        "reason": "Kaynak completionText gerçek ironcentrifuge nesnesini 'Iron Centrifuge' adıyla yönlendiriyor; envanter nesnesi doğrulandı ve Demir Santrifüj olarak eşlendi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/tutorial/vinj/create_woodencentrifuge.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "semantic_override": "Kaynak teslim hedefi Armorworks diyor; gerçek gatherItem koşulu woodencentrifuge."
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/miners/minertest/basicminertest.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/miners/minertest/basicminertest.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/stonespear.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/weapons/melee/spear/stonespear.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/unsorted/mechTablet/mechtablet.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/unsorted/mechTablet/mechtablet.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/unsorted/techtablet/techtablet.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/active/unsorted/techtablet/techtablet.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/tools/wiretoolfu.wiretool",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/tools/wiretoolfu.wiretool",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "objects/kheAA/kheAA_containerLink/kheAA_containerLink.object",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "objects/kheAA/kheAA_containerLink/kheAA_containerLink.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/generic/crafting/paper.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/paper.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/silverbar.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/silverbar.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/liquids/oil.liqitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/liquids/oil.liqitem",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/upgrade/techconsole/techconsole.object",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/upgrade/techconsole/techconsole.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/chemistry/create_plastic.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak 'Bio Lab' diyor; pinned FU 6.5.8 plastic recipes ff_plastic'i chemlab2/Kimya Laboratuvarında üretir. Bonemeal ise santrifüjde yağ verebilir."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/icecrystal.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/icecrystal.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_centrifuge.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak generic 'advanced centrifuge' diyor; gerçek sonraki yükseltme envanter adı Gas Centrifuge/Gaz Santrifüjü."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/electronics/create_circuitboard.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak eski tarifte Silicon + Copper Wire ve Matter Assembler diyor. Pinned vanilla tarif siliconboard'u craftingfurnace3/Atomik Fırında Sand + Coal ile üretir; FU Matter Assembler yalnız prototyper1/2/3 filtrelerini kullanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/deprecated/fuquest_battery.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak eski 'Wiring Tool' adını kullanıyor; FU'nun ilgili aracı wiretoolfu ve gerçek envanter adı Mechanic's Wrench, Türkçede Tamirci Anahtarı olarak LOCKED."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/siliconboard.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/siliconboard.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_miraclegrass.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "reason": "Pinned miraclegrassseed tarifi designlab1 grubunda; Sera yeterli. Kaynak gereksiz yere Gene Design Lab istiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_bracken.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "allow_number_fix": true,
+        "reason": "Bracken tarifi designlab2/Botanik Laboratuvarı gerektiriyor; kaynak yalnız Sera varmış gibi yönlendiriyor. Gerçek görev koşulu 3 tohum."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_mutavisk.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_clarification": true,
+        "allow_number_fix": true,
+        "reason": "Mutavisk tarifi designlab2 grubunda; gerçek gerekli kademe Botanik Laboratuvarı. Koşul 3 tohum ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_oonforta.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "allow_number_fix": true,
+        "reason": "Oonforta tarifi designlab2/Botanik Laboratuvarı gerektiriyor; kaynak Greenhouse diyor. Koşul 3 tohum ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Görev koşulu clonelab toplamaktır; kaynak metin yalnız kullanımını anlatıp üretim hedefini açık söylemiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "allow_number_fix": true,
+        "reason": "Ignus Chili tarifi designlab2/Botanik Laboratuvarında açılır; Gene Design Lab gereksiz üst kademe. Koşul 3 tohum ister."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_ignuschili.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu 3 tohum ister; kaynak teslim metni adedi söylemiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/genetics/create_radleaf.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu ve teslim metni 3 Rad Leaf ister."
+      }
+    },
+    {
+      "asset": "objects/farmables/miraclegrassseed/miraclegrassseed.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Asset bir seed object olmasına rağmen kaynak kısa ad 'Miracle Grass'; Türkçede görev-hedef takibi için tohum olduğu açık yazılır."
+      }
+    },
+    {
+      "asset": "objects/farmables/mutavisk/mutaviskseed.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Asset bir seed object; Türkçede görev-hedef takibi için tohum olduğu açık yazılır."
+      }
+    },
+    {
+      "asset": "items/armors/tier3/mutaviskarmor/mutavisk.head",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "items/armors/tier3/mutaviskarmor/mutavisk.head",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_atmosregulator.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_correction": true,
+        "reason": "Kaynak teslim metni 'Atmosphere Regulator' diyor; gerçek item shortdescription 'Atmospheric Regulator'."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/mechanical/create_blackglass.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Quest condition gerçek çıktı itemi blackglass; hedef metinde ad açık yazmıyor."
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/glitchdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/florandescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/blackglass.matitem",
+      "pointer": "/novakiddescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "reason": "Pinned protocitebar tarifi craftingfurnace2 grubunda; vanilla stage adı Industrial Furnace. Kaynaktaki Fission Furnace güncel değil."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_protocite.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu 2 Protocite Külçesi ister; kaynak teslim metni adedi yazmıyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_tritium.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_correction": true,
+        "reason": "Gerçek quest koşulu yalnız 1 tritium ister; pinned tritium tarifi craftingfurnace3/Atomic Furnace grubundadır. Kaynaktaki Fission Reactor hedefi koşulda yok."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/science/physics/create_tritium.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "allow_number_fix": true,
+        "source_clarification": true,
+        "reason": "Gerçek görev koşulu 1 tritium ister; kaynak teslim metni adedi yazmıyor."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/teleportercore.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/teleportercore.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/2brew_a.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak metin üç/dört şişe diyor; gerçek gatherItem koşulu 1 bottle istiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/3hops.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak metin en az 2 Şerbetçiotu diyor; gerçek gatherItem koşulu 1 hops istiyor."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/booze/6beer.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_number_fix": true,
+        "semantic_override": "Kaynak metin 3 bira diyor; gerçek gatherItem koşulu 1 beer istiyor. Beer tarifi tek üretimde 2 verir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/bees/12breeding.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "semantic_source_fix": true,
+        "reason": "Kaynak metindeki Giant Apiary gerçek bir envanter adı değil; görev zincirindeki normalalveary nesnesinin gerçek adı Large Apiary olduğundan Türkçede Büyük Arılık kullanıldı."
+      }
+    },
+    {
+      "asset": "items/active/unsorted/bugnet/bugnet.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/active/unsorted/bugnet/bugnet.activeitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/farmables/flowerred/flowerred.object",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "objects/farmables/flowerred/flowerred.object",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/bottle.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/generic/crafting/bottle.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_control_fix": true,
+        "control_note": "Kaynakta <...> teknik tag değil, Shadow konuşma biçimidir; dış açı parantezler Türkçede korunur."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "allow_control_fix": true,
+        "control_note": "Kaynakta <...> teknik tag değil, Shadow konuşma biçimidir; dış açı parantezler Türkçede korunur."
+      }
+    },
+    {
+      "asset": "items/materials/sand.matitem",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/materials/sand.matitem.patch",
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/sand.matitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/gravel.matitem",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "items/materials/gravel.matitem",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source_repository": "FerreiraJGB/Starbound",
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak Sewing Wheel der; boosterchest gerçek craftingwheel 2. kademe Sewing Machine / Dikiş Makinesinde üretilir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator3e.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_bug_fix": true,
+        "reason": "Kaynak average quality Brains der; gatherItem itemName=brain ister ve gerçek envanter kısa adı Superior Brain / Üstün Beyindir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/kevin_tasks/create_clothingfabricator4.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Gerçek envanter kısa adları Neutronium Rod ve Anti-Neutronium Rod olduğundan görev teslim adı çubuk biçimiyle eşlendi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/khe_stuff/khe_fabric.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "source_clarification": true,
+        "reason": "Kaynak genel Gold/Core Fragments/Pure Erchius der; gatherItem koşulları goldbar, corefragmentore ve pureerchius gerçek envanter adlarıyla açıklaştırıldı."
+      }
+    },
+    {
+      "asset": "items/armors/tier1/booster/kirhosbooster.chest",
+      "pointer": "/description",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU assetindeki açıklama literal satır sonu içerdiği için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "items/armors/tier1/booster/kirhosbooster.chest",
+      "pointer": "/shortdescription",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU assetindeki gerçek boosterchest envanter adıyla exact eşleşir."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/goldbar.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/goldbar.item",
+        "external_blob_sha": "8b4c64e73b114f13aa56d2b45313a70adfe45f0b",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/goldbar.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/goldbar.item",
+        "external_blob_sha": "8b4c64e73b114f13aa56d2b45313a70adfe45f0b",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/diamond.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/diamond.item",
+        "external_blob_sha": "c6ccb32fe1e9e766de4266c6765e5f4cb91ad414",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/diamond.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/diamond.item",
+        "external_blob_sha": "c6ccb32fe1e9e766de4266c6765e5f4cb91ad414",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/crystal.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/crystal.item",
+        "external_blob_sha": "93fc26681bc8482e6d97c9f6690c40ce0453cf55",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/crystal.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/crystal.item",
+        "external_blob_sha": "93fc26681bc8482e6d97c9f6690c40ce0453cf55",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/corefragmentore.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/corefragmentore.item",
+        "external_blob_sha": "b34dfc05b60152072f843ad0881f59dedffb4de7",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/corefragmentore.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/corefragmentore.item",
+        "external_blob_sha": "b34dfc05b60152072f843ad0881f59dedffb4de7",
+        "reason": "Görev hedefini gerçek vanilla envanter adıyla eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/plebiancap.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU görev kaynağındaki literal sekme standart JSON ayrıştırmasını bozduğu için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/plebiancap.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU görev kaynağındaki literal sekme standart JSON ayrıştırmasını bozduğu için exact ham kaynak değeriyle doğrulanır.",
+        "allow_tab_fix": true,
+        "tab_fix_reason": "Kaynakta cümleler arasında literal sekme var; Türkçe doğal cümle akışı kullanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/gear/plebiancap.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "raw_source_value_guard": true,
+        "reason": "Pinned FU görev kaynağındaki literal sekme standart JSON ayrıştırmasını bozduğu için exact ham kaynak değeriyle doğrulanır."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/scriptConfig/turnInDescription",
+      "qa": {
+        "reason": "Kaynak görevdeki genel hedef adı, gerçek envanter adı Mama Poptop Claw ile eşleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "retro_terminology_fix": true,
+        "reason": "v0.16 tam görev QA: mevcut LOCKED Cyberspheres -> Siberküreler terimiyle birleştirildi."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/other/create_densinium.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "allow_color_fix": true,
+        "reason": "Kaynakta Densinium Helm renk kodu yanlışlıkla ^orange; ile kapanıyor; Türkçede ^reset; ile güvenli biçimde düzeltilir."
+      }
+    },
+    {
+      "asset": "quests/fu_questlines/other/precursor/precursor_unlock.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "reason": "Kaynak genel data-disc der; Türkçe metin görevi başlatan gerçek Precursor Data-Key envanter adıyla eşleştirildi."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/moltencore.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/moltencore.item",
+        "external_blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376",
+        "reason": "Shoggoth görev hedefini gerçek vanilla envanter adıyla birebir eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "items/generic/crafting/moltencore.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "external_base_verified": true,
+        "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
+        "external_path": "assets/packed/items/generic/crafting/moltencore.item",
+        "external_blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376",
+        "reason": "Shoggoth görev hedefini gerçek vanilla envanter adıyla birebir eşlemek için exact harici kaynak doğrulaması."
+      }
+    },
+    {
+      "asset": "objects/crafting/pethealingstation/pethealingstationauto.object",
+      "pointer": "/subtitle",
+      "qa": {
+        "reason": "Kaynak altyazısı yanlışlıkla broken robots der; nesne pethealingstation ve ana açıklaması evcil hayvan iyileştirmeyi doğrular."
+      }
+    },
+    {
+      "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "allow_control_fix": true
+      }
+    },
+    {
+      "asset": "items/active/weapons/melee/shortsword/nightarshortsword.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "allow_tab_fix": true,
+        "tab_fix_reason": "Kaynakta iki cümle arasında literal sekme var; Türkçe normal cümle aralığı kullanır."
+      }
     }
-  },
-  "v020_scope": {
-    "untranslated_questtemplate_candidates": 97,
-    "malformed_extension_test_files": 1,
-    "reachable_player_visible_quests": 29,
-    "inactive_or_nonvisible_questtemplates": 68,
-    "map_and_special_region_quests": 19,
-    "challenge_lab_quests": 4,
-    "master_manipulator_quests": 2,
-    "active_pickup_tech_quests": 4,
-    "excluded_tech_questtemplates": 45,
-    "disabled_optional_hardmode_quests": 12,
-    "legacy_mmgravgun_quests": 3,
-    "unreferenced_story_variants": 4,
-    "hidden_tracking_or_fix_quests": 3,
-    "untriggered_same_id_item_quests": 1,
-    "added_structured_fields": 112,
-    "added_patch_assets": 29,
-    "pinned_fu_new_fields": 112,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (112/112)",
-    "structured_field_count_after_release": 3371,
-    "localized_display_units_after_release": 3386,
-    "patch_assets_after_release": 764,
-    "target_assets_total": 765,
-    "translated_pointers": [
-      "/title",
-      "/text",
-      "/completionText",
-      "/scriptConfig/turnInDescription"
-    ],
-    "combatmaneuvering_bracket_prose_exception": "PASS (field-specific allow_control_fix; source bracket text is player prose, not a control tag)",
-    "github_actions_run": 35521672766,
-    "package_commit": "0d40c96fbac7a71d1c0fbce40529959a886780a4",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.20.0_Beta.zip",
-      "bytes": 630842,
-      "git_blob_sha": "335c587084516f7d5f67b38fbf1b9f6a77769978"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v021_scope": {
-    "weapon_activeitem_source_inventory": 1201,
-    "active_research_nodes": [
-      "bonegear",
-      "irongear",
-      "telebriumgear",
-      "tungstengear"
-    ],
-    "research_unlocked_weapon_assets": 124,
-    "weapon_assets_with_recipe_output": 124,
-    "previously_covered_weapon_assets": 3,
-    "newly_localized_weapon_assets": 121,
-    "added_structured_fields": 242,
-    "added_patch_assets": 121,
-    "pinned_fu_new_fields": 242,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (242/242)",
-    "structured_field_count_after_release": 3613,
-    "localized_display_units_after_release": 3628,
-    "patch_assets_after_release": 885,
-    "target_assets_total": 886,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "github_actions_run": 35522873075,
-    "package_commit": "00642868b4e2c160c26f28609c1e1de362940aa4",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.21.0_Beta.zip",
-      "bytes": 695989,
-      "git_blob_sha": "19104b1ef49638c18b5d6c08626a53c31761bdcc"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v022_scope": {
-    "active_tier3_research_nodes": [
-      "titaniumgear",
-      "carbonarmorgear",
-      "wastelandgear",
-      "protocitegear",
-      "penumbritegear",
-      "zerchesiumgear"
-    ],
-    "research_unlocked_combat_assets": 158,
-    "combat_assets_with_recipe_output": 158,
-    "previously_covered_combat_assets": 1,
-    "newly_localized_combat_assets": 157,
-    "tier3_added_structured_fields": 314,
-    "master_manipulator_inventory_assets": 2,
-    "master_manipulator_added_structured_fields": 5,
-    "combatmaneuvering_prose_fields_corrected": 2,
-    "added_structured_fields": 319,
-    "added_patch_assets": 159,
-    "pinned_fu_new_fields": 319,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (319/319)",
-    "structured_field_count_after_release": 3932,
-    "localized_display_units_after_release": 3947,
-    "patch_assets_after_release": 1044,
-    "target_assets_total": 1045,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description",
-      "/augment/displayName"
-    ],
-    "github_actions_run": 35523998458,
-    "package_commit": "e0369482a198ee871f3074e39834f286e39302c8",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.22.0_Beta.zip",
-      "bytes": 777869,
-      "git_blob_sha": "da3ce88f17e4ba27a3d1534d7f81cd3efb90382a"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v023_scope": {
-    "active_tier4_core_research_nodes": [
-      "advancealloygear",
-      "durasteelgear"
-    ],
-    "research_unlocked_combat_assets": 48,
-    "combat_assets_with_recipe_output": 48,
-    "previously_covered_combat_assets": 0,
-    "newly_localized_combat_assets": 48,
-    "added_structured_fields": 96,
-    "added_patch_assets": 48,
-    "pinned_fu_new_fields": 96,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (96/96)",
-    "structured_field_count_after_release": 4028,
-    "localized_display_units_after_release": 4043,
-    "patch_assets_after_release": 1092,
-    "target_assets_total": 1093,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "deferred_tier4_branches": [
-      "irradiumgear",
-      "triangliumgear",
-      "prisilitegear",
-      "quietusgear",
-      "bioweapons"
-    ],
-    "github_actions_run": 35525361862,
-    "package_commit": "9a1da273607ad390125ac6f5ba03282b6b001564",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.23.0_Beta.zip",
-      "bytes": 803880,
-      "git_blob_sha": "6bc23f59c75d0c515338da0832ae712d7d36d0dd"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v024_scope": {
-    "active_tier4_remaining_research_nodes": [
-      "irradiumgear",
-      "triangliumgear",
-      "prisilitegear",
-      "quietusgear",
-      "bioweaponsgear"
-    ],
-    "research_unlock_item_ids": 209,
-    "research_unlocked_recipe_backed_combat_assets": 148,
-    "combat_assets_with_recipe_output": 148,
-    "previously_covered_or_duplicate_combat_assets": 0,
-    "newly_localized_combat_assets": 148,
-    "added_structured_fields": 296,
-    "added_patch_assets": 148,
-    "pinned_fu_new_fields": 296,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (296/296)",
-    "structured_field_count_after_release": 4324,
-    "localized_display_units_after_release": 4339,
-    "patch_assets_after_release": 1240,
-    "target_assets_total": 1241,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "tier4_selected_combat_scope_complete": true,
-    "github_actions_run": 35526922392,
-    "package_commit": "41dbbf60af22feee821cecf17ff39c4bb161c60e",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.24.0_Beta.zip",
-      "bytes": 880420,
-      "git_blob_sha": "cdb5a879fdb042605727e674c90055eb76c87d9e"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v025_scope": {
-    "active_early_armor_research_nodes": [
-      "bonegear",
-      "slimegear1",
-      "irongear",
-      "cottongear",
-      "telebriumgear",
-      "lunarigear",
-      "elduugear",
-      "skathgear",
-      "tungstengear"
-    ],
-    "newly_localized_recipe_backed_armor_assets": 114,
-    "added_structured_fields": 228,
-    "added_patch_assets": 114,
-    "pinned_fu_new_fields": 228,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (228/228)",
-    "structured_field_count_after_release": 4552,
-    "localized_display_units_after_release": 4567,
-    "patch_assets_after_release": 1354,
-    "target_assets_total": 1355,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "epp_nodes_included": false,
-    "static_qa": "PASS",
-    "github_actions_run": 35528054146,
-    "package_commit": "f435a687063f14307226e067a7206dc1b4f569d6",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.25.0_Beta.zip",
-      "bytes": 952029,
-      "git_blob_sha": "1d24584aac15cc50a909fe7ceba4fe781ba1e610"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v026_scope": {
-    "active_tier3_armor_research_nodes": [
-      "titaniumgear",
-      "carbonarmorgear",
-      "wastelandgear",
-      "protocitegear",
-      "penumbritegear",
-      "zerchesiumgear"
-    ],
-    "research_unlocked_recipe_backed_armor_assets": 76,
-    "previously_localized_armor_assets": 1,
-    "newly_localized_recipe_backed_armor_assets": 75,
-    "added_structured_fields": 150,
-    "added_patch_assets": 75,
-    "pinned_fu_new_fields": 150,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (150/150)",
-    "structured_field_count_after_release": 4702,
-    "localized_display_units_after_release": 4717,
-    "patch_assets_after_release": 1429,
-    "target_assets_total": 1430,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "static_qa": "PASS",
-    "github_actions_run": 35529030761,
-    "package_commit": "2243bfdb5354cb4df0851b38c69cdb40422e26ec",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.26.0_Beta.zip",
-      "bytes": 1000929,
-      "git_blob_sha": "bf04b73ee357822656c391d32bdafd6cb609f46b"
-    },
-    "in_game_lqa": "NOT PERFORMED"
-  },
-  "v027_scope": {
-    "active_tier4_armor_research_nodes": [
-      "advancealloygear",
-      "durasteelgear",
-      "irradiumgear",
-      "triangliumgear",
-      "prisilitegear",
-      "quietusgear",
-      "bioweaponsgear"
-    ],
-    "research_unlocked_recipe_backed_armor_assets": 87,
-    "newly_localized_recipe_backed_armor_assets": 87,
-    "added_structured_fields": 174,
-    "added_patch_assets": 87,
-    "pinned_fu_new_fields": 174,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (174/174)",
-    "structured_field_count_after_release": 4876,
-    "localized_display_units_after_release": 4891,
-    "patch_assets_after_release": 1516,
-    "target_assets_total": 1517,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "static_qa": "PASS",
-    "github_actions_run": null,
-    "package_commit": "29b13f229c65295ebd08590ed6f14b7b41594573",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.27.0_Beta.zip",
-      "bytes": 1056685,
-      "git_blob_sha": "74a1161fecfd3bf576d0e07bb22b47af89cae1ab"
-    },
-    "in_game_lqa": "NOT PERFORMED",
-    "github_actions_evidence": "PASS (automated package commit 29b13f229c65295ebd08590ed6f14b7b41594573)"
-  },
-  "v028_scope": {
-    "active_tier5_combat_research_nodes": [
-      "tritaniumgear",
-      "enrichedgear",
-      "violiumgear",
-      "feroziumgear",
-      "aegisaltgear",
-      "densealloygear",
-      "effigiumgear"
-    ],
-    "research_unlocked_recipe_backed_combat_assets": 97,
-    "previously_localized_combat_assets": 1,
-    "newly_localized_recipe_backed_combat_assets": 96,
-    "added_structured_fields": 192,
-    "added_patch_assets": 96,
-    "pinned_fu_new_fields": 192,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (192/192)",
-    "structured_field_count_after_release": 5068,
-    "localized_display_units_after_release": 5083,
-    "patch_assets_after_release": 1612,
-    "target_assets_total": 1613,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "static_qa": "PASS",
-    "github_actions_run": null,
-    "package_commit": "aef33c8efa47a3927a13ae2015a7409129c5351a",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.28.0_Beta.zip",
-      "bytes": 1111223,
-      "git_blob_sha": "1fdd1e7efd34f0f0452cb5b11c286545536e3fa0"
-    },
-    "in_game_lqa": "NOT PERFORMED",
-    "github_actions_evidence": "PASS (automated package commit aef33c8efa47a3927a13ae2015a7409129c5351a)"
-  },
-  "v029_scope": {
-    "active_tier5_armor_research_nodes": [
-      "tritaniumgear",
-      "enrichedgear",
-      "violiumgear",
-      "feroziumgear",
-      "aegisaltgear",
-      "densealloygear",
-      "effigiumgear"
-    ],
-    "research_unlocked_recipe_backed_armor_assets": 61,
-    "newly_localized_recipe_backed_armor_assets": 61,
-    "added_structured_fields": 122,
-    "added_patch_assets": 61,
-    "pinned_fu_new_fields": 122,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (122/122)",
-    "structured_field_count_after_release": 5190,
-    "localized_display_units_after_release": 5205,
-    "patch_assets_after_release": 1673,
-    "target_assets_total": 1674,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "runtime_tier_path_policy": "PASS (research + recipe chain is authoritative; tier4/tier6 source paths included)",
-    "static_qa": "PASS",
-    "github_actions_run": null,
-    "package_commit": "3f08390db7b6a9d4100b52b20ec1fc6a37cc3563",
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.29.0_Beta.zip",
-      "bytes": 1149753,
-      "git_blob_sha": "bda570edc532a6e8c85f48d0135d8d596d33d64d"
-    },
-    "in_game_lqa": "NOT PERFORMED",
-    "github_actions_evidence": "PASS (automated package commit 3f08390db7b6a9d4100b52b20ec1fc6a37cc3563)"
-  },
-  "v030_scope": {
-    "selection_rule": "active fu_warcraft unlock + real recipe output + visible equipment asset",
-    "research_nodes": [
-      "bonegear",
-      "irongear",
-      "telebriumgear",
-      "tungstengear",
-      "ambergear",
-      "slimegear1",
-      "slimegear2",
-      "slimegear3",
-      "silkgear",
-      "monsterplategear",
-      "kirhosgear",
-      "lunarigear",
-      "elduugear",
-      "skathgear",
-      "veluuishgear",
-      "epps1",
-      "epps2",
-      "epps3",
-      "epps4",
-      "solariumgear",
-      "densiniumgear",
-      "pyreitegear",
-      "isogengear",
-      "xithricitegear",
-      "aetheriumgear"
-    ],
-    "newly_localized_recipe_backed_assets": 413,
-    "weapons": 288,
-    "armor_and_epp": 125,
-    "group_asset_counts": {
-      "early_shields": 6,
-      "early_side": 126,
-      "racial": 85,
-      "epp": 28,
-      "tier6": 130,
-      "tier7": 38
-    },
-    "added_structured_fields": 826,
-    "added_patch_assets": 413,
-    "pinned_fu_new_fields": 826,
-    "layered_external_new_fields": 0,
-    "source_provenance": "PASS (826/826)",
-    "structured_field_count_after_release": 6016,
-    "localized_display_units_after_release": 6031,
-    "patch_assets_after_release": 2086,
-    "target_assets_total": 2087,
-    "translated_pointers": [
-      "/shortdescription",
-      "/description"
-    ],
-    "technical_integrity": "PASS (numbers, color codes, icons, line breaks and tabs)",
-    "static_qa": "PASS (6016 fields, 2086 patch assets, 1 raw override)",
-    "negative_tests": {
-      "source_drift_rejection": "PASS",
-      "technical_pointer_rejection": "PASS",
-      "number_drift_rejection": "PASS"
-    },
-    "local_package_zip": {
-      "path": "dist/FU_Turkce_v0.30.0_Beta.zip",
-      "current_evidence": "dist/build-evidence.json",
-      "note": "Güncel paket boyutu ve hash değerleri build sırasında üretilen kanıt dosyasındadır."
-    },
-    "github_actions_run": null,
-    "package_commit": null,
-    "package_zip": {
-      "path": "dist/FU_Turkce_v0.30.0_Beta.zip",
-      "current_evidence": "dist/build-evidence.json"
-    },
-    "in_game_lqa": "NOT PERFORMED",
-    "github_actions_evidence": "CURRENT: dist/build-evidence.json"
-  }
+  ]
 }
