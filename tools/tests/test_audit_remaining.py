@@ -287,6 +287,30 @@ class AuditVisibilityTests(unittest.TestCase):
             asset, ["clusterInfoBox", "iconImage"], "/interface/bookmarks/icons/%s.png"
         ))
 
+    def test_stat_window_runtime_status_names_are_visible(self):
+        asset = "interface/scripted/statWindow/statWindow.config"
+        self.assertEqual(
+            audit.visible_confidence(
+                asset,
+                ["statuses", "biomecoldImmunity", "name"],
+                "^#4BF3FD;Moderate Cold",
+            ),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(
+                asset,
+                ["statuses", "pusImmunity", "name"],
+                "^yellow;Pus",
+            ),
+            "confirmed",
+        )
+        self.assertIsNone(audit.visible_confidence(
+            asset,
+            ["statuses", "nitrogenfreezeImmunity", "skip", "0"],
+            "liquidnitrogenImmunity",
+        ))
+
     def test_matmod_runtime_names_are_visible_without_global_name_rule(self):
         asset = "interface/scripted/fu_matmodplacer/fu_matmodplacer.config"
         self.assertEqual(
