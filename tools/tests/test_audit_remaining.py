@@ -123,6 +123,34 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertNotIn("/scenes/choice/options/1/1", by_pointer)
         self.assertNotIn("/scenes/choice/options/1/2/0", by_pointer)
 
+    def test_title_from_entity_hides_only_windowtitle_fallback_text(self):
+        data = {
+            "titleFromEntity": True,
+            "paneLayout": {
+                "windowtitle": {
+                    "title": "FALLBACK TITLE",
+                    "subtitle": "Fallback subtitle",
+                },
+                "btnCraft": {"caption": "Craft"},
+            },
+        }
+        rows = list(audit.candidates_from_data("interface/windowconfig/test.config", data))
+        by_pointer = {row.pointer: row for row in rows}
+        self.assertNotIn("/paneLayout/windowtitle/title", by_pointer)
+        self.assertNotIn("/paneLayout/windowtitle/subtitle", by_pointer)
+        self.assertEqual(by_pointer["/paneLayout/btnCraft/caption"].value, "Craft")
+
+        data["titleFromEntity"] = False
+        rows = list(audit.candidates_from_data("interface/windowconfig/test.config", data))
+        by_pointer = {row.pointer: row for row in rows}
+        self.assertIn("/paneLayout/windowtitle/title", by_pointer)
+        self.assertIn("/paneLayout/windowtitle/subtitle", by_pointer)
+
+    def test_team_bar_template_name_is_excluded(self):
+        self.assertTrue(audit.audit_excluded_candidate(
+            "interface/windowconfig/teambar.config", "/paneLayout/name/value"
+        ))
+
     def test_cockpit_runtime_text_containers_are_visible(self):
         asset = "interface/cockpit/cockpit.config"
         self.assertEqual(
