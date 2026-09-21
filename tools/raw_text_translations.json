@@ -285,6 +285,89 @@
           "new": "widget.setText(\"racialLabel\", \"Irk Özellikleri - \" .. racialName)"
         }
       ]
+    },
+    {
+      "asset": "interface/scripted/spaceStation/spaceStation.lua",
+      "source_blob_sha": "18c0a56b26c7278d559fa7d38f222754d55560c5",
+      "replacements": [
+        {
+          "old": "widget.setText(\"text\", \"ERROR - No station object found\")",
+          "display_en": "ERROR - No station object found",
+          "display_tr": "HATA - İstasyon nesnesi bulunamadı",
+          "expected_count": 1,
+          "new": "widget.setText(\"text\", \"HATA - İstasyon nesnesi bulunamadı\")"
+        },
+        {
+          "old": "widget.setText(\"playerPixels\", \"Your pixels: \"..tostring(player.currency(\"money\")))",
+          "display_en": "Your pixels:",
+          "display_tr": "Piksellerin:",
+          "expected_count": 1,
+          "new": "widget.setText(\"playerPixels\", \"Piksellerin: \"..tostring(player.currency(\"money\")))"
+        },
+        {
+          "old": "textTyper.init(textData, \"^red;ERROR -^reset;\\nWrong 'type' received in 'commandProcessor' > 'elseif command == \\\"Special\\\" then'\")",
+          "display_en": "ERROR - Wrong 'type' received in 'commandProcessor'",
+          "display_tr": "HATA - 'commandProcessor' içinde yanlış 'type' alındı",
+          "expected_count": 1,
+          "new": "textTyper.init(textData, \"^red;HATA -^reset;\\n'commandProcessor' içinde yanlış 'type' alındı > 'elseif command == \\\"Special\\\" then'\")"
+        },
+        {
+          "old": "widget.setText(listItem..\".stationStockLabel\", \"Station stock: \"..stock)",
+          "display_en": "Station stock:",
+          "display_tr": "İstasyon stoğu:",
+          "expected_count": 1,
+          "new": "widget.setText(listItem..\".stationStockLabel\", \"İstasyon stoğu: \"..stock)"
+        },
+        {
+          "old": "widget.setText(listItem..\".sellStockLabel\", \"Your stock:     \"..player.currency(data.name))",
+          "display_en": "Your stock:",
+          "display_tr": "Stoğun:",
+          "expected_count": 1,
+          "new": "widget.setText(listItem..\".sellStockLabel\", \"Stoğun:         \"..player.currency(data.name))"
+        },
+        {
+          "old": "textTyper.init(textData, \"No item selected.\\nHow the fuck did you achieve this?\\nSeriously, I'm impressed.\\n\\nReport this I guess?\")",
+          "display_en": "No item selected. How the fuck did you achieve this? Seriously, I'm impressed. Report this I guess?",
+          "display_tr": "Hiçbir eşya seçilmedi. Bunu nasıl becerdin lan? Cidden etkilendim. Sanırım bunu bildir?",
+          "expected_count": 3,
+          "new": "textTyper.init(textData, \"Hiçbir eşya seçilmedi.\\nBunu nasıl becerdin lan?\\nCidden etkilendim.\\n\\nSanırım bunu bildir?\")"
+        },
+        {
+          "old": "textTyper.init(textData, \"ERROR - Attempted to trade while no item was selected in function 'tradeA'\")",
+          "display_en": "ERROR - Attempted to trade while no item was selected in function 'tradeA'",
+          "display_tr": "HATA - 'tradeA' işlevinde eşya seçilmeden takas yapılmaya çalışıldı",
+          "expected_count": 1,
+          "new": "textTyper.init(textData, \"HATA - 'tradeA' işlevinde eşya seçilmeden takas yapılmaya çalışıldı\")"
+        },
+        {
+          "old": "textTyper.init(textData, \"ERROR - Attempted to trade while no item was selected in function 'tradeB'\")",
+          "display_en": "ERROR - Attempted to trade while no item was selected in function 'tradeB'",
+          "display_tr": "HATA - 'tradeB' işlevinde eşya seçilmeden takas yapılmaya çalışıldı",
+          "expected_count": 1,
+          "new": "textTyper.init(textData, \"HATA - 'tradeB' işlevinde eşya seçilmeden takas yapılmaya çalışıldı\")"
+        },
+        {
+          "old": "widget.setText(\"investLevel\", \"Lvl \"..tostring(objectData.specialsTable.investLevel))",
+          "display_en": "Lvl",
+          "display_tr": "Sv.",
+          "expected_count": 2,
+          "new": "widget.setText(\"investLevel\", \"Sv. \"..tostring(objectData.specialsTable.investLevel))"
+        },
+        {
+          "old": "widget.setText(\"investRequired\", \"Required: \"..tostring(objectData.specialsTable.investRequired - objectData.specialsTable.invested))",
+          "display_en": "Required:",
+          "display_tr": "Gerekli:",
+          "expected_count": 2,
+          "new": "widget.setText(\"investRequired\", \"Gerekli: \"..tostring(objectData.specialsTable.investRequired - objectData.specialsTable.invested))"
+        },
+        {
+          "old": "widget.setText(\"investRequired\", \"Fully upgraded!\")",
+          "display_en": "Fully upgraded!",
+          "display_tr": "Tamamen yükseltildi!",
+          "expected_count": 2,
+          "new": "widget.setText(\"investRequired\", \"Tamamen yükseltildi!\")"
+        }
+      ]
     }
   ]
 }
