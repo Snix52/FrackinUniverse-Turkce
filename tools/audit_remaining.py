@@ -567,6 +567,32 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             "review_by_source_root": grouped_roots(remaining_review),
         },
         "remaining_confirmed_key_frequency": dict(key_frequency.most_common()),
+        "ui_confirmed_rows": [
+            {
+                "asset": row.asset,
+                "pointer": row.pointer,
+                "source": row.value,
+                "key": row.key,
+                "origin": row.origin,
+            }
+            for row in sorted(
+                (candidate for candidate in remaining_confirmed.values() if candidate.category == "Arayüz"),
+                key=lambda item: (item.asset, item.pointer),
+            )
+        ],
+        "ui_review_rows": [
+            {
+                "asset": row.asset,
+                "pointer": row.pointer,
+                "source": row.value,
+                "key": row.key,
+                "origin": row.origin,
+            }
+            for row in sorted(
+                (candidate for candidate in remaining_review.values() if candidate.category == "Arayüz"),
+                key=lambda item: (item.asset, item.pointer),
+            )
+        ],
         "samples_by_category": dict(samples),
         "parse_failures": parse_failures,
         "translated_not_found": [
