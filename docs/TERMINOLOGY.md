@@ -25,6 +25,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Wire | Eşya | Nesne | Kablo | Wire | LOCKED | |
 | Electromagnet | Eşya | Nesne | Elektromıknatıs | Electromagnet | LOCKED | |
 | Teleporter | Sistem / cihaz | Nesne | Işınlayıcı | Teleporter | LOCKED | |
+| Irradiator | Radyasyon silahı | Nesne | Radyasyon Yayıcı | Işınlayıcı | LOCKED | Teleporter = Işınlayıcı ile oyuncu tarafında ad çakışmasını önler |
 | Alchemy Table | Makine | Nesne | Simya Tezgâhı | Alchemy Table | LOCKED | |
 | Electronics Center | Makine | Nesne | Elektronik Merkezi | Electronics Center | LOCKED | |
 | Item Transference Device | Makine | Nesne | Eşya Aktarım Cihazı | Item Transference Device | LOCKED | |
@@ -622,7 +623,7 @@ Belirsiz terimler REVIEW olarak tutulur ve kesin karar verilmeden toplu yayılma
 | English source | Context | Type | Turkish | Avoid | Status | Notes |
 |---|---|---|---|---|---|---|
 | Beastmaster | Zırh set bonusu | UI | Canavar Ustası | Beastmaster | LOCKED | |
-| Skill Quiver | Zırh parçası | Nesne | Beceri Sadakı | Yetenek Okluğu | LOCKED | Quiver için yerleşik Sadak kullanılır |
+| Skill Quiver | Zırh parçası | Nesne | Beceri Sadağı | Beceri Sadakı, Yetenek Okluğu | LOCKED | Quiver için yerleşik Sadak kullanılır; Türkçe tamlama eki düzeltilmiştir |
 | Peerless Quiver | Zırh parçası | Nesne | Eşsiz Sadak | Rakipsiz Okluk | LOCKED | |
 | Kingslayer | Zırh seti | Nesne | Kral Katili | Kingslayer | LOCKED | |
 | Sentry | Zırh seti | Nesne | Nöbetçi | Sentry | LOCKED | |
