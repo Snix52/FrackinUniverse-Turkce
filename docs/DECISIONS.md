@@ -517,7 +517,7 @@
 - Aktif Zırh ve Silahlar ağacındaki `tritaniumgear`, `enrichedgear`, `violiumgear`, `feroziumgear`, `aegisaltgear`, `densealloygear` ve `effigiumgear` düğümleri zırh çıktıları için seçildi. Araştırma açılımı ile gerçek `.recipe` çıktısı birlikte erişilebilirlik kanıtı sayıldı.
 - Yedi düğümde daha önce yerelleştirilmemiş **61 üretilebilir zırh asseti** doğrulandı. Her assette yalnız `/shortdescription` ve `/description` çevrildi; teknik `itemName`, stat hesapları, efekt listeleri, tooltip türü, kategori, tarif ve script alanları korundu.
 - Kaynak klasör kademesi yerine runtime araştırma zinciri esas alındı. Bu nedenle dosya yolu `tier4` altında olan Kral Katili ile `tier6` altında olan Şampiyon, Güneş Gezgini, Morphite Mk. 2 ve Replikant setleri Kademe 5 kapsamında yerelleştirildi.
-- **Beastmaster → Canavar Ustası, Skill Quiver → Beceri Sadakı, Peerless Quiver → Eşsiz Sadak, Kingslayer → Kral Katili, Sentry → Nöbetçi, Champion → Şampiyon, Sunwalker → Güneş Gezgini, Replicant → Replikant** kararları kilitlendi. `Capturenaut`, `Gishinanki`, `Decker`, `Legionii`, `Millenion`, `Morphite`, `Rifter`, `Valkyrie` ve `Warframe` model/özel ad olarak korundu.
+- **Beastmaster → Canavar Ustası, Skill Quiver → Beceri Sadağı, Peerless Quiver → Eşsiz Sadak, Kingslayer → Kral Katili, Sentry → Nöbetçi, Champion → Şampiyon, Sunwalker → Güneş Gezgini, Replicant → Replikant** kararları kilitlendi. `Capturenaut`, `Gishinanki`, `Decker`, `Legionii`, `Millenion`, `Morphite`, `Rifter`, `Valkyrie` ve `Warframe` model/özel ad olarak korundu.
 - Tooltip terimleri **Havada Hasar, Germe Hızı, Atış Başına Enerji, Katana Ustalığı, Yerçekimi Yağmuru, Ağır Giysi, Tek Kılıç** ve **Çift Kılıçlar** biçiminde kilitlendi.
 - Yeni kapsam **122 yapılandırılmış alan / 61 patch asset**tir. Tamamı pinned FU 6.5.8 kaynağıyla exact doğrulandı; proje toplamı **5190 structured + 15 Lua / 1673 patch asset** oldu. Oyun içi zırh tooltip genişliği, set bonusu satırları, font ve bağlam LQA'sı ayrıca bekliyor.
 
@@ -537,3 +537,10 @@
 - Repository'deki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.30.0_Beta.zip` aynı `build_output` ağacından üretilir. Generated commit yalnız bu iki yolu değiştirdiğinde workflow tekrar tetiklenmez.
 - Structured metinler için `{0}`, `{item}`, `$variable` ve `${variable}` placeholder eşitliği ile satır sonu sayısı yeni statik guardlara alındı.
 - Dil QA sırasında üç yapay/ham ifade düzeltildi: Vel'uuish tüfek açıklaması, Uzay Giysisi Hava Tankı açıklaması ve Yerçekimi Silahı açıklaması. Aynı ifadelerin geri dönmesini önlemek için regresyon guardları eklendi.
+
+
+## 2026-09-21 - Ekipman terminolojisi düzeltmeleri
+
+- `Greaves` için mevcut LOCKED **Baldırlık** kararı bütün envanter adlarına uygulandı; çoğul **Baldırlıkları** ve eksik tamlama eki kullanılan eski adlar tekil eşya adı biçiminde temizlendi.
+- `Skill Quiver` yazımındaki eski **Beceri Sadakı** biçimi Türkçe tamlama hatası olduğu için **Beceri Sadağı** olarak düzeltildi ve ilgili terminoloji kayıtları güncellendi.
+- `Teleporter` için LOCKED **Işınlayıcı** kararı korundu. Radyasyon silahı `Irradiator`, oyuncu tarafındaki ad çakışmasını önlemek için **Radyasyon Yayıcı** olarak kilitlendi.
