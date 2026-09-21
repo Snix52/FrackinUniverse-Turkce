@@ -1,0 +1,59 @@
+name: FU Turkce v0.31.1 Quest UI Verification
+
+on:
+  push:
+    branches: [v031/quest-terminal-ui]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fu-v0311-quest-ui
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout v0.31.1 branch
+        uses: actions/checkout@v7
+        with:
+          ref: v031/quest-terminal-ui
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Apply v0.31.1 catalog package
+        run: python tools/add_v0311.py
+
+      - name: Compile and run regression tests
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+
+      - name: Fetch pinned Frackin Universe source
+        run: |
+          FU_SOURCE_COMMIT="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json", encoding="utf-8"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$FU_SOURCE_COMMIT"
+
+      - name: Full-source static QA
+        run: python tools/build_validate.py --source-dir fu_source --output build_output
+
+      - name: Remaining scope audit
+        run: python tools/audit_remaining.py --source fu_source
+
+      - name: Check diff
+        run: git diff --check
+
+      - name: Commit verified catalog update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/ceviriler.json
+          git diff --cached --check
+          git commit -m "feat: apply v0.31.1 quest terminal UI translations [skip ci]"
+          git push origin HEAD:v031/quest-terminal-ui
