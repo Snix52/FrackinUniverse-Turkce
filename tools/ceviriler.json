@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.33.0-beta",
+  "translation_version": "0.34.0-beta",
   "note": "v0.30 aktif araştırma ekipmanı kapanışı: erken kalkanlar ve yan dallar, Kirhos/Lunari/Elduu/Skath/Vel'uuish silahları, EPP sırt ekipmanları ile Kademe 6-7 düğümlerindeki gerçek tarif destekli 413 assetin 826 görünür alanı yerelleştirildi. Toplam 6016 structured + 15 Lua, 2086 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
@@ -46835,6 +46835,1700 @@
       "en": "Can't land. The crushing pressure and tearing winds of this gas giant would kill you instantly.",
       "tr": "İniş yapılamaz. Bu gaz devinin ezici basıncı ve yırtıcı rüzgârları seni anında öldürür.",
       "section": "v0.33 cockpit ve navigasyon arayüzü"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/garden/0",
+      "en": "^#76fe68;Lush ^reset;foothills mark this landing location. Both flora and fauna are abundant here. A beam site of immeasurable safety.",
+      "tr": "^#76fe68;Yemyeşil^reset; tepeler bu ışınlanma noktasını çevreliyor. Flora ve fauna burada bol. Ölçülemeyecek kadar güvenli bir iniş noktası.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/garden/1",
+      "en": "The beam site is located in a tranquil area of great bio-diversity. There are resources here that you could use. A ^#76fe68;lush ^reset;and pleasant land.",
+      "tr": "Işınlanma noktası biyolojik çeşitliliği yüksek, sakin bir bölgede. Burada işine yarayacak kaynaklar var. ^#76fe68;Yemyeşil^reset; ve hoş bir diyar.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/garden/2",
+      "en": "Readings indicate the landing site is not unfavourable - the area is safe, and lavish with both flora and fauna. A ^#76fe68;lush ^reset;and hospitable place.",
+      "tr": "Ölçümler, iniş noktasının elverişsiz olmadığını gösteriyor: bölge güvenli, flora ve fauna açısından zengin. ^#76fe68;Yemyeşil^reset; ve yaşama elverişli bir yer.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/forest/0",
+      "en": "Densely colonized by trees and other flora, this ^#15ce02;forest ^reset;landing site is a hospitable location that supports a diversity of life - potentially including your own.",
+      "tr": "Ağaçlar ve diğer bitkilerle sıkıca kaplı bu ^#15ce02;orman^reset; iniş noktası, seninki de dâhil olmak üzere pek çok yaşam biçimini destekleyen elverişli bir bölge.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/forest/1",
+      "en": "Leafy trees abound in this ^#15ce02;forest ^reset;location. The area is hospitable to life, my database indicates that you may encounter woodland creatures.",
+      "tr": "Bu ^#15ce02;orman^reset; bölgesinde yapraklı ağaçlar bol. Yaşam için elverişli olan bölgede, veritabanıma göre orman canlılarıyla karşılaşabilirsin.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/forest/2",
+      "en": "Your beam site for this planet is located in a ^#15ce02;forest^reset;. Readings indicate that this wooded area is relatively tranquil.",
+      "tr": "Bu gezegendeki ışınlanma noktan bir ^#15ce02;orman^reset; içinde. Ölçümler, bu ağaçlık bölgenin görece sakin olduğunu gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desert/0",
+      "en": "There is limited flora here on this ^#e6c801;desert^reset;, but the location does support life. ^red;Hot days, cool nights^reset;.",
+      "tr": "Bu ^#e6c801;çölde^reset; bitki örtüsü sınırlı, ancak bölge yaşamı destekliyor. ^red;Gündüzleri sıcak, geceleri serin^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desert/1",
+      "en": "A ^#e6c801;desert^reset; area populated by cacti, as well as various animal life. A relatively safe landing site, so long as you avoid the sandstorms. ^red;Quite warm^reset;.",
+      "tr": "Kaktüsler ve çeşitli hayvanlarla dolu bir ^#e6c801;çöl^reset;. Kum fırtınalarından uzak durduğun sürece nispeten güvenli bir iniş noktası. ^red;Oldukça sıcak^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desert/2",
+      "en": "Sand. Readings indicate sand. Also some cacti... but predominantly sand. This ^#e6c801;desert^reset; is ^red;uncomfortably warm^reset; but rich in resources.",
+      "tr": "Kum. Ölçümler kum gösteriyor. Birkaç kaktüs de var... ama esas olarak kum. Bu ^#e6c801;çöl^reset; ^red;rahatsız edici derecede sıcak^reset;, fakat kaynak açısından zengin.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/snow/0",
+      "en": "This chilly landing site is laden with ^#69f1fd;snow^reset;. Sundry trees grow here and various animals also thrive in the cold conditions. An excellent place to make snowballs.",
+      "tr": "Bu soğuk iniş noktası ^#69f1fd;karla^reset; kaplı. Çeşitli ağaçlar yetişiyor ve farklı hayvanlar da soğuk koşullarda yaşamını sürdürüyor. Kartopu yapmak için harika bir yer.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/snow/1",
+      "en": "The landing location is cold, but not perilously so. ^#69f1fd;Snow^reset; covers the area and blizzards are a possibility. A hat and gloves may be advisable.",
+      "tr": "İniş noktası soğuk ama ölümcül seviyede değil. Bölgeyi ^#69f1fd;kar^reset; kaplıyor ve tipi çıkabilir. Bere ve eldiven iyi fikir olabilir.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/snow/2",
+      "en": "This location is relatively chill, and ^#69f1fd;snow^reset; lies thickly on the ground. My sensors indicate that there are critters scampering through the soft blanket of white.",
+      "tr": "Burası epey serin ve yerde kalın bir ^#69f1fd;kar^reset; tabakası var. Sensörlerim, yumuşak beyaz örtünün içinde koşturan küçük canlılar tespit ediyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/savannah/0",
+      "en": "The landing site is situated in an area of ^#ffe21d;dry grassland ^reset;that is hot and prone to dust storms. It is neither especially pleasant, nor especially dangerous.",
+      "tr": "İniş noktası sıcak ve toz fırtınalarına açık bir ^#ffe21d;kuru otlak^reset; bölgesinde. Ne özellikle hoş ne de özellikle tehlikeli.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/savannah/1",
+      "en": "This area of ^#ffe21d;dry grassland ^reset;is sparsely populated by trees. It is not excessively inhospitable - readings indicate that there is a hare bouncing around.",
+      "tr": "Bu ^#ffe21d;kuru otlak^reset; bölgesinde ağaçlar seyrek. Fazla elverişsiz değil; ölçümler etrafta zıplayan bir tavşan olduğunu gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/savannah/2",
+      "en": "The landing location is located in an area of ^#ffe21d;dry grassland^reset;. Trees and shrubs grow sparsely in the heat. A dusty place of wide, flat vistas.",
+      "tr": "İniş noktası bir ^#ffe21d;kuru otlak^reset; bölgesinde. Sıcakta ağaçlar ve çalılar seyrek yetişiyor. Geniş ve düz manzaralara sahip tozlu bir yer.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ocean/0",
+      "en": "A planet of deep ^#008aff;oceans^reset; and small islands. My readings indicate that aquatic life is abundant and that the islets of the surface are extremely picturesque.",
+      "tr": "Derin ^#008aff;okyanuslar^reset; ve küçük adalardan oluşan bir gezegen. Ölçümler su yaşamının bol olduğunu ve yüzeydeki adacıkların son derece güzel göründüğünü gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ocean/1",
+      "en": "An ^#008aff;ocean^reset; covered planet spotted with islands and teeming with life. My readings indicate that there is a great deal of activity in the depths of the waters.",
+      "tr": "Adalarla beneklenmiş, yaşamla dolu ^#008aff;okyanus^reset; gezegeni. Ölçümler suyun derinliklerinde yoğun hareketlilik olduğunu gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ocean/2",
+      "en": "Floating desert islands pepper the surface of this ^#008aff;ocean^reset; planet. An environment of tropical ambiance and aesthetic.",
+      "tr": "Yüzen çöl adaları bu ^#008aff;okyanus^reset; gezegeninin yüzeyine serpiştirilmiş. Tropik havası ve görüntüsüyle dikkat çeken bir ortam.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/toxic/0",
+      "en": "This planet is ^#06ff00;toxic^reset; - the air is putrefied and the oceans are poisonous. ^red;Radiation levels are moderate^reset; and dense clouds of ^06ff00;poison^reset; cover the surface.",
+      "tr": "Bu gezegen ^#06ff00;zehirli^reset;: hava çürümüş, okyanuslar zehirli. ^red;Radyasyon seviyesi orta^reset; ve yüzeyi yoğun ^06ff00;zehir^reset; bulutları kaplıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/toxic/1",
+      "en": "This ^red;moderately radioactive^reset; planet is a poisonous wilderness inhabited by irradiated lifeforms. Its luminescent surface is ^#06ff00;toxic^reset; with dense ^red;poisonous air^reset;. ",
+      "tr": "Bu ^red;orta derecede radyoaktif^reset; gezegen, ışınlanmış yaşam biçimlerinin bulunduğu zehirli bir vahşi doğa. Işıldayan yüzeyi ^#06ff00;zehirli^reset; ve havası yoğun biçimde ^red;zehir içeriyor^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/toxic/2",
+      "en": "This is a ^#06ff00;toxic^reset; planet replete with ^red;radiation and poisonous air^reset;. The noxious oceans are ^red;lethally poisonous^reset;. ",
+      "tr": "Bu, ^red;radyasyon ve zehirli havayla^reset; dolu ^#06ff00;zehirli^reset; bir gezegen. Zararlı okyanusları ^red;ölümcül derecede zehirli^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/jungle/0",
+      "en": "The landing site is in a dense, hot ^#12a003;jungle^reset;. A menagerie of astounding creatures live amongst the lush flora. It is a shame about the ^red;moderately high radiation^reset;.",
+      "tr": "İniş noktası yoğun ve sıcak bir ^#12a003;cangılda^reset;. Gür bitkilerin arasında şaşırtıcı çeşitlilikte canlılar yaşıyor. Tek sorun ^red;orta-yüksek radyasyon^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/jungle/1",
+      "en": "A ^#12a003;jungle^reset; landing site densely inhabited by flora and fauna of many kinds. The area is rich with resources but quite hot and ^red;moderately radioactive^reset;.",
+      "tr": "Pek çok türde flora ve faunayla dolu yoğun bir ^#12a003;cangıl^reset; iniş noktası. Bölge kaynak açısından zengin ama oldukça sıcak ve ^red;orta derecede radyoaktif^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/jungle/2",
+      "en": "^red;Moderate, unsafe levels of radiation^reset; render this ^#12a003;jungle^reset; location an extremely hostile environment and local fauna is similarly unwelcoming.",
+      "tr": "^red;Orta düzeyde, güvenli olmayan radyasyon^reset; bu ^#12a003;cangıl^reset; bölgesini son derece düşmanca bir ortama dönüştürüyor. Yerel fauna da pek misafirperver değil.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/alien/0",
+      "en": "This is a somewhat risky landing site - ^red;radiation levels are moderately high^reset;. However, the ^#7800ff;mutated^reset; terrain could be described as darkly whimsical.",
+      "tr": "Burası biraz riskli bir iniş noktası: ^red;radyasyon seviyesi orta-yüksek^reset;. Yine de ^#7800ff;mutasyona uğramış^reset; arazi karanlık bir tuhaflığa sahip.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/alien/1",
+      "en": "A landing site characterised by odd flora, aggressive fauna and ^red;moderately high levels of radiation^reset;. The area's inhabitants are severely ^#7800ff;mutated^reset;.",
+      "tr": "Tuhaf bitkiler, saldırgan hayvanlar ve ^red;orta-yüksek radyasyon^reset; ile karakterize bir iniş noktası. Bölgenin sakinleri ağır biçimde ^#7800ff;mutasyona uğramış^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/alien/2",
+      "en": "The beam location is situated in a ^#7800ff;mutated^reset; landscape. The ^red;moderate levels of radiation^reset; create a noxious environment. I advise you to avoid swimming.",
+      "tr": "Işınlanma noktası ^#7800ff;mutasyona uğramış^reset; bir arazide. ^red;Orta düzey radyasyon^reset; zararlı bir ortam oluşturuyor. Yüzmekten kaçınmanı öneririm.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arctic/0",
+      "en": "^red;Temperatures at the landing site are dangerously low.^reset; You will be beaming onto a small island surrounded by ^#00ffe4;frigid ocean^reset;. I strongly advise you to wear a scarf.",
+      "tr": "^red;İniş noktasındaki sıcaklık tehlikeli derecede düşük.^reset; ^#00ffe4;Buz gibi bir okyanusun^reset; ortasındaki küçük bir adaya ışınlanacaksın. Atkı takmanı şiddetle öneririm.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arctic/1",
+      "en": "The beam site is ^red;intensely cold^reset;: a tiny island in a ^#00ffe4;frigid ocean^reset;. There is a 0.025% chance you will mis-beam into the water, quickly succumbing to the awful chill.",
+      "tr": "Işınlanma noktası ^red;son derece soğuk^reset;: ^#00ffe4;buz gibi bir okyanusta^reset; küçücük bir ada. Yanlışlıkla suya ışınlanıp korkunç soğuğa hızla yenik düşme ihtimalin 0.025%.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arctic/2",
+      "en": "A site of ^red;dangerously low temperatures^reset;. There are few animals here, and no plant-life at all - just forsaken islands in a ^#00ffe4;frigid ocean^reset;.",
+      "tr": "^red;Tehlikeli derecede düşük sıcaklıklara^reset; sahip bir bölge. Burada az sayıda hayvan var, bitki yaşamı ise hiç yok; yalnızca ^#00ffe4;buz gibi bir okyanustaki^reset; terk edilmiş adalar.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tundra/0",
+      "en": "A ^#61ffe3;frozen^reset; place, formed of ice - the permafrost runs deep here. Snow storms are common, and ^red;temperatures are dangerously low^reset;.",
+      "tr": "Buzdan oluşmuş ^#61ffe3;donmuş^reset; bir yer; kalıcı don tabakası burada çok derine iniyor. Kar fırtınaları yaygın ve ^red;sıcaklık tehlikeli derecede düşük^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tundra/1",
+      "en": "This ^red;dangerously cold.^reset; landing site is ^#61ffe3;frozen^reset; solid. High likelihood of accidental self-cryopreservation. Protect yourself from the cold.",
+      "tr": "Bu ^red;tehlikeli derecede soğuk^reset; iniş noktası tamamen ^#61ffe3;donmuş^reset;. Yanlışlıkla kendini kriyojenik olarak koruma ihtimalin yüksek. Soğuğa karşı korun.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tundra/2",
+      "en": "^red;Temperatures at the beam site are dangerously low^reset;. The area is ^#61ffe3;frozen^reset;, and inhabited only by flora and fauna that are extremely resistant to the cold. ",
+      "tr": "^red;Işınlanma noktasındaki sıcaklık tehlikeli derecede düşük^reset;. Bölge ^#61ffe3;donmuş^reset; ve yalnızca aşırı soğuğa dayanıklı flora ve fauna yaşıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/volcanic/0",
+      "en": "The ^#e11212;volcanic^reset; landing site is ^red;catastrophically hot^reset;. If you wish, I can calculate your likelihood of immediately bursting into flame upon beam down...",
+      "tr": "^#e11212;Volkanik^reset; iniş noktası ^red;felaket derecesinde sıcak^reset;. İstersen ışınlandığın anda alev alma ihtimalini hesaplayabilirim...",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/volcanic/1",
+      "en": "^#e11212;Volcanic^reset; activity blights this planet and the beam site is in an area of particular virulence. The ^red;temperature is far beyond normally survivable levels^reset;.",
+      "tr": "^#e11212;Volkanik^reset; faaliyet bu gezegeni mahvetmiş; ışınlanma noktası özellikle şiddetli bir bölgede. ^red;Sıcaklık normalde yaşanabilir seviyelerin çok üzerinde^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/volcanic/2",
+      "en": "The beam site is situated in ^#e11212;volcanic^reset; terrain and is ^red;exquisitely hot^reset;. Your interest in this place certainly displays your dauntless tenacity.",
+      "tr": "Işınlanma noktası ^#e11212;volkanik^reset; arazide ve ^red;olağanüstü sıcak^reset;. Buraya duyduğun ilgi gerçekten korkusuz bir kararlılığın olduğunu gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/midnight/0",
+      "en": "This is a ^#e11212;dark^reset; world where the sun never rises. The surface is ^red;dangerously cold^reset;. You should prepare yourself both mentally and physically before landing here.",
+      "tr": "Bu, güneşin hiç doğmadığı ^#e11212;karanlık^reset; bir dünya. Yüzey ^red;tehlikeli derecede soğuk^reset;. Buraya inmeden önce hem zihinsel hem fiziksel olarak hazırlanmalısın.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/midnight/1",
+      "en": "This ^#e11212;dark^reset; world is ^red;perilously cold^reset;. Strange shadowy figures dwell here, hidden in the unremitting night.",
+      "tr": "Bu ^#e11212;karanlık^reset; dünya ^red;ölümcül derecede soğuk^reset;. Bitmeyen gecede gizlenen tuhaf gölgeli figürler burada yaşıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/midnight/2",
+      "en": "Scans show that the surface is ^#e11212;dark^reset;. In fact, scans show little else on account of all the darkness. However, I surmise that the surface is ^red;dangerously cold^reset;.",
+      "tr": "Taramalar yüzeyin ^#e11212;karanlık^reset; olduğunu gösteriyor. Aslında tüm bu karanlık yüzünden başka pek bir şey göstermiyor. Yine de yüzeyin ^red;tehlikeli derecede soğuk^reset; olduğunu çıkarabiliyorum.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/scorchedcity/0",
+      "en": "The landing location is a ^#b24301;scorched^reset; wasteland. The atmospheric ^red;temperature is severely high^reset;. It is impressively brave of you to consider this destination.",
+      "tr": "İniş noktası ^#b24301;kavrulmuş^reset; bir çorak arazi. Atmosfer ^red;son derece sıcak^reset;. Burayı hedef olarak düşünmen etkileyici derecede cesurca.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/scorchedcity/1",
+      "en": "The beam site is ^#b24301;scorched^reset; and desolate. Little is capable of surviving here as the ^red;temperature is severely high^reset;. People live in the area, but I cannot fathom why.",
+      "tr": "Işınlanma noktası ^#b24301;kavrulmuş^reset; ve ıssız. ^red;Sıcaklık son derece yüksek^reset; olduğu için burada çok az şey yaşayabiliyor. Bölgede insanlar var ama nedenini anlayamıyorum.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/scorchedcity/2",
+      "en": "The landing site is ^#b24301;scorched^reset; by the ^red;intense heat of the planet's surface^reset;. Only a few hardy individuals remain, possibly out of pure habit.",
+      "tr": "İniş noktası gezegen yüzeyinin ^red;yoğun sıcağıyla^reset; ^#b24301;kavrulmuş^reset;. Belki de sırf alışkanlıktan, yalnızca birkaç dayanıklı kişi burada kalmış.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/magma/0",
+      "en": "This ^red;dangerously hot^reset; planet is chiefly composed of ^#ff1818;magma^reset;. Remember, your resilient spirit is admirable, but it is not flame retardant.",
+      "tr": "Bu ^red;tehlikeli derecede sıcak^reset; gezegenin büyük kısmı ^#ff1818;magmadan^reset; oluşuyor. Dayanıklı ruhun takdire değer ama alev geciktirici değil.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/magma/1",
+      "en": "The planet surface is ^red;dangerously hot^reset;. Few creatures seek out an existence amongst the planet's vast oceans of ^#ff1818;magma^reset;.",
+      "tr": "Gezegenin yüzeyi ^red;tehlikeli derecede sıcak^reset;. Pek az canlı, gezegenin uçsuz bucaksız ^#ff1818;magma^reset; okyanuslarının arasında yaşamayı seçiyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/magma/2",
+      "en": "The beam site is a tiny island isolated in a sea of ^#ff1818;magma^reset;. That you would consider visiting this ^red;searingly hot^reset; planet speaks volumes of your fortitude.",
+      "tr": "Işınlanma noktası ^#ff1818;magma^reset; denizinin ortasında küçücük bir ada. Bu ^red;kavurucu sıcaklıktaki^reset; gezegeni ziyaret etmeyi düşünmen dayanıklılığın hakkında çok şey söylüyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon/0",
+      "en": "A lonely ^#949493;moon^reset; with ^red;no breathable atmosphere^reset;; the sky is open to the stars, there is fuel below the ground. Likelihood of feeling lonesome and desolate: 92%.",
+      "tr": "Yalnız bir ^#949493;ay^reset;; ^red;solunabilir atmosferi yok^reset;, gökyüzü yıldızlara açık ve yer altında yakıt var. Yalnızlık ve ıssızlık hissetme ihtimali: 92%.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon/1",
+      "en": "This ^#949493;moon^reset; supports no life and has ^red;no atmosphere^reset;. However, fuel is abundant here - scans indicate that there is a wealth of it buried below the surface. ",
+      "tr": "Bu ^#949493;ay^reset; yaşam barındırmıyor ve ^red;atmosferi yok^reset;. Ancak burada bol miktarda yakıt var; taramalar yüzeyin altında büyük rezervler bulunduğunu gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon/2",
+      "en": "This vacant ^#949493;moon^reset; has ^red;no breathable atmosphere^reset;, but there are caverns below ground that contain vast fuel deposits. In summation: useful, but not enticing.",
+      "tr": "Bu boş ^#949493;ayın^reset; ^red;solunabilir atmosferi yok^reset;, ancak yer altındaki mağaralarda dev yakıt yatakları var. Özetle: yararlı ama cazip değil.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/asteroids/0",
+      "en": "A bare cluster of ^#d7711e;asteroids^reset;. Readings indicate ^red;there is no atmosphere^reset; or life here. Just endless nothingness, with plenty of space for construction.",
+      "tr": "Çıplak bir ^#d7711e;asteroit^reset; kümesi. Ölçümlere göre ^red;burada atmosfer^reset; ya da yaşam yok. Yalnızca uçsuz bucaksız boşluk ve inşa için bolca alan.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/asteroids/1",
+      "en": "A lifeless band of ^#d7711e;asteroids^reset; ^red;without atmosphere^reset;: drifting through space, anchored to a distant star... A nice place to build a house.",
+      "tr": "^red;Atmosferi olmayan^reset; cansız bir ^#d7711e;asteroit^reset; kuşağı: uzayda sürükleniyor, uzak bir yıldıza bağlı... Ev yapmak için hoş bir yer.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/asteroids/2",
+      "en": "A clutch of ^#d7711e;asteroids^reset; drifting along an elliptical orbit. Readings indicate ^red;there is no atmosphere here^reset;. Or anything else for that matter...",
+      "tr": "Eliptik bir yörüngede sürüklenen bir grup ^#d7711e;asteroit^reset;. Ölçümler ^red;burada atmosfer olmadığını^reset; gösteriyor. Gerçi başka bir şey de yok...",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/barren/0",
+      "en": "This location is ^#999966;barren^reset; and lifeless. Readings show there is nothing here. Be cautious however, as scans are not infallible.",
+      "tr": "Burası ^#999966;çorak^reset; ve cansız. Ölçümlere göre burada hiçbir şey yok. Yine de dikkatli ol; taramalar yanılmaz değildir.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/barren/1",
+      "en": "This planet is ^#999966;barren^reset;, supporting no apparent life of any kind. Be aware that scanners can make mistakes, however, when subterranean depths are involved.",
+      "tr": "Bu gezegen ^#999966;çorak^reset;; görünürde hiçbir yaşam biçimini desteklemiyor. Ancak yer altı derinlikleri söz konusu olduğunda tarayıcıların hata yapabileceğini unutma.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/barren/2",
+      "en": "Readings indicate that the landing site is of unusual hue. Also, that it is a ^#999966;barren^reset; location and would be suitable for construction. Sub-planet scans inconclusive.",
+      "tr": "Ölçümler iniş noktasının sıra dışı bir renge sahip olduğunu gösteriyor. Ayrıca burası ^#999966;çorak^reset; ve inşaata uygun. Gezegen altı taramalar sonuçsuz.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ancientgateway/0",
+      "en": "An ^#571cff;Ancient Gateway^reset; of unknown provenance; an edifice of great power and mystery.",
+      "tr": "Kaynağı bilinmeyen bir ^#571cff;Kadim Geçit^reset;; büyük güç ve gizem taşıyan bir yapı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/aethersea/0",
+      "en": "This ^#e78442;aetheric world^reset; is dark, strange and quiet. ^orange;Xithricite Ore detected^reset;.^cyan; Recommend: Cosmic Resistance^reset;.",
+      "tr": "Bu ^#e78442;Aether dünyası^reset; karanlık, tuhaf ve sessiz. ^orange;Xithricite Cevheri tespit edildi^reset;.^cyan; Öneri: Kozmik Direnç^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/aethersea/1",
+      "en": "Serious weather, high-tides and strangeness abound on this bizarre ^#e78442;aetheric world^reset;. ^cyan;Recommend: Cosmic Resistance/ Aether Protection^reset;",
+      "tr": "Bu tuhaf ^#e78442;Aether dünyasında^reset; sert hava koşulları, yüksek gelgitler ve gariplikler bol. ^cyan;Öneri: Kozmik Direnç/ Aether Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/aethersea/2",
+      "en": "A bizarre planetoid that seems to straddle dimensions, this ^#e78442;aetheric world^reset; calls to you with its dark serenity. ^cyan;Recommend: Cosmic Resistance/ Aether Protection^reset;",
+      "tr": "Boyutların arasında kalmış gibi görünen bu tuhaf gezegencik, ^#e78442;Aether dünyasının^reset; karanlık huzuruyla seni çağırıyor. ^cyan;Öneri: Kozmik Direnç/ Aether Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/astral/0",
+      "en": "This ^#e78442;aetheric world^reset; is dark, strange and quiet. ^orange;Xithricite Ore detected^reset;.^cyan; Recommend: Cosmic Resistance^reset;.",
+      "tr": "Bu ^#e78442;Aether dünyası^reset; karanlık, tuhaf ve sessiz. ^orange;Xithricite Cevheri tespit edildi^reset;.^cyan; Öneri: Kozmik Direnç^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/astral/1",
+      "en": "Serious weather and strangeness abound on this bizarre ^#e78442;aetheric world^reset;. ^cyan;Recommend: Cosmic Resistance/ Aether Protection^reset;",
+      "tr": "Bu tuhaf ^#e78442;Aether dünyasında^reset; sert hava koşulları ve gariplikler bol. ^cyan;Öneri: Kozmik Direnç/ Aether Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/astral/2",
+      "en": "A bizarre planetoid that seems to straddle dimensions, this ^#e78442;aetheric world^reset; calls to you with its dark serenity. ^cyan;Recommend: Cosmic Resistance/ Aether Protection^reset;",
+      "tr": "Boyutların arasında kalmış gibi görünen bu tuhaf gezegencik, ^#e78442;Aether dünyasının^reset; karanlık huzuruyla seni çağırıyor. ^cyan;Öneri: Kozmik Direnç/ Aether Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arcticdark/0",
+      "en": "^red;Temperatures at the landing site are dangerously low.^reset; You will be beaming onto a small island surrounded by ^#00ffe4;frigid ocean^reset;. I strongly advise you to wear a scarf.",
+      "tr": "^red;İniş noktasındaki sıcaklık tehlikeli derecede düşük.^reset; ^#00ffe4;Buz gibi bir okyanusun^reset; ortasındaki küçük bir adaya ışınlanacaksın. Atkı takmanı şiddetle öneririm.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arcticdark/1",
+      "en": "The beam site is ^red;intensely cold^reset;: a tiny island in a ^#00ffe4;frigid ocean^reset;. There is a 0.025% chance you will mis-beam into the water, quickly succumbing to the awful chill.",
+      "tr": "Işınlanma noktası ^red;son derece soğuk^reset;: ^#00ffe4;buz gibi bir okyanusta^reset; küçücük bir ada. Yanlışlıkla suya ışınlanıp korkunç soğuğa hızla yenik düşme ihtimalin 0.025%.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arcticdark/2",
+      "en": "A site of ^red;dangerously low temperatures^reset;. There are few animals here, and no plant-life at all - just forsaken islands in a ^#00ffe4;frigid ocean^reset;.",
+      "tr": "^red;Tehlikeli derecede düşük sıcaklıklara^reset; sahip bir bölge. Burada az sayıda hayvan var, bitki yaşamı ise hiç yok; yalnızca ^#00ffe4;buz gibi bir okyanustaki^reset; terk edilmiş adalar.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arboreal/0",
+      "en": "^#59a849;Giant trees^reset; are abundant on this ^#cd5d02;primeval forest^reset; world. Abundant ^orange;organic resources^reset; detected.",
+      "tr": "Bu ^#cd5d02;kadim orman^reset; dünyasında ^#59a849;dev ağaçlar^reset; bol. Çok miktarda ^orange;organik kaynak^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arboreal/1",
+      "en": "Scanners have detected extremely dense ^#cd5d02;primeval forests^reset; on this planet. ^orange;Reptilian^reset; life-signs detected.",
+      "tr": "Tarayıcılar bu gezegende son derece sık ^#cd5d02;kadim ormanlar^reset; tespit etti. ^orange;Sürüngen^reset; yaşam belirtileri bulundu.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arboreal/2",
+      "en": "^#59a849;Primeval forest^reset; planets are early in their life-cycles and rich in ^orange;organic resources^reset;.",
+      "tr": "^#59a849;Kadim orman^reset; gezegenleri yaşam döngülerinin erken aşamalarındadır ve ^orange;organik kaynaklar^reset; açısından zengindir.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arboreal2/0",
+      "en": "^#59a849;Giant trees^reset; are abundant on this oppressively hot ^#cd5d02;volcanic primeval forest^reset; world. Abundant ^orange;organic resources^reset; detected.",
+      "tr": "Bu bunaltıcı derecede sıcak ^#cd5d02;volkanik kadim orman^reset; dünyasında ^#59a849;dev ağaçlar^reset; bol. Çok miktarda ^orange;organik kaynak^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arboreal2/1",
+      "en": "This ^#59a849;primeval forest^reset; is ripe with ^#cd5d02;volcanic activity^reset; and unpleasantly hot. Abundant ^orange;organic resources^reset; detected.",
+      "tr": "Bu ^#59a849;kadim orman^reset;, ^#cd5d02;volkanik faaliyetle^reset; dolu ve rahatsız edici derecede sıcak. Çok miktarda ^orange;organik kaynak^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arboreal2/2",
+      "en": "Tread carefully on this stifling ^#59a849;primeval forest^reset; world. ^#cd5d02;Heavy volcanic activity^reset; detected.",
+      "tr": "Bu boğucu ^#59a849;kadim orman^reset; dünyasında dikkatli ilerle. ^#cd5d02;Yoğun volkanik faaliyet^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arborealdark/0",
+      "en": "There is little light penetrating the tree canopies here on this ^#59a849;dark primeval^reset; forest planet. Bring a light-source.",
+      "tr": "Bu ^#59a849;karanlık kadim^reset; orman gezegeninde ağaç tepelerinden çok az ışık geçiyor. Yanına bir ışık kaynağı al.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arborealdark/1",
+      "en": "Sunlight rarely touches this ^#59a849;dark primeval^reset; world, yet somehow the plant life grows thick and lush.",
+      "tr": "Güneş ışığı bu ^#59a849;karanlık kadim^reset; dünyaya nadiren ulaşıyor; buna rağmen bitki yaşamı sık ve gür.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/arborealdark/2",
+      "en": "Darkness covers the dense woodlands of this ^#59a849;dark primeval^reset; planet.",
+      "tr": "Karanlık, bu ^#59a849;karanlık kadim^reset; gezegenin yoğun ormanlarını kaplıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/atropus/0",
+      "en": "This horrific ^#cc8d5a;atropus^reset; world appears to be composed of flesh, sinew, and gore. ^#b41c1c;Quietus ore^reset; detected. ^red;Warning: Causes Madness^reset;.",
+      "tr": "Bu korkunç ^#cc8d5a;Atropus^reset; dünyası et, sinir ve kanlı dokudan oluşuyor gibi görünüyor. ^#b41c1c;Quietus Cevheri^reset; tespit edildi. ^red;Uyarı: Deliliğe neden olur^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/atropus/1",
+      "en": "^#cc8d5a;Atropus^reset; worlds are abhorrent, hellish spheres composed of matter both living and dead. ^#b41c1c;Plasmic Crystal^reset; detected. ^red;Warning: Insanity-causing agents detected.^reset;",
+      "tr": "^#cc8d5a;Atropus^reset; dünyaları, hem canlı hem ölü maddeden oluşan iğrenç cehennem küreleridir. ^#b41c1c;Plazmik Kristal^reset; tespit edildi. ^red;Uyarı: Deliliğe yol açan etkenler tespit edildi.^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/atropus/2",
+      "en": "Lovingly called 'worlds born dead', ^#cc8d5a;atropus^reset; planets are not for the faint of heart or the weak-stomached. ^red;Warning: Psionically disruptive atmosphere^reset;.",
+      "tr": "Sevgiyle 'ölü doğmuş dünyalar' denilen ^#cc8d5a;Atropus^reset; gezegenleri, yüreği ya da midesi zayıf olanlara göre değildir. ^red;Uyarı: Psiyonik açıdan bozucu atmosfer^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/atropusdark/0",
+      "en": "This horrific ^#cc8d5a;atropus^reset; world appears to be composed of flesh, sinew, and gore. ^#b41c1c;Quietus ore^reset; detected. ^red;Warning: Causes Madness and fatal illusions^reset;.",
+      "tr": "Bu korkunç ^#cc8d5a;Atropus^reset; dünyası et, sinir ve kanlı dokudan oluşuyor gibi görünüyor. ^#b41c1c;Quietus Cevheri^reset; tespit edildi. ^red;Uyarı: Deliliğe ve ölümcül yanılsamalara neden olur^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/atropusdark/1",
+      "en": "^#cc8d5a;Atropus^reset; worlds are abhorrent, hellish spheres composed of matter both living and dead. ^#b41c1c;Plasmic Crystal^reset; detected. ^red;Warning: Causes Insanity and fatal hallucinations^reset;.",
+      "tr": "^#cc8d5a;Atropus^reset; dünyaları, hem canlı hem ölü maddeden oluşan iğrenç cehennem küreleridir. ^#b41c1c;Plazmik Kristal^reset; tespit edildi. ^red;Uyarı: Deliliğe ve ölümcül halüsinasyonlara neden olur^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/atropusdark/2",
+      "en": "A ^#aa6b48;dark atropus^reset; world. This unusual planet appears to be ^#cc8d5a;biologically mutated^reset; as if created by an insane God. ^red;Warning: Psionically disruptive atmosphere^reset;.",
+      "tr": "Bir ^#aa6b48;karanlık Atropus^reset; dünyası. Bu sıra dışı gezegen, sanki delirmiş bir Tanrı tarafından yaratılmış gibi ^#cc8d5a;biyolojik olarak mutasyona uğramış^reset;. ^red;Uyarı: Psiyonik açıdan bozucu atmosfer^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bloodstone/0",
+      "en": "Scanners show strange ^#ba3b04;bloodstone^reset; formations and ^#8e5ca6;unknown organic^reset; elements. A source of ^red;Plasmic Crystal and quietus ore^reset;.",
+      "tr": "Tarayıcılar tuhaf ^#ba3b04;Kan Taşı^reset; oluşumları ve ^#8e5ca6;bilinmeyen organik^reset; unsurlar gösteriyor. ^red;Plazmik Kristal ve Quietus Cevheri^reset; kaynağı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bloodstone/1",
+      "en": "Scanners show strange ^#ba3b04;bloodstone^reset; formations and ^#8e5ca6;unknown organic^reset; elements. A source of ^red;Plasmic Crystal and quietus ore^reset;.",
+      "tr": "Tarayıcılar tuhaf ^#ba3b04;Kan Taşı^reset; oluşumları ve ^#8e5ca6;bilinmeyen organik^reset; unsurlar gösteriyor. ^red;Plazmik Kristal ve Quietus Cevheri^reset; kaynağı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bloodstone/2",
+      "en": "Scanners show strange ^#ba3b04;bloodstone^reset; formations and ^#8e5ca6;unknown organic^reset; elements. A source of ^red;Plasmic Crystal and quietus ore^reset;.",
+      "tr": "Tarayıcılar tuhaf ^#ba3b04;Kan Taşı^reset; oluşumları ve ^#8e5ca6;bilinmeyen organik^reset; unsurlar gösteriyor. ^red;Plazmik Kristal ve Quietus Cevheri^reset; kaynağı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bloodstonesea/0",
+      "en": "Scanners show disgusting ^#ba3b04;atropal seas^reset; ripe with ^#8e5ca6;unknown organic^reset; elements. A source of ^red;Plasmic Crystal and quietus ore^reset;. ^red;Warning: Causes Madness^reset;",
+      "tr": "Tarayıcılar ^#8e5ca6;bilinmeyen organik^reset; unsurlarla dolu iğrenç ^#ba3b04;Atropus denizleri^reset; gösteriyor. ^red;Plazmik Kristal ve Quietus Cevheri^reset; kaynağı. ^red;Uyarı: Deliliğe neden olur^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bloodstonesea/1",
+      "en": "While tempting, avoid the urge to swim in the gore and guts on this ^#ba3b04;atropus sea^reset; planet. ^red;Warning: Causes Madness^reset;",
+      "tr": "Ne kadar cazip görünse de bu ^#ba3b04;Atropus Denizi^reset; gezegenindeki kan ve iç organlarda yüzme isteğine karşı koy. ^red;Uyarı: Deliliğe neden olur^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bloodstonesea/2",
+      "en": "^#ba3b04;Atropus Seas^reset; are putrid and repulsive, loaded with ^#8e5ca6;unknown organic^reset; elements. ^red;Warning: Causes Madness^reset;",
+      "tr": "^#ba3b04;Atropus Denizleri^reset; kokuşmuş ve iğrençtir, ^#8e5ca6;bilinmeyen organik^reset; unsurlarla doludur. ^red;Uyarı: Deliliğe neden olur^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bog/0",
+      "en": "A deep, thick ^#97be6a;bog^reset; covers nearly all of this world. Rich in ^green;Algae^reset; and other organic resources.",
+      "tr": "Derin ve yoğun bir ^#97be6a;bataklık^reset; bu dünyanın neredeyse tamamını kaplıyor. ^green;Yosun^reset; ve diğer organik kaynaklar açısından zengin.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bog/1",
+      "en": "Nearly impenetrable ^#97be6a;bog^reset; blankets this moist and rainy world. ^green;Algae^reset; for bio-fuel is abundant.",
+      "tr": "Neredeyse geçit vermeyen ^#97be6a;bataklık^reset; bu nemli ve yağmurlu dünyayı örtüyor. Biyoyakıt için bol miktarda ^green;Yosun^reset; var.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/bog/2",
+      "en": "Wet, mucky ground and dense ^#97be6a;bog^reset; extends across most of the surface. Harvesting ^green;algae^reset; should prove simple.",
+      "tr": "Islak, çamurlu zemin ve yoğun ^#97be6a;bataklık^reset; yüzeyin büyük kısmına yayılmış. ^green;Yosun^reset; toplamak kolay olmalı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/crystalmoon/0",
+      "en": "A ^#a56caf;crystalline^reset; planet. These worlds are the sole source of ^#e6c011;lunari crystals^reset;. Silicate ^e43774;crystal formations^reset; detected.",
+      "tr": "^#a56caf;Kristalli^reset; bir gezegen. Bu dünyalar ^#e6c011;Lunari Kristallerinin^reset; tek kaynağıdır. Silikat ^e43774;kristal oluşumları^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/crystalmoon/1",
+      "en": "This ^#a56caf;crystalline world^reset; is rich in ^#e6c011;lunari crystals^reset; and shines beautifully from the light of the nearby sun.",
+      "tr": "Bu ^#a56caf;Kristalli dünya^reset; ^#e6c011;Lunari Kristalleri^reset; açısından zengin ve yakındaki yıldızın ışığında güzelce parlıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/crystalmoon/2",
+      "en": "Silicate ^e43774;crystals^reset; such as ^#e6c011;lunari^reset; have been detected on this ^#a56caf;crystalline world^reset;.",
+      "tr": "Bu ^#a56caf;Kristalli dünyada^reset; ^e43774;kristaller^reset; ve ^#e6c011;Lunari^reset; gibi silikatlar tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/chromatic/0",
+      "en": "^#ffc2f9;Chromatic^reset; worlds are strange and ^orange;radioactive^reset; but rich in valuable ^green;prism shards^reset;. ^cyan;Recommended: Extreme Radiation protection^reset;",
+      "tr": "^#ffc2f9;Kromatik^reset; dünyalar tuhaf ve ^orange;radyoaktiftir^reset;, fakat değerli ^green;Prizma Parçaları^reset; açısından zengindir. ^cyan;Öneri: Aşırı Radyasyon Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/chromatic/1",
+      "en": "This unusual planet is ^#ffc2f9;chromatic^reset;, with a ^orange;radioactive atmosphere^reset;. Our scanners detect rare mineral deposits. ^cyan;Recommended: Extreme Radiation protection^reset;",
+      "tr": "Bu sıra dışı gezegen ^#ffc2f9;kromatik^reset; ve ^orange;radyoaktif bir atmosfere^reset; sahip. Tarayıcılarımız nadir mineral yatakları tespit ediyor. ^cyan;Öneri: Aşırı Radyasyon Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/chromatic/2",
+      "en": "^#ffc2f9;Chromatic^reset; worlds sparkle like a ^orange;radioactive rainbow^reset; with glistening ^green;prism shards^reset;. ^cyan;Recommended: Extreme Radiation protection^reset;",
+      "tr": "^#ffc2f9;Kromatik^reset; dünyalar, ışıldayan ^green;Prizma Parçalarıyla^reset; ^orange;radyoaktif bir gökkuşağı^reset; gibi parlar. ^cyan;Öneri: Aşırı Radyasyon Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desertwastes/0",
+      "en": "The majority of the planet's surface is a scorching ^#c80000;red desert^reset;. Bio-scans reveal interesting flora and fauna. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "Gezegen yüzeyinin büyük kısmı kavurucu bir ^#c80000;Kızıl Çöl^reset;. Biyolojik taramalar ilginç flora ve fauna gösteriyor. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desertwastes/1",
+      "en": "Bring heat protection when exploring this ^#c80000;red desert^reset; as exposure for prolonged periods will prove 100% fatal. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "Bu ^#c80000;Kızıl Çölü^reset; keşfederken ısı koruması kullan; uzun süre maruz kalmak 100% ölümcül olacaktır. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desertwastes/2",
+      "en": "A ^#c80000;red desert^reset; stretches across almost the entire circumference of this exceptionally hot world. ^cyan;Recommend: Extreme heat protection^reset;",
+      "tr": "Bu olağanüstü sıcak dünyanın neredeyse tüm çevresine ^#c80000;Kızıl Çöl^reset; yayılıyor. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desertwastesdark/0",
+      "en": "The majority of the planet's surface is a scorching ^#c80000;red desert^reset;. Bio-scans reveal interesting flora and fauna. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "Gezegen yüzeyinin büyük kısmı kavurucu bir ^#c80000;Kızıl Çöl^reset;. Biyolojik taramalar ilginç flora ve fauna gösteriyor. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desertwastesdark/1",
+      "en": "Bring heat protection when exploring this ^#c80000;red desert^reset; as exposure for prolonged periods will prove 100% fatal. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "Bu ^#c80000;Kızıl Çölü^reset; keşfederken ısı koruması kullan; uzun süre maruz kalmak 100% ölümcül olacaktır. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/desertwastesdark/2",
+      "en": "A ^#c80000;red desert^reset; stretches across almost the entire circumference of this exceptionally hot world. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "Bu olağanüstü sıcak dünyanın neredeyse tüm çevresine ^#c80000;Kızıl Çöl^reset; yayılıyor. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/eden/0",
+      "en": "This ^#00f0ff;eden ^reset;has very little in the way of hostile life and very little darkness. A lovely place to build a home. ^#9dbeef;Healing waters^reset; dot the surface.",
+      "tr": "Bu ^#00f0ff;Eden'da^reset; düşmanca yaşam çok az, karanlık da neredeyse yok. Ev kurmak için güzel bir yer. Yüzeye ^#9dbeef;Şifalı Sular^reset; serpiştirilmiş.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/eden/1",
+      "en": "This ^#00f0ff;eden^reset; looks incredibly hospitable. I detect few life signs and ample ^#9dbeef;Healing waters^reset;. An ideal place to make a home.",
+      "tr": "Bu ^#00f0ff;Eden^reset; inanılmaz derecede yaşama elverişli görünüyor. Az sayıda yaşam belirtisi ve bol miktarda ^#9dbeef;Şifalı Su^reset; tespit ediyorum. Ev kurmak için ideal.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/eden/2",
+      "en": "Bright and sunny most of the time, this ^#00f0ff;eden^reset; awaits an intrepid explorer to make it a civilized stop along this star route.",
+      "tr": "Çoğu zaman aydınlık ve güneşli olan bu ^#00f0ff;Eden^reset;, cesur bir kâşifin bu yıldız rotasında uygar bir durak kurmasını bekliyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ffunknown/0",
+      "en": "^#e43774;Unknown^reset; interference prevents scanning of the planet surface. Proceed carefully. ^red;Potentially Lethal!^reset;",
+      "tr": "^#e43774;Bilinmeyen^reset; bir parazit, gezegen yüzeyinin taranmasını engelliyor. Dikkatli ilerle. ^red;Potansiyel olarak Ölümcül!^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ffunknown/1",
+      "en": "Something here is ^red;blocking our scanners^reset;, leaving this planet's composition essentially ^#e43774;unknown^reset;. ^red;Potentially Lethal!^reset;",
+      "tr": "Burada bir şey ^red;tarayıcılarımızı engelliyor^reset;; gezegenin yapısı neredeyse tamamen ^#e43774;bilinmiyor^reset;. ^red;Potansiyel olarak Ölümcül!^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/ffunknown/2",
+      "en": "^#e43774;Unknown^reset; readings are confusing our scanners. I can glean nothing useful from them. ^red;Potentially Lethal!^reset;",
+      "tr": "^#e43774;Bilinmeyen^reset; okumalar tarayıcılarımızı şaşırtıyor. Bunlardan işe yarar hiçbir bilgi çıkaramıyorum. ^red;Potansiyel olarak Ölümcül!^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/frozenvolcanic/0",
+      "en": "^#b86c00;Frozen Volcanic^reset; worlds are relatively rare, and possess a dangerous mix of ice, burning rock and lava. ^green;Many useful resources^reset; detected. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "^#b86c00;Donmuş Volkanik^reset; dünyalar oldukça nadirdir ve tehlikeli bir buz, yanan kaya ve lav karışımına sahiptir. ^green;Pek çok yararlı kaynak^reset; tespit edildi. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/frozenvolcanic/1",
+      "en": "^#b86c00;Frozen Volcanic^reset;? How is this even possible? Science is at a loss to provide an explanation. ^green;Many useful resources^reset; detected. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "^#b86c00;Donmuş Volkanik^reset; mi? Bu nasıl mümkün olabilir? Bilim bile açıklama getiremiyor. ^green;Pek çok yararlı kaynak^reset; tespit edildi. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/frozenvolcanic/2",
+      "en": "A ^#b86c00;frozen volcanic^reset; surface ripe with hazards awaits below. ^red;Beware of lava, cold and liquid nitrogen dangers.^reset; ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "Aşağıda tehlikelerle dolu ^#b86c00;donmuş volkanik^reset; bir yüzey bekliyor. ^red;Lav, soğuk ve sıvı azot tehlikelerine dikkat.^reset; ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant/0",
+      "en": "A ^#e43774;gas giant^reset; with enough mass to allow exploration. Take ^red;extreme caution^reset; wandering here. ^cyan;Recommend: Extreme Pressure Protection^reset;.",
+      "tr": "Keşfe izin verecek kadar kütleye sahip bir ^#e43774;gaz devi^reset;. Burada dolaşırken ^red;son derece dikkatli ol^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant/1",
+      "en": "A ^#e43774;gas giant^reset; swirling with massive storms and chemical clouds. ^red;Fatal danger^reset; is present here. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dev fırtınalar ve kimyasal bulutlarla dönen bir ^#e43774;gaz devi^reset;. Burada ^red;ölümcül tehlike^reset; var. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant/2",
+      "en": "Whirling colors and thick gas circle this ^#e43774;gas giant^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dönen renkler ve yoğun gaz bu ^#e43774;gaz devini^reset; çevreliyor. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant/3",
+      "en": "A ^red;deadly^reset; but wonderfully unique ^#e43774;gas giant^reset; with enough atmosphere to explore.^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Keşfedilebilecek kadar atmosfere sahip, ^red;ölümcül^reset; ama olağanüstü benzersiz bir ^#e43774;gaz devi^reset;.^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant/4",
+      "en": "While it has almost no ground to speak of, ^#505f50;a gas ball^reset; can yield useful resources. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Üzerinde zeminden söz etmek neredeyse mümkün olmasa da ^#505f50;bir gaz küresi^reset; yararlı kaynaklar sağlayabilir. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant/5",
+      "en": "A ^#505f50;gas ball^reset; with enough atmosphere to provide access to ^orange;valuable resources^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "^orange;Değerli kaynaklara^reset; erişim sağlayacak kadar atmosfere sahip bir ^#505f50;gaz küresi^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant2/0",
+      "en": "A ^#e43774;gas giant^reset; with enough mass to allow exploration. Take ^red;extreme caution^reset; wandering here. ^cyan;Recommend: Extreme Pressure Protection^reset;.",
+      "tr": "Keşfe izin verecek kadar kütleye sahip bir ^#e43774;gaz devi^reset;. Burada dolaşırken ^red;son derece dikkatli ol^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant2/1",
+      "en": "A ^#e43774;gas giant^reset; swirling with massive storms and chemical clouds. ^red;Fatal danger^reset; is present here. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dev fırtınalar ve kimyasal bulutlarla dönen bir ^#e43774;gaz devi^reset;. Burada ^red;ölümcül tehlike^reset; var. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant2/2",
+      "en": "Whirling colors and thick gas circle this ^#e43774;gas giant^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dönen renkler ve yoğun gaz bu ^#e43774;gaz devini^reset; çevreliyor. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant2/3",
+      "en": "A ^red;deadly^reset; but wonderfully unique ^#e43774;gas giant^reset; with enough atmosphere to explore.^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Keşfedilebilecek kadar atmosfere sahip, ^red;ölümcül^reset; ama olağanüstü benzersiz bir ^#e43774;gaz devi^reset;.^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant2/4",
+      "en": "While it has almost no ground to speak of, ^#505f50;a gas ball^reset; can yield useful resources. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Üzerinde zeminden söz etmek neredeyse mümkün olmasa da ^#505f50;bir gaz küresi^reset; yararlı kaynaklar sağlayabilir. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant2/5",
+      "en": "A ^#505f50;gas ball^reset; with enough atmosphere to provide access to ^orange;valuable resources^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "^orange;Değerli kaynaklara^reset; erişim sağlayacak kadar atmosfere sahip bir ^#505f50;gaz küresi^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant3/0",
+      "en": "A ^#e43774;gas giant^reset; with enough mass to allow exploration. Take ^red;extreme caution^reset; wandering here. ^cyan;Recommend: Extreme Pressure Protection^reset;.",
+      "tr": "Keşfe izin verecek kadar kütleye sahip bir ^#e43774;gaz devi^reset;. Burada dolaşırken ^red;son derece dikkatli ol^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant3/1",
+      "en": "A ^#e43774;gas giant^reset; swirling with massive storms and chemical clouds. ^red;Fatal danger^reset; is present here. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dev fırtınalar ve kimyasal bulutlarla dönen bir ^#e43774;gaz devi^reset;. Burada ^red;ölümcül tehlike^reset; var. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant3/2",
+      "en": "Whirling colors and thick gas circle this ^#e43774;gas giant^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dönen renkler ve yoğun gaz bu ^#e43774;gaz devini^reset; çevreliyor. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant3/3",
+      "en": "A ^red;deadly^reset; but wonderfully unique ^#e43774;gas giant^reset; with enough atmosphere to explore.^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Keşfedilebilecek kadar atmosfere sahip, ^red;ölümcül^reset; ama olağanüstü benzersiz bir ^#e43774;gaz devi^reset;.^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant3/4",
+      "en": "While it has almost no ground to speak of, ^#505f50;a gas ball^reset; can yield useful resources. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Üzerinde zeminden söz etmek neredeyse mümkün olmasa da ^#505f50;bir gaz küresi^reset; yararlı kaynaklar sağlayabilir. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant3/5",
+      "en": "A ^#505f50;gas ball^reset; with enough atmosphere to provide access to ^orange;valuable resources^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "^orange;Değerli kaynaklara^reset; erişim sağlayacak kadar atmosfere sahip bir ^#505f50;gaz küresi^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant4/0",
+      "en": "A ^#e43774;gas giant^reset; with enough mass to allow exploration. Take ^red;extreme caution^reset; wandering here. ^cyan;Recommend: Extreme Pressure Protection^reset;.",
+      "tr": "Keşfe izin verecek kadar kütleye sahip bir ^#e43774;gaz devi^reset;. Burada dolaşırken ^red;son derece dikkatli ol^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant4/1",
+      "en": "A ^#e43774;gas giant^reset; swirling with massive storms and chemical clouds. ^red;Fatal danger^reset; is present here. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dev fırtınalar ve kimyasal bulutlarla dönen bir ^#e43774;gaz devi^reset;. Burada ^red;ölümcül tehlike^reset; var. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant4/2",
+      "en": "Whirling colors and thick gas circle this ^#e43774;gas giant^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dönen renkler ve yoğun gaz bu ^#e43774;gaz devini^reset; çevreliyor. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant4/3",
+      "en": "A ^red;deadly^reset; but wonderfully unique ^#e43774;gas giant^reset; with enough atmosphere to explore.^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Keşfedilebilecek kadar atmosfere sahip, ^red;ölümcül^reset; ama olağanüstü benzersiz bir ^#e43774;gaz devi^reset;.^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant4/4",
+      "en": "While it has almost no ground to speak of, ^#505f50;a gas ball^reset; can yield useful resources. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Üzerinde zeminden söz etmek neredeyse mümkün olmasa da ^#505f50;bir gaz küresi^reset; yararlı kaynaklar sağlayabilir. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant4/5",
+      "en": "A ^#505f50;gas ball^reset; with enough atmosphere to provide access to ^orange;valuable resources^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "^orange;Değerli kaynaklara^reset; erişim sağlayacak kadar atmosfere sahip bir ^#505f50;gaz küresi^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant5/0",
+      "en": "A ^#e43774;gas giant^reset; with enough mass to allow exploration. Take ^red;extreme caution^reset; wandering here. ^cyan;Recommend: Extreme Pressure Protection^reset;.",
+      "tr": "Keşfe izin verecek kadar kütleye sahip bir ^#e43774;gaz devi^reset;. Burada dolaşırken ^red;son derece dikkatli ol^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant5/1",
+      "en": "A ^#e43774;gas giant^reset; swirling with massive storms and chemical clouds. ^red;Fatal danger^reset; is present here. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dev fırtınalar ve kimyasal bulutlarla dönen bir ^#e43774;gaz devi^reset;. Burada ^red;ölümcül tehlike^reset; var. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant5/2",
+      "en": "Whirling colors and thick gas circle this ^#e43774;gas giant^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Dönen renkler ve yoğun gaz bu ^#e43774;gaz devini^reset; çevreliyor. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant5/3",
+      "en": "A ^red;deadly^reset; but wonderfully unique ^#e43774;gas giant^reset; with enough atmosphere to explore.^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Keşfedilebilecek kadar atmosfere sahip, ^red;ölümcül^reset; ama olağanüstü benzersiz bir ^#e43774;gaz devi^reset;.^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant5/4",
+      "en": "While it has almost no ground to speak of, ^#505f50;a gas ball^reset; can yield useful resources. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "Üzerinde zeminden söz etmek neredeyse mümkün olmasa da ^#505f50;bir gaz küresi^reset; yararlı kaynaklar sağlayabilir. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fugasgiant5/5",
+      "en": "A ^#505f50;gas ball^reset; with enough atmosphere to provide access to ^orange;valuable resources^reset;. ^cyan;Recommend: Extreme Pressure Protection^reset;",
+      "tr": "^orange;Değerli kaynaklara^reset; erişim sağlayacak kadar atmosfere sahip bir ^#505f50;gaz küresi^reset;. ^cyan;Öneri: Aşırı Basınç Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fungus/0",
+      "en": "This planet seems to be covered in a giant ^#7fe96e;fungal^reset; colony. Beware of ^red;poison gas^reset; from huge spore clouds.",
+      "tr": "Bu gezegen dev bir ^#7fe96e;mantar^reset; kolonisiyle kaplı görünüyor. Büyük spor bulutlarının oluşturduğu ^red;zehirli gaza^reset; dikkat.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fungus/1",
+      "en": "A mutant ^#7fe96e;fungus^reset; has grown out of control, covering this world. Spores Galore! ^red;Poison gas clouds^reset; are quite common.",
+      "tr": "Mutasyona uğramış bir ^#7fe96e;mantar^reset; kontrolden çıkıp bu dünyayı kaplamış. Her yerde spor var! ^red;Zehirli gaz bulutları^reset; oldukça yaygın.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/fungus/2",
+      "en": "A ^#7fe96e;fungal^reset; colony of unsurpassed size engulfs almost this entire world. Pockets of ^red;poisonous clouds^reset; detected.",
+      "tr": "Eşi benzeri görülmemiş büyüklükte bir ^#7fe96e;mantar^reset; kolonisi bu dünyanın neredeyse tamamını yutmuş. ^red;Zehirli bulut^reset; kümeleri tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icemoon/0",
+      "en": "A frigid, ^#86a8c5;frozen moon^reset;. Slippery surfaces could prove hazardous. Abundant ^#e43558;telebrium ore^reset; detected. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "Donmuş, buz gibi bir ^#86a8c5;ay^reset;. Kaygan yüzeyler tehlike yaratabilir. Bol miktarda ^#e43558;Telebrium Cevheri^reset; tespit edildi. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icemoon/1",
+      "en": "A ^#86a8c5;frozen moon^reset;. Watch your footing, and beware ^red;dangerous wildlife^reset;. Abundant ^#e43558;telebrium ore^reset; detected. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "^#86a8c5;Donmuş bir ay^reset;. Adımlarına dikkat et ve ^red;tehlikeli vahşi yaşama^reset; karşı tetikte ol. Bol miktarda ^#e43558;Telebrium Cevheri^reset; tespit edildi. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icemoon/2",
+      "en": "^#86a8c5;Frozen moons^reset; are cold and dangerous to the unwary. I am detecting valuable ^#e43558;telebrium ore^reset; underground. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "^#86a8c5;Donmuş aylar^reset; soğuktur ve hazırlıksız olanlar için tehlikelidir. Yer altında değerli ^#e43558;Telebrium Cevheri^reset; tespit ediyorum. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icewaste/0",
+      "en": "Scanners show ^red;deadly ice and absolute zero temperatures^reset; on this ^#69f1fd;ice waste^reset;. Proceed with caution. ^orange;Isogen Ore^reset; detected. ^cyan;Recommend: Extreme Cold protection^reset;",
+      "tr": "Tarayıcılar bu ^#69f1fd;Buz Çorağında^reset; ^red;ölümcül buz ve mutlak sıfır sıcaklıkları^reset; gösteriyor. Dikkatli ilerle. ^orange;Isogen Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icewaste/1",
+      "en": "This ^#69f1fd;ice waste^reset; appears to have fatal temperatures, so be sure you have cold protection. I am detecting valuable resources underground. ^cyan;Recommend: Extreme Cold protection^reset;",
+      "tr": "Bu ^#69f1fd;Buz Çorağında^reset; ölümcül sıcaklıklar var gibi görünüyor; soğuk koruması kullandığından emin ol. Yer altında değerli kaynaklar tespit ediyorum. ^cyan;Öneri: Aşırı Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icewaste/2",
+      "en": "Scanners show this ^#69f1fd;ice waste^reset; is ^red;extremely dangerous^reset; and has unusual terrain. ^orange;Isogen Ore^reset; detected. ^cyan;Recommend: Extreme Cold protection^reset;",
+      "tr": "Tarayıcılar bu ^#69f1fd;Buz Çorağının^reset; ^red;son derece tehlikeli^reset; ve sıra dışı araziye sahip olduğunu gösteriyor. ^orange;Isogen Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icewastedark/0",
+      "en": "Scanners show ^red;deadly ice and absolute zero temperatures^reset; on this ^#69f1fd;ice waste^reset;. Sunlight is minimal. ^red;Tread carefully in the dark^reset;. ^cyan;Recommend: Extreme Cold protection^reset;",
+      "tr": "Tarayıcılar bu ^#69f1fd;Buz Çorağında^reset; ^red;ölümcül buz ve mutlak sıfır sıcaklıkları^reset; gösteriyor. Güneş ışığı çok az. ^red;Karanlıkta dikkatli ilerle^reset;. ^cyan;Öneri: Aşırı Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icewastedark/1",
+      "en": "This ^#69f1fd;ice waste^reset; appears to have fatal temperatures, so be sure you have cold protection. Nearly all light is blocked by the atmosphere. ^cyan;Recommend: Extreme Cold protection^reset;",
+      "tr": "Bu ^#69f1fd;Buz Çorağında^reset; ölümcül sıcaklıklar var gibi görünüyor; soğuk koruması kullandığından emin ol. Atmosfer ışığın neredeyse tamamını engelliyor. ^cyan;Öneri: Aşırı Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/icewastedark/2",
+      "en": "Scanners show this ^#69f1fd;ice waste^reset; is ^red;extremely dangerous^reset; and nearly no light. ^orange;Trianglium ore^reset; detected. ^cyan;Recommend: Extreme Cold protection^reset;",
+      "tr": "Tarayıcılar bu ^#69f1fd;Buz Çorağının^reset; ^red;son derece tehlikeli^reset; ve neredeyse tamamen karanlık olduğunu gösteriyor. ^orange;Trianglium Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/infernus/0",
+      "en": "Volatile lava and extreme deadly heat await on ^#cd5d02;infernus^reset; worlds. Protection recommended. ^orange;Pyreite Ore^reset; detected. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "^#cd5d02;Infernus^reset; dünyalarında dengesiz lav ve ölümcül derecede aşırı sıcaklık bekliyor. Koruma önerilir. ^orange;Pyreite Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/infernus/1",
+      "en": "A hellish ^#cd5d02;infernus^reset; planet covered in ^red;lava^reset; and ^red;lethal temperatures^reset;. Bring heat protection. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "^red;Lavla^reset; ve ^red;ölümcül sıcaklıklarla^reset; kaplı cehennem gibi bir ^#cd5d02;Infernus^reset; gezegeni. Isı koruması getir. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/infernus/2",
+      "en": "^#cd5d02;Infernus^reset; worlds are ^red;exceptionally deadly^reset; and not to be undertaken without protection. ^orange;Pyreite Ore^reset; detected. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "^#cd5d02;Infernus^reset; dünyaları ^red;son derece ölümcüldür^reset; ve korumasız girilmemelidir. ^orange;Pyreite Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/infernusdark/0",
+      "en": "Volatile lava and extreme deadly heat await on ^#cd5d02;infernus^reset; worlds. Protection recommended. ^#d16fff;Densinium ore^reset; detected. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "^#cd5d02;Infernus^reset; dünyalarında dengesiz lav ve ölümcül derecede aşırı sıcaklık bekliyor. Koruma önerilir. ^#d16fff;Densinium Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/infernusdark/1",
+      "en": "A hellish ^#cd5d02;infernus^reset; planet covered in ^red;lava^reset; and ^red;lethal temperatures^reset;. Bring heat protection. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "^red;Lavla^reset; ve ^red;ölümcül sıcaklıklarla^reset; kaplı cehennem gibi bir ^#cd5d02;Infernus^reset; gezegeni. Isı koruması getir. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/infernusdark/2",
+      "en": "^#cd5d02;Infernus^reset; worlds are ^red;exceptionally deadly^reset; and not to be undertaken without protection. ^#d16fff;Densinium ore^reset; detected. ^cyan;Recommend: Extreme Heat protection^reset;",
+      "tr": "^#cd5d02;Infernus^reset; dünyaları ^red;son derece ölümcüldür^reset; ve korumasız girilmemelidir. ^#d16fff;Densinium Cevheri^reset; tespit edildi. ^cyan;Öneri: Aşırı Sıcak Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/irradiated/0",
+      "en": "^#83b369;Irradiated^reset; world. Dense pockets of lethal radiation, and large quantities of ^#4444ff;Irradium ore^reset; detected. ^cyan;Recommend: Moderate Radiation protection^reset;",
+      "tr": "^#83b369;Radyasyonlu^reset; dünya. Yoğun ölümcül radyasyon cepleri ve büyük miktarda ^#4444ff;Irradium Cevheri^reset; tespit edildi. ^cyan;Öneri: Orta Dereceli Radyasyon Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/irradiated/1",
+      "en": "This unusual ^#83b369;irradiated^reset; world should not be visited without ^green;radiation protection^reset;. ^#4444ff;Irradium ore^reset; detected. ^cyan;Recommend: Moderate Radiation protection^reset;",
+      "tr": "Bu sıra dışı ^#83b369;radyasyonlu^reset; dünya ^green;radyasyon koruması^reset; olmadan ziyaret edilmemeli. ^#4444ff;Irradium Cevheri^reset; tespit edildi. ^cyan;Öneri: Orta Dereceli Radyasyon Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/irradiated/2",
+      "en": "Mutated trees and bizarre fauna are abundant on this ^#83b369;irradiated^reset; planet. ^cyan;Recommend: Moderate Radiation protection^reset;",
+      "tr": "Mutasyona uğramış ağaçlar ve tuhaf fauna bu ^#83b369;radyasyonlu^reset; gezegende bol. ^cyan;Öneri: Orta Dereceli Radyasyon Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/lightless/0",
+      "en": "This strange ^#64616f;lightless sphere^reset; reflects or absorbs light. Reason unknown. ^#c62c7f;Effigium ore^reset; detected.",
+      "tr": "Bu tuhaf ^#64616f;ışıksız küre^reset; ışığı yansıtıyor veya emiyor. Nedeni bilinmiyor. ^#c62c7f;Effigium Cevheri^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/lightless/1",
+      "en": "The atmosphere of this ^#64616f;lightless sphere^reset; blocks any source of light from penetrating completely. Scans inconclusive.",
+      "tr": "Bu ^#64616f;ışıksız kürenin^reset; atmosferi herhangi bir ışık kaynağının içeri sızmasını tamamen engelliyor. Taramalar sonuçsuz.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/lightless/2",
+      "en": "A ^#64616f;lightless sphere^reset; with no light but plenty of ^#d16fff;Effigium ore^reset; detected. Near-total darkness awaits.",
+      "tr": "Işıksız ama bol miktarda ^#d16fff;Effigium Cevheri^reset; bulunan bir ^#64616f;ışıksız küre^reset;. Neredeyse mutlak karanlık bekliyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/magmadark/0",
+      "en": "This ^red;dangerously hot^reset; planet is chiefly composed of ^#ff1818;magma^reset;. Remember, your resilient spirit is admirable, but it is not flame retardant.",
+      "tr": "Bu ^red;tehlikeli derecede sıcak^reset; gezegenin büyük kısmı ^#ff1818;magmadan^reset; oluşuyor. Dayanıklı ruhun takdire değer ama alev geciktirici değil.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/magmadark/1",
+      "en": "The planet surface is ^red;dangerously hot^reset;. Few creatures seek out an existence amongst the planet's vast oceans of ^#ff1818;magma^reset;.",
+      "tr": "Gezegenin yüzeyi ^red;tehlikeli derecede sıcak^reset;. Pek az canlı, gezegenin uçsuz bucaksız ^#ff1818;magma^reset; okyanuslarının arasında yaşamayı seçiyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/magmadark/2",
+      "en": "The beam site is a tiny island isolated in a sea of ^#ff1818;magma^reset;. That you would consider visiting this ^red;searingly hot^reset; planet speaks volumes of your fortitude.",
+      "tr": "Işınlanma noktası ^#ff1818;magma^reset; denizinin ortasında küçücük bir ada. Bu ^red;kavurucu sıcaklıktaki^reset; gezegeni ziyaret etmeyi düşünmen dayanıklılığın hakkında çok şey söylüyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/metallicmoon/0",
+      "en": "^#666666;Cyber-Sphere^reset; worlds hold ^#90ac7c;abundant rare metals^reset; guarded by dangerous servitors. ^#d16fff;Densinium ore^reset; and ^#ffda44;high metallic content^reset; detected.",
+      "tr": "^#666666;Siberküre^reset; dünyaları, tehlikeli Servitorların koruduğu ^#90ac7c;bol miktarda nadir metal^reset; barındırır. ^#d16fff;Densinium Cevheri^reset; ve ^#ffda44;yüksek metal oranı^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/metallicmoon/1",
+      "en": "Scanners detect that this ^#666666;cybernetic world^reset; is over ^#90ac7c;12 million^reset; years old. Who built this marvel, and why?",
+      "tr": "Tarayıcılar bu ^#666666;sibernetik dünyanın^reset; ^#90ac7c;12 milyon^reset; yıldan daha eski olduğunu gösteriyor. Bu harikayı kim, neden inşa etti?",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/metallicmoon/2",
+      "en": "A ^#666666;metallic world^reset; built by an ancient race. ^#90ac7c;Abundant rare metals^reset; detected. Scans also show mechanical beings.",
+      "tr": "Kadim bir ırk tarafından inşa edilmiş ^#666666;metalik bir dünya^reset;. ^#90ac7c;Bol miktarda nadir metal^reset; tespit edildi. Taramalar mekanik varlıklar da gösteriyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_toxic/0",
+      "en": "^#414556;Toxic^reset; materials compose the majority of this moon. A ^red;severely poisonous^reset; miasma covers the surface.",
+      "tr": "Bu ayın büyük kısmı ^#414556;zehirli^reset; maddelerden oluşuyor. Yüzeyi ^red;son derece zehirli^reset; bir pus kaplıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_toxic/1",
+      "en": "A putrid and ^#414556;toxic^reset; moon. While not inherently dangerous, I recommend a ^cyan;Poison EPP II^reset;.",
+      "tr": "Kokuşmuş ve ^#414556;zehirli^reset; bir ay. Doğası gereği hemen ölümcül olmasa da ^cyan;Zehir EPP'si II^reset; öneririm.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_toxic/2",
+      "en": "A ^#414556;toxic^reset; moon covered in deposits of long-rotted soil, and a dense cloud of ^red;toxic, severely poisonous gas^reset;",
+      "tr": "Uzun zaman önce çürümüş toprak yatakları ve yoğun ^red;zehirli, son derece öldürücü gaz^reset; bulutlarıyla kaplı ^#414556;zehirli^reset; bir ay.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_desert/0",
+      "en": "This ^#b3947c;desert moon^reset; is dry, frozen, dusty and unpopulated. ^red;Low temperatures^reset; mean you should bring some limited measure of cold protection.",
+      "tr": "Bu ^#b3947c;çöl ayı^reset; kuru, donmuş, tozlu ve ıssız. ^red;Düşük sıcaklıklar^reset; nedeniyle bir miktar soğuk koruması getirmen gerekir.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_desert/1",
+      "en": "A lifeless ^#b3947c;desert moon^reset;. Take care, as the temperature is ^red;slightly freezing^reset; and will eventually prove fatal if you are not cautious.",
+      "tr": "Cansız bir ^#b3947c;çöl ayı^reset;. Dikkatli ol; sıcaklık ^red;hafifçe dondurucu^reset; ve tedbir almazsan zamanla ölümcül olacaktır.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_desert/2",
+      "en": "A cold, sandy ^#b3947c;desert moon^reset;. A thin layer of cold protection should be sufficient to protect you.",
+      "tr": "Soğuk ve kumlu bir ^#b3947c;çöl ayı^reset;. İnce bir soğuk koruması katmanı seni korumaya yeterli olmalı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_stone/0",
+      "en": "A ^#999999;rocky moon^reset; with jagged and dangerous stone formations.",
+      "tr": "Sivri ve tehlikeli taş oluşumlarına sahip ^#999999;kayalık bir ay^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_stone/1",
+      "en": "^#999999;Rocky moons^reset; are tough terrain, but otherwise harmless.",
+      "tr": "^#999999;Kayalık ayların^reset; arazisi zorludur ama bunun dışında zararsızdır.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_stone/2",
+      "en": "Travel may be slower going on this ^#999999;rocky moon^reset;.",
+      "tr": "Bu ^#999999;kayalık ayda^reset; ilerlemek daha yavaş olabilir.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_shadow/0",
+      "en": "A ^#505f50;Cloying, total darkness^reset; makes this resource-rich moon a rather spooky, dangerous place. Watch your step. ^red;Unknown bio-sign detected^reset;.",
+      "tr": "^#505f50;Boğucu, mutlak karanlık^reset; kaynak açısından zengin bu ayı ürkütücü ve tehlikeli bir yere dönüştürüyor. Adımlarına dikkat et. ^red;Bilinmeyen biyolojik iz tespit edildi^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_shadow/1",
+      "en": "There are few places darker than a ^#505f50;shadow moon^reset;. Scanners detect unknown material signatures as well as ^red;an ancient unknown entity^reset;.",
+      "tr": "^#505f50;Gölge Ayından^reset; daha karanlık çok az yer vardır. Tarayıcılar bilinmeyen madde izlerinin yanı sıra ^red;kadim, bilinmeyen bir varlık^reset; tespit ediyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_shadow/2",
+      "en": "A ^#505f50;shadow moon^reset; prevents most light from penetrating its dark miasma. I detect ^orange;valuable resources^reset; and ^red;some sort of unknown bio-signature^reset;.",
+      "tr": "Bir ^#505f50;Gölge Ayı^reset;, karanlık pusundan ışığın büyük kısmının geçmesini engelliyor. ^orange;Değerli kaynaklar^reset; ve ^red;bir tür bilinmeyen biyolojik iz^reset; tespit ediyorum.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_volcanic/0",
+      "en": "^#663322;Volcanic activity^reset; runs rampant on this moon. Temperatures are ^red;severely hot^reset; and protection should be worn when exploring.",
+      "tr": "Bu ayda ^#663322;volkanik faaliyet^reset; kontrolden çıkmış durumda. Sıcaklık ^red;son derece yüksek^reset; ve keşif sırasında koruma kullanılmalı.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_volcanic/1",
+      "en": "This ^#663322;volcanic moon^reset; should contain abundant erchius fuel, but use caution or protection when travelling in the ^red;severe heat^reset;.",
+      "tr": "Bu ^#663322;volkanik ay^reset; bol miktarda Erchius Yakıtı içermeli, fakat ^red;aşırı sıcakta^reset; yolculuk ederken dikkatli ol ya da koruma kullan.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/moon_volcanic/2",
+      "en": "A ^#663322;volcanic^reset; moon flowing with ^red;lava and severe heat^reset;. Take care when exploring.",
+      "tr": "^red;Lav ve aşırı sıcaklıkla^reset; dolu ^#663322;volkanik^reset; bir ay. Keşfederken dikkatli ol.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/mountainous/0",
+      "en": "This ^#b398ba;mountainous^reset; world is studded with immensely tall rocky mountains. Scans show large bipedal primitives. ^#e47998;Zerchesium ore^reset; detected. High-Gravity events are common.",
+      "tr": "Bu ^#b398ba;dağlık^reset; dünya devasa kayalık dağlarla dolu. Taramalar iri, iki ayaklı ilkel canlılar gösteriyor. ^#e47998;Zerchesium Cevheri^reset; tespit edildi. Yüksek Yerçekimi olayları yaygın.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/mountainous/1",
+      "en": "This ^#b398ba;mountainous^reset; world is absolutely riddled with ^#e47998;ores of many sorts^reset;, though is plagued by ^red;violent weather patterns^reset;.",
+      "tr": "Bu ^#b398ba;dağlık^reset; dünya ^#e47998;pek çok türde cevherle^reset; dolu, ancak ^red;şiddetli hava olayları^reset; sık görülüyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/mountainous/2",
+      "en": "A ^#b398ba;mountainous^reset; surface makes for slow travel, but it has ^#e47998;abundant sources of metals^reset; that should prove useful.",
+      "tr": "^#b398ba;Dağlık^reset; yüzey ilerlemeyi yavaşlatır ama işe yarayacak ^#e47998;bol miktarda metal kaynağı^reset; barındırır.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/mountainous/3",
+      "en": "A ^#b398ba;mountainous^reset; with ^#e47998;zerchesium veins^reset; that should prove useful. High-Gravity weather is frequent. Use caution.",
+      "tr": "Yararlı olabilecek ^#e47998;Zerchesium damarlarına^reset; sahip ^#b398ba;dağlık^reset; bir dünya. Yüksek Yerçekimi hava olayları sık görülür. Dikkatli ol.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/nitrogensea/0",
+      "en": "A deadly ^#69f1fd;liquid nitrogen sea^reset; awaits beneath a dense layer of ice. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "Yoğun bir buz tabakasının altında ölümcül bir ^#69f1fd;sıvı azot denizi^reset; bekliyor. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/nitrogensea/1",
+      "en": "^#69f1fd;Liquid nitrogen^reset; forms the entirety of this moon's liquid. This will prove ^red;dangerous without protection^reset;. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "^#69f1fd;Sıvı azot^reset; bu ayın tüm sıvısını oluşturuyor. Koruma olmadan ^red;tehlikeli olacaktır^reset;. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/nitrogensea/2",
+      "en": "It should be assumed that this ^#69f1fd;liquid nitrogen sea^reset; is both ^red;dangerously cold^reset; and slippery. ^cyan;Recommend: Moderate Cold Protection^reset;",
+      "tr": "Bu ^#69f1fd;sıvı azot denizinin^reset; hem ^red;tehlikeli derecede soğuk^reset; hem de kaygan olduğunu varsaymak gerekir. ^cyan;Öneri: Orta Dereceli Soğuk Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/penumbra/0",
+      "en": "Sunlight rarely penetrates ^#78657f;penumbral^reset; atmospheres. Rich sources of ^#9d5bd0;penumbrite ore^reset; detected.",
+      "tr": "Güneş ışığı ^#78657f;Penumbra^reset; atmosferlerinden nadiren geçer. Zengin ^#9d5bd0;Penumbrite Cevheri^reset; kaynakları tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/penumbra/1",
+      "en": "^#78657f;Penumbra^reset; planets have a unique makeup that blocks light but not UV. They are the sole source of ^#9d5bd0;penumbrite ore^reset;.",
+      "tr": "^#78657f;Penumbra^reset; gezegenleri ışığı engelleyip UV'yi geçiren benzersiz bir yapıya sahiptir. ^#9d5bd0;Penumbrite Cevherinin^reset; tek kaynağıdır.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/penumbra/2",
+      "en": "Dark, but with plenty of bioluminescent fauna, ^#78657f;penumbra^reset; worlds are the only known viable source of ^#9d5bd0;penumbrite^reset;.",
+      "tr": "Karanlık ama biyolüminesan faunayla dolu ^#78657f;Penumbra^reset; dünyaları, bilinen tek kullanılabilir ^#9d5bd0;Penumbrite^reset; kaynağıdır.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/protoworld/0",
+      "en": "A ^#517f51;proto world^reset;. Mutated flora and unusual life-signs detected. Scanners have also located caches of ^#e2ef55;Protocite Ore^reset;. ^cyan;Recommend: Proto-Poison protection^reset;",
+      "tr": "Bir ^#517f51;Proto Gezegen^reset;. Mutasyona uğramış flora ve sıra dışı yaşam belirtileri tespit edildi. Tarayıcılar ayrıca ^#e2ef55;Protocite Cevheri^reset; yatakları buldu. ^cyan;Öneri: Proto-Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/protoworld/1",
+      "en": "I am detecting unusual life signs on this ^#517f51;proto world^reset;. It appears this life has been purposefully mutated. ^#e2ef55;Unusual ores^reset; detected. ^cyan;Recommend: Proto-Poison protection^reset;",
+      "tr": "Bu ^#517f51;Proto Gezegende^reset; sıra dışı yaşam belirtileri tespit ediyorum. Bu yaşam biçimleri kasıtlı olarak mutasyona uğratılmış gibi görünüyor. ^#e2ef55;Sıra dışı cevherler^reset; tespit edildi. ^cyan;Öneri: Proto-Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/protoworld/2",
+      "en": "Mutated life runs rampant here on this ^#517f51;proto world^reset;. Valuable ^#e2ef55;protocite^reset; is found in abundance. ^cyan;Recommend: Proto-Poison protection^reset;",
+      "tr": "Mutasyona uğramış yaşam bu ^#517f51;Proto Gezegende^reset; kontrolden çıkmış durumda. Değerli ^#e2ef55;Protocite^reset; bol miktarda bulunuyor. ^cyan;Öneri: Proto-Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/protoworlddark/0",
+      "en": "A ^#517f51;proto world^reset;. Mutated flora and unusual life-signs detected. Scanners have also located caches of ^#e2ef55;Protocite Ore^reset;. ^cyan;Recommend: Proto-Poison protection^reset;",
+      "tr": "Bir ^#517f51;Proto Gezegen^reset;. Mutasyona uğramış flora ve sıra dışı yaşam belirtileri tespit edildi. Tarayıcılar ayrıca ^#e2ef55;Protocite Cevheri^reset; yatakları buldu. ^cyan;Öneri: Proto-Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/protoworlddark/1",
+      "en": "I am detecting unusual life signs on this ^#517f51;proto world^reset;. It appears this life has been purposefully mutated. ^#e2ef55;Unusual ores^reset; detected. ^cyan;Recommend: Proto-Poison protection^reset;",
+      "tr": "Bu ^#517f51;Proto Gezegende^reset; sıra dışı yaşam belirtileri tespit ediyorum. Bu yaşam biçimleri kasıtlı olarak mutasyona uğratılmış gibi görünüyor. ^#e2ef55;Sıra dışı cevherler^reset; tespit edildi. ^cyan;Öneri: Proto-Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/protoworlddark/2",
+      "en": "Mutated life runs rampant here on this ^#517f51;proto world^reset;. Valuable ^#e2ef55;protocite^reset; is found in abundance. ^cyan;Recommend: Proto-Poison protection^reset;",
+      "tr": "Mutasyona uğramış yaşam bu ^#517f51;Proto Gezegende^reset; kontrolden çıkmış durumda. Değerli ^#e2ef55;Protocite^reset; bol miktarda bulunuyor. ^cyan;Öneri: Proto-Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/shadow/0",
+      "en": "A ^#ccfa33;shadow world^reset; that seems to block our scanners. Whatever is down there, it's likely rather dark. ^red;Potentially Lethal!^reset;",
+      "tr": "Tarayıcılarımızı engelliyor gibi görünen bir ^#ccfa33;Gölge dünyası^reset;. Aşağıda her ne varsa muhtemelen oldukça karanlık. ^red;Potansiyel olarak Ölümcül!^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/shadow/1",
+      "en": "I get no readings whatsoever off of this ^#ccfa33;shadow world^reset;, but it appears there will be little light on the surface to speak of. ^red;Potentially Lethal!^reset;",
+      "tr": "Bu ^#ccfa33;Gölge dünyasından^reset; hiçbir ölçüm alamıyorum, fakat yüzeyde kayda değer pek az ışık var gibi görünüyor. ^red;Potansiyel olarak Ölümcül!^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/shadow/2",
+      "en": "This ^#ccfa33;shadow world^reset; prevents any and all scans. ^red;Use extreme caution when travelling^reset;.",
+      "tr": "Bu ^#ccfa33;Gölge dünyası^reset; tüm taramaları tamamen engelliyor. ^red;Seyahat ederken son derece dikkatli ol^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/slimeworld/0",
+      "en": "A ^#517f51;gelatinous^reset;, slimy world. High elasticity. Strange, ^red;massive lifeforms^reset; and a ^red;poisonous atmosphere^reset; detected.",
+      "tr": "^#517f51;Jelatinimsi^reset;, balçıklı bir dünya. Esnekliği yüksek. Tuhaf, ^red;devasa yaşam biçimleri^reset; ve ^red;zehirli bir atmosfer^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/slimeworld/1",
+      "en": "^#517f51;Slime^reset; forms almost this entire planet. ^red;Huge nocturnal creatures^reset; detected. The atmosphere is full of ^red;poisonous vapours^reset;.",
+      "tr": "^#517f51;Balçık^reset; bu gezegenin neredeyse tamamını oluşturuyor. ^red;Dev gececil yaratıklar^reset; tespit edildi. Atmosfer ^red;zehirli buharlarla^reset; dolu.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/slimeworld/2",
+      "en": "A bouncy, sticky, ^#517f51;gelatinous^reset; world. It is evident that this will make for some rather gross exploration. ^red;Poisonous atmosphere^reset; detected.",
+      "tr": "Zıplayan, yapışkan, ^#517f51;jelatinimsi^reset; bir dünya. Burayı keşfetmenin epey iğrenç olacağı belli. ^red;Zehirli atmosfer^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/snowdark/0",
+      "en": "This chilly landing site is laden with ^#69f1fd;snow^reset;. Sundry trees grow here and various animals also thrive in the cold conditions. An excellent place to make snowballs.",
+      "tr": "Bu soğuk iniş noktası ^#69f1fd;karla^reset; kaplı. Çeşitli ağaçlar yetişiyor ve farklı hayvanlar da soğuk koşullarda yaşamını sürdürüyor. Kartopu yapmak için harika bir yer.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/snowdark/1",
+      "en": "The landing location is cold, but not perilously so. ^#69f1fd;Snow^reset; covers the area and blizzards are a possibility. A hat and gloves may be advisable.",
+      "tr": "İniş noktası soğuk ama ölümcül seviyede değil. Bölgeyi ^#69f1fd;kar^reset; kaplıyor ve tipi çıkabilir. Bere ve eldiven iyi fikir olabilir.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/snowdark/2",
+      "en": "This location is relatively chill, and ^#69f1fd;snow^reset; lies thickly on the ground. My sensors indicate that there are critters scampering through the soft blanket of white.",
+      "tr": "Burası epey serin ve yerde kalın bir ^#69f1fd;kar^reset; tabakası var. Sensörlerim, yumuşak beyaz örtünün içinde koşturan küçük canlılar tespit ediyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/strangesea/0",
+      "en": "This world is covered in a ^#da67b8;strange sea^reset;. Scanners reveal dense concentrations of Plasmic Fluid. ^red;Deadly gas!^reset; ^cyan;Recommend Poison Gas Immunity^reset;",
+      "tr": "Bu dünya ^#da67b8;tuhaf bir denizle^reset; kaplı. Tarayıcılar yoğun Plazmik Sıvı birikimleri gösteriyor. ^red;Ölümcül gaz!^reset; ^cyan;Öneri: Zehirli Gaz Bağışıklığı^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/strangesea/1",
+      "en": "A ^#da67b8;strange sea^reset; covers this planet. Scanners reveal little useful info apart from large quantities of plasmic liquid and a gaseous, airless atmosphere. ^red;Potentially Lethal Gas!^reset;",
+      "tr": "Bu gezegeni ^#da67b8;tuhaf bir deniz^reset; kaplıyor. Tarayıcılar büyük miktarda Plazmik Sıvı ve gazlı, havasız bir atmosfer dışında işe yarar pek bilgi vermiyor. ^red;Potansiyel Olarak Ölümcül Gaz!^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/strangesea/2",
+      "en": "Plasmic Fluid forms the bulk of this unusual world. ^#da67b8;strange sea^reset;. ^red;Poisonous gas clouds ^reset; are common.",
+      "tr": "Plazmik Sıvı bu sıra dışı dünyanın büyük kısmını oluşturuyor. ^#da67b8;Tuhaf deniz^reset;. ^red;Zehirli gaz bulutları ^reset; yaygın.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuric/0",
+      "en": "^#ffea00;Sulphuric^reset; worlds are extremely dangerous. Airless, acidic and toxic atmosphere. Abundant ^#772211;cinnabar^reset; detected. ^cyan;Recommend: Acid Protection^reset;",
+      "tr": "^#ffea00;Kükürtlü^reset; dünyalar son derece tehlikelidir. Atmosfer havasız, asidik ve zehirlidir. Bol miktarda ^#772211;Zinober^reset; tespit edildi. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuric/1",
+      "en": "^#ffea00;Sulphuric^reset; acid atmosphere detected. ^red;Deadly pools of acid and lethal storms^reset; lie below in abundance. ^cyan;Recommend: Acid Protection^reset;",
+      "tr": "^#ffea00;Kükürtlü^reset; asit atmosferi tespit edildi. Aşağıda bol miktarda ^red;ölümcül asit havuzu ve ölümcül fırtına^reset; var. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuric/2",
+      "en": "A ^red;deadly^reset; ^#ffea00;sulphuric^reset; world. Exploration without protection will prove fatal. ^cyan;Recommend: Sulphuric Acid and Breath protection^reset;",
+      "tr": "^red;Ölümcül^reset; bir ^#ffea00;Kükürtlü^reset; dünya. Korumasız keşif ölümle sonuçlanır. ^cyan;Öneri: Sülfürik Asit ve Solunum Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuricdark/0",
+      "en": "^#ffea00;Sulphuric^reset; worlds are extremely dangerous. Airless, acidic and toxic atmosphere. Abundant ^#772211;cinnabar^reset; detected. ^cyan;Recommend: Acid Protection^reset;",
+      "tr": "^#ffea00;Kükürtlü^reset; dünyalar son derece tehlikelidir. Atmosfer havasız, asidik ve zehirlidir. Bol miktarda ^#772211;Zinober^reset; tespit edildi. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuricdark/1",
+      "en": "^#ffea00;Sulphuric^reset; acid atmosphere detected. ^red;Deadly pools of acid and lethal storms^reset; lie below in abundance. ^cyan;Recommend: Acid Protection^reset;",
+      "tr": "^#ffea00;Kükürtlü^reset; asit atmosferi tespit edildi. Aşağıda bol miktarda ^red;ölümcül asit havuzu ve ölümcül fırtına^reset; var. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuricdark/2",
+      "en": "A ^red;deadly^reset; ^#ffea00;sulphuric^reset; world. Exploration without protection will prove fatal. ^cyan;Recommend: Sulphuric Acid and Breath protection^reset;",
+      "tr": "^red;Ölümcül^reset; bir ^#ffea00;Kükürtlü^reset; dünya. Korumasız keşif ölümle sonuçlanır. ^cyan;Öneri: Sülfürik Asit ve Solunum Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuricocean/0",
+      "en": "A ^#ffea00;sulphuric ocean^reset; covers almost the entire surface. Abundant ^#772211;cinnabar^reset; detected. ^cyan;Recommend: Acid protection^reset;",
+      "tr": "^#ffea00;Kükürtlü bir okyanus^reset; yüzeyin neredeyse tamamını kaplıyor. Bol miktarda ^#772211;Zinober^reset; tespit edildi. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuricocean/1",
+      "en": "A ^#ffea00;sulphuric ocean^reset;. This planet is ^red;extremely dangerous. Use caution^reset;. Likely a terrible vacation spot. ^cyan;Recommend: Acid protection^reset;",
+      "tr": "Bir ^#ffea00;Kükürtlü okyanus^reset;. Bu gezegen ^red;son derece tehlikeli. Dikkatli ol^reset;. Tatil için berbat bir yer olması muhtemel. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/sulphuricocean/2",
+      "en": "A ^#ffea00;sulphuric ocean^reset; ripe with ^red;devastatingly brutal weather^reset;. ^cyan;Recommend: Acid protection^reset;",
+      "tr": "^red;Yıkıcı derecede sert hava koşullarına^reset; sahip bir ^#ffea00;Kükürtlü okyanus^reset;. ^cyan;Öneri: Asit Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/superdense/0",
+      "en": "^#914560;Super-dense^reset; worlds have enormous gravitational force. ^red;Extreme danger from falling^reset;.",
+      "tr": "^#914560;Aşırı Yoğun^reset; dünyalar muazzam bir yerçekimi kuvvetine sahiptir. ^red;Düşmek son derece tehlikelidir^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/superdense/1",
+      "en": "This unusually ^#914560;super-dense^reset; planet has gravity ^orange;far above normal^reset;. Be very careful. ^red;Falling means certain death^reset;.",
+      "tr": "Bu alışılmadık derecede ^#914560;Aşırı Yoğun^reset; gezegenin yerçekimi ^orange;normalin çok üzerinde^reset;. Çok dikkatli ol. ^red;Düşmek kesin ölüm demek^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/superdense/2",
+      "en": "A ^#914560;Super-dense^reset; world with a much higher gravitational force than other planets of the same size. ^red;Very dangerous. Tread carefully.",
+      "tr": "Aynı boyuttaki diğer gezegenlerden çok daha yüksek yerçekimi kuvvetine sahip ^#914560;Aşırı Yoğun^reset; bir dünya. ^red;Çok tehlikeli. Dikkatli ilerle.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tabularasa/0",
+      "en": "Some hideous catastrophe has resulted in this planet becoming a ^#59a849;Tabula Rasa^reset;. A doomsday virus? Maybe you can find out.",
+      "tr": "Korkunç bir felaket bu gezegeni ^#59a849;Tabula Rasa^reset; hâline getirmiş. Bir kıyamet virüsü mü? Belki öğrenebilirsin.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tabularasa/1",
+      "en": "Some hideous catastrophe has resulted in this planet becoming a ^#59a849;Tabula Rasa^reset;. A long-ago nuclear armageddon? Who knows?",
+      "tr": "Korkunç bir felaket bu gezegeni ^#59a849;Tabula Rasa^reset; hâline getirmiş. Çok eski bir nükleer kıyamet mi? Kim bilir?",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tabularasa/2",
+      "en": "Some hideous catastrophe has resulted in this planet becoming a ^#59a849;Tabula Rasa^reset;. A Floran invasion? Who can tell?",
+      "tr": "Korkunç bir felaket bu gezegeni ^#59a849;Tabula Rasa^reset; hâline getirmiş. Floran istilası mı? Kim bilebilir?",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tarball/0",
+      "en": "A ^#8349cc;tar ball^reset; with a semi-livable surface. Encumbering bodies of liquid with ^#555555;abundant oil^reset; litter the surface. ^cyan;Recommend: Heat protection^reset;",
+      "tr": "Yarı yaşanabilir yüzeye sahip bir ^#8349cc;Katran Gezegeni^reset;. Yüzey, hareketi zorlaştıran ve ^#555555;bol miktarda yağ^reset; içeren sıvı birikintileriyle dolu. ^cyan;Öneri: Isı Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tarball/1",
+      "en": "A ^#8349cc;tar-covered world^reset; with breathable atmosphere. ^orange;Hazardous sticky pools of tar^reset; will make for slow travel. ^cyan;Recommend: Heat protection^reset;",
+      "tr": "Solunabilir atmosfere sahip ^#8349cc;katranla kaplı bir dünya^reset;. ^orange;Tehlikeli, yapışkan katran havuzları^reset; ilerlemeyi yavaşlatacak. ^cyan;Öneri: Isı Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tarball/2",
+      "en": "A ^#8349cc;tar ball^reset; with ^#555555;abundant oil sources^reset; detected on and below the surface. Some sort of ^orange;tar protection^reset; could prove useful. ^cyan;Recommend: Heat protection^reset;",
+      "tr": "Yüzeyde ve yer altında ^#555555;bol miktarda yağ kaynağı^reset; bulunan bir ^#8349cc;Katran Gezegeni^reset;. Bir tür ^orange;katran koruması^reset; işe yarayabilir. ^cyan;Öneri: Isı Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/thickjungle/0",
+      "en": "^#8cf387;Rainforest^reset; has claimed the majority of this organic-rich world. Abundant ^#green;organic resources^reset; detected.",
+      "tr": "^#8cf387;Yağmur Ormanı^reset; organik kaynaklar açısından zengin bu dünyanın büyük kısmını ele geçirmiş. Bol miktarda ^#green;organik kaynak^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/thickjungle/1",
+      "en": "A ^#8cf387;rainforest^reset; planet absolutely ripe with organic life. Abundant ^#green;organic resources^reset; detected.",
+      "tr": "Organik yaşamla dopdolu bir ^#8cf387;Yağmur Ormanı^reset; gezegeni. Bol miktarda ^#green;organik kaynak^reset; tespit edildi.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/thickjungle/2",
+      "en": "^#8cf387;Rainforest^reset; covers nearly the entire surface of this warm and inviting planet. ^green;Bamboo and other organic resources detected in large quantities.^reset;",
+      "tr": "^#8cf387;Yağmur Ormanı^reset; bu sıcak ve davetkâr gezegenin neredeyse tüm yüzeyini kaplıyor. ^green;Bambu ve diğer organik kaynaklar büyük miktarda tespit edildi.^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tidewater/0",
+      "en": "This ^#008aff;tidewater^reset; world is subject to massive tidal forces. Ocean currents show fauna rich in ^orange;mutated nodules^reset; with interesting applications. ^cyan;Recommend: Poison protection^reset;",
+      "tr": "Bu ^#008aff;Gelgit Suları^reset; dünyası dev gelgit kuvvetlerinin etkisinde. Okyanus akıntıları, ilginç kullanım alanlarına sahip ^orange;mutasyona uğramış nodüller^reset; bakımından zengin fauna gösteriyor. ^cyan;Öneri: Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tidewater/1",
+      "en": "^#008aff;Tidal^reset; forces are extra strong on this ocean world. Unusual ^orange;rare resources^reset; detected on the ocean floor. ^cyan;Recommend: Poison protection^reset;",
+      "tr": "Bu okyanus dünyasında ^#008aff;gelgit^reset; kuvvetleri olağanüstü güçlü. Okyanus tabanında sıra dışı ^orange;nadir kaynaklar^reset; tespit edildi. ^cyan;Öneri: Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tidewater/2",
+      "en": "A ^#008aff;tidewater^reset; planet covered in sharp reefs, spike-like stone formations and ^orange;rare resources^reset;. ^cyan;Recommend: Poison protection^reset;",
+      "tr": "Sivri resifler, diken benzeri taş oluşumları ve ^orange;nadir kaynaklarla^reset; kaplı bir ^#008aff;Gelgit Suları^reset; gezegeni. ^cyan;Öneri: Zehir Koruması^reset;",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tundradark/0",
+      "en": "A ^#61ffe3;frozen^reset; place, formed of ice - the permafrost runs deep here. Snow storms are common, and ^red;temperatures are dangerously low^reset;.",
+      "tr": "Buzdan oluşmuş ^#61ffe3;donmuş^reset; bir yer; kalıcı don tabakası burada çok derine iniyor. Kar fırtınaları yaygın ve ^red;sıcaklık tehlikeli derecede düşük^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tundradark/1",
+      "en": "This ^red;dangerously cold.^reset; landing site is ^#61ffe3;frozen^reset; solid. High likelihood of accidental self-cryopreservation. Protect yourself from the cold.",
+      "tr": "Bu ^red;tehlikeli derecede soğuk^reset; iniş noktası tamamen ^#61ffe3;donmuş^reset;. Yanlışlıkla kendini kriyojenik olarak koruma ihtimalin yüksek. Soğuğa karşı korun.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/tundradark/2",
+      "en": "^red;Temperatures at the beam site are dangerously low^reset;. The area is ^#61ffe3;frozen^reset;, and inhabited only by flora and fauna that are extremely resistant to the cold. ",
+      "tr": "^red;Işınlanma noktasındaki sıcaklık tehlikeli derecede düşük^reset;. Bölge ^#61ffe3;donmuş^reset; ve yalnızca aşırı soğuğa dayanıklı flora ve fauna yaşıyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/urbanwasteland/0",
+      "en": "A ^#848484;wasteland^reset; housing the remains of a once great civilization. Something awful happened here, long ago. ^#43a43a;Ancient ruins^reset; hold many lost treasures. ^red;Violent weather detected^reset;.",
+      "tr": "Bir zamanlar büyük bir uygarlığın kalıntılarını barındıran ^#848484;Çorak Dünya^reset;. Çok uzun zaman önce burada korkunç bir şey olmuş. ^#43a43a;Kadim harabeler^reset; pek çok kayıp hazine barındırıyor. ^red;Şiddetli hava olayları tespit edildi^reset;.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/urbanwasteland/1",
+      "en": "A ^#848484;wasteland^reset;. Abundant ruins of ^#43a43a;a dead civilization^reset; located primarily near coastlines. Strange and often ^red;severely deadly^reset; storms form from time to time.",
+      "tr": "Bir ^#848484;Çorak Dünya^reset;. ^#43a43a;Ölü bir uygarlığa^reset; ait bol miktarda harabe, çoğunlukla kıyı şeritlerinde bulunuyor. Zaman zaman tuhaf ve çoğu kez ^red;son derece ölümcül^reset; fırtınalar oluşuyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
+    },
+    {
+      "asset": "interface/cockpit/cockpit.config",
+      "pointer": "/visitableTypeDescription/urbanwasteland/2",
+      "en": "Once a thriving world, something eradicated most life on this ^#848484;wasteland^reset;. ^red;Bandits and raiders^reset; are commonly found scavenging for resources amid ^red;extremely dangerous weather^reset; patterns.",
+      "tr": "Bir zamanlar gelişmiş bir dünya olan bu ^#848484;Çorak Dünyada^reset; bir şey yaşamın çoğunu yok etmiş. ^red;Haydutlar ve yağmacılar^reset;, ^red;son derece tehlikeli hava^reset; koşullarının ortasında kaynak ararken sık görülüyor.",
+      "section": "v0.34 cockpit gezegen açıklamaları"
     }
   ]
 }
