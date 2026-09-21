@@ -1,0 +1,27 @@
+name: Cleanup stale branches
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete stale public branches
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git init /tmp/repo
+          cd /tmp/repo
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/Snix52/FrackinUniverse-Turkce.git"
+
+          for branch in             anayasa-v0.1.1             archive-preclean-main             codex/v030-research-gear-826             feat/battle-quests-v015             feat/crafting-machines-v017             feat/outpost-kevin-khe             feat/remaining-quests-v016             fix/retroactive-lqa-cleanup             history-clean-source-temp             history-source-temp             qa/retro-v013             qa/retro-v0132             qa/retro-v0133             qa/v0.7-retro-20260920             v0.2-tarim             work/v0.6-craftsmanship             work/v0.7-warcraft             work/v0.8-madness             work/v0.8-madness-clean             work/v0.9-quests             work/v0.10-science             work/v0.11-outpost-booze             work/v0.13-outpost-shops             work/v0.14-outpost-kevin-khe
+          do
+            git push origin --delete "$branch" || true
+          done
