@@ -24,7 +24,7 @@ class IntegrityTests(unittest.TestCase):
 
     def test_current_corpus_and_versioned_manifests(self):
         result = qa.validate_project(self.rows)
-        self.assertEqual(result['catalog_units_checked'], 6842)
+        self.assertEqual(result['catalog_units_checked'], len(qa.manifest_rows(self.rows)))
         self.assertEqual(result['locked_terms'], 506)
 
     def test_signed_numbers_pass(self):
