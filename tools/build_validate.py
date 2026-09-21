@@ -1859,6 +1859,97 @@ def main():
         if any(x in r['tr'] for x in BAD_TR_PATTERNS):raise ValueError('Bilinen Türkçe LQA hatası: '+a+p)
         if 'kraliçe arı' in r['tr'].casefold():raise ValueError('Kilitli arıcılık terimi ihlali (Ana Arı): '+a+p)
         if LOWERCASE_MECH.search(r['tr']):raise ValueError('Kilitli Mech yazımı ihlali (Mech büyük harfle): '+a+p)
+        if p=='/shortdescription' and re.search(r'\bGreaves\b', r['en']) and not re.search(r'Baldırl(?:ık|ığı)(?: Mk\. 2)?        if a=='objects/crafting/pethealingstation/pethealingstationauto.object' and p=='/subtitle' and r['tr']!='Yaralı evcil hayvanlar için':raise ValueError('Pet Healing Station kaynak-anlam düzeltmesi korunmalı: '+a+p)
+        if a=='interface/windowconfig/beerefuge.config' and p=='/paneLayout/btnCraft/caption' and r['tr']!='Takas Et':raise ValueError('Arı Barınağı karma eylem etiketi Takas Et olmalı: '+a+p)
+        if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
+            if not r.get('qa',{}).get('allow_color_fix'):raise ValueError('Renk kodu uyuşmazlığı: '+a+p)
+            colorfix+=1
+        if Counter(CONTROL.findall(r['en']))!=Counter(CONTROL.findall(r['tr'])):
+            if not r.get('qa',{}).get('allow_control_fix'):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
+        if Counter(PRINTF.findall(r['en']))!=Counter(PRINTF.findall(r['tr'])):
+            raise ValueError('Printf yer tutucusu uyuşmazlığı: '+a+p)
+        if Counter(BRACE_PLACEHOLDER.findall(r['en']))!=Counter(BRACE_PLACEHOLDER.findall(r['tr'])):
+            raise ValueError('Süslü parantez yer tutucusu uyuşmazlığı: '+a+p)
+        if Counter(DOLLAR_PLACEHOLDER.findall(r['en']))!=Counter(DOLLAR_PLACEHOLDER.findall(r['tr'])):
+            raise ValueError('Değişken yer tutucusu uyuşmazlığı: '+a+p)
+        if r['en'].count('\n')!=r['tr'].count('\n'):
+            raise ValueError('Satır sonu uyuşmazlığı: '+a+p)
+        if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
+        groups[a].append(r)
+
+    patches={}
+    for a,rs in sorted(groups.items()):
+        patch=[{'op':'test','path':r['pointer'],'value':r['en']} for r in rs]
+        patch += [{'op':'replace','path':r['pointer'],'value':r['tr']} for r in rs]
+        fixture={'__qa_sentinel__':{'id':'unchanged_internal_id','cost':12345,'script':'/unchanged.lua'}}
+        for r in rs:seed(fixture,r['pointer'],r['en'])
+        result=simulate(fixture,patch)
+        for r in rs:
+            if read_at(result,r['pointer'])!=r['tr']:raise AssertionError(a+r['pointer'])
+        if args.source_dir:
+            source=args.source_dir/a
+            if source.is_file():
+                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            elif all(r.get('qa',{}).get('layered_source') for r in rs):
+                # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
+                # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
+                pass
+            else:
+                raise FileNotFoundError(source)
+        patches[a]=patch
+
+    # Lua gibi JSON Patch uygulanamayan görünür metinler için kaynak-kilitli ham override.
+    raw_assets={};raw_string_count=0
+    raw_manifest_path=Path(__file__).with_name('raw_text_translations.json')
+    if raw_manifest_path.is_file():
+        raw_manifest=json.loads(raw_manifest_path.read_text(encoding='utf-8'))
+        for spec in raw_manifest.get('assets',[]):
+            a=spec['asset']
+            if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:raise ValueError('Güvensiz ham asset yolu: '+a)
+            replacements=spec.get('replacements',[])
+            if args.source_dir:
+                source=args.source_dir/a
+                if not source.is_file():raise FileNotFoundError(source)
+                content=source.read_text(encoding='utf-8-sig')
+                for r in replacements:
+                    expected=int(r.get('expected_count',1))
+                    if content.count(r['old'])!=expected:raise ValueError('Ham kaynak uyuşmazlığı: '+a+' | '+r.get('display_en',r['old']))
+                    content=content.replace(r['old'],r['new'])
+                    raw_string_count+=expected
+            else:
+                template=Path(__file__).parent/'raw_overrides'/a
+                if not template.is_file():raise FileNotFoundError(template)
+                content=template.read_text(encoding='utf-8-sig')
+                for r in replacements:
+                    expected=int(r.get('expected_count',1))
+                    if content.count(r['old'])!=0 or content.count(r['new'])!=expected:raise ValueError('Ham override doğrulaması başarısız: '+a+' | '+r.get('display_tr',r['new']))
+                    raw_string_count+=expected
+            raw_assets[a]=content
+
+    args.output.mkdir(parents=True)
+    mod=args.output/'FU_Turkce';mod.mkdir()
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe (Beta)',
+      'author':'FU Türkçe',
+      'version':ledger['translation_version'],
+      'description':"Frackin' Universe için devam eden Türkçe yerelleştirme. Araştırma, görevler, üretim, temel makineler, işlevsel nesneler ve geniş ekipman kapsamını içerir.",
+      'requires':['FrackinUniverse'],'priority':9000}
+    (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    for a,p in patches.items():
+        d=mod/(a+'.patch');d.parent.mkdir(parents=True,exist_ok=True)
+        d.write_text(json.dumps(p,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    for a,content in raw_assets.items():
+        d=mod/a;d.parent.mkdir(parents=True,exist_ok=True)
+        d.write_text(content,encoding='utf-8')
+    print(json.dumps({'fields':len(rows),'patch_assets':len(patches),'raw_assets':len(raw_assets),'assets':len(patches)+len(raw_assets),'raw_strings':raw_string_count,'color_fixes':colorfix,'static_qa':'PASS','in_game_lqa':'NOT TESTED'},ensure_ascii=False))
+    return 0
+
+if __name__=='__main__':
+    try:raise SystemExit(main())
+    except (ValueError,KeyError,TypeError,IndexError,OSError) as exc:
+        print('ERROR: '+str(exc),file=sys.stderr);raise SystemExit(1)
+, r['tr']):raise ValueError('Kilitli Greaves -> Baldırlık terminolojisi ihlali: '+a+p)
+        if a=='items/armors/biome/garden/quiver/air/airback.back' and p=='/shortdescription' and r['tr']!='Beceri Sadağı':raise ValueError('Kilitli Skill Quiver -> Beceri Sadağı terminolojisi ihlali: '+a+p)
+        if a=='items/active/weapons/ranged/unique/science/irradiator/isn_irradiator.activeitem' and p=='/shortdescription' and r['tr']!='Radyasyon Yayıcı':raise ValueError('Kilitli Irradiator -> Radyasyon Yayıcı terminolojisi ihlali: '+a+p)
         if a=='objects/crafting/pethealingstation/pethealingstationauto.object' and p=='/subtitle' and r['tr']!='Yaralı evcil hayvanlar için':raise ValueError('Pet Healing Station kaynak-anlam düzeltmesi korunmalı: '+a+p)
         if a=='interface/windowconfig/beerefuge.config' and p=='/paneLayout/btnCraft/caption' and r['tr']!='Takas Et':raise ValueError('Arı Barınağı karma eylem etiketi Takas Et olmalı: '+a+p)
         if Counter(COLOR.findall(r['en']))!=Counter(COLOR.findall(r['tr'])):
