@@ -140,7 +140,7 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertNotIn("/paneLayout/windowtitle/subtitle", by_pointer)
         self.assertEqual(by_pointer["/paneLayout/btnCraft/caption"].value, "Craft")
 
-        rows = list(audit.candidates_from_data("interface/windowconfig/tomedais.config", data))
+        rows = list(audit.candidates_from_data("interface/windowconfig/unreviewed.config", data))
         by_pointer = {row.pointer: row for row in rows}
         self.assertIn("/paneLayout/windowtitle/title", by_pointer)
         self.assertIn("/paneLayout/windowtitle/subtitle", by_pointer)
@@ -192,6 +192,76 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertFalse(audit.audit_excluded_candidate(
             "interface/scripted/spaceStation/spaceStation.config",
             "/gui/goodsTradeList/children/itemList/schema/listTemplate/buyButton/caption",
+        ))
+
+    def test_final_ui_runtime_sources_and_templates(self):
+        self.assertIn("metagui/panes/fu/example.ui", audit.AUDIT_EXCLUDED_PATHS)
+
+        self.assertTrue(audit.audit_excluded_candidate(
+            "interface/kukagps/kukagps.config",
+            "/gui/materialList/children/materials/schema/listTemplate/text/value",
+        ))
+        self.assertTrue(audit.audit_excluded_candidate(
+            "interface/shipnameplate/fu_shipnameplate.config",
+            "/gui/lblDate/value",
+        ))
+        self.assertTrue(audit.audit_excluded_candidate(
+            "interface/shipnameplate/fu_shipnameplate.config",
+            "/gui/lblType/value",
+        ))
+        self.assertTrue(audit.audit_excluded_candidate(
+            "interface/windowconfig/charcreation.config",
+            "/paneLayout/labelPortrait/value",
+        ))
+
+        self.assertEqual(
+            audit.visible_confidence(
+                "interface/shipnameplate/fu_shipnameplate.config",
+                ["shipTypes", "0"],
+                "Cruiser",
+            ),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(
+                "metagui/themes/frackin/theme.json",
+                ["name"],
+                "Frackin' Classic",
+            ),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(
+                "metagui/themes/frackin/v2/theme.json",
+                ["name"],
+                "Frackin' Standard",
+            ),
+            "confirmed",
+        )
+
+        data = {
+            "titleFromEntity": True,
+            "paneLayout": {
+                "windowtitle": {
+                    "title": "TOME DAIS",
+                    "subtitle": "Write genius works.",
+                },
+                "btnCraft": {"caption": "Write"},
+            },
+        }
+        rows = list(audit.candidates_from_data("interface/windowconfig/tomedais.config", data))
+        by_pointer = {row.pointer: row for row in rows}
+        self.assertNotIn("/paneLayout/windowtitle/title", by_pointer)
+        self.assertNotIn("/paneLayout/windowtitle/subtitle", by_pointer)
+        self.assertEqual(by_pointer["/paneLayout/btnCraft/caption"].value, "Write")
+
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/shipnameplate/fu_shipnameplate.config",
+            "/gui/lblName/value",
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/windowconfig/charcreation.config",
+            "/paneLayout/labelSpeciesRadio/value",
         ))
 
     def test_team_bar_template_name_is_excluded(self):
