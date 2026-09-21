@@ -30,6 +30,7 @@ V018_DEAD_OBJECT_ASSETS = load_rule('V018_DEAD_OBJECT_ASSETS')
 AUDIT_TECHNICAL_CATEGORY_VALUES = load_rule('AUDIT_TECHNICAL_CATEGORY_VALUES')
 AUDIT_EXCLUDED_PATHS = load_rule('AUDIT_EXCLUDED_PATHS')
 AUDIT_EXCLUDED_FIELDS = load_rule('AUDIT_EXCLUDED_FIELDS')
+AUDIT_VISIBLE_CONTAINER_KEYS = load_rule('AUDIT_VISIBLE_CONTAINER_KEYS')
 AUDIT_PATCH_APPEND_INDEXES = load_rule('AUDIT_PATCH_APPEND_INDEXES')
 
 BINARY_SUFFIXES = {
@@ -204,6 +205,9 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
         return None
     key = parts[-1].lower() if parts else ""
     ancestors = {part.lower() for part in parts[:-1]}
+    visible_container_keys = AUDIT_VISIBLE_CONTAINER_KEYS.get(asset, {})
+    if parts and key in {str(item).lower() for item in visible_container_keys.get(parts[0], [])}:
+        return "confirmed"
     if (key == "value" and len(parts) >= 2 and str(parts[-2]).lower() == "path"
             and "/" in value and re.fullmatch(r"[A-Za-z0-9_./-]+", value.strip())):
         return None
