@@ -34,7 +34,7 @@ class V036Tests(unittest.TestCase):
         self.assertIn("/gui/lblName/value", pointers)
         self.assertIn("/gui/label2/value", pointers)
         self.assertIn("/gui/tboxName/hint", pointers)
-        self.assertEqual(sum(bool(re.fullmatch(r"/shipTypes/\\d+", p)) for p in pointers), 30)
+        self.assertEqual(sum(bool(re.fullmatch(r"/shipTypes/\d+", p)) for p in pointers), 30)
         self.assertNotIn("/gui/lblType/value", pointers)
         self.assertNotIn("/gui/lblDate/value", pointers)
         self.assertFalse(any("/callback" in p or "/file" in p or "/scripts" in p for p in pointers))
