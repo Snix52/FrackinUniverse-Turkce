@@ -40,6 +40,18 @@ class V039Tests(unittest.TestCase):
         self.assertEqual(by["^yellow;Pus"], "^yellow;İrin")
         self.assertEqual(by["^#3F2E4D;Shadow Taint"], "^#3F2E4D;Gölge Lekesi")
 
+    def test_research_menu_context_is_explicit(self):
+        locked = json.loads((TOOLS / "locked_terms.json").read_text(encoding="utf-8"))
+        matches = [
+            x for x in locked.get("context_exceptions", [])
+            if x.get("asset") == ASSET
+            and x.get("pointer") == "/gui/expandButton1Label/value"
+        ]
+        self.assertEqual(len(matches), 1)
+        self.assertEqual(matches[0]["en"], "Research")
+        self.assertEqual(matches[0]["tr"], "Araştırma")
+        self.assertTrue(matches[0]["reason"].strip())
+
     def test_runtime_racial_strings_are_translated(self):
         raw = json.loads((TOOLS / "raw_text_translations.json").read_text(encoding="utf-8"))
         spec = next(x for x in raw["assets"] if x["asset"] == LUA_ASSET)
