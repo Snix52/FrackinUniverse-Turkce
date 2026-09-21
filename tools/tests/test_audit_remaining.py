@@ -43,6 +43,16 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertFalse(audit.audit_excluded_candidate(asset, "/gui/windowtitle/title"))
         self.assertFalse(audit.audit_excluded_candidate(asset, "/displayOres/copper/displayName"))
 
+    def test_matmod_runtime_names_are_visible_without_global_name_rule(self):
+        asset = "interface/scripted/fu_matmodplacer/fu_matmodplacer.config"
+        self.assertEqual(
+            audit.visible_confidence(asset, ["matMods", "0", "name"], "Weather Protection"),
+            "confirmed",
+        )
+        self.assertIsNone(audit.visible_confidence(
+            "interface/other.config", ["matMods", "0", "name"], "Weather Protection"
+        ))
+
     def test_dead_research_ids_follow_build_policy(self):
         self.assertTrue(audit.nonvisible_research_candidate(
             "zb/researchTree/fu_geology.config", "/strings/research/default/0"
