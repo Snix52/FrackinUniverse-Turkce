@@ -1,0 +1,630 @@
+{
+  "schema_version": 1,
+  "translation_version": "0.31.0-beta",
+  "scope": "SAIL, ana gemi arayüzü, BYOS gemi seçimi ve MetaGUI ayar ekranı",
+  "translations": [
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/GUI/title",
+      "en": "S.A.I.L",
+      "tr": "S.A.I.L",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/GUI/subtitle",
+      "en": "Ship-based Artificial Intelligence Lattice",
+      "tr": "Gemi Tabanlı Yapay Zekâ Ağı",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/0/1",
+      "en": "^#e43774;[FR]^reset; Player Bonuses (%%status.statusProperty(\"fr_enabled\")%%)",
+      "tr": "^#e43774;[FR]^reset; Oyuncu Bonusları (%%status.statusProperty(\"fr_enabled\")%%)",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/1/1",
+      "en": "^cyan;[FU]^reset; BYOS Atmosphere (%%world.getProperty(\"fu_byos.newAtmosphereSystem\")%%)",
+      "tr": "^cyan;[FU]^reset; BYOS Atmosferi (%%world.getProperty(\"fu_byos.newAtmosphereSystem\")%%)",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/2/1",
+      "en": "^cyan;[FU]^reset; Configure Ship Pet",
+      "tr": "^cyan;[FU]^reset; Gemi Evcil Hayvanını Ayarla",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/3/1",
+      "en": "^cyan;[FU]^reset; Toggle Shipwide Grabber",
+      "tr": "^cyan;[FU]^reset; Gemi Geneli Toplayıcıyı Aç/Kapat",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/4/1",
+      "en": "^cyan;[FU]^reset; Character Status",
+      "tr": "^cyan;[FU]^reset; Karakter Durumu",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/5/1",
+      "en": "^orange;[ZB]^reset; Update Window",
+      "tr": "^orange;[ZB]^reset; Güncelleme Penceresi",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/6/1",
+      "en": "^orange;[ZB]^reset; Quest List",
+      "tr": "^orange;[ZB]^reset; Görev Listesi",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/7/1",
+      "en": "^orange;[ZB]^reset; Research Tree",
+      "tr": "^orange;[ZB]^reset; Araştırma Ağacı",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/8/1",
+      "en": "^orange;[ZB]^reset; Queue Research Recheck",
+      "tr": "^orange;[ZB]^reset; Araştırmayı Yeniden Kontrol Et",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/9/1",
+      "en": "^orange;[ZB]^reset; Custom SAIL Info",
+      "tr": "^orange;[ZB]^reset; Özel SAIL Bilgisi",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/misc/10/1",
+      "en": "Vanilla SAIL",
+      "tr": "Vanilla SAIL",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Data/miscAdmin/0/1",
+      "en": "[Admin] Clear Statuses",
+      "tr": "[Admin] Durumları Temizle",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/noMissionsSpeech/text",
+      "en": "No mission co-ordinates currently available.",
+      "tr": "Şu anda kullanılabilir görev koordinatı yok.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/noCrewSpeech/text",
+      "en": "You are the only registered crew member of this ship.\n\nRecruiting additional crew members may allow for increased operational efficiency.",
+      "tr": "Bu geminin kayıtlı tek mürettebat üyesi sensin.\n\nYeni mürettebat üyeleri almak operasyonel verimliliği artırabilir.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/noStoredCrewSpeech/text",
+      "en": "There are currently no inactive crew members.\n\nCrew members become inactive if the the number of active crew exceeds the number of crew your ship can support.",
+      "tr": "Şu anda etkin olmayan mürettebat üyesi yok.\n\nEtkin mürettebat sayısı geminin destekleyebileceği sınırı aşarsa fazla üyeler etkin olmayan duruma geçer.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/shipStatus/0/text",
+      "en": "Zzz... Zzz... Zzz...",
+      "tr": "Zzz... Zzz... Zzz...",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/shipStatus/1/text",
+      "en": "> Ship thrusters are currently offline.\n> Ship teleportation system functioning correctly.\n> ^green;Currently only the planet below is accessible.",
+      "tr": "> Gemi iticileri şu anda devre dışı.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Şu anda yalnızca aşağıdaki gezegene erişilebilir.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/shipStatus/2/text",
+      "en": "> Ship thrusters are online.\n> Ship teleportation system functioning correctly.\n> ^green;Planets within this star system are accessible.",
+      "tr": "> Gemi iticileri çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Bu yıldız sistemindeki gezegenlere erişilebilir.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/Speech/shipStatus/3/text",
+      "en": "> Ship thrusters are online.\n> FTL drive is online.\n> Ship teleportation system functioning correctly.\n> ^green;The entire universe is accessible.",
+      "tr": "> Gemi iticileri çevrim içi.\n> FTL motoru çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Artık tüm evrene erişilebilir.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/error",
+      "en": "An error has occured. Please report this on the Steam page or Discord server with a log attached. ^green;If the error message below is green, you should pay attention to it.^reset;\n\nMeanwhile, you can click any of the buttons to open the vanilla version of SAIL.",
+      "tr": "Bir hata oluştu. Lütfen log dosyasını ekleyerek bunu Steam sayfasında veya Discord sunucusunda bildir. ^green;Aşağıdaki hata mesajı yeşilse ona dikkat etmelisin.^reset;\n\nBu sırada düğmelerden birine tıklayarak SAIL'in vanilla sürümünü açabilirsin.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/buttonError",
+      "en": "^red;ERROR:^reset;\nNo button was pressed, but the function for it was called.\nPlease report how you achieved this on the Steam page or Discord server, and try clicking the button again.",
+      "tr": "^red;HATA:^reset;\nHiçbir düğmeye basılmadı ama düğmeye ait işlev çağrıldı.\nBunu nasıl tetiklediğini Steam sayfasında veya Discord sunucusunda bildirip düğmeye tekrar tıklamayı dene.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/promiseError",
+      "en": "customDataPromise failed - Incompatible or faulty SAIL object definition. Please contact the modder who made your current race about a fault in their techStation object definition.",
+      "tr": "customDataPromise başarısız oldu - Uyumsuz veya hatalı SAIL nesne tanımı. Mevcut ırkını hazırlayan mod geliştiricisine techStation nesne tanımındaki hatayı bildir.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/intro",
+      "en": "Welcome to S.A.I.L.\n\nUsing this interface you can check the ship's status, view your currency ^green;[BALANCE]^reset;, begin ^green;[MISSIONS]^reset;, manage your ^green;[CREW]^reset;, and access other useful ^green;[MISC]^reset; features.",
+      "tr": "S.A.I.L'e hoş geldin.\n\nBu arayüzden geminin durumunu kontrol edebilir, ^green;[BAKİYE]^reset; bölümünde para birimlerini görebilir, ^green;[GÖREVLER]^reset; başlatabilir, ^green;[MÜRETTEBAT]^reset; yönetebilir ve ^green;[DİĞER]^reset; özelliklere erişebilirsin.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/noCustomAIMod",
+      "en": "^red;ERROR:^reset;\nMissing the '^green;Scripted Artificial Intelligence Lattice^reset;' mod.\nPlease install it if you wish to use this feature.",
+      "tr": "^red;HATA:^reset;\n'^green;Scripted Artificial Intelligence Lattice^reset;' modu eksik.\nBu özelliği kullanmak istiyorsan modu yükle.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/customAI",
+      "en": "Insert A.I. chips in the slots below to customize the A.I.\nClick the '^green;CRAFT^reset;' button to open the A.I. chip crafting menu.",
+      "tr": "Yapay zekâyı özelleştirmek için aşağıdaki yuvalara Yapay Zekâ Çipleri yerleştir.\nYapay Zekâ Çipi üretim menüsünü açmak için '^green;ÜRET^reset;' düğmesine tıkla.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/currencies/main",
+      "en": "Main",
+      "tr": "Ana",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/currencies/fu_tradegoods",
+      "en": "Trade Goods",
+      "tr": "Ticaret Malları",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/currencies/fu_research",
+      "en": "Research",
+      "tr": "Araştırma",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/currencies/unsorted",
+      "en": "Unsorted",
+      "tr": "Sınıflandırılmamış",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/buttonMain/caption",
+      "en": "BALANCE",
+      "tr": "BAKİYE",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/buttonMissions/caption",
+      "en": "MISSIONS",
+      "tr": "GÖREVLER",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/buttonCrew/caption",
+      "en": "CREW",
+      "tr": "MÜRETTEBAT",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/buttonMisc/caption",
+      "en": "MISC.",
+      "tr": "DİĞER",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/root/children/missionList/schema/listTemplate/replayLabel/value",
+      "en": "REPLAYS",
+      "tr": "TEKRARLAR",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/switchMissionMain/caption",
+      "en": "^white;PRIMARY^reset;",
+      "tr": "^white;ANA^reset;",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/switchMissionSecondary/caption",
+      "en": "^white;SECONDARY^reset;",
+      "tr": "^white;İKİNCİL^reset;",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/buttonScreenRight/caption",
+      "en": " GO! >",
+      "tr": " İLERİ >",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "zb/newSail/newSail.config",
+      "pointer": "/gui/buttonScreenLeft/caption",
+      "en": "< BACK",
+      "tr": "< GERİ",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/defaultRecruitName",
+      "en": "Cannon Fodder",
+      "tr": "Top Yemi",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/defaultRecruitDescription",
+      "en": "> No data.",
+      "tr": "> Veri yok.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/missionBreadcrumbText",
+      "en": "MISSION",
+      "tr": "GÖREV",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/missionDeployText",
+      "en": "DEPLOY",
+      "tr": "BAŞLAT",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/crewBreadcrumbText",
+      "en": "CREW",
+      "tr": "MÜRETTEBAT",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/windowtitle/title",
+      "en": "S.A.I.L.",
+      "tr": "S.A.I.L.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/windowtitle/subtitle",
+      "en": "Ship-based Artificial Intelligence Lattice",
+      "tr": "Gemi Tabanlı Yapay Zekâ Ağı",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/backButton/caption",
+      "en": "BACK",
+      "tr": "GERİ",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/showMissions/caption",
+      "en": "MISSIONS",
+      "tr": "GÖREVLER",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/showCrew/caption",
+      "en": "CREW",
+      "tr": "MÜRETTEBAT",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/homeBreadcrumb/value",
+      "en": "HOME",
+      "tr": "ANA",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/mainStack/stack/1/missionStack/stack/2/startMission/caption",
+      "en": "DEPLOY",
+      "tr": "BAŞLAT",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/ai.config",
+      "pointer": "/guiConfig/mainStack/stack/2/crewStack/stack/2/dismissRecruit/caption",
+      "en": "DISMISS",
+      "tr": "ÇIKAR",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/gui/windowTitle/value",
+      "en": "S.A.I.L",
+      "tr": "S.A.I.L",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/gui/windowSubtitle/value",
+      "en": "Ship-based Artificial Intelligence Lattice",
+      "tr": "Gemi Tabanlı Yapay Zekâ Ağı",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/gui/buttonBack/caption",
+      "en": "Back",
+      "tr": "Geri",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/gui/buttonByos/caption",
+      "en": "^white;Buildable^reset;",
+      "tr": "^white;İnşa Edilebilir^reset;",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/gui/buttonUpgradable/caption",
+      "en": "^white;Upgradable^reset;",
+      "tr": "^white;Yükseltilebilir^reset;",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/initial/text",
+      "en": "Ship has sustained major damage when escaping Earth. Please select which ship type you want:\n\nFrackin' Ship:\nBuild your ship block by block, choosing from a variety of presets. Requires installation of a new FTL Drive. See your tricorder quests for guidance.\n\nVanilla Ship:\nThe default Starbound ship for your race. Does not have access to some FU ship features.",
+      "tr": "Gemi, Dünya'dan kaçış sırasında ağır hasar aldı. Kullanmak istediğin gemi türünü seç:\n\nFrackin' Ship:\nGemini çeşitli hazır şablonlardan yararlanarak blok blok inşa et. Yeni bir FTL Motoru kurman gerekir. Yol gösterimi için Tricorder görevlerine bak.\n\nVanilla Gemi:\nIrkının varsayılan Starbound gemisi. FU'nun bazı gemi özelliklerine erişemez.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/initial/buttons/0/name",
+      "en": "Frackin' Ship",
+      "tr": "Frackin' Ship",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/initial/buttons/1/name",
+      "en": "Vanilla Ship",
+      "tr": "Vanilla Gemi",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/frackinShipChoice/buttons/0/name",
+      "en": "Select",
+      "tr": "Seç",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/frackinShipChoice/buttons/1/name",
+      "en": "Preview",
+      "tr": "Önizle",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/frackinShipPreview/buttons/0/name",
+      "en": "Select",
+      "tr": "Seç",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/frackinShipSelected/text",
+      "en": "The Frackin' Ship. Upgraded differently, get more space by building it yourself and improve its performance with better engines and boosters.\n\nCurrently Selected Ship: <shipName>\nCurrently Selected Ship Mode: <shipMode>",
+      "tr": "Frackin' Ship farklı şekilde yükseltilir. Gemiyi kendin inşa ederek daha fazla alan kazanabilir, daha iyi motorlar ve iticilerle performansını artırabilirsin.\n\nSeçili Gemi: <shipName>\nSeçili Gemi Modu: <shipMode>",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/frackinShipSelected/buttons/0/name",
+      "en": "Confirm",
+      "tr": "Onayla",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/vanillaShipSelected/text",
+      "en": "The regular vanilla ship. Upgraded normally by earning or buying the ship licenses. This ship type won't have access to some of the features the Frackin' Ship will have access to, like boosters.",
+      "tr": "Standart vanilla gemi, gemi lisansları kazanılarak veya satın alınarak normal şekilde yükseltilir. Bu gemi türü, güçlendiriciler gibi Frackin' Ship'e özgü bazı özelliklere erişemez.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/vanillaShipSelected/buttons/0/name",
+      "en": "Confirm",
+      "tr": "Onayla",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/shipChosen/text",
+      "en": "Constructing ship, please wait.",
+      "tr": "Gemi inşa ediliyor, lütfen bekle.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/skipRepairs/text",
+      "en": "Only skip repairs if the ship isn't currently damaged.",
+      "tr": "Gemide şu anda hasar yoksa onarımı atla.",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/states/skipRepairs/buttons/0/name",
+      "en": "Confirm",
+      "tr": "Onayla",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/repairShip/title",
+      "en": "Repair Ship",
+      "tr": "Gemiyi Onar",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/repairShip/subtitle",
+      "en": "Repair your ship",
+      "tr": "Gemini onar",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/repairShip/message",
+      "en": "This will re-create your ship. Only do this if your ship was been reset. Are you sure you want to do this?",
+      "tr": "Bu işlem gemini yeniden oluşturacak. Yalnızca gemin sıfırlandıysa kullan. Devam etmek istediğine emin misin?",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/repairShip/okCaption",
+      "en": "Okay",
+      "tr": "Tamam",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/repairShip/cancelCaption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/skipRepairs/title",
+      "en": "Skip Repairs",
+      "tr": "Onarımı Atla",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/skipRepairs/subtitle",
+      "en": "Skip repairing your ship",
+      "tr": "Gemi onarımını atla",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/skipRepairs/message",
+      "en": "This will set your ship as repaired. Only do this if your ship hasn't been reset. Are you sure you want to do this?",
+      "tr": "Bu işlem gemini onarılmış olarak işaretleyecek. Yalnızca gemin sıfırlanmadıysa kullan. Devam etmek istediğine emin misin?",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/skipRepairs/okCaption",
+      "en": "Okay",
+      "tr": "Tamam",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/shipResetConfirmationDialogs/skipRepairs/cancelCaption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/backgroundPresentConfirmation/title",
+      "en": "Repair Ship",
+      "tr": "Gemiyi Onar",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/backgroundPresentConfirmation/subtitle",
+      "en": "Repair your ship",
+      "tr": "Gemini onar",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/backgroundPresentConfirmation/message",
+      "en": "The normal background image has been detected. This background image will be rendered permanently on your Frackin' Ship. If you do not have the Frackin' Ship modded race support patch, you should grab it from: https://steamcommunity.com/sharedfiles/filedetails/?id=1194878261 and create a new character.",
+      "tr": "Normal arka plan görseli algılandı. Bu görsel Frackin' Ship'inde kalıcı olarak gösterilecek. Frackin' Ship modlu ırk destek yamasını kullanmıyorsan şu adresten edinip yeni bir karakter oluşturmalısın: https://steamcommunity.com/sharedfiles/filedetails/?id=1194878261",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/backgroundPresentConfirmation/okCaption",
+      "en": "Okay",
+      "tr": "Tamam",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "interface/ai/fu_byosai.config",
+      "pointer": "/backgroundPresentConfirmation/cancelCaption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "fu_metagui/settings/settings.ui",
+      "pointer": "/title",
+      "en": "Settings",
+      "tr": "Ayarlar",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "fu_metagui/settings/settings.ui",
+      "pointer": "/children/0/bottomBar/1/caption",
+      "en": "Apply",
+      "tr": "Uygula",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    },
+    {
+      "asset": "fu_metagui/settings/settings.ui",
+      "pointer": "/children/0/bottomBar/2/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.31 SAIL ve gemi arayüzü"
+    }
+  ]
+}
