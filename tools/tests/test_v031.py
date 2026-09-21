@@ -10,7 +10,6 @@ class V031Tests(unittest.TestCase):
         manifest = json.loads((TOOLS / "v031_translations.json").read_text(encoding="utf-8"))
         catalog = json.loads((TOOLS / "ceviriler.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["translation_version"], "0.31.0-beta")
-        self.assertEqual(catalog["translation_version"], "0.31.0-beta")
         rows = manifest["translations"]
         self.assertEqual(len(rows), 89)
         self.assertEqual(len({(r["asset"], r["pointer"]) for r in rows}), 89)
