@@ -26,6 +26,9 @@ from rule_data import rule as load_rule
 
 PINNED_COMMIT = json.loads(Path(__file__).with_name('kaynaklar.json').read_text(encoding='utf-8'))['commit']
 NONVISIBLE_RESEARCH_IDS = load_rule('NONVISIBLE_RESEARCH_IDS')
+V018_DEAD_OBJECT_ASSETS = load_rule('V018_DEAD_OBJECT_ASSETS')
+AUDIT_TECHNICAL_CATEGORY_VALUES = load_rule('AUDIT_TECHNICAL_CATEGORY_VALUES')
+AUDIT_EXCLUDED_PATHS = load_rule('AUDIT_EXCLUDED_PATHS')
 
 BINARY_SUFFIXES = {
     ".png", ".jpg", ".jpeg", ".gif", ".ogg", ".wav", ".ase", ".aseprite",
@@ -206,10 +209,18 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
         # Tiled editörünün açıklama/metaveri alanları; oyunda gösterilmez.
         return None
     if key == "category":
+        if value.strip() in AUDIT_TECHNICAL_CATEGORY_VALUES:
+            return None
         return "confirmed" if PurePosixPath(asset).suffix.lower() in CATEGORY_VISIBLE_SUFFIXES else None
     if key in TECHNICAL_KEYS:
         return None
     if looks_like_resource(value):
+        return None
+    if key == "tooltip" and value.strip() == "base":
+        return None
+    if value.strip() == "Replace Me":
+        return None
+    if value.strip() == "Lvl. 100" and "listtemplate" in ancestors:
         return None
     if key in EXPLICIT_VISIBLE_KEYS:
         return "confirmed"
@@ -234,6 +245,9 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
 
 def category_for(asset: str) -> str:
     path = asset.lower()
+    suffix = PurePosixPath(path).suffix.lower()
+    if suffix in {".item", ".matitem", ".consumable", ".augment", ".thrownitem", ".liqitem", ".blueprint"}:
+        return "Malzeme, tüketilebilir ve diğer eşyalar"
     if path.startswith(("zb/", "research/")):
         return "Araştırma ve görev arayüzü"
     if path.startswith("quests/"):
@@ -456,6 +470,8 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             continue
         parsed_files += 1
         for candidate in candidates_from_data(rel.as_posix(), data):
+            if candidate.asset in V018_DEAD_OBJECT_ASSETS or candidate.asset in AUDIT_EXCLUDED_PATHS:
+                continue
             if nonvisible_research_candidate(candidate.asset, candidate.pointer):
                 continue
             key = (candidate.asset, candidate.pointer)
