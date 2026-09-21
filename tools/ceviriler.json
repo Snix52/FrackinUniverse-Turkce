@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.36.0-beta",
+  "translation_version": "0.37.0-beta",
   "note": "v0.30 aktif araştırma ekipmanı kapanışı: erken kalkanlar ve yan dallar, Kirhos/Lunari/Elduu/Skath/Vel'uuish silahları, EPP sırt ekipmanları ile Kademe 6-7 düğümlerindeki gerçek tarif destekli 413 assetin 826 görünür alanı yerelleştirildi. Toplam 6016 structured + 15 Lua, 2086 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
@@ -50622,6 +50622,251 @@
       "en": "Recon",
       "tr": "Keşif Gemisi",
       "section": "v0.36 gemi isim plakası arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/filterSlotLabel/value",
+      "en": "Filtered Items:",
+      "tr": "Filtrelenen Eşyalar:",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/helpLabel/value",
+      "en": "^yellow;Help Mode^reset;:",
+      "tr": "^yellow;Yardım Modu^reset;:",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/inputSlotLabel/value",
+      "en": "Input Slots:",
+      "tr": "Giriş Yuvaları:",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/invInputSlot/caption",
+      "en": "I",
+      "tr": "T",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/invOutputSlot/caption",
+      "en": "I",
+      "tr": "T",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item1ButtonInvert/caption",
+      "en": "Inv. Logic",
+      "tr": "Ters Mantık",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item1Label/value",
+      "en": "Item 1",
+      "tr": "Eşya 1",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item1LabelCategory/value",
+      "en": "Category",
+      "tr": "Kategori",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item1LabelExact/value",
+      "en": "Exact",
+      "tr": "Tam",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item1LabelType/value",
+      "en": "Type",
+      "tr": "Tür",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item2ButtonInvert/caption",
+      "en": "Inv. Logic",
+      "tr": "Ters Mantık",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item2Label/value",
+      "en": "Item 2",
+      "tr": "Eşya 2",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item2LabelCategory/value",
+      "en": "Category",
+      "tr": "Kategori",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item2LabelExact/value",
+      "en": "Exact",
+      "tr": "Tam",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item2LabelType/value",
+      "en": "Type",
+      "tr": "Tür",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item3ButtonInvert/caption",
+      "en": "Inv. Logic",
+      "tr": "Ters Mantık",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item3Label/value",
+      "en": "Item 3",
+      "tr": "Eşya 3",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item3LabelCategory/value",
+      "en": "Category",
+      "tr": "Kategori",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item3LabelExact/value",
+      "en": "Exact",
+      "tr": "Tam",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item3LabelType/value",
+      "en": "Type",
+      "tr": "Tür",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item4ButtonInvert/caption",
+      "en": "Inv. Logic",
+      "tr": "Ters Mantık",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item4Label/value",
+      "en": "Item 4",
+      "tr": "Eşya 4",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item4LabelCategory/value",
+      "en": "Category",
+      "tr": "Kategori",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item4LabelExact/value",
+      "en": "Exact",
+      "tr": "Tam",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item4LabelType/value",
+      "en": "Type",
+      "tr": "Tür",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item5ButtonInvert/caption",
+      "en": "Inv. Logic",
+      "tr": "Ters Mantık",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item5Label/value",
+      "en": "Item 5",
+      "tr": "Eşya 5",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item5LabelCategory/value",
+      "en": "Category",
+      "tr": "Kategori",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item5LabelExact/value",
+      "en": "Exact",
+      "tr": "Tam",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/item5LabelType/value",
+      "en": "Type",
+      "tr": "Tür",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/leaveOneItemMode/caption",
+      "en": "Leave One",
+      "tr": "1 Bırak",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/onlyStackMode/caption",
+      "en": "Stack Only",
+      "tr": "Yığına Ekle",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/outputSlotLabel/value",
+      "en": "Output Slots:",
+      "tr": "Çıkış Yuvaları:",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/roundRobinMode/caption",
+      "en": "Even Split",
+      "tr": "Eşit Böl",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.config",
+      "pointer": "/gui/roundRobinSlotMode/caption",
+      "en": "Slot Split",
+      "tr": "Yuvaya Böl",
+      "section": "v0.37 KheAA yönlendirici arayüzü"
     }
   ]
 }

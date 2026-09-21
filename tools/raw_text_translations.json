@@ -112,6 +112,152 @@
           "new": "widget.setText(\"researchButton\", \"Araştır\")"
         }
       ]
+    },
+    {
+      "asset": "interface/kheAA/kheAA_router/kheAA_routerGui.lua",
+      "source_blob_sha": "9d28e7c26a463f3222333c65a00918c5a27ab1f9",
+      "replacements": [
+        {
+          "old": "local filterFunctionsLabelDefault = \"Functions: ^yellow;Use these to help divide outputs for automation.^reset;\"",
+          "display_en": "Functions: Use these to help divide outputs for automation.",
+          "display_tr": "İşlevler: Otomasyonda çıktıları bölmek için bunları kullan.",
+          "expected_count": 1,
+          "new": "local filterFunctionsLabelDefault = \"İşlevler: ^yellow;Otomasyonda çıktıları bölmek için bunları kullan.^reset;\""
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Left '^green;+^reset;': adds an item from the input slot filter list.\")",
+          "display_en": "Left '+': adds an item from the input slot filter list.",
+          "display_tr": "Sol '+': giriş yuvası filtre listesine bir eşya ekler.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Sol '^green;+^reset;': giriş yuvası filtre listesine bir eşya ekler.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"This is the list for the source.\")",
+          "display_en": "This is the list for the source.",
+          "display_tr": "Bu, kaynak listesidir.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"Bu, kaynak listesidir.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Right '^green;+^reset;': adds an item from the output slot filter list.\")",
+          "display_en": "Right '+': adds an item from the output slot filter list.",
+          "display_tr": "Sağ '+': çıkış yuvası filtre listesine bir eşya ekler.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Sağ '^green;+^reset;': çıkış yuvası filtre listesine bir eşya ekler.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"This is the list for the destination.\")",
+          "display_en": "This is the list for the destination.",
+          "display_tr": "Bu, hedef listesidir.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"Bu, hedef listesidir.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Left '^red;-^reset;': Removes an item from the intput slot filter list.\")",
+          "display_en": "Left '-': Removes an item from the intput slot filter list.",
+          "display_tr": "Sol '-': giriş yuvası filtre listesinden bir eşya kaldırır.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Sol '^red;-^reset;': giriş yuvası filtre listesinden bir eşya kaldırır.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Right '^red;-^reset;': Removes an item from the output slot filter list.\")",
+          "display_en": "Right '-': Removes an item from the output slot filter list.",
+          "display_tr": "Sağ '-': çıkış yuvası filtre listesinden bir eşya kaldırır.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Sağ '^red;-^reset;': çıkış yuvası filtre listesinden bir eşya kaldırır.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"'I' buttons: Inverts slot filter selection for a given side.\")",
+          "display_en": "'I' buttons: Inverts slot filter selection for a given side.",
+          "display_tr": "'T' düğmeleri: ilgili taraftaki yuva filtresi seçimini tersine çevirir.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"'T' düğmeleri: ilgili taraftaki yuva filtresi seçimini tersine çevirir.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"^green;Click a button for information^reset;\")",
+          "display_en": "Click a button for information",
+          "display_tr": "Bilgi için bir düğmeye tıkla",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"^green;Bilgi için bir düğmeye tıkla^reset;\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Item Filters: select whether an item is: Matched Exactly,\")",
+          "display_en": "Item Filters: select whether an item is: Matched Exactly,",
+          "display_tr": "Eşya Filtreleri: eşleşme yöntemini seç: Tam,",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Eşya Filtreleri: eşleşme yöntemini seç: Tam,\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"Matched by Type (item category), matched by Category (groups of!)\")",
+          "display_en": "Matched by Type (item category), matched by Category (groups of!)",
+          "display_tr": "Tür (eşya kategorisi) veya Kategori (gruplar!)",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"Tür (eşya kategorisi) veya Kategori (gruplar!)\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Invert Logic: Slot is treated as an exception for pattern matching.\")",
+          "display_en": "Invert Logic: Slot is treated as an exception for pattern matching.",
+          "display_tr": "Ters Mantık: Yuva, kalıp eşleştirmesinde istisna sayılır.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Ters Mantık: Yuva, kalıp eşleştirmesinde istisna sayılır.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Even Split: splits stacks of an item evenly between containers.\")",
+          "display_en": "Even Split: splits stacks of an item evenly between containers.",
+          "display_tr": "Eşit Böl: eşya yığınlarını depolar arasında eşit dağıtır.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Eşit Böl: eşya yığınlarını depolar arasında eşit dağıtır.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"^orange;Only matches a single item^reset;\")",
+          "display_en": "Only matches a single item",
+          "display_tr": "Yalnızca tek bir eşya ile eşleşir",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"^orange;Yalnızca tek bir eşya ile eşleşir^reset;\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Slot Split: Splits a stack between slots in a container.\")",
+          "display_en": "Slot Split: Splits a stack between slots in a container.",
+          "display_tr": "Yuvaya Böl: Bir yığını aynı depodaki yuvalara böler.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Yuvaya Böl: Bir yığını aynı depodaki yuvalara böler.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"^orange;Mutually exclusive with Stack Only^reset;\")",
+          "display_en": "Mutually exclusive with Stack Only",
+          "display_tr": "Yığına Ekle ile birlikte kullanılamaz",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"^orange;Yığına Ekle ile birlikte kullanılamaz^reset;\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Leave One: Self-explanatory.\")",
+          "display_en": "Leave One: Self-explanatory.",
+          "display_tr": "1 Bırak: Açıklamaya gerek yok.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"1 Bırak: Açıklamaya gerek yok.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"^orange;Do you really need help with this?^reset;\")",
+          "display_en": "Do you really need help with this?",
+          "display_tr": "Bunun için gerçekten yardıma mı ihtiyacın var?",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"^orange;Bunun için gerçekten yardıma mı ihtiyacın var?^reset;\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel2\",\"Only Stack: Only attempts to add to already present stacks.\")",
+          "display_en": "Only Stack: Only attempts to add to already present stacks.",
+          "display_tr": "Yığına Ekle: Yalnızca mevcut yığınlara eklemeyi dener.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel2\",\"Yığına Ekle: Yalnızca mevcut yığınlara eklemeyi dener.\")"
+        },
+        {
+          "old": "widget.setText(\"filterFunctionsLabel\",\"^orange;Only matches a single item^reset;. ^orange;Mutually exclusive with Slot Split^reset;.\")",
+          "display_en": "Only matches a single item. Mutually exclusive with Slot Split.",
+          "display_tr": "Yalnızca tek bir eşya ile eşleşir. Yuvaya Böl ile birlikte kullanılamaz.",
+          "expected_count": 1,
+          "new": "widget.setText(\"filterFunctionsLabel\",\"^orange;Yalnızca tek bir eşya ile eşleşir^reset;. ^orange;Yuvaya Böl ile birlikte kullanılamaz^reset;.\")"
+        }
+      ]
     }
   ]
 }
