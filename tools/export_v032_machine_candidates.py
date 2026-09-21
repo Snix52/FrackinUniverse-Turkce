@@ -19,7 +19,15 @@ CATEGORY = "Makineler, üretim ve dükkân nesneleri"
 def collect(source: Path, catalog: Path) -> list[dict[str, str]]:
     translated, _ = load_translations(catalog)
     candidates: dict[tuple[str, str], Candidate] = {}
-    for path in sorted(source.rglob("*")):
+    roots = [
+        source / "bees/objects",
+        source / "objects/crafting",
+        source / "objects/power",
+        source / "objects/bees",
+        source / "objects/scienceoutpost",
+    ]
+    paths = sorted(path for root in roots if root.exists() for path in root.rglob("*"))
+    for path in paths:
         if not path.is_file():
             continue
         rel = PurePosixPath(path.relative_to(source).as_posix())
