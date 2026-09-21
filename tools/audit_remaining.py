@@ -32,6 +32,7 @@ AUDIT_EXCLUDED_PATHS = load_rule('AUDIT_EXCLUDED_PATHS')
 AUDIT_EXCLUDED_FIELDS = load_rule('AUDIT_EXCLUDED_FIELDS')
 AUDIT_VISIBLE_CONTAINER_KEYS = load_rule('AUDIT_VISIBLE_CONTAINER_KEYS')
 AUDIT_VISIBLE_PATH_PREFIXES = load_rule('AUDIT_VISIBLE_PATH_PREFIXES')
+AUDIT_TITLE_FROM_ENTITY_ASSETS = load_rule('AUDIT_TITLE_FROM_ENTITY_ASSETS')
 AUDIT_PATCH_APPEND_INDEXES = load_rule('AUDIT_PATCH_APPEND_INDEXES')
 
 BINARY_SUFFIXES = {
@@ -378,7 +379,7 @@ def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
         yield from walk_values(asset, data, [], source_path)
         return
     title_from_entity = (
-        source_path.startswith("interface/windowconfig/")
+        source_path in AUDIT_TITLE_FROM_ENTITY_ASSETS
         and isinstance(data, dict)
         and data.get("titleFromEntity") is True
     )
