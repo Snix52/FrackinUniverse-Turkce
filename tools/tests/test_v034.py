@@ -31,7 +31,7 @@ class V034Tests(unittest.TestCase):
             if row["en"] in seen:
                 self.assertEqual(seen[row["en"]], row["tr"])
             else:
-                seen[row["en"]] = row["tr"])
+                seen[row["en"]] = row["tr"]
 
 if __name__ == "__main__":
     unittest.main()
