@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.38.0-beta",
+  "translation_version": "0.39.0-beta",
   "note": "v0.30 aktif araştırma ekipmanı kapanışı: erken kalkanlar ve yan dallar, Kirhos/Lunari/Elduu/Skath/Vel'uuish silahları, EPP sırt ekipmanları ile Kademe 6-7 düğümlerindeki gerçek tarif destekli 413 assetin 826 görünür alanı yerelleştirildi. Toplam 6016 structured + 15 Lua, 2086 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
@@ -51021,6 +51021,405 @@
       "en": "Madness Resistance",
       "tr": "Delilik Direnci",
       "section": "v0.38 gelişmiş istatistikler arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton1Label/value",
+      "en": "Research",
+      "tr": "Araştırma",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton2Label/value",
+      "en": "GPS",
+      "tr": "GPS",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton3Label/value",
+      "en": "Codex",
+      "tr": "Codex",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton4Label/value",
+      "en": "Tech Equip",
+      "tr": "Tech Donanımı",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton5Label/value",
+      "en": "Tech Craft",
+      "tr": "Tech Üretimi",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton6Label/value",
+      "en": "Mech Gear",
+      "tr": "Mech Donanımı",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton7Label/value",
+      "en": "Mech Fuel",
+      "tr": "Mech Yakıtı",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton8Label/value",
+      "en": "Upgrade",
+      "tr": "Yükselt",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton9/caption",
+      "en": "Adv. Stats",
+      "tr": "Gelişmiş İstat.",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/immunitiesLabel/value",
+      "en": "Immunities",
+      "tr": "Bağışıklıklar",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/lblSubTitle/value",
+      "en": " ^#bbbbbb;Accesses Stats, Research, Mechs and more.",
+      "tr": " ^#bbbbbb;İstatistik, Araştırma, Mech ve daha fazlasına erişim.",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/lblTitle/value",
+      "en": " ^#00eaff;Personal Tricorder^reset;",
+      "tr": " ^#00eaff;Kişisel Tricorder^reset;",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/resistancesLabel/value",
+      "en": " ^#ffffff;Resistances^reset;",
+      "tr": " ^#ffffff;Dirençler^reset;",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/aetherImmunity/name",
+      "en": "^#E33FFF;Aether",
+      "tr": "^#E33FFF;Aether",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/beestingImmunity/name",
+      "en": "^#ffae00;Bee Sting",
+      "tr": "^#ffae00;Arı Sokması",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/biomecoldImmunity/name",
+      "en": "^#4BF3FD;Moderate Cold",
+      "tr": "^#4BF3FD;Orta Dereceli Soğuk",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/biomeelectricImmunity/name",
+      "en": "^#4BF3FD;Lightning",
+      "tr": "^#4BF3FD;Yıldırım",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/biomeheatImmunity/name",
+      "en": "^#FDBE4B;Moderate Heat",
+      "tr": "^#FDBE4B;Orta Dereceli Sıcaklık",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/biomeradiationImmunity/name",
+      "en": "^yellow;Moderate Radiation",
+      "tr": "^yellow;Orta Dereceli Radyasyon",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/biooozeImmunity/name",
+      "en": "^#78f04f;Bio-Ooze",
+      "tr": "^#78f04f;Biyo-Balçık",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/blacktarImmunity/name",
+      "en": "^#5B6177;Black Tar",
+      "tr": "^#5B6177;Kara Katran",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/breathProtection/name",
+      "en": "Breath",
+      "tr": "Oksijensizlik",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/darknessImmunity/name",
+      "en": "^#EA907E;Darkness",
+      "tr": "^#EA907E;Karanlık",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/electricStatusImmunity/name",
+      "en": "^#FFE149;Shock",
+      "tr": "^#FFE149;Elektrik Şoku",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/extremepressureProtection/name",
+      "en": "^gray;Pressure",
+      "tr": "^gray;Basınç",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/ffextremecoldImmunity/name",
+      "en": "^#4BF3FD;Extreme Cold",
+      "tr": "^#4BF3FD;Aşırı Soğuk",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/ffextremeheatImmunity/name",
+      "en": "^#FDBE4B;Extreme Heat",
+      "tr": "^#FDBE4B;Aşırı Sıcak",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/ffextremeradiationImmunity/name",
+      "en": "^yellow;Extreme Radiation",
+      "tr": "^yellow;Aşırı Radyasyon",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fireStatusImmunity/name",
+      "en": "^#FDBE4B;Burning",
+      "tr": "^#FDBE4B;Yanma",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fujungleslowImmunity/name",
+      "en": "^green;Jungle [Tile]",
+      "tr": "^green;Cangıl [Zemin]",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fumudslowImmunity/name",
+      "en": "^brown;Mud [Tile]",
+      "tr": "^brown;Çamur [Zemin]",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/gasImmunity/name",
+      "en": "^#D1E160;Gas",
+      "tr": "^#D1E160;Gaz",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/gravrainImmunity/name",
+      "en": "^gray;Gravity Rain",
+      "tr": "^gray;Yerçekimi Yağmuru",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/honeyslowImmunity/name",
+      "en": "^#FFEC84;Honey Slow",
+      "tr": "^#FFEC84;Bal Yavaşlatması",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/iceStatusImmunity/name",
+      "en": "^#4BF3FD;Freeze",
+      "tr": "^#4BF3FD;Donma",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/iceslipImmunity/name",
+      "en": "^#4BF3FD;Ice [Tile]",
+      "tr": "^#4BF3FD;Buz [Zemin]",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/insanityImmunity/name",
+      "en": "^#EA907E;Insanity",
+      "tr": "^#EA907E;Delilik",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/lavaImmunity/name",
+      "en": "^#C83E14;Lava",
+      "tr": "^#C83E14;Lav",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/liquidnitrogenImmunity/name",
+      "en": "^#4BF3FD;Liquid Nitrogen",
+      "tr": "^#4BF3FD;Sıvı Azot",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/nitrogenfreezeImmunity/name",
+      "en": "^#4BF3FD;Nitrogen Freeze",
+      "tr": "^#4BF3FD;Azot Donması",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/poisonStatusImmunity/name",
+      "en": "^#D1E160;Poisoning",
+      "tr": "^#D1E160;Zehirlenme",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/pressureProtection/name",
+      "en": "^gray;Pressure",
+      "tr": "^gray;Basınç",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/protoImmunity/name",
+      "en": "^#78f04f;Proto-Poison",
+      "tr": "^#78f04f;Proto-Zehir",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/pusImmunity/name",
+      "en": "^yellow;Pus",
+      "tr": "^yellow;İrin",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/quicksandImmunity/name",
+      "en": "^yellow;Quick Sand",
+      "tr": "^yellow;Batak Kum",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/radiationburnImmunity/name",
+      "en": "^yellow;Radiation Burn",
+      "tr": "^yellow;Radyasyon Yanığı",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/sandstormImmunity/name",
+      "en": "^orange;Sandstorm",
+      "tr": "^orange;Kum Fırtınası",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/shadowImmunity/name",
+      "en": "^#3F2E4D;Shadow Taint",
+      "tr": "^#3F2E4D;Gölge Lekesi",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/slimeImmunity/name",
+      "en": "^#61D13F;Slow (Slime)",
+      "tr": "^#61D13F;Yavaşlama (Balçık)",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/slimefrictionImmunity/name",
+      "en": "^#61D13F;Slimed",
+      "tr": "^#61D13F;Balçığa Bulanma",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/slimestickImmunity/name",
+      "en": "^#61D13F;Sticky Slime",
+      "tr": "^#61D13F;Yapışkan Balçık",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/slushslowImmunity/name",
+      "en": "^#4BF3FD;Slush [Tile]",
+      "tr": "^#4BF3FD;Sulu Kar [Zemin]",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/snowslowImmunity/name",
+      "en": "^#4BF3FD;Snow [Tile]",
+      "tr": "^#4BF3FD;Kar [Zemin]",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/stunImmunity/name",
+      "en": "^gray;Stun",
+      "tr": "^gray;Sersemletme",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/sulphuricImmunity/name",
+      "en": "^#ffd800;Sulph. Acid",
+      "tr": "^#ffd800;Sülfürik Asit",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/tarImmunity/name",
+      "en": "^#5B6177;Tar",
+      "tr": "^#5B6177;Katran",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/waterbreathProtection/name",
+      "en": "^blue;Drowning",
+      "tr": "^blue;Boğulma",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
     }
   ]
 }

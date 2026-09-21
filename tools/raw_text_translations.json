@@ -258,6 +258,33 @@
           "new": "widget.setText(\"filterFunctionsLabel\",\"^orange;Yalnızca tek bir eşya ile eşleşir^reset;. ^orange;Yuvaya Böl ile birlikte kullanılamaz^reset;.\")"
         }
       ]
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.lua",
+      "source_blob_sha": "004793000fe00b55c21c342db274de96b971c6fb",
+      "replacements": [
+        {
+          "old": "widget.setText(\"racialLabel\", \"UNRECOGNIZED SPECIES\")",
+          "display_en": "UNRECOGNIZED SPECIES",
+          "display_tr": "TANINMAYAN IRK",
+          "expected_count": 1,
+          "new": "widget.setText(\"racialLabel\", \"TANINMAYAN IRK\")"
+        },
+        {
+          "old": "description=\"Please check SAIL's '^cyan;Misc.^reset;' tab if you believe this is in error.\"",
+          "display_en": "Please check SAIL's 'Misc.' tab if you believe this is in error.",
+          "display_tr": "Bunun bir hata olduğunu düşünüyorsan SAIL'deki 'DİĞER' sekmesini kontrol et.",
+          "expected_count": 1,
+          "new": "description=\"Bunun bir hata olduğunu düşünüyorsan SAIL'deki '^cyan;DİĞER^reset;' sekmesini kontrol et.\""
+        },
+        {
+          "old": "widget.setText(\"racialLabel\", \"Racial Traits - \" .. racialName)",
+          "display_en": "Racial Traits - ",
+          "display_tr": "Irk Özellikleri - ",
+          "expected_count": 1,
+          "new": "widget.setText(\"racialLabel\", \"Irk Özellikleri - \" .. racialName)"
+        }
+      ]
     }
   ]
 }
