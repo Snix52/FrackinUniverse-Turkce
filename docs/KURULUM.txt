@@ -1,62 +1,54 @@
-FRACKIN' UNIVERSE TÜRKÇE | v0.4.0 BETA
-Başlangıç + Jeoloji + Tarım + Kimya + Mühendislik
-Hazırlanma tarihi: 20 Eylül 2026
-
-ÖNCE BUNU OKU
-Bu, FU'nun tam Türkçe çevirisi değildir. Şu anda 654 oyuncu metni alanını
-ve 62 hedef asset'i kapsar. Statik QA ve exact kaynak doğrulaması geçti;
-oyun içi LQA, font ve pencere taşması kontrolleri henüz tamamlanmadı.
+FRACKIN' UNIVERSE TÜRKÇE | v0.30.0 BETA
 
 HEDEF SÜRÜM
 Frackin' Universe: 6.5.8
 Kaynak commit:
 329e714b3fe87571055c8ad7aa38135d199d3317
 
+MEVCUT DURUM
+Bu sürüm FU'nun tamamını Türkçeleştirmez.
+6.016 yapılandırılmış oyuncu metni + 15 Lua arayüz metni olmak üzere
+toplam 6.031 görünür metin birimi yerelleştirilmiştir.
+
+Statik QA tamamlandı.
+Oyun içi LQA, font ve metin taşması kontrolleri devam ediyor.
+
 KURULUM
 1. Starbound'u kapat.
-2. Oyunun "storage" klasörünü yedekle.
-3. Dağıtım ZIP'ini çıkar.
-4. İçindeki "FU_Turkce" klasörünü Starbound'un "mods" klasörüne kopyala.
-5. Yol şu biçimde olmalı:
+2. Mümkünse Starbound/storage klasörünü yedekle.
+3. Güncel FU Türkçe beta ZIP dosyasını çıkar.
+4. İçindeki FU_Turkce klasörünü Starbound'un mods klasörüne kopyala.
+5. Son yol şu biçimde olmalı:
+
    Starbound\mods\FU_Turkce\_metadata
-6. Ana FU .pak dosyasına veya Workshop klasörüne dokunma.
-7. Tercihen yeni bir test karakteriyle kontrol et.
 
-TÜRKÇE KARAKTERLER
-Gerçek Türkçe karakterler kullanılır: ç, ğ, ı, İ, ö, ş, ü.
-ASCII yedek sürüm yoktur.
+6. Ana Frackin' Universe .pak dosyasını veya Workshop klasörünü değiştirme.
+7. Oyunu açıp FU Türkçe'nin yüklendiğini kontrol et.
 
-v0.4 KAPSAMI
-- Araştırma arayüzü: 9 alan
-- Jeoloji: 104 alan
-- Önceki görevler: 36 alan
-- İmalat Tezgâhı: 14 alan
-- Başlangıç telsiz mesajları: 22 alan
-- Tarım araştırma ağacı: 101 alan
-- Tarım/genetik makineleri ve kaynakları: 51 alan
-- Tarım öğretici görevleri: 23 alan
-- Kimya araştırma ağacı: 71 alan
-- Kimya makineleri ve kaynakları: 32 alan
-- Mühendislik araştırma ağacı: 139 alan
-- Mühendislik makineleri ve kaynakları: 52 alan
-Toplam: 654 alan / 62 asset
-
-MÜHENDİSLİKTE İLK KONTROL
-- Araştırma ekranında Engineering yerine "Mühendislik" görünmeli.
-- İmalat, devreler, kaynak çıkarma, robotik, EPP, uzay/FTL, Mech ve Tech dallarını kontrol et.
-- Çıkarma Laboratuvarı ve Çıkarma Laboratuvarı MKII adlarını kontrol et.
-- Temel Bilgisayar -> Kişisel Bilgisayar -> Gelişmiş Bilgisayar -> Araştırma Sunucusu ->
-  Araştırma Ana Bilgisayarı zincirini kontrol et.
-- Odaklama Dizisi, Güç Çekirdeği, Nükleer Çekirdek ve Parçacık Çekirdeği adlarını kontrol et.
-- Gemi Bileşeni Birleştirici arayüzünde başlık, Birleştir/Durdur butonları ve arama alanını kontrol et.
-- STL Motoru ve Kuantum Manipülatörü adlarını kontrol et.
-- Mech, Tech, EPP ve FTL terimlerinin İngilizce sistem adı olarak tutarlı kaldığını doğrula.
-- Türkçe karakter, renk kodu ve satır taşmalarını ekran görüntüsüyle kontrol et.
+PAKET
+Repository içindeki güncel paket:
+dist/FU_Turkce_v0.30.0_Beta.zip
 
 KALDIRMA
-Oyunu kapat ve yalnızca Starbound/mods/FU_Turkce klasörünü kaldır.
-Ana Frackin' Universe modunu kaldırma.
+Oyunu kapat ve yalnızca şu klasörü sil:
 
-HATA RAPORU
-Ekran görüntüsü ve Starbound/storage/starbound.log dosyasını sakla.
-Büyük FU paketini göndermene gerek yok.
+Starbound\mods\FU_Turkce
+
+Ana Frackin' Universe modunu kaldırmana gerek yok.
+
+TÜRKÇE KARAKTERLER
+Gerçek Türkçe karakterler kullanılır:
+ç, ğ, ı, İ, ö, ş, ü
+
+ASCII yedek sürüm bulunmaz.
+
+SORUN YAŞARSAN
+Mümkünse şu bilgileri birlikte paylaş:
+- Ekran görüntüsü
+- Sorunun görüldüğü görev, eşya, makine veya ekran
+- Starbound/storage/starbound.log
+- Kullandığın FU Türkçe sürümü
+
+Özellikle görevde geçen bir adın envanterde farklı görünmesi, görünür İngilizce
+metin kalması, bozuk Türkçe karakterler veya pencere dışına taşan metinler
+doğrudan hata olarak bildirilmelidir.
