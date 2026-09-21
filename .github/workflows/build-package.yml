@@ -7,6 +7,8 @@ on:
     paths-ignore:
       - "dist/**"
       - "FU_Turkce/**"
+      - "tools/test_raporu.json"
+      - "tools/GELISTIRME.txt"
   workflow_dispatch:
 
 concurrency:
@@ -16,20 +18,42 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  BUILD_SOURCE_SHA: ${{ github.sha }}
+
 jobs:
   build-package:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout exact source revision
         uses: actions/checkout@v7
+        with:
+          ref: ${{ env.BUILD_SOURCE_SHA }}
 
       - name: Setup Python
         uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
-      - name: Validate Python
-        run: python -m py_compile tools/build_validate.py tools/write_build_evidence.py tools/add_v022.py tools/add_v023.py tools/add_v024.py tools/add_v025.py tools/add_v026.py tools/add_v027.py tools/add_v028.py tools/add_v029.py tools/add_v030.py
+      - name: Verify checkout identity
+        run: test "$(git rev-parse HEAD)" = "$BUILD_SOURCE_SHA"
+
+      - name: Compile tools and run regression tests
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+
+      - name: Resolve package path
+        run: |
+          PACKAGE_PATH="$(python - <<'PY'
+          import json
+          version = json.load(open('tools/ceviriler.json', encoding='utf-8'))['translation_version']
+          base = version.split('-', 1)[0]
+          suffix = '_Beta' if 'beta' in version.lower() else ''
+          print(f'dist/FU_Turkce_v{base}{suffix}.zip')
+          PY
+          )"
+          echo "PACKAGE_PATH=$PACKAGE_PATH" >> "$GITHUB_ENV"
 
       - name: Fetch pinned Frackin Universe source
         run: |
@@ -46,41 +70,24 @@ jobs:
           cp -a build_output/FU_Turkce FU_Turkce
           diff -qr build_output/FU_Turkce FU_Turkce
 
-      - name: Package mod
+      - name: Package verified build and generate fresh QA evidence
         run: |
-          rm -f dist/FU_Turkce_v0.20.0_Beta.zip dist/FU_Turkce_v0.21.0_Beta.zip dist/FU_Turkce_v0.22.0_Beta.zip dist/FU_Turkce_v0.23.0_Beta.zip dist/FU_Turkce_v0.24.0_Beta.zip dist/FU_Turkce_v0.25.0_Beta.zip dist/FU_Turkce_v0.26.0_Beta.zip dist/FU_Turkce_v0.27.0_Beta.zip dist/FU_Turkce_v0.28.0_Beta.zip dist/FU_Turkce_v0.29.0_Beta.zip dist/FU_Turkce_v0.30.0_Beta.zip
-          cd build_output
-          zip -r ../dist/FU_Turkce_v0.30.0_Beta.zip FU_Turkce
-
-      - name: Verify ZIP
-        run: unzip -t dist/FU_Turkce_v0.30.0_Beta.zip
-
-      - name: Write current build evidence
-        run: |
+          mkdir -p dist
+          find dist -maxdepth 1 -type f -name 'FU_Turkce_v*_Beta.zip' -delete
           python tools/write_build_evidence.py \
-            --zip dist/FU_Turkce_v0.30.0_Beta.zip \
+            --zip "$PACKAGE_PATH" \
             --output dist/build-evidence.json \
-            --translation-source-commit "$GITHUB_SHA" \
+            --create-zip --refresh-tracked \
+            --translation-source-commit "$BUILD_SOURCE_SHA" \
             --workflow-run-id "$GITHUB_RUN_ID"
 
-      - name: Refresh tracked beta package and install tree
+      - name: Verify ZIP and generated diff
+        run: |
+          unzip -t "$PACKAGE_PATH"
+          git diff --check
+
+      - name: Publish only if main still equals the build source revision
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git fetch origin main
-          if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
-            echo "Main advanced while this build was running; stale artifact publication skipped."
-            exit 0
-          fi
-
-          git add -A dist FU_Turkce
-          if git diff --cached --quiet; then
-            echo "Package and install tree are already current."
-          else
-            git commit -m "build: refresh v0.30.0 beta package and install tree [skip ci]"
-            if ! git push; then
-              echo "Main moved during artifact publication; newer workflow run will publish the current package."
-              exit 0
-            fi
-          fi
+          python tools/publish_generated.py --source-sha "$BUILD_SOURCE_SHA"

@@ -21,7 +21,9 @@ from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
 
-PINNED_COMMIT = "329e714b3fe87571055c8ad7aa38135d199d3317"
+from write_build_evidence import verify_source
+
+PINNED_COMMIT = json.loads(Path(__file__).with_name('kaynaklar.json').read_text(encoding='utf-8'))['commit']
 
 BINARY_SUFFIXES = {
     ".png", ".jpg", ".jpeg", ".gif", ".ogg", ".wav", ".ase", ".aseprite",
@@ -589,7 +591,9 @@ def main() -> None:
     parser.add_argument("--md-output", type=Path, default=Path("audit_output/KALAN_KAPSAM.md"))
     args = parser.parse_args()
 
+    source_validation = verify_source(args.source.resolve())
     result = audit(args.source.resolve(), args.catalog.resolve())
+    result['source_validation'] = source_validation
     args.json_output.parent.mkdir(parents=True, exist_ok=True)
     args.md_output.parent.mkdir(parents=True, exist_ok=True)
     args.json_output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

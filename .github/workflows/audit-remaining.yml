@@ -8,11 +8,9 @@ on:
     paths:
       - "tools/audit_remaining.py"
       - "tools/ceviriler.json"
-      - "tools/raw_text_translations.json"
-      - "tools/v030_translations.json"
-      - "tools/translation_memory_exceptions.json"
-      - "tools/locked_terms.json"
+      - "tools/*_translations.json"
       - "tools/kaynaklar.json"
+      - "tools/write_build_evidence.py"
       - ".github/workflows/audit-remaining.yml"
 
 concurrency:
@@ -40,8 +38,8 @@ jobs:
           git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
           git -C fu_source checkout --detach "$FU_SOURCE_COMMIT"
 
-      - name: Compile audit tool
-        run: python -m py_compile tools/audit_remaining.py
+      - name: Compile audit dependencies
+        run: python -m py_compile tools/audit_remaining.py tools/write_build_evidence.py
 
       - name: Audit remaining player-visible strings
         run: python tools/audit_remaining.py --source fu_source

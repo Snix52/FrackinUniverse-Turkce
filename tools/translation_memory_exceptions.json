@@ -1,12 +1,131 @@
 {
-  "schema_version": 1,
-  "note": "Aynı kaynak metnin bağlama göre bilinçli olarak farklı çevrildiği istisnalar. Diğer tekrarlar tek Türkçe karşılık kullanmalıdır.",
-  "intentional_source_variants": {
-    "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;": "Kaynakta hedef adı hatalı sabitlenmiş; Türkçe gerçek görev hedefini kullanır.",
-    "Electronics": "Ağaç başlığında Güç Sistemleri, düğüm/alt başlıkta Elektronik olarak bağlama göre ayrılır.",
-    "For broken robots": "Pet Healing Station kaynağındaki robot ifadesi gerçek işlevine göre evcil hayvan olarak düzeltilir.",
-    "Research": "Kaynak, sistem adı ve buton eylemi olarak iki farklı dilbilgisel işleve sahiptir.",
-    "^orange;Cloning Labs^reset; have one single purpose: Making custom trees. Place one sapling on the left, one on the right and you're good to go!": "Aynı kaynak metin görev açıklaması ve tamamlanma bağlamında farklı oyuncu yönlendirmesi gerektirir.",
-    "Incinerator": "Makine adı İmha Fırını, aynı İngilizce adı taşıyan silah ise bağlama uygun Yakıcı adını kullanır."
-  }
+  "schema_version": 2,
+  "exceptions": [
+    {
+      "en": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;",
+      "reason": "Kaynakta hedef adı hatalı sabitlenmiş; Türkçe gerçek görev hedefini kullanır.",
+      "variants": [
+        {
+          "asset": "quests/fu_questlines/tutorial/vinj/create_electronics.questtemplate",
+          "pointer": "/scriptConfig/turnInDescription",
+          "tr": "^green;Elektronik Merkezini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+        },
+        {
+          "asset": "quests/fu_questlines/tutorial/vinj/create_greenhouse.questtemplate",
+          "pointer": "/scriptConfig/turnInDescription",
+          "tr": "^green;Serayı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+        },
+        {
+          "asset": "quests/fu_questlines/tutorial/vinj/create_tinkertable.questtemplate",
+          "pointer": "/scriptConfig/turnInDescription",
+          "tr": "^green;İnce İşçilik Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+        },
+        {
+          "asset": "quests/fu_questlines/tutorial/vinj/create_growingtray.questtemplate",
+          "pointer": "/scriptConfig/turnInDescription",
+          "tr": "^green;Yetiştirme Tepsisini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+        },
+        {
+          "asset": "quests/fu_questlines/tutorial/vinj/create_armory.questtemplate",
+          "pointer": "/scriptConfig/turnInDescription",
+          "tr": "^green;Zırh Atölyesini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+        },
+        {
+          "asset": "quests/fu_questlines/tutorial/vinj/create_woodencentrifuge.questtemplate",
+          "pointer": "/scriptConfig/turnInDescription",
+          "tr": "^green;Ahşap Santrifüjü^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+        }
+      ]
+    },
+    {
+      "en": "Electronics",
+      "reason": "Ağaç başlığında Güç Sistemleri, düğüm/alt başlıkta Elektronik olarak bağlama göre ayrılır.",
+      "variants": [
+        {
+          "asset": "zb/researchTree/fu_power.config",
+          "pointer": "/strings/trees/fu_power",
+          "tr": "Güç Sistemleri"
+        },
+        {
+          "asset": "zb/researchTree/fu_power.config",
+          "pointer": "/strings/research/electronicsbasic/0",
+          "tr": "Elektronik"
+        },
+        {
+          "asset": "zb/questList/data.config",
+          "pointer": "/strings/sublines/fu_electronics",
+          "tr": "Elektronik"
+        }
+      ]
+    },
+    {
+      "en": "For broken robots",
+      "reason": "Pet Healing Station kaynağındaki robot ifadesi gerçek işlevine göre evcil hayvan olarak düzeltilir.",
+      "variants": [
+        {
+          "asset": "objects/crafting/bothealingstation/pethealingstation.object",
+          "pointer": "/subtitle",
+          "tr": "Bozuk robotlar için"
+        },
+        {
+          "asset": "objects/crafting/bothealingstation/pethealingstationauto.object",
+          "pointer": "/subtitle",
+          "tr": "Bozuk robotlar için"
+        },
+        {
+          "asset": "objects/crafting/pethealingstation/pethealingstationauto.object",
+          "pointer": "/subtitle",
+          "tr": "Yaralı evcil hayvanlar için"
+        }
+      ]
+    },
+    {
+      "en": "Research",
+      "reason": "Kaynak, sistem adı ve buton eylemi olarak iki farklı dilbilgisel işleve sahiptir.",
+      "variants": [
+        {
+          "asset": "zb/researchTree/data.config",
+          "pointer": "/strings/currencies/fuscienceresource",
+          "tr": "Araştırma"
+        },
+        {
+          "asset": "zb/researchTree/researchTree.config",
+          "pointer": "/gui/researchButton/caption",
+          "tr": "Araştır"
+        }
+      ]
+    },
+    {
+      "en": "^orange;Cloning Labs^reset; have one single purpose: Making custom trees. Place one sapling on the left, one on the right and you're good to go!",
+      "reason": "Aynı kaynak metin görev açıklaması ve tamamlanma bağlamında farklı oyuncu yönlendirmesi gerektirir.",
+      "variants": [
+        {
+          "asset": "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate",
+          "pointer": "/text",
+          "tr": "Bir ^orange;Klonlama Laboratuvarı^reset; üret. Bu cihaz iki fidanın özelliklerini birleştirerek özel ağaçlar oluşturur."
+        },
+        {
+          "asset": "quests/fu_questlines/science/genetics/fuquest_cloning.questtemplate",
+          "pointer": "/completionText",
+          "tr": "^orange;Klonlama Laboratuvarında^reset; sol yuvaya bir fidan, sağ yuvaya başka bir fidan yerleştir. Cihaz bu ikisinden özel bir ağaç oluşturur."
+        }
+      ]
+    },
+    {
+      "en": "Incinerator",
+      "reason": "Makine adı İmha Fırını, aynı İngilizce adı taşıyan silah ise bağlama uygun Yakıcı adını kullanır.",
+      "variants": [
+        {
+          "asset": "objects/power/isn_incinerator/isn_incinerator.object",
+          "pointer": "/shortdescription",
+          "tr": "İmha Fırını"
+        },
+        {
+          "asset": "items/active/weapons/ranged/unique/science/flamepistol/isn_flamethrower.activeitem",
+          "pointer": "/shortdescription",
+          "tr": "Yakıcı"
+        }
+      ]
+    }
+  ]
 }

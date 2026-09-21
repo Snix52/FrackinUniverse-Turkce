@@ -57,6 +57,8 @@ Projenin dil ve teknik kuralları:
 - [Terminoloji](docs/TERMINOLOGY.md)
 - [Karar kaydı](docs/DECISIONS.md)
 - [QA kuralları](docs/QA_RULES.md)
+- [Otomatik doğrulama ve paket kanıtı](docs/QA_PIPELINE.md)
+- [Manuel oyun içi LQA](docs/LQA_CHECKLIST.md)
 
 ## Geliştirme notu
 
