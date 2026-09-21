@@ -151,6 +151,49 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertIn("/paneLayout/windowtitle/title", by_pointer)
         self.assertIn("/paneLayout/windowtitle/subtitle", by_pointer)
 
+    def test_scripted_ui_runtime_templates_are_excluded(self):
+        excluded = {
+            "interface/kheAA/kheAA_router/kheAA_routerGui.config":
+                "/gui/filterFunctionsLabel/value",
+            "interface/kheAA/kheAA_terminal/kheAA_terminalGui.config":
+                "/gui/scrollArea/children/itemList/schema/listTemplate/amount/value",
+            "interface/objectcrafting/fu_racializer/fu_racializer.config":
+                "/gui/scr_raceList/children/raceList/schema/listTemplate/title/value",
+            "interface/scripted/fu_craftinfo/fu_craftinfo.config":
+                "/gui/materialList/children/materials/schema/listTemplate/text/value",
+            "interface/scripted/fu_upgradetable/fu_upgradetable.config":
+                "/gui/warningLabel/value",
+            "interface/scripted/sbvn/pandorasboxsbvngui.config":
+                "/gui/lblText/value",
+            "interface/scripted/spaceStation/spaceStation.config":
+                "/gui/text/value",
+            "interface/scripted/techshop/techshop.config":
+                "/gui/popupList/schema/listTemplate/itemName/value",
+        }
+        for asset, field_pointer in excluded.items():
+            self.assertTrue(audit.audit_excluded_candidate(asset, field_pointer))
+
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/kheAA/kheAA_terminal/kheAA_terminalGui.config",
+            "/gui/requestOne/caption",
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/objectcrafting/fu_racializer/fu_racializer.config",
+            "/gui/btnConvert/caption",
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/scripted/fu_craftinfo/fu_craftinfo.config",
+            "/gui/recipeList/children/empty/value",
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/scripted/fu_upgradetable/fu_upgradetable.config",
+            "/gui/upgradeTargetText/hint",
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/scripted/spaceStation/spaceStation.config",
+            "/gui/goodsTradeList/children/itemList/schema/listTemplate/buyButton/caption",
+        ))
+
     def test_team_bar_template_name_is_excluded(self):
         self.assertTrue(audit.audit_excluded_candidate(
             "interface/windowconfig/teambar.config", "/paneLayout/name/value"
