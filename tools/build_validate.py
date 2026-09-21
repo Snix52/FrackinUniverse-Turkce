@@ -164,6 +164,13 @@ V039_STAT_WINDOW_FIELDS = {(row['asset'], row['pointer']) for row in _V039_MANIF
 if len(V039_STAT_WINDOW_FIELDS) != len(_V039_MANIFEST['translations']):
     raise ValueError('v0.39 ana Tricorder manifestinde yinelenen alan var')
 
+_V040_MANIFEST = json.loads(
+    Path(__file__).with_name('v040_translations.json').read_text(encoding='utf-8')
+)
+V040_CHAR_CREATION_FIELDS = {(row['asset'], row['pointer']) for row in _V040_MANIFEST['translations']}
+if len(V040_CHAR_CREATION_FIELDS) != len(_V040_MANIFEST['translations']):
+    raise ValueError('v0.40 karakter oluşturma manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -334,6 +341,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V040_CHAR_CREATION_FIELDS:
+        return True
     if (a,p) in V039_STAT_WINDOW_FIELDS:
         return True
     if (a,p) in V038_EXTRA_STATS_FIELDS:
