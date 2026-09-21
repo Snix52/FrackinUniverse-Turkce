@@ -25,6 +25,12 @@ class AuditVisibilityTests(unittest.TestCase):
         }
         self.assertEqual(list(audit.candidates_from_data("zb/handler.questtemplate", data)), [])
 
+    def test_unreachable_deep_one_vn_is_audit_excluded(self):
+        self.assertIn(
+            "interface/scripted/sbvn/games/cthululove/deepone.sbvn",
+            audit.AUDIT_EXCLUDED_PATHS,
+        )
+
     def test_unreachable_pandora_field_guide_is_audit_excluded(self):
         self.assertIn(
             "interface/scripted/sbvn/games/pandorasboxmonsterfieldguide/pandorasboxmonsterfieldguide.sbvn",
