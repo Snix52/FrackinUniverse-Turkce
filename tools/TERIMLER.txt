@@ -1,15 +1,8 @@
 TERİM NOTLARI
 
-Tek kanonik insan sözlüğü:
-  docs/TERMINOLOGY.md
-
-Build sırasında uygulanan yüksek güvenli makine kuralları:
-  tools/locked_terms.json
-
-Aynı kaynak metnin bağlama göre bilinçli farklı çevrildiği istisnalar:
-  tools/translation_memory_exceptions.json
-
-Bu dosya artık ayrı bir terim listesi tutmaz. Çift kaynaklı terminoloji driftini
-önlemek için yeni terim kararları yalnız docs/TERMINOLOGY.md içinde kaydedilmeli;
-otomatik uygulanması gereken kurallar ayrıca tools/locked_terms.json dosyasına
-eklenmelidir.
+Tek kanonik terminoloji kaynağı: tools/locked_terms.json
+İnsan tarafından okunan görünüm: docs/TERMINOLOGY.md (otomatik üretilir)
+Güncelleme: python tools/qa_integrity.py --write-docs
+Bağlam istisnaları aynı kanonik dosyadadır.
+Çeviri belleği istisnaları: tools/translation_memory_exceptions.json
+Bu dosyada bağımsız terim kararı veya sürüm tutulmaz.

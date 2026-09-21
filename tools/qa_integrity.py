@@ -1,0 +1,185 @@
+"""Generic catalog, context, number, whitespace, glyph and LOCKED-term guards."""
+from __future__ import annotations
+import argparse
+import json
+import re
+import unicodedata
+from collections import Counter, defaultdict
+from pathlib import Path
+from rule_data import TOOLS, render_terminology
+
+COLOR = re.compile(r'\^[^;\s]*;')
+NUMBER = re.compile(r'\d+(?:[.,]\d+)?')
+SIGNED = re.compile(r'[+-]\s*%?\s*\d+(?:[.,]\d+)?')
+ESCAPED_TAB = re.compile(r'(?<!\\)(?:\\\\)*\\t')
+
+
+def plain(value: str) -> str:
+    return COLOR.sub('', value).strip()
+
+
+def signed_numbers(value: str) -> Counter:
+    return Counter(re.sub(r'\s|%', '', n).replace(',', '.')
+                   for n in SIGNED.findall(COLOR.sub('', value)))
+
+
+def tab_signature(value: str) -> tuple:
+    # JSON "\t" is U+0009 after decoding; literal Lua-style escapes are separate.
+    return tuple((tuple(map(len, re.findall('\t+', line))),
+                  len(ESCAPED_TAB.findall(line))) for line in value.split('\n'))
+
+
+def icon_signature(value: str, glyphs=()) -> Counter:
+    # Corpus U+E024 and private-use UI glyphs; never classify Turkish letters as icons.
+    return Counter(c for c in value if c in glyphs or unicodedata.category(c) == 'Co')
+
+
+def bound_exception(row: dict, exception: dict) -> bool:
+    return bool(exception.get('reason', '').strip()) and all(
+        row.get(k) == exception.get(k) for k in ('asset', 'pointer', 'en', 'tr'))
+
+
+def validate_format(row: dict, policy: dict) -> None:
+    en, tr = row['en'], row['tr']
+    if not isinstance(en, str) or not isinstance(tr, str) or not tr.strip():
+        raise ValueError('Empty or non-text translation: ' + row['asset'] + row['pointer'])
+    where = row['asset'] + row['pointer']
+    if signed_numbers(en) != signed_numbers(tr):
+        raise ValueError('Signed number mismatch: ' + where)
+    if tab_signature(en) != tab_signature(tr):
+        if not any(bound_exception(row, x) for x in policy.get('tab_exceptions', [])):
+            raise ValueError('TAB structure mismatch: ' + where)
+    glyphs = policy.get('ui_glyphs', [])
+    if icon_signature(en, glyphs) != icon_signature(tr, glyphs):
+        raise ValueError('UI glyph mismatch: ' + where)
+
+
+def validate_translation_memory(rows: list[dict], policy: dict) -> None:
+    by_source = defaultdict(list)
+    for row in rows:
+        by_source[row['en']].append(row)
+    exceptions = policy.get('exceptions', [])
+    for source, group in by_source.items():
+        if len({r['tr'] for r in group}) <= 1:
+            continue
+        choices = [x for x in exceptions if x.get('en') == source and x.get('reason', '').strip()]
+        allowed = {(v['asset'], v['pointer'], v['tr'])
+                   for x in choices for v in x['variants']}
+        if any((r['asset'], r['pointer'], r['tr']) not in allowed for r in group):
+            raise ValueError('Translation memory drift: ' + repr(source))
+
+
+class Terminology:
+    def __init__(self, policy: dict):
+        self.exact = defaultdict(set)
+        self.phrases = []
+        self.exceptions = policy.get('context_exceptions', [])
+        self.forbidden = [(re.compile(x['pattern'], re.I if x.get('ignore_case') else 0),
+                           x.get('message', 'Forbidden terminology'))
+                          for x in policy.get('forbidden_regexes', [])]
+        for term in policy['terms']:
+            if term['status'] != 'LOCKED':
+                continue
+            forms = term.get('forms')
+            if forms is None:
+                aliases = term['source'].split(' / ')
+                forms = [{'en': a, 'tr': a if term.get('mode') == 'preserve' else term['tr']}
+                         for a in aliases]
+            for form in forms:
+                en, tr = form['en'], form['tr']
+                self.exact[en].add(tr)
+                if len(en.split()) < 2:
+                    continue
+                banned = [s.strip() for s in term['forbidden'].split(',') if s.strip() not in ('', '-')]
+                self.phrases.append((re.compile(r'(?<!\w)' + re.escape(en) + r'(?!\w)', re.I),
+                                     tr.casefold(), [(b, re.compile(r'(?<!\w)' + re.escape(b) + r'(?!\w)', re.I))
+                                                     for b in banned]))
+
+    def validate(self, row: dict) -> None:
+        en, tr = plain(row['en']), plain(row['tr'])
+        where = row['asset'] + row['pointer']
+        for pattern, message in self.forbidden:
+            if pattern.search(row['tr']):
+                raise ValueError(message + ': ' + where)
+        if any(bound_exception(row, x) for x in self.exceptions):
+            return
+        if en in self.exact:
+            allowed = self.exact[en]
+            if len(allowed) != 1 or tr not in allowed:
+                raise ValueError('LOCKED terminology/context mismatch: ' + where + ' -> ' + repr(sorted(allowed)))
+        for source_pattern, canonical, banned in self.phrases:
+            if not source_pattern.search(en) or canonical in tr.casefold():
+                continue
+            for variant, pattern in banned:
+                if pattern.search(tr):
+                    raise ValueError('LOCKED forbidden variant ' + repr(variant) + ': ' + where)
+
+
+def manifest_rows(primary: list[dict], tools: Path = TOOLS) -> list[dict]:
+    index = {(r['asset'], r['pointer']): r for r in primary}
+    rows = list(primary)
+    for path in sorted(tools.glob('*_translations.json')):
+        if path.name == 'raw_text_translations.json':
+            continue
+        payload = json.loads(path.read_text(encoding='utf-8'))
+        if isinstance(payload, dict) and 'translations' in payload:
+            rows.extend(payload['translations'])
+        elif isinstance(payload, list):
+            rows.extend(payload)
+        elif isinstance(payload, dict):
+            for spec in payload.values():
+                if not isinstance(spec, dict) or 'asset' not in spec:
+                    raise ValueError('Unknown structured manifest schema: ' + path.name)
+                for field, pointer in (('name', '/shortdescription'), ('description', '/description')):
+                    if field not in spec:
+                        continue
+                    key = (spec['asset'], pointer)
+                    if key not in index:
+                        raise ValueError('Manifest field missing from primary catalog: ' + repr(key))
+                    if spec[field] != index[key]['tr']:
+                        raise ValueError('Manifest/catalog drift: ' + path.name + ' ' + repr(key))
+                    rows.append(dict(index[key], tr=spec[field]))
+        else:
+            raise ValueError('Unknown structured manifest schema: ' + path.name)
+    return rows
+
+
+def validate_project(rows: list[dict], tools: Path = TOOLS) -> dict:
+    format_policy = json.loads((tools / 'rules/text_integrity.json').read_text(encoding='utf-8'))
+    tm_policy = json.loads((tools / 'translation_memory_exceptions.json').read_text(encoding='utf-8'))
+    term_policy = json.loads((tools / 'locked_terms.json').read_text(encoding='utf-8'))
+    terminology = Terminology(term_policy)
+    all_rows = manifest_rows(rows, tools)
+    for row in all_rows:
+        validate_format(row, format_policy)
+        terminology.validate(row)
+    validate_translation_memory(all_rows, tm_policy)
+    raw_rows = []
+    for spec in json.loads((tools / 'raw_text_translations.json').read_text(encoding='utf-8'))['assets']:
+        for i, replacement in enumerate(spec['replacements']):
+            raw = {'asset': spec['asset'], 'pointer': '/replacements/' + str(i),
+                   'en': replacement['old'], 'tr': replacement['new']}
+            validate_format(raw, format_policy)
+            raw_rows.append(raw)
+    doc = tools.parent / 'docs/TERMINOLOGY.md'
+    if doc.read_text(encoding='utf-8') != render_terminology(term_policy):
+        raise ValueError('Generated terminology document is stale; run qa_integrity.py --write-docs')
+    return {'catalog_units_checked': len(all_rows),
+            'raw_units_checked': len(raw_rows),
+            'locked_terms': sum(x['status'] == 'LOCKED' for x in term_policy['terms'])}
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--write-docs', action='store_true')
+    args = parser.parse_args()
+    if args.write_docs:
+        policy = json.loads((TOOLS / 'locked_terms.json').read_text(encoding='utf-8'))
+        (TOOLS.parent / 'docs/TERMINOLOGY.md').write_text(render_terminology(policy), encoding='utf-8')
+    rows = json.loads((TOOLS / 'ceviriler.json').read_text(encoding='utf-8'))['translations']
+    print(json.dumps(validate_project(rows), ensure_ascii=False))
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

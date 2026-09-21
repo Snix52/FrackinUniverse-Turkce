@@ -1,26 +1,4721 @@
 {
-  "schema_version": 1,
-  "note": "Yüksek güvenli LOCKED terminoloji kuralları. Biçim kodları çıkarıldıktan sonra tam kaynak adı eşleşirse uygulanır.",
-  "exact_source_rules": {
-    "Master Manipulator": "Usta Manipülatör",
-    "Matter Manipulator": "Madde Manipülatörü",
-    "Science Outpost": "Bilim Karakolu",
-    "Arc Smelter": "Ark Ergitici",
-    "Hydraulic Dynamo": "Hidrolik Dinamo",
-    "Combustion Generator": "Yanmalı Jeneratör",
-    "Machining Table": "İmalat Tezgâhı",
-    "Sprouting Table": "Filizlendirme Tezgâhı",
-    "Chemistry Lab": "Kimya Laboratuvarı",
-    "Geology": "Jeoloji",
-    "Agriculture": "Tarım",
-    "Engineering": "Mühendislik",
-    "Craftsmanship": "Zanaatkârlık",
-    "Power Systems": "Güç Sistemleri",
-    "Armor and Weapons": "Zırh ve Silahlar",
-    "Queen Bee": "Ana Arı",
-    "Skill Quiver": "Beceri Sadağı",
-    "Irradiator": "Radyasyon Yayıcı"
-  },
+  "schema_version": 2,
+  "terms": [
+    {
+      "source": "Research",
+      "context": "Sistem / isim",
+      "type": "Sistem",
+      "tr": "Araştırma",
+      "forbidden": "İnceleme, Bilim, Research",
+      "status": "LOCKED",
+      "note": "FU araştırma sisteminin adı"
+    },
+    {
+      "source": "Research",
+      "context": "Buton / eylem",
+      "type": "Eylem",
+      "tr": "Araştır",
+      "forbidden": "İncele",
+      "status": "LOCKED",
+      "note": "UI eylemi"
+    },
+    {
+      "source": "Tier",
+      "context": "Seviye gösterimi",
+      "type": "Sistem",
+      "tr": "Kademe",
+      "forbidden": "Tier",
+      "status": "LOCKED",
+      "note": "Araştırma kademeleri"
+    },
+    {
+      "source": "Geology",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Jeoloji",
+      "forbidden": "Geology",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Engineering",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Mühendislik",
+      "forbidden": "Engineering",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Agriculture",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Tarım",
+      "forbidden": "Agriculture",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Chemistry",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Kimya",
+      "forbidden": "Chemistry",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Craftsmanship",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Zanaatkârlık",
+      "forbidden": "Craftsmanship",
+      "status": "LOCKED",
+      "note": "v0.6 ana araştırma ağacı adı"
+    },
+    {
+      "source": "Machining Table",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "İmalat Tezgâhı",
+      "forbidden": "Machining Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Auto-Assembler",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Otomatik Birleştirici",
+      "forbidden": "Auto-Assembler",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Matter Assembler",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Madde Birleştirici",
+      "forbidden": "Matter Assembler",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Tinkering Table",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "İnce İşçilik Tezgâhı",
+      "forbidden": "Tinkering Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Foraging Table",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Toplayıcılık Tezgâhı",
+      "forbidden": "Foraging Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Science Outpost",
+      "context": "Yer",
+      "type": "Yer",
+      "tr": "Bilim Karakolu",
+      "forbidden": "Science Outpost",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Personal Tricorder",
+      "context": "Eşya",
+      "type": "Nesne",
+      "tr": "Kişisel Tricorder",
+      "forbidden": "Personal Tricorder",
+      "status": "LOCKED",
+      "note": "Tricorder özel ürün adı olarak korunur"
+    },
+    {
+      "source": "Matter Manipulator",
+      "context": "Eşya",
+      "type": "Nesne",
+      "tr": "Madde Manipülatörü",
+      "forbidden": "Matter Manipulator",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Furnace",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Fırın",
+      "forbidden": "Furnace",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Greenhouse",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Sera",
+      "forbidden": "Greenhouse",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Wire",
+      "context": "Eşya",
+      "type": "Nesne",
+      "tr": "Kablo",
+      "forbidden": "Wire",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Electromagnet",
+      "context": "Eşya",
+      "type": "Nesne",
+      "tr": "Elektromıknatıs",
+      "forbidden": "Electromagnet",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Teleporter",
+      "context": "Sistem / cihaz",
+      "type": "Nesne",
+      "tr": "Işınlayıcı",
+      "forbidden": "Teleporter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Irradiator",
+      "context": "Radyasyon silahı",
+      "type": "Nesne",
+      "tr": "Radyasyon Yayıcı",
+      "forbidden": "Işınlayıcı",
+      "status": "LOCKED",
+      "note": "Teleporter = Işınlayıcı ile oyuncu tarafında ad çakışmasını önler"
+    },
+    {
+      "source": "Alchemy Table",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Simya Tezgâhı",
+      "forbidden": "Alchemy Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Electronics Center",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Elektronik Merkezi",
+      "forbidden": "Electronics Center",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Item Transference Device",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Eşya Aktarım Cihazı",
+      "forbidden": "Item Transference Device",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Dark Cavern",
+      "context": "Görev yeri",
+      "type": "Yer",
+      "tr": "Karanlık Mağara",
+      "forbidden": "Dark Cavern",
+      "status": "APPROVED",
+      "note": ""
+    },
+    {
+      "source": "Energy Source",
+      "context": "Görev nesnesi",
+      "type": "Kavram",
+      "tr": "Enerji Kaynağı",
+      "forbidden": "Energy Source",
+      "status": "APPROVED",
+      "note": ""
+    },
+    {
+      "source": "Mining Laser",
+      "context": "Araç",
+      "type": "Nesne",
+      "tr": "Madencilik Lazeri",
+      "forbidden": "Mining Laser",
+      "status": "APPROVED",
+      "note": ""
+    },
+    {
+      "source": "Precursor",
+      "context": "FU tür / özel ad",
+      "type": "Özel ad",
+      "tr": "Precursor",
+      "forbidden": "Öncül",
+      "status": "LOCKED",
+      "note": "Kaynakta species olarak kullanılıyor; özel ad korunur"
+    },
+    {
+      "source": "Elemental",
+      "context": "Bilimsel/malzeme bağlamı",
+      "type": "Sıfat",
+      "tr": "Elementel",
+      "forbidden": "Elemental",
+      "status": "APPROVED",
+      "note": ""
+    },
+    {
+      "source": "Homestead",
+      "context": "Welchie görev serisi",
+      "type": "Görev başlığı",
+      "tr": "Yerleşim",
+      "forbidden": "Çiftlik Hayatı",
+      "status": "LOCKED",
+      "note": "I-V zinciri v0.9'da tamamlandı; görev serisi boyunca Yerleşim kullanımı doğrulandı"
+    },
+    {
+      "source": "Ancient Essence",
+      "context": "Vanilla/FU kaynak adı",
+      "type": "Kaynak",
+      "tr": "Antik Öz",
+      "forbidden": "-",
+      "status": "REVIEW",
+      "note": "Ana Starbound Türkçe terminolojisiyle karşılaştırılacak"
+    },
+    {
+      "source": "Augment",
+      "context": "Eşya sistemi",
+      "type": "Sistem",
+      "tr": "Eklenti",
+      "forbidden": "-",
+      "status": "REVIEW",
+      "note": "Ana oyun terminolojisiyle doğrulanacak"
+    },
+    {
+      "source": "Sprouting Table",
+      "context": "Tarım/genetik makinesi",
+      "type": "Nesne",
+      "tr": "Filizlendirme Tezgâhı",
+      "forbidden": "Sprouting Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Xeno Research Lab / Xeno Lab",
+      "context": "Gen çıkarım makinesi",
+      "type": "Nesne",
+      "tr": "Xeno Araştırma Laboratuvarı",
+      "forbidden": "Xeno Lab",
+      "status": "LOCKED",
+      "note": "Xeno özel ad olarak korunur"
+    },
+    {
+      "source": "Advanced Xenolab",
+      "context": "Gen çıkarım makinesi",
+      "type": "Nesne",
+      "tr": "Gelişmiş Xeno Laboratuvarı",
+      "forbidden": "Advanced Xenolab",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Growing Tray",
+      "context": "Tarım makinesi",
+      "type": "Nesne",
+      "tr": "Yetiştirme Tepsisi",
+      "forbidden": "Growing Tray",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Heatlamp Tray",
+      "context": "Tarım makinesi",
+      "type": "Nesne",
+      "tr": "Isı Lambalı Tepsi",
+      "forbidden": "Heatlamp Tray",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Hydro Tray",
+      "context": "Tarım makinesi",
+      "type": "Nesne",
+      "tr": "Hidroponik Tepsi",
+      "forbidden": "Hydro Tray",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Botany Lab",
+      "context": "Sera yükseltmesi",
+      "type": "Nesne",
+      "tr": "Botanik Laboratuvarı",
+      "forbidden": "Botany Lab",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Gene Design Lab",
+      "context": "Sera yükseltmesi",
+      "type": "Nesne",
+      "tr": "Gen Tasarım Laboratuvarı",
+      "forbidden": "Gene Design Lab",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Apiary Crafting Station",
+      "context": "Arıcılık makinesi",
+      "type": "Nesne",
+      "tr": "Arıcılık Üretim İstasyonu",
+      "forbidden": "Apiary Crafting Station",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Bee Refuge",
+      "context": "Bilim Karakolu arıcılık noktası",
+      "type": "Yer/Nesne",
+      "tr": "Arı Barınağı",
+      "forbidden": "Bee Refuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Power Station",
+      "context": "Elektronik Merkezi yükseltmesi",
+      "type": "Nesne",
+      "tr": "Güç İstasyonu",
+      "forbidden": "Power Station",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Quantum Fluid",
+      "context": "FU kaynağı",
+      "type": "Kaynak",
+      "tr": "Kuantum Sıvısı",
+      "forbidden": "Quantum Fluid",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Alien Compound",
+      "context": "FU kaynağı",
+      "type": "Kaynak",
+      "tr": "Uzaylı Bileşiği",
+      "forbidden": "Alien Compound",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Caliginous Gas",
+      "context": "FU gazı",
+      "type": "Kaynak",
+      "tr": "Caliginous Gazı",
+      "forbidden": "Caliginous Gas",
+      "status": "LOCKED",
+      "note": "Caliginous özel terim olarak korunur"
+    },
+    {
+      "source": "Gravitic Rain",
+      "context": "Çevresel tehlike",
+      "type": "Kavram",
+      "tr": "gravitik yağmur",
+      "forbidden": "-",
+      "status": "REVIEW",
+      "note": "İlgili biyom/status çevirisinde tekrar doğrulanacak"
+    },
+    {
+      "source": "Chemistry Lab",
+      "context": "Kimya makinesi",
+      "type": "Nesne",
+      "tr": "Kimya Laboratuvarı",
+      "forbidden": "Chemistry Lab",
+      "status": "LOCKED",
+      "note": "Simya Tezgâhının ikinci kademesi"
+    },
+    {
+      "source": "Bio-Chem Lab",
+      "context": "Kimya makinesi",
+      "type": "Nesne",
+      "tr": "Biyokimya Laboratuvarı",
+      "forbidden": "Bio-Chem Lab",
+      "status": "LOCKED",
+      "note": "Kimya tezgâhının üst kademesi"
+    },
+    {
+      "source": "Advanced Plastic",
+      "context": "Kimya kaynağı",
+      "type": "Kaynak",
+      "tr": "Gelişmiş Plastik",
+      "forbidden": "Advanced Plastic",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Graphene",
+      "context": "Kimya / malzeme bilimi",
+      "type": "Kaynak",
+      "tr": "Grafen",
+      "forbidden": "Graphene",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Cell Material",
+      "context": "Kimya / genetik kaynağı",
+      "type": "Kaynak",
+      "tr": "Hücre Materyali",
+      "forbidden": "Cell Material",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Spliced Cell",
+      "context": "Kimya / genetik kaynağı",
+      "type": "Kaynak",
+      "tr": "Birleştirilmiş Hücre",
+      "forbidden": "Spliced Cell",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Unstable Particles",
+      "context": "Kimya / nükleer kaynak",
+      "type": "Kaynak",
+      "tr": "Kararsız Parçacıklar",
+      "forbidden": "Unstable Particles",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Metallic Hydrogen",
+      "context": "Kimya / enerji kaynağı",
+      "type": "Kaynak",
+      "tr": "Metalik Hidrojen",
+      "forbidden": "Metallic Hydrogen",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Quietus Ore",
+      "context": "FU cevheri",
+      "type": "Kaynak",
+      "tr": "Quietus Cevheri",
+      "forbidden": "Quietus Ore",
+      "status": "LOCKED",
+      "note": "Quietus özel terim olarak korunur"
+    },
+    {
+      "source": "Ammonium Sulfate",
+      "context": "Kimyasal kaynak",
+      "type": "Kaynak",
+      "tr": "Amonyum Sülfat",
+      "forbidden": "Ammonium Sulfate",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Hand Mill",
+      "context": "Çıkarma makinesi",
+      "type": "Nesne",
+      "tr": "El Değirmeni",
+      "forbidden": "Hand Mill",
+      "status": "LOCKED",
+      "note": "Tarım görevlerindeki kullanımla eşleştirildi"
+    },
+    {
+      "source": "Improved",
+      "context": "Araştırma seviye sıfatı",
+      "type": "Sıfat",
+      "tr": "Geliştirilmiş",
+      "forbidden": "İyileştirilmiş",
+      "status": "LOCKED",
+      "note": "Advanced ve Superior'dan ayrılır"
+    },
+    {
+      "source": "Advanced",
+      "context": "Araştırma seviye sıfatı",
+      "type": "Sıfat",
+      "tr": "Gelişmiş",
+      "forbidden": "İleri",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Superior",
+      "context": "Araştırma seviye sıfatı",
+      "type": "Sıfat",
+      "tr": "Üstün",
+      "forbidden": "Eşsiz",
+      "status": "LOCKED",
+      "note": "Peerless'tan ayrılır"
+    },
+    {
+      "source": "Peerless",
+      "context": "Araştırma seviye sıfatı",
+      "type": "Sıfat",
+      "tr": "Eşsiz",
+      "forbidden": "Üstün",
+      "status": "LOCKED",
+      "note": "Jeoloji ve Mühendislikle standartlaştırıldı"
+    },
+    {
+      "source": "Mech",
+      "context": "Oyun sistemi / araç",
+      "type": "Sistem",
+      "tr": "Mech",
+      "forbidden": "Mek, Mekanik",
+      "status": "LOCKED",
+      "note": "Starbound sistem adı olarak korunur"
+    },
+    {
+      "source": "Tech",
+      "context": "Oyun sistemi",
+      "type": "Sistem",
+      "tr": "Tech",
+      "forbidden": "Teknoloji",
+      "status": "LOCKED",
+      "note": "Starbound sistem adı olarak korunur"
+    },
+    {
+      "source": "EPP",
+      "context": "Oyun sistemi / ekipman",
+      "type": "Sistem",
+      "tr": "EPP",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Yerleşik kısaltma korunur"
+    },
+    {
+      "source": "FTL",
+      "context": "Uzay yolculuğu sistemi",
+      "type": "Sistem",
+      "tr": "FTL",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimkurgu/oyun kısaltması korunur"
+    },
+    {
+      "source": "STL Drive",
+      "context": "Gemi motoru",
+      "type": "Nesne",
+      "tr": "STL Motoru",
+      "forbidden": "STL Sürücüsü",
+      "status": "LOCKED",
+      "note": "Sistem içi yolculuk motoru"
+    },
+    {
+      "source": "Extraction Device",
+      "context": "Makine kategorisi",
+      "type": "Sistem",
+      "tr": "Çıkarma Cihazı",
+      "forbidden": "Extraction Device",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Extraction Lab",
+      "context": "Çıkarma makinesi",
+      "type": "Nesne",
+      "tr": "Çıkarma Laboratuvarı",
+      "forbidden": "Extraction Lab",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Extraction Lab MKII",
+      "context": "Çıkarma makinesi",
+      "type": "Nesne",
+      "tr": "Çıkarma Laboratuvarı MKII",
+      "forbidden": "Extraction Lab MKII",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Research Rate",
+      "context": "Araştırma makinesi etiketi",
+      "type": "UI",
+      "tr": "Araştırma Hızı",
+      "forbidden": "Research Rate",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Focusing Array",
+      "context": "Mühendislik kaynağı",
+      "type": "Kaynak",
+      "tr": "Odaklama Dizisi",
+      "forbidden": "Focusing Array",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Power Core",
+      "context": "Mühendislik kaynağı",
+      "type": "Kaynak",
+      "tr": "Güç Çekirdeği",
+      "forbidden": "Power Core",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Nuclear Core",
+      "context": "Mühendislik kaynağı",
+      "type": "Kaynak",
+      "tr": "Nükleer Çekirdek",
+      "forbidden": "Nuclear Core",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Particle Core",
+      "context": "Mühendislik kaynağı",
+      "type": "Kaynak",
+      "tr": "Parçacık Çekirdeği",
+      "forbidden": "Particle Core",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Teleporter Core",
+      "context": "Mühendislik kaynağı",
+      "type": "Kaynak",
+      "tr": "Işınlayıcı Çekirdeği",
+      "forbidden": "Teleporter Core",
+      "status": "LOCKED",
+      "note": "Teleporter -> Işınlayıcı kararıyla uyumlu"
+    },
+    {
+      "source": "Molten Core",
+      "context": "Mühendislik kaynağı",
+      "type": "Kaynak",
+      "tr": "Erimiş Çekirdek",
+      "forbidden": "Molten Core",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Ship Component Assembler",
+      "context": "Gemi üretim makinesi",
+      "type": "Nesne",
+      "tr": "Gemi Bileşeni Birleştirici",
+      "forbidden": "Ship Component Assembler",
+      "status": "LOCKED",
+      "note": "Kaynak araştırma metnindeki Ship Crafting Table yerine gerçek nesne adı esas alındı"
+    },
+    {
+      "source": "Quantum Manipulator",
+      "context": "Araç",
+      "type": "Nesne",
+      "tr": "Kuantum Manipülatörü",
+      "forbidden": "Quantum Manipulator",
+      "status": "LOCKED",
+      "note": "Matter Manipulator terminolojisiyle uyumlu"
+    },
+    {
+      "source": "Mech Part Crafting Table",
+      "context": "Mech üretim makinesi",
+      "type": "Nesne",
+      "tr": "Mech Parçası Üretim Tezgâhı",
+      "forbidden": "Mech Part Crafting Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Core Fragments",
+      "context": "Kaynak",
+      "type": "Kaynak",
+      "tr": "Çekirdek Parçaları",
+      "forbidden": "Core Fragments",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Atomic Furnace",
+      "context": "Vanilla üretim makinesi",
+      "type": "Nesne",
+      "tr": "Atomik Fırın",
+      "forbidden": "Atomic Furnace",
+      "status": "APPROVED",
+      "note": "FU Mühendislik ağacındaki referans"
+    },
+    {
+      "source": "Power Systems / fu_power",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Güç Sistemleri",
+      "forbidden": "Electronics, Power Systems",
+      "status": "LOCKED",
+      "note": "Kaynak ağaç başlığı Electronics olsa da oyun içi çapraz referans Power Systems; oyuncu takibi için tek ad kullanılır"
+    },
+    {
+      "source": "Terraforming",
+      "context": "Araştırma başlığı / sistem",
+      "type": "Sistem",
+      "tr": "Gezegen Biçimlendirme",
+      "forbidden": "Gezegen Dönüşümü",
+      "status": "LOCKED",
+      "note": "Jeoloji ve Mühendislik arasında standardize edildi"
+    },
+    {
+      "source": "Microformer",
+      "context": "Gezegen biçimlendirme cihazı",
+      "type": "Nesne",
+      "tr": "Mikro Biçimlendirici",
+      "forbidden": "Mikro Dönüştürücü",
+      "status": "LOCKED",
+      "note": "Terraforming terminolojisiyle aynı aile"
+    },
+    {
+      "source": "Terraformer",
+      "context": "Gezegen biçimlendirme cihazı",
+      "type": "Nesne",
+      "tr": "Gezegen Biçimlendirici",
+      "forbidden": "Gezegen Dönüştürücü",
+      "status": "LOCKED",
+      "note": "Terraforming terminolojisiyle aynı aile"
+    },
+    {
+      "source": "Complex",
+      "context": "Araştırma seviye sıfatı",
+      "type": "Sıfat",
+      "tr": "Karmaşık",
+      "forbidden": "Gelişmiş",
+      "status": "LOCKED",
+      "note": "Advanced ile aynılaştırılmaz"
+    },
+    {
+      "source": "Small FTL Drive",
+      "context": "Gemi motoru",
+      "type": "Nesne",
+      "tr": "Küçük FTL Motoru",
+      "forbidden": "Small FTL Drive, Küçük FTL Sürücüsü",
+      "status": "LOCKED",
+      "note": "BYOS yıldızlararası yolculuk zincirindeki gerçek nesne adı"
+    },
+    {
+      "source": "Armor and Weapons",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Zırh ve Silahlar",
+      "forbidden": "Armor and Weapons",
+      "status": "LOCKED",
+      "note": "Başlangıç/BYOS yönlendirmeleriyle eşleştirildi"
+    },
+    {
+      "source": "Armorworks",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Zırh Atölyesi",
+      "forbidden": "Armorworks",
+      "status": "LOCKED",
+      "note": "Başlangıç yönlendirmelerindeki gerçek makine adı"
+    },
+    {
+      "source": "Garp Berry",
+      "context": "FU bitkisi / ürün",
+      "type": "Özel ad",
+      "tr": "Garp Berry",
+      "forbidden": "Garp Meyvesi",
+      "status": "LOCKED",
+      "note": "Eşya adıyla birebir eşleşme için özel ad korunur"
+    },
+    {
+      "source": "Blister Bush",
+      "context": "FU bitkisi",
+      "type": "Özel ad",
+      "tr": "Blister Bush",
+      "forbidden": "Kabarcık Çalısı",
+      "status": "LOCKED",
+      "note": "FU bitki adı olarak korunur; çevirilmemiş kaçak sayılmaz"
+    },
+    {
+      "source": "Protheon",
+      "context": "FU araştırma kaynağı",
+      "type": "Özel ad",
+      "tr": "Protheon",
+      "forbidden": "-",
+      "status": "REVIEW",
+      "note": "Precursor araştırma ağacı ele alınırken yeniden doğrulanacak"
+    },
+    {
+      "source": "Electronics",
+      "context": "Güç Sistemleri içindeki araştırma düğümü",
+      "type": "Sistem",
+      "tr": "Elektronik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Ağaç adından ayrı tutulur"
+    },
+    {
+      "source": "Silicon",
+      "context": "Malzeme / elektronik",
+      "type": "Kaynak",
+      "tr": "Silisyum",
+      "forbidden": "Silikon",
+      "status": "LOCKED",
+      "note": "Bilimsel element adı"
+    },
+    {
+      "source": "Solar Panel",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Güneş Paneli",
+      "forbidden": "Solar Panel",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Solar Array",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Güneş Dizisi",
+      "forbidden": "Solar Array",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Solar Tower",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Güneş Kulesi",
+      "forbidden": "Solar Tower",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Hydraulic Dynamo",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Hidrolik Dinamo",
+      "forbidden": "Hydraulic Dynamo",
+      "status": "LOCKED",
+      "note": "Kaynak araştırma açıklamasındaki hydraulic piston yerine gerçek nesne adı esas alınır"
+    },
+    {
+      "source": "Wind Turbine",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Rüzgâr Türbini",
+      "forbidden": "Wind Turbine",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Combustion Generator",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Yanmalı Jeneratör",
+      "forbidden": "Combustion Engine",
+      "status": "LOCKED",
+      "note": "Kaynak araştırma metni Combustion Engine dese de açılan nesnenin gerçek adı Combustion Generator"
+    },
+    {
+      "source": "Alternator Generator",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Alternatör",
+      "forbidden": "Alternator Generator",
+      "status": "LOCKED",
+      "note": "Türkçede alternatör zaten jeneratör anlamını taşır"
+    },
+    {
+      "source": "Electric Furnace",
+      "context": "Ergitme makinesi",
+      "type": "Nesne",
+      "tr": "Elektrikli Fırın",
+      "forbidden": "Electric Furnace",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Blast Furnace",
+      "context": "Ergitme makinesi",
+      "type": "Nesne",
+      "tr": "Yüksek Fırın",
+      "forbidden": "Blast Furnace",
+      "status": "LOCKED",
+      "note": "Yerleşik metalurji karşılığı"
+    },
+    {
+      "source": "Arc Smelter",
+      "context": "Ergitme makinesi",
+      "type": "Nesne",
+      "tr": "Ark Ergitici",
+      "forbidden": "Arc Smelter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fission Reactor",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Fisyon Reaktörü",
+      "forbidden": "Fission Reactor",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Small Fusion Reactor",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Küçük Füzyon Reaktörü",
+      "forbidden": "Small Fusion Reactor",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Large Fusion Reactor",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Büyük Füzyon Reaktörü",
+      "forbidden": "Large Fusion Reactor",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Quantum Reactor",
+      "context": "Güç üretim makinesi",
+      "type": "Nesne",
+      "tr": "Kuantum Reaktörü",
+      "forbidden": "Quantum Reactor",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Quantum Nucleonics",
+      "context": "Araştırma başlığı",
+      "type": "Bilim",
+      "tr": "Kuantum Nükleoniği",
+      "forbidden": "Kuantum Nükleer Bilimi",
+      "status": "LOCKED",
+      "note": "Nucleonics için teknik Türkçe kullanım nükleonik"
+    },
+    {
+      "source": "Quantum Extractor",
+      "context": "Çıkarma makinesi",
+      "type": "Nesne",
+      "tr": "Kuantum Çıkarıcı",
+      "forbidden": "Quantum Extractor",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Centrifuge",
+      "context": "Makine kategorisi",
+      "type": "Sistem",
+      "tr": "Santrifüj",
+      "forbidden": "Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Industrial Centrifuge",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Endüstriyel Santrifüj",
+      "forbidden": "Industrial Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Lab Centrifuge",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Laboratuvar Santrifüjü",
+      "forbidden": "Lab Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Gas Centrifuge",
+      "context": "Makine",
+      "type": "Nesne",
+      "tr": "Gaz Santrifüjü",
+      "forbidden": "Gas Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Powder Sifter",
+      "context": "Çıkarma makinesi",
+      "type": "Nesne",
+      "tr": "Toz Eleği",
+      "forbidden": "Powder Sifter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Rock Crusher",
+      "context": "Çıkarma makinesi",
+      "type": "Nesne",
+      "tr": "Kaya Kırıcı",
+      "forbidden": "Rock Crusher",
+      "status": "LOCKED",
+      "note": "Araştırma açıklamasındaki referans"
+    },
+    {
+      "source": "Item Networks",
+      "context": "Otomasyon sistemi",
+      "type": "Sistem",
+      "tr": "Eşya Ağları",
+      "forbidden": "Item Networks",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Wiring Station",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Kablolama İstasyonu",
+      "forbidden": "Wiring Station",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Manufacturing Station",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Üretim İstasyonu",
+      "forbidden": "Manufacturing Station",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Liquid Collector",
+      "context": "Atmosfer makinesi",
+      "type": "Nesne",
+      "tr": "Sıvı Toplayıcı",
+      "forbidden": "Liquid Collector",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Atmospheric Condenser",
+      "context": "Atmosfer makinesi",
+      "type": "Nesne",
+      "tr": "Atmosfer Yoğuşturucusu",
+      "forbidden": "Atmospheric Condenser",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Liquid Mixer",
+      "context": "Sıvı işleme makinesi",
+      "type": "Nesne",
+      "tr": "Sıvı Karıştırıcı",
+      "forbidden": "Liquid Mixer",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Atmospheric Filter",
+      "context": "Atmosfer makinesi",
+      "type": "Nesne",
+      "tr": "Atmosfer Filtresi",
+      "forbidden": "Atmospheric Filter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Atmospheric Regulator",
+      "context": "Atmosfer makinesi",
+      "type": "Nesne",
+      "tr": "Atmosfer Düzenleyici",
+      "forbidden": "Atmospheric Regulator",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Regeneration Matrix",
+      "context": "İyileştirme makinesi",
+      "type": "Nesne",
+      "tr": "Yenilenme Matrisi",
+      "forbidden": "Regeneration Matrix",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Colony Station",
+      "context": "Koloni sistemi makinesi",
+      "type": "Nesne",
+      "tr": "Koloni İstasyonu",
+      "forbidden": "Colony Station",
+      "status": "LOCKED",
+      "note": "Zanaatkârlık koloni dalı"
+    },
+    {
+      "source": "Colony Core",
+      "context": "Koloni sistemi çekirdeği",
+      "type": "Nesne",
+      "tr": "Koloni Çekirdeği",
+      "forbidden": "Colony Core",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Colony Deed Mark II",
+      "context": "Koloni kiracı tapusu",
+      "type": "Nesne",
+      "tr": "Koloni Tapusu Mark II",
+      "forbidden": "Mk2 Kiracı Tapusu",
+      "status": "LOCKED",
+      "note": "Kaynak araştırma metni Mk2 Tenant Deeds dese de gerçek envanter adı esas alınır"
+    },
+    {
+      "source": "Snowprinter",
+      "context": "Peglaci üretim makinesi",
+      "type": "Nesne",
+      "tr": "Kar Yazıcısı",
+      "forbidden": "Snowprinter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "The Lamporium",
+      "context": "Lav lambası üretim makinesi",
+      "type": "Özel ad/Nesne",
+      "tr": "Lamporium",
+      "forbidden": "The Lamporium",
+      "status": "LOCKED",
+      "note": "Özel makine adı; İngilizce artikel atılır"
+    },
+    {
+      "source": "Kitchen Counter",
+      "context": "Yemek üretim istasyonu",
+      "type": "Nesne",
+      "tr": "Mutfak Tezgâhı",
+      "forbidden": "Kitchen Counter",
+      "status": "LOCKED",
+      "note": "FU vanilla woodencookingtable üstüne patch ile tanımlar"
+    },
+    {
+      "source": "Chef's Kitchen",
+      "context": "Mutfak Tezgâhı yükseltmesi",
+      "type": "Nesne",
+      "tr": "Şef Mutfağı",
+      "forbidden": "Chef's Kitchen",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Biochemist Table",
+      "context": "Balçık/biyokimya üretim makinesi",
+      "type": "Nesne",
+      "tr": "Biyokimyacı Tezgâhı",
+      "forbidden": "Biochemist Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Biochemist Centrifuge",
+      "context": "Biyokimya üretim makinesi",
+      "type": "Nesne",
+      "tr": "Biyokimyacı Santrifüjü",
+      "forbidden": "Biochemist Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Biochemist Microseparator",
+      "context": "Biyokimya üretim makinesi",
+      "type": "Nesne",
+      "tr": "Biyokimyacı Mikroayırıcısı",
+      "forbidden": "Biochemist Microseparator",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Spinning Wheel",
+      "context": "Vanilla/FU dikiş istasyonu 1. kademe",
+      "type": "Nesne",
+      "tr": "Çıkrık",
+      "forbidden": "Spinning Wheel",
+      "status": "LOCKED",
+      "note": "craftingwheel"
+    },
+    {
+      "source": "Sewing Machine",
+      "context": "Vanilla/FU dikiş istasyonu 2. kademe",
+      "type": "Nesne",
+      "tr": "Dikiş Makinesi",
+      "forbidden": "Sewing Machine",
+      "status": "LOCKED",
+      "note": "Zanaatkârlık Canvas referansıyla eşleşir"
+    },
+    {
+      "source": "Clothing Fabricator",
+      "context": "FU dikiş istasyonu 3. kademe",
+      "type": "Nesne",
+      "tr": "Giysi Üreticisi",
+      "forbidden": "Clothing Fabricator",
+      "status": "LOCKED",
+      "note": "FU craftingwheel patchi ekler"
+    },
+    {
+      "source": "Wooden Workbench",
+      "context": "Vanilla üretim tezgâhı",
+      "type": "Nesne",
+      "tr": "Ahşap Tezgâh",
+      "forbidden": "Wooden Workbench",
+      "status": "LOCKED",
+      "note": "Zanaatkârlık workbench1 referansı"
+    },
+    {
+      "source": "Industrial Workbench",
+      "context": "Ahşap Tezgâh yükseltmesi",
+      "type": "Nesne",
+      "tr": "Endüstriyel Tezgâh",
+      "forbidden": "Industrial Workbench",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Inventor's Table",
+      "context": "Vanilla ana üretim tezgâhı",
+      "type": "Nesne",
+      "tr": "Mucit Tezgâhı",
+      "forbidden": "Inventor's Table",
+      "status": "LOCKED",
+      "note": "Daha önce Jeoloji/Zanaatkârlık metinlerinde kullanılan ad resmileştirildi"
+    },
+    {
+      "source": "Engineer's Table",
+      "context": "Mucit Tezgâhı yükseltmesi",
+      "type": "Nesne",
+      "tr": "Mühendis Tezgâhı",
+      "forbidden": "Engineer's Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Architect's Table",
+      "context": "Mucit Tezgâhı yükseltmesi",
+      "type": "Nesne",
+      "tr": "Mimar Tezgâhı",
+      "forbidden": "Architect's Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Assembly Line",
+      "context": "Zırh Atölyesi 2. kademe",
+      "type": "Nesne",
+      "tr": "Montaj Hattı",
+      "forbidden": "Assembly Line",
+      "status": "LOCKED",
+      "note": "FU armory yükseltmesi"
+    },
+    {
+      "source": "Armory",
+      "context": "Zırh Atölyesi 3. kademe",
+      "type": "Nesne",
+      "tr": "Cephanelik",
+      "forbidden": "Armory",
+      "status": "LOCKED",
+      "note": "FU armory yükseltmesi"
+    },
+    {
+      "source": "Anvil",
+      "context": "Vanilla silah üretim istasyonu 1. kademe",
+      "type": "Nesne",
+      "tr": "Örs",
+      "forbidden": "Anvil",
+      "status": "LOCKED",
+      "note": "craftinganvil"
+    },
+    {
+      "source": "Forge",
+      "context": "Vanilla silah üretim istasyonu 2. kademe",
+      "type": "Nesne",
+      "tr": "Dövme Ocağı",
+      "forbidden": "Forge",
+      "status": "LOCKED",
+      "note": "craftinganvil"
+    },
+    {
+      "source": "Replicator",
+      "context": "Vanilla silah üretim istasyonu 3. kademe",
+      "type": "Nesne",
+      "tr": "Çoğaltıcı",
+      "forbidden": "Replicator",
+      "status": "LOCKED",
+      "note": "craftinganvil"
+    },
+    {
+      "source": "Breathing EPP",
+      "context": "Vanilla EPP",
+      "type": "Nesne",
+      "tr": "Solunum EPP'si",
+      "forbidden": "Breathing EPP",
+      "status": "LOCKED",
+      "note": "breathprotectionback"
+    },
+    {
+      "source": "Wastelander Equipment",
+      "context": "Araştırma başlığı",
+      "type": "Sistem",
+      "tr": "Kıyamet Sonrası Ekipman",
+      "forbidden": "Wastelander Ekipmanı",
+      "status": "LOCKED",
+      "note": "Özel ad değil; hurda/kıyamet sonrası ekipman bağlamı"
+    },
+    {
+      "source": "depleted uranium",
+      "context": "Bilimsel/mühimmat bağlamı",
+      "type": "Malzeme",
+      "tr": "tüketilmiş uranyum",
+      "forbidden": "seyreltilmiş uranyum",
+      "status": "LOCKED",
+      "note": "Yerleşik teknik karşılık"
+    },
+    {
+      "source": "Fertilizer",
+      "context": "Kimya / tarım kaynağı",
+      "type": "Kaynak",
+      "tr": "Gübre",
+      "forbidden": "Fertilizer",
+      "status": "LOCKED",
+      "note": "Science görevleri ve Kimya araştırma ağacıyla eşlendi"
+    },
+    {
+      "source": "Iodine",
+      "context": "Kimyasal element / kaynak",
+      "type": "Kaynak",
+      "tr": "İyot",
+      "forbidden": "İyodin, Iodine",
+      "status": "LOCKED",
+      "note": "Yerleşik Türkçe element adı"
+    },
+    {
+      "source": "Methyl Iodide",
+      "context": "Kimyasal reaktif",
+      "type": "Kaynak",
+      "tr": "Metil İyodür",
+      "forbidden": "Metil İyodid, Methyl Iodide",
+      "status": "LOCKED",
+      "note": "Yerleşik Türkçe kimya kullanımı"
+    },
+    {
+      "source": "Contaminated Water",
+      "context": "Kimya sıvısı",
+      "type": "Kaynak",
+      "tr": "Kirlenmiş Su",
+      "forbidden": "Kontamine Su, Contaminated Water",
+      "status": "LOCKED",
+      "note": "Oyuncu için açık ve doğal karşılık"
+    },
+    {
+      "source": "Mulch",
+      "context": "Tarım / gübre malzemesi",
+      "type": "Kaynak",
+      "tr": "Malç",
+      "forbidden": "Mulch",
+      "status": "LOCKED",
+      "note": "Yerleşik tarım terimi"
+    },
+    {
+      "source": "Caliche Stone",
+      "context": "Jeolojik malzeme",
+      "type": "Kaynak",
+      "tr": "Kaliş Taşı",
+      "forbidden": "Caliche Stone",
+      "status": "LOCKED",
+      "note": "Türkçe jeoloji literatüründeki kaliş terimi esas alındı"
+    },
+    {
+      "source": "Bonemeal",
+      "context": "Malzeme",
+      "type": "Kaynak",
+      "tr": "Kemik Unu",
+      "forbidden": "Bonemeal",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Ice Crystal",
+      "context": "Vanilla/FU üretim kaynağı",
+      "type": "Kaynak",
+      "tr": "Buz Kristali",
+      "forbidden": "Ice Crystal",
+      "status": "LOCKED",
+      "note": "Vanilla envanter adıyla eşleştirildi"
+    },
+    {
+      "source": "AI Chip / A.I. Chip",
+      "context": "Elektronik / yapay zekâ bileşeni",
+      "type": "Kaynak",
+      "tr": "Yapay Zekâ Çipi",
+      "forbidden": "AI Çipi, A.I. Chip",
+      "status": "LOCKED",
+      "note": "Görev ve gerçek envanter adı eşleştirildi"
+    },
+    {
+      "source": "Silicon Board",
+      "context": "Elektronik bileşeni",
+      "type": "Kaynak",
+      "tr": "Silisyum Devre Kartı",
+      "forbidden": "Silikon Kart, Silicon Board",
+      "status": "LOCKED",
+      "note": "Vanilla envanter adı; Silicon -> Silisyum kararıyla uyumlu"
+    },
+    {
+      "source": "Watcher",
+      "context": "Güç sistemi / chunk loader cihazı",
+      "type": "Nesne",
+      "tr": "Gözcü",
+      "forbidden": "Watcher, Nöbetçi",
+      "status": "LOCKED",
+      "note": "Uzaktayken çevresindeki cihazları etkin tutan FU cihazı"
+    },
+    {
+      "source": "Miracle Grass Seed",
+      "context": "FU bitki tohumu",
+      "type": "Nesne",
+      "tr": "Mucize Otu Tohumu",
+      "forbidden": "Miracle Grass",
+      "status": "LOCKED",
+      "note": "Seed object olduğu oyuncuya açık gösterilir"
+    },
+    {
+      "source": "Bracken Tree Seed",
+      "context": "FU bitki tohumu",
+      "type": "Nesne",
+      "tr": "Bracken Ağacı Tohumu",
+      "forbidden": "Bracken Tree Seed",
+      "status": "LOCKED",
+      "note": "Bracken özel ad olarak korunur"
+    },
+    {
+      "source": "Mutavisk Seed",
+      "context": "FU bitki tohumu",
+      "type": "Nesne",
+      "tr": "Mutavisk Tohumu",
+      "forbidden": "Mutavisk Seed",
+      "status": "LOCKED",
+      "note": "Mutavisk özel ad olarak korunur"
+    },
+    {
+      "source": "Oonforta Seed",
+      "context": "FU bitki tohumu",
+      "type": "Nesne",
+      "tr": "Oonforta Tohumu",
+      "forbidden": "Oonforta Seed",
+      "status": "LOCKED",
+      "note": "Oonforta özel ad olarak korunur"
+    },
+    {
+      "source": "Cloning Lab",
+      "context": "Genetik makinesi",
+      "type": "Nesne",
+      "tr": "Klonlama Laboratuvarı",
+      "forbidden": "Cloning Lab",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Ignus Chili Seed",
+      "context": "FU bitki tohumu",
+      "type": "Nesne",
+      "tr": "Ignus Biberi Tohumu",
+      "forbidden": "Ignus Chili Seed",
+      "status": "LOCKED",
+      "note": "Ignus özel ad olarak korunur"
+    },
+    {
+      "source": "Mutavisk Helm",
+      "context": "Zırh",
+      "type": "Nesne",
+      "tr": "Mutavisk Miğferi",
+      "forbidden": "Mutavisk Helm",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Rad-Leaf / Rad Leaf",
+      "context": "FU ürünü",
+      "type": "Nesne",
+      "tr": "Radyasyon Yaprağı",
+      "forbidden": "Rad Leaf, Rad-Leaf",
+      "status": "LOCKED",
+      "note": "Aşırı radyasyon bağışıklığı veren ürün"
+    },
+    {
+      "source": "Thornitox Seed",
+      "context": "FU bitki tohumu",
+      "type": "Nesne",
+      "tr": "Thornitox Tohumu",
+      "forbidden": "Thornitox Seed",
+      "status": "LOCKED",
+      "note": "Thornitox özel ad olarak korunur"
+    },
+    {
+      "source": "Acid Shield",
+      "context": "EPP eklentisi",
+      "type": "Nesne",
+      "tr": "Asit Kalkanı",
+      "forbidden": "Acid Shield",
+      "status": "LOCKED",
+      "note": "Sülfürik asit bağışıklığı veren eklenti"
+    },
+    {
+      "source": "Black Glass",
+      "context": "Vanilla/FU malzeme",
+      "type": "Kaynak",
+      "tr": "Siyah Cam",
+      "forbidden": "Black Glass",
+      "status": "LOCKED",
+      "note": "Vanilla envanter adıyla eşleştirildi"
+    },
+    {
+      "source": "Industrial Furnace",
+      "context": "Vanilla fırın 2. kademe",
+      "type": "Nesne",
+      "tr": "Endüstriyel Fırın",
+      "forbidden": "Fission Furnace",
+      "status": "LOCKED",
+      "note": "craftingfurnace2 gerçek kademe adı"
+    },
+    {
+      "source": "Protocite Bar",
+      "context": "FU metal kaynağı",
+      "type": "Kaynak",
+      "tr": "Protocite Külçesi",
+      "forbidden": "Protocite Bar",
+      "status": "LOCKED",
+      "note": "Protocite özel ad olarak korunur"
+    },
+    {
+      "source": "Tritium Rod",
+      "context": "İzotop / yakıt kaynağı",
+      "type": "Kaynak",
+      "tr": "Trityum Çubuğu",
+      "forbidden": "Tritium Rod",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel Türkçe: trityum"
+    },
+    {
+      "source": "Booze Kit",
+      "context": "İçki üretim başlangıç istasyonu",
+      "type": "Nesne",
+      "tr": "İçki Kiti",
+      "forbidden": "Booze Kit",
+      "status": "LOCKED",
+      "note": "Starbooze görev zinciri"
+    },
+    {
+      "source": "Mash",
+      "context": "İçki üretim ara ürünü",
+      "type": "Kavram",
+      "tr": "Mayşe",
+      "forbidden": "Püre, Ezme",
+      "status": "LOCKED",
+      "note": "Grape/Apple/Pear/Peach Mash ailesinde ortak terim"
+    },
+    {
+      "source": "Mashing Tun",
+      "context": "İçki üretim makinesi",
+      "type": "Nesne",
+      "tr": "Mayşeleme Kazanı",
+      "forbidden": "Mashing Tun",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fruit Press",
+      "context": "İçki üretim makinesi",
+      "type": "Nesne",
+      "tr": "Meyve Presi",
+      "forbidden": "Fruit Press",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fermenter",
+      "context": "İçki üretim makinesi",
+      "type": "Nesne",
+      "tr": "Fermentör",
+      "forbidden": "Fermenter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Rain Barrel",
+      "context": "İçki üretim makinesi",
+      "type": "Nesne",
+      "tr": "Yağmur Varili",
+      "forbidden": "Rain Barrel",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Distillery / Still",
+      "context": "İçki üretim makinesi",
+      "type": "Nesne",
+      "tr": "Damıtıcı",
+      "forbidden": "Distillery, Still",
+      "status": "LOCKED",
+      "note": "Tek oyuncu adı kullanılır"
+    },
+    {
+      "source": "Yeast Water",
+      "context": "İçki üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Maya Suyu",
+      "forbidden": "Yeast Water",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Grain Water",
+      "context": "İçki üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Tahıl Suyu",
+      "forbidden": "Grain Water",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Hops",
+      "context": "İçki üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Şerbetçiotu",
+      "forbidden": "Hops",
+      "status": "LOCKED",
+      "note": "Yerleşik bira üretim terimi"
+    },
+    {
+      "source": "Wort",
+      "context": "İçki üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Şıra",
+      "forbidden": "Wort",
+      "status": "LOCKED",
+      "note": "Bira üretimindeki teknik ara ürün"
+    },
+    {
+      "source": "Wartweed",
+      "context": "Vanilla ürün / Starbooze girdisi",
+      "type": "Özel ad",
+      "tr": "Wartweed",
+      "forbidden": "Siğil Otu",
+      "status": "LOCKED",
+      "note": "Envanter adıyla eşleşme için özel ad korunur"
+    },
+    {
+      "source": "Wart Wine",
+      "context": "Starbooze içkisi",
+      "type": "Nesne",
+      "tr": "Wartweed Şarabı",
+      "forbidden": "Wart Wine",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Carbon Dioxide",
+      "context": "Kimyasal / içki üretim girdisi",
+      "type": "Kaynak",
+      "tr": "Karbondioksit",
+      "forbidden": "Carbon Dioxide",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Rectified Spirits",
+      "context": "Starbooze içkisi",
+      "type": "Nesne",
+      "tr": "Damıtılmış İçki",
+      "forbidden": "Rektifiye İspirto",
+      "status": "LOCKED",
+      "note": "Oyuncu için açık, işlevsel ad"
+    },
+    {
+      "source": "Meadbee Mead",
+      "context": "Starbooze içkisi",
+      "type": "Nesne",
+      "tr": "Meadbee Bal Şarabı",
+      "forbidden": "Meadbee Mead",
+      "status": "LOCKED",
+      "note": "Meadbee özel ad olarak korunur"
+    },
+    {
+      "source": "Pure Honey",
+      "context": "Arıcılık / içki girdisi",
+      "type": "Kaynak",
+      "tr": "Saf Bal",
+      "forbidden": "Pure Honey",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Apiary",
+      "context": "Arıcılık yapısı",
+      "type": "Nesne",
+      "tr": "Arılık",
+      "forbidden": "Apiary",
+      "status": "LOCKED",
+      "note": "Arı yetiştirme ana yapısı"
+    },
+    {
+      "source": "Basic Frame",
+      "context": "Arıcılık çerçevesi",
+      "type": "Nesne",
+      "tr": "Temel Çerçeve",
+      "forbidden": "Basic Frame",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Queen / Queen Bee",
+      "context": "Arıcılık rolü",
+      "type": "Terim",
+      "tr": "Ana Arı",
+      "forbidden": "Kraliçe Arı",
+      "status": "LOCKED",
+      "note": "Türkçe arıcılık terminolojisi"
+    },
+    {
+      "source": "Drone / Drone Bee",
+      "context": "Arıcılık rolü",
+      "type": "Terim",
+      "tr": "Erkek Arı",
+      "forbidden": "Drone",
+      "status": "LOCKED",
+      "note": "Türkçe arıcılık terminolojisi"
+    },
+    {
+      "source": "Honey Queen",
+      "context": "Arı eşyası",
+      "type": "Nesne",
+      "tr": "Bal Ana Arısı",
+      "forbidden": "Honey Queen",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Honey Drone",
+      "context": "Arı eşyası",
+      "type": "Nesne",
+      "tr": "Bal Erkek Arısı",
+      "forbidden": "Honey Drone",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Basic Microscope",
+      "context": "Arıcılık makinesi",
+      "type": "Nesne",
+      "tr": "Temel Mikroskop",
+      "forbidden": "Basic Microscope",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Honeycomb",
+      "context": "Arıcılık kaynağı",
+      "type": "Kaynak",
+      "tr": "Bal Peteği",
+      "forbidden": "Honeycomb",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Beeswax",
+      "context": "Arıcılık kaynağı",
+      "type": "Kaynak",
+      "tr": "Balmumu",
+      "forbidden": "Beeswax",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Large Apiary",
+      "context": "Arıcılık yapısı",
+      "type": "Nesne",
+      "tr": "Büyük Arılık",
+      "forbidden": "Alveary, Giant Apiary",
+      "status": "LOCKED",
+      "note": "Gerçek normalalveary envanter adı"
+    },
+    {
+      "source": "Honey Jarring Machine / Honey Jarrer",
+      "context": "Arıcılık makinesi",
+      "type": "Nesne",
+      "tr": "Bal Kavanozlama Makinesi",
+      "forbidden": "Honey Jarrer",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Tungsten Frame",
+      "context": "Arıcılık çerçevesi",
+      "type": "Nesne",
+      "tr": "Tungsten Çerçeve",
+      "forbidden": "Tungsten Frame",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Golden Wood",
+      "context": "Arıcılık malzemesi",
+      "type": "Kaynak",
+      "tr": "Altın Odun",
+      "forbidden": "Golden Wood",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Orchid Queen",
+      "context": "Arı eşyası",
+      "type": "Nesne",
+      "tr": "Orkide Ana Arısı",
+      "forbidden": "Orchid Queen",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Orchid Drone",
+      "context": "Arı eşyası",
+      "type": "Nesne",
+      "tr": "Orkide Erkek Arısı",
+      "forbidden": "Orchid Drone",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Bumblebee Queen",
+      "context": "Arı eşyası",
+      "type": "Nesne",
+      "tr": "Bombus Ana Arısı",
+      "forbidden": "Bumblebee Queen",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Bumblebee Drone",
+      "context": "Arı eşyası",
+      "type": "Nesne",
+      "tr": "Bombus Erkek Arısı",
+      "forbidden": "Bumblebee Drone",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Bug Net",
+      "context": "Vanilla araç",
+      "type": "Nesne",
+      "tr": "Böcek Ağı",
+      "forbidden": "Bug Net",
+      "status": "LOCKED",
+      "note": "v0.12 vanilla kaynak doğrulandı"
+    },
+    {
+      "source": "Red Flower",
+      "context": "Vanilla bitki",
+      "type": "Nesne",
+      "tr": "Kırmızı Çiçek",
+      "forbidden": "Red Flower",
+      "status": "LOCKED",
+      "note": "v0.12 vanilla kaynak doğrulandı"
+    },
+    {
+      "source": "Empty Bottle",
+      "context": "Vanilla üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Boş Şişe",
+      "forbidden": "Empty Bottle",
+      "status": "LOCKED",
+      "note": "v0.12 vanilla kaynak doğrulandı"
+    },
+    {
+      "source": "Greenfinger Medal",
+      "context": "Outpost görev artefaktı",
+      "type": "Nesne",
+      "tr": "Greenfinger Madalyası",
+      "forbidden": "Greenfinger Medal",
+      "status": "LOCKED",
+      "note": "Greenfinger özel unvanı korunur"
+    },
+    {
+      "source": "Lucky Coin",
+      "context": "Outpost görev artefaktı",
+      "type": "Nesne",
+      "tr": "Uğurlu Para",
+      "forbidden": "Lucky Coin",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Crystalline Trophy",
+      "context": "Outpost görev artefaktı",
+      "type": "Nesne",
+      "tr": "Kristal Kupa",
+      "forbidden": "Crystalline Trophy",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Alien Broadcast Node",
+      "context": "Outpost görev artefaktı",
+      "type": "Nesne",
+      "tr": "Uzaylı Yayın Düğümü",
+      "forbidden": "Alien Broadcast Node",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "X'i Relic",
+      "context": "Outpost görev artefaktı",
+      "type": "Nesne",
+      "tr": "X'i Kalıntısı",
+      "forbidden": "X'i Relic",
+      "status": "LOCKED",
+      "note": "X'i özel ad olarak korunur"
+    },
+    {
+      "source": "Ancient Remote",
+      "context": "Outpost görev artefaktı",
+      "type": "Nesne",
+      "tr": "Kadim Kumanda",
+      "forbidden": "Ancient Remote",
+      "status": "LOCKED",
+      "note": "Ancients -> Kadimler ailesiyle uyumlu"
+    },
+    {
+      "source": "Sstabbed-Thingss Emporium",
+      "context": "Bilim Karakolu Floran dükkânı",
+      "type": "Özel ad/Nesne",
+      "tr": "Saplanmış Şeyler Pazarı",
+      "forbidden": "Sstabbed-Thingss Emporium",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Murder-Twig's Yum-Yums",
+      "context": "Bilim Karakolu yiyecek dükkânı",
+      "type": "Özel ad/Nesne",
+      "tr": "Murder-Twig'in Lezzetleri",
+      "forbidden": "Murder-Twig's Yum-Yums",
+      "status": "LOCKED",
+      "note": "Murder-Twig özel adı korunur"
+    },
+    {
+      "source": "Gems of Soul",
+      "context": "Bilim Karakolu Eld'uukhar dükkânı",
+      "type": "Özel ad/Nesne",
+      "tr": "Ruhun Mücevherleri",
+      "forbidden": "Gems of Soul",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Lorewalker's Shop",
+      "context": "Bilim Karakolu Kirhos dükkânı",
+      "type": "Özel ad/Nesne",
+      "tr": "Lorewalker'ın Dükkânı",
+      "forbidden": "Lorewalker's Shop",
+      "status": "LOCKED",
+      "note": "Lorewalker unvanı korunur"
+    },
+    {
+      "source": "Silenes' Minerals",
+      "context": "Bilim Karakolu Radien dükkânı",
+      "type": "Özel ad/Nesne",
+      "tr": "Silene'nin Mineralleri",
+      "forbidden": "Silenes' Minerals",
+      "status": "LOCKED",
+      "note": "Silene kişi adı olarak korunur"
+    },
+    {
+      "source": "Vanilla / vanilla",
+      "context": "Oyuncuya dönük ana oyun karşılaştırması",
+      "type": "Meta terim",
+      "tr": "ana oyun",
+      "forbidden": "vanilla",
+      "status": "LOCKED",
+      "note": "İngilizce bilmeden anlaşılabilir olmalı"
+    },
+    {
+      "source": "Eldritch",
+      "context": "Genel sıfat / kozmik-korku tonu",
+      "type": "Sıfat",
+      "tr": "tekinsiz",
+      "forbidden": "eldritch",
+      "status": "LOCKED",
+      "note": "Özel ad olmadığı sürece doğal Türkçe kullanılır"
+    },
+    {
+      "source": "Silt",
+      "context": "Jeolojik malzeme",
+      "type": "Kaynak",
+      "tr": "Mil",
+      "forbidden": "Silt",
+      "status": "LOCKED",
+      "note": "Türkçe jeoloji kullanımındaki karşılık"
+    },
+    {
+      "source": "Loose Silt",
+      "context": "Vanilla blok/eşya adı",
+      "type": "Nesne",
+      "tr": "Gevşek Mil",
+      "forbidden": "Loose Silt",
+      "status": "LOCKED",
+      "note": "Sifter tutorial hedefiyle envanter adı eşlendi"
+    },
+    {
+      "source": "Gravel",
+      "context": "Vanilla blok/eşya adı",
+      "type": "Nesne",
+      "tr": "Çakıl",
+      "forbidden": "Gravel",
+      "status": "LOCKED",
+      "note": "Sifter tutorial hedefiyle envanter adı eşlendi"
+    },
+    {
+      "source": "Madness",
+      "context": "Sistem / para birimi",
+      "type": "Sistem",
+      "tr": "Delilik",
+      "forbidden": "Madness",
+      "status": "LOCKED",
+      "note": "Delilik/Metafizik sisteminin ana kaynağı"
+    },
+    {
+      "source": "Metaphysics",
+      "context": "Araştırma ağacı",
+      "type": "Sistem",
+      "tr": "Metafizik",
+      "forbidden": "Metaphysics",
+      "status": "LOCKED",
+      "note": "v0.8 ana araştırma ağacı"
+    },
+    {
+      "source": "Psionics",
+      "context": "Delilik araştırması / bilimkurgu kavramı",
+      "type": "Bilim",
+      "tr": "Psiyonik",
+      "forbidden": "Psionik, Psişik",
+      "status": "LOCKED",
+      "note": "Türkçe bilimkurgu kullanımına göre standardize edildi"
+    },
+    {
+      "source": "Psionic Energy",
+      "context": "Delilik / enerji kaynağı",
+      "type": "Kavram",
+      "tr": "Psiyonik Enerji",
+      "forbidden": "Psionik Enerji, Psişik Enerji",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Psionic Focus",
+      "context": "Delilik / psiyonik silah",
+      "type": "Nesne",
+      "tr": "Psiyonik Odak",
+      "forbidden": "Psionik Odak",
+      "status": "LOCKED",
+      "note": "psiejector gerçek kısa adı"
+    },
+    {
+      "source": "Psionics Table",
+      "context": "Delilik üretim tezgâhı",
+      "type": "Nesne",
+      "tr": "Psiyonik Tezgâhı",
+      "forbidden": "Psionik Tezgâhı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Psionic Amplifier",
+      "context": "Delilik enerji makinesi",
+      "type": "Nesne",
+      "tr": "Psiyonik Yükselteç",
+      "forbidden": "Psionik Amplifikatör",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Brain Extractor",
+      "context": "Delilik / silah",
+      "type": "Nesne",
+      "tr": "Beyin Çıkarıcı",
+      "forbidden": "Brain Extractor",
+      "status": "LOCKED",
+      "note": "Gerçek activeitem kısa adı"
+    },
+    {
+      "source": "Dark Matter",
+      "context": "Kozmik araştırma / malzeme",
+      "type": "Kaynak",
+      "tr": "Karanlık Madde",
+      "forbidden": "Dark Matter",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Matter Converter",
+      "context": "Delilik / madde işleme",
+      "type": "Nesne",
+      "tr": "Madde Dönüştürücü",
+      "forbidden": "Matter Converter",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Autopsy Table",
+      "context": "Delilik / laboratuvar",
+      "type": "Nesne",
+      "tr": "Otopsi Masası",
+      "forbidden": "Autopsy Table",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Insta-Freud",
+      "context": "Ruh sağlığı cihazı",
+      "type": "Özel ad",
+      "tr": "Insta-Freud",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Ürün/cihaz adı korunur"
+    },
+    {
+      "source": "Astral Projection",
+      "context": "Delilik araştırması",
+      "type": "Kavram",
+      "tr": "Astral Projeksiyon",
+      "forbidden": "Astral Yansıtma",
+      "status": "LOCKED",
+      "note": "Yerleşik kullanım"
+    },
+    {
+      "source": "Dimensional Phasing",
+      "context": "Delilik araştırması",
+      "type": "Kavram",
+      "tr": "Boyutsal Faz Geçişi",
+      "forbidden": "Boyutsal Fazlama",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Psi-1/2/3/4 Energy",
+      "context": "Psiyonik enerji zinciri",
+      "type": "Kaynak",
+      "tr": "Psi-1/2/3/4 Enerjisi",
+      "forbidden": "Psi-X Energy",
+      "status": "LOCKED",
+      "note": "Kademe numarası korunur",
+      "forms": [
+        {
+          "en": "Psi-1 Energy",
+          "tr": "Psi-1 Enerjisi"
+        },
+        {
+          "en": "Psi-2 Energy",
+          "tr": "Psi-2 Enerjisi"
+        },
+        {
+          "en": "Psi-3 Energy",
+          "tr": "Psi-3 Enerjisi"
+        },
+        {
+          "en": "Psi-4 Energy",
+          "tr": "Psi-4 Enerjisi"
+        }
+      ]
+    },
+    {
+      "source": "Lantern Stick",
+      "context": "Tutorial / sırt ekipmanı",
+      "type": "Nesne",
+      "tr": "Fener Çubuğu",
+      "forbidden": "Lantern Stick",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Methanol",
+      "context": "Kimyasal / tutorial hedefi",
+      "type": "Kaynak",
+      "tr": "Metanol",
+      "forbidden": "Methanol",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Primitive Spear",
+      "context": "Avcılık tutorialı",
+      "type": "Silah",
+      "tr": "İlkel Mızrak",
+      "forbidden": "Primitive Spear",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Rock Breaker",
+      "context": "Güç / taş işleme makinesi",
+      "type": "Nesne",
+      "tr": "Kaya Parçalayıcı",
+      "forbidden": "Kaya Kırıcı",
+      "status": "LOCKED",
+      "note": "Rock Crusher = Kaya Kırıcı; iki makine karıştırılmaz"
+    },
+    {
+      "source": "Wooden Centrifuge",
+      "context": "Tutorial / santrifüj",
+      "type": "Nesne",
+      "tr": "Ahşap Santrifüj",
+      "forbidden": "Wooden Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Iron Centrifuge",
+      "context": "Tutorial / santrifüj yükseltmesi",
+      "type": "Nesne",
+      "tr": "Demir Santrifüj",
+      "forbidden": "Iron Centrifuge",
+      "status": "LOCKED",
+      "note": "Ahşap Santrifüjün elektrikli yükseltmesi"
+    },
+    {
+      "source": "Powered Centrifuge",
+      "context": "Demir Santrifüj alt başlığı",
+      "type": "UI",
+      "tr": "Elektrikli Santrifüj",
+      "forbidden": "Powered Centrifuge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Sifter",
+      "context": "Tutorial / işleme makinesi",
+      "type": "Nesne",
+      "tr": "Elek",
+      "forbidden": "Sifter",
+      "status": "LOCKED",
+      "note": "Powder Sifter = Toz Eleği"
+    },
+    {
+      "source": "Stock Mech Legs",
+      "context": "Mech parçası",
+      "type": "Nesne",
+      "tr": "Standart Mech Bacakları",
+      "forbidden": "Stock Mech Legs",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Improved Mech Legs",
+      "context": "Mech parçası",
+      "type": "Nesne",
+      "tr": "Geliştirilmiş Mech Bacakları",
+      "forbidden": "Improved Mech Legs",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Mech Tablet",
+      "context": "Tutorial aracı",
+      "type": "Nesne",
+      "tr": "Mech Tableti",
+      "forbidden": "Mech Tablet",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Tech Tablet",
+      "context": "Tutorial aracı",
+      "type": "Nesne",
+      "tr": "Tech Tableti",
+      "forbidden": "Tech Tablet",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Mechanic's Wrench",
+      "context": "Kablolama aracı",
+      "type": "Nesne",
+      "tr": "Tamirci Anahtarı",
+      "forbidden": "Mechanic's Wrench",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Storage Bridge",
+      "context": "Eşya ağı nesnesi",
+      "type": "Nesne",
+      "tr": "Depolama Köprüsü",
+      "forbidden": "Storage Bridge",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Tech Console",
+      "context": "Vanilla/FU tutorial",
+      "type": "Nesne",
+      "tr": "Tech Konsolu",
+      "forbidden": "Tech Console",
+      "status": "LOCKED",
+      "note": "vanilla kaynak doğrulandı"
+    },
+    {
+      "source": "Paper",
+      "context": "Vanilla tutorial hedefi",
+      "type": "Kaynak",
+      "tr": "Kağıt",
+      "forbidden": "Paper",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Silver Bar",
+      "context": "Vanilla tutorial hedefi",
+      "type": "Kaynak",
+      "tr": "Gümüş Külçesi",
+      "forbidden": "Silver Bar",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Oil",
+      "context": "Vanilla tutorial hedefi",
+      "type": "Kaynak",
+      "tr": "Yağ",
+      "forbidden": "Oil",
+      "status": "LOCKED",
+      "note": "liquidoil"
+    },
+    {
+      "source": "Booster Croptop",
+      "context": "Kevin görev hedefi / zırh",
+      "type": "Nesne",
+      "tr": "Booster Kısa Üstü",
+      "forbidden": "Booster Croptop",
+      "status": "LOCKED",
+      "note": "boosterchest gerçek envanter adı"
+    },
+    {
+      "source": "Biofuel Canister",
+      "context": "Kevin görev hedefi / yakıt",
+      "type": "Kaynak",
+      "tr": "Biyoyakıt Kapsülü",
+      "forbidden": "Biyoyakıt Bidonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Algae",
+      "context": "Biyoyakıt girdisi",
+      "type": "Kaynak",
+      "tr": "Yosun",
+      "forbidden": "Alg",
+      "status": "LOCKED",
+      "note": "Oyuncu için doğal ve kısa ad"
+    },
+    {
+      "source": "Baby Head (on a stick)",
+      "context": "Kevin görev hedefi / yiyecek",
+      "type": "Nesne",
+      "tr": "Çubukta Bebek Kafası",
+      "forbidden": "Bebek Başı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Orange",
+      "context": "Kevin görev hedefi / vanilla ürün",
+      "type": "Nesne",
+      "tr": "Portakal",
+      "forbidden": "Turuncu Meyve",
+      "status": "LOCKED",
+      "note": "Kaynaktaki orange kelime oyunu bağlamda korunur"
+    },
+    {
+      "source": "Plasmic Crystal",
+      "context": "Kevin görev hedefi / blooddiamond",
+      "type": "Kaynak",
+      "tr": "Plazmik Kristal",
+      "forbidden": "Plazma Kristali",
+      "status": "LOCKED",
+      "note": "Gerçek envanter adı"
+    },
+    {
+      "source": "Superior Brain",
+      "context": "Kevin görev hedefi / brain",
+      "type": "Kaynak",
+      "tr": "Üstün Beyin",
+      "forbidden": "Ortalama Beyin",
+      "status": "LOCKED",
+      "note": "Kaynak görev generic/yanlış average quality der; envanter adı esas"
+    },
+    {
+      "source": "Neutronium Rod",
+      "context": "Kevin görev hedefi / yakıt",
+      "type": "Kaynak",
+      "tr": "Nötronyum Çubuğu",
+      "forbidden": "Nötronyum",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Anti-Neutronium Rod",
+      "context": "Kevin görev hedefi / yakıt",
+      "type": "Kaynak",
+      "tr": "Anti-Nötronyum Çubuğu",
+      "forbidden": "Anti-Nötronyum",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Neutron Bomb",
+      "context": "Kevin/Khe görev hedefi",
+      "type": "Silah",
+      "tr": "Nötron Bombası",
+      "forbidden": "Nötronyum Bombası",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Kill Pod",
+      "context": "Kevin icadı",
+      "type": "Nesne",
+      "tr": "Ölüm Kapsülü",
+      "forbidden": "Öldürme Podu",
+      "status": "LOCKED",
+      "note": "Tam envanter adı: Kevin-Tek Ölüm Kapsülü"
+    },
+    {
+      "source": "Pure Erchius Crystal",
+      "context": "Khe görev hedefi",
+      "type": "Kaynak",
+      "tr": "Saf Erchius Kristali",
+      "forbidden": "Saf Erchius",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Ghost Lantern",
+      "context": "Khe görev hedefi",
+      "type": "Nesne",
+      "tr": "Hayalet Feneri",
+      "forbidden": "Ruh Feneri",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Gnawed Coin",
+      "context": "Khe pickup artefaktı",
+      "type": "Nesne",
+      "tr": "Kemirilmiş Sikke",
+      "forbidden": "Kemirilmiş Para",
+      "status": "LOCKED",
+      "note": "Lucky Coin'den ayrı eşya"
+    },
+    {
+      "source": "Broken Crystalline Trophy",
+      "context": "Khe pickup artefaktı",
+      "type": "Nesne",
+      "tr": "Kırık Kristal Kupa",
+      "forbidden": "Kırık Kristal Ödülü",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Battle",
+      "context": "Görev-listesi ana grubu",
+      "type": "Sistem",
+      "tr": "Savaş",
+      "forbidden": "Muharebe",
+      "status": "LOCKED",
+      "note": "Kısa UI başlığı"
+    },
+    {
+      "source": "Gear",
+      "context": "Battle alt grubu",
+      "type": "Sistem",
+      "tr": "Ekipman",
+      "forbidden": "Donanım",
+      "status": "LOCKED",
+      "note": "Mevcut görev-listesi bağlamı"
+    },
+    {
+      "source": "Monsters and Villains",
+      "context": "Battle alt grubu",
+      "type": "Sistem",
+      "tr": "Canavarlar ve Düşmanlar",
+      "forbidden": "Canavarlar ve Kötüler",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "[BOSS]",
+      "context": "Görev başlığı etiketi",
+      "type": "UI",
+      "tr": "[PATRON]",
+      "forbidden": "[BOSS]",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Plebeian Cap",
+      "context": "Battle görev hedefi / zırh",
+      "type": "Nesne",
+      "tr": "Sıradan Şapka",
+      "forbidden": "Avam Şapkası",
+      "status": "LOCKED",
+      "note": "`fumantizitier1head` gerçek kısa adı"
+    },
+    {
+      "source": "Arm Cannon",
+      "context": "Battle görev hedefi / silah",
+      "type": "Nesne",
+      "tr": "Kol Topu",
+      "forbidden": "Kol Silahı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "F4 Energy Rifle",
+      "context": "Battle görev hedefi / silah",
+      "type": "Nesne",
+      "tr": "F4 Enerji Tüfeği",
+      "forbidden": "F4 Enerji Silahı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Laser Pistol",
+      "context": "Battle görev hedefi / silah",
+      "type": "Nesne",
+      "tr": "Lazer Tabancası",
+      "forbidden": "Lazer Silahı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Steel Warblade",
+      "context": "Battle görev hedefi / silah",
+      "type": "Nesne",
+      "tr": "Çelik Savaş Kılıcı",
+      "forbidden": "Çelik Savaş Bıçağı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Ferozium Cleaver",
+      "context": "Battle görev hedefi / silah",
+      "type": "Nesne",
+      "tr": "Ferozium Satırı",
+      "forbidden": "Ferozium Balta",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Relic Shield",
+      "context": "Patron görev hedefi / kalkan",
+      "type": "Nesne",
+      "tr": "Yadigâr Kalkanı",
+      "forbidden": "Kalıntı Kalkanı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Mama Poptop",
+      "context": "Patron adı",
+      "type": "Özel ad",
+      "tr": "Anne Poptop",
+      "forbidden": "Ana Poptop",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Mama Poptop Claw",
+      "context": "Patron görev hedefi / silah",
+      "type": "Nesne",
+      "tr": "Anne Poptop Pençesi",
+      "forbidden": "Poptop Pençesi",
+      "status": "LOCKED",
+      "note": "Gerçek envanter adı"
+    },
+    {
+      "source": "Web Shooter",
+      "context": "Patron görev hedefi / araç",
+      "type": "Nesne",
+      "tr": "Ağ Atıcı",
+      "forbidden": "Ağ Fırlatıcı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Hyper Targeting Chip",
+      "context": "Patron görev hedefi / augment",
+      "type": "Nesne",
+      "tr": "Hiper Hedefleme Çipi",
+      "forbidden": "Hiper Hedef Çipi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Aberrant Sentry",
+      "context": "Patron adı",
+      "type": "Düşman",
+      "tr": "Bozulmuş Nöbetçi",
+      "forbidden": "Aykırı Nöbetçi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Warbot",
+      "context": "Patron adı",
+      "type": "Düşman",
+      "tr": "Savaş Robotu",
+      "forbidden": "Warbot",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Densinium Helm",
+      "context": "Zırh",
+      "type": "Nesne",
+      "tr": "Densinium Miğferi",
+      "forbidden": "Densinium Başlığı",
+      "status": "LOCKED",
+      "note": "v0.16 görev ve envanter eşleşmesi"
+    },
+    {
+      "source": "Cthulhu Statue",
+      "context": "Nesne",
+      "type": "Nesne",
+      "tr": "Cthulhu Heykeli",
+      "forbidden": "Cthulhu Statüsü",
+      "status": "LOCKED",
+      "note": "v0.16 görev ve envanter eşleşmesi"
+    },
+    {
+      "source": "Molten Core",
+      "context": "Malzeme",
+      "type": "Nesne",
+      "tr": "Erimiş Çekirdek",
+      "forbidden": "Erimiş Kor",
+      "status": "LOCKED",
+      "note": "Vanilla hedef; bağımsız kaynak doğrulandı"
+    },
+    {
+      "source": "Shoggoth Flesh",
+      "context": "Malzeme",
+      "type": "Nesne",
+      "tr": "Shoggoth Eti",
+      "forbidden": "Shoggoth Parçası",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Wagner's ID card",
+      "context": "Görev eşyası",
+      "type": "Nesne",
+      "tr": "Wagner'ın Kimlik Kartı",
+      "forbidden": "Wagner Kimliği",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Tattered Grimoire",
+      "context": "Görev eşyası",
+      "type": "Nesne",
+      "tr": "Yıpranmış Büyü Kitabı",
+      "forbidden": "Yırtık Grimoire",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Precursor Data-Key",
+      "context": "Görev eşyası",
+      "type": "Nesne",
+      "tr": "Precursor Veri Anahtarı",
+      "forbidden": "Öncü Veri Anahtarı",
+      "status": "LOCKED",
+      "note": "Precursor özel adı çevrilmeden korunur"
+    },
+    {
+      "source": "Crappy Crew Bed",
+      "context": "Gemi nesnesi",
+      "type": "Nesne",
+      "tr": "Berbat Mürettebat Yatağı",
+      "forbidden": "Kötü Ekip Yatağı",
+      "status": "LOCKED",
+      "note": "BYOS görevi"
+    },
+    {
+      "source": "Crew Deed",
+      "context": "Gemi nesnesi",
+      "type": "Nesne",
+      "tr": "Mürettebat Tapusu",
+      "forbidden": "Ekip Tapusu",
+      "status": "LOCKED",
+      "note": "BYOS görevi"
+    },
+    {
+      "source": "Cyber Sphere",
+      "context": "Canavar",
+      "type": "Varlık",
+      "tr": "Siberküre",
+      "forbidden": "Siber Küre",
+      "status": "LOCKED",
+      "note": "Çoğul: Siberküreler"
+    },
+    {
+      "source": "Armorworks",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Zırh Atölyesi",
+      "forbidden": "Zırh İşleri",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Assembly Line",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Montaj Hattı",
+      "forbidden": "Birleştirme Hattı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Armory",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Cephanelik",
+      "forbidden": "Silahhane",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fuel Refinery",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Yakıt Rafinerisi",
+      "forbidden": "Yakıt Arıtıcısı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fission Furnace",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Fisyon Fırını",
+      "forbidden": "Bölünme Fırını",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Gene Sequencer",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Gen Dizileyici",
+      "forbidden": "Gen Sıralayıcı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Nanofabricator",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Nanoüretici",
+      "forbidden": "Nano Fabrikatör",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Cosmic Crucible",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Kozmik Pota",
+      "forbidden": "Kozmik Eritici",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Racialiser / Racializer",
+      "context": "Dönüştürme makinesi",
+      "type": "Nesne",
+      "tr": "Irk Dönüştürücü",
+      "forbidden": "Irksallaştırıcı",
+      "status": "LOCKED",
+      "note": "Kaynaktaki iki yazım aynı oyuncu kavramıdır"
+    },
+    {
+      "source": "Crystal Loom",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Kristal Dokuma Tezgâhı",
+      "forbidden": "Kristal Tezgâh",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Weapon Shuffler",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Silah Karıştırıcı",
+      "forbidden": "Silah Rastgeleştirici",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Hyper Compressor",
+      "context": "Üretim makinesi",
+      "type": "Nesne",
+      "tr": "Hiper Sıkıştırıcı",
+      "forbidden": "Aşırı Kompresör",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Power Relay",
+      "context": "Güç ağı nesnesi",
+      "type": "Nesne",
+      "tr": "Güç Rölesi",
+      "forbidden": "Güç Aktarıcı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Field Generator",
+      "context": "Güç nesnesi",
+      "type": "Nesne",
+      "tr": "Alan Jeneratörü",
+      "forbidden": "Saha Üreteci",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Nocturn Array",
+      "context": "Karanlık enerji üretimi",
+      "type": "Nesne",
+      "tr": "Gece Dizisi",
+      "forbidden": "Nocturn Dizisi",
+      "status": "LOCKED",
+      "note": "Weather Beacon etiketiyle eşlendi"
+    },
+    {
+      "source": "Power Sensor",
+      "context": "Güç ağı sensörü",
+      "type": "Nesne",
+      "tr": "Güç Sensörü",
+      "forbidden": "Enerji Sensörü",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Large Power Sensor",
+      "context": "Güç ağı sensörü",
+      "type": "Nesne",
+      "tr": "Büyük Güç Sensörü",
+      "forbidden": "Geniş Güç Sensörü",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Empty Batteries Sensor",
+      "context": "Güç ağı sensörü",
+      "type": "Nesne",
+      "tr": "Boş Pil Sensörü",
+      "forbidden": "Bitik Pil Sensörü",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Weather Beacon",
+      "context": "Işık/rüzgâr ölçüm cihazı",
+      "type": "Nesne",
+      "tr": "Hava İstasyonu",
+      "forbidden": "Hava Feneri",
+      "status": "LOCKED",
+      "note": "İşlevi esas alan oyuncu adı"
+    },
+    {
+      "source": "Gnome Workshop",
+      "context": "Üretim nesnesi",
+      "type": "Nesne",
+      "tr": "Gnom Atölyesi",
+      "forbidden": "Cüce Atölyesi",
+      "status": "LOCKED",
+      "note": "Gnome, dwarf/cüceden ayrı FU varlığıdır"
+    },
+    {
+      "source": "Entropic Converter",
+      "context": "Atmosfer makinesi",
+      "type": "Nesne",
+      "tr": "Entropik Dönüştürücü",
+      "forbidden": "Entropi Çevirici",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Warped Regulator",
+      "context": "Atmosfer makinesi",
+      "type": "Nesne",
+      "tr": "Çarpıtılmış Düzenleyici",
+      "forbidden": "Bükülmüş Regülatör",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Simple Battery",
+      "context": "Güç depolama",
+      "type": "Nesne",
+      "tr": "Basit Pil",
+      "forbidden": "Basit Batarya",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Incinerator",
+      "context": "İmha makinesi",
+      "type": "Nesne",
+      "tr": "İmha Fırını",
+      "forbidden": "Yakma Makinesi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Mass Incinerator",
+      "context": "İmha makinesi",
+      "type": "Nesne",
+      "tr": "Toplu İmha Fırını",
+      "forbidden": "Büyük Yakma Makinesi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Large Network Terminal",
+      "context": "Eşya ağı terminali",
+      "type": "Nesne",
+      "tr": "Büyük Ağ Terminali",
+      "forbidden": "Geniş Ağ Terminali",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Aromatic Candle",
+      "context": "Arıcılık dekoru",
+      "type": "Nesne",
+      "tr": "Aromatik Mum",
+      "forbidden": "Kokulu Mum",
+      "status": "LOCKED",
+      "note": "Flower Candle ailesinin oyuncu adı"
+    },
+    {
+      "source": "Ghostly Candle",
+      "context": "Arıcılık dekoru",
+      "type": "Nesne",
+      "tr": "Hayalet Mum",
+      "forbidden": "Ruhani Mum",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Honey Cooking Table",
+      "context": "Arıcılık/yemek makinesi",
+      "type": "Nesne",
+      "tr": "Bal Pişirme Tezgâhı",
+      "forbidden": "Ballı Yemek Masası",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Honey Extractor",
+      "context": "Arıcılık makinesi",
+      "type": "Nesne",
+      "tr": "Bal Özütleyici",
+      "forbidden": "Bal Çıkarıcı",
+      "status": "LOCKED",
+      "note": "Honey Jarring Machine'den ayrı nesne"
+    },
+    {
+      "source": "Lab Bookcase",
+      "context": "Bilim Karakolu mobilyası",
+      "type": "Nesne",
+      "tr": "Laboratuvar Kitaplığı",
+      "forbidden": "Laboratuvar Rafı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Info Booth",
+      "context": "Bilim Karakolu danışma NPC nesnesi",
+      "type": "Nesne",
+      "tr": "Danışma Noktası",
+      "forbidden": "Bilgi Kulübesi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Vina Plushy",
+      "context": "Bilim Karakolu dekoru",
+      "type": "Nesne",
+      "tr": "Vina Pelüşü",
+      "forbidden": "Vina Pelüş Oyuncağı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Munchies' Dirt",
+      "context": "Radien dükkân nesnesi",
+      "type": "Nesne",
+      "tr": "Munchies'in Toprağı",
+      "forbidden": "Munchies Toprağı",
+      "status": "LOCKED",
+      "note": "Munchies özel adı korunur"
+    },
+    {
+      "source": "Lab Directory",
+      "context": "Bilim Karakolu ipucu / makine",
+      "type": "Nesne",
+      "tr": "Laboratuvar Dizini",
+      "forbidden": "Laboratuvar Rehberi",
+      "status": "LOCKED",
+      "note": "Yakındaki makine çıktısı arama işlevi"
+    },
+    {
+      "source": "Meatvine",
+      "context": "FU bitkisi",
+      "type": "Nesne",
+      "tr": "Et Sarmaşığı",
+      "forbidden": "Et Asması",
+      "status": "LOCKED",
+      "note": "Danışma Noktası ipucuyla standartlaştırıldı"
+    },
+    {
+      "source": "Darklight Flower",
+      "context": "FU bitkisi",
+      "type": "Nesne",
+      "tr": "Karanlık Işık Çiçeği",
+      "forbidden": "Karanlıkışık Çiçeği",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Ore",
+      "context": "Envanter malzeme son eki",
+      "type": "Terim",
+      "tr": "Cevher",
+      "forbidden": "Maden",
+      "status": "LOCKED",
+      "note": "Özel malzeme adı korunur: Densinium Cevheri"
+    },
+    {
+      "source": "Bar",
+      "context": "Envanter metal son eki",
+      "type": "Terim",
+      "tr": "Külçe",
+      "forbidden": "Çubuk",
+      "status": "LOCKED",
+      "note": "İzotop rod kullanımından ayrılır"
+    },
+    {
+      "source": "Rod",
+      "context": "İzotop/yakıt son eki",
+      "type": "Terim",
+      "tr": "Çubuk",
+      "forbidden": "Külçe",
+      "status": "LOCKED",
+      "note": "Döteryum Çubuğu, Toryum Çubuğu"
+    },
+    {
+      "source": "Shard",
+      "context": "Kristal/artefakt parçası",
+      "type": "Terim",
+      "tr": "Parça",
+      "forbidden": "Kırık",
+      "status": "LOCKED",
+      "note": "Lunari Parçası, Protheon Parçası"
+    },
+    {
+      "source": "Fuel",
+      "context": "Tooltip durum satırı",
+      "type": "UI",
+      "tr": "Yakıt",
+      "forbidden": "Fuel",
+      "status": "LOCKED",
+      "note": "Renk ve sayı kodları korunur"
+    },
+    {
+      "source": "Type",
+      "context": "Tooltip sınıf satırı",
+      "type": "UI",
+      "tr": "Tür",
+      "forbidden": "Tip",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Madness Gain",
+      "context": "Narkotik tooltipi",
+      "type": "UI",
+      "tr": "Delilik Kazanımı",
+      "forbidden": "Delilik Kazancı",
+      "status": "LOCKED",
+      "note": "Mevcut tüketilebilir eşya terminolojisiyle eşlendi"
+    },
+    {
+      "source": "Deuterium",
+      "context": "İzotop",
+      "type": "Kaynak",
+      "tr": "Döteryum",
+      "forbidden": "Deuterium",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Neptunium",
+      "context": "Element/izotop",
+      "type": "Kaynak",
+      "tr": "Neptünyum",
+      "forbidden": "Neptunium",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Plutonium",
+      "context": "Element/izotop",
+      "type": "Kaynak",
+      "tr": "Plütonyum",
+      "forbidden": "Plutonium",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Thorium",
+      "context": "Element/izotop",
+      "type": "Kaynak",
+      "tr": "Toryum",
+      "forbidden": "Thorium",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Uranium",
+      "context": "Element/izotop",
+      "type": "Kaynak",
+      "tr": "Uranyum",
+      "forbidden": "Uranium",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Nitrogen",
+      "context": "Element",
+      "type": "Kaynak",
+      "tr": "Azot",
+      "forbidden": "Nitrojen",
+      "status": "LOCKED",
+      "note": "Yerleşik Türkçe element adı"
+    },
+    {
+      "source": "Oxygen",
+      "context": "Element",
+      "type": "Kaynak",
+      "tr": "Oksijen",
+      "forbidden": "Oxygen",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Sulphur",
+      "context": "Element",
+      "type": "Kaynak",
+      "tr": "Kükürt",
+      "forbidden": "Sülfür",
+      "status": "LOCKED",
+      "note": "Element adı; bileşiklerde sülfat kullanımı ayrıdır"
+    },
+    {
+      "source": "Phosphorus",
+      "context": "Element",
+      "type": "Kaynak",
+      "tr": "Fosfor",
+      "forbidden": "Phosphorus",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fungal Ichor",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Mantar Özsuyu",
+      "forbidden": "Mantar İkoru",
+      "status": "LOCKED",
+      "note": "Mutavisk araştırma metniyle eşlendi"
+    },
+    {
+      "source": "Bio Thread",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Biyo-İplik",
+      "forbidden": "Biyo İp",
+      "status": "LOCKED",
+      "note": "Mutavisk araştırma metniyle eşlendi"
+    },
+    {
+      "source": "Mutavisk Silk",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Mutavisk İpeği",
+      "forbidden": "Mutavisk Silk",
+      "status": "LOCKED",
+      "note": "Science görevleriyle eşlendi"
+    },
+    {
+      "source": "Carbon Plate",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Karbon Plaka",
+      "forbidden": "Karbon Levha",
+      "status": "LOCKED",
+      "note": "Carbon Plating / Karbon Kaplama genel kavramından ayrı gerçek eşya adı"
+    },
+    {
+      "source": "Advanced Alloy",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Gelişmiş Alaşım",
+      "forbidden": "İleri Alaşım",
+      "status": "LOCKED",
+      "note": "Advanced sıfat kilidiyle uyumlu"
+    },
+    {
+      "source": "Dense Alloy",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Yoğun Alaşım",
+      "forbidden": "Sıkı Alaşım",
+      "status": "LOCKED",
+      "note": "Araştırma adıyla eşlendi"
+    },
+    {
+      "source": "Lunari Crystal",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Lunari Kristali",
+      "forbidden": "Lunari Cevheri",
+      "status": "LOCKED",
+      "note": "Lunari özel adı korunur"
+    },
+    {
+      "source": "Precursor Alloy",
+      "context": "Üretim malzemesi",
+      "type": "Kaynak",
+      "tr": "Precursor Alaşımı",
+      "forbidden": "Öncül Alaşımı",
+      "status": "LOCKED",
+      "note": "Precursor özel adı korunur"
+    },
+    {
+      "source": "X'ian",
+      "context": "Tür/teknoloji özel adı",
+      "type": "Özel ad",
+      "tr": "X'ian",
+      "forbidden": "Şiyan",
+      "status": "LOCKED",
+      "note": "Kesme işareti ve yazım korunur"
+    },
+    {
+      "source": "Aether",
+      "context": "FU dünya/malzeme özel adı",
+      "type": "Özel ad",
+      "tr": "Aether",
+      "forbidden": "Eter",
+      "status": "LOCKED",
+      "note": "Aether Worlds terminolojisiyle eşlendi"
+    },
+    {
+      "source": "Avian",
+      "context": "Starbound tür adı",
+      "type": "Özel ad",
+      "tr": "Avian",
+      "forbidden": "Kuş",
+      "status": "LOCKED",
+      "note": "Gen eşyasında da tür adı korunur"
+    },
+    {
+      "source": "Master Manipulator",
+      "context": "Görev / araç",
+      "type": "Nesne",
+      "tr": "Usta Manipülatör",
+      "forbidden": "Ana Manipülatör",
+      "status": "LOCKED",
+      "note": "Matter Manipulator ailesiyle uyumlu"
+    },
+    {
+      "source": "Distortion Sphere",
+      "context": "Tech görevi",
+      "type": "Tech",
+      "tr": "Çarpıtma Küresi",
+      "forbidden": "Bozulma Topu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Precursor Microsphere",
+      "context": "Tech görevi",
+      "type": "Tech",
+      "tr": "Precursor Mikroküresi",
+      "forbidden": "Öncül Mikroküre",
+      "status": "LOCKED",
+      "note": "Precursor özel adı korunur"
+    },
+    {
+      "source": "Dodge",
+      "context": "Tech görevi",
+      "type": "Tech",
+      "tr": "Kaçınma",
+      "forbidden": "Sıyrılma",
+      "status": "LOCKED",
+      "note": "Kısa yönlü kaçınma hareketi"
+    },
+    {
+      "source": "Repulsor Blast",
+      "context": "Tech işlevi",
+      "type": "Yetenek",
+      "tr": "İtici Patlama",
+      "forbidden": "Geri Tepme Patlaması",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Challenge Labs",
+      "context": "Özel görev bölgesi",
+      "type": "Özel ad",
+      "tr": "Challenge Labs",
+      "forbidden": "Meydan Okuma Laboratuvarları",
+      "status": "LOCKED",
+      "note": "SAIL/dungeon adıyla eşleşir"
+    },
+    {
+      "source": "Letheia Corporation",
+      "context": "Fraksiyon / şirket",
+      "type": "Özel ad",
+      "tr": "Letheia Corporation",
+      "forbidden": "Letheia Şirketi",
+      "status": "LOCKED",
+      "note": "Marka adı korunur"
+    },
+    {
+      "source": "Boomerang",
+      "context": "Silah türü",
+      "type": "Silah",
+      "tr": "Bumerang",
+      "forbidden": "Boomerang",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Crossbow",
+      "context": "Silah türü",
+      "type": "Silah",
+      "tr": "Arbalet",
+      "forbidden": "Tatar Yayı",
+      "status": "LOCKED",
+      "note": "Kısa envanter adı"
+    },
+    {
+      "source": "Broadsword",
+      "context": "İki elli geniş kılıç sınıfı",
+      "type": "Silah",
+      "tr": "Büyük Kılıç",
+      "forbidden": "Geniş Kılıç",
+      "status": "LOCKED",
+      "note": "Oyuncu için sınıf işlevini daha açık anlatır"
+    },
+    {
+      "source": "Greataxe",
+      "context": "İki elli balta sınıfı",
+      "type": "Silah",
+      "tr": "Büyük Balta",
+      "forbidden": "Dev Balta",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Quarterstaff",
+      "context": "Uzun yakın dövüş sopası",
+      "type": "Silah",
+      "tr": "Dövüş Asası",
+      "forbidden": "Çeyrek Asa",
+      "status": "LOCKED",
+      "note": "Kelime kelime karşılıktan kaçınıldı"
+    },
+    {
+      "source": "Rapier",
+      "context": "İnce delici kılıç sınıfı",
+      "type": "Silah",
+      "tr": "Meç",
+      "forbidden": "Rapier",
+      "status": "LOCKED",
+      "note": "Yerleşik Türkçe silah adı"
+    },
+    {
+      "source": "Shortspear",
+      "context": "Kısa mızrak sınıfı",
+      "type": "Silah",
+      "tr": "Kısa Mızrak",
+      "forbidden": "Kısa Kargı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Shortsword",
+      "context": "Kısa kılıç sınıfı",
+      "type": "Silah",
+      "tr": "Kısa Kılıç",
+      "forbidden": "Kısa Pala",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Staff",
+      "context": "Büyü silahı sınıfı",
+      "type": "Silah",
+      "tr": "Asa",
+      "forbidden": "Değnek",
+      "status": "LOCKED",
+      "note": "Wand sınıfından ayrılır"
+    },
+    {
+      "source": "Wand",
+      "context": "Tek elli büyü silahı sınıfı",
+      "type": "Silah",
+      "tr": "Değnek",
+      "forbidden": "Asa",
+      "status": "LOCKED",
+      "note": "Staff sınıfından ayrılır"
+    },
+    {
+      "source": "LMG",
+      "context": "Hafif otomatik tüfek sınıfı",
+      "type": "Silah",
+      "tr": "Hafif Makineli Tüfek",
+      "forbidden": "LMG",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "SMG",
+      "context": "Yakın menzil otomatik silah sınıfı",
+      "type": "Silah",
+      "tr": "Makineli Tabanca",
+      "forbidden": "Hafif Makineli Tüfek",
+      "status": "LOCKED",
+      "note": "LMG sınıfından ayrılır"
+    },
+    {
+      "source": "Hunting weapon",
+      "context": "Tooltip işlev etiketi",
+      "type": "UI",
+      "tr": "Av silahı",
+      "forbidden": "Avcılık silahı",
+      "status": "LOCKED",
+      "note": "İlkel Mızrak çevirisiyle eşlendi"
+    },
+    {
+      "source": "Inflicts bleeding",
+      "context": "Tooltip durum etiketi",
+      "type": "UI",
+      "tr": "Kanamaya yol açar",
+      "forbidden": "Kanama verir",
+      "status": "LOCKED",
+      "note": "Poptop Pençesi çevirisiyle eşlendi"
+    },
+    {
+      "source": "Breaks blocks",
+      "context": "Tooltip işlev etiketi",
+      "type": "UI",
+      "tr": "Blokları kırar",
+      "forbidden": "Blok kırıcı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Stynger",
+      "context": "Pompalı ok silahı modeli",
+      "type": "Özel ad",
+      "tr": "Stynger",
+      "forbidden": "İğneleyici",
+      "status": "LOCKED",
+      "note": "Kaynaktaki stilize model adı korunur"
+    },
+    {
+      "source": "Cestus",
+      "context": "Yumruk silahı sınıfı",
+      "type": "Silah",
+      "tr": "Cestus",
+      "forbidden": "Yumrukluk",
+      "status": "LOCKED",
+      "note": "Tarihî silah adı"
+    },
+    {
+      "source": "Protectorate",
+      "context": "Fraksiyon / ekipman ailesi",
+      "type": "Özel ad",
+      "tr": "Protectorate",
+      "forbidden": "Koruyuculuk",
+      "status": "LOCKED",
+      "note": "Mevcut görev ve Akademi terminolojisiyle eşlendi"
+    },
+    {
+      "source": "Shield Bash",
+      "context": "Kalkan tooltip etkisi",
+      "type": "UI",
+      "tr": "Kalkan Darbesi",
+      "forbidden": "Kalkan Vuruşu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Shieldbash Push",
+      "context": "Kalkan tooltip etkisi",
+      "type": "UI",
+      "tr": "Kalkan Darbesi İtme Gücü",
+      "forbidden": "Kalkan İtişi",
+      "status": "LOCKED",
+      "note": "Sayısal değer aynen korunur"
+    },
+    {
+      "source": "Energy Regen",
+      "context": "Kalkan tooltip etkisi",
+      "type": "UI",
+      "tr": "Enerji Yenilenmesi",
+      "forbidden": "Enerji Rejenerasyonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Inflicts Electrified",
+      "context": "Silah tooltip etkisi",
+      "type": "UI",
+      "tr": "Elektriklenmeye yol açar",
+      "forbidden": "Elektrik verir",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Inflicts Burning / Burn",
+      "context": "Silah tooltip etkisi",
+      "type": "UI",
+      "tr": "Yanma etkisi uygular",
+      "forbidden": "Yakma verir",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Slows enemies",
+      "context": "Silah tooltip etkisi",
+      "type": "UI",
+      "tr": "Düşmanları yavaşlatır",
+      "forbidden": "Yavaşlık verir",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Homing projectile",
+      "context": "Silah tooltip etkisi",
+      "type": "UI",
+      "tr": "Güdümlü mermi",
+      "forbidden": "Takip eden mermi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Grenade Launcher",
+      "context": "Silah/alt atış türü",
+      "type": "Silah",
+      "tr": "Bombaatar",
+      "forbidden": "Bomba Atar",
+      "status": "LOCKED",
+      "note": "Bitişik yazılır"
+    },
+    {
+      "source": "Radiation Burn",
+      "context": "Silah durum etkisi",
+      "type": "UI",
+      "tr": "Radyasyon Yanığı",
+      "forbidden": "Radyasyon Yakması",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Penumbral",
+      "context": "Penumbrite silah ailesi sıfatı",
+      "type": "Nesne",
+      "tr": "Penumbra",
+      "forbidden": "Gölgeli",
+      "status": "LOCKED",
+      "note": "Malzeme ailesinin özel adıyla bağ korunur"
+    },
+    {
+      "source": "Scion",
+      "context": "Hylotl silah modeli",
+      "type": "Nesne",
+      "tr": "Varis",
+      "forbidden": "Soy",
+      "status": "LOCKED",
+      "note": "Önceki Altın Deniz Varisi adıyla eşlendi"
+    },
+    {
+      "source": "Magnorb",
+      "context": "Özel silah modeli",
+      "type": "Özel ad",
+      "tr": "Magnorb",
+      "forbidden": "Manyetik Küre",
+      "status": "LOCKED",
+      "note": "Model adı korunur"
+    },
+    {
+      "source": "Gauss",
+      "context": "Silah ailesi / fizik terimi",
+      "type": "Özel ad",
+      "tr": "Gauss",
+      "forbidden": "Gaus",
+      "status": "LOCKED",
+      "note": "Yerleşik özel ad korunur"
+    },
+    {
+      "source": "Railgun",
+      "context": "Silah sınıfı",
+      "type": "Silah",
+      "tr": "Raylı Tüfek",
+      "forbidden": "Ray Silahı",
+      "status": "LOCKED",
+      "note": "Kısa envanter adı"
+    },
+    {
+      "source": "Plasma weapon",
+      "context": "Silah türü",
+      "type": "Silah",
+      "tr": "Plazma silahı",
+      "forbidden": "Plazmik silah",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Area damage",
+      "context": "Silah tooltip etkisi",
+      "type": "UI",
+      "tr": "Alan hasarı",
+      "forbidden": "Bölge hasarı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "High velocity projectile",
+      "context": "Silah tooltip etkisi",
+      "type": "UI",
+      "tr": "Yüksek hızlı mermi",
+      "forbidden": "Hızlı projektil",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Assault Drone",
+      "context": "Silah çağrısı",
+      "type": "Nesne",
+      "tr": "Taarruz Dronu",
+      "forbidden": "Saldırı Drone'u",
+      "status": "LOCKED",
+      "note": "Drone -> Dron"
+    },
+    {
+      "source": "Shield Drone",
+      "context": "Silah çağrısı",
+      "type": "Nesne",
+      "tr": "Kalkan Dronu",
+      "forbidden": "Kalkan Drone'u",
+      "status": "LOCKED",
+      "note": "Drone -> Dron"
+    },
+    {
+      "source": "Sonic Cannon",
+      "context": "Silah sınıfı",
+      "type": "Silah",
+      "tr": "Sonik Top",
+      "forbidden": "Ses Topu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Gravity Wand",
+      "context": "Silah sınıfı",
+      "type": "Silah",
+      "tr": "Yerçekimi Değneği",
+      "forbidden": "Gravite Asası",
+      "status": "LOCKED",
+      "note": "Wand kilidiyle uyumlu"
+    },
+    {
+      "source": "Orbital Strike",
+      "context": "Silah / saldırı adı",
+      "type": "Silah",
+      "tr": "Yörünge Saldırısı",
+      "forbidden": "Orbital Vuruş",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Breach",
+      "context": "Silah ailesi / model adı",
+      "type": "Özel ad",
+      "tr": "Breach",
+      "forbidden": "Gedik",
+      "status": "LOCKED",
+      "note": "Aile/model adı korunur"
+    },
+    {
+      "source": "Prismatic",
+      "context": "Prisilite silah ailesi sıfatı",
+      "type": "Nesne",
+      "tr": "Prizmatik",
+      "forbidden": "Gökkuşağı",
+      "status": "LOCKED",
+      "note": "Kaynaktaki işlevsel aile sıfatı çevrilir"
+    },
+    {
+      "source": "Fleshweave",
+      "context": "Atropus biyosilah ailesi",
+      "type": "Nesne",
+      "tr": "Et Örgüsü",
+      "forbidden": "Et Dokuma",
+      "status": "LOCKED",
+      "note": "Kısa ve tanınabilir aile adı"
+    },
+    {
+      "source": "Rad-Burn",
+      "context": "Silah durum etkisi",
+      "type": "UI",
+      "tr": "Radyasyon Yanığı",
+      "forbidden": "Radyasyon Yakması",
+      "status": "LOCKED",
+      "note": "v0.22 Radiation Burn kararıyla aynı"
+    },
+    {
+      "source": "Plague Bearing",
+      "context": "Biyosilah tooltip etkisi",
+      "type": "UI",
+      "tr": "Veba taşır",
+      "forbidden": "Veba verir",
+      "status": "LOCKED",
+      "note": "Oyuncuya etkisi kısa ve doğrudan anlatılır"
+    },
+    {
+      "source": "Bioweapon",
+      "context": "Silah türü",
+      "type": "Silah",
+      "tr": "Biyosilah",
+      "forbidden": "Biyo Silah",
+      "status": "LOCKED",
+      "note": "Bitişik yazılır"
+    },
+    {
+      "source": "Assault Rifle",
+      "context": "Silah sınıfı",
+      "type": "Silah",
+      "tr": "Taarruz Tüfeği",
+      "forbidden": "Saldırı Tüfeği",
+      "status": "LOCKED",
+      "note": "Önceki Kademe 2-3 silahlarıyla eşlendi"
+    },
+    {
+      "source": "Rocket Launcher",
+      "context": "Silah sınıfı",
+      "type": "Silah",
+      "tr": "Roketatar",
+      "forbidden": "Roket Fırlatıcı",
+      "status": "LOCKED",
+      "note": "Bitişik yazılır"
+    },
+    {
+      "source": "Machine Pistol / SMG",
+      "context": "Silah sınıfı",
+      "type": "Silah",
+      "tr": "Makineli Tabanca",
+      "forbidden": "Hafif Makineli Tüfek",
+      "status": "LOCKED",
+      "note": "LMG sınıfından ayrılır"
+    },
+    {
+      "source": "HP Regen",
+      "context": "Kalkan tooltip etkisi",
+      "type": "UI",
+      "tr": "Can Yenilenmesi",
+      "forbidden": "HP Rejenerasyonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Immune / Immunity",
+      "context": "Kalkan tooltip etkisi",
+      "type": "UI",
+      "tr": "Bağışıklık",
+      "forbidden": "Muafiyet",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Irradium / Trianglium / Prisilite / Quietus",
+      "context": "FU malzeme adları",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Türkçeleştirilmiş yazımlar",
+      "status": "LOCKED",
+      "note": "Silah sınıfları ayrıca Türkçeleştirilir",
+      "mode": "preserve"
+    },
+    {
+      "source": "Set Bonuses",
+      "context": "Zırh tooltip başlığı",
+      "type": "UI",
+      "tr": "Set Bonusları",
+      "forbidden": "Takım Bonusları",
+      "status": "LOCKED",
+      "note": "Önceki tekil zırhlarla eşlendi"
+    },
+    {
+      "source": "Greaves",
+      "context": "Zırh parçası",
+      "type": "Nesne",
+      "tr": "Baldırlık",
+      "forbidden": "Pantolon",
+      "status": "LOCKED",
+      "note": "Kaynak parça gerçekten greaves ise kullanılır"
+    },
+    {
+      "source": "Chestpiece / Breastplate",
+      "context": "Zırh parçası",
+      "type": "Nesne",
+      "tr": "Göğüslük",
+      "forbidden": "Göğüs Parçası",
+      "status": "LOCKED",
+      "note": "Doğal ve kısa envanter adı"
+    },
+    {
+      "source": "Helm / Helmet",
+      "context": "Zırh parçası",
+      "type": "Nesne",
+      "tr": "Miğfer",
+      "forbidden": "Kask",
+      "status": "LOCKED",
+      "note": "Fantezi/savaş zırhlarında kullanılır"
+    },
+    {
+      "source": "Crit Chance",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Kritik Şansı",
+      "forbidden": "Kritik İhtimali",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Crit Damage",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Kritik Hasarı",
+      "forbidden": "Kritik Vuruş Hasarı",
+      "status": "LOCKED",
+      "note": "Kısa tooltip biçimi"
+    },
+    {
+      "source": "Knockback Resist",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Geri Tepme Direnci",
+      "forbidden": "Savrulma Direnci",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Shield Health and Regen",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Kalkan Canı ve Yenilenmesi",
+      "forbidden": "Kalkan HP/Rejenerasyonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Healing Strength",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "İyileştirme Gücü",
+      "forbidden": "Şifa Kuvveti",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Life Leech",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Can Çalma",
+      "forbidden": "Hayat Sömürme",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Draw Speed",
+      "context": "Yay tooltip istatistiği",
+      "type": "UI",
+      "tr": "Germe Hızı",
+      "forbidden": "Çekme Hızı",
+      "status": "LOCKED",
+      "note": "Yay kirişini germe bağlamı"
+    },
+    {
+      "source": "Energy Per Shot",
+      "context": "Silah tooltip istatistiği",
+      "type": "UI",
+      "tr": "Atış Başına Enerji",
+      "forbidden": "Mermi Enerjisi",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Headlamp",
+      "context": "Zırh tooltip işlevi",
+      "type": "UI",
+      "tr": "Kafa Lambası",
+      "forbidden": "Baş Lambası",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Oxygen",
+      "context": "Tehlike bağışıklığı",
+      "type": "Durum",
+      "tr": "Oksijensizlik",
+      "forbidden": "Oksijen",
+      "status": "LOCKED",
+      "note": "Kaynak etiketi oksijen yokluğu tehlikesini temsil eder"
+    },
+    {
+      "source": "Bio-Ooze",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "Biyo-Balçık",
+      "forbidden": "Biyo-Sızıntı",
+      "status": "LOCKED",
+      "note": "Slime -> Balçık kararıyla uyumlu"
+    },
+    {
+      "source": "Slush",
+      "context": "Tehlike / zemin etkisi",
+      "type": "Durum",
+      "tr": "Sulu Kar",
+      "forbidden": "Çamurlu Kar",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Chill",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "Üşüme",
+      "forbidden": "Soğuk",
+      "status": "LOCKED",
+      "note": "Durum adı olarak kullanılır"
+    },
+    {
+      "source": "Quicksand",
+      "context": "Tehlike / zemin etkisi",
+      "type": "Durum",
+      "tr": "Batak Kum",
+      "forbidden": "Hızlı Kum",
+      "status": "LOCKED",
+      "note": "Yerleşik Türkçe karşılık"
+    },
+    {
+      "source": "Dracon / Warscorned",
+      "context": "Skath zırh modeli",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Zoraki kelime çevirileri",
+      "status": "LOCKED",
+      "note": "Bağlamı açıklanmayan model adları",
+      "mode": "preserve"
+    },
+    {
+      "source": "Shield Regen",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Kalkan Yenilenmesi",
+      "forbidden": "Kalkan Rejenerasyonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Breath Regen",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Nefes Yenilenmesi",
+      "forbidden": "Solunum Rejenerasyonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Proto-Poison",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "Proto-Zehir",
+      "forbidden": "Proto Zehri",
+      "status": "LOCKED",
+      "note": "Bileşik durum adı kısa tutulur"
+    },
+    {
+      "source": "Energy Regen Block",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Enerji Yenilenme Gecikmesi",
+      "forbidden": "Enerji Yenilenme Bloğu",
+      "status": "LOCKED",
+      "note": "Oyuncuya mekanik etkiyi açıklar"
+    },
+    {
+      "source": "Bomb Tech Damage",
+      "context": "Tech tooltip istatistiği",
+      "type": "UI",
+      "tr": "Bomba Teknolojisi Hasarı",
+      "forbidden": "Bomba Tech Hasarı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Defense Tech Efficiency",
+      "context": "Tech tooltip istatistiği",
+      "type": "UI",
+      "tr": "Savunma Teknolojisi Verimliliği",
+      "forbidden": "Savunma Tech Etkinliği",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Research Bonus",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Araştırma Bonusu",
+      "forbidden": "Araştırma Artısı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Moderate Radiation",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "Orta Dereceli Radyasyon",
+      "forbidden": "Orta Radyasyon",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Moderate Cold",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "Orta Dereceli Soğuk",
+      "forbidden": "Ilımlı Soğuk",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Pus",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "İrin",
+      "forbidden": "Pus",
+      "status": "LOCKED",
+      "note": "İngilizce tıbbi anlam kullanılır"
+    },
+    {
+      "source": "Black Tar",
+      "context": "Tehlike / zemin etkisi",
+      "type": "Durum",
+      "tr": "Kara Katran",
+      "forbidden": "Siyah Tar",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Swim Boost",
+      "context": "Zırh tooltip işlevi",
+      "type": "UI",
+      "tr": "Yüzme Takviyesi",
+      "forbidden": "Yüzme Boostu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Thorns",
+      "context": "Zırh tooltip işlevi",
+      "type": "UI",
+      "tr": "Dikenler",
+      "forbidden": "Diken Hasarı",
+      "status": "LOCKED",
+      "note": "Kaynak yalnız etki adını verir"
+    },
+    {
+      "source": "Stamina",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Dayanıklılık",
+      "forbidden": "Stamina",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Block",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Blok",
+      "forbidden": "Engelleme",
+      "status": "LOCKED",
+      "note": "Kalkan mekaniği etiketi"
+    },
+    {
+      "source": "Battleborn",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Savaşdoğan",
+      "forbidden": "Savaş Doğumlu",
+      "status": "LOCKED",
+      "note": "Kısa sınıf/set adı"
+    },
+    {
+      "source": "Spacefarer",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Uzay Yolcusu",
+      "forbidden": "Uzay Gezgini",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Spacepunk / Neishin / Nightar / Tenebrhae",
+      "context": "Zırh modeli veya özel ad",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Zoraki kelime çevirileri",
+      "status": "LOCKED",
+      "note": "İşlevsel parça adları ayrıca çevrilir",
+      "mode": "preserve"
+    },
+    {
+      "source": "Shield Stamina",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Kalkan Dayanıklılığı",
+      "forbidden": "Kalkan Staminası",
+      "status": "LOCKED",
+      "note": "Stamina kararıyla uyumlu"
+    },
+    {
+      "source": "Shield Bash",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Kalkan Darbesi",
+      "forbidden": "Kalkan Vuruşu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Mental Resist",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Zihinsel Direnç",
+      "forbidden": "Mental Direnç",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Glow",
+      "context": "Zırh tooltip işlevi",
+      "type": "UI",
+      "tr": "Parıltı",
+      "forbidden": "Glow",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Slowfall",
+      "context": "Zırh tooltip işlevi",
+      "type": "UI",
+      "tr": "Yavaş Düşüş",
+      "forbidden": "Yavaş Düşme",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Gravity Normalization",
+      "context": "Zırh tooltip işlevi",
+      "type": "UI",
+      "tr": "Yerçekimi Normalleştirmesi",
+      "forbidden": "Gravite Normalizasyonu",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Hunger Drain Rate",
+      "context": "Zırh tooltip istatistiği",
+      "type": "UI",
+      "tr": "Açlık Tüketim Hızı",
+      "forbidden": "Açlık Boşalma Oranı",
+      "status": "LOCKED",
+      "note": "Önceki Hunger Drain → Açlık Tüketimi kararıyla uyumlu"
+    },
+    {
+      "source": "Ice Slip",
+      "context": "Tehlike / zemin etkisi",
+      "type": "Durum",
+      "tr": "Buzda Kayma",
+      "forbidden": "Buz Kayması",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Snow Slow",
+      "context": "Tehlike / zemin etkisi",
+      "type": "Durum",
+      "tr": "Karda Yavaşlama",
+      "forbidden": "Kar Yavaşlatması",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Shadow Taint",
+      "context": "Tehlike / durum etkisi",
+      "type": "Durum",
+      "tr": "Gölge Lekesi",
+      "forbidden": "Gölge Zehri",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Fire Nova",
+      "context": "Zırh tetiklenen etkisi",
+      "type": "UI",
+      "tr": "Ateş Novası",
+      "forbidden": "Ateş Patlaması",
+      "status": "LOCKED",
+      "note": "Mekanik etki adı korunur"
+    },
+    {
+      "source": "Cellular",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Hücresel",
+      "forbidden": "Hücreli",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Pustule",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Püstül",
+      "forbidden": "Kabarcık",
+      "status": "LOCKED",
+      "note": "Tıbbi karşılık"
+    },
+    {
+      "source": "Star-Killer",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Yıldız Katili",
+      "forbidden": "Yıldız Öldüren",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Maverick / Intersec / Primus",
+      "context": "Zırh modeli veya özel ad",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Zoraki kelime çevirileri",
+      "status": "LOCKED",
+      "note": "İşlevsel parça adları ayrıca çevrilir",
+      "mode": "preserve"
+    },
+    {
+      "source": "Graphene",
+      "context": "Zırh malzemesi",
+      "type": "Kaynak",
+      "tr": "Grafen",
+      "forbidden": "Graphene",
+      "status": "LOCKED",
+      "note": "Yerleşik bilimsel karşılık"
+    },
+    {
+      "source": "Phantasm",
+      "context": "Effigium silah ailesi",
+      "type": "Silah",
+      "tr": "Hayalet",
+      "forbidden": "Fantazm",
+      "status": "LOCKED",
+      "note": "İşlevsel aile adı"
+    },
+    {
+      "source": "Shadow Reaper",
+      "context": "Silah adı",
+      "type": "Silah",
+      "tr": "Gölge Biçici",
+      "forbidden": "Gölge Orakçısı",
+      "status": "LOCKED",
+      "note": "Reaper sınıfından çok özel silah adı"
+    },
+    {
+      "source": "Veilbreaker",
+      "context": "Silah adı",
+      "type": "Silah",
+      "tr": "Perdekıran",
+      "forbidden": "Veilbreaker",
+      "status": "LOCKED",
+      "note": "Bileşik özel ad"
+    },
+    {
+      "source": "Minigun",
+      "context": "Döner namlulu silah sınıfı",
+      "type": "Silah",
+      "tr": "Döner Makineli Tüfek",
+      "forbidden": "Minigun",
+      "status": "LOCKED",
+      "note": "Oyuncuya işlevi açıklar"
+    },
+    {
+      "source": "Bouncy",
+      "context": "Silah durum etkisi",
+      "type": "Durum",
+      "tr": "Sekme",
+      "forbidden": "Zıplama",
+      "status": "LOCKED",
+      "note": "Mermi/etki sekmesi bağlamı"
+    },
+    {
+      "source": "Major Vulnerability",
+      "context": "Silah durum etkisi",
+      "type": "Durum",
+      "tr": "Büyük Savunmasızlık",
+      "forbidden": "Majör Zayıflık",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Sustained Fire",
+      "context": "Silah tooltip işlevi",
+      "type": "UI",
+      "tr": "Kesintisiz Atış",
+      "forbidden": "Sürekli Ateş",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Wave-burst",
+      "context": "Silah tooltip işlevi",
+      "type": "UI",
+      "tr": "Dalga Patlaması",
+      "forbidden": "Dalga Atışı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Plasmic Crystal",
+      "context": "Silah malzemesi",
+      "type": "Kaynak",
+      "tr": "Plazmik Kristal",
+      "forbidden": "Plazma Kristali",
+      "status": "LOCKED",
+      "note": "Önceki görev-eşya kararıyla uyumlu"
+    },
+    {
+      "source": "FarSight / Helios / Imperius / Fissure",
+      "context": "Silah modeli veya özel ad",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Zoraki kelime çevirileri",
+      "status": "LOCKED",
+      "note": "İşlevsel sınıf adı ayrıca çevrilir",
+      "mode": "preserve"
+    },
+    {
+      "source": "Beastmaster",
+      "context": "Zırh set bonusu",
+      "type": "UI",
+      "tr": "Canavar Ustası",
+      "forbidden": "Beastmaster",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Skill Quiver",
+      "context": "Zırh parçası",
+      "type": "Nesne",
+      "tr": "Beceri Sadağı",
+      "forbidden": "Beceri Sadakı, Yetenek Okluğu",
+      "status": "LOCKED",
+      "note": "Quiver için yerleşik Sadak kullanılır; Türkçe tamlama eki düzeltilmiştir"
+    },
+    {
+      "source": "Peerless Quiver",
+      "context": "Zırh parçası",
+      "type": "Nesne",
+      "tr": "Eşsiz Sadak",
+      "forbidden": "Rakipsiz Okluk",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Kingslayer",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Kral Katili",
+      "forbidden": "Kingslayer",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Sentry",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Nöbetçi",
+      "forbidden": "Sentry",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Champion",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Şampiyon",
+      "forbidden": "Champion",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Sunwalker",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Güneş Gezgini",
+      "forbidden": "Güneşte Yürüyen",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Replicant",
+      "context": "Zırh seti",
+      "type": "Nesne",
+      "tr": "Replikant",
+      "forbidden": "Kopya",
+      "status": "LOCKED",
+      "note": "Bilimkurgu model adı"
+    },
+    {
+      "source": "Hardsuit",
+      "context": "Zırh parçası",
+      "type": "Nesne",
+      "tr": "Ağır Giysi",
+      "forbidden": "Sert Giysi",
+      "status": "LOCKED",
+      "note": "Koruyucu teknik giysi bağlamı"
+    },
+    {
+      "source": "Airborne Damage",
+      "context": "Yay tooltip istatistiği",
+      "type": "UI",
+      "tr": "Havada Hasar",
+      "forbidden": "Havadaki Hasar",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Katana Mastery",
+      "context": "Zırh set bonusu",
+      "type": "UI",
+      "tr": "Katana Ustalığı",
+      "forbidden": "Katana Uzmanlığı",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Grav-Rain",
+      "context": "Tehlike / hava etkisi",
+      "type": "Durum",
+      "tr": "Yerçekimi Yağmuru",
+      "forbidden": "Grav-Yağmur",
+      "status": "LOCKED",
+      "note": ""
+    },
+    {
+      "source": "Single Sword / Dual Swords",
+      "context": "Zırh set bonusu",
+      "type": "UI",
+      "tr": "Tek Kılıç / Çift Kılıçlar",
+      "forbidden": "Yalnız Kılıç / İkili Kılıç",
+      "status": "LOCKED",
+      "note": "",
+      "forms": [
+        {
+          "en": "Single Sword",
+          "tr": "Tek Kılıç"
+        },
+        {
+          "en": "Dual Swords",
+          "tr": "Çift Kılıçlar"
+        }
+      ]
+    },
+    {
+      "source": "Capturenaut / Gishinanki / Decker / Legionii / Millenion / Morphite / Rifter / Valkyrie / Warframe",
+      "context": "Zırh modeli veya özel ad",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Zoraki kelime çevirileri",
+      "status": "LOCKED",
+      "note": "İşlevsel parça adları ayrıca çevrilir",
+      "mode": "preserve"
+    },
+    {
+      "source": "Minor Vulnerability",
+      "context": "Silah durum etkisi",
+      "type": "Durum",
+      "tr": "Hafif Savunmasızlık",
+      "forbidden": "Küçük Güvenlik Açığı",
+      "status": "LOCKED",
+      "note": "Major Vulnerability → Büyük Savunmasızlık kararıyla uyumlu"
+    },
+    {
+      "source": "Alt-Fire",
+      "context": "Silah tooltip işlevi",
+      "type": "UI",
+      "tr": "Alternatif Atış",
+      "forbidden": "Alt Ateş",
+      "status": "LOCKED",
+      "note": "Cümle içinde küçük harfle kullanılabilir"
+    },
+    {
+      "source": "Spawns Minions",
+      "context": "Set bonusu / ekipman işlevi",
+      "type": "UI",
+      "tr": "Minyon Çağırır",
+      "forbidden": "Minyon Üretir",
+      "status": "LOCKED",
+      "note": "Oyuncu eylemi yerine ekipman etkisini anlatır"
+    },
+    {
+      "source": "Heating EPP",
+      "context": "Soğuk ortam EPP'si",
+      "type": "Nesne",
+      "tr": "Isıtma EPP'si",
+      "forbidden": "Sıcak EPP",
+      "status": "LOCKED",
+      "note": "Kaynak işlevine göre adlandırılır"
+    },
+    {
+      "source": "Cooling EPP",
+      "context": "Sıcak ortam EPP'si",
+      "type": "Nesne",
+      "tr": "Soğutma EPP'si",
+      "forbidden": "Soğuk EPP",
+      "status": "LOCKED",
+      "note": "Kaynak işlevine göre adlandırılır"
+    },
+    {
+      "source": "E. Block",
+      "context": "Enerji paketi kısaltması",
+      "type": "UI",
+      "tr": "Enerji Yenilenme Gecikmesi",
+      "forbidden": "Enerji Kilitlenmesi",
+      "status": "LOCKED",
+      "note": "Energy Regen Block kararıyla aynı mekanik"
+    },
+    {
+      "source": "Electrified",
+      "context": "Silah durum etkisi",
+      "type": "Durum",
+      "tr": "Elektriklenme",
+      "forbidden": "Elektrikli",
+      "status": "LOCKED",
+      "note": "Fiil bağlamında “Elektriklenmeye yol açar”"
+    },
+    {
+      "source": "Frost Burn",
+      "context": "Silah durum etkisi",
+      "type": "Durum",
+      "tr": "Ayaz Yanığı",
+      "forbidden": "Don Yanması",
+      "status": "LOCKED",
+      "note": "Soğuk kaynaklı durum etkisi"
+    },
+    {
+      "source": "Oceanite / Thanatite / Nhydri",
+      "context": "Elduu malzeme ve model adları",
+      "type": "Özel ad",
+      "tr": "Kaynaktaki yazım korunur",
+      "forbidden": "Okyanusit / Tanatit / Nhidri",
+      "status": "LOCKED",
+      "note": "İşlevsel silah sınıfı ayrıca çevrilir",
+      "mode": "preserve"
+    }
+  ],
+  "context_exceptions": [
+    {
+      "asset": "zb/researchTree/data.config",
+      "pointer": "/strings/currencies/fuscienceresource",
+      "en": "Research",
+      "tr": "Araştırma",
+      "reason": "Research sistem/para birimi adı: Araştırma."
+    },
+    {
+      "asset": "zb/researchTree/researchTree.config",
+      "pointer": "/gui/researchButton/caption",
+      "en": "Research",
+      "tr": "Araştır",
+      "reason": "Research buton eylemi: Araştır."
+    },
+    {
+      "asset": "zb/researchTree/fu_power.config",
+      "pointer": "/strings/trees/fu_power",
+      "en": "Electronics",
+      "tr": "Güç Sistemleri",
+      "reason": "Electronics ağaç adı mevcut proje kararıyla Güç Sistemleri; düğüm adı Elektronik."
+    },
+    {
+      "asset": "items/armors/backitems/fieldgenerator/fieldgenerator.back",
+      "pointer": "/shortdescription",
+      "en": "Field Generator",
+      "tr": "Saha Jeneratörü",
+      "reason": "EPP ekipmanı Saha Jeneratörü; aynı İngilizce adı taşıyan güç nesnesinden ayrı bağlam."
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/science/flamepistol/isn_flamethrower.activeitem",
+      "pointer": "/shortdescription",
+      "en": "Incinerator",
+      "tr": "Yakıcı",
+      "reason": "Incinerator silahı Yakıcı; atık imha makinesi İmha Fırını değildir."
+    },
+    {
+      "asset": "items/generic/crafting/fu_oxygen.item",
+      "pointer": "/shortdescription",
+      "en": "Oxygen",
+      "tr": "Oksijen",
+      "reason": "Oxygen üretim malzemesi Oksijen; tehlike bağışıklığı etiketi Oksijensizlik değildir."
+    }
+  ],
   "forbidden_regexes": [
     {
       "pattern": "\\bkraliçe arı\\b",
