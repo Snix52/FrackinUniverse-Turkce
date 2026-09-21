@@ -95,6 +95,24 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertFalse(audit.audit_excluded_candidate(asset, "/gui/windowtitle/title"))
         self.assertFalse(audit.audit_excluded_candidate(asset, "/displayOres/copper/displayName"))
 
+    def test_cockpit_runtime_text_containers_are_visible(self):
+        asset = "interface/cockpit/cockpit.config"
+        self.assertEqual(
+            audit.visible_confidence(asset, ["planetTypeNames", "garden"], "Lush"),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(asset, ["visitableTypeDescription", "garden", "0"], "A lush world."),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(asset, ["threatTextPrefix"], "^reset;Threat: ^reset;"),
+            "confirmed",
+        )
+        self.assertIsNone(audit.visible_confidence(
+            asset, ["clusterInfoBox", "iconImage"], "/interface/bookmarks/icons/%s.png"
+        ))
+
     def test_matmod_runtime_names_are_visible_without_global_name_rule(self):
         asset = "interface/scripted/fu_matmodplacer/fu_matmodplacer.config"
         self.assertEqual(
