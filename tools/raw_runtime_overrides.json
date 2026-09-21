@@ -1,0 +1,18 @@
+{
+  "source_repository": "sayterdarkwynd/FrackinUniverse",
+  "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+  "assets": [
+    {
+      "asset": "zb/zb_textTyper.lua",
+      "source_blob_sha": "2f29461a2c2aeab86970c48fead0bdc5be25e57c",
+      "reason": "Preserve UTF-8 codepoints in the SAIL/typewriter path instead of replacing non-ASCII bytes.",
+      "replacements": [
+        {
+          "old": "\tlocal removedIndexes = {}\n\tfor i, character in ipairs(textData.toWrite) do\n\t\tif not (#removedIndexes > 0 and removedIndexes[#removedIndexes] == i+1) then\n\t\t\tif string.byte(character) > 127 then\n\t\t\t\ttextData.toWrite[i] = utf8.char(159)\n\t\t\t\ttable.insert(removedIndexes, 1, i+1)\n\t\t\tend\n\t\tend\n\tend\n\n\tfor _, index in ipairs(removedIndexes) do\n\t\ttable.remove(textData.toWrite, index)\n\tend",
+          "new": "\t-- Preserve UTF-8 characters as a single typewriter unit instead of replacing\n\t-- non-ASCII bytes. Turkish localization depends on this for ç, ğ, ı, İ, ö, ş, ü.\n\tlocal i = 1\n\twhile i <= #textData.toWrite do\n\t\tlocal firstByte = string.byte(textData.toWrite[i])\n\t\tlocal byteCount = 1\n\n\t\tif firstByte and firstByte >= 240 then\n\t\t\tbyteCount = 4\n\t\telseif firstByte and firstByte >= 224 then\n\t\t\tbyteCount = 3\n\t\telseif firstByte and firstByte >= 194 then\n\t\t\tbyteCount = 2\n\t\tend\n\n\t\tif byteCount > 1 then\n\t\t\tlocal character = textData.toWrite[i]\n\t\t\tlocal validSequence = true\n\t\t\tfor _ = 2, byteCount do\n\t\t\t\tlocal continuation = textData.toWrite[i + 1]\n\t\t\t\tlocal continuationByte = continuation and string.byte(continuation)\n\t\t\t\tif not continuationByte or continuationByte < 128 or continuationByte > 191 then\n\t\t\t\t\tvalidSequence = false\n\t\t\t\t\tbreak\n\t\t\t\tend\n\t\t\t\tcharacter = character .. continuation\n\t\t\t\ttable.remove(textData.toWrite, i + 1)\n\t\t\tend\n\t\t\tif validSequence then\n\t\t\t\ttextData.toWrite[i] = character\n\t\t\tend\n\t\tend\n\n\t\ti = i + 1\n\tend",
+          "expected_count": 1
+        }
+      ]
+    }
+  ]
+}
