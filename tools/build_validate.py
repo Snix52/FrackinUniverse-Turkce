@@ -108,6 +108,13 @@ V0312_RESEARCH_UI_FIELDS = {(row['asset'], row['pointer']) for row in _V0312_MAN
 if len(V0312_RESEARCH_UI_FIELDS) != len(_V0312_MANIFEST['translations']):
     raise ValueError('v0.31.2 araştırma arayüzü manifestinde yinelenen alan var')
 
+_V032_MANIFEST = json.loads(
+    Path(__file__).with_name('v032_translations.json').read_text(encoding='utf-8')
+)
+V032_MACHINE_UI_FIELDS = {(row['asset'], row['pointer']) for row in _V032_MANIFEST['translations']}
+if len(V032_MACHINE_UI_FIELDS) != len(_V032_MANIFEST['translations']):
+    raise ValueError('v0.32 makine/üretim arayüzü manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -278,6 +285,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V032_MACHINE_UI_FIELDS:
+        return True
     if (a,p) in V0312_RESEARCH_UI_FIELDS:
         return True
     if (a,p) in V0311_QUEST_UI_FIELDS:
