@@ -87,6 +87,13 @@ V030_RESEARCH_GEAR_ASSETS = {spec['asset'] for spec in _V030_MANIFEST.values()}
 if len(_V030_MANIFEST) != 413 or len(V030_RESEARCH_GEAR_ASSETS) != 413:
     raise ValueError('v0.30 ekipman manifesti 413 benzersiz asset içermeli')
 
+_V031_MANIFEST = json.loads(
+    Path(__file__).with_name('v031_translations.json').read_text(encoding='utf-8')
+)
+V031_SAIL_UI_FIELDS = {(row['asset'], row['pointer']) for row in _V031_MANIFEST['translations']}
+if len(V031_SAIL_UI_FIELDS) != len(_V031_MANIFEST['translations']):
+    raise ValueError('v0.31 SAIL manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -257,6 +264,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V031_SAIL_UI_FIELDS:
+        return True
     if a in V030_RESEARCH_GEAR_ASSETS:
         return p in ('/shortdescription','/description')
     if a in V029_TIER5_ARMOR_ASSETS:
