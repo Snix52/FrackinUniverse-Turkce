@@ -95,6 +95,34 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertFalse(audit.audit_excluded_candidate(asset, "/gui/windowtitle/title"))
         self.assertFalse(audit.audit_excluded_candidate(asset, "/displayOres/copper/displayName"))
 
+    def test_sbvn_option_labels_are_visible_but_scene_targets_are_not(self):
+        data = {
+            "scenes": {
+                "choice": {
+                    "text": "Choose.",
+                    "options": [
+                        ["BACK", "previousScene"],
+                        ["^green;NEXT^reset;", "nextScene", ["flag=1"]],
+                    ],
+                }
+            }
+        }
+        rows = list(audit.candidates_from_data(
+            "interface/scripted/sbvn/games/test/test.sbvn", data
+        ))
+        by_pointer = {row.pointer: row for row in rows}
+        self.assertEqual(
+            by_pointer["/scenes/choice/options/0/0"].value,
+            "BACK",
+        )
+        self.assertEqual(
+            by_pointer["/scenes/choice/options/1/0"].value,
+            "^green;NEXT^reset;",
+        )
+        self.assertNotIn("/scenes/choice/options/0/1", by_pointer)
+        self.assertNotIn("/scenes/choice/options/1/1", by_pointer)
+        self.assertNotIn("/scenes/choice/options/1/2/0", by_pointer)
+
     def test_cockpit_runtime_text_containers_are_visible(self):
         asset = "interface/cockpit/cockpit.config"
         self.assertEqual(
