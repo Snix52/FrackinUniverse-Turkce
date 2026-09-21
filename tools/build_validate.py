@@ -12,6 +12,8 @@ from pathlib import Path, PurePosixPath
 COLOR=re.compile(r'\^[^;\s]*;')
 CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
+SIGNED_NUMBER=re.compile(r'[+-]\\s*\\d+(?:[.,]\\d+)?')
+ICON=re.compile(r'[\\uE000-\\uF8FF]')
 PRINTF=re.compile(r'%(?:\d+\$)?[-+0#]*(?:\d+|\*)?(?:\.\d+|\.\*)?(?:hh|h|ll|l|L|z|j|t)?[diuoxXfFeEgGaAcspn%]')
 BRACE_PLACEHOLDER=re.compile(r'\{(?:\d+|[A-Za-z_][A-Za-z0-9_.:-]*)\}')
 DOLLAR_PLACEHOLDER=re.compile(r'\$(?:\{[A-Za-z_][A-Za-z0-9_.:-]*\}|[A-Za-z_][A-Za-z0-9_.:-]*)')
@@ -1456,6 +1458,9 @@ def parse_jsonc(text):
 def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
+def signed_nums(s):
+    return Counter(x.replace(' ','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
+
 def allowed(a,p):
     if a in V030_RESEARCH_GEAR_ASSETS:
         return p in ('/shortdescription','/description')
@@ -1842,7 +1847,12 @@ def main():
     if args.output.exists():ap.error('Çıktı klasörü zaten var.')
 
     ledger=json.loads(args.catalog.read_text(encoding='utf-8'))
-    rows=ledger['translations'];groups=defaultdict(list);seen=set();colorfix=0
+    tm_policy=json.loads(Path(__file__).with_name('translation_memory_exceptions.json').read_text(encoding='utf-8'))
+    tm_exceptions=set(tm_policy.get('intentional_source_variants',{}))
+    locked_policy=json.loads(Path(__file__).with_name('locked_terms.json').read_text(encoding='utf-8'))
+    locked_exact=locked_policy.get('exact_source_rules',{})
+    locked_forbidden=locked_policy.get('forbidden_regexes',[])
+    rows=ledger['translations'];groups=defaultdict(list);seen=set();colorfix=0;translation_memory=defaultdict(set)
     for r in rows:
         a,p=r['asset'],r['pointer']
         if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:raise ValueError('Güvensiz asset yolu: '+a)
@@ -1857,6 +1867,11 @@ def main():
         if 'İngilizce adı:' in r['tr']:raise ValueError('İngilizce fallback/gloss: '+a+p)
         if r['en'].strip()=='Replace Me':raise ValueError('Runtime listTemplate dummy metni kataloğa alınamaz: '+a+p)
         if any(x in r['tr'] for x in BAD_TR_PATTERNS):raise ValueError('Bilinen Türkçe LQA hatası: '+a+p)
+        plain_en=COLOR.sub('',r['en']).strip();plain_tr=COLOR.sub('',r['tr']).strip()
+        if plain_en in locked_exact and plain_tr!=locked_exact[plain_en]:raise ValueError('LOCKED terminoloji ihlali: '+a+p+' -> '+locked_exact[plain_en])
+        for rule in locked_forbidden:
+            flags=re.IGNORECASE if rule.get('ignore_case') else 0
+            if re.search(rule['pattern'],r['tr'],flags):raise ValueError(rule.get('message','Terminoloji ihlali')+' '+a+p)
         if 'kraliçe arı' in r['tr'].casefold():raise ValueError('Kilitli arıcılık terimi ihlali (Ana Arı): '+a+p)
         if LOWERCASE_MECH.search(r['tr']):raise ValueError('Kilitli Mech yazımı ihlali (Mech büyük harfle): '+a+p)
         if p=='/shortdescription' and re.search(r'\bGreaves\b', r['en']) and not re.search(r'Baldırl(?:ık|ığı)(?: Mk\. 2)?$', r['tr']):raise ValueError('Kilitli Greaves -> Baldırlık terminolojisi ihlali: '+a+p)
@@ -1871,6 +1886,14 @@ def main():
             if not r.get('qa',{}).get('allow_control_fix'):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
         if Counter(PRINTF.findall(r['en']))!=Counter(PRINTF.findall(r['tr'])):
             raise ValueError('Printf yer tutucusu uyuşmazlığı: '+a+p)
+        if Counter(ICON.findall(r['en']))!=Counter(ICON.findall(r['tr'])):
+            raise ValueError('Tooltip ikon uyuşmazlığı: '+a+p)
+        if r['en'].count('\t')!=r['tr'].count('\t') and not r.get('qa',{}).get('allow_tab_fix'):
+            raise ValueError('Sekme uyuşmazlığı: '+a+p)
+        if signed_nums(r['en'])!=signed_nums(r['tr']):
+            raise ValueError('İşaretli sayı uyuşmazlığı: '+a+p)
+        if r['en'].count('%')!=r['tr'].count('%'):
+            raise ValueError('Yüzde işareti uyuşmazlığı: '+a+p)
         if Counter(BRACE_PLACEHOLDER.findall(r['en']))!=Counter(BRACE_PLACEHOLDER.findall(r['tr'])):
             raise ValueError('Süslü parantez yer tutucusu uyuşmazlığı: '+a+p)
         if Counter(DOLLAR_PLACEHOLDER.findall(r['en']))!=Counter(DOLLAR_PLACEHOLDER.findall(r['tr'])):
@@ -1878,7 +1901,12 @@ def main():
         if r['en'].count('\n')!=r['tr'].count('\n'):
             raise ValueError('Satır sonu uyuşmazlığı: '+a+p)
         if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
+        translation_memory[r['en']].add(r['tr'])
         groups[a].append(r)
+
+    for source_text,translations in translation_memory.items():
+        if len(translations)>1 and source_text not in tm_exceptions:
+            raise ValueError('Çeviri belleği tutarsızlığı: '+source_text+' -> '+repr(sorted(translations)))
 
     patches={}
     for a,rs in sorted(groups.items()):
