@@ -1,0 +1,44 @@
+name: FU Turkce v0.32 Machine Scope Export
+
+on:
+  push:
+    branches: [v032/machines-ui]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fu-v032-machine-export
+  cancel-in-progress: true
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: v032/machines-ui
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Run regression tests
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+      - name: Fetch pinned Frackin Universe source
+        run: |
+          FU_SOURCE_COMMIT="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json", encoding="utf-8"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$FU_SOURCE_COMMIT"
+      - name: Export machine/crafting/shop remaining rows
+        run: |
+          python tools/export_remaining_category.py \
+            --source fu_source \
+            --category "Makineler, üretim ve dükkân nesneleri" \
+            --output v032_scope/machines.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v032-machine-scope
+          path: v032_scope/machines.json
+          if-no-files-found: error
