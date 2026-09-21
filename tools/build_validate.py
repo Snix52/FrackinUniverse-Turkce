@@ -12,7 +12,7 @@ from pathlib import Path, PurePosixPath
 COLOR=re.compile(r'\^[^;\s]*;')
 CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
-SIGNED_NUMBER=re.compile(r'[+-]\s*\d+(?:[.,]\d+)?')
+SIGNED_NUMBER=re.compile(r'[+-]\s*%?\s*\d+(?:[.,]\d+)?')
 ICON=re.compile(r'[\uE000-\uF8FF]')
 PRINTF=re.compile(r'%(?:\d+\$)?[-+0#]*(?:\d+|\*)?(?:\.\d+|\.\*)?(?:hh|h|ll|l|L|z|j|t)?[diuoxXfFeEgGaAcspn%]')
 BRACE_PLACEHOLDER=re.compile(r'\{(?:\d+|[A-Za-z_][A-Za-z0-9_.:-]*)\}')
@@ -1459,7 +1459,7 @@ def nums(s):
     return Counter(x.replace(',','.') for x in NUMBER.findall(COLOR.sub('',s)))
 
 def signed_nums(s):
-    return Counter(x.replace(' ','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
+    return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
     if a in V030_RESEARCH_GEAR_ASSETS:
