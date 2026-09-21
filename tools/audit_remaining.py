@@ -22,8 +22,10 @@ from typing import Any, Iterable
 
 
 from write_build_evidence import verify_source
+from rule_data import rule as load_rule
 
 PINNED_COMMIT = json.loads(Path(__file__).with_name('kaynaklar.json').read_text(encoding='utf-8'))['commit']
+NONVISIBLE_RESEARCH_IDS = load_rule('NONVISIBLE_RESEARCH_IDS')
 
 BINARY_SUFFIXES = {
     ".png", ".jpg", ".jpeg", ".gif", ".ogg", ".wav", ".ase", ".aseprite",
@@ -197,6 +199,9 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
         return None
     key = parts[-1].lower() if parts else ""
     ancestors = {part.lower() for part in parts[:-1]}
+    if (key == "value" and len(parts) >= 2 and str(parts[-2]).lower() == "path"
+            and "/" in value and re.fullmatch(r"[A-Za-z0-9_./-]+", value.strip())):
+        return None
     if key.startswith("//"):
         # Tiled editörünün açıklama/metaveri alanları; oyunda gösterilmez.
         return None
@@ -267,7 +272,7 @@ def excluded_path(path: PurePosixPath) -> bool:
     name = path.name.lower()
     if name in {".metadata", "steamtext_info.txt"}:
         return True
-    return any(token in name for token in (".disabled", ".unused", ".old", ".bak", "~"))
+    return any(token in name for token in (".disabled", ".unused", ".old", ".bak", "_bak", "~"))
 
 
 def walk_values(
@@ -299,6 +304,10 @@ def walk_values(
 
 
 def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
+    if (source_path.endswith(".questtemplate") and isinstance(data, dict)
+            and data.get("invisible") is True and data.get("logOnly") is True
+            and data.get("showInLog") is False and data.get("showAcceptDialog") is False):
+        return
     if source_path.endswith(".patch"):
         asset = source_path[:-6]
         if isinstance(data, list):
@@ -311,6 +320,16 @@ def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
         yield from walk_values(asset, data, [], source_path)
         return
     yield from walk_values(source_path, data, [], source_path)
+
+
+def nonvisible_research_candidate(asset: str, field_pointer: str) -> bool:
+    parts = split_pointer(field_pointer)
+    return (
+        len(parts) >= 3
+        and parts[0] == "strings"
+        and parts[1] == "research"
+        and parts[2] in NONVISIBLE_RESEARCH_IDS.get(asset, set())
+    )
 
 
 def load_translations(catalog_path: Path) -> tuple[set[tuple[str, str]], int]:
@@ -437,6 +456,8 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             continue
         parsed_files += 1
         for candidate in candidates_from_data(rel.as_posix(), data):
+            if nonvisible_research_candidate(candidate.asset, candidate.pointer):
+                continue
             key = (candidate.asset, candidate.pointer)
             previous = candidates.get(key)
             if previous is None or (previous.confidence == "review" and candidate.confidence == "confirmed"):
