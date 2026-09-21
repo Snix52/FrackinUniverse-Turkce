@@ -9,6 +9,21 @@ class AuditVisibilityTests(unittest.TestCase):
     def test_backup_path_is_excluded(self):
         self.assertTrue(audit.excluded_path(PurePosixPath("zb/updateInfoWindow/updateInfoWindow_bak.config")))
 
+    def test_formatting_only_numeric_label_is_not_player_text(self):
+        self.assertIsNone(audit.visible_confidence(
+            "interface/mechfuel/mechfuel.config",
+            ["paneLayout", "lblFuelAmount", "value"],
+            "^yellow;0 / 0^white;",
+        ))
+        self.assertEqual(
+            audit.visible_confidence(
+                "interface/mechfuel/mechfuel.config",
+                ["paneLayout", "lblFuelType", "value"],
+                "^yellow;Fuel^reset;",
+            ),
+            "confirmed",
+        )
+
     def test_technical_sail_breadcrumb_is_not_player_text(self):
         self.assertIsNone(audit.visible_confidence(
             "zb/newSail/newSail.config", ["gui", "path", "value"], "root/sail/ui/intro"
