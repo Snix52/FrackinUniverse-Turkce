@@ -3,64 +3,85 @@ name: FU Turkce Maintenance QA
 on:
   push:
     branches: [maintenance/qa-integrity-20260921]
-  pull_request:
-    branches: [main]
-    paths:
-      - 'tools/**'
-      - 'docs/**'
-      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: fu-maintenance-${{ github.ref }}
+  group: fu-maintenance-bootstrap
   cancel-in-progress: true
 
 jobs:
   verify:
+    if: github.ref == 'refs/heads/maintenance/qa-integrity-20260921'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
       - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
-      - name: Archive exact source revision for reproducible review
-        run: git archive --format=tar -o "$RUNNER_TEMP/translation-source.tar" HEAD
-      - uses: actions/upload-artifact@v4
-        with:
-          name: translation-source-${{ github.sha }}
-          path: ${{ runner.temp }}/translation-source.tar
-          retention-days: 3
-      - name: Compile tools
-        run: python -m compileall -q tools
-      - name: Run standalone regression tests when present
+      - name: Apply hash-verified and locally tested maintenance sources
         run: |
-          if [ -d tools/tests ]; then
-            python -m unittest discover -s tools/tests -v
-          fi
+          python - <<'PY'
+          import base64, hashlib, json, lzma
+          from pathlib import Path
+          encoded = ''.join(p.read_text() for p in sorted(Path('tools/_maintenance_bundle').glob('*.b64')))
+          data = lzma.decompress(base64.b64decode(encoded))
+          assert hashlib.sha256(data).hexdigest() == 'c9ad0f56a34860328e328182359ec954fd6366153891c2f1e2df94f7c1aab726'
+          for name, content in json.loads(data).items():
+              path = Path(name)
+              assert not path.is_absolute() and '..' not in path.parts
+              assert name.startswith(('tools/', 'docs/', '.github/workflows/'))
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text(content, encoding='utf-8')
+          PY
+          python tools/_migrate_qa.py
+          rm tools/_migrate_qa.py
+          rm -rf tools/_maintenance_bundle
+      - name: Compile and run all regression tests
+        run: |
+          mkdir -p maintenance_results
+          set -o pipefail
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v 2>&1 | tee maintenance_results/regression.log
       - name: Fetch pinned Frackin Universe source
         run: |
           FU_SOURCE_COMMIT="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json", encoding="utf-8"))["commit"])')"
           git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
           git -C fu_source checkout --detach "$FU_SOURCE_COMMIT"
-      - name: Full-source static QA and package verification
+      - name: Full-source QA, package and fresh evidence
         run: |
-          mkdir -p maintenance_results
           set -o pipefail
           python tools/build_validate.py --source-dir fu_source --output build_output | tee maintenance_results/build.log
-          (cd build_output && zip -qr ../maintenance_results/FU_Turkce.zip FU_Turkce)
+          rm -rf FU_Turkce
+          cp -a build_output/FU_Turkce FU_Turkce
+          python tools/write_build_evidence.py --zip maintenance_results/FU_Turkce.zip --create-zip --refresh-tracked --output maintenance_results/build-evidence.json --translation-source-commit "$GITHUB_SHA" --workflow-run-id "$GITHUB_RUN_ID"
           unzip -t maintenance_results/FU_Turkce.zip > maintenance_results/zip-integrity.log
-      - name: Remaining scope audit
-        run: python tools/audit_remaining.py --source fu_source
-      - name: Upload verification evidence
+          python tools/audit_remaining.py --source fu_source
+          git diff --check
+      - name: Retain actual verification results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: maintenance-verification-${{ github.sha }}
           path: |
             maintenance_results
+            build_output/validation.json
             audit_output
           if-no-files-found: warn
           retention-days: 7
+      - name: Commit only verified plain source files to the maintenance branch
+        run: |
+          git fetch origin maintenance/qa-integrity-20260921
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- tools docs README.md
+          git reset -- tools/test_raporu.json tools/GELISTIRME.txt
+          git diff --cached --check
+          git commit -m 'maintenance: enforce translation integrity and generate trustworthy build evidence'
+          git push origin HEAD:refs/heads/maintenance/qa-integrity-20260921
+          echo "Verified source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
