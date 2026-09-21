@@ -40,6 +40,12 @@ class AuditVisibilityTests(unittest.TestCase):
         }
         self.assertEqual(list(audit.candidates_from_data("zb/handler.questtemplate", data)), [])
 
+    def test_optional_mmupgrade_fallback_is_audit_excluded(self):
+        self.assertIn(
+            "interface/scripted/mmupgrade/mmupgradegui.original.config",
+            audit.AUDIT_EXCLUDED_PATHS,
+        )
+
     def test_unreachable_deep_one_vn_is_audit_excluded(self):
         self.assertIn(
             "interface/scripted/sbvn/games/cthululove/deepone.sbvn",
