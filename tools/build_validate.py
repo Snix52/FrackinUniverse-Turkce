@@ -1928,10 +1928,10 @@ def main():
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
-    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe - Araştırma, Görevler + Üretim İçeriği (Beta)',
-      'author':'FU TÜRKÇE topluluk yerelleştirmesi; FU: sayter ve katkıda bulunanlar',
+    metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe (Beta)',
+      'author':'FU Türkçe',
       'version':ledger['translation_version'],
-      'description':'Kısmi Türkçe yerelleştirme yaması. Ana araştırma sistemleri, erişilebilir görev zincirleri, üretim makineleri, seçili işlevsel dünya nesneleri, erişilebilir items/generic/crafting malzemeleri ve aktif araştırma ağacındaki tarif destekli savaş ekipmanlarını kapsar; oyun içi LQA, font ve taşma testleri sürüyor.',
+      'description':"Frackin' Universe için devam eden Türkçe yerelleştirme. Araştırma, görevler, üretim, temel makineler, işlevsel nesneler ve geniş ekipman kapsamını içerir.",
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     for a,p in patches.items():
