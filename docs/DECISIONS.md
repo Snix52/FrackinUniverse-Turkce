@@ -530,3 +530,10 @@
 - `EPP`, `Aether`, `Stynger`, `Magnorb`, `Xithricite`, `Isogen`, `Pyreite`, `Solarium`, `Densinium`, `Oceanite`, `Thanatite` ve `Nhydri` özel yazımları korundu. **Minor Vulnerability → Hafif Savunmasızlık, Alt-Fire → Alternatif Atış, Spawns Minions → Minyon Çağırır, Electrified → Elektriklenme, Frost Burn → Ayaz Yanığı** kararları kilitlendi.
 - EPP enerji paketlerindeki `E. Block`, mevcut `Energy Regen Block` kararıyla aynı mekanik kabul edilerek **Enerji Yenilenme Gecikmesi** olarak çevrildi. `Heating EPP` ve `Cooling EPP` işlev yönünü açıkça korumak için **Isıtma EPP'si** ve **Soğutma EPP'si** oldu.
 - Yeni kapsam **826 yapılandırılmış alan / 413 patch asset**tir. Proje toplamı **6016 structured + 15 Lua / 2086 patch asset** oldu. Böylece aktif Zırh ve Silahlar araştırma ağacındaki tarif destekli ekipman kapsamı kapandı; oyun içi tooltip, font ve bağlam LQA'sı ayrıca bekliyor.
+
+## 2026-09-21 - CI kaynak doğrulama ve dağıtım ağacı sıkılaştırması
+
+- Ana paket workflow'u artık FU kaynağını `tools/kaynaklar.json` içindeki pinned committen checkout eder ve `build_validate.py --source-dir fu_source` çalıştırır. Böylece JSON Patch `test` değerleri yalnız katalog içi fixture'a karşı değil, gerçek FU 6.5.8 kaynağına karşı da her ana buildde doğrulanır.
+- Repository'deki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.30.0_Beta.zip` aynı `build_output` ağacından üretilir. Generated commit yalnız bu iki yolu değiştirdiğinde workflow tekrar tetiklenmez.
+- Structured metinler için `{0}`, `{item}`, `$variable` ve `${variable}` placeholder eşitliği ile satır sonu sayısı yeni statik guardlara alındı.
+- Dil QA sırasında üç yapay/ham ifade düzeltildi: Vel'uuish tüfek açıklaması, Uzay Giysisi Hava Tankı açıklaması ve Yerçekimi Silahı açıklaması. Aynı ifadelerin geri dönmesini önlemek için regresyon guardları eklendi.

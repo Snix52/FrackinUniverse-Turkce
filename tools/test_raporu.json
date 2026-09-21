@@ -239,7 +239,11 @@
     "v028_functional_english_residue": "PASS (0 checked functional English tooltip terms)",
     "v028_source_mismatch_guard": "PASS (mutated pinned source value rejected)",
     "v028_technical_field_guard": "PASS (itemName translation attempt rejected before patch generation)",
-    "v028_number_integrity_guard": "PASS (mutated weapon stat rejected)"
+    "v028_number_integrity_guard": "PASS (mutated weapon stat rejected)",
+    "generic_placeholder_integrity": "PASS ({0}/{name} and $variable/${variable} parity checked across current 6016-field catalog)",
+    "newline_integrity": "PASS (structured source/translation newline parity checked across current 6016-field catalog)",
+    "ci_full_source_validation": "ENFORCED (main build checks out tools/kaynaklar.json pinned FU commit and runs build_validate.py --source-dir)",
+    "tracked_install_tree_sync": "ENFORCED (FU_Turkce/ and dist ZIP are refreshed from the same build_output)"
   },
   "documented_source_fixes": [
     "create_growingtray: ^oraange; -> ^orange;",

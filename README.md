@@ -36,6 +36,8 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
+Repository içindeki `FU_Turkce/` kurulum ağacı ve `dist/FU_Turkce_v0.30.0_Beta.zip` aynı CI derlemesinden üretilir ve birlikte güncellenir. Çeviri kataloğu değiştiğinde ana CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini gerçek kaynak olarak checkout edip tam kaynak doğrulaması yapmadan paket üretmez.
+
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 
 ## Çeviri yaklaşımı

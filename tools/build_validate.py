@@ -13,6 +13,8 @@ COLOR=re.compile(r'\^[^;\s]*;')
 CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
 NUMBER=re.compile(r'\d+(?:[.,]\d+)?')
 PRINTF=re.compile(r'%(?:\d+\$)?[-+0#]*(?:\d+|\*)?(?:\.\d+|\.\*)?(?:hh|h|ll|l|L|z|j|t)?[diuoxXfFeEgGaAcspn%]')
+BRACE_PLACEHOLDER=re.compile(r'\{(?:\d+|[A-Za-z_][A-Za-z0-9_.:-]*)\}')
+DOLLAR_PLACEHOLDER=re.compile(r'\$(?:\{[A-Za-z_][A-Za-z0-9_.:-]*\}|[A-Za-z_][A-Za-z0-9_.:-]*)')
 ASCII_PAREN=re.compile(r'\([ -~]*[A-Za-z][ -~]*\)')
 LOWERCASE_MECH=re.compile(r'\bmech\b')
 
@@ -22,7 +24,10 @@ BAD_TR_PATTERNS = (
     'Dükkânına^reset;, ^orange;Bilim Karakoluna',
     'keskinlığ',
     'monokllü',
-    'Et varlıklar'
+    'Et varlıklar',
+    "Vel'uuish arasında popüler bir keskin nişancı seçeneği",
+    'Dirençlerine 5% katkı ile bir oksijen geri dönüştürücüsü sağlar',
+    'Düşmanları hem de çok fazla hareket ettirir.'
 )
 
 # FU 6.5.8 pinned kaynağında strings.research altında dursa da aktif researchTree
@@ -1863,6 +1868,12 @@ def main():
             if not r.get('qa',{}).get('allow_control_fix'):raise ValueError('Kontrol kodu uyuşmazlığı: '+a+p)
         if Counter(PRINTF.findall(r['en']))!=Counter(PRINTF.findall(r['tr'])):
             raise ValueError('Printf yer tutucusu uyuşmazlığı: '+a+p)
+        if Counter(BRACE_PLACEHOLDER.findall(r['en']))!=Counter(BRACE_PLACEHOLDER.findall(r['tr'])):
+            raise ValueError('Süslü parantez yer tutucusu uyuşmazlığı: '+a+p)
+        if Counter(DOLLAR_PLACEHOLDER.findall(r['en']))!=Counter(DOLLAR_PLACEHOLDER.findall(r['tr'])):
+            raise ValueError('Değişken yer tutucusu uyuşmazlığı: '+a+p)
+        if r['en'].count('\n')!=r['tr'].count('\n'):
+            raise ValueError('Satır sonu uyuşmazlığı: '+a+p)
         if nums(r['en'])!=nums(r['tr']) and not r.get('qa',{}).get('allow_number_fix'):raise ValueError('Sayı uyuşmazlığı: '+a+p)
         groups[a].append(r)
 

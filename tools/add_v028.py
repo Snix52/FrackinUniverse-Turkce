@@ -105,7 +105,7 @@ TR = {
     "fuplasmacannon": ("Plazma Püskürtücü", "En yüksek hasar çıktısı için enerjiyi odaklar.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Blokları yok eder^reset;"),
     "fuplasmagun": ("Plazma Tüfeği", "En yüksek hasar çıktısı için enerjiyi odaklar.\n^cyan;Set bonusları için plazma silahı sayılır^reset;\n^yellow;Blokları yok eder^reset;"),
     "futritaniumpistol": ("Azgın Ateş", "Deli mermilerle olağanüstü bir atış hızı sunar."),
-    "gravgun": ("Yerçekimi Silahı", "Yerçekimini odaklanmış patlamalara yoğunlaştırır.\n^cyan;Düşmanları hem de çok fazla hareket ettirir.^reset;\n^yellow;Aşırı Geri Tepme (Alternatif)^reset;"),
+    "gravgun": ("Yerçekimi Silahı", "Yerçekimini odaklanmış patlamalara yoğunlaştırır.\n^cyan;Düşmanları çok güçlü biçimde savurur.^reset;\n^yellow;Aşırı Geri Tepme (Alternatif)^reset;"),
     "gravitongun": ("Graviton Tüfeği", "Mikro yerçekimi silaha dönüştürülmüş.\n^yellow;Birincil atış dalga patlamasıdır^reset;\nAlternatif: ^green;Güçlü geri tepme, Büyük Savunmasızlık^reset;"),
     "gravitonpistol": ("Graviton Tabancası", "Mikro yerçekimi silaha dönüştürülmüş.\n^yellow;Kısa menzilli^reset;\n^green;Muazzam geri tepme^reset;"),
     "mineralcannonadv": ("Parçacık Tüfeği", "Muazzam bir patlama potansiyeli.\n^yellow;Blokları yok eder^reset;"),
