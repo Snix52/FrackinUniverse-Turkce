@@ -58,7 +58,7 @@ class V032Tests(unittest.TestCase):
         self.assertEqual(len(rows), 107)
         self.assertEqual(len({r["asset"] for r in rows}), 38)
         self.assertEqual(len({r["en"] for r in rows}), 76)
-        self.assertEqual(len({(r["asset"], r["pointer"]) for r in rows}), 118)
+        self.assertEqual(len({(r["asset"], r["pointer"]) for r in rows}), 107)
         index = {(r["asset"], r["pointer"]): r for r in catalog["translations"]}
         dead = load_rule("V018_DEAD_OBJECT_ASSETS")
         excluded = load_rule("AUDIT_EXCLUDED_PATHS")
