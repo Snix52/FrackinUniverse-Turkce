@@ -58,6 +58,31 @@ class AuditVisibilityTests(unittest.TestCase):
             audit.AUDIT_EXCLUDED_PATHS,
         )
 
+    def test_cockpit_runtime_config_text_is_visible_by_prefix(self):
+        asset = "interface/cockpit/cockpit.config"
+        self.assertEqual(
+            audit.visible_confidence(asset, ["clusterMoons", "plural"], "%s orbiting bodies"),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(asset, ["planetTypeNames", "metallicmoon"], "Cyber Sphere"),
+            "confirmed",
+        )
+        self.assertEqual(
+            audit.visible_confidence(
+                asset,
+                ["visitableTypeDescription", "garden", "0"],
+                "^#76fe68;Lush ^reset;foothills mark this landing location.",
+            ),
+            "confirmed",
+        )
+        self.assertIsNone(audit.visible_confidence(
+            asset, ["starTypeColors", "default"], "white"
+        ))
+        self.assertIsNone(audit.visible_confidence(
+            asset, ["systemTooltipConfig", "name", "value"], "Placeholder"
+        ))
+
     def test_cockpit_runtime_templates_are_excluded_by_pointer(self):
         asset = "interface/cockpit/cockpit.config"
         excluded = audit.AUDIT_EXCLUDED_FIELDS[asset]
