@@ -1,0 +1,59 @@
+name: v046 diagnose qa mismatches
+on:
+  push:
+    branches: [work/v046-races-sail]
+    paths:
+      - .github/workflows/v046-diagnose.yml
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Print exact offending v0.46 rows
+        run: |
+          python - <<'PY'
+          import base64, json, re, zlib
+          from collections import Counter
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'tools')
+          import qa_integrity as qa
+          import build_validate as build
+
+          rows=[]
+          for part in sorted(Path('tools/.v046_parts').glob('part*.b64')):
+              payload=json.loads(zlib.decompress(base64.b64decode(part.read_text())))
+              rows.extend(payload['translations'])
+
+          fixes = {
+            ("species/juux.species", "/charCreationTooltip/description"): [("Psiyonik Fırlatıcı","Psiyonik Odak")],
+            ("species/fenerox.species", "/charCreationTooltip/description"): [("Avcı Pençesi","Avcı Pençeleri")],
+            ("species/floran.species", "/charCreationTooltip/description"): [("İğneli Silahlar/Floran Silahları/Fırlatılanlar","İğneleyici/Floran Silahları/Fırlatılanlar")],
+            ("species/slimeperson.species", "/charCreationTooltip/description"): [("Jelatinimsi, Bataklık ve Bataklık biyomları","Jelatinimsi, Bataklık ve Sulaklık biyomları")],
+            ("species/hylotl.species", "/charCreationTooltip/description"): [("Barışçıl Hylotllar","Barışçıl Hylotl'lar")],
+          }
+          by={(r['asset'],r['pointer']):r for r in rows}
+          for key,repls in fixes.items():
+              for old,new in repls:
+                  by[key]['tr']=by[key]['tr'].replace(old,new)
+
+          for r in rows:
+              problems=[]
+              if qa.signed_numbers(r['en']) != qa.signed_numbers(r['tr']):
+                  problems.append(f"signed {qa.signed_numbers(r['en'])} != {qa.signed_numbers(r['tr'])}")
+              for name,pat in [('PRINTF',build.PRINTF),('BRACE',build.BRACE_PLACEHOLDER),('DOLLAR',build.DOLLAR_PLACEHOLDER)]:
+                  a=Counter(pat.findall(r['en'])); b=Counter(pat.findall(r['tr']))
+                  if a!=b: problems.append(f"{name} {a} != {b}")
+              if problems:
+                  print("ASSET:",r['asset'])
+                  print("POINTER:",r['pointer'])
+                  print("EN:",repr(r['en']))
+                  print("TR:",repr(r['tr']))
+                  print("PROBLEMS:",'; '.join(problems))
+                  print("---")
+          PY
