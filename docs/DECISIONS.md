@@ -544,3 +544,17 @@
 - `Greaves` için mevcut LOCKED **Baldırlık** kararı bütün envanter adlarına uygulandı; çoğul **Baldırlıkları** ve eksik tamlama eki kullanılan eski adlar tekil eşya adı biçiminde temizlendi.
 - `Skill Quiver` yazımındaki eski **Beceri Sadakı** biçimi Türkçe tamlama hatası olduğu için **Beceri Sadağı** olarak düzeltildi ve ilgili terminoloji kayıtları güncellendi.
 - `Teleporter` için LOCKED **Işınlayıcı** kararı korundu. Radyasyon silahı `Irradiator`, oyuncu tarafındaki ad çakışmasını önlemek için **Radyasyon Yayıcı** olarak kilitlendi.
+
+## 2026-09-22 - v0.41 Space Station Cari runtime düzeltmesi
+
+- İlk v0.41 manifesti `texts.config` için 188 alan saymış ve Cari persona bloğunu kapsam dışında bırakmıştı.
+- Pinned FU 6.5.8 kaynağındaki `spaceStationData.config/stationRaces` listesinde `cari` açıkça canlı ırk olarak bulunuyor: `["apex", "avian", "floran", "glitch", "human", "hylotl", "cari", "novakid"]`.
+- `objects/spacestationguiconsole/racial/racialspacestationconsole.lua` istasyon ırkını bu listeden rastgele seçiyor; Cari için frame/animation ve portrait kaynakları da mevcut. Bu nedenle Cari metinleri erişilebilir runtime içeriğidir.
+- Cari bloğundaki **24 görünür alan** v0.41'e eklendi. `texts.config` kapsamı **188 → 212**, structured toplam **250 → 274** oldu.
+- Lua kapsamı değişmedi: **11 benzersiz source-locked replacement / 16 runtime occurrence**.
+- Düzeltilmiş v0.41 toplamı **274 structured + 16 Lua occurrence = 290 görünür metin oluşumu**dur.
+- Aynı kaynak string daha önce başka Space Station personasında çevrilmişse mevcut Türkçe translation-memory karşılığı yeniden kullanıldı; Cari'ye özgü 19 kaynak metin karakterin kısa ve ters tonuyla ayrıca çevrildi.
+- Quest dalı, `cooldownEnhancer`, `generic/chat4` ve `generic/chat5` bilinçli kapsam dışı kalır.
+- Generator artık canlı persona listesini ve `texts.config` pointer setini kaynak üzerinden yeniden hesaplar; Cari'nin yeniden sessizce düşmesi regresyon testiyle engellenir.
+- `Enhancer` Space Station tıbbi sistemi bağlamında **Güçlendirici** olarak LOCKED yapıldı.
+
