@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.44 Arayüz artık havuzu sınıflandırıldı; feature commit hazır, CI doğrulaması bekleniyor.**
+22 Eylül 2026 - **v0.44 Arayüz kategorisi tamamlandı ve doğrulandı.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
@@ -160,5 +160,43 @@ Oyun içi LQA ayrı bir aşamadır.
 - Stats patch içindeki dört `-todo-` açıklaması geliştirici placeholder'ıdır; çeviri borcu sayılmaz.
 - Oyun içi LQA: **NOT TESTED**.
 
-## v0.44 sonraki adım
-Build & QA ile Remaining Scope Audit'i doğrula. Beklenen Arayüz confirmed sonucu: **0 alan**.
+## v0.44 doğrulama sonucu
+Feature/fix zinciri:
+- `8ec662c` - v0.44 Arayüz artık havuzu kapanışı
+- `6854d07` - v0.43 tarihsel katalog sürüm testini ileri uyumlu yap
+- `3efd535` - doğrulanmış build/package refresh
+
+Build evidence:
+- translation version: **0.44.0-beta**
+- structured fields: **7.995**
+- patch assets: **2.258**
+- raw override assets: **6**
+- raw script strings: **55**
+- toplam yerelleştirilmiş görünür birim: **8.050**
+- static QA: **PASS**
+- pinned source validation: **PASS**
+- ZIP integrity: **PASS**
+- install-tree parity: **PASS**
+- package: `dist/FU_Turkce_v0.44.0_Beta.zip`
+- package sha256: `c50ee3f95c3ca04dbd380fe4796508c072758dfb020172a2fd060aa1abc2e769`
+- Build & QA run: **35697423309 / SUCCESS**
+- Remaining Scope Audit run: **35697316152 / SUCCESS**
+- oyun içi LQA: **NOT TESTED**
+
+## v0.44 sonrası audit
+Kalan doğrulanmış **Arayüz** kapsamı:
+- **0 asset**
+- **0 alan**
+
+Genel audit:
+- kalan doğrulanmış kapsam: **13.008 asset / 51.216 alan**
+- review havuzu: **588 asset / 4.438 alan**
+- Lua inceleme havuzu: **35 asset / 171 literal**
+
+Arayüz kategorisinin otomatik confirmed borcu kapanmıştır. Review havuzu ve Lua literal havuzu ayrı iş sınıflarıdır; bunlar Arayüz confirmed kapsamına geri eklenmez.
+
+## Sonraki başlangıç noktası
+v0.45'te Arayüz confirmed havuzuna geri dönme.
+Proje öncelik sırasına göre sıradaki yüksek değerli alan **Görevler**dir: auditte **101 asset / 368 doğrulanmış alan** kalıyor.
+Çalışma protokolü gereği 368 alan tek turda alınmayacak; ilk runtime-bağlı görev paketi **250-300 alanı geçmeyecek** biçimde ayrılmalıdır.
+Oyun içi LQA ayrı bir aşamadır.
