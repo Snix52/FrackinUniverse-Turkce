@@ -1,0 +1,181 @@
+name: nightfort display-name fix
+on:
+  push:
+    branches: [fix/nightfort-display-name]
+    paths:
+      - .github/workflows/nightfort-fix.yml
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Apply Nightfort display-name localization
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          ROOT=Path('.')
+          TOOLS=ROOT/'tools'
+
+          catalog_path=TOOLS/'ceviriler.json'
+          catalog=json.loads(catalog_path.read_text(encoding='utf-8'))
+          if catalog['translation_version']!='0.46.2-beta':
+              raise ValueError('Unexpected base version: '+catalog['translation_version'])
+          idx={(r['asset'],r['pointer']):r for r in catalog['translations']}
+
+          targets={
+              ('ai/nightfort.aimission','/speciesText/default/buttonText'):"Gece Hisarı'nı Ziyaret Et",
+              ('ai/nightfort.aimission','/speciesText/default/repeatButtonText'):"Gece Hisarı'nı Ziyaret Et",
+          }
+          for key,tr in targets.items():
+              if key not in idx:
+                  raise ValueError('Missing Nightfort target: '+repr(key))
+              if idx[key]['en']!='Visit Nightfort':
+                  raise ValueError('Nightfort source drift: '+repr(key)+' -> '+repr(idx[key]['en']))
+              idx[key]['tr']=tr
+
+          catalog['translation_version']='0.46.3-beta'
+          catalog_path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          v046_path=TOOLS/'v046_translations.json'
+          v046=json.loads(v046_path.read_text(encoding='utf-8'))
+          if v046['translation_version']!='0.46.2-beta':
+              raise ValueError('Unexpected v0.46 manifest version: '+v046['translation_version'])
+          v046['translation_version']='0.46.3-beta'
+          cidx={(r['asset'],r['pointer']):r for r in catalog['translations']}
+          for r in v046['translations']:
+              r['tr']=cidx[(r['asset'],r['pointer'])]['tr']
+          v046_path.write_text(json.dumps(v046,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          locked_path=TOOLS/'locked_terms.json'
+          locked=json.loads(locked_path.read_text(encoding='utf-8'))
+          bysrc={t.get('source'):t for t in locked['terms']}
+          if 'Nightfort' not in bysrc:
+              raise ValueError('Nightfort LOCKED term missing')
+          bysrc['Nightfort'].update({
+              'source':'Nightfort',
+              'context':'Lore özel yer adı / oyuncuya görünen konum adı',
+              'type':'Görev/Konum',
+              'tr':'Gece Hisarı',
+              'forbidden':'Nightfort',
+              'status':'LOCKED',
+              'note':'Teknik nightfort mission/world/dungeon kimlikleri korunur; yalnız oyuncuya görünen ad Gece Hisarı olarak yerelleştirilir.'
+          })
+          if 'Visit Nightfort' not in bysrc:
+              locked['terms'].append({
+                  'source':'Visit Nightfort',
+                  'context':'SAIL görev düğmesi',
+                  'type':'Görev/Konum',
+                  'tr':"Gece Hisarı'nı Ziyaret Et",
+                  'forbidden':'Visit Nightfort, Nightfort\'u Ziyaret Et',
+                  'status':'LOCKED',
+                  'note':'SAIL görünür eylem metni; teknik nightfort kimliklerine dokunulmaz.'
+              })
+          locked_path.write_text(json.dumps(locked,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          for p in (TOOLS/'generate_v046.py', TOOLS/'tests'/'test_v046.py'):
+              text=p.read_text(encoding='utf-8').replace('"0.46.2-beta"','"0.46.3-beta"')
+              p.write_text(text,encoding='utf-8')
+
+          test_path=TOOLS/'tests'/'test_mission_display_names.py'
+          text=test_path.read_text(encoding='utf-8')
+          text=text.replace(
+              '            ("ai/nightfort.aimission","/speciesText/default/buttonText"):"Nightfort\'u Ziyaret Et",\n',
+              ''
+          )
+          needle='            ("ai/verdantruins.aimission","/speciesText/default/buttonText"):"Yemyeşil Harabeler (2)",\n'
+          insert=needle+'            ("ai/nightfort.aimission","/speciesText/default/buttonText"):"Gece Hisarı\'nı Ziyaret Et",\n            ("ai/nightfort.aimission","/speciesText/default/repeatButtonText"):"Gece Hisarı\'nı Ziyaret Et",\n'
+          if "Gece Hisarı'nı Ziyaret Et" not in text:
+              if needle not in text:
+                  raise ValueError('Nightfort regression insertion point missing')
+              text=text.replace(needle,insert,1)
+          test_path.write_text(text,encoding='utf-8')
+
+          decisions=ROOT/'docs'/'DECISIONS.md'
+          text=decisions.read_text(encoding='utf-8')
+          text=text.replace(
+              'Dış referans veya gerçek lore özel adı olarak exact korunanlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Nightfort, Delta Freya II, Dantalion, Dreadwing.',
+              'Dış referans veya gerçek lore özel adı olarak exact korunanlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Delta Freya II, Dantalion, Dreadwing.'
+          )
+          note='''### v0.46.3 - Nightfort görünen ad kararı
+
+          - Pinned FU 6.5.8 kaynağında `nightfort` teknik mission/world/dungeon kimliği olarak korunur.
+          - Oyuncuya görünen `Visit Nightfort` SAIL metni **Gece Hisarı'nı Ziyaret Et** olarak yerelleştirilir.
+          - `Nightfort` için oyuncu-yüzü kanıt yalnız SAIL adında bulunduğundan, İngilizce biçimin lore açısından zorunlu olduğu kabul edilmedi.
+          - Teknik `missionName: nightfort`, `missionWorld: nightfort`, instance/dungeon anahtarları ve asset yolları değiştirilmez.
+          '''
+          if '### v0.46.3 - Nightfort görünen ad kararı' not in text:
+              text=text.rstrip()+'\n\n'+note.strip()+'\n'
+          decisions.write_text(text,encoding='utf-8')
+
+          checkpoint=ROOT/'FU_SESSION_CHECKPOINT.md'
+          text=checkpoint.read_text(encoding='utf-8')
+          text=text.replace(
+              'Exact korunan kanıtlı referans/özel adlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Nightfort, Delta Freya II, Dantalion, Dreadwing.',
+              'Exact korunan kanıtlı referans/özel adlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Delta Freya II, Dantalion, Dreadwing.'
+          )
+          note='''## v0.46.3 Nightfort bakım checkpoint
+          - Oyuncuya görünen Nightfort adı **Gece Hisarı** olarak yerelleştirildi.
+          - SAIL: `Visit Nightfort` -> **Gece Hisarı'nı Ziyaret Et**.
+          - Teknik `nightfort` mission/world/dungeon kimlikleri aynen korunur.
+          - Katalog sürümü: 0.46.3-beta.
+          - Oyun içi LQA: NOT TESTED.
+          '''
+          if '## v0.46.3 Nightfort bakım checkpoint' not in text:
+              text=text.rstrip()+'\n\n'+note.strip()+'\n'
+          checkpoint.write_text(text,encoding='utf-8')
+
+          readme=ROOT/'README.md'
+          text=readme.read_text(encoding='utf-8')
+          text=text.replace('**Güncel sürüm:** v0.46.2 Beta','**Güncel sürüm:** v0.46.3 Beta')
+          text=text.replace('v0.46.2 Beta itibarıyla:','v0.46.3 Beta itibarıyla:')
+          text=text.replace('dist/FU_Turkce_v0.46.2_Beta.zip','dist/FU_Turkce_v0.46.3_Beta.zip')
+          old='v0.46.1 bakımında generic Jungle terminolojisi Tropik Orman olarak kilitlendi. v0.46.2 bakımında eski toplu görev/konum özel-ad kararı yeniden denetlendi; betimleyici başlıklar Türkçeleştirildi, kanıtlı dış referanslar ve gerçek özel adlar korundu. Sonraki paket güncel Remaining Scope Audit sıralamasından seçilecektir.'
+          new='v0.46.1 bakımında generic Jungle terminolojisi Tropik Orman olarak kilitlendi. v0.46.2 bakımında eski toplu görev/konum özel-ad kararı yeniden denetlendi. v0.46.3 bakımında Nightfort oyuncuya görünen ad olarak **Gece Hisarı** biçiminde yerelleştirildi; teknik `nightfort` kimlikleri korundu. Sonraki paket güncel Remaining Scope Audit sıralamasından seçilecektir.'
+          text=text.replace(old,new)
+          readme.write_text(text,encoding='utf-8')
+
+          sys.path.insert(0,str(TOOLS))
+          from rule_data import render_terminology
+          (ROOT/'docs'/'TERMINOLOGY.md').write_text(render_terminology(locked),encoding='utf-8')
+
+          for p in (decisions,checkpoint,readme):
+              p.write_text(p.read_text(encoding='utf-8').rstrip()+'\n',encoding='utf-8')
+
+          print('Nightfort display-name localization applied')
+          PY
+      - name: Fetch pinned FU
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+      - name: Verify regressions and pinned build
+        run: |
+          python tools/qa_integrity.py --write-docs
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+          python tools/qa_integrity.py
+          python tools/generate_v045.py --source fu_source
+          python tools/generate_v046.py --source fu_source
+          python tools/build_validate.py --source-dir fu_source --output build_output
+          git diff --check
+      - name: Commit tested source changes
+        run: |
+          rm -rf build_output fu_source
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md FU_SESSION_CHECKPOINT.md docs tools
+          git diff --cached --check
+          git commit -m "fix: Nightfort görünen adını Gece Hisarı olarak yerelleştir [skip ci]"
+          git fetch origin fix/nightfort-display-name
+          test "$(git rev-parse origin/fix/nightfort-display-name)" = "$GITHUB_SHA"
+          git push origin HEAD:fix/nightfort-display-name
