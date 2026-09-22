@@ -1,0 +1,43 @@
+name: FU Turkce PR QA
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: fu-pr-qa-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  pr-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Reject direct generated-output edits
+        run: python tools/check_generated_changes.py
+      - name: Install Lua behavior test runtime
+        run: sudo apt-get update -qq && sudo apt-get install -y liblua5.4-0
+      - name: Compile and run all regressions
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+          python tools/qa_integrity.py
+      - name: Fetch pinned FU and validate source
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+          python tools/generate_v045.py --source fu_source
+          python tools/build_validate.py --source-dir fu_source --output build_output
+      - name: Exercise the freshly built Lua
+        env:
+          FU_TEST_MOD_DIR: build_output/FU_Turkce
+        run: python -m unittest discover -s tools/tests -p 'test_lua_behavior.py' -v
+      - name: Check whitespace and conflict markers
+        run: git diff --check

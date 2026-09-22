@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "dist/**"
-      - "FU_Turkce/**"
-      - "tools/test_raporu.json"
-      - "tools/GELISTIRME.txt"
   workflow_dispatch:
 
 concurrency:
@@ -29,6 +24,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           ref: ${{ env.BUILD_SOURCE_SHA }}
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v7
@@ -37,6 +33,12 @@ jobs:
 
       - name: Verify checkout identity
         run: test "$(git rev-parse HEAD)" = "$BUILD_SOURCE_SHA"
+
+      - name: Reject direct generated-output edits
+        run: python tools/check_generated_changes.py
+
+      - name: Install Lua behavior test runtime
+        run: sudo apt-get update -qq && sudo apt-get install -y liblua5.4-0
 
       - name: Compile tools and run regression tests
         run: |
@@ -66,6 +68,11 @@ jobs:
 
       - name: Build and run full-source static QA
         run: python tools/build_validate.py --source-dir fu_source --output build_output
+
+      - name: Exercise freshly built Lua before publication
+        env:
+          FU_TEST_MOD_DIR: build_output/FU_Turkce
+        run: python -m unittest discover -s tools/tests -p 'test_lua_behavior.py' -v
 
       - name: Refresh tracked install tree
         run: |

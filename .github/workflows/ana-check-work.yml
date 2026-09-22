@@ -3,22 +3,69 @@ on:
   push:
     branches: [fix/ana-check-20260922]
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: audit-repair-20260922
+  cancel-in-progress: true
 jobs:
-  snapshot:
+  repair:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
-          persist-credentials: false
-      - name: Export tracked source for regression work
-        run: |
-          git archive --format=tar HEAD -o source.tar
-          git rev-parse HEAD > source-sha.txt
-      - uses: actions/upload-artifact@v7
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
         with:
-          name: audit-repair-source
+          python-version: '3.11'
+      - name: Fetch exact FU source and Lua test runtime
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+          sudo apt-get update -qq
+          sudo apt-get install -y liblua5.4-0
+      - name: Apply exact locally verified migration
+        run: python tools/maintenance/apply_ana_check.py fu_source 2>&1 | tee migration.log
+      - name: All regressions and shared QA
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v 2>&1 | tee regressions.log
+          python tools/qa_integrity.py | tee integrity.log
+          python tools/generate_v045.py --source fu_source | tee layered-source.log
+      - name: Full pinned-source build and actual Lua behavior
+        run: |
+          python tools/build_validate.py --source-dir fu_source --output build_output 2>&1 | tee build.log
+          FU_TEST_MOD_DIR=build_output/FU_Turkce python -m unittest discover -s tools/tests -p 'test_lua_behavior.py' -v 2>&1 | tee built-lua.log
+      - name: Commit only tested source on the unchanged repair branch
+        env:
+          REPAIR_BRANCH: fix/ana-check-20260922
+        run: |
+          test "$(git ls-remote origin "refs/heads/$REPAIR_BRANCH" | cut -f1)" = "$GITHUB_SHA"
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          names=list(json.loads(Path('tools/maintenance/expected.json').read_text()))
+          subprocess.run(['git','add','--',*names],check=True)
+          staged=subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines()
+          assert set(staged)<=set(names),staged
+          subprocess.run(['git','diff','--cached','--check'],check=True)
+          PY
+          git diff --cached --binary > mutation.diff
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix: close audit gaps and repair prior translations [skip ci]'
+          git push origin "HEAD:refs/heads/$REPAIR_BRANCH"
+          git archive --format=tar HEAD -o verified-source.tar
+          git rev-parse HEAD > verified-source-sha.txt
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: audit-repair-evidence
           path: |
-            source.tar
-            source-sha.txt
-          retention-days: 1
+            *.log
+            mutation.diff
+            verified-source.tar
+            verified-source-sha.txt
+            tools/maintenance/expected.json
+            build_output/*.json
+          retention-days: 7
