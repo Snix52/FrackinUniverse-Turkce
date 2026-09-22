@@ -1,0 +1,94 @@
+name: v047 biome candidate dump
+on:
+  push:
+    branches: [work/v047-biome-names]
+    paths:
+      - .github/workflows/v047-biome-dump.yml
+permissions:
+  contents: read
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Fetch pinned FU
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+      - name: Export exact remaining biome candidates
+        run: |
+          python - <<'PY'
+          import json,sys
+          from collections import Counter,defaultdict
+          from pathlib import Path,PurePosixPath
+          sys.path.insert(0,'tools')
+          import audit_remaining as audit
+
+          translated,_=audit.load_translations(Path('tools/ceviriler.json'))
+          rows=[]
+          for path in sorted(Path('fu_source/biomes').rglob('*.biome')):
+              rel=PurePosixPath(path.relative_to('fu_source').as_posix())
+              if audit.excluded_path(rel):
+                  continue
+              data=audit.parse_jsonc(path.read_text(encoding='utf-8-sig'))
+              for r in audit.candidates_from_data(rel.as_posix(),data):
+                  key=(r.asset,r.pointer)
+                  if r.confidence=='confirmed' and r.category=='Biyom, zindan ve dünya sistemleri' and key not in translated:
+                      rows.append(r)
+          bykey={}
+          for r in rows:
+              key=(r.asset,r.pointer)
+              prev=bykey.get(key)
+              if prev is None or (prev.confidence=='review' and r.confidence=='confirmed'):
+                  bykey[key]=r
+          rows=[bykey[k] for k in sorted(bykey)]
+          if len(rows)!=288:
+              raise ValueError(f'biome candidate drift: {len(rows)} != 288')
+          assets={r.asset for r in rows}
+          if len(assets)!=288:
+              raise ValueError(f'biome asset drift: {len(assets)} != 288')
+
+          catalog=json.loads(Path('tools/ceviriler.json').read_text(encoding='utf-8'))
+          existing=defaultdict(set)
+          for r in catalog['translations']:
+              existing[r['en']].add(r['tr'])
+          locked=json.loads(Path('tools/locked_terms.json').read_text(encoding='utf-8'))
+          locked_by_source=defaultdict(list)
+          for t in locked['terms']:
+              if t.get('status')=='LOCKED':
+                  for src in t.get('source','').split(' / '):
+                      locked_by_source[src].append(t)
+
+          candidates=[]
+          for r in rows:
+              source=r.value
+              candidates.append({
+                  'asset':r.asset,'pointer':r.pointer,'en':source,
+                  'origin':r.origin,'key':r.key,
+                  'existing_tr':sorted(existing.get(source,())),
+                  'locked':locked_by_source.get(source,[]),
+              })
+          roots=Counter(PurePosixPath(r.asset).parts[1] if len(PurePosixPath(r.asset).parts)>1 else '' for r in rows)
+          pointer_counts=Counter(r.pointer for r in rows)
+          unique_sources=sorted({r.value for r in rows})
+          out={
+              'pinned_fu_commit':audit.PINNED_COMMIT,
+              'fields':len(rows),'assets':len(assets),
+              'unique_sources':len(unique_sources),
+              'subdir_counts':dict(sorted(roots.items())),
+              'pointer_counts':dict(pointer_counts),
+              'sources':unique_sources,
+              'candidates':candidates,
+          }
+          Path('v047_biome_candidates.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps({k:out[k] for k in ('fields','assets','unique_sources','subdir_counts','pointer_counts')},ensure_ascii=False,indent=2))
+          PY
+      - uses: actions/upload-artifact@v7
+        with:
+          name: v047-biome-candidates
+          path: v047_biome_candidates.json
+          retention-days: 3
