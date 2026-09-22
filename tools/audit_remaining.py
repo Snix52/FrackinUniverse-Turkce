@@ -404,7 +404,17 @@ def nonvisible_research_candidate(asset: str, field_pointer: str) -> bool:
 
 
 def audit_excluded_candidate(asset: str, field_pointer: str) -> bool:
-    return field_pointer in AUDIT_EXCLUDED_FIELDS.get(asset, frozenset())
+    if field_pointer in AUDIT_EXCLUDED_FIELDS.get(asset, frozenset()):
+        return True
+    # Prefix rules are stored with a trailing slash (for example "biomes/").
+    # They allow one documented metadata field to be excluded across a whole
+    # asset family without globally suppressing the same key elsewhere.
+    return any(
+        prefix.endswith("/")
+        and asset.startswith(prefix)
+        and field_pointer in pointers
+        for prefix, pointers in AUDIT_EXCLUDED_FIELDS.items()
+    )
 
 
 def v046_candidate_visibility(candidate: Candidate) -> Candidate | None:
