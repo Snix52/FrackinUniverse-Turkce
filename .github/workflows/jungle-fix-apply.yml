@@ -2,6 +2,7 @@ name: jungle terminology cleanup
 # retry: v030-schema
 # retry: v030-schema-2
 # retry: player-facing-scan
+# retry: test-indent
 on:
   push:
     branches: [fix/jungle-terminology]
@@ -143,16 +144,17 @@ jobs:
           text=text.replace("self.assertEqual(result['locked_terms'], 506)","self.assertEqual(result['locked_terms'], 507)")
           text=text.replace("self.assertGreaterEqual(len(engine.exact), 506)","self.assertGreaterEqual(len(engine.exact), 507)")
           needle='    def test_locked_wrong_variant_exact_and_in_sentence(self):\n'
-          test='''    def test_jungle_terminology_is_locked_and_cangil_cannot_return(self):
-              engine = qa.Terminology(self.terms)
-              engine.validate(row("Jungle", "Tropik Orman"))
-              for wrong in ("Cangıl", "Cangil"):
-                  with self.subTest(wrong=wrong), self.assertRaises(ValueError):
-                      engine.validate(row("Jungle", wrong))
-              self.assertFalse(any("cangıl" in r["tr"].casefold() or "cangil" in r["tr"].casefold()
-                                   for r in self.rows))
-
-          '''
+          test = (
+              "    def test_jungle_terminology_is_locked_and_cangil_cannot_return(self):\\n"
+              "        engine = qa.Terminology(self.terms)\\n"
+              "        engine.validate(row(\\\"Jungle\\\", \\\"Tropik Orman\\\"))\\n"
+              "        for wrong in (\\\"Cangıl\\\", \\\"Cangil\\\"):\\n"
+              "            with self.subTest(wrong=wrong), self.assertRaises(ValueError):\\n"
+              "                engine.validate(row(\\\"Jungle\\\", wrong))\\n"
+              "        self.assertFalse(any(\\\"cangıl\\\" in r[\\\"tr\\\"].casefold() or \\\"cangil\\\" in r[\\\"tr\\\"].casefold()\\n"
+              "                             for r in self.rows))\\n"
+              "\\n"
+          )
           if 'test_jungle_terminology_is_locked' not in text:
               if needle not in text:
                   raise ValueError('QA insertion point missing')
