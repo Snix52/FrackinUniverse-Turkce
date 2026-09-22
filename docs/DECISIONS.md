@@ -592,7 +592,7 @@
 - Düzeltilmiş görev borcu **18 asset / 29 alan / 29 benzersiz metin** oldu.
 - Kalanların tamamı FU'nun vanilla `.questtemplate` hedeflerine uyguladığı pinned `.questtemplate.patch` değerleridir. v0.45 manifestindeki her alan patch provenance bilgisiyle source-lock altındadır.
 - v0.45 generatoru CI içinde pinned FU 6.5.8 kaynağındaki patch değerlerini exact doğrular; kaynak drift ederse build kapanır.
-- `Pulse Jump` için onaylı Türkçe özel ad bulunmadığından tahmin üretilmedi ve **Pulse Jump Tech'i** olarak korundu.
+- `Pulse Jump`, havada ikinci zıplamayı bir enerji atımıyla sağlayan oyuncu Tech'idir; işlevi ve mevcut `çift zıplama` terminolojisi doğrulanarak **Enerji Sıçraması** olarak yerelleştirildi. Onaylı karşılığın daha önce bulunmaması İngilizce bırakma gerekçesi sayılmaz.
 - Mevcut proje terminolojisi korundu: **Mühendislik, İmalat Tezgâhı, FTL Motoru, STL Motoru, Güç Çekirdeği, Karbon Plaka, Gelişmiş Devre, Çarpıtma Küresi, Yükseltme Modülü**.
 - Vanilla item kimliği harici kaynakta doğrulanan Station Transponder, görev bağlamında **İstasyon Transponderi** olarak yerelleştirildi.
 - Kestrel/Falcon/Eagle/Condor gemi sınıf adları özel ad olarak korunur; lisans ifadesi Türkçeleştirilir.

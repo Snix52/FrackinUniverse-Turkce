@@ -224,7 +224,7 @@ Oyun içi LQA ayrı bir aşamadır.
   - Upgrade Module -> **Yükseltme Modülü**
   - Station Transponder -> **İstasyon Transponderi**
   - Kestrel/Falcon/Eagle/Condor özel sınıf adları korunur; **Lisansı** Türkçeleştirilir.
-  - Pulse Jump için proje onaylı Türkçe özel ad olmadığı için **Pulse Jump Tech'i** biçiminde korunur.
+  - Pulse Jump -> **Enerji Sıçraması**. Tech adı oyuncu işlevine göre yerelleştirilir; daha önce onaylı karşılığın bulunmaması İngilizce bırakma gerekçesi değildir.
 - Oyun içi LQA: **NOT TESTED**.
 
 ## v0.45 doğrulama sonucu

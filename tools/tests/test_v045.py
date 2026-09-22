@@ -59,6 +59,11 @@ class V045Tests(unittest.TestCase):
         for key,value in expected.items():
             self.assertEqual(self.by[key]["tr"],value)
 
+    def test_pulse_jump_is_fully_localized(self):
+        row=self.by[("quests/outpost/techscientist4.questtemplate","/completionText")]
+        self.assertIn("Enerji Sıçraması Tech'i",row["tr"])
+        self.assertNotIn("Pulse Jump",row["tr"])
+
     def test_mech_spelling_stays_locked(self):
         for r in self.rows:
             self.assertIsNone(re.search(r"\bmech\b",r["tr"]))
