@@ -45,7 +45,7 @@ class V041Tests(unittest.TestCase):
                 sorted(token.findall(row["tr"])),
                 row["asset"] + row["pointer"],
             )
-        control = re.compile(r"\\[(?![^\\]]*\\^)[^\\]]+\\]|<[^>]+>")
+        control = re.compile(r"\[(?![^\]]*\^)[^\]]+\]|<[^>]+>")
         for row in self.rows:
             source_codes = sorted(control.findall(row["en"]))
             target_codes = sorted(control.findall(row["tr"]))
