@@ -327,3 +327,11 @@ Oyun içi LQA ayrı bir aşamadır.
 - Evernight Jungle gibi özel görev/konum adları korunur.
 - Katalog sürümü 0.46.1-beta; structured alan sayısı değişmez: 8.153.
 - Oyun içi LQA: NOT TESTED.
+
+## v0.46.2 görev/konum adı denetim checkpoint
+- Eski toplu "özel ad" varsayımı kaldırıldı.
+- Çevrilen başlıklar: Kadim Tapınak, Su Dağıtım Merkezi, Evernight Tropik Ormanı, Fae Ormanı, Büyük Arena, Gigant Dağı, Yenilmez Kule, Yemyeşil Harabeler.
+- Exact korunan kanıtlı referans/özel adlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Nightfort, Delta Freya II, Dantalion, Dreadwing.
+- Takeshi's Castle exact dış referans olarak korunur; Castle Takeshi varyantı buna eşitlenir.
+- Katalog sürümü: 0.46.2-beta.
+- Oyun içi LQA: NOT TESTED.

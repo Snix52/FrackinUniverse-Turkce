@@ -42,7 +42,7 @@ def main():
     args = ap.parse_args()
     m = json.loads(MANIFEST.read_text(encoding="utf-8"))
     rows = m["translations"]
-    if m["translation_version"] != "0.46.1-beta":
+    if m["translation_version"] != "0.46.2-beta":
         raise ValueError("v0.46 sürüm bilgisi bozuk")
     if len(rows) != 129 or len({(r["asset"], r["pointer"]) for r in rows}) != 129:
         raise ValueError("v0.46 alan kapsamı bozuk")

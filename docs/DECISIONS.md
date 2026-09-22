@@ -317,7 +317,7 @@
 
 - Altı `scienceoutpost_*Shop` görevi ilgili dükkân nesnelerinin `offeredQuests` / `turnInQuests` alanlarıyla runtime'da doğrudan doğrulandı; quest-listte görünmemeleri bağlantısız oldukları anlamına gelmiyor.
 - Görev hedefi olan altı artefaktın envanter adları aynı pakette kilitlendi: **Greenfinger Madalyası, Uğurlu Para, Kristal Kupa, Uzaylı Yayın Düğümü, X'i Kalıntısı, Kadim Kumanda**.
-- `Verdant Ruins`, `Ancient Temple` ve `Evernight Jungle` şu aşamada özel görev/konum adları olarak korunur. Bu adlar, ilgili görev/mission/harita zinciri bütünüyle yerelleştirilmeden tek bir Outpost metninde Türkçeleştirilmez.
+- Verdant Ruins / Ancient Temple / Evernight Jungle için eski geçici koruma kararı v0.46.2 ile sona erdi; ilgili görev ve SAIL zinciri artık birlikte yerelleştirilir.
 - `Shards` Eld'uukhar söyleminde büyük harfle kullanılan lore özel adı olarak geçici biçimde özgün bırakılır; Eld'uukhar lore paketi ele alındığında yeniden değerlendirilecek.
 - Turn-in metinlerinde kaynakta geçen generic dükkân tarifleri doğal Türkçeyle aktarıldı; hedef artefakt adları envanterle birebir eşleştirildi.
 - Oyun içi LQA, görev işaretçisi ve dükkân etkileşim testi ayrıca yapılacaktır.
@@ -438,7 +438,7 @@
 - `mmgravgun`, `mmgravgun2` ve `mmgravgun3` görev şablonlarını başlatan bir tetikleyici bulunmadı. Buna karşılık `mastermanipulator2` Khe tarafından sunuluyor; ödül olarak verilen `humanartifactaugment` da `mastermanipulator` görevini başlatıyor.
 - `fu_asraNoxSailFix`, `madnessquestdata` ve `fuelDataQuest` runtime'da çalışan fakat bütün görev pencereleri kapalı uyumluluk/takip görevleridir. Oyuncuya görünür metin üretmedikleri için yamaya alınmadı. `ancientpowerconduit` ise aynı adlı eşya ve radyo mesajına sahip olsa da görevi başlatan bir bağlantı taşımıyor.
 - Challenge Labs teslim kristalleri gerçek dungeon Tiled katmanlarında ayrı ayrı yerleştirilmiş olduğundan 4 görev de erişilebilir kabul edildi. 19 harita/özel bölge görevi SAIL, görev haritası, teslim nesnesi veya gerçek Tiled yerleşimiyle doğrulandı.
-- `Brine Star`, `Ancient Temple`, `Hydro Center`, `Evernight Jungle`, `Forest of Fae`, `Grand Arena`, `Mount Gigant`, `Castle Takeshi`, `Techno City`, `Sky Boulevard`, `Snow Crash`, `Sunset Riders`, `Tower Invincible` ve `Verdant Ruins` SAIL/harita zinciriyle eşleşen özel görev adları olarak özgün bırakıldı.
+- Eski toplu "özel görev adı" kararı v0.46.2 denetiminde kaldırıldı; adlar artık teknik kimlik, lore özel adı, betimleyici başlık ve dış referans olarak ayrı ayrı sınıflandırılır.
 - `combatmaneuvering1` tamamlanma metnindeki köşeli parantezler oyuncuya gösterilen açıklama cümlesidir; kontrol etiketi değildir. Yalnız bu alan için field-specific `allow_control_fix` kullanıldı, renk kodları ve parantez düzeni korundu.
 - Yeni kapsamın **112/112 alanı** pinned FU 6.5.8 kaynağıyla exact doğrulandı; patch pairing **112 test + 112 replace PASS**. Proje toplamı **3371 structured + 15 Lua / 764 patch asset** oldu. Oyun içi görev akışı, font ve panel taşma LQA'sı ayrıca bekliyor.
 
@@ -611,3 +611,12 @@
 - Eski karşılık ve ASCII varyantı yeni QA kuralıyla yasaklandı.
 - Evernight Jungle gibi görev/konum özel adları mevcut özel-ad kararı gereği korunur.
 - Cockpit gezegen adı ve açıklamaları, malzeme modu, Tricorder zemin etiketi, SAIL/AI açıklamaları, oynanabilir ırk açıklamaları ve Jungle/Mud Slows ekipman metinleri geriye dönük eşitlendi.
+
+### v0.46.2 - Görev/konum görünen ad denetimi
+
+- Eski "özel görev adıysa İngilizce bırak" yaklaşımı kaldırıldı.
+- Betimleyici/generic başlıklar: Ancient Temple -> Kadim Tapınak, Hydro Center / Hydro Distribution Center -> Su Dağıtım Merkezi, Grand Arena -> Büyük Arena, Tower Invincible -> Yenilmez Kule, Verdant Ruins -> Yemyeşil Harabeler.
+- Karma özel adlar: Evernight Jungle -> Evernight Tropik Ormanı, Forest of Fae -> Fae Ormanı, Mount Gigant -> Gigant Dağı.
+- Dış referans veya gerçek lore özel adı olarak exact korunanlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Nightfort, Delta Freya II, Dantalion, Dreadwing.
+- Takeshi's Castle dış referans olarak korunur; kaynak içindeki Castle Takeshi varyantı kanonik Takeshi's Castle biçimine eşitlenir.
+- Görev başlığı, hedef açıklaması, SAIL butonu ve önceki Outpost referansları birlikte eşitlendi.

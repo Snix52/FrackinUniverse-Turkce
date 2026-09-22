@@ -25,7 +25,7 @@ class IntegrityTests(unittest.TestCase):
     def test_current_corpus_and_versioned_manifests(self):
         result = qa.validate_project(self.rows)
         self.assertEqual(result['catalog_units_checked'], len(qa.manifest_rows(self.rows)))
-        self.assertEqual(result['locked_terms'], 507)
+        self.assertEqual(result['locked_terms'], sum(t['status'] == 'LOCKED' for t in self.terms['terms']))
 
     def test_signed_numbers_pass(self):
         for en, tr in [('+25%', '+25%'), ('-7', '-7'), ('+10', '+10'), ('-10', '-10'),
