@@ -1,4 +1,5 @@
 name: mission display name audit fix
+# retry: test-dedent
 on:
   push:
     branches: [fix/mission-display-names]
@@ -21,6 +22,7 @@ jobs:
           python - <<'PY'
           import json
           import sys
+          import textwrap
           from pathlib import Path
 
           ROOT=Path('.')
@@ -166,7 +168,8 @@ jobs:
 
           # Dedicated regression test for audited display names.
           test_path=TOOLS/'tests'/'test_mission_display_names.py'
-          test_path.write_text(r'''import json
+          test_path.write_text(textwrap.dedent(r'''
+          import json
           import unittest
           from pathlib import Path
 
@@ -221,7 +224,7 @@ jobs:
 
           if __name__ == "__main__":
               unittest.main()
-          '''.replace('\n          ','\n').lstrip(),encoding='utf-8')
+          ''').lstrip(),encoding='utf-8')
 
           # Documentation: retire the blanket "special name" rule.
           decisions_path=ROOT/'docs'/'DECISIONS.md'
