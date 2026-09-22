@@ -1,0 +1,263 @@
+name: jungle terminology cleanup
+on:
+  push:
+    branches: [fix/jungle-terminology]
+    paths:
+      - .github/workflows/jungle-fix-apply.yml
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Apply retrospective Jungle terminology cleanup
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          import json
+          import sys
+          from pathlib import Path
+
+          ROOT=Path('.')
+          TOOLS=ROOT/'tools'
+
+          # Remove every Turkish cangil/cangıl spelling from source and docs.
+          for root in (TOOLS, ROOT/'docs'):
+              for path in root.rglob('*'):
+                  if not path.is_file():
+                      continue
+                  try:
+                      text=path.read_text(encoding='utf-8')
+                  except Exception:
+                      continue
+                  new=(text.replace('Cangıl','Tropik Orman')
+                           .replace('cangıl','tropik orman')
+                           .replace('Cangil','Tropik Orman')
+                           .replace('cangil','tropik orman'))
+                  if new!=text:
+                      path.write_text(new,encoding='utf-8')
+          for path in (ROOT/'README.md', ROOT/'FU_SESSION_CHECKPOINT.md'):
+              text=path.read_text(encoding='utf-8')
+              new=(text.replace('Cangıl','Tropik Orman')
+                       .replace('cangıl','tropik orman')
+                       .replace('Cangil','Tropik Orman')
+                       .replace('cangil','tropik orman'))
+              if new!=text:
+                  path.write_text(new,encoding='utf-8')
+
+          catalog_path=TOOLS/'ceviriler.json'
+          catalog=json.loads(catalog_path.read_text(encoding='utf-8'))
+          if catalog['translation_version']!='0.46.0-beta':
+              raise ValueError('Unexpected base version: '+catalog['translation_version'])
+          idx={(r['asset'],r['pointer']):r for r in catalog['translations']}
+
+          updates={
+              ('quests/alienjungle.questtemplate','/text'):
+                  'Kadim harita, uzak bir gezegende yerin derinliklerindeki tropik ormana giden yolu gösteriyor. Orada ne bulacağım?',
+              ('quests/evernight.questtemplate','/text'):
+                  'Uzak bir gezegenin tropik ormanının derinliklerindeki kadim harabelerin yerini keşfettim. Keşfetmesi ilginç olabilir.',
+              ('quests/grandarena.questtemplate','/text'):
+                  'Harita, Floran avcılarının güçlerini sınadığı tropik ormandaki büyük bir arenaya giden yolu gösteriyor. Hayatta kalmayı başaranlara ödül vadedilmiş...',
+              ('ai/alienjungle.aimission','/speciesText/default/selectSpeech/text'):
+                  'Uzak bir gezegende, yerin altında bir tropik orman... Ne ters gidebilir ki? Kesinlikle keşfetmeye değer!',
+              ('ai/evernight.aimission','/speciesText/default/selectSpeech/text'):
+                  'Tropik ormanın içindeki harabelere giden bir yol mu? Ben varım!',
+              ('ai/grandarena.aimission','/speciesText/default/selectSpeech/text'):
+                  'Avcıların dört bir yandan gelen canavarlara karşı kendilerini sınadığı, tropik ormandaki büyük bir Floran arenasından haber aldım. Ödüller de varmış; göz atmaya değer olabilir!'
+          }
+          for key,value in updates.items():
+              if key not in idx:
+                  raise ValueError('Missing catalog row: '+repr(key))
+              idx[key]['tr']=value
+
+          armor_assets={
+              'items/armors/tier4/monsterplating/fumonsterplatedarmor.chest',
+              'items/armors/tier4/monsterplating/fumonsterplatedarmor.head',
+              'items/armors/tier4/monsterplating/fumonsterplatedarmor.legs'
+          }
+          for asset in armor_assets:
+              row=idx[(asset,'/description')]
+              if 'Jungle/Mud Slows' not in row['en']:
+                  raise ValueError('Monster plating source drift: '+asset)
+              row['tr']=row['tr'].replace('Orman/Çamur Yavaşlatması','Tropik Orman/Çamur Yavaşlatması')
+
+          catalog['translation_version']='0.46.1-beta'
+          catalog_path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          v030_path=TOOLS/'v030_translations.json'
+          v030=json.loads(v030_path.read_text(encoding='utf-8'))
+          changed=0
+          for spec in v030.values():
+              if spec.get('asset') in armor_assets:
+                  if 'Jungle/Mud Slows' not in spec.get('description_en',''):
+                      raise ValueError('v0.30 source drift: '+spec.get('asset',''))
+                  spec['description_tr']=spec['description_tr'].replace('Orman/Çamur Yavaşlatması','Tropik Orman/Çamur Yavaşlatması')
+                  changed+=1
+          if changed!=3:
+              raise ValueError('Expected 3 v0.30 monster plating rows, got '+str(changed))
+          v030_path.write_text(json.dumps(v030,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          v046_path=TOOLS/'v046_translations.json'
+          v046=json.loads(v046_path.read_text(encoding='utf-8'))
+          v046['translation_version']='0.46.1-beta'
+          for row in v046['translations']:
+              key=(row['asset'],row['pointer'])
+              row['tr']=idx[key]['tr']
+          v046_path.write_text(json.dumps(v046,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          locked_path=TOOLS/'locked_terms.json'
+          locked=json.loads(locked_path.read_text(encoding='utf-8'))
+          if not any(t.get('source')=='Jungle' for t in locked['terms']):
+              locked['terms'].append({
+                  'source':'Jungle',
+                  'context':'Biyom / zemin / generic çevre adı',
+                  'type':'Biyom',
+                  'tr':'Tropik Orman',
+                  'forbidden':'Cangıl, Cangil',
+                  'status':'LOCKED',
+                  'note':'Evernight Jungle gibi özel görev/konum adları korunur; generic Jungle için Tropik Orman kullanılır.'
+              })
+          if not any('cang' in x.get('pattern','').casefold() for x in locked.get('forbidden_regexes',[])):
+              locked.setdefault('forbidden_regexes',[]).append({
+                  'pattern':'cang[ıi]l',
+                  'ignore_case':True,
+                  'message':'Kilitli Jungle terminolojisi ihlali: generic Jungle için Tropik Orman kullanılmalı.'
+              })
+          locked_path.write_text(json.dumps(locked,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          for p in (TOOLS/'generate_v046.py', TOOLS/'tests'/'test_v046.py'):
+              text=p.read_text(encoding='utf-8').replace('"0.46.0-beta"','"0.46.1-beta"')
+              p.write_text(text,encoding='utf-8')
+
+          qa_test=TOOLS/'tests'/'test_qa_integrity.py'
+          text=qa_test.read_text(encoding='utf-8')
+          text=text.replace("self.assertEqual(result['locked_terms'], 506)","self.assertEqual(result['locked_terms'], 507)")
+          text=text.replace("self.assertGreaterEqual(len(engine.exact), 506)","self.assertGreaterEqual(len(engine.exact), 507)")
+          needle='    def test_locked_wrong_variant_exact_and_in_sentence(self):\n'
+          test='''    def test_jungle_terminology_is_locked_and_cangil_cannot_return(self):
+              engine = qa.Terminology(self.terms)
+              engine.validate(row("Jungle", "Tropik Orman"))
+              for wrong in ("Cangıl", "Cangil"):
+                  with self.subTest(wrong=wrong), self.assertRaises(ValueError):
+                      engine.validate(row("Jungle", wrong))
+              self.assertFalse(any("cangıl" in r["tr"].casefold() or "cangil" in r["tr"].casefold()
+                                   for r in self.rows))
+
+          '''
+          if 'test_jungle_terminology_is_locked' not in text:
+              if needle not in text:
+                  raise ValueError('QA insertion point missing')
+              text=text.replace(needle,test+needle,1)
+          qa_test.write_text(text,encoding='utf-8')
+
+          readme=ROOT/'README.md'
+          text=readme.read_text(encoding='utf-8')
+          replacements={
+              '**Güncel sürüm:** v0.45.1 Beta':'**Güncel sürüm:** v0.46.1 Beta',
+              'v0.45.1 Beta itibarıyla:':'v0.46.1 Beta itibarıyla:',
+              '- **8.024** yapılandırılmış oyuncu metni':'- **8.153** yapılandırılmış oyuncu metni',
+              '- **8.081** toplam yerelleştirilmiş görünür birim':'- **8.210** toplam yerelleştirilmiş görünür birim',
+              '- **2.276** patch asset':'- **2.329** patch asset',
+              '- **2.283** toplam hedef asset':'- **2.336** toplam hedef asset',
+              'dist/FU_Turkce_v0.45.1_Beta.zip':'dist/FU_Turkce_v0.46.1_Beta.zip'
+          }
+          for old,new in replacements.items():
+              text=text.replace(old,new)
+          start=text.find('## Sıradaki çalışma')
+          end=text.find('\n## Kurulum',start)
+          if start>=0 and end>start:
+              text=text[:start]+'''## Son tamamlanan çalışma
+
+          v0.46 Irklar ve SAIL/AI confirmed kapsamı kapatıldı.
+
+          - 53 canlı asset
+          - 129 oyuncuya gösterilen alan
+          - 89 SAIL/AI alanı
+          - 20 oynanabilir ırkta 40 species alanı
+          - Irklar ve SAIL/AI confirmed borcu: 0
+
+          v0.46.1 bakımında generic Jungle terminolojisi Tropik Orman olarak kilitlendi ve eski karşılıklar geriye dönük temizlendi. Sonraki paket güncel Remaining Scope Audit sıralamasından seçilecektir.
+          '''+text[end:]
+          readme.write_text(text,encoding='utf-8')
+
+          decisions=ROOT/'docs'/'DECISIONS.md'
+          text=decisions.read_text(encoding='utf-8')
+          if '### v0.46.1 - Jungle terminoloji standardı' not in text:
+              text=text.rstrip()+'''\n\n### v0.46.1 - Jungle terminoloji standardı
+
+          - Generic Jungle için onaylı karşılık Tropik Orman olarak LOCKED yapıldı.
+          - Eski karşılık ve ASCII varyantı yeni QA kuralıyla yasaklandı.
+          - Evernight Jungle gibi görev/konum özel adları mevcut özel-ad kararı gereği korunur.
+          - Cockpit gezegen adı ve açıklamaları, malzeme modu, Tricorder zemin etiketi, SAIL/AI açıklamaları, oynanabilir ırk açıklamaları ve Jungle/Mud Slows ekipman metinleri geriye dönük eşitlendi.
+          '''
+          decisions.write_text(text+'\n',encoding='utf-8')
+
+          checkpoint=ROOT/'FU_SESSION_CHECKPOINT.md'
+          text=checkpoint.read_text(encoding='utf-8')
+          if '## v0.46.1 terminoloji bakım checkpoint' not in text:
+              text=text.rstrip()+'''\n\n## v0.46.1 terminoloji bakım checkpoint
+          - Generic Jungle -> Tropik Orman LOCKED.
+          - Eski karşılık kaynak, manifest, test, dokümantasyon ve katalog katmanlarında geriye dönük temizlendi.
+          - Evernight Jungle gibi özel görev/konum adları korunur.
+          - Katalog sürümü 0.46.1-beta; structured alan sayısı değişmez: 8.153.
+          - Oyun içi LQA: NOT TESTED.
+          '''
+          checkpoint.write_text(text+'\n',encoding='utf-8')
+
+          sys.path.insert(0,str(TOOLS))
+          from rule_data import render_terminology
+          (ROOT/'docs'/'TERMINOLOGY.md').write_text(render_terminology(locked),encoding='utf-8')
+
+          # No old Turkish term may remain in source/doc layers.
+          hits=[]
+          for root in (TOOLS,ROOT/'docs'):
+              for path in root.rglob('*'):
+                  if not path.is_file():
+                      continue
+                  try:
+                      t=path.read_text(encoding='utf-8')
+                  except Exception:
+                      continue
+                  if 'cangıl' in t.casefold() or 'cangil' in t.casefold():
+                      hits.append(path.as_posix())
+          for path in (ROOT/'README.md',ROOT/'FU_SESSION_CHECKPOINT.md'):
+              t=path.read_text(encoding='utf-8')
+              if 'cangıl' in t.casefold() or 'cangil' in t.casefold():
+                  hits.append(path.as_posix())
+          if hits:
+              raise ValueError('Old Jungle terminology remains: '+repr(sorted(set(hits))))
+          print('Jungle terminology cleanup applied; old term count: 0')
+          PY
+      - name: Fetch pinned FU
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+      - name: Verify all regressions and pinned build
+        run: |
+          python tools/qa_integrity.py --write-docs
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+          python tools/qa_integrity.py
+          python tools/generate_v045.py --source fu_source
+          python tools/generate_v046.py --source fu_source
+          python tools/build_validate.py --source-dir fu_source --output build_output
+          python tools/audit_remaining.py --source fu_source --json-output audit_output/kalan.json --md-output audit_output/KALAN.md
+          git diff --check
+      - name: Commit tested source changes
+        run: |
+          rm -rf build_output audit_output fu_source
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md FU_SESSION_CHECKPOINT.md docs tools
+          git diff --cached --check
+          git commit -m "fix: Jungle terminolojisini Tropik Orman olarak kilitle [skip ci]"
+          git fetch origin fix/jungle-terminology
+          test "$(git rev-parse origin/fix/jungle-terminology)" = "$GITHUB_SHA"
+          git push origin HEAD:fix/jungle-terminology
