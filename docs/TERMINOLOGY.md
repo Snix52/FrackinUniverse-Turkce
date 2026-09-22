@@ -540,10 +540,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Sunset Riders | Dış referans / görev başlığı | Görev/Konum | Sunset Riders |  | LOCKED | Konami western arcade oyunu referansı korunur. |
 | Sky Boulevard | Dış referans / görev başlığı | Görev/Konum | Sky Boulevard |  | LOCKED | Whale's Voyage yer adı referansı korunur. |
 | Techno City | Dış referans / lore yer adı | Görev/Konum | Techno City |  | LOCKED | FU codexindeki arcade-game referansı ve Guardians yer adı korunur. |
-| Nightfort | Lore özel yer adı | Görev/Konum | Nightfort |  | LOCKED | Nightar kralının hisarı için kullanılan birleşik özel ad. |
+| Nightfort | Lore özel yer adı / oyuncuya görünen konum adı | Görev/Konum | Gece Hisarı | Nightfort | LOCKED | Teknik nightfort mission/world/dungeon kimlikleri korunur; yalnız oyuncuya görünen ad Gece Hisarı olarak yerelleştirilir. |
 | Delta Freya II | Lore özel yer adı | Görev/Konum | Delta Freya II |  | LOCKED | Özel gökcismi/konum adı. |
 | Dantalion | Özel ad | Görev/Konum | Dantalion |  | LOCKED | Görevdeki özel ad. |
 | Dreadwing | Özel ad | Görev/Konum | Dreadwing |  | LOCKED | Boss özel adı. |
+| Visit Nightfort | SAIL görev düğmesi | Görev/Konum | Gece Hisarı'nı Ziyaret Et | Visit Nightfort, Nightfort'u Ziyaret Et | LOCKED | SAIL görünür eylem metni; teknik nightfort kimliklerine dokunulmaz. |
 
 ## Kural
 
