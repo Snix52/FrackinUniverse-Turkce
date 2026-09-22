@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.45.1-beta",
+  "translation_version": "0.46.0-beta",
   "note": "v0.30 aktif araştırma ekipmanı kapanışı: erken kalkanlar ve yan dallar, Kirhos/Lunari/Elduu/Skath/Vel'uuish silahları, EPP sırt ekipmanları ile Kademe 6-7 düğümlerindeki gerçek tarif destekli 413 assetin 826 görünür alanı yerelleştirildi. Toplam 6016 structured + 15 Lua, 2086 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
@@ -57403,6 +57403,1029 @@
         "source_patch": "quests/story/shiprepair.questtemplate.patch",
         "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
       }
+    },
+    {
+      "asset": "ai/ai.config",
+      "pointer": "/shipStatus/0/text",
+      "en": "^#6f6f6f;$ status\n^cyan;> Ship modification manual override in place.\n> Any ship modifications must be manually done by the captain.",
+      "tr": "^#6f6f6f;$ durum\n^cyan;> Gemi modifikasyonlarında manuel kontrol etkin.\n> Gemi üzerindeki tüm değişiklikler kaptan tarafından manuel olarak yapılmalıdır.",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/ai.config.patch"
+      }
+    },
+    {
+      "asset": "ai/alienjungle.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Brine Star (6+)",
+      "tr": "Brine Star (6+)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/alienjungle.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Brine Star (6+) (R)",
+      "tr": "Brine Star (6+) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/alienjungle.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "An underground jungle on a far-off planet...what could go wrong? Definitely worth exploring!",
+      "tr": "Uzak bir gezegende yeraltı cangılı... Ne ters gidebilir ki? Kesinlikle keşfetmeye değer!",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/ancienttemple.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Ancient Temple (2)",
+      "tr": "Ancient Temple (2)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/ancienttemple.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "The Ancient Temple (2) (R)",
+      "tr": "Ancient Temple (2) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/ancienttemple.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "We've found the way to an ancient temple filled with treasure! It might be worth it to go and do some tomb raiding...the planet is reported on my scanners as threat level 2.",
+      "tr": "Hazine dolu kadim bir tapınağın yolunu bulduk! Biraz mezar yağmacılığına değebilir... Tarayıcılarıma göre gezegenin tehdit seviyesi 2.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/avianhydro.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Hydro Distribution Center (6+)",
+      "tr": "Hydro Center (6+)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/avianhydro.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Hydro Distribution Center (6+) (R)",
+      "tr": "Hydro Center (6+) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/avianhydro.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "An underwater Avian temple...most odd indeed. Perhaps some treasure hunting is in order.",
+      "tr": "Su altında bir Avian tapınağı... Gerçekten çok tuhaf. Belki biraz hazine avına çıkmanın zamanı gelmiştir.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/evernight.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Evernight Jungle (5)",
+      "tr": "Evernight Jungle (5)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/evernight.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Evernight Jungle (5) (R)",
+      "tr": "Evernight Jungle (5) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/evernight.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "A path to ruins within the jungle? Sign me up!",
+      "tr": "Cangılın içindeki harabelere giden bir yol mu? Ben varım!",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/forestoffae.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Forest of Fae (5)",
+      "tr": "Forest of Fae (5)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/forestoffae.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Forest of Fae (5) (R)",
+      "tr": "Forest of Fae (5) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/forestoffae.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "I've discovered a nefarious cultist plot to corrupt an ancient forest. It's up to me to stop them! I've been advised that a grappling hook will be necessary to complete this mission, so I should get one before I go.",
+      "tr": "Kadim bir ormanı yozlaştırmaya çalışan uğursuz bir tarikatçı planını ortaya çıkardım. Onları durdurmak bana düşüyor! Bu görevi tamamlamak için bir kancalı halata ihtiyacım olacağı söylendi; gitmeden önce bir tane edinmeliyim.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/fu_outpost.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Visit Outpost",
+      "tr": "Karakolu Ziyaret Et",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/fu_outpost.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Outpost",
+      "tr": "Karakola Yeniden Git",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/fu_outpost.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "In the furthest reaches of the galaxy is the Ark, a structure built by the Ancients to seal away the Ruin. The last remnants of the Protectorate gather here in an effort to save all life.",
+      "tr": "Galaksinin en uzak köşelerinde, Kadimlerin Ruin'i mühürlemek için inşa ettiği Ark bulunuyor. Protectorate'in geriye kalanları, tüm yaşamı kurtarmak için burada bir araya geliyor.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/grandarena.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Grand Arena (5)",
+      "tr": "Grand Arena (5)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/grandarena.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "The Grand Arena (5) (R)",
+      "tr": "Grand Arena (5) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/grandarena.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "I've received world of a grand Floran jungle arena where hunters test themselves against monsters from all over. There are prizes too, it could be worth checking out!",
+      "tr": "Avcıların her yerden gelen canavarlara karşı kendilerini sınadığı büyük bir Floran cangıl arenasından haber aldım. Ödüller de varmış; göz atmaya değer olabilir!",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/infiltration.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Infiltration (6)",
+      "tr": "Sızma (6)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/infiltration.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Infiltration (6) (R)",
+      "tr": "Sızma (6) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/infiltration.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "The Apex rebellion is looking to infiltrate a Miniknog research facility. Maybe they could use some help from yours truly? ^green;Bio-Ooze^reset; detected.",
+      "tr": "Apex isyanı bir Miniknog araştırma tesisine sızmak istiyor. Belki benim gibi birinin yardımına ihtiyaçları vardır? ^green;Biyo-Balçık^reset; tespit edildi.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/japaneseruins.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Mount Gigant (8)",
+      "tr": "Mount Gigant (8)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/japaneseruins.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Mount Gigant (8) (R)",
+      "tr": "Mount Gigant (8) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/japaneseruins.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "An ancient mountain populated by Hylotl is said to be cursed. Should we go investigate what's going on?",
+      "tr": "Hylotlların yaşadığı kadim bir dağın lanetli olduğu söyleniyor. Neler döndüğünü araştırmaya gidelim mi?",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/letheiafacility.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Letheia Facility (8)",
+      "tr": "Letheia Tesisi (8)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/letheiafacility.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "The Letheia Facility (8) (R)",
+      "tr": "Letheia Tesisi (8) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/letheiafacility.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "The Letheia Corporation apparently has a mysterious facility on a far-off planet. I wonder what's going on there...",
+      "tr": "Letheia Corporation'ın uzak bir gezegende gizemli bir tesisi varmış. Acaba orada neler oluyor...",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/lethialabs.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Letheia Labs (6)",
+      "tr": "Letheia Laboratuvarları (6)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/lethialabs.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Letheia Labs (6) (R)",
+      "tr": "Letheia Laboratuvarları (6) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/lethialabs.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "The distress signal's origin is this far-off facility owned by Letheia Corporation. I wonder what awaits there...",
+      "tr": "İmdat sinyali, Letheia Corporation'a ait bu uzak tesisten geliyor. Acaba orada bizi ne bekliyor...",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/magickaforest.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Away In A Longship (3)",
+      "tr": "Uzun Gemiyle Uzaklara (3)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/magickaforest.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Away In A Longship (3) (R)",
+      "tr": "Uzun Gemiyle Uzaklara (3) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/magickaforest.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "The defenders of a Glitch monastery are asking for help against an imminent Alpaca raid. Perhaps you could do something to help?",
+      "tr": "Bir Glitch manastırının savunucuları yaklaşan Alpaka baskınına karşı yardım istiyor. Belki onlara yardım edebilirsin?",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/missionapex1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Miniknog Stronghold (6)",
+      "tr": "Miniknog Kalesi (6)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionapex1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionapex1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Miniknog Stronghold (6)",
+      "tr": "Miniknog Kalesine Yeniden Git (6)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionapex1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionavian1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Great Sovereign Temple (5)",
+      "tr": "Büyük Hükümdar Tapınağı (5)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionavian1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionavian1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Great Sovereign Temple (5)",
+      "tr": "Büyük Hükümdar Tapınağına Yeniden Git (5)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionavian1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missioncultist1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Dantalion (6)",
+      "tr": "Dantalion (6)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missioncultist1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missioncultist1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit The Dantalion (6)",
+      "tr": "Dantalion'a Yeniden Git (6)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missioncultist1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionfloran1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Ceremonial Hunting Caverns(3)",
+      "tr": "Törensel Av Mağaraları(3)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionfloran1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionfloran1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Ceremonial Hunting Caverns(3)",
+      "tr": "Törensel Av Mağaralarına Yeniden Git(3)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionfloran1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionglitch1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Baron's Keep (6)",
+      "tr": "Baron'un Kalesi (6)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionglitch1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionglitch1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit The Baron's Keep (6)",
+      "tr": "Baron'un Kalesine Yeniden Git (6)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionglitch1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionhuman1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Erchius Mining Facility (3)",
+      "tr": "Erchius Madencilik Tesisi (3)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionhuman1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionhuman1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Erchius Mining Facility (3)",
+      "tr": "Erchius Madencilik Tesisine Yeniden Git (3)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionhuman1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionhuman1.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "This (^cyan;optional^reset;) Facility is the central source of Erchius Crystals. A distress call beckons us to help.",
+      "tr": "Bu (^cyan;isteğe bağlı^reset;) tesis, Erchius Kristallerinin ana kaynağı. Bir imdat çağrısı yardım etmemizi istiyor.",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionhuman1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionhylotl1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Grand Pagoda Library (4)",
+      "tr": "Büyük Pagoda Kütüphanesi (4)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionhylotl1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionhylotl1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Grand Pagoda Library (4)",
+      "tr": "Büyük Pagoda Kütüphanesine Yeniden Git (4)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionhylotl1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionpenguin1.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Dreadwing (3)",
+      "tr": "Dreadwing (3)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionpenguin1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionpenguin1.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Rechallenge Dreadwing (3)",
+      "tr": "Dreadwing'e Yeniden Meydan Oku (3)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionpenguin1.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionpenguin2.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Weapon Testing Site (4)",
+      "tr": "Silah Test Alanı (4)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionpenguin2.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/missionpenguin2.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Weapon Testing Site (4)",
+      "tr": "Silah Test Alanına Yeniden Git (4)",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "ai/missionpenguin2.aimission.patch"
+      }
+    },
+    {
+      "asset": "ai/nightfort.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Visit Nightfort",
+      "tr": "Nightfort'u Ziyaret Et",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/nightfort.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Visit Nightfort",
+      "tr": "Nightfort'u Ziyaret Et",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/nightfort.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "A Hidden castle between the mountins on a snow planet. The Nightar king's fort, it is either abandoned, or has scanners jammers.",
+      "tr": "Karlı bir gezegendeki dağların arasında gizli bir kale. Nightar kralının hisarı; ya terk edilmiş ya da tarayıcıları engelleyen düzenekleri var.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/pavillion.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Takeshi's Castle (3)",
+      "tr": "Castle Takeshi (3)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/pavillion.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Takeshi's Castle (3) (R)",
+      "tr": "Castle Takeshi (3) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/pavillion.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "Ninjas in the employ of Shogun Takeshi have kidnapped the Hylotl princess Koto! Are you a bad enough dude to rescue her?",
+      "tr": "Shogun Takeshi'nin emrindeki ninjalar Hylotl prensesi Koto'yu kaçırdı! Onu kurtaracak kadar gözü kara mısın?",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/penguinhighway.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Highway Havoc (8)",
+      "tr": "Otoyol Kargaşası (8)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/penguinhighway.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Highway Havoc (8) (R)",
+      "tr": "Otoyol Kargaşası (8) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/penguinhighway.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "If we act quickly, we might be able to stop the penguins! Techno City is depending on us! At least, I think...",
+      "tr": "Hızlı davranırsak penguenleri durdurabiliriz! Techno City bize güveniyor! En azından sanırım...",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/precursordungeon.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Precursor Ruins (5)",
+      "tr": "Precursor Harabeleri (5)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/precursordungeon.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Precursor Ruins (5)",
+      "tr": "Precursor Harabelerine Yeniden Git (5)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/precursordungeon.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "Ancient, technologically-fantastic ruins of a long-forgotten race.",
+      "tr": "Uzun zaman önce unutulmuş bir ırka ait, teknolojik açıdan inanılmaz kadim harabeler.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/scienceoutpostfu.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Visit Science Outpost",
+      "tr": "Bilim Karakolunu Ziyaret Et",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/scienceoutpostfu.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Revisit the Science Outpost",
+      "tr": "Bilim Karakoluna Yeniden Git",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/scienceoutpostfu.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "The Science Outpost is an important research center situated on a damp, vibrant Fungal world.",
+      "tr": "Bilim Karakolu, nemli ve canlı bir Mantar dünyasında bulunan önemli bir araştırma merkezi.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/shoggothmission.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "^#7fac66;Delta Freya II^reset; (7+)",
+      "tr": "^#7fac66;Delta Freya II^reset; (7+)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/shoggothmission.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "^#7fac66;Delta Freya II^reset; (7+)(R)",
+      "tr": "^#7fac66;Delta Freya II^reset; (7+)(R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/shoggothmission.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "There is no communication from this remote outpost. Investigate why.",
+      "tr": "Bu uzak karakoldan hiçbir iletişim gelmiyor. Nedenini araştır.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/skytemple.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Sky Boulevard (6+)",
+      "tr": "Sky Boulevard (6+)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/skytemple.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "The Sky Boulevard (6+) (R)",
+      "tr": "Sky Boulevard (6+) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/skytemple.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "Suspended in the aether, the Sky Boulevard is one of Avian civilization's most sacred sites. It's no doubt also guarded by the most elite warriors!",
+      "tr": "Aether'de asılı duran Sky Boulevard, Avian medeniyetinin en kutsal yerlerinden biri. Kuşkusuz en seçkin savaşçılar tarafından da korunuyordur!",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/snowcrash.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Snow Crash (4)",
+      "tr": "Snow Crash (4)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/snowcrash.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Snow Crash (4) (R)",
+      "tr": "Snow Crash (4) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/snowcrash.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "A band of Apex rebels is dealing with a hostage situation with the Miniknog on a far-off world. I could go over and try to help them with their problem.",
+      "tr": "Bir grup Apex isyancısı, uzak bir dünyada Miniknog'la yaşanan rehine kriziyle uğraşıyor. Gidip sorunlarını çözmelerine yardım edebilirim.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/sunsetriders.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "Sunset Riders (3)",
+      "tr": "Sunset Riders (3)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/sunsetriders.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "Sunset Riders (3) (R)",
+      "tr": "Sunset Riders (3) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/sunsetriders.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "Law enforcement at a certain Fort Nova is offering a bounty for a notorious local criminal. I could try my hand at cashing this one in.",
+      "tr": "Fort Nova'daki kolluk kuvvetleri, kötü şöhretli yerel bir suçlu için ödül koymuş. Bu ödülü toplamayı deneyebilirim.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/towerinvincible.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Tower Invincible (6)",
+      "tr": "Tower Invincible (6)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/towerinvincible.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "The Tower Invincible (6) (R)",
+      "tr": "Tower Invincible (6) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/towerinvincible.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "A dread warlord is terrorising the populace of a planet. I should stop his nefarious deeds!",
+      "tr": "Korkunç bir savaş ağası bir gezegenin halkına terör estiriyor. Bu uğursuz işlerine son vermeliyim!",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/verdantruins.aimission",
+      "pointer": "/speciesText/default/buttonText",
+      "en": "The Verdant Ruins (2)",
+      "tr": "Verdant Ruins (2)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/verdantruins.aimission",
+      "pointer": "/speciesText/default/repeatButtonText",
+      "en": "The Verdant Ruins (2) (R)",
+      "tr": "Verdant Ruins (2) (R)",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "ai/verdantruins.aimission",
+      "pointer": "/speciesText/default/selectSpeech/text",
+      "en": "I've discovered the route to some ancient overgrown ruins which supposedly house many Floran artifacts. If I need information, this should be the place.",
+      "tr": "İçinde çok sayıda Floran eseri bulunduğu söylenen, bitkilerle kaplanmış kadim harabelere giden yolu keşfettim. Bilgiye ihtiyacım varsa aradığım yer burası olmalı.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/apex.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "A race of highly intelligent primates. These masters of science make use of Techs better than any other species.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Matter Manipulator: +^green;1^reset; Radius\n  Health x^green;1.08^reset;, Energy x^green;1.06^reset;\n  ^green;Resist^reset;: +^cyan;14^reset;% Cold, +^cyan;12^reset;% Electric, +^cyan;7^reset;% Cosmic, +^cyan;4^reset;% Physical\n  ^cyan;Improved efficiency with all Techs^reset;\n  ^cyan;Immune^reset;: Jungle, Mud\n\n^orange;Environment^reset;:\n  ^green;Jungle, ^green;Primeval^reset;, ^green;Forest^reset;, ^green;Rainforest^reset;, ^green;Snow^reset; biomes: Defense x^green;1.15^reset;, Health x^green;1.1^reset;\n  ^red;Deserts^reset;, ^red;Red Desert^reset; biomes: Defense x^red;0.85^reset;, Health x^red;0.85^reset;\n\n^orange;Weapons^reset;:\n  None\n\n^red;Weaknesses^reset;:\n  Max Food x^red;0.9^reset;\n  ^red;Resist^reset;: -^red;12^reset;% Fire & Poison, -^red;5^reset;% Radioactive",
+      "tr": "Son derece zeki primatlardan oluşan bir ırk. Bilim ustası Apexler, Tech'leri diğer tüm ırklardan daha verimli kullanır.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Madde Manipülatörü: +^green;1^reset; Menzil\n  Can x^green;1.08^reset;, Enerji x^green;1.06^reset;\n  ^green;Direnç^reset;: +^cyan;14^reset;% Soğuk, +^cyan;12^reset;% Elektrik, +^cyan;7^reset;% Kozmik, +^cyan;4^reset;% Fiziksel\n  ^cyan;Tüm Tech'lerde geliştirilmiş verim^reset;\n  ^cyan;Bağışıklık^reset;: Cangıl, Çamur\n\n^orange;Çevre^reset;:\n  ^green;Cangıl, ^green;Kadim Orman^reset;, ^green;Orman^reset;, ^green;Yağmur Ormanı^reset;, ^green;Kar^reset; biyomları: Savunma x^green;1.15^reset;, Can x^green;1.1^reset;\n  ^red;Çöller^reset;, ^red;Kızıl Çöl^reset; biyomları: Savunma x^red;0.85^reset;, Can x^red;0.85^reset;\n\n^orange;Silahlar^reset;:\n  Yok\n\n^red;Zayıflıklar^reset;:\n  Azami Doygunluk x^red;0.9^reset;\n  ^red;Direnç^reset;: -^red;12^reset;% Ateş ve Zehir, -^red;5^reset;% Radyasyon",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/apex.species.patch"
+      }
+    },
+    {
+      "asset": "species/avian.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "A people of powerful faith and strongly attuned to the universe, Avians are naturals with staves and wands and are exceptionally agile.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Damage x^green;1.05^reset;\n  Energy x^green;1.15^reset;\n  +^green;15^reset;% Jump Height, Fall Damage x^green;0.5^reset;\n  ^green;Resist^reset;: +^cyan;25^reset;% Electric\n  Tech: ^green;Avian Slowfall^reset;\n  Immune: ^green;Electrified^reset;\n\n^orange;Environment^reset;:\n  When airborne: Damage x^green;1.12^reset;\n  Low to moderate wind: Air mobility\n  Low wind: Health x^green;1.15^reset;, Defense x^green;1.1^reset;\n  ^red;Irradiated^reset;, ^red;Scorched^reset;, ^red;Tidewater^reset; biomes: x^red;0.8^reset; Defense\n^orange;Weapons^reset;:\n  Wand/Staff: Damage x^green;1.2^reset;, +^green;15^reset;% Resist in equipped element\n  Wand + Dagger: Can fire Cosmic Blasts (^green;Energy/16^reset; dmg)\n  Quarterstaff Mastery: +^green;25^reset;%\n\n^red;Weaknesses^reset;:\n  Health x^red;0.85^reset;,\n  ^red;Resist^reset;: -^red;5^reset;% Physical, -^red;15^reset;% Fire, -^red;10^reset;% Radioactive",
+      "tr": "Güçlü inançlara sahip ve evrenle kuvvetli bir bağ kuran Avianlar, asa ve değnek kullanımında doğuştan yetenekli ve son derece çeviktir.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Hasar x^green;1.05^reset;\n  Enerji x^green;1.15^reset;\n  +^green;15^reset;% Zıplama Yüksekliği, Düşme Hasarı x^green;0.5^reset;\n  ^green;Direnç^reset;: +^cyan;25^reset;% Elektrik\n  Tech: ^green;Avian Yavaş Düşüş^reset;\n  Bağışıklık: ^green;Elektriklenme^reset;\n\n^orange;Çevre^reset;:\n  Havadayken: Hasar x^green;1.12^reset;\n  Hafif ve orta rüzgâr: Havada hareket kabiliyeti\n  Hafif rüzgâr: Can x^green;1.15^reset;, Savunma x^green;1.1^reset;\n  ^red;Radyasyonlu^reset;, ^red;Kavrulmuş^reset;, ^red;Gelgit Suları^reset; biyomları: Savunma x^red;0.8^reset;\n^orange;Silahlar^reset;:\n  Değnek/Asa: Hasar x^green;1.2^reset;, kuşanılan elemente +^green;15^reset;% Direnç\n  Değnek + Hançer: Kozmik Patlamalar ateşleyebilir (^green;Enerji/16^reset; hasar)\n  Dövüş Asası Ustalığı: +^green;25^reset;%\n\n^red;Zayıflıklar^reset;:\n  Can x^red;0.85^reset;,\n  ^red;Direnç^reset;: -^red;5^reset;% Fiziksel, -^red;15^reset;% Ateş, -^red;10^reset;% Radyasyon",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/avian.species.patch"
+      }
+    },
+    {
+      "asset": "species/elduukhar.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Stoic, calm and mysterious, the Elduukhar prefer to take the role of artisans or philosophers. They seek discovery and enlightenment.\n\n  ^orange;Diet^reset;: Can eat almost anything\n\n^orange;Perks^reset;:\n  Max Health x^green;1.05^reset;, Fall Damage x^green;0.75^reset;\n  ^green;Resist^reset;: +^cyan;15^reset;% Fire & Ice, +^cyan;5^reset;% Physical,+^cyan;4^reset;% Shadow\n  ^cyan;When at 50% Health, emit slowing ice clouds.^reset;\n  Tech: ^green;Crystal Breath^reset;, ^green;Elduukhar Flight^reset;\n\n^orange;Environment^reset;:\n  ^green;Aether Sea, Crystal, Chromatic, Red Desert^reset; biomes: Health x^green;1.25^reset; and +^green;10^reset;% Crit Damage.\n  ^green;Hot^reset; biomes: Defense x^green;1.15^reset; and Health x^red;0.75^reset;.\n  ^red;Cold^reset; biomes: Defense x^red;0.85^reset; and Health x^green;1.25^reset;.\n\n^orange;Weapons^reset;:\n  Crystal / Lunari: +^green;12^reset;% Max Health & Defense\n\n^red;Weaknesses^reset;:\n  ^red;High Metabolism^reset;: +^red;15^reset;% hunger rate\n  ^red;High Food Cost^reset; for Crystal Breath attack and Flight.\n  ^red;Resist^reset;: -^red;20^reset;% Poison, -^red;10^reset;% Electric",
+      "tr": "Metin, sakin ve gizemli Elduukharlar zanaatkâr ya da filozof olmayı tercih eder. Keşif ve aydınlanmanın peşindedirler.\n\n  ^orange;Beslenme^reset;: Neredeyse her şeyi yiyebilir\n\n^orange;Avantajlar^reset;:\n  Azami Can x^green;1.05^reset;, Düşme Hasarı x^green;0.75^reset;\n  ^green;Direnç^reset;: +^cyan;15^reset;% Ateş ve Buz, +^cyan;5^reset;% Fiziksel,+^cyan;4^reset;% Gölge\n  ^cyan;Can %50'ye düştüğünde yavaşlatıcı buz bulutları yayar.^reset;\n  Tech: ^green;Kristal Nefesi^reset;, ^green;Elduukhar Uçuşu^reset;\n\n^orange;Çevre^reset;:\n  ^green;Aether Denizi, Kristal, Kromatik, Kızıl Çöl^reset; biyomları: Can x^green;1.25^reset; ve +^green;10^reset;% Kritik Hasarı.\n  ^green;Sıcak^reset; biyomlar: Savunma x^green;1.15^reset; ve Can x^red;0.75^reset;.\n  ^red;Soğuk^reset; biyomlar: Savunma x^red;0.85^reset; ve Can x^green;1.25^reset;.\n\n^orange;Silahlar^reset;:\n  Kristal / Lunari: +^green;12^reset;% Azami Can ve Savunma\n\n^red;Zayıflıklar^reset;:\n  ^red;Yüksek Metabolizma^reset;: +^red;15^reset;% açlık tüketim hızı\n  Kristal Nefesi saldırısı ve Uçuş için ^red;Yüksek Besin Maliyeti^reset;.\n  ^red;Direnç^reset;: -^red;20^reset;% Zehir, -^red;10^reset;% Elektrik",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/elduukhar.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Eld'uukhar",
+      "tr": "Eld'uukhar",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fenerox.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Fenerox are new to the established galactic order. Their tech is generally rather low, and only a few have moved beyond their hunter-gatherer lifestyle. Their skill in hunting is remarkable.\n\n  ^orange;Diet^reset;: Carnivore\n\n^orange;Perks^reset;:\n  +^green;12^reset;% Speed & Jump, Damage x^green;1.05^reset;, +^green;5^reset;% Charisma\n  ^green;Night Vision^reset;\n  ^green;Regenerate at night if sufficiently fed.^reset;\n  ^green;Resist^reset;: +^cyan;20^reset;% Electric, +^cyan;15^reset;% Cosmic, +^cyan;5^reset;% Poison, Shadow, +^cyan;2^reset;% Fire\n  Tech: ^green;Hunter's Claw^reset;\n  ^green;Immune^reset;: Electrified\n\n^orange;Environment^reset;:\n  ^green;Savannah^reset;: Damage x^green;1.15^reset;\n  At night, if well fed, gain +^green;15^reset;% Physical Resist and +^green;2^reset; Defense\n  ^red;Sulphuric,Slime and Tar biomes^reset;: Defense x^red;0.8^reset;\n\n^orange;Weapons^reset;:\n  Spear Mastery +^green;25^reset;%\n  ^green;Add your current speed/4 as bonus melee damage.^reset;\n  ^red;Attacking with spears costs Hunger^reset;\n\n^red;Weaknesses^reset;:\n  Health x^red;0.9^reset;\n  ^red;Resist^reset;: -^red;18^reset;% Ice, -^red;15^reset;% Physical Resist",
+      "tr": "Feneroxlar yerleşik galaktik düzene yeni katıldı. Teknolojileri genellikle oldukça ilkel ve yalnızca çok azı avcı-toplayıcı yaşam biçiminin ötesine geçti. Avcılıkta olağanüstü yetenekliler.\n\n  ^orange;Beslenme^reset;: Etçil\n\n^orange;Avantajlar^reset;:\n  +^green;12^reset;% Hız ve Zıplama, Hasar x^green;1.05^reset;, +^green;5^reset;% Karizma\n  ^green;Gece Görüşü^reset;\n  ^green;Yeterince toksa geceleri can yeniler.^reset;\n  ^green;Direnç^reset;: +^cyan;20^reset;% Elektrik, +^cyan;15^reset;% Kozmik, +^cyan;5^reset;% Zehir, Gölge, +^cyan;2^reset;% Ateş\n  Tech: ^green;Avcı Pençeleri^reset;\n  ^green;Bağışıklık^reset;: Elektriklenme\n\n^orange;Çevre^reset;:\n  ^green;Savan^reset;: Hasar x^green;1.15^reset;\n  Geceleri iyi beslenmişse +^green;15^reset;% Fiziksel Direnç ve +^green;2^reset; Savunma kazanır\n  ^red;Kükürtlü, Balçık ve Katran biyomları^reset;: Savunma x^red;0.8^reset;\n\n^orange;Silahlar^reset;:\n  Mızrak Ustalığı +^green;25^reset;%\n  ^green;Mevcut hızının/4'ünü ilave yakın dövüş hasarı olarak ekler.^reset;\n  ^red;Mızrakla saldırmak Açlık tüketir^reset;\n\n^red;Zayıflıklar^reset;:\n  Can x^red;0.9^reset;\n  ^red;Direnç^reset;: -^red;18^reset;% Buz, -^red;15^reset;% Fiziksel Direnç",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/fenerox.species.patch"
+      }
+    },
+    {
+      "asset": "species/floran.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Florans are known throughout the universe to be aggressive hunters. They still partially sustain themselves on sunlight, regenerating in direct light. Lack of sunlight slowly starves them.\n\n  ^orange;Diet^reset;: Carnivore\n\n^orange;Perks^reset;:\n  Health x^green;1.15^reset;\n  ^green;Resist^reset;: +^cyan;20^reset;% Mental, Poison, +^cyan;15^reset;% Electric\n  ^green;Regenerate^reset; during day. If Health+Food are full, +^green;E. Regen^reset;\n\n^orange;Environment^reset;:\n  In ^green;forest-like^reset; biomes: Energy x^green;1.15^reset;\n  In ^red;barren, corrosive and frozen^reset; biomes: Defense x^red;0.8^reset;\n\n^orange;Weapons^reset;:\n  Bow Mastery +^green;20^reset;%\n  Spear Mastery +^green;15^reset;%. Chance for Poison Strike.\n  Needler/Floran Weapons/Thrown: +^green;2^reset;% Crit\n\n^red;Weaknesses^reset;:\n  ^red;At night^reset;: Health x^red;0.9^reset; and Energy x^red;0.8^reset;, increased Hunger drain\n  ^red;Resist^reset;: -^red;30^reset;% Fire, -^red;5^reset;% Shadow",
+      "tr": "Floranlar evrenin her yanında saldırgan avcılar olarak bilinir. Hâlâ kısmen güneş ışığıyla beslenir ve doğrudan ışık altında can yenilerler. Güneş ışığından yoksun kalmaları onları yavaşça aç bırakır.\n\n  ^orange;Beslenme^reset;: Etçil\n\n^orange;Avantajlar^reset;:\n  Can x^green;1.15^reset;\n  ^green;Direnç^reset;: +^cyan;20^reset;% Zihinsel, Zehir, +^cyan;15^reset;% Elektrik\n  Gündüzleri ^green;Can Yenileme^reset;. Can+Tokluk tam ise +^green;Enerji Yenilenmesi^reset;\n\n^orange;Çevre^reset;:\n  ^green;orman benzeri^reset; biyomlarda: Enerji x^green;1.15^reset;\n  ^red;çorak, aşındırıcı ve donmuş^reset; biyomlarda: Savunma x^red;0.8^reset;\n\n^orange;Silahlar^reset;:\n  Yay Ustalığı +^green;20^reset;%\n  Mızrak Ustalığı +^green;15^reset;%. Zehirli Vuruş şansı.\n  İğneleyici/Floran Silahları/Fırlatılanlar: +^green;2^reset;% Kritik\n\n^red;Zayıflıklar^reset;:\n  ^red;Geceleri^reset;: Can x^red;0.9^reset; ve Enerji x^red;0.8^reset;, Açlık tüketimi artar\n  ^red;Direnç^reset;: -^red;30^reset;% Ateş, -^red;5^reset;% Gölge",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/floran.species.patch"
+      }
+    },
+    {
+      "asset": "species/fukirhos.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "They've earned a reputation as traders as they wander through the cosmos on gigantic Ark ships that form the core of their society. These space rodents are well-versed in economics and exploration.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  +^green;10^reset;% Speed\n  ^green;Resist^reset;: +^cyan;15^reset;% Electric, +^cyan;10^reset;% Radioactive & Ice, +^cyan;7^reset;% Mental\n  Great Traders: +^green;25^reset;% Charisma, +1000 Start Cash\n  +^green;72^reset; Max Food\n\n^orange;Weapons^reset;:\n  Start with reliable sidearm\n  Energy Weapon Mastery: +^green;15^reset;%\n  Striker Mastery: +^green;15^reset;%\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;20^reset;% Poison, -^red;10^reset;% Fire, -^red;5^reset;%Physical",
+      "tr": "Toplumlarının merkezini oluşturan devasa Ark gemileriyle kozmosta dolaşırken tüccar olarak ün kazandılar. Bu uzay kemirgenleri ekonomi ve keşif konusunda oldukça deneyimli.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  +^green;10^reset;% Hız\n  ^green;Direnç^reset;: +^cyan;15^reset;% Elektrik, +^cyan;10^reset;% Radyasyon ve Buz, +^cyan;7^reset;% Zihinsel\n  Usta Tüccarlar: +^green;25^reset;% Karizma, +1000 Başlangıç Parası\n  +^green;72^reset; Azami Doygunluk\n\n^orange;Silahlar^reset;:\n  Güvenilir bir yan silahla başlar\n  Enerji Silahı Ustalığı: +^green;15^reset;%\n  Striker Ustalığı: +^green;15^reset;%\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;20^reset;% Zehir, -^red;10^reset;% Ateş, -^red;5^reset;% Fiziksel",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fukirhos.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "Ne",
+      "tr": "Ne",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fukirhos.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Kirhos",
+      "tr": "Kirhos",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fumantizi.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Beetle-like omnivorous bipeds with tough chitin plates and a love for the exuberant.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  +^green;20^reset; Health, +^green;5^reset; Defense, Max Food x^green;1.5^reset;\n  ^green;Resist^reset;: +^cyan;15^reset;% Physical,+^cyan;10^reset;% Fire, Poison & Electric, +^cyan;5^reset;% Radioactive\n\n^orange;Environment^reset;:\n  ^green;Jungles, Deserts and Sulphuric^reset; biomes: Energy x^green;1.1^reset;, Defense x^green;1.1^reset;\n\n^orange;Weapons^reset;:\n  Short Spear Mastery: +^green;25^reset;%\n  Bow Mastery:  +^green;5^reset;%\n  Shield: +^green;2^reset;% Shield Bash, +^green;2^reset; Shield Push distance\n  Perfect Block restores ^green;health and ^green;20^reset;% shield stamina^reset;\n\n^red;Weaknesses^reset;:\n  Poor traders (-^red;5^reset;% Charisma)\n  ^red;Resist^reset;: -^red;15^reset;% Ice, -^red;12^reset;% Cosmic, -^red;10^reset;% Shadow",
+      "tr": "Sert kitin plakalarına sahip, gösterişli şeyleri seven, böceğe benzer hepçil iki ayaklılar.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  +^green;20^reset; Can, +^green;5^reset; Savunma, Azami Doygunluk x^green;1.5^reset;\n  ^green;Direnç^reset;: +^cyan;15^reset;% Fiziksel,+^cyan;10^reset;% Ateş, Zehir ve Elektrik, +^cyan;5^reset;% Radyasyon\n\n^orange;Çevre^reset;:\n  ^green;Cangıl, Çöl ve Kükürtlü^reset; biyomlar: Enerji x^green;1.1^reset;, Savunma x^green;1.1^reset;\n\n^orange;Silahlar^reset;:\n  Kısa Mızrak Ustalığı: +^green;25^reset;%\n  Yay Ustalığı:  +^green;5^reset;%\n  Kalkan: +^green;2^reset;% Kalkan Darbesi, +^green;2^reset; Kalkan İtme mesafesi\n  Kusursuz Blok ^green;can ve ^green;20^reset;% kalkan dayanıklılığı^reset; yeniler;\n\n^red;Zayıflıklar^reset;:\n  Kötü tüccarlar (-^red;5^reset;% Karizma)\n  ^red;Direnç^reset;: -^red;15^reset;% Buz, -^red;12^reset;% Kozmik, -^red;10^reset;% Gölge",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fumantizi.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "Ne",
+      "tr": "Ne",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fumantizi.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Mantizi",
+      "tr": "Mantizi",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fupeglaci.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Resilient, cold-dwelling omnivorous creatures with a mysterious origin rooted in the distant past.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Health x^green;1.15^reset;, Energy x^green;1.12^reset;\n  ^green;Resist^reset;: +^cyan;30^reset;% Ice, +^cyan;5^reset;% Radioactive\n  +^green;8^reset;% Jump Height, Fall Damage x^cyan;0.8^reset;\n  ^cyan;Immune^reset;: Liquid Nitrogen, Freezing, Ice Slip\n\n^orange;Environment^reset;:\n  In ^green;cold^reset; biomes: Health & Energy x^green;1.15^reset;\n  In ^red;hot^reset; biomes: Health & Energy x^red;0.8^reset;\n\n^orange;Weapons^reset;:\n  All Guns: Damage x^green;1.1^reset;, +^green;5^reset;% Crit Damage\n  Axe Mastery: +^green;15^reset;%\n  Machine Pistol Mastery: +^green;15^reset;%\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;30^reset;% Fire",
+      "tr": "Kökenleri uzak geçmişe uzanan, gizemli, dayanıklı ve soğuk bölgelerde yaşayan hepçil canlılar.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Can x^green;1.15^reset;, Enerji x^green;1.12^reset;\n  ^green;Direnç^reset;: +^cyan;30^reset;% Buz, +^cyan;5^reset;% Radyasyon\n  +^green;8^reset;% Zıplama Yüksekliği, Düşme Hasarı x^cyan;0.8^reset;\n  ^cyan;Bağışıklık^reset;: Sıvı Azot, Donma, Buzda Kayma\n\n^orange;Çevre^reset;:\n  ^green;soğuk^reset; biyomlarda: Can ve Enerji x^green;1.15^reset;\n  ^red;sıcak^reset; biyomlarda: Can ve Enerji x^red;0.8^reset;\n\n^orange;Silahlar^reset;:\n  Tüm Ateşli Silahlar: Hasar x^green;1.1^reset;, +^green;5^reset;% Kritik Hasarı\n  Balta Ustalığı: +^green;15^reset;%\n  Makineli Tabanca Ustalığı: +^green;15^reset;%\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;30^reset;% Ateş",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fupeglaci.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "CH4",
+      "tr": "CH4",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/fupeglaci.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Peglaci",
+      "tr": "Peglaci",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/glitch.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Their creation is lost to history. This suits them just fine, as they prefer a primitive state of being. Their medieval culture favors training with shields, hammers and bows.\n\n  ^orange;Diet^reset;: Robotic/Omnivore\n\n^orange;Perks^reset;:\n  Defense x^green;1.06^reset;\n  ^green;Resist^reset;: +^cyan;20^reset;% Physical, Poison, Knockback, +^cyan;14^reset;% Fire, +^cyan;5^reset;% Radiation\n  ^cyan;Immune^reset;: Poisoned, Bee Stings\n\n^orange;Environment^reset;:\n  ^green;Oil/Liquid Proto/Erchius^reset;: Health & E. Regen, Energy x^green;1.25^reset;\n  ^red;Mountainous^reset; biomes: Defense x^red;0.8^reset;\n\n^orange;Weapons^reset;:\n  Hammer Mastery: +^green;25^reset;%\n  Bow Mastery: +^green;10^reset;%\n  1h combos increase defense by +^green;2^reset;\n  Shield (Raised): +^green;3^reset; Defense\n  Perfect Blocks ^green;increase damage^reset; (stacks)\n  Shield Bashes ^green;restore health^reset;\n\n^red;Weaknesses^reset;:\n  Electrified: -^red;50^reset;% Power and Energy\n  ^red;Resist^reset;: -^red;30^reset;% Electric",
+      "tr": "Nasıl yaratıldıkları tarihin karanlığında kayboldu. İlkel bir yaşam biçimini tercih ettikleri için bundan pek rahatsız değiller. Orta Çağ kültürleri kalkan, çekiç ve yay eğitimine önem verir.\n\n  ^orange;Beslenme^reset;: Robotik/Hepçil\n\n^orange;Avantajlar^reset;:\n  Savunma x^green;1.06^reset;\n  ^green;Direnç^reset;: +^cyan;20^reset;% Fiziksel, Zehir, Geri Tepme, +^cyan;14^reset;% Ateş, +^cyan;5^reset;% Radyasyon\n  ^cyan;Bağışıklık^reset;: Zehirlenme, Arı Sokmaları\n\n^orange;Çevre^reset;:\n  ^green;Yağ/Sıvı Proto/Erchius^reset;: Can ve Enerji Yenilenmesi, Enerji x^green;1.25^reset;\n  ^red;Dağlık^reset; biyomlar: Savunma x^red;0.8^reset;\n\n^orange;Silahlar^reset;:\n  Çekiç Ustalığı: +^green;25^reset;%\n  Yay Ustalığı: +^green;10^reset;%\n  1 elle kullanılan kombolar savunmayı +^green;2^reset; artırır\n  Kalkan (Kaldırılmış): +^green;3^reset; Savunma\n  Kusursuz Bloklar ^green;hasarı artırır^reset; (birikir)\n  Kalkan Darbeleri ^green;can yeniler^reset;\n\n^red;Zayıflıklar^reset;:\n  Elektriklenme: -^red;50^reset;% Güç ve Enerji\n  ^red;Direnç^reset;: -^red;30^reset;% Elektrik",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/glitch.species.patch"
+      }
+    },
+    {
+      "asset": "species/human.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Humans are well rounded, and terrifying in their ability to survive almost anywhere. Ever met one of these things? They are a strange bunch. I advise avoiding them.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Energy x^green;1.05^reset;\n  +^green;2^reset;% Jump Height, +^green;15^reset;% Max Food\n  +^green;10^reset;% Charisma\n  ^green;Resist^reset;: +^cyan;11^reset;% Electric, +^cyan;10^reset;% Fire, Ice, Poison, Cosmic\n\n^orange;Environment^reset;:\n  None\n\n^orange;Weapons^reset;:\n  Ammo Mastery: ^green;25^reset;%\n  Shortsword Mastery: ^green;15^reset;%\n  Shield: Perfect Blocks ^green;increase defense^reset; (stacks)\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;15^reset;% Radioactive, Shadow",
+      "tr": "İnsanlar dengeli özelliklere sahiptir ve neredeyse her yerde hayatta kalabilmeleri ürkütücüdür. Hiç bunlardan biriyle tanıştın mı? Tuhaf bir topluluk. Uzak durmanı öneririm.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Enerji x^green;1.05^reset;\n  +^green;2^reset;% Zıplama Yüksekliği, +^green;15^reset;% Azami Doygunluk\n  +^green;10^reset;% Karizma\n  ^green;Direnç^reset;: +^cyan;11^reset;% Elektrik, +^cyan;10^reset;% Ateş, Buz, Zehir, Kozmik\n\n^orange;Çevre^reset;:\n  Yok\n\n^orange;Silahlar^reset;:\n  Cephane Ustalığı: ^green;25^reset;%\n  Kısa Kılıç Ustalığı: ^green;15^reset;%\n  Kalkan: Kusursuz Bloklar ^green;savunmayı artırır^reset; (birikir)\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;15^reset;% Radyasyon, Gölge",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/human.species.patch"
+      }
+    },
+    {
+      "asset": "species/hylotl.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "The peaceful Hylotl place great value on ancestral tradition and take great comfort in the arts. While not lovers of violence, they are quite skilled in martial arts and are not to be trifled with.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Start game with Liquid Collection unlocked.\n  Charisma: +^green;5^reset;%\n  ^green;Resist^reset;: +^cyan;20^reset;% Ice, +^cyan;12^reset;% Radiation, +^cyan;8^reset;% Poison, +^cyan;15^reset;% Mental\n\n^orange;Environment^reset;:\n  In water: +^green;1500^reset; oxygen, +^green;8^reset;% Physical Resistance, Health x^green;1.12^reset;\n  ^cyan;Swim Boost 1^reset;\n  ^red;Deserts^reset;, ^red;Red Desert^reset; biomes: Defense x^red;0.8^reset;, Health x^red;0.8^reset;\n\n^orange;Weapons^reset;:\n  Swords: +^green;2^reset;% Crit Chance when above ^green;75^reset;% health\n  Katana Mastery: +^green;25^reset;%\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;20^reset;% Electric, -^red;10^reset;% Shadow",
+      "tr": "Barışçıl Hylotl'lar atalarından gelen geleneklere büyük önem verir ve sanatta huzur bulur. Şiddetten hoşlanmasalar da dövüş sanatlarında oldukça yeteneklidirler; hafife alınmamalılar.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Oyuna Sıvı Toplama açık başlar.\n  Karizma: +^green;5^reset;%\n  ^green;Direnç^reset;: +^cyan;20^reset;% Buz, +^cyan;12^reset;% Radyasyon, +^cyan;8^reset;% Zehir, +^cyan;15^reset;% Zihinsel\n\n^orange;Çevre^reset;:\n  Suda: +^green;1500^reset; oksijen, +^green;8^reset;% Fiziksel Direnç, Can x^green;1.12^reset;\n  ^cyan;Yüzme Takviyesi 1^reset;\n  ^red;Çöller^reset;, ^red;Kızıl Çöl^reset; biyomları: Savunma x^red;0.8^reset;, Can x^red;0.8^reset;\n\n^orange;Silahlar^reset;:\n  Kılıçlar: Can ^green;75^reset;% üzerindeyken +^green;2^reset;% Kritik Şansı\n  Katana Ustalığı: +^green;25^reset;%\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;20^reset;% Elektrik, -^red;10^reset;% Gölge",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/hylotl.species.patch"
+      }
+    },
+    {
+      "asset": "species/juux.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "An unusual psionic species of extremophiles. Can generate a powerful psionic vibration through sheer willpower.\n\n  ^orange;Diet^reset;: Any (including prepared Isotopes)\n\n^orange;Perks^reset;:\n  Energy x^green;1.1^reset;\n  ^green;Resist^reset;: +^cyan;30^reset;% Mental, +^cyan;20^reset;% Fire & Electric, +^cyan;15^reset;% Cosmic & Radioactive\n  ^cyan;Immune^reset;: Burning\n  Tech: ^green;Psionic Wave^reset;\n\n^orange;Environment^reset;:\n  ^green;Electrically charged or crystal^reset; biomes: +^green;5% speed^reset;\n  ^red;Cold^reset; biomes: Defense x^red;0.9^reset;\n\n^orange;Weapons^reset;:\n  Precognition: +^cyan;8%^reset; to ^green;all^reset; damage\n  Psionic Ejector:  Damage x^green;1.2^reset;\n  Magnorb Mastery: +^green;20^reset;%\n\n^red;Weaknesses^reset;:\n  Health: x^red;0.88^reset;\n  ^red;Resist^reset;:  -^red;12^reset;% Physical, -^red;20^reset;% Poison, -^red;5^reset;% Ice\n  -^red;10^reset;% Charisma",
+      "tr": "Aşırı koşullarda yaşayabilen sıra dışı bir psiyonik ırk. Yalnızca irade gücüyle güçlü bir psiyonik titreşim üretebilirler.\n\n  ^orange;Beslenme^reset;: Her şey (hazırlanmış İzotoplar dahil)\n\n^orange;Avantajlar^reset;:\n  Enerji x^green;1.1^reset;\n  ^green;Direnç^reset;: +^cyan;30^reset;% Zihinsel, +^cyan;20^reset;% Ateş ve Elektrik, +^cyan;15^reset;% Kozmik ve Radyasyon\n  ^cyan;Bağışıklık^reset;: Yanma\n  Tech: ^green;Psiyonik Dalga^reset;\n\n^orange;Çevre^reset;:\n  ^green;Elektrik yüklü veya kristal^reset; biyomlar: +^green;5% hız^reset;\n  ^red;Soğuk^reset; biyomlar: Savunma x^red;0.9^reset;\n\n^orange;Silahlar^reset;:\n  Öngörü: ^green;tüm^reset; hasara +^cyan;8%^reset;\n  Psiyonik Odak:  Hasar x^green;1.2^reset;\n  Magnorb Ustalığı: +^green;20^reset;%\n\n^red;Zayıflıklar^reset;:\n  Can: x^red;0.88^reset;\n  ^red;Direnç^reset;:  -^red;12^reset;% Fiziksel, -^red;20^reset;% Zehir, -^red;5^reset;% Buz\n  -^red;10^reset;% Karizma",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/juux.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "O8",
+      "tr": "O8",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/juux.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Pharitu",
+      "tr": "Pharitu",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/nightar.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Evolved in the depths of a Penumbral world, the Nightar dislike light intensely. They are able warriors and capable spies.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Tech: ^green;Conshak^reset;(light aura, detect monsters, resist damage. ^red;7s charge^reset;)\n  ^green;Resist^reset;: +^cyan;15^reset;% Shadow, +^cyan;10^reset;% Poison, +^cyan;5^reset;% Ice\n  ^cyan;Immune^reset;: Poisoned\n\n^orange;Environment^reset;:\n  ^green;Darkness^reset;: ^green;Physical Res. +^reset; and ^green;Damage +^reset;. Draining strikes.\n  ^red;Light^reset;: Reduces ^red;Energy, Health, Physical Resistance and Damage^reset;. Cancels ^red;Drain effect^reset; of attacks.\n\n^orange;Weapons^reset;:\n  All Swords: ^green;3^reset;% Shadow Burst Chance (^green;5 damage^reset;) in darkness.\n  Broadsword Mastery : ^green;25^reset;%\n  Shortsword Mastery : ^green;25^reset;%\n  Longsword Mastery : ^green;25^reset;%\n  Shield: +^green;25^reset;% Knockback Resist\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;20^reset;% Cosmic, -^red;15^reset;% Electric",
+      "tr": "Penumbra bir dünyanın derinliklerinde evrimleşen Nightarlar ışıktan yoğun biçimde hoşlanmaz. Yetenekli savaşçılar ve becerikli casuslardır.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Tech: ^green;Conshak^reset;(ışık aurası, canavar tespiti, hasar direnci. ^red;7 sn şarj^reset;)\n  ^green;Direnç^reset;: +^cyan;15^reset;% Gölge, +^cyan;10^reset;% Zehir, +^cyan;5^reset;% Buz\n  ^cyan;Bağışıklık^reset;: Zehirlenme\n\n^orange;Çevre^reset;:\n  ^green;Karanlık^reset;: ^green;Fiziksel Direnç +^reset; ve ^green;Hasar +^reset;. Can emen saldırılar.\n  ^red;Işık^reset;: ^red;Enerji, Can, Fiziksel Direnç ve Hasarı^reset; azaltır. Saldırıların ^red;Can Emme etkisini^reset; iptal eder.\n\n^orange;Silahlar^reset;:\n  Tüm Kılıçlar: Karanlıkta ^green;3^reset;% Gölge Patlaması Şansı (^green;5 hasar^reset;).\n  Büyük Kılıç Ustalığı : ^green;25^reset;%\n  Kısa Kılıç Ustalığı : ^green;25^reset;%\n  Uzun Kılıç Ustalığı : ^green;25^reset;%\n  Kalkan: +^green;25^reset;% Geri Tepme Direnci\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;20^reset;% Kozmik, -^red;15^reset;% Elektrik",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/nightar.species.patch"
+      }
+    },
+    {
+      "asset": "species/nightar.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "H2O",
+      "tr": "H2O",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/nightar.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Nightar",
+      "tr": "Nightar",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/novakid.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "The Novakids are a mysterious race of 'interstellar gas-bag people'. They have few charted settlements and no documented history.\n\n  ^orange;Diet^reset;: Any\n\n^orange;Perks^reset;:\n  Glow in the dark\n  Energy x^green;1.1^reset;\n  ^green;Resist^reset;: +^cyan;35^reset;% Radiation, +^cyan;20^reset;% Fire\n  ^cyan;Immune^reset;: Burning, Radiation Burn\n\n^orange;Environment^reset;:\n  ^green;Radioactive^reset; biomes: gain Health x^green;1.15^reset;\n  Sunlight: ^green;Regenerate^reset; when fed, +^green;20^reset;% E. Regen.\n  Night: Regen ^red;consumes food^reset;, Energy x^red;0.75^reset;\n\n^orange;Weapons^reset;:\n  Pistol x 2: +^green;8^reset;% Speed\n  Pistol Mastery +^green;15^reset;%\n  Sniper Rifle Mastery +^green;15^reset;%\n  Shotgun Mastery +^green;15^reset;%\n\n^red;Weaknesses^reset;:\n  Health x^red;0.9^reset;, -^red;10^reset;% Max Food\n  ^red;Resist^reset;: -^red;20^reset;% Ice, Shadow, -^red;5^reset;% Electric",
+      "tr": "Novakidler, gizemli bir 'yıldızlararası gaz torbası halkı'dır. Haritalanmış çok az yerleşimleri ve kayıt altına alınmış bir tarihleri yoktur.\n\n  ^orange;Beslenme^reset;: Her şey\n\n^orange;Avantajlar^reset;:\n  Karanlıkta parlar\n  Enerji x^green;1.1^reset;\n  ^green;Direnç^reset;: +^cyan;35^reset;% Radyasyon, +^cyan;20^reset;% Ateş\n  ^cyan;Bağışıklık^reset;: Yanma, Radyasyon Yanığı\n\n^orange;Çevre^reset;:\n  ^green;Radyoaktif^reset; biyomlar: Can x^green;1.15^reset; kazanır\n  Güneş ışığı: Tokken ^green;Can Yeniler^reset;, +^green;20^reset;% Enerji Yenilenmesi.\n  Gece: Yenilenme ^red;besin tüketir^reset;, Enerji x^red;0.75^reset;\n\n^orange;Silahlar^reset;:\n  2 x Tabanca: +^green;8^reset;% Hız\n  Tabanca Ustalığı +^green;15^reset;%\n  Keskin Nişancı Tüfeği Ustalığı +^green;15^reset;%\n  Pompalı Tüfek Ustalığı +^green;15^reset;%\n\n^red;Zayıflıklar^reset;:\n  Can x^red;0.9^reset;, -^red;10^reset;% Azami Doygunluk\n  ^red;Direnç^reset;: -^red;20^reset;% Buz, Gölge, -^red;5^reset;% Elektrik",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/novakid.species.patch"
+      }
+    },
+    {
+      "asset": "species/radien.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "A race of shy radioactive beings with a disputed origin. This species ^red;is designed around Hunger^reset;. ^red;Challenge is high^reset;.\n\n  ^orange;Diet^reset;: Any, including prepared Isotopes.\n\n^orange;Perks^reset;:\n  Health x^green;1.1^reset;, Energy x^green;1.2^reset;, ^red;Reduced by Hunger^reset;. Defense x^green;1.03^reset;\n  ^green;Resist^reset;: +^green;35^reset;% Radiation, +^green;10^reset;% Poison, +^green;5^reset;% Cosmic, ^green;Up to 2x when Full Belly^reset;. +^green;5^reset;% Mental.\n  Tech: Seed Bulb.\n  ^cyan;Immune^reset;: Radiation Burn\n\n^orange;Environment^reset;:\n  ^green;Radioactive^reset; biomes: Damage x^green;1.15^reset;, +^green;15^reset;% E. Regen, -^green;5^reset;% Hunger Drain\n  ^red;Hot^reset; biomes: Defense x^red;0.85^reset;, +^red;35^reset;% Hunger Drain.\n  ^green;Defense increases over time^reset;\n  ^cyan;Racial Tech is integral to success^reset;.\n  ^green;Passively generate Genes^reset;.\n\n^orange;Weapons^reset;:\n  X'i Weapons: +^green;1.5^reset;% Crit Chance, Defense x^green;1.15^reset;\n\n^red;Weaknesses^reset;:\n  +^red;25^reset;% Hunger drain.\n  ^red;Resist^reset;: -^red;20^reset;% Fire, Ice & Electric, ^red;Up to 1.5x when Hungry^reset;.\n  ^red;CANNOT^reset; use Healing items. Must use racial heals.",
+      "tr": "Kökenleri tartışmalı, çekingen ve radyoaktif bir ırk. Bu tür ^red;Açlık sistemi etrafında tasarlanmıştır^reset;. ^red;Zorluk yüksektir^reset;.\n\n  ^orange;Beslenme^reset;: Hazırlanmış İzotoplar dahil her şey.\n\n^orange;Avantajlar^reset;:\n  Can x^green;1.1^reset;, Enerji x^green;1.2^reset;, ^red;Açlıkla azalır^reset;. Savunma x^green;1.03^reset;\n  ^green;Direnç^reset;: +^green;35^reset;% Radyasyon, +^green;10^reset;% Zehir, +^green;5^reset;% Kozmik, ^green;Tam Toklukta 2 kata kadar^reset;. +^green;5^reset;% Zihinsel.\n  Tech: Tohum Soğanı.\n  ^cyan;Bağışıklık^reset;: Radyasyon Yanığı\n\n^orange;Çevre^reset;:\n  ^green;Radyoaktif^reset; biyomlar: Hasar x^green;1.15^reset;, +^green;15^reset;% Enerji Yenilenmesi, -^green;5^reset;% Açlık Tüketimi\n  ^red;Sıcak^reset; biyomlar: Savunma x^red;0.85^reset;, +^red;35^reset;% Açlık Tüketimi.\n  ^green;Savunma zamanla artar^reset;\n  ^cyan;Irksal Tech başarı için kritik önemdedir^reset;.\n  ^green;Pasif olarak Gen üretir^reset;.\n\n^orange;Silahlar^reset;:\n  X'i Silahları: +^green;1.5^reset;% Kritik Şansı, Savunma x^green;1.15^reset;\n\n^red;Zayıflıklar^reset;:\n  +^red;25^reset;% Açlık tüketimi.\n  ^red;Direnç^reset;: -^red;20^reset;% Ateş, Buz ve Elektrik, ^red;Açken 1.5 kata kadar^reset;.\n  İyileştirme eşyaları ^red;KULLANAMAZ^reset;. Irksal iyileştirmeleri kullanmalıdır.",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/radien.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "CH9",
+      "tr": "CH9",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/radien.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "X'i",
+      "tr": "X'i",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/shadow.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "A mystery to the cosmos, the illusive Shadow people prefer to speak only to each other. This is simple, as other species cannot even hear their language.\n\n  ^orange;Diet^reset;: Any\n\n^orange;Perks^reset;:\n  Energy x^green;1.12^reset;, ^green;15%^reset; reduced Hunger drain\n  ^green;Resist^reset;: +^cyan;20^reset;% Shadow, Ice, +^cyan;15^reset;% Poison, +^cyan;10^reset;% Radioactive\n  ^cyan;Immune^reset;: Oxygen, Darkness, Shadow Taint\n  Tech: ^green;Shadow Burst^reset;\n\n^orange;Environment^reset;:\n  ^green;Dark^reset; biomes grant +^green;2^reset; Crit Chance, Energy x^green;1.15^reset;\n  Glows in Dark\n  Darkness increases power and Defense. Light reduces it.\n  ^red;Chromatic^reset; biomes: Defense x^red;0.8^reset;, Health x^red;0.75^reset;\n\n^orange;Weapons^reset;:\n  Scythe Mastery: +^green;25^reset;%\n  Staff/Wand: Health x^green;1.25^reset;\n  Magnorb: Defense x^green;1.25^reset;\n\n^red;Weaknesses^reset;:\n  Health x^red;0.85^reset;\n  ^red;Resist^reset;: -^red;15^reset;% Electric, Cosmic,-^red;10^reset;% Fire",
+      "tr": "Kozmos için bir gizem olan anlaşılması güç Shadow halkı yalnızca kendi aralarında konuşmayı tercih eder. Bu oldukça kolaydır; diğer türler onların dilini duyamaz bile.\n\n  ^orange;Beslenme^reset;: Her şey\n\n^orange;Avantajlar^reset;:\n  Enerji x^green;1.12^reset;, ^green;15%^reset; daha düşük Açlık tüketimi\n  ^green;Direnç^reset;: +^cyan;20^reset;% Gölge, Buz, +^cyan;15^reset;% Zehir, +^cyan;10^reset;% Radyasyon\n  ^cyan;Bağışıklık^reset;: Oksijensizlik, Karanlık, Gölge Lekesi\n  Tech: ^green;Gölge Patlaması^reset;\n\n^orange;Çevre^reset;:\n  ^green;Karanlık^reset; biyomlar +^green;2^reset; Kritik Şansı ve Enerji x^green;1.15^reset; sağlar\n  Karanlıkta parlar\n  Karanlık güç ve Savunmayı artırır. Işık azaltır.\n  ^red;Kromatik^reset; biyomlar: Savunma x^red;0.8^reset;, Can x^red;0.75^reset;\n\n^orange;Silahlar^reset;:\n  Tırpan Ustalığı: +^green;25^reset;%\n  Asa/Değnek: Can x^green;1.25^reset;\n  Magnorb: Savunma x^green;1.25^reset;\n\n^red;Zayıflıklar^reset;:\n  Can x^red;0.85^reset;\n  ^red;Direnç^reset;: -^red;15^reset;% Elektrik, Kozmik,-^red;10^reset;% Ateş",
+      "section": "v0.46 Irklar ve SAIL/AI",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "species/shadow.species.patch"
+      }
+    },
+    {
+      "asset": "species/skath.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Once invaded by an alien force which forced them to focus on their military and their defenses, they're extraordinary well trained fighters. Their aquatic origins make them especially dangerous in water and make them a force to be reckoned with.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Energy x^green;1.05^reset;, +^green;5^reset; Defense, +^green;500^reset; Breath\n  ^green;Resist^reset;: +^cyan;20^reset;% Ice, +^cyan;10^reset;% Radioactive\n  ^cyan;Swim Boost 2^reset;\n\n^orange;Environment^reset;:\n  Ocean biomes: Health x^green;1.25^reset; and +^green;6^reset; Defense\n  Hot biomes: Energy x^red;0.7^reset;, Health x^red;0.7^reset;, Speed x^red;0.8^reset;\n  (Healing/Waste/Swamp) Water: +^green;0.1^reset;% Health Regen\n\n^orange;Weapons^reset;:\n  Energy Weapon Mastery: +^green;15^reset;%\n  Assault Rifle Mastery: +^green;25^reset;%\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;20^reset;% Electric",
+      "tr": "Bir zamanlar yabancı bir güç tarafından işgal edilmeleri, onları ordu ve savunmaya odaklanmaya zorladı; bu yüzden olağanüstü eğitimli savaşçılardır. Sucul kökenleri onları özellikle suda tehlikeli ve hesaba katılması gereken bir güç hâline getirir.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Enerji x^green;1.05^reset;, +^green;5^reset; Savunma, +^green;500^reset; Nefes\n  ^green;Direnç^reset;: +^cyan;20^reset;% Buz, +^cyan;10^reset;% Radyasyon\n  ^cyan;Yüzme Takviyesi 2^reset;\n\n^orange;Çevre^reset;:\n  Okyanus biyomları: Can x^green;1.25^reset; ve +^green;6^reset; Savunma\n  Sıcak biyomlar: Enerji x^red;0.7^reset;, Can x^red;0.7^reset;, Hız x^red;0.8^reset;\n  (İyileştirici/Atık/Bataklık) Su: +^green;0.1^reset;% Can Yenilenmesi\n\n^orange;Silahlar^reset;:\n  Enerji Silahı Ustalığı: +^green;15^reset;%\n  Taarruz Tüfeği Ustalığı: +^green;25^reset;%\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;20^reset;% Elektrik",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/skath.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "O2",
+      "tr": "O2",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/skath.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Skath",
+      "tr": "Skath",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/slimeperson.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "Symbiotes birthed from the fallen. Sentient. An unusual and resilient people who struggle to come to grips with where they came from.\n\n  ^orange;Diet^reset;: Omnivore\n\n^orange;Perks^reset;:\n  Fall Damage x^green;0.5^reset;\n  ^green;Resist^reset;: +^cyan;30^reset;% Poison, +^cyan;10^reset;% Radioactive, +^cyan;4^reset;% Electric, +^cyan;3^reset;% Cosmic\n  +^green;1^reset;% Health Regen (Constant)\n  Tech: ^green;Sticky ball, Wall Grab^reset;\n  ^cyan;Immune^reset;: Slime Bounce, Slime Stick, Poisoned, Webs\n\n^orange;Environment^reset;:\n  Gelatinous, Bog and Swamp biomes: Health x^green;1.25^reset; and +^green;15^reset;% Speed\n  Cold biomes: Health x^red;0.75^reset;\n  Can breathe in liquid slime\n\n^orange;Weapons^reset;:\n  Whip Mastery:  x^green;15^reset;%\n  Bioweapon: Damage x^green;1.15^reset;, +^green;20^reset;%^reset; Crit Damage\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;20^reset;% Fire & Ice\n  +^red;25^reset;% Hunger Drain",
+      "tr": "Düşmüş bedenlerden doğan simbiyotik varlıklar. Bilinç sahibidirler. Kökenlerini anlamlandırmaya çalışan sıra dışı ve dayanıklı bir halk.\n\n  ^orange;Beslenme^reset;: Hepçil\n\n^orange;Avantajlar^reset;:\n  Düşme Hasarı x^green;0.5^reset;\n  ^green;Direnç^reset;: +^cyan;30^reset;% Zehir, +^cyan;10^reset;% Radyasyon, +^cyan;4^reset;% Elektrik, +^cyan;3^reset;% Kozmik\n  +^green;1^reset;% Can Yenilenmesi (Sürekli)\n  Tech: ^green;Yapışkan Top, Duvara Tutunma^reset;\n  ^cyan;Bağışıklık^reset;: Balçık Sıçraması, Balçık Yapışması, Zehirlenme, Ağlar\n\n^orange;Çevre^reset;:\n  Jelatinimsi, Bataklık ve Sulaklık biyomları: Can x^green;1.25^reset; ve +^green;15^reset;% Hız\n  Soğuk biyomlar: Can x^red;0.75^reset;\n  Sıvı balçıkta nefes alabilir\n\n^orange;Silahlar^reset;:\n  Kırbaç Ustalığı:  x^green;15^reset;%\n  Biyosilah: Hasar x^green;1.15^reset;, +^green;20^reset;%^reset; Kritik Hasarı\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;20^reset;% Ateş ve Buz\n  +^red;25^reset;% Açlık Tüketimi",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/slimeperson.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Slime",
+      "tr": "Slime",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/thelusian.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "The carnivorous Thelusians are well known for their tough chitin shell and exceptionally dangerous combat abilities. Able to adapt to suit any combat situation.\n\n  ^orange;Diet^reset;: Carnivore\n\n^orange;Perks^reset;:\n  Health x^green;1.25^reset;, +^green;8^reset; Defense, Fall Damage x^green;0.4^reset;\n  ^green;Resist^reset;: +^cyan;30^reset;% Mental, +^cyan;15^reset;% Physical, +^cyan;20^reset;% Radiaoactive\n  ^cyan;Immune^reset;: Insanity\n  Tech: ^green;Warrior Instincts^reset;\n\n^orange;Environment^reset;:\n  ^green;Hot^reset; biomes: Health x^green;1.1^reset;\n  Improved ground traction\n\n^orange;Weapons^reset;:\n  Scythe Mastery: +^green;15^reset;%\n  Broadsword Mastery: +^green;15^reset;%\n  Axe Mastery: +^green;10^reset;%\n  Shield: Defense x^green;1.1^reset;\n  Perfect Block: Increases ^green;Shield Bash^reset; chance\n\n^red;Weaknesses^reset;:\n  Energy x^red;0.75^reset;, -^red;25^reset;% Charisma\n  ^red;Resist^reset;: -^red;30^reset;% Fire, -^red;15^reset;% Ice",
+      "tr": "Etçil Thelusianlar sert kitin kabukları ve son derece tehlikeli savaş yetenekleriyle tanınır. Her türlü savaş durumuna uyum sağlayabilirler.\n\n  ^orange;Beslenme^reset;: Etçil\n\n^orange;Avantajlar^reset;:\n  Can x^green;1.25^reset;, +^green;8^reset; Savunma, Düşme Hasarı x^green;0.4^reset;\n  ^green;Direnç^reset;: +^cyan;30^reset;% Zihinsel, +^cyan;15^reset;% Fiziksel, +^cyan;20^reset;% Radyasyon\n  ^cyan;Bağışıklık^reset;: Delilik\n  Tech: ^green;Savaşçı İçgüdüleri^reset;\n\n^orange;Çevre^reset;:\n  ^green;Sıcak^reset; biyomlar: Can x^green;1.1^reset;\n  Daha iyi zemin tutuşu\n\n^orange;Silahlar^reset;:\n  Tırpan Ustalığı: +^green;15^reset;%\n  Büyük Kılıç Ustalığı: +^green;15^reset;%\n  Balta Ustalığı: +^green;10^reset;%\n  Kalkan: Savunma x^green;1.1^reset;\n  Kusursuz Blok: ^green;Kalkan Darbesi^reset; şansını artırır\n\n^red;Zayıflıklar^reset;:\n  Enerji x^red;0.75^reset;, -^red;25^reset;% Karizma\n  ^red;Direnç^reset;: -^red;30^reset;% Ateş, -^red;15^reset;% Buz",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/thelusian.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "Warrior race from the Kortakk nebula",
+      "tr": "Kortakk Bulutsusu'ndan savaşçı ırk",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/thelusian.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Thelusian",
+      "tr": "Thelusian",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/veluu.species",
+      "pointer": "/charCreationTooltip/description",
+      "en": "A fractured race of sapient cats. Half are peace loving free-thinkers, while the rest are war-hungry monsters.\n\n  ^orange;Diet^reset;: Omnivore, can eat raw meat.\n\n^orange;Perks^reset;:\n  Health: x^green;1.05^reset;, Damage x^green;1.05^reset;\n  Gain ^green;13^reset;% Jump and ^green;6^reset;% Run Speed^reset;, Fall Damage x^green;0.8^reset;\n  ^green;Resist^reset;: +^cyan;15^reset;% Ice,+^cyan;5^reset;% Electric\n  ^cyan;Nightvision^reset;\n  Tech: ^green;Razor Claws^reset;\n  ^green;Immune^reset;: Jungle, Mud\n\n^orange;Environment^reset;:\n  ^green;Jungle, Primeval, Forest, Rainforest, Desert^reset;: Health x^green;1.1^reset;, Energy x^green;1.1^reset;\n  ^green;Barren, Sulphuric, Infernus^reset;: Health x^red;0.8^reset;, Energy x^red;0.8^reset;\n\n^orange;Weapons^reset;:\n  Fist Mastery: +^green;20^reset;%\n  Dagger Mastery: ^green;15^reset;%\n  Arm Cannon Mastery: +^green;15^reset;%\n\n^red;Weaknesses^reset;:\n  ^red;Resist^reset;: -^red;10^reset;% Fire, Poison, Radioactive, -^red;5^reset;% Physical",
+      "tr": "Parçalanmış bir bilinçli kedi ırkı. Yarısı barışçıl özgür düşünürlerden, kalanı ise savaşa susamış canavarlardan oluşur.\n\n  ^orange;Beslenme^reset;: Hepçil, çiğ et yiyebilir.\n\n^orange;Avantajlar^reset;:\n  Can: x^green;1.05^reset;, Hasar x^green;1.05^reset;\n  ^green;13^reset;% Zıplama ve ^green;6^reset;% Koşu Hızı^reset;, Düşme Hasarı x^green;0.8^reset;\n  ^green;Direnç^reset;: +^cyan;15^reset;% Buz,+^cyan;5^reset;% Elektrik\n  ^cyan;Gece Görüşü^reset;\n  Tech: ^green;Jilet Pençeler^reset;\n  ^green;Bağışıklık^reset;: Cangıl, Çamur\n\n^orange;Çevre^reset;:\n  ^green;Cangıl, Kadim Orman, Orman, Yağmur Ormanı, Çöl^reset;: Can x^green;1.1^reset;, Enerji x^green;1.1^reset;\n  ^green;Çorak, Kükürtlü, Infernus^reset;: Can x^red;0.8^reset;, Enerji x^red;0.8^reset;\n\n^orange;Silahlar^reset;:\n  Yumruk Ustalığı: +^green;20^reset;%\n  Hançer Ustalığı: ^green;15^reset;%\n  Kol Topu Ustalığı: +^green;15^reset;%\n\n^red;Zayıflıklar^reset;:\n  ^red;Direnç^reset;: -^red;10^reset;% Ateş, Zehir, Radyasyon, -^red;5^reset;% Fiziksel",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/veluu.species",
+      "pointer": "/charCreationTooltip/subTitle",
+      "en": "O3",
+      "tr": "O3",
+      "section": "v0.46 Irklar ve SAIL/AI"
+    },
+    {
+      "asset": "species/veluu.species",
+      "pointer": "/charCreationTooltip/title",
+      "en": "Vel'uuish",
+      "tr": "Vel'uuish",
+      "section": "v0.46 Irklar ve SAIL/AI"
     }
   ]
 }

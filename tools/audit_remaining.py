@@ -16,7 +16,7 @@ import argparse
 import json
 import re
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
@@ -36,6 +36,8 @@ AUDIT_VISIBLE_CONTAINER_KEYS = load_rule('AUDIT_VISIBLE_CONTAINER_KEYS')
 AUDIT_VISIBLE_PATH_PREFIXES = load_rule('AUDIT_VISIBLE_PATH_PREFIXES')
 AUDIT_TITLE_FROM_ENTITY_ASSETS = load_rule('AUDIT_TITLE_FROM_ENTITY_ASSETS')
 AUDIT_PATCH_APPEND_INDEXES = load_rule('AUDIT_PATCH_APPEND_INDEXES')
+AUDIT_CORE_PLAYABLE_SPECIES_ASSETS = load_rule('AUDIT_CORE_PLAYABLE_SPECIES_ASSETS')
+V046_TECHNICAL_FALSE_POSITIVE_FIELDS = load_rule('V046_TECHNICAL_FALSE_POSITIVE_FIELDS')
 
 BINARY_SUFFIXES = {
     ".png", ".jpg", ".jpeg", ".gif", ".ogg", ".wav", ".ase", ".aseprite",
@@ -405,6 +407,21 @@ def audit_excluded_candidate(asset: str, field_pointer: str) -> bool:
     return field_pointer in AUDIT_EXCLUDED_FIELDS.get(asset, frozenset())
 
 
+def v046_candidate_visibility(candidate: Candidate) -> Candidate | None:
+    if candidate.pointer in V046_TECHNICAL_FALSE_POSITIVE_FIELDS.get(
+        candidate.asset, frozenset()
+    ):
+        return None
+    if (
+        candidate.asset.startswith("species/")
+        and candidate.asset.endswith(".species")
+        and candidate.asset not in AUDIT_CORE_PLAYABLE_SPECIES_ASSETS
+        and candidate.confidence == "confirmed"
+    ):
+        return replace(candidate, confidence="review")
+    return candidate
+
+
 def load_translations(catalog_path: Path) -> tuple[set[tuple[str, str]], int]:
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     rows = catalog.get("translations", [])
@@ -529,6 +546,9 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             continue
         parsed_files += 1
         for candidate in candidates_from_data(rel.as_posix(), data):
+            candidate = v046_candidate_visibility(candidate)
+            if candidate is None:
+                continue
             if candidate.asset in V018_DEAD_OBJECT_ASSETS or candidate.asset in V020_INACTIVE_QUEST_ASSETS or candidate.asset in NONVISIBLE_QUEST_ASSETS or candidate.asset in AUDIT_EXCLUDED_PATHS:
                 continue
             if audit_excluded_candidate(candidate.asset, candidate.pointer):
