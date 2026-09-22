@@ -41,6 +41,10 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertEqual(list(audit.candidates_from_data("zb/handler.questtemplate", data)), [])
 
 
+    def test_known_nonvisible_quests_are_loaded_for_audit_exclusion(self):
+        self.assertIn("quests/fu_questlines/battle/monsters/fuquest_gorgolith.questtemplate", audit.NONVISIBLE_QUEST_ASSETS)
+        self.assertIn("quests/fu_questlines/exploration/fuquest_explore1.questtemplate", audit.NONVISIBLE_QUEST_ASSETS)
+
     def test_known_runtime_inactive_quests_are_loaded_for_audit_exclusion(self):
         self.assertIn("quests/tech/dash/airdash2.questtemplate", audit.V020_INACTIVE_QUEST_ASSETS)
         self.assertIn("quests/optionalhardmode/fu_t10_initial.questtemplate", audit.V020_INACTIVE_QUEST_ASSETS)

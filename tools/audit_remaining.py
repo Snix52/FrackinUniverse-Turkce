@@ -26,6 +26,7 @@ from rule_data import rule as load_rule
 
 PINNED_COMMIT = json.loads(Path(__file__).with_name('kaynaklar.json').read_text(encoding='utf-8'))['commit']
 NONVISIBLE_RESEARCH_IDS = load_rule('NONVISIBLE_RESEARCH_IDS')
+NONVISIBLE_QUEST_ASSETS = load_rule('NONVISIBLE_QUEST_ASSETS')
 V018_DEAD_OBJECT_ASSETS = load_rule('V018_DEAD_OBJECT_ASSETS')
 V020_INACTIVE_QUEST_ASSETS = load_rule('V020_INACTIVE_QUEST_ASSETS')
 AUDIT_TECHNICAL_CATEGORY_VALUES = load_rule('AUDIT_TECHNICAL_CATEGORY_VALUES')
@@ -528,7 +529,7 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             continue
         parsed_files += 1
         for candidate in candidates_from_data(rel.as_posix(), data):
-            if candidate.asset in V018_DEAD_OBJECT_ASSETS or candidate.asset in V020_INACTIVE_QUEST_ASSETS or candidate.asset in AUDIT_EXCLUDED_PATHS:
+            if candidate.asset in V018_DEAD_OBJECT_ASSETS or candidate.asset in V020_INACTIVE_QUEST_ASSETS or candidate.asset in NONVISIBLE_QUEST_ASSETS or candidate.asset in AUDIT_EXCLUDED_PATHS:
                 continue
             if audit_excluded_candidate(candidate.asset, candidate.pointer):
                 continue
