@@ -1,0 +1,64 @@
+name: v047 apply and verify
+on:
+  push:
+    branches: [work/v047-plants-liquids]
+    paths:
+      - .github/workflows/v047-apply.yml
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Fetch pinned FU
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+      - name: Apply v0.47 migration
+        run: python tools/v047_apply_temp.py --source fu_source
+      - name: Verify regressions and pinned build
+        run: |
+          python -m compileall -q tools
+          python -m unittest discover -s tools/tests -v
+          python tools/qa_integrity.py
+          python tools/generate_v045.py --source fu_source
+          python tools/generate_v046.py --source fu_source
+          python tools/generate_v047.py --source fu_source
+          python tools/build_validate.py --source-dir fu_source --output build_output
+          python tools/audit_remaining.py --source fu_source --json-output audit_output/kalan.json --md-output audit_output/KALAN.md
+          python - <<'PY'
+          import json
+          d=json.load(open('audit_output/kalan.json',encoding='utf-8'))
+          r=d['remaining']
+          cat=r['confirmed_by_category']['Biyom, zindan ve dünya sistemleri']
+          plants=r['confirmed_by_source_root'].get('plants',{'assets':0,'fields':0})
+          liquids=r['confirmed_by_source_root'].get('liquids',{'assets':0,'fields':0})
+          if plants != {'assets':0,'fields':0}: raise SystemExit(f'plants still confirmed: {plants}')
+          if liquids != {'assets':0,'fields':0}: raise SystemExit(f'liquids still confirmed: {liquids}')
+          if cat['assets'] != 638 or cat['fields'] != 1746: raise SystemExit(f'category drift: {cat}')
+          if r['confirmed_assets'] != 12350 or r['confirmed_fields'] != 50092:
+              raise SystemExit(f"overall drift: assets={r['confirmed_assets']} fields={r['confirmed_fields']}")
+          print(json.dumps({'category':cat,'plants':plants,'liquids':liquids,
+                            'overall_assets':r['confirmed_assets'],'overall_fields':r['confirmed_fields']},
+                           ensure_ascii=False,indent=2))
+          PY
+          git diff --check
+      - name: Commit tested source changes
+        run: |
+          rm -rf build_output audit_output fu_source
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "feat: v0.47 bitki metinlerini yerelleştir [skip ci]"
+          git fetch origin work/v047-plants-liquids
+          test "$(git rev-parse origin/work/v047-plants-liquids)" = "$GITHUB_SHA"
+          git push origin HEAD:work/v047-plants-liquids
