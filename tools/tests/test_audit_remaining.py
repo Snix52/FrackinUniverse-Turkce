@@ -40,6 +40,11 @@ class AuditVisibilityTests(unittest.TestCase):
         }
         self.assertEqual(list(audit.candidates_from_data("zb/handler.questtemplate", data)), [])
 
+
+    def test_known_runtime_inactive_quests_are_loaded_for_audit_exclusion(self):
+        self.assertIn("quests/tech/dash/airdash2.questtemplate", audit.V020_INACTIVE_QUEST_ASSETS)
+        self.assertIn("quests/optionalhardmode/fu_t10_initial.questtemplate", audit.V020_INACTIVE_QUEST_ASSETS)
+
     def test_optional_mmupgrade_fallback_is_audit_excluded(self):
         self.assertIn(
             "interface/scripted/mmupgrade/mmupgradegui.original.config",
