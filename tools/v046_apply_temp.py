@@ -226,49 +226,60 @@ source_block = """        if args.source_dir:
 """
 source_replacement = """        if args.source_dir:
             source=args.source_dir/a
-            v046_layered = all(
+            v046_group = all(
                 (a, r['pointer']) in V046_RACES_SAIL_FIELDS
-                and r.get('qa',{}).get('layered_source')
                 for r in rs
             )
-            if v046_layered:
-                # v0.46'da bazı vanilla/FU hedeflerinin hem base asseti hem de
-                # runtime'da onu değiştiren .patch katmanı bulunur. Görünür
-                # kaynak metin patch'ten geliyorsa base dosyaya karşı test
-                # etmek yanlış negatif üretir; exact source_patch değeri burada
-                # doğrudan doğrulanır.
+            if v046_group:
+                # v0.46 aynı asset içinde base ve .patch kaynaklı görünür
+                # alanları birlikte içerebilir (Nightar bunun canlı örneği).
+                # Bu yüzden provenance asset bazında değil satır bazında
+                # doğrulanır.
+                direct_data = None
                 patch_cache = {}
                 for r in rs:
-                    source_patch = r.get('qa',{}).get('source_patch')
-                    if not source_patch:
-                        raise ValueError('v0.46 layered source patch eksik: '+a+r['pointer'])
-                    patch_path = args.source_dir/source_patch
-                    if not patch_path.is_file():
-                        raise FileNotFoundError(patch_path)
-                    if source_patch not in patch_cache:
-                        patch_cache[source_patch] = parse_jsonc(
-                            patch_path.read_text(encoding='utf-8-sig')
-                        )
-                    found = None
-                    for source_op in patch_cache[source_patch]:
-                        if not isinstance(source_op,dict) or 'value' not in source_op:
-                            continue
-                        source_path = str(source_op.get('path',''))
-                        if source_path == r['pointer']:
-                            found = source_op['value']
-                            continue
-                        if source_path and r['pointer'].startswith(source_path+'/'):
-                            try:
-                                found = read_at(
-                                    source_op['value'],
-                                    r['pointer'][len(source_path):]
-                                )
-                            except (KeyError,IndexError,TypeError,ValueError):
-                                pass
-                    if found != r['en']:
-                        raise ValueError(
-                            'v0.46 layered kaynak uyuşmazlığı: '+a+r['pointer']
-                        )
+                    if r.get('qa',{}).get('layered_source'):
+                        source_patch = r.get('qa',{}).get('source_patch')
+                        if not source_patch:
+                            raise ValueError('v0.46 layered source patch eksik: '+a+r['pointer'])
+                        patch_path = args.source_dir/source_patch
+                        if not patch_path.is_file():
+                            raise FileNotFoundError(patch_path)
+                        if source_patch not in patch_cache:
+                            patch_cache[source_patch] = parse_jsonc(
+                                patch_path.read_text(encoding='utf-8-sig')
+                            )
+                        found = None
+                        for source_op in patch_cache[source_patch]:
+                            if not isinstance(source_op,dict) or 'value' not in source_op:
+                                continue
+                            source_path = str(source_op.get('path',''))
+                            if source_path == r['pointer']:
+                                found = source_op['value']
+                                continue
+                            if source_path and r['pointer'].startswith(source_path+'/'):
+                                try:
+                                    found = read_at(
+                                        source_op['value'],
+                                        r['pointer'][len(source_path):]
+                                    )
+                                except (KeyError,IndexError,TypeError,ValueError):
+                                    pass
+                        if found != r['en']:
+                            raise ValueError(
+                                'v0.46 layered kaynak uyuşmazlığı: '+a+r['pointer']
+                            )
+                    else:
+                        if not source.is_file():
+                            raise FileNotFoundError(source)
+                        if direct_data is None:
+                            direct_data = parse_jsonc(
+                                source.read_text(encoding='utf-8-sig')
+                            )
+                        if read_at(direct_data,r['pointer']) != r['en']:
+                            raise ValueError(
+                                'v0.46 direct kaynak uyuşmazlığı: '+a+r['pointer']
+                            )
             elif source.is_file():
                 simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
             elif all(r.get('qa',{}).get('layered_source') for r in rs):
