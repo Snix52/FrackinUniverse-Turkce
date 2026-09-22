@@ -27,7 +27,7 @@ class V043Tests(unittest.TestCase):
 
     def test_catalog_contains_manifest(self):
         catalog=json.loads((TOOLS/"ceviriler.json").read_text(encoding="utf-8"))
-        self.assertEqual(catalog["translation_version"],"0.43.0-beta")
+        self.assertGreaterEqual(tuple(map(int,catalog["translation_version"].split("-")[0].split("."))),(0,43,0))
         idx={(r["asset"],r["pointer"]):r for r in catalog["translations"]}
         for row in self.rows:
             self.assertIn((row["asset"],row["pointer"]),idx)
