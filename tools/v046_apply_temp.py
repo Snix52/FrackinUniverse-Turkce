@@ -53,6 +53,13 @@ fixes = {
     ("species/hylotl.species", "/charCreationTooltip/description"): [
         ("Barışçıl Hylotllar", "Barışçıl Hylotl'lar"),
     ],
+    ("species/fukirhos.species", "/charCreationTooltip/description"): [
+        ("-^red;5^reset;%Fiziksel", "-^red;5^reset;% Fiziksel"),
+    ],
+    ("species/veluu.species", "/charCreationTooltip/description"): [
+        ("+^green;13^reset;% Zıplama ve +^green;6^reset;% Koşu Hızı",
+         "^green;13^reset;% Zıplama ve ^green;6^reset;% Koşu Hızı"),
+    ],
 }
 for key, replacements in fixes.items():
     row = by[key]
@@ -452,6 +459,7 @@ for path in (
     ROOT / ".github" / "workflows" / "v046-candidate-dump.yml",
     ROOT / ".github" / "workflows" / "v046-context-dump.yml",
     ROOT / ".github" / "workflows" / "v046-apply.yml",
+    ROOT / ".github" / "workflows" / "v046-diagnose.yml",
     TOOLS / "v046_apply_temp.py",
 ):
     path.unlink(missing_ok=True)
