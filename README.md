@@ -4,20 +4,20 @@ Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
-**Güncel sürüm:** v0.45.1 Beta
+**Güncel sürüm:** v0.46.1 Beta
 **Hedef FU sürümü:** 6.5.8  
 **Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
 ## Güncel durum
 
-v0.45.1 Beta itibarıyla:
+v0.46.1 Beta itibarıyla:
 
-- **8.024** yapılandırılmış oyuncu metni
+- **8.153** yapılandırılmış oyuncu metni
 - **57** görünür Lua/script metni
-- **8.081** toplam yerelleştirilmiş görünür birim
-- **2.276** patch asset
+- **8.210** toplam yerelleştirilmiş görünür birim
+- **2.329** patch asset
 - **7** raw override asset
-- **2.283** toplam hedef asset
+- **2.336** toplam hedef asset
 - Statik QA: **PASS**
 - Pinned FU source validation: **PASS**
 - ZIP bütünlüğü: **PASS**
@@ -26,7 +26,7 @@ v0.45.1 Beta itibarıyla:
 
 Güncel doğrulanmış paket:
 
-`dist/FU_Turkce_v0.45.1_Beta.zip`
+`dist/FU_Turkce_v0.46.1_Beta.zip`
 
 Paketin güncel SHA-256 değeri, kaynak commit kimliği, workflow run numarası ve doğrulama durumu yalnız [dist/build-evidence.json](dist/build-evidence.json) içinde tutulur. Bu bilgiler README’ye kopyalanmaz. Kaynak değişikliği ile paket yayını arasında, yayımlanmış son build için bu dosyadaki sürüm esas alınır.
 
@@ -63,23 +63,23 @@ Bu, oyunda artık hiçbir İngilizce arayüz veya görev metni kalmadığı anla
 
 Lua görünür string güvenliği, LOCKED karma-varyant kontrolü, alan-bağlı kontrol kodu istisnaları, beş zemin etiketi, iki Mech yakıt uyarısı ve görev dili düzeltildi. PR QA salt okunur; generated çıktı değişiklikleri kaynak güncellemesi yerine kabul edilmez. Ayrıntılar: [bakım raporu](docs/QA_HARDENING_20260922.md).
 
-## Sıradaki çalışma
+## Son tamamlanan çalışma
 
-v0.46 için sıradaki dar paket:
+v0.46 Irklar ve SAIL/AI confirmed kapsamı kapatıldı.
 
-**Irklar ve SAIL/AI**
+- 53 canlı asset
+- 129 oyuncuya gösterilen alan
+- 89 SAIL/AI alanı
+- 20 oynanabilir ırkta 40 species alanı
+- Irklar ve SAIL/AI confirmed borcu: 0
 
-- 167 asset
-- 262 doğrulanmış alan
-- 247 benzersiz kaynak metin
-
-Bu grup çevrilmeden önce species/raceeffect içerikleri ile gerçekten görünür SAIL/AI metinleri runtime bağlamına göre ayrılacak. Teknik stat, ID ve sistem alanları çeviri kapsamına alınmayacak.
+v0.46.1 bakımında generic Jungle terminolojisi Tropik Orman olarak kilitlendi ve eski karşılıklar geriye dönük temizlendi. Sonraki paket güncel Remaining Scope Audit sıralamasından seçilecektir.
 
 ## Kurulum
 
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
-3. [Güncel beta paketini](dist/FU_Turkce_v0.45.1_Beta.zip) indirip çıkar.
+3. [Güncel beta paketini](dist/FU_Turkce_v0.46.1_Beta.zip) indirip çıkar.
 4. İçindeki `FU_Turkce` klasörünü Starbound'un `mods` klasörüne kopyala.
 5. Son yol şu şekilde görünmeli:
 
@@ -89,7 +89,7 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
-Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.45.1_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
+Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.46.1_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
 
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 

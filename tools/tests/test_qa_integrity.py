@@ -25,7 +25,7 @@ class IntegrityTests(unittest.TestCase):
     def test_current_corpus_and_versioned_manifests(self):
         result = qa.validate_project(self.rows)
         self.assertEqual(result['catalog_units_checked'], len(qa.manifest_rows(self.rows)))
-        self.assertEqual(result['locked_terms'], 506)
+        self.assertEqual(result['locked_terms'], 507)
 
     def test_signed_numbers_pass(self):
         for en, tr in [('+25%', '+25%'), ('-7', '-7'), ('+10', '+10'), ('-10', '-10'),
@@ -89,7 +89,7 @@ class IntegrityTests(unittest.TestCase):
 
     def test_all_locked_canonical_forms(self):
         engine = qa.Terminology(self.terms)
-        self.assertGreaterEqual(len(engine.exact), 506)
+        self.assertGreaterEqual(len(engine.exact), 507)
         for en, forms in engine.exact.items():
             if len(forms) != 1:
                 continue
@@ -98,10 +98,11 @@ class IntegrityTests(unittest.TestCase):
 
     def test_locked_wrong_variant_exact_and_in_sentence(self):
         engine = qa.Terminology(self.terms)
-        for en, tr in [('Arc Smelter', 'Ark Eritici'), ('Build an Arc Smelter.', 'Bir Ark Eritici üret.')]:
+        for en, tr in [('Arc Smelter', 'Ark Eritici'), ('Build an Arc Smelter.', 'Bir Ark Eritici üret.'), ('Jungle', 'Cangıl'), ('Jungle', 'Cangil')]:
             with self.subTest(en=en), self.assertRaises(ValueError):
                 engine.validate(row(en, tr))
         engine.validate(row('Build an Arc Smelter.', 'Bir Ark Ergitici üret.'))
+        engine.validate(row('Jungle', 'Tropik Orman'))
 
     def test_terminology_context_and_exception_binding(self):
         engine = qa.Terminology(self.terms)

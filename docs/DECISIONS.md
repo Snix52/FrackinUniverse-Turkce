@@ -604,3 +604,10 @@
 - `mechanics` görev bağlamında “teknisyenlerimiz”; “bir şeylerden yakınıyor”; görev hedefi “Erchius Kristali sevkiyatını geri al.”. Illegal ship upgrade 3 metnindeki nokta sonrası boşluk düzeltildi.
 - LOCKED karşılıklar değişmedi. Raw Research düğmesi mevcut Araştır eylem bağlamına dar biçimde bağlandı.
 - Geriye dönük QA tüm ana katalog ve sürüm manifestleriyle yürütülür; dilin tamamına insan LQA onayı verildiği anlamına gelmez.
+
+### v0.46.1 - Jungle terminoloji standardı
+
+- Generic Jungle için onaylı karşılık Tropik Orman olarak LOCKED yapıldı.
+- Eski karşılık ve ASCII varyantı yeni QA kuralıyla yasaklandı.
+- Evernight Jungle gibi görev/konum özel adları mevcut özel-ad kararı gereği korunur.
+- Cockpit gezegen adı ve açıklamaları, malzeme modu, Tricorder zemin etiketi, SAIL/AI açıklamaları, oynanabilir ırk açıklamaları ve Jungle/Mud Slows ekipman metinleri geriye dönük eşitlendi.

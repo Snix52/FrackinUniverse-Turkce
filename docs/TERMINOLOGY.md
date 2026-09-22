@@ -522,6 +522,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Electrified | Silah durum etkisi | Durum | Elektriklenme | Elektrikli | LOCKED | Fiil bağlamında “Elektriklenmeye yol açar” |
 | Frost Burn | Silah durum etkisi | Durum | Ayaz Yanığı | Don Yanması | LOCKED | Soğuk kaynaklı durum etkisi |
 | Oceanite / Thanatite / Nhydri | Elduu malzeme ve model adları | Özel ad | Kaynaktaki yazım korunur | Okyanusit / Tanatit / Nhidri | LOCKED | İşlevsel silah sınıfı ayrıca çevrilir |
+| Jungle | Biyom / zemin / generic çevre adı | Biyom | Tropik Orman | Cangıl, Cangil | LOCKED | Evernight Jungle gibi özel görev/konum adları korunur; generic Jungle için Tropik Orman kullanılır. |
 
 ## Kural
 

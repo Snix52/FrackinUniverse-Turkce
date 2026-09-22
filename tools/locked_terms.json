@@ -4670,6 +4670,15 @@
       "status": "LOCKED",
       "note": "İşlevsel silah sınıfı ayrıca çevrilir",
       "mode": "preserve"
+    },
+    {
+      "source": "Jungle",
+      "context": "Biyom / zemin / generic çevre adı",
+      "type": "Biyom",
+      "tr": "Tropik Orman",
+      "forbidden": "Cangıl, Cangil",
+      "status": "LOCKED",
+      "note": "Evernight Jungle gibi özel görev/konum adları korunur; generic Jungle için Tropik Orman kullanılır."
     }
   ],
   "context_exceptions": [
@@ -4773,6 +4782,11 @@
       "pattern": "\\bmech\\b",
       "ignore_case": false,
       "message": "Kilitli Mech yazımı ihlali: Mech büyük harfle yazılmalı."
+    },
+    {
+      "pattern": "cang[ıi]l",
+      "ignore_case": true,
+      "message": "Kilitli Jungle terminolojisi ihlali: generic Jungle için Tropik Orman kullanılmalı."
     }
   ]
 }
