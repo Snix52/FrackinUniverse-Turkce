@@ -1,19 +1,18 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.42 işlevsel arayüzler + Pet House feature seti commit öncesi hazır.**
+22 Eylül 2026 - **v0.42 işlevsel arayüzler + Pet House tamamlandı ve doğrulandı.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
-Taban repo commit: `a4f686fc700d99065a7fe5983eb4eda9fc146db0`.
 
-## v0.42 kapsamı
+## v0.42 tamamlanan kapsam
 - Structured: **260 alan / 46 asset / 82 benzersiz kaynak metin**
 - Pet House:
   - `fu_pethouse.config`: 16 alan
   - `fu_pethouse_confirmation.config`: 5 alan
   - `fu_pethouse.lua`: 1 source-locked görünür Lua parçası
 - Windowconfig: **44 runtime-bağlı panel / 239 alan**
-- Toplam sayılan v0.42 katkısı: **261 görünür metin birimi**
+- v0.42 toplam katkı: **261 görünür metin birimi**
 
 ## Runtime doğrulaması
 - 34 üretim/tezgâh configi gerçek nesne veya upgrade patch referansıyla doğrulandı.
@@ -35,18 +34,51 @@ Runtime referansı bulunmayan:
 - Pet House popup ve interactionType alanları audit'in otomatik havuzunda olmasa da Lua tarafından canlı gösterildiği için dahil edildi.
 - `groundPet.lua`, `techstation`, `shipPetType`, mod adı `Purchasable Pets` gibi teknik referanslar korunur.
 - `Buy`: Takas Et / Satın Al / İşe Al bağlamları Translation Memory'de açıkça ayrılır.
-- Craft → Üret; Forge → Döv; Smelt → Ergit; Distill → Damıt; Ferment → Fermente Et. `Mash` bağlama ayrılır: Meyve Presi → **Ez**, Mayşeleme Kazanı → **Mayşele**; ürün/kavram → **Mayşe**.
+- Craft → **Üret**
+- Forge → **Döv** (eylem); Forge nesne adı → **Dövme Ocağı**
+- Smelt → **Ergit**
+- Distill → **Damıt**
+- Ferment → **Fermente Et**
+- Mash bağlama ayrılır:
+  - ürün/kavram → **Mayşe**
+  - Mayşeleme Kazanı eylemi → **Mayşele**
+  - Meyve Presi eylemi → **Ez**
 - Bağlı nesne adlarıyla panel başlıkları eşitlendi.
 
-## Hazır kaynak blobları
-- v0.42 manifest: `71c0db9bb2ed7147b0107af47a3d6b325ad937ce`
-- güncel katalog (7.725 structured): `1dca49ed14164adad09d95c79ed933ff979e1d52`
-- raw text manifest: `e2a0695a1497ef68943fc1c2fc1262ba13f01248`
-- Pet House Lua override: `ea5a982e513d0230f059ea3ee742bffd712f6072`
-- TM exceptions: `3b062165b4e76d1dda09d8d6a76c04e10e218b29`
-- build validator: `85ddcfb762db9df0bd6fea8ac15d039f99d9db1d`
-- generator: `819df8b12ebfed945d0dcb75d5d3a2ed0d733f71`
-- v0.42 tests: `afee50fe09b7f5eb2ac4f4deee5f45bff2d8d2d0`
+## Doğrulama sonucu
+Feature/fix zinciri:
+- `81085dd` - v0.42 işlevsel arayüzler + Pet House
+- `8984600` - Forge eylem bağlamı
+- `27ec3f0` - v0.42 regresyon testindeki syntax düzeltmesi
+- `424b615` - Mash bağlam ayrımı
+- `995e701` - doğrulanmış build/package refresh
 
-## Sonraki adım
-Bu kaynakları tek atomik feature commit ile main'e bağla, ardından Build & QA ve Remaining Scope Audit sonuçlarını doğrula. CI yeşile dönmeden v0.42 tamamlandı sayma.
+Build evidence:
+- translation version: **0.42.0-beta**
+- structured fields: **7.725**
+- patch assets: **2.182**
+- raw override assets: **6**
+- raw script strings: **55**
+- static QA: **PASS**
+- pinned source validation: **PASS**
+- ZIP integrity: **PASS**
+- install-tree parity: **PASS**
+- package: `dist/FU_Turkce_v0.42.0_Beta.zip`
+- package sha256: `932c4dcf5399d1a527edddbb9c2e3329e2f376c1a33e1322987bd0b4fe061969`
+- oyun içi LQA: **NOT TESTED**
+
+## v0.42 sonrası audit
+Kalan doğrulanmış **Arayüz** kapsamı:
+- **95 asset**
+- **347 alan**
+- **200 benzersiz kaynak metin**
+
+Genel audit:
+- kalan doğrulanmış kapsam: **13.103 asset / 51.563 alan**
+- review havuzu: **599 asset / 4.496 alan**
+- Lua inceleme havuzu: **35 asset / 171 literal**
+
+## Sonraki başlangıç noktası
+v0.43 için yalnız kalan **Arayüz** havuzundan devam et.
+Repo çapında yeniden keşif yapma; bu checkpoint ve son Remaining Scope Audit sonuçlarından devam et.
+Oyun içi LQA ayrı bir aşamadır.
