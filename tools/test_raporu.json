@@ -1,29 +1,29 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-22T06:38:59.697167+00:00",
-  "workflow_run_id": "35695710269",
-  "source_commit": "f11154b3ed3a83739890c37b6d1249ab883c7654",
-  "translation_source_commit": "f11154b3ed3a83739890c37b6d1249ab883c7654",
-  "translation_version": "0.43.0-beta",
+  "generated_at_utc": "2026-09-22T07:01:17.350711+00:00",
+  "workflow_run_id": "35697423309",
+  "source_commit": "6854d07fafd92dd02b889bcd2c0abc4c6751a88b",
+  "translation_source_commit": "6854d07fafd92dd02b889bcd2c0abc4c6751a88b",
+  "translation_version": "0.44.0-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 7982,
-    "patch_assets": 2251,
+    "structured_fields": 7995,
+    "patch_assets": 2258,
     "raw_override_assets": 6,
     "raw_script_strings": 55
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.43.0_Beta.zip",
-    "bytes": 1289173,
-    "sha256": "5ac74d7551570778a0031e3a58891369729a3aa35dd1b2c7e996eeebecd3c8d5",
-    "git_blob_sha": "61e9c93f8483f68cb071dbc6c1414e08b828db12",
+    "path": "dist/FU_Turkce_v0.44.0_Beta.zip",
+    "bytes": 1291714,
+    "sha256": "c50ee3f95c3ca04dbd380fe4796508c072758dfb020172a2fd060aa1abc2e769",
+    "git_blob_sha": "78c345ab52f74761898102cacfd381326b1d61bd",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "41fd179ca75515b59f77258d8e41bbda7c6af1ac02be594eff4e0bf22c4e4000",
-  "catalog_sha256": "6656f933a1e5808402d384f0ef01ebb81261badb16ecd3a87efe0834b78398c6",
+  "install_tree_sha256": "daf9bcb772710b11237eaf15d70ea113e31d28153377d9dd1c4ebb60a51eb528",
+  "catalog_sha256": "a361bd283f40b5f0275b6059c2023bb526bb4654450ef00f8af888f41e27a8cc",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -32,12 +32,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 7982,
-  "patched_assets": 2251,
+  "translated_display_fields": 7995,
+  "patched_assets": 2258,
   "raw_override_assets": 6,
   "raw_script_display_strings": 55,
-  "total_localized_display_units": 8037,
-  "target_assets_total": 2257,
+  "total_localized_display_units": 8050,
+  "target_assets_total": 2264,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -109,7 +109,8 @@
     "v0.40 karakter oluşturma arayüzü": 19,
     "v0.41 Space Station arayüzü": 245,
     "v0.42 işlevsel arayüzler ve Pet House": 260,
-    "v0.43 canlı arayüzler": 257
+    "v0.43 canlı arayüzler": 257,
+    "v0.44 arayüz kapanışı": 13
   },
   "checks": {
     "static_qa": "PASS",
@@ -2011,6 +2012,42 @@
       "pointer": "/gui/lb_currentOre/text",
       "qa": {
         "allow_control_fix": true
+      }
+    },
+    {
+      "asset": "interface/stats/stats.config",
+      "pointer": "/darkregen/label",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "interface/stats/stats.config.patch",
+        "reason": "FU bu vanilla stats.config hedefini pinned interface/stats/stats.config.patch katmanıyla genişletiyor; hedef tam stats.config FU kaynak ağacında bulunmuyor."
+      }
+    },
+    {
+      "asset": "interface/stats/stats.config",
+      "pointer": "/fuCharisma/label",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "interface/stats/stats.config.patch",
+        "reason": "FU bu vanilla stats.config hedefini pinned interface/stats/stats.config.patch katmanıyla genişletiyor; hedef tam stats.config FU kaynak ağacında bulunmuyor."
+      }
+    },
+    {
+      "asset": "interface/stats/stats.config",
+      "pointer": "/lightregen/label",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "interface/stats/stats.config.patch",
+        "reason": "FU bu vanilla stats.config hedefini pinned interface/stats/stats.config.patch katmanıyla genişletiyor; hedef tam stats.config FU kaynak ağacında bulunmuyor."
+      }
+    },
+    {
+      "asset": "interface/stats/stats.config",
+      "pointer": "/upgradeable/label",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "interface/stats/stats.config.patch",
+        "reason": "FU bu vanilla stats.config hedefini pinned interface/stats/stats.config.patch katmanıyla genişletiyor; hedef tam stats.config FU kaynak ağacında bulunmuyor."
       }
     }
   ]
