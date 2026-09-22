@@ -20,11 +20,11 @@ class V041Tests(unittest.TestCase):
 
     def test_manifest_scope_is_exact(self):
         self.assertEqual(self.manifest["translation_version"], "0.41.0-beta")
-        self.assertEqual(len(self.rows), 250)
-        self.assertEqual(len({(r["asset"], r["pointer"]) for r in self.rows}), 250)
+        self.assertEqual(len(self.rows), 274)
+        self.assertEqual(len({(r["asset"], r["pointer"]) for r in self.rows}), 274)
         self.assertEqual(Counter(r["asset"] for r in self.rows), {
             CONFIG: 14,
-            TEXTS: 188,
+            TEXTS: 212,
             DATA: 48,
         })
         self.assertTrue(all(r["section"] == SECTION for r in self.rows))
@@ -33,7 +33,10 @@ class V041Tests(unittest.TestCase):
         keys = {(r["asset"], r["pointer"]) for r in self.rows}
         self.assertNotIn((TEXTS, "/generic/chat4"), keys)
         self.assertNotIn((TEXTS, "/generic/chat5"), keys)
-        self.assertFalse(any("/quests/" in r["pointer"] for r in self.rows))
+        self.assertFalse(any(r["asset"] == TEXTS and "/quest" in r["pointer"] for r in self.rows))
+        self.assertFalse(any(r["asset"] == TEXTS and r["pointer"].endswith("/cooldownEnhancer") for r in self.rows))
+        self.assertIn((TEXTS, "/cari/welcome"), keys)
+        self.assertIn((TEXTS, "/cari/noMoreMerc"), keys)
         self.assertIn((TEXTS, "/defaultButtonStates/0"), keys)
         self.assertIn((TEXTS, "/defaultButtonStates/5"), keys)
 
