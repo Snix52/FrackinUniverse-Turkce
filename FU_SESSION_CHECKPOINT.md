@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.43 canlı arayüz paketi tamamlandı ve doğrulandı.**
+22 Eylül 2026 - **v0.44 Arayüz artık havuzu sınıflandırıldı; feature commit hazır, CI doğrulaması bekleniyor.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
@@ -146,3 +146,19 @@ Oyun içi LQA ayrı bir aşamadır.
 
 - Audit origin çapraz kontrolünde 257 v0.43 alan içinde katmanlı kaynağa sahip yalnız iki asset bulundu: `mechassemblygui.config` ve `mmupgradegui.config`. Başka seçili layered asset yok.
 - `mmupgradegui.config` içindeki 3 alan etkisi açıklaması pinned `mmupgradegui.config.patch` blobu `8b1c6b1c98a802d89129d164f0b376ecab0b1de2` ile source-lock altına alındı.
+
+
+## v0.44 feature kapsamı
+- v0.43 sonrası kalan Arayüz: **26 asset / 90 alan / 58 benzersiz kaynak metin**.
+- Runtime doğrulaması sonunda gerçek canlı kapsam: **7 asset / 13 alan / 12 benzersiz kaynak metin**.
+- `chest3.config`, gerçek `slotCount: 3` nesnelerin `/interface/chests/chest<slots>.config` bağıyla canlıdır.
+- Atmospheric Filter yalnız `slotCount: 1` kullandığı için `fu_atmosfilter1.config` canlıdır.
+- `fu_warped1.config` ve `fu_warped3.config`, gerçek 1/3 slotlu nesnelerin `fu_warped<slots>.config` bağıyla canlıdır.
+- `interface/stats/stats.config` pinned `stats.config.patch` katmanından gelir; 4 stat etiketi çevrildi.
+- MetaGUI `frackin` ve `frackin.v2` temaları registry üzerinden canlıdır; ad ve açıklamaları çevrildi.
+- **19 asset** runtime-inaktif/superseded olarak audit confirmed kapsamından çıkarıldı.
+- Stats patch içindeki dört `-todo-` açıklaması geliştirici placeholder'ıdır; çeviri borcu sayılmaz.
+- Oyun içi LQA: **NOT TESTED**.
+
+## v0.44 sonraki adım
+Build & QA ile Remaining Scope Audit'i doğrula. Beklenen Arayüz confirmed sonucu: **0 alan**.

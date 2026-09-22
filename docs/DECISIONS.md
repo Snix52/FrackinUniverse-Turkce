@@ -573,3 +573,13 @@
 - `<^yellow;Loading...^reset;>` yapısındaki Loading metni oyuncuya görünürdür. Validator'ın genel `<...>` kontrol-token heuristiğine rağmen Türkçeleştirilir; sadece bu alan `allow_control_fix` ile belgelenir.
 - Teknik ID, key, asset yolu, placeholder ve biçimlendirme kodları değiştirilmez.
 - Oyun içi LQA bu statik/runtime doğrulamasının parçası değildir.
+
+
+## 2026-09-22 - v0.44 Arayüz artık havuzu kapanışı
+- 26 asset / 90 alan runtime bağıyla yeniden sınıflandırıldı: 7 canlı assette 13 alan çevrildi.
+- `chest3.config` dinamik `chest<slots>.config` + `slotCount: 3` bağıyla canlıdır.
+- `fu_atmosfilter1.config` canlı; aynı ailenin 0/2/3/4/5 configleri pinned kaynakta çağrılmayan artıklardır.
+- `fu_warped1.config` ve `fu_warped3.config` canlıdır; kaynak `???` işaretleri korunur.
+- `stats.config.patch` içindeki 4 stat etiketi çevrilir; `-todo-` açıklamaları geliştirici placeholder'ı olduğundan audit borcu sayılmaz.
+- MetaGUI registry `frackin` ve `frackin.v2` temalarını kaydeder; görünür tema metadata'sı çevrilir.
+- Jarring Machine, Expand Station, KheAA Tool Forge, Mech Loadouts, eski Coffee Machine paneli, Pet Namer, Gravity Console ve yedi eski windowconfig runtime-inaktif/superseded olarak auditten çıkarıldı.
