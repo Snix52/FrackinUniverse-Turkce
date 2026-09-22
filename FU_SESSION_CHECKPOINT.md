@@ -359,3 +359,17 @@ Oyun içi LQA ayrı bir aşamadır.
 - Bu tur çeviri eklemedi; paket sürümü **0.46.3-beta** olarak kalır.
 - Sonraki dar başlangıç: aynı kategoride gerçek oyuncu metni olma ihtimali yüksek olan **plants + liquids** havuzunu ayrı turda sınıflandır. `tiles/` (641 asset / 1.763 alan) tek parçada ele alınmayacak.
 - Oyun içi LQA: **NOT TESTED**.
+
+## v0.47.0 bitkiler checkpoint
+- İlk Plants + Liquids audit havuzu: **102 asset / 206 confirmed alan**.
+- Runtime sınıflandırması:
+  - **Plants:** 66 asset / 170 gerçek oyuncu metni
+  - **Liquids:** 36 asset / 36 `/description` metadata false positive
+- v0.47 manifesti: **170 alan / 66 asset / 110 benzersiz kaynak**.
+- Bitki kapsamı: ad, açıklama, Floran ve Glitch inceleme replikleri.
+- Liquid config açıklamaları audit confirmed kapsamından çıkarıldı; `items/liquids/*.liqitem` görünür metinleri ayrı ve etkilenmiyor.
+- Katalog sürümü: **0.47.0-beta**.
+- Beklenen structured toplam: **8.323**; patch asset: **2.395**.
+- Beklenen audit sonrası Biyom/Zindan/Dünya confirmed borcu: **638 asset / 1.746 alan**.
+- Beklenen genel confirmed borç: **12.350 asset / 50.092 alan**.
+- Oyun içi LQA: **NOT TESTED**.

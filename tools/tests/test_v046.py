@@ -30,7 +30,10 @@ class V046Tests(unittest.TestCase):
 
     def test_catalog_contains_exact_manifest(self):
         c = json.loads((TOOLS / "ceviriler.json").read_text(encoding="utf-8"))
-        self.assertEqual(c["translation_version"], "0.46.3-beta")
+        self.assertGreaterEqual(
+            tuple(map(int, c["translation_version"].split("-")[0].split("."))),
+            (0, 46, 3),
+        )
         idx = {(r["asset"], r["pointer"]): r for r in c["translations"]}
         for r in self.rows:
             self.assertEqual(idx[(r["asset"], r["pointer"])]["en"], r["en"])
