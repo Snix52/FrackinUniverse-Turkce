@@ -120,6 +120,22 @@ class AuditVisibilityTests(unittest.TestCase):
             "biomes/surface/eden.biome", "/name"
         ))
 
+    def test_liquid_description_metadata_is_prefix_excluded(self):
+        self.assertIn("liquids/", audit.AUDIT_EXCLUDED_FIELDS)
+        self.assertIn("/description", audit.AUDIT_EXCLUDED_FIELDS["liquids/"])
+        self.assertTrue(audit.audit_excluded_candidate(
+            "liquids/blood.liquid", "/description"
+        ))
+        self.assertTrue(audit.audit_excluded_candidate(
+            "liquids/liquidnitrogen.liquid", "/description"
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "items/liquids/liquidblood.liqitem", "/description"
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "liquids/blood.liquid", "/name"
+        ))
+
     def test_sbvn_option_labels_are_visible_but_scene_targets_are_not(self):
         data = {
             "scenes": {

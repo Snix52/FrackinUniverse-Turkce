@@ -635,3 +635,12 @@
 - Bu nedenle yalnız `biomes/` asset ailesindeki `/friendlyName` pointerı audit confirmed kapsamından çıkarılır.
 - Kural global değildir; başka asset türlerindeki `friendlyName` alanları kendi runtime bağlamına göre değerlendirilmeye devam eder.
 - Oyuncunun cockpit/navigasyon ekranında gördüğü gezegen ve dünya adları ayrı görünür kaynaklardan yerelleştirilir; daha önce çevrilmiş cockpit metinleri etkilenmez.
+
+### v0.47.0 - Bitkiler ve liquid metadata denetimi
+
+- `plants/` kökündeki 66 canlı assette 170 oyuncuya gösterilen alan yerelleştirildi: `description`, `shortdescription`, `floranDescription`, `glitchDescription`.
+- Bitki teknik adları, dosya yolları ve worldgen kimlikleri değiştirilmedi.
+- Proje terminolojisi yeniden kullanıldı: **Aether**, **Kan Taşı**, **Yağmur Ormanı**, **Kükürtlü**, **Gelgit Suları**, **Jelatinimsi**.
+- Floran inceleme repliklerinde tıslama ve kısa/ilkel söyleyiş; Glitch repliklerinde robotik duygu/işlev önekleri korunur.
+- `liquids/*.liquid /description` alanları normal oyuncu envanter açıklaması değildir. Görünür sıvı eşya metinleri `items/liquids/*.liqitem` üzerinden gelir; FU runtime taramasında liquid-config description alanını ekrana basan bir bağ bulunmadı.
+- Bu nedenle yalnız `liquids/` asset ailesindeki `/description` pointerı audit confirmed kapsamından çıkarılır. `.liqitem` açıklamaları bu kuraldan etkilenmez.
