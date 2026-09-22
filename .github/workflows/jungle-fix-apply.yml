@@ -3,6 +3,7 @@ name: jungle terminology cleanup
 # retry: v030-schema-2
 # retry: player-facing-scan
 # retry: test-indent
+# retry: reuse-locked-test
 on:
   push:
     branches: [fix/jungle-terminology]
@@ -143,22 +144,14 @@ jobs:
           text=qa_test.read_text(encoding='utf-8')
           text=text.replace("self.assertEqual(result['locked_terms'], 506)","self.assertEqual(result['locked_terms'], 507)")
           text=text.replace("self.assertGreaterEqual(len(engine.exact), 506)","self.assertGreaterEqual(len(engine.exact), 507)")
-          needle='    def test_locked_wrong_variant_exact_and_in_sentence(self):\n'
-          test = (
-              "    def test_jungle_terminology_is_locked_and_cangil_cannot_return(self):\\n"
-              "        engine = qa.Terminology(self.terms)\\n"
-              "        engine.validate(row(\\\"Jungle\\\", \\\"Tropik Orman\\\"))\\n"
-              "        for wrong in (\\\"Cangıl\\\", \\\"Cangil\\\"):\\n"
-              "            with self.subTest(wrong=wrong), self.assertRaises(ValueError):\\n"
-              "                engine.validate(row(\\\"Jungle\\\", wrong))\\n"
-              "        self.assertFalse(any(\\\"cangıl\\\" in r[\\\"tr\\\"].casefold() or \\\"cangil\\\" in r[\\\"tr\\\"].casefold()\\n"
-              "                             for r in self.rows))\\n"
-              "\\n"
-          )
-          if 'test_jungle_terminology_is_locked' not in text:
-              if needle not in text:
-                  raise ValueError('QA insertion point missing')
-              text=text.replace(needle,test+needle,1)
+          old_cases="for en, tr in [('Arc Smelter', 'Ark Eritici'), ('Build an Arc Smelter.', 'Bir Ark Eritici üret.')]:"
+          new_cases="for en, tr in [('Arc Smelter', 'Ark Eritici'), ('Build an Arc Smelter.', 'Bir Ark Eritici üret.'), ('Jungle', 'Cangıl'), ('Jungle', 'Cangil')]:"
+          if old_cases not in text:
+              raise ValueError('LOCKED wrong-variant test insertion point missing')
+          text=text.replace(old_cases,new_cases,1)
+          canonical="        engine.validate(row('Build an Arc Smelter.', 'Bir Ark Ergitici üret.'))"
+          if "engine.validate(row('Jungle', 'Tropik Orman'))" not in text:
+              text=text.replace(canonical,canonical+"\n        engine.validate(row('Jungle', 'Tropik Orman'))",1)
           qa_test.write_text(text,encoding='utf-8')
 
           readme=ROOT/'README.md'
