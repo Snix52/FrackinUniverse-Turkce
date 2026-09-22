@@ -1,32 +1,85 @@
 # Frackin' Universe Türkçe
 
-Frackin' Universe'ü Türkçe oynamak isteyenler için hazırlanan gayriresmî yerelleştirme projesi.
+Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
 
-**Güncel sürüm:** v0.30 Beta  
+Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
+
+**Güncel sürüm:** v0.45.0 Beta  
 **Hedef FU sürümü:** 6.5.8  
-**Durum:** Statik kontroller tamamlandı. Oyun içi LQA, font ve taşma kontrolleri devam ediyor.
+**Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
-Bu çalışma henüz FU'nun tamamını çevirmiyor. Şu an **6.016 yapılandırılmış oyuncu metni** ve **15 Lua arayüz metni** olmak üzere toplam **6.031 görünür metin birimi** Türkçeleştirilmiş durumda.
+## Güncel durum
+
+v0.45.0 Beta itibarıyla:
+
+- **8.024** yapılandırılmış oyuncu metni
+- **55** görünür Lua/script metni
+- **8.079** toplam yerelleştirilmiş görünür birim
+- **2.276** patch asset
+- **6** raw override asset
+- **2.282** toplam hedef asset
+- Statik QA: **PASS**
+- Pinned FU source validation: **PASS**
+- ZIP bütünlüğü: **PASS**
+- Kurulum ağacı / ZIP eşleşmesi: **PASS**
+- Oyun içi LQA: **NOT TESTED**
+
+Güncel doğrulanmış paket:
+
+`dist/FU_Turkce_v0.45.0_Beta.zip`
+
+Son doğrulanmış paket SHA-256:
+
+`a947f0233753e34d7c2bd3673025c52d55e3c39d9d6032a13a5afe80f4029083`
+
+Ayrıntılı ve makine tarafından üretilen güncel build kanıtı: [dist/build-evidence.json](dist/build-evidence.json)
 
 ## Neler Türkçe?
 
-Şu anki kapsamın ana parçaları:
+Projenin tamamlanan ana kapsamları arasında şunlar bulunuyor:
 
-- Ana araştırma ağaçları ve ilgili arayüz metinleri
-- Tutorial, Science, Outpost, Battle, Other ve BYOS tarafındaki erişilebilir görev zincirleri
-- Görevlerde doğrudan kullanılan eşya ve makine adları
-- Üretim makineleri ve seçili işlevsel dünya nesneleri
-- Erişilebilir `items/generic/crafting` malzemeleri
-- Zırh ve Silahlar araştırma ağacına bağlı geniş silah ve zırh kapsamı
-- Başlangıç mesajları ve seçili UI metinleri
+- Ana araştırma sistemleri ve araştırma arayüzleri
+- Tutorial ve Science görev zincirleri
+- Outpost görevleri ve bağlı görev içerikleri
+- Battle, Other, BYOS ve erişilebilir diğer görev aileleri
+- Görevlerde kullanılan eşya, malzeme ve makine adları
+- Üretim makineleri, tezgâhlar ve işlevsel dünya nesneleri
+- Tarım, kimya, mühendislik ve güç sistemlerinin önemli bölümleri
+- Geniş silah ve zırh kapsamı
+- Başlangıç telsiz mesajları
+- SAIL, görev terminali, üretim ve araştırma arayüzlerinin önemli bölümleri
+- Windowconfig tabanlı canlı üretim, dükkân ve yardımcı paneller
+- Pet House ve bağlı görünür arayüz metinleri
+- MetaGUI tema metinleri ve doğrulanmış stat ekranı etiketleri
 
-Kapsam genişlemeye devam ediyor. Bir dosyanın kaynakta bulunması tek başına yeterli sayılmıyor; oyuncunun gerçekten erişebildiği içerik mümkün olduğunca görev, tarif, araştırma, NPC veya dünya bağlantıları üzerinden doğrulanıyor.
+Bir dosyanın FU kaynak ağacında bulunması tek başına çeviri gerekçesi sayılmıyor. Oyuncuya gerçekten görünen içerik mümkün olduğunca görev, tarif, araştırma, nesne, NPC, script veya runtime bağlantıları üzerinden doğrulanıyor.
+
+## Tamamlanan audit kategorileri
+
+Otomatik doğrulanan kalan kapsam açısından:
+
+- **Arayüz:** 0 confirmed alan
+- **Görevler:** 0 confirmed alan
+
+Bu, oyunda artık hiçbir İngilizce arayüz veya görev metni kalmadığı anlamına gelmez. Review havuzu, Lua literal incelemeleri ve oyun içi LQA ayrı iş sınıflarıdır. Otomatik auditin kesin olarak doğruladığı borç bu iki kategoride kapatılmıştır.
+
+## Sıradaki çalışma
+
+v0.46 için sıradaki dar paket:
+
+**Irklar ve SAIL/AI**
+
+- 167 asset
+- 262 doğrulanmış alan
+- 247 benzersiz kaynak metin
+
+Bu grup çevrilmeden önce species/raceeffect içerikleri ile gerçekten görünür SAIL/AI metinleri runtime bağlamına göre ayrılacak. Teknik stat, ID ve sistem alanları çeviri kapsamına alınmayacak.
 
 ## Kurulum
 
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
-3. Güncel beta paketini çıkar.
+3. [Güncel beta paketini](dist/FU_Turkce_v0.45.0_Beta.zip) indirip çıkar.
 4. İçindeki `FU_Turkce` klasörünü Starbound'un `mods` klasörüne kopyala.
 5. Son yol şu şekilde görünmeli:
 
@@ -36,23 +89,29 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
-Repository içindeki `FU_Turkce/` kurulum ağacı ve `dist/FU_Turkce_v0.30.0_Beta.zip` aynı CI derlemesinden üretilir ve birlikte güncellenir. Çeviri kataloğu değiştiğinde ana CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini gerçek kaynak olarak checkout edip tam kaynak doğrulaması yapmadan paket üretmez.
+Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.45.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
 
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 
 ## Çeviri yaklaşımı
 
-Amaç İngilizce cümleleri tek tek Türkçeye çevirmek değil, oyunun sistemlerini Türkçe olarak takip edilebilir hâle getirmek.
+Projenin temel hedefi oyuncuya "birileri modu çevirmiş" hissi vermek değil, "bu modun Türkçe desteği varmış" hissi vermektir.
 
-Bu yüzden özellikle şunlara dikkat ediliyor:
+Bu nedenle:
 
-- Aynı eşya, makine ve sistem adı her yerde aynı kalmalı.
-- Görevde yazan ad, envanter ve üretim menüsündeki adla uyuşmalı.
-- JSON key'leri, ID'ler, asset yolları, placeholder'lar ve biçimlendirme kodları korunmalı.
-- UI kısa ve anlaşılır, görev hedefleri doğrudan, diyaloglar ise karakterin tonuna uygun olmalı.
-- Bağlamı belirsiz terimler tahmin edilmek yerine ayrıca kontrol edilmeli.
+- Aynı eşya, makine ve sistem adı her yerde aynı tutulur.
+- Görevdeki ad ile envanter ve üretim menüsündeki ad eşleştirilir.
+- JSON key'leri, ID'ler, asset yolları ve teknik referanslar çevrilmez.
+- Placeholder'lar, renk kodları ve biçimlendirme yapıları korunur.
+- UI metinleri kısa ve işlevsel tutulur.
+- Görev hedefleri doğrudan ve takip edilebilir yazılır.
+- Diyaloglarda karakter tonu korunur.
+- Bilimsel kavramlarda doğru Türkçe terminoloji tercih edilir.
+- Bağlamı belirsiz FU terimleri tahmin edilmez.
+- Gereksiz dosya yeniden biçimlendirmesi yapılmaz; minimum diff korunur.
 
 Projenin dil ve teknik kuralları:
+
 - [Çeviri standardı](docs/STYLE_GUIDE.md)
 - [Terminoloji](docs/TERMINOLOGY.md)
 - [Karar kaydı](docs/DECISIONS.md)
@@ -60,28 +119,42 @@ Projenin dil ve teknik kuralları:
 - [Otomatik doğrulama ve paket kanıtı](docs/QA_PIPELINE.md)
 - [Manuel oyun içi LQA](docs/LQA_CHECKLIST.md)
 
-## Geliştirme notu
+## QA yaklaşımı
 
-Bu proje tek kişi tarafından yürütülüyor. Otomasyon ve yapay zekâ araçları büyük iş yükünü yönetmek için yardımcı araç olarak kullanılıyor; terminoloji, bağlam, patch yapısı ve QA sonuçları proje kurallarına göre ayrıca kontrol ediliyor.
+Statik QA; diğer kontrollerin yanında şunları denetler:
 
-Kısacası amaç otomatik çeviri yığını çıkarmak değil, İngilizce bilmeden oynanabilecek tutarlı bir Türkçe FU deneyimi oluşturmak.
+- Kaynak metin ve provenance eşleşmeleri
+- JSON/Patch yapısı
+- Placeholder bütünlüğü
+- Renk ve kontrol kodları
+- Teknik alanların korunması
+- Terminoloji kuralları
+- Boş veya yinelenen çeviri alanları
+- Paket bütünlüğü
+- Kurulum ağacı ile ZIP eşleşmesi
 
-## Test durumu
+Ancak dosyada doğru görünen bir metin otomatik olarak oyun içinde doğru kabul edilmez.
 
-Statik QA; kaynak eşleşmeleri, patch yapısı, placeholder'lar, biçimlendirme kodları, teknik alanlar ve terminoloji gibi kontrolleri kapsıyor.
-
-Buna rağmen statik kontrol tek başına yeterli değil. Oyun içinde özellikle şu noktaların denenmesi gerekiyor:
+Manuel LQA aşamasında özellikle şunlar kontrol edilmelidir:
 
 - Türkçe karakter ve font görünümü
-- Metin taşmaları
-- Görev akışı
-- Görev, eşya ve üretim adı eşleşmeleri
+- Metin taşmaları ve kesilmeler
+- Görev akışları
+- Görev, eşya, makine ve üretim adı eşleşmeleri
 - NPC ve ekran bağlamları
-- Renkler, satır sonları ve buton metinleri
+- Renkler ve satır sonları
+- Buton ve panel boyutları
+- İngilizce bilmeden görev ve üretim zincirinin takip edilip edilemediği
 
-Bu yüzden proje hâlâ **Beta** olarak işaretleniyor.
+Bu nedenle proje hâlâ **Beta** durumundadır.
 
-Her başarılı CI paketinde güncel kaynak commit, sabitlenmiş FU commit, ZIP boyutu, SHA-256 ve Git blob SHA bilgileri `dist/build-evidence.json` dosyasına otomatik yazılır.
+## Geliştirme
+
+Proje tek kişi tarafından yürütülüyor. Otomasyon ve yapay zekâ araçları büyük kapsamı yönetmek, kaynak bağlarını doğrulamak ve QA kontrollerini çalıştırmak için yardımcı olarak kullanılıyor.
+
+Üretilen metinler yalnızca gramer düzgünlüğüne göre kabul edilmiyor. Terminoloji, runtime bağlamı, teknik güvenlik ve oyuncunun sistemi takip edip edemediği ayrıca değerlendiriliyor.
+
+Güncel çalışma checkpoint'i: [FU_SESSION_CHECKPOINT.md](FU_SESSION_CHECKPOINT.md)
 
 ## Kaynak ve lisans
 
@@ -98,4 +171,11 @@ Bir hata bulursan mümkünse şunları birlikte paylaş:
 - `Starbound/storage/starbound.log`
 - Kullandığın FU Türkçe sürümü
 
-Özellikle farklı çevrilmiş aynı eşya adları, İngilizce kalmış görünür metinler ve görevde söylenen şeyin oyunda bulunamaması en yüksek öncelikli hatalar arasında.
+Özellikle şu sorunlar yüksek önceliklidir:
+
+- Aynı eşyanın veya makinenin farklı adlarla çevrilmesi
+- İngilizce kalmış görünür oyuncu metinleri
+- Görevde istenen şeyin Türkçe adıyla oyunda bulunamaması
+- Yanlış yönlendiren görev metinleri
+- Bozuk placeholder, renk kodu veya biçimlendirme
+- UI taşması, kesilmesi veya okunamayan Türkçe karakterler
