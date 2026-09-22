@@ -24,7 +24,7 @@ class V041Tests(unittest.TestCase):
     def test_manifest_scope_is_exact(self):
         self.assertEqual(self.manifest["translation_version"], "0.41.0-beta")
         self.assertEqual(len(self.rows), 245)
-        self.assertEqual(len({(r["asset"], r["pointer"]) for r in self.rows}), 250)
+        self.assertEqual(len({(r["asset"], r["pointer"]) for r in self.rows}), 245)
         self.assertEqual(Counter(r["asset"] for r in self.rows), {
             CONFIG: 14,
             TEXTS: 183,

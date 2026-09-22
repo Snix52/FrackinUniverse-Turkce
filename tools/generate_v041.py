@@ -40,7 +40,7 @@ def main():
         raise ValueError("v0.41 sürüm bilgisi bozuk")
     if len(rows) != 245:
         raise ValueError(f"v0.41 alan sayısı değişti: {len(rows)} != 245")
-    if len({(r["asset"], r["pointer"]) for r in rows}) != 250:
+    if len({(r["asset"], r["pointer"]) for r in rows}) != 245:
         raise ValueError("v0.41 manifestinde yinelenen alan var")
 
     parsed = {
