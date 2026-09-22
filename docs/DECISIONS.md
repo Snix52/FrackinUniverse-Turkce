@@ -627,3 +627,11 @@
 - Oyuncuya görünen `Visit Nightfort` SAIL metni **Gece Hisarı'nı Ziyaret Et** olarak yerelleştirilir.
 - `Nightfort` için oyuncu-yüzü kanıt yalnız SAIL adında bulunduğundan, İngilizce biçimin lore açısından zorunlu olduğu kabul edilmedi.
 - Teknik `missionName: nightfort`, `missionWorld: nightfort`, instance/dungeon anahtarları ve asset yolları değiştirilmez.
+
+### v0.47 - Biome friendlyName audit kararı
+
+- `biomes/**/*.biome` içindeki `/friendlyName` alanları normal oyuncu akışında görünür çeviri metni olarak doğrulanmadı.
+- Aynı alanda `extraskymission` gibi teknik/dummy değerlerin bulunması, bu anahtarın tek başına görünürlük kanıtı olmadığını gösterir.
+- Bu nedenle yalnız `biomes/` asset ailesindeki `/friendlyName` pointerı audit confirmed kapsamından çıkarılır.
+- Kural global değildir; başka asset türlerindeki `friendlyName` alanları kendi runtime bağlamına göre değerlendirilmeye devam eder.
+- Oyuncunun cockpit/navigasyon ekranında gördüğü gezegen ve dünya adları ayrı görünür kaynaklardan yerelleştirilir; daha önce çevrilmiş cockpit metinleri etkilenmez.

@@ -342,3 +342,20 @@ Oyun içi LQA ayrı bir aşamadır.
 - Teknik `nightfort` mission/world/dungeon kimlikleri aynen korunur.
 - Katalog sürümü: 0.46.3-beta.
 - Oyun içi LQA: NOT TESTED.
+
+## v0.47 başlangıç: biome friendlyName audit düzeltmesi
+- En güncel main auditinde **Biyom, zindan ve dünya sistemleri** kategorisi başlangıçta **1.028 asset / 2.240 confirmed alan** gösteriyordu.
+- Dar v0.47 ilk grup olarak yalnız `biomes/` kökü incelendi: **288 asset / 288 alan / 276 benzersiz kaynak metin**.
+- 288 alanın tamamı `/friendlyName` idi. FU kaynağında `extraskymission`, `extraoceanfloormission`, `extraswampmission` gibi teknik/dummy değerlerin de aynı alanda bulunması ve FU runtime kodunda bu metadata için görünür UI bağı bulunmaması nedeniyle oyuncu çeviri borcu sayılmadı.
+- Starbound biome şemasındaki `friendlyName` normal oyun UI metni olarak doğrulanamadı; oyuncunun navigasyonda gördüğü gezegen/biyom adları ayrı cockpit/world metinlerinden geliyor.
+- Audit politikası kör global `friendlyName` dışlaması yapmaz. Yalnız **`biomes/` prefix + `/friendlyName`** kombinasyonu `AUDIT_EXCLUDED_FIELDS` üzerinden dışlanır.
+- `audit_excluded_candidate` klasör-prefix kurallarını destekleyecek biçimde genişletildi; başka asset ailelerindeki `friendlyName` alanları etkilenmez.
+- Regresyon testi iki gerçek biome örneğini dışlar ve biome dışındaki `/friendlyName` alanının dışlanmadığını doğrular.
+- Pinned FU 6.5.8 doğrulama runı **35759299914 / SUCCESS**:
+  - `biomes/` confirmed: **0 asset / 0 alan**
+  - Biyom, zindan ve dünya sistemleri: **740 asset / 1.952 confirmed alan**
+  - genel confirmed: **12.452 asset / 50.298 alan**
+  - review havuzu değişmedi: **620 asset / 4.331 alan**
+- Bu tur çeviri eklemedi; paket sürümü **0.46.3-beta** olarak kalır.
+- Sonraki dar başlangıç: aynı kategoride gerçek oyuncu metni olma ihtimali yüksek olan **plants + liquids** havuzunu ayrı turda sınıflandır. `tiles/` (641 asset / 1.763 alan) tek parçada ele alınmayacak.
+- Oyun içi LQA: **NOT TESTED**.

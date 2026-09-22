@@ -104,6 +104,22 @@ class AuditVisibilityTests(unittest.TestCase):
         self.assertFalse(audit.audit_excluded_candidate(asset, "/gui/windowtitle/title"))
         self.assertFalse(audit.audit_excluded_candidate(asset, "/displayOres/copper/displayName"))
 
+    def test_biome_friendly_name_metadata_is_prefix_excluded(self):
+        self.assertIn("biomes/", audit.AUDIT_EXCLUDED_FIELDS)
+        self.assertIn("/friendlyName", audit.AUDIT_EXCLUDED_FIELDS["biomes/"])
+        self.assertTrue(audit.audit_excluded_candidate(
+            "biomes/surface/eden.biome", "/friendlyName"
+        ))
+        self.assertTrue(audit.audit_excluded_candidate(
+            "biomes/surface/extraskymission.biome", "/friendlyName"
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "interface/other.config", "/friendlyName"
+        ))
+        self.assertFalse(audit.audit_excluded_candidate(
+            "biomes/surface/eden.biome", "/name"
+        ))
+
     def test_sbvn_option_labels_are_visible_but_scene_targets_are_not(self):
         data = {
             "scenes": {
