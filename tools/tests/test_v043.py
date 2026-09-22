@@ -72,7 +72,7 @@ class V043Tests(unittest.TestCase):
             self.assertEqual(row["qa"].get("source_patch"),"interface/scripted/mechassembly/mechassemblygui.config.patch")
 
     def test_signed_numbers_are_preserved(self):
-        signed=re.compile(r"[+-]\\s*%?\\s*\\d+(?:[.,]\\d+)?")
+        signed=re.compile(r"[+-]\s*%?\s*\d+(?:[.,]\d+)?")
         normalize=lambda values: sorted(x.replace(" ","").replace("%","").replace(",",".") for x in values)
         for row in self.rows:
             self.assertEqual(normalize(signed.findall(row["en"])),normalize(signed.findall(row["tr"])),row["asset"]+row["pointer"])
