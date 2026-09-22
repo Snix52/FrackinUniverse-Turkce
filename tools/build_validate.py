@@ -177,6 +177,8 @@ _V041_MANIFEST = json.loads(
 V041_SPACE_STATION_FIELDS = {(row['asset'], row['pointer']) for row in _V041_MANIFEST['translations']}
 if len(V041_SPACE_STATION_FIELDS) != len(_V041_MANIFEST['translations']):
     raise ValueError('v0.41 Space Station manifestinde yinelenen alan var')
+if len(V041_SPACE_STATION_FIELDS) != 274:
+    raise ValueError('v0.41 Space Station manifesti 274 structured alan içermeli')
 
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
