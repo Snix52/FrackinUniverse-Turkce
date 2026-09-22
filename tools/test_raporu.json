@@ -1,29 +1,29 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-22T07:48:53.254543+00:00",
-  "workflow_run_id": "35701346132",
-  "source_commit": "aa3a3350468a18ab99ed1090d25de2752f4eb83a",
-  "translation_source_commit": "aa3a3350468a18ab99ed1090d25de2752f4eb83a",
-  "translation_version": "0.44.0-beta",
+  "generated_at_utc": "2026-09-22T08:07:03.868948+00:00",
+  "workflow_run_id": "35702963628",
+  "source_commit": "cfbb01cedbef472a29008e5a53ce684ad16a41c7",
+  "translation_source_commit": "cfbb01cedbef472a29008e5a53ce684ad16a41c7",
+  "translation_version": "0.45.0-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 7995,
-    "patch_assets": 2258,
+    "structured_fields": 8024,
+    "patch_assets": 2276,
     "raw_override_assets": 6,
     "raw_script_strings": 55
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.44.0_Beta.zip",
-    "bytes": 1291714,
-    "sha256": "c50ee3f95c3ca04dbd380fe4796508c072758dfb020172a2fd060aa1abc2e769",
-    "git_blob_sha": "78c345ab52f74761898102cacfd381326b1d61bd",
+    "path": "dist/FU_Turkce_v0.45.0_Beta.zip",
+    "bytes": 1302277,
+    "sha256": "ef426c4fac78f82113f469d6ec5599aebb427e6500bbaafad6541f722df5f9cb",
+    "git_blob_sha": "13caa9247efef98e0e3b74ea5a901ea36c048e85",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "daf9bcb772710b11237eaf15d70ea113e31d28153377d9dd1c4ebb60a51eb528",
-  "catalog_sha256": "a361bd283f40b5f0275b6059c2023bb526bb4654450ef00f8af888f41e27a8cc",
+  "install_tree_sha256": "cff5cdf28faf4c25ac92321ae0e5632cbd9f878a16036dd21a58f38b3e5b6a51",
+  "catalog_sha256": "f19587621964b03205f064e324c948d1859d8f1ad8246dfd2e5a5f386684b995",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -32,12 +32,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 7995,
-  "patched_assets": 2258,
+  "translated_display_fields": 8024,
+  "patched_assets": 2276,
   "raw_override_assets": 6,
   "raw_script_display_strings": 55,
-  "total_localized_display_units": 8050,
-  "target_assets_total": 2264,
+  "total_localized_display_units": 8079,
+  "target_assets_total": 2282,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -110,7 +110,8 @@
     "v0.41 Space Station arayüzü": 245,
     "v0.42 işlevsel arayüzler ve Pet House": 260,
     "v0.43 canlı arayüzler": 257,
-    "v0.44 arayüz kapanışı": 13
+    "v0.44 arayüz kapanışı": 13,
+    "v0.45 görev kapanışı": 29
   },
   "checks": {
     "static_qa": "PASS",
@@ -2048,6 +2049,267 @@
         "layered_source": true,
         "source_patch": "interface/stats/stats.config.patch",
         "reason": "FU bu vanilla stats.config hedefini pinned interface/stats/stats.config.patch katmanıyla genişletiyor; hedef tam stats.config FU kaynak ağacında bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/other/transponder.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/other/transponder.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/mechunlock.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/mechunlock.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/mechupgrade1.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/mechupgrade1.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/outpostclue.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/outpostclue.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/illegalshipupgrade2.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/illegalshipupgrade2.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/illegalshipupgrade3.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/illegalshipupgrade3.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/illegalshipupgrade4.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/illegalshipupgrade4.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/illegalshipupgrade5.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/illegalshipupgrade5.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/shipupgrade2.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/shipupgrade2.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/shipupgrade3.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/shipupgrade3.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/shipupgrade4.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/shipupgrade4.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/shipupgrade/shipupgrade5.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/shipupgrade/shipupgrade5.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/techscientist4.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/techscientist4.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/techscientist5.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/techscientist5.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/techscientist5.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/techscientist5.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/techscientist6.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/techscientist6.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/outpost/techscientist6.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/outpost/techscientist6.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/scriptConfig/BYOSCompletionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/scriptConfig/descriptions/collectRepairItem",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/scriptConfig/descriptions/findGate",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/scriptConfig/descriptions/makeTable",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/protectorate.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/protectorate.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/protectorate.questtemplate",
+      "pointer": "/scriptConfig/descriptions/graduate",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/protectorate.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/protectorate.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/protectorate.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/shiprepair.questtemplate",
+      "pointer": "/completionText",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/shiprepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/shiprepair.questtemplate",
+      "pointer": "/scriptConfig/descriptions/repairShip",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/shiprepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/shiprepair.questtemplate",
+      "pointer": "/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/shiprepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
+      }
+    },
+    {
+      "asset": "quests/story/shiprepair.questtemplate",
+      "pointer": "/title",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/shiprepair.questtemplate.patch",
+        "reason": "FU bu vanilla görev metnini pinned .questtemplate.patch katmanında değiştiriyor; hedef vanilla questtemplate FU kaynak ağacında tam dosya olarak bulunmuyor."
       }
     }
   ]
