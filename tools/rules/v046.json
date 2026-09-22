@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "description": "v0.46 Irklar ve SAIL/AI runtime visibility classification.",
+  "rules": {
+    "AUDIT_CORE_PLAYABLE_SPECIES_ASSETS": {
+      "type": "set",
+      "value": [
+        "species/apex.species",
+        "species/avian.species",
+        "species/elduukhar.species",
+        "species/fenerox.species",
+        "species/floran.species",
+        "species/fukirhos.species",
+        "species/fumantizi.species",
+        "species/fupeglaci.species",
+        "species/glitch.species",
+        "species/human.species",
+        "species/hylotl.species",
+        "species/juux.species",
+        "species/nightar.species",
+        "species/novakid.species",
+        "species/radien.species",
+        "species/shadow.species",
+        "species/skath.species",
+        "species/slimeperson.species",
+        "species/thelusian.species",
+        "species/veluu.species"
+      ]
+    },
+    "V046_TECHNICAL_FALSE_POSITIVE_FIELDS": {
+      "type": "dict_of_sets",
+      "value": {
+        "species/irken.raceeffect": [
+          "/envEffects/0/scripts/0/args/label"
+        ],
+        "species/skelekin.raceeffect": [
+          "/liquidEffects/0/scripts/0/args/label"
+        ]
+      }
+    }
+  }
+}

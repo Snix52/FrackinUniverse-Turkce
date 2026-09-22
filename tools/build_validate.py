@@ -207,6 +207,15 @@ V045_QUEST_PATCH_FIELDS = {(row['asset'], row['pointer']) for row in _V045_MANIF
 if len(V045_QUEST_PATCH_FIELDS) != len(_V045_MANIFEST['translations']):
     raise ValueError('v0.45 görev kapanış manifestinde yinelenen alan var')
 
+_V046_MANIFEST = json.loads(
+    Path(__file__).with_name('v046_translations.json').read_text(encoding='utf-8')
+)
+V046_RACES_SAIL_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V046_MANIFEST['translations']
+}
+if len(V046_RACES_SAIL_FIELDS) != len(_V046_MANIFEST['translations']):
+    raise ValueError('v0.46 Irklar/SAIL manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -377,6 +386,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V046_RACES_SAIL_FIELDS:
+        return True
     if (a,p) in V045_QUEST_PATCH_FIELDS:
         return True
     if (a,p) in V044_FINAL_UI_FIELDS:
@@ -670,11 +681,64 @@ def main():
             if read_at(result,r['pointer'])!=r['tr']:raise AssertionError(a+r['pointer'])
         if args.source_dir:
             source=args.source_dir/a
-            if source.is_file():
+            v046_group = all(
+                (a, r['pointer']) in V046_RACES_SAIL_FIELDS
+                for r in rs
+            )
+            if v046_group:
+                # v0.46 aynı asset içinde base ve .patch kaynaklı görünür
+                # alanları birlikte içerebilir (Nightar bunun canlı örneği).
+                # Bu yüzden provenance asset bazında değil satır bazında
+                # doğrulanır.
+                direct_data = None
+                patch_cache = {}
+                for r in rs:
+                    if r.get('qa',{}).get('layered_source'):
+                        source_patch = r.get('qa',{}).get('source_patch')
+                        if not source_patch:
+                            raise ValueError('v0.46 layered source patch eksik: '+a+r['pointer'])
+                        patch_path = args.source_dir/source_patch
+                        if not patch_path.is_file():
+                            raise FileNotFoundError(patch_path)
+                        if source_patch not in patch_cache:
+                            patch_cache[source_patch] = parse_jsonc(
+                                patch_path.read_text(encoding='utf-8-sig')
+                            )
+                        found = None
+                        for source_op in patch_cache[source_patch]:
+                            if not isinstance(source_op,dict) or 'value' not in source_op:
+                                continue
+                            source_path = str(source_op.get('path',''))
+                            if source_path == r['pointer']:
+                                found = source_op['value']
+                                continue
+                            if source_path and r['pointer'].startswith(source_path+'/'):
+                                try:
+                                    found = read_at(
+                                        source_op['value'],
+                                        r['pointer'][len(source_path):]
+                                    )
+                                except (KeyError,IndexError,TypeError,ValueError):
+                                    pass
+                        if found != r['en']:
+                            raise ValueError(
+                                'v0.46 layered kaynak uyuşmazlığı: '+a+r['pointer']
+                            )
+                    else:
+                        if not source.is_file():
+                            raise FileNotFoundError(source)
+                        if direct_data is None:
+                            direct_data = parse_jsonc(
+                                source.read_text(encoding='utf-8-sig')
+                            )
+                        if read_at(direct_data,r['pointer']) != r['en']:
+                            raise ValueError(
+                                'v0.46 direct kaynak uyuşmazlığı: '+a+r['pointer']
+                            )
+            elif source.is_file():
                 simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
             elif all(r.get('qa',{}).get('layered_source') for r in rs):
-                # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
-                # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
+                # Eski katmanlı kapsamların kendi sürüm provenance testleri korunur.
                 pass
             else:
                 raise FileNotFoundError(source)

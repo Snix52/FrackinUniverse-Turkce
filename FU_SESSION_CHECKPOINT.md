@@ -288,3 +288,35 @@ Oyun içi LQA ayrı bir aşamadır.
 - Açık dış ayar: `main` için zorunlu PR/status rule yapılandırması bu bağlantının yazma araçlarıyla değiştirilemedi. CI işleri eklendi; GitHub sunucusunda zorunlu merge kuralı yapılandırıldığı iddia edilmez. Yayın botunun generated commit akışı korunarak ayrıca ele alınmalıdır.
 - Oyun içi LQA: **NOT TESTED**. Tricorder zemin etiketleri, Mech yakıt uyarıları, SAIL harfleri ve düzeltilen görev ekranları odaklı kontrol bekler.
 - Sonraki başlangıç: bu bakım paketinin build-evidence sürümünü kontrol et; ardından mevcut v0.46 Irklar ve SAIL/AI planından devam et. Ana kontrolü yeniden başlatma.
+
+
+## v0.46 Irklar ve SAIL/AI kaynak kapanışı
+- İlk audit havuzu: **167 asset / 262 confirmed alan / 247 benzersiz kaynak metin**.
+- Runtime sınıflandırması sonrası çekirdek canlı kapsam: **53 asset / 129 alan / 127 benzersiz kaynak metin**.
+  - SAIL/AI: **89 alan**
+  - çekirdek oynanabilir species: **40 alan / 20 ırk**
+- **105** üçüncü taraf oynanabilir ırk uyumluluk alanı çekirdek FU borcu sayılmadı; confirmed'dan review havuzuna taşındı.
+- İki teknik false positive confirmed kapsamdan çıkarıldı:
+  - `species/irken.raceeffect /envEffects/0/scripts/0/args/label`
+  - `species/skelekin.raceeffect /liquidEffects/0/scripts/0/args/label`
+- Çekirdek ırklar: Apex, Avian, Floran, Glitch, Human, Hylotl, Novakid, Fenerox, Shadow, Skath, Peglaci, Thelusian, Kirhos, X'i/Radien, Mantizi, Nightar, Eld'uukhar, Slimeperson, Vel'uu ve Pharitu/Juux.
+- Tür özel adları mevcut terminolojiye göre korunur; oyuncuya gösterilen açıklama, beslenme, avantaj, direnç, bağışıklık, çevre, silah ustalığı ve zayıflık metinleri Türkçeleştirildi.
+- SAIL/AI görev adları ve açıklamaları mevcut görev terminolojisiyle eşlendi; ör. **Sızma**, **Letheia Tesisi**, **Erchius Madencilik Tesisi**, **Bilim Karakolu**.
+- v0.46 provenance satır bazında doğrulanır. Nightar gibi aynı asset içinde base + `.patch` kaynaklı alanlar ayrı ayrı pinned kaynağa bağlanır.
+- QA sırasında yakalanıp düzeltilen iki format hatası:
+  - Kirhos açıklamasında `%Fiziksel` printf gibi algılanıyordu; `% Fiziksel` yapıldı.
+  - Vel'uu açıklamasında kaynakta olmayan `+13/+6` işaretleri kaldırıldı.
+- Doğrulama runı **35747010234 / SUCCESS**:
+  - **159/159** Python test yöntemi PASS
+  - `qa_integrity`: **11.116 katalog birimi / 52 raw birim / 506 LOCKED terim**
+  - v0.45 source gate PASS
+  - v0.46 source gate: **129 alan / 53 asset / 127 kaynak / 54 kaynak dokümanı**
+  - full pinned FU build PASS
+  - Remaining Scope Audit PASS
+  - **Irklar ve SAIL/AI confirmed borcu: 0 asset / 0 alan**
+  - audit sonrası genel confirmed: **12.740 asset / 50.586 alan**
+  - review: **620 asset / 4.331 alan**
+  - Lua review: **35 asset / 169 literal**
+- Test edilmiş kaynak commit: `a887a9647662318c6aa47939182c9516f3eb7150`. Kalıcı CI workflow güncellemeleri aynı çalışma dalında ayrıca eklendi; geçici v0.46 workflowları silindi.
+- Generated çıktı elle değiştirilmedi. v0.46 paket/evidence değeri main merge ve yayın buildinden sonra `dist/build-evidence.json` ile kanonikleşecektir.
+- Oyun içi LQA: **NOT TESTED**.
