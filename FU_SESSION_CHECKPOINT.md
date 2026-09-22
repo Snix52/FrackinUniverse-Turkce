@@ -35,7 +35,7 @@ Runtime referansı bulunmayan:
 - Pet House popup ve interactionType alanları audit'in otomatik havuzunda olmasa da Lua tarafından canlı gösterildiği için dahil edildi.
 - `groundPet.lua`, `techstation`, `shipPetType`, mod adı `Purchasable Pets` gibi teknik referanslar korunur.
 - `Buy`: Takas Et / Satın Al / İşe Al bağlamları Translation Memory'de açıkça ayrılır.
-- Craft → Üret; Forge → Döv; Smelt → Ergit; Mash → Mayşele; Distill → Damıt; Ferment → Fermente Et.
+- Craft → Üret; Forge → Döv; Smelt → Ergit; Distill → Damıt; Ferment → Fermente Et. `Mash` bağlama ayrılır: Meyve Presi → **Ez**, Mayşeleme Kazanı → **Mayşele**; ürün/kavram → **Mayşe**.
 - Bağlı nesne adlarıyla panel başlıkları eşitlendi.
 
 ## Hazır kaynak blobları

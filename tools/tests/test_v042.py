@@ -71,6 +71,7 @@ class V042Tests(unittest.TestCase):
         self.assertEqual(self.by[("interface/windowconfig/fu_anvil.config","/paneLayout/btnCraft/caption")]["tr"],"Birleştir")
         self.assertEqual(self.by[("interface/windowconfig/craftingslimecentrifuge.config","/paneLayout/btnCraft/caption")]["tr"],"Döv")
         self.assertEqual(self.by[("interface/windowconfig/fissionfurnace.config","/paneLayout/btnCraft/caption")]["tr"],"Ergit")
+        self.assertEqual(self.by[("interface/windowconfig/fruitpressnew.config","/paneLayout/btnCraft/caption")]["tr"],"Ez")
         self.assertEqual(self.by[("interface/windowconfig/mash.config","/paneLayout/btnCraft/caption")]["tr"],"Mayşele")
         self.assertEqual(self.by[("interface/windowconfig/distill.config","/paneLayout/btnCraft/caption")]["tr"],"Damıt")
         self.assertEqual(self.by[("interface/windowconfig/ferment.config","/paneLayout/btnCraft/caption")]["tr"],"Fermente Et")

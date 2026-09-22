@@ -553,7 +553,7 @@
 - Pet House Lua içindeki nesne açıklamasına eklenen `Spawns a` görünür parçası script mantığı değiştirilmeden source-locked ham çeviri olarak **Çağırdığı evcil hayvan:** biçiminde yerelleştirildi.
 - Exact path/runtime aramasında normal oyuncu akışına bağlantı bulunmayan yedi windowconfig v0.42 dışında bırakıldı: `craftingmech.config`, `extractionlab.config`, `fruitpress.config`, `kitchen.config`, `powerpress.config`, `samplingarray2.config`, `xenostation.config`. Dosyanın varlığı tek başına erişilebilirlik kanıtı sayılmadı.
 - `Buy` aynı kaynak metnin üç gerçek UI bağlamını taşıdığı için Translation Memory istisnası genişletildi: Arı Barınağı/radyo satıcılarında **Takas Et**, normal dükkânlarda **Satın Al**, Hiring Office'ta **İşe Al**.
-- Eylem etiketleri kısa ve işlevsel tutuldu: **Craft → Üret, Forge → Döv, Smelt → Ergit, Mash → Mayşele, Distill → Damıt, Ferment → Fermente Et**.
+- Eylem etiketleri kısa ve işlevsel tutuldu: **Craft → Üret, Forge → Döv, Smelt → Ergit, Distill → Damıt, Ferment → Fermente Et**. `Mash` ise bağlama ayrıldı: **Meyve Presi → Ez**, **Mayşeleme Kazanı → Mayşele**; ürün/kavram adı **Mayşe** olarak LOCKED kalır.
 - Panel başlıklarında kaynak configteki eski/alternatif ad yerine bağlı nesnenin oyuncuya zaten gösterilen onaylı Türkçe adı kullanıldı: **Murder-Twig'in Lezzetleri, Ruhun Mücevherleri, Kristal Füzyon İstasyonu, Lorewalker'ın Dükkânı, Sunum Tezgâhı, Orta Çağ Çalışma İstasyonu, Silene'nin Mineralleri**.
 - `Burger Fool`, `SuperPet`, `Starbucks`, `PROP PACK` gibi projede korunmuş marka/özel adlar korunur.
 - v0.42 structured alanlarının tamamı pinned FU commit `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında source-lock altındadır. Oyun içi panel genişliği, font ve bağlam LQA'sı ayrıca bekler.
