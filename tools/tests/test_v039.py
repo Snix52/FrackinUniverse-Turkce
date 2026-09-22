@@ -1,9 +1,11 @@
 import json
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 TOOLS = ROOT / "tools"
+sys.path.insert(0, str(TOOLS))
 ASSET = "interface/scripted/statWindow/statWindow.config"
 LUA_ASSET = "interface/scripted/statWindow/statWindow.lua"
 
@@ -58,6 +60,16 @@ class V039Tests(unittest.TestCase):
         self.assertEqual(len(tile_rows), 5)
         self.assertTrue(all("[Zemin]" in r["tr"] for r in tile_rows))
         self.assertTrue(all("[Tile]" not in r["tr"] for r in tile_rows))
+        # The historical generator must carry the same corrected text and QA,
+        # not reintroduce a stale hard-coded dictionary on regeneration.
+        from types import SimpleNamespace
+        import generate_v039 as generator
+        for row in rows:
+            candidate = SimpleNamespace(asset=row["asset"], pointer=row["pointer"], value=row["en"])
+            self.assertEqual(generator.translated_row(candidate), row)
+            candidate.value += "__SOURCE_DRIFT__"
+            with self.assertRaises(ValueError):
+                generator.translated_row(candidate)
 
     def test_runtime_racial_strings_are_translated(self):
         raw = json.loads((TOOLS / "raw_text_translations.json").read_text(encoding="utf-8"))

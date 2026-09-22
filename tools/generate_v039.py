@@ -8,7 +8,22 @@ ASSET = "interface/scripted/statWindow/statWindow.config"
 SECTION = "v0.39 ana Tricorder ve durum arayüzü"
 EXPECTED_FIELDS = 57
 EXPECTED_UNIQUE = 56
-TRANSLATIONS = json.loads(r'''{"Research":"Araştırma","GPS":"GPS","Codex":"Codex","Tech Equip":"Tech Donanımı","Tech Craft":"Tech Üretimi","Mech Gear":"Mech Donanımı","Mech Fuel":"Mech Yakıtı","Upgrade":"Yükselt","Adv. Stats":"Gelişmiş İstat.","Immunities":"Bağışıklıklar"," ^#bbbbbb;Accesses Stats, Research, Mechs and more.":" ^#bbbbbb;İstatistik, Araştırma, Mech ve daha fazlasına erişim."," ^#00eaff;Personal Tricorder^reset;":" ^#00eaff;Kişisel Tricorder^reset;"," ^#ffffff;Resistances^reset;":" ^#ffffff;Dirençler^reset;","^#E33FFF;Aether":"^#E33FFF;Aether","^#ffae00;Bee Sting":"^#ffae00;Arı Sokması","^#4BF3FD;Moderate Cold":"^#4BF3FD;Orta Dereceli Soğuk","^#4BF3FD;Lightning":"^#4BF3FD;Yıldırım","^#FDBE4B;Moderate Heat":"^#FDBE4B;Orta Dereceli Sıcaklık","^yellow;Moderate Radiation":"^yellow;Orta Dereceli Radyasyon","^#78f04f;Bio-Ooze":"^#78f04f;Biyo-Balçık","^#5B6177;Black Tar":"^#5B6177;Kara Katran","Breath":"Oksijensizlik","^#EA907E;Darkness":"^#EA907E;Karanlık","^#FFE149;Shock":"^#FFE149;Elektrik Şoku","^gray;Pressure":"^gray;Basınç","^#4BF3FD;Extreme Cold":"^#4BF3FD;Aşırı Soğuk","^#FDBE4B;Extreme Heat":"^#FDBE4B;Aşırı Sıcak","^yellow;Extreme Radiation":"^yellow;Aşırı Radyasyon","^#FDBE4B;Burning":"^#FDBE4B;Yanma","^green;Jungle [Tile]":"^green;Cangıl [Tile]","^brown;Mud [Tile]":"^brown;Çamur [Tile]","^#D1E160;Gas":"^#D1E160;Gaz","^gray;Gravity Rain":"^gray;Yerçekimi Yağmuru","^#FFEC84;Honey Slow":"^#FFEC84;Bal Yavaşlatması","^#4BF3FD;Freeze":"^#4BF3FD;Donma","^#4BF3FD;Ice [Tile]":"^#4BF3FD;Buz [Tile]","^#EA907E;Insanity":"^#EA907E;Delilik","^#C83E14;Lava":"^#C83E14;Lav","^#4BF3FD;Liquid Nitrogen":"^#4BF3FD;Sıvı Azot","^#4BF3FD;Nitrogen Freeze":"^#4BF3FD;Azot Donması","^#D1E160;Poisoning":"^#D1E160;Zehirlenme","^#78f04f;Proto-Poison":"^#78f04f;Proto-Zehir","^yellow;Pus":"^yellow;İrin","^yellow;Quick Sand":"^yellow;Batak Kum","^yellow;Radiation Burn":"^yellow;Radyasyon Yanığı","^orange;Sandstorm":"^orange;Kum Fırtınası","^#3F2E4D;Shadow Taint":"^#3F2E4D;Gölge Lekesi","^#61D13F;Slow (Slime)":"^#61D13F;Yavaşlama (Balçık)","^#61D13F;Slimed":"^#61D13F;Balçığa Bulanma","^#61D13F;Sticky Slime":"^#61D13F;Yapışkan Balçık","^#4BF3FD;Slush [Tile]":"^#4BF3FD;Sulu Kar [Tile]","^#4BF3FD;Snow [Tile]":"^#4BF3FD;Kar [Tile]","^gray;Stun":"^gray;Sersemletme","^#ffd800;Sulph. Acid":"^#ffd800;Sülfürik Asit","^#5B6177;Tar":"^#5B6177;Katran","^blue;Drowning":"^blue;Boğulma"}''')
+# Reuse the approved field manifest, including bound QA metadata. Historical
+# regeneration must not restore an obsolete second translation dictionary.
+APPROVED_ROWS = json.loads(
+    Path(__file__).with_name("v039_translations.json").read_text(encoding="utf-8")
+)["translations"]
+APPROVED = {(r["asset"], r["pointer"]): r for r in APPROVED_ROWS}
+TRANSLATIONS = {r["en"]: r["tr"] for r in APPROVED_ROWS}
+
+
+def translated_row(candidate):
+    from copy import deepcopy
+    approved = APPROVED.get((candidate.asset, candidate.pointer))
+    if approved is None or approved["en"] != candidate.value:
+        raise ValueError("v0.39 onaylı alan/kaynak uyuşmazlığı")
+    return deepcopy(approved)
+
 
 def remaining_rows(source: Path):
     translated, _ = audit.load_translations(Path(__file__).with_name("ceviriler.json"))
@@ -38,7 +53,7 @@ def main():
         "translation_version": "0.39.0-beta",
         "scope": "Ana Kişisel Tricorder penceresinin 13 sabit UI metni ve runtime bağışıklık listesindeki 44 durum adı; teknik alanlar korunur.",
         "translations": [
-            {"asset":r.asset,"pointer":r.pointer,"en":r.value,"tr":TRANSLATIONS[r.value],"section":SECTION}
+            translated_row(r)
             for r in rows
         ]
     }
