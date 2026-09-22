@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.43 canlı arayüz paketi hazırlandı; CI doğrulaması bekleniyor.**
+22 Eylül 2026 - **v0.43 canlı arayüz paketi tamamlandı ve doğrulandı.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
@@ -95,8 +95,47 @@ Oyun içi LQA ayrı bir aşamadır.
 - `<^yellow;Loading...^reset;>` görünür dekoratif UI metnidir; **Yükleniyor...** olarak çevrildi ve yalnız bu satır için belgeli kontrol-token QA istisnası kullanıldı.
 - Oyun içi LQA: **NOT TESTED**
 
-## v0.43 sonraki adım
-Build & QA ile Remaining Scope Audit sonuçlarını doğrula. CI yeşilse generated build/package çıktısını yenile ve checkpoint'i nihai sonuçlarla kapat.
+## v0.43 doğrulama sonucu
+Feature/fix zinciri:
+- `c8baefc` - v0.43 canlı arayüz paketi
+- `03d911a` - `Request All-1` işaretli sayı düzeltmesi
+- `d492e4b` - Mech assembly layered-source doğrulaması
+- `b259cd5` - işaretli sayı regresyon testi düzeltmesi
+- `f11154b` - MM upgrade layered-source doğrulaması
+- `6da59bb` - doğrulanmış build/package refresh
+
+Build evidence:
+- translation version: **0.43.0-beta**
+- structured fields: **7.982**
+- patch assets: **2.251**
+- raw override assets: **6**
+- raw script strings: **55**
+- static QA: **PASS**
+- pinned source validation: **PASS**
+- ZIP integrity: **PASS**
+- install-tree parity: **PASS**
+- package: `dist/FU_Turkce_v0.43.0_Beta.zip`
+- package sha256: `5ac74d7551570778a0031e3a58891369729a3aa35dd1b2c7e996eeebecd3c8d5`
+- Build & QA run: **35695710269 / SUCCESS**
+- Remaining Scope Audit run: **35695710287 / SUCCESS**
+- oyun içi LQA: **NOT TESTED**
+
+## v0.43 sonrası audit
+Kalan doğrulanmış **Arayüz** kapsamı:
+- **26 asset**
+- **90 alan**
+- **58 benzersiz kaynak metin**
+
+Genel audit:
+- kalan doğrulanmış kapsam: **13.034 asset / 51.306 alan**
+- review havuzu: **599 asset / 4.496 alan**
+- Lua inceleme havuzu: **35 asset / 171 literal**
+
+## Sonraki başlangıç noktası
+v0.44 için yalnız kalan **26 asset / 90 alanlık Arayüz artık havuzunu** ele al.
+Bu 90 alanı körlemesine çevirmeden önce runtime/fallback/dev ayrımını tamamla.
+Repo çapında yeniden keşif yapma; v0.43 final audit ve bu checkpoint'ten devam et.
+Oyun içi LQA ayrı bir aşamadır.
 
 
 ### v0.43 CI düzeltmesi
