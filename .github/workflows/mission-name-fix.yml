@@ -1,5 +1,6 @@
 name: mission display name audit fix
 # retry: test-dedent
+# retry: locked-count-policy
 on:
   push:
     branches: [fix/mission-display-names]
@@ -153,7 +154,7 @@ jobs:
           text=qa_test.read_text(encoding='utf-8')
           text=text.replace(
               "self.assertEqual(result['locked_terms'], 507)",
-              "self.assertEqual(result['locked_terms'], len(qa.Terminology(self.terms).exact))"
+              "self.assertEqual(result['locked_terms'], sum(t['status'] == 'LOCKED' for t in self.terms['terms']))"
           )
           text=text.replace(
               "self.assertGreaterEqual(len(engine.exact), 507)",
