@@ -558,3 +558,18 @@
 - `Burger Fool`, `SuperPet`, `Starbucks`, `PROP PACK` gibi projede korunmuş marka/özel adlar korunur.
 - v0.42 structured alanlarının tamamı pinned FU commit `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında source-lock altındadır. Oyun içi panel genişliği, font ve bağlam LQA'sı ayrıca bekler.
 
+
+
+## 2026-09-22 - v0.43 canlı arayüz paketi
+
+- v0.42 sonrası doğrulanmış Arayüz havuzu **95 asset / 347 alan / 200 benzersiz kaynak metin** idi.
+- Runtime bağlantısı dar biçimde doğrulanan **69 asset / 257 alan / 156 benzersiz metin** v0.43 kapsamına alındı.
+- Doğrudan runtime kanıtı bulunmayan **26 asset / 90 alan** tahminle çevrilmedi; ayrı artık/review turuna bırakıldı.
+- CDX chest ailesinde tekil config adıyla arama yeterli kanıt vermediği için aile/pattern kullanımı incelendi; `/interface/chests/cdx/chest...` ailesinin çok sayıda gerçek nesne tarafından kullanıldığı doğrulandı.
+- Fuel Refinery arayüz başlığı bağlı nesnenin kilitli adıyla **Yakıt Rafinerisi** olarak eşlendi.
+- `Racialise` düğmesi, kilitli Racialiser/Racializer -> **Irk Dönüştürücü** kararıyla uyumlu **Irka Dönüştür** eylemini kullanır.
+- `Repair` kaynak stringi bağlama ayrılır: gemi sınıfında **Onarım Gemisi**, araç onarım düğmesinde **Onar**.
+- Corpse Wagon panelindeki `Buy` normal satın alma eylemidir ve **Satın Al** kullanır; mevcut Takas Et / İşe Al bağlam ayrımları korunur.
+- `<^yellow;Loading...^reset;>` yapısındaki Loading metni oyuncuya görünürdür. Validator'ın genel `<...>` kontrol-token heuristiğine rağmen Türkçeleştirilir; sadece bu alan `allow_control_fix` ile belgelenir.
+- Teknik ID, key, asset yolu, placeholder ve biçimlendirme kodları değiştirilmez.
+- Oyun içi LQA bu statik/runtime doğrulamasının parçası değildir.

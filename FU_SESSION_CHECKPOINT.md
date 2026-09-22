@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.42 işlevsel arayüzler + Pet House tamamlandı ve doğrulandı.**
+22 Eylül 2026 - **v0.43 canlı arayüz paketi hazırlandı; CI doğrulaması bekleniyor.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
@@ -82,3 +82,18 @@ Genel audit:
 v0.43 için yalnız kalan **Arayüz** havuzundan devam et.
 Repo çapında yeniden keşif yapma; bu checkpoint ve son Remaining Scope Audit sonuçlarından devam et.
 Oyun içi LQA ayrı bir aşamadır.
+
+
+## v0.43 feature kapsamı
+- Kalan Arayüz havuzundan runtime bağlantısı doğrulanan: **69 asset / 257 alan / 156 benzersiz kaynak metin**
+- Kapsam dışı bırakılan şüpheli/artık grup: **26 asset / 90 alan**
+- CDX chest ailesi tekil string referansı yerine aile/pattern kullanımıyla canlı kabul edildi.
+- Doğrudan runtime kanıtı bulunmayan eski/fallback/dev adayları bu sürüme zorla alınmadı.
+- `Repair` bağlama ayrıldı: gemi sınıfı **Onarım Gemisi**, araç onarım düğmesi **Onar**.
+- `Buy` corpse wagon panelinde gerçek satın alma eylemi olarak **Satın Al**.
+- `Racialise` eylemi kilitli **Irk Dönüştürücü** nesne adıyla uyumlu biçimde **Irka Dönüştür**.
+- `<^yellow;Loading...^reset;>` görünür dekoratif UI metnidir; **Yükleniyor...** olarak çevrildi ve yalnız bu satır için belgeli kontrol-token QA istisnası kullanıldı.
+- Oyun içi LQA: **NOT TESTED**
+
+## v0.43 sonraki adım
+Build & QA ile Remaining Scope Audit sonuçlarını doğrula. CI yeşilse generated build/package çıktısını yenile ve checkpoint'i nihai sonuçlarla kapat.
