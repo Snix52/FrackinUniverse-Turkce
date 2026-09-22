@@ -331,7 +331,14 @@ Oyun içi LQA ayrı bir aşamadır.
 ## v0.46.2 görev/konum adı denetim checkpoint
 - Eski toplu "özel ad" varsayımı kaldırıldı.
 - Çevrilen başlıklar: Kadim Tapınak, Su Dağıtım Merkezi, Evernight Tropik Ormanı, Fae Ormanı, Büyük Arena, Gigant Dağı, Yenilmez Kule, Yemyeşil Harabeler.
-- Exact korunan kanıtlı referans/özel adlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Nightfort, Delta Freya II, Dantalion, Dreadwing.
+- Exact korunan kanıtlı referans/özel adlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Delta Freya II, Dantalion, Dreadwing.
 - Takeshi's Castle exact dış referans olarak korunur; Castle Takeshi varyantı buna eşitlenir.
 - Katalog sürümü: 0.46.2-beta.
+- Oyun içi LQA: NOT TESTED.
+
+## v0.46.3 Nightfort bakım checkpoint
+- Oyuncuya görünen Nightfort adı **Gece Hisarı** olarak yerelleştirildi.
+- SAIL: `Visit Nightfort` -> **Gece Hisarı'nı Ziyaret Et**.
+- Teknik `nightfort` mission/world/dungeon kimlikleri aynen korunur.
+- Katalog sürümü: 0.46.3-beta.
 - Oyun içi LQA: NOT TESTED.

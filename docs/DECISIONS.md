@@ -617,6 +617,13 @@
 - Eski "özel görev adıysa İngilizce bırak" yaklaşımı kaldırıldı.
 - Betimleyici/generic başlıklar: Ancient Temple -> Kadim Tapınak, Hydro Center / Hydro Distribution Center -> Su Dağıtım Merkezi, Grand Arena -> Büyük Arena, Tower Invincible -> Yenilmez Kule, Verdant Ruins -> Yemyeşil Harabeler.
 - Karma özel adlar: Evernight Jungle -> Evernight Tropik Ormanı, Forest of Fae -> Fae Ormanı, Mount Gigant -> Gigant Dağı.
-- Dış referans veya gerçek lore özel adı olarak exact korunanlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Nightfort, Delta Freya II, Dantalion, Dreadwing.
+- Dış referans veya gerçek lore özel adı olarak exact korunanlar: Brine Star, Snow Crash, Sunset Riders, Sky Boulevard, Techno City, Delta Freya II, Dantalion, Dreadwing.
 - Takeshi's Castle dış referans olarak korunur; kaynak içindeki Castle Takeshi varyantı kanonik Takeshi's Castle biçimine eşitlenir.
 - Görev başlığı, hedef açıklaması, SAIL butonu ve önceki Outpost referansları birlikte eşitlendi.
+
+### v0.46.3 - Nightfort görünen ad kararı
+
+- Pinned FU 6.5.8 kaynağında `nightfort` teknik mission/world/dungeon kimliği olarak korunur.
+- Oyuncuya görünen `Visit Nightfort` SAIL metni **Gece Hisarı'nı Ziyaret Et** olarak yerelleştirilir.
+- `Nightfort` için oyuncu-yüzü kanıt yalnız SAIL adında bulunduğundan, İngilizce biçimin lore açısından zorunlu olduğu kabul edilmedi.
+- Teknik `missionName: nightfort`, `missionWorld: nightfort`, instance/dungeon anahtarları ve asset yolları değiştirilmez.

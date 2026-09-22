@@ -29,6 +29,8 @@ class MissionDisplayNameTests(unittest.TestCase):
             ("ai/japaneseruins.aimission","/speciesText/default/buttonText"):"Gigant Dağı (8)",
             ("ai/towerinvincible.aimission","/speciesText/default/buttonText"):"Yenilmez Kule (6)",
             ("ai/verdantruins.aimission","/speciesText/default/buttonText"):"Yemyeşil Harabeler (2)",
+            ("ai/nightfort.aimission","/speciesText/default/buttonText"):"Gece Hisarı'nı Ziyaret Et",
+            ("ai/nightfort.aimission","/speciesText/default/repeatButtonText"):"Gece Hisarı'nı Ziyaret Et",
         }
         for key,value in expected.items():
             with self.subTest(key=key):
@@ -40,7 +42,6 @@ class MissionDisplayNameTests(unittest.TestCase):
             ("quests/snowcrash.questtemplate","/title"):"^green;Snow Crash",
             ("quests/sunsetriders.questtemplate","/title"):"^green;Sunset Riders",
             ("quests/skytemple.questtemplate","/title"):"^green;Sky Boulevard",
-            ("ai/nightfort.aimission","/speciesText/default/buttonText"):"Nightfort'u Ziyaret Et",
             ("ai/shoggothmission.aimission","/speciesText/default/buttonText"):"^#7fac66;Delta Freya II^reset; (7+)",
         }
         for key,value in expected.items():
