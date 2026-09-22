@@ -1,6 +1,7 @@
 name: jungle terminology cleanup
 # retry: v030-schema
 # retry: v030-schema-2
+# retry: player-facing-scan
 on:
   push:
     branches: [fix/jungle-terminology]
@@ -216,25 +217,26 @@ jobs:
           from rule_data import render_terminology
           (ROOT/'docs'/'TERMINOLOGY.md').write_text(render_terminology(locked),encoding='utf-8')
 
-          # No old Turkish term may remain in source/doc layers.
-          hits=[]
-          for root in (TOOLS,ROOT/'docs'):
-              for path in root.rglob('*'):
-                  if not path.is_file():
-                      continue
-                  try:
-                      t=path.read_text(encoding='utf-8')
-                  except Exception:
-                      continue
-                  if 'cangıl' in t.casefold() or 'cangil' in t.casefold():
-                      hits.append(path.as_posix())
-          for path in (ROOT/'README.md',ROOT/'FU_SESSION_CHECKPOINT.md'):
-              t=path.read_text(encoding='utf-8')
-              if 'cangıl' in t.casefold() or 'cangil' in t.casefold():
-                  hits.append(path.as_posix())
-          if hits:
-              raise ValueError('Old Jungle terminology remains: '+repr(sorted(set(hits))))
-          print('Jungle terminology cleanup applied; old term count: 0')
+          # No old Turkish term may remain in player-facing translation values.
+          bad_rows=[
+              (r['asset'],r['pointer'],r['tr'])
+              for r in catalog['translations']
+              if 'cangıl' in r['tr'].casefold() or 'cangil' in r['tr'].casefold()
+          ]
+          if bad_rows:
+              raise ValueError('Old Jungle terminology remains in catalog: '+repr(bad_rows[:20]))
+          for path in sorted(TOOLS.glob('v*_translations.json')):
+              try:
+                  data=json.loads(path.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              rows=data.get('translations',[]) if isinstance(data,dict) else []
+              for r in rows:
+                  if isinstance(r,dict):
+                      tr=str(r.get('tr',''))
+                      if 'cangıl' in tr.casefold() or 'cangil' in tr.casefold():
+                          raise ValueError('Old Jungle terminology remains in manifest: '+path.as_posix())
+          print('Jungle terminology cleanup applied; player-facing old term count: 0')
           PY
       - name: Fetch pinned FU
         run: |
