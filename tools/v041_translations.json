@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "translation_version": "0.41.0-beta",
-  "scope": "Space Station sisteminin 250 canlı yapılandırılmış oyuncu metni: ana panel 14, ırk/persona ve menü metinleri 188, tıbbi/askerî özel hizmet adları ve açıklamaları 48. Erişilemeyen eski Quest dalı ile generic/chat4 ve generic/chat5 içindeki uzun dış eser alıntıları kapsam dışıdır. Aynı panelin 16 Lua runtime metin oluşumu raw_text_translations.json üzerinden source-locked yerelleştirilir.",
+  "scope": "Space Station sisteminin 274 canlı yapılandırılmış oyuncu metni: ana panel 14, ırk/persona ve menü metinleri 212, tıbbi/askerî özel hizmet adları ve açıklamaları 48. Erişilemeyen eski Quest dalı, cooldownEnhancer ile generic/chat4 ve generic/chat5 içindeki uzun dış eser alıntıları kapsam dışıdır. Aynı panelin 16 Lua runtime metin oluşumu raw_text_translations.json üzerinden source-locked yerelleştirilir.",
   "translations": [
     {
       "asset": "interface/scripted/spaceStation/spaceStation.config",
@@ -1751,6 +1751,174 @@
       "pointer": "/military/5/4",
       "en": "There are people in this universe you want on your side. This person, is one of them.",
       "tr": "Bu evrende yanında olmasını isteyeceğin insanlar vardır. Bu da onlardan biri.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/welcome",
+      "en": "Welcome to the {STATIONNAME} station. Don't break anything.",
+      "tr": "Burası {STATIONNAME} istasyonu. Hoş geldin. Bir şey kırma.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat1",
+      "en": "I know what you did.",
+      "tr": "Ne yaptığını biliyorum.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat2",
+      "en": "No.",
+      "tr": "Hayır.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat3",
+      "en": "Did you know Avians can be alcoholics?",
+      "tr": "Avianların alkolik olabildiğini biliyor muydun?",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat4",
+      "en": "I'd give a tailfeather for some lunch.",
+      "tr": "Öğle yemeği için bir kuyruk tüyümü verirdim.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat5",
+      "en": "Did you know the sign is blue?",
+      "tr": "Tabelanın mavi olduğunu biliyor muydun?",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat6",
+      "en": "I'm banned from the Beakeasy.",
+      "tr": "Beakeasy'dden men edildim.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat7",
+      "en": "Welcome to our station! No loitering.",
+      "tr": "İstasyonumuza hoş geldin! Oyalanmak yok.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/chat8",
+      "en": "I eat chicken.",
+      "tr": "Tavuk yerim.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/militarySpecial",
+      "en": "As a military station, our special service is allowing you to hire new crew members. The price goes up with the quality, so does the return when they save your ass from some otherwordly monstrosity. Sadly, we can only spare one crew member per captain. I don't know if you're capable of handling more.",
+      "tr": "Askerî bir istasyon olarak özel hizmetimiz yeni mürettebat üyeleri kiralamana imkân tanıyor. Kalite arttıkça fiyat da artar; ama öte dünyalardan çıkmış bir ucube kıçını kurtardığında bunun karşılığını alırsın. Ne yazık ki kaptan başına yalnızca bir mürettebat üyesi ayırabiliyoruz. Daha fazlasını idare edebileceğinden emin değilim.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/medicalSpecial",
+      "en": "As a medical research lab, our special service is providing you with all sort of long lasting enhancers, for the right price of course.\nDue to health hazard, only one enhancer can be applied.\nLucky you, they stay with you until your inevitable death!\nOr you can remove them for 500 pixels at any medical station, if death doesn't do it for you by the time you get to one.",
+      "tr": "Tıbbi araştırma laboratuvarı olarak özel hizmetimiz, tabii doğru ücret karşılığında, uzun süreli çeşitli güçlendiriciler sunmak.\nSağlık riski nedeniyle yalnızca bir güçlendirici uygulanabilir.\nŞanslısın, kaçınılmaz ölümüne kadar üzerinde kalır!\nYa da ölüm sen bir istasyona varana kadar işini görmezse, herhangi bir tıbbi istasyonda 500 Piksel karşılığında çıkarabilirsin.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/scientificSpecial",
+      "en": "As a scientific research lab, we specialize in synthesysing all sorts of materials, and are willing to trade them for others.\nBe sure to check in often though, we don't always have or need the same materials!",
+      "tr": "Bilimsel araştırma laboratuvarı olarak çeşitli malzemeleri sentezlemekte uzmanız ve bunları başka malzemelerle takas etmeye hazırız.\nAma sık sık kontrol et; elimizde olan ya da ihtiyaç duyduğumuz malzemeler hep aynı kalmaz!",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/tradingSpecial",
+      "en": "As a trading center, we care primarly about pixels and their value.\nShould you be able to raise a high enough amount and invest in us, we'll make sure it'll be worth your while.\nWith each investment you make, the prices in our shops will shiftin your favor, allowing you to buy and sell goods at better rates!\nInvest enough, and the prices for all space stations will have a shift in your favor!",
+      "tr": "Bir ticaret merkezi olarak önceliğimiz Piksel ve değeridir.\nYeterince para biriktirip bize yatırım yaparsan karşılığını almanı sağlarız.\nHer yatırımda dükkânlarımızdaki fiyatlar lehine değişir; daha iyi oranlarla alıp satarsın!\nYeterince yatırım yaparsan tüm uzay istasyonlarında fiyatlar lehine döner!",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/tradingSpecialMax",
+      "en": "Thank you for your great contribution!\nThanks to you, we are now a bustling trading station with a lot of goods to pick from, with good prices for everyone!\nWe'll make sure your contribution is known beyond the bounds of this station, providing you with a better price rate when you buy or sell from other vendors across the stars!",
+      "tr": "Büyük katkın için teşekkürler!\nSenin sayende artık bol ürünlü, herkes için iyi fiyatlar sunan hareketli bir ticaret istasyonuyuz!\nKatkının bu istasyonun çok ötesinde bilinmesini sağlayacağız; yıldızlar arasındaki diğer satıcılardan alıp satarken de daha iyi oranlar elde edeceksin!",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/returnSpecial",
+      "en": "What do you want?",
+      "tr": "Ne istiyorsun?",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/cantAfford1",
+      "en": "Seems like you're a bit short on pixels...",
+      "tr": "Pikselin biraz eksik gibi...",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/cantAfford2",
+      "en": "You're broke.",
+      "tr": "Parasızsın.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/cantAfford3",
+      "en": "You're poor. Come back richer.",
+      "tr": "Fakirsin. Zenginleş de gel.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/cantAfford4",
+      "en": "Time is money. You seem to be out of both.",
+      "tr": "Vakit nakittir. Sende ikisi de kalmamış gibi.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/activeEnhancer",
+      "en": "Like I said, you can't have more than one enhancer active at a time.\nWe can remove your active enhancer for 500 pixels if you'd like.",
+      "tr": "Dediğim gibi, aynı anda birden fazla güçlendirici aktif olamaz.\nİstersen aktif güçlendiricini 500 Piksel karşılığında çıkarabiliriz.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/acquireEnhancer",
+      "en": "Come back if you want another one!\nOh, and side effects may include: dry mouth, nausea, vomiting, water retention, tingling rectal itch, hallucination, epiphany, psychosis, coma, death, and a fate worse than death.",
+      "tr": "Bir tane daha istersen geri gel!\nHa, yan etkiler arasında ağız kuruluğu, mide bulantısı, kusma, sıvı tutulumu, karıncalanma hissi veren rektal kaşıntı, halüsinasyon, aydınlanma, psikoz, koma, ölüm ve ölümden beter bir kader bulunabilir.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/removeEnhancer",
+      "en": "Enhancer removed. Enjoy your enhancer free body!",
+      "tr": "Güçlendirici çıkarıldı. Güçlendiricisiz bedeninin tadını çıkar!",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/hireMerc",
+      "en": "Heres the contract, use it to call and recruit them.",
+      "tr": "Sözleşme burada. Onları çağırıp ekibine katmak için kullan.",
+      "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/cari/noMoreMerc",
+      "en": "Sorry, we only allow one crewmate per captain.\nTry checking other military stations.\nNo refunds.",
+      "tr": "Üzgünüm, kaptan başına yalnızca bir mürettebata izin veriyoruz.\nDiğer askerî istasyonlara bak.\nİade yok.",
       "section": "v0.41 Space Station arayüzü"
     }
   ]
