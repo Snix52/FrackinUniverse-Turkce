@@ -523,6 +523,27 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Frost Burn | Silah durum etkisi | Durum | Ayaz Yanığı | Don Yanması | LOCKED | Soğuk kaynaklı durum etkisi |
 | Oceanite / Thanatite / Nhydri | Elduu malzeme ve model adları | Özel ad | Kaynaktaki yazım korunur | Okyanusit / Tanatit / Nhidri | LOCKED | İşlevsel silah sınıfı ayrıca çevrilir |
 | Jungle | Biyom / zemin / generic çevre adı | Biyom | Tropik Orman | Cangıl, Cangil | LOCKED | Evernight Jungle gibi özel görev/konum adları korunur; generic Jungle için Tropik Orman kullanılır. |
+| Ancient Temple | Görev/konum başlığı | Görev/Konum | Kadim Tapınak |  | LOCKED | Çevrilebilir betimleyici görev adı. |
+| Ancient Temples | Görev/konum genel çoğul | Görev/Konum | Kadim Tapınaklar |  | LOCKED | Outpost bağlamındaki çoğul kullanım. |
+| Hydro Center | Görev/konum başlığı | Görev/Konum | Su Dağıtım Merkezi |  | LOCKED | Aynı görevdeki Hydro Distribution Center ile tek ad altında birleştirilir. |
+| Hydro Distribution Center | Görev/konum başlığı | Görev/Konum | Su Dağıtım Merkezi |  | LOCKED | İşlevsel tesis adı; doğal Türkçe tercih edilir. |
+| Evernight Jungle | Görev/konum başlığı | Görev/Konum | Evernight Tropik Ormanı |  | LOCKED | Evernight özel çekirdeği korunur; Jungle tür adı Türkçeleştirilir. |
+| Forest of Fae | Görev/konum başlığı | Görev/Konum | Fae Ormanı |  | LOCKED | Fae özel/fantastik çekirdeği korunur; Forest Türkçeleştirilir. |
+| Grand Arena | Görev/konum başlığı | Görev/Konum | Büyük Arena |  | LOCKED | Betimleyici görev adı. |
+| Mount Gigant | Görev/konum başlığı | Görev/Konum | Gigant Dağı |  | LOCKED | Gigant özel çekirdeği korunur; Mount Türkçeleştirilir. |
+| Takeshi's Castle | Dış referans / görev başlığı | Görev/Konum | Takeshi's Castle |  | LOCKED | Takeshi's Castle referansı exact korunur. |
+| Castle Takeshi | Dış referans / görev başlığı | Görev/Konum | Takeshi's Castle |  | LOCKED | Kaynak içi ters yazım, referansın kanonik biçimine eşitlenir. |
+| Tower Invincible | Görev/konum başlığı | Görev/Konum | Yenilmez Kule |  | LOCKED | Kaynakta dış referans kanıtı bulunmayan betimleyici başlık. |
+| Verdant Ruins | Görev/konum başlığı | Görev/Konum | Yemyeşil Harabeler |  | LOCKED | Verdant proje kullanımındaki yemyeşil karşılığıyla eşlenir. |
+| Brine Star | Lore özel yer adı | Görev/Konum | Brine Star |  | LOCKED | Codex ve görev zincirinde özel yer adı olarak kullanılır. |
+| Snow Crash | Dış referans / görev başlığı | Görev/Konum | Snow Crash |  | LOCKED | Neal Stephenson eser başlığı referansı korunur. |
+| Sunset Riders | Dış referans / görev başlığı | Görev/Konum | Sunset Riders |  | LOCKED | Konami western arcade oyunu referansı korunur. |
+| Sky Boulevard | Dış referans / görev başlığı | Görev/Konum | Sky Boulevard |  | LOCKED | Whale's Voyage yer adı referansı korunur. |
+| Techno City | Dış referans / lore yer adı | Görev/Konum | Techno City |  | LOCKED | FU codexindeki arcade-game referansı ve Guardians yer adı korunur. |
+| Nightfort | Lore özel yer adı | Görev/Konum | Nightfort |  | LOCKED | Nightar kralının hisarı için kullanılan birleşik özel ad. |
+| Delta Freya II | Lore özel yer adı | Görev/Konum | Delta Freya II |  | LOCKED | Özel gökcismi/konum adı. |
+| Dantalion | Özel ad | Görev/Konum | Dantalion |  | LOCKED | Görevdeki özel ad. |
+| Dreadwing | Özel ad | Görev/Konum | Dreadwing |  | LOCKED | Boss özel adı. |
 
 ## Kural
 

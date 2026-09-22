@@ -19,7 +19,7 @@ class V046Tests(unittest.TestCase):
         cls.by = {(r["asset"], r["pointer"]): r for r in cls.rows}
 
     def test_scope_is_exact(self):
-        self.assertEqual(self.m["translation_version"], "0.46.1-beta")
+        self.assertEqual(self.m["translation_version"], "0.46.2-beta")
         self.assertEqual(len(self.rows), 129)
         self.assertEqual(len({(r["asset"], r["pointer"]) for r in self.rows}), 129)
         self.assertEqual(len({r["asset"] for r in self.rows}), 53)
@@ -30,7 +30,7 @@ class V046Tests(unittest.TestCase):
 
     def test_catalog_contains_exact_manifest(self):
         c = json.loads((TOOLS / "ceviriler.json").read_text(encoding="utf-8"))
-        self.assertEqual(c["translation_version"], "0.46.1-beta")
+        self.assertEqual(c["translation_version"], "0.46.2-beta")
         idx = {(r["asset"], r["pointer"]): r for r in c["translations"]}
         for r in self.rows:
             self.assertEqual(idx[(r["asset"], r["pointer"])]["en"], r["en"])

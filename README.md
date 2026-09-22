@@ -4,13 +4,13 @@ Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
-**Güncel sürüm:** v0.46.1 Beta
+**Güncel sürüm:** v0.46.2 Beta
 **Hedef FU sürümü:** 6.5.8  
 **Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
 ## Güncel durum
 
-v0.46.1 Beta itibarıyla:
+v0.46.2 Beta itibarıyla:
 
 - **8.153** yapılandırılmış oyuncu metni
 - **57** görünür Lua/script metni
@@ -26,7 +26,7 @@ v0.46.1 Beta itibarıyla:
 
 Güncel doğrulanmış paket:
 
-`dist/FU_Turkce_v0.46.1_Beta.zip`
+`dist/FU_Turkce_v0.46.2_Beta.zip`
 
 Paketin güncel SHA-256 değeri, kaynak commit kimliği, workflow run numarası ve doğrulama durumu yalnız [dist/build-evidence.json](dist/build-evidence.json) içinde tutulur. Bu bilgiler README’ye kopyalanmaz. Kaynak değişikliği ile paket yayını arasında, yayımlanmış son build için bu dosyadaki sürüm esas alınır.
 
@@ -73,13 +73,13 @@ v0.46 Irklar ve SAIL/AI confirmed kapsamı kapatıldı.
 - 20 oynanabilir ırkta 40 species alanı
 - Irklar ve SAIL/AI confirmed borcu: 0
 
-v0.46.1 bakımında generic Jungle terminolojisi Tropik Orman olarak kilitlendi ve eski karşılıklar geriye dönük temizlendi. Sonraki paket güncel Remaining Scope Audit sıralamasından seçilecektir.
+v0.46.1 bakımında generic Jungle terminolojisi Tropik Orman olarak kilitlendi. v0.46.2 bakımında eski toplu görev/konum özel-ad kararı yeniden denetlendi; betimleyici başlıklar Türkçeleştirildi, kanıtlı dış referanslar ve gerçek özel adlar korundu. Sonraki paket güncel Remaining Scope Audit sıralamasından seçilecektir.
 
 ## Kurulum
 
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
-3. [Güncel beta paketini](dist/FU_Turkce_v0.46.1_Beta.zip) indirip çıkar.
+3. [Güncel beta paketini](dist/FU_Turkce_v0.46.2_Beta.zip) indirip çıkar.
 4. İçindeki `FU_Turkce` klasörünü Starbound'un `mods` klasörüne kopyala.
 5. Son yol şu şekilde görünmeli:
 
@@ -89,7 +89,7 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
-Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.46.1_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
+Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.46.2_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
 
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 
