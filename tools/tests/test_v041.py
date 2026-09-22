@@ -45,6 +45,13 @@ class V041Tests(unittest.TestCase):
                 sorted(token.findall(row["tr"])),
                 row["asset"] + row["pointer"],
             )
+        control = re.compile(r"\[(?![^\]]*\^)[^\]]+\]|<[^>]+>")
+        for row in self.rows:
+            self.assertEqual(
+                sorted(control.findall(row["en"])),
+                sorted(control.findall(row["tr"])),
+                row["asset"] + row["pointer"],
+            )
 
     def test_lua_replacements_are_source_locked(self):
         raw = json.loads((TOOLS / "raw_text_translations.json").read_text(encoding="utf-8"))
