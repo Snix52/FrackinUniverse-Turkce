@@ -1,0 +1,24 @@
+name: Audit repair workspace
+on:
+  push:
+    branches: [fix/ana-check-20260922]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Export tracked source for regression work
+        run: |
+          git archive --format=tar HEAD -o source.tar
+          git rev-parse HEAD > source-sha.txt
+      - uses: actions/upload-artifact@v7
+        with:
+          name: audit-repair-source
+          path: |
+            source.tar
+            source-sha.txt
+          retention-days: 1
