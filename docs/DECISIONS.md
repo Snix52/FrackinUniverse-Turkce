@@ -583,3 +583,17 @@
 - `stats.config.patch` içindeki 4 stat etiketi çevrilir; `-todo-` açıklamaları geliştirici placeholder'ı olduğundan audit borcu sayılmaz.
 - MetaGUI registry `frackin` ve `frackin.v2` temalarını kaydeder; görünür tema metadata'sı çevrilir.
 - Jarring Machine, Expand Station, KheAA Tool Forge, Mech Loadouts, eski Coffee Machine paneli, Pet Namer, Gravity Console ve yedi eski windowconfig runtime-inaktif/superseded olarak auditten çıkarıldı.
+
+
+## 2026-09-22 - v0.45 Görev audit düzeltmesi ve layered görev kapanışı
+
+- v0.44 sonrası audit Görevler kategorisini 101 asset / 368 alan gösteriyordu. İncelemede audit aracının daha önce doğrulanıp kurallara kaydedilmiş `V020_INACTIVE_QUEST_ASSETS` ve `NONVISIBLE_QUEST_ASSETS` listelerini kalan kapsama uygulamadığı belirlendi.
+- Audit bu iki kuralı artık doğrudan uygular. Ayrıca görev fazında örnekleme yerine tam alan listesi alınabilmesi için JSON raporuna `quest_confirmed_rows` eklendi.
+- Düzeltilmiş görev borcu **18 asset / 29 alan / 29 benzersiz metin** oldu.
+- Kalanların tamamı FU'nun vanilla `.questtemplate` hedeflerine uyguladığı pinned `.questtemplate.patch` değerleridir. v0.45 manifestindeki her alan patch provenance bilgisiyle source-lock altındadır.
+- v0.45 generatoru CI içinde pinned FU 6.5.8 kaynağındaki patch değerlerini exact doğrular; kaynak drift ederse build kapanır.
+- `Pulse Jump` için onaylı Türkçe özel ad bulunmadığından tahmin üretilmedi ve **Pulse Jump Tech'i** olarak korundu.
+- Mevcut proje terminolojisi korundu: **Mühendislik, İmalat Tezgâhı, FTL Motoru, STL Motoru, Güç Çekirdeği, Karbon Plaka, Gelişmiş Devre, Çarpıtma Küresi, Yükseltme Modülü**.
+- Vanilla item kimliği harici kaynakta doğrulanan Station Transponder, görev bağlamında **İstasyon Transponderi** olarak yerelleştirildi.
+- Kestrel/Falcon/Eagle/Condor gemi sınıf adları özel ad olarak korunur; lisans ifadesi Türkçeleştirilir.
+- Oyun içi LQA ayrı aşamadır.

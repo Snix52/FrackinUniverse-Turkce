@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.44 Arayüz kategorisi tamamlandı ve doğrulandı.**
+22 Eylül 2026 - **v0.45 görev kapanış paketi hazırlandı; CI doğrulaması bekleniyor.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
@@ -200,3 +200,32 @@ v0.45'te Arayüz confirmed havuzuna geri dönme.
 Proje öncelik sırasına göre sıradaki yüksek değerli alan **Görevler**dir: auditte **101 asset / 368 doğrulanmış alan** kalıyor.
 Çalışma protokolü gereği 368 alan tek turda alınmayacak; ilk runtime-bağlı görev paketi **250-300 alanı geçmeyecek** biçimde ayrılmalıdır.
 Oyun içi LQA ayrı bir aşamadır.
+
+
+## v0.45 görev kapsamı
+- v0.44 checkpointinde Görevler için audit başlangıç sayımı **101 asset / 368 alan** görünüyordu.
+- Kök neden incelemesinde `audit_remaining.py` aracının iki mevcut runtime kuralını uygulamadığı bulundu:
+  - `V020_INACTIVE_QUEST_ASSETS`
+  - `NONVISIBLE_QUEST_ASSETS`
+- Bu iki audit kaçağı düzeltildi; görev raporuna tam `quest_confirmed_rows` listesi eklendi.
+- Düzeltilmiş gerçek kalan Görev kapsamı: **18 asset / 29 alan / 29 benzersiz kaynak metin**.
+- 29 alanın tamamı vanilla görev hedeflerine FU'nun pinned `.questtemplate.patch` katmanıyla eklediği/değiştirdiği canlı oyuncu metnidir.
+- Her v0.45 satırı `qa.layered_source` + `qa.source_patch` ile kaynak patchine bağlandı.
+- Build workflowuna `python tools/generate_v045.py --source fu_source` exact-source doğrulaması eklendi.
+- Terminoloji:
+  - FTL Drive -> **FTL Motoru**
+  - STL Drive -> **STL Motoru**
+  - Machining Table -> **İmalat Tezgâhı**
+  - Engineering -> **Mühendislik**
+  - Power Core -> **Güç Çekirdeği**
+  - Carbon Plate -> **Karbon Plaka**
+  - Advanced Circuit -> **Gelişmiş Devre**
+  - Distortion Sphere -> **Çarpıtma Küresi**
+  - Upgrade Module -> **Yükseltme Modülü**
+  - Station Transponder -> **İstasyon Transponderi**
+  - Kestrel/Falcon/Eagle/Condor özel sınıf adları korunur; **Lisansı** Türkçeleştirilir.
+  - Pulse Jump için proje onaylı Türkçe özel ad olmadığı için **Pulse Jump Tech'i** biçiminde korunur.
+- Oyun içi LQA: **NOT TESTED**.
+
+## v0.45 sonraki adım
+Build & QA ile Remaining Scope Audit'i doğrula. Beklenen sonuç: **Görevler confirmed = 0 alan**.

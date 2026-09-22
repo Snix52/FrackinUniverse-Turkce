@@ -14,7 +14,7 @@ class V044Tests(unittest.TestCase):
     def test_scope_is_exact(self):
         self.assertEqual(self.m["translation_version"],"0.44.0-beta"); self.assertEqual(len(self.rows),13); self.assertEqual(len({(r["asset"],r["pointer"]) for r in self.rows}),13); self.assertEqual(len({r["asset"] for r in self.rows}),7); self.assertEqual(len({r["en"] for r in self.rows}),12); self.assertTrue(all(r["section"]==SECTION for r in self.rows)); self.assertTrue(set(DEAD).isdisjoint({r["asset"] for r in self.rows}))
     def test_catalog_contains_manifest(self):
-        c=json.loads((TOOLS/"ceviriler.json").read_text(encoding="utf-8")); self.assertEqual(c["translation_version"],"0.44.0-beta"); idx={(r["asset"],r["pointer"]):r for r in c["translations"]}
+        c=json.loads((TOOLS/"ceviriler.json").read_text(encoding="utf-8")); self.assertGreaterEqual(tuple(map(int,c["translation_version"].split("-")[0].split("."))),(0,44,0)); idx={(r["asset"],r["pointer"]):r for r in c["translations"]}
         for r in self.rows: self.assertEqual(idx[(r["asset"],r["pointer"])]["tr"],r["tr"])
     def test_runtime_closure_choices(self):
         e={("interface/chests/chest3.config","/gui/count/value"):"3 YUVA",("interface/objectcrafting/fu_atmosfilter1.config","/gui/lblText/value"):"^#b9b5b2;Eklentileri yuvalara yerleştir. Etkileri menzil içinde uygulanır.",("interface/stats/stats.config","/fuCharisma/label"):"Karizma",("interface/stats/stats.config","/upgradeable/label"):"Yükseltilebilir",("metagui/themes/frackin/theme.json","/name"):"Frackin' Klasik",("metagui/themes/frackin/v2/theme.json","/name"):"Frackin' Standart"}
