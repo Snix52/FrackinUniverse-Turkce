@@ -9,6 +9,59 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Build reviewed v0.46 preview and QA diagnostics
+        run: |
+          python - <<'PY'
+          import base64, json, zlib, sys
+          from collections import Counter
+          from pathlib import Path
+          sys.path.insert(0, 'tools')
+          import qa_integrity as qa
+          import build_validate as build
+
+          rows=[]
+          for part in sorted(Path('tools/.v046_parts').glob('part*.b64')):
+              payload=json.loads(zlib.decompress(base64.b64decode(part.read_text(encoding='utf-8'))))
+              rows.extend(payload['translations'])
+
+          fixes = {
+            ("species/juux.species", "/charCreationTooltip/description"): [("Psiyonik Fırlatıcı","Psiyonik Odak")],
+            ("species/fenerox.species", "/charCreationTooltip/description"): [("Avcı Pençesi","Avcı Pençeleri")],
+            ("species/floran.species", "/charCreationTooltip/description"): [("İğneli Silahlar/Floran Silahları/Fırlatılanlar","İğneleyici/Floran Silahları/Fırlatılanlar")],
+            ("species/slimeperson.species", "/charCreationTooltip/description"): [("Jelatinimsi, Bataklık ve Bataklık biyomları","Jelatinimsi, Bataklık ve Sulaklık biyomları")],
+            ("species/hylotl.species", "/charCreationTooltip/description"): [("Barışçıl Hylotllar","Barışçıl Hylotl'lar")],
+          }
+          by={(r['asset'],r['pointer']):r for r in rows}
+          for key,repls in fixes.items():
+              for old,new in repls:
+                  by[key]['tr']=by[key]['tr'].replace(old,new)
+
+          issues=[]
+          for r in rows:
+              p=[]
+              if qa.signed_numbers(r['en']) != qa.signed_numbers(r['tr']):
+                  p.append({"kind":"signed","en":dict(qa.signed_numbers(r['en'])),"tr":dict(qa.signed_numbers(r['tr']))})
+              for name,pat in [('printf',build.PRINTF),('brace',build.BRACE_PLACEHOLDER),('dollar',build.DOLLAR_PLACEHOLDER)]:
+                  a=Counter(pat.findall(r['en'])); b=Counter(pat.findall(r['tr']))
+                  if a!=b:
+                      p.append({"kind":name,"en":dict(a),"tr":dict(b)})
+              if p:
+                  issues.append({"asset":r['asset'],"pointer":r['pointer'],"en":r['en'],"tr":r['tr'],"problems":p})
+
+          out={
+            "fields":len(rows),
+            "assets":len({r['asset'] for r in rows}),
+            "ai_fields":sum(r['asset'].startswith('ai/') for r in rows),
+            "species_fields":sum(r['asset'].startswith('species/') for r in rows),
+            "issues":issues,
+            "rows":rows,
+          }
+          Path('v046_preview.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps({"fields":out["fields"],"assets":out["assets"],"issues":issues},ensure_ascii=False,indent=2))
+          PY
       - uses: actions/upload-artifact@v7
         with:
           name: v046-context
@@ -16,4 +69,5 @@ jobs:
             tools/ceviriler.json
             tools/locked_terms.json
             tools/translation_memory_exceptions.json
+            v046_preview.json
           retention-days: 2
