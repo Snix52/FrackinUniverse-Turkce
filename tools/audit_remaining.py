@@ -651,6 +651,19 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
                 key=lambda item: (item.asset, item.pointer),
             )
         ],
+        "quest_confirmed_rows": [
+            {
+                "asset": row.asset,
+                "pointer": row.pointer,
+                "source": row.value,
+                "key": row.key,
+                "origin": row.origin,
+            }
+            for row in sorted(
+                (candidate for candidate in remaining_confirmed.values() if candidate.category == "Görevler"),
+                key=lambda item: (item.asset, item.pointer),
+            )
+        ],
         "samples_by_category": dict(samples),
         "parse_failures": parse_failures,
         "translated_not_found": [
