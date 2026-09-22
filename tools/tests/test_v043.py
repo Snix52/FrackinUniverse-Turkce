@@ -64,12 +64,17 @@ class V043Tests(unittest.TestCase):
         self.assertEqual(row["tr"],"<^yellow;Yükleniyor...^reset;>")
         self.assertTrue(row.get("qa",{}).get("allow_control_fix"))
 
-    def test_mechassembly_layered_source_is_pinned(self):
-        rows=[r for r in self.rows if r["asset"]=="interface/scripted/mechassembly/mechassemblygui.config"]
-        self.assertEqual(len(rows),3)
-        for row in rows:
-            self.assertTrue(row.get("qa",{}).get("layered_source"))
-            self.assertEqual(row["qa"].get("source_patch"),"interface/scripted/mechassembly/mechassemblygui.config.patch")
+    def test_layered_ui_sources_are_pinned(self):
+        expected={
+            "interface/scripted/mechassembly/mechassemblygui.config":"interface/scripted/mechassembly/mechassemblygui.config.patch",
+            "interface/scripted/mmupgrade/mmupgradegui.config":"interface/scripted/mmupgrade/mmupgradegui.config.patch",
+        }
+        for asset,source_patch in expected.items():
+            rows=[r for r in self.rows if r["asset"]==asset]
+            self.assertEqual(len(rows),3,asset)
+            for row in rows:
+                self.assertTrue(row.get("qa",{}).get("layered_source"))
+                self.assertEqual(row["qa"].get("source_patch"),source_patch)
 
     def test_signed_numbers_are_preserved(self):
         signed=re.compile(r"[+-]\s*%?\s*\d+(?:[.,]\d+)?")

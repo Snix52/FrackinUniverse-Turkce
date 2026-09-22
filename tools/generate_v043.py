@@ -12,6 +12,7 @@ EXCLUDED_ASSETS=['interface/bees/industrialcentrifuge/jarringmachine.config', 'i
 
 LAYERED_PATCH_ASSETS={
     "interface/scripted/mechassembly/mechassemblygui.config":"interface/scripted/mechassembly/mechassemblygui.config.patch",
+    "interface/scripted/mmupgrade/mmupgradegui.config":"interface/scripted/mmupgrade/mmupgradegui.config.patch",
 }
 
 
