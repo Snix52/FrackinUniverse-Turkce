@@ -1,29 +1,29 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-22T08:53:31.902483+00:00",
-  "workflow_run_id": "35707187207",
-  "source_commit": "1312ac7c55d56eb2bd00f0cd10caa15469ebaf60",
-  "translation_source_commit": "1312ac7c55d56eb2bd00f0cd10caa15469ebaf60",
-  "translation_version": "0.45.0-beta",
+  "generated_at_utc": "2026-09-22T11:02:38.696501+00:00",
+  "workflow_run_id": "35719141564",
+  "source_commit": "2dd5b219ef14a8f859001ed4dc14eab55b7c8445",
+  "translation_source_commit": "2dd5b219ef14a8f859001ed4dc14eab55b7c8445",
+  "translation_version": "0.45.1-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
     "structured_fields": 8024,
     "patch_assets": 2276,
-    "raw_override_assets": 6,
-    "raw_script_strings": 55
+    "raw_override_assets": 7,
+    "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.45.0_Beta.zip",
-    "bytes": 1302288,
-    "sha256": "a947f0233753e34d7c2bd3673025c52d55e3c39d9d6032a13a5afe80f4029083",
-    "git_blob_sha": "5673c31961433cf1f49fb218b4e781eea1ac3896",
+    "path": "dist/FU_Turkce_v0.45.1_Beta.zip",
+    "bytes": 1304950,
+    "sha256": "1fca02415295f9e8ef366173a99495d194597973524bed065c89c807d338ed90",
+    "git_blob_sha": "822c0177724f000bab3e151471eb64323f663e18",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "8c6e43620f4f400675811be1130e368a305811c0a25576f49189d6f6f7d3f40b",
-  "catalog_sha256": "3f5d88354a35182f155b59bd99dccd0720f6f63e75ac6be612e28b71060c4b74",
+  "install_tree_sha256": "65213415b3496036bd41c2a3490f64936c762cb9151a254fadefc021249cc224",
+  "catalog_sha256": "186aea0abc632dbe4a288f127f8c9e4b77995a20731cdc1d034aba6e12550aee",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -34,10 +34,10 @@
   "in_game_lqa": "NOT TESTED",
   "translated_display_fields": 8024,
   "patched_assets": 2276,
-  "raw_override_assets": 6,
-  "raw_script_display_strings": 55,
-  "total_localized_display_units": 8079,
-  "target_assets_total": 2282,
+  "raw_override_assets": 7,
+  "raw_script_display_strings": 57,
+  "total_localized_display_units": 8081,
+  "target_assets_total": 2283,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -1944,6 +1944,46 @@
         "layered_source": true,
         "source_patch": "objects/crafting/upgradeablecraftingobjects/craftingmedical/craftingmedical.object.patch",
         "external_base_verified": true
+      }
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fujungleslowImmunity/name",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+      }
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fumudslowImmunity/name",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+      }
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/iceslipImmunity/name",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+      }
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/slushslowImmunity/name",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+      }
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/snowslowImmunity/name",
+      "qa": {
+        "allow_control_fix": true,
+        "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
       }
     },
     {
