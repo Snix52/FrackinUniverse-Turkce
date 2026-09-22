@@ -320,3 +320,10 @@ Oyun içi LQA ayrı bir aşamadır.
 - Test edilmiş kaynak commit: `a887a9647662318c6aa47939182c9516f3eb7150`. Kalıcı CI workflow güncellemeleri aynı çalışma dalında ayrıca eklendi; geçici v0.46 workflowları silindi.
 - Generated çıktı elle değiştirilmedi. v0.46 paket/evidence değeri main merge ve yayın buildinden sonra `dist/build-evidence.json` ile kanonikleşecektir.
 - Oyun içi LQA: **NOT TESTED**.
+
+## v0.46.1 terminoloji bakım checkpoint
+- Generic Jungle -> Tropik Orman LOCKED.
+- Eski karşılık kaynak, manifest, test, dokümantasyon ve katalog katmanlarında geriye dönük temizlendi.
+- Evernight Jungle gibi özel görev/konum adları korunur.
+- Katalog sürümü 0.46.1-beta; structured alan sayısı değişmez: 8.153.
+- Oyun içi LQA: NOT TESTED.
