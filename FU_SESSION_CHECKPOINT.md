@@ -227,5 +227,46 @@ Oyun içi LQA ayrı bir aşamadır.
   - Pulse Jump için proje onaylı Türkçe özel ad olmadığı için **Pulse Jump Tech'i** biçiminde korunur.
 - Oyun içi LQA: **NOT TESTED**.
 
-## v0.45 sonraki adım
-Build & QA ile Remaining Scope Audit'i doğrula. Beklenen sonuç: **Görevler confirmed = 0 alan**.
+## v0.45 doğrulama sonucu
+Feature/fix zinciri:
+- `c5c5a53` - görünmez görevleri audit kapsamından çıkar
+- `025946b` - runtime-inaktif görevleri audit kapsamından çıkar
+- `aa3a335` - görev confirmed satırlarını audit raporuna ekle
+- `cfbb01c` - v0.45 kalan görev metinlerini kapat
+- `b5974d7` - doğrulanmış build/package refresh
+
+Build evidence:
+- translation version: **0.45.0-beta**
+- structured fields: **8.024**
+- patch assets: **2.276**
+- raw override assets: **6**
+- raw script strings: **55**
+- toplam yerelleştirilmiş görünür birim: **8.079**
+- static QA: **PASS**
+- pinned source validation: **PASS**
+- ZIP integrity: **PASS**
+- install-tree parity: **PASS**
+- package: `dist/FU_Turkce_v0.45.0_Beta.zip`
+- package sha256: `ef426c4fac78f82113f469d6ec5599aebb427e6500bbaafad6541f722df5f9cb`
+- Build & QA run: **35702963628 / SUCCESS**
+- Remaining Scope Audit run: **35702963616 / SUCCESS**
+- oyun içi LQA: **NOT TESTED**
+
+## v0.45 sonrası audit
+Kalan doğrulanmış **Görevler** kapsamı:
+- **0 asset**
+- **0 alan**
+
+Genel audit:
+- kalan doğrulanmış kapsam: **12.907 asset / 50.848 alan**
+- review havuzu: **508 asset / 4.200 alan**
+- Lua inceleme havuzu: **35 asset / 171 literal**
+
+## Sonraki başlangıç noktası
+v0.46 için temiz tek-paket adayı: **Irklar ve SAIL/AI**
+- **167 asset**
+- **262 doğrulanmış alan**
+- **247 benzersiz kaynak metin**
+
+Alan sayısı çalışma protokolündeki 250-300 bandına tam oturuyor. Çeviri öncesi species/raceeffect ile gerçek SAIL/AI görünür metinlerini runtime bağlamına göre ayır; teknik stat/ID alanlarını dahil etme.
+Oyun içi LQA ayrı bir aşamadır.
