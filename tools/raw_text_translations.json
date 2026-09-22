@@ -285,6 +285,89 @@
           "new": "widget.setText(\"racialLabel\", \"Irk Özellikleri - \" .. racialName)"
         }
       ]
+    },
+    {
+      "asset": "interface/scripted/spaceStation/spaceStation.lua",
+      "source_blob_sha": "18c0a56b26c7278d559fa7d38f222754d55560c5",
+      "replacements": [
+        {
+          "old": "\"ERROR - No station object found\"",
+          "display_en": "ERROR - No station object found",
+          "display_tr": "HATA - İstasyon nesnesi bulunamadı",
+          "expected_count": 1,
+          "new": "\"HATA - İstasyon nesnesi bulunamadı\""
+        },
+        {
+          "old": "\"Your pixels: \"",
+          "display_en": "Your pixels:",
+          "display_tr": "Pikselin:",
+          "expected_count": 1,
+          "new": "\"Pikselin: \""
+        },
+        {
+          "old": "\"Station stock: \"",
+          "display_en": "Station stock:",
+          "display_tr": "İstasyon stoğu:",
+          "expected_count": 1,
+          "new": "\"İstasyon stoğu: \""
+        },
+        {
+          "old": "\"Your stock:     \"",
+          "display_en": "Your stock:",
+          "display_tr": "Stokun:",
+          "expected_count": 1,
+          "new": "\"Stokun:     \""
+        },
+        {
+          "old": "\"^red;ERROR -^reset;\\nWrong 'type' received in 'commandProcessor' > 'elseif command == \\\"Special\\\" then'\"",
+          "display_en": "ERROR - Wrong type received in commandProcessor / Special",
+          "display_tr": "HATA - commandProcessor içinde yanlış type alındı / Special",
+          "expected_count": 1,
+          "new": "\"^red;HATA -^reset;\\n'commandProcessor' içinde yanlış 'type' alındı > 'elseif command == \\\"Special\\\" then'\""
+        },
+        {
+          "old": "\"No item selected.\\nHow the fuck did you achieve this?\\nSeriously, I'm impressed.\\n\\nReport this I guess?\"",
+          "display_en": "No item selected. How the fuck did you achieve this? Seriously, I'm impressed. Report this I guess?",
+          "display_tr": "Hiçbir eşya seçilmedi. Bunu nasıl becerdin lan? Cidden etkilendim. Sanırım bunu raporla?",
+          "expected_count": 3,
+          "new": "\"Hiçbir eşya seçilmedi.\\nBunu nasıl becerdin lan?\\nCidden etkilendim.\\n\\nSanırım bunu raporla?\""
+        },
+        {
+          "old": "\"ERROR - Attempted to trade while no item was selected in function 'tradeA'\"",
+          "display_en": "ERROR - Attempted to trade while no item was selected in function 'tradeA'",
+          "display_tr": "HATA - 'tradeA' işlevinde eşya seçili değilken takas denenmiş",
+          "expected_count": 1,
+          "new": "\"HATA - 'tradeA' işlevinde eşya seçili değilken takas denenmiş\""
+        },
+        {
+          "old": "\"ERROR - Attempted to trade while no item was selected in function 'tradeB'\"",
+          "display_en": "ERROR - Attempted to trade while no item was selected in function 'tradeB'",
+          "display_tr": "HATA - 'tradeB' işlevinde eşya seçili değilken takas denenmiş",
+          "expected_count": 1,
+          "new": "\"HATA - 'tradeB' işlevinde eşya seçili değilken takas denenmiş\""
+        },
+        {
+          "old": "\"Lvl \"",
+          "display_en": "Lvl",
+          "display_tr": "Sv.",
+          "expected_count": 2,
+          "new": "\"Sv. \""
+        },
+        {
+          "old": "\"Required: \"",
+          "display_en": "Required:",
+          "display_tr": "Gerekli:",
+          "expected_count": 2,
+          "new": "\"Gerekli: \""
+        },
+        {
+          "old": "\"Fully upgraded!\"",
+          "display_en": "Fully upgraded!",
+          "display_tr": "Tamamen yükseltildi!",
+          "expected_count": 2,
+          "new": "\"Tamamen yükseltildi!\""
+        }
+      ]
     }
   ]
 }

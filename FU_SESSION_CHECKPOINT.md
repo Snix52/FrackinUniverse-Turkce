@@ -1,66 +1,40 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - v0.41 Arayüz çalışması. Son sağlam sürüm v0.40.0-beta.
+22 Eylül 2026 - v0.41 Space Station değişiklik seti hazırlandı.
 
-## v0.41 hedefi
-Tek sistem: Space Station.
+## v0.41 kapsamı
+Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
-Pinned FU kaynağı:
-- repository: `sayterdarkwynd/FrackinUniverse`
-- commit: `329e714b3fe87571055c8ad7aa38135d199d3317`
-- declared version: 6.5.8
+- Structured: **250 alan**
+  - `spaceStation.config`: 14
+  - `texts.config`: 188
+  - `spaceStationData.config`: 48
+- Lua runtime: **16 oluşum / 11 benzersiz source-locked replacement**
+- Toplam v0.41: **266 görünür metin oluşumu**
 
-## Doğrulanmış kapsam
-Toplam hedef: **261 görünür metin birimi**
+## Bilinçli kapsam dışı
+- Eski Quest dalı: kod mevcut fakat ana `defaultButtonStates` menüsünde Quest düğmesi yok.
+- `spaceStationData.config/quests` bu nedenle alınmadı.
+- `texts.config/generic/chat4` ve `generic/chat5`: uzun dış eser alıntıları, manuel inceleme bekliyor.
 
-### Structured: 250
-- `interface/scripted/spaceStation/spaceStation.config`: 14 audit-confirmed alan / 12 benzersiz kaynak metin.
-- `interface/scripted/spaceStation/texts.config`: 188 canlı alan.
-  - Runtime `spaceStation.lua` tarafından doğrudan okunuyor.
-  - `defaultButtonStates`: Chat / Shop / Trade Goods / Special / Goodbye canlı.
-  - Irk bazlı welcome, chat, station-type special, cantAfford, enhancer ve mercenary metinleri canlı.
-  - `generic/chat4` ve `generic/chat5` uzun dış eser alıntıları içerdiği için v0.41 kapsamından çıkarıldı; manuel inceleme bekliyor.
-- `interface/scripted/spaceStation/spaceStationData.config`: 48 canlı alan.
-  - 18 medical special: ad + açıklama = 36.
-  - 6 military special: ad + açıklama = 12.
+## Teknik korumalar
+- `{STATIONNAME}`, `[(playername)]`, `[(pause)N]` ve renk kodları korunur.
+- `commandProcessor`, `Special`, `tradeA`, `tradeB` gibi teknik Lua kimlikleri çevrilmez.
+- Stat terminolojisi mevcut proje kararlarıyla eşleştirildi.
+- Lua script mantığı değişmez; yalnız exact source-locked görünür literal replacement uygulanır.
 
-### Lua runtime: 11 benzersiz metin
-Asset: `interface/scripted/spaceStation/spaceStation.lua`
-- ERROR - No station object found
-- Your pixels:
-- Station stock:
-- Your stock:
-- Wrong type / Special hata metni
-- No item selected... hata/fallback metni
-- tradeA no-selection hata metni
-- tradeB no-selection hata metni
-- Lvl
-- Required:
-- Fully upgraded!
-
-Lua metinleri `tools/raw_text_translations.json` source-locked replacement sistemiyle ele alınacak; script mantığı değiştirilmeyecek.
-
-## Runtime doğrulaması
-- `spaceStation.lua`, `spaceStation.config`, `spaceStationData.config` ve `texts.config` dosyalarını doğrudan yüklüyor.
-- Eski Quest dalı Lua içinde mevcut, fakat `texts.config/defaultButtonStates` ana menüsünde Quest düğmesi yok.
-- Quest metinleri ve `spaceStationData.config/quests` v0.41'e alınmayacak.
-- `scientificSpecial` bazı ırklarda literal `deprecated` değerini taşıyor ve station-type welcome akışında okunabildiği için görünür kaynak olarak ayrıca değerlendirilecek.
-
-## Teknik plan
-1. `tools/v041_translations.json`: 250 structured satır.
-2. `tools/ceviriler.json`: aynı 250 satır append, translation_version = 0.41.0-beta.
-3. `tools/raw_text_translations.json`: Space Station Lua için 11 source-locked replacement.
-4. `tools/build_validate.py`: v0.41 field allowlist + duplicate guard.
-5. `tools/generate_v041.py`: pinned source üzerinden kapsam/field guard.
-6. `tools/tests/test_v041.py`: structured kapsam, runtime exclusion ve Lua replacement testleri.
-7. Dar QA sonrası tek feature commit.
+## Değişiklik seti
+- `tools/v041_translations.json`
+- `tools/ceviriler.json`
+- `tools/raw_text_translations.json`
+- `tools/raw_overrides/interface/scripted/spaceStation/spaceStation.lua`
+- `tools/build_validate.py`
+- `tools/generate_v041.py`
+- `tools/tests/test_v041.py`
 
 ## Sonraki başlangıç noktası
-Çeviri tablosunu üret; placeholder/format kodlarını koru:
-- `{STATIONNAME}`
-- `[(playername)]`
-- `[(pause)N]`
-- `^color;...^reset;`
-
-Pet House v0.41'e alınmayacak; Space Station tek başına hedef paket boyutunu doldurdu.
+Feature commit/CI sonrasında:
+1. v0.41 ve full QA sonuçlarını doğrula.
+2. Audit kalan Arayüz havuzunu yeniden say.
+3. Pet House ve sonraki UI grubuna geç.
