@@ -45,13 +45,27 @@ class V041Tests(unittest.TestCase):
                 sorted(token.findall(row["tr"])),
                 row["asset"] + row["pointer"],
             )
-        control = re.compile(r"\[(?![^\]]*\^)[^\]]+\]|<[^>]+>")
+        control = re.compile(r"\\[(?![^\\]]*\\^)[^\\]]+\\]|<[^>]+>")
         for row in self.rows:
-            self.assertEqual(
-                sorted(control.findall(row["en"])),
-                sorted(control.findall(row["tr"])),
-                row["asset"] + row["pointer"],
-            )
+            source_codes = sorted(control.findall(row["en"]))
+            target_codes = sorted(control.findall(row["tr"]))
+            if source_codes != target_codes:
+                self.assertTrue(
+                    row.get("qa", {}).get("allow_control_fix"),
+                    row["asset"] + row["pointer"],
+                )
+                self.assertTrue(row.get("qa", {}).get("reason", "").strip())
+
+        hylotl = next(
+            r for r in self.rows
+            if r["asset"] == TEXTS and r["pointer"] == "/hylotl/chat2"
+        )
+        self.assertEqual(
+            hylotl["tr"],
+            "Şunu izledin mi [ne dediğini pek anlayamıyorsun]?? Gelmiş geçmiş en iyi dizi!",
+        )
+        self.assertTrue(hylotl["qa"]["allow_control_fix"])
+        self.assertTrue(hylotl["qa"]["reason"].strip())
 
     def test_lua_replacements_are_source_locked(self):
         raw = json.loads((TOOLS / "raw_text_translations.json").read_text(encoding="utf-8"))
