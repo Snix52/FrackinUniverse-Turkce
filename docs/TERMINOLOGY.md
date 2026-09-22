@@ -523,6 +523,8 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Frost Burn | Silah durum etkisi | Durum | Ayaz Yanığı | Don Yanması | LOCKED | Soğuk kaynaklı durum etkisi |
 | Oceanite / Thanatite / Nhydri | Elduu malzeme ve model adları | Özel ad | Kaynaktaki yazım korunur | Okyanusit / Tanatit / Nhidri | LOCKED | İşlevsel silah sınıfı ayrıca çevrilir |
 
+| Enhancer | Space Station tıbbi sistemi | Sistem / UI | Güçlendirici | Enhancer | LOCKED | Tıbbi istasyonda karaktere uzun süreli durum etkisi uygulayan hizmet |
+
 ## Kural
 
 Oyuncuya gösterilen metinde Türkçe adın yanına İngilizce açıklama eklenmez.
