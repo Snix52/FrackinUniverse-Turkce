@@ -97,3 +97,9 @@ Oyun içi LQA ayrı bir aşamadır.
 
 ## v0.43 sonraki adım
 Build & QA ile Remaining Scope Audit sonuçlarını doğrula. CI yeşilse generated build/package çıktısını yenile ve checkpoint'i nihai sonuçlarla kapat.
+
+
+### v0.43 CI düzeltmesi
+- İlk regresyon koşusu `Request All-1` içindeki `-1` işaretli sayısının Türkçede kaybolduğunu yakaladı; **Tümünü İste -1** olarak düzeltildi.
+- Tam pinned-source QA, `mechassemblygui.config` hedefinin FU ağacında tam dosya değil `mechassemblygui.config.patch` katmanı olduğunu yakaladı.
+- İlgili 3 alan layered-source olarak işaretlendi ve pinned patch blobu `cde45dd1767885e222158d75eb96c024139e7237` ile provenance kaydına bağlandı.

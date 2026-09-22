@@ -2142,7 +2142,7 @@
     "zb/researchTree/madness.config": "30a1c6c798245e482263626f665cda88ded2a15b",
     "zb/researchTree/researchTree.config": "5f66d5a7f42d3c268690a914840a853118712b73"
   },
-  "validation_note": "v0.30: 2062 pinned FU patch asseti ile 24 katmanlı/harici taban asseti kayıtlıdır. Aktif araştırma ekipmanı kapanışındaki 413 yeni asset, pinned FU 6.5.8 Git blob SHA değerleriyle kaydedildi. ceviriler.json içindeki bütün kaynak alanları build_validate.py tarafından exact test/replace işlemleriyle doğrulanır; kaynak farkı derlemeyi durdurur.",
+  "validation_note": "v0.30: 2062 pinned FU patch asseti ile 25 katmanlı/harici taban asseti kayıtlıdır. Aktif araştırma ekipmanı kapanışındaki 413 yeni asset, pinned FU 6.5.8 Git blob SHA değerleriyle kaydedildi. ceviriler.json içindeki bütün kaynak alanları build_validate.py tarafından exact test/replace işlemleriyle doğrulanır; kaynak farkı derlemeyi durdurur.",
   "layered_assets": {
     "objects/crafting/woodencookingtable/woodencookingtable.object": {
       "source_patch": "objects/crafting/woodencookingtable/woodencookingtable.object.patch",
@@ -2361,6 +2361,12 @@
         "blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376"
       },
       "note": "v0.16 Shoggoth görevinin Erimiş Çekirdek hedefini gerçek vanilla envanter adıyla eşlemek için kısa ad ve açıklama exact doğrulandı."
+    },
+    "interface/scripted/mechassembly/mechassemblygui.config": {
+      "source_patch": "interface/scripted/mechassembly/mechassemblygui.config.patch",
+      "github_blob_sha": "cde45dd1767885e222158d75eb96c024139e7237",
+      "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
+      "note": "FU vanilla mechassembly GUI üzerinde çalışır; v0.43'te çevrilen Module, Module Bonuses ve Colours değerleri pinned FU patchinden exact doğrulanır."
     }
   }
 }
