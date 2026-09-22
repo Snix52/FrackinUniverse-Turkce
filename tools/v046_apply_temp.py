@@ -212,6 +212,75 @@ if "if (a,p) in V046_RACES_SAIL_FIELDS" not in s:
     if allowed_needle not in s:
         raise ValueError("build allowed insertion point missing")
     s = s.replace(allowed_needle, allowed_replace, 1)
+
+source_block = """        if args.source_dir:
+            source=args.source_dir/a
+            if source.is_file():
+                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            elif all(r.get('qa',{}).get('layered_source') for r in rs):
+                # FU bazı vanilla assetleri yalnızca .patch katmanıyla değiştirir; hedef .object FU kaynak ağacında bulunmaz.
+                # Bu alanların kaynak provenansı ledger qa.source_patch / external_base_verified ile ayrıca kilitlenir.
+                pass
+            else:
+                raise FileNotFoundError(source)
+"""
+source_replacement = """        if args.source_dir:
+            source=args.source_dir/a
+            v046_layered = all(
+                (a, r['pointer']) in V046_RACES_SAIL_FIELDS
+                and r.get('qa',{}).get('layered_source')
+                for r in rs
+            )
+            if v046_layered:
+                # v0.46'da bazı vanilla/FU hedeflerinin hem base asseti hem de
+                # runtime'da onu değiştiren .patch katmanı bulunur. Görünür
+                # kaynak metin patch'ten geliyorsa base dosyaya karşı test
+                # etmek yanlış negatif üretir; exact source_patch değeri burada
+                # doğrudan doğrulanır.
+                patch_cache = {}
+                for r in rs:
+                    source_patch = r.get('qa',{}).get('source_patch')
+                    if not source_patch:
+                        raise ValueError('v0.46 layered source patch eksik: '+a+r['pointer'])
+                    patch_path = args.source_dir/source_patch
+                    if not patch_path.is_file():
+                        raise FileNotFoundError(patch_path)
+                    if source_patch not in patch_cache:
+                        patch_cache[source_patch] = parse_jsonc(
+                            patch_path.read_text(encoding='utf-8-sig')
+                        )
+                    found = None
+                    for source_op in patch_cache[source_patch]:
+                        if not isinstance(source_op,dict) or 'value' not in source_op:
+                            continue
+                        source_path = str(source_op.get('path',''))
+                        if source_path == r['pointer']:
+                            found = source_op['value']
+                            continue
+                        if source_path and r['pointer'].startswith(source_path+'/'):
+                            try:
+                                found = read_at(
+                                    source_op['value'],
+                                    r['pointer'][len(source_path):]
+                                )
+                            except (KeyError,IndexError,TypeError,ValueError):
+                                pass
+                    if found != r['en']:
+                        raise ValueError(
+                            'v0.46 layered kaynak uyuşmazlığı: '+a+r['pointer']
+                        )
+            elif source.is_file():
+                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
+            elif all(r.get('qa',{}).get('layered_source') for r in rs):
+                # Eski katmanlı kapsamların kendi sürüm provenance testleri korunur.
+                pass
+            else:
+                raise FileNotFoundError(source)
+"""
+if "v046_layered = all(" not in s:
+    if source_block not in s:
+        raise ValueError("build layered-source block missing")
+    s = s.replace(source_block, source_replacement, 1)
 build_path.write_text(s, encoding="utf-8")
 
 generator = r'''#!/usr/bin/env python3
