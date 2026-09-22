@@ -4,6 +4,7 @@ name: jungle terminology cleanup
 # retry: player-facing-scan
 # retry: test-indent
 # retry: reuse-locked-test
+# retry: eof-newlines
 on:
   push:
     branches: [fix/jungle-terminology]
@@ -207,6 +208,11 @@ jobs:
           - Oyun içi LQA: NOT TESTED.
           '''
           checkpoint.write_text(text+'\n',encoding='utf-8')
+
+          # Keep docs at exactly one trailing newline so git diff --check stays clean.
+          for path in (ROOT/'docs'/'DECISIONS.md', ROOT/'FU_SESSION_CHECKPOINT.md', ROOT/'README.md'):
+              text=path.read_text(encoding='utf-8').rstrip()+ '\n'
+              path.write_text(text,encoding='utf-8')
 
           sys.path.insert(0,str(TOOLS))
           from rule_data import render_terminology
