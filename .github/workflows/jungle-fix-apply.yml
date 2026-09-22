@@ -1,5 +1,6 @@
 name: jungle terminology cleanup
 # retry: v030-schema
+# retry: v030-schema-2
 on:
   push:
     branches: [fix/jungle-terminology]
@@ -96,9 +97,9 @@ jobs:
           changed=0
           for spec in v030.values():
               if spec.get('asset') in armor_assets:
-                  if 'Jungle/Mud Slows' not in spec.get('description_en',''):
-                      raise ValueError('v0.30 source drift: '+spec.get('asset',''))
-                  spec['description_tr']=spec['description_tr'].replace('Orman/Çamur Yavaşlatması','Tropik Orman/Çamur Yavaşlatması')
+                  if 'Orman/Çamur Yavaşlatması' not in spec.get('description',''):
+                      raise ValueError('v0.30 translation drift: '+spec.get('asset',''))
+                  spec['description']=spec['description'].replace('Orman/Çamur Yavaşlatması','Tropik Orman/Çamur Yavaşlatması')
                   changed+=1
           if changed!=3:
               raise ValueError('Expected 3 v0.30 monster plating rows, got '+str(changed))
