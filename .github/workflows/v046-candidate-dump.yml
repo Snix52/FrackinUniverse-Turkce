@@ -1,0 +1,69 @@
+name: v046 candidate dump
+on:
+  push:
+    branches: [work/v046-races-sail]
+permissions:
+  contents: read
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Fetch pinned FU
+        run: |
+          PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
+          git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
+          git -C fu_source checkout --detach "$PIN"
+      - name: Dump v0.46 candidates
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'tools')
+          import audit_remaining as a
+          result = a.audit(Path('fu_source').resolve(), Path('tools/ceviriler.json').resolve())
+          rows = []
+          translated, _ = a.load_translations(Path('tools/ceviriler.json'))
+          for path in sorted(Path('fu_source').rglob('*')):
+              if not path.is_file():
+                  continue
+              rel = path.relative_to('fu_source').as_posix()
+              if a.excluded_path(__import__('pathlib').PurePosixPath(rel)):
+                  continue
+              if path.suffix.lower() in a.BINARY_SUFFIXES or path.stat().st_size > 8_000_000:
+                  continue
+              try:
+                  raw = path.read_text(encoding='utf-8-sig')
+              except Exception:
+                  continue
+              if not raw.lstrip().startswith(('{','[')):
+                  continue
+              try:
+                  data = a.parse_jsonc(raw)
+              except Exception:
+                  continue
+              for c in a.candidates_from_data(rel, data):
+                  if c.asset in a.V018_DEAD_OBJECT_ASSETS or c.asset in a.V020_INACTIVE_QUEST_ASSETS or c.asset in a.NONVISIBLE_QUEST_ASSETS or c.asset in a.AUDIT_EXCLUDED_PATHS:
+                      continue
+                  if a.audit_excluded_candidate(c.asset, c.pointer) or a.nonvisible_research_candidate(c.asset, c.pointer):
+                      continue
+                  if c.confidence != 'confirmed' or c.category != 'Irklar ve SAIL/AI':
+                      continue
+                  if (c.asset, c.pointer) in translated:
+                      continue
+                  rows.append({'asset':c.asset,'pointer':c.pointer,'source':c.value,'origin':c.origin,'key':c.key})
+          uniq = {(r['asset'],r['pointer']):r for r in rows}
+          rows = [uniq[k] for k in sorted(uniq)]
+          out = {'count':len(rows),'assets':len({r['asset'] for r in rows}),'unique_sources':len({r['source'] for r in rows}),'rows':rows}
+          Path('v046_candidates.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(out['assets'], out['count'], out['unique_sources'])
+          PY
+      - uses: actions/upload-artifact@v7
+        with:
+          name: v046-candidates
+          path: v046_candidates.json
+          retention-days: 2
