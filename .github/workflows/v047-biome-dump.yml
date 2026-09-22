@@ -1,4 +1,4 @@
-name: v047 biome candidate dump
+name: v047 biome audit verification
 on:
   push:
     branches: [work/v047-biome-names]
@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 jobs:
-  dump:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -19,76 +19,37 @@ jobs:
           PIN="$(python -c 'import json; print(json.load(open("tools/kaynaklar.json"))["commit"])')"
           git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
           git -C fu_source checkout --detach "$PIN"
-      - name: Export exact remaining biome candidates
+      - name: Verify biome audit correction
         run: |
+          python -m compileall -q tools
+          python -m unittest tools.tests.test_audit_remaining -v
+          python tools/audit_remaining.py --source fu_source --json-output audit_output/kalan.json --md-output audit_output/KALAN.md
           python - <<'PY'
-          import json,sys
-          from collections import Counter,defaultdict
-          from pathlib import Path,PurePosixPath
-          sys.path.insert(0,'tools')
-          import audit_remaining as audit
-
-          translated,_=audit.load_translations(Path('tools/ceviriler.json'))
-          rows=[]
-          for path in sorted(Path('fu_source/biomes').rglob('*.biome')):
-              rel=PurePosixPath(path.relative_to('fu_source').as_posix())
-              if audit.excluded_path(rel):
-                  continue
-              data=audit.parse_jsonc(path.read_text(encoding='utf-8-sig'))
-              for r in audit.candidates_from_data(rel.as_posix(),data):
-                  key=(r.asset,r.pointer)
-                  if r.confidence=='confirmed' and r.category=='Biyom, zindan ve dünya sistemleri' and key not in translated:
-                      rows.append(r)
-          bykey={}
-          for r in rows:
-              key=(r.asset,r.pointer)
-              prev=bykey.get(key)
-              if prev is None or (prev.confidence=='review' and r.confidence=='confirmed'):
-                  bykey[key]=r
-          rows=[bykey[k] for k in sorted(bykey)]
-          if len(rows)!=288:
-              raise ValueError(f'biome candidate drift: {len(rows)} != 288')
-          assets={r.asset for r in rows}
-          if len(assets)!=288:
-              raise ValueError(f'biome asset drift: {len(assets)} != 288')
-
-          catalog=json.loads(Path('tools/ceviriler.json').read_text(encoding='utf-8'))
-          existing=defaultdict(set)
-          for r in catalog['translations']:
-              existing[r['en']].add(r['tr'])
-          locked=json.loads(Path('tools/locked_terms.json').read_text(encoding='utf-8'))
-          locked_by_source=defaultdict(list)
-          for t in locked['terms']:
-              if t.get('status')=='LOCKED':
-                  for src in t.get('source','').split(' / '):
-                      locked_by_source[src].append(t)
-
-          candidates=[]
-          for r in rows:
-              source=r.value
-              candidates.append({
-                  'asset':r.asset,'pointer':r.pointer,'en':source,
-                  'origin':r.origin,'key':r.key,
-                  'existing_tr':sorted(existing.get(source,())),
-                  'locked':locked_by_source.get(source,[]),
-              })
-          roots=Counter(PurePosixPath(r.asset).parts[1] if len(PurePosixPath(r.asset).parts)>1 else '' for r in rows)
-          pointer_counts=Counter(r.pointer for r in rows)
-          unique_sources=sorted({r.value for r in rows})
-          out={
-              'pinned_fu_commit':audit.PINNED_COMMIT,
-              'fields':len(rows),'assets':len(assets),
-              'unique_sources':len(unique_sources),
-              'subdir_counts':dict(sorted(roots.items())),
-              'pointer_counts':dict(pointer_counts),
-              'sources':unique_sources,
-              'candidates':candidates,
-          }
-          Path('v047_biome_candidates.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          print(json.dumps({k:out[k] for k in ('fields','assets','unique_sources','subdir_counts','pointer_counts')},ensure_ascii=False,indent=2))
+          import json
+          d=json.load(open('audit_output/kalan.json',encoding='utf-8'))
+          r=d['remaining']
+          biome_root=r['confirmed_by_source_root'].get('biomes',{'assets':0,'fields':0})
+          cat=r['confirmed_by_category']['Biyom, zindan ve dünya sistemleri']
+          if biome_root['fields'] != 0 or biome_root['assets'] != 0:
+              raise SystemExit(f"biomes root still confirmed: {biome_root}")
+          if cat['fields'] != 1952 or cat['assets'] != 740:
+              raise SystemExit(f"category drift: {cat}")
+          if r['confirmed_fields'] != 50298 or r['confirmed_assets'] != 12452:
+              raise SystemExit(f"overall drift: fields={r['confirmed_fields']} assets={r['confirmed_assets']}")
+          print(json.dumps({
+              'overall_confirmed_fields':r['confirmed_fields'],
+              'overall_confirmed_assets':r['confirmed_assets'],
+              'biome_category':cat,
+              'biomes_root':biome_root,
+              'review_fields':r['review_fields'],
+              'review_assets':r['review_assets'],
+          },ensure_ascii=False,indent=2))
           PY
+          git diff --check
       - uses: actions/upload-artifact@v7
         with:
-          name: v047-biome-candidates
-          path: v047_biome_candidates.json
+          name: v047-biome-audit-verified
+          path: |
+            audit_output/kalan.json
+            audit_output/KALAN.md
           retention-days: 3
