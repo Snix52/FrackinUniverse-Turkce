@@ -368,6 +368,19 @@
           "new": "\"Tamamen yükseltildi!\""
         }
       ]
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.lua",
+      "source_blob_sha": "caf30e8c3d6816984f0ea46f3486bf1942038c65",
+      "replacements": [
+        {
+          "old": "item.parameters.description = itemCfg.description .. \" Spawns a \" .. world.getObjectParameter(containerId, \"shipPetType\") .. \".\"",
+          "display_en": "Spawns a",
+          "display_tr": "Çağırdığı evcil hayvan:",
+          "expected_count": 1,
+          "new": "item.parameters.description = itemCfg.description .. \" Çağırdığı evcil hayvan: \" .. world.getObjectParameter(containerId, \"shipPetType\") .. \".\""
+        }
+      ]
     }
   ]
 }

@@ -544,3 +544,17 @@
 - `Greaves` için mevcut LOCKED **Baldırlık** kararı bütün envanter adlarına uygulandı; çoğul **Baldırlıkları** ve eksik tamlama eki kullanılan eski adlar tekil eşya adı biçiminde temizlendi.
 - `Skill Quiver` yazımındaki eski **Beceri Sadakı** biçimi Türkçe tamlama hatası olduğu için **Beceri Sadağı** olarak düzeltildi ve ilgili terminoloji kayıtları güncellendi.
 - `Teleporter` için LOCKED **Işınlayıcı** kararı korundu. Radyasyon silahı `Irradiator`, oyuncu tarafındaki ad çakışmasını önlemek için **Radyasyon Yayıcı** olarak kilitlendi.
+
+## 2026-09-22 - v0.42 işlevsel arayüzler ve Pet House
+
+- v0.41 sonrası kalan Arayüz havuzu dosya yolu üzerinden kör biçimde çevrilmedi. Pet House ile üretim/tezgâh/dükkân panelleri, pinned FU 6.5.8 kaynağındaki gerçek runtime referansları üzerinden yeniden ayrıştırıldı.
+- v0.42 kapsamı **260 yapılandırılmış alan / 46 asset** olarak kilitlendi: Pet House ana ve onay penceresinde 21 alan, runtime bağlantısı doğrulanmış 44 windowconfig panelinde 239 alan.
+- Audit şemasının otomatik olarak yakalamadığı fakat `fu_pethouse.lua` tarafından oyuncuya gösterildiği doğrulanan 7 Pet House config alanı ayrıca kapsama alındı: dört `popupMessages` metni ile `Always / Timer / Never` etkileşim adları.
+- Pet House Lua içindeki nesne açıklamasına eklenen `Spawns a` görünür parçası script mantığı değiştirilmeden source-locked ham çeviri olarak **Çağırdığı evcil hayvan:** biçiminde yerelleştirildi.
+- Exact path/runtime aramasında normal oyuncu akışına bağlantı bulunmayan yedi windowconfig v0.42 dışında bırakıldı: `craftingmech.config`, `extractionlab.config`, `fruitpress.config`, `kitchen.config`, `powerpress.config`, `samplingarray2.config`, `xenostation.config`. Dosyanın varlığı tek başına erişilebilirlik kanıtı sayılmadı.
+- `Buy` aynı kaynak metnin üç gerçek UI bağlamını taşıdığı için Translation Memory istisnası genişletildi: Arı Barınağı/radyo satıcılarında **Takas Et**, normal dükkânlarda **Satın Al**, Hiring Office'ta **İşe Al**.
+- Eylem etiketleri kısa ve işlevsel tutuldu: **Craft → Üret, Forge → Döv, Smelt → Ergit, Mash → Mayşele, Distill → Damıt, Ferment → Fermente Et**.
+- Panel başlıklarında kaynak configteki eski/alternatif ad yerine bağlı nesnenin oyuncuya zaten gösterilen onaylı Türkçe adı kullanıldı: **Murder-Twig'in Lezzetleri, Ruhun Mücevherleri, Kristal Füzyon İstasyonu, Lorewalker'ın Dükkânı, Sunum Tezgâhı, Orta Çağ Çalışma İstasyonu, Silene'nin Mineralleri**.
+- `Burger Fool`, `SuperPet`, `Starbucks`, `PROP PACK` gibi projede korunmuş marka/özel adlar korunur.
+- v0.42 structured alanlarının tamamı pinned FU commit `329e714b3fe87571055c8ad7aa38135d199d3317` üzerinden pointer bazında source-lock altındadır. Oyun içi panel genişliği, font ve bağlam LQA'sı ayrıca bekler.
+

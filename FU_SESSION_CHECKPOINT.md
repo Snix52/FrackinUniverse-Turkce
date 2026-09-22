@@ -1,68 +1,52 @@
 # FU Session Checkpoint
 
 ## Durum
-22 Eylül 2026 - **v0.41 Space Station tamamlandı ve doğrulandı.**
+22 Eylül 2026 - **v0.42 işlevsel arayüzler + Pet House feature seti commit öncesi hazır.**
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
+Taban repo commit: `a4f686fc700d99065a7fe5983eb4eda9fc146db0`.
 
-## v0.41 tamamlanan kapsam
-- Structured: **245 alan**
-  - `interface/scripted/spaceStation/spaceStation.config`: 14
-  - `interface/scripted/spaceStation/texts.config`: 183
-  - `interface/scripted/spaceStation/spaceStationData.config`: 48
-- Lua runtime: **16 oluşum / 11 benzersiz source-locked replacement**
-- v0.41 sayılan katkı: **261 görünür metin oluşumu** + command ID’leri bozmadan Lua üzerinden Türkçeleştirilen menü/işlem caption’ları
+## v0.42 kapsamı
+- Structured: **260 alan / 46 asset / 82 benzersiz kaynak metin**
+- Pet House:
+  - `fu_pethouse.config`: 16 alan
+  - `fu_pethouse_confirmation.config`: 5 alan
+  - `fu_pethouse.lua`: 1 source-locked görünür Lua parçası
+- Windowconfig: **44 runtime-bağlı panel / 239 alan**
+- Toplam sayılan v0.42 katkısı: **261 görünür metin birimi**
+
+## Runtime doğrulaması
+- 34 üretim/tezgâh configi gerçek nesne veya upgrade patch referansıyla doğrulandı.
+- 10 dükkân configi gerçek nesne referansıyla doğrulandı.
+- Pet House ana configi `fu_byospethouse.object` ve `newSail/fu_customFunctions.lua` tarafından kullanılıyor.
+- Pet House confirmation ve Lua bağlantıları ana configten doğrulandı.
 
 ## Bilinçli kapsam dışı
-- Eski Quest dalı: Lua kodu mevcut fakat `defaultButtonStates` ana menüsünde Quest düğmesi yok; normal panel akışından erişilemiyor.
-- `spaceStationData.config/quests` bu nedenle alınmadı.
-- `texts.config/generic/chat4` ve `generic/chat5`: uzun dış eser alıntıları; otomatik yerelleştirilmedi, manuel inceleme bekliyor.
+Runtime referansı bulunmayan:
+- `interface/windowconfig/craftingmech.config`
+- `interface/windowconfig/extractionlab.config`
+- `interface/windowconfig/fruitpress.config`
+- `interface/windowconfig/kitchen.config`
+- `interface/windowconfig/powerpress.config`
+- `interface/windowconfig/samplingarray2.config`
+- `interface/windowconfig/xenostation.config`
 
-## v0.41 sırasında yakalanan ve kapatılan QA sorunları
-- Runtime command güvenliği:
-  - `defaultButtonStates` içindeki `Chat`, `Shop`, `Trade Goods`, `Special`, `Goodbye` değerlerinin hem caption hem command data olarak kullanıldığı doğrulandı.
-  - Bu 5 değer structured çeviri kapsamından çıkarıldı ve teknik command ID olarak İngilizce korundu.
-  - Görünen Türkçe caption’lar Lua `modifyButtons({caption, command})` biçimiyle ayrıştırıldı; `Back`, `Buy`, `Sell`, `Hire Crew`, `Acquire`, `Remove`, `Med Brochure` akışları da aynı şekilde command-safe yerelleştirildi.
-- Translation Memory:
-  - Space Station `Buy` gerçek satın alma bağlamında **Satın Al**; Arı Barınağı/radyo satıcılarındaki **Takas Et** kullanımı bağlam istisnasıyla korundu.
-  - `Trade Goods` mevcut proje terimiyle **Ticaret Malları** olarak birleştirildi.
-  - `Special` menü etiketi **Özel**, gemi sınıfı **Özel Amaçlı Gemi** bağlam istisnasıyla kaydedildi.
-- `hylotl/chat2` içindeki `[you can quite make out what they're saying]` motor kontrol parçası kaynakla birebir korundu.
-- v0.41 regresyonuna CONTROL kodu karşılaştırması eklendi.
+## Teknik/terminoloji kararları
+- Pet House popup ve interactionType alanları audit'in otomatik havuzunda olmasa da Lua tarafından canlı gösterildiği için dahil edildi.
+- `groundPet.lua`, `techstation`, `shipPetType`, mod adı `Purchasable Pets` gibi teknik referanslar korunur.
+- `Buy`: Takas Et / Satın Al / İşe Al bağlamları Translation Memory'de açıkça ayrılır.
+- Craft → Üret; Forge → Döv; Smelt → Ergit; Mash → Mayşele; Distill → Damıt; Ferment → Fermente Et.
+- Bağlı nesne adlarıyla panel başlıkları eşitlendi.
 
-## Doğrulama sonucu
-Feature/fix zinciri:
-- command-ID güvenlik fixi: bu checkpoint sonrası ilgili fix commitinde
-- `e74cd04` - v0.41 Space Station feature
-- `3123c53` - TM bağlam düzeltmeleri
-- `5fc25c4` - Hylotl CONTROL koruması
-- `388f499` - doğrulanmış build/package refresh
+## Hazır kaynak blobları
+- v0.42 manifest: `71c0db9bb2ed7147b0107af47a3d6b325ad937ce`
+- güncel katalog (7.725 structured): `1dca49ed14164adad09d95c79ed933ff979e1d52`
+- raw text manifest: `e2a0695a1497ef68943fc1c2fc1262ba13f01248`
+- Pet House Lua override: `ea5a982e513d0230f059ea3ee742bffd712f6072`
+- TM exceptions: `3b062165b4e76d1dda09d8d6a76c04e10e218b29`
+- build validator: `85ddcfb762db9df0bd6fea8ac15d039f99d9db1d`
+- generator: `819df8b12ebfed945d0dcb75d5d3a2ed0d733f71`
+- v0.42 tests: `afee50fe09b7f5eb2ac4f4deee5f45bff2d8d2d0`
 
-Build evidence:
-- translation version: **0.41.0-beta**
-- structured fields: **7.465**
-- raw script strings: **54**
-- patch assets: **2.136**
-- raw override assets: **5**
-- static QA: **PASS**
-- pinned source validation: **PASS**
-- ZIP integrity: **PASS**
-- install-tree parity: **PASS**
-- oyun içi LQA: **NOT TESTED**
-
-## v0.41 sonrası audit
-Kalan doğrulanmış **Arayüz** kapsamı:
-- **141 asset**
-- **600 alan**
-- **257 benzersiz kaynak metin**
-
-Genel audit:
-- kalan doğrulanmış kapsam: 13.149 asset / 51.816 alan
-- review havuzu: 599 asset / 4.496 alan
-- Lua inceleme havuzu: 35 asset / 171 literal
-- parse hatası: 0
-
-## Sonraki başlangıç noktası
-v0.42 için yalnız kalan Arayüz havuzundan devam et.
-Öncelik: **Pet House + sıradaki küçük/orta canlı UI panelleri**, toplam hedef yine yaklaşık **200-300 doğrulanmış alan**.
-Yeni turda repo çapında yeniden keşif yapma; bu checkpoint ve son audit sonuçlarından devam et.
+## Sonraki adım
+Bu kaynakları tek atomik feature commit ile main'e bağla, ardından Build & QA ve Remaining Scope Audit sonuçlarını doğrula. CI yeşile dönmeden v0.42 tamamlandı sayma.

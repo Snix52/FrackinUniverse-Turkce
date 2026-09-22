@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.41.0-beta",
+  "translation_version": "0.42.0-beta",
   "note": "v0.30 aktif araştırma ekipmanı kapanışı: erken kalkanlar ve yan dallar, Kirhos/Lunari/Elduu/Skath/Vel'uuish silahları, EPP sırt ekipmanları ile Kademe 6-7 düğümlerindeki gerçek tarif destekli 413 assetin 826 görünür alanı yerelleştirildi. Toplam 6016 structured + 15 Lua, 2086 patch asset + 1 raw override. Oyun içi LQA bekliyor.",
   "translations": [
     {
@@ -53272,6 +53272,1826 @@
       "en": "There are people in this universe you want on your side. This person, is one of them.",
       "tr": "Bu evrende yanında olmasını isteyeceğin insanlar vardır. Bu da onlardan biri.",
       "section": "v0.41 Space Station arayüzü"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/addObjectPetToList/caption",
+      "en": "Add Pet To List",
+      "tr": "Evcil Hayvanı Listeye Ekle",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/capturePet/caption",
+      "en": "Capture With Pod",
+      "tr": "Kapsülle Yakala",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/changeObjectPet/caption",
+      "en": "Change Object Pet",
+      "tr": "Nesnedeki Evcil Hayvanı Değiştir",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/foodLikingsLabel/value",
+      "en": "Food Likings:",
+      "tr": "Sevdiği Yiyecekler:",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/interactionTypeLabel/value",
+      "en": "Interaction Type:",
+      "tr": "Etkileşim Türü:",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/petName/hint",
+      "en": "Name",
+      "tr": "Ad",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/randomiseSeed/caption",
+      "en": "Randomise Seed",
+      "tr": "Görünümü Rastgeleleştir",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/title/subtitle",
+      "en": "Configure your ship pet",
+      "tr": "Gemi evcil hayvanını yapılandır",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/title/title",
+      "en": "Pet Configuration",
+      "tr": "Evcil Hayvan Ayarları",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/popupMessages/noPod",
+      "en": "This requires an empty capture pod in your inventory.",
+      "tr": "Envanterinde boş bir Yakalama Kapsülü olmalı.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/popupMessages/captureFail",
+      "en": "Incompatible mod detected. Any mods that modify groundPet.lua can cause issues with catching ship pets.",
+      "tr": "Uyumsuz mod algılandı. groundPet.lua dosyasını değiştiren modlar gemi evcil hayvanlarını yakalarken sorun çıkarabilir.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/popupMessages/petMissing",
+      "en": "Can't find ship pet.",
+      "tr": "Gemi evcil hayvanı bulunamadı.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/popupMessages/invalidTechstation",
+      "en": "This SAIL is missing the necessary script changes. This either means that it uses a custom script, another mod is overwriting the techstation script or you have Purchasable Pets installed.",
+      "tr": "Bu S.A.I.L için gerekli script değişiklikleri eksik. Özel bir script kullanılıyor olabilir, başka bir mod techstation scriptinin üzerine yazıyor olabilir ya da Purchasable Pets kurulu olabilir.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/interactionTypes/0/name",
+      "en": "Always",
+      "tr": "Her Zaman",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/interactionTypes/1/name",
+      "en": "Timer",
+      "tr": "Zamanlayıcı",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/interactionTypes/2/name",
+      "en": "Never",
+      "tr": "Asla",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse_confirmation.config",
+      "pointer": "/cancelCaption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse_confirmation.config",
+      "pointer": "/message",
+      "en": "This will erase all pets that you added from objects. Are you sure you want to do this?",
+      "tr": "Nesnelerden eklediğin tüm evcil hayvanlar silinecek. Bunu yapmak istediğine emin misin?",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse_confirmation.config",
+      "pointer": "/okCaption",
+      "en": "Okay",
+      "tr": "Tamam",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse_confirmation.config",
+      "pointer": "/subtitle",
+      "en": "Reset pets added from objects",
+      "tr": "Nesnelerden eklenen evcil hayvanları sıfırla",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse_confirmation.config",
+      "pointer": "/title",
+      "en": "Reset Added Pets",
+      "tr": "Eklenen Evcil Hayvanları Sıfırla",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/armory.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/armory.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/armory.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/armory.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/beestation.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Assemble",
+      "tr": "Birleştir",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/beestation.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/beestation.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/beestation.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/boozekit.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/boozekit.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/boozekit.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/boozekit.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/chemlab.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/chemlab.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/chemlab.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/chemlab.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/clothingfabricator.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/clothingfabricator.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/clothingfabricator.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/clothingfabricator.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/coffee.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Assemble",
+      "tr": "Birleştir",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/coffee.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/coffee.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/coffee.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Just you, your ingredients and your hands ^green;[C]",
+      "tr": " ^#b9b5b2;Yalnızca sen, malzemelerin ve ellerin ^green;[C]",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crafting.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": " Basic Crafting",
+      "tr": " Temel Üretim",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingcrewshop.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "İşe Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingcrewshop.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingcrewshop.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingcrewshop.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingcrewshop.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Find the most in-demand crew in the sector!",
+      "tr": " Sektörün en çok aranan mürettebatını bul!",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingcrewshop.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Hiring Office",
+      "tr": " İşe Alım Ofisi",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Prepare",
+      "tr": "Hazırla",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PREVIEW",
+      "tr": "^#b9b5b2;ÖNİZLEME",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;ARTWORK",
+      "tr": "^#b9b5b2;ESER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Express yourself.",
+      "tr": " ^#b9b5b2;Kendini ifade et.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingeasel.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": " Artist's Easel",
+      "tr": " Ressam Şövalesi",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Prepare",
+      "tr": "Hazırla",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PREVIEW",
+      "tr": "^#b9b5b2;ÖNİZLEME",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;RELIC",
+      "tr": "^#b9b5b2;KALINTI",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Discover forgotten secrets",
+      "tr": " ^#b9b5b2;Unutulmuş sırları keşfet",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingesoteric.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": " Esoteric Research",
+      "tr": " Ezoterik Araştırma",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Just you, your ingredients and your hands ^green;[C]",
+      "tr": " ^#b9b5b2;Yalnızca sen, malzemelerin ve ellerin ^green;[C]",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingold.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": " Basic Crafting",
+      "tr": " Temel Üretim",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingslimecentrifuge.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Forge",
+      "tr": "Döv",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingslimecentrifuge.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingslimecentrifuge.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingslimecentrifuge.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingslimecentrifuge.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/craftingslimecentrifuge.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crystalloom.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Assemble",
+      "tr": "Birleştir",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crystalloom.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crystalloom.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/crystalloom.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/designlab.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/designlab.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/designlab.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/designlab.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/distill.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Distill",
+      "tr": "Damıt",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/distill.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/distill.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/distill.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ferment.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Ferment",
+      "tr": "Fermente Et",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ferment.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ferment.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ferment.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fissionfurnace.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Smelt",
+      "tr": "Ergit",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fissionfurnace.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fissionfurnace.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fissionfurnace.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fissionfurnace.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fissionfurnace.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fruitpressnew.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Mash",
+      "tr": "Mayşele",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fruitpressnew.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fruitpressnew.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fruitpressnew.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fu_anvil.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Assemble",
+      "tr": "Birleştir",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fu_anvil.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fu_anvil.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fu_anvil.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fuburgerfool.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fuburgerfool.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fuburgerfool.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fuburgerfool.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fuburgerfool.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " The galaxies least reputable fast food.",
+      "tr": " Galaksinin en itibarsız fast food'u.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fuburgerfool.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Burger Fool",
+      "tr": " Burger Fool",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodshopfloran.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodshopfloran.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodshopfloran.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodshopfloran.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodshopfloran.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Getss fressh meatss!",
+      "tr": " Tazze etler al!",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodshopfloran.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Sstabbed-Thingss Emporium",
+      "tr": " Saplanmış Şeyler Pazarı",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodstore.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodstore.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodstore.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodstore.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodstore.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Delicious and questionable foods.",
+      "tr": " Lezzetli ve şüpheli yiyecekler.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fufoodstore.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Tip-Toms Foodery",
+      "tr": " Murder-Twig'in Lezzetleri",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fugemshop.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fugemshop.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fugemshop.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fugemshop.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fugemshop.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " The finest in Gemcraft.",
+      "tr": " Mücevher işçiliğinin en iyisi.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fugemshop.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Vindee's Gems",
+      "tr": " Ruhun Mücevherleri",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fupetshop.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fupetshop.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fupetshop.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fupetshop.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fupetshop.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Premium quality chow made for pets, by pets, and from pets.",
+      "tr": " Evcil hayvanlar için, evcil hayvanlar tarafından ve evcil hayvanlardan yapılan birinci sınıf mama.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fupetshop.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " SuperPet",
+      "tr": " SuperPet",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/furniturestation.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/furniturestation.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/furniturestation.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/furniturestation.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/furniturestation.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "PRODUCT",
+      "tr": "ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/furniturestation.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "BLUEPRINTS",
+      "tr": "ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fushadowstore.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fushadowstore.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fushadowstore.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fushadowstore.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fushadowstore.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Sells...things.",
+      "tr": " Şeyler... satar.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fushadowstore.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Zxssxs..sxxZyyzx",
+      "tr": " Zxssxs..sxxZyyzx",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fustarbucks.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fustarbucks.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fustarbucks.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fustarbucks.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fustarbucks.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Overpriced, crappy coffee.",
+      "tr": " Fahiş fiyatlı, berbat kahve.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/fustarbucks.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Starbucks",
+      "tr": " Starbucks",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/gemstation.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/gemstation.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/gemstation.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/gemstation.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/gemstation.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Create crystalline forms.",
+      "tr": " Kristal biçimler oluştur.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/gemstation.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Gem Fusion Station",
+      "tr": " Kristal Füzyon İstasyonu",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/genesequencer.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/genesequencer.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/genesequencer.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/genesequencer.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/hypercompressor.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/hypercompressor.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/hypercompressor.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/hypercompressor.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/hypercompressor.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/hypercompressor.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/kirhosshop.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/kirhosshop.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/kirhosshop.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/kirhosshop.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/kirhosshop.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Potentially great savings!",
+      "tr": " Büyük tasarruf fırsatları!",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/kirhosshop.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Lorewalker's Trade-N-Trade",
+      "tr": " Lorewalker'ın Dükkânı",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/lavalampstation.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/lavalampstation.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/lavalampstation.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/lavalampstation.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/lavalampstation.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "PRODUCT",
+      "tr": "ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/lavalampstation.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "BLUEPRINTS",
+      "tr": "ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/mash.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Mash",
+      "tr": "Mayşele",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/mash.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/mash.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/mash.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "PRODUCT",
+      "tr": "ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "SCHEMATICS",
+      "tr": "ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": "  Does it all!",
+      "tr": "  Her işi görür!",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/medievalworkstation.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": "  MEDIEVAL WORKBENCH",
+      "tr": "  ORTA ÇAĞ ÇALIŞMA İSTASYONU",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/nanofabricator.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/nanofabricator.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/nanofabricator.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/nanofabricator.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Prepare",
+      "tr": "Hazırla",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "INGREDIENTS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;DISH",
+      "tr": "^#b9b5b2;YEMEK",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;RECIPE",
+      "tr": "^#b9b5b2;TARİF",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": " ^#b9b5b2;Display your food!",
+      "tr": " ^#b9b5b2;Yemeğini sergile!",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/platingfood.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": " Plating Table",
+      "tr": " Sunum Tezgâhı",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/powerstation.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/powerstation.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/powerstation.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/powerstation.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "CAN AFFORD",
+      "tr": "ALABİLİRSİN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "PRODUCT DESCRIPTION",
+      "tr": "ÜRÜN AÇIKLAMASI",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "PRODUCT",
+      "tr": "ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/windowtitle/subtitle",
+      "en": "^white;           Your one-stop-shop for furnishings and more!^white;",
+      "tr": "^white;           Mobilya ve daha fazlası için tek adres!^white;",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/ppshop.config",
+      "pointer": "/paneLayout/windowtitle/title",
+      "en": "                                       PROP PACK",
+      "tr": "                                       PROP PACK",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/prototyper.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/prototyper.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/prototyper.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/prototyper.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radien.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radien.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radien.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radien.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radienshop.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Buy",
+      "tr": "Satın Al",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radienshop.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Cancel",
+      "tr": "İptal",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radienshop.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radienshop.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "HAVE MATERIAL",
+      "tr": "MALZEME VAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radienshop.config",
+      "pointer": "/paneLayout/lblSubTitle/value",
+      "en": " Beautiful and delicious rocks.",
+      "tr": " Güzel ve lezzetli taşlar.",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/radienshop.config",
+      "pointer": "/paneLayout/lblTitle/value",
+      "en": " Seline's Mineral Shop",
+      "tr": " Silene'nin Mineralleri",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathforgecrafting.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Smelt",
+      "tr": "Ergit",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathforgecrafting.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathforgecrafting.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathforgecrafting.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathforgecrafting.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathforgecrafting.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathworktablecrafting.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Craft",
+      "tr": "Üret",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathworktablecrafting.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathworktablecrafting.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathworktablecrafting.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathworktablecrafting.config",
+      "pointer": "/paneLayout/lblProducttitle/value",
+      "en": "^#b9b5b2;PRODUCT",
+      "tr": "^#b9b5b2;ÜRÜN",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/skathworktablecrafting.config",
+      "pointer": "/paneLayout/lblSchematics/value",
+      "en": "^#b9b5b2;BLUEPRINTS",
+      "tr": "^#b9b5b2;ŞEMALAR",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/tomedais.config",
+      "pointer": "/paneLayout/btnCraft/caption",
+      "en": "Write",
+      "tr": "Yaz",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/tomedais.config",
+      "pointer": "/paneLayout/btnStopCraft/caption",
+      "en": "Stop",
+      "tr": "Durdur",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/tomedais.config",
+      "pointer": "/paneLayout/filter/hint",
+      "en": "Search",
+      "tr": "Ara",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/windowconfig/tomedais.config",
+      "pointer": "/paneLayout/lblProduct/value",
+      "en": "MATERIALS AVAILABLE",
+      "tr": "MEVCUT MALZEMELER",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
     }
   ]
 }
