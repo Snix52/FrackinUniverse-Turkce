@@ -152,6 +152,53 @@
           "tr": "Gizli Operasyon Gemisi"
         }
       ]
+    },
+    {
+      "en": "Buy",
+      "reason": "Arı Barınağı ve radyo satıcılarında düğme bir takas işlemini temsil eder; Space Station dükkân ve mal ekranında ise Piksel ile gerçek satın alma eylemidir.",
+      "variants": [
+        {
+          "asset": "interface/windowconfig/beerefuge.config",
+          "pointer": "/paneLayout/btnCraft/caption",
+          "tr": "Takas Et"
+        },
+        {
+          "asset": "objects/power/isn_radiostation/configs/isn_medicalvendor.config",
+          "pointer": "/paneLayout/btnCraft/caption",
+          "tr": "Takas Et"
+        },
+        {
+          "asset": "objects/power/isn_radiostation/configs/isn_seedsvendor.config",
+          "pointer": "/paneLayout/btnCraft/caption",
+          "tr": "Takas Et"
+        },
+        {
+          "asset": "interface/scripted/spaceStation/spaceStation.config",
+          "pointer": "/gui/goodsTradeList/children/itemList/schema/listTemplate/buyButton/caption",
+          "tr": "Satın Al"
+        },
+        {
+          "asset": "interface/scripted/spaceStation/spaceStation.config",
+          "pointer": "/gui/shopBuyButton/caption",
+          "tr": "Satın Al"
+        }
+      ]
+    },
+    {
+      "en": "Special",
+      "reason": "Gemi isim plakasında gemi sınıfı adı olarak Özel Amaçlı Gemi, Space Station ana menüsünde kısa eylem/sekme etiketi olarak Özel kullanılır.",
+      "variants": [
+        {
+          "asset": "interface/shipnameplate/fu_shipnameplate.config",
+          "pointer": "/shipTypes/27",
+          "tr": "Özel Amaçlı Gemi"
+        },
+        {
+          "asset": "interface/scripted/spaceStation/texts.config",
+          "pointer": "/defaultButtonStates/4",
+          "tr": "Özel"
+        }
+      ]
     }
   ]
 }

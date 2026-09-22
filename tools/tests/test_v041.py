@@ -62,7 +62,7 @@ class V041Tests(unittest.TestCase):
     def test_ui_and_stat_terminology(self):
         by = {(r["asset"], r["pointer"]): r["tr"] for r in self.rows}
         self.assertEqual(by[(CONFIG, "/gui/investButton/caption")], "Yatır")
-        self.assertEqual(by[(TEXTS, "/defaultButtonStates/3")], "Mal Ticareti")
+        self.assertEqual(by[(TEXTS, "/defaultButtonStates/3")], "Ticaret Malları")
         descriptions = "\n".join(
             r["tr"] for r in self.rows
             if r["asset"] == DATA and r["pointer"].endswith("/4")
