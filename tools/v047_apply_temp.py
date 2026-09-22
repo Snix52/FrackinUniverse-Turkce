@@ -565,7 +565,6 @@ def main():
     write_generator()
     write_tests()
     update_build_validator()
-    update_workflows()
     update_old_test_version_gate()
     update_docs()
     cleanup_temp()
