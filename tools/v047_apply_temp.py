@@ -551,13 +551,9 @@ def update_docs():
     checkpoint.write_text(text, encoding="utf-8")
 
 def cleanup_temp():
-    for path in (
-        ROOT / ".github" / "workflows" / "v047-plants-liquids-dump.yml",
-        ROOT / ".github" / "workflows" / "v047-apply.yml",
-        TOOLS / "v047_apply_temp.py",
-    ):
-        if path.exists():
-            path.unlink()
+    path = TOOLS / "v047_apply_temp.py"
+    if path.exists():
+        path.unlink()
 
 def main():
     ap = argparse.ArgumentParser()
