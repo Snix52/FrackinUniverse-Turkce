@@ -17,3 +17,9 @@ Her test kaydına oyun/FU sürümü, kullanılan `source_commit`, ZIP SHA256, ek
 | Ayrı anlamlar | Incinerator nesnesi/silahı, Field Generator nesnesi/EPP'si, Oxygen malzemesi/tehlikesi ayrımını incele. | NOT TESTED |
 
 Tek bir ekranın geçmesi bütün oyun içi LQA'nın geçtiğini göstermez. Test edilmemiş satırlar NOT TESTED kalır. Hatalar ayrı issue'da gerçek asset/pointer, beklenen/görülen sonuç ve kanıtla kaydedilir.
+
+## v0.45.1 hedefli oyun içi kontrol (NOT TESTED)
+- Tricorder: Cangıl, Çamur, Buz, Sulu Kar ve Kar `[Zemin]` etiketlerini aç; satır taşması ve stat gösterimini kontrol et.
+- Mech yakıtı: dolu depoyu doldurmayı dene; başka yakıt türünü eklemeyi dene. Türkçe uyarı ve tüketim olmamasını kontrol et. Sonra uyumlu yakıtla normal doldurmayı dene.
+- SAIL ve istasyon: Türkçe karakterleri yazı animasyonunda, atlamada ve renkli metinlerde kontrol et.
+- Gate/ship repair görevleri: düzeltilen Türkçe ifadeleri ve renk sınırlarını kontrol et.

@@ -30,7 +30,7 @@ Paketleme scripti gerçek build raporunu kaynak SHA, katalog SHA256, mod ağacı
 
 ## Publication yarışları
 
-Main workflow concurrency eski işi iptal eder. Publication scripti ayrıca başlangıç kaynak SHA'sını tutar, generated commit öncesinde ve push öncesinde remote main'i yeniden fetch eder. Daha yeni kaynak varsa skip eder; rebase veya force-push yoktur. Push reddedilirse ancak remote'un gerçekten ilerlediği doğrulanınca skip edilir. Yetki, ağ veya koruma hataları sessiz başarıya çevrilmez. Generated commit `[skip ci]` kullanır ve çıktı yolları build trigger'ında dışlanır.
+Main workflow concurrency eski işi iptal eder. Publication scripti ayrıca başlangıç kaynak SHA'sını tutar, generated commit öncesinde ve push öncesinde remote main'i yeniden fetch eder. Daha yeni kaynak varsa skip eder; rebase veya force-push yoktur. Push reddedilirse ancak remote'un gerçekten ilerlediği doğrulanınca skip edilir. Yetki, ağ veya koruma hataları sessiz başarıya çevrilmez. Generated commit `[skip ci]` kullanır. İnsan eliyle generated-only değişikliklerin sessizce atlanmaması için main build trigger'ında paths-ignore kullanılmaz. `check_generated_changes.py`, incoming diff içindeki generated değişikliğini çıktı ağacı yenilenmeden önce reddeder.
 
 Remaining scope workflow ana, raw ve sürümlü katalog değişikliklerinde çalışır. Raporu workflow artifact'ına yükler; `main`e ikinci bir generated commit yazan yarışçı oluşturmaz.
 
@@ -54,3 +54,18 @@ git diff --check
 Yerel kaynak ağacı FU pininde gerçek bir git checkout'u olmalıdır. `build_output` önceden varsa üretici onu yanlışlıkla ezmemek için durur. Yeni sürümde paket adı yeni sürüme göre seçilir; CI bunu katalogdan hesaplar.
 
 `in_game_lqa: NOT TESTED` korunur. Yapılacak manuel kontroller: `docs/LQA_CHECKLIST.md`.
+
+## v0.45.1 ek güvenlik sözleşmesi
+`tools/qa_raw.py` Lua parçalarını çalıştırmadan string ve kod parçalarına ayırır. Raw manifestte her replacement için `text_literals` sıfır tabanlı görünür string indeksleridir. Diğer stringler ve bütün string-dışı kod/yorumlar exact kalır. `display_en/display_tr` açıklama metadata'sıdır; gerçek QA bu alanlara güvenmek yerine ayrıştırılan gerçek Lua stringleri üzerinde çalışır. Raw format düzeltmesi için genel bypass yoktur.
+
+Gerçek raw stringler, `/replacements/<index>/literals/<slot>` bağlamıyla LOCKED ve ortak TM kontrolüne girer. Research eylemi yalnız tek gerçek widget bağlamında tanımlıdır. Doğru kanonik terim, aynı cümledeki ayrı yasaklı varyantı maskelemez; kanonik ifadenin içinde kalan kısa yasaklı alt-sözcük yanlış pozitif sayılmaz.
+
+Kontrol-token farklılıkları `text_integrity.json/control_exceptions` içinde tam satıra bağlıdır. Kaynak/hedef/asset/pointer değişince istisna geçersizdir. `[Fire]`, `<item>` ve `[(pause)...]` korunur; görünür `[Tile]` etiketi yalnız beş belgeli stat adı için çevrilir.
+
+Raw manifest pinleri merkezi FU piniyle karşılaştırılır. Full-source build, raw/runtime kaynak blob SHA'larını gerçek dosya baytlarıyla karşılaştırır; bütün raw şablonlar pinned build ile aynı metni üretmelidir.
+
+`pr-qa.yml` tüm PR değişikliklerinde salt okunur çalışır; paket yayımlamaz, ref güncellemez ve credential saklamaz. PR'lar kaynak değişiklikleri taşır; `FU_Turkce/`, `dist/` ve generated raporlara doğrudan değişiklik kabul edilmez. Main build aynı kuralı çıktı yenilemeden önce uygular. Botun mevcut source-SHA yarış koruması korunur.
+
+Test ortamı: Python 3.11 ve işletim sistemi Lua 5.4 kitaplığı. Ubuntu: `sudo apt-get install liblua5.4-0`. Lua kitaplığı yoksa davranış testleri atlanmaz, hata verir. Full-source build sonrasında `FU_TEST_MOD_DIR=build_output/FU_Turkce python -m unittest discover -s tools/tests -p 'test_lua_behavior.py' -v` komutu yeni üretilen Lua'yı da test eder. Bunlar Starbound API stub'larıyla yapılan testlerdir; gerçek oyun içi LQA değildir.
+
+GitHub branch protection/required checks ayrı sunucu ayarıdır. Workflow eklemek tek başına zorunlu merge engeli oluşturmaz. Bu ayar, mevcut generated yayın botunun erişimi dikkate alınarak uygulanmalıdır.

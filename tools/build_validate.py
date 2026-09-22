@@ -10,6 +10,7 @@ from collections import Counter, defaultdict
 from pathlib import Path, PurePosixPath
 from rule_data import rule as load_rule
 from qa_integrity import validate_project
+from qa_raw import verify_source_blob, validate_manifest_pin
 from write_build_evidence import verify_source, record_validation
 
 COLOR=re.compile(r'\^[^;\s]*;')
@@ -684,6 +685,7 @@ def main():
     raw_manifest_path=Path(__file__).with_name('raw_text_translations.json')
     if raw_manifest_path.is_file():
         raw_manifest=json.loads(raw_manifest_path.read_text(encoding='utf-8'))
+        validate_manifest_pin(raw_manifest, Path(__file__).parent)
         for spec in raw_manifest.get('assets',[]):
             a=spec['asset']
             if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:raise ValueError('Güvensiz ham asset yolu: '+a)
@@ -691,6 +693,7 @@ def main():
             if args.source_dir:
                 source=args.source_dir/a
                 if not source.is_file():raise FileNotFoundError(source)
+                verify_source_blob(spec, source)
                 content=source.read_text(encoding='utf-8-sig')
                 for r in replacements:
                     expected=int(r.get('expected_count',1))
@@ -712,6 +715,7 @@ def main():
     runtime_manifest_path=Path(__file__).with_name('raw_runtime_overrides.json')
     if runtime_manifest_path.is_file():
         runtime_manifest=json.loads(runtime_manifest_path.read_text(encoding='utf-8'))
+        validate_manifest_pin(runtime_manifest, Path(__file__).parent)
         for spec in runtime_manifest.get('assets',[]):
             a=spec['asset']
             if PurePosixPath(a).is_absolute() or '..' in PurePosixPath(a).parts or '\\' in a:
@@ -719,6 +723,7 @@ def main():
             if args.source_dir:
                 source=args.source_dir/a
                 if not source.is_file():raise FileNotFoundError(source)
+                verify_source_blob(spec, source)
                 content=raw_assets.get(a, source.read_text(encoding='utf-8-sig'))
                 for r in spec.get('replacements',[]):
                     expected=int(r.get('expected_count',1))
@@ -734,6 +739,12 @@ def main():
                     if content.count(r['old'])!=0 or content.count(r['new'])!=expected:
                         raise ValueError('Runtime override şablon doğrulaması başarısız: '+a)
             raw_assets[a]=content
+
+    if args.source_dir:
+        for asset, content in raw_assets.items():
+            template = Path(__file__).parent / 'raw_overrides' / asset
+            if not template.is_file() or template.read_text(encoding='utf-8-sig') != content:
+                raise ValueError('Raw template/pinned build drift: ' + asset)
 
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()

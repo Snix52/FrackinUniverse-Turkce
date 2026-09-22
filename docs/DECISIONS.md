@@ -597,3 +597,10 @@
 - Vanilla item kimliği harici kaynakta doğrulanan Station Transponder, görev bağlamında **İstasyon Transponderi** olarak yerelleştirildi.
 - Kestrel/Falcon/Eagle/Condor gemi sınıf adları özel ad olarak korunur; lisans ifadesi Türkçeleştirilir.
 - Oyun içi LQA ayrı aşamadır.
+
+## 2026-09-22: v0.45.1 ana kontrol bakım kararı
+- Beş stat adındaki `[Tile]` teknik token değil görünür zemin etiketi: `[Zemin]`. Teknik status anahtarları değiştirilmedi. İstisnalar tam alan ve iki dildeki metne bağlıdır.
+- Mech yakıtında iki uyarı: “Depo dolu.” ve “Depoda farklı türde yakıt var; önce depoyu boşalt.”; fuel callback'leri ve sayısal işlemler değişmez.
+- `mechanics` görev bağlamında “teknisyenlerimiz”; “bir şeylerden yakınıyor”; görev hedefi “Erchius Kristali sevkiyatını geri al.”. Illegal ship upgrade 3 metnindeki nokta sonrası boşluk düzeltildi.
+- LOCKED karşılıklar değişmedi. Raw Research düğmesi mevcut Araştır eylem bağlamına dar biçimde bağlandı.
+- Geriye dönük QA tüm ana katalog ve sürüm manifestleriyle yürütülür; dilin tamamına insan LQA onayı verildiği anlamına gelmez.
