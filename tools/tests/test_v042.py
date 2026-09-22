@@ -68,7 +68,7 @@ class V042Tests(unittest.TestCase):
         self.assertEqual(self.by[("interface/windowconfig/armory.config","/paneLayout/btnCraft/caption")]["tr"],"Üret")
         self.assertEqual(self.by[("interface/windowconfig/fuburgerfool.config","/paneLayout/btnCraft/caption")]["tr"],"Satın Al")
         self.assertEqual(self.by[("interface/windowconfig/craftingcrewshop.config","/paneLayout/btnCraft/caption")]["tr"],"İşe Al")
-        self.assertEqual(self.by[("interface/windowconfig/fu_anvil.config","/paneLayout/btnCraft/caption")]["tr"],"Döv")
+        self.assertEqual(self.by[("interface/windowconfig/fu_anvil.config","/paneLayout/btnCraft/caption")]["tr"],"Birleştir")\n        self.assertEqual(self.by[("interface/windowconfig/craftingslimecentrifuge.config","/paneLayout/btnCraft/caption")]["tr"],"Döv")
         self.assertEqual(self.by[("interface/windowconfig/fissionfurnace.config","/paneLayout/btnCraft/caption")]["tr"],"Ergit")
         self.assertEqual(self.by[("interface/windowconfig/mash.config","/paneLayout/btnCraft/caption")]["tr"],"Mayşele")
         self.assertEqual(self.by[("interface/windowconfig/distill.config","/paneLayout/btnCraft/caption")]["tr"],"Damıt")
