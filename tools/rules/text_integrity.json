@@ -19,5 +19,112 @@
       "tr": "Dengesi kötü ama keskinliğini korur. Daha ölümcül hâle getirmek için yükselt.",
       "reason": "Kaynakta iki cümle arasında literal sekme var; Türkçe normal cümle aralığı kullanır."
     }
+  ],
+  "control_exceptions": [
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/text",
+      "en": "<^red;A voice speaks in your head:^reset; Most upsetting. Expedition was a failure. Could not locate ^orange;Ancient Remote^reset; to sell at exorbitant price. If mortal biped locates one, I would be most grateful to purchase it.>",
+      "tr": "<^red;Zihninde bir ses konuşuyor:^reset; Çok can sıkıcı. Sefer başarısız oldu. Fahiş fiyata satılacak ^orange;Kadim Kumanda^reset; bulunamadı. Ölümlü iki ayaklı bir tane bulursa satın almaktan büyük memnuniyet duyarım.>",
+      "reason": "Kaynakta <...> teknik tag değil, Shadow konuşma biçimidir; dış açı parantezler Türkçede korunur."
+    },
+    {
+      "asset": "quests/fu_questlines/outpost/scienceoutpost_shadowShop.questtemplate",
+      "pointer": "/completionText",
+      "en": "<Great joy is felt by this being. Appreciation will be shown with gratuitous monetary payment. Fleshlings appreciate such gestures. With it you could purchase goods and services.>",
+      "tr": "<Bu varlık büyük sevinç hissediyor. Minnettarlık, gereğinden fazla para ödenerek gösterilecek. Et bedenliler böyle jestleri takdir eder. Bununla mal ve hizmet satın alabilirsin.>",
+      "reason": "Kaynakta <...> teknik tag değil, Shadow konuşma biçimidir; dış açı parantezler Türkçede korunur."
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_ancientsentry.questtemplate",
+      "pointer": "/title",
+      "en": "Aberrant Sentry [BOSS]",
+      "tr": "Bozulmuş Nöbetçi [PATRON]",
+      "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_mamapoptop.questtemplate",
+      "pointer": "/title",
+      "en": "Mama Poptop [BOSS]",
+      "tr": "Anne Poptop [PATRON]",
+      "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_megarachnid.questtemplate",
+      "pointer": "/title",
+      "en": "Megarachnid [BOSS]",
+      "tr": "Megarachnid [PATRON]",
+      "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+    },
+    {
+      "asset": "quests/fu_questlines/battle/monsters/fuquest_warbot.questtemplate",
+      "pointer": "/title",
+      "en": "Warbot [BOSS]",
+      "tr": "Savaş Robotu [PATRON]",
+      "reason": "Oyuncuya görünen [BOSS] etiketi Türkçe [PATRON] olarak yerelleştirildi."
+    },
+    {
+      "asset": "quests/tech/dash/combatmaneuvering1.questtemplate",
+      "pointer": "/completionText",
+      "en": "The strange artifact washes some sort of energy over you when you step near. You feel stronger! ^orange;[You can now double-tap left or right to activate a short dodge]^reset;",
+      "tr": "Tuhaf eserin yanına yaklaştığında bedenini bir tür enerji kaplıyor. Kendini daha güçlü hissediyorsun! ^orange;[Kısa bir kaçınma hareketi yapmak için artık sola veya sağa iki kez basabilirsin]^reset;",
+      "reason": "Mevcut görünür açıklama/dekorasyon çevirisi; teknik placeholder değildir. Tam satıra bağlı istisna."
+    },
+    {
+      "asset": "zb/newSail/data.config",
+      "pointer": "/TextData/strings/intro",
+      "en": "Welcome to S.A.I.L.\n\nUsing this interface you can check the ship's status, view your currency ^green;[BALANCE]^reset;, begin ^green;[MISSIONS]^reset;, manage your ^green;[CREW]^reset;, and access other useful ^green;[MISC]^reset; features.",
+      "tr": "S.A.I.L'e hoş geldin.\n\nBu arayüzden geminin durumunu kontrol edebilir, ^green;[BAKİYE]^reset; bölümünde para birimlerini görebilir, ^green;[GÖREVLER]^reset; başlatabilir, ^green;[MÜRETTEBAT]^reset; yönetebilir ve ^green;[DİĞER]^reset; özelliklere erişebilirsin.",
+      "reason": "Köşeli parantez içindeki BALANCE/MISSIONS/CREW/MISC ifadeleri teknik token değil, SAIL menü etiketleridir; Türkçe buton adlarıyla birlikte çevrilir."
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fujungleslowImmunity/name",
+      "en": "^green;Jungle [Tile]",
+      "tr": "^green;Cangıl [Zemin]",
+      "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/fumudslowImmunity/name",
+      "en": "^brown;Mud [Tile]",
+      "tr": "^brown;Çamur [Zemin]",
+      "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/iceslipImmunity/name",
+      "en": "^#4BF3FD;Ice [Tile]",
+      "tr": "^#4BF3FD;Buz [Zemin]",
+      "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/slushslowImmunity/name",
+      "en": "^#4BF3FD;Slush [Tile]",
+      "tr": "^#4BF3FD;Sulu Kar [Zemin]",
+      "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/statuses/snowslowImmunity/name",
+      "en": "^#4BF3FD;Snow [Tile]",
+      "tr": "^#4BF3FD;Kar [Zemin]",
+      "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+    },
+    {
+      "asset": "interface/scripted/spaceStation/texts.config",
+      "pointer": "/hylotl/chat2",
+      "en": "Have you seen [you can quite make out what they're saying]?? Its the best show ever!",
+      "tr": "Şunu izledin mi [ne dediğini pek anlayamıyorsun]?? Gelmiş geçmiş en iyi dizi!",
+      "reason": "Köşeli parantez içindeki ifade teknik kontrol kodu değil, Hylotl'un anlaşılmayan konuşmasını anlatan oyuncuya görünür sahne notudur; parantez korunarak Türkçeleştirilir."
+    },
+    {
+      "asset": "interface/scripted/tunableoredetector/tunableoredetector.config",
+      "pointer": "/gui/lb_currentOre/text",
+      "en": "<^yellow;Loading...^reset;>",
+      "tr": "<^yellow;Yükleniyor...^reset;>",
+      "reason": "Mevcut görünür açıklama/dekorasyon çevirisi; teknik placeholder değildir. Tam satıra bağlı istisna."
+    }
   ]
 }

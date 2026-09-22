@@ -7,6 +7,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 from rule_data import TOOLS, render_terminology
+from qa_raw import CONTROL, validate_raw, validate_manifest_pin
 
 COLOR = re.compile(r'\^[^;\s]*;')
 NUMBER = re.compile(r'\d+(?:[.,]\d+)?')
@@ -49,6 +50,9 @@ def validate_format(row: dict, policy: dict) -> None:
     if tab_signature(en) != tab_signature(tr):
         if not any(bound_exception(row, x) for x in policy.get('tab_exceptions', [])):
             raise ValueError('TAB structure mismatch: ' + where)
+    if Counter(CONTROL.findall(en)) != Counter(CONTROL.findall(tr)):
+        if not any(bound_exception(row, x) for x in policy.get('control_exceptions', [])):
+            raise ValueError('Control token mismatch: ' + where)
     glyphs = policy.get('ui_glyphs', [])
     if icon_signature(en, glyphs) != icon_signature(tr, glyphs):
         raise ValueError('UI glyph mismatch: ' + where)
@@ -108,10 +112,16 @@ class Terminology:
             if len(allowed) != 1 or tr not in allowed:
                 raise ValueError('LOCKED terminology/context mismatch: ' + where + ' -> ' + repr(sorted(allowed)))
         for source_pattern, canonical, banned in self.phrases:
-            if not source_pattern.search(en) or canonical in tr.casefold():
+            if not source_pattern.search(en):
                 continue
+            # A canonical phrase may contain a shorter forbidden word. Only
+            # that overlapping occurrence is safe, never a separate occurrence.
+            canonical_spans = [m.span() for m in re.finditer(
+                r'(?<!\w)' + re.escape(canonical) + r'(?!\w)', tr, re.I)]
             for variant, pattern in banned:
-                if pattern.search(tr):
+                if any(not any(a <= m.start() and m.end() <= b
+                               for a, b in canonical_spans)
+                       for m in pattern.finditer(tr)):
                     raise ValueError('LOCKED forbidden variant ' + repr(variant) + ': ' + where)
 
 
@@ -153,14 +163,12 @@ def validate_project(rows: list[dict], tools: Path = TOOLS) -> dict:
     for row in all_rows:
         validate_format(row, format_policy)
         terminology.validate(row)
-    validate_translation_memory(all_rows, tm_policy)
-    raw_rows = []
-    for spec in json.loads((tools / 'raw_text_translations.json').read_text(encoding='utf-8'))['assets']:
-        for i, replacement in enumerate(spec['replacements']):
-            raw = {'asset': spec['asset'], 'pointer': '/replacements/' + str(i),
-                   'en': replacement['old'], 'tr': replacement['new']}
-            validate_format(raw, format_policy)
-            raw_rows.append(raw)
+    raw_manifest = json.loads((tools / 'raw_text_translations.json').read_text(encoding='utf-8'))
+    validate_manifest_pin(raw_manifest, tools)
+    raw_rows = validate_raw(raw_manifest, format_policy, validate_format)
+    for row in raw_rows:
+        terminology.validate(row)
+    validate_translation_memory(all_rows + raw_rows, tm_policy)
     doc = tools.parent / 'docs/TERMINOLOGY.md'
     if doc.read_text(encoding='utf-8') != render_terminology(term_policy):
         raise ValueError('Generated terminology document is stale; run qa_integrity.py --write-docs')
