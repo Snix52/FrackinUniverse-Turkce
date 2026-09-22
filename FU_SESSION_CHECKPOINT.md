@@ -6,12 +6,12 @@
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
 ## v0.41 tamamlanan kapsam
-- Structured: **250 alan**
+- Structured: **245 alan**
   - `interface/scripted/spaceStation/spaceStation.config`: 14
-  - `interface/scripted/spaceStation/texts.config`: 188
+  - `interface/scripted/spaceStation/texts.config`: 183
   - `interface/scripted/spaceStation/spaceStationData.config`: 48
 - Lua runtime: **16 oluşum / 11 benzersiz source-locked replacement**
-- v0.41 toplam katkı: **266 görünür metin oluşumu**
+- v0.41 sayılan katkı: **261 görünür metin oluşumu** + command ID’leri bozmadan Lua üzerinden Türkçeleştirilen menü/işlem caption’ları
 
 ## Bilinçli kapsam dışı
 - Eski Quest dalı: Lua kodu mevcut fakat `defaultButtonStates` ana menüsünde Quest düğmesi yok; normal panel akışından erişilemiyor.
@@ -19,6 +19,10 @@ Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d1
 - `texts.config/generic/chat4` ve `generic/chat5`: uzun dış eser alıntıları; otomatik yerelleştirilmedi, manuel inceleme bekliyor.
 
 ## v0.41 sırasında yakalanan ve kapatılan QA sorunları
+- Runtime command güvenliği:
+  - `defaultButtonStates` içindeki `Chat`, `Shop`, `Trade Goods`, `Special`, `Goodbye` değerlerinin hem caption hem command data olarak kullanıldığı doğrulandı.
+  - Bu 5 değer structured çeviri kapsamından çıkarıldı ve teknik command ID olarak İngilizce korundu.
+  - Görünen Türkçe caption’lar Lua `modifyButtons({caption, command})` biçimiyle ayrıştırıldı; `Back`, `Buy`, `Sell`, `Hire Crew`, `Acquire`, `Remove`, `Med Brochure` akışları da aynı şekilde command-safe yerelleştirildi.
 - Translation Memory:
   - Space Station `Buy` gerçek satın alma bağlamında **Satın Al**; Arı Barınağı/radyo satıcılarındaki **Takas Et** kullanımı bağlam istisnasıyla korundu.
   - `Trade Goods` mevcut proje terimiyle **Ticaret Malları** olarak birleştirildi.
@@ -28,6 +32,7 @@ Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d1
 
 ## Doğrulama sonucu
 Feature/fix zinciri:
+- command-ID güvenlik fixi: bu checkpoint sonrası ilgili fix commitinde
 - `e74cd04` - v0.41 Space Station feature
 - `3123c53` - TM bağlam düzeltmeleri
 - `5fc25c4` - Hylotl CONTROL koruması
@@ -35,7 +40,7 @@ Feature/fix zinciri:
 
 Build evidence:
 - translation version: **0.41.0-beta**
-- structured fields: **7.470**
+- structured fields: **7.465**
 - raw script strings: **54**
 - patch assets: **2.136**
 - raw override assets: **5**

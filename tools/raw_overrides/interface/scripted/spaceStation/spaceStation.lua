@@ -532,7 +532,7 @@ function commandProcessor(wd)
 		populateShopList()
 		textTyper.init(textData, "")
 		widget.setText("text", "")
-		modifyButtons("Sell", false, false, false, false, "Back")
+		modifyButtons({"Sat", "Sell"}, false, false, false, false, {"Geri", "Back"})
 
 	elseif command == "Trade Goods" then
 		populateGoodsList()
@@ -541,7 +541,7 @@ function commandProcessor(wd)
 
 		widget.setVisible("playerPixels", true)
 		widget.setPosition("playerPixels", self.data.pixelDisplayTradePos)
-		modifyButtons(false, false, false, false, false, "Back")
+		modifyButtons(false, false, false, false, false, {"Geri", "Back"})
 
 	elseif command == "Special" then
 		local type = objectData.stationType
@@ -553,7 +553,7 @@ function commandProcessor(wd)
 			if objectData.mercHired then
 				textTyper.init(textData, textData[objectData.stationRace].noMoreMerc)
 			else
-				modifyButtons("Hire Crew", false, false, false, false, "Back")
+				modifyButtons({"Mürettebat Kirala", "Hire Crew"}, false, false, false, false, {"Geri", "Back"})
 				widget.setButtonEnabled("button1", false)
 				widget.setVisible("specialsScrollList", true)
 				populateSpecialList()
@@ -561,7 +561,7 @@ function commandProcessor(wd)
 			end
 
 		elseif type == "medical" then
-			modifyButtons("Acquire", "Remove", "Med Brochure", false, false, "Back")
+			modifyButtons({"Uygula", "Acquire"}, {"Kaldır", "Remove"}, {"Tıbbi Broşür", "Med Brochure"}, false, false, {"Geri", "Back"})
 			widget.setButtonEnabled("button1", false)
 
 			if not status.statusProperty("fuEnhancerActive", false) then
@@ -581,13 +581,13 @@ function commandProcessor(wd)
 			populateScientificList()
 
 			textTyper.init(textData, textData[objectData.stationRace]["scientificSpecial"])
-			modifyButtons(false, false, false, false, false, "Back")
+			modifyButtons(false, false, false, false, false, {"Geri", "Back"})
 
 		elseif type == "trading" then
 			specialsTableInit()
 			updateBar(true)
 			updateBar(false)
-			modifyButtons(false, false, false, false, false, "Back")
+			modifyButtons(false, false, false, false, false, {"Geri", "Back"})
 		else
 			textTyper.init(textData, "^red;HATA -^reset;\n'commandProcessor' içinde yanlış 'type' alındı > 'elseif command == \"Special\" then'")
 			resetGUI()
@@ -674,7 +674,7 @@ function commandProcessor(wd)
 		populateShopList()
 		textTyper.init(textData, "")
 		widget.setText("text", "")
-		modifyButtons("Sell", false, false, false, false, "Back")
+		modifyButtons({"Sat", "Sell"}, false, false, false, false, {"Geri", "Back"})
 	elseif command == "Sell" then
 		resetGUI()
 
@@ -693,7 +693,7 @@ function commandProcessor(wd)
 
 		textTyper.init(textData, "")
 		widget.setText("text", "")
-		modifyButtons("Buy", false, false, false, false, "Back")
+		modifyButtons({"Satın Al", "Buy"}, false, false, false, false, {"Geri", "Back"})
 	elseif command == "Goodbye" then
 		pane.dismiss()
 	end
@@ -805,7 +805,7 @@ end
 -- Restores GUI to its default states (set default buttons in textData.defaultButtonStates)
 function resetGUI()
 	local btTbl = textData.defaultButtonStates
-	modifyButtons(btTbl[1], btTbl[2], btTbl[3], btTbl[4], btTbl[5], btTbl[6])
+	modifyButtons({"Sohbet", btTbl[1]}, btTbl[2], {"Dükkân", btTbl[3]}, {"Ticaret Malları", btTbl[4]}, {"Özel", btTbl[5]}, {"Hoşça Kal", btTbl[6]})
 
 	widget.setVisible("investEmptyBar", false)
 	widget.setVisible("investingFillBar", false)

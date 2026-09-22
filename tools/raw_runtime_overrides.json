@@ -13,6 +13,43 @@
           "expected_count": 1
         }
       ]
+    },
+    {
+      "asset": "interface/scripted/spaceStation/spaceStation.lua",
+      "source_blob_sha": "18c0a56b26c7278d559fa7d38f222754d55560c5",
+      "reason": "Space Station düğme caption'larını Türkçeleştirirken widget data içindeki İngilizce command ID'lerini koru.",
+      "replacements": [
+        {
+          "old": "modifyButtons(btTbl[1], btTbl[2], btTbl[3], btTbl[4], btTbl[5], btTbl[6])",
+          "new": "modifyButtons({\"Sohbet\", btTbl[1]}, btTbl[2], {\"Dükkân\", btTbl[3]}, {\"Ticaret Malları\", btTbl[4]}, {\"Özel\", btTbl[5]}, {\"Hoşça Kal\", btTbl[6]})",
+          "expected_count": 1
+        },
+        {
+          "old": "modifyButtons(\"Sell\", false, false, false, false, \"Back\")",
+          "new": "modifyButtons({\"Sat\", \"Sell\"}, false, false, false, false, {\"Geri\", \"Back\"})",
+          "expected_count": 2
+        },
+        {
+          "old": "modifyButtons(false, false, false, false, false, \"Back\")",
+          "new": "modifyButtons(false, false, false, false, false, {\"Geri\", \"Back\"})",
+          "expected_count": 3
+        },
+        {
+          "old": "modifyButtons(\"Hire Crew\", false, false, false, false, \"Back\")",
+          "new": "modifyButtons({\"Mürettebat Kirala\", \"Hire Crew\"}, false, false, false, false, {\"Geri\", \"Back\"})",
+          "expected_count": 1
+        },
+        {
+          "old": "modifyButtons(\"Acquire\", \"Remove\", \"Med Brochure\", false, false, \"Back\")",
+          "new": "modifyButtons({\"Uygula\", \"Acquire\"}, {\"Kaldır\", \"Remove\"}, {\"Tıbbi Broşür\", \"Med Brochure\"}, false, false, {\"Geri\", \"Back\"})",
+          "expected_count": 1
+        },
+        {
+          "old": "modifyButtons(\"Buy\", false, false, false, false, \"Back\")",
+          "new": "modifyButtons({\"Satın Al\", \"Buy\"}, false, false, false, false, {\"Geri\", \"Back\"})",
+          "expected_count": 1
+        }
+      ]
     }
   ]
 }

@@ -9,12 +9,17 @@ MANIFEST = TOOLS / "v041_translations.json"
 CATALOG = TOOLS / "ceviriler.json"
 ASSETS = {
     "interface/scripted/spaceStation/spaceStation.config": 14,
-    "interface/scripted/spaceStation/texts.config": 188,
+    "interface/scripted/spaceStation/texts.config": 183,
     "interface/scripted/spaceStation/spaceStationData.config": 48,
 }
 EXCLUDED = {
     ("interface/scripted/spaceStation/texts.config", "/generic/chat4"),
     ("interface/scripted/spaceStation/texts.config", "/generic/chat5"),
+    ("interface/scripted/spaceStation/texts.config", "/defaultButtonStates/0"),
+    ("interface/scripted/spaceStation/texts.config", "/defaultButtonStates/2"),
+    ("interface/scripted/spaceStation/texts.config", "/defaultButtonStates/3"),
+    ("interface/scripted/spaceStation/texts.config", "/defaultButtonStates/4"),
+    ("interface/scripted/spaceStation/texts.config", "/defaultButtonStates/5"),
 }
 
 def value_at(data, pointer):
@@ -33,8 +38,8 @@ def main():
     rows = manifest["translations"]
     if manifest["translation_version"] != "0.41.0-beta":
         raise ValueError("v0.41 sürüm bilgisi bozuk")
-    if len(rows) != 250:
-        raise ValueError(f"v0.41 alan sayısı değişti: {len(rows)} != 250")
+    if len(rows) != 245:
+        raise ValueError(f"v0.41 alan sayısı değişti: {len(rows)} != 245")
     if len({(r["asset"], r["pointer"]) for r in rows}) != 250:
         raise ValueError("v0.41 manifestinde yinelenen alan var")
 
