@@ -1,0 +1,19 @@
+name: v046 context dump
+on:
+  push:
+    branches: [work/v046-races-sail]
+permissions:
+  contents: read
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/upload-artifact@v7
+        with:
+          name: v046-context
+          path: |
+            tools/ceviriler.json
+            tools/locked_terms.json
+            tools/translation_memory_exceptions.json
+          retention-days: 2
