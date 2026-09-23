@@ -1,30 +1,30 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-23T16:54:57.271201+00:00",
-  "workflow_run_id": "35891744830",
-  "source_commit": "8ad56457a749f21b07910bf5723c9b10c7261299",
-  "translation_source_commit": "8ad56457a749f21b07910bf5723c9b10c7261299",
-  "translation_version": "0.51.0-beta",
+  "generated_at_utc": "2026-09-23T17:36:59.914741+00:00",
+  "workflow_run_id": "35896483538",
+  "source_commit": "e9fae791661e87acf085c3af89075200fefd1bac",
+  "translation_source_commit": "e9fae791661e87acf085c3af89075200fefd1bac",
+  "translation_version": "0.52.0-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "329e714b3fe87571055c8ad7aa38135d199d3317",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 9337,
-    "patch_assets": 2703,
+    "structured_fields": 9655,
+    "patch_assets": 2829,
     "raw_override_assets": 7,
     "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.51.0_Beta.zip",
-    "bytes": 1493928,
-    "sha256": "7d32ce404959a37380c157d8ad622bc9c4677b9c5db9ea43490b45a2d784ac90",
-    "git_blob_sha": "daef14d8287edf32cb60cfaf87637678b5b685d8",
+    "path": "dist/FU_Turkce_v0.52.0_Beta.zip",
+    "bytes": 1541411,
+    "sha256": "abc56ee3dced737e21d8ce27458e37123dd3ef2852372065446608f8ad5f8787",
+    "git_blob_sha": "31ea9fef8c4497c7b305b2960a9e083ddc28bda6",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "a4152615a63f999221a92ca9e1d545e4905e170b32b69f4f4251c13edad98fe4",
-  "build_inputs_sha256": "502e9d18bc834ae98ccf844de2bef67806d990d0b12aa30714ea70fcedf08a56",
-  "catalog_sha256": "257a412f5809d5b37365eaa4ae211a429d1f3b937c4b4f6cbfd5cbe600ce2256",
+  "install_tree_sha256": "407dc8ca9b2377712d41981f851c625d3138bcd6850b17f2221143b76a435502",
+  "build_inputs_sha256": "fb21618710bc6c9748a1218f4a166b74f6cf76fa3c1841195d495f91002a022f",
+  "catalog_sha256": "7eb6c0cd445c2ddfc6664f5c80eac1392e851f233afaa764e75f6dc3fb50d146",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -33,12 +33,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 9337,
-  "patched_assets": 2703,
+  "translated_display_fields": 9655,
+  "patched_assets": 2829,
   "raw_override_assets": 7,
   "raw_script_display_strings": 57,
-  "total_localized_display_units": 9394,
-  "target_assets_total": 2710,
+  "total_localized_display_units": 9712,
+  "target_assets_total": 2836,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -118,7 +118,8 @@
     "v0.48 ahşap yapı malzemeleri": 151,
     "v0.49 ahşap malzemeler": 227,
     "v0.50 arıcılık sistemi": 537,
-    "v0.51 platformlar": 99
+    "v0.51 platformlar": 99,
+    "v0.52 taş, toprak ve yapı blokları": 318
   },
   "checks": {
     "static_qa": "PASS",
@@ -2597,6 +2598,246 @@
       "qa": {
         "layered_source": true,
         "source_patch": "species/shadow.species.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock01.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock01.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock01.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock01.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock01.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock01.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock02.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock02.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock02.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock02.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock02.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock02.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock03.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock03.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock03.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock03.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock03.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock03.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock04.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock04.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock04.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock04.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock04.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock04.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock12.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock12.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock12.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock12.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock12.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock12.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock14.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock14.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock14.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock14.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock14.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock14.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock15.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock15.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock15.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock15.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock15.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock15.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock17.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock17.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock17.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock17.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock17.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock17.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock19.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock19.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock19.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock19.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock19.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock19.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock20.material",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock20.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock20.material",
+      "pointer": "/glitchDescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock20.material.patch"
+      }
+    },
+    {
+      "asset": "tiles/materials/rock20.material",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "tiles/materials/rock20.material.patch"
       }
     }
   ]
