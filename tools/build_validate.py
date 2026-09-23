@@ -306,6 +306,15 @@ V056_TILES_FIELDS = {
 if len(V056_TILES_FIELDS) != len(_V056_MANIFEST['translations']):
     raise ValueError('v0.56 karo manifestinde yinelenen alan var')
 
+_V057_MANIFEST = json.loads(
+    Path(__file__).with_name('v057_translations.json').read_text(encoding='utf-8')
+)
+V057_MONSTER_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V057_MANIFEST['translations']
+}
+if len(V057_MONSTER_FIELDS) != len(_V057_MANIFEST['translations']):
+    raise ValueError('v0.57 canavar manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -512,6 +521,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V057_MONSTER_FIELDS:
+        return True
     if (a,p) in V056_TILES_FIELDS:
         return True
     if (a,p) in V055_STRUCTURE_FIELDS:

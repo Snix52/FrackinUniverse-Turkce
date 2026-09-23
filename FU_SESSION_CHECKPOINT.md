@@ -9,6 +9,11 @@ Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sür�
 Bu checkpoint bir build kanıtı kopyası değildir; v0.42-v0.50 sürüm sonuçları ve
 "Sonraki başlangıç noktası" bölümleri tarihsel kayıtlardır.
 
+23 Eylül 2026: v0.57.0-beta walker ve flyer canavar çeviri adayı yerelde hazırlandı.
+Kapsam 477 alan / 239 asset / 344 benzersiz kaynak metin; bir değer mevcut katalog
+TM'sinden tekrar kullanıldı. Altı test varlığının debug alanı adaydan çıkarıldı.
+Sol kaynak/çeviri kontrolü, QA, paket build'i ve yayın bekleniyor.
+
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
 ## v0.42 tamamlanan kapsam
