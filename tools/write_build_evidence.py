@@ -49,6 +49,18 @@ def tree_digest(files: dict[str, bytes]) -> str:
     return digest.hexdigest()
 
 
+def build_inputs_digest() -> str:
+    """Bind evidence to validators, rules, manifests and raw templates as well as the catalog."""
+    files = {p.relative_to(TOOLS.parent).as_posix(): p.read_bytes()
+             for p in TOOLS.rglob('*')
+             if p.is_file() and p.suffix in ('.py', '.json', '.lua')
+             and '__pycache__' not in p.parts and p.name != 'test_raporu.json'}
+    terminology = TOOLS.parent / 'docs/TERMINOLOGY.md'
+    if terminology.is_file():
+        files['docs/TERMINOLOGY.md'] = terminology.read_bytes()
+    return tree_digest(files)
+
+
 def verify_source(source_dir: Path | None) -> dict:
     pinned = read_json(TOOLS / 'kaynaklar.json')['commit']
     if source_dir is None:
@@ -57,19 +69,32 @@ def verify_source(source_dir: Path | None) -> dict:
                             check=True, capture_output=True, text=True).stdout.strip()
     if actual != pinned:
         raise ValueError('FU source is not the pinned commit: ' + actual)
-    # Tracked source modifications must not masquerade as the pinned tree.
-    dirty = subprocess.run(['git', '-C', str(source_dir), 'status', '--porcelain', '--untracked-files=no'],
+    top = subprocess.run(['git', '-C', str(source_dir), 'rev-parse', '--show-toplevel'],
+                         check=True, capture_output=True, text=True).stdout.strip()
+    if Path(top).resolve() != source_dir.resolve():
+        raise ValueError('FU source must be the checkout root')
+    # Extra and ignored files are also consumed by the build/audit filesystem scans.
+    dirty = subprocess.run(['git', '-C', str(source_dir), 'status', '--porcelain', '--untracked-files=all', '--ignored'],
                            check=True, capture_output=True, text=True).stdout
     if dirty.strip():
-        raise ValueError('Pinned FU source has tracked modifications')
+        raise ValueError('Pinned FU source has modifications or extra files')
     return {'status': 'PASS', 'pinned_commit': pinned, 'verified_commit': actual,
             'layered_external_policy': 'Existing ledger provenance retained; not an independent vanilla runtime test.'}
 
 
 def record_validation(output: Path, stats: dict, catalog: Path, source: dict) -> dict:
+    commit = subprocess.run(['git', '-C', str(TOOLS.parent), 'rev-parse', 'HEAD'],
+                            check=True, capture_output=True, text=True).stdout.strip()
+    inputs_dirty = subprocess.run(
+        ['git', '-C', str(TOOLS.parent), 'status', '--porcelain', '--untracked-files=all',
+         '--', 'tools', 'docs/TERMINOLOGY.md', ':!tools/test_raporu.json', ':!tools/GELISTIRME.txt'],
+        check=True, capture_output=True, text=True).stdout.strip()
+    if os.environ.get('GITHUB_SHA') not in (None, commit):
+        raise ValueError('Build checkout does not match GITHUB_SHA')
     result = dict(stats, schema_version=2,
                   generated_at_utc=datetime.now(timezone.utc).isoformat(),
-                  source_commit=os.environ.get('GITHUB_SHA'),
+                  source_commit=commit, source_inputs_dirty=bool(inputs_dirty),
+                  build_inputs_sha256=build_inputs_digest(),
                   catalog_sha256=hashlib.sha256(catalog.read_bytes()).hexdigest(),
                   install_tree_sha256=tree_digest(tree_files(output / 'FU_Turkce')),
                   source_validation=source, in_game_lqa='NOT TESTED')
@@ -137,8 +162,12 @@ def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path
         raise ValueError('Current full-source validation report is required')
     if report['source_validation'].get('verified_commit') != source['commit']:
         raise ValueError('Validation report is not for the pinned FU revision')
-    if report.get('source_commit') not in (None, source_commit):
+    if report.get('source_commit') != source_commit:
         raise ValueError('Validation report belongs to a different translation source commit')
+    if report.get('source_inputs_dirty') is not False:
+        raise ValueError('Validation report was built from uncommitted source inputs')
+    if report.get('build_inputs_sha256') != build_inputs_digest():
+        raise ValueError('Validation report/build inputs mismatch; rebuild after source changes')
     if report['catalog_sha256'] != hashlib.sha256(catalog_path.read_bytes()).hexdigest():
         raise ValueError('Validation report/catalog mismatch')
     files = tree_files(mod_dir)
@@ -180,6 +209,7 @@ def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path
                         'sha256': hashlib.sha256(data).hexdigest(), 'git_blob_sha': git_blob_sha(data),
                         'zip_integrity': 'PASS', 'root_install_tree_parity': 'PASS'},
             'install_tree_sha256': report['install_tree_sha256'],
+            'build_inputs_sha256': report['build_inputs_sha256'],
             'catalog_sha256': report['catalog_sha256'], 'static_qa': report['static_qa'],
             'source_validation': report['source_validation'], 'in_game_lqa': 'NOT TESTED'}
 

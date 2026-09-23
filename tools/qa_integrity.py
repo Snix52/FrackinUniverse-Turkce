@@ -127,16 +127,19 @@ class Terminology:
 
 def manifest_rows(primary: list[dict], tools: Path = TOOLS) -> list[dict]:
     index = {(r['asset'], r['pointer']): r for r in primary}
+    if len(index) != len(primary):
+        raise ValueError('Duplicate field in primary catalog')
     rows = list(primary)
     for path in sorted(tools.glob('*_translations.json')):
         if path.name == 'raw_text_translations.json':
             continue
         payload = json.loads(path.read_text(encoding='utf-8'))
         if isinstance(payload, dict) and 'translations' in payload:
-            rows.extend(payload['translations'])
+            manifest = payload['translations']
         elif isinstance(payload, list):
-            rows.extend(payload)
+            manifest = payload
         elif isinstance(payload, dict):
+            manifest = []
             for spec in payload.values():
                 if not isinstance(spec, dict) or 'asset' not in spec:
                     raise ValueError('Unknown structured manifest schema: ' + path.name)
@@ -148,9 +151,20 @@ def manifest_rows(primary: list[dict], tools: Path = TOOLS) -> list[dict]:
                         raise ValueError('Manifest field missing from primary catalog: ' + repr(key))
                     if spec[field] != index[key]['tr']:
                         raise ValueError('Manifest/catalog drift: ' + path.name + ' ' + repr(key))
-                    rows.append(dict(index[key], tr=spec[field]))
+                    manifest.append(dict(index[key], tr=spec[field]))
         else:
             raise ValueError('Unknown structured manifest schema: ' + path.name)
+        seen = set()
+        for row in manifest:
+            key = (row['asset'], row['pointer'])
+            if key in seen:
+                raise ValueError('Duplicate manifest field: ' + path.name + ' ' + repr(key))
+            seen.add(key)
+            if key not in index:
+                raise ValueError('Manifest field missing from primary catalog: ' + repr(key))
+            if any(row[field] != index[key][field] for field in ('en', 'tr')):
+                raise ValueError('Manifest/catalog drift: ' + path.name + ' ' + repr(key))
+        rows.extend(manifest)
     return rows
 
 

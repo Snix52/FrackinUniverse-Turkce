@@ -18,9 +18,12 @@ Bu paket, seçili oyuncuya görünür Frackin' Universe metinlerini Türkçeleş
 Yerelleştirme için JSON Patch dosyaları, kaynak eşleşme kontrolleri, terminoloji
 kayıtları, QA araçları ve kurulum belgeleri eklenmiştir.
 
-Ana Frackin' Universe oyun mantığı bu proje tarafından değiştirilmez. Kaynak
-İngilizce metin parçaları yalnızca patch eşleşmesi, doğrulama ve atıf amacıyla
-saklanabilir.
+JSON Patch çevirilerine ek olarak, manifestlerde kaynak commit'i ve dosya
+hash'iyle sabitlenmiş yedi Lua override dosyası dağıtılır. Bunlar görünür metinleri,
+Türkçe UTF-8 yazı animasyonunu ve istasyon düğmelerinin metin/komut ayrımını
+düzenler. Ayrıntılı değişiklikler tools/raw_text_translations.json ve
+tools/raw_runtime_overrides.json içinde kayıtlıdır. İngilizce kaynak parçaları
+patch eşleşmesi, doğrulama ve atıf amacıyla da saklanır.
 
 PROJE DURUMU
 

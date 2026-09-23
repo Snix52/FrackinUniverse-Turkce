@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """FU TÜRKÇE patch üretim ve statik doğrulama aracı.
 
-Python 3.9+, yalnızca standart kütüphane.
+Python 3.11+, yalnızca standart kütüphane.
 Türkçe Unicode zorunludur; ASCII yedek sürüm bilinçli olarak desteklenmez.
 """
 from __future__ import annotations
@@ -349,6 +349,42 @@ def simulate(root,patch):
         else: raise ValueError('Desteklenmeyen patch işlemi')
     return r
 
+def verify_layered_row(row, source_dir, cache):
+    """Check every FU-owned patch value, including recorded vanilla array appends."""
+    asset, pointer = row['asset'], row['pointer']
+    source_patch = row.get('qa', {}).get('source_patch')
+    if source_patch != asset + '.patch':
+        raise ValueError('Invalid layered source patch: ' + asset + pointer)
+    if source_patch not in cache:
+        cache[source_patch] = parse_jsonc((source_dir/source_patch).read_text(encoding='utf-8-sig'))
+    operations = cache[source_patch]
+    if not isinstance(operations, list):
+        raise ValueError('Unsupported layered source patch: ' + source_patch)
+    missing = object()
+    found = missing
+    append_index = load_rule('AUDIT_PATCH_APPEND_INDEXES').get(asset)
+    for op in operations:
+        if not isinstance(op, dict):
+            raise ValueError('Conditional layered source needs explicit verification: ' + source_patch)
+        if op.get('op') == 'test':
+            continue
+        parts = tokens(op.get('path', ''))
+        if '-' in parts and append_index is not None:
+            parts = [str(append_index) if part == '-' else part for part in parts]
+        target = tokens(pointer)
+        if target[:len(parts)] != parts:
+            continue
+        found = missing  # A later parent replacement/removal invalidates earlier values.
+        if op.get('op') in ('add', 'replace') and 'value' in op:
+            try:
+                found = op['value']
+                for part in target[len(parts):]:
+                    found = found[int(part)] if isinstance(found, list) else found[part]
+            except (KeyError, IndexError, TypeError, ValueError):
+                found = missing
+    if found != row['en']:
+        raise ValueError('Layered source mismatch: ' + asset + pointer)
+
 def parse_jsonc(text):
     out=[];i=0;q=False;esc=False
     while i<len(text):
@@ -692,67 +728,23 @@ def main():
             if read_at(result,r['pointer'])!=r['tr']:raise AssertionError(a+r['pointer'])
         if args.source_dir:
             source=args.source_dir/a
-            v046_group = all(
-                (a, r['pointer']) in V046_RACES_SAIL_FIELDS
-                for r in rs
-            )
-            if v046_group:
-                # v0.46 aynı asset içinde base ve .patch kaynaklı görünür
-                # alanları birlikte içerebilir (Nightar bunun canlı örneği).
-                # Bu yüzden provenance asset bazında değil satır bazında
-                # doğrulanır.
-                direct_data = None
-                patch_cache = {}
-                for r in rs:
-                    if r.get('qa',{}).get('layered_source'):
-                        source_patch = r.get('qa',{}).get('source_patch')
-                        if not source_patch:
-                            raise ValueError('v0.46 layered source patch eksik: '+a+r['pointer'])
-                        patch_path = args.source_dir/source_patch
-                        if not patch_path.is_file():
-                            raise FileNotFoundError(patch_path)
-                        if source_patch not in patch_cache:
-                            patch_cache[source_patch] = parse_jsonc(
-                                patch_path.read_text(encoding='utf-8-sig')
-                            )
-                        found = None
-                        for source_op in patch_cache[source_patch]:
-                            if not isinstance(source_op,dict) or 'value' not in source_op:
-                                continue
-                            source_path = str(source_op.get('path',''))
-                            if source_path == r['pointer']:
-                                found = source_op['value']
-                                continue
-                            if source_path and r['pointer'].startswith(source_path+'/'):
-                                try:
-                                    found = read_at(
-                                        source_op['value'],
-                                        r['pointer'][len(source_path):]
-                                    )
-                                except (KeyError,IndexError,TypeError,ValueError):
-                                    pass
-                        if found != r['en']:
-                            raise ValueError(
-                                'v0.46 layered kaynak uyuşmazlığı: '+a+r['pointer']
-                            )
-                    else:
-                        if not source.is_file():
-                            raise FileNotFoundError(source)
-                        if direct_data is None:
-                            direct_data = parse_jsonc(
-                                source.read_text(encoding='utf-8-sig')
-                            )
-                        if read_at(direct_data,r['pointer']) != r['en']:
-                            raise ValueError(
-                                'v0.46 direct kaynak uyuşmazlığı: '+a+r['pointer']
-                            )
-            elif source.is_file():
-                simulate(parse_jsonc(source.read_text(encoding='utf-8-sig')),patch)
-            elif all(r.get('qa',{}).get('layered_source') for r in rs):
-                # Eski katmanlı kapsamların kendi sürüm provenance testleri korunur.
-                pass
-            else:
-                raise FileNotFoundError(source)
+            direct_rows = [r for r in rs if not r.get('qa',{}).get('layered_source')]
+            if direct_rows:
+                if not source.is_file():
+                    raise FileNotFoundError(source)
+                data = parse_jsonc(source.read_text(encoding='utf-8-sig'))
+                for row in direct_rows:
+                    if read_at(data, row['pointer']) != row['en']:
+                        raise ValueError('Direct source mismatch: ' + a + row['pointer'])
+            patch_cache = {}
+            for row in rs:
+                qa = row.get('qa', {})
+                if not qa.get('layered_source'):
+                    continue
+                if qa.get('source_patch'):
+                    verify_layered_row(row, args.source_dir, patch_cache)
+                elif not qa.get('external_base_verified'):
+                    raise ValueError('Missing external source provenance: ' + a + row['pointer'])
         patches[a]=patch
 
     # Lua gibi JSON Patch uygulanamayan görünür metinler için kaynak-kilitli ham override.
@@ -828,14 +820,21 @@ def main():
       'version':ledger['translation_version'],
       'description':"Frackin' Universe için devam eden Türkçe yerelleştirme. Araştırma, görevler, üretim, temel makineler, işlevsel nesneler ve geniş ekipman kapsamını içerir.",
       'requires':['FrackinUniverse'],'priority':9000}
-    (mod/'_metadata').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (mod/'_metadata').write_bytes((json.dumps(metadata,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     for a,p in patches.items():
         d=mod/(a+'.patch');d.parent.mkdir(parents=True,exist_ok=True)
-        d.write_text(json.dumps(p,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        d.write_bytes((json.dumps(p,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     for a,content in raw_assets.items():
         d=mod/a;d.parent.mkdir(parents=True,exist_ok=True)
-        d.write_text(content,encoding='utf-8')
+        d.write_bytes(content.encode('utf-8'))
     stats={'fields':len(rows),'patch_assets':len(patches),'raw_assets':len(raw_assets),'assets':len(patches)+len(raw_assets),'raw_strings':raw_string_count,'color_fixes':colorfix,'static_qa':'PASS','in_game_lqa':'NOT TESTED',**integrity}
+    if args.source_dir:
+        stats['source_field_coverage'] = {
+            'direct': sum(not r.get('qa', {}).get('layered_source') for r in rows),
+            'fu_patch': sum(bool(r.get('qa', {}).get('source_patch')) for r in rows),
+            'external_ledger_only': sum(bool(r.get('qa', {}).get('layered_source'))
+                                        and not r.get('qa', {}).get('source_patch') for r in rows),
+        }
     result=record_validation(args.output,stats,args.catalog,source_validation)
     print(json.dumps(result,ensure_ascii=False))
     return 0

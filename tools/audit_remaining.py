@@ -23,6 +23,7 @@ from typing import Any, Iterable
 
 from write_build_evidence import verify_source
 from rule_data import rule as load_rule
+from qa_raw import lua_parts, replacement_rows
 
 PINNED_COMMIT = json.loads(Path(__file__).with_name('kaynaklar.json').read_text(encoding='utf-8'))['commit']
 NONVISIBLE_RESEARCH_IDS = load_rule('NONVISIBLE_RESEARCH_IDS')
@@ -373,7 +374,8 @@ def candidates_from_data(source_path: str, data: Any) -> Iterable[Candidate]:
         asset = source_path[:-6]
         if isinstance(data, list):
             for index, operation in enumerate(data):
-                if not isinstance(operation, dict) or "value" not in operation:
+                if (not isinstance(operation, dict) or "value" not in operation
+                        or operation.get("op") not in ("add", "replace")):
                     continue
                 base = split_pointer(str(operation.get("path", "")))
                 if "-" in base and asset in AUDIT_PATCH_APPEND_INDEXES:
@@ -450,10 +452,11 @@ def load_raw_lua_translations(path: Path) -> set[tuple[str, str]]:
     translated: set[tuple[str, str]] = set()
     for asset in data.get("assets", []):
         asset_path = str(asset.get("asset", ""))
-        for replacement in asset.get("replacements", []):
-            visible = str(replacement.get("display_en", ""))
-            if asset_path and visible:
-                translated.add((asset_path, visible))
+        for index, replacement in enumerate(asset.get("replacements", [])):
+            for row in replacement_rows(asset_path, index, replacement):
+                visible = re.sub(r"\^[^;\s]*;", "", row['en']).strip()
+                if asset_path and visible:
+                    translated.add((asset_path, visible))
     return translated
 
 
@@ -501,7 +504,11 @@ def audit_lua(source: Path, raw_catalog: Path) -> dict[str, Any]:
                 between = lowered[comma:selected.start()]
                 if "getparameter" in between or "assetjson" in between:
                     continue
-            value = bytes(selected.group(2), "utf-8").decode("unicode_escape")
+            try:
+                _, literals = lua_parts(selected.group(0))
+                value = literals[0]
+            except (ValueError, IndexError):
+                continue
             clean = re.sub(r"\^[^;\s]*;", "", value).strip()
             if not clean or not ALPHA_RE.search(clean) or looks_like_resource(clean):
                 continue
@@ -567,7 +574,8 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
                 continue
             key = (candidate.asset, candidate.pointer)
             previous = candidates.get(key)
-            if previous is None or (previous.confidence == "review" and candidate.confidence == "confirmed"):
+            if (previous is None or candidate.origin.startswith(candidate.asset + '.patch')
+                    or (previous.confidence == "review" and candidate.confidence == "confirmed")):
                 candidates[key] = candidate
 
     confirmed = {key: row for key, row in candidates.items() if row.confidence == "confirmed"}

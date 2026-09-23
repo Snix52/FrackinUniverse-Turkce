@@ -37,6 +37,8 @@ class EvidenceTests(unittest.TestCase):
             for name, data in self.files.items():
                 (directory / name).write_bytes(data)
         self.report = {'static_qa': 'PASS', 'source_commit': self.sha,
+                       'source_inputs_dirty': False,
+                       'build_inputs_sha256': evidence.build_inputs_digest(),
                        'source_validation': {'status': 'PASS', 'verified_commit': self.pin},
                        'catalog_sha256': hashlib.sha256((self.tools / 'ceviriler.json').read_bytes()).hexdigest(),
                        'install_tree_sha256': evidence.tree_digest(self.files),
@@ -67,6 +69,8 @@ class EvidenceTests(unittest.TestCase):
 
     def test_stale_source_or_catalog_report_rejected(self):
         for change in ({'source_commit': '3' * 40}, {'catalog_sha256': 'old'},
+                       {'source_commit': None}, {'source_inputs_dirty': True},
+                       {'build_inputs_sha256': 'old'},
                        {'install_tree_sha256': 'old'}, {'fields': 2}, {'static_qa': 'NOT RUN'},
                        {'source_validation': {'status': 'NOT RUN'}},
                        {'source_validation': {'status': 'PASS', 'verified_commit': '4' * 40}}):
@@ -78,6 +82,16 @@ class EvidenceTests(unittest.TestCase):
                     self.build()
                 self.report = original
         self.save_report()
+
+    def test_changed_rules_or_lua_cannot_reuse_old_build(self):
+        for filename in ('qa_integrity.py', 'rules/policy.json', 'raw_overrides/test.lua'):
+            with self.subTest(filename=filename):
+                path = self.tools / filename
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(b'changed after validation')
+                with self.assertRaisesRegex(ValueError, 'build inputs mismatch'):
+                    self.build()
+                path.unlink()
 
     def test_root_mismatch_rejected(self):
         (self.install / 'item.patch').write_bytes(b'[]')
@@ -128,6 +142,21 @@ class EvidenceTests(unittest.TestCase):
         self.source['commit'] = git('rev-parse', 'HEAD')
         evidence.write_json(self.tools / 'kaynaklar.json', self.source)
         self.assertEqual(evidence.verify_source(git_source)['status'], 'PASS')
+        with self.assertRaisesRegex(ValueError, 'checkout root'):
+            (git_source/'nested').mkdir()
+            evidence.verify_source(git_source/'nested')
+        for name in ('extra.item', '.hidden-source.item'):
+            extra = git_source/name
+            extra.write_text('untracked source')
+            with self.assertRaisesRegex(ValueError, 'extra files'):
+                evidence.verify_source(git_source)
+            extra.unlink()
+        (git_source/'.git/info/exclude').write_text('ignored.item\n')
+        extra = git_source/'ignored.item'
+        extra.write_text('ignored source')
+        with self.assertRaisesRegex(ValueError, 'extra files'):
+            evidence.verify_source(git_source)
+        extra.unlink()
         (git_source / 'asset').write_text('modified')
         with self.assertRaisesRegex(ValueError, 'modifications'):
             evidence.verify_source(git_source)

@@ -80,7 +80,7 @@ v0.46.1-v0.46.3 bakımında Jungle ve görev/konum görünen adları geriye dön
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
 3. [Güncel beta paketini](dist/FU_Turkce_v0.47.0_Beta.zip) indirip çıkar.
-4. İçindeki `FU_Turkce` klasörünü Starbound'un `mods` klasörüne kopyala.
+4. Eski `FU_Turkce` kurulumunu `mods` dışına yedekle; yeni paketteki `FU_Turkce` klasörünü `mods` içine temiz kurulum olarak kopyala. Klasörleri birleştirmek kaldırılan eski yamaları oyunda bırakabilir.
 5. Son yol şu şekilde görünmeli:
 
 ```text

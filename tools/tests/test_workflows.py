@@ -12,7 +12,7 @@ class WorkflowTests(unittest.TestCase):
         paths = re.findall(r'- [\"\']([^\"\']+)[\"\']', block)
         for changed in ('tools/ceviriler.json', 'tools/raw_text_translations.json',
                         'tools/v030_translations.json', 'tools/v999_translations.json',
-                        'tools/kaynaklar.json'):
+                        'tools/kaynaklar.json', 'tools/rule_data.py', 'tools/qa_raw.py'):
             self.assertTrue(any(fnmatch.fnmatchcase(changed, pattern) for pattern in paths), changed)
         for changed in ('README.md', 'dist/package.zip', 'FU_Turkce/thing.patch'):
             self.assertFalse(any(fnmatch.fnmatchcase(changed, pattern) for pattern in paths), changed)

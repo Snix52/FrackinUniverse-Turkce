@@ -106,12 +106,12 @@ class RawHardeningTests(unittest.TestCase):
             with self.assertRaises(ValueError):raw.validate_manifest_pin(dict(manifest(),source_commit='c'*40),t)
 
     def test_project_checks_raw_terms_and_cross_surface_memory(self):
-        terms=json.loads((TOOLS/'locked_terms.json').read_text())
+        terms=json.loads((TOOLS/'locked_terms.json').read_text(encoding='utf-8'))
         # Real terms, empty TM policy; only the fixture corpus is replaced.
         with tempfile.TemporaryDirectory() as directory:
             t=Path(directory)/'tools';t.mkdir();(t/'rules').mkdir();(t.parent/'docs').mkdir()
             (t/'locked_terms.json').write_text(json.dumps(terms))
-            (t.parent/'docs/TERMINOLOGY.md').write_text(render_terminology(terms))
+            (t.parent/'docs/TERMINOLOGY.md').write_text(render_terminology(terms), encoding='utf-8')
             (t/'rules/text_integrity.json').write_text('{}')
             (t/'translation_memory_exceptions.json').write_text('{}')
             (t/'kaynaklar.json').write_text(json.dumps(dict(repository='fixture/repo',commit='a'*40)))
@@ -125,8 +125,8 @@ class RawHardeningTests(unittest.TestCase):
 
 class LockedAndControlTests(unittest.TestCase):
     def setUp(self):
-        self.policy=json.loads((TOOLS/'rules/text_integrity.json').read_text())
-        self.terms=json.loads((TOOLS/'locked_terms.json').read_text())
+        self.policy=json.loads((TOOLS/'rules/text_integrity.json').read_text(encoding='utf-8'))
+        self.terms=json.loads((TOOLS/'locked_terms.json').read_text(encoding='utf-8'))
         self.engine=qa.Terminology(self.terms)
 
     def test_canonical_does_not_hide_separate_forbidden_variant(self):
@@ -178,7 +178,7 @@ class GeneratedGuardTests(unittest.TestCase):
                 with self.subTest(paths=paths),self.assertRaises(ValueError):validate_paths(paths)
 
     def test_pr_workflow_is_read_only_and_has_no_path_bypass(self):
-        source=(TOOLS.parent/'.github/workflows/pr-qa.yml').read_text()
+        source=(TOOLS.parent/'.github/workflows/pr-qa.yml').read_text(encoding='utf-8')
         self.assertIn('pull_request:',source)
         self.assertIn('contents: read',source)
         self.assertIn('persist-credentials: false',source)
@@ -187,7 +187,7 @@ class GeneratedGuardTests(unittest.TestCase):
             self.assertNotIn(forbidden,source)
 
     def test_main_guard_precedes_output_refresh(self):
-        source=(TOOLS.parent/'.github/workflows/build-package.yml').read_text()
+        source=(TOOLS.parent/'.github/workflows/build-package.yml').read_text(encoding='utf-8')
         self.assertNotIn('paths-ignore:',source)
         self.assertLess(source.index('check_generated_changes.py'),source.index('rm -rf FU_Turkce'))
         self.assertIn('liblua5.4-0',source)

@@ -1,9 +1,14 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-22 Eylül 2026: **v0.45.1 bakım paketi**, 22 Eylül ana kontrol bulgularının düzeltilmesi.
+23 Eylül 2026: v0.47.0 kaynakları üzerinde depo genelinde teknik denetim.
+Manifest/katalog eşleşmesi, tüm FU patch kaynakları, paket kanıtı, kapsam tarayıcısı
+ve Windows doğrulaması sıkılaştırıldı. Ayrıntılar: `docs/FULL_AUDIT_20260923.md`.
+Yeni çeviri kapsamı veya oyun içi LQA tamamlandığı iddia edilmez.
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
-Bu checkpoint bir build kanıtı kopyası değildir; aşağıdaki v0.42-v0.45 sonuçları tarihsel kayıtlardır.
+Bu checkpoint bir build kanıtı kopyası değildir; aşağıdaki sürüm sonuçları ve
+"Sonraki başlangıç noktası" bölümleri tarihsel kayıtlardır. En yeni tamamlanan
+çeviri kapsamı v0.47.0 bitkilerdir.
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
