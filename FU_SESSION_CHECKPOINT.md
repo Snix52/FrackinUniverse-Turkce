@@ -437,3 +437,5 @@ Oyun içi LQA ayrı bir aşamadır.
 - Boyut, yeni paket politikasıyla uyumlu: yaklaşık 500 alan ve 250–400 benzersiz metin; çalışma tematik yapı malzemeleri altında tutuldu.
 - Aday `codex/luna-v055` dalında hazırlanıyor. Exact-source manifesti ve kaynak kapısı eklendi; Sol doğrulaması ve yayınını üstlenecek.
 - Oyun içi LQA: **NOT TESTED**.
+- Sol incelemesinde katalogdaki 466 yinelenen v0.55 satırı çıkarıldı; önceki 9.792 alan birebir korundu. Camın öbür tarafını görme repliğindeki kopyalama hatası dört assette, Floran sesi sekiz alanda düzeltildi.
+- Yerel katalog QA'sı **PASS (15.326 katalog birimi / 52 raw birim / 542 LOCKED terim)**; **193 birim testi** ve pinned FU 6.5.8 tam kaynak build **PASS (10.258 alan / 3.038 patch asset / 7 raw asset / 57 raw metin)**. Build çıktısı üzerinde **3 Lua davranış testi** ve v0.55 exact-source gate **PASS (466/177/393)**. GitHub CI ve yayımlama bekleniyor.
