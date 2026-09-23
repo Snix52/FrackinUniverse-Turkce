@@ -432,10 +432,10 @@ Oyun içi LQA ayrı bir aşamadır.
 - Pinned kaynak kapısı PASS (**71/18/62**); katalog bütünlük QA'sı PASS (**14.394 katalog birimi / 52 raw birim / 542 LOCKED terim**). **193 birim testi**, pinli kaynakla tam build (**9.792 alan / 2.861 patch asset / 7 raw asset / 57 raw metin**) ve build üzerinde **3 Lua davranış testi** PASS. Floran replikleri, Golden Wood kilidi ve çeviri belleği incelemede eşlendi.
 - Oyun içi LQA: **NOT TESTED**.
 
-## v0.55 metal, ahşap, cam ve pencere yapı malzemeleri adayı
+## v0.55 metal, ahşap, cam ve pencere yapı malzemeleri
 - v0.54 sonrası güncel katalog ve pinned FU 6.5.8 auditinden `tiles/materials/` içindeki metal/teknoloji, kereste, cam ve pencere yapı aileleri seçildi: **466 alan / 177 asset / 393 benzersiz kaynak metin**.
 - Boyut, yeni paket politikasıyla uyumlu: yaklaşık 500 alan ve 250–400 benzersiz metin; çalışma tematik yapı malzemeleri altında tutuldu.
-- Aday `codex/luna-v055` dalında hazırlanıyor. Exact-source manifesti ve kaynak kapısı eklendi; Sol doğrulaması ve yayınını üstlenecek.
+- Aday `codex/luna-v055` dalında hazırlandı. Exact-source manifesti ve kaynak kapısı eklendi; Sol incelemesi sonrasında doğrudan `main` dalına yayımlandı.
 - Oyun içi LQA: **NOT TESTED**.
 - Sol incelemesinde katalogdaki 466 yinelenen v0.55 satırı çıkarıldı; önceki 9.792 alan birebir korundu. Camın öbür tarafını görme repliğindeki kopyalama hatası dört assette, Floran sesi sekiz alanda düzeltildi.
-- Yerel katalog QA'sı **PASS (15.326 katalog birimi / 52 raw birim / 542 LOCKED terim)**; **193 birim testi** ve pinned FU 6.5.8 tam kaynak build **PASS (10.258 alan / 3.038 patch asset / 7 raw asset / 57 raw metin)**. Build çıktısı üzerinde **3 Lua davranış testi** ve v0.55 exact-source gate **PASS (466/177/393)**. GitHub CI ve yayımlama bekleniyor.
+- Yerel katalog QA'sı **PASS (15.326 katalog birimi / 52 raw birim / 542 LOCKED terim)**; **193 birim testi** ve pinned FU 6.5.8 tam kaynak build **PASS (10.258 alan / 3.038 patch asset / 7 raw asset / 57 raw metin)**. Build çıktısı üzerinde **3 Lua davranış testi** ve v0.55 exact-source gate **PASS (466/177/393)**. GitHub build/audit CI başarılı; `dist/FU_Turkce_v0.55.0_Beta.zip` kanıttaki SHA-256 ve ZIP CRC denetiminden geçti.
