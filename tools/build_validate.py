@@ -252,6 +252,15 @@ V050_BEEKEEPING_FIELDS = {
 if len(V050_BEEKEEPING_FIELDS) != len(_V050_MANIFEST['translations']):
     raise ValueError('v0.50 arıcılık manifestinde yinelenen alan var')
 
+_V051_MANIFEST = json.loads(
+    Path(__file__).with_name('v051_translations.json').read_text(encoding='utf-8')
+)
+V051_PLATFORM_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V051_MANIFEST['translations']
+}
+if len(V051_PLATFORM_FIELDS) != len(_V051_MANIFEST['translations']):
+    raise ValueError('v0.51 platform manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -458,6 +467,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V051_PLATFORM_FIELDS:
+        return True
     if (a,p) in V050_BEEKEEPING_FIELDS:
         return True
     if (a,p) in V049_WOOD_MATERIAL_FIELDS:

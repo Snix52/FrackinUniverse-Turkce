@@ -29,7 +29,10 @@ class V050Tests(unittest.TestCase):
 
     def test_catalog_contains_exact_manifest_and_consistent_repeats(self):
         catalog = {(row["asset"], row["pointer"]): row for row in self.catalog["translations"]}
-        self.assertEqual(self.catalog["translation_version"], "0.50.0-beta")
+        catalog_version = tuple(
+            int(part) for part in self.catalog["translation_version"].split("-", 1)[0].split(".")
+        )
+        self.assertGreaterEqual(catalog_version, (0, 50, 0))
         by_source = {}
         for row in self.rows:
             current = catalog.get((row["asset"], row["pointer"]))

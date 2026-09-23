@@ -403,3 +403,11 @@ Oyun içi LQA ayrı bir aşamadır.
 - Yerel Lua davranış testi `lupa` olmadığı için çalıştırılamadı; CI Lua testi ayrıca çalıştıracak.
 - Oyun içi font/taşma ve gerçek kullanım LQA: **NOT TESTED**.
 - Sonraki adım: kalan biyom/zindan/dünya sistemleri kapsamından küçük, runtime-bağlı aile seç.
+
+
+## v0.51 platformlar
+- Pinned 6.5.8 auditinden `tiles/platforms/` içindeki **99 alan / 33 asset / 78 benzersiz kaynak metin** seçildi; katmanlı patch kaynakları da nihai değer önceliğiyle kapsama alındı.
+- Platform adları, açıklamaları ve Floran/Glitch/Novakid incelemeleri çevrildi. Aen, Aether, Dynast, Precursor, Nightar, Tethyde, Telebrium ve Pykrete özel/malzeme adları korunur; Slime için kilitli Balçık kullanılır.
+- `low impact` ifadesi görünmez platform dokusu/yerleşim bağlamıyla `göze batmayan` olarak yorumlandı; anlam tercihi gözden geçirilebilir. İnceleme sonrası Nightar/Novakid anlam hatası düzeltildi ve 11 Floran repliğinde karakter sesi korundu.
+- Eski v0.50 kaynak kapısı ve testi, katalog sürümünü alt sınır olarak kabul edecek biçimde düzeltildi; v0.51 kapısı da sonraki sürümlerle uyumlu. v0.45-v0.51 kaynak kapıları ve **193 test** PASS.
+- Pinned source gate PASS (**99 alan / 33 asset / 78 kaynak**); `qa_integrity.py` PASS (**13.484 katalog birimi / 52 raw birim / 542 LOCKED terim**). Statik build PASS (**9.337 alan / 2.703 patch asset / 7 raw asset / 57 raw metin**), build çıktısı üzerinde **3 Lua testi** PASS; güncel çıktı `local-runtime/build-v051-fixed/` altında. Oyun içi LQA: **NOT TESTED**.
