@@ -279,6 +279,15 @@ V053_PEGLACI_FIELDS = {
 if len(V053_PEGLACI_FIELDS) != len(_V053_MANIFEST['translations']):
     raise ValueError('v0.53 Peglaci manifestinde yinelenen alan var')
 
+_V054_MANIFEST = json.loads(
+    Path(__file__).with_name('v054_translations.json').read_text(encoding='utf-8')
+)
+V054_HONEY_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V054_MANIFEST['translations']
+}
+if len(V054_HONEY_FIELDS) != len(_V054_MANIFEST['translations']):
+    raise ValueError('v0.54 bal malzemeleri manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -485,6 +494,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V054_HONEY_FIELDS:
+        return True
     if (a,p) in V053_PEGLACI_FIELDS:
         return True
     if (a,p) in V052_MATERIAL_FIELDS:

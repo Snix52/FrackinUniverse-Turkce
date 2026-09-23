@@ -424,3 +424,9 @@ Oyun içi LQA ayrı bir aşamadır.
 - Peglaci/Glitch/Floran inceleme metinlerinde kaynak karakter sesi korundu; Peglaci ve Pykrete özel adları tutarlı bırakıldı.
 - Pinned kaynak kapısı PASS (**66/14/54**); katalog bütünlük QA'sı PASS (**14.252 katalog birimi / 52 raw birim / 542 LOCKED terim**). **193 birim testi**, pinli kaynakla tam build (**9.721 alan / 2.843 patch asset / 7 raw asset / 57 raw metin**) ve build üzerinde **3 Lua davranış testi** PASS. Pykrete temel bloğunun yanlış açıklaması incelemede düzeltildi.
 - Oyun içi LQA: **NOT TESTED**.
+
+## v0.54 bal ve altın ahşap yapı malzemeleri
+- v0.53 sonrası güncel main kataloğunda kalan karo malzemelerinden Honey ailesinin bal peteği, altın ahşap, cam ve balmumu alanları seçildi: **71 alan / 18 asset / 62 benzersiz kaynak metin**.
+- Kaynak manifesti pinned FU 6.5.8 commitine sabit; yalnız Honey ailesi assetleri dahil. v0.54 exact-source gate ve build allowlist eklendi.
+- Çeviri adayı Luna dalında hazırlandı. Sol kaynak kontrollerini, QA'yı ve yayınlamayı üstlenecek.
+- Oyun içi LQA: **NOT TESTED**.
