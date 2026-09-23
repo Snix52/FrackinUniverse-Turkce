@@ -93,3 +93,5 @@ python -m unittest discover -s tools/tests -p test_lua_behavior.py -v
 ```
 
 Kapsam tarayıcısı Lua görünür metinlerini manifestteki gerçek stringlerden alır; açıklama metadata'sını veya Python `unicode_escape` çözümlemesini kullanmaz. Tarama yine bir aday envanteridir: karmaşık koşullu patch dalları, bütün Lua veri akışı ve oyun içi görünürlük otomatik olarak kanıtlanmış sayılmaz.
+
+Renk ve normal sayı kaynak düzeltmeleri de `text_integrity.json` içinde tam asset/pointer/en/tr/gerekçe kaydına bağlıdır. `allow_color_fix` veya `allow_number_fix` bayrağı tek başına muafiyet vermez; mevcut 18 renk ve 20 sayı düzeltmesi korunur.

@@ -45,6 +45,13 @@ def validate_format(row: dict, policy: dict) -> None:
     if not isinstance(en, str) or not isinstance(tr, str) or not tr.strip():
         raise ValueError('Empty or non-text translation: ' + row['asset'] + row['pointer'])
     where = row['asset'] + row['pointer']
+    for name, signature in (
+        ('color', lambda s: Counter(COLOR.findall(s))),
+        ('number', lambda s: Counter(n.replace(',', '.') for n in NUMBER.findall(COLOR.sub('', s)))),
+    ):
+        if signature(en) != signature(tr):
+            if not any(bound_exception(row, x) for x in policy.get(name + '_exceptions', [])):
+                raise ValueError(name.title() + ' mismatch without bound exception: ' + where)
     if signed_numbers(en) != signed_numbers(tr):
         raise ValueError('Signed number mismatch: ' + where)
     if tab_signature(en) != tab_signature(tr):

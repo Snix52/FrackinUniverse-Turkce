@@ -12,6 +12,25 @@ import build_validate as build
 import qa_integrity as qa
 
 
+class CorrectionExceptionTests(unittest.TestCase):
+    def test_color_and_number_flags_cannot_bypass_integrity(self):
+        for en, tr, flag in [('^red;Warning^reset;', 'Uyarı', 'allow_color_fix'),
+                             ('Requires 20 units', '200 birim gerekir', 'allow_number_fix')]:
+            with self.subTest(flag=flag), self.assertRaises(ValueError):
+                qa.validate_format(dict(asset='fixture.item', pointer='/description',
+                                        en=en, tr=tr, qa={flag: True}), {})
+
+    def test_existing_corrections_are_exactly_bound(self):
+        policy=json.loads((qa.TOOLS/'rules/text_integrity.json').read_text(encoding='utf-8'))
+        for key, count in [('color_exceptions',18),('number_exceptions',20)]:
+            self.assertEqual(len(policy[key]),count)
+            for row in policy[key]:
+                with self.subTest(key=key,asset=row['asset'],pointer=row['pointer']):
+                    qa.validate_format(row,policy)
+                    with self.assertRaises(ValueError):
+                        qa.validate_format(dict(row,tr=row['tr']+' değiştirilmiş'),policy)
+
+
 class ManifestBindingTests(unittest.TestCase):
     def test_all_row_manifest_schemas_bind_both_languages_and_keys(self):
         row = dict(asset='fixture.item', pointer='/description', en='Hello', tr='Merhaba')
