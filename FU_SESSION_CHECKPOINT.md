@@ -1,8 +1,8 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-23 Eylül 2026: v0.49.0 kalan ahşap yapı malzemeleri çeviri paketi hazırlanıyor.
-v0.48.0 PR #32 main dalına alındı. Teknik depo denetimi ayrıntıları:
+23 Eylül 2026: v0.50.0 arıcılık sistemi çeviri paketi hazırlanıyor.
+v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
 Bu checkpoint bir build kanıtı kopyası değildir; v0.42-v0.48 sürüm sonuçları ve
@@ -394,3 +394,12 @@ Oyun içi LQA ayrı bir aşamadır.
 - Pinned source kapısı, katalog regresyonu, tam kaynak derlemesi ve CI sonuçları bu dalda doğrulanacak.
 - Oyun içi font/taşma ve gerçek kullanım LQA: **NOT TESTED**.
 - Sonraki adım: `tiles/materials/` dışındaki yüksek değerli Biyom/Zindan/Dünya alanlarından küçük, runtime-bağlı grup seç; tüm 1.595 alanı tek pakette alma.
+
+## v0.50 arıcılık sistemi
+- v0.49 kataloğunda henüz bulunmayan `bees/` görünür alanları: **537 alan / 207 asset / 308 benzersiz kaynak metin**.
+- Arı türleri ve koloni rolleri, petekler, arılık çerçeveleri, eşya açıklamaları ve arıcılık arayüz etiketleri birlikte ele alındı.
+- Ana Arı / Erkek Arı ve Bal Peteği kararları mevcut kilitli sözlükle eşlendi; özel tür adları korunarak işlevsel tür adları çevrildi.
+- Pinned source gate, katalog/format testleri ve tam kaynak statik build: **PASS**; main CI sonucu bekleniyor.
+- Yerel Lua davranış testi `lupa` olmadığı için çalıştırılamadı; CI Lua testi ayrıca çalıştıracak.
+- Oyun içi font/taşma ve gerçek kullanım LQA: **NOT TESTED**.
+- Sonraki adım: kalan biyom/zindan/dünya sistemleri kapsamından küçük, runtime-bağlı aile seç.

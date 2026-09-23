@@ -555,6 +555,9 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Dynast | Dynast temalı ahşap yapı ailesi | Özel ad | Dynast |  | LOCKED | Dynast malzeme ailesinin özel adı korunur. |
 | Weathered | Eskimiş ve yıpranmış malzeme niteliği | Sıfat | Yıpranmış | Weathered | LOCKED | Weathered Wood ailesi adlarında kullanılır. |
 | Wood Plank | Ahşap yapı kalası | Nesne | Ahşap Kalas | Wood Plank | LOCKED | Ahşap kalas malzemesi adlarında kullanılır. |
+| Young Queen | Arıcılık / genç koloni arısı | Terim | Genç Ana Arı | Young Queen | LOCKED | Genç koloni ana arısı; tür adı öne yazılır. |
+| Advanced Frame | Arıcılık çerçevesi | Nesne | Gelişmiş Çerçeve | Advanced Frame | LOCKED | Arılık içindeki çerçeve yükseltmesi. |
+| Bee Flower Head | Arıcılık malzemesi | Nesne | Arı Çiçeği Başı | Bee Flower Head | LOCKED | Arı Çiçeği nesnesinden elde edilen parça. |
 
 ## Kural
 
