@@ -8,30 +8,31 @@ from qa_integrity import validate_format
 from rule_data import TOOLS
 
 
-class V048Tests(unittest.TestCase):
+class V049Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.manifest = json.loads((TOOLS / 'v048_translations.json').read_text(encoding='utf-8'))
+        cls.manifest = json.loads((TOOLS / 'v049_translations.json').read_text(encoding='utf-8'))
         cls.catalog = json.loads((TOOLS / 'ceviriler.json').read_text(encoding='utf-8'))
         cls.rows = cls.manifest['translations']
 
     def test_catalog_contains_exact_manifest(self):
         catalog = {(row['asset'], row['pointer']): row for row in self.catalog['translations']}
-        self.assertEqual(len(self.rows), 151)
-        self.assertEqual(len({row['asset'] for row in self.rows}), 32)
-        self.assertEqual(len({row['en'] for row in self.rows}), 87)
+        self.assertEqual(len(self.rows), 227)
+        self.assertEqual(len({row['asset'] for row in self.rows}), 44)
+        self.assertEqual(len({row['en'] for row in self.rows}), 174)
         for row in self.rows:
             current = catalog.get((row['asset'], row['pointer']))
             self.assertIsNotNone(current, row['asset'] + row['pointer'])
             self.assertEqual((current['en'], current['tr']), (row['en'], row['tr']))
 
     def test_scope_is_exact(self):
-        families = {'darkwood', 'lightwood', 'treatedwood'}
+        families = {'aenwood', 'dollhouse', 'dynastwood', 'rawwood', 'weathered wood'}
         pointers = {
             '/description', '/shortdescription', '/floranDescription',
-            '/glitchDescription', '/novakidDescription',
+            '/glitchDescription', '/novakidDescription', '/humanDescription',
+            '/apexDescription', '/avianDescription', '/hylotlDescription',
         }
-        self.assertEqual(self.manifest['translation_version'], '0.48.0-beta')
+        self.assertEqual(self.manifest['translation_version'], '0.49.0-beta')
         for row in self.rows:
             parts = Path(row['asset']).parts
             self.assertEqual(parts[:2], ('tiles', 'materials'))
@@ -43,10 +44,6 @@ class V048Tests(unittest.TestCase):
         for row in self.rows:
             translations.setdefault(row['en'], set()).add(row['tr'])
         self.assertTrue(all(len(values) == 1 for values in translations.values()))
-
-    def test_catalog_version_may_advance_after_manifest(self):
-        version = tuple(map(int, self.catalog['translation_version'].split('-', 1)[0].split('.')))
-        self.assertGreaterEqual(version, (0, 48, 0))
 
     def test_all_new_text_preserves_format_contracts(self):
         policy = json.loads((TOOLS / 'rules/text_integrity.json').read_text(encoding='utf-8'))

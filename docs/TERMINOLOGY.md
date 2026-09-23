@@ -550,6 +550,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Timber | Ahşap yapı malzemesi | Kaynak | Kereste | Timber | LOCKED | FU yapı malzemesi adlarında kullanılır. |
 | Shoji Screen Panel | Japon tarzı ahşap paravan | Nesne | Şoji Paravan Paneli | Shoji Screen Panel | LOCKED | Şoji özel yapı stili olarak korunur. |
 | Ornate Timber | Ahşap yapı malzemesi | Kaynak | Süslü Kereste | Ornate Timber | LOCKED | Ornate ahşap ailesinde kullanılır. |
+| Aen | Aether temalı ahşap yapı ailesi | Özel ad | Aen |  | LOCKED | Yıldızlı/Aether temalı ahşap yapı malzemelerinin aile adı korunur. |
+| Dollhouse | Oyuncak ev temalı yapı ailesi | Nesne | Oyuncak Ev | Dollhouse | LOCKED | Oyuncak ev temalı yapı malzemesi adlarında kullanılır. |
+| Dynast | Dynast temalı ahşap yapı ailesi | Özel ad | Dynast |  | LOCKED | Dynast malzeme ailesinin özel adı korunur. |
+| Weathered | Eskimiş ve yıpranmış malzeme niteliği | Sıfat | Yıpranmış | Weathered | LOCKED | Weathered Wood ailesi adlarında kullanılır. |
+| Wood Plank | Ahşap yapı kalası | Nesne | Ahşap Kalas | Wood Plank | LOCKED | Ahşap kalas malzemesi adlarında kullanılır. |
 
 ## Kural
 

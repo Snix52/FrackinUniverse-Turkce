@@ -1,14 +1,12 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-23 Eylül 2026: v0.47.0 kaynakları üzerinde depo genelinde teknik denetim.
-Manifest/katalog eşleşmesi, tüm FU patch kaynakları, paket kanıtı, kapsam tarayıcısı
-ve Windows doğrulaması sıkılaştırıldı. Ayrıntılar: `docs/FULL_AUDIT_20260923.md`.
-Yeni çeviri kapsamı veya oyun içi LQA tamamlandığı iddia edilmez.
+23 Eylül 2026: v0.49.0 kalan ahşap yapı malzemeleri çeviri paketi hazırlanıyor.
+v0.48.0 PR #32 main dalına alındı. Teknik depo denetimi ayrıntıları:
+`docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
-Bu checkpoint bir build kanıtı kopyası değildir; aşağıdaki sürüm sonuçları ve
-"Sonraki başlangıç noktası" bölümleri tarihsel kayıtlardır. En yeni tamamlanan
-çeviri kapsamı v0.47.0 bitkilerdir.
+Bu checkpoint bir build kanıtı kopyası değildir; v0.42-v0.48 sürüm sonuçları ve
+"Sonraki başlangıç noktası" bölümleri tarihsel kayıtlardır.
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
 
@@ -387,3 +385,12 @@ Oyun içi LQA ayrı bir aşamadır.
 - v0.48 kataloğu: **8.474 structured alan**, **2.427 patch asset**, 7 raw asset. Yerel tam kaynak build ve 151/151 pinned source gate PASS.
 - Oyun içi font/taşma ve gerçek kullanım LQA: **NOT TESTED**.
 - Sonraki odak: diğer tiles/materials ailelerini alt gruplar hâlinde runtime ve terim bağlamıyla sınıflandır; 1.763 alanlık karo havuzunu topluca ekleme.
+
+## v0.49 ahşap yapı malzemeleri
+- v0.48 sonrasında kaynak/katalog karşılaştırmasında **44 asset / 227 alan / 174 benzersiz kaynak metin** kaldı; kapsam beş ilişkili ahşap ailesiyle sınırlandı: `aenwood`, `dollhouse`, `dynastwood`, `rawwood`, `weathered wood`.
+- Taş, bal, biyom, pencere ve diğer karo aileleri bu pakete dahil edilmedi.
+- Alanlar ad, açıklama ve Floran/Glitch/Novakid inceleme metinlerinden oluşur; tekrarlı ortak repliklerde v0.48 terminolojisi kullanılır.
+- Yeni kilitli terimler: Aen (özel aile adı), Dollhouse -> **Oyuncak Ev**, Dynast (özel aile adı), Weathered -> **Yıpranmış**, Wood Plank -> **Ahşap Kalas**.
+- Pinned source kapısı, katalog regresyonu, tam kaynak derlemesi ve CI sonuçları bu dalda doğrulanacak.
+- Oyun içi font/taşma ve gerçek kullanım LQA: **NOT TESTED**.
+- Sonraki adım: `tiles/materials/` dışındaki yüksek değerli Biyom/Zindan/Dünya alanlarından küçük, runtime-bağlı grup seç; tüm 1.595 alanı tek pakette alma.
