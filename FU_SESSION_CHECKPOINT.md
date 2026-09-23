@@ -1,9 +1,10 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-23 Eylül 2026: v0.53.0 Peglaci yapı/kablo/Pykrete malzemeleri yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
+23 Eylül 2026: v0.54.0 Honey ailesi yapı malzemeleri yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
 v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
+Yeni çeviri paketlerinde varsayılan hedef yaklaşık **500 alan / 250–400 benzersiz kaynak metin**; tekrarlı ve tutarlı ailelerde **800–1000 alan** olabilir. v0.54 küçük kapsamı bu kural öncesinde hazırlanmış adaydır; boyut politikası sonraki paketlerden uygulanır. Ayrıntı: [`docs/TRANSLATION_BATCH_POLICY.md`](docs/TRANSLATION_BATCH_POLICY.md).
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
 Bu checkpoint bir build kanıtı kopyası değildir; v0.42-v0.50 sürüm sonuçları ve
 "Sonraki başlangıç noktası" bölümleri tarihsel kayıtlardır.
@@ -428,5 +429,5 @@ Oyun içi LQA ayrı bir aşamadır.
 ## v0.54 bal ve altın ahşap yapı malzemeleri
 - v0.53 sonrası güncel main kataloğunda kalan karo malzemelerinden Honey ailesinin bal peteği, altın ahşap, cam ve balmumu alanları seçildi: **71 alan / 18 asset / 62 benzersiz kaynak metin**.
 - Kaynak manifesti pinned FU 6.5.8 commitine sabit; yalnız Honey ailesi assetleri dahil. v0.54 exact-source gate ve build allowlist eklendi.
-- Çeviri adayı Luna dalında hazırlandı. Sol kaynak kontrollerini, QA'yı ve yayınlamayı üstlenecek.
+- Pinned kaynak kapısı PASS (**71/18/62**); katalog bütünlük QA'sı PASS (**14.394 katalog birimi / 52 raw birim / 542 LOCKED terim**). **193 birim testi**, pinli kaynakla tam build (**9.792 alan / 2.861 patch asset / 7 raw asset / 57 raw metin**) ve build üzerinde **3 Lua davranış testi** PASS. Floran replikleri, Golden Wood kilidi ve çeviri belleği incelemede eşlendi.
 - Oyun içi LQA: **NOT TESTED**.
