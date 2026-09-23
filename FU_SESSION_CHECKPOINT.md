@@ -460,3 +460,8 @@ Oyun içi LQA ayrı bir aşamadır.
 - Sol dil incelemesinde v0.57 adayına göre **12 benzersiz kaynak cümle veya etiket / 13 çeviri alanı** düzeltildi. Arı ana rolü, Precursor/Penumbra/Densinium/Jungle terimleri, `Cosmic Ray` sözcük oyunu ve anlamı kayan açıklamalar gözden geçirildi.
 - v0.57 exact-source gate **PASS (477/239/344)**; katalog QA **PASS (17.010 katalog birimi / 52 raw birim / 542 LOCKED terim)**. **193 birim testi**, pinli kaynakla tam build **PASS (11.100 alan / 3.474 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
 - Oyun içi LQA: **NOT TESTED**.
+
+### v0.57 yayın sonrası Slime adlandırma düzeltmesi
+- Aynı canavar ailesindeki diğer adlar `Balçık` kullanırken altı genel yaratık adı `Slime` kalmıştı; altı `/shortdescription` alanı `Balçık` olarak düzeltildi. Önceki katalogdaki oynanabilir tür adı `Slime` korundu; iki bağlam için çeviri belleğine yalnız yedi alanı kapsayan kesin istisna eklendi.
+- Luna v0.57 adayından bu sonuca kadar toplam **13 benzersiz kaynak cümle veya etiket / 19 çeviri alanı** düzeltildi. Önceki 10.623 katalog alanı değişmedi.
+- Katalog QA, **193 birim testi**, v0.57 exact-source gate, pinli FU 6.5.8 tam build ve build çıktısındaki **3 Lua davranış testi** yeniden PASS. Oyun içi LQA: **NOT TESTED**.
