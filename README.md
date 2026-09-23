@@ -4,20 +4,20 @@ Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
-**Güncel sürüm:** v0.56.0 Beta
+**Güncel sürüm:** v0.57.0 Beta
 **Hedef FU sürümü:** 6.5.8  
 **Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
 ## Güncel durum
 
-v0.56.0 Beta itibarıyla:
+v0.57.0 Beta itibarıyla:
 
-- **10.623** yapılandırılmış oyuncu metni
+- **11.100** yapılandırılmış oyuncu metni
 - **57** görünür Lua/script metni
-- **10.680** toplam yerelleştirilmiş görünür birim
-- **3.235** patch asset
+- **11.157** toplam yerelleştirilmiş görünür birim
+- **3.474** patch asset
 - **7** raw override asset
-- **3.242** toplam hedef asset
+- **3.481** toplam hedef asset
 - Statik QA: **PASS**
 - Pinned FU source validation: **PASS**
 - ZIP bütünlüğü ve kurulum ağacı eşleşmesi: **PASS**
@@ -25,7 +25,7 @@ v0.56.0 Beta itibarıyla:
 
 Güncel doğrulanmış paket:
 
-`dist/FU_Turkce_v0.56.0_Beta.zip`
+`dist/FU_Turkce_v0.57.0_Beta.zip`
 
 Paket ve güncel build kanıtı `main` yayın workflow'u tarafından üretilir. Paket SHA-256 değeri, kaynak commit kimliği, workflow run numarası ve doğrulama durumu yalnız [dist/build-evidence.json](dist/build-evidence.json) içinde tutulur; README’ye kopyalanmaz.
 
@@ -97,11 +97,13 @@ v0.46.1-v0.46.3 bakımında Jungle ve görev/konum görünen adları geriye dön
 
 **v0.56.0** ile kalan karo malzemeleri ve karo modlarındaki 197 assetin **365** görünür alanı çevrildi. Sabitlenmiş FU kaynak sürümü korunur.
 
+**v0.57.0** ile yürüyen ve uçan canavar ailelerindeki 239 assetin **477** görünür ad ve açıklama alanı çevrildi. Sabitlenmiş FU kaynak sürümü korunur.
+
 ## Kurulum
 
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
-3. [Güncel beta paketini](dist/FU_Turkce_v0.56.0_Beta.zip) indirip çıkar.
+3. [Güncel beta paketini](dist/FU_Turkce_v0.57.0_Beta.zip) indirip çıkar.
 4. Eski `FU_Turkce` kurulumunu `mods` dışına yedekle; yeni paketteki `FU_Turkce` klasörünü `mods` içine temiz kurulum olarak kopyala. Klasörleri birleştirmek kaldırılan eski yamaları oyunda bırakabilir.
 5. Son yol şu şekilde görünmeli:
 
@@ -111,7 +113,7 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
-Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.56.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
+Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.57.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
 
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 

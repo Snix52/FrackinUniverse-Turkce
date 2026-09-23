@@ -453,3 +453,10 @@ Oyun içi LQA ayrı bir aşamadır.
 - `tiles/mods/moonstone.matmod` açıklaması pinli FU ağacında yalnız FU `.patch` katmanından geldiği için manifest ve katalogda katmanlı kaynak olarak işaretlendi. Neon tüp açıklamasındaki kullanım anlamı, bazı adlar ve Floran replikleri kaynakla eşlendi; önceki 10.258 alan birebir korundu.
 - Yerel katalog QA'sı **PASS (16.056 katalog birimi / 52 raw birim / 542 LOCKED terim)**; **193 birim testi**, pinli FU 6.5.8 ile tam kaynak build **PASS (10.623 alan / 3.235 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS. v0.56 exact-source gate **PASS (365 alan / 197 asset / 323 kaynak)**.
 - Yayın sonrası ikinci dil incelemesinde Irradium, Plütonyum ve Uranyum döşemelerinin açıklamalarındaki `Slab` → `külçe` anlam hatası düzeltildi. v0.56 adayıyla karşılaştırıldığında toplam **17 çeviri alanı / 14 benzersiz kaynak cümle veya etiket** değişti. Oyun içi LQA hâlâ yapılmadı.
+
+## v0.57 yürüyen ve uçan canavarlar
+- `codex/luna-v057` adayı güncel `main` üstüne alındı; önceki 10.623 katalog satırı birebir korundu. Yeni kapsam **477 alan / 239 asset / 344 benzersiz kaynak metin**; toplam **11.100** yapılandırılmış alan oldu.
+- `monopus.monstertype` açıklamasının pinli FU ağacında yalnız FU `.patch` katmanından geldiği doğrulandı; manifest ve katalogda mevcut katmanlı kaynak politikasıyla işaretlendi. Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` değişmedi.
+- Sol dil incelemesinde v0.57 adayına göre **12 benzersiz kaynak cümle veya etiket / 13 çeviri alanı** düzeltildi. Arı ana rolü, Precursor/Penumbra/Densinium/Jungle terimleri, `Cosmic Ray` sözcük oyunu ve anlamı kayan açıklamalar gözden geçirildi.
+- v0.57 exact-source gate **PASS (477/239/344)**; katalog QA **PASS (17.010 katalog birimi / 52 raw birim / 542 LOCKED terim)**. **193 birim testi**, pinli kaynakla tam build **PASS (11.100 alan / 3.474 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
+- Oyun içi LQA: **NOT TESTED**.
