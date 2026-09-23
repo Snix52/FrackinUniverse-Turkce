@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-23 Eylül 2026: v0.52.0 taş/toprak/yapı blokları yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
+23 Eylül 2026: v0.53.0 Peglaci yapı/kablo/Pykrete malzemeleri yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
 v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
@@ -418,3 +418,9 @@ Oyun içi LQA ayrı bir aşamadır.
 - `qa_integrity.py`: **PASS (14.120 katalog birimi / 52 raw birim / 542 LOCKED terim)**. Pinned kaynakla statik build **PASS (9.655 alan / 2.829 patch asset / 7 raw asset / 57 raw metin)**; kaynak doğrulaması da PASS.
 - Önceki 9.337 katalog satırı ve katmanlı/harici kaynak kanıtları birebir korundu. Yeni alanlarda kilitli Silt/Jungle/Penumbral terimleri, anlam hataları ve Floran konuşma biçimi gözden geçirildi.
 - v0.45-v0.52 kaynak kapıları, **193 birim testi** ve üretilen paket üzerinde **3 Lua davranış testi** yerelde PASS. Oyun içi LQA: **NOT TESTED**.
+
+## v0.53 Peglaci yapı ve kablo malzemeleri
+- v0.52 kataloğu sonrası `tiles/materials/` içinden Peglaci yapı, soğutmalı kablo ve Pykrete yapı malzemeleri seçildi: **66 alan / 14 asset / 54 benzersiz kaynak metin**.
+- Peglaci/Glitch/Floran inceleme metinlerinde kaynak karakter sesi korundu; Peglaci ve Pykrete özel adları tutarlı bırakıldı.
+- Pinned kaynak kapısı PASS (**66/14/54**); katalog bütünlük QA'sı PASS (**14.252 katalog birimi / 52 raw birim / 542 LOCKED terim**). **193 birim testi**, pinli kaynakla tam build (**9.721 alan / 2.843 patch asset / 7 raw asset / 57 raw metin**) ve build üzerinde **3 Lua davranış testi** PASS. Pykrete temel bloğunun yanlış açıklaması incelemede düzeltildi.
+- Oyun içi LQA: **NOT TESTED**.
