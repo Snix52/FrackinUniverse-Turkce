@@ -1,11 +1,11 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-23 Eylül 2026: v0.50.0 arıcılık sistemi çeviri paketi hazırlanıyor.
+23 Eylül 2026: v0.51.0 platform paketi ana dalda yayımlandı; oyun içi LQA bekliyor.
 v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
-Bu checkpoint bir build kanıtı kopyası değildir; v0.42-v0.48 sürüm sonuçları ve
+Bu checkpoint bir build kanıtı kopyası değildir; v0.42-v0.50 sürüm sonuçları ve
 "Sonraki başlangıç noktası" bölümleri tarihsel kayıtlardır.
 
 Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
