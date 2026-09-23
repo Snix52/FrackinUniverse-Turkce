@@ -43,10 +43,11 @@ python tools/qa_integrity.py
 python tools/build_validate.py --source-dir fu_source --output build_output
 # Kök kurulum ağacını yeni build ile eşitle.
 rm -rf FU_Turkce && cp -a build_output/FU_Turkce FU_Turkce
-python tools/write_build_evidence.py --zip dist/FU_Turkce_v0.30.0_Beta.zip \
+PACKAGE_PATH="$(python -c 'import json; v=json.load(open("tools/ceviriler.json", encoding="utf-8"))["translation_version"]; print("dist/FU_Turkce_v" + v.split("-", 1)[0] + ("_Beta" if "beta" in v.lower() else "") + ".zip")"
+python tools/write_build_evidence.py --zip "$PACKAGE_PATH" \
   --output dist/build-evidence.json --create-zip --refresh-tracked \
   --translation-source-commit "$(git rev-parse HEAD)" --workflow-run-id local
-unzip -t dist/FU_Turkce_v0.30.0_Beta.zip
+unzip -t "$PACKAGE_PATH"
 python tools/audit_remaining.py --source fu_source
 git diff --check
 ```
@@ -69,3 +70,28 @@ Raw manifest pinleri merkezi FU piniyle karşılaştırılır. Full-source build
 Test ortamı: Python 3.11 ve işletim sistemi Lua 5.4 kitaplığı. Ubuntu: `sudo apt-get install liblua5.4-0`. Lua kitaplığı yoksa davranış testleri atlanmaz, hata verir. Full-source build sonrasında `FU_TEST_MOD_DIR=build_output/FU_Turkce python -m unittest discover -s tools/tests -p 'test_lua_behavior.py' -v` komutu yeni üretilen Lua'yı da test eder. Bunlar Starbound API stub'larıyla yapılan testlerdir; gerçek oyun içi LQA değildir.
 
 GitHub branch protection/required checks ayrı sunucu ayarıdır. Workflow eklemek tek başına zorunlu merge engeli oluşturmaz. Bu ayar, mevcut generated yayın botunun erişimi dikkate alınarak uygulanmalıdır.
+
+## 23 Eylül depo denetimi
+
+Structured manifestlerin tüm şemaları ana katalogla asset/pointer/en/tr düzeyinde eşleşir; yinelenen ve katalogda bulunmayan alanlar reddedilir. FU patch'i belirtilen tüm satırlar kaynak dosyasından doğrulanır. Belgelenmiş vanilla dizi ekleme indeksleri kullanılır; `test` işleminin karşılaştırma değeri görünür kaynak kabul edilmez. Harici vanilla kaydına dayanan alanlar `validation.json/source_field_coverage/external_ledger_only` olarak ayrıca sayılır.
+
+FU kaynak dizini checkout kökü olmalıdır. İzlenmeyen ve ignore edilmiş ek dosyalar da reddedilir; bunlar dosya sistemi taramasına sızarak sabitlenmiş kaynağın sonuçlarını değiştirebilir.
+
+Build raporu gerçek yerel Git HEAD'ini ve bütün Python/JSON/Lua girdilerinin SHA-256 özetini tutar. Kaynak girdileri commit edilmemişken statik build çalışabilir, fakat dağıtım kanıtı üretilemez. Yerel paketleme öncesinde kaynak değişikliklerini commit et ve build'i yeniden çalıştır. Raporun commit'i eksik/farklıysa veya kurallar, manifestler, araçlar ya da raw şablonlar sonradan değişmişse paketleme yeniden build ister.
+
+`.gitattributes` checkout metinlerini LF olarak korur; mod üreticisi her işletim sisteminde UTF-8/LF baytları yazar. Windows testleri `lupa==2.8` içindeki **Lua 5.4** ile aynı davranış senaryolarını çalıştırır. Ubuntu sistem `liblua5.4` yolunu kullanmaya devam eder. İki runtime da yoksa test hata verir; sessiz atlama yapılmaz.
+
+Windows PowerShell örneği (Python 3.11+):
+
+```powershell
+python -m pip install lupa==2.8
+python -m unittest discover -s tools/tests -v
+python -X utf8 tools/qa_integrity.py
+python -X utf8 tools/build_validate.py --source-dir ..\fu_source --output ..\build_output
+$env:FU_TEST_MOD_DIR = '..\build_output\FU_Turkce'
+python -m unittest discover -s tools/tests -p test_lua_behavior.py -v
+```
+
+Kapsam tarayıcısı Lua görünür metinlerini manifestteki gerçek stringlerden alır; açıklama metadata'sını veya Python `unicode_escape` çözümlemesini kullanmaz. Tarama yine bir aday envanteridir: karmaşık koşullu patch dalları, bütün Lua veri akışı ve oyun içi görünürlük otomatik olarak kanıtlanmış sayılmaz.
+
+Renk ve normal sayı kaynak düzeltmeleri de `text_integrity.json` içinde tam asset/pointer/en/tr/gerekçe kaydına bağlıdır. `allow_color_fix` veya `allow_number_fix` bayrağı tek başına muafiyet vermez; mevcut 18 renk ve 20 sayı düzeltmesi korunur.

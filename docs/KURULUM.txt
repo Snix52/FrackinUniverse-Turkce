@@ -1,4 +1,4 @@
-FRACKIN' UNIVERSE TÜRKÇE | v0.30.0 BETA
+FRACKIN' UNIVERSE TÜRKÇE | BETA KURULUM KILAVUZU
 
 HEDEF SÜRÜM
 Frackin' Universe: 6.5.8
@@ -7,17 +7,18 @@ Kaynak commit:
 
 MEVCUT DURUM
 Bu sürüm FU'nun tamamını Türkçeleştirmez.
-6.016 yapılandırılmış oyuncu metni + 15 Lua arayüz metni olmak üzere
-toplam 6.031 görünür metin birimi yerelleştirilmiştir.
+Güncel paket sürümü, kapsamı ve doğrulama sonuçları repository kökündeki
+dist/build-evidence.json dosyasındadır. README güncel paket bağlantısını içerir.
 
-Statik QA tamamlandı.
-Oyun içi LQA, font ve metin taşması kontrolleri devam ediyor.
+Oyun içi LQA, font ve metin taşması kontrolleri henüz tamamlanmadı.
 
 KURULUM
 1. Starbound'u kapat.
 2. Mümkünse Starbound/storage klasörünü yedekle.
 3. Güncel FU Türkçe beta ZIP dosyasını çıkar.
-4. İçindeki FU_Turkce klasörünü Starbound'un mods klasörüne kopyala.
+4. Eski bir FU_Turkce kurulumu varsa klasörü mods dışına yedekle. Yeni paketteki
+   FU_Turkce klasörünü mods içine temiz kurulum olarak kopyala; eski klasörün
+   üzerine birleştirmek kaldırılmış yamaları oyunda bırakabilir.
 5. Son yol şu biçimde olmalı:
 
    Starbound\mods\FU_Turkce\_metadata
@@ -26,8 +27,9 @@ KURULUM
 7. Oyunu açıp FU Türkçe'nin yüklendiğini kontrol et.
 
 PAKET
-Repository içindeki güncel paket:
-dist/FU_Turkce_v0.30.0_Beta.zip
+README içindeki "Güncel beta paketini" bağlantısını kullan.
+dist/build-evidence.json içindeki package.path ve package.sha256 değerleri
+yayımlanmış paketin yolunu ve bütünlük değerini gösterir.
 
 KALDIRMA
 Oyunu kapat ve yalnızca şu klasörü sil:

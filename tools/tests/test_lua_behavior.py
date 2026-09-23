@@ -16,7 +16,12 @@ class LuaBehaviorTests(unittest.TestCase):
     def setUpClass(cls):
         library=ctypes.util.find_library('lua5.4')
         if not library:
-            raise RuntimeError('Lua behavior QA requires liblua5.4 (Ubuntu: liblua5.4-0).')
+            try:
+                from lupa.lua54 import LuaRuntime, LuaError
+            except ImportError as exc:
+                raise RuntimeError('Lua QA requires liblua5.4 or pip install lupa==2.8.') from exc
+            cls.runtime_class, cls.lua_error = LuaRuntime, LuaError
+            return
         cls.lua=ctypes.CDLL(library)
         lua=cls.lua
         lua.luaL_newstate.restype=ctypes.c_void_p
@@ -37,6 +42,16 @@ class LuaBehaviorTests(unittest.TestCase):
         return ctypes.string_at(ptr,size.value).decode('utf-8','replace') if ptr else ''
 
     def execute(self,program,run=True):
+        if hasattr(self, 'runtime_class'):
+            runtime = self.runtime_class()
+            try:
+                if run:
+                    runtime.execute(program, name='@fu_lua_qa')
+                    return runtime.globals().AUDIT_OUTPUT or ''
+                runtime.compile(program, name='@fu_lua_qa')
+                return ''
+            except self.lua_error as exc:
+                self.fail(str(exc))
         lua=self.lua;state=lua.luaL_newstate()
         self.assertTrue(state, 'Lua state allocation failed')
         try:
@@ -68,7 +83,7 @@ class LuaBehaviorTests(unittest.TestCase):
     def test_every_raw_override_is_valid_lua(self):
         files=sorted(MOD.rglob('*.lua'))
         expected={s['asset'] for name in ('raw_text_translations.json','raw_runtime_overrides.json')
-                  for s in json.loads((TOOLS/name).read_text())['assets']}
+                  for s in json.loads((TOOLS/name).read_text(encoding='utf-8'))['assets']}
         self.assertEqual({p.relative_to(MOD).as_posix() for p in files},expected)
         for file in files:
             with self.subTest(file=str(file)):self.execute(file.read_text(encoding='utf-8'),run=False)

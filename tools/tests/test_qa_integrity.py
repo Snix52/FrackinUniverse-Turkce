@@ -29,7 +29,7 @@ class IntegrityTests(unittest.TestCase):
 
     def test_signed_numbers_pass(self):
         for en, tr in [('+25%', '+25%'), ('-7', '-7'), ('+10', '+10'), ('-10', '-10'),
-                       ('+1.5%', '+%1,5'), ('+^green;25^reset;%', '+%25')]:
+                       ('+1.5%', '+%1,5'), ('+^green;25^reset;%', '+%^green;25^reset;')]:
             with self.subTest(en=en, tr=tr):
                 qa.validate_format(row(en, tr), self.policy)
                 self.assertEqual(build.signed_nums(en), build.signed_nums(tr))
