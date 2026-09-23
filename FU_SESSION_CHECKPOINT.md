@@ -378,3 +378,12 @@ Oyun içi LQA ayrı bir aşamadır.
 - Beklenen audit sonrası Biyom/Zindan/Dünya confirmed borcu: **638 asset / 1.746 alan**.
 - Beklenen genel confirmed borç: **12.350 asset / 50.092 alan**.
 - Oyun içi LQA: **NOT TESTED**.
+
+## v0.48 ahşap yapı malzemeleri
+- İlk karo/zemin materyali grubu runtime görünürlüğü ve dosya ailesi üzerinden ele alındı; yalnız `tiles/materials/darkwood/`, `lightwood/` ve `treatedwood/` içindeki confirmed oyuncu alanları seçildi.
+- **32 asset / 151 alan / 87 benzersiz kaynak metin**: ad, açıklama ve Floran/Glitch/Novakid inceleme metinleri.
+- `tiles/materials/` alanları için build validator'a genel izin eklenmedi; yalnız v0.48 manifestindeki alanlara izin verilir.
+- Yeni sabit terimler: Timber -> **Kereste**, Baseboard -> **Süpürgelik**, Window Lattice -> **Pencere Kafesi**, Shoji Screen Panel -> **Şoji Paravan Paneli**, Ornate Timber -> **Süslü Kereste**.
+- v0.48 kataloğu: **8.474 structured alan**, **2.427 patch asset**, 7 raw asset. Yerel tam kaynak build ve 151/151 pinned source gate PASS.
+- Oyun içi font/taşma ve gerçek kullanım LQA: **NOT TESTED**.
+- Sonraki odak: diğer tiles/materials ailelerini alt gruplar hâlinde runtime ve terim bağlamıyla sınıflandır; 1.763 alanlık karo havuzunu topluca ekleme.

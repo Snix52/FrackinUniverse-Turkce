@@ -49,6 +49,7 @@ jobs:
           python tools/generate_v045.py --source fu_source
           python tools/generate_v046.py --source fu_source
           python tools/generate_v047.py --source fu_source
+          python tools/generate_v048.py --source fu_source
           python tools/build_validate.py --source-dir fu_source --output build_output
       - name: Exercise the freshly built Lua
         env:

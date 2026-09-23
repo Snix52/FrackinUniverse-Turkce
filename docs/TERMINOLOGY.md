@@ -545,6 +545,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Dantalion | Özel ad | Görev/Konum | Dantalion |  | LOCKED | Görevdeki özel ad. |
 | Dreadwing | Özel ad | Görev/Konum | Dreadwing |  | LOCKED | Boss özel adı. |
 | Visit Nightfort | SAIL görev düğmesi | Görev/Konum | Gece Hisarı'nı Ziyaret Et | Visit Nightfort, Nightfort'u Ziyaret Et | LOCKED | SAIL görünür eylem metni; teknik nightfort kimliklerine dokunulmaz. |
+| Window Lattice | Ahşap yapı malzemesi adı | Nesne | Pencere Kafesi | Window Lattice | LOCKED | Koyu, açık renkli ve işlenmiş ahşap yapı malzemesi adlarında kullanılır. |
+| Baseboard | İç mekân ahşap kaplaması | Nesne | Süpürgelik | Baseboard | LOCKED | Ahşap zemin ve duvar kaplamasının alt kenarındaki bitiş çıtası. |
+| Timber | Ahşap yapı malzemesi | Kaynak | Kereste | Timber | LOCKED | FU yapı malzemesi adlarında kullanılır. |
+| Shoji Screen Panel | Japon tarzı ahşap paravan | Nesne | Şoji Paravan Paneli | Shoji Screen Panel | LOCKED | Şoji özel yapı stili olarak korunur. |
+| Ornate Timber | Ahşap yapı malzemesi | Kaynak | Süslü Kereste | Ornate Timber | LOCKED | Ornate ahşap ailesinde kullanılır. |
 
 ## Kural
 
