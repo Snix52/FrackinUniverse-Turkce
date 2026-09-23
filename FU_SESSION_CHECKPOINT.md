@@ -439,3 +439,9 @@ Oyun içi LQA ayrı bir aşamadır.
 - Oyun içi LQA: **NOT TESTED**.
 - Sol incelemesinde katalogdaki 466 yinelenen v0.55 satırı çıkarıldı; önceki 9.792 alan birebir korundu. Camın öbür tarafını görme repliğindeki kopyalama hatası dört assette, Floran sesi sekiz alanda düzeltildi.
 - Yerel katalog QA'sı **PASS (15.326 katalog birimi / 52 raw birim / 542 LOCKED terim)**; **193 birim testi** ve pinned FU 6.5.8 tam kaynak build **PASS (10.258 alan / 3.038 patch asset / 7 raw asset / 57 raw metin)**. Build çıktısı üzerinde **3 Lua davranış testi** ve v0.55 exact-source gate **PASS (466/177/393)**. GitHub build/audit CI başarılı; `dist/FU_Turkce_v0.55.0_Beta.zip` kanıttaki SHA-256 ve ZIP CRC denetiminden geçti.
+
+## v0.56 kalan karo malzemeleri adayı
+- v0.55 sonrası güncel main ve pinned FU 6.5.8 auditinde `tiles/` altında kalan görünür kapsam seçildi: **365 alan / 197 asset / 323 benzersiz kaynak metin**.
+- Bu paket `tiles/materials/` içindeki kalan malzemeleri ve ilişkili `tiles/mods/` girdilerini kapatır. Doğal klasör sınırı 500 alan hedefinin altında kaldığı için ilgisiz içerik eklenmedi.
+- Aday `codex/luna-v056` dalında hazırlanıyor. Exact-source manifesti, kaynak kapısı ve build allowlisti eklendi; Sol doğrulama ve yayın adımını üstlenecek.
+- Oyun içi LQA: **NOT TESTED**.
