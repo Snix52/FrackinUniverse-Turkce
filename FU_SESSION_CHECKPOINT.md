@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-23 Eylül 2026: v0.51.0 platform paketi ana dalda yayımlandı; oyun içi LQA bekliyor.
+23 Eylül 2026: v0.52.0 taş/toprak/yapı blokları yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
 v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
 Kaynak sürüm: `tools/ceviriler.json`. Yayımlanmış son paketin gerçek sürümü, kaynak commit'i, CI run'ı, SHA-256 ve PASS durumu için tek referans: [`dist/build-evidence.json`](dist/build-evidence.json).
@@ -411,3 +411,10 @@ Oyun içi LQA ayrı bir aşamadır.
 - `low impact` ifadesi görünmez platform dokusu/yerleşim bağlamıyla `göze batmayan` olarak yorumlandı; anlam tercihi gözden geçirilebilir. İnceleme sonrası Nightar/Novakid anlam hatası düzeltildi ve 11 Floran repliğinde karakter sesi korundu.
 - Eski v0.50 kaynak kapısı ve testi, katalog sürümünü alt sınır olarak kabul edecek biçimde düzeltildi; v0.51 kapısı da sonraki sürümlerle uyumlu. v0.45-v0.51 kaynak kapıları ve **193 test** PASS.
 - Pinned source gate PASS (**99 alan / 33 asset / 78 kaynak**); `qa_integrity.py` PASS (**13.484 katalog birimi / 52 raw birim / 542 LOCKED terim**). Statik build PASS (**9.337 alan / 2.703 patch asset / 7 raw asset / 57 raw metin**), build çıktısı üzerinde **3 Lua testi** PASS; güncel çıktı `local-runtime/build-v051-fixed/` altında. Oyun içi LQA: **NOT TESTED**.
+
+## v0.52 taş, toprak ve yapı blokları
+- v0.51 sonrasındaki pinned FU 6.5.8 auditinden `tiles/materials/` içindeki tutarlı taş/toprak/tuğla/blok ailesi seçildi: **318 alan / 126 asset / 282 benzersiz kaynak metin**.
+- Yeni sürüm `0.52.0-beta`; her alan kaynakta doğrulanıyor ve manifestte kilitli. `generate_v052.py` pinned source gate: **PASS (318/126/282)**.
+- `qa_integrity.py`: **PASS (14.120 katalog birimi / 52 raw birim / 542 LOCKED terim)**. Pinned kaynakla statik build **PASS (9.655 alan / 2.829 patch asset / 7 raw asset / 57 raw metin)**; kaynak doğrulaması da PASS.
+- Önceki 9.337 katalog satırı ve katmanlı/harici kaynak kanıtları birebir korundu. Yeni alanlarda kilitli Silt/Jungle/Penumbral terimleri, anlam hataları ve Floran konuşma biçimi gözden geçirildi.
+- v0.45-v0.52 kaynak kapıları, **193 birim testi** ve üretilen paket üzerinde **3 Lua davranış testi** yerelde PASS. Oyun içi LQA: **NOT TESTED**.
