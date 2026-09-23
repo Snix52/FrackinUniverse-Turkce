@@ -98,7 +98,10 @@ def main() -> None:
             raise ValueError("v0.49 pinned source mismatch: " + row["asset"] + row["pointer"])
 
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
-    if catalog["translation_version"] != "0.49.0-beta":
+    catalog_version = tuple(
+        int(part) for part in catalog["translation_version"].split("-", 1)[0].split(".")
+    )
+    if catalog_version < (0, 49, 0):
         raise ValueError("catalog version behind v0.49")
     index = {(row["asset"], row["pointer"]): row for row in catalog["translations"]}
     for row in rows:

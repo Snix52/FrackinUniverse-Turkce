@@ -33,6 +33,10 @@ class V049Tests(unittest.TestCase):
             '/apexDescription', '/avianDescription', '/hylotlDescription',
         }
         self.assertEqual(self.manifest['translation_version'], '0.49.0-beta')
+        catalog_version = tuple(
+            int(part) for part in self.catalog['translation_version'].split('-', 1)[0].split('.')
+        )
+        self.assertGreaterEqual(catalog_version, (0, 49, 0))
         for row in self.rows:
             parts = Path(row['asset']).parts
             self.assertEqual(parts[:2], ('tiles', 'materials'))
