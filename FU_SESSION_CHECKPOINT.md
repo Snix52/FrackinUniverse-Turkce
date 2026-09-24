@@ -1,6 +1,7 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
+24 Eylül 2026: FU upstream `master` commit `bb58383c0d16c1152e3439e606b39ff82288b586` incelendi. 6.5.8 etiketi `329e714b3fe87571055c8ad7aa38135d199d3317` sonrasında 3 commit / 12 dosya değişmiş; `.metadata` sürümü 6.5.8 kalmıştır. Dört görünür `/shortdescription` alanında yalnız İngilizce büyük harf düzeltmesi var ve dördü de mevcut katalogda çevrilmemişti; diğer sekiz dosyada teknik parametre temizliği var. Eski ve yeni kaynak auditleri aynı sonucu verdi: 45.517 doğrulanmış kalan alan / 10.499 asset; 4.331 review alanı / 620 asset; 165 Lua inceleme literal'i / 33 asset. Ek çeviri borcu 0, mevcut Türkçe cümle değişikliği 0. Kaynak pini ve manifest provenance yeni commit'e taşındı; doğrulama ve yayın durumu `dist/build-evidence.json` üzerinden kontrol edilir. Ayrıntı: `docs/FU_UPSTREAM_20260924.md`.
 24 Eylül 2026: v0.61.0-beta kafe/fast-food/pazar/suşi barı adayında Sol incelemesi yapıldı. 375 benzersiz kaynak metin tarandı; 15 farklı çeviri cümlesi (15 alan) anlam, karakter sesi ve terminoloji için düzeltildi. Trixie'nin Burger Fool kurucusunun evcil hayvanı olduğu açıklaştırıldı; Cupcake/Küçük Kek ile altı yinelenen özel ad LOCKED olarak eklendi ve terminoloji belgesi yenilendi. Pinli v0.61 kaynak kapısı 399 alan / 48 asset / 375 kaynak için PASS; statik QA ve pinli tam kaynak build PASS (12.898 alan / 4.238 patch asset / 7 raw asset / 57 raw metin). Proje sanal ortamıyla 195 birim testi ve build çıktısında 3 Lua davranış testi PASS. GitHub CI, ZIP ve doğrudan main yayını bu kaydın yazıldığı anda bekliyor; oyun içi LQA yapılmadı.
 24 Eylül 2026: v0.61.0-beta yerel çeviri adayı hazırlandı. Kafe, fast-food, pazar ve suşi barı dekoratif nesneleri kapsamı 399 alan / 48 asset / 375 benzersiz kaynak metin içeriyor; önceki katalog TM eşleşmesi çıkmadı. Sol incelemesi, QA, build ve yayın bekleniyor.
 24 Eylül 2026: v0.60.0-beta Kadim ve Precursor mini-biome adayı Sol incelemesinden geçti. Kapsam 536 alan / 196 asset / 314 benzersiz kaynak metin; üç değer yayımlanmış Translation Memory karşılığından tekrar kullanıldı. Kaynak/çeviri kontrolü, QA ve pinli build başarılı; doğrudan `main` yayını hazırlanıyor.
@@ -31,7 +32,7 @@ Kapsam 477 alan / 239 asset / 344 benzersiz kaynak metin; bir değer mevcut kata
 TM'sinden tekrar kullanıldı. Altı test varlığının debug alanı adaydan çıkarıldı.
 Sol kaynak/çeviri kontrolü, QA, paket build'i ve yayın bekleniyor.
 
-Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `329e714b3fe87571055c8ad7aa38135d199d3317` (6.5.8).
+Pinned FU: `sayterdarkwynd/FrackinUniverse` @ `bb58383c0d16c1152e3439e606b39ff82288b586` (6.5.8).
 
 ## v0.42 tamamlanan kapsam
 - Structured: **260 alan / 46 asset / 82 benzersiz kaynak metin**
