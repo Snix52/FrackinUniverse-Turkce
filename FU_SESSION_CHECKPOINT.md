@@ -1,6 +1,7 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
+24 Eylül 2026: v0.61.0-beta yerel çeviri adayı hazırlandı. Kafe, fast-food, pazar ve suşi barı dekoratif nesneleri kapsamı 399 alan / 48 asset / 375 benzersiz kaynak metin içeriyor; önceki katalog TM eşleşmesi çıkmadı. Sol incelemesi, QA, build ve yayın bekleniyor.
 24 Eylül 2026: v0.60.0-beta Kadim ve Precursor mini-biome adayı Sol incelemesinden geçti. Kapsam 536 alan / 196 asset / 314 benzersiz kaynak metin; üç değer yayımlanmış Translation Memory karşılığından tekrar kullanıldı. Kaynak/çeviri kontrolü, QA ve pinli build başarılı; doğrudan `main` yayını hazırlanıyor.
 24 Eylül 2026: `Precursor` zaten LOCKED olmasına karşın tek sözcüklü terimler
 QA'nın cümle içi kontrolünden geçmiyordu. Terime özgü `enforce_in_text`

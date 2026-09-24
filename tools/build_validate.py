@@ -342,6 +342,15 @@ V060_MINIBIOME_FIELDS = {
 if len(V060_MINIBIOME_FIELDS) != len(_V060_MANIFEST['translations']):
     raise ValueError('v0.60 mini-biome manifestinde yinelenen alan var')
 
+_V061_MANIFEST = json.loads(
+    Path(__file__).with_name('v061_translations.json').read_text(encoding='utf-8')
+)
+V061_FOOD_SERVICE_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V061_MANIFEST['translations']
+}
+if len(V061_FOOD_SERVICE_FIELDS) != len(_V061_MANIFEST['translations']):
+    raise ValueError('v0.61 yeme-içme nesneleri manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -548,6 +557,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V061_FOOD_SERVICE_FIELDS:
+        return True
     if (a,p) in V060_MINIBIOME_FIELDS:
         return True
     if (a,p) in V059_MONSTER_FIELDS:
