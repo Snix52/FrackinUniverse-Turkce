@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-24T16:07:33.768967+00:00",
-  "workflow_run_id": "36023891929",
-  "source_commit": "dd6317cb6c25d7cba406369ac532c5788e75f5d5",
-  "translation_source_commit": "dd6317cb6c25d7cba406369ac532c5788e75f5d5",
-  "translation_version": "0.63.0-beta",
+  "generated_at_utc": "2026-09-24T17:29:27.193198+00:00",
+  "workflow_run_id": "36033424886",
+  "source_commit": "789020abd971df6a3d04b0973b38310424d6c72d",
+  "translation_source_commit": "789020abd971df6a3d04b0973b38310424d6c72d",
+  "translation_version": "0.63.1-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
@@ -15,16 +15,16 @@
     "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.63.0_Beta.zip",
-    "bytes": 2265138,
-    "sha256": "c8b406f9d6673017cc6942efc920101fae967edd0c9e018c9aea9b6e488e641c",
-    "git_blob_sha": "c066256e92864bc0cbffbc81b2e67e5046c6878c",
+    "path": "dist/FU_Turkce_v0.63.1_Beta.zip",
+    "bytes": 2267182,
+    "sha256": "4143f13c7dbc38f79f5f6f15711aeb3dff22eb6b1e01889ba5949d1ec80fbe04",
+    "git_blob_sha": "2a6d675d60a25ebba99de44f47cfebb7e3908e9c",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "4fa6757bb54e2f5acc768611062cb68bcd82546b683354493bb6a2330322aa7d",
-  "build_inputs_sha256": "8fec3201bf3d46ca14073af2ec7942b767efd1afce04e3e50e498f9b6596dea2",
-  "catalog_sha256": "869a32d099d402daad5484e5920fe667d22210f2e8fd1122ddff57f0029af47e",
+  "install_tree_sha256": "e5f57a6371f2ee799e4fd23f9a76f0db25c36e6440ac2340978f963a7167bd8c",
+  "build_inputs_sha256": "ff3ba615ca6610e5a70aa60fce0d5e539dbe024d9c88a9183d9acbcf16271b7a",
+  "catalog_sha256": "7e8c6780184fd07a4cb493d583166d0e094253984b20b143cd3191d53b6bc91b",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -2003,6 +2003,14 @@
       "qa": {
         "allow_control_fix": true,
         "reason": "[Tile] görünür zemin etiketidir; Lua status kimliğini ayrı kullanır. Yalnız bu asset/pointer/en/tr eşleşmesi izinlidir."
+      }
+    },
+    {
+      "asset": "interface/windowconfig/charcreation.config",
+      "pointer": "/paneLayout/mode/buttons/2/data/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "interface/windowconfig/charcreation.config.patch"
       }
     },
     {
