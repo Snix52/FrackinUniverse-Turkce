@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Settings"
-  },
-  {
-    "op": "test",
-    "path": "/children/0/bottomBar/1/caption",
-    "value": "Apply"
-  },
-  {
-    "op": "test",
-    "path": "/children/0/bottomBar/2/caption",
-    "value": "Cancel"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Ayarlar"
-  },
-  {
-    "op": "replace",
-    "path": "/children/0/bottomBar/1/caption",
-    "value": "Uygula"
-  },
-  {
-    "op": "replace",
-    "path": "/children/0/bottomBar/2/caption",
-    "value": "İptal"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Settings"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Ayarlar"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/children/0/bottomBar/1/caption",
+      "value": "Apply"
+    },
+    {
+      "op": "replace",
+      "path": "/children/0/bottomBar/1/caption",
+      "value": "Uygula"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/children/0/bottomBar/2/caption",
+      "value": "Cancel"
+    },
+    {
+      "op": "replace",
+      "path": "/children/0/bottomBar/2/caption",
+      "value": "İptal"
+    }
+  ]
 ]

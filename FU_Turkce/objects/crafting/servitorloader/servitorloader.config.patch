@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/lblText/value",
-    "value": "^#b9b5b2;Place Servitor in the left slot."
-  },
-  {
-    "op": "test",
-    "path": "/gui/scanButton/caption",
-    "value": "Load Servitor"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lblText/value",
-    "value": "^#b9b5b2;Servitor'u soldaki yuvaya yerleştir."
-  },
-  {
-    "op": "replace",
-    "path": "/gui/scanButton/caption",
-    "value": "Servitor'u Yükle"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/lblText/value",
+      "value": "^#b9b5b2;Place Servitor in the left slot."
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lblText/value",
+      "value": "^#b9b5b2;Servitor'u soldaki yuvaya yerleştir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/scanButton/caption",
+      "value": "Load Servitor"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/scanButton/caption",
+      "value": "Servitor'u Yükle"
+    }
+  ]
 ]

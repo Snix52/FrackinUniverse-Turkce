@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A cuckoo bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cuckoo Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir guguk arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Guguk Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cuckoo bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir guguk arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cuckoo Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Guguk Arısı"
+    }
+  ]
 ]

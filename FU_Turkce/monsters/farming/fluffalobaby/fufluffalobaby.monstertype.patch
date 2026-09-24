@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A newborn fluffalo's diet determines the type it grows into."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Fluffalo Calf"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yeni doğmuş bir Fluffalo'nun hangi türe dönüşeceğini beslenmesi belirler."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yavru Fluffalo"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A newborn fluffalo's diet determines the type it grows into."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yeni doğmuş bir Fluffalo'nun hangi türe dönüşeceğini beslenmesi belirler."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Fluffalo Calf"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yavru Fluffalo"
+    }
+  ]
 ]

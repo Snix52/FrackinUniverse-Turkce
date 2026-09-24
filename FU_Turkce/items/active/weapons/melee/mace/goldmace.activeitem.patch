@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Golden Maul"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Regal and dangerous.\n^cyan;+10% Stun^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Altın Savaş Çekici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Asil ve tehlikeli.\n^cyan;+10% Sersemletme^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Golden Maul"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Altın Savaş Çekici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Regal and dangerous.\n^cyan;+10% Stun^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Asil ve tehlikeli.\n^cyan;+10% Sersemletme^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Regal and dangerous.\r\n^cyan;+10% Stun^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Asil ve tehlikeli.\n^cyan;+10% Sersemletme^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Pressure, Moderate Heat/Cold, Mild Radiation/Poison/Proto"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Exitus Mech Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Basınç, Orta Dereceli Sıcaklık/Soğuk, Hafif Radyasyon/Zehir/Proto"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Exitus Mech Gövdesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Pressure, Moderate Heat/Cold, Mild Radiation/Poison/Proto"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Basınç, Orta Dereceli Sıcaklık/Soğuk, Hafif Radyasyon/Zehir/Proto"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Exitus Mech Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Exitus Mech Gövdesi"
+    }
+  ]
 ]

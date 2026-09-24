@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Craft Machining Table"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "You've been tasked with creating a ^orange;Machining Table^white;. ^green;Build one on your default crafting menu [C]^reset; to complete this task."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Great! This card contains directions to the facility I spoke of. There are many fellow scientists there with whom you can meet!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Machining Table^reset; to ^orange;Vinalisj^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "İmalat Tezgâhı Üret"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bir ^orange;İmalat Tezgâhı^white; üretmen istendi. Görevi tamamlamak için ^green;temel üretim menüsünü [C] aç ve bir tane üret^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Harika! Bu kartta sözünü ettiğim tesisin yol tarifi var. Orada tanışabileceğin pek çok bilim insanı bulunuyor!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;İmalat Tezgâhını^reset; ^orange;Vinalisj'e^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Craft Machining Table"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "İmalat Tezgâhı Üret"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "You've been tasked with creating a ^orange;Machining Table^white;. ^green;Build one on your default crafting menu [C]^reset; to complete this task."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bir ^orange;İmalat Tezgâhı^white; üretmen istendi. Görevi tamamlamak için ^green;temel üretim menüsünü [C] aç ve bir tane üret^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Great! This card contains directions to the facility I spoke of. There are many fellow scientists there with whom you can meet!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Harika! Bu kartta sözünü ettiğim tesisin yol tarifi var. Orada tanışabileceğin pek çok bilim insanı bulunuyor!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Machining Table^reset; to ^orange;Vinalisj^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;İmalat Tezgâhını^reset; ^orange;Vinalisj'e^reset; götür."
+    }
+  ]
 ]

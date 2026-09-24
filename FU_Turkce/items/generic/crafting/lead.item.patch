@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Lead"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Lead ^gray;Pb^reset; is notable for being denser than other common metals, great for radiation shielding, but also poisonous."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kurşun"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kurşun ^gray;Pb^reset;, yaygın metallerden daha yoğun olmasıyla öne çıkar; radyasyondan korunmak için idealdir ama zehirlidir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Lead"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kurşun"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Lead ^gray;Pb^reset; is notable for being denser than other common metals, great for radiation shielding, but also poisonous."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kurşun ^gray;Pb^reset;, yaygın metallerden daha yoğun olmasıyla öne çıkar; radyasyondan korunmak için idealdir ama zehirlidir."
+    }
+  ]
 ]

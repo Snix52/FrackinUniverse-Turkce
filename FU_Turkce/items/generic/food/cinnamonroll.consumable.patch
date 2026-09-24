@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A confectionary made of cinnamon, sugar, and dough. ^green;Type: Grain Dessert^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cinnamon Roll"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tarçın, şeker ve hamurdan yapılan bir tatlı. ^green;Tür: Tahıl Tatlısı^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tarçınlı Rulo"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A confectionary made of cinnamon, sugar, and dough. ^green;Type: Grain Dessert^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tarçın, şeker ve hamurdan yapılan bir tatlı. ^green;Tür: Tahıl Tatlısı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cinnamon Roll"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tarçınlı Rulo"
+    }
+  ]
 ]

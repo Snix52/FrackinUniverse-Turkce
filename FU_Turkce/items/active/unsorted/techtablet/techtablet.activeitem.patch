@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Primary^reset;: Tech Crafting\n^yellow;Secondary^reset;: Tech Console\n^green;Shift^reset;: Research Menu"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Tech Tablet"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Birincil^reset;: Tech Üretimi\n^yellow;İkincil^reset;: Tech Konsolu\n^green;Shift^reset;: Araştırma Menüsü"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tech Tableti"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Primary^reset;: Tech Crafting\n^yellow;Secondary^reset;: Tech Console\n^green;Shift^reset;: Research Menu"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Birincil^reset;: Tech Üretimi\n^yellow;İkincil^reset;: Tech Konsolu\n^green;Shift^reset;: Araştırma Menüsü"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Primary^reset;: Tech Crafting\r\n^yellow;Secondary^reset;: Tech Console\r\n^green;Shift^reset;: Research Menu"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Birincil^reset;: Tech Üretimi\n^yellow;İkincil^reset;: Tech Konsolu\n^green;Shift^reset;: Araştırma Menüsü"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Tech Tablet"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tech Tableti"
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Challenge Labs Complete!"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I should poke the crystal again to get my reward."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "This was all just so weird."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Poke the strange crystal again to get your reward."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Challenge Labs Tamamlandı!"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Ödülümü almak için kristale tekrar dokunmalıyım."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bunların hepsi gerçekten çok tuhaftı."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Ödülünü almak için tuhaf kristale tekrar dokun."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Challenge Labs Complete!"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Challenge Labs Tamamlandı!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I should poke the crystal again to get my reward."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Ödülümü almak için kristale tekrar dokunmalıyım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "This was all just so weird."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bunların hepsi gerçekten çok tuhaftı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Poke the strange crystal again to get your reward."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Ödülünü almak için tuhaf kristale tekrar dokun."
+    }
+  ]
 ]

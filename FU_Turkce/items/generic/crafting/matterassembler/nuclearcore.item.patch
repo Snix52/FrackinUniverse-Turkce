@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Great and terrible nuclear power. Handle with care."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Nuclear Core^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Muazzam ve korkutucu nükleer güç. Dikkatli kullan."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Nükleer Çekirdek^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Great and terrible nuclear power. Handle with care."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Muazzam ve korkutucu nükleer güç. Dikkatli kullan."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Nuclear Core^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Nükleer Çekirdek^reset;"
+    }
+  ]
 ]

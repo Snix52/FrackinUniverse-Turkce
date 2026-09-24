@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Tinkering"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Without a ^orange;Tinkering Table^reset; you'll be hard-pressed to create ^green;augments, upgrades and specialist tools^reset;. When you get a chance, ^orange;Research^reset; into ^orange;Engineering^reset; and build one for me."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Might I recommend starting with a ^orange;Mining Laser?^reset; They are truly effective tools to use for rapidly digging through dirt!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "İnce İşçilik"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bir ^orange;İnce İşçilik Tezgâhı^reset; olmadan ^green;eklentiler, yükseltmeler ve özel araçlar^reset; üretmekte zorlanırsın. Fırsat bulunca ^orange;Araştırma^reset; menüsündeki ^orange;Mühendislik^reset; ağacında gerekli araştırmayı açıp bir tane kur."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bir ^orange;Madencilik Lazeriyle^reset; başlamanı öneririm. Toprağı hızla kazmak için gerçekten çok etkili araçlardır!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;İnce İşçilik Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Tinkering"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "İnce İşçilik"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Without a ^orange;Tinkering Table^reset; you'll be hard-pressed to create ^green;augments, upgrades and specialist tools^reset;. When you get a chance, ^orange;Research^reset; into ^orange;Engineering^reset; and build one for me."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bir ^orange;İnce İşçilik Tezgâhı^reset; olmadan ^green;eklentiler, yükseltmeler ve özel araçlar^reset; üretmekte zorlanırsın. Fırsat bulunca ^orange;Araştırma^reset; menüsündeki ^orange;Mühendislik^reset; ağacında gerekli araştırmayı açıp bir tane kur."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Might I recommend starting with a ^orange;Mining Laser?^reset; They are truly effective tools to use for rapidly digging through dirt!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bir ^orange;Madencilik Lazeriyle^reset; başlamanı öneririm. Toprağı hızla kazmak için gerçekten çok etkili araçlardır!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;İnce İşçilik Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Quietus Spear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A fantastic foe-stabber.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Quietus Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Düşmanları delmek için harika.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Quietus Spear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Quietus Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A fantastic foe-stabber.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanları delmek için harika.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A fantastic foe-stabber.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanları delmek için harika.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

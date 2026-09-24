@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Laser Pistol"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A common sidearm in the galaxy.\n^yellow;Reliable^reset;\n^yellow;Counts as 'Energy' for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Lazer Tabancası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Galakside yaygın kullanılan bir yan silah.\n^yellow;Güvenilir^reset;\n^yellow;Set bonusları için 'Enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Laser Pistol"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Lazer Tabancası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A common sidearm in the galaxy.\n^yellow;Reliable^reset;\n^yellow;Counts as 'Energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Galakside yaygın kullanılan bir yan silah.\n^yellow;Güvenilir^reset;\n^yellow;Set bonusları için 'Enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A common sidearm in the galaxy.\r\n^yellow;Reliable^reset;\r\n^yellow;Counts as 'Energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Galakside yaygın kullanılan bir yan silah.\n^yellow;Güvenilir^reset;\n^yellow;Set bonusları için 'Enerji' sayılır^reset;"
+    }
+  ]
 ]

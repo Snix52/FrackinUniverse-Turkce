@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Aberrant Sentry [BOSS]"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Find and kill an ^orange;Aberrant Sentry^reset; in an ancient ruin."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Exceptional work. That was no simple feat!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Find the ^orange;Relic Shield^reset; carried by an ^orange;Aberrant Sentry^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Bozulmuş Nöbetçi [PATRON]"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Antik bir harabede ^orange;Bozulmuş Nöbetçi^reset; bulup öldür."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Olağanüstü iş. Bu hiç de kolay değildi!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bir ^orange;Bozulmuş Nöbetçinin^reset; taşıdığı ^orange;Yadigâr Kalkanını^reset; bul."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Aberrant Sentry [BOSS]"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Bozulmuş Nöbetçi [PATRON]"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Find and kill an ^orange;Aberrant Sentry^reset; in an ancient ruin."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Antik bir harabede ^orange;Bozulmuş Nöbetçi^reset; bulup öldür."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Exceptional work. That was no simple feat!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Olağanüstü iş. Bu hiç de kolay değildi!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Find the ^orange;Relic Shield^reset; carried by an ^orange;Aberrant Sentry^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bir ^orange;Bozulmuş Nöbetçinin^reset; taşıdığı ^orange;Yadigâr Kalkanını^reset; bul."
+    }
+  ]
 ]

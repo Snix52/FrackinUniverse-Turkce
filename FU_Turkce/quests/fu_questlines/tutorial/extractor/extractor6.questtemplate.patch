@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Hydrogen"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "^orange;Water^reset; is never in short supply. If you have upgraded your ^orange;Matter Manipulator^reset; to pick up liquids...^green;extract some^reset;, ^yellow;come to the Science Outpost^reset; and bring me 5 ^orange;Hydrogen^reset; if you don't mind?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Great. Thanks so very much. Now I can complete this power cell! Take this as payment for your deeds."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Hydrogen^reset; to the purple Thelusian at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Hidrojen"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^orange;Su^reset; bulmak genellikle sorun değildir. ^orange;Madde Manipülatörünü^reset; sıvıları toplayacak şekilde yükselttiysen biraz suyu ^green;çıkarıcıda işle^reset;. Sonra ^yellow;Bilim Karakoluna gel^reset; ve bana 5 ^orange;Hidrojen^reset; getirir misin?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Harika, çok teşekkürler. Artık bu güç hücresini tamamlayabilirim! Yardımının karşılığı olarak bunu al."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "5 ^green;Hidrojeni^reset; ^orange;Bilim Karakolundaki^reset; mor Thelusian'a getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Hydrogen"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Hidrojen"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "^orange;Water^reset; is never in short supply. If you have upgraded your ^orange;Matter Manipulator^reset; to pick up liquids...^green;extract some^reset;, ^yellow;come to the Science Outpost^reset; and bring me 5 ^orange;Hydrogen^reset; if you don't mind?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^orange;Su^reset; bulmak genellikle sorun değildir. ^orange;Madde Manipülatörünü^reset; sıvıları toplayacak şekilde yükselttiysen biraz suyu ^green;çıkarıcıda işle^reset;. Sonra ^yellow;Bilim Karakoluna gel^reset; ve bana 5 ^orange;Hidrojen^reset; getirir misin?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Great. Thanks so very much. Now I can complete this power cell! Take this as payment for your deeds."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Harika, çok teşekkürler. Artık bu güç hücresini tamamlayabilirim! Yardımının karşılığı olarak bunu al."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Hydrogen^reset; to the purple Thelusian at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "5 ^green;Hidrojeni^reset; ^orange;Bilim Karakolundaki^reset; mor Thelusian'a getir."
+    }
+  ]
 ]

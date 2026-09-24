@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Protocite Fuel Canister"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A truly amazing fuel source.\n^blue;+^white;25 ^blue;Fuel^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Protocite Yakıt Kapsülü"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Gerçekten muazzam bir yakıt kaynağı.\n^blue;+^white;25 ^blue;Yakıt^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Protocite Fuel Canister"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Protocite Yakıt Kapsülü"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A truly amazing fuel source.\n^blue;+^white;25 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçekten muazzam bir yakıt kaynağı.\n^blue;+^white;25 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A truly amazing fuel source.\r\n^blue;+^white;25 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçekten muazzam bir yakıt kaynağı.\n^blue;+^white;25 ^blue;Yakıt^reset;"
+    }
+  ]
 ]

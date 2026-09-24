@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Unmatched clean energy up to ^orange;620W^reset;. Fuel type will decide power output. ^orange;Heats up, heat increases output.^reset; ^blue;Left Input^reset;: On/Off Switch"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^cyan;Quantum Reactor^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;620W^reset; değerine kadar rakipsiz temiz enerji üretir. Güç çıkışını yakıt türü belirler. ^orange;Isınır; sıcaklık arttıkça çıkış artar.^reset; ^blue;Sol Giriş^reset;: Aç/Kapat Anahtarı"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^cyan;Kuantum Reaktörü^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Unmatched clean energy up to ^orange;620W^reset;. Fuel type will decide power output. ^orange;Heats up, heat increases output.^reset; ^blue;Left Input^reset;: On/Off Switch"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;620W^reset; değerine kadar rakipsiz temiz enerji üretir. Güç çıkışını yakıt türü belirler. ^orange;Isınır; sıcaklık arttıkça çıkış artar.^reset; ^blue;Sol Giriş^reset;: Aç/Kapat Anahtarı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^cyan;Quantum Reactor^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^cyan;Kuantum Reaktörü^reset;"
+    }
+  ]
 ]

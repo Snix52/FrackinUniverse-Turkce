@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Basic Frame"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "A ^orange;Basic Frame^reset; is placed within an ^green;apiary^reset; to act as housing for the bees. Create one now."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "There are ^green;many types of frames^reset;, and different bees will prefer certain types. You'll need to be creative."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Temel Çerçeve"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bir ^orange;Temel Çerçeve^reset;, arılara yaşam alanı sağlamak için ^green;Arılığın^reset; içine yerleştirilir. Şimdi bir tane üret."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^green;Birçok çerçeve türü^reset; var ve farklı arılar farklı türleri tercih eder. Biraz yaratıcı olman gerekecek."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Basic Frame"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Temel Çerçeve"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "A ^orange;Basic Frame^reset; is placed within an ^green;apiary^reset; to act as housing for the bees. Create one now."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bir ^orange;Temel Çerçeve^reset;, arılara yaşam alanı sağlamak için ^green;Arılığın^reset; içine yerleştirilir. Şimdi bir tane üret."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "There are ^green;many types of frames^reset;, and different bees will prefer certain types. You'll need to be creative."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^green;Birçok çerçeve türü^reset; var ve farklı arılar farklı türleri tercih eder. Biraz yaratıcı olman gerekecek."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Arctic Parka"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: All Cold"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kutup Parkası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Soğuk Etkileri"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Arctic Parka"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kutup Parkası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; ^cyan;Immune^reset;: All Cold"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Soğuk Etkileri"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\r\n^yellow;^reset; ^cyan;Immune^reset;: All Cold"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Tüm Soğuk Etkileri"
+    }
+  ]
 ]

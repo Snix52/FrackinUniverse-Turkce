@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pyreite Broadsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Hot and melty blade.\n^cyan;Inflicts Napalm^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pyreite Büyük Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Sıcak ve eriyen bıçak.\n^cyan;Napalm uygular^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pyreite Broadsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pyreite Büyük Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hot and melty blade.\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Sıcak ve eriyen bıçak.\n^cyan;Napalm uygular^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hot and melty blade.\r\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Sıcak ve eriyen bıçak.\n^cyan;Napalm uygular^reset;"
+    }
+  ]
 ]

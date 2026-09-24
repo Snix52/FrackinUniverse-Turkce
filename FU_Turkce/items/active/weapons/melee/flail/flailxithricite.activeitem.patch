@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cosmic Striker"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Charged impact hammer.\n^cyan;Breaks blocks^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kozmik Ezici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yüklü darbe çekici.\n^cyan;Blokları kırar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cosmic Striker"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kozmik Ezici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Charged impact hammer.\n^cyan;Breaks blocks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yüklü darbe çekici.\n^cyan;Blokları kırar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Charged impact hammer.\r\n^cyan;Breaks blocks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yüklü darbe çekici.\n^cyan;Blokları kırar^reset;"
+    }
+  ]
 ]

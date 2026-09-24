@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "One gnome was harmed in making this sandwich. \n^cyan;+^reset;20%^green; HP^reset;^cyan; +^reset;20%^green; Energy^reset; ^blue;Madness Gain^reset; 3 ^orange;Type: Cooked Meat + Vegetables^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Gnomewich"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu sandviçi hazırlarken bir cüce zarar gördü. \n^cyan;+^reset;%20^green; Can^reset;^cyan; +^reset;%20^green; Enerji^reset; ^blue;Delilik Kazanımı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Cüce Sandviçi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "One gnome was harmed in making this sandwich. \n^cyan;+^reset;20%^green; HP^reset;^cyan; +^reset;20%^green; Energy^reset; ^blue;Madness Gain^reset; 3 ^orange;Type: Cooked Meat + Vegetables^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu sandviçi hazırlarken bir cüce zarar gördü. \n^cyan;+^reset;%20^green; Can^reset;^cyan; +^reset;%20^green; Enerji^reset; ^blue;Delilik Kazanımı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "One gnome was harmed in making this sandwich. \r\n^cyan;+^reset;20%^green; HP^reset;^cyan; +^reset;20%^green; Energy^reset; ^blue;Madness Gain^reset; 3 ^orange;Type: Cooked Meat + Vegetables^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu sandviçi hazırlarken bir cüce zarar gördü. \n^cyan;+^reset;%20^green; Can^reset;^cyan; +^reset;%20^green; Enerji^reset; ^blue;Delilik Kazanımı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gnomewich"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Cüce Sandviçi"
+    }
+  ]
 ]

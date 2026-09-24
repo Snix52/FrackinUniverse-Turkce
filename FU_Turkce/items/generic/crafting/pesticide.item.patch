@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pesticide"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Kills bugs dead.\n^green;Growth Rate x^white;3 ^gray;& ^green;+^white;2 ^green;produce.\n^cyan;Uses +^white;2 ^cyan;fluid use ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Böcek İlacı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Böcekleri anında öldürür.\n^green;Büyüme Hızı x^white;3 ^gray;& ^green;+^white;2 ^green;ürün.\n^cyan;Tüketim +^white;2 ^cyan;sıvı ^gray;& ^cyan;-^white;1 ^cyan;tohum^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pesticide"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Böcek İlacı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Kills bugs dead.\n^green;Growth Rate x^white;3 ^gray;& ^green;+^white;2 ^green;produce.\n^cyan;Uses +^white;2 ^cyan;fluid use ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Böcekleri anında öldürür.\n^green;Büyüme Hızı x^white;3 ^gray;& ^green;+^white;2 ^green;ürün.\n^cyan;Tüketim +^white;2 ^cyan;sıvı ^gray;& ^cyan;-^white;1 ^cyan;tohum^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Kills bugs dead.\r\n^green;Growth Rate x^white;3 ^gray;& ^green;+^white;2 ^green;produce.\r\n^cyan;Uses +^white;2 ^cyan;fluid use ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Böcekleri anında öldürür.\n^green;Büyüme Hızı x^white;3 ^gray;& ^green;+^white;2 ^green;ürün.\n^cyan;Tüketim +^white;2 ^cyan;sıvı ^gray;& ^cyan;-^white;1 ^cyan;tohum^reset;"
+    }
+  ]
 ]

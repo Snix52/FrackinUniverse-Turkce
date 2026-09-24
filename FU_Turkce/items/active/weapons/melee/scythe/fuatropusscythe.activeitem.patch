@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Fleshweave Scythe"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Repulsive, yet deadly.\n^cyan;Plague-Bearing^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Et Örgüsü Tırpanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İğrenç ama ölümcül.\n^cyan;Veba taşır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Fleshweave Scythe"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Et Örgüsü Tırpanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Repulsive, yet deadly.\n^cyan;Plague-Bearing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İğrenç ama ölümcül.\n^cyan;Veba taşır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Repulsive, yet deadly.\r\n^cyan;Plague-Bearing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İğrenç ama ölümcül.\n^cyan;Veba taşır^reset;"
+    }
+  ]
 ]

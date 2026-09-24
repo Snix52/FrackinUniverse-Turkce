@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Neptunium Rod"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This radioactive isotope is typically found on Threat 3+ planets.\n^blue;+^white;5 ^blue;Fuel^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Neptünyum Çubuğu"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu radyoaktif izotop genellikle Tehdit 3+ gezegenlerde bulunur.\n^blue;+^white;5 ^blue;Yakıt^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Neptunium Rod"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Neptünyum Çubuğu"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This radioactive isotope is typically found on Threat 3+ planets.\n^blue;+^white;5 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu radyoaktif izotop genellikle Tehdit 3+ gezegenlerde bulunur.\n^blue;+^white;5 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This radioactive isotope is typically found on Threat 3+ planets.\r\n^blue;+^white;5 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu radyoaktif izotop genellikle Tehdit 3+ gezegenlerde bulunur.\n^blue;+^white;5 ^blue;Yakıt^reset;"
+    }
+  ]
 ]

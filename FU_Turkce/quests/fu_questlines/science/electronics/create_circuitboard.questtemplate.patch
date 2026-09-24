@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Hardware Matters"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Instructive: Now that you have ^orange;Silicon^reset; and ^orange;Copper Wire^reset; why not combine the two at your ^orange;Matter Assembler^reset; and craft a ^orange;Silicon Board^reset;?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Encouraging: You will need a large amount of boards, for they are the building block of many more advanced chipsets."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Silicon Board^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Donanım Önemlidir"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bilgilendirici: Bir ^orange;Atomik Fırında^reset; ^orange;Kum^reset; ve ^orange;Kömür^reset; kullanarak bir ^orange;Silisyum Devre Kartı^reset; üret."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Teşvik edici: Bu kartlardan bolca gerekecek; pek çok gelişmiş yonga setinin temelini oluştururlar."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Silisyum Devre Kartını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Hardware Matters"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Donanım Önemlidir"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Instructive: Now that you have ^orange;Silicon^reset; and ^orange;Copper Wire^reset; why not combine the two at your ^orange;Matter Assembler^reset; and craft a ^orange;Silicon Board^reset;?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bilgilendirici: Bir ^orange;Atomik Fırında^reset; ^orange;Kum^reset; ve ^orange;Kömür^reset; kullanarak bir ^orange;Silisyum Devre Kartı^reset; üret."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Encouraging: You will need a large amount of boards, for they are the building block of many more advanced chipsets."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Teşvik edici: Bu kartlardan bolca gerekecek; pek çok gelişmiş yonga setinin temelini oluştururlar."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Silicon Board^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Silisyum Devre Kartını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

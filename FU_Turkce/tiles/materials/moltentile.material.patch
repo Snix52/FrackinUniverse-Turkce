@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Metal."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Metal"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Metal."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Metal"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Metal."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Metal."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Metal"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Metal"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A jungle bee, a fine source of fiber!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Jungle Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tropik orman arısı; harika bir lif kaynağı!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tropik Orman Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A jungle bee, a fine source of fiber!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tropik orman arısı; harika bir lif kaynağı!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Jungle Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tropik Orman Arısı"
+    }
+  ]
 ]

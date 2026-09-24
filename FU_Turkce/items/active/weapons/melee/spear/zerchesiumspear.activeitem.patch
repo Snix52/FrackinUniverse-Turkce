@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Zerchesium Spear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A wonderfully made tool of war.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zerchesium Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Harika işlenmiş bir savaş aracı.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Zerchesium Spear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zerchesium Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A wonderfully made tool of war.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Harika işlenmiş bir savaş aracı.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A wonderfully made tool of war.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Harika işlenmiş bir savaş aracı.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

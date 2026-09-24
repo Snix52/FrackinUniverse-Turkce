@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It doesn't get any better than this."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#b84cbc;Quantum Manipulator^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/category",
-    "value": "Matter Manipulator"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bundan daha iyisi olmaz."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#b84cbc;Kuantum Manipülatörü^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/category",
-    "value": "Madde Manipülatörü"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It doesn't get any better than this."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bundan daha iyisi olmaz."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#b84cbc;Quantum Manipulator^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#b84cbc;Kuantum Manipülatörü^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/category",
+      "value": "Matter Manipulator"
+    },
+    {
+      "op": "replace",
+      "path": "/category",
+      "value": "Madde Manipülatörü"
+    }
+  ]
 ]

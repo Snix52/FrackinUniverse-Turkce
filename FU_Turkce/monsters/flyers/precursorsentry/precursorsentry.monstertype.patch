@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A small sentry bot designed to assist larger sentry bots."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Lesser Sentry"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Büyük nöbetçi botlara yardım etmesi için tasarlanmış küçük bir bot."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Küçük Nöbetçi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A small sentry bot designed to assist larger sentry bots."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Büyük nöbetçi botlara yardım etmesi için tasarlanmış küçük bir bot."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Lesser Sentry"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Küçük Nöbetçi"
+    }
+  ]
 ]

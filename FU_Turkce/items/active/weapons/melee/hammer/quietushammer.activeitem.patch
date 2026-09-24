@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Quietus Hammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A solid, dangerous weapon for a true warrior.\n^cyan;Inflicts Poisoned^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Quietus Çekiç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Gerçek bir savaşçıya uygun, sağlam ve tehlikeli bir silah.\n^cyan;Zehirlenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Quietus Hammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Quietus Çekiç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A solid, dangerous weapon for a true warrior.\n^cyan;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçek bir savaşçıya uygun, sağlam ve tehlikeli bir silah.\n^cyan;Zehirlenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A solid, dangerous weapon for a true warrior.\r\n^cyan;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçek bir savaşçıya uygun, sağlam ve tehlikeli bir silah.\n^cyan;Zehirlenmeye yol açar^reset;"
+    }
+  ]
 ]

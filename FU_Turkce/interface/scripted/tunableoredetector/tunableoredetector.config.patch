@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/currentOreLabel/text",
-    "value": "^yellow;Current Ore:"
-  },
-  {
-    "op": "test",
-    "path": "/gui/lb_Info/value",
-    "value": "^yellow;Awaiting Input..."
-  },
-  {
-    "op": "test",
-    "path": "/gui/lb_currentOre/text",
-    "value": "<^yellow;Loading...^reset;>"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/currentOreLabel/text",
-    "value": "^yellow;Mevcut Cevher:"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lb_Info/value",
-    "value": "^yellow;Girdi Bekleniyor..."
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lb_currentOre/text",
-    "value": "<^yellow;Yükleniyor...^reset;>"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/currentOreLabel/text",
+      "value": "^yellow;Current Ore:"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/currentOreLabel/text",
+      "value": "^yellow;Mevcut Cevher:"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/lb_Info/value",
+      "value": "^yellow;Awaiting Input..."
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lb_Info/value",
+      "value": "^yellow;Girdi Bekleniyor..."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/lb_currentOre/text",
+      "value": "<^yellow;Loading...^reset;>"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lb_currentOre/text",
+      "value": "<^yellow;Yükleniyor...^reset;>"
+    }
+  ]
 ]

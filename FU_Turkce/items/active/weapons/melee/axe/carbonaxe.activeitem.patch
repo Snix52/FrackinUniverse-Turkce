@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Carbon Hatchet"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Sturdy, and ideal for survivalists.\n^cyan;Inflicts bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Karbon Nacak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Sağlamdır ve hayatta kalma uzmanları için idealdir.\n^cyan;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Carbon Hatchet"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Karbon Nacak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sturdy, and ideal for survivalists.\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Sağlamdır ve hayatta kalma uzmanları için idealdir.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sturdy, and ideal for survivalists.\r\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Sağlamdır ve hayatta kalma uzmanları için idealdir.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

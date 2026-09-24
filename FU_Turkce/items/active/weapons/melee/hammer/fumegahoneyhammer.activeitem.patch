@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Queen Hammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A pure amber hammer fit for the queen.\n^cyan;Floran^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ana Arı Çekici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir Ana Arıya layık, saf kehribardan bir çekiç.\n^cyan;Floran^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Queen Hammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ana Arı Çekici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A pure amber hammer fit for the queen.\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir Ana Arıya layık, saf kehribardan bir çekiç.\n^cyan;Floran^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A pure amber hammer fit for the queen.\r\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir Ana Arıya layık, saf kehribardan bir çekiç.\n^cyan;Floran^reset;"
+    }
+  ]
 ]

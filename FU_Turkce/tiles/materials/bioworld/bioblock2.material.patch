@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Scans are inconclusive, but no doubt exists that this is intentionally-altered material."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Proto Shale"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tarama sonuçları kesin değil; ancak bu malzemenin kasıtlı olarak değiştirildiğinden şüphe yok."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Proto Şeyl"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Scans are inconclusive, but no doubt exists that this is intentionally-altered material."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tarama sonuçları kesin değil; ancak bu malzemenin kasıtlı olarak değiştirildiğinden şüphe yok."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Proto Shale"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Proto Şeyl"
+    }
+  ]
 ]

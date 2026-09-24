@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Salt"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Common table salt ^gray;NaCl^reset; is extremely useful in everything from culinary arts to chemical engineering."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tuz"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yaygın sofra tuzu ^gray;NaCl^reset;, mutfak sanatlarından kimya mühendisliğine kadar her alanda son derece kullanışlıdır."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Salt"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tuz"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Common table salt ^gray;NaCl^reset; is extremely useful in everything from culinary arts to chemical engineering."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yaygın sofra tuzu ^gray;NaCl^reset;, mutfak sanatlarından kimya mühendisliğine kadar her alanda son derece kullanışlıdır."
+    }
+  ]
 ]

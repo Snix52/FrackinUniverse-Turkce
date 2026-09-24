@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Coral Longsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Made from the depths. And hate. Lots and lots of hate.\n^cyan;Inflicts Poisoned^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mercan Uzun Kılıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Derinliklerden ve nefretten yapılmış. Hem de tonla nefretten.\n^cyan;Zehirlenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Coral Longsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mercan Uzun Kılıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Made from the depths. And hate. Lots and lots of hate.\n^cyan;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Derinliklerden ve nefretten yapılmış. Hem de tonla nefretten.\n^cyan;Zehirlenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Made from the depths. And hate. Lots and lots of hate.\r\n^cyan;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Derinliklerden ve nefretten yapılmış. Hem de tonla nefretten.\n^cyan;Zehirlenmeye yol açar^reset;"
+    }
+  ]
 ]

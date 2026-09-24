@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A very primitive battery.^truncate; ^red;Scan for Info^reset;\nStorage Capacity: ^green;350^reset;J"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Simple^reset; Battery"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Oldukça ilkel bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;350^reset;J"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Basit^reset; Pil"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A very primitive battery.^truncate; ^red;Scan for Info^reset;\nStorage Capacity: ^green;350^reset;J"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Oldukça ilkel bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;350^reset;J"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A very primitive battery.^truncate; ^red;Scan for Info^reset;\r\nStorage Capacity: ^green;350^reset;J"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Oldukça ilkel bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;350^reset;J"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Simple^reset; Battery"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Basit^reset; Pil"
+    }
+  ]
 ]

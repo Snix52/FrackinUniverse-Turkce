@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Poisonous"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Makes things sick or dead."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zehirli"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Canlıları hasta eder ya da öldürür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Poisonous"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zehirli"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Makes things sick or dead."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Canlıları hasta eder ya da öldürür."
+    }
+  ]
 ]

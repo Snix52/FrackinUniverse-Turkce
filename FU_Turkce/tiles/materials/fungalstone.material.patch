@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Stone covered in fungal spores."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Fungal Stone"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Mantar sporlarıyla kaplı taş."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mantar Taşı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Stone covered in fungal spores."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Mantar sporlarıyla kaplı taş."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Fungal Stone"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mantar Taşı"
+    }
+  ]
 ]

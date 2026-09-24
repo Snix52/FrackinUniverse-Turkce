@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Mutaclaw"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Are these... severed monster hands? AWESOME!\n^cyan;Inflicts Bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mutapençe"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bunlar... kesilmiş canavar elleri mi? HARİKA!\n^cyan;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Mutaclaw"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mutapençe"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Are these... severed monster hands? AWESOME!\n^cyan;Inflicts Bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bunlar... kesilmiş canavar elleri mi? HARİKA!\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Are these... severed monster hands? AWESOME!\r\n^cyan;Inflicts Bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bunlar... kesilmiş canavar elleri mi? HARİKA!\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

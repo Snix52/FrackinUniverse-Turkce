@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pyreite Helm"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Pyreite weapons: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, All Cold"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pyreite Miğfer"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Pyreite silahları: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Tüm Soğuk Etkileri"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pyreite Helm"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pyreite Miğfer"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Pyreite weapons: Damage x^green;1.25^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, All Cold"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Pyreite silahları: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Tüm Soğuk Etkileri"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\r\n^yellow;^reset; Pyreite weapons: Damage x^green;1.25^reset;\r\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, All Cold"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Pyreite silahları: Hasar x^green;1.25^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Tüm Soğuk Etkileri"
+    }
+  ]
 ]

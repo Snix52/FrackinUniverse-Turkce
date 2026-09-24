@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Sharpening the Blade"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I'll be blunt. My sword sucks. Make me a new one. Go craft a ^orange;Steel Warblade^reset; in your ^orange;Assembly Line^reset;! You'll need to upgrade your ^orange;Armorworks^reset; first."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Excellent, enjoy cutting stuff up. Here, take this off my hands."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;steel warblade^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Bıçağı Bilemek"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Açık konuşayım: Kılıcım berbat. Bana yenisini yap. ^orange;Montaj Hattında^reset; bir ^orange;Çelik Savaş Kılıcı^reset; üret! Önce ^orange;Zırh Atölyeni^reset; yükseltmen gerekecek."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Mükemmel. Bir şeyleri doğramanın tadını çıkar. Şunu da al da elimden çıksın."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Çelik Savaş Kılıcını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Sharpening the Blade"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Bıçağı Bilemek"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I'll be blunt. My sword sucks. Make me a new one. Go craft a ^orange;Steel Warblade^reset; in your ^orange;Assembly Line^reset;! You'll need to upgrade your ^orange;Armorworks^reset; first."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Açık konuşayım: Kılıcım berbat. Bana yenisini yap. ^orange;Montaj Hattında^reset; bir ^orange;Çelik Savaş Kılıcı^reset; üret! Önce ^orange;Zırh Atölyeni^reset; yükseltmen gerekecek."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Excellent, enjoy cutting stuff up. Here, take this off my hands."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Mükemmel. Bir şeyleri doğramanın tadını çıkar. Şunu da al da elimden çıksın."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;steel warblade^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Çelik Savaş Kılıcını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

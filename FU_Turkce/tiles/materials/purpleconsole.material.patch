@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Some sort of console screen."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Console"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir tür konsol ekranı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Konsol"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Some sort of console screen."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir tür konsol ekranı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Console"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Konsol"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Quietus Greataxe"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A revolting bio-weapon.\n^cyan;Inflicts Poisoned^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Quietus Büyük Balta"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İğrenç bir biyosilah.\n^cyan;Zehirlenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Quietus Greataxe"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Quietus Büyük Balta"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A revolting bio-weapon.\n^cyan;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İğrenç bir biyosilah.\n^cyan;Zehirlenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A revolting bio-weapon.\r\n^cyan;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İğrenç bir biyosilah.\n^cyan;Zehirlenmeye yol açar^reset;"
+    }
+  ]
 ]

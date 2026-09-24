@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This is exactly what it sounds like. ^red;Type: Raw Meat^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Meat Smoothie"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tam da kulağa geldiği gibi. ^red;Tür: Çiğ Et^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Etli Smoothie"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This is exactly what it sounds like. ^red;Type: Raw Meat^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tam da kulağa geldiği gibi. ^red;Tür: Çiğ Et^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Meat Smoothie"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Etli Smoothie"
+    }
+  ]
 ]

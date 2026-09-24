@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Corrupt Wand"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Sufficiently Advanced Technology."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yozlaşmış Değnek"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yeterince Gelişmiş Teknoloji."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Corrupt Wand"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yozlaşmış Değnek"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sufficiently Advanced Technology."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yeterince Gelişmiş Teknoloji."
+    }
+  ]
 ]

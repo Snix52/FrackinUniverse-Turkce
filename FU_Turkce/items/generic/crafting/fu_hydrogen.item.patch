@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Wonderful applications exist for this, the lightest element.\n^blue;+^white;1 ^blue;Fuel^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Hydrogen"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "En hafif element olan hidrojenin pek çok kullanım alanı vardır.\n^blue;+^white;1 ^blue;Yakıt^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Hidrojen"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Wonderful applications exist for this, the lightest element.\n^blue;+^white;1 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "En hafif element olan hidrojenin pek çok kullanım alanı vardır.\n^blue;+^white;1 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Wonderful applications exist for this, the lightest element.\r\n^blue;+^white;1 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "En hafif element olan hidrojenin pek çok kullanım alanı vardır.\n^blue;+^white;1 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Hydrogen"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Hidrojen"
+    }
+  ]
 ]

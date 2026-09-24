@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Absolutely harmless, unless you don't want that video on the Ansible..."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Micro Drone"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tamamen zararsızdır... Tabii o videonun Ansible'da görünmesini istemiyorsan durum değişir."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mikro Dron"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Absolutely harmless, unless you don't want that video on the Ansible..."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tamamen zararsızdır... Tabii o videonun Ansible'da görünmesini istemiyorsan durum değişir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Micro Drone"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mikro Dron"
+    }
+  ]
 ]

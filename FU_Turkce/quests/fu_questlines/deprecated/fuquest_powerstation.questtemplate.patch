@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Wind Power"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "You can generate power in many ways. ^orange;Alternator^reset; generators are just the simplest. Try building a ^orange;Wind Turbine^reset;, and see how useful they get in a windstorm!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Other options for power include Solar, Combustion, Fission and Quantum power generation. Each has pros and cons. You'll definitely want to try them all."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Rüzgâr Enerjisi"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Enerjiyi birçok şekilde üretebilirsin. ^orange;Alternatör^reset; yalnızca en basit seçenek. Bir ^orange;Rüzgâr Türbini^reset; kur ve fırtınalı havada ne kadar işe yaradığını gör!"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Güneş, yanma, fisyon ve kuantum enerjisi de diğer seçeneklerin arasında. Her birinin artıları ve eksileri var; hepsini denemek isteyeceksin."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Wind Power"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Rüzgâr Enerjisi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "You can generate power in many ways. ^orange;Alternator^reset; generators are just the simplest. Try building a ^orange;Wind Turbine^reset;, and see how useful they get in a windstorm!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Enerjiyi birçok şekilde üretebilirsin. ^orange;Alternatör^reset; yalnızca en basit seçenek. Bir ^orange;Rüzgâr Türbini^reset; kur ve fırtınalı havada ne kadar işe yaradığını gör!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Other options for power include Solar, Combustion, Fission and Quantum power generation. Each has pros and cons. You'll definitely want to try them all."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Güneş, yanma, fisyon ve kuantum enerjisi de diğer seçeneklerin arasında. Her birinin artıları ve eksileri var; hepsini denemek isteyeceksin."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Honey Scythe"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A clever use of honeycombs.\n^red;Inflicts Bee Stings^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Bal Tırpanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Peteklerin akıllıca kullanımı.\n^red;Arı Sokmasına neden olur^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Honey Scythe"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Bal Tırpanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A clever use of honeycombs.\n^red;Inflicts Bee Stings^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Peteklerin akıllıca kullanımı.\n^red;Arı Sokmasına neden olur^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A clever use of honeycombs.\r\n^red;Inflicts Bee Stings^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Peteklerin akıllıca kullanımı.\n^red;Arı Sokmasına neden olur^reset;"
+    }
+  ]
 ]

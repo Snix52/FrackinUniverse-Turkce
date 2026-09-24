@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A squash bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Squash Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir kabak arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kabak Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A squash bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir kabak arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Squash Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kabak Arısı"
+    }
+  ]
 ]

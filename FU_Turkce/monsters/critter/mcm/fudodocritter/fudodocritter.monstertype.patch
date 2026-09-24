@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A flightless bird that eats fruit."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dodo"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Meyve yiyen, uçamayan bir kuş."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Dodo"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A flightless bird that eats fruit."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Meyve yiyen, uçamayan bir kuş."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dodo"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Dodo"
+    }
+  ]
 ]

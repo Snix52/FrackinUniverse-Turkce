@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Honeycombs"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Once your bees have been busy a while ^green;collect the combs from your apiary^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Now you'll need another station to process this resource. Shall we continue?"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Bal Petekleri"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Arılar bir süre çalıştıktan sonra ^green;Arılıktaki petekleri topla^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Şimdi bu kaynağı işleyecek başka bir istasyona ihtiyacın var. Devam edelim mi?"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Honeycombs"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Bal Petekleri"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Once your bees have been busy a while ^green;collect the combs from your apiary^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Arılar bir süre çalıştıktan sonra ^green;Arılıktaki petekleri topla^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Now you'll need another station to process this resource. Shall we continue?"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Şimdi bu kaynağı işleyecek başka bir istasyona ihtiyacın var. Devam edelim mi?"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A bloody severed leg from a hapless scientist."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Bloody leg"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Talihsiz bir bilim insanına ait kanlı, kopmuş bacak."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kanlı Bacak"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A bloody severed leg from a hapless scientist."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Talihsiz bir bilim insanına ait kanlı, kopmuş bacak."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Bloody leg"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kanlı Bacak"
+    }
+  ]
 ]

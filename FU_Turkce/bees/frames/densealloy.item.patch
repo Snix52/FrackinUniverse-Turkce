@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/category",
-    "value": "craftingMaterial"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "<beeData>"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dense Alloy Frame"
-  },
-  {
-    "op": "replace",
-    "path": "/category",
-    "value": "Üretim Malzemesi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "<beeData>"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yoğun Alaşım Çerçevesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/category",
+      "value": "craftingMaterial"
+    },
+    {
+      "op": "replace",
+      "path": "/category",
+      "value": "Üretim Malzemesi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "<beeData>"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "<beeData>"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dense Alloy Frame"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yoğun Alaşım Çerçevesi"
+    }
+  ]
 ]

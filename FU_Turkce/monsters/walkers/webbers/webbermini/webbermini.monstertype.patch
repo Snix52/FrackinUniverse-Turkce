@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A big spider. Who doesn't love spiders?"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Webber Juvenile"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kocaman bir örümcek. Örümcekleri kim sevmez ki?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Genç Ağcı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A big spider. Who doesn't love spiders?"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kocaman bir örümcek. Örümcekleri kim sevmez ki?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Webber Juvenile"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Genç Ağcı"
+    }
+  ]
 ]

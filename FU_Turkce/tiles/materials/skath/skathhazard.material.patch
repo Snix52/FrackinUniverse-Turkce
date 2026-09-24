@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Indicates nearby danger."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Hazard Block"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yakında tehlike olduğunu gösterir."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tehlike Bloğu"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Indicates nearby danger."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yakında tehlike olduğunu gösterir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Hazard Block"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tehlike Bloğu"
+    }
+  ]
 ]

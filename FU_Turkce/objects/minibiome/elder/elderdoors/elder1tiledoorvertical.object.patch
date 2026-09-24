@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Unknown element. Fascinating."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Elder Door"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bilinmeyen element. Büyüleyici."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kadim Kapı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Unknown element. Fascinating."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bilinmeyen element. Büyüleyici."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Elder Door"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kadim Kapı"
+    }
+  ]
 ]

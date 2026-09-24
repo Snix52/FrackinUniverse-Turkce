@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Extremely viscous blue slime."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Blue Slime"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Son derece yoğun mavi balçık."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mavi Balçık"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Extremely viscous blue slime."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Son derece yoğun mavi balçık."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Blue Slime"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mavi Balçık"
+    }
+  ]
 ]

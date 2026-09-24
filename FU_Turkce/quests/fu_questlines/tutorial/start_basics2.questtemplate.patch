@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Homestead II"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I've got a tip for you: You can make ^orange;Paper^reset; in a ^orange;Furnace^reset;! I could use say, ^orange;10^reset; pieces. I'm fixin' to write some letters to loved ones."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "It may not seem like much...but paper will come in handy when yer least expectin' it. Besides, it's great for writin', no matter how pretty a computer can make things look."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Craft ^orange;10 Paper^reset; at a ^orange;Furnace^reset; and return to ^green;Welchie^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Yerleşim II"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Sana bir tüyo vereyim: ^orange;Kağıdı^reset; ^orange;Fırında^reset; üretebilirsin! Bana şöyle ^orange;10^reset; tane lazım. Sevdiklerime birkaç mektup yazmayı düşünüyorum."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Çok önemli görünmeyebilir... ama kâğıt hiç beklemediğin anda işine yarar. Hem bilgisayar ne kadar şık gösterirse göstersin, yazı yazmanın tadı başkadır."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Fırında^reset; ^orange;10 Kağıt^reset; üret. Sonra ^green;Welchie^reset; ile konuş."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Homestead II"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Yerleşim II"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I've got a tip for you: You can make ^orange;Paper^reset; in a ^orange;Furnace^reset;! I could use say, ^orange;10^reset; pieces. I'm fixin' to write some letters to loved ones."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Sana bir tüyo vereyim: ^orange;Kağıdı^reset; ^orange;Fırında^reset; üretebilirsin! Bana şöyle ^orange;10^reset; tane lazım. Sevdiklerime birkaç mektup yazmayı düşünüyorum."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "It may not seem like much...but paper will come in handy when yer least expectin' it. Besides, it's great for writin', no matter how pretty a computer can make things look."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Çok önemli görünmeyebilir... ama kâğıt hiç beklemediğin anda işine yarar. Hem bilgisayar ne kadar şık gösterirse göstersin, yazı yazmanın tadı başkadır."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Craft ^orange;10 Paper^reset; at a ^orange;Furnace^reset; and return to ^green;Welchie^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Fırında^reset; ^orange;10 Kağıt^reset; üret. Sonra ^green;Welchie^reset; ile konuş."
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Celaeno Fragment^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A piece of the fabled Celaeno."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Celaeno Parçası^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Efsanevi Celaeno'dan bir parça."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Celaeno Fragment^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Celaeno Parçası^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A piece of the fabled Celaeno."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Efsanevi Celaeno'dan bir parça."
+    }
+  ]
 ]

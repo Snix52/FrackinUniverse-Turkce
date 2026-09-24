@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A bee breeding apiary."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Apiary"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "Harvest honey!"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Arı yetiştirmeye yarayan bir arılık."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Arılık"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Bal hasat et!"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A bee breeding apiary."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Arı yetiştirmeye yarayan bir arılık."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Apiary"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Arılık"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "Harvest honey!"
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Bal hasat et!"
+    }
+  ]
 ]

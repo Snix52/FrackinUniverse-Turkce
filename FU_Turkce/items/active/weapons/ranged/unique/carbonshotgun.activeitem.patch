@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "S-Mart Special"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "S-mart's top of the line.\n^cyan;Stuns enemies^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "S-Mart Özel Yapımı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "S-Mart'ın en üst modeli.\n^cyan;Düşmanları sersemletir^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "S-Mart Special"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "S-Mart Özel Yapımı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "S-mart's top of the line.\n^cyan;Stuns enemies^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "S-Mart'ın en üst modeli.\n^cyan;Düşmanları sersemletir^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "S-mart's top of the line.\r\n^cyan;Stuns enemies^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "S-Mart'ın en üst modeli.\n^cyan;Düşmanları sersemletir^reset;"
+    }
+  ]
 ]

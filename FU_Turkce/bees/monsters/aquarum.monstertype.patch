@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A aquarum bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Aquarum Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir Aquarum arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Aquarum Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A aquarum bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir Aquarum arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Aquarum Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Aquarum Arısı"
+    }
+  ]
 ]

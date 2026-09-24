@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Fleshweave Spear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A revolting bio-weapon.\n^cyan;Plague Bearing^reset;\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Et Örgüsü Mızrağı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İğrenç bir biyosilah.\n^cyan;Veba taşır^reset;\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Fleshweave Spear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Et Örgüsü Mızrağı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A revolting bio-weapon.\n^cyan;Plague Bearing^reset;\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İğrenç bir biyosilah.\n^cyan;Veba taşır^reset;\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A revolting bio-weapon.\r\n^cyan;Plague Bearing^reset;\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İğrenç bir biyosilah.\n^cyan;Veba taşır^reset;\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

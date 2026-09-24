@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Is he a glower, or a shower?"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Glower"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu parlayan mı, yoksa duş alan mı?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Işıldayan"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Is he a glower, or a shower?"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu parlayan mı, yoksa duş alan mı?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Glower"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Işıldayan"
+    }
+  ]
 ]

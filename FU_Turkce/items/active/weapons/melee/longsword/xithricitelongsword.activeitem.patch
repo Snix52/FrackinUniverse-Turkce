@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cosmic Longsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Powered by cosmic dust.\n^cyan;Inflicts Minor Vulnerability^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kozmik Uzun Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kozmik tozdan güç alıyor.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cosmic Longsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kozmik Uzun Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Powered by cosmic dust.\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kozmik tozdan güç alıyor.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Powered by cosmic dust.\r\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kozmik tozdan güç alıyor.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Powdery Power"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I've heard of ^orange;Powder Sifters^reset; before but have never seen one in action. Build one in a ^orange;Power Station^reset; and bring it to me, and maybe I'll help you out."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "As promised, your reward. May this ^green;cash^reset; serve you well!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Powder Sifter^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Toz Gücü"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^orange;Toz Eleği^reset; diye bir şey duydum ama çalışırken hiç görmedim. ^orange;Güç İstasyonunda^reset; bir tane üretip bana getir; belki ben de sana yardım ederim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Söz verdiğim gibi, ödülün. Bu ^green;para^reset; işine yarasın!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Toz Eleğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Powdery Power"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Toz Gücü"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I've heard of ^orange;Powder Sifters^reset; before but have never seen one in action. Build one in a ^orange;Power Station^reset; and bring it to me, and maybe I'll help you out."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^orange;Toz Eleği^reset; diye bir şey duydum ama çalışırken hiç görmedim. ^orange;Güç İstasyonunda^reset; bir tane üretip bana getir; belki ben de sana yardım ederim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "As promised, your reward. May this ^green;cash^reset; serve you well!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Söz verdiğim gibi, ödülün. Bu ^green;para^reset; işine yarasın!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Powder Sifter^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Toz Eleğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

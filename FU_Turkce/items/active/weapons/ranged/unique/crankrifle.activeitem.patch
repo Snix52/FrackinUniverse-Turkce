@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Puncturer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Penetrating rounds cause devastating wounds.\n^yellow;Inflicts bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Delici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Delici mermiler yıkıcı yaralar açar.\n^yellow;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Puncturer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Delici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Penetrating rounds cause devastating wounds.\n^yellow;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Delici mermiler yıkıcı yaralar açar.\n^yellow;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Penetrating rounds cause devastating wounds.\r\n^yellow;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Delici mermiler yıkıcı yaralar açar.\n^yellow;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

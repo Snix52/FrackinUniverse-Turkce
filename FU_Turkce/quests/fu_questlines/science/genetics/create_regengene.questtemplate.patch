@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Gene Splicing 101"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "My ^orange;Xeno Lab^reset; is on the fritz, and I need 3 ^orange;Thornitox^reset; seeds for a client or I don't eat this month! Can you help me out?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Thanks so much. It's not much, but take this data I uncovered by scanning ^orange;Technology of the Ancients^reset;. Maybe you can make use of it."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring ^orange;3 Thornitox Seeds^reset; to the yellow Avian at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Gen Birleştirme 101"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^orange;Xeno Araştırma Laboratuvarım^reset; bozuldu. Bir müşteri için 3 ^orange;Thornitox Tohumu^reset; lazım, yoksa bu ay aç kalacağım! Yardım eder misin?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Çok teşekkürler. Pek bir şey değil ama ^orange;Kadimlerin Teknolojisini^reset; tararken bulduğum şu veriyi al. Belki işine yarar."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;3 Thornitox Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; sarı Avian'a götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Gene Splicing 101"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Gen Birleştirme 101"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "My ^orange;Xeno Lab^reset; is on the fritz, and I need 3 ^orange;Thornitox^reset; seeds for a client or I don't eat this month! Can you help me out?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^orange;Xeno Araştırma Laboratuvarım^reset; bozuldu. Bir müşteri için 3 ^orange;Thornitox Tohumu^reset; lazım, yoksa bu ay aç kalacağım! Yardım eder misin?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Thanks so much. It's not much, but take this data I uncovered by scanning ^orange;Technology of the Ancients^reset;. Maybe you can make use of it."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Çok teşekkürler. Pek bir şey değil ama ^orange;Kadimlerin Teknolojisini^reset; tararken bulduğum şu veriyi al. Belki işine yarar."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring ^orange;3 Thornitox Seeds^reset; to the yellow Avian at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;3 Thornitox Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; sarı Avian'a götür."
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dark Wort"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Wort! Used for making lager!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Koyu Şıra"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Şıra! Lager yapımında kullanılır!"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dark Wort"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Koyu Şıra"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Wort! Used for making lager!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Şıra! Lager yapımında kullanılır!"
+    }
+  ]
 ]

@@ -1,312 +1,494 @@
 [
-  {
-    "op": "test",
-    "path": "/GUI/title",
-    "value": "S.A.I.L"
-  },
-  {
-    "op": "test",
-    "path": "/GUI/subtitle",
-    "value": "Ship-based Artificial Intelligence Lattice"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/0/1",
-    "value": "^#e43774;[FR]^reset; Player Bonuses (%%status.statusProperty(\"fr_enabled\")%%)"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/1/1",
-    "value": "^cyan;[FU]^reset; BYOS Atmosphere (%%world.getProperty(\"fu_byos.newAtmosphereSystem\")%%)"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/2/1",
-    "value": "^cyan;[FU]^reset; Configure Ship Pet"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/3/1",
-    "value": "^cyan;[FU]^reset; Toggle Shipwide Grabber"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/4/1",
-    "value": "^cyan;[FU]^reset; Character Status"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/5/1",
-    "value": "^orange;[ZB]^reset; Update Window"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/6/1",
-    "value": "^orange;[ZB]^reset; Quest List"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/7/1",
-    "value": "^orange;[ZB]^reset; Research Tree"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/8/1",
-    "value": "^orange;[ZB]^reset; Queue Research Recheck"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/9/1",
-    "value": "^orange;[ZB]^reset; Custom SAIL Info"
-  },
-  {
-    "op": "test",
-    "path": "/Data/misc/10/1",
-    "value": "Vanilla SAIL"
-  },
-  {
-    "op": "test",
-    "path": "/Data/miscAdmin/0/1",
-    "value": "[Admin] Clear Statuses"
-  },
-  {
-    "op": "test",
-    "path": "/Speech/noMissionsSpeech/text",
-    "value": "No mission co-ordinates currently available."
-  },
-  {
-    "op": "test",
-    "path": "/Speech/noCrewSpeech/text",
-    "value": "You are the only registered crew member of this ship.\n\nRecruiting additional crew members may allow for increased operational efficiency."
-  },
-  {
-    "op": "test",
-    "path": "/Speech/noStoredCrewSpeech/text",
-    "value": "There are currently no inactive crew members.\n\nCrew members become inactive if the the number of active crew exceeds the number of crew your ship can support."
-  },
-  {
-    "op": "test",
-    "path": "/Speech/shipStatus/0/text",
-    "value": "Zzz... Zzz... Zzz..."
-  },
-  {
-    "op": "test",
-    "path": "/Speech/shipStatus/1/text",
-    "value": "> Ship thrusters are currently offline.\n> Ship teleportation system functioning correctly.\n> ^green;Currently only the planet below is accessible."
-  },
-  {
-    "op": "test",
-    "path": "/Speech/shipStatus/2/text",
-    "value": "> Ship thrusters are online.\n> Ship teleportation system functioning correctly.\n> ^green;Planets within this star system are accessible."
-  },
-  {
-    "op": "test",
-    "path": "/Speech/shipStatus/3/text",
-    "value": "> Ship thrusters are online.\n> FTL drive is online.\n> Ship teleportation system functioning correctly.\n> ^green;The entire universe is accessible."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/strings/error",
-    "value": "An error has occured. Please report this on the Steam page or Discord server with a log attached. ^green;If the error message below is green, you should pay attention to it.^reset;\n\nMeanwhile, you can click any of the buttons to open the vanilla version of SAIL."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/strings/buttonError",
-    "value": "^red;ERROR:^reset;\nNo button was pressed, but the function for it was called.\nPlease report how you achieved this on the Steam page or Discord server, and try clicking the button again."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/strings/promiseError",
-    "value": "customDataPromise failed - Incompatible or faulty SAIL object definition. Please contact the modder who made your current race about a fault in their techStation object definition."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/strings/intro",
-    "value": "Welcome to S.A.I.L.\n\nUsing this interface you can check the ship's status, view your currency ^green;[BALANCE]^reset;, begin ^green;[MISSIONS]^reset;, manage your ^green;[CREW]^reset;, and access other useful ^green;[MISC]^reset; features."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/strings/noCustomAIMod",
-    "value": "^red;ERROR:^reset;\nMissing the '^green;Scripted Artificial Intelligence Lattice^reset;' mod.\nPlease install it if you wish to use this feature."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/strings/customAI",
-    "value": "Insert A.I. chips in the slots below to customize the A.I.\nClick the '^green;CRAFT^reset;' button to open the A.I. chip crafting menu."
-  },
-  {
-    "op": "test",
-    "path": "/TextData/currencies/main",
-    "value": "Main"
-  },
-  {
-    "op": "test",
-    "path": "/TextData/currencies/fu_tradegoods",
-    "value": "Trade Goods"
-  },
-  {
-    "op": "test",
-    "path": "/TextData/currencies/fu_research",
-    "value": "Research"
-  },
-  {
-    "op": "test",
-    "path": "/TextData/currencies/unsorted",
-    "value": "Unsorted"
-  },
-  {
-    "op": "replace",
-    "path": "/GUI/title",
-    "value": "S.A.I.L"
-  },
-  {
-    "op": "replace",
-    "path": "/GUI/subtitle",
-    "value": "Gemi Tabanlı Yapay Zekâ Ağı"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/0/1",
-    "value": "^#e43774;[FR]^reset; Oyuncu Bonusları (%%status.statusProperty(\"fr_enabled\")%%)"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/1/1",
-    "value": "^cyan;[FU]^reset; BYOS Atmosferi (%%world.getProperty(\"fu_byos.newAtmosphereSystem\")%%)"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/2/1",
-    "value": "^cyan;[FU]^reset; Gemi Evcil Hayvanını Ayarla"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/3/1",
-    "value": "^cyan;[FU]^reset; Gemi Geneli Toplayıcıyı Aç/Kapat"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/4/1",
-    "value": "^cyan;[FU]^reset; Karakter Durumu"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/5/1",
-    "value": "^orange;[ZB]^reset; Güncelleme Penceresi"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/6/1",
-    "value": "^orange;[ZB]^reset; Görev Listesi"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/7/1",
-    "value": "^orange;[ZB]^reset; Araştırma Ağacı"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/8/1",
-    "value": "^orange;[ZB]^reset; Araştırmayı Yeniden Kontrol Et"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/9/1",
-    "value": "^orange;[ZB]^reset; Özel SAIL Bilgisi"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/misc/10/1",
-    "value": "Vanilla SAIL"
-  },
-  {
-    "op": "replace",
-    "path": "/Data/miscAdmin/0/1",
-    "value": "[Admin] Durumları Temizle"
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/noMissionsSpeech/text",
-    "value": "Şu anda kullanılabilir görev koordinatı yok."
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/noCrewSpeech/text",
-    "value": "Bu geminin kayıtlı tek mürettebat üyesi sensin.\n\nYeni mürettebat üyeleri almak operasyonel verimliliği artırabilir."
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/noStoredCrewSpeech/text",
-    "value": "Şu anda etkin olmayan mürettebat üyesi yok.\n\nEtkin mürettebat sayısı geminin destekleyebileceği sınırı aşarsa fazla üyeler etkin olmayan duruma geçer."
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/shipStatus/0/text",
-    "value": "Zzz... Zzz... Zzz..."
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/shipStatus/1/text",
-    "value": "> Gemi iticileri şu anda devre dışı.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Şu anda yalnızca aşağıdaki gezegene erişilebilir."
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/shipStatus/2/text",
-    "value": "> Gemi iticileri çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Bu yıldız sistemindeki gezegenlere erişilebilir."
-  },
-  {
-    "op": "replace",
-    "path": "/Speech/shipStatus/3/text",
-    "value": "> Gemi iticileri çevrim içi.\n> FTL motoru çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Artık tüm evrene erişilebilir."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/strings/error",
-    "value": "Bir hata oluştu. Lütfen log dosyasını ekleyerek bunu Steam sayfasında veya Discord sunucusunda bildir. ^green;Aşağıdaki hata mesajı yeşilse ona dikkat etmelisin.^reset;\n\nBu sırada düğmelerden birine tıklayarak SAIL'in vanilla sürümünü açabilirsin."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/strings/buttonError",
-    "value": "^red;HATA:^reset;\nHiçbir düğmeye basılmadı ama düğmeye ait işlev çağrıldı.\nBunu nasıl tetiklediğini Steam sayfasında veya Discord sunucusunda bildirip düğmeye tekrar tıklamayı dene."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/strings/promiseError",
-    "value": "customDataPromise başarısız oldu - Uyumsuz veya hatalı SAIL nesne tanımı. Mevcut ırkını hazırlayan mod geliştiricisine techStation nesne tanımındaki hatayı bildir."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/strings/intro",
-    "value": "S.A.I.L'e hoş geldin.\n\nBu arayüzden geminin durumunu kontrol edebilir, ^green;[BAKİYE]^reset; bölümünde para birimlerini görebilir, ^green;[GÖREVLER]^reset; başlatabilir, ^green;[MÜRETTEBAT]^reset; yönetebilir ve ^green;[DİĞER]^reset; özelliklere erişebilirsin."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/strings/noCustomAIMod",
-    "value": "^red;HATA:^reset;\n'^green;Scripted Artificial Intelligence Lattice^reset;' modu eksik.\nBu özelliği kullanmak istiyorsan modu yükle."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/strings/customAI",
-    "value": "Yapay zekâyı özelleştirmek için aşağıdaki yuvalara Yapay Zekâ Çipleri yerleştir.\nYapay Zekâ Çipi üretim menüsünü açmak için '^green;ÜRET^reset;' düğmesine tıkla."
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/currencies/main",
-    "value": "Ana"
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/currencies/fu_tradegoods",
-    "value": "Ticaret Malları"
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/currencies/fu_research",
-    "value": "Araştırma"
-  },
-  {
-    "op": "replace",
-    "path": "/TextData/currencies/unsorted",
-    "value": "Sınıflandırılmamış"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/GUI/title",
+      "value": "S.A.I.L"
+    },
+    {
+      "op": "replace",
+      "path": "/GUI/title",
+      "value": "S.A.I.L"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/GUI/subtitle",
+      "value": "Ship-based Artificial Intelligence Lattice"
+    },
+    {
+      "op": "replace",
+      "path": "/GUI/subtitle",
+      "value": "Gemi Tabanlı Yapay Zekâ Ağı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/0/1",
+      "value": "^#e43774;[FR]^reset; Player Bonuses (%%status.statusProperty(\"fr_enabled\")%%)"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/0/1",
+      "value": "^#e43774;[FR]^reset; Oyuncu Bonusları (%%status.statusProperty(\"fr_enabled\")%%)"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/1/1",
+      "value": "^cyan;[FU]^reset; BYOS Atmosphere (%%world.getProperty(\"fu_byos.newAtmosphereSystem\")%%)"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/1/1",
+      "value": "^cyan;[FU]^reset; BYOS Atmosferi (%%world.getProperty(\"fu_byos.newAtmosphereSystem\")%%)"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/2/1",
+      "value": "^cyan;[FU]^reset; Configure Ship Pet"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/2/1",
+      "value": "^cyan;[FU]^reset; Gemi Evcil Hayvanını Ayarla"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/3/1",
+      "value": "^cyan;[FU]^reset; Toggle Shipwide Grabber"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/3/1",
+      "value": "^cyan;[FU]^reset; Gemi Geneli Toplayıcıyı Aç/Kapat"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/4/1",
+      "value": "^cyan;[FU]^reset; Character Status"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/4/1",
+      "value": "^cyan;[FU]^reset; Karakter Durumu"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/5/1",
+      "value": "^orange;[ZB]^reset; Update Window"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/5/1",
+      "value": "^orange;[ZB]^reset; Güncelleme Penceresi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/6/1",
+      "value": "^orange;[ZB]^reset; Quest List"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/6/1",
+      "value": "^orange;[ZB]^reset; Görev Listesi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/7/1",
+      "value": "^orange;[ZB]^reset; Research Tree"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/7/1",
+      "value": "^orange;[ZB]^reset; Araştırma Ağacı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/8/1",
+      "value": "^orange;[ZB]^reset; Queue Research Recheck"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/8/1",
+      "value": "^orange;[ZB]^reset; Araştırmayı Yeniden Kontrol Et"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/9/1",
+      "value": "^orange;[ZB]^reset; Custom SAIL Info"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/9/1",
+      "value": "^orange;[ZB]^reset; Özel SAIL Bilgisi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/misc/10/1",
+      "value": "Vanilla SAIL"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/misc/10/1",
+      "value": "Vanilla SAIL"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Data/miscAdmin/0/1",
+      "value": "[Admin] Clear Statuses"
+    },
+    {
+      "op": "replace",
+      "path": "/Data/miscAdmin/0/1",
+      "value": "[Admin] Durumları Temizle"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/noMissionsSpeech/text",
+      "value": "No mission co-ordinates currently available."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/noMissionsSpeech/text",
+      "value": "Şu anda kullanılabilir görev koordinatı yok."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/noCrewSpeech/text",
+      "value": "You are the only registered crew member of this ship.\n\nRecruiting additional crew members may allow for increased operational efficiency."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/noCrewSpeech/text",
+      "value": "Bu geminin kayıtlı tek mürettebat üyesi sensin.\n\nYeni mürettebat üyeleri almak operasyonel verimliliği artırabilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/noCrewSpeech/text",
+      "value": "You are the only registered crew member of this ship.\r\n\r\nRecruiting additional crew members may allow for increased operational efficiency."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/noCrewSpeech/text",
+      "value": "Bu geminin kayıtlı tek mürettebat üyesi sensin.\n\nYeni mürettebat üyeleri almak operasyonel verimliliği artırabilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/noStoredCrewSpeech/text",
+      "value": "There are currently no inactive crew members.\n\nCrew members become inactive if the the number of active crew exceeds the number of crew your ship can support."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/noStoredCrewSpeech/text",
+      "value": "Şu anda etkin olmayan mürettebat üyesi yok.\n\nEtkin mürettebat sayısı geminin destekleyebileceği sınırı aşarsa fazla üyeler etkin olmayan duruma geçer."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/noStoredCrewSpeech/text",
+      "value": "There are currently no inactive crew members.\r\n\r\nCrew members become inactive if the the number of active crew exceeds the number of crew your ship can support."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/noStoredCrewSpeech/text",
+      "value": "Şu anda etkin olmayan mürettebat üyesi yok.\n\nEtkin mürettebat sayısı geminin destekleyebileceği sınırı aşarsa fazla üyeler etkin olmayan duruma geçer."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/0/text",
+      "value": "Zzz... Zzz... Zzz..."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/0/text",
+      "value": "Zzz... Zzz... Zzz..."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/1/text",
+      "value": "> Ship thrusters are currently offline.\n> Ship teleportation system functioning correctly.\n> ^green;Currently only the planet below is accessible."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/1/text",
+      "value": "> Gemi iticileri şu anda devre dışı.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Şu anda yalnızca aşağıdaki gezegene erişilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/1/text",
+      "value": "> Ship thrusters are currently offline.\r\n> Ship teleportation system functioning correctly.\r\n> ^green;Currently only the planet below is accessible."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/1/text",
+      "value": "> Gemi iticileri şu anda devre dışı.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Şu anda yalnızca aşağıdaki gezegene erişilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/2/text",
+      "value": "> Ship thrusters are online.\n> Ship teleportation system functioning correctly.\n> ^green;Planets within this star system are accessible."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/2/text",
+      "value": "> Gemi iticileri çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Bu yıldız sistemindeki gezegenlere erişilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/2/text",
+      "value": "> Ship thrusters are online.\r\n> Ship teleportation system functioning correctly.\r\n> ^green;Planets within this star system are accessible."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/2/text",
+      "value": "> Gemi iticileri çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Bu yıldız sistemindeki gezegenlere erişilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/3/text",
+      "value": "> Ship thrusters are online.\n> FTL drive is online.\n> Ship teleportation system functioning correctly.\n> ^green;The entire universe is accessible."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/3/text",
+      "value": "> Gemi iticileri çevrim içi.\n> FTL motoru çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Artık tüm evrene erişilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/Speech/shipStatus/3/text",
+      "value": "> Ship thrusters are online.\r\n> FTL drive is online.\r\n> Ship teleportation system functioning correctly.\r\n> ^green;The entire universe is accessible."
+    },
+    {
+      "op": "replace",
+      "path": "/Speech/shipStatus/3/text",
+      "value": "> Gemi iticileri çevrim içi.\n> FTL motoru çevrim içi.\n> Gemi ışınlama sistemi düzgün çalışıyor.\n> ^green;Artık tüm evrene erişilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/error",
+      "value": "An error has occured. Please report this on the Steam page or Discord server with a log attached. ^green;If the error message below is green, you should pay attention to it.^reset;\n\nMeanwhile, you can click any of the buttons to open the vanilla version of SAIL."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/error",
+      "value": "Bir hata oluştu. Lütfen log dosyasını ekleyerek bunu Steam sayfasında veya Discord sunucusunda bildir. ^green;Aşağıdaki hata mesajı yeşilse ona dikkat etmelisin.^reset;\n\nBu sırada düğmelerden birine tıklayarak SAIL'in vanilla sürümünü açabilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/error",
+      "value": "An error has occured. Please report this on the Steam page or Discord server with a log attached. ^green;If the error message below is green, you should pay attention to it.^reset;\r\n\r\nMeanwhile, you can click any of the buttons to open the vanilla version of SAIL."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/error",
+      "value": "Bir hata oluştu. Lütfen log dosyasını ekleyerek bunu Steam sayfasında veya Discord sunucusunda bildir. ^green;Aşağıdaki hata mesajı yeşilse ona dikkat etmelisin.^reset;\n\nBu sırada düğmelerden birine tıklayarak SAIL'in vanilla sürümünü açabilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/buttonError",
+      "value": "^red;ERROR:^reset;\nNo button was pressed, but the function for it was called.\nPlease report how you achieved this on the Steam page or Discord server, and try clicking the button again."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/buttonError",
+      "value": "^red;HATA:^reset;\nHiçbir düğmeye basılmadı ama düğmeye ait işlev çağrıldı.\nBunu nasıl tetiklediğini Steam sayfasında veya Discord sunucusunda bildirip düğmeye tekrar tıklamayı dene."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/buttonError",
+      "value": "^red;ERROR:^reset;\r\nNo button was pressed, but the function for it was called.\r\nPlease report how you achieved this on the Steam page or Discord server, and try clicking the button again."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/buttonError",
+      "value": "^red;HATA:^reset;\nHiçbir düğmeye basılmadı ama düğmeye ait işlev çağrıldı.\nBunu nasıl tetiklediğini Steam sayfasında veya Discord sunucusunda bildirip düğmeye tekrar tıklamayı dene."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/promiseError",
+      "value": "customDataPromise failed - Incompatible or faulty SAIL object definition. Please contact the modder who made your current race about a fault in their techStation object definition."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/promiseError",
+      "value": "customDataPromise başarısız oldu - Uyumsuz veya hatalı SAIL nesne tanımı. Mevcut ırkını hazırlayan mod geliştiricisine techStation nesne tanımındaki hatayı bildir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/intro",
+      "value": "Welcome to S.A.I.L.\n\nUsing this interface you can check the ship's status, view your currency ^green;[BALANCE]^reset;, begin ^green;[MISSIONS]^reset;, manage your ^green;[CREW]^reset;, and access other useful ^green;[MISC]^reset; features."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/intro",
+      "value": "S.A.I.L'e hoş geldin.\n\nBu arayüzden geminin durumunu kontrol edebilir, ^green;[BAKİYE]^reset; bölümünde para birimlerini görebilir, ^green;[GÖREVLER]^reset; başlatabilir, ^green;[MÜRETTEBAT]^reset; yönetebilir ve ^green;[DİĞER]^reset; özelliklere erişebilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/intro",
+      "value": "Welcome to S.A.I.L.\r\n\r\nUsing this interface you can check the ship's status, view your currency ^green;[BALANCE]^reset;, begin ^green;[MISSIONS]^reset;, manage your ^green;[CREW]^reset;, and access other useful ^green;[MISC]^reset; features."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/intro",
+      "value": "S.A.I.L'e hoş geldin.\n\nBu arayüzden geminin durumunu kontrol edebilir, ^green;[BAKİYE]^reset; bölümünde para birimlerini görebilir, ^green;[GÖREVLER]^reset; başlatabilir, ^green;[MÜRETTEBAT]^reset; yönetebilir ve ^green;[DİĞER]^reset; özelliklere erişebilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/noCustomAIMod",
+      "value": "^red;ERROR:^reset;\nMissing the '^green;Scripted Artificial Intelligence Lattice^reset;' mod.\nPlease install it if you wish to use this feature."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/noCustomAIMod",
+      "value": "^red;HATA:^reset;\n'^green;Scripted Artificial Intelligence Lattice^reset;' modu eksik.\nBu özelliği kullanmak istiyorsan modu yükle."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/noCustomAIMod",
+      "value": "^red;ERROR:^reset;\r\nMissing the '^green;Scripted Artificial Intelligence Lattice^reset;' mod.\r\nPlease install it if you wish to use this feature."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/noCustomAIMod",
+      "value": "^red;HATA:^reset;\n'^green;Scripted Artificial Intelligence Lattice^reset;' modu eksik.\nBu özelliği kullanmak istiyorsan modu yükle."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/customAI",
+      "value": "Insert A.I. chips in the slots below to customize the A.I.\nClick the '^green;CRAFT^reset;' button to open the A.I. chip crafting menu."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/customAI",
+      "value": "Yapay zekâyı özelleştirmek için aşağıdaki yuvalara Yapay Zekâ Çipleri yerleştir.\nYapay Zekâ Çipi üretim menüsünü açmak için '^green;ÜRET^reset;' düğmesine tıkla."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/strings/customAI",
+      "value": "Insert A.I. chips in the slots below to customize the A.I.\r\nClick the '^green;CRAFT^reset;' button to open the A.I. chip crafting menu."
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/strings/customAI",
+      "value": "Yapay zekâyı özelleştirmek için aşağıdaki yuvalara Yapay Zekâ Çipleri yerleştir.\nYapay Zekâ Çipi üretim menüsünü açmak için '^green;ÜRET^reset;' düğmesine tıkla."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/currencies/main",
+      "value": "Main"
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/currencies/main",
+      "value": "Ana"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/currencies/fu_tradegoods",
+      "value": "Trade Goods"
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/currencies/fu_tradegoods",
+      "value": "Ticaret Malları"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/currencies/fu_research",
+      "value": "Research"
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/currencies/fu_research",
+      "value": "Araştırma"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/TextData/currencies/unsorted",
+      "value": "Unsorted"
+    },
+    {
+      "op": "replace",
+      "path": "/TextData/currencies/unsorted",
+      "value": "Sınıflandırılmamış"
+    }
+  ]
 ]

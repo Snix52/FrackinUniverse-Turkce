@@ -1,42 +1,74 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/researchButton/caption",
-    "value": "Research"
-  },
-  {
-    "op": "test",
-    "path": "/gui/infoList/children/unlocksLabel/value",
-    "value": "^green;Unlocks:\n\n\n"
-  },
-  {
-    "op": "test",
-    "path": "/gui/title/value",
-    "value": "I AM ERROR"
-  },
-  {
-    "op": "test",
-    "path": "/gui/consumptionText/value",
-    "value": "Will not consume currency\nWill not consume items"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/researchButton/caption",
-    "value": "Araştır"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/infoList/children/unlocksLabel/value",
-    "value": "^green;Açılanlar:\n\n\n"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/title/value",
-    "value": "HATA"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/consumptionText/value",
-    "value": "Para/puan harcanmayacak\nEşya harcanmayacak"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/researchButton/caption",
+      "value": "Research"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/researchButton/caption",
+      "value": "Araştır"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/infoList/children/unlocksLabel/value",
+      "value": "^green;Unlocks:\n\n\n"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/infoList/children/unlocksLabel/value",
+      "value": "^green;Açılanlar:\n\n\n"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/infoList/children/unlocksLabel/value",
+      "value": "^green;Unlocks:\r\n\r\n\r\n"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/infoList/children/unlocksLabel/value",
+      "value": "^green;Açılanlar:\n\n\n"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/title/value",
+      "value": "I AM ERROR"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/title/value",
+      "value": "HATA"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/consumptionText/value",
+      "value": "Will not consume currency\nWill not consume items"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/consumptionText/value",
+      "value": "Para/puan harcanmayacak\nEşya harcanmayacak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/consumptionText/value",
+      "value": "Will not consume currency\r\nWill not consume items"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/consumptionText/value",
+      "value": "Para/puan harcanmayacak\nEşya harcanmayacak"
+    }
+  ]
 ]

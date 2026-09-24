@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Iron LMG"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Dangerous, but inaccurate."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Demir Hafif Makineli Tüfek"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tehlikeli ama isabetsiz."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Iron LMG"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Demir Hafif Makineli Tüfek"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Dangerous, but inaccurate."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tehlikeli ama isabetsiz."
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Merry mead"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I's not able ter *hic* do much ter help. Make ^green;mead^reset;. Hard work. You'll need to find shome ^orange;Pure Honey^reset; and purpare fer a complimicated brewing process. Bring some for me to *hic* taste when you're done!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "You did it. Now you can truly call yourself a brewer."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;mead^reset; to ^green;the drunk^reset; at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Bal Şarabı"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Pek yardımcı olamıyom *hık*. ^green;Meadbee Bal Şarabı^reset; yap. Zor iştir. Biraz ^orange;Saf Bal^reset; bulup karmaşık bir mayalama sürecine hazırlanman gerekecek. Bitirince tadına bakmam için biraz getir! *hık*"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Başardın. Artık kendine gerçekten içki ustası diyebilirsin."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Meadbee Bal Şarabını^reset; ^orange;Bilim Karakolundaki^reset; ^green;sarhoşa^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Merry mead"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Bal Şarabı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I's not able ter *hic* do much ter help. Make ^green;mead^reset;. Hard work. You'll need to find shome ^orange;Pure Honey^reset; and purpare fer a complimicated brewing process. Bring some for me to *hic* taste when you're done!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Pek yardımcı olamıyom *hık*. ^green;Meadbee Bal Şarabı^reset; yap. Zor iştir. Biraz ^orange;Saf Bal^reset; bulup karmaşık bir mayalama sürecine hazırlanman gerekecek. Bitirince tadına bakmam için biraz getir! *hık*"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "You did it. Now you can truly call yourself a brewer."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Başardın. Artık kendine gerçekten içki ustası diyebilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;mead^reset; to ^green;the drunk^reset; at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Meadbee Bal Şarabını^reset; ^orange;Bilim Karakolundaki^reset; ^green;sarhoşa^reset; götür."
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "At this point it's probably safe to assume everyone is dead."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Blood Spatter"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Artık herkesin öldüğünü varsaymak güvenli olur."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kan Sıçraması"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "At this point it's probably safe to assume everyone is dead."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Artık herkesin öldüğünü varsaymak güvenli olur."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Blood Spatter"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kan Sıçraması"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A stalwart bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Stalwart Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir sağlam arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sağlam Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A stalwart bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir sağlam arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Stalwart Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sağlam Arısı"
+    }
+  ]
 ]

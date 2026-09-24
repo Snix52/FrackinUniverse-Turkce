@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Use this to open it and reveal its contents. How exciting!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Briefcase o' Rewards"
-  },
-  {
-    "op": "test",
-    "path": "/notOnPlanetMessage",
-    "value": "This item can only be used on planets so that you can get the most out of your rewards."
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kullanarak aç ve içindekileri gör. Ne heyecan!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ödül Dolu Evrak Çantası"
-  },
-  {
-    "op": "replace",
-    "path": "/notOnPlanetMessage",
-    "value": "Ödüllerinden tam yararlanabilmek için bu eşyayı yalnızca gezegenlerde kullanabilirsin."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Use this to open it and reveal its contents. How exciting!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kullanarak aç ve içindekileri gör. Ne heyecan!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Briefcase o' Rewards"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ödül Dolu Evrak Çantası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/notOnPlanetMessage",
+      "value": "This item can only be used on planets so that you can get the most out of your rewards."
+    },
+    {
+      "op": "replace",
+      "path": "/notOnPlanetMessage",
+      "value": "Ödüllerinden tam yararlanabilmek için bu eşyayı yalnızca gezegenlerde kullanabilirsin."
+    }
+  ]
 ]

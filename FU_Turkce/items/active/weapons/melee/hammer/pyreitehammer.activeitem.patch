@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pyreite Hammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Probably not intended for carpentry.\n^cyan;Inflicts Napalm^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pyreite Çekiç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Muhtemelen marangozluk için tasarlanmamıştır.\n^cyan;Napalm uygular^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pyreite Hammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pyreite Çekiç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Probably not intended for carpentry.\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Muhtemelen marangozluk için tasarlanmamıştır.\n^cyan;Napalm uygular^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Probably not intended for carpentry.\r\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Muhtemelen marangozluk için tasarlanmamıştır.\n^cyan;Napalm uygular^reset;"
+    }
+  ]
 ]

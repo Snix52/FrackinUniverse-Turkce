@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Dagger"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Swift and deadly.\n^cyan;Inflicts Rad-Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Hançer"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Hızlı ve ölümcül.\n^cyan;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Dagger"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Hançer"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Swift and deadly.\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hızlı ve ölümcül.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Swift and deadly.\r\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hızlı ve ölümcül.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

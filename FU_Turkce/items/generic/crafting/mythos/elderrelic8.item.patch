@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Unknown Reactor^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This seems to be a hand-sized power source. Origin unknown."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Bilinmeyen Reaktör^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu, avuç içi boyutunda bir güç kaynağına benziyor. Kökeni bilinmiyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Unknown Reactor^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Bilinmeyen Reaktör^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This seems to be a hand-sized power source. Origin unknown."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu, avuç içi boyutunda bir güç kaynağına benziyor. Kökeni bilinmiyor."
+    }
+  ]
 ]

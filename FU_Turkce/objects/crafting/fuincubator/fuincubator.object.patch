@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Hatch eggs into creatures."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Incubator^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "Resource converter"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yumurtalardan yaratık çıkarır."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Kuluçka Makinesi^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Kaynak Dönüştürücü"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hatch eggs into creatures."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yumurtalardan yaratık çıkarır."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Incubator^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Kuluçka Makinesi^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "Resource converter"
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Kaynak Dönüştürücü"
+    }
+  ]
 ]

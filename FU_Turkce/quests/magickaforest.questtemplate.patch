@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Away In A Longship^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Alpaca raiders are threatening an ancient Glitch monastery. The defenders look like they could use a little help."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "These ruins sure are expansive, and the alpaca well-hidden! Hopefully all this was worth it!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Defeat the leader of the alpaca raiders."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Uzun Gemiyle Uzaklara^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Alpaka akıncıları kadim bir Glitch manastırını tehdit ediyor. Savunmacıların biraz yardıma ihtiyacı var gibi."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu harabeler gerçekten çok geniş, alpakalar da iyi saklanmış! Umarım bütün bunlara değmiştir!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Alpaka akıncılarının liderini yen."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Away In A Longship^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Uzun Gemiyle Uzaklara^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Alpaca raiders are threatening an ancient Glitch monastery. The defenders look like they could use a little help."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Alpaka akıncıları kadim bir Glitch manastırını tehdit ediyor. Savunmacıların biraz yardıma ihtiyacı var gibi."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "These ruins sure are expansive, and the alpaca well-hidden! Hopefully all this was worth it!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu harabeler gerçekten çok geniş, alpakalar da iyi saklanmış! Umarım bütün bunlara değmiştir!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Defeat the leader of the alpaca raiders."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Alpaka akıncılarının liderini yen."
+    }
+  ]
 ]

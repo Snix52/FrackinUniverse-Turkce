@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Telebrium Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;Immune: Poisoned^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Telebrium Kalkanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;Bağışıklık: Zehirlenme^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Telebrium Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Telebrium Kalkanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;Immune: Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;Bağışıklık: Zehirlenme^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Master's Dagger"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Sleek and shadowy. Cool to the touch.\n^cyan;Inflicts bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ustanın Hançeri"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Zarif ve gölgeli. Dokununca serin.\n^cyan;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Master's Dagger"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ustanın Hançeri"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sleek and shadowy. Cool to the touch.\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zarif ve gölgeli. Dokununca serin.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sleek and shadowy. Cool to the touch.\r\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zarif ve gölgeli. Dokununca serin.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

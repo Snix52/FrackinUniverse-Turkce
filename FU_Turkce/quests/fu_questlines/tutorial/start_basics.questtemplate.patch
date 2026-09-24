@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Homestead I"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Hi there! I've not seen another new soul besides that ^green;slug-lookin' feller^reset; in a long time. If yer fixin' to escape this world, I kin help a bit, maybe. Bring me say...^orange;5 potatoes^reset;, and we'll talk. A ^orange;Greenhouse^reset; might help you make some, in a pinch."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Thanks fer the tasty tots, friend. As a thanks, you can have this store of ^green;Iron Ore^reset; my grand-papa kept around when this place was still nice. T'aint worth a thing to me, but it'll sure be useful for you!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Gather or Grow ^orange;5 potatoes^reset; and return to ^green;Welchie^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Yerleşim I"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Selam! Uzun zamandır şu ^green;sümüklüböceğe benzeyen ahbap^reset; dışında buralarda yeni bir yüz görmedim. Bu dünyadan kaçmaya niyetliysen belki biraz el atabilirim. Bana şöyle... ^orange;5 patates^reset; getir de konuşalım. Sıkışırsan bir ^orange;Sera^reset; işini görebilir."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Patatesler için sağ ol dostum. Karşılığında, buralar hâlâ düzgün bir yerken büyükbabamın biriktirdiği şu ^green;Demir Cevherini^reset; al. Bana pek yaramaz ama senin işine kesin yarar!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;5 patates^reset; topla veya yetiştir. Sonra ^green;Welchie^reset; ile konuş."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Homestead I"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Yerleşim I"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Hi there! I've not seen another new soul besides that ^green;slug-lookin' feller^reset; in a long time. If yer fixin' to escape this world, I kin help a bit, maybe. Bring me say...^orange;5 potatoes^reset;, and we'll talk. A ^orange;Greenhouse^reset; might help you make some, in a pinch."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Selam! Uzun zamandır şu ^green;sümüklüböceğe benzeyen ahbap^reset; dışında buralarda yeni bir yüz görmedim. Bu dünyadan kaçmaya niyetliysen belki biraz el atabilirim. Bana şöyle... ^orange;5 patates^reset; getir de konuşalım. Sıkışırsan bir ^orange;Sera^reset; işini görebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Thanks fer the tasty tots, friend. As a thanks, you can have this store of ^green;Iron Ore^reset; my grand-papa kept around when this place was still nice. T'aint worth a thing to me, but it'll sure be useful for you!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Patatesler için sağ ol dostum. Karşılığında, buralar hâlâ düzgün bir yerken büyükbabamın biriktirdiği şu ^green;Demir Cevherini^reset; al. Bana pek yaramaz ama senin işine kesin yarar!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Gather or Grow ^orange;5 potatoes^reset; and return to ^green;Welchie^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;5 patates^reset; topla veya yetiştir. Sonra ^green;Welchie^reset; ile konuş."
+    }
+  ]
 ]

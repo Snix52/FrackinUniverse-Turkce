@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Moderate Heat/Cold, Mild Radiation/Poison, Proto"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Emissary Mech Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Orta Dereceli Sıcaklık/Soğuk, Hafif Radyasyon/Zehir, Proto"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Emissary Mech Gövdesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Moderate Heat/Cold, Mild Radiation/Poison, Proto"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Orta Dereceli Sıcaklık/Soğuk, Hafif Radyasyon/Zehir, Proto"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Emissary Mech Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Emissary Mech Gövdesi"
+    }
+  ]
 ]

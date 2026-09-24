@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "The Extractor"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "So you now have a ^orange;Hand Mill^reset; or ^orange;Extraction Lab^reset;, but aren't sure what to do with it? It's simple, really. Go place it somewhere, and toss a bunch of ^green;logs^reset; in there. 10 should do. Create 10 ^orange;Methanol^reset; with them."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "That, my friend, is how you make ^orange;Methanol^reset; from scratch. Now let's move on to ^orange;Cobblestone^reset;! "
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the 10 ^orange;Methanol^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Çıkarıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Artık bir ^orange;El Değirmenin^reset; veya ^orange;Çıkarma Laboratuvarın^reset; var ama ne yapacağını bilmiyor musun? Aslında basit. Bir yere yerleştir ve içine bir deste ^green;odun^reset; at. 10 tane yeter. Bunlardan 10 ^orange;Metanol^reset; üret."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "İşte dostum, ^orange;Metanolü^reset; sıfırdan böyle üretirsin. Şimdi ^orange;Parke Taşına^reset; geçelim!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "10 ^orange;Metanolü^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "The Extractor"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Çıkarıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "So you now have a ^orange;Hand Mill^reset; or ^orange;Extraction Lab^reset;, but aren't sure what to do with it? It's simple, really. Go place it somewhere, and toss a bunch of ^green;logs^reset; in there. 10 should do. Create 10 ^orange;Methanol^reset; with them."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Artık bir ^orange;El Değirmenin^reset; veya ^orange;Çıkarma Laboratuvarın^reset; var ama ne yapacağını bilmiyor musun? Aslında basit. Bir yere yerleştir ve içine bir deste ^green;odun^reset; at. 10 tane yeter. Bunlardan 10 ^orange;Metanol^reset; üret."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "That, my friend, is how you make ^orange;Methanol^reset; from scratch. Now let's move on to ^orange;Cobblestone^reset;! "
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "İşte dostum, ^orange;Metanolü^reset; sıfırdan böyle üretirsin. Şimdi ^orange;Parke Taşına^reset; geçelim!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the 10 ^orange;Methanol^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "10 ^orange;Metanolü^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

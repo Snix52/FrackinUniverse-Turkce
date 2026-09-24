@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Zerchesium Shortspear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Cold, calculating murder tool.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zerchesium Kısa Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Soğuk ve hesapçı bir cinayet aleti.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Zerchesium Shortspear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zerchesium Kısa Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Cold, calculating murder tool.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Soğuk ve hesapçı bir cinayet aleti.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Cold, calculating murder tool.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Soğuk ve hesapçı bir cinayet aleti.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

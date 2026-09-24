@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Thresher"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Brutal violium-derived blasts shred opponents.\n^yellow;Inflicts electrified status^reset;\n^cyan;Inflicts Slow status^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Biçici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Violium kökenli acımasız patlamalar düşmanları parçalar.\n^yellow;Elektriklenmeye yol açar^reset;\n^cyan;Yavaşlatma etkisi uygular^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Thresher"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Biçici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Brutal violium-derived blasts shred opponents.\n^yellow;Inflicts electrified status^reset;\n^cyan;Inflicts Slow status^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Violium kökenli acımasız patlamalar düşmanları parçalar.\n^yellow;Elektriklenmeye yol açar^reset;\n^cyan;Yavaşlatma etkisi uygular^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Brutal violium-derived blasts shred opponents.\r\n^yellow;Inflicts electrified status^reset;\r\n^cyan;Inflicts Slow status^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Violium kökenli acımasız patlamalar düşmanları parçalar.\n^yellow;Elektriklenmeye yol açar^reset;\n^cyan;Yavaşlatma etkisi uygular^reset;"
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/lblText/value",
-    "value": "^#b9b5b2;Place oil in the left slot to refine into mech fuel."
-  },
-  {
-    "op": "test",
-    "path": "/gui/toggleCrafting/caption",
-    "value": "Distill"
-  },
-  {
-    "op": "test",
-    "path": "/gui/windowtitle/subtitle",
-    "value": "  ^#b9b5b2;Converts Oil"
-  },
-  {
-    "op": "test",
-    "path": "/gui/windowtitle/title",
-    "value": "  Oil Distiller"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lblText/value",
-    "value": "^#b9b5b2;Mech yakıtına dönüştürmek için sol yuvaya Yağ yerleştir."
-  },
-  {
-    "op": "replace",
-    "path": "/gui/toggleCrafting/caption",
-    "value": "Damıt"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/windowtitle/subtitle",
-    "value": "  ^#b9b5b2;Yağı Mech yakıtına dönüştürür"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/windowtitle/title",
-    "value": "  Yağ Damıtıcısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/lblText/value",
+      "value": "^#b9b5b2;Place oil in the left slot to refine into mech fuel."
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lblText/value",
+      "value": "^#b9b5b2;Mech yakıtına dönüştürmek için sol yuvaya Yağ yerleştir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/toggleCrafting/caption",
+      "value": "Distill"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/toggleCrafting/caption",
+      "value": "Damıt"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/windowtitle/subtitle",
+      "value": "  ^#b9b5b2;Converts Oil"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/windowtitle/subtitle",
+      "value": "  ^#b9b5b2;Yağı Mech yakıtına dönüştürür"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/windowtitle/title",
+      "value": "  Oil Distiller"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/windowtitle/title",
+      "value": "  Yağ Damıtıcısı"
+    }
+  ]
 ]

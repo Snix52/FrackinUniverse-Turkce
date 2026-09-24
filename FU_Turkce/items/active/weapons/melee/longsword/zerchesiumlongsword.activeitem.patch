@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Zerchesium Longsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Heavy-edged and freezing cold.\n^cyan;Counts as Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zerchesium Uzun Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ağır ağızlı ve dondurucu derecede soğuk.\n^cyan;Av silahı sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Zerchesium Longsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zerchesium Uzun Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Heavy-edged and freezing cold.\n^cyan;Counts as Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağır ağızlı ve dondurucu derecede soğuk.\n^cyan;Av silahı sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Heavy-edged and freezing cold.\r\n^cyan;Counts as Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağır ağızlı ve dondurucu derecede soğuk.\n^cyan;Av silahı sayılır^reset;"
+    }
+  ]
 ]

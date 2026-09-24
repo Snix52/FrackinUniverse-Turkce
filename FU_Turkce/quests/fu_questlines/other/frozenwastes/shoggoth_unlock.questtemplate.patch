@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Molten Power"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I'm trying to fix this relay, but the damned thing just won't relent. I desperately need to reach a friend. Could you perhaps craft a ^orange;Molten Core^reset; in your ^orange;Matter Assembler^reset;? That should solve my predicament."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "That did it, thanks!...hmm, that's odd. No signal from the ^green;lab on Delta Freya II^reset;. Not even static. I'll have to investigate this. Thanks for this Core, it will go a long way to helping communications here."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Molten Core^reset; to the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Erimiş Güç"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bu röleyi onarmaya çalışıyorum ama lanet şey bir türlü düzelmiyor. Bir arkadaşıma acilen ulaşmam gerek. ^orange;Madde Birleştiricinde^reset; bir ^orange;Erimiş Çekirdek^reset; üretebilir misin? Bu sorunumu çözer."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Oldu, teşekkürler!... Hımm, tuhaf. ^green;Delta Freya II'deki laboratuvardan^reset; sinyal gelmiyor. Parazit bile yok. Bunu araştırmam gerekecek. Bu çekirdek için teşekkürler; buradaki iletişimi toparlamada çok işime yarayacak."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Erimiş Çekirdeği^reset; ^orange;Bilim Karakoluna^reset; getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Molten Power"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Erimiş Güç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I'm trying to fix this relay, but the damned thing just won't relent. I desperately need to reach a friend. Could you perhaps craft a ^orange;Molten Core^reset; in your ^orange;Matter Assembler^reset;? That should solve my predicament."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bu röleyi onarmaya çalışıyorum ama lanet şey bir türlü düzelmiyor. Bir arkadaşıma acilen ulaşmam gerek. ^orange;Madde Birleştiricinde^reset; bir ^orange;Erimiş Çekirdek^reset; üretebilir misin? Bu sorunumu çözer."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "That did it, thanks!...hmm, that's odd. No signal from the ^green;lab on Delta Freya II^reset;. Not even static. I'll have to investigate this. Thanks for this Core, it will go a long way to helping communications here."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Oldu, teşekkürler!... Hımm, tuhaf. ^green;Delta Freya II'deki laboratuvardan^reset; sinyal gelmiyor. Parazit bile yok. Bunu araştırmam gerekecek. Bu çekirdek için teşekkürler; buradaki iletişimi toparlamada çok işime yarayacak."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Molten Core^reset; to the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Erimiş Çekirdeği^reset; ^orange;Bilim Karakoluna^reset; getir."
+    }
+  ]
 ]

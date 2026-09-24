@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Homestead III (pt 1)"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Ya ever come across ^orange;Oil^reset;? It's quite rare round these 'ere parts. I hear ye kin get some without much hassle by tossin ^orange;Corn^reset; or ^orange;Bone^reset; in a ^orange;Hand Mill^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Oil kin be quite useful for a number o' things, but I suggest you save that ^orange;Oil^reset; for a very different task. Talk ter me again ta learn more."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Craft some ^green;Oil^reset; and return to ^green;Welchie^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Yerleşim III (1. Bölüm)"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Hiç ^orange;Yağ^reset; buldun mu? Buralarda epey nadirdir. Duyduğuma göre ^orange;Mısır^reset; ya da ^orange;Kemik^reset; malzemesini ^orange;El Değirmenine^reset; atarsan pek uğraşmadan elde edebilirsin."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Yağ pek çok işe yarar ama o ^orange;Yağı^reset; bambaşka bir iş için saklamanı öneririm. Daha fazlasını öğrenmek için benimle tekrar konuş."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;5 Yağ^reset; elde et ve ^green;Welchie^reset; ile konuş."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Homestead III (pt 1)"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Yerleşim III (1. Bölüm)"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Ya ever come across ^orange;Oil^reset;? It's quite rare round these 'ere parts. I hear ye kin get some without much hassle by tossin ^orange;Corn^reset; or ^orange;Bone^reset; in a ^orange;Hand Mill^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Hiç ^orange;Yağ^reset; buldun mu? Buralarda epey nadirdir. Duyduğuma göre ^orange;Mısır^reset; ya da ^orange;Kemik^reset; malzemesini ^orange;El Değirmenine^reset; atarsan pek uğraşmadan elde edebilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Oil kin be quite useful for a number o' things, but I suggest you save that ^orange;Oil^reset; for a very different task. Talk ter me again ta learn more."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Yağ pek çok işe yarar ama o ^orange;Yağı^reset; bambaşka bir iş için saklamanı öneririm. Daha fazlasını öğrenmek için benimle tekrar konuş."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Craft some ^green;Oil^reset; and return to ^green;Welchie^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;5 Yağ^reset; elde et ve ^green;Welchie^reset; ile konuş."
+    }
+  ]
 ]

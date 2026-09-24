@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Breach Pistol"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A space pirate plasma sidearm.\n^yellow;+Bouncy and Burny^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Breach Tabancası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Uzay korsanlarına özgü bir plazma tabancası.\n^yellow;+Seker ve yakar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Breach Pistol"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Breach Tabancası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A space pirate plasma sidearm.\n^yellow;+Bouncy and Burny^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Uzay korsanlarına özgü bir plazma tabancası.\n^yellow;+Seker ve yakar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A space pirate plasma sidearm.\r\n^yellow;+Bouncy and Burny^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Uzay korsanlarına özgü bir plazma tabancası.\n^yellow;+Seker ve yakar^reset;"
+    }
+  ]
 ]

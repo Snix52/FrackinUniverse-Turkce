@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Heart"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Somebody had a heart. This was it."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kalp"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Birinin kalbi varmış. İşte buydu."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Heart"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kalp"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Somebody had a heart. This was it."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Birinin kalbi varmış. İşte buydu."
+    }
+  ]
 ]

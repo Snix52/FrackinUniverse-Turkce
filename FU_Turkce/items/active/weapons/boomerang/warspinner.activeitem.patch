@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Warspinner"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Sharpened edges make this boomerang cut foes deeply.\n^cyan;Inflicts bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Savaş Çarkı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Keskin kenarları düşmanlarda derin yaralar açar.\n^cyan;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Warspinner"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Savaş Çarkı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sharpened edges make this boomerang cut foes deeply.\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Keskin kenarları düşmanlarda derin yaralar açar.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Sharpened edges make this boomerang cut foes deeply.\r\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Keskin kenarları düşmanlarda derin yaralar açar.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Strange fleshy stuff."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "What in the...just being near this is uncomfortable."
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tuhaf, etsi bir doku."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Bu da ne... Yakınında durmak bile huzursuz ediyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Strange fleshy stuff."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tuhaf, etsi bir doku."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "What in the...just being near this is uncomfortable."
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Bu da ne... Yakınında durmak bile huzursuz ediyor."
+    }
+  ]
 ]

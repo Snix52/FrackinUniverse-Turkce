@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Master's Longsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Forged from carbon. Bolstered by rage.\n^cyan;Inflicts bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ustanın Uzun Kılıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Karbondan dövülmüş. Öfkeyle sağlamlaştırılmış.\n^cyan;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Master's Longsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ustanın Uzun Kılıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Forged from carbon. Bolstered by rage.\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Karbondan dövülmüş. Öfkeyle sağlamlaştırılmış.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Forged from carbon. Bolstered by rage.\r\n^cyan;Inflicts bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Karbondan dövülmüş. Öfkeyle sağlamlaştırılmış.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

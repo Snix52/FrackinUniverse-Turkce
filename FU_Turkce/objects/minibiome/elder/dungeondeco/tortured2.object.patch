@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It seems this poor person was vivisected."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dead scientist"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Görünüşe göre bu zavallı kişi canlı canlı kesilip incelenmiş."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ölü bilim insanı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It seems this poor person was vivisected."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Görünüşe göre bu zavallı kişi canlı canlı kesilip incelenmiş."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dead scientist"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ölü bilim insanı"
+    }
+  ]
 ]

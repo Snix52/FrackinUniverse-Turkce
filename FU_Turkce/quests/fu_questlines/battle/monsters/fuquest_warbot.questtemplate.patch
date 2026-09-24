@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Warbot [BOSS]"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "On ^orange;Cyber Spheres^reset; or ^orange;Wasteland^reset; planets there often walk dangerous battle machines known as ^orange;War Bots^reset;. Take one down, and I'll pay you well."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Good job. The fact that you survived that firepower says much of your prowess in battle. I would not want to mess with you."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Hyper Targeting Chip^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Savaş Robotu [PATRON]"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^orange;Siberküre^reset; ya da ^orange;Çorak Dünya^reset; türü gezegenlerde ^orange;Savaş Robotu^reset; denen tehlikeli savaş makinelerine sıkça rastlanır. Birini devirirsen sana iyi ödeme yaparım."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "İyi iş. O ateş gücünden sağ çıkman savaşta ne kadar iyi olduğunu gösteriyor. Seninle kapışmak istemem."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Hiper Hedefleme Çipini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Warbot [BOSS]"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Savaş Robotu [PATRON]"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "On ^orange;Cyber Spheres^reset; or ^orange;Wasteland^reset; planets there often walk dangerous battle machines known as ^orange;War Bots^reset;. Take one down, and I'll pay you well."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^orange;Siberküre^reset; ya da ^orange;Çorak Dünya^reset; türü gezegenlerde ^orange;Savaş Robotu^reset; denen tehlikeli savaş makinelerine sıkça rastlanır. Birini devirirsen sana iyi ödeme yaparım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Good job. The fact that you survived that firepower says much of your prowess in battle. I would not want to mess with you."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "İyi iş. O ateş gücünden sağ çıkman savaşta ne kadar iyi olduğunu gösteriyor. Seninle kapışmak istemem."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Hyper Targeting Chip^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Hiper Hedefleme Çipini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

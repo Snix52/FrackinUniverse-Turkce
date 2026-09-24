@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Aethercreep"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;Weight : 1g^reset;^green;Weight : 1g^reset; ^red;Narcotic.\n^white; Doubles health, but halves energy reserve.\n^blue;Madness Gain^reset; 3\n"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Aethercreep"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;Ağırlık: 1 g^reset;^green;Ağırlık: 1 g^reset; ^red;Narkotik.\n^white; Sağlığı iki katına çıkarır ama enerji rezervini yarıya indirir.\n^blue;Delilik Kazanımı^reset; 3\n"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Aethercreep"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Aethercreep"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;Weight : 1g^reset;^green;Weight : 1g^reset; ^red;Narcotic.\n^white; Doubles health, but halves energy reserve.\n^blue;Madness Gain^reset; 3\n"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;Ağırlık: 1 g^reset;^green;Ağırlık: 1 g^reset; ^red;Narkotik.\n^white; Sağlığı iki katına çıkarır ama enerji rezervini yarıya indirir.\n^blue;Delilik Kazanımı^reset; 3\n"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;Weight : 1g^reset;^green;Weight : 1g^reset; ^red;Narcotic.\r\n^white; Doubles health, but halves energy reserve.\r\n^blue;Madness Gain^reset; 3\r\n"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;Ağırlık: 1 g^reset;^green;Ağırlık: 1 g^reset; ^red;Narkotik.\n^white; Sağlığı iki katına çıkarır ama enerji rezervini yarıya indirir.\n^blue;Delilik Kazanımı^reset; 3\n"
+    }
+  ]
 ]

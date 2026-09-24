@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Flowers"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Bees won't be happy without flowers to pollinate. Get a ^orange;Red Flower^reset; to plant next to your apiary and your bees will get going!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Pretty much any flower will do, by the way. And be patient. Bees take time to breed, and they only ^green;'do it'^reset; when there are flowers and sun. ^orange;Some plants^reset; are more appealing to certain species."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Çiçekler"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Arılar, tozlaştıracak çiçek olmadan mutlu olmaz. Arılığın yanına dikmek için bir ^orange;Kırmızı Çiçek^reset; edin ki arıların işe koyulsun!"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu arada hemen her çiçek iş görür. Sabırlı ol. Arıların üremesi zaman alır ve yalnızca ortada çiçek ve güneş varken ^green;'işi hallederler'^reset;. ^orange;Bazı bitkiler^reset; belirli türlere daha çekici gelir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Flowers"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Çiçekler"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Bees won't be happy without flowers to pollinate. Get a ^orange;Red Flower^reset; to plant next to your apiary and your bees will get going!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Arılar, tozlaştıracak çiçek olmadan mutlu olmaz. Arılığın yanına dikmek için bir ^orange;Kırmızı Çiçek^reset; edin ki arıların işe koyulsun!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Pretty much any flower will do, by the way. And be patient. Bees take time to breed, and they only ^green;'do it'^reset; when there are flowers and sun. ^orange;Some plants^reset; are more appealing to certain species."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu arada hemen her çiçek iş görür. Sabırlı ol. Arıların üremesi zaman alır ve yalnızca ortada çiçek ve güneş varken ^green;'işi hallederler'^reset;. ^orange;Bazı bitkiler^reset; belirli türlere daha çekici gelir."
+    }
+  ]
 ]

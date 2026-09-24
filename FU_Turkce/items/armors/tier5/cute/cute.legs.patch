@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cute Leggings"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Cute Weapons: Damage x^green;1.2^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Shadow Taint"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sevimli Tayt"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Sevimli Silahlar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gölge Lekesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cute Leggings"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sevimli Tayt"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Cute Weapons: Damage x^green;1.2^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Shadow Taint"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Sevimli Silahlar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gölge Lekesi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\r\n^yellow;^reset; Cute Weapons: Damage x^green;1.2^reset;\r\n^yellow;^reset; ^cyan;Immune^reset;: Shadow Taint"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Sevimli Silahlar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Gölge Lekesi"
+    }
+  ]
 ]

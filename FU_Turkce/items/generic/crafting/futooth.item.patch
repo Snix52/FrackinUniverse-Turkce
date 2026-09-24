@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Tooth"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A tooth."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Diş"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir diş."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Tooth"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Diş"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A tooth."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir diş."
+    }
+  ]
 ]

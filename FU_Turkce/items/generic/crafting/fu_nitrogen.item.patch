@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Nitrogen"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Pure diatomic ^gray;N2^reset; nitrogen gas."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Azot"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Saf, iki atomlu ^gray;N2^reset; azot gazı."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Nitrogen"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Azot"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Pure diatomic ^gray;N2^reset; nitrogen gas."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Saf, iki atomlu ^gray;N2^reset; azot gazı."
+    }
+  ]
 ]

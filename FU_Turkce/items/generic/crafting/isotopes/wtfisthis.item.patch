@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Unknown Artifact^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "You have absolutely no idea what this could be. But the language imprints itself in your brain, revealing secrets."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Bilinmeyen Artefakt^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bunun ne olabileceği hakkında hiçbir fikrin yok. Ama üzerindeki dil zihnine kazınıp sırları açığa çıkarıyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Unknown Artifact^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Bilinmeyen Artefakt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "You have absolutely no idea what this could be. But the language imprints itself in your brain, revealing secrets."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bunun ne olabileceği hakkında hiçbir fikrin yok. Ama üzerindeki dil zihnine kazınıp sırları açığa çıkarıyor."
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Forest of Fae"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "The cultists' map shows a certain beautiful forest planet which they're trying to corrupt. There's also a whole load of loot stored there, too. I could try and crash their party..."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "With the cultists gone, hopefully the forest will recover in time. Either way, my job here is done."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Stop the cultists from corrupting the Forest of Fae."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Fae Ormanı"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Tarikatçıların haritası, yozlaştırmaya çalıştıkları güzel bir orman gezegenini gösteriyor. Üstelik orada yığınla ganimet saklamışlar. Partilerine davetsiz katılabilirim..."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Tarikatçılar ortadan kalktı. Umarım orman zamanla toparlanır. Her neyse, buradaki işim bitti."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Tarikatçıların Fae Ormanı'nı yozlaştırmasını engelle."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Forest of Fae"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Fae Ormanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "The cultists' map shows a certain beautiful forest planet which they're trying to corrupt. There's also a whole load of loot stored there, too. I could try and crash their party..."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Tarikatçıların haritası, yozlaştırmaya çalıştıkları güzel bir orman gezegenini gösteriyor. Üstelik orada yığınla ganimet saklamışlar. Partilerine davetsiz katılabilirim..."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "With the cultists gone, hopefully the forest will recover in time. Either way, my job here is done."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Tarikatçılar ortadan kalktı. Umarım orman zamanla toparlanır. Her neyse, buradaki işim bitti."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Stop the cultists from corrupting the Forest of Fae."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Tarikatçıların Fae Ormanı'nı yozlaştırmasını engelle."
+    }
+  ]
 ]

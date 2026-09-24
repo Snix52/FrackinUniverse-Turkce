@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-24T17:29:27.193198+00:00",
-  "workflow_run_id": "36033424886",
-  "source_commit": "789020abd971df6a3d04b0973b38310424d6c72d",
-  "translation_source_commit": "789020abd971df6a3d04b0973b38310424d6c72d",
-  "translation_version": "0.63.1-beta",
+  "generated_at_utc": "2026-09-24T18:09:09.254050+00:00",
+  "workflow_run_id": "36038017901",
+  "source_commit": "bf0f5231e62132e078468f67f1e4175eea85af04",
+  "translation_source_commit": "bf0f5231e62132e078468f67f1e4175eea85af04",
+  "translation_version": "0.63.2-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
@@ -15,16 +15,16 @@
     "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.63.1_Beta.zip",
-    "bytes": 2267182,
-    "sha256": "4143f13c7dbc38f79f5f6f15711aeb3dff22eb6b1e01889ba5949d1ec80fbe04",
-    "git_blob_sha": "2a6d675d60a25ebba99de44f47cfebb7e3908e9c",
+    "path": "dist/FU_Turkce_v0.63.2_Beta.zip",
+    "bytes": 2343573,
+    "sha256": "6a0a052873764b1a13f324e4d46b5e6ba38467373ea30d29f9caf46b7f245515",
+    "git_blob_sha": "cdf14aeec862a77112bd09e8e415b0ec64f303a8",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "e5f57a6371f2ee799e4fd23f9a76f0db25c36e6440ac2340978f963a7167bd8c",
-  "build_inputs_sha256": "ff3ba615ca6610e5a70aa60fce0d5e539dbe024d9c88a9183d9acbcf16271b7a",
-  "catalog_sha256": "7e8c6780184fd07a4cb493d583166d0e094253984b20b143cd3191d53b6bc91b",
+  "install_tree_sha256": "a9230beb1c7fd52a23148cf739232d62c0d5a7fc9383adc792500edbb8c3eadd",
+  "build_inputs_sha256": "f9f0cbba257ba794f9809a06b3da5af71761c46e4053b5d14da17fb9f9f059fd",
+  "catalog_sha256": "e5ab501985dab04f0c2f7c2c98670a439a20b7abae4b9ee5fdb3b0c4439a2726",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -995,7 +995,8 @@
       "asset": "objects/kheAA/kheAA_containerLink/kheAA_containerLink.object",
       "pointer": "/description",
       "qa": {
-        "raw_source_value_guard": true
+        "raw_source_value_guard": true,
+        "source_newline_pattern": "CL"
       }
     },
     {
@@ -1062,7 +1063,8 @@
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "items/liquids/oil.liqitem.patch"
       }
     },
     {
@@ -1072,7 +1074,8 @@
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "objects/upgrade/techconsole/techconsole.object.patch"
       }
     },
     {
@@ -1416,7 +1419,8 @@
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "items/active/unsorted/bugnet/bugnet.activeitem.patch"
       }
     },
     {
@@ -1513,7 +1517,8 @@
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "items/materials/gravel.matitem.patch"
       }
     },
     {
@@ -1572,6 +1577,14 @@
       "qa": {
         "raw_source_value_guard": true,
         "reason": "Pinned FU assetindeki gerçek boosterchest envanter adıyla exact eşleşir."
+      }
+    },
+    {
+      "asset": "items/generic/produce/orange.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/produce/orange.consumable.patch"
       }
     },
     {
@@ -1779,7 +1792,8 @@
         "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
         "external_path": "assets/packed/items/generic/crafting/moltencore.item",
         "external_blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376",
-        "reason": "Shoggoth görev hedefini gerçek vanilla envanter adıyla birebir eşlemek için exact harici kaynak doğrulaması."
+        "reason": "Shoggoth görev hedefinin vanilla tabanı doğrulandı; FU yaması açıklamayı değiştirir.",
+        "source_patch": "items/generic/crafting/moltencore.item.patch"
       }
     },
     {
@@ -1802,6 +1816,20 @@
       "qa": {
         "allow_tab_fix": true,
         "tab_fix_reason": "Kaynakta iki cümle arasında literal sekme var; Türkçe normal cümle aralığı kullanır."
+      }
+    },
+    {
+      "asset": "items/active/weapons/ranged/unique/futriangliumpistol.activeitem",
+      "pointer": "/description",
+      "qa": {
+        "source_newline_pattern": "LC"
+      }
+    },
+    {
+      "asset": "items/armors/tier7/warangel/warangel.head",
+      "pointer": "/description",
+      "qa": {
+        "source_newline_pattern": "LCCC"
       }
     },
     {

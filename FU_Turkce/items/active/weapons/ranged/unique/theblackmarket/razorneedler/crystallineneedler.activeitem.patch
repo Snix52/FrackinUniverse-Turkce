@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^cyan;Crystalline Needler^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Launch dangerous (but fun) shards of crystal at enemies.\n^cyan;Counts as Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^cyan;Kristal İğneleyici^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Düşmanlara tehlikeli (ama eğlenceli) kristal parçaları fırlatır.\n^cyan;Av Silahı sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^cyan;Crystalline Needler^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^cyan;Kristal İğneleyici^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Launch dangerous (but fun) shards of crystal at enemies.\n^cyan;Counts as Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanlara tehlikeli (ama eğlenceli) kristal parçaları fırlatır.\n^cyan;Av Silahı sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Launch dangerous (but fun) shards of crystal at enemies.\r\n^cyan;Counts as Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanlara tehlikeli (ama eğlenceli) kristal parçaları fırlatır.\n^cyan;Av Silahı sayılır^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "RADIOACTIVE! DO NOT EAT!\n^blue;+^white;4 ^blue;Fuel^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Solarium Honeycomb"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "RADYOAKTİF! YEME!\n^blue;+^white;4 ^blue;Yakıt^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Solarium Bal Peteği"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "RADIOACTIVE! DO NOT EAT!\n^blue;+^white;4 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "RADYOAKTİF! YEME!\n^blue;+^white;4 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "RADIOACTIVE! DO NOT EAT!\r\n^blue;+^white;4 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "RADYOAKTİF! YEME!\n^blue;+^white;4 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Solarium Honeycomb"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Solarium Bal Peteği"
+    }
+  ]
 ]

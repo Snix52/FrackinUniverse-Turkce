@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Pressure, Extreme Heat/Cold, Mild Radiation/Poison, Proto, Lava/L.Nitro"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Chitron Mech Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Basınç, Aşırı Sıcaklık/Soğuk, Hafif Radyasyon/Zehir, Proto, Lav/L.Nitro"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Chitron Mech Gövdesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Pressure, Extreme Heat/Cold, Mild Radiation/Poison, Proto, Lava/L.Nitro"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Basınç, Aşırı Sıcaklık/Soğuk, Hafif Radyasyon/Zehir, Proto, Lav/L.Nitro"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Chitron Mech Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Chitron Mech Gövdesi"
+    }
+  ]
 ]

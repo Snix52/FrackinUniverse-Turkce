@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Poison EPP III"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Gives +60% Poison Resist. Use it on planets with ^red;extreme poison levels^reset;. Provides air."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zehir EPP'si III"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "+60% Zehir Direnci sağlar. ^red;Aşırı zehir düzeyine^reset; sahip gezegenlerde kullanılır. Solunabilir hava sağlar."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Poison EPP III"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zehir EPP'si III"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Gives +60% Poison Resist. Use it on planets with ^red;extreme poison levels^reset;. Provides air."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "+60% Zehir Direnci sağlar. ^red;Aşırı zehir düzeyine^reset; sahip gezegenlerde kullanılır. Solunabilir hava sağlar."
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Dark Stained Glass"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Do you have a ^orange;Blast Furnace^reset; yet? If so, try to smelt ^orange;Obsidian^reset; and bring me the results. I will be most grateful for your assistance."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Fantastic work! Truly amazing. Thank you for the help. As thanks, here's payment for your troubles."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Black Glass^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Koyu Renkli Cam"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bir ^orange;Yüksek Fırının^reset; var mı? Varsa içinde ^orange;Obsidiyen^reset; erit ve çıkan Siyah Camı bana getir. Yardımın için minnettar kalırım."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Harika iş! Gerçekten etkileyici. Yardımın için teşekkürler. Al, zahmetinin karşılığı."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Siyah Camı^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Dark Stained Glass"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Koyu Renkli Cam"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Do you have a ^orange;Blast Furnace^reset; yet? If so, try to smelt ^orange;Obsidian^reset; and bring me the results. I will be most grateful for your assistance."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bir ^orange;Yüksek Fırının^reset; var mı? Varsa içinde ^orange;Obsidiyen^reset; erit ve çıkan Siyah Camı bana getir. Yardımın için minnettar kalırım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Fantastic work! Truly amazing. Thank you for the help. As thanks, here's payment for your troubles."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Harika iş! Gerçekten etkileyici. Yardımın için teşekkürler. Al, zahmetinin karşılığı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Black Glass^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Siyah Camı^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

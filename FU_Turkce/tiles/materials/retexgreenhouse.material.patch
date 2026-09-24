@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A greenhouse to let the sun through."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Greenhouse"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Güneş ışığını içeri alan bir sera."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sera"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A greenhouse to let the sun through."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Güneş ışığını içeri alan bir sera."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Greenhouse"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sera"
+    }
+  ]
 ]

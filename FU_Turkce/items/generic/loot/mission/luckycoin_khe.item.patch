@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A rare, ancient lucky coin. Somehow, it has been gnawed and is no longer recognizable."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Gnawed Coin"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Nadir ve kadim bir uğur sikkesi. Bir şekilde kemirilmiş; artık tanınmıyor."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kemirilmiş Sikke"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A rare, ancient lucky coin. Somehow, it has been gnawed and is no longer recognizable."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Nadir ve kadim bir uğur sikkesi. Bir şekilde kemirilmiş; artık tanınmıyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gnawed Coin"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kemirilmiş Sikke"
+    }
+  ]
 ]

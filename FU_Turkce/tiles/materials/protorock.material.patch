@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This is most...unusual."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Elder Stone"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu gerçekten... çok sıra dışı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kadim Taş"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This is most...unusual."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu gerçekten... çok sıra dışı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Elder Stone"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kadim Taş"
+    }
+  ]
 ]

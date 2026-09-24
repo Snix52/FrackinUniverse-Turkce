@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Phase Blade"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Shiny and perfect.\n^cyan;Inflicts Bleeding^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Faz Bıçağı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Parlak ve mükemmel.\n^cyan;Kanamaya yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Phase Blade"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Faz Bıçağı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shiny and perfect.\n^cyan;Inflicts Bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Parlak ve mükemmel.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shiny and perfect.\r\n^cyan;Inflicts Bleeding^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Parlak ve mükemmel.\n^cyan;Kanamaya yol açar^reset;"
+    }
+  ]
 ]

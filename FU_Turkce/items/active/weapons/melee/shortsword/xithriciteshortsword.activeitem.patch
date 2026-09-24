@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cosmic Shortsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Murder with cosmic power\n^cyan;Inflicts Minor Vulnerability^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kozmik Kısa Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kozmik güçle katlet.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cosmic Shortsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kozmik Kısa Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Murder with cosmic power\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kozmik güçle katlet.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Murder with cosmic power\r\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kozmik güçle katlet.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ]
 ]

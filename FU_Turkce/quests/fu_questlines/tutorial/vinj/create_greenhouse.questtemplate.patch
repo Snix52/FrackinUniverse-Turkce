@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Greenhouse"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "With a ^orange;Greenhouse^reset; in your home you can craft all sorts of plants that bestow ^green;fantastic buffs and abilities^reset; to make your life easier. Build a ^orange;Greenhouse^orange; now. You'll need to ^orange;Research^reset; into ^orange;Agriculture^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Don't forget that certain plants are ^green;almost essential^reset; for a viable gene-research laboratory. At the very least, you'll want ^orange;Mutavisk Seeds^reset; and ^orange;Bracken Tree Seeds^reset; for the resources they produce."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Sera"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Evindeki bir ^orange;Serada^reset;, hayatını kolaylaştıracak ^green;harika güçlendirmeler ve yetenekler^reset; sağlayan bitkiler üretebilirsin. Bir ^orange;Sera^reset; kur. Bunun için ^orange;Araştırma^reset; menüsündeki ^orange;Tarım^reset; ağacında ilerle."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bazı bitkilerin, işlevsel bir gen araştırma laboratuvarı için ^green;neredeyse vazgeçilmez^reset; olduğunu unutma. Sağladıkları kaynaklar için en azından ^orange;Mutavisk Tohumları^reset; ve ^orange;Bracken Ağacı Tohumları^reset; edinmelisin."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;Serayı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Greenhouse"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Sera"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "With a ^orange;Greenhouse^reset; in your home you can craft all sorts of plants that bestow ^green;fantastic buffs and abilities^reset; to make your life easier. Build a ^orange;Greenhouse^orange; now. You'll need to ^orange;Research^reset; into ^orange;Agriculture^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Evindeki bir ^orange;Serada^reset;, hayatını kolaylaştıracak ^green;harika güçlendirmeler ve yetenekler^reset; sağlayan bitkiler üretebilirsin. Bir ^orange;Sera^reset; kur. Bunun için ^orange;Araştırma^reset; menüsündeki ^orange;Tarım^reset; ağacında ilerle."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Don't forget that certain plants are ^green;almost essential^reset; for a viable gene-research laboratory. At the very least, you'll want ^orange;Mutavisk Seeds^reset; and ^orange;Bracken Tree Seeds^reset; for the resources they produce."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bazı bitkilerin, işlevsel bir gen araştırma laboratuvarı için ^green;neredeyse vazgeçilmez^reset; olduğunu unutma. Sağladıkları kaynaklar için en azından ^orange;Mutavisk Tohumları^reset; ve ^orange;Bracken Ağacı Tohumları^reset; edinmelisin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;Serayı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

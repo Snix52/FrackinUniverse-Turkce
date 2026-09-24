@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Primary^reset;: Mech Assembly\n^yellow;Secondary^reset;: Mech Fuel"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Mech Tablet"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Birincil^reset;: Mech Montajı\n^yellow;İkincil^reset;: Mech Yakıtını Ayarla"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mech Tableti"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Primary^reset;: Mech Assembly\n^yellow;Secondary^reset;: Mech Fuel"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Birincil^reset;: Mech Montajı\n^yellow;İkincil^reset;: Mech Yakıtını Ayarla"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Primary^reset;: Mech Assembly\r\n^yellow;Secondary^reset;: Mech Fuel"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Birincil^reset;: Mech Montajı\n^yellow;İkincil^reset;: Mech Yakıtını Ayarla"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Mech Tablet"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mech Tableti"
+    }
+  ]
 ]

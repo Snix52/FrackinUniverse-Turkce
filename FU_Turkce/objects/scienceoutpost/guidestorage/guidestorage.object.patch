@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It should be stocked full of science journals and lab reports."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Lab Bookcase"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bilim dergileri ve laboratuvar raporlarıyla dolu olmalı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Laboratuvar Kitaplığı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It should be stocked full of science journals and lab reports."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bilim dergileri ve laboratuvar raporlarıyla dolu olmalı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Lab Bookcase"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Laboratuvar Kitaplığı"
+    }
+  ]
 ]

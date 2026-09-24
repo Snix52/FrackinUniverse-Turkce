@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "The Science Outpost"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "^orange;Vinalisj^reset; has just informed me of a place he operates. This ^orange;Science Outpost^reset; sounds worth visiting. I've marked the location ^green;in my ships SAIL^reset; so I can teleport there."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "^orange;Vinalisj^reset; has just informed me of a place he operates. This ^orange;Science Outpost^reset; sounds worth visiting. I've marked the location ^green;in my ships SAIL^reset; so I can teleport there."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Bilim Karakolu"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^orange;Vinalisj^reset; bana işlettiği bir tesisten söz etti. Bu ^orange;Bilim Karakolu^reset; görülmeye değer gibi duruyor. Oraya ışınlanabilmek için konumunu ^green;gemimin SAIL sistemine^reset; kaydettim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^orange;Vinalisj^reset; bana işlettiği bir tesisten söz etti. Bu ^orange;Bilim Karakolu^reset; görülmeye değer gibi duruyor. Oraya ışınlanabilmek için konumunu ^green;gemimin SAIL sistemine^reset; kaydettim."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "The Science Outpost"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Bilim Karakolu"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "^orange;Vinalisj^reset; has just informed me of a place he operates. This ^orange;Science Outpost^reset; sounds worth visiting. I've marked the location ^green;in my ships SAIL^reset; so I can teleport there."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^orange;Vinalisj^reset; bana işlettiği bir tesisten söz etti. Bu ^orange;Bilim Karakolu^reset; görülmeye değer gibi duruyor. Oraya ışınlanabilmek için konumunu ^green;gemimin SAIL sistemine^reset; kaydettim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "^orange;Vinalisj^reset; has just informed me of a place he operates. This ^orange;Science Outpost^reset; sounds worth visiting. I've marked the location ^green;in my ships SAIL^reset; so I can teleport there."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^orange;Vinalisj^reset; bana işlettiği bir tesisten söz etti. Bu ^orange;Bilim Karakolu^reset; görülmeye değer gibi duruyor. Oraya ışınlanabilmek için konumunu ^green;gemimin SAIL sistemine^reset; kaydettim."
+    }
+  ]
 ]

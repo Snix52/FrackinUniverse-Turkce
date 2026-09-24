@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A cute platform"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cute Platform"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Sevimli bir platform."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sevimli Platform"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cute platform"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Sevimli bir platform."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cute Platform"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sevimli Platform"
+    }
+  ]
 ]

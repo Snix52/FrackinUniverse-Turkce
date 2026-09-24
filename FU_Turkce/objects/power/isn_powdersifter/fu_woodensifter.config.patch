@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/clear/caption",
-    "value": "Take all"
-  },
-  {
-    "op": "test",
-    "path": "/gui/inputLabel/value",
-    "value": "Input"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/clear/caption",
-    "value": "Tümünü Al"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/inputLabel/value",
-    "value": "Girdi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/clear/caption",
+      "value": "Take all"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/clear/caption",
+      "value": "Tümünü Al"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/inputLabel/value",
+      "value": "Input"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/inputLabel/value",
+      "value": "Girdi"
+    }
+  ]
 ]

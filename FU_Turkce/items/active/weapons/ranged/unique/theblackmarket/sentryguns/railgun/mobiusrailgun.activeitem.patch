@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Sentry Railgun"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This beast absolutely murders the enemy!\n^yellow;Inflicts frozen-fire^reset;\n^cyan;Summons Assault Drones^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Nöbetçi Raylı Tüfek"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu canavar düşmanı resmen katleder!\n^yellow;Donmuş ateşe yol açar^reset;\n^cyan;Taarruz Dronları çağırır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Sentry Railgun"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Nöbetçi Raylı Tüfek"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This beast absolutely murders the enemy!\n^yellow;Inflicts frozen-fire^reset;\n^cyan;Summons Assault Drones^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu canavar düşmanı resmen katleder!\n^yellow;Donmuş ateşe yol açar^reset;\n^cyan;Taarruz Dronları çağırır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This beast absolutely murders the enemy!\r\n^yellow;Inflicts frozen-fire^reset;\r\n^cyan;Summons Assault Drones^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu canavar düşmanı resmen katleder!\n^yellow;Donmuş ateşe yol açar^reset;\n^cyan;Taarruz Dronları çağırır^reset;"
+    }
+  ]
 ]

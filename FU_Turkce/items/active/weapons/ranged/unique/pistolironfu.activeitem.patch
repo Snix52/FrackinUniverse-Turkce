@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Iron Magnum"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Demir Magnum"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Iron Magnum"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Demir Magnum"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fires high-caliber rounds.\n^yellow;High damage rounds.^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fires high-caliber rounds.\r\n^yellow;High damage rounds.^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler.^reset;"
+    }
+  ]
 ]

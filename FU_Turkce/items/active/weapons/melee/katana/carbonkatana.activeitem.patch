@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Carbon Katana"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A lethal edge cuts foes deep.\n^cyan;Inflicts bleeding^reset;\n^yellow;6 hit combo^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Karbon Katana"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ölümcül ağzı düşmanlarda derin yaralar açar.\n^cyan;Kanamaya yol açar^reset;\n^yellow;6 vuruşluk kombo^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Carbon Katana"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Karbon Katana"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A lethal edge cuts foes deep.\n^cyan;Inflicts bleeding^reset;\n^yellow;6 hit combo^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ölümcül ağzı düşmanlarda derin yaralar açar.\n^cyan;Kanamaya yol açar^reset;\n^yellow;6 vuruşluk kombo^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A lethal edge cuts foes deep.\r\n^cyan;Inflicts bleeding^reset;\r\n^yellow;6 hit combo^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ölümcül ağzı düşmanlarda derin yaralar açar.\n^cyan;Kanamaya yol açar^reset;\n^yellow;6 vuruşluk kombo^reset;"
+    }
+  ]
 ]

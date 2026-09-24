@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A large sensor that displays power levels flowing into it. This one goes up to 9999."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^cyan;Large Power Sensor^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İçinden geçen güç seviyesini gösteren büyük bir sensör. 9999'a kadar ölçer."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^cyan;Büyük Güç Sensörü^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A large sensor that displays power levels flowing into it. This one goes up to 9999."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İçinden geçen güç seviyesini gösteren büyük bir sensör. 9999'a kadar ölçer."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^cyan;Large Power Sensor^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^cyan;Büyük Güç Sensörü^reset;"
+    }
+  ]
 ]

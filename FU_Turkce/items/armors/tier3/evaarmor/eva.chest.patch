@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "E.V.A Suit"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Moderate Radiation, Radiation Burn, Pus, Liq. Nitrogen"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "E.V.A. Giysisi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Orta Dereceli Radyasyon, Radyasyon Yanığı, İrin, Sıvı Azot"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "E.V.A Suit"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "E.V.A. Giysisi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Moderate Radiation, Radiation Burn, Pus, Liq. Nitrogen"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Orta Dereceli Radyasyon, Radyasyon Yanığı, İrin, Sıvı Azot"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;\r\n^yellow;^reset; ^cyan;Immune^reset;: Moderate Radiation, Radiation Burn, Pus, Liq. Nitrogen"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Orta Dereceli Radyasyon, Radyasyon Yanığı, İrin, Sıvı Azot"
+    }
+  ]
 ]

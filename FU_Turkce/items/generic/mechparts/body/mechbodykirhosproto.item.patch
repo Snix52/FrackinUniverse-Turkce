@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Tropical/Desert Heat, Mild Poison, Chill\n^cyan;+20%^reset; Fuel Boost"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Kirhosi Prototype Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Tropikal/Çöl Sıcaklık, Hafif Zehir, Ayaz\n^cyan;+20%^reset; Yakıt Desteği"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kirhosi Prototip Gövde"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Tropical/Desert Heat, Mild Poison, Chill\n^cyan;+20%^reset; Fuel Boost"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Tropikal/Çöl Sıcaklık, Hafif Zehir, Ayaz\n^cyan;+20%^reset; Yakıt Desteği"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Tropical/Desert Heat, Mild Poison, Chill\r\n^cyan;+20%^reset; Fuel Boost"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Tropikal/Çöl Sıcaklık, Hafif Zehir, Ayaz\n^cyan;+20%^reset; Yakıt Desteği"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Kirhosi Prototype Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kirhosi Prototip Gövde"
+    }
+  ]
 ]

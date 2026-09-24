@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Metal, darkly."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dark Metal Panels"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Metal. Kasvetli."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Koyu Metal Paneller"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Metal, darkly."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Metal. Kasvetli."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dark Metal Panels"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Koyu Metal Paneller"
+    }
+  ]
 ]

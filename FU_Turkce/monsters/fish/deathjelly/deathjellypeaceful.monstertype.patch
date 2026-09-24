@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Relatively harmless."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Jelli"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Görece zararsız."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Jelli"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Relatively harmless."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Görece zararsız."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Jelli"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Jelli"
+    }
+  ]
 ]

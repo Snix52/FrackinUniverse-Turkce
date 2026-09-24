@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A small fast-running bird that feeds on insects and fruit."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Roadrunner"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Böcekler ve meyvelerle beslenen, hızlı koşan küçük bir kuş."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yol Koşucusu"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A small fast-running bird that feeds on insects and fruit."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Böcekler ve meyvelerle beslenen, hızlı koşan küçük bir kuş."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Roadrunner"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yol Koşucusu"
+    }
+  ]
 ]

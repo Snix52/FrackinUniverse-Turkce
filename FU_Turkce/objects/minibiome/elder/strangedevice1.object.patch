@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This strange machine appears to be...actually, I can't even imagine what is within."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Strange Device"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu tuhaf makine... aslında içinde ne olduğunu hayal bile edemiyorum."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tuhaf Aygıt"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This strange machine appears to be...actually, I can't even imagine what is within."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu tuhaf makine... aslında içinde ne olduğunu hayal bile edemiyorum."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Strange Device"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tuhaf Aygıt"
+    }
+  ]
 ]

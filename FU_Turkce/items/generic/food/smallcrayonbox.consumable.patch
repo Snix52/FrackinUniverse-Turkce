@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Are... Are you really going to eat this?"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Small Crayon Box"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Gerçekten bunu yiyecek misin?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Küçük Boya Kalemi Kutusu"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Are... Are you really going to eat this?"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçekten bunu yiyecek misin?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Small Crayon Box"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Küçük Boya Kalemi Kutusu"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Vengeance"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Absolutely brutal, but slow firing.\n^cyan;High-incendiary rounds^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "İntikam"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Son derece acımasızdır ama yavaş ateş eder.\n^cyan;Yüksek derecede yanıcı mermiler^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Vengeance"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "İntikam"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Absolutely brutal, but slow firing.\n^cyan;High-incendiary rounds^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Son derece acımasızdır ama yavaş ateş eder.\n^cyan;Yüksek derecede yanıcı mermiler^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Absolutely brutal, but slow firing.\r\n^cyan;High-incendiary rounds^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Son derece acımasızdır ama yavaş ateş eder.\n^cyan;Yüksek derecede yanıcı mermiler^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Spacepunk Duster"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Oxygen x^green;30^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Spacepunk Paltosu"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Oksijen x^green;30^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Spacepunk Duster"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Spacepunk Paltosu"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Oxygen x^green;30^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Oksijen x^green;30^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\r\n^yellow;^reset; Oxygen x^green;30^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Oksijen x^green;30^reset;"
+    }
+  ]
 ]

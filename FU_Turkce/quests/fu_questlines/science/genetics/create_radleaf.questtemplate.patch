@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Rad Leaves"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I'm trying to study this material but I have no radiation protection. Specifically, I would like some ^orange;Rad Leaf^reset; to ingest. Care to get me some?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "It never hurts to help! And since you helped me, I'll help you. Here's a ^green;big bag of pixels^reset;!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the 3 ^orange;Rad Leaf^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Radyasyon Yaprakları"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bu malzemeyi incelemeye çalışıyorum ama radyasyon korumam yok. Özellikle yemek için 3 ^orange;Radyasyon Yaprağı^reset; istiyorum. Bana getirir misin?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Yardım etmekten zarar gelmez! Sen bana yardım ettin, ben de sana edeyim. Al sana ^green;koca bir Piksel kesesi^reset;!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "3 ^orange;Radyasyon Yaprağını^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Rad Leaves"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Radyasyon Yaprakları"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I'm trying to study this material but I have no radiation protection. Specifically, I would like some ^orange;Rad Leaf^reset; to ingest. Care to get me some?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bu malzemeyi incelemeye çalışıyorum ama radyasyon korumam yok. Özellikle yemek için 3 ^orange;Radyasyon Yaprağı^reset; istiyorum. Bana getirir misin?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "It never hurts to help! And since you helped me, I'll help you. Here's a ^green;big bag of pixels^reset;!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Yardım etmekten zarar gelmez! Sen bana yardım ettin, ben de sana edeyim. Al sana ^green;koca bir Piksel kesesi^reset;!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the 3 ^orange;Rad Leaf^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "3 ^orange;Radyasyon Yaprağını^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür."
+    }
+  ]
 ]

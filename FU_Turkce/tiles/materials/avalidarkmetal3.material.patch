@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Metal, darkly."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dark Metal Beam"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Metal. Kasvetli."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Koyu Metal Kiriş"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Metal, darkly."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Metal. Kasvetli."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dark Metal Beam"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Koyu Metal Kiriş"
+    }
+  ]
 ]

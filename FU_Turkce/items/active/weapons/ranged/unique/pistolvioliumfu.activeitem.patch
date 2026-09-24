@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Violium Revolver"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Fires high-caliber rounds.\n^yellow;High damage rounds^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Violium Revolver"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Violium Revolver"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Violium Revolver"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fires high-caliber rounds.\n^yellow;High damage rounds^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fires high-caliber rounds.\r\n^yellow;High damage rounds^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yüksek kalibreli mermiler ateşler.\n^yellow;Yüksek hasarlı mermiler^reset;"
+    }
+  ]
 ]

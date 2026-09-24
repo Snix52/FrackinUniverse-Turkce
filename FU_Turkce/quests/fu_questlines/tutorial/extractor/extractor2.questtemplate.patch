@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "The Extractor II"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Next, why don't you go and fetch 50 ^green;of nearly any natural tile^reset; and toss it in your extractor. ^orange;Research^reset; should be produced."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "I think maybe you're starting to see how this works. Depending on the resource you input, the outcome will vary. ^orange;Research^reset; is common, and can be stockpiled as a currency."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Gather ^green;Research^reset; from ^orange;Extraction^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Çıkarıcı II"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Şimdi gidip ^green;neredeyse herhangi bir doğal bloktan 50 tane^reset; topla ve çıkarıcına at. Sonuçta ^orange;Araştırma^reset; elde etmelisin."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Sanırım sistemin nasıl çalıştığını anlamaya başladın. İçeri koyduğun kaynağa göre çıktı değişir. ^orange;Araştırma^reset; sık elde edilir ve para birimi gibi biriktirilebilir."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Çıkarma^reset; işlemlerinden ^green;5 Araştırma^reset; elde et."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "The Extractor II"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Çıkarıcı II"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Next, why don't you go and fetch 50 ^green;of nearly any natural tile^reset; and toss it in your extractor. ^orange;Research^reset; should be produced."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Şimdi gidip ^green;neredeyse herhangi bir doğal bloktan 50 tane^reset; topla ve çıkarıcına at. Sonuçta ^orange;Araştırma^reset; elde etmelisin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "I think maybe you're starting to see how this works. Depending on the resource you input, the outcome will vary. ^orange;Research^reset; is common, and can be stockpiled as a currency."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Sanırım sistemin nasıl çalıştığını anlamaya başladın. İçeri koyduğun kaynağa göre çıktı değişir. ^orange;Araştırma^reset; sık elde edilir ve para birimi gibi biriktirilebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Gather ^green;Research^reset; from ^orange;Extraction^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Çıkarma^reset; işlemlerinden ^green;5 Araştırma^reset; elde et."
+    }
+  ]
 ]

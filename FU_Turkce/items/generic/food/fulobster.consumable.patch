@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Raw aquatic horror. ^orange;Type: Seafood^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Lobster"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Çiğ, suda yaşayan bir kâbus. ^orange;Tür: Deniz Ürünü^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Istakoz"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Raw aquatic horror. ^orange;Type: Seafood^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Çiğ, suda yaşayan bir kâbus. ^orange;Tür: Deniz Ürünü^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Lobster"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Istakoz"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This shouldn't even be possible, but there you have it. I dare you to lick one."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Toxic Beast"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bunun mümkün olmaması gerek ama işte karşında. Hadi, birini yalamaya cesaretin var mı?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zehirli Yaratık"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This shouldn't even be possible, but there you have it. I dare you to lick one."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bunun mümkün olmaması gerek ama işte karşında. Hadi, birini yalamaya cesaretin var mı?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Toxic Beast"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zehirli Yaratık"
+    }
+  ]
 ]

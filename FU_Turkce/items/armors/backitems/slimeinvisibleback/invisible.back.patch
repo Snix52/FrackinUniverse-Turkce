@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Invisible Back"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Nothing to see here."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Görünmez Sırtlık"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Burada görülecek bir şey yok."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Invisible Back"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Görünmez Sırtlık"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Nothing to see here."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Burada görülecek bir şey yok."
+    }
+  ]
 ]

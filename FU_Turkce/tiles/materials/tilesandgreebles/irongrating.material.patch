@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Some iron grating."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Iron Grating"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Demir ızgara."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Demir Izgara"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Some iron grating."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Demir ızgara."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Iron Grating"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Demir Izgara"
+    }
+  ]
 ]

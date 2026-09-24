@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/lblText/value",
-    "value": "^#b9b5b2;Place Weapon or Tool in the left slot."
-  },
-  {
-    "op": "test",
-    "path": "/gui/toggleCrafting/caption",
-    "value": "Warp"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lblText/value",
-    "value": "^#b9b5b2;Silahı veya aracı sol yuvaya yerleştir."
-  },
-  {
-    "op": "replace",
-    "path": "/gui/toggleCrafting/caption",
-    "value": "Çarpıt"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/lblText/value",
+      "value": "^#b9b5b2;Place Weapon or Tool in the left slot."
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lblText/value",
+      "value": "^#b9b5b2;Silahı veya aracı sol yuvaya yerleştir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/toggleCrafting/caption",
+      "value": "Warp"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/toggleCrafting/caption",
+      "value": "Çarpıt"
+    }
+  ]
 ]

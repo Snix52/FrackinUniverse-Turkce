@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Mount Gigant"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "An ancient Hylotl mountain is said to be cursed. Dare you investigate?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "I've traversed the entirety of this mountain. Whatever was going on here, seems like the ancients were ultimately responsible for it."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Investigate the peak of Mount Gigant."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Gigant Dağı"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Kadim bir Hylotl dağının lanetli olduğu söyleniyor. Araştırmaya cesaretin var mı?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu dağın her yerini dolaştım. Burada ne yaşandıysa arkasında Kadimler var gibi görünüyor."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Gigant Dağı'nın zirvesini araştır."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Mount Gigant"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Gigant Dağı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "An ancient Hylotl mountain is said to be cursed. Dare you investigate?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Kadim bir Hylotl dağının lanetli olduğu söyleniyor. Araştırmaya cesaretin var mı?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "I've traversed the entirety of this mountain. Whatever was going on here, seems like the ancients were ultimately responsible for it."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu dağın her yerini dolaştım. Burada ne yaşandıysa arkasında Kadimler var gibi görünüyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Investigate the peak of Mount Gigant."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Gigant Dağı'nın zirvesini araştır."
+    }
+  ]
 ]

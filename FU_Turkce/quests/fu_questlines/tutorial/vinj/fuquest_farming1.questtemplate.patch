@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Feeling Thirsty?"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "A ^orange;Well^reset; is extremely important, for it provides life-giving ^orange;Water^reset; for numerous purposes. Build one at a ^orange;Foraging Table^reset;. Once it fills for a while, harvest some ^orange;Water^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Water in wells will gradually increase. When you have 100 or more, you can harvest it. It can be used in crafting, thrown to create lakes or placed in a Hydroponics Tray."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Susadın mı?"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bir ^orange;Kuyu^reset; çok önemlidir; pek çok işte kullanacağın hayat kaynağı ^orange;Suyu^reset; sağlar. ^orange;Toplayıcılık Tezgâhında^reset; bir tane üret. Bir süre dolmasını bekle, ardından biraz ^orange;Su^reset; topla."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Kuyudaki su zamanla birikir. Miktar 100'e ulaştığında toplayabilirsin. Suyu üretimde kullanabilir, göl oluşturmak için fırlatabilir veya Hidroponik Tepsiye koyabilirsin."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Feeling Thirsty?"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Susadın mı?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "A ^orange;Well^reset; is extremely important, for it provides life-giving ^orange;Water^reset; for numerous purposes. Build one at a ^orange;Foraging Table^reset;. Once it fills for a while, harvest some ^orange;Water^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bir ^orange;Kuyu^reset; çok önemlidir; pek çok işte kullanacağın hayat kaynağı ^orange;Suyu^reset; sağlar. ^orange;Toplayıcılık Tezgâhında^reset; bir tane üret. Bir süre dolmasını bekle, ardından biraz ^orange;Su^reset; topla."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Water in wells will gradually increase. When you have 100 or more, you can harvest it. It can be used in crafting, thrown to create lakes or placed in a Hydroponics Tray."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Kuyudaki su zamanla birikir. Miktar 100'e ulaştığında toplayabilirsin. Suyu üretimde kullanabilir, göl oluşturmak için fırlatabilir veya Hidroponik Tepsiye koyabilirsin."
+    }
+  ]
 ]

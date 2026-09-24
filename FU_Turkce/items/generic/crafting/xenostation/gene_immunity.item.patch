@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Immunization"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Immune to specific effects."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Bağışıklık"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Belirli etkilere karşı bağışıklık sağlar."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Immunization"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Bağışıklık"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Immune to specific effects."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Belirli etkilere karşı bağışıklık sağlar."
+    }
+  ]
 ]

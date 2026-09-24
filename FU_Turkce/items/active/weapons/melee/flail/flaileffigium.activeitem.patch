@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Effigium Striker"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Emits dense shadow matter.\n^cyan;Breaks blocks^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Effigium Ezici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yoğun gölge maddesi yayar.\n^cyan;Blokları kırar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Effigium Striker"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Effigium Ezici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Emits dense shadow matter.\n^cyan;Breaks blocks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yoğun gölge maddesi yayar.\n^cyan;Blokları kırar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Emits dense shadow matter.\r\n^cyan;Breaks blocks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yoğun gölge maddesi yayar.\n^cyan;Blokları kırar^reset;"
+    }
+  ]
 ]

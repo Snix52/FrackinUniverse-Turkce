@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A medium-sized hoofed forest creature that grows its antlers back each year."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Deer"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Boynuzları her yıl yeniden çıkan, orta boylu ve toynaklı bir orman canlısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Geyik"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A medium-sized hoofed forest creature that grows its antlers back each year."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Boynuzları her yıl yeniden çıkan, orta boylu ve toynaklı bir orman canlısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Deer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Geyik"
+    }
+  ]
 ]

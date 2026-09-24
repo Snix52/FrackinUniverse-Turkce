@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A artisan bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Artisan Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir zanaatkâr arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zanaatkâr Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A artisan bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir zanaatkâr arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Artisan Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zanaatkâr Arısı"
+    }
+  ]
 ]

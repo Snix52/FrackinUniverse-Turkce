@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Moderate Cold/Radiation, Mild Heat/Poison, Proto"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Brute II Mech Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Orta Dereceli Soğuk/Radyasyon, Hafif Sıcaklık/Zehir, Proto"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Brute II Mech Gövdesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Moderate Cold/Radiation, Mild Heat/Poison, Proto"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Orta Dereceli Soğuk/Radyasyon, Hafif Sıcaklık/Zehir, Proto"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Brute II Mech Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Brute II Mech Gövdesi"
+    }
+  ]
 ]

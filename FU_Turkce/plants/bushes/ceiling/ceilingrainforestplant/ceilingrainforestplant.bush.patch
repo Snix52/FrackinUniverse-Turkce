@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A forest plant"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Ceiling plants"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir orman bitkisi."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tavan Bitkileri"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A forest plant"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir orman bitkisi."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Ceiling plants"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tavan Bitkileri"
+    }
+  ]
 ]

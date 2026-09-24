@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's a freakin' dinosaur!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Gariraptor"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu bildiğin dinozor!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Gariraptor"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's a freakin' dinosaur!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu bildiğin dinozor!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gariraptor"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Gariraptor"
+    }
+  ]
 ]

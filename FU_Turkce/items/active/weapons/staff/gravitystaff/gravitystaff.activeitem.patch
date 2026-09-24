@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Matter Staff"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Primary^reset;: Foreground, ^orange;Secondary^reset;: Background."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Madde Asası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Birincil^reset;: Ön Plan, ^orange;İkincil^reset;: Arka Plan."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Matter Staff"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Madde Asası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Primary^reset;: Foreground, ^orange;Secondary^reset;: Background."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Birincil^reset;: Ön Plan, ^orange;İkincil^reset;: Arka Plan."
+    }
+  ]
 ]

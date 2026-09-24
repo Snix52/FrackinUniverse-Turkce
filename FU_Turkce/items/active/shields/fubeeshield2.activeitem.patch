@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Amber Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;+15% Energy Regen, Immune: Black Tar^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kehribar Kalkanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;+15% Enerji Yenilenmesi, Bağışıklık: Kara Katran^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Amber Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kehribar Kalkanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;+15% Energy Regen, Immune: Black Tar^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;+15% Enerji Yenilenmesi, Bağışıklık: Kara Katran^reset;"
+    }
+  ]
 ]

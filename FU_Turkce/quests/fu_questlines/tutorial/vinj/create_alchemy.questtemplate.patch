@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Alchemy"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Chemistry is a science that will allow you to create all sorts of useful things. Build an ^orange;Alchemy Table^reset; to give it a shot. You'll need to ^orange;Research^reset; the ^orange;Chemistry^reset; sciences."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Nicely done. Now you'll need to find some space for this in your own base."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Chemlab^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Simya"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Kimya, çeşit çeşit yararlı şey üretmeni sağlayan bir bilimdir. Denemek için bir ^orange;Simya Tezgâhı^reset; kur. Önce ^orange;Araştırma^reset; menüsünden ^orange;Kimya^reset; araştırmasını aç."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Güzel iş. Şimdi üssünde buna uygun bir yer ayırman gerekiyor."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;Simya Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Alchemy"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Simya"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Chemistry is a science that will allow you to create all sorts of useful things. Build an ^orange;Alchemy Table^reset; to give it a shot. You'll need to ^orange;Research^reset; the ^orange;Chemistry^reset; sciences."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Kimya, çeşit çeşit yararlı şey üretmeni sağlayan bir bilimdir. Denemek için bir ^orange;Simya Tezgâhı^reset; kur. Önce ^orange;Araştırma^reset; menüsünden ^orange;Kimya^reset; araştırmasını aç."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Nicely done. Now you'll need to find some space for this in your own base."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Güzel iş. Şimdi üssünde buna uygun bir yer ayırman gerekiyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Chemlab^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;Simya Tezgâhını^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

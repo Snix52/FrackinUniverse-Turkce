@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/count/value",
-    "value": "FUEL SLOTS"
-  },
-  {
-    "op": "test",
-    "path": "/gui/countwaste/value",
-    "value": "WASTE      COOLANT"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/count/value",
-    "value": "YAKIT YUVALARI"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/countwaste/value",
-    "value": "ATIK      SOĞUTUCU"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/count/value",
+      "value": "FUEL SLOTS"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/count/value",
+      "value": "YAKIT YUVALARI"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/countwaste/value",
+      "value": "WASTE      COOLANT"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/countwaste/value",
+      "value": "ATIK      SOĞUTUCU"
+    }
+  ]
 ]

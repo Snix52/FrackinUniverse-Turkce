@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A decent biofuel.\n^blue;+^white;8 ^blue;Fuel^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Biofuel Canister"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İş görür bir biyoyakıt.\n^blue;+^white;8 ^blue;Yakıt^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Biyoyakıt Kapsülü"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A decent biofuel.\n^blue;+^white;8 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İş görür bir biyoyakıt.\n^blue;+^white;8 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A decent biofuel.\r\n^blue;+^white;8 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İş görür bir biyoyakıt.\n^blue;+^white;8 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Biofuel Canister"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Biyoyakıt Kapsülü"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Sniper Knife"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Shoots knives. For some reason.\n^yellow;Why is this a thing? Surprisingly effective.^reset;\n^green;Where are they coming from?!?!?!^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Keskin Nişancı Bıçağı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bıçak ateşler. Nedeni bilinmiyor.\n^yellow;Bu neden var ki? Şaşırtıcı derecede etkili.^reset;\n^green;Bunlar nereden geliyor?!?!?!^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Sniper Knife"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Keskin Nişancı Bıçağı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shoots knives. For some reason.\n^yellow;Why is this a thing? Surprisingly effective.^reset;\n^green;Where are they coming from?!?!?!^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bıçak ateşler. Nedeni bilinmiyor.\n^yellow;Bu neden var ki? Şaşırtıcı derecede etkili.^reset;\n^green;Bunlar nereden geliyor?!?!?!^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shoots knives. For some reason.\r\n^yellow;Why is this a thing? Surprisingly effective.^reset;\r\n^green;Where are they coming from?!?!?!^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bıçak ateşler. Nedeni bilinmiyor.\n^yellow;Bu neden var ki? Şaşırtıcı derecede etkili.^reset;\n^green;Bunlar nereden geliyor?!?!?!^reset;"
+    }
+  ]
 ]

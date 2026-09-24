@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "You didn't see anything."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Field Generator^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Hiçbir şey görmedin."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Alan Jeneratörü^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "You didn't see anything."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hiçbir şey görmedin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Field Generator^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Alan Jeneratörü^reset;"
+    }
+  ]
 ]

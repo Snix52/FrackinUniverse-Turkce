@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cute Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;+5% Energy Regen, +2 Defense, Immune: Insanity^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sevimli Kalkan"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;+5% Enerji Yenilenmesi, +2 Savunma, Bağışıklık: Delilik^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cute Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sevimli Kalkan"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;+5% Energy Regen, +2 Defense, Immune: Insanity^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;+5% Enerji Yenilenmesi, +2 Savunma, Bağışıklık: Delilik^reset;"
+    }
+  ]
 ]

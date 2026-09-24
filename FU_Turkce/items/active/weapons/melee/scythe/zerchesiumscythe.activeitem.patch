@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Zerchesium Scythe"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Heavy, freezing metallic death.\n^cyan;Frozen Edge^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zerchesium Tırpan"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ağır, dondurucu, metalik ölüm.\n^cyan;Donmuş Ağız^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Zerchesium Scythe"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zerchesium Tırpan"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Heavy, freezing metallic death.\n^cyan;Frozen Edge^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağır, dondurucu, metalik ölüm.\n^cyan;Donmuş Ağız^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Heavy, freezing metallic death.\r\n^cyan;Frozen Edge^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağır, dondurucu, metalik ölüm.\n^cyan;Donmuş Ağız^reset;"
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "The Extractor IV"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "^orange;Plant Fibre^reset; is plentiful enough that extracting some for a little ^green;tissue culture^reset; won't hurt. Bring me 5."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "You're doing great. As a thanks, take this. It's rare, but it might come in handy some day."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Tissue Culture^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Çıkarıcı IV"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Biraz daha pratik yapalım. Çıkarıcıda ^orange;farklı malzemeleri^reset; işleyerek ^green;Araştırma^reset; elde et. Bana 5 tane getir."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Harika gidiyorsun. Teşekkür olarak bunu al. Nadir bir şey; bir gün işine yarayabilir."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "5 ^green;Araştırmayı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "The Extractor IV"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Çıkarıcı IV"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "^orange;Plant Fibre^reset; is plentiful enough that extracting some for a little ^green;tissue culture^reset; won't hurt. Bring me 5."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Biraz daha pratik yapalım. Çıkarıcıda ^orange;farklı malzemeleri^reset; işleyerek ^green;Araştırma^reset; elde et. Bana 5 tane getir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "You're doing great. As a thanks, take this. It's rare, but it might come in handy some day."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Harika gidiyorsun. Teşekkür olarak bunu al. Nadir bir şey; bir gün işine yarayabilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Tissue Culture^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "5 ^green;Araştırmayı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

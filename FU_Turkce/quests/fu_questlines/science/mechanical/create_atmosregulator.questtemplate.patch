@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Protective Measures"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I need to ^green;borrow^reset; an ^orange;Atmospheric Regulator^reset; so I can colonize a hostile world. You'll find it at your ^orange;Power Station^reset;. I'll need to keep it for a while but I'll pay top dollar for it."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Excellent, and the one I ordered is already on the way. There we go. As promised, ^green;a ton of money.^green;"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Atmosphere Regulator^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Koruyucu Önlemler"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Tehlikeli bir dünyada koloni kurabilmek için bir ^orange;Atmosfer Düzenleyiciyi^reset; bir süreliğine ^green;ödünç almam^reset; gerekiyor. ^orange;Güç İstasyonunda^reset; üretebilirsin. Bir süre bende kalacak ama iyi para öderim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Mükemmel, sipariş ettiğim de yola çıkmış bile. Tamamdır. Söz verdiğim gibi, ^green;bir ton para.^green;"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Atmosfer Düzenleyiciyi^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Protective Measures"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Koruyucu Önlemler"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I need to ^green;borrow^reset; an ^orange;Atmospheric Regulator^reset; so I can colonize a hostile world. You'll find it at your ^orange;Power Station^reset;. I'll need to keep it for a while but I'll pay top dollar for it."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Tehlikeli bir dünyada koloni kurabilmek için bir ^orange;Atmosfer Düzenleyiciyi^reset; bir süreliğine ^green;ödünç almam^reset; gerekiyor. ^orange;Güç İstasyonunda^reset; üretebilirsin. Bir süre bende kalacak ama iyi para öderim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Excellent, and the one I ordered is already on the way. There we go. As promised, ^green;a ton of money.^green;"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Mükemmel, sipariş ettiğim de yola çıkmış bile. Tamamdır. Söz verdiğim gibi, ^green;bir ton para.^green;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Atmosphere Regulator^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Atmosfer Düzenleyiciyi^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

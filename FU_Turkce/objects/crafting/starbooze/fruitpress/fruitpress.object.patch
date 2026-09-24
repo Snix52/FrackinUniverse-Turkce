@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A machine used to squeeze juices from fruits."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Fruit Press^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Meyvelerin suyunu sıkmak için kullanılan bir pres."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Meyve Presi^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A machine used to squeeze juices from fruits."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Meyvelerin suyunu sıkmak için kullanılan bir pres."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Fruit Press^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Meyve Presi^reset;"
+    }
+  ]
 ]

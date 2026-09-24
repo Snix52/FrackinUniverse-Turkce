@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A assassin bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Assassin Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir suikastçı arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Suikastçı Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A assassin bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir suikastçı arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Assassin Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Suikastçı Arısı"
+    }
+  ]
 ]

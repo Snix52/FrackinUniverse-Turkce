@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A huge snake that is rather poisonous"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "King Snake"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Epey zehirli, kocaman bir yılan."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kral Yılan"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A huge snake that is rather poisonous"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Epey zehirli, kocaman bir yılan."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "King Snake"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kral Yılan"
+    }
+  ]
 ]

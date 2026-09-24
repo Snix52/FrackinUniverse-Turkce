@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Isogen Shortsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Frosting foes since 2200.\n^cyan;Inflicts Freezing^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Isogen Kısa Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "2200'den beri düşmanları donduruyor.\n^cyan;Donmaya neden olur^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Isogen Shortsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Isogen Kısa Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Frosting foes since 2200.\n^cyan;Inflicts Freezing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "2200'den beri düşmanları donduruyor.\n^cyan;Donmaya neden olur^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Frosting foes since 2200.\r\n^cyan;Inflicts Freezing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "2200'den beri düşmanları donduruyor.\n^cyan;Donmaya neden olur^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Relic Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;+3% Crit Chance^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yadigâr Kalkanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;+3% Kritik Şansı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Relic Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yadigâr Kalkanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;+3% Crit Chance^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;+3% Kritik Şansı^reset;"
+    }
+  ]
 ]

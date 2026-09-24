@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Prismatic SMG"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Snuggle them to death with energy bullets!\n^yellow;Counts as 'energy' for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Prizmatik Makineli Tabanca"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Enerji mermilerinle onları ölümüne kucakla!\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Prismatic SMG"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Prizmatik Makineli Tabanca"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Snuggle them to death with energy bullets!\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Enerji mermilerinle onları ölümüne kucakla!\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Snuggle them to death with energy bullets!\r\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Enerji mermilerinle onları ölümüne kucakla!\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ]
 ]

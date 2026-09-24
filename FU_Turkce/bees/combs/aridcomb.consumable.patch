@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A sandy honeycomb."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Arid Honeycomb"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kumlu bir bal peteği."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kurak Bal Peteği"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A sandy honeycomb."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kumlu bir bal peteği."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Arid Honeycomb"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kurak Bal Peteği"
+    }
+  ]
 ]

@@ -1,52 +1,62 @@
 [
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Welcome back to the ^orange;Protectorate^reset;, Agent. With your help I know we can triumph. I've had one of our mechanics ^green;repair your FTL Drive^reset; so that you can resume your duties!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/BYOSCompletionText",
-    "value": "Welcome back to the ^orange;Protectorate^reset;, Agent. With your help I know we can triumph. You need to fix that ^red;broken FTL drive^reset; first, though! ^cyan;Research Engineering^reset; and ^green;build an STL drive^reset; at a ^orange;Machining Table^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/descriptions/collectRepairItem",
-    "value": "Locate the ^orange;Energy Source^reset; in the ^green;Cavern^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/descriptions/findGate",
-    "value": "Find the source of the ^green;Welcoming Beacon^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/descriptions/makeTable",
-    "value": "Complete the objectives given by ^green;Vinalisj^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^orange;Protectorate'e^reset; yeniden hoş geldin, Ajan. Senin yardımınla başaracağımızı biliyorum. Görevlerine devam edebilmen için teknisyenlerimizden birine ^green;FTL Motorunu onarttım^reset;!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/BYOSCompletionText",
-    "value": "^orange;Protectorate'e^reset; yeniden hoş geldin, Ajan. Senin yardımınla başaracağımızı biliyorum. Ama önce o ^red;bozuk FTL motorunu^reset; onarman gerek! ^cyan;Mühendislik ağacında gerekli araştırmayı aç^reset; ve ^orange;İmalat Tezgâhında^reset; bir ^green;STL Motoru üret^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/descriptions/collectRepairItem",
-    "value": "^green;Mağaradaki^reset; ^orange;Enerji Kaynağını^reset; bul."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/descriptions/findGate",
-    "value": "^green;Karşılama Sinyalinin^reset; kaynağını bul."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/descriptions/makeTable",
-    "value": "^green;Vinalisj'in^reset; verdiği hedefleri tamamla."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Welcome back to the ^orange;Protectorate^reset;, Agent. With your help I know we can triumph. I've had one of our mechanics ^green;repair your FTL Drive^reset; so that you can resume your duties!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^orange;Protectorate'e^reset; yeniden hoş geldin, Ajan. Senin yardımınla başaracağımızı biliyorum. Görevlerine devam edebilmen için teknisyenlerimizden birine ^green;FTL Motorunu onarttım^reset;!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/BYOSCompletionText",
+      "value": "Welcome back to the ^orange;Protectorate^reset;, Agent. With your help I know we can triumph. You need to fix that ^red;broken FTL drive^reset; first, though! ^cyan;Research Engineering^reset; and ^green;build an STL drive^reset; at a ^orange;Machining Table^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/BYOSCompletionText",
+      "value": "^orange;Protectorate'e^reset; yeniden hoş geldin, Ajan. Senin yardımınla başaracağımızı biliyorum. Ama önce o ^red;bozuk FTL motorunu^reset; onarman gerek! ^cyan;Mühendislik ağacında gerekli araştırmayı aç^reset; ve ^orange;İmalat Tezgâhında^reset; bir ^green;STL Motoru üret^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/descriptions/collectRepairItem",
+      "value": "Locate the ^orange;Energy Source^reset; in the ^green;Cavern^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/descriptions/collectRepairItem",
+      "value": "^green;Mağaradaki^reset; ^orange;Enerji Kaynağını^reset; bul."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/descriptions/findGate",
+      "value": "Find the source of the ^green;Welcoming Beacon^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/descriptions/findGate",
+      "value": "^green;Karşılama Sinyalinin^reset; kaynağını bul."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/descriptions/makeTable",
+      "value": "Complete the objectives given by ^green;Vinalisj^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/descriptions/makeTable",
+      "value": "^green;Vinalisj'in^reset; verdiği hedefleri tamamla."
+    }
+  ]
 ]

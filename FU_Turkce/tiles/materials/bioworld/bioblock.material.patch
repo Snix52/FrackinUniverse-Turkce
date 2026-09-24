@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This soil appears to have been heavily altered by an unknown agent."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Proto Shale"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu toprak, bilinmeyen bir etken tarafından ağır biçimde değiştirilmiş gibi görünüyor."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Proto Şeyl"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This soil appears to have been heavily altered by an unknown agent."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu toprak, bilinmeyen bir etken tarafından ağır biçimde değiştirilmiş gibi görünüyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Proto Shale"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Proto Şeyl"
+    }
+  ]
 ]

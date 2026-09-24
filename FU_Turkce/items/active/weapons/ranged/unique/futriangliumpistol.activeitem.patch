@@ -1,22 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Showstopper"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "An effective and deadly energy weapon.\n^cyan;Inflicts Poisoned^reset;\n^yellow;Counts as 'energy' for set bonuses ^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Şovbozan"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Etkili ve ölümcül bir enerji silahı.\n^cyan;Zehirlenmeye yol açar^reset;\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Showstopper"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Şovbozan"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An effective and deadly energy weapon.\n^cyan;Inflicts Poisoned^reset;\n^yellow;Counts as 'energy' for set bonuses ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Etkili ve ölümcül bir enerji silahı.\n^cyan;Zehirlenmeye yol açar^reset;\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An effective and deadly energy weapon.\r\n^cyan;Inflicts Poisoned^reset;\r\n^yellow;Counts as 'energy' for set bonuses ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Etkili ve ölümcül bir enerji silahı.\n^cyan;Zehirlenmeye yol açar^reset;\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An effective and deadly energy weapon.\n^cyan;Inflicts Poisoned^reset;\r\n^yellow;Counts as 'energy' for set bonuses ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Etkili ve ölümcül bir enerji silahı.\n^cyan;Zehirlenmeye yol açar^reset;\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ]
 ]

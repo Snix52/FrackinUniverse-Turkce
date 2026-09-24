@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A machine that allows fermentation to create alcohol!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Fermenter^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Alkol üretmek için fermantasyon yapan bir cihaz!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Fermentör^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A machine that allows fermentation to create alcohol!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Alkol üretmek için fermantasyon yapan bir cihaz!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Fermenter^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Fermentör^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A majestic deer-like creature."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Meliope"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Geyik benzeri görkemli bir yaratık."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Meliope"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A majestic deer-like creature."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Geyik benzeri görkemli bir yaratık."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Meliope"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Meliope"
+    }
+  ]
 ]

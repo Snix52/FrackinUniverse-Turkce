@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Densinium Quarterstaff"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "An extremely dense, heavy staff.\n^cyan;Inflicts Electrified^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Densinium Dövüş Asası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Son derece yoğun ve ağır bir asa.\n^cyan;Elektriklenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Densinium Quarterstaff"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Densinium Dövüş Asası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An extremely dense, heavy staff.\n^cyan;Inflicts Electrified^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Son derece yoğun ve ağır bir asa.\n^cyan;Elektriklenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An extremely dense, heavy staff.\r\n^cyan;Inflicts Electrified^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Son derece yoğun ve ağır bir asa.\n^cyan;Elektriklenmeye yol açar^reset;"
+    }
+  ]
 ]

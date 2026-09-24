@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Hammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Forged from carbon and irradium. Quite dangerous.\n^cyan;Inflicts Rad-Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Çekiç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Karbon ve Irradium kullanılarak dövülmüş. Oldukça tehlikeli.\n^cyan;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Hammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Çekiç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Forged from carbon and irradium. Quite dangerous.\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Karbon ve Irradium kullanılarak dövülmüş. Oldukça tehlikeli.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Forged from carbon and irradium. Quite dangerous.\r\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Karbon ve Irradium kullanılarak dövülmüş. Oldukça tehlikeli.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

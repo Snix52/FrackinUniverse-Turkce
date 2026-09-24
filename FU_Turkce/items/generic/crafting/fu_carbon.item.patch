@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Carbon"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "There exist more chemical compounds involving Carbon than don't."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Karbon"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Karbon içeren kimyasal bileşiklerin sayısı, karbon içermeyenlerden daha fazladır."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Carbon"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Karbon"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "There exist more chemical compounds involving Carbon than don't."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Karbon içeren kimyasal bileşiklerin sayısı, karbon içermeyenlerden daha fazladır."
+    }
+  ]
 ]

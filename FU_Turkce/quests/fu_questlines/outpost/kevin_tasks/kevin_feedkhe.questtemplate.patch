@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Feed Khe."
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Minion, I have an ^red;extremely important^reset; task for you: my pet cat is starving and needs food. Only the finest sustenance will do, so I need you to feed her one ^red;Neutron Bomb^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "...pet? Well...that's awkward and completely wrong. Won't turn down good food, though. Don't tell anyone about him saying that...and take this blueprint. It's not 'useful', but it was certainly fun to design."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring ^cyan;Khe^reset; 1 ^orange;Neutron Bomb^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Khe'yi Besle."
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Minyon, sana ^red;son derece önemli^reset; bir görevim var: evcil kedim açlıktan ölüyor ve yemek istiyor. Yalnızca en kaliteli besin ona layık. Bu yüzden ona bir ^red;Nötron Bombası^reset; yedirmeni istiyorum."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "...evcil hayvan mı? Ee...bu tuhaf ve tamamen yanlış. Ama güzel yemeğe hayır demem. Onun böyle dediğini kimseye söyleme...şu planı da al. 'Yararlı' değil ama tasarlaması kesinlikle eğlenceliydi."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^cyan;Khe'ye^reset; 1 ^orange;Nötron Bombası^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Feed Khe."
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Khe'yi Besle."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Minion, I have an ^red;extremely important^reset; task for you: my pet cat is starving and needs food. Only the finest sustenance will do, so I need you to feed her one ^red;Neutron Bomb^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Minyon, sana ^red;son derece önemli^reset; bir görevim var: evcil kedim açlıktan ölüyor ve yemek istiyor. Yalnızca en kaliteli besin ona layık. Bu yüzden ona bir ^red;Nötron Bombası^reset; yedirmeni istiyorum."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "...pet? Well...that's awkward and completely wrong. Won't turn down good food, though. Don't tell anyone about him saying that...and take this blueprint. It's not 'useful', but it was certainly fun to design."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "...evcil hayvan mı? Ee...bu tuhaf ve tamamen yanlış. Ama güzel yemeğe hayır demem. Onun böyle dediğini kimseye söyleme...şu planı da al. 'Yararlı' değil ama tasarlaması kesinlikle eğlenceliydi."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring ^cyan;Khe^reset; 1 ^orange;Neutron Bomb^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^cyan;Khe'ye^reset; 1 ^orange;Nötron Bombası^reset; götür."
+    }
+  ]
 ]

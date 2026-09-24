@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "You'd like to go somewhere, but there's a huge tentacle in the way!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Tentacle Barrier"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir yere gitmek istiyorsun ama önünde kocaman bir dokunaç var!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Dokunaç Bariyeri"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "You'd like to go somewhere, but there's a huge tentacle in the way!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir yere gitmek istiyorsun ama önünde kocaman bir dokunaç var!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Tentacle Barrier"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Dokunaç Bariyeri"
+    }
+  ]
 ]

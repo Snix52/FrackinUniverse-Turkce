@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A meat shop."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Sstabbed-Thingss Emporium^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir et dükkânı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Saplanmış Şeyler Pazarı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A meat shop."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir et dükkânı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Sstabbed-Thingss Emporium^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Saplanmış Şeyler Pazarı^reset;"
+    }
+  ]
 ]

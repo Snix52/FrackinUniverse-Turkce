@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Advanced Genetics"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Can you out-science me? I doubt it. If you think you can, prove it by bringing me a completed ^orange;Advanced Xeno Lab^reset;!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Well...I guess that settles it. I suck. Since you bested me fair and square, have these ^orange;Tech Cards^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Advanced Xenolab^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Gelişmiş Genetik"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bilimde beni geçebilir misin? Sanmıyorum. Yapabileceğini düşünüyorsan bir ^orange;Gelişmiş Xeno Laboratuvarı^reset; üretip bana getirerek kanıtla!"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Pekâlâ... Sanırım konu kapandı. Ben bu işte berbatım. Beni hakkıyla geçtiğine göre şu ^orange;Tech Kartlarını^reset; al."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Gelişmiş Xeno Laboratuvarını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Advanced Genetics"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Gelişmiş Genetik"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Can you out-science me? I doubt it. If you think you can, prove it by bringing me a completed ^orange;Advanced Xeno Lab^reset;!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bilimde beni geçebilir misin? Sanmıyorum. Yapabileceğini düşünüyorsan bir ^orange;Gelişmiş Xeno Laboratuvarı^reset; üretip bana getirerek kanıtla!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Well...I guess that settles it. I suck. Since you bested me fair and square, have these ^orange;Tech Cards^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Pekâlâ... Sanırım konu kapandı. Ben bu işte berbatım. Beni hakkıyla geçtiğine göre şu ^orange;Tech Kartlarını^reset; al."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Advanced Xenolab^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Gelişmiş Xeno Laboratuvarını^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A measure of filthy, brackish water.\n^yellow;Centrifugable^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Contaminated Water"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir miktar kirli, acı su.\n^yellow;Santrifüjlenebilir^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kirlenmiş Su"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A measure of filthy, brackish water.\n^yellow;Centrifugable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir miktar kirli, acı su.\n^yellow;Santrifüjlenebilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A measure of filthy, brackish water.\r\n^yellow;Centrifugable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir miktar kirli, acı su.\n^yellow;Santrifüjlenebilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Contaminated Water"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kirlenmiş Su"
+    }
+  ]
 ]

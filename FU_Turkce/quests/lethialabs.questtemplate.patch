@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Letheia Labs"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "The map is broadcasting a distress signal, along with coordinates to a remote lunar facility. Perhaps I should investigate."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Having survived this horrific place, I must follow S.A.I.L.'s instructions and destroy it. There's no time to waste!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Investigate the distress signal."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Letheia Laboratuvarları"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Harita, uzak bir ay tesisinin koordinatlarıyla birlikte imdat sinyali yayıyor. Orayı araştırmalıyım."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu korkunç yerden sağ çıktım. Şimdi SAIL'in talimatlarını izleyip tesisi yok etmeliyim. Kaybedecek vakit yok!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "İmdat sinyalini araştır."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Letheia Labs"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Letheia Laboratuvarları"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "The map is broadcasting a distress signal, along with coordinates to a remote lunar facility. Perhaps I should investigate."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Harita, uzak bir ay tesisinin koordinatlarıyla birlikte imdat sinyali yayıyor. Orayı araştırmalıyım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Having survived this horrific place, I must follow S.A.I.L.'s instructions and destroy it. There's no time to waste!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu korkunç yerden sağ çıktım. Şimdi SAIL'in talimatlarını izleyip tesisi yok etmeliyim. Kaybedecek vakit yok!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Investigate the distress signal."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "İmdat sinyalini araştır."
+    }
+  ]
 ]

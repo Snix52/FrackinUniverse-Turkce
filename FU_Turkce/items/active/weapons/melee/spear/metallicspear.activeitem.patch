@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Junk Spear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Made from all sorts of junk.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Hurda Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Her tür hurdadan yapılmış.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Junk Spear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Hurda Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Made from all sorts of junk.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Her tür hurdadan yapılmış.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Made from all sorts of junk.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Her tür hurdadan yapılmış.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

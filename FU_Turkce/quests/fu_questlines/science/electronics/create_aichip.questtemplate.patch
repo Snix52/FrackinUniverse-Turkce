@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Contraband"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "AI is expressly forbidden on my homeworld. But I need an ^orange;AI Chip^reset; for my research! Can you please bring me one? I would reward you nicely."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Thanks. I've transferred payment for your troubles directly to your account."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;AI Chip^reset; to the goggled Novakid at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Kaçak Mal"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Yapay zekâ benim gezegenimde kesinlikle yasak. Ama araştırmam için bir ^orange;Yapay Zekâ Çipine^reset; ihtiyacım var! Bana bir tane getirebilir misin? Karşılığını iyi veririm."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Teşekkürler. Zahmetin için ödemeni doğrudan hesabına aktardım."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Yapay Zekâ Çipini^reset; ^orange;Bilim Karakolundaki^reset; gözlüklü Novakid'e götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Contraband"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Kaçak Mal"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "AI is expressly forbidden on my homeworld. But I need an ^orange;AI Chip^reset; for my research! Can you please bring me one? I would reward you nicely."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Yapay zekâ benim gezegenimde kesinlikle yasak. Ama araştırmam için bir ^orange;Yapay Zekâ Çipine^reset; ihtiyacım var! Bana bir tane getirebilir misin? Karşılığını iyi veririm."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Thanks. I've transferred payment for your troubles directly to your account."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Teşekkürler. Zahmetin için ödemeni doğrudan hesabına aktardım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;AI Chip^reset; to the goggled Novakid at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Yapay Zekâ Çipini^reset; ^orange;Bilim Karakolundaki^reset; gözlüklü Novakid'e götür."
+    }
+  ]
 ]

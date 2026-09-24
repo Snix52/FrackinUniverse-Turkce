@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Pressure, Extreme Heat/Cold, Mild Radiation/Poison"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pandora-mk2 Mech Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Basınç, Aşırı Sıcaklık/Soğuk, Hafif Radyasyon/Zehir"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pandora-mk2 Mech Gövdesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Pressure, Extreme Heat/Cold, Mild Radiation/Poison"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Basınç, Aşırı Sıcaklık/Soğuk, Hafif Radyasyon/Zehir"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pandora-mk2 Mech Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pandora-mk2 Mech Gövdesi"
+    }
+  ]
 ]

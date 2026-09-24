@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A delicious red honeycomb. Smells like meat."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Red Honeycomb"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Lezzetli, kırmızı bir bal peteği. Et gibi kokuyor."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kırmızı Bal Peteği"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A delicious red honeycomb. Smells like meat."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Lezzetli, kırmızı bir bal peteği. Et gibi kokuyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Red Honeycomb"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kırmızı Bal Peteği"
+    }
+  ]
 ]

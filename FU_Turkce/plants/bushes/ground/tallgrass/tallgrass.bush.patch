@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Tall, lush grass"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Long grass"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Uzun, gür çim."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Uzun Çim"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Tall, lush grass"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Uzun, gür çim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Long grass"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Uzun Çim"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Slayer Gauntlets"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Thorns^reset;\n^orange;Set Bonuses^reset;:\nFist/Axe: Damage x^green;1.25^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Cellat Eldivenleri"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Dikenler^reset;\n^orange;Set Bonusları^reset;:\nYumruk/Balta: Hasar x^green;1.25^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Slayer Gauntlets"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Cellat Eldivenleri"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Thorns^reset;\n^orange;Set Bonuses^reset;:\nFist/Axe: Damage x^green;1.25^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Dikenler^reset;\n^orange;Set Bonusları^reset;:\nYumruk/Balta: Hasar x^green;1.25^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Thorns^reset;\r\n^orange;Set Bonuses^reset;:\r\nFist/Axe: Damage x^green;1.25^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Dikenler^reset;\n^orange;Set Bonusları^reset;:\nYumruk/Balta: Hasar x^green;1.25^reset;"
+    }
+  ]
 ]

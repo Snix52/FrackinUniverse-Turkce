@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Crippler Machinegun"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Rapid fire radioactive joy!\n^yellow;Inflicts Radiation Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sakatlayıcı Makineli Tüfek"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Seri atışlı radyoaktif eğlence!\n^yellow;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Crippler Machinegun"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sakatlayıcı Makineli Tüfek"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Rapid fire radioactive joy!\n^yellow;Inflicts Radiation Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Seri atışlı radyoaktif eğlence!\n^yellow;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Rapid fire radioactive joy!\r\n^yellow;Inflicts Radiation Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Seri atışlı radyoaktif eğlence!\n^yellow;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

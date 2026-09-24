@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A flowery bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Flower Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Çiçek gibi bir arı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Çiçek Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A flowery bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Çiçek gibi bir arı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Flower Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Çiçek Arısı"
+    }
+  ]
 ]

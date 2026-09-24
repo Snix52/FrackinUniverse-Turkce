@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Generates energy out of darkness. Can potentially generate ^orange;10W^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^cyan;Nocturn Array^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Karanlıktan enerji üretir. ^orange;10W^reset;'a kadar güç üretebilir."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^cyan;Gece Dizisi^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Generates energy out of darkness. Can potentially generate ^orange;10W^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Karanlıktan enerji üretir. ^orange;10W^reset;'a kadar güç üretebilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^cyan;Nocturn Array^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^cyan;Gece Dizisi^reset;"
+    }
+  ]
 ]

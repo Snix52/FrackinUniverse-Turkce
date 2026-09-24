@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Immune^reset;: Moderate Heat, Mild Cold/Radiation/Poison, Proto"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Falcon Body"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Bağışık^reset;: Orta Dereceli Sıcaklık, Hafif Soğuk/Radyasyon/Zehir, Proto"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Falcon Gövdesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Immune^reset;: Moderate Heat, Mild Cold/Radiation/Poison, Proto"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Bağışık^reset;: Orta Dereceli Sıcaklık, Hafif Soğuk/Radyasyon/Zehir, Proto"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Falcon Body"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Falcon Gövdesi"
+    }
+  ]
 ]

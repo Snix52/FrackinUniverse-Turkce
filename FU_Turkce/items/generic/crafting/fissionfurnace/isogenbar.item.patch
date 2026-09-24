@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Isogen Bar"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A super-cold alloy with numerous powerful applications.\nOften located on Ice Wastes."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Isogen Külçesi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Pek çok güçlü uygulamada kullanılan, aşırı soğuk bir alaşım.\nGenellikle Buz Çoraklarında bulunur."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Isogen Bar"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Isogen Külçesi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A super-cold alloy with numerous powerful applications.\nOften located on Ice Wastes."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Pek çok güçlü uygulamada kullanılan, aşırı soğuk bir alaşım.\nGenellikle Buz Çoraklarında bulunur."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A super-cold alloy with numerous powerful applications.\r\nOften located on Ice Wastes."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Pek çok güçlü uygulamada kullanılan, aşırı soğuk bir alaşım.\nGenellikle Buz Çoraklarında bulunur."
+    }
+  ]
 ]

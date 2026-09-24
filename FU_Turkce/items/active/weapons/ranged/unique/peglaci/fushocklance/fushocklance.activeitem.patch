@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Shocklance"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Shockingly deadly.\n^yellow;Destructive Alt-Fire^reset;\n^cyan;Primary fire does secondary physical damage^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Şok Kargısı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Şok edici derecede ölümcül.\n^yellow;Yıkıcı alternatif atış^reset;\n^cyan;Birincil atış ek fiziksel hasar verir^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Shocklance"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Şok Kargısı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shockingly deadly.\n^yellow;Destructive Alt-Fire^reset;\n^cyan;Primary fire does secondary physical damage^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Şok edici derecede ölümcül.\n^yellow;Yıkıcı alternatif atış^reset;\n^cyan;Birincil atış ek fiziksel hasar verir^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shockingly deadly.\r\n^yellow;Destructive Alt-Fire^reset;\r\n^cyan;Primary fire does secondary physical damage^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Şok edici derecede ölümcül.\n^yellow;Yıkıcı alternatif atış^reset;\n^cyan;Birincil atış ek fiziksel hasar verir^reset;"
+    }
+  ]
 ]

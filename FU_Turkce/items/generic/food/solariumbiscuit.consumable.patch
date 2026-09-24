@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Super-dangerous to eat if you can't roll in radiation.\n^cyan;+^white;30% ^pink;Radiation ^cyan;Res ^gray;(^white;5m^gray;)^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Solarium Biscuit"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Radyasyona bulanamıyorsan yemesi son derece tehlikeli.\n^cyan;+^white;%30 ^pink;Radyasyon ^cyan;Direnci ^gray;(^white;5 dk^gray;)^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Solarium Bisküvisi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Super-dangerous to eat if you can't roll in radiation.\n^cyan;+^white;30% ^pink;Radiation ^cyan;Res ^gray;(^white;5m^gray;)^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Radyasyona bulanamıyorsan yemesi son derece tehlikeli.\n^cyan;+^white;%30 ^pink;Radyasyon ^cyan;Direnci ^gray;(^white;5 dk^gray;)^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Super-dangerous to eat if you can't roll in radiation.\r\n^cyan;+^white;30% ^pink;Radiation ^cyan;Res ^gray;(^white;5m^gray;)^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Radyasyona bulanamıyorsan yemesi son derece tehlikeli.\n^cyan;+^white;%30 ^pink;Radyasyon ^cyan;Direnci ^gray;(^white;5 dk^gray;)^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Solarium Biscuit"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Solarium Bisküvisi"
+    }
+  ]
 ]

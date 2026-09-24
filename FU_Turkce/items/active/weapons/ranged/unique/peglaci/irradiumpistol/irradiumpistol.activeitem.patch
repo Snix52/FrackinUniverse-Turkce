@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Pistol"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Radiation has never been so adorably lethal.\n^yellow;Inflicts radiation burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Tabanca"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Radyasyon hiç bu kadar sevimli ve ölümcül olmamıştı.\n^yellow;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Pistol"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Tabanca"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Radiation has never been so adorably lethal.\n^yellow;Inflicts radiation burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Radyasyon hiç bu kadar sevimli ve ölümcül olmamıştı.\n^yellow;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Radiation has never been so adorably lethal.\r\n^yellow;Inflicts radiation burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Radyasyon hiç bu kadar sevimli ve ölümcül olmamıştı.\n^yellow;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

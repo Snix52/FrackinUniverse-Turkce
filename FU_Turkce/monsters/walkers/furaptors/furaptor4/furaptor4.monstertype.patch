@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's a freakin' dinosaur!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Baby Erichiraptor"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu bildiğin dinozor!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yavru Erichiraptor"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's a freakin' dinosaur!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu bildiğin dinozor!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Baby Erichiraptor"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yavru Erichiraptor"
+    }
+  ]
 ]

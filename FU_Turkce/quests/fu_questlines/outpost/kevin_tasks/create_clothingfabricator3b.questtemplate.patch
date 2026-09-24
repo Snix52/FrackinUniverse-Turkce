@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Infantile Deliciousness"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "You ever wonder how many ^orange;baby heads^reset; you can fit in a refrigerator? I do! Let's find out, shall we? If you were to gather say...200 ^orange;baby heads on sticks^reset; I'd be ever so thankful."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Many thanks, Lester. This time I have an ^orange;honestly good^reset; thing for you! Promise!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring ^red;Kevin, your overlord^reset; 200 ^orange;Baby Heads on Sticks^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Bebeksi Lezzet"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Bir buzdolabına kaç ^orange;bebek kafası^reset; sığar, hiç merak ettin mi? Ben ettim! Hadi öğrenelim. Diyelim ki... 200 ^orange;Çubukta Bebek Kafası^reset; toplarsan sana pek minnettar olurum."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Çok sağ ol, Lester. Bu kez sana ^orange;gerçekten iyi^reset; bir şey vereceğim! Söz!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Efendin ^red;Kevin'a^reset; 200 ^orange;Çubukta Bebek Kafası^reset; getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Infantile Deliciousness"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Bebeksi Lezzet"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "You ever wonder how many ^orange;baby heads^reset; you can fit in a refrigerator? I do! Let's find out, shall we? If you were to gather say...200 ^orange;baby heads on sticks^reset; I'd be ever so thankful."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Bir buzdolabına kaç ^orange;bebek kafası^reset; sığar, hiç merak ettin mi? Ben ettim! Hadi öğrenelim. Diyelim ki... 200 ^orange;Çubukta Bebek Kafası^reset; toplarsan sana pek minnettar olurum."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Many thanks, Lester. This time I have an ^orange;honestly good^reset; thing for you! Promise!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Çok sağ ol, Lester. Bu kez sana ^orange;gerçekten iyi^reset; bir şey vereceğim! Söz!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring ^red;Kevin, your overlord^reset; 200 ^orange;Baby Heads on Sticks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Efendin ^red;Kevin'a^reset; 200 ^orange;Çubukta Bebek Kafası^reset; getir."
+    }
+  ]
 ]

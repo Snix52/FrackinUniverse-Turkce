@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A basic microscope designed to inspect queen bees. User must be present."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Basic^reset; Microscope"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "Inspect Bees & Items"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ana arıları incelemek için tasarlanmış temel bir mikroskop. Çalışması için kullanıcının başında durması gerekir."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Temel^reset; Mikroskop"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Arıları ve Eşyaları İncele"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A basic microscope designed to inspect queen bees. User must be present."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ana arıları incelemek için tasarlanmış temel bir mikroskop. Çalışması için kullanıcının başında durması gerekir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Basic^reset; Microscope"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Temel^reset; Mikroskop"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "Inspect Bees & Items"
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Arıları ve Eşyaları İncele"
+    }
+  ]
 ]

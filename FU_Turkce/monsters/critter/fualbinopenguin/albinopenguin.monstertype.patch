@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Strange, eyeless penguins."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Albino Penguin"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tuhaf, gözsüz penguenler."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Albino Penguen"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Strange, eyeless penguins."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tuhaf, gözsüz penguenler."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Albino Penguin"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Albino Penguen"
+    }
+  ]
 ]

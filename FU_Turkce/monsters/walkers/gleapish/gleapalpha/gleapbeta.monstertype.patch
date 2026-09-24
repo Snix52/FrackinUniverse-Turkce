@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A gleap mutation on its way to becoming an Alpha."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Beta Gleap"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Alfa olmaya aday bir Gleap mutasyonu."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Beta Gleap"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A gleap mutation on its way to becoming an Alpha."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Alfa olmaya aday bir Gleap mutasyonu."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Beta Gleap"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Beta Gleap"
+    }
+  ]
 ]

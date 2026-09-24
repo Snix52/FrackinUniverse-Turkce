@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Gendarme Helmet"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Rocket/Grenade Launcher: Damage x^green;1.2^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Jandarma Miğferi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Roketatar/Bombaatar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gendarme Helmet"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Jandarma Miğferi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Rocket/Grenade Launcher: Damage x^green;1.2^reset;\n^yellow;^reset; ^cyan;Immune^reset;: Burning"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Roketatar/Bombaatar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\r\n^yellow;^reset; Rocket/Grenade Launcher: Damage x^green;1.2^reset;\r\n^yellow;^reset; ^cyan;Immune^reset;: Burning"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Roketatar/Bombaatar: Hasar x^green;1.2^reset;\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Yanma"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pure Honey"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A measure of sweet, sweet honey.\n^yellow;Centrifugable^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Saf Bal"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir ölçü mis gibi tatlı bal.\n^yellow;Santrifüjlenebilir^reset;."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pure Honey"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Saf Bal"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A measure of sweet, sweet honey.\n^yellow;Centrifugable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir ölçü mis gibi tatlı bal.\n^yellow;Santrifüjlenebilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A measure of sweet, sweet honey.\r\n^yellow;Centrifugable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir ölçü mis gibi tatlı bal.\n^yellow;Santrifüjlenebilir^reset;."
+    }
+  ]
 ]

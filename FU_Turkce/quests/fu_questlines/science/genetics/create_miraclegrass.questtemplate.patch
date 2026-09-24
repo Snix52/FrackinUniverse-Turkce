@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Grass of Life"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I am in need of 3 ^orange;Miracle Grass^reset; seeds to try a new regeneration experiment. You'll find them at your ^orange;Gene Design Lab^reset;. Can you fetch me some?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Thanks, now I can complete this research project and wow the investors! ^green;I'll send replacement seeds^reset; later."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the 3 ^orange;Miracle Grass Seeds^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Yaşam Otu"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Yeni bir yenilenme deneyi için 3 ^orange;Mucize Otu Tohumuna^reset; ihtiyacım var. Bunları ^orange;Serada^reset; üretebilirsin. Bana getirir misin?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Teşekkürler, artık bu araştırma projesini tamamlayıp yatırımcıları etkileyebilirim! ^green;Yedek tohumları^reset; sonra yollarım."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "3 ^orange;Mucize Otu Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Grass of Life"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Yaşam Otu"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I am in need of 3 ^orange;Miracle Grass^reset; seeds to try a new regeneration experiment. You'll find them at your ^orange;Gene Design Lab^reset;. Can you fetch me some?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Yeni bir yenilenme deneyi için 3 ^orange;Mucize Otu Tohumuna^reset; ihtiyacım var. Bunları ^orange;Serada^reset; üretebilirsin. Bana getirir misin?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Thanks, now I can complete this research project and wow the investors! ^green;I'll send replacement seeds^reset; later."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Teşekkürler, artık bu araştırma projesini tamamlayıp yatırımcıları etkileyebilirim! ^green;Yedek tohumları^reset; sonra yollarım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the 3 ^orange;Miracle Grass Seeds^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "3 ^orange;Mucize Otu Tohumunu^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

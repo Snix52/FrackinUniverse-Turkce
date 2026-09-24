@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Clearly their primary goods are pet-related."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;SuperPet^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Başlıca ürünlerinin evcil hayvanlarla ilgili olduğu belli."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;SuperPet^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Clearly their primary goods are pet-related."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Başlıca ürünlerinin evcil hayvanlarla ilgili olduğu belli."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;SuperPet^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;SuperPet^reset;"
+    }
+  ]
 ]

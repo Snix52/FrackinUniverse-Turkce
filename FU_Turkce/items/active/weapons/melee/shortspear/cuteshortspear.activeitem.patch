@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Prismatic Shortspear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Much more dangerous than it looks.\n^yellow;Counts as 'energy' for set bonuses^reset;\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Prizmatik Kısa Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Göründüğünden çok daha tehlikeli.\n^yellow;Set bonusları için 'enerji' sayılır^reset;\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Prismatic Shortspear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Prizmatik Kısa Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Much more dangerous than it looks.\n^yellow;Counts as 'energy' for set bonuses^reset;\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Göründüğünden çok daha tehlikeli.\n^yellow;Set bonusları için 'enerji' sayılır^reset;\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Much more dangerous than it looks.\r\n^yellow;Counts as 'energy' for set bonuses^reset;\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Göründüğünden çok daha tehlikeli.\n^yellow;Set bonusları için 'enerji' sayılır^reset;\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/lblFuelType/value",
-    "value": "CURRENT FUEL TYPE: "
-  },
-  {
-    "op": "test",
-    "path": "/gui/lblModuleLabel/value",
-    "value": "^green;CURRENT FUEL:^white;"
-  },
-  {
-    "op": "test",
-    "path": "/gui/windowtitle/subtitle",
-    "value": "  ^#b9b5b2;Insert erchius fuel to power your mech"
-  },
-  {
-    "op": "test",
-    "path": "/gui/windowtitle/title",
-    "value": "  Mech fuel tank"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lblFuelType/value",
-    "value": "MEVCUT YAKIT TÜRÜ: "
-  },
-  {
-    "op": "replace",
-    "path": "/gui/lblModuleLabel/value",
-    "value": "^green;MEVCUT YAKIT:^white;"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/windowtitle/subtitle",
-    "value": "  ^#b9b5b2;Mech'ini çalıştırmak için Erchius Yakıtı yerleştir"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/windowtitle/title",
-    "value": "  Mech Yakıt Deposu"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/lblFuelType/value",
+      "value": "CURRENT FUEL TYPE: "
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lblFuelType/value",
+      "value": "MEVCUT YAKIT TÜRÜ: "
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/lblModuleLabel/value",
+      "value": "^green;CURRENT FUEL:^white;"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/lblModuleLabel/value",
+      "value": "^green;MEVCUT YAKIT:^white;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/windowtitle/subtitle",
+      "value": "  ^#b9b5b2;Insert erchius fuel to power your mech"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/windowtitle/subtitle",
+      "value": "  ^#b9b5b2;Mech'ini çalıştırmak için Erchius Yakıtı yerleştir"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/windowtitle/title",
+      "value": "  Mech fuel tank"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/windowtitle/title",
+      "value": "  Mech Yakıt Deposu"
+    }
+  ]
 ]

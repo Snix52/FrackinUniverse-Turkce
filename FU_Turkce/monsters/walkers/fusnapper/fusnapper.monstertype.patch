@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "80% bite, 20% bark."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Snapper"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "%80 ısırır, %20 havlar."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kapan Çeneli"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "80% bite, 20% bark."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "%80 ısırır, %20 havlar."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Snapper"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kapan Çeneli"
+    }
+  ]
 ]

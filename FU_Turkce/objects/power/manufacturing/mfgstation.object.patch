@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "An assembly line for processing raw materials into finished products.\nRequires ^orange;140J^cyan; of power per craft.^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^cyan;Manufacturing Station^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ham maddeleri bitmiş ürünlere dönüştüren bir üretim hattı.\nHer üretim için ^orange;140J^cyan; güç gerekir.^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^cyan;Üretim İstasyonu^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An assembly line for processing raw materials into finished products.\nRequires ^orange;140J^cyan; of power per craft.^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ham maddeleri bitmiş ürünlere dönüştüren bir üretim hattı.\nHer üretim için ^orange;140J^cyan; güç gerekir.^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An assembly line for processing raw materials into finished products.\r\nRequires ^orange;140J^cyan; of power per craft.^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ham maddeleri bitmiş ürünlere dönüştüren bir üretim hattı.\nHer üretim için ^orange;140J^cyan; güç gerekir.^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^cyan;Manufacturing Station^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^cyan;Üretim İstasyonu^reset;"
+    }
+  ]
 ]

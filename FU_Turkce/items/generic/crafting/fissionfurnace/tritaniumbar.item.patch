@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Tritanium Bar^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A fantastic alloy composed of various metals."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Tritanium Külçesi^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Çeşitli metallerden oluşan muhteşem bir alaşım."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Tritanium Bar^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Tritanium Külçesi^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A fantastic alloy composed of various metals."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Çeşitli metallerden oluşan muhteşem bir alaşım."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Phantasm Spear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Ghostly as a spirit.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Hayalet Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir ruh kadar hayaletimsi.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Phantasm Spear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Hayalet Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Ghostly as a spirit.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir ruh kadar hayaletimsi.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Ghostly as a spirit.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir ruh kadar hayaletimsi.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

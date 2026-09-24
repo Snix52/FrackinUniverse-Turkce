@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "The Broken Master Manipulator"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I should recover the Master Manipulator...or what's left of it, anyways. Khe probably has it at the Science Outpost, I saw her even though she tried to be sneaky."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "The Master Manipulator is now mine. It seems that if I am to fully be able to use it, however, I'll first need to ^orange;repair it at a nanofabricator^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Recover the master manipulator"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Kırık Usta Manipülatör"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Usta Manipülatörü ya da ondan geriye kalanı geri almalıyım. Khe muhtemelen Bilim Karakolunda tutuyor; gizlenmeye çalışsa da onu gördüm."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Usta Manipülatör artık bende. Ancak tüm gücünü kullanabilmek için önce onu ^orange;Nanoüreticide onarmam^reset; gerekiyor."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Usta Manipülatörü geri al."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "The Broken Master Manipulator"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Kırık Usta Manipülatör"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I should recover the Master Manipulator...or what's left of it, anyways. Khe probably has it at the Science Outpost, I saw her even though she tried to be sneaky."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Usta Manipülatörü ya da ondan geriye kalanı geri almalıyım. Khe muhtemelen Bilim Karakolunda tutuyor; gizlenmeye çalışsa da onu gördüm."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "The Master Manipulator is now mine. It seems that if I am to fully be able to use it, however, I'll first need to ^orange;repair it at a nanofabricator^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Usta Manipülatör artık bende. Ancak tüm gücünü kullanabilmek için önce onu ^orange;Nanoüreticide onarmam^reset; gerekiyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Recover the master manipulator"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Usta Manipülatörü geri al."
+    }
+  ]
 ]

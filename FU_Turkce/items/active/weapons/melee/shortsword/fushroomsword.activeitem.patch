@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Mushroom Blade"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Fungus, somehow turned into a weapon.\n^cyan;Floran^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mantar Bıçağı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir şekilde silaha dönüştürülmüş mantar.\n^cyan;Floran^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Mushroom Blade"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mantar Bıçağı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fungus, somehow turned into a weapon.\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir şekilde silaha dönüştürülmüş mantar.\n^cyan;Floran^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fungus, somehow turned into a weapon.\r\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir şekilde silaha dönüştürülmüş mantar.\n^cyan;Floran^reset;"
+    }
+  ]
 ]

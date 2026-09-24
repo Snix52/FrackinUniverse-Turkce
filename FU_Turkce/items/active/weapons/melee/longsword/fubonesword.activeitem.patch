@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Bone Longsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Hellishly creepy. Devilishly stylish.\n^cyan;Floran^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kemik Uzun Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Cehennem gibi ürkütücü. Şeytani derecede şık.\n^cyan;Floran^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Bone Longsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kemik Uzun Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hellishly creepy. Devilishly stylish.\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Cehennem gibi ürkütücü. Şeytani derecede şık.\n^cyan;Floran^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hellishly creepy. Devilishly stylish.\r\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Cehennem gibi ürkütücü. Şeytani derecede şık.\n^cyan;Floran^reset;"
+    }
+  ]
 ]

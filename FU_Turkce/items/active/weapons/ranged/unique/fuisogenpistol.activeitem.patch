@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Icer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Reap foes with icey death.\n^cyan;Slows targets ^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Buzlayıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Düşmanlarını buz gibi ölümle biç.\n^cyan;Hedefleri yavaşlatır ^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Icer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Buzlayıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Reap foes with icey death.\n^cyan;Slows targets ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanlarını buz gibi ölümle biç.\n^cyan;Hedefleri yavaşlatır ^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Reap foes with icey death.\r\n^cyan;Slows targets ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanlarını buz gibi ölümle biç.\n^cyan;Hedefleri yavaşlatır ^reset;"
+    }
+  ]
 ]

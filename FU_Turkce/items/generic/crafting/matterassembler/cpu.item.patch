@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#77acc3;Advanced Processor^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A high-end processor."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#77acc3;Gelişmiş İşlemci^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Üst düzey bir işlemci."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#77acc3;Advanced Processor^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#77acc3;Gelişmiş İşlemci^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A high-end processor."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Üst düzey bir işlemci."
+    }
+  ]
 ]

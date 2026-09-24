@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Royal cadaver"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "These are of Avian royal descent."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kraliyet Kadavrası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu, Avian kraliyet soyundan geliyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Royal cadaver"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kraliyet Kadavrası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "These are of Avian royal descent."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu, Avian kraliyet soyundan geliyor."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Sentry Plate"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Energy/Health x^green;1.15^reset;\n^yellow;^reset; Energy Rifles: Damage x^green;1.25^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Nöbetçi Plakası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Enerji/Can x^green;1.15^reset;\n^yellow;^reset; Enerji Tüfekleri: Hasar x^green;1.25^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Sentry Plate"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Nöbetçi Plakası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\n^yellow;^reset; Energy/Health x^green;1.15^reset;\n^yellow;^reset; Energy Rifles: Damage x^green;1.25^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Enerji/Can x^green;1.15^reset;\n^yellow;^reset; Enerji Tüfekleri: Hasar x^green;1.25^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^orange;Set Bonuses^reset;:\r\n^yellow;^reset; Energy/Health x^green;1.15^reset;\r\n^yellow;^reset; Energy Rifles: Damage x^green;1.25^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^orange;Set Bonusları^reset;:\n^yellow;^reset; Enerji/Can x^green;1.15^reset;\n^yellow;^reset; Enerji Tüfekleri: Hasar x^green;1.25^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Redirector"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A truly unique weapon!\n^yellow;Incapacitate enemies^reset;\n^green;Redirect in zero-g^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yönlendirici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Gerçekten eşsiz bir silah!\n^yellow;Düşmanları etkisiz hâle getirir^reset;\n^green;Sıfır yerçekiminde yön değiştirir^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Redirector"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yönlendirici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A truly unique weapon!\n^yellow;Incapacitate enemies^reset;\n^green;Redirect in zero-g^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçekten eşsiz bir silah!\n^yellow;Düşmanları etkisiz hâle getirir^reset;\n^green;Sıfır yerçekiminde yön değiştirir^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A truly unique weapon!\r\n^yellow;Incapacitate enemies^reset;\r\n^green;Redirect in zero-g^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gerçekten eşsiz bir silah!\n^yellow;Düşmanları etkisiz hâle getirir^reset;\n^green;Sıfır yerçekiminde yön değiştirir^reset;"
+    }
+  ]
 ]

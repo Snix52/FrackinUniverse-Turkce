@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Shortest distance is zero"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I am in dire need of your assistance. I need a ^orange;Teleporter Core^reset; to finish my teleporter, but ^green;the courier delivering my supplies is late^reset; and I'm running out of time. You can craft one in your ^orange;Matter Assembler^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Without ^orange;Teleporter Cores^reset;, you won't be able to craft several useful technologies. Plus, teleporters are just plain fun!!! Oh, there's the courier with ^green;your replacement core^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Teleporter Core^reset; to the scientist at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "En Kısa Mesafe Sıfırdır"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Yardımına acilen ihtiyacım var. Işınlayıcımı tamamlamak için bir ^orange;Işınlayıcı Çekirdeği^reset; gerekiyor ama ^green;malzemeleri getiren kurye gecikti^reset; ve zamanım daralıyor. Bir tane ^orange;Madde Birleştiricide^reset; üretebilirsin."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^orange;Işınlayıcı Çekirdekleri^reset; olmadan birçok yararlı teknolojiyi üretemezsin. Hem ışınlayıcılar düpedüz eğlenceli! Kurye de geldi; ^green;yedek çekirdeğin^reset; yanında."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Işınlayıcı Çekirdeğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Shortest distance is zero"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "En Kısa Mesafe Sıfırdır"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I am in dire need of your assistance. I need a ^orange;Teleporter Core^reset; to finish my teleporter, but ^green;the courier delivering my supplies is late^reset; and I'm running out of time. You can craft one in your ^orange;Matter Assembler^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Yardımına acilen ihtiyacım var. Işınlayıcımı tamamlamak için bir ^orange;Işınlayıcı Çekirdeği^reset; gerekiyor ama ^green;malzemeleri getiren kurye gecikti^reset; ve zamanım daralıyor. Bir tane ^orange;Madde Birleştiricide^reset; üretebilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Without ^orange;Teleporter Cores^reset;, you won't be able to craft several useful technologies. Plus, teleporters are just plain fun!!! Oh, there's the courier with ^green;your replacement core^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^orange;Işınlayıcı Çekirdekleri^reset; olmadan birçok yararlı teknolojiyi üretemezsin. Hem ışınlayıcılar düpedüz eğlenceli! Kurye de geldi; ^green;yedek çekirdeğin^reset; yanında."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Teleporter Core^reset; to the scientist at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Işınlayıcı Çekirdeğini^reset; ^orange;Bilim Karakolundaki^reset; bilim insanına götür."
+    }
+  ]
 ]

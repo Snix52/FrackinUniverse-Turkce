@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Coarse gravel."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Gravel"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İri taneli çakıl."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Çakıl"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Coarse gravel.\n^green;Extractable^reset;, ^orange;Siftable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İri taneli çakıl.\n^green;Çıkarılabilir^reset;, ^orange;Elenebilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Coarse gravel.\r\n^green;Extractable^reset;, ^orange;Siftable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İri taneli çakıl.\n^green;Çıkarılabilir^reset;, ^orange;Elenebilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gravel"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Çakıl"
+    }
+  ]
 ]

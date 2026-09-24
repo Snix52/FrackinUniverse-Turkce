@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Blade"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Forged from irradium.\n^cyan;Inflicts Rad-Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Kılıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Irradium kullanılarak dövülmüş.\n^cyan;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Blade"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Kılıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Forged from irradium.\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Irradium kullanılarak dövülmüş.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Forged from irradium.\r\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Irradium kullanılarak dövülmüş.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

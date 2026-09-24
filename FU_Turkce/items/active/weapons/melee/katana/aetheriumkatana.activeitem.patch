@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Aetherium Katana"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "There isn't any katana that can top this.\n^cyan;Massive 10-hit combo!^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Aetherium Katana"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bunu aşabilecek bir katana yok.\n^cyan;10 vuruşluk devasa kombo!^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Aetherium Katana"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Aetherium Katana"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "There isn't any katana that can top this.\n^cyan;Massive 10-hit combo!^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bunu aşabilecek bir katana yok.\n^cyan;10 vuruşluk devasa kombo!^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "There isn't any katana that can top this.\r\n^cyan;Massive 10-hit combo!^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bunu aşabilecek bir katana yok.\n^cyan;10 vuruşluk devasa kombo!^reset;"
+    }
+  ]
 ]

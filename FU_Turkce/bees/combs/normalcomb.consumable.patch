@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A delicious honeycomb with mild medicinal properties."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Honeycomb"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Hafif tıbbi özelliklere sahip lezzetli bir bal peteği."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Bal Peteği"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A delicious honeycomb with mild medicinal properties."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hafif tıbbi özelliklere sahip lezzetli bir bal peteği."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Honeycomb"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Bal Peteği"
+    }
+  ]
 ]

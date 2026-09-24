@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A oremason bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Oremason Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir cevher duvarcısı arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Cevher Duvarcısı Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A oremason bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir cevher duvarcısı arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Oremason Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Cevher Duvarcısı Arısı"
+    }
+  ]
 ]

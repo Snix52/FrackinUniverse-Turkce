@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/category",
-    "value": "Ancient Artifact"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "An altar dedicated to some unspeakable horror. I wonder what function it serves?"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#86a84a;Elder Altar^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "a dark, terrible relic."
-  },
-  {
-    "op": "replace",
-    "path": "/category",
-    "value": "Kadim Eser"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Dile getirilemez bir dehşete adanmış sunak. Acaba ne işe yarıyor?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#86a84a;Kadim Sunak^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Karanlık ve korkunç bir yadigâr."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/category",
+      "value": "Ancient Artifact"
+    },
+    {
+      "op": "replace",
+      "path": "/category",
+      "value": "Kadim Eser"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "An altar dedicated to some unspeakable horror. I wonder what function it serves?"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Dile getirilemez bir dehşete adanmış sunak. Acaba ne işe yarıyor?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#86a84a;Elder Altar^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#86a84a;Kadim Sunak^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "a dark, terrible relic."
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Karanlık ve korkunç bir yadigâr."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Rich in iodine.\n^green;Extractable^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Caliche Stone"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İyot bakımından zengindir.\n^green;Çıkarılabilir^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kaliş Taşı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Rich in iodine.\n^green;Extractable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İyot bakımından zengindir.\n^green;Çıkarılabilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Rich in iodine.\r\n^green;Extractable^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İyot bakımından zengindir.\n^green;Çıkarılabilir^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Caliche Stone"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kaliş Taşı"
+    }
+  ]
 ]

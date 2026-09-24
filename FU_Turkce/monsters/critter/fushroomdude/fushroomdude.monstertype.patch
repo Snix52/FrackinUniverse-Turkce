@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Half gnome, half mushroom. All tasty."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Funga-Gnome"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yarısı cüce, yarısı mantar. Baştan sona lezzetli."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mantar Cücesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Half gnome, half mushroom. All tasty."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yarısı cüce, yarısı mantar. Baştan sona lezzetli."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Funga-Gnome"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mantar Cücesi"
+    }
+  ]
 ]

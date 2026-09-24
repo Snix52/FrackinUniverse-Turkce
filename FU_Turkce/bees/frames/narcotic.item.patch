@@ -1,32 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/category",
-    "value": "craftingMaterial"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Drugged up Drones.\n<beeData>"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Narcotic Frame"
-  },
-  {
-    "op": "replace",
-    "path": "/category",
-    "value": "Üretim Malzemesi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Uyuşturulmuş erkek arılar.\n<beeData>"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Uyuşturucu Çerçevesi"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/category",
+      "value": "craftingMaterial"
+    },
+    {
+      "op": "replace",
+      "path": "/category",
+      "value": "Üretim Malzemesi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Drugged up Drones.\n<beeData>"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Uyuşturulmuş erkek arılar.\n<beeData>"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Drugged up Drones.\r\n<beeData>"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Uyuşturulmuş erkek arılar.\n<beeData>"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Narcotic Frame"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Uyuşturucu Çerçevesi"
+    }
+  ]
 ]

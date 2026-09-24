@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Fungal Ichor^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A potent natural adhesive that is commonly found in certain mushrooms.\n^green;+^white;1 ^green;produce ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Mantar Özsuyu^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bazı mantarlarda yaygın olarak bulunan güçlü, doğal bir yapıştırıcı.\n^green;+^white;1 ^green;ürün ^gray;& ^cyan;-^white;1 ^cyan;tohum kullanımı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Fungal Ichor^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Mantar Özsuyu^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A potent natural adhesive that is commonly found in certain mushrooms.\n^green;+^white;1 ^green;produce ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bazı mantarlarda yaygın olarak bulunan güçlü, doğal bir yapıştırıcı.\n^green;+^white;1 ^green;ürün ^gray;& ^cyan;-^white;1 ^cyan;tohum kullanımı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A potent natural adhesive that is commonly found in certain mushrooms.\r\n^green;+^white;1 ^green;produce ^gray;& ^cyan;-^white;1 ^cyan;seed use^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bazı mantarlarda yaygın olarak bulunan güçlü, doğal bir yapıştırıcı.\n^green;+^white;1 ^green;ürün ^gray;& ^cyan;-^white;1 ^cyan;tohum kullanımı^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A tiny brown bug that lacks a web but can leap short distances."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Jumping Spider"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ağ örmeyen ama kısa mesafelere sıçrayabilen minicik, kahverengi bir böcek."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zıplayan Örümcek"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A tiny brown bug that lacks a web but can leap short distances."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağ örmeyen ama kısa mesafelere sıçrayabilen minicik, kahverengi bir böcek."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Jumping Spider"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zıplayan Örümcek"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Exceptionally heavy."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Falcon III Legs"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Olağanüstü ağır."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Falcon III Bacakları"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Exceptionally heavy."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Olağanüstü ağır."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Falcon III Legs"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Falcon III Bacakları"
+    }
+  ]
 ]

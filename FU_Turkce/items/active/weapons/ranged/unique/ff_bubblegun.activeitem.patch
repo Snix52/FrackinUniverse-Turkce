@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Bubblegun"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It looks like a harmless bubble gun. It isn't.\n^yellow;Inflicts Poisoned^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Baloncuk Tabancası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Zararsız bir baloncuk tabancasına benziyor. Değil.\n^yellow;Zehirlenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Bubblegun"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Baloncuk Tabancası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It looks like a harmless bubble gun. It isn't.\n^yellow;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zararsız bir baloncuk tabancasına benziyor. Değil.\n^yellow;Zehirlenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It looks like a harmless bubble gun. It isn't.\r\n^yellow;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zararsız bir baloncuk tabancasına benziyor. Değil.\n^yellow;Zehirlenmeye yol açar^reset;"
+    }
+  ]
 ]

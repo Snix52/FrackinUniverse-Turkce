@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Flowery, lush soil."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Rainforest Flowers"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Çiçeklerle dolu, yemyeşil toprak."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yağmur Ormanı Çiçekleri"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Flowery, lush soil."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Çiçeklerle dolu, yemyeşil toprak."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Rainforest Flowers"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yağmur Ormanı Çiçekleri"
+    }
+  ]
 ]

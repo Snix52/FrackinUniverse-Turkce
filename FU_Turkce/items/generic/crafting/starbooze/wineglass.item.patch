@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Wine Glass"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's a glass. For wine. Duh."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Şarap Kadehi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu bir kadeh. Şarap için. Tabii ki."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Wine Glass"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Şarap Kadehi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's a glass. For wine. Duh."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu bir kadeh. Şarap için. Tabii ki."
+    }
+  ]
 ]

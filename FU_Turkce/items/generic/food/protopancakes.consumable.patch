@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Looks toxically delicious.\n^pink;Proto-Poison ^cyan;Immunity ^gray;(^white;5m^gray;)^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Proto Pancakes"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Zehirli görünüyor ama tadı nefis.\n^pink;Proto-Zehir ^cyan;Bağışıklığı ^gray;(^white;5 dk^gray;)^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Proto Pankek"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Looks toxically delicious.\n^pink;Proto-Poison ^cyan;Immunity ^gray;(^white;5m^gray;)^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zehirli görünüyor ama tadı nefis.\n^pink;Proto-Zehir ^cyan;Bağışıklığı ^gray;(^white;5 dk^gray;)^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Looks toxically delicious.\r\n^pink;Proto-Poison ^cyan;Immunity ^gray;(^white;5m^gray;)^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zehirli görünüyor ama tadı nefis.\n^pink;Proto-Zehir ^cyan;Bağışıklığı ^gray;(^white;5 dk^gray;)^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Proto Pancakes"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Proto Pankek"
+    }
+  ]
 ]

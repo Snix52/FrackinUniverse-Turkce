@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "House of Bees"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Before you take care of bees, you need a place to put them. Build an ^orange;Apiary^reset; for this."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "The ^orange;Apiary^reset; is essential for a beekeeper. You'll likely want more than one. You need them to breed your little buddies."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Arıların Yuvası"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Arılarla ilgilenmeden önce onları barındıracak bir yer gerek. Bunun için bir ^orange;Arılık^reset; üret."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^orange;Arılık^reset; bir arıcı için olmazsa olmaz. Büyük ihtimalle bir taneyle yetinmeyeceksin. Minik dostlarını yetiştirmek için bunlara ihtiyacın var."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "House of Bees"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Arıların Yuvası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Before you take care of bees, you need a place to put them. Build an ^orange;Apiary^reset; for this."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Arılarla ilgilenmeden önce onları barındıracak bir yer gerek. Bunun için bir ^orange;Arılık^reset; üret."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "The ^orange;Apiary^reset; is essential for a beekeeper. You'll likely want more than one. You need them to breed your little buddies."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^orange;Arılık^reset; bir arıcı için olmazsa olmaz. Büyük ihtimalle bir taneyle yetinmeyeceksin. Minik dostlarını yetiştirmek için bunlara ihtiyacın var."
+    }
+  ]
 ]

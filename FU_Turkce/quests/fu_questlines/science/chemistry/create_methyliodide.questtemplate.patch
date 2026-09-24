@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Deadly Chemistry"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I need a particularly dangerous chemical known as ^orange;Methyl Iodide^reset;. That will do the trick for this mixture. I'd grab it myself but this might explode! Can you help me out?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "^orange;Methyl Iodide^reset; is your key ingredient in ^green;fertilizers^reset;. You'll want it if you are going to be growing plants in growing/hydroponic trays."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;Methyl Iodide^reset; to the ^green;purple-armored scientist^reset; at the top floor of the ^orange;Science Outpost^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Ölümcül Kimya"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Özellikle tehlikeli bir kimyasal olan ^orange;Metil İyodüre^reset; ihtiyacım var. Bu karışım için tam da gereken şey. Kendim alırdım ama bu şey patlayabilir! Yardım eder misin?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^orange;Metil İyodür^reset;, ^green;gübrelerin^reset; temel bileşenlerinden biridir. Yetiştirme veya Hidroponik Tepsilerde bitki yetiştireceksen işine yarar."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Metil İyodürü^reset; ^orange;Bilim Karakolunun^reset; en üst katındaki ^green;mor zırhlı bilim insanına^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Deadly Chemistry"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Ölümcül Kimya"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I need a particularly dangerous chemical known as ^orange;Methyl Iodide^reset;. That will do the trick for this mixture. I'd grab it myself but this might explode! Can you help me out?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Özellikle tehlikeli bir kimyasal olan ^orange;Metil İyodüre^reset; ihtiyacım var. Bu karışım için tam da gereken şey. Kendim alırdım ama bu şey patlayabilir! Yardım eder misin?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "^orange;Methyl Iodide^reset; is your key ingredient in ^green;fertilizers^reset;. You'll want it if you are going to be growing plants in growing/hydroponic trays."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^orange;Metil İyodür^reset;, ^green;gübrelerin^reset; temel bileşenlerinden biridir. Yetiştirme veya Hidroponik Tepsilerde bitki yetiştireceksen işine yarar."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;Methyl Iodide^reset; to the ^green;purple-armored scientist^reset; at the top floor of the ^orange;Science Outpost^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Metil İyodürü^reset; ^orange;Bilim Karakolunun^reset; en üst katındaki ^green;mor zırhlı bilim insanına^reset; götür."
+    }
+  ]
 ]

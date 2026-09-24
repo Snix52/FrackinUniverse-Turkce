@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Megarachnid [BOSS]"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "If you thought large spiders were a threat, try taking out a ^orange;Megarachnid^reset;...they're the largest spiders in the galaxy. I dare you, in fact! Kill a ^orange;Megarachnid^reset; and you'll get my respect."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Few can say they have hunted and killed one of these. I salute your skill."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Web Shooter^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Megarachnid [PATRON]"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "İri örümcekleri tehdit sanıyorsan bir de ^orange;Megarachnid^reset; avlamayı dene... Onlar galaksideki en büyük örümcekler. Hatta sana meydan okuyorum! Bir ^orange;Megarachnid^reset; öldür de saygımı kazan."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu yaratıklardan birini avlayıp öldürdüğünü pek az kişi söyleyebilir. Yeteneğine saygı duydum."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;Ağ Atıcıyı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Megarachnid [BOSS]"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Megarachnid [PATRON]"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "If you thought large spiders were a threat, try taking out a ^orange;Megarachnid^reset;...they're the largest spiders in the galaxy. I dare you, in fact! Kill a ^orange;Megarachnid^reset; and you'll get my respect."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "İri örümcekleri tehdit sanıyorsan bir de ^orange;Megarachnid^reset; avlamayı dene... Onlar galaksideki en büyük örümcekler. Hatta sana meydan okuyorum! Bir ^orange;Megarachnid^reset; öldür de saygımı kazan."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Few can say they have hunted and killed one of these. I salute your skill."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu yaratıklardan birini avlayıp öldürdüğünü pek az kişi söyleyebilir. Yeteneğine saygı duydum."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Web Shooter^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;Ağ Atıcıyı^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Sunset Riders"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Along with the map is a bounty for a certain Hank 'Hawkeye' Hatfield, worth 2000 pixels. I might follow these coordinates to the fort mentioned and check in first."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Now that was a fight! The bounty should be wired to my ship any time now."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Claim the bounty on Hank 'Hawkeye' Hatfield."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Sunset Riders"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Haritanın yanında, Hank 'Hawkeye' Hatfield için konmuş 2000 Piksel ödüllü bir ilan var. Bu koordinatları takip edip önce sözü edilen kaleye uğrayabilirim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "İşte buna çatışma denir! Ödülün her an gemime aktarılması lazım."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Hank 'Hawkeye' Hatfield'ın başındaki ödülü al."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Sunset Riders"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Sunset Riders"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Along with the map is a bounty for a certain Hank 'Hawkeye' Hatfield, worth 2000 pixels. I might follow these coordinates to the fort mentioned and check in first."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Haritanın yanında, Hank 'Hawkeye' Hatfield için konmuş 2000 Piksel ödüllü bir ilan var. Bu koordinatları takip edip önce sözü edilen kaleye uğrayabilirim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Now that was a fight! The bounty should be wired to my ship any time now."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "İşte buna çatışma denir! Ödülün her an gemime aktarılması lazım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Claim the bounty on Hank 'Hawkeye' Hatfield."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Hank 'Hawkeye' Hatfield'ın başındaki ödülü al."
+    }
+  ]
 ]

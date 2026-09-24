@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Prismatic Pistol"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Prism-powered shots decimate the enemy.\n^yellow;Counts as 'energy' for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Prizmatik Tabanca"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Prizma gücüyle atılan mermiler düşmanı paramparça eder.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Prismatic Pistol"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Prizmatik Tabanca"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Prism-powered shots decimate the enemy.\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Prizma gücüyle atılan mermiler düşmanı paramparça eder.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Prism-powered shots decimate the enemy.\r\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Prizma gücüyle atılan mermiler düşmanı paramparça eder.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ]
 ]

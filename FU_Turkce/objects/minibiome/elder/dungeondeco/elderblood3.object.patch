@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Yea, definitely not ketchup. That's worrisome."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Blood"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Evet, kesinlikle ketçap değil. Bu endişe verici."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kan"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Yea, definitely not ketchup. That's worrisome."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Evet, kesinlikle ketçap değil. Bu endişe verici."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Blood"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kan"
+    }
+  ]
 ]

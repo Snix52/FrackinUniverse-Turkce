@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Densinium Shortsword"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Superior craftsmanship. Nearly unbreakable.\n^cyan;Inflicts Electrified^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Densinium Kısa Kılıç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Üstün işçilik. Neredeyse kırılmaz.\n^cyan;Elektriklenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Densinium Shortsword"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Densinium Kısa Kılıç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Superior craftsmanship. Nearly unbreakable.\n^cyan;Inflicts Electrified^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Üstün işçilik. Neredeyse kırılmaz.\n^cyan;Elektriklenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Superior craftsmanship. Nearly unbreakable.\r\n^cyan;Inflicts Electrified^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Üstün işçilik. Neredeyse kırılmaz.\n^cyan;Elektriklenmeye yol açar^reset;"
+    }
+  ]
 ]

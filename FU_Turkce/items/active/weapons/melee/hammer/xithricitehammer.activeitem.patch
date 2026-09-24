@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cosmic Hammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Slam them with cosmic force.\n^cyan;Inflicts Minor Vulnerability^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kozmik Çekiç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Onları kozmik güçle çarp.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cosmic Hammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kozmik Çekiç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Slam them with cosmic force.\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Onları kozmik güçle çarp.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Slam them with cosmic force.\r\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Onları kozmik güçle çarp.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ]
 ]

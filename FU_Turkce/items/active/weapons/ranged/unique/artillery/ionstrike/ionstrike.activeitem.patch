@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Orbital Strike"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A brutal salvo of energy blasts.\n^cyan;Counts as Rocket or Energy^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yörünge Saldırısı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Acımasız bir enerji patlaması salvosu.\n^cyan;Roket veya Enerji sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Orbital Strike"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yörünge Saldırısı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A brutal salvo of energy blasts.\n^cyan;Counts as Rocket or Energy^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Acımasız bir enerji patlaması salvosu.\n^cyan;Roket veya Enerji sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A brutal salvo of energy blasts.\r\n^cyan;Counts as Rocket or Energy^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Acımasız bir enerji patlaması salvosu.\n^cyan;Roket veya Enerji sayılır^reset;"
+    }
+  ]
 ]

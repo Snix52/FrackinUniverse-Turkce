@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A shrouded bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Shrouded Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir örtülü arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Örtülü Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A shrouded bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir örtülü arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Shrouded Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Örtülü Arısı"
+    }
+  ]
 ]

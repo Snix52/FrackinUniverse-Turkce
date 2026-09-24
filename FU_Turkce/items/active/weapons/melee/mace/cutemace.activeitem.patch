@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Prismatic Mace"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Hungry for bones to smash and color.\n^yellow;Counts as 'energy' for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Prizmatik Topuz"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kemikleri ezmeye ve renk saçmaya aç.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Prismatic Mace"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Prizmatik Topuz"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hungry for bones to smash and color.\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kemikleri ezmeye ve renk saçmaya aç.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Hungry for bones to smash and color.\r\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kemikleri ezmeye ve renk saçmaya aç.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ]
 ]

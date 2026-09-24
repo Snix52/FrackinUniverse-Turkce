@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This putrid ground is ripe with warts filled with...stuff."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Warts"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İçi... şeylerle dolu siğillerle kaplı bu kokuşmuş zemin tam olgunlaşmış."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Siğiller"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This putrid ground is ripe with warts filled with...stuff."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İçi... şeylerle dolu siğillerle kaplı bu kokuşmuş zemin tam olgunlaşmış."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Warts"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Siğiller"
+    }
+  ]
 ]

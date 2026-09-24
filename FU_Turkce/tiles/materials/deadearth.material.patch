@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Not much can hope to grow here."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Dead Soil"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Burada pek bir şey yetişmez."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ölü Toprak"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Not much can hope to grow here."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Burada pek bir şey yetişmez."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Dead Soil"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ölü Toprak"
+    }
+  ]
 ]

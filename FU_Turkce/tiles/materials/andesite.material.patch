@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A rough volcanic stone"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Andesite"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Pürüzlü bir volkanik taş."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Andezit"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A rough volcanic stone"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Pürüzlü bir volkanik taş."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Andesite"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Andezit"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Grinder"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This is the pinnacle of kinetic rifle technology.\n^yellow;Extreme Fire Rate^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Öğütücü"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kinetik tüfek teknolojisinin zirvesi.\n^yellow;Aşırı Atış Hızı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Grinder"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Öğütücü"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This is the pinnacle of kinetic rifle technology.\n^yellow;Extreme Fire Rate^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kinetik tüfek teknolojisinin zirvesi.\n^yellow;Aşırı Atış Hızı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This is the pinnacle of kinetic rifle technology.\r\n^yellow;Extreme Fire Rate^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kinetik tüfek teknolojisinin zirvesi.\n^yellow;Aşırı Atış Hızı^reset;"
+    }
+  ]
 ]

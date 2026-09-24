@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "..."
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "<^red;A voice speaks in your head:^reset; Most upsetting. Expedition was a failure. Could not locate ^orange;Ancient Remote^reset; to sell at exorbitant price. If mortal biped locates one, I would be most grateful to purchase it.>"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "<Great joy is felt by this being. Appreciation will be shown with gratuitous monetary payment. Fleshlings appreciate such gestures. With it you could purchase goods and services.>"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring an ^orange;Ancient Remote^reset; to the ^green;Shadow Shop^reset; at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "..."
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "<^red;Zihninde bir ses konuşuyor:^reset; Çok can sıkıcı. Sefer başarısız oldu. Fahiş fiyata satılacak ^orange;Kadim Kumanda^reset; bulunamadı. Ölümlü iki ayaklı bir tane bulursa satın almaktan büyük memnuniyet duyarım.>"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "<Bu varlık büyük sevinç hissediyor. Minnettarlık, gereğinden fazla para ödenerek gösterilecek. Et bedenliler böyle jestleri takdir eder. Bununla mal ve hizmet satın alabilirsin.>"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Kadim Kumandayı^reset; ^orange;Bilim Karakolundaki^reset; ^green;Gölge Dükkânına^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "..."
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "..."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "<^red;A voice speaks in your head:^reset; Most upsetting. Expedition was a failure. Could not locate ^orange;Ancient Remote^reset; to sell at exorbitant price. If mortal biped locates one, I would be most grateful to purchase it.>"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "<^red;Zihninde bir ses konuşuyor:^reset; Çok can sıkıcı. Sefer başarısız oldu. Fahiş fiyata satılacak ^orange;Kadim Kumanda^reset; bulunamadı. Ölümlü iki ayaklı bir tane bulursa satın almaktan büyük memnuniyet duyarım.>"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "<Great joy is felt by this being. Appreciation will be shown with gratuitous monetary payment. Fleshlings appreciate such gestures. With it you could purchase goods and services.>"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "<Bu varlık büyük sevinç hissediyor. Minnettarlık, gereğinden fazla para ödenerek gösterilecek. Et bedenliler böyle jestleri takdir eder. Bununla mal ve hizmet satın alabilirsin.>"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring an ^orange;Ancient Remote^reset; to the ^green;Shadow Shop^reset; at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Kadim Kumandayı^reset; ^orange;Bilim Karakolundaki^reset; ^green;Gölge Dükkânına^reset; götür."
+    }
+  ]
 ]

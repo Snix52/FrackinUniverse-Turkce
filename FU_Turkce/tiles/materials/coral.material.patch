@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Live coral"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Coral"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Canlı mercan."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mercan"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Live coral"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Canlı mercan."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Coral"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mercan"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A gigantic cell."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cell"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Devasa bir hücre."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Hücre"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A gigantic cell."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Devasa bir hücre."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cell"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Hücre"
+    }
+  ]
 ]

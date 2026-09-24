@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A beautiful rose bush."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Rose Bush Large"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Güzel bir gül çalısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Büyük Gül Çalısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A beautiful rose bush."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Güzel bir gül çalısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Rose Bush Large"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Büyük Gül Çalısı"
+    }
+  ]
 ]

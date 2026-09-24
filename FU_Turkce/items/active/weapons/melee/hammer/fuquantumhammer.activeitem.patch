@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Quantum Hammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Straddles two universes. Amazing.\n^red;Deals Physical Damage^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kuantum Çekici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "İki evrenin arasında duruyor. İnanılmaz.\n^red;Fiziksel Hasar verir^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Quantum Hammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kuantum Çekici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Straddles two universes. Amazing.\n^red;Deals Physical Damage^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İki evrenin arasında duruyor. İnanılmaz.\n^red;Fiziksel Hasar verir^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Straddles two universes. Amazing.\r\n^red;Deals Physical Damage^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "İki evrenin arasında duruyor. İnanılmaz.\n^red;Fiziksel Hasar verir^reset;"
+    }
+  ]
 ]

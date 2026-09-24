@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Left it in the toaster for too long. \n^cyan;+^white;10% ^cyan;HP ^gray;(^white;45s^gray;)^reset; ^green;Type: Grain^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Burnt Toast"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tost makinesinde fazla unutmuş. \n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;45 sn^gray;)^reset; ^green;Tür: Tahıl^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yanık Tost"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Left it in the toaster for too long. \n^cyan;+^white;10% ^cyan;HP ^gray;(^white;45s^gray;)^reset; ^green;Type: Grain^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tost makinesinde fazla unutmuş. \n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;45 sn^gray;)^reset; ^green;Tür: Tahıl^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Left it in the toaster for too long. \r\n^cyan;+^white;10% ^cyan;HP ^gray;(^white;45s^gray;)^reset; ^green;Type: Grain^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tost makinesinde fazla unutmuş. \n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;45 sn^gray;)^reset; ^green;Tür: Tahıl^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Burnt Toast"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yanık Tost"
+    }
+  ]
 ]

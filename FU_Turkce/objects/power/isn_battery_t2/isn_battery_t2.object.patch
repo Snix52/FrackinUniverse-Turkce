@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A slightly upgraded form of battery.^truncate; ^red;Scan for Info^reset;\nStorage Capacity: ^green;2500^reset;J"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Improved^reset; Battery"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Biraz geliştirilmiş bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;2500^reset;J"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Geliştirilmiş^reset; Pil"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A slightly upgraded form of battery.^truncate; ^red;Scan for Info^reset;\nStorage Capacity: ^green;2500^reset;J"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Biraz geliştirilmiş bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;2500^reset;J"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A slightly upgraded form of battery.^truncate; ^red;Scan for Info^reset;\r\nStorage Capacity: ^green;2500^reset;J"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Biraz geliştirilmiş bir pil.^truncate; ^red;Bilgi için tara^reset;\nDepolama Kapasitesi: ^green;2500^reset;J"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Improved^reset; Battery"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Geliştirilmiş^reset; Pil"
+    }
+  ]
 ]

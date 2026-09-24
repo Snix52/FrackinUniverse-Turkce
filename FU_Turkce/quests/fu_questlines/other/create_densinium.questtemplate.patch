@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Toughest of Metals"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Simply put: I need better protection for the cold outside. A ^orange;Densinium Helm^orange; would be perfect. I would handsomely compensate you for the materials."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Excellent. Now I can really cut my teeth on exploring this frozen hell. As promised: ^green;your payment^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Deliver the ^orange;Densinium Helm^reset;!"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Metallerin En Dayanıklısı"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Kısacası dışarıdaki soğuğa karşı daha iyi korunmam gerek. Bir ^orange;Densinium Miğferi^reset; tam aradığım şey olurdu. Malzemelerin parasını fazlasıyla öderim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Mükemmel. Artık bu buz cehennemini keşfetmeye gerçekten koyulabilirim. Söz verdiğim gibi: ^green;ödemen^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Densinium Miğferini^reset; teslim et!"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Toughest of Metals"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Metallerin En Dayanıklısı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Simply put: I need better protection for the cold outside. A ^orange;Densinium Helm^orange; would be perfect. I would handsomely compensate you for the materials."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Kısacası dışarıdaki soğuğa karşı daha iyi korunmam gerek. Bir ^orange;Densinium Miğferi^reset; tam aradığım şey olurdu. Malzemelerin parasını fazlasıyla öderim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Excellent. Now I can really cut my teeth on exploring this frozen hell. As promised: ^green;your payment^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Mükemmel. Artık bu buz cehennemini keşfetmeye gerçekten koyulabilirim. Söz verdiğim gibi: ^green;ödemen^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Deliver the ^orange;Densinium Helm^reset;!"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Densinium Miğferini^reset; teslim et!"
+    }
+  ]
 ]

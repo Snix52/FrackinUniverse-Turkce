@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A power core used to energize tech."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Power Core^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tech sistemlerine enerji sağlamak için kullanılan bir güç çekirdeği."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#88e25b;Güç Çekirdeği^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A power core used to energize tech."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tech sistemlerine enerji sağlamak için kullanılan bir güç çekirdeği."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Power Core^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#88e25b;Güç Çekirdeği^reset;"
+    }
+  ]
 ]

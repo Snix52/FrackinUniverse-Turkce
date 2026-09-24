@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Rough, unrefined marestone."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Marestone"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Pürüzlü, işlenmemiş maretaşı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Maretaşı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Rough, unrefined marestone."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Pürüzlü, işlenmemiş maretaşı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Marestone"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Maretaşı"
+    }
+  ]
 ]

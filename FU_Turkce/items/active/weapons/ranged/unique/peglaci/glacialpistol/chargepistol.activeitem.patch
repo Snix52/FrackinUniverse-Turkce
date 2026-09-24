@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Glacial Pistol"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Eject super-cold fun at enemies.\n^yellow;Charge increases damage^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Buzul Tabancası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Düşmanlara dondurucu eğlence püskürtür.\n^yellow;Şarj, hasarı artırır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Glacial Pistol"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Buzul Tabancası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Eject super-cold fun at enemies.\n^yellow;Charge increases damage^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanlara dondurucu eğlence püskürtür.\n^yellow;Şarj, hasarı artırır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Eject super-cold fun at enemies.\r\n^yellow;Charge increases damage^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Düşmanlara dondurucu eğlence püskürtür.\n^yellow;Şarj, hasarı artırır^reset;"
+    }
+  ]
 ]

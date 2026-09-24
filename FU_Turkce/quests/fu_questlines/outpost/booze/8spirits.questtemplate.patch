@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Spirits"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "So *hic* with all these mashed fruits we're ready to make some ^green;shpirits^white;. You'll need some ^orange;Yeast Water^reset; and ^orange;Water^reset; too. Bring all to the ^green;distiller^reset; and do yer magic! *hic*"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Nice work! Now, we'll have one last recipe to do."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^orange;spirits^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Damıtılmış İçki"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Şimdi *hık* bu meyve mayşeleriyle ^green;damıtılmış içki^white; yapmaya hazırız. Biraz ^orange;Maya Suyu^reset; ve ^orange;Su^reset; da lazım. Hepsini ^green;Damıtıcıya^reset; götür, döktür marifetini! *hık*"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "İyi iş! Şimdi son bir tarifimiz kaldı."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Damıtılmış İçkiyi^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Spirits"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Damıtılmış İçki"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "So *hic* with all these mashed fruits we're ready to make some ^green;shpirits^white;. You'll need some ^orange;Yeast Water^reset; and ^orange;Water^reset; too. Bring all to the ^green;distiller^reset; and do yer magic! *hic*"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Şimdi *hık* bu meyve mayşeleriyle ^green;damıtılmış içki^white; yapmaya hazırız. Biraz ^orange;Maya Suyu^reset; ve ^orange;Su^reset; da lazım. Hepsini ^green;Damıtıcıya^reset; götür, döktür marifetini! *hık*"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Nice work! Now, we'll have one last recipe to do."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "İyi iş! Şimdi son bir tarifimiz kaldı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^orange;spirits^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Damıtılmış İçkiyi^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

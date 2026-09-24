@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Sentry Pistol"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A pistol with shrouded origins.\n^yellow;Inflicts frozen-fire^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Nöbetçi Tabancası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kökeni sırlarla örtülü bir tabanca.\n^yellow;Donmuş ateşe yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Sentry Pistol"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Nöbetçi Tabancası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A pistol with shrouded origins.\n^yellow;Inflicts frozen-fire^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kökeni sırlarla örtülü bir tabanca.\n^yellow;Donmuş ateşe yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A pistol with shrouded origins.\r\n^yellow;Inflicts frozen-fire^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kökeni sırlarla örtülü bir tabanca.\n^yellow;Donmuş ateşe yol açar^reset;"
+    }
+  ]
 ]

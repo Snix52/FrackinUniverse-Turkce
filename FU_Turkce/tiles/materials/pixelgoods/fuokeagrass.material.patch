@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's grass. I don't think it needs describing. Do you?"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Grass"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu sadece ot. Açıklamaya gerek var mı sence?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Çim"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's grass. I don't think it needs describing. Do you?"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu sadece ot. Açıklamaya gerek var mı sence?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Grass"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Çim"
+    }
+  ]
 ]

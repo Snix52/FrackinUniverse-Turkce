@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Snow Crash"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "The map has directions showing the coordinates to a far-off snowy world where an Apex rebel outpost lies. It seems they have a hostage situation on their hands...you could help, if you're interested."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Thank you for rescuing me! There's a teleporter in the basement, we can use that to escape! Before that, though, take this! You've earned it."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Help the Apex Rebels with their hostage situation."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Snow Crash"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Harita, uzaklardaki karlı bir dünyada bulunan Apex asi karakolunun koordinatlarını gösteriyor. Görünüşe bakılırsa bir rehine krizi yaşıyorlar... İstersem yardım edebilirim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Beni kurtardığın için teşekkür ederim! Bodrumda bir ışınlayıcı var; oradan kaçabiliriz! Ama önce şunu al. Bunu hak ettin."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Apex asilerine rehine krizinde yardım et."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Snow Crash"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Snow Crash"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "The map has directions showing the coordinates to a far-off snowy world where an Apex rebel outpost lies. It seems they have a hostage situation on their hands...you could help, if you're interested."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Harita, uzaklardaki karlı bir dünyada bulunan Apex asi karakolunun koordinatlarını gösteriyor. Görünüşe bakılırsa bir rehine krizi yaşıyorlar... İstersem yardım edebilirim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Thank you for rescuing me! There's a teleporter in the basement, we can use that to escape! Before that, though, take this! You've earned it."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Beni kurtardığın için teşekkür ederim! Bodrumda bir ışınlayıcı var; oradan kaçabiliriz! Ama önce şunu al. Bunu hak ettin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Help the Apex Rebels with their hostage situation."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Apex asilerine rehine krizinde yardım et."
+    }
+  ]
 ]

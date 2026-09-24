@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Why did I come here, again?"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Blood Spatter"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ben buraya neden gelmiştim ki?"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kan Sıçraması"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Why did I come here, again?"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ben buraya neden gelmiştim ki?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Blood Spatter"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kan Sıçraması"
+    }
+  ]
 ]

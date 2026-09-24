@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Some sort of ancient pod. It is likely that this was for troop transport."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Precursor Drop Pod"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kadim bir kapsül. Muhtemelen asker taşımak için kullanılmış."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Precursor İniş Kapsülü"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Some sort of ancient pod. It is likely that this was for troop transport."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kadim bir kapsül. Muhtemelen asker taşımak için kullanılmış."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Precursor Drop Pod"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Precursor İniş Kapsülü"
+    }
+  ]
 ]

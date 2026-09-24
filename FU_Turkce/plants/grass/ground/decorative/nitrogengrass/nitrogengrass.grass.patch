@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Some frozen plantlife."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Frozen Plantlife"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Donmuş bitki örtüsü."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Donmuş Bitki Örtüsü"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Some frozen plantlife."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Donmuş bitki örtüsü."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Frozen Plantlife"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Donmuş Bitki Örtüsü"
+    }
+  ]
 ]

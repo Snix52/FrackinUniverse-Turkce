@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Nomad Rifle"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Highly useful weapon for wanderers.\n^yellow;Counts as Hunting weapon^reset;\n^green;Causes Radiation Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Göçebe Tüfeği"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Gezginler için son derece kullanışlı bir silah.\n^yellow;Av silahı sayılır^reset;\n^green;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Nomad Rifle"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Göçebe Tüfeği"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Highly useful weapon for wanderers.\n^yellow;Counts as Hunting weapon^reset;\n^green;Causes Radiation Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gezginler için son derece kullanışlı bir silah.\n^yellow;Av silahı sayılır^reset;\n^green;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Highly useful weapon for wanderers.\r\n^yellow;Counts as Hunting weapon^reset;\r\n^green;Causes Radiation Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Gezginler için son derece kullanışlı bir silah.\n^yellow;Av silahı sayılır^reset;\n^green;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

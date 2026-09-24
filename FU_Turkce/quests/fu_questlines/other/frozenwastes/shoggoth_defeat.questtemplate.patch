@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "What Lies Beneath"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "From deep below me, I can hear...no, feel...^red;something dark and terrible^reset; lurking in the abyssal darkness. Dare I investigate the ^red;source of that slurping, wet cacaphony^reset;?"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "That's it. I'm done. That place was terrifying beyond my capacity to tolerate. But I killed that abomination, and feel pretty darned amazing now."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Derinlerde Yatan"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Altımdaki derinliklerden bir şey duyuyorum... hayır, hissediyorum... Dipsiz karanlıkta ^red;karanlık ve korkunç bir şey^reset; pusuda bekliyor. O şapırdayan, ıslak kakofoninin ^red;kaynağını araştırmaya^reset; cesaret edebilir miyim?"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "İşte bu kadar. Benden bu kadar. O yer dayanabileceğimin çok ötesinde korkunçtu. Ama o iğrenç yaratığı öldürdüm ve şimdi kendimi inanılmaz iyi hissediyorum."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "What Lies Beneath"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Derinlerde Yatan"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "From deep below me, I can hear...no, feel...^red;something dark and terrible^reset; lurking in the abyssal darkness. Dare I investigate the ^red;source of that slurping, wet cacaphony^reset;?"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Altımdaki derinliklerden bir şey duyuyorum... hayır, hissediyorum... Dipsiz karanlıkta ^red;karanlık ve korkunç bir şey^reset; pusuda bekliyor. O şapırdayan, ıslak kakofoninin ^red;kaynağını araştırmaya^reset; cesaret edebilir miyim?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "That's it. I'm done. That place was terrifying beyond my capacity to tolerate. But I killed that abomination, and feel pretty darned amazing now."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "İşte bu kadar. Benden bu kadar. O yer dayanabileceğimin çok ötesinde korkunçtu. Ama o iğrenç yaratığı öldürdüm ve şimdi kendimi inanılmaz iyi hissediyorum."
+    }
+  ]
 ]

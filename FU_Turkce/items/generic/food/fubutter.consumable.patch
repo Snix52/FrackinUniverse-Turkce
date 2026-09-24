@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's butter. I don't think you need a description. ^orange;Type: Dairy^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Butter"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Tereyağı. Açıklamaya gerek yok sanırım. ^orange;Tür: Süt Ürünü^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Tereyağı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's butter. I don't think you need a description. ^orange;Type: Dairy^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Tereyağı. Açıklamaya gerek yok sanırım. ^orange;Tür: Süt Ürünü^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Butter"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tereyağı"
+    }
+  ]
 ]

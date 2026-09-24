@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Kirhos Striker"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kirhos Ezici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Kirhos Striker"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kirhos Ezici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Heavy, cumbersome and awesome.\n^cyan;Breaks blocks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Heavy, cumbersome and awesome.\r\n^cyan;Breaks blocks^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ağır, hantal ve muhteşem.\n^cyan;Blokları kırar^reset;"
+    }
+  ]
 ]

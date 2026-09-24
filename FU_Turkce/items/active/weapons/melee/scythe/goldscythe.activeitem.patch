@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Golden Scythe"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Polished to shiny perfection.\n^cyan;Poisoned Edge^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Altın Tırpan"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kusursuz parlayana dek cilalanmış.\n^cyan;Zehirli ağız^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Golden Scythe"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Altın Tırpan"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Polished to shiny perfection.\n^cyan;Poisoned Edge^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kusursuz parlayana dek cilalanmış.\n^cyan;Zehirli ağız^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Polished to shiny perfection.\r\n^cyan;Poisoned Edge^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kusursuz parlayana dek cilalanmış.\n^cyan;Zehirli ağız^reset;"
+    }
+  ]
 ]

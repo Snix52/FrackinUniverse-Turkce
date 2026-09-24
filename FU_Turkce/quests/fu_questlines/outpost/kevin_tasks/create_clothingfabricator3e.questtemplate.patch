@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Madness and Death"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I bet you can't collect more brains than I can! In fact, I ^orange;double-dog-dare^reset; you to collect ^orange;more brains^reset; than I can! Remove ^orange;50 brains^reset; from random life-forms...that's a decent start."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "That's a whole lot of brains! Also, I didn't even bother collecting any. You beat me! You're also now ^orange;a murderer^reset;! Congratulations!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring ^red;Kevin^reset; 50 ^orange;Brains^reset; of average quality."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Delilik ve Ölüm"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Benden daha çok beyin toplayamazsın! Hatta sana ^orange;hodri meydan^reset;: benden ^orange;daha çok beyin^reset; topla bakalım! Rastgele canlılardan ^orange;50 beyin^reset; çıkarmak... iyi bir başlangıç."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Ne çok beyin! Üstelik ben bir tane bile toplamaya uğraşmadım. Beni yendin! Artık sen de ^orange;bir katilsin^reset;! Tebrikler!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^red;Kevin'a^reset; 50 ^orange;Üstün Beyin^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Madness and Death"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Delilik ve Ölüm"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I bet you can't collect more brains than I can! In fact, I ^orange;double-dog-dare^reset; you to collect ^orange;more brains^reset; than I can! Remove ^orange;50 brains^reset; from random life-forms...that's a decent start."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Benden daha çok beyin toplayamazsın! Hatta sana ^orange;hodri meydan^reset;: benden ^orange;daha çok beyin^reset; topla bakalım! Rastgele canlılardan ^orange;50 beyin^reset; çıkarmak... iyi bir başlangıç."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "That's a whole lot of brains! Also, I didn't even bother collecting any. You beat me! You're also now ^orange;a murderer^reset;! Congratulations!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Ne çok beyin! Üstelik ben bir tane bile toplamaya uğraşmadım. Beni yendin! Artık sen de ^orange;bir katilsin^reset;! Tebrikler!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring ^red;Kevin^reset; 50 ^orange;Brains^reset; of average quality."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^red;Kevin'a^reset; 50 ^orange;Üstün Beyin^reset; götür."
+    }
+  ]
 ]

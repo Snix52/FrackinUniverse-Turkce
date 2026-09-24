@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A shrub."
-  },
-  {
-    "op": "test",
-    "path": "/floranDescription",
-    "value": "Ssshrub."
-  },
-  {
-    "op": "test",
-    "path": "/glitchDescription",
-    "value": "Statement. A shrub."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "A shrub."
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Çalı."
-  },
-  {
-    "op": "replace",
-    "path": "/floranDescription",
-    "value": "Sssçalı."
-  },
-  {
-    "op": "replace",
-    "path": "/glitchDescription",
-    "value": "Bildirim. Bir çalı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Çalı."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A shrub."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Çalı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/floranDescription",
+      "value": "Ssshrub."
+    },
+    {
+      "op": "replace",
+      "path": "/floranDescription",
+      "value": "Sssçalı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/glitchDescription",
+      "value": "Statement. A shrub."
+    },
+    {
+      "op": "replace",
+      "path": "/glitchDescription",
+      "value": "Bildirim. Bir çalı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "A shrub."
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Çalı."
+    }
+  ]
 ]

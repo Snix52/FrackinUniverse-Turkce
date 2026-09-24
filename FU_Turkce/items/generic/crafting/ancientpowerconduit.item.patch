@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#e43774;Unknown Device^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Some sort of previously undiscovered Ancient technology."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#e43774;Bilinmeyen Cihaz^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Daha önce keşfedilmemiş bir Kadim teknolojisi gibi görünüyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#e43774;Unknown Device^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#e43774;Bilinmeyen Cihaz^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Some sort of previously undiscovered Ancient technology."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Daha önce keşfedilmemiş bir Kadim teknolojisi gibi görünüyor."
+    }
+  ]
 ]

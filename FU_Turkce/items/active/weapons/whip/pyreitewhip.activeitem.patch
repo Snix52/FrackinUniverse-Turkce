@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pyreite Whip"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "There is no whip hotter than this. Take that as you will.\n^cyan;Inflicts Napalm^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pyreite Kırbaç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bundan daha sıcak bir kırbaç yok. Nasıl anlamak istersen.\n^cyan;Napalm uygular^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pyreite Whip"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pyreite Kırbaç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "There is no whip hotter than this. Take that as you will.\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bundan daha sıcak bir kırbaç yok. Nasıl anlamak istersen.\n^cyan;Napalm uygular^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "There is no whip hotter than this. Take that as you will.\r\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bundan daha sıcak bir kırbaç yok. Nasıl anlamak istersen.\n^cyan;Napalm uygular^reset;"
+    }
+  ]
 ]

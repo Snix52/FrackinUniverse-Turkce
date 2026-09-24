@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A station to heal pets, robots and...others."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Mutari Healing Station^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "For dead pets, broken bots, and more."
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Evcil hayvanları, robotları ve... başka şeyleri iyileştiren bir istasyon."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Mutari İyileştirme İstasyonu^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Ölü evcil hayvanlar, bozuk botlar ve daha fazlası için."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A station to heal pets, robots and...others."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Evcil hayvanları, robotları ve... başka şeyleri iyileştiren bir istasyon."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Mutari Healing Station^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Mutari İyileştirme İstasyonu^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "For dead pets, broken bots, and more."
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Ölü evcil hayvanlar, bozuk botlar ve daha fazlası için."
+    }
+  ]
 ]

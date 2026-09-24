@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Bone Spur"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A cheery little maiming device. Keep out of children.\n^cyan;Floran^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kemik Mahmuz"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Neşeli görünen küçük bir sakatlama aleti. Çocuklardan uzak tut.\n^cyan;Floran^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Bone Spur"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kemik Mahmuz"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cheery little maiming device. Keep out of children.\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Neşeli görünen küçük bir sakatlama aleti. Çocuklardan uzak tut.\n^cyan;Floran^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cheery little maiming device. Keep out of children.\r\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Neşeli görünen küçük bir sakatlama aleti. Çocuklardan uzak tut.\n^cyan;Floran^reset;"
+    }
+  ]
 ]

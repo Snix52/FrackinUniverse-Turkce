@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A forest bee, found in the depths of a forest."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Forest Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ormanın derinliklerinde yaşayan bir orman arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Orman Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A forest bee, found in the depths of a forest."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ormanın derinliklerinde yaşayan bir orman arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Forest Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Orman Arısı"
+    }
+  ]
 ]

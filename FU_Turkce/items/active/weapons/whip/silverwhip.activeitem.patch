@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Silver Whip"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Vanquish monsters with stylish silver!\n^cyan;Able to damage all elements equally^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Gümüş Kırbaç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Şık gümüşle canavarların hakkından gel!\n^cyan;Tüm elementlere eşit hasar verir^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Silver Whip"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Gümüş Kırbaç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Vanquish monsters with stylish silver!\n^cyan;Able to damage all elements equally^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Şık gümüşle canavarların hakkından gel!\n^cyan;Tüm elementlere eşit hasar verir^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Vanquish monsters with stylish silver!\r\n^cyan;Able to damage all elements equally^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Şık gümüşle canavarların hakkından gel!\n^cyan;Tüm elementlere eşit hasar verir^reset;"
+    }
+  ]
 ]

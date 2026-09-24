@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Wooden Workbench^white;"
-  },
-  {
-    "op": "test",
-    "path": "/upgradeStages/0/itemSpawnParameters/shortdescription",
-    "value": "^orange;Wooden Workbench^white;"
-  },
-  {
-    "op": "test",
-    "path": "/upgradeStages/1/itemSpawnParameters/shortdescription",
-    "value": "^orange;Industrial Workbench^white;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Ahşap Tezgâh^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/upgradeStages/0/itemSpawnParameters/shortdescription",
-    "value": "^orange;Ahşap Tezgâh^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/upgradeStages/1/itemSpawnParameters/shortdescription",
-    "value": "^orange;Endüstriyel Tezgâh^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Wooden Workbench^white;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Ahşap Tezgâh^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "value": "^orange;Wooden Workbench^white;"
+    },
+    {
+      "op": "replace",
+      "path": "/upgradeStages/0/itemSpawnParameters/shortdescription",
+      "value": "^orange;Ahşap Tezgâh^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "value": "^orange;Industrial Workbench^white;"
+    },
+    {
+      "op": "replace",
+      "path": "/upgradeStages/1/itemSpawnParameters/shortdescription",
+      "value": "^orange;Endüstriyel Tezgâh^reset;"
+    }
+  ]
 ]

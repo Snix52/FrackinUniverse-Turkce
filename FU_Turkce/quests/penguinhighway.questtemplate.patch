@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;Highway Havoc"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "The penguins' map shows their next assault target: a city on a distant planet known as Techno City. I should put a wrench in their invasion plans!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Wow, that was quite the horde of penguins! Something about this city gives me nostalgia, though..."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Defeat the penguins attacking Techno City."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Otoyol Kargaşası"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Penguenlerin haritası bir sonraki saldırı hedeflerini gösteriyor: Uzak bir gezegendeki Techno City. İşgal planlarına çomak sokmalıyım!"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Vay canına, ne penguen sürüsüydü ama! Yine de bu şehir bende tuhaf bir nostalji uyandırıyor..."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Techno City'ye saldıran penguenleri yen."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;Highway Havoc"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Otoyol Kargaşası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "The penguins' map shows their next assault target: a city on a distant planet known as Techno City. I should put a wrench in their invasion plans!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Penguenlerin haritası bir sonraki saldırı hedeflerini gösteriyor: Uzak bir gezegendeki Techno City. İşgal planlarına çomak sokmalıyım!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Wow, that was quite the horde of penguins! Something about this city gives me nostalgia, though..."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Vay canına, ne penguen sürüsüydü ama! Yine de bu şehir bende tuhaf bir nostalji uyandırıyor..."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Defeat the penguins attacking Techno City."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Techno City'ye saldıran penguenleri yen."
+    }
+  ]
 ]

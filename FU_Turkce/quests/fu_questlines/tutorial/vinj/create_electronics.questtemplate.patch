@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Powered Up"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Now that you have a firm concept of how to use your well-earned resources, perhaps it is time we delve into something more cerebral? You can start by making an ^orange;Electronics Center^reset;. Conduct ^orange;Research^reset; into ^orange;Electronics^reset; to get started."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "This will really bring your lab to the next level! I recommend learning to use an ^orange;Item Transference Device^reset; as soon as you can. It is a truly powerful piece of technology when paired with ^orange;Terminals^reset; and powered machinery."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Güç Devrede"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Emekle topladığın kaynakları nasıl kullanacağını artık biliyorsun. Biraz daha kafa çalıştırmaya ne dersin? Bir ^orange;Elektronik Merkezi^reset; kurarak işe koyulabilirsin. Önce ^orange;Araştırma^reset; menüsünden ^orange;Elektronik^reset; araştırmasını aç."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu, laboratuvarını gerçekten ileri taşıyacak! En kısa zamanda ^orange;Eşya Aktarım Cihazını^reset; kullanmayı öğrenmeni öneririm. ^orange;Terminaller^reset; ve elektrikli makinelerle birlikte kullanıldığında çok güçlü bir teknolojidir."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;Elektronik Merkezini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Powered Up"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Güç Devrede"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Now that you have a firm concept of how to use your well-earned resources, perhaps it is time we delve into something more cerebral? You can start by making an ^orange;Electronics Center^reset;. Conduct ^orange;Research^reset; into ^orange;Electronics^reset; to get started."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Emekle topladığın kaynakları nasıl kullanacağını artık biliyorsun. Biraz daha kafa çalıştırmaya ne dersin? Bir ^orange;Elektronik Merkezi^reset; kurarak işe koyulabilirsin. Önce ^orange;Araştırma^reset; menüsünden ^orange;Elektronik^reset; araştırmasını aç."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "This will really bring your lab to the next level! I recommend learning to use an ^orange;Item Transference Device^reset; as soon as you can. It is a truly powerful piece of technology when paired with ^orange;Terminals^reset; and powered machinery."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu, laboratuvarını gerçekten ileri taşıyacak! En kısa zamanda ^orange;Eşya Aktarım Cihazını^reset; kullanmayı öğrenmeni öneririm. ^orange;Terminaller^reset; ve elektrikli makinelerle birlikte kullanıldığında çok güçlü bir teknolojidir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;Armorworks^reset; to me at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;Elektronik Merkezini^reset; ^orange;Bilim Karakolunda^reset; bana getir."
+    }
+  ]
 ]

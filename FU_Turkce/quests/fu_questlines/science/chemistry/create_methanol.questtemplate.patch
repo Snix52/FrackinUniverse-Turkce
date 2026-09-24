@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "A Useful Alcohol"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I could use some ^orange;Methanol^reset; but don't have the materials handy. Bring me 10 ^orange;Methanol^reset; and I'll toss you something useful in return. Not a grenade. Promise."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Excellent. This will be quite useful, and goes quite appreciated. Take ^green;this augment^reset;, perhaps you can get more use out of it than I ever could."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the 10 ^orange;Methanol^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Faydalı Bir Alkol"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Biraz ^orange;Metanol^reset; lazım ama malzemem yok. Bana 10 ^orange;Metanol^reset; getir, karşılığında işe yarar bir şey vereyim. El bombası değil. Söz."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Harika. Bu çok işime yarayacak, sağ ol. ^green;Şu eklentiyi^reset; al; belki sen benden daha çok kullanırsın."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "10 ^orange;Metanolü^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "A Useful Alcohol"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Faydalı Bir Alkol"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I could use some ^orange;Methanol^reset; but don't have the materials handy. Bring me 10 ^orange;Methanol^reset; and I'll toss you something useful in return. Not a grenade. Promise."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Biraz ^orange;Metanol^reset; lazım ama malzemem yok. Bana 10 ^orange;Metanol^reset; getir, karşılığında işe yarar bir şey vereyim. El bombası değil. Söz."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Excellent. This will be quite useful, and goes quite appreciated. Take ^green;this augment^reset;, perhaps you can get more use out of it than I ever could."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Harika. Bu çok işime yarayacak, sağ ol. ^green;Şu eklentiyi^reset; al; belki sen benden daha çok kullanırsın."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the 10 ^orange;Methanol^reset; to the green-tailed cat at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "10 ^orange;Metanolü^reset; ^orange;Bilim Karakolundaki^reset; yeşil kuyruklu kediye götür."
+    }
+  ]
 ]

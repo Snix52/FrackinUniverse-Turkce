@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Spacepunk Helmet"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^cyan;Headlamp^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; Oxygen x^green;30^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Spacepunk Miğferi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^cyan;Kafa Lambası^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; Oksijen x^green;30^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Spacepunk Helmet"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Spacepunk Miğferi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Headlamp^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; Oxygen x^green;30^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Kafa Lambası^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; Oksijen x^green;30^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^cyan;Headlamp^reset;\r\n^orange;Set Bonuses^reset;:\r\n^yellow;^reset; Oxygen x^green;30^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^cyan;Kafa Lambası^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; Oksijen x^green;30^reset;"
+    }
+  ]
 ]

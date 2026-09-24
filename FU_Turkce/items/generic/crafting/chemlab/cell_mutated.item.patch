@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Mutated Cell"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A cell riddled with unusual biological mutations."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mutasyona Uğramış Hücre"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Sıra dışı biyolojik mutasyonlarla dolu bir hücre."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Mutated Cell"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mutasyona Uğramış Hücre"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cell riddled with unusual biological mutations."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Sıra dışı biyolojik mutasyonlarla dolu bir hücre."
+    }
+  ]
 ]

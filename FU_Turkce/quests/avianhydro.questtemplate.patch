@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;The Hydro Center"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "The map shows me coordinates to an underwater hydro distribution center on a far-off obscure planet. It apparently holds a great treasure. "
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "I think there was more than meets the eye to this facility. Did I explore it sufficiently, sawblades notwithstanding?"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Search the Hydro Distribution Center for great treasure."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Su Dağıtım Merkezi"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Harita, uzak ve ıssız bir gezegendeki su altı hidro dağıtım merkezinin koordinatlarını gösteriyor. Söylentiye göre içeride büyük bir hazine var."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu tesiste görünenden fazlası vardı. Testere bıçaklarına rağmen yeterince araştırabildim mi acaba?"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Büyük hazine için Su Dağıtım Merkezini araştır."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;The Hydro Center"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Su Dağıtım Merkezi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "The map shows me coordinates to an underwater hydro distribution center on a far-off obscure planet. It apparently holds a great treasure. "
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Harita, uzak ve ıssız bir gezegendeki su altı hidro dağıtım merkezinin koordinatlarını gösteriyor. Söylentiye göre içeride büyük bir hazine var."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "I think there was more than meets the eye to this facility. Did I explore it sufficiently, sawblades notwithstanding?"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu tesiste görünenden fazlası vardı. Testere bıçaklarına rağmen yeterince araştırabildim mi acaba?"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Search the Hydro Distribution Center for great treasure."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Büyük hazine için Su Dağıtım Merkezini araştır."
+    }
+  ]
 ]

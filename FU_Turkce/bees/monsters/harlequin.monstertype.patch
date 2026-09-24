@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A harlequin bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Harlequin Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir Harlequin arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Harlequin Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A harlequin bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir Harlequin arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Harlequin Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Harlequin Arısı"
+    }
+  ]
 ]

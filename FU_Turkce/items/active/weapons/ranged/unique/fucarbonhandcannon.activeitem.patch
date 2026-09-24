@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Blasthammer"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A brutally effective pistol.\n^cyan;Shotgun - style bursts ^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Patlama Çekici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Acımasız derecede etkili bir tabanca.\n^cyan;Pompalı tarzı seri atışlar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Blasthammer"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Patlama Çekici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A brutally effective pistol.\n^cyan;Shotgun - style bursts ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Acımasız derecede etkili bir tabanca.\n^cyan;Pompalı tarzı seri atışlar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A brutally effective pistol.\r\n^cyan;Shotgun - style bursts ^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Acımasız derecede etkili bir tabanca.\n^cyan;Pompalı tarzı seri atışlar^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This might come in handy."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Silenes' Minerals^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu işe yarayabilir."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Silene'nin Mineralleri^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This might come in handy."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu işe yarayabilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Silenes' Minerals^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Silene'nin Mineralleri^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Pyreite Mace"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Masterful crafting, deadly edges.\n^cyan;Inflicts Napalm^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pyreite Topuzu"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Usta işçilik, ölümcül kenarlar.\n^cyan;Napalm uygular^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Pyreite Mace"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pyreite Topuzu"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Masterful crafting, deadly edges.\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Usta işçilik, ölümcül kenarlar.\n^cyan;Napalm uygular^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Masterful crafting, deadly edges.\r\n^cyan;Inflicts Napalm^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Usta işçilik, ölümcül kenarlar.\n^cyan;Napalm uygular^reset;"
+    }
+  ]
 ]

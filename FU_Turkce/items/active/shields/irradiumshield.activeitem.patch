@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;Immune: Extreme Radiation, Burning^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Kalkan"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;Bağışıklık: Aşırı Radyasyon, Yanma^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Kalkan"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;Immune: Extreme Radiation, Burning^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;Bağışıklık: Aşırı Radyasyon, Yanma^reset;"
+    }
+  ]
 ]

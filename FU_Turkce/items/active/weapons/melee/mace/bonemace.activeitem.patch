@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Bone Mace"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Simple, but effective. Design by Sacre.\n^cyan;Floran^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kemik Gürz"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Basit ama etkili. Sacre tasarımı.\n^cyan;Floran^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Bone Mace"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kemik Gürz"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Simple, but effective. Design by Sacre.\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Basit ama etkili. Sacre tasarımı.\n^cyan;Floran^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Simple, but effective. Design by Sacre.\r\n^cyan;Floran^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Basit ama etkili. Sacre tasarımı.\n^cyan;Floran^reset;"
+    }
+  ]
 ]

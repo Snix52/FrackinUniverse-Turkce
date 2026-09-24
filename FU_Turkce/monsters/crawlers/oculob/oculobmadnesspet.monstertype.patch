@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's unpleasant to look at. It's also unpleasant when it looks at you."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Oculob"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Ona bakmak hoş değil. O sana baktığında da pek hoş olmuyor."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Oculob"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's unpleasant to look at. It's also unpleasant when it looks at you."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Ona bakmak hoş değil. O sana baktığında da pek hoş olmuyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Oculob"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Oculob"
+    }
+  ]
 ]

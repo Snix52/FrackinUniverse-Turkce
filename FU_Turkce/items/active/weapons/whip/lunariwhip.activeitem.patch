@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Lunari Whip"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A cool whip fashioned from crystal. Put your enemies on ice!\n^cyan;Inflicts Slow^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Lunari Kırbacı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kristalden yapılmış havalı bir kırbaç. Düşmanlarını dondur!\n^cyan;Yavaşlatır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Lunari Whip"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Lunari Kırbacı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cool whip fashioned from crystal. Put your enemies on ice!\n^cyan;Inflicts Slow^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kristalden yapılmış havalı bir kırbaç. Düşmanlarını dondur!\n^cyan;Yavaşlatır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A cool whip fashioned from crystal. Put your enemies on ice!\r\n^cyan;Inflicts Slow^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kristalden yapılmış havalı bir kırbaç. Düşmanlarını dondur!\n^cyan;Yavaşlatır^reset;"
+    }
+  ]
 ]

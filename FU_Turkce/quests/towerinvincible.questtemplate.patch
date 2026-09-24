@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "^green;The Tower Invincible"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "A dread Glitch warlord has been terrorising nearby planets from his tower on a far-off planet. I should do something about this."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "Ha ha! A true test and proof of my stremf! Now time to help myself to all this sweet, sweet loot!"
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Defeat the dread warlord of the Tower Invincible."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "^green;Yenilmez Kule"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Korkunç bir Glitch savaş ağası, uzak bir gezegendeki kulesinden çevredeki gezegenlere dehşet saçıyor. Buna bir son vermeliyim."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Ha ha! Gerçek bir sınav ve gücümün kanıtı! Şimdi şu tatlı mı tatlı ganimetleri toplama vakti!"
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Yenilmez Kule'deki korkunç savaş ağasını yen."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "^green;The Tower Invincible"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "^green;Yenilmez Kule"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "A dread Glitch warlord has been terrorising nearby planets from his tower on a far-off planet. I should do something about this."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Korkunç bir Glitch savaş ağası, uzak bir gezegendeki kulesinden çevredeki gezegenlere dehşet saçıyor. Buna bir son vermeliyim."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "Ha ha! A true test and proof of my stremf! Now time to help myself to all this sweet, sweet loot!"
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Ha ha! Gerçek bir sınav ve gücümün kanıtı! Şimdi şu tatlı mı tatlı ganimetleri toplama vakti!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Defeat the dread warlord of the Tower Invincible."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Yenilmez Kule'deki korkunç savaş ağasını yen."
+    }
+  ]
 ]

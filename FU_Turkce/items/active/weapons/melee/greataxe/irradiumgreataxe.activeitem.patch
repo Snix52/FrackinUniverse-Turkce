@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Greataxe"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Not at all fun to be cleaved by.\n^cyan;Inflicts Rad-Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Büyük Balta"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bununla ikiye ayrılmak hiç eğlenceli değil.\n^cyan;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Greataxe"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Büyük Balta"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Not at all fun to be cleaved by.\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bununla ikiye ayrılmak hiç eğlenceli değil.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Not at all fun to be cleaved by.\r\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bununla ikiye ayrılmak hiç eğlenceli değil.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

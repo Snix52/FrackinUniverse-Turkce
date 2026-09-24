@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Repairing Your Teleporter"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Use your ^orange;Machining Table^reset; now, and create 9 ^orange;Wire^reset; and bring them to me. I'll jury-rig a fix for your ^green;Teleporter^reset; so that you can ^green;warp to distant locations^reset; such as the ^orange;Science Outpost^reset;!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "I was ^green;testing your worth^reset; and you passed the test. Your mind is sharp, and I think you'll be an asset to the scientific community. Thank you, ^orange;Agent^reset;."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring the ^green;9 Wires^reset; to ^orange;Vinalisj^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Işınlayıcını Onar"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^orange;İmalat Tezgâhında^reset; 9 ^orange;Kablo^reset; üretip bana getir. ^green;Işınlayıcını^reset; eldeki parçalarla onaracağım. Böylece ^green;uzak yerlere ışınlanabilir^reset;, örneğin ^orange;Bilim Karakoluna^reset; gidebilirsin!"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "^green;Seni sınamak istemiştim^reset; ve bu sınavı geçtin. Keskin bir zekân var; bilim dünyasına çok şey katacağına inanıyorum. Teşekkürler, ^orange;Ajan^reset;."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^green;9 Kabloyu^reset; ^orange;Vinalisj'e^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Repairing Your Teleporter"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Işınlayıcını Onar"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Use your ^orange;Machining Table^reset; now, and create 9 ^orange;Wire^reset; and bring them to me. I'll jury-rig a fix for your ^green;Teleporter^reset; so that you can ^green;warp to distant locations^reset; such as the ^orange;Science Outpost^reset;!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^orange;İmalat Tezgâhında^reset; 9 ^orange;Kablo^reset; üretip bana getir. ^green;Işınlayıcını^reset; eldeki parçalarla onaracağım. Böylece ^green;uzak yerlere ışınlanabilir^reset;, örneğin ^orange;Bilim Karakoluna^reset; gidebilirsin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "I was ^green;testing your worth^reset; and you passed the test. Your mind is sharp, and I think you'll be an asset to the scientific community. Thank you, ^orange;Agent^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "^green;Seni sınamak istemiştim^reset; ve bu sınavı geçtin. Keskin bir zekân var; bilim dünyasına çok şey katacağına inanıyorum. Teşekkürler, ^orange;Ajan^reset;."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring the ^green;9 Wires^reset; to ^orange;Vinalisj^reset;."
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^green;9 Kabloyu^reset; ^orange;Vinalisj'e^reset; götür."
+    }
+  ]
 ]

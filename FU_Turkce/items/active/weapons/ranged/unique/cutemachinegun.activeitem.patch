@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Prismatic Machinegun"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Light up the room. With death.\n^yellow;Counts as 'energy' for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Prizmatik Makineli Tüfek"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Odayı aydınlatır. Ölümle.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Prismatic Machinegun"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Prizmatik Makineli Tüfek"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Light up the room. With death.\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Odayı aydınlatır. Ölümle.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Light up the room. With death.\r\n^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Odayı aydınlatır. Ölümle.\n^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ]
 ]

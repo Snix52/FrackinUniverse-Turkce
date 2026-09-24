@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/textScrollBox/children/text/value",
-    "value": "I AM ERROR"
-  },
-  {
-    "op": "test",
-    "path": "/gui/close/caption",
-    "value": "Dismiss"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/textScrollBox/children/text/value",
-    "value": "HATA"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/close/caption",
-    "value": "Kapat"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/textScrollBox/children/text/value",
+      "value": "I AM ERROR"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/textScrollBox/children/text/value",
+      "value": "HATA"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/close/caption",
+      "value": "Dismiss"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/close/caption",
+      "value": "Kapat"
+    }
+  ]
 ]

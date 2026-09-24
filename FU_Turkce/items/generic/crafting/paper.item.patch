@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's a sheet of paper."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Paper"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir yaprak kağıt."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kağıt"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's a sheet of paper."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir yaprak kağıt."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Paper"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kağıt"
+    }
+  ]
 ]

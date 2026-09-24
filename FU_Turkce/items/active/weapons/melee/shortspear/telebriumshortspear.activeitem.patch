@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Telebrium Shortspear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "So light, they won't even realize you killed them.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Telebrium Kısa Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Öyle hafif ki öldüklerini bile fark etmezler.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Telebrium Shortspear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Telebrium Kısa Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "So light, they won't even realize you killed them.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Öyle hafif ki öldüklerini bile fark etmezler.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "So light, they won't even realize you killed them.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Öyle hafif ki öldüklerini bile fark etmezler.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

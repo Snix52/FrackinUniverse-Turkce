@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Slime Launcher"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Not practical, but certainly enjoyable.\n^yellow;Spawns slime^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Balçık Fırlatıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Pek kullanışlı değil ama kesinlikle eğlenceli.\n^yellow;Balçık çağırır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Slime Launcher"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Balçık Fırlatıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Not practical, but certainly enjoyable.\n^yellow;Spawns slime^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Pek kullanışlı değil ama kesinlikle eğlenceli.\n^yellow;Balçık çağırır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Not practical, but certainly enjoyable.\r\n^yellow;Spawns slime^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Pek kullanışlı değil ama kesinlikle eğlenceli.\n^yellow;Balçık çağırır^reset;"
+    }
+  ]
 ]

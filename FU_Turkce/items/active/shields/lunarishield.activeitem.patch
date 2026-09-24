@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Lunari Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;Immune: Slime^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Lunari Kalkanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;Bağışıklık: Balçık^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Lunari Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Lunari Kalkanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;Immune: Slime^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;Bağışıklık: Balçık^reset;"
+    }
+  ]
 ]

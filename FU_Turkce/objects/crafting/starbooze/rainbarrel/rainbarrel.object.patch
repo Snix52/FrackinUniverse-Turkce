@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A barrel to collect rainwater!"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Rain Barrel^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "Rain Barrel."
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Yağmur suyu toplamak için kullanılan bir varil!"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Yağmur Varili^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Yağmur Varili."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A barrel to collect rainwater!"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Yağmur suyu toplamak için kullanılan bir varil!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Rain Barrel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Yağmur Varili^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "Rain Barrel."
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Yağmur Varili."
+    }
+  ]
 ]

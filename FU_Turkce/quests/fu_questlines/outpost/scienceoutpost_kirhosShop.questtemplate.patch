@@ -1,42 +1,50 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "A rare treasure"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "I've heard that there is a rare component called a ^orange;Alien Broadcast Node^reset; that could be utilized for a truly great FTL drive just waiting to be found somewhere in the ^green;Evernight Jungle^reset;. It's a rumour, granted, but hypothetically, if you found one, I might have something for you..."
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "You've no idea how much this means to me. As thanks for this most wonderous technology I bequeath to you another sort of rarity. May it bring you fortune in your travels."
-  },
-  {
-    "op": "test",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "Bring a ^orange;Alien Broadcast Node^reset; to the ^green;Kirhosi Shop^reset; at the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Nadir Bir Hazine"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "^green;Evernight Tropik Ormanı'nda^reset; bir yerlerde ^orange;Uzaylı Yayın Düğümü^reset; denen nadir bir bileşen bulunduğunu duydum. Gerçekten güçlü bir FTL motorunda kullanılabilirmiş. Şimdilik söylentiden ibaret ama... diyelim ki bir tane buldun, sana verecek bir şeyim olabilir."
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bunun benim için ne kadar önemli olduğunu tahmin bile edemezsin. Bu harika teknolojinin karşılığında sana başka bir nadir eşya armağan ediyorum. Yolculuklarında şans getirsin."
-  },
-  {
-    "op": "replace",
-    "path": "/scriptConfig/turnInDescription",
-    "value": "^orange;Uzaylı Yayın Düğümünü^reset; ^orange;Bilim Karakolundaki^reset; ^green;Kirhos Dükkânına^reset; götür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "A rare treasure"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Nadir Bir Hazine"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "I've heard that there is a rare component called a ^orange;Alien Broadcast Node^reset; that could be utilized for a truly great FTL drive just waiting to be found somewhere in the ^green;Evernight Jungle^reset;. It's a rumour, granted, but hypothetically, if you found one, I might have something for you..."
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "^green;Evernight Tropik Ormanı'nda^reset; bir yerlerde ^orange;Uzaylı Yayın Düğümü^reset; denen nadir bir bileşen bulunduğunu duydum. Gerçekten güçlü bir FTL motorunda kullanılabilirmiş. Şimdilik söylentiden ibaret ama... diyelim ki bir tane buldun, sana verecek bir şeyim olabilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "You've no idea how much this means to me. As thanks for this most wonderous technology I bequeath to you another sort of rarity. May it bring you fortune in your travels."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bunun benim için ne kadar önemli olduğunu tahmin bile edemezsin. Bu harika teknolojinin karşılığında sana başka bir nadir eşya armağan ediyorum. Yolculuklarında şans getirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "Bring a ^orange;Alien Broadcast Node^reset; to the ^green;Kirhosi Shop^reset; at the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/scriptConfig/turnInDescription",
+      "value": "^orange;Uzaylı Yayın Düğümünü^reset; ^orange;Bilim Karakolundaki^reset; ^green;Kirhos Dükkânına^reset; götür."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Telebrium Sniper Rifle"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Poisonous rounds are handy in a pinch.\n^cyan;Fast projectiles^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Telebrium Keskin Nişancı Tüfeği"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Zehirli mermiler zor anlarda çok işe yarar.\n^cyan;Hızlı mermiler^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Telebrium Sniper Rifle"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Telebrium Keskin Nişancı Tüfeği"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Poisonous rounds are handy in a pinch.\n^cyan;Fast projectiles^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zehirli mermiler zor anlarda çok işe yarar.\n^cyan;Hızlı mermiler^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Poisonous rounds are handy in a pinch.\r\n^cyan;Fast projectiles^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Zehirli mermiler zor anlarda çok işe yarar.\n^cyan;Hızlı mermiler^reset;"
+    }
+  ]
 ]

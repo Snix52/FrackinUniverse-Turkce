@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Incinerator"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "What greater joy than cooking flesh?\n^yellow;Inflicts burning^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Yakıcı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Et pişirmekten daha büyük neşe var mı?\n^yellow;Yanma etkisi uygular^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Incinerator"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Yakıcı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "What greater joy than cooking flesh?\n^yellow;Inflicts burning^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Et pişirmekten daha büyük neşe var mı?\n^yellow;Yanma etkisi uygular^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "What greater joy than cooking flesh?\r\n^yellow;Inflicts burning^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Et pişirmekten daha büyük neşe var mı?\n^yellow;Yanma etkisi uygular^reset;"
+    }
+  ]
 ]

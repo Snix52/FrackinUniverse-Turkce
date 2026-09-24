@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A salad of wartweed, tomato, and pearlpeas. ^green;Type: Vegetables^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Wartweed Salad"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Wartweed, domates ve inci bezelyeden yapılmış salata. ^green;Tür: Sebze^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Wartweed Salatası"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A salad of wartweed, tomato, and pearlpeas. ^green;Type: Vegetables^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Wartweed, domates ve inci bezelyeden yapılmış salata. ^green;Tür: Sebze^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Wartweed Salad"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Wartweed Salatası"
+    }
+  ]
 ]

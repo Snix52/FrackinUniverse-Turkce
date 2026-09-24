@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/gui/clear/caption",
-    "value": "Take all"
-  },
-  {
-    "op": "test",
-    "path": "/gui/count/value",
-    "value": "FUEL SLOTS"
-  },
-  {
-    "op": "test",
-    "path": "/gui/countwaste/value",
-    "value": "WATER"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/clear/caption",
-    "value": "Tümünü Al"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/count/value",
-    "value": "YAKIT YUVALARI"
-  },
-  {
-    "op": "replace",
-    "path": "/gui/countwaste/value",
-    "value": "SU"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/gui/clear/caption",
+      "value": "Take all"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/clear/caption",
+      "value": "Tümünü Al"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/count/value",
+      "value": "FUEL SLOTS"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/count/value",
+      "value": "YAKIT YUVALARI"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gui/countwaste/value",
+      "value": "WATER"
+    },
+    {
+      "op": "replace",
+      "path": "/gui/countwaste/value",
+      "value": "SU"
+    }
+  ]
 ]

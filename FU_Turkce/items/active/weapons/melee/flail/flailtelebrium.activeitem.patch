@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Telebrium Striker"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Laced with telebrium. Pretty.\n^cyan;Breaks blocks^reset;\n^yellow;Inflicts Poisoned^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Telebrium Ezici"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Telebriumla bezenmiş. Pek hoş.\n^cyan;Blokları kırar^reset;\n^yellow;Zehirlenmeye yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Telebrium Striker"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Telebrium Ezici"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Laced with telebrium. Pretty.\n^cyan;Breaks blocks^reset;\n^yellow;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Telebriumla bezenmiş. Pek hoş.\n^cyan;Blokları kırar^reset;\n^yellow;Zehirlenmeye yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Laced with telebrium. Pretty.\r\n^cyan;Breaks blocks^reset;\r\n^yellow;Inflicts Poisoned^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Telebriumla bezenmiş. Pek hoş.\n^cyan;Blokları kırar^reset;\n^yellow;Zehirlenmeye yol açar^reset;"
+    }
+  ]
 ]

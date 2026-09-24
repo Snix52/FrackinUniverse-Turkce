@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Plain paneling, because sometimes less is more."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Plain Panel"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bazen azı çoğudur: sade panel kaplama."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sade Panel"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Plain paneling, because sometimes less is more."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bazen azı çoğudur: sade panel kaplama."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Plain Panel"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sade Panel"
+    }
+  ]
 ]

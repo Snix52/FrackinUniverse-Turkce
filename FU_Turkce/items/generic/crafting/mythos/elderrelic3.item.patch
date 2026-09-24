@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Blade Shard^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A small shard from a larger blade. Ancient."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Bıçak Parçası^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Daha büyük bir bıçaktan kopmuş küçük bir parça. Kadim."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Blade Shard^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Bıçak Parçası^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A small shard from a larger blade. Ancient."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Daha büyük bir bıçaktan kopmuş küçük bir parça. Kadim."
+    }
+  ]
 ]

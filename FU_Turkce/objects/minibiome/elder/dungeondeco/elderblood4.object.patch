@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Looks like some dude just...exploded. Gross."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Blood"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Birisi... patlamış gibi. İğrenç."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kan"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Looks like some dude just...exploded. Gross."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Birisi... patlamış gibi. İğrenç."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Blood"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kan"
+    }
+  ]
 ]

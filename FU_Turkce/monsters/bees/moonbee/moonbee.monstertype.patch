@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A moon bee."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Moon Bee"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir ay arısı."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Ay Arısı"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A moon bee."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir ay arısı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Moon Bee"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Ay Arısı"
+    }
+  ]
 ]

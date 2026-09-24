@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "It's an orange. ^green;Type: Plant^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Orange"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bu bir portakal. ^green;Tür: Bitki^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Portakal"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "It's an orange. ^green;Type: Fruit^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bu bir portakal. ^green;Tür: Meyve^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Orange"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Portakal"
+    }
+  ]
 ]

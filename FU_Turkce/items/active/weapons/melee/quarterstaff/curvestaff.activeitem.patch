@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Plasma Quarterstaff"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Kinda swordy, for a staff. Ziiiip zaaaap!\n^cyan;Counts as plasma weapon for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Plazma Dövüş Asası"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bir asa için epey kılıcımsı. Ziiiip zaaaap!\n^cyan;Set bonusları için plazma silahı sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Plasma Quarterstaff"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Plazma Dövüş Asası"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Kinda swordy, for a staff. Ziiiip zaaaap!\n^cyan;Counts as plasma weapon for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir asa için epey kılıcımsı. Ziiiip zaaaap!\n^cyan;Set bonusları için plazma silahı sayılır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Kinda swordy, for a staff. Ziiiip zaaaap!\r\n^cyan;Counts as plasma weapon for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bir asa için epey kılıcımsı. Ziiiip zaaaap!\n^cyan;Set bonusları için plazma silahı sayılır^reset;"
+    }
+  ]
 ]

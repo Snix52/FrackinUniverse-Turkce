@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Aqua Shield"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^green;+0.1% HP Regen, +20% Energy^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Su Kalkanı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^green;+0.1% Can Yenilenmesi, +20% Enerji^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Aqua Shield"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Su Kalkanı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^green;+0.1% HP Regen, +20% Energy^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^green;+0.1% Can Yenilenmesi, +20% Enerji^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Precursor Data-Key"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Holds multiple sets of coordinates and some encrypted data. One set points to the ^orange;Science Outpost^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Precursor Veri Anahtarı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Birden fazla koordinat seti ve bazı şifreli veriler içeriyor. Bunlardan biri ^orange;Bilim Karakolunu^reset; gösteriyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Precursor Data-Key"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Precursor Veri Anahtarı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Holds multiple sets of coordinates and some encrypted data. One set points to the ^orange;Science Outpost^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Birden fazla koordinat seti ve bazı şifreli veriler içeriyor. Bunlardan biri ^orange;Bilim Karakolunu^reset; gösteriyor."
+    }
+  ]
 ]

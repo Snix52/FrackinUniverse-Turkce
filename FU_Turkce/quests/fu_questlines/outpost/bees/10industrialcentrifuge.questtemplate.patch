@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/title",
-    "value": "Industrial Edge"
-  },
-  {
-    "op": "test",
-    "path": "/text",
-    "value": "Now it's time to maximize your output. Build an ^orange;Industrial Centrifuge^reset;. You'll need to find some ^orange;Sand^reset; to make the glass you need. Try a desert!"
-  },
-  {
-    "op": "test",
-    "path": "/completionText",
-    "value": "I should mention that this station requires power to run, which you can get from an Alternator or better power source."
-  },
-  {
-    "op": "replace",
-    "path": "/title",
-    "value": "Endüstriyel Avantaj"
-  },
-  {
-    "op": "replace",
-    "path": "/text",
-    "value": "Şimdi verimi en üst düzeye çıkarma zamanı. Bir ^orange;Endüstriyel Santrifüj^reset; üret. Gereken cam için biraz ^orange;Kum^reset; bulmalısın. Bir çöl biyomuna bak!"
-  },
-  {
-    "op": "replace",
-    "path": "/completionText",
-    "value": "Bu istasyonun çalışmak için güce ihtiyacı olduğunu da söyleyeyim. Bir Alternatör veya daha iyi bir güç kaynağı işini görür."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/title",
+      "value": "Industrial Edge"
+    },
+    {
+      "op": "replace",
+      "path": "/title",
+      "value": "Endüstriyel Avantaj"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/text",
+      "value": "Now it's time to maximize your output. Build an ^orange;Industrial Centrifuge^reset;. You'll need to find some ^orange;Sand^reset; to make the glass you need. Try a desert!"
+    },
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Şimdi verimi en üst düzeye çıkarma zamanı. Bir ^orange;Endüstriyel Santrifüj^reset; üret. Gereken cam için biraz ^orange;Kum^reset; bulmalısın. Bir çöl biyomuna bak!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/completionText",
+      "value": "I should mention that this station requires power to run, which you can get from an Alternator or better power source."
+    },
+    {
+      "op": "replace",
+      "path": "/completionText",
+      "value": "Bu istasyonun çalışmak için güce ihtiyacı olduğunu da söyleyeyim. Bir Alternatör veya daha iyi bir güç kaynağı işini görür."
+    }
+  ]
 ]

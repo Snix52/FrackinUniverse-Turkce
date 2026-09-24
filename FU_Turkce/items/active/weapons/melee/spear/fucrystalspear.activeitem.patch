@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Crystal Spear"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Shimmering, beautiful death.\n^cyan;Hunting weapon^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kristal Mızrak"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Parıldayan, güzel bir ölüm.\n^cyan;Av silahı^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Crystal Spear"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kristal Mızrak"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shimmering, beautiful death.\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Parıldayan, güzel bir ölüm.\n^cyan;Av silahı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Shimmering, beautiful death.\r\n^cyan;Hunting weapon^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Parıldayan, güzel bir ölüm.\n^cyan;Av silahı^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Irradium Rapier"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A swift and dangerous radioactive blade.\n^cyan;Inflicts Rad-Burn^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Irradium Meç"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Hızlı ve tehlikeli, radyoaktif bir kılıç.\n^cyan;Radyasyon Yanığına yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Irradium Rapier"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Irradium Meç"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A swift and dangerous radioactive blade.\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hızlı ve tehlikeli, radyoaktif bir kılıç.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A swift and dangerous radioactive blade.\r\n^cyan;Inflicts Rad-Burn^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hızlı ve tehlikeli, radyoaktif bir kılıç.\n^cyan;Radyasyon Yanığına yol açar^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A valuable crystal trophy.\n^green;Research in a microscope.^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Crystalline Trophy"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Değerli bir kristal kupa.\n^green;Mikroskopta araştırılabilir.^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Kristal Kupa"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A valuable crystal trophy.\n^green;Research in a microscope.^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Değerli bir kristal kupa.\n^green;Mikroskopta araştırılabilir.^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A valuable crystal trophy.\r\n^green;Research in a microscope.^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Değerli bir kristal kupa.\n^green;Mikroskopta araştırılabilir.^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Crystalline Trophy"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Kristal Kupa"
+    }
+  ]
 ]

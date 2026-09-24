@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Mmm. Delicious."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cooked brains"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Mmm. Nefis."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Pişmiş Beyinler"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Mmm. Delicious."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Mmm. Nefis."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cooked brains"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Pişmiş Beyinler"
+    }
+  ]
 ]

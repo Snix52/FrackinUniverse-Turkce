@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Shadowstring"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "The darkest bow on the market"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Gölge Kirişi"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Piyasadaki en karanlık yay."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Shadowstring"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Gölge Kirişi"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "The darkest bow on the market"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Piyasadaki en karanlık yay."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Coral Katana"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "This looks uncomfortable to get stabbed by.\n^yellow;4 hit combo^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Mercan Katana"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Bununla bıçaklanmak pek hoş olmasa gerek.\n^yellow;4 vuruşluk kombo^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Coral Katana"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Mercan Katana"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This looks uncomfortable to get stabbed by.\n^yellow;4 hit combo^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bununla bıçaklanmak pek hoş olmasa gerek.\n^yellow;4 vuruşluk kombo^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "This looks uncomfortable to get stabbed by.\r\n^yellow;4 hit combo^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Bununla bıçaklanmak pek hoş olmasa gerek.\n^yellow;4 vuruşluk kombo^reset;"
+    }
+  ]
 ]

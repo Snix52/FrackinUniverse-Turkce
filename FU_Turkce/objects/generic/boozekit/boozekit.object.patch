@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Your very own homebrewing kit."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Booze Kit^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Evde içki yapman için sana özel bir kit."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;İçki Kiti^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Your very own homebrewing kit."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Evde içki yapman için sana özel bir kit."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Booze Kit^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;İçki Kiti^reset;"
+    }
+  ]
 ]

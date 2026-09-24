@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Zerchesium Bow"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Full of frosty menace.\n^cyan;Slows enemies^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Zerchesium Yayı"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Dondurucu bir tehdit saçıyor.\n^cyan;Düşmanları yavaşlatır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Zerchesium Bow"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zerchesium Yayı"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Full of frosty menace.\n^cyan;Slows enemies^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Dondurucu bir tehdit saçıyor.\n^cyan;Düşmanları yavaşlatır^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Full of frosty menace.\r\n^cyan;Slows enemies^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Dondurucu bir tehdit saçıyor.\n^cyan;Düşmanları yavaşlatır^reset;"
+    }
+  ]
 ]

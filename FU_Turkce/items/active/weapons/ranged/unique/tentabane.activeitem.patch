@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^cyan;Frostbringer^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A uniquely deadly sniper rifle with super-cooled energy blasts.\n^yellow;Inflicts freezing^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^cyan;Buzgetiren^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Süper soğutmalı enerji patlamalarına sahip, benzersiz derecede ölümcül bir keskin nişancı tüfeği.\n^yellow;Donmaya neden olur^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^cyan;Frostbringer^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^cyan;Buzgetiren^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A uniquely deadly sniper rifle with super-cooled energy blasts.\n^yellow;Inflicts freezing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Süper soğutmalı enerji patlamalarına sahip, benzersiz derecede ölümcül bir keskin nişancı tüfeği.\n^yellow;Donmaya neden olur^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A uniquely deadly sniper rifle with super-cooled energy blasts.\r\n^yellow;Inflicts freezing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Süper soğutmalı enerji patlamalarına sahip, benzersiz derecede ölümcül bir keskin nişancı tüfeği.\n^yellow;Donmaya neden olur^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Valtan Casing^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Fractal patterns swirl within a red crystalline sphere."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^#ffe50e;Valtan Muhafazası^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Kırmızı kristal kürenin içinde fraktal desenler dönüyor."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Valtan Casing^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^#ffe50e;Valtan Muhafazası^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Fractal patterns swirl within a red crystalline sphere."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Kırmızı kristal kürenin içinde fraktal desenler dönüyor."
+    }
+  ]
 ]

@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Erithian Biofuel Canister"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A superior biofuel.\n^blue;+^white;15 ^blue;Fuel^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Erithian Biyoyakıt Kapsülü"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Üstün bir biyoyakıt.\n^blue;+^white;15 ^blue;Yakıt^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Erithian Biofuel Canister"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Erithian Biyoyakıt Kapsülü"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A superior biofuel.\n^blue;+^white;15 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Üstün bir biyoyakıt.\n^blue;+^white;15 ^blue;Yakıt^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A superior biofuel.\r\n^blue;+^white;15 ^blue;Fuel^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Üstün bir biyoyakıt.\n^blue;+^white;15 ^blue;Yakıt^reset;"
+    }
+  ]
 ]

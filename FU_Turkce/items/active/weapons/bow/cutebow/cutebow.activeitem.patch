@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Cute Longbow"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "^yellow;Counts as 'energy' for set bonuses^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Sevimli Uzun Yay"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "^yellow;Set bonusları için 'enerji' sayılır^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Cute Longbow"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Sevimli Uzun Yay"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;Counts as 'energy' for set bonuses^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;Set bonusları için 'enerji' sayılır^reset;"
+    }
+  ]
 ]

@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Optics"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Eyes where there shouldn't be."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Optik"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Olmaması gereken yerlerde gözler."
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Optics"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Optik"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Eyes where there shouldn't be."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Olmaması gereken yerlerde gözler."
+    }
+  ]
 ]

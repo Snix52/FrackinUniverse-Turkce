@@ -1,22 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Aetherium Punyal"
-  },
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "Assassination. With style.\n^cyan;Inflicts Minor Vulnerability^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Aetherium Punyal"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Suikast. Hem de tarz sahibi.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Aetherium Punyal"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Aetherium Punyal"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Assassination. With style.\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Suikast. Hem de tarz sahibi.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "Assassination. With style.\r\n^cyan;Inflicts Minor Vulnerability^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Suikast. Hem de tarz sahibi.\n^cyan;Hafif Savunmasızlığa yol açar^reset;"
+    }
+  ]
 ]

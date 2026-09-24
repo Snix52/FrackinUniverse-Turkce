@@ -1,32 +1,38 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "The pet renamer is used to rename captured creatures."
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "^orange;Pet Renamer^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/subtitle",
-    "value": "For sad pets"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Evcil Hayvan Adlandırıcı, yakaladığın yaratıkların adını değiştirir."
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "^orange;Evcil Hayvan Adlandırıcı^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/subtitle",
-    "value": "Üzgün evcil hayvanlar için"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "The pet renamer is used to rename captured creatures."
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Evcil Hayvan Adlandırıcı, yakaladığın yaratıkların adını değiştirir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "^orange;Pet Renamer^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "^orange;Evcil Hayvan Adlandırıcı^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/subtitle",
+      "value": "For sad pets"
+    },
+    {
+      "op": "replace",
+      "path": "/subtitle",
+      "value": "Üzgün evcil hayvanlar için"
+    }
+  ]
 ]

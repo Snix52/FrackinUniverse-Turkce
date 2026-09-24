@@ -1,22 +1,26 @@
 [
-  {
-    "op": "test",
-    "path": "/description",
-    "value": "A 'cake' made from rendered fat and bonemeal. ^orange;Type: Cooked Meat^reset;"
-  },
-  {
-    "op": "test",
-    "path": "/shortdescription",
-    "value": "Gorge Cake"
-  },
-  {
-    "op": "replace",
-    "path": "/description",
-    "value": "Hayvansal yağ ve kemik unundan yapılmış bir ‘kek’. ^orange;Tür: Pişmiş Et^reset;"
-  },
-  {
-    "op": "replace",
-    "path": "/shortdescription",
-    "value": "Boğazı Tıkayan Kek"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "A 'cake' made from rendered fat and bonemeal. ^orange;Type: Cooked Meat^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "Hayvansal yağ ve kemik unundan yapılmış bir ‘kek’. ^orange;Tür: Pişmiş Et^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gorge Cake"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Boğazı Tıkayan Kek"
+    }
+  ]
 ]
