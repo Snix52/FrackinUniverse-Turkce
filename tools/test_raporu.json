@@ -1,30 +1,30 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-24T11:12:59.243048+00:00",
-  "workflow_run_id": "35990712943",
-  "source_commit": "4fba97fa2dfc3d8e474ec73a76be009b84492572",
-  "translation_source_commit": "4fba97fa2dfc3d8e474ec73a76be009b84492572",
-  "translation_version": "0.61.0-beta",
+  "generated_at_utc": "2026-09-24T11:39:04.637747+00:00",
+  "workflow_run_id": "35993238164",
+  "source_commit": "71b67de2f0565f70e2ddbc03cd2f27548b8c194d",
+  "translation_source_commit": "71b67de2f0565f70e2ddbc03cd2f27548b8c194d",
+  "translation_version": "0.62.0-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 12898,
-    "patch_assets": 4238,
+    "structured_fields": 13193,
+    "patch_assets": 4404,
     "raw_override_assets": 7,
     "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.61.0_Beta.zip",
-    "bytes": 2133188,
-    "sha256": "53cb566814c99c03ff6314bc74a754f099e23c63448bf84eeeddf89e282c52b7",
-    "git_blob_sha": "e896118f1b24f5097ae36bd29edf426e17aa43c1",
+    "path": "dist/FU_Turkce_v0.62.0_Beta.zip",
+    "bytes": 2199996,
+    "sha256": "1f3b98d37b5fd7ca4ad587d7689860c46640b21b8ed75ebb54eb859782f1f229",
+    "git_blob_sha": "87741ff362c66fe407d16d2a3f14b936b4870b81",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "7a0f55b6bb7e80926c4acfe6a2e9d68f2972d29c43e7f8481cda4db42e5812c3",
-  "build_inputs_sha256": "78808a4ca4cdff80070b3e3c8c2807aea4d7d3c5fff579934100e5cb5e75b4cf",
-  "catalog_sha256": "2139be45137f1f209bda02ef5cfdd2fa9397e75f3fad56b319cf8a117f4aa689",
+  "install_tree_sha256": "db27aa2c0390cd858d761c764e1743e742b6c724972129bcb45b0e1c3276bd66",
+  "build_inputs_sha256": "238a6120854847b283603b0c8b9070b4070019b26784221e68456d40e45043c2",
+  "catalog_sha256": "023f8bbbc492bb71ce4fbc742de77b2222b27eb8799fceff795918ffb395898a",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -33,12 +33,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 12898,
-  "patched_assets": 4238,
+  "translated_display_fields": 13193,
+  "patched_assets": 4404,
   "raw_override_assets": 7,
   "raw_script_display_strings": 57,
-  "total_localized_display_units": 12955,
-  "target_assets_total": 4245,
+  "total_localized_display_units": 13250,
+  "target_assets_total": 4411,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -128,7 +128,8 @@
     "v0.58 kalan yaratık aileleri": 522,
     "v0.59 kalan canavarlar ve becerileri": 341,
     "v0.60 Kadim ve Precursor mini-biome eşyaları": 536,
-    "v0.61 kafe, fast-food, pazar ve suşi barı nesneleri": 399
+    "v0.61 kafe, fast-food, pazar ve suşi barı nesneleri": 399,
+    "v0.62 mek parçaları": 295
   },
   "checks": {
     "static_qa": "PASS",
@@ -2895,6 +2896,318 @@
       "qa": {
         "layered_source": true,
         "source_patch": "monsters/ghosts/nautileech/nautileech.monstertype.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/arm/mecharmdrill.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/arm/mecharmdrill.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/arm/mecharmshielddrone.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/arm/mecharmshielddrone.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/arm/mecharmshielddrone.item",
+      "pointer": "/shortdescription",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/arm/mecharmshielddrone.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyapex.glitch.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyapex.glitch.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyapex.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyapex.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyapexproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyapexproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyavian.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyavian.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyavianproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyavianproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodybad.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodybad.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodycultist.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodycultist.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodycultist2.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodycultist2.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodydvamech.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodydvamech.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyexodus.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyexodus.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyfloran.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyfloran.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyfloranproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyfloranproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyglitch.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyglitch.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyglitchproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyglitchproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyhero.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyhero.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyhuman.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyhuman.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyhumanproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyhumanproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyhylotl.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyhylotl.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyhylotlproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyhylotlproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyiris.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyiris.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodymilitary.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodymilitary.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyminiknog.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyminiknog.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodynovakid.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodynovakid.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodynovakidproto.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodynovakidproto.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodypenguin.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodypenguin.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodypirate.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodypirate.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyprotector.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyprotector.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyreactor.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyreactor.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyshark.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyshark.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyskull.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyskull.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyxsm_elitesigma.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyxsm_elitesigma.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyxsm_piraterhomech.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyxsm_piraterhomech.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyxsm_rhomech.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyxsm_rhomech.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyxsm_roninrhomech.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyxsm_roninrhomech.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyxsm_sigma.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyxsm_sigma.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/mechparts/body/mechbodyxsm_thetamech.item",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/mechparts/body/mechbodyxsm_thetamech.item.patch"
       }
     }
   ]
