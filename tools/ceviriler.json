@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.63.1-beta",
-  "note": "v0.63.1 karakter oluşturma ekranı ve tür açıklamalarının runtime yama uyumluluğu düzeltildi.",
+  "translation_version": "0.63.2-beta",
+  "note": "v0.63.2 FU kaynak katmanı ve ham satır sonu farkları için runtime yama koruması eklendi.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -10954,7 +10954,8 @@
       "tr": "Kapları bir eşya ağında kullanılmak üzere işaretler. Nesnenin yerleştirme noktasının yakınına koy.\n^blue;Giriş: ^white;eşya ağı^reset;\n^red;Çıkış: ^white;eşya ağı^reset;",
       "section": "v0.9 Tutorial Hedefleri",
       "qa": {
-        "raw_source_value_guard": true
+        "raw_source_value_guard": true,
+        "source_newline_pattern": "CL"
       }
     },
     {
@@ -11035,27 +11036,29 @@
     {
       "asset": "items/liquids/oil.liqitem",
       "pointer": "/description",
-      "en": "A measure of gooey unrefined oil.",
-      "tr": "Bir miktar yapışkan, işlenmemiş yağ.",
+      "en": "A measure of gooey unrefined oil.\n^green;Extractable^reset;, ^yellow;Centrifugable^reset;.",
+      "tr": "Bir miktar yapışkan, işlenmemiş yağ.\n^green;Çıkarılabilir^reset;, ^yellow;Santrifüjlenebilir^reset;.",
       "section": "v0.9 Tutorial Hedefleri",
       "qa": {
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "items/liquids/oil.liqitem.patch"
       }
     },
     {
       "asset": "objects/upgrade/techconsole/techconsole.object",
       "pointer": "/description",
-      "en": "Equip and enhance your techs at this station. \n^red;Destroyed when broken.",
-      "tr": "Tech'lerini bu istasyonda kuşanabilir ve geliştirebilirsin. \n^red;Kırıldığında yok olur.",
+      "en": "Equip and enhance your techs at this station.",
+      "tr": "Tech'lerini bu istasyonda kuşanabilir ve geliştirebilirsin.",
       "section": "v0.9 Tutorial Hedefleri",
       "qa": {
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "objects/upgrade/techconsole/techconsole.object.patch"
       }
     },
     {
@@ -13805,14 +13808,15 @@
     {
       "asset": "items/active/unsorted/bugnet/bugnet.activeitem",
       "pointer": "/description",
-      "en": "A net for catching bugs! Hunt insects down, capture them, and grow your collection!",
-      "tr": "Böcek yakalamak için bir ağ! Böcekleri avla, yakala ve koleksiyonunu büyüt!",
+      "en": "Catch insects like bees, or collect wild types. Upgrade using your ^orange;Tricorder^reset;.",
+      "tr": "Arı gibi böcekleri yakala veya yabani türleri topla. ^orange;Tricorder^reset; ile yükselt.",
       "section": "v0.12 Outpost - Arıcılık",
       "qa": {
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "items/active/unsorted/bugnet/bugnet.activeitem.patch"
       }
     },
     {
@@ -14254,14 +14258,15 @@
     {
       "asset": "items/materials/gravel.matitem",
       "pointer": "/description",
-      "en": "Coarse gravel.",
-      "tr": "İri taneli çakıl.",
+      "en": "Coarse gravel.\n^green;Extractable^reset;, ^orange;Siftable^reset;.",
+      "tr": "İri taneli çakıl.\n^green;Çıkarılabilir^reset;, ^orange;Elenebilir^reset;.",
       "section": "v0.13.3 Retro QA Hedefleri",
       "qa": {
         "layered_source": true,
         "external_base_verified": true,
         "external_source_repository": "FerreiraJGB/Starbound",
-        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc"
+        "external_source_commit": "3b370d25c27923155badb38c414a664e1ee2abfc",
+        "source_patch": "items/materials/gravel.matitem.patch"
       }
     },
     {
@@ -14920,9 +14925,13 @@
     {
       "asset": "items/generic/produce/orange.consumable",
       "pointer": "/description",
-      "en": "It's an orange. ^green;Type: Plant^reset;",
-      "tr": "Bu bir portakal. ^green;Tür: Bitki^reset;",
-      "section": "Outpost - Kevin/Khe hedefleri"
+      "en": "It's an orange. ^green;Type: Fruit^reset;",
+      "tr": "Bu bir portakal. ^green;Tür: Meyve^reset;",
+      "section": "Outpost - Kevin/Khe hedefleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/produce/orange.consumable.patch"
+      }
     },
     {
       "asset": "items/generic/produce/orange.consumable",
@@ -15869,8 +15878,8 @@
     {
       "asset": "items/generic/crafting/moltencore.item",
       "pointer": "/description",
-      "en": "A very powerful molten core. Can be used to craft a metalwork station!",
-      "tr": "Son derece güçlü bir Erimiş Çekirdek. Metal işleme istasyonu üretiminde kullanılabilir!",
+      "en": "A core powered by potent thermal energies.",
+      "tr": "Güçlü ısıl enerjiyle çalışan bir çekirdek.",
       "section": "v0.16 Kalan görevler - Other, BYOS ve hedefler",
       "qa": {
         "layered_source": true,
@@ -15878,7 +15887,8 @@
         "external_source": "FerreiraJGB/Starbound @ 3b370d25c27923155badb38c414a664e1ee2abfc",
         "external_path": "assets/packed/items/generic/crafting/moltencore.item",
         "external_blob_sha": "348d87fa40693df832fe4dfc13af11028eb4f376",
-        "reason": "Shoggoth görev hedefini gerçek vanilla envanter adıyla birebir eşlemek için exact harici kaynak doğrulaması."
+        "reason": "Shoggoth görev hedefinin vanilla tabanı doğrulandı; FU yaması açıklamayı değiştirir.",
+        "source_patch": "items/generic/crafting/moltencore.item.patch"
       }
     },
     {
@@ -30701,7 +30711,10 @@
       "pointer": "/description",
       "en": "An effective and deadly energy weapon.\n^cyan;Inflicts Poisoned^reset;\n^yellow;Counts as 'energy' for set bonuses ^reset;",
       "tr": "Etkili ve ölümcül bir enerji silahı.\n^cyan;Zehirlenmeye yol açar^reset;\n^yellow;Set bonusları için 'enerji' sayılır^reset;",
-      "section": "v0.24 Kademe 4 kalan savaş ekipmanı"
+      "section": "v0.24 Kademe 4 kalan savaş ekipmanı",
+      "qa": {
+        "source_newline_pattern": "LC"
+      }
     },
     {
       "asset": "items/active/weapons/ranged/unique/futriangliumsmg.activeitem",
@@ -43021,7 +43034,10 @@
       "pointer": "/description",
       "en": "^cyan;Headlamp^reset;\n^orange;Set Bonuses^reset;:\n^yellow;^reset; +^green;80^reset;% Knockback Resist. Fall Damage x^green;0.2^reset;\n^yellow;^reset; Chain Weapons: Damage x^green;2.5^reset;, +^green;2^reset;% Crit Chance\n^yellow;^reset; ^cyan;Immune^reset;: Oxygen, Pressure",
       "tr": "^cyan;Kafa Lambası^reset;\n^orange;Set Bonusları^reset;:\n^yellow;^reset; +^green;80^reset;% Geri Tepme Direnci. Düşme Hasarı x^green;0.2^reset;\n^yellow;^reset; Zincir Silahları: Hasar x^green;2.5^reset;, +^green;2^reset;% Kritik Şansı\n^yellow;^reset; ^cyan;Bağışıklık^reset;: Oksijensizlik, Basınç",
-      "section": "v0.30 Aktif araştırma ekipmanı kapanışı"
+      "section": "v0.30 Aktif araştırma ekipmanı kapanışı",
+      "qa": {
+        "source_newline_pattern": "LCCC"
+      }
     },
     {
       "asset": "items/armors/tier7/warangel/warangel.legs",

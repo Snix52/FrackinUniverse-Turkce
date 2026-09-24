@@ -491,7 +491,9 @@ def simulate(root,patch):
             candidate=copy.deepcopy(r)
             for op in batch:
                 if op['op']=='test':
-                    if read_at(candidate,op['path'])!=op['value']:break
+                    try: matched=read_at(candidate,op['path'])==op['value']
+                    except (KeyError,IndexError,TypeError):matched=False
+                    if not matched:break
                 elif op['op']=='replace':replace_at(candidate,op['path'],op['value'])
                 else:raise ValueError('Desteklenmeyen patch işlemi')
             else:
@@ -505,63 +507,81 @@ def simulate(root,patch):
     return r
 
 def translation_patch(asset, rows):
-    # Character creation has a FU patch that replaces the hardcore tooltip.
-    # Keep each field independent so one changed value cannot discard the UI.
-    if asset == 'interface/windowconfig/charcreation.config':
-        return [[{'op':'test','path':r['pointer'],'value':r['en']},
-                 {'op':'replace','path':r['pointer'],'value':r['tr']}]
-                for r in rows]
-    # Steam's FU package retains CRLF inside its multiline species strings,
-    # while the pinned Git blob uses LF. Both are the same reviewed source.
-    if asset.startswith('species/') and asset.endswith('.species'):
-        batches=[]
-        for r in rows:
-            values=[r['en']]
-            if r['pointer']=='/charCreationTooltip/description' and '\n' in r['en']:
-                values.append(r['en'].replace('\n','\r\n'))
-            for value in values:
-                batches.append([{'op':'test','path':r['pointer'],'value':value},
-                                {'op':'replace','path':r['pointer'],'value':r['tr']}])
-        return batches
-    patch=[{'op':'test','path':r['pointer'],'value':r['en']} for r in rows]
-    patch += [{'op':'replace','path':r['pointer'],'value':r['tr']} for r in rows]
-    return patch
+    # A source mismatch must only skip its own field. Steam FU also retains
+    # CRLF inside many multiline strings whereas the pinned Git blobs use LF.
+    batches=[]
+    for r in rows:
+        values=[r['en']]
+        if '\n' in r['en'] and '\r' not in r['en']:
+            values.append(r['en'].replace('\n','\r\n'))
+        pattern=r.get('qa',{}).get('source_newline_pattern')
+        if pattern is not None:
+            if ('\r' in r['en'] or len(pattern)!=r['en'].count('\n')
+                    or any(c not in 'LC' for c in pattern)):
+                raise ValueError('Invalid source newline pattern: '+asset+r['pointer'])
+            parts=r['en'].split('\n')
+            mixed=parts[0]+''.join(('\r\n' if c=='C' else '\n')+part
+                                   for c,part in zip(pattern,parts[1:]))
+            values.append(mixed)
+        for value in dict.fromkeys(values):
+            batches.append([{'op':'test','path':r['pointer'],'value':value},
+                            {'op':'replace','path':r['pointer'],'value':r['tr']}])
+    return batches
 
-def verify_layered_row(row, source_dir, cache):
-    """Check every FU-owned patch value, including recorded vanilla array appends."""
-    asset, pointer = row['asset'], row['pointer']
-    source_patch = row.get('qa', {}).get('source_patch')
-    if source_patch != asset + '.patch':
-        raise ValueError('Invalid layered source patch: ' + asset + pointer)
-    if source_patch not in cache:
-        cache[source_patch] = parse_jsonc((source_dir/source_patch).read_text(encoding='utf-8-sig'))
-    operations = cache[source_patch]
+def source_patch_operations(operations, source_patch):
     if not isinstance(operations, list):
         raise ValueError('Unsupported layered source patch: ' + source_patch)
-    missing = object()
-    found = missing
+    for group in operations:
+        if isinstance(group, dict):
+            yield group
+        elif isinstance(group, list) and all(isinstance(op, dict) for op in group):
+            yield from group
+        else:
+            raise ValueError('Unsupported layered source patch: ' + source_patch)
+
+
+def source_patch_value(asset, pointer, source_dir, cache):
+    """Return the last FU source write to a translated string, if any."""
+    source_patch = asset + '.patch'
+    path = source_dir / source_patch
+    if not path.is_file():
+        return False, None
+    if source_patch not in cache:
+        cache[source_patch] = parse_jsonc(path.read_bytes().decode('utf-8-sig'))
+    found = False
+    value = None
     append_index = load_rule('AUDIT_PATCH_APPEND_INDEXES').get(asset)
-    for op in operations:
-        if not isinstance(op, dict):
-            raise ValueError('Conditional layered source needs explicit verification: ' + source_patch)
+    target = tokens(pointer)
+    for op in source_patch_operations(cache[source_patch], source_patch):
         if op.get('op') == 'test':
             continue
         parts = tokens(op.get('path', ''))
         if '-' in parts and append_index is not None:
             parts = [str(append_index) if part == '-' else part for part in parts]
-        target = tokens(pointer)
         if target[:len(parts)] != parts:
             continue
-        found = missing  # A later parent replacement/removal invalidates earlier values.
+        found = True  # A later parent write invalidates an earlier value.
+        value = None
         if op.get('op') in ('add', 'replace') and 'value' in op:
             try:
-                found = op['value']
+                value = op['value']
                 for part in target[len(parts):]:
-                    found = found[int(part)] if isinstance(found, list) else found[part]
+                    value = value[int(part)] if isinstance(value, list) else value[part]
             except (KeyError, IndexError, TypeError, ValueError):
-                found = missing
-    if found != row['en']:
+                value = None
+    return found, value
+
+
+def verify_layered_row(row, source_dir, cache):
+    """Check FU-owned post-patch values, including nested patch batches."""
+    asset, pointer = row['asset'], row['pointer']
+    source_patch = row.get('qa', {}).get('source_patch')
+    if source_patch != asset + '.patch':
+        raise ValueError('Invalid layered source patch: ' + asset + pointer)
+    found, value = source_patch_value(asset, pointer, source_dir, cache)
+    if not found or not isinstance(value, str) or value.replace('\r\n','\n') != row['en']:
         raise ValueError('Layered source mismatch: ' + asset + pointer)
+    return value
 
 def parse_jsonc(text):
     out=[];i=0;q=False;esc=False
@@ -941,17 +961,37 @@ def main():
             if direct_rows:
                 if not source.is_file():
                     raise FileNotFoundError(source)
-                data = parse_jsonc(source.read_text(encoding='utf-8-sig'))
+                # read_text() folds CRLF into LF on Windows, including literal
+                # newlines inside JSON strings. Decode bytes to preserve the
+                # values that Starbound will actually test at runtime.
+                data = parse_jsonc(source.read_bytes().decode('utf-8-sig'))
                 for row in direct_rows:
-                    if read_at(data, row['pointer']) != row['en']:
+                    actual = read_at(data, row['pointer'])
+                    if actual != row['en'] and not (isinstance(actual,str)
+                            and actual.replace('\r\n','\n') == row['en']):
                         raise ValueError('Direct source mismatch: ' + a + row['pointer'])
+                applied = simulate(data, patch)
+                for row in direct_rows:
+                    if read_at(applied, row['pointer']) != row['tr']:
+                        raise ValueError('Runtime source patch did not translate: ' + a + row['pointer'])
             patch_cache = {}
+            if (args.source_dir/(a+'.patch')).is_file():
+                for row in rs:
+                    touched, overlay_value = source_patch_value(a, row['pointer'], args.source_dir, patch_cache)
+                    if (touched and (not isinstance(overlay_value, str)
+                            or overlay_value.replace('\r\n','\n') != row['en'])
+                            and row.get('qa', {}).get('source_patch') != a+'.patch'):
+                        raise ValueError('Unreviewed FU overlay mismatch: ' + a + row['pointer'])
             for row in rs:
                 qa = row.get('qa', {})
                 if not qa.get('layered_source'):
                     continue
                 if qa.get('source_patch'):
-                    verify_layered_row(row, args.source_dir, patch_cache)
+                    actual = verify_layered_row(row, args.source_dir, patch_cache)
+                    layered_fixture = {}
+                    seed(layered_fixture, row['pointer'], actual)
+                    if read_at(simulate(layered_fixture, patch), row['pointer']) != row['tr']:
+                        raise ValueError('Runtime layered patch did not translate: ' + a + row['pointer'])
                 elif not qa.get('external_base_verified'):
                     raise ValueError('Missing external source provenance: ' + a + row['pointer'])
         patches[a]=patch

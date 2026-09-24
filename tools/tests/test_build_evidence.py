@@ -110,6 +110,16 @@ class EvidenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'pairing'):
             evidence.verify_package(self.zip, files, self.report)
 
+    def test_flat_multi_field_patch_rejected(self):
+        operations = [
+            {'op': 'test', 'path': '/description', 'value': 'A'},
+            {'op': 'test', 'path': '/shortdescription', 'value': 'B'},
+            {'op': 'replace', 'path': '/description', 'value': 'C'},
+            {'op': 'replace', 'path': '/shortdescription', 'value': 'D'},
+        ]
+        with self.assertRaisesRegex(ValueError, 'independent conditional batches'):
+            evidence.verified_patch_fields('fixture.patch', operations)
+
     def test_corrupt_zip_rejected(self):
         self.zip.write_bytes(b'not a zip')
         with self.assertRaises(zipfile.BadZipFile):

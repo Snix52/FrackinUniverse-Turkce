@@ -81,6 +81,13 @@ class LayeredSourceTests(unittest.TestCase):
             with self.subTest(op=op), self.assertRaisesRegex(ValueError, 'Layered source mismatch'):
                 self.verify([dict(op='add',path='/pane',value={'title':'Displayed'}),op], '/pane/title')
 
+    def test_nested_source_patch_and_raw_crlf_value(self):
+        self.verify([[dict(op='replace', path='/description', value='Displayed')]])
+        self.verify([[dict(op='replace', path='/description', value='Line 1\r\nLine 2')]],
+                    en='Line 1\nLine 2')
+        with self.assertRaisesRegex(ValueError, 'Layered source mismatch'):
+            self.verify([[dict(op='replace', path='/description', value='Other')]])
+
     def test_pinned_array_append_uses_documented_index(self):
         asset='objects/crafting/upgradeablecraftingobjects/craftingwheel/craftingwheel.object'
         self.verify([dict(op='add',path='/upgradeStages/-',value={'itemSpawnParameters':{'description':'Displayed'}})],

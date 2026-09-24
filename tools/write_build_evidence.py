@@ -134,13 +134,13 @@ def verified_patch_fields(name: str, operations: list) -> int:
             source, translation = batch[0]['value'], batch[1]['value']
             if path in seen:
                 previous_source, previous_translation, variants = seen[path]
-                if (variants != 1 or '\n' not in previous_source or '\r' in previous_source
-                        or source != previous_source.replace('\n', '\r\n')
-                        or translation != previous_translation):
+                if ('\n' not in previous_source or '\r' in previous_source
+                        or source.replace('\r\n', '\n') != previous_source
+                        or source in variants or translation != previous_translation):
                     raise ValueError('Invalid line-ending source variant: ' + name + path)
-                seen[path] = (previous_source, previous_translation, 2)
+                variants.add(source)
             else:
-                seen[path] = (source, translation, 1)
+                seen[path] = (source, translation, {source})
         return len(seen)
     if not all(isinstance(op, dict) for op in operations):
         raise ValueError('Invalid patch operation shape: ' + name)
@@ -151,6 +151,8 @@ def verified_patch_fields(name: str, operations: list) -> int:
             or len({x['path'] for x in tests}) != len(tests)
             or operations != tests + replacements):
         raise ValueError('Source-test/replace pairing mismatch: ' + name)
+    if len(replacements) > 1:
+        raise ValueError('Multi-field patch must use independent conditional batches: ' + name)
     return len(replacements)
 
 
