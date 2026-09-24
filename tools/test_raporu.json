@@ -1,30 +1,30 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-24T11:39:04.637747+00:00",
-  "workflow_run_id": "35993238164",
-  "source_commit": "71b67de2f0565f70e2ddbc03cd2f27548b8c194d",
-  "translation_source_commit": "71b67de2f0565f70e2ddbc03cd2f27548b8c194d",
-  "translation_version": "0.62.0-beta",
+  "generated_at_utc": "2026-09-24T16:07:33.768967+00:00",
+  "workflow_run_id": "36023891929",
+  "source_commit": "dd6317cb6c25d7cba406369ac532c5788e75f5d5",
+  "translation_source_commit": "dd6317cb6c25d7cba406369ac532c5788e75f5d5",
+  "translation_version": "0.63.0-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 13193,
-    "patch_assets": 4404,
+    "structured_fields": 13454,
+    "patch_assets": 4546,
     "raw_override_assets": 7,
     "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.62.0_Beta.zip",
-    "bytes": 2199996,
-    "sha256": "1f3b98d37b5fd7ca4ad587d7689860c46640b21b8ed75ebb54eb859782f1f229",
-    "git_blob_sha": "87741ff362c66fe407d16d2a3f14b936b4870b81",
+    "path": "dist/FU_Turkce_v0.63.0_Beta.zip",
+    "bytes": 2265138,
+    "sha256": "c8b406f9d6673017cc6942efc920101fae967edd0c9e018c9aea9b6e488e641c",
+    "git_blob_sha": "c066256e92864bc0cbffbc81b2e67e5046c6878c",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "db27aa2c0390cd858d761c764e1743e742b6c724972129bcb45b0e1c3276bd66",
-  "build_inputs_sha256": "238a6120854847b283603b0c8b9070b4070019b26784221e68456d40e45043c2",
-  "catalog_sha256": "023f8bbbc492bb71ce4fbc742de77b2222b27eb8799fceff795918ffb395898a",
+  "install_tree_sha256": "4fa6757bb54e2f5acc768611062cb68bcd82546b683354493bb6a2330322aa7d",
+  "build_inputs_sha256": "8fec3201bf3d46ca14073af2ec7942b767efd1afce04e3e50e498f9b6596dea2",
+  "catalog_sha256": "869a32d099d402daad5484e5920fe667d22210f2e8fd1122ddff57f0029af47e",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -33,12 +33,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 13193,
-  "patched_assets": 4404,
+  "translated_display_fields": 13454,
+  "patched_assets": 4546,
   "raw_override_assets": 7,
   "raw_script_display_strings": 57,
-  "total_localized_display_units": 13250,
-  "target_assets_total": 4411,
+  "total_localized_display_units": 13511,
+  "target_assets_total": 4553,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -129,7 +129,8 @@
     "v0.59 kalan canavarlar ve becerileri": 341,
     "v0.60 Kadim ve Precursor mini-biome eşyaları": 536,
     "v0.61 kafe, fast-food, pazar ve suşi barı nesneleri": 399,
-    "v0.62 mek parçaları": 295
+    "v0.62 mek parçaları": 295,
+    "v0.63 yiyecekler": 261
   },
   "checks": {
     "static_qa": "PASS",
@@ -3208,6 +3209,190 @@
       "qa": {
         "layered_source": true,
         "source_patch": "items/generic/mechparts/body/mechbodyxsm_thetamech.item.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/bakedpotato.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/bakedpotato.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/boiledpearlpeas.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/boiledpearlpeas.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/boiledrice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/boiledrice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/bread.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/bread.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/cookedtomato.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/cookedtomato.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/corncob.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/corncob.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/fishdumplings.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/fishdumplings.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/fishfingers.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/fishfingers.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/fishnchips.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/fishnchips.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/fishpie.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/fishpie.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/fishstew.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/fishstew.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/mashedpotato.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/mashedpotato.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/meatdumplings.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/meatdumplings.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/meatpie.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/meatpie.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/meatstew.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/meatstew.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/oilstew.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/oilstew.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/pearlpeabroth.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/pearlpeabroth.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/pearlpearisotto.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/pearlpearisotto.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/popcorn.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/popcorn.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/potatogrids.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/potatogrids.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/roastedcarrot.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/roastedcarrot.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/roastedmushrooms.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/roastedmushrooms.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier1/toast.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier1/toast.consumable.patch"
       }
     }
   ]
