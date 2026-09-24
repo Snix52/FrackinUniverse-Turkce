@@ -39,6 +39,13 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Cthulhu | Kadim yaratık özel adı | Özel ad | Cthulhu | - | LOCKED | Özel ad korunur; iyelik ekli oyuncak adı alan-bağlı istisnadır |
 | Erchius | FU enerji ve yakıt kaynağı | Kaynak | Erchius | - | LOCKED | Kaynak adı korunur; Türkçe ayrılma eki bitişik yazılmış eski alan kayıtlı istisnadır |
 | Lunari | FU kristal ve malzeme adı | Kaynak | Lunari | - | LOCKED | Yüklü kristal ve malzeme adlarında Lunari özel adı korunur |
+| Burger Fool | Fast-food zinciri özel adı | Özel ad | Burger Fool | - | LOCKED | Şirket adı tabelalarda ve açıklamalarda korunur |
+| Trictus | Canlı türü ve Burger Fool maskotu | Özel ad | Trictus | - | LOCKED | Canlı adı ve maskot oyuncaklarında korunur |
+| Trixie | Burger Fool maskotu özel adı | Özel ad | Trixie | - | LOCKED | Kurucunun evcil hayvanı ve şirket maskotunun adı korunur |
+| Apebucks | Kafe özel adı | Özel ad | Apebucks | - | LOCKED | Mekân adı korunur |
+| Hylotlbucks | Kafe özel adı | Özel ad | Hylotlbucks | - | LOCKED | Mekân adı korunur |
+| St?rbucks | Kafe özel adı | Özel ad | St?rbucks | - | LOCKED | Kaynak yazımındaki soru işareti özel adın parçasıdır |
+| Cupcake / Cupcakes | Yiyecek adı | Yiyecek | Küçük Kek | kapkek | LOCKED | Tekil ve çoğul biçimlerde yayımlanmış Küçük Kek karşılığı kullanılır |
 | Elemental | Bilimsel/malzeme bağlamı | Sıfat | Elementel | Elemental | APPROVED |  |
 | Homestead | Welchie görev serisi | Görev başlığı | Yerleşim | Çiftlik Hayatı | LOCKED | I-V zinciri v0.9'da tamamlandı; görev serisi boyunca Yerleşim kullanımı doğrulandı |
 | Ancient Essence | Vanilla/FU kaynak adı | Kaynak | Antik Öz | - | REVIEW | Ana Starbound Türkçe terminolojisiyle karşılaştırılacak |
