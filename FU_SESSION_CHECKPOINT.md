@@ -511,3 +511,14 @@ Oyun içi LQA ayrı bir aşamadır.
 - Kesinleşmiş ve tekrar eden `Cthulhu`, `Erchius`, `Lunari` adları LOCKED kuralına ve olumsuz QA testine eklendi; iki eski Türkçe ekli kullanım alan-bağlı istisnayla korundu. v0.60 görünür alanları build izin listesine kesin manifest kümesiyle bağlandı. Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` değişmedi.
 - v0.60 exact-source gate **PASS (536/196/314)**; katalog QA **PASS (19.808 katalog birimi / 52 raw birim / 545 LOCKED terim)**. **195 birim testi**, pinli kaynakla tam build **PASS (12.499 alan / 4.190 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
 - Oyun içi LQA: **NOT TESTED**.
+
+## v0.64 derin yiyecekler — Luna adayı
+- Sol'un v0.63 sonrasında bıraktığı `items/generic/food/` alt klasörlerinden, doğrudan kök dosyalar ve `tier1/` hariç, **168 görünür ad/açıklama alanı / 152 asset** çevrildi; 168 kaynak metin farklıdır.
+- Kaynak FU 6.5.8 commit `bb58383c0d16c1152e3439e606b39ff82288b586`; katalog önceki **13.454** alanını koruyup v0.64 adayında **13.622** alana çıktı. `Delilik Kazanımı` ve `Kiraz` için Sol'un v0.63'te netleştirdiği karşılıklar kaynak kapısına eklendi.
+- Manifest, exact-source gate, build izin listesi ve CI çağrıları eklendi. Dal `codex/luna-v064`; bu Luna adayı henüz Sol'un teknik inceleme/doğrulamasından veya yayınından geçmedi. Test, build ve yayın bu çalışmada çalıştırılmadı.
+
+## v0.64 Sol incelemesi
+- Güncel `main` tabanı üstüne alınırken önceki **13.454** alan birebir korundu; v0.63.2 kaynak ve runtime korumaları kaldı. Luna adayındaki **25 çeviri alanı** düzeltildi. Cupcake kilidi, yinelenen kaynak metnin eski karşılığı ve kayıp satır sonu düzeltildi. `Bacon`, `Pussplum`, `Pearlpea` için yerleşik Türkçe karşılıklar çekimli cümlelerde de LOCKED denetimine bağlandı.
+- Yeni 168 alanın **136'sı** temel oyundaki dosyaya FU'nun uyguladığı `.patch` üzerinden geliyor. Bu alanların pinli FU 6.5.8 yamasındaki kaynak değeri ve katalog kökeni tek tek doğrulandı. Kaynak pini `bb58383c0d16c1152e3439e606b39ff82288b586` olarak kaldı.
+- v0.64 kaynak kapısı **PASS (168 alan / 152 asset / 168 kaynak)**; katalog QA **PASS (22.054 katalog birimi / 52 raw birim / 556 LOCKED terim)**. **204 birim testi**, pinli kaynakla tam build **PASS (13.622 alan / 4.698 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
+- Oyun içi LQA: **NOT TESTED**.

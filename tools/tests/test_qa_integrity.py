@@ -117,6 +117,18 @@ class IntegrityTests(unittest.TestCase):
                 engine.validate(row(en, tr))
         engine.validate(row('A forerunner', 'Bir öncül'))
 
+    def test_food_terms_stay_locked_with_turkish_suffixes(self):
+        engine = qa.Terminology(self.terms)
+        for en, tr in [
+            ('A dish with bacon.', 'Pastırmalı bir yemek.'),
+            ('Jam made from pussplum.', 'İrin eriğinden yapılmış reçel.'),
+            ('Cooked pearlpeas.', 'Pişmiş inci bezelyeleri.'),
+        ]:
+            with self.subTest(en=en):
+                engine.validate(row(en, tr))
+                with self.assertRaisesRegex(ValueError, 'LOCKED'):
+                    engine.validate(row(en, 'Yanlış karşılık.'))
+
     def test_repeated_proper_names_are_locked_in_text(self):
         engine = qa.Terminology(self.terms)
         for en, tr in [

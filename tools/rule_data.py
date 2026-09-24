@@ -40,5 +40,6 @@ def render_terminology(policy: dict) -> str:
                   'Oyuncuya gösterilen metinde Türkçe adın yanına İngilizce açıklama eklenmez.',
                   'Belirsiz terimler REVIEW olarak tutulur; kesin karar verilmeden yayılmaz.',
                   'LOCKED kayıtların tam kaynak adları denetlenir. Çok sözcüklü terimlerin bilinen yanlış karşılıkları metin içinde de denetlenir.',
+                  '`tr_stem` tanımlı malzeme adlarının Türkçe kökü çekimli cümlelerde de aranır.',
                   'Çekimli serbest metinlerin eksiksiz anlamsal denetimi statik QA kapsamı dışındadır.', ''])
     return '\n'.join(lines)

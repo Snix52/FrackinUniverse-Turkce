@@ -84,6 +84,7 @@ class Terminology:
     def __init__(self, policy: dict):
         self.exact = defaultdict(set)
         self.phrases = []
+        self.stems = []
         self.exceptions = policy.get('context_exceptions', [])
         self.forbidden = [(re.compile(x['pattern'], re.I if x.get('ignore_case') else 0),
                            x.get('message', 'Forbidden terminology'))
@@ -99,6 +100,9 @@ class Terminology:
             for form in forms:
                 en, tr = form['en'], form['tr']
                 self.exact[en].add(tr)
+                if term.get('tr_stem'):
+                    self.stems.append((re.compile(r'(?<!\w)' + re.escape(en) + r'(?!\w)', re.I),
+                                       term['tr_stem'].casefold().replace('\u0307', '')))
                 enforce_in_text = term.get('enforce_in_text', False)
                 if len(en.split()) < 2 and not enforce_in_text:
                     continue
@@ -119,6 +123,9 @@ class Terminology:
             allowed = self.exact[en]
             if len(allowed) != 1 or tr not in allowed:
                 raise ValueError('LOCKED terminology/context mismatch: ' + where + ' -> ' + repr(sorted(allowed)))
+        for source_pattern, stem in self.stems:
+            if source_pattern.search(en) and stem not in tr.casefold().replace('\u0307', ''):
+                raise ValueError('LOCKED terminology missing stem ' + repr(stem) + ': ' + where)
         for source_pattern, canonical, banned, enforce_in_text in self.phrases:
             if not source_pattern.search(en):
                 continue

@@ -569,10 +569,14 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Advanced Frame | Arıcılık çerçevesi | Nesne | Gelişmiş Çerçeve | Advanced Frame | LOCKED | Arılık içindeki çerçeve yükseltmesi. |
 | Bee Flower Head | Arıcılık malzemesi | Nesne | Arı Çiçeği Başı | Bee Flower Head | LOCKED | Arı Çiçeği nesnesinden elde edilen parça. |
 | Cherry | Genel meyve ve yiyecek adı | Yiyecek | Kiraz | Vişne | LOCKED | Önceki Cherry Mash karşılığıyla eşlendi; kaynakta sour cherry belirtilmedikçe Kiraz kullanılır. |
+| Bacon | Yiyecek içeriği | Malzeme | Pastırma | Bacon | LOCKED | v0.63 yiyeceklerinde yerleşen karşılık; cümle içinde çekimli pastırma biçimleri kabul edilir |
+| Pussplum | Yiyecek içeriği | Malzeme | İrin eriği | Pussplum | LOCKED | v0.63 yiyeceklerinde yerleşen karşılık; cümle içinde çekimli biçimler kabul edilir |
+| Pearlpea / Pearlpeas | Yiyecek içeriği | Malzeme | İnci bezelyesi | Pearlpea | LOCKED | v0.63 yiyeceklerinde yerleşen karşılık; çoğul ve çekimli biçimler aynı kökten türetilir |
 
 ## Kural
 
 Oyuncuya gösterilen metinde Türkçe adın yanına İngilizce açıklama eklenmez.
 Belirsiz terimler REVIEW olarak tutulur; kesin karar verilmeden yayılmaz.
 LOCKED kayıtların tam kaynak adları denetlenir. Çok sözcüklü terimlerin bilinen yanlış karşılıkları metin içinde de denetlenir.
+`tr_stem` tanımlı malzeme adlarının Türkçe kökü çekimli cümlelerde de aranır.
 Çekimli serbest metinlerin eksiksiz anlamsal denetimi statik QA kapsamı dışındadır.
