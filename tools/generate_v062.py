@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path, PurePosixPath
 
@@ -92,6 +93,8 @@ def main() -> None:
     for row in rows:
         if candidates[(row["asset"], row["pointer"])].value != row["en"]:
             raise ValueError("v0.62 pinned source mismatch: " + row["asset"] + row["pointer"])
+        if re.search(r"\bmech\b", row["en"], re.I) and not re.search(r"\bMech\b", row["tr"]):
+            raise ValueError("v0.62 LOCKED Mech term missing: " + row["asset"] + row["pointer"])
 
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     version = tuple(int(part) for part in catalog["translation_version"].split("-", 1)[0].split("."))
