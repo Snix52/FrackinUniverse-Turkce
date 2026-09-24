@@ -1,7 +1,7 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-24 Eylül 2026: v0.60.0-beta yerel çeviri adayı hazırlandı. `objects/minibiome/elder/` ve `objects/minibiome/precursor/` kapsamı 536 alan / 196 asset / 314 benzersiz kaynak metin içeriyor; üç değer yayımlanmış Translation Memory karşılığından tekrar kullanıldı. Sol incelemesi, QA, build ve yayın bekleniyor.
+24 Eylül 2026: v0.60.0-beta Kadim ve Precursor mini-biome adayı Sol incelemesinden geçti. Kapsam 536 alan / 196 asset / 314 benzersiz kaynak metin; üç değer yayımlanmış Translation Memory karşılığından tekrar kullanıldı. Kaynak/çeviri kontrolü, QA ve pinli build başarılı; doğrudan `main` yayını hazırlanıyor.
 24 Eylül 2026: `Precursor` zaten LOCKED olmasına karşın tek sözcüklü terimler
 QA'nın cümle içi kontrolünden geçmiyordu. Terime özgü `enforce_in_text`
 denetimi eklendi; kaynakta `Precursor` geçen ad ve cümlelerde özel adın
@@ -492,4 +492,11 @@ Oyun içi LQA ayrı bir aşamadır.
 - Sol incelemesinde adayın **18 benzersiz kaynak cümle veya etiketi / 21 çeviri alanı** düzeltildi. `Precursor` özel adı ve kilitli `Bozulmuş Nöbetçi` karşılığı korundu; beceri, mermi ve yaratık adlarındaki anlam hataları giderildi.
 - Oyun içinde görünmeyen iki script yardımcısının dört alanı kapsamdan çıkarıldı. `pogolem` ve `nautileech` için temel canavar dosyası bulunmadığından dört alanın pinli FU `.patch` kaynak kökeni mevcut katmanlı kaynak kuralıyla kaydedildi. Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` değişmedi.
 - v0.59 exact-source gate **PASS (341/259/260)**; katalog QA **PASS (18.736 katalog birimi / 52 raw birim / 542 LOCKED terim)**. **193 birim testi**, pinli kaynakla tam build **PASS (11.963 alan / 3.994 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
+- Oyun içi LQA: **NOT TESTED**.
+
+## v0.60 Kadim ve Precursor mini-biome nesneleri
+- `codex/luna-v060` adayı güncel `main` üstüne alındı; önceki **11.963** katalog alanı birebir korundu. Yeni kapsam **536 alan / 196 asset / 314 benzersiz kaynak metin**; toplam **12.499** yapılandırılmış alan oldu.
+- Sol incelemesinde Luna adayına göre **38 benzersiz kaynak cümle veya etiket / 91 çeviri alanı** düzeltildi. Floran konuşma biçimi, vivisection ve aygıt açıklamalarındaki anlam ile Precursor nesne adlarının Türkçe yapısı gözden geçirildi. `Medi-Vac` ürün adı korundu.
+- Kesinleşmiş ve tekrar eden `Cthulhu`, `Erchius`, `Lunari` adları LOCKED kuralına ve olumsuz QA testine eklendi; iki eski Türkçe ekli kullanım alan-bağlı istisnayla korundu. v0.60 görünür alanları build izin listesine kesin manifest kümesiyle bağlandı. Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` değişmedi.
+- v0.60 exact-source gate **PASS (536/196/314)**; katalog QA **PASS (19.808 katalog birimi / 52 raw birim / 545 LOCKED terim)**. **195 birim testi**, pinli kaynakla tam build **PASS (12.499 alan / 4.190 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
 - Oyun içi LQA: **NOT TESTED**.

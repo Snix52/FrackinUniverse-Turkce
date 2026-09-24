@@ -264,6 +264,36 @@
       "note": "Kaynakta species olarak kullanılıyor; özel ad adlarda ve cümle içinde korunur"
     },
     {
+      "source": "Cthulhu",
+      "context": "Kadim yaratık özel adı",
+      "type": "Özel ad",
+      "tr": "Cthulhu",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "Özel ad korunur; iyelik ekli oyuncak adı alan-bağlı istisnadır"
+    },
+    {
+      "source": "Erchius",
+      "context": "FU enerji ve yakıt kaynağı",
+      "type": "Kaynak",
+      "tr": "Erchius",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "Kaynak adı korunur; Türkçe ayrılma eki bitişik yazılmış eski alan kayıtlı istisnadır"
+    },
+    {
+      "source": "Lunari",
+      "context": "FU kristal ve malzeme adı",
+      "type": "Kaynak",
+      "tr": "Lunari",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "Yüklü kristal ve malzeme adlarında Lunari özel adı korunur"
+    },
+    {
       "source": "Elemental",
       "context": "Bilimsel/malzeme bağlamı",
       "type": "Sıfat",
@@ -4998,6 +5028,20 @@
     }
   ],
   "context_exceptions": [
+    {
+      "asset": "objects/minibiome/elder/cthulhuplush.object",
+      "pointer": "/shortdescription",
+      "en": "My Little Cthulhu",
+      "tr": "Minik Cthulhum",
+      "reason": "Oyuncak adında Cthulhu özel adına Türkçe iyelik eki bitişik gelir; adın kökü korunur."
+    },
+    {
+      "asset": "tiles/materials/erchiuspillar.material",
+      "pointer": "/description",
+      "en": "A pillar made of solid erchius. Probably explodey.",
+      "tr": "Saf Erchiustan yapılmış bir sütun. Muhtemelen patlayıcıdır.",
+      "reason": "Eski katalog alanında Erchius kökü Türkçe ayrılma ekiyle bitişik yazılmıştır; kaynak adı korunur."
+    },
     {
       "asset": "zb/researchTree/data.config",
       "pointer": "/strings/currencies/fuscienceresource",

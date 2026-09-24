@@ -117,6 +117,18 @@ class IntegrityTests(unittest.TestCase):
                 engine.validate(row(en, tr))
         engine.validate(row('A forerunner', 'Bir öncül'))
 
+    def test_repeated_proper_names_are_locked_in_text(self):
+        engine = qa.Terminology(self.terms)
+        for en, tr in [
+            ('Cthulhu Statue', 'Cthulhu Heykeli'),
+            ('Erchius Converter', 'Erchius Dönüştürücü'),
+            ('Charged Lunari', 'Yüklü Lunari'),
+        ]:
+            with self.subTest(en=en):
+                engine.validate(row(en, tr))
+                with self.assertRaisesRegex(ValueError, 'LOCKED'):
+                    engine.validate(row(en, 'Yanlış karşılık'))
+
     def test_terminology_context_and_exception_binding(self):
         engine = qa.Terminology(self.terms)
         for exception in self.terms['context_exceptions']:

@@ -548,6 +548,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V060_MINIBIOME_FIELDS:
+        return True
     if (a,p) in V059_MONSTER_FIELDS:
         return True
     if (a,p) in V058_CREATURE_FIELDS:

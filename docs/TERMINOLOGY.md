@@ -36,6 +36,9 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Energy Source | Görev nesnesi | Kavram | Enerji Kaynağı | Energy Source | APPROVED |  |
 | Mining Laser | Araç | Nesne | Madencilik Lazeri | Mining Laser | APPROVED |  |
 | Precursor | FU tür / özel ad | Özel ad | Precursor | Öncül | LOCKED | Kaynakta species olarak kullanılıyor; özel ad adlarda ve cümle içinde korunur |
+| Cthulhu | Kadim yaratık özel adı | Özel ad | Cthulhu | - | LOCKED | Özel ad korunur; iyelik ekli oyuncak adı alan-bağlı istisnadır |
+| Erchius | FU enerji ve yakıt kaynağı | Kaynak | Erchius | - | LOCKED | Kaynak adı korunur; Türkçe ayrılma eki bitişik yazılmış eski alan kayıtlı istisnadır |
+| Lunari | FU kristal ve malzeme adı | Kaynak | Lunari | - | LOCKED | Yüklü kristal ve malzeme adlarında Lunari özel adı korunur |
 | Elemental | Bilimsel/malzeme bağlamı | Sıfat | Elementel | Elemental | APPROVED |  |
 | Homestead | Welchie görev serisi | Görev başlığı | Yerleşim | Çiftlik Hayatı | LOCKED | I-V zinciri v0.9'da tamamlandı; görev serisi boyunca Yerleşim kullanımı doğrulandı |
 | Ancient Essence | Vanilla/FU kaynak adı | Kaynak | Antik Öz | - | REVIEW | Ana Starbound Türkçe terminolojisiyle karşılaştırılacak |
