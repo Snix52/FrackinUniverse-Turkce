@@ -41,6 +41,8 @@ Kaynakta gerçek bir biçimlendirme hatası varsa düzeltme yalnızca açık QA 
 - Önce sözlük, diğer kullanım örnekleri ve oyun bağlamı kontrol edilir.
 - Emin olunmayan terim REVIEW durumuna alınır.
 - Bir terim değişirse repository genelindeki eski kullanımlar temizlenir.
+- Yeni pakette tekrar eden özel adlar, tür/fraksiyon, malzeme ve sistem adları ile önceki sürümlerde yeniden düzeltilen terimler bağlamları doğrulandıktan sonra `tools/locked_terms.json` içinde LOCKED karara bağlanır. Doğru karşılık ve bilinen yanlış varyantlar birlikte kaydedilir.
+- Terim bir adın veya cümlenin içinde de geçiyorsa QA bu kullanımı denetlemelidir; tek sözcüklü özel adlarda gerektiğinde `enforce_in_text` kullanılır. Yanlış varyantı reddeden regresyon testi eklenir. Genel sözcüklerin farklı bağlamları gerekçesiz küresel yasakla kapatılmaz.
 
 Oyuncuya gösterilen Türkçe adın yanına geçici kolaylık amacıyla bile İngilizce ad parantez içinde eklenmez.
 

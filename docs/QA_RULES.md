@@ -15,6 +15,7 @@ Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol öze
 - Oyuncu metninde geçici İngilizce parantez glossu bırakılmamalı.
 - Türkçe karaktersiz ASCII sürümü üretilmemeli.
 - Terminoloji sözlüğündeki LOCKED kararlar ihlal edilmemeli; yüksek güvenli makine kuralları `tools/locked_terms.json` üzerinden build sırasında uygulanmalı.
+- Tekrarlayan veya önceki sürümde yeniden düzeltilen yüksek güvenli terimler yayın öncesi LOCKED kaydıyla korunmalı; QA'nın yalnız tam alanı değil ad ve cümle içindeki kullanımı da yakaladığı hatalı varyant testiyle gösterilmeli.
 - Aynı İngilizce kaynak metin varsayılan olarak tek Türkçe karşılık kullanmalı; yalnız belgeli bağlam istisnaları `tools/translation_memory_exceptions.json` içinde tutulmalı.
 - Exact FU kaynak commitindeki tüm pointer ve İngilizce kaynak değerleri doğrulanmalı.
 - Ana paket CI'ı `tools/kaynaklar.json` içindeki pinned FU commitini checkout edip `build_validate.py --source-dir` ile gerçek kaynak üzerinde patch simülasyonu çalıştırmalı.
