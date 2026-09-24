@@ -333,6 +333,15 @@ V059_MONSTER_FIELDS = {
 if len(V059_MONSTER_FIELDS) != len(_V059_MANIFEST['translations']):
     raise ValueError('v0.59 canavar manifestinde yinelenen alan var')
 
+_V060_MANIFEST = json.loads(
+    Path(__file__).with_name('v060_translations.json').read_text(encoding='utf-8')
+)
+V060_MINIBIOME_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V060_MANIFEST['translations']
+}
+if len(V060_MINIBIOME_FIELDS) != len(_V060_MANIFEST['translations']):
+    raise ValueError('v0.60 mini-biome manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.

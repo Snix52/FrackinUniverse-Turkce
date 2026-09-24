@@ -1,6 +1,7 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
+24 Eylül 2026: v0.60.0-beta yerel çeviri adayı hazırlandı. `objects/minibiome/elder/` ve `objects/minibiome/precursor/` kapsamı 536 alan / 196 asset / 314 benzersiz kaynak metin içeriyor; üç değer yayımlanmış Translation Memory karşılığından tekrar kullanıldı. Sol incelemesi, QA, build ve yayın bekleniyor.
 24 Eylül 2026: `Precursor` zaten LOCKED olmasına karşın tek sözcüklü terimler
 QA'nın cümle içi kontrolünden geçmiyordu. Terime özgü `enforce_in_text`
 denetimi eklendi; kaynakta `Precursor` geçen ad ve cümlelerde özel adın
