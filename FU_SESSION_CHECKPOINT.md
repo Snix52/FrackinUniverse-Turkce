@@ -3,8 +3,8 @@
 ## Güncel çalışma
 24 Eylül 2026: v0.58.0-beta kalan yaratık aileleri çeviri adayı yerelde hazırlandı.
 Kapsam 522 alan / 261 asset / 257 benzersiz kaynak metin; üç metin önceki TM
-karşılıklarından kullanıldı. Sol kaynak/çeviri kontrolü, QA, paket build'i ve
-yayın bekleniyor.
+karşılıklarından kullanıldı. Sol kaynak/çeviri kontrolü, QA ve pinli FU kaynak
+build'i tamamlandı; doğrudan `main` yayınına hazırlandı.
 23 Eylül 2026: v0.54.0 Honey ailesi yapı malzemeleri yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
 v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.
@@ -469,3 +469,9 @@ Oyun içi LQA ayrı bir aşamadır.
 - Aynı canavar ailesindeki diğer adlar `Balçık` kullanırken altı genel yaratık adı `Slime` kalmıştı; altı `/shortdescription` alanı `Balçık` olarak düzeltildi. Önceki katalogdaki oynanabilir tür adı `Slime` korundu; iki bağlam için çeviri belleğine yalnız yedi alanı kapsayan kesin istisna eklendi.
 - Luna v0.57 adayından bu sonuca kadar toplam **13 benzersiz kaynak cümle veya etiket / 19 çeviri alanı** düzeltildi. Önceki 10.623 katalog alanı değişmedi.
 - Katalog QA, **193 birim testi**, v0.57 exact-source gate, pinli FU 6.5.8 tam build ve build çıktısındaki **3 Lua davranış testi** yeniden PASS. Oyun içi LQA: **NOT TESTED**.
+
+## v0.58 kalan yaratık aileleri
+- `codex/luna-v058` adayı güncel `main` üstüne alındı; önceki 11.100 katalog alanı birebir korundu. Yeni kapsam **522 alan / 261 asset / 257 benzersiz kaynak metin**; toplam **11.622** yapılandırılmış alan oldu.
+- Sol incelemesinde Luna adayına göre **12 benzersiz kaynak cümle veya etiket / 12 çeviri alanı** düzeltildi. Precursor özel adı ve Jungle/Tropik Orman terimi eşlendi; Ansible videosu ve yaratık açıklamalarındaki anlam, yaratık adları ve cupcake adı gözden geçirildi.
+- Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` korundu. v0.58 exact-source gate **PASS (522/261/257)**; katalog QA **PASS (18.054 katalog birimi / 52 raw birim / 542 LOCKED terim)**. **193 birim testi**, pinli kaynakla tam build **PASS (11.622 alan / 3.735 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
+- Oyun içi LQA: **NOT TESTED**.
