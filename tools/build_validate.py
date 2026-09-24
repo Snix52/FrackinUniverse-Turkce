@@ -360,6 +360,15 @@ V062_MECH_PART_FIELDS = {
 if len(V062_MECH_PART_FIELDS) != len(_V062_MANIFEST['translations']):
     raise ValueError('v0.62 mek parçaları manifestinde yinelenen alan var')
 
+_V063_MANIFEST = json.loads(
+    Path(__file__).with_name('v063_translations.json').read_text(encoding='utf-8')
+)
+V063_FOOD_FIELDS = {
+    (row['asset'], row['pointer']) for row in _V063_MANIFEST['translations']
+}
+if len(V063_FOOD_FIELDS) != len(_V063_MANIFEST['translations']):
+    raise ValueError('v0.63 yiyecek manifestinde yinelenen alan var')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -566,6 +575,8 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a,p) in V063_FOOD_FIELDS:
+        return True
     if (a,p) in V062_MECH_PART_FIELDS:
         return True
     if (a,p) in V061_FOOD_SERVICE_FIELDS:
