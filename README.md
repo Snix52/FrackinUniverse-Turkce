@@ -4,20 +4,20 @@ Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
-**Güncel sürüm:** v0.60.0 Beta
+**Güncel sürüm:** v0.61.0 Beta
 **Hedef FU sürümü:** 6.5.8  
 **Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
 ## Güncel durum
 
-v0.60.0 Beta itibarıyla:
+v0.61.0 Beta itibarıyla:
 
-- **12.499** yapılandırılmış oyuncu metni
+- **12.898** yapılandırılmış oyuncu metni
 - **57** görünür Lua/script metni
-- **12.556** toplam yerelleştirilmiş görünür birim
-- **4.190** patch asset
+- **12.955** toplam yerelleştirilmiş görünür birim
+- **4.238** patch asset
 - **7** raw override asset
-- **4.197** toplam hedef asset
+- **4.245** toplam hedef asset
 - Statik QA: **PASS**
 - Pinned FU source validation: **PASS**
 - ZIP bütünlüğü ve kurulum ağacı eşleşmesi: **PASS**
@@ -25,7 +25,9 @@ v0.60.0 Beta itibarıyla:
 
 Güncel doğrulanmış paket:
 
-`dist/FU_Turkce_v0.60.0_Beta.zip`
+`dist/FU_Turkce_v0.61.0_Beta.zip`
+
+FU 6.5.8 kaynağının güncel `master` commitine geçiş ve yeni çeviri kapsamı karşılaştırması: [FU upstream kontrolü](docs/FU_UPSTREAM_20260924.md).
 
 Paket ve güncel build kanıtı `main` yayın workflow'u tarafından üretilir. Paket SHA-256 değeri, kaynak commit kimliği, workflow run numarası ve doğrulama durumu yalnız [dist/build-evidence.json](dist/build-evidence.json) içinde tutulur; README’ye kopyalanmaz.
 
