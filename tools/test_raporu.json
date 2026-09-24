@@ -1,30 +1,30 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-24T18:09:09.254050+00:00",
-  "workflow_run_id": "36038017901",
-  "source_commit": "bf0f5231e62132e078468f67f1e4175eea85af04",
-  "translation_source_commit": "bf0f5231e62132e078468f67f1e4175eea85af04",
-  "translation_version": "0.63.2-beta",
+  "generated_at_utc": "2026-09-24T19:07:54.098591+00:00",
+  "workflow_run_id": "36045240255",
+  "source_commit": "1377239114a6a8d94abb127ef602606bb3df56d2",
+  "translation_source_commit": "1377239114a6a8d94abb127ef602606bb3df56d2",
+  "translation_version": "0.64.0-beta",
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 13454,
-    "patch_assets": 4546,
+    "structured_fields": 13622,
+    "patch_assets": 4698,
     "raw_override_assets": 7,
     "raw_script_strings": 57
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.63.2_Beta.zip",
-    "bytes": 2343573,
-    "sha256": "6a0a052873764b1a13f324e4d46b5e6ba38467373ea30d29f9caf46b7f245515",
-    "git_blob_sha": "cdf14aeec862a77112bd09e8e415b0ec64f303a8",
+    "path": "dist/FU_Turkce_v0.64.0_Beta.zip",
+    "bytes": 2408047,
+    "sha256": "c7b1e17b3b00d9a7d507b25d2207efef7281712b2a04dd72021e61d5215c3be8",
+    "git_blob_sha": "3b13b276923bbb8bbefef1abff0cf693a2926070",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "a9230beb1c7fd52a23148cf739232d62c0d5a7fc9383adc792500edbb8c3eadd",
-  "build_inputs_sha256": "f9f0cbba257ba794f9809a06b3da5af71761c46e4053b5d14da17fb9f9f059fd",
-  "catalog_sha256": "e5ab501985dab04f0c2f7c2c98670a439a20b7abae4b9ee5fdb3b0c4439a2726",
+  "install_tree_sha256": "17bd443ed81e06e925bb8d5b6e68e22a4359ee9530194041aa079d08f2d43589",
+  "build_inputs_sha256": "9cde6c6b5582a2b8797be27cad0a36da486adae13d2dd12cff4c90af7359092f",
+  "catalog_sha256": "fd6ba648b0852135e97188b794d9757b63a02e039adf4be5c905b4dfafacab50",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -33,12 +33,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 13454,
-  "patched_assets": 4546,
+  "translated_display_fields": 13622,
+  "patched_assets": 4698,
   "raw_override_assets": 7,
   "raw_script_display_strings": 57,
-  "total_localized_display_units": 13511,
-  "target_assets_total": 4553,
+  "total_localized_display_units": 13679,
+  "target_assets_total": 4705,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -130,7 +130,8 @@
     "v0.60 Kadim ve Precursor mini-biome eşyaları": 536,
     "v0.61 kafe, fast-food, pazar ve suşi barı nesneleri": 399,
     "v0.62 mek parçaları": 295,
-    "v0.63 yiyecekler": 261
+    "v0.63 yiyecekler": 261,
+    "v0.64 derin yiyecekler": 168
   },
   "checks": {
     "static_qa": "PASS",
@@ -3429,6 +3430,1094 @@
       "qa": {
         "layered_source": true,
         "source_patch": "items/generic/food/tier1/toast.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/applecrumble.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/applecrumble.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/baconpancakes.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/baconpancakes.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/beakseedbread.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/beakseedbread.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/beakseedjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/beakseedjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/beakseedtart.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/beakseedtart.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/bonbonbonbons.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/bonbonbonbons.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/bonbons.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/bonbons.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/cactusjuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/cactusjuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/cake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/cake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/candiedcorn.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/candiedcorn.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/candyapple.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/candyapple.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/carrotbread.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/carrotbread.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/carrotcake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/carrotcake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/carrotjuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/carrotjuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/carrotsoup.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/carrotsoup.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/cheeseburger.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/cheeseburger.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/chocolatecake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/chocolatecake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/coffee.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/coffee.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/coffeecake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/coffeecake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/cornpeckers.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/cornpeckers.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/feathercrownjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/feathercrownjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/featherfood.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/featherfood.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/flatwhite.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/flatwhite.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/fluffyruffs.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/fluffyruffs.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/gardensalad.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/gardensalad.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/hamburger.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/hamburger.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/kiwijam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/kiwijam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/kiwijuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/kiwijuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/mocha.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/mocha.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/mushroombread.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/mushroombread.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/mushroomquiche.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/mushroomquiche.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/mushroomrice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/mushroomrice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/omelette.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/omelette.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/pasty.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/pasty.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/pearlpeajam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/pearlpeajam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/pearlpeapancakes.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/pearlpeapancakes.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/pizza.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/pizza.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/pizzaslice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/pizzaslice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/porridge.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/porridge.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/quichelorraine.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/quichelorraine.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/relish.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/relish.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/ricepudding.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/ricepudding.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/roastdinner.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/roastdinner.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/rustchowder.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/rustchowder.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/specialrice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/specialrice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/spikycookies.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/spikycookies.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/stickyribs.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/stickyribs.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/stuffedtomato.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/stuffedtomato.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/sweetmeat.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/sweetmeat.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/sweetpopcorn.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/sweetpopcorn.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/tomatojuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/tomatojuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier2/tomatosoup.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier2/tomatosoup.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/2kbpotage.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/2kbpotage.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/apegrapes.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/apegrapes.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/apexfritter.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/apexfritter.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/automatoshake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/automatoshake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/automatostew.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/automatostew.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/bananacon.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/bananacon.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/bananacreamdonut.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/bananacreamdonut.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/bananacreampie.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/bananacreampie.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/bananaicecream.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/bananaicecream.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/batteredbanana.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/batteredbanana.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/cactiicecream.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/cactiicecream.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/campfirebanana.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/campfirebanana.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/candyautomato.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/candyautomato.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/choconut.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/choconut.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/coconuticecream.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/coconuticecream.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/coconutmilk.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/coconutmilk.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/coconutrice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/coconutrice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/desertsalsa.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/desertsalsa.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/fishinabone.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/fishinabone.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/fruitsalad.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/fruitsalad.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/grapejuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/grapejuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/luckydip.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/luckydip.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/pineapplejam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/pineapplejam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/pineapplejuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/pineapplejuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/pineapplepizzaslice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/pineapplepizzaslice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/snowcone.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/snowcone.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/spookydonut.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/spookydonut.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/spookypie.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/spookypie.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/stuffedautomato.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/stuffedautomato.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/sweetpunch.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/sweetpunch.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/thornjuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/thornjuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier3/tropicalpunch.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier3/tropicalpunch.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/alienfruitjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/alienfruitjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/alienfruitjuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/alienfruitjuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/avesmingoicecream.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/avesmingoicecream.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/avesmingojuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/avesmingojuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/bananasplit.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/bananasplit.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/bloodypuss.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/bloodypuss.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/brineapple.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/brineapple.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/cyanider.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/cyanider.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/oceanrisotto.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/oceanrisotto.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/oceansalsa.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/oceansalsa.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/oceansurprise.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/oceansurprise.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/oculemonmeringue.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/oculemonmeringue.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/oculemonstew.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/oculemonstew.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/pussplumjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/pussplumjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/pussplumpudding.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/pussplumpudding.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/pussplumtart.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/pussplumtart.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/reefjuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/reefjuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/reefpodsurprise.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/reefpodsurprise.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/reefshake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/reefshake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/ricecake.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/ricecake.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/saltsalad.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/saltsalad.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/seafoodgratin.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/seafoodgratin.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/soggysack.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/soggysack.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/stuffeddirturchin.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/stuffeddirturchin.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/sushi.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/sushi.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/toxicjamdonut.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/toxicjamdonut.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/toxicjuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/toxicjuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/toxictart.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/toxictart.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier4/toxictopjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier4/toxictopjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/16GBpasty.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/16GBpasty.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/8gbpizzap.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/8gbpizzap.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/boltos.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/boltos.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/eggshooticecream.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/eggshooticecream.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/eggshootsalad.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/eggshootsalad.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/eyebowls.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/eyebowls.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/nutsandbolts.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/nutsandbolts.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/piodia.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/piodia.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier5/smash.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier5/smash.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/burningeyeballs.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/burningeyeballs.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/coralcreepcurry.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/coralcreepcurry.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/hotbone.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/hotbone.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/hothothotpot.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/hothothotpot.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/neonmelonjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/neonmelonjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/pearlpeaparcels.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/pearlpeaparcels.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/pozest.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/pozest.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/spicyfeathercrown.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/spicyfeathercrown.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/spicyribs.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/spicyribs.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/ultimatejuice.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/ultimatejuice.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/volcanicsalsa.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/volcanicsalsa.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/wartweedjam.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/wartweedjam.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/wartweedjamdonut.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/wartweedjamdonut.consumable.patch"
+      }
+    },
+    {
+      "asset": "items/generic/food/tier6/wartweedstew.consumable",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "items/generic/food/tier6/wartweedstew.consumable.patch"
       }
     }
   ]
