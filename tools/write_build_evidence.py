@@ -118,6 +118,42 @@ def deterministic_zip(path: Path, files: dict[str, bytes]) -> None:
         temporary.unlink(missing_ok=True)
 
 
+def verified_patch_fields(name: str, operations: list) -> int:
+    if not isinstance(operations, list) or not operations:
+        raise ValueError('Invalid patch operations: ' + name)
+    if all(isinstance(batch, list) for batch in operations):
+        seen = {}
+        for batch in operations:
+            if (len(batch) != 2 or not all(isinstance(op, dict) for op in batch)
+                    or [op.get('op') for op in batch] != ['test', 'replace']
+                    or batch[0].get('path') != batch[1].get('path')
+                    or not isinstance(batch[0].get('value'), str)
+                    or not isinstance(batch[1].get('value'), str)):
+                raise ValueError('Source-test/replace pairing mismatch: ' + name)
+            path = batch[0]['path']
+            source, translation = batch[0]['value'], batch[1]['value']
+            if path in seen:
+                previous_source, previous_translation, variants = seen[path]
+                if (variants != 1 or '\n' not in previous_source or '\r' in previous_source
+                        or source != previous_source.replace('\n', '\r\n')
+                        or translation != previous_translation):
+                    raise ValueError('Invalid line-ending source variant: ' + name + path)
+                seen[path] = (previous_source, previous_translation, 2)
+            else:
+                seen[path] = (source, translation, 1)
+        return len(seen)
+    if not all(isinstance(op, dict) for op in operations):
+        raise ValueError('Invalid patch operation shape: ' + name)
+    tests = [x for x in operations if x.get('op') == 'test']
+    replacements = [x for x in operations if x.get('op') == 'replace']
+    if (len(operations) != 2 * len(tests) or len(tests) != len(replacements)
+            or [x['path'] for x in tests] != [x['path'] for x in replacements]
+            or len({x['path'] for x in tests}) != len(tests)
+            or operations != tests + replacements):
+        raise ValueError('Source-test/replace pairing mismatch: ' + name)
+    return len(replacements)
+
+
 def verify_package(path: Path, files: dict[str, bytes], stats: dict) -> None:
     with zipfile.ZipFile(path) as archive:
         if archive.testzip() is not None:
@@ -138,14 +174,7 @@ def verify_package(path: Path, files: dict[str, bytes], stats: dict) -> None:
             continue
         patches += 1
         operations = json.loads(data)
-        tests = [x for x in operations if x.get('op') == 'test']
-        replacements = [x for x in operations if x.get('op') == 'replace']
-        if (len(operations) != 2 * len(tests) or len(tests) != len(replacements)
-                or [x['path'] for x in tests] != [x['path'] for x in replacements]
-                or len({x['path'] for x in tests}) != len(tests)
-                or operations != tests + replacements):
-            raise ValueError('Source-test/replace pairing mismatch: ' + name)
-        fields += len(replacements)
+        fields += verified_patch_fields(name, operations)
     if (fields, patches, raw) != (stats['fields'], stats['patch_assets'], stats['raw_assets']):
         raise ValueError('Build report/package count mismatch')
 

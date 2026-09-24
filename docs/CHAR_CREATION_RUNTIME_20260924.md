@@ -11,7 +11,8 @@
 - Karakter ekranındaki 19 alan ayrı koşullu gruplara ayrıldı. FU'nun sonradan değiştirdiği zorlu mod açıklaması doğru kaynak değeriyle kilitlendi ve kısa, anlamı koruyan Türkçe karşılıkla yenilendi.
 - Tür açıklamalarında LF ve CRLF kaynak biçimleri ayrı koşullu gruplarla kabul edildi. Başka kaynak metni olursa ilgili grup çalışmıyor; tür adına ya da oyun parametrelerine dokunulmuyor.
 - Pinli FU commit'i `bb58383c0d16c1152e3439e606b39ff82288b586` ve ilan edilen 6.5.8 sürümü değişmedi.
-- Geçici kurulu pakette oyun içi denemede `IRK` etiketleri ile Avian, Fenerox ve Thelusian açıklamaları Türkçe göründü. Zorlu mod açıklaması Türkçe göründü; dar pencerede taşma riski nedeniyle ayrıca kısaltıldı. Son kısaltmanın oyun içi kontrolü yayın paketi kurulunca yapılmalıdır.
+- Geçici kurulu pakette oyun içi denemede `IRK` etiketleri ile Avian, Fenerox ve Thelusian açıklamaları Türkçe göründü. Zorlu mod açıklaması kısaltıldı ve son paketle 800×630 oyun penceresinde metin alanına sığdığı görüldü.
+- CI paket kanıtı doğrulayıcısı da koşullu grup biçimini ve yalnız LF/CRLF kaynak varyantını sayacak şekilde güncellendi; yanlış kaynak varyantı hâlâ reddediliyor.
 
 ## Ayrı kalan görünür alanlar
 
