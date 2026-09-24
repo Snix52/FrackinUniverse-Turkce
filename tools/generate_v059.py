@@ -14,20 +14,22 @@ from write_build_evidence import verify_source
 
 MANIFEST = TOOLS / "v059_translations.json"
 CATALOG = TOOLS / "ceviriler.json"
-EXPECTED_FIELDS = 345
-EXPECTED_ASSETS = 261
-EXPECTED_UNIQUE = 264
+EXPECTED_FIELDS = 341
+EXPECTED_ASSETS = 259
+EXPECTED_UNIQUE = 260
 EXCLUDED_PREFIXES = (
     "monsters/walkers/spheresnaketest/",
     "monsters/walkers/spheretest/",
 )
-# These four invisible spawn selectors and the debug sphere are internal/test assets.
+# Invisible spawn selectors, temporary script helpers, and the debug sphere are internal/test assets.
 EXCLUDED_ASSETS = {
     "monsters/ghosts/debugsphere/debugsphere.monstertype",
     "monsters/selectors/burrower_depth_selector/burrower_depth_selector.monstertype",
     "monsters/selectors/burrower_selector/burrower_selector.monstertype",
     "monsters/selectors/masteroid_selector/masteroid_selector.monstertype",
     "monsters/selectors/soft_burrower_selector/soft_burrower_selector.monstertype",
+    "monsters/unique/fu_byosatmospheretemp/fu_byosatmospheretemp.monstertype",
+    "monsters/unique/hbeamscriptbug/hbeamscriptbug.monstertype",
 }
 
 

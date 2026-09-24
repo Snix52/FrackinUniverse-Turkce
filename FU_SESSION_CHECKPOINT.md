@@ -1,10 +1,11 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
-24 Eylül 2026: v0.59.0-beta kalan görünür canavarlar ve beceri adları yerelde hazır.
-Kapsam 345 alan / 261 asset / 264 benzersiz kaynak metin; üç metin mevcut TM'den
-alındı. Test/debug yaratıkları ve dört dahili spawn seçicisi dışarıda tutuldu.
-Sol kaynak/çeviri kontrolü, QA, paket build'i ve yayın bekleniyor.
+24 Eylül 2026: v0.59.0-beta kalan görünür canavarlar ve beceri adları Sol incelemesinden geçti.
+Kapsam 341 alan / 259 asset / 260 benzersiz kaynak metin; üç metin mevcut TM'den
+alındı. Test/debug yaratıkları, dahili spawn seçicileri ve iki görünmez script
+yardımcısı dışarıda tutuldu. Kaynak/çeviri kontrolü, QA ve pinli build başarılı;
+doğrudan `main` yayını hazırlanıyor.
 24 Eylül 2026: v0.58.0-beta kalan yaratık aileleri çeviri adayı yerelde hazırlandı.
 Kapsam 522 alan / 261 asset / 257 benzersiz kaynak metin; üç metin önceki TM
 karşılıklarından kullanıldı. Sol kaynak/çeviri kontrolü, QA ve pinli FU kaynak
@@ -478,4 +479,11 @@ Oyun içi LQA ayrı bir aşamadır.
 - `codex/luna-v058` adayı güncel `main` üstüne alındı; önceki 11.100 katalog alanı birebir korundu. Yeni kapsam **522 alan / 261 asset / 257 benzersiz kaynak metin**; toplam **11.622** yapılandırılmış alan oldu.
 - Sol incelemesinde Luna adayına göre **12 benzersiz kaynak cümle veya etiket / 12 çeviri alanı** düzeltildi. Precursor özel adı ve Jungle/Tropik Orman terimi eşlendi; Ansible videosu ve yaratık açıklamalarındaki anlam, yaratık adları ve cupcake adı gözden geçirildi.
 - Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` korundu. v0.58 exact-source gate **PASS (522/261/257)**; katalog QA **PASS (18.054 katalog birimi / 52 raw birim / 542 LOCKED terim)**. **193 birim testi**, pinli kaynakla tam build **PASS (11.622 alan / 3.735 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
+- Oyun içi LQA: **NOT TESTED**.
+
+## v0.59 kalan görünür canavarlar ve beceri adları
+- `codex/luna-v059` adayı güncel `main` üstüne alındı; önceki 11.622 katalog alanı birebir korundu. Yeni kapsam **341 alan / 259 asset / 260 benzersiz kaynak metin**; toplam **11.963** yapılandırılmış alan oldu.
+- Sol incelemesinde adayın **18 benzersiz kaynak cümle veya etiketi / 21 çeviri alanı** düzeltildi. `Precursor` özel adı ve kilitli `Bozulmuş Nöbetçi` karşılığı korundu; beceri, mermi ve yaratık adlarındaki anlam hataları giderildi.
+- Oyun içinde görünmeyen iki script yardımcısının dört alanı kapsamdan çıkarıldı. `pogolem` ve `nautileech` için temel canavar dosyası bulunmadığından dört alanın pinli FU `.patch` kaynak kökeni mevcut katmanlı kaynak kuralıyla kaydedildi. Pinli FU 6.5.8 commit `329e714b3fe87571055c8ad7aa38135d199d3317` değişmedi.
+- v0.59 exact-source gate **PASS (341/259/260)**; katalog QA **PASS (18.736 katalog birimi / 52 raw birim / 542 LOCKED terim)**. **193 birim testi**, pinli kaynakla tam build **PASS (11.963 alan / 3.994 patch asset / 7 raw asset / 57 raw metin)** ve build çıktısında **3 Lua davranış testi** PASS.
 - Oyun içi LQA: **NOT TESTED**.
