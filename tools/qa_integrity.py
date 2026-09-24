@@ -99,12 +99,13 @@ class Terminology:
             for form in forms:
                 en, tr = form['en'], form['tr']
                 self.exact[en].add(tr)
-                if len(en.split()) < 2:
+                enforce_in_text = term.get('enforce_in_text', False)
+                if len(en.split()) < 2 and not enforce_in_text:
                     continue
                 banned = [s.strip() for s in term['forbidden'].split(',') if s.strip() not in ('', '-')]
                 self.phrases.append((re.compile(r'(?<!\w)' + re.escape(en) + r'(?!\w)', re.I),
                                      tr.casefold(), [(b, re.compile(r'(?<!\w)' + re.escape(b) + r'(?!\w)', re.I))
-                                                     for b in banned]))
+                                                     for b in banned], enforce_in_text))
 
     def validate(self, row: dict) -> None:
         en, tr = plain(row['en']), plain(row['tr'])
@@ -118,7 +119,7 @@ class Terminology:
             allowed = self.exact[en]
             if len(allowed) != 1 or tr not in allowed:
                 raise ValueError('LOCKED terminology/context mismatch: ' + where + ' -> ' + repr(sorted(allowed)))
-        for source_pattern, canonical, banned in self.phrases:
+        for source_pattern, canonical, banned, enforce_in_text in self.phrases:
             if not source_pattern.search(en):
                 continue
             # A canonical phrase may contain a shorter forbidden word. Only
@@ -130,6 +131,8 @@ class Terminology:
                                for a, b in canonical_spans)
                        for m in pattern.finditer(tr)):
                     raise ValueError('LOCKED forbidden variant ' + repr(variant) + ': ' + where)
+            if enforce_in_text and not canonical_spans:
+                raise ValueError('LOCKED terminology missing ' + repr(canonical) + ': ' + where)
 
 
 def manifest_rows(primary: list[dict], tools: Path = TOOLS) -> list[dict]:

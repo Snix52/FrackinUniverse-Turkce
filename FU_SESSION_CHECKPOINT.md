@@ -1,6 +1,11 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
+24 Eylül 2026: `Precursor` zaten LOCKED olmasına karşın tek sözcüklü terimler
+QA'nın cümle içi kontrolünden geçmiyordu. Terime özgü `enforce_in_text`
+denetimi eklendi; kaynakta `Precursor` geçen ad ve cümlelerde özel adın
+korunması ve `Öncül` varyantının reddi artık zorunlu. v0.59 çeviri metinleri
+değişmedi; bu sürümde eklenen bakım yalnız QA kuralı ve testidir.
 24 Eylül 2026: v0.59.0-beta kalan görünür canavarlar ve beceri adları Sol incelemesinden geçti.
 Kapsam 341 alan / 259 asset / 260 benzersiz kaynak metin; üç metin mevcut TM'den
 alındı. Test/debug yaratıkları, dahili spawn seçicileri ve iki görünmez script

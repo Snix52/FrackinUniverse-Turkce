@@ -35,7 +35,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Dark Cavern | Görev yeri | Yer | Karanlık Mağara | Dark Cavern | APPROVED |  |
 | Energy Source | Görev nesnesi | Kavram | Enerji Kaynağı | Energy Source | APPROVED |  |
 | Mining Laser | Araç | Nesne | Madencilik Lazeri | Mining Laser | APPROVED |  |
-| Precursor | FU tür / özel ad | Özel ad | Precursor | Öncül | LOCKED | Kaynakta species olarak kullanılıyor; özel ad korunur |
+| Precursor | FU tür / özel ad | Özel ad | Precursor | Öncül | LOCKED | Kaynakta species olarak kullanılıyor; özel ad adlarda ve cümle içinde korunur |
 | Elemental | Bilimsel/malzeme bağlamı | Sıfat | Elementel | Elemental | APPROVED |  |
 | Homestead | Welchie görev serisi | Görev başlığı | Yerleşim | Çiftlik Hayatı | LOCKED | I-V zinciri v0.9'da tamamlandı; görev serisi boyunca Yerleşim kullanımı doğrulandı |
 | Ancient Essence | Vanilla/FU kaynak adı | Kaynak | Antik Öz | - | REVIEW | Ana Starbound Türkçe terminolojisiyle karşılaştırılacak |

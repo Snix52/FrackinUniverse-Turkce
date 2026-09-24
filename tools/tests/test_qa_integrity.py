@@ -104,6 +104,19 @@ class IntegrityTests(unittest.TestCase):
         engine.validate(row('Build an Arc Smelter.', 'Bir Ark Ergitici üret.'))
         engine.validate(row('Jungle', 'Tropik Orman'))
 
+    def test_precursor_locked_inside_names_and_sentences(self):
+        engine = qa.Terminology(self.terms)
+        engine.validate(row('Precursor Warbot', 'Precursor Savaş Botu'))
+        engine.validate(row('Find the Precursor relic.', "Precursor'ın kalıntısını bul."))
+        for en, tr in [
+            ('Precursor Warbot', 'Öncül Savaş Botu'),
+            ('Precursor Warbot', 'Savaş Botu'),
+            ('Find the Precursor relic.', 'Öncül kalıntısını bul.'),
+        ]:
+            with self.subTest(en=en, tr=tr), self.assertRaisesRegex(ValueError, 'LOCKED'):
+                engine.validate(row(en, tr))
+        engine.validate(row('A forerunner', 'Bir öncül'))
+
     def test_terminology_context_and_exception_binding(self):
         engine = qa.Terminology(self.terms)
         for exception in self.terms['context_exceptions']:
