@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.63.0-beta",
-  "note": "v0.63 kök ve tier1 yiyecek çevirileri Sol incelemesinden geçti.",
+  "translation_version": "0.63.1-beta",
+  "note": "v0.63.1 karakter oluşturma ekranı ve tür açıklamalarının runtime yama uyumluluğu düzeltildi.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -51556,9 +51556,13 @@
     {
       "asset": "interface/windowconfig/charcreation.config",
       "pointer": "/paneLayout/mode/buttons/2/data/description",
-      "en": "When you die your character stays dead!",
-      "tr": "Ölürsen karakterin kalıcı olarak ölür!",
-      "section": "v0.40 karakter oluşturma arayüzü"
+      "en": "Hunger. Death: Lose 50% pixels, drop ^red;ALL^reset; items.",
+      "tr": "Açlık. Ölüm: %50 piksel, ^red;TÜM^reset; eşya kaybı.",
+      "section": "v0.40 karakter oluşturma arayüzü",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "interface/windowconfig/charcreation.config.patch"
+      }
     },
     {
       "asset": "interface/windowconfig/charcreation.config",

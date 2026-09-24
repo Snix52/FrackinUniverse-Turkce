@@ -486,12 +486,46 @@ def seed(root,p,v):
 
 def simulate(root,patch):
     r=copy.deepcopy(root)
+    if patch and isinstance(patch[0],list):
+        for batch in patch:
+            candidate=copy.deepcopy(r)
+            for op in batch:
+                if op['op']=='test':
+                    if read_at(candidate,op['path'])!=op['value']:break
+                elif op['op']=='replace':replace_at(candidate,op['path'],op['value'])
+                else:raise ValueError('Desteklenmeyen patch işlemi')
+            else:
+                r=candidate
+        return r
     for op in patch:
         if op['op']=='test':
             if read_at(r,op['path'])!=op['value']: raise ValueError('Kaynak uyuşmazlığı: '+op['path'])
         elif op['op']=='replace': replace_at(r,op['path'],op['value'])
         else: raise ValueError('Desteklenmeyen patch işlemi')
     return r
+
+def translation_patch(asset, rows):
+    # Character creation has a FU patch that replaces the hardcore tooltip.
+    # Keep each field independent so one changed value cannot discard the UI.
+    if asset == 'interface/windowconfig/charcreation.config':
+        return [[{'op':'test','path':r['pointer'],'value':r['en']},
+                 {'op':'replace','path':r['pointer'],'value':r['tr']}]
+                for r in rows]
+    # Steam's FU package retains CRLF inside its multiline species strings,
+    # while the pinned Git blob uses LF. Both are the same reviewed source.
+    if asset.startswith('species/') and asset.endswith('.species'):
+        batches=[]
+        for r in rows:
+            values=[r['en']]
+            if r['pointer']=='/charCreationTooltip/description' and '\n' in r['en']:
+                values.append(r['en'].replace('\n','\r\n'))
+            for value in values:
+                batches.append([{'op':'test','path':r['pointer'],'value':value},
+                                {'op':'replace','path':r['pointer'],'value':r['tr']}])
+        return batches
+    patch=[{'op':'test','path':r['pointer'],'value':r['en']} for r in rows]
+    patch += [{'op':'replace','path':r['pointer'],'value':r['tr']} for r in rows]
+    return patch
 
 def verify_layered_row(row, source_dir, cache):
     """Check every FU-owned patch value, including recorded vanilla array appends."""
@@ -895,8 +929,7 @@ def main():
 
     patches={}
     for a,rs in sorted(groups.items()):
-        patch=[{'op':'test','path':r['pointer'],'value':r['en']} for r in rs]
-        patch += [{'op':'replace','path':r['pointer'],'value':r['tr']} for r in rs]
+        patch=translation_patch(a,rs)
         fixture={'__qa_sentinel__':{'id':'unchanged_internal_id','cost':12345,'script':'/unchanged.lua'}}
         for r in rs:seed(fixture,r['pointer'],r['en'])
         result=simulate(fixture,patch)
