@@ -1,6 +1,10 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
+24 Eylül 2026: v0.58.0-beta kalan yaratık aileleri çeviri adayı yerelde hazırlandı.
+Kapsam 522 alan / 261 asset / 257 benzersiz kaynak metin; üç metin önceki TM
+karşılıklarından kullanıldı. Sol kaynak/çeviri kontrolü, QA, paket build'i ve
+yayın bekleniyor.
 23 Eylül 2026: v0.54.0 Honey ailesi yapı malzemeleri yerel doğrulaması tamamlandı; yayımlanmış paket durumu `dist/build-evidence.json` içindedir.
 v0.49.0 main dalına alındı. Teknik depo denetimi ayrıntıları:
 `docs/FULL_AUDIT_20260923.md`. Oyun içi LQA tamamlandığı iddia edilmez.

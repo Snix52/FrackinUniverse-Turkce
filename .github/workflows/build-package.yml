@@ -63,7 +63,7 @@ jobs:
           git clone --filter=blob:none --no-checkout https://github.com/sayterdarkwynd/FrackinUniverse.git fu_source
           git -C fu_source checkout --detach "$FU_SOURCE_COMMIT"
 
-      - name: Verify v0.45-v0.57 pinned translation sources
+      - name: Verify v0.45-v0.58 pinned translation sources
         run: |
           python tools/generate_v045.py --source fu_source
           python tools/generate_v046.py --source fu_source
@@ -78,6 +78,7 @@ jobs:
           python tools/generate_v055.py --source fu_source
           python tools/generate_v056.py --source fu_source
           python tools/generate_v057.py --source fu_source
+          python tools/generate_v058.py --source fu_source
 
       - name: Build and run full-source static QA
         run: python tools/build_validate.py --source-dir fu_source --output build_output
