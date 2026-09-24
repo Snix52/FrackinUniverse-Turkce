@@ -42,6 +42,8 @@ def source_candidates(source: Path) -> dict[tuple[str, str], audit.Candidate]:
         rel = PurePosixPath(path.relative_to(source).as_posix())
         if audit.excluded_path(rel):
             continue
+        if len(rel.parts) != 4 and not (len(rel.parts) == 5 and rel.parts[3] == "tier1"):
+            continue
         for candidate in audit.candidates_from_data(rel.as_posix(), data):
             candidate = audit.v046_candidate_visibility(candidate)
             if candidate is None or candidate.confidence != "confirmed" or not candidate.asset.startswith("items/generic/food/") or candidate.pointer not in {"/shortdescription", "/description"}:

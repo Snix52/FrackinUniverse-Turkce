@@ -3,7 +3,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "source_declared_version": "6.5.8",
-  "scope": "items/generic/food/**: confirmed visible /shortdescription and /description fields, including tier1; /category excluded",
+  "scope": "items/generic/food/ direct files plus tier1/: confirmed visible /shortdescription and /description fields; deeper subdirectories and /category excluded",
   "translations": [
     {
       "asset": "items/generic/food/applecinnamonpie.consumable",
@@ -37,7 +37,7 @@
       "asset": "items/generic/food/awfuloffalsmoothie.consumable",
       "pointer": "/description",
       "en": "Blended rotten food. The greatest invention of Dupont Dewpawnt. 90^red;s -^reset;5^red;% Health^reset; 15^red;s Poisoned^reset; ^blue;Madness Gain^reset; 3 ^red;Type: Raw Meat Dairy Dessert^reset;",
-      "tr": "Çürümüş yiyeceklerden yapılmış bir karışım. Dupont Dewpawnt'ın en büyük icadı. 90^red; sn -^reset;%5^red; Can^reset; 15^red; sn Zehirlenme^reset; ^blue;Delilik Artışı^reset; 3 ^red;Tür: Çiğ Et, Süt Ürünü, Tatlı^reset;",
+      "tr": "Çürümüş yiyeceklerden yapılmış bir karışım. Dupont Dewpawnt'ın en büyük icadı. 90^red; sn -^reset;%5^red; Can^reset; 15^red; sn Zehirlenme^reset; ^blue;Delilik Kazanımı^reset; 3 ^red;Tür: Çiğ Et, Süt Ürünü, Tatlı^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -79,7 +79,7 @@
       "asset": "items/generic/food/blam.consumable",
       "pointer": "/description",
       "en": "'Blam', short for Butchered Lambian, a now extinct Floran favorite.\n^cyan;+^white;10% ^pink;Fire ^cyan;Res^gray;, ^pink;Fire ^cyan;Immunity ^gray;(^white;2m^gray;)^reset; ^orange;Type: Cooked Meat^reset;",
-      "tr": "‘Blam’, artık nesli tükenmiş Floranların gözdesi olan ‘Kesilip Doğranmış Lambian’ın kısaltmasıdır.\n^cyan;+^white;%10 ^pink;Ateş ^cyan;Direnci^gray;, ^pink;Ateş ^cyan;Bağışıklığı ^gray;(^white;2 dk^gray;)^reset; ^orange;Tür: Pişmiş Et^reset;",
+      "tr": "‘Blam’, Floranların eskiden sevdiği, artık soyu tükenmiş Lambian’dan yapılan ‘Kesilip Doğranmış Lambian’ın kısaltmasıdır.\n^cyan;+^white;%10 ^pink;Ateş ^cyan;Direnci^gray;, ^pink;Ateş ^cyan;Bağışıklığı ^gray;(^white;2 dk^gray;)^reset; ^orange;Tür: Pişmiş Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -93,7 +93,7 @@
       "asset": "items/generic/food/bloodyboogerbread.consumable",
       "pointer": "/description",
       "en": "Whose twisted idea was this?! Revolting! \n60^red;s -^reset;15^red;% Health^reset; \n^blue;Madness Gain^reset; 2",
-      "tr": "Bunu yapma fikri kimin aklına geldi?! İğrenç! \n60^red; sn -^reset;%15^red; Can^reset; \n^blue;Delilik Artışı^reset; 2",
+      "tr": "Bunu yapma fikri kimin aklına geldi?! İğrenç! \n60^red; sn -^reset;%15^red; Can^reset; \n^blue;Delilik Kazanımı^reset; 2",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -107,7 +107,7 @@
       "asset": "items/generic/food/bloodycorpsewaffles.consumable",
       "pointer": "/description",
       "en": "Clearly the breakfast of choice for a growing child.\n^cyan;+^white;10% ^cyan;HP ^gray;(^white;45s^gray;) ^blue;Madness Gain^reset; 2 ^orange;Type: Cooked Meat^reset;",
-      "tr": "Büyüyen bir çocuğun en sevdiği kahvaltı olduğu belli.\n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;45 sn^gray;) ^blue;Delilik Artışı^reset; 2 ^orange;Tür: Pişmiş Et^reset;",
+      "tr": "Büyüyen bir çocuğun en sevdiği kahvaltı olduğu belli.\n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;45 sn^gray;) ^blue;Delilik Kazanımı^reset; 2 ^orange;Tür: Pişmiş Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -163,7 +163,7 @@
       "asset": "items/generic/food/boogerbread.consumable",
       "pointer": "/description",
       "en": "What IS this disgusting creation?! \n^red;-^reset;5^red;% Health^reset; \n^blue;Madness Gain^reset; 2",
-      "tr": "Bu iğrenç şey de ne?! \n^red;-^reset;%5^red; Can^reset; \n^blue;Delilik Artışı^reset; 2",
+      "tr": "Bu iğrenç şey de ne?! \n^red;-^reset;%5^red; Can^reset; \n^blue;Delilik Kazanımı^reset; 2",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -191,7 +191,7 @@
       "asset": "items/generic/food/bowlofbrains.consumable",
       "pointer": "/description",
       "en": "Looks like a nice, wholesome bowl of mashed brains matter. \n^blue;Madness Gain^reset; 2\n^red;Type: Raw Meat^reset;",
-      "tr": "Ezilmiş beyinlerden yapılmış, gayet güzel ve besleyici görünen bir kâse. \n^blue;Delilik Artışı^reset; 2\n^red;Tür: Çiğ Et^reset;",
+      "tr": "Ezilmiş beyinlerden yapılmış, gayet güzel ve besleyici görünen bir kâse. \n^blue;Delilik Kazanımı^reset; 2\n^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -205,7 +205,7 @@
       "asset": "items/generic/food/brainyummy.consumable",
       "pointer": "/description",
       "en": "You've gone ahead and cut the less tasty bits off. Nobody wants to eat cerebellum. ^red;-^white;10% ^red;HP ^gray;(^white;10s^gray;), ^blue;Madness Gain^reset; 2 ^red;Type: Raw Meat^reset;",
-      "tr": "Daha az lezzetli kısımlarını kesip atmışsın. Kimse beyincik yemek istemez. ^red;-^white;%10 ^red;Can ^gray;(^white;10 sn^gray;), ^blue;Delilik Artışı^reset; 2 ^red;Tür: Çiğ Et^reset;",
+      "tr": "Daha az lezzetli kısımlarını kesip atmışsın. Kimse beyincik yemek istemez. ^red;-^white;%10 ^red;Can ^gray;(^white;10 sn^gray;), ^blue;Delilik Kazanımı^reset; 2 ^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -310,7 +310,7 @@
       "asset": "items/generic/food/cherrycrumble.consumable",
       "pointer": "/shortdescription",
       "en": "Cherry Crumble",
-      "tr": "Vişneli Kıtır Tatlı",
+      "tr": "Kirazlı Kıtır Tatlı",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -324,35 +324,35 @@
       "asset": "items/generic/food/cherryjam.consumable",
       "pointer": "/shortdescription",
       "en": "Cherry Jam",
-      "tr": "Vişne Reçeli",
+      "tr": "Kiraz Reçeli",
       "section": "v0.63 yiyecekler"
     },
     {
       "asset": "items/generic/food/cherrypie.consumable",
       "pointer": "/description",
       "en": "Puts a smile on your face, 10 miles wide.\n^cyan;+^white;20% ^cyan;EP ^gray;(^white;150s^gray;)\n^green;Type: Fruit Dessert^reset;",
-      "tr": "Yüzünü bir karış güldürür.\n^cyan;+^white;%20 ^cyan;Enerji ^gray;(^white;150 sn^gray;)\n^green;Tür: Meyve Tatlısı^reset;",
+      "tr": "Yüzünde 10 mil genişliğinde bir gülümseme oluşturur.\n^cyan;+^white;%20 ^cyan;Enerji ^gray;(^white;150 sn^gray;)\n^green;Tür: Meyve Tatlısı^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
       "asset": "items/generic/food/cherrypie.consumable",
       "pointer": "/shortdescription",
       "en": "Cherry Pie",
-      "tr": "Vişneli Turta",
+      "tr": "Kirazlı Turta",
       "section": "v0.63 yiyecekler"
     },
     {
       "asset": "items/generic/food/cherryporridge.consumable",
       "pointer": "/description",
       "en": "Thick, with whole cherries to accent the flavor.\n^cyan;+^white;20% ^cyan;EP ^gray;(^white;120s^gray;)\n^green;Type: Grain^reset;",
-      "tr": "Yoğun kıvamlı, tadını tamamlayan bütün vişnelerle.\n^cyan;+^white;%20 ^cyan;Enerji ^gray;(^white;120 sn^gray;)\n^green;Tür: Tahıl^reset;",
+      "tr": "Yoğun kıvamlı, tadını tamamlayan bütün kirazlarla.\n^cyan;+^white;%20 ^cyan;Enerji ^gray;(^white;120 sn^gray;)\n^green;Tür: Tahıl^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
       "asset": "items/generic/food/cherryporridge.consumable",
       "pointer": "/shortdescription",
       "en": "Cherry Porridge",
-      "tr": "Vişneli Lapa",
+      "tr": "Kirazlı Lapa",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -513,7 +513,7 @@
       "asset": "items/generic/food/cthushi.consumable",
       "pointer": "/description",
       "en": "Mad not to use soy sauce... ^blue;Madness Gain^reset; 4 \n^orange;Type: Cooked Meat + Grain^reset;",
-      "tr": "Soya sosu koymamak delilik... ^blue;Delilik Artışı^reset; 4 \n^orange;Tür: Pişmiş Et + Tahıl^reset;",
+      "tr": "Soya sosu koymamak delilik... ^blue;Delilik Kazanımı^reset; 4 \n^orange;Tür: Pişmiş Et + Tahıl^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -555,7 +555,7 @@
       "asset": "items/generic/food/eldurkey.consumable",
       "pointer": "/description",
       "en": "A meal of Eldritch proportions. ^cyan;+^reset;20%^green; HP^reset; ^cyan;+^reset;15%^green; Energy^reset;^red; Insanity^reset; 180s ^blue;Madness Gain^reset; 4 ^orange;Type: Cooked Meat + Vegetables^reset;",
-      "tr": "Eşi benzeri olmayan bir Eldritch ziyafeti. ^cyan;+^reset;%20^green; Can^reset; ^cyan;+^reset;%15^green; Enerji^reset;^red; Delilik^reset; 180 sn ^blue;Delilik Artışı^reset; 4 ^orange;Tür: Pişmiş Et + Sebze^reset;",
+      "tr": "Tekinsiz boyutlarda bir ziyafet. ^cyan;+^reset;%20^green; Can^reset; ^cyan;+^reset;%15^green; Enerji^reset;^red; Delilik^reset; 180 sn ^blue;Delilik Kazanımı^reset; 4 ^orange;Tür: Pişmiş Et + Sebze^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -569,7 +569,7 @@
       "asset": "items/generic/food/erchiusomlette.consumable",
       "pointer": "/description",
       "en": "Not the kind of fuel you need... ^yellow;Glow^reset; 120s ^green;+^reset;40 ^green;Fuel^reset; ^blue;Madness Gain^reset; 4 ^orange;Type: Cooked Meat + Vegetables + Dairy + Eggs^reset;",
-      "tr": "İhtiyacın olan yakıt bu değil... ^yellow;Parlama^reset; 120 sn ^green;+^reset;40 ^green;Yakıt^reset; ^blue;Delilik Artışı^reset; 4 ^orange;Tür: Pişmiş Et + Sebze + Süt Ürünü + Yumurta^reset;",
+      "tr": "İhtiyacın olan yakıt bu değil... ^yellow;Parlama^reset; 120 sn ^green;+^reset;40 ^green;Yakıt^reset; ^blue;Delilik Kazanımı^reset; 4 ^orange;Tür: Pişmiş Et + Sebze + Süt Ürünü + Yumurta^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -653,7 +653,7 @@
       "asset": "items/generic/food/fuerithianalgaemeal.consumable",
       "pointer": "/description",
       "en": "Holy !@#!$!%!, I never thought it could get worse!\n^red;-^white;15% ^red;HP ^gray;(^white;20s^gray;)^reset; \n^green;Type: Vegetable^reset;",
-      "tr": "Kutsal !@#!$!%!, daha da kötü olabilir diye düşünmemiştim!\n^red;-^white;%15 ^red;Can ^gray;(^white;20 sn^gray;)^reset; \n^green;Tür: Sebze^reset;",
+      "tr": "Vay !@#!$!%!, daha da kötü olabileceğini düşünmemiştim!\n^red;-^white;%15 ^red;Can ^gray;(^white;20 sn^gray;)^reset; \n^green;Tür: Sebze^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -695,7 +695,7 @@
       "asset": "items/generic/food/fulobsterbisque.consumable",
       "pointer": "/description",
       "en": "Sinfully delicious. ^orange;Type: Cooked Seafood + Vegetables + Dairy^reset;",
-      "tr": "Günahkârca lezzetli. ^orange;Tür: Pişmiş Deniz Ürünü + Sebze + Süt Ürünü^reset;",
+      "tr": "Günah sayılacak kadar lezzetli. ^orange;Tür: Pişmiş Deniz Ürünü + Sebze + Süt Ürünü^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -835,7 +835,7 @@
       "asset": "items/generic/food/gnomeandveggiesandwich.consumable",
       "pointer": "/description",
       "en": "One gnome was harmed in making this sandwich. \n^cyan;+^reset;20%^green; HP^reset;^cyan; +^reset;20%^green; Energy^reset; ^blue;Madness Gain^reset; 3 ^orange;Type: Cooked Meat + Vegetables^reset;",
-      "tr": "Bu sandviçi hazırlarken bir cüce zarar gördü. \n^cyan;+^reset;%20^green; Can^reset;^cyan; +^reset;%20^green; Enerji^reset; ^blue;Delilik Artışı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze^reset;",
+      "tr": "Bu sandviçi hazırlarken bir cüce zarar gördü. \n^cyan;+^reset;%20^green; Can^reset;^cyan; +^reset;%20^green; Enerji^reset; ^blue;Delilik Kazanımı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -863,7 +863,7 @@
       "asset": "items/generic/food/greghead.consumable",
       "pointer": "/description",
       "en": "The severed head of a Greg\n^green;Heal ^white;20% ^green;HP ^gray;(^white;20s^gray;)\n^red;Drunk ^gray;(^white;1m^gray;) ^blue;Madness Gain^reset; 2\n^red;Type: Raw Meat^reset;",
-      "tr": "Greg'in kesik başı\n^green;İyileşme ^white;%20 ^green;Can ^gray;(^white;20 sn^gray;)\n^red;Sarhoşluk ^gray;(^white;1 dk^gray;) ^blue;Delilik Artışı^reset; 2\n^red;Tür: Çiğ Et^reset;",
+      "tr": "Greg'in kesik başı\n^green;İyileşme ^white;%20 ^green;Can ^gray;(^white;20 sn^gray;)\n^red;Sarhoşluk ^gray;(^white;1 dk^gray;) ^blue;Delilik Kazanımı^reset; 2\n^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -898,7 +898,7 @@
       "asset": "items/generic/food/gutstoppers.consumable",
       "pointer": "/shortdescription",
       "en": "Gutstoppers",
-      "tr": "Gutstoppers",
+      "tr": "Bağırsak Tıkaçları",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -975,7 +975,7 @@
       "asset": "items/generic/food/ictea.consumable",
       "pointer": "/description",
       "en": "I-C Tea; a rather eye-opening beverage.\n^green;Glow 300s ^blue;Madness Gain^reset; 2",
-      "tr": "I-C Tea; insanı kendine getiren bir içecek.\n^green;Parlama 300 sn ^blue;Delilik Artışı^reset; 2",
+      "tr": "I-C Tea; insanı kendine getiren bir içecek.\n^green;Parlama 300 sn ^blue;Delilik Kazanımı^reset; 2",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -989,7 +989,7 @@
       "asset": "items/generic/food/idiotsandwich.consumable",
       "pointer": "/description",
       "en": "IT'S FRACKIN' RAW \n^red;Drunk^reset; 2m \n^blue;Madness Gain^reset; 4 \n^red;Type: Raw Meat^reset;",
-      "tr": "FRACKIN' ÇİĞ! \n^red;Sarhoşluk^reset; 2 dk \n^blue;Delilik Artışı^reset; 4 \n^red;Tür: Çiğ Et^reset;",
+      "tr": "FRACKIN' ÇİĞ! \n^red;Sarhoşluk^reset; 2 dk \n^blue;Delilik Kazanımı^reset; 4 \n^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1017,7 +1017,7 @@
       "asset": "items/generic/food/jarredfetus.consumable",
       "pointer": "/description",
       "en": "A fetus, too early in development to determine species without research. ^blue;Madness Gain^reset; 3 ^red;Type: Raw Meat^reset;",
-      "tr": "Araştırmayla türü belirlenemeyecek kadar erken gelişim aşamasındaki bir cenin. ^blue;Delilik Artışı^reset; 3 ^red;Tür: Çiğ Et^reset;",
+      "tr": "Araştırmayla türü belirlenemeyecek kadar erken gelişim aşamasındaki bir cenin. ^blue;Delilik Kazanımı^reset; 3 ^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1073,7 +1073,7 @@
       "asset": "items/generic/food/leadandjsandwich.consumable",
       "pointer": "/description",
       "en": "Don't eat this.\n^blue;Madness Gain^reset; 2\n^yellow;Type: Robot Food^reset;",
-      "tr": "Bunu yeme.\n^blue;Delilik Artışı^reset; 2\n^yellow;Tür: Robot Yiyeceği^reset;",
+      "tr": "Bunu yeme.\n^blue;Delilik Kazanımı^reset; 2\n^yellow;Tür: Robot Yiyeceği^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1101,14 +1101,14 @@
       "asset": "items/generic/food/magicallunch.consumable",
       "pointer": "/description",
       "en": "You have no idea what is inside. This does not look magical.\n^red;-^white;5% ^red;HP ^gray;(^white;1m^gray;) ^blue;Madness Gain^reset; 3",
-      "tr": "İçinde ne olduğunu bilmiyorsun. Büyülü görünmüyor.\n^red;-^white;%5 ^red;Can ^gray;(^white;1 dk^gray;) ^blue;Delilik Artışı^reset; 3",
+      "tr": "İçinde ne olduğunu bilmiyorsun. Büyülü görünmüyor.\n^red;-^white;%5 ^red;Can ^gray;(^white;1 dk^gray;) ^blue;Delilik Kazanımı^reset; 3",
       "section": "v0.63 yiyecekler"
     },
     {
       "asset": "items/generic/food/magicallunch.consumable",
       "pointer": "/shortdescription",
       "en": "Magical Lunch",
-      "tr": "Gizemli Öğle Yemeği",
+      "tr": "Büyülü Öğle Yemeği",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1185,7 +1185,7 @@
       "asset": "items/generic/food/nightmarefuel.consumable",
       "pointer": "/description",
       "en": "An ominous coffee-like substance for robotic consumers. ^cyan;+^reset;35%^green; Energy^reset;^red; Nightmare^reset; 180s^reset; ^blue;Madness Gain^reset; 3 ^yellow;Type: Robot Food^reset;",
-      "tr": "Robotların tüketmesi için kahve benzeri, uğursuz bir madde. ^cyan;+^reset;%35^green; Enerji^reset;^red; Kâbus^reset; 180 sn^reset; ^blue;Delilik Artışı^reset; 3 ^yellow;Tür: Robot Yiyeceği^reset;",
+      "tr": "Robotların tüketmesi için kahve benzeri, uğursuz bir madde. ^cyan;+^reset;%35^green; Enerji^reset;^red; Kâbus^reset; 180 sn^reset; ^blue;Delilik Kazanımı^reset; 3 ^yellow;Tür: Robot Yiyeceği^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1199,7 +1199,7 @@
       "asset": "items/generic/food/ocularoobleck.consumable",
       "pointer": "/description",
       "en": "A meaty, mysterious menagerie of eyes and oculemon. ^cyan;+^reset;10^green;% Energy^reset;^red; Poisoned^reset; 10s^reset; ^blue;Madness Gain^reset; 3 ^green;Type: Meaty Plant^reset;",
-      "tr": "Etli, gizemli bir göz ve okulemon karışımı. ^cyan;+^reset;%10^green; Enerji^reset;^red; Zehirlenme^reset; 10 sn^reset; ^blue;Delilik Artışı^reset; 3 ^green;Tür: Etli Bitki^reset;",
+      "tr": "Etli, gizemli bir göz ve okulemon karışımı. ^cyan;+^reset;%10^green; Enerji^reset;^red; Zehirlenme^reset; 10 sn^reset; ^blue;Delilik Kazanımı^reset; 3 ^green;Tür: Etli Bitki^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1227,7 +1227,7 @@
       "asset": "items/generic/food/orphanpaste.consumable",
       "pointer": "/description",
       "en": "Made from only the finest ingredients. A perfect food for Vegans! Can fuel ships (40) and mechs.\n^cyan;+^white;10% ^cyan;HP ^gray;(^white;75s^gray;)^reset; ^blue;Madness Gain^reset; 3 ^red;Type: Raw Meat^reset;",
-      "tr": "Yalnızca en kaliteli malzemelerle yapıldı. Veganlar için mükemmel! Gemilere (40) ve Mech'lere yakıt olabilir.\n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;75 sn^gray;)^reset; ^blue;Delilik Artışı^reset; 3 ^red;Tür: Çiğ Et^reset;",
+      "tr": "Yalnızca en kaliteli malzemelerle yapıldı. Veganlar için mükemmel! Gemilere (40) ve Mech'lere yakıt olabilir.\n^cyan;+^white;%10 ^cyan;Can ^gray;(^white;75 sn^gray;)^reset; ^blue;Delilik Kazanımı^reset; 3 ^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1255,7 +1255,7 @@
       "asset": "items/generic/food/plaguepestpancakes.consumable",
       "pointer": "/description",
       "en": "I've heard of bacon in pancakes, but pest? Eugh! \n^red;-^reset;5^red;% Health^reset; 60s ^red;Poisoned^reset; ^blue;Madness Gain^reset; 3 ^orange;Type: Cooked Meat + Vegetables + Dairy + Eggs^reset;",
-      "tr": "Pankekte pastırma duymuştum ama haşere mi? Iyy! \n^red;-^reset;%5^red; Can^reset; 60 sn ^red;Zehirlenme^reset; ^blue;Delilik Artışı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze + Süt Ürünü + Yumurta^reset;",
+      "tr": "Pankekte pastırma duymuştum ama haşere mi? Iyy! \n^red;-^reset;%5^red; Can^reset; 60 sn ^red;Zehirlenme^reset; ^blue;Delilik Kazanımı^reset; 3 ^orange;Tür: Pişmiş Et + Sebze + Süt Ürünü + Yumurta^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1297,7 +1297,7 @@
       "asset": "items/generic/food/putridpestpuree.consumable",
       "pointer": "/description",
       "en": "A blended mixture of pest, larva, and pussplum. Guaranteed to flush your bowels. ^cyan;+^green;12% HP^reset; ^blue;Madness Gain^reset; 3 ^orange;Type: Cooked Meat + Fruits^reset;",
-      "tr": "Haşere, larva ve irin eriğinin ezilmiş karışımı. Bağırsaklarını temizleyeceği garanti. ^cyan;+^green;%12 Can^reset; ^blue;Delilik Artışı^reset; 3 ^orange;Tür: Pişmiş Et + Meyve^reset;",
+      "tr": "Haşere, larva ve irin eriğinin ezilmiş karışımı. Bağırsaklarını temizleyeceği garanti. ^cyan;+^green;%12 Can^reset; ^blue;Delilik Kazanımı^reset; 3 ^orange;Tür: Pişmiş Et + Meyve^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1367,7 +1367,7 @@
       "asset": "items/generic/food/severedheadplatter.consumable",
       "pointer": "/description",
       "en": "It's literally just a rotting severed head. There is no platter.\n^red;-^white;5% ^red;HP ^gray;(^white;1m^gray;) ^blue;Madness Gain^reset; 5 ^red;Type: Raw Meat^reset;",
-      "tr": "Gerçekten çürümüş kesik bir baştan ibaret. Tepsisi falan yok.\n^red;-^white;%5 ^red;Can ^gray;(^white;1 dk^gray;) ^blue;Delilik Artışı^reset; 5 ^red;Tür: Çiğ Et^reset;",
+      "tr": "Gerçekten çürümüş kesik bir baştan ibaret. Tepsisi falan yok.\n^red;-^white;%5 ^red;Can ^gray;(^white;1 dk^gray;) ^blue;Delilik Kazanımı^reset; 5 ^red;Tür: Çiğ Et^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1381,7 +1381,7 @@
       "asset": "items/generic/food/sewerfrieswithbacon.consumable",
       "pointer": "/description",
       "en": "Fries with a fermented gravy, adorned with bacon. What a crappy meal. ^red;-^reset;5^red;% Health ^reset; ^blue;Madness Gain^reset; 2 ^orange;Type: Cooked Meat + Vegetables^reset;",
-      "tr": "Fermente soslu, pastırma süslemeli patates kızartması. Ne berbat bir yemek. ^red;-^reset;%5^red; Can ^reset; ^blue;Delilik Artışı^reset; 2 ^orange;Tür: Pişmiş Et + Sebze^reset;",
+      "tr": "Fermente soslu, pastırma süslemeli patates kızartması. Ne berbat bir yemek. ^red;-^reset;%5^red; Can ^reset; ^blue;Delilik Kazanımı^reset; 2 ^orange;Tür: Pişmiş Et + Sebze^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1437,7 +1437,7 @@
       "asset": "items/generic/food/slew4.consumable",
       "pointer": "/description",
       "en": "Great carnivore slew. Not for sapient ingestion. You'll get sick.\n^red;-^white;5% ^red;HP^gray;, ^red;Poisoned ^gray;(^white;1m^gray;)^reset;",
-      "tr": "Olağanüstü etçil yemi. Akıllı canlılar yememeli. Hastalanırsın.\n^red;-^white;%5 ^red;Can^gray;, ^red;Zehirlenme ^gray;(^white;1 dk^gray;)^reset;",
+      "tr": "Etçiller için harika yem. Akıllı canlılar yememeli. Hastalanırsın.\n^red;-^white;%5 ^red;Can^gray;, ^red;Zehirlenme ^gray;(^white;1 dk^gray;)^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1591,7 +1591,7 @@
       "asset": "items/generic/food/tearnutbuttersandwich.consumable",
       "pointer": "/description",
       "en": "Mingling cherries and tearnuts was a genius idea. ^green;Type: Fruit Dessert^reset;",
-      "tr": "Vişneyle Tearnut'u bir araya getirmek dahiceymiş. ^green;Tür: Meyve Tatlısı^reset;",
+      "tr": "Kirazla Tearnut'u bir araya getirmek dahiceymiş. ^green;Tür: Meyve Tatlısı^reset;",
       "section": "v0.63 yiyecekler"
     },
     {
@@ -1822,7 +1822,7 @@
       "asset": "items/generic/food/yettas.consumable",
       "pointer": "/description",
       "en": "Thought to exist only in legend, until the recipe was found after 4000 years.\n^cyan;+^white;30% ^pink;Radiation ^cyan;Res ^gray;(^white;5m^gray;)\n^red;-^white;5% ^red;HP ^gray;(^white;220s^gray;)\n^blue;Madness Gain^reset; 4",
-      "tr": "Tarif 4000 yıl sonra bulunana dek yalnızca efsanelerde var olduğu sanılıyordu.\n^cyan;+^white;%30 ^pink;Radyasyon ^cyan;Direnci ^gray;(^white;5 dk^gray;)\n^red;-^white;%5 ^red;Can ^gray;(^white;220 sn^gray;)\n^blue;Delilik Artışı^reset; 4",
+      "tr": "Tarif 4000 yıl sonra bulunana dek yalnızca efsanelerde var olduğu sanılıyordu.\n^cyan;+^white;%30 ^pink;Radyasyon ^cyan;Direnci ^gray;(^white;5 dk^gray;)\n^red;-^white;%5 ^red;Can ^gray;(^white;220 sn^gray;)\n^blue;Delilik Kazanımı^reset; 4",
       "section": "v0.63 yiyecekler"
     },
     {

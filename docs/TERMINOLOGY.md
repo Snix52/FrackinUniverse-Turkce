@@ -568,6 +568,7 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Young Queen | Arıcılık / genç koloni arısı | Terim | Genç Ana Arı | Young Queen | LOCKED | Genç koloni ana arısı; tür adı öne yazılır. |
 | Advanced Frame | Arıcılık çerçevesi | Nesne | Gelişmiş Çerçeve | Advanced Frame | LOCKED | Arılık içindeki çerçeve yükseltmesi. |
 | Bee Flower Head | Arıcılık malzemesi | Nesne | Arı Çiçeği Başı | Bee Flower Head | LOCKED | Arı Çiçeği nesnesinden elde edilen parça. |
+| Cherry | Genel meyve ve yiyecek adı | Yiyecek | Kiraz | Vişne | LOCKED | Önceki Cherry Mash karşılığıyla eşlendi; kaynakta sour cherry belirtilmedikçe Kiraz kullanılır. |
 
 ## Kural
 
