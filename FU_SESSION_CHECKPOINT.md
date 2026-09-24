@@ -1,6 +1,10 @@
 # FU Session Checkpoint
 
 ## Güncel çalışma
+24 Eylül 2026: v0.59.0-beta kalan görünür canavarlar ve beceri adları yerelde hazır.
+Kapsam 345 alan / 261 asset / 264 benzersiz kaynak metin; üç metin mevcut TM'den
+alındı. Test/debug yaratıkları ve dört dahili spawn seçicisi dışarıda tutuldu.
+Sol kaynak/çeviri kontrolü, QA, paket build'i ve yayın bekleniyor.
 24 Eylül 2026: v0.58.0-beta kalan yaratık aileleri çeviri adayı yerelde hazırlandı.
 Kapsam 522 alan / 261 asset / 257 benzersiz kaynak metin; üç metin önceki TM
 karşılıklarından kullanıldı. Sol kaynak/çeviri kontrolü, QA ve pinli FU kaynak
