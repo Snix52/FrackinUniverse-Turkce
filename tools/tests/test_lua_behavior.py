@@ -101,7 +101,7 @@ class LuaBehaviorTests(unittest.TestCase):
     def test_every_raw_override_is_valid_lua(self):
         files=sorted(MOD.rglob('*.lua'))
         expected={s['asset'] for name in ('raw_text_translations.json','raw_runtime_overrides.json')
-                  for s in json.loads((TOOLS/name).read_text(encoding='utf-8'))['assets']}
+                  for s in json.loads((TOOLS/name).read_text(encoding='utf-8'))['assets'] if s['asset'].endswith('.lua')}
         if MOD.resolve() != (TOOLS/'raw_overrides').resolve():
             expected.update(name for name in load_custom_assets(TOOLS) if name.endswith('.lua'))
         self.assertEqual({p.relative_to(MOD).as_posix() for p in files},expected)

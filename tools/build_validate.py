@@ -647,7 +647,14 @@ def nums(s):
 def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
+_V0651_UI_LQA = json.loads(Path(__file__).with_name('v0651_translations.json').read_text(encoding='utf-8'))
+V0651_UI_LQA_FIELDS = {(r['asset'], r['pointer']) for r in _V0651_UI_LQA['translations']}
+if len(V0651_UI_LQA_FIELDS) != 11:
+    raise ValueError('v0.65.1 UI LQA field inventory drift')
+
 def allowed(a,p):
+    if (a,p) in V0651_UI_LQA_FIELDS:
+        return True
     if (a.startswith('objects/ship/') and 'techstation' in a.lower()
             and re.fullmatch(r'/dialog/(?:wakeUp/[0-4]|wakePlayer/[0-5])/0', p)):
         return True

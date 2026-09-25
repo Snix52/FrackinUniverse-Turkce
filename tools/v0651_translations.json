@@ -1,0 +1,105 @@
+{
+  "translation_version": "0.65.1-beta",
+  "source_repository": "sayterdarkwynd/FrackinUniverse",
+  "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "source_declared_version": "6.5.8",
+  "scope": "Screenshot-linked Pet House, Tricorder, Mech, welcome and radio fields",
+  "translations": [
+    {
+      "asset": "interface/objectcrafting/fu_pethouse/fu_pethouse.config",
+      "pointer": "/gui/randomiseSeed/caption",
+      "en": "Randomise Seed",
+      "tr": "Rastgele",
+      "section": "v0.42 işlevsel arayüzler ve Pet House"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton4Label/value",
+      "en": "Tech Equip",
+      "tr": "Tech Tak",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton5Label/value",
+      "en": "Tech Craft",
+      "tr": "Tech Üret",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton6Label/value",
+      "en": "Mech Gear",
+      "tr": "Mech Donat",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/scripted/statWindow/statWindow.config",
+      "pointer": "/gui/expandButton9/caption",
+      "en": "Adv. Stats",
+      "tr": "Ek İstat.",
+      "section": "v0.39 ana Tricorder ve durum arayüzü"
+    },
+    {
+      "asset": "interface/mechfuel/mechfuel.config",
+      "pointer": "/gui/lblFuelType/value",
+      "en": "CURRENT FUEL TYPE: ",
+      "tr": "YAKIT TÜRÜ: ",
+      "section": "v0.43 canlı arayüzler"
+    },
+    {
+      "asset": "radiomessages/tutorial.radiomessages",
+      "pointer": "/pickupmanipulatormodule/text",
+      "en": "These useful gadgets are used to upgrade ^orange;tools^reset;, including your ^orange;Matter Manipulator^reset;, from the upgrade interface of your ^orange;Personal Tricorder^reset;. I suggest saving a few for when you build a ^green;Mining laser^reset;.",
+      "tr": "Bu kullanışlı aygıtlar, ^orange;Madde Manipülatörü^reset; dâhil ^orange;araçlarını^reset; geliştirmek için kullanılır. Bunu ^orange;Kişisel Tricorder^reset; cihazının yükseltme arayüzünden yapabilirsin. ^green;Madencilik Lazeri^reset; üreteceğin zaman için birkaçını saklamanı öneririm.",
+      "section": "v0.65.1 ekran LQA düzeltmeleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/tutorial.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/pickupWood/text",
+      "en": "Wood is absolutely essential to your early survival. You'll be able to craft ^orange;Basic Weapons^reset; and gear with your bare hands. I recommend a ^green;Primitive Spear^reset; to start with. ^orange;Research^reset; other uses for wood in your ^orange;Personal Tricorder^reset;.",
+      "tr": "Başlangıçta hayatta kalmak için odun vazgeçilmezdir. Çıplak ellerinle ^orange;temel silahlar^reset; ve ekipman üretebilirsin. İlk olarak bir ^green;İlkel Mızrak^reset; yapmanı öneririm. Odunun başka nerelerde kullanılabileceğini ^orange;Kişisel Tricorder^reset; cihazında ^orange;araştır^reset;.",
+      "section": "v0.65.1 ekran LQA düzeltmeleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/quests.radiomessages",
+      "pointer": "/gaterepair-gateFound1/text",
+      "en": "^orange;Welcome^reset; to my Mobile Lab, traveller! Come on in and visit! I've got a big comfy couch and a medical bay if you have any nasty injuries to heal up!",
+      "tr": "Gezici laboratuvarıma ^orange;hoş geldin^reset;, gezgin! İçeri buyur! Kocaman, rahat bir kanepem var. Ağır yaralarını tedavi ettirebileceğin bir revir de var!",
+      "section": "v0.65.1 ekran LQA düzeltmeleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/quests.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/quests.radiomessages",
+      "pointer": "/gaterepair-gateFound2/text",
+      "en": "In order to fix your ship you'll need to complete ^orange;several tasks^reset;. ^green;Speak to me^reset; to begin.",
+      "tr": "Gemini onarmak için ^orange;birkaç görevi^reset; tamamlaman gerekiyor. Başlamak için ^green;benimle konuş^reset;.",
+      "section": "v0.65.1 ekran LQA düzeltmeleri",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/quests.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "_FUversioning.config",
+      "pointer": "/welcome",
+      "en": "Frackin' Universe has introduced a new ^orange;Research System^reset; as of version 6.0.0 (October, 2020). \n\nThis change completely revamps game progression from the ground up, letting users choose what they want to learn, and when, at their own pace. It also brings with it a slowed down early-game and a more trackable progression chain from mid-game and onward.\nYou will be required to interact directly with the ^orange;Research System^reset; to do this, however.\n\nTo access the ^orange;Research System^reset; menu, the following are options:\n\n- Your ^orange;Personal Tricorder^reset;, via the ^green;Green Beaker^reset; icon. This is the most immediate method, and is available as soon as you start your ships computer.\n\n- Via your ^orange;SAIL^reset; on your ship, in the ^green;MISC^reset; menu.\n\n- Via the ^orange;Quickbar^reset;, if you use that mod. We highly recommend it.\n\n\n^cyan;Read the Guide books in your ships storage^reset; for more detailed help about game mechanics and features.\n\nNOTE: ^red;You should no longer have Frackin Races^reset; installed if using Frackin Universe. This will cause problems.\n\n^orange;If using BYOS mode with custom races^reset;: you must install the addon located on Steam/CF Forums (FU BYOS Race Addon).\n^orange;If using Custom Races with FU SAIL^reset;: Install theaddon via Steam or CF Forums (FU SAIL Modded Race Support).\n\nYou can open this window manually if you have the StardustLib or QuickBar mod installed via the !Updates button.\nPlease make sure you are not using anything included in the RED (and ideally the other colors too) on the Info tab below.\n",
+      "tr": "Frackin' Universe'e 6.0.0 sürümüyle (Ekim 2020) yeni bir ^orange;Araştırma Sistemi^reset; eklendi.\n\nBu değişiklik oyundaki ilerleyişi baştan aşağı yenileyerek neyi, ne zaman öğreneceğini kendi hızına göre seçmeni sağlıyor. Ayrıca oyunun başlangıcını yavaşlatıyor; orta aşamadan itibaren ilerleme zincirini daha kolay takip edilebilir hâle getiriyor.\nAncak bunun için ^orange;Araştırma Sistemi^reset; ile doğrudan etkileşime geçmen gerekiyor.\n\n^orange;Araştırma Sistemi^reset; menüsüne şu yollarla ulaşabilirsin:\n\n- ^orange;Kişisel Tricorder^reset; cihazındaki ^green;yeşil beher^reset; simgesinden. Bu en hızlı yöntemdir ve geminin bilgisayarını başlatır başlatmaz kullanılabilir.\n\n- Gemindeki ^orange;SAIL^reset; arayüzünün ^green;DİĞER^reset; menüsünden.\n\n- ^orange;Quickbar^reset; modunu kullanıyorsan onun üzerinden. Bu modu kullanmanı özellikle öneriyoruz.\n\n\nOyun mekanikleri ve özellikleri hakkında daha ayrıntılı yardım için ^cyan;geminin deposundaki rehber kitaplarını oku^reset;.\n\nNOT: Frackin Universe kullanıyorsan ^red;Frackin Races artık kurulu olmamalı^reset;. Birlikte kullanılmaları sorun çıkarır.\n\n^orange;Özel ırklarla BYOS modunu kullanıyorsan^reset;: Steam veya CF Forumlarındaki eklentiyi (FU BYOS Race Addon) kurmalısın.\n^orange;Özel ırklarla FU SAIL kullanıyorsan^reset;: Steam veya CF Forumlarındaki eklentiyi (FU SAIL Modded Race Support) kur.\n\nStardustLib veya QuickBar modu kuruluysa bu pencereyi !Updates düğmesinden elle açabilirsin.\nAşağıdaki Bilgi sekmesinde KIRMIZI renkle işaretlenenleri, mümkünse diğer renklerle işaretlenenleri de kullanmadığından emin ol.\n",
+      "section": "v0.65.1 ekran LQA düzeltmeleri",
+      "qa": {
+        "source_newline_pattern": "CCCCCCCLCLCLCCCCCCCCCCC"
+      }
+    }
+  ]
+}
