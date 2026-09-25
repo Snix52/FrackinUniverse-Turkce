@@ -12,6 +12,7 @@ from rule_data import rule as load_rule
 from qa_integrity import validate_project
 from qa_raw import verify_source_blob, validate_manifest_pin
 from write_build_evidence import verify_source, record_validation
+from custom_assets import load_custom_assets
 
 COLOR=re.compile(r'\^[^;\s]*;')
 CONTROL=re.compile(r'\[(?![^\]]*\^)[^\]]+\]|<[^>]+>')
@@ -1084,12 +1085,19 @@ def main():
             if not template.is_file() or template.read_text(encoding='utf-8-sig') != content:
                 raise ValueError('Raw template/pinned build drift: ' + asset)
 
+    custom_assets = load_custom_assets(Path(__file__).parent)
+    for asset in custom_assets:
+        if asset in raw_assets or asset.endswith('.patch') and asset[:-6] in patches:
+            raise ValueError('Custom asset collides with a translated asset: ' + asset)
+        if args.source_dir and asset != 'player.config.patch' and (args.source_dir / asset).exists():
+            raise ValueError('Custom asset collides with pinned FU source: ' + asset)
+
     args.output.mkdir(parents=True)
     mod=args.output/'FU_Turkce';mod.mkdir()
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe (Beta)',
       'author':'FU Türkçe',
       'version':ledger['translation_version'],
-      'description':"Frackin' Universe için devam eden Türkçe yerelleştirme. Araştırma, görevler, üretim, temel makineler, işlevsel nesneler ve geniş ekipman kapsamını içerir.",
+      'description':"Frackin' Universe için Türkçe yerelleştirme. Araştırma, görevler, üretim, makineler, ekipman ve Ebrar'ın Yıldızı gemi sürprizini içerir.",
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_bytes((json.dumps(metadata,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     for a,p in patches.items():
@@ -1098,7 +1106,13 @@ def main():
     for a,content in raw_assets.items():
         d=mod/a;d.parent.mkdir(parents=True,exist_ok=True)
         d.write_bytes(content.encode('utf-8'))
-    stats={'fields':len(rows),'patch_assets':len(patches),'raw_assets':len(raw_assets),'assets':len(patches)+len(raw_assets),'raw_strings':raw_string_count,'color_fixes':colorfix,'static_qa':'PASS','in_game_lqa':'NOT TESTED',**integrity}
+    for asset, content in custom_assets.items():
+        target=mod/asset;target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_bytes(content)
+    stats={'fields':len(rows),'patch_assets':len(patches),'raw_assets':len(raw_assets),
+           'custom_assets':len(custom_assets),'assets':len(patches)+len(raw_assets)+len(custom_assets),
+           'raw_strings':raw_string_count,'color_fixes':colorfix,'static_qa':'PASS',
+           'in_game_lqa':'NOT TESTED',**integrity}
     if args.source_dir:
         stats['source_field_coverage'] = {
             'direct': sum(not r.get('qa', {}).get('layered_source') for r in rows),

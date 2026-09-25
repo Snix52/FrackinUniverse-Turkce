@@ -5,6 +5,10 @@ import os
 import json
 import unittest
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from custom_assets import load_custom_assets
 
 TOOLS=Path(__file__).resolve().parents[1]
 MOD=Path(os.environ.get('FU_TEST_MOD_DIR', str(TOOLS/'raw_overrides')))
@@ -80,10 +84,26 @@ class LuaBehaviorTests(unittest.TestCase):
     def test_mech_fuel_8_scenarios(self):
         self.scenarios('interface/mechfuel/mechfuel.lua','mechfuel.lua',8)
 
+    def test_ebrar_ship_11_scenarios(self):
+        asset = 'scripts/fu_tr_ebrar_ship.lua'
+        source = MOD / asset
+        if not source.is_file():
+            source = TOOLS / 'custom_assets' / asset
+        fixture = (FIXTURES / 'ebrar_ship.lua').read_text(encoding='utf-8')
+        before, after = fixture.split('-- SCRIPT UNDER TEST', 1)
+        rows = self.execute(before + source.read_text(encoding='utf-8') + after).splitlines()
+        self.assertEqual(len(rows), 11)
+        for line in rows:
+            name, status, detail = line.split('\t', 2)
+            with self.subTest(name=name):
+                self.assertEqual(status, 'PASS', detail)
+
     def test_every_raw_override_is_valid_lua(self):
         files=sorted(MOD.rglob('*.lua'))
         expected={s['asset'] for name in ('raw_text_translations.json','raw_runtime_overrides.json')
                   for s in json.loads((TOOLS/name).read_text(encoding='utf-8'))['assets']}
+        if MOD.resolve() != (TOOLS/'raw_overrides').resolve():
+            expected.update(name for name in load_custom_assets(TOOLS) if name.endswith('.lua'))
         self.assertEqual({p.relative_to(MOD).as_posix() for p in files},expected)
         for file in files:
             with self.subTest(file=str(file)):self.execute(file.read_text(encoding='utf-8'),run=False)

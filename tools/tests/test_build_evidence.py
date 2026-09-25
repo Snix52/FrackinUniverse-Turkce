@@ -93,6 +93,30 @@ class EvidenceTests(unittest.TestCase):
                     self.build()
                 path.unlink()
 
+    def test_custom_patch_and_png_are_accounted_for_and_source_bound(self):
+        custom = self.tools / 'custom_assets'
+        (custom / 'objects').mkdir(parents=True)
+        (custom / 'player.config.patch').write_bytes(b'[[{"op":"add"}]]')
+        (custom / 'objects/star.png').write_bytes(b'png bytes')
+        evidence.write_json(self.tools / 'custom_assets.json',
+                            {'assets': ['player.config.patch', 'objects/star.png']})
+        self.files['player.config.patch'] = (custom / 'player.config.patch').read_bytes()
+        self.files['objects/star.png'] = (custom / 'objects/star.png').read_bytes()
+        for directory in (self.mod, self.install):
+            (directory / 'player.config.patch').write_bytes(self.files['player.config.patch'])
+            (directory / 'objects').mkdir()
+            (directory / 'objects/star.png').write_bytes(self.files['objects/star.png'])
+        self.report['custom_assets'] = 2
+        self.report['assets'] = 3
+        self.report['build_inputs_sha256'] = evidence.build_inputs_digest()
+        self.report['install_tree_sha256'] = evidence.tree_digest(self.files)
+        self.save_report()
+        evidence.deterministic_zip(self.zip, self.files)
+        self.assertEqual(self.build()['custom_game_assets'], 2)
+        (custom / 'objects/star.png').write_bytes(b'changed')
+        with self.assertRaisesRegex(ValueError, 'build inputs mismatch'):
+            self.build()
+
     def test_root_mismatch_rejected(self):
         (self.install / 'item.patch').write_bytes(b'[]')
         with self.assertRaisesRegex(ValueError, 'Root/install-tree'):

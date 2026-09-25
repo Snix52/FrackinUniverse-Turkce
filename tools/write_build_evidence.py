@@ -11,6 +11,7 @@ import zipfile
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from custom_assets import load_custom_assets
 
 TOOLS = Path(__file__).resolve().parent
 
@@ -53,7 +54,8 @@ def build_inputs_digest() -> str:
     """Bind evidence to validators, rules, manifests and raw templates as well as the catalog."""
     files = {p.relative_to(TOOLS.parent).as_posix(): p.read_bytes()
              for p in TOOLS.rglob('*')
-             if p.is_file() and p.suffix in ('.py', '.json', '.lua')
+             if p.is_file() and (p.suffix in ('.py', '.json', '.lua')
+                                 or 'custom_assets' in p.relative_to(TOOLS).parts)
              and '__pycache__' not in p.parts and p.name != 'test_raporu.json'}
     terminology = TOOLS.parent / 'docs/TERMINOLOGY.md'
     if terminology.is_file():
@@ -167,9 +169,14 @@ def verify_package(path: Path, files: dict[str, bytes], stats: dict) -> None:
         for name, data in files.items():
             if archive.read('FU_Turkce/' + name) != data:
                 raise ValueError('ZIP/install-tree byte mismatch: ' + name)
+    custom = load_custom_assets(TOOLS)
     fields = patches = raw = 0
     for name, data in files.items():
         if name == '_metadata':
+            continue
+        if name in custom:
+            if data != custom[name]:
+                raise ValueError('Custom asset source/package mismatch: ' + name)
             continue
         if not name.endswith('.patch'):
             raw += 1
@@ -177,8 +184,11 @@ def verify_package(path: Path, files: dict[str, bytes], stats: dict) -> None:
         patches += 1
         operations = json.loads(data)
         fields += verified_patch_fields(name, operations)
-    if (fields, patches, raw) != (stats['fields'], stats['patch_assets'], stats['raw_assets']):
+    if (fields, patches, raw, len(custom)) != (stats['fields'], stats['patch_assets'],
+                                               stats['raw_assets'], stats.get('custom_assets', 0)):
         raise ValueError('Build report/package count mismatch')
+    if stats.get('assets') is not None and stats['assets'] != patches + raw + len(custom):
+        raise ValueError('Build report total asset count mismatch')
 
 
 def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path: Path,
@@ -232,6 +242,7 @@ def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path
             'workflow_run_id': str(run_id), 'source_commit': source_commit,
             'translation_source_commit': source_commit,
             'translation_version': catalog['translation_version'],
+            'custom_game_assets': report.get('custom_assets', 0),
             'upstream_repository': source['repository'], 'upstream_commit': source['commit'],
             'upstream_declared_version': source['declared_version'],
             'localized_units': {'structured_fields': report['fields'], 'patch_assets': report['patch_assets'],
@@ -252,7 +263,8 @@ def refresh_tracked(evidence: dict) -> None:
                   translated_display_fields=units['structured_fields'], patched_assets=units['patch_assets'],
                   raw_override_assets=units['raw_override_assets'], raw_script_display_strings=units['raw_script_strings'],
                   total_localized_display_units=units['structured_fields'] + units['raw_script_strings'],
-                  target_assets_total=units['patch_assets'] + units['raw_override_assets'],
+                  target_assets_total=units['patch_assets'] + units['raw_override_assets']
+                                      + evidence.get('custom_game_assets', 0),
                   categories=dict(Counter(r.get('section', 'Uncategorized') for r in catalog['translations'])),
                   checks={'static_qa': evidence['static_qa'], 'source_validation': evidence['source_validation'],
                           'zip_integrity': evidence['package']['zip_integrity'], 'root_install_tree_parity': 'PASS'},

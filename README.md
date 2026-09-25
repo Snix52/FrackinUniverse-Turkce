@@ -4,20 +4,21 @@ Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
-**Güncel sürüm:** v0.61.0 Beta
+**Güncel sürüm:** v0.65.0 Beta
 **Hedef FU sürümü:** 6.5.8  
 **Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
 ## Güncel durum
 
-v0.61.0 Beta itibarıyla:
+v0.65.0 Beta itibarıyla:
 
-- **12.898** yapılandırılmış oyuncu metni
+- **13.953** yapılandırılmış oyuncu metni
 - **57** görünür Lua/script metni
-- **12.955** toplam yerelleştirilmiş görünür birim
-- **4.238** patch asset
+- **14.010** toplam yerelleştirilmiş görünür birim
+- **4.745** patch asset
 - **7** raw override asset
-- **4.245** toplam hedef asset
+- **7** özgün Ebrar sürprizi oyun dosyası
+- **4.759** toplam hedef asset
 - Statik QA: **PASS**
 - Pinned FU source validation: **PASS**
 - ZIP bütünlüğü ve kurulum ağacı eşleşmesi: **PASS**
@@ -25,7 +26,7 @@ v0.61.0 Beta itibarıyla:
 
 Güncel doğrulanmış paket:
 
-`dist/FU_Turkce_v0.61.0_Beta.zip`
+`dist/FU_Turkce_v0.65.0_Beta.zip`
 
 FU 6.5.8 kaynağının güncel `master` commitine geçiş ve yeni çeviri kapsamı karşılaştırması: [FU upstream kontrolü](docs/FU_UPSTREAM_20260924.md).
 
@@ -55,6 +56,13 @@ Projenin tamamlanan ana kapsamları arasında şunlar bulunuyor:
 - Taş, toprak ve yapı blokları ile bunların ırklara özgü inceleme metinleri
 - Peglaci yapı, kablo ve Pykrete malzemeleri
 - Bal peteği, altın odun, cam ve balmumu yapı malzemeleri
+- FU kodeks belgeleri ve oyun içi rehberleri
+
+## Ebrar'ın Yıldızı
+
+Bu küçük yıldız lambası, FU Türkçe'yi hazırlayan oyuncunun sevgilisi Ebrar'a sürprizidir. Adı, envanter açıklaması ve inceleme metni hikâyesini oyunda anlatır.
+
+Oyuncu kendi FU gemisine geldiğinde lamba ışınlayıcının yakınındaki uygun bir duvara bir kez yerleştirilir. Alan doluysa betik sonraki ziyaretlerde yeniden dener; mevcut nesneleri kaldırmaz. Eşya ayrıca **1 cam + 1 bakır külçesi** ile temel üretimden yapılabilir. Tarif mevcut karakterlere de açılır.
 
 Bir dosyanın FU kaynak ağacında bulunması tek başına çeviri gerekçesi sayılmıyor. Oyuncuya gerçekten görünen içerik mümkün olduğunca görev, tarif, araştırma, nesne, NPC, script veya runtime bağlantıları üzerinden doğrulanıyor.
 
