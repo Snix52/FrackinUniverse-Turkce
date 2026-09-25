@@ -48,8 +48,8 @@ def render_images(source: Path, spec: dict) -> tuple[dict[str, bytes], dict]:
                 allowed.update(glyphs)
                 for point in glyphs:
                     result.putpixel(point, (1, 9, 21, 255))
-                gx = (min(x for x, y in glyphs) + max(x for x, y in glyphs) + 1) / 2
-                gy = 219 - (y1 + y2) / 2
+                gx = (min(x for x, y in glyphs) + max(x for x, y in glyphs) + 1) // 2
+                gy = 219 - (y1 + y2) // 2
                 labels[f'fuTrFuelLegend{i}'] = {
                     'type': 'label', 'zlevel': 1, 'position': [gx, gy],
                     'hAnchor': 'mid', 'vAnchor': 'mid', 'fontSize': font_size,

@@ -49,6 +49,9 @@ class UiLqaSourceTests(unittest.TestCase):
         self.assertEqual(config['gui']['btnEmpty']['caption'], 'BOŞALT')
         self.assertEqual(config['scriptWidgetCallbacks'], ['insertFuel', 'fuel', 'emptyfuel'])
         self.assertEqual(len([key for key in config['gui'] if key.startswith('fuTrFuelLegend')]), 8)
+        for key, value in config['gui'].items():
+            if key.startswith('fuTrFuelLegend'):
+                self.assertTrue(all(type(p) is int for p in value['position']))
         rows = [r for r in read(TOOLS / 'ceviriler.json')['translations'] if r['asset'] == path]
         patched = build.simulate(config, build.translation_patch(path, rows))
         for row in rows:
