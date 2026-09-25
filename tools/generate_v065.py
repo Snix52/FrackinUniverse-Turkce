@@ -19,6 +19,15 @@ EXPECTED_FIELDS = 331
 EXPECTED_ASSETS = 47
 EXPECTED_UNIQUE = 312
 EXPECTED_LAYERED_FIELDS = 0
+CONTROL_FIX_FIELDS = {
+    ("codex/documents/randombook14.codex", "/contentPages/4"),
+    ("codex/documents/randombook14.codex", "/contentPages/5"),
+    ("codex/documents/randombook6.codex", "/contentPages/4"),
+}
+MIXED_NEWLINE_FIELDS = {
+    ("codex/documents/blank_template_codex.codex", "/contentPages/0"):
+        "LCLLCLCC",
+}
 
 
 def source_candidates(source: Path) -> dict[tuple[str, str], audit.Candidate]:
@@ -99,6 +108,10 @@ def main() -> None:
             {"layered_source": True, "source_patch": asset + ".patch"}
             if not (args.source / asset).is_file() else None
         )
+        if (asset, row["pointer"]) in CONTROL_FIX_FIELDS:
+            expected_qa = {"allow_control_fix": True}
+        if (asset, row["pointer"]) in MIXED_NEWLINE_FIELDS:
+            expected_qa = {"source_newline_pattern": MIXED_NEWLINE_FIELDS[(asset, row["pointer"])]}
         if row.get("qa") != expected_qa:
             raise ValueError("v0.65 source provenance mismatch: " + asset + row["pointer"])
         if candidates[(row["asset"], row["pointer"])].value != row["en"]:

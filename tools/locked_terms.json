@@ -5183,6 +5183,57 @@
         }
       ],
       "note": "v0.63 yiyeceklerinde yerleşen karşılık; çoğul ve çekimli biçimler aynı kökten türetilir"
+    },
+    {
+      "source": "Slot Split",
+      "context": "ITN yapılandırma seçeneği",
+      "type": "Arayüz terimi",
+      "tr": "Yuvaya Böl",
+      "forbidden": "Yuva Böl",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "ITD arayüzü ve ağ rehberinde aynı seçenek adı"
+    },
+    {
+      "source": "High-Fidelity Codex",
+      "context": "Kodeks arayüzü özel adı",
+      "type": "Özel ad",
+      "tr": "Yüksek Kaliteli Codex",
+      "forbidden": "Yüksek Çözünürlüklü Kodeks",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "Arayüz başlığı ve taşma uyarısı aynı adı kullanır"
+    },
+    {
+      "source": "Closed Fist",
+      "context": "Örgüt özel adı",
+      "type": "Özel ad",
+      "tr": "Closed Fist",
+      "forbidden": "Kapalı Yumruk",
+      "status": "LOCKED",
+      "mode": "preserve",
+      "enforce_in_text": true,
+      "note": "Örgütün adı korunur"
+    },
+    {
+      "source": "Stillborn God",
+      "context": "Mitolojik varlık adı",
+      "type": "Özel ad",
+      "tr": "Ölü Doğmuş Tanrı",
+      "forbidden": "Doğmamış Tanrı",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "Stillborn ve unborn farklı anlamdadır"
+    },
+    {
+      "source": "Juice Salvation Society",
+      "context": "Kodeks içindeki örgüt adı",
+      "type": "Özel ad",
+      "tr": "Meyve Suyu Kurtuluş Derneği",
+      "forbidden": "Plazma Kurtuluş Derneği",
+      "status": "LOCKED",
+      "enforce_in_text": true,
+      "note": "Plasmic Fluid numunelerini alan örgütün adı"
     }
   ],
   "context_exceptions": [
@@ -5286,6 +5337,11 @@
     }
   ],
   "forbidden_regexes": [
+    {
+      "pattern": "Kurcalama Masası|Eşya Aktarım Aygıt|Yüksek Çözünürlüklü Kodeks",
+      "ignore_case": true,
+      "message": "Kilitli FU makine veya Codex adı kullanılmalı."
+    },
     {
       "pattern": "\\bkraliçe arı\\b",
       "ignore_case": true,

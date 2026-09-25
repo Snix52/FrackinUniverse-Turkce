@@ -572,6 +572,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Bacon | Yiyecek içeriği | Malzeme | Pastırma | Bacon | LOCKED | v0.63 yiyeceklerinde yerleşen karşılık; cümle içinde çekimli pastırma biçimleri kabul edilir |
 | Pussplum | Yiyecek içeriği | Malzeme | İrin eriği | Pussplum | LOCKED | v0.63 yiyeceklerinde yerleşen karşılık; cümle içinde çekimli biçimler kabul edilir |
 | Pearlpea / Pearlpeas | Yiyecek içeriği | Malzeme | İnci bezelyesi | Pearlpea | LOCKED | v0.63 yiyeceklerinde yerleşen karşılık; çoğul ve çekimli biçimler aynı kökten türetilir |
+| Slot Split | ITN yapılandırma seçeneği | Arayüz terimi | Yuvaya Böl | Yuva Böl | LOCKED | ITD arayüzü ve ağ rehberinde aynı seçenek adı |
+| High-Fidelity Codex | Kodeks arayüzü özel adı | Özel ad | Yüksek Kaliteli Codex | Yüksek Çözünürlüklü Kodeks | LOCKED | Arayüz başlığı ve taşma uyarısı aynı adı kullanır |
+| Closed Fist | Örgüt özel adı | Özel ad | Closed Fist | Kapalı Yumruk | LOCKED | Örgütün adı korunur |
+| Stillborn God | Mitolojik varlık adı | Özel ad | Ölü Doğmuş Tanrı | Doğmamış Tanrı | LOCKED | Stillborn ve unborn farklı anlamdadır |
+| Juice Salvation Society | Kodeks içindeki örgüt adı | Özel ad | Meyve Suyu Kurtuluş Derneği | Plazma Kurtuluş Derneği | LOCKED | Plasmic Fluid numunelerini alan örgütün adı |
 
 ## Kural
 

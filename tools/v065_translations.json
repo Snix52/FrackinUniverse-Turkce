@@ -72,8 +72,11 @@
       "asset": "codex/documents/blank_template_codex.codex",
       "pointer": "/contentPages/0",
       "en": "^orange;Title^reset;\n\n   We use ^green;text^reset; to convey information.\n\n\n   ^cyan;I am a section header^reset;\n\n   And I am text under the header. Your mom hates puppies.\n   ",
-      "tr": "^orange;Başlık^reset;\n\n   Bilgiyi aktarmak için ^green;metin^reset; kullanırız.\n\n\n   ^cyan;Ben bir bölüm başlığıyım^reset;\n\n   Bu da başlığın altındaki metin. Annen yavrulardan nefret ediyor.\n   ",
-      "section": "v0.65 kodeks belgeleri"
+      "tr": "^orange;Başlık^reset;\n\n   Bilgiyi aktarmak için ^green;metin^reset; kullanırız.\n\n\n   ^cyan;Ben bir bölüm başlığıyım^reset;\n\n   Bu da başlığın altındaki metin. Annen köpek yavrularından nefret ediyor.\n   ",
+      "section": "v0.65 kodeks belgeleri",
+      "qa": {
+        "source_newline_pattern": "LCLLCLCC"
+      }
     },
     {
       "asset": "codex/documents/blank_template_codex.codex",
@@ -261,7 +264,7 @@
       "asset": "codex/documents/ffguidebattle.codex",
       "pointer": "/description",
       "en": "Changes to Weapons and Combat in FU.",
-      "tr": "FU'da Silahlar ve Savaşta Değişiklikler.",
+      "tr": "FU'da Silah ve Savaş Değişiklikleri.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -310,7 +313,7 @@
       "asset": "codex/documents/fleshweave.codex",
       "pointer": "/title",
       "en": "Fleshweaving Quarterly",
-      "tr": "Et Dokuma Dergisi",
+      "tr": "Üç Aylık Et Dokuma Dergisi",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -513,14 +516,14 @@
       "asset": "codex/documents/networkguide.codex",
       "pointer": "/contentPages/13",
       "en": "Once you have a basic ITN setup (described on page 9), you can make a terminal at the electronics/power center. By connecting the output of a container's storage bridge to a terminal's input node, you can see and search through every item stored in that container, and pull them into your inventory - but you cannot send items back through the terminal. A single terminal can be connected to multiple containers this way, letting you view and pull items from multiple containers at once.",
-      "tr": "Temel bir ITN ağı kurduktan sonra Elektronik/Güç Merkezi'nde bir terminal yapabilirsin. Bir kabın depolama köprüsünün çıkışını terminalin giriş düğümüne bağlarsan, kapta saklanan tüm eşyaları görüp arayabilir ve envanterine çekebilirsin; ancak terminalden kaba eşya gönderemezsin. Tek terminali bu şekilde birden fazla kaba bağlayıp hepsindeki eşyaları görebilir ve çekebilirsin.",
+      "tr": "9. sayfada anlatıldığı gibi temel bir ITN ağı kurduktan sonra Elektronik/Güç Merkezi'nde bir terminal yapabilirsin. Bir kabın depolama köprüsünün çıkışını terminalin giriş düğümüne bağlarsan, kapta saklanan tüm eşyaları görüp arayabilir ve envanterine çekebilirsin; ancak terminalden kaba eşya gönderemezsin. Tek terminali bu şekilde birden fazla kaba bağlayıp hepsindeki eşyaları görebilir ve çekebilirsin.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/networkguide.codex",
       "pointer": "/contentPages/14",
       "en": "A common, useful storage setup is to have rows of containers and storage bridges all linked to a single terminal (or series of terminals) so you can pull from all of them, with a chest nearby and its storage bridge linked to multiple ITDs that will automatically sort any items you dump into it into specific containers in the network without you having to do anything else.",
-      "tr": "Kullanışlı bir depolama düzeni için kap sıralarını ve depolama köprülerini tek bir terminale (veya birkaç terminale) bağlayabilirsin. Yakındaki bir sandığı, eşyaları ağa atınca başka bir şey yapmana gerek kalmadan belirli kaplara ayıracak birkaç ITD'ye bağlayabilirsin.",
+      "tr": "Yaygın ve kullanışlı bir depolama düzeninde kap sıraları ile depolama köprüleri tek bir terminale (ya da birkaç terminale) bağlanır; böylece hepsinden eşya çekebilirsin. Yakındaki bir sandığın depolama köprüsünü de birden fazla ITD'ye bağlarsan, sandığa bıraktığın eşyalar başka işlem yapmana gerek kalmadan ağdaki belirli kaplara otomatik olarak ayrılır.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -583,14 +586,14 @@
       "asset": "codex/documents/networkguide.codex",
       "pointer": "/contentPages/4",
       "en": "Object Data Sensor: Crafted in the tinkering table. Detects object placement points, to allow for more precise placement of Storage Bridges. Bridges select a single container based on the distance between themselves and object placement points.",
-      "tr": "Nesne Verisi Sensörü: Kurcalama Masası'nda üretilir. Depolama Köprülerini daha hassas yerleştirebilmek için nesnelerin yerleştirme noktalarını algılar. Köprüler, kendileriyle nesnelerin yerleştirme noktaları arasındaki uzaklığa göre tek bir kap seçer.",
+      "tr": "Nesne Verisi Sensörü: İnce İşçilik Tezgâhında üretilir. Depolama Köprülerini daha hassas yerleştirebilmek için nesnelerin yerleştirme noktalarını algılar. Köprüler, kendileriyle nesnelerin yerleştirme noktaları arasındaki uzaklığa göre tek bir kap seçer.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/networkguide.codex",
       "pointer": "/contentPages/5",
       "en": "Item Transference Devices (ITDs) are additional core components of the ITN system. While ITDs are capable of moving all items by default, you will need special token items to filter for currencies or items the ITD does not recognize. You can place them wherever you want as long as you can keep their wiring straight. Mastery of the ITD will bring mastery over the entire ITN system.",
-      "tr": "Eşya Aktarım Aygıtları (ITD), ITN sisteminin diğer temel bileşenleridir. ITD'ler varsayılan olarak tüm eşyaları taşıyabilir; ancak para birimlerini veya ITD'nin tanımadığı eşyaları süzmek için özel jetonlar gerekir. Kablolarını düzgünce bağlayabildiğin sürece istediğin yere yerleştirebilirsin. ITD'yi ustalıkla kullanmayı öğrenirsen tüm ITN sistemine hâkim olursun.",
+      "tr": "Eşya Aktarım Cihazları (ITD), ITN sisteminin diğer temel bileşenleridir. ITD'ler varsayılan olarak tüm eşyaları taşıyabilir; ancak para birimlerini veya ITD'nin tanımadığı eşyaları süzmek için özel jetonlar gerekir. Kablolarını düzgünce bağlayabildiğin sürece istediğin yere yerleştirebilirsin. ITD'yi ustalıkla kullanmayı öğrenirsen tüm ITN sistemine hâkim olursun.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -604,7 +607,7 @@
       "asset": "codex/documents/networkguide.codex",
       "pointer": "/contentPages/7",
       "en": "Stack Move: To move stacks of specific sizes, place the desired stack size in your filter area. This works well with Even Split and Slot Split, as it will only move stacks there are enough to do so equally. It does not, however, account for amounts in the destination.",
-      "tr": "Yığın Taşıma: Belirli büyüklükte yığınları taşımak için istediğin yığın boyutunu süzgeç alanına yerleştir. Eşit Böl ve Yuva Böl seçenekleriyle iyi çalışır; yalnızca eşit bölmeye yetecek miktardaki yığınları taşır. Ancak hedefteki miktarı hesaba katmaz.",
+      "tr": "Yığın Taşıma: Belirli büyüklükte yığınları taşımak için istediğin yığın boyutunu süzgeç alanına yerleştir. Eşit Böl ve Yuvaya Böl seçenekleriyle iyi çalışır; yalnızca eşit bölmeye yetecek miktardaki yığınları taşır. Ancak hedefteki miktarı hesaba katmaz.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -618,7 +621,7 @@
       "asset": "codex/documents/networkguide.codex",
       "pointer": "/contentPages/9",
       "en": "ITDs can be interacted with to bring up their configuration menu. Input slots indicate what slots in a container the ITD will pull from; output slots designate what inventory slots in a container the ITD will drop items into. You can press the red I button to invert the selected slots, telling the ITD to ignore those specific slots rather than use them specifically. Even splitting and slot splitting dictate whether the ITD sorts items into single stacks or splits items between every indicated output slot. ITDs may not be used as repeaters.",
-      "tr": "Yapılandırma menüsünü açmak için ITD ile etkileşime geç. Giriş yuvaları ITD'nin kaptan hangi yuvalardan eşya çekeceğini; çıkış yuvalarıysa eşyaları kabın hangi envanter yuvalarına bırakacağını belirler. Seçili yuvaları tersine çevirmek ve kullanmak yerine yoksaymasını söylemek için kırmızı I düğmesine basabilirsin. Eşit Böl ve Yuva Böl seçenekleri, eşyaları tek bir yığına mı koyacağını yoksa belirtilen tüm çıkış yuvalarına mı böleceğini belirler. ITD'ler tekrarlayıcı olarak kullanılamaz.",
+      "tr": "Yapılandırma menüsünü açmak için ITD ile etkileşime geç. Giriş yuvaları ITD'nin kaptan hangi yuvalardan eşya çekeceğini; çıkış yuvalarıysa eşyaları kabın hangi envanter yuvalarına bırakacağını belirler. Seçili yuvaları tersine çevirmek ve kullanmak yerine yoksaymasını söylemek için kırmızı I düğmesine basabilirsin. Eşit Böl ve Yuvaya Böl seçenekleri, eşyaları tek bir yığına mı koyacağını yoksa belirtilen tüm çıkış yuvalarına mı böleceğini belirler. ITD'ler tekrarlayıcı olarak kullanılamaz.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -667,7 +670,7 @@
       "asset": "codex/documents/randombook1.codex",
       "pointer": "/contentPages/0",
       "en": "Just because hes a Hylotl, Dad is flipping out! It's not fair! Dennyx and I love one another! Who cares what species he is??? Dad insists that 'No Munari of mine is going to marry a good-for-nothing Hylotl' but we'll show him! I just paid 20,000 pixels to the Closed Fist to 'take care' of our problem in the traditional manner. Our wedding will proceed as planned, no matter what!",
-      "tr": "Sırf Hylotl olduğu için babam çıldırıyor! Haksızlık bu! Dennyx'le birbirimizi seviyoruz! Hangi türden olduğu kimin umurunda??? Babam, 'Benim Munari'm işe yaramaz bir Hylotl'la evlenemez,' diye tutturdu ama ona göstereceğiz! Sorunumuzu geleneksel yöntemle 'halledecek' Kapalı Yumruk'a az önce 20.000 pixel ödedim. Düğünümüz planlandığı gibi yapılacak, ne olursa olsun!",
+      "tr": "Sırf Hylotl olduğu için babam çıldırıyor! Haksızlık bu! Dennyx'le birbirimizi seviyoruz! Hangi türden olduğu kimin umurunda??? Babam, 'Benim Munari'm işe yaramaz bir Hylotl'la evlenemez,' diye tutturdu ama ona göstereceğiz! Sorunumuzu geleneksel yöntemle 'halledecek' Closed Fist'e az önce 20.000 pixel ödedim. Düğünümüz planlandığı gibi yapılacak, ne olursa olsun!",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -730,7 +733,7 @@
       "asset": "codex/documents/randombook10.codex",
       "pointer": "/contentPages/6",
       "en": "WE KIDNAPPED AN ALIEN AND MY WIFE CALLED IT A CAT",
-      "tr": "BİR UZAYLIYI KAÇIRDIK VE KARIM ONA KEDİ ADINI VERDİ",
+      "tr": "BİR UZAYLIYI KAÇIRDIK VE KARIM DA ONA KEDİ DEDİ",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -786,14 +789,14 @@
       "asset": "codex/documents/randombook12.codex",
       "pointer": "/contentPages/2",
       "en": "In the end I must rely on the judgment and standing of the few scientific leaders who have, on the one hand, sufficient independence of thought to weigh my data on its own hideously convincing merits or in the light of certain primordial and highly baffling myth-cycles; and on the other hand, sufficient influence to deter the exploring world in general from any rash and overambitious programme in the region of those mountains of madness. It is an unfortunate fact that relatively obscure men like myself and",
-      "tr": "Sonunda, bir yandan verilerimi kendi korkunç derecede ikna edici hâlleriyle ya da bazı kadim ve son derece kafa karıştırıcı mit döngülerinin ışığında tartabilecek kadar bağımsız düşünen; öte yandan keşif dünyasını o delilik dağlarının bulunduğu bölgedeki düşüncesiz ve aşırı hırslı bir programdan caydırabilecek kadar etkili birkaç bilim önderinin yargısına ve itibarına güvenmek zorundayım. Benim gibi görece önemsiz insanların ve yalnızca küçük bir üniversiteyle bağlantılı çalışma arkadaşlarımın, son derece tuhaf ya da tartışmalı konularda iz bırakma şansı pek olmadığından, bu talihsiz bir gerçek.",
+      "tr": "Sonunda, bir yandan verilerimi kendi korkunç derecede ikna edici hâlleriyle ya da bazı kadim ve son derece kafa karıştırıcı mit döngülerinin ışığında tartabilecek kadar bağımsız düşünen; öte yandan keşif dünyasını o delilik dağlarının bulunduğu bölgedeki düşüncesiz ve aşırı hırslı bir programdan caydırabilecek kadar etkili birkaç bilim önderinin yargısına ve itibarına güvenmek zorundayım. Ne yazık ki benim gibi görece önemsiz insanların ve",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/randombook12.codex",
       "pointer": "/contentPages/3",
       "en": "my associates, connected only with a small university, have little chance of making an impression where matters of a wildly bizarre or highly controversial nature are concerned.",
-      "tr": "Yalnızca küçük bir üniversiteyle bağlantılı çalışma arkadaşlarımın ve benim gibi görece önemsiz insanların, son derece tuhaf ya da tartışmalı konularda iz bırakma şansı pek yok.",
+      "tr": "yalnızca küçük bir üniversiteyle bağlantılı çalışma arkadaşlarımın, son derece tuhaf ya da tartışmalı konularda iz bırakma şansı pek yok.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -849,42 +852,48 @@
       "asset": "codex/documents/randombook14.codex",
       "pointer": "/contentPages/1",
       "en": "09 - 4 - XX,05:00 AM\n\nA product case was suggested to the head of the leading science and recreation division of the science outpost, the location of which is disclosed to anyone without a direct invitation to the facility, or with means to contact them otherwise. Dr. V. was asked to conduct advisory roles for the development of project Termite Hill,",
-      "tr": "09 - 4 - XX, 05.00\n\nBir ürün vakası, Bilim Karakolu’nun önde gelen bilim ve eğlence bölümünün başkanına sunuldu. Tesise doğrudan daveti olmayan ya da başka yoldan onlarla iletişim kuramayan herkes tesisin yerini öğrenebilir. Dr. V., U.S.C.M. için Termit Tepesi Projesi’nin geliştirilmesinde danışmanlık yapmaya çağrıldı.",
+      "tr": "09 - 4 - XX, 05:00\n\nBir ürün vakası, Bilim Karakolu’nun önde gelen bilim ve eğlence bölümünün başkanına sunuldu. Tesise doğrudan daveti olmayan ya da başka yoldan onlarla iletişim kurma imkânı bulunan herkes tesisin yerini öğrenebilir. Dr. V., Termit Tepesi Projesi’nin geliştirilmesinde danışmanlık yapmaya çağrıldı.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/randombook14.codex",
       "pointer": "/contentPages/2",
       "en": "for the U.S.C.M. Termite hill is a classified project, but as this is a final report on the matter, I will be honest. We tried to make humans more disposable as before, by making - imperfect - clones. Clones close to humankind but in multiple ways genetically different so those soldiers would not be able to be traced back to us, nor mankind. An elite",
-      "tr": "U.S.C.M. için Termit Tepesi Projesi gizli bir projeydi; bu son rapor olduğundan açık konuşacağım. Daha önce yaptığımız gibi insanları gözden çıkarılabilir hâle getirmek için kusurlu klonlar ürettik. İnsanlara benzeyen ama genetik açıdan çeşitli yönlerden farklı olan bu askerler sayesinde bize ya da insanlığa kadar iz sürülemeyecekti. Seçkin bir görev gücü; adı yok, geçmişi yok, geleceği yok.",
+      "tr": "U.S.C.M. için yürütülen Termit Tepesi gizli bir projeydi; bu son rapor olduğundan açık konuşacağım. Daha önce yaptığımız gibi insanları gözden çıkarılabilir hâle getirmek için kusurlu klonlar ürettik. İnsanlara benzeyen ama genetik açıdan çeşitli yönlerden farklı olan bu askerlerin izi bize de insanlığa da sürülemeyecekti.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/randombook14.codex",
       "pointer": "/contentPages/3",
       "en": "task force, with no name, no past, no future. Production went well.\n\n\n 22 - 6 - XX\n\nThe production passed its testing phase with flying colors, the clones were brought up from infantile sizes to full-grown produce. Trained in black ops combat, and tested against small villages of hostile alien species. Most of which unknown to the united federation of",
-      "tr": "Üretim iyi ilerledi.\n\n\n22 - 6 - XX\n\nTest aşamasını başarıyla geçen klonlar bebeklikten yetişkinliğe büyütüldü. Gizli operasyon savaşında eğitildiler ve Birleşik Federasyon uzayında yaşayan düşman uzaylı türlerinin küçük köylerinde sınandılar. Bunların çoğu bilinmiyordu.",
+      "tr": "Adı, geçmişi, geleceği olmayan seçkin bir görev gücüydü. Üretim iyi ilerledi.\n\n\n22 - 6 - XX\n\nKlonlar test aşamasını başarıyla geçti; bebeklikten yetişkinliğe kadar büyütüldüler. Gizli operasyonlar için eğitildiler ve düşman uzaylı türlerinin küçük köylerine karşı sınandılar. Bu türlerin çoğunu uzay sakinlerinden oluşan birleşik federasyon bile tanımıyordu.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/randombook14.codex",
       "pointer": "/contentPages/4",
       "en": "space inhabitants. Those that are known are the [REDACTED].\n\n\n13 - 7 - XX\n\nDr. V was disclosed from the project at his request, every involvement is erased and any technology provided reproduced. As such, efficiency in productivity dropped by 22%. But it was a sacrifice we were willing to take. Dr. V never spoke a word about it since.",
-      "tr": "Uzay sakinleri arasında bilinenlerin adları [SANSÜRLENDİ].\n\n\n13 - 7 - XX\n\nDr. V.’nin isteği üzerine projedeki görevi sonlandırıldı; tüm katılımı silindi ve sağladığı her teknoloji yeniden üretildi. Bunun sonucunda üretim verimliliği yüzde 22 düştü. Ama göze alabileceğimiz bir fedakârlıktı. Dr. V. o günden sonra tek kelime etmedi.",
-      "section": "v0.65 kodeks belgeleri"
+      "tr": "Tanıdıkları ise [SANSÜRLENDİ].\n\n\n13 - 7 - XX\n\nDr. V.’nin isteği üzerine projedeki görevi sonlandırıldı; tüm katılımı silindi ve sağladığı her teknoloji yeniden üretildi. Bunun sonucunda üretim verimliliği %22 düştü. Ama göze alabileceğimiz bir fedakârlıktı. Dr. V. o günden sonra tek kelime etmedi.",
+      "section": "v0.65 kodeks belgeleri",
+      "qa": {
+        "allow_control_fix": true
+      }
     },
     {
       "asset": "codex/documents/randombook14.codex",
       "pointer": "/contentPages/5",
       "en": "08 - 8 - XX\n\nOur badly reproduced machinery have created a heat-signature strong enough to pass through our reinforced walls of the underground base on planet [REDACTED] - A Floran Armada picked up on the signature and invaded, making short work of the unprepared minimal security force, and several of the scientists on the work floor. Only a handful, including",
-      "tr": "08 - 8 - XX\n\nKötü taklit edilmiş makinelerimiz, yeraltı üssünün güçlendirilmiş duvarlarını aşacak kadar güçlü bir ısı izi oluşturdu. Üs [SANSÜRLENDİ] gezegenindeydi. Floran Armadası bu izi algılayıp saldırdı; hazırlıksız ve yetersiz güvenlik gücünü ve üretim alanındaki bilim insanlarının birkaçını kolayca saf dışı bıraktı. Yalnızca bir avuç kişi, ben de dahil, sağ kurtuldu.",
-      "section": "v0.65 kodeks belgeleri"
+      "tr": "08 - 8 - XX\n\nKötü taklit edilmiş makinelerimiz, yeraltı üssünün güçlendirilmiş duvarlarını aşacak kadar güçlü bir ısı izi oluşturdu. Üs [SANSÜRLENDİ] gezegenindeydi. Floran Armadası bu izi algılayıp saldırdı; hazırlıksız ve yetersiz güvenlik gücünü ve üretim alanındaki bilim insanlarının birkaçını kolayca saf dışı bıraktı. Saldırıdan yalnızca bir avuç kişi kurtuldu.",
+      "section": "v0.65 kodeks belgeleri",
+      "qa": {
+        "allow_control_fix": true
+      }
     },
     {
       "asset": "codex/documents/randombook14.codex",
       "pointer": "/contentPages/6",
       "en": "myself, escaped with our lives, and only minor injuries. We lost the project and our facility to the Florans that very day.",
-      "tr": "Yalnızca hafif yaralarla kurtulduk. O gün projeyi ve tesisimizi Floranlara kaptırdık.",
+      "tr": "Ben de o kişiler arasındaydım; yalnızca hafif yaralanmıştık. O gün projeyi ve tesisimizi Floranlara kaptırdık.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -919,14 +928,14 @@
       "asset": "codex/documents/randombook15.codex",
       "pointer": "/contentPages/1",
       "en": "The second, and more harrowing realization was as such: The weapons were being operated by their POWERFUL THIGHS. One appeared to be an ordinary disc fed machine gun; operated by an accordion pump apparatus. The second was much more intimidating, taking the appearance of a buckshot",
-      "tr": "İkinci ve daha ürkütücü fark edişimiz şuydu: Silahları GÜÇLÜ BALDIRLARIYLA kullanıyorlardı. Biri sıradan bir disk şarjörlü makineli tüfek gibi görünüyordu; akordeon pompalı bir düzenekle çalışıyordu. İkincisi çok daha korkutucuydu; saçma dolu bir kovan biçimindeydi.",
+      "tr": "İkinci ve daha ürkütücü fark edişimiz şuydu: Silahları GÜÇLÜ UYLUKLARIYLA kullanıyorlardı. Biri sıradan bir disk şarjörlü makineli tüfek gibi görünüyordu; akordeon pompalı bir düzenekle çalışıyordu. İkincisi çok daha korkutucuydu; bir saçma",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/randombook15.codex",
       "pointer": "/contentPages/2",
       "en": "shell inflated until with a loud retort scattering the entire payload across a scarecrow target. The most fearsome however, was the cannon. Even if it only shot round shot, it did cut though an entire cornfield as if it was merely the air.",
-      "tr": "Kovan şişirilip gürültülü bir patlamayla tüm saçmalar korkuluk hedefe saçılıyordu. En korkuncuysa toptu. Yalnızca yuvarlak gülle atmasına rağmen koca bir mısır tarlasını havaymışçasına delip geçiyordu.",
+      "tr": "fişeği şişirilip gürültülü bir patlamayla tüm saçmalar korkuluk hedefe saçılıyordu. En korkuncuysa toptu. Yalnızca yuvarlak gülle atmasına rağmen koca bir mısır tarlasını havaymışçasına delip geçiyordu.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -968,7 +977,7 @@
       "asset": "codex/documents/randombook16.codex",
       "pointer": "/contentPages/1",
       "en": "Next time fishman whine at you about their numberssss, just lay that on em. Maybe only 10% ssssurvive, but ssstill enough to fight Floran war instead of becoming lunch.",
-      "tr": "Bir dahaki sefere balık-adam sayılarından yakınırsa bunu anlat. Belki yalnızca yüzde 10'u hayatta kalıyor ama yine de Floranlara yem olmak yerine savaşmaya yetecek kadar çoklar.",
+      "tr": "Bir dahaki sefere balık-adam sayılarından yakınırsa bunu anlat. Belki yalnızca %10'u hayatta kalıyor ama yine de Floranlara yem olmak yerine savaşmaya yetecek kadar çoklar.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1017,7 +1026,7 @@
       "asset": "codex/documents/randombook18.codex",
       "pointer": "/contentPages/1",
       "en": "Next time they whine at you about their numbers, let 'em have that food for thought. Sure, only 15% of the survivors from our constant raiding might've come out the other side of the Hylotl-Floran wars, which means about 10% of the overall population pulled through, but that was still more than enough to defend themselves (with a little bit of assistance, of course) instead of becoming lunch. If our kind starts breaking the treaty we signed, though, there might actually be a reason for them to worry about underpopulation.",
-      "tr": "Bir dahaki sefere sayılarından yakınsalar onlara bunu düşündür. Sürekli akınlarımızdan kurtulanların yalnızca yüzde 15'i Hylotl-Floran savaşlarının öbür tarafından sağ çıkmış olabilir; yani genel nüfusun yaklaşık yüzde 10'u kurtulmuş demek. Yine de biraz yardımımızla yem olmak yerine kendilerini savunmaya yetti. Ama türümüz imzaladığımız anlaşmayı bozarsa nüfuslarının azalmasından gerçekten endişe etmeleri gerekebilir.",
+      "tr": "Bir dahaki sefere sayılarından yakınsalar onlara bunu düşündür. Sürekli akınlarımızdan kurtulanların yalnızca %15'i Hylotl-Floran savaşlarının öbür tarafından sağ çıkmış olabilir; yani genel nüfusun yaklaşık %10'u kurtulmuş demek. Yine de biraz yardımımızla yem olmak yerine kendilerini savunmaya yetti. Ama türümüz imzaladığımız anlaşmayı bozarsa nüfuslarının azalmasından gerçekten endişe etmeleri gerekebilir.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1108,7 +1117,7 @@
       "asset": "codex/documents/randombook3.codex",
       "pointer": "/contentPages/1",
       "en": "Stabby had a casualty. It stabbed Vinalisj in the heel and he smashed it with his tail out of surprise. Rest in peace, Stabby. We will avenge you. Probably not with knives.",
-      "tr": "Stabby bir can aldı. Vinalisj'i topuğundan bıçakladı, o da şaşkınlıkla kuyruğuyla onu parçaladı. Huzur içinde yat Stabby. Öcünü alacağız. Muhtemelen bıçakla değil.",
+      "tr": "Stabby birini yaraladı. Vinalisj'i topuğundan bıçakladı, o da şaşkınlıkla kuyruğuyla onu parçaladı. Huzur içinde yat Stabby. Öcünü alacağız. Muhtemelen bıçakla değil.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1178,7 +1187,7 @@
       "asset": "codex/documents/randombook5.codex",
       "pointer": "/contentPages/3",
       "en": "Today I was dared to eat the dirt that that druggie X'i sells. It's just dirt. I didn't get my money's worth.",
-      "tr": "Bugün X'i'nin sattığı uyuşturucu toprağı yemem için iddiaya girdiler. Bildiğin toprak. Verdiğim paraya değmedi.",
+      "tr": "Bugün bana, şu uyuşturucu müptelası X'i'nin sattığı toprağı yeme cesaretin var mı diye meydan okudular. Bildiğin toprak. Verdiğim paraya değmedi.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1241,7 +1250,7 @@
       "asset": "codex/documents/randombook6.codex",
       "pointer": "/contentPages/3",
       "en": "To protect the Stillborn God, you must call upon the cleansing power of Yaz'guul and drench the bones of Uniadelz'ik in the rendered fat of a Diluvian. Should no Diluvians remain in existence, instead you must locate a place known as Maine, on a planet known as Earth. There you shall find a town known as Innsmouth. Seek the temple. The blood of Dagon is required.",
-      "tr": "Doğmamış Tanrı'yı korumak için Yaz'guul'un arındırıcı gücüne başvurmalı, Uniadelz'ik'in kemiklerini bir Diluvian'ın eritilmiş yağına bulamalısınız. Hiç Diluvian kalmadıysa Dünya adlı gezegendeki Maine denen yeri bulmalısınız. Orada Innsmouth adlı bir kasaba var. Tapınağı arayın. Dagon'un kanı gerekli.",
+      "tr": "Ölü Doğmuş Tanrı'yı korumak için Yaz'guul'un arındırıcı gücüne başvurmalı, Uniadelz'ik'in kemiklerini bir Diluvian'ın eritilmiş yağına bulamalısınız. Hiç Diluvian kalmadıysa Dünya adlı gezegendeki Maine denen yeri bulmalısınız. Orada Innsmouth adlı bir kasaba var. Tapınağı arayın. Dagon'un kanı gerekli.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1249,7 +1258,10 @@
       "pointer": "/contentPages/4",
       "en": "With the blood secured, then you must drink of it under the light of a Reinkarrd moon. Sadly, these occur only within the event horizon of black holes sufficiently aged. Should you locate one, you may proceed to the next step...[well over 2,000 pages remain. The first half of this process ends on page 800. Reading more would be pointless].",
       "tr": "Kanı bulduktan sonra onu Reinkarrd ayının ışığında içmelisiniz. Ne yazık ki bu aylar yalnızca yeterince yaşlı kara deliklerin olay ufkunda görülür. Birini bulursanız sonraki adıma geçebilirsiniz... [2.000'den fazla sayfa var. Bu sürecin ilk yarısı 800. sayfada bitiyor. Daha fazlasını okumak anlamsız olurdu].",
-      "section": "v0.65 kodeks belgeleri"
+      "section": "v0.65 kodeks belgeleri",
+      "qa": {
+        "allow_control_fix": true
+      }
     },
     {
       "asset": "codex/documents/randombook6.codex",
@@ -1269,7 +1281,7 @@
       "asset": "codex/documents/randombook7.codex",
       "pointer": "/contentPages/0",
       "en": "Scattered knowledge makes up the entire base of what we know about the race we refer to as the Precursors. Largely because we have no way to know what they called themselves. No text ever speaks of their species identification. Nothing ever mentions a homeworld, star, system...if they were xenophobes they were exceptionally protective and paranoid ones.",
-      "tr": "Bildiğimiz Precursor ırkı hakkında bildiklerimizin temeli dağınık bilgilerden oluşuyor. Büyük ölçüde, kendilerine ne dediklerini bilmememizden kaynaklanıyor bu. Hiçbir metinde türlerinin adı geçmiyor. Ana dünyalarından, yıldızlarından, sistemlerinden... hiçbir şeyden söz edilmiyor. Yabancı türlerden nefret ediyorlarsa son derece korumacı ve kuşkucu oldukları kesin.",
+      "tr": "Precursor dediğimiz ırk hakkında bildiklerimizin tamamı dağınık bilgilerden oluşuyor. Büyük ölçüde, kendilerine ne dediklerini bilmememizden kaynaklanıyor bu. Hiçbir metinde türlerinin adı geçmiyor. Ana dünyalarından, yıldızlarından, sistemlerinden... hiçbir şeyden söz edilmiyor. Yabancı türlerden nefret ediyorlarsa son derece korumacı ve kuşkucu oldukları kesin.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1297,7 +1309,7 @@
       "asset": "codex/documents/randombook8.codex",
       "pointer": "/contentPages/0",
       "en": "True to its title, it contains 53 fun things to do in Zero Gravity. Interestingly enough, 4 of them involve murder and 2 involve suction cups and laxatives.",
-      "tr": "Başlığına uygun biçimde içinde Sıfır Yerçekimi'nde yapılacak 53 eğlenceli şey var. İlginçtir, bunların dördü cinayetle, ikisi de vantuz ve müshille ilgili.",
+      "tr": "Başlığına uygun biçimde içinde Sıfır Yerçekimi'nde yapılacak 53 eğlenceli şey var. İlginçtir, bunların 4'ü cinayetle, 2'si de vantuz ve müshille ilgili.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1353,21 +1365,21 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/10",
       "en": "Jun 25 - Despite his clear genius, when asked on where he completed his education Kevin merely slapped me on the ass and told me to be a good servant and get him a coffee. He then proceeded to follow me around for the rest of the day making 'wide-load' truck-beeping sounds every time I moved.",
-      "tr": "25 Haziran - Kevin'in dehası ortadayken eğitimini nerede tamamladığını sordum. Bana kıçına bir tokat atıp uslu bir hizmetkâr olmamı ve ona kahve getirmemi söyledi. Sonra günün geri kalanında peşimden ayrılmayıp her hareketimde 'ağır yük' kamyonu geri vites sesi çıkardı.",
+      "tr": "25 Haziran - Kevin'in dehası ortadayken eğitimini nerede tamamladığını sordum. Kıçıma bir tokat atıp uslu bir hizmetkâr olmamı ve ona kahve getirmemi söyledi. Sonra günün geri kalanında peşimden ayrılmayıp her hareketimde 'ağır yük' kamyonu geri vites sesi çıkardı.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/100",
       "en": "^red;-- ERROR: BUFFER OVERFLOW --\n\nA longer codex page is needed to view this entry!\n^#666666;(Use the High-Fidelity Codex to view this page)",
-      "tr": "^red;-- HATA: ARABELLEK TAŞMASI --\n\nBu kaydı görüntülemek için daha uzun bir kodeks sayfası gerekli!\n^#666666;(Bu sayfayı görüntülemek için Yüksek Çözünürlüklü Kodeks’i kullan)",
+      "tr": "^red;-- HATA: ARABELLEK TAŞMASI --\n\nBu kaydı görüntülemek için daha uzun bir kodeks sayfası gerekli!\n^#666666;(Bu sayfayı görüntülemek için Yüksek Kaliteli Codex’i kullan)",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/101",
       "en": "^red;-- ERROR: BUFFER OVERFLOW --\n\nA longer codex page is needed to view this entry!\n^#666666;(Use the High-Fidelity Codex to view this page)",
-      "tr": "^red;-- HATA: ARABELLEK TAŞMASI --\n\nBu kaydı görüntülemek için daha uzun bir kodeks sayfası gerekli!\n^#666666;(Bu sayfayı görüntülemek için Yüksek Çözünürlüklü Kodeks’i kullan)",
+      "tr": "^red;-- HATA: ARABELLEK TAŞMASI --\n\nBu kaydı görüntülemek için daha uzun bir kodeks sayfası gerekli!\n^#666666;(Bu sayfayı görüntülemek için Yüksek Kaliteli Codex’i kullan)",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1402,7 +1414,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/15",
       "en": "Jul 17 - Ten days of glorious prank-free nonsense...and then I open up my Plasmic Fluid sample fridge and inside...no samples. There is a note, however, that thanks me for donating to the Juice Salvation Society.",
-      "tr": "17 Temmuz - On gün boyunca harika biçimde şakadan uzak yaşadık... sonra plazma sıvısı numunelerimin buzdolabını açtım... numuneler yok. Bir de Plazma Kurtuluş Derneği'ne bağış yaptığım için teşekkür eden bir not var.",
+      "tr": "17 Temmuz - On gün boyunca harika biçimde şakadan uzak yaşadık... sonra plazma sıvısı numunelerimin buzdolabını açtım... numuneler yok. Bir de Meyve Suyu Kurtuluş Derneği'ne bağış yaptığım için teşekkür eden bir not var.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1423,7 +1435,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/18",
       "en": "Jul 25 - Some one drown him! Please! I can't fathom how he considers it humorous but once again he has traded my prosthetic leg to a Gnome in exchange for a Gnome-sized jar of peanut butter. I'm not sure how he even *does* it. It's biometrically locked to my torso!",
-      "tr": "25 Temmuz - Biri onu boğsun! Lütfen! Bunun neresi komik, aklım almıyor; yine de protez bacağımı bir cüceye, cüce boyunda bir kavanoz fıstık ezmesi karşılığında takas etmiş. Bunu nasıl yapıyor, bilmiyorum bile. Gövdemin biyometrik kilidi var!",
+      "tr": "25 Temmuz - Biri onu boğsun! Lütfen! Bunun neresi komik, aklım almıyor; yine de protez bacağımı bir cüceye, cüce boyunda bir kavanoz fıstık ezmesi karşılığında takas etmiş. Bunu nasıl yapıyor, bilmiyorum bile. Protez bacağım gövdeme biyometrik olarak kilitli!",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1451,7 +1463,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/21",
       "en": "Aug 12 - I really can't figure out how it is comical to replace someone's hair products with watered down sulphuric acid. My skin may be immune, but now I'm bald and look like the ass of a newborn.",
-      "tr": "12 Ağustos - Saç bakım ürünlerimi sulandırılmış sülfürik asitle değiştirmesinin neresi komik, anlayamıyorum. Derim etkilenmemiş olabilir ama şimdi kelimem ve yeni doğmuş bir bebeğin kıçı gibi görünüyorum.",
+      "tr": "12 Ağustos - Saç bakım ürünlerimi sulandırılmış sülfürik asitle değiştirmesinin neresi komik, anlayamıyorum. Derim etkilenmemiş olabilir ama şimdi kelim ve yeni doğmuş bir bebeğin kıçı gibi görünüyorum.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1584,7 +1596,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/39",
       "en": "Jan 24 - We received a shipment of about 400 000 of these vuvuzelas from the Ansible network. We also received a 15% discount card off our next big-scale purchase. Kevin was later found fuelling a bonfire with them and grilling mice over it.",
-      "tr": "24 Ocak - Ansible ağından bu vuvuzelalardan yaklaşık 400.000 tane geldi. Bir sonraki büyük alışverişimizde yüzde 15 indirim kartı da yollamışlar. Kevin'i daha sonra bunlarla ateş yakıp üstünde fare ızgara ederken bulduk.",
+      "tr": "24 Ocak - Ansible ağından bu vuvuzelalardan yaklaşık 400 000 tane geldi. Bir sonraki büyük alışverişimizde %15 indirim kartı da yollamışlar. Kevin'i daha sonra bunlarla ateş yakıp üstünde fare ızgara ederken bulduk.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1626,7 +1638,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/44",
       "en": "Feb 10 - I found a deep-fried mooshi scrotum on my desk today along with a side of ice cream and a Happy Birthday card. My birthday was nine months ago. He is also aware that I have an allergic reaction to Mooshi.",
-      "tr": "10 Şubat - Bugün masamda kızarmış bir mooshi testisi, yanında dondurma ve bir Doğum Günün Kutlu Olsun kartı buldum. Doğum günüm dokuz ay önceydi. Mooshi'ye alerjim olduğunu da biliyor.",
+      "tr": "10 Şubat - Bugün masamda kızartılmış bir mooshi testis torbası, yanında dondurma ve bir Doğum Günün Kutlu Olsun kartı buldum. Doğum günüm dokuz ay önceydi. Mooshi'ye alerjim olduğunu da biliyor.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1668,7 +1680,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/5",
       "en": "Jun 13 - Kevin is forbidden from using the coffee machine, it took me 2 hours to clean the mess it made. I don't care where he got all that blood, it's just unsanitary and I won't stand for it.",
-      "tr": "13 Haziran - Kevin'in mutfaktaki kahve makinesini kullanması yasaklandı; yarattığı pisliği temizlemem iki saatimi aldı. O kadar kanı nereden bulduğu umurumda değil, hijyenik değil ve buna izin vermem.",
+      "tr": "13 Haziran - Kevin'in mutfaktaki kahve makinesini kullanması yasaklandı; yarattığı pisliği temizlemem 2 saatimi aldı. O kadar kanı nereden bulduğu umurumda değil, hijyenik değil ve buna izin vermem.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1696,7 +1708,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/53",
       "en": "Mar 4 - Kevin refused to work with any of the Glitch this week. Kept yelling that he couldn't bare the thought of thinking with those 'console peasants'. Which was odd, as the Glitch in that group aren't even near any console-panels.",
-      "tr": "4 Mart - Kevin bu hafta hiçbir Glitch ile çalışmayı reddetti. Sürekli, 'Şu konsol köylüleriyle aynı şeyi düşündüğümü hayal bile edemiyorum,' diye bağırdı. Garipti; gruptaki Glitchlerin hiçbirinin yakınında konsol paneli bile yok.",
+      "tr": "4 Mart - Kevin bu hafta hiçbir Glitch ile çalışmayı reddetti. Sürekli, 'Şu konsol köylüleriyle birlikte düşünmeye katlanamam,' diye bağırdı. Garipti; gruptaki Glitchlerin hiçbirinin yakınında konsol paneli bile yok.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1752,7 +1764,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/60",
       "en": "April 2 - Kevin got air of our fossil restoration project, and wanted to join in. We gave him a Trilobite to clean off, and he did a good job at it (surprisingly). Unfortunately, we made the mistake of letting him choose the next fossil he wanted to prepare for showcasing on the exposition on the lower decks. We had to pry private Holix's grandmother - who came to visit - out of Kevin's hands.",
-      "tr": "2 Nisan - Kevin fosil onarım projemizi duymuş ve katılmak istemiş. Temizlemesi için bir trilobit verdik, şaşırtıcı biçimde iyi iş çıkardı. Ne yazık ki serginin alt katlarında sergilenecek sonraki fosili seçmesine izin verdik. Ziyarete gelen Özel Holix'in büyükannesini Kevin'in elinden güç bela aldık.",
+      "tr": "2 Nisan - Kevin fosil onarım projemizi duymuş ve katılmak istemiş. Temizlemesi için bir trilobit verdik, şaşırtıcı biçimde iyi iş çıkardı. Ne yazık ki alt güvertelerdeki sergide gösterilecek sonraki fosili seçmesine izin verdik. Ziyarete gelen Er Holix'in büyükannesini Kevin'in elinden güç bela aldık.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1766,7 +1778,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/62",
       "en": "April 12 - I found Kevin in the break room today, rolling around on stolen cheese. We made eye contact. He seemed ashamed. He then moved over, and motioned that I should join him and explained by merely stating 'it's Tuesday'.",
-      "tr": "12 Nisan - Bugün dinlenme odasında Kevin'i çalıntı peynirin üstünde yuvarlanırken buldum. Göz göze geldik. Utanmış görünüyordu. Sonra yanıma gelip katılmamı işaret etti ve yalnızca 'Bugün Salı,' diye açıkladı.",
+      "tr": "12 Nisan - Bugün dinlenme odasında Kevin'i çalıntı peynirin üstünde yuvarlanırken buldum. Göz göze geldik. Utanmış görünüyordu. Sonra kenara kayıp yanına katılmamı işaret etti ve yalnızca 'Bugün Salı,' diye açıkladı.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1857,7 +1869,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/74",
       "en": "May 30 - Every single object in the station, floors included, is coated in lip gloss. I have no idea how this was accomplished. We were only gone 8 hours! Cleaning it is next to impossible. What an asshole.",
-      "tr": "30 Mayıs - İstasyondaki bütün nesneler, zeminler de dahil, dudak parlatıcısına bulanmış. Bunun nasıl yapıldığını bilmiyorum. Yalnızca sekiz saatliğine gitmiştik! Temizlemek neredeyse imkânsız. Ne pislik herif.",
+      "tr": "30 Mayıs - İstasyondaki bütün nesneler, zeminler de dahil, dudak parlatıcısına bulanmış. Bunun nasıl yapıldığını bilmiyorum. Yalnızca 8 saatliğine gitmiştik! Temizlemek neredeyse imkânsız. Ne pislik herif.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1871,7 +1883,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/76",
       "en": "Sep 1 - Kevin invited a friend over with a particularly limited set of vocabulary. Since this time, 6 staff members can do nothing but speak the exact same dialect.",
-      "tr": "1 Eylül - Kevin kelime hazinesi epey kısıtlı bir arkadaşını ziyarete çağırdı. O günden beri altı çalışan aynı lehçeyle konuşmaktan başka bir şey yapamıyor.",
+      "tr": "1 Eylül - Kevin kelime hazinesi epey kısıtlı bir arkadaşını ziyarete çağırdı. O günden beri 6 çalışan aynı lehçeyle konuşmaktan başka bir şey yapamıyor.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1892,7 +1904,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/79",
       "en": "Sep 7 - We were awakened by terrible screams today. When we investigated, we found Kevin in a state of utter horror. When pressed for further information he merely gestured vaguely towards the kitchen. Inside the kitchen we found an open can. Inside the can we found a smaller version of Kevin, gesturing to a micro-sized version of the kitchen, inside of which was a tiny can, containing another tinier Kevin...and so on. We have no idea how this was done.",
-      "tr": "7 Eylül - Bugün korkunç çığlıklarla uyandırıldık. Kevin'i dehşet içinde bulduk. Daha fazla bilgi isteyince mutfağı belirsizce işaret etti. İçeride açık bir teneke bulduk. İçinde mutfağın minyatürünün olduğu teneke kutuyu gösteren küçük bir Kevin vardı; onun içindeyse daha da küçük bir teneke kutu, onun içinde daha da küçük bir Kevin... böyle devam ediyordu. Bunun nasıl yapıldığı hakkında fikrimiz yok.",
+      "tr": "7 Eylül - Bugün korkunç çığlıklarla uyandırıldık. Kevin'i dehşet içinde bulduk. Daha fazla bilgi isteyince mutfağı belirsizce işaret etti. İçeride açık bir teneke bulduk. Kutunun içinde, mutfağın minyatürünü gösteren küçük bir Kevin vardı; minyatür mutfağın içindeyse daha da küçük bir teneke kutu, onun içinde daha da küçük bir Kevin vardı... böyle devam ediyordu. Bunun nasıl yapıldığı hakkında fikrimiz yok.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1927,7 +1939,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/83",
       "en": "Sep 14 - The bee sound has stopped, and a rather large shipment of milk was delivered today. Exactly 2972 cartons, to be exact. I have no idea why.",
-      "tr": "14 Eylül - Arı sesi kesildi, bugün de tam 2.972 kutu süt teslim edildi. Nedenini bilmiyorum.",
+      "tr": "14 Eylül - Arı sesi kesildi, bugün de tam 2972 kutu süt teslim edildi. Nedenini bilmiyorum.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -1955,7 +1967,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/87",
       "en": "Sep 10 - The directors' office door has been crudely painted like a skull-mounted stone crypt door, and his nameplate replaced with a poster saying 'This is the Vinal boss'. The only way in appears to be by opening Steve's storage locker and obtaining a key that weighs approximately 4 tons. Upon touching the key a very loud voice informs you that you have obtained the boss key, and plays a catchy 4-note tune. Any attempt to move is impossible unless you remove the key from the storage. Nobody is strong enough to do so.",
-      "tr": "10 Eylül - Müdürün ofis kapısı beceriksizce, kafatası takılı taş mahzen kapısı gibi boyanmış. İsimliği de 'İşte Vinal patron' yazılı bir posterle değiştirilmiş. İçeri girmenin tek yolu Steve'in deposunu açıp yaklaşık dört ton ağırlığındaki anahtarı almak gibi görünüyor. Anahtara dokununca çok yüksek sesli bir ses patron anahtarını aldığını bildiriyor ve akılda kalıcı dört notalık bir melodi çalıyor. Anahtarı depodan çıkarmazsan hareket etmek imkânsız. Bunu yapacak kadar güçlü kimse yok.",
+      "tr": "10 Eylül - Müdürün ofis kapısı beceriksizce, kafatası takılı taş mahzen kapısı gibi boyanmış. İsimliği de 'İşte Vinal patron' yazılı bir posterle değiştirilmiş. İçeri girmenin tek yolu Steve'in deposunu açıp yaklaşık 4 ton ağırlığındaki anahtarı almak gibi görünüyor. Anahtara dokununca çok yüksek sesli bir ses patron anahtarını aldığını bildiriyor ve akılda kalıcı 4 notalık bir melodi çalıyor. Anahtarı depodan çıkarmazsan hareket etmek imkânsız. Bunu yapacak kadar güçlü kimse yok.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2004,7 +2016,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/93",
       "en": "Oct 14 - 'Someone' placed a pleasure doll dressed as my mother in the staff room. While this was initially humorous, samples have shown that the doll contains traces of my familial DNA. Any attempt to touch or relocate the doll results in it speaking directly to the offender in my mother's voice and seductively asking them to make her a sandwich using rather graphic terminology.",
-      "tr": "14 Ekim - Dinlenme odasına anneme benzeyen, haz giysisi giydirilmiş bir oyuncak bebek bırakılmış. Başta komikti ama örneklerde bebeğin aileme ait DNA izleri bulundu. Dokunmaya ya da yerini değiştirmeye kalkınca doğrudan suçluya annemin sesiyle konuşuyor ve epey açık saçık sözlerle kendisine sandviç yapmasını istiyor.",
+      "tr": "14 Ekim - Dinlenme odasına annem gibi giydirilmiş bir seks bebeği bırakılmış. Başta komikti ama örneklerde bebeğin aileme ait DNA izleri bulundu. Dokunmaya ya da yerini değiştirmeye kalkınca doğrudan suçluya annemin sesiyle konuşuyor ve epey açık saçık sözlerle kendisine sandviç yapmasını istiyor.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2025,7 +2037,7 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/96",
       "en": "Oct 31-2 - Kevin has taken the liberty of applying what I am hoping is fake blood to the walls of the lab. If it's real blood, that brings up the question of not only how he obtained such large quantities, but also from where. I'm thinking I should take an impromptu vacation just to avoid Kevin's schemes.",
-      "tr": "31 Ekim-2 - Kevin, umarım sahte kandır diyerek, laboratuvarın duvarlarına kan sürmüş. Gerçek kan ise bu kadarını nereden bulduğunu bir yana bırak, nasıl bu kadar büyük miktarda bulduğu da soru işareti. Kevin'in düzenbazlıklarından kaçmak için doğaçlama bir tatile çıkmayı düşünüyorum.",
+      "tr": "31 Ekim-2 - Kevin laboratuvarın duvarlarına kan sürmüş; umarım sahtedir. Gerçek kan ise bu kadarını nereden bulduğunu bir yana bırak, nasıl bu kadar büyük miktarda bulduğu da soru işareti. Kevin'in düzenbazlıklarından kaçmak için doğaçlama bir tatile çıkmayı düşünüyorum.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2039,14 +2051,14 @@
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/98",
       "en": "Oct 31-4 - I take back any compliments I've given Kevin. That was not him in a zombie costume but a ^red;real^white; zombie. About ten scientists have been bitten and subsequently converted into undead monstrosities. I'm going to kill Kevin. Right after I kill these zombies. Now where did I leave my revolver?",
-      "tr": "31 Ekim-4 - Kevin'e ettiğim tüm iltifatları geri alıyorum. Zombi kostümü giymemiş; o ^red;gerçek^white; bir zombiydi. Yaklaşık on bilim insanını ısırıp yaşayan ölü yaratıklara dönüştürmüş. Kevin'i öldüreceğim. Şu zombileri öldürdükten hemen sonra. Revolverimi nereye koymuştum?",
+      "tr": "31 Ekim-4 - Kevin'e ettiğim tüm iltifatları geri alıyorum. Zombi kostümü içindeki Kevin değilmiş; o ^red;gerçek^white; bir zombiydi. Yaklaşık on bilim insanı ısırıldı ve ardından yaşayan ölü yaratıklara dönüştü. Kevin'i öldüreceğim. Şu zombileri öldürdükten hemen sonra. Revolverimi nereye koymuştum?",
       "section": "v0.65 kodeks belgeleri"
     },
     {
       "asset": "codex/documents/scienceoutpost_kevin.codex",
       "pointer": "/contentPages/99",
       "en": "^red;-- ERROR: BUFFER OVERFLOW --\n\nA longer codex page is needed to view this entry!\n^#666666;(Use the High-Fidelity Codex to view this page)",
-      "tr": "^red;-- HATA: ARABELLEK TAŞMASI --\n\nBu kaydı görüntülemek için daha uzun bir kodeks sayfası gerekli!\n^#666666;(Bu sayfayı görüntülemek için Yüksek Çözünürlüklü Kodeks’i kullan)",
+      "tr": "^red;-- HATA: ARABELLEK TAŞMASI --\n\nBu kaydı görüntülemek için daha uzun bir kodeks sayfası gerekli!\n^#666666;(Bu sayfayı görüntülemek için Yüksek Kaliteli Codex’i kullan)",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2137,7 +2149,7 @@
       "asset": "codex/documents/scienceoutpost_khe.codex",
       "pointer": "/contentPages/18",
       "en": "Day 17 - Along comes Kevin waving about his hands, then \"Suck it in, fat kitty\" he said...and threw a ^gray;neutron bomb^reset; at me. Nice snack. Then he asked me if I wanted to see a magic trick. Couldn't resist...said yes. What was the trick? He fired an ^gray;Atom Smasher^reset; at that annoying Fenerox in the market, ^gray;without seemingly having one^reset;. Gave me the ^gray;blueprint^reset; and said \"For Science!\" Also, he set the noisemaker's respawn delay to a week.",
-      "tr": "17. gün - Kevin elini sallayarak geldi ve 'Karnını içine çek, şişko kedi,' deyip bana bir ^gray;nötron bombası^reset; fırlattı. Güzel atıştırmalık. Sonra sihir numarası görmek isteyip istemediğimi sordu. Dayanamadım... evet dedim. Numara neydi? Pazardaki o sinir bozucu Fenerox'a ^gray;Atom Parçalayıcı^reset; fırlattı, hem de elinde yokmuş gibi görünürken. Bana ^gray;taslağını^reset; verip 'Bilim için!' dedi. Gürültücü aygıtın yeniden doğma süresini de bir haftaya çıkarmış.",
+      "tr": "17. gün - Kevin elini sallayarak geldi ve 'Karnını içine çek, şişko kedi,' deyip bana bir ^gray;nötron bombası^reset; fırlattı. Güzel atıştırmalık. Sonra sihir numarası görmek isteyip istemediğimi sordu. Dayanamadım... evet dedim. Numara neydi? Pazardaki o sinir bozucu Fenerox'a ^gray;Atom Parçalayıcı^reset; kullanarak ateş etti, ^gray;hem de elinde yokmuş gibi görünürken^reset;. Bana ^gray;taslağını^reset; verip 'Bilim için!' dedi. Şu yaygaracı Fenerox’un yeniden doğma süresini de bir haftaya çıkarmış.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2207,7 +2219,7 @@
       "asset": "codex/documents/scienceoutpost_khe.codex",
       "pointer": "/contentPages/5",
       "en": "Day 14 - Another prank...a ^gray;briefcase full of bees^reset;. Kevin didn't seem amused when I returned them, mixed into cartons of orange juice. Claimed I was infringing on a patent. I thought his was sour milk and bees? According to the poorly guarded infraction log it was, anyway.",
-      "tr": "14. gün - Yine bir şaka... ^gray;arı dolu bir evrak çantası^reset;. Onları portakal suyu kutularına karıştırıp geri verdiğimde Kevin pek eğlenmedi. Patentini ihlal ettiğimi söyledi. Benimkinin 'Ekşi Süt ve Arılar' olduğunu sanıyordum. En azından pek korunmayan ihlal günlüğünde öyle yazıyor.",
+      "tr": "14. gün - Yine bir şaka... ^gray;arı dolu bir evrak çantası^reset;. Onları portakal suyu kutularına karıştırıp geri verdiğimde Kevin pek eğlenmedi. Patentini ihlal ettiğimi söyledi. Onun patentinin 'Ekşi Süt ve Arılar' için olduğunu sanıyordum. En azından pek korunmayan ihlal günlüğünde öyle yazıyor.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2235,7 +2247,7 @@
       "asset": "codex/documents/scienceoutpost_khe.codex",
       "pointer": "/contentPages/9",
       "en": "Day 25 - Kevin's a quick study. Learned how to reactivate the stasis systems and used them to store poptops. Oddly amusing, up until he let them out in the dining room. The florans went ^gray;hungry^reset; tonight.",
-      "tr": "25. gün - Kevin çabuk öğreniyor. Durağanlık sistemlerini yeniden etkinleştirmeyi öğrendi ve Poptopları orada sakladı. Yemek salonunda onları serbest bırakana kadar tuhaf biçimde eğlenceliydi. Bu gece Floranların ^gray;açlığı^reset; tuttu.",
+      "tr": "25. gün - Kevin çabuk öğreniyor. Durağanlık sistemlerini yeniden etkinleştirmeyi öğrendi ve Poptopları orada sakladı. Yemek salonunda onları serbest bırakana kadar tuhaf biçimde eğlenceliydi. Floranlar bu gece ^gray;aç kaldı^reset;.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2277,7 +2289,7 @@
       "asset": "codex/documents/war1.codex",
       "pointer": "/contentPages/0",
       "en": "An extremely long and drawn out accounting of an ancient war fought by two long-forgotten races. It appears that this entire war was based solely on the misappropriation of four muffins and a pound of baking flour. This somehow takes 11,456 pages to accomplish.",
-      "tr": "İki çoktan unutulmuş ırk arasında geçen kadim savaşı anlatan, aşırı uzun ve dolambaçlı bir kayıt. Görünüşe göre savaş yalnızca dört muffin ve yarım kilo unun yanlış yere konmasından çıkmış. Bunu anlatmak nasıl oluyorsa 11.456 sayfa sürüyor.",
+      "tr": "İki çoktan unutulmuş ırk arasında geçen kadim savaşı anlatan, aşırı uzun ve dolambaçlı bir kayıt. Görünüşe göre savaş yalnızca dört muffin ile yarım kilo unun usulsüzce alınmasından çıkmış. Bunu anlatmak nasıl oluyorsa 11.456 sayfa sürüyor.",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2298,7 +2310,7 @@
       "asset": "codex/documents/wolfbook.codex",
       "pointer": "/contentPages/0",
       "en": "This coupon entitles the holder - yes, you! - to a life-changing experience. Come on down to Antonio's Bargain Pizzeria, just a short walk from the Protectorate Academy, and enjoy the fabulous value of 3 grande pizzas for the price of two and a half! Don't wait, drop by today!",
-      "tr": "Bu kuponu sunan kişi — evet, sen! — hayatını değiştirecek bir deneyim kazanır. Protectorate Akademisi'nden kısa bir yürüyüş mesafesindeki Antonio'nun Ucuz Pizza'sına uğra; iki buçuk pizza fiyatına üç büyük boy pizzanın muhteşem fırsatından yararlan! Bekleme, bugün gel!",
+      "tr": "Bu kuponu sunan kişi — evet, sen! — hayatını değiştirecek bir deneyim kazanır. Protectorate Akademisi'nden kısa bir yürüyüş mesafesindeki Antonio'nun Ucuz Pizza'sına uğra; iki buçuk pizza fiyatına 3 büyük boy pizzanın muhteşem fırsatından yararlan! Bekleme, bugün gel!",
       "section": "v0.65 kodeks belgeleri"
     },
     {
@@ -2319,7 +2331,7 @@
       "asset": "codex/documents/wolfbook.codex",
       "pointer": "/title",
       "en": "Pixels - 100000",
-      "tr": "Pixel - 100.000",
+      "tr": "Pixel - 100000",
       "section": "v0.65 kodeks belgeleri"
     }
   ]
