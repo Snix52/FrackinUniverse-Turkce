@@ -17,7 +17,6 @@ v0.65.0 Beta itibarıyla:
 - **14.010** toplam yerelleştirilmiş görünür birim
 - **4.745** patch asset
 - **7** raw override asset
-- **7** özgün Ebrar sürprizi oyun dosyası
 - **4.759** toplam hedef asset
 - Statik QA: **PASS**
 - Pinned FU source validation: **PASS**
@@ -57,12 +56,6 @@ Projenin tamamlanan ana kapsamları arasında şunlar bulunuyor:
 - Peglaci yapı, kablo ve Pykrete malzemeleri
 - Bal peteği, altın odun, cam ve balmumu yapı malzemeleri
 - FU kodeks belgeleri ve oyun içi rehberleri
-
-## Ebrar'ın Yıldızı
-
-Bu küçük yıldız lambası, FU Türkçe'yi hazırlayan oyuncunun sevgilisi Ebrar'a sürprizidir. Adı, envanter açıklaması ve inceleme metni hikâyesini oyunda anlatır.
-
-Oyuncu kendi FU gemisine geldiğinde lamba ışınlayıcının yakınındaki uygun bir duvara bir kez yerleştirilir. Alan doluysa betik sonraki ziyaretlerde yeniden dener; mevcut nesneleri kaldırmaz. Eşya ayrıca **1 cam + 1 bakır külçesi** ile temel üretimden yapılabilir. Tarif mevcut karakterlere de açılır.
 
 Bir dosyanın FU kaynak ağacında bulunması tek başına çeviri gerekçesi sayılmıyor. Oyuncuya gerçekten görünen içerik mümkün olduğunca görev, tarif, araştırma, nesne, NPC, script veya runtime bağlantıları üzerinden doğrulanıyor.
 
