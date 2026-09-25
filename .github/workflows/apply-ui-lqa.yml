@@ -41,9 +41,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- tools/ceviriler.json tools/kaynaklar.json tools/v*_translations.json tools/raw_text_translations.json tools/raw_runtime_overrides.json tools/raw_overrides tools/custom_assets.json tools/custom_assets tools/build_validate.py tools/audit_remaining.py tools/tests/test_lua_behavior.py tools/generate_v039.py tools/generate_v042.py tools/generate_v043.py FU_SESSION_CHECKPOINT.md .github/workflows/pr-qa.yml .github/workflows/build-package.yml
-          git add -u -- .github/workflows/lqa-probe.yml .github/workflows/apply-ui-lqa.yml tools/apply_ui_lqa_20260925.py
+          # Workflow edits are published separately by an authorized maintainer.
+          git restore --worktree -- .github/workflows
+          git add -- tools/ceviriler.json tools/kaynaklar.json tools/v*_translations.json tools/raw_text_translations.json tools/raw_runtime_overrides.json tools/raw_overrides tools/custom_assets.json tools/custom_assets tools/build_validate.py tools/audit_remaining.py tools/tests/test_lua_behavior.py tools/generate_v039.py tools/generate_v042.py tools/generate_v043.py FU_SESSION_CHECKPOINT.md
+          git add -u -- tools/apply_ui_lqa_20260925.py
           git diff --cached --check
-          if git diff --cached --name-only | grep -E '^(FU_Turkce/|dist/|tools/test_raporu.json|tools/GELISTIRME.txt)'; then exit 1; fi
+          if git diff --cached --name-only | grep -E '^(FU_Turkce/|dist/|.github/workflows/|tools/test_raporu.json|tools/GELISTIRME.txt)'; then exit 1; fi
           git commit -m "fix: close screenshot-linked Tricorder GPS Mech and radio LQA gaps"
           git push origin HEAD:fix/lqa-tricorder-gps-mech-20260925
