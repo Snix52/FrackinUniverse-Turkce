@@ -170,6 +170,9 @@ def verify_package(path: Path, files: dict[str, bytes], stats: dict) -> None:
             if archive.read('FU_Turkce/' + name) != data:
                 raise ValueError('ZIP/install-tree byte mismatch: ' + name)
     custom = load_custom_assets(TOOLS)
+    missing_custom = set(custom) - set(files)
+    if missing_custom:
+        raise ValueError('Custom asset missing from package: ' + ', '.join(sorted(missing_custom)))
     fields = patches = raw = 0
     for name, data in files.items():
         if name == '_metadata':

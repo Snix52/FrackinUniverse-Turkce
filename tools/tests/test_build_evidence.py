@@ -113,6 +113,11 @@ class EvidenceTests(unittest.TestCase):
         self.save_report()
         evidence.deterministic_zip(self.zip, self.files)
         self.assertEqual(self.build()['custom_game_assets'], 2)
+        missing = dict(self.files)
+        del missing['objects/star.png']
+        evidence.deterministic_zip(self.zip, missing)
+        with self.assertRaisesRegex(ValueError, 'Custom asset missing'):
+            evidence.verify_package(self.zip, missing, self.report)
         (custom / 'objects/star.png').write_bytes(b'changed')
         with self.assertRaisesRegex(ValueError, 'build inputs mismatch'):
             self.build()
