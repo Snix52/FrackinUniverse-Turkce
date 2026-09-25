@@ -373,5 +373,19 @@ class AuditVisibilityTests(unittest.TestCase):
             "zb/researchTree/fu_geology.config", "/strings/research/metals_tungsten/0"
         ))
 
+
+    def test_ship_techstation_dialog_is_sail_scope(self):
+        asset = "objects/ship/fu_sciencetechstationhuman/fu_sciencetechstation.object"
+        self.assertEqual(
+            audit.visible_confidence(
+                asset,
+                ["dialog", "wakePlayer", "0", "0"],
+                "System is down, please reboot.",
+            ),
+            "confirmed",
+        )
+        self.assertEqual(audit.category_for(asset), "Irklar ve SAIL/AI")
+
+
 if __name__ == "__main__":
     unittest.main()
