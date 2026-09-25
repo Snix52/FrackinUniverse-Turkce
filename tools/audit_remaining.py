@@ -289,6 +289,8 @@ def category_for(asset: str) -> str:
         return "Malzeme, tüketilebilir ve diğer eşyalar"
     if path.startswith(("objects/crafting/", "objects/power/", "objects/bees/", "objects/scienceoutpost/", "bees/objects/")):
         return "Makineler, üretim ve dükkân nesneleri"
+    if path.startswith("objects/ship/") and "techstation" in path:
+        return "Irklar ve SAIL/AI"
     if path.startswith("objects/"):
         return "Dünya, dekorasyon ve gemi nesneleri"
     if path.startswith(("species/", "ai/")):
