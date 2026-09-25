@@ -648,6 +648,9 @@ def signed_nums(s):
     return Counter(x.replace(' ','').replace('%','').replace(',','.') for x in SIGNED_NUMBER.findall(COLOR.sub('',s)))
 
 def allowed(a,p):
+    if (a.startswith('objects/ship/') and 'techstation' in a.lower()
+            and re.fullmatch(r'/dialog/(?:wakeUp/[0-4]|wakePlayer/[0-5])/0', p)):
+        return True
     if (a,p) in V065_CODEX_FIELDS:
         return True
     if (a,p) in V064_FOOD_FIELDS:
