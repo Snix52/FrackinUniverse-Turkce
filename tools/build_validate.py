@@ -652,7 +652,14 @@ V0651_UI_LQA_FIELDS = {(r['asset'], r['pointer']) for r in _V0651_UI_LQA['transl
 if len(V0651_UI_LQA_FIELDS) != 11:
     raise ValueError('v0.65.1 UI LQA field inventory drift')
 
+_V0652_SHIP_DIALOG = json.loads(Path(__file__).with_name('v0652_translations.json').read_text(encoding='utf-8'))
+V0652_SHIP_DIALOG_FIELDS = {(r['asset'], r['pointer']) for r in _V0652_SHIP_DIALOG['translations']}
+if len(V0652_SHIP_DIALOG_FIELDS) != 23:
+    raise ValueError('v0.65.2 ship dialogue field inventory drift')
+
 def allowed(a,p):
+    if (a,p) in V0652_SHIP_DIALOG_FIELDS:
+        return True
     if (a,p) in V0651_UI_LQA_FIELDS:
         return True
     if (a.startswith('objects/ship/') and 'techstation' in a.lower()
