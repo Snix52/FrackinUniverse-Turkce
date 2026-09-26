@@ -1107,7 +1107,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe (Beta)',
       'author':'FU Türkçe',
       'version':ledger['translation_version'],
-      'description':"Frackin' Universe için Türkçe yerelleştirme. Araştırma, görevler, üretim, makineler, ekipman ve Ebrar'ın Yıldızı gemi sürprizini içerir.",
+      'description':"Frackin' Universe için Türkçe yerelleştirme. Araştırma, görevler, üretim, makineler, ekipman ve Ebrar'ın Gülü gemi sürprizini içerir.",
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_bytes((json.dumps(metadata,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     for a,p in patches.items():
