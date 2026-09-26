@@ -540,3 +540,9 @@ Oyun içi LQA ayrı bir aşamadır.
 ## 25 Eylül 2026: ekran görüntüsü temelli UI LQA düzeltmeleri
 
 Altı taşan/uzun etiket kısaltıldı. GPS Lua başlıkları ve gemi bilgileri, Mech dinamik durumları, SAIL atmosfer yanıtları, FU karşılama metni ve dört FU katmanlı telsiz mesajı kaynaklarına bağlandı. Mech bitmap İngilizce yazıları yedi kaynak-kilitli görselde temizlenip yerel UI etiketlerine taşındı; yakıt kimlikleri ve hesaplama değerleri korunuyor. Kaynak tarifi tools/ui_lqa_20260925.json, doğrulama tools/check_ui_lqa_20260925.py içindedir. Tam kaynak/CI sonuçları PR ve workflow kaydından kontrol edilir. Oyun içi tekrar testi: NOT TESTED. GPS gezegen sözlüklerindeki özel adlar ve eski değişiklik günlükleri bu dar kapsamın dışındadır.
+
+### 26 Eylül: Ebrar'ın Gülü
+
+- Kullanıcının seçimiyle yıldız görseli, Küçük Prens'ten esinlenen cam fanusta kırmızı güle dönüştürüldü. Imagegen kaynak resmi ve deterministik PowerShell dışa aktarımı `tools/art_sources/ebrar-rose/` ve `tools/prepare_ebrar_rose_art.ps1` içinde. Oyun sprite'ı 24×40, envanter simgesi 16×16; çevresinde yükselen sıcak renkli ışıltı parçacıkları var.
+- `futrebrarstar` kimliği, tarif ve yerleştirme işareti korundu. Aynı kopya kaydı yeniden açınca önceki yıldız güle dönüştü; ikinci nesne oluşmadı. Fanus, değişen ışıltılar ve Türkçe inceleme mesajı Starbound 1.4.4 + FU gemisinde görüldü. Gül veya deployment kaynaklı hata loglanmadı; bağımsız Discord lobby hatası test ortamında devam etti. Asıl kayıtlar kullanılmadı.
+- Katalogda ek düzeltme 0 cümle. Özgün hediyede 3 benzersiz cümle ve 1 nesne adı değişti (9 görünür alan). 216 birim testi ve pinli build PASS; yeni çıktı üzerinde 4 temel Lua / 8 UI testi PASS. Bu görsel test yalnız hediyeyi kapsar; yukarıdaki tüm UI durumlarının LQA durumu değişmedi.

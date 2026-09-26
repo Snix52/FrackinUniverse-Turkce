@@ -1,0 +1,46 @@
+{
+  "animatedParts": {
+    "stateTypes": {},
+    "parts": {
+      "rose": {
+        "properties": {
+          "centered": false,
+          "image": "<partImage>"
+        }
+      }
+    }
+  },
+  "particleEmitters": {
+    "roseSparkles": {
+      "active": true,
+      "emissionRate": 3,
+      "emissionRateVariance": 0.5,
+      "particles": [
+        {
+          "particle": {
+            "type": "ember",
+            "position": [1.5, 2.7],
+            "size": 1,
+            "color": [255, 215, 164, 240],
+            "light": [90, 45, 35],
+            "fade": 0.7,
+            "initialVelocity": [0, 0.8],
+            "finalVelocity": [0, 0.2],
+            "approach": [0, 0.5],
+            "timeToLive": 1.4,
+            "destructionAction": "shrink",
+            "destructionTime": 0.3,
+            "layer": "front",
+            "collidesForeground": false,
+            "variance": {
+              "position": [1.6, 1.4],
+              "initialVelocity": [0.4, 0.3],
+              "size": 0.4,
+              "timeToLive": 0.4
+            }
+          }
+        }
+      ]
+    }
+  }
+}

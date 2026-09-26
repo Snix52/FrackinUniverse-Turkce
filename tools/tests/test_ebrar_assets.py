@@ -17,15 +17,23 @@ class EbrarAssetTests(unittest.TestCase):
         self.assertEqual(obj['objectName'], 'futrebrarstar')
         self.assertIn('Ebrar', obj['shortdescription'])
         self.assertIn('sevgilisi', obj['description'])
-        self.assertIn('Ebrar, bu evrendeki en güzel keşfim sensin.', obj['humanDescription'])
+        self.assertIn('Ebrar, bu evrendeki tek gülüm sensin.', obj['humanDescription'])
+        self.assertIn('Küçük Prens', obj['description'])
         self.assertEqual(obj['orientations'][0]['anchors'], ['background'])
-        for image in ('ebrarstar.png', 'ebrarstarlit.png', 'ebrarstaricon.png'):
+        for image, dimensions in (('ebrarstar.png', (24, 40)), ('ebrarstaricon.png', (16, 16))):
             data = assets[base + image]
             self.assertEqual(data[:8], b'\x89PNG\r\n\x1a\n')
-            self.assertEqual(struct.unpack('>II', data[16:24]), (16, 16))
+            self.assertEqual(struct.unpack('>II', data[16:24]), dimensions)
         self.assertEqual(obj['inventoryIcon'], 'ebrarstaricon.png')
         for layer in obj['orientations'][0]['imageLayers']:
             self.assertIn(base + layer['image'], assets)
+            self.assertFalse(layer.get('fullbright', False))
+        self.assertEqual(obj['animationPosition'], obj['orientations'][0]['imagePosition'])
+        animation = json.loads(assets[base + obj['animation']])
+        self.assertEqual(animation['animatedParts']['parts']['rose']['properties']['image'], '<partImage>')
+        self.assertIn(base + obj['animationParts']['rose'], assets)
+        self.assertTrue(animation['particleEmitters']['roseSparkles']['active'])
+        self.assertGreater(animation['particleEmitters']['roseSparkles']['emissionRate'], 0)
         recipe = json.loads(assets['recipes/emptyhands/futrebrarstar.recipe'])
         self.assertEqual(recipe['output']['item'], obj['objectName'])
         self.assertIn('plain', recipe['groups'])
