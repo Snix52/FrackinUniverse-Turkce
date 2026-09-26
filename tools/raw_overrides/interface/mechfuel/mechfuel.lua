@@ -47,7 +47,7 @@ function lockDisplay(locked)
 	widget.setVisible("imgLockedOverlay",locked)
 	widget.setButtonEnabled("btnUpgrade", not locked)
 	widget.setButtonEnabled("btnEmpty", not locked)
-	widget.setText("lblLocked", locked and "^red;Unauthorized user" or "")
+	widget.setText("lblLocked", locked and "^red;Yetkisiz kullanıcı" or "")
 end
 
 
@@ -92,7 +92,7 @@ function update(dt)
 	if self.maxFuel and self.currentFuel then
 		widget.setText("lblModuleCount", string.format("%.02f", self.currentFuel) .. " / " .. self.maxFuel)
 	else
-		widget.setText("lblModuleCount", "^red;<Loading>^reset;")
+		widget.setText("lblModuleCount", "^red;Yükleniyor^reset;")
 	end
 
 	if self.setItemMessage and self.setItemMessage:finished() then
@@ -233,8 +233,8 @@ function emptyfuel(hidden)
 	if self.currentFuel and ((self.currentFuel > 0) or (self.currentFuel < 0)) then
 		local id = player.id()
 		localFuelType = nil
-		widget.setText("lblEfficiency", "^red;Emptying Fuel.^white;")
-		widget.setText("lblFuelType", "CURRENT FUEL: ^red;EMPTY^reset;")
+		widget.setText("lblEfficiency", "^red;Yakıt boşaltılıyor.^white;")
+		widget.setText("lblFuelType", "YAKIT: ^red;BOŞ^reset;")
 		world.sendEntityMessage(id, "setFuelType", nil)
 		world.sendEntityMessage(id, "emptyQuestFuelCount")
 		self.currentFuel = 0
@@ -270,7 +270,7 @@ function setEfficiencyText(currentItem)
 	end
 
 	local fuelData = self.fuels[currentItem.name]
-	local effeciencyText = "Detected fuel type: ^<color>;<fuelName>^white;, Efficiency: x<fuelMultiplier>"	--Make json value
+	local effeciencyText = "Yakıt: ^<color>;<fuelName>^white;, Verim: x<fuelMultiplier>"	--Make json value
 	local currentItemCfg = root.itemConfig(currentItem.name).config
 	if fuelData then
 		widget.setText("lblEfficiency", effeciencyText:gsub("<color>", fuelData.textColor or "white"):gsub("<fuelName>", currentItemCfg.shortdescription):gsub("<fuelMultiplier>", fuelData.fuelMultiplier))
@@ -288,7 +288,7 @@ function fuelCountPreview(item)
 	end
 
 	if (not self.currentFuel) or (not self.maxFuel) then
-		widget.setText("lblModuleCount", "^red;<Loading>^reset;")
+		widget.setText("lblModuleCount", "^red;Yükleniyor^reset;")
 		return
 	end
 
@@ -322,8 +322,8 @@ function setFuelTypeText(type)
 	local fuelTypeData = self.fuelTypes[type]
 	if fuelTypeData then
 		local textColor = fuelTypeData.textColor
-		widget.setText("lblFuelType", "CURRENT FUEL: ^" .. textColor .. ";" .. type)
+		widget.setText("lblFuelType", "YAKIT: ^" .. textColor .. ";" .. (fuelTypeData.displayName or type))
 	else
-		widget.setText("lblFuelType", "CURRENT FUEL: ^red;EMPTY^reset;")
+		widget.setText("lblFuelType", "YAKIT: ^red;BOŞ^reset;")
 	end
 end

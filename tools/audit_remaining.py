@@ -217,6 +217,8 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
     visible_text = re.sub(r"\^[^;\s]*;", "", value).strip()
     if not visible_text or not ALPHA_RE.search(visible_text):
         return None
+    if asset == "_FUversioning.config" and parts == ["welcome"]:
+        return "confirmed"
     key = parts[-1].lower() if parts else ""
     ancestors = {part.lower() for part in parts[:-1]}
     field_pointer = pointer(parts)
@@ -270,6 +272,8 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
 
 def category_for(asset: str) -> str:
     path = asset.lower()
+    if path == "_fuversioning.config":
+        return "Arayüz"
     suffix = PurePosixPath(path).suffix.lower()
     if suffix in {".item", ".matitem", ".consumable", ".augment", ".thrownitem", ".liqitem", ".blueprint"}:
         return "Malzeme, tüketilebilir ve diğer eşyalar"

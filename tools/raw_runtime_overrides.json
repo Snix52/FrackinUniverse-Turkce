@@ -50,6 +50,85 @@
           "expected_count": 1
         }
       ]
+    },
+    {
+      "asset": "interface/mechfuel/mechfuel.lua",
+      "source_blob_sha": "77d8f0b616e9c70e8b59ca9d2a991be3d8d4876f",
+      "reason": "Display-only: Loading is a literal status label, not a placeholder. Fuel IDs stay unchanged; displayName is used only by the label renderer.",
+      "replacements": [
+        {
+          "old": "widget.setText(\"lblModuleCount\", \"^red;<Loading>^reset;\")",
+          "new": "widget.setText(\"lblModuleCount\", \"^red;Yükleniyor^reset;\")",
+          "expected_count": 2
+        },
+        {
+          "old": ".. \";\" .. type)",
+          "new": ".. \";\" .. (fuelTypeData.displayName or type))",
+          "expected_count": 1
+        }
+      ]
+    },
+    {
+      "asset": "interface/mechfuel/mechfuel.config",
+      "source_blob_sha": "92781a443f0a0feea9660f14376dc9646fc59127",
+      "reason": "Source-bound presentation override: text-free FU button/legend art with native Turkish labels; all fuel IDs, rates, callbacks and gameplay values are unchanged.",
+      "replacements": [
+        {
+          "old": "\"/interface/mechfuel/body.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/body.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "\"/interface/mechfuel/deploy.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/deploy.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "\"/interface/mechfuel/deployhover.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/deployhover.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "\"/interface/mechfuel/deploypressed.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/deploypressed.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "\"/interface/mechfuel/emptyfuel.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/emptyfuel.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "\"/interface/mechfuel/emptyfuelhover.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/emptyfuelhover.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "\"/interface/mechfuel/emptyfuelpressed.png\"",
+          "new": "\"/interface/fu_turkce/mechfuel/emptyfuelpressed.png\"",
+          "expected_count": 1
+        },
+        {
+          "old": "{\n      \"type\" : \"button\",\n      \"base\" : \"/interface/fu_turkce/mechfuel/deploy.png\",\n      \"hover\" : \"/interface/fu_turkce/mechfuel/deployhover.png\",\n      \"pressed\" : \"/interface/fu_turkce/mechfuel/deploypressed.png\",\n      \"pressedOffset\" : [0, 0],\n      \"position\" : [192, 38],\n\t  \"zlevel\" : 1,\n      \"callback\" : \"fuel\"\n    }",
+          "new": "{\n      \"caption\" : \"DOLDUR\",\n      \"type\" : \"button\",\n      \"base\" : \"/interface/fu_turkce/mechfuel/deploy.png\",\n      \"hover\" : \"/interface/fu_turkce/mechfuel/deployhover.png\",\n      \"pressed\" : \"/interface/fu_turkce/mechfuel/deploypressed.png\",\n      \"pressedOffset\" : [0, 0],\n      \"position\" : [192, 38],\n\t  \"zlevel\" : 1,\n      \"callback\" : \"fuel\"\n    }",
+          "expected_count": 1
+        },
+        {
+          "old": "{\n      \"type\" : \"button\",\n      \"base\" : \"/interface/fu_turkce/mechfuel/emptyfuel.png\",\n      \"hover\" : \"/interface/fu_turkce/mechfuel/emptyfuelhover.png\",\n      \"pressed\" : \"/interface/fu_turkce/mechfuel/emptyfuelpressed.png\",\n      \"pressedOffset\" : [0, 0],\n      \"position\" : [5, 85],\n\t  \"zlevel\" : 1,\n      \"callback\" : \"emptyfuel\"\n    }",
+          "new": "{\n      \"caption\" : \"BOŞALT\",\n      \"type\" : \"button\",\n      \"base\" : \"/interface/fu_turkce/mechfuel/emptyfuel.png\",\n      \"hover\" : \"/interface/fu_turkce/mechfuel/emptyfuelhover.png\",\n      \"pressed\" : \"/interface/fu_turkce/mechfuel/emptyfuelpressed.png\",\n      \"pressedOffset\" : [0, 0],\n      \"position\" : [5, 85],\n\t  \"zlevel\" : 1,\n      \"callback\" : \"emptyfuel\"\n    }",
+          "expected_count": 1
+        },
+        {
+          "old": "{\n    \"Oil\" : {\n\t  \"textColor\" : \"gray\"\n\t},\n\t\"Erchius\" : {\n\t  \"textColor\" : \"#bf2fe2\"\n\t},\n\t\"Mech fuel\" : {\n\t  \"textColor\" : \"yellow\"\n\t},\n\t\"Unrefined\" : {\n\t  \"textColor\" : \"orange\"\n\t},\n\t\"Isotope\" : {\n\t  \"textColor\" : \"#fcff00\"\n\t},\n\t\"Quantum\" : {\n\t  \"textColor\" : \"#00e3ff\"\n\t},\n\t\"Bio\" : {\n\t  \"textColor\" : \"#00e3ff\"\n\t},\n\t\"Core\" : {\n\t  \"textColor\" : \"green\"\n\t}\n  }",
+          "new": "{\n  \"Oil\": {\n    \"textColor\": \"gray\",\n    \"displayName\": \"Yağ\"\n  },\n  \"Erchius\": {\n    \"textColor\": \"#bf2fe2\",\n    \"displayName\": \"Erchius\"\n  },\n  \"Mech fuel\": {\n    \"textColor\": \"yellow\",\n    \"displayName\": \"Mech Yakıtı\"\n  },\n  \"Unrefined\": {\n    \"textColor\": \"orange\",\n    \"displayName\": \"Rafine Edilmemiş\"\n  },\n  \"Isotope\": {\n    \"textColor\": \"#fcff00\",\n    \"displayName\": \"İzotop\"\n  },\n  \"Quantum\": {\n    \"textColor\": \"#00e3ff\",\n    \"displayName\": \"Kuantum\"\n  },\n  \"Bio\": {\n    \"textColor\": \"#00e3ff\",\n    \"displayName\": \"Biyoyakıt\"\n  },\n  \"Core\": {\n    \"textColor\": \"green\",\n    \"displayName\": \"Çekirdek\"\n  }\n}",
+          "expected_count": 1
+        },
+        {
+          "old": "{\n  \"openWithInventory\" : true,\n  \"startX\" : 100,\n  \"startY\" : 180,\n  \"gui\" : {",
+          "new": "{\n  \"openWithInventory\" : true,\n  \"startX\" : 100,\n  \"startY\" : 180,\n  \"gui\" : {\n\"fuTrFuelLegend0\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [238, 155], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 6, \"value\": \"YAKIT TÜRLERİ\"},\n\"fuTrFuelLegend1\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [177, 126], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"YAĞ\"},\n\"fuTrFuelLegend2\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [202, 126], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"MECH YAKITI\"},\n\"fuTrFuelLegend3\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [235, 126], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"ERCHIUS\"},\n\"fuTrFuelLegend4\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [282, 126], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"İZOTOPLAR\"},\n\"fuTrFuelLegend5\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [196, 101], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"BİYOYAKIT\"},\n\"fuTrFuelLegend6\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [234, 101], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"KEDİ\"},\n\"fuTrFuelLegend7\": {\"type\": \"label\", \"zlevel\": 1, \"position\": [275, 101], \"hAnchor\": \"mid\", \"vAnchor\": \"mid\", \"fontSize\": 5, \"value\": \"GÜÇ ÇEKİRDEKLERİ\"},\n",
+          "expected_count": 1
+        }
+      ]
     }
   ]
 }

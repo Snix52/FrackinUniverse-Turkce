@@ -84,7 +84,7 @@ class LuaBehaviorTests(unittest.TestCase):
     def test_mech_fuel_8_scenarios(self):
         self.scenarios('interface/mechfuel/mechfuel.lua','mechfuel.lua',8)
 
-    def test_ebrar_ship_11_scenarios(self):
+    def test_ebrar_ship_12_scenarios(self):
         asset = 'scripts/fu_tr_ebrar_ship.lua'
         source = MOD / asset
         if not source.is_file():
@@ -92,7 +92,7 @@ class LuaBehaviorTests(unittest.TestCase):
         fixture = (FIXTURES / 'ebrar_ship.lua').read_text(encoding='utf-8')
         before, after = fixture.split('-- SCRIPT UNDER TEST', 1)
         rows = self.execute(before + source.read_text(encoding='utf-8') + after).splitlines()
-        self.assertEqual(len(rows), 11)
+        self.assertEqual(len(rows), 12)
         for line in rows:
             name, status, detail = line.split('\t', 2)
             with self.subTest(name=name):
@@ -101,7 +101,7 @@ class LuaBehaviorTests(unittest.TestCase):
     def test_every_raw_override_is_valid_lua(self):
         files=sorted(MOD.rglob('*.lua'))
         expected={s['asset'] for name in ('raw_text_translations.json','raw_runtime_overrides.json')
-                  for s in json.loads((TOOLS/name).read_text(encoding='utf-8'))['assets']}
+                  for s in json.loads((TOOLS/name).read_text(encoding='utf-8'))['assets'] if s['asset'].endswith('.lua')}
         if MOD.resolve() != (TOOLS/'raw_overrides').resolve():
             expected.update(name for name in load_custom_assets(TOOLS) if name.endswith('.lua'))
         self.assertEqual({p.relative_to(MOD).as_posix() for p in files},expected)
