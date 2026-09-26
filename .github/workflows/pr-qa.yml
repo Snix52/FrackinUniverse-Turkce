@@ -77,5 +77,15 @@ jobs:
         run: |
           python -m unittest discover -s tools/tests -p 'test_lua_behavior.py' -v
           python -m unittest discover -s tools/tests -p 'test_ui_lqa_20260925.py' -v
+      - name: Verify publication package before merge
+        run: |
+          python tools/write_build_evidence.py \
+            --zip build_output/qa-package.zip \
+            --output build_output/package-evidence.json \
+            --mod-dir build_output/FU_Turkce \
+            --install-dir build_output/FU_Turkce \
+            --build-report build_output/validation.json \
+            --translation-source-commit "$(git rev-parse HEAD)" \
+            --workflow-run-id "$GITHUB_RUN_ID" --create-zip
       - name: Check whitespace and conflict markers
         run: git diff --check

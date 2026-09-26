@@ -194,6 +194,22 @@ def verify_package(path: Path, files: dict[str, bytes], stats: dict) -> None:
         raise ValueError('Build report total asset count mismatch')
 
 
+def verify_runtime_overrides(files: dict[str, bytes]) -> None:
+    manifest = TOOLS / 'raw_runtime_overrides.json'
+    if not manifest.is_file():
+        return
+    for spec in read_json(manifest).get('assets', []):
+        asset = spec['asset']
+        template = TOOLS / 'raw_overrides' / asset
+        # Replacements are ordered: a later rule can extend an earlier result,
+        # and an insertion may deliberately retain its old prefix. The pinned
+        # build has verified the complete template by replaying those rules.
+        # Bind the entire packaged file to that template, not isolated snippets.
+        expected = template.read_text(encoding='utf-8-sig').encode('utf-8')
+        if files.get(asset) != expected:
+            raise ValueError('Packaged runtime override mismatch: ' + asset)
+
+
 def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path: Path,
                    source_commit: str, run_id: str, create_zip: bool = False) -> dict:
     if not re.fullmatch(r'[0-9a-f]{40}', source_commit):
@@ -232,14 +248,7 @@ def build_evidence(zip_path: Path, mod_dir: Path, install_dir: Path, report_path
             raw_count += count
     if raw_count != report['raw_strings']:
         raise ValueError('Raw string count mismatch')
-    runtime_manifest = TOOLS / 'raw_runtime_overrides.json'
-    if runtime_manifest.is_file():
-        for spec in read_json(runtime_manifest).get('assets', []):
-            text = files[spec['asset']].decode('utf-8')
-            for replacement in spec.get('replacements', []):
-                count = int(replacement.get('expected_count', 1))
-                if text.count(replacement['new']) != count or replacement['old'] in text:
-                    raise ValueError('Packaged runtime override mismatch: ' + spec['asset'])
+    verify_runtime_overrides(files)
     data = zip_path.read_bytes()
     return {'schema_version': 2, 'generated_at_utc': datetime.now(timezone.utc).isoformat(),
             'workflow_run_id': str(run_id), 'source_commit': source_commit,

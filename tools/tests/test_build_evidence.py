@@ -122,6 +122,25 @@ class EvidenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'build inputs mismatch'):
             self.build()
 
+    def test_runtime_insertions_keep_prefix_but_package_must_match_full_template(self):
+        asset = 'interface/mechfuel/mechfuel.config'
+        original = '{"gui": {'
+        complete = original + '"caption": "DOLDUR"}}'
+        template = self.tools / 'raw_overrides' / asset
+        template.parent.mkdir(parents=True)
+        template.write_text(complete, encoding='utf-8')
+        evidence.write_json(self.tools / 'raw_runtime_overrides.json', {
+            'assets': [{'asset': asset, 'replacements': [
+                {'old': original, 'new': complete, 'expected_count': 1}]}]})
+        evidence.verify_runtime_overrides({asset: complete.encode('utf-8')})
+        for wrong in (original, complete + original,
+                      complete.replace('DOLDUR', 'FUEL'), complete + ' '):
+            with self.subTest(wrong=wrong):
+                with self.assertRaisesRegex(ValueError, 'runtime override mismatch'):
+                    evidence.verify_runtime_overrides({asset: wrong.encode('utf-8')})
+        with self.assertRaisesRegex(ValueError, 'runtime override mismatch'):
+            evidence.verify_runtime_overrides({})
+
     def test_root_mismatch_rejected(self):
         (self.install / 'item.patch').write_bytes(b'[]')
         with self.assertRaisesRegex(ValueError, 'Root/install-tree'):
