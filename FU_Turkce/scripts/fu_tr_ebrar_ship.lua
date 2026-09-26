@@ -19,7 +19,11 @@ end
 local function tryPlaceStar()
   if not ownShip() or world.getProperty(placedProperty) == true then return end
 
-  local nearby = world.objectQuery(mcontroller.position(), 96, {order = "nearest"})
+  -- Deployment scripts have player/world bindings, but no mcontroller table.
+  -- The player entity may not be visible yet while entering a world; retry later.
+  local playerPosition = world.entityPosition(player.id())
+  if not playerPosition then return end
+  local nearby = world.objectQuery(playerPosition, 96, {order = "nearest"})
   local teleporter
   for _, id in ipairs(nearby) do
     local name = world.entityName(id)
