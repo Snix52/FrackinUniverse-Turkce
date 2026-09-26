@@ -12,12 +12,14 @@ Bu politika, yeni içerik paketlerinin kapsamını belirler. Teknik doğruluk, o
 ## Kapsam seçimi
 
 1. Güncel main kataloğu ve pinned kaynak üzerinden kalan görünür adayları yeniden çıkar.
+   [Oynanış önceliği ve paket hazırlığı](TRANSLATION_PLANNING.md) aracını kullan; önce P0, sonra P1, P2 ve P3 ailelerini değerlendir. Öncelik kuralları başlangıç tahminidir; oyuncunun gördüğü bağlam ve canlı erişim kanıtıyla doğrula.
 2. Önce tek bir oyuncu akışı, içerik ailesi veya yakın temalı grup seç; adayları sayı uğruna farklı konulardan karıştırma.
 3. Alan ve benzersiz kaynak metin sayılarını birlikte hesapla. Hedefe ulaşmak için gerekiyorsa aynı temadaki komşu aileleri ekle.
 4. Yeni kapsamda tekrar edecek özel ad ve terimleri, özellikle önceki sürümlerde yeniden düzeltilenleri, bağlamıyla denetle. Kesin karşılığı LOCKED olarak kaydet; ad ve cümle içindeki yanlış varyantı QA testiyle reddet. Belirsiz kararı REVIEW durumunda tut.
 5. Exact-source manifesti, katalog allowlisti ve CI kaynak kapısını aynı kapsamı tarif edecek şekilde güncelle.
 6. Çeviriyi çalışma sırasında küçük, bağlamı koruyan dilimlerde ele al; yayımlanabilir adayda tutarlı tema ve kaynak manifesti altında birleştir.
 7. Sol doğrulama ve yayın sorumluluğunu sürdürür. Luna adayı kaynak pinini ve manifestini hazırlar; doğrulanmamış paketi yayımlanmış gibi işaretlemez.
+8. Kaynak, katalog, LOCKED veya QA kuralları değiştiğinde hazırlık paketini yeniden üret. Bağlam gruplarının her yeni/değişen Türkçe karşılığını Sol inceler; bütün tekrar alanları teknik QA'dan geçer. İlk paket için çeviri/inceleme sürelerini ve düzeltme sayısını kaydet; ölçülmemiş hız kazancı iddia etme.
 
 ## İstisnalar
 

@@ -16,7 +16,7 @@ import argparse
 import json
 import re
 from collections import Counter, defaultdict
-from dataclasses import dataclass, replace
+from dataclasses import asdict, dataclass, replace
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
@@ -229,6 +229,19 @@ def visible_confidence(asset: str, parts: list[str], value: str) -> str | None:
     configured_keys = {str(item).lower() for item in visible_container_keys.get(parts[0], [])} if parts else set()
     if parts and ("*" in configured_keys or key in configured_keys) and not looks_like_resource(value):
         return "confirmed"
+    if parts and parts[0] == "gui" and key in {
+        "callback", "rightclickcallback", "enterkey", "hanchor", "vanchor", "color",
+    }:
+        # Widget wiring, alignment and color are engine values, even in text widgets.
+        return None
+    if asset.endswith(".questtemplate") and len(parts) >= 2 and parts[0] == "scriptConfig":
+        if parts[1] in {
+            "portraits", "associatedMission", "followUp", "giveBlueprints",
+            "giveSpeciesBlueprints", "equipTech", "showTech", "initialCompassTarget",
+            "BYOSRewards", "caveUid", "shipUpgrade2",
+        } or parts[:3] == ["scriptConfig", "outpostBookmark2", "target"]:
+            # Quest routing, rewards, portraits and world targets are identifiers.
+            return None
     if (key == "value" and len(parts) >= 2 and str(parts[-2]).lower() == "path"
             and "/" in value and re.fullmatch(r"[A-Za-z0-9_./-]+", value.strip())):
         return None
@@ -476,7 +489,7 @@ LUA_DISPLAY_CALLS = (
 )
 
 
-def audit_lua(source: Path, raw_catalog: Path) -> dict[str, Any]:
+def audit_lua(source: Path, raw_catalog: Path, *, include_rows: bool = False) -> dict[str, Any]:
     translated = load_raw_lua_translations(raw_catalog)
     rows: list[dict[str, Any]] = []
     for path in sorted(source.rglob("*.lua")):
@@ -526,18 +539,19 @@ def audit_lua(source: Path, raw_catalog: Path) -> dict[str, Any]:
             rows.append({
                 "asset": rel.as_posix(),
                 "line": line_number,
-                "source": clean[:500],
+                "source": clean if include_rows else clean[:500],
             })
     return {
         "detected_remaining_literals": len(rows),
         "assets": len({row["asset"] for row in rows}),
         "known_translated_literals": len(translated),
         "samples": rows[:100],
+        **({"rows": rows} if include_rows else {}),
         "scope_note": "Heuristic review pool for direct widget/canvas/NPC display calls; not a full Lua semantic analysis.",
     }
 
 
-def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
+def audit(source: Path, catalog_path: Path, *, include_rows: bool = False) -> dict[str, Any]:
     translated, catalog_rows = load_translations(catalog_path)
     candidates: dict[tuple[str, str], Candidate] = {}
     parse_failures: list[dict[str, str]] = []
@@ -714,7 +728,10 @@ def audit(source: Path, catalog_path: Path) -> dict[str, Any]:
             {"asset": asset, "pointer": field_pointer}
             for asset, field_pointer in sorted(translated_not_found)
         ],
-        "lua_review": audit_lua(source, catalog_path.with_name("raw_text_translations.json")),
+        "lua_review": audit_lua(source, catalog_path.with_name("raw_text_translations.json"), include_rows=include_rows),
+        **({"remaining_rows": [asdict(row) for row in sorted(
+            [*remaining_confirmed.values(), *remaining_review.values()],
+            key=lambda row: (row.asset, row.pointer))]} if include_rows else {}),
     }
     return result
 

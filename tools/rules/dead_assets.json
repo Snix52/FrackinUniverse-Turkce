@@ -187,6 +187,8 @@
     "AUDIT_EXCLUDED_PATHS": {
       "type": "set",
       "value": [
+        "frackinship/quests/fu_byos.questtemplate",
+        "frackinship/quests/fu_shipupgrades.questtemplate",
         "metagui/panes/fu/example.ui",
         "interface/scripted/mmupgrade/mmupgradegui.original.config",
         "interface/scripted/sbvn/games/cthululove/deepone.sbvn",
@@ -281,6 +283,9 @@
     "AUDIT_VISIBLE_PATH_PREFIXES": {
       "type": "dict_of_sets",
       "value": {
+        "quests/story/gaterepair.questtemplate": [
+          "/scriptConfig/outpostBookmark2/bookmarkName"
+        ],
         "interface/cockpit/cockpit.config": [
           "/clusterInfoBox/viewButtonCaption",
           "/clusterMoons",

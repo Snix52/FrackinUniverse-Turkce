@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "note": "Initial gameplay priorities; not measured player encounter frequency. Review visibility and runtime reachability before translation.",
+  "levels": {"P0": "İlerleme ve kritik yönlendirme", "P1": "Sık kullanılan sistemler", "P2": "Ekipman, keşif ve konuşmalar", "P3": "Dekorasyon, atmosfer ve arşiv metinleri"},
+  "rules": [
+    {"id": "progression", "priority": "P0", "assets": ["quests/*", "frackinship/quests/*", "zb/researchTree/*"], "reason": "Görev/araştırma ilerlemesini anlatan metin; canlı erişim ayrıca doğrulanır."},
+    {"id": "quest-objects", "priority": "P1", "assets": ["objects/questmaps/*", "objects/questturnins/*"], "reason": "Görevle ilişkili nesne; adı/açıklaması bulmayı kolaylaştırır, canlı erişim ayrıca doğrulanır."},
+    {"id": "critical-ui", "priority": "P0", "assets": ["interface/*", "zb/*", "objects/crafting/*"], "pointer": "(?i)(warning|error|failure|requirement|fuel|oxygen|radiation|hazard)", "reason": "Uyarı veya sistem gereksinimi alanı; anlamı yanlış anlaşılırsa oyuncu kararını etkileyebilir."},
+    {"id": "core-ui", "priority": "P1", "assets": ["interface/*", "zb/newSail/*", "zb/gps/*", "zb/weaponupgrade/*", "fu_metagui/*", "metagui/*"], "reason": "Oyuncunun kullandığı arayüz; sıklık için ilk tahmin."},
+    {"id": "sail-dialogue", "priority": "P1", "assets": ["ai/*", "species/*", "objects/ship/*"], "pointer": "(?i)(dialog|wake|charcreation|chargen|tooltip|text|message)", "reason": "S.A.I.L. veya karakter yönlendirmesi; klasörden bağımsız ilgili alanlar."},
+    {"id": "machines", "priority": "P1", "assets": ["objects/crafting/*", "objects/power/*", "objects/wired/*", "objects/farmables/*", "objects/generators/*", "objects/kheAA/*", "objects/mechrepair/*", "objects/augmentextractor/*", "objects/teleporter/*", "objects/spacestationguiconsole/*", "objects/smartbox/*", "bees/*"], "reason": "Üretim, enerji veya yetiştirme sistemi; tarif/araştırma bağlantısı gerekli."},
+    {"id": "archive", "priority": "P3", "assets": ["zb/updateInfoWindow/*", "codex/*", "cinematics/*", "objects/themed/*", "objects/decorative/*"], "reason": "İlk tahmin: arşiv, anlatı veya dekorasyon; mekanik açıklayan satırlar incelemede yükseltilebilir."},
+    {"id": "equipment", "priority": "P2", "assets": ["items/*", "monsters/*", "stats/*", "tech/*", "tiles/*", "liquids/*"], "reason": "Ekipman, malzeme veya keşif; kademe ve erişim incelemede doğrulanır."},
+    {"id": "dialogue", "priority": "P2", "assets": ["dialog/*", "npcs/*", "radiomessages/*", "objects/ship/*"], "reason": "Karşılaşılan konuşma veya gemi metni; konuşmacı bağlamı korunur."},
+    {"id": "world-objects", "priority": "P3", "assets": ["objects/*", "dungeons/*"], "reason": "Dünya nesnesi için başlangıç önceliği; işlevsel nesneler incelemede yükseltilebilir."}
+  ]
+}

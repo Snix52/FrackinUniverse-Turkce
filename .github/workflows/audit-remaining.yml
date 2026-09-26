@@ -14,6 +14,12 @@ on:
       - "tools/write_build_evidence.py"
       - "tools/rule_data.py"
       - "tools/qa_raw.py"
+      - "tools/qa_integrity.py"
+      - "tools/plan_translation.py"
+      - "tools/translation_priorities.json"
+      - "tools/translation_memory_exceptions.json"
+      - "tools/locked_terms.json"
+      - "tools/tests/test_translation_planning.py"
       - ".github/workflows/audit-remaining.yml"
 
 concurrency:
@@ -46,6 +52,12 @@ jobs:
 
       - name: Audit remaining player-visible strings
         run: python tools/audit_remaining.py --source fu_source
+
+      - name: Test translation planning safety
+        run: python -m unittest discover -s tools/tests -p test_translation_planning.py -v
+
+      - name: Prepare gameplay queue and draft packet
+        run: python tools/plan_translation.py --source fu_source --output audit_output/planning
 
       - name: Upload audit report
         uses: actions/upload-artifact@v4
