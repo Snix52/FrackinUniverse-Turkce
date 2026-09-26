@@ -10,6 +10,7 @@ local function reset()
     shipLevel = 1,
     currentWorld = "ship:owner",
     ownWorld = "ship:owner",
+    playerPosition = {100, 100},
     names = {[10] = "fu_byosteleporter"},
     positions = {[10] = {100, 100}},
     objects = {10},
@@ -40,7 +41,10 @@ world = {
     return state.objects
   end,
   entityName = function(id) return state.names[id] end,
-  entityPosition = function(id) return state.positions[id] end,
+  entityPosition = function(id)
+    if id == 1 then return state.playerPosition end
+    return state.positions[id]
+  end,
   material = function(_, layer)
     assert(layer == "background")
     return state.background
@@ -61,6 +65,7 @@ world = {
   end
 }
 player = {
+  id = function() return 1 end,
   worldId = function() return state.currentWorld end,
   ownShipWorldId = function() return state.ownWorld end,
   giveBlueprint = function(item)
@@ -68,7 +73,8 @@ player = {
     state.blueprintCalls = state.blueprintCalls + 1
   end
 }
-mcontroller = {position = function() return {100, 100} end}
+-- Starbound player deployment does not expose mcontroller.
+mcontroller = nil
 sb = {logWarn = function() state.warnings = state.warnings + 1 end}
 
 -- SCRIPT UNDER TEST
@@ -108,6 +114,15 @@ check("ship-id-not-ready-retries", function()
   update(1)
   assert(state.placeCalls == 0)
   state.ownWorld = state.currentWorld
+  update(10)
+  assert(state.placeCalls == 1 and state.marked == true)
+end)
+
+check("player-entity-not-ready-retries", function()
+  state.playerPosition = nil
+  update(1)
+  assert(state.placeCalls == 0 and state.warnings == 0)
+  state.playerPosition = {100, 100}
   update(10)
   assert(state.placeCalls == 1 and state.marked == true)
 end)

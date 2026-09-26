@@ -61,7 +61,7 @@ def rebuild_raw(source: Path, assets: set[str]) -> dict[str, str]:
 
 def check(source: Path) -> dict:
     from write_build_evidence import verify_source
-    from ui_lqa_assets import render_images, verify_config, config_replacements
+    from ui_lqa_assets import render_images, verify_config, config_replacements, same_image_pixels
     import build_validate as build
     verify_source(source)
     spec = read(SPEC)
@@ -118,7 +118,7 @@ def check(source: Path) -> dict:
     if runtime['replacements'] != config_replacements(original_config_text, spec, labels):
         raise ValueError('Mech config source recipe differs')
     for asset, content in images.items():
-        if (TOOLS / 'custom_assets' / asset).read_bytes() != content:
+        if not same_image_pixels((TOOLS / 'custom_assets' / asset).read_bytes(), content):
             raise ValueError('UI image is not reproducible: ' + asset)
     return dict(structured_fields=len(rows), new_structured_fields=5,
                 shortened_labels=6, raw_literal_replacements=sum(len(x) for x in spec['raw_strings'].values()),

@@ -21,6 +21,15 @@ def blob_sha(raw: bytes) -> str:
     return hashlib.sha1(f'blob {len(raw)}\0'.encode() + raw).hexdigest()
 
 
+def same_image_pixels(actual: bytes, expected: bytes) -> bool:
+    """PNG compression may differ across OS/zlib builds; artwork must not."""
+    from PIL import Image
+    with Image.open(io.BytesIO(actual)) as left, Image.open(io.BytesIO(expected)) as right:
+        return (left.format == right.format == 'PNG'
+                and left.mode == right.mode and left.size == right.size
+                and left.tobytes() == right.tobytes())
+
+
 def source_bytes(source: Path, path: str, expected: str | None = None) -> bytes:
     raw = (source / path).read_bytes()
     if expected and blob_sha(raw) != expected:

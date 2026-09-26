@@ -1,5 +1,6 @@
 """Screenshot-linked source regressions. Host stubs are not in-game LQA."""
 import json
+import io
 import os
 import struct
 import sys
@@ -18,6 +19,21 @@ def read(path):
 
 
 class UiLqaSourceTests(unittest.TestCase):
+    def test_png_encoding_may_differ_but_pixel_or_size_changes_fail(self):
+        from PIL import Image
+        from ui_lqa_assets import same_image_pixels
+        art = Image.new('RGBA', (16, 16), (1, 9, 21, 255))
+        def encode(image, level):
+            stream = io.BytesIO()
+            image.save(stream, format='PNG', compress_level=level)
+            return stream.getvalue()
+        uncompressed, compressed = encode(art, 0), encode(art, 9)
+        self.assertNotEqual(uncompressed, compressed)
+        self.assertTrue(same_image_pixels(uncompressed, compressed))
+        art.putpixel((0, 0), (255, 255, 255, 255))
+        self.assertFalse(same_image_pixels(uncompressed, encode(art, 9)))
+        self.assertFalse(same_image_pixels(uncompressed, encode(art.crop((0, 0, 8, 8)), 9)))
+
     def test_manifest_and_short_labels_match_catalog(self):
         spec = read(TOOLS / 'ui_lqa_20260925.json')
         rows = read(TOOLS / 'v0651_translations.json')['translations']
