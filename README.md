@@ -1,6 +1,8 @@
 # Frackin' Universe Türkçe
 
-Frackin' Universe için hazırlanan gayriresmî Türkçe yerelleştirme projesi.
+Starbound için Frackin' Universe moduna hazırlanan gayriresmî Türkçe yama ve yerelleştirme projesi.
+
+**Steam Workshop:** [Frackin' Universe Türkçe [TR] - Snix](https://steamcommunity.com/sharedfiles/filedetails/?id=3805257011)
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
@@ -110,9 +112,15 @@ v0.46.1-v0.46.3 bakımında Jungle ve görev/konum görünen adları geriye dön
 
 ## Kurulum
 
+### Steam Workshop
+
+[Steam Workshop sayfasından](https://steamcommunity.com/sharedfiles/filedetails/?id=3805257011) yamaya abone olabilirsin.
+
+### Manuel kurulum
+
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
-3. [Güncel beta paketini](dist/FU_Turkce_v0.60.0_Beta.zip) indirip çıkar.
+3. [Güncel beta paketini](dist/FU_Turkce_v0.65.0_Beta.zip) indirip çıkar.
 4. Eski `FU_Turkce` kurulumunu `mods` dışına yedekle; yeni paketteki `FU_Turkce` klasörünü `mods` içine temiz kurulum olarak kopyala. Klasörleri birleştirmek kaldırılan eski yamaları oyunda bırakabilir.
 5. Son yol şu şekilde görünmeli:
 
@@ -122,7 +130,7 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
-Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.60.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
+Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.65.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
 
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 
