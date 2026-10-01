@@ -622,6 +622,15 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Haiku | NPC diyalogları / kavram | Kavram | Haiku | - | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
 | Banana Rum | NPC diyalogları / kavram | Kavram | Muz Romu | Banana Rum | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
 | Opposable Thumb / Opposable Thumbs | NPC diyalogları / kavram | Kavram | Kavrayıcı Başparmak | karşılıklı başparmak | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Pharitu | Pharitu diyalog özel adları | Özel ad | Pharitu | - | LOCKED | v0.68: pinli dialog/converse.config.patch adları; kaynak yazımı korunur. |
+| Myphis | Pharitu diyalog özel adları | Özel ad | Myphis | - | LOCKED | v0.68: pinli dialog/converse.config.patch adları; kaynak yazımı korunur. |
+| Ma'ez | Pharitu diyalog özel adları | Özel ad | Ma'ez | - | LOCKED | v0.68: pinli dialog/converse.config.patch adları; kaynak yazımı korunur. |
+| Avolite Crystal / Avolite Crystals | Diyalog kavramı veya lakabı | Kavram | Avolite Kristali | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
+| Glyph / Glyphs | Diyalog kavramı veya lakabı | Kavram | Glif | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
+| Waterdragon | Diyalog kavramı veya lakabı | Kavram | Su Ejderhası | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
+| Fishface / Fishfaces | Diyalog kavramı veya lakabı | Kavram | Balık Surat | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
+| Fluffbutt | Diyalog kavramı veya lakabı | Kavram | Pofuduk Popo | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
+| The Ruin | Diyalog kavramı veya lakabı | Kavram | Ruin | Yıkım | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
 
 ## Kural
 

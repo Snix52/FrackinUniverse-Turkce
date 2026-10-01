@@ -5779,6 +5779,136 @@
           "tr": "Kavrayıcı Başparmaklar"
         }
       ]
+    },
+    {
+      "source": "Pharitu",
+      "context": "Pharitu diyalog özel adları",
+      "type": "Özel ad",
+      "tr": "Pharitu",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "mode": "preserve",
+      "tr_stem": "pharitu",
+      "note": "v0.68: pinli dialog/converse.config.patch adları; kaynak yazımı korunur."
+    },
+    {
+      "source": "Myphis",
+      "context": "Pharitu diyalog özel adları",
+      "type": "Özel ad",
+      "tr": "Myphis",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "mode": "preserve",
+      "tr_stem": "myphis",
+      "note": "v0.68: pinli dialog/converse.config.patch adları; kaynak yazımı korunur."
+    },
+    {
+      "source": "Ma'ez",
+      "context": "Pharitu diyalog özel adları",
+      "type": "Özel ad",
+      "tr": "Ma'ez",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "mode": "preserve",
+      "tr_stem": "ma'ez",
+      "note": "v0.68: pinli dialog/converse.config.patch adları; kaynak yazımı korunur."
+    },
+    {
+      "source": "Avolite Crystal / Avolite Crystals",
+      "context": "Diyalog kavramı veya lakabı",
+      "type": "Kavram",
+      "tr": "Avolite Kristali",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "tr_stem": "avolite kristal",
+      "note": "v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz.",
+      "forms": [
+        {
+          "en": "Avolite Crystal",
+          "tr": "Avolite Kristali"
+        },
+        {
+          "en": "Avolite Crystals",
+          "tr": "Avolite Kristalleri"
+        }
+      ]
+    },
+    {
+      "source": "Glyph / Glyphs",
+      "context": "Diyalog kavramı veya lakabı",
+      "type": "Kavram",
+      "tr": "Glif",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "tr_stem": "glif",
+      "note": "v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz.",
+      "forms": [
+        {
+          "en": "Glyph",
+          "tr": "Glif"
+        },
+        {
+          "en": "Glyphs",
+          "tr": "Glifler"
+        }
+      ]
+    },
+    {
+      "source": "Waterdragon",
+      "context": "Diyalog kavramı veya lakabı",
+      "type": "Kavram",
+      "tr": "Su Ejderhası",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "tr_stem": "su ejderha",
+      "note": "v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz."
+    },
+    {
+      "source": "Fishface / Fishfaces",
+      "context": "Diyalog kavramı veya lakabı",
+      "type": "Kavram",
+      "tr": "Balık Surat",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "tr_stem": "balık surat",
+      "note": "v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz.",
+      "forms": [
+        {
+          "en": "Fishface",
+          "tr": "Balık Surat"
+        },
+        {
+          "en": "Fishfaces",
+          "tr": "Balık Suratlar"
+        }
+      ]
+    },
+    {
+      "source": "Fluffbutt",
+      "context": "Diyalog kavramı veya lakabı",
+      "type": "Kavram",
+      "tr": "Pofuduk Popo",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "tr_stem": "pofuduk popo",
+      "note": "v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz."
+    },
+    {
+      "source": "The Ruin",
+      "context": "Diyalog kavramı veya lakabı",
+      "type": "Kavram",
+      "tr": "Ruin",
+      "forbidden": "Yıkım",
+      "status": "LOCKED",
+      "tr_stem": "ruin",
+      "note": "v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz.",
+      "forms": [
+        {
+          "en": "The Ruin",
+          "tr": "Ruin"
+        }
+      ],
+      "mode": "preserve"
     }
   ],
   "context_exceptions": [
@@ -5879,6 +6009,41 @@
       "en": "Research",
       "tr": "Araştır",
       "reason": "researchTree.lua researchButton runtime eylemi: Research -> Araştır. İsim bağlamından ayrıdır."
+    },
+    {
+      "asset": "objects/minibiome/elder/catacombs3.object",
+      "pointer": "/description",
+      "en": "The edges are...amazingly precise. And looking closer...tiny glyphs adorn the surface.",
+      "tr": "Kenarları... inanılmaz derecede düzgün. Yakından bakınca yüzeyini minik sembollerin süslediğini görüyorum.",
+      "reason": "v0.68: v0.60 onaylı nesne metnindeki sembol karşılığı glyph için geçerli genel anlamdır. Yeni diyaloglar glif kullanır; yalnız bu tam EN/TR alanına bağlı istisna, rün karşılığını veya değişmiş metni kabul etmez."
+    },
+    {
+      "asset": "objects/minibiome/elder/catacombs4.object",
+      "pointer": "/description",
+      "en": "Tiny, almost microscopic glyphs tell an ancient story I cannot read.",
+      "tr": "Minicik, neredeyse mikroskobik semboller okuyamadığım kadim bir öykü anlatıyor.",
+      "reason": "v0.68: v0.60 onaylı nesne metnindeki sembol karşılığı glyph için geçerli genel anlamdır. Yeni diyaloglar glif kullanır; yalnız bu tam EN/TR alanına bağlı istisna, rün karşılığını veya değişmiş metni kabul etmez."
+    },
+    {
+      "asset": "objects/minibiome/elder/eldercarving1.object",
+      "pointer": "/description",
+      "en": "I can only guess at the potential meaning of these glyphs.",
+      "tr": "Bu sembollerin ne anlama geldiğini ancak tahmin edebilirim.",
+      "reason": "v0.68: v0.60 onaylı nesne metnindeki sembol karşılığı glyph için geçerli genel anlamdır. Yeni diyaloglar glif kullanır; yalnız bu tam EN/TR alanına bağlı istisna, rün karşılığını veya değişmiş metni kabul etmez."
+    },
+    {
+      "asset": "objects/minibiome/elder/elderswitches/elderlightsensor/elderlightsensor.object",
+      "pointer": "/shortdescription",
+      "en": "Strange Glyph",
+      "tr": "Gizemli Sembol",
+      "reason": "v0.68: v0.60 onaylı nesne metnindeki sembol karşılığı glyph için geçerli genel anlamdır. Yeni diyaloglar glif kullanır; yalnız bu tam EN/TR alanına bağlı istisna, rün karşılığını veya değişmiş metni kabul etmez."
+    },
+    {
+      "asset": "objects/minibiome/precursor/precursormonitortall/precursorscreentall2.object",
+      "pointer": "/shortdescription",
+      "en": "Large Glyph Monitor",
+      "tr": "Büyük Sembollü Monitör",
+      "reason": "v0.68: v0.60 onaylı nesne metnindeki sembol karşılığı glyph için geçerli genel anlamdır. Yeni diyaloglar glif kullanır; yalnız bu tam EN/TR alanına bağlı istisna, rün karşılığını veya değişmiş metni kabul etmez."
     }
   ],
   "forbidden_regexes": [

@@ -1,0 +1,625 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-01",
+  "base_commit": "4c4a0f99a59664fafea14cbb27506ec5d6a1ab61",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 380,
+    "context_groups": 350,
+    "assets": {
+      "dialog/converse.config": 380
+    },
+    "fu_layered_fields": 380,
+    "unique_english_strings": 272
+  },
+  "changes": {
+    "context_groups": 37,
+    "fields": 38,
+    "sentences_by_context": 47,
+    "sentences_including_repeated_fields": 48,
+    "count_method": "Elle sayılan değişmiş Türkçe cümle ve noktalama ile ayrılmış kısa konuşma ifadeleri; değişmeyen parçalar sayılmaz. Aynı repliğin ayrı konuşmacı bağlamı ayrı sayılır; occurrence tekrarları yalnız including_repeated_fields toplamına eklenir."
+  },
+  "corrections": [
+    {
+      "unit_id": "6d4ffb51c60eff1de649eb0ab6ea059a3b999ffbd4cdf4e65f935f0658fdc848",
+      "en": "Do you lay eggs, or are you not some sort of weird bird?",
+      "before": "Yumurta mı yumurtluyorsun, yoksa tuhaf bir kuş falan değil misin?",
+      "after": "Yumurtluyor musun, yoksa tuhaf bir kuş falan değil misin?",
+      "reason": "Yumurta yumurtlamak gereksiz tekrarı giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/radien/4",
+          "origin": "dialog/converse.config.patch#68"
+        }
+      ]
+    },
+    {
+      "unit_id": "9616b969a342d5e51b745863cbea9f7e93bc2667a7666d9f598be2718db6ecf4",
+      "en": "I heard your kinds has huge worlds dedicated just to defending your colonies. I would love to see that some day!.",
+      "before": "Sizin türünüzün kolonilerini savunmaya adanmış devasa dünyaları olduğunu duydum. Bir gün görmeyi çok isterim!.",
+      "after": "Sizin türünüzün kolonilerini savunmaya adanmış devasa dünyaları olduğunu duydum. Bir gün görmeyi çok isterim!",
+      "reason": "Kaynağın yanlış ünlem-nokta dizisi Türkçeye taşınmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/skath/1",
+          "origin": "dialog/converse.config.patch#91"
+        }
+      ]
+    },
+    {
+      "unit_id": "b34329ed11e3543541dfecc1372be072146b2ab334c1ba9f38461b74a834b5be",
+      "en": "I heard your kinds has huge worlds dedicated just to defend your worlds. I would love to see that some day!.",
+      "before": "Sizin türünüzün dünyalarınızı savunmaya adanmış devasa dünyaları olduğunu duydum. Bir gün görmeyi çok isterim!.",
+      "after": "Türünüzün, dünyalarınızı savunmaya adanmış devasa dünyaları olduğunu duydum. Bir gün görmeyi çok isterim!",
+      "reason": "Hitap çekimi ve yanlış ünlem-nokta dizisi düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/skath/12",
+          "origin": "dialog/converse.config.patch#91"
+        }
+      ]
+    },
+    {
+      "unit_id": "0c0bbb8b33fa00218a2730391e09f3b5efeaaf7520d5a50d667e32f118b42729",
+      "en": "Your Plasma seems to be as sacred to you, as the Avolite Crystals are to us.",
+      "before": "Plazmanız da bize göre Avolite Kristallerinin olduğu kadar kutsal görünüyor.",
+      "after": "Plazmanız sizin için, Avolite Kristallerinin bizim için olduğu kadar kutsal görünüyor.",
+      "reason": "Sizin için/bizim için kutsallık karşılaştırması tamamlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/skath/13",
+          "origin": "dialog/converse.config.patch#91"
+        }
+      ]
+    },
+    {
+      "unit_id": "d00e2c244a0a625ce710dbe80115987949010a5bbb0206a03f5f23c43fc3e4a2",
+      "en": "Your Plasma seems to be as sacred to you as the Avolite Crystals are to us.",
+      "before": "Plazmanız da bize göre Avolite Kristallerinin olduğu kadar kutsal görünüyor.",
+      "after": "Plazmanız sizin için, Avolite Kristallerinin bizim için olduğu kadar kutsal görünüyor.",
+      "reason": "Sizin için/bizim için kutsallık karşılaştırması tamamlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/skath/2",
+          "origin": "dialog/converse.config.patch#91"
+        }
+      ]
+    },
+    {
+      "unit_id": "d67f1196e81a5a37dd9afe230d9499c6db0ce0917c89c0402ee852d47d639e76",
+      "en": "The writing of your kind reminds me a but of the glyphs of the Stargazers.",
+      "before": "Türünüzün yazısı, Yıldız Gözlemcilerinin rünlerini biraz andırıyor.",
+      "after": "Türünüzün yazısı, Yıldız Gözlemcilerinin gliflerini biraz andırıyor.",
+      "reason": "Glyph, mevcut katalogdaki glif karşılığı; kaynak rün demiyor.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/skath/20",
+          "origin": "dialog/converse.config.patch#91"
+        },
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/avian/skath/9",
+          "origin": "dialog/converse.config.patch#91"
+        }
+      ]
+    },
+    {
+      "unit_id": "c811952d1385d03e678faab5fc5ff3c636e63591ac3b0e15bd8a98cfe3ab8ef0",
+      "en": "Hunting banned? by Miniknog? why?",
+      "before": "Avlanmak yasak mı? Miniknog yüzünden mi? Neden?",
+      "after": "Avlanmak yasak mı? Miniknog tarafından mı? Neden?",
+      "reason": "By Miniknog yasağı koyan özneyi gösterir; genel neden değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fenerox/apex/8",
+          "origin": "dialog/converse.config.patch#66"
+        }
+      ]
+    },
+    {
+      "unit_id": "0907f98e75b021251106cdec18615361b8d141c9a5570be0c83b77235b0cf17c",
+      "en": "Fellow Fenerox! So far. Missing home?",
+      "before": "Fenerox kardeşim! Buralar... Evini özledin mi?",
+      "after": "Fenerox kardeşim! Çok uzakta. Evini özledin mi?",
+      "reason": "So far uzaklığı bildirir; Buralar anlamı aktarmıyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fenerox/fenerox/1",
+          "origin": "dialog/converse.config.patch#66"
+        }
+      ]
+    },
+    {
+      "unit_id": "82c63e2362afcffeb3a137256e1fe1fe752072b8767149e3eda4c2a19c64e2ea",
+      "en": "New person. Is <selfname>. Being polite!",
+      "before": "Yeni kişi. Adı <selfname>. Kibar davranıyor!",
+      "after": "Yeni kişi. Ben <selfname>. Kibar davranıyor!",
+      "reason": "selfname konuşmacının kendi adı; yabancının adı değil. Yer tutucu korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fenerox/generic/5",
+          "origin": "dialog/converse.config.patch#66"
+        }
+      ]
+    },
+    {
+      "unit_id": "6cd5088a685ede630095ba93fc579c5cb3e373801b7ada2df02404fa35b0964d",
+      "en": "A fish? unheard of. We've rains. No seas.",
+      "before": "Balık mı? Ne acayip. Yağmur yağıyor. Deniz yok.",
+      "after": "Balık mı? Hiç duymadık. Bizde yağmur var. Deniz yok.",
+      "reason": "Unheard of bilinmeyen balık; yağmur/deniz karşıtlığı varlık olarak korundu.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fenerox/hylotl/5",
+          "origin": "dialog/converse.config.patch#66"
+        }
+      ]
+    },
+    {
+      "unit_id": "2f2418546feb3aa001c2ecce1dcf5b29afa0623e8f14d3edc0dab93050d093d7",
+      "en": "I is making call to exterminator. Flee.",
+      "before": "İlaçlama şirketini arıyor. Kaç!",
+      "after": "İlaçlama şirketini arıyorum. Kaç!",
+      "reason": "I is making call birinci kişi eylemidir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fenerox/thelusian/8",
+          "origin": "dialog/converse.config.patch#66"
+        }
+      ]
+    },
+    {
+      "unit_id": "23ce275c87e006b3559b00ae507689b73f9604aae6d4305f925fa5e14750e6e1",
+      "en": "Where isssss your sssspear?",
+      "before": "Mızrağın nere-deee?",
+      "after": "Sssenin mızrağın nerede?",
+      "reason": "Floran’ın s tıslaması korundu; rastgele hece ve e uzatması kaldırıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/fenerox/1",
+          "origin": "dialog/converse.config.patch#51"
+        }
+      ]
+    },
+    {
+      "unit_id": "867b62866b29d53daad34d254b011d9e42e72282fd09ce3847cb60e58d77a725",
+      "en": "Let'ssss ssssstart hunt party!",
+      "before": "Hadi av partisi yapalııım!",
+      "after": "Hadi av partisssini başlatalım!",
+      "reason": "Başlatmak eylemi ve Floran s tıslaması korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/fenerox/2",
+          "origin": "dialog/converse.config.patch#51"
+        }
+      ]
+    },
+    {
+      "unit_id": "7949dfe2c9766540c615618a88a93c18904381c5625601c82408a287048ce137",
+      "en": "Have you sssseen Floran's sssspear? Floran think Iit around here somewhere.",
+      "before": "Floran mızrağını gördün mü? Floran bir yerlerde olduğunu düşünüyor.",
+      "after": "Floran’ın mızrağını gördün mü? Floran, buralarda bir yerde olduğunu düşünüyor.",
+      "reason": "Floran adının tamlayan eki ve around here yer bağı düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/fenerox/3",
+          "origin": "dialog/converse.config.patch#51"
+        }
+      ]
+    },
+    {
+      "unit_id": "9f9072f70fc1eca1b83f1a18e89755bd782970ce5a5ce971f7f238ef8e316302",
+      "en": "Hello furry persssson!",
+      "before": "Merhaba tüylü kişiii!",
+      "after": "Ssselam, tüylü kişi!",
+      "reason": "Floran tıslaması s üzerinde kuruldu; i uzatması ses özelliği sayılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/fenerox/4",
+          "origin": "dialog/converse.config.patch#51"
+        }
+      ]
+    },
+    {
+      "unit_id": "6b388893bc7b3e7716c717d126ff1ba5d00bb0356d2ac2036ffacbb0d3e6ae81",
+      "en": "Bug ssshell hard to eat.",
+      "before": "Böcek kabuğu yemek zorr.",
+      "after": "Böcek kabuğunu yemek zor.",
+      "reason": "Kabuk nesnesinin belirtme çekimi tamamlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/fumantizi/1",
+          "origin": "dialog/converse.config.patch#45"
+        }
+      ]
+    },
+    {
+      "unit_id": "648b412a1508eb2daee984ee25ed1e871a11d497008d74211940005a69c60f30",
+      "en": "Are there forestss underground?",
+      "before": "Yer altında orman var mııı?",
+      "after": "Yer altında orman var mı?",
+      "reason": "Kaynakta olmayan soru ünlüsü uzatması kaldırıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/nightar/8",
+          "origin": "dialog/converse.config.patch#47"
+        }
+      ]
+    },
+    {
+      "unit_id": "1ce2e6d2c19ca132d79030a6f8a3f46b058a3c14acec717cc8c7e7cdd337ea20",
+      "en": "Floran race X'i! Floran win!",
+      "before": "Floran X'i yarışı! Floran kazanır!",
+      "after": "Floran X'i ile yarışır! Floran kazanır!",
+      "reason": "Race eylemdir; ırk veya yarış adı olarak çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/floran/radien/13",
+          "origin": "dialog/converse.config.patch#48"
+        }
+      ]
+    },
+    {
+      "unit_id": "f3193685b81ead335d0b459c71f18ea89412c629f37955229b727ee201ced60e",
+      "en": "Surprise. Immensely, quixotic. Pharitu? no neighbours. Possible failure.",
+      "before": "Şaşkınlık. Muazzam, tuhaf. Pharitu? Komşu yok. Başarısızlık ihtimali.",
+      "after": "Şaşkınlık. Son derece hayalperest. Pharitu? Komşu yok. Başarısızlık ihtimali.",
+      "reason": "Quixotic hayalperest anlamını taşır; yalnız tuhaf değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/beldehor/10",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "8e601feaf53318b0c26cfcd44eeb41ca0600a83f190be75a7d4ff00ba1dd2446",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/beldehor/2",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "1a4cc95059d5f1e9c1ca200e3d2d2d42edb80a253ac5c4f4fb3a6f5a006a6dd0",
+      "en": "Space. Void. Immense. Wonder, wariness. Apprehension.",
+      "before": "Uzay. Boşluk. Sonsuz. Merak, temkin. Tedirginlik.",
+      "after": "Uzay. Boşluk. Uçsuz bucaksız. Merak, temkin. Tedirginlik.",
+      "reason": "Immense büyüklüğü anlatır; sonsuzluk iddiası eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/beldehor/8",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "4603348720d26dddd475d16f6c45d3af76a7b88f010e24322f823fec25fdf000",
+      "en": "Space. Void. Immense. Wonder, wariness. Apprehension.",
+      "before": "Uzay. Boşluk. Sonsuz. Merak, temkin. Tedirginlik.",
+      "after": "Uzay. Boşluk. Uçsuz bucaksız. Merak, temkin. Tedirginlik.",
+      "reason": "Immense büyüklüğü anlatır; sonsuzluk iddiası eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/default/11",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "51d0dd8b34ca006a66ff17d5c01616cc88b223ac5da74b6b8299e8eeb45bbe41",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/default/5",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "67e617f0855e65ada67b9dbd6488c0e7f3bb740dd6401b0d9571b32a497c3042",
+      "en": "Protectorate. Humanity. Fallen. Myphis. Remaining awake, alive. Forever.",
+      "before": "Protectorate. İnsanlık. Düştü. Myphis. Uyanık kalmak, yaşamak. Sonsuza dek.",
+      "after": "Protectorate. İnsanlık. Düştü. Myphis. Uyanık. Hayatta. Sonsuza dek.",
+      "reason": "Remaining awake, alive mevcut hayatta/uyanık olma durumunu anlatır; mastar değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/default/9",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "ccfb0c41591cf7589597c520300dfd92a925a37c6251fd7b9bf371f078556b14",
+      "en": "Space. Void. Immense. Wonder, wariness. Apprehension.",
+      "before": "Uzay. Boşluk. Sonsuz. Merak, temkin. Tedirginlik.",
+      "after": "Uzay. Boşluk. Uçsuz bucaksız. Merak, temkin. Tedirginlik.",
+      "reason": "Immense büyüklüğü anlatır; sonsuzluk iddiası eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/fudarkizku/13",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "6f5e19bd19b69c5a08076ffbea94735bb36cd4a9f7fc57a30ec86cdd2c33d456",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/fudarkizku/5",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "58f57c7fd44f5a67862fd5c4ce8e0f6192c848ead66fc68aeed37a813a7ae82c",
+      "en": "Space. Void. Immense. Wonder, wariness. Apprehension.",
+      "before": "Uzay. Boşluk. Sonsuz. Merak, temkin. Tedirginlik.",
+      "after": "Uzay. Boşluk. Uçsuz bucaksız. Merak, temkin. Tedirginlik.",
+      "reason": "Immense büyüklüğü anlatır; sonsuzluk iddiası eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/fuizku/13",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "a6ac5f7fcfa21aa23f49ead47613743336418d89b3ebe9006c632f3a5850d9a5",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/fuizku/5",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "3d948744c98477f4db7f9f1e5f0d67141cce1cc5ab011eb2f2174781887d3cba",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/juux/2",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "aba31af92744ed3a448b69791e180e2333b87179848867c2a79881c5584af656",
+      "en": "Space. Void. Immense. Wonder, wariness. Apprehension.",
+      "before": "Uzay. Boşluk. Sonsuz. Merak, temkin. Tedirginlik.",
+      "after": "Uzay. Boşluk. Uçsuz bucaksız. Merak, temkin. Tedirginlik.",
+      "reason": "Immense büyüklüğü anlatır; sonsuzluk iddiası eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/juux/8",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "8525eda9f03dca9c826683321368e9622366e0a71b61f1ae838060cb9096c9f3",
+      "en": "... (Glares without answering you.)",
+      "before": "... (Sana sertçe bakar.)",
+      "after": "... (Sana yanıt vermeden ters ters bakar.)",
+      "reason": "Without answering bilgisi geri eklendi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/skath/1",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "ae0a8182316fbc7f492071aac29b9da99a35db43d2e3450da5c80de8ae5a5055",
+      "en": "Protectorate. Humanity. Fallen. Myphis. Remaining awake, alive. Forever.",
+      "before": "Protectorate. İnsanlık. Düştü. Myphis. Uyanık kalmak, yaşamak. Sonsuza dek.",
+      "after": "Protectorate. İnsanlık. Düştü. Myphis. Uyanık. Hayatta. Sonsuza dek.",
+      "reason": "Remaining awake, alive mevcut hayatta/uyanık olma durumunu anlatır; mastar değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/skath/10",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "a2810a7eff16fd3829b187ff28f67d9ebc367668274e7e79129e1ef300181cc4",
+      "en": "Space. Void. Immense. Wonder, wariness. Apprehension.",
+      "before": "Uzay. Boşluk. Sonsuz. Merak, temkin. Tedirginlik.",
+      "after": "Uzay. Boşluk. Uçsuz bucaksız. Merak, temkin. Tedirginlik.",
+      "reason": "Immense büyüklüğü anlatır; sonsuzluk iddiası eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/skath/11",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "32d1d447275c058c7c8d1844924029260ce61a9778fb6c5ee2db4f9f036f8571",
+      "en": "Aliens fight. Aliens die. The Shadow, darker. The Ruin, stronger. Feeding.",
+      "before": "Yabancılar savaşır. Yabancılar ölür. Gölge, daha karanlık. Yıkım, daha güçlü. Besleniyor.",
+      "after": "Yabancılar savaşır. Yabancılar ölür. Gölge, daha karanlık. Ruin, daha güçlü. Besleniyor.",
+      "reason": "The Ruin, mevcut Ark görev metinlerindeki özel varlık Ruin ile aynı yazıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/skath/4",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "f23f58d4669fc86fb26b1b2620d5afce3daa974954eaa4aac446b9eb643272d8",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fudarkizku/skath/7",
+          "origin": "dialog/converse.config.patch#81"
+        }
+      ]
+    },
+    {
+      "unit_id": "70e8d284c46131cb258fbcc0dbb9b82f9778548dc60d996fa0a9f29013c1cbe7",
+      "en": "Surprise. Immensely, quixotic. Pharitu? no neighbours. Possible failure.",
+      "before": "Şaşkınlık. Muazzam, tuhaf. Pharitu? Komşu yok. Başarısızlık ihtimali.",
+      "after": "Şaşkınlık. Son derece hayalperest. Pharitu? Komşu yok. Başarısızlık ihtimali.",
+      "reason": "Quixotic hayalperest anlamını taşır; yalnız tuhaf değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fuizku/beldehor/10",
+          "origin": "dialog/converse.config.patch#83"
+        }
+      ]
+    },
+    {
+      "unit_id": "59f9960b7ccb5a40785014309376596555498518bc9166ea2eb51a9772a9c60d",
+      "en": "Fulfilling, harmony. Reciprocation, imminent.",
+      "before": "Tatmin. Uyum. Karşılıklılık. Yakın.",
+      "after": "Tatmin. Uyum. Yakında karşılık.",
+      "reason": "Imminent zamansal yakınlık; iki kısa ifade tek doğal öbekte karşılandı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fuizku/beldehor/2",
+          "origin": "dialog/converse.config.patch#83"
+        }
+      ]
+    }
+  ],
+  "new_locked_terms": 9,
+  "legacy_exact_term_exceptions": 5,
+  "approved_packet_sha256": "f8559e72f0a1104615719a92af614b35cc0d75e4602dfe0405c0b6c689d30536",
+  "luna_original_packet_sha256": "b6f09ab372fee061ca0fa3d09c0bf98bed7474cd7ca38c1048bfba9a9399c7ab",
+  "approved_rows_sha256": "4ce39661dca0d69cccd7abe6c807fb639cb57a9d45d7b2f93007100252fefe1f",
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 380,
+    "context_units": 350,
+    "qa": {
+      "catalog_units_checked": 25000,
+      "raw_units_checked": 115,
+      "locked_terms": 615
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "FU 6.5.8 bb58383c0d16c1152e3439e606b39ff82288b586: dialog/converse.config.patch; paketteki 350 branch/context ve occurrence pointer kayıtları",
+        "note": "Seçili İngilizce değerler FU patch katmanındaki kaynak ve converse/<konuşmacı>/<muhatap> bağlamlarıyla eşlendi. Aynı replik farklı tür bağlamlarında ayrı tutuldu."
+      },
+      {
+        "source": "FU 6.5.8: npcs/fuvillageguard.npctype; npcs/newhumansurvivor.npctype; npcs/nightar/nightarvillager.npctype; npcs/nightar/nightarvillageguard.npctype; npcs/nightar/nightarvillagerking.npctype",
+        "note": "Bu NPC tiplerinde /dialog/converse.config bağlantıları statik olarak doğrulandı. Bu referanslar tüm patch dallarının veya her tekil repliğin canlı oyunda seçildiğini kanıtlamaz."
+      },
+      {
+        "source": "FU 6.5.8: npcs/elduukharvillager.npctype",
+        "note": "El’Duukhar converse bağlantısı /dialog/elduuconverse.config yönündedir; base converse.config yalnız breakObject için kullanılır. Bu yüzden El’Duukhar dalları için doğrudan canlı çağıran kanıtı sayılmadı."
+      }
+    ],
+    "note": "Kaynakta seçili FU patch değerleri, occurrence pointer’ları ve tür dalları doğrulandı. Temel vanilla dialog/converse.config bu FU checkout’unda mevcut değil; statik NPC referansları konuşmacı/muhatap bağlamlarının canlı erişimini kanıtlamaz. Oyun içi satır seçimi, Türkçe karakter, satır sığması ve görsel LQA NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "380 alan FU patch katmanından doğrulandı; temel vanilla converse.config burada yok.",
+    "ElDuukhar köylü converse referansı elduuconverse.config yönünde; converse.config yalnız breakObject. Bu dilim için özel doğrudan NPC erişimi kanıtı sayılmadı.",
+    "Diğer konuşmacı/muhatap dallarının canlı seçimi ve font/satır sığması test edilmedi."
+  ]
+}
