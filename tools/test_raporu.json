@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-10-01T11:50:39.112777+00:00",
-  "workflow_run_id": "36856790894",
-  "source_commit": "8ef98a4ec87989aa80d602d82dfbd9e33fb73d93",
-  "translation_source_commit": "8ef98a4ec87989aa80d602d82dfbd9e33fb73d93",
-  "translation_version": "0.65.2-beta",
+  "generated_at_utc": "2026-10-01T15:33:13.722926+00:00",
+  "workflow_run_id": "36883585579",
+  "source_commit": "4147f194de50641bb6eb8b70577209a3543bf3fa",
+  "translation_source_commit": "4147f194de50641bb6eb8b70577209a3543bf3fa",
+  "translation_version": "0.67.0-beta",
   "custom_game_assets": 14,
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 14163,
-    "patch_assets": 4768,
+    "structured_fields": 14993,
+    "patch_assets": 4923,
     "raw_override_assets": 10,
     "raw_script_strings": 126
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.65.2_Beta.zip",
-    "bytes": 2537355,
-    "sha256": "47da4fd3ba1d0af51ab5378ade79e73a78afe0e39b595b4cd189843aec2a8086",
-    "git_blob_sha": "213ac2ca81132a81262829c9d3d08951696cc573",
+    "path": "dist/FU_Turkce_v0.67.0_Beta.zip",
+    "bytes": 2624237,
+    "sha256": "fe3378c1e01c420e985f4e1df75b7f5d656ac325a3ca6b6065e2966fd3b19d89",
+    "git_blob_sha": "317d68e28d07435950258308603a445f6e136e4e",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "bda07dd7f1bb6ca5ec02cc03774fd204343204c09dc1d25a3e110afac6836791",
-  "build_inputs_sha256": "133e5232a5371c5faa7c0b2f3965a35ae1bea49934c694397f2aca695eb549aa",
-  "catalog_sha256": "ee914946346833805b1055b384ebd6334e66e326c586c60e1fe0501d778bed98",
+  "install_tree_sha256": "e662708e714718a3a64e90c5ee1a13d7bfe50721d0d21898e7ef636c2faebcfc",
+  "build_inputs_sha256": "c8fcdebfb0b2e1aa97058b5610456a9a4453ab81be925fb5991123d6dbec1600",
+  "catalog_sha256": "0e6a6aa68b8da9e15f4f146ff5ef1f88fc03a07422de09f621ab81798ac88df9",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -34,12 +34,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 14163,
-  "patched_assets": 4768,
+  "translated_display_fields": 14993,
+  "patched_assets": 4923,
   "raw_override_assets": 10,
   "raw_script_display_strings": 126,
-  "total_localized_display_units": 14289,
-  "target_assets_total": 4792,
+  "total_localized_display_units": 15119,
+  "target_assets_total": 4947,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -136,7 +136,9 @@
     "v0.65 kodeks belgeleri": 331,
     "v0.65 S.A.I.L. başlangıç diyaloğu": 182,
     "v0.65.1 ekran LQA düzeltmeleri": 5,
-    "v0.65.2 S.A.I.L. gemi konuşmaları": 23
+    "v0.65.2 S.A.I.L. gemi konuşmaları": 23,
+    "v0.66 P0 yer imi ve P1 yetiştirme": 454,
+    "v0.67 P1 NPC diyalogları": 376
   },
   "checks": {
     "static_qa": "PASS",
@@ -4590,6 +4592,1782 @@
       "pointer": "/welcome",
       "qa": {
         "source_newline_pattern": "CCCCCCCLCLCLCCCCCCCCCCC"
+      }
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/scriptConfig/outpostBookmark2/bookmarkName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch"
+      }
+    },
+    {
+      "asset": "objects/farmables/flowerspring/flowerspring.object",
+      "pointer": "/description",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/farmables/flowerspring/flowerspring.object.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/elduukhar/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fenerox/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/14",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/15",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/16",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/17",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/18",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fukirhos/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fumantizi/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fumantizi/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fumantizi/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fumantizi/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fumantizi/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fumantizi/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/14",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/15",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/16",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/17",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/18",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/19",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/22",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/20",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/21",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/23",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/24",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/25",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/26",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/27",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/28",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/29",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/fuslimeperson/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/mantizi/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/mantizi/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/mantizi/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/mantizi/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/mantizi/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/mantizi/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/14",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/15",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/16",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/nightar/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/radien/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/24",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/25",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/22",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/34",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/23",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/35",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/14",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/26",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/15",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/27",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/16",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/28",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/17",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/29",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/18",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/30",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/19",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/31",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/20",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/32",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/21",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/33",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/skath/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/thelusian/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/thelusian/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/thelusian/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/thelusian/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/thelusian/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/thelusian/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/14",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/15",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/16",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/17",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/18",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/19",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/22",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/20",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/21",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/23",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/24",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/25",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/26",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/27",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/28",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/29",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/apex/veluu/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fenerox/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/14",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/15",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/16",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/17",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fukirhos/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/fumantizi/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/nightar/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/radien/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/radien/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/radien/10",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/radien/11",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/radien/12",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
+      }
+    },
+    {
+      "asset": "dialog/converse.config",
+      "pointer": "/converse/avian/radien/13",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "dialog/converse.config.patch"
       }
     }
   ]
