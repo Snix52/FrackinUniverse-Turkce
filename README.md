@@ -6,20 +6,21 @@ Starbound için Frackin' Universe moduna hazırlanan gayriresmî Türkçe yama v
 
 Amaç yalnızca İngilizce metinleri Türkçeye çevirmek değil; görevleri, araştırmayı, üretim zincirlerini, makineleri, eşyaları ve arayüzleri İngilizce bilmeden takip edilebilen, tutarlı bir Türkçe deneyim hâline getirmek.
 
-**Güncel sürüm:** v0.65.0 Beta
+**Güncel GitHub paket sürümü:** v0.68.0 Beta
 **Hedef FU sürümü:** 6.5.8  
 **Durum:** Statik QA ve sabitlenmiş FU kaynak doğrulaması başarılı. Oyun içi LQA henüz tamamlanmadı.
 
 ## Güncel durum
 
-v0.65.0 Beta itibarıyla:
+v0.68.0 Beta itibarıyla:
 
-- **13.953** yapılandırılmış oyuncu metni
-- **57** görünür Lua/script metni
-- **14.010** toplam yerelleştirilmiş görünür birim
-- **4.745** patch asset
-- **7** raw override asset
-- **4.759** toplam hedef asset
+- **15.373** yapılandırılmış çeviri alanı
+- **126** Lua/script metin gösterimi
+- **15.499** toplam yerelleştirilmiş birim
+- **4.923** patch asset
+- **10** raw override asset
+- **14** ek oyun asseti
+- **4.947** toplam hedef asset
 - Statik QA: **PASS**
 - Pinned FU source validation: **PASS**
 - ZIP bütünlüğü ve kurulum ağacı eşleşmesi: **PASS**
@@ -27,7 +28,7 @@ v0.65.0 Beta itibarıyla:
 
 Güncel doğrulanmış paket:
 
-`dist/FU_Turkce_v0.65.0_Beta.zip`
+`dist/FU_Turkce_v0.68.0_Beta.zip`
 
 FU 6.5.8 kaynağının güncel `master` commitine geçiş ve yeni çeviri kapsamı karşılaştırması: [FU upstream kontrolü](docs/FU_UPSTREAM_20260924.md).
 
@@ -58,6 +59,7 @@ Projenin tamamlanan ana kapsamları arasında şunlar bulunuyor:
 - Peglaci yapı, kablo ve Pykrete malzemeleri
 - Bal peteği, altın odun, cam ve balmumu yapı malzemeleri
 - FU kodeks belgeleri ve oyun içi rehberleri
+- NPC konuşmalarının ilk iki diyalog dilimi
 
 Bir dosyanın FU kaynak ağacında bulunması tek başına çeviri gerekçesi sayılmıyor. Oyuncuya gerçekten görünen içerik mümkün olduğunca görev, tarif, araştırma, nesne, NPC, script veya runtime bağlantıları üzerinden doğrulanıyor.
 
@@ -75,6 +77,10 @@ Bu, oyunda artık hiçbir İngilizce arayüz veya görev metni kalmadığı anla
 Lua görünür string güvenliği, LOCKED karma-varyant kontrolü, alan-bağlı kontrol kodu istisnaları, beş zemin etiketi, iki Mech yakıt uyarısı ve görev dili düzeltildi. PR QA salt okunur; generated çıktı değişiklikleri kaynak güncellemesi yerine kabul edilmez. Ayrıntılar: [bakım raporu](docs/QA_HARDENING_20260922.md).
 
 ## Son tamamlanan çalışma
+
+**v0.68.0** ile 380 NPC diyalog alanı eklendi; 350 konuşmacı/muhatap bağlamı ayrı incelendi. Katalog toplamı 15.373 alan, terim sözlüğü 615 LOCKED kayıttır. Önce/sonra dil düzeltmeleri [inceleme raporunda](docs/reviews/dialogue2-20261001.json), kaynak ve oyun içi kontrol sınırları [LQA kaydında](docs/LQA_V068_20261001.md) bulunur.
+
+**v0.67.0** ilk NPC diyalog diliminde 376 alan, **v0.66.0** Bilim Karakolu yer imi ve ilk yetiştirme diliminde 454 alan ekledi. Diyalog önceliği sürer. Teknik doğrulama, her repliğin canlı oyunda denenmiş olduğu anlamına gelmez.
 
 v0.46 Irklar ve SAIL/AI confirmed kapsamı kapatıldı.
 
@@ -114,13 +120,15 @@ v0.46.1-v0.46.3 bakımında Jungle ve görev/konum görünen adları geriye dön
 
 ### Steam Workshop
 
+Atölye yayını GitHub paketinden ayrı güncellenir.
+
 [Steam Workshop sayfasından](https://steamcommunity.com/sharedfiles/filedetails/?id=3805257011) yamaya abone olabilirsin.
 
 ### Manuel kurulum
 
 1. Starbound'u kapat.
 2. Mümkünse `storage` klasörünü yedekle.
-3. [Güncel beta paketini](dist/FU_Turkce_v0.65.0_Beta.zip) indirip çıkar.
+3. [Güncel beta paketini](dist/FU_Turkce_v0.68.0_Beta.zip) indirip çıkar.
 4. Eski `FU_Turkce` kurulumunu `mods` dışına yedekle; yeni paketteki `FU_Turkce` klasörünü `mods` içine temiz kurulum olarak kopyala. Klasörleri birleştirmek kaldırılan eski yamaları oyunda bırakabilir.
 5. Son yol şu şekilde görünmeli:
 
@@ -130,7 +138,7 @@ Starbound/mods/FU_Turkce/_metadata
 
 Ana Frackin' Universe `.pak` dosyasını veya Workshop klasörünü değiştirme.
 
-Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.65.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
+Repository içindeki `FU_Turkce/` kurulum ağacı ile `dist/FU_Turkce_v0.68.0_Beta.zip` aynı doğrulanmış build sürecinden üretilir. Çeviri kataloğu değiştiğinde CI, `tools/kaynaklar.json` içindeki sabitlenmiş FU commitini kaynak olarak kullanarak doğrulama yapar.
 
 Ayrıntılı kurulum notu: [docs/KURULUM.txt](docs/KURULUM.txt)
 
