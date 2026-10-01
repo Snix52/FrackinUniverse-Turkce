@@ -1,51 +1,38 @@
-# Luna: diyalog öncelikli sonraki kapsam
+# Luna: güncel diyalog devir notu — 1 Ekim 2026
 
-Kullanıcı 1 Ekim'de diyalogların önce çevrilmesini istedi. Mevcut politika P0 kritik yönlendirmeyi korur; diyaloglar P1'dir. Bu çalışma yeni diyalog çevirisi içermez.
+## Güncel temel
 
-## Güncel temel ve çalışma yolu
+İlk diyalog paketi Sol incelemesiyle **v0.67.0-beta** kataloğuna alındı: 376 alan / 350 bağlam grubu. Toplam **14.993 alan**, **606 LOCKED**. Önceki 14.617 alan aynen korundu. Düzeltmelerin tamamı [dil inceleme kaydında](reviews/dialogue-20261001.json) önce/sonra/gerekçeleriyle kayıtlı: 25 grup / 27 alan / tekrarlar dahil 32 cümle düzeltmesi. [LQA kaydı](LQA_V067_20261001.md) kaynak sınırlamalarını açıklar.
 
-- Çalışma checkout'u: `../local-luna/`. Aynı Git deposunun Luna dalı; değişiklik yapmadan önce `git status` ve checkpoint'i oku.
-- Katalog: `0.66.0-beta`, 14.617 alan. Yeni eklenen P0 yer imi ve ilk P1 yetiştirme dilimi 454 alandır; önceki 14.163 alan korunur.
-- FU 6.5.8 kaynağı: `../local-runtime/fu_source/`, pin `bb58383c0d16c1152e3439e606b39ff82288b586`. Kaynak checkout'unu değiştirme.
-- Yerel paket: `../local-runtime/build-v066-20261001-final/FU_Turkce_v0.66.0_Beta.zip`; güncel yerel kanıt `package-evidence.json`. Build, ZIP, 241 regresyon ve kaynak kapıları PASS; uzak yayın ve oyun içi LQA ayrı durumlardır. Generated `FU_Turkce/`, `dist/` ve raporları elle değiştirme.
+Çalışma checkout’u `../local-luna/`; Sol checkout’u `../local-repo/`. Değişiklikten önce temiz Git durumu ve checkpoint’i oku. Kaynak `../local-runtime/fu_source/`, FU 6.5.8 pini `bb58383c0d16c1152e3439e606b39ff82288b586`. Kaynak pinini değiştirme.
 
-## Sıra
+## Sıra: diyalog önceliği sürüyor
 
-| Sıra | Taslak yolu | Alan / bağlam grubu | Kapsam |
-|---|---|---:|---|
-| 1 | `../local-runtime/translation-planning-v066-dialog-first/packet.json` | 376 / 350 | 46 brewmaster, 110 catconverse, 220 converse alanı |
-| 2 | `../local-runtime/translation-planning-v066-radio-next/packet.json` | 350 / 350 | 11 radyo mesajı asseti; 70 grupta birebir TM önerisi |
+| Sıra | Güncel boş taslak | Alan / grup | TM önerili grup |
+|---|---|---:|---:|
+| 1 | `../local-runtime/translation-planning-v067-dialog-next/packet.json` | 380 / 350 | 30 |
+| 2 | `../local-runtime/translation-planning-v067-radio-next/packet.json` | 350 / 350 | 71 |
 
-İlk paket `dialog` ailesinin tamamı değildir; ailenin kalan toplamı 2.286 alan / 2.149 bağlam grubudur. Radyo ailesinin toplamı 848 alan / 848 gruptur. Paketleri doldururken aynı ailede kaynak veya hitap edilen ırk bağlamını birleştirme.
+v066-dialog-first paketi tamamlandı; üzerinde devam etme. Eski v066 radio taslağı bayat. Güncel iki taslak aynı katalog/LOCKED hashleriyle hazırlandı: önce diyalog taslağını tamamla, Sol’a incelet. Onun entegrasyonu radyo taslağını bayatlatır; radyo çevirisine başlamadan yeni çıktı klasöründe tekrar hazırla. Hashleri elle değiştirme.
 
-Her iki taslak aynı katalog tabanıyla hazırlanmıştır. **Önce birinciyi tamamla ve Sol'a incelet.** Birinci paketin kataloğa alınması, ikinci paketin katalog hashini geçersiz yapar: ikinciye başlamadan önce güncel katalogla `--family radiomessages` taslağını yeni bir çıktı klasöründe yeniden üret. Eski dosyanın girdi hashlerini elle değiştirme. Bu iki taslak paralel katalog düzenleme yetkisi veya otomatik çeviri onayı değildir.
+Yeni diyalog paketi FU `dialog/converse.config.patch` içindeki Avian konuşmalarının devamı ve diğer konuşmacı/muhatap dallarından gelir. Kaynak temel vanilla `converse.config` bu checkout’ta yoktur; patch kaynağını doğru yaz, statik NPC referansını canlı oyun kanıtı gibi kaydetme. Aynı İngilizce repliğin farklı ırk/konuşmacı bağlamını birleştirme.
 
-## Kaynak bağlamı ve erişim incelemesi
-
-Taslaklar `DRAFT_CONTEXT_REVIEW_REQUIRED`; `tr` boş, bağlam ve runtime onayı verilmemiştir. `direct_dependencies=0`, runtime bağlantısı olmadığı anlamına gelmez: `/dialog/file.config:section` referansları ve radyo mesajı kimliği tetikleyicileri ayrıca incelenmelidir.
-
-İlk kaynak ipuçları:
-
-- `npcs/brewmasterciv.npctype` içinde `/dialog/brewmaster.config:converse` ve diğer konuşma dalları var. `tenants/vanillaraces/brewmaster.tenant` bu NPC tipini kullanır. Şarap/bira uzmanı sesini ve kiracı davranışlarını doğrula; bu statik bağlantı oyunda her repliğin denendiği anlamına gelmez.
-- `npcs/catvillager.npctype` içinde `/dialog/catconverse.config` için `breakObject`, `greeting` ve `converse` referansları var. Kedi konuşmacının sesi, hitap edilen ırk ve çağıran kiracı/yerleşim ayrıca doğrulanmalı.
-- `npcs/fuvillageguard.npctype`, `npcs/newhumansurvivor.npctype` ve Nightar NPC tipleri `/dialog/converse.config` kullanır. FU patch katmanı ve vanilla fallback birlikte değerlendirilir. İlk paket `converse/avian/radien/13` alanında biter; ailenin diğer konuşma dalları sonraki dilimlerde kalır.
-- Radyo metninin oyuncuya gösterilmesi için yalnız `type=tutorial` veya metin dosyası yeterli değildir. Her mesaj kimliğini kullanan pickup, biome, quest veya `player.radioMessage` zincirini araştır; konuşmacıyı portre ve çağıran script ile eşleştir.
-
-Güncel kuyruk 43.784 confirmed, 3.049 review, 162 Lua inceleme adayı içerir. P0 confirmed/review sıfırdır; P1 review 2.718 ve P1 Lua 106 adayın tümünün görünür olduğu varsayılmaz. İlgili konuşma zincirlerindeki belirsiz adayları önce kaynak dayanağıyla incele; teknik ID, portre, ses veya callback değerini çevrilecek metin sayma. Kaynak dışındaki vanilla/harici mod dayanağı eksikse bunu açıkça kaydet.
+Kalan diyalog ailesi 1.910 alan / 1.799 grup; radyo ailesi 848 alan / 848 grup. Güncel confirmed kuyruğu 43.408 (P1=7.833, P2=12.133, P3=23.442), ayrı review 3.049, Lua 162. Bunlar onaylı cümle veya oyun görünürlüğü sayısı değildir.
 
 ## Çeviri ve teslim
 
-1. Paket `inputs` hashlerini, kaynak pinini ve `selection.family` değerini doğrula. `tr`, `context_reviewed`, `runtime_evidence`, `runtime_review` ve gerçek `measurements` dışında paket alanlarını değiştirme.
-2. Önce bağlam: `converse/<konuşmacı>/<muhatap>/<indeks>` gibi pointerları, NPC çağıran dosyaları ve patch kökenini oku. Teknik veya görünmeyen aday için görünürlük kuralını kaynak dayanağıyla düzelt ve taslağı yeniden üret; sessizce kapsamdan silme.
-3. LOCKED ve birebir TM önerilerini kaynak/konuşmacı uyumuyla kontrol et. Öneri otomatik kabul değildir. Yeni tekrarlı terimi belirsizse REVIEW olarak, kesin karşılığı doğrulandıysa LOCKED için gerekçesiyle Sol'a bildir.
-4. Kaynakta olmayan şaka, küfür, bilgi veya lore ekleme. Floran, Glitch ve diğer konuşmacı seslerini koru. Placeholder, renk, sayı ve satır sonlarını değiştirme. Eksik vanilla metin için İngilizce fallback uydurma.
-5. `runtime_review.evidence` ve her grubun `runtime_evidence` kaydını gerçek kaynak dosyası ve açıklamayla tamamla. Görsel LQA yapılmadıysa `NOT TESTED` durumunu koru; kaynak ipucunu oyun testi gibi yazma.
-6. Gerçek çeviri süresini kaydet. İlk paket için süre tahmini veya hız yüzdesi uydurma. Sol her yeni/değişen Türkçe bağlam grubunu inceler.
-7. `local-luna` kökünde UTF-8 Python ortamıyla ön denetim:
+1. Paket `inputs`, pin ve `selection.family` değerlerini doğrula. Yalnız `tr`, `context_reviewed`, `runtime_evidence`, `runtime_review`, gerçek `measurements` düzenlenebilir. Başlık DRAFT olarak kalır; Sol dil onayı ayrı rapordadır.
+2. Her bağlamı konuşmacı ve muhatap türü, NPC çağıran dosyaları ve kaynak patch değeriyle oku. `/dialog/file.config:section` bağlantıları planner’ın `direct_dependencies=0` sonucundan bağımsız incelenmelidir.
+3. Yeni LOCKED kavramları: **kedi topluluğu**, **kavrayıcı başparmak**, **Yıldız Gözlemcisi**, **arkoloji**, **Siberuzay**, **Muz Romu**, **haiku**. Big Ape, Miniknog, Mos Lunan, Lemurian, Elysian, Zyen, Azriel, Assassinii, Gladiatii, Thornwing, X'i özel adları korunur. Elysian çoğulunu İngilizceden taşımadan Türkçe çek. Matriarch gibi bağlama göre anlam değiştiren unvanlarda genel kilit uydurma.
+4. TM önerisi otomatik onay değildir. Kaynakta olmayan lore, şaka veya bilgi ekleme; anlamı, olumsuz soruyu, zamir referansını ve muhatabın özelliklerini koru. Her grubun gerçek kaynak dayanağını yaz.
+5. Radyo mesajları için mesaj ID’sini çağıran script, pickup, biome veya görev zincirini ve portreyle konuşmacıyı doğrula. Teknik ID, callback ve portre yolunu çevirme.
+6. Canlı görsel oyun testi yapılmadıysa **LQA NOT TESTED** yaz. Gerçek çeviri süresini kaydet; tahmin üretme. Katalog/manifest/generated çıktıları değiştirmeden adayı Sol’a teslim et.
+
+Ön denetim (`local-luna` kökünde):
 
 ```powershell
 $env:PYTHONUTF8 = '1'
-& '../local-runtime/venv/Scripts/python.exe' tools/plan_translation.py --source ../local-runtime/fu_source --check-packet ../local-runtime/translation-planning-v066-dialog-first/packet.json
+& '../local-runtime/venv/Scripts/python.exe' tools/plan_translation.py --source ../local-runtime/fu_source --check-packet ../local-runtime/translation-planning-v067-dialog-next/packet.json
 ```
 
-Tamamlanan aday, ön denetim sonucu, gerçek süreler ve belirsiz bağlam notlarıyla Sol'a teslim edilir. İlk paketin dil incelemesi ve kaynak kapısı bitmeden katalog/sürüm manifestini değiştirme veya yayın yapma. Beyin işlemleri gerekiyorsa ana çalışma alanındaki `beyin-project.ps1` yardımcısını kullan.
+Yerel ZIP/build sonucu ve code commit checkpoint’te kayıtlıdır. Uzak yayın ve oyun kurulumu ayrı adımlardır. Beyin işlemleri ana proje klasöründeki `beyin-project.ps1` yardımcısıyla yürütülür.

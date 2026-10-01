@@ -604,6 +604,24 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Erithian | Bitki, mineral veya çiftlik canlısı adı | Ad | Erithian | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
 | Kamaran | Bitki, mineral veya çiftlik canlısı adı | Ad | Kamaran | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
 | Ita | Bitki, mineral veya çiftlik canlısı adı | Ad | Ita | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Big Ape | NPC diyalogları / özel ad | Özel ad | Big Ape | Büyük Maymun | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Miniknog | NPC diyalogları / özel ad | Özel ad | Miniknog | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Mos Lunan | NPC diyalogları / özel ad | Özel ad | Mos Lunan | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Lemurian / Lemurians | NPC diyalogları / özel ad | Özel ad | Lemurian | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Elysian / Elysians | NPC diyalogları / özel ad | Özel ad | Elysian | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Zyen | NPC diyalogları / özel ad | Özel ad | Zyen | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Azriel | NPC diyalogları / özel ad | Özel ad | Azriel | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Assassinii | NPC diyalogları / özel ad | Özel ad | Assassinii | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Gladiatii | NPC diyalogları / özel ad | Özel ad | Gladiatii | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Thornwing | NPC diyalogları / özel ad | Özel ad | Thornwing | - | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| X'i | NPC diyalogları / özel ad | Özel ad | X'i | X’i | LOCKED | v0.67 diyalog incelemesi: FU 6.5.8 dialog/converse.config.patch özel ad yazımı; genel çevrilen unvanları kapsamaz. |
+| Stargazer / Stargazers | NPC diyalogları / kavram | Kavram | Yıldız Gözlemcisi | Stargazer, Stargazers | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Clowder / Clowders | NPC diyalogları / kavram | Kavram | Kedi Topluluğu | mırıltı kümesi | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Arcology / Arcologies | NPC diyalogları / kavram | Kavram | Arkoloji | - | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Cyberspace | NPC diyalogları / kavram | Kavram | Siberuzay | - | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Haiku | NPC diyalogları / kavram | Kavram | Haiku | - | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Banana Rum | NPC diyalogları / kavram | Kavram | Muz Romu | Banana Rum | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
+| Opposable Thumb / Opposable Thumbs | NPC diyalogları / kavram | Kavram | Kavrayıcı Başparmak | karşılıklı başparmak | LOCKED | v0.67: dialog/catconverse.config veya dialog/converse.config.patch kaynak bağlamı; çekimli biçimlere kök denetimi uygulanır. |
 
 ## Kural
 
