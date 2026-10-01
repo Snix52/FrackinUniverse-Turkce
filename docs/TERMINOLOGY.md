@@ -577,6 +577,33 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Closed Fist | Örgüt özel adı | Özel ad | Closed Fist | Kapalı Yumruk | LOCKED | Örgütün adı korunur |
 | Stillborn God | Mitolojik varlık adı | Özel ad | Ölü Doğmuş Tanrı | Doğmamış Tanrı | LOCKED | Stillborn ve unborn farklı anlamdadır |
 | Juice Salvation Society | Kodeks içindeki örgüt adı | Özel ad | Meyve Suyu Kurtuluş Derneği | Plazma Kurtuluş Derneği | LOCKED | Plasmic Fluid numunelerini alan örgütün adı |
+| Beeflower / Bee Flower | Bitki, mineral veya çiftlik canlısı adı | Ad | Arı Çiçeği | Etçiçeği, Et Çiçeği, Beeflower, Bee Flower | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Copperbeak | Bitki, mineral veya çiftlik canlısı adı | Ad | Bakırgaga | Copperbeak, Bakır Gaga | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Ironbeak | Bitki, mineral veya çiftlik canlısı adı | Ad | Demirgaga | Ironbeak, Demir Gaga | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Aquapod | Bitki, mineral veya çiftlik canlısı adı | Ad | Su Kapsülü | Aquapod | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Apalite | Bitki, mineral veya çiftlik canlısı adı | Ad | Apalite | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Bella Morte | Bitki, mineral veya çiftlik canlısı adı | Ad | Bella Morte | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Kramil | Bitki, mineral veya çiftlik canlısı adı | Ad | Kramil | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Erchibud | Bitki, mineral veya çiftlik canlısı adı | Ad | Erchibud | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Shoat | Bitki, mineral veya çiftlik canlısı adı | Ad | Shoat | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Diodia | Bitki, mineral veya çiftlik canlısı adı | Ad | Diodia | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Kiri | Bitki, mineral veya çiftlik canlısı adı | Ad | Kiri | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Nakati | Bitki, mineral veya çiftlik canlısı adı | Ad | Nakati | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Piru | Bitki, mineral veya çiftlik canlısı adı | Ad | Piru | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Aenema | Bitki, mineral veya çiftlik canlısı adı | Ad | Aenema | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Arkaen | Bitki, mineral veya çiftlik canlısı adı | Ad | Arkaen | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Biscorn | Bitki, mineral veya çiftlik canlısı adı | Ad | Biscorn | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Blex | Bitki, mineral veya çiftlik canlısı adı | Ad | Blex | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Bolbohn | Bitki, mineral veya çiftlik canlısı adı | Ad | Bolbohn | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Bracken | Bitki, mineral veya çiftlik canlısı adı | Ad | Bracken | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Corvex | Bitki, mineral veya çiftlik canlısı adı | Ad | Corvex | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Duskiline | Bitki, mineral veya çiftlik canlısı adı | Ad | Duskiline | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Emera | Bitki, mineral veya çiftlik canlısı adı | Ad | Emera | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Exonite | Bitki, mineral veya çiftlik canlısı adı | Ad | Exonite | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Floralyt | Bitki, mineral veya çiftlik canlısı adı | Ad | Floralyt | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Erithian | Bitki, mineral veya çiftlik canlısı adı | Ad | Erithian | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Kamaran | Bitki, mineral veya çiftlik canlısı adı | Ad | Kamaran | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
+| Ita | Bitki, mineral veya çiftlik canlısı adı | Ad | Ita | - | LOCKED | 2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi. |
 
 ## Kural
 

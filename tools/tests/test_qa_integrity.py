@@ -141,6 +141,21 @@ class IntegrityTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'LOCKED'):
                     engine.validate(row(en, 'Yanlış karşılık'))
 
+    def test_farmable_and_livestock_names_keep_reviewed_stems(self):
+        engine = qa.Terminology(self.terms)
+        for en, good, bad in [
+            ('Beeflower Seed', 'Arı Çiçeği Tohumu', 'Etçiçeği Tohumu'),
+            ('Copperbeak Egg', 'Bakırgaga Yumurtası', 'Copperbeak Yumurtası'),
+            ('Ironbeak Egg', 'Demirgaga Yumurtası', 'Demir Gaga Yumurtası'),
+            ('Apalite Crystal Seed', 'Apalite Kristali Tohumu', 'Apalit Kristali Tohumu'),
+            ('Bella Morte', 'Bella Morte', 'Güzel Ölüm'),
+            ('Kramil provides protection.', 'Kramil koruma sağlar.', 'Kramel koruma sağlar.'),
+        ]:
+            with self.subTest(en=en):
+                engine.validate(row(en, good))
+                with self.assertRaisesRegex(ValueError, 'LOCKED'):
+                    engine.validate(row(en, bad))
+
     def test_terminology_context_and_exception_binding(self):
         engine = qa.Terminology(self.terms)
         for exception in self.terms['context_exceptions']:

@@ -1,0 +1,612 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-01",
+  "base_commit": "a70690b0",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "p0_fields": 1,
+    "p1_original_fields": 456,
+    "p1_approved_fields": 453,
+    "p1_original_groups": 350,
+    "p1_approved_groups": 347
+  },
+  "changes": {
+    "sentences": 11,
+    "item_names": 5,
+    "context_groups": 14,
+    "fields": 19
+  },
+  "corrections": [
+    {
+      "unit_id": "20a64e1bb4f5a93ac60c30272e8e18fab0e2147228db6cbb63115acd657bdf1a",
+      "en": "The seed of a bright yellow beeflower",
+      "before": "Parlak sarı bir etçiçeğinin tohumu",
+      "after": "Parlak sarı bir arı çiçeğinin tohumu.",
+      "reason": "Beeflower, Bee Flower Head ile aynı arı çiçeği ailesi; et bitkisi değil.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/Beeflower/beeflower.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/Beeflower/beeflower.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "79b00e7980d7bad5bf8fa4eccbf0df733f8e1cb99a21d0d9ab6e97e0812b3501",
+      "en": "Beeflower Seed",
+      "before": "Etçiçeği Tohumu",
+      "after": "Arı Çiçeği Tohumu",
+      "reason": "Mevcut Bee Flower Head / Arı Çiçeği Başı karşılığı.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/Beeflower/beeflower.object",
+          "pointer": "/shortdescription",
+          "origin": "objects/farmables/Beeflower/beeflower.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "c4aa4efc4343b22ee59fcf4a15369ab2bca83dfff30cca158ee73b2f0c566c08",
+      "en": "Nakati Ovoid",
+      "before": "Nakati Yumurtamsısı",
+      "after": "Yumurtamsı Nakati",
+      "reason": "Ovoid bir şekil tanımı; Yumurtamsısı doğal bir nesne adı değil.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/a_avali/nakatiseed.object",
+          "pointer": "/shortdescription",
+          "origin": "objects/farmables/a_avali/nakatiseed.object"
+        },
+        {
+          "asset": "objects/farmables/a_avali/wildnakatiseed.object",
+          "pointer": "/shortdescription",
+          "origin": "objects/farmables/a_avali/wildnakatiseed.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "154707dc205c4a42762097ac72ad076ff90b0fa3546fc905f28eb9bb6bf76ebf",
+      "en": "Small, barnacle-like colonies which grow long frond-like feeding filaments.",
+      "before": "Uzun, yaprak benzeri beslenme iplikleri çıkaran küçük, midyemsi koloniler.",
+      "after": "Uzun, yaprak benzeri beslenme iplikleri geliştiren, deniz palamuduna benzer küçük koloniler.",
+      "reason": "Barnacle midye değildir; benzetmenin türü korunur.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/a_avali/piruseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/a_avali/piruseed.object"
+        },
+        {
+          "asset": "objects/farmables/a_avali/wildpiruseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/a_avali/wildpiruseed.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "158e17654c74b23dd60c485db74e1fa98af2f636158540a8ec8d7cd6f4c03754",
+      "en": "Apalite Crystal Seed",
+      "before": "Apalit Kristali Tohumu",
+      "after": "Apalite Kristali Tohumu",
+      "reason": "Mevcut Apalite Kristali adını koru.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/apalite/apaliteseed.object",
+          "pointer": "/shortdescription",
+          "origin": "objects/farmables/apalite/apaliteseed.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "33a92de2b64e98d4dcef740b77f5f116e72a9a1e760e1b7d9883ac9bf5516923",
+      "en": "Hybridized Diodia. Still coppery, but helps resist poison.",
+      "before": "Melezlenmiş Diodia. Bakır rengini korur, zehre karşı dirence de yardımcı olur.",
+      "after": "Melezlenmiş Diodia. Bakır tadını korur, zehre karşı dirence de yardımcı olur.",
+      "reason": "FU produce/diodia.consumable.patch bakır tadını açıkça belirtir; renk anlamı yanlıştır.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/diodiahybrid/diodiahybridseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/diodiahybrid/diodiahybridseed.object"
+        },
+        {
+          "asset": "objects/farmables/diodiahybrid/wilddiodiahybridseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/diodiahybrid/wilddiodiahybridseed.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "80c000d2d65d750d6418074617a31f7319305b343f6dbe4504c78f66e992f316",
+      "en": "Hatches into a tiny chick and matures into a Copperbeak. The adult Copperbeak produces copper.",
+      "before": "Yumurtadan minik bir civciv çıkar ve büyüyünce Copperbeak olur. Yetişkin Copperbeak bakır üretir.",
+      "after": "Yumurtadan minik bir civciv çıkar ve büyüyünce Bakırgaga olur. Yetişkin Bakırgaga bakır üretir.",
+      "reason": "Önceden onaylı Copperbeak / Bakırgaga adı.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "4fd7d28739bc3798de65691f2cc4c10265d4ae6e924aec6d592647cd12c3b6c1",
+      "en": "Copperbeak Egg",
+      "before": "Copperbeak Yumurtası",
+      "after": "Bakırgaga Yumurtası",
+      "reason": "Önceden onaylı Copperbeak / Bakırgaga adı.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object",
+          "pointer": "/shortdescription",
+          "origin": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "198b7fcf2d77ce27c0933fca4508e056c29e60c1e9fdeb7bf83ad41dda5fedc3",
+      "en": "Hatches into a tiny erchibud, a bouncing lunar creature.",
+      "before": "Yumurtadan zıplayan, Ay kökenli minik bir erchibud çıkar.",
+      "after": "Yumurtadan zıplayan, ay kökenli minik bir Erchibud çıkar.",
+      "reason": "Lunar genel ay canlısıdır; Erchibud tür adı korunur.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/eggs/erchibudegg/erchibudegg.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/eggs/erchibudegg/erchibudegg.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "e202310cbaf6c5a92c5a6b32b1080a93affbabbfada1993496cc16eb9356de48",
+      "en": "Hatches into a tiny chick and matures into a Ironbeak. The adult Ironbeak produces iron.",
+      "before": "Yumurtadan minik bir civciv çıkar ve büyüyünce Ironbeak olur. Yetişkin Ironbeak demir üretir.",
+      "after": "Yumurtadan minik bir civciv çıkar ve büyüyünce Demirgaga olur. Yetişkin Demirgaga demir üretir.",
+      "reason": "Önceden onaylı Ironbeak / Demirgaga adı.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "f97f36bbf809f83bf8f0c4d86db80032103f20d0b4a280f5c4d547164083e0c7",
+      "en": "Ironbeak Egg",
+      "before": "Ironbeak Yumurtası",
+      "after": "Demirgaga Yumurtası",
+      "reason": "Önceden onaylı Ironbeak / Demirgaga adı.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object",
+          "pointer": "/shortdescription",
+          "origin": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "3f897976866d6f42a6f89a0159b8eb2721e333afc5a3b6ecb3f0d060a9de5b7d",
+      "en": "This is one ugly plant mutant. Immune to insanity, and increases damage.",
+      "before": "Çok çirkin bir mutant bitki. Deliliğe karşı bağışıklığı vardır ve hasarı artırır.",
+      "after": "Çok çirkin bir mutant bitki. Deliliğe karşı bağışıklık sağlar ve hasarı artırır.",
+      "reason": "Bitkinin tüketim etkisi oyuncuya yöneliktir.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/glarestalk/glarestalkseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/glarestalk/glarestalkseed.object"
+        },
+        {
+          "asset": "objects/farmables/glarestalk/wildglarestalkseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/glarestalk/wildglarestalkseed.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "f34153c8959d8dd9bd59f42f6466864282f4049d789c45195e84143d2ce2b530",
+      "en": "The ighant is a curious, fast-growing plant. Provides bounce.",
+      "before": "Ighant, hızla büyüyen ilginç bir bitkidir. Zıplama etkisi sağlar.",
+      "after": "Ighant, hızla büyüyen ilginç bir bitkidir. Sekme sağlar.",
+      "reason": "Bounce etkisi zıplama yüksekliğiyle karıştırılmamalı.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/ighant/ighantseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/ighant/ighantseed.object"
+        },
+        {
+          "asset": "objects/farmables/ighant/wildighantseed.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/ighant/wildighantseed.object"
+        }
+      ]
+    },
+    {
+      "unit_id": "9240ef95d51624dd23c14d6fb2d5208b6c34886ef0612df4579b139cef44d9c7",
+      "en": "Kramil is known for its potent anti-cold properties.",
+      "before": "Kramil, soğuğa karşı güçlü etkileriyle bilinir.",
+      "after": "Kramil, soğuğa karşı güçlü korumasıyla bilinir.",
+      "reason": "Anti-cold özellik oyuncuya soğuktan koruma sağlar.",
+      "occurrences": [
+        {
+          "asset": "objects/farmables/kramil/kramil.object",
+          "pointer": "/description",
+          "origin": "objects/farmables/kramil/kramil.object"
+        }
+      ]
+    }
+  ],
+  "new_locked_terms": [
+    {
+      "source": "Beeflower / Bee Flower",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Arı Çiçeği",
+      "forbidden": "Etçiçeği, Et Çiçeği, Beeflower, Bee Flower",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "tr_stem": "arı çiçe"
+    },
+    {
+      "source": "Copperbeak",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Bakırgaga",
+      "forbidden": "Copperbeak, Bakır Gaga",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "tr_stem": "bakırgaga"
+    },
+    {
+      "source": "Ironbeak",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Demirgaga",
+      "forbidden": "Ironbeak, Demir Gaga",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "tr_stem": "demirgaga"
+    },
+    {
+      "source": "Aquapod",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Su Kapsülü",
+      "forbidden": "Aquapod",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "tr_stem": "su kapsül"
+    },
+    {
+      "source": "Apalite",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Apalite",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "apalite"
+    },
+    {
+      "source": "Bella Morte",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Bella Morte",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "bella morte"
+    },
+    {
+      "source": "Kramil",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Kramil",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "kramil"
+    },
+    {
+      "source": "Erchibud",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Erchibud",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "erchibud"
+    },
+    {
+      "source": "Shoat",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Shoat",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "shoat"
+    },
+    {
+      "source": "Diodia",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Diodia",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "diodia"
+    },
+    {
+      "source": "Kiri",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Kiri",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "kiri"
+    },
+    {
+      "source": "Nakati",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Nakati",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "nakati"
+    },
+    {
+      "source": "Piru",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Piru",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "piru"
+    },
+    {
+      "source": "Aenema",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Aenema",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "aenema"
+    },
+    {
+      "source": "Arkaen",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Arkaen",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "arkaen"
+    },
+    {
+      "source": "Biscorn",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Biscorn",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "biscorn"
+    },
+    {
+      "source": "Blex",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Blex",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "blex"
+    },
+    {
+      "source": "Bolbohn",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Bolbohn",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "bolbohn"
+    },
+    {
+      "source": "Bracken",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Bracken",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "bracken"
+    },
+    {
+      "source": "Corvex",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Corvex",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "corvex"
+    },
+    {
+      "source": "Duskiline",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Duskiline",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "duskiline"
+    },
+    {
+      "source": "Emera",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Emera",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "emera"
+    },
+    {
+      "source": "Exonite",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Exonite",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "exonite"
+    },
+    {
+      "source": "Floralyt",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Floralyt",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "floralyt"
+    },
+    {
+      "source": "Erithian",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Erithian",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "erithian"
+    },
+    {
+      "source": "Kamaran",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Kamaran",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "kamaran"
+    },
+    {
+      "source": "Ita",
+      "context": "Bitki, mineral veya çiftlik canlısı adı",
+      "type": "Ad",
+      "tr": "Ita",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "2026-10-01 P0/P1 Sol incelemesi; kaynak ve önceki katalog adlarıyla eşleştirildi.",
+      "mode": "preserve",
+      "tr_stem": "ita"
+    }
+  ],
+  "excluded_fields": [
+    {
+      "asset": "objects/farmables/fu_scriptedfarmableexample/fu_scriptedfarmableexample.object",
+      "pointer": "/category"
+    },
+    {
+      "asset": "objects/farmables/fu_scriptedfarmableexample/fu_scriptedfarmableexample.object",
+      "pointer": "/description"
+    },
+    {
+      "asset": "objects/farmables/fu_scriptedfarmableexample/fu_scriptedfarmableexample.object",
+      "pointer": "/shortdescription"
+    }
+  ],
+  "static_reachability_pending": [
+    "objects/farmables/a_avali/wildkirifruitseed.object",
+    "objects/farmables/bluemelon/wildbluemelonseed.object",
+    "objects/farmables/diodiahybrid/wilddiodiahybridseed.object",
+    "objects/farmables/glarestalk/wildglarestalkseed.object",
+    "objects/farmables/goldenroot/wildgoldenrootseed.object"
+  ],
+  "limitations": [
+    "Görsel oyun içi LQA yapılmadı.",
+    "11 vanilla script bağlantısı FU checkout dışında; mevcudiyetleri bu incelemede doğrulanmadı.",
+    "flowerspring.object ve gaterepair.questtemplate alanlarının kaynağı FU patch katmanı; temel oyun dosyaları pinli FU checkout dışında."
+  ],
+  "candidate_hashes": {
+    "p0": "310d7688b570ec53ba700d06ad7065a165a1f0faf81dba844103e748dc4d80f5",
+    "p1": "d8cb719c705b6b28b5ce37955d78b67da6308df90e4d5b781f422fdd7f896c50"
+  },
+  "approved_packets": {
+    "p0": "../local-runtime/sol-review-p0-p1-20261001/p0.approved.packet.json",
+    "p1": "../local-runtime/sol-review-p0-p1-20261001/p1.approved.packet.json"
+  },
+  "catalog_integration": "NOT_APPLIED",
+  "publication": "NOT_PUBLISHED",
+  "translation_memory_note": "Emera açıklamasındaki mevcut onaylı birebir TM karşılığı korundu.",
+  "approved_packet_sha256": {
+    "p0": "f65bf8bf5d2c7ff44385d99afb5cb2aa40cee738a53f1873fc424e0597cf1691",
+    "p1": "d513fedebbf14d7bf1d78fa85f9e811b5b7bbdfe28ab1a7493b31e87caa6ceb8"
+  },
+  "verification": {
+    "unit_tests": 237,
+    "packet_preflight": {
+      "p0": {
+        "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+        "fields": 1,
+        "context_units": 1,
+        "qa": {
+          "catalog_units_checked": 22961,
+          "raw_units_checked": 115,
+          "locked_terms": 588
+        },
+        "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+      },
+      "p1": {
+        "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+        "fields": 453,
+        "context_units": 347,
+        "qa": {
+          "catalog_units_checked": 23413,
+          "raw_units_checked": 115,
+          "locked_terms": 588
+        },
+        "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+      }
+    },
+    "combined_qa": {
+      "catalog_units_checked": 23414,
+      "raw_units_checked": 115,
+      "locked_terms": 588
+    }
+  },
+  "runtime_lqa": "NOT_TESTED"
+}

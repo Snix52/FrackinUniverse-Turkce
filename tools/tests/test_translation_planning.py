@@ -208,6 +208,37 @@ class PlanningTests(unittest.TestCase):
             with self.subTest(tr=tr), self.assertRaises(ValueError):
                 planner.check_packet(packet, expected, [])
 
+    def test_exact_locked_preserved_name_passes_but_unchanged_prose_does_not(self):
+        packet, _ = self.make_packet()
+        unit = packet['units'][0]
+        unit.update(en='Kramil', tr='Kramil')
+        for occurrence in unit['occurrences']:
+            occurrence['pointer'] = '/shortdescription'
+        packet['basis_sha256'] = planner.digest(planner.immutable_packet(packet))
+        expected = copy.deepcopy(packet)
+        catalog = planner.read(planner.TOOLS / 'ceviriler.json')['translations']
+        self.assertEqual(planner.check_packet(packet, expected, catalog)['fields'], 2)
+        for occurrence in unit['occurrences']:
+            occurrence['pointer'] = '/description'
+        packet['basis_sha256'] = planner.digest(planner.immutable_packet(packet))
+        with self.assertRaisesRegex(ValueError, 'unchanged'):
+            planner.check_packet(packet, copy.deepcopy(packet), catalog)
+
+    def test_scripted_farmable_example_is_excluded_but_normal_wheat_remains(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = {'shortdescription': 'Wheat Seed', 'description': 'A staple crop.'}
+            example = root / 'objects/farmables/fu_scriptedfarmableexample/fu_scriptedfarmableexample.object'
+            example.parent.mkdir(parents=True)
+            example.write_text(json.dumps(data), encoding='utf-8')
+            normal = root / 'objects/farmables/wheat/wheatseed.object'
+            normal.parent.mkdir(parents=True)
+            normal.write_text(json.dumps(data), encoding='utf-8')
+            catalog = root / 'catalog.json'
+            catalog.write_text('{"translations": []}', encoding='utf-8')
+            rows = audit.audit(root, catalog, include_rows=True)['remaining_rows']
+            self.assertEqual({r['asset'] for r in rows}, {'objects/farmables/wheat/wheatseed.object'})
+
 
 if __name__ == '__main__':
     unittest.main()

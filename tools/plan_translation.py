@@ -287,7 +287,8 @@ def check_packet(packet, expected, catalog, tools=TOOLS):
     for unit in packet['units']:
         if unit.get('context_reviewed') is not True or not valid_evidence(unit.get('runtime_evidence')):
             raise ValueError('Unreviewed context/runtime evidence: ' + unit['id'])
-        if not isinstance(unit.get('tr'), str) or not unit['tr'].strip() or unit['tr'] == unit['en']:
+        if (not isinstance(unit.get('tr'), str) or not unit['tr'].strip()
+                or (unit['tr'] == unit['en'] and not preserved_name(unit, tools))):
             raise ValueError('Missing or unchanged translation: ' + unit['id'])
         if unit['en'].count('\n') != unit['tr'].count('\n'):
             raise ValueError('Newline count mismatch: ' + unit['id'])
@@ -301,6 +302,16 @@ def check_packet(packet, expected, catalog, tools=TOOLS):
     return {'status': 'TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED',
             'fields': len(added), 'context_units': len(packet['units']), 'qa': qa,
             'note': 'Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required.'}
+
+
+def preserved_name(unit, tools=TOOLS):
+    """Only an exact LOCKED preserve term in a name field may remain unchanged."""
+    name_fields = {'/shortdescription', '/title', '/displayName', '/speciesName'}
+    if not unit['occurrences'] or any(o['pointer'] not in name_fields for o in unit['occurrences']):
+        return False
+    return any(term.get('status') == 'LOCKED' and term.get('mode') == 'preserve'
+               and unit['en'] in term['source'].split(' / ') and unit['tr'] == unit['en']
+               for term in read(tools / 'locked_terms.json')['terms'])
 
 
 def valid_evidence(value):

@@ -57,6 +57,10 @@ python tools/plan_translation.py --source ../local-runtime/fu_source --check-pac
 
 Bu komut temiz pinli kaynağı yeniden tarar; kaynak/katalog/kurallar değişmişse veya paket alanı kayıp/fazlaysa reddeder. Tek Türkçe karşılığı grubun bütün alanlarına bellekte uygular; mevcut katalog ve manifestlerle birlikte proje QA'sını çalıştırır. Sayı, kontrol kodu, renk, satır sonu, terminoloji ve TM kuralları geçerlidir. Boş çeviri, aynı kalan İngilizce veya eksik insan bağlam onayı reddedilir. Kanıt notlarının içeriği insan tarafından doğrulanır; script bir metin notundan gerçek oyun erişilebilirliğini ispatlamaz.
 
+Tam metni bir LOCKED `mode=preserve` kaydıyla eşleşen özel ad, yalnız ad alanında (`shortdescription`, `title`, `displayName`, `speciesName`) kaynakla aynı kalabilir. `Bella Morte` ve `Kramil` bu kapsamdadır. Aynı kural bir açıklama cümlesinin İngilizce bırakılmasına izin vermez; insan bağlam incelemesi ve bütün QA kuralları yine gerekir.
+
+1 Ekim Sol incelemesinde `objects/farmables/fu_scriptedfarmableexample/fu_scriptedfarmableexample.object` normal oynanışa bağlanmayan geliştirme örneği olarak mevcut dışlama listesine alındı. Kaynakta bu kimliğe tarif, araştırma, satıcı, düşürme veya yerleşim bağlantısı yok; `printable=false`. Normal buğday nesneleri kapsamda kalır. Diğer bir nesnenin statik bağlantısının bulunamaması tek başına ölü asset kararı değildir; dinamik, temel oyun ve harici mod bağlantıları ayrıca inceleme notunda belirtilir.
+
 ## Sol ve yayın
 
 Sol her yeni/değişen bağlam grubunu anlam, doğal Türkçe ve karakter sesi açısından inceler. Aynı çevirinin kullanıldığı bütün alanların bağlama uyumunu kontrol eder. Dil incelemesi sonrasında mevcut sürüm manifesti, allowlist, exact-source kapısı, tam build, CI ve oyun içi LQA akışı sürer. Ön denetim bu kapıların yerine geçmez ve paketi kataloğa otomatik eklemez.
