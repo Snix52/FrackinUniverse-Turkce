@@ -649,8 +649,21 @@ Altı taşan/uzun etiket kısaltıldı. GPS Lua başlıkları ve gemi bilgileri,
 
 ## 1 Ekim 2026 — v0.69 Sol incelemesi ve yerel paket
 
-399 alan / 350 bağlam / 269 benzersiz EN incelendi; 44 grupta 45 alan düzeltildi. Bağlam başına 47, tekrarlar dahil 49 cümle/kısa ifade değişti. Katalog 15.772, LOCKED 619 (Barbatus, CySol, Zaibatsu, Pyreite). Önceki 15.373 alan aynen korunur. Tam önce/sonra: docs/reviews/dialogue3-20261001.json; LQA ve Sefton REVIEW sınırı: docs/LQA_V069_20261001.md.
+399 alan / 350 bağlam / 269 benzersiz EN incelendi; 44 grupta 45 alan düzeltildi. Bağlam başına 48, tekrarlar dahil 50 cümle/kısa ifade değişti. Katalog 15.772, LOCKED 619 (Barbatus, CySol, Zaibatsu, Pyreite). Önceki 15.373 alan aynen korunur. Tam önce/sonra: docs/reviews/dialogue3-20261001.json; LQA ve Sefton REVIEW sınırı: docs/LQA_V069_20261001.md.
 
 Kod/inceleme commit: 0f7e3f6f774cabfc5e7bccb6af8fa91a780dc52f. Statik QA, pinli tam build, source/UI/SAIL kapıları, generated koruması, yeni paket üzerinde 4 Lua + 8 UI testi PASS. Genel suite ilk 259 testte eski gate sürüm sabiti hatasını yakaladı; sabit düzeltildi ve üç v069 regresyonu tekrar PASS. CI tüm suite’i son kaynakta çalıştıracak. FU pini aynı. Yerel build ../local-runtime/build-v069-20261001, paket kanıtı package-evidence.json.
 
 Sıradaki boş ve güncel paket ../local-runtime/translation-planning-v069-dialog-next/packet.json: 375 alan / 350 grup, 137 TM öneri grubu. Kalan confirmed 42.629, dialog 1.131; review 3.049, Lua 162. Eski radio paketi bayat, radyo başlayınca yeniden üret. Local Sol yolu local-repo, Luna yolu local-luna. GitHub generated yayını ve son iki checkout eşitlemesi bu kayıtta henüz bekliyor. Oyun içi LQA NOT TESTED.
+
+
+### v0.69 yayın tamamlandı — 1 Ekim 2026
+
+GitHub kaynak commit ba08b98c9899904dc03818508013411ea46c1b6f; generated yayın commit 61f66931f10841cb2be77df905eac37f1b596762. Build/QA https://github.com/Snix52/FrackinUniverse-Turkce/actions/runs/36912154641 ve Remaining Scope Audit https://github.com/Snix52/FrackinUniverse-Turkce/actions/runs/36912155039 SUCCESS. CI tüm 259 regresyonu, bütün v045–v069 kaynak kapılarını, tam build/ZIP/generated yayın kapısını tamamladı.
+
+Yayımlanan v0.69.0-beta ZIP, 4.948 dosyalık FU_Turkce ağacı, katalog ve build input hashleri yerel doğrulanmış paketle birebir eşleşiyor. Tek güncel kamuya açık paket kanıtı dist/build-evidence.json. Doğrudan main yayını yapıldı; PR yok. Bu çalışma Steam Atölye veya oyuna kurulum yapmadı.
+
+Son cümle muhasebesi: Bender repliğinin iki cümlesi de değişmiştir. Bağlam toplamı 48, alan tekrarları dahil **50** değişmiş cümle/kısa ifade. İlk ara sayım 47/49 idi; yalnız kayıt sayımı düzeltildi, onaylı EN/TR ve paket içeriği değişmedi. İnceleme raporundaki sözlük atfı bankayı kanıtlayan sözlük maddesi gibi sunulmayacak şekilde ayrıldı; banka yorumu bağlam çıkarımıdır.
+
+Beyin kayıt/receipt sonuçları aşağıda; son docs commit sonrası local-repo ve temiz local-luna main ile ff-only eşitlenir. Güncel sonraki paket ../local-runtime/translation-planning-v069-dialog-next/packet.json, 375 alan/350 bağlam, input ve basis doğrulandı, boş taslak teknik kabulden reddedildi. Oyun içi LQA NOT TESTED; Sefton sözlük/lore karşılığı REVIEW.
+
+Beyin: notes/p-local-c9ce88775f19f9eb7e39/fu-v069-dialogue-published-20261001.md başarıyla oluşturuldu ve kind/project/body geri okundu. Ana proje kökünden beyin-project.ps1 sync PASS, warnings/conflicts yok. Receipt fu-v069-dialogue-published-20261001, codex harness ve geçerli session/refs geri okuma PASS. Receipt kaynağı receipts/aac91509d4254ddff19512a5edefc02b23be90f8ea34f1e8be797a5c4eebf35f.md. Gereksiz public CI run numaraları hafıza gövdesine alınmadı; güvenlik denetimi bypass edilmedi.

@@ -16,8 +16,8 @@
   "changes": {
     "context_groups": 44,
     "fields": 45,
-    "sentences_by_context": 47,
-    "sentences_including_repeated_fields": 49,
+    "sentences_by_context": 48,
+    "sentences_including_repeated_fields": 50,
     "count_method": "Elle sayılan değişmiş Türkçe cümle ve noktalama ile ayrılmış kısa konuşma ifadeleri; değişmeyen parçalar sayılmaz. Aynı repliğin ayrı konuşmacı bağlamı ayrı sayılır; occurrence tekrarları yalnız including_repeated_fields toplamına eklenir."
   },
   "corrections": [
@@ -191,8 +191,8 @@
       "en": "Youse a bender? wait, that doesn't sound quite Isle.",
       "before": "Sen bir robot musun? Yok, kulağa pek doğru gelmedi.",
       "after": "Sen Bender mısın? Dur, kulağa pek doğru gelmedi.",
-      "reason": "Robot kimliğine ilişkin Bender göndermesi ve ikinci cümlenin geri çektiği çift anlam korundu; özel gönderme genel robot sözcüğüne indirgenmedi.",
-      "changed_sentences": 1,
+      "reason": "Robot kimliğine ilişkin Bender göndermesi ve ikinci cümlenin geri çektiği çift anlam korundu; özel gönderme genel robot sözcüğüne indirgenmedi. İki soru/geri çekme cümlesi de değiştiğinden ikisi ayrı sayılır.",
+      "changed_sentences": 2,
       "occurrences": [
         {
           "asset": "dialog/converse.config",
@@ -753,7 +753,7 @@
     },
     {
       "url": "https://people.sc.fsu.edu/~jburkardt/fun/wordplay/rhyme_slang.html",
-      "use": "Ball and chalk/walk, Pope of Rome/home, Sherman tank/bank kafiye bağlamı"
+      "use": "Ball of chalk/walk: yürüyüş. Diğer banka/ev yorumları kaynak bağlamı ve aşağıdaki çıkarım notlarıyla ayrı değerlendirilir."
     },
     {
       "url": "https://www.worldwidewords.org/polari.html",

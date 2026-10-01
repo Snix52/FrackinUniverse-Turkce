@@ -2,7 +2,7 @@
 
 ## Tamamlanan dilim
 
-Üçüncü diyalog paketi Sol incelemesiyle v0.69.0-beta kataloğuna alındı: **399 alan / 350 bağlam grubu**. Önceki 15.373 alan aynen korunarak toplam **15.772** oldu. **4 yeni LOCKED**, toplam **619**. 44 grupta 45 alan, tekrarlar ve kısa konuşma ifadeleri dahil **49 düzeltme**; tüm önce/sonra ve gerekçeler [inceleme kaydında](reviews/dialogue3-20261001.json). [LQA kaydı](LQA_V069_20261001.md) kaynak erişimi sınırlarını içerir.
+Üçüncü diyalog paketi Sol incelemesiyle v0.69.0-beta kataloğuna alındı: **399 alan / 350 bağlam grubu**. Önceki 15.373 alan aynen korunarak toplam **15.772** oldu. **4 yeni LOCKED**, toplam **619**. 44 grupta 45 alan, tekrarlar ve kısa konuşma ifadeleri dahil **50 düzeltme**; tüm önce/sonra ve gerekçeler [inceleme kaydında](reviews/dialogue3-20261001.json). [LQA kaydı](LQA_V069_20261001.md) kaynak erişimi sınırlarını içerir.
 
 Çalışma checkout’u `../local-luna/`; Sol `../local-repo/`. Başlamadan Git durumunu ve checkpoint’i oku. FU 6.5.8 kaynağı `../local-runtime/fu_source/`, pin `bb58383c0d16c1152e3439e606b39ff82288b586` korunur.
 
