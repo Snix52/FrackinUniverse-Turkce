@@ -55,6 +55,21 @@ class PlanningTests(unittest.TestCase):
         self.assertEqual(fam, 'objects/crafting')
         self.assertEqual(len(units), 1)
 
+    def test_dialogue_first_keeps_critical_priority_and_review_pool(self):
+        policy = planner.read(planner.TOOLS / 'translation_priorities.json')
+        for asset, pointer in [('dialog/converse.config', '/converse/default/0'),
+                               ('radiomessages/test.radiomessages', '/message/text'),
+                               ('npcs/crew/test.npctype', '/scriptConfig/dialog/converse/0'),
+                               ('objects/themed/example.object', '/chatOptions/0')]:
+            with self.subTest(asset=asset):
+                self.assertEqual(planner.priority(candidate(asset, pointer), policy)[0], 'P1')
+        self.assertEqual(planner.priority(candidate('quests/test.questtemplate', '/text'), policy)[0], 'P0')
+        self.assertEqual(planner.priority(candidate('objects/themed/example.object'), policy)[0], 'P3')
+        raw = {'asset': 'npcs/crew/test.npctype', 'pointer': '/scriptConfig/dialog/converse/0',
+               'value': 'Example speech', 'origin': 'npcs/crew/test.npctype', 'confidence': 'review'}
+        queued = planner.queue_rows({'remaining_rows': [raw], 'lua_review': {'rows': []}}, policy)[0]
+        self.assertEqual((queued['priority'], queued['pool']), ('P1', 'review'))
+
     def test_gameplay_keys_raise_machine_priority_outside_crafting_folder(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

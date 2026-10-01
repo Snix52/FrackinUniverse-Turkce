@@ -2,8 +2,8 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.65.2-beta",
-  "note": "v0.65.2 Slimeperson ve Shadow S.A.I.L. gemi konuşmaları tamamlandı; Ebrar'ın Gülü ve FU 6.5.8 pini korundu.",
+  "translation_version": "0.66.0-beta",
+  "note": "v0.66: Bilim Karakolu yer imi ve 453 P1 yetiştirme alanı eklendi; FU 6.5.8 kaynak pini korundu.",
   "translations": [
     {
       "asset": "zb/researchTree/data.config",
@@ -101483,6 +101483,3192 @@
       "en": "Rebooting requires a conscious entity to interact with the S.A.I.L console.",
       "tr": "Yeniden başlatma için bilinçli bir varlığın S.A.I.L. konsoluyla etkileşime geçmesi gerekir.",
       "section": "v0.65.2 S.A.I.L. gemi konuşmaları"
+    },
+    {
+      "asset": "quests/story/gaterepair.questtemplate",
+      "pointer": "/scriptConfig/outpostBookmark2/bookmarkName",
+      "en": "Science Outpost",
+      "tr": "Bilim Karakolu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "quests/story/gaterepair.questtemplate.patch"
+      }
+    },
+    {
+      "asset": "objects/farmables/Beeflower/beeflower.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/Beeflower/beeflower.object",
+      "pointer": "/description",
+      "en": "The seed of a bright yellow beeflower",
+      "tr": "Parlak sarı bir arı çiçeğinin tohumu.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/Beeflower/beeflower.object",
+      "pointer": "/shortdescription",
+      "en": "Beeflower Seed",
+      "tr": "Arı Çiçeği Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/kirifruitseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/kirifruitseed.object",
+      "pointer": "/description",
+      "en": "The fruiting body of a subterranean slime mold. This one has already begun sporing.",
+      "tr": "Yer altı sümüksü küfünün üreme gövdesi. Bu örnek spor saçmaya başlamış.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildkirifruitseed.object",
+      "pointer": "/description",
+      "en": "The fruiting body of a subterranean slime mold. This one has already begun sporing.",
+      "tr": "Yer altı sümüksü küfünün üreme gövdesi. Bu örnek spor saçmaya başlamış.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/kirifruitseed.object",
+      "pointer": "/shortdescription",
+      "en": "Sporing Kiri Fruit [FU]",
+      "tr": "Spor Saçan Kiri Meyvesi [FU]",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildkirifruitseed.object",
+      "pointer": "/shortdescription",
+      "en": "Sporing Kiri Fruit [FU]",
+      "tr": "Spor Saçan Kiri Meyvesi [FU]",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/nakatiseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/nakatiseed.object",
+      "pointer": "/description",
+      "en": "A bioluminescent ovoid, eventually this'll grow into a colony.",
+      "tr": "Biyolüminesan, yumurta biçimli bir oluşum; zamanla koloniye dönüşecek.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildnakatiseed.object",
+      "pointer": "/description",
+      "en": "A bioluminescent ovoid, eventually this'll grow into a colony.",
+      "tr": "Biyolüminesan, yumurta biçimli bir oluşum; zamanla koloniye dönüşecek.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/nakatiseed.object",
+      "pointer": "/shortdescription",
+      "en": "Nakati Ovoid",
+      "tr": "Yumurtamsı Nakati",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildnakatiseed.object",
+      "pointer": "/shortdescription",
+      "en": "Nakati Ovoid",
+      "tr": "Yumurtamsı Nakati",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/piruseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/piruseed.object",
+      "pointer": "/description",
+      "en": "Small, barnacle-like colonies which grow long frond-like feeding filaments.",
+      "tr": "Uzun, yaprak benzeri beslenme iplikleri geliştiren, deniz palamuduna benzer küçük koloniler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildpiruseed.object",
+      "pointer": "/description",
+      "en": "Small, barnacle-like colonies which grow long frond-like feeding filaments.",
+      "tr": "Uzun, yaprak benzeri beslenme iplikleri geliştiren, deniz palamuduna benzer küçük koloniler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/piruseed.object",
+      "pointer": "/shortdescription",
+      "en": "Piru Colony [FU]",
+      "tr": "Piru Kolonisi [FU]",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildpiruseed.object",
+      "pointer": "/shortdescription",
+      "en": "Piru Colony [FU]",
+      "tr": "Piru Kolonisi [FU]",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildkirifruitseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildnakatiseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/a_avali/wildpiruseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aenemaflower/aenemaflower.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aenemaflower/aenemaflower.object",
+      "pointer": "/description",
+      "en": "The buds on this plant produce caliginous gas and are hot to the touch.",
+      "tr": "Bu bitkinin tomurcukları Caliginous Gazı üretir ve dokununca sıcaktır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aenemaflower/aenemaflower.object",
+      "pointer": "/shortdescription",
+      "en": "Aenema Flower",
+      "tr": "Aenema Çiçeği",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/algaeseed/algaeseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/algaeseed/algaeseed.object",
+      "pointer": "/description",
+      "en": "An interesting algae type. Excellent biofuel.",
+      "tr": "İlginç bir yosun türü. Biyoyakıt olarak çok verimli.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/algaeseed/wildalgaeseed.object",
+      "pointer": "/description",
+      "en": "An interesting algae type. Excellent biofuel.",
+      "tr": "İlginç bir yosun türü. Biyoyakıt olarak çok verimli.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/algaeseed/algaeseed.object",
+      "pointer": "/shortdescription",
+      "en": "Algae Pod",
+      "tr": "Yosun Kapsülü",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/algaeseed/wildalgaeseed.object",
+      "pointer": "/shortdescription",
+      "en": "Algae Pod",
+      "tr": "Yosun Kapsülü",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/algaeseed/wildalgaeseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/apalite/apaliteseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/apalite/apaliteseed.object",
+      "pointer": "/description",
+      "en": "A blue crystal that grows in pairs.",
+      "tr": "Çiftler hâlinde büyüyen mavi bir kristal.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/apalite/apaliteseed.object",
+      "pointer": "/shortdescription",
+      "en": "Apalite Crystal Seed",
+      "tr": "Apalite Kristali Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aquapod/aquapodseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aquapod/aquapodseed.object",
+      "pointer": "/description",
+      "en": "Its fruit increases swim speed. Must be planted in liquid.",
+      "tr": "Meyvesi yüzme hızını artırır. Sıvıya ekilmelidir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aquapod/aquapodseed.object",
+      "pointer": "/shortdescription",
+      "en": "Aquapod Bud",
+      "tr": "Su Kapsülü Tomurcuğu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aquapod/wildaquapodseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aquapod/wildaquapodseed.object",
+      "pointer": "/description",
+      "en": "Its fruit enables rapid movement when suspended in liquid.",
+      "tr": "Meyvesi, sıvı içinde asılıyken hızla hareket etmeyi sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/aquapod/wildaquapodseed.object",
+      "pointer": "/shortdescription",
+      "en": "Aquapod",
+      "tr": "Su Kapsülü",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/arkaentree/arkaentree.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/arkaentree/arkaentree.object",
+      "pointer": "/description",
+      "en": "Sprouts odd, dangerous dimensional darts.",
+      "tr": "Tuhaf ve tehlikeli boyutsal iğneler verir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/arkaentree/arkaentree.object",
+      "pointer": "/shortdescription",
+      "en": "Arkaen Bush",
+      "tr": "Arkaen Çalısı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikancactus/avikancactusseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikancactus/avikancactusseed.object",
+      "pointer": "/description",
+      "en": "Cacti originating from Kadavan, but with variations in genetics that sets them apart.",
+      "tr": "Kadavan kökenli kaktüsler; genetik farklılıkları onları diğerlerinden ayırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikancactus/wildavikancactusseed.object",
+      "pointer": "/description",
+      "en": "Cacti originating from Kadavan, but with variations in genetics that sets them apart.",
+      "tr": "Kadavan kökenli kaktüsler; genetik farklılıkları onları diğerlerinden ayırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikancactus/avikancactusseed.object",
+      "pointer": "/shortdescription",
+      "en": "Kadavan Cactus Seed",
+      "tr": "Kadavan Kaktüsü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikancactus/wildavikancactusseed.object",
+      "pointer": "/shortdescription",
+      "en": "Kadavan Cactus Seed",
+      "tr": "Kadavan Kaktüsü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikancactus/wildavikancactusseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikanspiceplant/avikanspiceplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikanspiceplant/avikanspiceplantseed.object",
+      "pointer": "/description",
+      "en": "Spices can be made by drying this plants fruits.",
+      "tr": "Bu bitkinin meyveleri kurutularak baharat yapılabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikanspiceplant/wildavikanspiceplantseed.object",
+      "pointer": "/description",
+      "en": "Spices can be made by drying this plants fruits.",
+      "tr": "Bu bitkinin meyveleri kurutularak baharat yapılabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikanspiceplant/avikanspiceplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Kadavan Spice Seed",
+      "tr": "Kadavan Baharatı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikanspiceplant/wildavikanspiceplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Kadavan Spice Seed",
+      "tr": "Kadavan Baharatı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/avikanspiceplant/wildavikanspiceplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bamboo/bambooseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bamboo/bambooseed.object",
+      "pointer": "/description",
+      "en": "It's bamboo. Makes for some nice furniture.",
+      "tr": "Bambu işte. Güzel mobilyalar yapılabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bamboo/wildbambooseed.object",
+      "pointer": "/description",
+      "en": "It's bamboo. Makes for some nice furniture.",
+      "tr": "Bambu işte. Güzel mobilyalar yapılabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bamboo/bambooseed.object",
+      "pointer": "/shortdescription",
+      "en": "Micro-Bamboo",
+      "tr": "Mikro Bambu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bamboo/wildbambooseed.object",
+      "pointer": "/shortdescription",
+      "en": "Micro-Bamboo",
+      "tr": "Mikro Bambu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bamboo/wildbambooseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/batterystem/batterystem.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/batterystem/batterystem.object",
+      "pointer": "/description",
+      "en": "Not surprisingly, these are jammed with energy.",
+      "tr": "Şaşırtıcı değil; enerjiyle tıka basa dolu.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/batterystem/batterystem.object",
+      "pointer": "/shortdescription",
+      "en": "Battery Stem",
+      "tr": "Pil Sapı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/beetlesproutseed/beetlesproutseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/beetlesproutseed/beetlesproutseed.object",
+      "pointer": "/description",
+      "en": "A strange insect-jelly plant. Very tough.",
+      "tr": "Tuhaf, böcek jelinden oluşmuş bir bitki. Çok dayanıklı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/beetlesproutseed/beetlesproutseed.object",
+      "pointer": "/shortdescription",
+      "en": "Beetle Sprout",
+      "tr": "Böcek Filizi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bellamorte/bellamorte.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bellamorte/bellamorte.object",
+      "pointer": "/description",
+      "en": "Produces poisonous barbs great for killing stuff.",
+      "tr": "Bir şeyleri öldürmekte çok işe yarayan zehirli dikenler üretir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bellamorte/bellamorte.object",
+      "pointer": "/shortdescription",
+      "en": "Bella Morte",
+      "tr": "Bella Morte",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomblue.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomblue.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomgreen.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroompurple.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomred.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomyellow.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomblue.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomgreen.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroompurple.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomred.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomyellow.object",
+      "pointer": "/description",
+      "en": "Provides colored light.",
+      "tr": "Renkli ışık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomblue.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Blue Mushroom",
+      "tr": "Parlayan Mavi Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomblue.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Blue Mushroom",
+      "tr": "Parlayan Mavi Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomgreen.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomgreen.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Green Mushroom",
+      "tr": "Parlayan Yeşil Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomgreen.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Green Mushroom",
+      "tr": "Parlayan Yeşil Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroompurple.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroompurple.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Purple Mushroom",
+      "tr": "Parlayan Mor Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroompurple.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Purple Mushroom",
+      "tr": "Parlayan Mor Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomred.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomred.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Red Mushroom",
+      "tr": "Parlayan Kırmızı Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomred.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Red Mushroom",
+      "tr": "Parlayan Kırmızı Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomyellow.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/fubioshroomyellow.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Yellow Mushroom",
+      "tr": "Parlayan Sarı Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomyellow.object",
+      "pointer": "/shortdescription",
+      "en": "Glowing Yellow Mushroom",
+      "tr": "Parlayan Sarı Mantar",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomblue.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomgreen.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroompurple.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomred.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bioshrooms/wildfubioshroomyellow.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/biscorn/biscornseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/biscorn/biscornseed.object",
+      "pointer": "/description",
+      "en": "A farmable dog treat. Boosts health and energy.",
+      "tr": "Yetiştirilebilen bir köpek ödül maması. Sağlığı ve enerjiyi artırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/biscorn/wildbiscornseed.object",
+      "pointer": "/description",
+      "en": "A farmable dog treat. Boosts health and energy.",
+      "tr": "Yetiştirilebilen bir köpek ödül maması. Sağlığı ve enerjiyi artırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/biscorn/biscornseed.object",
+      "pointer": "/shortdescription",
+      "en": "Biscorn Seed",
+      "tr": "Biscorn Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/biscorn/wildbiscornseed.object",
+      "pointer": "/shortdescription",
+      "en": "Biscorn Seed",
+      "tr": "Biscorn Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/biscorn/wildbiscornseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bladetree/bladetree.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bladetree/bladetree.object",
+      "pointer": "/description",
+      "en": "The barbs on this tree are as sharp as knives and rich in titanium.",
+      "tr": "Bu ağacın dikenleri bıçak kadar keskin ve titanyum bakımından zengindir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bladetree/bladetree.object",
+      "pointer": "/shortdescription",
+      "en": "Blade Tree",
+      "tr": "Bıçak Ağacı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blexcactus/blexplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blexcactus/blexplantseed.object",
+      "pointer": "/description",
+      "en": "Blex Cactus is known to be energizing.",
+      "tr": "Blex Kaktüsünün enerji verdiği bilinir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blexcactus/wildblexplantseed.object",
+      "pointer": "/description",
+      "en": "Blex Cactus is known to be energizing.",
+      "tr": "Blex Kaktüsünün enerji verdiği bilinir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blexcactus/blexplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blex Cactus Bulb",
+      "tr": "Blex Kaktüsü Yumrusu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blexcactus/wildblexplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blexcactus/wildblexplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blex Cactus Seed",
+      "tr": "Blex Kaktüsü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blisterbush/blisterbushplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blisterbush/blisterbushplantseed.object",
+      "pointer": "/description",
+      "en": "A bioluminescent mutant plant, with numerous applications.",
+      "tr": "Pek çok alanda kullanılabilen biyolüminesan bir mutant bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blisterbush/wildblisterbushplantseed.object",
+      "pointer": "/description",
+      "en": "A bioluminescent mutant plant, with numerous applications.",
+      "tr": "Pek çok alanda kullanılabilen biyolüminesan bir mutant bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blisterbush/blisterbushplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blister Pod",
+      "tr": "Kabarcık Kapsülü",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blisterbush/wildblisterbushplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blister Pod",
+      "tr": "Kabarcık Kapsülü",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blisterbush/wildblisterbushplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blizzberry/blizzberryseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blizzberry/blizzberryseed.object",
+      "pointer": "/description",
+      "en": "Helps provide immunity to even the most extreme cold.",
+      "tr": "En şiddetli soğuğa karşı bile bağışıklık sağlamaya yardımcı olur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blizzberry/blizzberryseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blizzberry Seed",
+      "tr": "Blizzberry Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blizzberry/wildblizzberryseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blizzberry Seed",
+      "tr": "Blizzberry Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blizzberry/wildblizzberryseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/blizzberry/wildblizzberryseed.object",
+      "pointer": "/description",
+      "en": "Immune to even the most extreme cold.",
+      "tr": "En şiddetli soğuğa karşı bile bağışıklığı vardır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bloodroot/bloodrootseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bloodroot/bloodrootseed.object",
+      "pointer": "/description",
+      "en": "Vitality-increasing plant.",
+      "tr": "Canlılığı artıran bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bloodroot/wildbloodrootseed.object",
+      "pointer": "/description",
+      "en": "Vitality-increasing plant.",
+      "tr": "Canlılığı artıran bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bloodroot/bloodrootseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blood Root Seed",
+      "tr": "Kan Kökü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bloodroot/wildbloodrootseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blood Root Seed",
+      "tr": "Kan Kökü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bloodroot/wildbloodrootseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bluemelon/bluemelonseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bluemelon/bluemelonseed.object",
+      "pointer": "/description",
+      "en": "Both delicious and pretty. Allows walking on liquids when eaten.",
+      "tr": "Hem lezzetli hem güzel. Yendiğinde sıvıların üzerinde yürümeyi sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bluemelon/wildbluemelonseed.object",
+      "pointer": "/description",
+      "en": "Both delicious and pretty. Allows walking on liquids when eaten.",
+      "tr": "Hem lezzetli hem güzel. Yendiğinde sıvıların üzerinde yürümeyi sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bluemelon/bluemelonseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blue Melon Seed",
+      "tr": "Mavi Kavun Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bluemelon/wildbluemelonseed.object",
+      "pointer": "/shortdescription",
+      "en": "Blue Melon Seed",
+      "tr": "Mavi Kavun Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bluemelon/wildbluemelonseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bolbohn/bolbohnseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bolbohn/bolbohnseed.object",
+      "pointer": "/description",
+      "en": "An oddly shaped plant with a similarly odd taste.",
+      "tr": "Tuhaf biçimli, tadı da bir o kadar tuhaf bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bolbohn/wildbolbohnseed.object",
+      "pointer": "/description",
+      "en": "An oddly shaped plant with a similarly odd taste.",
+      "tr": "Tuhaf biçimli, tadı da bir o kadar tuhaf bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bolbohn/bolbohnseed.object",
+      "pointer": "/shortdescription",
+      "en": "Bolbohn Seed",
+      "tr": "Bolbohn Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bolbohn/wildbolbohnseed.object",
+      "pointer": "/shortdescription",
+      "en": "Bolbohn Seed",
+      "tr": "Bolbohn Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bolbohn/wildbolbohnseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/brackentree/brackentreeseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/brackentree/wildbrackentreeseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/brackentree/wildbrackentreeseed.object",
+      "pointer": "/description",
+      "en": "Bracken provide essential Silk.",
+      "tr": "Bracken, vazgeçilmez bir kaynak olan İpeği üretir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/brackentree/wildbrackentreeseed.object",
+      "pointer": "/shortdescription",
+      "en": "Bracken Tree Seed",
+      "tr": "Bracken Ağacı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bughouse/bughouse.object",
+      "pointer": "/description",
+      "en": "Attracts insects! All sorts of creepy crawlies can live in here.",
+      "tr": "Böcekleri çeker! Her türden ürkütücü küçük canlı burada yaşayabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/bughouse/bughouse.object",
+      "pointer": "/shortdescription",
+      "en": "Bug House",
+      "tr": "Böcek Evi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/caprioleplant/caprioleplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/caprioleplant/caprioleplantseed.object",
+      "pointer": "/description",
+      "en": "Increases your limb strength for jumping. Contains a potent narcotic.",
+      "tr": "Zıplamak için uzuv gücünü artırır. Güçlü bir uyuşturucu içerir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/caprioleplant/wildcaprioleplantseed.object",
+      "pointer": "/description",
+      "en": "Increases your limb strength for jumping. Contains a potent narcotic.",
+      "tr": "Zıplamak için uzuv gücünü artırır. Güçlü bir uyuşturucu içerir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/caprioleplant/caprioleplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Capriole Seed",
+      "tr": "Capriole Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/caprioleplant/wildcaprioleplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Capriole Seed",
+      "tr": "Capriole Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/caprioleplant/wildcaprioleplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cellpodsplant/cellpodsplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cellpodsplant/cellpodsplant.object",
+      "pointer": "/description",
+      "en": "Soft to the touch, and bursting with cellular material.",
+      "tr": "Dokununca yumuşak, hücresel maddeyle dolup taşıyor.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cellpodsplant/wildcellpodsplant.object",
+      "pointer": "/description",
+      "en": "Soft to the touch, and bursting with cellular material.",
+      "tr": "Dokununca yumuşak, hücresel maddeyle dolup taşıyor.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cellpodsplant/cellpodsplant.object",
+      "pointer": "/shortdescription",
+      "en": "Cellpod Seed",
+      "tr": "Hücre Kapsülü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cellpodsplant/wildcellpodsplant.object",
+      "pointer": "/shortdescription",
+      "en": "Cellpod Seed",
+      "tr": "Hücre Kapsülü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cellpodsplant/wildcellpodsplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cinnamon/cinnamonseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cinnamon/cinnamonseed.object",
+      "pointer": "/description",
+      "en": "Spice of life! Cinnamon!",
+      "tr": "Hayatın baharatı! Tarçın!",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cinnamon/wildcinnamonseed.object",
+      "pointer": "/description",
+      "en": "Spice of life! Cinnamon!",
+      "tr": "Hayatın baharatı! Tarçın!",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cinnamon/cinnamonseed.object",
+      "pointer": "/shortdescription",
+      "en": "Cinnamon Seed",
+      "tr": "Tarçın Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cinnamon/wildcinnamonseed.object",
+      "pointer": "/shortdescription",
+      "en": "Cinnamon Seed",
+      "tr": "Tarçın Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/cinnamon/wildcinnamonseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/corvexsprout/corvexseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/corvexsprout/corvexseed.object",
+      "pointer": "/description",
+      "en": "Corvex is an alien plant with strange chemical properties.",
+      "tr": "Corvex, tuhaf kimyasal özelliklere sahip uzaylı bir bitkidir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/corvexsprout/wildcorvexseed.object",
+      "pointer": "/description",
+      "en": "Corvex is an alien plant with strange chemical properties.",
+      "tr": "Corvex, tuhaf kimyasal özelliklere sahip uzaylı bir bitkidir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/corvexsprout/corvexseed.object",
+      "pointer": "/shortdescription",
+      "en": "Corvex Sprout",
+      "tr": "Corvex Filizi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/corvexsprout/wildcorvexseed.object",
+      "pointer": "/shortdescription",
+      "en": "Corvex Sprout",
+      "tr": "Corvex Filizi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/corvexsprout/wildcorvexseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystallite/crystallite.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystallite/crystallite.object",
+      "pointer": "/description",
+      "en": "Produces dangerous little shards perfect for throwing at things.",
+      "tr": "Bir şeylere fırlatmak için biçilmiş kaftan, tehlikeli küçük parçalar üretir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystallite/crystallite.object",
+      "pointer": "/shortdescription",
+      "en": "Crystallite",
+      "tr": "Kristalit",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystalplant/crystalplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystalplant/crystalplantseed.object",
+      "pointer": "/description",
+      "en": "A Crystal plant. Turns out money does grow on trees.",
+      "tr": "Bir kristal bitkisi. Demek ki para gerçekten ağaçta yetişiyormuş.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystalplant/wildcrystalplantseed.object",
+      "pointer": "/description",
+      "en": "A Crystal plant. Turns out money does grow on trees.",
+      "tr": "Bir kristal bitkisi. Demek ki para gerçekten ağaçta yetişiyormuş.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystalplant/crystalplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Crystal Plant Seed",
+      "tr": "Kristal Bitkisi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystalplant/wildcrystalplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Crystal Plant Seed",
+      "tr": "Kristal Bitkisi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/crystalplant/wildcrystalplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/darklightflower/darklightflower.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/darklightflower/darklightflower.object",
+      "pointer": "/description",
+      "en": "Beautifully gleaming flowers that cure insanity.",
+      "tr": "Deliliği iyileştiren, güzelce parıldayan çiçekler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/darklightflower/wilddarklightflower.object",
+      "pointer": "/description",
+      "en": "Beautifully gleaming flowers that cure insanity.",
+      "tr": "Deliliği iyileştiren, güzelce parıldayan çiçekler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/darklightflower/darklightflower.object",
+      "pointer": "/shortdescription",
+      "en": "Darklight Flower",
+      "tr": "Karanlık Işık Çiçeği",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/darklightflower/wilddarklightflower.object",
+      "pointer": "/shortdescription",
+      "en": "Darklight Flower",
+      "tr": "Karanlık Işık Çiçeği",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/darklightflower/wilddarklightflower.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/deathblossom/deathblossomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/deathblossom/deathblossomseed.object",
+      "pointer": "/description",
+      "en": "Deathblossoms are not what you'd call a good snack. They do kill quite well, though.",
+      "tr": "Ölüm Çiçekleri pek iyi bir atıştırmalık sayılmaz. Ama öldürme konusunda oldukça başarılılar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/deathblossom/wilddeathblossomseed.object",
+      "pointer": "/description",
+      "en": "Deathblossoms are not what you'd call a good snack. They do kill quite well, though.",
+      "tr": "Ölüm Çiçekleri pek iyi bir atıştırmalık sayılmaz. Ama öldürme konusunda oldukça başarılılar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/deathblossom/deathblossomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Deathblossom",
+      "tr": "Ölüm Çiçeği",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/deathblossom/wilddeathblossomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Deathblossom",
+      "tr": "Ölüm Çiçeği",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/deathblossom/wilddeathblossomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/diodiahybrid/diodiahybridseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/diodiahybrid/diodiahybridseed.object",
+      "pointer": "/description",
+      "en": "Hybridized Diodia. Still coppery, but helps resist poison.",
+      "tr": "Melezlenmiş Diodia. Bakır tadını korur, zehre karşı dirence de yardımcı olur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/diodiahybrid/wilddiodiahybridseed.object",
+      "pointer": "/description",
+      "en": "Hybridized Diodia. Still coppery, but helps resist poison.",
+      "tr": "Melezlenmiş Diodia. Bakır tadını korur, zehre karşı dirence de yardımcı olur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/diodiahybrid/diodiahybridseed.object",
+      "pointer": "/shortdescription",
+      "en": "Diodia Hybrid Seed",
+      "tr": "Diodia Melezi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/diodiahybrid/wilddiodiahybridseed.object",
+      "pointer": "/shortdescription",
+      "en": "Diodia Hybrid Seed",
+      "tr": "Diodia Melezi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/diodiahybrid/wilddiodiahybridseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dragonsbeard/dragonsbeardseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dragonsbeard/dragonsbeardseed.object",
+      "pointer": "/description",
+      "en": "Nearly immune to all forms of heat.",
+      "tr": "Neredeyse her türlü ısıya karşı bağışıklıdır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dragonsbeard/wilddragonsbeardseed.object",
+      "pointer": "/description",
+      "en": "Nearly immune to all forms of heat.",
+      "tr": "Neredeyse her türlü ısıya karşı bağışıklıdır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dragonsbeard/dragonsbeardseed.object",
+      "pointer": "/shortdescription",
+      "en": "Dragonsbeard",
+      "tr": "Ejderha Sakalı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dragonsbeard/wilddragonsbeardseed.object",
+      "pointer": "/shortdescription",
+      "en": "Dragonsbeard",
+      "tr": "Ejderha Sakalı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dragonsbeard/wilddragonsbeardseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dunestalk/dunestalkseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dunestalk/dunestalkseed.object",
+      "pointer": "/description",
+      "en": "Hardy dunestalk, a wheat-like plant found growing in arid locations.",
+      "tr": "Kurak bölgelerde yetişen, buğdaya benzeyen dayanıklı bir kum sapı bitkisi.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dunestalk/wildedunestalkseed.object",
+      "pointer": "/description",
+      "en": "Hardy dunestalk, a wheat-like plant found growing in arid locations.",
+      "tr": "Kurak bölgelerde yetişen, buğdaya benzeyen dayanıklı bir kum sapı bitkisi.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dunestalk/dunestalkseed.object",
+      "pointer": "/shortdescription",
+      "en": "Dunestalk Seed",
+      "tr": "Kum Sapı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dunestalk/wildedunestalkseed.object",
+      "pointer": "/shortdescription",
+      "en": "Dunestalk Seed",
+      "tr": "Kum Sapı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/dunestalk/wildedunestalkseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/duskiline/duskilineseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/duskiline/duskilineseed.object",
+      "pointer": "/description",
+      "en": "A purely cosmetic gemstone to the Eld'uukhar. It is grown purely to trade.",
+      "tr": "Eld'uukhar için yalnızca süs değeri taşıyan bir mücevher. Sırf ticaret için yetiştirilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/duskiline/duskilineseed.object",
+      "pointer": "/shortdescription",
+      "en": "Duskiline Crystal Seed",
+      "tr": "Duskiline Kristali Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object",
+      "pointer": "/description",
+      "en": "Hatches into a tiny chick and matures into a Copperbeak. The adult Copperbeak produces copper.",
+      "tr": "Yumurtadan minik bir civciv çıkar ve büyüyünce Bakırgaga olur. Yetişkin Bakırgaga bakır üretir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/copperbeakegg/copperbeakegg.object",
+      "pointer": "/shortdescription",
+      "en": "Copperbeak Egg",
+      "tr": "Bakırgaga Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/erchibudegg/erchibudegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/erchibudegg/erchibudegg.object",
+      "pointer": "/description",
+      "en": "Hatches into a tiny erchibud, a bouncing lunar creature.",
+      "tr": "Yumurtadan zıplayan, ay kökenli minik bir Erchibud çıkar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/erchibudegg/erchibudegg.object",
+      "pointer": "/shortdescription",
+      "en": "Erchibud Egg",
+      "tr": "Erchibud Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/fuorbisegg/fuorbisegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/fuorbisegg/fuorbisegg.object",
+      "pointer": "/description",
+      "en": "Hatches into a robotic Orbis, which regularly regurgitates spare parts.",
+      "tr": "Yumurtadan, düzenli olarak yedek parça kusan robotik bir Orbis çıkar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/fuorbisegg/fuorbisegg.object",
+      "pointer": "/shortdescription",
+      "en": "Orbis Egg",
+      "tr": "Orbis Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object",
+      "pointer": "/description",
+      "en": "Hatches into a tiny chick and matures into a Ironbeak. The adult Ironbeak produces iron.",
+      "tr": "Yumurtadan minik bir civciv çıkar ve büyüyünce Demirgaga olur. Yetişkin Demirgaga demir üretir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/ironbeakegg/ironbeakegg.object",
+      "pointer": "/shortdescription",
+      "en": "Ironbeak Egg",
+      "tr": "Demirgaga Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/megaegg/megaegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/megaegg/megaegg.object",
+      "pointer": "/description",
+      "en": "This egg is at least twice as big as most.",
+      "tr": "Bu yumurta çoğundan en az iki kat daha büyük.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/megaegg/megaegg.object",
+      "pointer": "/shortdescription",
+      "en": "Unknown Egg",
+      "tr": "Bilinmeyen Yumurta",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/pangolinegg/pangolinegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/pangolinegg/pangolinegg.object",
+      "pointer": "/description",
+      "en": "Hatches into a tiny pangolin. Happy little omnivores.",
+      "tr": "Yumurtadan minik bir pangolin çıkar. Mutlu, küçük hepçiller.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/pangolinegg/pangolinegg.object",
+      "pointer": "/shortdescription",
+      "en": "Pangolin Egg",
+      "tr": "Pangolin Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/poptopegg/poptopegg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/poptopegg/poptopegg.object",
+      "pointer": "/description",
+      "en": "Hatches into an adorable floofy carnivore.",
+      "tr": "Yumurtadan sevimli, pofuduk bir etçil çıkar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/poptopegg/poptopegg.object",
+      "pointer": "/shortdescription",
+      "en": "Poptop Egg",
+      "tr": "Poptop Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/gooshoategg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/gooshoategg.object",
+      "pointer": "/description",
+      "en": "Hatches into a vulnerable shoat lamb.",
+      "tr": "Yumurtadan savunmasız bir shoat kuzusu çıkar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/greenshoategg.object",
+      "pointer": "/description",
+      "en": "Hatches into a vulnerable shoat lamb.",
+      "tr": "Yumurtadan savunmasız bir shoat kuzusu çıkar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/slimeshoategg .object",
+      "pointer": "/description",
+      "en": "Hatches into a vulnerable shoat lamb.",
+      "tr": "Yumurtadan savunmasız bir shoat kuzusu çıkar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/gooshoategg.object",
+      "pointer": "/shortdescription",
+      "en": "Shoat Egg",
+      "tr": "Shoat Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/greenshoategg.object",
+      "pointer": "/shortdescription",
+      "en": "Shoat Egg",
+      "tr": "Shoat Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/slimeshoategg .object",
+      "pointer": "/shortdescription",
+      "en": "Shoat Egg",
+      "tr": "Shoat Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/greenshoategg.object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/eggs/shoategg/slimeshoategg .object",
+      "pointer": "/category",
+      "en": "farmBeastEgg",
+      "tr": "Çiftlik Hayvanı Yumurtası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/emera/emeraseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/emera/emeraseed.object",
+      "pointer": "/description",
+      "en": "A brittle gemstone that is spun into strong crystal fabric.",
+      "tr": "Güçlü kristal kumaşa dönüştürülen kırılgan bir mücevher.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/emera/emeraseed.object",
+      "pointer": "/shortdescription",
+      "en": "Emera Crystal Seed",
+      "tr": "Emera Kristali Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/energiflower/energiflowerseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/energiflower/energiflowerseed.object",
+      "pointer": "/description",
+      "en": "An orb of glowing energy growing from a plant.",
+      "tr": "Bir bitkide yetişen, parlayan bir enerji küresi.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/energiflower/wildenergiflowerseed.object",
+      "pointer": "/description",
+      "en": "An orb of glowing energy growing from a plant.",
+      "tr": "Bir bitkide yetişen, parlayan bir enerji küresi.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/energiflower/energiflowerseed.object",
+      "pointer": "/shortdescription",
+      "en": "Energiflower Seed",
+      "tr": "Enerji Çiçeği Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/energiflower/wildenergiflowerseed.object",
+      "pointer": "/shortdescription",
+      "en": "Energiflower Seed",
+      "tr": "Enerji Çiçeği Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/energiflower/wildenergiflowerseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/erithianalgae/erithianalgaeseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/erithianalgae/erithianalgaeseed.object",
+      "pointer": "/description",
+      "en": "Mutant strain of algae loaded with energy.",
+      "tr": "Enerjiyle yüklü, mutant bir yosun türü.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/erithianalgae/wilderithianalgaeseed.object",
+      "pointer": "/description",
+      "en": "Mutant strain of algae loaded with energy.",
+      "tr": "Enerjiyle yüklü, mutant bir yosun türü.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/erithianalgae/erithianalgaeseed.object",
+      "pointer": "/shortdescription",
+      "en": "Erithian Algae Seed",
+      "tr": "Erithian Yosunu Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/erithianalgae/wilderithianalgaeseed.object",
+      "pointer": "/shortdescription",
+      "en": "Erithian Algae Seed",
+      "tr": "Erithian Yosunu Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/erithianalgae/wilderithianalgaeseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/exonite/exoniteseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/exonite/exoniteseed.object",
+      "pointer": "/description",
+      "en": "A gem grown in secret on the Eld'uukhar homeworld. It has hallucinogenic properties.",
+      "tr": "Eld'uukhar ana gezegeninde gizlice yetiştirilen bir mücevher. Halüsinojenik özelliklere sahiptir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/exonite/exoniteseed.object",
+      "pointer": "/shortdescription",
+      "en": "Exonite Crystal Seed",
+      "tr": "Exonite Kristali Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fayshroom/fayshroomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fayshroom/fayshroomseed.object",
+      "pointer": "/description",
+      "en": "Protects itself with spike-like cilia.",
+      "tr": "Kendini diken benzeri sillerle korur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fayshroom/fayshroomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Fayshroom Spore",
+      "tr": "Fayshroom Sporu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fayshroom/wildfayshroomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Fayshroom Spore",
+      "tr": "Fayshroom Sporu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fayshroom/wildfayshroomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fayshroom/wildfayshroomseed.object",
+      "pointer": "/description",
+      "en": "Protects itself with spike-like cilia. ",
+      "tr": "Kendini diken benzeri sillerle korur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/feya/feyaseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/feya/feyaseed.object",
+      "pointer": "/description",
+      "en": "Used to store thermal energy for later use.",
+      "tr": "Isı enerjisini daha sonra kullanmak üzere depolar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/feya/feyaseed.object",
+      "pointer": "/shortdescription",
+      "en": "Feya Crystal Seed",
+      "tr": "Feya Kristali Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fletchweed/fletchweed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fletchweed/fletchweed.object",
+      "pointer": "/description",
+      "en": "Its produce is quite packed with energy.",
+      "tr": "Ürünü enerjiyle dolup taşar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/fletchweed/fletchweed.object",
+      "pointer": "/shortdescription",
+      "en": "Fletchweed",
+      "tr": "Fletch Otu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/floralytplantseed/floralytplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/floralytplantseed/floralytplantseed.object",
+      "pointer": "/description",
+      "en": "One of the greatest healing agents known anywhere.",
+      "tr": "Bilinen en güçlü iyileştirici maddelerden biri.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/floralytplantseed/floralytplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Floralyt Seed",
+      "tr": "Floralyt Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerblackseed/flowerblack.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerblackseed/flowerblack.object",
+      "pointer": "/description",
+      "en": "How incredibly Gothic-pretentious.",
+      "tr": "Ne kadar da gotik ve kasıntı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerblackseed/flowerblack.object",
+      "pointer": "/shortdescription",
+      "en": "Black Flower",
+      "tr": "Siyah Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerbrownseed/flowerbrown.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerbrownseed/flowerbrown.object",
+      "pointer": "/description",
+      "en": "A rare color for a flower.",
+      "tr": "Bir çiçek için ender rastlanan bir renk.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerbrownseed/flowerbrown.object",
+      "pointer": "/shortdescription",
+      "en": "Brown Flower",
+      "tr": "Kahverengi Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowergreenseed/flowergreen.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowergreenseed/flowergreen.object",
+      "pointer": "/description",
+      "en": "Vibrant, with sticky leaves.",
+      "tr": "Canlı renkli, yaprakları yapış yapış.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowergreenseed/flowergreen.object",
+      "pointer": "/shortdescription",
+      "en": "Green Flower",
+      "tr": "Yeşil Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowergreyseed/flowergrey.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowergreyseed/flowergrey.object",
+      "pointer": "/description",
+      "en": "Drab in color, but smells nice",
+      "tr": "Rengi soluk ama güzel kokuyor.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowergreyseed/flowergrey.object",
+      "pointer": "/shortdescription",
+      "en": "Gray Flower",
+      "tr": "Gri Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorangeseed/flowerorange.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorangeseed/flowerorange.object",
+      "pointer": "/description",
+      "en": "Fiery and lovely",
+      "tr": "Ateş gibi ve güzel.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorangeseed/flowerorange.object",
+      "pointer": "/shortdescription",
+      "en": "Orange Flower",
+      "tr": "Turuncu Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid.object",
+      "pointer": "/description",
+      "en": "C-c-c-commmmbo breaker!",
+      "tr": "K-k-k-kombo bozan!",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid.object",
+      "pointer": "/shortdescription",
+      "en": "Black Orchid",
+      "tr": "Siyah Orkide",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid2.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid2.object",
+      "pointer": "/description",
+      "en": "That's a nice rich purple, right there.",
+      "tr": "İşte tam da güzel, koyu bir mor.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid2.object",
+      "pointer": "/shortdescription",
+      "en": "Purple Orchid",
+      "tr": "Mor Orkide",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid3.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid3.object",
+      "pointer": "/description",
+      "en": "A gorgeous royal blue flower.",
+      "tr": "Muhteşem, kraliyet mavisi bir çiçek.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerorchid/flowerorchid3.object",
+      "pointer": "/shortdescription",
+      "en": "Blue Orchid",
+      "tr": "Mavi Orkide",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerpinkseed/flowerpink.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerpinkseed/flowerpink.object",
+      "pointer": "/description",
+      "en": "Happy little flowers of pink hue",
+      "tr": "Neşeli, pembe tonlarında minik çiçekler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerpinkseed/flowerpink.object",
+      "pointer": "/shortdescription",
+      "en": "Pink Flower",
+      "tr": "Pembe Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerpurpleseed/flowerpurple.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerpurpleseed/flowerpurple.object",
+      "pointer": "/description",
+      "en": "Happy little flowers of purple hue",
+      "tr": "Neşeli, mor tonlarında minik çiçekler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerpurpleseed/flowerpurple.object",
+      "pointer": "/shortdescription",
+      "en": "Purple Flower",
+      "tr": "Mor Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerspring/flowerspring.object",
+      "pointer": "/description",
+      "en": "A sweetly scented spring flower. Useful for making dye.",
+      "tr": "Tatlı kokulu bir bahar çiçeği. Boya yapımında işe yarar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "objects/farmables/flowerspring/flowerspring.object.patch"
+      }
+    },
+    {
+      "asset": "objects/farmables/flowerwhiteseed/flowerwhite.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerwhiteseed/flowerwhite.object",
+      "pointer": "/description",
+      "en": "These flowers have a sweet and pleasant scent",
+      "tr": "Bu çiçekler tatlı ve hoş kokar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/flowerwhiteseed/flowerwhite.object",
+      "pointer": "/shortdescription",
+      "en": "White Flower",
+      "tr": "Beyaz Çiçek",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garikleaf/garikleaf.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garikleaf/garikleaf.object",
+      "pointer": "/description",
+      "en": "Grants a large boost to ground speed.",
+      "tr": "Yerde hareket hızını büyük ölçüde artırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garikleaf/garikleaf.object",
+      "pointer": "/shortdescription",
+      "en": "Garik Leaf",
+      "tr": "Garik Yaprağı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garpberryseed/garpberryseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garpberryseed/garpberryseed.object",
+      "pointer": "/description",
+      "en": "A strange, toxic radioactive stalk.",
+      "tr": "Tuhaf, zehirli ve radyoaktif bir bitki sapı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garpberryseed/wildgarpberryseed.object",
+      "pointer": "/description",
+      "en": "A strange, toxic radioactive stalk.",
+      "tr": "Tuhaf, zehirli ve radyoaktif bir bitki sapı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garpberryseed/garpberryseed.object",
+      "pointer": "/shortdescription",
+      "en": "Garp Berry Plant",
+      "tr": "Garp Berry Bitkisi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garpberryseed/wildgarpberryseed.object",
+      "pointer": "/shortdescription",
+      "en": "Garp Berry Plant",
+      "tr": "Garp Berry Bitkisi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/garpberryseed/wildgarpberryseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gazelemon/gazelemonseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gazelemon/gazelemonseed.object",
+      "pointer": "/description",
+      "en": "The iris is the best part. Helps eyesight in the dark.",
+      "tr": "En işe yarar kısmı irisi. Karanlıkta görmeyi kolaylaştırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gazelemon/wildgazelemonseed.object",
+      "pointer": "/description",
+      "en": "The iris is the best part. Helps eyesight in the dark.",
+      "tr": "En işe yarar kısmı irisi. Karanlıkta görmeyi kolaylaştırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gazelemon/gazelemonseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gazelemon Seed",
+      "tr": "Gazelemon Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gazelemon/wildgazelemonseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gazelemon Seed",
+      "tr": "Gazelemon Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gazelemon/wildgazelemonseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gemglow/gemglowseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gemglow/gemglowseed.object",
+      "pointer": "/description",
+      "en": "A salty plant that is resistant to gravity.",
+      "tr": "Tuzlu, yerçekimine dayanıklı bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gemglow/wildgemglowseed.object",
+      "pointer": "/description",
+      "en": "A salty plant that is resistant to gravity.",
+      "tr": "Tuzlu, yerçekimine dayanıklı bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gemglow/gemglowseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gemglow Seed",
+      "tr": "Gemglow Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gemglow/wildgemglowseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gemglow Seed",
+      "tr": "Gemglow Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gemglow/wildgemglowseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/genesiberry/genesiberryseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/genesiberry/genesiberryseed.object",
+      "pointer": "/description",
+      "en": "The genesis of a new breed of plant. A strange, potent hybrid.",
+      "tr": "Yeni bir bitki türünün başlangıcı. Tuhaf ve güçlü bir melez.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/genesiberry/genesiberryseed.object",
+      "pointer": "/shortdescription",
+      "en": "Genesiberry Seed",
+      "tr": "Genesiberry Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ghostmushroom/ghostmushroomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ghostmushroom/ghostmushroomseed.object",
+      "pointer": "/description",
+      "en": "These buggers are almost invisible!",
+      "tr": "Bu yaramazları görmek neredeyse imkânsız!",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ghostmushroom/wildghostmushroomseed.object",
+      "pointer": "/description",
+      "en": "These buggers are almost invisible!",
+      "tr": "Bu yaramazları görmek neredeyse imkânsız!",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ghostmushroom/ghostmushroomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ghost Mushroom",
+      "tr": "Hayalet Mantarı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ghostmushroom/wildghostmushroomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ghost Mushroom",
+      "tr": "Hayalet Mantarı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ghostmushroom/wildghostmushroomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ginseng/ginsengseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ginseng/ginsengseed.object",
+      "pointer": "/description",
+      "en": "A well-known medicinal plant.",
+      "tr": "İyi bilinen şifalı bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ginseng/wildginsengseed.object",
+      "pointer": "/description",
+      "en": "A well-known medicinal plant.",
+      "tr": "İyi bilinen şifalı bir bitki.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ginseng/ginsengseed.object",
+      "pointer": "/shortdescription",
+      "en": "Heartroot Seed",
+      "tr": "Kalp Kökü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ginseng/wildginsengseed.object",
+      "pointer": "/shortdescription",
+      "en": "Heartroot Seed",
+      "tr": "Kalp Kökü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ginseng/wildginsengseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/glarestalk/glarestalkseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/glarestalk/glarestalkseed.object",
+      "pointer": "/description",
+      "en": "This is one ugly plant mutant. Immune to insanity, and increases damage.",
+      "tr": "Çok çirkin bir mutant bitki. Deliliğe karşı bağışıklık sağlar ve hasarı artırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/glarestalk/wildglarestalkseed.object",
+      "pointer": "/description",
+      "en": "This is one ugly plant mutant. Immune to insanity, and increases damage.",
+      "tr": "Çok çirkin bir mutant bitki. Deliliğe karşı bağışıklık sağlar ve hasarı artırır.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/glarestalk/glarestalkseed.object",
+      "pointer": "/shortdescription",
+      "en": "Glarestalk Gib",
+      "tr": "Glarestalk Parçası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/glarestalk/wildglarestalkseed.object",
+      "pointer": "/shortdescription",
+      "en": "Glarestalk Gib",
+      "tr": "Glarestalk Parçası",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/glarestalk/wildglarestalkseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenglow/goldenglowseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenglow/goldenglowseed.object",
+      "pointer": "/description",
+      "en": "It glows, but its real strength is in how it increases speed.",
+      "tr": "Parlar ama asıl gücü hızı artırmasında.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenglow/goldenglowseed.object",
+      "pointer": "/shortdescription",
+      "en": "Goldenglow Seed",
+      "tr": "Goldenglow Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenroot/goldenrootseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenroot/goldenrootseed.object",
+      "pointer": "/description",
+      "en": "Flecks of gold adorn this health-restoring vine.",
+      "tr": "Sağlığı yenileyen bu sarmaşığı altın benekler süsler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenroot/wildgoldenrootseed.object",
+      "pointer": "/description",
+      "en": "Flecks of gold adorn this health-restoring vine.",
+      "tr": "Sağlığı yenileyen bu sarmaşığı altın benekler süsler.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenroot/goldenrootseed.object",
+      "pointer": "/shortdescription",
+      "en": "Golden Root Seed",
+      "tr": "Altın Kök Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenroot/wildgoldenrootseed.object",
+      "pointer": "/shortdescription",
+      "en": "Golden Root Seed",
+      "tr": "Altın Kök Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenroot/wildgoldenrootseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenseaspongeplant/goldenseaspongeplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenseaspongeplant/goldenseaspongeplant.object",
+      "pointer": "/description",
+      "en": "Gleams under light.",
+      "tr": "Işık altında ışıldar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenseaspongeplant/wildgoldenseasponge.object",
+      "pointer": "/description",
+      "en": "Gleams under light.",
+      "tr": "Işık altında ışıldar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenseaspongeplant/goldenseaspongeplant.object",
+      "pointer": "/shortdescription",
+      "en": "Golden Sea Sponge Seed ",
+      "tr": "Altın Deniz Süngeri Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenseaspongeplant/wildgoldenseasponge.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldenseaspongeplant/wildgoldenseasponge.object",
+      "pointer": "/shortdescription",
+      "en": "Golden Sea Sponge Seed",
+      "tr": "Altın Deniz Süngeri Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldshroom/goldshroomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldshroom/goldshroomseed.object",
+      "pointer": "/description",
+      "en": "Glow in the dark.",
+      "tr": "Karanlıkta parlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldshroom/wildgoldshroomseed.object",
+      "pointer": "/description",
+      "en": "Glow in the dark.",
+      "tr": "Karanlıkta parlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldshroom/goldshroomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gold Shroom Spore",
+      "tr": "Altın Mantar Sporu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldshroom/wildgoldshroomseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gold Shroom Spore",
+      "tr": "Altın Mantar Sporu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/goldshroom/wildgoldshroomseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/greenleaf/greenleafseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/greenleaf/greenleafseed.object",
+      "pointer": "/description",
+      "en": "A potent energy source that looks like grass.",
+      "tr": "Çime benzeyen güçlü bir enerji kaynağı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/greenleaf/wildgreenleafseed.object",
+      "pointer": "/description",
+      "en": "A potent energy source that looks like grass.",
+      "tr": "Çime benzeyen güçlü bir enerji kaynağı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/greenleaf/greenleafseed.object",
+      "pointer": "/shortdescription",
+      "en": "Greenleaf Seed",
+      "tr": "Yeşil Yaprak Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/greenleaf/wildgreenleafseed.object",
+      "pointer": "/shortdescription",
+      "en": "Greenleaf Seed",
+      "tr": "Yeşil Yaprak Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/greenleaf/wildgreenleafseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/guam/guamseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/guam/guamseed.object",
+      "pointer": "/description",
+      "en": "This mutant strain of guam can filter any radiation.",
+      "tr": "Bu mutant guam türü her türlü radyasyonu süzebilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/guam/wildguamseed.object",
+      "pointer": "/description",
+      "en": "This mutant strain of guam can filter any radiation.",
+      "tr": "Bu mutant guam türü her türlü radyasyonu süzebilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/guam/guamseed.object",
+      "pointer": "/shortdescription",
+      "en": "Rad Grass Seed",
+      "tr": "Radyasyon Otu Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/guam/wildguamseed.object",
+      "pointer": "/shortdescription",
+      "en": "Rad Grass Seed",
+      "tr": "Radyasyon Otu Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/guam/wildguamseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gurnonion/onionseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gurnonion/onionseed.object",
+      "pointer": "/description",
+      "en": "A sun-powered Gurn Onion. Quite useful, actually.",
+      "tr": "Güneş enerjisiyle çalışan bir Gurn Soğanı. Aslında epey kullanışlı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gurnonion/wildonionseed.object",
+      "pointer": "/description",
+      "en": "A sun-powered Gurn Onion. Quite useful, actually.",
+      "tr": "Güneş enerjisiyle çalışan bir Gurn Soğanı. Aslında epey kullanışlı.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gurnonion/onionseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gurn Onion Seed",
+      "tr": "Gurn Soğanı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gurnonion/wildonionseed.object",
+      "pointer": "/shortdescription",
+      "en": "Gurn Onion Seed",
+      "tr": "Gurn Soğanı Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/gurnonion/wildonionseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/haleflower/haleflowerseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/haleflower/haleflowerseed.object",
+      "pointer": "/description",
+      "en": "For a plant, it stores an astounding amount of energy.",
+      "tr": "Bir bitkiye göre şaşırtıcı miktarda enerji depolar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/haleflower/haleflowerseed.object",
+      "pointer": "/shortdescription",
+      "en": "Haleflower Seed",
+      "tr": "Haleflower Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hellfireplantseed/hellfireplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hellfireplantseed/hellfireplantseed.object",
+      "pointer": "/description",
+      "en": "Lethal when thrown, Hellfire nodules can also be used to create weapons.",
+      "tr": "Cehennem Ateşi yumruları fırlatıldığında ölümcüldür; silah yapımında da kullanılabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hellfireplantseed/wildhellfireplantseed.object",
+      "pointer": "/description",
+      "en": "Lethal when thrown, Hellfire nodules can also be used to create weapons.",
+      "tr": "Cehennem Ateşi yumruları fırlatıldığında ölümcüldür; silah yapımında da kullanılabilir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hellfireplantseed/hellfireplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Plant Seed",
+      "tr": "Cehennem Ateşi Bitkisi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hellfireplantseed/wildhellfireplantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Hellfire Plant Seed",
+      "tr": "Cehennem Ateşi Bitkisi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hellfireplantseed/wildhellfireplantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/herrodbush/herrodbush.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/herrodbush/herrodbush.object",
+      "pointer": "/description",
+      "en": "Provides immunity against Shadow.",
+      "tr": "Gölgeye karşı bağışıklık sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/herrodbush/herrodbush.object",
+      "pointer": "/shortdescription",
+      "en": "Herrod Bush",
+      "tr": "Herrod Çalısı",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hops/hopsseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hops/hopsseed.object",
+      "pointer": "/description",
+      "en": "Hops, used in the making of beer.",
+      "tr": "Bira yapımında kullanılan şerbetçiotu.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hops/wildhopsseed.object",
+      "pointer": "/description",
+      "en": "Hops, used in the making of beer.",
+      "tr": "Bira yapımında kullanılan şerbetçiotu.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hops/hopsseed.object",
+      "pointer": "/shortdescription",
+      "en": "Hops Seed",
+      "tr": "Şerbetçiotu Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hops/wildhopsseed.object",
+      "pointer": "/shortdescription",
+      "en": "Hops Seed",
+      "tr": "Şerbetçiotu Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/hops/wildhopsseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ighant/ighantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ighant/ighantseed.object",
+      "pointer": "/description",
+      "en": "The ighant is a curious, fast-growing plant. Provides bounce.",
+      "tr": "Ighant, hızla büyüyen ilginç bir bitkidir. Sekme sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ighant/wildighantseed.object",
+      "pointer": "/description",
+      "en": "The ighant is a curious, fast-growing plant. Provides bounce.",
+      "tr": "Ighant, hızla büyüyen ilginç bir bitkidir. Sekme sağlar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ighant/ighantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ighant Seed",
+      "tr": "Ighant Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ighant/wildighantseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ighant Seed",
+      "tr": "Ighant Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ighant/wildighantseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili/ignuschiliseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili/wildignuschiliseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili/wildignuschiliseed.object",
+      "pointer": "/description",
+      "en": "200% spicier than a normal chili. Also makes a handy weapon.",
+      "tr": "Normal bir biberden %200 daha acıdır. Üstelik silah olarak da işe yarar.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili/wildignuschiliseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ignus Chili Seed",
+      "tr": "Ignus Biberi Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili2/ignuschili2seed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili2/ignuschili2seed.object",
+      "pointer": "/description",
+      "en": "Yeowch! This is even hotter!",
+      "tr": "Ah! Bu daha da acı!",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/ignuschili2/ignuschili2seed.object",
+      "pointer": "/shortdescription",
+      "en": "Adv. Ignus Chili",
+      "tr": "Gelişmiş Ignus Biberi",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/isn_meatplant/isn_meatplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/isn_meatplant/isn_meatplant.object",
+      "pointer": "/description",
+      "en": "A plant that grows meat! Not for the squeamish.",
+      "tr": "Et yetiştiren bir bitki! Hassas midelilere göre değil.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/isn_meatplant/isn_wildmeatplant.object",
+      "pointer": "/description",
+      "en": "A plant that grows meat! Not for the squeamish.",
+      "tr": "Et yetiştiren bir bitki! Hassas midelilere göre değil.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/isn_meatplant/isn_meatplant.object",
+      "pointer": "/shortdescription",
+      "en": "Meatvine Bulb",
+      "tr": "Et Sarmaşığı Yumrusu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/isn_meatplant/isn_wildmeatplant.object",
+      "pointer": "/shortdescription",
+      "en": "Meatvine Bulb",
+      "tr": "Et Sarmaşığı Yumrusu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/isn_meatplant/isn_wildmeatplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/itaseed/itaseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/itaseed/itaseed.object",
+      "pointer": "/description",
+      "en": "A unique strain of Lotus, full of potent antitoxins.",
+      "tr": "Güçlü antitoksinlerle dolu, eşsiz bir Lotus türü.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/itaseed/wilditaseed.object",
+      "pointer": "/description",
+      "en": "A unique strain of Lotus, full of potent antitoxins.",
+      "tr": "Güçlü antitoksinlerle dolu, eşsiz bir Lotus türü.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/itaseed/itaseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ita Flower Seed",
+      "tr": "Ita Çiçeği Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/itaseed/wilditaseed.object",
+      "pointer": "/shortdescription",
+      "en": "Ita Flower Seed",
+      "tr": "Ita Çiçeği Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/itaseed/wilditaseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/jillyroot/jillyrootseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/jillyroot/jillyrootseed.object",
+      "pointer": "/description",
+      "en": "Able to help speed healing of wounds.",
+      "tr": "Yaraların daha hızlı iyileşmesine yardımcı olur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/jillyroot/wildjillyrootseed.object",
+      "pointer": "/description",
+      "en": "Able to help speed healing of wounds.",
+      "tr": "Yaraların daha hızlı iyileşmesine yardımcı olur.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/jillyroot/jillyrootseed.object",
+      "pointer": "/shortdescription",
+      "en": "Jilly Root Seed",
+      "tr": "Jilly Kökü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/jillyroot/wildjillyrootseed.object",
+      "pointer": "/shortdescription",
+      "en": "Jilly Root Seed",
+      "tr": "Jilly Kökü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/jillyroot/wildjillyrootseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kamaranpodsplant/kamaranpodsplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kamaranpodsplant/kamaranpodsplant.object",
+      "pointer": "/description",
+      "en": "Hard to crack open.",
+      "tr": "Kırıp açması zor.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kamaranpodsplant/wildkamaranpodsplant.object",
+      "pointer": "/description",
+      "en": "Hard to crack open.",
+      "tr": "Kırıp açması zor.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kamaranpodsplant/kamaranpodsplant.object",
+      "pointer": "/shortdescription",
+      "en": "Kamaran Pod Seed",
+      "tr": "Kamaran Kapsülü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kamaranpodsplant/wildkamaranpodsplant.object",
+      "pointer": "/shortdescription",
+      "en": "Kamaran Pod Seed",
+      "tr": "Kamaran Kapsülü Tohumu",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kamaranpodsplant/wildkamaranpodsplant.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kramil/kramil.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kramil/kramil.object",
+      "pointer": "/description",
+      "en": "Kramil is known for its potent anti-cold properties.",
+      "tr": "Kramil, soğuğa karşı güçlü korumasıyla bilinir.",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/kramil/kramil.object",
+      "pointer": "/shortdescription",
+      "en": "Kramil",
+      "tr": "Kramil",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
+    },
+    {
+      "asset": "objects/farmables/lactariusindigo/lactariusindigoseed.object",
+      "pointer": "/category",
+      "en": "seed",
+      "tr": "Tohum",
+      "section": "v0.66 P0 yer imi ve P1 yetiştirme"
     }
   ]
 }

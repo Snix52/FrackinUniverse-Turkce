@@ -31,6 +31,8 @@ class WorkflowTests(unittest.TestCase):
         pr_text = (ROOT / '.github/workflows/pr-qa.yml').read_text()
         self.assertIn('python tools/generate_v049.py --source fu_source', pr_text)
         self.assertIn('python tools/generate_v050.py --source fu_source', pr_text)
+        self.assertIn('python tools/generate_v066.py --source fu_source', text)
+        self.assertIn('python tools/generate_v066.py --source fu_source', pr_text)
 
 
 if __name__ == '__main__':

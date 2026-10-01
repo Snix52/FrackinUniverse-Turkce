@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "note": "Initial gameplay priorities; not measured player encounter frequency. Review visibility and runtime reachability before translation.",
-  "levels": {"P0": "İlerleme ve kritik yönlendirme", "P1": "Sık kullanılan sistemler", "P2": "Ekipman, keşif ve konuşmalar", "P3": "Dekorasyon, atmosfer ve arşiv metinleri"},
+  "note": "1 October 2026: user requests dialogue-first translation. Dialogue is P1; critical progression remains P0. Priorities are not measured encounter frequencies. Review visibility and runtime reachability before translation.",
+  "levels": {"P0": "İlerleme ve kritik yönlendirme", "P1": "Diyaloglar ve sık kullanılan sistemler", "P2": "Ekipman ve keşif", "P3": "Dekorasyon, atmosfer ve arşiv metinleri"},
   "rules": [
     {"id": "progression", "priority": "P0", "assets": ["quests/*", "frackinship/quests/*", "zb/researchTree/*"], "reason": "Görev/araştırma ilerlemesini anlatan metin; canlı erişim ayrıca doğrulanır."},
     {"id": "quest-objects", "priority": "P1", "assets": ["objects/questmaps/*", "objects/questturnins/*"], "reason": "Görevle ilişkili nesne; adı/açıklaması bulmayı kolaylaştırır, canlı erişim ayrıca doğrulanır."},
@@ -11,7 +11,9 @@
     {"id": "machines", "priority": "P1", "assets": ["objects/crafting/*", "objects/power/*", "objects/wired/*", "objects/farmables/*", "objects/generators/*", "objects/kheAA/*", "objects/mechrepair/*", "objects/augmentextractor/*", "objects/teleporter/*", "objects/spacestationguiconsole/*", "objects/smartbox/*", "bees/*"], "reason": "Üretim, enerji veya yetiştirme sistemi; tarif/araştırma bağlantısı gerekli."},
     {"id": "archive", "priority": "P3", "assets": ["zb/updateInfoWindow/*", "codex/*", "cinematics/*", "objects/themed/*", "objects/decorative/*"], "reason": "İlk tahmin: arşiv, anlatı veya dekorasyon; mekanik açıklayan satırlar incelemede yükseltilebilir."},
     {"id": "equipment", "priority": "P2", "assets": ["items/*", "monsters/*", "stats/*", "tech/*", "tiles/*", "liquids/*"], "reason": "Ekipman, malzeme veya keşif; kademe ve erişim incelemede doğrulanır."},
-    {"id": "dialogue", "priority": "P2", "assets": ["dialog/*", "npcs/*", "radiomessages/*", "objects/ship/*"], "reason": "Karşılaşılan konuşma veya gemi metni; konuşmacı bağlamı korunur."},
+    {"id": "dialogue", "priority": "P1", "assets": ["dialog/*", "npcs/*", "radiomessages/*"], "reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur."},
+    {"id": "object-dialogue", "priority": "P1", "assets": ["objects/*"], "pointer": "(?i)/(dialog|converse|chatter|chatOptions|chatStrings)(/|$)", "reason": "Klasörden bağımsız oyuncuya konuşan nesne; 1 Ekim diyalog önceliği."},
+    {"id": "ship-text", "priority": "P2", "assets": ["objects/ship/*"], "reason": "Diyalog dışı gemi metni; S.A.I.L. konuşmaları ayrı P1 kuralıyla seçilir."},
     {"id": "world-objects", "priority": "P3", "assets": ["objects/*", "dungeons/*"], "reason": "Dünya nesnesi için başlangıç önceliği; işlevsel nesneler incelemede yükseltilebilir."}
   ]
 }

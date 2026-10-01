@@ -7,8 +7,8 @@
 | Düzey | İlk değerlendirme |
 |---|---|
 | P0 | Görev, araştırma, kritik uyarı veya gereksinim |
-| P1 | Arayüz, S.A.I.L., karakter, üretim ve enerji sistemleri |
-| P2 | Ekipman, malzeme, keşif ve konuşmalar |
+| P1 | Diyaloglar; arayüz, S.A.I.L., karakter, üretim ve enerji sistemleri |
+| P2 | Ekipman, malzeme ve keşif |
 | P3 | Dekorasyon, atmosfer, kodeks ve güncelleme arşivi |
 
 Kurallar `tools/translation_priorities.json` içindedir. Her satırda kural kimliği ve gerekçesi bulunur. Bunlar karşılaşma sıklığı ölçümleri değildir. Örneğin üretimi öğreten bir kodeks veya çalışan dekoratif görünümlü makine daha yüksek öncelik isteyebilir; kural değişikliğinin gerekçesini kaydet ve kuyruğu yeniden üret. Belirsiz satırlar `unclassified` gerekçesiyle P2'de görünür. `confirmed`, `review` ve `lua_review` ayrı görünürlük havuzlarıdır; düşük öncelik düşük çeviri kalitesi anlamına gelmez.
@@ -26,6 +26,8 @@ Bu pinde P0 `review` havuzundaki 429 alan tek tek işaretlendi. 428 alan; görev
 P0 taslağındaki görünen yer imi için mevcut LOCKED karşılık `Bilim Karakolu`dur. Luna kaynak ve oyundaki bağlamı kontrol edip karşılığı kendisi pakete yazar; bu tarama çeviri kataloğunu değiştirmez. P0 taslağı `../local-runtime/translation-planning-v0652-p0-triaged/` içindedir. Sıradaki P1 yetiştirme ailesi ayrı bir `--family objects/farmables` paketi olarak hazırlanabilir.
 
 ## Kullanım
+
+1 Ekim 2026 kullanıcı tercihiyle sıradaki çeviri işi diyaloglardır. `dialog`, `npcs` ve `radiomessages` aileleri ile nesnelerin konuşma alanları P1'e yükseltildi. İlk taslak `--family dialog`, ikinci taslak `--family radiomessages` ile hazırlanır. Görev ve kritik uyarıların P0 önceliği korunur; `review` ve `lua_review` kayıtları görünürlük kanıtı olmadan çeviri havuzuna taşınmaz. Yetiştirme ve kablolu sistemlerin kalanları daha sonraki kapsamdır. Paket değiştikçe güncel dosya ve sıra checkpoint'te belirtilir.
 
 Repo kökünde, UTF-8 Python ortamında:
 

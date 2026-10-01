@@ -388,6 +388,13 @@ V065_CODEX_FIELDS = {
 if len(V065_CODEX_FIELDS) != len(_V065_MANIFEST['translations']):
     raise ValueError('v0.65 kodeks belgesi manifestinde yinelenen alan var')
 
+_V066_MANIFEST = json.loads(
+    Path(__file__).with_name('v066_translations.json').read_text(encoding='utf-8')
+)
+V066_P0_P1_FIELDS = {(row['asset'], row['pointer']) for row in _V066_MANIFEST['translations']}
+if len(V066_P0_P1_FIELDS) != 454 or len(_V066_MANIFEST['translations']) != 454:
+    raise ValueError('v0.66 P0/P1 manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -658,6 +665,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V066_P0_P1_FIELDS:
+        return True
     if (a,p) in V0652_SHIP_DIALOG_FIELDS:
         return True
     if (a,p) in V0651_UI_LQA_FIELDS:
@@ -1114,7 +1123,7 @@ def main():
     metadata={'name':'FU_Turkce','friendlyName':'FU Türkçe (Beta)',
       'author':'FU Türkçe',
       'version':ledger['translation_version'],
-      'description':"Frackin' Universe için Türkçe yerelleştirme. Araştırma, görevler, üretim, makineler, ekipman ve Ebrar'ın Gülü gemi sürprizini içerir.",
+      'description':"Frackin' Universe için Türkçe yerelleştirme. Araştırma, görevler, üretim, makineler ve ekipman metinlerini içerir.",
       'requires':['FrackinUniverse'],'priority':9000}
     (mod/'_metadata').write_bytes((json.dumps(metadata,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     for a,p in patches.items():
