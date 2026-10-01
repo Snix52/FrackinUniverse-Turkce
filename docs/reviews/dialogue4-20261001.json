@@ -1,0 +1,649 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-01",
+  "base_commit": "966af5995eb80614e71ef2eb8802f33600ebe147",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 375,
+    "context_groups": 350,
+    "assets": {
+      "dialog/converse.config": 375
+    },
+    "fu_layered_fields": 375,
+    "unique_english_strings": 248
+  },
+  "changes": {
+    "context_groups": 33,
+    "fields": 37,
+    "sentences_by_context": 34,
+    "sentences_including_repeated_fields": 38,
+    "count_method": "Elle sayılan değişmiş Türkçe cümle ve noktalama ile ayrılmış kısa konuşma ifadeleri; değişmeyen parçalar sayılmaz. Aynı repliğin ayrı konuşmacı bağlamı ayrı sayılır; occurrence tekrarları yalnız including_repeated_fields toplamına eklenir."
+  },
+  "corrections": [
+    {
+      "unit_id": "7a69c41f57e33c9c88d4f4f37d380865984f59e25f55eb1ab2788ac922a13092",
+      "en": "I don't care what you say. Your kind was at fault with the Second Contact War.",
+      "before": "Ne dediğin umurumda değil. İkinci Temas Savaşı'nda suç sizin halkındı.",
+      "after": "Ne dediğin umurumda değil. İkinci Temas Savaşı'nda suçlu olan sizin halkınızdı.",
+      "reason": "İkinci cümlenin bozuk sahiplik çekimi düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/skath/15",
+          "origin": "dialog/converse.config.patch#90"
+        },
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/skath/26",
+          "origin": "dialog/converse.config.patch#90"
+        },
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/skath/4",
+          "origin": "dialog/converse.config.patch#90"
+        }
+      ]
+    },
+    {
+      "unit_id": "1878967ff4a384c262e0b3f5594170d3583a98aa57fdb99145953a1fd54c0963",
+      "en": "I know there are a lot of different opinions on your race, but I don't dislike your kind.",
+      "before": "Irkınız hakkında pek çok farklı görüş olduğunu biliyorum ama halkınızdan nefret etmiyorum.",
+      "after": "Irkınız hakkında pek çok farklı görüş olduğunu biliyorum ama halkınıza karşı bir antipatim yok.",
+      "reason": "Dislike hoşlanmamak demektir; daha ağır nefret anlamına zorlanmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/skath/18",
+          "origin": "dialog/converse.config.patch#90"
+        },
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/skath/29",
+          "origin": "dialog/converse.config.patch#90"
+        },
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/skath/7",
+          "origin": "dialog/converse.config.patch#90"
+        }
+      ]
+    },
+    {
+      "unit_id": "155ed6e76d64496114175b9bbc6b3673999fd5cba93722be676453d93e98329f",
+      "en": "There are fewer of your kind than even the Hylotl during the Floran wars.",
+      "before": "Halkınızın nüfusu Floran Savaşları sırasında Hylotl'lardan bile azdı.",
+      "after": "Halkınızın şu anki sayısı, Floran Savaşları sırasında Hylotl'ların sayısından bile az.",
+      "reason": "Kaynak şimdiki nüfusu Hylotl savaş dönemi nüfusuyla karşılaştırır; iki nüfus da geçmişe taşınmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/thelusian/4",
+          "origin": "dialog/converse.config.patch#38"
+        }
+      ]
+    },
+    {
+      "unit_id": "6fe59aa140aff69efc9bcd3a3a4fe65ee5366e752c1a38d23c79d7b83872c667",
+      "en": "I hear you are capable of using effectively anything as a weapon. This is likely an exaggeration, right?",
+      "before": "Her şeyi etkili biçimde silah olarak kullanabiliyormuşsunuz. Herhalde abartıdır, değil mi?",
+      "after": "Neredeyse her şeyi silah olarak kullanabiliyormuşsunuz. Herhalde abartıdır, değil mi?",
+      "reason": "Effectively anything hemen hemen her şeydir; etkili silah kullanımı anlamına kaydırılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/thelusian/5",
+          "origin": "dialog/converse.config.patch#38"
+        }
+      ]
+    },
+    {
+      "unit_id": "196970db23c9884fc296ef781e30f5e8124edd23fed8f75cc1611f5f36945ef1",
+      "en": "Ikzu. A friend. An ally. Trust. Acceptance.",
+      "before": "Ikzu. Dost. Müttefik. Güven. Kabul.",
+      "after": "Izku. Dost. Müttefik. Güven. Kabul.",
+      "reason": "Ikzu kaynak yazım hatası, muhatap fuizku ve species/fuizku.species title Izku ile doğrulanarak düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/juux/fuizku/0",
+          "origin": "dialog/converse.config.patch#79"
+        }
+      ]
+    },
+    {
+      "unit_id": "110cf934896c935d61b202a11021ad1c4298d6c478624f4cddc10048d4e9eaf8",
+      "en": "Juux, Pharitu. Ikzu. A family. A bond. Sacred. Honour.",
+      "before": "Juux, Pharitu. Ikzu. Aile. Bağ. Kutsal. Onur.",
+      "after": "Juux, Pharitu. Izku. Aile. Bağ. Kutsal. Onur.",
+      "reason": "Ikzu kaynak yazım hatası species/fuizku.species title Izku ile doğrulanarak düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/juux/fuizku/2",
+          "origin": "dialog/converse.config.patch#79"
+        }
+      ]
+    },
+    {
+      "unit_id": "1f0d27db38958fb94f2431339436199bc864af0c9dc985636ef91b6ef0ed3fc4",
+      "en": "Voyaging. Space. The Veil beyond. Must learn",
+      "before": "Yolculuk. Uzay. Ötedeki Peçe. Öğrenmeliyiz.",
+      "after": "Yolculuk. Uzay. Ötedeki Perde. Öğrenmeliyiz.",
+      "reason": "Veil, önceki kozmik araştırma metnindeki Perde karşılığına eşlendi; çit örtüsü gibi genel anlamlar ayrı tutulur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/juux/juux/4",
+          "origin": "dialog/converse.config.patch#79"
+        }
+      ]
+    },
+    {
+      "unit_id": "aebb8e68a514d72dc745c5de0c4380dba69680e86977a68206d895eafae38c4c",
+      "en": "My ears deign not to listen to thine Kirhosi mewling. Goodbye.",
+      "before": "Kulaklarım Kirhos'un yakınmalarını dinlemeye tenezzül etmez. Elveda.",
+      "after": "Kulaklarım senin Kirhos sızlanmalarını dinlemeye tenezzül etmez. Elveda.",
+      "reason": "Thine muhataba aittir; üçüncü kişi Kirhos sahipliğine kaydırılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/fukirhos/1",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "7ce70c43cc04c106f9a3389db7a3ec78a82cd042eb03991af594a8bcd988a33d",
+      "en": "Spare us a futile parley, and make yourself scarce, <entityname>.",
+      "before": "Boşuna pazarlıkla vaktimizi alma; gözden kaybol, <entityname>.",
+      "after": "Boş laflarla vaktimizi alma; gözden kaybol, <entityname>.",
+      "reason": "NPC konuşma reddindeki futile parley sohbet anlamında aktarıldı; doğrudan alışveriş pazarlığı eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/fukirhos/2",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "9a9889353bef67c67930cbf2ab2f4912318d686df9da7bf6fa0df696549d4759",
+      "en": "Trouble me not with your grasping for coins, Kirhos.",
+      "before": "Madeni para için el açıp durarak canımı sıkma, Kirhos.",
+      "after": "Para hırsınla canımı sıkma, Kirhos.",
+      "reason": "Grasping for coins açgözlülük anlamındadır; kaynakta dilenme/el açma yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/fukirhos/8",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "a51d7a2472a5d9e9db302bbc7eaff8747e8f619fb2f39f247d9c325ac9c1ee07",
+      "en": "When was the last time you observed the Conshak?",
+      "before": "Conshak'ı en son ne zaman gözlemledin?",
+      "after": "Conshak ayinini en son ne zaman yerine getirdin?",
+      "reason": "Observe burada ayini yerine getirmektir. codex/nightar/funightardoc2.codex ve funightarhistory2.codex Conshak ayinini açıkça tanımlar.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/nightar/1",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "03199d76e79d50a0fc3226324f8eef47628b97f255e2c075190f0c31fb4a03d5",
+      "en": "By the black eyes of the Matriarch, a Lightdweller among our kind?!",
+      "before": "Ana Matriğin kara gözleri adına, halkımızın arasında bir Işıkta Yaşayan mı?!",
+      "after": "Matriarch'ın kara gözleri adına, halkımızın arasında bir Işıkta Yaşayan mı?!",
+      "reason": "Mevcut Nightar Matriarch unvanı korundu; Ana Matriği yeni varyantı kaldırıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/nightar/13",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "ef0acdac993f9b72ce44fd95cae3ef07ffad33aa70de860cec4c9e78605d8a3b",
+      "en": "Need anything, fellow Shadow-walker?",
+      "before": "Bir şeye ihtiyacın var mı, gölge yoldaşı?",
+      "after": "Bir şeye ihtiyacın var mı, Gölge Yürüyeni kardeşim?",
+      "reason": "Shadow-walker gölgede yürüyen unvanıdır; yalnız gölge yoldaşı anlamına indirgenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/nightar/14",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "14c40afbcb5a063b93d5e9ff7b8e973f5b3ddae5507cc3fda7fb23246c500e0a",
+      "en": "You have the mien of a warrior, how many Tenshae scar your flesh?",
+      "before": "Bir savaşçı duruşun var; bedenini kaç Tenshae yarası süslüyor?",
+      "after": "Bir savaşçı duruşun var; bedeninde kaç Tenshae yara izi var?",
+      "reason": "Tenshae, Nightar kodeksinde iyileşmiş yaraların izidir; taze yara anlamı giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/nightar/2",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "d741d6eec741b967eabd5ed676d7d64dcb01957e5bd45789395592cab5062db1",
+      "en": "By the Source, you seem strong of sword.",
+      "before": "Kaynak adına, kılıç kullanışın güçlü görünüyor.",
+      "after": "Kaynak adına, kılıçta usta görünüyorsun.",
+      "reason": "Strong of sword kılıç ustalığını anlatır; kılıç kullanışın güçlü bozuk ifadesi düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/nightar/7",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "bf3a5d85fe753c4af00a8cfed7441104da38546955a16f671c7e623b881cfc33",
+      "en": "Be safe from the eyes of the Matriarch, fellow Nightar.",
+      "before": "Ana Matriğin gözlerinden uzak, esenlikte kal, Nightar kardeşim.",
+      "after": "Matriarch'ın gözlerinden uzakta güvende kal, Nightar kardeşim.",
+      "reason": "Matriarch unvanı mevcut karşılığa eşlendi; safe korunaklı/güvende anlamıyla aktarıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/nightar/8",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "932c5671b5c3b2faf39f0d98ca0b5b05c067e1ae630369282000752a69be0f1b",
+      "en": "Something unappeased, unappeasable, is within me; it longs to find expression.",
+      "before": "İçimde yatıştırılamayan bir şey var; kendini ifade etmek istiyor.",
+      "after": "İçimde yatışmamış, yatıştırılamaz bir şey var; kendini ifade etmek için yanıp tutuşuyor.",
+      "reason": "Unappeased ve unappeasable ayrı anlamlar korunur; longing arzusu da aktarılır. Yakın Shadow repliğiyle ses tutarlılığı sağlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/nightar/shadow/3",
+          "origin": "dialog/converse.config.patch#34"
+        }
+      ]
+    },
+    {
+      "unit_id": "4e5c6903632f2e0283e48b792ffe31a57643fc1ad27196475cfafc2045625d40",
+      "en": "Awesome, I've an idea for a new saloon ballad: 'The Tale o' <selfname> and the Slime'!",
+      "before": "Harika, yeni bir meyhane baladım var aklıma: '<selfname> ile Balçığın Öyküsü'!",
+      "after": "Harika, yeni bir meyhane baladı fikrim var: '<selfname> ile Slime'ın Öyküsü'!",
+      "reason": "Bozuk baladım var aklıma ifadesi düzeltildi; species/fuslimeperson.species Slime tür adı konuşma başlığına da taşındı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/fuslimeperson/10",
+          "origin": "dialog/converse.config.patch#29"
+        }
+      ]
+    },
+    {
+      "unit_id": "4f0a619d539d69fb010a3e86c5c170d8dcf99c06dd4abf904e633805bee18091",
+      "en": "A Slime! well I've heard o' yer kind from all manner of travellers' tall tattle, but seein ya in the flesh beats them all!",
+      "before": "Bir Slime! Türünüzü türlü yolcunun dedikodusundan duymuştum ama sizi bizzat görmek hepsinden iyi!",
+      "after": "Bir Slime! Türünüzü türlü yolcunun abartılı hikâyelerinden duymuştum ama sizi bizzat görmek hepsinden iyi!",
+      "reason": "Tall tattle abartılı yolcu hikâyeleridir; yalnız dedikodu anlamına daraltılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/fuslimeperson/12",
+          "origin": "dialog/converse.config.patch#29"
+        }
+      ]
+    },
+    {
+      "unit_id": "e47465693abdb09bffd8b896285fcc5f61dfbf6ce3f7c608c9abcacbac705928",
+      "en": "It must be pretty weird, having everyone know what root pop y'alls just guzzled!",
+      "before": "Herkesin az önce ne kök gazozu içtiğini bilmesi tuhaf olmalı!",
+      "after": "Herkesin az önce hangi kök gazozunu kafaya diktiğini bilmesi tuhaf olmalı!",
+      "reason": "What root pop hangi gazozdur; guzzled içme biçimi ve bozuk ne kök gazozu yapısı düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/fuslimeperson/2",
+          "origin": "dialog/converse.config.patch#29"
+        }
+      ]
+    },
+    {
+      "unit_id": "2a39e68c525c78bbc5a802e74c40b6f4c10d0631059f599501d383bb7aa4fb64",
+      "en": "What ho, friend?",
+      "before": "Selam dostum?",
+      "after": "Selam, dostum!",
+      "reason": "What ho selamlaşma kalıbıdır; Selam dostum? biçiminde anlamsız soru yapılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/fuslimeperson/3",
+          "origin": "dialog/converse.config.patch#29"
+        }
+      ]
+    },
+    {
+      "unit_id": "a1e2c174567e443079cf849279dc69a52949c74a7e51f57d731e7b701fda7db8",
+      "en": "Why, it seems this town just got bigger than I expected!",
+      "before": "Vay canına, bu kasaba beklediğimden de büyükmüş!",
+      "after": "Vay canına, bu kasaba bir anda beklediğimden de büyüdü!",
+      "reason": "Just got bigger yeni büyümeyi anlatır; zaten büyük olmasına kaydırılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/fuslimeperson/6",
+          "origin": "dialog/converse.config.patch#29"
+        }
+      ]
+    },
+    {
+      "unit_id": "651abb7b4d1c69dc4952fd431236aa91e801ab5ba0d939374230383070dd7073",
+      "en": "Where do y'alls come from? I heard many o' rumor and t'aint none of them kind to ye.",
+      "before": "Siz nereden geliyorsunuz? Hakkınızda türlü söylenti duydum; hiçbiri hayra alamet değil.",
+      "after": "Siz nereden geliyorsunuz? Hakkınızda türlü söylenti duydum; hiçbirinde sizden iyi söz edilmiyor.",
+      "reason": "None of them kind to ye söylentilerin muhatabı kötülemesidir; geleceğe ilişkin uğursuzluk anlamı eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/fuslimeperson/8",
+          "origin": "dialog/converse.config.patch#29"
+        }
+      ]
+    },
+    {
+      "unit_id": "0634b6f391661be2cb8c5cd8ab074f2940de8127e68ae3f3a222fa4aafc08eba",
+      "en": "No sword beats an ol' revolver!",
+      "before": "Eski bir tabancayı hiçbir kılıç yenemez!",
+      "after": "Eski bir revolveri hiçbir kılıç yenemez!",
+      "reason": "Revolver silah türü mevcut eşya kataloğuyla korundu; genel tabanca karşılığına daraltılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/nightar/2",
+          "origin": "dialog/converse.config.patch#28"
+        }
+      ]
+    },
+    {
+      "unit_id": "3bf1a61c981bd8479248a9ab267b5c3dba2fe22366c6265ae91c5a413828a4ea",
+      "en": "Closing eyes, huh? You will had troublin' times with us, glowing folk.",
+      "before": "Gözlerin kapalı mı? Vay, parlayanlar, bizimle zor zamanlar geçireceksiniz.",
+      "after": "Gözlerini mi kapatıyorsun? Bizim gibi parlayanlarla işin zor olacak.",
+      "reason": "Us glowing folk konuşmacı Novakid halkıdır; parlayanlar muhatapmış gibi seslenilmedi. İki cümle de düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/nightar/4",
+          "origin": "dialog/converse.config.patch#28"
+        }
+      ]
+    },
+    {
+      "unit_id": "26aa3c8af5cf5fda51fa370369b22190c3be6174731a914921383d3eab6c1665",
+      "en": "What kinda folk are you? You ain't even like light... Not that I discriminate, o' course.",
+      "before": "Nasıl bir halksınız? Işığa bile benzemiyorsunuz... Tabii, ayrımcılık ettiğim yok.",
+      "after": "Nasıl bir halksınız? Işığı bile sevmiyorsunuz... Tabii, ayrımcılık ettiğim yok.",
+      "reason": "Bozuk kaynak dilbilgisi, Nightar muhatabı ve species/nightar.species ışık hoşnutsuzluğu ile çözüldü; ışığa benzememe anlamı yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/nightar/7",
+          "origin": "dialog/converse.config.patch#28"
+        }
+      ]
+    },
+    {
+      "unit_id": "41b6b37db29f946a98bf05e23af152757fd746ec8004fbf12d02f13af56a1b7b",
+      "en": "Careful with the bar, someone spilled some beer and ya might slip.",
+      "before": "Bardaki tezgâha dikkat et, biri bira dökmüş; kayıp düşebilirsin.",
+      "after": "Barda dikkatli ol; biri bira dökmüş, kayıp düşebilirsin.",
+      "reason": "Kaynakta belirtilmeyen tezgâh eklenmedi; bar içindeki kayma riski korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/novakid/radien/11",
+          "origin": "dialog/converse.config.patch#27"
+        }
+      ]
+    },
+    {
+      "unit_id": "b852f699328ae845a6d74a73b3ca7568d036fd6613139dcedb1e825edc3bf4d9",
+      "en": "How is it that you can understand me, Nightar?",
+      "before": "Nightar, seni nasıl anlayabiliyorum?",
+      "after": "Nightar, beni nasıl anlayabiliyorsun?",
+      "reason": "You can understand me muhatabın konuşmacıyı anlamasıdır; kişi tersliği giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/shadow/nightar/0",
+          "origin": "dialog/converse.config.patch#76"
+        }
+      ]
+    },
+    {
+      "unit_id": "a60cff6ddf690560b9b492f4621948e764c2a94f93d9ab8424a4de2df06fd1c7",
+      "en": "You sure got a lotta hair!",
+      "before": "Saçınız da pek gürmüş!",
+      "after": "Amma da kıllısın!",
+      "reason": "Apex muhatabının vücut kılları yalnız baştaki saçlara indirgenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/apex/0",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "a664465741bb127e58bb5f8765bdf3d79876ac0b3c159f9e6c61ce5c16a157cc",
+      "en": "Doesn't all that hair get in the way?",
+      "before": "Bunca saç önünü görmeni zorlaştırmıyor mu?",
+      "after": "Bunca kıl sana engel olmuyor mu?",
+      "reason": "Get in the way genel engel anlamındadır; kaynakta olmayan görüş kısıtlanması eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/apex/3",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "a3df36ae9f257ae0e0fe14665bf95d66ca12788fc6a96009341630f5d477bf5e",
+      "en": "Don't cause any trouble around here, Apex. We are watching you.",
+      "before": "Buralarda olay çıkarma, Apex. Gözümüz üzerinizde.",
+      "after": "Buralarda olay çıkarma, Apex. Gözümüz üzerinde.",
+      "reason": "İlk cümledeki tekil hitap ikinci cümlede de korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/apex/7",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "a8b16cdf99adadf0c5b6c78ab7a9931aafdba3adcefb5d13f4389d617c9c5d12",
+      "en": "I don't really get your obsession with stabbing things. Slashing things is much more fun.",
+      "before": "Şeyleri saplamaya olan takıntınızı anlamıyorum. Kesip biçmek çok daha eğlenceli.",
+      "after": "Bir şeylere bıçak saplama takıntınızı pek anlamıyorum. Kesip biçmek çok daha eğlenceli.",
+      "reason": "Stabbing things bir şeylere saplamaktır; şeylerin kendisini saplama bozuk aktarımı düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/floran/3",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "212152c4a3d617a4b7c7df8b9332b8ca0dd1d42342db57bfd9bd4a87b98e7972",
+      "en": "Your greenfingers have interesting abilities. I wonder how they work.",
+      "before": "Yeşil parmaklarınızın ilginç yetenekleri var. Nasıl çalıştıklarını merak ediyorum.",
+      "after": "Greenfinger'larınızın ilginç yetenekleri var. Nasıl çalıştıklarını merak ediyorum.",
+      "reason": "Greenfinger mevcut görev/madalya özel unvanıdır; yeşil parmaklar şeklinde gerçek parmaklara çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/floran/8",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    }
+  ],
+  "new_locked_terms": 18,
+  "legacy_exact_term_exceptions": 2,
+  "approved_packet_sha256": "9efc5b99a578f31bfd3727da355ccffb80e0f1f863d0f7a714f4c89900127e70",
+  "luna_original_packet_sha256": "c9316f86ea5eadc9eb32149d8a0c19afeadc10d66bb585823c2f3d55050e102e",
+  "approved_rows_sha256": "b46076c8c17afefa602d291705e7ef619e52626a92f85d136ad681bb2597a276",
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 375,
+    "context_units": 350,
+    "qa": {
+      "catalog_units_checked": 26553,
+      "raw_units_checked": 115,
+      "locked_terms": 637
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "FU 6.5.8 bb58383c0d16c1152e3439e606b39ff82288b586: dialog/converse.config.patch; 350 context/occurrence records",
+        "note": "Her İngilizce değer, patch katmanındaki kaynak metin ve converse/<speaker>/<target> koluyla karşılaştırıldı; ayrı konuşmacı/muhatap bağlamları birleştirilmedi."
+      },
+      {
+        "source": "FU 6.5.8: npcs/fuvillageguard.npctype; npcs/newhumansurvivor.npctype; npcs/nightar/nightarvillager.npctype; npcs/nightar/nightarvillageguard.npctype; npcs/nightar/nightarvillagerking.npctype",
+        "note": "Statik NPC tiplerindeki /dialog/converse.config çağrıları doğrulandı; genel referanslar seçili satırların canlı erişimini kanıtlamaz."
+      },
+      {
+        "source": "FU 6.5.8: npcs/elduukharvillager.npctype",
+        "note": "ElDuukhar köylüsü /dialog/elduuconverse.config kullanır; base converse.config bağlantısı yalnız breakObject içindir. Bu nedenle doğrudan erişim kanıtı sayılmadı."
+      },
+      {
+        "source": "FU 6.5.8 kaynak sınırı",
+        "note": "Temel vanilla dialog/converse.config bu checkout'ta yok; vanilla NPC/script zinciri ve canlı satır seçimi doğrulanamadı."
+      }
+    ],
+    "note": "Patch kaynağı ve bağlam pointer'ları doğrulandı. Oyun içi satır seçimi, erişim, Türkçe font/karakter, satır sığması ve görsel LQA NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "375 alan FU patch katmanından doğrulandı; temel vanilla converse.config burada yok.",
+    "ElDuukhar köylü converse referansı elduuconverse.config yönünde; converse.config yalnız breakObject. Bu dilim için özel doğrudan NPC erişimi kanıtı sayılmadı.",
+    "Diğer konuşmacı/muhatap dallarının canlı seçimi ve font/satır sığması test edilmedi."
+  ],
+  "new_locked_names": [
+    "Juux",
+    "Tenebhrae",
+    "Diathim",
+    "Sith",
+    "Conshak",
+    "Tenshae",
+    "Izku / Ikzu",
+    "The Matriarch",
+    "Lightdweller / Lightdwellers",
+    "Shadow-walker",
+    "By the Source / in the Source",
+    "Kind One",
+    "The Veil",
+    "Second Contact War",
+    "Greenfinger / Greenfingers",
+    "Revolver",
+    "Root Pop",
+    "Capricoat / Capricoats"
+  ],
+  "lexical_review": {
+    "status": "REVIEW",
+    "source_term": "Sefton / Seftons",
+    "decision": "Kaynak argo hitabı aynı yazımla korundu. Kesin sözlük anlamı veya lore kimliği bağımsız doğrulanmadı; özel ad olduğu iddia edilmez ve global LOCKED yapılmaz. Bu belirsizlik yeni ailelerde ayrıca incelenecek."
+  },
+  "slang_sources": [],
+  "context_inferences": [
+    "Novakid/Nightar bozuk kaynak dilbilgisi, iki türün pinli açıklamalarıyla ışık hoşnutsuzluğu ve konuşmacının parlaklığına göre çözüldü.",
+    "Slime, bu diyalogların muhatabının species/fuslimeperson.species görünen adıdır; genel balçık nesne/malzeme anlamı global terime zorlanmadı.",
+    "Sefton REVIEW olarak kaynak hitabı korunur; önceki Mantizi argo yorumları TM ile alındı."
+  ],
+  "legacy_exact_exceptions": [
+    {
+      "asset": "tiles/materials/aenwood/aenfence.material",
+      "pointer": "/description",
+      "en": "A starry fence, wonder what the use for the veil is.",
+      "tr": "Yıldızlı bir çit. Acaba bu örtü ne işe yarıyor?",
+      "reason": "Genel çit örtüsü anlamı; kozmik Perde unvanına zorlanmaz."
+    },
+    {
+      "asset": "objects/themed/fastfood/sodafountain/sodafountain.object",
+      "pointer": "/novakidDescription",
+      "en": "Cola, punch... but still no Dandelion Root Pop...",
+      "tr": "Kola, meyveli gazoz... ama hâlâ Karahindiba Kökü Gazozu yok...",
+      "reason": "Karahindiba Kökü Gazozu doğru mevcut bileşik ad; Kökü çekimi düz Kök Gazozu köküyle eşleşmez."
+    }
+  ],
+  "additional_source_evidence": [
+    {
+      "source": "codex/nightar/funightardoc2.codex",
+      "note": "Conshak ayini ve Tenshae iyileşmiş yara izleri; TR ritüel/iz ayrımı."
+    },
+    {
+      "source": "codex/nightar/funightarhistory2.codex",
+      "note": "Matriarch özel unvanı ve Conshak enerji aktarımı ayini."
+    },
+    {
+      "source": "species/fuizku.species; species/juux.species; species/fuslimeperson.species; species/nightar.species",
+      "note": "Izku, Pharitu/Juux, Slime görünen tür adları ve Nightar ışık hoşnutsuzluğu; Ikzu kaynak yazım hatası karşılıkta düzeltildi."
+    },
+    {
+      "source": "quests/fu_questlines/outpost/scienceoutpost_floranShop.questtemplate; items/generic/loot/mission/greenfinger_trophy.item",
+      "note": "Greenfinger mevcut görev/madalya özel unvanı; genel yeşil parmak anlamına çevrilmedi."
+    }
+  ]
+}
