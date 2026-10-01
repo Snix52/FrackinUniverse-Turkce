@@ -631,6 +631,10 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Fishface / Fishfaces | Diyalog kavramı veya lakabı | Kavram | Balık Surat | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
 | Fluffbutt | Diyalog kavramı veya lakabı | Kavram | Pofuduk Popo | - | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
 | The Ruin | Diyalog kavramı veya lakabı | Kavram | Ruin | Yıkım | LOCKED | v0.68: pinli diyalog kaynağı ve mevcut katalog karşılıkları. Ruin, yalnız The Ruin özel varlık ifadesine uygulanır; genel ruin/ruins sözlerini kapsamaz. |
+| Barbatus | NPC diyalogları / kaynak özel adı veya malzeme | Özel ad | Barbatus | - | LOCKED | v0.69: pinli dialog/converse.config.patch ve önceki katalog/eşya adlarıyla doğrulandı; çekimli cümlede kaynak kökü korunur. |
+| CySol | NPC diyalogları / kaynak özel adı veya malzeme | Özel ad | CySol | - | LOCKED | v0.69: pinli dialog/converse.config.patch ve önceki katalog/eşya adlarıyla doğrulandı; çekimli cümlede kaynak kökü korunur. |
+| Zaibatsu | NPC diyalogları / kaynak özel adı veya malzeme | Özel ad | Zaibatsu | - | LOCKED | v0.69: pinli dialog/converse.config.patch ve önceki katalog/eşya adlarıyla doğrulandı; çekimli cümlede kaynak kökü korunur. |
+| Pyreite | NPC diyalogları / kaynak özel adı veya malzeme | Özel ad | Pyreite | Pirit | LOCKED | v0.69: pinli dialog/converse.config.patch ve önceki katalog/eşya adlarıyla doğrulandı; çekimli cümlede kaynak kökü korunur. |
 
 ## Kural
 

@@ -1,0 +1,769 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-01",
+  "base_commit": "054ffb67f2e5032674d495f99031cd370286d013",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 399,
+    "context_groups": 350,
+    "assets": {
+      "dialog/converse.config": 399
+    },
+    "fu_layered_fields": 399,
+    "unique_english_strings": 269
+  },
+  "changes": {
+    "context_groups": 44,
+    "fields": 45,
+    "sentences_by_context": 47,
+    "sentences_including_repeated_fields": 49,
+    "count_method": "Elle sayılan değişmiş Türkçe cümle ve noktalama ile ayrılmış kısa konuşma ifadeleri; değişmeyen parçalar sayılmaz. Aynı repliğin ayrı konuşmacı bağlamı ayrı sayılır; occurrence tekrarları yalnız including_repeated_fields toplamına eklenir."
+  },
+  "corrections": [
+    {
+      "unit_id": "fef6d69b2cdd0c034585517b3f730ed2e5488a628606f48ad0896db675de38be",
+      "en": "Gotta charper mate, I gotta have a pie.",
+      "before": "Bir dost bulmam lazım; bir turta da şart.",
+      "after": "Bir turta bulmam lazım, dostum.",
+      "reason": "Charper aramak anlamındadır; mate hitabı yanlışlıkla aranan dost yapılmış. Turta ihtiyacına bağlı arama Türkçeye aktarıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/default/11",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "7093a3fc136b800430472d97a10091e4ec867d0cf24c427ce060d4e9b9ef4a31",
+      "en": "Ain't nothin' so boner as a good Mantizi plonk -- er, I mean, wine.",
+      "before": "Güzel bir Mantizi şarabı kadar keyif veren bir şey yok—ıı, yani şarap.",
+      "after": "İyi bir Mantizi köpek öldüreni gibisi yok... ıı, yani şarabı.",
+      "reason": "Plonk ucuz şarap argosudur; aynı şarap sözcüğünün tekrarından doğan anlamsız düzeltme yerine argo ve kendini düzeltme şakası korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/default/2",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "c39327a760cc339059eb538ad713a95a8fc005f48b95572e8789c744a836045c",
+      "en": "Those lallies of yours look pumped. Youse go for a ball all the time?",
+      "before": "Bacakların kaslı görünüyor. Hep top oynamaya mı gidiyorsun?",
+      "after": "Bacakların kaslı görünüyor. Hep yürüyüşe mi çıkıyorsun?",
+      "reason": "Ball (of chalk) yürüyüş argosudur; top oynamak anlamı giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/default/6",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "c8daac969ec3f71ec5fa3653907fbbb50e60e0005f01bb09c6ec04eb4ef4c8de",
+      "en": "Gotta charper mate, I gotta have a pie.",
+      "before": "Bir dost bulmam lazım; bir turta da şart.",
+      "after": "Bir turta bulmam lazım, dostum.",
+      "reason": "Charper aramak anlamındadır; mate hitabı yanlışlıkla aranan dost yapılmış. Turta ihtiyacına bağlı arama Türkçeye aktarıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/floran/4",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "6fee8481e60fa10b42e13d8d2b71f17cc6ac8a8ac94fa6d9b410c036ff63c538",
+      "en": "There's no plonk in me Pope that'd I'd dream o sharin' wi' the likes o' youse.",
+      "before": "Senin gibilerle paylaşacak bir yudum şarabım bile yok.",
+      "after": "Evdeki şarabımdan senin gibilerle paylaşmayı aklımdan bile geçirmem.",
+      "reason": "Pope (of Rome) ev demektir; şarap yokluğu yerine paylaşmayı düşünmeme anlamı korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/floran/8",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "51298fb8c0e560c6bd00706ceb0f73e1e9040a6d5d50ffaa371dfc01ce8e74f4",
+      "en": "Not talkin' to youse. Not now, not ever.",
+      "before": "Seninle konuşmuyorum. Şimdi de, asla da.",
+      "after": "Seninle konuşmayacağım. Ne şimdi ne de başka bir zaman.",
+      "reason": "Gelecekte de konuşmayı reddeden ifade ve bozuk Türkçe bağlaç düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/floran/9",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "4464f54edaf15b6b2a94fe29392f9c97fda4d4d9533b12f538517853412bdfe2",
+      "en": "Youse an' me oughta be chums. Come around again soon, Jar Jar's on me.",
+      "before": "Seninle dost olsak iyi olur. Yakında yine gel, yemek benden.",
+      "after": "Seninle dost olsak iyi olur. Yakında yine gel, içkiler benden.",
+      "reason": "Jar Jar (Binks) drinks kafiyesi bu içki konuşmasında içkiler olarak yorumlandı; kaynakta yemek yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/fumantizi/0",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "9258ada995488a9fe9e95cbe733ab27c44eb781ec81dfb6b6b8517a9579b0391",
+      "en": "All the rich ever think of at home is shushin' more saucepans from us plebs.",
+      "before": "Zenginler memlekette, biz pleblerin çocuklarını susturmaktan başka bir şey düşünmüyor.",
+      "after": "Memlekette zenginlerin tek derdi, biz pleblerden daha çok para koparmak.",
+      "reason": "Saucepan lid/quid para argosu, aynı dalın ücret ve vergi cümlesiyle doğrulanır; çocukları susturma anlamı yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/fumantizi/3",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "d4895d5bb137e381885fa2513cdb127c036b0d21c32c64ad2f694bb12d252c2c",
+      "en": "Them Senators be great gracious pillars when you're in their Popes, but are right meese as sin if in power.",
+      "before": "Senatörler, işin onlara düştüğünde pek nazik ve cömerttir; ama iktidara gelince günah kadar çirkinleşirler.",
+      "after": "Senatörler evlerine gittiğinde pek nazik ve cömerttir; ama iktidardayken günah kadar çirkinleşirler.",
+      "reason": "Pope (of Rome) ev anlamı yerine kaynakta bulunmayan işin onlara düşmesi çıkarılmıştı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/fumantizi/4",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "33f4145aec58ea061e8e0658c3d70c9097fc663d3ddefda82a9156a0fa9aec0c",
+      "en": "Just how many Pixels have youse salted away in your Sherman, anyway?",
+      "before": "Halktan son zamanlarda kaç Pixel yürüttün, cebinde ne kadar biriktirdin?",
+      "after": "Peki bankanda kaç Pixel biriktirdin?",
+      "reason": "Salted away biriktirmektir; halka ait para çalındığı kaynakta yok. Sherman/tank/bank kafiyesi birikim bağlamında bankadır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/fumantizi/5",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "aeefe70e88f4fda2632ac90a66cc9740c2c7ac3c12237f0a6c8093dd70abf4e2",
+      "en": "Them Senators know nanti but to stuff their eeks even as we poor buggers starve.",
+      "before": "Biz garibanlar açlıktan kırılırken şu Senatörler kendilerini tıkıştırmaktan başka bir şey bilmez.",
+      "after": "Biz garibanlar açlıktan kırılırken şu Senatörler tıkınmaktan başka bir şey bilmez.",
+      "reason": "Stuff their eeks yüzlerini yiyecekle doldurma/tıkınma deyimidir; kendini tıkıştırmak bozuk aktarımı düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/fumantizi/9",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "4f3e2fbeea269d39814516cc483fc488dc834a801b56c4bbbd6df336694b077c",
+      "en": "Youse a bender? wait, that doesn't sound quite Isle.",
+      "before": "Sen bir robot musun? Yok, kulağa pek doğru gelmedi.",
+      "after": "Sen Bender mısın? Dur, kulağa pek doğru gelmedi.",
+      "reason": "Robot kimliğine ilişkin Bender göndermesi ve ikinci cümlenin geri çektiği çift anlam korundu; özel gönderme genel robot sözcüğüne indirgenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/glitch/0",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "d6e5d97143df9325fd354235db51894ae2e9af0a4caedafef89c12152ad8b01d",
+      "en": "With no Pope left to go to, what will youse be a-doin' now?",
+      "before": "Artık kapısını çalacak kimse kalmadı; şimdi ne yapacaksın?",
+      "after": "Gidecek evin kalmadığına göre şimdi ne yapacaksın?",
+      "reason": "Pope of Rome/home kafiyesi, Dünya kaybı ve sonraki ev repliği bağlamında ev anlamındadır; yardım edecek insan anlamı yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/human/0",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "adbb53ec1917723ef13d39510aa11e5571366c90223a48567cf46e10c419c615",
+      "en": "Youse an' me oughta be chums. Come around again soon, Jar Jar's on me.",
+      "before": "Seninle dost olsak iyi olur. Yakında yine gel, yemek benden.",
+      "after": "Seninle dost olsak iyi olur. Yakında yine gel, içkiler benden.",
+      "reason": "Jar Jar (Binks) drinks kafiyesi bu içki konuşmasında içkiler olarak yorumlandı; kaynakta yemek yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/mantizi/0",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "63dc9940c031ead7ecd5e780729471868767074ac093d449f9f2756bd07e0dbf",
+      "en": "All the rich ever think of at home is shushin' more saucepans from us plebs.",
+      "before": "Zenginler memlekette, biz pleblerin çocuklarını susturmaktan başka bir şey düşünmüyor.",
+      "after": "Memlekette zenginlerin tek derdi, biz pleblerden daha çok para koparmak.",
+      "reason": "Saucepan lid/quid para argosu, aynı dalın ücret ve vergi cümlesiyle doğrulanır; çocukları susturma anlamı yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/mantizi/3",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "52bf7279bcf7d9583c7a90ccfebb2b33dbac6d9c6475b421431c364a9a02d499",
+      "en": "Them Senators be great gracious pillars when you're in their Popes, but are right meese as sin if in power.",
+      "before": "Senatörler, işin onlara düştüğünde pek nazik ve cömerttir; ama iktidara gelince günah kadar çirkinleşirler.",
+      "after": "Senatörler evlerine gittiğinde pek nazik ve cömerttir; ama iktidardayken günah kadar çirkinleşirler.",
+      "reason": "Pope (of Rome) ev anlamı yerine kaynakta bulunmayan işin onlara düşmesi çıkarılmıştı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/mantizi/4",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "00914090f7543920b36d93244397be3522dd4cef241564434db7c6ef9e4c5bdc",
+      "en": "Just how many Pixels have youse salted away in your Sherman, anyway?",
+      "before": "Halktan son zamanlarda kaç Pixel yürüttün, cebinde ne kadar biriktirdin?",
+      "after": "Peki bankanda kaç Pixel biriktirdin?",
+      "reason": "Salted away biriktirmektir; halka ait para çalındığı kaynakta yok. Sherman/tank/bank kafiyesi birikim bağlamında bankadır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/mantizi/5",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "ca5b7135c0f409e1b82a490fff56c13001634dde36375a2ed8206bb378b578f6",
+      "en": "Them Senators know nanti but to stuff their eeks even as we poor buggers starve.",
+      "before": "Biz garibanlar açlıktan kırılırken şu Senatörler kendilerini tıkıştırmaktan başka bir şey bilmez.",
+      "after": "Biz garibanlar açlıktan kırılırken şu Senatörler tıkınmaktan başka bir şey bilmez.",
+      "reason": "Stuff their eeks yüzlerini yiyecekle doldurma/tıkınma deyimidir; kendini tıkıştırmak bozuk aktarımı düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/mantizi/9",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "3f738fdf9a88b52a0a3c1208624a6f9750ea4db55d6d89bb6181bc6781c493c7",
+      "en": "Not talkin' to youse. Not now, not ever.",
+      "before": "Seninle konuşmuyorum. Şimdi de, asla da.",
+      "after": "Seninle konuşmayacağım. Ne şimdi ne de başka bir zaman.",
+      "reason": "Gelecekte de konuşmayı reddeden ifade ve bozuk Türkçe bağlaç düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/thelusian/0",
+          "origin": "dialog/converse.config.patch#13"
+        },
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/thelusian/9",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "58d54d6cd33988bbf56705a72e02edd84f6d8fbd5847040be355285540d7cf93",
+      "en": "There's no plonk in me Pope that'd I'd dream o sharin' wi' the likes o' youse.",
+      "before": "Senin gibilerle paylaşacak bir yudum şarabım bile yok.",
+      "after": "Evdeki şarabımdan senin gibilerle paylaşmayı aklımdan bile geçirmem.",
+      "reason": "Pope (of Rome) ev demektir; şarap yokluğu yerine paylaşmayı düşünmeme anlamı korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/thelusian/7",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "b6c1488a18e5b118ad878096befec546d0f0807ba9d8b70286ce3c13b4ff3354",
+      "en": "What's that Aunt Nell? was it youse?",
+      "before": "Ne oldu Aunt Nell? Sen miydin?",
+      "after": "Bu koku da ne? Senden mi geliyor?",
+      "reason": "Aunt Nell/smell özel kişi değildir; koku kafiyesi doğru aktarıldı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/thelusian/8",
+          "origin": "dialog/converse.config.patch#13"
+        }
+      ]
+    },
+    {
+      "unit_id": "6a76850606ae581a417168d274c38dd730d1fd00601be5ca0074f4c5e8c4ca0d",
+      "en": "Confused. Can't you speak using more than just two-word phrases?",
+      "before": "Kafası karışık. İki kelimelik cümlelerden fazlasıyla konuşamıyor musun?",
+      "after": "Kafası karışık. İki kelimeden uzun cümleler kuramıyor musun?",
+      "reason": "Cümlelerden fazlasıyla konuşmak bozuk yapısı giderildi; iki sözcüklü ifade sınırı korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/glitch/fenerox/1",
+          "origin": "dialog/converse.config.patch#19"
+        }
+      ]
+    },
+    {
+      "unit_id": "48db148c0bf5ddda735886ea8e23325cbc8c4f1ce9c0890bdd6bec3c04894bc7",
+      "en": "Excited. I've got a lovely bunch of tulips!",
+      "before": "Heyecanlı. Harika bir demet lale aldım!",
+      "after": "Heyecanlı. Harika bir demet lalem var!",
+      "reason": "Got sahip olmayı bildirir; satın alma/edinme olayı kaynakta yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/glitch/fenerox/11",
+          "origin": "dialog/converse.config.patch#19"
+        }
+      ]
+    },
+    {
+      "unit_id": "c6f6eb52bc66eb78f760295ce9f4d586800fa2e6a88b6ae7280c11ded7175fd4",
+      "en": "Mendacious. It is great to see you and your furry kind!",
+      "before": "Yalancı. Seninle ve tüylü türünden biriyle karşılaşmak harika!",
+      "after": "Yalancı. Seninle ve tüylü halkınla karşılaşmak harika!",
+      "reason": "Your furry kind halkı/türü kapsar; yalnız türünden bir kişi anlamına daraltılmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/glitch/fenerox/4",
+          "origin": "dialog/converse.config.patch#19"
+        }
+      ]
+    },
+    {
+      "unit_id": "e26b31c278ae3c5038f17400967dc29f57eb00c2cafbe1535b02ee12efffc248",
+      "en": "Speculative. Did we both have a common ancestor?",
+      "before": "Tahmin yürütüyor. İkimizin ortak bir atası olabilir mi?",
+      "after": "Tahmin yürütüyor. Ortak bir atamız mı vardı?",
+      "reason": "Did geçmiş zamanını ve ortak ataya ilişkin doğrudan soruyu korur; kaynak dışı olabilir kipini kaldırır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/glitch/fudarkizku/1",
+          "origin": "dialog/converse.config.patch#21"
+        }
+      ]
+    },
+    {
+      "unit_id": "6b4aab0b711ebb073545a0a641b39414af708da8ec0638a958e3ca2f9f9a99e2",
+      "en": "Affirmation. I am capable of being just as tough.",
+      "before": "Onaylıyor. Ben de en az senin kadar dayanıklıyım.",
+      "after": "Onaylıyor. Ben de en az senin kadar dayanıklı olabilirim.",
+      "reason": "Capable of yetkinlik bildirir; mevcut kesin dayanıklılık iddiası düzeltilir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/glitch/thelusian/1",
+          "origin": "dialog/converse.config.patch#24"
+        }
+      ]
+    },
+    {
+      "unit_id": "10a12fd04092541a418dd2408c7ff93435c4fdd48a0bd7f54d5f1db56d94c040",
+      "en": "You guys are supposed to be good with computers, right? Can you look at mine?",
+      "before": "Bilgisayar işlerinden anladığınız söyleniyor, değil mi? Şununkine bir bakar mısın?",
+      "after": "Bilgisayar işlerinden anladığınız söyleniyor, değil mi? Benimkine bir bakar mısın?",
+      "reason": "Mine konuşmacının bilgisayarıdır; belirsiz üçüncü kişi sahipliği düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/fukirhos/2",
+          "origin": "dialog/converse.config.patch#5"
+        }
+      ]
+    },
+    {
+      "unit_id": "0ba696215060a8fddc019ba37d39d1b36073070be960ff09f9a64ca6a1c15f59",
+      "en": "You're safe from the Emperor here, friend.",
+      "before": "Burada İmparator’dan güvendesin, dostum.",
+      "after": "Burada İmparator sana zarar veremez, dostum.",
+      "reason": "Safe from Emperor anlamı doğal Türkçeyle açıklandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/fumantizi/3",
+          "origin": "dialog/converse.config.patch#6"
+        }
+      ]
+    },
+    {
+      "unit_id": "98334fd259ed56a88d011e94e2cffc8e37e311f35ddde29897da059a2a5892d9",
+      "en": "Who-- wait, no, -what- are you?!",
+      "before": "Kim— dur, ne— nesin sen?!",
+      "after": "Kim... Dur, hayır, nesin sen?!",
+      "reason": "Who sorusunu geri çekip what sorması korunur; gereksiz ikinci ne çıkarıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/fuslimeperson/11",
+          "origin": "dialog/converse.config.patch#2"
+        }
+      ]
+    },
+    {
+      "unit_id": "43a27be3a554b0bb8be69a55f6123bbfb3b7bc6a9d87bbae8d3aac1b590daeb6",
+      "en": "Gods help me; it can talk!",
+      "before": "Tanrım yardım et, konuşabiliyor!",
+      "after": "Tanrılar yardım etsin; konuşabiliyor!",
+      "reason": "Gods çoğuldur; tekil Tanrım hitabı düzeltilir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/fuslimeperson/12",
+          "origin": "dialog/converse.config.patch#2"
+        }
+      ]
+    },
+    {
+      "unit_id": "fe014d0104e5f0dfce2fc72ab91ba9b5fcae7e947271f52d6543a949e876d0d8",
+      "en": "You're an embarassment to the Protectorate, if you are indeed with them.",
+      "before": "Gerçekten Protectorate’tan biriysen, ona utanç veriyorsun.",
+      "after": "Gerçekten Protectorate'tan biriysen, onun yüz karasısın.",
+      "reason": "Embarrassment to deyimi doğal ve aynı sertlikte aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/fuslimeperson/14",
+          "origin": "dialog/converse.config.patch#2"
+        }
+      ]
+    },
+    {
+      "unit_id": "5da6d235c7dd4ca6d69ec47bd9b04a9e9e06a17eebd8f91e1653d7e8f53a174a",
+      "en": "Your kind keep to themselves. I can respect that. Privacy is something my species took for granted, and pissed away.",
+      "before": "Türünüz kendi hâlinde yaşar. Buna saygı duyuyorum. Mahremiyet, türümün elinin altında olan bir şeydi; sonra onu mahvettik.",
+      "after": "Türünüz kendi hâlinde yaşar. Buna saygı duyuyorum. Türüm mahremiyetin değerini bilmedi ve onu harcadı.",
+      "reason": "Took for granted kıymetini bilmeme anlamıdır; elinin altında olması bunu karşılamıyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/nightar/6",
+          "origin": "dialog/converse.config.patch#7"
+        }
+      ]
+    },
+    {
+      "unit_id": "174a304aeb46d48fb5993b3d5dcd444eed710e1baee92b8ce584602814464b03",
+      "en": "Why are you looking at me like I just insulted your mother?",
+      "before": "Anneme hakaret etmişim gibi neden bakıyorsun?",
+      "after": "Annene hakaret etmişim gibi neden bakıyorsun?",
+      "reason": "Your mother muhatabın annesidir; kişi hatası giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/radien/11",
+          "origin": "dialog/converse.config.patch#8"
+        }
+      ]
+    },
+    {
+      "unit_id": "19f24817014f7aa998a854b87cb76383ccfa19d6f49921e3a7765c5efdb0682e",
+      "en": "Hey, so if you eat radiation, does that mean you can get rid of fallout through consumption?",
+      "before": "Hey, radyasyon yiyorsan, serpintiyi yiyerek vücudundan atabiliyor musun?",
+      "after": "Hey, radyasyon yiyorsan, radyasyon serpintisini yiyerek ortadan kaldırabiliyor musun?",
+      "reason": "Fallout through consumption çevresel serpintiyi tüketmektir; kaynakta vücuttan atmak yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/radien/2",
+          "origin": "dialog/converse.config.patch#8"
+        }
+      ]
+    },
+    {
+      "unit_id": "6cf5821aff8424e2ad92a3d68b67e6bbb17207cb731054312b6f029f69c5eb78",
+      "en": "Must be nice to be able to eat whatever in the hells you like.",
+      "before": "Cehennemin dibinde ne varsa yiyebiliyor olmak güzel olmalı.",
+      "after": "İstediğin her şeyi yiyebilmek ne güzel olmalı.",
+      "reason": "Whatever in the hells you like pekiştirmedir; cehennemdeki maddeler anlamı yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/radien/6",
+          "origin": "dialog/converse.config.patch#8"
+        }
+      ]
+    },
+    {
+      "unit_id": "ea6567c20e350ea4a6c2f4e26616aadb9279586ab7442642d522e0e56bad7906",
+      "en": "I like your feet! Or lack thereof, I suppose.",
+      "before": "Ayaklarını seviyorum! Gerçi ayak sayılmazlar, sanırım.",
+      "after": "Ayaklarını seviyorum! Gerçi ayakların yok, sanırım.",
+      "reason": "Lack thereof ayak yokluğudur; ayak sayılmazlar iddiası değiştirilir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/radien/7",
+          "origin": "dialog/converse.config.patch#8"
+        }
+      ]
+    },
+    {
+      "unit_id": "d4a0ecf6030e327889e67243dad5b6ca1793c9d46c4f62f9e90f1151fbd4b9d2",
+      "en": "I heard your pyreite curry can literally make organics breathe fire. I want to try it sometime!",
+      "before": "Pirit körinin organiklerin ağzından resmen ateş püskürtebildiğini duydum. Bir ara denemek istiyorum!",
+      "after": "Pyreite Körisinin organik canlılara resmen ateş püskürttürebildiğini duydum. Bir ara denemek istiyorum!",
+      "reason": "Mevcut eşya adı Pyreite Körisi korundu; Pirit farklı maddelere ait bir karşılıktır. Körinin kendisinin püskürtmesi yerine yiyen canlı etkisi açıklandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/radien/9",
+          "origin": "dialog/converse.config.patch#8"
+        }
+      ]
+    },
+    {
+      "unit_id": "d6da989a51d690f980b806f4d315cb6cd5148b05e944a0e19980d6e583e6c18f",
+      "en": "Your exoskeleton looks like it can provide a great deal of strength.",
+      "before": "Dış iskeletin çok güçlü görünmeni sağlıyor.",
+      "after": "Dış iskeletin sana epey güç kazandırabilir gibi görünüyor.",
+      "reason": "Provide strength güç kazandırmadır; yalnız güçlü görünmek anlam kayması giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/human/thelusian/1",
+          "origin": "dialog/converse.config.patch#9"
+        }
+      ]
+    },
+    {
+      "unit_id": "9c8576b7ddfedc058c815864ca514534316e315425750ead627e1368bfd3214e",
+      "en": "i've heard disturbing rumours regarding your kind, but I'm sure it's just hearsay.",
+      "before": "Türünüz hakkında rahatsız edici söylentiler duydum ama eminim asılsızdır.",
+      "after": "Türünüz hakkında rahatsız edici söylentiler duydum ama eminim sadece kulaktan dolmadır.",
+      "reason": "Hearsay duyuma dayanan bilgidir; kesin asılsızlık iddiası kaynakta yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/fenerox/5",
+          "origin": "dialog/converse.config.patch#40"
+        }
+      ]
+    },
+    {
+      "unit_id": "2fbbd84bdfd972259dac7af7b042739a9d2518e29978895c26380f61350234a8",
+      "en": "Have you ever seen Mos Lunan technology? Almost as pretty as ours!",
+      "before": "Mos Lunan teknolojisini gördün mü? Bizimkiler kadar güzel!",
+      "after": "Mos Lunan teknolojisini gördün mü? Neredeyse bizimki kadar güzel!",
+      "reason": "Almost karşılaştırma derecesi eksikti; teknoloji tekil zamirle karşılandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/fukirhos/9",
+          "origin": "dialog/converse.config.patch#37"
+        }
+      ]
+    },
+    {
+      "unit_id": "64a2ca76a09637ed39f0d390d6a522bb97ae79e5cbc0c567afb46acd6b134193",
+      "en": "Is it hard to find serenity amongst sundwellers?",
+      "before": "Güneş sakinlerinin arasında huzur bulmak zor mu?",
+      "after": "Güneşte yaşayanların arasında huzur bulmak zor mu?",
+      "reason": "Sundwellers güneşte yaşayanlar anlamındadır; güneşin sakinleri gibi okunabilen ifade giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/nightar/10",
+          "origin": "dialog/converse.config.patch#36"
+        }
+      ]
+    },
+    {
+      "unit_id": "bb96c72584ab68be81fa8c3c1c4e276d3231c56872fb70037ebdcd39cbae1fd6",
+      "en": "We both find beauty in places where nobody is looking. Hyloth in the depths, you in the darkness.",
+      "before": "İkimiz de kimsenin bakmadığı yerlerde güzellik buluyoruz: Hyloth derinliklerde, sen karanlıkta.",
+      "after": "İkimiz de kimsenin bakmadığı yerlerde güzellik buluyoruz: Hylotl derinliklerde, sen karanlıkta.",
+      "reason": "Konuşmacı hylotl dalıdır; kaynak yazım hatası Hyloth tür adına taşınmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/nightar/9",
+          "origin": "dialog/converse.config.patch#36"
+        }
+      ]
+    },
+    {
+      "unit_id": "4f376ae4abfb77e1e207ac30e8fdfd7a78d91a175545c93f5ed85c9b09ff0ff4",
+      "en": "Get your blade feet off of my floor! You'll tear it up!",
+      "before": "Keskin ayaklarını yerimden çek! Zemini lime lime edeceksin!",
+      "after": "Bıçak gibi ayaklarını zeminimden çek! Zemini lime lime edeceksin!",
+      "reason": "Blade feet kesici ayaklar ve floor zemin anlamı açıklaştırıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/radien/5",
+          "origin": "dialog/converse.config.patch#43"
+        }
+      ]
+    },
+    {
+      "unit_id": "4600a2caf67f9f0c1c16f2679135c0c0bb17f4a17baaff634d571362090d3c97",
+      "en": "I have three eyes and I cannot begin to comprehend what you're supposed to be.",
+      "before": "Üç gözüm var ama senin ne olduğunu anlamaya başlayamıyorum bile.",
+      "after": "Üç gözüm var ama senin ne olduğuna akıl erdiremiyorum bile.",
+      "reason": "Cannot begin to comprehend doğal Türkçe deyimle aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/hylotl/radien/8",
+          "origin": "dialog/converse.config.patch#43"
+        }
+      ]
+    }
+  ],
+  "new_locked_terms": 4,
+  "legacy_exact_term_exceptions": 0,
+  "approved_packet_sha256": "6105d66893bb9d175997ecd2c0db42e9f3555a47135e1ceedefa4c62727eaa6e",
+  "luna_original_packet_sha256": "fa3a500cdb601270d1d858beebecf43f7d7bc253e1dcb797b0d2dea76adae881",
+  "approved_rows_sha256": "b7de5c2ef42234b09a2dfc69c3d92e0f0d824608ec3aa18808604e8cf382b84e",
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 399,
+    "context_units": 350,
+    "qa": {
+      "catalog_units_checked": 25779,
+      "raw_units_checked": 115,
+      "locked_terms": 619
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "FU 6.5.8 bb58383c0d16c1152e3439e606b39ff82288b586: dialog/converse.config.patch; 350 context/occurrence records",
+        "note": "Her İngilizce değer, patch katmanındaki kaynak metin ve converse/<speaker>/<target> branch yolu ile karşılaştırıldı. Aynı kaynak aynı bağlamlar dışında farklı speaker/target gruplarında birleştirilmedi."
+      },
+      {
+        "source": "FU 6.5.8: npcs/fuvillageguard.npctype; npcs/newhumansurvivor.npctype; npcs/nightar/nightarvillager.npctype; npcs/nightar/nightarvillageguard.npctype; npcs/nightar/nightarvillagerking.npctype",
+        "note": "Statik NPC tiplerindeki /dialog/converse.config çağrıları doğrulandı; bu genel bağlar seçili satırların canlı erişimini kanıtlamaz."
+      },
+      {
+        "source": "FU 6.5.8: npcs/elduukharvillager.npctype",
+        "note": "ElDuukhar konuşmaları /dialog/elduuconverse.config kullanır; base converse.config bağlantısı yalnız breakObject içindir. Bu yüzden paketteki elduukhar hedef dalları için doğrulanmış doğrudan NPC çağrısı gibi değerlendirilmedi."
+      },
+      {
+        "source": "FU 6.5.8 kaynak sınırı",
+        "note": "Temel vanilla dialog/converse.config bu checkout’ta bulunmadığından diğer vanilla çağıran NPC/script zincirleri doğrudan doğrulanamadı."
+      }
+    ],
+    "note": "Patch kaynağı ve bağlam pointer’ları doğrulandı. Genel NPC dialog referansları tek tek repliklerin canlı seçimini göstermez. Oyun içi satır seçimi, erişim, Türkçe font/karakter, satır sığması ve görsel LQA NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "399 alan FU patch katmanından doğrulandı; temel vanilla converse.config burada yok.",
+    "ElDuukhar köylü converse referansı elduuconverse.config yönünde; converse.config yalnız breakObject. Bu dilim için özel doğrudan NPC erişimi kanıtı sayılmadı.",
+    "Diğer konuşmacı/muhatap dallarının canlı seçimi ve font/satır sığması test edilmedi."
+  ],
+  "new_locked_names": [
+    "Barbatus",
+    "CySol",
+    "Zaibatsu",
+    "Pyreite"
+  ],
+  "lexical_review": {
+    "status": "REVIEW",
+    "source_term": "Sefton / Seftons",
+    "decision": "Kaynak argo hitabı aynı yazımla korundu. Kesin sözlük anlamı veya lore kimliği bağımsız doğrulanmadı; özel ad olduğu iddia edilmez ve global LOCKED yapılmaz. Bu belirsizlik yeni ailelerde ayrıca incelenecek."
+  },
+  "slang_sources": [
+    {
+      "url": "https://cockneyrhymingslang.co.uk/slang/aunt_nell/",
+      "use": "Aunt Nell/smell: koku"
+    },
+    {
+      "url": "https://cockneyrhymingslang.co.uk/slang/saucepan_lid/",
+      "use": "Saucepan lid/quid: para; kaynak ücret/vergi dalı bağlamı"
+    },
+    {
+      "url": "https://people.sc.fsu.edu/~jburkardt/fun/wordplay/rhyme_slang.html",
+      "use": "Ball and chalk/walk, Pope of Rome/home, Sherman tank/bank kafiye bağlamı"
+    },
+    {
+      "url": "https://www.worldwidewords.org/polari.html",
+      "use": "Charper: aramak; Polari argo açıklaması"
+    }
+  ],
+  "context_inferences": [
+    "Jar Jar Binks/drinks içki dalında içkiler olarak yorumlandı; kaynakta yemek yok.",
+    "Sherman/tank/bank birikim bağlamında yorumlandı; hırsızlık iddiası çıkarıldı.",
+    "Charper araması, kaynakta belirtilen turta ihtiyacına bağlandı.",
+    "Bender Glitch robot muhatabına gönderme olarak korundu; çift anlam açıklaması repliğe eklenmedi."
+  ]
+}
