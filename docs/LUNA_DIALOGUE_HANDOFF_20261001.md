@@ -7,7 +7,7 @@ Kullanıcı 1 Ekim'de diyalogların önce çevrilmesini istedi. Mevcut politika 
 - Çalışma checkout'u: `../local-luna/`. Aynı Git deposunun Luna dalı; değişiklik yapmadan önce `git status` ve checkpoint'i oku.
 - Katalog: `0.66.0-beta`, 14.617 alan. Yeni eklenen P0 yer imi ve ilk P1 yetiştirme dilimi 454 alandır; önceki 14.163 alan korunur.
 - FU 6.5.8 kaynağı: `../local-runtime/fu_source/`, pin `bb58383c0d16c1152e3439e606b39ff82288b586`. Kaynak checkout'unu değiştirme.
-- Yerel paket sonucu checkpoint'te; uzak yayın ve oyun içi LQA ayrı durumlardır. Generated `FU_Turkce/`, `dist/` ve raporları elle değiştirme.
+- Yerel paket: `../local-runtime/build-v066-20261001-final/FU_Turkce_v0.66.0_Beta.zip`; güncel yerel kanıt `package-evidence.json`. Build, ZIP, 241 regresyon ve kaynak kapıları PASS; uzak yayın ve oyun içi LQA ayrı durumlardır. Generated `FU_Turkce/`, `dist/` ve raporları elle değiştirme.
 
 ## Sıra
 
