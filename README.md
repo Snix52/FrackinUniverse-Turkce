@@ -80,8 +80,6 @@ Lua görünür string güvenliği, LOCKED karma-varyant kontrolü, alan-bağlı 
 
 **v0.70.0** ile 375 NPC diyalog alanı eklendi; 350 konuşmacı/muhatap bağlamı incelendi. Hylotl, Pharitu, Mantizi, Nightar, Novakid, Shadow ve Skath sohbetleri yerelleştirildi. Katalog toplamı 16.147 alan, terim sözlüğü 637 LOCKED kayıttır. Önce/sonra düzeltmeler [inceleme raporunda](docs/reviews/dialogue4-20261001.json), kaynak ve oyun içi kontrol sınırları [LQA kaydında](docs/LQA_V070_20261001.md) bulunur.
 
-**v0.70.0** ile 375 NPC diyalog alanı eklendi; 350 konuşmacı/muhatap bağlamı incelendi. Hylotl, Pharitu, Mantizi, Nightar, Novakid, Shadow ve Skath sohbetleri yerelleştirildi. Katalog toplamı 16.147 alan, terim sözlüğü 637 LOCKED kayıttır. Önce/sonra düzeltmeler [inceleme raporunda](docs/reviews/dialogue4-20261001.json), kaynak ve oyun içi kontrol sınırları [LQA kaydında](docs/LQA_V070_20261001.md) bulunur.
-
 **v0.69.0** üçüncü NPC diyalog diliminde 399, **v0.68.0** ikinci dilimde 380, **v0.67.0** ilk dilimde 376 alan ekledi. **v0.66.0** Bilim Karakolu yer imi ve ilk yetiştirme diliminde 454 alan ekledi. Diyalog önceliği sürer. Teknik doğrulama, her repliğin canlı oyunda denenmiş olduğu anlamına gelmez.
 
 v0.46 Irklar ve SAIL/AI confirmed kapsamı kapatıldı.

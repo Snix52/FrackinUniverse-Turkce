@@ -667,3 +667,14 @@ Son cümle muhasebesi: Bender repliğinin iki cümlesi de değişmiştir. Bağla
 Beyin kayıt/receipt sonuçları aşağıda; son docs commit sonrası local-repo ve temiz local-luna main ile ff-only eşitlenir. Güncel sonraki paket ../local-runtime/translation-planning-v069-dialog-next/packet.json, 375 alan/350 bağlam, input ve basis doğrulandı, boş taslak teknik kabulden reddedildi. Oyun içi LQA NOT TESTED; Sefton sözlük/lore karşılığı REVIEW.
 
 Beyin: notes/p-local-c9ce88775f19f9eb7e39/fu-v069-dialogue-published-20261001.md başarıyla oluşturuldu ve kind/project/body geri okundu. Ana proje kökünden beyin-project.ps1 sync PASS, warnings/conflicts yok. Receipt fu-v069-dialogue-published-20261001, codex harness ve geçerli session/refs geri okuma PASS. Receipt kaynağı receipts/aac91509d4254ddff19512a5edefc02b23be90f8ea34f1e8be797a5c4eebf35f.md. Gereksiz public CI run numaraları hafıza gövdesine alınmadı; güvenlik denetimi bypass edilmedi.
+
+
+## 1 Ekim 2026 — v0.70 Sol incelemesi ve yerel paket
+
+375 alan / 350 bağlam / 248 benzersiz EN incelendi; 33 grupta 37 alan düzeltildi. Bağlam başına 34, tekrarlar dahil **38 değişmiş cümle/kısa ifade**. Katalog **16.147**, yeni LOCKED **18**, toplam **637**. Önceki 15.772 satır aynen korundu. Tam önce/sonra ve gerekçeler: docs/reviews/dialogue4-20261001.json. Oyun içi LQA NOT TESTED; Sefton REVIEW, statik NPC bağlantısı her dalın canlı erişimini kanıtlamaz.
+
+Kaynak/entegrasyon commit cd89ae1e73e7c7ef9091627abc7ae1dd611cad27. **270 regresyon, compileall, v070/UI/SAIL kaynak kapıları, tam build, generated-output edit guard, yeni pakette 4 Lua + 8 UI testi PASS**. 4.923 patch + 10 raw + 14 custom = 4.947 oyun asseti; metadata ile 4.948 dosya. Kaynak girdileri temiz/commit edilmiş; FU 6.5.8 pini bb58383c0d16c1152e3439e606b39ff82288b586 korunur. Yerel build ../local-runtime/build-v070-20261001/, package-evidence.json. ZIP SHA256 ffbf0a0532fed6ff4dad4a1252d1478036bf6f80ee01639938ea55ff68874dfa, 2674368 byte. ZIP integrity ve kurulum ağacı byte eşitliği PASS; build input SHA 7098435d86fab689e643eb5bee2d43415c2fa0b1775db0def0d8dedffebaa6e9.
+
+Yeni güncel ve boş taslak ../local-runtime/translation-planning-v070-dialog-next/packet.json: **352 alan / 350 bağlam**, 57 TM önerili grup. Skath devamı, Thelusian/Veluu sohbetleri, ırklara göre selamlaşmalar ve Slime/ElDuukhar/Fenerox/mürettebat replikleri. Patch 256 + Slime 72 + ElDuukhar 11 + Fenerox 8 + crew 5 alan. Fresh inputs doğrulandı, boş/onaysız taslak teknik kabulden reddedildi. Dialog kalan 756 alan/749 bağlam; confirmed 42.254 (P1 6.679), review 3.049, Lua 162. Eski radyo taslağı bayat, başlayınca yeniden hazırla. Sol local-repo; Luna local-luna. Güncel handoff içerik ve kaynak dağılımını açıklar.
+
+Bu girişte GitHub push/CI/generated yayını ve son local-luna ff-only eşitlemesi bekliyor. Beyin kaynak bağlı sonuç notu/receipt yayın doğrulanınca kaydedilecek. Steam Atölye ve oyun kurulumu bu GitHub yayını kapsamında değil.
