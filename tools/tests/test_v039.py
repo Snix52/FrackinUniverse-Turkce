@@ -63,7 +63,7 @@ class V039Tests(unittest.TestCase):
         # The historical generator must carry the same corrected text and QA,
         # not reintroduce a stale hard-coded dictionary on regeneration.
         from types import SimpleNamespace
-        import generate_v039 as generator
+        from legacy import generate_v039 as generator
         for row in rows:
             candidate = SimpleNamespace(asset=row["asset"], pointer=row["pointer"], value=row["en"])
             self.assertEqual(generator.translated_row(candidate), row)

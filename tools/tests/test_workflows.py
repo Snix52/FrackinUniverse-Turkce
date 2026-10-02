@@ -26,13 +26,10 @@ class WorkflowTests(unittest.TestCase):
             self.assertIn(part, text)
         self.assertNotIn('git push', text)
         self.assertNotIn('git rebase', text)
-        self.assertIn('python tools/generate_v049.py --source fu_source', text)
-        self.assertIn('python tools/generate_v050.py --source fu_source', text)
         pr_text = (ROOT / '.github/workflows/pr-qa.yml').read_text()
-        self.assertIn('python tools/generate_v049.py --source fu_source', pr_text)
-        self.assertIn('python tools/generate_v050.py --source fu_source', pr_text)
-        self.assertIn('python tools/generate_v066.py --source fu_source', text)
-        self.assertIn('python tools/generate_v066.py --source fu_source', pr_text)
+        for workflow in (text, pr_text):
+            self.assertIn('python tools/check_sources.py --source fu_source', workflow)
+            self.assertNotIn('python tools/generate_v', workflow)
 
 
 if __name__ == '__main__':

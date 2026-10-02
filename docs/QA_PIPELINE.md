@@ -40,10 +40,11 @@ Remaining scope workflow ana, raw ve sürümlü katalog değişikliklerinde çal
 python -m compileall -q tools
 python -m unittest discover -s tools/tests -v
 python tools/qa_integrity.py
+python tools/check_sources.py --source fu_source
 python tools/build_validate.py --source-dir fu_source --output build_output
 # Kök kurulum ağacını yeni build ile eşitle.
 rm -rf FU_Turkce && cp -a build_output/FU_Turkce FU_Turkce
-PACKAGE_PATH="$(python -c 'import json; v=json.load(open("tools/ceviriler.json", encoding="utf-8"))["translation_version"]; print("dist/FU_Turkce_v" + v.split("-", 1)[0] + ("_Beta" if "beta" in v.lower() else "") + ".zip")"
+PACKAGE_PATH="$(python -c 'import json; v=json.load(open("tools/ceviriler.json", encoding="utf-8"))["translation_version"]; print("dist/FU_Turkce_v" + v.split("-", 1)[0] + ("_Beta" if "beta" in v.lower() else "") + ".zip")')"
 python tools/write_build_evidence.py --zip "$PACKAGE_PATH" \
   --output dist/build-evidence.json --create-zip --refresh-tracked \
   --translation-source-commit "$(git rev-parse HEAD)" --workflow-run-id local
@@ -84,9 +85,10 @@ Build raporu gerçek yerel Git HEAD'ini ve bütün Python/JSON/Lua girdilerinin 
 Windows PowerShell örneği (Python 3.11+):
 
 ```powershell
-python -m pip install lupa==2.8
+python -m pip install lupa==2.8 Pillow==11.3.0
 python -m unittest discover -s tools/tests -v
 python -X utf8 tools/qa_integrity.py
+python -X utf8 tools/check_sources.py --source ..\fu_source
 python -X utf8 tools/build_validate.py --source-dir ..\fu_source --output ..\build_output
 $env:FU_TEST_MOD_DIR = '..\build_output\FU_Turkce'
 python -m unittest discover -s tools/tests -p test_lua_behavior.py -v
