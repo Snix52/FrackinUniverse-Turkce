@@ -4,7 +4,7 @@ Son içerik sürümü **v0.70.0-beta**, hedef **FU 6.5.8**. Ana katalogda **16.1
 
 ## 2 Ekim 2026 — repository düzeni
 
-Kapsam yalnız repository temizliğidir. Belgeler tarihli denetim, LQA, devir ve geçmiş kayıt klasörlerine ayrıldı; eski tek seferlik üreticiler `tools/legacy/` içine taşındı. Main ve PR kaynak kontrolleri `tools/check_sources.py` ortak komutunda toplandı. Çeviri içeriği ve FU pini korunur.
+Kapsam yalnız repository temizliğidir. Belgeler tarihli denetim, LQA, devir ve geçmiş kayıt klasörlerine ayrıldı; eski tek seferlik üreticiler `tools/legacy/` içine taşındı. Main ve PR kaynak kontrolleri `tools/check_sources.py` ortak komutunda toplandı. Çeviri içeriği ve FU pini korunur. Düzenleme doğrudan `main` dalına yayımlandı; [GitHub Build and QA](https://github.com/Snix52/FrackinUniverse-Turkce/actions/runs/36992639478) başarılı. 277 regresyon ve 28 kaynak kapısı PASS; 4.948 dosyalık mod ağacı ve ZIP içeriği önceki yayınla aynı.
 
 - [Düzenleme denetimi ve doğrulama kapsamı](docs/audits/REPO_ORGANIZATION_20261002.md)
 - [Katkı ve bakım rehberi](CONTRIBUTING.md)

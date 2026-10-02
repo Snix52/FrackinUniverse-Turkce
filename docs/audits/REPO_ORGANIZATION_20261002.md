@@ -23,3 +23,15 @@ Kök README, katkı rehberi, belge ve araç dizinleri güncel giriş noktalarıd
 ## Doğrulama
 
 Taşınan belgelerin yerel bağlantıları ve Git whitespace kontrolü denetlenir. Regresyonlar; eski üreticilerin yazmadan durmasını, eksik/yeni sürüm kapılarının reddedilmesini ve bir kaynak kapısı hata verdiğinde sonraki kontrollerin çalışmamasını kapsar. Tam regresyon, pinli kaynağa karşı tüm 28 kapı, full-source build ve üretilen mod ağacının mevcut paketle bayt eşitliği kontrolü uygulanır. Son hosted çalışmanın sonucu GitHub Actions'tan, paket kanıtı [dist/build-evidence.json](../../dist/build-evidence.json) üzerinden okunur. Oyun içi LQA durumu bu bakım çalışmasıyla değişmez.
+
+## Doğrulanan sonuçlar
+
+- Yerel Python compile ve **277 regresyon**: PASS.
+- Belge bağlantıları: **100 kontrol, 0 kırık bağlantı**.
+- Katalog, manifest, terminoloji ve inceleme kayıtları: korunmuş **58 kaynak/paket dosyası**; 25 arşiv üreticisinin özgün işlevleri korundu, doğrudan yazma engeli doğrulandı.
+- Yerel pinli FU ile full-source build: PASS; yeni mod ağacının mevcut yayınla **4.948 dosyada bayt eşitliği** PASS.
+- [GitHub Build and QA](https://github.com/Snix52/FrackinUniverse-Turkce/actions/runs/36992639478): **SUCCESS**; 277 regresyon, **28 kaynak kapısı**, tam build, yeni Lua/UI testleri, deterministik ZIP ve generated yayın adımı geçti.
+- Bakım kaynak commit'i: `4c0ed0a127cb5f1f72cfb34579a8fcafba1918cf`. CI generated commit'i: `4cb773f9a27a682a63f0905df15f30fedae88c83`.
+- Yayımlanan v0.70 ZIP SHA-256 değeri önceki yayınla aynı: `ffbf0a0532fed6ff4dad4a1252d1478036bf6f80ee01639938ea55ff68874dfa`. Oyuncu içerikleri değişmedi; build kanıtı yeni bakım girdileri için CI tarafından yenilendi.
+
+Tam kaynak kapısı dizisi hosted CI'da doğrulandı. Yerelde v045–v051 geçtikten sonra aynı taramanın ikinci kopyası durduruldu; yerel full-source build, bayt karşılaştırması ve bütün regresyonlar tamamlandı. Oyun içi LQA ve bilgisayardaki kurulum bu işlemin kapsamına alınmadı.
