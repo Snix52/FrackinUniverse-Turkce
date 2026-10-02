@@ -689,9 +689,9 @@
   ],
   "new_locked_terms": 4,
   "legacy_exact_term_exceptions": 0,
-  "approved_packet_sha256": "6105d66893bb9d175997ecd2c0db42e9f3555a47135e1ceedefa4c62727eaa6e",
+  "approved_packet_sha256": "a756da4ed6b08d9053b74106d28e18d3226c6d8aaa44d0900d8056994f574571",
   "luna_original_packet_sha256": "fa3a500cdb601270d1d858beebecf43f7d7bc253e1dcb797b0d2dea76adae881",
-  "approved_rows_sha256": "b7de5c2ef42234b09a2dfc69c3d92e0f0d824608ec3aa18808604e8cf382b84e",
+  "approved_rows_sha256": "8c29eef9869ce3310530f9c242e74ab5cac750da053cd735695bdd07fccce388",
   "preflight": {
     "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
     "fields": 399,
@@ -765,5 +765,39 @@
     "Sherman/tank/bank birikim bağlamında yorumlandı; hırsızlık iddiası çıkarıldı.",
     "Charper araması, kaynakta belirtilen turta ihtiyacına bağlandı.",
     "Bender Glitch robot muhatabına gönderme olarak korundu; çift anlam açıklaması repliğe eklenmedi."
+  ],
+  "subsequent_reviews": [
+    {
+      "date": "2026-10-02",
+      "release": "0.71.0-beta",
+      "review": "docs/reviews/dialogue5-20261002.json",
+      "previous_approval": {
+        "approved_packet_sha256": "6105d66893bb9d175997ecd2c0db42e9f3555a47135e1ceedefa4c62727eaa6e",
+        "approved_rows_sha256": "b7de5c2ef42234b09a2dfc69c3d92e0f0d824608ec3aa18808604e8cf382b84e"
+      },
+      "changes": [
+        {
+          "unit_id": "maintenance:dialog/converse.config/converse/fumantizi/default/10",
+          "context": [
+            "dialog",
+            "dialog/converse.config",
+            "/converse/fumantizi/default"
+          ],
+          "en": "Is that a rocket youse got there in yer sky, or are youse just pleased to see me?",
+          "before": "Gökyüzündeki roket senin mi, yoksa beni gördüğüne mi sevindin?",
+          "after": "Cebindeki şey bir roket mi, yoksa beni gördüğüne mi sevindin?",
+          "reason": "Aynı argo gökyüzü/cep hatası eski yayımlanmış alanda da giderildi; source aynı, eski sürüm manifest/gate ve dil onayı yeniden bağlandı.",
+          "changed_sentences": 1,
+          "occurrences": [
+            {
+              "asset": "dialog/converse.config",
+              "pointer": "/converse/fumantizi/default/10"
+            }
+          ],
+          "maintenance": true
+        }
+      ],
+      "note": "Özgün Luna inceleme sayımı tarihsel olarak korundu; sonraki bakım değişikliği bu ayrı kayıtla kaynak/dil açısından yeniden onaylandı."
+    }
   ]
 }

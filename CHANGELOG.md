@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.71.0 Beta — NPC konuşmaları
+
+352 yeni alan eklendi: Skath, Thelusian ve Veluu sohbetleri, ırklara göre selamlaşmalar; Slime, ElDuukhar, Fenerox ve mürettebat replikleri. Katalog 16.499 alana ulaştı.
+
+30 alanda 31 cümle/kısa ifade düzeltildi; iki alan önceki sürümlerdeki aynı argo hatasının onarımıdır. Argo, kişi/kip anlamları, tüy kalem yazımı ve silah sınıfı karşılıkları kontrol edildi. 10 yeni LOCKED terim eklendi; toplam 647. [Önce/sonra kayıtları](docs/reviews/dialogue5-20261002.json) · [Hedefli oyun kontrolü](docs/lqa/LQA_V071_20261002.md)
+
 ## 2 Ekim 2026 — belgeler
 
 README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıldı. Kod, çeviri kataloğu ve paket içeriği değişmedi. Kullanıcının 2–3 saatlik sorunsuz oyun denemesi [test notlarına](docs/LQA_CHECKLIST.md) eklendi.
@@ -8,6 +14,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.71.0 | NPC konuşmaları, beşinci dilim | 352 |
 | v0.70.0 | NPC konuşmaları, dördüncü dilim | 375 |
 | v0.69.0 | NPC konuşmaları, üçüncü dilim | 399 |
 | v0.68.0 | NPC konuşmaları, ikinci dilim | 380 |

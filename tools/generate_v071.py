@@ -1,4 +1,4 @@
-"""Exact-source gate for the approved P1 dialogue v0.69 tranche."""
+"""Exact-source gate for the approved P1 dialogue v0.71 tranche."""
 from __future__ import annotations
 
 import argparse
@@ -9,36 +9,36 @@ from plan_translation import digest, read
 from write_build_evidence import verify_source
 
 TOOLS = Path(__file__).resolve().parent
-APPROVED_ROWS_SHA256 = '8c29eef9869ce3310530f9c242e74ab5cac750da053cd735695bdd07fccce388'
+APPROVED_ROWS_SHA256 = '5d8e81685acf1ff167bc87f920a14eb437ef9fc655a72273591ec3beda3d71b7'
 
 
 def validate_manifest(manifest, catalog, review):
     rows = manifest['translations']
     keys = {(r['asset'], r['pointer']) for r in rows}
-    if (manifest['translation_version'] != '0.69.0-beta' or len(rows) != 399
-            or len(keys) != 399 or len({r['asset'] for r in rows}) != 1):
-        raise ValueError('v0.69 scope/count drift')
+    if (manifest['translation_version'] != '0.71.0-beta' or len(rows) != 352
+            or len(keys) != 352 or len({r['asset'] for r in rows}) != 5):
+        raise ValueError('v0.71 scope/count drift')
     core = sorted([{k: r[k] for k in ('asset', 'pointer', 'en', 'tr')} for r in rows],
                   key=lambda r: (r['asset'], r['pointer']))
     if digest(core) != APPROVED_ROWS_SHA256:
-        raise ValueError('v0.69 approved translation membership/content drift')
+        raise ValueError('v0.71 approved translation membership/content drift')
     if (review['status'] != 'APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT'
             or manifest['approved_packet_sha256'] != review['approved_packet_sha256']
             or review['approved_rows_sha256'] != APPROVED_ROWS_SHA256):
-        raise ValueError('v0.69 language approval mismatch')
+        raise ValueError('v0.71 language approval mismatch')
     version = tuple(map(int, catalog['translation_version'].split('-')[0].split('.')))
-    if version < (0, 69, 0):
-        raise ValueError('Catalog version behind v0.69')
+    if version < (0, 71, 0):
+        raise ValueError('Catalog version behind v0.71')
     index = {(r['asset'], r['pointer']): r for r in catalog['translations']}
     for row in rows:
         key = (row['asset'], row['pointer'])
         expected_qa = ({'layered_source': True, 'source_patch': row['asset'] + '.patch'}
-                       if row['asset'] == 'dialog/converse.config' else None)
+                       if row['asset'] in {'dialog/converse.config', 'dialog/crewmember.config', 'dialog/fenerox.config'} else None)
         if row.get('qa') != expected_qa:
-            raise ValueError('v0.69 source provenance mismatch: ' + repr(key))
+            raise ValueError('v0.71 source provenance mismatch: ' + repr(key))
         current = index.get(key)
         if not current or any(current.get(k) != row.get(k) for k in ('en', 'tr', 'qa')):
-            raise ValueError('v0.69 catalog mismatch: ' + repr(key))
+            raise ValueError('v0.71 catalog mismatch: ' + repr(key))
 
 
 def validate_source(rows, source):
@@ -51,10 +51,10 @@ def validate_source(rows, source):
         if asset not in assets:
             assets[asset] = build.parse_jsonc((source / asset).read_bytes().decode('utf-8-sig'))
         if build.read_at(assets[asset], row['pointer']) != row['en']:
-            raise ValueError('v0.69 pinned source mismatch: ' + asset + row['pointer'])
+            raise ValueError('v0.71 pinned source mismatch: ' + asset + row['pointer'])
         touched, value = build.source_patch_value(asset, row['pointer'], source, cache)
         if touched and value != row['en']:
-            raise ValueError('v0.69 unreviewed FU overlay: ' + asset + row['pointer'])
+            raise ValueError('v0.71 unreviewed FU overlay: ' + asset + row['pointer'])
 
 
 def main():
@@ -62,16 +62,16 @@ def main():
     parser.add_argument('--source', type=Path, required=True)
     args = parser.parse_args()
     verify_source(args.source.resolve())
-    manifest = read(TOOLS / 'v069_translations.json')
+    manifest = read(TOOLS / 'v071_translations.json')
     pin = read(TOOLS / 'kaynaklar.json')
     if (manifest['source_commit'] != pin['commit']
             or manifest['source_repository'] != pin['repository']
             or manifest['source_declared_version'] != pin['declared_version']):
-        raise ValueError('v0.69 manifest source pin drift')
+        raise ValueError('v0.71 manifest source pin drift')
     validate_manifest(manifest, read(TOOLS / 'ceviriler.json'),
-                      read(TOOLS.parent / 'docs/reviews/dialogue3-20261001.json'))
+                      read(TOOLS.parent / 'docs/reviews/dialogue5-20261002.json'))
     validate_source(manifest['translations'], args.source)
-    print('v0.69 source gate PASS: 399 fields / 1 asset / 269 unique source strings / 399 FU-layered fields')
+    print('v0.71 source gate PASS: 352 fields / 5 assets / 262 unique source strings / 269 FU-layered fields / 83 direct fields')
 
 
 if __name__ == '__main__':

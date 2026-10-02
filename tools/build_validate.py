@@ -423,6 +423,13 @@ V070_DIALOGUE_FIELDS = {(row['asset'], row['pointer']) for row in _V070_MANIFEST
 if len(V070_DIALOGUE_FIELDS) != 375 or len(_V070_MANIFEST['translations']) != 375:
     raise ValueError('v0.70 dialogue manifest field inventory drift')
 
+_V071_MANIFEST = json.loads(
+    Path(__file__).with_name('v071_translations.json').read_text(encoding='utf-8')
+)
+V071_DIALOGUE_FIELDS = {(row['asset'], row['pointer']) for row in _V071_MANIFEST['translations']}
+if len(V071_DIALOGUE_FIELDS) != 352 or len(_V071_MANIFEST['translations']) != 352:
+    raise ValueError('v0.71 dialogue manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki yedi Kademe 5 savaş ekipmanı kolunun
 # gerçek üretim tarifi bulunan v0.28 assetleri. Ferozium Satırı önceki
 # Battle paketinde çevrildiği için burada 96 yeni asset vardır.
@@ -693,6 +700,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V071_DIALOGUE_FIELDS:
+        return True
     if (a,p) in V070_DIALOGUE_FIELDS:
         return True
     if (a,p) in V069_DIALOGUE_FIELDS:

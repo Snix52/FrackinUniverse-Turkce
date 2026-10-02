@@ -9,7 +9,7 @@ from plan_translation import digest, read
 from write_build_evidence import verify_source
 
 TOOLS = Path(__file__).resolve().parent
-APPROVED_ROWS_SHA256 = 'b46076c8c17afefa602d291705e7ef619e52626a92f85d136ad681bb2597a276'
+APPROVED_ROWS_SHA256 = '784b73e3afa7f08601c9dc03770a49dd49540f338eea97e50d44c8bc1bef1bfc'
 
 
 def validate_manifest(manifest, catalog, review):

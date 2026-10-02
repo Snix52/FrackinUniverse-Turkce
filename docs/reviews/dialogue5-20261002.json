@@ -1,0 +1,783 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-02",
+  "base_commit": "e70835f94736338eca53f19f0dafcfe241e78122",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 352,
+    "context_groups": 350,
+    "unique_english_strings": 262,
+    "assets": {
+      "dialog/converse.config": 256,
+      "dialog/crewmember.config": 5,
+      "dialog/elduuconverse.config": 11,
+      "dialog/fenerox.config": 8,
+      "dialog/fuslimeperson.config": 72
+    },
+    "fu_layered_fields": 269,
+    "direct_source_fields": 83
+  },
+  "changes": {
+    "context_groups": 30,
+    "fields": 30,
+    "sentences_by_context": 31,
+    "sentences_including_repeated_fields": 31,
+    "maintenance_fields": 2,
+    "count_method": "Elle sayılan değişmiş cümle/kısa bağımsız ifadeler; değişmeyen parçalar sayılmaz. Aynı metnin ayrı bağlamı ayrı sayılır; occurrence tekrarları yalnız including_repeated_fields toplamına eklenir."
+  },
+  "new_locked_terms": 10,
+  "new_locked_names": [
+    "Vanguard",
+    "The Seekers / The Seeker's",
+    "Thel'Mara",
+    "Zah'Kal",
+    "Nosverah",
+    "Plasmaspear",
+    "Phasesmith",
+    "Plasmacore",
+    "The Devourer",
+    "Celestial Towers"
+  ],
+  "expanded_locked_terms": [
+    "May the Source be with you"
+  ],
+  "approved_packet_sha256": "6b9ebf08191cbd17bf9b7c2e07dab73616215f3117214b7c91a2b18add6b7ea4",
+  "luna_original_packet_sha256": "50902a3b415e4bfd3222b0cabd7535a7da193e7abeb776d26715e85f109709c5",
+  "approved_rows_sha256": "5d8e81685acf1ff167bc87f920a14eb437ef9fc655a72273591ec3beda3d71b7",
+  "corrections": [
+    {
+      "unit_id": "fffe36056f740c93105f09adcd1c931dcf6e7b844c878dbf7f88877123300d53",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/skath/human"
+      ],
+      "en": "I heard the humans once had a big military faction. Is that true?",
+      "before": "İnsanların bir zamanlar büyük bir askerî gücü olduğunu duymuştum. Doğru mu?",
+      "after": "İnsanların bir zamanlar büyük bir askerî teşkilatı olduğunu duymuştum. Doğru mu?",
+      "reason": "Military faction örgüt/teşkilat anlamıdır; yalnız güç büyüklüğüne indirgenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/human/4",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "36f814cd99640910327b1a75621578f654b05a87b240b5449079c75cd13e950e",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/skath/hylotl"
+      ],
+      "en": "Do your business here and leave immediatelly afterwards.",
+      "before": "İşini burada hallet ve hemen ardından defol.",
+      "after": "İşini burada hallet ve hemen ardından ayrıl.",
+      "reason": "Leave kaynakta defol düzeyinde küfürlü değildir; düşmanca emir tonu korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/hylotl/1",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "9e5b9b2b84b75752a74c34ab3267ac8c487a6b212fa3767590f1ee195ec290f9",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/skath/hylotl"
+      ],
+      "en": "Does your kind need to humidify themselves too? Oh, I forgot. You originated on land.",
+      "before": "Sizin türünüzün de nemlenmesi mi gerekiyor? Ha, unutmuşum. Karada ortaya çıkmıştınız.",
+      "after": "Sizin türünüzün de kendini nemli tutması mı gerekiyor? Ha, unutmuşum. Karada ortaya çıkmıştınız.",
+      "reason": "Humidify themselves kendi nemini koruma eylemidir; yalnız nemlenme ihtimali değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/hylotl/9",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "f8f22b26ee44c236656ae738d4e95014c3792dfcf87215fc09253c7fc6abc508",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/skath/skath"
+      ],
+      "en": "I heard councillor Thel'Mara used to carry two giant broadswords into battle, can you believe it?",
+      "before": "Konsey üyesi Thel'Mara'nın savaşta iki devasa pala taşıdığını duymuştum. İnanabiliyor musun?",
+      "after": "Konsey üyesi Thel'Mara'nın savaşta iki devasa büyük kılıç taşıdığını duymuştum. İnanabiliyor musun?",
+      "reason": "Broadsword mevcut LOCKED Büyük Kılıç sınıfıyla eşlendi; pala farklı silahtır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/skath/skath/13",
+          "origin": "dialog/converse.config.patch#85"
+        }
+      ]
+    },
+    {
+      "unit_id": "503aefc5fad1b8c488e7f30f70d33d58517e4c4cbca9fb5826647a0470e52bb9",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/skath/skath"
+      ],
+      "en": "I heard councillor Thel'Mara used to carry two giant broadswords into battle, can you believe it?",
+      "before": "Konsey üyesi Thel'Mara'nın savaşta iki devasa pala taşıdığını duymuştum. İnanabiliyor musun?",
+      "after": "Konsey üyesi Thel'Mara'nın savaşta iki devasa büyük kılıç taşıdığını duymuştum. İnanabiliyor musun?",
+      "reason": "Broadsword mevcut LOCKED Büyük Kılıç sınıfıyla eşlendi; pala farklı silahtır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/skath/skath/12",
+          "origin": "dialog/converse.config.patch#77"
+        }
+      ]
+    },
+    {
+      "unit_id": "a472296d902899020f908ed4468d1b32caa48b58056fb8113bcd567a4fd13042",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/default"
+      ],
+      "en": "Not feeling that boner -- must've been the plonk during last cycle's Leo.",
+      "before": "Kendimi pek iyi hissetmiyorum; geçen döngüdeki Leo'da içtiğim içki dokunmuş olmalı.",
+      "after": "Kendimi pek iyi hissetmiyorum; geçen döngüdeki gün boyu içki âleminde içtiğim şarap dokunmuş olmalı.",
+      "reason": "Leo/Leo Sayer all-dayer içki oturumudur; kişi/yer adı olarak bırakılmadı. Plonk şarap; boner/bona iyi hâl yorumu Polari bağlamı çıkarımıdır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/default/4",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "0ff7fdfd036c69dcc2dbf65e15effc395d4bf0f76d9de12bed386a542a88e84d",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/default"
+      ],
+      "en": "Is that a rocket youse got there in yer sky, or are youse just pleased to see me?",
+      "before": "Gökyüzündeki roket senin mi, yoksa beni gördüğüne mi sevindin?",
+      "after": "Cebindeki şey bir roket mi, yoksa beni gördüğüne mi sevindin?",
+      "reason": "Sky/sky rocket cep kafiyesidir; gökyüzü anlamı cinsel çift anlamlı espriyi kaybettiriyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/default/6",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "f13d18f0bc4788c67b2251836963d2bc0e4787ef600a203b4693a2f7e1a9ff73",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/default"
+      ],
+      "en": "Your name isn't ''Willow''? whoopsie, I guess.",
+      "before": "Adın ''Willow'' değil miydi? Tüh, yanlış hatırlamışım.",
+      "after": "Adın ''Willow'' değil mi? Hay aksi!",
+      "reason": "Whoopsie şaşırma/yanlışlık ünlemidir; kaynakta olmayan yanlış hatırlama eylemi çıkarıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/default/7",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "865577f0dcdc2ee3ff7af3c49d5907d6fe275bc4e62a9e7b6ffff34eb0af174b",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/fumantizi"
+      ],
+      "en": "Them Senatorsin yer Empire be right meese as sin if in power.",
+      "before": "İmparatorluğunuzun senatörleri iktidara gelince günah kadar çirkinleşiyor.",
+      "after": "İktidardaki imparatorluk senatörleriniz feci derecede çirkin.",
+      "reason": "If in power iktidardayken koşuludur; iktidara gelişle fiziksel dönüşüm iddiası eklenmedi. Meese/ugly argo yorumu bağlam çıkarımı olarak kaydedilir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/fumantizi/2",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "15d4dd8a3dc87e05c9e61ceefa060d103bb248c58ef9a6146553f23b64d94901",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/mantizi"
+      ],
+      "en": "Them Senatorsin yer Empire be right meese as sin if in power.",
+      "before": "İmparatorluğunuzun senatörleri iktidara gelince günah kadar çirkinleşiyor.",
+      "after": "İktidardaki imparatorluk senatörleriniz feci derecede çirkin.",
+      "reason": "If in power iktidardayken koşuludur; iktidara gelişle fiziksel dönüşüm iddiası eklenmedi. Meese/ugly argo yorumu bağlam çıkarımı olarak kaydedilir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/mantizi/2",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "85d19d9ee023e161e2c1cbbe4bca4e6705e64f8dd17311bf99e5f017b1f8e606",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/fumantizi"
+      ],
+      "en": "I'm sure as 'Ell there's an Aristotle o' yer legendary plonk somehwere up yer Khyber.",
+      "before": "Eminim efsanevi içkinizden bir şişe bir yerlerde kıçınıza kaçmıştır.",
+      "after": "Eminim efsanevi şarabınızdan bir şişe kıçınızda bir yerlerdedir.",
+      "reason": "Aristotle/bottle ve Khyber/arse kafiyeleri; konum bildirimi kazara kaçma olayına çevrilmedi. Plonk şarap anlamıdır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/fumantizi/3",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "0ddeebdae4cb64058399d383787f137bec1e82b27facc538619cb4fb86110a89",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/mantizi"
+      ],
+      "en": "I'm sure as 'Ell there's an Aristotle o' yer legendary plonk somehwere up yer Khyber.",
+      "before": "Eminim efsanevi içkinizden bir şişe bir yerlerde kıçınıza kaçmıştır.",
+      "after": "Eminim efsanevi şarabınızdan bir şişe kıçınızda bir yerlerdedir.",
+      "reason": "Aristotle/bottle ve Khyber/arse kafiyeleri; konum bildirimi kazara kaçma olayına çevrilmedi. Plonk şarap anlamıdır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/mantizi/3",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "c1fc13bcaf30c7c0cca6264bef1215e8e66c47726308310aa01ef8e51fdd0be1",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/fumantizi"
+      ],
+      "en": "Youse Mantizis needs a good kickin' in yer orchestras, and we can do it thrice fer' free.",
+      "before": "Siz Mantiziler'in taşaklarına sağlam bir tekme lazım; bunu üç kez bedavaya yaparız.",
+      "after": "Siz Mantizilerin taşaklarına sağlam bir tekme lazım; bunu üç kez bedavaya yaparız.",
+      "reason": "Tür adının Türkçe çoğul/iyelik çekimine gereksiz kesme eklenmedi; Orchestra Stalls/balls anlamı ve kaynak sertliği korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/fumantizi/4",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "1e5ca382486582db482408196d46de48fedca3e55cd59031631a1057be065f5c",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "converse/thelusian/mantizi"
+      ],
+      "en": "Youse Mantizis needs a good kickin' in yer orchestras, and we can do it thrice fer' free.",
+      "before": "Siz Mantiziler'in taşaklarına sağlam bir tekme lazım; bunu üç kez bedavaya yaparız.",
+      "after": "Siz Mantizilerin taşaklarına sağlam bir tekme lazım; bunu üç kez bedavaya yaparız.",
+      "reason": "Tür adının Türkçe çoğul/iyelik çekimine gereksiz kesme eklenmedi; Orchestra Stalls/balls anlamı ve kaynak sertliği korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/thelusian/mantizi/4",
+          "origin": "dialog/converse.config.patch#84"
+        }
+      ]
+    },
+    {
+      "unit_id": "05d3ad085de9f302ffc2ce843bf0d541594d1ddb5f77b35740d4d6bd15e29186",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/fenerox/default"
+      ],
+      "en": "Met stranger. Very nice! Good day!",
+      "before": "Yabancıyla tanıştı. Çok güzel! İyi günler!",
+      "after": "Tanışılan yabancı. Çok güzel! İyi günler!",
+      "reason": "Fenerox geçmiş tanışma ifadesi korunur; üçüncü şahıs öznesi uydurulmadan kısa kırık dil kullanılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/fenerox/default/15",
+          "origin": "dialog/converse.config.patch#65"
+        }
+      ]
+    },
+    {
+      "unit_id": "0d3ebd4b0375ba50fe297161c9f0c03c62a148aa5961d74741c5eb6face45715",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/fumantizi/default"
+      ],
+      "en": "Io, old bean!",
+      "before": "Hey, ihtiyar dostum!",
+      "after": "Hey, eski dostum!",
+      "reason": "Old bean samimi dost hitabıdır; muhatabın yaşlı olduğu iddiası değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/fumantizi/default/2",
+          "origin": "dialog/converse.config.patch#12"
+        }
+      ]
+    },
+    {
+      "unit_id": "c5a4e544973c3c6baafcc014a5706043cd2fadc6c2c7502bd1f67880ee385040",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/mantizi/default"
+      ],
+      "en": "Io, old bean!",
+      "before": "Hey, ihtiyar dostum!",
+      "after": "Hey, eski dostum!",
+      "reason": "Old bean samimi dost hitabıdır; muhatabın yaşlı olduğu iddiası değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/mantizi/default/2",
+          "origin": "dialog/converse.config.patch#11"
+        }
+      ]
+    },
+    {
+      "unit_id": "11f72a762933ba4e33b435b4c92d48716f82fdf77b30ebd678557c0fe7448f4f",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/nightar/human"
+      ],
+      "en": "Your kind are parasites that infest all they touch and bring it to ruin.",
+      "before": "Türünüz dokunduğu her yere musallat olup yıkım getiriyor.",
+      "after": "Sizin türünüzdekiler, dokundukları her yere musallat olup yıkıma sürükleyen parazitler.",
+      "reason": "Kaynak parazit benzetmesi eksikti; musallat olma ve yıkım birlikte korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/nightar/human/2",
+          "origin": "dialog/converse.config.patch#33"
+        }
+      ]
+    },
+    {
+      "unit_id": "7be05b8d330c329e95b2c6345dc0d466a4d26d32dc37114fca962448c4c5ca22",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/nightar/human"
+      ],
+      "en": "Our kind have served as bodyguards to your soft, untrained diplomats.",
+      "before": "Halkımız, yumuşak başlı ve deneyimsiz diplomatlarınıza korumalık etti.",
+      "after": "Halkımız, dayanıksız ve eğitimsiz diplomatlarınıza korumalık etti.",
+      "reason": "Soft fiziksel dayanıksızlık, untrained eğitimsizliktir; yumuşak başlılık ve deneyimsizlik farklı niteliklerdir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/nightar/human/3",
+          "origin": "dialog/converse.config.patch#33"
+        }
+      ]
+    },
+    {
+      "unit_id": "78bba6736bc34b5e1e31702a964b4a96cce6e7875067da7b457378923d78ac19",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/nightar/human"
+      ],
+      "en": "I trust nothing about your kind. You dwell in the light, and the Devourer chose your world for sustenance.",
+      "before": "Türünüze hiç güvenmiyorum. Işıkta yaşıyorsunuz; Yiyip Bitiren, dünyanızı besin olarak seçti.",
+      "after": "Türünüze hiç güvenmiyorum. Işıkta yaşıyorsunuz; Yutucu, dünyanızı besin olarak seçti.",
+      "reason": "Devourer mevcut katalogdaki Yutucu karşılığıyla eşlendi; lore varlıklarının aynı olduğu iddia edilmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/nightar/human/5",
+          "origin": "dialog/converse.config.patch#33"
+        }
+      ]
+    },
+    {
+      "unit_id": "0eb8a79ae613f63dfb9a4c685f51c4abe06221b9930831bbc9bdb47dfe544ecc",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "greeting/nightar/human"
+      ],
+      "en": "Few can hope to match your species' level of commitment.",
+      "before": "Çok azı türünüzün bağlılık düzeyine erişebilir.",
+      "after": "Türünüzün kararlılığına erişmeyi çok azı umabilir.",
+      "reason": "Can hope kipinin olasılık/umut anlamı geri kondu; commitment bu bağlamda kararlılıktır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/greeting/nightar/human/7",
+          "origin": "dialog/converse.config.patch#33"
+        }
+      ]
+    },
+    {
+      "unit_id": "843180a402b9af721be394fa4577dc85347952841dc52e2565c5f01bdab2f9c8",
+      "context": [
+        "dialog",
+        "dialog/fenerox.config",
+        "converse/default/fenerox"
+      ],
+      "en": "Weird person. Being polite! Fellow Fenerox!",
+      "before": "Tuhaf kişi. Kibar davranıyor! Fenerox dostu!",
+      "after": "Tuhaf kişi. Kibar davranma! Fenerox soydaşı!",
+      "reason": "Being polite öznesiz bırakılır; fellow aynı türden soydaştır, yalnız dost değil.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "dialog/fenerox.config",
+          "pointer": "/converse/default/fenerox/2",
+          "origin": "dialog/fenerox.config.patch#0"
+        }
+      ]
+    },
+    {
+      "unit_id": "e2085a38d491f148cc57726c0092a52ed0b697bbd84433916521b96cb4d1c3a6",
+      "context": [
+        "dialog",
+        "dialog/fenerox.config",
+        "converse/default/fenerox"
+      ],
+      "en": "Odd person. Saying hello. Is Fenerox!",
+      "before": "Tuhaf kişi. Selam veriyor. Fenerox!",
+      "after": "Tuhaf kişi. Selam verme. Fenerox!",
+      "reason": "Saying hello öznesiz kısa anlatımı korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fenerox.config",
+          "pointer": "/converse/default/fenerox/4",
+          "origin": "dialog/fenerox.config.patch#0"
+        }
+      ]
+    },
+    {
+      "unit_id": "27ddd8e0653202fd90162f4028b593323e91537e1201860c6adc3526a51992c2",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/apex"
+      ],
+      "en": "Are the Apex continuously devolving? When do you get tails?",
+      "before": "Apex'ler sürekli evrimden geriliyor mu? Ne zaman kuyruk çıkaracaksınız?",
+      "after": "Apex'ler sürekli tersine mi evriliyor? Ne zaman kuyruk çıkaracaksınız?",
+      "reason": "Devolve için bozuk evrimden gerilme ifadesi yerine tersine evrilme kullanıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/apex/10",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_id": "3d5c1b81e2796438a80b1395c4764bdaaac463541751dee9f14402c87379f654",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/avian"
+      ],
+      "en": "I saw one of those Avian towers once. People jump off those!?",
+      "before": "Bir keresinde Avian kulelerinden birini gördüm. İnsanlar oralardan mı atlıyor!?",
+      "after": "Bir keresinde Avian kulelerinden birini gördüm. Oralardan atlayanlar mı var!?",
+      "reason": "People genel kişiler için kullanılır; Avian kulesinden atlayanların Human ırkı olduğu eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/avian/12",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_id": "1bd59e68246436abe5c657c1dd1cda781b851a2adc315725355b3fba4f6a38c6",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/avian"
+      ],
+      "en": "Can I borrow a feather to make a quill?",
+      "before": "Tüylerinden birini öd kalemi yapmak için alabilir miyim?",
+      "after": "Tüy kalem yapmak için bir tüyünü ödünç alabilir miyim?",
+      "reason": "Quill tüy kalemdir, öd kalemi değildir; borrow ödünç almak anlamı geri kondu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/avian/16",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_id": "db920d65aa7542899418d5b7279c26c2e75142633faa167d536c0da4e39c9e7a",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/avian"
+      ],
+      "en": "If an Avian and a snake had a baby, would it be a feather boa?",
+      "before": "Bir Avian'la yılanın yavrusu olsa, tüylü bir boa yılanı mı olurdu?",
+      "after": "Bir Avian'la yılanın yavrusu olsa, tüylü bir boa mı olurdu?",
+      "reason": "Boa hem yılan hem tüy şalı anlamında çift anlamlıdır; yılanı sözcüğüyle tek anlama zorlanmadı. Türkçedeki şal çağrışımının anlaşılması görsel/oyuncu LQA bekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/avian/17",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_id": "6c2a1b8464eeb5e92f8b7a90323a3710a0c45ee16cfda9e7642969aafd2155c2",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/default"
+      ],
+      "en": "How're things?",
+      "before": "Neler oluyor?",
+      "after": "İşler nasıl gidiyor?",
+      "reason": "How are things hâl hatır sorusudur; neler oluyor olay sorgusu değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/default/26",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_id": "maintenance:dialog/converse.config/converse/fumantizi/default/10",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "/converse/fumantizi/default"
+      ],
+      "en": "Is that a rocket youse got there in yer sky, or are youse just pleased to see me?",
+      "before": "Gökyüzündeki roket senin mi, yoksa beni gördüğüne mi sevindin?",
+      "after": "Cebindeki şey bir roket mi, yoksa beni gördüğüne mi sevindin?",
+      "reason": "Aynı argo gökyüzü/cep hatası eski yayımlanmış alanda da giderildi; source aynı, eski sürüm manifest/gate ve dil onayı yeniden bağlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/default/10"
+        }
+      ],
+      "maintenance": true
+    },
+    {
+      "unit_id": "maintenance:dialog/converse.config/converse/mantizi/default/10",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "/converse/mantizi/default"
+      ],
+      "en": "Is that a rocket youse got there in yer sky, or are youse just pleased to see me?",
+      "before": "Gökyüzündeki roket senin mi, yoksa beni gördüğüne mi sevindin?",
+      "after": "Cebindeki şey bir roket mi, yoksa beni gördüğüne mi sevindin?",
+      "reason": "Aynı argo gökyüzü/cep hatası eski yayımlanmış alanda da giderildi; source aynı, eski sürüm manifest/gate ve dil onayı yeniden bağlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/mantizi/default/10"
+        }
+      ],
+      "maintenance": true
+    }
+  ],
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 352,
+    "context_units": 350,
+    "qa": {
+      "catalog_units_checked": 27280,
+      "raw_units_checked": 115,
+      "locked_terms": 647
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "dialog/converse.config.patch; dialog/crewmember.config.patch; dialog/fenerox.config.patch",
+        "note": "269 FU katman alanı doğrulandı; bu üç temel vanilla dosyası FU checkoutunda yok."
+      },
+      {
+        "source": "npcs/elduukharvillager.npctype",
+        "note": "ElDuukhar greeting/converse doğrudan elduuconverse.config dosyasına bağlanır."
+      },
+      {
+        "source": "npcs/crew/catcrewmember.npctype",
+        "note": "Crew converse dosyasına genel referans var; Skath kolunun canlı seçimini tek başına kanıtlamaz."
+      },
+      {
+        "source": "dialog/fenerox.config; dialog/fuslimeperson.config; FU npcs/script literal referans taraması",
+        "note": "Bu seçili converse/greeting dalları için FU NPC/script literal çağrısı bulunmadı; vanilla veya dinamik erişim doğrulanmadı. Combat-only fenerox bağlantıları converse kanıtı sayılmadı."
+      }
+    ],
+    "note": "Kaynak ve bağlam doğrulandı; canlı seçim, font, satır sığması ve görsel LQA NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Vanilla temel converse.config kaynak checkoutunda yok; FU patch değeri tam oyun katmanını kanıtlamaz.",
+    "FU literal NPC/script taramasında fenerox/fuslimeperson seçili converse dallarına doğrudan çağrı bulunmadı; dinamik/vanilla erişim doğrulanmadı.",
+    "Genel NPC dosya referansı her konuşmacı/muhatap dalının canlı seçimini kanıtlamaz.",
+    "Boa şal/yılan kelime oyununun Türkçede anlaşılması LQA bekler."
+  ],
+  "lexical_review": {
+    "status": "REVIEW",
+    "source_term": "Sefton / Seftons",
+    "decision": "Kaynak argo hitabı korunur; özel ad olduğu veya kesin sözlük anlamı iddia edilmez."
+  },
+  "slang_sources": [
+    {
+      "url": "https://www.freelang.net/dictionary/docs/html_cockney_english.php",
+      "use": "Leo Sayer/all-dayer, sky rocket/pocket, orchestra stalls/balls, Aristotle/bottle, Khyber Pass/arse, cock linnet/minute. Sherman/bank yorumu sözlük maddesi değildir."
+    },
+    {
+      "url": "https://www.worldwidewords.org/polari.html",
+      "use": "Bona/good, charpering omi/policeman, lally/leg, naph/bad; boner yazımı bona varyantı olarak bağlam çıkarımıdır."
+    },
+    {
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/plonk?q=plonk_1",
+      "use": "Plonk düşük kaliteli şarap; içki repliğinde şarap karşılığı."
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/boa?topic=things-worn-to-cover-the-head-face-or-neck",
+      "use": "Boa hem tüy şalı hem yılan; tek anlamlı yılanı eki kaldırıldı."
+    }
+  ],
+  "context_inferences": [
+    "Jar Jar/drinks kafiyesi içki ikramı bağlamından yorumlanır; bağımsız sözlük maddesi doğrulanmadı, mevcut TR korunur.",
+    "Sherman/tank/bank kaynak birikim sorusu ve önceki onaylı TM bağlamıdır; dictionary kaynağı bank anlamını kanıtlıyor diye sunulmaz.",
+    "Meese/ugly yorumu kaynak as sin sıfat kalıbı bağlamından çıkarılır; kesin lore kimliği iddia edilmez.",
+    "Boner/bona iyi hâl varyantı olarak bağlam çıkarımı; bu satır için sözlükte boner maddesi var diye iddia edilmez."
+  ],
+  "additional_source_evidence": [
+    {
+      "source": "codex/skath/skathfactions1.codex; codex/skath/skathfactions2.codex",
+      "note": "Vanguard askerî kol, Seekers bilimsel kast; proper faction adları."
+    },
+    {
+      "source": "items/active/weapons/melee/skath/spear/Plasmaspear/skathtier3spear.activeitem",
+      "note": "Mevcut onaylı kısa ad Skath Plazma Mızrağı ile diyalog eşlendi."
+    },
+    {
+      "source": "dialog/converse.config.patch",
+      "note": "Thel'Mara, Zah'Kal ve Nosverah kişi/gezegen bağlamları kaynaktan doğrulandı; yeni lore eklenmedi."
+    },
+    {
+      "source": "tools/ceviriler.json; tools/locked_terms.json",
+      "note": "Yutucu önceki katalogdaki Devourer karşılığı; Büyük Kılıç mevcut Broadsword sınıfı. İsimlere aynı varlık kimliği atfedilmez."
+    }
+  ],
+  "maintenance": [
+    {
+      "unit_id": "maintenance:dialog/converse.config/converse/fumantizi/default/10",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "/converse/fumantizi/default"
+      ],
+      "en": "Is that a rocket youse got there in yer sky, or are youse just pleased to see me?",
+      "before": "Gökyüzündeki roket senin mi, yoksa beni gördüğüne mi sevindin?",
+      "after": "Cebindeki şey bir roket mi, yoksa beni gördüğüne mi sevindin?",
+      "reason": "Aynı argo gökyüzü/cep hatası eski yayımlanmış alanda da giderildi; source aynı, eski sürüm manifest/gate ve dil onayı yeniden bağlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/fumantizi/default/10"
+        }
+      ],
+      "maintenance": true
+    },
+    {
+      "unit_id": "maintenance:dialog/converse.config/converse/mantizi/default/10",
+      "context": [
+        "dialog",
+        "dialog/converse.config",
+        "/converse/mantizi/default"
+      ],
+      "en": "Is that a rocket youse got there in yer sky, or are youse just pleased to see me?",
+      "before": "Gökyüzündeki roket senin mi, yoksa beni gördüğüne mi sevindin?",
+      "after": "Cebindeki şey bir roket mi, yoksa beni gördüğüne mi sevindin?",
+      "reason": "Aynı argo gökyüzü/cep hatası eski yayımlanmış alanda da giderildi; source aynı, eski sürüm manifest/gate ve dil onayı yeniden bağlandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/converse.config",
+          "pointer": "/converse/mantizi/default/10"
+        }
+      ],
+      "maintenance": true
+    }
+  ],
+  "maintenance_source_gates": [
+    "generate_v069.py",
+    "generate_v070.py"
+  ]
+}
