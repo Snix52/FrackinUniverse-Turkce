@@ -10,7 +10,7 @@ Ana katalog `tools/ceviriler.json`, sürüm listeleri `tools/v*_translations.jso
 
 FU kopyası, kayıtlı committe temiz bir Git kökü olmalı. Değiştirilmiş, izlenmeyen veya ignore edilmiş ek dosyalar tarama sonuçlarını etkileyebileceği için reddedilir.
 
-`tools/check_sources.py`, v0.45'ten katalog sürümüne kadar bütün sürüm kontrollerini, arayüz ve gemi S.A.I.L. kontrollerini çalıştırır. Eksik dosyada veya ilk hatada durur.
+`tools/check_sources.py`, v0.45'ten katalog sürümüne kadar bütün sürüm kontrollerini, arayüz, gemi S.A.I.L. ve Bilim Karakolu radyo kontrollerini çalıştırır. Karakol kontrolü haritadaki bütün `radioMessage` ve `radioMessages` kimliklerini çeviri kapsamıyla karşılaştırır. Eksik dosyada, çevrilmemiş tetikleyicide veya ilk hatada durur.
 
 `build_validate.py`, kaynak alanlarını ve üretilen yamaları karşılaştırır. LF/CRLF seçenekleri aynı kaynak metin için desteklenir. FU'nun yamaladığı alanlar ilgili yama değerinden kontrol edilir. FU kopyasında bulunmayan temel oyun alanları ayrı kaynak kayıtlarıyla izlenir.
 

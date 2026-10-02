@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.71.1 Beta — Bilim Karakolu radyo düzeltmesi
+
+Ekran görüntülerindeki altı açıklama ve aynı haritanın diğer radyo tetikleyicileri tamamlandı: 15 alan / 55 cümle-kısa ifade. Katalog 16.514 alan oldu; önceki 16.499 alan korundu. Kafe, tuvalet, meyhane, çöp alanı, X'i ve arıcılık mesajları; Kevin uyarıları, pazar, tedavi cihazı, ödül, keşif ve laboratuvar dizini kapsandı.
+
+15 kimliğin 16 harita yerleşimindeki kapsamını doğrulayan kaynak kontrolü eklendi. 4 yeni LOCKED ile toplam 651. [Kaynak ve çeviri kaydı](docs/reviews/science-outpost-radio-20261003.json) · [Oyun kontrolü](docs/lqa/LQA_OUTPOST_RADIO_20261003.md)
+
 ## v0.71.0 Beta — NPC konuşmaları
 
 352 yeni alan eklendi: Skath, Thelusian ve Veluu sohbetleri, ırklara göre selamlaşmalar; Slime, ElDuukhar, Fenerox ve mürettebat replikleri. Katalog 16.499 alana ulaştı.
@@ -14,6 +20,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.71.1 | Bilim Karakolu radyo düzeltmesi | 15 |
 | v0.71.0 | NPC konuşmaları, beşinci dilim | 352 |
 | v0.70.0 | NPC konuşmaları, dördüncü dilim | 375 |
 | v0.69.0 | NPC konuşmaları, üçüncü dilim | 399 |

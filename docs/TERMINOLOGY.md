@@ -663,6 +663,10 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Plasmacore | FU Skath/Nightar/Avian diyalogları | Diyalog terimi | Plazma Çekirdeği | - | LOCKED | Skath mızrağının plazma çekirdeği; genel core diğer anlamlara zorlanmaz. |
 | The Devourer | FU Skath/Nightar/Avian diyalogları | Diyalog terimi | Yutucu | - | LOCKED | Nightar özel varlık hitabı mevcut katalog karşılığıyla tutarlı. Ruin veya Cazl varlığıyla aynı kimlik olduğu iddia edilmez; genel devourer kilitlenmez. |
 | Celestial Towers | FU Skath/Nightar/Avian diyalogları | Diyalog terimi | Göksel Kuleler | - | LOCKED | Avian kulelerinin özel ad ifadesi; çekimli Kuleleri kabul edilir. |
+| Instafreud / InstaFreud / Insta-Freud | Bilim Karakolu / tedavi cihazı | Özel ad | Insta-Freud | Anında Freud | LOCKED | Envanter adı objects/crafting/instafreud/instafreud.object ile aynı; tutorial radyo ve bilgi standındaki kaynak yazım varyantları. |
+| Kevin | Bilim Karakolu / NPC adı | Özel ad | Kevin | - | LOCKED | FU tutorial radyo ve mevcut katalogdaki kişi adı. |
+| Starbucks | Bilim Karakolu / kafe markası | Özel ad | Starbucks | - | LOCKED | objects/scienceoutpost/starbucks/fustarbucks.object envanter adı ve mevcut katalog ile aynı. |
+| The Tavern | Bilim Karakolu / radyo mekân adı | Terim | Meyhane | - | LOCKED | fu_useBooze radyo metnindeki belirli mekân; genel Tavern kullanımı bu dar kurala eklenmedi. |
 
 ## Kural
 

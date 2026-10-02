@@ -427,6 +427,11 @@ _V071_MANIFEST = json.loads(
     Path(__file__).with_name('v071_translations.json').read_text(encoding='utf-8')
 )
 V071_DIALOGUE_FIELDS = {(row['asset'], row['pointer']) for row in _V071_MANIFEST['translations']}
+_V0711_MANIFEST = json.loads(Path(__file__).with_name('v0711_translations.json').read_text(encoding='utf-8'))
+V0711_OUTPOST_RADIO_FIELDS = {(r['asset'], r['pointer']) for r in _V0711_MANIFEST['translations']}
+if len(V0711_OUTPOST_RADIO_FIELDS) != 15 or len(_V0711_MANIFEST['translations']) != 15:
+    raise ValueError('v0.71.1 outpost radio field inventory drift')
+
 if len(V071_DIALOGUE_FIELDS) != 352 or len(_V071_MANIFEST['translations']) != 352:
     raise ValueError('v0.71 dialogue manifest field inventory drift')
 
@@ -700,6 +705,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V0711_OUTPOST_RADIO_FIELDS:
+        return True
     if (a,p) in V071_DIALOGUE_FIELDS:
         return True
     if (a,p) in V070_DIALOGUE_FIELDS:

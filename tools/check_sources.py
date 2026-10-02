@@ -12,7 +12,7 @@ from write_build_evidence import verify_source
 
 TOOLS = Path(__file__).resolve().parent
 FIRST_GATE = 45
-EXTRA_GATES = ('check_ui_lqa_20260925.py', 'check_ship_sail_dialog_20260926.py')
+EXTRA_GATES = ('check_ui_lqa_20260925.py', 'check_ship_sail_dialog_20260926.py', 'check_science_outpost_radio_20261003.py')
 
 
 def gate_paths(tools: Path = TOOLS) -> list[Path]:
