@@ -1,23 +1,26 @@
-# Katkı ve bakım rehberi
+# Katkı rehberi
 
-Komutları repository kökünden çalıştır. Güncel sürüm ve çalışma durumu [checkpoint](FU_SESSION_CHECKPOINT.md), belge haritası [docs/README.md](docs/README.md), araçların görevleri [tools/README.md](tools/README.md) içinde bulunur.
+Çeviri kuralları [dil rehberinde](docs/STYLE_GUIDE.md), mevcut karşılıklar [terim sözlüğünde](docs/TERMINOLOGY.md). Bir metni değiştirirken kullanıldığı görev, ekran veya karakteri de kontrol et.
 
-## Hangi dosya düzenlenir?
+## Kaynak dosyaları
 
-| Amaç | Düzenlenen kaynak |
+| Dosya | İçerik |
 | --- | --- |
-| Yapılandırılmış çeviri | `tools/ceviriler.json` ve ilgili `tools/v*_translations.json` |
-| Lua metni veya kaynak kilitli runtime düzenlemesi | `tools/raw_text_translations.json`, `tools/raw_runtime_overrides.json`, `tools/raw_overrides/` |
-| Terminoloji ve bağlama bağlı istisna | `tools/locked_terms.json`, `tools/translation_memory_exceptions.json`, `tools/rules/` |
-| Ek oyun asseti ve üretim tarifi | `tools/custom_assets.json`, `tools/custom_assets/`, `tools/ui_lqa_20260925.json` |
-| FU kaynak sürümü | `tools/kaynaklar.json`; bütün kaynak doğrulamalarıyla birlikte |
-| Rehber, inceleme veya tarihsel kayıt | `docs/`; tarihli raporu ilgili alt klasöre koy |
+| `tools/ceviriler.json` | Ana çeviri kataloğu |
+| `tools/v*_translations.json` | Sürüm bazında çeviri listeleri |
+| `tools/locked_terms.json` | Sabit terim karşılıkları |
+| `tools/translation_memory_exceptions.json` | Bağlama göre farklı çevrilen metinler |
+| `tools/raw_text_translations.json`, `tools/raw_runtime_overrides.json`, `tools/raw_overrides/` | Lua metinleri ve kaynak şablonları |
+| `tools/custom_assets.json`, `tools/custom_assets/`, `tools/ui_lqa_20260925.json` | Ek görseller ve arayüz düzenlemeleri |
+| `tools/kaynaklar.json` | Kullanılan FU commit'i ve kaynak dosya listesi |
 
-`FU_Turkce/`, `dist/`, `tools/test_raporu.json`, `tools/GELISTIRME.txt` ve `docs/TERMINOLOGY.md` üretilen çıktılardır. Elle paket veya kurulum ağacı düzenleme; kaynak değişikliğinden sonra CI doğrulayıp üretir. Terminoloji belgesi `python tools/qa_integrity.py --write-docs` ile yenilenir.
+Yeni çeviri hazırlamak için [planlama rehberini](docs/TRANSLATION_PLANNING.md) kullan. Aynı metnin bütün kullanımlarını incele; görevdeki eşya adıyla envanter adını eşleştir.
 
-## Yerel doğrulama
+## Kontrol
 
-Python 3.11+ kullan. Windows'ta davranış ve görsel asset testleri için `python -m pip install lupa==2.8 Pillow==11.3.0`; Linux'ta Pillow ve sistem `liblua5.4-0` kitaplığı gerekir.
+Python 3.11+ gerekir. Windows testleri için `lupa==2.8` ve `Pillow==11.3.0` kurulmalıdır. Linux'ta Pillow ve `liblua5.4-0` kullanılır.
+
+Komutları repo kökünde çalıştır:
 
 ```text
 python -m compileall -q tools
@@ -28,17 +31,12 @@ python -X utf8 tools/build_validate.py --source-dir fu_source --output build_out
 git diff --check
 ```
 
-`fu_source`, `tools/kaynaklar.json` içindeki committe temiz bir FU Git checkout'u olmalıdır. `build_output` henüz mevcut olmayan bir çıktı klasörü olmalıdır. Kaynak checkout'larını, taslakları ve deneme build'lerini commit etme. Paket kanıtı için kaynak değişikliklerini önce commit et, ardından yeniden build çalıştır; ayrıntılar [QA pipeline](docs/QA_PIPELINE.md) içinde.
+`fu_source`, `tools/kaynaklar.json` içindeki committe temiz bir FU Git kopyası olmalı. `build_output` için henüz oluşturulmamış bir klasör seç. [Test ve paketleme ayrıntıları](docs/QA_PIPELINE.md)
 
-Yeni sürüm manifesti, aynı numaralı salt okunur kaynak kapısı ve uygun regresyon kontrolleri birlikte eklenir. `check_sources.py` v0.45'ten katalog sürümüne kadar tüm kapıları ve UI/S.A.I.L. ek kontrollerini çalıştırır; eksik bir manifest veya kapı hata verir. İki workflow'a ayrı ayrı sürüm komutu eklenmez.
+## Paket ve belgeler
 
-## Belgelerin yeri
+CI, kaynak değişikliklerinden `FU_Turkce/`, `dist/`, `tools/test_raporu.json` ve `tools/GELISTIRME.txt` dosyalarını üretir. Bu çıktıları elle düzenleme. Terim belgesi `python tools/qa_integrity.py --write-docs` ile yenilenir.
 
-- `docs/` kökü: güncel dil, QA, planlama ve kurulum rehberleri.
-- `docs/audits/`: tarihli denetim ve bakım raporları.
-- `docs/lqa/`: belirli sürüm veya ekran için kontrol kayıtları; test edilmemiş durumlar açıkça korunur.
-- `docs/reviews/`: kaynak kapılarının okuduğu onay ve dil incelemesi JSON kayıtları.
-- `docs/handoffs/`: tarihli çalışma devirleri; yerel taslak yolu yeni checkout'ta mevcut olmayabilir.
-- `docs/history/`: eski sürüm notları ve uzun çalışma günlüğü.
+Yeni sürümün çeviri listesi ve kaynak kontrolü birlikte eklenir. `tools/check_sources.py` bütün sürüm kontrollerini çalıştırır.
 
-Güncel durumu kök checkpoint'te kısa tut; önceki çalışma kanıtlarını arşiv bağlantılarıyla koru. Oyun içi görünüm, font ve taşma kontrolleri yapılmadan statik QA'yı oyun içi LQA olarak yazma.
+Sürüm değişikliklerini [CHANGELOG.md](CHANGELOG.md) içinde kısa tut. Belgeler genel kullanım adımlarını anlatmalı; kişisel klasörler ve oturum günlükleri repoya eklenmez. Bir hata bildirirken sürüm, dosya/alan, beklenen sonuç ve görülen sonucu yaz.

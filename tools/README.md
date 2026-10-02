@@ -1,41 +1,32 @@
-# Araç ve kaynak dizini
+# Araçlar
 
-Bu klasör çeviri kaynaklarını, kaynak doğrulamalarını, paket üreticisini ve testleri içerir. Komutlar repository kökünden çalıştırılır; kurulum ve tam doğrulama sırası [katkı rehberindedir](../CONTRIBUTING.md).
-
-## Aktif komutlar
+Komutlar repo kökünden çalıştırılır. Kurulum ve test sırası [katkı rehberinde](../CONTRIBUTING.md).
 
 | Araç | Görev |
 | --- | --- |
-| `qa_integrity.py` | Manifest/katalog, terminoloji ve metin bütünlüğü; `--write-docs` terim belgesini üretir |
-| `check_sources.py --source fu_source` | Bütün sürüm, UI ve gemi S.A.I.L. kaynak kapılarını tek komutla çalıştırır |
-| `generate_v045.py` … `generate_v070.py` | Adları tarihsel olsa da güncel, salt okunur sürüm kaynak kontrolleridir |
-| `check_ui_lqa_20260925.py`, `check_ship_sail_dialog_20260926.py` | Ek UI/SAIL kaynak ve asset üretilebilirlik kontrolleri |
-| `build_validate.py --source-dir fu_source --output build_output` | Tam kaynak doğrulaması, mod ağacı ve build raporu |
-| `write_build_evidence.py` | Doğrulanmış build'den deterministik ZIP ve yayın kanıtı |
-| `check_generated_changes.py` | Üretilen dosyalara doğrudan değişiklikleri reddeder |
-| `publish_generated.py` | CI'da başlangıç kaynak commit'i ve remote yarış korumasıyla yayın yapar |
-| `audit_remaining.py --source fu_source` | Kalan oyuncu metni adaylarını ve inceleme havuzunu raporlar |
-| `plan_translation.py` | Güncel girdilerle çeviri taslağı hazırlar/doğrular; [planlama rehberi](../docs/TRANSLATION_PLANNING.md) |
-| `prepare_ebrar_rose_art.ps1` | [Özgün görsel kaynağından](art_sources/ebrar-rose/README.md) ilgili assetleri hazırlar |
+| `qa_integrity.py` | Katalog, terim ve metin kontrolü; `--write-docs` sözlüğü yeniler. |
+| `check_sources.py --source fu_source` | Sürüm, arayüz ve gemi konuşması kaynak kontrollerini çalıştırır. |
+| `generate_v045.py` … `generate_v070.py` | Sürüm bazında salt okunur kaynak kontrolü. |
+| `check_ui_lqa_20260925.py` | Arayüz metinleri ve görsellerini kontrol eder. |
+| `check_ship_sail_dialog_20260926.py` | Gemi S.A.I.L. konuşmalarını kontrol eder. |
+| `build_validate.py` | Mod ağacını üretir ve FU kaynağıyla doğrular. |
+| `write_build_evidence.py` | ZIP'i oluşturur ve paket bilgilerini yazar. |
+| `check_generated_changes.py` | Üretilen dosyalara doğrudan değişiklikleri kontrol eder. |
+| `publish_generated.py` | CI'da güncel kaynak için paketi yayımlar. |
+| `audit_remaining.py` | Kalan çeviri adaylarını tarar. |
+| `plan_translation.py` | Çeviri taslağı hazırlar ve kontrol eder. |
+| `prepare_ebrar_rose_art.ps1` | Gül görselini nesne ve envanter boyutlarına aktarır. |
 
-`qa_raw.py`, `rule_data.py`, `custom_assets.py` ve `ui_lqa_assets.py` diğer araçların kullandığı yardımcı modüllerdir. `tests/` regresyon ve Lua davranış kontrollerini içerir.
+## Dosyalar
 
-## Veri ve asset kaynakları
+- Katalog ve sürüm listeleri: `ceviriler.json`, `v*_translations.json`.
+- FU kaynağı: `kaynaklar.json`.
+- Terimler ve istisnalar: `locked_terms.json`, `translation_memory_exceptions.json`, `rules/`.
+- Öncelikler: `translation_priorities.json`.
+- Lua metinleri ve şablonlar: `raw_text_translations.json`, `raw_runtime_overrides.json`, `raw_overrides/`.
+- Görseller ve ek oyun dosyaları: `custom_assets.json`, `custom_assets/`, `ui_lqa_20260925.json`, `art_sources/`.
+- Testler: `tests/`. Diğer Python modülleri bu araçların yardımcılarını içerir.
 
-| Konum | İçerik |
-| --- | --- |
-| `ceviriler.json`, `v*_translations.json` | Ana katalog ve denetlenen sürüm manifestleri |
-| `kaynaklar.json` | Sabit FU repository/commit ve kaynak envanteri |
-| `locked_terms.json`, `translation_memory_exceptions.json` | Terminoloji ve bağlama bağlı karşılıklar |
-| `translation_priorities.json` | Oynanış önceliği kuralları |
-| `rules/` | Asset kapsamı, teknik korumalar ve belgeli istisnalar |
-| `raw_text_translations.json`, `raw_runtime_overrides.json`, `raw_overrides/` | Pinli Lua/runtime metin kaynakları ve baytları korunan şablonlar |
-| `custom_assets.json`, `custom_assets/`, `ui_lqa_20260925.json`, `art_sources/` | Ek oyun assetleri, tarifleri ve özgün görseller |
-| `test_raporu.json`, `GELISTIRME.txt` | CI tarafından üretilen raporlar; elle düzenlenmez |
-| `TERIMLER.txt` | Üretilen [terminoloji belgesine](../docs/TERMINOLOGY.md) yönlendirme |
+`test_raporu.json` ve `GELISTIRME.txt` CI çıktılarıdır. [Terim belgesi](../docs/TERMINOLOGY.md) `locked_terms.json` dosyasından üretilir.
 
-Manifestlerin ve raw/custom kaynakların mevcut yolları build ve test sözleşmesinin parçasıdır. Yeni yerel taslaklar ve test çıktıları bu kaynakların arasına konmaz.
-
-## Eski üreticiler
-
-`add_v022`–`add_v0312` ve `generate_v032`–`generate_v044` araçları [legacy/](legacy/README.md) altında arşivlenmiştir. Eski katalogları yazan bu tek seferlik araçlar aktif kaynak kapılarıyla karıştırılmamalıdır. Doğrudan çalıştırma engellenir; yeni içerik için güncel planlama ve onay akışı kullanılır.
+Eski katalog üreticileri [legacy/](legacy/README.md) altında tutulur. Yeni çeviri için [planlama rehberini](../docs/TRANSLATION_PLANNING.md) kullan.

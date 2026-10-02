@@ -1,72 +1,50 @@
-# Oynanış önceliği ve çeviri hazırlığı
+# Çeviri hazırlama
 
-`tools/plan_translation.py` mevcut kalan-kapsam auditini kullanır. Kaynak pini, katalog, generated paketler ve yayın kapıları aynı sistem üzerinden devam eder. Araç çeviri üretmez; çevrilecek işleri ve inceleme bağlamını hazırlar.
+`tools/plan_translation.py`, kalan metinlerden bir çeviri taslağı hazırlar. Kaynak olarak `tools/kaynaklar.json` içindeki committe temiz bir FU Git kopyası kullanılır.
 
-## Öncelik
+## Taslak oluşturma
 
-| Düzey | İlk değerlendirme |
-|---|---|
-| P0 | Görev, araştırma, kritik uyarı veya gereksinim |
-| P1 | Diyaloglar; arayüz, S.A.I.L., karakter, üretim ve enerji sistemleri |
-| P2 | Ekipman, malzeme ve keşif |
-| P3 | Dekorasyon, atmosfer, kodeks ve güncelleme arşivi |
+Komutları repo kökünde çalıştır:
 
-Kurallar `tools/translation_priorities.json` içindedir. Her satırda kural kimliği ve gerekçesi bulunur. Bunlar karşılaşma sıklığı ölçümleri değildir. Örneğin üretimi öğreten bir kodeks veya çalışan dekoratif görünümlü makine daha yüksek öncelik isteyebilir; kural değişikliğinin gerekçesini kaydet ve kuyruğu yeniden üret. Belirsiz satırlar `unclassified` gerekçesiyle P2'de görünür. `confirmed`, `review` ve `lua_review` ayrı görünürlük havuzlarıdır; düşük öncelik düşük çeviri kalitesi anlamına gelmez.
-
-Paket yalnız `confirmed` havuzundan seçilir. Çeviriye başlamadan önce kuyruktaki daha yüksek öncelikli `review` / `lua_review` adaylarının görünürlüğünü incele; gerekiyorsa mevcut audit kurallarında kaynak dayanağıyla kesinleştir ve paketi yeniden üret. `confirmed` P0 sayısının sıfır olması, P0 incelemesinin bittiği anlamına gelmez. Otomatik seçilen paket bir sonraki çeviri için taslak öneridir.
-
-Nesnelerin kendi verilerindeki görev sunma, üretim/panel/ışınlanma/dükkân açma ve kablo bağlantısı anahtarları da okunur; böylece dekorasyon klasöründe duran işlevsel nesneler yalnız klasör adından dolayı geriye atılmaz. `.patch` içindeki bu anahtarlar da kaynak pointerlarıyla ipucu olarak kaydedilir. Statik anahtar bulunması tek başına canlı erişim kanıtı değildir; patch koşulları ve sonraki mod katmanları ayrıca incelenir.
-
-Nesnelerdeki ırka özel inceleme replikleri P3'tür; makinenin işlev açıklamasıyla aynı önceliği otomatik almaz. Mekanik yönlendirme içeren istisnalar incelemede yükseltilir.
-
-Pinli `bb58383c0d16c1152e3439e606b39ff82288b586` kaynağında `frackinship/quests/fu_byos.questtemplate` ve `fu_shipupgrades.questtemplate` dosyalarının dört gösterim bayrağı (`showInLog`, `showAcceptDialog`, `showCompleteDialog`, `showFailDialog`) kapalıdır. Bağlı `frackinship/scripts/quest/frackinship.lua` ve `shipupgrades.lua` bu görevlerin `title`, `text`, `completionText` alanlarını göstermez. Bu iki takip görevi mevcut `tools/rules/dead_assets.json` dışlama listesine eklendi: 6 görünmeyen metin alanı ve 2 teknik portre kimliği kuyruktan çıkarıldı. Kaynak pini değişince görünürlük dayanakları yeniden incelenir.
-
-Bu pinde P0 `review` havuzundaki 429 alan tek tek işaretlendi. 428 alan; görev `scriptConfig` içindeki portre/ödül/görev kimlikleri veya GUI'nin callback, hizalama ve renk ayarlarıdır. Örneğin `questGiver`, `giveBlueprints`, `vAnchor=bottom` oyuncuya metin olarak gösterilmez; auditin teknik anahtarları bu bağlamlarda dışlaması gerekir. Kalan bir alan, `quests/story/gaterepair.questtemplate.patch` içindeki `/scriptConfig/outpostBookmark2/bookmarkName = Science Outpost`; `quests/scripts/story/gaterepair.lua` değeri `player.addTeleportBookmark` ile oyuncu listesine ekler. Bu alan `confirmed` olarak yükseltildi. Aynı `outpostBookmark2/target` içindeki dünya kimliği dışarıda kalır. Böylece görünen yer imi, teknik değerlerle birlikte kaybolmaz.
-
-P0 taslağındaki görünen yer imi için mevcut LOCKED karşılık `Bilim Karakolu`dur. Luna kaynak ve oyundaki bağlamı kontrol edip karşılığı kendisi pakete yazar; bu tarama çeviri kataloğunu değiştirmez. P0 taslağı `../local-runtime/translation-planning-v0652-p0-triaged/` içindedir. Sıradaki P1 yetiştirme ailesi ayrı bir `--family objects/farmables` paketi olarak hazırlanabilir.
-
-## Kullanım
-
-1 Ekim 2026 kullanıcı tercihiyle sıradaki çeviri işi diyaloglardır. `dialog`, `npcs` ve `radiomessages` aileleri ile nesnelerin konuşma alanları P1'e yükseltildi. İlk taslak `--family dialog`, ikinci taslak `--family radiomessages` ile hazırlanır. Görev ve kritik uyarıların P0 önceliği korunur; `review` ve `lua_review` kayıtları görünürlük kanıtı olmadan çeviri havuzuna taşınmaz. Yetiştirme ve kablolu sistemlerin kalanları daha sonraki kapsamdır. Paket değiştikçe güncel dosya ve sıra checkpoint'te belirtilir.
-
-Repo kökünde, UTF-8 Python ortamında:
-
-```powershell
-$env:PYTHONUTF8 = '1'
-python tools/plan_translation.py --source ../local-runtime/fu_source --output ../local-runtime/translation-planning-next
+```text
+python tools/plan_translation.py --source fu_source --output planning_output/next
 ```
 
-`queue.json` bütün kalan structured alanları ve Lua inceleme kayıtlarını içerir. Eski auditin 20/100 örnek sınırı bu çıktıya uygulanmaz. `summary.md` öncelik ve aile toplamlarını gösterir. `packet.json` ilk aday paketidir. Varsayılan yaklaşık 500 alan / en fazla 350 bağlam grubudur; aile küçükse kota doldurulmaz. Tek grup sınırı aşıyorsa araç durur, yüksek öncelikli grubu atlayıp düşük önceliğe geçmez. Aynı çıktı klasörüne ikinci kez yazmayı reddeder; başlanmış çeviri ezilmez.
+Belirli bir içerik ailesi için `--family` kullan:
 
-Bir aileyi seçmek için özet rapordaki tam aile değerini ver:
-
-```powershell
-python tools/plan_translation.py --source ../local-runtime/fu_source --family objects/crafting --output ../local-runtime/translation-planning-machines
+```text
+python tools/plan_translation.py --source fu_source --family dialog --output planning_output/dialog
+python tools/plan_translation.py --source fu_source --family objects/crafting --output planning_output/crafting
 ```
 
-## Luna için paket
+Çıktıda `packet.json`, inceleme tablosu ve öncelik kuyruğu bulunur. Mevcut bir taslak klasörünün üzerine yazılmaz. Kaynak, katalog veya kurallar değiştiyse yeni klasöre taslak hazırla.
 
-1. `selection.family`, kaynak pini ve `inputs` hashlerini kontrol et. Adayın bütün ailenin kaç alanını içerdiği raporda ayrı yazılıdır.
-2. `direct_dependencies` içindeki script/config bağlantılarını, `related_review_rows` içindeki ek adayları ve ailenin kuyrukta kalan alanlarını incele. Bağlantılar bir adım derinlikte ipucudur; Lua'nın dinamik dosya adları, temel oyun ve harici mod dosyaları ayrıca araştırılır. Otomatik tarama bütün bir sistemin bulunduğunu kanıtlamaz.
-3. Tarif/araştırma/görev/dükkân/yerleşim gibi canlı erişim ve görünürlük kanıtını `runtime_review.evidence` alanına `{ "source": "dosya veya kaynak bağlantısı", "note": "hangi bağlantıyı kanıtladığı" }` biçiminde ekle; incelemeden sonra `reviewed=true` yap. Her grubun `runtime_evidence` listesine o grubun dayanağını yaz.
-4. Her grup `en`, bütün `occurrences`, bağlam anahtarı, birebir kaynak eşleşen `tm_suggestions` ve ilgili `locked_terms` ile gelir. Türkçe alanı boştur. Aynı İngilizce metin farklı aile, konuşmacı veya inceleme sesiyle otomatik birleştirilmez. Belgeli TM istisnası bulunan kaynaklar alan başına ayrılır. Grup birleştirmesi yine insan onayı gerektirir; uygun bulduğunda `context_reviewed=true` yap.
-5. Mevcut karşılığı kullanırken konuşmacı ve anlamı doğrula; TM önerisinin bulunması otomatik onay değildir. Çakışmalı önerileri ve bütün ilgili LOCKED bağlamlarını değerlendir. Çeviriyi `tr` alanına yaz. Sadece `tr`, `context_reviewed`, `runtime_evidence`, `runtime_review` ve `measurements` düzenlenir. Yanlış gruplama varsa aracı/kuralı düzeltip yeniden üret; alan listesini elle değiştirme.
-6. Sol'a göndermeden önce teknik ön denetimi çalıştır:
+## Öncelikler
 
-```powershell
-python tools/plan_translation.py --source ../local-runtime/fu_source --check-packet ../local-runtime/translation-planning-next/packet.json
+`tools/translation_priorities.json` görev ve uyarıları P0; diyalog, üretim ve diğer içerikleri ilgili önceliklerine ayırır. Bu kurallar karşılaşma sıklığı ölçümü değildir; oyundaki kullanıma göre kontrol edilir.
+
+`confirmed` görünür olduğu doğrulanan adayları, `review` inceleme gereken alanları, `lua_review` Lua metni adaylarını içerir. Paket `confirmed` grubundan seçilir. Yüksek öncelikli diğer adayların görünürlüğünü de incele.
+
+Dosyadaki görev, tarif, NPC ve betik bağlantıları kullanım yerini bulmaya yardımcı olur. Temel oyundaki dosyalar, koşullu yamalar ve diğer modlar gerektiğinde ayrıca kontrol edilir.
+
+## Metinleri inceleme
+
+1. `en`, `occurrences`, bağlam anahtarı, `tm_suggestions` ve `locked_terms` alanlarını oku.
+2. Konuşanı, muhatabı, eşyayı veya ekranı kaynak dosyalarıyla eşleştir. Aynı İngilizce cümlenin farklı kullanımlarını ayrı değerlendir.
+3. Türkçeyi `tr` alanına yaz. Mevcut çeviri önerisinin anlamını ve terimlerini kontrol et.
+4. Bağlamı inceledikten sonra `context_reviewed=true` yap. Kullanım yerini `runtime_evidence` ve `runtime_review.evidence` içinde kaynak dosyası ve kısa açıklamayla kaydet.
+5. Yanlış gruplama varsa kuralı düzelterek taslağı yeniden hazırla. Alan listesini veya girdi hashlerini elle değiştirme.
+
+Taslakta yalnız `tr`, `context_reviewed`, `runtime_evidence`, `runtime_review` ve `measurements` düzenlenir. Ölçüm alanlarına ancak kaydedilmiş süre ve sonuçları yaz.
+
+## Ön kontrol ve yayın
+
+```text
+python tools/plan_translation.py --source fu_source --check-packet planning_output/next/packet.json
 ```
 
-Bu komut temiz pinli kaynağı yeniden tarar; kaynak/katalog/kurallar değişmişse veya paket alanı kayıp/fazlaysa reddeder. Tek Türkçe karşılığı grubun bütün alanlarına bellekte uygular; mevcut katalog ve manifestlerle birlikte proje QA'sını çalıştırır. Sayı, kontrol kodu, renk, satır sonu, terminoloji ve TM kuralları geçerlidir. Boş çeviri, aynı kalan İngilizce veya eksik insan bağlam onayı reddedilir. Kanıt notlarının içeriği insan tarafından doğrulanır; script bir metin notundan gerçek oyun erişilebilirliğini ispatlamaz.
+Bu kontrol kaynak, kapsam ve biçimlendirmeyi yeniden doğrular. Boş çeviri, değişmiş girdi veya eksik bağlam incelemesi reddedilir. Kaynakla aynı kalabilen özel adların kuralları `locked_terms.json` içinde tutulur; bu izin açıklama cümlelerini İngilizce bırakmak için kullanılamaz.
 
-Tam metni bir LOCKED `mode=preserve` kaydıyla eşleşen özel ad, yalnız ad alanında (`shortdescription`, `title`, `displayName`, `speciesName`) kaynakla aynı kalabilir. `Bella Morte` ve `Kramil` bu kapsamdadır. Aynı kural bir açıklama cümlesinin İngilizce bırakılmasına izin vermez; insan bağlam incelemesi ve bütün QA kuralları yine gerekir.
+Taslak kontrolü kataloğu değiştirmez. Türkçesi incelenen paket, sürüm listesi ve ilgili kaynak kontrolüyle birlikte eklenir. Ardından [test ve paketleme](QA_PIPELINE.md) adımları uygulanır.
 
-1 Ekim Sol incelemesinde `objects/farmables/fu_scriptedfarmableexample/fu_scriptedfarmableexample.object` normal oynanışa bağlanmayan geliştirme örneği olarak mevcut dışlama listesine alındı. Kaynakta bu kimliğe tarif, araştırma, satıcı, düşürme veya yerleşim bağlantısı yok; `printable=false`. Normal buğday nesneleri kapsamda kalır. Diğer bir nesnenin statik bağlantısının bulunamaması tek başına ölü asset kararı değildir; dinamik, temel oyun ve harici mod bağlantıları ayrıca inceleme notunda belirtilir.
-
-## Sol ve yayın
-
-Sol her yeni/değişen bağlam grubunu anlam, doğal Türkçe ve karakter sesi açısından inceler. Aynı çevirinin kullanıldığı bütün alanların bağlama uyumunu kontrol eder. Dil incelemesi sonrasında mevcut sürüm manifesti, allowlist, exact-source kapısı, tam build, CI ve oyun içi LQA akışı sürer. Ön denetim bu kapıların yerine geçmez ve paketi kataloğa otomatik eklemez.
-
-`measurements` alanında gerçek `translation_minutes`, `review_minutes`, `reviewed_units`, `corrected_units` ve `lqa_status` tutulur. En az bir normal paketle aynı kapsamda karşılaştırılmadan hız yüzdesi çıkarılmaz. Düzeltme oranı = düzeltilen grup / incelenen grup; hız = 100 grup başına toplam dakika. Gruplama tasarrufu, ölçülmüş çalışma süresi tasarrufu değildir.
-
-CI audit çıktısına kuyruk ve taslak paket ekler. Yerel varsayılan `planning_output/` Git tarafından dışlanır. Çalışma alanındaki paylaşılan `local-runtime/` çıktısı Luna ve Sol tarafından okunabilir; aynı paketi aynı anda düzenlemeyin, inceleme öncesi ayrı bir kopya tutun.
+[Paket kapsamı](TRANSLATION_BATCH_POLICY.md) · [Dil rehberi](STYLE_GUIDE.md)

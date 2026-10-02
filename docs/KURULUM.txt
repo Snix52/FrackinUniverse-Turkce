@@ -1,56 +1,30 @@
-FRACKIN' UNIVERSE TÜRKÇE | BETA KURULUM KILAVUZU
+Frackin' Universe Türkçe — Kurulum
 
-HEDEF SÜRÜM
-Frackin' Universe: 6.5.8
-Kaynak commit:
-329e714b3fe87571055c8ad7aa38135d199d3317
+Gerekenler
+Starbound ve Frackin' Universe kurulu olmalı. Yama FU 6.5.8 kaynağı için hazırlanmıştır.
+Güncel ZIP ve Workshop bağlantıları repo kökündeki README.md içindedir.
 
-MEVCUT DURUM
-Bu sürüm FU'nun tamamını Türkçeleştirmez.
-Güncel paket sürümü, kapsamı ve doğrulama sonuçları repository kökündeki
-dist/build-evidence.json dosyasındadır. README güncel paket bağlantısını içerir.
+Manuel kurulum
+1. Starbound'u kapat. storage klasörünü yedekle.
+2. Güncel ZIP'i çıkar.
+3. Eski FU_Turkce klasörünü mods dışına taşı.
+4. Yeni FU_Turkce klasörünü mods içine kopyala.
 
-Oyun içi LQA, font ve metin taşması kontrolleri henüz tamamlanmadı.
+Son yol: Starbound/mods/FU_Turkce/_metadata
 
-KURULUM
-1. Starbound'u kapat.
-2. Mümkünse Starbound/storage klasörünü yedekle.
-3. Güncel FU Türkçe beta ZIP dosyasını çıkar.
-4. Eski bir FU_Turkce kurulumu varsa klasörü mods dışına yedekle. Yeni paketteki
-   FU_Turkce klasörünü mods içine temiz kurulum olarak kopyala; eski klasörün
-   üzerine birleştirmek kaldırılmış yamaları oyunda bırakabilir.
-5. Son yol şu biçimde olmalı:
+Eski ve yeni klasörleri birleştirme; kaldırılan yamalar eski klasörde kalabilir.
+Ana FU .pak dosyasını veya Workshop klasörünü değiştirme.
 
-   Starbound\mods\FU_Turkce\_metadata
+Workshop
+Workshop sayfasından abone ol. GitHub ve Workshop paketleri ayrı güncellenir.
 
-6. Ana Frackin' Universe .pak dosyasını veya Workshop klasörünü değiştirme.
-7. Oyunu açıp FU Türkçe'nin yüklendiğini kontrol et.
+Kaldırma
+Oyunu kapat ve Starbound/mods/FU_Turkce klasörünü kaldır.
+Workshop üzerinden kurduysan aboneliği kaldır. Ana Frackin' Universe modunu kaldırmana gerek yok.
 
-PAKET
-README içindeki "Güncel beta paketini" bağlantısını kullan.
-dist/build-evidence.json içindeki package.path ve package.sha256 değerleri
-yayımlanmış paketin yolunu ve bütünlük değerini gösterir.
+Kontrol ve hata bildirimi
+2 Ekim 2026'da kullanıcı 2–3 saatlik oynanışta sorun bildirmedi.
+Kontrol listesi docs/LQA_CHECKLIST.md, paket bilgileri dist/build-evidence.json içindedir.
 
-KALDIRMA
-Oyunu kapat ve yalnızca şu klasörü sil:
-
-Starbound\mods\FU_Turkce
-
-Ana Frackin' Universe modunu kaldırmana gerek yok.
-
-TÜRKÇE KARAKTERLER
-Gerçek Türkçe karakterler kullanılır:
-ç, ğ, ı, İ, ö, ş, ü
-
-ASCII yedek sürüm bulunmaz.
-
-SORUN YAŞARSAN
-Mümkünse şu bilgileri birlikte paylaş:
-- Ekran görüntüsü
-- Sorunun görüldüğü görev, eşya, makine veya ekran
-- Starbound/storage/starbound.log
-- Kullandığın FU Türkçe sürümü
-
-Özellikle görevde geçen bir adın envanterde farklı görünmesi, görünür İngilizce
-metin kalması, bozuk Türkçe karakterler veya pencere dışına taşan metinler
-doğrudan hata olarak bildirilmelidir.
+Sorun yaşarsan yama sürümünü, ilgili ekran/görev/eşyayı, ekran görüntüsünü ve
+Starbound/storage/starbound.log dosyasını paylaş.

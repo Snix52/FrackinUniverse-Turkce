@@ -1,48 +1,29 @@
-# FU TÜRKÇE QA Kuralları
+# Çeviri dosyalarının kontrolü
 
-Bu dosya `STYLE_GUIDE.md` içindeki Anayasa'nın otomatik ve pratik kontrol özetidir.
+## Metin ve dosya yapısı
 
-## Statik kapı
-- JSON/JSON Patch geçerli olmalı.
-- Yalnızca oyuncuya gösterilen alanlar değişmeli.
-- Teknik key, ID, asset yolu ve script referansı değiştirilmemeli.
-- Placeholder, printf biçim belirteçleri (`%s`, `%%` vb.) ve tuş kodları birebir korunmalı.
-- Tooltip ikon glifleri, `%` işaretleri ve `+` / `-` dahil işaretli sayılar kaynakla birebir korunmalı.
-- Literal sekme sayısı korunmalı; yalnız `allow_tab_fix` ve gerekçe kaydı bulunan alanlarda bilinçli düzeltmeye izin verilir.
-- `{0}`, `{item}` gibi süslü parantez placeholder'ları ile `$variable` / `${variable}` biçimindeki değişkenler kaynakla birebir eşleşmeli.
-- Yapılandırılmış oyuncu metinlerinde kaynak ve Türkçe satır sonu sayısı korunmalı; bilinçli bir istisna gerekiyorsa açık QA kuralı eklenmeden kabul edilmemeli.
-- Renk kodu değişikliği yalnızca açıkça kaydedilmiş kaynak hatası düzeltmesinde kabul edilir.
-- Oyuncu metninde geçici İngilizce parantez glossu bırakılmamalı.
-- Türkçe karaktersiz ASCII sürümü üretilmemeli.
-- Terminoloji sözlüğündeki LOCKED kararlar ihlal edilmemeli; yüksek güvenli makine kuralları `tools/locked_terms.json` üzerinden build sırasında uygulanmalı.
-- Tekrarlayan veya önceki sürümde yeniden düzeltilen yüksek güvenli terimler yayın öncesi LOCKED kaydıyla korunmalı; QA'nın yalnız tam alanı değil ad ve cümle içindeki kullanımı da yakaladığı hatalı varyant testiyle gösterilmeli.
-- Aynı İngilizce kaynak metin varsayılan olarak tek Türkçe karşılık kullanmalı; yalnız belgeli bağlam istisnaları `tools/translation_memory_exceptions.json` içinde tutulmalı.
-- Exact FU kaynak commitindeki tüm pointer ve İngilizce kaynak değerleri doğrulanmalı.
-- Ana paket CI'ı `tools/kaynaklar.json` içindeki pinned FU commitini checkout edip `build_validate.py --source-dir` ile gerçek kaynak üzerinde patch simülasyonu çalıştırmalı.
-- Repository'deki `FU_Turkce/` kurulum ağacı ile `dist` ZIP aynı `build_output` ağacından üretilip birlikte güncellenmeli.
-- Her başarılı paket buildinde güncel workflow/source/upstream/hash kanıtı `dist/build-evidence.json` dosyasına otomatik yazılmalı; statik raporda eski artifact hashleri güncel kanıt gibi tutulmamalı.
-- Hızlı ardışık main commitlerinde eski workflow çalışmaları iptal edilmeli ve main ilerlediyse eski build artifact'i push edilmemeli.
-- Aday nesnelerde salt dosya/tileset tanımı erişilebilirlik kanıtı sayılmamalı; tarif, araştırma, görev, dükkân veya gerçek Tiled yerleşimiyle runtime bağlantısı doğrulanmalı.
-- Aday eşyalarda yalnız tanım dosyasının bulunması veya `/spawnitem` ile çağrılabilmesi erişilebilirlik kanıtı sayılmamalı; etkin tarif, araştırma, görev ödülü, çıkarma/işleme tablosu, ganimet ya da gerçek başlangıç/blueprint zinciri aranmalı.
-- `.disabled` tarifler, yorum satırları, deprecated geri-kazanım girdileri ve üretim kaynağı olmayan filtre/blueprint kayıtları tek başına canlı içerik sayılmamalı.
-- Görevlerde yalnız dosya, `id`, prerequisite veya aynı adlı eşya bulunması erişilebilirlik kanıtı sayılmamalı; gerçek başlangıç, `pickupQuestTemplates`, NPC `offeredQuests`, SAIL görevi ya da Tiled yerleşimi doğrulanmalı.
-- `showInLog`, kabul/tamamlama/hata pencereleri kapalı takip ve uyumluluk görevlerinin metinleri oyuncuya görünür sayılmamalı.
-- NPC `offeredQuests` içinde yorum satırına alınmış görev zincirleri ve yalnız geliştirici gemisi/hazine havuzuna bağlı görevler normal oyuncu kapsamına alınmamalı.
-- `items/generic/crafting` kapsamındaki item/consumable dosyalarında bu sürüm için yalnız `/shortdescription` ve `/description` çevrilebilir; `itemName`, efekt, fiyat, kategori ve tooltip mekanikleri teknik alan olarak korunmalı.
-- Silah kapsamına alınan `.activeitem` ve `.beamaxe` dosyalarında aktif araştırma düğümü ile gerçek `.recipe` çıktısı birlikte doğrulanmalı; yalnız araştırma listesi veya tanım dosyası yeterli sayılmamalı. v0.21 için exact allowlist'teki 121, v0.22 için exact allowlist'teki 157, v0.23 için `advancealloygear` + `durasteelgear` exact allowlist'indeki 48, v0.24 için kalan beş Kademe 4 düğümünün exact allowlist'indeki 148 ve v0.28 için yedi Kademe 5 düğümünün exact allowlist'indeki 96 yeni savaş ekipmanı assetinde yalnız `/shortdescription` ve `/description` çevrilebilir; hasar, yetenek, mermi, kategori ve script alanları korunmalı.
-- Zırh kapsamına alınan `.head`, `.chest`, `.legs` ve `.back` dosyalarında aktif araştırma düğümü ile gerçek `.recipe` çıktısı birlikte doğrulanmalı. v0.25 için dokuz Kademe 1-2 düğümünden seçilen exact allowlist'teki 114 assette, v0.26 için altı Kademe 3 düğümünden seçilen 75 yeni assette, v0.27 için yedi Kademe 4 düğümünden seçilen 87 assette ve v0.29 için yedi Kademe 5 düğümünden seçilen 61 assette yalnız `/shortdescription` ve `/description` çevrilebilir; `itemName`, stat hesapları, efekt listeleri, tooltip türü, kategori, tarif ve script alanları korunmalı. Dosya klasörü yerine runtime araştırma/tarif zinciri esas alınmalı; EPP düğümleri bu zırh diliminin dışında tutulmalı.
-- Usta Manipülatör tutarlılık düzeltmesinde yalnız iki runtime-bağlı assetin görünür alanları kapsama alınmalı: kırık augment için `/shortdescription`, `/description`, `/augment/displayName`; tamamlanmış araç için `/shortdescription`, `/description`. `itemName`, pickup görevi, blueprint ve araç mekaniği alanları korunmalı.
-- Starbound'un ham satır sonu içeren JSON benzeri assetleri de kaynak simülasyonundan kaçmamalı.
+- JSON ve JSON Patch geçerli olmalı.
+- Yalnızca oyuncuya görünen alanlar değişmeli; kimlik, yol, betik ve oyun parametreleri korunmalı.
+- Kaynak İngilizce metin, dosya yolu ve alan konumu kullanılan FU commit'iyle eşleşmeli.
+- Ana katalog ve sürüm listelerinde aynı alanın İngilizce/Türkçe değerleri eşit olmalı. Eksik veya yinelenen kayıt kabul edilmez.
+- Sabit terimler ve bağlama bağlı karşılıklar `tools/locked_terms.json` ile `tools/translation_memory_exceptions.json` üzerinden kontrol edilir.
 
-## LQA kapısı
-Statik QA geçse bile sürüm TAMAM sayılmaz. Oyunda:
-- font ve Türkçe karakterler,
-- metin taşmaları,
-- görev zinciri,
-- eşya/makine adları,
-- renkler ve satır sonları,
-- doğru NPC ve doğru bağlam,
-- üretim menüsü ile görev hedefi eşleşmesi
-kontrol edilmelidir.
+## Biçimlendirme
 
-LQA tamamlanmadan paket "tamamlanmış" veya "sorunsuz" diye etiketlenmez.
+Değişkenler, `%s` ve `%%` gibi biçim belirteçleri, tuş kodları, simgeler, renkler, sayılar, işaretler, sekmeler ve satır sonları kaynakla eşleşmeli. Türkçe harfler korunmalı; boş veya geçici açıklamalı çeviri eklenmemeli.
+
+Kaynaktaki hata için istisna gerekiyorsa tam dosya/alan, kaynak metin, çeviri ve gerekçe kaydedilir. `allow_tab_fix`, `allow_color_fix` veya `allow_number_fix` bayrağı tek başına yeterli değildir.
+
+## Lua ve oyun içeriği
+
+Lua çevirilerinde yalnızca kaydedilmiş görünür metinler değişir. Kod, yorumlar ve diğer dizgeler aynı kalır. Kaynak şablonları FU dosyalarıyla karşılaştırılır.
+
+Eşya ve ekipmanın oyundaki kullanımını tarif, araştırma, görev veya nesne bağlantısından kontrol et. Hasar, mermi, yetenek, istatistik, tarif, efekt ve betik alanları çeviri kapsamına girmez.
+
+## Paket
+
+Tam test sırası [QA_PIPELINE.md](QA_PIPELINE.md) içinde. Paket, `tools/kaynaklar.json` içindeki FU commit'inden hazırlanır. ZIP ve `FU_Turkce/` aynı dosyaları içermeli; kaynak ve paket bilgileri `dist/build-evidence.json` dosyasına yazılır.
+
+## Oyun kontrolü
+
+Yeni metinlerde Türkçe harfleri, taşmaları, görevdeki eşya adlarını, konuşan karakteri, renkleri ve düğmeleri kontrol et. Oynanış denemeleri [test notlarında](LQA_CHECKLIST.md) tutulur.

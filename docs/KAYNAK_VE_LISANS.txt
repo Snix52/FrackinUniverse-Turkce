@@ -1,51 +1,27 @@
-KAYNAK VE LİSANS / ATTRIBUTION
+Kaynaklar ve lisans
 
-Original work: Frackin' Universe
-Original authors: sayter (sayterdarkwynd) and Frackin' Universe contributors
-Repository: https://github.com/sayterdarkwynd/FrackinUniverse
-Inspected snapshot: https://github.com/sayterdarkwynd/FrackinUniverse/tree/329e714b3fe87571055c8ad7aa38135d199d3317
-Original credits: https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/_FUcredits.config
-Original license: https://github.com/sayterdarkwynd/FrackinUniverse/blob/329e714b3fe87571055c8ad7aa38135d199d3317/LICENSE.txt
+Frackin' Universe: sayter (sayterdarkwynd) ve Frackin' Universe katkıcıları.
+Kaynak repo: https://github.com/sayterdarkwynd/FrackinUniverse
+Kullanılan FU commit'i: tools/kaynaklar.json içindedir.
+Kaynak katkıcı listesi: https://github.com/sayterdarkwynd/FrackinUniverse/blob/bb58383c0d16c1152e3439e606b39ff82288b586/_FUcredits.config
+Kaynak lisansı: https://github.com/sayterdarkwynd/FrackinUniverse/blob/bb58383c0d16c1152e3439e606b39ff82288b586/LICENSE.txt
 
-The upstream repository identifies Frackin' Universe under:
-Creative Commons Attribution 4.0 International (CC BY 4.0)
-License deed: https://creativecommons.org/licenses/by/4.0/
-Full license: https://creativecommons.org/licenses/by/4.0/legalcode
+FU Türkçe gayriresmî bir çeviridir. FU ekibi, sayter, Chucklefish veya Starbound
+geliştiricileri tarafından yayımlanmış veya onaylanmış değildir.
 
-BU PROJEDE NE DEĞİŞİYOR?
+Paket, görünür metinler için JSON yamaları ve Lua dosyaları içerir. Lua metinleri,
+Türkçe yazı animasyonu ve istasyon düğmeleriyle ilgili değişiklikler
+tools/raw_text_translations.json ve tools/raw_runtime_overrides.json içinde kayıtlıdır.
+İngilizce kaynak parçaları, yama eşleşmesi ve doğrulama için saklanır.
 
-Bu paket, seçili oyuncuya görünür Frackin' Universe metinlerini Türkçeleştirir.
-Yerelleştirme için JSON Patch dosyaları, kaynak eşleşme kontrolleri, terminoloji
-kayıtları, QA araçları ve kurulum belgeleri eklenmiştir.
+Mech arayüz görselleri FU kaynaklarından türetilmiştir; kaynak bilgileri
+tools/ui_lqa_20260925.json içindedir. Diğer görsel kaynakları tools/art_sources/ altındadır.
 
-JSON Patch çevirilerine ek olarak, manifestlerde kaynak commit'i ve dosya
-hash'iyle sabitlenmiş yedi Lua override dosyası dağıtılır. Bunlar görünür metinleri,
-Türkçe UTF-8 yazı animasyonunu ve istasyon düğmelerinin metin/komut ayrımını
-düzenler. Ayrıntılı değişiklikler tools/raw_text_translations.json ve
-tools/raw_runtime_overrides.json içinde kayıtlıdır. İngilizce kaynak parçaları
-patch eşleşmesi, doğrulama ve atıf amacıyla da saklanır.
+Lisans: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Tam metin repo kökündeki LICENSE.txt dosyasındadır.
+https://creativecommons.org/licenses/by/4.0/
+https://creativecommons.org/licenses/by/4.0/legalcode
 
-PROJE DURUMU
-
-FU Türkçe gayriresmî ve devam eden bir yerelleştirme çalışmasıdır. FU ekibi,
-sayter, Chucklefish veya Starbound geliştiricileri tarafından yayımlanmış,
-desteklenmiş ya da onaylanmış resmî bir Türkçe sürüm değildir.
-
-Proje tek kişi tarafından yürütülür. Otomasyon ve yapay zekâ araçları çalışma
-sürecinde yardımcı araç olarak kullanılabilir; yayımlanan metinler terminoloji,
-bağlam, teknik bütünlük ve QA kurallarına göre ayrıca kontrol edilir.
-
-LİSANS VE DAĞITIM
-
-Çeviri ve proje belgeleri, uygulanabilir haklar ölçüsünde CC BY 4.0 altında
-paylaşılır. Projeye özgü build ve kontrol araçları da aynı koşullarda
-kullanılabilir, değiştirilebilir ve yeniden paylaşılabilir.
-
-Yeniden dağıtımda kaynak ve lisans bağlantılarının korunması, atıf yapılması ve
-sonraki değişikliklerin belirtilmesi gerekir.
-
-Paket olduğu gibi sunulur ve garanti verilmez. Tam kapsamlı oyun içi LQA henüz
-tamamlanmamıştır.
-
-Ana Frackin' Universe paketi, görselleri, sesleri ve font dosyaları bu dağıtıma
-dahil değildir.
+Çeviri, proje belgeleri ve projeye özgü araçlar, uygulanabilir haklar ölçüsünde
+aynı lisansla paylaşılır. Yeniden dağıtımda kaynak ve lisans bağlantılarını koru,
+atıf yap ve sonraki değişiklikleri belirt. Paket olduğu gibi sunulur; garanti verilmez.

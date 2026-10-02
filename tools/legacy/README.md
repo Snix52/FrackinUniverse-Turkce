@@ -1,7 +1,7 @@
-# Tarihsel tek seferlik üreticiler
+# Eski katalog üreticileri
 
-Bu 25 script eski sürümlerin nasıl hazırlandığını belgelemek için korunur. Katalog veya manifest yazan eski üreticiler oldukları için güncel çeviri ve CI komutları arasından ayrılmıştır. Doğrudan çalıştırıldıklarında dosya yazmadan açıklayıcı hata ile dururlar.
+Bu 25 script önceki sürümler hazırlanırken kullanıldı. Eski katalog ve dosya yollarını bekledikleri için doğrudan çalıştırmaları kapalıdır; dosya yazmadan dururlar.
 
-İçerikleri eski kaynak checkout'u, katalog sürümü ve dosya konumu varsayımları taşır. Güncel kataloğu yeniden üretmek için kullanılmazlar. Yeni çeviriler [planlama akışından](../../docs/TRANSLATION_PLANNING.md) hazırlanır ve güncel salt okunur kaynak kapılarıyla doğrulanır.
+Yeni çevirileri [planlama aracıyla](../../docs/TRANSLATION_PLANNING.md) hazırla. Güncel kaynak kontrolleri üst klasördedir.
 
-`generate_v039` içindeki onaylı satır yardımcı işlevi mevcut regresyon testinde kullanılmaya devam eder. Bu modülün import edilmesi ana kataloğu değiştirmez; onaylı veriyi üst klasördeki `v039_translations.json` manifestinden okur.
+`generate_v039` içindeki satır yardımcı işlevi testlerde kullanılır ve `../v039_translations.json` dosyasını okur.
