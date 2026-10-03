@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-10-02T21:51:32.190434+00:00",
-  "workflow_run_id": "37068083301",
-  "source_commit": "b6a356da85d1567ecf4585fd7ea23017c2543eb5",
-  "translation_source_commit": "b6a356da85d1567ecf4585fd7ea23017c2543eb5",
-  "translation_version": "0.71.1-beta",
+  "generated_at_utc": "2026-10-03T16:47:27.927278+00:00",
+  "workflow_run_id": "37137352673",
+  "source_commit": "0729152e896df98bee23f07c90e816caa764ef4b",
+  "translation_source_commit": "0729152e896df98bee23f07c90e816caa764ef4b",
+  "translation_version": "0.72.0-beta",
   "custom_game_assets": 14,
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 16514,
-    "patch_assets": 4929,
+    "structured_fields": 16918,
+    "patch_assets": 4933,
     "raw_override_assets": 10,
     "raw_script_strings": 126
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.71.1_Beta.zip",
-    "bytes": 2694376,
-    "sha256": "15174e400bb1d93f27f44fc0cc305ccd549d9ed2efe2db0fe94f618c76dcc98e",
-    "git_blob_sha": "dd0a451b8f7b2eaecc572e3f3b348d3f7e04805b",
+    "path": "dist/FU_Turkce_v0.72.0_Beta.zip",
+    "bytes": 2714807,
+    "sha256": "954b849b5e1b630c402c046031910c938b6f2c3615318247f893d9fc5f52ab8e",
+    "git_blob_sha": "9066135d73bdeda68845253a900ce185df720305",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "176896eda9342c178bd7f0cc8d069d7b2838013a1fd899440eec1d5201272fb7",
-  "build_inputs_sha256": "8cce4315ab4a89875b1de061d6381039777f657237d1292ef9258b6f6f095b27",
-  "catalog_sha256": "1694498c65e3b79f77aacb12cff58f7e11763289ea94700d013f4f19df01c2e3",
+  "install_tree_sha256": "fc083244c6df6e02b6b909203b512a6f039845572d5457a76c6cc02cee3fe457",
+  "build_inputs_sha256": "d8e00ff0179a9995b241f954562ab79ac29934e20c95187124ae42317abc433d",
+  "catalog_sha256": "0d736a2be481758b6e6df98f452f8cb91b62fbaa9efa4931bfd444cb00326e42",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -34,12 +34,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 16514,
-  "patched_assets": 4929,
+  "translated_display_fields": 16918,
+  "patched_assets": 4933,
   "raw_override_assets": 10,
   "raw_script_display_strings": 126,
-  "total_localized_display_units": 16640,
-  "target_assets_total": 4953,
+  "total_localized_display_units": 17044,
+  "target_assets_total": 4957,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -143,7 +143,8 @@
     "v0.69 P1 NPC diyalogları": 399,
     "v0.70 P1 NPC diyalogları": 375,
     "v0.71 P1 NPC diyalogları": 352,
-    "v0.71.1 Bilim Karakolu radyo açıklamaları": 15
+    "v0.71.1 Bilim Karakolu radyo açıklamaları": 15,
+    "v0.72 P1 NPC diyalogları": 404
   },
   "checks": {
     "static_qa": "PASS",
@@ -17853,6 +17854,30 @@
       "qa": {
         "layered_source": true,
         "source_patch": "radiomessages/tutorial.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "dialog/macready.config",
+      "pointer": "/converse/default/default/0",
+      "qa": {
+        "allow_control_fix": true,
+        "semantic_override": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
+      }
+    },
+    {
+      "asset": "dialog/towndrunk.config",
+      "pointer": "/converse/default/default/2",
+      "qa": {
+        "allow_control_fix": true,
+        "semantic_override": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
+      }
+    },
+    {
+      "asset": "dialog/towndrunk.config",
+      "pointer": "/converse/default/default/9",
+      "qa": {
+        "allow_control_fix": true,
+        "semantic_override": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
       }
     }
   ]
