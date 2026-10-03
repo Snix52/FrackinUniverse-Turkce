@@ -305,13 +305,24 @@ def check_packet(packet, expected, catalog, tools=TOOLS):
 
 
 def preserved_name(unit, tools=TOOLS):
-    """Only an exact LOCKED preserve term in a name field may remain unchanged."""
+    """Allow names, or explicitly bound authored dialogue sounds, to stay unchanged."""
+    policy = read(tools / 'locked_terms.json')
     name_fields = {'/shortdescription', '/title', '/displayName', '/speciesName'}
     if not unit['occurrences'] or any(o['pointer'] not in name_fields for o in unit['occurrences']):
-        return False
+        # Greg's authored name-only speech is not ordinary English prose.
+        # Every occurrence and its full text must have an explicit reviewed binding.
+        locked = {term['source'] for term in policy['terms']
+                  if term.get('status') == 'LOCKED' and term.get('mode') == 'preserve'}
+        return bool(unit['occurrences']) and unit['tr'] == unit['en'] and all(
+            any(x.get('preserve_utterance') is True and x.get('term_source') in locked
+                and x.get('reason', '').strip()
+                and all(x.get(k) == row[k] for k in ('asset', 'pointer', 'en', 'tr'))
+                for x in policy.get('context_exceptions', []))
+            for o in unit['occurrences']
+            for row in [dict(asset=o['asset'], pointer=o['pointer'], en=unit['en'], tr=unit['tr'])])
     return any(term.get('status') == 'LOCKED' and term.get('mode') == 'preserve'
                and unit['en'] in term['source'].split(' / ') and unit['tr'] == unit['en']
-               for term in read(tools / 'locked_terms.json')['terms'])
+               for term in policy['terms'])
 
 
 def valid_evidence(value):

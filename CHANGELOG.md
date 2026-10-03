@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.72.0 Beta — NPC konuşmaları
+
+404 yeni alan / 399 bağlam eklendi: Slimeperson sohbetlerinin devamı, insan biçimindeki Slime NPC’leri, Greg, Macready ve kasaba sarhoşu. Katalog 16.918 alan oldu; önceki 16.514 alan korundu. Pinli kaynağın `dialog/` klasöründeki confirmed adaylar tamamlandı; diğer klasörlerde ve review havuzunda diyaloglar sürüyor.
+
+82 alanda düzeltme yapıldı: tekrarlar dahil 62 cümle/kısa ifade; ayrıca 29 alandaki hıçkırık sesleri düzeltildi (alan sayıları örtüşür). İçten dışa erime, içki argosu, olumsuzluk ve sarhoş karakter tonu kontrol edildi. Greg’in 17 özgün ad/ses repliği korundu; yalnız tam alan-bağlı izin kullanıldı. Görünür geveleme açıklamaları İngilizce parantez eklenmeden çevrildi. 5 yeni LOCKED ile toplam 656. [Önce/sonra kayıtları](docs/reviews/dialogue6-20261003.json) · [Oyun kontrolü](docs/lqa/LQA_V072_20261003.md)
+
 ## v0.71.1 Beta — Bilim Karakolu radyo düzeltmesi
 
 Ekran görüntülerindeki altı açıklama ve aynı haritanın diğer radyo tetikleyicileri tamamlandı: 15 alan / 55 cümle-kısa ifade. Katalog 16.514 alan oldu; önceki 16.499 alan korundu. Kafe, tuvalet, meyhane, çöp alanı, X'i ve arıcılık mesajları; Kevin uyarıları, pazar, tedavi cihazı, ödül, keşif ve laboratuvar dizini kapsandı.
@@ -20,6 +26,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.72.0 | NPC konuşmaları, altıncı dilim | 404 |
 | v0.71.1 | Bilim Karakolu radyo düzeltmesi | 15 |
 | v0.71.0 | NPC konuşmaları, beşinci dilim | 352 |
 | v0.70.0 | NPC konuşmaları, dördüncü dilim | 375 |

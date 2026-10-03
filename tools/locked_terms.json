@@ -6367,6 +6367,59 @@
       "status": "LOCKED",
       "tr_stem": "meyhane",
       "note": "fu_useBooze radyo metnindeki belirli mekân; genel Tavern kullanımı bu dar kurala eklenmedi."
+    },
+    {
+      "source": "Greg",
+      "tr": "Greg",
+      "tr_stem": "greg",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Pinli greg.config adı ve özgün anlamsız ses replikleri korunur. Yalnız tam alan/EN/TR bağlı preserve_utterance kayıtları değişmeden kalabilir.",
+      "mode": "preserve"
+    },
+    {
+      "source": "Monster Musume",
+      "tr": "Monster Musume",
+      "tr_stem": "monster musume",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Pinli Slime konuşmalarında tırnak içinde anılan eser adı korunur; içeriğe yeni bilgi eklenmez.",
+      "mode": "preserve"
+    },
+    {
+      "source": "John Barleycorn",
+      "tr": "John Barleycorn",
+      "tr_stem": "john barleycorn",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Town drunk Floran hitabında kaynak eser/kişi adı korunur; bütün John adları kilitlenmez.",
+      "mode": "preserve"
+    },
+    {
+      "source": "*HIC*",
+      "tr": "*hık*",
+      "tr_stem": "hık",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Yalnız kaynak yıldızlı HIC hıçkırık sesine uygulanır; BURP geğirme ayrı kalır."
+    },
+    {
+      "source": "mummy juice",
+      "tr": "anne şarabı",
+      "tr_stem": "anne şarab",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Sarhoş NPC ebeveynlik/içki bağlamında dar argo karşılığı; normal süt sözcüğü bu kapsama girmez."
     }
   ],
   "context_exceptions": [
@@ -6516,6 +6569,159 @@
       "en": "Cola, punch... but still no Dandelion Root Pop...",
       "tr": "Kola, meyveli gazoz... ama hâlâ Karahindiba Kökü Gazozu yok...",
       "reason": "Karahindiba Kökü Gazozu doğru mevcut bileşik ad; Kökü çekimi düz Kök Gazozu köküyle eşleşmez."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/0",
+      "en": "Greg.",
+      "tr": "Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/4",
+      "en": "Greg.",
+      "tr": "Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/8",
+      "en": "Greg.",
+      "tr": "Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/1",
+      "en": "Greg!!!",
+      "tr": "Greg!!!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/10",
+      "en": "Greg?",
+      "tr": "Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/11",
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "tr": "Greg. Greeeeg greg greg Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/12",
+      "en": "Greg!?",
+      "tr": "Greg!?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/13",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/9",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/15",
+      "en": "Gregggggga gregga greg greg.",
+      "tr": "Gregggggga gregga greg greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/16",
+      "en": "Greg!? Greg. Gregga.",
+      "tr": "Greg!? Greg. Gregga.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/17",
+      "en": "Greg. Gregogreg.",
+      "tr": "Greg. Gregogreg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/2",
+      "en": "Greg!",
+      "tr": "Greg!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/3",
+      "en": "Greg. Greg? Greg greg.",
+      "tr": "Greg. Greg? Greg greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/5",
+      "en": "Greg. Greg! GREG!",
+      "tr": "Greg. Greg! GREG!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/6",
+      "en": "Greg...",
+      "tr": "Greg...",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
+    },
+    {
+      "asset": "dialog/greg.config",
+      "pointer": "/converse/default/default/7",
+      "en": "Greg...Greg greg greeeg!",
+      "tr": "Greg...Greg greg greeeg!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Greg yalnız adının kaynak ses varyantlarını tekrar eder; konuşma içinde ad dışında çevrilecek sözcük yok. Kaynak hece/noktalama korunur; izin bu tam satırın dışına taşmaz."
     }
   ],
   "forbidden_regexes": [

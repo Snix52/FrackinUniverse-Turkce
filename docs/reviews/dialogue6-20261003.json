@@ -1,0 +1,1871 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-03",
+  "base_commit": "525750175a7e15236074733eeb29255e47190716",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 404,
+    "context_groups": 399,
+    "unique_english_strings": 257,
+    "assets": {
+      "dialog/fuslimeperson.config": 116,
+      "dialog/greg.config": 18,
+      "dialog/macready.config": 1,
+      "dialog/slimenpchuman.config": 188,
+      "dialog/towndrunk.config": 81
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 404
+  },
+  "changes": {
+    "context_groups": 78,
+    "fields": 82,
+    "sentences_by_context": 59,
+    "sentences_including_repeated_fields": 62,
+    "sound_contexts": 28,
+    "sound_fields": 29,
+    "greg_utterance_fields": 17,
+    "count_method": "Değişmiş bağımsız cümle/kısa anlamlı ifade elle sayıldı. Greg ad-ses repliği bir kısa ifade; yalnız HIC ses işareti değişen satır 0 cümle. Aynı EN farklı konuşmacı bağlamında ayrı sayılır. Alan tekrarları yalnız sentences_including_repeated_fields toplamına eklenir."
+  },
+  "new_locked_terms": 5,
+  "new_locked_names": [
+    "Greg",
+    "Monster Musume",
+    "John Barleycorn",
+    "*HIC*",
+    "mummy juice"
+  ],
+  "locked_total": 656,
+  "approved_packet_sha256": "8657e9d8730b253910eafdc306f84d134da9e84cb88535815204f370d9cef71e",
+  "luna_original_packet_sha256": "5398c9df1fbf1ebc7e1323d01a3c66e09c86071111693cc832a697b70d74d4d5",
+  "approved_rows_sha256": "f7127f8f0477caeeaf86ab35164a7b55b578ce99332ea184d9b30be26d40e615",
+  "corrections": [
+    {
+      "unit_index": 14,
+      "unit_id": "43dc62f1e15bcdf9ba22aa17d8503e63e3552cfb8c02c64716b7b09be2409586",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/floran"
+      ],
+      "en": "I hear you and the fish people don't get on?",
+      "before": "Duyduğuma göre seninle balık halk pek anlaşamıyormuş?",
+      "after": "Duyduğuma göre seninle balık halkı pek anlaşamıyormuş?",
+      "reason": "Balık halk biçimi bozuk tamlamaydı; halkı ile tür hitabı ve soru korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/floran/19",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 20,
+      "unit_id": "278677741ac3a1d814fd4e7ba73f8438eb49eb52cb3814b029561e9c56e00080",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/floran"
+      ],
+      "en": "Some people tried eating slime jelly once.  Their bodies melted from the inside out.",
+      "before": "Birileri bir keresinde balçık jölesi yemeyi denemiş. İçleri dışlarına erimiş.",
+      "after": "Birileri bir keresinde balçık jölesi yemeyi denemiş. Bedenleri içten dışa erimiş.",
+      "reason": "Bodies melted from the inside out bedenlerin içten dışa erimesidir; içleri dışlarına yanlış yön bildiriyordu.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/floran/24",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 43,
+      "unit_id": "cf603b279771f5e286488dd2dad76128461750f359467db785b4e2baf74b0251",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/glitch"
+      ],
+      "en": "Don't worry, touching us won't corrode your fingers or anything.",
+      "before": "Merak etme, bize dokununca parmakların falan paslanmaz.",
+      "after": "Merak etme, bize dokunmak parmaklarını aşındırmaz, başka bir zarar da vermez.",
+      "reason": "Corrode genel metal aşınmasıdır; yalnız demir paslanmasına indirgenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/glitch/11",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 66,
+      "unit_id": "80eab5b68b740a5b234e7df6e98ab18f57bfa0a9d96fa8b36827a3185ad38794",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/hylotl"
+      ],
+      "en": "I don't read a lot of poetry, I find it too opaque.",
+      "before": "Pek şiir okumam; bana fazla kapalı geliyorlar.",
+      "after": "Pek şiir okumam; bana fazla anlaşılmaz geliyor.",
+      "reason": "Poetry tekil topluluk kavramıdır; geliyorlar zamir-sayı uyumsuzluğu giderildi, opaque anlamı açıklandı.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/hylotl/11",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 76,
+      "unit_id": "b9612497c44fee3b2092ce0a26e17425dc06ff08b2fda946fe6b53e2e57420a0",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/hylotl"
+      ],
+      "en": "Something about you makes me want fish and chips. Can't put my finger on what.",
+      "before": "Sende balık ve patates kızartması yeme isteği uyandıran bir şey var. Neyini çözemedim.",
+      "after": "Sende balık ve patates kızartması yeme isteği uyandıran bir şey var. Ne olduğunu bir türlü çıkaramıyorum.",
+      "reason": "Neyini çözemedim bozuk soruydu; neyin bu isteği uyandırdığı anlaşılamıyor anlamı korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/hylotl/20",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 90,
+      "unit_id": "47873df7795f2ea6b9abf1901b71acc1911219ed2dcd094e27f9289b5f0e76d3",
+      "context": [
+        "dialog",
+        "dialog/fuslimeperson.config",
+        "converse/default/hylotl"
+      ],
+      "en": "I've had some problems with water ever since I became a slimeperson, but I'm still a pretty good swimmer.",
+      "before": "Balçık kişisi olduğumdan beri suyla biraz sorun yaşıyorum ama hâlâ iyi yüzerim.",
+      "after": "Balçık insanına dönüştüğümden beri suyla biraz sorun yaşıyorum ama hâlâ iyi yüzerim.",
+      "reason": "Slimeperson diyalog konuşanı eski insandır; balçık kişisi yerine doğal balçık insanı kullanılır, özel tür adı kararı genelleştirilmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/hylotl/5",
+          "origin": "dialog/fuslimeperson.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 116,
+      "unit_id": "56aadba425cefb0911c6ad9d41c034ad00fbf79f0d60365ed1106d906cf3504a",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg.",
+      "before": "Ben Greg.",
+      "after": "Greg.",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/0",
+          "origin": "dialog/greg.config"
+        },
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/4",
+          "origin": "dialog/greg.config"
+        },
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/8",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 117,
+      "unit_id": "46dd0e4ec8b8845f18c64348cdb915aba264e05c79e0e3c84a3071ad4a235dda",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg!!!",
+      "before": "Greeeg!!!",
+      "after": "Greg!!!",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/1",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 118,
+      "unit_id": "215371f146e7eb68fae10ec7c27f1f700c8525ccdfb0cdcd691d21063e4c6ee7",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg?",
+      "before": "Greg mi?",
+      "after": "Greg?",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/10",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 119,
+      "unit_id": "fe4fd80a9b7e264058a1e11cc24c4688cd8e249af49eaca5a30c353fd29d63ae",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "before": "Greg. Greeeeg, Greg Greg, Greg?",
+      "after": "Greg. Greeeeg greg greg Greg?",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/11",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 120,
+      "unit_id": "5e0888759be66587dd10e04a7f012217eaeb8483246425aaf3ee322e3bcbba18",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg!?",
+      "before": "Greg mi!?",
+      "after": "Greg!?",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/12",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 121,
+      "unit_id": "f5bba8be3f650a2110130e760f2a75412769f295eec8e0a061976acce8e3b4d2",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg. Greg.",
+      "before": "Greg. Greg!",
+      "after": "Greg. Greg.",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/13",
+          "origin": "dialog/greg.config"
+        },
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/9",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 123,
+      "unit_id": "c01c797fe3cc204ff6081f818be71af0791cdd787f5aa5573dabad9f8bb95443",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Gregggggga gregga greg greg.",
+      "before": "Gregggggga, Gregga, Greg Greg.",
+      "after": "Gregggggga gregga greg greg.",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/15",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 124,
+      "unit_id": "09537712752c63f4bcb7537906aad6c3021f80a7d6938feb9ad55b3cf48434d5",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg!? Greg. Gregga.",
+      "before": "Greg mi!? Greg. Gregga.",
+      "after": "Greg!? Greg. Gregga.",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/16",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 125,
+      "unit_id": "f8975f19423ea1321660193af669c7a501aebe2a91768de06dc6995321fb2c0f",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg. Gregogreg.",
+      "before": "Greg. Grego-greg.",
+      "after": "Greg. Gregogreg.",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/17",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 126,
+      "unit_id": "97a3994d939a9378d78773d943d2de2a020b70f2145bd42d5b9f294e9c0332b2",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg!",
+      "before": "Greeeg!",
+      "after": "Greg!",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/2",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 127,
+      "unit_id": "a95bc181c9cf3584b686eb82e84d69046910758d781f3fcb090e4e074be4cebb",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg. Greg? Greg greg.",
+      "before": "Greg. Greg? Greg Greg.",
+      "after": "Greg. Greg? Greg greg.",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/3",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 128,
+      "unit_id": "c7f4f67f4949b42a8107b235920e81fc9e959a11fbbc7ed593603730d644c652",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg. Greg! GREG!",
+      "before": "Greg. Greg! GREEEG!",
+      "after": "Greg. Greg! GREG!",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/5",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 129,
+      "unit_id": "1a4156d6de3a3beac1fe3940f83f4789de66d71efd71c6d87d57846898610015",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg...",
+      "before": "Greg... Greg?",
+      "after": "Greg...",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/6",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 130,
+      "unit_id": "8da03aa3718d0c57787bf87b818afe8d42d9f2729441946ce4af8e2b9b89d2e2",
+      "context": [
+        "dialog",
+        "dialog/greg.config",
+        "converse/default/default"
+      ],
+      "en": "Greg...Greg greg greeeg!",
+      "before": "Greg... Greg Greg, Greeeg!",
+      "after": "Greg...Greg greg greeeg!",
+      "reason": "Greg yalnız adını tekrar eder; kaynakta olmayan Ben, mi, yeni hece uzatma, soru/ünlem ve noktalama ekleri çıkarıldı. Özgün hece/ses biçimi korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/greg.config",
+          "pointer": "/converse/default/default/7",
+          "origin": "dialog/greg.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 131,
+      "unit_id": "d3ad9f6a3be4735fff0307af883e0b5f75e56d5f114d475bc2a6860dcf7a80d0",
+      "context": [
+        "dialog",
+        "dialog/macready.config",
+        "converse/default/default"
+      ],
+      "en": "<unintelligible gibberish>",
+      "before": "<unintelligible gibberish> (anlaşılmaz geveleme)",
+      "after": "<anlaşılmaz geveleme>",
+      "reason": "Bu açı parantez teknik değişken değil, NPC durumunu anlatan görünür metindir. İngilizce parantez açıklaması kaldırılıp tam alan-bağlı kontrol istisnasıyla çevrildi.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/macready.config",
+          "pointer": "/converse/default/default/0",
+          "origin": "dialog/macready.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 218,
+      "unit_id": "f4d64471cf91f89faf99fd0f4b664afe35295ec3c36c38d3857771423531c31f",
+      "context": [
+        "dialog",
+        "dialog/slimenpchuman.config",
+        "converse/default/floran"
+      ],
+      "en": "I hear you and the fish people don't get on?",
+      "before": "Duyduğuma göre seninle balık halk pek anlaşamıyormuş?",
+      "after": "Duyduğuma göre seninle balık halkı pek anlaşamıyormuş?",
+      "reason": "Balık halk biçimi bozuk tamlamaydı; halkı ile tür hitabı ve soru korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/floran/19",
+          "origin": "dialog/slimenpchuman.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 224,
+      "unit_id": "642ecff3729d0cd6cf2497c492c561ba41789fbbb2708495a0111c131e69e9dc",
+      "context": [
+        "dialog",
+        "dialog/slimenpchuman.config",
+        "converse/default/floran"
+      ],
+      "en": "Some people tried eating slime jelly once.  Their bodies melted from the inside out.",
+      "before": "Birileri bir keresinde balçık jölesi yemeyi denemiş. İçleri dışlarına erimiş.",
+      "after": "Birileri bir keresinde balçık jölesi yemeyi denemiş. Bedenleri içten dışa erimiş.",
+      "reason": "Bodies melted from the inside out bedenlerin içten dışa erimesidir; içleri dışlarına yanlış yön bildiriyordu.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/floran/24",
+          "origin": "dialog/slimenpchuman.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 235,
+      "unit_id": "6ca08934a35cf5a610872897e93475d1a3e5d37495c16cc53ef4964d04b8040d",
+      "context": [
+        "dialog",
+        "dialog/slimenpchuman.config",
+        "converse/default/glitch"
+      ],
+      "en": "Don't worry, touching us won't corrode your fingers or anything.",
+      "before": "Merak etme, bize dokununca parmakların falan paslanmaz.",
+      "after": "Merak etme, bize dokunmak parmaklarını aşındırmaz, başka bir zarar da vermez.",
+      "reason": "Corrode genel metal aşınmasıdır; yalnız demir paslanmasına indirgenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/glitch/11",
+          "origin": "dialog/slimenpchuman.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 258,
+      "unit_id": "7307264032d5616a72072be7016e6d600407e829ce1fcf0ec1478fb5e81bb3fa",
+      "context": [
+        "dialog",
+        "dialog/slimenpchuman.config",
+        "converse/default/hylotl"
+      ],
+      "en": "I don't read a lot of poetry, I find it too opaque.",
+      "before": "Pek şiir okumam; bana fazla kapalı geliyorlar.",
+      "after": "Pek şiir okumam; bana fazla anlaşılmaz geliyor.",
+      "reason": "Poetry tekil topluluk kavramıdır; geliyorlar zamir-sayı uyumsuzluğu giderildi, opaque anlamı açıklandı.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/hylotl/11",
+          "origin": "dialog/slimenpchuman.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 268,
+      "unit_id": "85432755cf0847a5e74bb5867778019d4a4e92c257177725fe94e1513a244379",
+      "context": [
+        "dialog",
+        "dialog/slimenpchuman.config",
+        "converse/default/hylotl"
+      ],
+      "en": "Something about you makes me want fish and chips. Can't put my finger on what.",
+      "before": "Sende balık ve patates kızartması yeme isteği uyandıran bir şey var. Neyini çözemedim.",
+      "after": "Sende balık ve patates kızartması yeme isteği uyandıran bir şey var. Ne olduğunu bir türlü çıkaramıyorum.",
+      "reason": "Neyini çözemedim bozuk soruydu; neyin bu isteği uyandırdığı anlaşılamıyor anlamı korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/hylotl/20",
+          "origin": "dialog/slimenpchuman.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 282,
+      "unit_id": "311efff5c0a514df45c5aeeea983035f63ba498b9a8aa0d36040e674bb973b75",
+      "context": [
+        "dialog",
+        "dialog/slimenpchuman.config",
+        "converse/default/hylotl"
+      ],
+      "en": "I've had some problems with water ever since I became a slimeperson, but I'm still a pretty good swimmer.",
+      "before": "Balçık kişisi olduğumdan beri suyla biraz sorun yaşıyorum ama hâlâ iyi yüzerim.",
+      "after": "Balçık insanına dönüştüğümden beri suyla biraz sorun yaşıyorum ama hâlâ iyi yüzerim.",
+      "reason": "Slimeperson diyalog konuşanı eski insandır; balçık kişisi yerine doğal balçık insanı kullanılır, özel tür adı kararı genelleştirilmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/hylotl/5",
+          "origin": "dialog/slimenpchuman.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 321,
+      "unit_id": "78531e460a81f36ea9dd26bc4d070350a67554861f347c25b8355cf9d2b0b780",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "*HIC*",
+      "before": "*HÖÖRT*",
+      "after": "*hık*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/1",
+          "origin": "dialog/towndrunk.config"
+        },
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/5",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 322,
+      "unit_id": "849b4d2a3b7e87303b8cc476a6f4f9dee1758afb6d193ea9277917e28afb1b5b",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "Come back matey, I'm your besht friend. Honesht!",
+      "before": "Geri gel dostum, en iyi arkadaşınım ben. Vallahi!",
+      "after": "Geri gel doştum, en iyi arkadaşııınım ben. Vallahi!",
+      "reason": "Besht/honesht sarhoş peltekliği Türkçede de işitilir; ek bilgi eklenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/10",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 323,
+      "unit_id": "9929eec069752daafff37aa98258babfa16fae06ef1b291e0e2ad12826b7fe21",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "Darn, we wash about to share phone numbersh!",
+      "before": "Tüh, telefon numaralarımızı paylaşacaktık!",
+      "after": "Tüh, telefon numaralarımızı paylaşacaaaktık!",
+      "reason": "Numaralarış diye yapay Türkçe ek üretmeden uzatılmış sarhoş ses tonu korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/11",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 325,
+      "unit_id": "798d1861149ffa8f9d77baea3231cd6d8315361c11708a38c36b5114b002dd0f",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "<unintelligible gibberish>",
+      "before": "<unintelligible gibberish> (anlaşılmaz geveleme)",
+      "after": "<anlaşılmaz geveleme>",
+      "reason": "Bu açı parantez teknik değişken değil, NPC durumunu anlatan görünür metindir. İngilizce parantez açıklaması kaldırılıp tam alan-bağlı kontrol istisnasıyla çevrildi.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 326,
+      "unit_id": "7106f0c3c5d1155d98a504c03aadd12f68d943c980bf55da80fcd27f02c0114a",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "That wash shum good shtuff, mon. Wanna try shum?",
+      "before": "Bu meret pek iyiymiş dostum. Biraz ister misin?",
+      "after": "Bu meret pek iyiymiş doştum. Biraz işter mişin?",
+      "reason": "Shum/sh/tone kaynak sarhoşluğunu Türkçe pelteklikle korur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/3",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 329,
+      "unit_id": "cd3ff24076a911202ff6a5e8d7cc731acb597ea5e727b0808bf4391911533303",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "SMOOTH! *wheeze*",
+      "before": "PÜRÜZSÜZ! *hırıltı*",
+      "after": "YUMUŞAK İÇİMLİ! *hırıltı*",
+      "reason": "Smooth içki sonrası tepki, geometrik pürüzsüzlük değil; boğazdan rahat geçiş anlamı korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/7",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 331,
+      "unit_id": "c85cc71f632f3b249aaeac699216a78f3d7624dd0d9a24e052734c292fa6c31b",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/default/default"
+      ],
+      "en": "<untillegible gibberish>",
+      "before": "<untillegible gibberish> (okunaksız geveleme)",
+      "after": "<anlaşılmaz geveleme>",
+      "reason": "Untillegible kaynak yazım hatası sözlü anlaşılmaz geveleme bağlamındadır; okunaksız yazı değildir. İngilizce artık gösterilmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/default/default/9",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 332,
+      "unit_id": "ffc23c615e81b62b83acc47896adfbd393d67055f884f301c17f78f0df585a39",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/apex"
+      ],
+      "en": "Fuzzy wuzzy!",
+      "before": "Ayı gibi tüylü!",
+      "after": "Pofuduk tüylü şey!",
+      "reason": "Fuzzy wuzzy sevimli tüylü hitaptır; muhatabın ayı olduğu eklenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/apex/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 333,
+      "unit_id": "5468b9d03503f09808227e075f39984490d876aa5d0942bcdcddcab3c12edf9f",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/apex"
+      ],
+      "en": "If boozhe makesh people look prettier, why do yoush show ugly as f-- *HIC*",
+      "before": "İçki insanları güzelleştiriyorsa sen niye bu kadar çirkinsin be-- *HÖÖRT*",
+      "after": "İçki insanları daha güzel gösteriyorsa sen niye bu kadar çirkinsin, am-- *hık*",
+      "reason": "Makes people look prettier algı etkisidir; kişileri gerçekten güzelleştirdiği söylenmez. Kesilen kaynak küfür düzeyi ve hıçkırık noktası korunur. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/apex/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 334,
+      "unit_id": "e199e504c695879774a992ae8802c0ece9bd12710c4e2fa759b92eed301dcc2f",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/apex"
+      ],
+      "en": "Hmmm, they shayse boozhe makesh people look prettier, but I've never sheen anyone sho ugly ash ya.",
+      "before": "Hımm, içki insanları güzelleştirirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "after": "Hımm, içki insanları daha güzel gösterirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "reason": "Look prettier içki etkisiyle daha güzel görünmedir; gerçek dönüşüm değildir.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/apex/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 336,
+      "unit_id": "f14de5376d4f3ca4b1636dbf26488000ded9340ab964b1d13bc3d24bc4a6990a",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/apex"
+      ],
+      "en": "Firsht, pink *HIC* --effalumpsh. Now talking yetish *BURP* What next?",
+      "before": "Önce pembe *HÖÖRT* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "after": "Önce pembe *hık* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/apex/4",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 337,
+      "unit_id": "c4ac8841118ae84a9ace7c1ea24ee689e389cee44bd8f04999f831b5588f14e8",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/apex"
+      ],
+      "en": "Here's a toasht to *HIC*--ing Big Ape, and hish grenade launcher, woo hoo! *BURP*",
+      "before": "Big Ape’e ve bombaatarına *HÖÖRT* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "after": "Big Ape’e ve bombaatarına *hık* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/apex/5",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 338,
+      "unit_id": "ce2208e0257ff2368645d7bb9dbb1b84061bbee4da9dd8db359059c02ac0aeb0",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/default"
+      ],
+      "en": "Can't sh-- *HIC* --nag the mate of your dreamsh? ain't got a pimped out hoverbike? why not drink more beer?",
+      "before": "Hayallerindeki kişiyi tavlayamı-- *HÖÖRT* --yor musun? Havalı bir hoverbike’ın da mı yok? Daha çok bira içsene!",
+      "after": "Hayallerindeki kişiyi tavlayamı-- *hık* --yor musun? Havalı bir hoverbike’ın da mı yok? Daha çok bira içsene!",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/default/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 342,
+      "unit_id": "710c548d5bff5f26f480d2a07d4c51541cf064d60ce8fc55c68d20a778a5a497",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/default"
+      ],
+      "en": "Liquor? *BURP* but I hardly --",
+      "before": "İçki mi? *GEĞİR* Oysa daha yeni başlıyordum--",
+      "after": "Yalar mıyım? *GEĞİR* Ama onu daha doğru dürüst--",
+      "reason": "Liquor/lick her ses oyununu içki mi biçimi kaybediyordu. Türkçede yalama çağrışımı ve yarım bırakılan reddediş korunur; yeni başlama bilgisi kaynakta yoktur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/default/3",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 345,
+      "unit_id": "52c56d74ad566ea7317813d8c961392af104ce98ee82dbedcacae8ecb98eb42d",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/default"
+      ],
+      "en": "Wanna know how to be a good parent? eashy *HIC* - have no kidsh, and maxh out the mummy juice!",
+      "before": "İyi ebeveyn olmanın sırrını mı istiyorsun? Çok kolay *HÖÖRT* -- çocuk yapma, ana sütünü sonuna kadar iç!",
+      "after": "İyi ebeveyn olmanın sırrını mı istiyorsun? Çok kolay *hık* -- çocuk yapma, anne şarabına aban!",
+      "reason": "Mummy juice ebeveynlik/içki argo bağlamında annelerin içkisidir, ana sütü değil. Şarap yorumu sözlük ve diyalog bağlamıyla desteklenir. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/default/6",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 348,
+      "unit_id": "adb8f1da0409b7ee62dcf492d201b14ee2ea4c84dfe7097e52f52022d5ab698c",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/felin"
+      ],
+      "en": "Fuzzy wuzzy!",
+      "before": "Ayı gibi tüylü!",
+      "after": "Pofuduk tüylü şey!",
+      "reason": "Fuzzy wuzzy sevimli tüylü hitaptır; muhatabın ayı olduğu eklenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/felin/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 349,
+      "unit_id": "763a8ab8a9c1d744e57b9f075be5da480f975696738095c5ebd1bfb0189d41b5",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/felin"
+      ],
+      "en": "If boozhe makesh people look prettier, why do yoush show ugly as f-- *HIC*",
+      "before": "İçki insanları güzelleştiriyorsa sen niye bu kadar çirkinsin be-- *HÖÖRT*",
+      "after": "İçki insanları daha güzel gösteriyorsa sen niye bu kadar çirkinsin, am-- *hık*",
+      "reason": "Makes people look prettier algı etkisidir; kişileri gerçekten güzelleştirdiği söylenmez. Kesilen kaynak küfür düzeyi ve hıçkırık noktası korunur. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/felin/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 350,
+      "unit_id": "e138c4887517092e1fe5731d8c3ce01b1d41bd7369149e1a2fe30c8b6e3b4dbe",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/felin"
+      ],
+      "en": "Hmmm, they shayse boozhe makesh people look prettier, but I've never sheen anyone sho ugly ash ya.",
+      "before": "Hımm, içki insanları güzelleştirirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "after": "Hımm, içki insanları daha güzel gösterirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "reason": "Look prettier içki etkisiyle daha güzel görünmedir; gerçek dönüşüm değildir.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/felin/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 352,
+      "unit_id": "2061a5c5c96631074ff24eee22797f85854546e130f4d7a282db02fe7dece73b",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/felin"
+      ],
+      "en": "Firsht, pink *HIC* --effalumpsh. Now talking yetish *BURP* What next?",
+      "before": "Önce pembe *HÖÖRT* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "after": "Önce pembe *hık* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/felin/4",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 353,
+      "unit_id": "42395c61892a33edd5ed15633edb9395a7d87daacf7b0cce13839e0cbe5b8dd4",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/felin"
+      ],
+      "en": "Here's a toasht to *HIC*--ing Big Ape, and hish grenade launcher, woo hoo! *BURP*",
+      "before": "Big Ape’e ve bombaatarına *HÖÖRT* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "after": "Big Ape’e ve bombaatarına *hık* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/felin/5",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 354,
+      "unit_id": "be20a3f9f59307b6d23da1bbc749a9a80d8ecc10b6dffc4dd7c6d0a806cf0e14",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/fenerox"
+      ],
+      "en": "Fuzzy wuzzy!",
+      "before": "Ayı gibi tüylü!",
+      "after": "Pofuduk tüylü şey!",
+      "reason": "Fuzzy wuzzy sevimli tüylü hitaptır; muhatabın ayı olduğu eklenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/fenerox/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 355,
+      "unit_id": "5b12c526a0dca4db1fb7eed8595385aea7d2da14c49d20357c705ed374316cb5",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/fenerox"
+      ],
+      "en": "If boozhe makesh people look prettier, why do yoush show ugly as f-- *HIC*",
+      "before": "İçki insanları güzelleştiriyorsa sen niye bu kadar çirkinsin be-- *HÖÖRT*",
+      "after": "İçki insanları daha güzel gösteriyorsa sen niye bu kadar çirkinsin, am-- *hık*",
+      "reason": "Makes people look prettier algı etkisidir; kişileri gerçekten güzelleştirdiği söylenmez. Kesilen kaynak küfür düzeyi ve hıçkırık noktası korunur. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/fenerox/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 356,
+      "unit_id": "7812c8a316f03c3cd6e44b8656110942656a03a0e391995cf15554cb6b4759e6",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/fenerox"
+      ],
+      "en": "Hmmm, they shayse boozhe makesh people look prettier, but I've never sheen anyone sho ugly ash ya.",
+      "before": "Hımm, içki insanları güzelleştirirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "after": "Hımm, içki insanları daha güzel gösterirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "reason": "Look prettier içki etkisiyle daha güzel görünmedir; gerçek dönüşüm değildir.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/fenerox/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 358,
+      "unit_id": "9a91eff5369510c8930580d57511ce9cc732d9329f80dde9691f29665ef4f59d",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/fenerox"
+      ],
+      "en": "Firsht, pink *HIC* --effalumpsh. Now talking yetish *BURP* What next?",
+      "before": "Önce pembe *HÖÖRT* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "after": "Önce pembe *hık* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/fenerox/4",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 359,
+      "unit_id": "aeb4734af9090c44ebb5a41748e33492d4e0b1291460113fe1b7c380a2156f9f",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/fenerox"
+      ],
+      "en": "Here's a toasht to *HIC*--ing Big Ape, and hish grenade launcher, woo hoo! *BURP*",
+      "before": "Big Ape’e ve bombaatarına *HÖÖRT* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "after": "Big Ape’e ve bombaatarına *hık* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/fenerox/5",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 360,
+      "unit_id": "7c75cc6de1917bd503a536d018bd907f8410e24405836e71966b66b577720a47",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/floran"
+      ],
+      "en": "Shing right follol, the diddle all the dee *HIC*",
+      "before": "Şöyle tıngır mıngır, didıl dıdıl *HÖÖRT*",
+      "after": "Şöyle tıngır mıngır, didıl dıdıl *hık*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/floran/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 361,
+      "unit_id": "e7dd14c036c2d51dc22c579b9d1af61b6845d3fabc07bfccbecbae8be17ded81",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/floran"
+      ],
+      "en": "Oh wow, a talking plant. I am so phished!",
+      "before": "Vay canına, konuşan bir bitki. Çok şaşırdım!",
+      "after": "Vay canına, konuşan bir bitki. Fena sarhoşum!",
+      "reason": "Phished, pissed sözcüğünün sarhoş peltekliğidir; şaşırdım farklı anlamdır. NPC drunkardciv ve çevre içki replikleri bunu destekler.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/floran/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 363,
+      "unit_id": "b74bde2b1d010a1dc3e82c170bf01dedf47b6370a4e40ec718632ce40ec74b34",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/floran"
+      ],
+      "en": "Y'allsh look green i' th' fash. Be needin' to learn t' hold yer beer.",
+      "before": "Şu suratlar yemyeşil. Birayı tutmayı öğrenmeniz gerek.",
+      "after": "Suratınız yemyeşil. İçkiyi kaldırmayı öğrenmeniz gerek.",
+      "reason": "Hold yer beer içkiyi kaldırabilmek anlamıdır; birayı elde tutmak değil. Floran yeşillik/rahatsızlık esprisi korunur.",
+      "changed_sentences": 2,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/floran/3",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 364,
+      "unit_id": "57687f92b23359c0ee81e9e6c0eb46763cb7ce4f2c2ccf0b0f84e6f964f97e64",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/glitch"
+      ],
+      "en": "Matey, you duuu.",
+      "before": "Dostum, sen harikasın.",
+      "after": "Doştum, seeeen...",
+      "reason": "Duuu yarım peltek ses, source olumlu sıfat içermiyor; harikasın övgüsü uydurulmadı.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/glitch/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 365,
+      "unit_id": "448390c3083b475ca7718f037e0ff80368d426c41f7e67d4fc4f5cce4ce68395",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/glitch"
+      ],
+      "en": "I may be drunk ash a lord, but youshe sh--*HIC*--tty ash a shtinking drunk!",
+      "before": "Lord gibi sarhoş olabilirim ama sen leş gibi ayyaşsın!",
+      "after": "Küfelik sarhoş olabilirim ama sen de leş gibi bir ayyaş kadar bok--*hık*--tansın!",
+      "reason": "Drunk as a lord yerleşik sarhoşluk benzetmesi; lord kimliği iddia edilmez. Sh--tty hakareti ve kelime ortası hıçkırık korunur. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/glitch/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 366,
+      "unit_id": "84e48711f32fae69c447ef1f00b19f397b28b894abbe3c2ca14db28bb2630432",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/glitch"
+      ],
+      "en": "Dangit, you're all tin and no beer *HIC* Ain't no good at all!",
+      "before": "Hay aksi, tenekeden ibaretsin, bira da yok *HÖÖRT* Hiç çekilmez!",
+      "after": "Hay aksi, tenekeden ibaretsin, bira da yok *hık* Hiç çekilmez!",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/glitch/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 368,
+      "unit_id": "579bb96f2dba484dea1704b7a9ce3daa07b5a05fef92023a0041c5c8fe59914e",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/glitch"
+      ],
+      "en": "What are you, a promoter for Letheia B -- *BURP* -- eriesh? *HIC*",
+      "before": "Letheia Bira Fabrikası’nın reklamcısı mısın? *GEĞİR* *HÖÖRT*",
+      "after": "Letheia Bira Fabrikası’nın reklamcısı mısın? *GEĞİR* *hık*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/glitch/4",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 370,
+      "unit_id": "238393a1d3db1914480ff53dbd9b37a0d29d0e2c7f7767aefce45701b60a7dcf",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/human"
+      ],
+      "en": "Itch shad that Earff ish gone, but at leasth there ish shtill-- *BURP*",
+      "before": "Dünya gitti diyorlardı ama en azından hâlâ-- *GEĞİR*",
+      "after": "Dünya’nın yok olması üzücü ama en azından hâlâ-- *GEĞİR*",
+      "reason": "Itch shad = it is sad. Diyorlardı dolaylı anlatımı kaynakta yok; üzüntü anlamı geri getirildi.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/human/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 376,
+      "unit_id": "f26c797eddf79cfd65a7cb8ec47c4bba24158b6e3d0f01cecf2a1b8a756c2a44",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/human"
+      ],
+      "en": "When the world seems to shine like you've had too much wine, that'sh .... me, I *HIC* guess ...",
+      "before": "Dünya şarap içmişsin gibi ışıldadığında, demek ki... benim, sanırım... *HÖÖRT*",
+      "after": "Dünya şarap içmişsin gibi ışıldadığında, demek ki... benim, sanırım... *hık*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/human/6",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 377,
+      "unit_id": "a83327ce9603b1155bedc5d9aae79757e52aadefac5cebcd9ee61a69e034db9e",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/hylotl"
+      ],
+      "en": "Tea? yeach, how do you *HIC* --king get drunk on that?",
+      "before": "Çay mı? Iyy, onunla nasıl sarhoş olu-- *HÖÖRT*",
+      "after": "Çay mı? Iyy, onunla nasıl *hık* sarhoş olunur ki, am--?",
+      "reason": "Yarım kaynak küfür ve hıçkırık korunur; soru bitmeden Türkçe kelimenin yarım kalması soruyu düşürmesin. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/hylotl/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 379,
+      "unit_id": "f3fac9e663dea0283a4943950c7986a92b2c469016f25289a5f30a1caa54999f",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/hylotl"
+      ],
+      "en": "You're me besht friend matey. Sure shmell. Like fish. And vinegar. But moshtly, phish *HIC*",
+      "before": "En iyi dostumsun dostum. Biraz kokuyorsun. Balık ve sirke gibi. Ama çoğunlukla balık... *HÖÖRT*",
+      "after": "En iyi dostumsun dostum. Biraz kokuyorsun. Balık ve sirke gibi. Ama çoğunlukla balık... *hık*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/hylotl/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 380,
+      "unit_id": "e0a44c6f8797e0e6a5742ee3e7dca1e6b71748b3ad02665547fa9ac6cc369eb3",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/mawg"
+      ],
+      "en": "Fuzzy wuzzy!",
+      "before": "Ayı gibi tüylü!",
+      "after": "Pofuduk tüylü şey!",
+      "reason": "Fuzzy wuzzy sevimli tüylü hitaptır; muhatabın ayı olduğu eklenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/mawg/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 381,
+      "unit_id": "d16247816d82017041334d4e47bad291d1a8cc25af4399e4a6110d68b3873e1c",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/mawg"
+      ],
+      "en": "If boozhe makesh people look prettier, why do yoush show ugly as f-- *HIC*",
+      "before": "İçki insanları güzelleştiriyorsa sen niye bu kadar çirkinsin be-- *HÖÖRT*",
+      "after": "İçki insanları daha güzel gösteriyorsa sen niye bu kadar çirkinsin, am-- *hık*",
+      "reason": "Makes people look prettier algı etkisidir; kişileri gerçekten güzelleştirdiği söylenmez. Kesilen kaynak küfür düzeyi ve hıçkırık noktası korunur. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/mawg/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 382,
+      "unit_id": "5fc151d09c90c15ec3afa79aa4a93f7756b093c3bb649d1310ea31bb6b0c3d6f",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/mawg"
+      ],
+      "en": "Hmmm, they shayse boozhe makesh people look prettier, but I've never sheen anyone sho ugly ash ya.",
+      "before": "Hımm, içki insanları güzelleştirirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "after": "Hımm, içki insanları daha güzel gösterirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "reason": "Look prettier içki etkisiyle daha güzel görünmedir; gerçek dönüşüm değildir.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/mawg/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 384,
+      "unit_id": "a06ec53bdb5bca626500aec5aabd80d7d274769ef8264490172e24f0a0b6a584",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/mawg"
+      ],
+      "en": "Firsht, pink *HIC* --effalumpsh. Now talking yetish *BURP* What next?",
+      "before": "Önce pembe *HÖÖRT* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "after": "Önce pembe *hık* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/mawg/4",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 385,
+      "unit_id": "e18b27e9ee3917b2b41edfda1e47f826f213aa0c6d755803f4973f84fa5ef7af",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/mawg"
+      ],
+      "en": "Here's a toasht to *HIC*--ing Big Ape, and hish grenade launcher, woo hoo! *BURP*",
+      "before": "Big Ape’e ve bombaatarına *HÖÖRT* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "after": "Big Ape’e ve bombaatarına *hık* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/mawg/5",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 387,
+      "unit_id": "78765e36e54f847ee565bc90d9674d8245f9fc8a2fd4e6f352bd3c6143817fff",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/novakid"
+      ],
+      "en": "Your kind sure look like white lightning! wait, ish it the white lightning I've been drinkin'?",
+      "before": "Sizin gibiler beyaz şimşek gibi! Dur, içtiğim beyaz şimşek mi?",
+      "after": "Sizin türünüz beyaz şimşek gibi! Dur, içtiğim şu beyaz şimşek denen kaçak içki mi?",
+      "reason": "White lightning hem parlaklık benzetmesi hem kaçak içki argosudur; ikinci anlam doğal replik içinde görünür kılındı. Ayrı İngilizce parantez açıklaması eklenmedi.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/novakid/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 388,
+      "unit_id": "dec19cc2501e79af4ae7d9e31f2504f84e9794d66abc2e93d9c22ff264bdc5ee",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/novakid"
+      ],
+      "en": "Now theresh a shpirit I hope I won't be gettin' plashtered on shomeday.",
+      "before": "İşte bir gün kafayı bulmayı umduğum bir ruh.",
+      "after": "İşte bir gün içip kafayı bulmamayı umduğum bir ruh.",
+      "reason": "I hope I will not olumsuzluğu ters çevrilmişti. Spirit ruh/sert içki çift anlamı ruh ve içip ile korunur; gelecekteki kaçınma isteği geri getirildi.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/novakid/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 389,
+      "unit_id": "0567852727b14b1f8af3042ca1b09220a25fea5444f6cc3231a871b058671686",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/wookie"
+      ],
+      "en": "Fuzzy wuzzy!",
+      "before": "Ayı gibi tüylü!",
+      "after": "Pofuduk tüylü şey!",
+      "reason": "Fuzzy wuzzy sevimli tüylü hitaptır; muhatabın ayı olduğu eklenmez.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/wookie/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 390,
+      "unit_id": "82611383a92a48d8dd69d6e85167f5ba4ae97613c324e2c4cb1637316700f932",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/wookie"
+      ],
+      "en": "If boozhe makesh people look prettier, why do yoush show ugly as f-- *HIC*",
+      "before": "İçki insanları güzelleştiriyorsa sen niye bu kadar çirkinsin be-- *HÖÖRT*",
+      "after": "İçki insanları daha güzel gösteriyorsa sen niye bu kadar çirkinsin, am-- *hık*",
+      "reason": "Makes people look prettier algı etkisidir; kişileri gerçekten güzelleştirdiği söylenmez. Kesilen kaynak küfür düzeyi ve hıçkırık noktası korunur. HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 1,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/wookie/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 391,
+      "unit_id": "d4d4c6d7f4694569b8e3dd988ee97a22ae4ac56079cabe812e9b5fc3b1e400fd",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/wookie"
+      ],
+      "en": "Hmmm, they shayse boozhe makesh people look prettier, but I've never sheen anyone sho ugly ash ya.",
+      "before": "Hımm, içki insanları güzelleştirirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "after": "Hımm, içki insanları daha güzel gösterirmiş derler ama senin kadar çirkinini hiç görmedim.",
+      "reason": "Look prettier içki etkisiyle daha güzel görünmedir; gerçek dönüşüm değildir.",
+      "changed_sentences": 1,
+      "sound_effect_revised": false,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/wookie/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 393,
+      "unit_id": "8a39b3995436bef97e06c6bb45bafe8f55530cc95de21917a433d89a64e9165b",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/wookie"
+      ],
+      "en": "Firsht, pink *HIC* --effalumpsh. Now talking yetish *BURP* What next?",
+      "before": "Önce pembe *HÖÖRT* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "after": "Önce pembe *hık* --filler. Şimdi konuşan yetiler *GEĞİR* Sırada ne var?",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/wookie/4",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 394,
+      "unit_id": "f23e1e88ccf571c9f3fead329b7d610754279ca63761db5a830430e661b4317d",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "converse/human/wookie"
+      ],
+      "en": "Here's a toasht to *HIC*--ing Big Ape, and hish grenade launcher, woo hoo! *BURP*",
+      "before": "Big Ape’e ve bombaatarına *HÖÖRT* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "after": "Big Ape’e ve bombaatarına *hık* kadeh kaldırıyorum, yaşasın! *GEĞİR*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/converse/human/wookie/5",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 395,
+      "unit_id": "bd6363b9b385c4548d601814fdc98c03b4ec05967c0e5b042ca1e891aa639705",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "greeting/default/default"
+      ],
+      "en": "I *HIC* nothing to *BURP* to you.",
+      "before": "Sana diyecek *HÖÖRT* bir şeyim *GEĞİR* yok.",
+      "after": "Sana diyecek *hık* bir şeyim *GEĞİR* yok.",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/greeting/default/default/0",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 396,
+      "unit_id": "320a1e2762d2dcc8d061530867963816f64e12258850fee86ba35f4805369c17",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "greeting/default/default"
+      ],
+      "en": "Oh, *HIC*.",
+      "before": "Ah, *HÖÖRT*.",
+      "after": "Ah, *hık*.",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/greeting/default/default/1",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    },
+    {
+      "unit_index": 397,
+      "unit_id": "1da394a52c77648e1aafc4c414386096b034956098605025185add931fe6db0c",
+      "context": [
+        "dialog",
+        "dialog/towndrunk.config",
+        "greeting/default/default"
+      ],
+      "en": "*Hi, uh. *HIC*.",
+      "before": "*Se... şey. *HÖÖRT*",
+      "after": "*Se... şey. *hık*",
+      "reason": "HIC hıçkırıktır; geğirme çağrışımlı HÖÖRT yerine kısa hık kullanılır. BURP ayrı GEĞİR olarak korunur.",
+      "changed_sentences": 0,
+      "sound_effect_revised": true,
+      "occurrences": [
+        {
+          "asset": "dialog/towndrunk.config",
+          "pointer": "/greeting/default/default/2",
+          "origin": "dialog/towndrunk.config"
+        }
+      ]
+    }
+  ],
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 404,
+    "context_units": 399,
+    "qa": {
+      "catalog_units_checked": 28066,
+      "raw_units_checked": 115,
+      "locked_terms": 656
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "dialog/fuslimeperson.config; FU NPC/script literal referans taraması",
+        "note": "116 seçili converse alanı doğrulandı. FU NPC/script içinde bu dosyanın converse dalına literal çağrı bulunmadı; vanilla/dinamik erişim doğrulanmadı. slimenpchuman NPC referansını yanlışlıkla bu dosya için kanıt sayma."
+      },
+      {
+        "source": "npcs/biome/slimenpchumanvillager.npctype; npcs/biome/slimenpchumanguard.npctype",
+        "note": "Converse doğrudan dialog/slimenpchuman.config:converse dosyasına bağlanır; selected 188 alanın her biri canlı seçilmiş diye iddia edilmez."
+      },
+      {
+        "source": "npcs/mobs/greg.npctype; npcs/mobs/fuhobo.npctype; npcs/mobs/fucultist2.npctype; npcs/mobs/fueyebeast.npctype; npcs/mobs/fusorceror.npctype",
+        "note": "Bu dosyaların referansları Greg/Macready savaş dallarına gider; seçili converse dalına referans veya canlı seçim kanıtı değildir. Macready npcs/mobs/fucultist2.npctype ve fusorceror.npctype converse olayı attack dalına gider."
+      },
+      {
+        "source": "npcs/drunkardciv.npctype",
+        "note": "Towndrunk converse/greeting olay dosyası referansları doğrulandı; üçüncü parti muhatap ırkları ve canlı seçim doğrulanmadı."
+      }
+    ],
+    "note": "404 doğrudan FU alanı / 399 bağlam; oyun içi erişim, font, satır sığması ve ses LQA NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Slimeperson seçili converse dosyasına FU literal NPC/script bağlantısı bulunmadı; vanilla/dinamik erişim doğrulanmadı.",
+    "Genel NPC/config referansı her konuşmacı/muhatap repliğinin canlı seçimini kanıtlamaz.",
+    "Towndrunk harici ırk dalları için diğer modların kurulumu ve canlı seçim doğrulanmadı.",
+    "Boa, jelly, liquor/lick her ve spirit çift anlamlarının Türkçede oyuncuya geçişi LQA bekler."
+  ],
+  "lexical_review": [
+    {
+      "source_term": "Matey, you duuu.",
+      "status": "REVIEW",
+      "decision": "Tamamlanmamış ses, özgün kaynakta övgü yok; eklenen harikasın kaldırıldı, yeni anlam uydurulmadı."
+    }
+  ],
+  "slang_sources": [
+    {
+      "url": "https://www.merriam-webster.com/dictionary/white%20lightning",
+      "use": "White lightning kaçak içki; ikinci kullanım için Türkçe cümle içi bağlam."
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/spirit?topic=spirits-and-distilling",
+      "use": "Spirit sert içki ve ruh çift anlamı; Türkçe içip + ruh ile kısmen korunur."
+    },
+    {
+      "url": "https://en.wiktionary.org/wiki/mommy_juice",
+      "use": "Mommy juice annelerin içkisi/şarabı; kaynak mummy yazımı NPC peltekliği ve ebeveynlik bağlamından yorumlanır."
+    }
+  ],
+  "context_inferences": [
+    "Phished/pissed sarhoş okuması NPC drunkardciv ve komşu içki satırlarından çıkarımdır.",
+    "Liquor/lick her ses oyunu bağlamdan yorumlanır; yarım bırakılan cümleye yeni başlama olayı eklenmez.",
+    "Monster Musume ve John Barleycorn tırnaklı/hitaplı kaynak adları korunur; eser içeriği veya yazar hakkında lore eklenmez."
+  ],
+  "control_exceptions": [
+    {
+      "asset": "dialog/macready.config",
+      "pointer": "/converse/default/default/0",
+      "en": "<unintelligible gibberish>",
+      "tr": "<anlaşılmaz geveleme>",
+      "reason": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
+    },
+    {
+      "asset": "dialog/towndrunk.config",
+      "pointer": "/converse/default/default/2",
+      "en": "<unintelligible gibberish>",
+      "tr": "<anlaşılmaz geveleme>",
+      "reason": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
+    },
+    {
+      "asset": "dialog/towndrunk.config",
+      "pointer": "/converse/default/default/9",
+      "en": "<untillegible gibberish>",
+      "tr": "<anlaşılmaz geveleme>",
+      "reason": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
+    }
+  ],
+  "preserved_utterance_fields": 17
+}

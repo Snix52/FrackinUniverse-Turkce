@@ -43,7 +43,7 @@ Taslakta yalnız `tr`, `context_reviewed`, `runtime_evidence`, `runtime_review` 
 python tools/plan_translation.py --source fu_source --check-packet planning_output/next/packet.json
 ```
 
-Bu kontrol kaynak, kapsam ve biçimlendirmeyi yeniden doğrular. Boş çeviri, değişmiş girdi veya eksik bağlam incelemesi reddedilir. Kaynakla aynı kalabilen özel adların kuralları `locked_terms.json` içinde tutulur; bu izin açıklama cümlelerini İngilizce bırakmak için kullanılamaz.
+Bu kontrol kaynak, kapsam ve biçimlendirmeyi yeniden doğrular. Boş çeviri, değişmiş girdi veya eksik bağlam incelemesi reddedilir. Kaynakla aynı kalabilen özel adların kuralları `locked_terms.json` içinde tutulur; bu izin açıklama cümlelerini İngilizce bırakmak için kullanılamaz. Greg gibi yalnız özel ad/seslerden oluşan özgün diyaloglar, aktif LOCKED terime bağlı tam `asset/pointer/en/tr` ve gerekçe taşıyan `preserve_utterance` kayıtlarıyla değişmeden kalabilir. Normal İngilizce cümle veya komşu alan bu izni kullanamaz.
 
 Taslak kontrolü kataloğu değiştirmez. Türkçesi incelenen paket, sürüm listesi ve ilgili kaynak kontrolüyle birlikte eklenir. Ardından [test ve paketleme](QA_PIPELINE.md) adımları uygulanır.
 

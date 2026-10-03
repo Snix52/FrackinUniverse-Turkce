@@ -667,6 +667,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Kevin | Bilim Karakolu / NPC adı | Özel ad | Kevin | - | LOCKED | FU tutorial radyo ve mevcut katalogdaki kişi adı. |
 | Starbucks | Bilim Karakolu / kafe markası | Özel ad | Starbucks | - | LOCKED | objects/scienceoutpost/starbucks/fustarbucks.object envanter adı ve mevcut katalog ile aynı. |
 | The Tavern | Bilim Karakolu / radyo mekân adı | Terim | Meyhane | - | LOCKED | fu_useBooze radyo metnindeki belirli mekân; genel Tavern kullanımı bu dar kurala eklenmedi. |
+| Greg | FU NPC diyalogları | Diyalog terimi | Greg | - | LOCKED | Pinli greg.config adı ve özgün anlamsız ses replikleri korunur. Yalnız tam alan/EN/TR bağlı preserve_utterance kayıtları değişmeden kalabilir. |
+| Monster Musume | FU NPC diyalogları | Diyalog terimi | Monster Musume | - | LOCKED | Pinli Slime konuşmalarında tırnak içinde anılan eser adı korunur; içeriğe yeni bilgi eklenmez. |
+| John Barleycorn | FU NPC diyalogları | Diyalog terimi | John Barleycorn | - | LOCKED | Town drunk Floran hitabında kaynak eser/kişi adı korunur; bütün John adları kilitlenmez. |
+| *HIC* | FU NPC diyalogları | Diyalog terimi | *hık* | - | LOCKED | Yalnız kaynak yıldızlı HIC hıçkırık sesine uygulanır; BURP geğirme ayrı kalır. |
+| mummy juice | FU NPC diyalogları | Diyalog terimi | anne şarabı | - | LOCKED | Sarhoş NPC ebeveynlik/içki bağlamında dar argo karşılığı; normal süt sözcüğü bu kapsama girmez. |
 
 ## Kural
 
