@@ -682,6 +682,10 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Four Felins' Coffee Corner | FU NPC diyalogları | Diyalog terimi | Dört Felin Kahve Köşesi | - | LOCKED | Barista felin kahve dükkânı adı bu Türkçe karşılıkla sabitlenir. |
 | Marty's Place | FU NPC diyalogları | Diyalog terimi | Marty’nin Yeri | - | LOCKED | Barkeep dükkânının kişi adı korunur, Place Yeri olarak çevrilir. |
 | kopi luwak | FU NPC diyalogları | Diyalog terimi | kopi luwak | - | LOCKED | Kahve türünün adı korunur; komşu Felin şakasını tamamlayıp kaynakta olmayan malzeme ekleme. |
+| Itamae | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | Suşi Şefi | - | LOCKED | Görünür NPC dükkân unvanı; suşi satış havuzu ve Hylotl sushibar tenant ile doğrulandı. Teknik itamae type/category/tenant kimliği değişmez. |
+| Svetlana / Svetlana Twofeather | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | Svetlana / Svetlana Twofeather | - | LOCKED | Kaynak NPC identity/name ve ilk converse repliğindeki kişi adı korunur; tam soyadı geçen metinde Twofeather de korunur. |
+| The Observer | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | The Observer | - | LOCKED | Svetlana ilk repliğinde anılan özel ad/handle; kişinin gerçek kimliği veya yeni lore çıkarımı eklenmez. |
+| Extra Dungeons | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | Extra Dungeons | - | LOCKED | Svetlana teşekkür repliğindeki mod/içerik adı korunur; sıradan dungeon/zindan sözcüğü kilitlenmez. |
 
 ## Kural
 

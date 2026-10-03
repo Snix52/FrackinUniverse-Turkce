@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-04",
+  "base_commit": "b194c0b528d58168cd49c80531917917f01ba62c",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 34,
+    "context_groups": 34,
+    "unique_english_strings": 24,
+    "assets": {
+      "npcs/itamae.npctype": 10,
+      "npcs/oremerchant.npctype": 2,
+      "npcs/parlorvendor.npctype": 16,
+      "npcs/svetlana.npctype": 6
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 34
+  },
+  "changes": {
+    "context_groups": 5,
+    "fields": 5,
+    "maintenance_fields": 0,
+    "sentences_by_context": 6,
+    "sentences_including_repeated_fields": 6,
+    "maintenance_sentences": 0,
+    "count_method": "Değişen bağımsız cümle/kısa ifadeler elle sayıldı. Unvan bir kısa ifade; fiyat biçimi değişen cümle bir ifade. İki değişen Svetlana cümlesi iki sayılır; aynı EN farklı olay/konuşmacı dalında ayrı sayılır."
+  },
+  "new_locked_terms": 4,
+  "new_locked_names": [
+    "Itamae",
+    "Svetlana / Svetlana Twofeather",
+    "The Observer",
+    "Extra Dungeons"
+  ],
+  "locked_total": 670,
+  "approved_packet_sha256": "3105a5a03fef09e4e4540a52876c94f530ded8886afd7a12cdcf861765cfd505",
+  "luna_original_packet_sha256": "63377fb66a32ec0d9bbea22933cac92633e6a960c13857ae18a1756184659a92",
+  "approved_rows_sha256": "cb80e43915c496d6726a7350f365e9d3a3bf333c4641c4e91c877664b5d5216d",
+  "corrections": [
+    {
+      "unit_index": 8,
+      "unit_id": "d2c2e72ea508f96f6a8705d0aa53c1718d3ae6666377248aba3691ba21bab717",
+      "context": [
+        "npcs",
+        "npcs/itamae.npctype",
+        "scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle"
+      ],
+      "en": "  Fish serving fish? Weird.",
+      "before": "  Balık balığa mı servis yapıyor? Tuhaf.",
+      "after": "  Balık servis eden bir balık mı? Tuhaf.",
+      "reason": "Fish serving fish balık olan aşçının yemek olarak balık servis etmesidir. Balığa servis farklı nesne/hedef ilişkisi kuruyordu; Hylotl tenant ve suşi dükkânı bağlamıyla karşılaştırıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/itamae.npctype",
+          "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+          "origin": "npcs/itamae.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 9,
+      "unit_id": "7b643ef6b2df4216f7ca80ee47bd17bdfac88e07ef4e62f698d3c53d00fb4ece",
+      "context": [
+        "npcs",
+        "npcs/itamae.npctype",
+        "scriptConfig/merchant/paneLayoutOverride/windowtitle/title"
+      ],
+      "en": "  Itamae",
+      "before": "  Itamae",
+      "after": "  Suşi Şefi",
+      "reason": "Itamae kişi adı değil, Japon mutfağı aşçısı unvanıdır. NPC pencere başlığı, Hylotl/sushibar tenant ve suşi satış havuzu bu bağlamda Suşi Şefi karşılığını destekler. Teknik itamae kimlikleri korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/itamae.npctype",
+          "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+          "origin": "npcs/itamae.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 19,
+      "unit_id": "76382c4c667bcb97e22b71e899de9c3b179f363884756f067316db8db3936f7d",
+      "context": [
+        "npcs",
+        "npcs/parlorvendor.npctype",
+        "scriptConfig/dialog/merchant/welcome/default/default"
+      ],
+      "en": "A single scoop starts at 300,000 pixels... kidding! Just kidding!",
+      "before": "Bir top dondurma 300,000 pikselden başlıyor... şaka! Şaka yaptım!",
+      "after": "Bir top dondurma 300.000 pikselden başlıyor... şaka! Şaka yaptım!",
+      "reason": "Kaynak 300,000 fiyat şakası Türkçe binlik ayıracıyla 300.000 yazıldı; sayı ve miktar değiştirilmedi. Mevcut virgül/nokta biçim denetimi bu eşdeğerliği zaten destekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/parlorvendor.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/default/default/1",
+          "origin": "npcs/parlorvendor.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 24,
+      "unit_id": "d9b6c32882891c0f3e8cd95c89b82382731e4ff1e65821f4ac2dcf65596913a7",
+      "context": [
+        "npcs",
+        "npcs/parlorvendor.npctype",
+        "scriptConfig/dialog/merchant/welcome/default/penguin/default"
+      ],
+      "en": "A single scoop starts at 300,000 pixels... kidding! Just kidding!",
+      "before": "Bir top dondurma 300,000 pikselden başlıyor... şaka! Şaka yaptım!",
+      "after": "Bir top dondurma 300.000 pikselden başlıyor... şaka! Şaka yaptım!",
+      "reason": "Kaynak 300,000 fiyat şakası Türkçe binlik ayıracıyla 300.000 yazıldı; sayı ve miktar değiştirilmedi. Mevcut virgül/nokta biçim denetimi bu eşdeğerliği zaten destekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/parlorvendor.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/default/penguin/default/1",
+          "origin": "npcs/parlorvendor.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 30,
+      "unit_id": "3557b828e4f3ea0f864bafcf8d03bbeaa2124719991f5051ff6990c32db265f8",
+      "context": [
+        "npcs",
+        "npcs/svetlana.npctype",
+        "scriptConfig/dialog/converse/default/default"
+      ],
+      "en": "That you managed to find me shows your dedication towards finding all the little secrets he's hidden in his work, and I commend you for taking the time to search every nook and cranny of his dungeons!",
+      "before": "Beni bulmayı başarman, onun eserinde sakladığı bütün küçük sırları bulmaya ne kadar adanmış olduğunu gösteriyor. Zindanlarının her köşesini bucak bucak aramaya vakit ayırdığın için seni kutlarım!",
+      "after": "Beni bulmayı başarman, onun eserinde sakladığı bütün küçük sırları keşfetmeye ne kadar kararlı olduğunu gösteriyor. Zindanlarını köşe bucak aramaya vakit ayırdığın için seni kutlarım!",
+      "reason": "Adanmış olma kalıbı doğal keşif motivasyonuyla karşılandı; her köşesini bucak bucak tekrarı köşe bucak şeklinde düzenlendi. Kaynağın bütün sırlar, arama emeği ve övgü anlamları korundu.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/svetlana.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/2",
+          "origin": "npcs/svetlana.npctype"
+        }
+      ]
+    }
+  ],
+  "initial_preflight": {
+    "status": "REJECTED_UNCHANGED_OCCUPATION_TITLE",
+    "error": "Missing or unchanged translation: 7b643ef6b2df4216f7ca80ee47bd17bdfac88e07ef4e62f698d3c53d00fb4ece",
+    "unit": 9,
+    "asset": "npcs/itamae.npctype"
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 34,
+    "context_units": 34,
+    "qa": {
+      "catalog_units_checked": 29304,
+      "raw_units_checked": 115,
+      "locked_terms": 670
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "npcs/itamae.npctype",
+        "note": "Itamae merchant start/welcome dizileri ve paneLayoutOverride/windowtitle incelendi. hyltol yazımı kaynakta aynen korunuyor; bu dalın canlı seçimi doğrulanmadı."
+      },
+      {
+        "source": "npcs/oremerchant.npctype",
+        "note": "Ore Merchant merchant paneLayoutOverride/windowtitle incelendi; Ore için LOCKED karşılık Cevher uygulandı."
+      },
+      {
+        "source": "npcs/parlorvendor.npctype",
+        "note": "Penguin ice-cream merchant start/welcome ve windowtitle incelendi. welcome/end satırları iç içe kaynak dalında; canlı erişimleri doğrulanmadı."
+      },
+      {
+        "source": "npcs/svetlana.npctype",
+        "note": "Svetlana identity (Avian), spectator davranışı ve converse/speak metinleri incelendi. The Observer ve Extra Dungeons özel adları bağlamda bırakıldı."
+      },
+      {
+        "source": "tenants/vanillaraces/itamae.tenant",
+        "note": "itamae NPC, hylotl türü ve sushibar koloni etiketi; unvan bağlamı için bağımsız kaynak bağlantısı."
+      },
+      {
+        "source": "npcs/merchantpools.config.patch:/itamae",
+        "note": "Suşi tepsileri, ramen ve ilgili yiyecekler satış havuzunda; dükkân unvanı meslektir. Kategori/ürün kimlikleri değiştirilmedi."
+      },
+      {
+        "source": "dungeons/home/extrahome.json; dungeons/missions/volcanobase/volcanobase.json; dungeons/missions/avianhydro/avianhydro.json",
+        "note": "Svetlana NPC typeName/npc harita bağlantıları bulundu. Harita kaydı her diyalogun canlı seçimi veya bütün zindanlarda bulunması kanıtı değildir."
+      }
+    ],
+    "note": "34 doğrudan FU alanı/pointer ve NPC olay bağlamı incelendi. Itamae hyltol yazım hatası ile parlorvendor kaynakta iç içe end/penguin/tenant dalları korundu; erişimleri doğrulanmadı. Svetlana Avian identity, spectator davranışı ve sequence modu kaynakta mevcut; davranışın canlı çalışması/font/sığma LQA NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Itamae hyltol kaynak anahtarı korunur; bu dalın oyun içi seçimi doğrulanmadı.",
+    "Parlorvendor penguin/end/tenant kaynak dalları merchant/welcome/default altında iç içedir. Çeviri işi anahtarları taşımaz; canlı erişim doğrulanmadı.",
+    "Svetlana Avian identity, sequence modu ve harita typeName referansları statik olarak doğrulandı; her diyalogun canlı seçimi/font/sığması kanıtlanmadı.",
+    "NPC kök ailesi confirmed adayları bu paketle tamamlanır; npcs/crew, npcs/scienceoutpost, radiomessages ve başka ailelerde diyaloglar devam eder.",
+    "Moonspeak/moonpeak ve Sefton önceki REVIEW durumunda kalır."
+  ],
+  "lexical_sources": [
+    {
+      "url": "https://kotobank.jp/word/%E6%9D%BF%E5%89%8D-31146",
+      "use": "Shogakukan sözlüğünde Itamae Japon mutfağı aşçısı meslek unvanı; kişi adı değildir."
+    }
+  ],
+  "source_context": [
+    {
+      "source": "tenants/vanillaraces/itamae.tenant",
+      "finding": "Hylotl türü ve sushibar koloni etiketi aynı itamae NPC tipine gider."
+    },
+    {
+      "source": "npcs/merchantpools.config.patch:/itamae",
+      "finding": "Suşi tepsileri, ramen ve diğer Japon mutfağı yemekleri satış havuzu; Suşi Şefi bu FU bağlamında seçildi."
+    },
+    {
+      "source": "npcs/svetlana.npctype",
+      "finding": "Svetlana identity/name, Avian race, spectator behavior, sequence dialogMode ve The Observer/Extra Dungeons görünür adları kaynakta mevcut."
+    },
+    {
+      "source": "dungeons/home/extrahome.json; dungeons/missions/avianhydro/avianhydro.json; dungeons/missions/alienjungle/alienjungle.json",
+      "finding": "NPC properties/typeName=svetlana ve npc=avian harita kayıtları; yerleşim referansı canlı dialog seçimi değildir."
+    }
+  ],
+  "format_review": {
+    "price_source": "300,000",
+    "price_translation": "300.000",
+    "numeric_value": 300000,
+    "number_policy_changed": false,
+    "qa_exception_added": false,
+    "technical_ids_changed": false
+  }
+}

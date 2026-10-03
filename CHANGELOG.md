@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.74.0 Beta — NPC kök ailesinin son konuşmaları
+
+Suşi şefi, cevher tüccarı, penguen dondurmacı ve Svetlana: 4 NPC dosyasında 34 yeni alan / 34 bağlam, 24 benzersiz kaynak metin. Katalog 17.352 alan oldu; önceki 17.318 alan aynen korundu.
+
+5 alanda toplam 6 cümle/kısa ifade düzeltildi: balık servis etme anlamı, Suşi Şefi meslek unvanı, 300.000 piksel fiyat biçimi ve Svetlana’nın keşif övgüsü. 4 yeni LOCKED, toplam 670. NPC kök ailesinin confirmed adayları tamamlandı; mürettebat ve diğer diyalog ailelerinde çeviri devam ediyor. Kaynak olay/ırk anahtarları ve FU 6.5.8 pini korunur. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/npc2-20261004.json) · [Oyun kontrolü](docs/lqa/LQA_V074_20261004.md)
+
 ## v0.73.0 Beta — NPC esnaf ve olay konuşmaları
 
 19 NPC dosyasında 400 yeni alan / 400 bağlam eklendi: Apex esir/tacirleri; aşçı, barista, barmen, arıcı ve diğer esnaf; haydut saldırıları, takipçi ve kaçış konuşmaları; Mantizi hizmetçi/soylu, kütüphane ve uzay muhafızı. Katalog 17.318 alan oldu.
@@ -32,6 +38,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.74.0 | Son NPC kök konuşmaları | 34 |
 | v0.73.0 | NPC esnaf ve olay konuşmaları | 400 |
 | v0.72.0 | NPC konuşmaları, altıncı dilim | 404 |
 | v0.71.1 | Bilim Karakolu radyo düzeltmesi | 15 |
