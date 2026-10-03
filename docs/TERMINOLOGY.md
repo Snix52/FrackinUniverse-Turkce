@@ -672,6 +672,16 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | John Barleycorn | FU NPC diyalogları | Diyalog terimi | John Barleycorn | - | LOCKED | Town drunk Floran hitabında kaynak eser/kişi adı korunur; bütün John adları kilitlenmez. |
 | *HIC* | FU NPC diyalogları | Diyalog terimi | *hık* | - | LOCKED | Yalnız kaynak yıldızlı HIC hıçkırık sesine uygulanır; BURP geğirme ayrı kalır. |
 | mummy juice | FU NPC diyalogları | Diyalog terimi | anne şarabı | - | LOCKED | Sarhoş NPC ebeveynlik/içki bağlamında dar argo karşılığı; normal süt sözcüğü bu kapsama girmez. |
+| short, a tall, a grande, a venti | FU NPC diyalogları | Diyalog terimi | Short, Tall, Grande, Venti | kısa, küçük, uzun | LOCKED | Yalnız bu tam kahve boy dizisi; Starbucks Türkiye resmî menü adları korunur. Genel short/tall sıfatları kilitlenmez. Tam kaynak manifestleri bütün dizi üyelerini korur. |
+| Greenguard | FU NPC diyalogları | Diyalog terimi | Greenguard | - | LOCKED | Floran muhafız grubunun özel unvanı; pinned legacy Greenguard günlükleri ve arıcı replikleri bağlamı. Genel green/guard sözcükleri kilitlenmez. |
+| Consul | FU NPC diyalogları | Diyalog terimi | Konsül | - | LOCKED | Mantizi soylu/hizmetçi NPC siyasi unvanı. |
+| Wanderers | FU NPC diyalogları | Diyalog terimi | Gezginler | - | LOCKED | Peglaci köken codexi ve önceki araştırma kataloğuyla uyumlu topluluk adı; komşu genel gezginler aynı kökü kullanabilir. |
+| a keep | FU NPC diyalogları | Diyalog terimi | iç kale | - | LOCKED | Glitch kaçış sonrası savunma yapısı; genel keep fiili bu kilitte yoktur. |
+| ace-high | FU NPC diyalogları | Diyalog terimi | birinci sınıf | - | LOCKED | Novakid yemek övgüsü; Amerikan argo övgü. Papaz Kaçtı başka kart oyunu değildir. |
+| a Protector | FU NPC diyalogları | Diyalog terimi | Protector | - | LOCKED | Protectorate üyesi unvan; tam a Protector deyimine bağlı. Protector Plating/Mask/Robes genel zırh adlarına uygulanmaz. |
+| Four Felins' Coffee Corner | FU NPC diyalogları | Diyalog terimi | Dört Felin Kahve Köşesi | - | LOCKED | Barista felin kahve dükkânı adı bu Türkçe karşılıkla sabitlenir. |
+| Marty's Place | FU NPC diyalogları | Diyalog terimi | Marty’nin Yeri | - | LOCKED | Barkeep dükkânının kişi adı korunur, Place Yeri olarak çevrilir. |
+| kopi luwak | FU NPC diyalogları | Diyalog terimi | kopi luwak | - | LOCKED | Kahve türünün adı korunur; komşu Felin şakasını tamamlayıp kaynakta olmayan malzeme ekleme. |
 
 ## Kural
 

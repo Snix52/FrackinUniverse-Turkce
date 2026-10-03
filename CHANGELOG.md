@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.73.0 Beta — NPC esnaf ve olay konuşmaları
+
+19 NPC dosyasında 400 yeni alan / 400 bağlam eklendi: Apex esir/tacirleri; aşçı, barista, barmen, arıcı ve diğer esnaf; haydut saldırıları, takipçi ve kaçış konuşmaları; Mantizi hizmetçi/soylu, kütüphane ve uzay muhafızı. Katalog 17.318 alan oldu.
+
+Yeni teslimin 70 alanında 75 cümle/kısa ifade düzeltildi. Önceki 3 bakım alanıyla toplam 79: olumsuzluk, kimin şanslı olduğu, kahve boyları, deyimler ve karakter sesleri. 16.915 eski alan aynen korundu. 10 yeni LOCKED, toplam 666. Moonspeak/moonpeak yorumu REVIEW; canlı replik seçimi/font/sığma NOT TESTED. Kaynaktaki olay/ırk anahtarları değiştirilmedi. [Gerekçeli önce/sonra kayıtları](docs/reviews/npc1-20261003.json) · [Oyun kontrolü](docs/lqa/LQA_V073_20261003.md)
+
 ## v0.72.0 Beta — NPC konuşmaları
 
 404 yeni alan / 399 bağlam eklendi: Slimeperson sohbetlerinin devamı, insan biçimindeki Slime NPC’leri, Greg, Macready ve kasaba sarhoşu. Katalog 16.918 alan oldu; önceki 16.514 alan korundu. Pinli kaynağın `dialog/` klasöründeki confirmed adaylar tamamlandı; diğer klasörlerde ve review havuzunda diyaloglar sürüyor.
@@ -26,6 +32,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.73.0 | NPC esnaf ve olay konuşmaları | 400 |
 | v0.72.0 | NPC konuşmaları, altıncı dilim | 404 |
 | v0.71.1 | Bilim Karakolu radyo düzeltmesi | 15 |
 | v0.71.0 | NPC konuşmaları, beşinci dilim | 352 |

@@ -1,0 +1,1788 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-03",
+  "base_commit": "9d32f2d15dd681936f8c353f83315a8c10479e6a",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 400,
+    "context_groups": 400,
+    "unique_english_strings": 307,
+    "assets": {
+      "npcs/apexslave.npctype": 19,
+      "npcs/apexslaver.npctype": 24,
+      "npcs/avianchef.npctype": 52,
+      "npcs/avianfirebringer.npctype": 3,
+      "npcs/banditrocket.npctype": 8,
+      "npcs/banditsniper.npctype": 8,
+      "npcs/barista.npctype": 41,
+      "npcs/barkeep.npctype": 7,
+      "npcs/beekeeper.npctype": 50,
+      "npcs/catchefmerchant.npctype": 59,
+      "npcs/corpsevendor.npctype": 4,
+      "npcs/crystalminer.npctype": 9,
+      "npcs/dinerpatron.npctype": 8,
+      "npcs/foolcook.npctype": 34,
+      "npcs/fumantizinoble.npctype": 12,
+      "npcs/fumantiziservant.npctype": 16,
+      "npcs/fupeglacischolar.npctype": 12,
+      "npcs/fuspaceguard.npctype": 29,
+      "npcs/itamae.npctype": 5
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 400
+  },
+  "changes": {
+    "context_groups": 70,
+    "fields": 70,
+    "maintenance_fields": 3,
+    "sentences_by_context": 75,
+    "sentences_including_repeated_fields": 79,
+    "maintenance_sentences": 4,
+    "count_method": "Değişen bağımsız cümle/kısa ifadeler elle sayıldı; duygu ve ses aktarımı bir kısa ifade. Aynı EN farklı konuşmacı/olay bağlamında ayrı sayılır. Yeni 70 alan ve önceki 3 bakım alanında toplam 79 cümle/kısa ifade; yalnız 75 tanesi yeni teslimde."
+  },
+  "new_locked_terms": 10,
+  "new_locked_names": [
+    "short, a tall, a grande, a venti",
+    "Greenguard",
+    "Consul",
+    "Wanderers",
+    "a keep",
+    "ace-high",
+    "a Protector",
+    "Four Felins' Coffee Corner",
+    "Marty's Place",
+    "kopi luwak"
+  ],
+  "locked_total": 666,
+  "approved_packet_sha256": "4c52c9870c409f47b00d416dc881f0a07feaee5ed48ec166aa2ce05d4c108211",
+  "luna_original_packet_sha256": "ae23286a2123e5b5d55d6e631c0e67605ad42cb7824eba07b862c110d4d45880",
+  "approved_rows_sha256": "2a410eafda6d4adce27850264641ad1b6ab6de22c06510c3eabb9b95582fc6b8",
+  "corrections": [
+    {
+      "unit_index": 2,
+      "unit_id": "6dee4cd942549f5051265f52f16ee249e2176bd8ad8a59ea94f8908bdafa525f",
+      "context": [
+        "npcs",
+        "npcs/apexslave.npctype",
+        "scriptConfig/dialog/converse/apex/apex"
+      ],
+      "en": "Do not fear for us, friend. This is the way of things.",
+      "before": "Bizim için korkma dostum. İşlerin yürüyüşü böyle.",
+      "after": "Bizim için korkma dostum. Düzen böyle.",
+      "reason": "Way of things yerleşik düzendir; işlerin yürüyüşü Türkçe doğal bir ifade değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/apexslave.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/apex/2",
+          "origin": "npcs/apexslave.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 12,
+      "unit_id": "684842428afc7f4c7befe65edb561c015f8f2d986ec8e76b9de38cb85bc0296f",
+      "context": [
+        "npcs",
+        "npcs/apexslave.npctype",
+        "scriptConfig/dialog/converse/apex/default"
+      ],
+      "en": "Do not fear for us, stranger. This is the way of things.",
+      "before": "Bizim için korkma yabancı. İşlerin yürüyüşü böyle.",
+      "after": "Bizim için korkma yabancı. Düzen böyle.",
+      "reason": "Way of things yerleşik düzendir; işlerin yürüyüşü Türkçe doğal bir ifade değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/apexslave.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/2",
+          "origin": "npcs/apexslave.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 23,
+      "unit_id": "a432554afff2c156e09fa9f61d8608b2020ed4a362b87b89d28052ba88ba6afa",
+      "context": [
+        "npcs",
+        "npcs/apexslaver.npctype",
+        "scriptConfig/dialog/hail/apex/apex"
+      ],
+      "en": "The Apex will rise, sibling.",
+      "before": "Apex’ler yeniden yükselecek kardeşim.",
+      "after": "Apex’ler yükselecek kardeşim.",
+      "reason": "Kaynakta again/yeniden yok; yeni bir tarihsel tekrar eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/apexslaver.npctype",
+          "pointer": "/scriptConfig/dialog/hail/apex/apex/3",
+          "origin": "npcs/apexslaver.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 24,
+      "unit_id": "afd139dbb01475bcab729d0c11339fb2b0d2d98c16c7a1aac3a4a9e6dda159cf",
+      "context": [
+        "npcs",
+        "npcs/apexslaver.npctype",
+        "scriptConfig/dialog/hail/apex/apex"
+      ],
+      "en": "You are no more free than I, Resistance fighter.",
+      "before": "Direnişçi, sen de benim kadar özgürsün.",
+      "after": "Direnişçi, sen benden daha özgür değilsin.",
+      "reason": "No more free karşılaştırmalı olumsuzluktur; benim kadar özgürsün baskı altındaki iki kişinin özgür olduğu izlenimini veriyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/apexslaver.npctype",
+          "pointer": "/scriptConfig/dialog/hail/apex/apex/4",
+          "origin": "npcs/apexslaver.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 44,
+      "unit_id": "46b8fc6add69d3c75125b8e1b660329935d13aeba26f79d203791145d2c43ce2",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/end/apex/default"
+      ],
+      "en": "Don't be a stranger!",
+      "before": "Yabancılık çekme, yine gel!",
+      "after": "Bizi unutma, yine uğra!",
+      "reason": "Don’t be a stranger görüşmeyi kesmeme deyimidir; yabancılık çekmek değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/apex/default/1",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 47,
+      "unit_id": "105c0da7c729e10bd1fd7bd95c85cffa7fd19c7f3f6bbb4800a9bb48248f5110",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/end/avian/default"
+      ],
+      "en": "Great taste waits for no-one.",
+      "before": "Eşsiz lezzet seni bekliyor.",
+      "after": "Eşsiz lezzet kimseyi beklemez.",
+      "reason": "Waits for no-one olumsuzluğu seni bekliyor ile ters çevrilmişti.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/avian/default/1",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 50,
+      "unit_id": "ecd123e5a0698fd567abe3f9c9a11bfa2d6fe185fc6bfd5d9dc2fcf2b38b1e90",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/end/floran/default"
+      ],
+      "en": "Come back sssoon for foodsss!",
+      "before": "Yemek için yine uğrayısssın!",
+      "after": "Yemek için en kısssa zamanda yine gel!",
+      "reason": "Soon zaman anlamı korunur; uğrayısssın diye yeni bozuk ek üretilmez, mevcut s sesi uzatılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/floran/default/0",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 51,
+      "unit_id": "8aa5e60a4f392363797e686dc62fbeb6cf9625d7bfb73c5e074355fea0c53239",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/end/floran/default"
+      ],
+      "en": "Floran have more foodsss next time!",
+      "before": "Floran bir dahaki sefere daha çok yiyecek getirecek!",
+      "after": "Floran bir dahaki sssefere daha çok yiyecek bulundurur!",
+      "reason": "Have yiyecek bulundurmaktır; getirme eylemi kaynakta yok. Floran tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/floran/default/1",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 53,
+      "unit_id": "833c032fade34c0ce30f476507e953c356c1a63b73ad9d3319c88b4c72083b1e",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/end/glitch/default"
+      ],
+      "en": "Statement. Come back any time.",
+      "before": "Düz. İstediğin zaman yine gel.",
+      "after": "Bildirim. İstediğin zaman yine gel.",
+      "reason": "Glitch Statement duygu/beyan önekidir; Düz bu anlamı vermiyordu. Önceki katalogdaki Bildirim kullanımıyla eşlendi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/glitch/default/0",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 64,
+      "unit_id": "15b645ccc4953b6d18a35d424b507b31b6fa5c6aefe375cbd86ff6adc070b0b9",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/apex/default"
+      ],
+      "en": "Let me help you cook up a feast.",
+      "before": "Sana ziyafet hazırlayayım.",
+      "after": "Ziyafet hazırlamana yardım edeyim.",
+      "reason": "Help you cook öznenin oyuncuya yardım etmesidir; tüm ziyafeti tek başına hazırlaması değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/apex/default/2",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 73,
+      "unit_id": "ac21045fce0ea7da8b7822889624706c0aa208942abce2946c07c232b7a702e8",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran sssell food to ssspaceperson!",
+      "before": "Floran uzay insana yemek sssat!",
+      "after": "Floran uzay insssanına yemek sssatar!",
+      "reason": "Uzay insana bozuk tamlaması düzeltildi; Floran üçüncü kişi ve tıslama korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/0",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 75,
+      "unit_id": "188c8090598fb7f22c271bfed38da8e8645978f1bacd5403d648f0ec396bf1d1",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran liability in kitchen. Greenfinger sssay it! Liability mean best chef.",
+      "before": "Floran mutfakta baş belası. Greenfinger öyle dedi! Baş belası demek en iyi aşçı demek.",
+      "after": "Floran mutfakta baş belası. Greenfinger öyle sssöyledi! Baş belası demek en iyi aşçı demek.",
+      "reason": "Greenfinger sssay tıslaması mevcut Türkçe s sesiyle korundu; yanlış anlama şakası değişmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/2",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 76,
+      "unit_id": "4e77e7ee48155ea9a094178084a33f9ebede965484a4e1cae399ad6a0a4dcb63",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran ssstab cut ssslash bash make dinner!",
+      "before": "Floran doğra, kes, parçala, vur; akşam yemeği hazır!",
+      "after": "Floran sssapla, kes, biç, vur; akşam yemeği yap!",
+      "reason": "Stab saplama eylemidir; kesme/doğrama ile birleştirilmez. Floran tıslaması mevcut s sesine aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/3",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 77,
+      "unit_id": "3b33bcbba418b7335e1f33b1cfb52e357a95fb1a544325d3b6f4d9195933b08c",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran at your ssservice.",
+      "before": "Floran hizmetine amade.",
+      "after": "Floran sssana hizmet eder.",
+      "reason": "Floran sservice tıslaması silinmişti; mevcut s üzerinden korunur, uydurma Türkçe ek eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/4",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 249,
+      "unit_id": "092812e177d49341618dfde3ee452da2affbb14f3dc4de3582269046d62e6c4b",
+      "context": [
+        "npcs",
+        "npcs/catchefmerchant.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran is at your sservice.",
+      "before": "Floran hizmetine amade.",
+      "after": "Floran sssana hizmet eder.",
+      "reason": "Floran sservice tıslaması silinmişti; mevcut s üzerinden korunur, uydurma Türkçe ek eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/catchefmerchant.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/4",
+          "origin": "npcs/catchefmerchant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 78,
+      "unit_id": "1a1c8357c1bd18e5054d68436571773a381a6b438fa78163db3aa02ad88c3197",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/glitch/default"
+      ],
+      "en": "Statement. All your cooking needs, right here.",
+      "before": "Düz. Tüm yemek ihtiyaçların burada.",
+      "after": "Bildirim. Tüm yemek ihtiyaçların burada.",
+      "reason": "Statement Glitch beyan önekidir; Düz anlamı kaybettiriyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/glitch/default/0",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 90,
+      "unit_id": "6f1cf437aea618d08b9b24eaa0058f88f795526304284a3fbfa3f42769f39352",
+      "context": [
+        "npcs",
+        "npcs/avianchef.npctype",
+        "scriptConfig/dialog/merchant/start/hylotl/default"
+      ],
+      "en": "Can you stomach the beauty of Hylotl cuisine?",
+      "before": "Hylotl mutfağının güzelliğine dayanabilir misin?",
+      "after": "Hylotl mutfağının güzelliğini hazmedebilir misin?",
+      "reason": "Stomach dayanmak/hazmetmek çift anlamını yemek bağlamında hazmetmek karşılar.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/avianchef.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/hylotl/default/2",
+          "origin": "npcs/avianchef.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 118,
+      "unit_id": "9917fabd458d68d6ee757c3f6d97d94a488155c24b3cfd3136d16f51ae6f4e09",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/end/glitch/default"
+      ],
+      "en": "Desperate. Don't forget to review us online!",
+      "before": "Umutsuz. Bize internette yorum yazmayı unutma!",
+      "after": "Çaresiz. Bize internette yorum yazmayı unutma!",
+      "reason": "Desperate müşteri yorumunu isteyen çaresizliktir; aynı paket Burger Fool kullanımıyla tutarlı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/glitch/default/0",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 121,
+      "unit_id": "2b45d82eca149de988dbe4f5b54bc211fcf81c7359b995e6f8717cc161c8cb48",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/start/default/default"
+      ],
+      "en": "Okay! Will that be a short, a tall, a grande, a venti, or a... shoot. Lost track again...",
+      "before": "Peki! Kısa mı, uzun mu, grande mi, venti mi, yoksa... Tüh, yine unuttum...",
+      "after": "Peki! Short mu, Tall mı, Grande mi, Venti mi, yoksa... Tüh, yine unuttum...",
+      "reason": "Short/Tall/Grande/Venti kahve boylarının menü adlarıdır; kısa/uzun çevirisi marka sıralamasını bozuyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/default/default/1",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 123,
+      "unit_id": "874ac58b2b596447f7d2b90a128d1ece049d4244d181fee3d24b0c4b316aa7ae",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/start/felin/default"
+      ],
+      "en": "Our coffee's brewed from the best beans, selected by the best ca--. Um, forget it.",
+      "before": "Kahvemiz en iyi çekirdeklerden demlenir, en iyi ca-- seçer. Şey, boş ver.",
+      "after": "Kahvemiz en iyi çekirdeklerden demlenir, onları en iyi ke-- seçer. Şey, boş ver.",
+      "reason": "Yarım ca-- Felin/kedi ve komşu kopi luwak şakasından ke-- olarak yorumlandı; İngilizce ca-- bırakılmadı, kesilen kelime tamamlanmadı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/felin/default/0",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 124,
+      "unit_id": "6c33958cf223d1afb0f451a79e17a1d54af0da75c64ba42bea93c936fa114c0f",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/start/felin/default"
+      ],
+      "en": " Will that be a short, a tall, a grande, a venti, or a... Oh no, I've lost track again...",
+      "before": "Kısa mı, uzun mu, grande mi, venti mi, yoksa... Eyvah, yine unuttum...",
+      "after": "Short mu, Tall mı, Grande mi, Venti mi, yoksa... Eyvah, yine unuttum...",
+      "reason": "Kahve boyları aynı menü adlarıyla korunur; genel kısa/uzun sıfatı değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/felin/default/1",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 128,
+      "unit_id": "ac613fa2f66dbf5f8b3a59f0138fd26ae00523705b2f80bd23f7ed37fc7a8933",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran's coffee comes in five sssizes! ... Though Floran forgets what.",
+      "before": "Floran kahvesi beş boyda! ... Ama Floran hangileri olduğunu unuttu.",
+      "after": "Floran kahvesssi beş boyda! ... Ama Floran hangileri olduğunu unuttu.",
+      "reason": "Sizes tıslaması Türkçe mevcut s sesine taşındı; kaynak beş sayısı korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/1",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 131,
+      "unit_id": "2352539933b9db421adc522ecc6acbae8ab0a1fff65c42e773a0d79d90df0916",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/start/glitch/default"
+      ],
+      "en": "Nervous. Will that be a short, a tall, a grande, a venti, or a... Frustrated. Oh no, I've lost track again...",
+      "before": "Gergin. Küçük mü, uzun mu, grande mi, venti mi, yoksa... Bıkkın. Hayır, yine karıştırdım...",
+      "after": "Gergin. Short mu, Tall mı, Grande mi, Venti mi, yoksa... Bıkkın. Eyvah, yine karıştırdım...",
+      "reason": "Kahve boyu adları kaynak sırayla korundu. Oh no ünlemi Hayır reddi değil Eyvah tepkisidir. Eski aynı EN katalog alanı da yeniden onaylanır.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/glitch/default/1",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 140,
+      "unit_id": "f48fecf0268bac921f5c83b3229717f8fdf309ae616d47d97d42b1b7a6ee956c",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/welcome/felin/default"
+      ],
+      "en": "We've coffees so rich in flavour you'd think they were brewed with ... um, never mind!",
+      "before": "Tadı öyle zengin ki ... şey, boş verin!",
+      "after": "Öyle zengin aromalı kahvelerimiz var ki ... ile demlendiklerini sanırsınız. Şey, boş verin!",
+      "reason": "Kaynakta yarım bırakılan neyle demlendiği göndermesi tamamen silinmişti; eksik malzeme tamamlanmadan korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/felin/default/1",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 144,
+      "unit_id": "6b3a1a00e48c87ebaad33a65ada0126312ecef6a6a9a2b6a08d105d75549b04e",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/welcome/floran/default"
+      ],
+      "en": "Floran makes great foodssstuff!!",
+      "before": "Floran çok güzel yiyeceksşeyler yapar!!",
+      "after": "Floran nefisss yiyecekler yapar!!",
+      "reason": "Yiyeceksşeyler diye bozuk birleşim yerine foodstuff anlamı doğal verilir; mevcut s sesi uzatılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/floran/default/0",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 145,
+      "unit_id": "1b5bfa12c24980085a1a4bce49d63388435b8dc73fbb938d70d64234c853d92e",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/welcome/floran/default"
+      ],
+      "en": "Come try Floran's sssweets!",
+      "before": "Floran’ın tatlılarını dene!",
+      "after": "Floran’ın tatlılarını denesssene!",
+      "reason": "Sweets tıslaması Türkçe mevcut s sesi üzerinden taşındı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/floran/default/1",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 146,
+      "unit_id": "59003c604c82d5f9d612dee0f7fbde2ee6fd318dca6ed808c27ade40078db987",
+      "context": [
+        "npcs",
+        "npcs/barista.npctype",
+        "scriptConfig/dialog/merchant/welcome/floran/default"
+      ],
+      "en": "Line is thisss way. No stabbing, promise!",
+      "before": "Sıra bu tarafta. Bıçaklama yok, söz!",
+      "after": "Sssıra bu tarafta. Bıçaklama yok, söz!",
+      "reason": "This sibilant character hiss korunur; sıra ve bıçaklama yasağı aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barista.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/floran/default/2",
+          "origin": "npcs/barista.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 157,
+      "unit_id": "61eeee970c42b8af8176dd3a76ae637ee80632e694fdefadca6b37528bfadfa1",
+      "context": [
+        "npcs",
+        "npcs/barkeep.npctype",
+        "scriptConfig/dialog/merchant/start/default/default"
+      ],
+      "en": "Thirsty, friend? Come have a seat. Take a load off and relax.",
+      "before": "Susadın mı dostum? Otur şöyle. Yükünü at, rahatla.",
+      "after": "Susadın mı dostum? Otur şöyle. Bir soluklan, rahatla.",
+      "reason": "Take a load off oturup dinlenme deyimidir; yükünü at fiziksel eşyaları bırakma anlamı veriyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/barkeep.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/default/default/0",
+          "origin": "npcs/barkeep.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 164,
+      "unit_id": "e5539324bd1b2a161abb31bd7c1dcc7bf738d963c7bed246407fac5ca9af5337",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/encourage/default"
+      ],
+      "en": "Get 'em!",
+      "before": "Gebertin şunları!",
+      "after": "Yakalayın şunları!",
+      "reason": "Get ’em yakalama/saldırı teşvikidir; Gebertin kaynakta olmayan öldürme şiddeti ekliyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/encourage/default/0",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 166,
+      "unit_id": "2de2eadc387cbeef9c4b4c988ad710b5fdf807d62d53d432531b820df9c24db7",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/encourage/default"
+      ],
+      "en": "Stick 'em once for me!",
+      "before": "Benim için bir kere vur şuna!",
+      "after": "Benim için bir kez bıçaklayın şunları!",
+      "reason": "Stick ’em bir kez saplama/bıçaklama, çoğul hedef; tekil şuna vur ile kaybolan anlam geri getirildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/encourage/default/2",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 168,
+      "unit_id": "5cd2480a3147fe445e1118a53cecfd71410abe501a41e1ecf1e705246baceb18",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/encourage/floran"
+      ],
+      "en": "Ssstabb the intruders!",
+      "before": "Davetsizleri bıçaklayısssın!",
+      "after": "Davetsssizleri bıçaklayın!",
+      "reason": "Bıçaklayısssın yapay eki kaldırıldı; davetsiz kelimesinin mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/encourage/floran/0",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 170,
+      "unit_id": "f2237ae51f1c570b2c65126c6446847f9008268601cd6ffceb69e125621ce7d4",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/encourage/floran"
+      ],
+      "en": "Ssslice them!",
+      "before": "Onları dilimle!",
+      "after": "Kesss onları!",
+      "reason": "Slice kesme eylemi ve kaynak tıslaması birlikte korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/encourage/floran/2",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 179,
+      "unit_id": "dbc1409f4f5de0ab41dd4fe37f80e4c38a2f9257b54a2e0fb004dd531f43a701",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/helpme/floran"
+      ],
+      "en": "Ssstabby time for me!",
+      "before": "Floran bıçaklama vakti!",
+      "after": "Bıçaklanma sssırası bende!",
+      "reason": "Helpme/helpthem kaçış repliğinde for me konuşana yönelen bıçaklanma tehlikesidir; Floran bıçaklama vakti saldırıyı yapan gibi gösteriyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/helpme/floran/0",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 190,
+      "unit_id": "8b9a41df8ae300db65e9b663d527ee82132d52351f6ffddc48eba2b0a68743b6",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/helpthem/floran"
+      ],
+      "en": "Ssstabby time for me!",
+      "before": "Floran bıçaklama vakti!",
+      "after": "Bıçaklanma sssırası bende!",
+      "reason": "Helpme/helpthem kaçış repliğinde for me konuşana yönelen bıçaklanma tehlikesidir; Floran bıçaklama vakti saldırıyı yapan gibi gösteriyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/helpthem/floran/0",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 199,
+      "unit_id": "1be951c5546f53965cc316386c17bf208f82617827163b4645c8cd7e213ae8a1",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/helpthem/glitch"
+      ],
+      "en": "Righteous. I will write an electronic letter in protest!",
+      "before": "Haklı öfkeli. Protesto için elektronik mektup yazacağım!",
+      "after": "Haklı bir öfkeyle. Protesto için elektronik mektup yazacağım!",
+      "reason": "Haklı öfkeli bozuk Glitch durum öneki Türkçe anlamlı bir ifadeyle karşılandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/helpthem/glitch/5",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 203,
+      "unit_id": "421124178b55da1df3d2c1571238a91983290ce6d076d14b043ff113b7fb2d4c",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/safe/floran"
+      ],
+      "en": "Floran sssafe now.",
+      "before": "Floran artık güvenli.",
+      "after": "Floran artık güvende, sss.",
+      "reason": "Güvenli kişi yerine güvende kişi durumu verilir; kaynak safe tıslaması bir ses olarak korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/safe/floran/0",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 204,
+      "unit_id": "6fe5e797eb6e5b6edba8fdaf530b0f6d95ea8371699cfb44983c73ce2a91801d",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/safe/floran"
+      ],
+      "en": "Floran not get ssstabbed after all.",
+      "before": "Floran bıçaklanmaktan kurtulmak.",
+      "after": "Floran yine de sssaplanmaktan kurtulmak.",
+      "reason": "Kaynak ssstabbed tıslaması saplanmak üzerinden korunur; yalın Floran çekimi sürer.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/safe/floran/1",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 205,
+      "unit_id": "73d0ac959a802e00038d03756cf19d7d783c432fccaa9b85c20a1aec0414cbba",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/safe/floran"
+      ],
+      "en": "Them lucky Floran not have weapon.",
+      "before": "Silahı olmayan Floran çok şanslı.",
+      "after": "Floran’ın silahı yok diye onlar şanslı.",
+      "reason": "Them lucky şanslı olan saldırganlardır; Floran’ın şanslı olduğu anlamı ters çevrilmişti.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/safe/floran/2",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 209,
+      "unit_id": "8421f16c165bbabee87240519d244e5a4ef6a49100ed45bbefb5cdf8e9481e18",
+      "context": [
+        "npcs",
+        "npcs/beekeeper.npctype",
+        "scriptConfig/flee/dialog/safe/glitch"
+      ],
+      "en": "Wishful. If only I could afford a keep.",
+      "before": "Dilek diler. Keşke bir malikâne alacak param olsaydı.",
+      "after": "Dilek diler. Keşke bir iç kale alacak param olsaydı.",
+      "reason": "A keep kale/iç kale yapısıdır; malikâne farklı yapı. Kaçış sonrası korunma bağlamı bunu destekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/beekeeper.npctype",
+          "pointer": "/scriptConfig/flee/dialog/safe/glitch/2",
+          "origin": "npcs/beekeeper.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 213,
+      "unit_id": "c2fa95337afcf5fd9e2d14f0fc07880bd26b4695f7c41e4efe194c58f962652a",
+      "context": [
+        "npcs",
+        "npcs/catchefmerchant.npctype",
+        "scriptConfig/dialog/merchant/end/apex/default"
+      ],
+      "en": "Don't be a stranger.",
+      "before": "Yabancılık çekme.",
+      "after": "Bizi unutma, yine uğra.",
+      "reason": "Don’t be a stranger görüşmeyi kesmeme deyimidir; yabancılık çekme literal çevirisi giderildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/catchefmerchant.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/apex/default/1",
+          "origin": "npcs/catchefmerchant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 219,
+      "unit_id": "6dc911ce7831c1ab302842bd2f96aaea55aad9f741f5664db4edcbf13bc25c43",
+      "context": [
+        "npcs",
+        "npcs/catchefmerchant.npctype",
+        "scriptConfig/dialog/merchant/end/floran/default"
+      ],
+      "en": "Come back sssoon for more food!",
+      "before": "Daha çok yemek için yine uğrayın!",
+      "after": "Daha çok yemek için en kısssa zamanda yine gel!",
+      "reason": "Come back soon zaman anlamı ve Floran tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/catchefmerchant.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/floran/default/0",
+          "origin": "npcs/catchefmerchant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 246,
+      "unit_id": "ae493d5d91493eb06513f487bc682a1885ce0f5716ffd30d36f8af53c673529b",
+      "context": [
+        "npcs",
+        "npcs/catchefmerchant.npctype",
+        "scriptConfig/dialog/merchant/start/floran/default"
+      ],
+      "en": "Floran's food is the besst! Buy it all!",
+      "before": "Floran’ın yemeği en iyisşş! Hepsini al!",
+      "after": "Floran’ın yemeği en iyisssi! Hepsini al!",
+      "reason": "En iyisşş bozuk bitiş yerine mevcut s uzatılır; en iyi anlamı korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/catchefmerchant.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/floran/default/1",
+          "origin": "npcs/catchefmerchant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 267,
+      "unit_id": "7287c5cf370372c94ec26034ef3f774b7bff542a2ce728b7f92719c6e0e2760c",
+      "context": [
+        "npcs",
+        "npcs/catchefmerchant.npctype",
+        "scriptConfig/dialog/merchant/start/novakid/default"
+      ],
+      "en": "My meals are ace-high!",
+      "before": "Yemeklerim papaz kaçtı!",
+      "after": "Yemeklerim birinci sınıftır!",
+      "reason": "Ace-high Amerikan argo övgüdür; papaz kaçtı adlı farklı kart oyunu eklenmişti. Poker çağrışımının Türkçede aktarımı LQA bekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/catchefmerchant.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/novakid/default/2",
+          "origin": "npcs/catchefmerchant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 278,
+      "unit_id": "792f9c60c67999bee1bba09e23f5ff44e23473d64182de5e0ee1a6b139bd4db1",
+      "context": [
+        "npcs",
+        "npcs/crystalminer.npctype",
+        "scriptConfig/dialog/attack/glitch/default"
+      ],
+      "en": "Grizzled. You'll not make a mockery of me!",
+      "before": "Yıpranmış. Benimle alay etmenize izin vermem!",
+      "after": "Saçları ağarmış. Benimle alay etmenize izin vermem!",
+      "reason": "Grizzled yaşla ağarmış saç/görünüştür; yıpranmış bu yaş ayrımını silmişti.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crystalminer.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/2",
+          "origin": "npcs/crystalminer.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 289,
+      "unit_id": "28ff8973d6559b3d46258571d03ede19003bb05b19ae6c73817cd19f452559fb",
+      "context": [
+        "npcs",
+        "npcs/dinerpatron.npctype",
+        "scriptConfig/dialog/follower/returnFromCombat/default/default"
+      ],
+      "en": "Phew, you handle yourself quite well.",
+      "before": "Vay be, kendine gayet iyi bakıyorsun.",
+      "after": "Vay be, dövüşte gayet iyisin.",
+      "reason": "ReturnFromCombat olayında handle yourself çatışmada beceridir; kendine bakmak kişisel bakım değil.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/dinerpatron.npctype",
+          "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/1",
+          "origin": "npcs/dinerpatron.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 298,
+      "unit_id": "05011223e78130b7648013d989ffb5df78441dc99bb5c5cf366922f49ff578af",
+      "context": [
+        "npcs",
+        "npcs/foolcook.npctype",
+        "scriptConfig/dialog/merchant/welcome/default/default"
+      ],
+      "en": "Tired. Unlimited refills today for just an extra 25 pixels.",
+      "before": "Yorgun. Bugün sadece fazladan 25 Piksel karşılığında sınırsız içecek!",
+      "after": "Yorgun. Bugün sadece fazladan 25 Piksel karşılığında sınırsız içecek dolumu!",
+      "reason": "Unlimited refills sınırsız yeniden doldurma hizmetidir; bağımsız sınırsız içecek vaadine indirgenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/foolcook.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/default/default/0",
+          "origin": "npcs/foolcook.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 303,
+      "unit_id": "71c9dc6717adbef1ec25f7afdf3580eaa79a0a9b91e68704611657d738614396",
+      "context": [
+        "npcs",
+        "npcs/foolcook.npctype",
+        "scriptConfig/dialog/merchant/welcome/default/glitch/default"
+      ],
+      "en": "Tired. Unlimited refills today for just an extra 25 Pixels.",
+      "before": "Yorgun. Bugün sadece fazladan 25 Piksel karşılığında sınırsız içecek!",
+      "after": "Yorgun. Bugün sadece fazladan 25 Piksel karşılığında sınırsız içecek dolumu!",
+      "reason": "Unlimited refills sınırsız yeniden doldurma hizmetidir; bağımsız sınırsız içecek vaadine indirgenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/foolcook.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/default/glitch/default/0",
+          "origin": "npcs/foolcook.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 306,
+      "unit_id": "5a5eb79e402a4a41752353144649933ed48f14df96d90a78452963d817881005",
+      "context": [
+        "npcs",
+        "npcs/foolcook.npctype",
+        "scriptConfig/dialog/merchant/welcome/default/tout/default/default"
+      ],
+      "en": "Unenthused. Unlimited refills today, for just an extra 25 Pixels!",
+      "before": "Hevesi kaçmış. Fazladan sadece 25 Piksel ödeyin, bugün sınırsız içecek!",
+      "after": "Hevesi kaçmış. Fazladan sadece 25 Piksel ödeyin, bugün sınırsız içecek dolumu!",
+      "reason": "Refill yeniden dolum hizmeti açıklandı; 25 sayısı aynı kaldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/foolcook.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/default/tout/default/default/0",
+          "origin": "npcs/foolcook.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 309,
+      "unit_id": "072c7e9a98b3866c12e53448aacf2fb357a1e7e7570c09ee5454e9dac9abc747",
+      "context": [
+        "npcs",
+        "npcs/foolcook.npctype",
+        "scriptConfig/dialog/merchant/welcome/default/tout/glitch/default"
+      ],
+      "en": "Unenthused. Unlimited refills today, for just an extra 25 Pixels!",
+      "before": "Hevesi kaçmış. Fazladan sadece 25 Piksel ödeyin, bugün sınırsız içecek!",
+      "after": "Hevesi kaçmış. Fazladan sadece 25 Piksel ödeyin, bugün sınırsız içecek dolumu!",
+      "reason": "Refill yeniden dolum hizmeti açıklandı; 25 sayısı aynı kaldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/foolcook.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/default/tout/glitch/default/0",
+          "origin": "npcs/foolcook.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 320,
+      "unit_id": "90a5af44ee2ff47861109f286943bfe9b81517068c12d16ff4fceb0744b2c716",
+      "context": [
+        "npcs",
+        "npcs/foolcook.npctype",
+        "scriptConfig/dialog/merchant/welcome/tenant/arrivedHome/rent/default/default"
+      ],
+      "en": "Insincere. Here's something for your troubles, I'm sure you'd like it!",
+      "before": "Yapmacık. Dertlerin için bunu al, eminim hoşuna gider!",
+      "after": "Yapmacık. Zahmetin için bunu al, eminim hoşuna gider!",
+      "reason": "For your troubles emek/zahmet karşılığıdır; kişinin dertleri için ödeme anlamı değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/foolcook.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/tenant/arrivedHome/rent/default/default/2",
+          "origin": "npcs/foolcook.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 323,
+      "unit_id": "f30c1af18d73608c0582940bd707979afda0684d03f3a43ac7954c1bc014d5d5",
+      "context": [
+        "npcs",
+        "npcs/foolcook.npctype",
+        "scriptConfig/dialog/merchant/welcome/tenant/arrivedHome/rent/glitch/default"
+      ],
+      "en": "Insincere. Here's something for your troubles, I'm sure you'd like it!",
+      "before": "Yapmacık. Dertlerin için bunu al, eminim hoşuna gider!",
+      "after": "Yapmacık. Zahmetin için bunu al, eminim hoşuna gider!",
+      "reason": "For your troubles emek/zahmet karşılığıdır; kişinin dertleri için ödeme anlamı değildir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/foolcook.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/tenant/arrivedHome/rent/glitch/default/2",
+          "origin": "npcs/foolcook.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 326,
+      "unit_id": "6f53319d99b5af23afb6bf56faba1efef5e46b7e1d2006badc2eb5e4c4d89c0b",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/converse/default/default"
+      ],
+      "en": "Do hurry along, won't you? You smell terrible.",
+      "before": "Çabuk olsanıza? Berbat kokuyorsunuz.",
+      "after": "Yolunuza gitseniz artık? Berbat kokuyorsunuz.",
+      "reason": "Hurry along ayrılıp yoluna devam etme isteğidir; yalnız işi hızlı yapma talebi değildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/0",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 329,
+      "unit_id": "0bb773ea10495dda6c002733766c54c8453e34312b0aaeb0a1cfe187c5c1ba9c",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/converse/fumantizi/default"
+      ],
+      "en": "Do hurry along, won't you? You smell terrible.",
+      "before": "Çabuk olsanıza? Berbat kokuyorsunuz.",
+      "after": "Yolunuza gitseniz artık? Berbat kokuyorsunuz.",
+      "reason": "Hurry along ayrılıp yoluna devam etme isteğidir; yalnız işi hızlı yapma talebi değildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/converse/fumantizi/default/0",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 332,
+      "unit_id": "a3c0d1cb2a6d4b4974a438abebd54863162136c15a9d3c4e9230cccb9f72a7d1",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/greeting/default/default"
+      ],
+      "en": "Do hurry along, won't you? You smell terrible.",
+      "before": "Çabuk olsanıza? Berbat kokuyorsunuz.",
+      "after": "Yolunuza gitseniz artık? Berbat kokuyorsunuz.",
+      "reason": "Hurry along ayrılıp yoluna devam etme isteğidir; yalnız işi hızlı yapma talebi değildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/default/default/0",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 335,
+      "unit_id": "626fff2e75d4698300790b553724c6efe86ecbad3fd836436f6e6631ace73719",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/greeting/fumantizi/default"
+      ],
+      "en": "Do hurry along, won't you? You smell terrible.",
+      "before": "Çabuk olsanıza? Berbat kokuyorsunuz.",
+      "after": "Yolunuza gitseniz artık? Berbat kokuyorsunuz.",
+      "reason": "Hurry along ayrılıp yoluna devam etme isteğidir; yalnız işi hızlı yapma talebi değildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/fumantizi/default/0",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 328,
+      "unit_id": "1ccf4ec9d016227e460bf2c928f53fce77a5b226cfa2d04c3454db82cdafd765",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/converse/default/default"
+      ],
+      "en": "See yourself out, if you'd be so kind? You're tracking mud all over my floors.",
+      "before": "Lütfen çıkış yolunu bulun, olur mu? Her yere çamur taşıyorsunuz.",
+      "after": "Çıkıp gider misiniz lütfen? Yerlerime çamur bulaştırıyorsunuz.",
+      "reason": "See yourself out çıkıp gitme rica/kovmasıdır; çıkış yolunu bul şeklinde yön tarifi değildir. Floors yerler olarak korundu.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/2",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 331,
+      "unit_id": "b8205252b061458e76492ff385ef9b617a30369391ebc01fdb08f5552934b71f",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/converse/fumantizi/default"
+      ],
+      "en": "See yourself out, if you'd be so kind? You're tracking mud all over my floors.",
+      "before": "Lütfen çıkış yolunu bulun, olur mu? Her yere çamur taşıyorsunuz.",
+      "after": "Çıkıp gider misiniz lütfen? Yerlerime çamur bulaştırıyorsunuz.",
+      "reason": "See yourself out çıkıp gitme rica/kovmasıdır; çıkış yolunu bul şeklinde yön tarifi değildir. Floors yerler olarak korundu.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/converse/fumantizi/default/2",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 334,
+      "unit_id": "3c54162cae42b78c4366ec1de75beec7abfcbb569ee346fd34a897575ca801b4",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/greeting/default/default"
+      ],
+      "en": "See yourself out, if you'd be so kind? You're tracking mud all over my floors.",
+      "before": "Lütfen çıkış yolunu bulun, olur mu? Her yere çamur taşıyorsunuz.",
+      "after": "Çıkıp gider misiniz lütfen? Yerlerime çamur bulaştırıyorsunuz.",
+      "reason": "See yourself out çıkıp gitme rica/kovmasıdır; çıkış yolunu bul şeklinde yön tarifi değildir. Floors yerler olarak korundu.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/default/default/2",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 337,
+      "unit_id": "e1581b648edf6104aab35bf21c8772731c6130d2f3d5dad9e3b028d8d6bd615a",
+      "context": [
+        "npcs",
+        "npcs/fumantizinoble.npctype",
+        "scriptConfig/dialog/greeting/fumantizi/default"
+      ],
+      "en": "See yourself out, if you'd be so kind? You're tracking mud all over my floors.",
+      "before": "Lütfen çıkış yolunu bulun, olur mu? Her yere çamur taşıyorsunuz.",
+      "after": "Çıkıp gider misiniz lütfen? Yerlerime çamur bulaştırıyorsunuz.",
+      "reason": "See yourself out çıkıp gitme rica/kovmasıdır; çıkış yolunu bul şeklinde yön tarifi değildir. Floors yerler olarak korundu.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantizinoble.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/fumantizi/default/2",
+          "origin": "npcs/fumantizinoble.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 339,
+      "unit_id": "816bb568dbcf3fa138fbfff9db9a19a26e42d49bd01537092148293bf85e3f0d",
+      "context": [
+        "npcs",
+        "npcs/fumantiziservant.npctype",
+        "scriptConfig/dialog/converse/default/default"
+      ],
+      "en": "Wotcher, chum. I oughta get off just afore moonspeak if yous wants to chinwag then.",
+      "before": "Selam dostum. Laflamak istersen ay konuşmasına kalmadan işten sıvışmam gerek.",
+      "after": "Selam dostum. Laflamak istersen, ay tepeye çıkmadan az önce işim biter.",
+      "reason": "Get off işin bitmesi, sıvışma değil. Moonspeak üç satırda moonpeak komşu varyantından zaman ifadesi olarak yorumlandı; ay konuşması eklenmez. Kesin göksel takvim anlamı REVIEW/LQA bekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantiziservant.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/1",
+          "origin": "npcs/fumantiziservant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 343,
+      "unit_id": "3b30877310bd7e12a29fa9953aa0ec6b04060406103e3d5ff16b95fbd59e40a4",
+      "context": [
+        "npcs",
+        "npcs/fumantiziservant.npctype",
+        "scriptConfig/dialog/converse/fumantizi/default"
+      ],
+      "en": "Wotcher, chum. I oughta get off just afore moonpeak if you wants to chinwag then.",
+      "before": "Selam dostum. Laflamak istersen ay doruğuna varmadan sıvışmam gerek.",
+      "after": "Selam dostum. Laflamak istersen, ay tepeye çıkmadan az önce işim biter.",
+      "reason": "Get off işin bitmesi, sıvışma değil. Moonspeak üç satırda moonpeak komşu varyantından zaman ifadesi olarak yorumlandı; ay konuşması eklenmez. Kesin göksel takvim anlamı REVIEW/LQA bekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantiziservant.npctype",
+          "pointer": "/scriptConfig/dialog/converse/fumantizi/default/1",
+          "origin": "npcs/fumantiziservant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 347,
+      "unit_id": "a5ce257e3729fdbf409329f546cc0f9b1026c7e52a62078ba33e37d53dea0061",
+      "context": [
+        "npcs",
+        "npcs/fumantiziservant.npctype",
+        "scriptConfig/dialog/greeting/default/default"
+      ],
+      "en": "Wotcher, chum. I oughta get off just afore moonspeak if yous wants to chinwag then.",
+      "before": "Selam dostum. Laflamak istersen ay konuşmasına kalmadan işten sıvışmam gerek.",
+      "after": "Selam dostum. Laflamak istersen, ay tepeye çıkmadan az önce işim biter.",
+      "reason": "Get off işin bitmesi, sıvışma değil. Moonspeak üç satırda moonpeak komşu varyantından zaman ifadesi olarak yorumlandı; ay konuşması eklenmez. Kesin göksel takvim anlamı REVIEW/LQA bekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantiziservant.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/default/default/1",
+          "origin": "npcs/fumantiziservant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 351,
+      "unit_id": "f3fc9624c24bd31f6f740fa71765ecd49d932866df9ae5e4ae7e1efa0d096ce9",
+      "context": [
+        "npcs",
+        "npcs/fumantiziservant.npctype",
+        "scriptConfig/dialog/greeting/fumantizi/default"
+      ],
+      "en": "Wotcher, chum. I oughta get off just afore moonspeak if yous wants to chinwag then.",
+      "before": "Selam dostum. Laflamak istersen ay konuşmasına kalmadan işten sıvışmam gerek.",
+      "after": "Selam dostum. Laflamak istersen, ay tepeye çıkmadan az önce işim biter.",
+      "reason": "Get off işin bitmesi, sıvışma değil. Moonspeak üç satırda moonpeak komşu varyantından zaman ifadesi olarak yorumlandı; ay konuşması eklenmez. Kesin göksel takvim anlamı REVIEW/LQA bekler.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fumantiziservant.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/fumantizi/default/1",
+          "origin": "npcs/fumantiziservant.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 366,
+      "unit_id": "6ab4b3785f568bd22d7ead44690ac180a97e3d1659f5c4c0f0b58a34348590d9",
+      "context": [
+        "npcs",
+        "npcs/fuspaceguard.npctype",
+        "scriptConfig/dialog/converse/fupeglaci/default"
+      ],
+      "en": "Keep your weapons holstered, please. I've seen enough violence lately.",
+      "before": "Lütfen silahlarınızı kınında tutun. Son zamanlarda yeterince şiddet gördüm.",
+      "after": "Lütfen silahlarınızı kılıfında tutun. Son zamanlarda yeterince şiddet gördüm.",
+      "reason": "Holstered ateşli silah kılıfıdır; kın yalnız bıçak/kılıç çağrışımına daraltıyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fuspaceguard.npctype",
+          "pointer": "/scriptConfig/dialog/converse/fupeglaci/default/0",
+          "origin": "npcs/fuspaceguard.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 380,
+      "unit_id": "027aec8497ad0cb8e13bff8af0e56d6dce1e922b5961c0b822bf8e2c9c306431",
+      "context": [
+        "npcs",
+        "npcs/fuspaceguard.npctype",
+        "scriptConfig/dialog/greeting/fupeglaci/default"
+      ],
+      "en": "Keep your weapons holstered, please. I've seen enough violence lately.",
+      "before": "Lütfen silahlarınızı kınında tutun. Son zamanlarda yeterince şiddet gördüm.",
+      "after": "Lütfen silahlarınızı kılıfında tutun. Son zamanlarda yeterince şiddet gördüm.",
+      "reason": "Holstered ateşli silah kılıfıdır; kın yalnız bıçak/kılıç çağrışımına daraltıyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fuspaceguard.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/fupeglaci/default/0",
+          "origin": "npcs/fuspaceguard.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 372,
+      "unit_id": "6fbd69498ee80d034dcf2dfc12c6ece88cbfd5fae4befc94234ab57c0c97a720",
+      "context": [
+        "npcs",
+        "npcs/fuspaceguard.npctype",
+        "scriptConfig/dialog/converse/human/default"
+      ],
+      "en": "Hey, are you a Protector? I thought you all went down with the ship. Guess you were too busy that day",
+      "before": "Hey, sen Protector mısın? Hepiniz gemiyle birlikte düştünüz sanıyordum. Demek o gün fazla meşguldün.",
+      "after": "Hey, sen Protector mısın? Hepiniz gemiyle birlikte yok oldunuz sanıyordum. Demek o gün fazla meşguldün.",
+      "reason": "Go down with the ship gemiyle birlikte yok olma/ölme anlatımıdır; yalnız düşme ile hayatta kalma ihtimali ekleniyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fuspaceguard.npctype",
+          "pointer": "/scriptConfig/dialog/converse/human/default/2",
+          "origin": "npcs/fuspaceguard.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 386,
+      "unit_id": "0c0d728a439facb3ddab0149569392f549ea49eebc1438b8e8718085cd8e56e6",
+      "context": [
+        "npcs",
+        "npcs/fuspaceguard.npctype",
+        "scriptConfig/dialog/greeting/human/default"
+      ],
+      "en": "Hey, are you a Protector? I thought you all went down with the ship. Guess you were too busy that day",
+      "before": "Hey, sen Protector mısın? Hepiniz gemiyle birlikte düştünüz sanıyordum. Demek o gün fazla meşguldün.",
+      "after": "Hey, sen Protector mısın? Hepiniz gemiyle birlikte yok oldunuz sanıyordum. Demek o gün fazla meşguldün.",
+      "reason": "Go down with the ship gemiyle birlikte yok olma/ölme anlatımıdır; yalnız düşme ile hayatta kalma ihtimali ekleniyordu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fuspaceguard.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/human/default/2",
+          "origin": "npcs/fuspaceguard.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 373,
+      "unit_id": "5f4e26f48216a812b0636ddc17ecc89e4c0eba7e787fadc64c4b277fada3b719",
+      "context": [
+        "npcs",
+        "npcs/fuspaceguard.npctype",
+        "scriptConfig/dialog/converse/novakid/default"
+      ],
+      "en": "Howdy partner. Take care you don't disturb my flock here or we'll have a little fallin' out, if you catch my drift.",
+      "before": "Selam ortağım. Sürümü rahatsız etme; yoksa ufak bir ayrılık yaşarız, demek istediğimi anladın mı?",
+      "after": "Selam ortağım. Buradaki sürümü rahatsız etme; yoksa aramız bozulur, demek istediğimi anladın mı?",
+      "reason": "Fallin’ out anlaşmazlık/bozuşmadır; ayrılık değildir. Muhafızın örtülü tehdit tonu korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fuspaceguard.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/0",
+          "origin": "npcs/fuspaceguard.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 387,
+      "unit_id": "424079ec1dd77b37571770021d4bf43a4fad4c4bbcca681eb7aba746fcdd1da2",
+      "context": [
+        "npcs",
+        "npcs/fuspaceguard.npctype",
+        "scriptConfig/dialog/greeting/novakid/default"
+      ],
+      "en": "Howdy partner. Take care you don't disturb my flock here or we'll have a little fallin' out, if you catch my drift.",
+      "before": "Selam ortağım. Sürümü rahatsız etme; yoksa ufak bir ayrılık yaşarız, demek istediğimi anladın mı?",
+      "after": "Selam ortağım. Buradaki sürümü rahatsız etme; yoksa aramız bozulur, demek istediğimi anladın mı?",
+      "reason": "Fallin’ out anlaşmazlık/bozuşmadır; ayrılık değildir. Muhafızın örtülü tehdit tonu korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/fuspaceguard.npctype",
+          "pointer": "/scriptConfig/dialog/greeting/novakid/default/0",
+          "origin": "npcs/fuspaceguard.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 397,
+      "unit_id": "fd63dea9fbb8bb3b11e35f39589bdc5297cc029c55e7185f93cde60e9f1c169c",
+      "context": [
+        "npcs",
+        "npcs/itamae.npctype",
+        "scriptConfig/dialog/merchant/start/default/default"
+      ],
+      "en": "All of our ingredients are locally grown and raised.",
+      "before": "Tüm malzemelerimizi yerel ürünlerden yetiştirip elde ediyoruz.",
+      "after": "Tüm malzemelerimiz bu yörede yetiştirilir.",
+      "reason": "Malzemeleri yerel ürünlerden yetiştirmek anlamsız üretim zinciri ekliyordu; locally grown and raised doğrudan yörede yetiştirmedir.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/itamae.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/default/default/1",
+          "origin": "npcs/itamae.npctype"
+        }
+      ]
+    },
+    {
+      "unit_id": "maintenance:objects/scienceoutpost/starbucks/fustarbucks.object/chatOptions/1",
+      "context": [
+        "maintenance",
+        "objects/scienceoutpost/starbucks/fustarbucks.object",
+        "/chatOptions/1"
+      ],
+      "en": "Nervous. Will that be a short, a tall, a grande, a venti, or a... Frustrated. Oh no, I've lost track again...",
+      "before": "Gergin. Küçük mü, uzun mu, grande mi, venti mi, yoksa... Bıkkın. Hayır, yine karıştırdım...",
+      "after": "Gergin. Short mu, Tall mı, Grande mi, Venti mi, yoksa... Bıkkın. Eyvah, yine karıştırdım...",
+      "reason": "Yeni barista menüsüyle aynı eski Bilim Karakolu EN kaydı: boy adları ve Oh no ünlemi de düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+          "pointer": "/chatOptions/1"
+        }
+      ],
+      "maintenance": true
+    },
+    {
+      "unit_id": "maintenance:dialog/fuslimeperson.config/converse/default/hylotl/9",
+      "context": [
+        "maintenance",
+        "dialog/fuslimeperson.config",
+        "/converse/default/hylotl/9"
+      ],
+      "en": "The Hylotl strive for peace, right? Same as humans. No wonder you're a Protector.",
+      "before": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Koruyucu olman şaşırtıcı değil.",
+      "after": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Protector olman şaşırtıcı değil.",
+      "reason": "Protectorate üyesi Protector unvanı mevcut brewmaster ve yeni muhafız replikleriyle birleştirildi; zırh adlarındaki genel Koruyucu değiştirilmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/hylotl/9"
+        }
+      ],
+      "maintenance": true
+    },
+    {
+      "unit_id": "maintenance:dialog/slimenpchuman.config/converse/default/hylotl/9",
+      "context": [
+        "maintenance",
+        "dialog/slimenpchuman.config",
+        "/converse/default/hylotl/9"
+      ],
+      "en": "The Hylotl strive for peace, right? Same as humans. No wonder you're a Protector.",
+      "before": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Koruyucu olman şaşırtıcı değil.",
+      "after": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Protector olman şaşırtıcı değil.",
+      "reason": "Protectorate üyesi Protector unvanı mevcut brewmaster ve yeni muhafız replikleriyle birleştirildi; zırh adlarındaki genel Koruyucu değiştirilmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/hylotl/9"
+        }
+      ],
+      "maintenance": true
+    }
+  ],
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 400,
+    "context_units": 400,
+    "qa": {
+      "catalog_units_checked": 28870,
+      "raw_units_checked": 115,
+      "locked_terms": 666
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "npcs/apexslave.npctype",
+        "note": "{\"type\": \"apexslave\", \"baseType\": \"villager\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"converse\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/apexslaver.npctype",
+        "note": "{\"type\": \"apexslaver\", \"baseType\": \"villageguard\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"hail\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/avianchef.npctype",
+        "note": "{\"type\": \"avianchef\", \"baseType\": \"merchant\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"merchant\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/avianfirebringer.npctype",
+        "note": "{\"type\": \"avianfirebringer\", \"baseType\": \"outpostcivilian\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"converse\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/banditrocket.npctype",
+        "note": "{\"type\": \"banditrocket\", \"baseType\": \"hostile\", \"scripts\": null, \"behavior\": \"hostileguard\", \"dialog_keys\": [\"attack\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/banditsniper.npctype",
+        "note": "{\"type\": \"banditsniper\", \"baseType\": \"hostile\", \"scripts\": null, \"behavior\": \"hostileguard\", \"dialog_keys\": [\"attack\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/barista.npctype",
+        "note": "{\"type\": \"barista\", \"baseType\": \"merchanttenant\", \"scripts\": [\"/npcs/bmain.lua\"], \"behavior\": \"merchant\", \"dialog_keys\": [\"merchant\", \"flee\", \"tenant\", \"accuse\", \"alert\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/barkeep.npctype",
+        "note": "{\"type\": \"barkeep\", \"baseType\": \"merchant\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"merchant\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/beekeeper.npctype",
+        "note": "{\"type\": \"beekeeper\", \"baseType\": null, \"scripts\": [\"/npcs/main.lua\", \"/scripts/pathing.lua\", \"/npcs/timers.lua\", \"/scripts/sensors.lua\", \"/scripts/stateMachine.lua\", \"/scripts/util.lua\", \"/scripts/vec2.lua\", \"/npcs/chatState.lua\", \"/npcs/converseState.lua\", \"/npcs/fleeState.lua\", \"/npcs/sitState.lua\", \"/npcs/standingIdleState.lua\"], \"behavior\": null, \"dialog_keys\": [], \"legacy_keys\": [\"converse\", \"flee\"]}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/catchefmerchant.npctype",
+        "note": "{\"type\": \"catchefmerchant\", \"baseType\": \"merchant\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"merchant\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/corpsevendor.npctype",
+        "note": "{\"type\": \"corpsevendor\", \"baseType\": \"merchant\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"merchant\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/crystalminer.npctype",
+        "note": "{\"type\": \"crystalminer\", \"baseType\": \"guard\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"attack\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/dinerpatron.npctype",
+        "note": "{\"type\": \"dinerpatron\", \"baseType\": \"base\", \"scripts\": null, \"behavior\": \"follower\", \"dialog_keys\": [\"tenant\", \"follower\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/foolcook.npctype",
+        "note": "{\"type\": \"foolcook\", \"baseType\": \"merchanttenant\", \"scripts\": [\"/npcs/bmain.lua\"], \"behavior\": \"merchant\", \"dialog_keys\": [\"merchant\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/fumantizinoble.npctype",
+        "note": "{\"type\": \"fumantizinoble\", \"baseType\": \"villager\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"greeting\", \"converse\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/fumantiziservant.npctype",
+        "note": "{\"type\": \"fumantiziservant\", \"baseType\": \"villager\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"greeting\", \"converse\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/fupeglacischolar.npctype",
+        "note": "{\"type\": \"fupeglacischolar\", \"baseType\": \"villager\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"greeting\", \"converse\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/fuspaceguard.npctype",
+        "note": "{\"type\": \"fuspaceguard\", \"baseType\": \"villageguard\", \"scripts\": null, \"behavior\": null, \"dialog_keys\": [\"greeting\", \"converse\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      },
+      {
+        "source": "npcs/itamae.npctype",
+        "note": "{\"type\": \"itamae\", \"baseType\": \"merchanttenant\", \"scripts\": [\"/npcs/bmain.lua\"], \"behavior\": null, \"dialog_keys\": [\"merchant\", \"tenant\"], \"legacy_keys\": []}; Statik NPC olay/ırk bağlamı; canlı seçimi kanıtlamaz."
+      }
+    ],
+    "note": "400 doğrudan FU alanı: modern dialog ve arıcı legacy converse/flee. Vanilla davranışlar, kaynakta iç içe duran foolcook end/tout/tenant dalları, hyltol yazım hatalı hedef ve Felin/Veluu gibi harici muhataplar için canlı seçim/font/sığma NOT TESTED. Alan anahtarları değiştirilmez."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "NPC baseType/scriptConfig referansları bütün repliklerin canlı erişimini kanıtlamaz.",
+    "Arıcı legacy converse/flee state kodları ve temel vanilla merchant davranışları FU checkoutunda bulunmaz.",
+    "Foolcook end/tout/tenant alanları kaynakta merchant/welcome/default altına gömülüdür; erişimleri doğrulanmadı, anahtarlar değiştirilmedi.",
+    "Itamae hyltol kaynak anahtarı korunur; Hylotl dalına canlı seçim doğrulanmadı.",
+    "Avianfirebringer dosyasında Apex konuşmacı dalları vardır; dosya adına bakıp konuşmacı Avian sayılmaz.",
+    "Peglaci bilginin kaynak dalları default/hylotl; NPC dosya adı her konuşanın Peglaci olacağını kanıtlamaz.",
+    "Felin/Veluu veya diğer muhatapların kurulumu ve canlı seçimi doğrulanmadı.",
+    "Floran tıslaması, kahve adı boyları, ace-high poker çağrışımı ve moonspeak/moonpeak yorumunun font/sığma/karakter tonu LQA bekler."
+  ],
+  "lexical_review": [
+    {
+      "source_term": "moonspeak / moonpeak",
+      "status": "REVIEW",
+      "decision": "Üç moonspeak varyantı ile aynı NPC tek moonpeak varyantı karşılaştırıldı; get off iş bitimi ve chinwag then zaman bağlamından ay tepeye çıkmadan yorumu çıkarımdır. Evrensel takvim veya tam zaman tanımı LOCKED yapılmadı."
+    }
+  ],
+  "lexical_sources": [
+    {
+      "url": "https://www.collinsdictionary.com/us/dictionary/english/ace-high",
+      "use": "Amerikan övgü/itibar anlamı; başka kart oyunu adı kullanılmaz."
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/keep",
+      "use": "İsim keep savunma yapısı/kale; fiil keep genel kilitlenmez."
+    },
+    {
+      "url": "https://www.starbucks.com.tr/en/menu/urun/pour-over-SBUX-188",
+      "use": "Türkiye resmî Short/Tall/Grande menü adları."
+    },
+    {
+      "url": "https://www.starbucks.com/menu/product/483/iced",
+      "use": "Resmî Tall/Grande/Venti menü adları."
+    }
+  ],
+  "context_inferences": [
+    "Felin ca-- yarım sözcüğü kedi/komşu kopi luwak şakasından ke-- olarak yorumlanır; kelime tamamlanmaz.",
+    "Get off just afore moonpeak işten çıkma ve ayın tepeye ulaşmasından önceki zaman anlamıyla yorumlanır; moonspeak metinleri komşu varyanta dayalıdır."
+  ],
+  "maintenance": [
+    {
+      "unit_id": "maintenance:objects/scienceoutpost/starbucks/fustarbucks.object/chatOptions/1",
+      "context": [
+        "maintenance",
+        "objects/scienceoutpost/starbucks/fustarbucks.object",
+        "/chatOptions/1"
+      ],
+      "en": "Nervous. Will that be a short, a tall, a grande, a venti, or a... Frustrated. Oh no, I've lost track again...",
+      "before": "Gergin. Küçük mü, uzun mu, grande mi, venti mi, yoksa... Bıkkın. Hayır, yine karıştırdım...",
+      "after": "Gergin. Short mu, Tall mı, Grande mi, Venti mi, yoksa... Bıkkın. Eyvah, yine karıştırdım...",
+      "reason": "Yeni barista menüsüyle aynı eski Bilim Karakolu EN kaydı: boy adları ve Oh no ünlemi de düzeltildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "objects/scienceoutpost/starbucks/fustarbucks.object",
+          "pointer": "/chatOptions/1"
+        }
+      ],
+      "maintenance": true
+    },
+    {
+      "unit_id": "maintenance:dialog/fuslimeperson.config/converse/default/hylotl/9",
+      "context": [
+        "maintenance",
+        "dialog/fuslimeperson.config",
+        "/converse/default/hylotl/9"
+      ],
+      "en": "The Hylotl strive for peace, right? Same as humans. No wonder you're a Protector.",
+      "before": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Koruyucu olman şaşırtıcı değil.",
+      "after": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Protector olman şaşırtıcı değil.",
+      "reason": "Protectorate üyesi Protector unvanı mevcut brewmaster ve yeni muhafız replikleriyle birleştirildi; zırh adlarındaki genel Koruyucu değiştirilmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/fuslimeperson.config",
+          "pointer": "/converse/default/hylotl/9"
+        }
+      ],
+      "maintenance": true
+    },
+    {
+      "unit_id": "maintenance:dialog/slimenpchuman.config/converse/default/hylotl/9",
+      "context": [
+        "maintenance",
+        "dialog/slimenpchuman.config",
+        "/converse/default/hylotl/9"
+      ],
+      "en": "The Hylotl strive for peace, right? Same as humans. No wonder you're a Protector.",
+      "before": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Koruyucu olman şaşırtıcı değil.",
+      "after": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Protector olman şaşırtıcı değil.",
+      "reason": "Protectorate üyesi Protector unvanı mevcut brewmaster ve yeni muhafız replikleriyle birleştirildi; zırh adlarındaki genel Koruyucu değiştirilmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "dialog/slimenpchuman.config",
+          "pointer": "/converse/default/hylotl/9"
+        }
+      ],
+      "maintenance": true
+    }
+  ]
+}

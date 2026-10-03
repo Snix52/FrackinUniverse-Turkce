@@ -37,9 +37,9 @@
     "mummy juice"
   ],
   "locked_total": 656,
-  "approved_packet_sha256": "8657e9d8730b253910eafdc306f84d134da9e84cb88535815204f370d9cef71e",
+  "approved_packet_sha256": "d64f435fdf3eab72a1d9ebd09e9dae25c54e4f317940f4aa0ae88fada5a648d9",
   "luna_original_packet_sha256": "5398c9df1fbf1ebc7e1323d01a3c66e09c86071111693cc832a697b70d74d4d5",
-  "approved_rows_sha256": "f7127f8f0477caeeaf86ab35164a7b55b578ce99332ea184d9b30be26d40e615",
+  "approved_rows_sha256": "6952f145700547110294e06c14e0b01659b1ac1d2478e145f76bddc4f411482b",
   "corrections": [
     {
       "unit_index": 14,
@@ -1867,5 +1867,59 @@
       "reason": "Tam kaynak satırı görünür NPC geveleme açıklamasıdır; değişken/tag tüketimi yoktur. Açı parantezli Türkçe açıklama bu EN/TR/asset/pointer eşleşmesine bağlıdır."
     }
   ],
-  "preserved_utterance_fields": 17
+  "preserved_utterance_fields": 17,
+  "subsequent_reviews": [
+    {
+      "date": "2026-10-03",
+      "release": "0.73.0-beta",
+      "review": "docs/reviews/npc1-20261003.json",
+      "previous_approval": {
+        "approved_packet_sha256": "8657e9d8730b253910eafdc306f84d134da9e84cb88535815204f370d9cef71e",
+        "approved_rows_sha256": "f7127f8f0477caeeaf86ab35164a7b55b578ce99332ea184d9b30be26d40e615"
+      },
+      "changes": [
+        {
+          "unit_id": "maintenance:dialog/fuslimeperson.config/converse/default/hylotl/9",
+          "context": [
+            "maintenance",
+            "dialog/fuslimeperson.config",
+            "/converse/default/hylotl/9"
+          ],
+          "en": "The Hylotl strive for peace, right? Same as humans. No wonder you're a Protector.",
+          "before": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Koruyucu olman şaşırtıcı değil.",
+          "after": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Protector olman şaşırtıcı değil.",
+          "reason": "Protectorate üyesi Protector unvanı mevcut brewmaster ve yeni muhafız replikleriyle birleştirildi; zırh adlarındaki genel Koruyucu değiştirilmez.",
+          "changed_sentences": 1,
+          "occurrences": [
+            {
+              "asset": "dialog/fuslimeperson.config",
+              "pointer": "/converse/default/hylotl/9"
+            }
+          ],
+          "maintenance": true
+        },
+        {
+          "unit_id": "maintenance:dialog/slimenpchuman.config/converse/default/hylotl/9",
+          "context": [
+            "maintenance",
+            "dialog/slimenpchuman.config",
+            "/converse/default/hylotl/9"
+          ],
+          "en": "The Hylotl strive for peace, right? Same as humans. No wonder you're a Protector.",
+          "before": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Koruyucu olman şaşırtıcı değil.",
+          "after": "Hylotl’lar da insanlar gibi barış için çabalıyor, değil mi? Protector olman şaşırtıcı değil.",
+          "reason": "Protectorate üyesi Protector unvanı mevcut brewmaster ve yeni muhafız replikleriyle birleştirildi; zırh adlarındaki genel Koruyucu değiştirilmez.",
+          "changed_sentences": 1,
+          "occurrences": [
+            {
+              "asset": "dialog/slimenpchuman.config",
+              "pointer": "/converse/default/hylotl/9"
+            }
+          ],
+          "maintenance": true
+        }
+      ],
+      "note": "Özgün v0.72 inceleme sayımı tarihsel olarak korunur; sonraki bakım düzeltmeleri ayrı kayıtla yeniden onaylandı."
+    }
+  ]
 }

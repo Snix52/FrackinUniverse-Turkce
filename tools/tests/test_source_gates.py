@@ -22,7 +22,7 @@ class SourceGateTests(unittest.TestCase):
 
     def test_current_catalog_runs_every_release_and_both_extra_gates(self):
         names = [p.name for p in gate_paths()]
-        self.assertEqual(names, [f'generate_v{release:03d}.py' for release in range(45, 73)] + list(EXTRA_GATES))
+        self.assertEqual(names, [f'generate_v{release:03d}.py' for release in range(45, 74)] + list(EXTRA_GATES))
         self.assertFalse(any('legacy' in str(p) for p in gate_paths()))
 
     def test_missing_manifest_or_gate_is_rejected_before_running(self):
