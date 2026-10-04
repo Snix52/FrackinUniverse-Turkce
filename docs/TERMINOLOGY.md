@@ -686,6 +686,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Svetlana / Svetlana Twofeather | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | Svetlana / Svetlana Twofeather | - | LOCKED | Kaynak NPC identity/name ve ilk converse repliğindeki kişi adı korunur; tam soyadı geçen metinde Twofeather de korunur. |
 | The Observer | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | The Observer | - | LOCKED | Svetlana ilk repliğinde anılan özel ad/handle; kişinin gerçek kimliği veya yeni lore çıkarımı eklenmez. |
 | Extra Dungeons | FU NPC esnaf/Svetlana konuşmaları | Unvan veya özel ad | Extra Dungeons | - | LOCKED | Svetlana teşekkür repliğindeki mod/içerik adı korunur; sıradan dungeon/zindan sözcüğü kilitlenmez. |
+| Lovelius Smythe | FU mürettebat diyalogları | Ad veya dar diyalog terimi | Lovelius Smythe | - | LOCKED | NPC npcname kaynak alanındaki kişi adı korunur; placeholder ve type kimlikleri değişmez. |
+| Number One | FU mürettebat diyalogları | Ad veya dar diyalog terimi | Bir Numara | - | LOCKED | Uzay istasyonu kaptanının Greetings hitabındaki lakap; kaynak Picarding rol alanı bağlamı. Yeni bir rütbe veya kesin lore iddiası eklenmez. |
+| Beast Mode | FU mürettebat diyalogları | Ad veya dar diyalog terimi | Canavar Modu | - | LOCKED | Lovelius combatBenefit repliğindeki vurgulu mod adı. Teknik buff/effect kimliği veya gerçek yeni yetenek sayılmaz. |
+| Purrfect / purrfect | FU mürettebat diyalogları | Ad veya dar diyalog terimi | Mır-kemmel / mır-kemmel | - | LOCKED | Kedi mırlaması ve perfect kelime oyunu; mevcut Veluu tabanca çevirisiyle aynı. Genel perfect sözcüğü bu kilide girmez. |
+| SIR, YES SIR! / SSIR, YES SSSSIR! / SSIR, YESSSS SIR! | FU mürettebat diyalogları | Ad veya dar diyalog terimi | EMREDERSİNİZ, EFENDİM! / EMREDERSSİNİZ, EFENDİM! / EMREDERSSİNİZ, EFENDİM! | - | LOCKED | Tam askerî cevap ve iki kaynak Floran varyantı ayrı korunur. Bağımsız SSS sesi veya normal satıra yapay tıslama eklenmez; genel sir sözcüğü serbesttir. |
 
 ## Kural
 

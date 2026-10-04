@@ -2,13 +2,13 @@
 
 Starbound'daki Frackin' Universe modu için Türkçe çeviri. Ana Frackin' Universe modunun kurulu olması gerekir.
 
-**Güncel paket:** v0.74.0 Beta · **Hedef FU sürümü:** 6.5.8
+**Güncel paket:** v0.75.0 Beta · **Hedef FU sürümü:** 6.5.8
 
-[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3805257011) · [ZIP indir](dist/FU_Turkce_v0.74.0_Beta.zip) · [Sürüm notları](CHANGELOG.md)
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3805257011) · [ZIP indir](dist/FU_Turkce_v0.75.0_Beta.zip) · [Sürüm notları](CHANGELOG.md)
 
 ## Çeviri kapsamı
 
-Katalogda 17.352 metin alanı ve 126 Lua/script metin gösterimi bulunuyor. Çeviri devam ediyor; oyunda İngilizce kalan metinler olabilir.
+Katalogda 17.752 metin alanı ve 126 Lua/script metin gösterimi bulunuyor. Çeviri devam ediyor; oyunda İngilizce kalan metinler olabilir.
 
 - Araştırma sistemleri ve üretim menüleri
 - Görevler, telsiz mesajları ve gemi S.A.I.L. konuşmaları
@@ -24,7 +24,7 @@ Steam için [Workshop sayfasından](https://steamcommunity.com/sharedfiles/filed
 Manuel kurulum:
 
 1. Starbound'u kapat ve `storage` klasörünü yedekle.
-2. [Güncel ZIP'i](dist/FU_Turkce_v0.74.0_Beta.zip) indirip çıkar.
+2. [Güncel ZIP'i](dist/FU_Turkce_v0.75.0_Beta.zip) indirip çıkar.
 3. Eski `FU_Turkce` klasörünü `mods` dışına taşı. Yeni `FU_Turkce` klasörünü `mods` içine kopyala.
 
 Kurulum sonunda `Starbound/mods/FU_Turkce/_metadata` dosyası bulunmalı. Eski ve yeni klasörleri birleştirmek, kaldırılmış yamaları oyunda bırakabilir. Ana FU paketini değiştirme.

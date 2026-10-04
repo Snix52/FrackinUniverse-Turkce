@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.75.0 Beta — Mürettebat diyalogları, ilk dilim
+
+Kedi mürettebat ve meslekleri, Lovelius Smythe, uzay istasyonu suikastçı/kaptan/komutan/yıkıcı ve paralı asker ilk kısmı: 13 NPC dosyasında 400 yeni alan / 400 bağlam, 160 benzersiz kaynak metin. 15 alan iki kaynak şablonuna aittir; bunların canlı spawn yolu bulunmadı. Katalog 17.752 alan, önceki 17.352 aynen korundu.
+
+95 alanda toplam 119 cümle/kısa ifade düzeltildi: pati iyeliği, doğal Türkçe, bıçak saplama hedefi, Floran tıslaması/askerî cevap, Glitch hitap ve vurgu, 42 ölümün toplam sayımı. Tekrar eden NPC bağlamları ayrı sayılır. 5 yeni LOCKED, toplam 675. FU 6.5.8 pini, teknik kimlikler, olay yapısı ve miktarlar korunur. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/crew1-20261004.json) · [Oyun kontrolü](docs/lqa/LQA_V075_20261004.md)
+
 ## v0.74.0 Beta — NPC kök ailesinin son konuşmaları
 
 Suşi şefi, cevher tüccarı, penguen dondurmacı ve Svetlana: 4 NPC dosyasında 34 yeni alan / 34 bağlam, 24 benzersiz kaynak metin. Katalog 17.352 alan oldu; önceki 17.318 alan aynen korundu.
@@ -38,6 +44,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.75.0 | Mürettebat diyalogları, ilk dilim | 400 |
 | v0.74.0 | Son NPC kök konuşmaları | 34 |
 | v0.73.0 | NPC esnaf ve olay konuşmaları | 400 |
 | v0.72.0 | NPC konuşmaları, altıncı dilim | 404 |

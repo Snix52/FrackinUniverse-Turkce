@@ -1,0 +1,2570 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-04",
+  "base_commit": "db9f070db440730b6f88399f50a6e329a61d1300",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 400,
+    "context_groups": 400,
+    "unique_english_strings": 160,
+    "assets": {
+      "npcs/crew/a_crewmembertemplate.npctype": 8,
+      "npcs/crew/a_crewmembertemplate_blank.npctype": 7,
+      "npcs/crew/catcrewmember.npctype": 26,
+      "npcs/crew/catcrewmemberengineer.npctype": 2,
+      "npcs/crew/catcrewmemberjanitor.npctype": 2,
+      "npcs/crew/catcrewmembermedic.npctype": 10,
+      "npcs/crew/catcrewmembertailor.npctype": 6,
+      "npcs/crew/crewmemberLoveliusSmythe.npctype": 23,
+      "npcs/crew/crewmember_spacestationassassin.npctype": 76,
+      "npcs/crew/crewmember_spacestationcaptain.npctype": 76,
+      "npcs/crew/crewmember_spacestationcommander.npctype": 76,
+      "npcs/crew/crewmember_spacestationdevastator.npctype": 76,
+      "npcs/crew/crewmember_spacestationmercenary.npctype": 12
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 400,
+    "source_only_template_fields": 15
+  },
+  "changes": {
+    "context_groups": 95,
+    "fields": 95,
+    "maintenance_fields": 0,
+    "sentences_by_context": 119,
+    "sentences_including_repeated_fields": 119,
+    "maintenance_sentences": 0,
+    "unique_corrected_source_strings": 29,
+    "count_method": "Değişen bağımsız cümle/kısa ifadeler elle sayıldı; yalnız büyük harf veya tıslama değişen ifade de sayılır. Aynı EN farklı NPC/olay/konuşmacı dalında ayrı sayılır. Unchanged cümleler sayılmaz."
+  },
+  "new_locked_terms": 5,
+  "new_locked_names": [
+    "Lovelius Smythe",
+    "Number One",
+    "Beast Mode",
+    "Purrfect / purrfect",
+    "SIR, YES SIR! / SSIR, YES SSSSIR! / SSIR, YESSSS SIR!"
+  ],
+  "locked_total": 675,
+  "approved_packet_sha256": "8a1b3029c4ad22eea759a15ca3a06212e9a34679a256043d6f07cba1b1d5e0b5",
+  "luna_original_packet_sha256": "9c8a345dc71273b65a73973d04b354655003256e4e7c394932299a3ed1e8fbc8",
+  "approved_rows_sha256": "0e80fd8094612df75207e09f2c6a57d1a7d6246ee6311a454e37fbddb20a9e7f",
+  "corrections": [
+    {
+      "unit_index": 4,
+      "unit_id": "3faa93edc5bf8b49068057913c5f6a34eec3f461716155843b3bcdfe031b0dc7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/a_crewmembertemplate.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Let Floran join your crew. Alsso, you can do ssspecies dialogue like thiss asss well.",
+      "before": "Floran mürettebatına katılsın. Ayrıca, tür replikleri de böyle yazılabilir.",
+      "after": "Floran mürettebatına katılsın. Ayrıca, tür repliklerini de böyle yazabilirssin.",
+      "reason": "Şablon repliğinin ikinci cümlesindeki kaynak tıslaması, mevcut Türkçe s sesiyle aktarıldı. Şablon talimatı kurguya çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/a_crewmembertemplate.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/a_crewmembertemplate.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 36,
+      "unit_id": "e434bbd02c19b191f4e501cff1a908e671a5815a0952026aad44c0a9b8649dc6",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/catcrewmember.npctype",
+        "scriptConfig/dialog/crewmember/respawned/default/default"
+      ],
+      "en": "My paw hurts.",
+      "before": "Patisim ağrıyor.",
+      "after": "Patim ağrıyor.",
+      "reason": "Patisim yazım/iyelik hatası düzeltildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/catcrewmember.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/6",
+          "origin": "npcs/crew/catcrewmember.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 38,
+      "unit_id": "9c37e5f59c4266f019f06b3545eba820d9ebe25fa52d2a31441dd6bda86b6acf",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/catcrewmember.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/default/default"
+      ],
+      "en": "I might not look like much, but I can wield a weapon as good as any humanoid!",
+      "before": "Pek öyle görünmeyebilirim ama herhangi bir insansı kadar iyi silah kullanırım!",
+      "after": "Pek etkileyici görünmeyebilirim ama herhangi bir insansı kadar iyi silah kullanırım!",
+      "reason": "Önceki pek öyle ifadesinin referansı yoktu; look like much yetersiz/etkisiz görünme anlamıyla karşılandı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/catcrewmember.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/0",
+          "origin": "npcs/crew/catcrewmember.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 59,
+      "unit_id": "2c4d2a3c981c196761b4f83d85c36cb8566a5ee9ace36286aef3419fcf2d7b3f",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/catcrewmembertailor.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/default/default"
+      ],
+      "en": "Meow. I might be a cat, but my fashion sense is as keen as any other's!",
+      "before": "Miyav. Kedi olabilirim ama moda zevkim herkesinki kadar keskin!",
+      "after": "Miyav. Kedi olabilirim ama modadan en az herkes kadar iyi anlarım!",
+      "reason": "Moda zevkim keskin sözcüğü sözcüğüne aktarımı doğal moda bilgisi ifadesiyle karşılandı; kedi ve karşılaştırma korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/catcrewmembertailor.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/0",
+          "origin": "npcs/crew/catcrewmembertailor.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 75,
+      "unit_id": "dc284c58646576b27636720112c40fb6c9a148ffe6015ab3b68bf2ea884e51b8",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberLoveliusSmythe.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "I suppose they meant it literally when they said they intended to keep me forever. Avian hospitality is rather poor.",
+      "before": "Sanırım beni sonsuza dek alıkoymayı söylediklerinde bunu kelimenin tam anlamıyla kastetmişler. Avianların konukseverliği pek iyi değil.",
+      "after": "Sanırım beni sonsuza dek alıkoyacaklarını söylediklerinde bunu kelimenin tam anlamıyla kastetmişler. Avianların konukseverliği pek iyi değil.",
+      "reason": "Alıkoymayı söylediklerinde Türkçe dil bilgisi hatası giderildi; kaynak tutsaklık ve Avian konukseverliği esprisi korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberLoveliusSmythe.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/3",
+          "origin": "npcs/crew/crewmemberLoveliusSmythe.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 79,
+      "unit_id": "f7c9cac51af3032dfd1431002207374e9ffcd1dc836fd6ad0884532d8ad34d4f",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberLoveliusSmythe.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/default/default"
+      ],
+      "en": "You need not fear insanity if I'm around, sir!",
+      "before": "Yanımdayken delirmekten korkmana gerek yok, efendim!",
+      "after": "Ben yanındaysam delirmekten korkmana gerek yok, efendim!",
+      "reason": "Koşulun öznesi konuşan Lovelius: ben yanındaysam. Yakınlığın ifade yönü kaynakla eşleştirildi; koruma vaadi değişmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberLoveliusSmythe.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/1",
+          "origin": "npcs/crew/crewmemberLoveliusSmythe.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 100,
+      "unit_id": "4604a9a4b2eaf88a66d38a1171f76d57f04b087599844a8196e44d0c3a416054",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "SSIR, YES SSSSIR!",
+      "before": "SSS, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 176,
+      "unit_id": "b2816a3115ed23766306683481f1156645a07e0170adef64f9e215b5e9a91856",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "SSIR, YES SSSSIR!",
+      "before": "SSS, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 252,
+      "unit_id": "d9f883d8766ec5adb1d2f86dce5352466073dcecdcd4b798544b808b81d02205",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "SSIR, YES SSSSIR!",
+      "before": "SSS, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 328,
+      "unit_id": "7180fc01adf57ea25f656eed2695b259ecf14e4fa42513fa85a1ecdbfc6c538a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "SSIR, YES SSSSIR!",
+      "before": "SSS, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 149,
+      "unit_id": "19f360e3463ad60548ef7b96ada8b2c729085e82af210a58f281e5bdd322d626",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "SSIR, YESSSS SIR!",
+      "before": "EFENDİM, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 225,
+      "unit_id": "84d7c197aca8e3d29d2915ca3c3c3de48610d0c1c35b22afe6e6e362e353a9cf",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "SSIR, YESSSS SIR!",
+      "before": "EFENDİM, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 301,
+      "unit_id": "9f4f8439af3f105c2b2cd793aef1ea568051550308ccb110fa079f2953e625c5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "SSIR, YESSSS SIR!",
+      "before": "EFENDİM, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 377,
+      "unit_id": "9aa5f4ae87dbdd09be938eb8faf946a519cc09f67263c1703843ca664a6fe32a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "SSIR, YESSSS SIR!",
+      "before": "EFENDİM, EVET EFENDİM!",
+      "after": "EMREDERSSİNİZ, EFENDİM!",
+      "reason": "Askerî yes sir cevabı tam ifade olarak aktarıldı. Bağımsız SSS sesi veya tıslamasız cevap yerine emredersiniz içindeki mevcut s sesi uzatıldı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 102,
+      "unit_id": "a941ad98b6181a60cf218f82eda163ea0596e8653185faf0f71ffb088ed84ca9",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran good at hunting prey.",
+      "before": "Floran avı iyi avlar.",
+      "after": "Floran avlanmakta iyi.",
+      "reason": "Avı iyi avlar gereksiz yinelemesi giderildi; Floran kısa karakter sesi ve av becerisi korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 178,
+      "unit_id": "870d618ea12db3336609f1cd5b0628d8c1ac936e2b164ff800123e14c307bee0",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran good at hunting prey.",
+      "before": "Floran avı iyi avlar.",
+      "after": "Floran avlanmakta iyi.",
+      "reason": "Avı iyi avlar gereksiz yinelemesi giderildi; Floran kısa karakter sesi ve av becerisi korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 254,
+      "unit_id": "dc5222a0a37f2b0b9c44c0eb80c63e8e354ff5f696e35ec2be70c0e0e502af64",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran good at hunting prey.",
+      "before": "Floran avı iyi avlar.",
+      "after": "Floran avlanmakta iyi.",
+      "reason": "Avı iyi avlar gereksiz yinelemesi giderildi; Floran kısa karakter sesi ve av becerisi korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 330,
+      "unit_id": "f29be5793ae74df2287881466ff1ee905213f2cf225f809afa013bf0e0aee1f7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran good at hunting prey.",
+      "before": "Floran avı iyi avlar.",
+      "after": "Floran avlanmakta iyi.",
+      "reason": "Avı iyi avlar gereksiz yinelemesi giderildi; Floran kısa karakter sesi ve av becerisi korundu.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 103,
+      "unit_id": "aecbf428005ce52133418b3632a8b7a4894356ff6d24d35181ee6b8a7f507708",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran want sssstab!",
+      "before": "Floran ssaplamak istiyor!",
+      "after": "Floran bıçak ssaplamak istiyor!",
+      "reason": "Saplamak fiilinin nesnesi bıçaktır; Türkçede eksik nesne tamamlandı. Kaynak stab eylemi ve mevcut s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 179,
+      "unit_id": "6433c47a08f65855835711deaac9b61b176a592db3551c88298a616330949dff",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran want sssstab!",
+      "before": "Floran ssaplamak istiyor!",
+      "after": "Floran bıçak ssaplamak istiyor!",
+      "reason": "Saplamak fiilinin nesnesi bıçaktır; Türkçede eksik nesne tamamlandı. Kaynak stab eylemi ve mevcut s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 255,
+      "unit_id": "1d6c6408821c20ef18eef9166bd99c1c0c0aab6ab2d76588aae8722dad7b4d16",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran want sssstab!",
+      "before": "Floran ssaplamak istiyor!",
+      "after": "Floran bıçak ssaplamak istiyor!",
+      "reason": "Saplamak fiilinin nesnesi bıçaktır; Türkçede eksik nesne tamamlandı. Kaynak stab eylemi ve mevcut s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 331,
+      "unit_id": "c2f94ace4a149df01664df1cf0a81346e45a3570848d001f5ea60c280005fe67",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Floran want sssstab!",
+      "before": "Floran ssaplamak istiyor!",
+      "after": "Floran bıçak ssaplamak istiyor!",
+      "reason": "Saplamak fiilinin nesnesi bıçaktır; Türkçede eksik nesne tamamlandı. Kaynak stab eylemi ve mevcut s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 110,
+      "unit_id": "4efdc27169c33c413d6b55859e12a872d5102e76c14743e36bc4f71902bf40c8",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hello adventurer, maybe Floran join you and SSSTAB SOME ASS?!?!?",
+      "before": "HEY MACERACI, FLORAN SANA KATILIP BİRİLERİNİN KIÇINI SSAPLASIN MI?!?!?",
+      "after": "Selam maceracı, Floran sana katılıp BİRİLERİNİN KIÇINA BIÇAK SSAPLASIN MI?!?!?",
+      "reason": "Kıçını saplamak yanlış nesne ilişkisi yerine kıçına bıçak saplamak kullanıldı. Kaynakta yalnız son eylem vurgulu; selam kısmı tümüyle bağırmaya çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 189,
+      "unit_id": "07837adbb953ba331d9a969804dea89bc924fc53d43f9c38d63047d2b1c7ed9a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hello adventurer, maybe Floran join you and SSSTAB SOME ASS?!?!?",
+      "before": "HEY MACERACI, FLORAN SANA KATILIP BİRİLERİNİN KIÇINI SSAPLASIN MI?!?!?",
+      "after": "Selam maceracı, Floran sana katılıp BİRİLERİNİN KIÇINA BIÇAK SSAPLASIN MI?!?!?",
+      "reason": "Kıçını saplamak yanlış nesne ilişkisi yerine kıçına bıçak saplamak kullanıldı. Kaynakta yalnız son eylem vurgulu; selam kısmı tümüyle bağırmaya çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 265,
+      "unit_id": "04fd64bb04ed466a3b2378647f423fbd14408baa5c9aa0b21ecc77f65ee77f59",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hello adventurer, maybe Floran join you and SSSTAB SOME ASS?!?!?",
+      "before": "HEY MACERACI, FLORAN SANA KATILIP BİRİLERİNİN KIÇINI SSAPLASIN MI?!?!?",
+      "after": "Selam maceracı, Floran sana katılıp BİRİLERİNİN KIÇINA BIÇAK SSAPLASIN MI?!?!?",
+      "reason": "Kıçını saplamak yanlış nesne ilişkisi yerine kıçına bıçak saplamak kullanıldı. Kaynakta yalnız son eylem vurgulu; selam kısmı tümüyle bağırmaya çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 341,
+      "unit_id": "981d23ff67428295d680641192e843ba4453c6ff7b66a37f96aa766358c5c07f",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hello adventurer, maybe Floran join you and SSSTAB SOME ASS?!?!?",
+      "before": "HEY MACERACI, FLORAN SANA KATILIP BİRİLERİNİN KIÇINI SSAPLASIN MI?!?!?",
+      "after": "Selam maceracı, Floran sana katılıp BİRİLERİNİN KIÇINA BIÇAK SSAPLASIN MI?!?!?",
+      "reason": "Kıçını saplamak yanlış nesne ilişkisi yerine kıçına bıçak saplamak kullanıldı. Kaynakta yalnız son eylem vurgulu; selam kısmı tümüyle bağırmaya çevrilmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 111,
+      "unit_id": "9b07dc796521662d8bc61bdad03a945f2f37a2b2260c92fb2f058977d7fd549c",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Look at that gear! Let Floran go with you and SSSTAB THE PREY!",
+      "before": "ŞU TEÇHİZATA BAK! FLORAN SENİNLE GELİP AVI SSAPLASIN!",
+      "after": "Şu teçhizata bak! FLORAN SENİNLE GELİP AVI BIÇAKLASSIN!",
+      "reason": "Avı saplamak yanlış eylem nesnesidir; bıçaklasın eylemiyle düzeltildi. Kaynak ilk cümle normal, ikinci eylem vurgulu; mevcut s sesi uzatılır.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 190,
+      "unit_id": "8819c2f6777ba41729d18cf2e42e6d8bcadc62370324aec93d2e29725e574be5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Look at that gear! Let Floran go with you and SSSTAB THE PREY!",
+      "before": "ŞU TEÇHİZATA BAK! FLORAN SENİNLE GELİP AVI SSAPLASIN!",
+      "after": "Şu teçhizata bak! FLORAN SENİNLE GELİP AVI BIÇAKLASSIN!",
+      "reason": "Avı saplamak yanlış eylem nesnesidir; bıçaklasın eylemiyle düzeltildi. Kaynak ilk cümle normal, ikinci eylem vurgulu; mevcut s sesi uzatılır.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 266,
+      "unit_id": "78721ba2460bf5854126a5ffc54e52f3b94da7cd007773634bcd4aad679319f7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Look at that gear! Let Floran go with you and SSSTAB THE PREY!",
+      "before": "ŞU TEÇHİZATA BAK! FLORAN SENİNLE GELİP AVI SSAPLASIN!",
+      "after": "Şu teçhizata bak! FLORAN SENİNLE GELİP AVI BIÇAKLASSIN!",
+      "reason": "Avı saplamak yanlış eylem nesnesidir; bıçaklasın eylemiyle düzeltildi. Kaynak ilk cümle normal, ikinci eylem vurgulu; mevcut s sesi uzatılır.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 342,
+      "unit_id": "02bb30069af94209593190ad2f0741d1eca4eea4b2e86f8697da669552d0325a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Look at that gear! Let Floran go with you and SSSTAB THE PREY!",
+      "before": "ŞU TEÇHİZATA BAK! FLORAN SENİNLE GELİP AVI SSAPLASIN!",
+      "after": "Şu teçhizata bak! FLORAN SENİNLE GELİP AVI BIÇAKLASSIN!",
+      "reason": "Avı saplamak yanlış eylem nesnesidir; bıçaklasın eylemiyle düzeltildi. Kaynak ilk cümle normal, ikinci eylem vurgulu; mevcut s sesi uzatılır.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 112,
+      "unit_id": "05150b6b3c4f645e3a3322c8f7f1addcb5cd0d11c420d4fbce6a7f62c12139cd",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "FLORAN ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE FLORAN MAYBE YOU WEAK NO-SSSTABBY?!?!?!",
+      "before": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK MI İSTİYORSUN? YOKSA ZAYIF, BIÇAK SAPLAYAMAYAN BİRİ MİSİN?!?!?!",
+      "after": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK İSTİYORSSUN, HA? BELKİ DE ZAYIF, BIÇAK SSAPLAYAMAYAN BİRİSSİN?!?!?!",
+      "reason": "Kaynak maybe zayıflık tahmini önceki yoksa karşıtlığına dönüştürülmüştü. İki hitap ifadesi kaynak tahmini ve mevcut s sesleriyle düzenlendi; yeni tehdit eklenmedi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 191,
+      "unit_id": "ed85c76d507c2b64f4c4653adc8ecfd493f08bb9faf238637015837abe4bc0b1",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "FLORAN ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE FLORAN MAYBE YOU WEAK NO-SSSTABBY?!?!?!",
+      "before": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK MI İSTİYORSUN? YOKSA ZAYIF, BIÇAK SAPLAYAMAYAN BİRİ MİSİN?!?!?!",
+      "after": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK İSTİYORSSUN, HA? BELKİ DE ZAYIF, BIÇAK SSAPLAYAMAYAN BİRİSSİN?!?!?!",
+      "reason": "Kaynak maybe zayıflık tahmini önceki yoksa karşıtlığına dönüştürülmüştü. İki hitap ifadesi kaynak tahmini ve mevcut s sesleriyle düzenlendi; yeni tehdit eklenmedi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 267,
+      "unit_id": "249ae9452d1d2289f7cc1a230e3a32736993fe79385a8c9ec0bda4af225f5bac",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "FLORAN ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE FLORAN MAYBE YOU WEAK NO-SSSTABBY?!?!?!",
+      "before": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK MI İSTİYORSUN? YOKSA ZAYIF, BIÇAK SAPLAYAMAYAN BİRİ MİSİN?!?!?!",
+      "after": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK İSTİYORSSUN, HA? BELKİ DE ZAYIF, BIÇAK SSAPLAYAMAYAN BİRİSSİN?!?!?!",
+      "reason": "Kaynak maybe zayıflık tahmini önceki yoksa karşıtlığına dönüştürülmüştü. İki hitap ifadesi kaynak tahmini ve mevcut s sesleriyle düzenlendi; yeni tehdit eklenmedi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 343,
+      "unit_id": "77df149ec7622ad0b77d755ca80a6150b2372c36c7136ee823800ec07bdce23a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "FLORAN ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE FLORAN MAYBE YOU WEAK NO-SSSTABBY?!?!?!",
+      "before": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK MI İSTİYORSUN? YOKSA ZAYIF, BIÇAK SAPLAYAMAYAN BİRİ MİSİN?!?!?!",
+      "after": "FLORAN HEP ÖFKELİ! FLORAN'I İŞE ALMAK İSTİYORSSUN, HA? BELKİ DE ZAYIF, BIÇAK SSAPLAYAMAYAN BİRİSSİN?!?!?!",
+      "reason": "Kaynak maybe zayıflık tahmini önceki yoksa karşıtlığına dönüştürülmüştü. İki hitap ifadesi kaynak tahmini ve mevcut s sesleriyle düzenlendi; yeni tehdit eklenmedi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 113,
+      "unit_id": "691e59c39277b2de92d8b26e0890025c8cfd98ed6b6b0bed77df668ef05cdcef",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hire Floran. That isss not request.",
+      "before": "Floran'ı işe al. Bu bir rica değil.",
+      "after": "Floran'ı işe al. Bu bir isstek değil.",
+      "reason": "Kaynak ikinci cümlenin tıslaması mevcut istek sözcüğündeki s ile aktarılır; emir/rica ayrımı korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 192,
+      "unit_id": "0808e375485783183c5b21cb9b3fd4eefbc05ec22509d746c8606ff589b99bb3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hire Floran. That isss not request.",
+      "before": "Floran'ı işe al. Bu bir rica değil.",
+      "after": "Floran'ı işe al. Bu bir isstek değil.",
+      "reason": "Kaynak ikinci cümlenin tıslaması mevcut istek sözcüğündeki s ile aktarılır; emir/rica ayrımı korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 268,
+      "unit_id": "554913a73b039e7e337304c6286befaa5b813d057932596b678e7c047a1325bd",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hire Floran. That isss not request.",
+      "before": "Floran'ı işe al. Bu bir rica değil.",
+      "after": "Floran'ı işe al. Bu bir isstek değil.",
+      "reason": "Kaynak ikinci cümlenin tıslaması mevcut istek sözcüğündeki s ile aktarılır; emir/rica ayrımı korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 344,
+      "unit_id": "6609c172ff321821c86e073134abb5921b57e888bd74bd8e1d4fe4e98bb51611",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hire Floran. That isss not request.",
+      "before": "Floran'ı işe al. Bu bir rica değil.",
+      "after": "Floran'ı işe al. Bu bir isstek değil.",
+      "reason": "Kaynak ikinci cümlenin tıslaması mevcut istek sözcüğündeki s ile aktarılır; emir/rica ayrımı korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 114,
+      "unit_id": "5f0b9226d14c00ff253b611e3b0e452c7c0ad5b54a1b1e51f4913392c6813c36",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Eager. Hello adventurer, mind if I join you and KICK SOME ASS?!?!?",
+      "before": "Hevesli. Sana katılıp BİRKAÇ KİŞİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "after": "Hevesli. Selam maceracı, sana katılıp BİRİLERİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "reason": "Kaynak maceracı selamı kaybolmuştu. Kaynaktaki kick some ass sertlik/vurgu ve Glitch Hevesli öneki korunur; miktar bildirmeyen some yerine birilerinin seçildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/0",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 193,
+      "unit_id": "7080150aae0d24414c14274bd4858f732e0919bb3ae1c2fb01874fc6f56cf2bb",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Eager. Hello adventurer, mind if I join you and KICK SOME ASS?!?!?",
+      "before": "Hevesli. Sana katılıp BİRKAÇ KİŞİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "after": "Hevesli. Selam maceracı, sana katılıp BİRİLERİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "reason": "Kaynak maceracı selamı kaybolmuştu. Kaynaktaki kick some ass sertlik/vurgu ve Glitch Hevesli öneki korunur; miktar bildirmeyen some yerine birilerinin seçildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 269,
+      "unit_id": "291b13362d32bff3bd6cd881d2a7637ecb29082c30fbf493d2fe17290ccbb6a7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Eager. Hello adventurer, mind if I join you and KICK SOME ASS?!?!?",
+      "before": "Hevesli. Sana katılıp BİRKAÇ KİŞİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "after": "Hevesli. Selam maceracı, sana katılıp BİRİLERİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "reason": "Kaynak maceracı selamı kaybolmuştu. Kaynaktaki kick some ass sertlik/vurgu ve Glitch Hevesli öneki korunur; miktar bildirmeyen some yerine birilerinin seçildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 345,
+      "unit_id": "e550365dc2d969410ea83e7d2db02f9e588abaa9968e0360b481bf2f5f292cd5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Eager. Hello adventurer, mind if I join you and KICK SOME ASS?!?!?",
+      "before": "Hevesli. Sana katılıp BİRKAÇ KİŞİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "after": "Hevesli. Selam maceracı, sana katılıp BİRİLERİNİN KIÇINI TEKMELEYEBİLİR MİYİM?!?!?",
+      "reason": "Kaynak maceracı selamı kaybolmuştu. Kaynaktaki kick some ass sertlik/vurgu ve Glitch Hevesli öneki korunur; miktar bildirmeyen some yerine birilerinin seçildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/0",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 116,
+      "unit_id": "10f69bb9fd0f7ae275f527aa19e4aceb26cb9909fd27dc827a8dce4492f4eede",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Statement. I'M ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE ME, DON'T YOU, YOU WEAK SISSY?!?!?!",
+      "before": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SEN ZAYIF BİR EZİKSİN?!?!?!",
+      "after": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SENİ ZAYIF ÖDLEK?!?!?!",
+      "reason": "Sissy korkaklık hakaretidir; genel ezik yerine ödlek. Hitap yanlış sen ...sin bildirimi olmaktan çıkarıldı. Glitch Bildirim öneki ve soru aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/2",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 195,
+      "unit_id": "6af0bad5eabe2f915247a43b825a3baeb14d2a9c104874f3f36a845e2ebcdc0c",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Statement. I'M ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE ME, DON'T YOU, YOU WEAK SISSY?!?!?!",
+      "before": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SEN ZAYIF BİR EZİKSİN?!?!?!",
+      "after": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SENİ ZAYIF ÖDLEK?!?!?!",
+      "reason": "Sissy korkaklık hakaretidir; genel ezik yerine ödlek. Hitap yanlış sen ...sin bildirimi olmaktan çıkarıldı. Glitch Bildirim öneki ve soru aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 271,
+      "unit_id": "a7b7a8d37d240a83bfe9a11a6a95157a6fbf5d8d69fe31850a43c623c22f2b62",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Statement. I'M ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE ME, DON'T YOU, YOU WEAK SISSY?!?!?!",
+      "before": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SEN ZAYIF BİR EZİKSİN?!?!?!",
+      "after": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SENİ ZAYIF ÖDLEK?!?!?!",
+      "reason": "Sissy korkaklık hakaretidir; genel ezik yerine ödlek. Hitap yanlış sen ...sin bildirimi olmaktan çıkarıldı. Glitch Bildirim öneki ve soru aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 347,
+      "unit_id": "dd23dc820998903a6f591a99562a4fe934d99fc9539de8c9afcbcd93aead2536",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Statement. I'M ALL ANGRY, ALL THE TIME! YOU WANT TO HIRE ME, DON'T YOU, YOU WEAK SISSY?!?!?!",
+      "before": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SEN ZAYIF BİR EZİKSİN?!?!?!",
+      "after": "Bildirim. HEP ÖFKELİYİM! BENİ İŞE ALMAK İSTİYORSUN, DEĞİL Mİ, SENİ ZAYIF ÖDLEK?!?!?!",
+      "reason": "Sissy korkaklık hakaretidir; genel ezik yerine ödlek. Hitap yanlış sen ...sin bildirimi olmaktan çıkarıldı. Glitch Bildirim öneki ve soru aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/2",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 122,
+      "unit_id": "12eeafd6cfa1c7b46798be213973ca3dec71b198551fd1ebfc80eed500f6d89b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/respawned/default/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "KAHRETSİN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynağın bağıran ölüm/42 sayımı iki cümlede büyük harfle korundu; miktar aynı, yeni olay yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/1",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 198,
+      "unit_id": "71008e18f9c00b96e3a516bdffbacabead54ed79b3ba88649ff68b30d642322d",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/respawned/default/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "KAHRETSİN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynağın bağıran ölüm/42 sayımı iki cümlede büyük harfle korundu; miktar aynı, yeni olay yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 274,
+      "unit_id": "3122f139222c3e4a78eae5472ce26673871a5bb7108cd1b5b96663ba9cda8536",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/respawned/default/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "KAHRETSİN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynağın bağıran ölüm/42 sayımı iki cümlede büyük harfle korundu; miktar aynı, yeni olay yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 350,
+      "unit_id": "abad16703967fe461355529afe259cc2ee62739adeba2effc02f78ac73f118de",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/respawned/default/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "KAHRETSİN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynağın bağıran ölüm/42 sayımı iki cümlede büyük harfle korundu; miktar aynı, yeni olay yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/1",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 125,
+      "unit_id": "520cb2afc15f53efab23dd5b1db7048eb11d9d2e0ec9b2046cd5d4bf860624da",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "FLORAN GOING TO FIND THAT THING AND STAB IT IN VENGEANCE!",
+      "before": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN SSAPLAYACAK!",
+      "after": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN BIÇAKLAYACAK!",
+      "reason": "O şeyi saplamak yanlış Türkçe nesne ilişkisi giderildi. Kaynak bu satırda uzatılmış s içermez; yapay tıslama eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 201,
+      "unit_id": "dbc1ea775f387d9f61fcbb48de0dbb2c9875d2fbdac7e11d4513e6db3078bd82",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "FLORAN GOING TO FIND THAT THING AND STAB IT IN VENGEANCE!",
+      "before": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN SSAPLAYACAK!",
+      "after": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN BIÇAKLAYACAK!",
+      "reason": "O şeyi saplamak yanlış Türkçe nesne ilişkisi giderildi. Kaynak bu satırda uzatılmış s içermez; yapay tıslama eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 277,
+      "unit_id": "07ccfdfd78840bd08fce009a5759ec3616adbe427ab963ed7c7e0984fa7df621",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "FLORAN GOING TO FIND THAT THING AND STAB IT IN VENGEANCE!",
+      "before": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN SSAPLAYACAK!",
+      "after": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN BIÇAKLAYACAK!",
+      "reason": "O şeyi saplamak yanlış Türkçe nesne ilişkisi giderildi. Kaynak bu satırda uzatılmış s içermez; yapay tıslama eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 353,
+      "unit_id": "2a9760014403a8f80cb22ab68149b2250e4f285a737f8397fb45f39d9c847d69",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "FLORAN GOING TO FIND THAT THING AND STAB IT IN VENGEANCE!",
+      "before": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN SSAPLAYACAK!",
+      "after": "FLORAN O ŞEYİ BULUP İNTİKAM İÇİN BIÇAKLAYACAK!",
+      "reason": "O şeyi saplamak yanlış Türkçe nesne ilişkisi giderildi. Kaynak bu satırda uzatılmış s içermez; yapay tıslama eklenmedi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 126,
+      "unit_id": "84a46e1384177bec7c7e2847303c97826fb71196bc3f21133d929e0d0841534b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUSSSS DEATH? THAT'SSS 42 THISS WEEK!",
+      "before": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42. Mİ?!",
+      "after": "KAHRETSSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynak bu hafta toplam 42 ölüm bildirir, 42. ölüm mü diye sormaz. Bildirim ve mevcut Türkçe s tıslaması geri getirildi; iki değişen ifade.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 202,
+      "unit_id": "5515129a812a7f117e696efecf3a1230d30fc3e1044a7ac72527b2f94618f542",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUSSSS DEATH? THAT'SSS 42 THISS WEEK!",
+      "before": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42. Mİ?!",
+      "after": "KAHRETSSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynak bu hafta toplam 42 ölüm bildirir, 42. ölüm mü diye sormaz. Bildirim ve mevcut Türkçe s tıslaması geri getirildi; iki değişen ifade.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 278,
+      "unit_id": "f77ea1fe1a5a9deabc1c23bc6a42c0c3a7dce2209cece5b0842be4e8abb60ff4",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUSSSS DEATH? THAT'SSS 42 THISS WEEK!",
+      "before": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42. Mİ?!",
+      "after": "KAHRETSSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynak bu hafta toplam 42 ölüm bildirir, 42. ölüm mü diye sormaz. Bildirim ve mevcut Türkçe s tıslaması geri getirildi; iki değişen ifade.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 354,
+      "unit_id": "2b08b20d1d51e92c0df1a6ea47a95cd88526f0b07a637673fdc7792eddc44a9a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "CRAP! ANOTHER GLORIOUSSSS DEATH? THAT'SSS 42 THISS WEEK!",
+      "before": "KAHRETSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42. Mİ?!",
+      "after": "KAHRETSSİN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Kaynak bu hafta toplam 42 ölüm bildirir, 42. ölüm mü diye sormaz. Bildirim ve mevcut Türkçe s tıslaması geri getirildi; iki değişen ifade.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/1",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 127,
+      "unit_id": "e361bd4b1db0724e2ede0a50a492f5215c40caab4efba78e8dd26463d9f676b1",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran already missssing murder! Get Floran back out there, Sssir!",
+      "before": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı gönder, efendim!",
+      "after": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı çıkarssana, efendim!",
+      "reason": "Get back out there yeniden sahaya çıkarmadır; Türkçe çıkarssana mevcut s sesiyle kaynak tıslamasını ve oyuncuya yönelen isteği aktarır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 203,
+      "unit_id": "743ef2a7975e1d576a75c57757a4cf362ac9a77e8db2d1beb0b96a239d1f2174",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran already missssing murder! Get Floran back out there, Sssir!",
+      "before": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı gönder, efendim!",
+      "after": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı çıkarssana, efendim!",
+      "reason": "Get back out there yeniden sahaya çıkarmadır; Türkçe çıkarssana mevcut s sesiyle kaynak tıslamasını ve oyuncuya yönelen isteği aktarır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 279,
+      "unit_id": "de59c2678b3b4fd398185bc00890c89188090a16e02a7f897e817731887d9536",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran already missssing murder! Get Floran back out there, Sssir!",
+      "before": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı gönder, efendim!",
+      "after": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı çıkarssana, efendim!",
+      "reason": "Get back out there yeniden sahaya çıkarmadır; Türkçe çıkarssana mevcut s sesiyle kaynak tıslamasını ve oyuncuya yönelen isteği aktarır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 355,
+      "unit_id": "d44204b3b3cb47abd5b090118a5c77f61215ad8b0f431d173fb703b16e00244a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran already missssing murder! Get Floran back out there, Sssir!",
+      "before": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı gönder, efendim!",
+      "after": "Floran katletmeyi şimdiden özledi! Floran'ı yeniden dışarı çıkarssana, efendim!",
+      "reason": "Get back out there yeniden sahaya çıkarmadır; Türkçe çıkarssana mevcut s sesiyle kaynak tıslamasını ve oyuncuya yönelen isteği aktarır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 128,
+      "unit_id": "c24bc8de58b81f4e238658f64dd184413075d49cb9ad3b8fbde6df64425be7f2",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran need to cave in the ssskull of whatever jusst killed Floran.",
+      "before": "Floran'ın, Floran'ı az önce öldüren şeyin kafatasını ezmesi gerek.",
+      "after": "Floran'ın, Floran'ı az önce öldüren şeyin kafatassını ezmesi gerek.",
+      "reason": "Kaynak tıslaması mevcut kafatası s sesinde korunur; öldüren/öldürülen yönü ve kafatasını ezme eylemi aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 204,
+      "unit_id": "3479b0d1782a96916410f16a705feaa91889e5b2ff179fbe03ba15a7bd7510c9",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran need to cave in the ssskull of whatever jusst killed Floran.",
+      "before": "Floran'ın, Floran'ı az önce öldüren şeyin kafatasını ezmesi gerek.",
+      "after": "Floran'ın, Floran'ı az önce öldüren şeyin kafatassını ezmesi gerek.",
+      "reason": "Kaynak tıslaması mevcut kafatası s sesinde korunur; öldüren/öldürülen yönü ve kafatasını ezme eylemi aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 280,
+      "unit_id": "d7903d67f1faaf50a45d94ef798afc56aef4dc26964e9f0606e0dda194d0d812",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran need to cave in the ssskull of whatever jusst killed Floran.",
+      "before": "Floran'ın, Floran'ı az önce öldüren şeyin kafatasını ezmesi gerek.",
+      "after": "Floran'ın, Floran'ı az önce öldüren şeyin kafatassını ezmesi gerek.",
+      "reason": "Kaynak tıslaması mevcut kafatası s sesinde korunur; öldüren/öldürülen yönü ve kafatasını ezme eylemi aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 356,
+      "unit_id": "f6e3d7c532aec48eda91c713f27146d5d8f6986fc459b859b82f7e4a7a7d3d91",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran need to cave in the ssskull of whatever jusst killed Floran.",
+      "before": "Floran'ın, Floran'ı az önce öldüren şeyin kafatasını ezmesi gerek.",
+      "after": "Floran'ın, Floran'ı az önce öldüren şeyin kafatassını ezmesi gerek.",
+      "reason": "Kaynak tıslaması mevcut kafatası s sesinde korunur; öldüren/öldürülen yönü ve kafatasını ezme eylemi aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 130,
+      "unit_id": "cb78e8a75a3db0d639e469da980018c53a008f26f249564eefdc743d46d87e09",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/respawned/glitch/default"
+      ],
+      "en": "Incorrigible. CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "Yola gelmez. LANET OLSUN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "Yola gelmez. LANET OLSUN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Glitch Yola gelmez öneki korunur; kaynak bağıran ölüm ve sayım cümlelerinin büyük harfi geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/glitch/default/1",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 206,
+      "unit_id": "6cd61e0847e8ac010e47d58bef0e5923d3912ca9e8529e81aaa6bbafd2829e34",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/respawned/glitch/default"
+      ],
+      "en": "Incorrigible. CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "Yola gelmez. LANET OLSUN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "Yola gelmez. LANET OLSUN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Glitch Yola gelmez öneki korunur; kaynak bağıran ölüm ve sayım cümlelerinin büyük harfi geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/glitch/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 282,
+      "unit_id": "75331c56990836a8f76fc53a2cd782c911ffd6794091d3c2cc66d363e4aa82cd",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/respawned/glitch/default"
+      ],
+      "en": "Incorrigible. CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "Yola gelmez. LANET OLSUN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "Yola gelmez. LANET OLSUN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Glitch Yola gelmez öneki korunur; kaynak bağıran ölüm ve sayım cümlelerinin büyük harfi geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/glitch/default/1",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 358,
+      "unit_id": "3ddf9977e191ce6f0807aa3a7ba5b5363d6ed858492d501ad1566100df13d5b7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/respawned/glitch/default"
+      ],
+      "en": "Incorrigible. CRAP! ANOTHER GLORIOUS DEATH? THAT'S 42 THIS WEEK!",
+      "before": "Yola gelmez. LANET OLSUN! Yine mi şanlı bir ölüm? Bu hafta 42 oldu!",
+      "after": "Yola gelmez. LANET OLSUN! YİNE Mİ ŞANLI BİR ÖLÜM? BU HAFTA 42 OLDU!",
+      "reason": "Glitch Yola gelmez öneki korunur; kaynak bağıran ölüm ve sayım cümlelerinin büyük harfi geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/glitch/default/1",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 136,
+      "unit_id": "8a6c9b0826db921cdf68c6e1a32496bc9820d1a9df302fa51b325276485f4716",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "FLORAN READY TO SSTAB, SHOOT AND KILL ALL THE PREY!",
+      "before": "FLORAN BÜTÜN AVLARI SSAPLAYIP VURUP ÖLDÜRMEYE HAZIR!",
+      "after": "FLORAN BÜTÜN AVLARA BIÇAK SSAPLAMAYA, ATEŞ ETMEYE VE ONLARI ÖLDÜRMEYE HAZIR!",
+      "reason": "Avları saplamak yanlış nesne ilişkisiydi. Bıçak hedefe saplanır; shoot silah bağlamında ateş etmektir. Üç eylem, tüm avlar ve kaynak s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 212,
+      "unit_id": "c0bf5e1e480dfb47060e5efd03b3344db166857d9b9418819b7dd67339fdb63b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "FLORAN READY TO SSTAB, SHOOT AND KILL ALL THE PREY!",
+      "before": "FLORAN BÜTÜN AVLARI SSAPLAYIP VURUP ÖLDÜRMEYE HAZIR!",
+      "after": "FLORAN BÜTÜN AVLARA BIÇAK SSAPLAMAYA, ATEŞ ETMEYE VE ONLARI ÖLDÜRMEYE HAZIR!",
+      "reason": "Avları saplamak yanlış nesne ilişkisiydi. Bıçak hedefe saplanır; shoot silah bağlamında ateş etmektir. Üç eylem, tüm avlar ve kaynak s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 288,
+      "unit_id": "d12c240ab6ac37c47b09fd63ff9dd760adc74f221adad680964bc963e0caacea",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "FLORAN READY TO SSTAB, SHOOT AND KILL ALL THE PREY!",
+      "before": "FLORAN BÜTÜN AVLARI SSAPLAYIP VURUP ÖLDÜRMEYE HAZIR!",
+      "after": "FLORAN BÜTÜN AVLARA BIÇAK SSAPLAMAYA, ATEŞ ETMEYE VE ONLARI ÖLDÜRMEYE HAZIR!",
+      "reason": "Avları saplamak yanlış nesne ilişkisiydi. Bıçak hedefe saplanır; shoot silah bağlamında ateş etmektir. Üç eylem, tüm avlar ve kaynak s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 364,
+      "unit_id": "d7d794905c48e38c562e1c68de0a2ed8509c457f9fab8feb0865fd9f154eb7ac",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "FLORAN READY TO SSTAB, SHOOT AND KILL ALL THE PREY!",
+      "before": "FLORAN BÜTÜN AVLARI SSAPLAYIP VURUP ÖLDÜRMEYE HAZIR!",
+      "after": "FLORAN BÜTÜN AVLARA BIÇAK SSAPLAMAYA, ATEŞ ETMEYE VE ONLARI ÖLDÜRMEYE HAZIR!",
+      "reason": "Avları saplamak yanlış nesne ilişkisiydi. Bıçak hedefe saplanır; shoot silah bağlamında ateş etmektir. Üç eylem, tüm avlar ve kaynak s tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 138,
+      "unit_id": "8bdf660469d1299e04e243177b1223dec428a82ce9f524f0f89659dc2cf10231",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran wonder what sssawing ssomeone in half with BULLETSS would be like? MAYBE FLORAN TRY!",
+      "before": "Floran merak ediyor: Birini MERMİLERLE ikiye biçmek nasıl olur? BELKİ FLORAN DENER!",
+      "after": "Floran birini MERMİLERLE ikiye biçmenin nassıl olacağını merak ediyor. BELKİ FLORAN DENER!",
+      "reason": "Dolambaçlı merak ediyor: nasıl olur dizilimi doğal Türkçe merak ifadesine çevrildi. Mevcut nasıl s sesinde tıslama korunur; mermi esprisi ve deneme olasılığı aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 214,
+      "unit_id": "a079d77374f6e2dacf892cb9cf8e165f2d5dd363bfa475e00975abc72b56071a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran wonder what sssawing ssomeone in half with BULLETSS would be like? MAYBE FLORAN TRY!",
+      "before": "Floran merak ediyor: Birini MERMİLERLE ikiye biçmek nasıl olur? BELKİ FLORAN DENER!",
+      "after": "Floran birini MERMİLERLE ikiye biçmenin nassıl olacağını merak ediyor. BELKİ FLORAN DENER!",
+      "reason": "Dolambaçlı merak ediyor: nasıl olur dizilimi doğal Türkçe merak ifadesine çevrildi. Mevcut nasıl s sesinde tıslama korunur; mermi esprisi ve deneme olasılığı aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 290,
+      "unit_id": "847484164a6783139907c02b341b1ca282f88aba1e3d863b27e869266f1551d5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran wonder what sssawing ssomeone in half with BULLETSS would be like? MAYBE FLORAN TRY!",
+      "before": "Floran merak ediyor: Birini MERMİLERLE ikiye biçmek nasıl olur? BELKİ FLORAN DENER!",
+      "after": "Floran birini MERMİLERLE ikiye biçmenin nassıl olacağını merak ediyor. BELKİ FLORAN DENER!",
+      "reason": "Dolambaçlı merak ediyor: nasıl olur dizilimi doğal Türkçe merak ifadesine çevrildi. Mevcut nasıl s sesinde tıslama korunur; mermi esprisi ve deneme olasılığı aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 366,
+      "unit_id": "3c542f07d24c2235d8adf53498a38046c88558a53f59afbaa9f8a0ffb2786b16",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran wonder what sssawing ssomeone in half with BULLETSS would be like? MAYBE FLORAN TRY!",
+      "before": "Floran merak ediyor: Birini MERMİLERLE ikiye biçmek nasıl olur? BELKİ FLORAN DENER!",
+      "after": "Floran birini MERMİLERLE ikiye biçmenin nassıl olacağını merak ediyor. BELKİ FLORAN DENER!",
+      "reason": "Dolambaçlı merak ediyor: nasıl olur dizilimi doğal Türkçe merak ifadesine çevrildi. Mevcut nasıl s sesinde tıslama korunur; mermi esprisi ve deneme olasılığı aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 148,
+      "unit_id": "c508372972d77153ae09288411076f7dac78eaa060faf3c8a3447bec325ae713",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "WHAT? TOO MANY AWESOME BULLETS FOR YOU, SSSISSSSY?",
+      "before": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, ÖDLEK?!",
+      "after": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, CESARETSSİZ?!",
+      "reason": "Tıslamalı korkaklık hitabı, tıslamasız ödlek yerine mevcut s içeren cesaretsiz ile aktarılır; yeni kimlik veya daha ağır hakaret eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 224,
+      "unit_id": "33086635df05c6dea3fc22c990303943b3806dd53cc8d3c9a5c0a2ebf0d623a1",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "WHAT? TOO MANY AWESOME BULLETS FOR YOU, SSSISSSSY?",
+      "before": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, ÖDLEK?!",
+      "after": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, CESARETSSİZ?!",
+      "reason": "Tıslamalı korkaklık hitabı, tıslamasız ödlek yerine mevcut s içeren cesaretsiz ile aktarılır; yeni kimlik veya daha ağır hakaret eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 300,
+      "unit_id": "1c0f4b6f8161c2b27ad89652c6221f0296c78403e1081e18125b0efed34b97f6",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "WHAT? TOO MANY AWESOME BULLETS FOR YOU, SSSISSSSY?",
+      "before": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, ÖDLEK?!",
+      "after": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, CESARETSSİZ?!",
+      "reason": "Tıslamalı korkaklık hitabı, tıslamasız ödlek yerine mevcut s içeren cesaretsiz ile aktarılır; yeni kimlik veya daha ağır hakaret eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 376,
+      "unit_id": "017f1d72f173abc073b2cad4a6a4f94ffba2368064501655eed356ff9da792bc",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "WHAT? TOO MANY AWESOME BULLETS FOR YOU, SSSISSSSY?",
+      "before": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, ÖDLEK?!",
+      "after": "NE? BU HARİKA MERMİLER FAZLA MI GELDİ, CESARETSSİZ?!",
+      "reason": "Tıslamalı korkaklık hitabı, tıslamasız ödlek yerine mevcut s içeren cesaretsiz ile aktarılır; yeni kimlik veya daha ağır hakaret eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 150,
+      "unit_id": "66fc9eb3f24597fc7f89f6aca7576625bfb6a9567a81fd24b5c0963c22f77f02",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "But...how can Floran ssstab thingss when Floran here?",
+      "before": "Ama... Floran burada dururken nasıl bir şeyleri ssaplayabilir?",
+      "after": "Ama... Floran burada dururken nasıl bir şeylere bıçak ssaplayabilir?",
+      "reason": "Saplamak fiilinin nesne/hedef ilişkisi bir şeyleri saplamak yerine bir şeylere bıçak saplamak olarak düzeltildi; kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 226,
+      "unit_id": "5efe2b94e0be0168832da47a2e74c52bbc009e03f5885505d245db2bc22b1171",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "But...how can Floran ssstab thingss when Floran here?",
+      "before": "Ama... Floran burada dururken nasıl bir şeyleri ssaplayabilir?",
+      "after": "Ama... Floran burada dururken nasıl bir şeylere bıçak ssaplayabilir?",
+      "reason": "Saplamak fiilinin nesne/hedef ilişkisi bir şeyleri saplamak yerine bir şeylere bıçak saplamak olarak düzeltildi; kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 302,
+      "unit_id": "9862beff066b7deaebc95b4ca008983911926d935e983ccfce1ab557ca333b2e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "But...how can Floran ssstab thingss when Floran here?",
+      "before": "Ama... Floran burada dururken nasıl bir şeyleri ssaplayabilir?",
+      "after": "Ama... Floran burada dururken nasıl bir şeylere bıçak ssaplayabilir?",
+      "reason": "Saplamak fiilinin nesne/hedef ilişkisi bir şeyleri saplamak yerine bir şeylere bıçak saplamak olarak düzeltildi; kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 378,
+      "unit_id": "bfb4746a3601972748d52b6c7ebeba83f8b083267ebdbe6eeb18ed8361874ac0",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "But...how can Floran ssstab thingss when Floran here?",
+      "before": "Ama... Floran burada dururken nasıl bir şeyleri ssaplayabilir?",
+      "after": "Ama... Floran burada dururken nasıl bir şeylere bıçak ssaplayabilir?",
+      "reason": "Saplamak fiilinin nesne/hedef ilişkisi bir şeyleri saplamak yerine bir şeylere bıçak saplamak olarak düzeltildi; kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 151,
+      "unit_id": "29bbddebb0572cbfbbbc32d0eed3c6d84e73d56f704e3e5d79c2dbef11ef4abd",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Sssir, Floran no kill thingsss from here.",
+      "before": "Efendim, Floran buradan bir şey öldüremez.",
+      "after": "Efendim, Floran'ın buradan bir şey öldürmesi imkânssız.",
+      "reason": "Kaynak öldürememe ve tıslama, mevcut imkânsız s sesinde doğal Türkçe ile aktarılır; efendim kelimesine olmayan s eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 227,
+      "unit_id": "f235dc47f629c3f92d683630f107c8761b8870a0627a06366a97433b955c5037",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Sssir, Floran no kill thingsss from here.",
+      "before": "Efendim, Floran buradan bir şey öldüremez.",
+      "after": "Efendim, Floran'ın buradan bir şey öldürmesi imkânssız.",
+      "reason": "Kaynak öldürememe ve tıslama, mevcut imkânsız s sesinde doğal Türkçe ile aktarılır; efendim kelimesine olmayan s eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 303,
+      "unit_id": "2a099b2ec16be75abb023117e92d4fd3eed6a5c4f53f0f53bfeec9b699c33323",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Sssir, Floran no kill thingsss from here.",
+      "before": "Efendim, Floran buradan bir şey öldüremez.",
+      "after": "Efendim, Floran'ın buradan bir şey öldürmesi imkânssız.",
+      "reason": "Kaynak öldürememe ve tıslama, mevcut imkânsız s sesinde doğal Türkçe ile aktarılır; efendim kelimesine olmayan s eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 379,
+      "unit_id": "b73fc41ec13114c6c8a657a1dec28f5e6af63ce736dbe4f6e78386c7d703c902",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Sssir, Floran no kill thingsss from here.",
+      "before": "Efendim, Floran buradan bir şey öldüremez.",
+      "after": "Efendim, Floran'ın buradan bir şey öldürmesi imkânssız.",
+      "reason": "Kaynak öldürememe ve tıslama, mevcut imkânsız s sesinde doğal Türkçe ile aktarılır; efendim kelimesine olmayan s eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/3",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 152,
+      "unit_id": "5eea1882cc4cefe268ae6afc47207a04efc6e83446ae05b102303efbd4b1f4d7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationassassin.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Fine. Floran sstay. Jusst...sssit here and no stab. Whatever.",
+      "before": "Peki. Floran kalsın. Öylece... otursun ve bıçaklamasın. Neyse.",
+      "after": "Peki. Floran kalssın. Öylece... oturssun ve bıçaklamassın. Neyse.",
+      "reason": "Kaynak stay/sit/stab tıslaması Türkçe kalsın/otursun/bıçaklamasın içindeki mevcut s seslerinden aktarılır. İki değişen ifade, ek eylem yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationassassin.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 228,
+      "unit_id": "b9e3d972ecb9829bd8f001bca88e7924caf2718695fb473279cbaf2c63a6cf60",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Fine. Floran sstay. Jusst...sssit here and no stab. Whatever.",
+      "before": "Peki. Floran kalsın. Öylece... otursun ve bıçaklamasın. Neyse.",
+      "after": "Peki. Floran kalssın. Öylece... oturssun ve bıçaklamassın. Neyse.",
+      "reason": "Kaynak stay/sit/stab tıslaması Türkçe kalsın/otursun/bıçaklamasın içindeki mevcut s seslerinden aktarılır. İki değişen ifade, ek eylem yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationcaptain.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 304,
+      "unit_id": "1da69502bc98783f9addeabbc9369ed3837e9fa77551bd2910fa207900ef4e52",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Fine. Floran sstay. Jusst...sssit here and no stab. Whatever.",
+      "before": "Peki. Floran kalsın. Öylece... otursun ve bıçaklamasın. Neyse.",
+      "after": "Peki. Floran kalssın. Öylece... oturssun ve bıçaklamassın. Neyse.",
+      "reason": "Kaynak stay/sit/stab tıslaması Türkçe kalsın/otursun/bıçaklamasın içindeki mevcut s seslerinden aktarılır. İki değişen ifade, ek eylem yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 380,
+      "unit_id": "21bbb74555a1241ed5b9a660131d9f0667b310cefd3c82b65496e20359cbd0b5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Fine. Floran sstay. Jusst...sssit here and no stab. Whatever.",
+      "before": "Peki. Floran kalsın. Öylece... otursun ve bıçaklamasın. Neyse.",
+      "after": "Peki. Floran kalssın. Öylece... oturssun ve bıçaklamassın. Neyse.",
+      "reason": "Kaynak stay/sit/stab tıslaması Türkçe kalsın/otursun/bıçaklamasın içindeki mevcut s seslerinden aktarılır. İki değişen ifade, ek eylem yok.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/4",
+          "origin": "npcs/crew/crewmember_spacestationdevastator.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 261,
+      "unit_id": "c1a86f37acb7a68392f741d778ddb811a425d96dea4362e1c2876226a46cc311",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmember_spacestationcommander.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "I'll gladly boss things around for you.",
+      "before": "İşleri senin yerine seve seve yönetirim.",
+      "after": "Senin için seve seve emir yağdırırım.",
+      "reason": "Boss around komutanın emir verme/kibirli tavrıdır. İşleri yönetmek iş planlama anlamına kayıyordu; kaynağın karakter sesi korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/0",
+          "origin": "npcs/crew/crewmember_spacestationcommander.npctype"
+        }
+      ]
+    }
+  ],
+  "initial_preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 400,
+    "context_units": 400,
+    "qa": {
+      "catalog_units_checked": 29738,
+      "raw_units_checked": 115,
+      "locked_terms": 670
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 400,
+    "context_units": 400,
+    "qa": {
+      "catalog_units_checked": 29738,
+      "raw_units_checked": 115,
+      "locked_terms": 675
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "npcs/crew/a_crewmembertemplate.npctype",
+        "note": "Template file comment says to copy it when creating a crewmate; the generic dialogue contains sample/template text. No live spawn reference was found for this template."
+      },
+      {
+        "source": "npcs/crew/a_crewmembertemplate_blank.npctype",
+        "note": "Blank copy template; source comment says not to edit it. No live spawn reference was found for this template."
+      },
+      {
+        "source": "npcs/crew/catcrewmember.npctype",
+        "note": "Base type for the cat crewmember role assets; dialogue branches identify follow, offer, cantreach, respawn and roleDescription events."
+      },
+      {
+        "source": "npcs/crew/catcrewmemberengineer.npctype",
+        "note": "Specialized cat engineer; catvillager source pool names this crew type. Engineer role dialogue and ship improvement branch are distinct."
+      },
+      {
+        "source": "npcs/crew/catcrewmemberjanitor.npctype",
+        "note": "Specialized cat janitor; baseType links to catcrewmember. RoleDescription is a crew recruitment line."
+      },
+      {
+        "source": "npcs/crew/catcrewmembermedic.npctype",
+        "note": "Specialized cat medic; baseType links to catcrewmember. combatBenefit, fieldBenefit and roleDescription are separate event branches."
+      },
+      {
+        "source": "npcs/crew/catcrewmembertailor.npctype",
+        "note": "Specialized cat tailor; baseType links to catcrewmember. converse/cat and roleDescription branches cover outfit interaction and recruitment."
+      },
+      {
+        "source": "npcs/crew/crewmemberLoveliusSmythe.npctype",
+        "note": "Lovelius Smythe uses fu_crewmember as base and has cantreach, follow, offer, respawned, roleDescription and unfollow branches. The noisynew Lua file contains a static spawn reference."
+      },
+      {
+        "source": "npcs/crew/crewmember_spacestationassassin.npctype",
+        "note": "FU crew type with soldier/Sniper role metadata and default, Floran and Glitch dialogue variants."
+      },
+      {
+        "source": "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "note": "FU crew type with captain role metadata and default, Floran and Glitch event variants."
+      },
+      {
+        "source": "npcs/crew/crewmember_spacestationcommander.npctype",
+        "note": "FU crew type with commander role metadata and default, Floran and Glitch event variants."
+      },
+      {
+        "source": "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "note": "FU crew type with devastator role metadata and default, Floran and Glitch event variants."
+      },
+      {
+        "source": "npcs/crew/crewmember_spacestationmercenary.npctype",
+        "note": "FU crew type with Mercenary role metadata. This packet only contains its first twelve fields; this role family continues in later candidates."
+      },
+      {
+        "source": "npcs/crew/fu_crewmember.npctype",
+        "note": "Crew role/dialogue base defines the FU crewmember behavior and fallback crew dialog; concrete player/mission event selection also depends on base-game systems."
+      },
+      {
+        "source": "npcs/catvillager.npctype",
+        "note": "Cat villager pool statically references catcrewmemberengineer, catcrewmembertailor, catcrewmembermedic and catcrewmemberjanitor."
+      },
+      {
+        "source": "npcs/villager.npctype.patch",
+        "note": "Villager crew pool statically references the five space-station crew types in this packet."
+      },
+      {
+        "source": "npcs/villageguard.npctype.patch",
+        "note": "Villageguard crew pool includes the station captain, assassin, commander, devastator and mercenary types."
+      },
+      {
+        "source": "npcs/guard.npctype.patch",
+        "note": "Guard crew pool includes the same station crew type IDs."
+      },
+      {
+        "source": "npcs/tenants/space/spacehero.npctype.patch",
+        "note": "Spacehero tenant pools include the station crew type IDs, as static candidate references."
+      },
+      {
+        "source": "objects/noisy/noisynew.lua",
+        "note": "The script contains a world.spawnNpc call for crewmemberLoveliusSmythe; this establishes a static spawn path, not successful in-game activation."
+      }
+    ],
+    "note": "All 400 packet occurrences were mapped to exact source asset/pointer context. Cat role IDs are present in catvillager pool; Lovelius has a static spawn call; station crew IDs appear in NPC/tenant crew pools. The two generic template assets have no spawn reference and are source templates only. FU/base-game behavior links do not prove the live selection of each line; active recruitment, event triggers and LQA remain untested. Sol: 400 doğrudan EN/pointer karşılaştırıldı; FU overlay değeri değişikliği yok. Lovelius human spawn, defense4/insanityimmunity/300 saniye ve kedi mühendis fuelEfficiency=0.10 kaynaktan okundu. Parlor/şablon veya havuz referansları her repliğin canlı seçimini kanıtlamaz."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "15 alan iki kaynak NPC şablonundan gelir. Kaynakta bunlar kopyalama örneğidir; dar spawn/havuz aramasında canlı referans bulunmadı. Aktif 400 oyun repliği denmez.",
+    "Cat crew, Lovelius ve station crew kaynak havuz/spawn/basetype bağlantıları statik olarak doğrulandı. Her repliğin canlı seçimi, işe alma, font ve sığma NOT TESTED.",
+    "Kedi terzi legacy scriptConfig/converse yolu korunur; olayın canlı erişimi doğrulanmadı.",
+    "Komutanın kaynak role/name değeri Nailgunner; dosya adına bakıp bütün görünür meslek adlarını Commander yapma. Kaynak role/type soldier ve diğer kimlikler aynı kalır.",
+    "Lovelius Beast Mode repliği gerçek yeni buff/effect tanımı olarak sunulmaz; source defense4 ve insanityimmunity ayrı teknik kimliklerdir.",
+    "Moonspeak/moonpeak ve Sefton önceki REVIEW durumunda kalır."
+  ],
+  "lexical_sources": [
+    {
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/sissy",
+      "use": "Kaynak saldırgan sissy hitabının zayıflık/korkaklık anlamı; ezik bildirimi yerine ödlek/cesaretsiz hitabı."
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/piss-off",
+      "use": "Kaynak offensive go-away emri; mevcut kovma küfrü korundu, ek tehdit veya olay eklenmedi."
+    }
+  ],
+  "source_context": {
+    "direct_source_fields": 400,
+    "layered_fields": [],
+    "metadata": [
+      {
+        "asset": "npcs/crew/a_crewmembertemplate.npctype",
+        "type": "crewmembertemplate",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "duncecap",
+            "chest": "protectoratechest",
+            "legs": "protectoratepants",
+            "back": "raggedprotectoratecape"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Template Crewmate",
+            "field": "Mod developer",
+            "uniformColorIndex": 1,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "glow",
+                "duration": 1
+              },
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "maxFuel",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/a_crewmembertemplate_blank.npctype",
+        "type": "crewmembertemplateblank",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "duncecap",
+            "chest": "protectoratechest",
+            "legs": "protectoratepants"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Template Crewmate",
+            "field": "Mod developer",
+            "uniformColorIndex": 1,
+            "benefits": []
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/catcrewmember.npctype",
+        "type": "catcrewmember",
+        "baseType": "base",
+        "identity": null,
+        "behavior": "crewmember",
+        "crew": {
+          "recruitable": true,
+          "recruitInteractAction": {
+            "messageType": "recruits.offerRecruit",
+            "messageArgs": []
+          },
+          "powerMultiplierExponent": 1.0,
+          "role": {
+            "type": "soldier",
+            "name": "Soldier",
+            "field": "Security",
+            "uniformColorIndex": 4
+          },
+          "ranks": [
+            "Pun-Master <role>",
+            "Feline <field> Officer",
+            "Deputy <role> Cat",
+            "Appurrentice <role>",
+            "Near-Purrfect <role>",
+            "Furierce <role>",
+            "Feline Commodore <role>",
+            "Executive Feline <role>",
+            "Independent <field> Cat",
+            "Dependant <field> Cat",
+            "Dreadnought <field> Cat",
+            "Feline <field> Mastermind",
+            "Feline <role>",
+            "Reliable <field> Cat",
+            "Theoretical <field> Cat",
+            "Reliable <field> Cat",
+            "Armchair <field> Cat"
+          ],
+          "defaultUniform": {
+            "chest": "hiderchest",
+            "legs": "hiderlegs"
+          },
+          "uniformSlots": [
+            "chest",
+            "chestCosmetic",
+            "legs",
+            "legsCosmetic",
+            "back",
+            "backCosmetic"
+          ]
+        },
+        "dialog_keys": [
+          "crewmember",
+          "converse",
+          "attack",
+          "reattack",
+          "killedTarget",
+          "lostTarget",
+          "outOfSight",
+          "cheerOn",
+          "cantReach"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/catcrewmemberengineer.npctype",
+        "type": "catcrewmemberengineer",
+        "baseType": "catcrewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "role": {
+            "type": "engineer",
+            "name": "Engineer",
+            "field": "Engineering",
+            "uniformColorIndex": 5,
+            "benefits": [
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "fuelEfficiency",
+                "value": 0.1
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/catcrewmemberjanitor.npctype",
+        "type": "catcrewmemberjanitor",
+        "baseType": "catcrewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "role": {
+            "type": "janitor",
+            "name": "Janitor",
+            "field": "Cleanliness",
+            "uniformColorIndex": 11
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/catcrewmembermedic.npctype",
+        "type": "catcrewmembermedic",
+        "baseType": "catcrewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "role": {
+            "type": "medic",
+            "name": "Medic",
+            "field": "Medical",
+            "uniformColorIndex": 3,
+            "benefits": [
+              {
+                "type": "Regeneration",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/catcrewmembertailor.npctype",
+        "type": "catcrewmembertailor",
+        "baseType": "catcrewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "role": {
+            "type": "tailor",
+            "name": "Tailor",
+            "field": "Fashion",
+            "uniformColorIndex": 9
+          },
+          "interactAction": "Message",
+          "interactData": {
+            "messageType": "recruits.offerUniformUpdate",
+            "messageArgs": []
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": [
+          "cat"
+        ]
+      },
+      {
+        "asset": "npcs/crew/crewmemberLoveliusSmythe.npctype",
+        "type": "crewmemberLoveliusSmythe",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "randolphcarterhat",
+            "chest": "smartchest",
+            "legs": "smartpants"
+          },
+          "role": {
+            "type": "chemist",
+            "name": "Occult Scholar",
+            "field": "Investigation",
+            "uniformColorIndex": 3,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "defense4",
+                "duration": 300
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "insanityimmunity",
+                "duration": 300
+              },
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "maxFuel",
+                "value": 450
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmember_spacestationassassin.npctype",
+        "type": "crewmember_spacestationassassin",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "fureconhead2",
+            "chest": "fureconchest2",
+            "legs": "fureconpants2"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Sniper",
+            "field": "Face-Bullets",
+            "uniformColorIndex": 1
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmember_spacestationcaptain.npctype",
+        "type": "crewmember_spacestationcaptain",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "fuprotectorhead",
+            "chest": "fuprotectorchest",
+            "legs": "fuprotectorpants"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Captain",
+            "field": "Picarding",
+            "uniformColorIndex": 3
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmember_spacestationcommander.npctype",
+        "type": "crewmember_spacestationcommander",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "mutaviskhead",
+            "chest": "mutaviskchest",
+            "legs": "mutavisklegs"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Nailgunner",
+            "field": "Tactical",
+            "uniformColorIndex": 7
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmember_spacestationdevastator.npctype",
+        "type": "crewmember_spacestationdevastator",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "furustedhead",
+            "chest": "furustedchest",
+            "legs": "furustedlegs"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Devastator",
+            "field": "Explosives",
+            "uniformColorIndex": 4
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmember_spacestationmercenary.npctype",
+        "type": "crewmember_spacestationmercenary",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "fubountyhunterhead",
+            "chest": "fubountyhunterchest",
+            "legs": "fubountyhunterpants"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Mercenary",
+            "field": "Guns N' Stuff",
+            "uniformColorIndex": 6
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      }
+    ]
+  },
+  "format_review": {
+    "source_42_is_count_not_ordinal_question": true,
+    "qa_exception_added": false,
+    "technical_ids_changed": false
+  }
+}
