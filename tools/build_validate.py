@@ -83,6 +83,11 @@ V075_DIALOGUE_FIELDS = {(r['asset'], r['pointer']) for r in _V075_MANIFEST['tran
 if len(V075_DIALOGUE_FIELDS) != 400 or len(_V075_MANIFEST['translations']) != 400:
     raise ValueError('v0.75 dialogue manifest field inventory drift')
 
+_V076_MANIFEST = json.loads(Path(__file__).with_name('v076_translations.json').read_text(encoding='utf-8'))
+V076_DIALOGUE_FIELDS = {(r['asset'], r['pointer']) for r in _V076_MANIFEST['translations']}
+if len(V076_DIALOGUE_FIELDS) != 400 or len(_V076_MANIFEST['translations']) != 400:
+    raise ValueError('v0.76 dialogue manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -725,6 +730,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V076_DIALOGUE_FIELDS:
+        return True
     if (a,p) in V075_DIALOGUE_FIELDS:
         return True
     if (a,p) in V074_DIALOGUE_FIELDS:

@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.76.0 Beta — Mürettebat diyalogları, ikinci dilim
+
+15 NPC dosyasında 400 yeni alan / 400 bağlam, 151 benzersiz kaynak metin. Paralı asker devamı, savaş yanlısı, Agaran, kutup/biyolojik tehlike uzmanları, ödül avcısı dosyası, aşçılar, koleksiyoncu, danışmanlar, tarikatçı ve cyborg ilk iki repliği. 7 Agaran kurmaca dil alanı tam alanlı onayla korunur. Katalog 18.152 alan; eski 17.752 aynen korundu.
+
+198 alanda toplam 230 cümle/kısa ifade düzeltildi: Floran tıslaması ve hitap, kaynak vurgu, katletme anlamı, komutaya layık olma, danışman sorusunun muhatabı ve bilim nidası, zehirlenmeyi giderme. 11 yeni LOCKED, toplam 686; dokuz tam tekrarlayan replik, Agaran ve FrakinMon. Chef3 kaynak repliğindeki %4 ile teknik 0.06 farkı kaynak tutarsızlığı olarak korundu. FU 6.5.8 pini ve teknik kimlikler aynı. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/crew2-20261012.json) · [Oyun kontrolü](docs/lqa/LQA_V076_20261012.md)
+
 ## v0.75.0 Beta — Mürettebat diyalogları, ilk dilim
 
 Kedi mürettebat ve meslekleri, Lovelius Smythe, uzay istasyonu suikastçı/kaptan/komutan/yıkıcı ve paralı asker ilk kısmı: 13 NPC dosyasında 400 yeni alan / 400 bağlam, 160 benzersiz kaynak metin. 15 alan iki kaynak şablonuna aittir; bunların canlı spawn yolu bulunmadı. Katalog 17.752 alan, önceki 17.352 aynen korundu.
@@ -44,6 +50,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.76.0 | Mürettebat diyalogları, ikinci dilim | 400 |
 | v0.75.0 | Mürettebat diyalogları, ilk dilim | 400 |
 | v0.74.0 | Son NPC kök konuşmaları | 34 |
 | v0.73.0 | NPC esnaf ve olay konuşmaları | 400 |
