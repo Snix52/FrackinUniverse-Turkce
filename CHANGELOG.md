@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.77.0 Beta — Mürettebat diyalogları, üçüncü dilim
+
+9 NPC dosyasında 400 yeni alan / 400 bağlam, 288 benzersiz kaynak metin: cyborg devamı, başmühendis, arıcı, avcı, alpaka, gaz uzmanı, jeolog, hayalet avcısı ve Greg ilk bölüm. 398 diyalog, 2 jeolog menü başlığı; 36 Greg ses alanı tam bağlı onayla korunur, 4 Rainbow normal Gökkuşağı çevirisi. Katalog 18.552 alan; eski 18.152 aynen korundu.
+
+81 alanda toplam 88 cümle/kısa ifade düzeltildi: arıcı kelime oyunu ve ölüm nedeni, oyuncu adına arı fırlatma, düşmüş arazi cümlesi, Floran sesi, organ/eğitim/kahve karşılığı, tetik ve boğaza kaçma deyimleri. 10 yeni LOCKED, toplam 696; Greg mevcut kilidi exact ses biçimleriyle genişletildi. Alpaka sözleşme/spawn yolu ve mute ağacının nesne inceleme sınırı kaynakta doğrulandı. FU 6.5.8 pini ve teknik kimlikler korunur. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/crew3-20261013.json) · [Oyun kontrolü](docs/lqa/LQA_V077_20261013.md)
+
 ## v0.76.0 Beta — Mürettebat diyalogları, ikinci dilim
 
 15 NPC dosyasında 400 yeni alan / 400 bağlam, 151 benzersiz kaynak metin. Paralı asker devamı, savaş yanlısı, Agaran, kutup/biyolojik tehlike uzmanları, ödül avcısı dosyası, aşçılar, koleksiyoncu, danışmanlar, tarikatçı ve cyborg ilk iki repliği. 7 Agaran kurmaca dil alanı tam alanlı onayla korunur. Katalog 18.152 alan; eski 17.752 aynen korundu.
@@ -50,6 +56,7 @@ README ve rehberler sadeleştirildi. Eski oturum/devir günlükleri kaldırıld�
 
 | Sürüm | İçerik | Eklenen metin alanı |
 | --- | --- | ---: |
+| v0.77.0 | Mürettebat diyalogları, üçüncü dilim | 400 |
 | v0.76.0 | Mürettebat diyalogları, ikinci dilim | 400 |
 | v0.75.0 | Mürettebat diyalogları, ilk dilim | 400 |
 | v0.74.0 | Son NPC kök konuşmaları | 34 |

@@ -1,0 +1,2729 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-13",
+  "cycle_id": "fu-auto-15-20261013",
+  "cycle_round": 1,
+  "base_commit": "8d0e83d96dc7de6e84455da4bd6f3def95b6122b",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 400,
+    "context_groups": 400,
+    "unique_english_strings": 288,
+    "assets": {
+      "npcs/crew/crewmembercyborg.npctype": 68,
+      "npcs/crew/crewmemberengineer2.npctype": 3,
+      "npcs/crew/crewmemberfubees.npctype": 97,
+      "npcs/crew/crewmemberfuhunter.npctype": 139,
+      "npcs/crew/crewmemberfullama.npctype": 32,
+      "npcs/crew/crewmembergas.npctype": 7,
+      "npcs/crew/crewmembergeologist.npctype": 5,
+      "npcs/crew/crewmemberghostbuster.npctype": 9,
+      "npcs/crew/crewmembergreg.npctype": 40
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 400,
+    "dialogue_fields": 398,
+    "merchant_ui_fields": 2,
+    "preserved_authored_speech_fields": 36,
+    "translated_greg_rainbow_fields": 4
+  },
+  "changes": {
+    "context_groups": 81,
+    "fields": 81,
+    "maintenance_fields": 0,
+    "sentences_by_context": 88,
+    "sentences_including_repeated_fields": 88,
+    "maintenance_sentences": 0,
+    "unique_corrected_source_strings": 66,
+    "count_method": "Değişen bağımsız cümle/kısa ifadeler elle sayıldı; Glitch önekinde değişiklik de kısa ifade, aynı EN farklı NPC/olay dalında ayrı sayılır. Değişmeyen cümle sayılmaz. Geri getirilen düşmüş kaynak cümlesi bir ifade sayılır."
+  },
+  "new_locked_terms": 10,
+  "new_locked_names": [
+    "Yesss, Captain!",
+    "bee-ing killed",
+    "bee friends",
+    "adrenal gland",
+    "tough-as-nails training",
+    "interface with SAIL",
+    "Coffee time, extra strong!",
+    "BEEEEEEEEEEEEES!",
+    "Floran will find enemy to ssstab! This terrain is not even a bother to Floran!",
+    "Floran will give you boostsss when we are on ship! / Floran will give you boostsss when we're on ship!"
+  ],
+  "locked_total": 696,
+  "greg_term_update": {
+    "before": {
+      "source": "Greg",
+      "tr": "Greg",
+      "tr_stem": "greg",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Pinli greg.config adı ve özgün anlamsız ses replikleri korunur. Yalnız tam alan/EN/TR bağlı preserve_utterance kayıtları değişmeden kalabilir.",
+      "mode": "preserve"
+    },
+    "after": {
+      "source": "Greg",
+      "tr": "Greg",
+      "tr_stem": "greg",
+      "context": "FU NPC diyalogları",
+      "type": "Diyalog terimi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Pinli greg.config adı ve özgün anlamsız ses replikleri korunur. Yalnız tam alan/EN/TR bağlı preserve_utterance kayıtları değişmeden kalabilir. v0.77 seçili crew Greg seslerinin exact yazım/noktalama guardları ve 36 yeni tam alan bağı eklendi; Rainbow sıradan İngilizce olarak Gökkuşağı çevrilir.",
+      "mode": "preserve",
+      "forms": [
+        {
+          "en": "Greg",
+          "tr": "Greg"
+        },
+        {
+          "en": "Greg?",
+          "tr": "Greg?"
+        },
+        {
+          "en": "Greg. Greeeeg greg greg Greg?",
+          "tr": "Greg. Greeeeg greg greg Greg?"
+        },
+        {
+          "en": "Greg!?",
+          "tr": "Greg!?"
+        },
+        {
+          "en": "Greg. Greg.",
+          "tr": "Greg. Greg."
+        },
+        {
+          "en": "Gregggggga gregga greg greg.",
+          "tr": "Gregggggga gregga greg greg."
+        },
+        {
+          "en": "Greg!? Greg. Gregga.",
+          "tr": "Greg!? Greg. Gregga."
+        },
+        {
+          "en": "Greg. Gregogreg.",
+          "tr": "Greg. Gregogreg."
+        },
+        {
+          "en": "Greg!!!!",
+          "tr": "Greg!!!!"
+        },
+        {
+          "en": ".....Greg!",
+          "tr": ".....Greg!"
+        },
+        {
+          "en": "Gregga greg! Greg?",
+          "tr": "Gregga greg! Greg?"
+        },
+        {
+          "en": "...Greg? GREGGGGG!!!!",
+          "tr": "...Greg? GREGGGGG!!!!"
+        },
+        {
+          "en": "...............greg. Gregga greg.",
+          "tr": "...............greg. Gregga greg."
+        }
+      ]
+    }
+  },
+  "greg_preserve_bindings": [
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/0",
+      "en": "Greg?",
+      "tr": "Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/1",
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "tr": "Greg. Greeeeg greg greg Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/2",
+      "en": "Greg!?",
+      "tr": "Greg!?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/3",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/5",
+      "en": "Gregggggga gregga greg greg.",
+      "tr": "Gregggggga gregga greg greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/6",
+      "en": "Greg!? Greg. Gregga.",
+      "tr": "Greg!? Greg. Gregga.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/7",
+      "en": "Greg. Gregogreg.",
+      "tr": "Greg. Gregogreg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/0",
+      "en": "Greg!!!!",
+      "tr": "Greg!!!!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/1",
+      "en": ".....Greg!",
+      "tr": ".....Greg!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/2",
+      "en": "Gregga greg! Greg?",
+      "tr": "Gregga greg! Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/3",
+      "en": "...Greg? GREGGGGG!!!!",
+      "tr": "...Greg? GREGGGGG!!!!",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/4",
+      "en": "...............greg. Gregga greg.",
+      "tr": "...............greg. Gregga greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/0",
+      "en": "Greg?",
+      "tr": "Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/1",
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "tr": "Greg. Greeeeg greg greg Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/2",
+      "en": "Greg!?",
+      "tr": "Greg!?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/3",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/5",
+      "en": "Gregggggga gregga greg greg.",
+      "tr": "Gregggggga gregga greg greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/6",
+      "en": "Greg!? Greg. Gregga.",
+      "tr": "Greg!? Greg. Gregga.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/7",
+      "en": "Greg. Gregogreg.",
+      "tr": "Greg. Gregogreg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/0",
+      "en": "Greg?",
+      "tr": "Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/1",
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "tr": "Greg. Greeeeg greg greg Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/2",
+      "en": "Greg!?",
+      "tr": "Greg!?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/3",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/5",
+      "en": "Gregggggga gregga greg greg.",
+      "tr": "Gregggggga gregga greg greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/6",
+      "en": "Greg!? Greg. Gregga.",
+      "tr": "Greg!? Greg. Gregga.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/7",
+      "en": "Greg. Gregogreg.",
+      "tr": "Greg. Gregogreg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/0",
+      "en": "Greg?",
+      "tr": "Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/1",
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "tr": "Greg. Greeeeg greg greg Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/2",
+      "en": "Greg!?",
+      "tr": "Greg!?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/3",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/5",
+      "en": "Gregggggga gregga greg greg.",
+      "tr": "Gregggggga gregga greg greg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/6",
+      "en": "Greg!? Greg. Gregga.",
+      "tr": "Greg!? Greg. Gregga.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/7",
+      "en": "Greg. Gregogreg.",
+      "tr": "Greg. Gregogreg.",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/0",
+      "en": "Greg?",
+      "tr": "Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/1",
+      "en": "Greg. Greeeeg greg greg Greg?",
+      "tr": "Greg. Greeeeg greg greg Greg?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/2",
+      "en": "Greg!?",
+      "tr": "Greg!?",
+      "preserve_utterance": true,
+      "term_source": "Greg",
+      "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    }
+  ],
+  "approved_packet_sha256": "0c26db1294e5ecd80bbaaf58db6b70c92ab6dcf69761dd71bdf0d12cce7426f8",
+  "luna_original_packet_sha256": "c4fd7061f0a1d44d3d0a98a6bae66de30910e0563ffb95591f01a899579deccd",
+  "approved_rows_sha256": "d8b3cc7412a177c9b1511a2db5710306fc2c4e96bf66982fd331ed41524f1eee",
+  "corrections": [
+    {
+      "unit_index": 9,
+      "unit_id": "07c85cb2b676fc3f8f0d6c0833dfb2533f394caa7e2b56a79665a434a44e137e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Floran hasss things to help you out in the Aether. I also excel at destructive tasks!",
+      "before": "Floran'ın Aether'de sana yardım edecek şeyleri var! Yıkım işlerinde de ustadır!",
+      "after": "Floran Aether'de sana yardım edecek şeylere ssahip! Yıkım işlerinde de ustayım!",
+      "reason": "Hasss kaynak tıslaması mevcut sahip s sesinde korunur. İkinci kaynak cümlesinde I öznesi var; ustadır yerine ustayım. Aether özel adı aynı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 16,
+      "unit_id": "4956727a184f1b1de56b54b0e056b1083e491351a98e00629c1be438f3da12e1",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Yesss, Captain!",
+      "before": "Evet, kaptan!",
+      "after": "Başüsstüne, kaptan!",
+      "reason": "Yesss askerî takip cevabının onay anlamı doğal başüstüne ile, kaynak tıslaması mevcut s sesinde aktarılır; normal Yes, captain! cevabı ayrı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 17,
+      "unit_id": "b93199bff240bea3b17f485a9bb91d3d24ebf0074de398956aea47dba47d3a48",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Let'ss go!",
+      "before": "Hadi gidelim!",
+      "after": "Hadi sseninle gidelim!",
+      "reason": "Lets(s) birlikte gitme çağrısıdır; örtük oyuncu/NPC birlikteliği seninle ile açık edilir ve mevcut s sesi tıslanır. Yeni hedef/olay eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 18,
+      "unit_id": "07b633505e32a91c18817acfb74ad28a52a5eb627b564b877cfcf7f939cacc5f",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Captain wantss Floran to follow?",
+      "before": "Kaptan, Floran'ın peşinden gelmesini istiyor mu?",
+      "after": "Kaptan, Floran'ın peşinden gelmesini isstiyor mu?",
+      "reason": "Kaynak wantss tıslaması mevcut istiyor s sesinde korunur; kaptan ve Floran kişi yönleri aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/2",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 33,
+      "unit_id": "6b34e6c39e5a03805b9a3d13a7c6fed6e2cb1c327e03aafc0e306dcc48b79148",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Let'ss work together and annihilate our foess.",
+      "before": "Hadi birlikte düşmanlarımızı yok edelim!",
+      "after": "Sseninle birlikte çalışıp düşmanlarımızı yok edelim.",
+      "reason": "Kaynağın work birlikte çalışma fiili geri getirildi; mevcut seninle s sesinde tıslama, kaynak normal nokta korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 34,
+      "unit_id": "942c578f55a371a0969479aebdf1ba622cb57455d5c71c5adff6f6743ced52c8",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Floran wantss to sstab and burn enemiess. Hire Floran.",
+      "before": "Floran düşmanları bıçaklayıp yakmak istiyor. Floran'ı işe al.",
+      "after": "Floran düşmanları bıçaklayıp yakmak isstiyor. Floran'ı işe al.",
+      "reason": "Wantss tıslaması mevcut istiyor s sesinde aktarılır; iki eylem ve işe alma emri korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 37,
+      "unit_id": "13cbfbe7ac59a8dacbcb02a2f30e7c3368303f400c988358586c227a73c85952",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Fevered. I was told that the installation of an Apex adrenal gland would drive me insane. I acquired one anyways. Hire me.",
+      "before": "Ateşli. Bir Apex adrenal bezinin takılmasının beni delirteceğini söylediler. Yine de bir tane edindim. Beni işe al.",
+      "after": "Hararetli. Bir Apex böbreküstü bezinin takılmasının beni delirteceğini söylediler. Yine de bir tane edindim. Beni işe al.",
+      "reason": "Fevered Glitch öneği duygu/hararet bağlamıyla, adrenal gland yerleşik böbreküstü bezi karşılığıyla aktarıldı. Apex, uyarı ve buna rağmen edinme aynı.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/1",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 42,
+      "unit_id": "0de95d7ba48fc8f0a65ca0bc3b4cce2b18e419f84f7a7daed1d48c53174daffa",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran remainss ever-ready to vanquish enemiess.",
+      "before": "Floran düşmanları alt etmeye her an hazır.",
+      "after": "Floran düşmanları alt etmeye ssürekli hazır.",
+      "reason": "Ever-ready sürekli hazır olmak; mevcut sürekli s sesi kaynak remainss/enemiess tıslamasını taşır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 43,
+      "unit_id": "922680d280de85db5efb7f7d94d3bfc0f3399f1aebed4dc35ed5f500d62421ca",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Circuitss reset. Commencing program.",
+      "before": "Devreler sıfırlandı. Program başlatılıyor.",
+      "after": "Devreler ssıfırlandı. Program başlatılıyor.",
+      "reason": "Circuitss tıslaması mevcut sıfırlandı s sesine taşındı; program eylemi aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/1",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 44,
+      "unit_id": "183f05e9a7cc6ea71f2911308e6d30fc5ead4fe06b4ca3b1f60575d9f192ea15",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran sseekss retribution, sstrong leader.",
+      "before": "Floran intikam arıyor, güçlü lider.",
+      "after": "Floran intikam isstiyor, güçlü lider.",
+      "reason": "Sseekss tıslaması mevcut istiyor s sesinde korunur; intikam isteği ve güçlü lidere hitap aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/2",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 49,
+      "unit_id": "7013fedfe7bfb3fde41ead54d0c16143568351b4c174ad73287a76abcb15a89b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran will interface with SAIL and increase ssship sspeed!",
+      "before": "Floran SAIL ile bağlantı kurup geminin hızını artıracak!",
+      "after": "Floran SAIL ile bağlantı kurup geminin daha hızlı gitmessini sağlayacak!",
+      "reason": "Kaynak gemi hızını artırma vaadi ve SAIL adı korunur; mevcut gitmesini s sesi tıslanır. SAIL kısaltmasına yapay s eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 50,
+      "unit_id": "efc0690dde5975767fd7d53be0fd934393c17d57ff5298c4ec6ca2107da3a2bb",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/glitch/default"
+      ],
+      "en": "Intense. With my biological enhancements, I can increase your ships speed.",
+      "before": "Yoğun. Biyolojik geliştirmelerim sayesinde geminin hızını artırabilirim.",
+      "after": "Hararetli. Biyolojik geliştirmelerim sayesinde geminin hızını artırabilirim.",
+      "reason": "Intense Glitch duygu öneği fiziksel yoğunluk çağrışımından hararetli tona taşındı; gerçek kaynak hız vaadi ve teknik değerler aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/glitch/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 57,
+      "unit_id": "eca5da4f6f9bc24022631517005105b89c7622208b185fc7cf2c5e15f200a50e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Floran should sstay here?",
+      "before": "Floran burada mı kalmalı?",
+      "after": "Floran burada kalssın mı?",
+      "reason": "Should stay sorusu doğal Türkçe öneri/izin sorusu kalsın mı ile; mevcut s sesinde kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 59,
+      "unit_id": "6dd8e09d64f28ed89bee951768bc9793c6a57277fee70c18e73533e3611eb74d",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Floran will sstay, then...",
+      "before": "Öyleyse Floran burada kalacak...",
+      "after": "Öyleysse Floran burada kalacak...",
+      "reason": "Sstay kaynak tıslaması mevcut öyleyse s sesine taşındı; then ve gelecek zaman aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 60,
+      "unit_id": "5ca6421580d6e738236d3059c2b8cddbb24a8564d0a6bceb954d0931bc0f7035",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembercyborg.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/glitch/default"
+      ],
+      "en": "Obliging. I will remain here for now, then.",
+      "before": "Uysal. Şimdilik burada kalacağım.",
+      "after": "Yardımsever. Öyleyse şimdilik burada kalacağım.",
+      "reason": "Obliging yardım etmeye istekli Glitch öneği, yalnız uysallık değildir. Then bağlacı öyleyse geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembercyborg.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/glitch/default/0",
+          "origin": "npcs/crew/crewmembercyborg.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 68,
+      "unit_id": "2cb98497a45af76a2f0f1055f6de5442e9d6431a223cadeefc0b52899ca18085",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberengineer2.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/default/default"
+      ],
+      "en": "Coffee time, extra strong!",
+      "before": "Kahve vakti, bol kafeinli!",
+      "after": "Kahve vakti, ekstra sert!",
+      "reason": "Extra strong kahvenin sertliğidir; kaynakta belirtilmeyen bol kafeinli miktar/özellik yorumu çıkarıldı. Teknik kahve buffı değişmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberengineer2.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/0",
+          "origin": "npcs/crew/crewmemberengineer2.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 69,
+      "unit_id": "9ecc2de5bd8cfd3db4021749b9910234ae621c32cb090348b6a653b18167b2e6",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberengineer2.npctype",
+        "scriptConfig/dialog/crewmember/fieldBenefit/default/default"
+      ],
+      "en": "Coffee time, extra strong!",
+      "before": "Kahve vakti, bol kafeinli!",
+      "after": "Kahve vakti, ekstra sert!",
+      "reason": "Extra strong kahvenin sertliğidir; kaynakta belirtilmeyen bol kafeinli miktar/özellik yorumu çıkarıldı. Teknik kahve buffı değişmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberengineer2.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/fieldBenefit/default/default/0",
+          "origin": "npcs/crew/crewmemberengineer2.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 71,
+      "unit_id": "fa4b5075d12e8c99728ee3fcd408250f5dbc548325dc68b198f82e771a5f4e30",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/cantreach/default/default"
+      ],
+      "en": "I can't reach you! How can I share my bees now?!!?",
+      "before": "Sana ulaşamıyorum! Arılarımı sana şimdi nasıl vereceğim?!!?",
+      "after": "Sana ulaşamıyorum! Arılarımı şimdi seninle nasıl paylaşacağım?!!?",
+      "reason": "Share my bees paylaşmaktır; sana nasıl vereceğim ifadesindeki tek yönlü verme yerine kaynak eylemi korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 83,
+      "unit_id": "87e1f05c02588869e8dde8a9f254b89fc05f18e5442e42dbd1d529add39e6caf",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/default/default"
+      ],
+      "en": "Have some bee-proofing!",
+      "before": "Arı sokmasına karşı koruma al!",
+      "after": "İşte arı sokmasına karşı koruma!",
+      "reason": "Have some sunma sözüdür; koruma al şeklindeki dolambaçlı emir yerine doğal teklif. Kaynak bee-proofing işlevi korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 84,
+      "unit_id": "acc9187d53f39f1a99a73619524c14476d143c5f3edebaa7b09919003a41d6f5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/default/default"
+      ],
+      "en": "I can help you avoid the wrath of beeeeeees!!",
+      "before": "Seni arıların gazabından koruyabilirim!!",
+      "after": "Seni aaaarıların gazabından koruyabilirim!!",
+      "reason": "Kaynak beeeeeees uzatılmış arı vurgusu mevcut a sesiyle aktarıldı; normal bee karşılıkları serbest.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/3",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 85,
+      "unit_id": "2086803e0caaaedaa74b47aff520d0bc08c4a0577b3ea94b60b941a3d816f3da",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Let Floran make you immune to BEEEESSSS!",
+      "before": "Floran seni ARILARA karşı bağışık kılsın!",
+      "after": "Floran seni AAARILARA karşı bağışık kılssın!",
+      "reason": "BEEEESSSS uzatma ve tıslaması arı ilk a ve kılsın mevcut s sesine taşındı; bağışıklık vaadi aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 86,
+      "unit_id": "529be4a676ef750e5deea61fadc02bf99dfbc5c5e2ddfdae41477cc8ea64bb9e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Beeee ssstings ssuck! Now you no worry!",
+      "before": "Arı sokmassı berbat! Artık endişelenmene gerek yok!",
+      "after": "Aaaarı sokmassı berbat! Artık endişelenmene gerek yok!",
+      "reason": "Kaynak beee uzatması ilk a sesiyle aktarıldı; mevcut sokmassı tıslaması ve ikinci cümle aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 87,
+      "unit_id": "10199da59a36f53cf8837492ec5564c29966dd47d00fb7c141e8db7ee1e8770c",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Have ssome beeee-no-ssstabby!",
+      "before": "Arı sokmassına karşı koruma al!",
+      "after": "İşte aaaarı ssokmasına karşı koruma!",
+      "reason": "Kaynak beee-no-ssstabby arı sokmasına karşı koruma; doğal sunma, a uzatması ve mevcut sokma s sesiyle tıslama korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 88,
+      "unit_id": "a17bfd0ffc561a8fb8e00b28a7a5945545ad0b7f4142e6b4a7a8f089247f1076",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Floran help you avoid the wrath of beeeeeeessss!!",
+      "before": "Floran arıların gazabından kaçmana yardım eder!!",
+      "after": "Floran sseni aaaarıların gazabından korur!!",
+      "reason": "Kaynak help avoid wrath amacı korunur; açık you karşılığı seni mevcut s sesiyle tıslanır, kaynak arı vurgusu uzatılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/3",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 91,
+      "unit_id": "638c5562854d23fd30598896a10f7f58fc4f1ab65d00b1df6c146516cd65cc16",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/glitch/default"
+      ],
+      "en": "Helpful. Have some bee-proofing!",
+      "before": "Yardımsever. Arı sokmasına karşı koruma al!",
+      "after": "Yardımsever. İşte arı sokmasına karşı koruma!",
+      "reason": "Glitch öneği aynı; Have some sunması doğal işte karşılığıyla aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/glitch/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 92,
+      "unit_id": "b9c337e03a9fee5ce5f576b91d802260746176b0bdd2e3ce3d2c29bff11f5fd7",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/glitch/default"
+      ],
+      "en": "Helpful. I can help you avoid the wrath of beeeeeees!!",
+      "before": "Yardımsever. Seni arıların gazabından koruyabilirim!!",
+      "after": "Yardımsever. Seni aaaarıların gazabından koruyabilirim!!",
+      "reason": "Glitch öneği aynı; kaynak uzun beeeeeees ses vurgusu arı a sesinde korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/glitch/default/3",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 93,
+      "unit_id": "45299221734657c2a72f298464ab6cc9c322e8f9f51ccc02d1c5330ad0c0c920",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/follow/default/default"
+      ],
+      "en": "BEEEEEEEEEEEEES!",
+      "before": "ARILAR!",
+      "after": "AAARILAR!",
+      "reason": "Kaynak çok uzatılmış savaş nidası Türkçe mevcut a sesiyle aktarılır; yalnız normal ARILAR diyerek vurgu kaybolmaz.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/default/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 98,
+      "unit_id": "8fe99b8fadf5837e6212af6f4d8fd5fb557ac6c525017bc573a72a1164f92888",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Yesss, Captain!",
+      "before": "Evet, kaptan!",
+      "after": "Başüsstüne, kaptan!",
+      "reason": "Yesss askerî takip cevabının onay anlamı doğal başüstüne ile, kaynak tıslaması mevcut s sesinde aktarılır; normal Yes, captain! cevabı ayrı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 99,
+      "unit_id": "af4428d756dfebe350eb8fcce8800c8adac25f6306ecddf3bb3e5037c150e6ff",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Let'ss go!",
+      "before": "Hadi gidelim!",
+      "after": "Hadi sseninle gidelim!",
+      "reason": "Lets(s) birlikte gitme çağrısıdır; örtük oyuncu/NPC birlikteliği seninle ile açık edilir ve mevcut s sesi tıslanır. Yeni hedef/olay eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 100,
+      "unit_id": "7def19f43e412989e0c43ed01df48ba1174ecf031b06314e826998c4e29940f5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Captain wantss Floran to follow?",
+      "before": "Kaptan, Floran'ın peşinden gelmesini istiyor mu?",
+      "after": "Kaptan, Floran'ın peşinden gelmesini isstiyor mu?",
+      "reason": "Kaynak wantss tıslaması mevcut istiyor s sesinde korunur; kaptan ve Floran kişi yönleri aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 108,
+      "unit_id": "4da37d22e8b0084cbf66357ed5cac10c539d3f45e4b166e1e07cc5344aab4bac",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "I'm <selfname>, and I really want to throw bees at people. Do you want to employ me?",
+      "before": "Ben <selfname>; insanlara arı atmak istiyorum. Beni işe alır mısın?",
+      "after": "Ben <selfname>; insanlara arı atmayı gerçekten çok istiyorum. Beni işe alır mısın?",
+      "reason": "Kaynak really want güçlü isteği geri getirildi; selfname değişkeni ve işe alma sorusu aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 109,
+      "unit_id": "21dd69e16099dffdfa101b25c09018ee8abd2c6b705161e342eba06f50ee5d9a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "You are JUST the kind of person I should throw bees for! Fancy employing me?",
+      "before": "Tam da arı fırlatmam gereken türden birisin! Beni işe almak ister misin?",
+      "after": "TAM da senin gibi biri için arı fırlatmalıyım! Beni işe almak ister misin?",
+      "reason": "Throw bees for senin için hizmettir, sana/benzer kişiye arı fırlatma hedefi değildir. Kaynak JUST vurgusu TAM ile korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 112,
+      "unit_id": "b5bbcca2b04bf5c7d7ae487a70e58b2b16c5be0e418a2353160b9bb7b89eb20b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Hello adventurer, mind if Floran join you and hurl beeeessss at thingss?",
+      "before": "Selam maceracı, Floran sana katılıp etrafa arı fırlatsın mı?",
+      "after": "Selam maceracı, Floran sana katılıp etrafa aaaarı fırlatssın mı?",
+      "reason": "Kaynak beeeessss uzatma/tıslaması mevcut a ve fırlatsın s sesinde korunur; Floran üçüncü kişi aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 113,
+      "unit_id": "bf49c2ede2309818d74bf0dfa77cabec4c688af6cf3672502cbbd1679e559d06",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Floran called <selfname> and really want to throw beeeessss at people. Do you want to hire Floran?",
+      "before": "Floran'ın adı <selfname> ve insanlara arı atmak istiyor. Floran'ı işe alır mısın?",
+      "after": "Floran'ın adı <selfname>; insanlara aaaarı atmayı gerçekten çok isstiyor. Floran'ı işe alır mısın?",
+      "reason": "Really want vurgusu ve kaynak beeeessss sesi geri getirildi; mevcut istiyor s sesi tıslanır. Name değişkeni ve işe alma sorusu değişmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 114,
+      "unit_id": "3d08f94db2414380b3a11f94d02ef008ef8d9e7c49630041aa1884a35f3e9d33",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "You are JUSSST the kind of persson Floran should throw beeeessss for! Hire Floran maybe?",
+      "before": "Floran'ın arı fırlatması için tam da gereken türden birisin! Floran'ı işe alır mısın?",
+      "after": "Floran TAM da ssenin gibi biri için aaaarı fırlatmalı! Belki Floran'ı işe alırssın?",
+      "reason": "For oyuncu adına/faydasına, hedefe değil. JUSSST/persson/beeeessss kaynak vurgusu mevcut TAM/senin/a sesinde aktarılır; ikinci kaynak maybe sorusu geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 115,
+      "unit_id": "0ec22686c1d4a0c7badd1f4fd6b0347beb7f9d0e7b15f1f866690df71156d380",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Floran looking for ship to cover in beeeessss. Are you wanting?",
+      "before": "Floran arılarla kaplayacağı bir gemi arıyor. İster misin?",
+      "after": "Floran aaaarılarla kaplayacağı bir gemi arıyor. İsster misin?",
+      "reason": "Beeeessss sesi mevcut a ve ister s seslerinde aktarılır; iki cümlede kaynak vurgu korunur.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/3",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 116,
+      "unit_id": "c5be64e87479f504b7dbd59ac5ec53f9274d825ac6f0657cdeef6fa2a393376a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Floran looking for crew. Can Floran join yourss and dump beeeessss everywhere?",
+      "before": "Floran bir mürettebat arıyor. Sana katılıp her yere arı bırakabilir mi?",
+      "after": "Floran bir mürettebat arıyor. Seninkine katılıp her yere aaaarı bırakssın mı?",
+      "reason": "Yourss kaynak oyuncunun mürettebatıdır; seninkine hedefi düzeltildi. Mevcut a ve bıraksın s seslerinde kaynak arı sesi korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/4",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 118,
+      "unit_id": "3860bc2a94a97c4fc04c24d6da4482ec3b01a6aa69f45a41814cdd45cca6e70e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Hopeful. I'm <selfname>, and I really want to throw bees at people. Do you want to employ me?",
+      "before": "Umutlu. Ben <selfname>; insanlara arı atmak istiyorum. Beni işe alır mısın?",
+      "after": "Umutlu. Ben <selfname>; insanlara arı atmayı gerçekten çok istiyorum. Beni işe alır mısın?",
+      "reason": "Glitch öneği aynı; kaynak really want güçlü isteği korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 119,
+      "unit_id": "94091e226c7188e23d946e63fe901069b5bc5ba07f339da26a12f59e2e74f9c3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/offer/glitch/default"
+      ],
+      "en": "Cheerful. You are JUST the kind of person I should throw bees for! Fancy employing me?",
+      "before": "Neşeli. Tam da arı fırlatmam gereken türden birisin! Beni işe almak ister misin?",
+      "after": "Neşeli. TAM da senin gibi biri için arı fırlatmalıyım! Beni işe almak ister misin?",
+      "reason": "Glitch öneği aynı; for oyuncu adına hizmeti ve JUST vurgusu korunur, oyuncu arı fırlatma hedefi yapılmaz.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/glitch/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 123,
+      "unit_id": "35add8e4bccf4cb626497115ab1fa5f83e47410edef72f30af9eff4ace415e31",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/respawned/default/default"
+      ],
+      "en": "I hate bee-ing killed. Haha. Shut up. Idiot.",
+      "before": "Arı sokmaları yüzünden ölmeye sinir oluyorum. Haha. Kes sesini. Aptal.",
+      "after": "Öldürülmekten arı-tık nefret ediyorum. Haha. Kes sesini. Aptal.",
+      "reason": "Bee-ing/being öldürülmek kelime oyunudur; kaynak arı sokmasıyla öldürülme nedeni söylemez. Arı-tık uyarlaması kötü arı esprisi tonunu korur; yeni ölüm nedeni veya mekanik eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/default/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 130,
+      "unit_id": "a79c07518b08b6fb769e480658cb5951b03f7a8585e562f8187c080c5e35f3bf",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran feelsss funny.",
+      "before": "Floran tuhaf hissediyor.",
+      "after": "Floran tuhaf hisssediyor.",
+      "reason": "Feelsss kaynak tıslaması mevcut hissediyor s sesinde bir uzatmayla aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 140,
+      "unit_id": "3fefed99642905e141ab9ff60a5439b5056b5835dae2ece5686c7db60fa36807",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/respawned/novakid/default"
+      ],
+      "en": "Was I dead? Well I guess I ain't now!",
+      "before": "Ölmüş müydüm? Neyse, artık değilim!",
+      "after": "Ölmüş müydüm? Neyse, sanırım artık değilim!",
+      "reason": "Kaynak I guess tahmini geri getirildi; kesinlikle başka bir ölüm olayı eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/novakid/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 146,
+      "unit_id": "df1f54892b1616ece90d24e55502448396cf7f66775257729a705ca8b67ad60e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran be here for you if you need someone to throw beeeessss at things!",
+      "before": "Floran, etrafa arı fırlatacak birine ihtiyacın olursa burada!",
+      "after": "Floran, etrafa aaaarı fırlatacak birine ihtiyacın olurssa burada!",
+      "reason": "Kaynak beeeessss uzatma/tıslaması mevcut a ve olursa s seslerinde aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 147,
+      "unit_id": "7007e15284ae525200af33379a267a9b023dd55a2329c5b9150269dace4960b5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "If you need beeeessss, you know where to find Floran!",
+      "before": "Arı lazım olursa Floran'ı nerede bulacağını biliyorsun!",
+      "after": "Aaaarı lazım olursa Floran'ı nerede bulacağını biliyorssun!",
+      "reason": "Kaynak beeeessss sesi mevcut a ve biliyorsun s seslerinde korunur; kişi ve yer aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/1",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 148,
+      "unit_id": "db927d877770b1877b51c8756dfabc3158882b2dc82a445fb113da0290d4bf7b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "If you need beeeessss, Floran be here!",
+      "before": "Arı lazım olursa Floran burada!",
+      "after": "Aaaarı lazım olurssa Floran burada!",
+      "reason": "Kaynak uzun arı/tıslama mevcut a ve olursa s seslerinde aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 151,
+      "unit_id": "14b3eedb566572a060273bf157782249a9d9e9bd7fb7d779dd296f3464886b82",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/glitch/default"
+      ],
+      "en": "Stalwart. If you need bees, I'll be here!",
+      "before": "Metin. Arı lazım olursa burada olacağım!",
+      "after": "Kararlı. Arı lazım olursa burada olacağım!",
+      "reason": "Glitch Stalwart öneği sağlam kararlı bağlılığı bildirir; Metin özel ad gibi okunabilen daha eski sözcüktür. Kaynak teklif aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/glitch/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 158,
+      "unit_id": "4f502a2624449a05ae99ff9e52b15c1c4691783c03a32ba9966c5f01952507f2",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Floran should sstay here?",
+      "before": "Floran burada mı kalmalı?",
+      "after": "Floran burada kalssın mı?",
+      "reason": "Should stay sorusu doğal Türkçe öneri/izin sorusu kalsın mı ile; mevcut s sesinde kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 160,
+      "unit_id": "6ac605ed2e0b1da00587631bb7dba4e24b5abe89249f8958c1286defd2a2cd4a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Floran will sstay, then...",
+      "before": "Öyleyse Floran burada kalacak...",
+      "after": "Öyleysse Floran burada kalacak...",
+      "reason": "Sstay kaynak tıslaması mevcut öyleyse s sesine taşındı; then ve gelecek zaman aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 161,
+      "unit_id": "880f4ce06058b6cef7a4fcf0e8096869f753b8abd331bcf8a866f8e811fe20e3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfubees.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/glitch/default"
+      ],
+      "en": "Obliging. I will remain here for now, then.",
+      "before": "Uysal. Şimdilik burada kalacağım.",
+      "after": "Yardımsever. Öyleyse şimdilik burada kalacağım.",
+      "reason": "Obliging yardım etmeye istekli Glitch öneği, yalnız uysallık değildir. Then bağlacı öyleyse geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfubees.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/glitch/default/0",
+          "origin": "npcs/crew/crewmemberfubees.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 178,
+      "unit_id": "8b5ada5e1bdacdbd9aca58fdf8fd81a7ca51dd131c93fb3d270301f515315f89",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/default/default"
+      ],
+      "en": "My tough-as-nails training will protect you from jungles.",
+      "before": "Zorlu eğitimim seni Tropik Ormanlardan korur.",
+      "after": "Çetin eğitimim seni Tropik Ormanlardan korur.",
+      "reason": "Tough-as-nails güçlü/zorlu eğitim deyimidir; Glitch dalıyla ortak incelenmiş karşılık çetin eğitim. Kaynak koruma vaadi aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 180,
+      "unit_id": "b6d8741d6fe89a01741f175b34cc954bb3a08e08ff79b102d53fa93bd6ee24d5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/default/default"
+      ],
+      "en": "I'll help us to prowl the jungle unhindered!",
+      "before": "Tropik Ormanda rahatça dolaşmamıza yardım edeceğim!",
+      "after": "Tropik Ormanın engellerine takılmadan dolaşmamıza yardım edeceğim!",
+      "reason": "Unhindered engellere takılmadan dolaşmak; teknik hareket bağışıklıkları değişmeden kaynak amaç korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 182,
+      "unit_id": "a3cebf036722d600edbcb35158bbaaa362851b4ed6c9a8ac574b4e2b236c6504",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Floransss sstabbing sskills protect you from jungless.",
+      "before": "Floran'ın sssaplama becerileri seni Tropik Ormanlardan korur.",
+      "after": "Floran'ın bıçak ssaplama becerileri seni Tropik Ormanlardan korur.",
+      "reason": "Saplamak eyleminin nesnesi bıçaktır; eksik nesne tamamlandı. Kaynak tıslaması mevcut s sesinde, ortam adı aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 183,
+      "unit_id": "cb9eed7921aaf34d1f2b0dd60718ee981c98febb42f86279b6612d47dfbe526d",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Floran will find enemy to ssstab! This terrain is not even a bother to Floran!",
+      "before": "Floran düşmanı bulup ona bıçak sssaplayacak!",
+      "after": "Floran düşmanı bulup ona bıçak sssaplayacak! Bu arazi Floran'a vız gelir!",
+      "reason": "Kaynağın ikinci This terrain is not even a bother to Floran cümlesi tamamen düşmüştü; geri getirildi. İlk cümle aynı, eklenen tek bağımsız cümle sayılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/1",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 185,
+      "unit_id": "b5a5f677a7185fd669ea579e02380f85f3de8f3d1e99cb2df24716977b70f615",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/floran/default"
+      ],
+      "en": "Mud? Clay? Hah. Floran ssstill hunt.",
+      "before": "Çamur mu? Kil mi? Hah. Floran hâlâ avlanır.",
+      "after": "Çamur mu? Kil mi? Hah. Floran avlanmayı ssürdürür.",
+      "reason": "Still hunt avlanmayı sürdürmek; mevcut sürdürür s sesi kaynak tıslamasını taşır. Çamur/kil ve av eylemi aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/floran/default/3",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 186,
+      "unit_id": "19638999d5f206e8dacc2846cc070ef22ffe0490fdb34ed53825ceb736671af9",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/glitch/default"
+      ],
+      "en": "Statement. My tough-as-nails training will protect you from jungles.",
+      "before": "Bildirim. Çivi gibi sağlam eğitimim seni Tropik Ormanlardan korur.",
+      "after": "Bildirim. Çetin eğitimim seni Tropik Ormanlardan korur.",
+      "reason": "Tough-as-nails eğitim deyimi fiziksel çiviye çevrilmez; normal ve Glitch dallarındaki onaylı çetin eğitim karşılığı eşleştirildi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/glitch/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 188,
+      "unit_id": "9be3f79500e734fee074b12a350e7ea9c5c720b3513846e1944758f1d28d5a38",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/glitch/default"
+      ],
+      "en": "Boastful. I'll help us to prowl the jungle unhindered!",
+      "before": "Övüngen. Tropik Ormanda rahatça dolaşmamıza yardım edeceğim!",
+      "after": "Övüngen. Tropik Ormanın engellerine takılmadan dolaşmamıza yardım edeceğim!",
+      "reason": "Unhindered engelsiz dolaşmayı bildirir; yalnız rahatça ifadesinin belirsizliği giderildi. Yeni bağışıklık/nesne eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/glitch/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 195,
+      "unit_id": "12fb36c92c8028b8051c66ed6e6f9b1ea3e6c9a179a74d45b3cce10af2964099",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Yesss, Captain!",
+      "before": "Evet, kaptan!",
+      "after": "Başüsstüne, kaptan!",
+      "reason": "Yesss askerî takip cevabının onay anlamı doğal başüstüne ile, kaynak tıslaması mevcut s sesinde aktarılır; normal Yes, captain! cevabı ayrı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 196,
+      "unit_id": "f1206015b250e472cf00b9e5cc5e4a96c9304d64b2b67ae216f594980cce05a9",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Let'ss go!",
+      "before": "Hadi gidelim!",
+      "after": "Hadi sseninle gidelim!",
+      "reason": "Lets(s) birlikte gitme çağrısıdır; örtük oyuncu/NPC birlikteliği seninle ile açık edilir ve mevcut s sesi tıslanır. Yeni hedef/olay eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/1",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 197,
+      "unit_id": "4ac16e8b6fef952cc57f16c282a68a9762ccf3c57b00232005106cf127110fa1",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/follow/floran/default"
+      ],
+      "en": "Captain wantss Floran to follow?",
+      "before": "Kaptan, Floran'ın peşinden gelmesini istiyor mu?",
+      "after": "Kaptan, Floran'ın peşinden gelmesini isstiyor mu?",
+      "reason": "Kaynak wantss tıslaması mevcut istiyor s sesinde korunur; kaptan ve Floran kişi yönleri aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/follow/floran/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 211,
+      "unit_id": "d682b716e8363701fbfe9ab107bce6b41d9e2cdbda3aa1165da509088400c6d3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/apex/default"
+      ],
+      "en": "I'm looking to escape to a new life. Are you hiring?",
+      "before": "Yeni bir hayata kaçmanın yolunu arıyorum. İşçi arıyor musun?",
+      "after": "Yeni bir hayata kaçmanın yolunu arıyorum. Mürettebat arıyor musun?",
+      "reason": "Are you hiring NPC mürettebata alınmayı sorar; işçi ifadesinin alakasız meslek çağrışımı giderildi. İlk cümle aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/apex/default/3",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 217,
+      "unit_id": "093bca2c3e0ecd85d21e50960fa90973f092cae9a81718b854e7cc0f545c2b8e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "You are JUST the kind of person I should work with! Fancy employing me?",
+      "before": "Tam da birlikte çalışmam gereken türden birisin! Beni işe almak ister misin?",
+      "after": "TAM da birlikte çalışmam gereken türden birisin! Beni işe almak ister misin?",
+      "reason": "Kaynak JUST vurgusu TAM ile korunur; başka vurgu veya olay eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 219,
+      "unit_id": "5997d6efea0e517f068ed430bfc31d11609bad9ceeb51b35f0d0c73685c4c77e",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "I'm looking for a place among a crew. Can I join yours?",
+      "before": "Bir mürettebata katılmak istiyorum. Seninkine gelebilir miyim?",
+      "after": "Bir mürettebata katılmak istiyorum. Seninkine katılabilir miyim?",
+      "reason": "Join yours belirli mürettebata katılmak; yalnız seninkine gelebilir miyim yer yönü yerine kaynak aidiyet eylemi.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/4",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 220,
+      "unit_id": "82b2aca675f4a6d77c50faa26ed7d91f7273b722b230cf8c81b55cd12d2fdae3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Floran wantss to join ship crew!",
+      "before": "Floran gemi mürettebatına katılmak istiyor!",
+      "after": "Floran gemi mürettebatına katılmak isstiyor!",
+      "reason": "Wantss tıslaması mevcut istiyor s sesinde korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 221,
+      "unit_id": "38f04f155ca223f7ae175bbdfe600dc9a37f5a1e8ba10476738c4c24061f6298",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/floran/default"
+      ],
+      "en": "Floran interesssted in long term employment. Can you give Floran a job?",
+      "before": "Floran uzun süreli bir iş arıyor. Floran'a iş verir misin?",
+      "after": "Floran uzun ssüreli bir iş arıyor. Floran'a iş verir misin?",
+      "reason": "Interessted kaynak tıslaması mevcut süreli s sesine taşındı; uzun süreli iş ve teklif aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/floran/default/1",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 226,
+      "unit_id": "3e05e0ed90accc823eefbf4f9c10ab6231f1d3371ebceabbea3fc7178e4e6f81",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/hylotl/default"
+      ],
+      "en": "Perhaps the life of a traveller is the one for me? May I enquire about joining your crew?",
+      "before": "Belki de gezgin hayatı bana göredir? Mürettebatına katılabilir miyim?",
+      "after": "Belki de gezgin hayatı bana göredir? Mürettebatına katılma konusunda bilgi alabilir miyim?",
+      "reason": "May I enquire bilgi istemedir; sadece katılma izni sorusuna indirgenmez. Kaynak Hylotl resmî nazik tonu korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/hylotl/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 228,
+      "unit_id": "77412faa6338da8ef0eff7af5f1b07d38770aa5fbd89302e382efeda5c66a9d5",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/hylotl/default"
+      ],
+      "en": "I believe I could aid you in your travels. Perhaps I could become a crew member on your ship?",
+      "before": "Yolculuklarında sana yardım edebilirim. Belki geminde mürettebat olabilirim?",
+      "after": "Yolculuklarında sana yardım edebilirim. Belki geminin mürettebatına katılabilirim?",
+      "reason": "Tek kişi mürettebat olamaz; bir üye olarak mürettebata katılma ilişkisi doğal Türkçeyle korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/hylotl/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 232,
+      "unit_id": "df044796215017d6acaa6897342efc9440c845bf234625aeed29d97e945c8fcd",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/novakid/default"
+      ],
+      "en": "If yer someone to join your mighty fine star crew, then I'm your huckleberry!",
+      "before": "Mürettebatına katılacak birini arıyorsan, aradığın kişi benim!",
+      "after": "Şu şahane yıldız mürettebatına katılacak birini arıyorsan, aradığın kişi benim!",
+      "reason": "Kaynak mighty fine star crew övgüsü kaybolmuştu; şahane yıldız mürettebatı ve huckleberry aranan kişi deyimi korunur. Kaynak bozuk If yer yazımına yeni olay uydurulmaz.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/novakid/default/3",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 234,
+      "unit_id": "ff6c797067d2b6c1bc605ddfcde52f246e0591d45dbb104f333c978ecab4d299",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/penguin/default"
+      ],
+      "en": "I've got an itchy trigger flipper.",
+      "before": "Tetik çekecek yüzgecim kaşınıyor.",
+      "after": "Tetik çekmeye can atan bir yüzgecim var.",
+      "reason": "Itchy trigger tetik çekmeye hevesli olma deyimidir, gerçek kaşıntı rahatsızlığı değildir. Penguen yüzgeci kelime oyunu ve saldırgan istek korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/penguin/default/1",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 238,
+      "unit_id": "c5b91ae1ebcac538bccf983b8402698606045d245e39c397afa6cd861c1bfcc3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/penguin/default"
+      ],
+      "en": "Not all penguins are troublemakers! Who am I kidding, yes we are.",
+      "before": "Bütün penguenler baş belası değil! Kendimi kandırıyorum, evet öyleyiz.",
+      "after": "Bütün penguenler baş belası değil! Kimi kandırıyorum, hepimiz öyleyiz.",
+      "reason": "Who am I kidding retorik sorusu geri getirildi; ikinci cümle evet öyleyiz tam penguen topluluğuna ilişkin itirafla korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/penguin/default/5",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 240,
+      "unit_id": "8407bc0fd8896abe57cdec18ba9ec98560023a76b0a9eee12e67eed8576158a8",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/offer/penguin/default"
+      ],
+      "en": "Yesterday I laughed so hard I almost choked on my mackerel.",
+      "before": "Dün o kadar çok güldüm ki neredeyse uskumruya boğuluyordum.",
+      "after": "Dün o kadar çok güldüm ki uskumru neredeyse boğazıma kaçıyordu.",
+      "reason": "Choked on my mackerel yiyeceğin boğaza kaçmasıdır; uskumruya boğulmak yanlış Türkçe ilişkiydi. Neredeyse, dün ve gülerken oluşması aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/penguin/default/7",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 251,
+      "unit_id": "94696f6ad78f020c44245937fb69dc1a50f819c28563a6ae28eb80d5d2636fe9",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/respawned/floran/default"
+      ],
+      "en": "Floran feelsss funny.",
+      "before": "Floran tuhaf hissediyor.",
+      "after": "Floran tuhaf hisssediyor.",
+      "reason": "Feelsss kaynak tıslaması mevcut hissediyor s sesinde bir uzatmayla aktarılır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/floran/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 261,
+      "unit_id": "4758cd6bbb783caf919516f599730b51cfbccd751949135ed18476dd78cde947",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/respawned/novakid/default"
+      ],
+      "en": "Was I dead? Well I guess I ain't now!",
+      "before": "Ölmüş müydüm? Neyse, artık değilim!",
+      "after": "Ölmüş müydüm? Neyse, sanırım artık değilim!",
+      "reason": "Kaynak I guess tahmini geri getirildi; kesinlikle başka bir ölüm olayı eklenmez.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/respawned/novakid/default/1",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 283,
+      "unit_id": "c04c2b82cb0d1d9368bbd427bb1d5e403dcb15d971a4462d00be93fb5983bdf2",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/glitch/default"
+      ],
+      "en": "Stalwart. I can always lend you my sword and skill in battle, should you need it.",
+      "before": "Metin. Gerekirse savaşta sana kılıcımı ve becerimi sunarım.",
+      "after": "Kararlı. Gerekirse savaşta sana kılıcımı ve becerimi sunarım.",
+      "reason": "Glitch Stalwart öneği kararlı bağlılığı bildirir; Metin adı çağrışımı giderildi, kaynak kılıç/beceri teklifi aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/glitch/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 297,
+      "unit_id": "f05537fa1d1da197cacd0caa1bb445392db7355a666ac2bbc19d6b1c17a3d619",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Floran should sstay here?",
+      "before": "Floran burada mı kalmalı?",
+      "after": "Floran burada kalssın mı?",
+      "reason": "Should stay sorusu doğal Türkçe öneri/izin sorusu kalsın mı ile; mevcut s sesinde kaynak tıslaması korunur.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 299,
+      "unit_id": "841785a9a6a04ad215b79297513923deafb08caf801ddbfcb0c30ef0d7b6bec3",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/floran/default"
+      ],
+      "en": "Floran will sstay, then...",
+      "before": "Öyleyse Floran burada kalacak...",
+      "after": "Öyleysse Floran burada kalacak...",
+      "reason": "Sstay kaynak tıslaması mevcut öyleyse s sesine taşındı; then ve gelecek zaman aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/floran/default/2",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 300,
+      "unit_id": "8d9ffdf70a955a45674cc4d3d4f7d0eaef2727ef1cf6c222942d4dff7459dbc6",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfuhunter.npctype",
+        "scriptConfig/dialog/crewmember/unfollow/glitch/default"
+      ],
+      "en": "Obliging. I will remain here for now, then.",
+      "before": "Uysal. Şimdilik burada kalacağım.",
+      "after": "Yardımsever. Öyleyse şimdilik burada kalacağım.",
+      "reason": "Obliging yardım etmeye istekli Glitch öneği, yalnız uysallık değildir. Then bağlacı öyleyse geri getirildi.",
+      "changed_sentences": 2,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfuhunter.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/unfollow/glitch/default/0",
+          "origin": "npcs/crew/crewmemberfuhunter.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 307,
+      "unit_id": "d7d509142186e9a4a26dafd26a7c6157dcd053fb6bb30e931b68ec5c4783a894",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfullama.npctype",
+        "scriptConfig/dialog/crewmember/cantreach/default/default"
+      ],
+      "en": "Oi' can't reach you!",
+      "before": "Hey, sana yetişemiyorum!",
+      "after": "Sana yetişemiyorum!",
+      "reason": "Oi apostroflu kullanım bu Alpaca dalında I birinci kişi zamiridir; Hey ünlemi eklenmez. Ayrı Oi, wait up! gerçekten ünlemdir ve aynı kalır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfullama.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/cantreach/default/default/0",
+          "origin": "npcs/crew/crewmemberfullama.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 312,
+      "unit_id": "e56649bfe5dfcf30d10068c45b60274cd456ce9c6e784ac37dd4a2ba62d43e2a",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfullama.npctype",
+        "scriptConfig/dialog/crewmember/combatBenefit/default/default"
+      ],
+      "en": "Come at me, yeh craven bastards!",
+      "before": "Gelin bakalım, ödlek herifler!",
+      "after": "Gelin bakalım, ödlek piçler!",
+      "reason": "Craven bastards kaynak açık aşağılayıcı savaş hitabıdır; yalnız herifler hafifletmesi yerine kaynak sertlik düzeyi korunur. Yeni tehdit/eylem yok.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfullama.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/combatBenefit/default/default/0",
+          "origin": "npcs/crew/crewmemberfullama.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 319,
+      "unit_id": "10110a89063480fbb0ab391e941f0445f55d2308d71b17efa8d8318bb4a2d732",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberfullama.npctype",
+        "scriptConfig/dialog/crewmember/offer/default/default"
+      ],
+      "en": "Oi' kin taste tha blood o' me enemies!",
+      "before": "Düşmanlarımın kanının tadına bakabilirim!",
+      "after": "Düşmanlarımın kanının tadını alabiliyorum!",
+      "reason": "Can taste algıyı bildirir; gelecekte tadına bakma eylemi teklifine dönüştürülmez. Oi birinci kişi zamiri, kaynak barbar savaş tonu aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberfullama.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/offer/default/default/0",
+          "origin": "npcs/crew/crewmemberfullama.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 349,
+      "unit_id": "1a40e974765fe5bfc8846b433b473b6baccf175b7bcb8138d40f105cee95046b",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmembergeologist.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran sssell thingss to you.",
+      "before": "Floran sssana şeyler satar.",
+      "after": "Floran ssana eşya satar.",
+      "reason": "Things satılabilir eşyalardır; doğal nesne seçildi. Mevcut sana s sesi tıslanır, teknik merchant fiyat/kimlikleri aynı.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmembergeologist.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmembergeologist.npctype"
+        }
+      ]
+    },
+    {
+      "unit_index": 358,
+      "unit_id": "3f6dda74e5632c333302f5ad5b5b35f0f3516609eb8bb75f4a36e837a6f4a540",
+      "context": [
+        "npcs/crew",
+        "npcs/crew/crewmemberghostbuster.npctype",
+        "scriptConfig/dialog/crewmember/roleDescription/floran/default"
+      ],
+      "en": "Floran will give you boostsss when we're on ship!",
+      "before": "Floran gemideyken sana takviyesss verecek!",
+      "after": "Floran gemideyken sana takviye ssağlayacak!",
+      "reason": "Takviye sözcüğünde olmayan s eklenmez; kaynak boostsss tıslaması mevcut sağlayacak s sesinde korunur. Aynı anlamdaki v0.76 onaylı gemi takviyesi varyantıyla tutarlıdır.",
+      "changed_sentences": 1,
+      "occurrences": [
+        {
+          "asset": "npcs/crew/crewmemberghostbuster.npctype",
+          "pointer": "/scriptConfig/dialog/crewmember/roleDescription/floran/default/0",
+          "origin": "npcs/crew/crewmemberghostbuster.npctype"
+        }
+      ]
+    }
+  ],
+  "initial_preflight": {
+    "status": "REJECTED",
+    "error": "Missing or unchanged translation: 69b84607b4fca398e2287c67c4a2ca84c637f78815c5d78bf487d6516241aa79"
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 400,
+    "context_units": 400,
+    "qa": {
+      "catalog_units_checked": 31338,
+      "raw_units_checked": 115,
+      "locked_terms": 696
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmembercyborg.npctype",
+        "note": "Cyborg role/benefit (shipSpeed 1.25, Aether immunity 300 s) ve tüm diyalog dalları incelendi."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmemberengineer2.npctype",
+        "note": "Chief Engineer role/benefit ve metindeki 25% thrust / 20% fuel değerleri incelendi; yapılandırılmış shipSpeed 3.75 ile fuelEfficiency 0.2 ayrıca kayıtlı, anlam eşitliği varsayılmadı."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmemberfubees.npctype",
+        "note": "Bee Guy role, bee sting immunity 300 s, shipSpeed benefit ve bee temalı diyalog dalları incelendi."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmemberfuhunter.npctype",
+        "note": "Beast Hunter role, jungle/fire/other immunity benefits ve Apex/Avian/Hylotl/Novakid/Penguin/Floran/Glitch konuşmacı dalları incelendi."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmemberfullama.npctype",
+        "note": "Sol: Alpaca Contract crewcontract_fullama crewname/race human ve crewcontract.lua spawn bağı mevcut. behaviorConfig.behavior=crewmembermute; bu ağacın inspectObjects=false, crew notifications ve converse modülleri var. Mute adı bütün konuşmaları kapattığının kanıtı değildir."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmembergas.npctype",
+        "note": "Scientist role, gas immunity and maxFuel 200 benefits, Floran/Glitch variants incelendi."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmembergeologist.npctype",
+        "note": "Geologist role, baseType=crewmember, trade pane title and dialogue incelendi; dialogue/shop görünürlüğü oyun içinde denenmedi."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmemberghostbuster.npctype",
+        "note": "Ghostbuster role, maxFuel/Erchius immunity/regeneration benefits, ghost combat lines incelendi."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/crew/crewmembergreg.npctype",
+        "note": "Sol: NPC npcname/role Greg, defenseboostgreg/300s/maxFuel300, seçili 40 kaynak alan doğrulandı. 36 ses alanı exact bağlı onay, dört Rainbow normal Gökkuşağı çevirisidir."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/villager.npctype.patch",
+        "note": "Weighted villager crew pool includes selected cyborg, engineer2, bee, hunter, gas, geologist, ghostbuster, and Greg NPC types."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/nightar/nightarvillager.npctype",
+        "note": "Nightar villager graduation NPC list includes the applicable selected crew types; static eligibility only."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/elduukharvillager.npctype",
+        "note": "Elduukhar villager graduation NPC list includes the applicable selected crew types; static eligibility only."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/fupeacekeepervillager.npctype",
+        "note": "Peacekeeper villager graduation list contains cyborg; source list is not proof of live dialogue selection."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/fuvillageguard.npctype",
+        "note": "FU village guard graduation crew list contains cyborg."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/villageguard.npctype.patch",
+        "note": "Village guard pool includes cyborg and Greg choices."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/guard.npctype.patch",
+        "note": "Guard pool includes cyborg and Greg choices."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/space/spacehero.npctype.patch",
+        "note": "Space hero tenant pool includes cyborg and Greg choices."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/electrician.npctype.patch",
+        "note": "Electrician tenant can graduate to engineer2."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/scientist.npctype.patch",
+        "note": "Scientist tenant graduation list includes gas and geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/hazmat.npctype.patch",
+        "note": "Hazmat tenant graduation list includes gas and geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/apexresearchlab.npctype.patch",
+        "note": "Apex research tenant graduation list includes gas and geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/madscientist.npctype",
+        "note": "Mad scientist graduation list includes gas and geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/fupeglacischolar.npctype",
+        "note": "Peglaci scholar graduation list includes gas and geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/glitchcastle.npctype.patch",
+        "note": "Glitch castle graduation list includes geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/nightar/nightarvillagerking.npctype",
+        "note": "Nightar king graduation list includes geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/fumantizinoble.npctype",
+        "note": "Mantizi noble graduation list includes geologist."
+      },
+      {
+        "source": "local-runtime/fu_source/npcs/tenants/fucultistbuilder.npctype",
+        "note": "Cultist builder graduation list includes Greg."
+      },
+      {
+        "source": "items/active/crewcontracts/crewcontract_fullama.activeitem",
+        "note": "crewname=crewmemberfullama, race=human; daha önce dar NPC/tenant taramasında bulunmayan gerçek sözleşme bağlantısı."
+      },
+      {
+        "source": "items/active/crewcontracts/crewcontract.lua",
+        "note": "crewname okunup world.spawnNpc çağrısına verilir; canlı spawn denenmedi."
+      },
+      {
+        "source": "behaviors/npc/crew/crewmembermute.behavior",
+        "note": "inspectObjects=false nesne incelemesini kapatır; crewmember-notifications/converse modülleri korunur. Tüm konuşmalar mute diye iddia edilmez."
+      },
+      {
+        "source": "frackinship/scripts/quest/shipupgrades.lua",
+        "note": "shipSpeed crew/stat/BYOS toplamı ve clamp ile uygulanır; crewStats fallback shipSpeed=15. Engineer 3.75 bunun dörtte biridir ama gerçek diğer katkılarla toplam yüzde değişebilir; diyalog %25/%20 aynen korunur."
+      },
+      {
+        "source": "npcs/crew/crewmembergeologist.npctype",
+        "note": "Kaynak yorumuna göre merchant interactAction yalnız crew içinde kaptan etkileşimi; title/subtitle görünür iki alan, fiyat/ürün kimlikleri aynı."
+      }
+    ],
+    "note": "Sol: 288 benzersiz EN ve bütün TR bağlamları elle okundu; 400 exact doğrudan EN/pointer ve overlay değişikliği yokluğu doğrulandı. 398 diyalog + 2 jeolog merchant UI alanı. 36 Greg ses alanı dar onay, 4 Rainbow Gökkuşağı. Alpaca sözleşme/spawn ve mute behavior gerçek nesne-inceleme sınırı doğrulandı; eski Luna no external pool tespiti tüm kaynaklara genellenmedi. Engineer kaynak %25/%20, yapılandırılmış 3.75/0.2 ve shipupgrades aggregation ayrı okunup korundu. Havuz/spawn kanıtı her repliğin canlı seçimi değildir. Mevcut Türkçe s sesi bulunmayan kısa Floran satırlarına bağımsız SSS veya bozuk ek uydurulmadı. Canlı işe alma/seçim/font/sığma NOT TESTED."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Kaynak havuz/spawn/basetype/behavior bağları statik doğrulandı; canlı işe alma, olay seçimi, font ve sığma NOT TESTED.",
+    "Luna dar NPC/tenant taramasında Alpaca dış çağrısını bulamadı; Sol tüm kaynakta crewcontract_fullama.activeitem ve crewcontract.lua world.spawnNpc bağlantısını buldu. Artık spawn yolu yok diye genellenmez.",
+    "crewmembermute ağacında inspectObjects=false, crewmember-notifications ve converse modülleri var; mute adı bütün konuşmaları kapattığı anlamına gelmez.",
+    "Chief Engineer kaynak %25 itki/%20 yakıt, teknik shipSpeed 3.75/fuelEfficiency0.2 korunur. Shipupgrades crewStats fallback15 ve stat/crew/BYOS toplama/clamp yolu okundu; 3.75=15*0.25 fakat diğer katkılarla gerçek toplamın oranı değişebilir.",
+    "Jeolog merchant yorumuna göre crew içinde ve yalnız kaptan etkileşimiyle açılır; iki görünür başlık alanı çevrilir, buy/sellFactor ve ürün kimlikleri aynı.",
+    "36 Greg ad/hece alanı exact bağlı preserve onaylı; 4 Rainbow sıradan İngilizce sözcük olarak Gökkuşağı. Aynı NPC veya Greg adı içermek tek başına unchanged izni değildir.",
+    "Bee-ing killed kelime oyunu arı sokmasıyla ölüm nedeni söylemez; arı-tık uyarlaması kurgu/ölüm nedeni eklemez. Bees immunity kaynak şaka adlandırması; gerçek beestingimmunity300s teknik kimliği aynı.",
+    "Türkçe s sesi olmayan kısa doğal Floran satırlarında bağımsız SSS veya kelimede olmayan s uydurulmadı. Diğer doğal s seslerinde kaynak tıslaması korundu.",
+    "Moonspeak/moonpeak ve Sefton önceki REVIEW durumunda kalır."
+  ],
+  "source_context": {
+    "direct_source_fields": 400,
+    "layered_fields": [],
+    "metadata": [
+      {
+        "asset": "npcs/crew/crewmembercyborg.npctype",
+        "type": "crewmembercyborg",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "rustyskul",
+            "chest": "apextier6schest",
+            "legs": "apextier6spants"
+          },
+          "role": {
+            "type": "chemist",
+            "name": "Cyborg",
+            "field": "Obliteration",
+            "uniformColorIndex": 8,
+            "benefits": [
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "shipSpeed",
+                "value": 1.25
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "aetherimmunity",
+                "duration": 300
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmemberengineer2.npctype",
+        "type": "crewmemberengineer2",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {},
+          "role": {
+            "type": "engineer",
+            "name": "Chief Engineer",
+            "field": "Engineering",
+            "uniformColorIndex": 5,
+            "benefits": [
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "shipSpeed",
+                "value": 3.75
+              },
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "fuelEfficiency",
+                "value": 0.2
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "fuenergytickupcrew2",
+                "duration": 300
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmemberfubees.npctype",
+        "type": "crewmemberfubees",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "fugoldenhead",
+            "chest": "fugoldenchest",
+            "legs": "fugoldenlegs",
+            "back": "fubeewings"
+          },
+          "role": {
+            "type": "chemist",
+            "name": "Bee Guy",
+            "field": "Bee-Ology",
+            "uniformColorIndex": 5,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "beestingimmunity",
+                "duration": 300
+              },
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "shipSpeed",
+                "value": 2
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmemberfuhunter.npctype",
+        "type": "crewmemberfuhunter",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "headbandhead",
+            "chest": "toughchest",
+            "legs": "toughlegs"
+          },
+          "role": {
+            "type": "chemist",
+            "name": "Beast Hunter",
+            "field": "Hunter/Gatherer",
+            "uniformColorIndex": 1,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "fireblock",
+                "duration": 280
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "jungleslowimmunity",
+                "duration": 280
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "protoimmunity",
+                "duration": 280
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "fumudslowimmunity",
+                "duration": 280
+              },
+              {
+                "type": "PersistentEffect",
+                "effect": "defense4"
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmemberfullama.npctype",
+        "type": "crewmemberfullama",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "alpacaguardhead",
+            "chest": "alpacaguardchest",
+            "legs": "alpacaguardlegs"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Berserker",
+            "field": "Murderology",
+            "uniformColorIndex": 2,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "rage",
+                "duration": 10
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmembergas.npctype",
+        "type": "crewmembergas",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "ff_gasmask",
+            "chest": "scientistchest",
+            "legs": "scientistlegs"
+          },
+          "role": {
+            "type": "chemist",
+            "name": "Scientist",
+            "field": "Toxic Gas",
+            "uniformColorIndex": 6,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "gasimmunity",
+                "duration": 300
+              },
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "maxFuel",
+                "value": 200
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmembergeologist.npctype",
+        "type": "crewmembergeologist",
+        "baseType": "crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "scientisthead",
+            "chest": "scientistchest",
+            "legs": "scientistlegs"
+          },
+          "role": {
+            "type": "chemist",
+            "name": "Geologist",
+            "field": "Geology",
+            "uniformColorIndex": 6
+          },
+          "interactAction": "OpenMerchantInterface",
+          "interactData": {
+            "config": "/interface/windowconfig/merchant.config",
+            "paneLayoutOverride": {
+              "windowtitle": {
+                "title": " Geologist",
+                "subtitle": " Rocks and Rock-like things."
+              }
+            },
+            "buyFactor": 8.75,
+            "sellFactor": 0.3,
+            "items": [
+              {
+                "item": "copperore"
+              },
+              {
+                "item": "silverore"
+              },
+              {
+                "item": "goldore"
+              },
+              {
+                "item": "ironore"
+              },
+              {
+                "item": "tungstenore"
+              },
+              {
+                "item": "titaniumore"
+              },
+              {
+                "item": "durasteelore"
+              },
+              {
+                "item": "moonstoneore"
+              },
+              {
+                "item": "zerchesiumore"
+              },
+              {
+                "item": "prisiliteore"
+              },
+              {
+                "item": "protociteore"
+              },
+              {
+                "item": "penumbriteore"
+              },
+              {
+                "item": "uraniumore"
+              },
+              {
+                "item": "neptuniumore"
+              },
+              {
+                "item": "plutoniumore"
+              },
+              {
+                "item": "thoriumore"
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmemberghostbuster.npctype",
+        "type": "crewmemberghostbuster",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "goggles2",
+            "chest": "tw_spacesuitchest",
+            "legs": "tw_spacesuitlegs",
+            "back": "tw_spacepunkback"
+          },
+          "role": {
+            "name": "Ghostbuster",
+            "field": "Ghostbusting",
+            "uniformColorIndex": 2,
+            "benefits": [
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "maxFuel",
+                "value": 340
+              },
+              {
+                "type": "EphemeralEffect",
+                "effect": "erchiusimmunity",
+                "duration": 900
+              },
+              {
+                "type": "Regeneration",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      },
+      {
+        "asset": "npcs/crew/crewmembergreg.npctype",
+        "type": "crewmembergreg",
+        "baseType": "fu_crewmember",
+        "identity": null,
+        "behavior": null,
+        "crew": {
+          "defaultUniform": {
+            "head": "duncecap",
+            "chest": "tshirtchest",
+            "legs": "jeans1legs"
+          },
+          "role": {
+            "type": "soldier",
+            "name": "Greg",
+            "field": "Gregology",
+            "uniformColorIndex": 7,
+            "benefits": [
+              {
+                "type": "EphemeralEffect",
+                "effect": "defenseboostgreg",
+                "defenseAmount": 6,
+                "duration": 300
+              },
+              {
+                "type": "ShipUpgradeBenefit",
+                "property": "maxFuel",
+                "value": 300
+              }
+            ]
+          }
+        },
+        "dialog_keys": [
+          "crewmember"
+        ],
+        "converse_keys": []
+      }
+    ]
+  },
+  "format_review": {
+    "technical_ids_changed": false,
+    "qa_exception_added": false,
+    "source_percentages_preserved": true,
+    "authored_speech_bindings_added": 36,
+    "merchant_labels_preserve_leading_spaces": true
+  }
+}
