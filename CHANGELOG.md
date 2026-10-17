@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.78.0 Beta — Mürettebat diyalogları, son confirmed dilim
+
+21 NPC dosyasında 301 yeni diyalog alanı /301 bağlam, 242 benzersiz kaynak metin: Greg kalan sesleri; koruyucu, temizlikçi, evsiz, hacker, büyülü kız, başmekanik, eğitimli sıhhiyeci, metalci, madenci, deniz/volkan uzmanları, parti karakteri, Precursor, X’ian gezgini, araştırmacı, bilimci, dalgıç, suikastçı ve temel FU mürettebat konuşmaları. 9 Greg ses alanı tam bağlı onayla korunur, 1 Rainbow Gökkuşağı çevrilir. Katalog 18.853 alan; eski 18.552 aynen korundu.
+
+69 alanda 71 cümle/kısa ifade düzenlendi; 38 alanda dil/anlam, 31 alanda mevcut onaylı TM tutarlılığı sağlandı: biyoantivirüs ve hız aşırtma, gitar pasajı/riff/metal yazımı, savaşta arms silah anlamı, zehirlenmeyi giderme, biyolojik yapı ve kaynaktan kalan İngilizce ing, doğal sorular/Floran sesi. 15 yeni LOCKED, toplam 711. Bilimci 14 legacy alanının aktif yolu kanıtlanmadı; retired sciencegas kalıtımı aktif diye sunulmaz. Volkan uzmanının kaynak metin/benefit tutarsızlığı korundu. FU 6.5.8 pini ve teknik kimlikler aynı. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/crew4-20261017.json) · [Oyun kontrolü](docs/lqa/LQA_V078_20261017.md)
+
 ## v0.77.0 Beta — Mürettebat diyalogları, üçüncü dilim
 
 9 NPC dosyasında 400 yeni alan / 400 bağlam, 288 benzersiz kaynak metin: cyborg devamı, başmühendis, arıcı, avcı, alpaka, gaz uzmanı, jeolog, hayalet avcısı ve Greg ilk bölüm. 398 diyalog, 2 jeolog menü başlığı; 36 Greg ses alanı tam bağlı onayla korunur, 4 Rainbow normal Gökkuşağı çevirisi. Katalog 18.552 alan; eski 18.152 aynen korundu.

@@ -6376,7 +6376,7 @@
       "type": "Diyalog terimi",
       "forbidden": "-",
       "status": "LOCKED",
-      "note": "Pinli greg.config adı ve özgün anlamsız ses replikleri korunur. Yalnız tam alan/EN/TR bağlı preserve_utterance kayıtları değişmeden kalabilir. v0.77 seçili crew Greg seslerinin exact yazım/noktalama guardları ve 36 yeni tam alan bağı eklendi; Rainbow sıradan İngilizce olarak Gökkuşağı çevrilir.",
+      "note": "Pinli greg.config adı ve özgün anlamsız ses replikleri korunur. Yalnız tam alan/EN/TR bağlı preserve_utterance kayıtları değişmeden kalabilir. v0.77 seçili crew Greg seslerinin exact yazım/noktalama guardları ve 36 yeni tam alan bağı eklendi; Rainbow sıradan İngilizce olarak Gökkuşağı çevrilir. v0.78 son dokuz crew alanı exact onaylı; yeni ses biçimleri noktalama ile forms listesine eklendi, tek Rainbow yine Gökkuşağı.",
       "mode": "preserve",
       "forms": [
         {
@@ -6430,6 +6430,26 @@
         {
           "en": "...............greg. Gregga greg.",
           "tr": "...............greg. Gregga greg."
+        },
+        {
+          "en": "Greg.",
+          "tr": "Greg."
+        },
+        {
+          "en": ".....Greg.",
+          "tr": ".....Greg."
+        },
+        {
+          "en": "Gregga greg.",
+          "tr": "Gregga greg."
+        },
+        {
+          "en": "...Greg?",
+          "tr": "...Greg?"
+        },
+        {
+          "en": "...............greg.",
+          "tr": "...............greg."
         }
       ]
     },
@@ -6947,6 +6967,187 @@
         {
           "en": "Floran will give you boostsss when we're on ship!",
           "tr": "Floran gemideyken sana takviye ssağlayacak!"
+        }
+      ]
+    },
+    {
+      "source": "Floran will give ship fuel boostsss when we are on ship!",
+      "tr": "Floran gemideyken yakıt tassarrufu sağlayacak!",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Arctic ve Guardian aynı yakıt verimi repliğinin onaylı TM karşılığı; bozuk yakıtı tasarruf etmek yapısı geri dönmez."
+    },
+    {
+      "source": "Floran hasss things to help out! / Floran hasss things to help!",
+      "tr": "Floran yardım edecek şeylere ssahip!",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Hasss things help/out aynı sahip olma cümlesi; yardım edilecek nesne anlamına kaymaz, tıslama sahip s sesinde. Genel help serbest.",
+      "forms": [
+        {
+          "en": "Floran hasss things to help out!",
+          "tr": "Floran yardım edecek şeylere ssahip!"
+        },
+        {
+          "en": "Floran hasss things to help!",
+          "tr": "Floran yardım edecek şeylere ssahip!"
+        }
+      ]
+    },
+    {
+      "source": "Floran hasss things to help you out!",
+      "tr": "Floran sana yardım edecek şeylere ssahip!",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Aynı arctic/biohazard/scientist yardım malzemesi repliği; kaynak tıslaması mevcut sahip s sesinde."
+    },
+    {
+      "source": "Yes, captain!",
+      "tr": "Evet, kaptan!",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Normal kaptan onayı mevcut Evet TM ile sabittir; tıslamalı Yesss, Captain! ayrı kilittir."
+    },
+    {
+      "source": "bio-antivirus",
+      "tr": "Biyoantivirüs",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Hacker biyolojik koruma/antivirüs metaforu; teknik status effect kimliği aynı. Genel virus sözcüğü kapsanmaz.",
+      "tr_stem": "biyoantivirüs"
+    },
+    {
+      "source": "overclock the warp drive",
+      "tr": "Warp motoruna hız aşırtma uygulamak",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Hacker warp motoru hız aşırtma teknik ifadesi; genel overclock veya başka motor/CPU sözcüğü tek karşılığa zorlanmaz.",
+      "tr_stem": "hız aşırtma"
+    },
+    {
+      "source": "badass licks / badass lickss",
+      "tr": "Sıkı gitar pasajları",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Metalci müzik bağlamındaki lick kısa gitar pasajıdır, tam solo/yalama değildir. Genel lick fiili serbest.",
+      "tr_stem": "gitar pasaj"
+    },
+    {
+      "source": "BIOSTRUCTURE",
+      "tr": "Biyolojik yapı",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Precursor savunma bildirimindeki yapı; biyönite gibi kaynaksız sözcük kullanılmaz. Teknik kimlikler aynı.",
+      "tr_stem": "biyolojik yap"
+    },
+    {
+      "source": "IFF SYSTEMS",
+      "tr": "Dost-düşman tanıma sistemleri",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Precursor hasar bildirimindeki Identify Friend or Foe anlamı Türkçeleştirilir; sistem kimliği değil oyuncu diyalog metni.",
+      "tr_stem": "dost-düşman tan"
+    },
+    {
+      "source": "Hegemony",
+      "tr": "Hegemonya",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Precursor codex4/5/7/15/16 ve drone repliğindeki yönetim adı; hegemonya, genel egemenlik diye belirsizleştirilmez. Büyük harf bağlamı korunur.",
+      "tr_stem": "hegemonya"
+    },
+    {
+      "source": "cure poison",
+      "tr": "Zehirlenmeyi gidermek",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Mürettebat panzehir/koruma repliğinde zehirlenme giderilir; zehir maddesi iyileştirilmez. Genel cure fiili serbest.",
+      "tr_stem": "zehirlen"
+    },
+    {
+      "source": "my arms and skill in battle",
+      "tr": "Silahlarım ve savaş becerim",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Savaş yardımı teklifinde arms silah demektir, kollar değildir. Genel arms anatomisi bu dar kalıpla eşleşmez.",
+      "tr_stem": "silah"
+    },
+    {
+      "source": "Dude. Are you ready for the @#$%^$^#ing party or what?!?!",
+      "tr": "Dostum. Şu @#$%^$^# partiye hazır mısın, değil misin?!?!",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Sansür sembolleri korunur; İngilizce sansürlü sıfattan kalan ing son eki görünür Türkçe repliğe taşınmaz."
+    },
+    {
+      "source": "Check out these riffs, mother#$@$#@$@! / Check out these riffss, mother#$@$#@$@! / Passionate. Check out these riffs, mother#$@$#@$@!",
+      "tr": "Şu rifflere bak, ananı#$@$#@$@!",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Riff müzik terimi özel ad kesmesi almaz; Floran riffss tıslaması baksana s sesine aktarılır. Sansür kodları aynı.",
+      "forms": [
+        {
+          "en": "Check out these riffs, mother#$@$#@$@!",
+          "tr": "Şu rifflere bak, ananı#$@$#@$@!"
+        },
+        {
+          "en": "Check out these riffss, mother#$@$#@$@!",
+          "tr": "Bakssana şu rifflere, ananı#$@$#@$@!"
+        },
+        {
+          "en": "Passionate. Check out these riffs, mother#$@$#@$@!",
+          "tr": "Tutkulu. Şu rifflere bak, ananı#$@$#@$@!"
+        }
+      ]
+    },
+    {
+      "source": "I bring the metal. / Floran bringss the metal! / Passionate. I bring the metal.",
+      "tr": "Metali ben getiririm.",
+      "context": "FU mürettebat diyalogları",
+      "type": "Dar teknik terim veya tekrarlayan replik",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "Metal müzik türü özel ad kesmesi almaz; Floran tıslaması sunar s sesinde. Genel metal madde adı sabit cümleye zorlanmaz.",
+      "forms": [
+        {
+          "en": "I bring the metal.",
+          "tr": "Metali ben getiririm."
+        },
+        {
+          "en": "Floran bringss the metal!",
+          "tr": "Floran metal ssunar!"
+        },
+        {
+          "en": "Passionate. I bring the metal.",
+          "tr": "Tutkulu. Metali ben getiririm."
         }
       ]
     }
@@ -7638,6 +7839,87 @@
       "preserve_utterance": true,
       "term_source": "Greg",
       "reason": "Pinli crewmembergreg npcname/role ve dialog/greg.config ile aynı authored Greg ad/hece sesleri. Kaynak ses ve noktalama korunur; insan dili anlamı uydurulmaz. Yalnız bu tam alan/EN/TR için aktif Greg preserve kilidine bağlı; Rainbow veya komşu alanlara açılmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/3",
+      "en": "Greg. Greg.",
+      "tr": "Greg. Greg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/5",
+      "en": "Gregggggga gregga greg greg.",
+      "tr": "Gregggggga gregga greg greg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/6",
+      "en": "Greg!? Greg. Gregga.",
+      "tr": "Greg!? Greg. Gregga.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/roleDescription/default/default/7",
+      "en": "Greg. Gregogreg.",
+      "tr": "Greg. Gregogreg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/unfollow/default/default/0",
+      "en": "Greg.",
+      "tr": "Greg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/unfollow/default/default/1",
+      "en": ".....Greg.",
+      "tr": ".....Greg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/unfollow/default/default/2",
+      "en": "Gregga greg.",
+      "tr": "Gregga greg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/unfollow/default/default/3",
+      "en": "...Greg?",
+      "tr": "...Greg?",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
+    },
+    {
+      "asset": "npcs/crew/crewmembergreg.npctype",
+      "pointer": "/scriptConfig/dialog/crewmember/unfollow/default/default/4",
+      "en": "...............greg.",
+      "tr": "...............greg.",
+      "term_source": "Greg",
+      "preserve_utterance": true,
+      "reason": "v0.78 Sol: pinli crew Greg roleDescription/unfollow ad-hece repliği kaynak pointerda aynen okundu. Yalnız tam asset/pointer/EN/TR korunur; noktalama/ton değişmez, sıradan İngilizce ve komşu alanlar kapsanmaz."
     }
   ],
   "forbidden_regexes": [
