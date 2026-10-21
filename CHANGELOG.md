@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.80.0 Beta — S.A.I.L. ve radyo mesajları, ilk dilim
+
+11 dosyada 350 yeni alan /350 bağlam, 247 benzersiz kaynak metin: biyom tehlikeleri, Shoggoth ve mağara yönergeleri, delilik etkileri, Kevin ve eşya toplama mesajları. 242 mesaj metni ve 108 konuşmacı adı; 45 FU yama alanı, 305 doğrudan kaynak. Katalog 19.545 alan; önceki 19.195 alandan 19.193 aynen korundu, iki zemin açıklaması eşya adlarıyla eşlendi.
+
+Yeni pakette 66 alanda 79, eski iki zemin açıklamasıyla birlikte toplam 68 alanda 81 cümle/kısa ifade düzeltildi: sensör ölçümleri, Ruin adı, kişi/yönlendirme anlamı, renk kapsamı, eşya adları ve Türkçe yazım. 32 yeni LOCKED, toplam 771; üç mevcut terimin cümle içi kök kontrolü güçlendirildi. Üç köşeli anlatım çevrildi; 69 kişi adı ve dört kurmaca çağrı yalnız tam kaynak bağıyla korunur. 242 mesaj kimliğinden 205'inde statik radyo bağlamlı kaynak adayı bulundu; bu canlı tetikleme kanıtı değildir. FU 6.5.8 pini, kimlikler ve oyun mekanikleri aynı. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/radio1-20261022.json) · [Oyun kontrolü](docs/lqa/LQA_V080_20261022.md)
+
 ## v0.79.0 Beta — Bilim Karakolu konuşmaları
 
 18 NPC dosyasında 342 yeni alan /335 bağlam, 180 benzersiz kaynak metin: karakol sakinleri, bilimciler, Khe kayıp eşya konuşmaları ve iki mağaza başlığı, Steve (Scott şablonu) ve Starbooze. Katalog 19.195 alan; önceki 18.853 aynen korundu.

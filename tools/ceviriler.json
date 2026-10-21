@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.79.0-beta",
+  "translation_version": "0.80.0-beta",
   "note": "v0.68: 380 yeni P1 NPC diyalog alanı; FU 6.5.8 kaynak pini korundu.",
   "translations": [
     {
@@ -75378,7 +75378,7 @@
       "asset": "tiles/mods/cinnabar.matmod",
       "pointer": "/description",
       "en": "Mercury-rich cinnabar ore",
-      "tr": "Cıva bakımından zengin zencefre cevheri.",
+      "tr": "Cıva bakımından zengin zinober cevheri.",
       "section": "v0.56 kalan karo malzemeleri"
     },
     {
@@ -75679,7 +75679,7 @@
       "asset": "tiles/mods/mascagnite.matmod",
       "pointer": "/description",
       "en": "Mascagnite.",
-      "tr": "Mascagnite.",
+      "tr": "Maskagnit.",
       "section": "v0.56 kalan karo malzemeleri"
     },
     {
@@ -143347,6 +143347,2648 @@
       "en": "I like booze, and so should you.",
       "tr": "İçkiyi severim, sen de sevmelisin.",
       "section": "v0.79 P1 Bilim Karakolu NPC konuşmaları"
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/biomeairless/text",
+      "en": "It may be worth noting that this celestial body has no atmosphere and you will die without some sort of oxygen source.",
+      "tr": "Bu gökcisminin atmosferi olmadığını belirtmekte fayda var; bir oksijen kaynağı olmadan ölürsün.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/biomecold/text",
+      "en": "^red;WARNING! EXTREME COLD DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! AŞIRI SOĞUK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/biomeheat/text",
+      "en": "^red;WARNING! EXTREME HEAT DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! AŞIRI SICAKLIK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/biomeradiation/text",
+      "en": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeaether/text",
+      "en": "^red;WARNING! COSMIC ENERGY DETECTED ^reset;! Some sort of protection from cosmic damage would help a great deal. This energy appears to decrease energy regeneration rates.",
+      "tr": "^red;UYARI! KOZMİK ENERJİ TESPİT EDİLDİ ^reset;! Kozmik hasara karşı bir tür koruma çok işe yarar. Bu enerji, enerji yenilenme hızını düşürüyor gibi görünüyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeaethernight/text",
+      "en": "As night falls, the effects of the cosmic energy permeating this planet seem to increase in severity. Somehow, the sun holds the worst of these effects at bay.",
+      "tr": "Gece çökerken bu gezegene nüfuz eden kozmik enerjinin etkileri ağırlaşıyor gibi. Güneş, nedense bu etkilerin en kötüsünü bastırıyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomecold/text",
+      "en": "^red;WARNING! EXTREME COLD DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! AŞIRI SOĞUK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomecoldnight/text",
+      "en": "As night falls, the temperature will fall. This will make any effects you feel from the cold even deadlier on you. I suggest finding warmth, and soon.",
+      "tr": "Gece çökerken sıcaklık düşecek. Soğuğun sende yarattığı etkiler daha da ölümcül olacak. Bir an önce sıcak bir yer bulmanı öneririm.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomecoldwater/text",
+      "en": "You fell in water. On a freezing world. Good job, idiot! Now you'll freeze to death ^red;twice as fast^reset;!",
+      "tr": "Dondurucu bir dünyada suya düştün. Aferin, aptal! Şimdi ^red;iki kat daha hızlı^reset; donarak öleceksin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedeadlycold/text",
+      "en": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment. Radiation will sap your health and energy, and make you sick!",
+      "tr": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin. Radyasyon sağlığını ve enerjini tüketip seni hasta edecek!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedeadlyheat/text",
+      "en": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedesert/text",
+      "en": "^red;WARNING: DESERT HEAT ^reset;! The climate here is exceptionally warm during the day. Water will help you cool off, if you can find it. Fire Resistance will help a great deal. Night is cool but tolerable.",
+      "tr": "^red;UYARI: ÇÖL SICAKLIĞI ^reset;! Gündüz burada hava olağanüstü sıcak. Bulabilirsen su serinlemene yardım eder. Ateş Direnci de çok işe yarar. Gece serin ama katlanılabilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedesertnight/text",
+      "en": "The sun has set, and the temperature has blissfully dropped to tolerable levels. You should be relatively comfortable until daybreak.",
+      "tr": "Güneş battı ve sıcaklık sonunda katlanılabilir düzeylere indi. Şafak sökene kadar nispeten rahat olmalısın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedesertnoon/text",
+      "en": "At its brightest, the sun here is extremely uncomfortable. Until it gets into the afternoon, expect to suffer a bit more.",
+      "tr": "Güneş en tepedeyken burada dayanılmaz oluyor. Öğleden sonraya kadar biraz daha sıkıntı çekmeyi bekle.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedesertsunrise/text",
+      "en": "The sun is rising, bringing another blistering hot day. Take care, and be aware that the brighter it gets, the worse things will become.",
+      "tr": "Güneş doğuyor; kavurucu sıcaklıkta yeni bir gün başlıyor. Dikkatli ol: Güneş ne kadar parlaklaşırsa koşullar o kadar kötüleşecek.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedesertunderground/text",
+      "en": "Heading underground? Not a bad idea. The effect of the surface heat is substantially reduced down here.",
+      "tr": "Yer altına mı iniyorsun? Fena fikir değil. Yüzeydeki sıcağın etkisi burada epey azalıyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomedesertwater/text",
+      "en": "You've managed to cool off in this wonderful pool of liquid. You feel much less uncomfortable now!",
+      "tr": "Şu güzel sıvı birikintisinde serinlemeyi başardın. Artık çok daha az rahatsız hissediyorsun!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeelectric/text",
+      "en": "^red;WARNING: ELECTRICAL STORM ^reset;! A nasty electric storm is picking up. The charge in the air will interfere with your energy supply and could cause dangerous overloads. I advise you to find shelter immediately.",
+      "tr": "^red;UYARI: ELEKTRİK FIRTINASI ^reset;! Tehlikeli bir elektrik fırtınası güçleniyor. Havadaki yük enerji kaynağını etkileyecek ve tehlikeli aşırı yüklenmelere yol açabilir. Hemen sığınak bulmanı öneririm.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeelectricsurface/text",
+      "en": "Lightning storms are significantly stronger when you are outside. Perhaps head underground where you are grounded and cannot be struck by lightning.",
+      "tr": "Dışarıdayken yıldırım fırtınaları çok daha şiddetli. Topraklanacağın ve yıldırımın çarpamayacağı yer altına inmeyi düşün.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeelectricwater/text",
+      "en": "I must advise you against swimming in liquid during a lightning storm. I hope that I do not need to explain what will happen if lightning strikes you now.",
+      "tr": "Yıldırım fırtınası sırasında sıvıda yüzmemen gerektiğini söylemeliyim. Yıldırım sana çarparsa ne olacağını açıklamam gerekmiyordur umarım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomegenericcold/text",
+      "en": "^red;WARNING: FREEZING ^reset;! It suddenly got exceptionally cold! Be careful, and keep warm!",
+      "tr": "^red;UYARI: DONDURUCU SOĞUK ^reset;! Hava birden olağanüstü soğudu! Dikkat et ve sıcak kal!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomegenericelectric/text",
+      "en": "^red;WARNING: ELECTRICAL STORM ^reset;! A sudden electrical storm has broken out, which will affect your energy supply. There's also the threat of being struck by a blast. Take shelter underground.",
+      "tr": "^red;UYARI: ELEKTRİK FIRTINASI ^reset;! Aniden başlayan elektrik fırtınası enerji kaynağını etkileyecek. Ayrıca bir enerji patlamasının sana çarpma tehlikesi var. Yer altına sığın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomegenericheat/text",
+      "en": "^red;WARNING: HEAT WAVE ^reset;! The climate is spiking in temperature, resulting in extra exertion from movement. You'll be hungry a bit faster, and gradually lose health.",
+      "tr": "^red;UYARI: SICAK HAVA DALGASI ^reset;! Sıcaklık hızla yükseliyor; hareket etmek daha fazla efor gerektirecek. Daha çabuk acıkacak ve yavaş yavaş sağlık kaybedeceksin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomegenericmildcold/text",
+      "en": "^red;WARNING: COLD ^reset;! While not absolutely freezing, this world is chilly and brisk. Nights are colder, and water could be dangerous to swim in. Wear cold protection.",
+      "tr": "^red;UYARI: SOĞUK ^reset;! Hava dondurucu olmasa da bu dünya serin ve soğuk. Geceler daha soğuk, suda yüzmek tehlikeli olabilir. Soğuğa karşı korun.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomegenericpoison/text",
+      "en": "^red;WARNING: POISONOUS CLOUDS ^reset;! Poisonous clouds are blowing in the wind, which will weaken and eventually kill you. Seek shelter or find some measure of protection.",
+      "tr": "^red;UYARI: ZEHİRLİ BULUTLAR ^reset;! Rüzgâr zehirli bulutları taşıyor. Seni güçsüz düşürüp sonunda öldürecekler. Sığınak ara veya bir tür koruma bul.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomegenericradiation/text",
+      "en": "^red;WARNING: RADIATION STORM ^reset;! Sudden winds have blown in a radiation cloud from somewhere else on this world. Take precautions.",
+      "tr": "^red;UYARI: RADYASYON FIRTINASI ^reset;! Ani rüzgârlar bu dünyanın başka bir yerinden radyasyon bulutu taşıdı. Önlem al.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeheat/text",
+      "en": "^red;WARNING! EXTREME HEAT DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! AŞIRI SICAKLIK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeheatcavern/text",
+      "en": "You'll find it much warmer in caverns, thanks to heat being trapped within. Stay cool, or you'll stay dead^reset;!",
+      "tr": "Isı mağaralarda hapsolduğu için içerisi çok daha sıcak. Serin kal, yoksa ölü kalırsın^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomejungle/text",
+      "en": "^red;WARNING: TROPICAL HEAT ^reset;! The climate here is exceptionally warm, which could lead to discomfort if care is not taken. Water will help you cool off, if you can find it. Physical Resistance will help, too.",
+      "tr": "^red;UYARI: TROPİK SICAK ^reset;! Burada hava olağanüstü sıcak; önlem almazsan rahatsız olabilirsin. Bulabilirsen su serinlemene yardım eder. Fiziksel Direnç de işe yarar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomejunglewater/text",
+      "en": "Ah, a soothing spring. This should help lower your temperature and give you a brief moment of respite.",
+      "tr": "Ah, insanı ferahlatan bir kaynak. Bu, vücut sıcaklığını düşürüp kısa süreliğine rahatlamanı sağlamalı.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomepoison/text",
+      "en": "^red;WARNING! POISONOUS AIR DETECTED ^reset;! These toxins can permeate through skin and small openings. You are getting weaker. This will get worse the more sick you become.",
+      "tr": "^red;UYARI! ZEHİRLİ HAVA TESPİT EDİLDİ ^reset;! Bu toksinler deriden ve küçük açıklıklardan sızabilir. Gücün azalıyor. Hastalığın ağırlaştıkça durum kötüleşecek.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomepoisonwind/text",
+      "en": "This breeze is really stirring up poisonous vapour. Threat level increased.",
+      "tr": "Bu esinti zehirli buharı iyice yayıyor. Tehdit seviyesi yükseldi.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeproto/text",
+      "en": "^red;WARNING! POISON ATMOSPHERE DETECTED ^reset;! With ^green;Proto-Poison protection^reset; you'll be fine. Otherwise, Proto-poison slowly drains your vitality. Poison resistance reduces or nullifies the effects.",
+      "tr": "^red;UYARI! ZEHİRLİ ATMOSFER TESPİT EDİLDİ ^reset;! ^green;Proto-Zehir koruman^reset; varsa sorun yaşamazsın. Yoksa Proto-Zehir canlılığını yavaşça tüketir. Zehir direnci etkileri azaltır veya tamamen önler.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeradiation/text",
+      "en": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeradiationsevere/text",
+      "en": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomeradiationwind/text",
+      "en": "I suggest taking care, as a nasty wind is blowing radioactive fallout right to your position. Good times!",
+      "tr": "Dikkatli olmanı öneririm; şiddetli bir rüzgâr radyoaktif serpintiyi doğruca sana taşıyor. Harika!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomesulphuric/text",
+      "en": "^red;WARNING! SULPHURIC ATMOSPHERE DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!",
+      "tr": "^red;UYARI! SÜLFÜRİK ATMOSFER TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/ffbiomesulphuricstorm/text",
+      "en": "^red;WARNING! SULPHURIC STORM^reset;! A deadly Sulphuric storm is brewing! Get to shelter as soon as possible unless you have protection against Sulphuric Acid. You will otherwise die rather rapidly.",
+      "tr": "^red;UYARI! SÜLFÜRİK FIRTINA^reset;! Ölümcül bir sülfürik fırtına yaklaşıyor! Sülfürik aside karşı koruman yoksa hemen sığınağa git. Yoksa çok çabuk ölürsün.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/foodtype/text",
+      "en": "^red;TOXINS DETECTED ^reset;: While I am sure that *looked* delicious, I regret to inform you that this type of food ^orange;cannot be digested by your physiology^reset;. Avoid foods like this in the future.",
+      "tr": "^red;TOKSİN TESPİT EDİLDİ ^reset;: Lezzetli *göründüğünden* eminim ama bu yiyeceğin ^orange;fizyolojin tarafından sindirilemeyeceğini^reset; üzülerek bildiririm. Bir daha böyle yiyeceklerden uzak dur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/foodtyperad/text",
+      "en": "^red;RADIOACTIVE MATERIAL DETECTED ^reset;: You just ate potentially lethal radioactive isotopes. Your chance of painful death has increased by 99.72%.",
+      "tr": "^red;RADYOAKTİF MADDE TESPİT EDİLDİ ^reset;: Potansiyel olarak ölümcül radyoaktif izotoplar yedin. Acı verici bir ölüm ihtimalin %99,72 arttı.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/pickupAnvil/text",
+      "en": "In ^blue;Frackin Universe^reset;, nearly everything you can make on an anvil can also be made with an ^orange;Armorworks^reset;. The anvil is still great for decoration though!",
+      "tr": "^blue;Frackin Universe^reset; içinde örste üretebildiğin neredeyse her şeyi ^orange;Zırh Atölyesi^reset; ile de üretebilirsin. Yine de örs güzel bir dekorasyon eşyası!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/pickupshield/text",
+      "en": "Shields are a useful defensive tool. If you time blocks well, you can ^orange;Shield Bash^reset; (^green;stuns, knocks back enemies and does damage^reset;). Some species get great bonuses for ^orange;perfectly timed blocks^reset;, too.",
+      "tr": "Kalkanlar savunmada işe yarar. Zamanlamayı tutturup blok yaparsan ^orange;Kalkan Darbesi^reset; kullanabilirsin (^green;düşmanları sersemletir, geri savurur ve hasar verir^reset;). Bazı türler ^orange;kusursuz zamanlanmış bloklardan^reset; büyük bonuslar da alır.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/radienhealing/text",
+      "en": "^red;Remember:^reset; You can't heal like carbon-based life does. You're going to need to rely on your natural abilities, ^green;edible isotopes^reset; and ^green;reactive gels^reset;. You will need access to ^green;Algae^reset; in order to make these gels. Build a ^orange;Greenhouse^reset; to get started.",
+      "tr": "^red;Unutma:^reset; Karbon temelli canlılar gibi iyileşemezsin. Doğal yeteneklerine, ^green;yenilebilir izotoplara^reset; ve ^green;reaktif jellere^reset; güvenmen gerekecek. Bu jelleri yapmak için ^green;Yosun^reset; bulmalısın. Başlamak için bir ^orange;Sera^reset; kur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/radienmsg/text",
+      "en": "^green;Excellent^reset;! You have remembered how to spawn X'i Bulbs. With them you can craft many things in your [C] menu, or use them for other purposes unique to the X'i.",
+      "tr": "^green;Harika^reset;! X'i Yumrularını nasıl çağıracağını hatırladın. Bunlarla [C] menüsünde pek çok şey üretebilir veya X'i türüne özgü başka amaçlarla kullanabilirsin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/exploration.radiomessages",
+      "pointer": "/wrexornar/text",
+      "en": "^red;WARNING: PIRATE SIGNAL DETECTED ^reset;! This appears to be a raiding ship under the control of the Wrexor Nar. These vicious cyborgs are among the most feared of raider factions in the galaxy. Tread carefully.",
+      "tr": "^red;UYARI: KORSAN SİNYALİ TESPİT EDİLDİ ^reset;! Bu, Wrexor Nar yönetimindeki bir akın gemisine benziyor. Bu acımasız siborglar galaksinin en korkulan akıncı gruplarından. Dikkatli ol.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/exploration.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupAliencompound/text",
+      "en": "This strange alien compound has various unknown elements within its genetic coding. We should see what it can do in the lab.",
+      "tr": "Bu tuhaf uzaylı bileşiğinin genetik kodlamasında çeşitli bilinmeyen elementler var. Laboratuvarda ne işe yaradığını görmeliyiz.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupCorruptionseed/text",
+      "en": "You've successfully mutated raw corruption into a useable sort of ore. I wonder what it can do?",
+      "tr": "Ham yozlaşmayı kullanılabilir bir cevher türüne dönüştürmeyi başardın. Acaba ne işe yarayacak?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupMorphite/text",
+      "en": "Using your chemistry mastery you have managed to create a whole new type of metal. We shall call it: Morphite. I bet it's awesome, since you made it.",
+      "tr": "Kimya ustalığın sayesinde yepyeni bir metal üretmeyi başardın. Adına Morphite diyelim. Sen ürettiğine göre harikadır kesin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupMulch/text",
+      "en": "Mulch has one single purpose: low-grade fertilizer. Toss it into a Hydroponics Tray to increase crop yields and growth speed.",
+      "tr": "Malçın tek bir amacı var: düşük kaliteli gübre. Mahsul verimini ve büyüme hızını artırmak için Hidroponik Tepsiye at.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupMutagene1/text",
+      "en": "Strange mutagenic material swirling in your sample jar. Surely we can use this somehow.",
+      "tr": "Numune kavanozunda tuhaf, mutajenik bir madde dönüp duruyor. Eminim bir işe yarar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupMutagene2/text",
+      "en": "Erratic gene-constructs encased in liquefied... something. Let's jam it into a gene-research project!",
+      "tr": "Sıvılaştırılmış... bir şeyin içine hapsolmuş kararsız gen yapıları. Bunu gen araştırma projesine katalım!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupMutagene3/text",
+      "en": "Whatever this is, it smells like pandas and fruit, yet erodes all organic matter it touches. Don't eat it.",
+      "tr": "Bu şey panda ve meyve kokuyor ama dokunduğu tüm organik maddeleri aşındırıyor. Sakın yeme.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupMutagene4/text",
+      "en": "I can tell at a glance that this mutagen will prove lethal if you touch it. It has high-potency toxins and who knows what else?",
+      "tr": "Bu mutajenin dokunursan öldürücü olacağını hemen anlıyorum. Çok güçlü toksinler ve kim bilir başka neler içeriyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_chemlab.radiomessages",
+      "pointer": "/pickupUnstableparticles/text",
+      "en": "What we have here in Unstable Particles is a very useful and advanced material capable of creating extremely advanced machines and equipment.",
+      "tr": "Elimizdeki Kararsız Parçacıklar, son derece gelişmiş makine ve ekipmanlar üretmeye yarayan çok kullanışlı, gelişmiş bir malzeme.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/eatingYourself/text",
+      "en": "Biting ones own body and eating it is probably not the best idea, sir. I don't suggest doing that again. Eventually you'll run out of pieces, and then what will you have left to eat? Also, now you're bleeding everywhere. Nicely done.",
+      "tr": "Kendi vücudunu ısırıp yemek pek de iyi bir fikir değil, efendim. Bir daha yapmanı önermem. Sonunda yiyecek parçan kalmayacak; o zaman ne yiyeceksin? Üstelik her yerin kan içinde. Aferin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/pickupCthulhureward/text",
+      "en": "Whatever the hell this thing is, it reads unlike anything I have ever seen before. I literally get nothing when I try, yet it moves and pulses...",
+      "tr": "Bu şey her ne halt ise, tarama sonuçları daha önce gördüğüm hiçbir şeye benzemiyor. Taramada gerçekten hiçbir şey çıkmıyor ama yine de hareket edip nabız gibi atıyor...",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/pickupElderaltar/text",
+      "en": "While I applaud your bravery even touching this altar, I would advise caution. It clearly is not a good thing. Perhaps some lore can shed light on how to use it...",
+      "tr": "Bu sunağa dokunacak kadar cesur olmanı takdir ediyorum ama dikkatli olmanı öneririm. Belli ki hayra alamet değil. Belki geçmişe dair bilgiler nasıl kullanılacağına ışık tutar...",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission0/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission0/text",
+      "en": "I'll be with you during this investigation. I'm on vacation, but that doesn't mean I don't have to do my duty as director. It looks like you came in through their backup teleporter. Did something happen to the main?",
+      "tr": "Bu soruşturmada sana eşlik edeceğim. İznimdeyim ama bu, direktörlük görevimi yapmayacağım anlamına gelmez. Yedek ışınlayıcıdan girmişsin gibi görünüyor. Ana ışınlayıcıya bir şey mi oldu?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission1/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission1/text",
+      "en": "Not to worry, it's a short walk to the ^orange;Research Station^reset; down the cliff. Watch your step, it tends to be very icy there.",
+      "tr": "Merak etme, uçurumdan aşağıdaki ^orange;Araştırma İstasyonu^reset; kısa bir yürüyüş mesafesinde. Adımlarına dikkat et; orası genelde buz tutar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission10/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission10/text",
+      "en": "That can't be right. This has to be an error. Scans place the age of this place at somewhere around 1 billion years. I must know more. Keep going. I should ^red;***** *** ******^reset;!",
+      "tr": "Bu doğru olamaz. Bir hata olmalı. Taramalar buranın yaşını yaklaşık 1 milyar yıl gösteriyor. Daha fazlasını öğrenmeliyim. Devam et. Ben ^red;***** *** ******^reset; yapmalıyım!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission11/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission11/text",
+      "en": "This sculpture somewhat resembles ^red;********^reset;e Ruin. There are key differe^red;*******^reset; factors, of course. Some sort of ancient Ruin worship, perhaps?",
+      "tr": "Bu heykel biraz ^red;********^reset; Ruin'i andırıyor. Elbette önemli farklı^red;*******^reset; unsurlar var. Belki de kadim Ruin tapınmasının bir türüdür?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission12/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission12/text",
+      "en": "What manner of ^red;*****^reset; is this, and what became of them? Nothing ever recorded matches this...thing. Whatever this place is, it will redefine galactic history.",
+      "tr": "Bu ne tür bir ^red;*****^reset; ve onlara ne olmuş? Kaydedilmiş hiçbir şey bu... şeye benzemiyor. Burası her neresi olursa olsun, galaksi tarihini yeniden yazacak.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission13/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission13/text",
+      "en": "The storm is ^red;******^reset; ^red;******^reset;. My scanners are ^red;*bzzzzzzzzzz*^reset; and ^red;******^reset;. I am ^red;******^reset;.",
+      "tr": "Fırtına ^red;******^reset; ^red;******^reset;. Tarayıcılarım ^red;*bzzzzzzzzzz*^reset; ve ^red;******^reset;. Ben ^red;******^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission13a/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission13a/text",
+      "en": "I ^red;******* *****^reset; ? We should ^red;******^reset; before it is ^red;******^reset;. Okay?",
+      "tr": "Ben ^red;******* *****^reset;? ^red;******^reset; olmadan önce ^red;******^reset; gerek. Olur mu?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission14/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission14/text",
+      "en": "I am detect^red;*******^reset; ^red;*buzz*^reset;! Take ^red;******^reset; or it ^red;******^reset;!",
+      "tr": "Algılı^red;*******^reset; ^red;*vızıltı*^reset;! ^red;******^reset; al, yoksa ^red;******^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission15/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission15/text",
+      "en": "^red;*******bzzzzzzzzzzzzzzzzzzzzt*****^reset;  ^orange;-CONNECTION TERMINATED-^reset;",
+      "tr": "^red;*******bzzzzzzzzzzzzzzzzzzzzt*****^reset;  ^orange;-BAĞLANTI KESİLDİ-^reset;",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission16/senderName",
+      "en": "Unknown",
+      "tr": "Bilinmiyor",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission16/text",
+      "en": "<you hear some sort of whispers in the dark>",
+      "tr": "<karanlıkta birtakım fısıltılar duyuyorsun>",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "allow_control_fix": true,
+        "semantic_override": "v0.80: Pinli radyo text içindeki köşeli ifade oyuncuya görünen tam anlatım cümlesidir; kod değişkeni değildir. Yalnız bu tam asset/pointer/EN/TR için köşeli anlatımın Türkçesi onaylandı; gerçek yer tutucular korunur."
+      }
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission17/senderName",
+      "en": "Unknown",
+      "tr": "Bilinmiyor",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission17/text",
+      "en": "<the whispers are growing louder>",
+      "tr": "<fısıltılar giderek yükseliyor>",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "allow_control_fix": true,
+        "semantic_override": "v0.80: Pinli radyo text içindeki köşeli ifade oyuncuya görünen tam anlatım cümlesidir; kod değişkeni değildir. Yalnız bu tam asset/pointer/EN/TR için köşeli anlatımın Türkçesi onaylandı; gerçek yer tutucular korunur."
+      }
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission18/senderName",
+      "en": "Unknown",
+      "tr": "Bilinmiyor",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission18/text",
+      "en": "...ahf'- fm'latgh geb ehye chtenff k'yarnak...",
+      "tr": "...ahf'- fm'latgh geb ehye chtenff k'yarnak...",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission19/senderName",
+      "en": "Unknown",
+      "tr": "Bilinmiyor",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission19/text",
+      "en": "...kn'a lw'nafh nilgh'ri ooboshu phlegeth shtunggli...",
+      "tr": "...kn'a lw'nafh nilgh'ri ooboshu phlegeth shtunggli...",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission1a/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission1a/text",
+      "en": "I'm picking up biological signatures. Stand by while I ^red;****^reset;...oh dear. The weather is interfering with our connection. If I can no longer reach you, SAIL can guide you.",
+      "tr": "Biyolojik izler alıyorum. Ben ^red;****^reset; ederken bekle... eyvah. Hava durumu bağlantımızı bozuyor. Sana artık ulaşamazsam SAIL sana yol gösterebilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission2/text",
+      "en": "How odd! I can only recognize one signature from our database. I am also picking up readings that match nothing I've ^red;****^reset;. The connec^red;*** ***^reset;blems are ^red;****^reset; scans.",
+      "tr": "Ne tuhaf! Veritabanımızdan yalnızca bir izi tanıyabiliyorum. Ayrıca ^red;****^reset; hiçbir şeye benzemeyen ölçümler alıyorum. Bağlantı ^red;*** ***^reset; sorunları taramaları ^red;****^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission20/senderName",
+      "en": "Unknown",
+      "tr": "Bilinmiyor",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission20/text",
+      "en": "ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!",
+      "tr": "ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission21/senderName",
+      "en": "Unknown",
+      "tr": "Bilinmiyor",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission21/text",
+      "en": "Lagash ni'mofghek Shoggoth! IA! IA! IA!",
+      "tr": "Lagash ni'mofghek Shoggoth! IA! IA! IA!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission22/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission22/text",
+      "en": "^orange;-ONLINE-^reset; You're ALIVE! I thought for certain you were dead! What did you discover about the temple, and what happened to our team? Report to me as soon as you can with your findings.",
+      "tr": "^orange;-ÇEVRİMİÇİ-^reset; HAYATTASIN! Öldüğünden emindim! Tapınakta ne buldun, ekibimize ne oldu? Bulgularını mümkün olan en kısa sürede bana bildir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission3/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission3/text",
+      "en": "What in the world happened to this team? Where is everyone? Who broke the lock? Check everything you can.",
+      "tr": "Bu ekibin başına ne geldi? Herkes nerede? Kilidi kim kırdı? Bulabildiğin her şeyi kontrol et.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission4/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission4/text",
+      "en": "There's a failsafe switch on the far wall of this room. It should override the main lab doors, which should give us access to the power breakers so we can see more clearly.",
+      "tr": "Bu odanın karşı duvarında bir acil durum anahtarı var. Ana laboratuvar kapılarının kilidini aşmalı; böylece daha iyi görebilmek için güç şalterlerine erişebiliriz.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission5/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission5/text",
+      "en": "The power breakers are at the end of this corridor. Be careful in the dark, we don't know what's down there.",
+      "tr": "Güç şalterleri bu koridorun sonunda. Karanlıkta dikkatli ol; aşağıda ne olduğunu bilmiyoruz.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission6/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission6/text",
+      "en": "I understand you wanting to leave, and I whole-heartedly agree with you. As I said, however, check everything you can for clues. This can't happen again. I won't let it.",
+      "tr": "Gitmek istemeni anlıyorum ve sana tüm kalbimle katılıyorum. Yine de dediğim gibi ipuçları için bulabildiğin her şeyi kontrol et. Bu bir daha yaşanamaz. Buna izin vermeyeceğim.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission7/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission7/text",
+      "en": "This blizzard is unrelenting. There are some tall cliffs up ahead. Use them for shelter from the wind if you need to. Our connection may fail soon, as well.",
+      "tr": "Bu tipi durmak bilmiyor. İleride yüksek kayalıklar var. Gerekirse rüzgârdan korunmak için onları kullan. Bağlantımız da yakında kesilebilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission8/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission8/text",
+      "en": "Fascinating! A mutated form of ^red;*******^reset;, one I've never seen the likes of before. Be careful, though. They appear rabid, and may possess any number of terrible ^red;******^reset; diseases.",
+      "tr": "İlginç! ^red;*******^reset; türünün daha önce hiç görmediğim bir mutasyonu. Ama dikkatli ol. Kuduz gibi görünüyorlar ve türlü türlü korkunç ^red;******^reset; hastalık taşıyor olabilirler.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission9/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmission9/text",
+      "en": "This pillar... this stone... We can't even be sure if this -is- stone. There aren't any similarities to known minerals within it. Continue onward, for the sake of our team and for science.",
+      "tr": "Bu sütun... bu taş... Bunun gerçekten taş olduğundan bile emin olamayız. Yapısında bilinen minerallerle hiçbir benzerlik yok. Ekibimiz ve bilim uğruna ilerlemeye devam et.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissiongoretunnel/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissiongoretunnel/text",
+      "en": "Oh- oh no, this is horrible. I...we... *vomiting sounds*. We- we have to keep going. Find out what happened so it will never happen again.",
+      "tr": "Ah—hayır, bu korkunç. Ben... biz... *kusma sesleri*. D-devam etmeliyiz. Bir daha yaşanmaması için ne olduğunu bul.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionlore/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionlore/text",
+      "en": "Secret knowledge! We should search these shelves and ^red;**** **^reset; anything we find. Who knows what useful information or ancient ^red;**** *****^reset;we might uncover in the process!",
+      "tr": "Gizli bilgiler! Bu rafları arayıp bulduğumuz her şeyi ^red;**** **^reset;. Bu sırada ne yararlı bilgiler ya da hangi kadim ^red;**** *****^reset; ortaya çıkar, kim bilir!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionlore2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionlore2/text",
+      "en": "Perhaps check the books on the shelves for a hint. You may need that to progress, and look for similar things in further rooms.",
+      "tr": "Belki ipucu bulmak için raflardaki kitaplara bakarsın. İlerlemek için buna ihtiyacın olabilir; ilerideki odalarda benzer şeyler ara.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionmicrosphere/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionmicrosphere/text",
+      "en": "The path seems to be blocked. Oh, there's a small tunnel that seems to lead somewhere. Perhaps a Translocator or a Microsphere tech would do the trick.",
+      "tr": "Yol kapanmış gibi. Aa, bir yere çıkan küçük bir tünel var. Belki bir Işınlayıcı ya da Mikroküre Tech işe yarar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionshootdoor/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionshootdoor/text",
+      "en": "Oh my. The lock was destroyed. Perhaps you could try blasting the door open with an explosiv^red;***** ** ****^reset;? There seems to be little other choice. Hurry, a ^red;****^reset; storm is coming!",
+      "tr": "Eyvah. Kilit parçalanmış. Belki kapıyı ^red;***** ** ****^reset; bir patlayıcıyla açmayı deneyebilirsin? Başka çare yok gibi. Acele et, ^red;****^reset; fırtınası geliyor!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionvinwagner/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_elder.radiomessages",
+      "pointer": "/shoggothmissionvinwagner/text",
+      "en": "MacReady! What happened to him? What's on his face? That thing seems to be influencing him. I hate to encourage this, but please defend yourself. Put him out of his misery for his sake.",
+      "tr": "MacReady! Ona ne oldu? Yüzündeki de ne? O şey onu etkiliyor gibi. Bunu teşvik etmek istemem ama lütfen kendini savun. Onun iyiliği için acılarına son ver.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ammoLoad/text",
+      "en": "You've found a firearm that uses ^orange;Ammo^reset;. Your current ammo count is represented by a visible bar when firing. You do not need to create or carry ammo. Reload by emptying the magazine or by pressing ^green;SHIFT + MOUSE 1^reset;.",
+      "tr": "^orange;Mermi^reset; kullanan bir ateşli silah buldun. Ateş ederken mevcut mermi sayısı görünür bir çubukla gösterilir. Mermi üretmen veya yanında taşıman gerekmez. Şarjörü boşaltarak ya da ^green;SHIFT + MOUSE 1^reset; tuşlarına basarak yeniden doldur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ancientpowerconduit/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ancientpowerconduit/text",
+      "en": "I've never seen Ancient tech like this before. It appears to be some sort of power conduit. It must have some use, somewhere. I'd keep that safe, were I you.",
+      "tr": "Daha önce hiç böyle kadim teknoloji görmedim. Bir tür güç iletkenine benziyor. Bir yerde mutlaka işe yarıyordur. Ben olsam bunu güvenli bir yerde saklardım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomecold/text",
+      "en": "WARNING! TEMPERATURE ON THIS PLANET IS DANGEROUSLY LOW!\nYou should not attempt further exploration without proper protective equipment!",
+      "tr": "UYARI! BU GEZEGENDEKİ SICAKLIK TEHLİKELİ DERECEDE DÜŞÜK!\nUygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomecoldwind/text",
+      "en": "The extreme winds have made the temperature plummet dramatically. You should get out of the wind unless you wish to freeze to death rapidly.",
+      "tr": "Şiddetli rüzgârlar sıcaklığın hızla düşmesine yol açtı. Çabucak donarak ölmek istemiyorsan rüzgârdan uzaklaş.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomeheat/text",
+      "en": "WARNING! TEMPERATURE ON THIS PLANET IS DANGEROUSLY HIGH!\nYou should not attempt further exploration without proper protective equipment!",
+      "tr": "UYARI! BU GEZEGENDEKİ SICAKLIK TEHLİKELİ DERECEDE YÜKSEK!\nUygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomeinsanity/text",
+      "en": "^red;ALERT: MENTAL STATE DETERIORATING!^reset; Your surroundings are causing your thoughts and feelings to become jumbled. Focus is difficult and you feel yourself going insane...",
+      "tr": "^red;ALARM: ZİHİNSEL DURUMUN KÖTÜLEŞİYOR!^reset; Çevren düşüncelerini ve hislerini birbirine karıştırıyor. Odaklanmak zorlaşıyor ve delirdiğini hissediyorsun...",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressure/text",
+      "en": "Greetings! You appear to be rapidly dying due to explosive decompression or extreme pressure. You should seek safety, and relatively quickly or face ^red;certain death^reset;!",
+      "tr": "Selam! Patlayıcı basınç düşüşü ya da aşırı basınç yüzünden hızla ölüyorsun. Güvenli bir yer bul, hem de hemen; yoksa ^red;kesinlikle öleceksin^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressure2/text",
+      "en": "I am uncertain why you came here. This isn't at all a place you are evolved to survive. You will be dead in mere moments without ^orange;pressure protection^reset;. I suggest procuring some.",
+      "tr": "Buraya neden geldiğini anlamıyorum. Burada hayatta kalacak şekilde evrimleşmedin. ^orange;Basınç koruması^reset; olmadan çok kısa sürede ölürsün. Edinmeni öneririm.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressure3/text",
+      "en": "Have you gone mad? The pressure here is enough to crush you almost instantly! What would possess you to come unprotected? Get some ^orange;pressure protection^reset; or face death!",
+      "tr": "Delirdin mi? Buradaki basınç seni neredeyse anında ezecek kadar yüksek! Korumasız buraya gelmek de neyin nesi? ^orange;Basınç koruması^reset; edin, yoksa ölürsün!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressure4/text",
+      "en": "I regret to inform you that your decision to visit a ^red;gas giant^reset; without protection is a ^red;fatal^reset; one.",
+      "tr": "Korumasız bir ^red;gaz devini^reset; ziyaret etme kararının ^red;ölümcül^reset; olduğunu üzülerek bildiririm.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressureday/text",
+      "en": "As the sun rises, warming the nascent gas of this world you find that the natural forces seem to calm and rapidly reduce in potence.",
+      "tr": "Güneş doğup bu dünyanın yeni oluşmuş gazını ısıtırken, doğal güçlerin yatışıp etkilerini hızla yitirdiği görülüyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressurenight/text",
+      "en": "Natural forces change the tide of gasses regularly with day and night cycle. As night approaches, you'll find things get a bit worse on your survival. Perhaps return later.",
+      "tr": "Doğal güçler gazların akışını gece gündüz düzenli olarak değiştirir. Gece yaklaşırken hayatta kalmanın biraz zorlaştığını göreceksin. Belki daha sonra dönersin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomepressurewind/text",
+      "en": "While it is never exactly a pleasant calm day on a Gas Giant, extreme winds severely increase the effects of the environment. Take extra precautions.",
+      "tr": "Bir Gaz Devi’nde hava hiçbir zaman tam anlamıyla sakin ve hoş olmaz ama şiddetli rüzgârlar çevrenin etkilerini çok artırır. Ek önlemler al.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomeproto/text",
+      "en": "^red;WARNING: TOXIC ATMOSPHERE!^reset; The air here is thick with some sort of viscosity. It makes you feel sluggish, and you feel yourself getting weaker.",
+      "tr": "^red;UYARI: ZEHİRLİ ATMOSFER!^reset; Buradaki hava garip biçimde kıvamlı. Seni ağırlaştırıyor ve giderek güçsüzleştiğini hissediyorsun.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/fubiomeradiation/text",
+      "en": "WARNING! RADIATION LEVELS ON THIS PLANET ARE EXTREMELY HAZARDOUS!\nYou should not attempt further exploration without proper protective equipment!",
+      "tr": "UYARI! BU GEZEGENDEKİ RADYASYON SEVİYESİ SON DERECE TEHLİKELİ!\nUygun koruyucu ekipman olmadan keşfe devam etmemelisin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/getsmall/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/getsmall/text",
+      "en": "In order to get into that gap, you're going to need to find a way to make yourself smaller. Maybe there's an answer elsewhere in this cavern. I bet it's a secret! Ooh boy! ^orange;I love secrets^reset;!",
+      "tr": "O aralıktan geçmek için kendini küçültmenin bir yolunu bulmalısın. Belki bu mağarada bir cevap vardır. Kesin bir sır! Ooo! ^orange;Sırlara bayılırım^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/getsmall2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/getsmall2/text",
+      "en": "In order to get in here, you're going to have to ^green;Jump^reset; and then ^green;Press [F]^reset; while in the air.",
+      "tr": "Buradan içeri girmek için ^green;Zıpla^reset;, ardından havadayken ^green;[F] tuşuna bas^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffect/text",
+      "en": "^red;ALERT: MENTAL STATE DETERIORATING!^reset; Something is causing your thoughts and feelings to become jumbled. Focus is difficult and you feel yourself going insane...",
+      "tr": "^red;ALARM: ZİHİNSEL DURUMUN KÖTÜLEŞİYOR!^reset; Bir şey düşüncelerini ve hislerini birbirine karıştırıyor. Odaklanmak zorlaşıyor ve delirdiğini hissediyorsun...",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectair/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectair/text",
+      "en": "Leaping is fun! I should leap immediately from the nearest cliff! I am certain ^orange;Fun Times^reset; will ensue! Alternatively, try impacting the ground at a high speed! You'll get ^green;free cupcakes^reset;!",
+      "tr": "Zıplamak çok eğlenceli! En yakın uçurumdan hemen atlamalıyım! Kesin ^orange;çok eğlenceli^reset; olacak! Ya da yere son sürat çakılmayı dene! ^green;Bedava küçük kekler^reset; kazanırsın!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectair2/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectair2/text",
+      "en": "Don't forget to jump to your death! How else are you going to make ^green;splatter-cakes^reset;?",
+      "tr": "Ölümüne zıplamayı unutma! Yoksa ^green;paramparça kekleri^reset; nasıl yapacaksın?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectair3/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectair3/text",
+      "en": "You are certainly capable of flight! You can at least be sure of that! Go prove it by practicing with a leap off a high ledge! People will be amazed!",
+      "tr": "Uçabildiğin kesin! En azından bundan emin olabilirsin! Yüksek bir çıkıntıdan atlayıp bunu kanıtla! İnsanlar hayretler içinde kalacak!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectducts/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectducts/text",
+      "en": "You should start ^red;sleeping in the cargo holds of strangers^reset;, and leaving strange notes in their air ducts. If the mood arises, you could maybe even ^green;steal their face-skin^reset;!",
+      "tr": "^red;Yabancıların kargo bölmelerinde uyumaya^reset; ve hava kanallarına tuhaf notlar bırakmaya başlamalısın. Canın isterse ^green;yüzlerinin derisini de çalabilirsin^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying/text",
+      "en": "I'm bleeding very badly. I should ^red;definitely consider^reset; bleeding even more! I should ^orange;find something sharp^reset; and see if it fits in my eye socket!",
+      "tr": "Çok fena kanıyorum. Daha da çok kanamayı ^red;kesinlikle düşünmeliyim^reset;! ^orange;Keskin bir şey^reset; bulup göz çukuruma sığıyor mu diye bakmalıyım!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying2/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying2/text",
+      "en": "I cannot wait to bleed to death! Yaaaaay!",
+      "tr": "Kan kaybından ölmeyi sabırsızlıkla bekliyorum! Yaşasın!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying3/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying3/text",
+      "en": "I bet that swimming in ^orange;molten iron^reset; is both revitalizing and enjoyable.",
+      "tr": "^orange;Erimiş demirde^reset; yüzmek hem canlandırıcı hem de keyifli olmalı.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying4/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying4/text",
+      "en": "I am invincible. I should ^red;prove it by getting shot^reset; in the torso!",
+      "tr": "Yenilmezim. Gövdemden ^red;vurularak bunu kanıtlamalıyım^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying5/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectdying5/text",
+      "en": "I hear legends of a ^green;magical cleaning fluid^reset; known as bleach and how ^orange;delicious it is^reset;. Let's find some and ingest!",
+      "tr": "Çamaşır suyu denen ^green;sihirli temizlik sıvısının^reset; efsanelerini ve ne kadar ^orange;lezzetli olduğunu^reset; duydum. Biraz bulup içelim!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectfast/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectfast/text",
+      "en": "Moving fast is amazing! ^orange;Especially downwards at the ground^reset; where the magical sparkles await! You should go ^red;really fast^reset; and ram into the ground to collect ^orange;extra^reset; sparkles!",
+      "tr": "Hızlı hareket etmek harika! ^orange;Özellikle yere doğru^reset;; orada sihirli parıltılar var! ^red;Çok hızlı^reset; git ve ^orange;fazladan^reset; parıltı toplamak için yere çakıl!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectgrav/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectgrav/text",
+      "en": "I appear to be weightless! I should ^orange;immediately remove my armor or air supply^reset; so that I can truly appreciate weightlessness! I'll float better! Plus, I'll be even ^green;more^reset; desirable to the opposite sex!",
+      "tr": "Ağırlıksız gibiyim! Ağırlıksızlığın tadını çıkarmak için ^orange;zırhımı veya hava kaynağımı hemen çıkarmalıyım^reset;. Daha iyi süzülürüm! Üstelik karşı cinse ^green;daha da^reset; çekici görünürüm!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry1/senderName",
+      "en": "Pocket Lint",
+      "tr": "Cep Tüyü",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry1/text",
+      "en": "You're getting pretty hangry. That means angry and hungry. Because hunger. Food. Have you considered ^red;cannibalism^reset;? It's fast and easy! Try it ! Murder a neighbor! Trust the voices.",
+      "tr": "Fena halde acıkıp sinirleniyorsun. Yani öfke ve açlık bir arada. Açlık işte. Yemek. ^red;Yamyamlığı^reset; düşündün mü? Hızlı ve kolay! Denesene! Bir komşunu öldür! Seslere güven.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry2/senderName",
+      "en": "A Taco named Steve",
+      "tr": "Steve adında bir tako",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry2/text",
+      "en": "Okay. You're really getting hungry now. Why haven't you ^red;eaten a close personal friend^reset; yet? They are full of nutrients!",
+      "tr": "Pekâlâ. Artık gerçekten acıktın. Neden hâlâ ^red;yakın bir arkadaşını yemedin^reset;? Besin dolular!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry3/senderName",
+      "en": "Your Toenail",
+      "tr": "Ayak tırnağın",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry3/text",
+      "en": "I can't help but notice: You're still hungry, and your ^red;hellish maw is not dripping with the viscera of the slain^reset;. What is wrong with you? Eat ^red;sentient species^reset;!",
+      "tr": "Şunu fark etmeden edemiyorum: Hâlâ açsın ve ^red;cehennemî ağzından katlettiklerinin iç organları damlamıyor^reset;. Neyin var senin? ^red;Bilinçli türleri^reset; ye!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry4/senderName",
+      "en": "Pinky the Nose Squirrel",
+      "tr": "Burun Sincabı Pinky",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry4/text",
+      "en": "Brain, you are an idiot. You are about to die, and all you need to do to stop that problem is ^red;murder and devour^reset; the next person you see. Get on it. Or I'll make you.",
+      "tr": "Beyin, aptalsın. Ölmek üzeresin; bunu durdurmak için gördüğün ilk kişiyi ^red;öldürüp yemekten^reset; başka bir şey yapman gerekmiyor. Hadi! Yoksa sana zorla yaptırırım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry5/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry5/text",
+      "en": "I want to eat raw flesh.",
+      "tr": "Çiğ et yemek istiyorum.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry6/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry6/text",
+      "en": "Why do I increasingly feel like I require meat?",
+      "tr": "Giderek daha çok et yemem gerekiyormuş gibi hissetmemin nedeni ne?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry7/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry7/text",
+      "en": "I should have some meat.",
+      "tr": "Biraz et yemeliyim.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry8/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffecthungry8/text",
+      "en": "I am slowly going crazy. 1-2-3-4-5-6-^red;Meat^reset;. Crazy going slowly am I 6-5-4-3-2-1-^red;Kill^reset;!",
+      "tr": "Yavaş yavaş deliriyorum. 1-2-3-4-5-6-^red;Et^reset;. Deliriyorum yavaş yavaş ben, 6-5-4-3-2-1-^red;Öldür^reset;!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectkyle/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectkyle/text",
+      "en": "Death is an illusion.",
+      "tr": "Ölüm bir yanılsamadır.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectliquid/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectliquid/text",
+      "en": "I forgot that ^orange;breathing liquid^reset; is a great way to help keep in shape! I should probably ^red;remove this stupid air supply^reset; in order to breathe a ton of it!",
+      "tr": "^orange;Sıvı solumanın^reset; formda kalmak için harika bir yol olduğunu unutmuşum! Bolca soluyabilmek için ^red;şu aptal hava kaynağını çıkarsam^reset; iyi olur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectmike/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectmike/text",
+      "en": "Wake up, Michael.",
+      "tr": "Uyan Michael.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectmusic/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectmusic/text",
+      "en": "We should very quickly recite a ^orange;rousing poem about the pointlessness of existentialism^reset; whilst conducting a ^green;grain-fed orchestra of meat^reset;!",
+      "tr": "Bir ^green;tahılla beslenen et orkestrası^reset; yönetirken ^orange;varoluşçuluğun anlamsızlığı üzerine coşkulu bir şiiri^reset; çabucak okumalıyız!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectneat/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectneat/text",
+      "en": "Neat, it just got a ^green;tiny bit windy outside^reset;. Do you know what that means? Yes! ^orange;That's right!^reset;, it's ^red;MURDER TIME!^reset; Let's find ourselves something to kill!",
+      "tr": "Ne güzel, dışarıda ^green;azıcık rüzgâr çıktı^reset;. Bunun ne anlama geldiğini biliyor musun? Evet! ^orange;Aynen öyle!^reset;, ^red;CİNAYET VAKTİ!^reset; Hadi öldürecek bir şey bulalım!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectskin/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectskin/text",
+      "en": "Y'know what I ^red;really hate^reset;? Skin! Removing it is clearly the ^orange;most direct way^reset; to gain access to the ^green;magical realm of skinless gnomes^reset;! Do it! ^red;Remove your epidermis!^reset;",
+      "tr": "Bil bakalım neyden ^red;gerçekten nefret ediyorum^reset;? Deri! Deriyi soymak, ^green;derisiz cücelerin sihirli diyarına^reset; ulaşmanın ^orange;en kestirme yolu^reset;! Yap şunu! ^red;Epidermisini soy!^reset;",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectwee/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectwee/text",
+      "en": "The sharper it is, ^red;the more fun it is to eat^reset;! That's what the old tales say! And they're right!",
+      "tr": "Ne kadar keskinse ^red;yemesi o kadar eğlencelidir^reset;! Eski hikâyeler böyle der. Haklılar da!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo1/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo1/text",
+      "en": "hey, you should try experimenting with radioactive materials by ingesting them! you shouldn't miss on getting all the superpowers!",
+      "tr": "hey, radyoaktif maddeleri yutarak deney yapmayı denesene! süper güçleri kaçırmak istemezsin!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo2/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo2/text",
+      "en": "It is common knowledge that ingesting molten metal helps you strengthen your bone structure. Don't miss out on that!",
+      "tr": "Erimiş metal yutmanın kemik yapısını güçlendirdiği bilinen bir şey. Bu fırsatı kaçırma!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo3/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo3/text",
+      "en": "To counter the iron loss from cannibalism-induced bleeding, you must consume liquid iron in copious amounts. it's the easiest way to replenish your iron stores. ^red;Trust me^reset;.",
+      "tr": "Yamyamlığın yol açtığı kanamayla kaybettiğin demiri telafi etmek için bolca sıvı demir tüketmelisin. Demir depolarını doldurmanın en kolay yolu. ^red;Bana güven^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo4/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectweirdo4/text",
+      "en": "Use ^green;all of your energy^reset;, and then ^red;run naked, screaming, into packs of monsters^reset;. There is no other way to make perogies.",
+      "tr": "^green;Tüm enerjini harca^reset;, sonra ^red;çıplak halde çığlık atarak canavar sürülerinin arasına dal^reset;. Pierogi yapmanın başka yolu yok.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectwindy/senderName",
+      "en": "Your Mind",
+      "tr": "Aklın",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/insanityeffectwindy/text",
+      "en": "The voices in the wind have informed you of a fantastic sale! It can only be found at the bottom of a Sulphuric Ocean, and only if you're naked! Totally legit! Check it out!",
+      "tr": "Rüzgârdaki sesler muhteşem bir indirim olduğunu söyledi! Yalnızca Sülfürik Okyanus’un dibinde, hem de çıplak olursan bulabilirsin! Kesin gerçek! Bir bak!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/justkiddingyoureamoron/text",
+      "en": "Honestly, spawning the most powerful augment? Some savior you are. I'm going to tell the Protectorate what a little cheat you are. ",
+      "tr": "En güçlü eklentiyi çağırmak ha? Ne kurtarıcıymışsın. Protectorate’e ne kadar hileci olduğunu anlatacağım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1/text",
+      "en": "The energy signatures within this cave are quite unusual. I'm getting definite trace readings of ^green;ancient essence^reset;, which doesn't make much sense. The ^#ff00fc;Ancients^reset; have no known historical presence in this sector.",
+      "tr": "Bu mağaradaki enerji izleri oldukça sıra dışı. ^green;Kadim Öz^reset; izlerini kesin olarak saptıyorum; bu pek mantıklı değil. ^#ff00fc;Kadimlerin^reset; bu bölgede bilinen bir tarihî varlığı yok.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1b/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1b/text",
+      "en": "Still...this reads as ^#ff00fc;Ancients^reset;, I'm almost positive. If these readings are accurate, we've stumbled across something truly significant. Press on! This is a rare chance for a true discovery.",
+      "tr": "Yine de... ölçümler ^#ff00fc;Kadimleri^reset; gösteriyor, bundan neredeyse eminim. Doğruysa gerçekten önemli bir şey bulduk. Devam et! Gerçek bir keşif için bu nadir bir fırsat.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1c/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1c/text",
+      "en": "I suppose it is safe to assume there is nobody here left alive. I can detect no trace of recent activity. I would estimate perhaps a decade since anyone has tread here.",
+      "tr": "Burada hayatta kalan kimse olmadığını varsaymak güvenli sanırım. Yakın zamanda bir etkinlik izi bulamıyorum. Tahminimce buraya en son biri on yıl kadar önce ayak basmış.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1d/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop1d/text",
+      "en": "^orange;YES^reset;! This is ^green;definitely^reset; an energy signature linked with the ^#ff00fc;Ancients^reset;. It's coming from somewhere very close to your position.",
+      "tr": "^orange;EVET^reset;! Bu ^green;kesinlikle^reset; ^#ff00fc;Kadimlerle^reset; bağlantılı bir enerji izi. Bulunduğun yere çok yakın bir noktadan geliyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop2/text",
+      "en": "Wow. ^#ff00fc;Ancient^reset; technology in almost perfect condition! This is a ^orange;very^reset; valuable discovery.",
+      "tr": "Vay canına. Neredeyse kusursuz durumdaki ^#ff00fc;Kadim^reset; teknolojisi! ^orange;Çok^reset; değerli bir keşif.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop4/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop4/text",
+      "en": "A wonderful grotto. This water looks to be quite refreshing. A swim might be ^green;just what you need^reset;, but look out for ^red;predators beneath the surface^reset;.",
+      "tr": "Harika bir mağara. Bu su epey ferahlatıcı görünüyor. Yüzmek ^green;tam da ihtiyacın olan şey^reset; olabilir ama suyun altındaki ^red;yırtıcılara dikkat et^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop4lake/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop4lake/text",
+      "en": "This door appears to be locked. Perhaps searching elsewhere in the cave will reveal a ^orange;switch^reset; of some sort.^reset;.",
+      "tr": "Bu kapı kilitli görünüyor. Belki mağaranın başka yerlerinde bir tür ^orange;anahtar^reset; bulursun.^reset;",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop5/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop5/text",
+      "en": "It would appear, based on lifesigns, that you have stumbled onto some sort of nest. Be aware: ^red;one large mutant^reset; has been detected.",
+      "tr": "Yaşam izlerine bakılırsa bir yuvaya denk gelmişsin. Dikkat: ^red;büyük bir mutant^reset; tespit edildi.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop6/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop6/text",
+      "en": "Unless you are exceptionally nimble, you are going to need ^orange;climbing ropes^reset; to get up there. Try finding some or ^orange;make some yourself in your [C]rafting menu^reset;.",
+      "tr": "Çok çevik değilsen oraya çıkmak için ^orange;tırmanma halatları^reset; gerekecek. Bulmaya çalış ya da ^orange;[C] Üretim menüsünde kendin üret^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop7/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptop7/text",
+      "en": "This switch appears to be a timed trigger. You'll need a means to increase your speed if you are to pass here unless your species is exceptionally quick. Perhaps a ^orange;Dash Tech^reset; will do the trick.",
+      "tr": "Bu anahtar zaman ayarlı bir tetikleyici gibi. Türün çok hızlı değilse burayı geçmek için hızını artırmalısın. Belki bir ^orange;Atılma Tech^reset; iş görür.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorlocked/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorlocked/text",
+      "en": "I suppose both symbols glowing would represent 'on', then? That seems to make the most sense. Activate the correct consoles and ^green;ffwwooomf^reset;! Open Sesame! Or a lethal trap, I suppose.",
+      "tr": "Her iki simgenin yanması 'açık' anlamına geliyor sanırım. En mantıklısı bu. Doğru konsolları etkinleştir ve ^green;vuuuş^reset;! Açıl susam açıl! Ya da ölümcül bir tuzak, herhalde.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorshoot1/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorshoot1/text",
+      "en": "Hmm. This door appears well sealed. Oh! It has a neat little missile icon on it! Perhaps some ^orange;explosive force^reset; might open it? A ^green;grenade, bomb or rocket^reset; should do the trick.",
+      "tr": "Hmm. Bu kapı iyice mühürlenmiş. Aa! Üzerinde havalı bir füze simgesi var! Belki biraz ^orange;patlayıcı güç^reset; açar? Bir ^green;bomba, el bombası ya da roket^reset; iş görür.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorshoot2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorshoot2/text",
+      "en": "Ah, another of these ^orange;explosive^reset; triggered doors. I should hope you know what to do by now.",
+      "tr": "Ah, bu da ^orange;patlayıcıyla^reset; açılan kapılardan biri. Artık ne yapacağını biliyorsundur umarım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorshoot3/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/mamapoptopdoorshoot3/text",
+      "en": "Hmm. This switch is far enough from the door that entry without some sort of ^orange;swift boost or motion^reset; appears to be almost impossible.",
+      "tr": "Hmm. Bu anahtar kapıdan o kadar uzakta ki bir tür ^orange;hız takviyesi ya da seri bir hareket^reset; olmadan girmek neredeyse imkânsız görünüyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/needMicrosphere/text",
+      "en": "To fit through this gap, you're going to require a ^orange;Microsphere Tech^reset;. You can craft it via your ^orange;Tricorder^reset;. ",
+      "tr": "Bu aralıktan geçmek için ^orange;Mikroküre Tech^reset; gerekiyor. Bunu ^orange;Tricorder^reset; üzerinden üretebilirsin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/precursorDiscovery1/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/precursorDiscovery2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/researchBonus1/text",
+      "en": "You've gained a +^green;1^reset; passive ^orange;Research^reset; rate bonus based on your session playtime. ^red;This bonus will be disabled if you are AFK^reset;.",
+      "tr": "Oturum oynama sürene bağlı olarak pasif ^orange;Araştırma^reset; hızına +^green;1^reset; bonus kazandın. ^red;Boşta kalırsan bu bonus devre dışı olur^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/researchBonus2/text",
+      "en": "You've gained a +^green;2^reset; passive ^orange;Research^reset; rate bonus based on your session playtime. ^red;This bonus will be disabled if you are AFK^reset;.",
+      "tr": "Oturum oynama sürene bağlı olarak pasif ^orange;Araştırma^reset; hızına +^green;2^reset; bonus kazandın. ^red;Boşta kalırsan bu bonus devre dışı olur^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/researchBonus3/text",
+      "en": "You've gained a +^green;3^reset; passive ^orange;Research^reset; rate bonus based on your session playtime. ^red;This bonus will be disabled if you are AFK^reset;.",
+      "tr": "Oturum oynama sürene bağlı olarak pasif ^orange;Araştırma^reset; hızına +^green;3^reset; bonus kazandın. ^red;Boşta kalırsan bu bonus devre dışı olur^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/researchBonus4/text",
+      "en": "You've gained a +^green;4^reset; passive ^orange;Research^reset; rate bonus based on your session playtime. ^red;This bonus will be disabled if you are AFK^reset;.",
+      "tr": "Oturum oynama sürene bağlı olarak pasif ^orange;Araştırma^reset; hızına +^green;4^reset; bonus kazandın. ^red;Boşta kalırsan bu bonus devre dışı olur^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ruins/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ruins/text",
+      "en": "I would guess that something unpleasant happened to the colonists here. A find like this could be worth millions of pixels, and no new colony is going to pass up that income.",
+      "tr": "Buradaki kolonicilerin başına tatsız bir şey geldiğini tahmin ediyorum. Böyle bir keşif milyonlarca piksel eder; hiçbir yeni koloni bu geliri geri çevirmez.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ruins2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/ruins2/text",
+      "en": "This door is sealed by a locking mechanism that should respond well to ^orange;explosive force^reset;. If you can obtain a ^green;bomb or other sort of explosive^reset;, you could probably open this.",
+      "tr": "Bu kapı, ^orange;patlayıcı güce^reset; iyi tepki verecek bir kilit mekanizmasıyla mühürlenmiş. Bir ^green;bomba ya da başka bir patlayıcı^reset; bulabilirsen muhtemelen açabilirsin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/subCantOperate/text",
+      "en": "Your submersible vehicle cannot operate in the substance it is currently immersed in.",
+      "tr": "Denizaltı aracın, içinde bulunduğu maddede çalışamaz.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/upgrade_station/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_exploration.radiomessages",
+      "pointer": "/upgrade_station/text",
+      "en": "I should mention this now before I forget! You will occasionally need to ^orange;upgrade existing crafting stations^reset; using their built in ^green;Upgrade Button^reset; to be able to craft higher-tier gear. Make sure you don't forget!",
+      "tr": "Unutmadan şimdiden söyleyeyim! Daha yüksek kademe ekipman üretebilmek için ara sıra üzerlerindeki ^green;Yükselt Düğmesini^reset; kullanarak ^orange;mevcut üretim tezgâhlarını yükseltmen^reset; gerekecek. Sakın unutma!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_genes.radiomessages",
+      "pointer": "/pickupgene2/text",
+      "en": "Much more viable as a fuel and resource than its unrefined self. Enriched Plutonium can help you reach the stars.",
+      "tr": "İşlenmemiş hâline göre çok daha kullanışlı bir yakıt ve kaynak. Zenginleştirilmiş Plütonyum yıldızlara ulaşmana yardım eder.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupAntiNeutronium/text",
+      "en": "^red;WARNING!!!^reset;: This element is extremely dangerous and should, under no circumstances, be used to make an explosive paired with Neutronium.",
+      "tr": "^red;UYARI!!!^reset;: Bu element son derece tehlikelidir; hiçbir koşulda Nötronyum ile birlikte patlayıcı yapımında kullanılmamalıdır.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupDeuterium/text",
+      "en": "Deuterium is relatively common, but difficult to extract. It is also necessary for unstable particles which are *extremely* useful in the lab.",
+      "tr": "Döteryum nispeten yaygın ama çıkarması zor. Laboratuvarda *son derece* yararlı olan Kararsız Parçacıkları üretmek için de gereklidir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupEnrichedplutonium/text",
+      "en": "Much more viable as a fuel and resource than its unrefined self. Enriched Plutonium can help you reach the stars.",
+      "tr": "İşlenmemiş hâline göre çok daha kullanışlı bir yakıt ve kaynak. Zenginleştirilmiş Plütonyum yıldızlara ulaşmana yardım eder.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupEnricheduranium/text",
+      "en": "Enriched uranium finds itself a unique niche: armor piercing ability when applied to metallic rounds.",
+      "tr": "Zenginleştirilmiş uranyumun kendine özgü bir kullanım alanı var: Metal mermilere uygulandığında zırhı delme yeteneği kazandırıyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupNeptunium/text",
+      "en": "Slightly more radioactive than uranium, and also a much more useful source of fuel, Neptunium will be your friend when you need it.",
+      "tr": "Uranyumdan biraz daha radyoaktif olan Neptünyum, çok daha kullanışlı bir yakıt kaynağıdır ve ihtiyacın olduğunda yanında olur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupNeutronium/text",
+      "en": "This was supposed to be a ^yellow;hypothetical^reset; element. You've gone ahead and created it. I heavily (and I cannot stress this enough) recommend against being careless with this.",
+      "tr": "Bunun ^yellow;varsayımsal^reset; bir element olması gerekiyordu. Sen gidip onu ürettin. Dikkatsiz davranmamanı önemle (hem de çok önemle) tavsiye ederim.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupThorium/text",
+      "en": "Relatively rare, but exceptionally useful, Thorium will provide a boost to your survival and ability to travel the stars.",
+      "tr": "Nispeten nadir ama son derece kullanışlı olan Toryum, hayatta kalma ve yıldızlar arasında yolculuk etme becerini artırır.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupTritium/text",
+      "en": "Tritium is produced by fission reaction, and is a viable means to obtain helium-3 as well, via extraction in a laboratory.",
+      "tr": "Trityum, fisyon tepkimesiyle üretilir. Ayrıca laboratuvarda çıkarma işlemiyle Helyum-3 elde etmek için de kullanılabilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_isotopes.radiomessages",
+      "pointer": "/pickupUltronium/text",
+      "en": "Who knows how this is even possible, but you have created a whole new type of radiation. Let us call it: Ultronium. Check out that fuel capability!",
+      "tr": "Bunun nasıl mümkün olduğunu kim bilebilir ama yepyeni bir radyasyon türü ürettin. Adına Ultronium diyelim. Yakıt olarak ne kadar işe yaradığına bak!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_frdetectedmessage/senderName",
+      "en": "Steve the Wonder Pumpkin",
+      "tr": "Harika Balkabağı Steve",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_frdetectedmessage/text",
+      "en": "You have FrackinRaces installed alongside FrackinUniverse. Remove it. The mod authors told you about this stuff. Maybe you should try reading mod pages more? I've trapped you in a quantum realm of my creation until you remove it.",
+      "tr": "FrackinUniverse ile birlikte FrackinRaces de kurulu. Onu kaldır. Modun yapımcıları sana bunları anlatmıştı. Mod sayfalarını biraz daha dikkatli okumayı denesene? Kaldırana kadar seni kendi yarattığım kuantum diyarında hapsettim.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin1/text",
+      "en": "Holy crap. You are one of the weirdest looking things I have ^orange;ever^reset; seen. What the heck are you?",
+      "tr": "Vay anasını. ^orange;şimdiye kadar^reset; gördüğüm en tuhaf yaratıklardan birisin. Sen de neyin nesisin?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin2/text",
+      "en": "Thanks, minion. How about another ^green;completely pointless, annoying^reset; fetch task? Sound good? Tough crap. Do it anyway. Loser.",
+      "tr": "Sağ ol, yardakçı. Bir tane daha ^green;tamamen gereksiz, sinir bozucu^reset; getir götür görevi ister misin? Kulağa hoş geliyor mu? Umurumda değil. Yine de yap. Ezik.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin3/text",
+      "en": "Yay. I shall feign enthusiasm in order to keep you working for me while dispatching you on ^green;yet another^reset; aggravating quest of complete annoyance.",
+      "tr": "Yaşasın. Seni ^green;yine^reset; can sıkan ve tamamen gıcık edici bir göreve yollarken benim için çalışmaya devam etmen adına hevesliymiş gibi yapacağım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_gasgiant/text",
+      "en": "Did you really just....yea you did. That is ^red;hilarious^reset;, dude. I just called you across the cosmos to see if you died, and you are on a gas giant without protection. Amazing. Totally telling the guys ^green;right now^reset;. Die well!",
+      "tr": "Az önce gerçekten... evet, yaptın. Bu ^red;çok komik^reset;, dostum. Ölüp ölmediğini görmek için seni kozmosun öbür ucundan aradım; korumasız bir gaz devindesin. İnanılmaz. ^green;Hemen şimdi^reset; bizimkilere anlatıyorum. İyi ölümler!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_insanity1/text",
+      "en": "I'm unsure if you are aware, but there appears to be a problem. You are still currently alive. Please correct the issue soon or you won't get more meat.",
+      "tr": "Farkında mısın bilmiyorum ama bir sorun var gibi. Hâlâ hayattasın. Lütfen bunu yakında düzelt, yoksa daha fazla et alamazsın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_insanity2/text",
+      "en": "Hi.",
+      "tr": "Selam.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_insanity3/text",
+      "en": "Greetings.",
+      "tr": "Selamlar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_insanity4/text",
+      "en": "Are you gonna eat that hashbrown? How about your own skin instead?",
+      "tr": "Şu patates mücverini yiyecek misin? Onun yerine kendi derini yesen?",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_insanity5/text",
+      "en": "Woooooooo, I'm totally not Kevin and just the voices of insanity telling you to shoot yourself in the appendix. Do it.",
+      "tr": "Vuuuu, ben kesinlikle Kevin değilim; sadece deliliğin sesleriyim ve sana apandisine ateş etmeni söylüyorum. Hadi yap.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_kevin.radiomessages",
+      "pointer": "/fu_kevin_insanity6/text",
+      "en": "God I love it when you're insane! You can never tell if its me talking or your own mind reaching a psychotic breaking point!.",
+      "tr": "Tanrım, delirdiğinde buna bayılıyorum! Benim mi konuştuğumu yoksa zihninin psikotik bir çöküşe mi yaklaştığını asla anlayamıyorsun!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/crazycarry/senderName",
+      "en": "Kevin",
+      "tr": "Kevin",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/crazycarry/text",
+      "en": "You are carrying something that is making you slowly lose your mind. It may be something gross, spooky, horrifying or simply unknowable. The terrible secrets of the universe are fun!",
+      "tr": "Aklını yavaş yavaş kaybetmene yol açan bir şey taşıyorsun. İğrenç, ürkütücü, korkunç ya da tamamen anlaşılmaz bir şey olabilir. Evrenin dehşet verici sırları eğlencelidir!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madness1/text",
+      "en": "Why have you decided to suddenly munch on some plant fibre? Don't try to deny it. My sensors indicate you have ingested it.",
+      "tr": "Neden birden bitki lifi yemeye karar verdin? İnkâr etme. Sensörlerim onu yediğini gösteriyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madness2/text",
+      "en": "I am detecting abnormalities in your brain that seem to be causing you to have issues in utilizing your full physical capacity. It should pass, eventually.",
+      "tr": "Beyninde, tüm fiziksel kapasiteni kullanmanı zorlaştıran anormallikler tespit ediyorum. Zamanla geçmeli.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessbeans/text",
+      "en": "Beans. All you can think of is beans, and now you are bloated and gassy like you ate some. Maybe you did eat some! Or maybe that was your toe.",
+      "tr": "Fasulye. Aklında yalnızca fasulye var; sanki yemişsin gibi şişkin ve gazlısın. Belki de yedin! Ya da yediğin şey ayak parmağındı.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnesscat/text",
+      "en": "Perhaps you should take a moment to truly appreciate the majesty of the animal kingdom by mimicking their sound effects as loudly as possible.",
+      "tr": "Belki de hayvanlar âleminin ihtişamını gerçekten takdir etmek için bir an ayırıp onların seslerini olabildiğince yüksek sesle taklit etmelisin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnesscombust/text",
+      "en": "Well, it would appear that your current seat has randomly caught ^orange;on fire^reset;. That, or you set it on fire. Either way: it is ^orange;on fire^reset;. And so are you.",
+      "tr": "Görünüşe bakılırsa oturduğun yer durup dururken ^orange;tutuşmuş^reset;. Ya da sen ateşe verdin. Her durumda ^orange;yanıyor^reset;. Sen de öyle.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnesscombustinvert/text",
+      "en": "As amusing as it may be, spraying the contents of a ^orange;molotov^reset; from your mouth is not recommended, particularly not with a lighter.",
+      "tr": "Eğlenceli görünse de ^orange;molotofun^reset; içindekileri ağzından püskürtmek, özellikle çakmakla birlikte, önerilmez.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessenergy/text",
+      "en": "Did you just lick your battery pack? Don't deny it. My sensors indicate you did.",
+      "tr": "Az önce pil paketini mi yaladın? İnkâr etme. Sensörlerim yaladığını gösteriyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessfood/text",
+      "en": "Your brain and body are currently in dispute over your hunger.",
+      "tr": "Şu anda açlığın konusunda beyninle bedenin anlaşmazlık içinde.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessharm/text",
+      "en": "I suggest you put that knife down. You just cut your own arm open and appear to be bleeding profusely.",
+      "tr": "Bence o bıçağı bırak. Az önce kendi koluna bir kesik açtın ve çok kan kaybediyor gibisin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessharminvert/senderName",
+      "en": "You",
+      "tr": "Sen",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessharminvert/text",
+      "en": "<^yellow;You feel a compulsion to stab yourself, and in doing so somehow begin regenerating.^reset;>",
+      "tr": "<^yellow;Kendini bıçaklama dürtüsü hissediyorsun ve bunu yaptığında bir şekilde yenilenmeye başlıyorsun.^reset;>",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları",
+      "qa": {
+        "allow_control_fix": true,
+        "semantic_override": "v0.80: Pinli radyo text içindeki köşeli ifade oyuncuya görünen tam anlatım cümlesidir; kod değişkeni değildir. Yalnız bu tam asset/pointer/EN/TR için köşeli anlatımın Türkçesi onaylandı; gerçek yer tutucular korunur."
+      }
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessinvuln/senderName",
+      "en": "Kevin",
+      "tr": "Kevin",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessinvuln/text",
+      "en": "You are not allowed to get hurt. Or die. Don't even bother trying.",
+      "tr": "Yaralanmana izin yok. Ölmene de. Denemekle uğraşma bile.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessrand1/text",
+      "en": "Let's play a game.",
+      "tr": "Hadi bir oyun oynayalım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessrand2/text",
+      "en": "Bet you can't eat just one!",
+      "tr": "Bahse girerim bir tane yiyip bırakamazsın!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessrand3/text",
+      "en": "Don't forget to milk that thing.",
+      "tr": "Şunu sağmayı unutma.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessroot/text",
+      "en": "Your brain has stopped sending signals to your legs. It appears to be a synaptic issue, likely related to your bouts of insanity.",
+      "tr": "Beynin bacaklarına sinyal göndermeyi bıraktı. Bu, muhtemelen delilik nöbetlerinle bağlantılı bir sinaps sorunu gibi görünüyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/madnessvuln/text",
+      "en": "Run. Everything will kill you. Run! DROP EVERYTHING AND RUN!",
+      "tr": "Kaç. Her şey seni öldürecek. Kaç! HER ŞEYİ BIRAK VE KAÇ!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/sanitygain/text",
+      "en": "You have recovered some of your lost mental stability.",
+      "tr": "Kaybettiğin zihinsel dengenin bir kısmını geri kazandın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_madness.radiomessages",
+      "pointer": "/sanitygainboost/text",
+      "en": "Your madness has just led to inspiration! Your mind fills with new possibilities for research topics.",
+      "tr": "Deliliğin sana ilham verdi! Zihnin araştırma konuları için yeni olasılıklarla doluyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupCarbon/text",
+      "en": "^orange;Carbon^reset; is quite abundant, but that doesn't mean it has no use. Carbon is ^green;essential, and can produce things like Graphene^reset;. You want it.",
+      "tr": "^orange;Karbon^reset; bol bulunur ama bu, işe yaramadığı anlamına gelmez. Karbon ^green;elzemdir ve Grafen gibi maddeler üretmekte kullanılabilir^reset;. Sana lazım.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupCinnabar/text",
+      "en": "^orange;Cinnabar^reset; is most useful for obtaining the ^green;mercury within^reset; it. This particular variety is extremely rare, with 99% or greater purity.",
+      "tr": "^orange;Zinober^reset; en çok içindeki ^green;civayı elde etmekte^reset; işe yarar. Bu türü çok nadirdir; saflığı %99 veya daha fazladır.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupCorruption/text",
+      "en": "^orange;Lasombrium^reset; exists in dimensional flux and is out of phase with this universe. ^green;Its exact nature is unknown^reset;, but it taints any life it touches here.",
+      "tr": "^orange;Lasombrium^reset; boyutsal akıda bulunur ve bu evrenle faz dışıdır. ^green;Tam olarak ne olduğu bilinmiyor^reset; ama buradaki dokunduğu her canlıyı kirletiyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupDensinium/text",
+      "en": "The most ^green;dense and unbreakable^reset; naturally occurring ore that is currently known to science. ^orange;Densinium^reset; is quite rare, leading to an absurd market value.",
+      "tr": "Bilimin şu ana dek bildiği, doğada bulunan en ^green;yoğun ve kırılmaz^reset; cevher. ^orange;Densinium^reset; oldukça nadir olduğundan piyasa değeri akıl almaz düzeyde.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupGraphene/text",
+      "en": "The protective ability of ^orange;graphene^reset; is astounding. A ^green;single atom thick^reset;, it also conducts energy very well and acts as a capacitor.",
+      "tr": "^orange;Grafenin^reset; koruyuculuğu hayret verici. ^green;Tek atom kalınlığında^reset; olmasına rağmen enerjiyi çok iyi iletir ve kapasitör görevi görür.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupIrradium/text",
+      "en": "Highly radioactive, ^orange;irradium^reset; was thought unharnessable at one point. But thanks to advancements it can be made inert to the user. I suggest using it as a ^green;barrier against the elements^reset;.",
+      "tr": "Oldukça radyoaktif ^orange;irradium^reset; bir zamanlar kullanılamaz sanılıyordu. Ancak gelişmeler sayesinde kullanıcıya zarar vermeyecek hâle getirilebiliyor. ^green;Çevresel tehlikelere karşı bariyer^reset; olarak kullanmanı öneririm.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupLead/text",
+      "en": "^orange;Lead^reset; has a variety of uses but is also ^green;toxic to carbon-based life^reset; so be sure to handle it with care. If a friend says lead-juice is tasty, they are a liar. Avoid them.",
+      "tr": "^orange;Kurşunun^reset; çeşitli kullanım alanları var ama ^green;karbon temelli canlılar için zehirlidir^reset;; dikkatli kullan. Bir arkadaşın kurşun suyunun lezzetli olduğunu söylerse yalan söylüyordur. Ondan uzak dur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupMagnesium/text",
+      "en": "^orange;Magnesium^reset; is a relatively common resource that you'll be needing ^green;quite a fair amount of^reset; to run a successful biology lab. ^orange;Magnesite^reset; is one source. It can be ^orange;smelted or extracted^reset;.",
+      "tr": "^orange;Magnezyum^reset; nispeten yaygın bir kaynak ve başarılı bir biyoloji laboratuvarı için ^green;epeyce^reset; gerekecek. Kaynaklarından biri ^orange;magnezit^reset;. ^orange;Eritilebilir ya da çıkarılabilir^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupMascagnite/text",
+      "en": "^orange;Mascagnite^reset; is readily available in most biomes and can be ^green;smelted or extracted^reset; at your leisure for different results.",
+      "tr": "^orange;Maskagnit^reset; biyomların çoğunda kolayca bulunur; farklı sonuçlar için dilediğinde ^green;eritebilir ya da çıkarabilirsin^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupMoonstone/text",
+      "en": "^orange;Telebrium^reset; is a strange crystal that ^green;conducts energy^reset; and can ^green;withstand concussive force^reset;. This makes it ideal for many purposes.",
+      "tr": "^orange;Telebrium^reset;, ^green;enerji ileten^reset; ve ^green;darbe kuvvetine dayanabilen^reset; tuhaf bir kristal. Bu özellikleri onu pek çok kullanım için ideal kılıyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupPenumbrite/text",
+      "en": "^orange;Penumbrite^reset; is a most unusual glowing metal. It is found ^green;naturally on Penumbra planets^reset; and few other locales. Acquire it and guard it jealously.",
+      "tr": "^orange;Penumbrite^reset; son derece sıra dışı, parlayan bir metal. ^green;Doğal olarak Penumbra gezegenlerinde^reset; ve birkaç başka yerde bulunur. Edin ve gözün gibi koru.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupPrism/text",
+      "en": "^orange;Prism shards^reset; are a sort of ^orange;crystal/metal hybrid^reset; capable of being forged into a variety of handy equipment. You can work it into some ^green;unique and unusual gear^reset;.",
+      "tr": "^orange;Prizma parçaları^reset;, dövülerek çeşitli kullanışlı ekipmanlara dönüştürülebilen bir tür ^orange;kristal-metal karışımıdır^reset;. Bunlardan ^green;eşsiz ve sıra dışı ekipmanlar^reset; yapabilirsin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupProtocite/text",
+      "en": "^orange;Protocite is a resource unique to Proto Worlds^reset;. It is rich in energy, and capable of being hardened into an alloy or ^green;liquefied for powering goods^reset;. Its value is high.",
+      "tr": "^orange;Protocite yalnızca Proto Dünyalarında bulunan bir kaynaktır^reset;. Enerji bakımından zengindir; alaşım hâline getirilmek üzere sertleştirilebilir veya ^green;güç sağlamak üzere sıvılaştırılabilir^reset;. Değeri yüksektir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupQuietus/text",
+      "en": "^orange;Quietus^reset; is useful for smooth, ^green;exceptionally sleek weapons and armor^reset;. Do not, however, get any in cuts due to potential toxins.",
+      "tr": "^orange;Quietus^reset;, pürüzsüz ve ^green;son derece zarif silah ve zırhlar^reset; için kullanışlıdır. Ancak olası toksinler nedeniyle kesiklerine bulaştırma.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupSivite/text",
+      "en": "^orange;Sivite^reset; can be ^green;smelted or extracted^reset; to obtain the useful resources contained within. While not essential, it will be quite handy to have around.",
+      "tr": "^orange;Sivite^reset; içindeki yararlı kaynakları elde etmek için ^green;eritilebilir ya da çıkarılabilir^reset;. Şart değil ama elinin altında bulunması işe yarar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupSolari/text",
+      "en": "This ^orange;lunari crystal^reset; shines with the light of a yellow sun, and possesses ^green;strange qualities^reset; that bestow strange properties to metals and plastics.",
+      "tr": "Bu ^orange;Lunari kristali^reset; sarı bir güneşin ışığıyla parlar ve metallere, plastiklere tuhaf özellikler kazandıran ^green;garip nitelikler^reset; taşır.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupSulphur/text",
+      "en": "Abundant and simple to find, ^orange;sulphur^reset; is important for numerous applications. Its primary use is in ^green;fertilizers^reset;.",
+      "tr": "Bol bulunan ve kolay bulunabilen ^orange;kükürt^reset; pek çok kullanım için önemlidir. Başlıca kullanım alanı ^green;gübredir^reset;.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_ore.radiomessages",
+      "pointer": "/pickupZerchesium/text",
+      "en": "Slightly ^green;harder than tungsten^reset;, ^orange;Zerchesium^reset; is also revered for its ability to manipulate explosive force with ease.",
+      "tr": "Biraz ^green;tungstenden daha sert^reset; olan ^orange;Zerchesium^reset;, patlayıcı gücü kolayca yönlendirebilmesiyle de bilinir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_byosftldrive-getErchius1/senderName",
+      "en": "Esther Bright",
+      "tr": "Esther Bright",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_byosftldrive-getErchius2/senderName",
+      "en": "Esther Bright",
+      "tr": "Esther Bright",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_byosftldrive-getErchius3/senderName",
+      "en": "Esther Bright",
+      "tr": "Esther Bright",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_byosftldrive-makeFTL/senderName",
+      "en": "Esther Bright",
+      "tr": "Esther Bright",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_byosftldrive-makeSTL/senderName",
+      "en": "Esther Bright",
+      "tr": "Esther Bright",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_outpost1/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_outpost2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_Complete1a/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_Complete1b/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_Complete1c/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_greetings0/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_greetings1/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_greetings1b/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_greetings2/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_greetingspickaxe/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_makeElectromagnet/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_makeForaging/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_makeFurnace/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_makeTable/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_quests.radiomessages",
+      "pointer": "/fu_start_makeWire/senderName",
+      "en": "Vinalisj",
+      "tr": "Vinalisj",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/fuArtifact/text",
+      "en": "This ancient relic looks quite valuable! You could sell it for exorbitant amounts of pixels...or perhaps you'll find other uses. A ^orange;Microscope^reset; might reveal more information.",
+      "tr": "Bu kadim kalıntı epey değerli görünüyor! Fahiş miktarda piksele satabilirsin... ya da başka kullanım alanları bulabilirsin. Bir ^orange;Mikroskop^reset; daha fazla bilgi verebilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/fuCrewContractInvalidLocation/text",
+      "en": "You cannot use that crew contract here.",
+      "tr": "Bu mürettebat sözleşmesini burada kullanamazsın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/fuMiningGun/text",
+      "en": "^orange;Mining lasers^reset; are a useful alternative to a Manipulator. They can function one-handed, and can be upgraded up to 20 times through your ^orange;Tricorder^reset;. It's worth it. They get quite powerful.",
+      "tr": "^orange;Madencilik lazerleri^reset; Madde Manipülatörüne kullanışlı bir alternatiftir. Tek elle kullanılabilir ve ^orange;Tricorder^reset; üzerinden 20 kereye kadar yükseltilebilir. Buna değer. Epey güçleniyorlar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/fuRepairGun/text",
+      "en": "^orange;Repair Guns^reset; allow you to repair your Mech in the field. They can be upgraded up to 20 times in a ^orange;Tool Upgrade Table^reset; once you build one. You'll find one in your Machining Table. It's worth it. They get quite powerful.",
+      "tr": "^orange;Tamir Silahları^reset; sahadayken Mech’ini onarmanı sağlar. Bir tane kurduktan sonra ^orange;Alet Yükseltme Tezgâhında^reset; 20 kereye kadar yükseltilebilir. Bir tane İmalat Tezgâhında bulabilirsin. Buna değer. Epey güçleniyorlar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupAgaranichor/text",
+      "en": "This strange substance ^orange;Fungal Ichor^reset; is fungal in nature, with a sort of sticky property that adheres to any organic matter.",
+      "tr": "Bu tuhaf madde olan ^orange;Mantar Özsuyu^reset; mantar kökenlidir ve organik maddelere yapışan türde bir kıvama sahiptir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupAlgae/text",
+      "en": "Biofuel and organic research are two direct benefits to harvesting large amounts of ^orange;Algae^reset;. It can make all the difference in travel. To create Bio-Fuel you'll need to research ^orange;Chemistry^reset; first.",
+      "tr": "Bol miktarda ^orange;Yosun^reset; toplamanın iki doğrudan faydası biyoyakıt ve organik araştırmadır. Yolculukta büyük fark yaratabilir. Biyoyakıt üretmek için önce ^orange;Kimya^reset; araştırmalısın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupAmmoniumsulfate/text",
+      "en": "You'll need a fair amount of ^orange;Ammonium Sulfate^reset; in your lab work. Without it you'll be unable to produce high quality fertilizers! Research into ^orange;Chemistry^reset; will reveal more.",
+      "tr": "Laboratuvar çalışmalarında epey ^orange;Amonyum Sülfat^reset; gerekecek. O olmadan yüksek kaliteli gübre üretemezsin! ^orange;Kimya^reset; araştırması daha fazlasını gösterecek.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupBambooshoot/text",
+      "en": "^orange;Bamboo^reset; will have little use in your lab, but it might just help you build a fancy jungle hut!",
+      "tr": "^orange;Bambunun^reset; laboratuvarında pek işi olmayacak ama şık bir orman kulübesi kurmana yarayabilir!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupBiospore/text",
+      "en": "^orange;Bioluminescent Spores^reset; can glow in the dark, surely they will be useful for your laboratory creations. Check it out!",
+      "tr": "^orange;Biyolüminesan Sporlar^reset; karanlıkta parlar; laboratuvar çalışmalarında kesin işe yarar. Bir bak!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupBlisterextract/text",
+      "en": "Repulsive and goopy, ^orange;Blister Sack^reset; stinks like excrement before refinement. When refined, however, it has many uses.",
+      "tr": "İğrenç ve yapış yapış olan ^orange;Kabarcık Kesesi^reset; arıtılmadan önce dışkı gibi kokar. Arıtıldığında ise pek çok işe yarar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupBlobbushjelly/text",
+      "en": "^orange;Putrid Slime^reset; is really quite gross. You'll find it has a few rather interesting uses through research into ^orange;Chemistry^reset;.",
+      "tr": "^orange;Kokuşmuş Balçık^reset; gerçekten iğrenç. ^orange;Kimya^reset; araştırmalarıyla birkaç ilginç kullanım alanı bulacaksın.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupBone/text",
+      "en": "You've found some ^orange;Bone^reset;. While somewhat grisly and primitive it can still produce various useful goods including weapons and armor. Access your ^green;[C]rafting^reset; menu and select the Weapons tab to make them after researching into the ^orange;Armor and Weapons^reset; tree.",
+      "tr": "Biraz ^orange;Kemik^reset; buldun. Biraz ürkütücü ve ilkel olsa da silah ve zırh dâhil çeşitli yararlı eşyalar üretilebilir. ^orange;Zırh ve Silahlar^reset; ağacını araştırdıktan sonra ^green;[C]Üretim^reset; menüsünü açıp Silahlar sekmesinden üretebilirsin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupCalciumnitrate/text",
+      "en": "^orange;Calcium Nitrate^reset; is an essential element in pesticides and fertilizers. You'll need some of this stuff if you plan to have a profitable farm.",
+      "tr": "^orange;Kalsiyum Nitrat^reset; pestisit ve gübrelerde kullanılan temel bir bileşendir. Kârlı bir çiftlik kurmayı düşünüyorsan bundan edinmen gerekecek.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupCircuitboard/text",
+      "en": "Circuitboards are essential when it comes to higher-end tech. Higher-end boards produce amazing machines. Research into ^orange;Engineering^reset; might reveal more.",
+      "tr": "İleri teknoloji söz konusu olduğunda devre kartları şarttır. Üst düzey kartlar harika makineler üretir. ^orange;Mühendislik^reset; araştırması daha fazlasını gösterebilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupCorvex/text",
+      "en": "^orange;Corvex^reset; is a laboratory miracle. It can allegedly bind certain elements at a sub-atomic level and create entirely new sorts of physics as a result.",
+      "tr": "^orange;Corvex^reset; laboratuvar mucizesi. İddiaya göre belirli elementleri atom altı düzeyde bağlayıp bambaşka fizik türleri yaratabiliyor.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupCrewContractPrecursor/text",
+      "en": "Amazing. This seems to be the control chip for a defective Precursor drone. I'll beam it back to the ship and download Galactic Standard Tongue to its databanks. It'll be ready to reboot by the time you return.",
+      "tr": "İnanılmaz. Bu, arızalı bir Precursor dronunun kontrol çipi olmalı. Gemiye ışınlayıp veritabanına Galaktik Standart Dili yükleyeceğim. Sen dönene kadar yeniden başlatmaya hazır olur.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupEndomorphicJelly/text",
+      "en": "^orange;Endomorphic Jelly^reset; is a bizarre stuff. It can be shaped very specifically with relative ease. This means weapons, armor and equipment of a most odd sort.",
+      "tr": "^orange;Endomorfik Jöle^reset; tuhaf bir madde. Görece kolay biçimde çok özel şekiller verilebilir. Böylece son derece acayip silahlar, zırhlar ve ekipmanlar yapılabilir.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupFertilizer/text",
+      "en": "Without ^orange;fertilizer^reset;, you'll have a tougher time making and growing plants. It is especially useful in ^orange;Hydroponic Trays^reset;!",
+      "tr": "^orange;Gübre^reset; olmadan bitki yetiştirmek ve üretmek zorlaşır. Özellikle ^orange;Hidroponik Tepsilerde^reset; çok işe yarar!",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupGeneticmaterial/text",
+      "en": "This sample of genetic material will prove to be an absolute necessity in your laboratory.",
+      "tr": "Bu genetik materyal örneği laboratuvarında kesinlikle gerekli olacak.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupGreenslime/text",
+      "en": "Slimey goop may not seem useful, until you actually use some in a lab. Imagine, armor made of slime? You can make it a reality with the right Research into ^orange;Armor and Weapons^reset;.",
+      "tr": "Balçık pek işe yaramaz gibi görünebilir; ta ki laboratuvarda kullanana kadar. Balçıktan zırh yaptığını düşünsene! Doğru ^orange;Zırh ve Silahlar^reset; Araştırmasıyla bunu gerçeğe dönüştürebilirsin.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupHelium/text",
+      "en": "^orange;Helium-3^reset; is both a fuel and energy source. It also creates an unusual effect when in large clouds, leading to hilarity in exploration.",
+      "tr": "^orange;Helyum-3^reset; hem yakıt hem enerji kaynağıdır. Büyük bulutlar hâlindeyken keşif sırasında komik olaylara yol açan tuhaf bir etkisi de var.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupHydrogen/text",
+      "en": "^orange;Hydrogen^reset; gas can be applied in a variety of ways, though you'll find it best suited for ^orange;Chemistry^reset; and ^orange;Agriculture^reset;.",
+      "tr": "^orange;Hidrojen^reset; gazı pek çok şekilde kullanılabilir ama en çok ^orange;Kimya^reset; ve ^orange;Tarım^reset; alanlarına yarar.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
+    },
+    {
+      "asset": "radiomessages/fu_resources.radiomessages",
+      "pointer": "/pickupIodine/text",
+      "en": "With ^orange;Iodine^reset; available, advanced medicine and methyl iodide become relatively simple to produce. I'd collect as much as you can.",
+      "tr": "^orange;İyot^reset; varsa gelişmiş ilaçları ve metil iyodürü üretmek oldukça kolaylaşır. Bulabildiğin kadar toplamanı öneririm.",
+      "section": "v0.80 S.A.I.L. ve radyo mesajları"
     }
   ]
 }
