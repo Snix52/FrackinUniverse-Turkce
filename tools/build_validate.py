@@ -98,6 +98,11 @@ V078_CREW_FIELDS = {(r['asset'], r['pointer']) for r in _V078_MANIFEST['translat
 if len(V078_CREW_FIELDS) != 301 or len(_V078_MANIFEST['translations']) != 301:
     raise ValueError('v0.78 crew manifest field inventory drift')
 
+_V079_MANIFEST = json.loads(Path(__file__).with_name('v079_translations.json').read_text(encoding='utf-8'))
+V079_OUTPOST_FIELDS = {(r['asset'], r['pointer']) for r in _V079_MANIFEST['translations']}
+if len(V079_OUTPOST_FIELDS) != 342 or len(_V079_MANIFEST['translations']) != 342:
+    raise ValueError('v0.79 outpost manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -740,6 +745,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V079_OUTPOST_FIELDS:
+        return True
     if (a,p) in V078_CREW_FIELDS:
         return True
     if (a,p) in V077_CREW_FIELDS:

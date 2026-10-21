@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.79.0 Beta — Bilim Karakolu konuşmaları
+
+18 NPC dosyasında 342 yeni alan /335 bağlam, 180 benzersiz kaynak metin: karakol sakinleri, bilimciler, Khe kayıp eşya konuşmaları ve iki mağaza başlığı, Steve (Scott şablonu) ve Starbooze. Katalog 19.195 alan; önceki 18.853 aynen korundu.
+
+91 alanda toplam 100 cümle/kısa ifade düzeltildi: ters karşılaştırmalar, Garflipp yazımı, bilinçli varlık anlamı, bıçaklama ve çıkık, dokunaç, deyimler, Glitch tamlaması, ses eylemleri ve karakter vurgusu. 28 yeni LOCKED, toplam 739. Yer tutucu ve özgün ses/adlardan oluşan 17 alan yalnız tam kaynak bağıyla korunur. 13 legacy `converse/dialog` alanının aktif tüketicisi bulunmadı; oyunda görünür olduğu iddia edilmez. FU 6.5.8 pini, teknik kimlikler ve kaynak sayıları aynı. Canlı seçim/font/sığma NOT TESTED. [Gerekçeli önce/sonra kayıtları](docs/reviews/scienceoutpost-20261021.json) · [Oyun kontrolü](docs/lqa/LQA_V079_20261021.md)
+
 ## v0.78.0 Beta — Mürettebat diyalogları, son confirmed dilim
 
 21 NPC dosyasında 301 yeni diyalog alanı /301 bağlam, 242 benzersiz kaynak metin: Greg kalan sesleri; koruyucu, temizlikçi, evsiz, hacker, büyülü kız, başmekanik, eğitimli sıhhiyeci, metalci, madenci, deniz/volkan uzmanları, parti karakteri, Precursor, X’ian gezgini, araştırmacı, bilimci, dalgıç, suikastçı ve temel FU mürettebat konuşmaları. 9 Greg ses alanı tam bağlı onayla korunur, 1 Rainbow Gökkuşağı çevrilir. Katalog 18.853 alan; eski 18.552 aynen korundu.
