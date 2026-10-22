@@ -94,7 +94,17 @@ class IntegrityTests(unittest.TestCase):
             if len(forms) != 1:
                 continue
             with self.subTest(en=en):
-                engine.validate(row(en, next(iter(forms))))
+                tr = next(iter(forms))
+                # A documented source error can intentionally contradict a
+                # general term. Its canonical reply is valid only at its
+                # exact bound source field, never at an invented fixture.
+                bound = next((x for x in self.terms.get('context_exceptions', [])
+                              if not x.get('preserve_utterance')
+                              and x.get('en') == en and x.get('tr') == tr), None)
+                if bound:
+                    engine.validate(bound)
+                else:
+                    engine.validate(row(en, tr))
 
     def test_locked_wrong_variant_exact_and_in_sentence(self):
         engine = qa.Terminology(self.terms)

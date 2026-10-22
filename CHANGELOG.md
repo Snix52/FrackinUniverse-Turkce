@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.81.0 Beta — Görev telsizleri ve Mech öğreticisi
+
+7 varlıkta 350 yeni alan /350 bağlam, 278 benzersiz kaynak metin: görev konuşmaları, Mech eğitimi/tehlikeleri, kalan laboratuvar kaynakları ve istasyon uyarıları. 276 text ve 74 senderName; 317 FU yama alanı, 33 doğrudan kaynak. Katalog 19.895 alan; önceki 19.545 alandan 19.544 aynı, bir eski görevde Tutunma Kancası adı eşlendi.
+
+Yeni pakette 92 alanda 106, eski görevle birlikte toplam 93 alanda 107 cümle/kısa ifade düzeltildi. Bomba bırakma ve konsol sırası, konuşmacı/hitap, terim/adlar, Floran sesi ve kaynak anlamları düzeltildi. 60 yeni LOCKED, toplam 831. 68 kişi adı tam kaynak bağıyla korundu; altı The Baron başlığı Baron oldu. İki sözde kontrol etiketi Türkçeleştirildi. Üçüncü testin araç adı/disk yönergesi gerçek sandık, havuz, eşya ve fırlatıcı kaynaklarıyla Işınlayıcı olarak düzeltildi; temel disk tanımı FU içinde bulunmadığından sekme davranışı ayrıca doğrulanmadı. Kaynak EN, kimlik ve mekanikler aynı. 278 mesaj kimliğinden 257'sinde statik bağ bulundu; 21 kimlik/22 alanda çağrı doğrulanmadı. Kaynağın bozuk Mech renkleri ve ayrı İngilizce mechstats uyarısı açık sınırlardır. FU 6.5.8 pini aynı; canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/radio2-20261022.json) · [Oyun kontrolü](docs/lqa/LQA_V081_20261022.md)
+
 ## v0.80.0 Beta — S.A.I.L. ve radyo mesajları, ilk dilim
 
 11 dosyada 350 yeni alan /350 bağlam, 247 benzersiz kaynak metin: biyom tehlikeleri, Shoggoth ve mağara yönergeleri, delilik etkileri, Kevin ve eşya toplama mesajları. 242 mesaj metni ve 108 konuşmacı adı; 45 FU yama alanı, 305 doğrudan kaynak. Katalog 19.545 alan; önceki 19.195 alandan 19.193 aynen korundu, iki zemin açıklaması eşya adlarıyla eşlendi.
