@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-10-22T17:10:45.512728+00:00",
-  "workflow_run_id": "39818357623",
-  "source_commit": "1c9329c02a408b5f4771e8dfd63ac98eb7d99f06",
-  "translation_source_commit": "1c9329c02a408b5f4771e8dfd63ac98eb7d99f06",
-  "translation_version": "0.80.0-beta",
+  "generated_at_utc": "2026-10-22T19:06:09.966011+00:00",
+  "workflow_run_id": "39835833356",
+  "source_commit": "eb54f7ef193fa7f51b9095d76935a34fde7389ae",
+  "translation_source_commit": "eb54f7ef193fa7f51b9095d76935a34fde7389ae",
+  "translation_version": "0.81.0-beta",
   "custom_game_assets": 14,
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 19545,
-    "patch_assets": 5036,
+    "structured_fields": 19895,
+    "patch_assets": 5041,
     "raw_override_assets": 10,
     "raw_script_strings": 126
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.80.0_Beta.zip",
-    "bytes": 2902394,
-    "sha256": "a076b15f52a73fb6d61d8930447230e889ca8ccad574ff96ecc63b67e7ee0e83",
-    "git_blob_sha": "ab15d7445dffa483a4fcb70f43ea69eb15102bd5",
+    "path": "dist/FU_Turkce_v0.81.0_Beta.zip",
+    "bytes": 2938526,
+    "sha256": "ce7bd300c36ec601c2fad610a2e41e2e5cb2985d4bb03dd55d451b950c90b98e",
+    "git_blob_sha": "a548c2ad023cbd18edb615d8a885b6ffbb96a8ad",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "06f2d03617743e9c4c468a38615bf62b54b5c4d82d1442b7332526960cd1c290",
-  "build_inputs_sha256": "38d0af428163e8048268b8e56803c692438315c1c10627bea779e50b769b6c56",
-  "catalog_sha256": "e49ab755e5700271eb50cc109da22d10e54d08140302081d6daa7f82ef42094e",
+  "install_tree_sha256": "54111efeef40779014dbe9eaaf92b2930a5dff4284d78e173b76c76879925487",
+  "build_inputs_sha256": "2d3a212510d43c83e0aa2dbff1c20d5828dddeb32d98dd324ed8de3c60a57881",
+  "catalog_sha256": "e7578c4311df95e1bfdd8e8595337632e53e33d517c4396edac77fe8615d9b02",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -34,12 +34,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 19545,
-  "patched_assets": 5036,
+  "translated_display_fields": 19895,
+  "patched_assets": 5041,
   "raw_override_assets": 10,
   "raw_script_display_strings": 126,
-  "total_localized_display_units": 19671,
-  "target_assets_total": 5060,
+  "total_localized_display_units": 20021,
+  "target_assets_total": 5065,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -152,7 +152,8 @@
     "v0.77 P1 mürettebat diyalogları ve jeolog menüsü": 400,
     "v0.78 P1 mürettebat son dilimi": 301,
     "v0.79 P1 Bilim Karakolu NPC konuşmaları": 342,
-    "v0.80 S.A.I.L. ve radyo mesajları": 350
+    "v0.80 S.A.I.L. ve radyo mesajları": 350,
+    "v0.81 Görev telsizleri ve Mech öğreticisi": 350
   },
   "checks": {
     "static_qa": "PASS",
@@ -18270,6 +18271,2548 @@
       "qa": {
         "allow_control_fix": true,
         "semantic_override": "v0.80: Pinli radyo text içindeki köşeli ifade oyuncuya görünen tam anlatım cümlesidir; kod değişkeni değildir. Yalnız bu tam asset/pointer/EN/TR için köşeli anlatımın Türkçesi onaylandı; gerçek yer tutucular korunur."
+      }
+    },
+    {
+      "asset": "radiomessages/intro.radiomessages",
+      "pointer": "/protectorateExitBedPester/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/intro.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/acid_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/aether_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomecold_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomeelectric_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomeheat_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomeplaceholder_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomepoison_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomepressure_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomeproto_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/biomeradiation_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/darkwater_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/elder_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive00/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch",
+        "allow_control_fix": true,
+        "semantic_override": "v0.81: [double-tap] bu kaynakta yön tuşuna iki kez basma yönergesidir; gerçek tuş kimliği değildir. Yalnız tam asset/pointer/EN/TR çevirisi onaylı; gerçek [DOWN] tuş etiketi aynı kalır."
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive03b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive03c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/futestdrive05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/lava_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/nitrogen_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/proto_mech/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/testdrive04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/mech.radiomessages",
+      "pointer": "/testdrive05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/mech.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/activateMasterManipulator/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle01/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle02a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle02a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle02b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle02b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle02c/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle02c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle03/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle04a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle04a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle04b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle04b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle05a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle05a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle05b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle05b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle06/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle07a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle07a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle07b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle07b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle07c/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle07c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08c/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08d/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/alienjungle08d/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple01fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple02fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple03fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple04fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple05fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple06fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple07fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/ancienttemple08fu/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/apexmission01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/apexmission02a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/apexmission06a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/avianhydro01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/avianhydro02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/avianhydro03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/avianhydro04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfudino/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfudino/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfuonejob/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfuonejob/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfuonejob2/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfuonejob2/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfuwallhint/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/cultistmissionfuwallhint/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight07/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight08/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight09/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight10/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight11/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/evernight12/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs101/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch",
+        "allow_control_fix": true,
+        "semantic_override": "v0.81: <insert subject name here> bu sabit radyo repliğinde kasıtlı doldurulmamış denek adı şablonu şakasıdır; <entityname> gibi bağlı oyuncu değişkeni değildir. Yalnız tam asset/pointer/EN/TR içinde Türkçeleştirilir; gerçek değişkenler aynı kalır."
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs101a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs101b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs101c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs102/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs103/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs104/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs104a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs105/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs106/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs106a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs107/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs108/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs108a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs109/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs110/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs111/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs201/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs202/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs203/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs204/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs205/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs206/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs301/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs301a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs302/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs303/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs303a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs304/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs305/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch",
+        "source_bug_fix": true,
+        "reason": "v0.81 kaynak adı hatası: challengelab3 haritası object53 sandığı extrachallengelabtranslocator havuzunu seçer; treasure/extradungeons.treasurepools bu havuzda translocator verir. Gerçek translocator.activeitem teleport-node discs, translocator.lua translocatordisc atar. Sekme yönergesi radyo kaynak metninde bulunur; temel disk tanımı bu FU kopyasında yoktur, sekme davranışı bağımsız doğrulanmadı. Kaynaktaki relocator/pellet anlatımı Türkçede gerçek Işınlayıcı ve disk işleviyle eşlendi; EN, kimlik, loot ve mekanikler aynı."
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs306/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs307/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs307a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs307b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs401/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/extrachallengelabs401a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/floranmission101/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/floranmission102/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/floranmission103/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/floranmission104/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/forestoffae01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/forestoffae02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/forestoffae03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/forestoffae04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/forestoffae05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/forestoffae06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/fuchallengeball1/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/fuchallengeball2/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/fuchallengeball3/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/glitchmission01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/glitchmission01a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/glitchmission01b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/glitchmission01b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/glitchmission02/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/glitchmission02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/grandarena01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/grandarena01a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/hylotlmission03a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration01/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration01a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration01a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration02/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration02a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration02a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration03/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration03a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration03a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration03b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration03b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration04/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration04a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration04a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration04b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration04b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration05/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration06/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration06a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration06a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07c/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration07c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration08/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration08/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration08a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration08a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration09/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration09/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration09a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/infiltration09a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/japaneseruins01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafacility01/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafacility01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafacility01a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafacility01a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafleet01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafleet01a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafleet01b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/letheiafleet01c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs01/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs02/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs02/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs02a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs02a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs03/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs03/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs03a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs03a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs04/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs04a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs04a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs05a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs05b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs06a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs06b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs07/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs07a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs07b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs08/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs09/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs09/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs10/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs11/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs11/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs11a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs11a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs11b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs11b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs12/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs12a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs12a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs12b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs12b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs13/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs13/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs13a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs13a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs14/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15c/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15d/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15e/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15e/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15f/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15f/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15g/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15g/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15h/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs15h/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs16/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs16a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs16b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs17/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs17a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs18/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs18a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs19/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs19a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs19b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs19c/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs19c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs20/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs20/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21a/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21d/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21e/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21e/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21f/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21f/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs21g/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs22/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs22a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs22b/senderName",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs22b/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs22c/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs22d/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lethialabs23/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lunarbase04/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lunarbase05/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lunarbase06/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lunarbase07/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/lunarbase08a/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission1/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission10/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission11/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission12/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission13/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission14/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission2/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission3/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission4/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission5/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission6/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "radiomessages/missions.radiomessages",
+      "pointer": "/precursormission7/text",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "radiomessages/missions.radiomessages.patch"
       }
     }
   ]
