@@ -10,5 +10,545 @@
       "path": "/pickupWood/text",
       "value": "Başlangıçta hayatta kalmak için odun vazgeçilmezdir. Çıplak ellerinle ^orange;temel silahlar^reset; ve ekipman üretebilirsin. İlk olarak bir ^green;İlkel Mızrak^reset; yapmanı öneririm. Odunun başka nerelerde kullanılabileceğini ^orange;Kişisel Tricorder^reset; cihazında ^orange;araştır^reset;."
     }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/biomeairless/text",
+      "value": "It may be worth noting that this celestial body has no atmosphere and you will die without some sort of oxygen source."
+    },
+    {
+      "op": "replace",
+      "path": "/biomeairless/text",
+      "value": "Bu gökcisminin atmosferi olmadığını belirtmekte fayda var; bir oksijen kaynağı olmadan ölürsün."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/biomecold/text",
+      "value": "^red;WARNING! EXTREME COLD DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/biomecold/text",
+      "value": "^red;UYARI! AŞIRI SOĞUK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/biomeheat/text",
+      "value": "^red;WARNING! EXTREME HEAT DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/biomeheat/text",
+      "value": "^red;UYARI! AŞIRI SICAKLIK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/biomeradiation/text",
+      "value": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/biomeradiation/text",
+      "value": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeaether/text",
+      "value": "^red;WARNING! COSMIC ENERGY DETECTED ^reset;! Some sort of protection from cosmic damage would help a great deal. This energy appears to decrease energy regeneration rates."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeaether/text",
+      "value": "^red;UYARI! KOZMİK ENERJİ TESPİT EDİLDİ ^reset;! Kozmik hasara karşı bir tür koruma çok işe yarar. Bu enerji, enerji yenilenme hızını düşürüyor gibi görünüyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeaethernight/text",
+      "value": "As night falls, the effects of the cosmic energy permeating this planet seem to increase in severity. Somehow, the sun holds the worst of these effects at bay."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeaethernight/text",
+      "value": "Gece çökerken bu gezegene nüfuz eden kozmik enerjinin etkileri ağırlaşıyor gibi. Güneş, nedense bu etkilerin en kötüsünü bastırıyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomecold/text",
+      "value": "^red;WARNING! EXTREME COLD DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomecold/text",
+      "value": "^red;UYARI! AŞIRI SOĞUK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomecoldnight/text",
+      "value": "As night falls, the temperature will fall. This will make any effects you feel from the cold even deadlier on you. I suggest finding warmth, and soon."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomecoldnight/text",
+      "value": "Gece çökerken sıcaklık düşecek. Soğuğun sende yarattığı etkiler daha da ölümcül olacak. Bir an önce sıcak bir yer bulmanı öneririm."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomecoldwater/text",
+      "value": "You fell in water. On a freezing world. Good job, idiot! Now you'll freeze to death ^red;twice as fast^reset;!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomecoldwater/text",
+      "value": "Dondurucu bir dünyada suya düştün. Aferin, aptal! Şimdi ^red;iki kat daha hızlı^reset; donarak öleceksin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedeadlycold/text",
+      "value": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment. Radiation will sap your health and energy, and make you sick!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedeadlycold/text",
+      "value": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin. Radyasyon sağlığını ve enerjini tüketip seni hasta edecek!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedeadlyheat/text",
+      "value": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedeadlyheat/text",
+      "value": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedesert/text",
+      "value": "^red;WARNING: DESERT HEAT ^reset;! The climate here is exceptionally warm during the day. Water will help you cool off, if you can find it. Fire Resistance will help a great deal. Night is cool but tolerable."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedesert/text",
+      "value": "^red;UYARI: ÇÖL SICAKLIĞI ^reset;! Gündüz burada hava olağanüstü sıcak. Bulabilirsen su serinlemene yardım eder. Ateş Direnci de çok işe yarar. Gece serin ama katlanılabilir."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedesertnight/text",
+      "value": "The sun has set, and the temperature has blissfully dropped to tolerable levels. You should be relatively comfortable until daybreak."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedesertnight/text",
+      "value": "Güneş battı ve sıcaklık sonunda katlanılabilir düzeylere indi. Şafak sökene kadar nispeten rahat olmalısın."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedesertnoon/text",
+      "value": "At its brightest, the sun here is extremely uncomfortable. Until it gets into the afternoon, expect to suffer a bit more."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedesertnoon/text",
+      "value": "Güneş en tepedeyken burada dayanılmaz oluyor. Öğleden sonraya kadar biraz daha sıkıntı çekmeyi bekle."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedesertsunrise/text",
+      "value": "The sun is rising, bringing another blistering hot day. Take care, and be aware that the brighter it gets, the worse things will become."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedesertsunrise/text",
+      "value": "Güneş doğuyor; kavurucu sıcaklıkta yeni bir gün başlıyor. Dikkatli ol: Güneş ne kadar parlaklaşırsa koşullar o kadar kötüleşecek."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedesertunderground/text",
+      "value": "Heading underground? Not a bad idea. The effect of the surface heat is substantially reduced down here."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedesertunderground/text",
+      "value": "Yer altına mı iniyorsun? Fena fikir değil. Yüzeydeki sıcağın etkisi burada epey azalıyor."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomedesertwater/text",
+      "value": "You've managed to cool off in this wonderful pool of liquid. You feel much less uncomfortable now!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomedesertwater/text",
+      "value": "Şu güzel sıvı birikintisinde serinlemeyi başardın. Artık çok daha az rahatsız hissediyorsun!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeelectric/text",
+      "value": "^red;WARNING: ELECTRICAL STORM ^reset;! A nasty electric storm is picking up. The charge in the air will interfere with your energy supply and could cause dangerous overloads. I advise you to find shelter immediately."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeelectric/text",
+      "value": "^red;UYARI: ELEKTRİK FIRTINASI ^reset;! Tehlikeli bir elektrik fırtınası güçleniyor. Havadaki yük enerji kaynağını etkileyecek ve tehlikeli aşırı yüklenmelere yol açabilir. Hemen sığınak bulmanı öneririm."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeelectricsurface/text",
+      "value": "Lightning storms are significantly stronger when you are outside. Perhaps head underground where you are grounded and cannot be struck by lightning."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeelectricsurface/text",
+      "value": "Dışarıdayken yıldırım fırtınaları çok daha şiddetli. Topraklanacağın ve yıldırımın çarpamayacağı yer altına inmeyi düşün."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeelectricwater/text",
+      "value": "I must advise you against swimming in liquid during a lightning storm. I hope that I do not need to explain what will happen if lightning strikes you now."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeelectricwater/text",
+      "value": "Yıldırım fırtınası sırasında sıvıda yüzmemen gerektiğini söylemeliyim. Yıldırım sana çarparsa ne olacağını açıklamam gerekmiyordur umarım."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomegenericcold/text",
+      "value": "^red;WARNING: FREEZING ^reset;! It suddenly got exceptionally cold! Be careful, and keep warm!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomegenericcold/text",
+      "value": "^red;UYARI: DONDURUCU SOĞUK ^reset;! Hava birden olağanüstü soğudu! Dikkat et ve sıcak kal!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomegenericelectric/text",
+      "value": "^red;WARNING: ELECTRICAL STORM ^reset;! A sudden electrical storm has broken out, which will affect your energy supply. There's also the threat of being struck by a blast. Take shelter underground."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomegenericelectric/text",
+      "value": "^red;UYARI: ELEKTRİK FIRTINASI ^reset;! Aniden başlayan elektrik fırtınası enerji kaynağını etkileyecek. Ayrıca bir enerji patlamasının sana çarpma tehlikesi var. Yer altına sığın."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomegenericheat/text",
+      "value": "^red;WARNING: HEAT WAVE ^reset;! The climate is spiking in temperature, resulting in extra exertion from movement. You'll be hungry a bit faster, and gradually lose health."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomegenericheat/text",
+      "value": "^red;UYARI: SICAK HAVA DALGASI ^reset;! Sıcaklık hızla yükseliyor; hareket etmek daha fazla efor gerektirecek. Daha çabuk acıkacak ve yavaş yavaş sağlık kaybedeceksin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomegenericmildcold/text",
+      "value": "^red;WARNING: COLD ^reset;! While not absolutely freezing, this world is chilly and brisk. Nights are colder, and water could be dangerous to swim in. Wear cold protection."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomegenericmildcold/text",
+      "value": "^red;UYARI: SOĞUK ^reset;! Hava dondurucu olmasa da bu dünya serin ve soğuk. Geceler daha soğuk, suda yüzmek tehlikeli olabilir. Soğuğa karşı korun."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomegenericpoison/text",
+      "value": "^red;WARNING: POISONOUS CLOUDS ^reset;! Poisonous clouds are blowing in the wind, which will weaken and eventually kill you. Seek shelter or find some measure of protection."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomegenericpoison/text",
+      "value": "^red;UYARI: ZEHİRLİ BULUTLAR ^reset;! Rüzgâr zehirli bulutları taşıyor. Seni güçsüz düşürüp sonunda öldürecekler. Sığınak ara veya bir tür koruma bul."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomegenericradiation/text",
+      "value": "^red;WARNING: RADIATION STORM ^reset;! Sudden winds have blown in a radiation cloud from somewhere else on this world. Take precautions."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomegenericradiation/text",
+      "value": "^red;UYARI: RADYASYON FIRTINASI ^reset;! Ani rüzgârlar bu dünyanın başka bir yerinden radyasyon bulutu taşıdı. Önlem al."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeheat/text",
+      "value": "^red;WARNING! EXTREME HEAT DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeheat/text",
+      "value": "^red;UYARI! AŞIRI SICAKLIK TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeheatcavern/text",
+      "value": "You'll find it much warmer in caverns, thanks to heat being trapped within. Stay cool, or you'll stay dead^reset;!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeheatcavern/text",
+      "value": "Isı mağaralarda hapsolduğu için içerisi çok daha sıcak. Serin kal, yoksa ölü kalırsın^reset;!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomejungle/text",
+      "value": "^red;WARNING: TROPICAL HEAT ^reset;! The climate here is exceptionally warm, which could lead to discomfort if care is not taken. Water will help you cool off, if you can find it. Physical Resistance will help, too."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomejungle/text",
+      "value": "^red;UYARI: TROPİK SICAK ^reset;! Burada hava olağanüstü sıcak; önlem almazsan rahatsız olabilirsin. Bulabilirsen su serinlemene yardım eder. Fiziksel Direnç de işe yarar."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomejunglewater/text",
+      "value": "Ah, a soothing spring. This should help lower your temperature and give you a brief moment of respite."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomejunglewater/text",
+      "value": "Ah, insanı ferahlatan bir kaynak. Bu, vücut sıcaklığını düşürüp kısa süreliğine rahatlamanı sağlamalı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomepoison/text",
+      "value": "^red;WARNING! POISONOUS AIR DETECTED ^reset;! These toxins can permeate through skin and small openings. You are getting weaker. This will get worse the more sick you become."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomepoison/text",
+      "value": "^red;UYARI! ZEHİRLİ HAVA TESPİT EDİLDİ ^reset;! Bu toksinler deriden ve küçük açıklıklardan sızabilir. Gücün azalıyor. Hastalığın ağırlaştıkça durum kötüleşecek."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomepoisonwind/text",
+      "value": "This breeze is really stirring up poisonous vapour. Threat level increased."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomepoisonwind/text",
+      "value": "Bu esinti zehirli buharı iyice yayıyor. Tehdit seviyesi yükseldi."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeproto/text",
+      "value": "^red;WARNING! POISON ATMOSPHERE DETECTED ^reset;! With ^green;Proto-Poison protection^reset; you'll be fine. Otherwise, Proto-poison slowly drains your vitality. Poison resistance reduces or nullifies the effects."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeproto/text",
+      "value": "^red;UYARI! ZEHİRLİ ATMOSFER TESPİT EDİLDİ ^reset;! ^green;Proto-Zehir koruman^reset; varsa sorun yaşamazsın. Yoksa Proto-Zehir canlılığını yavaşça tüketir. Zehir direnci etkileri azaltır veya tamamen önler."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeradiation/text",
+      "value": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeradiation/text",
+      "value": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeradiationsevere/text",
+      "value": "^red;WARNING! RADIATION DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeradiationsevere/text",
+      "value": "^red;UYARI! RADYASYON TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomeradiationwind/text",
+      "value": "I suggest taking care, as a nasty wind is blowing radioactive fallout right to your position. Good times!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomeradiationwind/text",
+      "value": "Dikkatli olmanı öneririm; şiddetli bir rüzgâr radyoaktif serpintiyi doğruca sana taşıyor. Harika!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomesulphuric/text",
+      "value": "^red;WARNING! SULPHURIC ATMOSPHERE DETECTED ^reset;! You should not attempt further exploration without proper protective equipment!"
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomesulphuric/text",
+      "value": "^red;UYARI! SÜLFÜRİK ATMOSFER TESPİT EDİLDİ ^reset;! Uygun koruyucu ekipman olmadan keşfe devam etmemelisin!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ffbiomesulphuricstorm/text",
+      "value": "^red;WARNING! SULPHURIC STORM^reset;! A deadly Sulphuric storm is brewing! Get to shelter as soon as possible unless you have protection against Sulphuric Acid. You will otherwise die rather rapidly."
+    },
+    {
+      "op": "replace",
+      "path": "/ffbiomesulphuricstorm/text",
+      "value": "^red;UYARI! SÜLFÜRİK FIRTINA^reset;! Ölümcül bir sülfürik fırtına yaklaşıyor! Sülfürik aside karşı koruman yoksa hemen sığınağa git. Yoksa çok çabuk ölürsün."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/foodtype/text",
+      "value": "^red;TOXINS DETECTED ^reset;: While I am sure that *looked* delicious, I regret to inform you that this type of food ^orange;cannot be digested by your physiology^reset;. Avoid foods like this in the future."
+    },
+    {
+      "op": "replace",
+      "path": "/foodtype/text",
+      "value": "^red;TOKSİN TESPİT EDİLDİ ^reset;: Lezzetli *göründüğünden* eminim ama bu yiyeceğin ^orange;fizyolojin tarafından sindirilemeyeceğini^reset; üzülerek bildiririm. Bir daha böyle yiyeceklerden uzak dur."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/foodtyperad/text",
+      "value": "^red;RADIOACTIVE MATERIAL DETECTED ^reset;: You just ate potentially lethal radioactive isotopes. Your chance of painful death has increased by 99.72%."
+    },
+    {
+      "op": "replace",
+      "path": "/foodtyperad/text",
+      "value": "^red;RADYOAKTİF MADDE TESPİT EDİLDİ ^reset;: Potansiyel olarak ölümcül radyoaktif izotoplar yedin. Acı verici bir ölüm ihtimalin %99,72 arttı."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pickupAnvil/text",
+      "value": "In ^blue;Frackin Universe^reset;, nearly everything you can make on an anvil can also be made with an ^orange;Armorworks^reset;. The anvil is still great for decoration though!"
+    },
+    {
+      "op": "replace",
+      "path": "/pickupAnvil/text",
+      "value": "^blue;Frackin Universe^reset; içinde örste üretebildiğin neredeyse her şeyi ^orange;Zırh Atölyesi^reset; ile de üretebilirsin. Yine de örs güzel bir dekorasyon eşyası!"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pickupshield/text",
+      "value": "Shields are a useful defensive tool. If you time blocks well, you can ^orange;Shield Bash^reset; (^green;stuns, knocks back enemies and does damage^reset;). Some species get great bonuses for ^orange;perfectly timed blocks^reset;, too."
+    },
+    {
+      "op": "replace",
+      "path": "/pickupshield/text",
+      "value": "Kalkanlar savunmada işe yarar. Zamanlamayı tutturup blok yaparsan ^orange;Kalkan Darbesi^reset; kullanabilirsin (^green;düşmanları sersemletir, geri savurur ve hasar verir^reset;). Bazı türler ^orange;kusursuz zamanlanmış bloklardan^reset; büyük bonuslar da alır."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/radienhealing/text",
+      "value": "^red;Remember:^reset; You can't heal like carbon-based life does. You're going to need to rely on your natural abilities, ^green;edible isotopes^reset; and ^green;reactive gels^reset;. You will need access to ^green;Algae^reset; in order to make these gels. Build a ^orange;Greenhouse^reset; to get started."
+    },
+    {
+      "op": "replace",
+      "path": "/radienhealing/text",
+      "value": "^red;Unutma:^reset; Karbon temelli canlılar gibi iyileşemezsin. Doğal yeteneklerine, ^green;yenilebilir izotoplara^reset; ve ^green;reaktif jellere^reset; güvenmen gerekecek. Bu jelleri yapmak için ^green;Yosun^reset; bulmalısın. Başlamak için bir ^orange;Sera^reset; kur."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/radienmsg/text",
+      "value": "^green;Excellent^reset;! You have remembered how to spawn X'i Bulbs. With them you can craft many things in your [C] menu, or use them for other purposes unique to the X'i."
+    },
+    {
+      "op": "replace",
+      "path": "/radienmsg/text",
+      "value": "^green;Harika^reset;! X'i Yumrularını nasıl çağıracağını hatırladın. Bunlarla [C] menüsünde pek çok şey üretebilir veya X'i türüne özgü başka amaçlarla kullanabilirsin."
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/wrexornar/text",
+      "value": "^red;WARNING: PIRATE SIGNAL DETECTED ^reset;! This appears to be a raiding ship under the control of the Wrexor Nar. These vicious cyborgs are among the most feared of raider factions in the galaxy. Tread carefully."
+    },
+    {
+      "op": "replace",
+      "path": "/wrexornar/text",
+      "value": "^red;UYARI: KORSAN SİNYALİ TESPİT EDİLDİ ^reset;! Bu, Wrexor Nar yönetimindeki bir akın gemisine benziyor. Bu acımasız siborglar galaksinin en korkulan akıncı gruplarından. Dikkatli ol."
+    }
   ]
 ]
