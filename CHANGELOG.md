@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.82.0 Beta — Kalan görev telsizleri
+
+5 varlıkta 133 yeni alan /133 bağlam, 93 farklı kaynak metin: Precursor son yönergeleri, Skytemple, Snowcrash, Sunset Riders, Volcano Base ve kalan görev/gemi/Tech/başlangıç uyarıları. 86 metin, 47 konuşmacı adı; bütün alanlar FU yaması. Confirmed radyo ailesinin kalan dilimi tamamlandı; diğer review/NPC içerikleri tamam sayılmaz. Katalog 20.028 alan; önceki 19.895 alandan 19.894 aynı, bir eski S.A.I.L. açıklaması aynı eter bağlamıyla eşlendi.
+
+Yeni pakette 35 alanda 41, eski açıklamayla birlikte toplam 36 alanda 42 cümle/kısa ifade düzeltildi. Kaldıraç durum/sayı yönergeleri, küçük sıçrayış vurgusu, mevzilenme, Floran sesi, Tech kuşanma/tuzağı atlatma ve renk kapsamı düzeltildi. 41 yeni LOCKED, toplam 872. 43 kişi adı yalnız tam kaynak bağıyla korunur; dört Baron başlığı Luna'da doğruydu ve Sol düzeltmesi sayılmaz. Yeni format/TM istisnası yok. 88 kimliğin 86'sında statik kaynak adayı bulundu; doğal mağara brush tanımı vardır fakat part görselleri yoktur. Bulmacanın dış vanilla tilesetleri yoktur; tam mantık/canlı çözüm doğrulanmış sayılmaz. FU 6.5.8 pini, kimlik ve mekanikler aynı; canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/radio3-20261023.json) · [Oyun kontrolü](docs/lqa/LQA_V082_20261023.md)
+
 ## v0.81.0 Beta — Görev telsizleri ve Mech öğreticisi
 
 7 varlıkta 350 yeni alan /350 bağlam, 278 benzersiz kaynak metin: görev konuşmaları, Mech eğitimi/tehlikeleri, kalan laboratuvar kaynakları ve istasyon uyarıları. 276 text ve 74 senderName; 317 FU yama alanı, 33 doğrudan kaynak. Katalog 19.895 alan; önceki 19.545 alandan 19.544 aynı, bir eski görevde Tutunma Kancası adı eşlendi.
