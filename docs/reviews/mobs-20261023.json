@@ -1,0 +1,1646 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-10-23",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 6,
+  "run_id": "fu-five-20261021",
+  "run_round": 5,
+  "base_commit": "de53997aeff1c64ab44e20e147c046d1b6441d15",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 66,
+    "context_groups": 66,
+    "unique_english_strings": 31,
+    "assets": {
+      "npcs/mobs/castleguard.npctype": 11,
+      "npcs/mobs/castleguardbasic.npctype": 11,
+      "npcs/mobs/castleguardlookout.npctype": 11,
+      "npcs/mobs/castleroyalguard.npctype": 11,
+      "npcs/mobs/fuevilchef.npctype": 22
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 66,
+    "hail_fields": 44,
+    "attack_fields": 22,
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 16,
+    "sentences_including_repeated_fields": 20,
+    "unique_source_strings_corrected": 9,
+    "existing_catalog_corrections": 0,
+    "count_method": "Changed independent sentences/short expressions manually counted. A changed emotion prefix counts once; unchanged question or prefix excluded. Repeated occurrences counted separately."
+  },
+  "new_locked_terms": 31,
+  "new_locked_names": [
+    "Hostile. Intruder!",
+    "Intimidating. Fall to your knees and beg for mercy!",
+    "Contemptuous. What a repulsive specimen you are!",
+    "Confident. You will die this day!",
+    "Arrogant. You shall be an easy kill.",
+    "Bloodthirsty. Don't die too quickly; I want to savour this!",
+    "Excited. Finally, a worthy adversary!",
+    "Threatening. You chose the wrong castle to invade!",
+    "Daring. Come forth and prove your mettle!",
+    "Malevolent. I will run you through!",
+    "Furious. Prepare to die, intruder!",
+    "WHERE'S THE LAMB SAUCE?!",
+    "WHAT ARE YOU? AN IDIOT SANDWICH!",
+    "And here comes today's fresh meat!",
+    "And it's Frackin' RAAAAAAWWWWW!!!",
+    "GET OUT!!",
+    "You're going straight on the grill!",
+    "What is going on?!",
+    "You donkey!!",
+    "WHERE'S THE LAMB SSSSSAUCE?!",
+    "WHAT ARE YOU? AN IDIOT SSSSSANDWICH!",
+    "And here comes today's fressssh meat!",
+    "SSSSTAAAB!",
+    "Enraged. WHERE'S THE LAMB SAUCE?!",
+    "beligerant. WHAT ARE YOU? AN IDIOT SANDWICH!",
+    "Threatening. And here comes today's fresh meat!",
+    "Exacerbated. And it's Frackin' RAAAAAAWWWWW!!!",
+    "Angry. GET OUT!!",
+    "Hungry. You're going straight on the grill!",
+    "Irritated. What is going on?!!",
+    "Insulting. You donkey!!"
+  ],
+  "locked_total": 903,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "134f1a460d080085179edb3df447af49bc13efc3d8e4466248398b68040af714",
+  "luna_original_packet_sha256": "7b641ebf83e673e74bb269ebdf8cf37723af751d68295a972d548750630f0fda",
+  "approved_rows_sha256": "36dfe124d597df94da29781e6f7c2b75548b87bcbb365bd8957d56e6803e638a",
+  "corrections": [
+    {
+      "unit_index": 1,
+      "en": "Intimidating. Fall to your knees and beg for mercy!",
+      "before": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!",
+      "after": "Göz korkutucu. Dizlerinin üstüne çöküp merhamet dile!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleguard.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/1",
+          "origin": "npcs/mobs/castleguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Glitch duygu öneki mevcut Intimidating karşılığı Göz korkutucu ile eşlendi; korkutma tonu korunur."
+    },
+    {
+      "unit_index": 2,
+      "en": "Contemptuous. What a repulsive specimen you are!",
+      "before": "Aşağılayıcı. Ne iğrenç bir yaratık!",
+      "after": "Küçümseyici. Ne iğrenç bir yaratıksın!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleguard.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/10",
+          "origin": "npcs/mobs/castleguard.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Contemptuous küçümsemedir, Insulting ile aynı önek değildir. Kaynağın doğrudan muhatabına yönelen you are yüklemi Türkçede korundu."
+    },
+    {
+      "unit_index": 12,
+      "en": "Intimidating. Fall to your knees and beg for mercy!",
+      "before": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!",
+      "after": "Göz korkutucu. Dizlerinin üstüne çöküp merhamet dile!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleguardbasic.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/1",
+          "origin": "npcs/mobs/castleguardbasic.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Glitch duygu öneki mevcut Intimidating karşılığı Göz korkutucu ile eşlendi; korkutma tonu korunur."
+    },
+    {
+      "unit_index": 13,
+      "en": "Contemptuous. What a repulsive specimen you are!",
+      "before": "Aşağılayıcı. Ne iğrenç bir yaratık!",
+      "after": "Küçümseyici. Ne iğrenç bir yaratıksın!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleguardbasic.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/10",
+          "origin": "npcs/mobs/castleguardbasic.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Contemptuous küçümsemedir, Insulting ile aynı önek değildir. Kaynağın doğrudan muhatabına yönelen you are yüklemi Türkçede korundu."
+    },
+    {
+      "unit_index": 23,
+      "en": "Intimidating. Fall to your knees and beg for mercy!",
+      "before": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!",
+      "after": "Göz korkutucu. Dizlerinin üstüne çöküp merhamet dile!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleguardlookout.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/1",
+          "origin": "npcs/mobs/castleguardlookout.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Glitch duygu öneki mevcut Intimidating karşılığı Göz korkutucu ile eşlendi; korkutma tonu korunur."
+    },
+    {
+      "unit_index": 24,
+      "en": "Contemptuous. What a repulsive specimen you are!",
+      "before": "Aşağılayıcı. Ne iğrenç bir yaratık!",
+      "after": "Küçümseyici. Ne iğrenç bir yaratıksın!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleguardlookout.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/10",
+          "origin": "npcs/mobs/castleguardlookout.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Contemptuous küçümsemedir, Insulting ile aynı önek değildir. Kaynağın doğrudan muhatabına yönelen you are yüklemi Türkçede korundu."
+    },
+    {
+      "unit_index": 34,
+      "en": "Intimidating. Fall to your knees and beg for mercy!",
+      "before": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!",
+      "after": "Göz korkutucu. Dizlerinin üstüne çöküp merhamet dile!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleroyalguard.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/1",
+          "origin": "npcs/mobs/castleroyalguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Glitch duygu öneki mevcut Intimidating karşılığı Göz korkutucu ile eşlendi; korkutma tonu korunur."
+    },
+    {
+      "unit_index": 35,
+      "en": "Contemptuous. What a repulsive specimen you are!",
+      "before": "Aşağılayıcı. Ne iğrenç bir yaratık!",
+      "after": "Küçümseyici. Ne iğrenç bir yaratıksın!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/castleroyalguard.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/10",
+          "origin": "npcs/mobs/castleroyalguard.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Contemptuous küçümsemedir, Insulting ile aynı önek değildir. Kaynağın doğrudan muhatabına yönelen you are yüklemi Türkçede korundu."
+    },
+    {
+      "unit_index": 45,
+      "en": "WHAT ARE YOU? AN IDIOT SANDWICH!",
+      "before": "SEN NESİN? APTAL SANDVİÇ!",
+      "after": "SEN NESİN? BİR APTAL SANDVİÇİ!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/1",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Aptal sandviçi tamlaması ve kaynak AN vurgusu tamamlandı; ilk soru, büyük harf ve Floran s tıslaması korunur."
+    },
+    {
+      "unit_index": 47,
+      "en": "And it's Frackin' RAAAAAAWWWWW!!!",
+      "before": "Ve bu da Frackin' ÇİİİİİİĞ!!!",
+      "after": "Ve bu resmen ÇİİİİİİĞ!!!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/3",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Bu yemek repliğinde Frackin' bir kişi/ürün adı değil, raw vurgusundaki örtülü ünlemdir. Türkçe vurgu resmen ile verildi; yeni küfür/kişi/mekanik eklenmedi, ÇİĞ uzatması korundu."
+    },
+    {
+      "unit_index": 53,
+      "en": "WHAT ARE YOU? AN IDIOT SSSSSANDWICH!",
+      "before": "SEN NESİN? APTAL SSSSSANDVİÇ!",
+      "after": "SEN NESİN? BİR APTAL SSSSSANDVİÇİ!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/1",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Aptal sandviçi tamlaması ve kaynak AN vurgusu tamamlandı; ilk soru, büyük harf ve Floran s tıslaması korunur."
+    },
+    {
+      "unit_index": 54,
+      "en": "And here comes today's fressssh meat!",
+      "before": "İşte bugünün tazessss eti!",
+      "after": "İşte ssssana bugünün taze eti!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Taze sözcüğüne kaynak Türkçesinde bulunmayan yapay s eklenmesi kaldırıldı; burada geliyor hitabındaki sana sözcüğünün doğal s sesi tıslandı."
+    },
+    {
+      "unit_index": 55,
+      "en": "And it's Frackin' RAAAAAAWWWWW!!!",
+      "before": "Ve bu da Frackin' ÇİİİİİİĞ!!!",
+      "after": "Ve bu resmen ÇİİİİİİĞ!!!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/3",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Bu yemek repliğinde Frackin' bir kişi/ürün adı değil, raw vurgusundaki örtülü ünlemdir. Türkçe vurgu resmen ile verildi; yeni küfür/kişi/mekanik eklenmedi, ÇİĞ uzatması korundu."
+    },
+    {
+      "unit_index": 58,
+      "en": "Enraged. WHERE'S THE LAMB SAUCE?!",
+      "before": "Öfkeli. KUZU SOSU NEREDE?!",
+      "after": "Çileden çıkmış. KUZU SOSU NEREDE?!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/0",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Enraged önekinin yoğunluğu sıradan angry/furious ile tekleştirilmeden çileden çıkmış olarak korundu."
+    },
+    {
+      "unit_index": 59,
+      "en": "beligerant. WHAT ARE YOU? AN IDIOT SANDWICH!",
+      "before": "Kavgacı. SEN NESİN? APTAL SANDVİÇ!",
+      "after": "Kavgacı. SEN NESİN? BİR APTAL SANDVİÇİ!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/1",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Aptal sandviçi tamlaması ve kaynak AN vurgusu tamamlandı; ilk soru, büyük harf ve Floran s tıslaması korunur."
+    },
+    {
+      "unit_index": 61,
+      "en": "Exacerbated. And it's Frackin' RAAAAAAWWWWW!!!",
+      "before": "Öfkesi artmış. Ve bu da Frackin' ÇİİİİİİĞ!!!",
+      "after": "Öfkesi artmış. Ve bu resmen ÇİİİİİİĞ!!!",
+      "occurrences": [
+        {
+          "asset": "npcs/mobs/fuevilchef.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/3",
+          "origin": "npcs/mobs/fuevilchef.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Bu yemek repliğinde Frackin' bir kişi/ürün adı değil, raw vurgusundaki örtülü ünlemdir. Türkçe vurgu resmen ile verildi; yeni küfür/kişi/mekanik eklenmedi, ÇİĞ uzatması korundu."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "7b641ebf83e673e74bb269ebdf8cf37723af751d68295a972d548750630f0fda",
+    "filled_units": 66
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 66,
+    "context_units": 66,
+    "qa": {
+      "catalog_units_checked": 34756,
+      "raw_units_checked": 115,
+      "locked_terms": 903
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/mobs/castleguard.npctype",
+        "note": "Sol verified type=castleguard, baseType=hostilefu and all 11 exact dialogue occurrences."
+      },
+      {
+        "source": "fu_source/npcs/mobs/castleguardbasic.npctype",
+        "note": "Sol verified type=castleguardbasic, baseType=villageguard and all 11 exact dialogue occurrences."
+      },
+      {
+        "source": "fu_source/npcs/mobs/castleguardlookout.npctype",
+        "note": "Sol verified type=castleguardlookout, baseType=hostilelookout and all 11 exact dialogue occurrences."
+      },
+      {
+        "source": "fu_source/npcs/mobs/castleroyalguard.npctype",
+        "note": "Sol verified type=castleroyalguard, baseType=hostilefu and all 11 exact dialogue occurrences."
+      },
+      {
+        "source": "fu_source/npcs/mobs/fuevilchef.npctype",
+        "note": "Sol verified type=fuevilchef, baseType=hostilefu and all 22 exact dialogue occurrences."
+      },
+      {
+        "source": "fu_source/scripts/actions/dialog.lua",
+        "note": "Sol read loadDialog/queryDialog/speciesDialog/sayToEntity/getDialog. Speaker species first, target species second, default fallbacks; helper selects/tags/says text but does not establish active hail/attack trigger for these types."
+      },
+      {
+        "source": "fu_source/dungeons/microdungeons/randomencounter/glitchunderground/glitchundergroundencounter.dungeon",
+        "note": "Exact Glitch NPC brushes: tiles363 castleguard,364 castleguardlookout,365 castleroyalguard. No per-instance config in these brushes."
+      },
+      {
+        "source": "fu_source/dungeons/missions/glitchmissions/glitchmission1.json",
+        "note": "Tiled objects have npc=glitch,typeName=castleguardbasic,parameters={}; friendlycastleguard objects are distinct."
+      },
+      {
+        "source": "fu_source/dungeons/DungeoneerDungeons/glitch/glitchjoust/glitchjoust.dungeon; fu_source/dungeons/DungeoneerDungeons/glitch/glitchfarm/glitchfarm.dungeon",
+        "note": "Only castleguard/castleroyalguard target brushes found; not castleguardlookout. Guard-specific dialogue at a different config path does not prove precedence over type hail."
+      },
+      {
+        "source": "fu_source/dungeons/missions/cultistmissions/cultistmission1.json; fu_source/dungeons/space/spaceencounter/fu_banditasteroid.json; fu_source/dungeons/space/apexweaponsplatform/room5.json; fu_source/dungeons/human/humanbunker/2a.json",
+        "note": "Sol decoded fuevilchef type/spawner references. Cultist human,apex skath,bunker human; bandit parameters omit npcSpecies. Static definitions only, no live trigger claim."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/npcs/villageguard.npctype.patch; fu_source/npcs/mobs/precursormob.npctype",
+        "note": "hostilefu parent base and behavior hostileguard absent. Basic vanilla villageguard and lookout hostilelookout absent. Four precursormob review IDs remain machine identifiers, excluded."
+      }
+    ],
+    "note": "All66 EN/TR variants and occurrence sources reviewed by Sol. Static source/inheritance/spawn selection recorded separately from absent active behavior consumers. Live LQA NOT TESTED."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/mobs/castleguard.npctype",
+        "npc_type": "castleguard",
+        "base_type": "hostilefu",
+        "fields": 11,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/0",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Hostile. Intruder!",
+            "tr": "Düşmanca. İzinsiz giren var!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/1",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Intimidating. Fall to your knees and beg for mercy!",
+            "tr": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/10",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Contemptuous. What a repulsive specimen you are!",
+            "tr": "Aşağılayıcı. Ne iğrenç bir yaratık!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/2",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Confident. You will die this day!",
+            "tr": "Kendinden emin. Bugün öleceksin!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/3",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Arrogant. You shall be an easy kill.",
+            "tr": "Kibirli. Seni öldürmek çok kolay olacak."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/4",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Bloodthirsty. Don't die too quickly; I want to savour this!",
+            "tr": "Kana susamış. Çok çabuk ölme; bunun tadını çıkarmak istiyorum!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/5",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Excited. Finally, a worthy adversary!",
+            "tr": "Heyecanlı. Nihayet, dişime göre bir rakip!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/6",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Threatening. You chose the wrong castle to invade!",
+            "tr": "Tehditkâr. İşgal etmek için yanlış kaleyi seçtin!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/7",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Daring. Come forth and prove your mettle!",
+            "tr": "Cüretkâr. Çık karşıma ve ne kadar yiğit olduğunu kanıtla!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/8",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Malevolent. I will run you through!",
+            "tr": "Kötücül. Seni delip geçeceğim!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/mobs/castleguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/9",
+            "origin": "npcs/mobs/castleguard.npctype",
+            "en": "Furious. Prepare to die, intruder!",
+            "tr": "Öfkeli. Ölmeye hazırlan, davetsiz misafir!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mobs/castleguardbasic.npctype",
+        "npc_type": "castleguardbasic",
+        "base_type": "villageguard",
+        "fields": 11,
+        "entries": [
+          {
+            "unit_index": 11,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/0",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Hostile. Intruder!",
+            "tr": "Düşmanca. İzinsiz giren var!"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/1",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Intimidating. Fall to your knees and beg for mercy!",
+            "tr": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/10",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Contemptuous. What a repulsive specimen you are!",
+            "tr": "Aşağılayıcı. Ne iğrenç bir yaratık!"
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/2",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Confident. You will die this day!",
+            "tr": "Kendinden emin. Bugün öleceksin!"
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/3",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Arrogant. You shall be an easy kill.",
+            "tr": "Kibirli. Seni öldürmek çok kolay olacak."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/4",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Bloodthirsty. Don't die too quickly; I want to savour this!",
+            "tr": "Kana susamış. Çok çabuk ölme; bunun tadını çıkarmak istiyorum!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/5",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Excited. Finally, a worthy adversary!",
+            "tr": "Heyecanlı. Nihayet, dişime göre bir rakip!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/6",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Threatening. You chose the wrong castle to invade!",
+            "tr": "Tehditkâr. İşgal etmek için yanlış kaleyi seçtin!"
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/7",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Daring. Come forth and prove your mettle!",
+            "tr": "Cüretkâr. Çık karşıma ve ne kadar yiğit olduğunu kanıtla!"
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/8",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Malevolent. I will run you through!",
+            "tr": "Kötücül. Seni delip geçeceğim!"
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/mobs/castleguardbasic.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/9",
+            "origin": "npcs/mobs/castleguardbasic.npctype",
+            "en": "Furious. Prepare to die, intruder!",
+            "tr": "Öfkeli. Ölmeye hazırlan, davetsiz misafir!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mobs/castleguardlookout.npctype",
+        "npc_type": "castleguardlookout",
+        "base_type": "hostilelookout",
+        "fields": 11,
+        "entries": [
+          {
+            "unit_index": 22,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/0",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Hostile. Intruder!",
+            "tr": "Düşmanca. İzinsiz giren var!"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/1",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Intimidating. Fall to your knees and beg for mercy!",
+            "tr": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!"
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/10",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Contemptuous. What a repulsive specimen you are!",
+            "tr": "Aşağılayıcı. Ne iğrenç bir yaratık!"
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/2",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Confident. You will die this day!",
+            "tr": "Kendinden emin. Bugün öleceksin!"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/3",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Arrogant. You shall be an easy kill.",
+            "tr": "Kibirli. Seni öldürmek çok kolay olacak."
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/4",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Bloodthirsty. Don't die too quickly; I want to savour this!",
+            "tr": "Kana susamış. Çok çabuk ölme; bunun tadını çıkarmak istiyorum!"
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/5",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Excited. Finally, a worthy adversary!",
+            "tr": "Heyecanlı. Nihayet, dişime göre bir rakip!"
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/6",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Threatening. You chose the wrong castle to invade!",
+            "tr": "Tehditkâr. İşgal etmek için yanlış kaleyi seçtin!"
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/7",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Daring. Come forth and prove your mettle!",
+            "tr": "Cüretkâr. Çık karşıma ve ne kadar yiğit olduğunu kanıtla!"
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/8",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Malevolent. I will run you through!",
+            "tr": "Kötücül. Seni delip geçeceğim!"
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/mobs/castleguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/9",
+            "origin": "npcs/mobs/castleguardlookout.npctype",
+            "en": "Furious. Prepare to die, intruder!",
+            "tr": "Öfkeli. Ölmeye hazırlan, davetsiz misafir!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mobs/castleroyalguard.npctype",
+        "npc_type": "castleroyalguard",
+        "base_type": "hostilefu",
+        "fields": 11,
+        "entries": [
+          {
+            "unit_index": 33,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/0",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Hostile. Intruder!",
+            "tr": "Düşmanca. İzinsiz giren var!"
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/1",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Intimidating. Fall to your knees and beg for mercy!",
+            "tr": "Yıldırıcı. Dizlerinin üstüne çöküp merhamet dile!"
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/10",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Contemptuous. What a repulsive specimen you are!",
+            "tr": "Aşağılayıcı. Ne iğrenç bir yaratık!"
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/2",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Confident. You will die this day!",
+            "tr": "Kendinden emin. Bugün öleceksin!"
+          },
+          {
+            "unit_index": 37,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/3",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Arrogant. You shall be an easy kill.",
+            "tr": "Kibirli. Seni öldürmek çok kolay olacak."
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/4",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Bloodthirsty. Don't die too quickly; I want to savour this!",
+            "tr": "Kana susamış. Çok çabuk ölme; bunun tadını çıkarmak istiyorum!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/5",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Excited. Finally, a worthy adversary!",
+            "tr": "Heyecanlı. Nihayet, dişime göre bir rakip!"
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/6",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Threatening. You chose the wrong castle to invade!",
+            "tr": "Tehditkâr. İşgal etmek için yanlış kaleyi seçtin!"
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/7",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Daring. Come forth and prove your mettle!",
+            "tr": "Cüretkâr. Çık karşıma ve ne kadar yiğit olduğunu kanıtla!"
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/8",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Malevolent. I will run you through!",
+            "tr": "Kötücül. Seni delip geçeceğim!"
+          },
+          {
+            "unit_index": 43,
+            "asset": "npcs/mobs/castleroyalguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/9",
+            "origin": "npcs/mobs/castleroyalguard.npctype",
+            "en": "Furious. Prepare to die, intruder!",
+            "tr": "Öfkeli. Ölmeye hazırlan, davetsiz misafir!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mobs/fuevilchef.npctype",
+        "npc_type": "fuevilchef",
+        "base_type": "hostilefu",
+        "fields": 22,
+        "entries": [
+          {
+            "unit_index": 44,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "WHERE'S THE LAMB SAUCE?!",
+            "tr": "KUZU SOSU NEREDE?!"
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "WHAT ARE YOU? AN IDIOT SANDWICH!",
+            "tr": "SEN NESİN? APTAL SANDVİÇ!"
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "And here comes today's fresh meat!",
+            "tr": "İşte bugünün taze eti!"
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "And it's Frackin' RAAAAAAWWWWW!!!",
+            "tr": "Ve bu da Frackin' ÇİİİİİİĞ!!!"
+          },
+          {
+            "unit_index": 48,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "GET OUT!!",
+            "tr": "DEFOL!!"
+          },
+          {
+            "unit_index": 49,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "You're going straight on the grill!",
+            "tr": "Seni doğruca ızgaraya atacağım!"
+          },
+          {
+            "unit_index": 50,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "What is going on?!",
+            "tr": "Neler oluyor?!"
+          },
+          {
+            "unit_index": 51,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/7",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "You donkey!!",
+            "tr": "Eşek seni!!"
+          },
+          {
+            "unit_index": 52,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/0",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "WHERE'S THE LAMB SSSSSAUCE?!",
+            "tr": "KUZU SSSSSOSU NEREDE?!"
+          },
+          {
+            "unit_index": 53,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/1",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "WHAT ARE YOU? AN IDIOT SSSSSANDWICH!",
+            "tr": "SEN NESİN? APTAL SSSSSANDVİÇ!"
+          },
+          {
+            "unit_index": 54,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "And here comes today's fressssh meat!",
+            "tr": "İşte bugünün tazessss eti!"
+          },
+          {
+            "unit_index": 55,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/3",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "And it's Frackin' RAAAAAAWWWWW!!!",
+            "tr": "Ve bu da Frackin' ÇİİİİİİĞ!!!"
+          },
+          {
+            "unit_index": 56,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/4",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "GET OUT!!",
+            "tr": "DEFOL!!"
+          },
+          {
+            "unit_index": 57,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/5",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "SSSSTAAAB!",
+            "tr": "SSSSSAAAPLA!"
+          },
+          {
+            "unit_index": 58,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/0",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Enraged. WHERE'S THE LAMB SAUCE?!",
+            "tr": "Öfkeli. KUZU SOSU NEREDE?!"
+          },
+          {
+            "unit_index": 59,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/1",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "beligerant. WHAT ARE YOU? AN IDIOT SANDWICH!",
+            "tr": "Kavgacı. SEN NESİN? APTAL SANDVİÇ!"
+          },
+          {
+            "unit_index": 60,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/2",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Threatening. And here comes today's fresh meat!",
+            "tr": "Tehditkâr. İşte bugünün taze eti!"
+          },
+          {
+            "unit_index": 61,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/3",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Exacerbated. And it's Frackin' RAAAAAAWWWWW!!!",
+            "tr": "Öfkesi artmış. Ve bu da Frackin' ÇİİİİİİĞ!!!"
+          },
+          {
+            "unit_index": 62,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/4",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Angry. GET OUT!!",
+            "tr": "Kızgın. DEFOL!!"
+          },
+          {
+            "unit_index": 63,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/5",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Hungry. You're going straight on the grill!",
+            "tr": "Aç. Seni doğruca ızgaraya atacağım!"
+          },
+          {
+            "unit_index": 64,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/6",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Irritated. What is going on?!!",
+            "tr": "Sinirli. Neler oluyor?!!"
+          },
+          {
+            "unit_index": 65,
+            "asset": "npcs/mobs/fuevilchef.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/7",
+            "origin": "npcs/mobs/fuevilchef.npctype",
+            "en": "Insulting. You donkey!!",
+            "tr": "Aşağılayıcı. Eşek seni!!"
+          }
+        ]
+      }
+    ],
+    "spawn_references": [
+      {
+        "source": "dungeons/microdungeons/randomencounter/glitchunderground/glitchundergroundencounter.dungeon",
+        "pointer": "/tiles/363/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/glitchunderground/glitchundergroundencounter.dungeon",
+        "pointer": "/tiles/364/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleguardlookout"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/glitchunderground/glitchundergroundencounter.dungeon",
+        "pointer": "/tiles/365/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleroyalguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/glitch/glitchjoust/glitchjoust.dungeon",
+        "pointer": "/tiles/324/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleguard",
+          "parameters": {
+            "scriptConfig": {
+              "guard": {
+                "patrolDistance": 0,
+                "noticeDistance": 30,
+                "hailDistance": 20,
+                "stopDistance": 10,
+                "attackDistance": 5,
+                "attackSayingPercent": -1,
+                "dialog": {
+                  "hail": {
+                    "default": [
+                      "Halt! Who goes there?"
+                    ]
+                  },
+                  "stop": {
+                    "default": [
+                      "You may go no further."
+                    ]
+                  }
+                }
+              },
+              "meleeAttack": {
+                "sayAttackStartDistance": -1
+              }
+            }
+          }
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/glitch/glitchjoust/glitchjoust.dungeon",
+        "pointer": "/tiles/325/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleroyalguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/glitch/glitchfarm/glitchfarm.dungeon",
+        "pointer": "/tiles/324/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleguard",
+          "parameters": {
+            "scriptConfig": {
+              "guard": {
+                "patrolDistance": 0,
+                "noticeDistance": 30,
+                "hailDistance": 20,
+                "stopDistance": 10,
+                "attackDistance": 5,
+                "attackSayingPercent": -1,
+                "dialog": {
+                  "hail": {
+                    "default": [
+                      "Halt! Who goes there?"
+                    ]
+                  },
+                  "stop": {
+                    "default": [
+                      "You may go no further."
+                    ]
+                  }
+                }
+              },
+              "meleeAttack": {
+                "sayAttackStartDistance": -1
+              }
+            }
+          }
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/glitch/glitchfarm/glitchfarm.dungeon",
+        "pointer": "/tiles/325/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "glitch",
+          "typeName": "castleroyalguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/3",
+        "data": {
+          "height": 8,
+          "id": 3512,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2680,
+          "y": 592
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/4",
+        "data": {
+          "height": 8,
+          "id": 3513,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2648,
+          "y": 592
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/5",
+        "data": {
+          "height": 8,
+          "id": 3516,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "friendlycastleguard"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2256,
+          "y": 736
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/12",
+        "data": {
+          "height": 8,
+          "id": 3635,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "friendlycastleguard"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2680,
+          "y": 736
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/13",
+        "data": {
+          "height": 8,
+          "id": 3636,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2536,
+          "y": 736
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/17",
+        "data": {
+          "height": 8,
+          "id": 3809,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "friendlycastleguard"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 3000,
+          "y": 736
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/18",
+        "data": {
+          "height": 8,
+          "id": 3810,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2872,
+          "y": 728
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/19",
+        "data": {
+          "height": 8,
+          "id": 3811,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2736,
+          "y": 728
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/20",
+        "data": {
+          "height": 8,
+          "id": 3818,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2760,
+          "y": 944
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/21",
+        "data": {
+          "height": 8,
+          "id": 3875,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2384,
+          "y": 736
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/22",
+        "data": {
+          "height": 8,
+          "id": 3876,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2400,
+          "y": 936
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/23",
+        "data": {
+          "height": 8,
+          "id": 3877,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2864,
+          "y": 936
+        }
+      },
+      {
+        "source": "dungeons/missions/glitchmissions/glitchmission1.json",
+        "pointer": "/layers/7/objects/24",
+        "data": {
+          "height": 8,
+          "id": 3878,
+          "name": "",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "glitch"
+            },
+            {
+              "name": "parameters",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "castleguardbasic"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2680,
+          "y": 936
+        }
+      },
+      {
+        "source": "dungeons/missions/cultistmissions/cultistmission1.json",
+        "pointer": "/layers/5/objects/88",
+        "data": {
+          "height": 8,
+          "id": 3728,
+          "name": "Evil Chef",
+          "properties": [
+            {
+              "name": "npc",
+              "type": "string",
+              "value": "human"
+            },
+            {
+              "name": "typeName",
+              "type": "string",
+              "value": "fuevilchef"
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 2408,
+          "y": 2000
+        }
+      },
+      {
+        "source": "dungeons/space/spaceencounter/fu_banditasteroid.json",
+        "pointer": "/layers/5/objects/8/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcTypes": [
+            "fuevilchef"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 3,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/apexweaponsplatform/room5.json",
+        "pointer": "/layers/3/objects/1/properties/parameters(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "skath"
+          ],
+          "npcTypes": [
+            "fuevilchef"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 35,
+          "position": [
+            0,
+            0
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            2,
+            2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/apexweaponsplatform/room5.json",
+        "pointer": "/layers/3/objects/4/properties",
+        "data": {
+          "npc": "skath",
+          "typeName": "fuevilchef"
+        }
+      },
+      {
+        "source": "dungeons/human/humanbunker/2a.json",
+        "pointer": "/layers/5/objects/5/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "human"
+          ],
+          "npcTypes": [
+            "fuevilchef"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 35,
+          "position": [
+            0,
+            0
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            2,
+            2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      }
+    ],
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "corrections_to_delivery": [
+      "Only three types directly inherit hostilefu. The README blanket claim was incorrect; basic inherits villageguard and lookout inherits hostilelookout.",
+      "No castleguardlookout typeName exists in the two cited Dungeoneer files. Its verified static brush is glitchundergroundencounter /tiles/364/brush/0/1.",
+      "Dungeoneer guard dialogue is at parameters/scriptConfig/guard/dialog, whereas target type dialogue is scriptConfig/dialog. Without the missing consumer, precedence or suppression of target hail is not proven.",
+      "Bandit asteroid spawner does not declare npcSpecies in its parameters; the delivery claim skath is unsupported there. Apex room5 separately declares skath."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All66 EN/TR variants and exact occurrence source pointers read. Five complete direct NPC definitions inspected; all66fields are direct FU source,not inferred from missing vanilla.",
+    "Direct inheritance: castleguard,castleroyalguard,fuevilchef→hostilefu; castleguardbasic→villageguard; castleguardlookout→hostilelookout. The initial Sol README blanket hostilefu claim was wrong and corrected in review evidence.",
+    "FU hostilefu and villageguard patch inspected. Vanilla base,villageguard,hostilelookout and hostileguard behavior implementation absent. Actual hail/attack invocation for these types and live triggers remain unverified; selection helper alone is not a trigger proof.",
+    "Glitch underground brushes link three guard types. Glitch mission Tiled objects link basic; friendlycastleguard is distinct. Two Dungeoneer files link guard/royalguard,not lookout. Delivery lookout references there were rejected.",
+    "Dungeoneer instance guard/dialog/hail differs from type scriptConfig/dialog/hail. Without the consumer, override precedence or target-default suppression is not established.",
+    "Chef cultist NPC human,apex spawner/NPC skath,bunker spawner human. Bandit spawner has fuevilchef but omits npcSpecies in parameters; the delivery skath claim is unsupported there.",
+    "Glitch prefix intensity/contempt,idiot-sandwich compounds,raw emphasis and Floran natural-s hiss corrected. Source beligerant misspelling translated by belligerent context; Exacerbated increased-anger wording retained without pretending a source repair.",
+    "All31distinct full replies are LOCKED; no generic emotion root lock or unchanged-English preserve permission added. Existing terms,format/TM exceptions and all20028previous catalog fields unchanged.",
+    "Four related precursormob review items are technical behavior/personality/reaction IDs,not player dialogue; unchanged and excluded.",
+    "Live activation,font/layout,LQA NOT TESTED. No online Steam upload,game installation or shutdown. This completes the requested five new rounds only after all publication gates; no further package dispatch."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}

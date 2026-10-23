@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.83.0 Beta — Kale muhafızları ve kötü aşçı
+
+5 NPC dosyasında 66 yeni alan /66 bağlam, 31 farklı kaynak metin: dört kale muhafızının 44 hail repliği ve kötü aşçının 22 varsayılan/Floran/Glitch attack repliği. Confirmed npcs/mobs ailesinin kalan dilimi tamamlandı; teknik review kimlikleri kapsam dışıdır. Katalog 20.094 alan; önceki 20.028 alan aynen korundu.
+
+16 alanda toplam 20 cümle/kısa ifade düzeltildi: Glitch korkutma/küçümseme/öfke yoğunluğu, doğrudan hitap, aptal sandviçi tamlaması, çiğ yemek vurgusu ve Floran'ın doğal s tıslaması. 31 yeni tam replik LOCKED, toplam 903; genel duygu sözcüklerini bütün bağlamlara zorlayan kök kilidi veya yeni İngilizce koruma/format/TM istisnası yok. İlk hazırlık notundaki kalıtım hatası ve teslimdeki iki yanlış gözcü kaynak bağı düzeltildi. Vanilla parent/davranış kaynakları eksik olduğundan aktif hail/attack çağrısı ve canlı tetikleme doğrulanmış sayılmaz. FU 6.5.8 pini ve mekanikler aynı; canlı LQA NOT TESTED. [Gerekçeli önce/sonra incelemesi](docs/reviews/mobs-20261023.json) · [Oyun kontrolü](docs/lqa/LQA_V083_20261023.md)
+
 ## v0.82.0 Beta — Kalan görev telsizleri
 
 5 varlıkta 133 yeni alan /133 bağlam, 93 farklı kaynak metin: Precursor son yönergeleri, Skytemple, Snowcrash, Sunset Riders, Volcano Base ve kalan görev/gemi/Tech/başlangıç uyarıları. 86 metin, 47 konuşmacı adı; bütün alanlar FU yaması. Confirmed radyo ailesinin kalan dilimi tamamlandı; diğer review/NPC içerikleri tamam sayılmaz. Katalog 20.028 alan; önceki 19.895 alandan 19.894 aynı, bir eski S.A.I.L. açıklaması aynı eter bağlamıyla eşlendi.
