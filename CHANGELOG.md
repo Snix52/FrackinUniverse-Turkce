@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.88.0 Beta — Kadim Tapınak konuşmaları
+
+4 NPC dosyasında 48 yeni alan / 48 bağlam, 34 farklı kaynak metin: rahipler, alev silahlı muhafız ve kurtarılan takipçi. Confirmed npcs/ancienttemple ailesinin kalanı tamamlandı; katalog 20.366 alan. Önceki 20.318 alan değişmedi.
+
+3 alanda 3 kısa ifade düzeltildi: kül formülü, kurban edilme meydan okuması ve kaçış/ölüm alternatifi. 24 yeni tam replik LOCKED, toplam 1.063; 10 mevcut replik kilidi yeniden kullanıldı. Görev, worldgen ve uzay piramidi kaynakları ayrı incelendi; statik kayıtlar canlı spawn sayısı olarak sunulmadı. FU 6.5.8 pini, mekanikler ve önceki kilitler aynı. Canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/ancienttemple-20261102.json) · [Oyun kontrolü](docs/lqa/LQA_V088_20261102.md)
+
 ## v0.87.0 Beta — Volcano Base / Tower Invincible konuşmaları
 
 7 NPC dosyasında 48 yeni alan /48 bağlam, 44 farklı kaynak metin: 18 takipçi durum repliği, 25 saldırı ve beş rehine konuşması. Confirmed npcs/volcanobase ailesinin kalan dilimi tamamlandı; iki review adayı kapsam dışıdır. Katalog 20.318 alan; önceki 20.270 alan aynı.

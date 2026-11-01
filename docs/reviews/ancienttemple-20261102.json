@@ -1,0 +1,2661 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-02",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 11,
+  "run_id": "fu-six-20261101",
+  "run_round": 5,
+  "base_commit": "08c7338769835417e9803cb5f0d92b91d784fc29",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 48,
+    "context_groups": 48,
+    "unique_english_strings": 34,
+    "assets": {
+      "npcs/ancienttemple/battlepriest.npctype": 14,
+      "npcs/ancienttemple/firebird.npctype": 5,
+      "npcs/ancienttemple/templefollower.npctype": 15,
+      "npcs/ancienttemple/templehighpriest.npctype": 14
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 48,
+    "dialogue_events": {
+      "attack": 31,
+      "killedTarget": 1,
+      "reattack": 1,
+      "follower/attack": 2,
+      "follower/join": 2,
+      "follower/returnFromCombat": 5,
+      "follower/returnFromWait": 3,
+      "follower/wait": 3
+    },
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 3,
+    "sentences_including_repeated_fields": 3,
+    "unique_source_strings_corrected": 3,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 3,
+    "total_corrected_sentences": 3,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged sentences excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 24,
+  "new_locked_names": [
+    "I’ll kill you myself, scum!",
+    "By Kluex be purged!",
+    "A sacrifice presents itself!",
+    "How fortuitous. Usually a sacrifice won't present itself so readily!",
+    "Be wreathed in holy flame!",
+    "You shall burn for your trespass!",
+    "Burn for the glory of Kluex!",
+    "Ashes to ashes!",
+    "I shall purify your mind with my sacred flame!",
+    "Sacrifice me, will you?",
+    "I'll escape or die trying!",
+    "Thank you for saving me! I don't fancy being a sacrifice.",
+    "I had almost lost all hope of being rescued! Let's get out of here!",
+    "Let's move on.",
+    "I'm impressed.",
+    "How did you get here anyway?",
+    "We're a team worth fearing!",
+    "Who's the sacrifice now?",
+    "Hello again.",
+    "Let's head off together.",
+    "You ready to move on?",
+    "I'll just wait here.",
+    "I'll stay here, don't leave me alone too long!",
+    "Do you need a moment?"
+  ],
+  "reused_locked_names": [
+    "Filthy Grounded scum! Today, you die!",
+    "Rend the unbeliever limb from limb!",
+    "Your disbelief will be your undoing!",
+    "Your disregard towards our mighty Kluex is despicable!",
+    "I... I must destroy you, heretic! I have no choice!",
+    "You dishonour Kluex!",
+    "You are unwelcome, stranger!",
+    "Today, Kluex claims another soul!",
+    "The wrath of Kluex will fall upon you!",
+    "The power of Kluex compels me to slay you!"
+  ],
+  "locked_total": 1063,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "8a67f574518fc89d54acfe7c115880986d76c1140586446fc2269c7c2598591d",
+  "luna_original_packet_sha256": "604fade210a97fecc2c68eca713e81289f065b7a2a0cd4d56693fed6accc2167",
+  "approved_rows_sha256": "a92874758a10d97169586b4d2d544384fa6561a52ee8c580e3e69105844192f1",
+  "corrections": [
+    {
+      "unit_index": 17,
+      "en": "Ashes to ashes!",
+      "before": "Küller küle!",
+      "after": "Külden küle!",
+      "occurrences": [
+        {
+          "asset": "npcs/ancienttemple/firebird.npctype",
+          "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+          "origin": "npcs/ancienttemple/firebird.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Ölüm sonrası söylenen ashes-to-ashes formülü doğal bir Türkçe kısa ifadeye alındı; kaynakta bulunmayan köken/ruh/ritüel öğretisi veya yeni eylem eklenmedi."
+    },
+    {
+      "unit_index": 19,
+      "en": "Sacrifice me, will you?",
+      "before": "Beni kurban mı edeceksin, ha?",
+      "after": "Beni kurban edecektin, öyle mi?",
+      "occurrences": [
+        {
+          "asset": "npcs/ancienttemple/templefollower.npctype",
+          "pointer": "/scriptConfig/dialog/follower/attack/default/default/0",
+          "origin": "npcs/ancienttemple/templefollower.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Saldırı dalında kurtulan kişinin kendisini kurban etmek isteyenlere karşı meydan okuması korundu; gelecek hakkında bilgi isteyen gerçek bir soruya indirgenmedi. Yeni hakaret veya intikam eylemi eklenmedi."
+    },
+    {
+      "unit_index": 20,
+      "en": "I'll escape or die trying!",
+      "before": "Kaçacağım; bunu denerken ölsem bile!",
+      "after": "Ya kaçacağım ya da kaçmaya çalışırken öleceğim!",
+      "occurrences": [
+        {
+          "asset": "npcs/ancienttemple/templefollower.npctype",
+          "pointer": "/scriptConfig/dialog/follower/attack/default/default/1",
+          "origin": "npcs/ancienttemple/templefollower.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın kaçış ile kaçmaya çalışırken ölüm arasındaki ya/ya da kararlılığı geri getirildi. Ölsem bile kaçacağım biçimindeki mantıksal çelişki kaldırıldı; ölüm garantisi veya yeni mekanik eklenmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "604fade210a97fecc2c68eca713e81289f065b7a2a0cd4d56693fed6accc2167",
+    "filled_units": 48
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 48,
+    "context_units": 48,
+    "qa": {
+      "catalog_units_checked": 35318,
+      "raw_units_checked": 115,
+      "locked_terms": 1063
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/ancienttemple/battlepriest.npctype",
+        "note": "Sol reviewed all 14 exact occurrences and full NPC type,base,equipment and nested dialogue configuration."
+      },
+      {
+        "source": "fu_source/npcs/ancienttemple/firebird.npctype",
+        "note": "Sol reviewed all 5 exact occurrences and full NPC type,base,equipment and nested dialogue configuration."
+      },
+      {
+        "source": "fu_source/npcs/ancienttemple/templefollower.npctype",
+        "note": "Sol reviewed all 15 exact occurrences and full NPC type,base,equipment and nested dialogue configuration."
+      },
+      {
+        "source": "fu_source/npcs/ancienttemple/templehighpriest.npctype",
+        "note": "Sol reviewed all 14 exact occurrences and full NPC type,base,equipment and nested dialogue configuration."
+      },
+      {
+        "source": "fu_source/quests/ancienttemple.questtemplate; fu_source/ai/ancienttemple.aimission; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/dungeons/missions/ancienttemple/ancienttemple.dungeon; fu_source/dungeons/missions/ancienttemple/ancienttemple.json",
+        "note": "Quest/AI/world/dungeon chain reviewed. Main map:10Avian exact typeName records (4firebird,2battlepriest,3follower,1highpriest),6relevant wire spawners,14radio IDs,1332object records,231wire polylines,22missing external tilesets. Configuration does not prove active spawning,branch selection or trap function."
+      },
+      {
+        "source": "fu_source/dungeons/worldgen/aviandeeppyramid/aviandeeppyramid.dungeon; anchor1.json; anchor2.json; pyramid1.json; pyramid2.json; pyramid4.json; pyramid5.json; fu_source/dungeons/space/flyingpyramid/flyingpyramid.dungeon; base1.json; base2.json; room3.json; mapancienttemple.json",
+        "note": "Whole-FU exact-type scan finds worldgen and space reuse.6worldgen files contain8raw battlepriest records,but anchor2 dungeon part maps anchor1.json; anchor2.json is not registered there. Flyingpyramid spawner labels are not identifiers:actual npcTypes battlepriest verified. Map reward has0NPC/monster objects. No instance activation or same actor inferred."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/npcs/base.npctype.patch; fu_source/scripts/actions/dialog.lua; fu_source/scripts/companions/player.lua",
+        "note": "Full hostilefu/base patch/dialog helper and player follower/recruitment functions read. Helper first selects speaking species then target species/default; configured Avian/default branches are not flattened. Full vanilla base/follower and active hostileguard/follower behavior implementations absent; exact live event consumers unverified."
+      },
+      {
+        "source": "fu_source/codex/legacy_codex/fuavianorigins.codex; fuavianclippedcouncil.codex; fuaviannotes.codex; fuavianhistory.codex; fu_source/npcs/dungeon/aviantemple/templeguard.npctype.patch; fu_source/radiomessages/missions.radiomessages.patch; local-repo/tools/ceviriler.json; local-repo/tools/locked_terms.json",
+        "note": "All4lore texts,templeguard patch and14radio counterparts inspected. Grounded proper community and exact10reused reply locks respected; force/hesitation in Kluex compels me and I... I must kept. Source curly apostrophe kill line differs from templeguard ASCII line,with same approved Turkish. No generic English-utterance permission widened."
+      }
+    ],
+    "note": "All48EN/TR variants and occurrences reviewed by Sol,including15nested follower events and both priests separately.3short expressions corrected. Source8worldgen file records distinguished from registered parts. related_review_rows actually0. Exact active caller and live LQA NOT TESTED."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/ancienttemple/battlepriest.npctype",
+        "type": "battlepriest",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 14,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "Filthy Grounded scum! Today, you die!",
+            "luna_tr": "Seni pis Grounded artığı! Bugün öleceksin!",
+            "approved_tr": "Seni pis Grounded artığı! Bugün öleceksin!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "Rend the unbeliever limb from limb!",
+            "luna_tr": "İnançsızı lime lime edin!",
+            "approved_tr": "İnançsızı lime lime edin!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "Your disbelief will be your undoing!",
+            "luna_tr": "İnançsızlığın seni mahvedecek!",
+            "approved_tr": "İnançsızlığın seni mahvedecek!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "I’ll kill you myself, scum!",
+            "luna_tr": "Seni kendi ellerimle öldüreceğim, pislik!",
+            "approved_tr": "Seni kendi ellerimle öldüreceğim, pislik!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "Your disregard towards our mighty Kluex is despicable!",
+            "luna_tr": "Yüce Kluex'i hiçe sayman iğrenç!",
+            "approved_tr": "Yüce Kluex'i hiçe sayman iğrenç!"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "By Kluex be purged!",
+            "luna_tr": "Kluex seni arındırsın!",
+            "approved_tr": "Kluex seni arındırsın!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "I... I must destroy you, heretic! I have no choice!",
+            "luna_tr": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!",
+            "approved_tr": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "A sacrifice presents itself!",
+            "luna_tr": "Karşıma bir kurban çıktı!",
+            "approved_tr": "Karşıma bir kurban çıktı!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "How fortuitous. Usually a sacrifice won't present itself so readily!",
+            "luna_tr": "Ne güzel rastlantı! Normalde bir kurban karşıma bu kadar kolay çıkmaz!",
+            "approved_tr": "Ne güzel rastlantı! Normalde bir kurban karşıma bu kadar kolay çıkmaz!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "You dishonour Kluex!",
+            "luna_tr": "Kluex'e saygısızlık ediyorsun!",
+            "approved_tr": "Kluex'e saygısızlık ediyorsun!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "You are unwelcome, stranger!",
+            "luna_tr": "Burada istenmiyorsun, yabancı!",
+            "approved_tr": "Burada istenmiyorsun, yabancı!"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "Today, Kluex claims another soul!",
+            "luna_tr": "Bugün Kluex bir ruh daha alacak!",
+            "approved_tr": "Bugün Kluex bir ruh daha alacak!"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "The wrath of Kluex will fall upon you!",
+            "luna_tr": "Kluex'in gazabı üzerine çökecek!",
+            "approved_tr": "Kluex'in gazabı üzerine çökecek!"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/ancienttemple/battlepriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/ancienttemple/battlepriest.npctype",
+            "en": "The power of Kluex compels me to slay you!",
+            "luna_tr": "Kluex'in kudreti beni seni katletmeye zorluyor!",
+            "approved_tr": "Kluex'in kudreti beni seni katletmeye zorluyor!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/ancienttemple/firebird.npctype",
+        "type": "firebird",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 14,
+            "asset": "npcs/ancienttemple/firebird.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/ancienttemple/firebird.npctype",
+            "en": "Be wreathed in holy flame!",
+            "luna_tr": "Kutsal alevler seni sarsın!",
+            "approved_tr": "Kutsal alevler seni sarsın!"
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/ancienttemple/firebird.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/ancienttemple/firebird.npctype",
+            "en": "You shall burn for your trespass!",
+            "luna_tr": "İzinsiz girişin yüzünden yanacaksın!",
+            "approved_tr": "İzinsiz girişin yüzünden yanacaksın!"
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/ancienttemple/firebird.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/ancienttemple/firebird.npctype",
+            "en": "Burn for the glory of Kluex!",
+            "luna_tr": "Kluex'in şanı uğruna yan!",
+            "approved_tr": "Kluex'in şanı uğruna yan!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/ancienttemple/firebird.npctype",
+            "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+            "origin": "npcs/ancienttemple/firebird.npctype",
+            "en": "Ashes to ashes!",
+            "luna_tr": "Küller küle!",
+            "approved_tr": "Külden küle!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/ancienttemple/firebird.npctype",
+            "pointer": "/scriptConfig/dialog/reattack/default/default/0",
+            "origin": "npcs/ancienttemple/firebird.npctype",
+            "en": "I shall purify your mind with my sacred flame!",
+            "luna_tr": "Kutsal alevimle zihnini arındıracağım!",
+            "approved_tr": "Kutsal alevimle zihnini arındıracağım!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/ancienttemple/templefollower.npctype",
+        "type": "templefollower",
+        "base_type": "follower",
+        "identity": null,
+        "behavior": null,
+        "fields": 15,
+        "entries": [
+          {
+            "unit_index": 19,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/attack/default/default/0",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Sacrifice me, will you?",
+            "luna_tr": "Beni kurban mı edeceksin, ha?",
+            "approved_tr": "Beni kurban edecektin, öyle mi?"
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/attack/default/default/1",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "I'll escape or die trying!",
+            "luna_tr": "Kaçacağım; bunu denerken ölsem bile!",
+            "approved_tr": "Ya kaçacağım ya da kaçmaya çalışırken öleceğim!"
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/join/default/default/0",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Thank you for saving me! I don't fancy being a sacrifice.",
+            "luna_tr": "Beni kurtardığın için teşekkür ederim! Kurban edilmeyi hiç istemem.",
+            "approved_tr": "Beni kurtardığın için teşekkür ederim! Kurban edilmeyi hiç istemem."
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/join/default/default/1",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "I had almost lost all hope of being rescued! Let's get out of here!",
+            "luna_tr": "Kurtarılacağıma dair umudumu neredeyse yitirmiştim! Haydi, buradan çıkalım!",
+            "approved_tr": "Kurtarılacağıma dair umudumu neredeyse yitirmiştim! Haydi, buradan çıkalım!"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/0",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Let's move on.",
+            "luna_tr": "Yola devam edelim.",
+            "approved_tr": "Yola devam edelim."
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/1",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "I'm impressed.",
+            "luna_tr": "Etkilendim.",
+            "approved_tr": "Etkilendim."
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/2",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "How did you get here anyway?",
+            "luna_tr": "Bu arada, buraya nasıl geldin?",
+            "approved_tr": "Bu arada, buraya nasıl geldin?"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/3",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "We're a team worth fearing!",
+            "luna_tr": "Korkulacak bir ekibiz!",
+            "approved_tr": "Korkulacak bir ekibiz!"
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/4",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Who's the sacrifice now?",
+            "luna_tr": "Şimdi kurban kim oldu?",
+            "approved_tr": "Şimdi kurban kim oldu?"
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromWait/default/default/0",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Hello again.",
+            "luna_tr": "Tekrar merhaba.",
+            "approved_tr": "Tekrar merhaba."
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromWait/default/default/1",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Let's head off together.",
+            "luna_tr": "Haydi birlikte yola çıkalım.",
+            "approved_tr": "Haydi birlikte yola çıkalım."
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromWait/default/default/2",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "You ready to move on?",
+            "luna_tr": "Yola devam etmeye hazır mısın?",
+            "approved_tr": "Yola devam etmeye hazır mısın?"
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/0",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "I'll just wait here.",
+            "luna_tr": "Ben burada bekleyeceğim.",
+            "approved_tr": "Ben burada bekleyeceğim."
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/1",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "I'll stay here, don't leave me alone too long!",
+            "luna_tr": "Burada kalacağım; beni fazla uzun süre yalnız bırakma!",
+            "approved_tr": "Burada kalacağım; beni fazla uzun süre yalnız bırakma!"
+          },
+          {
+            "unit_index": 33,
+            "asset": "npcs/ancienttemple/templefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/2",
+            "origin": "npcs/ancienttemple/templefollower.npctype",
+            "en": "Do you need a moment?",
+            "luna_tr": "Biraz zamana mı ihtiyacın var?",
+            "approved_tr": "Biraz zamana mı ihtiyacın var?"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/ancienttemple/templehighpriest.npctype",
+        "type": "templehighpriest",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 14,
+        "entries": [
+          {
+            "unit_index": 34,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "Filthy Grounded scum! Today, you die!",
+            "luna_tr": "Seni pis Grounded artığı! Bugün öleceksin!",
+            "approved_tr": "Seni pis Grounded artığı! Bugün öleceksin!"
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "Rend the unbeliever limb from limb!",
+            "luna_tr": "İnançsızı lime lime edin!",
+            "approved_tr": "İnançsızı lime lime edin!"
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "Your disbelief will be your undoing!",
+            "luna_tr": "İnançsızlığın seni mahvedecek!",
+            "approved_tr": "İnançsızlığın seni mahvedecek!"
+          },
+          {
+            "unit_index": 37,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "I’ll kill you myself, scum!",
+            "luna_tr": "Seni kendi ellerimle öldüreceğim, pislik!",
+            "approved_tr": "Seni kendi ellerimle öldüreceğim, pislik!"
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "Your disregard towards our mighty Kluex is despicable!",
+            "luna_tr": "Yüce Kluex'i hiçe sayman iğrenç!",
+            "approved_tr": "Yüce Kluex'i hiçe sayman iğrenç!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "By Kluex be purged!",
+            "luna_tr": "Kluex seni arındırsın!",
+            "approved_tr": "Kluex seni arındırsın!"
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "I... I must destroy you, heretic! I have no choice!",
+            "luna_tr": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!",
+            "approved_tr": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!"
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "A sacrifice presents itself!",
+            "luna_tr": "Karşıma bir kurban çıktı!",
+            "approved_tr": "Karşıma bir kurban çıktı!"
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "How fortuitous. Usually a sacrifice won't present itself so readily!",
+            "luna_tr": "Ne güzel rastlantı! Normalde bir kurban karşıma bu kadar kolay çıkmaz!",
+            "approved_tr": "Ne güzel rastlantı! Normalde bir kurban karşıma bu kadar kolay çıkmaz!"
+          },
+          {
+            "unit_index": 43,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "You dishonour Kluex!",
+            "luna_tr": "Kluex'e saygısızlık ediyorsun!",
+            "approved_tr": "Kluex'e saygısızlık ediyorsun!"
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "You are unwelcome, stranger!",
+            "luna_tr": "Burada istenmiyorsun, yabancı!",
+            "approved_tr": "Burada istenmiyorsun, yabancı!"
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "Today, Kluex claims another soul!",
+            "luna_tr": "Bugün Kluex bir ruh daha alacak!",
+            "approved_tr": "Bugün Kluex bir ruh daha alacak!"
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "The wrath of Kluex will fall upon you!",
+            "luna_tr": "Kluex'in gazabı üzerine çökecek!",
+            "approved_tr": "Kluex'in gazabı üzerine çökecek!"
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/ancienttemple/templehighpriest.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/ancienttemple/templehighpriest.npctype",
+            "en": "The power of Kluex compels me to slay you!",
+            "luna_tr": "Kluex'in kudreti beni seni katletmeye zorluyor!",
+            "approved_tr": "Kluex'in kudreti beni seni katletmeye zorluyor!"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 48,
+    "layered_fields": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "exact_identifier_reference_files": [
+      "dungeons/missions/ancienttemple/ancienttemple.json",
+      "dungeons/space/flyingpyramid/base1.json",
+      "dungeons/space/flyingpyramid/base2.json",
+      "dungeons/space/flyingpyramid/room3.json",
+      "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+      "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+      "dungeons/worldgen/aviandeeppyramid/pyramid1.json",
+      "dungeons/worldgen/aviandeeppyramid/pyramid2.json",
+      "dungeons/worldgen/aviandeeppyramid/pyramid4.json",
+      "dungeons/worldgen/aviandeeppyramid/pyramid5.json",
+      "npcs/ancienttemple/battlepriest.npctype",
+      "npcs/ancienttemple/firebird.npctype",
+      "npcs/ancienttemple/templefollower.npctype",
+      "npcs/ancienttemple/templehighpriest.npctype"
+    ],
+    "maps": {
+      "dungeons/missions/ancienttemple/ancienttemple.json": {
+        "width": 774,
+        "height": 605,
+        "object_count": 1332,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 13,
+            "height": 8,
+            "id": 926,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "firebird"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 1752,
+            "y": 1128
+          },
+          {
+            "layer": 3,
+            "object_index": 21,
+            "height": 8,
+            "id": 934,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "firebird"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 1768,
+            "y": 1440
+          },
+          {
+            "layer": 3,
+            "object_index": 22,
+            "height": 8,
+            "id": 935,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "firebird"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 1936,
+            "y": 1608
+          },
+          {
+            "layer": 3,
+            "object_index": 23,
+            "height": 8,
+            "id": 936,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2432,
+            "y": 1272
+          },
+          {
+            "layer": 3,
+            "object_index": 36,
+            "height": 8,
+            "id": 949,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "templefollower"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 3328,
+            "y": 1840
+          },
+          {
+            "layer": 3,
+            "object_index": 37,
+            "height": 8,
+            "id": 950,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "templefollower"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 3328,
+            "y": 1928
+          },
+          {
+            "layer": 3,
+            "object_index": 38,
+            "height": 8,
+            "id": 951,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "templefollower"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 3328,
+            "y": 2016
+          },
+          {
+            "layer": 3,
+            "object_index": 39,
+            "height": 8,
+            "id": 1058,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2848,
+            "y": 1928
+          },
+          {
+            "layer": 3,
+            "object_index": 40,
+            "height": 8,
+            "id": 1059,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "firebird"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2816,
+            "y": 1928
+          },
+          {
+            "layer": 3,
+            "object_index": 55,
+            "height": 8,
+            "id": 2155,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "templehighpriest"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 5280,
+            "y": 4480
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/sapling.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/avian.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+            "exists": false
+          }
+        ],
+        "wire_count": 231,
+        "relevant_spawners": [
+          {
+            "object_id": 2309,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "templeguard"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 2310,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "templeguard"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 2311,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                5
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 2312,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                5
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 2313,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "firebird"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 2314,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "firebird"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        ]
+      },
+      "dungeons/space/flyingpyramid/base1.json": {
+        "width": 200,
+        "height": 129,
+        "object_count": 100,
+        "placements": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 14,
+        "relevant_spawners": [
+          {
+            "object_id": 105,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "templeguard"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 106,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "templeguard"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 107,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 108,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 109,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        ]
+      },
+      "dungeons/space/flyingpyramid/base2.json": {
+        "width": 200,
+        "height": 150,
+        "object_count": 107,
+        "placements": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 12,
+        "relevant_spawners": [
+          {
+            "object_id": 117,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 118,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 119,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "templeguard"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "object_id": 120,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "templeguard"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        ]
+      },
+      "dungeons/space/flyingpyramid/room3.json": {
+        "width": 36,
+        "height": 22,
+        "object_count": 22,
+        "placements": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 2,
+        "relevant_spawners": [
+          {
+            "object_id": 35,
+            "spawner": {
+              "npcSpecies": [
+                "avian"
+              ],
+              "npcTypes": [
+                "battlepriest"
+              ],
+              "npcParams": {
+                "aggressive": true,
+                "persistent": true
+              },
+              "spawnchance": 55,
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                0.2,
+                0.2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        ]
+      },
+      "dungeons/worldgen/aviandeeppyramid/anchor1.json": {
+        "width": 534,
+        "height": 298,
+        "object_count": 89,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 7,
+            "height": 8,
+            "id": 296,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2088,
+            "y": 680
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          }
+        ],
+        "wire_count": 11,
+        "relevant_spawners": []
+      },
+      "dungeons/worldgen/aviandeeppyramid/anchor2.json": {
+        "width": 407,
+        "height": 226,
+        "object_count": 83,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 8,
+            "height": 8,
+            "id": 86,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 736,
+            "y": 1104
+          },
+          {
+            "layer": 3,
+            "object_index": 9,
+            "height": 8,
+            "id": 87,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2480,
+            "y": 1104
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          }
+        ],
+        "wire_count": 11,
+        "relevant_spawners": []
+      },
+      "dungeons/worldgen/aviandeeppyramid/pyramid1.json": {
+        "width": 75,
+        "height": 39,
+        "object_count": 37,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 1,
+            "height": 8,
+            "id": 37,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 416,
+            "y": 56
+          },
+          {
+            "layer": 3,
+            "object_index": 2,
+            "height": 8,
+            "id": 38,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 72,
+            "y": 144
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 2,
+        "relevant_spawners": []
+      },
+      "dungeons/worldgen/aviandeeppyramid/pyramid2.json": {
+        "width": 75,
+        "height": 39,
+        "object_count": 13,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 2,
+            "height": 8,
+            "id": 22,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 304,
+            "y": 272
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 0,
+        "relevant_spawners": []
+      },
+      "dungeons/worldgen/aviandeeppyramid/pyramid4.json": {
+        "width": 75,
+        "height": 39,
+        "object_count": 48,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 3,
+            "height": 8,
+            "id": 49,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 112,
+            "y": 88
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 3,
+        "relevant_spawners": []
+      },
+      "dungeons/worldgen/aviandeeppyramid/pyramid5.json": {
+        "width": 75,
+        "height": 39,
+        "object_count": 55,
+        "placements": [
+          {
+            "layer": 3,
+            "object_index": 0,
+            "height": 8,
+            "id": 53,
+            "name": "",
+            "properties": {
+              "npc": "avian",
+              "typeName": "battlepriest"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 368,
+            "y": 200
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 4,
+        "relevant_spawners": []
+      }
+    },
+    "main_placement_counts": {
+      "firebird": 4,
+      "battlepriest": 2,
+      "templefollower": 3,
+      "templehighpriest": 1
+    },
+    "world_definitions": {
+      "instance_worlds.config.patch": {
+        "op": "add",
+        "path": "/ancienttemple",
+        "value": {
+          "type": "FloatingDungeon",
+          "dungeonWorld": "ancienttemple",
+          "spawningEnabled": false,
+          "beamUpRule": "AnywhereWithWarning",
+          "disableDeathDrops": true,
+          "skyParameters": {
+            "spaceLevel": 3000,
+            "ambientLightLevel": [
+              24,
+              28,
+              24
+            ],
+            "satellites": [
+              {
+                "pos": [
+                  0.310561,
+                  0.35497
+                ],
+                "layers": [
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/liquids/water.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/2.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/20.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/5.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/shadows/9.png"
+                  }
+                ]
+              }
+            ],
+            "planet": {
+              "pos": [
+                0.00538729,
+                0.46961
+              ],
+              "layers": [
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_base.png?hueshift=-80"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=-70?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=-77?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/shadows/9.png"
+                }
+              ]
+            },
+            "skyType": "atmospheric",
+            "horizonImages": [],
+            "dayLength": 1153.36,
+            "surfaceLevel": 100,
+            "seed": -5288806180628666923
+          }
+        }
+      },
+      "dungeon_worlds.config.patch": {
+        "op": "add",
+        "path": "/ancienttemple",
+        "value": {
+          "primaryDungeon": "ancienttemple",
+          "threatLevel": 2,
+          "gravity": 80,
+          "worldSize": [
+            1500,
+            1500
+          ],
+          "dungeonBaseHeight": 1000,
+          "ambientLightLevel": [
+            200,
+            200,
+            200
+          ],
+          "musicTrack": "/music/desert-exploration2.ogg",
+          "biome": "desert",
+          "environmentStatusEffects": [
+            "dontstarve"
+          ]
+        }
+      }
+    },
+    "radio_definition_count": 14,
+    "main_radio_ids": [
+      "ancienttemple01",
+      "ancienttemple01fu",
+      "ancienttemple02",
+      "ancienttemple02fu",
+      "ancienttemple03",
+      "ancienttemple03fu",
+      "ancienttemple04",
+      "ancienttemple04fu",
+      "ancienttemple05",
+      "ancienttemple05fu",
+      "ancienttemple06",
+      "ancienttemple06fu",
+      "ancienttemple07fu",
+      "ancienttemple08fu"
+    ],
+    "worldgen_raw_placement_records": 8,
+    "worldgen_anchor2_maps_to": "anchor1.json",
+    "worldgen_anchor2_file_registered": false,
+    "related_review_rows": 0,
+    "source_corrections_to_delivery": [
+      "The6worldgen map files contain8battlepriest records, but anchor2 dungeon part resolves anchor1.json, not anchor2.json. Raw source-file records are not8verified active placements; the unreferenced anchor2.json contributes2of8raw records.",
+      "Current packet related_review_rows is empty,not2. No review/lua_review candidate was promoted; delivery statement about2unverified candidates is not supported by this actual packet."
+    ],
+    "terminology_review": {
+      "Grounded": "Named Avian social/religious community in clipped-council lore and existing narrow preserve term. Generic electrical grounded remains separate.",
+      "Kluex": "Avian religious figure. Lore speakers disagree; no account is asserted as objective truth or added to dialogue.",
+      "firebird": "Technical NPCtype with Avian tier5 armor/flamethrower; no biological bird identity or new proper name introduced."
+    }
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All48EN/TR variants and occurrences reviewed;4full NPC definitions,equipment,quest/AI/world/mission/worldgen/space sources and14radio counterparts inspected. All20318prior catalog fields unchanged.",
+    "15follower fields preserve five nested events (2attack/2join/5returnFromCombat/3wait/3returnFromWait).31attack/1reattack/1killedTarget remain distinct. Firebird is technical type with Avian gear/flamethrower,not a new biological identity.",
+    "Main map:10exact Avian typeName records (4firebird/2battlepriest/3templefollower/1templehighpriest).6wire spawners configure2each templeguard/battlepriest/firebird,stock2.14radio IDs separate from NPC counts. Static data does not establish live calls or activation.",
+    "Six worldgen files contain8raw battlepriest records,but anchor2 part maps anchor1.json. anchor2.json with2records is not registered there;8raw records do not mean8active placements. Flyingpyramid actual npcTypes battlepriest differs from some firebird labels; reward map NPC layer empty.",
+    "Main1332object records/231wire polylines/22missing external tilesets. Raw map parameters/wires stay local-only; public source context retains relevant static placements/spawners/counts. Route,trap and live spawn functionality not tested.",
+    "Full vanilla base/follower and active hostileguard/follower behavior implementations absent. Dialog helper resolves speaker species then target species/default; player companion functions do not establish these exact reply event consumers. Live LQA NOT TESTED.",
+    "Ashes formula,retaliatory sacrifice question and escape-or-die alternative corrected in3fields/3short expressions. All45other fields including forced/hesitant Kluex lines,Grounded community and10existing exact reply locks already valid.",
+    "24new full-reply LOCKED,total1063;all prior1039active locks and existing policy records unchanged. No preserve binding,TM or format exception added. Grounded ordinary electrical meaning and unrelated English sentences are not granted preserve permission.",
+    "Actual related_review_rows=0,not2stated in delivery. No review/lua_review row promoted. No technical field,actor identity,mechanic or lore doctrine changed. No online Steam upload,game install or shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}
