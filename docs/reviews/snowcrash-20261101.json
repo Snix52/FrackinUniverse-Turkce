@@ -1,0 +1,2266 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-01",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 9,
+  "run_id": "fu-six-20261101",
+  "run_round": 3,
+  "base_commit": "6b77ca6693a4380d7e8c41b8751828aacc0ca454",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 53,
+    "context_groups": 53,
+    "unique_english_strings": 21,
+    "assets": {
+      "npcs/snowcrash/snowcrashcomissar.npctype": 1,
+      "npcs/snowcrash/snowcrashguard.npctype": 10,
+      "npcs/snowcrash/snowcrashhostage.npctype": 2,
+      "npcs/snowcrash/snowcrashofficer.npctype": 10,
+      "npcs/snowcrash/snowcrashrebel.npctype": 10,
+      "npcs/snowcrash/snowcrashrocketeer.npctype": 10,
+      "npcs/snowcrash/snowcrashsniper.npctype": 10
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 53,
+    "dialogue_events": {
+      "attack": 41,
+      "converse": 12
+    },
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 16,
+    "sentences_including_repeated_fields": 18,
+    "unique_source_strings_corrected": 9,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 16,
+    "total_corrected_sentences": 18,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged sentences excluded. Repeated occurrence fields counted separately."
+  },
+  "new_locked_terms": 23,
+  "new_locked_names": [
+    "Winter-Chan",
+    "dacha",
+    "You dare break into my home? You will die!",
+    "You die today!",
+    "Your struggle is futile.",
+    "You sure have a lot of gall coming here!",
+    "There's a thought reassignment room waiting for you!",
+    "I love you Winter-Chan!",
+    "You made a big mistake coming here!",
+    "You are not allowed here!",
+    "You made a big mistake!",
+    "Halt! You are trespassing on private property!",
+    "If you've cleared the dacha, I should be able to handle myself. Don't worry about me and head down to the basement.",
+    "You shouldn't be seeing this.",
+    "Watch out for explosive barrels under switches. You can blow those up to destroy and deactivate the switch.",
+    "I hear there's an entrance to the sewers in the caves.",
+    "It's chilly out there. Wrap up well.",
+    "I hope you succeed - mostly because if you don't, we'll have to go out ourselves.",
+    "Hostage situations are the worst.",
+    "Whatever route you take into the dacha, good luck!",
+    "The Miniknog often takes hostages to insure good behaviour, but this is something else altogether.",
+    "Don't forget to load up before you go. We don't have much, but we'll sell you what we can.",
+    "This is as close as we dare to get to the commissar's dacha."
+  ],
+  "locked_total": 995,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "9242250ee6f5902c0c027fb8ce0b9b16bca4dda31349eb2dbcbbef5d3c1d3293",
+  "luna_original_packet_sha256": "285a2301c13ae985489ab2ba966747f12a8aa9d637fa0574ec475b5d5e9fed89",
+  "approved_rows_sha256": "36c0ecf88aac4e8065b00796d5e4d920becfa2a6a3b96c14803a272f9078be10",
+  "corrections": [
+    {
+      "unit_index": 0,
+      "en": "You dare break into my home? You will die!",
+      "before": "Evime girmeye nasıl cüret edersin? Öleceksin!",
+      "after": "Evime izinsiz girmeye nasıl cüret edersin? Öleceksin!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashcomissar.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/0",
+          "origin": "npcs/snowcrash/snowcrashcomissar.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Break into ifadesinin izinsiz giriş anlamı korundu; zor kullanma veya yeni bir giriş mekaniği eklenmedi. Değişmeyen ölüm tehdidi sayılmadı."
+    },
+    {
+      "unit_index": 3,
+      "en": "You sure have a lot of gall coming here!",
+      "before": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+      "after": "Buraya gelmekle büyük küstahlık ettin!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/apex/default/2",
+          "origin": "npcs/snowcrash/snowcrashguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Ayrı küstahlık sözcük dizimi yerine doğrudan doğal Türkçe hitap kullanıldı; gall küstahlık ve çokluk vurgusuyla korundu."
+    },
+    {
+      "unit_index": 4,
+      "en": "There's a thought reassignment room waiting for you!",
+      "before": "Seni düşünce yeniden düzenleme odası bekliyor!",
+      "after": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/apex/default/3",
+          "origin": "npcs/snowcrash/snowcrashguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Düşünce yeniden düzenleme tamlaması doğal bir yan cümleye açıldı. Miniknog araştırma raporundaki aynı deyim zorlayıcı düşünce düzenleme bağlamını doğrular; yeni işkence yöntemi, oda mekaniği veya özel ad eklenmedi."
+    },
+    {
+      "unit_index": 11,
+      "en": "If you've cleared the dacha, I should be able to handle myself. Don't worry about me and head down to the basement.",
+      "before": "Daçayı düşmanlardan temizlediysen kendi başımın çaresine bakabilirim. Benim için endişelenme, bodruma in.",
+      "after": "Daçayı temizlediysen kendi başımın çaresine bakabilirim sanırım. Benim için endişelenme, bodruma in.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashhostage.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+          "origin": "npcs/snowcrash/snowcrashhostage.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Koşul ve should be able belirsizliği korundu; kesinlik azaltıldı ve EN içinde bulunmayan düşmanlardan açıklaması çıkarıldı. Değişmeyen bodrum yönergesi ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 12,
+      "en": "You shouldn't be seeing this.",
+      "before": "Bunu görmemen gerekiyordu.",
+      "after": "Bunu görüyor olmamalısın.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashhostage.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/0",
+          "origin": "npcs/snowcrash/snowcrashhostage.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Şu anda görünmemesi gereken fallback satırı geçmişteki yükümlülük yerine sürmekte olan durum olarak çevrildi; dal veya görünürlük onayı uydurulmadı."
+    },
+    {
+      "unit_index": 15,
+      "en": "You sure have a lot of gall coming here!",
+      "before": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+      "after": "Buraya gelmekle büyük küstahlık ettin!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+          "pointer": "/scriptConfig/dialog/attack/apex/default/2",
+          "origin": "npcs/snowcrash/snowcrashofficer.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Ayrı küstahlık sözcük dizimi yerine doğrudan doğal Türkçe hitap kullanıldı; gall küstahlık ve çokluk vurgusuyla korundu."
+    },
+    {
+      "unit_index": 16,
+      "en": "There's a thought reassignment room waiting for you!",
+      "before": "Seni düşünce yeniden düzenleme odası bekliyor!",
+      "after": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+          "pointer": "/scriptConfig/dialog/attack/apex/default/3",
+          "origin": "npcs/snowcrash/snowcrashofficer.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Düşünce yeniden düzenleme tamlaması doğal bir yan cümleye açıldı. Miniknog araştırma raporundaki aynı deyim zorlayıcı düşünce düzenleme bağlamını doğrular; yeni işkence yöntemi, oda mekaniği veya özel ad eklenmedi."
+    },
+    {
+      "unit_index": 23,
+      "en": "Watch out for explosive barrels under switches. You can blow those up to destroy and deactivate the switch.",
+      "before": "Anahtarların altındaki patlayıcı varillere dikkat et. Varilleri patlatarak anahtarı yok edip devre dışı bırakabilirsin.",
+      "after": "Şalterlerin altındaki patlayıcı varillere dikkat et. Varilleri patlatarak şalteri yok edip devre dışı bırakabilirsin.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+          "origin": "npcs/snowcrash/snowcrashrebel.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Elektrikli kontrol anlamındaki switch,mevcut aynı Snow Crash telsizinin Kapı şalteri karşılığıyla eşlendi. Anahtar bir anahtar eşyası olarak anlaşılabilir. İki cümlede terim değişti; patlatma/yok etme/devre dışı bırakma eylemleri aynen korundu. Bunun telsizdekiyle aynı harita nesnesi veya doğrulanmış fizik/wiring davranışı olduğu ileri sürülmedi."
+    },
+    {
+      "unit_index": 24,
+      "en": "I hear there's an entrance to the sewers in the caves.",
+      "before": "Mağaralarda kanalizasyona inen bir giriş olduğunu duydum.",
+      "after": "Mağaralarda kanalizasyona açılan bir giriş olduğunu duydum.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+          "origin": "npcs/snowcrash/snowcrashrebel.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynakta yön belirtilmediği için inen sözcüğü yerine açılan kullanıldı; mağara/kanalizasyon bağlantısı korundu, kesin rota eklenmedi."
+    },
+    {
+      "unit_index": 26,
+      "en": "I hope you succeed - mostly because if you don't, we'll have to go out ourselves.",
+      "before": "Umarım başarırsın; asıl sebebi, başaramazsan gidip işi kendimiz yapmak zorunda kalacak olmamız.",
+      "after": "Umarım başarırsın; en çok da başaramazsan dışarı çıkma işi bize kalacağı için.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+          "origin": "npcs/snowcrash/snowcrashrebel.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Asinin kendi dışarı çıkma zorunluluğunu düşünmesi ve mostly/if koşulu korundu. Kaynakta olmayan işi kendimiz yapmak eklemesi çıkarıldı; öz çıkar şakası doğal Türkçeye alındı."
+    },
+    {
+      "unit_index": 30,
+      "en": "Don't forget to load up before you go. We don't have much, but we'll sell you what we can.",
+      "before": "Yola çıkmadan önce hazırlıklarını yapmayı unutma. Fazla bir şeyimiz yok ama elimizdekileri sana satarız.",
+      "after": "Yola çıkmadan önce malzemelerini tamamlamayı unutma. Fazla bir şeyimiz yok ama satabileceğimiz ne varsa sana satarız.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/7",
+          "origin": "npcs/snowcrash/snowcrashrebel.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Load up genel hazırlıktan somut malzeme tamamlama anlamına alındı. What we can satılabilir olanlarla sınırlandı; bütün stok satılır iddiası veya kaynakta olmayan cephane/erzak türleri eklenmedi. İki cümle değişti."
+    },
+    {
+      "unit_index": 32,
+      "en": "You shouldn't be seeing this.",
+      "before": "Bunu görmemen gerekiyordu.",
+      "after": "Bunu görüyor olmamalısın.",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/0",
+          "origin": "npcs/snowcrash/snowcrashrebel.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Şu anda görünmemesi gereken fallback satırı geçmişteki yükümlülük yerine sürmekte olan durum olarak çevrildi; dal veya görünürlük onayı uydurulmadı."
+    },
+    {
+      "unit_index": 35,
+      "en": "You sure have a lot of gall coming here!",
+      "before": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+      "after": "Buraya gelmekle büyük küstahlık ettin!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+          "origin": "npcs/snowcrash/snowcrashrocketeer.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Ayrı küstahlık sözcük dizimi yerine doğrudan doğal Türkçe hitap kullanıldı; gall küstahlık ve çokluk vurgusuyla korundu."
+    },
+    {
+      "unit_index": 36,
+      "en": "There's a thought reassignment room waiting for you!",
+      "before": "Seni düşünce yeniden düzenleme odası bekliyor!",
+      "after": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+          "origin": "npcs/snowcrash/snowcrashrocketeer.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Düşünce yeniden düzenleme tamlaması doğal bir yan cümleye açıldı. Miniknog araştırma raporundaki aynı deyim zorlayıcı düşünce düzenleme bağlamını doğrular; yeni işkence yöntemi, oda mekaniği veya özel ad eklenmedi."
+    },
+    {
+      "unit_index": 45,
+      "en": "You sure have a lot of gall coming here!",
+      "before": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+      "after": "Buraya gelmekle büyük küstahlık ettin!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+          "pointer": "/scriptConfig/dialog/attack/apex/default/2",
+          "origin": "npcs/snowcrash/snowcrashsniper.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Ayrı küstahlık sözcük dizimi yerine doğrudan doğal Türkçe hitap kullanıldı; gall küstahlık ve çokluk vurgusuyla korundu."
+    },
+    {
+      "unit_index": 46,
+      "en": "There's a thought reassignment room waiting for you!",
+      "before": "Seni düşünce yeniden düzenleme odası bekliyor!",
+      "after": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!",
+      "occurrences": [
+        {
+          "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+          "pointer": "/scriptConfig/dialog/attack/apex/default/3",
+          "origin": "npcs/snowcrash/snowcrashsniper.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Düşünce yeniden düzenleme tamlaması doğal bir yan cümleye açıldı. Miniknog araştırma raporundaki aynı deyim zorlayıcı düşünce düzenleme bağlamını doğrular; yeni işkence yöntemi, oda mekaniği veya özel ad eklenmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "285a2301c13ae985489ab2ba966747f12a8aa9d637fa0574ec475b5d5e9fed89",
+    "filled_units": 53
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 53,
+    "context_units": 53,
+    "qa": {
+      "catalog_units_checked": 35121,
+      "raw_units_checked": 115,
+      "locked_terms": 995
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashcomissar.npctype",
+        "note": "Sol read all 1 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashguard.npctype",
+        "note": "Sol read all 10 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashhostage.npctype",
+        "note": "Sol read all 2 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashofficer.npctype",
+        "note": "Sol read all 10 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashrebel.npctype",
+        "note": "Sol read all 10 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashrocketeer.npctype",
+        "note": "Sol read all 10 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/snowcrash/snowcrashsniper.npctype",
+        "note": "Sol read all 10 direct EN/TR occurrences and complete type/base/identity/equipment/event branches. No technical fields changed."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/npcs/base.npctype.patch; fu_source/behaviors/npc/hostiletracking.behavior.patch; fu_source/scripts/actions/dialog.lua",
+        "note": "Five attackers inherit hostilefu→base/hostileguard; two friendlies use base/spectator. Full vanilla base,hostileguard and spectator behavior implementations are absent. Base patch includes chat/status/race-effect additions as well as combat timings. Species selection helper is not an exact active event caller."
+      },
+      {
+        "source": "fu_source/ai/snowcrash.aimission; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/dungeons/missions/snowcrash/snowcrash.dungeon; fu_source/dungeons/missions/snowcrash/snowcrash.json",
+        "note": "Mission/world/dungeon/map configuration chain verified. All800Tiled object records decoded;41SnowCrash NPC placements,allapex,one generic merchant and two labscientists and seven radio stagehands with nine IDs recorded. Rocketeer avian branch differs from map species and is retained. Static map data is not live reachability/activation proof."
+      },
+      {
+        "source": "fu_source/quests/snowcrash.questtemplate; fu_source/radiomessages/missions.radiomessages.patch; local-repo/tools/ceviriler.json",
+        "note": "Read complete hostage quest and all related radio source/catalog counterparts. Hostage turnInQuests matches snowcrash.gearup; completion text states basement escape teleporter. Source barrel/switch and cave/sewer instructions retained without inventing trigger or route proof. Vanilla tilesets absent; exact wiring/destruction,inventory and teleporter geometry remain unresolved."
+      },
+      {
+        "source": "fu_source/codex/dungeons/apexunderwaterlabs2.codex",
+        "note": "Read full Miniknog research report using thought reassignment with intimidation experiments. Threat euphemism translated naturally without introducing a new punishment,mechanic or named room. Winter-Chan preserved as an authored proper-name call; recipient identity not invented."
+      }
+    ],
+    "note": "All53 EN/TR variants and exact occurrences reviewed by Sol. All seven NPC definitions,mission/quest/world/dungeon/map configuration and related lore read. Existing Miniknog/Daça/Winter-Chan and barrel instruction approved where correct. Event consumers and live LQA remain NOT TESTED."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/snowcrash/snowcrashcomissar.npctype",
+        "type": "snowcrashcomissar",
+        "base_type": "hostilefu",
+        "identity": {
+          "name": "Commissar M. Vonel",
+          "gender": "male",
+          "race": "apex"
+        },
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 1,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/snowcrash/snowcrashcomissar.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashcomissar.npctype",
+            "en": "You dare break into my home? You will die!",
+            "luna_tr": "Evime girmeye nasıl cüret edersin? Öleceksin!",
+            "approved_tr": "Evime izinsiz girmeye nasıl cüret edersin? Öleceksin!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/snowcrash/snowcrashguard.npctype",
+        "type": "snowcrashguard",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 1,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/0",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "You die today!",
+            "luna_tr": "Bugün öleceksin!",
+            "approved_tr": "Bugün öleceksin!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/1",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "Your struggle is futile.",
+            "luna_tr": "Direnişin boşuna.",
+            "approved_tr": "Direnişin boşuna."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/2",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "You sure have a lot of gall coming here!",
+            "luna_tr": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+            "approved_tr": "Buraya gelmekle büyük küstahlık ettin!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/3",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "There's a thought reassignment room waiting for you!",
+            "luna_tr": "Seni düşünce yeniden düzenleme odası bekliyor!",
+            "approved_tr": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/4",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/5",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "You made a big mistake coming here!",
+            "luna_tr": "Buraya gelmekle büyük hata ettin!",
+            "approved_tr": "Buraya gelmekle büyük hata ettin!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "You are not allowed here!",
+            "luna_tr": "Buraya girmen yasak!",
+            "approved_tr": "Buraya girmen yasak!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "You made a big mistake!",
+            "luna_tr": "Büyük hata yaptın!",
+            "approved_tr": "Büyük hata yaptın!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/snowcrash/snowcrashguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/snowcrash/snowcrashguard.npctype",
+            "en": "Halt! You are trespassing on private property!",
+            "luna_tr": "Dur! Özel mülke izinsiz giriyorsun!",
+            "approved_tr": "Dur! Özel mülke izinsiz giriyorsun!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/snowcrash/snowcrashhostage.npctype",
+        "type": "snowcrashhostage",
+        "base_type": "base",
+        "identity": null,
+        "damage_team_type": "friendly",
+        "behavior": "spectator",
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 11,
+            "asset": "npcs/snowcrash/snowcrashhostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/snowcrash/snowcrashhostage.npctype",
+            "en": "If you've cleared the dacha, I should be able to handle myself. Don't worry about me and head down to the basement.",
+            "luna_tr": "Daçayı düşmanlardan temizlediysen kendi başımın çaresine bakabilirim. Benim için endişelenme, bodruma in.",
+            "approved_tr": "Daçayı temizlediysen kendi başımın çaresine bakabilirim sanırım. Benim için endişelenme, bodruma in."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/snowcrash/snowcrashhostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashhostage.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görmemen gerekiyordu.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+        "type": "snowcrashofficer",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 13,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/0",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "You die today!",
+            "luna_tr": "Bugün öleceksin!",
+            "approved_tr": "Bugün öleceksin!"
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/1",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "Your struggle is futile.",
+            "luna_tr": "Direnişin boşuna.",
+            "approved_tr": "Direnişin boşuna."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/2",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "You sure have a lot of gall coming here!",
+            "luna_tr": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+            "approved_tr": "Buraya gelmekle büyük küstahlık ettin!"
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/3",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "There's a thought reassignment room waiting for you!",
+            "luna_tr": "Seni düşünce yeniden düzenleme odası bekliyor!",
+            "approved_tr": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/4",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/5",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "You made a big mistake coming here!",
+            "luna_tr": "Buraya gelmekle büyük hata ettin!",
+            "approved_tr": "Buraya gelmekle büyük hata ettin!"
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "You are not allowed here!",
+            "luna_tr": "Buraya girmen yasak!",
+            "approved_tr": "Buraya girmen yasak!"
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "You made a big mistake!",
+            "luna_tr": "Büyük hata yaptın!",
+            "approved_tr": "Büyük hata yaptın!"
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/snowcrash/snowcrashofficer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/snowcrash/snowcrashofficer.npctype",
+            "en": "Halt! You are trespassing on private property!",
+            "luna_tr": "Dur! Özel mülke izinsiz giriyorsun!",
+            "approved_tr": "Dur! Özel mülke izinsiz giriyorsun!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+        "type": "snowcrashrebel",
+        "base_type": "base",
+        "identity": null,
+        "damage_team_type": "friendly",
+        "behavior": "spectator",
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 23,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "Watch out for explosive barrels under switches. You can blow those up to destroy and deactivate the switch.",
+            "luna_tr": "Anahtarların altındaki patlayıcı varillere dikkat et. Varilleri patlatarak anahtarı yok edip devre dışı bırakabilirsin.",
+            "approved_tr": "Şalterlerin altındaki patlayıcı varillere dikkat et. Varilleri patlatarak şalteri yok edip devre dışı bırakabilirsin."
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "I hear there's an entrance to the sewers in the caves.",
+            "luna_tr": "Mağaralarda kanalizasyona inen bir giriş olduğunu duydum.",
+            "approved_tr": "Mağaralarda kanalizasyona açılan bir giriş olduğunu duydum."
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/2",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "It's chilly out there. Wrap up well.",
+            "luna_tr": "Dışarısı soğuk. Sıkı giyin.",
+            "approved_tr": "Dışarısı soğuk. Sıkı giyin."
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "I hope you succeed - mostly because if you don't, we'll have to go out ourselves.",
+            "luna_tr": "Umarım başarırsın; asıl sebebi, başaramazsan gidip işi kendimiz yapmak zorunda kalacak olmamız.",
+            "approved_tr": "Umarım başarırsın; en çok da başaramazsan dışarı çıkma işi bize kalacağı için."
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/4",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "Hostage situations are the worst.",
+            "luna_tr": "Rehine krizleri kadar berbatı yok.",
+            "approved_tr": "Rehine krizleri kadar berbatı yok."
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/5",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "Whatever route you take into the dacha, good luck!",
+            "luna_tr": "Daçaya hangi yoldan girersen gir, bol şans!",
+            "approved_tr": "Daçaya hangi yoldan girersen gir, bol şans!"
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/6",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "The Miniknog often takes hostages to insure good behaviour, but this is something else altogether.",
+            "luna_tr": "Miniknog, uslu durmalarını sağlamak için sık sık insanları rehin alır; ama bu olay bambaşka.",
+            "approved_tr": "Miniknog, uslu durmalarını sağlamak için sık sık insanları rehin alır; ama bu olay bambaşka."
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/7",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "Don't forget to load up before you go. We don't have much, but we'll sell you what we can.",
+            "luna_tr": "Yola çıkmadan önce hazırlıklarını yapmayı unutma. Fazla bir şeyimiz yok ama elimizdekileri sana satarız.",
+            "approved_tr": "Yola çıkmadan önce malzemelerini tamamlamayı unutma. Fazla bir şeyimiz yok ama satabileceğimiz ne varsa sana satarız."
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/8",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "This is as close as we dare to get to the commissar's dacha.",
+            "luna_tr": "Komiserin daçasına cesaret edip yaklaşabildiğimiz en yakın yer burası.",
+            "approved_tr": "Komiserin daçasına cesaret edip yaklaşabildiğimiz en yakın yer burası."
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/snowcrash/snowcrashrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashrebel.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görmemen gerekiyordu.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+        "type": "snowcrashrocketeer",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 33,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "You die today!",
+            "luna_tr": "Bugün öleceksin!",
+            "approved_tr": "Bugün öleceksin!"
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "Your struggle is futile.",
+            "luna_tr": "Direnişin boşuna.",
+            "approved_tr": "Direnişin boşuna."
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "You sure have a lot of gall coming here!",
+            "luna_tr": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+            "approved_tr": "Buraya gelmekle büyük küstahlık ettin!"
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "There's a thought reassignment room waiting for you!",
+            "luna_tr": "Seni düşünce yeniden düzenleme odası bekliyor!",
+            "approved_tr": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!"
+          },
+          {
+            "unit_index": 37,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "You made a big mistake coming here!",
+            "luna_tr": "Buraya gelmekle büyük hata ettin!",
+            "approved_tr": "Buraya gelmekle büyük hata ettin!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "You are not allowed here!",
+            "luna_tr": "Buraya girmen yasak!",
+            "approved_tr": "Buraya girmen yasak!"
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "You made a big mistake!",
+            "luna_tr": "Büyük hata yaptın!",
+            "approved_tr": "Büyük hata yaptın!"
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/snowcrash/snowcrashrocketeer.npctype",
+            "en": "Halt! You are trespassing on private property!",
+            "luna_tr": "Dur! Özel mülke izinsiz giriyorsun!",
+            "approved_tr": "Dur! Özel mülke izinsiz giriyorsun!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+        "type": "snowcrashsniper",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 43,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/0",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "You die today!",
+            "luna_tr": "Bugün öleceksin!",
+            "approved_tr": "Bugün öleceksin!"
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/1",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "Your struggle is futile.",
+            "luna_tr": "Direnişin boşuna.",
+            "approved_tr": "Direnişin boşuna."
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/2",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "You sure have a lot of gall coming here!",
+            "luna_tr": "Buraya gelmeye cüret etmen de ayrı küstahlık!",
+            "approved_tr": "Buraya gelmekle büyük küstahlık ettin!"
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/3",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "There's a thought reassignment room waiting for you!",
+            "luna_tr": "Seni düşünce yeniden düzenleme odası bekliyor!",
+            "approved_tr": "Seni düşüncelerini yeniden düzenleyecekleri bir oda bekliyor!"
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/4",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 48,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/apex/default/5",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "You made a big mistake coming here!",
+            "luna_tr": "Buraya gelmekle büyük hata ettin!",
+            "approved_tr": "Buraya gelmekle büyük hata ettin!"
+          },
+          {
+            "unit_index": 49,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "You are not allowed here!",
+            "luna_tr": "Buraya girmen yasak!",
+            "approved_tr": "Buraya girmen yasak!"
+          },
+          {
+            "unit_index": 50,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "I love you Winter-Chan!",
+            "luna_tr": "Winter-Chan, seni seviyorum!",
+            "approved_tr": "Winter-Chan, seni seviyorum!"
+          },
+          {
+            "unit_index": 51,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "You made a big mistake!",
+            "luna_tr": "Büyük hata yaptın!",
+            "approved_tr": "Büyük hata yaptın!"
+          },
+          {
+            "unit_index": 52,
+            "asset": "npcs/snowcrash/snowcrashsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/snowcrash/snowcrashsniper.npctype",
+            "en": "Halt! You are trespassing on private property!",
+            "luna_tr": "Dur! Özel mülke izinsiz giriyorsun!",
+            "approved_tr": "Dur! Özel mülke izinsiz giriyorsun!"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 53,
+    "layered_fields": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "exact_identifier_reference_files": [
+      "dungeons/missions/snowcrash/snowcrash.json",
+      "npcs/snowcrash/snowcrashcomissar.npctype",
+      "npcs/snowcrash/snowcrashguard.npctype",
+      "npcs/snowcrash/snowcrashhostage.npctype",
+      "npcs/snowcrash/snowcrashofficer.npctype",
+      "npcs/snowcrash/snowcrashrebel.npctype",
+      "npcs/snowcrash/snowcrashrocketeer.npctype",
+      "npcs/snowcrash/snowcrashsniper.npctype"
+    ],
+    "static_placements": [
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 801,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5776,
+        "y": 1192
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 802,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5784,
+        "y": 1192
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 804,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashsniper"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5872,
+        "y": 1240
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 869,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 6280,
+        "y": 560
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 870,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 6352,
+        "y": 560
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 943,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5016,
+        "y": 1304
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 944,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4872,
+        "y": 1304
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 945,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4864,
+        "y": 1256
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 946,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "parameters": "{ \"treasurePools\" : [ \"empty\" ] }",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "parameters": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5584,
+        "y": 1256
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 947,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5832,
+        "y": 1304
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 948,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5792,
+        "y": 1304
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 949,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5296,
+        "y": 1304
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 950,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashsniper"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5416,
+        "y": 1160
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 951,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashsniper"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5016,
+        "y": 1256
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 952,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4672,
+        "y": 1152
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 953,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4584,
+        "y": 1152
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1145,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashsniper"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5232,
+        "y": 512
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1146,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashsniper"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 5320,
+        "y": 512
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1158,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashofficer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 3800,
+        "y": 1056
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1162,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4104,
+        "y": 480
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1163,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrocketeer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4048,
+        "y": 608
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1164,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrocketeer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 3800,
+        "y": 960
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1165,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 3960,
+        "y": 1056
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1207,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4264,
+        "y": 608
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1208,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4344,
+        "y": 608
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1209,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4736,
+        "y": 512
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1210,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4840,
+        "y": 528
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1312,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "seed": "123",
+          "typeName": "snowcrashcomissar"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "seed": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 1856,
+        "y": 816
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1422,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrebel"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 9680,
+        "y": 1160
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1423,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrebel"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 9624,
+        "y": 1248
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1424,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrebel"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 9456,
+        "y": 1288
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1428,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 2984,
+        "y": 760
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1429,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashguard"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 3032,
+        "y": 760
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1431,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "seed": "123",
+          "typeName": "snowcrashhostage"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "seed": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 1256,
+        "y": 816
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1432,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashofficer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 2104,
+        "y": 1032
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1434,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashofficer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 2600,
+        "y": 760
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1435,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashofficer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 1992,
+        "y": 816
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1436,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrocketeer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 2392,
+        "y": 1032
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1437,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrocketeer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 1896,
+        "y": 1008
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1438,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashrocketeer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 1536,
+        "y": 912
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1439,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "snowcrashofficer"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 1544,
+        "y": 1008
+      }
+    ],
+    "placement_counts": {
+      "snowcrashguard": 21,
+      "snowcrashsniper": 5,
+      "snowcrashofficer": 5,
+      "snowcrashrocketeer": 5,
+      "snowcrashcomissar": 1,
+      "snowcrashrebel": 3,
+      "snowcrashhostage": 1
+    },
+    "merchant_placements": [
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 1425,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "merchant"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 9664,
+        "y": 1248
+      }
+    ],
+    "radio_stagehands": [
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 80,
+          "id": 1459,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessage\" : \"snowcrash01\" }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 56,
+          "x": 8256,
+          "y": 1192
+        },
+        "decoded_parameters": {
+          "radioMessage": "snowcrash01"
+        }
+      },
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 64,
+          "id": 1460,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessage\" : \"snowcrash02\" }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 40,
+          "x": 7632,
+          "y": 2080
+        },
+        "decoded_parameters": {
+          "radioMessage": "snowcrash02"
+        }
+      },
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 72,
+          "id": 1461,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessage\" : \"snowcrash04\" }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 48,
+          "x": 6432,
+          "y": 2592
+        },
+        "decoded_parameters": {
+          "radioMessage": "snowcrash04"
+        }
+      },
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 80,
+          "id": 1462,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessage\" : \"snowcrash03\" }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 56,
+          "x": 4776,
+          "y": 1248
+        },
+        "decoded_parameters": {
+          "radioMessage": "snowcrash03"
+        }
+      },
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 80,
+          "id": 1463,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessage\" : \"snowcrash05\" }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 56,
+          "x": 3000,
+          "y": 704
+        },
+        "decoded_parameters": {
+          "radioMessage": "snowcrash05"
+        }
+      },
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 80,
+          "id": 1464,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessages\" : [\"snowcrash06\", \"snowcrash06a\"] }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 56,
+          "x": 2552,
+          "y": 976
+        },
+        "decoded_parameters": {
+          "radioMessages": [
+            "snowcrash06",
+            "snowcrash06a"
+          ]
+        }
+      },
+      {
+        "object": {
+          "layer": "/layers/4",
+          "height": 112,
+          "id": 1465,
+          "name": "",
+          "properties": {
+            "parameters": "{ \"radioMessages\" : [\"snowcrash07\", \"snowcrash07a\"] }",
+            "stagehand": "radiomessage"
+          },
+          "propertytypes": {
+            "parameters": "string",
+            "stagehand": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 56,
+          "x": 9792,
+          "y": 1200
+        },
+        "decoded_parameters": {
+          "radioMessages": [
+            "snowcrash07",
+            "snowcrash07a"
+          ]
+        }
+      }
+    ],
+    "map": {
+      "width": 1300,
+      "height": 345,
+      "tile_size": 8,
+      "object_records": 800,
+      "wire_records": 92,
+      "tilesets": [
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/human.json",
+          "exists": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+          "exists": false
+        },
+        {
+          "source": "../../../tilesets/frackinuniverse-custom/fu_woodtiles.json",
+          "exists": true
+        },
+        {
+          "source": "../../../tilesets/fu_mastermaterials.json",
+          "exists": true
+        }
+      ]
+    },
+    "world_definitions": {
+      "instance_worlds.config.patch": {
+        "type": "FloatingDungeon",
+        "dungeonWorld": "snowcrash",
+        "spawningEnabled": false,
+        "beamUpRule": "AnywhereWithWarning",
+        "disableDeathDrops": true,
+        "skyParameters": {
+          "spaceLevel": 3000,
+          "ambientLightLevel": [
+            24,
+            28,
+            24
+          ],
+          "satellites": [
+            {
+              "pos": [
+                0.310561,
+                0.35497
+              ],
+              "layers": [
+                {
+                  "scale": 0.055,
+                  "image": "/celestial/system/terrestrial/liquids/water.png"
+                },
+                {
+                  "scale": 0.055,
+                  "image": "/celestial/system/terrestrial/biomes/forest/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/2.png"
+                },
+                {
+                  "scale": 0.055,
+                  "image": "/celestial/system/terrestrial/biomes/forest/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/20.png"
+                },
+                {
+                  "scale": 0.055,
+                  "image": "/celestial/system/terrestrial/biomes/forest/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/5.png"
+                },
+                {
+                  "scale": 0.055,
+                  "image": "/celestial/system/terrestrial/shadows/9.png"
+                }
+              ]
+            }
+          ],
+          "planet": {
+            "pos": [
+              0.00538729,
+              0.46961
+            ],
+            "layers": [
+              {
+                "scale": 0.15,
+                "image": "/celestial/system/gas_giant/gas_giant_base.png?hueshift=-80"
+              },
+              {
+                "scale": 0.15,
+                "image": "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=-70?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+              },
+              {
+                "scale": 0.15,
+                "image": "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=-77?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+              },
+              {
+                "scale": 0.15,
+                "image": "/celestial/system/gas_giant/shadows/9.png"
+              }
+            ]
+          },
+          "skyType": "atmospheric",
+          "horizonImages": [],
+          "dayLength": 1153.36,
+          "surfaceLevel": 100,
+          "seed": -5288806180628666923
+        }
+      },
+      "dungeon_worlds.config.patch": {
+        "primaryDungeon": "snowcrash",
+        "threatLevel": 4,
+        "gravity": 80,
+        "worldSize": [
+          1500,
+          1500
+        ],
+        "dungeonBaseHeight": 1000,
+        "ambientLightLevel": [
+          200,
+          200,
+          200
+        ],
+        "musicTrack": "/music/arctic-battle3-loop.ogg",
+        "biome": "snow",
+        "environmentStatusEffects": [
+          "dontstarve"
+        ]
+      }
+    },
+    "source_corrections_to_delivery": [
+      "Two unresolved vanilla-base asset labels omitted the snowcrash subdirectory; exact source paths are npcs/snowcrash/snowcrashrebel.npctype and npcs/snowcrash/snowcrashhostage.npctype.",
+      "Snow Crash also has an explicit ai mission→instance world→dungeon world→root dungeon→Tiled map definition chain. Static definitions do not prove the inherited dialogue event caller.",
+      "Seven radio stagehands reference nine IDs:01,02,03,04,05,06,06a,07,07a; not only a simple01–07/07a range.",
+      "External vanilla tileset banks are unavailable. Wire polylines and numeric GIDs do not establish exact barrel/switch types,destruction/deactivation behavior,shop inventory or escape teleporter geometry."
+    ],
+    "terminology_alignment": {
+      "en": "switch",
+      "tr": "şalter",
+      "existing_catalog_asset": "radiomessages/missions.radiomessages",
+      "existing_catalog_pointer": "/snowcrash05/text",
+      "scope": "Full instruction only; no global single-word switch lock or claim of same physical object."
+    },
+    "labscientist_placements": [
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 957,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "labscientist"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4568,
+        "y": 1056
+      },
+      {
+        "layer": "/layers/3",
+        "height": 8,
+        "id": 958,
+        "name": "",
+        "properties": {
+          "npc": "apex",
+          "typeName": "labscientist"
+        },
+        "propertytypes": {
+          "npc": "string",
+          "typeName": "string"
+        },
+        "rotation": 0,
+        "type": "",
+        "visible": true,
+        "width": 8,
+        "x": 4696,
+        "y": 1056
+      }
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All53 EN/TR variants and occurrences read; all7complete NPC definitions,full hostilefu/base patch/dialog helper/tracking patch,quest/AI mission and associated9radio entries/source catalog counterparts reviewed. All20217previous catalog fields unchanged.",
+    "Five attackers inherit hostilefu→base/hostileguard. Rebel and hostage are friendly/base/spectator. Full vanilla base,hostileguard and spectator implementations absent; no exact active attack/converse consumer or live trigger established.",
+    "AI mission→instance world→dungeon world→root dungeon→Tiled map definitions verified. All800map object records and125parameter JSON values decoded;41SnowCrash NPC placements specifyapex,one generic merchant and two labscientists and seven radio stagehands with nine IDs recorded. No live activation claim.",
+    "Rocketeer has6avian attack fields while its5static placements specifyapex; source discrepancy retained.19default-speaker fields and fallback messages translated without claiming those branches activate on the map.",
+    "Twenty external vanilla tilesets are absent; only2FU custom banks exist.92wire polylines and numericGIDs do not prove exact barrel/switch identities,destruction/deactivation behavior,inventory or escape teleporter geometry. Basement direction is supported by quest text.",
+    "Break-in meaning,gall idiom,thought reassignment threat,hostage uncertainty,present fallback,cave/sewer direction,self-interest joke and load-up/sale scope corrected. Switch instruction aligned to existing SnowCrash radio şalter without a global switch lock or assertion of the same physical object.",
+    "Winter-Chan is preserved as authored proper-name call,not identified as a specific real person. Dacha stem and21full replies locked; all prior972terms unchanged. No new English-utterance,TM or format permission.",
+    "Miniknog and Daça source context retained. No technical identity/name,type,equipment,stats,world or wiring data changed. Live reachability/font/layout/LQA NOT TESTED; Steam online upload,game installation and shutdown not performed."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}

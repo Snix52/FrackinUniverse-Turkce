@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.86.0 Beta — Snow Crash görev konuşmaları
+
+7 NPC dosyasında 53 yeni alan /53 bağlam, 21 farklı kaynak metin: komiser, muhafız, subay, keskin nişancı, roketçi, asi ve rehine. 41 attack ve12 converse alanıyla confirmed npcs/snowcrash ailesinin kalan dilimi tamamlandı; üç review adayı kapsam dışıdır. Katalog 20.270 alan; önceki 20.217 alan aynen korundu.
+
+16 alanda 18 cümle/kısa ifade düzeltildi: izinsiz giriş, küstahlık ve düşünce düzenleme tehdidi, rehinenin belirsizliği, fallback zamanı, mağara/kanalizasyon yönü, asinin öz çıkar şakası, malzeme/satış kapsamı ve mevcut telsize uygun şalter terimi. Winter-Chan, Daça ve 21 tam replik için 23 yeni LOCKED, toplam 995. Önceki kilitler ve TM/format/İngilizce cümle koruma kuralları aynı. Görev/world/dungeon/map zinciri ve 41 Apex NPC yerleşimi doğrulandı; roketçinin Avian dalı kaynakta korundu. Eksik vanilla parent/davranış ve 20 tileset nedeniyle aktif replik, wiring ve canlı tetikleme doğrulanmadı. FU 6.5.8 pini ve mekanikler aynı; canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/snowcrash-20261101.json) · [Oyun kontrolü](docs/lqa/LQA_V086_20261101.md)
+
 ## v0.85.0 Beta — Nightar konuşmaları
 
 10 NPC dosyasında 58 yeni alan /58 bağlam, 24 farklı kaynak metin: dost KingSlayer, Kavaserai, iki kral ve altı Nightar savaşçısı. Confirmed npcs/nightar ailesinin kalan dilimi tamamlandı; 95 review adayı kapsam dışıdır. Katalog 20.217 alan; önceki 20.159 alan aynen korundu.
