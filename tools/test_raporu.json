@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-10-23T06:29:39.823572+00:00",
-  "workflow_run_id": "39910207285",
-  "source_commit": "78e667ee1763cb63594fc592cc22554d4a156912",
-  "translation_source_commit": "78e667ee1763cb63594fc592cc22554d4a156912",
-  "translation_version": "0.83.0-beta",
+  "generated_at_utc": "2026-11-01T18:09:43.436335+00:00",
+  "workflow_run_id": "41334311428",
+  "source_commit": "313bd268f2c4c0188dff946bb5852608e0a87d2b",
+  "translation_source_commit": "313bd268f2c4c0188dff946bb5852608e0a87d2b",
+  "translation_version": "0.84.0-beta",
   "custom_game_assets": 14,
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 20094,
-    "patch_assets": 5048,
+    "structured_fields": 20159,
+    "patch_assets": 5054,
     "raw_override_assets": 10,
     "raw_script_strings": 126
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.83.0_Beta.zip",
-    "bytes": 2954372,
-    "sha256": "40eaccb9ec2ff9c9a94614d93d26f10603122c42d0d2a4c8b2ca18f474eadb1c",
-    "git_blob_sha": "9a4392e2cfc44afc917a21a5550e4796c0b3a48b",
+    "path": "dist/FU_Turkce_v0.84.0_Beta.zip",
+    "bytes": 2959400,
+    "sha256": "e2beb9e6d996e61b628c7a33a12dccbcde49a6a5d4bbb82819e8137af7246885",
+    "git_blob_sha": "fb761223e303f4bb3ba958d8cba21ba5e7281bbe",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "b3cc33b8e87e331866d81435e1923123033ca7c2f46de81e02ae8028e7d8a5e3",
-  "build_inputs_sha256": "d8bf8f65a90feaeb63889807daaf817432fbc7dddf754595d7f2a8dae92d4b85",
-  "catalog_sha256": "6aac6ac3701be8e9c0e7b25c309baf904f6a3bc63be7f0d9e3f461e83c9c5bdc",
+  "install_tree_sha256": "dabe80a1e3c0c491d055ea47828d40ba5dfd9ee7fd1cdceb580d586455e3a35b",
+  "build_inputs_sha256": "91df763d4ee60d70fc00e83a2761238c3fef66b273f21aa1b3617641de5199d2",
+  "catalog_sha256": "8424577e686824baf26e965008dd9540a3c7ac64579c92c2ab01a0e5f59f2905",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -34,12 +34,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 20094,
-  "patched_assets": 5048,
+  "translated_display_fields": 20159,
+  "patched_assets": 5054,
   "raw_override_assets": 10,
   "raw_script_display_strings": 126,
-  "total_localized_display_units": 20220,
-  "target_assets_total": 5072,
+  "total_localized_display_units": 20285,
+  "target_assets_total": 5078,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -155,7 +155,8 @@
     "v0.80 S.A.I.L. ve radyo mesajları": 350,
     "v0.81 Görev telsizleri ve Mech öğreticisi": 350,
     "v0.82 Kalan görev telsizleri": 133,
-    "v0.83 Kale muhafızları ve kötü aşçı": 66
+    "v0.83 Kale muhafızları ve kötü aşçı": 66,
+    "v0.84 Zindan muhafızları": 65
   },
   "checks": {
     "static_qa": "PASS",
@@ -21879,6 +21880,286 @@
       "qa": {
         "layered_source": true,
         "source_patch": "radiomessages/tutorial.radiomessages.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
       }
     }
   ]
