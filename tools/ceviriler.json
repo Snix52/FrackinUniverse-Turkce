@@ -2,7 +2,7 @@
   "source_repository": "sayterdarkwynd/FrackinUniverse",
   "source_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "source_declared_version": "6.5.8",
-  "translation_version": "0.83.0-beta",
+  "translation_version": "0.84.0-beta",
   "note": "v0.68: 380 yeni P1 NPC diyalog alanı; FU 6.5.8 kaynak pini korundu.",
   "translations": [
     {
@@ -16868,7 +16868,7 @@
       "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
       "pointer": "/avianDescription",
       "en": "Buying and selling on the honour system is something the grounded take pride in.",
-      "tr": "Karşılıklı güvene dayalı alışveriş, yeryüzünde yaşayanların gurur duyduğu bir gelenektir.",
+      "tr": "Karşılıklı güvene dayalı alışveriş, Grounded halkının gurur duyduğu bir gelenektir.",
       "section": "v0.17 Üretim makineleri - objects/crafting"
     },
     {
@@ -151638,6 +151638,601 @@
       "en": "Insulting. You donkey!!",
       "tr": "Aşağılayıcı. Eşek seni!!",
       "section": "v0.83 Kale muhafızları ve kötü aşçı"
+    },
+    {
+      "asset": "npcs/dungeon/apexbase/labguard.npctype",
+      "pointer": "/scriptConfig/dialog/hail/default/default/0",
+      "en": "Halt! This is a high security research facility. Lab personnel only!",
+      "tr": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli girebilir!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/apexbase/labguardlookout.npctype",
+      "pointer": "/scriptConfig/dialog/hail/default/default/0",
+      "en": "Halt! This is a high security research facility. Lab personnel only!",
+      "tr": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli girebilir!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+      "en": "Filthy Grounded scum! Today, you die!",
+      "tr": "Seni pis Grounded artığı! Bugün öleceksin!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+      "en": "Rend the unbeliever limb from limb!",
+      "tr": "İnançsızı lime lime edin!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+      "en": "Your disbelief will be your undoing!",
+      "tr": "İnançsızlığın seni mahvedecek!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+      "en": "I'll kill you myself, scum!",
+      "tr": "Seni kendim öldüreceğim, pislik!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+      "en": "Your disregard towards our mighty Kluex is despicable!",
+      "tr": "Yüce Kluex'i hiçe sayman iğrenç!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+      "en": "We'll throw you off the tower and see if you can fly!",
+      "tr": "Seni kuleden aşağı atıp uçup uçamadığını göreceğiz!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+      "en": "I... I must destroy you, heretic! I have no choice!",
+      "tr": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+      "en": "Intruder! Leave this hallowed ground!",
+      "tr": "İzinsiz giren var! Bu kutsal toprakları terk et!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+      "en": "Stop right where you are!",
+      "tr": "Olduğun yerde kal!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+      "en": "You dishonour Kluex!",
+      "tr": "Kluex'e saygısızlık ediyorsun!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+      "en": "You are unwelcome, stranger!",
+      "tr": "Burada istenmiyorsun, yabancı!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+      "en": "Today, Kluex claims another soul!",
+      "tr": "Bugün Kluex bir ruh daha alacak!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+      "en": "The wrath of Kluex will fall upon you!",
+      "tr": "Kluex'in gazabı üzerine çökecek!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+      "en": "The power of Kluex compels me to slay you!",
+      "tr": "Kluex'in kudreti beni seni katletmeye zorluyor!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/0",
+      "en": "Intruder!",
+      "tr": "İzinsiz giren var!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantemple/templeguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+      "en": "You will... join me... in the ground...",
+      "tr": "Sen de... bana katılacaksın... toprağın altında...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+      "en": "Desecrator... I must destroy you...",
+      "tr": "Mezarı kirleten... seni yok etmeliyim...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+      "en": "Unbeliever... I have no choice...",
+      "tr": "İnançsız... başka çarem yok...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+      "en": "You spat upon Kluex... now you will die...",
+      "tr": "Kluex'e tükürdün... şimdi öleceksin...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+      "en": "Turn back, heretic...",
+      "tr": "Geri dön, sapkın...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+      "en": "Get out... you are forbidden...",
+      "tr": "Defol... burada olman yasak...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+      "en": "They... compel me... run while you still can...",
+      "tr": "Onlar... beni zorluyor... hâlâ vaktin varken kaç...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/7",
+      "en": "Heresy...",
+      "tr": "Sapkınlık...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/8",
+      "en": "I... I remember Avos...",
+      "tr": "Ben... Avos'u hatırlıyorum...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+      "en": "You... desecrate... this place...",
+      "tr": "Sen... burayı... kirletiyorsun...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+      "en": "I must... defend. I am compelled...",
+      "tr": "Savunmak... zorundayım. Buna zorlanıyorum...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+      "en": "You will never leave...",
+      "tr": "Buradan asla çıkamayacaksın...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+      "en": "You dishonor this tomb...",
+      "tr": "Bu mezara saygısızlık ediyorsun...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+      "en": "They... they want you gone...",
+      "tr": "Onlar... onlar seni burada istemiyor...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+      "en": "Trespass... and you die...",
+      "tr": "İzinsiz girersen... ölürsün...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+      "en": "Thief... Kluex will strike you down...",
+      "tr": "Hırsız... Kluex seni yere serecek...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+      "en": "You will be buried... with the rest...",
+      "tr": "Gömüleceksin... diğerleriyle birlikte...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+      "en": "Please, release me from my bonds...",
+      "tr": "Lütfen, beni bağlarımdan kurtar...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+      "en": "Die by my sword...",
+      "tr": "Kılıcımla can ver...",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/0",
+      "en": "Intruder!",
+      "tr": "İzinsiz giren var!",
+      "section": "v0.84 Zindan muhafızları",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/0",
+      "en": "Intruder!",
+      "tr": "İzinsiz giren var!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/0",
+      "en": "Prisssoner mussst be dealt with!",
+      "tr": "Esssirle ilgilenilmesi gerek!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/1",
+      "en": "I senssse an essscape!",
+      "tr": "Bir kaçış hissssediyorum!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+      "en": "Prisssoner will be ssstabbed to death!",
+      "tr": "Esssir bıçaklanarak öldürülecek!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/3",
+      "en": "Floran know nothing but ssstab and ssssslice...",
+      "tr": "Floran sssaplamaktan ve dilimlemekten başka bir şey bilmez...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/4",
+      "en": "Prisssoner's death is no sssacrifice...",
+      "tr": "Esssirin ölümü fedakârlık sssayılmaz...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/5",
+      "en": "There isss no escape!",
+      "tr": "Kaçamazsssın!",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/floran/default/6",
+      "en": "It isss either Floran or ssstarvation which will kill you...",
+      "tr": "Ssseni ya Floran ya da açlık öldürecek...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+      "en": "You will... join me... in the ground...",
+      "tr": "Sen de... bana katılacaksın... toprağın altında...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+      "en": "Desecrator... I must destroy you...",
+      "tr": "Mezarı kirleten... seni yok etmeliyim...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+      "en": "Unbeliever... I have no choice...",
+      "tr": "İnançsız... başka çarem yok...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+      "en": "You spat upon Kluex... now you will die...",
+      "tr": "Kluex'e tükürdün... şimdi öleceksin...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+      "en": "Turn back, heretic...",
+      "tr": "Geri dön, sapkın...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+      "en": "Get out... you are forbidden...",
+      "tr": "Defol... burada olman yasak...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+      "en": "They... compel me... run while you still can...",
+      "tr": "Onlar... beni zorluyor... hâlâ vaktin varken kaç...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/7",
+      "en": "Heresy...",
+      "tr": "Sapkınlık...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/avian/8",
+      "en": "I... I remember Avos...",
+      "tr": "Ben... Avos'u hatırlıyorum...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+      "en": "You... desecrate... this place...",
+      "tr": "Sen... burayı... kirletiyorsun...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+      "en": "I must... defend. I am compelled...",
+      "tr": "Savunmak... zorundayım. Buna zorlanıyorum...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+      "en": "You will never leave...",
+      "tr": "Buradan asla çıkamayacaksın...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+      "en": "You dishonor this tomb...",
+      "tr": "Bu mezara saygısızlık ediyorsun...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+      "en": "They... they want you gone...",
+      "tr": "Onlar... onlar seni burada istemiyor...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+      "en": "Trespass... and you die...",
+      "tr": "İzinsiz girersen... ölürsün...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+      "en": "Thief... Kluex will strike you down...",
+      "tr": "Hırsız... Kluex seni yere serecek...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+      "en": "You will be buried... with the rest...",
+      "tr": "Gömüleceksin... diğerleriyle birlikte...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+      "en": "Please, release me from my bonds...",
+      "tr": "Lütfen, beni bağlarımdan kurtar...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+      "en": "Die by my sword...",
+      "tr": "Kılıcımla can ver...",
+      "section": "v0.84 Zindan muhafızları"
+    },
+    {
+      "asset": "npcs/dungeon/pyramidguard.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/0",
+      "en": "Intruder!",
+      "tr": "İzinsiz giren var!",
+      "section": "v0.84 Zindan muhafızları"
     }
   ]
 }

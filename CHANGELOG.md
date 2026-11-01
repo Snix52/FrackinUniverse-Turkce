@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.84.0 Beta — Zindan muhafızları
+
+6 NPC varlığında 65 yeni alan /65 bağlam, 42 farklı kaynak metin: laboratuvar muhafızı/gözcüsü, Avian tapınak/mezar muhafızları, Floran hellguard ve piramit muhafızı. 2 hail, 63 attack; 30 doğrudan FU alanı ve 35 FU patch alanı. Confirmed npcs/dungeon ailesi tamamlandı; diğer review/Lua adayları tamam sayılmaz. Katalog 20.159 alan; önceki 20.094 alandan 20.093 aynı, bir tüccar açıklamasındaki Avian topluluğu adı eşlendi.
+
+Yeni pakette 34 alanda 38, eski açıklamayla birlikte toplam 35 alanda 39 cümle/kısa ifade düzeltildi. Grounded topluluk adı ve tekil muhatap, Floran doğal s tıslaması, gelecek tehdidi/gereklilik ayrımı, tereddüt ve duraklar, koşullu tehdit, kılıç buyruğu ve ruh anlamı düzeltildi. 44 yeni LOCKED, toplam 947. Genel elektriksel grounded için İngilizce dayatması, yeni format/TM istisnası veya İngilizce cümle koruma izni yok. Statik yerleşimler doğrulandı; eksik vanilla parent/davranış ve harici laboratuvar saldırı dosyası nedeniyle aktif konuşma/canlı tetikleme tamam sayılmaz. FU 6.5.8 pini ve mekanikler aynı; canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/dungeon-20261101.json) · [Oyun kontrolü](docs/lqa/LQA_V084_20261101.md)
+
 ## v0.83.0 Beta — Kale muhafızları ve kötü aşçı
 
 5 NPC dosyasında 66 yeni alan /66 bağlam, 31 farklı kaynak metin: dört kale muhafızının 44 hail repliği ve kötü aşçının 22 varsayılan/Floran/Glitch attack repliği. Confirmed npcs/mobs ailesinin kalan dilimi tamamlandı; teknik review kimlikleri kapsam dışıdır. Katalog 20.094 alan; önceki 20.028 alan aynen korundu.

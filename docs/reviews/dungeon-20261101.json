@@ -1,0 +1,3286 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-01",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 7,
+  "run_id": "fu-six-20261101",
+  "run_round": 1,
+  "base_commit": "2e98fa552acb7bd545f82417e6f361d8d79703fa",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 65,
+    "context_groups": 65,
+    "unique_english_strings": 42,
+    "assets": {
+      "npcs/dungeon/apexbase/labguard.npctype": 1,
+      "npcs/dungeon/apexbase/labguardlookout.npctype": 1,
+      "npcs/dungeon/aviantemple/templeguard.npctype": 15,
+      "npcs/dungeon/aviantomb/tombguard.npctype": 20,
+      "npcs/dungeon/floranhell/hellguard.npctype": 8,
+      "npcs/dungeon/pyramidguard.npctype": 20
+    },
+    "fu_layered_fields": 35,
+    "direct_source_fields": 30,
+    "hail_fields": 2,
+    "attack_fields": 63,
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 34,
+    "sentences_including_repeated_fields": 38,
+    "unique_source_strings_corrected": 23,
+    "existing_catalog_corrections": 1,
+    "total_corrected_fields": 35,
+    "total_corrected_sentences": 39,
+    "count_method": "Changed independent sentences/short expressions counted manually; unchanged clauses excluded. Authored pause/stammer and source mood fixes counted as changed utterances. Repeated occurrences counted separately. One prior merchant sentence separately recorded."
+  },
+  "new_locked_terms": 44,
+  "new_locked_names": [
+    "Grounded",
+    "Halt! This is a high security research facility. Lab personnel only!",
+    "Filthy Grounded scum! Today, you die!",
+    "Rend the unbeliever limb from limb!",
+    "Your disbelief will be your undoing!",
+    "I'll kill you myself, scum!",
+    "Your disregard towards our mighty Kluex is despicable!",
+    "We'll throw you off the tower and see if you can fly!",
+    "I... I must destroy you, heretic! I have no choice!",
+    "Intruder! Leave this hallowed ground!",
+    "Stop right where you are!",
+    "You dishonour Kluex!",
+    "You are unwelcome, stranger!",
+    "Today, Kluex claims another soul!",
+    "The wrath of Kluex will fall upon you!",
+    "The power of Kluex compels me to slay you!",
+    "Intruder!",
+    "You will... join me... in the ground...",
+    "Desecrator... I must destroy you...",
+    "Unbeliever... I have no choice...",
+    "You spat upon Kluex... now you will die...",
+    "Turn back, heretic...",
+    "Get out... you are forbidden...",
+    "They... compel me... run while you still can...",
+    "Heresy...",
+    "I... I remember Avos...",
+    "You... desecrate... this place...",
+    "I must... defend. I am compelled...",
+    "You will never leave...",
+    "You dishonor this tomb...",
+    "They... they want you gone...",
+    "Trespass... and you die...",
+    "Thief... Kluex will strike you down...",
+    "You will be buried... with the rest...",
+    "Please, release me from my bonds...",
+    "Die by my sword...",
+    "Prisssoner mussst be dealt with!",
+    "I senssse an essscape!",
+    "Prisssoner will be ssstabbed to death!",
+    "Floran know nothing but ssstab and ssssslice...",
+    "Prisssoner's death is no sssacrifice...",
+    "There isss no escape!",
+    "It isss either Floran or ssstarvation which will kill you...",
+    "Buying and selling on the honour system is something the grounded take pride in."
+  ],
+  "locked_total": 947,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [
+    {
+      "asset": "objects/crafting/extraavianaugments/extraavianaugments.object",
+      "pointer": "/avianDescription",
+      "en": "Buying and selling on the honour system is something the grounded take pride in.",
+      "before": "Karşılıklı güvene dayalı alışveriş, yeryüzünde yaşayanların gurur duyduğu bir gelenektir.",
+      "after": "Karşılıklı güvene dayalı alışveriş, Grounded halkının gurur duyduğu bir gelenektir.",
+      "changed_sentences": 1,
+      "reason": "Avian tüccar repliğindeki the grounded,aynı adla anılan topluluğa gönderme yapar. Yeryüzünde yaşayan herkes olarak genelleştirilmedi; yeni muhafız repliği ve eldeki üç lore kaynağıyla aynı ad korundu."
+    }
+  ],
+  "approved_packet_sha256": "77950337dd6007a0a08dbbda2c283389f9e193239e98b0daa414f5b27c58e47b",
+  "luna_original_packet_sha256": "443bd039cec750e951d5ea86148fef4e6d80d8fb1992b1e7a5bee5289b627382",
+  "approved_rows_sha256": "c357e8b60dcfd9776ba6a8eac0fce23f1998fa515d18abdc3e8662f28ae40759",
+  "corrections": [
+    {
+      "unit_index": 0,
+      "en": "Halt! This is a high security research facility. Lab personnel only!",
+      "before": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli!",
+      "after": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli girebilir!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/apexbase/labguard.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/0",
+          "origin": "npcs/dungeon/apexbase/labguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Sözlü giriş uyarısındaki yalnızca personel parçası, kaynağın örtük erişim kısıtlamasıyla tamamlandı."
+    },
+    {
+      "unit_index": 1,
+      "en": "Halt! This is a high security research facility. Lab personnel only!",
+      "before": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli!",
+      "after": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli girebilir!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/apexbase/labguardlookout.npctype",
+          "pointer": "/scriptConfig/dialog/hail/default/default/0",
+          "origin": "npcs/dungeon/apexbase/labguardlookout.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Aynı yüksek güvenlikli tesis uyarısı ikinci NPC occurrence için aynı anlam ve doğal yüklemle tamamlandı."
+    },
+    {
+      "unit_index": 2,
+      "en": "Filthy Grounded scum! Today, you die!",
+      "before": "Yeryüzündeki pislikler! Bugün öleceksiniz!",
+      "after": "Seni pis Grounded artığı! Bugün öleceksin!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+          "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Grounded mevcut FU lore kaynaklarında Avian topluluğu adıdır; yüzeyde yaşayan genel çoğul değildir. Hedef tek Avian olduğu için hakaret ve ölüm tehdidi tekilleştirildi; ad korundu."
+    },
+    {
+      "unit_index": 7,
+      "en": "We'll throw you off the tower and see if you can fly!",
+      "before": "Seni kuleden aşağı atıp uçabiliyor musun, göreceğiz!",
+      "after": "Seni kuleden aşağı atıp uçup uçamadığını göreceğiz!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+          "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Dolaylı uçabiliyor musun sorusunun Türkçe yüklemle uyumsuz yapısı uçup uçamadığını olarak düzeltildi; biz öznesi ve kule tehdidi korundu."
+    },
+    {
+      "unit_index": 8,
+      "en": "I... I must destroy you, heretic! I have no choice!",
+      "before": "Seni yok etmeliyim, sapkın! Başka çarem yok!",
+      "after": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+          "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın I... I tereddüdü ilk cümlede geri kondu; değişmeyen başka çarem yok cümlesi düzeltme sayısına eklenmedi."
+    },
+    {
+      "unit_index": 9,
+      "en": "Intruder! Leave this hallowed ground!",
+      "before": "Davetsiz! Bu kutsal topraklardan defol!",
+      "after": "İzinsiz giren var! Bu kutsal toprakları terk et!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+          "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Eksik Davetsiz hitabı mevcut intruder karşılığıyla tamamlandı; leave emri gereksiz ek sertlik yerine terk et olarak korundu."
+    },
+    {
+      "unit_index": 13,
+      "en": "Today, Kluex claims another soul!",
+      "before": "Bugün Kluex bir can daha alacak!",
+      "after": "Bugün Kluex bir ruh daha alacak!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+          "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kluex inanç dilindeki soul,can kaybına indirgenmeden ruh olarak çevrildi."
+    },
+    {
+      "unit_index": 17,
+      "en": "You will... join me... in the ground...",
+      "before": "Sen de... benimle... toprağın altına geleceksin...",
+      "after": "Sen de... bana katılacaksın... toprağın altında...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Join me bağı ve ölü muhafızın toprağın altında bulunma anlamı korundu; yer/eylem parçaları kaynak duraklamalarına göre eşlendi."
+    },
+    {
+      "unit_index": 20,
+      "en": "You spat upon Kluex... now you will die...",
+      "before": "Kluex'e hakaret ettin... şimdi öleceksin...",
+      "after": "Kluex'e tükürdün... şimdi öleceksin...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynaktaki tükürme imgesi genel hakaret olarak yumuşatılmadı; değişmeyen ölüm tehdidi ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 27,
+      "en": "I must... defend. I am compelled...",
+      "before": "Savunmalıyım... mecburum...",
+      "after": "Savunmak... zorundayım. Buna zorlanıyorum...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "İki kaynak cümlesi ve tereddüt korundu; compelled dış zorlaması yalnız mecburum tekrarı olarak kaybolmadı. Zorlayan kişi/nesne uydurulmadı."
+    },
+    {
+      "unit_index": 28,
+      "en": "You will never leave...",
+      "before": "Buradan asla... çıkamayacaksın...",
+      "after": "Buradan asla çıkamayacaksın...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynakta yalnız sonda olan duraklama cümle içine taşınmadı."
+    },
+    {
+      "unit_index": 29,
+      "en": "You dishonor this tomb...",
+      "before": "Bu mezara... saygısızlık ediyorsun...",
+      "after": "Bu mezara saygısızlık ediyorsun...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynak son duraklaması korundu; mezar ile yüklem arasına kaynak dışı tereddüt eklenmedi."
+    },
+    {
+      "unit_index": 30,
+      "en": "They... they want you gone...",
+      "before": "Onlar... seni burada istemiyor...",
+      "after": "Onlar... onlar seni burada istemiyor...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynakta yinelenen they öznesi ve korkulu tereddüt geri kondu."
+    },
+    {
+      "unit_index": 31,
+      "en": "Trespass... and you die...",
+      "before": "İzinsiz gir... ölürsün...",
+      "after": "İzinsiz girersen... ölürsün...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İzinsiz gir buyruğu yerine kaynak koşullu ölüm uyarısı açıkça verildi; değişmeyen ölürsün ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 33,
+      "en": "You will be buried... with the rest...",
+      "before": "Diğerleriyle birlikte... gömüleceksin...",
+      "after": "Gömüleceksin... diğerleriyle birlikte...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Gömülme ve diğerleriyle birlikte olma durakları kaynak sırasına yaklaştırıldı; anlam eklenmedi."
+    },
+    {
+      "unit_index": 34,
+      "en": "Please, release me from my bonds...",
+      "before": "Lütfen... beni bağlarımdan kurtar...",
+      "after": "Lütfen, beni bağlarımdan kurtar...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynaktaki virgül ve tek son duraklama geri kondu; bağlar için fiziksel zincir veya yeni büyü açıklaması eklenmedi."
+    },
+    {
+      "unit_index": 35,
+      "en": "Die by my sword...",
+      "before": "Kılıcımla... can vereceksin...",
+      "after": "Kılıcımla can ver...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+          "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın öl buyruğu geleceğe dönük bildirim yapılmadan korundu."
+    },
+    {
+      "unit_index": 38,
+      "en": "Prisssoner mussst be dealt with!",
+      "before": "Esirle ilgilenilmesi gerek!",
+      "after": "Esssirle ilgilenilmesi gerek!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/0",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Floran sözcüğünün doğal s sesi uzatıldı; esir bağlamı ve must gerekliliği korundu."
+    },
+    {
+      "unit_index": 39,
+      "en": "I senssse an essscape!",
+      "before": "Bir kaçış hissediyorum!",
+      "after": "Bir kaçış hissssediyorum!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/1",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Hissetmek sözcüğündeki mevcut s sesleriyle kaynak Floran tıslaması geri kondu."
+    },
+    {
+      "unit_index": 40,
+      "en": "Prisssoner will be ssstabbed to death!",
+      "before": "Esir bıçaklanarak öldürülmeli!",
+      "after": "Esssir bıçaklanarak öldürülecek!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Will geleceğe dönük düşman tehdididir; öldürülmeli gerekliliğine dönüştürülmedi. Esir doğal s ile tıslandı."
+    },
+    {
+      "unit_index": 41,
+      "en": "Floran know nothing but ssstab and ssssslice...",
+      "before": "Floran bıçaklamaktan ve dilimlemekten başka bir şey bilmez...",
+      "after": "Floran sssaplamaktan ve dilimlemekten başka bir şey bilmez...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/3",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Stab eylemi doğal s içeren saplamak ile verildi; Türkçede s içermeyen dilimlemek sözcüğüne yapay s eklenmedi."
+    },
+    {
+      "unit_index": 42,
+      "en": "Prisssoner's death is no sssacrifice...",
+      "before": "Esirin ölümü... bir fedakârlık değil...",
+      "after": "Esssirin ölümü fedakârlık sssayılmaz...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/4",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Esir/sayılmaz doğal s sesleri tıslandı ve fedakârlık yazımı düzeltildi. Kaynağın no sacrifice ifadesine yeni bir din/ritüel mekaniği eklenmedi."
+    },
+    {
+      "unit_index": 43,
+      "en": "There isss no escape!",
+      "before": "Kaçış yok...",
+      "after": "Kaçamazsssın!",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/5",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın kesin kaçış yok tehdidi ve ünlemi korundu; doğal kaçamazsın s sesiyle tıslama verildi."
+    },
+    {
+      "unit_index": 44,
+      "en": "It isss either Floran or ssstarvation which will kill you...",
+      "before": "Seni ya Floran ya da açlık öldürecek...",
+      "after": "Ssseni ya Floran ya da açlık öldürecek...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/6",
+          "origin": "npcs/dungeon/floranhell/hellguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Seni sözcüğündeki doğal başlangıç s sesi tıslandı; Floran/açlık seçenekleri ve ölüm tehdidi aynı."
+    },
+    {
+      "unit_index": 45,
+      "en": "You will... join me... in the ground...",
+      "before": "Sen de... benimle... toprağın altına geleceksin...",
+      "after": "Sen de... bana katılacaksın... toprağın altında...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Join me bağı ve ölü muhafızın toprağın altında bulunma anlamı korundu; yer/eylem parçaları kaynak duraklamalarına göre eşlendi."
+    },
+    {
+      "unit_index": 48,
+      "en": "You spat upon Kluex... now you will die...",
+      "before": "Kluex'e hakaret ettin... şimdi öleceksin...",
+      "after": "Kluex'e tükürdün... şimdi öleceksin...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynaktaki tükürme imgesi genel hakaret olarak yumuşatılmadı; değişmeyen ölüm tehdidi ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 55,
+      "en": "I must... defend. I am compelled...",
+      "before": "Savunmalıyım... mecburum...",
+      "after": "Savunmak... zorundayım. Buna zorlanıyorum...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "İki kaynak cümlesi ve tereddüt korundu; compelled dış zorlaması yalnız mecburum tekrarı olarak kaybolmadı. Zorlayan kişi/nesne uydurulmadı."
+    },
+    {
+      "unit_index": 56,
+      "en": "You will never leave...",
+      "before": "Buradan asla... çıkamayacaksın...",
+      "after": "Buradan asla çıkamayacaksın...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynakta yalnız sonda olan duraklama cümle içine taşınmadı."
+    },
+    {
+      "unit_index": 57,
+      "en": "You dishonor this tomb...",
+      "before": "Bu mezara... saygısızlık ediyorsun...",
+      "after": "Bu mezara saygısızlık ediyorsun...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynak son duraklaması korundu; mezar ile yüklem arasına kaynak dışı tereddüt eklenmedi."
+    },
+    {
+      "unit_index": 58,
+      "en": "They... they want you gone...",
+      "before": "Onlar... seni burada istemiyor...",
+      "after": "Onlar... onlar seni burada istemiyor...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynakta yinelenen they öznesi ve korkulu tereddüt geri kondu."
+    },
+    {
+      "unit_index": 59,
+      "en": "Trespass... and you die...",
+      "before": "İzinsiz gir... ölürsün...",
+      "after": "İzinsiz girersen... ölürsün...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İzinsiz gir buyruğu yerine kaynak koşullu ölüm uyarısı açıkça verildi; değişmeyen ölürsün ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 61,
+      "en": "You will be buried... with the rest...",
+      "before": "Diğerleriyle birlikte... gömüleceksin...",
+      "after": "Gömüleceksin... diğerleriyle birlikte...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Gömülme ve diğerleriyle birlikte olma durakları kaynak sırasına yaklaştırıldı; anlam eklenmedi."
+    },
+    {
+      "unit_index": 62,
+      "en": "Please, release me from my bonds...",
+      "before": "Lütfen... beni bağlarımdan kurtar...",
+      "after": "Lütfen, beni bağlarımdan kurtar...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynaktaki virgül ve tek son duraklama geri kondu; bağlar için fiziksel zincir veya yeni büyü açıklaması eklenmedi."
+    },
+    {
+      "unit_index": 63,
+      "en": "Die by my sword...",
+      "before": "Kılıcımla... can vereceksin...",
+      "after": "Kılıcımla can ver...",
+      "occurrences": [
+        {
+          "asset": "npcs/dungeon/pyramidguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+          "origin": "npcs/dungeon/pyramidguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın öl buyruğu geleceğe dönük bildirim yapılmadan korundu."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "443bd039cec750e951d5ea86148fef4e6d80d8fb1992b1e7a5bee5289b627382",
+    "filled_units": 65
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 65,
+    "context_units": 65,
+    "qa": {
+      "catalog_units_checked": 34887,
+      "raw_units_checked": 115,
+      "locked_terms": 947
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/dungeon/apexbase/labguard.npctype; fu_source/npcs/dungeon/apexbase/labguardlookout.npctype; fu_source/npcs/dungeon/floranhell/hellguard.npctype; fu_source/npcs/dungeon/pyramidguard.npctype",
+        "note": "Read the four exact FU NPC definitions and their dialog branches; each has baseType=hostilefu. The Apex instances are species=apex, hellguard is species=floran, and pyramidguard appears as species=avian in inspected placements."
+      },
+      {
+        "source": "fu_source/npcs/dungeon/aviantemple/templeguard.npctype.patch; fu_source/npcs/dungeon/aviantomb/tombguard.npctype.patch",
+        "note": "Read both exact patch bodies. templeguard and tombguard patches replace /scriptConfig/dialog/attack; their full vanilla .npctype definitions are absent from this FU checkout, so no parent or behavior was inferred."
+      },
+      {
+        "source": "fu_source/scripts/actions/dialog.lua",
+        "note": "Read entityVariant/loadDialog/queryDialog/speciesDialog/sayToEntity. The helper resolves NPC species first and target species second with defaults; it establishes selection logic, not active event callers or live triggers."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype",
+        "note": "FU hostilefu parent sets baseType=base, behavior=hostileguard, and generic hail/attack dialog routes. The vanilla base and active hostileguard behavior caller implementation are not available here. labguard types also point attack at /dialog/miniknogthreats.config:attack, whose target file is absent."
+      },
+      {
+        "source": "fu_source/dungeons placement references",
+        "note": "Inspected every dungeon/map file containing the six type identifiers, including map typeName/species NPC brushes and Tiled npcTypes spawners. These are static placement references; they do not establish when hail/attack dialogue is actively invoked."
+      },
+      {
+        "source": "fu_source/codex/legacy_codex/fuavianclippedcouncil.codex",
+        "note": "Grounded named as a distinct group opposed to the council."
+      },
+      {
+        "source": "fu_source/codex/legacy_codex/fugreenfingercodexmethods.codex",
+        "note": "Grounded discussed as Avians who defy their god; same source later says atheist Avians."
+      },
+      {
+        "source": "fu_source/codex/legacy_codex/fuascendant2.codex",
+        "note": "Grounded contrasted with Flightless devoted to Kluex. These available lore texts establish a named community,not generic surface location."
+      }
+    ],
+    "note": "All65EN/TR variants and occurrence sources reviewed by Sol;30direct,35FU patch fields. Speaker and target branches,all named placement files and available parent/helper code reviewed. Missing vanilla consumers and live LQA remain explicit."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/dungeon/apexbase/labguard.npctype",
+        "npc_type": "labguard",
+        "base_type": "hostilefu",
+        "direct": true,
+        "origin": "npcs/dungeon/apexbase/labguard.npctype",
+        "fields": 1,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/dungeon/apexbase/labguard.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/0",
+            "origin": "npcs/dungeon/apexbase/labguard.npctype",
+            "en": "Halt! This is a high security research facility. Lab personnel only!",
+            "luna_tr": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli!",
+            "approved_tr": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli girebilir!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/dungeon/apexbase/labguardlookout.npctype",
+        "npc_type": "labguardlookout",
+        "base_type": "hostilefu",
+        "direct": true,
+        "origin": "npcs/dungeon/apexbase/labguardlookout.npctype",
+        "fields": 1,
+        "entries": [
+          {
+            "unit_index": 1,
+            "asset": "npcs/dungeon/apexbase/labguardlookout.npctype",
+            "pointer": "/scriptConfig/dialog/hail/default/default/0",
+            "origin": "npcs/dungeon/apexbase/labguardlookout.npctype",
+            "en": "Halt! This is a high security research facility. Lab personnel only!",
+            "luna_tr": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli!",
+            "approved_tr": "Dur! Burası yüksek güvenlikli bir araştırma tesisi. Yalnızca laboratuvar personeli girebilir!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+        "npc_type": "templeguard",
+        "base_type": null,
+        "direct": false,
+        "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch",
+        "fields": 15,
+        "entries": [
+          {
+            "unit_index": 2,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Filthy Grounded scum! Today, you die!",
+            "luna_tr": "Yeryüzündeki pislikler! Bugün öleceksiniz!",
+            "approved_tr": "Seni pis Grounded artığı! Bugün öleceksin!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Rend the unbeliever limb from limb!",
+            "luna_tr": "İnançsızı lime lime edin!",
+            "approved_tr": "İnançsızı lime lime edin!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Your disbelief will be your undoing!",
+            "luna_tr": "İnançsızlığın seni mahvedecek!",
+            "approved_tr": "İnançsızlığın seni mahvedecek!"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "I'll kill you myself, scum!",
+            "luna_tr": "Seni kendim öldüreceğim, pislik!",
+            "approved_tr": "Seni kendim öldüreceğim, pislik!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Your disregard towards our mighty Kluex is despicable!",
+            "luna_tr": "Yüce Kluex'i hiçe sayman iğrenç!",
+            "approved_tr": "Yüce Kluex'i hiçe sayman iğrenç!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "We'll throw you off the tower and see if you can fly!",
+            "luna_tr": "Seni kuleden aşağı atıp uçabiliyor musun, göreceğiz!",
+            "approved_tr": "Seni kuleden aşağı atıp uçup uçamadığını göreceğiz!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "I... I must destroy you, heretic! I have no choice!",
+            "luna_tr": "Seni yok etmeliyim, sapkın! Başka çarem yok!",
+            "approved_tr": "Ben... Seni yok etmeliyim, sapkın! Başka çarem yok!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Intruder! Leave this hallowed ground!",
+            "luna_tr": "Davetsiz! Bu kutsal topraklardan defol!",
+            "approved_tr": "İzinsiz giren var! Bu kutsal toprakları terk et!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Stop right where you are!",
+            "luna_tr": "Olduğun yerde kal!",
+            "approved_tr": "Olduğun yerde kal!"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "You dishonour Kluex!",
+            "luna_tr": "Kluex'e saygısızlık ediyorsun!",
+            "approved_tr": "Kluex'e saygısızlık ediyorsun!"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "You are unwelcome, stranger!",
+            "luna_tr": "Burada istenmiyorsun, yabancı!",
+            "approved_tr": "Burada istenmiyorsun, yabancı!"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Today, Kluex claims another soul!",
+            "luna_tr": "Bugün Kluex bir can daha alacak!",
+            "approved_tr": "Bugün Kluex bir ruh daha alacak!"
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "The wrath of Kluex will fall upon you!",
+            "luna_tr": "Kluex'in gazabı üzerine çökecek!",
+            "approved_tr": "Kluex'in gazabı üzerine çökecek!"
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "The power of Kluex compels me to slay you!",
+            "luna_tr": "Kluex'in kudreti beni seni katletmeye zorluyor!",
+            "approved_tr": "Kluex'in kudreti beni seni katletmeye zorluyor!"
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/dungeon/aviantemple/templeguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/dungeon/aviantemple/templeguard.npctype.patch#0",
+            "en": "Intruder!",
+            "luna_tr": "İzinsiz giren var!",
+            "approved_tr": "İzinsiz giren var!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+        "npc_type": "tombguard",
+        "base_type": null,
+        "direct": false,
+        "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch",
+        "fields": 20,
+        "entries": [
+          {
+            "unit_index": 17,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "You will... join me... in the ground...",
+            "luna_tr": "Sen de... benimle... toprağın altına geleceksin...",
+            "approved_tr": "Sen de... bana katılacaksın... toprağın altında..."
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Desecrator... I must destroy you...",
+            "luna_tr": "Mezarı kirleten... seni yok etmeliyim...",
+            "approved_tr": "Mezarı kirleten... seni yok etmeliyim..."
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Unbeliever... I have no choice...",
+            "luna_tr": "İnançsız... başka çarem yok...",
+            "approved_tr": "İnançsız... başka çarem yok..."
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "You spat upon Kluex... now you will die...",
+            "luna_tr": "Kluex'e hakaret ettin... şimdi öleceksin...",
+            "approved_tr": "Kluex'e tükürdün... şimdi öleceksin..."
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Turn back, heretic...",
+            "luna_tr": "Geri dön, sapkın...",
+            "approved_tr": "Geri dön, sapkın..."
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Get out... you are forbidden...",
+            "luna_tr": "Defol... burada olman yasak...",
+            "approved_tr": "Defol... burada olman yasak..."
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "They... compel me... run while you still can...",
+            "luna_tr": "Onlar... beni zorluyor... hâlâ vaktin varken kaç...",
+            "approved_tr": "Onlar... beni zorluyor... hâlâ vaktin varken kaç..."
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/7",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Heresy...",
+            "luna_tr": "Sapkınlık...",
+            "approved_tr": "Sapkınlık..."
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/8",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "I... I remember Avos...",
+            "luna_tr": "Ben... Avos'u hatırlıyorum...",
+            "approved_tr": "Ben... Avos'u hatırlıyorum..."
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "You... desecrate... this place...",
+            "luna_tr": "Sen... burayı... kirletiyorsun...",
+            "approved_tr": "Sen... burayı... kirletiyorsun..."
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "I must... defend. I am compelled...",
+            "luna_tr": "Savunmalıyım... mecburum...",
+            "approved_tr": "Savunmak... zorundayım. Buna zorlanıyorum..."
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "You will never leave...",
+            "luna_tr": "Buradan asla... çıkamayacaksın...",
+            "approved_tr": "Buradan asla çıkamayacaksın..."
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "You dishonor this tomb...",
+            "luna_tr": "Bu mezara... saygısızlık ediyorsun...",
+            "approved_tr": "Bu mezara saygısızlık ediyorsun..."
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "They... they want you gone...",
+            "luna_tr": "Onlar... seni burada istemiyor...",
+            "approved_tr": "Onlar... onlar seni burada istemiyor..."
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Trespass... and you die...",
+            "luna_tr": "İzinsiz gir... ölürsün...",
+            "approved_tr": "İzinsiz girersen... ölürsün..."
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Thief... Kluex will strike you down...",
+            "luna_tr": "Hırsız... Kluex seni yere serecek...",
+            "approved_tr": "Hırsız... Kluex seni yere serecek..."
+          },
+          {
+            "unit_index": 33,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "You will be buried... with the rest...",
+            "luna_tr": "Diğerleriyle birlikte... gömüleceksin...",
+            "approved_tr": "Gömüleceksin... diğerleriyle birlikte..."
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Please, release me from my bonds...",
+            "luna_tr": "Lütfen... beni bağlarımdan kurtar...",
+            "approved_tr": "Lütfen, beni bağlarımdan kurtar..."
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Die by my sword...",
+            "luna_tr": "Kılıcımla... can vereceksin...",
+            "approved_tr": "Kılıcımla can ver..."
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/dungeon/aviantomb/tombguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/dungeon/aviantomb/tombguard.npctype.patch#0",
+            "en": "Intruder!",
+            "luna_tr": "İzinsiz giren var!",
+            "approved_tr": "İzinsiz giren var!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+        "npc_type": "hellguard",
+        "base_type": "hostilefu",
+        "direct": true,
+        "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+        "fields": 8,
+        "entries": [
+          {
+            "unit_index": 37,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "Intruder!",
+            "luna_tr": "İzinsiz giren var!",
+            "approved_tr": "İzinsiz giren var!"
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/0",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "Prisssoner mussst be dealt with!",
+            "luna_tr": "Esirle ilgilenilmesi gerek!",
+            "approved_tr": "Esssirle ilgilenilmesi gerek!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/1",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "I senssse an essscape!",
+            "luna_tr": "Bir kaçış hissediyorum!",
+            "approved_tr": "Bir kaçış hissssediyorum!"
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "Prisssoner will be ssstabbed to death!",
+            "luna_tr": "Esir bıçaklanarak öldürülmeli!",
+            "approved_tr": "Esssir bıçaklanarak öldürülecek!"
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/3",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "Floran know nothing but ssstab and ssssslice...",
+            "luna_tr": "Floran bıçaklamaktan ve dilimlemekten başka bir şey bilmez...",
+            "approved_tr": "Floran sssaplamaktan ve dilimlemekten başka bir şey bilmez..."
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/4",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "Prisssoner's death is no sssacrifice...",
+            "luna_tr": "Esirin ölümü... bir fedakârlık değil...",
+            "approved_tr": "Esssirin ölümü fedakârlık sssayılmaz..."
+          },
+          {
+            "unit_index": 43,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/5",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "There isss no escape!",
+            "luna_tr": "Kaçış yok...",
+            "approved_tr": "Kaçamazsssın!"
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/dungeon/floranhell/hellguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/6",
+            "origin": "npcs/dungeon/floranhell/hellguard.npctype",
+            "en": "It isss either Floran or ssstarvation which will kill you...",
+            "luna_tr": "Seni ya Floran ya da açlık öldürecek...",
+            "approved_tr": "Ssseni ya Floran ya da açlık öldürecek..."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/dungeon/pyramidguard.npctype",
+        "npc_type": "pyramidguard",
+        "base_type": "hostilefu",
+        "direct": true,
+        "origin": "npcs/dungeon/pyramidguard.npctype",
+        "fields": 20,
+        "entries": [
+          {
+            "unit_index": 45,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/0",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "You will... join me... in the ground...",
+            "luna_tr": "Sen de... benimle... toprağın altına geleceksin...",
+            "approved_tr": "Sen de... bana katılacaksın... toprağın altında..."
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/1",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Desecrator... I must destroy you...",
+            "luna_tr": "Mezarı kirleten... seni yok etmeliyim...",
+            "approved_tr": "Mezarı kirleten... seni yok etmeliyim..."
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/2",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Unbeliever... I have no choice...",
+            "luna_tr": "İnançsız... başka çarem yok...",
+            "approved_tr": "İnançsız... başka çarem yok..."
+          },
+          {
+            "unit_index": 48,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/3",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "You spat upon Kluex... now you will die...",
+            "luna_tr": "Kluex'e hakaret ettin... şimdi öleceksin...",
+            "approved_tr": "Kluex'e tükürdün... şimdi öleceksin..."
+          },
+          {
+            "unit_index": 49,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/4",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Turn back, heretic...",
+            "luna_tr": "Geri dön, sapkın...",
+            "approved_tr": "Geri dön, sapkın..."
+          },
+          {
+            "unit_index": 50,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/5",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Get out... you are forbidden...",
+            "luna_tr": "Defol... burada olman yasak...",
+            "approved_tr": "Defol... burada olman yasak..."
+          },
+          {
+            "unit_index": 51,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/6",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "They... compel me... run while you still can...",
+            "luna_tr": "Onlar... beni zorluyor... hâlâ vaktin varken kaç...",
+            "approved_tr": "Onlar... beni zorluyor... hâlâ vaktin varken kaç..."
+          },
+          {
+            "unit_index": 52,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/7",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Heresy...",
+            "luna_tr": "Sapkınlık...",
+            "approved_tr": "Sapkınlık..."
+          },
+          {
+            "unit_index": 53,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/avian/8",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "I... I remember Avos...",
+            "luna_tr": "Ben... Avos'u hatırlıyorum...",
+            "approved_tr": "Ben... Avos'u hatırlıyorum..."
+          },
+          {
+            "unit_index": 54,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "You... desecrate... this place...",
+            "luna_tr": "Sen... burayı... kirletiyorsun...",
+            "approved_tr": "Sen... burayı... kirletiyorsun..."
+          },
+          {
+            "unit_index": 55,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "I must... defend. I am compelled...",
+            "luna_tr": "Savunmalıyım... mecburum...",
+            "approved_tr": "Savunmak... zorundayım. Buna zorlanıyorum..."
+          },
+          {
+            "unit_index": 56,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "You will never leave...",
+            "luna_tr": "Buradan asla... çıkamayacaksın...",
+            "approved_tr": "Buradan asla çıkamayacaksın..."
+          },
+          {
+            "unit_index": 57,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "You dishonor this tomb...",
+            "luna_tr": "Bu mezara... saygısızlık ediyorsun...",
+            "approved_tr": "Bu mezara saygısızlık ediyorsun..."
+          },
+          {
+            "unit_index": 58,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/4",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "They... they want you gone...",
+            "luna_tr": "Onlar... seni burada istemiyor...",
+            "approved_tr": "Onlar... onlar seni burada istemiyor..."
+          },
+          {
+            "unit_index": 59,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/5",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Trespass... and you die...",
+            "luna_tr": "İzinsiz gir... ölürsün...",
+            "approved_tr": "İzinsiz girersen... ölürsün..."
+          },
+          {
+            "unit_index": 60,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/6",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Thief... Kluex will strike you down...",
+            "luna_tr": "Hırsız... Kluex seni yere serecek...",
+            "approved_tr": "Hırsız... Kluex seni yere serecek..."
+          },
+          {
+            "unit_index": 61,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/7",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "You will be buried... with the rest...",
+            "luna_tr": "Diğerleriyle birlikte... gömüleceksin...",
+            "approved_tr": "Gömüleceksin... diğerleriyle birlikte..."
+          },
+          {
+            "unit_index": 62,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/8",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Please, release me from my bonds...",
+            "luna_tr": "Lütfen... beni bağlarımdan kurtar...",
+            "approved_tr": "Lütfen, beni bağlarımdan kurtar..."
+          },
+          {
+            "unit_index": 63,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/9",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Die by my sword...",
+            "luna_tr": "Kılıcımla... can vereceksin...",
+            "approved_tr": "Kılıcımla can ver..."
+          },
+          {
+            "unit_index": 64,
+            "asset": "npcs/dungeon/pyramidguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/dungeon/pyramidguard.npctype",
+            "en": "Intruder!",
+            "luna_tr": "İzinsiz giren var!",
+            "approved_tr": "İzinsiz giren var!"
+          }
+        ]
+      }
+    ],
+    "spawn_references": [
+      {
+        "source": "dungeons/avian/aviantomb/aviantomb.dungeon",
+        "pointer": "/tiles/378/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantomb/aviantomb.dungeon",
+        "pointer": "/tiles/379/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantomb/aviantomb.dungeon",
+        "pointer": "/tiles/380/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantomb/aviantomb.dungeon",
+        "pointer": "/tiles/381/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "tombguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantower/aviantower.dungeon",
+        "pointer": "/tiles/361/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantower/aviantower.dungeon",
+        "pointer": "/tiles/362/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantower/aviantower.dungeon",
+        "pointer": "/tiles/363/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/avian/aviantower/aviantower.dungeon",
+        "pointer": "/tiles/364/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "tombguard"
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/1.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/11.json",
+        "pointer": "/layers/3/objects/13/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/10.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/12.json",
+        "pointer": "/layers/3/objects/13/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/13.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/14.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/underground/radars/challengelabsradar5.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/underground/radars/challengelabsradar5.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/underground/radars/challengelabsradar5.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "tombguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/underground/radars/challengelabsradar5.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "tombguard"
+        }
+      },
+      {
+        "source": "dungeons/apex/apextestchamber/apextestchamber.dungeon",
+        "pointer": "/tiles/281/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguard"
+        }
+      },
+      {
+        "source": "dungeons/apex/apextestchamber/apextestchamber.dungeon",
+        "pointer": "/tiles/282/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguardlookout"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/2/objects/1017/properties/parameters(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "templeguard"
+          ],
+          "npcParams": {
+            "aggressive": true
+          },
+          "position": [
+            0,
+            0
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            3,
+            3
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/2/objects/1018/properties/parameters(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "templeguard"
+          ],
+          "npcParams": {
+            "aggressive": true
+          },
+          "position": [
+            0,
+            0
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            3,
+            3
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/9/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/10/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/11/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/12/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/24/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/25/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/32/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/33/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/34/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/35/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/41/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/missions/ancienttemple/ancienttemple.json",
+        "pointer": "/layers/3/objects/42/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/27.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/0/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labguardlookout"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 75,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 1,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/1/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labguardlookout",
+            "apexscout"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 25,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 1,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/3/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 45,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/4/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 45,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/7/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labguardlookout"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 75,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 1,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/8/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labguardlookout",
+            "apexscout"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 25,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 1,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/9/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 45,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/entrance1.json",
+        "pointer": "/layers/4/objects/12/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labguardlookout"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 35,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 1,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/9.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/22.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/8.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/21.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/6.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/20.json",
+        "pointer": "/layers/3/objects/16/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/5.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/2.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/4.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/3.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/apex/apexresearchlab/16.json",
+        "pointer": "/layers/5/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "apex"
+          ],
+          "npcTypes": [
+            "labscientist",
+            "labscientist",
+            "apexscout",
+            "labguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 50,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 2,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/aviansilo/aviansilo.dungeon",
+        "pointer": "/tiles/475/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/aviansilo/aviansilo.dungeon",
+        "pointer": "/tiles/476/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/aviansilo/aviansilo.dungeon",
+        "pointer": "/tiles/477/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/aviansilo/aviansilo.dungeon",
+        "pointer": "/tiles/486/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "pyramidguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/aviansilo/aviansilo.dungeon",
+        "pointer": "/tiles/487/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguard",
+          "parameters": {
+            "scriptConfig": {
+              "guard": {
+                "patrolDistance": 0,
+                "noticeDistance": 30,
+                "hailDistance": 30,
+                "stopDistance": 10,
+                "attackDistance": 5
+              }
+            }
+          }
+        }
+      },
+      {
+        "source": "dungeons/floran/floranhell/floranhell.dungeon",
+        "pointer": "/tiles/388/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "floran",
+          "typeName": "hellguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/avianpyramid/avianpyramid.dungeon",
+        "pointer": "/tiles/314/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/avianpyramid/avianpyramid.dungeon",
+        "pointer": "/tiles/315/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/avianpyramid/avianpyramid.dungeon",
+        "pointer": "/tiles/316/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid6.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid6.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid6.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid6.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid5.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid5.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid5.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid5.json",
+        "pointer": "/layers/3/objects/4/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid4.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid4.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid4.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid3.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid3.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid3.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid3.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid3.json",
+        "pointer": "/layers/3/objects/4/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid2.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid2.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid1.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid1.json",
+        "pointer": "/layers/3/objects/4/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid1.json",
+        "pointer": "/layers/3/objects/5/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/pyramid1.json",
+        "pointer": "/layers/3/objects/6/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/2/objects/58/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/3/objects/4/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/3/objects/5/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/3/objects/6/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor2.json",
+        "pointer": "/layers/3/objects/7/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/0/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/1/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/2/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/3/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/4/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/5/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/worldgen/aviandeeppyramid/anchor1.json",
+        "pointer": "/layers/3/objects/6/properties",
+        "data": {
+          "npc": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/avianfloatingislands/avianfloatingislands.dungeon",
+        "pointer": "/tiles/315/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/avianfloatingislands/avianfloatingislands.dungeon",
+        "pointer": "/tiles/316/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/avian/avianfloatingislands/avianfloatingislands.dungeon",
+        "pointer": "/tiles/317/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/avianunderground/avianundergroundencounter.dungeon",
+        "pointer": "/tiles/372/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/avianunderground/avianundergroundencounter.dungeon",
+        "pointer": "/tiles/373/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/avianunderground/avianundergroundencounter.dungeon",
+        "pointer": "/tiles/374/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "templeguard"
+        }
+      },
+      {
+        "source": "dungeons/other/scifidungeon/scifidungeon.dungeon",
+        "pointer": "/tiles/189/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "avian",
+          "typeName": "pyramidguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/apex/apexspaceelevator/apexspaceelevator.dungeon",
+        "pointer": "/tiles/230/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguard"
+        }
+      },
+      {
+        "source": "dungeons/DungeoneerDungeons/apex/apexspaceelevator/apexspaceelevator.dungeon",
+        "pointer": "/tiles/231/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguard",
+          "parameters": {
+            "scriptConfig": {
+              "guard": {
+                "patrolDistance": 0,
+                "noticeDistance": 30,
+                "hailDistance": 30,
+                "stopDistance": 10,
+                "attackDistance": 5
+              }
+            }
+          }
+        }
+      },
+      {
+        "source": "dungeons/space/flyingpyramid/room6.json",
+        "pointer": "/layers/3/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "tombguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 55,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/flyingpyramid/room5.json",
+        "pointer": "/layers/5/objects/1/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "tombguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 55,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/flyingpyramid/base2.json",
+        "pointer": "/layers/3/objects/8/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "templeguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 55,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/flyingpyramid/base2.json",
+        "pointer": "/layers/3/objects/9/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "templeguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 55,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/flyingpyramid/base1.json",
+        "pointer": "/layers/3/objects/2/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "templeguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 55,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/space/flyingpyramid/base1.json",
+        "pointer": "/layers/3/objects/3/properties/1/value(decoded)/spawner",
+        "data": {
+          "npcSpecies": [
+            "avian"
+          ],
+          "npcTypes": [
+            "templeguard"
+          ],
+          "npcParams": {
+            "aggressive": true,
+            "persistent": true
+          },
+          "spawnchance": 55,
+          "position": [
+            0,
+            2
+          ],
+          "positionVariance": [
+            0,
+            0
+          ],
+          "frequency": [
+            0.2,
+            0.2
+          ],
+          "stock": 4,
+          "trigger": "wire",
+          "outOfSight": false
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/apexunderground/apexundergroundencounter.dungeon",
+        "pointer": "/tiles/286/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguard"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/apexunderground/apexundergroundencounter.dungeon",
+        "pointer": "/tiles/287/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "apex",
+          "typeName": "labguardlookout"
+        }
+      },
+      {
+        "source": "dungeons/microdungeons/randomencounter/floranunderground/floranundergroundencounter.dungeon",
+        "pointer": "/tiles/394/brush/0/1",
+        "data": {
+          "kind": "npc",
+          "species": "floran",
+          "typeName": "hellguard"
+        }
+      }
+    ],
+    "spawn_summary": {
+      "labguard": {
+        "references": 26,
+        "files": 23,
+        "species": [
+          "apex"
+        ]
+      },
+      "labguardlookout": {
+        "references": 7,
+        "files": 3,
+        "species": [
+          "apex"
+        ]
+      },
+      "templeguard": {
+        "references": 76,
+        "files": 18,
+        "species": [
+          "avian"
+        ]
+      },
+      "tombguard": {
+        "references": 6,
+        "files": 5,
+        "species": [
+          "avian"
+        ]
+      },
+      "hellguard": {
+        "references": 2,
+        "files": 2,
+        "species": [
+          "floran"
+        ]
+      },
+      "pyramidguard": {
+        "references": 2,
+        "files": 2,
+        "species": [
+          "avian"
+        ]
+      }
+    },
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "source_utterances_reviewed": 65,
+    "direct_fields": 30,
+    "layered_fields": 35,
+    "grounded_lore": [
+      {
+        "source": "codex/legacy_codex/fuavianclippedcouncil.codex",
+        "pointer": "/contentPages/2",
+        "note": "Grounded named as a distinct group opposed to the council."
+      },
+      {
+        "source": "codex/legacy_codex/fugreenfingercodexmethods.codex",
+        "pointer": "/contentPages/0",
+        "note": "Grounded discussed as Avians who defy their god; same source later says atheist Avians."
+      },
+      {
+        "source": "codex/legacy_codex/fuascendant2.codex",
+        "pointer": "/contentPages/1",
+        "note": "Grounded contrasted with Flightless devoted to Kluex. These available lore texts establish a named community,not generic surface location."
+      }
+    ],
+    "limitations": [
+      "Legacy lore is used for name/meaning context only,not a claim that these codex books are live obtainable.",
+      "Vanilla templeguard/tombguard definitions,base and hostileguard behavior are absent; actual hail/attack invocation unverified.",
+      "Labguard attack references missing dialog/miniknogthreats.config:attack; those outside-source lines are not included among these65fields.",
+      "Spawn/brush/decoded spawner definitions are static evidence. Live activation/font/balloon fit NOT TESTED."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All65 EN/TR variants and exact occurrences reviewed; four direct NPC definitions account for30fields,two FU patches for35fields. Vanilla templeguard/tombguard definitions and parents are absent; no parent inferred from neighbor types.",
+    "Available hostilefu parent and dialog.lua selection helper read. Vanilla base and hostileguard consumer implementation absent. Actual hail/attack invocation and live activation for all six NPC types unverified.",
+    "Labguard types reference missing miniknogthreats.config:attack; those external route texts are outside this65field package.",
+    "All named dungeon files and exact brush/Tiled/spawner records inspected. Speaker species verified as Apex,Avian or Floran per type; static placement is not live dialogue proof. Dictionary-property projections deduplicated before counting source references.",
+    "Available legacy FU lore distinguishes named Grounded community from Kluex-devoted Flightless. Grounded faction name preserved in new threat and one older merchant inspection line; source lowercase grounded in that merchant context refers to the same community. No claim that these legacy codex books are live obtainable.",
+    "Grounded is locked as an exact name; no global in-text rule forces ordinary electrical grounded to remain English. Both reviewed faction sentences are full-reply locked; no English-utterance preserve binding or new format/TM exception added.",
+    "Floran natural s hiss,will versus should,authored hesitation and pauses,conditional threats,imperative sword curse and religious soul meaning corrected. No source-independent enemy,motive,ritual or gameplay mechanic added.",
+    "Previous20094catalog fields:20093unchanged,one explicit merchant meaning correction. Name forms,full replies,technical IDs/equipment/loot/AI untouched outside those text fields.",
+    "Live font/layout/branch activation LQA NOT TESTED. No Steam online upload,game installation or shutdown. This is new six-run round1; success counter advances only after all local/CI/byte gates."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}
