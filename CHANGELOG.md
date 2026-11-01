@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.85.0 Beta — Nightar konuşmaları
+
+10 NPC dosyasında 58 yeni alan /58 bağlam, 24 farklı kaynak metin: dost KingSlayer, Kavaserai, iki kral ve altı Nightar savaşçısı. Confirmed npcs/nightar ailesinin kalan dilimi tamamlandı; 95 review adayı kapsam dışıdır. Katalog 20.217 alan; önceki 20.159 alan aynen korundu.
+
+8 alanda 9 cümle/kısa ifade düzeltildi: ölüm tehdidi, bedensel güç imgesi, şeref/kan paralelliği, böcek benzetmesi, meydan okuyucu hitabı ve seçkin savaşçı rütbesi. Heptarch kaynak öz tanımı ve 24 tam replik için 25 yeni LOCKED, toplam 972; eski kilitler aynı. Matriarch karşılığı teslimde doğruydu ve düzeltme sayılmadı. İki kralın kimlik/öz tanım farkı kaynakta korundu. Üç statik Kavaserai yerleşimi bulundu; harita 18 incelenen kök zindanın 1–17 anchor/part listelerinde yoktur. Vanilla parent ve aktif çağrılar eksik olduğundan canlı tetikleme doğrulanmadı. FU 6.5.8 pini ve mekanikler aynı; canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/nightar-20261101.json) · [Oyun kontrolü](docs/lqa/LQA_V085_20261101.md)
+
 ## v0.84.0 Beta — Zindan muhafızları
 
 6 NPC varlığında 65 yeni alan /65 bağlam, 42 farklı kaynak metin: laboratuvar muhafızı/gözcüsü, Avian tapınak/mezar muhafızları, Floran hellguard ve piramit muhafızı. 2 hail, 63 attack; 30 doğrudan FU alanı ve 35 FU patch alanı. Confirmed npcs/dungeon ailesi tamamlandı; diğer review/Lua adayları tamam sayılmaz. Katalog 20.159 alan; önceki 20.094 alandan 20.093 aynı, bir tüccar açıklamasındaki Avian topluluğu adı eşlendi.

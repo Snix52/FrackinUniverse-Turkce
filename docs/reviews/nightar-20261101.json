@@ -1,0 +1,1131 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-01",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 8,
+  "run_id": "fu-six-20261101",
+  "run_round": 2,
+  "base_commit": "2690838bc4ffcab50212837b7db1729afc2ff520",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 58,
+    "context_groups": 58,
+    "unique_english_strings": 24,
+    "assets": {
+      "npcs/nightar/friendlykingslayer.npctype": 7,
+      "npcs/nightar/nightarkavaserai.npctype": 5,
+      "npcs/nightar/nightarking.npctype": 8,
+      "npcs/nightar/nightarking2.npctype": 8,
+      "npcs/nightar/nightarkingsguard.npctype": 5,
+      "npcs/nightar/nightarkingslayer.npctype": 5,
+      "npcs/nightar/nightarknave.npctype": 5,
+      "npcs/nightar/nightarknight.npctype": 5,
+      "npcs/nightar/nightarpaladin.npctype": 5,
+      "npcs/nightar/nightarsoldier.npctype": 5
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 58,
+    "dialogue_events": {
+      "attack": 38,
+      "cantReach": 3,
+      "cheerOn": 3,
+      "killedTarget": 3,
+      "lostTarget": 3,
+      "outOfSight": 3,
+      "reattack": 5
+    },
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 8,
+    "sentences_including_repeated_fields": 9,
+    "unique_source_strings_corrected": 6,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 8,
+    "total_corrected_sentences": 9,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged clauses excluded. Repeated occurrence fields counted separately."
+  },
+  "new_locked_terms": 25,
+  "new_locked_names": [
+    "Heptarch",
+    "I guard the path set by the Matriarch.",
+    "The darkness will turn on you...!",
+    "Show them no quarter!",
+    "The foe is slain. Thank you for your assistance, my friend. Until we meet again.",
+    "There is no where to hide.",
+    "It is pointless to hide!",
+    "Face my wrath, you wretch!",
+    "Attack!",
+    "Your death comes this day.",
+    "Blade and sinew. The way is clear.",
+    "Honor meets honor. Blood meets blood.",
+    "I do as She commands.",
+    "I am Heptarch. I alone defeated one-thousand foes and was made glorious through victory. Kneel.",
+    "You will not escape, wretch.",
+    "Onward!",
+    "Crushed like the insect you are.",
+    "You really believe the darkness to be your ally, challenger...?",
+    "There will be no honor in your death.",
+    "May She guide my blade.",
+    "You want a fight? Very well!",
+    "Our swordsmanship is unparalleled!",
+    "This is our territory, and ours alone!",
+    "I've been trained by the best! You have no chance against me!",
+    "I hold rank in the warrior elite. Can you say the same?"
+  ],
+  "locked_total": 972,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "1daf6226e682e285bd4916f6227f603c1670af70eae6e9582a5501b0d37a9e6a",
+  "luna_original_packet_sha256": "cbdee068ef58fba9df1decd2cbca55bbdccf0c3cc4ade20f3e140ef3dfac444b",
+  "approved_rows_sha256": "60fdcb55105c96b6dc3d2ecfae3899c384cefc8a5efdd398c2033f01323ac470",
+  "corrections": [
+    {
+      "unit_index": 8,
+      "en": "Your death comes this day.",
+      "before": "Bugün ölümün geliyor.",
+      "after": "Bugün öleceksin.",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarkavaserai.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/1",
+          "origin": "npcs/nightar/nightarkavaserai.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın bugüne yönelen ölüm tehdidi doğal Türkçeyle verildi; ölümün geliyor sözcük dizimi kopyalanmadı."
+    },
+    {
+      "unit_index": 9,
+      "en": "Blade and sinew. The way is clear.",
+      "before": "Kılıç ve tendon. Yol açık.",
+      "after": "Kılıç ve kas gücü. Yol açık.",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarkavaserai.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/2",
+          "origin": "npcs/nightar/nightarkavaserai.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Nightar savaşçı üslubunda sinew bedensel güç imgesidir; klinik tendon sözcüğü yerine kas gücü kullanıldı. Anatomik sinir veya yeni istatistik/mekanik eklenmedi. Değişmeyen Yol açık cümlesi ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 10,
+      "en": "Honor meets honor. Blood meets blood.",
+      "before": "Şerefe şeref, kana kan.",
+      "after": "Şeref şerefle buluşur. Kan kanla buluşur.",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarkavaserai.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/3",
+          "origin": "npcs/nightar/nightarkavaserai.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Karşılıklı buluşma paralelliği iki cümlede korundu; şerefe şeref,kana kan kalıbının kaynakta olmayan misilleme çağrışımı kaldırıldı."
+    },
+    {
+      "unit_index": 15,
+      "en": "Crushed like the insect you are.",
+      "before": "Tam da olduğun böcek gibi ezildin.",
+      "after": "Bir böcek gibi ezildin.",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarking.npctype",
+          "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+          "origin": "npcs/nightar/nightarking.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Tam da olduğun böcek gibi yapısının İngilizce söz dizimi Türkçede doğal benzetmeye dönüştürüldü; ölüm sonrası ezilme ve böcek küçümsemesi korundu."
+    },
+    {
+      "unit_index": 17,
+      "en": "You really believe the darkness to be your ally, challenger...?",
+      "before": "Karanlığın gerçekten de müttefikin olduğuna inanıyor musun, meydan okuyan...?",
+      "after": "Karanlığın müttefikin olduğuna gerçekten inanıyor musun, meydan okuyucu...?",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarking.npctype",
+          "pointer": "/scriptConfig/dialog/outOfSight/default/default/0",
+          "origin": "npcs/nightar/nightarking.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Really believe vurgusu inanmak eylemine bağlandı; çıplak meydan okuyan sıfat-fiili yerine hitap adı meydan okuyucu kullanıldı. Son tereddüt/soru korundu."
+    },
+    {
+      "unit_index": 23,
+      "en": "Crushed like the insect you are.",
+      "before": "Tam da olduğun böcek gibi ezildin.",
+      "after": "Bir böcek gibi ezildin.",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarking2.npctype",
+          "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+          "origin": "npcs/nightar/nightarking2.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Tam da olduğun böcek gibi yapısının İngilizce söz dizimi Türkçede doğal benzetmeye dönüştürüldü; ölüm sonrası ezilme ve böcek küçümsemesi korundu."
+    },
+    {
+      "unit_index": 25,
+      "en": "You really believe the darkness to be your ally, challenger...?",
+      "before": "Karanlığın gerçekten de müttefikin olduğuna inanıyor musun, meydan okuyan...?",
+      "after": "Karanlığın müttefikin olduğuna gerçekten inanıyor musun, meydan okuyucu...?",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarking2.npctype",
+          "pointer": "/scriptConfig/dialog/outOfSight/default/default/0",
+          "origin": "npcs/nightar/nightarking2.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Really believe vurgusu inanmak eylemine bağlandı; çıplak meydan okuyan sıfat-fiili yerine hitap adı meydan okuyucu kullanıldı. Son tereddüt/soru korundu."
+    },
+    {
+      "unit_index": 40,
+      "en": "I hold rank in the warrior elite. Can you say the same?",
+      "before": "Savaşçı seçkinleri içinde bir rütbem var. Sen de aynısını söyleyebilir misin?",
+      "after": "Seçkin savaşçılar arasında rütbe sahibiyim. Sen de aynısını söyleyebilir misin?",
+      "occurrences": [
+        {
+          "asset": "npcs/nightar/nightarknave.npctype",
+          "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+          "origin": "npcs/nightar/nightarknave.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Seçkin savaşçıların arasındaki rütbe Türkçede doğal kuruldu; değişmeyen ikinci soru düzeltme sayısına eklenmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "cbdee068ef58fba9df1decd2cbca55bbdccf0c3cc4ade20f3e140ef3dfac444b",
+    "filled_units": 58
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 58,
+    "context_units": 58,
+    "qa": {
+      "catalog_units_checked": 35010,
+      "raw_units_checked": 115,
+      "locked_terms": 972
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/nightar/friendlykingslayer.npctype",
+        "note": "Sol read all 7 source/translation occurrences; type=friendlykingslayer, baseType=friendlyguard. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarkavaserai.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarkavaserai, baseType=hostilefuhard. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarking.npctype",
+        "note": "Sol read all 8 source/translation occurrences; type=nightarking, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarking2.npctype",
+        "note": "Sol read all 8 source/translation occurrences; type=nightarking2, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarkingsguard.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarkingsguard, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarkingslayer.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarkingslayer, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarknave.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarknave, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarknight.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarknight, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarpaladin.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarpaladin, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/npcs/nightar/nightarsoldier.npctype",
+        "note": "Sol read all 5 source/translation occurrences; type=nightarsoldier, baseType=hostile. Identity metadata and configured dialogue event/species branches recorded without reconstructing missing parents."
+      },
+      {
+        "source": "fu_source/codex/nightar/funightarhistory2.codex; fu_source/codex/nightar/funightarhistory3.codex; fu_source/codex/nightar/funightarhistory4.codex; fu_source/codex/nightar/funightarhistory5.codex; fu_source/codex/nightar/funightardoc1.codex; fu_source/codex/nightar/funightardoc2.codex",
+        "note": "Sol read all six source codices. history2 explicitly calls narrator non-Nightar and identifies She as Great Matriarch/Avemnedara; history3 says unknown. Existing Matriarch title is used without inserting a new personal name or gender wording. Honor/sword/physical-strength rhetoric reviewed."
+      },
+      {
+        "source": "fu_source/npcs/hostilefuhard.npctype; fu_source/npcs/hostile.npctype.patch; fu_source/npcs/base.npctype.patch",
+        "note": "Sol verified hostilefuhard→base/hostileguard. Missing friendlyguard/hostile/base full definitions and active hostileguard implementation remain unverified. base patch includes chat/status/race-effect source additions beyond timing; those additions do not establish the missing dialogue caller."
+      },
+      {
+        "source": "fu_source/dungeons/encounterdungeons/underground/funderground18.json; fu_source/dungeons/encounterdungeons/underground/fuunderground.dungeon",
+        "note": "Sol decoded three Nightar Kavaserai placements; root has only17anchors AND17parts. Exact type-name scan of all pinned FU files finds only10NPC definitions plus this map. Dynamic/vanilla/external loaders and actual live activation remain unverified."
+      },
+      {
+        "source": "fu_source/scripts/actions/dialog.lua",
+        "note": "Speaker species first,target species second/default helper selection. Six attack/nightar branches have no independently established runtime speaker species. Helper is not an active event or live trigger proof."
+      }
+    ],
+    "note": "All58 EN/TR variants and occurrences reviewed by Sol. Existing Matriarch/She rendering approved unchanged; no new personal name inserted. Authored identities,engine IDs,items and behavior data remain untouched; active caller/live LQA NOT TESTED."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/nightar/friendlykingslayer.npctype",
+        "type": "friendlykingslayer",
+        "base_type": "friendlyguard",
+        "identity": {
+          "name": "KingSlayer",
+          "gender": "male",
+          "race": "nightar"
+        },
+        "damage_team_type": "assistant",
+        "fields": 7,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "I guard the path set by the Matriarch.",
+            "luna_tr": "Matriarch'ın belirlediği yolu koruyorum.",
+            "approved_tr": "Matriarch'ın belirlediği yolu koruyorum."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/cantReach/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "The darkness will turn on you...!",
+            "luna_tr": "Karanlık sana düşman kesilecek...!",
+            "approved_tr": "Karanlık sana düşman kesilecek...!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/cheerOn/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "Show them no quarter!",
+            "luna_tr": "Onlara aman vermeyin!",
+            "approved_tr": "Onlara aman vermeyin!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "The foe is slain. Thank you for your assistance, my friend. Until we meet again.",
+            "luna_tr": "Düşman öldürüldü. Yardımın için teşekkürler, dostum. Yeniden görüşmek üzere.",
+            "approved_tr": "Düşman öldürüldü. Yardımın için teşekkürler, dostum. Yeniden görüşmek üzere."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/lostTarget/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "There is no where to hide.",
+            "luna_tr": "Saklanacak yer yok.",
+            "approved_tr": "Saklanacak yer yok."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/outOfSight/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "It is pointless to hide!",
+            "luna_tr": "Saklanmak boşuna!",
+            "approved_tr": "Saklanmak boşuna!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/nightar/friendlykingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/reattack/default/default/0",
+            "origin": "npcs/nightar/friendlykingslayer.npctype",
+            "en": "Face my wrath, you wretch!",
+            "luna_tr": "Gazabımla yüzleş, zavallı!",
+            "approved_tr": "Gazabımla yüzleş, zavallı!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarkavaserai.npctype",
+        "type": "nightarkavaserai",
+        "base_type": "hostilefuhard",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 7,
+            "asset": "npcs/nightar/nightarkavaserai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarkavaserai.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/nightar/nightarkavaserai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/nightar/nightarkavaserai.npctype",
+            "en": "Your death comes this day.",
+            "luna_tr": "Bugün ölümün geliyor.",
+            "approved_tr": "Bugün öleceksin."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/nightar/nightarkavaserai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/nightar/nightarkavaserai.npctype",
+            "en": "Blade and sinew. The way is clear.",
+            "luna_tr": "Kılıç ve tendon. Yol açık.",
+            "approved_tr": "Kılıç ve kas gücü. Yol açık."
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/nightar/nightarkavaserai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/nightar/nightarkavaserai.npctype",
+            "en": "Honor meets honor. Blood meets blood.",
+            "luna_tr": "Şerefe şeref, kana kan.",
+            "approved_tr": "Şeref şerefle buluşur. Kan kanla buluşur."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/nightar/nightarkavaserai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/nightar/nightarkavaserai.npctype",
+            "en": "I do as She commands.",
+            "luna_tr": "Matriarch'ın buyruğunu yerine getiririm.",
+            "approved_tr": "Matriarch'ın buyruğunu yerine getiririm."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarking.npctype",
+        "type": "nightarking",
+        "base_type": "hostile",
+        "identity": {
+          "name": "Gin_Yorukishi_III",
+          "gender": "male",
+          "race": "nightar"
+        },
+        "damage_team_type": null,
+        "fields": 8,
+        "entries": [
+          {
+            "unit_index": 12,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "I am Heptarch. I alone defeated one-thousand foes and was made glorious through victory. Kneel.",
+            "luna_tr": "Ben Heptarch'ım. Tek başıma bin düşmanı yendim; zaferle yüceldim. Diz çök.",
+            "approved_tr": "Ben Heptarch'ım. Tek başıma bin düşmanı yendim; zaferle yüceldim. Diz çök."
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/cantReach/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "You will not escape, wretch.",
+            "luna_tr": "Kaçamayacaksın, sefil.",
+            "approved_tr": "Kaçamayacaksın, sefil."
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/cheerOn/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "Onward!",
+            "luna_tr": "İleri!",
+            "approved_tr": "İleri!"
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "Crushed like the insect you are.",
+            "luna_tr": "Tam da olduğun böcek gibi ezildin.",
+            "approved_tr": "Bir böcek gibi ezildin."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/lostTarget/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "It is pointless to hide!",
+            "luna_tr": "Saklanmak boşuna!",
+            "approved_tr": "Saklanmak boşuna!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/outOfSight/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "You really believe the darkness to be your ally, challenger...?",
+            "luna_tr": "Karanlığın gerçekten de müttefikin olduğuna inanıyor musun, meydan okuyan...?",
+            "approved_tr": "Karanlığın müttefikin olduğuna gerçekten inanıyor musun, meydan okuyucu...?"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/reattack/default/default/0",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "There will be no honor in your death.",
+            "luna_tr": "Ölümünde şeref olmayacak.",
+            "approved_tr": "Ölümünde şeref olmayacak."
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/nightar/nightarking.npctype",
+            "pointer": "/scriptConfig/dialog/reattack/default/default/1",
+            "origin": "npcs/nightar/nightarking.npctype",
+            "en": "May She guide my blade.",
+            "luna_tr": "Matriarch kılıcıma yol göstersin.",
+            "approved_tr": "Matriarch kılıcıma yol göstersin."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarking2.npctype",
+        "type": "nightarking2",
+        "base_type": "hostile",
+        "identity": {
+          "name": "Gin_Yorukishi_III",
+          "gender": "male",
+          "race": "nightar"
+        },
+        "damage_team_type": null,
+        "fields": 8,
+        "entries": [
+          {
+            "unit_index": 20,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "I am Heptarch. I alone defeated one-thousand foes and was made glorious through victory. Kneel.",
+            "luna_tr": "Ben Heptarch'ım. Tek başıma bin düşmanı yendim; zaferle yüceldim. Diz çök.",
+            "approved_tr": "Ben Heptarch'ım. Tek başıma bin düşmanı yendim; zaferle yüceldim. Diz çök."
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/cantReach/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "You will not escape, wretch.",
+            "luna_tr": "Kaçamayacaksın, sefil.",
+            "approved_tr": "Kaçamayacaksın, sefil."
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/cheerOn/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "Onward!",
+            "luna_tr": "İleri!",
+            "approved_tr": "İleri!"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/killedTarget/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "Crushed like the insect you are.",
+            "luna_tr": "Tam da olduğun böcek gibi ezildin.",
+            "approved_tr": "Bir böcek gibi ezildin."
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/lostTarget/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "It is pointless to hide!",
+            "luna_tr": "Saklanmak boşuna!",
+            "approved_tr": "Saklanmak boşuna!"
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/outOfSight/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "You really believe the darkness to be your ally, challenger...?",
+            "luna_tr": "Karanlığın gerçekten de müttefikin olduğuna inanıyor musun, meydan okuyan...?",
+            "approved_tr": "Karanlığın müttefikin olduğuna gerçekten inanıyor musun, meydan okuyucu...?"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/reattack/default/default/0",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "There will be no honor in your death.",
+            "luna_tr": "Ölümünde şeref olmayacak.",
+            "approved_tr": "Ölümünde şeref olmayacak."
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/nightar/nightarking2.npctype",
+            "pointer": "/scriptConfig/dialog/reattack/default/default/1",
+            "origin": "npcs/nightar/nightarking2.npctype",
+            "en": "May She guide my blade.",
+            "luna_tr": "Matriarch kılıcıma yol göstersin.",
+            "approved_tr": "Matriarch kılıcıma yol göstersin."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarkingsguard.npctype",
+        "type": "nightarkingsguard",
+        "base_type": "hostile",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 28,
+            "asset": "npcs/nightar/nightarkingsguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarkingsguard.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/nightar/nightarkingsguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/0",
+            "origin": "npcs/nightar/nightarkingsguard.npctype",
+            "en": "You want a fight? Very well!",
+            "luna_tr": "Dövüş mü istiyorsun? Öyle olsun!",
+            "approved_tr": "Dövüş mü istiyorsun? Öyle olsun!"
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/nightar/nightarkingsguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+            "origin": "npcs/nightar/nightarkingsguard.npctype",
+            "en": "Our swordsmanship is unparalleled!",
+            "luna_tr": "Kılıç ustalığımızın eşi benzeri yok!",
+            "approved_tr": "Kılıç ustalığımızın eşi benzeri yok!"
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/nightar/nightarkingsguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/2",
+            "origin": "npcs/nightar/nightarkingsguard.npctype",
+            "en": "This is our territory, and ours alone!",
+            "luna_tr": "Burası bizim bölgemiz, yalnızca bizim!",
+            "approved_tr": "Burası bizim bölgemiz, yalnızca bizim!"
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/nightar/nightarkingsguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/3",
+            "origin": "npcs/nightar/nightarkingsguard.npctype",
+            "en": "I've been trained by the best! You have no chance against me!",
+            "luna_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!",
+            "approved_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarkingslayer.npctype",
+        "type": "nightarkingslayer",
+        "base_type": "hostile",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 33,
+            "asset": "npcs/nightar/nightarkingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarkingslayer.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/nightar/nightarkingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/0",
+            "origin": "npcs/nightar/nightarkingslayer.npctype",
+            "en": "You want a fight? Very well!",
+            "luna_tr": "Dövüş mü istiyorsun? Öyle olsun!",
+            "approved_tr": "Dövüş mü istiyorsun? Öyle olsun!"
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/nightar/nightarkingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+            "origin": "npcs/nightar/nightarkingslayer.npctype",
+            "en": "Our swordsmanship is unparalleled!",
+            "luna_tr": "Kılıç ustalığımızın eşi benzeri yok!",
+            "approved_tr": "Kılıç ustalığımızın eşi benzeri yok!"
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/nightar/nightarkingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/2",
+            "origin": "npcs/nightar/nightarkingslayer.npctype",
+            "en": "This is our territory, and ours alone!",
+            "luna_tr": "Burası bizim bölgemiz, yalnızca bizim!",
+            "approved_tr": "Burası bizim bölgemiz, yalnızca bizim!"
+          },
+          {
+            "unit_index": 37,
+            "asset": "npcs/nightar/nightarkingslayer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/3",
+            "origin": "npcs/nightar/nightarkingslayer.npctype",
+            "en": "I've been trained by the best! You have no chance against me!",
+            "luna_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!",
+            "approved_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarknave.npctype",
+        "type": "nightarknave",
+        "base_type": "hostile",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 38,
+            "asset": "npcs/nightar/nightarknave.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarknave.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/nightar/nightarknave.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/0",
+            "origin": "npcs/nightar/nightarknave.npctype",
+            "en": "You want a fight? Very well!",
+            "luna_tr": "Dövüş mü istiyorsun? Öyle olsun!",
+            "approved_tr": "Dövüş mü istiyorsun? Öyle olsun!"
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/nightar/nightarknave.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+            "origin": "npcs/nightar/nightarknave.npctype",
+            "en": "I hold rank in the warrior elite. Can you say the same?",
+            "luna_tr": "Savaşçı seçkinleri içinde bir rütbem var. Sen de aynısını söyleyebilir misin?",
+            "approved_tr": "Seçkin savaşçılar arasında rütbe sahibiyim. Sen de aynısını söyleyebilir misin?"
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/nightar/nightarknave.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/2",
+            "origin": "npcs/nightar/nightarknave.npctype",
+            "en": "This is our territory, and ours alone!",
+            "luna_tr": "Burası bizim bölgemiz, yalnızca bizim!",
+            "approved_tr": "Burası bizim bölgemiz, yalnızca bizim!"
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/nightar/nightarknave.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/3",
+            "origin": "npcs/nightar/nightarknave.npctype",
+            "en": "I've been trained by the best! You have no chance against me!",
+            "luna_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!",
+            "approved_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarknight.npctype",
+        "type": "nightarknight",
+        "base_type": "hostile",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 43,
+            "asset": "npcs/nightar/nightarknight.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarknight.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/nightar/nightarknight.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/0",
+            "origin": "npcs/nightar/nightarknight.npctype",
+            "en": "You want a fight? Very well!",
+            "luna_tr": "Dövüş mü istiyorsun? Öyle olsun!",
+            "approved_tr": "Dövüş mü istiyorsun? Öyle olsun!"
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/nightar/nightarknight.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+            "origin": "npcs/nightar/nightarknight.npctype",
+            "en": "Our swordsmanship is unparalleled!",
+            "luna_tr": "Kılıç ustalığımızın eşi benzeri yok!",
+            "approved_tr": "Kılıç ustalığımızın eşi benzeri yok!"
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/nightar/nightarknight.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/2",
+            "origin": "npcs/nightar/nightarknight.npctype",
+            "en": "This is our territory, and ours alone!",
+            "luna_tr": "Burası bizim bölgemiz, yalnızca bizim!",
+            "approved_tr": "Burası bizim bölgemiz, yalnızca bizim!"
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/nightar/nightarknight.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/3",
+            "origin": "npcs/nightar/nightarknight.npctype",
+            "en": "I've been trained by the best! You have no chance against me!",
+            "luna_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!",
+            "approved_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarpaladin.npctype",
+        "type": "nightarpaladin",
+        "base_type": "hostile",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 48,
+            "asset": "npcs/nightar/nightarpaladin.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarpaladin.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 49,
+            "asset": "npcs/nightar/nightarpaladin.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/0",
+            "origin": "npcs/nightar/nightarpaladin.npctype",
+            "en": "You want a fight? Very well!",
+            "luna_tr": "Dövüş mü istiyorsun? Öyle olsun!",
+            "approved_tr": "Dövüş mü istiyorsun? Öyle olsun!"
+          },
+          {
+            "unit_index": 50,
+            "asset": "npcs/nightar/nightarpaladin.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+            "origin": "npcs/nightar/nightarpaladin.npctype",
+            "en": "Our swordsmanship is unparalleled!",
+            "luna_tr": "Kılıç ustalığımızın eşi benzeri yok!",
+            "approved_tr": "Kılıç ustalığımızın eşi benzeri yok!"
+          },
+          {
+            "unit_index": 51,
+            "asset": "npcs/nightar/nightarpaladin.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/2",
+            "origin": "npcs/nightar/nightarpaladin.npctype",
+            "en": "This is our territory, and ours alone!",
+            "luna_tr": "Burası bizim bölgemiz, yalnızca bizim!",
+            "approved_tr": "Burası bizim bölgemiz, yalnızca bizim!"
+          },
+          {
+            "unit_index": 52,
+            "asset": "npcs/nightar/nightarpaladin.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/3",
+            "origin": "npcs/nightar/nightarpaladin.npctype",
+            "en": "I've been trained by the best! You have no chance against me!",
+            "luna_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!",
+            "approved_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/nightar/nightarsoldier.npctype",
+        "type": "nightarsoldier",
+        "base_type": "hostile",
+        "identity": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 53,
+            "asset": "npcs/nightar/nightarsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/nightar/nightarsoldier.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 54,
+            "asset": "npcs/nightar/nightarsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/0",
+            "origin": "npcs/nightar/nightarsoldier.npctype",
+            "en": "You want a fight? Very well!",
+            "luna_tr": "Dövüş mü istiyorsun? Öyle olsun!",
+            "approved_tr": "Dövüş mü istiyorsun? Öyle olsun!"
+          },
+          {
+            "unit_index": 55,
+            "asset": "npcs/nightar/nightarsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/1",
+            "origin": "npcs/nightar/nightarsoldier.npctype",
+            "en": "Our swordsmanship is unparalleled!",
+            "luna_tr": "Kılıç ustalığımızın eşi benzeri yok!",
+            "approved_tr": "Kılıç ustalığımızın eşi benzeri yok!"
+          },
+          {
+            "unit_index": 56,
+            "asset": "npcs/nightar/nightarsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/2",
+            "origin": "npcs/nightar/nightarsoldier.npctype",
+            "en": "This is our territory, and ours alone!",
+            "luna_tr": "Burası bizim bölgemiz, yalnızca bizim!",
+            "approved_tr": "Burası bizim bölgemiz, yalnızca bizim!"
+          },
+          {
+            "unit_index": 57,
+            "asset": "npcs/nightar/nightarsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/nightar/default/3",
+            "origin": "npcs/nightar/nightarsoldier.npctype",
+            "en": "I've been trained by the best! You have no chance against me!",
+            "luna_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!",
+            "approved_tr": "En iyilerden eğitim aldım! Bana karşı hiç şansın yok!"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 58,
+    "layered_fields": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "exact_identifier_reference_files": [
+      "dungeons/encounterdungeons/underground/funderground18.json",
+      "npcs/nightar/friendlykingslayer.npctype",
+      "npcs/nightar/nightarkavaserai.npctype",
+      "npcs/nightar/nightarking.npctype",
+      "npcs/nightar/nightarking2.npctype",
+      "npcs/nightar/nightarkingsguard.npctype",
+      "npcs/nightar/nightarkingslayer.npctype",
+      "npcs/nightar/nightarknave.npctype",
+      "npcs/nightar/nightarknight.npctype",
+      "npcs/nightar/nightarpaladin.npctype",
+      "npcs/nightar/nightarsoldier.npctype"
+    ],
+    "static_placements": [
+      {
+        "source": "dungeons/encounterdungeons/underground/funderground18.json",
+        "pointer": "/layers/5/objects/0",
+        "object": {
+          "height": 8,
+          "id": 880,
+          "name": "",
+          "properties": {
+            "npc": "nightar",
+            "seed": "12",
+            "typeName": "nightarkavaserai"
+          },
+          "propertytypes": {
+            "npc": "string",
+            "seed": "string",
+            "typeName": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 128,
+          "y": 256
+        }
+      },
+      {
+        "source": "dungeons/encounterdungeons/underground/funderground18.json",
+        "pointer": "/layers/5/objects/1",
+        "object": {
+          "height": 8,
+          "id": 881,
+          "name": "",
+          "properties": {
+            "npc": "nightar",
+            "seed": "12",
+            "typeName": "nightarkavaserai"
+          },
+          "propertytypes": {
+            "npc": "string",
+            "seed": "string",
+            "typeName": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 392,
+          "y": 256
+        }
+      },
+      {
+        "source": "dungeons/encounterdungeons/underground/funderground18.json",
+        "pointer": "/layers/5/objects/2",
+        "object": {
+          "height": 8,
+          "id": 882,
+          "name": "",
+          "properties": {
+            "npc": "nightar",
+            "seed": "12",
+            "typeName": "nightarkavaserai"
+          },
+          "propertytypes": {
+            "npc": "string",
+            "seed": "string",
+            "typeName": "string"
+          },
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 8,
+          "x": 304,
+          "y": 216
+        }
+      }
+    ],
+    "root_dungeon_anchors": [
+      "funderground1",
+      "funderground2",
+      "funderground3",
+      "funderground4",
+      "funderground5",
+      "funderground6",
+      "funderground7",
+      "funderground8",
+      "funderground9",
+      "funderground10",
+      "funderground11",
+      "funderground12",
+      "funderground13",
+      "funderground14",
+      "funderground15",
+      "funderground16",
+      "funderground17"
+    ],
+    "root_dungeon_parts": [
+      "funderground1",
+      "funderground2",
+      "funderground3",
+      "funderground4",
+      "funderground5",
+      "funderground6",
+      "funderground7",
+      "funderground8",
+      "funderground9",
+      "funderground10",
+      "funderground11",
+      "funderground12",
+      "funderground13",
+      "funderground14",
+      "funderground15",
+      "funderground16",
+      "funderground17"
+    ],
+    "base_patch_paths": [
+      "/scriptConfig/chatSounds/fenerox",
+      "/scriptConfig/chatSounds/juux",
+      "/scriptConfig/chatSounds/slimenpchuman",
+      "/scriptConfig/chatSounds/nightar",
+      "/statusControllerSettings/primaryScriptSources/-",
+      "/statusControllerSettings/stats/fallDamageMultiplier",
+      "/statusControllerSettings/statusProperties/mouthPosition",
+      "/scriptConfig/chatSounds/radien",
+      "/scriptConfig/chatSounds/cat",
+      "/scriptConfig/behaviorConfig/rangedAimTime",
+      "/scriptConfig/behaviorConfig/rangedWindupTime",
+      "/scriptConfig/behaviorConfig/leapWindup",
+      "/scriptConfig/combat/meleeWeaponWindups/default",
+      "/scriptConfig/combat/meleeWeaponWindups/broadsword",
+      "/scriptConfig/combat/meleeWeaponWindups/dagger",
+      "/scriptConfig/combat/meleeWeaponWindups/axe",
+      "/scriptConfig/combat/meleeWeaponWindups/hammer",
+      "/scriptConfig/combat/meleeWeaponWindups/shortsword",
+      "/scriptConfig/combat/meleeWeaponWindups/spear",
+      "/scriptConfig/combat/meleeWeaponWindups/katana",
+      "/scriptConfig/combat/meleeWeaponWindups/mace",
+      "/scriptConfig/combat/meleeWeaponWindups/rapier",
+      "/scriptConfig/combat/meleeWeaponWindups/flail",
+      "/scriptConfig/combat/meleeWeaponWindups/scythe",
+      "/scriptConfig/combat/meleeWeaponWindups/quarterstaff",
+      "/scriptConfig/combat/meleeWeaponCooldowns/default",
+      "/scriptConfig/combat/meleeWeaponCooldowns/broadsword",
+      "/scriptConfig/combat/meleeWeaponCooldowns/dagger",
+      "/scriptConfig/combat/meleeWeaponCooldowns/axe",
+      "/scriptConfig/combat/meleeWeaponCooldowns/hammer",
+      "/scriptConfig/combat/meleeWeaponCooldowns/shortsword",
+      "/scriptConfig/combat/meleeWeaponCooldowns/spear"
+    ],
+    "hostile_patch_paths": [
+      "/scriptConfig/behaviorConfig/leapWindup",
+      "/scriptConfig/behaviorConfig/rangedAimTime",
+      "/scriptConfig/behaviorConfig/rangedWindupTime",
+      "/scriptConfig/combat/meleeWeaponWindups/default",
+      "/scriptConfig/combat/meleeWeaponWindups/broadsword",
+      "/scriptConfig/combat/meleeWeaponWindups/dagger",
+      "/scriptConfig/combat/meleeWeaponWindups/axe",
+      "/scriptConfig/combat/meleeWeaponWindups/hammer",
+      "/scriptConfig/combat/meleeWeaponWindups/shortsword",
+      "/scriptConfig/combat/meleeWeaponWindups/spear",
+      "/scriptConfig/combat/meleeWeaponCooldowns/broadsword",
+      "/scriptConfig/combat/meleeWeaponCooldowns/dagger",
+      "/scriptConfig/combat/meleeWeaponCooldowns/axe",
+      "/scriptConfig/combat/meleeWeaponCooldowns/hammer",
+      "/scriptConfig/combat/meleeWeaponCooldowns/shortsword",
+      "/scriptConfig/combat/meleeWeaponCooldowns/spear"
+    ],
+    "source_corrections_to_delivery": [
+      "base.npctype.patch is not timing-only: it also adds chatSounds,fr_raceEffects primary script and status fields. No full vanilla parent or active event consumer is provided.",
+      "history2 narrator explicitly says We non-Nightar; its positive identification of She and history3 uncertainty are distinct accounts/knowledge levels,not proof that history2 is a first-person Nightar account.",
+      "Both king types share identity.name=Gin_Yorukishi_III,while the dialogue self-designates Heptarch. Keep both source facts; do not rename identity,assert title interpretation or merge actors.",
+      "funderground18 is absent from both anchor AND parts lists of the inspected root dungeon,not merely absent as a seed anchor. No live/other-loader activation claim."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All58EN/TR variants and exact occurrences reviewed; all10direct NPC definitions,identity/equipment/dialogue metadata and six cited lore sources read. All20159previous catalog fields unchanged.",
+    "Friendly KingSlayer is assistant-team with friendlyguard parent; hostile Kingslayer is a different type. Two king types share Gin_Yorukishi_III identity and self-designate Heptarch in dialogue. Authored mismatch preserved; actor relationship or title meaning not invented.",
+    "History2 explicitly uses a non-Nightar narrator and identifies She as Great Matriarch; history3 describes an unknown divine figure. Existing locked Matriarch rendering approved unchanged. No Avemnedara personal name or new gender wording inserted.",
+    "base.npctype.patch adds chats,race-effect script/status fields as well as timings; delivery timing-only description corrected. Full vanilla base/hostile/friendlyguard and active hostileguard caller remain absent/unverified.",
+    "Three static Kavaserai Nightar placements found in funderground18. Inspected root dungeon has only1..17anchors AND parts. Whole pinned-FU exact-type scan finds only10definitions plus that map. Actual activation or external/dynamic loader not established; other9types have no exact external-to-definition FU reference.",
+    "Six attack/nightar branches lack independently verified runtime speaker species. Helper species/target/default routing is not proof of event invocation.95review fields remain outside confirmed translation scope.",
+    "Death threat,physical-strength idiom,parallel honor/blood statements,death-after-insect simile,challenger vocative and elite rank phrasing corrected. Source thousand-victory claim and Matriarch pronoun reading were already correct in delivery and not counted as Sol edits.",
+    "Heptarch exact self-designation plus24full replies locked; prior terms unchanged. No new preserve-utterance,format or TM exception; ordinary English cannot reuse name permission.",
+    "Live activation,font/layout and LQA NOT TESTED. No online Steam upload,game installation or shutdown. Six-run round2 counts only after all local/CI/byte publication gates."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}
