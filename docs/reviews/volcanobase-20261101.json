@@ -1,0 +1,2320 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-01",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 10,
+  "run_id": "fu-six-20261101",
+  "run_round": 4,
+  "base_commit": "ad8575dfdd10a5c35c5f6a51c2f826043d906a3a",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 48,
+    "context_groups": 48,
+    "unique_english_strings": 44,
+    "assets": {
+      "npcs/volcanobase/volcanobasebrute.npctype": 6,
+      "npcs/volcanobase/volcanobasedagger.npctype": 4,
+      "npcs/volcanobase/volcanobasefollower.npctype": 18,
+      "npcs/volcanobase/volcanobasehostage.npctype": 5,
+      "npcs/volcanobase/volcanobasehunter.npctype": 4,
+      "npcs/volcanobase/volcanobaselord.npctype": 5,
+      "npcs/volcanobase/volcanobasesentinel.npctype": 6
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 48,
+    "dialogue_events": {
+      "attack": 25,
+      "follower/attack": 3,
+      "follower/join": 3,
+      "follower/returnFromCombat": 5,
+      "follower/returnFromWait": 3,
+      "follower/wait": 4,
+      "converse": 5
+    },
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 9,
+    "sentences_including_repeated_fields": 10,
+    "unique_source_strings_corrected": 9,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 9,
+    "total_corrected_sentences": 10,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged sentences and mood prefixes excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 44,
+  "new_locked_names": [
+    "warlord",
+    "Enraged. Raaaarrrgh!",
+    "Bloodthirsty. Crush! Kill! Destroy!",
+    "Fanatical. Fear the might of the warlords!",
+    "Deranged. I will break you!",
+    "Confident. I am unstoppable!",
+    "Enraged. Death to intruders!",
+    "Dark. The Master shall not be disturbed!",
+    "Confident. You cannot withstand our power!",
+    "Fanatical. The tower is invincible!",
+    "Valorous. Into the fray!",
+    "Enraged. Your blood will soil the land!",
+    "Grim. To battle!",
+    "Grateful. Thank you for rescuing me.",
+    "Eager. Allow me to do my duty as a knight and join you.",
+    "Vengeful. Let me after those who locked me in here!",
+    "Victorious. You are no match for me!",
+    "Dark. You are weak!",
+    "Smug. Is this the best of the Warlord's lackeys?",
+    "Pumped. Is that all they have to throw at us?",
+    "Calm. Rest in peace.",
+    "Acknowledgement. Greetings once more.",
+    "Excited. Let's head off together!",
+    "Eager. You ready to move on?",
+    "Unhappy. Must you go on without me? I wish to fight for glory!",
+    "Thankful. You are kind to scout ahead.",
+    "Bored. Guard duty, eh?",
+    "Questioning. Do you need a moment?",
+    "I have nothing to sssay to you",
+    "Shocked. Who are you? Are you here to defeat the warlord?",
+    "Upset. The warlord has taken us hostage to insure our kingdoms' compliance.",
+    "Encouraging. Slay the warlord and free us!",
+    "Resigned. I wish I could do more to help you, but we are kept here all the time. I do not know much of the tower.",
+    "Cryptic. I owe you nothing but an arrow through the eye.",
+    "Menacing. Stay back, or I'll put one through your knee!",
+    "Grim. One shot, intruder. That's all I'll need.",
+    "Furious. I'll slaughter you and use your loot to replace the guards you killed!",
+    "Eager. And so the hero arrives! Brave and foolish, my favourite type. I will break you and relish every moment of it.",
+    "Haughty. A protector to slaughter, just for me! This will be a crowning achievement; today my legend grows ever larger!",
+    "Smug. My, my! If a protector feels the need to challenge me, I must be doing something right. Step up and lend your head to one of my many pikes.",
+    "Dark. You will regret coming here!",
+    "Bloodthirsty. Your blood will soil the land!",
+    "Fanatical. Die, fool!",
+    "Determined. We are the unyielding."
+  ],
+  "reused_locked_names": [
+    "Attack!"
+  ],
+  "locked_total": 1039,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "e5000ba5b1982310a36cd3187f3f9f55130403ebf6c65f65c6374da65e9d85cd",
+  "luna_original_packet_sha256": "b11a3febf798cc6ee80b973839a3aaf0ec53ff8301ff241ae7d6f1b331fc8a02",
+  "approved_rows_sha256": "f88c50f58efc2470973ff1deb4e3ee2fee4d2a5ee559c7ba21f00eec27c2f6ab",
+  "corrections": [
+    {
+      "unit_index": 6,
+      "en": "Dark. The Master shall not be disturbed!",
+      "before": "Kasvetli. Efendi rahatsız edilmemeli!",
+      "after": "Kasvetli. Efendi rahatsız edilmeyecek!",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobasedagger.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/0",
+          "origin": "npcs/volcanobase/volcanobasedagger.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Shall not buyruğu edilmemeli önerisinden kesin yasağa alındı; Efendi unvanına kimlik veya lordla aynı aktör ilişkisi eklenmedi."
+    },
+    {
+      "unit_index": 15,
+      "en": "Vengeful. Let me after those who locked me in here!",
+      "before": "İntikam peşinde. Beni buraya kilitleyenlerin peşlerine düşmeme izin ver!",
+      "after": "İntikam peşinde. Beni buraya kilitleyenlerin peşine düşmeme izin ver!",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+          "pointer": "/scriptConfig/dialog/follower/join/default/default/2",
+          "origin": "npcs/volcanobase/volcanobasefollower.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Peşlerine çoğulu yerine Türkçedeki bir grubun peşine düşmek kalıbı kullanıldı; aynı kişilerin takip edilmesi ve izin isteği korundu."
+    },
+    {
+      "unit_index": 24,
+      "en": "Unhappy. Must you go on without me? I wish to fight for glory!",
+      "before": "Mutsuz. Bensiz mi devam edeceksin? Şan kazanmak için savaşmak istiyorum!",
+      "after": "Mutsuz. Bensiz devam etmek zorunda mısın? Şan kazanmak için savaşmak istiyorum!",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+          "pointer": "/scriptConfig/dialog/follower/wait/default/default/0",
+          "origin": "npcs/volcanobase/volcanobasefollower.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Must zorunluluk sorusu yalnız geleceğe dönük Bensiz mi devam edeceksin sorusuna indirgenmedi. Değişmeyen şan için savaşma isteği sayılmadı."
+    },
+    {
+      "unit_index": 25,
+      "en": "Thankful. You are kind to scout ahead.",
+      "before": "Minnettar. Önden keşfe çıkman çok nazik.",
+      "after": "Minnettar. Önden keşfe çıkman çok ince bir davranış.",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+          "pointer": "/scriptConfig/dialog/follower/wait/default/default/1",
+          "origin": "npcs/volcanobase/volcanobasefollower.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Eylemi nazik diye niteleyen çeviri doğal Türkçe incelik anlatımına alındı; oyuncunun önden keşfi ve minnettarlık korundu."
+    },
+    {
+      "unit_index": 35,
+      "en": "Menacing. Stay back, or I'll put one through your knee!",
+      "before": "Tehditkâr. Uzak dur, yoksa dizine bir tane saplarım!",
+      "after": "Tehditkâr. Uzak dur, yoksa dizine bir ok saplarım!",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobasehunter.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/1",
+          "origin": "npcs/volcanobase/volcanobasehunter.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "One sözcüğünün nesnesi,aynı avcının açık arrow repliği ve npctungstenbow teçhizatıyla ok olarak çözüldü. Rastgele repliklerin sırayla söylendiği veya aktif saldırı tüketicisi doğrulandığı iddia edilmedi; değişmeyen Uzak dur ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 38,
+      "en": "Furious. I'll slaughter you and use your loot to replace the guards you killed!",
+      "before": "Öfkeli. Seni öldüreceğim; ganimetini, öldürdüğün muhafızların yerine yenilerini koymak için kullanacağım!",
+      "after": "Öfkeli. Seni katledeceğim; ganimetini, öldürdüğün muhafızların yerine yenilerini koymak için kullanacağım!",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobaselord.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/0",
+          "origin": "npcs/volcanobase/volcanobaselord.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Slaughter katletmek sertliğiyle verildi; ganimetin muhafızları yerine koymak için kullanılması zaten doğruydu ve ayrı düzeltme sayılmadı."
+    },
+    {
+      "unit_index": 39,
+      "en": "Eager. And so the hero arrives! Brave and foolish, my favourite type. I will break you and relish every moment of it.",
+      "before": "Hevesli. Ve işte kahramanımız geldi! Cesur ve budala; tam sevdiğim tip. Seni dize getireceğim ve bunun her anından zevk alacağım.",
+      "after": "Hevesli. Ve işte kahraman geldi! Cesur ve budala; en sevdiğim tip. Seni dize getireceğim ve bunun her anından zevk alacağım.",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobaselord.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/1",
+          "origin": "npcs/volcanobase/volcanobaselord.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Kaynakta olmayan kahramanımız iyeliği çıkarıldı; favourite en sevdiğim olarak korundu. Değişmeyen dize getirme ve bundan zevk alma tehdidi sayılmadı."
+    },
+    {
+      "unit_index": 40,
+      "en": "Haughty. A protector to slaughter, just for me! This will be a crowning achievement; today my legend grows ever larger!",
+      "before": "Kibirli. Sırf benim için öldürülecek bir Protector! Bu, başarılarımın tacı olacak; bugün efsanem daha da büyüyecek!",
+      "after": "Kibirli. Sırf benim katletmem için bir Protector! Bu, başarılarımın tacı olacak; bugün efsanem daha da büyüyecek!",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobaselord.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/2",
+          "origin": "npcs/volcanobase/volcanobaselord.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Öldürme eyleminin öznesi kendini öven savaş beyi olarak açık tutuldu ve slaughter sertliği korundu. Mevcut dar a Protector LOCKED unvanı aynen kaldı; başarı/efsane cümlesi sayılmadı."
+    },
+    {
+      "unit_index": 41,
+      "en": "Smug. My, my! If a protector feels the need to challenge me, I must be doing something right. Step up and lend your head to one of my many pikes.",
+      "before": "Kendini beğenmiş. Vay, vay! Bir Protector bana meydan okuma gereği duyuyorsa, demek ki doğru bir şeyler yapıyorum. Bir adım öne çık da başını mızraklarımdan birine geçireyim.",
+      "after": "Kendini beğenmiş. Vay, vay! Bir Protector bana meydan okuma gereği duyuyorsa, demek ki doğru bir şeyler yapıyorum. Öne çık da başını onca mızrağımdan birine ödünç ver.",
+      "occurrences": [
+        {
+          "asset": "npcs/volcanobase/volcanobaselord.npctype",
+          "pointer": "/scriptConfig/dialog/attack/glitch/default/3",
+          "origin": "npcs/volcanobase/volcanobaselord.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Son cümlede many miktarı ve başı ödünç verme alayı geri getirildi; kaynakta olmayan tek adımlık ölçü ve düz geçireyim anlatımı kaldırıldı. Önceki alaycı ünlem/koşul/unvan aynı kaldı."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "b11a3febf798cc6ee80b973839a3aaf0ec53ff8301ff241ae7d6f1b331fc8a02",
+    "filled_units": 48
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 48,
+    "context_units": 48,
+    "qa": {
+      "catalog_units_checked": 35222,
+      "raw_units_checked": 115,
+      "locked_terms": 1039
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobasebrute.npctype",
+        "note": "Sol read all 6 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobasedagger.npctype",
+        "note": "Sol read all 4 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobasefollower.npctype",
+        "note": "Sol read all 18 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobasehostage.npctype",
+        "note": "Sol read all 5 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobasehunter.npctype",
+        "note": "Sol read all 4 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobaselord.npctype",
+        "note": "Sol read all 5 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/npcs/volcanobase/volcanobasesentinel.npctype",
+        "note": "Sol read all 6 exact occurrences and full type/base/identity/equipment/dialogue definition. Nested follower event names,default/glitch branches and hostage sequence/ghostly settings remain unchanged."
+      },
+      {
+        "source": "fu_source/quests/towerinvincible.questtemplate; fu_source/ai/towerinvincible.aimission; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/dungeons/missions/volcanobase/volcanobase.dungeon; fu_source/dungeons/missions/volcanobase/volcanobase.json",
+        "note": "Mission/world/dungeon/map definition chain reviewed. Main map has58Glitch typeName records,1468object records,204wire polylines;30external tilesets absent. Counts correct two missed brute/sentinel records in delivery. No live spawn/branch/trigger claim."
+      },
+      {
+        "source": "fu_source/dungeons/microdungeons/biomes/volcanic/volcanicmicrodungeons.dungeon.patch; fu_source/dungeons/microdungeons/biomes/volcanic/towerinvinciblemap1.json; fu_source/dungeons/microdungeons/biomes/volcanic/towerinvinciblemap2.json; fu_source/dungeons/microdungeons/biomes/volcanic/towerinvinciblemap3.json; fu_source/tenants/mantizi/bioworld.tenant",
+        "note": "Three map parts add six Glitch NPC records in volcanic worldgen. Tenant additionally configures fumantizi/friendly volcanobasefollower. These are separate static reuse contexts; no same mission actor or active consumer asserted."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/npcs/base.npctype.patch; fu_source/scripts/actions/dialog.lua; fu_source/scripts/companions/player.lua",
+        "note": "Same clean pinned parent/helper sources reviewed; player recruitment/confirmation/follower management functions inspected. No exact consumer of five custom follower event tables established. Full vanilla follower/base and active hostileguard/follower/spectator behavior implementations absent. Helper selection and player confirmation dialog do not prove these NPC reply events."
+      },
+      {
+        "source": "fu_source/radiomessages/missions.radiomessages.patch; local-repo/tools/ceviriler.json; local-repo/tools/locked_terms.json",
+        "note": "Read all21volcanobase radio definitions and catalog counterparts. Existing Tower Invincible title,a Protector restricted formal-title lock and generic warlord usage respected. Bare vocative generic protector is not newly forced. Attack! TM was already correct; all mood prefixes,roar and actual sss fallback reviewed."
+      }
+    ],
+    "note": "All48EN/TR variants and occurrences reviewed by Sol. All7NPC definitions,mission/map/tenant contexts and21radio entries inspected; nested follower events not flattened. Glitch mood labels,roar/sss and already-correct restricted Protector title retained. Active event consumers and live LQA NOT TESTED."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+        "type": "volcanobasebrute",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "damage_team_type": null,
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasebrute.npctype",
+            "en": "Enraged. Raaaarrrgh!",
+            "luna_tr": "Çileden çıkmış. Raaaarrrgh!",
+            "approved_tr": "Çileden çıkmış. Raaaarrrgh!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasebrute.npctype",
+            "en": "Bloodthirsty. Crush! Kill! Destroy!",
+            "luna_tr": "Kana susamış. Ez! Öldür! Yok et!",
+            "approved_tr": "Kana susamış. Ez! Öldür! Yok et!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasebrute.npctype",
+            "en": "Fanatical. Fear the might of the warlords!",
+            "luna_tr": "Fanatik. Savaş ağalarının gücünden korkun!",
+            "approved_tr": "Fanatik. Savaş ağalarının gücünden korkun!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/volcanobase/volcanobasebrute.npctype",
+            "en": "Deranged. I will break you!",
+            "luna_tr": "Çılgın. Seni dize getireceğim!",
+            "approved_tr": "Çılgın. Seni dize getireceğim!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/volcanobase/volcanobasebrute.npctype",
+            "en": "Confident. I am unstoppable!",
+            "luna_tr": "Kendinden emin. Durdurulamam!",
+            "approved_tr": "Kendinden emin. Durdurulamam!"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/volcanobase/volcanobasebrute.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/volcanobase/volcanobasebrute.npctype",
+            "en": "Enraged. Death to intruders!",
+            "luna_tr": "Çileden çıkmış. İzinsiz girenlere ölüm!",
+            "approved_tr": "Çileden çıkmış. İzinsiz girenlere ölüm!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/volcanobase/volcanobasedagger.npctype",
+        "type": "volcanobasedagger",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "damage_team_type": null,
+        "fields": 4,
+        "entries": [
+          {
+            "unit_index": 6,
+            "asset": "npcs/volcanobase/volcanobasedagger.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasedagger.npctype",
+            "en": "Dark. The Master shall not be disturbed!",
+            "luna_tr": "Kasvetli. Efendi rahatsız edilmemeli!",
+            "approved_tr": "Kasvetli. Efendi rahatsız edilmeyecek!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/volcanobase/volcanobasedagger.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasedagger.npctype",
+            "en": "Confident. You cannot withstand our power!",
+            "luna_tr": "Kendinden emin. Gücümüze karşı koyamazsın!",
+            "approved_tr": "Kendinden emin. Gücümüze karşı koyamazsın!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/volcanobase/volcanobasedagger.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasedagger.npctype",
+            "en": "Fanatical. The tower is invincible!",
+            "luna_tr": "Fanatik. Kule yenilmez!",
+            "approved_tr": "Fanatik. Kule yenilmez!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/volcanobase/volcanobasedagger.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/volcanobase/volcanobasedagger.npctype",
+            "en": "Enraged. Death to intruders!",
+            "luna_tr": "Çileden çıkmış. İzinsiz girenlere ölüm!",
+            "approved_tr": "Çileden çıkmış. İzinsiz girenlere ölüm!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+        "type": "volcanobasefollower",
+        "base_type": "follower",
+        "identity": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "damage_team_type": null,
+        "fields": 18,
+        "entries": [
+          {
+            "unit_index": 10,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/attack/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Valorous. Into the fray!",
+            "luna_tr": "Yiğitçe. Haydi çarpışmaya!",
+            "approved_tr": "Yiğitçe. Haydi çarpışmaya!"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/attack/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Enraged. Your blood will soil the land!",
+            "luna_tr": "Çileden çıkmış. Kanın bu toprağı kirletecek!",
+            "approved_tr": "Çileden çıkmış. Kanın bu toprağı kirletecek!"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/attack/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Grim. To battle!",
+            "luna_tr": "Ciddi. Savaşa!",
+            "approved_tr": "Ciddi. Savaşa!"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/join/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Grateful. Thank you for rescuing me.",
+            "luna_tr": "Minnettar. Beni kurtardığın için teşekkür ederim.",
+            "approved_tr": "Minnettar. Beni kurtardığın için teşekkür ederim."
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/join/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Eager. Allow me to do my duty as a knight and join you.",
+            "luna_tr": "Hevesli. Bir şövalye olarak görevimi yerine getirip sana katılmama izin ver.",
+            "approved_tr": "Hevesli. Bir şövalye olarak görevimi yerine getirip sana katılmama izin ver."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/join/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Vengeful. Let me after those who locked me in here!",
+            "luna_tr": "İntikam peşinde. Beni buraya kilitleyenlerin peşlerine düşmeme izin ver!",
+            "approved_tr": "İntikam peşinde. Beni buraya kilitleyenlerin peşine düşmeme izin ver!"
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Victorious. You are no match for me!",
+            "luna_tr": "Galip. Bana denk değilsin!",
+            "approved_tr": "Galip. Bana denk değilsin!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Dark. You are weak!",
+            "luna_tr": "Kasvetli. Zayıfsın!",
+            "approved_tr": "Kasvetli. Zayıfsın!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Smug. Is this the best of the Warlord's lackeys?",
+            "luna_tr": "Kendini beğenmiş. Savaş ağasının uşaklarının en iyisi bu mu?",
+            "approved_tr": "Kendini beğenmiş. Savaş ağasının uşaklarının en iyisi bu mu?"
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/3",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Pumped. Is that all they have to throw at us?",
+            "luna_tr": "Coşkulu. Bize karşı çıkarabildikleri bu kadar mı?",
+            "approved_tr": "Coşkulu. Bize karşı çıkarabildikleri bu kadar mı?"
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromCombat/default/default/4",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Calm. Rest in peace.",
+            "luna_tr": "Sakin. Huzur içinde yat.",
+            "approved_tr": "Sakin. Huzur içinde yat."
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromWait/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Acknowledgement. Greetings once more.",
+            "luna_tr": "Onay. Yeniden selamlar.",
+            "approved_tr": "Onay. Yeniden selamlar."
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromWait/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Excited. Let's head off together!",
+            "luna_tr": "Heyecanlı. Haydi birlikte yola çıkalım!",
+            "approved_tr": "Heyecanlı. Haydi birlikte yola çıkalım!"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/returnFromWait/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Eager. You ready to move on?",
+            "luna_tr": "Hevesli. Yola devam etmeye hazır mısın?",
+            "approved_tr": "Hevesli. Yola devam etmeye hazır mısın?"
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Unhappy. Must you go on without me? I wish to fight for glory!",
+            "luna_tr": "Mutsuz. Bensiz mi devam edeceksin? Şan kazanmak için savaşmak istiyorum!",
+            "approved_tr": "Mutsuz. Bensiz devam etmek zorunda mısın? Şan kazanmak için savaşmak istiyorum!"
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Thankful. You are kind to scout ahead.",
+            "luna_tr": "Minnettar. Önden keşfe çıkman çok nazik.",
+            "approved_tr": "Minnettar. Önden keşfe çıkman çok ince bir davranış."
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Bored. Guard duty, eh?",
+            "luna_tr": "Sıkılmış. Nöbet tutmak, ha?",
+            "approved_tr": "Sıkılmış. Nöbet tutmak, ha?"
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/volcanobase/volcanobasefollower.npctype",
+            "pointer": "/scriptConfig/dialog/follower/wait/default/default/3",
+            "origin": "npcs/volcanobase/volcanobasefollower.npctype",
+            "en": "Questioning. Do you need a moment?",
+            "luna_tr": "Sorgulayıcı. Biraz zamana mı ihtiyacın var?",
+            "approved_tr": "Sorgulayıcı. Biraz zamana mı ihtiyacın var?"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/volcanobase/volcanobasehostage.npctype",
+        "type": "volcanobasehostage",
+        "base_type": "base",
+        "identity": {
+          "gender": "female"
+        },
+        "behavior": "spectator",
+        "dialog_mode": "sequence",
+        "damage_team_type": "ghostly",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 28,
+            "asset": "npcs/volcanobase/volcanobasehostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasehostage.npctype",
+            "en": "I have nothing to sssay to you",
+            "luna_tr": "Sana sssöyleyecek bir şeyim yok.",
+            "approved_tr": "Sana sssöyleyecek bir şeyim yok."
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/volcanobase/volcanobasehostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/0",
+            "origin": "npcs/volcanobase/volcanobasehostage.npctype",
+            "en": "Shocked. Who are you? Are you here to defeat the warlord?",
+            "luna_tr": "Şaşkın. Sen kimsin? Savaş ağasını yenmeye mi geldin?",
+            "approved_tr": "Şaşkın. Sen kimsin? Savaş ağasını yenmeye mi geldin?"
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/volcanobase/volcanobasehostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/1",
+            "origin": "npcs/volcanobase/volcanobasehostage.npctype",
+            "en": "Upset. The warlord has taken us hostage to insure our kingdoms' compliance.",
+            "luna_tr": "Üzgün. Savaş ağası, krallıklarımızı itaate zorlamak için bizi rehin aldı.",
+            "approved_tr": "Üzgün. Savaş ağası, krallıklarımızı itaate zorlamak için bizi rehin aldı."
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/volcanobase/volcanobasehostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/2",
+            "origin": "npcs/volcanobase/volcanobasehostage.npctype",
+            "en": "Encouraging. Slay the warlord and free us!",
+            "luna_tr": "Teşvik edici. Savaş ağasını öldür ve bizi özgürlüğümüze kavuştur!",
+            "approved_tr": "Teşvik edici. Savaş ağasını öldür ve bizi özgürlüğümüze kavuştur!"
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/volcanobase/volcanobasehostage.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/3",
+            "origin": "npcs/volcanobase/volcanobasehostage.npctype",
+            "en": "Resigned. I wish I could do more to help you, but we are kept here all the time. I do not know much of the tower.",
+            "luna_tr": "Kabullenmiş. Sana daha fazla yardım edebilmeyi isterdim ama bizi hep burada tutuyorlar. Kule hakkında fazla bir şey bilmiyorum.",
+            "approved_tr": "Kabullenmiş. Sana daha fazla yardım edebilmeyi isterdim ama bizi hep burada tutuyorlar. Kule hakkında fazla bir şey bilmiyorum."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/volcanobase/volcanobasehunter.npctype",
+        "type": "volcanobasehunter",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "damage_team_type": null,
+        "fields": 4,
+        "entries": [
+          {
+            "unit_index": 33,
+            "asset": "npcs/volcanobase/volcanobasehunter.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasehunter.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/volcanobase/volcanobasehunter.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/0",
+            "origin": "npcs/volcanobase/volcanobasehunter.npctype",
+            "en": "Cryptic. I owe you nothing but an arrow through the eye.",
+            "luna_tr": "Gizemli. Sana borcum, gözüne saplanacak bir oktan ibaret.",
+            "approved_tr": "Gizemli. Sana borcum, gözüne saplanacak bir oktan ibaret."
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/volcanobase/volcanobasehunter.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/1",
+            "origin": "npcs/volcanobase/volcanobasehunter.npctype",
+            "en": "Menacing. Stay back, or I'll put one through your knee!",
+            "luna_tr": "Tehditkâr. Uzak dur, yoksa dizine bir tane saplarım!",
+            "approved_tr": "Tehditkâr. Uzak dur, yoksa dizine bir ok saplarım!"
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/volcanobase/volcanobasehunter.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/2",
+            "origin": "npcs/volcanobase/volcanobasehunter.npctype",
+            "en": "Grim. One shot, intruder. That's all I'll need.",
+            "luna_tr": "Ciddi. Tek atış yeter, davetsiz misafir. Bana gereken bu kadar.",
+            "approved_tr": "Ciddi. Tek atış yeter, davetsiz misafir. Bana gereken bu kadar."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/volcanobase/volcanobaselord.npctype",
+        "type": "volcanobaselord",
+        "base_type": "hostilefu",
+        "identity": {
+          "gender": "male"
+        },
+        "behavior": null,
+        "dialog_mode": null,
+        "damage_team_type": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 37,
+            "asset": "npcs/volcanobase/volcanobaselord.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/volcanobase/volcanobaselord.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/volcanobase/volcanobaselord.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/0",
+            "origin": "npcs/volcanobase/volcanobaselord.npctype",
+            "en": "Furious. I'll slaughter you and use your loot to replace the guards you killed!",
+            "luna_tr": "Öfkeli. Seni öldüreceğim; ganimetini, öldürdüğün muhafızların yerine yenilerini koymak için kullanacağım!",
+            "approved_tr": "Öfkeli. Seni katledeceğim; ganimetini, öldürdüğün muhafızların yerine yenilerini koymak için kullanacağım!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/volcanobase/volcanobaselord.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/1",
+            "origin": "npcs/volcanobase/volcanobaselord.npctype",
+            "en": "Eager. And so the hero arrives! Brave and foolish, my favourite type. I will break you and relish every moment of it.",
+            "luna_tr": "Hevesli. Ve işte kahramanımız geldi! Cesur ve budala; tam sevdiğim tip. Seni dize getireceğim ve bunun her anından zevk alacağım.",
+            "approved_tr": "Hevesli. Ve işte kahraman geldi! Cesur ve budala; en sevdiğim tip. Seni dize getireceğim ve bunun her anından zevk alacağım."
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/volcanobase/volcanobaselord.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/2",
+            "origin": "npcs/volcanobase/volcanobaselord.npctype",
+            "en": "Haughty. A protector to slaughter, just for me! This will be a crowning achievement; today my legend grows ever larger!",
+            "luna_tr": "Kibirli. Sırf benim için öldürülecek bir Protector! Bu, başarılarımın tacı olacak; bugün efsanem daha da büyüyecek!",
+            "approved_tr": "Kibirli. Sırf benim katletmem için bir Protector! Bu, başarılarımın tacı olacak; bugün efsanem daha da büyüyecek!"
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/volcanobase/volcanobaselord.npctype",
+            "pointer": "/scriptConfig/dialog/attack/glitch/default/3",
+            "origin": "npcs/volcanobase/volcanobaselord.npctype",
+            "en": "Smug. My, my! If a protector feels the need to challenge me, I must be doing something right. Step up and lend your head to one of my many pikes.",
+            "luna_tr": "Kendini beğenmiş. Vay, vay! Bir Protector bana meydan okuma gereği duyuyorsa, demek ki doğru bir şeyler yapıyorum. Bir adım öne çık da başını mızraklarımdan birine geçireyim.",
+            "approved_tr": "Kendini beğenmiş. Vay, vay! Bir Protector bana meydan okuma gereği duyuyorsa, demek ki doğru bir şeyler yapıyorum. Öne çık da başını onca mızrağımdan birine ödünç ver."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+        "type": "volcanobasesentinel",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "damage_team_type": null,
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 42,
+            "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "en": "Dark. You will regret coming here!",
+            "luna_tr": "Kasvetli. Buraya geldiğine pişman olacaksın!",
+            "approved_tr": "Kasvetli. Buraya geldiğine pişman olacaksın!"
+          },
+          {
+            "unit_index": 43,
+            "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "en": "Bloodthirsty. Your blood will soil the land!",
+            "luna_tr": "Kana susamış. Kanın bu toprağı kirletecek!",
+            "approved_tr": "Kana susamış. Kanın bu toprağı kirletecek!"
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "en": "Fanatical. Die, fool!",
+            "luna_tr": "Fanatik. Öl, aptal!",
+            "approved_tr": "Fanatik. Öl, aptal!"
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "en": "Determined. We are the unyielding.",
+            "luna_tr": "Kararlı. Biz asla boyun eğmeyiz.",
+            "approved_tr": "Kararlı. Biz asla boyun eğmeyiz."
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "en": "Confident. I am unstoppable!",
+            "luna_tr": "Kendinden emin. Durdurulamam!",
+            "approved_tr": "Kendinden emin. Durdurulamam!"
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/volcanobase/volcanobasesentinel.npctype",
+            "en": "Enraged. Death to intruders!",
+            "luna_tr": "Çileden çıkmış. İzinsiz girenlere ölüm!",
+            "approved_tr": "Çileden çıkmış. İzinsiz girenlere ölüm!"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 48,
+    "layered_fields": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "exact_identifier_reference_files": [
+      "dungeons/microdungeons/biomes/volcanic/towerinvinciblemap1.json",
+      "dungeons/microdungeons/biomes/volcanic/towerinvinciblemap2.json",
+      "dungeons/microdungeons/biomes/volcanic/towerinvinciblemap3.json",
+      "dungeons/missions/volcanobase/volcanobase.json",
+      "npcs/volcanobase/volcanobasebrute.npctype",
+      "npcs/volcanobase/volcanobasedagger.npctype",
+      "npcs/volcanobase/volcanobasefollower.npctype",
+      "npcs/volcanobase/volcanobasehostage.npctype",
+      "npcs/volcanobase/volcanobasehunter.npctype",
+      "npcs/volcanobase/volcanobaselord.npctype",
+      "npcs/volcanobase/volcanobasesentinel.npctype",
+      "tenants/mantizi/bioworld.tenant"
+    ],
+    "maps": {
+      "dungeons/microdungeons/biomes/volcanic/towerinvinciblemap1.json": {
+        "width": 60,
+        "height": 60,
+        "tile_size": 8,
+        "object_count": 20,
+        "wire_count": 0,
+        "parameter_count": 2,
+        "placements": [
+          {
+            "object_id": 766,
+            "layer": 5,
+            "object_index": 0,
+            "x": 376,
+            "y": 376,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 767,
+            "layer": 5,
+            "object_index": 1,
+            "x": 216,
+            "y": 392,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/avian.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/human.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/hylotl.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/novakid.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/sapling.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/container.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/loungeable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/noisy.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ]
+      },
+      "dungeons/microdungeons/biomes/volcanic/towerinvinciblemap2.json": {
+        "width": 60,
+        "height": 60,
+        "tile_size": 8,
+        "object_count": 14,
+        "wire_count": 0,
+        "parameter_count": 2,
+        "placements": [
+          {
+            "object_id": 751,
+            "layer": 5,
+            "object_index": 0,
+            "x": 168,
+            "y": 344,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 752,
+            "layer": 5,
+            "object_index": 1,
+            "x": 328,
+            "y": 344,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/avian.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/human.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/hylotl.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/novakid.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/sapling.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/container.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/loungeable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/noisy.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ]
+      },
+      "dungeons/microdungeons/biomes/volcanic/towerinvinciblemap3.json": {
+        "width": 60,
+        "height": 60,
+        "tile_size": 8,
+        "object_count": 28,
+        "wire_count": 0,
+        "parameter_count": 2,
+        "placements": [
+          {
+            "object_id": 764,
+            "layer": 5,
+            "object_index": 0,
+            "x": 248,
+            "y": 328,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 765,
+            "layer": 5,
+            "object_index": 1,
+            "x": 216,
+            "y": 136,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/avian.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/human.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/hylotl.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/novakid.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/sapling.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/container.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/loungeable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/noisy.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          }
+        ]
+      },
+      "dungeons/missions/volcanobase/volcanobase.json": {
+        "width": 1200,
+        "height": 1200,
+        "tile_size": 8,
+        "object_count": 1468,
+        "wire_count": 204,
+        "parameter_count": 166,
+        "placements": [
+          {
+            "object_id": 1718,
+            "layer": 2,
+            "object_index": 1164,
+            "x": 5016,
+            "y": 7672,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1719,
+            "layer": 2,
+            "object_index": 1165,
+            "x": 5112,
+            "y": 7672,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1526,
+            "layer": 3,
+            "object_index": 0,
+            "x": 8520,
+            "y": 5776,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobaselord"
+            }
+          },
+          {
+            "object_id": 1558,
+            "layer": 3,
+            "object_index": 1,
+            "x": 8176,
+            "y": 5760,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1559,
+            "layer": 3,
+            "object_index": 2,
+            "x": 8872,
+            "y": 5760,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1660,
+            "layer": 3,
+            "object_index": 3,
+            "x": 1936,
+            "y": 7736,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 1661,
+            "layer": 3,
+            "object_index": 4,
+            "x": 2088,
+            "y": 7736,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 1662,
+            "layer": 3,
+            "object_index": 5,
+            "x": 2296,
+            "y": 7520,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1663,
+            "layer": 3,
+            "object_index": 6,
+            "x": 2016,
+            "y": 7520,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1664,
+            "layer": 3,
+            "object_index": 7,
+            "x": 2272,
+            "y": 7392,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasefollower"
+            }
+          },
+          {
+            "object_id": 1665,
+            "layer": 3,
+            "object_index": 8,
+            "x": 2032,
+            "y": 7392,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasefollower"
+            }
+          },
+          {
+            "object_id": 1666,
+            "layer": 3,
+            "object_index": 9,
+            "x": 3480,
+            "y": 7024,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1667,
+            "layer": 3,
+            "object_index": 10,
+            "x": 3624,
+            "y": 7024,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1668,
+            "layer": 3,
+            "object_index": 11,
+            "x": 3320,
+            "y": 7232,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1669,
+            "layer": 3,
+            "object_index": 12,
+            "x": 3528,
+            "y": 7232,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 1670,
+            "layer": 3,
+            "object_index": 13,
+            "x": 3688,
+            "y": 7232,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1671,
+            "layer": 3,
+            "object_index": 14,
+            "x": 3496,
+            "y": 7304,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1673,
+            "layer": 3,
+            "object_index": 15,
+            "x": 3672,
+            "y": 7304,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1677,
+            "layer": 3,
+            "object_index": 18,
+            "x": 5000,
+            "y": 7872,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1678,
+            "layer": 3,
+            "object_index": 19,
+            "x": 4680,
+            "y": 7848,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1679,
+            "layer": 3,
+            "object_index": 20,
+            "x": 4616,
+            "y": 7872,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1680,
+            "layer": 3,
+            "object_index": 21,
+            "x": 5464,
+            "y": 7392,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1682,
+            "layer": 3,
+            "object_index": 22,
+            "x": 5256,
+            "y": 7392,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1683,
+            "layer": 3,
+            "object_index": 23,
+            "x": 5360,
+            "y": 7392,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 1684,
+            "layer": 3,
+            "object_index": 24,
+            "x": 4088,
+            "y": 7376,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1685,
+            "layer": 3,
+            "object_index": 25,
+            "x": 4064,
+            "y": 7376,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1686,
+            "layer": 3,
+            "object_index": 26,
+            "x": 4152,
+            "y": 6920,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1687,
+            "layer": 3,
+            "object_index": 27,
+            "x": 4344,
+            "y": 6832,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1688,
+            "layer": 3,
+            "object_index": 28,
+            "x": 4480,
+            "y": 6920,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1689,
+            "layer": 3,
+            "object_index": 29,
+            "x": 4752,
+            "y": 6832,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehostage"
+            }
+          },
+          {
+            "object_id": 1690,
+            "layer": 3,
+            "object_index": 30,
+            "x": 4000,
+            "y": 6832,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehostage"
+            }
+          },
+          {
+            "object_id": 1691,
+            "layer": 3,
+            "object_index": 31,
+            "x": 5232,
+            "y": 6872,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1692,
+            "layer": 3,
+            "object_index": 32,
+            "x": 5568,
+            "y": 6872,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1693,
+            "layer": 3,
+            "object_index": 33,
+            "x": 5896,
+            "y": 6880,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1694,
+            "layer": 3,
+            "object_index": 34,
+            "x": 5552,
+            "y": 6640,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1695,
+            "layer": 3,
+            "object_index": 35,
+            "x": 5384,
+            "y": 6760,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1696,
+            "layer": 3,
+            "object_index": 36,
+            "x": 5344,
+            "y": 6640,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1697,
+            "layer": 3,
+            "object_index": 37,
+            "x": 6024,
+            "y": 6640,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1698,
+            "layer": 3,
+            "object_index": 38,
+            "x": 6056,
+            "y": 6768,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1699,
+            "layer": 3,
+            "object_index": 39,
+            "x": 5704,
+            "y": 6768,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1700,
+            "layer": 3,
+            "object_index": 40,
+            "x": 8000,
+            "y": 6280,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1701,
+            "layer": 3,
+            "object_index": 41,
+            "x": 8536,
+            "y": 6104,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1702,
+            "layer": 3,
+            "object_index": 42,
+            "x": 8912,
+            "y": 6104,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1703,
+            "layer": 3,
+            "object_index": 43,
+            "x": 8808,
+            "y": 6104,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1704,
+            "layer": 3,
+            "object_index": 44,
+            "x": 8544,
+            "y": 6104,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1705,
+            "layer": 3,
+            "object_index": 45,
+            "x": 8624,
+            "y": 6104,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 1706,
+            "layer": 3,
+            "object_index": 46,
+            "x": 8728,
+            "y": 6104,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasedagger"
+            }
+          },
+          {
+            "object_id": 1707,
+            "layer": 3,
+            "object_index": 47,
+            "x": 8816,
+            "y": 7192,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1708,
+            "layer": 3,
+            "object_index": 48,
+            "x": 7840,
+            "y": 8640,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1709,
+            "layer": 3,
+            "object_index": 49,
+            "x": 7768,
+            "y": 8648,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1710,
+            "layer": 3,
+            "object_index": 50,
+            "x": 7960,
+            "y": 8224,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasebrute"
+            }
+          },
+          {
+            "object_id": 1711,
+            "layer": 3,
+            "object_index": 51,
+            "x": 7944,
+            "y": 8224,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1712,
+            "layer": 3,
+            "object_index": 52,
+            "x": 8448,
+            "y": 6936,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1713,
+            "layer": 3,
+            "object_index": 53,
+            "x": 8408,
+            "y": 6936,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1714,
+            "layer": 3,
+            "object_index": 54,
+            "x": 8344,
+            "y": 6936,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1715,
+            "layer": 3,
+            "object_index": 55,
+            "x": 7880,
+            "y": 6936,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasesentinel"
+            }
+          },
+          {
+            "object_id": 1716,
+            "layer": 3,
+            "object_index": 56,
+            "x": 8008,
+            "y": 6936,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          },
+          {
+            "object_id": 1717,
+            "layer": 3,
+            "object_index": 57,
+            "x": 7848,
+            "y": 6936,
+            "properties": {
+              "npc": "glitch",
+              "typeName": "volcanobasehunter"
+            }
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/artifact.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/fridgestorage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/railpoint.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleportmarker.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+            "exists": false
+          }
+        ]
+      }
+    },
+    "main_placement_counts": {
+      "volcanobasebrute": 11,
+      "volcanobasesentinel": 16,
+      "volcanobaselord": 1,
+      "volcanobasehunter": 20,
+      "volcanobasedagger": 6,
+      "volcanobasefollower": 2,
+      "volcanobasehostage": 2
+    },
+    "world_definitions": {
+      "instance_worlds.config.patch": {
+        "op": "add",
+        "path": "/volcanobase",
+        "value": {
+          "type": "FloatingDungeon",
+          "dungeonWorld": "volcanobase",
+          "spawningEnabled": false,
+          "beamUpRule": "AnywhereWithWarning",
+          "disableDeathDrops": true,
+          "skyParameters": {
+            "spaceLevel": 3000,
+            "ambientLightLevel": [
+              24,
+              28,
+              24
+            ],
+            "satellites": [
+              {
+                "pos": [
+                  0.310561,
+                  0.35497
+                ],
+                "layers": [
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/liquids/water.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/2.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/20.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/5.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/shadows/9.png"
+                  }
+                ]
+              }
+            ],
+            "planet": {
+              "pos": [
+                0.00538729,
+                0.46961
+              ],
+              "layers": [
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_base.png?hueshift=-80"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=-70?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=-77?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/shadows/9.png"
+                }
+              ]
+            },
+            "skyType": "atmospheric",
+            "horizonImages": [],
+            "dayLength": 1153.36,
+            "surfaceLevel": 100,
+            "seed": -5288806180628666923
+          }
+        }
+      },
+      "dungeon_worlds.config.patch": {
+        "op": "add",
+        "path": "/volcanobase",
+        "value": {
+          "primaryDungeon": "volcanobase",
+          "threatLevel": 6,
+          "gravity": 80,
+          "worldSize": [
+            2000,
+            2000
+          ],
+          "dungeonBaseHeight": 1000,
+          "ambientLightLevel": [
+            32,
+            32,
+            32
+          ],
+          "musicTrack": "/music/thetowerinvincible.ogg",
+          "biome": "volcanic",
+          "environmentStatusEffects": [
+            "dontstarve"
+          ]
+        }
+      }
+    },
+    "tenant": {
+      "name": "bioworld",
+      "priority": 3,
+      "colonyTagCriteria": {
+        "light": 1,
+        "door": 1,
+        "alien": 4
+      },
+      "tenants": [
+        {
+          "spawn": "npc",
+          "species": "fumantizi",
+          "type": "volcanobasefollower",
+          "overrides": {
+            "damageTeamType": "friendly"
+          }
+        }
+      ],
+      "rent": {
+        "periodRange": [
+          900.0,
+          1800.0
+        ],
+        "pool": "villagerGift"
+      }
+    },
+    "radio_definition_count": 21,
+    "radio_numbered_groups": 13,
+    "source_corrections_to_delivery": [
+      "Main Tiled map has58exact typeName records,not56: brute11(not10),sentinel16(not15),hunter20,dagger6,follower2,hostage2,lord1. AllGlitch in source; static records are not a live spawn count.",
+      "Volcanobase radio source has21definitions across13numbered groups including letter suffixes,not13entries. All21source/catalog counterparts were inspected.",
+      "Whole-FU exact type-name scan also finds tenants/mantizi/bioworld.tenant: configured fumantizi volcanobasefollower reuse with friendly team override. Mission Glitch placements do not exhaust species contexts.",
+      "Three volcanic microdungeon map parts supply six further Glitch NPC records in a separate worldgen pool. An instance-world activation link or shared actor identity is not established."
+    ],
+    "terminology_review": {
+      "protector": "Existing exact a Protector title lock retained; generic vocative O protector in prior radio is outside that narrow key and was not remapped.",
+      "warlord": "Existing quest/radio generic warlord→savaş ağası checked across current catalog; no technical identity or Master/Lord actor relation inferred."
+    }
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All48EN/TR variants and exact occurrences reviewed; all7complete NPC definitions and equipment,mission/quest/world/dungeon/map/tenant contexts inspected. All20270previous catalog fields unchanged.",
+    "18follower event fields retain attack/join/returnFromCombat/wait/returnFromWait nesting;25attack and5hostage converse fields distinct. Hostage ghostly/sequence and technical identity/settings unchanged.",
+    "Main map contains58Glitch typeName records:11brute/16sentinel/20hunter/6dagger/2follower/2hostage/1lord. Delivery missed one brute and one sentinel.21radio definitions span13numbered groups,not13entries. Static counts do not prove live spawning or event calls.",
+    "Three volcanic worldgen micro maps add six Glitch typeName records. tenants/mantizi/bioworld.tenant additionally configures fumantizi/friendly volcanobasefollower. No same mission actor or activation link inferred.",
+    "Full vanilla follower/base and active hostileguard/follower/spectator behavior implementations absent. Dialog helper and player recruitment/confirmation management do not establish an exact consumer of the custom dialogue events. Live LQA NOT TESTED.",
+    "Main map has30missing external tilesets and204wire polylines; micro maps have35/34/34missing banks. Exact object/wiring/route functionality not proved. Raw map parameter and wire dumps remain local-only; public review retains relevant static provenance.",
+    "Master command,revenge grammar,must question,scouting kindness,arrow ellipsis,slaughter intensity,hero ownership/favourite meaning and pike/head loan irony corrected. All mood prefixes,roar/sss and existing Attack!/a Protector title were already valid and not counted as Sol edits.",
+    "Generic warlord/warlords stem plus43new full replies LOCKED; existing Attack! reused. Prior995LOCKED entries unchanged. Existing narrow a Protector formal-title rule retained; generic vocative O protector and armor terms not globally remapped.",
+    "No new English-utterance,format or TM permission. No actor identity,Master/Lord relationship,new punishment or mechanic invented. No online Steam upload,game install or shutdown; live event/font/layout tests not performed."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}

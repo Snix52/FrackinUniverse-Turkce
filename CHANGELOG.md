@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.87.0 Beta — Volcano Base / Tower Invincible konuşmaları
+
+7 NPC dosyasında 48 yeni alan /48 bağlam, 44 farklı kaynak metin: 18 takipçi durum repliği, 25 saldırı ve beş rehine konuşması. Confirmed npcs/volcanobase ailesinin kalan dilimi tamamlandı; iki review adayı kapsam dışıdır. Katalog 20.318 alan; önceki 20.270 alan aynı.
+
+9 alanda 10 cümle/kısa ifade düzeltildi: kesin yasak, takip ve zorunluluk sorusu, keşif teşekkürü, ok nesnesi, katletme sertliği, kahraman iyeliği/en sevdiğim tip ve başı mızrağa ödünç verme alayı. Savaş ağası terimi ve 43 tam replik için 44 yeni LOCKED, toplam 1.039; Attack! mevcut kilitten kullanıldı. Eski kilitler ve TM/format/İngilizce cümle koruma izinleri aynı. Ana haritanın iki eksik sayılmış NPC kaydı düzeltildi: 58 Glitch kayıt; ayrıca ayrı worldgen haritalarında altı kayıt ve Mantizi tenant reuse bağlamı incelendi. 21 radyo tanımı doğrulandı. Eksik vanilla parent/davranış ve tilesetler nedeniyle aktif replik/tuzak/rota doğrulanmadı. FU 6.5.8 pini ve mekanikler aynı; canlı LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/volcanobase-20261101.json) · [Oyun kontrolü](docs/lqa/LQA_V087_20261101.md)
+
 ## v0.86.0 Beta — Snow Crash görev konuşmaları
 
 7 NPC dosyasında 53 yeni alan /53 bağlam, 21 farklı kaynak metin: komiser, muhafız, subay, keskin nişancı, roketçi, asi ve rehine. 41 attack ve12 converse alanıyla confirmed npcs/snowcrash ailesinin kalan dilimi tamamlandı; üç review adayı kapsam dışıdır. Katalog 20.270 alan; önceki 20.217 alan aynen korundu.
