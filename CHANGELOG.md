@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.89.0 Beta — Sızma görevi konuşmaları
+
+4 NPC dosyasında 29 yeni alan / 29 bağlam, 26 farklı kaynak metin: elit muhafız, lider, destek ekibi ve Tavish. Confirmed npcs/infiltration ailesinin kalanı tamamlandı. Katalog 20.395 alan; önceki 20.366 alan aynı.
+
+8 alanda 11 bağımsız cümle/kısa ifade düzeltildi: tekil hitap, kaynak şiddeti, güncel güvensizlik, tesis kurma, ikmal, kazı süresi ve konsolla içeri giriş anlamı. Tavish, Deli Bombacı ve 24 tam replik için 26 yeni LOCKED; toplam 1.089. Kaynak yazım bozuklukları değiştirilmedi ve patlayıcı ifadesinden yeni mekanik türetilmedi. FU 6.5.8 pini, teknik alanlar ve önceki kilitler aynı. Tam oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/infiltration-20261102.json) · [Oyun kontrolü](docs/lqa/LQA_V089_20261102.md)
+
 ## v0.88.0 Beta — Kadim Tapınak konuşmaları
 
 4 NPC dosyasında 48 yeni alan / 48 bağlam, 34 farklı kaynak metin: rahipler, alev silahlı muhafız ve kurtarılan takipçi. Confirmed npcs/ancienttemple ailesinin kalanı tamamlandı; katalog 20.366 alan. Önceki 20.318 alan değişmedi.

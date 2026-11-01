@@ -1,0 +1,1444 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-02",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 12,
+  "run_id": "fu-six-20261101",
+  "run_round": 6,
+  "base_commit": "c8a79f3d23dff7c38ed865c56fcbb64262261efc",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 29,
+    "context_groups": 29,
+    "unique_english_strings": 26,
+    "assets": {
+      "npcs/infiltration/infiltrationelite.npctype": 7,
+      "npcs/infiltration/infiltrationleader.npctype": 6,
+      "npcs/infiltration/infiltrationrebel.npctype": 10,
+      "npcs/infiltration/infiltrationtavish.npctype": 6
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 29,
+    "dialogue_events": {
+      "attack": 7,
+      "converse": 22
+    },
+    "confirmed_family_remainder": true
+  },
+  "changes": {
+    "fields": 8,
+    "sentences_including_repeated_fields": 11,
+    "unique_source_strings_corrected": 8,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 8,
+    "total_corrected_sentences": 11,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged clauses excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 26,
+  "new_locked_names": [
+    "Tavish",
+    "the mad bomber",
+    "Rebel scum! Today, you die!",
+    "Opposing Big Ape is a mistake!",
+    "Why do you fight? You cannot hope to win.",
+    "You cannot hurt me! I am bulletproof!",
+    "Intruder spotted! Isolate. Destroy.",
+    "So, you're the special agent Lana was going to send us?",
+    "Personally speaking, I don't trust the looks of you, but if Lana is vouching for you I'll defer to her judgement.",
+    "The Miniknog facility is up ahead through the swamp. A bit of a hellhole, but them's the breaks.",
+    "Our demolitions expert, Tavish, went and set up a forward base ahead. Rendezvous with him, and he'll get you into the facility.",
+    "From there, it's all up to you. Take what you need from my camp - within reason, of course. Good luck, I suppose, but I don't believe in luck.",
+    "We're acting as the support team for Tavish.",
+    "We'd have gone out with Tavish, but too big a group would that close to the facility would attract the Miniknog's attention.",
+    "This place stinks. I want to be off this rock as soon as possible.",
+    "Why would the Miniknog have a facility here anyway? If I were them, I'd pick a nice planet to set up shop, not this!",
+    "I hate poison.",
+    "Tavish 'the mad bomber' DeGroot... he'll find a way to blow it up.",
+    "Careful out there. There are some nasty bugs in the woods.",
+    "Don't forget to load up before you go. We don't have much, but feel free to take anything you might need.",
+    "The Miniknog has outposts in the woods. Watch out for them!",
+    "Oh, you're <entityname>. Shore base radioed me to let you know you were coming, took you long enough.",
+    "Took me a little while to dig all quiet-like, but I've managed to expose part of the facility's waste system.",
+    "They be discharging their effluent straight into the ocean, but I guess they can't mess this rock up any worse, aye?",
+    "Now I've just finished setting them beauties of charges...a good bang to them, and they go with a minimum of noise.",
+    "Just poke at that there console and you'll be in no sweat."
+  ],
+  "reused_locked_names": [
+    "You made a big mistake coming here!",
+    "You shouldn't be seeing this."
+  ],
+  "locked_total": 1089,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "4ebf59e23d20058b595ca75c0a2c4a8b5eda82aa45fe8e6b081795eef4a0b26d",
+  "luna_original_packet_sha256": "712d865393863c4401f7d4d74121761da83bcb609c3a04cc8e5f21d4842bac51",
+  "approved_rows_sha256": "a0c73ea13994fcab838b186c6c041e20c43535b6678d0fc349eea563f906783b",
+  "corrections": [
+    {
+      "unit_index": 0,
+      "en": "Rebel scum! Today, you die!",
+      "before": "Asi pislikleri! Bugün ölüyorsunuz!",
+      "after": "Seni asi pislik! Bugün öleceksin!",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationelite.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/apex/0",
+          "origin": "npcs/infiltration/infiltrationelite.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Scalar hedefe yönelen saldırı repliği ve komşu tekil tehditlerle tutarlı tekil hitap kullanıldı. İngilizce scum sayılmayan hakarettir; çoğul grup varsayımı kaldırıldı. İki bağımsız kısa ifade değişti."
+    },
+    {
+      "unit_index": 1,
+      "en": "Opposing Big Ape is a mistake!",
+      "before": "Big Ape'e karşı çıkmak büyük hata!",
+      "after": "Big Ape'e karşı çıkmak hata!",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationelite.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/apex/1",
+          "origin": "npcs/infiltration/infiltrationelite.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynakta bulunmayan büyük hata şiddetlendirmesi çıkarıldı; ayrı big mistake repliğindeki büyük karşılığı aynı kaldı. Mevcut Big Ape özel ad kilidi korundu."
+    },
+    {
+      "unit_index": 2,
+      "en": "Why do you fight? You cannot hope to win.",
+      "before": "Niye savaşıyorsunuz? Kazanma şansınız yok.",
+      "after": "Niye savaşıyorsun? Kazanma umudun yok.",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationelite.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/apex/2",
+          "origin": "npcs/infiltration/infiltrationelite.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Saldırı hedefiyle tutarlı tekil hitap ve kaynak hope umudu korundu; çoğul kişi ve salt şans anlatımı düzeltildi. İki cümle değişti."
+    },
+    {
+      "unit_index": 8,
+      "en": "Personally speaking, I don't trust the looks of you, but if Lana is vouching for you I'll defer to her judgement.",
+      "before": "Açıkçası, tipine güvenemedim; ama Lana sana kefil oluyorsa kararına uyarım.",
+      "after": "Açıkçası, tipin bana güven vermiyor; ama Lana sana kefil oluyorsa kararına uyarım.",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationleader.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+          "origin": "npcs/infiltration/infiltrationleader.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynağın şimdiki güvensizliği geçmişte tamamlanmış güvenemedim eylemine indirgenmedi. Lana kefaleti ve kararına uyma koşulu zaten doğruydu; ayrıca sayılmadı."
+    },
+    {
+      "unit_index": 16,
+      "en": "Why would the Miniknog have a facility here anyway? If I were them, I'd pick a nice planet to set up shop, not this!",
+      "before": "Miniknog'un burada tesisi ne işi var ki? Ben olsam buraya değil, güzel bir gezegene yerleşirdim!",
+      "after": "Miniknog niye buraya tesis kurmuş ki? Ben olsam buraya değil, güzel bir gezegene tesis kurardım!",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+          "origin": "npcs/infiltration/infiltrationrebel.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Tesisi ne işi var bozuk tamlaması düzeltildi. İkinci cümlede set up shop tesis kurma bağlamında verildi; gezegene yerleşme/kolonileşme anlamına kaymadı. İki cümle değişti."
+    },
+    {
+      "unit_index": 20,
+      "en": "Don't forget to load up before you go. We don't have much, but feel free to take anything you might need.",
+      "before": "Gitmeden önce yanına alman gerekenleri almayı unutma. Pek bir şeyimiz yok ama ihtiyacın olanı alabilirsin.",
+      "after": "Gitmeden önce malzeme stoklamayı unutma. Pek bir şeyimiz yok ama ihtiyacın olanı alabilirsin.",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationrebel.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/7",
+          "origin": "npcs/infiltration/infiltrationrebel.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Yanına alman gerekenleri almayı biçimindeki yinelenen çeviri doğal ikmal anlatımına alındı. İkinci cümle aynı kaldı ve sayılmadı; yeni eşya türü veya miktar eklenmedi."
+    },
+    {
+      "unit_index": 24,
+      "en": "Took me a little while to dig all quiet-like, but I've managed to expose part of the facility's waste system.",
+      "before": "Tesisi sessiz sedasız biraz kazmam gerekti ama atık sisteminin bir kısmını açığa çıkardım.",
+      "after": "Sessiz sedasız kazmak biraz zamanımı aldı ama tesisin atık sisteminin bir kısmını açığa çıkardım.",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationtavish.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+          "origin": "npcs/infiltration/infiltrationtavish.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "A little while kazının süresidir, kazılan tesisin miktarı değildir. Kaynakta doğrudan nesne olmayan tesisi kazmak ve gereklilik eklemesi çıkarıldı; tesisin atık sisteminin bir kısmı anlamı korundu."
+    },
+    {
+      "unit_index": 27,
+      "en": "Just poke at that there console and you'll be in no sweat.",
+      "before": "Şu konsola şöyle bir dokun, gerisi kolay.",
+      "after": "Şu konsola şöyle bir dokun, kolayca içeri girersin.",
+      "occurrences": [
+        {
+          "asset": "npcs/infiltration/infiltrationtavish.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/4",
+          "origin": "npcs/infiltration/infiltrationtavish.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Değişmeyen konsola dokun komutu sayılmadı. Sonuçtaki you will be in tesise giriş anlamıyla geri getirildi; gerisi kolay belirsizliğine indirgenmedi ve yeni kontrol/tetikleme mekaniği eklenmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "712d865393863c4401f7d4d74121761da83bcb609c3a04cc8e5f21d4842bac51",
+    "filled_units": 29
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 29,
+    "context_units": 29,
+    "qa": {
+      "catalog_units_checked": 35395,
+      "raw_units_checked": 115,
+      "locked_terms": 1089
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/infiltration/infiltrationelite.npctype",
+        "note": "Sol reviewed all 7 exact occurrences and full type,base,identity,equipment,behavior and nested dialogue definition."
+      },
+      {
+        "source": "fu_source/npcs/infiltration/infiltrationleader.npctype",
+        "note": "Sol reviewed all 6 exact occurrences and full type,base,identity,equipment,behavior and nested dialogue definition."
+      },
+      {
+        "source": "fu_source/npcs/infiltration/infiltrationrebel.npctype",
+        "note": "Sol reviewed all 10 exact occurrences and full type,base,identity,equipment,behavior and nested dialogue definition."
+      },
+      {
+        "source": "fu_source/npcs/infiltration/infiltrationtavish.npctype",
+        "note": "Sol reviewed all 6 exact occurrences and full type,base,identity,equipment,behavior and nested dialogue definition."
+      },
+      {
+        "source": "fu_source/quests/infiltration.questtemplate; fu_source/ai/infiltration.aimission; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/dungeons/missions/infiltration/infiltration.dungeon; fu_source/dungeons/missions/infiltration/infiltration.json",
+        "note": "Quest/AI/world/dungeon chain and main map reviewed.13Apex exact typeName records (8elite,3rebel,1leader,1Tavish),21separate radio IDs,1473object records,199wire polylines,25missing external tilesets. Static records do not prove live event activation or console/trap function."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/npcs/base.npctype.patch; fu_source/scripts/actions/dialog.lua; fu_source/scripts/companions/player.lua",
+        "note": "Full hostilefu/base patch/dialog helper and player recruitment/follower functions read. Speaker branch then target/default selection retained. Full vanilla base and active hostileguard/spectator implementations absent; exact active reply callers unverified."
+      },
+      {
+        "source": "fu_source/radiomessages/missions.radiomessages.patch; local-repo/tools/ceviriler.json; local-repo/tools/locked_terms.json",
+        "note": "All21infiltration radio definitions and catalog counterparts reviewed,including Lana,Koichi,Nuru speakers,Tavish rendezvous and armored-guard warnings. Existing Big Ape,Miniknog,placeholder and2exact reply locks preserved. Source typo/charge ambiguity and technical identity are separate from dialogue translation. No ordinary English sentence preserve permission widened."
+      },
+      {
+        "source": "fu_source/radiomessages/fu_exploration.radiomessages:/needMicrosphere; fu_source/dungeons/missions/infiltration/infiltration.json",
+        "note": "Sol found22total map radio IDs,not only21family IDs. Additional needMicrosphere source and existing translation verified unchanged; no missing field was ignored."
+      },
+      {
+        "source": "fu_source/dungeons/worldgen/apexunderwaterlab/apexunderwaterlab.dungeon; fu_source/dungeons/space/apexweaponsplatform/apexweaponsplatform.dungeon; fu_source/dungeons/microdungeons/biomes/toxic/toxicmicrodungeons.dungeon.patch; fu_source/quests/generated/locations.config.patch; fu_source/dungeons/worldgen/apexunderwaterlab/generatorinfiltration.json; fu_source/dungeons/space/apexweaponsplatform/mapinfiltration.json; fu_source/dungeons/microdungeons/biomes/toxic/infiltrationmap1.json; fu_source/dungeons/microdungeons/biomes/toxic/infiltrationmap2.json; fu_source/dungeons/microdungeons/biomes/toxic/infiltrationmap3.json",
+        "note": "Sol parsed full registered configs and maps. Underwater generator and space reward map have no typeName NPC record; toxic maps contain1/2/3apexscout records. These are separate non-tenant contexts,not placements of the4packet NPC types."
+      }
+    ],
+    "note": "All29EN/TR variants and exact occurrences reviewed by Sol.8fields/11independent sentences or short expressions corrected.7attack/22converse and three fallback occurrences preserved;5technical review rows excluded. Source typos unchanged; charge wording does not invent a trigger. Exact active consumer and live LQA NOT TESTED."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/infiltration/infiltrationelite.npctype",
+        "type": "infiltrationelite",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "fields": 7,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/apex/0",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "Rebel scum! Today, you die!",
+            "luna_tr": "Asi pislikleri! Bugün ölüyorsunuz!",
+            "approved_tr": "Seni asi pislik! Bugün öleceksin!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/apex/1",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "Opposing Big Ape is a mistake!",
+            "luna_tr": "Big Ape'e karşı çıkmak büyük hata!",
+            "approved_tr": "Big Ape'e karşı çıkmak hata!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/apex/2",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "Why do you fight? You cannot hope to win.",
+            "luna_tr": "Niye savaşıyorsunuz? Kazanma şansınız yok.",
+            "approved_tr": "Niye savaşıyorsun? Kazanma umudun yok."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/apex/3",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "You cannot hurt me! I am bulletproof!",
+            "luna_tr": "Bana zarar veremezsin! Kurşun işlemez bana!",
+            "approved_tr": "Bana zarar veremezsin! Kurşun işlemez bana!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "You made a big mistake coming here!",
+            "luna_tr": "Buraya gelmekle büyük hata ettin!",
+            "approved_tr": "Buraya gelmekle büyük hata ettin!"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "You cannot hurt me! I am bulletproof!",
+            "luna_tr": "Bana zarar veremezsin! Kurşun işlemez bana!",
+            "approved_tr": "Bana zarar veremezsin! Kurşun işlemez bana!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/infiltration/infiltrationelite.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/infiltration/infiltrationelite.npctype",
+            "en": "Intruder spotted! Isolate. Destroy.",
+            "luna_tr": "İzinsiz giren tespit edildi! Tecrit edin. İmha edin.",
+            "approved_tr": "İzinsiz giren tespit edildi! Tecrit edin. İmha edin."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/infiltration/infiltrationleader.npctype",
+        "type": "infiltrationleader",
+        "base_type": "base",
+        "identity": null,
+        "behavior": "spectator",
+        "dialog_mode": "sequence",
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 7,
+            "asset": "npcs/infiltration/infiltrationleader.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/infiltration/infiltrationleader.npctype",
+            "en": "So, you're the special agent Lana was going to send us?",
+            "luna_tr": "Demek Lana'nın bize göndereceği özel ajan sensin?",
+            "approved_tr": "Demek Lana'nın bize göndereceği özel ajan sensin?"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/infiltration/infiltrationleader.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+            "origin": "npcs/infiltration/infiltrationleader.npctype",
+            "en": "Personally speaking, I don't trust the looks of you, but if Lana is vouching for you I'll defer to her judgement.",
+            "luna_tr": "Açıkçası, tipine güvenemedim; ama Lana sana kefil oluyorsa kararına uyarım.",
+            "approved_tr": "Açıkçası, tipin bana güven vermiyor; ama Lana sana kefil oluyorsa kararına uyarım."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/infiltration/infiltrationleader.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/2",
+            "origin": "npcs/infiltration/infiltrationleader.npctype",
+            "en": "The Miniknog facility is up ahead through the swamp. A bit of a hellhole, but them's the breaks.",
+            "luna_tr": "Miniknog tesisi ileride, bataklığın öte yanında. Cehennem gibi bir yer ama yapacak bir şey yok.",
+            "approved_tr": "Miniknog tesisi ileride, bataklığın öte yanında. Cehennem gibi bir yer ama yapacak bir şey yok."
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/infiltration/infiltrationleader.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+            "origin": "npcs/infiltration/infiltrationleader.npctype",
+            "en": "Our demolitions expert, Tavish, went and set up a forward base ahead. Rendezvous with him, and he'll get you into the facility.",
+            "luna_tr": "Patlayıcı uzmanımız Tavish ileride bir ileri üs kurmuş. Onunla buluş; seni tesise sokar.",
+            "approved_tr": "Patlayıcı uzmanımız Tavish ileride bir ileri üs kurmuş. Onunla buluş; seni tesise sokar."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/infiltration/infiltrationleader.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/4",
+            "origin": "npcs/infiltration/infiltrationleader.npctype",
+            "en": "From there, it's all up to you. Take what you need from my camp - within reason, of course. Good luck, I suppose, but I don't believe in luck.",
+            "luna_tr": "Ondan sonrası sana kalmış. Kampımdan ihtiyacın olanları al—tabii ölçüyü kaçırmadan. İyi şanslar diyeyim ama şansa inanmam.",
+            "approved_tr": "Ondan sonrası sana kalmış. Kampımdan ihtiyacın olanları al—tabii ölçüyü kaçırmadan. İyi şanslar diyeyim ama şansa inanmam."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/infiltration/infiltrationleader.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/infiltration/infiltrationleader.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/infiltration/infiltrationrebel.npctype",
+        "type": "infiltrationrebel",
+        "base_type": "base",
+        "identity": null,
+        "behavior": "spectator",
+        "dialog_mode": null,
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 13,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "We're acting as the support team for Tavish.",
+            "luna_tr": "Tavish'in destek ekibiyiz.",
+            "approved_tr": "Tavish'in destek ekibiyiz."
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "We'd have gone out with Tavish, but too big a group would that close to the facility would attract the Miniknog's attention.",
+            "luna_tr": "Tavish'le biz de giderdik ama tesisin bu kadar yakınında kalabalık bir grup Miniknog'un dikkatini çekerdi.",
+            "approved_tr": "Tavish'le biz de giderdik ama tesisin bu kadar yakınında kalabalık bir grup Miniknog'un dikkatini çekerdi."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/2",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "This place stinks. I want to be off this rock as soon as possible.",
+            "luna_tr": "Burası leş gibi. Bu gezegenden bir an önce gitmek istiyorum.",
+            "approved_tr": "Burası leş gibi. Bu gezegenden bir an önce gitmek istiyorum."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "Why would the Miniknog have a facility here anyway? If I were them, I'd pick a nice planet to set up shop, not this!",
+            "luna_tr": "Miniknog'un burada tesisi ne işi var ki? Ben olsam buraya değil, güzel bir gezegene yerleşirdim!",
+            "approved_tr": "Miniknog niye buraya tesis kurmuş ki? Ben olsam buraya değil, güzel bir gezegene tesis kurardım!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/4",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "I hate poison.",
+            "luna_tr": "Zehirden nefret ediyorum.",
+            "approved_tr": "Zehirden nefret ediyorum."
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/5",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "Tavish 'the mad bomber' DeGroot... he'll find a way to blow it up.",
+            "luna_tr": "Tavish “Deli Bombacı” DeGroot... orayı havaya uçurmanın yolunu bulur.",
+            "approved_tr": "Tavish “Deli Bombacı” DeGroot... orayı havaya uçurmanın yolunu bulur."
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/6",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "Careful out there. There are some nasty bugs in the woods.",
+            "luna_tr": "Dışarıda dikkat et. Ormandaki haşereler fena.",
+            "approved_tr": "Dışarıda dikkat et. Ormandaki haşereler fena."
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/7",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "Don't forget to load up before you go. We don't have much, but feel free to take anything you might need.",
+            "luna_tr": "Gitmeden önce yanına alman gerekenleri almayı unutma. Pek bir şeyimiz yok ama ihtiyacın olanı alabilirsin.",
+            "approved_tr": "Gitmeden önce malzeme stoklamayı unutma. Pek bir şeyimiz yok ama ihtiyacın olanı alabilirsin."
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/8",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "The Miniknog has outposts in the woods. Watch out for them!",
+            "luna_tr": "Miniknog'un ormanda karakolları var. Gözünü açık tut!",
+            "approved_tr": "Miniknog'un ormanda karakolları var. Gözünü açık tut!"
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/infiltration/infiltrationrebel.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/infiltration/infiltrationrebel.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/infiltration/infiltrationtavish.npctype",
+        "type": "infiltrationtavish",
+        "base_type": "base",
+        "identity": {
+          "name": "Tavish",
+          "gender": "male"
+        },
+        "behavior": "spectator",
+        "dialog_mode": "sequence",
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 23,
+            "asset": "npcs/infiltration/infiltrationtavish.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/infiltration/infiltrationtavish.npctype",
+            "en": "Oh, you're <entityname>. Shore base radioed me to let you know you were coming, took you long enough.",
+            "luna_tr": "Aa, demek <entityname> sensin. Sahil üssünden geleceğini telsizle bildirdiler; amma da geç kaldın.",
+            "approved_tr": "Aa, demek <entityname> sensin. Sahil üssünden geleceğini telsizle bildirdiler; amma da geç kaldın."
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/infiltration/infiltrationtavish.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+            "origin": "npcs/infiltration/infiltrationtavish.npctype",
+            "en": "Took me a little while to dig all quiet-like, but I've managed to expose part of the facility's waste system.",
+            "luna_tr": "Tesisi sessiz sedasız biraz kazmam gerekti ama atık sisteminin bir kısmını açığa çıkardım.",
+            "approved_tr": "Sessiz sedasız kazmak biraz zamanımı aldı ama tesisin atık sisteminin bir kısmını açığa çıkardım."
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/infiltration/infiltrationtavish.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/2",
+            "origin": "npcs/infiltration/infiltrationtavish.npctype",
+            "en": "They be discharging their effluent straight into the ocean, but I guess they can't mess this rock up any worse, aye?",
+            "luna_tr": "Atık sularını doğruca okyanusa boşaltıyorlar; ama şu gezegeni daha beter hâle getiremezler herhâlde, öyle değil mi?",
+            "approved_tr": "Atık sularını doğruca okyanusa boşaltıyorlar; ama şu gezegeni daha beter hâle getiremezler herhâlde, öyle değil mi?"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/infiltration/infiltrationtavish.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+            "origin": "npcs/infiltration/infiltrationtavish.npctype",
+            "en": "Now I've just finished setting them beauties of charges...a good bang to them, and they go with a minimum of noise.",
+            "luna_tr": "Şu güzelim patlayıcıları yerleştirmeyi daha yeni bitirdim... Güzelce patlarlar, hem de fazla gürültü çıkarmadan.",
+            "approved_tr": "Şu güzelim patlayıcıları yerleştirmeyi daha yeni bitirdim... Güzelce patlarlar, hem de fazla gürültü çıkarmadan."
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/infiltration/infiltrationtavish.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/4",
+            "origin": "npcs/infiltration/infiltrationtavish.npctype",
+            "en": "Just poke at that there console and you'll be in no sweat.",
+            "luna_tr": "Şu konsola şöyle bir dokun, gerisi kolay.",
+            "approved_tr": "Şu konsola şöyle bir dokun, kolayca içeri girersin."
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/infiltration/infiltrationtavish.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/infiltration/infiltrationtavish.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 29,
+    "layered_fields": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "exact_identifier_reference_files": [
+      "dungeons/missions/infiltration/infiltration.json",
+      "npcs/infiltration/infiltrationelite.npctype",
+      "npcs/infiltration/infiltrationleader.npctype",
+      "npcs/infiltration/infiltrationrebel.npctype",
+      "npcs/infiltration/infiltrationtavish.npctype"
+    ],
+    "maps": {
+      "dungeons/missions/infiltration/infiltration.json": {
+        "width": 1564,
+        "height": 640,
+        "object_count": 1473,
+        "placements": [
+          {
+            "layer": 4,
+            "object_index": 2,
+            "height": 8,
+            "id": 1611,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationrebel"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2192,
+            "y": 1016
+          },
+          {
+            "layer": 4,
+            "object_index": 3,
+            "height": 8,
+            "id": 1612,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationrebel"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2032,
+            "y": 1024
+          },
+          {
+            "layer": 4,
+            "object_index": 4,
+            "height": 8,
+            "id": 1613,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationrebel"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2368,
+            "y": 1000
+          },
+          {
+            "layer": 4,
+            "object_index": 5,
+            "height": 8,
+            "id": 1614,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationleader"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 2280,
+            "y": 1016
+          },
+          {
+            "layer": 4,
+            "object_index": 7,
+            "height": 8,
+            "id": 1616,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationtavish"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 9952,
+            "y": 1528
+          },
+          {
+            "layer": 4,
+            "object_index": 8,
+            "height": 8,
+            "id": 1617,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 10240,
+            "y": 944
+          },
+          {
+            "layer": 4,
+            "object_index": 26,
+            "height": 8,
+            "id": 1646,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 10480,
+            "y": 1016
+          },
+          {
+            "layer": 4,
+            "object_index": 27,
+            "height": 8,
+            "id": 1647,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 10376,
+            "y": 776
+          },
+          {
+            "layer": 4,
+            "object_index": 28,
+            "height": 8,
+            "id": 1648,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 10968,
+            "y": 1472
+          },
+          {
+            "layer": 4,
+            "object_index": 29,
+            "height": 8,
+            "id": 1649,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 10680,
+            "y": 2064
+          },
+          {
+            "layer": 4,
+            "object_index": 30,
+            "height": 8,
+            "id": 1650,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 10880,
+            "y": 2064
+          },
+          {
+            "layer": 4,
+            "object_index": 31,
+            "height": 8,
+            "id": 1651,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 9024,
+            "y": 2360
+          },
+          {
+            "layer": 4,
+            "object_index": 32,
+            "height": 8,
+            "id": 1652,
+            "name": "",
+            "properties": {
+              "npc": "apex",
+              "typeName": "infiltrationelite"
+            },
+            "propertytypes": {
+              "npc": "string",
+              "typeName": "string"
+            },
+            "rotation": 0,
+            "type": "",
+            "visible": true,
+            "width": 8,
+            "x": 9088,
+            "y": 2360
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/artifact.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "exists": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "exists": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+            "exists": false
+          },
+          {
+            "source": "../../../tilesets/frackinuniverse-custom/fu_liquids.json",
+            "exists": true
+          }
+        ],
+        "wire_count": 199
+      }
+    },
+    "main_placement_counts": {
+      "infiltrationrebel": 3,
+      "infiltrationleader": 1,
+      "infiltrationtavish": 1,
+      "infiltrationelite": 8
+    },
+    "world_definitions": {
+      "instance_worlds.config.patch": {
+        "op": "add",
+        "path": "/infiltration",
+        "value": {
+          "type": "FloatingDungeon",
+          "dungeonWorld": "infiltration",
+          "spawningEnabled": false,
+          "beamUpRule": "AnywhereWithWarning",
+          "disableDeathDrops": true,
+          "skyParameters": {
+            "spaceLevel": 3000,
+            "ambientLightLevel": [
+              24,
+              24,
+              24
+            ],
+            "satellites": [
+              {
+                "pos": [
+                  0.310561,
+                  0.35497
+                ],
+                "layers": [
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/liquids/water.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/2.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/20.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/biomes/forest/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/5.png"
+                  },
+                  {
+                    "scale": 0.055,
+                    "image": "/celestial/system/terrestrial/shadows/9.png"
+                  }
+                ]
+              }
+            ],
+            "planet": {
+              "pos": [
+                0.00538729,
+                0.46961
+              ],
+              "layers": [
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_base.png?hueshift=-80"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=-70?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=-77?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                },
+                {
+                  "scale": 0.15,
+                  "image": "/celestial/system/gas_giant/shadows/9.png"
+                }
+              ]
+            },
+            "skyType": "atmospheric",
+            "horizonImages": [],
+            "dayLength": 1153.36,
+            "surfaceLevel": 1000,
+            "seed": -5288806180628666923
+          }
+        }
+      },
+      "dungeon_worlds.config.patch": {
+        "op": "add",
+        "path": "/infiltration",
+        "value": {
+          "primaryDungeon": "infiltration",
+          "threatLevel": 6,
+          "gravity": 80,
+          "worldSize": [
+            2000,
+            2000
+          ],
+          "dungeonBaseHeight": 1000,
+          "ambientLightLevel": [
+            32,
+            32,
+            32
+          ],
+          "musicTrack": "/music/infiltration.ogg",
+          "biome": "toxic",
+          "environmentStatusEffects": [
+            "dontstarve"
+          ]
+        }
+      }
+    },
+    "radio_definition_count": 21,
+    "main_radio_ids": [
+      "infiltration01",
+      "infiltration01a",
+      "infiltration02",
+      "infiltration02a",
+      "infiltration03",
+      "infiltration03a",
+      "infiltration03b",
+      "infiltration04",
+      "infiltration04a",
+      "infiltration04b",
+      "infiltration05",
+      "infiltration06",
+      "infiltration06a",
+      "infiltration07",
+      "infiltration07a",
+      "infiltration07b",
+      "infiltration07c",
+      "infiltration08",
+      "infiltration08a",
+      "infiltration09",
+      "infiltration09a",
+      "needMicrosphere"
+    ],
+    "related_review_rows": 5,
+    "source_corrections_to_delivery": [
+      "Named underwater-lab,space-platform and toxic microdungeon registrations are separate dungeon/worldgen reuse contexts,not tenant records. Whole-FU exact scan of all4packet type identifiers finds only4NPC definitions plus the main mission map; no named tenant or other map placement of these4types was found.",
+      "The map references21infiltration family radio IDs plus needMicrosphere,22IDs total. The extra ID is defined in fu_exploration and already translated; its exact source/catalog counterpart was separately verified unchanged."
+    ],
+    "terminology_review": {
+      "Big_Ape": "Existing proper-name lock preserved; not Büyük Maymun.",
+      "Miniknog": "Existing faction lock preserved.",
+      "Tavish": "Technical identity/name unchanged; spoken proper name preserved and mad bomber nickname translated.",
+      "bulletproof": "Source boast and mission radio warning retained; no stat/armor/immunity changes or live mechanic verification asserted.",
+      "source_typos": "Repeated would and radioed me to let you know you were coming remain byte-identical EN. Turkish resolves narrative intention with stated uncertainty; no source/hash repair.",
+      "charges": "A good bang to them is ambiguous. Delivered generic explosion/minimal-noise wording retained; no physical-impact or console detonation mechanism invented."
+    },
+    "main_radio_id_count": 22,
+    "additional_radio": {
+      "id": "needMicrosphere",
+      "source_asset": "radiomessages/fu_exploration.radiomessages",
+      "definition": {
+        "unique": false,
+        "text": "To fit through this gap, you're going to require a ^orange;Microsphere Tech^reset;. You can craft it via your ^orange;Tricorder^reset;. "
+      },
+      "existing_catalog_row": {
+        "asset": "radiomessages/fu_exploration.radiomessages",
+        "pointer": "/needMicrosphere/text",
+        "en": "To fit through this gap, you're going to require a ^orange;Microsphere Tech^reset;. You can craft it via your ^orange;Tricorder^reset;. ",
+        "tr": "Bu aralıktan geçmek için ^orange;Mikroküre Tech^reset; gerekiyor. Bunu ^orange;Tricorder^reset; üzerinden üretebilirsin.",
+        "section": "v0.80 S.A.I.L. ve radyo mesajları"
+      },
+      "translation_changed": false
+    },
+    "related_contexts": [
+      {
+        "asset": "dungeons/worldgen/apexunderwaterlab/apexunderwaterlab.dungeon",
+        "metadata": {
+          "name": "apexunderwaterlab",
+          "species": "apex",
+          "rules": [],
+          "anchor": [
+            "anchor1",
+            "anchor2"
+          ],
+          "gravity": 80,
+          "maxRadius": 1000000,
+          "maxParts": 15,
+          "protected": true
+        },
+        "relevant_registrations": [
+          {
+            "name": "generatorsnow",
+            "rules": [
+              [
+                "ignorePartMaximumRule"
+              ],
+              [
+                "doNotCombineWith",
+                [
+                  "generatorinfiltration",
+                  "generatorradar"
+                ]
+              ],
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "generatorsnow.json"
+            ],
+            "chance": 5
+          },
+          {
+            "name": "generatorinfiltration",
+            "rules": [
+              [
+                "ignorePartMaximumRule"
+              ],
+              [
+                "doNotCombineWith",
+                [
+                  "generatorsnow",
+                  "generatorradar"
+                ]
+              ],
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "generatorinfiltration.json"
+            ],
+            "chance": 5
+          },
+          {
+            "name": "generatorradar",
+            "rules": [
+              [
+                "ignorePartMaximumRule"
+              ],
+              [
+                "doNotCombineWith",
+                [
+                  "generatorsnow",
+                  "generatorinfiltration"
+                ]
+              ],
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "generatorradar.json"
+            ],
+            "chance": 2
+          }
+        ]
+      },
+      {
+        "asset": "dungeons/space/apexweaponsplatform/apexweaponsplatform.dungeon",
+        "metadata": {
+          "name": "apexweaponsplatform",
+          "species": "generic",
+          "rules": [],
+          "anchor": [
+            "base1",
+            "base2",
+            "base3"
+          ],
+          "gravity": 80,
+          "maxRadius": 1000000,
+          "maxParts": 3,
+          "protected": true
+        },
+        "relevant_registrations": [
+          {
+            "name": "mapinfiltration",
+            "rules": [
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ],
+              [
+                "ignorePartMaximumRule"
+              ]
+            ],
+            "def": [
+              "tmx",
+              "mapinfiltration.json"
+            ],
+            "chance": 0
+          }
+        ]
+      },
+      {
+        "asset": "dungeons/microdungeons/biomes/toxic/toxicmicrodungeons.dungeon.patch",
+        "metadata": null,
+        "relevant_registrations": [
+          {
+            "op": "add",
+            "path": "/metadata/anchor/-",
+            "value": "infiltrationmap1"
+          },
+          {
+            "op": "add",
+            "path": "/metadata/anchor/-",
+            "value": "infiltrationmap2"
+          },
+          {
+            "op": "add",
+            "path": "/metadata/anchor/-",
+            "value": "infiltrationmap3"
+          },
+          {
+            "op": "add",
+            "path": "/parts/-",
+            "value": {
+              "name": "infiltrationmap1",
+              "rules": [
+                [
+                  "maxSpawnCount",
+                  [
+                    1
+                  ]
+                ]
+              ],
+              "def": [
+                "tmx",
+                "infiltrationmap1.json"
+              ]
+            }
+          },
+          {
+            "op": "add",
+            "path": "/parts/-",
+            "value": {
+              "name": "infiltrationmap2",
+              "rules": [
+                [
+                  "maxSpawnCount",
+                  [
+                    1
+                  ]
+                ]
+              ],
+              "def": [
+                "tmx",
+                "infiltrationmap2.json"
+              ]
+            }
+          },
+          {
+            "op": "add",
+            "path": "/parts/-",
+            "value": {
+              "name": "infiltrationmap3",
+              "rules": [
+                [
+                  "maxSpawnCount",
+                  [
+                    1
+                  ]
+                ]
+              ],
+              "def": [
+                "tmx",
+                "infiltrationmap3.json"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "asset": "quests/generated/locations.config.patch",
+        "metadata": null,
+        "relevant_registrations": [
+          {
+            "op": "add",
+            "path": "/toxic/infiltrationmap1",
+            "value": {
+              "name": "Miniknog outpost",
+              "tags": [
+                "generic",
+                "friendly"
+              ],
+              "range": 600
+            }
+          },
+          {
+            "op": "add",
+            "path": "/toxic/infiltrationmap2",
+            "value": {
+              "name": "Miniknog outpost",
+              "tags": [
+                "generic",
+                "friendly"
+              ],
+              "range": 600
+            }
+          },
+          {
+            "op": "add",
+            "path": "/toxic/infiltrationmap3",
+            "value": {
+              "name": "Miniknog outpost",
+              "tags": [
+                "generic",
+                "friendly"
+              ],
+              "range": 600
+            }
+          }
+        ]
+      },
+      {
+        "asset": "dungeons/worldgen/apexunderwaterlab/generatorinfiltration.json",
+        "exact_type_name_counts": {},
+        "packet_types_present": false
+      },
+      {
+        "asset": "dungeons/space/apexweaponsplatform/mapinfiltration.json",
+        "exact_type_name_counts": {},
+        "packet_types_present": false
+      },
+      {
+        "asset": "dungeons/microdungeons/biomes/toxic/infiltrationmap1.json",
+        "exact_type_name_counts": {
+          "apexscout": 1
+        },
+        "packet_types_present": false
+      },
+      {
+        "asset": "dungeons/microdungeons/biomes/toxic/infiltrationmap2.json",
+        "exact_type_name_counts": {
+          "apexscout": 2
+        },
+        "packet_types_present": false
+      },
+      {
+        "asset": "dungeons/microdungeons/biomes/toxic/infiltrationmap3.json",
+        "exact_type_name_counts": {
+          "apexscout": 3
+        },
+        "packet_types_present": false
+      }
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All 29 EN/TR variants and exact occurrences reviewed;4 full NPC definitions and equipment,quest/AI/world/dungeon/map and21radio counterparts inspected. All20366prior catalog fields unchanged.",
+    "7 attack/22 converse fields retain speaker and target branches. Leader/Tavish sequence and spectator settings remain technical;3default fallback occurrences preserved.5behavior/dialogMode review rows excluded from visible scope.",
+    "Main map13Apex exact typeName records:8elite/3rebel/1leader/1Tavish.22radio IDs:21infiltration family plus needMicrosphere. Additional generic radio source/catalog verified unchanged.1473object records/199wire polylines/25missing external tilesets do not prove active spawning,route,console or trap behavior.",
+    "Exact4type identifier scan finds main mission map and4definitions only. Underwater generator/space map/toxic outpost contexts are separate registered dungeon/worldgen sources,not tenants. Three toxic maps contain1/2/3apexscout records,not these4NPC types.",
+    "Full vanilla base and active hostileguard/spectator implementations absent. Dialog helper selection and scalar target parameter do not establish an exact active consumer or live trigger. Full gameplay LQA NOT TESTED.",
+    "8fields/11independent expressions corrected:singular target,source mistake intensity,present mistrust,facility grammar/action,supply wording,digging duration/ownership and actual entry result. Source repeated would and radioed-me/you pronoun typo unchanged. Charge wording remains generic and explicitly ambiguous; no new trigger mechanic.",
+    "Tavish proper name,Deli Bombacı nickname and24full replies LOCKED:26new,total1089. Existing Big Ape,Miniknog,placeholder and2exact full-reply locks retained. All prior1063active locks and existing policy records unchanged. No preserve_utterance binding,TM or format exception added.",
+    "Technical identity,name,items,stats and behavior unchanged. Bulletproof boast and mission radio armor warning preserved as text; no mechanic modification or live immunity verification asserted. Install/startup/Workshop actions are subsequent user-authorized steps,not already completed LQA claims."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}
