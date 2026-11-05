@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.90.0 Beta — Tüccar kiracı konuşmaları
+
+Avian mezarcı, insan oduncu/kaçakçı ve Nightar demircide 63 yeni alan /63 bağlam /57 farklı kaynak metin:53diyalog,10başlık. Katalog20.458; önceki20.395alan aynı.
+
+8alanda8cümle/kısa ifade düzeltildi;63yeniLOCKED,toplam1.152. Kraliyet cesedi varsayımı ve kaynakta olmayan en iyi güçlendirmesi kaldırıldı; yön, ihtiyaç, nadirlik ve işçilik anlatımı netleştirildi. Kaynaktaki iç Jeolog başlığı, teknik ayarlar ve FU6.5.8pini korundu. Eksik vanilla tüketici ve canlı mağaza görünürlüğü doğrulanmadı; LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/merchants-20261105.json) · [Oyun kontrolü](docs/lqa/LQA_V090_20261105.md)
+
 ## v0.89.0 Beta — Sızma görevi konuşmaları
 
 4 NPC dosyasında 29 yeni alan / 29 bağlam, 26 farklı kaynak metin: elit muhafız, lider, destek ekibi ve Tavish. Confirmed npcs/infiltration ailesinin kalanı tamamlandı. Katalog 20.395 alan; önceki 20.366 alan aynı.

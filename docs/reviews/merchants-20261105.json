@@ -1,0 +1,1710 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-05",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 13,
+  "run_id": "fu-ten-20261104",
+  "run_round": 1,
+  "base_commit": "80d40a8443304624c0348e2fdb32679e42fccab8",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 63,
+    "context_groups": 63,
+    "unique_english_strings": 57,
+    "assets": {
+      "npcs/unsorted-anid/aviangravedigger.npctype": 19,
+      "npcs/unsorted-anid/humanlumberjack.npctype": 12,
+      "npcs/unsorted-anid/humansmuggler.npctype": 18,
+      "npcs/unsorted-anid/nightarblacksmith.npctype": 14
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 63,
+    "dialogue_events": {
+      "converse": 3,
+      "end": 12,
+      "follow": 8,
+      "start": 13,
+      "tout": 3,
+      "welcome": 14
+    },
+    "dialogue_fields": 53,
+    "title_fields": 10,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 26
+  },
+  "changes": {
+    "fields": 8,
+    "sentences_including_repeated_fields": 8,
+    "unique_source_strings_corrected": 8,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 8,
+    "total_corrected_sentences": 8,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged clauses excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 63,
+  "new_locked_names": [
+    "Gravedigger",
+    "Lumberjack",
+    "Smuggler",
+    "Blacksmith",
+    "Penumbrite",
+    "Kluex",
+    "Igor",
+    "Frankenstein",
+    "Live a little, buy a corpse!",
+    "Got some extra dead stuff!",
+    "Hey there... want some corpses?",
+    "OK, that's a few more corpses 'buried'...",
+    "I hope the Stargazers don't find out about this.",
+    "Whatever you're going to do with them, I don't wanna know.",
+    "This way, this way!",
+    "Gotta keep my secrets. Follow me.",
+    "These weren't going to Kluex anyways.",
+    "Ooh - I think that one's brain is still good.",
+    "Plenty of corpses. Got some royal stuff too.",
+    "The Igor to your Frankenstein.",
+    "Avian Gravedigger",
+    "Thanks!",
+    "I hope my wood brings you pleasure.",
+    "I've got plenty of wood for sale.",
+    "My lumber stockpile is thataway.",
+    "Good wood! Get good wood here!",
+    "Professionally murdered trees!",
+    "Hey, buy my wood!",
+    "You wanna buy some wood?",
+    "Got baby trees and dead trees - take your pick.",
+    "Could it be that you're interested in my wood?",
+    "Wood and Wood Accessories.",
+    "Remember - no refunds.",
+    "We've got a good thing going here. Don't mess it up!",
+    "Pleasure doing business with you, partner.",
+    "Keep this on the down-low, will you?",
+    "We can do business at my... uh, store.",
+    "Not so loud! Follow me...",
+    "Legal things for sale!.",
+    "The rarest stuff in the galaxy!",
+    "Psst! Hey, you! Buy my stuff!",
+    "I've got what you need...",
+    "The goods are all here.",
+    "Plenty of other buyers out there. Got anything to sell?",
+    "Here we are. They're worth every pixel.",
+    "It's not easy to get ahold of this stuff.",
+    "Rocks and Rock-like things.",
+    "Geologist",
+    "Black market goods.",
+    "You will come again, yes?",
+    "Slay something for me.",
+    "Tarnish not my masterwork in your battles.",
+    "Follow if you wish to purchase.",
+    "My creations are in my shop.",
+    "Buy a sword, save your life.",
+    "The finest weapons here.",
+    "Blades, blessed by the Matriarch!",
+    "My skill is supreme. Puruse my wares.",
+    "What wares seeketh thee?",
+    "My craftsmanship is sublime.",
+    "Make your purchase.",
+    "Lethally crafted penumbrite.",
+    "Nightar Blacksmith"
+  ],
+  "reused_locked_names": [
+    "Lumberjack",
+    "Smuggler"
+  ],
+  "locked_total": 1152,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "1c007b20090dc64e66387a027d51db441f8b967978f1cfa23c32b60225f6fa92",
+  "luna_original_packet_sha256": "c46c7b00ff78ad33653136bc76d33d981227b5f35237c0037bddf7d48c1fda2c",
+  "approved_rows_sha256": "e3ff060977c178cd004c7bf5f3e34fc918e40fd2866920621c8a79f36034d84d",
+  "corrections": [
+    {
+      "unit_index": 5,
+      "en": "Whatever you're going to do with them, I don't wanna know.",
+      "before": "Onlarla ne yapacaksan yap; bilmek istemiyorum.",
+      "after": "Onlarla ne yapacağını bilmek istemiyorum.",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/end/avian/default/2",
+          "origin": "npcs/unsorted-anid/aviangravedigger.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynak yalnız bilmek istemediğini söyler; eklenen yap emri/izni kaldırıldı. Tek cümlelik anlam aynı nesneye bağlı tutuldu."
+    },
+    {
+      "unit_index": 16,
+      "en": "Plenty of corpses. Got some royal stuff too.",
+      "before": "Bolca ceset var. Bir de soylu takımından cesetler var.",
+      "after": "Bolca ceset var. Kraliyete ait mallarım da var.",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/avian/default/2",
+          "origin": "npcs/unsorted-anid/aviangravedigger.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk cümle aynı. Royal stuff genel kraliyet malını anlatır; kaynakta ve altın kaplamalı Avian tabutu açıklamasında doğrulanmayan soylu kişinin cesedi varsayımı kaldırıldı."
+    },
+    {
+      "unit_index": 22,
+      "en": "My lumber stockpile is thataway.",
+      "before": "Kereste stoğum şurada.",
+      "after": "Kereste stoğum şu tarafta.",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/follow/human/default/1",
+          "origin": "npcs/unsorted-anid/humanlumberjack.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "That away yön tarifidir. Şurada konumu yerine takip dalına uygun şu tarafta yönü verildi."
+    },
+    {
+      "unit_index": 23,
+      "en": "Good wood! Get good wood here!",
+      "before": "Kaliteli odun! En iyi odun burada!",
+      "after": "Kaliteli odun! Kaliteli odun buradan alın!",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/human/default/0",
+          "origin": "npcs/unsorted-anid/humanlumberjack.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk kaliteli odun nidası aynı. Good kaynakta üstünlük derecesi taşımaz; ikinci nidada eklenen en iyi çıkarıldı ve get satın alma çağrısı korundu."
+    },
+    {
+      "unit_index": 38,
+      "en": "The rarest stuff in the galaxy!",
+      "before": "Galaksinin en nadide malları!",
+      "after": "Galaksinin en nadir malları!",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/start/human/default/1",
+          "origin": "npcs/unsorted-anid/humansmuggler.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Rarest bulunma sıklığı/nadirliktir. Nadide değerli/özenli mal çağrışımı yerine doğrudan nadir karşılığı kullanıldı; kaynak en üstün nadirlik derecesi korundu."
+    },
+    {
+      "unit_index": 40,
+      "en": "I've got what you need...",
+      "before": "Aradığın şeyler bende...",
+      "after": "İhtiyacın olan bende...",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/0",
+          "origin": "npcs/unsorted-anid/humansmuggler.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Need ihtiyaçtır; yalnız arıyor olmak anlamına indirgenmedi. Üç nokta ve kaçakçı satıcı tonu korundu."
+    },
+    {
+      "unit_index": 43,
+      "en": "Here we are. They're worth every pixel.",
+      "before": "İşte geldik. Hepsi verdiğin her piksele değer.",
+      "after": "İşte geldik. Verdiğin her piksele değerler.",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+          "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/3",
+          "origin": "npcs/unsorted-anid/humansmuggler.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk cümle aynı. Kaynakta olmayan hepsi kapsamı ve hepsi/her tekrarı kaldırıldı; çoğul malların her piksele değmesi doğal biçimde korundu."
+    },
+    {
+      "unit_index": 61,
+      "en": "  Lethally crafted penumbrite.",
+      "before": "  Ölümcül işlenmiş Penumbrite.",
+      "after": "  Ölümcül Penumbrite işçiliği.",
+      "occurrences": [
+        {
+          "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+          "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+          "origin": "npcs/unsorted-anid/nightarblacksmith.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Ölümcül işlenmiş bozuk sıfat/zarf dizimi doğal bir ürün altyazısına dönüştürüldü; crafted işçilik ve lethally ölümcül anlamları, malzeme adı ve iki baş boşluğu korundu."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "c46c7b00ff78ad33653136bc76d33d981227b5f35237c0037bddf7d48c1fda2c",
+    "filled_units": 63
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 63,
+    "context_units": 63,
+    "qa": {
+      "catalog_units_checked": 35550,
+      "raw_units_checked": 115,
+      "locked_terms": 1152
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "evidence": [
+      {
+        "source": "fu_source/npcs/unsorted-anid/aviangravedigger.npctype",
+        "note": "Sol read the complete definition and every associated EN/TR occurrence; source hash recorded in review."
+      },
+      {
+        "source": "fu_source/npcs/unsorted-anid/humanlumberjack.npctype",
+        "note": "Sol read the complete definition and every associated EN/TR occurrence; source hash recorded in review."
+      },
+      {
+        "source": "fu_source/npcs/unsorted-anid/humansmuggler.npctype",
+        "note": "Sol read the complete definition and every associated EN/TR occurrence; source hash recorded in review."
+      },
+      {
+        "source": "fu_source/npcs/unsorted-anid/nightarblacksmith.npctype",
+        "note": "Sol read the complete definition and every associated EN/TR occurrence; source hash recorded in review."
+      },
+      {
+        "source": "fu_source/tenants/vanillaraces/aviangravedigger.tenant",
+        "note": "Sol read static tenant tag criteria/species/NPC type/rent links; not a live spawn proof."
+      },
+      {
+        "source": "fu_source/tenants/vanillaraces/humanlumberjack.tenant",
+        "note": "Sol read static tenant tag criteria/species/NPC type/rent links; not a live spawn proof."
+      },
+      {
+        "source": "fu_source/tenants/vanillaraces/humansmuggler.tenant",
+        "note": "Sol read static tenant tag criteria/species/NPC type/rent links; not a live spawn proof."
+      },
+      {
+        "source": "fu_source/tenants/nightar/nightarblacksmith.tenant",
+        "note": "Sol read static tenant tag criteria/species/NPC type/rent links; not a live spawn proof."
+      },
+      {
+        "source": "fu_source/scripts/actions/merchant.lua; fu_source/scripts/actions/dialog.lua; fu_source/npcs/merchantpools.config.patch; fu_source/dialog/merchant.config.patch",
+        "note": "Complete merchant/dialog helpers and all four category operations plus Nightar merchant/tenant patch branches reviewed. Stock counts and selection/title path are static evidence only."
+      },
+      {
+        "source": "fu_source/codex/nightar/funightarhistory2.codex; fu_source/codex/nightar/funightarhistory5.codex; fu_source/items/generic/crafting/penumbriteore.item; fu_source/items/generic/crafting/wrappedbodybirb.item",
+        "note": "Nightar Matriarch, material spelling and royal-casket context reviewed. Royal corpse identity not established; generic royalty-associated goods wording retained."
+      },
+      {
+        "source": "fu_source/npcs/unsorted-anid/humansmuggler.npctype; fu_source/scripts/actions/merchant.lua",
+        "note": "Outer Smuggler and nested Geologist source strings remain distinct. Nested exact active UI consumer and missing vanilla parent/behavior files NOT VERIFIED. No source field or gameplay configuration repaired."
+      }
+    ],
+    "note": "Sol reviewed all63EN/TR variants and exact occurrences,4full NPCs,4tenants,merchant/dialog helpers,stocks and relevant Nightar/material sources.8fields/8independent expressions corrected.26technical review rows excluded. Missing vanilla consumer,nested Geologist visibility and live LQA remain unverified."
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "type": "aviangravedigger",
+        "base_type": "merchanttenant",
+        "fields": 19,
+        "merchant": {
+          "waitTime": 180,
+          "storeRadius": 8,
+          "categories": {
+            "default": [
+              "aviangravedigger"
+            ],
+            "avian": [
+              "aviangravedigger"
+            ]
+          },
+          "buyFactorRange": [
+            1.0,
+            1.0
+          ],
+          "sellFactorRange": [
+            0.2,
+            0.2
+          ],
+          "numItems": 4,
+          "paneLayoutOverride": {
+            "windowtitle": {
+              "title": "  Avian Gravedigger",
+              "subtitle": "  The Igor to your Frankenstein."
+            }
+          }
+        },
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/converse/avian/default/0",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Live a little, buy a corpse!",
+            "luna_tr": "Hayatını yaşa, ceset al!",
+            "approved_tr": "Hayatını yaşa, ceset al!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/converse/avian/default/1",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Got some extra dead stuff!",
+            "luna_tr": "Fazladan ceset var elimde!",
+            "approved_tr": "Fazladan ceset var elimde!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/converse/avian/default/2",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Hey there... want some corpses?",
+            "luna_tr": "Hey, selam... ceset ister misin?",
+            "approved_tr": "Hey, selam... ceset ister misin?"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/avian/default/0",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "OK, that's a few more corpses 'buried'...",
+            "luna_tr": "Pekâlâ, birkaç ceset daha “gömüldü”...",
+            "approved_tr": "Pekâlâ, birkaç ceset daha “gömüldü”..."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/avian/default/1",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "I hope the Stargazers don't find out about this.",
+            "luna_tr": "Umarım Yıldız Gözlemcileri bunu öğrenmez.",
+            "approved_tr": "Umarım Yıldız Gözlemcileri bunu öğrenmez."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/avian/default/2",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Whatever you're going to do with them, I don't wanna know.",
+            "luna_tr": "Onlarla ne yapacaksan yap; bilmek istemiyorum.",
+            "approved_tr": "Onlarla ne yapacağını bilmek istemiyorum."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/avian/default/0",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "This way, this way!",
+            "luna_tr": "Bu taraftan, bu taraftan!",
+            "approved_tr": "Bu taraftan, bu taraftan!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/avian/default/1",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Gotta keep my secrets. Follow me.",
+            "luna_tr": "Sırlarımı saklamam gerek. Peşimden gel.",
+            "approved_tr": "Sırlarımı saklamam gerek. Peşimden gel."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/avian/default/0",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Live a little, buy a corpse!",
+            "luna_tr": "Hayatını yaşa, ceset al!",
+            "approved_tr": "Hayatını yaşa, ceset al!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/avian/default/1",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Got some extra dead stuff!",
+            "luna_tr": "Fazladan ceset var elimde!",
+            "approved_tr": "Fazladan ceset var elimde!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/avian/default/2",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Hey there... want some corpses?",
+            "luna_tr": "Hey, selam... ceset ister misin?",
+            "approved_tr": "Hey, selam... ceset ister misin?"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/tout/avian/default/0",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Live a little, buy a corpse!",
+            "luna_tr": "Hayatını yaşa, ceset al!",
+            "approved_tr": "Hayatını yaşa, ceset al!"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/tout/avian/default/1",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Got some extra dead stuff!",
+            "luna_tr": "Fazladan ceset var elimde!",
+            "approved_tr": "Fazladan ceset var elimde!"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/tout/avian/default/2",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Hey there... want some corpses?",
+            "luna_tr": "Hey, selam... ceset ister misin?",
+            "approved_tr": "Hey, selam... ceset ister misin?"
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/avian/default/0",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "These weren't going to Kluex anyways.",
+            "luna_tr": "Bunlar zaten Kluex’e gitmeyecekti.",
+            "approved_tr": "Bunlar zaten Kluex’e gitmeyecekti."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/avian/default/1",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Ooh - I think that one's brain is still good.",
+            "luna_tr": "Aa, galiba şu cesedin beyni hâlâ sağlam.",
+            "approved_tr": "Aa, galiba şu cesedin beyni hâlâ sağlam."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/avian/default/2",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "Plenty of corpses. Got some royal stuff too.",
+            "luna_tr": "Bolca ceset var. Bir de soylu takımından cesetler var.",
+            "approved_tr": "Bolca ceset var. Kraliyete ait mallarım da var."
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "  The Igor to your Frankenstein.",
+            "luna_tr": "  Frankenstein'ının Igor'u.",
+            "approved_tr": "  Frankenstein'ının Igor'u."
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/unsorted-anid/aviangravedigger.npctype",
+            "en": "  Avian Gravedigger",
+            "luna_tr": "  Avian Mezarcı",
+            "approved_tr": "  Avian Mezarcı"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+        "type": "humanlumberjack",
+        "base_type": "merchanttenant",
+        "fields": 12,
+        "merchant": {
+          "waitTime": 180,
+          "storeRadius": 8,
+          "categories": {
+            "default": [
+              "lumberjack"
+            ],
+            "human": [
+              "lumberjack"
+            ]
+          },
+          "buyFactorRange": [
+            1.0,
+            1.0
+          ],
+          "sellFactorRange": [
+            0.2,
+            0.2
+          ],
+          "numItems": 4,
+          "paneLayoutOverride": {
+            "windowtitle": {
+              "title": "  Lumberjack",
+              "subtitle": "  Wood and Wood Accessories."
+            }
+          }
+        },
+        "entries": [
+          {
+            "unit_index": 19,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/human/default/0",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "Thanks!",
+            "luna_tr": "Teşekkürler!",
+            "approved_tr": "Teşekkürler!"
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/human/default/1",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "I hope my wood brings you pleasure.",
+            "luna_tr": "Umarım odunum hoşuna gider.",
+            "approved_tr": "Umarım odunum hoşuna gider."
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/human/default/0",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "I've got plenty of wood for sale.",
+            "luna_tr": "Satılık bolca odunum var.",
+            "approved_tr": "Satılık bolca odunum var."
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/human/default/1",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "My lumber stockpile is thataway.",
+            "luna_tr": "Kereste stoğum şurada.",
+            "approved_tr": "Kereste stoğum şu tarafta."
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/human/default/0",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "Good wood! Get good wood here!",
+            "luna_tr": "Kaliteli odun! En iyi odun burada!",
+            "approved_tr": "Kaliteli odun! Kaliteli odun buradan alın!"
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/human/default/1",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "Professionally murdered trees!",
+            "luna_tr": "Profesyonelce katledilmiş ağaçlar!",
+            "approved_tr": "Profesyonelce katledilmiş ağaçlar!"
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/human/default/2",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "Hey, buy my wood!",
+            "luna_tr": "Hey, odunumu al!",
+            "approved_tr": "Hey, odunumu al!"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/0",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "You wanna buy some wood?",
+            "luna_tr": "Biraz odun almak ister misin?",
+            "approved_tr": "Biraz odun almak ister misin?"
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/1",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "Got baby trees and dead trees - take your pick.",
+            "luna_tr": "Fidan da var, kesilmiş ağaç da—seç beğen al.",
+            "approved_tr": "Fidan da var, kesilmiş ağaç da—seç beğen al."
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/2",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "Could it be that you're interested in my wood?",
+            "luna_tr": "Odunuma ilgin mi var acaba?",
+            "approved_tr": "Odunuma ilgin mi var acaba?"
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "  Wood and Wood Accessories.",
+            "luna_tr": "  Odun ve odun aksesuarları.",
+            "approved_tr": "  Odun ve odun aksesuarları."
+          },
+          {
+            "unit_index": 30,
+            "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/unsorted-anid/humanlumberjack.npctype",
+            "en": "  Lumberjack",
+            "luna_tr": "  Oduncu",
+            "approved_tr": "  Oduncu"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "type": "humansmuggler",
+        "base_type": "merchanttenant",
+        "fields": 18,
+        "merchant": {
+          "waitTime": 180,
+          "storeRadius": 8,
+          "categories": {
+            "default": [
+              "humansmuggler"
+            ],
+            "human": [
+              "humansmuggler"
+            ]
+          },
+          "buyFactorRange": [
+            5.0,
+            5.0
+          ],
+          "sellFactorRange": [
+            0.4,
+            0.4
+          ],
+          "numItems": 13,
+          "paneLayoutOverride": {
+            "windowtitle": {
+              "title": "  Smuggler",
+              "subtitle": "  Black market goods."
+            }
+          },
+          "interactAction": "OpenMerchantInterface",
+          "interactData": {
+            "config": "/interface/windowconfig/merchant.config",
+            "paneLayoutOverride": {
+              "windowtitle": {
+                "title": " Geologist",
+                "subtitle": " Rocks and Rock-like things."
+              }
+            },
+            "buyFactor": 8.75,
+            "sellFactor": 0.45,
+            "items": [
+              {
+                "item": "devilsbargain"
+              },
+              {
+                "item": "thesauce",
+                "price": 1000
+              },
+              {
+                "item": "apexbrainjar",
+                "price": 800
+              },
+              {
+                "item": "mantizanwine"
+              },
+              {
+                "item": "snarshedgarflipps"
+              },
+              {
+                "item": "orphanpaste"
+              },
+              {
+                "item": "solidfuel",
+                "price": 1
+              },
+              {
+                "item": "aichip",
+                "price": 25000
+              },
+              {
+                "item": "fucontrabandgoods",
+                "price": 500
+              },
+              {
+                "item": "powderednarcotics",
+                "price": 1000
+              },
+              {
+                "item": "myphisinjector"
+              },
+              {
+                "item": "greghead"
+              },
+              {
+                "item": "poutine"
+              }
+            ]
+          }
+        },
+        "entries": [
+          {
+            "unit_index": 31,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/human/default/0",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Remember - no refunds.",
+            "luna_tr": "Unutma, iade yok.",
+            "approved_tr": "Unutma, iade yok."
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/human/default/1",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "We've got a good thing going here. Don't mess it up!",
+            "luna_tr": "İyi gidiyoruz. Sakın bozma!",
+            "approved_tr": "İyi gidiyoruz. Sakın bozma!"
+          },
+          {
+            "unit_index": 33,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/human/default/2",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Pleasure doing business with you, partner.",
+            "luna_tr": "Seninle iş yapmak güzeldi, ortağım.",
+            "approved_tr": "Seninle iş yapmak güzeldi, ortağım."
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/human/default/3",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Keep this on the down-low, will you?",
+            "luna_tr": "Bunu kimseye çıtlama, olur mu?",
+            "approved_tr": "Bunu kimseye çıtlama, olur mu?"
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/human/default/0",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "We can do business at my... uh, store.",
+            "luna_tr": "İşlerimizi benim... şey, dükkânımda halledebiliriz.",
+            "approved_tr": "İşlerimizi benim... şey, dükkânımda halledebiliriz."
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/human/default/1",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Not so loud! Follow me...",
+            "luna_tr": "Sesini alçalt! Peşimden gel...",
+            "approved_tr": "Sesini alçalt! Peşimden gel..."
+          },
+          {
+            "unit_index": 37,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/human/default/0",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Legal things for sale!.",
+            "luna_tr": "Yasal mallar satılık!.",
+            "approved_tr": "Yasal mallar satılık!."
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/human/default/1",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "The rarest stuff in the galaxy!",
+            "luna_tr": "Galaksinin en nadide malları!",
+            "approved_tr": "Galaksinin en nadir malları!"
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/human/default/2",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Psst! Hey, you! Buy my stuff!",
+            "luna_tr": "Psst! Hey, sen! Mallarımı al!",
+            "approved_tr": "Psst! Hey, sen! Mallarımı al!"
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/0",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "I've got what you need...",
+            "luna_tr": "Aradığın şeyler bende...",
+            "approved_tr": "İhtiyacın olan bende..."
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/1",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "The goods are all here.",
+            "luna_tr": "Malların hepsi burada.",
+            "approved_tr": "Malların hepsi burada."
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/2",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Plenty of other buyers out there. Got anything to sell?",
+            "luna_tr": "Dışarıda alıcı çok. Satacak bir şeyin var mı?",
+            "approved_tr": "Dışarıda alıcı çok. Satacak bir şeyin var mı?"
+          },
+          {
+            "unit_index": 43,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/3",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "Here we are. They're worth every pixel.",
+            "luna_tr": "İşte geldik. Hepsi verdiğin her piksele değer.",
+            "approved_tr": "İşte geldik. Verdiğin her piksele değerler."
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/human/default/4",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "It's not easy to get ahold of this stuff.",
+            "luna_tr": "Bu malları ele geçirmek kolay değil.",
+            "approved_tr": "Bu malları ele geçirmek kolay değil."
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/merchant/interactData/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": " Rocks and Rock-like things.",
+            "luna_tr": " Kayalar ve kayaya benzeyen şeyler.",
+            "approved_tr": " Kayalar ve kayaya benzeyen şeyler."
+          },
+          {
+            "unit_index": 46,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/merchant/interactData/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": " Geologist",
+            "luna_tr": " Jeolog",
+            "approved_tr": " Jeolog"
+          },
+          {
+            "unit_index": 47,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "  Black market goods.",
+            "luna_tr": "  Kara borsa malları.",
+            "approved_tr": "  Kara borsa malları."
+          },
+          {
+            "unit_index": 48,
+            "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/unsorted-anid/humansmuggler.npctype",
+            "en": "  Smuggler",
+            "luna_tr": "  Kaçakçı",
+            "approved_tr": "  Kaçakçı"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "type": "nightarblacksmith",
+        "base_type": "merchanttenant",
+        "fields": 14,
+        "merchant": {
+          "waitTime": 180,
+          "storeRadius": 8,
+          "categories": {
+            "default": [
+              "nightarblacksmith"
+            ],
+            "nightar": [
+              "nightarblacksmith"
+            ]
+          },
+          "buyFactorRange": [
+            10.0,
+            10.0
+          ],
+          "sellFactorRange": [
+            0.2,
+            0.2
+          ],
+          "numItems": 14,
+          "paneLayoutOverride": {
+            "windowtitle": {
+              "title": "  Nightar Blacksmith",
+              "subtitle": "  Lethally crafted penumbrite."
+            }
+          }
+        },
+        "entries": [
+          {
+            "unit_index": 49,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/nightar/default/0",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "You will come again, yes?",
+            "luna_tr": "Yine geleceksin, değil mi?",
+            "approved_tr": "Yine geleceksin, değil mi?"
+          },
+          {
+            "unit_index": 50,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/nightar/default/1",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "Slay something for me.",
+            "luna_tr": "Benim için bir şeyler katlet.",
+            "approved_tr": "Benim için bir şeyler katlet."
+          },
+          {
+            "unit_index": 51,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/end/nightar/default/2",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "Tarnish not my masterwork in your battles.",
+            "luna_tr": "Savaşlarında şaheserime leke sürme.",
+            "approved_tr": "Savaşlarında şaheserime leke sürme."
+          },
+          {
+            "unit_index": 52,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/nightar/default/0",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "Follow if you wish to purchase.",
+            "luna_tr": "Satın almak istersen peşimden gel.",
+            "approved_tr": "Satın almak istersen peşimden gel."
+          },
+          {
+            "unit_index": 53,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/follow/nightar/default/1",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "My creations are in my shop.",
+            "luna_tr": "Yaptığım eserler dükkânımda.",
+            "approved_tr": "Yaptığım eserler dükkânımda."
+          },
+          {
+            "unit_index": 54,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/nightar/default/0",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "Buy a sword, save your life.",
+            "luna_tr": "Kılıç al, canını kurtar.",
+            "approved_tr": "Kılıç al, canını kurtar."
+          },
+          {
+            "unit_index": 55,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/nightar/default/1",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "The finest weapons here.",
+            "luna_tr": "En iyi silahlar burada.",
+            "approved_tr": "En iyi silahlar burada."
+          },
+          {
+            "unit_index": 56,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/nightar/default/2",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "Blades, blessed by the Matriarch!",
+            "luna_tr": "Matriarch’ın kutsadığı kılıçlar!",
+            "approved_tr": "Matriarch’ın kutsadığı kılıçlar!"
+          },
+          {
+            "unit_index": 57,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/start/nightar/default/3",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "My skill is supreme. Puruse my wares.",
+            "luna_tr": "Hünerim eşsizdir. Mallarıma göz gezdir.",
+            "approved_tr": "Hünerim eşsizdir. Mallarıma göz gezdir."
+          },
+          {
+            "unit_index": 58,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/nightar/default/0",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "What wares seeketh thee?",
+            "luna_tr": "Ne tür mallar ararsın?",
+            "approved_tr": "Ne tür mallar ararsın?"
+          },
+          {
+            "unit_index": 59,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/nightar/default/1",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "My craftsmanship is sublime.",
+            "luna_tr": "Zanaatım göz kamaştırır.",
+            "approved_tr": "Zanaatım göz kamaştırır."
+          },
+          {
+            "unit_index": 60,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/dialog/merchant/welcome/nightar/default/2",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "Make your purchase.",
+            "luna_tr": "Alışverişini yap.",
+            "approved_tr": "Alışverişini yap."
+          },
+          {
+            "unit_index": 61,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "  Lethally crafted penumbrite.",
+            "luna_tr": "  Ölümcül işlenmiş Penumbrite.",
+            "approved_tr": "  Ölümcül Penumbrite işçiliği."
+          },
+          {
+            "unit_index": 62,
+            "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/unsorted-anid/nightarblacksmith.npctype",
+            "en": "  Nightar Blacksmith",
+            "luna_tr": "  Nightar Demirci",
+            "approved_tr": "  Nightar Demirci"
+          }
+        ]
+      }
+    ],
+    "tenants": {
+      "tenants/vanillaraces/aviangravedigger.tenant": {
+        "name": "aviangravedigger_avian",
+        "priority": 10,
+        "colonyTagCriteria": {
+          "light": 1,
+          "door": 1,
+          "macabre": 8,
+          "madness": 8
+        },
+        "tenants": [
+          {
+            "spawn": "npc",
+            "species": "avian",
+            "type": "aviangravedigger",
+            "overrides": {}
+          }
+        ],
+        "rent": {
+          "periodRange": [
+            900.0,
+            1800.0
+          ],
+          "pool": "merchantGift"
+        }
+      },
+      "tenants/vanillaraces/humanlumberjack.tenant": {
+        "name": "humanlumberjack_human",
+        "priority": 10,
+        "colonyTagCriteria": {
+          "light": 1,
+          "door": 1,
+          "glitchvillage": 6,
+          "knowledge": 6,
+          "storage": 6
+        },
+        "tenants": [
+          {
+            "spawn": "npc",
+            "species": "human",
+            "type": "humanlumberjack",
+            "overrides": {}
+          }
+        ],
+        "rent": {
+          "periodRange": [
+            900.0,
+            1800.0
+          ],
+          "pool": "merchantGift"
+        }
+      },
+      "tenants/vanillaraces/humansmuggler.tenant": {
+        "name": "humansmuggler_human",
+        "priority": 10,
+        "colonyTagCriteria": {
+          "door": 1,
+          "humanprison": 4,
+          "hoard": 4,
+          "human": 8
+        },
+        "tenants": [
+          {
+            "spawn": "npc",
+            "species": "human",
+            "level": 3,
+            "type": "humansmuggler",
+            "overrides": {}
+          }
+        ],
+        "rent": {
+          "periodRange": [
+            900.0,
+            1800.0
+          ],
+          "pool": "merchantGift"
+        }
+      },
+      "tenants/nightar/nightarblacksmith.tenant": {
+        "name": "nightarblacksmith_nightar",
+        "priority": 10,
+        "colonyTagCriteria": {
+          "door": 1,
+          "nightar": 12,
+          "nightarblacksmith": 1
+        },
+        "tenants": [
+          {
+            "spawn": "npc",
+            "species": "nightar",
+            "type": "nightarblacksmith",
+            "overrides": {}
+          }
+        ],
+        "rent": {
+          "periodRange": [
+            900.0,
+            1800.0
+          ],
+          "pool": "merchantGift"
+        }
+      }
+    },
+    "merchant_pool_operations": [
+      {
+        "op": "add",
+        "path": "/nightarblacksmith",
+        "value": [
+          [
+            0,
+            [
+              {
+                "item": {
+                  "name": "penumbriteore"
+                }
+              },
+              {
+                "item": {
+                  "name": "coalore"
+                }
+              },
+              {
+                "item": {
+                  "name": "penumbritekatana"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbritelongsword"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbriterapier"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbritespear"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbriteshortsword"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbritebroadsword"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbralscythe"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbriteaxe"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbritegreataxe"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbritehammer"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbritequarterstaff"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "penumbriteshortspear"
+                },
+                "rarity": 0.3
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "op": "add",
+        "path": "/humansmuggler",
+        "value": [
+          [
+            0,
+            [
+              {
+                "item": {
+                  "name": "orphanpaste"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "snarshedgarflipps"
+                },
+                "rarity": 0.4
+              },
+              {
+                "item": {
+                  "name": "mantizanwine"
+                },
+                "rarity": 0.2
+              },
+              {
+                "item": {
+                  "name": "apexbrainjar"
+                },
+                "rarity": 0.1,
+                "price": 800
+              },
+              {
+                "item": {
+                  "name": "greghead"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "poutine"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "liquidfuel"
+                },
+                "rarity": 0.5,
+                "price": 2
+              },
+              {
+                "item": {
+                  "name": "aichip"
+                },
+                "rarity": 0.1,
+                "price": 25000
+              },
+              {
+                "item": {
+                  "name": "thesauce"
+                },
+                "rarity": 0.3,
+                "price": 1000
+              },
+              {
+                "item": {
+                  "name": "devilsbargain"
+                },
+                "rarity": 0.3
+              },
+              {
+                "item": {
+                  "name": "fucontrabandgoods"
+                },
+                "rarity": 0.8,
+                "price": 100
+              },
+              {
+                "item": {
+                  "name": "powderednarcotics"
+                },
+                "rarity": 0.3,
+                "price": 1100
+              },
+              {
+                "item": {
+                  "name": "myphisinjector"
+                },
+                "rarity": 0.3
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "op": "add",
+        "path": "/lumberjack",
+        "value": [
+          [
+            0,
+            [
+              {
+                "item": {
+                  "name": "chainsaw"
+                },
+                "rarity": 0.8,
+                "price": 1000
+              },
+              {
+                "item": {
+                  "name": "logblock"
+                },
+                "rarity": 0.3,
+                "price": 5
+              },
+              {
+                "item": {
+                  "name": "sapling"
+                },
+                "rarity": 0.3,
+                "price": 50
+              },
+              {
+                "item": {
+                  "name": "pancakes"
+                },
+                "rarity": 0.3,
+                "price": 20
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "op": "add",
+        "path": "/aviangravedigger",
+        "value": [
+          [
+            0,
+            [
+              {
+                "item": {
+                  "name": "wrappedbody"
+                },
+                "rarity": 0.8,
+                "price": 4000
+              },
+              {
+                "item": {
+                  "name": "wrappedbodyputrid"
+                },
+                "rarity": 0.3,
+                "price": 4000
+              },
+              {
+                "item": {
+                  "name": "wrappedbodyalien"
+                },
+                "rarity": 0.3,
+                "price": 6500
+              },
+              {
+                "item": {
+                  "name": "wrappedbodybirb"
+                },
+                "rarity": 0.3,
+                "price": 10000
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "pool_item_counts": {
+      "/nightarblacksmith": 14,
+      "/humansmuggler": 13,
+      "/lumberjack": 4,
+      "/aviangravedigger": 4
+    },
+    "related_review_rows": 26,
+    "related_review_fields": [
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "pointer": "/scriptConfig/merchant/categories/avian/0",
+        "en": "aviangravedigger"
+      },
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "pointer": "/scriptConfig/merchant/categories/default/0",
+        "en": "aviangravedigger"
+      },
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/0",
+        "en": "common"
+      },
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/1",
+        "en": "tenant"
+      },
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/2",
+        "en": "shady"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+        "pointer": "/scriptConfig/merchant/categories/default/0",
+        "en": "lumberjack"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+        "pointer": "/scriptConfig/merchant/categories/human/0",
+        "en": "lumberjack"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/0",
+        "en": "common"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/1",
+        "en": "tenant"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/merchant/categories/default/0",
+        "en": "humansmuggler"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/merchant/categories/human/0",
+        "en": "humansmuggler"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/merchant/interactAction",
+        "en": "OpenMerchantInterface"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/graduation/nextNpcType/0/1",
+        "en": "crewmemberchemistblue"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/graduation/nextNpcType/1/1",
+        "en": "crewmemberchemistgreen"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/graduation/nextNpcType/2/1",
+        "en": "crewmemberchemistyellow"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/graduation/nextNpcType/3/1",
+        "en": "crewmemberchemistorange"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/graduation/nextNpcType/4/1",
+        "en": "crewmemberengineer"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/graduation/nextNpcType/5/1",
+        "en": "crewmembermechanic"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/0",
+        "en": "common"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/1",
+        "en": "tenant"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/2",
+        "en": "shady"
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "pointer": "/scriptConfig/merchant/categories/default/0",
+        "en": "nightarblacksmith"
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "pointer": "/scriptConfig/merchant/categories/nightar/0",
+        "en": "nightarblacksmith"
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/0",
+        "en": "common"
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/1",
+        "en": "tenant"
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "pointer": "/scriptConfig/questGenerator/pools/2",
+        "en": "shady"
+      }
+    ],
+    "direct_fields": 63,
+    "layered_fields": 0,
+    "active_consumer_verified": false,
+    "missing_vanilla_dependencies": [
+      "npcs/merchanttenant.npctype",
+      "npcs/base.npctype",
+      "npcs/bmain.lua",
+      "interface/windowconfig/merchant.config",
+      "dialog/merchant.config"
+    ],
+    "live_lqa": "NOT TESTED",
+    "source_files": [
+      {
+        "asset": "npcs/unsorted-anid/aviangravedigger.npctype",
+        "sha256": "d74f0a06048bddac1ce1112350ddff65cccb470f682134a6bd4f2bfd5fa422f5"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humanlumberjack.npctype",
+        "sha256": "dcf40ff49ccb0910dbcd444c2d989ee2e57bc41033c81e779b393b22a926d807"
+      },
+      {
+        "asset": "npcs/unsorted-anid/humansmuggler.npctype",
+        "sha256": "1605c11baf256163f7cdecce97170d25d54c75613999ed53553e05fecdbcb347"
+      },
+      {
+        "asset": "npcs/unsorted-anid/nightarblacksmith.npctype",
+        "sha256": "cb404ecb27bdbefff084256db97d9dd2a5ad32e95ed460b193e99fd00cf7a314"
+      },
+      {
+        "asset": "tenants/vanillaraces/aviangravedigger.tenant",
+        "sha256": "6e70d6a71a3431110d44986fd488e4b1b1d173e23e4b1f981d1239d37b108fca"
+      },
+      {
+        "asset": "tenants/vanillaraces/humanlumberjack.tenant",
+        "sha256": "88e3fc31d0e8abf4b523ecbfc616cca0901bd7f197f5426250b07f33906cb3c9"
+      },
+      {
+        "asset": "tenants/vanillaraces/humansmuggler.tenant",
+        "sha256": "9ab9f88a8a44282d0d0ecfb8c29685d4f5f3aa1c9642ec2ce3a51c3e8dace11a"
+      },
+      {
+        "asset": "tenants/nightar/nightarblacksmith.tenant",
+        "sha256": "f0e97680bb50dc35b75c00e25dff45e7333cb68ea97122ba64c8249192582682"
+      },
+      {
+        "asset": "scripts/actions/merchant.lua",
+        "sha256": "c6a7a67752d165998c5bf63e07ce28948215f57d0d659abad0ce29638240c7bf"
+      },
+      {
+        "asset": "scripts/actions/dialog.lua",
+        "sha256": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+      },
+      {
+        "asset": "dialog/merchant.config.patch",
+        "sha256": "4ea343de091907eda3cc48e18320606f9be392d40b6430d405eb7fe6e5c4b5eb"
+      },
+      {
+        "asset": "npcs/merchantpools.config.patch",
+        "sha256": "9e02cafeeda0a2e33cd5c647af85aea5c9113330f7c3010d7794e5da342e0d8e"
+      },
+      {
+        "asset": "codex/nightar/funightarhistory2.codex",
+        "sha256": "739b1dcd6b8a5d61e03280e8faf3fa848dd16e72aeec1cb23fa514f55e9133d6"
+      },
+      {
+        "asset": "codex/nightar/funightarhistory5.codex",
+        "sha256": "0af465ed55cface96fae9da2aea8d0de1359407541822c3382d7eeaebf2867c2"
+      },
+      {
+        "asset": "items/generic/crafting/wrappedbodybirb.item",
+        "sha256": "b6201d75a993b4cc5179920a79cb3b222618e09b504151613b451616e2337e89"
+      },
+      {
+        "asset": "items/generic/crafting/penumbriteore.item",
+        "sha256": "a0094afd78d39d9d4f8a9cf41506cac1af36f38991b894c1376bacd6ae5123ba"
+      },
+      {
+        "asset": "items/materials/penumbriteblock.matitem",
+        "sha256": "142afabaa4a6797cc3cd87a4e429f0cb1ccb193466fdbd0263a5320d078a800a"
+      }
+    ],
+    "nested_smuggler_ui": {
+      "outer_title": "  Smuggler",
+      "nested_title": " Geologist",
+      "nested_subtitle": " Rocks and Rock-like things.",
+      "active_nested_consumer_verified": false,
+      "technical_structure_changed": false
+    },
+    "static_consumer_facts": [
+      "merchant.lua buildTradingConfig reads merchant.paneLayoutOverride; it does not read merchant.interactData. This does not rule out an uninspected external/vanilla consumer.",
+      "dialog.lua selects speaker species, then target species/default; exact active merchant event caller and vanilla parent remain unverified.",
+      "Three NPCs reference common merchant.config:tout; Nightar FU patch tout/tenant entries were read. Vanilla common fallback text is not part of this manifest."
+    ],
+    "terminology_notes": [
+      "Matriarch title refers to Nightar ruler in history2/history5; established preserve spelling retained.",
+      "Penumbrite material and existing ore catalog spelling agree. Royal stuff remains generic royalty-associated goods; wrappedbodybirb source only states an elaborate gold-plated casket, not nobility identity.",
+      "Still adverb and generic craftsmanship are not forced to distillery or research-tree noun.",
+      "Igor/Frankenstein cultural helper-caption spelling retained; no biography or external lore asserted."
+    ],
+    "source_typos": [
+      "Puruse retained byte-identical EN; translated as peruse from merchant wares context.",
+      "Legal things for sale!. source punctuation remains unchanged."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Every63EN/TR variant and occurrence reviewed against4complete NPCs and4tenant definitions;merchant/dialog helpers,4stock categories,Nightar merchant patch and lore/material context read. All20395prior catalog fields unchanged.",
+    "53merchant dialogue fields and10source title/subtitle fields preserved;26category/pool/quest/interactAction technical review rows excluded.",
+    "Smuggler nested merchant.interactData contains Geologist/Rocks source copy. FU buildTradingConfig reads merchant.paneLayoutOverride; exact nested consumer and vanilla merchanttenant/base/bmain/UI/config absent. No live visibility or spawn proof.",
+    "Royal stuff remains generic royalty-associated merchandise. Wrapped Avian corpse only states an elaborate gold-plated casket; noble corpse identity not established. Generic still/craftsmanship not forced to machine/research nouns.",
+    "8fields/8independent expressions corrected: added imperative/permission,royal identity assumption,directional stock instruction,unwarranted superlative,rarity,need,price redundancy,and malformed deadly-crafting caption.",
+    "63new LOCKED (4profession nouns,4proper names/material,55full strings),1152total;exact Lumberjack/Smuggler reuse those newly added noun locks. Existing1089terms,TM/format policies and source EN/typos unchanged;ordinary English preservation not widened.",
+    "Puruse and Legal things for sale!. retained source bytes/punctuation. Merchant stock/price/stats/quest generation/equipment/technical fields unchanged. Live gameplay LQA NOT TESTED. No installation/Steam upload/shutdown in current ten-round run."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}
