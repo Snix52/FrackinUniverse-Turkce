@@ -1,0 +1,881 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-05",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 15,
+  "run_id": "fu-ten-20261104",
+  "run_round": 3,
+  "base_commit": "7633be05a7db8aaf381d0eba7204596e710f342a",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 29,
+    "context_groups": 29,
+    "unique_english_strings": 20,
+    "assets": {
+      "npcs/pavillion/pavillionarcher.npctype": 7,
+      "npcs/pavillion/pavillionguard.npctype": 6,
+      "npcs/pavillion/pavillionprincess.npctype": 6,
+      "npcs/pavillion/pavillionsamurai.npctype": 5,
+      "npcs/pavillion/pavillionshogun.npctype": 5
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 29,
+    "dialogue_events": {
+      "attack": 23,
+      "converse": 5,
+      "speak": 1
+    },
+    "dialogue_fields": 29,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 3
+  },
+  "changes": {
+    "fields": 6,
+    "sentences_including_repeated_fields": 6,
+    "unique_source_strings_corrected": 5,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 6,
+    "total_corrected_sentences": 6,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged clauses excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 23,
+  "new_locked_names": [
+    "Koto",
+    "Kigai",
+    "Takeshi",
+    "Shogun",
+    "For the Shogun!",
+    "An intruder! Alarm! Alarm!",
+    "Banzai!",
+    "You intrude upon our peaceful village?",
+    "B-But I'm just a conscript...",
+    "Yaaaaaah!",
+    "Thank you! Sorry, but your princess is in another castle!",
+    "Eh...yes, that was a bad joke. Pardon me, I just thought to lighten the mood a little.",
+    "It must have been something of an ordeal to get here. No, I'm not hurt.",
+    "We need to get out of here quickly before reinforcements arrive. Maybe you can activate the teleporter in the room above.",
+    "Let's just grab what treasure is here and go!",
+    "Thank you for rescuing me!",
+    "For the glory of Shogun Kigai!",
+    "I will slay you!",
+    "A thousand blows shall rain upon you!",
+    "One of the princess' lapdogs! Time to test my blade on you!",
+    "It is said, 'know your enemy and know yourself, and you will emerge the victor of a thousand battles'. You cannot hope to win.",
+    "The princess is mine! Mine! Mine!",
+    "So, you invade my village and castle? Audacious indeed!"
+  ],
+  "reused_locked_names": [
+    "Attack!"
+  ],
+  "locked_total": 1210,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "526bca1cba15bfa46a0c59e6b929f3230e21138381f78f94a4abc620def96a9b",
+  "luna_original_packet_sha256": "79b27344b5755ed8fd9f7ce2dd14d28a0a1bf02cd5f5f1b964cb8d04a6850f0f",
+  "approved_rows_sha256": "a6c854179fc745532d60dfa2827ef2d148c08370a14b16ede237399393bae453",
+  "corrections": [
+    {
+      "unit_index": 5,
+      "en": "B-But I'm just a conscript...",
+      "before": "A-Ama ben sadece askere alınmış biriyim...",
+      "after": "A-Ama ben sadece zorunlu askerlik yapıyorum...",
+      "occurrences": [
+        {
+          "asset": "npcs/pavillion/pavillionarcher.npctype",
+          "pointer": "/scriptConfig/dialog/attack/hylotl/default/4",
+          "origin": "npcs/pavillion/pavillionarcher.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Conscript zorunlu hizmete alınan askerdir; genel askere alınmış ifadesindeki gönüllü/zorunlu belirsizliği giderildi. Kekeleme ve sadece sınırlaması korundu."
+    },
+    {
+      "unit_index": 11,
+      "en": "B-But I'm just a conscript...",
+      "before": "A-Ama ben sadece askere alınmış biriyim...",
+      "after": "A-Ama ben sadece zorunlu askerlik yapıyorum...",
+      "occurrences": [
+        {
+          "asset": "npcs/pavillion/pavillionguard.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/4",
+          "origin": "npcs/pavillion/pavillionguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Guard occurrence ayrıca incelendi; conscript zorunlu askerlik anlamı, kekeleme ve üç nokta aynı karşılıkla korundu."
+    },
+    {
+      "unit_index": 16,
+      "en": "We need to get out of here quickly before reinforcements arrive. Maybe you can activate the teleporter in the room above.",
+      "before": "Takviye gelmeden buradan çabucak çıkmalıyız. Belki üstteki odanın Işınlayıcısını çalıştırabilirsin.",
+      "after": "Takviye gelmeden buradan çabucak çıkmalıyız. Belki yukarıdaki odada bulunan Işınlayıcıyı çalıştırabilirsin.",
+      "occurrences": [
+        {
+          "asset": "npcs/pavillion/pavillionprincess.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/3",
+          "origin": "npcs/pavillion/pavillionprincess.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk cümle aynı. In the room above konumu oda iyeliği yerine yukarıdaki odada olarak açık verildi; yeni kat/oda/teleporter kimliği eklenmedi. Maybe olasılığı ve etkin Işınlayıcı kilidi korundu."
+    },
+    {
+      "unit_index": 22,
+      "en": "A thousand blows shall rain upon you!",
+      "before": "Üzerine bin darbe yağdıracağım!",
+      "after": "Üzerine bin darbe yağacak!",
+      "occurrences": [
+        {
+          "asset": "npcs/pavillion/pavillionsamurai.npctype",
+          "pointer": "/scriptConfig/dialog/attack/hylotl/default/2",
+          "origin": "npcs/pavillion/pavillionsamurai.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Kaynak shall rain üzerine darbeler yağacağını söyler; kaynakta açıkça bulunmayan ben yağdıracağım faili çıkarıldı. Yazıyla bin ve saldırı tehdidi korundu."
+    },
+    {
+      "unit_index": 25,
+      "en": "One of the princess' lapdogs! Time to test my blade on you!",
+      "before": "Prensesin kucak köpeklerinden biri! Kılıcımı senin üzerinde deneme zamanı!",
+      "after": "Prensesin uşaklarından biri! Kılıcımı senin üzerinde deneme zamanı!",
+      "occurrences": [
+        {
+          "asset": "npcs/pavillion/pavillionshogun.npctype",
+          "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+          "origin": "npcs/pavillion/pavillionshogun.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Yalnız ilk nida değişti. Lapdog burada oyuncuya yönelik boyun eğen takipçi/uşak hakaretidir; gerçek kucak köpeği kimliği yok. Sövgü veya yeni eylem eklenmedi. İkinci cümle aynı."
+    },
+    {
+      "unit_index": 26,
+      "en": "It is said, 'know your enemy and know yourself, and you will emerge the victor of a thousand battles'. You cannot hope to win.",
+      "before": "“Düşmanını ve kendini tanı, bin savaştan galip çıkarsın” derler. Kazanmayı umut bile edemezsin.",
+      "after": "“Düşmanını ve kendini tanı, bin savaştan galip çıkarsın” derler. Kazanma umudun yok.",
+      "occurrences": [
+        {
+          "asset": "npcs/pavillion/pavillionshogun.npctype",
+          "pointer": "/scriptConfig/dialog/attack/hylotl/default/1",
+          "origin": "npcs/pavillion/pavillionshogun.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Alıntı ve bin savaş kaynakta olduğu gibi kaldı; ikinci cümlede İngilizce yapıdaki kazanmayı umut bile edemezsin doğal Türkçe kazanma umudun yok olarak verildi. Alıntı tarihsel başka sayıya düzeltilmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "79b27344b5755ed8fd9f7ce2dd14d28a0a1bf02cd5f5f1b964cb8d04a6850f0f",
+    "filled_units": 29
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 29,
+    "context_units": 29,
+    "qa": {
+      "catalog_units_checked": 35671,
+      "raw_units_checked": 115,
+      "locked_terms": 1210
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol reviewed every29EN/TR occurrence, all5complete NPCs, quest/AI/world/instance/dungeon/map/object definitions and unchanged hostilefu/dialog/quest helpers.6fields/6expressions corrected.27packed dependencies missing; vanilla consumers/live LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/pavillion/pavillionarcher.npctype",
+        "note": "Complete NPC definition and all exact manifest EN/TR occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/pavillion/pavillionguard.npctype",
+        "note": "Complete NPC definition and all exact manifest EN/TR occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/pavillion/pavillionprincess.npctype",
+        "note": "Complete NPC definition and all exact manifest EN/TR occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/pavillion/pavillionsamurai.npctype",
+        "note": "Complete NPC definition and all exact manifest EN/TR occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/pavillion/pavillionshogun.npctype",
+        "note": "Complete NPC definition and all exact manifest EN/TR occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/quests/pavillion.questtemplate; fu_source/ai/pavillion.aimission; fu_source/objects/questmaps/pavillionmap.object; fu_source/dungeon_worlds.config.patch; fu_source/instance_worlds.config.patch; fu_source/dungeons/missions/pavillion/pavillion.dungeon; fu_source/dungeons/missions/pavillion/pavillion.json",
+        "note": "Mission/quest/world links and source name difference read. All54NPC placements reviewed, including3samurai in objects layer.59monster-layer objects,28tilesets/27missing packed/1FU. No radio stagehands found; no live spawn/path/tile/teleporter proof."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/scripts/actions/dialog.lua; fu_source/quests/scripts/main.lua",
+        "note": "Complete unchanged helper definitions read: speaker then target species; configured sequence and mission enable/turn-in paths. Koto ghostly, not friendly. Vanilla base/hostileguard/spectator/combat missing; exact live speak/converse/attack caller NOT VERIFIED."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/pavillion/pavillionarcher.npctype",
+        "type": "pavillionarcher",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "fields": 7,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "For the Shogun!",
+            "luna_tr": "Şogun için!",
+            "approved_tr": "Şogun için!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/1",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "An intruder! Alarm! Alarm!",
+            "luna_tr": "İzinsiz giren var! Alarm! Alarm!",
+            "approved_tr": "İzinsiz giren var! Alarm! Alarm!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/2",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "Banzai!",
+            "luna_tr": "Hücuuum!",
+            "approved_tr": "Hücuuum!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/3",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "You intrude upon our peaceful village?",
+            "luna_tr": "Huzurlu köyümüze izinsiz mi giriyorsun?",
+            "approved_tr": "Huzurlu köyümüze izinsiz mi giriyorsun?"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/4",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "B-But I'm just a conscript...",
+            "luna_tr": "A-Ama ben sadece askere alınmış biriyim...",
+            "approved_tr": "A-Ama ben sadece zorunlu askerlik yapıyorum..."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/pavillion/pavillionarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/5",
+            "origin": "npcs/pavillion/pavillionarcher.npctype",
+            "en": "Yaaaaaah!",
+            "luna_tr": "Yaaaaa!",
+            "approved_tr": "Yaaaaa!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/pavillion/pavillionguard.npctype",
+        "type": "pavillionguard",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 7,
+            "asset": "npcs/pavillion/pavillionguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/pavillion/pavillionguard.npctype",
+            "en": "For the Shogun!",
+            "luna_tr": "Şogun için!",
+            "approved_tr": "Şogun için!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/pavillion/pavillionguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/pavillion/pavillionguard.npctype",
+            "en": "An intruder! Alarm! Alarm!",
+            "luna_tr": "İzinsiz giren var! Alarm! Alarm!",
+            "approved_tr": "İzinsiz giren var! Alarm! Alarm!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/pavillion/pavillionguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/pavillion/pavillionguard.npctype",
+            "en": "Banzai!",
+            "luna_tr": "Hücuuum!",
+            "approved_tr": "Hücuuum!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/pavillion/pavillionguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/pavillion/pavillionguard.npctype",
+            "en": "You intrude upon our peaceful village?",
+            "luna_tr": "Huzurlu köyümüze izinsiz mi giriyorsun?",
+            "approved_tr": "Huzurlu köyümüze izinsiz mi giriyorsun?"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/pavillion/pavillionguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/pavillion/pavillionguard.npctype",
+            "en": "B-But I'm just a conscript...",
+            "luna_tr": "A-Ama ben sadece askere alınmış biriyim...",
+            "approved_tr": "A-Ama ben sadece zorunlu askerlik yapıyorum..."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/pavillion/pavillionguard.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/pavillion/pavillionguard.npctype",
+            "en": "Yaaaaaah!",
+            "luna_tr": "Yaaaaa!",
+            "approved_tr": "Yaaaaa!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/pavillion/pavillionprincess.npctype",
+        "type": "pavillionprincess",
+        "base_type": "base",
+        "identity": {
+          "name": "Koto",
+          "gender": "female",
+          "race": "hylotl"
+        },
+        "damage_team_type": "ghostly",
+        "behavior": "spectator",
+        "dialog_mode": "sequence",
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 13,
+            "asset": "npcs/pavillion/pavillionprincess.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/pavillion/pavillionprincess.npctype",
+            "en": "Thank you! Sorry, but your princess is in another castle!",
+            "luna_tr": "Teşekkürler! Kusura bakma ama prensesin başka bir kalede!",
+            "approved_tr": "Teşekkürler! Kusura bakma ama prensesin başka bir kalede!"
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/pavillion/pavillionprincess.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/1",
+            "origin": "npcs/pavillion/pavillionprincess.npctype",
+            "en": "Eh...yes, that was a bad joke. Pardon me, I just thought to lighten the mood a little.",
+            "luna_tr": "Ee... evet, kötü bir şakaydı. Affet, sadece ortamı biraz yumuşatmak istemiştim.",
+            "approved_tr": "Ee... evet, kötü bir şakaydı. Affet, sadece ortamı biraz yumuşatmak istemiştim."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/pavillion/pavillionprincess.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/pavillion/pavillionprincess.npctype",
+            "en": "It must have been something of an ordeal to get here. No, I'm not hurt.",
+            "luna_tr": "Buraya gelmek epey zorlu olmuştur. Hayır, yaralanmadım.",
+            "approved_tr": "Buraya gelmek epey zorlu olmuştur. Hayır, yaralanmadım."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/pavillion/pavillionprincess.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/3",
+            "origin": "npcs/pavillion/pavillionprincess.npctype",
+            "en": "We need to get out of here quickly before reinforcements arrive. Maybe you can activate the teleporter in the room above.",
+            "luna_tr": "Takviye gelmeden buradan çabucak çıkmalıyız. Belki üstteki odanın Işınlayıcısını çalıştırabilirsin.",
+            "approved_tr": "Takviye gelmeden buradan çabucak çıkmalıyız. Belki yukarıdaki odada bulunan Işınlayıcıyı çalıştırabilirsin."
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/pavillion/pavillionprincess.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/4",
+            "origin": "npcs/pavillion/pavillionprincess.npctype",
+            "en": "Let's just grab what treasure is here and go!",
+            "luna_tr": "Burada ne hazine varsa toplayıp gidelim!",
+            "approved_tr": "Burada ne hazine varsa toplayıp gidelim!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/pavillion/pavillionprincess.npctype",
+            "pointer": "/scriptConfig/dialog/speak/default/default/0",
+            "origin": "npcs/pavillion/pavillionprincess.npctype",
+            "en": "Thank you for rescuing me!",
+            "luna_tr": "Beni kurtardığın için teşekkür ederim!",
+            "approved_tr": "Beni kurtardığın için teşekkür ederim!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/pavillion/pavillionsamurai.npctype",
+        "type": "pavillionsamurai",
+        "base_type": "hostilefu",
+        "identity": null,
+        "damage_team_type": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 19,
+            "asset": "npcs/pavillion/pavillionsamurai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/pavillion/pavillionsamurai.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/pavillion/pavillionsamurai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+            "origin": "npcs/pavillion/pavillionsamurai.npctype",
+            "en": "For the glory of Shogun Kigai!",
+            "luna_tr": "Şogun Kigai’nin şanı için!",
+            "approved_tr": "Şogun Kigai’nin şanı için!"
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/pavillion/pavillionsamurai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/1",
+            "origin": "npcs/pavillion/pavillionsamurai.npctype",
+            "en": "I will slay you!",
+            "luna_tr": "Seni öldüreceğim!",
+            "approved_tr": "Seni öldüreceğim!"
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/pavillion/pavillionsamurai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/2",
+            "origin": "npcs/pavillion/pavillionsamurai.npctype",
+            "en": "A thousand blows shall rain upon you!",
+            "luna_tr": "Üzerine bin darbe yağdıracağım!",
+            "approved_tr": "Üzerine bin darbe yağacak!"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/pavillion/pavillionsamurai.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/3",
+            "origin": "npcs/pavillion/pavillionsamurai.npctype",
+            "en": "Banzai!",
+            "luna_tr": "Hücuuum!",
+            "approved_tr": "Hücuuum!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/pavillion/pavillionshogun.npctype",
+        "type": "pavillionshogun",
+        "base_type": "hostilefu",
+        "identity": {
+          "gender": "male"
+        },
+        "damage_team_type": null,
+        "behavior": null,
+        "dialog_mode": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 24,
+            "asset": "npcs/pavillion/pavillionshogun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/pavillion/pavillionshogun.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/pavillion/pavillionshogun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+            "origin": "npcs/pavillion/pavillionshogun.npctype",
+            "en": "One of the princess' lapdogs! Time to test my blade on you!",
+            "luna_tr": "Prensesin kucak köpeklerinden biri! Kılıcımı senin üzerinde deneme zamanı!",
+            "approved_tr": "Prensesin uşaklarından biri! Kılıcımı senin üzerinde deneme zamanı!"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/pavillion/pavillionshogun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/1",
+            "origin": "npcs/pavillion/pavillionshogun.npctype",
+            "en": "It is said, 'know your enemy and know yourself, and you will emerge the victor of a thousand battles'. You cannot hope to win.",
+            "luna_tr": "“Düşmanını ve kendini tanı, bin savaştan galip çıkarsın” derler. Kazanmayı umut bile edemezsin.",
+            "approved_tr": "“Düşmanını ve kendini tanı, bin savaştan galip çıkarsın” derler. Kazanma umudun yok."
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/pavillion/pavillionshogun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/2",
+            "origin": "npcs/pavillion/pavillionshogun.npctype",
+            "en": "The princess is mine! Mine! Mine!",
+            "luna_tr": "Prenses benim! Benim! Benim!",
+            "approved_tr": "Prenses benim! Benim! Benim!"
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/pavillion/pavillionshogun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/3",
+            "origin": "npcs/pavillion/pavillionshogun.npctype",
+            "en": "So, you invade my village and castle? Audacious indeed!",
+            "luna_tr": "Demek köyümü ve kalemi istila ediyorsun? Cüretine bak!",
+            "approved_tr": "Demek köyümü ve kalemi istila ediyorsun? Cüretine bak!"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 29,
+    "layered_fields": 0,
+    "related_review_rows": 3,
+    "related_review_fields": [
+      {
+        "asset": "npcs/pavillion/pavillionprincess.npctype",
+        "pointer": "/scriptConfig/behavior",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/pavillion/pavillionprincess.npctype",
+        "key": "behavior",
+        "en": "spectator",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/pavillion"
+      },
+      {
+        "asset": "npcs/pavillion/pavillionprincess.npctype",
+        "pointer": "/scriptConfig/dialogMode",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/pavillion/pavillionprincess.npctype",
+        "key": "dialogMode",
+        "en": "sequence",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/pavillion"
+      },
+      {
+        "asset": "npcs/pavillion/pavillionprincess.npctype",
+        "pointer": "/scriptConfig/turnInQuests/0",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/pavillion/pavillionprincess.npctype",
+        "key": "0",
+        "en": "pavillion.gearup",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/pavillion"
+      }
+    ],
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "behaviors/npc/spectator.behavior",
+      "behaviors/npc/hostileguard.behavior",
+      "dialog/combat.config"
+    ],
+    "source_files": [
+      {
+        "asset": "npcs/pavillion/pavillionarcher.npctype",
+        "sha256": "08e1a0dd4b43f712c196e5a5b492e96b784403245b132798004f827102df5a88"
+      },
+      {
+        "asset": "npcs/pavillion/pavillionguard.npctype",
+        "sha256": "93d9fcd524ecc2b72bbb1f42c76d75154964672ae92ee6f5939817bc10087b51"
+      },
+      {
+        "asset": "npcs/pavillion/pavillionprincess.npctype",
+        "sha256": "88b6df980c7680df829b8762d0e1232b5840317a79b6e045de699c8ec6c428b7"
+      },
+      {
+        "asset": "npcs/pavillion/pavillionsamurai.npctype",
+        "sha256": "6e58c2c938519a6628a04928635a5b3e5ba638a250a42457f61909e8697507b7"
+      },
+      {
+        "asset": "npcs/pavillion/pavillionshogun.npctype",
+        "sha256": "a81ed1424abb68e0256359aba8fc3ce127beb8731fb36d86cc0dc91469984558"
+      },
+      {
+        "asset": "quests/pavillion.questtemplate",
+        "sha256": "12fec1b4c3b56a4daafd8ac3a93e87ea3dd97286afbab9a2ac56266b87c7dbf1"
+      },
+      {
+        "asset": "ai/pavillion.aimission",
+        "sha256": "17013a517d5294c17285ce457aa3ce1f22f7b989e3ab2a863a2931ec3d9c5938"
+      },
+      {
+        "asset": "dungeons/missions/pavillion/pavillion.dungeon",
+        "sha256": "a38775a9d1ee7597ef459770818eda6de695ad71e409c3b4ea19512ee9bedb65"
+      },
+      {
+        "asset": "dungeons/missions/pavillion/pavillion.json",
+        "sha256": "161338f58276fc151b152a03be62d88edc7b485474f22d06b32d068b4716c32a"
+      },
+      {
+        "asset": "dungeon_worlds.config.patch",
+        "sha256": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3"
+      },
+      {
+        "asset": "instance_worlds.config.patch",
+        "sha256": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083"
+      },
+      {
+        "asset": "npcs/hostilefu.npctype",
+        "sha256": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f"
+      },
+      {
+        "asset": "scripts/actions/dialog.lua",
+        "sha256": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+      },
+      {
+        "asset": "quests/scripts/main.lua",
+        "sha256": "e94bac3612b8769f4c49991f014e78f30d09b6d4716084e2e43a6b0c5f2ffb22"
+      },
+      {
+        "asset": "objects/questmaps/pavillionmap.object",
+        "sha256": "15a4f0f01bf8c54b66c6faf4140fe5db50d2cf2b14fb3dd1571c75e175bab00c"
+      }
+    ],
+    "mission": {
+      "quest_id": "pavillion.gearup",
+      "mission_world": "pavillion",
+      "quest_shogun": "Takeshi",
+      "samurai_shogun": "Kigai",
+      "princess_name": "Koto",
+      "princess_damage_team": "ghostly",
+      "money_range": [
+        5000,
+        5000
+      ],
+      "npc_placements": {
+        "pavillionsamurai": 13,
+        "pavillionshogun": 1,
+        "pavillionarcher": 16,
+        "pavillionguard": 23,
+        "pavillionprincess": 1
+      },
+      "npc_total": 54,
+      "layers": [
+        {
+          "layer": "objects",
+          "objects": 727,
+          "npc_types": {
+            "pavillionsamurai": 3
+          }
+        },
+        {
+          "layer": "monsters and npcs",
+          "objects": 59,
+          "npc_types": {
+            "pavillionshogun": 1,
+            "pavillionarcher": 16,
+            "pavillionsamurai": 10,
+            "pavillionguard": 23,
+            "pavillionprincess": 1
+          }
+        },
+        {
+          "layer": "mods",
+          "objects": 18,
+          "npc_types": {}
+        },
+        {
+          "layer": "wires",
+          "objects": 16,
+          "npc_types": {}
+        }
+      ],
+      "monster_layer_objects": 59,
+      "radio_stagehands": 0,
+      "tileset_references": [
+        {
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "available": true
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleportmarker.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/hylotl.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+          "available": false
+        }
+      ],
+      "missing_tilesets": 27,
+      "available_fu_tilesets": 1,
+      "spawn_or_live_path_tested": false
+    },
+    "terminology_notes": [
+      "Quest/AI say Shogun Takeshi; samurai says Shogun Kigai. Both source identities preserved; no normalization. Shogun NPC has gender only, not a verified name binding. Existing20504catalog fields unchanged.",
+      "Koto is ghostly/persistent/spectator/sequence, not source-friendly. Luna friendly wording corrected in approved evidence. Sequence config and helper branch selection are static facts, not a verified live caller.",
+      "dialog helper selects speaker species first, target species/default next. hylotl branch is not solely a target-species branch; all map NPC placements use hylotl.",
+      "Conscript compulsory service clarified; lapdog servile follower insult translated naturally, no new profanity. Banzai is localized as a battle cry in attack branches; Hücuuum! and Yaaaaa! require no English preserve permission.",
+      "Written thousand blows/battles retained; no historical quote correction. Generic fate of blows no longer asserts an added first-person actor. Teleporter room-above location clarified; specific teleporter object/vanilla tile not resolved."
+    ],
+    "lexical_references": [
+      {
+        "url": "https://dictionary.cambridge.org/dictionary/english/conscript",
+        "paraphrase": "Conscript denotes compulsory military service; no claim about particular real-world army."
+      },
+      {
+        "url": "https://www.merriam-webster.com/dictionary/lapdog",
+        "paraphrase": "Servile follower sense supports the hostile metaphor; player is not literally a small pet dog."
+      },
+      {
+        "url": "https://www.merriam-webster.com/dictionary/banzai",
+        "paraphrase": "War-cry sense supports functional Turkish attack-cry localization. This local choice is an inference from the attack branch, not a literal command gloss."
+      }
+    ],
+    "delivery_evidence_correction": "Koto damageTeamType is ghostly, not friendly. hylotl branch is speaker-species selection in dialog helper. Frozen original evidence retained; approved evidence corrected."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All29EN/TR variants and occurrences reviewed against5complete NPCs,hostilefu/dialog/quest helpers,quest/AI/world/instance/dungeon/map/object definitions. All20504prior fields unchanged.",
+    "23attack,5converse,1speak;3technical spectator/sequence/turnInQuests review rows excluded. Technical identity/stats/gear/behavior/quest/reward fields unchanged.",
+    "Quest/AI Takeshi and samurai Kigai source difference retained. Shogun NPC has no source name binding beyond male gender. Koto identity is ghostly/persistent/spectator/sequence,not friendly.",
+    "Map54NPC placements:16archer,23guard,13samurai,1shogun,1princess;3samurai in objects layer.59monster-layer objects. No radio stagehands found. Static placement not live spawn/path/AI proof.",
+    "28tileset references:27missing packed,1availableFU. Vanilla base/hostileguard/spectator/combat consumers missing;live speak/converse/attack/turn-in/teleporter visibility NOT VERIFIED.",
+    "6fields/6expressions corrected:two compulsory-service lines,room-above location,unproven first-person agency,servile follower insult and natural hopelessness sentence.",
+    "23newLOCKED:3proper names,1standalone title,19fullsources;1210total. Attack! reused existinglock. Banzai/Yaaaaaah localized as cries;no English utterance/context/TM/format exception added. Historical compound name phrases unchanged.",
+    "Written thousand blows/battles and quote retained without historical correction. No live LQA,Steam,game installation or shutdown in this run."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}

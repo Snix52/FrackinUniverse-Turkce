@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.92.0 Beta — Pavillion kale konuşmaları
+
+Beş NPC dosyasında29yeni alan/29bağlam/20farklı kaynak metin:23saldırı,5sohbet,1teşekkür. Katalog20.533;önceki20.504alan aynı.
+
+6alanda6ifade düzeltildi;23yeniLOCKED,toplam1.210. Zorunlu askerlik,üst odadaki ışınlayıcı ve uşak hakareti netleştirildi;eklenen fail çıkarıldı. Kaynak Takeshi/Kigai ad farkı,teknik ayarlar ve FU6.5.8pini korundu. Vanilla tüketiciler/27packed tileset eksik;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/pavillion-20261105.json) · [Oyun kontrolü](docs/lqa/LQA_V092_20261105.md)
+
 ## v0.91.0 Beta — Sunset Riders konuşmaları
 
 Yedi Sunset Riders NPC dosyasında 46 yeni alan /46 bağlam /30 farklı kaynak metin:28saldırı,18sohbet. Katalog20.504; önceki20.458alan aynı.
