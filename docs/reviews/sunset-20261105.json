@@ -1,0 +1,1191 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-05",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 14,
+  "run_id": "fu-ten-20261104",
+  "run_round": 2,
+  "base_commit": "69269e0ae207d2023c6f25bd6df8c8414baaa715",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 46,
+    "context_groups": 46,
+    "unique_english_strings": 30,
+    "assets": {
+      "npcs/sunsetriders/sunsetdagger.npctype": 2,
+      "npcs/sunsetriders/sunsethank.npctype": 3,
+      "npcs/sunsetriders/sunsetsheriff.npctype": 2,
+      "npcs/sunsetriders/sunsetshield.npctype": 7,
+      "npcs/sunsetriders/sunsetshotgun.npctype": 8,
+      "npcs/sunsetriders/sunsetsniper.npctype": 8,
+      "npcs/sunsetriders/sunsetvillager.npctype": 16
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 46,
+    "dialogue_events": {
+      "attack": 28,
+      "converse": 18
+    },
+    "dialogue_fields": 46,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 2
+  },
+  "changes": {
+    "fields": 13,
+    "sentences_including_repeated_fields": 14,
+    "unique_source_strings_corrected": 11,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 13,
+    "total_corrected_sentences": 14,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged clauses excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 35,
+  "new_locked_names": [
+    "Hawkeye Hank",
+    "Hawkeye",
+    "Hank",
+    "Ginger",
+    "Fort Nova",
+    "Screwbolt",
+    "Looks like we've got another pig for the poking!",
+    "Seems like another varmint's on the loose!",
+    "I ain't kilt nobody, I swear it. It was that eyed tentercle thang!",
+    "Ain't nobody ever gonna believe I ain't done in Ginger? I'm sick o' runnin!",
+    "Fer the last time...I ain't kilt no girl and I ain't let no creature snack on 'er!",
+    "Howdy, stranger. You're after the bounty, aren't you? Hawkeye Hank's place is on the other side of the hill...his men are thick as thieves on it, though. You could fight your way through them, or you could make your way through the mines...choice's up to you. Just come back safely, okay?",
+    "Well, good night Irene!",
+    "Shoot 'em full of holes!",
+    "I feel like I might need to shoot you now!",
+    "Blam! Blam! Blam! That's what I'm gonna do!",
+    "Seems ter be an intruder 'round these parts.",
+    "We don't take kindly to your kind 'round 'ere!",
+    "There's rumors I ain't too friendly.",
+    "Yeeeeeeehaw!",
+    "Hawkeye Hank was a good man, but lean times turn good men bad.",
+    "Howdy, pardner! Are you new to Fort Nova?",
+    "Two thousand for Hawkeye Hank, dead or alive. If I had more confidence in my abilities, I'd go for the bounty myself.",
+    "Have a drink at our saloon before you leave. Get one in you for the road.",
+    "We're pretty far out along the frontier. You might want to buy some trail rations from the chef in the saloon.",
+    "Hawkeye Hank's been terrorising the roads. We can't get our ore shipped out!",
+    "No one we've sent after Hawkeye Hank has returned...hopefully you won't meet the same fate.",
+    "You here 'bout the bounty? You should check in with the sheriff first.",
+    "Fort Nova's not very large, but some walls are better than none.",
+    "Hawkeye Hank's men are a bunch of ugly thugs.",
+    "We used to have a good mine here... until Hawkeye's men ruined it. Now how's a honest fellow to do any work?",
+    "Hank's men have dug themselves into the hillside, set down all kinds of traps. Now no one's crossing that there hill...",
+    "We don't serve your kind here...oh wait, we do. Forget I said anything.",
+    "You oughta check in with the sheriff before heading out anywhere, pardner.",
+    "The Screwbolt Mine's full of silver, but what really got Hank and his gang going was the miners striking diamonds. Now they want it all to themselves."
+  ],
+  "reused_locked_names": [
+    "You shouldn't be seeing this."
+  ],
+  "locked_total": 1187,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "109c463a8ad33c2785bc709f0391106c6808d711aacf6bcf234f8422997e8b6b",
+  "luna_original_packet_sha256": "751df0f24953cae94edf5dedbc01d57895498fd81e18142c6ea0c9a2c14b9a60",
+  "approved_rows_sha256": "66d9dda647672aef650ce1fd5283572a7c0cd57e4244960dd564292e9e832d39",
+  "corrections": [
+    {
+      "unit_index": 0,
+      "en": "Looks like we've got another pig for the poking!",
+      "before": "Yeni bir domuz çıktı, şöyle bir dürteyim!",
+      "after": "Yine dürtülecek bir domuz çıktı karşımıza!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetdagger.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/0",
+          "origin": "npcs/sunsetriders/sunsetdagger.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "We çoğul konuşmacı korunur; kaynakta olmayan tekil dürteyim niyeti çıkarıldı. Dagger saldırı dalındaki domuz/dürtme tehdidi aynı."
+    },
+    {
+      "unit_index": 2,
+      "en": "I ain't kilt nobody, I swear it. It was that eyed tentercle thang!",
+      "before": "Kimseyi öldürmedim, yemin ederim. Suç şu tek gözlü dokunaçlı şeyde!",
+      "after": "Kimseyi öldürmedim, yemin ederim. O gözleri olan dokunaçlı şey yaptı!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsethank.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/0",
+          "origin": "npcs/sunsetriders/sunsethank.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk inkâr aynı. Eyed gözlüdür; tek göz sayısı belirtilmiyor. Kimliği doğrulanmayan yaratığa tek göz veya özel tür atanmadan fail suçlaması korundu."
+    },
+    {
+      "unit_index": 4,
+      "en": "Fer the last time...I ain't kilt no girl and I ain't let no creature snack on 'er!",
+      "before": "Yeter artık... O kızı öldürmedim, o yaratığın da onu yemesine izin vermedim!",
+      "after": "Son kez söylüyorum... Ne bir kızı öldürdüm ne de bir yaratığın onu yemesine izin verdim!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsethank.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/2",
+          "origin": "npcs/sunsetriders/sunsethank.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Son kez söylüyorum kısa ifadesi geri getirildi. A girl/no creature belirsizliği ve iki ayrı inkâr korundu; kaynakta olmayan o kızı/o yaratığı kesinliği çıkarıldı. İki değişen anlam birimi: uyarı ve birleşik inkâr."
+    },
+    {
+      "unit_index": 6,
+      "en": "Howdy, stranger. You're after the bounty, aren't you? Hawkeye Hank's place is on the other side of the hill...his men are thick as thieves on it, though. You could fight your way through them, or you could make your way through the mines...choice's up to you. Just come back safely, okay?",
+      "before": "Selam yabancı. Ödülün peşindesin, değil mi? Hawkeye Hank'in mekânı tepenin öte yanında... ama adamları orayı sıkı sıkı tutuyor. Onları yara yara geçebilir ya da madenlerden ilerleyebilirsin... karar senin. Yeter ki sağ salim dön, olur mu?",
+      "after": "Selam yabancı. Ödülün peşindesin, değil mi? Hawkeye Hank'in mekânı tepenin öte yanında... ama oradaki adamları birbirine sıkı sıkıya bağlı. Onları yara yara geçebilir ya da madenlerden ilerleyebilirsin... karar senin. Yeter ki sağ salim dön, olur mu?",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetsheriff.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/0",
+          "origin": "npcs/sunsetriders/sunsetsheriff.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Yalnız thick as thieves yan cümlesi değişti: sözlükte yakın/sıkı bağlı grup anlamı doğrulandı. Mekânı sıkı tutmak ayrı kontrol iddiasıydı. Tepe/maden seçenekleri, güvenli dönüş ve adlar aynı; radyo düşman yoğunluğunu ayrıca anlatıyor."
+    },
+    {
+      "unit_index": 10,
+      "en": "I feel like I might need to shoot you now!",
+      "before": "Sanırım artık seni vurmam gerekecek!",
+      "after": "Sanırım artık seni vurmam gerekebilir!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetshield.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/3",
+          "origin": "npcs/sunsetriders/sunsetshield.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Might need olasılığı gerekecek kesinliğine yükseltilmedi; saldırgan tehdit tonu ve now korundu."
+    },
+    {
+      "unit_index": 17,
+      "en": "I feel like I might need to shoot you now!",
+      "before": "Sanırım artık seni vurmam gerekecek!",
+      "after": "Sanırım artık seni vurmam gerekebilir!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/3",
+          "origin": "npcs/sunsetriders/sunsetshotgun.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Shotgun occurrence ayrı incelendi; might need olasılığı korunur."
+    },
+    {
+      "unit_index": 25,
+      "en": "I feel like I might need to shoot you now!",
+      "before": "Sanırım artık seni vurmam gerekecek!",
+      "after": "Sanırım artık seni vurmam gerekebilir!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/3",
+          "origin": "npcs/sunsetriders/sunsetsniper.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Sniper occurrence ayrı incelendi; might need olasılığı korunur."
+    },
+    {
+      "unit_index": 33,
+      "en": "Two thousand for Hawkeye Hank, dead or alive. If I had more confidence in my abilities, I'd go for the bounty myself.",
+      "before": "Hawkeye Hank'i sağ ya da ölü getirene iki bin ödül var. Kendime biraz daha güvensem ödülü kendim almaya giderdim.",
+      "after": "Hawkeye Hank'i sağ ya da ölü getirene iki bin veriliyor. Kendime biraz daha güvensem ödülü kendim almaya giderdim.",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/10",
+          "origin": "npcs/sunsetriders/sunsetvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk cümlede iki bin ödül bozuk miktar dizimi düzeltildi. Kaynaktaki yazıyla iki bin ve dead/alive korundu; quest moneyRange 2000 doğrulandı. İkinci cümle aynı."
+    },
+    {
+      "unit_index": 35,
+      "en": "We're pretty far out along the frontier. You might want to buy some trail rations from the chef in the saloon.",
+      "before": "Sınır boyunun epey uzağındayız. Bardaki aşçıdan yolluk erzak alman iyi olur.",
+      "after": "Sınır boyunda epey ücra bir yerdeyiz. Bardaki aşçıdan yolluk erzak alman iyi olur.",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/12",
+          "origin": "npcs/sunsetriders/sunsetvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Far out along the frontier sınır boyunun uzağında değil, sınır boyunda ücra bir konumdadır. İlk cümle düzeltildi; erzak/aşçı yönlendirmesi aynı."
+    },
+    {
+      "unit_index": 36,
+      "en": "Hawkeye Hank's been terrorising the roads. We can't get our ore shipped out!",
+      "before": "Hawkeye Hank yollara dehşet saçıyor. Cevherimizi dışarı gönderemiyoruz!",
+      "after": "Hawkeye Hank yollarda dehşet saçıyor. Cevherimizi dışarı gönderemiyoruz!",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/13",
+          "origin": "npcs/sunsetriders/sunsetvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Terrorising the roads Türkçede yollarda dehşet saçmak olarak doğal yer ekiyle verildi. İkinci cümle ve cevher sevki engeli aynı."
+    },
+    {
+      "unit_index": 41,
+      "en": "We used to have a good mine here... until Hawkeye's men ruined it. Now how's a honest fellow to do any work?",
+      "before": "Eskiden burada iyi bir madenimiz vardı... Hawkeye'nin adamları mahvedene kadar. Dürüst bir insan şimdi nasıl iş yapsın?",
+      "after": "Eskiden burada iyi bir madenimiz vardı... Hawkeye'ın adamları mahvedene kadar. Dürüst bir insan şimdi nasıl iş yapsın?",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/5",
+          "origin": "npcs/sunsetriders/sunsetvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Hawkeye adının İngilizce söylenişine uygun ilgi eki düzeltildi; kimlik, maden geçmişi ve son soru aynı."
+    },
+    {
+      "unit_index": 43,
+      "en": "We don't serve your kind here...oh wait, we do. Forget I said anything.",
+      "before": "Senin gibilerine burada servis yapmayız... aa, yapıyormuşuz. Dediğimi unut.",
+      "after": "Senin gibilere burada servis yapmayız... aa, yapıyormuşuz. Dediğimi unut.",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/7",
+          "origin": "npcs/sunsetriders/sunsetvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Senin gibilerine kişi/iyelik uyumsuzluğu senin gibilere olarak düzeltildi. İlk kısa ifade değişti; hemen geri alma şakası ve diğer cümleler aynı."
+    },
+    {
+      "unit_index": 45,
+      "en": "The Screwbolt Mine's full of silver, but what really got Hank and his gang going was the miners striking diamonds. Now they want it all to themselves.",
+      "before": "Screwbolt Madeni gümüş dolu ama Hank'le çetesini asıl coşturan, madencilerin elmas bulması oldu. Şimdi hepsini kendilerine istiyorlar.",
+      "after": "Screwbolt Madeni gümüş dolu ama Hank'le çetesini asıl coşturan, madencilerin elmas bulması oldu. Şimdi hepsini kendilerine saklamak istiyorlar.",
+      "occurrences": [
+        {
+          "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/novakid/default/9",
+          "origin": "npcs/sunsetriders/sunsetvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İlk cümle aynı. Want it all to themselves yalnız kendilerine ayırma/saklama isteğidir; ikinci cümlede bozuk kendilerine istiyorlar dizimi düzeltildi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "751df0f24953cae94edf5dedbc01d57895498fd81e18142c6ea0c9a2c14b9a60",
+    "filled_units": 46
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 46,
+    "context_units": 46,
+    "qa": {
+      "catalog_units_checked": 35596,
+      "raw_units_checked": 115,
+      "locked_terms": 1187
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol reviewed every46EN/TR variant and occurrence, all7complete NPC definitions, hostilefu and dialog helper, quest/AI/world/dungeon/map/radio and quest objects/script. Missing18packed tilesets and vanilla consumers are unverified. LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsetdagger.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsethank.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsetsheriff.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsetshield.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsetshotgun.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsetsniper.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/npcs/sunsetriders/sunsetvillager.npctype",
+        "note": "Complete NPC source and all manifest occurrences manually reviewed by Sol; static source only."
+      },
+      {
+        "source": "fu_source/quests/sunsetriders.questtemplate; fu_source/ai/sunsetriders.aimission; fu_source/dungeon_worlds.config.patch; fu_source/dungeons/missions/sunsetriders/sunsetriders.dungeon; fu_source/dungeons/missions/sunsetriders/sunsetriders.json",
+        "note": "Quest/mission/world linkage, 2000 bounty, all NPC placements and seven radio stagehands/nine ids inspected. All20tileset references checked:18missing packed,2availableFU. No live spawn/path/trap/behavior validation."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/scripts/actions/dialog.lua; fu_source/quests/scripts/main.lua; fu_source/objects/questmaps/sunsetridersmap.object; fu_source/objects/questturnins/sunsetridersturnin.object",
+        "note": "Read complete helper/parent/script/object definitions. Species/target selection, associatedMission enable and offered/turn-in quest references checked. Vanilla base/hostileguard/spectator/combat missing; exact active event consumer NOT VERIFIED."
+      },
+      {
+        "source": "fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "All9Sunset Riders radio operations reviewed against map ids: supply/return warning, hill-vs-mines routes, enemy density, traps, treasure, arrest and AI joke. Not added to this dialogue manifest."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/sunsetriders/sunsetdagger.npctype",
+        "type": "sunsetdagger",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/sunsetriders/sunsetdagger.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/sunsetriders/sunsetdagger.npctype",
+            "en": "Looks like we've got another pig for the poking!",
+            "luna_tr": "Yeni bir domuz çıktı, şöyle bir dürteyim!",
+            "approved_tr": "Yine dürtülecek bir domuz çıktı karşımıza!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/sunsetriders/sunsetdagger.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/sunsetriders/sunsetdagger.npctype",
+            "en": "Seems like another varmint's on the loose!",
+            "luna_tr": "Yine bir haşere salınmış ortalığa!",
+            "approved_tr": "Yine bir haşere salınmış ortalığa!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsethank.npctype",
+        "type": "sunsethank",
+        "base_type": "hostilefu",
+        "identity": {
+          "name": "Hawkeye Hank",
+          "gender": "male",
+          "race": "novakid"
+        },
+        "behavior": null,
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 2,
+            "asset": "npcs/sunsetriders/sunsethank.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/sunsetriders/sunsethank.npctype",
+            "en": "I ain't kilt nobody, I swear it. It was that eyed tentercle thang!",
+            "luna_tr": "Kimseyi öldürmedim, yemin ederim. Suç şu tek gözlü dokunaçlı şeyde!",
+            "approved_tr": "Kimseyi öldürmedim, yemin ederim. O gözleri olan dokunaçlı şey yaptı!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/sunsetriders/sunsethank.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/sunsetriders/sunsethank.npctype",
+            "en": "Ain't nobody ever gonna believe I ain't done in Ginger? I'm sick o' runnin!",
+            "luna_tr": "Ginger'ı benim öldürmediğime kimse inanmayacak mı? Kaçmaktan bıktım!",
+            "approved_tr": "Ginger'ı benim öldürmediğime kimse inanmayacak mı? Kaçmaktan bıktım!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/sunsetriders/sunsethank.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/sunsetriders/sunsethank.npctype",
+            "en": "Fer the last time...I ain't kilt no girl and I ain't let no creature snack on 'er!",
+            "luna_tr": "Yeter artık... O kızı öldürmedim, o yaratığın da onu yemesine izin vermedim!",
+            "approved_tr": "Son kez söylüyorum... Ne bir kızı öldürdüm ne de bir yaratığın onu yemesine izin verdim!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetsheriff.npctype",
+        "type": "sunsetsheriff",
+        "base_type": "base",
+        "identity": null,
+        "behavior": "spectator",
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/sunsetriders/sunsetsheriff.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/sunsetriders/sunsetsheriff.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/sunsetriders/sunsetsheriff.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/0",
+            "origin": "npcs/sunsetriders/sunsetsheriff.npctype",
+            "en": "Howdy, stranger. You're after the bounty, aren't you? Hawkeye Hank's place is on the other side of the hill...his men are thick as thieves on it, though. You could fight your way through them, or you could make your way through the mines...choice's up to you. Just come back safely, okay?",
+            "luna_tr": "Selam yabancı. Ödülün peşindesin, değil mi? Hawkeye Hank'in mekânı tepenin öte yanında... ama adamları orayı sıkı sıkı tutuyor. Onları yara yara geçebilir ya da madenlerden ilerleyebilirsin... karar senin. Yeter ki sağ salim dön, olur mu?",
+            "approved_tr": "Selam yabancı. Ödülün peşindesin, değil mi? Hawkeye Hank'in mekânı tepenin öte yanında... ama oradaki adamları birbirine sıkı sıkıya bağlı. Onları yara yara geçebilir ya da madenlerden ilerleyebilirsin... karar senin. Yeter ki sağ salim dön, olur mu?"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetshield.npctype",
+        "type": "sunsetshield",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 7,
+        "entries": [
+          {
+            "unit_index": 7,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "Well, good night Irene!",
+            "luna_tr": "Hay aksi!",
+            "approved_tr": "Hay aksi!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "Shoot 'em full of holes!",
+            "luna_tr": "Delik deşik edin onları!",
+            "approved_tr": "Delik deşik edin onları!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "Seems like another varmint's on the loose!",
+            "luna_tr": "Yine bir haşere salınmış ortalığa!",
+            "approved_tr": "Yine bir haşere salınmış ortalığa!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "I feel like I might need to shoot you now!",
+            "luna_tr": "Sanırım artık seni vurmam gerekecek!",
+            "approved_tr": "Sanırım artık seni vurmam gerekebilir!"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "Blam! Blam! Blam! That's what I'm gonna do!",
+            "luna_tr": "Bam! Bam! Bam! Yapacağım şey bu!",
+            "approved_tr": "Bam! Bam! Bam! Yapacağım şey bu!"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "Seems ter be an intruder 'round these parts.",
+            "luna_tr": "Buralarda bir davetsiz misafir var galiba.",
+            "approved_tr": "Buralarda bir davetsiz misafir var galiba."
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/sunsetriders/sunsetshield.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/sunsetriders/sunsetshield.npctype",
+            "en": "We don't take kindly to your kind 'round 'ere!",
+            "luna_tr": "Sizin gibileri buralarda pek hoş karşılamayız!",
+            "approved_tr": "Sizin gibileri buralarda pek hoş karşılamayız!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+        "type": "sunsetshotgun",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 8,
+        "entries": [
+          {
+            "unit_index": 14,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "Well, good night Irene!",
+            "luna_tr": "Hay aksi!",
+            "approved_tr": "Hay aksi!"
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "Shoot 'em full of holes!",
+            "luna_tr": "Delik deşik edin onları!",
+            "approved_tr": "Delik deşik edin onları!"
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "Seems like another varmint's on the loose!",
+            "luna_tr": "Yine bir haşere salınmış ortalığa!",
+            "approved_tr": "Yine bir haşere salınmış ortalığa!"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "I feel like I might need to shoot you now!",
+            "luna_tr": "Sanırım artık seni vurmam gerekecek!",
+            "approved_tr": "Sanırım artık seni vurmam gerekebilir!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "Blam! Blam! Blam! That's what I'm gonna do!",
+            "luna_tr": "Bam! Bam! Bam! Yapacağım şey bu!",
+            "approved_tr": "Bam! Bam! Bam! Yapacağım şey bu!"
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "Seems ter be an intruder 'round these parts.",
+            "luna_tr": "Buralarda bir davetsiz misafir var galiba.",
+            "approved_tr": "Buralarda bir davetsiz misafir var galiba."
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "We don't take kindly to your kind 'round 'ere!",
+            "luna_tr": "Sizin gibileri buralarda pek hoş karşılamayız!",
+            "approved_tr": "Sizin gibileri buralarda pek hoş karşılamayız!"
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/7",
+            "origin": "npcs/sunsetriders/sunsetshotgun.npctype",
+            "en": "There's rumors I ain't too friendly.",
+            "luna_tr": "Pek dost canlısı olmadığım söylenir.",
+            "approved_tr": "Pek dost canlısı olmadığım söylenir."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+        "type": "sunsetsniper",
+        "base_type": "hostilefu",
+        "identity": null,
+        "behavior": null,
+        "fields": 8,
+        "entries": [
+          {
+            "unit_index": 22,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "Well, good night Irene!",
+            "luna_tr": "Hay aksi!",
+            "approved_tr": "Hay aksi!"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "Shoot 'em full of holes!",
+            "luna_tr": "Delik deşik edin onları!",
+            "approved_tr": "Delik deşik edin onları!"
+          },
+          {
+            "unit_index": 24,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "Seems like another varmint's on the loose!",
+            "luna_tr": "Yine bir haşere salınmış ortalığa!",
+            "approved_tr": "Yine bir haşere salınmış ortalığa!"
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "I feel like I might need to shoot you now!",
+            "luna_tr": "Sanırım artık seni vurmam gerekecek!",
+            "approved_tr": "Sanırım artık seni vurmam gerekebilir!"
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "Blam! Blam! Blam! That's what I'm gonna do!",
+            "luna_tr": "Bam! Bam! Bam! Yapacağım şey bu!",
+            "approved_tr": "Bam! Bam! Bam! Yapacağım şey bu!"
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "Seems ter be an intruder 'round these parts.",
+            "luna_tr": "Buralarda bir davetsiz misafir var galiba.",
+            "approved_tr": "Buralarda bir davetsiz misafir var galiba."
+          },
+          {
+            "unit_index": 28,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "We don't take kindly to your kind 'round 'ere!",
+            "luna_tr": "Sizin gibileri buralarda pek hoş karşılamayız!",
+            "approved_tr": "Sizin gibileri buralarda pek hoş karşılamayız!"
+          },
+          {
+            "unit_index": 29,
+            "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/7",
+            "origin": "npcs/sunsetriders/sunsetsniper.npctype",
+            "en": "Yeeeeeeehaw!",
+            "luna_tr": "Vuhuuuu!",
+            "approved_tr": "Vuhuuuu!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+        "type": "sunsetvillager",
+        "base_type": "base",
+        "identity": null,
+        "behavior": "spectator",
+        "fields": 16,
+        "entries": [
+          {
+            "unit_index": 30,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          },
+          {
+            "unit_index": 31,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/0",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Hawkeye Hank was a good man, but lean times turn good men bad.",
+            "luna_tr": "Hawkeye Hank iyi bir adamdı ama zor zamanlar iyi insanları da kötü yola sürükler.",
+            "approved_tr": "Hawkeye Hank iyi bir adamdı ama zor zamanlar iyi insanları da kötü yola sürükler."
+          },
+          {
+            "unit_index": 32,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/1",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Howdy, pardner! Are you new to Fort Nova?",
+            "luna_tr": "Selam dostum! Fort Nova'ya yeni mi geldin?",
+            "approved_tr": "Selam dostum! Fort Nova'ya yeni mi geldin?"
+          },
+          {
+            "unit_index": 33,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/10",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Two thousand for Hawkeye Hank, dead or alive. If I had more confidence in my abilities, I'd go for the bounty myself.",
+            "luna_tr": "Hawkeye Hank'i sağ ya da ölü getirene iki bin ödül var. Kendime biraz daha güvensem ödülü kendim almaya giderdim.",
+            "approved_tr": "Hawkeye Hank'i sağ ya da ölü getirene iki bin veriliyor. Kendime biraz daha güvensem ödülü kendim almaya giderdim."
+          },
+          {
+            "unit_index": 34,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/11",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Have a drink at our saloon before you leave. Get one in you for the road.",
+            "luna_tr": "Gitmeden önce barımızda bir şeyler iç. Yol için bir kadeh devir.",
+            "approved_tr": "Gitmeden önce barımızda bir şeyler iç. Yol için bir kadeh devir."
+          },
+          {
+            "unit_index": 35,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/12",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "We're pretty far out along the frontier. You might want to buy some trail rations from the chef in the saloon.",
+            "luna_tr": "Sınır boyunun epey uzağındayız. Bardaki aşçıdan yolluk erzak alman iyi olur.",
+            "approved_tr": "Sınır boyunda epey ücra bir yerdeyiz. Bardaki aşçıdan yolluk erzak alman iyi olur."
+          },
+          {
+            "unit_index": 36,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/13",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Hawkeye Hank's been terrorising the roads. We can't get our ore shipped out!",
+            "luna_tr": "Hawkeye Hank yollara dehşet saçıyor. Cevherimizi dışarı gönderemiyoruz!",
+            "approved_tr": "Hawkeye Hank yollarda dehşet saçıyor. Cevherimizi dışarı gönderemiyoruz!"
+          },
+          {
+            "unit_index": 37,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/14",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "No one we've sent after Hawkeye Hank has returned...hopefully you won't meet the same fate.",
+            "luna_tr": "Hawkeye Hank'in peşine gönderdiklerimizden hiçbiri dönmedi... Umarım senin başına da aynısı gelmez.",
+            "approved_tr": "Hawkeye Hank'in peşine gönderdiklerimizden hiçbiri dönmedi... Umarım senin başına da aynısı gelmez."
+          },
+          {
+            "unit_index": 38,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/2",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "You here 'bout the bounty? You should check in with the sheriff first.",
+            "luna_tr": "Ödül için mi geldin? Önce şerife uğramalısın.",
+            "approved_tr": "Ödül için mi geldin? Önce şerife uğramalısın."
+          },
+          {
+            "unit_index": 39,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/3",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Fort Nova's not very large, but some walls are better than none.",
+            "luna_tr": "Fort Nova pek büyük değil ama birkaç duvarı olması hiç yoktan iyidir.",
+            "approved_tr": "Fort Nova pek büyük değil ama birkaç duvarı olması hiç yoktan iyidir."
+          },
+          {
+            "unit_index": 40,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/4",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Hawkeye Hank's men are a bunch of ugly thugs.",
+            "luna_tr": "Hawkeye Hank'in adamları çirkin haydutlardan ibaret.",
+            "approved_tr": "Hawkeye Hank'in adamları çirkin haydutlardan ibaret."
+          },
+          {
+            "unit_index": 41,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/5",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "We used to have a good mine here... until Hawkeye's men ruined it. Now how's a honest fellow to do any work?",
+            "luna_tr": "Eskiden burada iyi bir madenimiz vardı... Hawkeye'nin adamları mahvedene kadar. Dürüst bir insan şimdi nasıl iş yapsın?",
+            "approved_tr": "Eskiden burada iyi bir madenimiz vardı... Hawkeye'ın adamları mahvedene kadar. Dürüst bir insan şimdi nasıl iş yapsın?"
+          },
+          {
+            "unit_index": 42,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/6",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "Hank's men have dug themselves into the hillside, set down all kinds of traps. Now no one's crossing that there hill...",
+            "luna_tr": "Hank'in adamları yamaçta yuvalanıp her yere türlü tuzak kurmuş. Artık o tepeyi kimse aşamıyor...",
+            "approved_tr": "Hank'in adamları yamaçta yuvalanıp her yere türlü tuzak kurmuş. Artık o tepeyi kimse aşamıyor..."
+          },
+          {
+            "unit_index": 43,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/7",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "We don't serve your kind here...oh wait, we do. Forget I said anything.",
+            "luna_tr": "Senin gibilerine burada servis yapmayız... aa, yapıyormuşuz. Dediğimi unut.",
+            "approved_tr": "Senin gibilere burada servis yapmayız... aa, yapıyormuşuz. Dediğimi unut."
+          },
+          {
+            "unit_index": 44,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/8",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "You oughta check in with the sheriff before heading out anywhere, pardner.",
+            "luna_tr": "Bir yerlere gitmeden önce şerife uğrasan iyi olur, dostum.",
+            "approved_tr": "Bir yerlere gitmeden önce şerife uğrasan iyi olur, dostum."
+          },
+          {
+            "unit_index": 45,
+            "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/novakid/default/9",
+            "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+            "en": "The Screwbolt Mine's full of silver, but what really got Hank and his gang going was the miners striking diamonds. Now they want it all to themselves.",
+            "luna_tr": "Screwbolt Madeni gümüş dolu ama Hank'le çetesini asıl coşturan, madencilerin elmas bulması oldu. Şimdi hepsini kendilerine istiyorlar.",
+            "approved_tr": "Screwbolt Madeni gümüş dolu ama Hank'le çetesini asıl coşturan, madencilerin elmas bulması oldu. Şimdi hepsini kendilerine saklamak istiyorlar."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 46,
+    "layered_fields": 0,
+    "related_review_rows": 2,
+    "related_review_fields": [
+      {
+        "asset": "npcs/sunsetriders/sunsetsheriff.npctype",
+        "pointer": "/scriptConfig/behavior",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/sunsetriders/sunsetsheriff.npctype",
+        "key": "behavior",
+        "en": "spectator",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/sunsetriders"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+        "pointer": "/scriptConfig/behavior",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/sunsetriders/sunsetvillager.npctype",
+        "key": "behavior",
+        "en": "spectator",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/sunsetriders"
+      }
+    ],
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "behaviors/npc/spectator.behavior",
+      "behaviors/npc/hostileguard.behavior",
+      "dialog/combat.config"
+    ],
+    "source_files": [
+      {
+        "asset": "npcs/sunsetriders/sunsetdagger.npctype",
+        "sha256": "08c1355ace09db8f683090f8488a90d2954d2fba2d9ef90e5fadbf3797c1cab2"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsethank.npctype",
+        "sha256": "9f03fa83204bc8fb6ce6d3a8c207ec1c7d0219d2a29c79a33a133abe31fb1a6f"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetsheriff.npctype",
+        "sha256": "9c75a29967d22195987fc2d42f69e9145613ec51dc4b9d68f4c369d41d0f7c3e"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetshield.npctype",
+        "sha256": "f0b002ee3afa53d5af8517bad40983f88dc0ff63572c89fea8c3e36ba9d1d3ee"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetshotgun.npctype",
+        "sha256": "533900618b50bf6af860aae90ab8eeccadc54cb7761baac7b78566eaecce5d56"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetsniper.npctype",
+        "sha256": "459dcb8c4ac9c280452f8d9b2994afbc8a011c7450cbb99ffbb0a286c0a24821"
+      },
+      {
+        "asset": "npcs/sunsetriders/sunsetvillager.npctype",
+        "sha256": "186abc9c880d265ed79214de4065edf5ed6eaf885b680d20d40aad410baee19e"
+      },
+      {
+        "asset": "quests/sunsetriders.questtemplate",
+        "sha256": "8db3b8babc6be0a0987f0817ae5f3148e8001763a920c3aadc696c7247faaef3"
+      },
+      {
+        "asset": "ai/sunsetriders.aimission",
+        "sha256": "3bdd49ac3499a36d2e440347a75e84087aa52479fdf59b93edc50fe04039db25"
+      },
+      {
+        "asset": "dungeons/missions/sunsetriders/sunsetriders.dungeon",
+        "sha256": "b67640c2d75e41fde957b65fd4352eec9ece82d949e29cdcb214655f78109259"
+      },
+      {
+        "asset": "dungeons/missions/sunsetriders/sunsetriders.json",
+        "sha256": "d9efa1dc0e8c1c6765a16334c6584a23975ff3763762dc35b5e49159d8224b13"
+      },
+      {
+        "asset": "dungeon_worlds.config.patch",
+        "sha256": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3"
+      },
+      {
+        "asset": "radiomessages/missions.radiomessages.patch",
+        "sha256": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351"
+      },
+      {
+        "asset": "npcs/hostilefu.npctype",
+        "sha256": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f"
+      },
+      {
+        "asset": "scripts/actions/dialog.lua",
+        "sha256": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+      },
+      {
+        "asset": "quests/scripts/main.lua",
+        "sha256": "e94bac3612b8769f4c49991f014e78f30d09b6d4716084e2e43a6b0c5f2ffb22"
+      },
+      {
+        "asset": "objects/questmaps/sunsetridersmap.object",
+        "sha256": "98226e82885afc6a904c833d19e3082159c423217341c5eb12bdf9444338536f"
+      },
+      {
+        "asset": "objects/questturnins/sunsetridersturnin.object",
+        "sha256": "86fb7bd9b24813703d3ecfeb6323060cbd0b1ac4c2b03ce2aba87ff6337f00b9"
+      }
+    ],
+    "mission": {
+      "quest_id": "sunsetriders.gearup",
+      "mission_world": "sunsetriders",
+      "money_range": [
+        2000,
+        2000
+      ],
+      "identity": "Hawkeye Hank",
+      "quest_name": "Hank 'Hawkeye' Hatfield",
+      "npc_placements": {
+        "sunsetsheriff": 1,
+        "sunsetvillager": 5,
+        "chefmerchant": 1,
+        "sunsetdagger": 11,
+        "sunsetshield": 4,
+        "sunsetshotgun": 9,
+        "sunsetsniper": 20,
+        "sunsethank": 1
+      },
+      "monster_layer_objects": 73,
+      "radio_stagehands": 7,
+      "radio_ids": [
+        "sunsetriders01",
+        "sunsetriders01a",
+        "sunsetriders02",
+        "sunsetriders03",
+        "sunsetriders04",
+        "sunsetriders05",
+        "sunsetriders06",
+        "sunsetriders07",
+        "sunsetriders07a"
+      ],
+      "radio_definitions": [
+        {
+          "op": "add",
+          "path": "/sunsetriders01",
+          "value": {
+            "type": "mission",
+            "text": "We've arrived! This looks like a proper rustic backwater, all right."
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders01a",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthertalk.png:<frame>",
+            "text": "Keeping peace in the galaxy is what the Protectorate is about, dear. Apprehending this criminal would certainly show we're up and about, if nothing else."
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders02",
+          "value": {
+            "type": "mission",
+            "text": "You might want to talk to the locals and stock up on supplies before heading out. We won't be able to return once we leave the fort."
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders03",
+          "value": {
+            "type": "mission",
+            "text": "The path forks here. The hillside is likely a straightforward path, but teeming with enemies. The mines are more treacherous, but you'll face less resistance."
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders04",
+          "value": {
+            "type": "mission",
+            "text": "What a treasure trove! We're rich! We're rich!"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders05",
+          "value": {
+            "type": "mission",
+            "text": "Going up the hill was hard enough...now we have to go DOWN? Give me a break!"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders06",
+          "value": {
+            "type": "mission",
+            "text": "Hank's men have dug into the hill with fortifications and traps. Hope you're confident enough in your combat abilities to bust their barricade!"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders07",
+          "value": {
+            "type": "mission",
+            "text": "Stop right there, criminal scum! Nobody breaks the law on my watch!"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/sunsetriders07a",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/estherthoughtful.png:<frame>",
+            "text": "I'm really sorry about the AI. The programming team was having a rather...unique day when they were coding the humour module."
+          }
+        }
+      ],
+      "tileset_references": [
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "available": true
+        },
+        {
+          "source": "../../../tilesets/frackinuniverse-custom/fu_labgear.json",
+          "available": true
+        }
+      ],
+      "missing_tilesets": 18,
+      "available_fu_tilesets": 2,
+      "spawn_or_live_path_tested": false
+    },
+    "terminology_notes": [
+      "Existing quest/AI catalog preserves Hank/Hawkeye/Fort Nova; no prior exact name locks. Ginger and Screwbolt spellings retained; Mine translated Madeni.",
+      "Eyed does not establish one eye or a named monster. Map creature list does not identify the creature Hank alleges killed Ginger.",
+      "Thick as thieves means a closely allied group; source hillside concentration is separately described by radio03. No new control mechanic asserted.",
+      "Good night Irene retained as Hay aksi! exclamation in three attack branches; no Irene NPC identity inferred. Sound Yeeeeeeehaw translated Vuhuuuu!, Blam translated Bam, no preserve permission.",
+      "Two thousand preserved spelled out; quest confirms 2000 pixels without changing any quest/reward field. All negations, routes and stock hints preserved."
+    ],
+    "lexical_references": [
+      {
+        "url": "https://en.wiktionary.org/wiki/thick_as_thieves",
+        "paraphrase": "Close-knit group; used to resolve the sheriff phrase, not a game runtime claim."
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/goodnight_Irene",
+        "paraphrase": "Idiomatic departure/end. Attack-context exclamation treatment is an inference; literal Irene character not established."
+      }
+    ],
+    "delivery_evidence_correction": "Luna stated five packed tilesets missing. Complete inventory has eighteen missing packed references and two available FU tilesets. Approved evidence corrected; original frozen delivery retained."
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All46EN/TR variants and occurrences reviewed against7complete NPC definitions,hostilefu/dialog helper,quest/AI/world/dungeon/map/radio and quest objects/script. All20458prior catalog fields unchanged.",
+    "28attack and18converse fields;2spectator technical review rows excluded. Original EN/ids/identity/equipment/stats/behavior/rewards unchanged.",
+    "Map73monster-layer objects:1sheriff,5villagers,1chef,1Hank,11dagger,4shield,9shotgun,20sniper plus other objects. Static placement not live spawn/path/AI proof.",
+    "Seven radio stagehands reference nine definitions, all reviewed.20tileset references:18missing packed files,2availableFU; corrects frozen delivery claim of5missing. Exact vanilla base/hostileguard/spectator/combat consumers missing.",
+    "13fields/14independent expressions corrected: plural threat,unproven one eye,last-time warning and indefinite double denial,gang idiom,three might-modalities,reward syntax,frontier location,locative,proper-name suffix,service grammar and exclusive possession.",
+    "35newLOCKED (6names/29fullsources),1187total;fallback reuses prior lock. No preserve utterance/context/TM/format exception added. Sounds translated; ordinary English and neighboring fields cannot inherit name permission.",
+    "Two thousand remains written out; negations and mine/hillside options intact. Full gameplay LQA NOT TESTED. No Steam/game installation/shutdown in current run."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}

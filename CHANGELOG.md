@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.91.0 Beta — Sunset Riders konuşmaları
+
+Yedi Sunset Riders NPC dosyasında 46 yeni alan /46 bağlam /30 farklı kaynak metin:28saldırı,18sohbet. Katalog20.504; önceki20.458alan aynı.
+
+13alanda14cümle/kısa ifade düzeltildi;35yeniLOCKED,toplam1.187. Hank’in inkârları, olasılık kipi, sınır boyu konumu ve çete deyimi kaynakla eşleştirildi; tek göz varsayımı kaldırıldı. Teknik ayarlar ve FU6.5.8pini korundu. Eksik vanilla tüketiciler/18packed tileset ve canlı oynanış doğrulanmadı; LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/sunset-20261105.json) · [Oyun kontrolü](docs/lqa/LQA_V091_20261105.md)
+
 ## v0.90.0 Beta — Tüccar kiracı konuşmaları
 
 Avian mezarcı, insan oduncu/kaçakçı ve Nightar demircide 63 yeni alan /63 bağlam /57 farklı kaynak metin:53diyalog,10başlık. Katalog20.458; önceki20.395alan aynı.
