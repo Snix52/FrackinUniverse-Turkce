@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.93.0 Beta — Magicka Forest konuşmaları
+
+Dört NPC dosyasında28yeni alan/28bağlam/21farklı kaynak metin:18saldırı,10sohbet. Katalog20.561;önceki20.533alan aynı.
+
+4alanda4ifade düzeltildi;24yeniLOCKED,toplam1.234. Görev dönemi,ciddi Glitch öneki,edilgen korunma ve şimdiki yeterlilik sorusu netleştirildi. Kaynak ırk/giysi ayrımı ve FU6.5.8pini korundu. Eksik vanilla tüketiciler/22packed tileset;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/magicka-20261105.json) · [Oyun kontrolü](docs/lqa/LQA_V093_20261105.md)
+
 ## v0.92.0 Beta — Pavillion kale konuşmaları
 
 Beş NPC dosyasında29yeni alan/29bağlam/20farklı kaynak metin:23saldırı,5sohbet,1teşekkür. Katalog20.533;önceki20.504alan aynı.

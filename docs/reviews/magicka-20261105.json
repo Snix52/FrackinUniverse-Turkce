@@ -1,0 +1,859 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-05",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 16,
+  "run_id": "fu-ten-20261104",
+  "run_round": 4,
+  "base_commit": "75660fd5af2f824cf3256da62023fb6cc16c3eaa",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 28,
+    "context_groups": 28,
+    "unique_english_strings": 21,
+    "assets": {
+      "npcs/magickaforest/magickaalpaca.npctype": 7,
+      "npcs/magickaforest/magickaberserker.npctype": 7,
+      "npcs/magickaforest/magickaguard.npctype": 10,
+      "npcs/magickaforest/magickajarl.npctype": 4
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 28,
+    "dialogue_events": {
+      "attack": 18,
+      "converse": 10
+    },
+    "dialogue_fields": 28,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 1
+  },
+  "changes": {
+    "fields": 4,
+    "sentences_including_repeated_fields": 4,
+    "unique_source_strings_corrected": 4,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 4,
+    "total_corrected_sentences": 4,
+    "count_method": "Independent changed sentences/short expressions counted manually; unchanged clauses excluded. Repeated occurrence fields count separately."
+  },
+  "new_locked_terms": 24,
+  "new_locked_names": [
+    "Glitch",
+    "Alpaca",
+    "Monastery",
+    "Grim.",
+    "Tae battle!",
+    "Ye blood shall soil the land!",
+    "Oy!",
+    "Raidin' time came early today!",
+    "Hopin' tae catch me with mah socks off, were ye?",
+    "Yer havin' a laff, ain't'cha?",
+    "I'll take ye as a warm-up 'fore the monastery!",
+    "Nervous. This is my first tour of duty.",
+    "Apprehensive. We have asked the monks to retreat to safety until the raiders are defeated.",
+    "Optimistic. The monastery walls will confer us a significant defensive advantage.",
+    "Uncertain. The alpaca are very good at hiding in the ruins.",
+    "Adventurous. I hear the ruins go much deeper than one might think. I would like to explore someday.",
+    "Grim. Alpaca raiders have troubled Glitch settlements for generations.",
+    "Hopeful. Perhaps a seasoned adventurer like you will deal with the problem without us needing to intervene.",
+    "Earnest. Shear a handful of those overgrown sheep for me, will you?",
+    "Determined. These monasteries preserve much knowledge and culture in these dark times. They must be protected.",
+    "Tae Glitch have sent a champion, I see.",
+    "I was gettin' tired anyways...",
+    "Tae heck with ye!",
+    "Tae Glitch can only send a wee craven to face me?"
+  ],
+  "reused_locked_names": [
+    "You shouldn't be seeing this."
+  ],
+  "locked_total": 1234,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "d20db32d67fd6aa600c8f2eb1b953e777f98e43f7a7e6dcf18e38b547b21dfd1",
+  "luna_original_packet_sha256": "b531b61e725cf847b3df32fc4f46d549a098b8b5317772e0f15577ee933b01bf",
+  "approved_rows_sha256": "6ae83ca2e6ffc6879efa8804174e7bc1f12630cfc4b3ea89fd60c086f4e74d87",
+  "corrections": [
+    {
+      "unit_index": 15,
+      "en": "Nervous. This is my first tour of duty.",
+      "before": "Gergin. Bu benim ilk görevim.",
+      "after": "Gergin. İlk görev dönemimdeyim.",
+      "occurrences": [
+        {
+          "asset": "npcs/magickaforest/magickaguard.npctype",
+          "pointer": "/scriptConfig/dialog/converse/glitch/default/0",
+          "origin": "npcs/magickaforest/magickaguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Tour of duty tek bir görevden ziyade görevlendirme/hizmet dönemidir. Gergin duygu öneki aynı;ikinci cümlede dönem anlamı açık verildi. Ülke,süre veya tur sayısı eklenmedi."
+    },
+    {
+      "unit_index": 20,
+      "en": "Grim. Alpaca raiders have troubled Glitch settlements for generations.",
+      "before": "Kasvetli. Alpaka yağmacılar nesillerdir Glitch yerleşimlerine musallat oluyor.",
+      "after": "Ciddi. Alpaka yağmacılar nesillerdir Glitch yerleşimlerine musallat oluyor.",
+      "occurrences": [
+        {
+          "asset": "npcs/magickaforest/magickaguard.npctype",
+          "pointer": "/scriptConfig/dialog/converse/glitch/default/5",
+          "origin": "npcs/magickaforest/magickaguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Yalnız Grim duygu öneki değişti. Burada Glitch ciddi/somurtkan bir tavırla kuşaklar süren sorundan söz eder;kasvetli ortam sıfatı yerine iki önceki Glitch repliğindeki Ciddi karşılığı korundu. Ana cümle aynı."
+    },
+    {
+      "unit_index": 23,
+      "en": "Determined. These monasteries preserve much knowledge and culture in these dark times. They must be protected.",
+      "before": "Kararlı. Bu manastırlar, karanlık zamanlarda pek çok bilgi ve kültürü koruyor. Onları korumalıyız.",
+      "after": "Kararlı. Bu manastırlar, karanlık zamanlarda pek çok bilgi ve kültürü koruyor. Korunmaları gerekiyor.",
+      "occurrences": [
+        {
+          "asset": "npcs/magickaforest/magickaguard.npctype",
+          "pointer": "/scriptConfig/dialog/converse/glitch/default/8",
+          "origin": "npcs/magickaforest/magickaguard.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Duygu öneki ve ilk cümle aynı. They must be protected edilgendir;kaynakta açıkça olmayan biz öznesi yerine korunmaları gereği korundu."
+    },
+    {
+      "unit_index": 27,
+      "en": "Tae Glitch can only send a wee craven to face me?",
+      "before": "Glitchler karşıma ancak küçücük bir korkak mı çıkarabildi?",
+      "after": "Glitchler karşıma yalnızca küçücük bir korkak mı gönderebiliyor?",
+      "occurrences": [
+        {
+          "asset": "npcs/magickaforest/magickajarl.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/3",
+          "origin": "npcs/magickaforest/magickajarl.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Can only send şimdiki genel yeterlilik sorusudur. Geçmiş çıkarabildi yerine gönderebiliyor kullanıldı;only/wee küçümsemesi,Glitch adı ve soru aynı."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "b531b61e725cf847b3df32fc4f46d549a098b8b5317772e0f15577ee933b01bf",
+    "filled_units": 28
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 28,
+    "context_units": 28,
+    "qa": {
+      "catalog_units_checked": 35728,
+      "raw_units_checked": 115,
+      "locked_terms": 1234
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol manually reviewed all28EN/TR occurrences and4complete NPCs plus source mission/world/map/object links and unchanged helpers.4fields/4expressions corrected. No live gameplay approval.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/magickaforest/magickaalpaca.npctype",
+        "note": "Complete NPC definition and every manifest occurrence manually reviewed by Sol. Speaker/target branch,Glitch prefix,combat taunt and technical exclusions checked."
+      },
+      {
+        "source": "fu_source/npcs/magickaforest/magickaberserker.npctype",
+        "note": "Complete NPC definition and every manifest occurrence manually reviewed by Sol. Speaker/target branch,Glitch prefix,combat taunt and technical exclusions checked."
+      },
+      {
+        "source": "fu_source/npcs/magickaforest/magickaguard.npctype",
+        "note": "Complete NPC definition and every manifest occurrence manually reviewed by Sol. Speaker/target branch,Glitch prefix,combat taunt and technical exclusions checked."
+      },
+      {
+        "source": "fu_source/npcs/magickaforest/magickajarl.npctype",
+        "note": "Complete NPC definition and every manifest occurrence manually reviewed by Sol. Speaker/target branch,Glitch prefix,combat taunt and technical exclusions checked."
+      },
+      {
+        "source": "fu_source/quests/magickaforest.questtemplate; fu_source/ai/magickaforest.aimission; fu_source/objects/questmaps/magickaforestmap.object; fu_source/objects/questturnins/magickaforestturnin.object; fu_source/quests/scripts/main.lua",
+        "note": "Complete unchanged mission/object/helper definitions read;offered/turn-in and associatedMission links are static. No actual quest completion/reward/shearing test."
+      },
+      {
+        "source": "fu_source/dungeons/missions/magickaforest/magickaforest.dungeon; fu_source/dungeons/missions/magickaforest/magickaforest.json; fu_source/dungeon_worlds.config.patch; fu_source/instance_worlds.config.patch",
+        "note": "Complete map NPC properties inspected in dict/list forms.21placements:17human alpaca-equipped raiders and4Glitch guards.23tilesets/22missing packed/1FU. No radio stagehand found. Static placement not live spawn/path proof."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/scripts/actions/dialog.lua",
+        "note": "Complete unchanged helpers read;dialog speaker species then target selection understood. Missing vanilla base/hostileguard/spectator/combat consumers not claimed read or live-tested."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/magickaforest/magickaalpaca.npctype",
+        "type": "magickaalpaca",
+        "base_type": "hostilefu",
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 7,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "Tae battle!",
+            "luna_tr": "Savaşa!",
+            "approved_tr": "Savaşa!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "Ye blood shall soil the land!",
+            "luna_tr": "Kanın toprağı kirletecek!",
+            "approved_tr": "Kanın toprağı kirletecek!"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "Oy!",
+            "luna_tr": "Hey!",
+            "approved_tr": "Hey!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "Raidin' time came early today!",
+            "luna_tr": "Bugün baskın vakti erken geldi!",
+            "approved_tr": "Bugün baskın vakti erken geldi!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "Hopin' tae catch me with mah socks off, were ye?",
+            "luna_tr": "Beni hazırlıksız yakalamayı mı umuyordun?",
+            "approved_tr": "Beni hazırlıksız yakalamayı mı umuyordun?"
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "Yer havin' a laff, ain't'cha?",
+            "luna_tr": "Benimle dalga geçiyorsun, değil mi?",
+            "approved_tr": "Benimle dalga geçiyorsun, değil mi?"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/magickaforest/magickaalpaca.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/magickaforest/magickaalpaca.npctype",
+            "en": "I'll take ye as a warm-up 'fore the monastery!",
+            "luna_tr": "Manastırdan önce seninle ısınırım!",
+            "approved_tr": "Manastırdan önce seninle ısınırım!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/magickaforest/magickaberserker.npctype",
+        "type": "magickaberserker",
+        "base_type": "hostilefu",
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 7,
+        "entries": [
+          {
+            "unit_index": 7,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "Tae battle!",
+            "luna_tr": "Savaşa!",
+            "approved_tr": "Savaşa!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "Ye blood shall soil the land!",
+            "luna_tr": "Kanın toprağı kirletecek!",
+            "approved_tr": "Kanın toprağı kirletecek!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "Oy!",
+            "luna_tr": "Hey!",
+            "approved_tr": "Hey!"
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "Raidin' time came early today!",
+            "luna_tr": "Bugün baskın vakti erken geldi!",
+            "approved_tr": "Bugün baskın vakti erken geldi!"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "Hopin' tae catch me with mah socks off, were ye?",
+            "luna_tr": "Beni hazırlıksız yakalamayı mı umuyordun?",
+            "approved_tr": "Beni hazırlıksız yakalamayı mı umuyordun?"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "Yer havin' a laff, ain't'cha?",
+            "luna_tr": "Benimle dalga geçiyorsun, değil mi?",
+            "approved_tr": "Benimle dalga geçiyorsun, değil mi?"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/magickaforest/magickaberserker.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/6",
+            "origin": "npcs/magickaforest/magickaberserker.npctype",
+            "en": "I'll take ye as a warm-up 'fore the monastery!",
+            "luna_tr": "Manastırdan önce seninle ısınırım!",
+            "approved_tr": "Manastırdan önce seninle ısınırım!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/magickaforest/magickaguard.npctype",
+        "type": "magickaguard",
+        "base_type": "base",
+        "damage_team_type": "ghostly",
+        "behavior": "spectator",
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 14,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/0",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Nervous. This is my first tour of duty.",
+            "luna_tr": "Gergin. Bu benim ilk görevim.",
+            "approved_tr": "Gergin. İlk görev dönemimdeyim."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/1",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Apprehensive. We have asked the monks to retreat to safety until the raiders are defeated.",
+            "luna_tr": "Endişeli. Yağmacılar yenilene kadar keşişlerden güvenli bir yere çekilmelerini istedik.",
+            "approved_tr": "Endişeli. Yağmacılar yenilene kadar keşişlerden güvenli bir yere çekilmelerini istedik."
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/2",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Optimistic. The monastery walls will confer us a significant defensive advantage.",
+            "luna_tr": "İyimser. Manastırın duvarları savunmada bize önemli bir üstünlük sağlayacak.",
+            "approved_tr": "İyimser. Manastırın duvarları savunmada bize önemli bir üstünlük sağlayacak."
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/3",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Uncertain. The alpaca are very good at hiding in the ruins.",
+            "luna_tr": "Tereddütlü. Alpakalar harabelerde saklanmakta çok iyiler.",
+            "approved_tr": "Tereddütlü. Alpakalar harabelerde saklanmakta çok iyiler."
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/4",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Adventurous. I hear the ruins go much deeper than one might think. I would like to explore someday.",
+            "luna_tr": "Maceracı. Duyduğuma göre harabeler sanıldığından çok daha derine uzanıyormuş. Bir gün oraları keşfetmek isterim.",
+            "approved_tr": "Maceracı. Duyduğuma göre harabeler sanıldığından çok daha derine uzanıyormuş. Bir gün oraları keşfetmek isterim."
+          },
+          {
+            "unit_index": 20,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/5",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Grim. Alpaca raiders have troubled Glitch settlements for generations.",
+            "luna_tr": "Kasvetli. Alpaka yağmacılar nesillerdir Glitch yerleşimlerine musallat oluyor.",
+            "approved_tr": "Ciddi. Alpaka yağmacılar nesillerdir Glitch yerleşimlerine musallat oluyor."
+          },
+          {
+            "unit_index": 21,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/6",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Hopeful. Perhaps a seasoned adventurer like you will deal with the problem without us needing to intervene.",
+            "luna_tr": "Umutlu. Belki senin gibi deneyimli bir maceracı, bizim müdahale etmemize gerek kalmadan sorunu çözer.",
+            "approved_tr": "Umutlu. Belki senin gibi deneyimli bir maceracı, bizim müdahale etmemize gerek kalmadan sorunu çözer."
+          },
+          {
+            "unit_index": 22,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/7",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Earnest. Shear a handful of those overgrown sheep for me, will you?",
+            "luna_tr": "İçten. Şu azman koyunlardan birkaçını benim için kırkıver, olur mu?",
+            "approved_tr": "İçten. Şu azman koyunlardan birkaçını benim için kırkıver, olur mu?"
+          },
+          {
+            "unit_index": 23,
+            "asset": "npcs/magickaforest/magickaguard.npctype",
+            "pointer": "/scriptConfig/dialog/converse/glitch/default/8",
+            "origin": "npcs/magickaforest/magickaguard.npctype",
+            "en": "Determined. These monasteries preserve much knowledge and culture in these dark times. They must be protected.",
+            "luna_tr": "Kararlı. Bu manastırlar, karanlık zamanlarda pek çok bilgi ve kültürü koruyor. Onları korumalıyız.",
+            "approved_tr": "Kararlı. Bu manastırlar, karanlık zamanlarda pek çok bilgi ve kültürü koruyor. Korunmaları gerekiyor."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/magickaforest/magickajarl.npctype",
+        "type": "magickajarl",
+        "base_type": "hostilefu",
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 4,
+        "entries": [
+          {
+            "unit_index": 24,
+            "asset": "npcs/magickaforest/magickajarl.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/magickaforest/magickajarl.npctype",
+            "en": "Tae Glitch have sent a champion, I see.",
+            "luna_tr": "Demek Glitchler bir şampiyon göndermiş.",
+            "approved_tr": "Demek Glitchler bir şampiyon göndermiş."
+          },
+          {
+            "unit_index": 25,
+            "asset": "npcs/magickaforest/magickajarl.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/magickaforest/magickajarl.npctype",
+            "en": "I was gettin' tired anyways...",
+            "luna_tr": "Zaten yorulmaya başlamıştım...",
+            "approved_tr": "Zaten yorulmaya başlamıştım..."
+          },
+          {
+            "unit_index": 26,
+            "asset": "npcs/magickaforest/magickajarl.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/magickaforest/magickajarl.npctype",
+            "en": "Tae heck with ye!",
+            "luna_tr": "Cehenneme kadar yolun var!",
+            "approved_tr": "Cehenneme kadar yolun var!"
+          },
+          {
+            "unit_index": 27,
+            "asset": "npcs/magickaforest/magickajarl.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/magickaforest/magickajarl.npctype",
+            "en": "Tae Glitch can only send a wee craven to face me?",
+            "luna_tr": "Glitchler karşıma ancak küçücük bir korkak mı çıkarabildi?",
+            "approved_tr": "Glitchler karşıma yalnızca küçücük bir korkak mı gönderebiliyor?"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 28,
+    "layered_fields": 0,
+    "related_review_rows": 1,
+    "related_review_fields": [
+      {
+        "asset": "npcs/magickaforest/magickaguard.npctype",
+        "pointer": "/scriptConfig/behavior",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/magickaforest/magickaguard.npctype",
+        "key": "behavior",
+        "en": "spectator",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/magickaforest"
+      }
+    ],
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "behaviors/npc/spectator.behavior",
+      "behaviors/npc/hostileguard.behavior",
+      "dialog/combat.config"
+    ],
+    "source_files": [
+      {
+        "asset": "npcs/magickaforest/magickaalpaca.npctype",
+        "sha256": "c8d72fcac3d5fb543767361dafddc43ffd3e9551f8d37bf9d5888c457b2a714a"
+      },
+      {
+        "asset": "npcs/magickaforest/magickaberserker.npctype",
+        "sha256": "0f7d0ad8a21ab53afac92da43641172b494fd7dd8b997d9ce9be2be9c288dce5"
+      },
+      {
+        "asset": "npcs/magickaforest/magickaguard.npctype",
+        "sha256": "283925b04d55710e7ea2fdc80a55672379ea68b9943f1d6a5c435c558773a54b"
+      },
+      {
+        "asset": "npcs/magickaforest/magickajarl.npctype",
+        "sha256": "129a7874d1b0994a2c18ab8e022515485861d381b626898342795230f0d7ec08"
+      },
+      {
+        "asset": "quests/magickaforest.questtemplate",
+        "sha256": "68f56ee606353241d6da1fe158428b12163e653d03325e4d401fe70a3131ccb1"
+      },
+      {
+        "asset": "ai/magickaforest.aimission",
+        "sha256": "54f1055c15c71538aa7997ad0bfc2baa37e685486ba7dd909c8acd79a291cba7"
+      },
+      {
+        "asset": "objects/questmaps/magickaforestmap.object",
+        "sha256": "01e2b7be629849dff5ed06454201cd15545a3edad5cefd6ded2549aef3a56f88"
+      },
+      {
+        "asset": "objects/questturnins/magickaforestturnin.object",
+        "sha256": "fdde156ce0c128356a8a95cd4d3cd5e1006f011da57a9ef33b280eca959ee7b8"
+      },
+      {
+        "asset": "dungeons/missions/magickaforest/magickaforest.dungeon",
+        "sha256": "82c3c3cc93246e6f4423e481f62cab143abf7ca68ba4e4309f744120115597b0"
+      },
+      {
+        "asset": "dungeons/missions/magickaforest/magickaforest.json",
+        "sha256": "3a97e239885f885abe4d1bac97c2fc40267a0f6717ad53bc26b9b56e73492463"
+      },
+      {
+        "asset": "dungeon_worlds.config.patch",
+        "sha256": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3"
+      },
+      {
+        "asset": "instance_worlds.config.patch",
+        "sha256": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083"
+      },
+      {
+        "asset": "npcs/hostilefu.npctype",
+        "sha256": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f"
+      },
+      {
+        "asset": "scripts/actions/dialog.lua",
+        "sha256": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+      },
+      {
+        "asset": "quests/scripts/main.lua",
+        "sha256": "e94bac3612b8769f4c49991f014e78f30d09b6d4716084e2e43a6b0c5f2ffb22"
+      }
+    ],
+    "mission": {
+      "quest_id": "magickaforest.gearup",
+      "mission_world": "magickaforest",
+      "money_range": [
+        2000,
+        2000
+      ],
+      "npc_placements": {
+        "magickaalpaca": 11,
+        "magickaberserker": 5,
+        "magickaguard": 4,
+        "magickajarl": 1
+      },
+      "npc_placement_records": [
+        {
+          "layer": "objects",
+          "object_id": 1591,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1592,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1593,
+          "npc": "human",
+          "typeName": "magickaberserker"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1594,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1595,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1596,
+          "npc": "human",
+          "typeName": "magickaberserker"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1597,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1598,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1599,
+          "npc": "human",
+          "typeName": "magickaberserker"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1600,
+          "npc": "human",
+          "typeName": "magickaberserker"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1601,
+          "npc": "human",
+          "typeName": "magickaberserker"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1602,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "objects",
+          "object_id": 1603,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1604,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1605,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1606,
+          "npc": "human",
+          "typeName": "magickaalpaca"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1608,
+          "npc": "glitch",
+          "typeName": "magickaguard"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1609,
+          "npc": "glitch",
+          "typeName": "magickaguard"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1610,
+          "npc": "glitch",
+          "typeName": "magickaguard"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1611,
+          "npc": "glitch",
+          "typeName": "magickaguard"
+        },
+        {
+          "layer": "monsters and npcs",
+          "object_id": 1619,
+          "npc": "human",
+          "typeName": "magickajarl"
+        }
+      ],
+      "npc_total": 21,
+      "npc_species": {
+        "human": 17,
+        "glitch": 4
+      },
+      "guard_damage_team": "ghostly",
+      "mixed_tiled_properties": true,
+      "radio_stagehands": 0,
+      "tileset_references": [
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+          "available": false
+        },
+        {
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "available": true
+        }
+      ],
+      "missing_tilesets": 22,
+      "available_fu_tilesets": 1,
+      "spawn_or_live_path_tested": false,
+      "source_empty_guard_tail": true
+    },
+    "terminology_notes": [
+      "Four complete NPCs and all28EN/TR occurrences reviewed. Human NPCs wear alpaca equipment;this is not species alpaca. Guard is ghostly/persistent/spectator,not friendly.",
+      "All9Glitch emotion-prefixed replies reviewed. Grim uses serious Ciddi already used by two prior Glitch replies;Earnest/Uncertain/Nervous remain context-reviewed,singular adjective senses not globally forced.",
+      "Socks-off localized as unprepared taunt;shearing overgrown sheep retained as insult/metaphor. Neither proves a sock equipment/shearing tool/objective mechanic.",
+      "Tae means to in battle/the before Glitch. Battle UI and Champion armor labels are not forced onto these generic speech contexts;proper race Glitch retained.",
+      "Tour of duty is a period,not a new overseas duration/location;can only send remains present capability;protection sentence does not add we.",
+      "Source guard glitch/default/9 empty text and technical spectator review excluded. No new source/format/TM/preserve exception."
+    ],
+    "lexical_references": [
+      {
+        "url": "https://dictionary.cambridge.org/dictionary/english/tour-of-duty",
+        "paraphrase": "The phrase denotes a service period;no actual country or duration inferred for this NPC."
+      },
+      {
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/grim?topic=serious-and-unpleasant",
+        "paraphrase": "Serious sense supports the Glitch mood prefix together with existing catalog usage. This is a contextual choice,not a global adjective rule."
+      }
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Every28EN/TR variant and occurrence manually reviewed against4complete NPCs,mission/AI/world/instance/dungeon/map/quest objects and unchanged helpers. All20533prior fields unchanged.",
+    "18attack and10converse fields;9Glitch emotion-prefixed replies.1technical spectator review and empty guard tail excluded. Technical ids/equipment/stats/behavior/rewards unchanged.",
+    "Map21NPC placements:11alpaca,5berserker,1jarl human;4guard glitch. Guard is ghostly/persistent/spectator,not friendly. Alpaca clothing is not species alpaca proof.",
+    "Mixed Tiled dict/list properties both inspected.23tileset references:22packed missing,1FUavailable. No radiomessage stagehand found;no live spawn/path/AI/quest/shearing/equipment proof.",
+    "4fields/4expressions corrected:service-period meaning,serious Grim prefix aligned with two earlier Glitch replies,passive protection without added we,and present can-only-send capability.",
+    "24newLOCKED:Glitch proper name,Alpaca/Monastery nouns,exact Grim prefix and20fullsources;1234total. Existing fallback reused;1210prior terms unchanged. No preserve-utterance/context/TM/format exception added. Generic glitch error/grim adjective/Battle UI/Champion armor meanings are not globally forced.",
+    "Tae dialect,socks-off and sheep-shear taunts were interpreted in combat context without inventing equipment or quest mechanics. Emotion prefix order and source empty field retained. LQA NOT TESTED. No Steam/game/shutdown in current run."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0
+  }
+}

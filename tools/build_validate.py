@@ -168,6 +168,11 @@ V092_PAVILLION_FIELDS = {(r['asset'], r['pointer']) for r in _V092_MANIFEST['tra
 if len(V092_PAVILLION_FIELDS) != 29 or len(_V092_MANIFEST['translations']) != 29:
     raise ValueError('v0.92 Pavillion manifest field inventory drift')
 
+_V093_MANIFEST = json.loads(Path(__file__).with_name('v093_translations.json').read_text(encoding='utf-8'))
+V093_MAGICKA_FIELDS = {(r['asset'], r['pointer']) for r in _V093_MANIFEST['translations']}
+if len(V093_MAGICKA_FIELDS) != 28 or len(_V093_MANIFEST['translations']) != 28:
+    raise ValueError('v0.93 Magicka Forest manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -810,6 +815,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V093_MAGICKA_FIELDS:
+        return True
     if (a,p) in V092_PAVILLION_FIELDS:
         return True
     if (a,p) in V091_SUNSET_FIELDS:
