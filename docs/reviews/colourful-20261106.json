@@ -1,0 +1,841 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-06",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 19,
+  "run_id": "fu-ten-20261104",
+  "run_round": 7,
+  "base_commit": "c71c5b35bf8892929531eaa706670cfcf0cc0637",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 16,
+    "context_groups": 16,
+    "unique_english_strings": 15,
+    "assets": {
+      "npcs/biome/colourfulvillager.npctype": 16
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 16,
+    "dialogue_events": {
+      "converse": 16
+    },
+    "dialogue_fields": 16,
+    "title_fields": 0,
+    "complete_npc": true,
+    "confirmed_family_remainder": false,
+    "deferred_unrelated_confirmed_fields": 2,
+    "excluded_review_fields": 15
+  },
+  "changes": {
+    "fields": 1,
+    "sentences_including_repeated_fields": 1,
+    "unique_source_strings_corrected": 1,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 1,
+    "total_corrected_sentences": 1,
+    "count_method": "Count actual Sol text edits;one independent sentence corrected in one field. Why remains unchanged."
+  },
+  "new_locked_terms": 15,
+  "new_locked_names": [
+    "You... your face is familiar, somehow.",
+    "Were we once alike, Ape?",
+    "Tell me what you know of the name Greenfinger.",
+    "Why do you seem so familiar? It is like... no, I can't think.",
+    "Have we met before, Ape?",
+    "Seeing you makes me feel an alarming nostalgia. Why?",
+    "Outside I am colourful, inside I am grey.",
+    "I had... a family, once. They were like you.",
+    "What... have I become?",
+    "My fur, it's... colourful.",
+    "I remember... bananas.",
+    "My dreams are haunted by a giant ape. What does this mean?",
+    "I fell asleep at my desk and when I awoke, I'd written the word 'Miniknog' over and over.",
+    "What colourful fur I have! So strange.",
+    "I feel like everything has changed overnight."
+  ],
+  "reused_locked_names": [],
+  "reused_proper_names": [
+    "Greenfinger",
+    "Miniknog"
+  ],
+  "locked_total": 1275,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "f73e9461b0dba060c364094e0447dfeb9c84460d4ba4273f9537f4d6c48bc52a",
+  "luna_original_packet_sha256": "e1b5899ffe5b77862f0bd8b7f8686c486d49cd45af05ef41c6ddc85b316d0c2c",
+  "approved_rows_sha256": "a930b216b6886b97b51e3e4a4dc04c8df6959c57033ca89833af557f84051075",
+  "corrections": [
+    {
+      "unit_index": 5,
+      "en": "Seeing you makes me feel an alarming nostalgia. Why?",
+      "before": "Seni görünce içimde ürkütücü bir özlem uyanıyor. Neden?",
+      "after": "Seni görünce içimde ürkütücü bir geçmiş özlemi uyanıyor. Neden?",
+      "occurrences": [
+        {
+          "asset": "npcs/biome/colourfulvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/apex/5",
+          "origin": "npcs/biome/colourfulvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Nostalgia geçmişe duyulan özlemdir;yalnız özlem geçmiş anlamını eksiltiyordu. Ürkütücü duygu ve belirsiz Neden? korunur;dönüşüm/deney nedeni eklenmez."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "e1b5899ffe5b77862f0bd8b7f8686c486d49cd45af05ef41c6ddc85b316d0c2c",
+    "filled_units": 16
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 16,
+    "context_units": 16,
+    "qa": {
+      "catalog_units_checked": 35852,
+      "raw_units_checked": 115,
+      "locked_terms": 1275
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol reviewed all16EN/TR variants and source occurrences against complete NPC,actual PNG metadata/palette/parts and FU dialog helper. One nostalgia correction;other15fields retained. Complete NPC,not whole biome family. LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/biome/colourfulvillager.npctype",
+        "note": "Complete NPC and all16EN/TR occurrences reviewed. Default/default1,Apex/default7,Apex/Apex8. All technical clothing/colorIndex/questGenerator fields unchanged. Nostalgia explicitly means past longing;one correction."
+      },
+      {
+        "source": "fu_source/dungeons/microdungeons/randomencounter/colourfulencounter/colourfulencounter.dungeon; fu_source/dungeons/microdungeons/randomencounter/colourfulencounter/colourfulencounterfire.dungeon",
+        "note": "Both actual PNG dungeon definitions/metadata/part images inspected. Same RGBA declared for colourful Apex NPC,poison,and Glitch wizardmerchant.1a/2a/3a contain2/1/2matching pixels. This does not prove brush merge/order,successful spawn or a runtime bug."
+      },
+      {
+        "source": "fu_source/npcs/villager.npctype.patch; fu_source/npcs/base.npctype.patch; fu_source/scripts/actions/dialog.lua",
+        "note": "FU overlays operation inventories inspected:no selected dialog override. Complete dialog helper read:speaker species before target species/fallback. Missing vanilla parents/main behavior consumer remain unverified. Referenced fr_raceEffects not claimed fully read or active dialogue consumer."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/biome/colourfulvillager.npctype",
+        "type": "colourfulvillager",
+        "base_type": "villager",
+        "fields": 16,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/0",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "You... your face is familiar, somehow.",
+            "luna_tr": "Sen... yüzün nedense tanıdık geliyor.",
+            "approved_tr": "Sen... yüzün nedense tanıdık geliyor.",
+            "reason": "Familiar somehow yüz tanıdıklığıdır;tanıdığı kişinin kimliği kesinleştirilmez."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/1",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "Were we once alike, Ape?",
+            "luna_tr": "Bir zamanlar birbirimize benziyor muyduk, maymun?",
+            "approved_tr": "Bir zamanlar birbirimize benziyor muyduk, maymun?",
+            "reason": "Once alike bir zamanlar benzer olma sorusudur;Ape genel hitaptır,Big Ape özel adı değildir."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/2",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "Tell me what you know of the name Greenfinger.",
+            "luna_tr": "Greenfinger adı hakkında bildiklerini anlat bana.",
+            "approved_tr": "Greenfinger adı hakkında bildiklerini anlat bana.",
+            "reason": "Greenfinger mevcut özel unvanıyla korunur;kimliği veya dönüşümde rolü uydurulmaz."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/3",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "Why do you seem so familiar? It is like... no, I can't think.",
+            "luna_tr": "Neden bu kadar tanıdık geliyorsun? Sanki... hayır, düşünemiyorum.",
+            "approved_tr": "Neden bu kadar tanıdık geliyorsun? Sanki... hayır, düşünemiyorum.",
+            "reason": "Kesilen düşünce ve hayır,düşünemiyorum belirsizliği korunur."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/4",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "Have we met before, Ape?",
+            "luna_tr": "Daha önce karşılaştık mı, maymun?",
+            "approved_tr": "Daha önce karşılaştık mı, maymun?",
+            "reason": "Önceden karşılaşma sorusu ve genel maymun hitabı;Big Ape eklenmez."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/5",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "Seeing you makes me feel an alarming nostalgia. Why?",
+            "luna_tr": "Seni görünce içimde ürkütücü bir özlem uyanıyor. Neden?",
+            "approved_tr": "Seni görünce içimde ürkütücü bir geçmiş özlemi uyanıyor. Neden?",
+            "reason": "Geçmiş özlemiyle nostalgia anlamı tamamlandı;teşhis veya deney eklenmedi."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/6",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "Outside I am colourful, inside I am grey.",
+            "luna_tr": "Dışım renkli, içim gri.",
+            "approved_tr": "Dışım renkli, içim gri.",
+            "reason": "Dış/iç renk karşıtlığı kısa metafor olarak korunur;oyun mekaniği değildir."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/7",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "I had... a family, once. They were like you.",
+            "luna_tr": "Bir ailem vardı... bir zamanlar. Senin gibiydiler.",
+            "approved_tr": "Bir ailem vardı... bir zamanlar. Senin gibiydiler.",
+            "reason": "Once ve kesik aile anısı korunur;senin gibiydiler muhatap Apex benzerliğidir,akrabalık kimliği değildir."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "What... have I become?",
+            "luna_tr": "Neye... dönüştüm ben?",
+            "approved_tr": "Neye... dönüştüm ben?",
+            "reason": "Belirsiz değişim sorusu;dönüşümün sebebi veya biçimi belirtilmez."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/1",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "My fur, it's... colourful.",
+            "luna_tr": "Kürküm... rengârenk.",
+            "approved_tr": "Kürküm... rengârenk.",
+            "reason": "Kürk ve duraklama korunur;rengârenk görsel çokrenklilik karşılığıdır."
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/2",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "I remember... bananas.",
+            "luna_tr": "Hatırlıyorum... muzları.",
+            "approved_tr": "Hatırlıyorum... muzları.",
+            "reason": "Muz anısı ve duraklama korunur;ne zaman/kimle anısı eklenmez."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/3",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "My dreams are haunted by a giant ape. What does this mean?",
+            "luna_tr": "Rüyalarıma dev bir maymun musallat oluyor. Bu ne anlama geliyor?",
+            "approved_tr": "Rüyalarıma dev bir maymun musallat oluyor. Bu ne anlama geliyor?",
+            "reason": "A giant ape genel dev maymundur;Big Ape olduğunu doğrulamaz. Musallat olan rüya ve soru korunur."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/4",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "I fell asleep at my desk and when I awoke, I'd written the word 'Miniknog' over and over.",
+            "luna_tr": "Masamın başında uyuyakaldım. Uyandığımda “Miniknog” sözcüğünü defalarca yazmış olduğumu gördüm.",
+            "approved_tr": "Masamın başında uyuyakaldım. Uyandığımda “Miniknog” sözcüğünü defalarca yazmış olduğumu gördüm.",
+            "reason": "Masada uyuyakalma,uyanırken önceden tekrar tekrar yazmış olduğunu fark etme korunur. Miniknog adı değişmez;uykuda yazma nedeni eklenmez."
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/5",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "What colourful fur I have! So strange.",
+            "luna_tr": "Kürküm ne kadar renkli! Çok tuhaf.",
+            "approved_tr": "Kürküm ne kadar renkli! Çok tuhaf.",
+            "reason": "Renkli kürke şaşkınlık ve kısa tuhaf nitelemesi korunur."
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/6",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "I feel like everything has changed overnight.",
+            "luna_tr": "Her şey bir gecede değişmiş gibi geliyor.",
+            "approved_tr": "Her şey bir gecede değişmiş gibi geliyor.",
+            "reason": "I feel like kesin olay yerine değişmiş gibi geliyor;overnight bir gecede olarak kalır."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/biome/colourfulvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/biome/colourfulvillager.npctype",
+            "en": "What... have I become?",
+            "luna_tr": "Neye... dönüştüm ben?",
+            "approved_tr": "Neye... dönüştüm ben?",
+            "reason": "Default/default aynı belirsiz dönüşüm sorusudur;Apex dalıyla aynı karşılık kullanılır."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 16,
+    "layered_fields": 0,
+    "related_review_rows": 15,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/villager.npctype",
+      "npcs/base.npctype",
+      "npcs/main.lua"
+    ],
+    "files": {
+      "npcs/biome/colourfulvillager.npctype": "b399ea14a8e5ecfc145918f9899077d396ad80ffc2b2c645053109319af9b21c",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/colourfulencounter.dungeon": "4ba4576af6f910f6f710f87120487417cb4d728b4d520de4d67cb17296e88a7b",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/1.png": "19cf1258137af18075faff4804b1d7ccab2c457dd065ed564383853963cdcfce",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/1a.png": "70721c7a3bff3cfad2c0abf543d9c9c1e30dcabfc22142a76fdef20d8b60d629",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/2.png": "2b9dd1587bbda1e640f80c3a7f78b4f6d61d244a1a1ed6612989cef23e7f7321",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/2a.png": "b28382d1db7d5acb815f1b6800eaf177db310f3659c4f78d031af6d58b0392a1",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/3.png": "278b3e57631399bd4d84d81280fe5899310a5ec0fbf2f77d6586b43240e440dd",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/3a.png": "09360d2d261d2659c517371f8eaff13153ec365f4e6ed959ecbc74a03a0418b5",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/4.png": "917cca033c2148988c439c3b2243e98d5f2d0ec8e1e0ab8806116e2c9d8d95ff",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/4a.png": "cdb594f4100def82188c1a0698d3661e6e388abf53047c363540c26079d3359c",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/5.png": "ffa5c7197db1800ccb8e54716dc454f04945e406d9575cccfd1cef496d0b8612",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/5a.png": "cdb594f4100def82188c1a0698d3661e6e388abf53047c363540c26079d3359c",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/6.png": "dec59b8915ba21dcc6ff9d42ef70cee4130eddc7291a2896c60afb7ee7c75e91",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/6a.png": "54b484fe65e9214cc44f937f8259215913f1e7fdcde23457cf9d5b0cd7bc0e5d",
+      "dungeons/microdungeons/randomencounter/colourfulencounter/colourfulencounterfire.dungeon": "83798e08618c451209471bbcd895b1e30906c1ba20d848677a5bc238236fa5b6",
+      "npcs/villager.npctype.patch": "6d6a73bd7b03aff13a60fa15e478de77a5146fc6cc08b0f0db697d9897583cd4",
+      "npcs/base.npctype.patch": "4ee0589513ac0ad3ac19c305d10d450bea61fbe17220474b333c61a7cb54c969"
+    },
+    "png_dungeons": [
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/colourfulencounter.dungeon",
+        "metadata": {
+          "name": "colourfulencounter",
+          "species": "dummy",
+          "rules": [],
+          "anchor": [
+            "1",
+            "2",
+            "3"
+          ],
+          "maxRadius": 1000000,
+          "maxParts": 100
+        },
+        "parts": [
+          {
+            "name": "1",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "1.png",
+                "1a.png"
+              ]
+            ]
+          },
+          {
+            "name": "2",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "2.png",
+                "2a.png"
+              ]
+            ]
+          },
+          {
+            "name": "3",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "3.png",
+                "3a.png"
+              ]
+            ]
+          },
+          {
+            "name": "4",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "4.png",
+                "4a.png"
+              ]
+            ]
+          },
+          {
+            "name": "5",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "5.png",
+                "5a.png"
+              ]
+            ]
+          },
+          {
+            "name": "6",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "6.png",
+                "6a.png"
+              ]
+            ]
+          }
+        ],
+        "shared_rgba": [
+          150,
+          255,
+          0,
+          255
+        ],
+        "shared_entries": [
+          {
+            "value": [
+              150,
+              255,
+              0,
+              255
+            ],
+            "comment": "colourfulvillager",
+            "brush": [
+              [
+                "npc",
+                {
+                  "kind": "npc",
+                  "species": "apex",
+                  "typeName": "colourfulvillager",
+                  "parameters": {
+                    "persistent": true
+                  }
+                }
+              ]
+            ]
+          },
+          {
+            "value": [
+              150,
+              255,
+              0,
+              255
+            ],
+            "comment": "acid pool foreground",
+            "brush": [
+              [
+                "clear"
+              ],
+              [
+                "liquid",
+                "poison"
+              ]
+            ]
+          },
+          {
+            "value": [
+              150,
+              255,
+              0,
+              255
+            ],
+            "comment": "Sinister Wizard",
+            "brush": [
+              [
+                "npc",
+                {
+                  "kind": "npc",
+                  "species": "glitch",
+                  "typeName": "wizardmerchant",
+                  "parameters": {
+                    "persistent": true
+                  }
+                }
+              ]
+            ]
+          }
+        ],
+        "engine_brush_merge_order_tested": false,
+        "spawn_tested": false
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/colourfulencounterfire.dungeon",
+        "metadata": {
+          "name": "colourfulencounterfire",
+          "species": "dummy",
+          "rules": [],
+          "anchor": [
+            "1",
+            "2",
+            "3"
+          ],
+          "maxRadius": 1000000,
+          "maxParts": 100
+        },
+        "parts": [
+          {
+            "name": "1",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "1.png",
+                "1a.png"
+              ]
+            ]
+          },
+          {
+            "name": "2",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "2.png",
+                "2a.png"
+              ]
+            ]
+          },
+          {
+            "name": "3",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "3.png",
+                "3a.png"
+              ]
+            ]
+          },
+          {
+            "name": "4",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "4.png",
+                "4a.png"
+              ]
+            ]
+          },
+          {
+            "name": "5",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "5.png",
+                "5a.png"
+              ]
+            ]
+          },
+          {
+            "name": "6",
+            "rules": [],
+            "def": [
+              "image",
+              [
+                "6.png",
+                "6a.png"
+              ]
+            ]
+          }
+        ],
+        "shared_rgba": [
+          150,
+          255,
+          0,
+          255
+        ],
+        "shared_entries": [
+          {
+            "value": [
+              150,
+              255,
+              0,
+              255
+            ],
+            "comment": "colourfulvillager",
+            "brush": [
+              [
+                "npc",
+                {
+                  "kind": "npc",
+                  "species": "apex",
+                  "typeName": "colourfulvillager",
+                  "parameters": {
+                    "persistent": true
+                  }
+                }
+              ]
+            ]
+          },
+          {
+            "value": [
+              150,
+              255,
+              0,
+              255
+            ],
+            "comment": "acid pool foreground",
+            "brush": [
+              [
+                "clear"
+              ],
+              [
+                "liquid",
+                "poison"
+              ]
+            ]
+          },
+          {
+            "value": [
+              150,
+              255,
+              0,
+              255
+            ],
+            "comment": "Sinister Wizard",
+            "brush": [
+              [
+                "npc",
+                {
+                  "kind": "npc",
+                  "species": "glitch",
+                  "typeName": "wizardmerchant",
+                  "parameters": {
+                    "persistent": true
+                  }
+                }
+              ]
+            ]
+          }
+        ],
+        "engine_brush_merge_order_tested": false,
+        "spawn_tested": false
+      }
+    ],
+    "png_source_signals": [
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/1.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/1a.png",
+        "shared_colour_pixels": 2
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/2.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/2a.png",
+        "shared_colour_pixels": 1
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/3.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/3a.png",
+        "shared_colour_pixels": 2
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/4.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/4a.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/5.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/5a.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/6.png",
+        "shared_colour_pixels": 0
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/colourfulencounter/6a.png",
+        "shared_colour_pixels": 0
+      }
+    ],
+    "inherited_fu_patch_inventory": [
+      {
+        "asset": "npcs/villager.npctype.patch",
+        "operations": 62,
+        "operation_paths": [
+          "/items/skath",
+          "/items/slimenpchuman",
+          "/items/fupeglaci",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/scriptConfig/questGenerator/graduation/nextNpcType/-",
+          "/items/fuslimeperson",
+          "/items/fuanodyne",
+          "/items/fukirhos",
+          "/items/fenerox",
+          "/items/kirhos",
+          "/items/shadow",
+          "/items/nightar",
+          "/items/fumantizi",
+          "/items/fumantis",
+          "/items/thelusian",
+          "/items/fuizku",
+          "/items/fudarkizku",
+          "/items/radien",
+          "/items/veluu",
+          "/items/elduukhar",
+          "/items/cat"
+        ],
+        "selected_dialogue_override_operations": []
+      },
+      {
+        "asset": "npcs/base.npctype.patch",
+        "operations": 32,
+        "operation_paths": [
+          "/scriptConfig/chatSounds/fenerox",
+          "/scriptConfig/chatSounds/juux",
+          "/scriptConfig/chatSounds/slimenpchuman",
+          "/scriptConfig/chatSounds/nightar",
+          "/statusControllerSettings/primaryScriptSources/-",
+          "/statusControllerSettings/stats/fallDamageMultiplier",
+          "/statusControllerSettings/statusProperties/mouthPosition",
+          "/scriptConfig/chatSounds/radien",
+          "/scriptConfig/chatSounds/cat",
+          "/scriptConfig/behaviorConfig/rangedAimTime",
+          "/scriptConfig/behaviorConfig/rangedWindupTime",
+          "/scriptConfig/behaviorConfig/leapWindup",
+          "/scriptConfig/combat/meleeWeaponWindups/default",
+          "/scriptConfig/combat/meleeWeaponWindups/broadsword",
+          "/scriptConfig/combat/meleeWeaponWindups/dagger",
+          "/scriptConfig/combat/meleeWeaponWindups/axe",
+          "/scriptConfig/combat/meleeWeaponWindups/hammer",
+          "/scriptConfig/combat/meleeWeaponWindups/shortsword",
+          "/scriptConfig/combat/meleeWeaponWindups/spear",
+          "/scriptConfig/combat/meleeWeaponWindups/katana",
+          "/scriptConfig/combat/meleeWeaponWindups/mace",
+          "/scriptConfig/combat/meleeWeaponWindups/rapier",
+          "/scriptConfig/combat/meleeWeaponWindups/flail",
+          "/scriptConfig/combat/meleeWeaponWindups/scythe",
+          "/scriptConfig/combat/meleeWeaponWindups/quarterstaff",
+          "/scriptConfig/combat/meleeWeaponCooldowns/default",
+          "/scriptConfig/combat/meleeWeaponCooldowns/broadsword",
+          "/scriptConfig/combat/meleeWeaponCooldowns/dagger",
+          "/scriptConfig/combat/meleeWeaponCooldowns/axe",
+          "/scriptConfig/combat/meleeWeaponCooldowns/hammer",
+          "/scriptConfig/combat/meleeWeaponCooldowns/shortsword",
+          "/scriptConfig/combat/meleeWeaponCooldowns/spear"
+        ],
+        "selected_dialogue_override_operations": []
+      }
+    ],
+    "unverified_script_leads": [
+      {
+        "asset": "scripts/fr_raceEffects.lua",
+        "referenced_by": "npcs/base.npctype.patch/statusControllerSettings/primaryScriptSources",
+        "exists": true,
+        "read_as_complete_active_consumer": false
+      }
+    ],
+    "complete_npc": true,
+    "confirmed_family_remainder": false,
+    "deferred_unrelated_confirmed_fields": 2,
+    "terminology_notes": [
+      "Familiar somehow yüz tanıdıklığıdır;tanıdığı kişinin kimliği kesinleştirilmez.",
+      "Once alike bir zamanlar benzer olma sorusudur;Ape genel hitaptır,Big Ape özel adı değildir.",
+      "Greenfinger mevcut özel unvanıyla korunur;kimliği veya dönüşümde rolü uydurulmaz.",
+      "Kesilen düşünce ve hayır,düşünemiyorum belirsizliği korunur.",
+      "Önceden karşılaşma sorusu ve genel maymun hitabı;Big Ape eklenmez.",
+      "Geçmiş özlemiyle nostalgia anlamı tamamlandı;teşhis veya deney eklenmedi.",
+      "Dış/iç renk karşıtlığı kısa metafor olarak korunur;oyun mekaniği değildir.",
+      "Once ve kesik aile anısı korunur;senin gibiydiler muhatap Apex benzerliğidir,akrabalık kimliği değildir.",
+      "Belirsiz değişim sorusu;dönüşümün sebebi veya biçimi belirtilmez.",
+      "Kürk ve duraklama korunur;rengârenk görsel çokrenklilik karşılığıdır.",
+      "Muz anısı ve duraklama korunur;ne zaman/kimle anısı eklenmez.",
+      "A giant ape genel dev maymundur;Big Ape olduğunu doğrulamaz. Musallat olan rüya ve soru korunur.",
+      "Masada uyuyakalma,uyanırken önceden tekrar tekrar yazmış olduğunu fark etme korunur. Miniknog adı değişmez;uykuda yazma nedeni eklenmez.",
+      "Renkli kürke şaşkınlık ve kısa tuhaf nitelemesi korunur.",
+      "I feel like kesin olay yerine değişmiş gibi geliyor;overnight bir gecede olarak kalır.",
+      "Default/default aynı belirsiz dönüşüm sorusudur;Apex dalıyla aynı karşılık kullanılır."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All16EN/TR variants and occurrences manually reviewed against complete colourfulvillager NPC,actual PNG dungeon metadata/palette/part images and complete FU dialog helper. One nostalgia correction;other15fields retained.20601prior catalog fields unchanged.",
+    "Apex speaker/default and Apex target branches kept distinct. Generic Ape/giant ape is not Big Ape identity. Greenfinger/Miniknog names unchanged. Memories imply no proven experiment,transformation cause or family identity.",
+    "Nostalgia explicitly translated as geçmiş özlemi;alarming feeling and unanswered Why retained. Other hesitations,fur,banana memories and overnight uncertainty preserved.15newLOCKED fullsource replies,1275total;no prior terms changed.",
+    "Both PNGdungeons declare sameRGBA for colourful Apex NPC,poison,and Glitch wizardmerchant.1a/2a/3a matching pixels2/1/2. Engine brush merge/order,successful spawn and runtime bug NOT TESTED. Static biome references do not prove live access.",
+    "Villager/base FU overlay inventories have62/32operations with no selected dialogue override. Missing vanilla villager/base/main behavior consumer remain unverified. Referenced fr_raceEffects is not claimed fully reviewed as active dialogue consumer.",
+    "Complete colourfulvillager selected by genuine planner biome cap16. Remaining2Agaran merchant UI fields are unrelated and deferred;15relatedreview rows not promoted. Whole biome family is not complete.",
+    "No context/TM/preserve/format exceptions added;technical IDs,clothing,questgenerator and mechanics unchanged. LQA NOT TESTED. No Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

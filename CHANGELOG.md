@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.96.0 Beta — Renkli Apex köylüsünün anıları
+
+Tam bir NPC dosyasında16yeni konuşma alanı/16bağlam/15farklı kaynak metin. Katalog20.617;önceki20.601alan aynı.
+
+Tam Sol dil/kaynak incelemesinde nostalgia geçmiş özlemi olarak belirginleştirildi:1ifade düzeltmesi.15yeniLOCKED,toplam1.275. Belirsiz anılar ve genel maymun/Big Ape ayrımı korundu. İlgisiz2Agaran alanı ve15review alanı dışarıda. FU6.5.8pini aynı;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/colourful-20261106.json) · [Oyun kontrolü](docs/lqa/LQA_V096_20261106.md)
+
 ## v0.95.0 Beta — Sky Boulevard konuşmaları
 
 Dört NPC dosyasında20yeni saldırı alanı/20bağlam/13farklı kaynak metin. Katalog20.601;önceki20.581alan aynı.
