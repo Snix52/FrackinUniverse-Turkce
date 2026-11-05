@@ -1,0 +1,949 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-05",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 18,
+  "run_id": "fu-ten-20261104",
+  "run_round": 6,
+  "base_commit": "c71ffa04eeb7dde261740bd642b16cd4dbe009b5",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 20,
+    "context_groups": 20,
+    "unique_english_strings": 13,
+    "assets": {
+      "npcs/skytemple/skytemplegrower.npctype": 5,
+      "npcs/skytemple/skytemplestargazer.npctype": 5,
+      "npcs/skytemple/skytemplestarshot.npctype": 5,
+      "npcs/skytemple/skytemplesunsword.npctype": 5
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 20,
+    "dialogue_events": {
+      "attack": 20
+    },
+    "dialogue_fields": 20,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 0
+  },
+  "changes": {
+    "fields": 0,
+    "sentences_including_repeated_fields": 0,
+    "unique_source_strings_corrected": 0,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 0,
+    "total_corrected_sentences": 0,
+    "count_method": "Only actual Sol text edits counted;all20variants reviewed and retained,so zero corrections."
+  },
+  "new_locked_terms": 12,
+  "new_locked_names": [
+    "Protect the temple!",
+    "You dare intrude upon the most holy of places?",
+    "My thorns will crush you, interloper!",
+    "The light of Kluex fills me with life!",
+    "Fool! The might of Kluex will crush you for intruding upon our most sacred site!",
+    "You are not worthy of ascending to the aether!",
+    "Begone, fool!",
+    "The light of Kluex shall sear you from existence!",
+    "The divine light of Kluex empowers me to slay you!",
+    "The piercing wrath of the aether will chill you, fiend!",
+    "Feel the burning wrath of the sun!",
+    "Praise the sun, light of Kluex!"
+  ],
+  "reused_locked_names": [
+    "Attack!"
+  ],
+  "reused_proper_names": [
+    "Kluex",
+    "Sky Boulevard"
+  ],
+  "locked_total": 1260,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "3b9220f646ca29ed3acb0e9f2588489b844cae6d53307dd30f3e2f6c9065e027",
+  "luna_original_packet_sha256": "98ec048104e2022bd3dfc53e44d7b5ef87953b1af907f54115e0ef678771c7bd",
+  "approved_rows_sha256": "e11cd9e2579a19ce6605d5f0f54478471f1ce050701c5f986ca5fd3955f510a0",
+  "corrections": [],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "98ec048104e2022bd3dfc53e44d7b5ef87953b1af907f54115e0ef678771c7bd",
+    "filled_units": 20
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 20,
+    "context_units": 20,
+    "qa": {
+      "catalog_units_checked": 35816,
+      "raw_units_checked": 115,
+      "locked_terms": 1260
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol manually reviewed all20EN/TR variants and occurrences against4complete NPCs and actual mission/map/36radio context. All20translations retained;zero corrected expressions. LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/skytemple/skytemplegrower.npctype",
+        "note": "Complete NPC and every selected source/translation reviewed;default versus Avian speaker branches and neighboring technical fields retained."
+      },
+      {
+        "source": "fu_source/npcs/skytemple/skytemplestargazer.npctype",
+        "note": "Complete NPC and every selected source/translation reviewed;default versus Avian speaker branches and neighboring technical fields retained."
+      },
+      {
+        "source": "fu_source/npcs/skytemple/skytemplestarshot.npctype",
+        "note": "Complete NPC and every selected source/translation reviewed;default versus Avian speaker branches and neighboring technical fields retained."
+      },
+      {
+        "source": "fu_source/npcs/skytemple/skytemplesunsword.npctype",
+        "note": "Complete NPC and every selected source/translation reviewed;default versus Avian speaker branches and neighboring technical fields retained."
+      },
+      {
+        "source": "fu_source/quests/skytemple.questtemplate; fu_source/ai/skytemple.aimission; fu_source/objects/questmaps/skytemplemap.object; fu_source/objects/questturnins/skytempleturnin.object; fu_source/quests/scripts/main.lua",
+        "note": "Complete unchanged mission/object definitions and quest helper read;quest/associatedMission/turn-in links and zero-money reward configuration unchanged. No actual completion test."
+      },
+      {
+        "source": "fu_source/dungeons/missions/skytemple/skytemple.dungeon; fu_source/dungeons/missions/skytemple/skytemple.json; fu_source/dungeon_worlds.config.patch; fu_source/instance_worlds.config.patch; fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "Actual39Avian static placements across layers;18radio stagehands/36unique IDs and all linked texts inspected.28tilesets/27missingpacked/1FU. No live spawn/radio/trap/faith-platform/puzzle proof."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/scripts/actions/dialog.lua",
+        "note": "Complete unchanged helper definitions read;hostilefu/base/hostileguard and speaker-before-target selection understood. Missing vanilla hostile/base/hostileguard/combat not read or independently verified."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/skytemple/skytemplegrower.npctype",
+        "type": "skytemplegrower",
+        "base_type": "hostile",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/skytemple/skytemplegrower.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/skytemple/skytemplegrower.npctype",
+            "en": "Protect the temple!",
+            "luna_tr": "Tapınağı koruyun!",
+            "approved_tr": "Tapınağı koruyun!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/skytemple/skytemplegrower.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/skytemple/skytemplegrower.npctype",
+            "en": "You dare intrude upon the most holy of places?",
+            "luna_tr": "En kutsal yere girmeye nasıl cüret edersin?",
+            "approved_tr": "En kutsal yere girmeye nasıl cüret edersin?"
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/skytemple/skytemplegrower.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/skytemple/skytemplegrower.npctype",
+            "en": "My thorns will crush you, interloper!",
+            "luna_tr": "Dikenlerim seni ezecek, işgalci!",
+            "approved_tr": "Dikenlerim seni ezecek, işgalci!"
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/skytemple/skytemplegrower.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/skytemple/skytemplegrower.npctype",
+            "en": "The light of Kluex fills me with life!",
+            "luna_tr": "Kluex’in ışığı içimi yaşamla dolduruyor!",
+            "approved_tr": "Kluex’in ışığı içimi yaşamla dolduruyor!"
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/skytemple/skytemplegrower.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/skytemple/skytemplegrower.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/skytemple/skytemplestargazer.npctype",
+        "type": "skytemplestargazer",
+        "base_type": "hostilefu",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/skytemple/skytemplestargazer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/skytemple/skytemplestargazer.npctype",
+            "en": "Fool! The might of Kluex will crush you for intruding upon our most sacred site!",
+            "luna_tr": "Aptal! En kutsal yerimize girdiğin için Kluex’in kudreti seni ezecek!",
+            "approved_tr": "Aptal! En kutsal yerimize girdiğin için Kluex’in kudreti seni ezecek!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/skytemple/skytemplestargazer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/skytemple/skytemplestargazer.npctype",
+            "en": "You are not worthy of ascending to the aether!",
+            "luna_tr": "Etere yükselmeye layık değilsin!",
+            "approved_tr": "Etere yükselmeye layık değilsin!"
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/skytemple/skytemplestargazer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/skytemple/skytemplestargazer.npctype",
+            "en": "Begone, fool!",
+            "luna_tr": "Defol, aptal!",
+            "approved_tr": "Defol, aptal!"
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/skytemple/skytemplestargazer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/skytemple/skytemplestargazer.npctype",
+            "en": "The light of Kluex shall sear you from existence!",
+            "luna_tr": "Kluex’in ışığı seni yakıp yok edecek!",
+            "approved_tr": "Kluex’in ışığı seni yakıp yok edecek!"
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/skytemple/skytemplestargazer.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/skytemple/skytemplestargazer.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/skytemple/skytemplestarshot.npctype",
+        "type": "skytemplestarshot",
+        "base_type": "hostilefu",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 10,
+            "asset": "npcs/skytemple/skytemplestarshot.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/0",
+            "origin": "npcs/skytemple/skytemplestarshot.npctype",
+            "en": "Protect the temple!",
+            "luna_tr": "Tapınağı koruyun!",
+            "approved_tr": "Tapınağı koruyun!"
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/skytemple/skytemplestarshot.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/1",
+            "origin": "npcs/skytemple/skytemplestarshot.npctype",
+            "en": "You dare intrude upon the most holy of places?",
+            "luna_tr": "En kutsal yere girmeye nasıl cüret edersin?",
+            "approved_tr": "En kutsal yere girmeye nasıl cüret edersin?"
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/skytemple/skytemplestarshot.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/2",
+            "origin": "npcs/skytemple/skytemplestarshot.npctype",
+            "en": "The divine light of Kluex empowers me to slay you!",
+            "luna_tr": "Kluex’in ilahi ışığı seni öldürmem için bana güç veriyor!",
+            "approved_tr": "Kluex’in ilahi ışığı seni öldürmem için bana güç veriyor!"
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/skytemple/skytemplestarshot.npctype",
+            "pointer": "/scriptConfig/dialog/attack/avian/default/3",
+            "origin": "npcs/skytemple/skytemplestarshot.npctype",
+            "en": "The piercing wrath of the aether will chill you, fiend!",
+            "luna_tr": "Eterin delici gazabı seni iliklerine kadar üşütecek, iblis!",
+            "approved_tr": "Eterin delici gazabı seni iliklerine kadar üşütecek, iblis!"
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/skytemple/skytemplestarshot.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/skytemple/skytemplestarshot.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          }
+        ]
+      },
+      {
+        "asset": "npcs/skytemple/skytemplesunsword.npctype",
+        "type": "skytemplesunsword",
+        "base_type": "hostilefu",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 15,
+            "asset": "npcs/skytemple/skytemplesunsword.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/skytemple/skytemplesunsword.npctype",
+            "en": "Protect the temple!",
+            "luna_tr": "Tapınağı koruyun!",
+            "approved_tr": "Tapınağı koruyun!"
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/skytemple/skytemplesunsword.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/skytemple/skytemplesunsword.npctype",
+            "en": "You dare intrude upon the most holy of places?",
+            "luna_tr": "En kutsal yere girmeye nasıl cüret edersin?",
+            "approved_tr": "En kutsal yere girmeye nasıl cüret edersin?"
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/skytemple/skytemplesunsword.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/skytemple/skytemplesunsword.npctype",
+            "en": "The divine light of Kluex empowers me to slay you!",
+            "luna_tr": "Kluex’in ilahi ışığı seni öldürmem için bana güç veriyor!",
+            "approved_tr": "Kluex’in ilahi ışığı seni öldürmem için bana güç veriyor!"
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/skytemple/skytemplesunsword.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/skytemple/skytemplesunsword.npctype",
+            "en": "Feel the burning wrath of the sun!",
+            "luna_tr": "Güneşin yakıcı gazabını hisset!",
+            "approved_tr": "Güneşin yakıcı gazabını hisset!"
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/skytemple/skytemplesunsword.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/skytemple/skytemplesunsword.npctype",
+            "en": "Praise the sun, light of Kluex!",
+            "luna_tr": "Kluex’in ışığı olan güneşe övgüler olsun!",
+            "approved_tr": "Kluex’in ışığı olan güneşe övgüler olsun!"
+          }
+        ]
+      }
+    ],
+    "direct_fields": 20,
+    "layered_fields": 0,
+    "related_review_rows": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "npcs/hostile.npctype",
+      "behaviors/npc/hostileguard.behavior",
+      "dialog/combat.config"
+    ],
+    "source_files": [
+      {
+        "asset": "npcs/skytemple/skytemplegrower.npctype",
+        "sha256": "53fc9e3e498d4276306d2277ad7df090fc1ecf059ae9b06769ac36dd139c8c41"
+      },
+      {
+        "asset": "npcs/skytemple/skytemplestargazer.npctype",
+        "sha256": "c8af71e0f3c811137d30a2848a743e5dc71d20a63ab4c882571f816a675c9e4b"
+      },
+      {
+        "asset": "npcs/skytemple/skytemplestarshot.npctype",
+        "sha256": "d17e211b7a7d8472c024a8205616732968dfb52ec27ebc76fd63fcf37417f33b"
+      },
+      {
+        "asset": "npcs/skytemple/skytemplesunsword.npctype",
+        "sha256": "d2c21f2ca22d9d561f1d6c2a2ce63f406e68f3e4332d61427a4274faee0c1470"
+      },
+      {
+        "asset": "quests/skytemple.questtemplate",
+        "sha256": "c81d2efe68b753e903f63732e424180c35813af8e45e4e4117bb8d2544609771"
+      },
+      {
+        "asset": "ai/skytemple.aimission",
+        "sha256": "4458c2370fa7ae578053ceb738952df97a8b1c045e45ca01cc050a248d824dcc"
+      },
+      {
+        "asset": "dungeons/missions/skytemple/skytemple.dungeon",
+        "sha256": "e4d9924e4cf58a304beb49d62fe5f243070572b3130c5c171b0bd9f0b2820f5b"
+      },
+      {
+        "asset": "dungeons/missions/skytemple/skytemple.json",
+        "sha256": "2f56ee6901a7dc0f80bd4d7c79e828fc9a2d131307585d883f07a5afab966135"
+      },
+      {
+        "asset": "npcs/hostilefu.npctype",
+        "sha256": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f"
+      },
+      {
+        "asset": "objects/questmaps/skytemplemap.object",
+        "sha256": "5d8823e1ce7f5557af802d9cbb2a167b9787ae5b6d259d74c95fd78b601379a2"
+      },
+      {
+        "asset": "objects/questturnins/skytempleturnin.object",
+        "sha256": "664e506da5c553098240c10dd04a96772f7f2f53f9b4170577fe494b46dbc619"
+      },
+      {
+        "asset": "dungeon_worlds.config.patch",
+        "sha256": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3"
+      },
+      {
+        "asset": "instance_worlds.config.patch",
+        "sha256": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083"
+      },
+      {
+        "asset": "radiomessages/missions.radiomessages.patch",
+        "sha256": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351"
+      },
+      {
+        "asset": "scripts/actions/dialog.lua",
+        "sha256": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+      },
+      {
+        "asset": "quests/scripts/main.lua",
+        "sha256": "e94bac3612b8769f4c49991f014e78f30d09b6d4716084e2e43a6b0c5f2ffb22"
+      }
+    ],
+    "mission": {
+      "quest_id": "skytemple.gearup",
+      "mission_world": "skytemple",
+      "money_range": [
+        0,
+        0
+      ],
+      "npc_placement_records": [
+        {
+          "layer": "mods and stagehands",
+          "object_id": 1761,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "mods and stagehands",
+          "object_id": 1762,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1709,
+          "npc": "avian",
+          "typeName": "devoutvillager"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1710,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1711,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1713,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1714,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1715,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1716,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1719,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1720,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1721,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1722,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1723,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1724,
+          "npc": "avian",
+          "typeName": "skytemplestargazer"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1725,
+          "npc": "avian",
+          "typeName": "skytemplestargazer"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1726,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1727,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1728,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1729,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1730,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1731,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1733,
+          "npc": "avian",
+          "typeName": "skytemplestargazer"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1734,
+          "npc": "avian",
+          "typeName": "skytemplestargazer"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1735,
+          "npc": "avian",
+          "typeName": "merchant"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1737,
+          "npc": "avian",
+          "typeName": "chefmerchant"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1738,
+          "npc": "avian",
+          "typeName": "devoutvillager"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1745,
+          "npc": "avian",
+          "typeName": "skytemplestargazer"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1746,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1747,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1748,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1749,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1750,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1751,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1752,
+          "npc": "avian",
+          "typeName": "skytemplegrower"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1753,
+          "npc": "avian",
+          "typeName": "skytemplestarshot"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1754,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1757,
+          "npc": "avian",
+          "typeName": "skytemplesunsword"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 1772,
+          "npc": "avian",
+          "seed": "1",
+          "typeName": "svetlana"
+        }
+      ],
+      "npc_type_counts": {
+        "skytemplestarshot": 11,
+        "devoutvillager": 2,
+        "skytemplesunsword": 10,
+        "skytemplegrower": 8,
+        "skytemplestargazer": 5,
+        "merchant": 1,
+        "chefmerchant": 1,
+        "svetlana": 1
+      },
+      "npc_total": 39,
+      "selected_npc_total": 34,
+      "other_npc_total": 5,
+      "npc_species": {
+        "avian": 39
+      },
+      "mixed_tiled_properties": true,
+      "radio_stagehands": [
+        {
+          "object_id": 1777,
+          "parameters": "{ \"radioMessages\" : [\"skytemple02\", \"skytemple02a\", \"skytemple02b\", \"skytemple02c\", \"skytemple02d\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1778,
+          "parameters": "{ \"radioMessages\" : [\"skytemple03\", \"skytemple03a\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1779,
+          "parameters": "{ \"radioMessage\" : \"skytemple04\" }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1780,
+          "parameters": "{ \"radioMessage\" : \"skytemple04\" }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1782,
+          "parameters": "{ \"radioMessages\" : [\"skytemple01\", \"skytemple01a\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1783,
+          "parameters": "{ \"radioMessages\" : [\"skytemple05\", \"skytemple05a\", \"skytemple05b\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1784,
+          "parameters": "{ \"radioMessages\" : [\"skytemple06\", \"skytemple06a\", \"skytemple06b\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1785,
+          "parameters": "{ \"radioMessages\" : [\"skytemple06\", \"skytemple06a\", \"skytemple06b\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1786,
+          "parameters": "{ \"radioMessages\" : [\"skytemple07\", \"skytemple07a\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1787,
+          "parameters": "{ \"radioMessages\" : [\"skytemple07\", \"skytemple07a\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1788,
+          "parameters": "{ \"radioMessage\" : \"skytemple08\" }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1789,
+          "parameters": "{ \"radioMessages\" : [\"skytemple09\", \"skytemple09a\", \"skytemple09b\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1790,
+          "parameters": "{ \"radioMessage\" : \"skytemple10\" }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1791,
+          "parameters": "{ \"radioMessage\" : \"skytemple11\" }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1792,
+          "parameters": "{ \"radioMessages\" : [\"skytemple12\", \"skytemple12a\", \"skytemple12b\", \"skytemple12c\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1793,
+          "parameters": "{ \"radioMessages\" : [\"skytemple13\", \"skytemple13a\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1794,
+          "parameters": "{ \"radioMessages\" : [\"skytemple14\", \"skytemple14a\", \"skytemple14b\"] }",
+          "stagehand": "radiomessage"
+        },
+        {
+          "object_id": 1795,
+          "parameters": "{ \"radioMessages\" : [\"volcanobase11\", \"volcanobase11a\", \"volcanobase11b\"] }",
+          "stagehand": "radiomessage"
+        }
+      ],
+      "radio_unique_ids": [
+        "skytemple02",
+        "skytemple02a",
+        "skytemple02b",
+        "skytemple02c",
+        "skytemple02d",
+        "skytemple03",
+        "skytemple03a",
+        "skytemple04",
+        "skytemple01",
+        "skytemple01a",
+        "skytemple05",
+        "skytemple05a",
+        "skytemple05b",
+        "skytemple06",
+        "skytemple06a",
+        "skytemple06b",
+        "skytemple07",
+        "skytemple07a",
+        "skytemple08",
+        "skytemple09",
+        "skytemple09a",
+        "skytemple09b",
+        "skytemple10",
+        "skytemple11",
+        "skytemple12",
+        "skytemple12a",
+        "skytemple12b",
+        "skytemple12c",
+        "skytemple13",
+        "skytemple13a",
+        "skytemple14",
+        "skytemple14a",
+        "skytemple14b",
+        "volcanobase11",
+        "volcanobase11a",
+        "volcanobase11b"
+      ],
+      "tileset_references": [
+        {
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "available": true
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/fridgestorage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/avian.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        }
+      ],
+      "missing_tilesets": 27,
+      "available_fu_tilesets": 1,
+      "spawn_or_live_path_tested": false
+    },
+    "terminology_notes": [
+      "All20EN/TR variants and occurrences in4complete NPCs reviewed;all retained unchanged after review.20attack fields,13uniqueEN.",
+      "Grower inherits missing vanilla hostile. Three other guards use FUhostilefu/base/hostileguard;actual unavailable vanilla consumers not claimed read. Source armor/thorns/regeneration/frost projectiles are unchanged.",
+      "All39staticNPC are Avian;34selected/5other. Two starshot objects are in mods and stagehands;not just monsters. Static map properties are not live spawn/path proof.",
+      "18radio stagehands reference36unique IDs,including3volcanobase secret-room messages. All actual linked texts read as context;none added to NPC scope.28tilesets/27missingpacked/1FU.",
+      "Religious/atmospheric the aether is eter,consistent with current AI Eterde and prior dialogue öte âlemin eteri. FU Aether world/material proper name stays Aether. No global equivalence or new context/preserve exception.",
+      "Kluex and Sky Boulevard proper names retained. Divine empowerment,faith,piercing chill,thorns and solar wrath remain speaker rhetoric,not independently tested stats/god mechanics. Praise remains a Turkish religious acclamation;fool/fiend taunts add no profanity or actual species classification."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Every20EN/TR variant and occurrence manually reviewed against4complete NPCs,actualmission/AI/world/map/questobjects and36linked radio texts plus unchanged helpers. All20translations retained unchanged after review;zero corrected expressions.20581prior catalog fields unchanged.",
+    "Grower inherits unavailable vanilla hostile;other3inherit FUhostilefu/base/hostileguard. No missing vanilla consumer or active behavior claimed verified.",
+    "39staticAvianNPC across all layers:34selected/5others.2starshot are in mods and stagehands.18radio stagehands/36unique IDs;28tilesets/27missingpacked/1FU. Source properties are not live path/spawn/radio/temple/puzzle proof.",
+    "The aether in religious/atmospheric speech is eter,consistent with current AI Eterde and prior öte âlemin eteri. FU Aether world/material proper name remains Aether. No global noun mapping or new context exception.",
+    "Existing Kluex/Sky Boulevard proper names and Attack! reply reused.12newLOCKED fullsource replies,1260total;no prior terms modified. Ordinary English preservation remains disallowed.",
+    "Divine light,faith,solar wrath,thorns and piercing chill remain speaker rhetoric;no new game-stat or supernatural-mechanic assertion. Fool/fiend taunts retain tone without added profanity.",
+    "No text edits were necessary after full review;corrections is honestly empty. Source/format/control/TM/preserve rules and neighboring technical fields unchanged. LQA NOT TESTED. No Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

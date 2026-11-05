@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.95.0 Beta — Sky Boulevard konuşmaları
+
+Dört NPC dosyasında20yeni saldırı alanı/20bağlam/13farklı kaynak metin. Katalog20.601;önceki20.581alan aynı.
+
+Tam Sol dil/kaynak incelemesinde20çeviri olduğu gibi korundu;0ifade düzeltmesi,12yeniLOCKED,toplam1.260. Dini eter/Aether özel adı ayrımı ve kaynak varsayımları incelendi. FU6.5.8pini aynı;eksik vanilla tüketiciler/27packedtileset;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/skytemple-20261105.json) · [Oyun kontrolü](docs/lqa/LQA_V095_20261105.md)
+
 ## v0.94.0 Beta — Mount Gigant konuşmaları
 
 Üç NPC dosyasında20yeni alan/20bağlam/15farklı kaynak metin:10saldırı,10sohbet. Katalog20.581;önceki20.561alan aynı.
