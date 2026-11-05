@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.94.0 Beta — Mount Gigant konuşmaları
+
+Üç NPC dosyasında20yeni alan/20bağlam/15farklı kaynak metin:10saldırı,10sohbet. Katalog20.581;önceki20.561alan aynı.
+
+2alanda2ifade düzeltildi;14yeniLOCKED,toplam1.248. Genel harabe duvarı ile The Ruin özel varlığı tek alana bağlı bir kuralla ayrıldı. Söylentiler,kesik replikler ve beş mücevher bilgisi korundu. FU6.5.8pini aynı;eksik vanilla tüketiciler/23packedtileset;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/japaneseruins-20261105.json) · [Oyun kontrolü](docs/lqa/LQA_V094_20261105.md)
+
 ## v0.93.0 Beta — Magicka Forest konuşmaları
 
 Dört NPC dosyasında28yeni alan/28bağlam/21farklı kaynak metin:18saldırı,10sohbet. Katalog20.561;önceki20.533alan aynı.

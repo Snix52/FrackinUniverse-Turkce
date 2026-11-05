@@ -1,0 +1,1210 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-05",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 17,
+  "run_id": "fu-ten-20261104",
+  "run_round": 5,
+  "base_commit": "6f3caae3344f2d25ab5ffdf4fca15846d59b0f12",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 20,
+    "context_groups": 20,
+    "unique_english_strings": 15,
+    "assets": {
+      "npcs/japaneseruins/japaneseruinsarcher.npctype": 5,
+      "npcs/japaneseruins/japaneseruinsoni.npctype": 5,
+      "npcs/japaneseruins/japaneseruinsvillager.npctype": 10
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 20,
+    "dialogue_events": {
+      "attack": 10,
+      "converse": 10
+    },
+    "dialogue_fields": 20,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 1
+  },
+  "changes": {
+    "fields": 2,
+    "sentences_including_repeated_fields": 2,
+    "unique_source_strings_corrected": 2,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 2,
+    "total_corrected_sentences": 2,
+    "count_method": "Independent changed sentences/short expressions counted manually;unchanged clauses excluded."
+  },
+  "new_locked_terms": 14,
+  "new_locked_names": [
+    "Oni",
+    "You should not...be here...",
+    "Cursed...",
+    "This place...will be your death...",
+    "No...",
+    "Rumour has it there is a great treasure in the ruins, but no one dares go search.",
+    "It's said that the ruins are cursed. People who venture in there are transformed into oni.",
+    "There are many restless spirits in the mountain ruins.",
+    "Even the village is supposed to harbour an important secret, but no one has found it yet.",
+    "Many go into the mountain ruins, but few return.",
+    "There are said to be irregularities in the ruin walls that can be dug out with a matter manipulator.",
+    "Vicious oni are said to live in the ruins, men warped by power...but that's just a tale.",
+    "The mountain ruins are littered with many secrets. Keep your eyes peeled for loose tiles.",
+    "Five gems of power are said to lead the way to the ruins' treasure."
+  ],
+  "reused_locked_names": [
+    "Attack!",
+    "You shouldn't be seeing this."
+  ],
+  "locked_total": 1248,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [
+    {
+      "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+      "pointer": "/scriptConfig/dialog/converse/hylotl/default/5",
+      "en": "There are said to be irregularities in the ruin walls that can be dug out with a matter manipulator.",
+      "tr": "Harabe duvarlarında Madde Manipülatörü ile kazılabilecek sıra dışı kısımlar olduğu söyleniyor.",
+      "reason": "Mount Gigant köylüsü gerçek harabe duvarlarının kazılabilir sıra dışı bölümlerinden söz eder;The Ruin adlı özel varlık değildir. Tam asset/pointer/EN/TR ile sınırlı bağlam onayı;Madde Manipülatörü karşılığı korunur,komşu replik/yanlış Türkçe/ordinary English koruma izni değildir."
+    }
+  ],
+  "maintenance": [],
+  "approved_packet_sha256": "70791653123f5aea3a8a2322c45887ca233d596c58854c8c4cc7d26c45199257",
+  "luna_original_packet_sha256": "7861769f6dad27b51d17e643d32f68296db9884beddd07c75c7c9ab79d555101",
+  "approved_rows_sha256": "adf3262363c9ab05834c0c14ffc3ff135c9b8a82f6c1cf8b5a0a753bc102d598",
+  "corrections": [
+    {
+      "unit_index": 17,
+      "en": "Vicious oni are said to live in the ruins, men warped by power...but that's just a tale.",
+      "before": "Harabelerde vahşi Oni’lerin yaşadığı, bunların güç yüzünden değişmiş insanlar olduğu söyleniyor... Ama bu sadece bir hikâye.",
+      "after": "Harabelerde vahşi Oni’lerin yaşadığı, bunların gücün bozduğu insanlar olduğu söyleniyor... Ama bu sadece bir hikâye.",
+      "occurrences": [
+        {
+          "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/hylotl/default/6",
+          "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Warped by power sıradan değişimden ziyade gücün bozucu etkisini taşır. Yalnız bu niteleme düzeltildi;Oni adı,söylenti,üç nokta ve bunun bir hikâye olduğu kaydı aynı kaldı. Fiziksel dönüşüm veya ahlaki neden ayrıca eklenmedi."
+    },
+    {
+      "unit_index": 18,
+      "en": "The mountain ruins are littered with many secrets. Keep your eyes peeled for loose tiles.",
+      "before": "Dağ harabeleri sırlarla dolu. Gevşek karolar için gözünü dört aç.",
+      "after": "Dağ harabeleri sırlarla dolu. Gevşek karoları gözden kaçırma.",
+      "occurrences": [
+        {
+          "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+          "pointer": "/scriptConfig/dialog/converse/hylotl/default/7",
+          "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "İkinci cümlede keep your eyes peeled for Türkçede doğal bir dikkat yönergesiyle verildi. İlk cümle,karoların gevşekliği ve ikinci tekil emir korundu;gizli geçit,tuş,kazma veya bulmaca çözümü eklenmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "FAIL_NARROW_LOCKED_CONTEXT",
+    "error": "ValueError: LOCKED terminology missing stem 'ruin': npcs/japaneseruins/japaneseruinsvillager.npctype/scriptConfig/dialog/converse/hylotl/default/5",
+    "packet_sha256": "7861769f6dad27b51d17e643d32f68296db9884beddd07c75c7c9ab79d555101",
+    "filled_units": 20
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 20,
+    "context_units": 20,
+    "qa": {
+      "catalog_units_checked": 35776,
+      "raw_units_checked": 115,
+      "locked_terms": 1248
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol manually reviewed all20EN/TR occurrences and3complete NPCs plus actual mission/map/objects and unchanged helpers.2fields/2expressions corrected;one exact generic-ruin context binding approved. Live LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/japaneseruins/japaneseruinsarcher.npctype",
+        "note": "Complete unchanged NPC definition and every manifest occurrence reviewed;source branch and technical neighboring fields retained."
+      },
+      {
+        "source": "fu_source/npcs/japaneseruins/japaneseruinsoni.npctype",
+        "note": "Complete unchanged NPC definition and every manifest occurrence reviewed;source branch and technical neighboring fields retained."
+      },
+      {
+        "source": "fu_source/npcs/japaneseruins/japaneseruinsvillager.npctype",
+        "note": "Complete unchanged NPC definition and every manifest occurrence reviewed;source branch and technical neighboring fields retained."
+      },
+      {
+        "source": "fu_source/quests/japaneseruins.questtemplate; fu_source/ai/japaneseruins.aimission; fu_source/objects/questmaps/japaneseruinsmap.object; fu_source/objects/questturnins/japaneseruinsturnin.object; fu_source/quests/scripts/main.lua",
+        "note": "Complete mission/AI/object definitions and unchanged quest helper read. Offered/turn-in/associatedMission links static only;money5000 and identifiers unchanged."
+      },
+      {
+        "source": "fu_source/dungeons/missions/japaneseruins/japaneseruins.dungeon; fu_source/dungeons/missions/japaneseruins/japaneseruins.json; fu_source/dungeon_worlds.config.patch; fu_source/instance_worlds.config.patch; fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "Map properties normalized in dict/list forms.6staticHylotl villagers,1AvianSvetlana;18Hylotl NPCspawners(12oni/6archer);1japaneseruins01radio;24tilesets/23missingpacked/1FU. No live path/spawn/radio/puzzle proof."
+      },
+      {
+        "source": "fu_source/scripts/actions/dialog.lua; fu_source/objects/wired/extranpcspawner/extranpcspawner.lua; fu_source/objects/wired/extranpcspawner/extranpcspawnerworld.lua; fu_source/objects/wired/extranpcspawner/extranpcspawnerworldadvanced.lua",
+        "note": "Complete unchanged dialog helper and candidate FUspawner scripts read. Missing packedtileset prevents proving active gid consumers;missing vanilla base/hostile/spectator not claimed read."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+        "type": "japaneseruinsarcher",
+        "base_type": "hostile",
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+            "origin": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "en": "You should not...be here...",
+            "luna_tr": "Burada...olmamalısın...",
+            "approved_tr": "Burada...olmamalısın..."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/1",
+            "origin": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "en": "Cursed...",
+            "luna_tr": "Lanetli...",
+            "approved_tr": "Lanetli..."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/2",
+            "origin": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "en": "This place...will be your death...",
+            "luna_tr": "Burası...senin sonun olacak...",
+            "approved_tr": "Burası...senin sonun olacak..."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/3",
+            "origin": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+            "en": "No...",
+            "luna_tr": "Hayır...",
+            "approved_tr": "Hayır..."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+        "type": "japaneseruinsoni",
+        "base_type": "hostile",
+        "damage_team_type": null,
+        "behavior": null,
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!"
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+            "origin": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "en": "You should not...be here...",
+            "luna_tr": "Burada...olmamalısın...",
+            "approved_tr": "Burada...olmamalısın..."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/1",
+            "origin": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "en": "Cursed...",
+            "luna_tr": "Lanetli...",
+            "approved_tr": "Lanetli..."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/2",
+            "origin": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "en": "This place...will be your death...",
+            "luna_tr": "Burası...senin sonun olacak...",
+            "approved_tr": "Burası...senin sonun olacak..."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/3",
+            "origin": "npcs/japaneseruins/japaneseruinsoni.npctype",
+            "en": "No...",
+            "luna_tr": "Hayır...",
+            "approved_tr": "Hayır..."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+        "type": "japaneseruinsvillager",
+        "base_type": "base",
+        "damage_team_type": "friendly",
+        "behavior": "spectator",
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 10,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "You shouldn't be seeing this.",
+            "luna_tr": "Bunu görüyor olmamalısın.",
+            "approved_tr": "Bunu görüyor olmamalısın."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/0",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "Rumour has it there is a great treasure in the ruins, but no one dares go search.",
+            "luna_tr": "Söylentiye göre harabelerde büyük bir hazine var ama kimse onu aramaya cesaret edemiyor.",
+            "approved_tr": "Söylentiye göre harabelerde büyük bir hazine var ama kimse onu aramaya cesaret edemiyor."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/1",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "It's said that the ruins are cursed. People who venture in there are transformed into oni.",
+            "luna_tr": "Harabelerin lanetli olduğu söyleniyor. Oraya girenler Oni’ye dönüşüyormuş.",
+            "approved_tr": "Harabelerin lanetli olduğu söyleniyor. Oraya girenler Oni’ye dönüşüyormuş."
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/2",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "There are many restless spirits in the mountain ruins.",
+            "luna_tr": "Dağ harabelerinde huzur bulamayan pek çok ruh var.",
+            "approved_tr": "Dağ harabelerinde huzur bulamayan pek çok ruh var."
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/3",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "Even the village is supposed to harbour an important secret, but no one has found it yet.",
+            "luna_tr": "Köyün bile önemli bir sır sakladığı söyleniyor ama henüz kimse onu bulamadı.",
+            "approved_tr": "Köyün bile önemli bir sır sakladığı söyleniyor ama henüz kimse onu bulamadı."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/4",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "Many go into the mountain ruins, but few return.",
+            "luna_tr": "Dağ harabelerine pek çok kişi giriyor ama pek azı geri dönüyor.",
+            "approved_tr": "Dağ harabelerine pek çok kişi giriyor ama pek azı geri dönüyor."
+          },
+          {
+            "unit_index": 16,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/5",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "There are said to be irregularities in the ruin walls that can be dug out with a matter manipulator.",
+            "luna_tr": "Harabe duvarlarında Madde Manipülatörü ile kazılabilecek sıra dışı kısımlar olduğu söyleniyor.",
+            "approved_tr": "Harabe duvarlarında Madde Manipülatörü ile kazılabilecek sıra dışı kısımlar olduğu söyleniyor."
+          },
+          {
+            "unit_index": 17,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/6",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "Vicious oni are said to live in the ruins, men warped by power...but that's just a tale.",
+            "luna_tr": "Harabelerde vahşi Oni’lerin yaşadığı, bunların güç yüzünden değişmiş insanlar olduğu söyleniyor... Ama bu sadece bir hikâye.",
+            "approved_tr": "Harabelerde vahşi Oni’lerin yaşadığı, bunların gücün bozduğu insanlar olduğu söyleniyor... Ama bu sadece bir hikâye."
+          },
+          {
+            "unit_index": 18,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/7",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "The mountain ruins are littered with many secrets. Keep your eyes peeled for loose tiles.",
+            "luna_tr": "Dağ harabeleri sırlarla dolu. Gevşek karolar için gözünü dört aç.",
+            "approved_tr": "Dağ harabeleri sırlarla dolu. Gevşek karoları gözden kaçırma."
+          },
+          {
+            "unit_index": 19,
+            "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "pointer": "/scriptConfig/dialog/converse/hylotl/default/8",
+            "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+            "en": "Five gems of power are said to lead the way to the ruins' treasure.",
+            "luna_tr": "Beş güç mücevherinin harabelerdeki hazineye giden yolu gösterdiği söyleniyor.",
+            "approved_tr": "Beş güç mücevherinin harabelerdeki hazineye giden yolu gösterdiği söyleniyor."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 20,
+    "layered_fields": 0,
+    "related_review_rows": 1,
+    "related_review_fields": [
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+        "pointer": "/scriptConfig/behavior",
+        "confidence": "review",
+        "category": "NPC, radyo ve diyalog",
+        "origin": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+        "key": "behavior",
+        "en": "spectator",
+        "pool": "review",
+        "priority": "P1",
+        "priority_rule": "dialogue",
+        "priority_reason": "1 Ekim kullanıcı tercihi: diyaloglar önce; konuşmacı, hitap edilen ırk ve canlı erişim korunur.",
+        "gameplay_hints": [],
+        "family": "npcs/japaneseruins"
+      }
+    ],
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "npcs/hostile.npctype",
+      "behaviors/npc/spectator.behavior"
+    ],
+    "source_files": [
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsarcher.npctype",
+        "sha256": "f29065a01c2c7cbed0ae9a9dccbd9b1c7e8a8f1e28d20eb47297f4b870b377f0"
+      },
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsoni.npctype",
+        "sha256": "451554623a4e3f99f0c95bb2e651cdd9eb29bc00c9d9704e40fb6bfde5e5df88"
+      },
+      {
+        "asset": "npcs/japaneseruins/japaneseruinsvillager.npctype",
+        "sha256": "11df2e22efce350c2d544648d9c9a4cf4b58f9dd2a2d76f047a7492c205fbdaf"
+      },
+      {
+        "asset": "quests/japaneseruins.questtemplate",
+        "sha256": "cec15872653eb8ad3944423d7b9e6a202749258f4d4ededc6f7c2b2a1c01def8"
+      },
+      {
+        "asset": "ai/japaneseruins.aimission",
+        "sha256": "4797b96cc627d001d77d3c0570ed47888d47f568461e1c258c5f6de9805e25bb"
+      },
+      {
+        "asset": "dungeons/missions/japaneseruins/japaneseruins.dungeon",
+        "sha256": "91afc43fabbe7ccdd0f779abdf4d43359ac1263274ad65fe6a70f10421ff2d9d"
+      },
+      {
+        "asset": "dungeons/missions/japaneseruins/japaneseruins.json",
+        "sha256": "882ac71e51d219268da34962a78b4bb6a9d2f7003494867038869d353b19258c"
+      },
+      {
+        "asset": "dungeon_worlds.config.patch",
+        "sha256": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3"
+      },
+      {
+        "asset": "instance_worlds.config.patch",
+        "sha256": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083"
+      },
+      {
+        "asset": "objects/questmaps/japaneseruinsmap.object",
+        "sha256": "d09e23530b0b5ff4539093ccfebd0937224ed00e396949a6ebc65efe4418355d"
+      },
+      {
+        "asset": "objects/questturnins/japaneseruinsturnin.object",
+        "sha256": "0720d91a61a0702991831e5a6ee69ff360d08f0f5c180993ac8f4112542355a3"
+      },
+      {
+        "asset": "radiomessages/missions.radiomessages.patch",
+        "sha256": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351"
+      },
+      {
+        "asset": "scripts/actions/dialog.lua",
+        "sha256": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+      },
+      {
+        "asset": "objects/wired/extranpcspawner/extranpcspawnerworldadvanced.lua",
+        "sha256": "604fc8fea44a5527c70a4d1e8ae8a4b1e4b6c39eebd732ae1240ed75ab076360"
+      },
+      {
+        "asset": "objects/wired/extranpcspawner/extranpcspawnerworld.lua",
+        "sha256": "72b4b52be4b46bb0e75afdf47e4ef74ca27978195f5749e3f947308e0c081c40"
+      },
+      {
+        "asset": "objects/wired/extranpcspawner/extranpcspawner.lua",
+        "sha256": "db8cc1e3fa8b2b5c1cdc0b9f76352db0ab53e62208ecbaa61af91a7720df77f9"
+      },
+      {
+        "asset": "quests/scripts/main.lua",
+        "sha256": "e94bac3612b8769f4c49991f014e78f30d09b6d4716084e2e43a6b0c5f2ffb22"
+      }
+    ],
+    "mission": {
+      "quest_id": "japaneseruins.gearup",
+      "mission_world": "japaneseruins",
+      "money_range": [
+        5000,
+        5000
+      ],
+      "npc_placement_records": [
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2627,
+          "npc": "hylotl",
+          "typeName": "japaneseruinsvillager"
+        },
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2628,
+          "npc": "hylotl",
+          "typeName": "japaneseruinsvillager"
+        },
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2629,
+          "npc": "hylotl",
+          "typeName": "japaneseruinsvillager"
+        },
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2630,
+          "npc": "hylotl",
+          "typeName": "japaneseruinsvillager"
+        },
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2631,
+          "npc": "hylotl",
+          "typeName": "japaneseruinsvillager"
+        },
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2632,
+          "npc": "hylotl",
+          "typeName": "japaneseruinsvillager"
+        },
+        {
+          "layer": "npcs and monsters",
+          "object_id": 2672,
+          "npc": "avian",
+          "seed": "1",
+          "typeName": "svetlana"
+        }
+      ],
+      "static_villagers": 6,
+      "other_static_npcs": 1,
+      "static_species": {
+        "hylotl": 6,
+        "avian": 1
+      },
+      "dynamic_npc_spawners": [
+        {
+          "object_id": 494,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 495,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsarcher"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 704,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 705,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 706,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsarcher"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 707,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 708,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1075,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1119,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsarcher"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1120,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1530,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1531,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1824,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsarcher"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1836,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsarcher"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 1965,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 2428,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 2429,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsarcher"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              -1,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "object_id": 2430,
+          "gid": 4222,
+          "parameters": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "japaneseruinsoni"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              2,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        }
+      ],
+      "dynamic_spawner_counts": {
+        "oni": 12,
+        "archer": 6
+      },
+      "dynamic_spawner_species": "hylotl",
+      "villager_damage_team": "friendly",
+      "mixed_tiled_properties": true,
+      "radio_stagehands": [
+        {
+          "object_id": 2678,
+          "parameters": "{ \"radioMessage\" : \"japaneseruins01\" }",
+          "stagehand": "radiomessage"
+        }
+      ],
+      "tileset_references": [
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/fridgestorage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/railpoint.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "available": true
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/hylotl.json",
+          "available": false
+        },
+        {
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+          "available": false
+        }
+      ],
+      "missing_tilesets": 23,
+      "available_fu_tilesets": 1,
+      "spawn_or_live_path_tested": false
+    },
+    "terminology_notes": [
+      "All20EN/TR variants and occurrences and3complete NPCs manually reviewed. Archer/oni inherit vanilla hostile,not FUhostilefu. Villager is base/friendly/persistent/spectator.",
+      "Six Hylotl villagers and one Avian Svetlana are static map properties. Eighteen Hylotl NPC spawner configurations are12oni/6archer,not a count of live successfully spawned NPCs. Packed spawner tileset absent;read FU Lua candidates do not prove which active consumer each gid uses.",
+      "Dialog helper selects speaker species before target species. Default fallback and fragmented Hylotl attack lines remain separate.",
+      "Rumour/said/supposed/just-a-tale uncertainty and five spelled-out gems remain. Source dialogue clues do not prove a transformation,digging,gem puzzle,quest completion or reward mechanic.",
+      "The Ruin is a proper entity;the ruin walls here means generic harabe duvarları. Only exact asset/pointer/EN/TR binding is approved;no ordinary-English preservation. Matter Manipulator stays Madde Manipülatörü.",
+      "One actual japaneseruins01 radio stagehand and matching FU radio text were read as related context;radio is not new scope.24tilesets/23missing packed/1FU. This inventory is specific to Japanese Ruins;Magicka no-radio facts are not reused.",
+      "Two changed expressions:warped-by-power retains negative distortion;loose-tile instruction becomes natural Turkish. No new explicit subject or command added to Cursed.../No... fragments."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All20EN/TR variants and occurrences reviewed against3complete NPCs,mission/AI/world/map/object links and unchanged helpers.20561prior fields unchanged.",
+    "Archer/oni baseType hostile is a missing vanilla parent,not FUhostilefu. Villager base/friendly/persistent/spectator. No inherited active behavior claimed verified.",
+    "Map has6staticHylotl villagers+1AvianSvetlana;18Hylotl NPCspawner configurations(12oni/6archer). Missing packedspawner tileset means read FUspawner scripts are only candidates,not proven active gid consumers.",
+    "One japaneseruins01radio stagehand and matching FUtext read as related context.24tilesets/23missingpacked/1FU. No live spawn/path/radio/curse/digging/gem-puzzle/quest/reward proof.",
+    "Rumours,said,supposed and just-a-tale remain uncertain;five gems spelled out. Cursed.../No... fragments gain no subject or command.",
+    "Two expressions corrected:warped-by-power negative meaning and natural loose-tile attention instruction.14newLOCKED(13fullsources+Oni name);1248total. Existing Attack!/fallback reused.",
+    "One exactasset/pointer/EN/TR context binding disambiguates generic the ruin walls from proper The Ruin;its Madde Manipülatörü translation is fixed. WrongTR/neighbor/properentity/ordinaryEnglish negatives required;no preserve-utterance,TM orformat exception.",
+    "Full gameplay LQA NOT TESTED. Technical identifiers/stats/equipment/quest/world/rewards unchanged. No Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 1
+  }
+}
