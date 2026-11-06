@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.100.0 Beta — Büyük Arena konuşmaları
+
+İki NPC dosyasında 12 yeni konuşma alanı, 12 bağlam ve 11 farklı kaynak metin eklendi. Katalog 20.671 alana ulaştı; önceki 20.659 alan korundu.
+
+Tam Sol kaynak/dil incelemesinde 2 alanda 3 ifade düzeltildi. Floran tıslaması, dalga koşulları ve Büyük Arena adı korundu. On yeni tam replik LOCKED eklendi; toplam 1.320. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/grandarena-20261106.json) · [Oyun kontrolü](docs/lqa/LQA_V100_20261106.md)
+
 ## v0.99.0 Beta — Grimdark tarikatçı replikleri
 
 İki NPC dosyasında 12 yeni saldırı alanı, 12 bağlam ve 6 farklı kaynak metin eklendi. Katalog 20.659 alana ulaştı; önceki 20.647 alan korundu.

@@ -1,0 +1,2062 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-06",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 23,
+  "run_id": "fu-ten-20261106",
+  "run_round": 1,
+  "base_commit": "122c48d6d7c9b4aa9e77b74115a9c836751731b7",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 12,
+    "context_groups": 12,
+    "unique_english_strings": 11,
+    "assets": {
+      "npcs/grandarena/grandarenacompetitor.npctype": 10,
+      "npcs/grandarena/grandarenausher.npctype": 2
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 12,
+    "dialogue_events": {
+      "converse": 12
+    },
+    "dialogue_fields": 12,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 2
+  },
+  "changes": {
+    "fields": 2,
+    "sentences_including_repeated_fields": 3,
+    "unique_source_strings_corrected": 2,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 2,
+    "total_corrected_sentences": 3,
+    "count_method": "Two fields:one final-wave/stab expression plus two independent expressions in the slow-stabbing/overwhelmed line;2fields/3expressions."
+  },
+  "new_locked_terms": 10,
+  "new_locked_names": [
+    "Remember to eatsss up well before going in!",
+    "During the flying monstersss phassse, the ground becomesss treacherousss!",
+    "The number of torchesss tellsss you how many wavesss remain.",
+    "Monstersss are teleported into arena with magicsss!",
+    "Thisss isss a tessst of onessself, we will not ssstab you...today.",
+    "Even if you sssurvive the lassst wave, you mussst ssstab all enemiesss to win.",
+    "Floran ran out of energy lassst time, but remembered to bring ssspear to ssstab!",
+    "Floran wasss ssslow in ssstabbing monstersss lassst time. Got ssswamped.",
+    "Floran likesss rocket launchersss for arena! Hurtsss many enemiesss at once! But also sometimes hurtsss self...",
+    "Floran welcomesss you to grand arena! Sssurvive all wavesss of monstersss to gain victory, but if you die during challenge then you mussst ssstart all over again!"
+  ],
+  "reused_locked_names": [
+    "I have nothing to sssay to you"
+  ],
+  "reused_proper_names": [
+    "Grand Arena"
+  ],
+  "locked_total": 1320,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "b0e65c4fd0b66a819ef262558fa1b614c738f462b7681f39bd650cb4364ccd45",
+  "luna_original_packet_sha256": "d303c8a00d8e337738ee63a6ee221082cf77f669571eba9899545871b31fd850",
+  "approved_rows_sha256": "571c685d9d57f336f206f8fd0877878cef2a862542460243bade9d33801994db",
+  "corrections": [
+    {
+      "unit_index": 6,
+      "en": "Even if you sssurvive the lassst wave, you mussst ssstab all enemiesss to win.",
+      "before": "Ssson dalgadan sssağ çıksan bile kazanmak için bütün düşmanları sssaplamalısın.",
+      "after": "Ssson dalgadan sssağ çıksan bile kazanmak için bütün düşmanları bıçaklamalısssın.",
+      "occurrences": [
+        {
+          "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+          "pointer": "/scriptConfig/dialog/converse/floran/default/5",
+          "origin": "npcs/grandarena/grandarenacompetitor.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Saplamak eyleminin doğrudan nesnesi düşmanlar olarak kurulması doğal değildi;Floran ssstab söylemi bıçaklamakla karşılandı. Son dalgadan sağ çıkmak ile bütün düşmanları yenmek koşulları birlikte korunur. Bu,oyuna yeni silah şartı eklemek değildir."
+    },
+    {
+      "unit_index": 8,
+      "en": "Floran wasss ssslow in ssstabbing monstersss lassst time. Got ssswamped.",
+      "before": "Floran geçen sefer canavarları sssaplamakta yavaştı. Etrafını sssardılar.",
+      "after": "Floran geçen sssefer canavarları bıçaklamakta yavaştı. Onlarla baş edemedi.",
+      "occurrences": [
+        {
+          "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+          "pointer": "/scriptConfig/dialog/converse/floran/default/7",
+          "origin": "npcs/grandarena/grandarenacompetitor.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "İlk cümlede canavarları saplamak yerine doğal bıçaklamak kullanıldı;Floran tıslaması sssefer üzerinde korundu. Got swamped baş edememek olarak çevrildi;fiziksel kuşatılma veya ölüm gibi kaynakta açık olmayan sonuç eklenmedi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "d303c8a00d8e337738ee63a6ee221082cf77f669571eba9899545871b31fd850",
+    "filled_units": 12
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 12,
+    "context_units": 12,
+    "qa": {
+      "catalog_units_checked": 35964,
+      "raw_units_checked": 115,
+      "locked_terms": 1320
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All12EN/TR variants and12occurrences in2complete NPCs fully reviewed.2fields/3independent expressions corrected.2spectator review fields excluded. Missing vanilla/packed consumers and LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/grandarena/grandarenacompetitor.npctype",
+        "note": "Complete NPC and every selected converse variant reviewed. floran/default selects SPEAKER species;default target branch is fallback. Identity,equipment,behavior and stats unchanged."
+      },
+      {
+        "source": "fu_source/npcs/grandarena/grandarenausher.npctype",
+        "note": "Complete NPC and every selected converse variant reviewed. floran/default selects SPEAKER species;default target branch is fallback. Identity,equipment,behavior and stats unchanged."
+      },
+      {
+        "source": "fu_source/dungeons/missions/grandarena/grandarena.json; fu_source/dungeons/missions/grandarena/grandarena.dungeon; fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "5static Floran NPCs:3competitor+1usher selected,1chefmerchant outside scope.21configured monster-spawner parameter objects/stock46 are not21waves or46actual spawns. GID3533/4138 resolve missing packed spawner/wire tilesets;no FUextraNPCspawner substitute.21tilesets/20missing. One radio stagehand links2messages;15minute hint and leftover-monster advice are context only."
+      },
+      {
+        "source": "fu_source/quests/grandarena.questtemplate; fu_source/ai/grandarena.aimission; fu_source/objects/questmaps/grandarenamap.object; fu_source/objects/questturnins/grandarenaturnin.object; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/zb/newSail/data.config; fu_source/tilesets/extradungeons-custom/modstuff.json; fu_source/scripts/actions/dialog.lua; fu_source/npcs/volcanobase/volcanobasehostage.npctype",
+        "note": "Quest/AI/SAIL/world/map/turnin and source TM reference read. FU GID4457/localid6 resolves grandarenaturnin and grandarena.gearup,not a verified live completion. Vanilla base/spectator absent;dialog helper not claimed verified active consumer. Both survive-last-wave and all-enemies conditions retained as character speech. No gameplay repair."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+        "type": "grandarenacompetitor",
+        "base_type": "base",
+        "fields": 10,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "I have nothing to sssay to you",
+            "luna_tr": "Sana sssöyleyecek bir şeyim yok.",
+            "approved_tr": "Sana sssöyleyecek bir şeyim yok.",
+            "reason": "Ortak default reddi mevcut LOCKED ve başka NPCdeki exact-source ile karşılaştırıldı;aynı anlam ve ton için Sana sssöyleyecek bir şeyim yok. korundu."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/0",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Remember to eatsss up well before going in!",
+            "luna_tr": "İçeri girmeden önce iyice bessslenmeyi unutma!",
+            "approved_tr": "İçeri girmeden önce iyice bessslenmeyi unutma!",
+            "reason": "İçeri girmeden önce iyice beslenme tavsiyesi ve Floran tıslaması korunur;sağlık/enerji bonusu gibi yeni mekanik eklenmez."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/1",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "During the flying monstersss phassse, the ground becomesss treacherousss!",
+            "luna_tr": "Uçan canavarlar aşamasssında zemin tehlikeli hâle gelir!",
+            "approved_tr": "Uçan canavarlar aşamasssında zemin tehlikeli hâle gelir!",
+            "reason": "Uçan canavarlar aşaması ve tehlikeli zemin uyarısı korunur;kayganlık veya belirli tuzak türü uydurulmaz."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/2",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "The number of torchesss tellsss you how many wavesss remain.",
+            "luna_tr": "Meşalelerin sssayısı kaç düşman dalgası kaldığını gösssterir.",
+            "approved_tr": "Meşalelerin sssayısı kaç düşman dalgası kaldığını gösssterir.",
+            "reason": "Meşale sayısı kalan düşman dalgalarını gösterir;geçen dalga veya canavar adediyle karıştırılmaz."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/3",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Monstersss are teleported into arena with magicsss!",
+            "luna_tr": "Canavarlar arenaya sssihirle ışınlanıyor!",
+            "approved_tr": "Canavarlar arenaya sssihirle ışınlanıyor!",
+            "reason": "Sihirle arenaya ışınlanma repliği edilgen anlamıyla korunur;gerçek spawner scripti okunmuş sayılmaz."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/4",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Thisss isss a tessst of onessself, we will not ssstab you...today.",
+            "luna_tr": "Bu, kendini sssınaman için bir sssınav; seni bıçaklamayacağız... bugün.",
+            "approved_tr": "Bu, kendini sssınaman için bir sssınav; seni bıçaklamayacağız... bugün.",
+            "reason": "Kendini sınama söylemi ve bugün şakası/üç nokta korunur;gerçek saldırmazlık sistemi vaat edilmez."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/5",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Even if you sssurvive the lassst wave, you mussst ssstab all enemiesss to win.",
+            "luna_tr": "Ssson dalgadan sssağ çıksan bile kazanmak için bütün düşmanları sssaplamalısın.",
+            "approved_tr": "Ssson dalgadan sssağ çıksan bile kazanmak için bütün düşmanları bıçaklamalısssın.",
+            "reason": "Saplamak eyleminin doğrudan nesnesi düşmanlar olarak kurulması doğal değildi;Floran ssstab söylemi bıçaklamakla karşılandı. Son dalgadan sağ çıkmak ile bütün düşmanları yenmek koşulları birlikte korunur. Bu,oyuna yeni silah şartı eklemek değildir."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/6",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Floran ran out of energy lassst time, but remembered to bring ssspear to ssstab!",
+            "luna_tr": "Floran'ın geçen sefer enerjisssi tükendi ama sssaplamak için yanına mızrak almayı unutmadı!",
+            "approved_tr": "Floran'ın geçen sefer enerjisssi tükendi ama sssaplamak için yanına mızrak almayı unutmadı!",
+            "reason": "Geçen sefer enerjinin bitmesi ile mızrak getirmeyi unutmama ayrı nüansları korunur;Floran üçüncü kişi öznesi ve mızrak açık kaynak nesnesidir."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/7",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Floran wasss ssslow in ssstabbing monstersss lassst time. Got ssswamped.",
+            "luna_tr": "Floran geçen sefer canavarları sssaplamakta yavaştı. Etrafını sssardılar.",
+            "approved_tr": "Floran geçen sssefer canavarları bıçaklamakta yavaştı. Onlarla baş edemedi.",
+            "reason": "İlk cümlede canavarları saplamak yerine doğal bıçaklamak kullanıldı;Floran tıslaması sssefer üzerinde korundu. Got swamped baş edememek olarak çevrildi;fiziksel kuşatılma veya ölüm gibi kaynakta açık olmayan sonuç eklenmedi."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/grandarena/grandarenacompetitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/8",
+            "origin": "npcs/grandarena/grandarenacompetitor.npctype",
+            "en": "Floran likesss rocket launchersss for arena! Hurtsss many enemiesss at once! But also sometimes hurtsss self...",
+            "luna_tr": "Floran arenada roketatarları sssseviyor! Aynı anda birçok düşmana hasssar veriyor! Ama bazen Floran'ı da yaralıyor...",
+            "approved_tr": "Floran arenada roketatarları sssseviyor! Aynı anda birçok düşmana hasssar veriyor! Ama bazen Floran'ı da yaralıyor...",
+            "reason": "Roketatar sevgisi,birçok düşmana aynı anda hasar ve bazen kendini yaralama üç ayrı kaynak ifadesidir;genel dost ateşi kuralı eklenmez. Tıslama uzunluğu teknik bir sayaç gibi ele alınmaz."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/grandarena/grandarenausher.npctype",
+        "type": "grandarenausher",
+        "base_type": "base",
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 10,
+            "asset": "npcs/grandarena/grandarenausher.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/grandarena/grandarenausher.npctype",
+            "en": "I have nothing to sssay to you",
+            "luna_tr": "Sana sssöyleyecek bir şeyim yok.",
+            "approved_tr": "Sana sssöyleyecek bir şeyim yok.",
+            "reason": "İkinci NPCdeki aynı default EN için aynı mevcut LOCKED TR korunur."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/grandarena/grandarenausher.npctype",
+            "pointer": "/scriptConfig/dialog/converse/floran/default/0",
+            "origin": "npcs/grandarena/grandarenausher.npctype",
+            "en": "Floran welcomesss you to grand arena! Sssurvive all wavesss of monstersss to gain victory, but if you die during challenge then you mussst ssstart all over again!",
+            "luna_tr": "Floran ssseni Büyük Arena'da karşılıyor! Kazanmak için bütün canavar dalgalarından sssağ çık; ama meydan okuma sssırasında ölürsen en baştan başlamak zorundasın!",
+            "approved_tr": "Floran ssseni Büyük Arena'da karşılıyor! Kazanmak için bütün canavar dalgalarından sssağ çık; ama meydan okuma sssırasında ölürsen en baştan başlamak zorundasın!",
+            "reason": "Mevcut Grand Arena/Büyük Arena adı ve Floran üçüncü kişi öznesi korunur. Bütün dalgalardan sağ çıkma ve mücadelede ölürse baştan başlama uyarıları korunur;bağlam radyosundaki15dakika bu seçili repliğe eklenmez."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 12,
+    "layered_fields": 0,
+    "complete_npc_family": true,
+    "related_review_rows": 2,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "files": {
+      "dungeons/missions/grandarena/grandarena.json": "d8d5b4c5824362414ce3c8f73f7092827d9d4e2923800e11110ad9353b9718fc",
+      "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+      "npcs/grandarena/grandarenacompetitor.npctype": "bc0c3a59056babed83d484ff57522606f7b4bb538f76c64d63cff74f8b911e9f",
+      "npcs/grandarena/grandarenausher.npctype": "408ba0fd218b17e2f08b0c3280beb2e61cd7c0d18925252b352ca9be46587acf",
+      "quests/grandarena.questtemplate": "3eef8e195f30fb9661b839c017c541cd56aa19f6e7d9d5b2d7beb7e333977009",
+      "ai/grandarena.aimission": "9f6860c788b3efdf02463f9f6469b3f348ac30bffece8aa9fb04d2b24bf19fa4",
+      "dungeons/missions/grandarena/grandarena.dungeon": "f63120d3154dfd1e3473ab9dd7702a5070427b6c48c1d1ea6fad84ed652d9387",
+      "objects/questmaps/grandarenamap.object": "4d9804040943c7b51319ae5fd6af2e03522274f4c4955de29ea297deb2f13333",
+      "objects/questturnins/grandarenaturnin.object": "2467fabfa5a12f56ea3f97629713c72b7be6f018600de52eae4794d245e2a315",
+      "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+      "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+      "radiomessages/missions.radiomessages.patch": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351",
+      "zb/newSail/data.config": "878b866b6bfc995807f508611170fa5bf879b8278a2515b5d81934c112ad7c9d",
+      "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0",
+      "npcs/volcanobase/volcanobasehostage.npctype": "f4ecdb4dc116a06d519a3887606bdce09ef32b1a426956aaf14b18b683b2f6ad"
+    },
+    "mission": {
+      "status": "SOURCE_PREREAD_FULL_LANGUAGE_APPROVAL_PENDING",
+      "files": {
+        "dungeons/missions/grandarena/grandarena.json": "d8d5b4c5824362414ce3c8f73f7092827d9d4e2923800e11110ad9353b9718fc",
+        "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+        "npcs/grandarena/grandarenacompetitor.npctype": "bc0c3a59056babed83d484ff57522606f7b4bb538f76c64d63cff74f8b911e9f",
+        "npcs/grandarena/grandarenausher.npctype": "408ba0fd218b17e2f08b0c3280beb2e61cd7c0d18925252b352ca9be46587acf",
+        "quests/grandarena.questtemplate": "3eef8e195f30fb9661b839c017c541cd56aa19f6e7d9d5b2d7beb7e333977009",
+        "ai/grandarena.aimission": "9f6860c788b3efdf02463f9f6469b3f348ac30bffece8aa9fb04d2b24bf19fa4",
+        "dungeons/missions/grandarena/grandarena.dungeon": "f63120d3154dfd1e3473ab9dd7702a5070427b6c48c1d1ea6fad84ed652d9387",
+        "objects/questmaps/grandarenamap.object": "4d9804040943c7b51319ae5fd6af2e03522274f4c4955de29ea297deb2f13333",
+        "objects/questturnins/grandarenaturnin.object": "2467fabfa5a12f56ea3f97629713c72b7be6f018600de52eae4794d245e2a315",
+        "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+        "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+        "radiomessages/missions.radiomessages.patch": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351",
+        "zb/newSail/data.config": "878b866b6bfc995807f508611170fa5bf879b8278a2515b5d81934c112ad7c9d",
+        "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0",
+        "npcs/volcanobase/volcanobasehostage.npctype": "f4ecdb4dc116a06d519a3887606bdce09ef32b1a426956aaf14b18b683b2f6ad"
+      },
+      "static_npcs": [
+        {
+          "layer": "monsters",
+          "object_id": 442,
+          "npc": "floran",
+          "typeName": "chefmerchant"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 460,
+          "npc": "floran",
+          "typeName": "grandarenausher"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 461,
+          "npc": "floran",
+          "typeName": "grandarenacompetitor"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 462,
+          "npc": "floran",
+          "typeName": "grandarenacompetitor"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 463,
+          "npc": "floran",
+          "typeName": "grandarenacompetitor"
+        }
+      ],
+      "selected_static_npcs": [
+        {
+          "layer": "monsters",
+          "object_id": 460,
+          "npc": "floran",
+          "typeName": "grandarenausher"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 461,
+          "npc": "floran",
+          "typeName": "grandarenacompetitor"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 462,
+          "npc": "floran",
+          "typeName": "grandarenacompetitor"
+        },
+        {
+          "layer": "monsters",
+          "object_id": 463,
+          "npc": "floran",
+          "typeName": "grandarenacompetitor"
+        }
+      ],
+      "static_npc_total": 5,
+      "selected_static_total": 4,
+      "selected_type_counts": {
+        "grandarenausher": 1,
+        "grandarenacompetitor": 3
+      },
+      "parameter_objects": [
+        {
+          "layer": "objects",
+          "object_id": 180,
+          "gid": 4138,
+          "parameters": {
+            "detectArea": [
+              [
+                -40,
+                -38
+              ],
+              [
+                40,
+                0
+              ]
+            ],
+            "detectDamageTeam": {
+              "type": "enemy"
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 213,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "shadowtop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -41
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 214,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "shocktop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -41
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 215,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "gleapalpha"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 216,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "hugebiped"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 217,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "hugebiped"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 218,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "snaunt"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 237,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "paratail"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 238,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "paratail"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 239,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "fleshreaper"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 240,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "doomspirit"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 241,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "largeflying"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 242,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "largeflying"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 277,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "sewerfly"
+              ],
+              "monsterLevelOffset": -1,
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 278,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "scandroid"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -29
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 280,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "shadowhound"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 281,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "adultshadowtop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 282,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "penguinrockettrooper"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 283,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "bandraflora4"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 411,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "anglure5"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -52
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 412,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "adultpoptop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -50
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 419,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "bonebird"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 452,
+          "gid": 3673,
+          "parameters": {
+            "treasurePools": [
+              "smallChestTreasure"
+            ]
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 453,
+          "gid": 3648,
+          "parameters": {
+            "treasurePools": [
+              "smallChestTreasure"
+            ]
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 454,
+          "gid": 3658,
+          "parameters": {
+            "treasurePools": [
+              "challengeChestTreasure"
+            ]
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 457,
+          "gid": 2147487306,
+          "parameters": {
+            "treasurePools": [
+              "challengeChestTreasure"
+            ]
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 458,
+          "gid": 3673,
+          "parameters": {
+            "treasurePools": [
+              "chestMoney"
+            ]
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 459,
+          "gid": 3648,
+          "parameters": {
+            "treasurePools": [
+              "chestMoney"
+            ]
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 468,
+          "gid": null,
+          "parameters": {
+            "radioMessages": [
+              "grandarena01",
+              "grandarena01a"
+            ]
+          }
+        }
+      ],
+      "monster_spawner_parameters": [
+        {
+          "layer": "objects",
+          "object_id": 213,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "shadowtop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -41
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 214,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "shocktop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -41
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 215,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "gleapalpha"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 216,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "hugebiped"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 217,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "hugebiped"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 218,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "snaunt"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 237,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "paratail"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 238,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "paratail"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 239,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "fleshreaper"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 240,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "doomspirit"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 1,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 241,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "largeflying"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 242,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "largeflying"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 277,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "sewerfly"
+              ],
+              "monsterLevelOffset": -1,
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -24
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 278,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "scandroid"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -29
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 280,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "shadowhound"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 281,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "adultshadowtop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 282,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "penguinrockettrooper"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 283,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "bandraflora4"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -53
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 411,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "anglure5"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -52
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 412,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "adultpoptop"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -50
+              ],
+              "positionVariance": [
+                3,
+                1
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 419,
+          "gid": 3533,
+          "parameters": {
+            "spawner": {
+              "monsterTypes": [
+                "bonebird"
+              ],
+              "monsterParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                -34
+              ],
+              "positionVariance": [
+                3,
+                3
+              ],
+              "frequency": [
+                2,
+                2
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        }
+      ],
+      "configured_monster_stock": 46,
+      "actual_spawn_count_verified": false,
+      "radio_stagehands": [
+        {
+          "layer": "objects",
+          "object_id": 468,
+          "gid": null,
+          "parameters": {
+            "radioMessages": [
+              "grandarena01",
+              "grandarena01a"
+            ]
+          }
+        }
+      ],
+      "radio_messages": [
+        {
+          "op": "add",
+          "path": "/grandarena01",
+          "value": {
+            "type": "mission",
+            "text": "Remember what the hunter said - if you die, you'll have to start all over again! Give the florans 15 minutes or so to reset the arena, and then you can make another attempt."
+          }
+        },
+        {
+          "op": "add",
+          "path": "/grandarena01a",
+          "value": {
+            "type": "mission",
+            "text": "There're also some monsters left over from the last battle - mop them up before you start, okay?"
+          }
+        }
+      ],
+      "tilesets": [
+        {
+          "firstgid": 1,
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "exists": false
+        },
+        {
+          "firstgid": 198,
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "exists": false
+        },
+        {
+          "firstgid": 226,
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "exists": false
+        },
+        {
+          "firstgid": 250,
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "exists": false
+        },
+        {
+          "firstgid": 287,
+          "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+          "exists": false
+        },
+        {
+          "firstgid": 388,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "exists": false
+        },
+        {
+          "firstgid": 468,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "exists": false
+        },
+        {
+          "firstgid": 1905,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "exists": false
+        },
+        {
+          "firstgid": 2037,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "exists": false
+        },
+        {
+          "firstgid": 2112,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "exists": false
+        },
+        {
+          "firstgid": 2466,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "exists": false
+        },
+        {
+          "firstgid": 2924,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "exists": false
+        },
+        {
+          "firstgid": 3236,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+          "exists": false
+        },
+        {
+          "firstgid": 3533,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "exists": false
+        },
+        {
+          "firstgid": 3549,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "exists": false
+        },
+        {
+          "firstgid": 3783,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "exists": false
+        },
+        {
+          "firstgid": 3825,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+          "exists": false
+        },
+        {
+          "firstgid": 3830,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "exists": false
+        },
+        {
+          "firstgid": 4034,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "exists": false
+        },
+        {
+          "firstgid": 4256,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+          "exists": false
+        },
+        {
+          "firstgid": 4451,
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "exists": true
+        }
+      ],
+      "missing_tilesets": 20,
+      "parameter_gid_resolutions": [
+        {
+          "gid": 3533,
+          "local_id": 0,
+          "tileset": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "available": false
+        },
+        {
+          "gid": 4138,
+          "local_id": 104,
+          "tileset": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        }
+      ],
+      "available_fu_tileset_used": true,
+      "world_definitions": {
+        "instance_worlds.config.patch": [
+          {
+            "op": "add",
+            "path": "/grandarena",
+            "value": {
+              "type": "FloatingDungeon",
+              "dungeonWorld": "grandarena",
+              "spawningEnabled": false,
+              "beamUpRule": "AnywhereWithWarning",
+              "disableDeathDrops": true,
+              "skyParameters": {
+                "spaceLevel": 3000,
+                "ambientLightLevel": [
+                  24,
+                  28,
+                  24
+                ],
+                "satellites": [
+                  {
+                    "pos": [
+                      0.310561,
+                      0.35497
+                    ],
+                    "layers": [
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/liquids/water.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/biomes/forest/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/2.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/biomes/forest/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/20.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/biomes/forest/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/5.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/shadows/9.png"
+                      }
+                    ]
+                  }
+                ],
+                "planet": {
+                  "pos": [
+                    0.00538729,
+                    0.46961
+                  ],
+                  "layers": [
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/gas_giant_base.png?hueshift=-80"
+                    },
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=-70?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                    },
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=-77?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                    },
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/shadows/9.png"
+                    }
+                  ]
+                },
+                "skyType": "atmospheric",
+                "horizonImages": [],
+                "dayLength": 1153.36,
+                "surfaceLevel": 100,
+                "seed": -5288806180628666923
+              }
+            }
+          }
+        ],
+        "dungeon_worlds.config.patch": [
+          {
+            "op": "add",
+            "path": "/grandarena",
+            "value": {
+              "primaryDungeon": "grandarena",
+              "threatLevel": 5,
+              "gravity": 80,
+              "worldSize": [
+                1000,
+                1000
+              ],
+              "dungeonBaseHeight": 500,
+              "ambientLightLevel": [
+                200,
+                200,
+                200
+              ],
+              "musicTrack": "/music/empireupperhand.ogg",
+              "biome": "jungle",
+              "environmentStatusEffects": [
+                "dontstarve"
+              ]
+            }
+          }
+        ]
+      },
+      "missing_vanilla_dependencies": [
+        "npcs/base.npctype",
+        "behaviors/npc/spectator.behavior"
+      ],
+      "packed_spawner_wire_consumers_unread": true,
+      "active_consumer_verified": false,
+      "lqa": "NOT TESTED",
+      "notes": [
+        "Both floran/default branches select speaker species,not target species.",
+        "Floran hiss and source third-person Floran references retained.",
+        "21configured monster-spawner objects/stock46 are not21waves or46actual spawned monsters.",
+        "GID3533 and4138 resolve missing packed spawner/wire tilesets;FUextraNPCspawner is not substituted.",
+        "Radio15minute reset hint is context only,not added to selected12NPC fields or claimed engine proof."
+      ],
+      "fu_turnin_chain": {
+        "gid": 4457,
+        "firstgid": 4451,
+        "local_id": 6,
+        "tileset": "tilesets/extradungeons-custom/modstuff.json",
+        "object": "grandarenaturnin",
+        "definition": "objects/questturnins/grandarenaturnin.object",
+        "quest": "grandarena.gearup",
+        "live_quest_completion_verified": false
+      },
+      "tm_reference_note": "Exact EN I have nothing to sssay to you checked in Volcano Base hostage default/default branch;same generic refusal,not a claim that its scenario is the arena."
+    },
+    "terminology_notes": [
+      "Ortak default reddi mevcut LOCKED ve başka NPCdeki exact-source ile karşılaştırıldı;aynı anlam ve ton için Sana sssöyleyecek bir şeyim yok. korundu.",
+      "İçeri girmeden önce iyice beslenme tavsiyesi ve Floran tıslaması korunur;sağlık/enerji bonusu gibi yeni mekanik eklenmez.",
+      "Uçan canavarlar aşaması ve tehlikeli zemin uyarısı korunur;kayganlık veya belirli tuzak türü uydurulmaz.",
+      "Meşale sayısı kalan düşman dalgalarını gösterir;geçen dalga veya canavar adediyle karıştırılmaz.",
+      "Sihirle arenaya ışınlanma repliği edilgen anlamıyla korunur;gerçek spawner scripti okunmuş sayılmaz.",
+      "Kendini sınama söylemi ve bugün şakası/üç nokta korunur;gerçek saldırmazlık sistemi vaat edilmez.",
+      "Saplamak eyleminin doğrudan nesnesi düşmanlar olarak kurulması doğal değildi;Floran ssstab söylemi bıçaklamakla karşılandı. Son dalgadan sağ çıkmak ile bütün düşmanları yenmek koşulları birlikte korunur. Bu,oyuna yeni silah şartı eklemek değildir.",
+      "Geçen sefer enerjinin bitmesi ile mızrak getirmeyi unutmama ayrı nüansları korunur;Floran üçüncü kişi öznesi ve mızrak açık kaynak nesnesidir.",
+      "İlk cümlede canavarları saplamak yerine doğal bıçaklamak kullanıldı;Floran tıslaması sssefer üzerinde korundu. Got swamped baş edememek olarak çevrildi;fiziksel kuşatılma veya ölüm gibi kaynakta açık olmayan sonuç eklenmedi.",
+      "Roketatar sevgisi,birçok düşmana aynı anda hasar ve bazen kendini yaralama üç ayrı kaynak ifadesidir;genel dost ateşi kuralı eklenmez. Tıslama uzunluğu teknik bir sayaç gibi ele alınmaz.",
+      "İkinci NPCdeki aynı default EN için aynı mevcut LOCKED TR korunur.",
+      "Mevcut Grand Arena/Büyük Arena adı ve Floran üçüncü kişi öznesi korunur. Bütün dalgalardan sağ çıkma ve mücadelede ölürse baştan başlama uyarıları korunur;bağlam radyosundaki15dakika bu seçili repliğe eklenmez."
+    ],
+    "floran_speaker_not_target": true,
+    "source_mechanics_not_live_tested": true
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All12EN/TR variants and12occurrences manually reviewed against both complete NPCs,Grand Arena map/dungeon,quest/AI/SAIL/world definitions,map/turnin and both linked radio texts.2fields/3independent expressions corrected;all20659prior catalog fields unchanged.",
+    "Enemy-object saplamak constructions corrected to natural bıçaklamak while retaining Floran combat speech. Got swamped rendered as inability to cope,without inventing physical encirclement or death. Survive-last-wave AND all-enemies conditions retained;no melee-only gameplay rule asserted.",
+    "10new fullreply LOCKED,total1320. Existing exact I have nothing to sssay to you/Sana sssöyleyecek bir şeyim yok. reused after reading its other source;Grand Arena/Büyük Arena retained. No old terms modified or generic arena/torch/energy rule added.",
+    "floran/default selects speaker species,not target species. Map5staticFloranNPCs:3competitor+1usher selected,1chefmerchant outside scope. Both selected NPCs inherit missing vanilla base and spectator behavior;FU dialog helper is not asserted as verified active consumer.",
+    "21monster-spawner parameter objects with total configured stock46 do not mean21waves or46actual spawns. GID3533/4138 resolve missing packed spawner/wire tilesets;FUextraNPCspawner is not substituted.21tilesets/20missing. One stagehand links2radio messages;15minute reset hint and leftover-monster cleanup advice were read as context,not added to12selected fields.",
+    "Actual FU GID4457/localid6 resolves grandarenaturnin/object/grandarena.gearup. Static source links do not prove live completion,trap,torch,door,death or reset behavior. Identity,stats,equipment,rewards,wire and gameplay unchanged.2spectator review fields not promoted.",
+    "No context/TM/preserve/format exception added. FU6.5.8pin unchanged;LQA NOT TESTED. New human run starts22/stops32;52source-bound dialogue fields must finish publication before object/item drafts. No new scheduler,Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}
