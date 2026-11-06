@@ -1,0 +1,825 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-07",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 26,
+  "run_id": "fu-ten-20261106",
+  "run_round": 4,
+  "base_commit": "ada710d736168621d730c66559c78cde0e002c79",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 8,
+    "context_groups": 8,
+    "unique_english_strings": 8,
+    "assets": {
+      "npcs/mission/protectoratehallstaff.npctype": 2,
+      "npcs/mission/protectoratehallstudent5.npctype": 3,
+      "npcs/mission/protectoratelobbylounger.npctype": 1,
+      "npcs/mission/protectoratelobbystudent2.npctype": 2
+    },
+    "fu_layered_fields": 8,
+    "direct_source_fields": 0,
+    "dialogue_events": {
+      "converse": 7,
+      "speak": 1
+    },
+    "dialogue_fields": 8,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 0,
+    "parent_npctypes_available": false
+  },
+  "changes": {
+    "fields": 1,
+    "sentences_including_repeated_fields": 1,
+    "unique_source_strings_corrected": 1,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 1,
+    "total_corrected_sentences": 1,
+    "count_method": "One military-response condition expression;the weak-appearance predicate and all other variants unchanged."
+  },
+  "new_locked_terms": 10,
+  "new_locked_names": [
+    "Huxven II",
+    "Omicron Theta III",
+    "The emergency meeting is going to start any minute now.",
+    "You're really cutting it close, <entityname>. Please hurry inside before the emergency meeting starts.",
+    "I hear that Huxven II and Omicron Theta III have both gone dark.",
+    "My homeworld was wiped out by the unknown enemy. I want vengeance.",
+    "Without a military strike in response to the attacks, the Protectorate will look weak.",
+    "The beautiful morning is tainted by the recent troubles...I had friends on Omicron Theta III.",
+    "Soon I'll be a real Protector, with my very own Matter Manipulator like you! It must be exciting!",
+    "If I get assigned to some distant world, I'll always have friends here on Earth!"
+  ],
+  "reused_locked_names": [],
+  "reused_proper_names": [
+    "Protectorate",
+    "a Protector",
+    "Matter Manipulator"
+  ],
+  "locked_total": 1345,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "507c6e21549259d3df03bb841878b489c686197c158d78cd6f9cc05554850e11",
+  "luna_original_packet_sha256": "bd146a73ea9a4a363627a0c909ce27c808a0d5751150732f0578cfeab9162d9a",
+  "approved_rows_sha256": "d6dd6a7de35728fdf3a6dc942a6ecc018098ebf5fc83193a322dd979ad74a123",
+  "corrections": [
+    {
+      "unit_index": 4,
+      "en": "Without a military strike in response to the attacks, the Protectorate will look weak.",
+      "before": "Saldırılara karşı askerî bir saldırı düzenlenmezse Protectorate zayıf görünecek.",
+      "after": "Saldırılara askerî bir harekâtla karşılık verilmezse Protectorate zayıf görünecek.",
+      "occurrences": [
+        {
+          "asset": "npcs/mission/protectoratehallstudent5.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/2",
+          "origin": "npcs/mission/protectoratehallstudent5.npctype.patch#2"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Saldırılara karşı askerî bir saldırı yapısı yerine Türkçede doğal askerî harekâtla karşılık vermek kullanıldı. Saldırılara cevap verilmemesi koşulu ve zayıf görünme sonucu korunur;gerçek güç kaybı veya yeni savaş sonucu eklenmedi. Tek koşul ifadesi düzeltildi,ikinci algı yüklemi aynı."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "bd146a73ea9a4a363627a0c909ce27c808a0d5751150732f0578cfeab9162d9a",
+    "filled_units": 8
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 8,
+    "context_units": 8,
+    "qa": {
+      "catalog_units_checked": 36022,
+      "raw_units_checked": 115,
+      "locked_terms": 1345
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All8overlay EN/TR variants and8occurrences in4completeFU patches reviewed.1field/1expression corrected.0relatedreview. MissingvanillaNPC/behavior/world/15radio sources and referencedquestscript remain unverified;LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/mission/protectoratehallstaff.npctype.patch",
+        "note": "All FU patch operations and selected exact source fields read;missing vanilla NPC parent,identity,equipment and behavior not claimed read."
+      },
+      {
+        "source": "fu_source/npcs/mission/protectoratehallstudent5.npctype.patch",
+        "note": "All FU patch operations and selected exact source fields read;missing vanilla NPC parent,identity,equipment and behavior not claimed read."
+      },
+      {
+        "source": "fu_source/npcs/mission/protectoratelobbylounger.npctype.patch",
+        "note": "All FU patch operations and selected exact source fields read;missing vanilla NPC parent,identity,equipment and behavior not claimed read."
+      },
+      {
+        "source": "fu_source/npcs/mission/protectoratelobbystudent2.npctype.patch",
+        "note": "All FU patch operations and selected exact source fields read;missing vanilla NPC parent,identity,equipment and behavior not claimed read."
+      },
+      {
+        "source": "fu_source/dungeons/missions/protectorate/protectorate.json",
+        "note": "12staticNPC refs,5selected:hallstaffApex1,lobbyloungerApex1,hallstudent5Hylotl1,lobbystudent2Human2.17tilesetsallpacked/missing,no parameters-basedradio stagehand. Static refs are not actualspawns or proof of the parent fallback consumer."
+      },
+      {
+        "source": "fu_source/quests/story/protectorate.questtemplate.patch; fu_source/quests/story/protectoratefu.questtemplate; fu_source/quests/story/protectorateapex.questtemplate; fu_source/quests/story/protectoratehylotl.questtemplate; fu_source/quests/story/protectorateelunite.questtemplate; fu_source/quests/scripts/tutorial/protectorate.lua; fu_source/radiomessages/intro.radiomessages.patch; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch",
+        "note": "Questpatch/4alternative templates and availableplayerquestscript read as context. Referencedprotectoratefu.lua missing;availableprotectorate.lua is not substituted for it or forNPCdialoguebehavior. Alternativequest grant not verified.16script radioIDs:1FUintrotextwrite read,15vanilla sources missing. NoProtectorate worldentries intheseFUpatches;vanillaworld definitions not claimed read. Meeting,quest,MM,warp and live dialogue untested."
+      }
+    ]
+  },
+  "source_context": {
+    "patches": [
+      {
+        "asset": "npcs/mission/protectoratehallstaff.npctype",
+        "source_patch": "npcs/mission/protectoratehallstaff.npctype.patch",
+        "parent_available": false,
+        "fields": 2,
+        "operations": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/speak/default/default/0",
+            "value": "You're really cutting it close, <entityname>. Please hurry inside before the emergency meeting starts."
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/0",
+            "value": "The emergency meeting is going to start any minute now."
+          }
+        ],
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/mission/protectoratehallstaff.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/mission/protectoratehallstaff.npctype.patch#1",
+            "en": "The emergency meeting is going to start any minute now.",
+            "luna_tr": "Acil toplantı her an başlayacak.",
+            "approved_tr": "Acil toplantı her an başlayacak.",
+            "reason": "Toplantının her an başlayacağı kaynak beklentisi korunur;belirli dakika sayacı veya canlı zaman ölçümü eklenmez.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/0",
+              "value": "The emergency meeting is going to start any minute now."
+            }
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/mission/protectoratehallstaff.npctype",
+            "pointer": "/scriptConfig/dialog/speak/default/default/0",
+            "origin": "npcs/mission/protectoratehallstaff.npctype.patch#0",
+            "en": "You're really cutting it close, <entityname>. Please hurry inside before the emergency meeting starts.",
+            "luna_tr": "Zamanın gerçekten çok dar, <entityname>. Acil toplantı başlamadan lütfen acele edip içeri gir.",
+            "approved_tr": "Zamanın gerçekten çok dar, <entityname>. Acil toplantı başlamadan lütfen acele edip içeri gir.",
+            "reason": "Sürenin çok dar olması ve toplantı başlamadan aceleyle içeri girme çağrısı korunur. Bilerek erteleme veya zaten geç kalma sonucu eklenmez;<entityname> birebir aynı teknik yer tutucudur.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/speak/default/default/0",
+              "value": "You're really cutting it close, <entityname>. Please hurry inside before the emergency meeting starts."
+            }
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mission/protectoratehallstudent5.npctype",
+        "source_patch": "npcs/mission/protectoratehallstudent5.npctype.patch",
+        "parent_available": false,
+        "fields": 3,
+        "operations": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/0",
+            "value": "I hear that Huxven II and Omicron Theta III have both gone dark."
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/1",
+            "value": "My homeworld was wiped out by the unknown enemy. I want vengeance."
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/2",
+            "value": "Without a military strike in response to the attacks, the Protectorate will look weak."
+          }
+        ],
+        "entries": [
+          {
+            "unit_index": 2,
+            "asset": "npcs/mission/protectoratehallstudent5.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/mission/protectoratehallstudent5.npctype.patch#0",
+            "en": "I hear that Huxven II and Omicron Theta III have both gone dark.",
+            "luna_tr": "Duyduğuma göre hem Huxven II hem de Omicron Theta III ile iletişim kesilmiş.",
+            "approved_tr": "Duyduğuma göre hem Huxven II hem de Omicron Theta III ile iletişim kesilmiş.",
+            "reason": "I hear rivayet nüansı ve iki dünyayla iletişimin kesilmiş olması korunur. Huxven II ve Omicron Theta III adları/Roma rakamları aynıdır;gone dark gezegenlerin yok olduğu kesinliği değildir.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/0",
+              "value": "I hear that Huxven II and Omicron Theta III have both gone dark."
+            }
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/mission/protectoratehallstudent5.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/1",
+            "origin": "npcs/mission/protectoratehallstudent5.npctype.patch#1",
+            "en": "My homeworld was wiped out by the unknown enemy. I want vengeance.",
+            "luna_tr": "Ana gezegenim bilinmeyen düşman tarafından yok edildi. İntikam istiyorum.",
+            "approved_tr": "Ana gezegenim bilinmeyen düşman tarafından yok edildi. İntikam istiyorum.",
+            "reason": "Ana gezegenin bilinmeyen düşman tarafından yok edilmesi ve intikam isteği iki cümle olarak korunur. Bilinmeyen düşmana TheRuin veya başka özel kimlik verilmez.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/1",
+              "value": "My homeworld was wiped out by the unknown enemy. I want vengeance."
+            }
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/mission/protectoratehallstudent5.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/mission/protectoratehallstudent5.npctype.patch#2",
+            "en": "Without a military strike in response to the attacks, the Protectorate will look weak.",
+            "luna_tr": "Saldırılara karşı askerî bir saldırı düzenlenmezse Protectorate zayıf görünecek.",
+            "approved_tr": "Saldırılara askerî bir harekâtla karşılık verilmezse Protectorate zayıf görünecek.",
+            "reason": "Saldırılara karşı askerî bir saldırı yapısı yerine Türkçede doğal askerî harekâtla karşılık vermek kullanıldı. Saldırılara cevap verilmemesi koşulu ve zayıf görünme sonucu korunur;gerçek güç kaybı veya yeni savaş sonucu eklenmedi. Tek koşul ifadesi düzeltildi,ikinci algı yüklemi aynı.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/2",
+              "value": "Without a military strike in response to the attacks, the Protectorate will look weak."
+            }
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mission/protectoratelobbylounger.npctype",
+        "source_patch": "npcs/mission/protectoratelobbylounger.npctype.patch",
+        "parent_available": false,
+        "fields": 1,
+        "operations": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/3",
+            "value": "The beautiful morning is tainted by the recent troubles...I had friends on Omicron Theta III."
+          }
+        ],
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/mission/protectoratelobbylounger.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/3",
+            "origin": "npcs/mission/protectoratelobbylounger.npctype.patch#0",
+            "en": "The beautiful morning is tainted by the recent troubles...I had friends on Omicron Theta III.",
+            "luna_tr": "Bu güzel sabah, son yaşanan sıkıntılar yüzünden gölgelendi... Omicron Theta III'te arkadaşlarım vardı.",
+            "approved_tr": "Bu güzel sabah, son yaşanan sıkıntılar yüzünden gölgelendi... Omicron Theta III'te arkadaşlarım vardı.",
+            "reason": "Son sıkıntıların güzel sabaha gölge düşürmesi,üç nokta ve OmicronThetaIIIte geçmişte arkadaşlar bulunması korunur. Arkadaşların öldüğü veya gezegenin kesin akıbeti eklenmez.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/3",
+              "value": "The beautiful morning is tainted by the recent troubles...I had friends on Omicron Theta III."
+            }
+          }
+        ]
+      },
+      {
+        "asset": "npcs/mission/protectoratelobbystudent2.npctype",
+        "source_patch": "npcs/mission/protectoratelobbystudent2.npctype.patch",
+        "parent_available": false,
+        "fields": 2,
+        "operations": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/0",
+            "value": "Soon I'll be a real Protector, with my very own Matter Manipulator like you! It must be exciting!"
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/2",
+            "value": "If I get assigned to some distant world, I'll always have friends here on Earth!"
+          }
+        ],
+        "entries": [
+          {
+            "unit_index": 6,
+            "asset": "npcs/mission/protectoratelobbystudent2.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/mission/protectoratelobbystudent2.npctype.patch#0",
+            "en": "Soon I'll be a real Protector, with my very own Matter Manipulator like you! It must be exciting!",
+            "luna_tr": "Yakında senin gibi kendime ait bir Madde Manipülatörü olan gerçek bir Protector olacağım! Çok heyecan verici olmalı!",
+            "approved_tr": "Yakında senin gibi kendime ait bir Madde Manipülatörü olan gerçek bir Protector olacağım! Çok heyecan verici olmalı!",
+            "reason": "Yakında gerçek Protector olma,kendine ait Madde Manipülatörü ve heyecan çıkarımı korunur. Protectorate/Protector mevcut unvan/ad kullanımı Guardian/Koruyucu ile global eşleştirilmedi. Mevcut LOCKED Madde Manipülatörü aynı;mevcut eski radyo karşılıkları değiştirilmedi.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/0",
+              "value": "Soon I'll be a real Protector, with my very own Matter Manipulator like you! It must be exciting!"
+            }
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/mission/protectoratelobbystudent2.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/mission/protectoratelobbystudent2.npctype.patch#1",
+            "en": "If I get assigned to some distant world, I'll always have friends here on Earth!",
+            "luna_tr": "Uzak bir dünyaya atanırsam, burada Dünya'da her zaman arkadaşlarım olacak!",
+            "approved_tr": "Uzak bir dünyaya atanırsam, burada Dünya'da her zaman arkadaşlarım olacak!",
+            "reason": "Uzak dünyaya atanma koşuldur,kesin atama değildir. Earth/Dünya özel gezegeni ve burada arkadaşlar bulunacağı kaynak beklentisi korunur. Generic world/dünya ile karıştırılmadı;canlı sağkalım/iletişim garantisi eklenmedi.",
+            "source_operation": {
+              "op": "replace",
+              "path": "/scriptConfig/dialog/converse/default/default/2",
+              "value": "If I get assigned to some distant world, I'll always have friends here on Earth!"
+            }
+          }
+        ]
+      }
+    ],
+    "direct_fields": 0,
+    "layered_fields": 8,
+    "complete_fu_patch_family": true,
+    "complete_parent_npctypes_read": false,
+    "related_review_rows": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "files": {
+      "npcs/mission/protectoratehallstaff.npctype.patch": "4bf6619b9acc0dc7fb72d0332cd37f9cc23cb74075e63a38f7c94ecc0672052b",
+      "npcs/mission/protectoratehallstudent5.npctype.patch": "aa65cf07e9fcd67210b7b47a12f4e95e699013b13e56bda7cce61da226b345ff",
+      "npcs/mission/protectoratelobbylounger.npctype.patch": "ab86d58cad1899260cc119a7d214b105205e3369efa2fc762e05e8b5ee93d4ab",
+      "npcs/mission/protectoratelobbystudent2.npctype.patch": "3d5dbee22204f2bd888a03b9f1e200fe272b93fba46e8745689c753ec1176c4e",
+      "dungeons/missions/protectorate/protectorate.json": "5f8f6920e4fadda94065766a57165adf00f863524e2f2c45b9d6742b3e722b3f",
+      "quests/story/protectorate.questtemplate.patch": "561c2806f6f05dd4bbe334ee9158923855cf2cdbdb952a04713df2870ef75ab6",
+      "quests/story/protectoratefu.questtemplate": "76d9698f5dbc6c68aa1ecf2bf85fbc65d64fd9c779f2cc768b6f01e72a394caa",
+      "quests/story/protectorateapex.questtemplate": "b9d2affd01b182244a6ff296698df9e695c7fd06eb9b20f28ef16c8b994d83ae",
+      "quests/story/protectoratehylotl.questtemplate": "4139d69f3a6c43f67c39a824f79c0c259448cf7ff9ef81f70f88278ebad6aefa",
+      "quests/story/protectorateelunite.questtemplate": "efdd06552c7bc79174fd0aa2ca2143962b778a46f64688cd59258aad87dba6e1",
+      "quests/scripts/tutorial/protectorate.lua": "09cf47c7909e595272bf1e3e5156da0f1a9d889942453ca5851c54cdfd423a31",
+      "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+      "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+      "radiomessages/intro.radiomessages.patch": "49559de1d1d7ac0bce3f6676b1be624640cc3f7b7c5db62a0e6f5d94a76dcf56"
+    },
+    "mission": {
+      "status": "PREREAD_ONLY_FULL_LANGUAGE_REVIEW_PENDING",
+      "files": {
+        "npcs/mission/protectoratehallstaff.npctype.patch": "4bf6619b9acc0dc7fb72d0332cd37f9cc23cb74075e63a38f7c94ecc0672052b",
+        "npcs/mission/protectoratehallstudent5.npctype.patch": "aa65cf07e9fcd67210b7b47a12f4e95e699013b13e56bda7cce61da226b345ff",
+        "npcs/mission/protectoratelobbylounger.npctype.patch": "ab86d58cad1899260cc119a7d214b105205e3369efa2fc762e05e8b5ee93d4ab",
+        "npcs/mission/protectoratelobbystudent2.npctype.patch": "3d5dbee22204f2bd888a03b9f1e200fe272b93fba46e8745689c753ec1176c4e",
+        "dungeons/missions/protectorate/protectorate.json": "5f8f6920e4fadda94065766a57165adf00f863524e2f2c45b9d6742b3e722b3f",
+        "quests/story/protectorate.questtemplate.patch": "561c2806f6f05dd4bbe334ee9158923855cf2cdbdb952a04713df2870ef75ab6",
+        "quests/story/protectoratefu.questtemplate": "76d9698f5dbc6c68aa1ecf2bf85fbc65d64fd9c779f2cc768b6f01e72a394caa",
+        "quests/story/protectorateapex.questtemplate": "b9d2affd01b182244a6ff296698df9e695c7fd06eb9b20f28ef16c8b994d83ae",
+        "quests/story/protectoratehylotl.questtemplate": "4139d69f3a6c43f67c39a824f79c0c259448cf7ff9ef81f70f88278ebad6aefa",
+        "quests/story/protectorateelunite.questtemplate": "efdd06552c7bc79174fd0aa2ca2143962b778a46f64688cd59258aad87dba6e1",
+        "quests/scripts/tutorial/protectorate.lua": "09cf47c7909e595272bf1e3e5156da0f1a9d889942453ca5851c54cdfd423a31",
+        "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+        "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+        "radiomessages/intro.radiomessages.patch": "49559de1d1d7ac0bce3f6676b1be624640cc3f7b7c5db62a0e6f5d94a76dcf56"
+      },
+      "patches": {
+        "npcs/mission/protectoratehallstaff.npctype.patch": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/speak/default/default/0",
+            "value": "You're really cutting it close, <entityname>. Please hurry inside before the emergency meeting starts."
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/0",
+            "value": "The emergency meeting is going to start any minute now."
+          }
+        ],
+        "npcs/mission/protectoratehallstudent5.npctype.patch": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/0",
+            "value": "I hear that Huxven II and Omicron Theta III have both gone dark."
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/1",
+            "value": "My homeworld was wiped out by the unknown enemy. I want vengeance."
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/2",
+            "value": "Without a military strike in response to the attacks, the Protectorate will look weak."
+          }
+        ],
+        "npcs/mission/protectoratelobbylounger.npctype.patch": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/3",
+            "value": "The beautiful morning is tainted by the recent troubles...I had friends on Omicron Theta III."
+          }
+        ],
+        "npcs/mission/protectoratelobbystudent2.npctype.patch": [
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/0",
+            "value": "Soon I'll be a real Protector, with my very own Matter Manipulator like you! It must be exciting!"
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/dialog/converse/default/default/2",
+            "value": "If I get assigned to some distant world, I'll always have friends here on Earth!"
+          }
+        ]
+      },
+      "parent_npctypes_missing": [
+        "npcs/mission/protectoratehallstaff.npctype",
+        "npcs/mission/protectoratehallstudent5.npctype",
+        "npcs/mission/protectoratelobbylounger.npctype",
+        "npcs/mission/protectoratelobbystudent2.npctype"
+      ],
+      "map_asset": "dungeons/missions/protectorate/protectorate.json",
+      "static_npcs": [
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1053,
+          "npc": "glitch",
+          "typeName": "protectoratejanitor"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1529,
+          "npc": "apex",
+          "typeName": "protectoratelobbylounger"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1531,
+          "npc": "avian",
+          "typeName": "protectoratelobbystudent1"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1532,
+          "npc": "human",
+          "typeName": "protectoratelobbystudent2"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1533,
+          "npc": "apex",
+          "typeName": "protectoratehallstaff"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1568,
+          "npc": "hylotl",
+          "typeName": "protectoratecourtyardlounger"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1580,
+          "npc": "hylotl",
+          "typeName": "protectoratehallstudent5"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1581,
+          "npc": "human",
+          "typeName": "protectoratehallstudent4"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1583,
+          "npc": "glitch",
+          "typeName": "protectoratehallstudent2"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1584,
+          "npc": "floran",
+          "typeName": "protectoratehallstudent1"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1814,
+          "npc": "human",
+          "typeName": "protectoratelobbystudent2"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1873,
+          "npc": "fumantizi",
+          "seed": "88",
+          "typeName": "fuoutposthylotlscientist"
+        }
+      ],
+      "selected_static_npcs": [
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1529,
+          "npc": "apex",
+          "typeName": "protectoratelobbylounger"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1532,
+          "npc": "human",
+          "typeName": "protectoratelobbystudent2"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1533,
+          "npc": "apex",
+          "typeName": "protectoratehallstaff"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1580,
+          "npc": "hylotl",
+          "typeName": "protectoratehallstudent5"
+        },
+        {
+          "layer": "monsters & npcs",
+          "object_id": 1814,
+          "npc": "human",
+          "typeName": "protectoratelobbystudent2"
+        }
+      ],
+      "radio_stagehands": [],
+      "tilesets": [
+        {
+          "firstgid": 1,
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "firstgid": 198,
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "firstgid": 235,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "firstgid": 693,
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "firstgid": 717,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "firstgid": 2158,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "firstgid": 2392,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "firstgid": 2746,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "firstgid": 2826,
+          "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+          "available": false
+        },
+        {
+          "firstgid": 2927,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+          "available": false
+        },
+        {
+          "firstgid": 3090,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/protectorate.json",
+          "available": false
+        },
+        {
+          "firstgid": 3188,
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "firstgid": 3216,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "firstgid": 3438,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+          "available": false
+        },
+        {
+          "firstgid": 3513,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-colonytag/island.json",
+          "available": false
+        },
+        {
+          "firstgid": 3519,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-colonytag/pretty.json",
+          "available": false
+        },
+        {
+          "firstgid": 3998,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/human.json",
+          "available": false
+        }
+      ],
+      "active_dialogue_consumer_verified": false,
+      "lqa": "NOT TESTED",
+      "quest_summaries": {
+        "quests/story/protectorate.questtemplate.patch": [
+          {
+            "op": "replace",
+            "path": "/text",
+            "value": "Survive the meeting."
+          },
+          {
+            "op": "replace",
+            "path": "/completionText",
+            "value": "The years of training paid off - you survived the meeting!"
+          },
+          {
+            "op": "replace",
+            "path": "/scriptConfig/descriptions/graduate",
+            "value": "Attend the emergency meeting"
+          }
+        ],
+        "quests/story/protectoratefu.questtemplate": {
+          "id": "protectoratefu",
+          "mainQuest": true,
+          "title": "You're a thing",
+          "text": "Have some thing",
+          "completionText": "You got the thing",
+          "moneyRange": [
+            50,
+            50
+          ],
+          "canBeAbandoned": false,
+          "invisible": false,
+          "logOnly": true,
+          "updateDelta": 10,
+          "script": "/quests/scripts/tutorial/protectoratefu.lua",
+          "scriptConfig": {
+            "portraits": {
+              "default": "player"
+            },
+            "descriptions": {
+              "graduate": "Attend the emergency meeting",
+              "matterManipulator": "Take the matter manipulator",
+              "escape": "Escape the destruction"
+            }
+          }
+        },
+        "quests/story/protectorateapex.questtemplate": {
+          "id": "protectorateapex",
+          "mainQuest": true,
+          "title": "You're an Apex",
+          "text": "Have an MM",
+          "completionText": "Your Matter Manipulator is, simply put, superior to the crappy ones other races use.",
+          "moneyRange": [
+            50,
+            50
+          ],
+          "canBeAbandoned": false,
+          "invisible": false,
+          "logOnly": true,
+          "updateDelta": 10,
+          "script": "/quests/scripts/tutorial/protectorate.lua",
+          "scriptConfig": {
+            "portraits": {
+              "default": "player"
+            },
+            "descriptions": {
+              "graduate": "Attend your graduation ceremony",
+              "matterManipulator": "Take the matter manipulator",
+              "escape": "Escape the destruction"
+            }
+          }
+        },
+        "quests/story/protectoratehylotl.questtemplate": {
+          "id": "protectoratehylotl",
+          "mainQuest": true,
+          "title": "You're a Hylotl",
+          "text": "Have an MM",
+          "completionText": "Your Matter Manipulator is, simply put, superior to the crappy ones other races use.",
+          "moneyRange": [
+            50,
+            50
+          ],
+          "canBeAbandoned": false,
+          "invisible": false,
+          "logOnly": true,
+          "updateDelta": 10,
+          "script": "/quests/scripts/tutorial/protectorate.lua",
+          "scriptConfig": {
+            "portraits": {
+              "default": "player"
+            },
+            "descriptions": {
+              "graduate": "Attend your graduation ceremony",
+              "matterManipulator": "Take the matter manipulator",
+              "escape": "Escape the destruction"
+            }
+          }
+        },
+        "quests/story/protectorateelunite.questtemplate": {
+          "id": "protectorateelunite",
+          "mainQuest": true,
+          "title": "You're a Elunite",
+          "text": "Have an MM",
+          "completionText": "Your Matter Manipulator is, simply put, superior to the crappy ones other races use.",
+          "moneyRange": [
+            50,
+            50
+          ],
+          "canBeAbandoned": false,
+          "invisible": false,
+          "logOnly": true,
+          "updateDelta": 10,
+          "script": "/quests/scripts/tutorial/protectorate.lua",
+          "scriptConfig": {
+            "portraits": {
+              "default": "player"
+            },
+            "descriptions": {
+              "graduate": "Attend your graduation ceremony",
+              "matterManipulator": "Take the matter manipulator",
+              "escape": "Escape the destruction"
+            }
+          }
+        }
+      },
+      "world_patches": {
+        "instance_worlds.config.patch": [],
+        "dungeon_worlds.config.patch": []
+      },
+      "quest_script_radio_context": [
+        {
+          "id": "protectorateExitBedPester",
+          "origin": "radiomessages/intro.radiomessages.patch",
+          "patch_writes": [
+            {
+              "op": "replace",
+              "path": "/protectorateExitBedPester/text",
+              "value": "Oh no! You overslept! There's only a few minutes until the Emergency Session begins! You'd better not keep them waiting, Protector. ^#71f2f6;Press A or D to get out of bed^white;."
+            }
+          ]
+        }
+      ],
+      "quest_script_radio_missing_fu_writes": [
+        "protectorateDormRoomTutorial",
+        "protectorateDormRoomPester",
+        "protectorateLoungeTutorial",
+        "protectorateGetWeapon",
+        "protectorateWeaponPester",
+        "protectorateStage5",
+        "protectorateCollapsedGalleryNoMM",
+        "protectorateCollapsedGallery",
+        "protectorateCollapsedGalleryPester",
+        "protectorateFloodedDoor",
+        "protectorateRooftop",
+        "protectorateDuct",
+        "protectorateDuctPester",
+        "protectorateTentacleBarrier",
+        "protectorateShipPlatform"
+      ],
+      "referenced_quest_scripts_missing": [
+        "quests/scripts/tutorial/protectoratefu.lua"
+      ],
+      "npc_parent_and_behavior_read": false,
+      "available_player_quest_script_is_not_npc_dialogue_consumer": true
+    },
+    "terminology_notes": [
+      "Toplantının her an başlayacağı kaynak beklentisi korunur;belirli dakika sayacı veya canlı zaman ölçümü eklenmez.",
+      "Sürenin çok dar olması ve toplantı başlamadan aceleyle içeri girme çağrısı korunur. Bilerek erteleme veya zaten geç kalma sonucu eklenmez;<entityname> birebir aynı teknik yer tutucudur.",
+      "I hear rivayet nüansı ve iki dünyayla iletişimin kesilmiş olması korunur. Huxven II ve Omicron Theta III adları/Roma rakamları aynıdır;gone dark gezegenlerin yok olduğu kesinliği değildir.",
+      "Ana gezegenin bilinmeyen düşman tarafından yok edilmesi ve intikam isteği iki cümle olarak korunur. Bilinmeyen düşmana TheRuin veya başka özel kimlik verilmez.",
+      "Saldırılara karşı askerî bir saldırı yapısı yerine Türkçede doğal askerî harekâtla karşılık vermek kullanıldı. Saldırılara cevap verilmemesi koşulu ve zayıf görünme sonucu korunur;gerçek güç kaybı veya yeni savaş sonucu eklenmedi. Tek koşul ifadesi düzeltildi,ikinci algı yüklemi aynı.",
+      "Son sıkıntıların güzel sabaha gölge düşürmesi,üç nokta ve OmicronThetaIIIte geçmişte arkadaşlar bulunması korunur. Arkadaşların öldüğü veya gezegenin kesin akıbeti eklenmez.",
+      "Yakında gerçek Protector olma,kendine ait Madde Manipülatörü ve heyecan çıkarımı korunur. Protectorate/Protector mevcut unvan/ad kullanımı Guardian/Koruyucu ile global eşleştirilmedi. Mevcut LOCKED Madde Manipülatörü aynı;mevcut eski radyo karşılıkları değiştirilmedi.",
+      "Uzak dünyaya atanma koşuldur,kesin atama değildir. Earth/Dünya özel gezegeni ve burada arkadaşlar bulunacağı kaynak beklentisi korunur. Generic world/dünya ile karıştırılmadı;canlı sağkalım/iletişim garantisi eklenmedi."
+    ],
+    "technical_entityname_preserved": true,
+    "unknown_enemy_identity_not_inferred": true
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All8EN/TR variants and8occurrences in4complete FU npctype.patch files manually reviewed against actualreplace operation/index/path/value and finalFUoverlay.1field/1expression corrected;all20690prior catalog fields unchanged. These are FU-owned post-patch sources,not independently read vanilla NPC parents.",
+    "Repetitive attacks-against-an-attack wording made natural as military action in response. The response condition and will look weak appearance clause remain;no actualloss ofpower or battle outcome added.",
+    "8fullreply locks plus Huxven II and Omicron Theta III proper names=10newLOCKED,total1345. Protectorate,a Protector title and Matter Manipulator terminology retained. Existing old radiofullreply terminology unchanged;no genericEarth/world/Protector/strike rule,context/TM/preserve/format exception added.",
+    "<entityname> remains exact. Imminentmeeting/hurry-before-start,hearsay/both worlds communication loss,unknownenemy identity,vengeance,pastfriends,Protector/MM inference and conditionaldistantassignment preserved. Gone dark is not declared destruction;friends are not declared dead and unknownenemy is not identified as TheRuin.",
+    "Actualmap12staticNPC refs include5selected:hallstaffApex1,lobbyloungerApex1,hallstudent5Hylotl1,lobbystudent2Human2.5references are not actualspawns or8NPCs. FourvanillaNPCparents and activeNPCdialoguebehavior unavailable;fullparentidentity/equipment/base not claimed read.",
+    "17tilesets allpacked/missing,no parameters-basedmapradio stagehand. Availableplayerquestscript references16radioIDs;1FUintrotextwrite read,15vanilla sources missing. Availableplayerquestscript is not an activeNPCdialogueconsumer proof.",
+    "Questpatch and4alternativequesttemplates read. Referencedprotectoratefu.lua missing;protectorate.lua not substituted for it and alternativequestgrant not verified. FUinstance/dungeonworld patches have noProtectorate entries;missingvanillaworld definitions not claimed read.",
+    "All8rows carry exact layered_source/source_patch provenance and source gate verifies finalFUwrite. Identity,equipment,stats,rewards and gameplay unchanged. Live meeting,dialogue,quest,MM,warp and LQA NOT TESTED. First52dialogue publications before object/item drafts;no scheduler,Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.103.0 Beta — Protectorate FU yama konuşmaları
+
+Dört FU yama dosyasında 8 yeni konuşma alanı, 8 bağlam ve 8 farklı kaynak eklendi. Katalog 20.698 alana ulaştı; önceki 20.690 alan korundu.
+
+Tam Sol kaynak/dil incelemesinde 1 alanda 1 ifade düzeltildi. On yeni LOCKED kaydı;toplam1.345. Yer tutucu,özel adlar,rivayet/koşul ve belirsiz akıbet korundu. Sekiz alan FU post-patch kaynağıyla doğrulandı;eksik vanilla NPCebeveynleri okunmuş sayılmadı. FU6.5.8 aynı;oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/protectorate-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V103_20261107.md)
+
 ## v0.102.0 Beta — Mikro zindan görev verenleri
 
 Üç NPC dosyasında 9 yeni konuşma alanı, 9 bağlam ve 6 farklı İngilizce kaynak eklendi. Katalog 20.690 alana ulaştı; önceki 20.681 alan korundu.
