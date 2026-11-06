@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.98.0 Beta — Letheia güvenlik replikleri
+
+Beş NPC dosyasında14yeni saldırı alanı/14bağlam/10farklı kaynak metin. Katalog20.647;önceki20.633alan aynı.
+
+Tam Sol dil/kaynak incelemesinde4alanda4ifade düzeltildi;9yeniLOCKED,toplam1.304. Üç erişim kısıtı repliği ve ek misafirler anlamı düzeltildi. Hylotl konuşmacı dalı veLetheia Corporation mevcut adı korundu. FU6.5.8pini aynı;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/letheia-20261106.json) · [Oyun kontrolü](docs/lqa/LQA_V098_20261106.md)
+
 ## v0.97.0 Beta — Techno City SMASH müttefikleri
 
 Üç NPC dosyasında16yeni diyalog alanı/16bağlam/16farklı kaynak metin. Katalog20.633;önceki20.617alan aynı.

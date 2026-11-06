@@ -1,0 +1,1894 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-06",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 21,
+  "run_id": "fu-ten-20261104",
+  "run_round": 9,
+  "base_commit": "3e990fc85f58c0d240efbefc599726e61a03bc62",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 14,
+    "context_groups": 14,
+    "unique_english_strings": 10,
+    "assets": {
+      "npcs/letheia/letheiabiohazardsoldier.npctype": 3,
+      "npcs/letheia/letheiaboss.npctype": 2,
+      "npcs/letheia/letheiacaptain.npctype": 3,
+      "npcs/letheia/letheiagrunt.npctype": 3,
+      "npcs/letheia/letheiascientist.npctype": 3
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 14,
+    "dialogue_events": {
+      "attack": 14
+    },
+    "dialogue_fields": 14,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 0
+  },
+  "changes": {
+    "fields": 4,
+    "sentences_including_repeated_fields": 4,
+    "unique_source_strings_corrected": 2,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 4,
+    "total_corrected_sentences": 4,
+    "count_method": "Three repeated restricted-zone occurrences plus one additional-guests phrase;4fields/4expressions,2uniqueEN."
+  },
+  "new_locked_terms": 9,
+  "new_locked_names": [
+    "A corporate spy!",
+    "This is a restricted zone!",
+    "Where's your ID?",
+    "Oh my! More guests!",
+    "The board of directors will hear of this!",
+    "Guess I'll have to deal with you personally!",
+    "How unfortunate.",
+    "Halt! Who are you?",
+    "Only employees of Letheia Corp allowed here!"
+  ],
+  "reused_locked_names": [
+    "Attack!"
+  ],
+  "reused_proper_names": [
+    "Letheia Corporation"
+  ],
+  "locked_total": 1304,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "8e5ac5e35164834409496d473512b288b891bcc700d38348f998994d3e8e5ab7",
+  "luna_original_packet_sha256": "f66b6c20d4244e4b19cba8873ec40b793e2a2f787f0331f47c1c755fdc763936",
+  "approved_rows_sha256": "ae95029e41b0da34bae6195959a12b54f511e5f0b630426e5ee32fe1aba9edd1",
+  "corrections": [
+    {
+      "unit_index": 1,
+      "en": "This is a restricted zone!",
+      "before": "Burası girilmesi yasak bir bölge!",
+      "after": "Buraya izinsiz girilmez!",
+      "occurrences": [
+        {
+          "asset": "npcs/letheia/letheiabiohazardsoldier.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/1",
+          "origin": "npcs/letheia/letheiabiohazardsoldier.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Restricted zone erişimi kısıtlı bir bölgedir;yalnız çalışanların girebildiği komşu replikle birlikte mutlak her türlü giriş yasağına dönüştürülmedi."
+    },
+    {
+      "unit_index": 4,
+      "en": "Oh my! More guests!",
+      "before": "Vay canına! Yine misafirler!",
+      "after": "Vay canına! Daha fazla misafir!",
+      "occurrences": [
+        {
+          "asset": "npcs/letheia/letheiaboss.npctype",
+          "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+          "origin": "npcs/letheia/letheiaboss.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "More guests ek misafirlerdir;yalnız tekrar/yine anlamına daraltılmadı. İlk ünlem ve düşmanca karşılama ironisi korunur."
+    },
+    {
+      "unit_index": 9,
+      "en": "This is a restricted zone!",
+      "before": "Burası girilmesi yasak bir bölge!",
+      "after": "Buraya izinsiz girilmez!",
+      "occurrences": [
+        {
+          "asset": "npcs/letheia/letheiagrunt.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/1",
+          "origin": "npcs/letheia/letheiagrunt.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Aynı restricted-zone EN,gruntın yalnız çalışanlara izin veren komşu repliğiyle tutarlı erişim kısıtı olarak çevrildi."
+    },
+    {
+      "unit_index": 12,
+      "en": "This is a restricted zone!",
+      "before": "Burası girilmesi yasak bir bölge!",
+      "after": "Buraya izinsiz girilmez!",
+      "occurrences": [
+        {
+          "asset": "npcs/letheia/letheiascientist.npctype",
+          "pointer": "/scriptConfig/dialog/attack/default/default/1",
+          "origin": "npcs/letheia/letheiascientist.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Scientistın aynı kaynak uyarısında erişim kısıtı korundu;tekrarlı EN için aynı TR kullanıldı."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "f66b6c20d4244e4b19cba8873ec40b793e2a2f787f0331f47c1c755fdc763936",
+    "filled_units": 14
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 14,
+    "context_units": 14,
+    "qa": {
+      "catalog_units_checked": 35914,
+      "raw_units_checked": 115,
+      "locked_terms": 1304
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Sol reviewed all14EN/TR variants and14occurrences in5complete NPCs.4fields/4expressions corrected:3restricted-zone occurrences and1additional-guests phrase. Missing vanilla hostile/projectile and LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/letheia/letheiabiohazardsoldier.npctype",
+        "note": "Complete NPC and every selected EN/TR occurrence reviewed;all14areattack. Default/default and boss hylotl/default speaker branches distinguished;technical fields unchanged."
+      },
+      {
+        "source": "fu_source/npcs/letheia/letheiaboss.npctype",
+        "note": "Complete NPC and every selected EN/TR occurrence reviewed;all14areattack. Default/default and boss hylotl/default speaker branches distinguished;technical fields unchanged."
+      },
+      {
+        "source": "fu_source/npcs/letheia/letheiacaptain.npctype",
+        "note": "Complete NPC and every selected EN/TR occurrence reviewed;all14areattack. Default/default and boss hylotl/default speaker branches distinguished;technical fields unchanged."
+      },
+      {
+        "source": "fu_source/npcs/letheia/letheiagrunt.npctype",
+        "note": "Complete NPC and every selected EN/TR occurrence reviewed;all14areattack. Default/default and boss hylotl/default speaker branches distinguished;technical fields unchanged."
+      },
+      {
+        "source": "fu_source/npcs/letheia/letheiascientist.npctype",
+        "note": "Complete NPC and every selected EN/TR occurrence reviewed;all14areattack. Default/default and boss hylotl/default speaker branches distinguished;technical fields unchanged."
+      },
+      {
+        "source": "fu_source/dungeons/space/letheiafleet/letheiafleet.json; fu_source/dungeons/missions/letheiafacility/letheiafacility.json; fu_source/dungeons/space/letheiafleet/letheiafleet.dungeon; fu_source/dungeons/missions/letheiafacility/letheiafacility.dungeon; fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "Actual Fleet31static selectedhuman NPCs/6grunt parameter-spawners;Facility18static/12selected/6other/21parameter-spawners. Hylotl boss is speaker species,not target species. One radio stagehand per map links6actual messages,all read. Fleet21tilesets/20missingpacked,Facility22/21missingpacked;not live spawn/wire/radio proof."
+      },
+      {
+        "source": "fu_source/quests/letheiafleet.questtemplate; fu_source/quests/letheiafacility.questtemplate; fu_source/ai/letheiafacility.aimission; fu_source/tilesets/extradungeons-custom/modstuff.json; fu_source/objects/wired/extranpcspawner/extrainvisiblenpcspawner.object; fu_source/objects/wired/extranpcspawner/extranpcspawner.lua; fu_source/scripts/actions/dialog.lua",
+        "note": "Quest/AI and complete unchanged helpers read. Actual map GIDs resolve FU localtile34/object/script. npcParameter or {} is not assumed self.npcParams forwarding. Missing vanilla hostile/projectile dependency not claimed read. Separate lethialabs is not claimed a selected-NPC consumer. No gameplay repair."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/letheia/letheiabiohazardsoldier.npctype",
+        "type": "letheiabiohazardsoldier",
+        "base_type": "hostile",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/letheia/letheiabiohazardsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/letheia/letheiabiohazardsoldier.npctype",
+            "en": "A corporate spy!",
+            "luna_tr": "Bir şirket casusu!",
+            "approved_tr": "Bir şirket casusu!",
+            "reason": "Corporate spy bir suçlamadır;hangi şirket için çalışıldığı veya gerçek oyuncu mesleği eklenmez."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/letheia/letheiabiohazardsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/letheia/letheiabiohazardsoldier.npctype",
+            "en": "This is a restricted zone!",
+            "luna_tr": "Burası girilmesi yasak bir bölge!",
+            "approved_tr": "Buraya izinsiz girilmez!",
+            "reason": "Restricted zone erişimi kısıtlı bir bölgedir;yalnız çalışanların girebildiği komşu replikle birlikte mutlak her türlü giriş yasağına dönüştürülmedi."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/letheia/letheiabiohazardsoldier.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/letheia/letheiabiohazardsoldier.npctype",
+            "en": "Where's your ID?",
+            "luna_tr": "Kimliğin nerede?",
+            "approved_tr": "Kimliğin nerede?",
+            "reason": "ID kimlik sorusudur;belge gösterme arayüzü/mekaniği eklenmez."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/letheia/letheiaboss.npctype",
+        "type": "letheiaboss",
+        "base_type": "hostile",
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 3,
+            "asset": "npcs/letheia/letheiaboss.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/letheia/letheiaboss.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!",
+            "reason": "Mevcut Attack!/Saldır! LOCKED ve TM aynen kullanılır."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/letheia/letheiaboss.npctype",
+            "pointer": "/scriptConfig/dialog/attack/hylotl/default/0",
+            "origin": "npcs/letheia/letheiaboss.npctype",
+            "en": "Oh my! More guests!",
+            "luna_tr": "Vay canına! Yine misafirler!",
+            "approved_tr": "Vay canına! Daha fazla misafir!",
+            "reason": "More guests ek misafirlerdir;yalnız tekrar/yine anlamına daraltılmadı. İlk ünlem ve düşmanca karşılama ironisi korunur."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/letheia/letheiacaptain.npctype",
+        "type": "letheiacaptain",
+        "base_type": "hostile",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/letheia/letheiacaptain.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/letheia/letheiacaptain.npctype",
+            "en": "The board of directors will hear of this!",
+            "luna_tr": "Yönetim kurulu bunu duyacak!",
+            "approved_tr": "Yönetim kurulu bunu duyacak!",
+            "reason": "Yönetim kurulu corporate board anlamındadır;will hear gelecek tehdididir,gerçek raporlama olayı değildir."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/letheia/letheiacaptain.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/letheia/letheiacaptain.npctype",
+            "en": "Guess I'll have to deal with you personally!",
+            "luna_tr": "Anlaşılan seninle bizzat ilgilenmem gerekecek!",
+            "approved_tr": "Anlaşılan seninle bizzat ilgilenmem gerekecek!",
+            "reason": "Guess çıkarım tonu ve personally/bizzat korunur;ek öldürme veya hakaret eklenmez."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/letheia/letheiacaptain.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/letheia/letheiacaptain.npctype",
+            "en": "How unfortunate.",
+            "luna_tr": "Ne talihsizlik.",
+            "approved_tr": "Ne talihsizlik.",
+            "reason": "Kısa kuru Ne talihsizlik tonu korunur;Glitch duygu öneki veya neden eklenmez."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/letheia/letheiagrunt.npctype",
+        "type": "letheiagrunt",
+        "base_type": "hostile",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 8,
+            "asset": "npcs/letheia/letheiagrunt.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/letheia/letheiagrunt.npctype",
+            "en": "Halt! Who are you?",
+            "luna_tr": "Dur! Sen kimsin?",
+            "approved_tr": "Dur! Sen kimsin?",
+            "reason": "Dur emri ve Sen kimsin sorusu korunur."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/letheia/letheiagrunt.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/letheia/letheiagrunt.npctype",
+            "en": "This is a restricted zone!",
+            "luna_tr": "Burası girilmesi yasak bir bölge!",
+            "approved_tr": "Buraya izinsiz girilmez!",
+            "reason": "Aynı restricted-zone EN,gruntın yalnız çalışanlara izin veren komşu repliğiyle tutarlı erişim kısıtı olarak çevrildi."
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/letheia/letheiagrunt.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/letheia/letheiagrunt.npctype",
+            "en": "Only employees of Letheia Corp allowed here!",
+            "luna_tr": "Buraya yalnızca Letheia Corporation çalışanları girebilir!",
+            "approved_tr": "Buraya yalnızca Letheia Corporation çalışanları girebilir!",
+            "reason": "Letheia Corp,mevcut görev/AI ve LOCKED Letheia Corporation adıyla karşılanır;yalnız çalışanlar kısıtı korunur."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/letheia/letheiascientist.npctype",
+        "type": "letheiascientist",
+        "base_type": "hostile",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 11,
+            "asset": "npcs/letheia/letheiascientist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/letheia/letheiascientist.npctype",
+            "en": "A corporate spy!",
+            "luna_tr": "Bir şirket casusu!",
+            "approved_tr": "Bir şirket casusu!",
+            "reason": "Aynı şirket-casusu suçlaması biohazard ile aynı TRdir;rakip şirket kimliği eklenmez."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/letheia/letheiascientist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/letheia/letheiascientist.npctype",
+            "en": "This is a restricted zone!",
+            "luna_tr": "Burası girilmesi yasak bir bölge!",
+            "approved_tr": "Buraya izinsiz girilmez!",
+            "reason": "Scientistın aynı kaynak uyarısında erişim kısıtı korundu;tekrarlı EN için aynı TR kullanıldı."
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/letheia/letheiascientist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/letheia/letheiascientist.npctype",
+            "en": "Where's your ID?",
+            "luna_tr": "Kimliğin nerede?",
+            "approved_tr": "Kimliğin nerede?",
+            "reason": "Aynı ID sorusu biohazard ile aynı TRdir;oyuncunun gerçek kimliği okunmuş sayılmaz."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 14,
+    "layered_fields": 0,
+    "related_review_rows": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/hostile.npctype"
+    ],
+    "missing_direct_dependencies": [
+      {
+        "from": "npcs/letheia/letheiabiohazardsoldier.npctype",
+        "reference": "/projectiles/explosions/regularexplosion2/poisonexplosionknockback.config",
+        "asset": "projectiles/explosions/regularexplosion2/poisonexplosionknockback.config",
+        "exists_in_fu": false
+      }
+    ],
+    "files": {
+      "npcs/letheia/letheiascientist.npctype": "b84196fb8ada639ed7371525051db4c5f004d58d361e515c24584218381ef869",
+      "npcs/letheia/letheiagrunt.npctype": "b07687416450fb01865b9c6b6077d097c30a6637db08f2fe2d8914bfe87ac50e",
+      "npcs/letheia/letheiacaptain.npctype": "76657e2ea2909cf49ba33225033aefa526b8690f088e2365154314a87e9f7dff",
+      "npcs/letheia/letheiaboss.npctype": "985c905777efb58cf54b17916b6488663a6a5b0b6e5cf968e068dbaffb7a8ce9",
+      "npcs/letheia/letheiabiohazardsoldier.npctype": "d72e36302178524b13198efca4d7a3821b14a5bd2b84599a1331dbc786a208da",
+      "dungeons/space/letheiafleet/letheiafleet.json": "53b9782240a316b993249afa46cb7868c6116afd53d46f0ccd21a97399ebaac7",
+      "dungeons/missions/letheiafacility/letheiafacility.json": "9e8f4e35ca8d770a61864a2b6059dc2b2f361018c803ff990171892bced25548",
+      "dungeons/space/letheiafleet/letheiafleet.dungeon": "9d64b025736359e6ce13eafe731ceee160f2ab49d8172c2c7032e079833cfc95",
+      "dungeons/missions/letheiafacility/letheiafacility.dungeon": "d46ec674d30e9e8f3868ea96eaeb9e96e2af1bcaf79eb2e5f44cc8b2737dffe1",
+      "quests/letheiafleet.questtemplate": "0ae1951021e2a47981b2b5698e43f62cb4bb954f97040a1dc917b090c8a68c43",
+      "quests/letheiafacility.questtemplate": "6e366ade737894722a1d2302765a02aa4b06edf3db216a11f9796ea4e7d73fe2",
+      "ai/letheiafacility.aimission": "500027622e569c646d53d08347e45156fcb20b9d2502c8149e1da18895264d0d",
+      "radiomessages/missions.radiomessages.patch": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351",
+      "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+      "objects/wired/extranpcspawner/extrainvisiblenpcspawner.object": "72417a0a8204cb915645bb57471c648df84a362f97cbad92862c71ff3ffedd62",
+      "objects/wired/extranpcspawner/extranpcspawner.lua": "db8cc1e3fa8b2b5c1cdc0b9f76352db0ab53e62208ecbaa61af91a7720df77f9",
+      "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0"
+    },
+    "maps": [
+      {
+        "asset": "dungeons/space/letheiafleet/letheiafleet.json",
+        "static_npcs": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1337,
+            "npc": "human",
+            "parameters": "{\"identity\": {\"gender\": \"female\"},\"statusControllerSettings\": {    \"stats\": {\"nude\": {\"baseValue\": 1}}}}",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1338,
+            "npc": "human",
+            "parameters": "{\"identity\": {\"gender\": \"male\"},\"statusControllerSettings\": {    \"stats\": {\"nude\": {\"baseValue\": 1}}}}",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1339,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1340,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1341,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1342,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1343,
+            "npc": "human",
+            "typeName": "letheiascientist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1344,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1345,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1346,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1347,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1348,
+            "npc": "human",
+            "typeName": "letheiacaptain"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1349,
+            "npc": "human",
+            "typeName": "letheiacaptain"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1350,
+            "npc": "human",
+            "typeName": "letheiacaptain"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1351,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1352,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1353,
+            "npc": "human",
+            "typeName": "letheiascientist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1354,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1355,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1356,
+            "npc": "human",
+            "typeName": "letheiascientist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1357,
+            "npc": "human",
+            "typeName": "letheiascientist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1358,
+            "npc": "human",
+            "typeName": "letheiascientist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1359,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1360,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1361,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1362,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1363,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1364,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1365,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1366,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1367,
+            "npc": "human",
+            "typeName": "letheiascientist"
+          }
+        ],
+        "static_total": 31,
+        "selected_static_total": 31,
+        "static_selected_type_counts": {
+          "letheiagrunt": 22,
+          "letheiascientist": 6,
+          "letheiacaptain": 3
+        },
+        "npc_parameter_spawners": [
+          {
+            "layer": "objects",
+            "object_id": 888,
+            "gid": 4210,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                1
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1183,
+            "gid": 4210,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1189,
+            "gid": 4210,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1190,
+            "gid": 4210,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1285,
+            "gid": 4210,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                2
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1399,
+            "gid": 4210,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                1
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                3,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        ],
+        "spawner_type_counts": {
+          "letheiagrunt": 6
+        },
+        "spawner_gid": 4210,
+        "spawner_firstgid": 4176,
+        "spawner_localid": 34,
+        "spawner_object": "extrainvisiblenpcspawner",
+        "static_fu_spawner_chain_verified": true,
+        "radio_stagehands": [
+          {
+            "layer": "mods and stagehands",
+            "object_id": 1368,
+            "radioMessages": [
+              "letheiafleet01",
+              "letheiafleet01a",
+              "letheiafleet01b",
+              "letheiafleet01c"
+            ]
+          }
+        ],
+        "tilesets": [
+          {
+            "firstgid": 1,
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "available": false
+          },
+          {
+            "firstgid": 25,
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "available": false
+          },
+          {
+            "firstgid": 222,
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "available": false
+          },
+          {
+            "firstgid": 259,
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "available": false
+          },
+          {
+            "firstgid": 287,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "available": false
+          },
+          {
+            "firstgid": 597,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "available": false
+          },
+          {
+            "firstgid": 640,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "available": false
+          },
+          {
+            "firstgid": 720,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "available": false
+          },
+          {
+            "firstgid": 2161,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "available": false
+          },
+          {
+            "firstgid": 2293,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "available": false
+          },
+          {
+            "firstgid": 2647,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "available": false
+          },
+          {
+            "firstgid": 3105,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "available": false
+          },
+          {
+            "firstgid": 3417,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/railpoint.json",
+            "available": false
+          },
+          {
+            "firstgid": 3422,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "available": false
+          },
+          {
+            "firstgid": 3423,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "available": false
+          },
+          {
+            "firstgid": 3499,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "available": false
+          },
+          {
+            "firstgid": 3515,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "available": false
+          },
+          {
+            "firstgid": 3749,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "available": false
+          },
+          {
+            "firstgid": 3750,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "available": false
+          },
+          {
+            "firstgid": 3954,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "available": false
+          },
+          {
+            "firstgid": 4176,
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "available": true
+          }
+        ],
+        "live_spawn_tested": false
+      },
+      {
+        "asset": "dungeons/missions/letheiafacility/letheiafacility.json",
+        "static_npcs": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 108,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 109,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 175,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 176,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 356,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1055,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1056,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1068,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1069,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1662,
+            "npc": "human",
+            "typeName": "cultist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1663,
+            "npc": "human",
+            "typeName": "cultist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 1664,
+            "npc": "human",
+            "typeName": "cultist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 2419,
+            "npc": "human",
+            "typeName": "letheiagrunt"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 2420,
+            "npc": "human",
+            "typeName": "letheiabiohazardsoldier"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 2421,
+            "npc": "avian",
+            "seed": "1",
+            "typeName": "svetlana"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 2523,
+            "npc": "human",
+            "typeName": "cultist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 2524,
+            "npc": "human",
+            "typeName": "cultist"
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 2526,
+            "npc": "hylotl",
+            "typeName": "letheiaboss"
+          }
+        ],
+        "static_total": 18,
+        "selected_static_total": 12,
+        "static_selected_type_counts": {
+          "letheiagrunt": 10,
+          "letheiabiohazardsoldier": 1,
+          "letheiaboss": 1
+        },
+        "npc_parameter_spawners": [
+          {
+            "layer": "objects",
+            "object_id": 258,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 825,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcLevelOffset": -2,
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                3
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 882,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 883,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 884,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 885,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 886,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 887,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1006,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                -14,
+                -1
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1062,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1103,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                9,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1104,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1413,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1472,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1499,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                1,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1500,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                -1,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1676,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 4,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 1848,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 2128,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiabiohazardsoldier"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 3,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 2143,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                9,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 2144,
+            "gid": 4252,
+            "spawner": {
+              "npcSpecies": [
+                "human"
+              ],
+              "npcTypes": [
+                "letheiagrunt"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                9,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                2,
+                3
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        ],
+        "spawner_type_counts": {
+          "letheiagrunt": 14,
+          "letheiabiohazardsoldier": 7
+        },
+        "spawner_gid": 4252,
+        "spawner_firstgid": 4218,
+        "spawner_localid": 34,
+        "spawner_object": "extrainvisiblenpcspawner",
+        "static_fu_spawner_chain_verified": true,
+        "radio_stagehands": [
+          {
+            "layer": "mods and stagehands",
+            "object_id": 2531,
+            "radioMessages": [
+              "letheiafacility01",
+              "letheiafacility01a"
+            ]
+          }
+        ],
+        "tilesets": [
+          {
+            "firstgid": 1,
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "available": false
+          },
+          {
+            "firstgid": 25,
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "available": false
+          },
+          {
+            "firstgid": 222,
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "available": false
+          },
+          {
+            "firstgid": 259,
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "available": false
+          },
+          {
+            "firstgid": 287,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "available": false
+          },
+          {
+            "firstgid": 597,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "available": false
+          },
+          {
+            "firstgid": 640,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "available": false
+          },
+          {
+            "firstgid": 720,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "available": false
+          },
+          {
+            "firstgid": 2161,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "available": false
+          },
+          {
+            "firstgid": 2293,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "available": false
+          },
+          {
+            "firstgid": 2647,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "available": false
+          },
+          {
+            "firstgid": 3105,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "available": false
+          },
+          {
+            "firstgid": 3417,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "available": false
+          },
+          {
+            "firstgid": 3418,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/railpoint.json",
+            "available": false
+          },
+          {
+            "firstgid": 3423,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "available": false
+          },
+          {
+            "firstgid": 3499,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "available": false
+          },
+          {
+            "firstgid": 3515,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "available": false
+          },
+          {
+            "firstgid": 3749,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "available": false
+          },
+          {
+            "firstgid": 3750,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "available": false
+          },
+          {
+            "firstgid": 3954,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "available": false
+          },
+          {
+            "firstgid": 3996,
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "available": false
+          },
+          {
+            "firstgid": 4218,
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "available": true
+          }
+        ],
+        "live_spawn_tested": false
+      }
+    ],
+    "radio_messages": {
+      "letheiafacility01": {
+        "type": "mission",
+        "senderName": "Koichi",
+        "portraitImage": "/interface/chatbubbles/koichi.png:<frame>",
+        "text": "The entire facility appears to be surrounded by a jamming signal. I won't be able to get to you once you get any closer, so you'll be on your own."
+      },
+      "letheiafacility01a": {
+        "type": "mission",
+        "senderName": "Lana Blake",
+        "portraitImage": "/interface/chatbubbles/lana.png:<frame>",
+        "text": "Good luck, soldier. I get the feeling you'll need it. Letheia doesn't mess around when it comes to its security."
+      },
+      "letheiafleet01": {
+        "type": "mission",
+        "text": "Scans indicate the corporate fleet consists of a battleship, a carrier, a tanker, and numerous other small vessels."
+      },
+      "letheiafleet01a": {
+        "type": "mission",
+        "text": "In order to board the battleship's main segment, you will need to activate IFF signals on the bridges of the carrier and tanker."
+      },
+      "letheiafleet01b": {
+        "type": "mission",
+        "text": "Due to the size of the fleet, your mech's initial energy reserves may be insufficient, especially if you sustain damage from their defenses."
+      },
+      "letheiafleet01c": {
+        "type": "mission",
+        "text": "Boarding ships and raiding their energy stores may very well be crucial to your success. Good luck."
+      }
+    },
+    "complete_npc_family": true,
+    "company_name_review": {
+      "existing_locked_source": "Letheia Corporation",
+      "existing_quest_ai_rendering_retained": true,
+      "existing_spider_label_unchanged": true,
+      "global_corp_suffix_rule_added": false
+    },
+    "terminology_notes": [
+      "Corporate spy bir suçlamadır;hangi şirket için çalışıldığı veya gerçek oyuncu mesleği eklenmez.",
+      "Restricted zone erişimi kısıtlı bir bölgedir;yalnız çalışanların girebildiği komşu replikle birlikte mutlak her türlü giriş yasağına dönüştürülmedi.",
+      "ID kimlik sorusudur;belge gösterme arayüzü/mekaniği eklenmez.",
+      "Mevcut Attack!/Saldır! LOCKED ve TM aynen kullanılır.",
+      "More guests ek misafirlerdir;yalnız tekrar/yine anlamına daraltılmadı. İlk ünlem ve düşmanca karşılama ironisi korunur.",
+      "Yönetim kurulu corporate board anlamındadır;will hear gelecek tehdididir,gerçek raporlama olayı değildir.",
+      "Guess çıkarım tonu ve personally/bizzat korunur;ek öldürme veya hakaret eklenmez.",
+      "Kısa kuru Ne talihsizlik tonu korunur;Glitch duygu öneki veya neden eklenmez.",
+      "Dur emri ve Sen kimsin sorusu korunur.",
+      "Aynı restricted-zone EN,gruntın yalnız çalışanlara izin veren komşu repliğiyle tutarlı erişim kısıtı olarak çevrildi.",
+      "Letheia Corp,mevcut görev/AI ve LOCKED Letheia Corporation adıyla karşılanır;yalnız çalışanlar kısıtı korunur.",
+      "Aynı şirket-casusu suçlaması biohazard ile aynı TRdir;rakip şirket kimliği eklenmez.",
+      "Scientistın aynı kaynak uyarısında erişim kısıtı korundu;tekrarlı EN için aynı TR kullanıldı.",
+      "Aynı ID sorusu biohazard ile aynı TRdir;oyuncunun gerçek kimliği okunmuş sayılmaz."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All14EN/TR variants and occurrences manually reviewed against5complete NPCs,Fleet/Facility maps,quests/AI and6linked radio texts plus unchanged FUspawner/dialog helpers.4fields/4expressions corrected;all20633prior catalog fields unchanged.",
+    "Three restricted-zone occurrences express unauthorized entry rather than banning every entrant;boss more guests means additional guests,not merely again. Other10fields retained;2uniqueEN corrected.",
+    "Existing Attack!/Saldır! and Letheia Corporation LOCKED reused.9new fullsource reply locks,total1304;no prior terms or generic corporate/Corp mapping changed. Existing legacy spider label unchanged.",
+    "All5NPCs inherit missing vanilla hostile;FUhostilefu is not substituted as verified active consumer. Boss hylotl/default is SPEAKER species. Facility static boss is Hylotl,not proof of live dialogue.",
+    "Fleet31staticselectedhuman NPCs/6grunt parameter-spawners;Facility18static/12selected/6other/21parameter-spawners14grunt7biohazard. Configured stock is not actual spawn count. Actual GIDs map FUtile34/object/script. npcParameter or {} is not assumed self.npcParams forwarding or repaired.",
+    "Fleet21tilesets/20missingpacked;Facility22/21missingpacked. One radio stagehand each links6messages,all read as context. Separate lethialabs is not claimed a selected-NPC consumer. Missing poisonexplosionknockback.config dependency not read.",
+    "Spy is an accusation,ID a question,board reporting a future threat. No profession,ID interaction,quest/reward/spawn/wire outcome or new mechanics asserted. No context/TM/preserve/format exceptions added. LQA NOT TESTED. No Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

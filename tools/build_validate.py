@@ -193,6 +193,11 @@ V097_PENGUINHIGHWAY_FIELDS = {(r['asset'], r['pointer']) for r in _V097_MANIFEST
 if len(V097_PENGUINHIGHWAY_FIELDS) != 16 or len(_V097_MANIFEST['translations']) != 16:
     raise ValueError('v0.97 Penguin Highway manifest field inventory drift')
 
+_V098_MANIFEST = json.loads(Path(__file__).with_name('v098_translations.json').read_text(encoding='utf-8'))
+V098_LETHEIA_FIELDS = {(r['asset'], r['pointer']) for r in _V098_MANIFEST['translations']}
+if len(V098_LETHEIA_FIELDS) != 14 or len(_V098_MANIFEST['translations']) != 14:
+    raise ValueError('v0.98 Letheia manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -835,6 +840,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V098_LETHEIA_FIELDS:
+        return True
     if (a,p) in V097_PENGUINHIGHWAY_FIELDS:
         return True
     if (a,p) in V096_COLOURFUL_FIELDS:
