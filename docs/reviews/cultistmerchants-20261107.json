@@ -1,0 +1,734 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-07",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 28,
+  "run_id": "fu-ten-20261106",
+  "run_round": 6,
+  "base_commit": "61d1bd7e2adb14c3781cd058af586798c903875d",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 4,
+    "context_groups": 4,
+    "unique_english_strings": 4,
+    "assets": {
+      "npcs/tenants/fucultistart.npctype": 2,
+      "npcs/tenants/fucultistbuilder.npctype": 2
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 4,
+    "dialogue_events": {},
+    "dialogue_fields": 0,
+    "title_fields": 4,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 54,
+    "live_runtime_visibility_verified": false
+  },
+  "changes": {
+    "fields": 0,
+    "sentences_including_repeated_fields": 0,
+    "unique_source_strings_corrected": 0,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 0,
+    "total_corrected_sentences": 0,
+    "count_method": "All4translations retained after full individual review;0corrected fields or expressions."
+  },
+  "new_locked_terms": 4,
+  "new_locked_names": [
+    "Inspired by nightmares",
+    "Artist",
+    "The Building Blocks of Madness",
+    "Eldritch Temple Construction"
+  ],
+  "reused_locked_names": [
+    "Eldritch",
+    "Madness"
+  ],
+  "reused_proper_names": [],
+  "locked_total": 1353,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "d0d0b79cdf6399ff3980b87174f947b203137d3175b9932a34a3b586eb72123b",
+  "luna_original_packet_sha256": "43562d936d2de4f52388f9a3a787e1daa9925dc00d691f93cd53e18794441528",
+  "approved_rows_sha256": "778ff972b4494b89cc798e02de4c884895f6ac1bd2df7e7d5f028001cd497054",
+  "corrections": [],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "43562d936d2de4f52388f9a3a787e1daa9925dc00d691f93cd53e18794441528",
+    "filled_units": 4
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 4,
+    "context_units": 4,
+    "qa": {
+      "catalog_units_checked": 36042,
+      "raw_units_checked": 115,
+      "locked_terms": 1353
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All4EN/TR windowtitle variants and4occurrences in2complete NPCs fully reviewed;all4TR retained,0corrections.54relatedreview fields excluded. Actualtenant/pool definitions are not live spawn/inventory/UI proof;LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/tenants/fucultistart.npctype",
+        "note": "Complete NPC/tenant/eldermerchant config read;merchant pool patch selected fucultistart/futemplemerchant writes read as context only. No goods added to translation scope,missing vanilla UI/base not claimed read."
+      },
+      {
+        "source": "fu_source/npcs/tenants/fucultistbuilder.npctype",
+        "note": "Complete NPC/tenant/eldermerchant config read;merchant pool patch selected fucultistart/futemplemerchant writes read as context only. No goods added to translation scope,missing vanilla UI/base not claimed read."
+      },
+      {
+        "source": "fu_source/tenants/darkkizku/elderart.tenant",
+        "note": "Complete NPC/tenant/eldermerchant config read;merchant pool patch selected fucultistart/futemplemerchant writes read as context only. No goods added to translation scope,missing vanilla UI/base not claimed read."
+      },
+      {
+        "source": "fu_source/tenants/darkkizku/cultist_temple_builder.tenant",
+        "note": "Complete NPC/tenant/eldermerchant config read;merchant pool patch selected fucultistart/futemplemerchant writes read as context only. No goods added to translation scope,missing vanilla UI/base not claimed read."
+      },
+      {
+        "source": "fu_source/dialog/eldermerchant.config",
+        "note": "Complete NPC/tenant/eldermerchant config read;merchant pool patch selected fucultistart/futemplemerchant writes read as context only. No goods added to translation scope,missing vanilla UI/base not claimed read."
+      },
+      {
+        "source": "fu_source/npcs/merchantpools.config.patch",
+        "note": "Complete NPC/tenant/eldermerchant config read;merchant pool patch selected fucultistart/futemplemerchant writes read as context only. No goods added to translation scope,missing vanilla UI/base not claimed read."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/tenants/fucultistart.npctype",
+        "type": "fucultistart",
+        "base_type": "merchant",
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/tenants/fucultistart.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/tenants/fucultistart.npctype",
+            "en": "  Inspired by nightmares",
+            "luna_tr": "  Kâbuslardan ilham alan",
+            "approved_tr": "  Kâbuslardan ilham alan",
+            "reason": "Inspired by nightmares sanatçı unvanını niteleyen Kâbuslardan ilham alan fragmenti olarak korundu. Kâbus yeni bir varlık,statü,uyku sonucu veya eşya mekaniği sayılmadı;başlangıçtaki iki boşluk aynı."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/tenants/fucultistart.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/tenants/fucultistart.npctype",
+            "en": "  Artist",
+            "luna_tr": "  Sanatçı",
+            "approved_tr": "  Sanatçı",
+            "reason": "Artist mağaza penceresindeki rol/unvan olarak Sanatçı biçiminde korundu. Ressam gibi yalnız tek sanat dalına daraltılmadı ve İngilizce eklenmedi. Yeni kayıt tam kaynak Artist değerini denetler;genel cümle içi artist eşlemesi zorlanmaz."
+          }
+        ],
+        "merchant_categories": {
+          "override": [
+            "fucultistart"
+          ]
+        }
+      },
+      {
+        "asset": "npcs/tenants/fucultistbuilder.npctype",
+        "type": "fucultistbuilder",
+        "base_type": "merchant",
+        "fields": 2,
+        "entries": [
+          {
+            "unit_index": 2,
+            "asset": "npcs/tenants/fucultistbuilder.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+            "origin": "npcs/tenants/fucultistbuilder.npctype",
+            "en": "  The Building Blocks of Madness",
+            "luna_tr": "  Deliliğin Yapı Taşları",
+            "approved_tr": "  Deliliğin Yapı Taşları",
+            "reason": "The Building Blocks of Madness hem yapı malzemeleri hem temel öğeler kelime oyununu Deliliğin Yapı Taşları olarak korur. Gerçek futemplemerchant yapı malzemesi havuzu bağlamı okundu. Mevcut Madness/Delilik anlamı çekimli kullanıldı;gerçek para ödemesi,delilik kazanımı veya yeni statü etkisi çıkarılmadı."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/tenants/fucultistbuilder.npctype",
+            "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+            "origin": "npcs/tenants/fucultistbuilder.npctype",
+            "en": "  Eldritch Temple Construction",
+            "luna_tr": "  Tekinsiz Tapınak İnşaatı",
+            "approved_tr": "  Tekinsiz Tapınak İnşaatı",
+            "reason": "Eldritch Temple Construction dükkân pencere başlığı olarak Tekinsiz Tapınak İnşaatı biçiminde korundu. Eldritch mevcut tekinsiz sıfatıyla eşleşir;Elder teknik öneki yeni özel ad sayılmadı. Tamamlanmış bir inşaat,görev ya da belirli tapınağa erişim onayı değildir."
+          }
+        ],
+        "merchant_categories": {
+          "override": [
+            "futemplemerchant"
+          ]
+        }
+      }
+    ],
+    "direct_fields": 4,
+    "layered_fields": 0,
+    "complete_npc_family": true,
+    "related_review_rows": 54,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "files": {
+      "npcs/tenants/fucultistart.npctype": "4f7ee9bb0fbcf00e2bb8fef9aed7aa9b03cde21275ea7b392215c84436144bbc",
+      "npcs/tenants/fucultistbuilder.npctype": "30b74676b987204035bbccd3cb5513c3cefcd30f394cc3350593bc4c48d0036c",
+      "tenants/darkkizku/elderart.tenant": "47b61acc868c0b84446e24d7ec4f4bc19ca702d62e302302bf1766faa50565d2",
+      "tenants/darkkizku/cultist_temple_builder.tenant": "5c13d4348ce2bba1fb5ac6e8cb1d458ca958b8a3684f13f4effe30eeaae325b0",
+      "dialog/eldermerchant.config": "8f9378755783c1dd966df2b07d349f28e30a41957bfe315c26b0792e2f8a98b5",
+      "npcs/merchantpools.config.patch": "9e02cafeeda0a2e33cd5c647af85aea5c9113330f7c3010d7794e5da342e0d8e"
+    },
+    "source_context": {
+      "status": "PREREAD_ONLY_NO_NEXT_PACKET_CREATED_OR_LANGUAGE_APPROVAL",
+      "files": {
+        "npcs/tenants/fucultistart.npctype": "4f7ee9bb0fbcf00e2bb8fef9aed7aa9b03cde21275ea7b392215c84436144bbc",
+        "npcs/tenants/fucultistbuilder.npctype": "30b74676b987204035bbccd3cb5513c3cefcd30f394cc3350593bc4c48d0036c",
+        "tenants/darkkizku/elderart.tenant": "47b61acc868c0b84446e24d7ec4f4bc19ca702d62e302302bf1766faa50565d2",
+        "tenants/darkkizku/cultist_temple_builder.tenant": "5c13d4348ce2bba1fb5ac6e8cb1d458ca958b8a3684f13f4effe30eeaae325b0",
+        "dialog/eldermerchant.config": "8f9378755783c1dd966df2b07d349f28e30a41957bfe315c26b0792e2f8a98b5",
+        "npcs/merchantpools.config.patch": "9e02cafeeda0a2e33cd5c647af85aea5c9113330f7c3010d7794e5da342e0d8e"
+      },
+      "selected_pool_writes": [
+        {
+          "operation_index": 45,
+          "op": "add",
+          "path": "/futemplemerchant",
+          "value": [
+            [
+              0,
+              [
+                {
+                  "item": {
+                    "name": "elderbaseboard"
+                  },
+                  "price": 60
+                },
+                {
+                  "item": {
+                    "name": "elderplatform"
+                  },
+                  "price": 60
+                },
+                {
+                  "item": {
+                    "name": "elderfloormaterial"
+                  },
+                  "price": 60
+                },
+                {
+                  "item": {
+                    "name": "elderblockmaterial"
+                  },
+                  "price": 40
+                },
+                {
+                  "item": {
+                    "name": "elderblock2material"
+                  },
+                  "price": 40
+                },
+                {
+                  "item": {
+                    "name": "elderbrickmaterial"
+                  },
+                  "price": 50
+                },
+                {
+                  "item": {
+                    "name": "elderbricks2"
+                  },
+                  "price": 50
+                },
+                {
+                  "item": {
+                    "name": "eldertile"
+                  },
+                  "price": 50
+                },
+                {
+                  "item": {
+                    "name": "elderroof"
+                  },
+                  "price": 50
+                },
+                {
+                  "item": {
+                    "name": "elderpillar1material"
+                  },
+                  "price": 70
+                },
+                {
+                  "item": {
+                    "name": "elderpillarcapmaterial"
+                  },
+                  "price": 70
+                },
+                {
+                  "item": {
+                    "name": "elderlightsensor"
+                  },
+                  "price": 50
+                },
+                {
+                  "item": {
+                    "name": "elderliquidsensor"
+                  },
+                  "price": 50
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "operation_index": 54,
+          "op": "add",
+          "path": "/fucultistart",
+          "value": [
+            [
+              0,
+              [
+                {
+                  "item": {
+                    "name": "nicepaper"
+                  },
+                  "rarity": 0.017
+                },
+                {
+                  "item": {
+                    "name": "attunedpaper"
+                  },
+                  "rarity": 0.0034
+                },
+                {
+                  "item": {
+                    "name": "leather"
+                  },
+                  "rarity": 0.085
+                },
+                {
+                  "item": {
+                    "name": "canvas"
+                  },
+                  "rarity": 0.017
+                },
+                {
+                  "item": {
+                    "name": "fuamberchunk"
+                  },
+                  "rarity": 0.0034
+                },
+                {
+                  "item": {
+                    "name": "firedclay"
+                  },
+                  "rarity": 0.085
+                },
+                {
+                  "item": {
+                    "name": "coalore"
+                  },
+                  "rarity": 0.074
+                },
+                {
+                  "item": {
+                    "name": "crayonblueback"
+                  },
+                  "rarity": 0.00059
+                },
+                {
+                  "item": {
+                    "name": "crayonredback"
+                  },
+                  "rarity": 0.00059
+                },
+                {
+                  "item": {
+                    "name": "crayonyellowback"
+                  },
+                  "rarity": 0.00059
+                },
+                {
+                  "item": {
+                    "name": "crayonpurpleback"
+                  },
+                  "rarity": 0.00059
+                },
+                {
+                  "item": {
+                    "name": "crayongreenback"
+                  },
+                  "rarity": 0.00059
+                },
+                {
+                  "item": {
+                    "name": "crayonorangeback"
+                  },
+                  "rarity": 0.00059
+                },
+                {
+                  "item": {
+                    "name": "smallcrayonbox"
+                  },
+                  "rarity": 0.074
+                },
+                {
+                  "item": {
+                    "name": "waxcandle"
+                  },
+                  "rarity": 0.003
+                },
+                {
+                  "item": {
+                    "name": "bluecandle"
+                  },
+                  "rarity": 0.003
+                },
+                {
+                  "item": {
+                    "name": "redcandle"
+                  },
+                  "rarity": 0.003
+                },
+                {
+                  "item": {
+                    "name": "ghostcandle"
+                  },
+                  "rarity": 0.003
+                },
+                {
+                  "item": {
+                    "name": "insaneramblings"
+                  },
+                  "rarity": 0.042
+                },
+                {
+                  "item": {
+                    "name": "bizarreerotica"
+                  },
+                  "rarity": 0.042
+                },
+                {
+                  "item": {
+                    "name": "bizarrefiction"
+                  },
+                  "rarity": 0.042
+                },
+                {
+                  "item": {
+                    "name": "impossibletheories"
+                  },
+                  "rarity": 0.0085
+                },
+                {
+                  "item": {
+                    "name": "booksaboutbees"
+                  },
+                  "rarity": 0.0085
+                },
+                {
+                  "item": {
+                    "name": "madequation"
+                  },
+                  "rarity": 0.0017
+                },
+                {
+                  "item": {
+                    "name": "bloodritual"
+                  },
+                  "rarity": 0.0017
+                },
+                {
+                  "item": {
+                    "name": "eldertome"
+                  },
+                  "rarity": 0.00034
+                },
+                {
+                  "item": {
+                    "name": "elderpainting1"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting2"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting3"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting4"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting5"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting6"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting7"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting8"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting9"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting10"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "elderpainting11"
+                  },
+                  "rarity": 0.0099
+                },
+                {
+                  "item": {
+                    "name": "paintingrandom2"
+                  },
+                  "rarity": 0.002
+                },
+                {
+                  "item": {
+                    "name": "carving"
+                  },
+                  "rarity": 0.033
+                },
+                {
+                  "item": {
+                    "name": "tentaclestatue"
+                  },
+                  "rarity": 0.0066
+                },
+                {
+                  "item": {
+                    "name": "elderidol"
+                  },
+                  "rarity": 0.0066
+                },
+                {
+                  "item": {
+                    "name": "starspawnstatue"
+                  },
+                  "rarity": 0.0066
+                },
+                {
+                  "item": {
+                    "name": "starspawnstatue2"
+                  },
+                  "rarity": 0.0066
+                },
+                {
+                  "item": {
+                    "name": "starspawnstatue3"
+                  },
+                  "rarity": 0.0066
+                },
+                {
+                  "item": {
+                    "name": "elderthingstatue"
+                  },
+                  "rarity": 0.0066
+                },
+                {
+                  "item": {
+                    "name": "elderthingstatue2"
+                  },
+                  "rarity": 0.00026
+                },
+                {
+                  "item": {
+                    "name": "elderstatue"
+                  },
+                  "rarity": 0.00026
+                },
+                {
+                  "item": {
+                    "name": "cthulhuplush"
+                  },
+                  "rarity": 0.0013
+                },
+                {
+                  "item": {
+                    "name": "elderrelic1"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic2"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic3"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic4"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic5"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic6"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic7"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic8"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic9"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic10"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic11"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic12"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic13"
+                  },
+                  "rarity": 0.0026
+                },
+                {
+                  "item": {
+                    "name": "elderrelic14"
+                  },
+                  "rarity": 0.0026
+                }
+              ]
+            ]
+          ]
+        }
+      ],
+      "tenant_definitions": [
+        {
+          "asset": "tenants/darkkizku/elderart.tenant",
+          "species": "fudarkizku",
+          "type": "fucultistart"
+        },
+        {
+          "asset": "tenants/darkkizku/cultist_temple_builder.tenant",
+          "species": "fudarkizku",
+          "type": "fucultistbuilder"
+        }
+      ],
+      "missing_vanilla": [
+        "npcs/merchant.npctype",
+        "npcs/bmain.lua",
+        "interface/merchant/merchant.config",
+        "npcs/merchantpools.config"
+      ],
+      "active_merchant_ui_or_spawn_consumer_verified": false,
+      "live_spawn_verified": false,
+      "source_scope_notes": [
+        "Two title/subtitle fields per complete NPC;four original baseline source fields,not new object/item rows.",
+        "Artist pool and temple construction pool read as context only;configured goods/prices/weights are not actual spawned inventory proof.",
+        "Eldritch existing LOCKED adjective is tekinsiz;Elder technical asset prefix is not automatically Eldritch.",
+        "Building blocks preserves construction-material wordplay;no automatic completed building or new madness mechanic.",
+        "Inspired by nightmares identifies artistic inspiration;no nightmare entity or sleep mechanic implied.",
+        "Both NPCs refer to complete eldermerchant fictional-language config;it is context only and no extra dialogue fields selected.",
+        "Merchant window leading two spaces must be reviewed with source;do not change technical panes/pools or NPC IDs."
+      ],
+      "lqa": "NOT TESTED"
+    },
+    "terminology_notes": [
+      "Inspired by nightmares sanatçı unvanını niteleyen Kâbuslardan ilham alan fragmenti olarak korundu. Kâbus yeni bir varlık,statü,uyku sonucu veya eşya mekaniği sayılmadı;başlangıçtaki iki boşluk aynı.",
+      "Artist mağaza penceresindeki rol/unvan olarak Sanatçı biçiminde korundu. Ressam gibi yalnız tek sanat dalına daraltılmadı ve İngilizce eklenmedi. Yeni kayıt tam kaynak Artist değerini denetler;genel cümle içi artist eşlemesi zorlanmaz.",
+      "The Building Blocks of Madness hem yapı malzemeleri hem temel öğeler kelime oyununu Deliliğin Yapı Taşları olarak korur. Gerçek futemplemerchant yapı malzemesi havuzu bağlamı okundu. Mevcut Madness/Delilik anlamı çekimli kullanıldı;gerçek para ödemesi,delilik kazanımı veya yeni statü etkisi çıkarılmadı.",
+      "Eldritch Temple Construction dükkân pencere başlığı olarak Tekinsiz Tapınak İnşaatı biçiminde korundu. Eldritch mevcut tekinsiz sıfatıyla eşleşir;Elder teknik öneki yeni özel ad sayılmadı. Tamamlanmış bir inşaat,görev ya da belirli tapınağa erişim onayı değildir."
+    ],
+    "leading_two_spaces_preserved": true,
+    "merchant_titles_not_spoken_dialogue": true,
+    "tenant_definitions_not_live_spawns": true,
+    "pool_entries_not_observed_inventory": true,
+    "extra_goods_translated": false
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All4EN/TR windowtitle variants and4occurrences in2complete cultist merchant NPCs manually reviewed. All4translations retained;0corrections. Previous20702catalog fields unchanged;total20706.2titles/2subtitles are UI labels,not spoken dialogue;54relatedreview fields excluded.",
+    "Inspired by nightmares remains artistic inspiration,not a new nightmare entity,sleep effect or item mechanic. Artist is the role/title Sanatci,not restricted to a single art medium. Both source and Turkish retain exactlytwo leading spaces.",
+    "Building Blocks of Madness preserves the construction-material/foundational wordplay as Deliligin Yapi Taslari. Eldritch Temple Construction is the storefront Tekinsiz Tapinak Insaati,not a completed quest or proof of temple access. Existing Madness/Delilik and Eldritch/tekinsiz terms are unchanged.",
+    "Four new complete UI text LOCKED,total1353. No existing term changed;Artist has no enforce_in_text or stem rule,so ordinary artist sentences remain free. No generic nightmare/build/temple mapping,context/TM/preserve/format exception or English sentence permission added.",
+    "Two actual tenant definitions bind the two selected types with fudarkizku species;these are configured references,not live spawns. Actualmerchantpools patch operation45/futemplemerchant and54/fucultistart were read as context only. Configured goods/prices/weights are not observed inventory;no item/object translations added.",
+    "Both complete NPCs reference the available eldermerchant fictional-language dialogue config,read as context only. Vanilla merchant base,npcs/bmain.lua,merchant UI config and base merchantpools config are absent;active merchant/UI consumption,spawn and inventory remain unverified. Other FU scripts are not substituted as active consumers.",
+    "Identity,equipment,prices,pools,tenant criteria,stats,rewards and gameplay unchanged;LQA NOT TESTED. All4fields belong to original52source-bound dialogue/UI list. No review/lua_review promotion. Allbaseline dialogue publications must finish before object/item drafts. No scheduler,Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

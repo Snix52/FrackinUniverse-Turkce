@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## v0.105.0 Beta — Tekinsiz kiracı tüccar başlıkları
+
+İki NPC dosyasında 4 yeni pencere metni, 4 bağlam ve 4 farklı kaynak eklendi: iki başlık ve iki alt başlık. Katalog 20.706 alana ulaştı; önceki 20.702 alan korundu. Tam Sol kaynak/dil incelemesinde dört Türkçe metin korundu, düzeltme yok. Dört yeni tam UI metni LOCKED; toplam 1.353. Mevcut Delilik ve tekinsiz karşılıkları ile baştaki iki boşluk korundu. 54 ilişkili inceleme alanı dışarıda. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/cultistmerchants-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V105_20261107.md)
+
 ## v0.104.0 Beta — Karakol kedi ziyaretçisi
 
 Bir NPC dosyasında 4 yeni konuşma, 4 bağlam ve 4 farklı kaynak eklendi. Katalog 20.702 alana ulaştı; önceki 20.698 alan korundu. Tam Sol kaynak/dil incelemesinde dört Türkçe replik korundu; düzeltme yok. Dört yeni tam replik LOCKED; toplam 1.349. Kaynaktaki patili kelime oyunu ve kedi sesi Türkçeye taşındı. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/catvisitor-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V104_20261107.md)
