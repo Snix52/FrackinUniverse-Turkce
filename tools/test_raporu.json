@@ -1,31 +1,31 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-06T22:16:17.066214+00:00",
-  "workflow_run_id": "42301269375",
-  "source_commit": "5af72fd752c8814d56bb5a72a73595518dd61672",
-  "translation_source_commit": "5af72fd752c8814d56bb5a72a73595518dd61672",
-  "translation_version": "0.102.0-beta",
+  "generated_at_utc": "2026-11-06T22:48:04.665764+00:00",
+  "workflow_run_id": "42305308949",
+  "source_commit": "9455d489fb1b4178658310eed7f708dba14f2b91",
+  "translation_source_commit": "9455d489fb1b4178658310eed7f708dba14f2b91",
+  "translation_version": "0.103.0-beta",
   "custom_game_assets": 14,
   "upstream_repository": "sayterdarkwynd/FrackinUniverse",
   "upstream_commit": "bb58383c0d16c1152e3439e606b39ff82288b586",
   "upstream_declared_version": "6.5.8",
   "localized_units": {
-    "structured_fields": 20690,
-    "patch_assets": 5131,
+    "structured_fields": 20698,
+    "patch_assets": 5135,
     "raw_override_assets": 10,
     "raw_script_strings": 126
   },
   "package": {
-    "path": "dist/FU_Turkce_v0.102.0_Beta.zip",
-    "bytes": 3017064,
-    "sha256": "fddfac41bfa8452cbe8135dc788ef395ae8c8e8278d035c8964fc9119ecbc203",
-    "git_blob_sha": "5d11fe08a97fe22fa282dfc4b8cb945b3e87b949",
+    "path": "dist/FU_Turkce_v0.103.0_Beta.zip",
+    "bytes": 3019221,
+    "sha256": "3220f37c2c6d55fdd188ed5d3a385763b846d134cbbfeb1a6a8d4cc45f03d4e1",
+    "git_blob_sha": "6b83f7924be2f26c7b3f2f4387d40ffb115d397d",
     "zip_integrity": "PASS",
     "root_install_tree_parity": "PASS"
   },
-  "install_tree_sha256": "840c062924bd96651b7215bb03bf316efd2b4453201c746be7b750f8f0c9de0e",
-  "build_inputs_sha256": "c44c9bdb4425007e219fa3ef286fcd1aad10d79cf1ae573ca79c8844e145528f",
-  "catalog_sha256": "bcd56113510c1e0a7467fece4b0e18507d49112ea6ced0123979e678f2b61356",
+  "install_tree_sha256": "25bdc84308b92ba5dcfd7e90c82504b93c88f14ad14ffa8c701e7f922b2acce0",
+  "build_inputs_sha256": "ca28bafa9a7510e37a0b6c68ded20473b0497805561bfedc77fa30781010bfd9",
+  "catalog_sha256": "7bdd7a62f4d01b4855951e40296acad953c6c13ebd2112bb79f4d94405709924",
   "static_qa": "PASS",
   "source_validation": {
     "status": "PASS",
@@ -34,12 +34,12 @@
     "layered_external_policy": "Existing ledger provenance retained; not an independent vanilla runtime test."
   },
   "in_game_lqa": "NOT TESTED",
-  "translated_display_fields": 20690,
-  "patched_assets": 5131,
+  "translated_display_fields": 20698,
+  "patched_assets": 5135,
   "raw_override_assets": 10,
   "raw_script_display_strings": 126,
-  "total_localized_display_units": 20816,
-  "target_assets_total": 5155,
+  "total_localized_display_units": 20824,
+  "target_assets_total": 5159,
   "categories": {
     "Araştırma arayüzü": 11,
     "Jeoloji": 84,
@@ -174,7 +174,8 @@
     "v0.99 Grimdark tarikatçı replikleri": 12,
     "v0.100 Büyük Arena konuşmaları": 12,
     "v0.101 Alien Jungle saldırı replikleri": 10,
-    "v0.102 Mikro zindan görev verenleri": 9
+    "v0.102 Mikro zindan görev verenleri": 9,
+    "v0.103 Protectorate FU yama konuşmaları": 8
   },
   "checks": {
     "static_qa": "PASS",
@@ -22178,6 +22179,70 @@
       "qa": {
         "layered_source": true,
         "source_patch": "npcs/dungeon/aviantomb/tombguard.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratehallstaff.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratehallstaff.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratehallstaff.npctype",
+      "pointer": "/scriptConfig/dialog/speak/default/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratehallstaff.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratehallstudent5.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratehallstudent5.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratehallstudent5.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/1",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratehallstudent5.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratehallstudent5.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratehallstudent5.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratelobbylounger.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/3",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratelobbylounger.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratelobbystudent2.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/0",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratelobbystudent2.npctype.patch"
+      }
+    },
+    {
+      "asset": "npcs/mission/protectoratelobbystudent2.npctype",
+      "pointer": "/scriptConfig/dialog/converse/default/default/2",
+      "qa": {
+        "layered_source": true,
+        "source_patch": "npcs/mission/protectoratelobbystudent2.npctype.patch"
       }
     }
   ]
