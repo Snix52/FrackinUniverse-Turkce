@@ -1,0 +1,2788 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-06",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 22,
+  "run_id": "fu-ten-20261104",
+  "run_round": 10,
+  "base_commit": "bc97e8f0ef8e241a6b115b450fdff122daa3f9fe",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 12,
+    "context_groups": 12,
+    "unique_english_strings": 6,
+    "assets": {
+      "npcs/forestoffae/armoredgrimdarkcultist.npctype": 6,
+      "npcs/forestoffae/grimdarkcultist.npctype": 6
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 12,
+    "dialogue_events": {
+      "attack": 12
+    },
+    "dialogue_fields": 12,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 0
+  },
+  "changes": {
+    "fields": 0,
+    "sentences_including_repeated_fields": 0,
+    "unique_source_strings_corrected": 0,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 0,
+    "total_corrected_sentences": 0,
+    "count_method": "All 12 reviewed translations retained. Zero corrected fields, independent sentences or short expressions."
+  },
+  "new_locked_terms": 6,
+  "new_locked_names": [
+    "The Shadow will consume all!",
+    "I'll melt your face off!",
+    "The Corruption spreads!",
+    "Speak the shadow words of pain!",
+    "Nothing...everything!",
+    "No more tears. Only darkness."
+  ],
+  "reused_locked_names": [],
+  "reused_proper_names": [],
+  "locked_total": 1310,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "c55da904b77767262fbd70bb330d9860371e92a761314002260d1e5b8e23c23d",
+  "luna_original_packet_sha256": "d27b3f058c24f1cc21f62c684bfa5fc494ebd18a55621eb44a86b8fa93c1039a",
+  "approved_rows_sha256": "03ff9273c7640bd7d67b494f5ab64d4569b6410d2e5748bf68870285e2dcbd01",
+  "corrections": [],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "d27b3f058c24f1cc21f62c684bfa5fc494ebd18a55621eb44a86b8fa93c1039a",
+    "filled_units": 12
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 12,
+    "context_units": 12,
+    "qa": {
+      "catalog_units_checked": 35940,
+      "raw_units_checked": 115,
+      "locked_terms": 1310
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All12EN/TR variants and12occurrences in2complete NPCs manually reviewed. All12TR retained;0corrections.50static references/13maps and17radio texts considered. Missing vanilla/runtime limitations and LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/forestoffae/armoredgrimdarkcultist.npctype",
+        "note": "Complete NPC and all six EN/TR occurrences reviewed. Identical attack/default/default lists retain identical TR. hostilefu parent available; vanilla base/hostileguard/combat missing. Identity/equipment/stats unchanged."
+      },
+      {
+        "source": "fu_source/npcs/forestoffae/grimdarkcultist.npctype",
+        "note": "Complete NPC and all six EN/TR occurrences reviewed. Identical attack/default/default lists retain identical TR. hostilefu parent available; vanilla base/hostileguard/combat missing. Identity/equipment/stats unchanged."
+      },
+      {
+        "source": "fu_source/npcs/hostilefu.npctype; fu_source/scripts/actions/dialog.lua",
+        "note": "Actual FU parent and dialog helpers read. Parent inherits missing vanilla base and refers missing hostileguard/combat.config. Helpers are not asserted as proven active behavior consumers. Default/default is speaker/target fallback, not a human-only utterance."
+      },
+      {
+        "source": "fu_source/dungeons/missions/forestoffae/forestoffae.json; fu_source/dungeons/missions/evernight/evernight.json; fu_source/dungeons/worldgen/fungalden/fungalden.dungeon; fu_source/dungeons/worldgen/fungalden/*.json; fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "All13actual selected-type reference maps and all17linked radio messages read.50static references:13Fae human,14Evernight Hylotl,23across11modularFungalDen parts human. Fae6radio stagehands/5IDs,Evernight12/12. Chance/maxSpawnCount/part definitions are not actual simultaneous spawn counts. Missing packed tilesets:20/21Fae,19/20Evernight,20/21eachFungalDenpart."
+      },
+      {
+        "source": "fu_source/quests/forestoffae.questtemplate; fu_source/quests/evernight.questtemplate; fu_source/ai/forestoffae.aimission; fu_source/ai/evernight.aimission; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/zb/newSail/data.config; fu_source/objects/questmaps/forestoffaemap.object; fu_source/objects/questmaps/evernightmap.object; fu_source/objects/questturnins/forestoffaeturnin.object; fu_source/objects/questturnins/evernightturnin.object",
+        "note": "Quest/AI/world/SAIL/map/turnin definitions reviewed. Shadow and Corruption are retained cultist rhetoric, with no new proper-entity identity or mechanics inferred. No quest/reward/trap/wire/door/death/radio outcome asserted."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+        "type": "armoredgrimdarkcultist",
+        "base_type": "hostilefu",
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "en": "The Shadow will consume all!",
+            "luna_tr": "Gölge her şeyi yutacak!",
+            "approved_tr": "Gölge her şeyi yutacak!",
+            "reason": "The Shadow will consume all! gelecekteki tarikat tehdididir. Gölge her şeyi yutacak! anlamı ve ünlemi korur; kaynakta olmayan boss/ırk/kimlik veya gerçekleşmiş sonuç eklenmez."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "en": "I'll melt your face off!",
+            "luna_tr": "Yüzünü eriteceğim!",
+            "approved_tr": "Yüzünü eriteceğim!",
+            "reason": "I'll melt your face off! doğrudan birinci tekil gelecek tehdididir. Yüzünü eriteceğim! yüz hedefini ve sertliği korur; yeni silah/stat/oynanış yeteneği iddiası değildir."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "en": "The Corruption spreads!",
+            "luna_tr": "Yozlaşma yayılıyor!",
+            "approved_tr": "Yozlaşma yayılıyor!",
+            "reason": "The Corruption spreads! yayılmakta olan yozlaşma söylemidir. Yozlaşma yayılıyor! görevde ormanı yozlaştırma bağlamıyla tutarlıdır; yeni enfeksiyon/etki sistemi veya özel kişi uydurulmaz."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "en": "Speak the shadow words of pain!",
+            "luna_tr": "Acının gölge sözlerini dile getir!",
+            "approved_tr": "Acının gölge sözlerini dile getir!",
+            "reason": "Speak the shadow words of pain! tekil emir ve ritüel söylemidir. Acının gölge sözlerini dile getir! emir kipini ve acı/gölge sözleri imgelerini korur; kaynak dışı büyü veya talimat eklenmez."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "en": "Nothing...everything!",
+            "luna_tr": "Hiçbir şey...her şey!",
+            "approved_tr": "Hiçbir şey...her şey!",
+            "reason": "Nothing...everything! eksiltili iki karşıt parçadır. Hiçbir şey...her şey! her iki kutbu ve üç noktayı korur; neden veya açıklama eklenmez."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/forestoffae/armoredgrimdarkcultist.npctype",
+            "en": "No more tears. Only darkness.",
+            "luna_tr": "Artık gözyaşı yok. Yalnızca karanlık.",
+            "approved_tr": "Artık gözyaşı yok. Yalnızca karanlık.",
+            "reason": "No more tears. Only darkness. iki kısa parçadır. Artık gözyaşı yok. Yalnızca karanlık. no more/only ayrımını ve iki noktayı korur; yeni eylem/özne eklenmez."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+        "type": "grimdarkcultist",
+        "base_type": "hostilefu",
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 6,
+            "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/forestoffae/grimdarkcultist.npctype",
+            "en": "The Shadow will consume all!",
+            "luna_tr": "Gölge her şeyi yutacak!",
+            "approved_tr": "Gölge her şeyi yutacak!",
+            "reason": "The Shadow will consume all! gelecekteki tarikat tehdididir. Gölge her şeyi yutacak! anlamı ve ünlemi korur; kaynakta olmayan boss/ırk/kimlik veya gerçekleşmiş sonuç eklenmez."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/forestoffae/grimdarkcultist.npctype",
+            "en": "I'll melt your face off!",
+            "luna_tr": "Yüzünü eriteceğim!",
+            "approved_tr": "Yüzünü eriteceğim!",
+            "reason": "I'll melt your face off! doğrudan birinci tekil gelecek tehdididir. Yüzünü eriteceğim! yüz hedefini ve sertliği korur; yeni silah/stat/oynanış yeteneği iddiası değildir."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/forestoffae/grimdarkcultist.npctype",
+            "en": "The Corruption spreads!",
+            "luna_tr": "Yozlaşma yayılıyor!",
+            "approved_tr": "Yozlaşma yayılıyor!",
+            "reason": "The Corruption spreads! yayılmakta olan yozlaşma söylemidir. Yozlaşma yayılıyor! görevde ormanı yozlaştırma bağlamıyla tutarlıdır; yeni enfeksiyon/etki sistemi veya özel kişi uydurulmaz."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/forestoffae/grimdarkcultist.npctype",
+            "en": "Speak the shadow words of pain!",
+            "luna_tr": "Acının gölge sözlerini dile getir!",
+            "approved_tr": "Acının gölge sözlerini dile getir!",
+            "reason": "Speak the shadow words of pain! tekil emir ve ritüel söylemidir. Acının gölge sözlerini dile getir! emir kipini ve acı/gölge sözleri imgelerini korur; kaynak dışı büyü veya talimat eklenmez."
+          },
+          {
+            "unit_index": 10,
+            "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/forestoffae/grimdarkcultist.npctype",
+            "en": "Nothing...everything!",
+            "luna_tr": "Hiçbir şey...her şey!",
+            "approved_tr": "Hiçbir şey...her şey!",
+            "reason": "Nothing...everything! eksiltili iki karşıt parçadır. Hiçbir şey...her şey! her iki kutbu ve üç noktayı korur; neden veya açıklama eklenmez."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/forestoffae/grimdarkcultist.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/5",
+            "origin": "npcs/forestoffae/grimdarkcultist.npctype",
+            "en": "No more tears. Only darkness.",
+            "luna_tr": "Artık gözyaşı yok. Yalnızca karanlık.",
+            "approved_tr": "Artık gözyaşı yok. Yalnızca karanlık.",
+            "reason": "No more tears. Only darkness. iki kısa parçadır. Artık gözyaşı yok. Yalnızca karanlık. no more/only ayrımını ve iki noktayı korur; yeni eylem/özne eklenmez."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 12,
+    "layered_fields": 0,
+    "related_review_rows": 0,
+    "complete_npc_family": true,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "behaviors/npc/hostileguard.behavior",
+      "dialog/combat.config"
+    ],
+    "missing_direct_dependencies": [],
+    "files": {
+      "dungeons/missions/evernight/evernight.json": "7d8912064e20bb40ab88bdb94bfb51cc3ff26363786cde3b5c08f7e34573811e",
+      "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+      "dungeons/missions/forestoffae/forestoffae.json": "ef650621223ef65fc1f7ab59ff2a9c9f51b75ac834b45558dce09726ae0d1e36",
+      "dungeons/worldgen/fungalden/bridge.json": "3268c88dba5c3766d7ceacba97c481d1b2a8a83602bc57b1271c020ea39d2b60",
+      "dungeons/worldgen/fungalden/connector3.json": "36fa7439de9dc141a84f4a34d461ece07bfb9ba4bc74094ba1f8b0125391d90b",
+      "dungeons/worldgen/fungalden/darkcellsgenerator.json": "5bc6feaad9638e03d02f209887ed86904988f6c5044d979d06ae49ed7b35da13",
+      "dungeons/worldgen/fungalden/darktunnel.json": "e90fe2089ed5c86174cbaa2c73a3f7e367767f2df36531fd688883195a90b681",
+      "dungeons/worldgen/fungalden/fungalhomeinterior1.json": "7d10631a3b1eb19dbbcf153c3ad6cec9183228ce4484c4ef8e8fbdf866d6d710",
+      "dungeons/worldgen/fungalden/fungalhomeinterior3.json": "4afe2a9a2a45c594dae2c8e28f6f5337aa206886eae256aff88debec57a1be17",
+      "dungeons/worldgen/fungalden/fungalhomeinterior4.json": "278a3acff2b5e835774a1e8852da2a207ee14676a42bc7a6a2923752279028a4",
+      "dungeons/worldgen/fungalden/sporguspit.json": "3a58cbe9e248d122ee36e6f74192f51d928c0c3bd2a4b988586caea4383983a6",
+      "dungeons/worldgen/fungalden/tunnel1.json": "762ac6e913ab4686cf908a8238f5aff89123b3ba9988130f9a0846bf4e74b934",
+      "dungeons/worldgen/fungalden/tunnel2.json": "8dc067cf5920eeadd6b2d08a4c7e7d003d2b4c9a38daf69626c74d2e8d0b77ff",
+      "dungeons/worldgen/fungalden/tunnel3.json": "e59f84dec63edcd9be3a365c8557abebc60c9c9b1783f05119edaed8f95ead90",
+      "quests/forestoffae.questtemplate": "791e4ee6cff36b26b9cebb2c9156f44e050c1e3f9ec4c8274b8a091a17dc9e9f",
+      "quests/evernight.questtemplate": "1181e83b9cb3fe17e6433999743e9ba7c78c334b5ba6cdb6bbbef5da85b71541",
+      "ai/forestoffae.aimission": "33ceacdacf3b057d8d49be34e6212d2058eb6354423df846a01243c7d4c599ae",
+      "ai/evernight.aimission": "d7243afdaa1bc4073956baf5688ba8ca65dafba88f10bf83c52ecdeeaeff2969",
+      "dungeons/missions/forestoffae/forestoffae.dungeon": "ceeb641b9431b8672dc0c182e35b065b6199633bd9924c02b013c601f8efb2eb",
+      "dungeons/missions/evernight/evernight.dungeon": "3ef197c7b8a21e2a442d2f9de4faf1aa71a315fe3b6cd5d222983a0faf4776f9",
+      "dungeons/worldgen/fungalden/fungalden.dungeon": "58116e2576667d0b616350f49618fe84c6156ff1a32faaeb9fd96bc6731c5903",
+      "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+      "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+      "radiomessages/missions.radiomessages.patch": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351",
+      "npcs/forestoffae/armoredgrimdarkcultist.npctype": "dc90c3c5786ae491dd7912d9d5c7fbe13c49edf04aea7a7d06cbc320b2acf34e",
+      "npcs/forestoffae/grimdarkcultist.npctype": "36f674ec1d988cf9dd792ddd29ca2d73640d4332ac01fe6c4ac00a806fabe2ca",
+      "npcs/hostilefu.npctype": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f",
+      "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0",
+      "objects/questmaps/forestoffaemap.object": "a0285c99da86c9d08950a475e87e143414deb848b2a0eb46727c8e7ee12e9b1e",
+      "objects/questmaps/evernightmap.object": "dc1dbca78148e820cd192cb8f9bcc2ac2f5bf5d720f976b481188c7c340e7e26",
+      "objects/questturnins/forestoffaeturnin.object": "c27f3dae6370cbb1da95d6b725277022b131665cb5dae1bcb534a3b6629b33d6",
+      "objects/questturnins/evernightturnin.object": "54c8a57a0641b75b63ac6d3bb67120e615308ab8a403609ffef08d980fb89aab",
+      "zb/newSail/data.config": "878b866b6bfc995807f508611170fa5bf879b8278a2515b5d81934c112ad7c9d"
+    },
+    "maps": [
+      {
+        "asset": "dungeons/missions/evernight/evernight.json",
+        "all_static_npcs": 55,
+        "selected_static_npcs": 14,
+        "selected_counts": {
+          "armoredgrimdarkcultist": 7,
+          "grimdarkcultist": 7
+        },
+        "selected": [
+          {
+            "layer": "monsters",
+            "object_id": 978,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 979,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 980,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 981,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 982,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 983,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 984,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 985,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 990,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 992,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 1000,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 1001,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 1002,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 1003,
+            "properties": {
+              "npc": "hylotl",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [
+          {
+            "layer": "objects",
+            "object_id": 1611,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight01\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight01"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1612,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight02\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight02"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1613,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight03\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight03"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1614,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight04\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight04"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1615,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight06\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight06"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1616,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight09\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight09"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1617,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight07\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight07"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1618,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight05\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight05"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1619,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight08\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight08"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1620,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight10\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight10"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1621,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight11\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight11"
+            ]
+          },
+          {
+            "layer": "objects",
+            "object_id": 1622,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"evernight12\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "evernight12"
+            ]
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 25,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 222,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 250,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "firstgid": 287,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 388,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 468,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 1909,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "firstgid": 2041,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2116,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2470,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2928,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "firstgid": 3240,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3537,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3553,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "firstgid": 3787,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3829,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 4033,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 4255,
+            "available": true
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+            "firstgid": 4316,
+            "available": false
+          }
+        ],
+        "missing_tilesets": 19
+      },
+      {
+        "asset": "dungeons/missions/forestoffae/forestoffae.json",
+        "all_static_npcs": 14,
+        "selected_static_npcs": 13,
+        "selected_counts": {
+          "grimdarkcultist": 8,
+          "armoredgrimdarkcultist": 5
+        },
+        "selected": [
+          {
+            "layer": "objects",
+            "object_id": 201,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 202,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 69,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 70,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 71,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 458,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 459,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 620,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 621,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 692,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 693,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 694,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "monsters",
+            "object_id": 695,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [
+          {
+            "layer": "objects",
+            "object_id": 740,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"forestoffae01\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "forestoffae01"
+            ]
+          },
+          {
+            "layer": "wires",
+            "object_id": 742,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"forestoffae02\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "forestoffae02"
+            ]
+          },
+          {
+            "layer": "wires",
+            "object_id": 743,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"forestoffae03\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "forestoffae03"
+            ]
+          },
+          {
+            "layer": "wires",
+            "object_id": 744,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"forestoffae04\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "forestoffae04"
+            ]
+          },
+          {
+            "layer": "wires",
+            "object_id": 745,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"forestoffae05\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "forestoffae05"
+            ]
+          },
+          {
+            "layer": "wires",
+            "object_id": 746,
+            "properties": {
+              "parameters": "{ \"radioMessage\" : \"forestoffae05\" }",
+              "stagehand": "radiomessage"
+            },
+            "radio_ids": [
+              "forestoffae05"
+            ]
+          }
+        ],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 81,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 1497,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+            "firstgid": 1625,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 1700,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2046,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2488,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+            "firstgid": 2791,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3088,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3104,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+            "firstgid": 3335,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+            "firstgid": 3375,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3380,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3584,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+            "firstgid": 3801,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 3902,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 3930,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 4125,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 4147,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+            "firstgid": 4183,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 6108,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/bridge.json",
+        "all_static_npcs": 2,
+        "selected_static_npcs": 2,
+        "selected_counts": {
+          "grimdarkcultist": 1,
+          "armoredgrimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "objects",
+            "object_id": 76,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "objects",
+            "object_id": 77,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/connector3.json",
+        "all_static_npcs": 3,
+        "selected_static_npcs": 2,
+        "selected_counts": {
+          "grimdarkcultist": 1,
+          "armoredgrimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 42,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 43,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/darkcellsgenerator.json",
+        "all_static_npcs": 10,
+        "selected_static_npcs": 3,
+        "selected_counts": {
+          "armoredgrimdarkcultist": 3
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 84,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 85,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 86,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 25,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 222,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 259,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 287,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 597,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 640,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 720,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2161,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2293,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2647,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 3105,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3417,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3421,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3422,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3498,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3514,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3748,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3749,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3953,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 4175,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/darktunnel.json",
+        "all_static_npcs": 9,
+        "selected_static_npcs": 2,
+        "selected_counts": {
+          "grimdarkcultist": 1,
+          "armoredgrimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 70,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 71,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/fungalhomeinterior1.json",
+        "all_static_npcs": 2,
+        "selected_static_npcs": 1,
+        "selected_counts": {
+          "armoredgrimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "objects",
+            "object_id": 15,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/fungalhomeinterior3.json",
+        "all_static_npcs": 2,
+        "selected_static_npcs": 2,
+        "selected_counts": {
+          "armoredgrimdarkcultist": 1,
+          "grimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 13,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 14,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/fungalhomeinterior4.json",
+        "all_static_npcs": 3,
+        "selected_static_npcs": 1,
+        "selected_counts": {
+          "grimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 26,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/sporguspit.json",
+        "all_static_npcs": 2,
+        "selected_static_npcs": 2,
+        "selected_counts": {
+          "grimdarkcultist": 1,
+          "armoredgrimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 48,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 49,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/tunnel1.json",
+        "all_static_npcs": 5,
+        "selected_static_npcs": 2,
+        "selected_counts": {
+          "grimdarkcultist": 2
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 58,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 60,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 21,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 211,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 247,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 275,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 579,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 622,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 701,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2061,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2178,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2511,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 2932,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3230,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3234,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3235,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3311,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3327,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3548,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3549,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3753,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 3957,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/tunnel2.json",
+        "all_static_npcs": 5,
+        "selected_static_npcs": 3,
+        "selected_counts": {
+          "grimdarkcultist": 2,
+          "armoredgrimdarkcultist": 1
+        },
+        "selected": [
+          {
+            "layer": "mods and stagehands",
+            "object_id": 60,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "mods and stagehands",
+            "object_id": 61,
+            "properties": {
+              "npc": "human",
+              "typeName": "armoredgrimdarkcultist"
+            }
+          },
+          {
+            "layer": "mods and stagehands",
+            "object_id": 62,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 23,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 218,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 254,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 282,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 590,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 633,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 713,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2129,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2257,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2603,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 3045,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3348,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3352,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3353,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3429,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3445,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3676,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3677,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3881,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 4098,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/tunnel3.json",
+        "all_static_npcs": 6,
+        "selected_static_npcs": 3,
+        "selected_counts": {
+          "grimdarkcultist": 3
+        },
+        "selected": [
+          {
+            "layer": "npcs and monsters",
+            "object_id": 34,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 35,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          },
+          {
+            "layer": "npcs and monsters",
+            "object_id": 36,
+            "properties": {
+              "npc": "human",
+              "typeName": "grimdarkcultist"
+            }
+          }
+        ],
+        "radio_stagehands": [],
+        "tilesets": [
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+            "firstgid": 1,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+            "firstgid": 25,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+            "firstgid": 222,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+            "firstgid": 259,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+            "firstgid": 287,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+            "firstgid": 597,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+            "firstgid": 640,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+            "firstgid": 720,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+            "firstgid": 2161,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+            "firstgid": 2293,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+            "firstgid": 2647,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+            "firstgid": 3105,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+            "firstgid": 3417,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+            "firstgid": 3421,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+            "firstgid": 3422,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+            "firstgid": 3498,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+            "firstgid": 3514,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+            "firstgid": 3748,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+            "firstgid": 3749,
+            "available": false
+          },
+          {
+            "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+            "firstgid": 3953,
+            "available": false
+          },
+          {
+            "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+            "firstgid": 4175,
+            "available": true
+          }
+        ],
+        "missing_tilesets": 20
+      }
+    ],
+    "radio_messages": [
+      {
+        "op": "add",
+        "path": "/forestoffae01",
+        "value": {
+          "type": "mission",
+          "text": "What a beautiful sight! By the by, did you remember to bring a grappling hook? There's still time to turn back and get one if you forgot."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/forestoffae02",
+        "value": {
+          "type": "mission",
+          "text": "These must be the cultists we were warned about. I'm sure there're more of them in the forest."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/forestoffae03",
+        "value": {
+          "type": "mission",
+          "text": "Did the cultists set this trap?"
+        }
+      },
+      {
+        "op": "add",
+        "path": "/forestoffae04",
+        "value": {
+          "type": "mission",
+          "text": "The forest is sending forth its own guardians to fight the cultists. I don't think they recognise that you're trying to help them, though."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/forestoffae05",
+        "value": {
+          "type": "mission",
+          "text": "Keep on your toes. I'm detecting a massive energy signature ahead."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight01",
+        "value": {
+          "type": "mission",
+          "text": "The path forks here. I'm detecting lifesigns on both ends, so take your pick."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight02",
+        "value": {
+          "type": "mission",
+          "text": "A frog village. How quaint. The locals don't look friendly."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight03",
+        "value": {
+          "type": "mission",
+          "text": "This hatch seems to lead into some ruins. Maybe you should check around town to see if the locals have rigged some controls up."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight04",
+        "value": {
+          "type": "mission",
+          "text": "The door's locked, and the switch is on the inside of the bell tower. Is there a way to trigger, or failing that, destroy it?"
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight05",
+        "value": {
+          "type": "mission",
+          "text": "Cultists! Just what are they doing here?"
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight06",
+        "value": {
+          "type": "mission",
+          "text": "This frog looks pretty lonely, I think he'd like your company."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight07",
+        "value": {
+          "type": "mission",
+          "text": "Well, that was quite the sticky situation. Are you all right?"
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight08",
+        "value": {
+          "type": "mission",
+          "text": "This is an interesting one. Do you have a rocket launcher that can do guided rockets? I don't think you'll be able to reach the switch otherwise."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight09",
+        "value": {
+          "type": "mission",
+          "text": "There's no way around it - the console holding the door shut is also connected to the hatch in front of you. I'm sorry, but to proceed you'll need to incinerate the dog."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight10",
+        "value": {
+          "type": "mission",
+          "text": "Oh look, it's this again. To get at all those sweet, sweet pixels you'll need to consign this cat to a slow, painful, needless death."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight11",
+        "value": {
+          "type": "mission",
+          "text": "Do you smell an ambush? Because all that darkness sure does."
+        }
+      },
+      {
+        "op": "add",
+        "path": "/evernight12",
+        "value": {
+          "type": "mission",
+          "text": "Oh, I just figured out what else the cat console was linked to - the door you just came through. Good thing you weren't greedy and avoided being bitten in the ass by karma, eh?"
+        }
+      }
+    ],
+    "quest_objects": {
+      "objects/questmaps/forestoffaemap.object": {
+        "objectName": "forestoffaemap",
+        "printable": false,
+        "rarity": "Common",
+        "category": "decorative",
+        "price": 200,
+        "description": "Just where does this lead?",
+        "shortdescription": "Strange Map",
+        "race": "generic",
+        "apexDescription": "This promises to be interesting.",
+        "avianDescription": "A map that shows me the way to a location of interest.",
+        "floranDescription": "Floran usssesss map to get to placesss.",
+        "glitchDescription": "Excitement. Where will the directions on this map take me?",
+        "humanDescription": "Right, let's go where this map shows me. What's the worst that could happen?",
+        "hylotlDescription": "Following the directions on maps of dubious origin is generally not advisable.",
+        "novakidDescription": "This makes me hunger for adventure!",
+        "inventoryIcon": "medievalmap2icon.png",
+        "orientations": [
+          {
+            "dualImage": "medievalmap2.png:<color>",
+            "imagePosition": [
+              -20,
+              -20
+            ],
+            "frames": 1,
+            "animationCycle": 0.5,
+            "spaceScan": 0.1,
+            "anchors": [
+              "background"
+            ]
+          }
+        ],
+        "offeredQuests": [
+          "forestoffae.gearup"
+        ],
+        "questIndicatorPosition": [
+          0,
+          0
+        ]
+      },
+      "objects/questmaps/evernightmap.object": {
+        "objectName": "evernightmap",
+        "printable": false,
+        "rarity": "Common",
+        "category": "decorative",
+        "price": 200,
+        "description": "Just where does this lead?",
+        "shortdescription": "Strange Map",
+        "race": "generic",
+        "apexDescription": "This promises to be interesting.",
+        "avianDescription": "A map that shows me the way to a location of interest.",
+        "floranDescription": "Floran usssesss map to get to placesss.",
+        "glitchDescription": "Excitement. Where will the directions on this map take me?",
+        "humanDescription": "Right, let's go where this map shows me. What's the worst that could happen?",
+        "hylotlDescription": "Following the directions on maps of dubious origin is generally not advisable.",
+        "novakidDescription": "This makes me hunger for adventure!",
+        "inventoryIcon": "medievalmap4icon.png",
+        "orientations": [
+          {
+            "dualImage": "medievalmap4.png:<color>",
+            "imagePosition": [
+              -20,
+              -20
+            ],
+            "frames": 1,
+            "animationCycle": 0.5,
+            "spaceScan": 0.1,
+            "anchors": [
+              "background"
+            ]
+          }
+        ],
+        "offeredQuests": [
+          "evernight.gearup"
+        ],
+        "questIndicatorPosition": [
+          0,
+          0
+        ]
+      },
+      "objects/questturnins/forestoffaeturnin.object": {
+        "objectName": "forestoffaeturnin",
+        "colonyTags": [
+          "hoard",
+          "valuable",
+          "pretty"
+        ],
+        "rarity": "Rare",
+        "printable": false,
+        "description": "A turn-in item for a quest!",
+        "shortdescription": "Turn in the quest!",
+        "race": "glitch",
+        "category": "decorative",
+        "price": 350,
+        "breakDropOptions": [
+          [
+            [
+              "diamond",
+              1,
+              {}
+            ]
+          ]
+        ],
+        "apexDescription": "Finally! My goal!",
+        "avianDescription": "It seems like the end of the line is here.",
+        "floranDescription": "Ssstab time over already?",
+        "glitchDescription": "Saddened. It seems my adventure is over already.",
+        "humanDescription": "There's nowhere left to go. This is it, I guess.",
+        "hylotlDescription": "All journeys must come to an end.",
+        "novakidDescription": "It's over already?",
+        "turnInQuests": [
+          "forestoffae.gearup"
+        ],
+        "inventoryIcon": "ancienttempleturninicon.png",
+        "orientations": [
+          {
+            "dualImage": "ancienttempleturnin.png:<color>",
+            "imagePosition": [
+              -8,
+              0
+            ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [
+              "bottom"
+            ]
+          }
+        ]
+      },
+      "objects/questturnins/evernightturnin.object": {
+        "objectName": "evernightturnin",
+        "colonyTags": [
+          "hoard",
+          "valuable",
+          "pretty"
+        ],
+        "rarity": "Rare",
+        "printable": false,
+        "description": "A turn-in item for a quest!",
+        "shortdescription": "Turn in the quest!",
+        "race": "glitch",
+        "category": "decorative",
+        "price": 350,
+        "breakDropOptions": [
+          [
+            [
+              "diamond",
+              1,
+              {}
+            ]
+          ]
+        ],
+        "apexDescription": "Finally! My goal!",
+        "avianDescription": "It seems like the end of the line is here.",
+        "floranDescription": "Ssstab time over already?",
+        "glitchDescription": "Saddened. It seems my adventure is over already.",
+        "humanDescription": "There's nowhere left to go. This is it, I guess.",
+        "hylotlDescription": "All journeys must come to an end.",
+        "novakidDescription": "It's over already?",
+        "turnInQuests": [
+          "evernight.gearup"
+        ],
+        "inventoryIcon": "ancienttempleturninicon.png",
+        "orientations": [
+          {
+            "dualImage": "ancienttempleturnin.png:<color>",
+            "imagePosition": [
+              -8,
+              0
+            ],
+            "frames": 1,
+            "animationCycle": 1.0,
+            "spaceScan": 0.1,
+            "anchors": [
+              "bottom"
+            ]
+          }
+        ]
+      }
+    },
+    "sail_reference_source": "zb/newSail/data.config: /ai/forestoffae.aimission with forestoffae.gearup; /ai/evernight.aimission with evernight.gearup",
+    "terminology_notes": [
+      "The Shadow will consume all! gelecekteki tarikat tehdididir. Gölge her şeyi yutacak! anlamı ve ünlemi korur; kaynakta olmayan boss/ırk/kimlik veya gerçekleşmiş sonuç eklenmez.",
+      "I'll melt your face off! doğrudan birinci tekil gelecek tehdididir. Yüzünü eriteceğim! yüz hedefini ve sertliği korur; yeni silah/stat/oynanış yeteneği iddiası değildir.",
+      "The Corruption spreads! yayılmakta olan yozlaşma söylemidir. Yozlaşma yayılıyor! görevde ormanı yozlaştırma bağlamıyla tutarlıdır; yeni enfeksiyon/etki sistemi veya özel kişi uydurulmaz.",
+      "Speak the shadow words of pain! tekil emir ve ritüel söylemidir. Acının gölge sözlerini dile getir! emir kipini ve acı/gölge sözleri imgelerini korur; kaynak dışı büyü veya talimat eklenmez.",
+      "Nothing...everything! eksiltili iki karşıt parçadır. Hiçbir şey...her şey! her iki kutbu ve üç noktayı korur; neden veya açıklama eklenmez.",
+      "No more tears. Only darkness. iki kısa parçadır. Artık gözyaşı yok. Yalnızca karanlık. no more/only ayrımını ve iki noktayı korur; yeni eylem/özne eklenmez."
+    ],
+    "generic_shadow_corruption_rules_added": false,
+    "actual_spawn_count_verified": false
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All 12 EN/TR variants and all 12 occurrences in both complete NPCs manually reviewed. All 12 translations retained; zero fields or expressions corrected. All 20647 prior catalog fields remain unchanged.",
+    "Six full-source reply locks added; total 1310. No old terms modified. No generic shadow/corruption rule, context exception, TM exception, preserve permission or format exception added.",
+    "Both NPCs inherit the actual FU hostilefu parent, which was read. Its vanilla base/hostileguard/combat.config dependencies are missing; FU dialog helpers are not asserted as verified active behavior consumers. Default/default covers speaker/target fallback, not a human-only line.",
+    "All 13 maps containing selected NPC types read: Fae 13 selected human NPCs (8 normal/5 armored) among 14 static NPCs; Evernight 14 Hylotl (7/7) among 55; 11 modular Fungal Den parts contain 23 human references (13/10). These 50 static references and chance/maxSpawnCount definitions are not actual simultaneous spawn counts.",
+    "Fae has 6 radio stagehands/5 unique IDs and Evernight 12/12; all 17 linked messages read as context only. Missing packed tilesets: Fae 20/21, Evernight 19/20, each selected Fungal Den part 20/21. Fungal Den selected parts have no linked radio messages.",
+    "Quest/AI, instance/dungeon worlds, SAIL, quest-map/turn-in objects and dungeon metadata reviewed. Shadow/Corruption rhetoric, direct threat, imperative, ellipsis and two short darkness/tears fragments retain their meaning without adding an entity identity or mechanics.",
+    "Identity, equipment, stats, rewards and gameplay unchanged. No live attack, spawn, AI, trap, wire, door, death or radio outcome verified. LQA NOT TESTED. No Steam/game/shutdown. This is the final authorized round; no packet23."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

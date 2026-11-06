@@ -198,6 +198,11 @@ V098_LETHEIA_FIELDS = {(r['asset'], r['pointer']) for r in _V098_MANIFEST['trans
 if len(V098_LETHEIA_FIELDS) != 14 or len(_V098_MANIFEST['translations']) != 14:
     raise ValueError('v0.98 Letheia manifest field inventory drift')
 
+_V099_MANIFEST = json.loads(Path(__file__).with_name('v099_translations.json').read_text(encoding='utf-8'))
+V099_FORESTOFFAE_FIELDS = {(r['asset'], r['pointer']) for r in _V099_MANIFEST['translations']}
+if len(V099_FORESTOFFAE_FIELDS) != 12 or len(_V099_MANIFEST['translations']) != 12:
+    raise ValueError('v0.99 grimdark cultist manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -840,6 +845,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V099_FORESTOFFAE_FIELDS:
+        return True
     if (a,p) in V098_LETHEIA_FIELDS:
         return True
     if (a,p) in V097_PENGUINHIGHWAY_FIELDS:

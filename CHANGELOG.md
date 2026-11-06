@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.99.0 Beta — Grimdark tarikatçı replikleri
+
+İki NPC dosyasında 12 yeni saldırı alanı, 12 bağlam ve 6 farklı kaynak metin eklendi. Katalog 20.659 alana ulaştı; önceki 20.647 alan korundu.
+
+Tam Sol dil/kaynak incelemesinde bütün Türkçeler korundu; düzeltme sayısı 0. Altı tam replik LOCKED olarak eklendi, toplam 1.310. Fae, Evernight ve Fungal Den kullanımları incelendi. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/forestoffae-20261106.json) · [Oyun kontrolü](docs/lqa/LQA_V099_20261106.md)
+
 ## v0.98.0 Beta — Letheia güvenlik replikleri
 
 Beş NPC dosyasında14yeni saldırı alanı/14bağlam/10farklı kaynak metin. Katalog20.647;önceki20.633alan aynı.
