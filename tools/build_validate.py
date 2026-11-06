@@ -208,6 +208,11 @@ V100_GRANDARENA_FIELDS = {(r['asset'], r['pointer']) for r in _V100_MANIFEST['tr
 if len(V100_GRANDARENA_FIELDS) != 12 or len(_V100_MANIFEST['translations']) != 12:
     raise ValueError('v0.100 Grand Arena manifest field inventory drift')
 
+_V101_MANIFEST = json.loads(Path(__file__).with_name('v101_translations.json').read_text(encoding='utf-8'))
+V101_ALIENJUNGLE_FIELDS = {(r['asset'], r['pointer']) for r in _V101_MANIFEST['translations']}
+if len(V101_ALIENJUNGLE_FIELDS) != 10 or len(_V101_MANIFEST['translations']) != 10:
+    raise ValueError('v0.101 Alien Jungle manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -850,6 +855,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V101_ALIENJUNGLE_FIELDS:
+        return True
     if (a,p) in V100_GRANDARENA_FIELDS:
         return True
     if (a,p) in V099_FORESTOFFAE_FIELDS:

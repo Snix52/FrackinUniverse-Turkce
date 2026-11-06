@@ -1,0 +1,5381 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-07",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 24,
+  "run_id": "fu-ten-20261106",
+  "run_round": 2,
+  "base_commit": "3ef14cd1901d190c802f8c2102025f93c9cf8d94",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 10,
+    "context_groups": 10,
+    "unique_english_strings": 10,
+    "assets": {
+      "npcs/alienjungle/alienjunglesavage.npctype": 5,
+      "npcs/alienjungle/alienjunglethornhide.npctype": 5
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 10,
+    "dialogue_events": {
+      "attack": 10
+    },
+    "dialogue_fields": 10,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 0
+  },
+  "changes": {
+    "fields": 1,
+    "sentences_including_repeated_fields": 1,
+    "unique_source_strings_corrected": 1,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 1,
+    "total_corrected_sentences": 1,
+    "count_method": "One field:aeons duration/residence expression corrected;all other clauses unchanged."
+  },
+  "new_locked_terms": 9,
+  "new_locked_names": [
+    "Sstab it! Sstab it!",
+    "Tribe iss sstrongest!",
+    "Protect village!",
+    "Feel mighty powerss!",
+    "Sstab! Sstab! And then sstab again!",
+    "Who daress intrude upon ssacred landss?",
+    "Sshiny thingss belongss to tribe! Not you!",
+    "Tribe hass lived here for aeonss!",
+    "Devour meatss! Devour sshiniess! Floran becomess powerful!"
+  ],
+  "reused_locked_names": [
+    "Attack!"
+  ],
+  "reused_proper_names": [],
+  "locked_total": 1329,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "f92bcae1efad9927f395807456383a3411d8a807565e297d3cc505cc30938658",
+  "luna_original_packet_sha256": "f27aa1dac733e02dc029300129e11493378f4eef45b690f3b901bbbb592356b2",
+  "approved_rows_sha256": "7229916164cf1aaa90ad96dbb228ab4d1fa3619df601796df54f7ada5aa6e4b3",
+  "corrections": [
+    {
+      "unit_index": 8,
+      "en": "Tribe hass lived here for aeonss!",
+      "before": "Kabile burada asssırlardır yaşıyor!",
+      "after": "Kabile burada çağlardır yaşamını sssürdürüyor!",
+      "occurrences": [
+        {
+          "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+          "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+          "origin": "npcs/alienjungle/alienjunglethornhide.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Aeons çok uzun çağları anlatır;asırlar ifadesi süreyi yüzyıllara daraltıyordu. Çağlardır yaşamını sürdürmek devam eden yerleşimi ve belirsiz uzun süreyi korur;belirli tarih/sayı veya ezelden beri var olma iddiası eklenmedi. Floran tıslaması sssürdürüyor üzerinde korundu."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "f27aa1dac733e02dc029300129e11493378f4eef45b690f3b901bbbb592356b2",
+    "filled_units": 10
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 10,
+    "context_units": 10,
+    "qa": {
+      "catalog_units_checked": 35986,
+      "raw_units_checked": 115,
+      "locked_terms": 1329
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All10EN/TR variants and10occurrences in2complete NPCs fully reviewed.1field/1temporal expression corrected.0relatedreview fields. Missingvanilla consumers and LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/alienjungle/alienjunglesavage.npctype",
+        "note": "Complete NPC and every selected attack variant reviewed. floran/default is SPEAKER species,not target. Identity,equipment,behavior and stats unchanged."
+      },
+      {
+        "source": "fu_source/npcs/alienjungle/alienjunglethornhide.npctype",
+        "note": "Complete NPC and every selected attack variant reviewed. floran/default is SPEAKER species,not target. Identity,equipment,behavior and stats unchanged."
+      },
+      {
+        "source": "fu_source/dungeons/missions/alienjungle/alienjungle.json; fu_source/dungeons/microdungeons/biomes/haunted/hauntedmini6.json; fu_source/dungeons/microdungeons/biomes/haunted/hauntedmini.dungeon; fu_source/radiomessages/missions.radiomessages.patch",
+        "note": "Brine Star21static/20selectedFloran=12savage+8thornhide;1AvianSvetlana excluded. Hauntedmini6 adds3savageFloran.23static refs are not live spawn counts. Seven radio stagehands/16unique messages read as context only.29tilesets/25missing and23/15 respectively."
+      },
+      {
+        "source": "fu_source/tilesets/extradungeons-custom/modstuff.json; fu_source/objects/wired/extranpcspawner/extrainvisiblenpcspawner.object; fu_source/objects/wired/extranpcspawner/extranpcspawner.lua; fu_source/npcs/hostilefu.npctype; fu_source/scripts/actions/dialog.lua",
+        "note": "ActualGID35/firstgid1/localid34 binds two wire-triggered thornhide parameter spawners/configuredstock4;not four proven live spawns. self.npcParams.level is computed but world.spawnNpc receives npcParameter or {};custom forwarding not verified and no gameplay repair. Savage uses actualFUhostilefu;thornhide uses missingvanillahostile. Missingbase/hostileguard/combat.config not claimed read. Dialog helper is not a confirmed active behavior consumer."
+      },
+      {
+        "source": "fu_source/quests/alienjungle.questtemplate; fu_source/ai/alienjungle.aimission; fu_source/objects/questmaps/alienjunglemap.object; fu_source/objects/questturnins/alienjungleturnin.object; fu_source/instance_worlds.config.patch; fu_source/dungeon_worlds.config.patch; fu_source/zb/newSail/data.config; fu_source/dungeons/missions/alienjungle/alienjungle.dungeon; fu_source/biomes/surface_detached/deadwood.biome; fu_source/biomes/surface_detached/goreforest.biome; fu_source/biomes/surface_detached/hauntedforest.biome; fu_source/biomes/surface_detached/hauntedgraveyard.biome; fu_source/biomes/surface_detached/murkyswamp.biome",
+        "note": "Actualquest/AI/SAIL/world/map/turnin and fivehauntedmini biomeplacement definitions read. FU GID40/localid39 links alienjungleturnin and alienjungle.gearup;not live completion. DungeonmaxSpawnCount/distribution references do not prove access or spawn. No unrelated fields added."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/alienjungle/alienjunglesavage.npctype",
+        "type": "alienjunglesavage",
+        "base_type": "hostilefu",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/alienjungle/alienjunglesavage.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/alienjungle/alienjunglesavage.npctype",
+            "en": "Sstab it! Sstab it!",
+            "luna_tr": "Sssapla! Sssapla!",
+            "approved_tr": "Sssapla! Sssapla!",
+            "reason": "İki kısa saldırı emri aynı sırayla ve Floran tıslamasıyla korundu. Tek başına Sapla! silah nesnesi eksiltili savaş emridir;önceki Büyük Arena düzeltmesindeki düşmanları saplamak gibi doğrudan yanlış nesne yapısı burada yoktur. NPCnin mızrak/kılıç seçeneği belirli yeni silah şartı sayılmadı."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/alienjungle/alienjunglesavage.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/1",
+            "origin": "npcs/alienjungle/alienjunglesavage.npctype",
+            "en": "Tribe iss sstrongest!",
+            "luna_tr": "Kabile en güçlüsssü!",
+            "approved_tr": "Kabile en güçlüsssü!",
+            "reason": "Kabilenin en güçlü olduğu iddiası ve üstünlük derecesi korunur;kabileye yeni özel ad veya muhataba ırk koşulu eklenmez."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/alienjungle/alienjunglesavage.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/2",
+            "origin": "npcs/alienjungle/alienjunglesavage.npctype",
+            "en": "Protect village!",
+            "luna_tr": "Köyü koru!",
+            "approved_tr": "Köyü koru!",
+            "reason": "Köyü koruma emri korunur. Kaynak bu kısa replikte uzatılmış s içermediği için Türkçeye zorunlu tıslama sözcüğü eklenmedi."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/alienjungle/alienjunglesavage.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/3",
+            "origin": "npcs/alienjungle/alienjunglesavage.npctype",
+            "en": "Feel mighty powerss!",
+            "luna_tr": "Muazzam güçleri hissset!",
+            "approved_tr": "Muazzam güçleri hissset!",
+            "reason": "Mighty powers muazzam güçler olarak saldırı tehdidi düzeyinde korunur. İlahi varlık,belirli yetenek veya ölçülen hasar/etki eklenmedi."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/alienjungle/alienjunglesavage.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/4",
+            "origin": "npcs/alienjungle/alienjunglesavage.npctype",
+            "en": "Sstab! Sstab! And then sstab again!",
+            "luna_tr": "Sssapla! Sssapla! Sonra bir daha sssapla!",
+            "approved_tr": "Sssapla! Sssapla! Sonra bir daha sssapla!",
+            "reason": "Üç ayrı saplama emri/tekrar parçası ve sonra bir daha sırası korunur. Eksiltili Floran saldırı söylemi,canlı saldırı mekaniği onayı değildir."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+        "type": "alienjunglethornhide",
+        "base_type": "hostile",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "pointer": "/scriptConfig/dialog/attack/default/default/0",
+            "origin": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "en": "Attack!",
+            "luna_tr": "Saldır!",
+            "approved_tr": "Saldır!",
+            "reason": "Attack! mevcut tam kaynak LOCKED ve katalogdaki diğer saldırı bağlamlarıyla karşılaştırıldı;Saldır! aynen korundu. Default/default konuşmacı ve muhatap fallback dalıdır."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/0",
+            "origin": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "en": "Who daress intrude upon ssacred landss?",
+            "luna_tr": "Kutsssal topraklara izinsiz girmeye kim cüret eder?",
+            "approved_tr": "Kutsssal topraklara izinsiz girmeye kim cüret eder?",
+            "reason": "Kutsal topraklara izinsiz girmeye cüret edenin sorulması,soru biçimi ve Floran tıslaması korunur. Floran/default konuşmacı türü dalıdır;hedef Floran değildir."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/1",
+            "origin": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "en": "Sshiny thingss belongss to tribe! Not you!",
+            "luna_tr": "Parlak şeyler kabileye ait! Sssana değil!",
+            "approved_tr": "Parlak şeyler kabileye ait! Sssana değil!",
+            "reason": "Parlak şeylerin kabileye ait olması ve muhataba ait olmaması iki kısa karşıt parça olarak korundu. Yeni eşya kimliği veya para birimi çıkarılmadı."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/2",
+            "origin": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "en": "Tribe hass lived here for aeonss!",
+            "luna_tr": "Kabile burada asssırlardır yaşıyor!",
+            "approved_tr": "Kabile burada çağlardır yaşamını sssürdürüyor!",
+            "reason": "Aeons çok uzun çağları anlatır;asırlar ifadesi süreyi yüzyıllara daraltıyordu. Çağlardır yaşamını sürdürmek devam eden yerleşimi ve belirsiz uzun süreyi korur;belirli tarih/sayı veya ezelden beri var olma iddiası eklenmedi. Floran tıslaması sssürdürüyor üzerinde korundu."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "pointer": "/scriptConfig/dialog/attack/floran/default/3",
+            "origin": "npcs/alienjungle/alienjunglethornhide.npctype",
+            "en": "Devour meatss! Devour sshiniess! Floran becomess powerful!",
+            "luna_tr": "Etleri yut! Parlak nesssneleri yut! Floran güçlenir!",
+            "approved_tr": "Etleri yut! Parlak nesssneleri yut! Floran güçlenir!",
+            "reason": "Etleri ve parlak nesneleri yutma iki emri ile Floranın güçlenmesi üçüncü kişi söylemi olarak korundu. Yutma tehdidi/iddiasından metal emilimi,buff,yeni eşya veya gerçek güç artışı mekaniği çıkarılmadı."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 10,
+    "layered_fields": 0,
+    "complete_npc_family": true,
+    "related_review_rows": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "files": {
+      "npcs/alienjungle/alienjunglesavage.npctype": "5d66c134beb4b268d240e3ac2852a3dcbfb2165f13a85f575a96a0f738369657",
+      "npcs/alienjungle/alienjunglethornhide.npctype": "f7168d9f2cc175211dcb78a97d77b8d6d26b5a041f2e5dd0d983348fbcc46baf",
+      "npcs/hostilefu.npctype": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f",
+      "dungeons/missions/alienjungle/alienjungle.json": "a5c6e983cf68ecb351edeebb683cf902f3894801f7515d1c55c3253247e20765",
+      "dungeons/missions/alienjungle/alienjungle.dungeon": "a31f60ae74db4e583871a1f6ab404e317c545644b098eb08817dcc8af00026f2",
+      "dungeons/microdungeons/biomes/haunted/hauntedmini6.json": "5ef8db2e550b4c6a75d65b2923375b5152e181e9411a43f46c119677d3e830bb",
+      "dungeons/microdungeons/biomes/haunted/hauntedmini.dungeon": "15541a7e836d52da3d7111662db088e5868bce9c761343bd27ee5d6b9b212e00",
+      "quests/alienjungle.questtemplate": "67ea74e0550efef376774dea5f338a25d94429648786dc85f264b764b873c699",
+      "ai/alienjungle.aimission": "bc6564c29c7cdee56af45e51e112d51e59febc547a59cbb37e2bc1e089b5722d",
+      "objects/questmaps/alienjunglemap.object": "48695f337809cfb8f3d2ff71c089a0754d519149f8329ff4695d6623e63a2273",
+      "objects/questturnins/alienjungleturnin.object": "1db0cb6050d1947763d0d5b34fda4ac184c64f525674e1d790f5652fe745bd89",
+      "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+      "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+      "radiomessages/missions.radiomessages.patch": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351",
+      "zb/newSail/data.config": "878b866b6bfc995807f508611170fa5bf879b8278a2515b5d81934c112ad7c9d",
+      "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0",
+      "biomes/surface_detached/deadwood.biome": "49dede177a90a5be6cd1c70bf96ab5601962294faa9f202302f2af8156b6b7b0",
+      "biomes/surface_detached/goreforest.biome": "bb36debdd00e7ec6015361b5fbdb64a619f31bb500d5354f3cb425d12b14c24b",
+      "biomes/surface_detached/hauntedforest.biome": "8ce1fcecc6be0c3111e3c5d3a0601f7b74d51d90f3b75cbbdd9c4347de15f077",
+      "biomes/surface_detached/hauntedgraveyard.biome": "b256ccfa8bdf6fef2057ca885af14aec02fc955505ba5b98b07498d8349c89a4",
+      "biomes/surface_detached/murkyswamp.biome": "e61aa0a304ef8396efb3658fae0837a6f8b39a395bc07f78b18e72739723e099",
+      "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+      "objects/wired/extranpcspawner/extrainvisiblenpcspawner.object": "72417a0a8204cb915645bb57471c648df84a362f97cbad92862c71ff3ffedd62",
+      "objects/wired/extranpcspawner/extranpcspawner.lua": "db8cc1e3fa8b2b5c1cdc0b9f76352db0ab53e62208ecbaa61af91a7720df77f9"
+    },
+    "mission": {
+      "status": "PREREAD_ONLY_FULL_LANGUAGE_REVIEW_PENDING",
+      "files": {
+        "npcs/alienjungle/alienjunglesavage.npctype": "5d66c134beb4b268d240e3ac2852a3dcbfb2165f13a85f575a96a0f738369657",
+        "npcs/alienjungle/alienjunglethornhide.npctype": "f7168d9f2cc175211dcb78a97d77b8d6d26b5a041f2e5dd0d983348fbcc46baf",
+        "npcs/hostilefu.npctype": "1f5a0f92a1f7530d23f955565934197dda9118342cb10c77a32ad62c6754978f",
+        "dungeons/missions/alienjungle/alienjungle.json": "a5c6e983cf68ecb351edeebb683cf902f3894801f7515d1c55c3253247e20765",
+        "dungeons/missions/alienjungle/alienjungle.dungeon": "a31f60ae74db4e583871a1f6ab404e317c545644b098eb08817dcc8af00026f2",
+        "dungeons/microdungeons/biomes/haunted/hauntedmini6.json": "5ef8db2e550b4c6a75d65b2923375b5152e181e9411a43f46c119677d3e830bb",
+        "dungeons/microdungeons/biomes/haunted/hauntedmini.dungeon": "15541a7e836d52da3d7111662db088e5868bce9c761343bd27ee5d6b9b212e00",
+        "quests/alienjungle.questtemplate": "67ea74e0550efef376774dea5f338a25d94429648786dc85f264b764b873c699",
+        "ai/alienjungle.aimission": "bc6564c29c7cdee56af45e51e112d51e59febc547a59cbb37e2bc1e089b5722d",
+        "objects/questmaps/alienjunglemap.object": "48695f337809cfb8f3d2ff71c089a0754d519149f8329ff4695d6623e63a2273",
+        "objects/questturnins/alienjungleturnin.object": "1db0cb6050d1947763d0d5b34fda4ac184c64f525674e1d790f5652fe745bd89",
+        "instance_worlds.config.patch": "32412f361e9eb96b7994aef0920102c5566c4801096d6d1cc59d9240496d0083",
+        "dungeon_worlds.config.patch": "8f8c2734684b57fa5ae75fc05f4b466c271bd4faefb2feb1a8489d3d07b1ede3",
+        "radiomessages/missions.radiomessages.patch": "fb3d4c0e65e2b15115ffdcca0e11a8ffb0acab9a03968be7d2a552ab2cdab351",
+        "zb/newSail/data.config": "878b866b6bfc995807f508611170fa5bf879b8278a2515b5d81934c112ad7c9d",
+        "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0",
+        "biomes/surface_detached/deadwood.biome": "49dede177a90a5be6cd1c70bf96ab5601962294faa9f202302f2af8156b6b7b0",
+        "biomes/surface_detached/goreforest.biome": "bb36debdd00e7ec6015361b5fbdb64a619f31bb500d5354f3cb425d12b14c24b",
+        "biomes/surface_detached/hauntedforest.biome": "8ce1fcecc6be0c3111e3c5d3a0601f7b74d51d90f3b75cbbdd9c4347de15f077",
+        "biomes/surface_detached/hauntedgraveyard.biome": "b256ccfa8bdf6fef2057ca885af14aec02fc955505ba5b98b07498d8349c89a4",
+        "biomes/surface_detached/murkyswamp.biome": "e61aa0a304ef8396efb3658fae0837a6f8b39a395bc07f78b18e72739723e099",
+        "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+        "objects/wired/extranpcspawner/extrainvisiblenpcspawner.object": "72417a0a8204cb915645bb57471c648df84a362f97cbad92862c71ff3ffedd62",
+        "objects/wired/extranpcspawner/extranpcspawner.lua": "db8cc1e3fa8b2b5c1cdc0b9f76352db0ab53e62208ecbaa61af91a7720df77f9"
+      },
+      "maps": [
+        {
+          "asset": "dungeons/missions/alienjungle/alienjungle.json",
+          "static_npc_total": 21,
+          "static_npcs": [
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2001,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2000,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 1999,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2002,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2003,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2004,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2005,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2006,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2007,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2008,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2009,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2023,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2024,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2025,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2026,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2027,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2028,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2029,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2030,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2031,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2032,
+              "npc": "avian",
+              "seed": "1",
+              "typeName": "svetlana"
+            }
+          ],
+          "selected_static_npcs": [
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2001,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2000,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 1999,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2002,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2003,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2004,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2005,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2006,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2007,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2008,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2009,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2023,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2024,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2025,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2026,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2027,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2028,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2029,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2030,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 2031,
+              "npc": "floran",
+              "typeName": "alienjunglethornhide"
+            }
+          ],
+          "parameter_objects": [
+            {
+              "layer": "objects",
+              "object_id": 13,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -1
+                  ],
+                  [
+                    2,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 24,
+              "gid": 1590,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 37,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    0,
+                    -1
+                  ],
+                  [
+                    3,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 56,
+              "gid": 3722,
+              "parameters": {
+                "treasurePools": [
+                  "extrarations"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 68,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 78,
+              "gid": 4459,
+              "parameters": {
+                "treasurePools": [
+                  "extraalienjunglecodex1"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 80,
+              "gid": 674,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 81,
+              "gid": 675,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 82,
+              "gid": 678,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 83,
+              "gid": 678,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 122,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 149,
+              "gid": 445,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 151,
+              "gid": 513,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 152,
+              "gid": 521,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 153,
+              "gid": 520,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 154,
+              "gid": 554,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 155,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 156,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 162,
+              "gid": 2799,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 163,
+              "gid": 2802,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 164,
+              "gid": 2802,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 165,
+              "gid": 2819,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 166,
+              "gid": 2852,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 167,
+              "gid": 2858,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 181,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -7
+                  ],
+                  [
+                    2,
+                    7
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 182,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "pteropod2"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    4,
+                    2
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 4,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 190,
+              "gid": 4236,
+              "parameters": {
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 214,
+              "gid": 4236,
+              "parameters": {
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 241,
+              "gid": 2850,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 242,
+              "gid": 2850,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 245,
+              "gid": 2147484254,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 246,
+              "gid": 676,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 247,
+              "gid": 678,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 248,
+              "gid": 678,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 250,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -7
+                  ],
+                  [
+                    2,
+                    7
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 251,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "ixoling"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    0,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 252,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "ixoling"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    0,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 266,
+              "gid": 2782,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 268,
+              "gid": 2782,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 271,
+              "gid": 2850,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 272,
+              "gid": 2850,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 275,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 282,
+              "gid": 423,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 283,
+              "gid": 2147484182,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 284,
+              "gid": 2147484344,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 285,
+              "gid": 596,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 302,
+              "gid": 3712,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 303,
+              "gid": 3712,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 304,
+              "gid": 2147484308,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 309,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -4
+                  ],
+                  [
+                    2,
+                    4
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 349,
+              "gid": 4576,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 367,
+              "gid": 4082,
+              "parameters": {
+                "projectile": "clusterstatusprojectile",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "indiscriminate"
+                  },
+                  "power": 0,
+                  "speed": 0
+                },
+                "fireTime": 5.0
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 370,
+              "gid": 4335,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 390,
+              "gid": 1598,
+              "parameters": {
+                "defaultLightState": false,
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 396,
+              "gid": 4081,
+              "parameters": {
+                "projectile": "ancientboulderrolling",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "indiscriminate"
+                  },
+                  "power": 60,
+                  "speed": 20,
+                  "timeToLive": 3.0
+                },
+                "fireTime": 3.0
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 469,
+              "gid": 11,
+              "parameters": {
+                "projectileOptions": [
+                  {
+                    "projectileType": "extraessenceprojectile",
+                    "projectileParams": {}
+                  }
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 474,
+              "gid": 2147488105,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 479,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 498,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "tintic"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    3,
+                    2
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 3,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 499,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -8
+                  ],
+                  [
+                    2,
+                    8
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 500,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "monopus"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    3,
+                    2
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 3,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 509,
+              "gid": 445,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 510,
+              "gid": 463,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 527,
+              "gid": 4556,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 528,
+              "gid": 500,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 532,
+              "gid": 439,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 533,
+              "gid": 602,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 539,
+              "gid": 687,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 540,
+              "gid": 2147484234,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 541,
+              "gid": 465,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 542,
+              "gid": 435,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 543,
+              "gid": 576,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 544,
+              "gid": 627,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 545,
+              "gid": 531,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 546,
+              "gid": 523,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 547,
+              "gid": 3950,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 548,
+              "gid": 2147487626,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 549,
+              "gid": 3950,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 550,
+              "gid": 2147487626,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 551,
+              "gid": 2147487626,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 552,
+              "gid": 2147487598,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 553,
+              "gid": 3978,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 554,
+              "gid": 2147487626,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 579,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -5,
+                    -2
+                  ],
+                  [
+                    5,
+                    2
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 580,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -6,
+                    -2
+                  ],
+                  [
+                    6,
+                    2
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 582,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "taroni"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    4,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 583,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "taroni"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    4,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 584,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "taroni"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    4,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 599,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 600,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 601,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 608,
+              "gid": 11,
+              "parameters": {
+                "projectileOptions": [
+                  {
+                    "projectileType": "extraessenceprojectile",
+                    "projectileParams": {}
+                  }
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 610,
+              "gid": 2040,
+              "parameters": {
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 611,
+              "gid": 3950,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 612,
+              "gid": 3995,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 613,
+              "gid": 4013,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 614,
+              "gid": 2147487626,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 615,
+              "gid": 2147487661,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 616,
+              "gid": 3995,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 617,
+              "gid": 2147487661,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 618,
+              "gid": 2147487643,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 619,
+              "gid": 2147487598,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 640,
+              "gid": 2147488320,
+              "parameters": {
+                "treasurePools": [
+                  "basicChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 642,
+              "gid": 4710,
+              "parameters": {
+                "treasurePools": [
+                  "extraalienjunglecodex2"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 644,
+              "gid": 4702,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 647,
+              "gid": 2850,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 650,
+              "gid": 3712,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 651,
+              "gid": 3712,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 653,
+              "gid": 2147488359,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 667,
+              "gid": 678,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 668,
+              "gid": 2147484261,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 669,
+              "gid": 587,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 670,
+              "gid": 2147484240,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 671,
+              "gid": 591,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 672,
+              "gid": 598,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 673,
+              "gid": 598,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 674,
+              "gid": 609,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 675,
+              "gid": 647,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 676,
+              "gid": 2147484324,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 677,
+              "gid": 650,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 678,
+              "gid": 861,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 679,
+              "gid": 2147484298,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 680,
+              "gid": 649,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 681,
+              "gid": 861,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 682,
+              "gid": 648,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 683,
+              "gid": 2147484323,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 686,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 704,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -4
+                  ],
+                  [
+                    2,
+                    4
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 709,
+              "gid": 4459,
+              "parameters": {
+                "treasurePools": [
+                  "challengeChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 711,
+              "gid": 11,
+              "parameters": {
+                "projectileOptions": [
+                  {
+                    "projectileType": "extraessenceprojectile",
+                    "projectileParams": {}
+                  }
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 718,
+              "gid": 1229,
+              "parameters": {
+                "defaultLightState": false,
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 728,
+              "gid": 4080,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 2.0
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 729,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -20,
+                    -3
+                  ],
+                  [
+                    20,
+                    3
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 735,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -3,
+                    -1
+                  ],
+                  [
+                    3,
+                    1
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 746,
+              "gid": 499,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 747,
+              "gid": 2147484322,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 748,
+              "gid": 2147484323,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 749,
+              "gid": 2147484324,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 750,
+              "gid": 2147484297,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 751,
+              "gid": 2147484246,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 752,
+              "gid": 606,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 753,
+              "gid": 604,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 754,
+              "gid": 2147484239,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 755,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 781,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "ixoling"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    40,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 8,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 782,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "ixoling"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    -2
+                  ],
+                  "positionVariance": [
+                    40,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 8,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 783,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "ixoling"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    -4
+                  ],
+                  "positionVariance": [
+                    40,
+                    0
+                  ],
+                  "frequency": [
+                    1,
+                    2
+                  ],
+                  "stock": 8,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 821,
+              "gid": 2819,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 822,
+              "gid": 2147486506,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 823,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 824,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 825,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 826,
+              "gid": 441,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 827,
+              "gid": 861,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 828,
+              "gid": 861,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 829,
+              "gid": 861,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 830,
+              "gid": 539,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 831,
+              "gid": 2147484246,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 832,
+              "gid": 604,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 833,
+              "gid": 2147484234,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 863,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -67,
+                    0
+                  ],
+                  [
+                    -3,
+                    32
+                  ]
+                ],
+                "detectDamageTeam": {
+                  "type": "enemy"
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 866,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -67,
+                    -23
+                  ],
+                  [
+                    -3,
+                    9
+                  ]
+                ],
+                "detectDamageTeam": {
+                  "type": "enemy"
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 871,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    3,
+                    -7
+                  ],
+                  [
+                    67,
+                    25
+                  ]
+                ],
+                "detectDamageTeam": {
+                  "type": "enemy"
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 885,
+              "gid": 596,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 886,
+              "gid": 2147484182,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 890,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -4
+                  ],
+                  [
+                    2,
+                    4
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 899,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -1
+                  ],
+                  [
+                    2,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 934,
+              "gid": 2147487370,
+              "parameters": {
+                "treasurePools": [
+                  "extrarations"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 936,
+              "gid": 1598,
+              "parameters": {
+                "defaultLightState": false,
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 937,
+              "gid": 2147488224,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 948,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    0,
+                    -1
+                  ],
+                  [
+                    3,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 958,
+              "gid": 4576,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 970,
+              "gid": 1342,
+              "parameters": {
+                "defaultLightState": false,
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 999,
+              "gid": 2147488224,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1019,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -5
+                  ],
+                  [
+                    1,
+                    5
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1055,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1128,
+              "gid": 445,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1129,
+              "gid": 464,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1130,
+              "gid": 546,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1131,
+              "gid": 557,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1160,
+              "gid": 3585,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1161,
+              "gid": 3585,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1162,
+              "gid": 2147487233,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1163,
+              "gid": 3585,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1295,
+              "gid": 2147488224,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1298,
+              "gid": 423,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1299,
+              "gid": 2147484182,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1300,
+              "gid": 573,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1315,
+              "gid": 696,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1316,
+              "gid": 2147484333,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1319,
+              "gid": 708,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1340,
+              "gid": 698,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1341,
+              "gid": 686,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1342,
+              "gid": 632,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1343,
+              "gid": 493,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1344,
+              "gid": 2147484160,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1346,
+              "gid": 4619,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1359,
+              "gid": 4685,
+              "parameters": {
+                "treasurePools": [
+                  "basicChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1371,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -2,
+                    -10
+                  ],
+                  [
+                    2,
+                    10
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1372,
+              "gid": 4236,
+              "parameters": {
+                "detectDamageTeam": {
+                  "type": "enemy"
+                },
+                "detectArea": [
+                  [
+                    -18,
+                    -11
+                  ],
+                  [
+                    16,
+                    9
+                  ]
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1374,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "electricrangedminion"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    2,
+                    2
+                  ],
+                  "frequency": [
+                    2,
+                    3
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1377,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "firerangedminion"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    2,
+                    2
+                  ],
+                  "frequency": [
+                    2,
+                    3
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1378,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "icerangedminion"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    2,
+                    2
+                  ],
+                  "frequency": [
+                    2,
+                    3
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1421,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1422,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1423,
+              "gid": 3554,
+              "parameters": {
+                "startingStage": 2
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1424,
+              "gid": 485,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1425,
+              "gid": 2147484153,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1426,
+              "gid": 477,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1433,
+              "gid": 11,
+              "parameters": {
+                "projectileOptions": [
+                  {
+                    "projectileType": "extraessenceprojectile",
+                    "projectileParams": {}
+                  }
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1434,
+              "gid": 11,
+              "parameters": {
+                "projectileOptions": [
+                  {
+                    "projectileType": "extraessenceprojectile",
+                    "projectileParams": {}
+                  }
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1439,
+              "gid": 2147485006,
+              "parameters": {
+                "defaultLightState": false,
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1459,
+              "gid": 2147488359,
+              "parameters": {
+                "treasurePools": [
+                  "floranmissiontreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1495,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1509,
+              "gid": 4110,
+              "parameters": {
+                "fireTime": 2.5,
+                "projectile": "freezetrapbeam"
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1511,
+              "gid": 4110,
+              "parameters": {
+                "fireTime": 2.5,
+                "projectile": "freezetrapbeam"
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1512,
+              "gid": 4110,
+              "parameters": {
+                "fireTime": 2.5,
+                "projectile": "freezetrapbeam"
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1513,
+              "gid": 4110,
+              "parameters": {
+                "fireTime": 2.5,
+                "projectile": "freezetrapbeam"
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1577,
+              "gid": 2799,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1578,
+              "gid": 2802,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1580,
+              "gid": 2819,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1582,
+              "gid": 2988,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1583,
+              "gid": 2999,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1613,
+              "gid": 4080,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 1.7
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1614,
+              "gid": 4080,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 2.0
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1615,
+              "gid": 4080,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 2.0
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1616,
+              "gid": 4080,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 2.0
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1617,
+              "gid": 4081,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 1.7
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1618,
+              "gid": 4081,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 1.7
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1619,
+              "gid": 4081,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 1.7
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1620,
+              "gid": 4081,
+              "parameters": {
+                "projectile": "spinningplasmabullet",
+                "projectileConfig": {
+                  "damageTeam": {
+                    "type": "enemy"
+                  },
+                  "power": 70,
+                  "speed": 60.0,
+                  "damageType": "environment"
+                },
+                "fireTime": 1.7
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1621,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -12,
+                    -12
+                  ],
+                  [
+                    13,
+                    21
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1630,
+              "gid": 435,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1631,
+              "gid": 2147484112,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1632,
+              "gid": 2147484129,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1634,
+              "gid": 514,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1635,
+              "gid": 530,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1636,
+              "gid": 2147484194,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1637,
+              "gid": 2147484235,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1638,
+              "gid": 2147484292,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1639,
+              "gid": 685,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1640,
+              "gid": 686,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1641,
+              "gid": 698,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1642,
+              "gid": 627,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1643,
+              "gid": 622,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1646,
+              "gid": 2147488105,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1647,
+              "gid": 2147488105,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1648,
+              "gid": 2147488105,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1664,
+              "gid": 4074,
+              "parameters": {
+                "beamDamage": {
+                  "damage": 60
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1672,
+              "gid": 4074,
+              "parameters": {
+                "beamDamage": {
+                  "damage": 60
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1694,
+              "gid": 528,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1698,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -25,
+                    -5
+                  ],
+                  [
+                    26,
+                    5
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1704,
+              "gid": 4556,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1705,
+              "gid": 4556,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1706,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "largefish"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    3,
+                    3
+                  ],
+                  "frequency": [
+                    2,
+                    4
+                  ],
+                  "stock": 3,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1707,
+              "gid": 3642,
+              "parameters": {
+                "spawner": {
+                  "monsterTypes": [
+                    "largefish"
+                  ],
+                  "monsterLevelOffset": 1,
+                  "monsterParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    3,
+                    3
+                  ],
+                  "frequency": [
+                    2,
+                    4
+                  ],
+                  "stock": 3,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1710,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -10
+                  ],
+                  [
+                    1,
+                    11
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1714,
+              "gid": 4074,
+              "parameters": {
+                "beamDamage": {
+                  "damage": 300
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1715,
+              "gid": 4074,
+              "parameters": {
+                "beamDamage": {
+                  "damage": 300
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1719,
+              "gid": 4202,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1729,
+              "gid": 594,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1730,
+              "gid": 587,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1731,
+              "gid": 554,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1732,
+              "gid": 533,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1733,
+              "gid": 645,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1734,
+              "gid": 2147484197,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1742,
+              "gid": 4459,
+              "parameters": {
+                "treasurePools": [
+                  "challengeChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1767,
+              "gid": 4556,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1768,
+              "gid": 4556,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1769,
+              "gid": 4556,
+              "parameters": {
+                "defaultLightState": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1771,
+              "gid": 1342,
+              "parameters": {
+                "defaultLightState": false,
+                "interactive": false
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1778,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -1
+                  ],
+                  [
+                    2,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1790,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    0,
+                    -1
+                  ],
+                  [
+                    3,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1825,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -67,
+                    0
+                  ],
+                  [
+                    -3,
+                    32
+                  ]
+                ],
+                "detectDamageTeam": {
+                  "type": "enemy"
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1861,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -3,
+                    -1
+                  ],
+                  [
+                    3,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ],
+                "detectDuration": 10
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1864,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -1
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ],
+                "detectDuration": 0.01
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1953,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "challengeChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1954,
+              "gid": 4459,
+              "parameters": {
+                "treasurePools": [
+                  "challengeChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1956,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "chestMoney"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1957,
+              "gid": 4459,
+              "parameters": {
+                "treasurePools": [
+                  "chestMoney"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1967,
+              "gid": 2147487370,
+              "parameters": {
+                "treasurePools": [
+                  "extrarations"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1980,
+              "gid": 4459,
+              "parameters": {
+                "treasurePools": [
+                  "extraalienjungleaugment"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1996,
+              "gid": 2147487304,
+              "parameters": {
+                "treasurePools": [
+                  "challengeChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1997,
+              "gid": 3656,
+              "parameters": {
+                "treasurePools": [
+                  "challengeChestTreasure"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 1998,
+              "gid": 4710,
+              "parameters": {
+                "treasurePools": [
+                  "extraalienjunglecodex3"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2010,
+              "gid": 35,
+              "parameters": {
+                "spawner": {
+                  "npcSpecies": [
+                    "floran"
+                  ],
+                  "npcTypes": [
+                    "alienjunglethornhide"
+                  ],
+                  "npcParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    0,
+                    0
+                  ],
+                  "frequency": [
+                    4,
+                    4
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2013,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -1,
+                    -14
+                  ],
+                  [
+                    1,
+                    16
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2018,
+              "gid": 35,
+              "parameters": {
+                "spawner": {
+                  "npcSpecies": [
+                    "floran"
+                  ],
+                  "npcTypes": [
+                    "alienjunglethornhide"
+                  ],
+                  "npcParams": {
+                    "aggressive": true
+                  },
+                  "position": [
+                    0,
+                    0
+                  ],
+                  "positionVariance": [
+                    0,
+                    0
+                  ],
+                  "frequency": [
+                    4,
+                    4
+                  ],
+                  "stock": 2,
+                  "trigger": "wire",
+                  "outOfSight": false
+                }
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2020,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -4,
+                    -4
+                  ],
+                  [
+                    1,
+                    5
+                  ]
+                ],
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2059,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "ffbasicTreasure",
+                  "salvageComponent",
+                  "salvageComponent",
+                  "salvageComponent"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2060,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "ffbasicTreasure",
+                  "salvageComponent",
+                  "salvageComponent",
+                  "salvageComponent"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2061,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "ffbasicTreasure",
+                  "salvageComponent",
+                  "salvageComponent",
+                  "salvageComponent"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2062,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "ffbasicTreasure",
+                  "salvageComponent",
+                  "salvageComponent",
+                  "salvageComponent"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2063,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "ffbasicTreasure",
+                  "salvageComponent",
+                  "salvageComponent",
+                  "salvageComponent"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2064,
+              "gid": 2147488107,
+              "parameters": {
+                "treasurePools": [
+                  "ffbasicTreasure",
+                  "salvageComponent",
+                  "salvageComponent",
+                  "salvageComponent"
+                ]
+              }
+            },
+            {
+              "layer": "objects",
+              "object_id": 2084,
+              "gid": 2799,
+              "parameters": {
+                "unbreakable": true
+              }
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 834,
+              "gid": null,
+              "parameters": {
+                "aggressive": false
+              }
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 838,
+              "gid": null,
+              "parameters": {
+                "aggressive": false
+              }
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 839,
+              "gid": null,
+              "parameters": {
+                "aggressive": false
+              }
+            },
+            {
+              "layer": "monsters and npcs",
+              "object_id": 840,
+              "gid": null,
+              "parameters": {
+                "aggressive": false
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 113,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 114,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 115,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 116,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 205,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 219,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 314,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 315,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 321,
+              "gid": 4236,
+              "parameters": {
+                "detectEntityTypes": [
+                  "player"
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 719,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 720,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 861,
+              "gid": null,
+              "parameters": {
+                "elementalType": "poison"
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 874,
+              "gid": null,
+              "parameters": {
+                "music": [
+                  "/music/alienjungleboss.ogg"
+                ],
+                "uniqueId": "bossmusic"
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 875,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 877,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 878,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 983,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 984,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 986,
+              "gid": 4236,
+              "parameters": {
+                "detectArea": [
+                  [
+                    -3,
+                    0
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "detectDamageTeam": {
+                  "type": "passive"
+                }
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1074,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1075,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1320,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1321,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1611,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1612,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1748,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1749,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungle.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1807,
+              "gid": null,
+              "parameters": {
+                "elementalType": "shadow"
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1831,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienitem.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 1942,
+              "gid": null,
+              "parameters": {
+                "messageType": "playAltMusic",
+                "messageArgs": [
+                  [
+                    "/music/alienjungleboss.ogg"
+                  ],
+                  2.0
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2033,
+              "gid": null,
+              "parameters": {
+                "radioMessage": "alienjungle01"
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2034,
+              "gid": null,
+              "parameters": {
+                "radioMessage": "alienjungle03"
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2035,
+              "gid": null,
+              "parameters": {
+                "radioMessages": [
+                  "alienjungle02a",
+                  "alienjungle02b",
+                  "alienjungle02c"
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2036,
+              "gid": null,
+              "parameters": {
+                "radioMessages": [
+                  "alienjungle04a",
+                  "alienjungle04b"
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2037,
+              "gid": null,
+              "parameters": {
+                "radioMessages": [
+                  "alienjungle05a",
+                  "alienjungle05b"
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2039,
+              "gid": null,
+              "parameters": {
+                "radioMessages": [
+                  "alienjungle07a",
+                  "alienjungle07b",
+                  "alienjungle07c"
+                ]
+              }
+            },
+            {
+              "layer": "mods and stagehands",
+              "object_id": 2040,
+              "gid": null,
+              "parameters": {
+                "radioMessages": [
+                  "alienjungle08a",
+                  "alienjungle08b",
+                  "alienjungle08c",
+                  "alienjungle08d"
+                ]
+              }
+            },
+            {
+              "layer": "wires",
+              "object_id": 2056,
+              "gid": 38,
+              "parameters": {
+                "defaultSwitchState": true
+              }
+            }
+          ],
+          "radio_ids": [
+            "alienjungle01",
+            "alienjungle03",
+            "alienjungle02a",
+            "alienjungle02b",
+            "alienjungle02c",
+            "alienjungle04a",
+            "alienjungle04b",
+            "alienjungle05a",
+            "alienjungle05b",
+            "alienjungle07a",
+            "alienjungle07b",
+            "alienjungle07c",
+            "alienjungle08a",
+            "alienjungle08b",
+            "alienjungle08c",
+            "alienjungle08d"
+          ],
+          "tilesets": [
+            {
+              "firstgid": 1,
+              "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+              "available": true,
+              "resolved": "tilesets/extradungeons-custom/modstuff.json"
+            },
+            {
+              "firstgid": 62,
+              "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/miscellaneous.json"
+            },
+            {
+              "firstgid": 86,
+              "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/materials.json"
+            },
+            {
+              "firstgid": 283,
+              "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/supports.json"
+            },
+            {
+              "firstgid": 320,
+              "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/liquids.json"
+            },
+            {
+              "firstgid": 348,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/actionfigure.json"
+            },
+            {
+              "firstgid": 417,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/breakable.json"
+            },
+            {
+              "firstgid": 727,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/bug.json"
+            },
+            {
+              "firstgid": 770,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/crafting.json"
+            },
+            {
+              "firstgid": 850,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/decorative.json"
+            },
+            {
+              "firstgid": 2291,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/door.json"
+            },
+            {
+              "firstgid": 2423,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/furniture.json"
+            },
+            {
+              "firstgid": 2777,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/light.json"
+            },
+            {
+              "firstgid": 3235,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/other.json"
+            },
+            {
+              "firstgid": 3547,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/rail.json"
+            },
+            {
+              "firstgid": 3551,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/seed.json"
+            },
+            {
+              "firstgid": 3627,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/spawner.json"
+            },
+            {
+              "firstgid": 3643,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/storage.json"
+            },
+            {
+              "firstgid": 3877,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json"
+            },
+            {
+              "firstgid": 3878,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/teleporter.json"
+            },
+            {
+              "firstgid": 3920,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tool.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/tool.json"
+            },
+            {
+              "firstgid": 3928,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/trap.json"
+            },
+            {
+              "firstgid": 4132,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/wire.json"
+            },
+            {
+              "firstgid": 4354,
+              "source": "../../../../../assets/packed/tilesets/packed/huge-objects.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/huge-objects.json"
+            },
+            {
+              "firstgid": 4455,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-race/ancient.json"
+            },
+            {
+              "firstgid": 4618,
+              "source": "../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-race/floran.json"
+            },
+            {
+              "firstgid": 4813,
+              "source": "../../../tilesets/frackinuniverse-custom/fumaterials2.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fumaterials2.json"
+            },
+            {
+              "firstgid": 4937,
+              "source": "../../../tilesets/frackinuniverse-custom/fu_quests.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fu_quests.json"
+            },
+            {
+              "firstgid": 4958,
+              "source": "../../../tilesets/frackinuniverse-custom/fu_mine.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fu_mine.json"
+            }
+          ]
+        },
+        {
+          "asset": "dungeons/microdungeons/biomes/haunted/hauntedmini6.json",
+          "static_npc_total": 3,
+          "static_npcs": [
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1575,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1582,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1589,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            }
+          ],
+          "selected_static_npcs": [
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1575,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1582,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            },
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1589,
+              "npc": "floran",
+              "typeName": "alienjunglesavage"
+            }
+          ],
+          "parameter_objects": [
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1585,
+              "gid": 2147489239,
+              "parameters": {
+                "treasurePools": [
+                  "fuGenericQuestLoot"
+                ]
+              }
+            },
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1586,
+              "gid": 5601,
+              "parameters": {
+                "treasurePools": [
+                  "fuGenericQuestLootHigh"
+                ]
+              }
+            },
+            {
+              "layer": "monsters & npcs",
+              "object_id": 1588,
+              "gid": 5589,
+              "parameters": {
+                "treasurePools": [
+                  "fuGenericQuestLootMid"
+                ]
+              }
+            }
+          ],
+          "radio_ids": [],
+          "tilesets": [
+            {
+              "firstgid": 1,
+              "source": "../../../../../../assets/packed/tilesets/packed/materials.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/materials.json"
+            },
+            {
+              "firstgid": 196,
+              "source": "../../../../../../assets/packed/tilesets/packed/supports.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/supports.json"
+            },
+            {
+              "firstgid": 232,
+              "source": "../../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/miscellaneous.json"
+            },
+            {
+              "firstgid": 254,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/door.json"
+            },
+            {
+              "firstgid": 382,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/storage.json"
+            },
+            {
+              "firstgid": 613,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/wire.json"
+            },
+            {
+              "firstgid": 830,
+              "source": "../../../../tilesets/frackinuniverse-custom/fumaterials2.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fumaterials2.json"
+            },
+            {
+              "firstgid": 951,
+              "source": "../../../../tilesets/frackinuniverse-custom/fuplatforms.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fuplatforms.json"
+            },
+            {
+              "firstgid": 966,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/physics.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-type/physics.json"
+            },
+            {
+              "firstgid": 982,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-race/generic.json"
+            },
+            {
+              "firstgid": 2907,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_stations.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fu_stations.json"
+            },
+            {
+              "firstgid": 2978,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-race/glitch.json"
+            },
+            {
+              "firstgid": 3204,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-colonytag/dark.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-colonytag/dark.json"
+            },
+            {
+              "firstgid": 3242,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_objectsgeneric.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fu_objectsgeneric.json"
+            },
+            {
+              "firstgid": 3271,
+              "source": "../../../../tilesets/frackinuniverse-custom/elder_materials.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/elder_materials.json"
+            },
+            {
+              "firstgid": 3291,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_lights.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fu_lights.json"
+            },
+            {
+              "firstgid": 3293,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-race/floran.json"
+            },
+            {
+              "firstgid": 3488,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/furniture.json"
+            },
+            {
+              "firstgid": 3834,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/breakable.json"
+            },
+            {
+              "firstgid": 4142,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-category/decorative.json"
+            },
+            {
+              "firstgid": 5558,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_storage.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/fu_storage.json"
+            },
+            {
+              "firstgid": 5620,
+              "source": "../../../../tilesets/frackinuniverse-custom/elder_objects.json",
+              "available": true,
+              "resolved": "tilesets/frackinuniverse-custom/elder_objects.json"
+            },
+            {
+              "firstgid": 5714,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+              "available": false,
+              "resolved": "../../assets/packed/tilesets/packed/objects-by-race/ancient.json"
+            }
+          ]
+        }
+      ],
+      "radio_messages": [
+        {
+          "id": "alienjungle01",
+          "op": "add",
+          "path": "/alienjungle01",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthertalk.png:<frame>",
+            "text": "Hmm. Do you see that door to your left, dear? There's no handle, but I think an explosion could blast it apart. Missiles are traditional, but any explosive should do."
+          }
+        },
+        {
+          "id": "alienjungle03",
+          "op": "add",
+          "path": "/alienjungle03",
+          "value": {
+            "type": "mission",
+            "senderName": "Nuru",
+            "portraitImage": "/interface/chatbubbles/nuru.png:<frame>",
+            "text": "Watch out, the Floran of thiss region are famouss for being very ssavage. Even other floranss fear them."
+          }
+        },
+        {
+          "id": "alienjungle02a",
+          "op": "add",
+          "path": "/alienjungle02a",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthersad.png:<frame>",
+            "text": "A dead end? This isn't right..."
+          }
+        },
+        {
+          "id": "alienjungle02b",
+          "op": "add",
+          "path": "/alienjungle02b",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthertalk.png:<frame>",
+            "text": "Wait. Do you see that patch of floral ground there? The yellow ones? Try digging it up with your matter manipulator."
+          }
+        },
+        {
+          "id": "alienjungle02c",
+          "op": "add",
+          "path": "/alienjungle02c",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthertalk.png:<frame>",
+            "text": "Excellent work, dear! I think the lack of shielding was creating that irregularity. I'm sure there're more to be found - keep an eye out for odd changes in the walls!"
+          }
+        },
+        {
+          "id": "alienjungle04a",
+          "op": "add",
+          "path": "/alienjungle04a",
+          "value": {
+            "type": "mission",
+            "senderName": "Nuru",
+            "portraitImage": "/interface/chatbubbles/nuru.png:<frame>",
+            "text": "Ixodoom husbandry iss a revered sskill amongsst the floran. Ixolingss raissed in thesse cavernss are brought to other planetss to grow."
+          }
+        },
+        {
+          "id": "alienjungle04b",
+          "op": "add",
+          "path": "/alienjungle04b",
+          "value": {
+            "type": "mission",
+            "senderName": "Nuru",
+            "portraitImage": "/interface/chatbubbles/nuru.png:<frame>",
+            "text": "Do you remember the Ixodoom we fought? It may even have come from here!"
+          }
+        },
+        {
+          "id": "alienjungle05a",
+          "op": "add",
+          "path": "/alienjungle05a",
+          "value": {
+            "type": "mission",
+            "senderName": "Koichi",
+            "portraitImage": "/interface/chatbubbles/koichi.png:<frame>",
+            "text": "You have to wonder why ancient ruins are always filled with traps. Was it a major architectural movement amongst these people?"
+          }
+        },
+        {
+          "id": "alienjungle05b",
+          "op": "add",
+          "path": "/alienjungle05b",
+          "value": {
+            "type": "mission",
+            "senderName": "The Baron",
+            "portraitImage": "/interface/chatbubbles/baron.png:<frame>",
+            "text": "Reflective. I don't know about that, but it certainly makes for good exploring!"
+          }
+        },
+        {
+          "id": "alienjungle07a",
+          "op": "add",
+          "path": "/alienjungle07a",
+          "value": {
+            "type": "mission",
+            "senderName": "Koichi",
+            "portraitImage": "/interface/chatbubbles/koichi.png:<frame>",
+            "text": "What an impressive lithograph. No doubt this was carved by ancient hands, too... I wonder what those words mean?"
+          }
+        },
+        {
+          "id": "alienjungle07b",
+          "op": "add",
+          "path": "/alienjungle07b",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthertalk.png:<frame>",
+            "text": "I might go and have a look myself once it's safe to do so."
+          }
+        },
+        {
+          "id": "alienjungle07c",
+          "op": "add",
+          "path": "/alienjungle07c",
+          "value": {
+            "type": "mission",
+            "senderName": "Koichi",
+            "portraitImage": "/interface/chatbubbles/koichi.png:<frame>",
+            "text": "I think I'll come along as well, and I'm not taking no for an answer."
+          }
+        },
+        {
+          "id": "alienjungle08a",
+          "op": "add",
+          "path": "/alienjungle08a",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/estherthoughtful.png:<frame>",
+            "text": "What...is this? A statue?"
+          }
+        },
+        {
+          "id": "alienjungle08b",
+          "op": "add",
+          "path": "/alienjungle08b",
+          "value": {
+            "type": "mission",
+            "senderName": "Koichi",
+            "portraitImage": "/interface/chatbubbles/koichi.png:<frame>",
+            "text": "It looks much cruder than the other ones we've seen so far. And much larger, too."
+          }
+        },
+        {
+          "id": "alienjungle08c",
+          "op": "add",
+          "path": "/alienjungle08c",
+          "value": {
+            "type": "mission",
+            "senderName": "The Baron",
+            "portraitImage": "/interface/chatbubbles/baron.png:<frame>",
+            "text": "Confident. I scaled statues like this all the time in my youth. Surely you can do so as well!"
+          }
+        },
+        {
+          "id": "alienjungle08d",
+          "op": "add",
+          "path": "/alienjungle08d",
+          "value": {
+            "type": "mission",
+            "senderName": "Esther Bright",
+            "portraitImage": "/interface/chatbubbles/esthertalk.png:<frame>",
+            "text": "After all this work...I think there's some kind of final puzzle here. Have you discovered any clues while here, dear?"
+          }
+        }
+      ],
+      "world_entries": {
+        "instance_worlds.config.patch": [
+          {
+            "op": "add",
+            "path": "/alienjungle",
+            "value": {
+              "type": "FloatingDungeon",
+              "dungeonWorld": "alienjungle",
+              "spawningEnabled": false,
+              "beamUpRule": "AnywhereWithWarning",
+              "disableDeathDrops": true,
+              "skyParameters": {
+                "spaceLevel": 3000,
+                "ambientLightLevel": [
+                  90,
+                  188,
+                  44
+                ],
+                "satellites": [
+                  {
+                    "pos": [
+                      0.310561,
+                      0.35497
+                    ],
+                    "layers": [
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/liquids/water.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/biomes/forest/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/2.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/biomes/forest/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/20.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/biomes/forest/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/temperate/5.png"
+                      },
+                      {
+                        "scale": 0.055,
+                        "image": "/celestial/system/terrestrial/shadows/9.png"
+                      }
+                    ]
+                  }
+                ],
+                "planet": {
+                  "pos": [
+                    0.00538729,
+                    0.46961
+                  ],
+                  "layers": [
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/gas_giant_base.png?hueshift=-80"
+                    },
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=-70?addmask=/celestial/system/gas_giant/gas_giant_dynamics/3.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                    },
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=-77?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+                    },
+                    {
+                      "scale": 0.15,
+                      "image": "/celestial/system/gas_giant/shadows/9.png"
+                    }
+                  ]
+                },
+                "skyType": "atmospheric",
+                "horizonImages": [],
+                "dayLength": 1153.36,
+                "surfaceLevel": 1500,
+                "seed": -5288806180628666923
+              }
+            }
+          }
+        ],
+        "dungeon_worlds.config.patch": [
+          {
+            "op": "add",
+            "path": "/alienjungle",
+            "value": {
+              "primaryDungeon": "alienjungle",
+              "threatLevel": 6,
+              "gravity": 80,
+              "worldSize": [
+                2000,
+                2000
+              ],
+              "dungeonBaseHeight": 1500,
+              "ambientLightLevel": [
+                90,
+                188,
+                44
+              ],
+              "musicTrack": "/music/alienitem.ogg",
+              "biome": "extraalienjungle",
+              "environmentStatusEffects": [
+                "dontstarve"
+              ]
+            }
+          }
+        ]
+      },
+      "active_consumer_verified": false,
+      "live_lqa": "NOT TESTED",
+      "haunted_biome_links": [
+        {
+          "asset": "biomes/surface_detached/deadwood.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/1",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "hauntedmini"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/goreforest.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/12",
+              "value": {
+                "mode": "floor",
+                "priority": 2.0,
+                "variants": 5,
+                "distribution": "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "hauntedmini"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/hauntedforest.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/13",
+              "value": {
+                "mode": "floor",
+                "priority": 2.0,
+                "variants": 5,
+                "distribution": "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "hauntedmini"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/hauntedgraveyard.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/13",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 5,
+                "distribution": "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "hauntedmini"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/murkyswamp.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/2",
+              "value": {
+                "mode": "floor",
+                "priority": 1,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "swampmicrodungeons",
+                  "hauntedmini"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "fu_turnin_chain": {
+        "firstgid": 1,
+        "local_id": 39,
+        "gid": 40,
+        "tileset": "tilesets/extradungeons-custom/modstuff.json",
+        "object": "objects/questturnins/alienjungleturnin.object",
+        "quest": "alienjungle.gearup",
+        "map_references": [
+          {
+            "layer": "objects",
+            "object_id": 2041,
+            "gid": 40
+          }
+        ],
+        "live_completion_verified": false
+      },
+      "selected_dynamic_parameters": [
+        {
+          "map": "dungeons/missions/alienjungle/alienjungle.json",
+          "layer": "objects",
+          "object_id": 2010,
+          "gid": 35,
+          "parameters": {
+            "spawner": {
+              "npcSpecies": [
+                "floran"
+              ],
+              "npcTypes": [
+                "alienjunglethornhide"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                4,
+                4
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        },
+        {
+          "map": "dungeons/missions/alienjungle/alienjungle.json",
+          "layer": "objects",
+          "object_id": 2018,
+          "gid": 35,
+          "parameters": {
+            "spawner": {
+              "npcSpecies": [
+                "floran"
+              ],
+              "npcTypes": [
+                "alienjunglethornhide"
+              ],
+              "npcParams": {
+                "aggressive": true
+              },
+              "position": [
+                0,
+                0
+              ],
+              "positionVariance": [
+                0,
+                0
+              ],
+              "frequency": [
+                4,
+                4
+              ],
+              "stock": 2,
+              "trigger": "wire",
+              "outOfSight": false
+            }
+          }
+        }
+      ],
+      "radio_stagehand_counts": {
+        "dungeons/missions/alienjungle/alienjungle.json": 7
+      },
+      "fu_spawner_chain": {
+        "gid": 35,
+        "firstgid": 1,
+        "local_id": 34,
+        "object": "objects/wired/extranpcspawner/extrainvisiblenpcspawner.object",
+        "script": "objects/wired/extranpcspawner/extranpcspawner.lua",
+        "configured_stock": 4,
+        "npcParams_forwarding_verified": false,
+        "live_spawn_verified": false
+      }
+    },
+    "terminology_notes": [
+      "İki kısa saldırı emri aynı sırayla ve Floran tıslamasıyla korundu. Tek başına Sapla! silah nesnesi eksiltili savaş emridir;önceki Büyük Arena düzeltmesindeki düşmanları saplamak gibi doğrudan yanlış nesne yapısı burada yoktur. NPCnin mızrak/kılıç seçeneği belirli yeni silah şartı sayılmadı.",
+      "Kabilenin en güçlü olduğu iddiası ve üstünlük derecesi korunur;kabileye yeni özel ad veya muhataba ırk koşulu eklenmez.",
+      "Köyü koruma emri korunur. Kaynak bu kısa replikte uzatılmış s içermediği için Türkçeye zorunlu tıslama sözcüğü eklenmedi.",
+      "Mighty powers muazzam güçler olarak saldırı tehdidi düzeyinde korunur. İlahi varlık,belirli yetenek veya ölçülen hasar/etki eklenmedi.",
+      "Üç ayrı saplama emri/tekrar parçası ve sonra bir daha sırası korunur. Eksiltili Floran saldırı söylemi,canlı saldırı mekaniği onayı değildir.",
+      "Attack! mevcut tam kaynak LOCKED ve katalogdaki diğer saldırı bağlamlarıyla karşılaştırıldı;Saldır! aynen korundu. Default/default konuşmacı ve muhatap fallback dalıdır.",
+      "Kutsal topraklara izinsiz girmeye cüret edenin sorulması,soru biçimi ve Floran tıslaması korunur. Floran/default konuşmacı türü dalıdır;hedef Floran değildir.",
+      "Parlak şeylerin kabileye ait olması ve muhataba ait olmaması iki kısa karşıt parça olarak korundu. Yeni eşya kimliği veya para birimi çıkarılmadı.",
+      "Aeons çok uzun çağları anlatır;asırlar ifadesi süreyi yüzyıllara daraltıyordu. Çağlardır yaşamını sürdürmek devam eden yerleşimi ve belirsiz uzun süreyi korur;belirli tarih/sayı veya ezelden beri var olma iddiası eklenmedi. Floran tıslaması sssürdürüyor üzerinde korundu.",
+      "Etleri ve parlak nesneleri yutma iki emri ile Floranın güçlenmesi üçüncü kişi söylemi olarak korundu. Yutma tehdidi/iddiasından metal emilimi,buff,yeni eşya veya gerçek güç artışı mekaniği çıkarılmadı."
+    ],
+    "floran_speaker_not_target": true,
+    "source_mechanics_not_live_tested": true
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All10EN/TR variants and10occurrences manually reviewed against both complete NPCs,actualFUhostilefu,Brine Star andhauntedmini6 maps,dungeonmetadata,quest/AI/SAIL/world/map-turnin links,16linked radio messages and fivehauntedmini biomeplacement definitions.1field/1temporal expression corrected;all20671prior catalog fields unchanged.",
+    "Aeons was rendered with caglar/ages rather than narrowing the duration to centuries. Continued residence and Floran hiss retained without inventing a date,number or eternal existence. Other9translations retained after individual review.",
+    "9new fullreply LOCKED,total1329. Existing Attack!/Saldir! reused after comparing source occurrences. No existing terms changed;no generic tribe,stab,shiny,power or aeon lock and no context/TM/preserve/format exception added.",
+    "Bare Sssapla! commands retain ellipsis and repetition;they do not use the unnatural enemy-object construction corrected in the preceding Grand Arena batch. Kabile strongest/protect village/sacred land ownership questions and third-person devour/power rhetoric remain character speech,not new item identities or mechanics.",
+    "floran/default selects SPEAKER species,not target. Savage inherits actualFUhostilefu;thornhide inherits missingvanillahostile. Missingbase/hostileguard/combat.config not claimed read;FUdialoghelper is not a verified active behavior consumer.",
+    "Brine Star21staticNPCs include20selectedFloran=12savage+8thornhide and1AvianSvetlana outside scope. Hauntedmini6 adds3savageFloran.23static references are not live spawns. Seven radio stagehands reference16unique messages read as context only. BrineStar29tilesets/25missing,hauntedmini6 23/15.",
+    "ActualFU GID35/firstgid1/localid34 resolves two invisible wire-spawner parameter objects for thornhide/configuredstock4. The Lua computes self.npcParams.level but world.spawnNpc receives npcParameter or {};custom forwarding and live results not verified,no gameplay repair.338parameterobjects are not338NPCs.",
+    "ActualFU GID40/localid39 resolves alienjungleturnin/object/alienjungle.gearup. Static quest and biome/maxSpawnCount links do not prove live completion,access,spawn,trap,wire,door,death or radio outcomes. Identity,equipment,stats,rewards and gameplay unchanged;LQA NOT TESTED.",
+    "New run starts22/stops32;52baseline dialogue fields must finish publication before any object/item draft. No new scheduler,Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.101.0 Beta — Alien Jungle savaş replikleri
+
+İki NPC dosyasında 10 yeni saldırı repliği, 10 bağlam ve 10 farklı kaynak eklendi. Katalog 20.681 alana ulaştı; önceki 20.671 alan korundu.
+
+Tam Sol kaynak/dil incelemesinde 1 alanda 1 zaman ifadesi düzeltildi. Floran tıslaması, tekrarlar, kabile/köy söylemi ve Saldır! karşılığı korundu. Dokuz yeni tam replik LOCKED; toplam 1.329. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/alienjungle-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V101_20261107.md)
+
 ## v0.100.0 Beta — Büyük Arena konuşmaları
 
 İki NPC dosyasında 12 yeni konuşma alanı, 12 bağlam ve 11 farklı kaynak metin eklendi. Katalog 20.671 alana ulaştı; önceki 20.659 alan korundu.
