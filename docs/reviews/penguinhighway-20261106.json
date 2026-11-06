@@ -1,0 +1,785 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-06",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 20,
+  "run_id": "fu-ten-20261104",
+  "run_round": 8,
+  "base_commit": "6a9b86c3190307fb28c5b5eed4491739b8667da2",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 16,
+    "context_groups": 16,
+    "unique_english_strings": 16,
+    "assets": {
+      "npcs/penguinhighway/highwaygirulian.npctype": 5,
+      "npcs/penguinhighway/highwayjinrei.npctype": 5,
+      "npcs/penguinhighway/highwayzeldia.npctype": 6
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 16,
+    "dialogue_events": {
+      "converse": 15,
+      "speak": 1
+    },
+    "dialogue_fields": 16,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 4
+  },
+  "changes": {
+    "fields": 4,
+    "sentences_including_repeated_fields": 7,
+    "unique_source_strings_corrected": 4,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 4,
+    "total_corrected_sentences": 7,
+    "count_method": "Independent changed sentences or short clauses2+2+1+2 across4fields;unchanged surrounding sentences excluded."
+  },
+  "new_locked_terms": 20,
+  "new_locked_names": [
+    "SMASH unit / with SMASH",
+    "Zeldia",
+    "Jinrei",
+    "Girulian",
+    "Well met, friend. My name is Girulian; as you might suspect by now, I am also a Guardian working with the SMASH unit.",
+    "That was an intense and invigorating battle; no doubt the end must be near.",
+    "I hear the sounds of machinery up ahead; the penguins' leader draws close.",
+    "I would go with you, but I have to stay to call for backup in case worst comes to worst.",
+    "Go now! The fate of Techno City lies in your hands!",
+    "My apologies for dropping in unannounced. You looked like you needed help.",
+    "My name is Jinrei; I am a Guardian who fights with SMASH to protect this fine city.",
+    "I take it you have met Zeldia? Nevertheless, there is little time to lose. More enemies await us.",
+    "The penguin threat must be eliminated at all costs; I am sure you will find more of my allies ahead to aid you.",
+    "I will stay to secure this area and ensure the penguins do not re-infest it. Please, move on without me.",
+    "Hmm. You responded to our distress signal? You certainly don't look like you're from around these parts. My name's Zeldia.",
+    "A Protector, you say? Well, that's close enough to being a Guardian...you might not be with SMASH, but we need all the help we can get.",
+    "The penguins are swarming all over the highway, causing all sorts of chaos. We're heavily outnumbered here, you'll be facing awful odds.",
+    "Some of my friends are out there, so they might even things out a bit. If you see them, tell them I said hi.",
+    "The penguins won't show you any mercy, so show them none! We've got to restore order to this city!",
+    "A new face..."
+  ],
+  "new_proper_names": [
+    "Zeldia",
+    "Jinrei",
+    "Girulian"
+  ],
+  "reused_locked_names": [],
+  "reused_proper_names": [
+    "Protector",
+    "Techno City"
+  ],
+  "locked_total": 1295,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "9384f7c3183e8627d24617d31da829f3f336949e97f564329a9287ec8480ba6d",
+  "luna_original_packet_sha256": "63435aeea3f9a63969efb9af85cc2a8686e2f1edf8f4f1e6d0b2d78cda69bef2",
+  "approved_rows_sha256": "af9dfbc5c779a23057ee07d7be1c6ed08ea9f7471179c78186822bb56f8c5e7f",
+  "corrections": [
+    {
+      "unit_index": 1,
+      "en": "That was an intense and invigorating battle; no doubt the end must be near.",
+      "before": "Çetin ve heyecan verici bir savaştı; sonuna yaklaştığımız kesin.",
+      "after": "Yoğun ve insanı canlandıran bir savaştı; şüphesiz sona yaklaşmış olmalıyız.",
+      "occurrences": [
+        {
+          "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/1",
+          "origin": "npcs/penguinhighway/highwaygirulian.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Invigorating enerji/canlılık veren anlamını taşır;yalnız heyecan verici değildi. No doubt...must be near kesin bitiş bilgisi değil,güçlü bir çıkarımdır. İki bağımsız yan tümce düzeltildi."
+    },
+    {
+      "unit_index": 7,
+      "en": "I take it you have met Zeldia? Nevertheless, there is little time to lose. More enemies await us.",
+      "before": "Zeldia ile tanıştığını sanıyorum. Yine de kaybedecek vaktimiz yok. Önümüzde daha fazla düşman var.",
+      "after": "Zeldia'yla tanıştın sanırım? Yine de kaybedecek pek vaktimiz yok. Önümüzde daha fazla düşman var.",
+      "occurrences": [
+        {
+          "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/2",
+          "origin": "npcs/penguinhighway/highwayjinrei.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "I take it...? çıkarım sorusu olarak korundu;little time to lose pek vaktimiz yok olarak kaydedildi,tümüyle hiç vakit yok kesinliği eklenmedi. Son düşman cümlesi aynı."
+    },
+    {
+      "unit_index": 8,
+      "en": "The penguin threat must be eliminated at all costs; I am sure you will find more of my allies ahead to aid you.",
+      "before": "Penguen tehdidini ne pahasına olursa olsun ortadan kaldırmalıyız; ileride sana yardım edecek başka müttefiklerimle karşılaşacağına eminim.",
+      "after": "Penguen tehdidi ne pahasına olursa olsun ortadan kaldırılmalı; ileride sana yardım edecek başka müttefiklerimle karşılaşacağına eminim.",
+      "occurrences": [
+        {
+          "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/3",
+          "origin": "npcs/penguinhighway/highwayjinrei.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "Must be eliminated edilgendir;ortadan kaldırmalıyız kaynakta olmayan biz failini ekliyordu. İkinci müttefik öngörüsü aynı."
+    },
+    {
+      "unit_index": 12,
+      "en": "The penguins are swarming all over the highway, causing all sorts of chaos. We're heavily outnumbered here, you'll be facing awful odds.",
+      "before": "Penguenler otoyolun her yanına üşüşüp ortalığı birbirine katıyor. Burada sayıca çok azız; senin de karşında ezici bir sayısal üstünlük olacak.",
+      "after": "Penguenler otoyolun her yanına üşüşüp ortalığı birbirine katıyor. Burada sayıca çok gerideyiz; şansın çok düşük olacak.",
+      "occurrences": [
+        {
+          "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/2",
+          "origin": "npcs/penguinhighway/highwayzeldia.npctype"
+        }
+      ],
+      "changed_sentences": 2,
+      "reason": "Heavily outnumbered düşmana göre sayısal geride olmayı anlatır;mutlak çok az kişi oldukları iddiası değildir. Awful odds doğal düşük şans ifadesiyle karşılandı;karşında bir sayısal üstünlük olacak yapısı giderildi. İlk penguen cümlesi aynı."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "63435aeea3f9a63969efb9af85cc2a8686e2f1edf8f4f1e6d0b2d78cda69bef2",
+    "filled_units": 16
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 16,
+    "context_units": 16,
+    "qa": {
+      "catalog_units_checked": 35884,
+      "raw_units_checked": 115,
+      "locked_terms": 1295
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Full Sol review of all16EN/TR variants and16occurrences in3complete NPCs;4fields/7independent sentences or short clauses corrected. Static source context checked;missing vanilla consumers and LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/penguinhighway/highwaygirulian.npctype",
+        "note": "Complete NPC definition and every source/translation occurrence reviewed;sequence dialogue,identity and all neighboring technical fields unchanged."
+      },
+      {
+        "source": "fu_source/npcs/penguinhighway/highwayjinrei.npctype",
+        "note": "Complete NPC definition and every source/translation occurrence reviewed;sequence dialogue,identity and all neighboring technical fields unchanged."
+      },
+      {
+        "source": "fu_source/npcs/penguinhighway/highwayzeldia.npctype",
+        "note": "Complete NPC definition and every source/translation occurrence reviewed;sequence dialogue,identity and all neighboring technical fields unchanged."
+      },
+      {
+        "source": "fu_source/quests/penguinhighway.questtemplate; fu_source/ai/penguinhighway.aimission; fu_source/objects/questmaps/penguinhighwaymap.object; fu_source/objects/questturnins/penguinhighwayturnin.object; fu_source/codex/missions/extrahighway.codex",
+        "note": "Complete definitions read. Quest/mission links and rewards unchanged. Guardians/SMASH/Techno City arcade-advertisement context distinguishes Guardian from Protector."
+      },
+      {
+        "source": "fu_source/dungeons/missions/penguinhighway/penguinhighway.dungeon; fu_source/dungeons/missions/penguinhighway/penguinhighway.json; fu_source/tilesets/extradungeons-custom/modstuff.json; fu_source/objects/wired/extranpcspawner/extrainvisiblenpcspawner.object; fu_source/objects/wired/extranpcspawner/extranpcspawner.lua; fu_source/scripts/actions/dialog.lua",
+        "note": "Actual1staticAvianZeldia and6NPCparameter-spawners inspected:2allies,4frostpenguin. GID3991 resolves FU firstgid3957/localid34/object/script. Complete spawner and dialog helpers read. Script passes npcParameter or {},not self.npcParams;custom parameter forwarding/live spawn not asserted or repaired.23tilesets/22missingpacked;no map radio. Missing vanilla behaviors remain unavailable."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+        "type": "highwaygirulian",
+        "base_type": "guard",
+        "identity": {
+          "name": "Girulian",
+          "gender": "male",
+          "hairType": "male19",
+          "hairDirectives": "?replace;735e3a=b59a4d;d9c189=f1d992;a38d59=daba5e",
+          "bodyDirectives": "?replace;ffe2c5=fff6f6;ffc181=f7d5d3;d39c6c=d1aaa1;c7815b=a27f70",
+          "race": "human"
+        },
+        "dialog_mode": "sequence",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/penguinhighway/highwaygirulian.npctype",
+            "en": "Well met, friend. My name is Girulian; as you might suspect by now, I am also a Guardian working with the SMASH unit.",
+            "luna_tr": "Selam dostum. Adım Girulian; artık tahmin etmişsindir, ben de SMASH birliğiyle çalışan bir Koruyucuyum.",
+            "approved_tr": "Selam dostum. Adım Girulian; artık tahmin etmişsindir, ben de SMASH birliğiyle çalışan bir Koruyucuyum.",
+            "reason": "Girulian kendini SMASH birliğiyle çalışan Guardian olarak tanıtır;Koruyucu çevrildi,SMASH ve isim değişmez."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/1",
+            "origin": "npcs/penguinhighway/highwaygirulian.npctype",
+            "en": "That was an intense and invigorating battle; no doubt the end must be near.",
+            "luna_tr": "Çetin ve heyecan verici bir savaştı; sonuna yaklaştığımız kesin.",
+            "approved_tr": "Yoğun ve insanı canlandıran bir savaştı; şüphesiz sona yaklaşmış olmalıyız.",
+            "reason": "Invigorating enerji/canlılık veren anlamını taşır;yalnız heyecan verici değildi. No doubt...must be near kesin bitiş bilgisi değil,güçlü bir çıkarımdır. İki bağımsız yan tümce düzeltildi."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/penguinhighway/highwaygirulian.npctype",
+            "en": "I hear the sounds of machinery up ahead; the penguins' leader draws close.",
+            "luna_tr": "İleriden makine sesleri duyuyorum; penguenlerin lideri yaklaşıyor.",
+            "approved_tr": "İleriden makine sesleri duyuyorum; penguenlerin lideri yaklaşıyor.",
+            "reason": "İleriden gelen makine sesleri ve yaklaşan lider ifadesi korundu;bu kaynak repliği gerçek hareket/AI sonucu kanıtı değildir."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/3",
+            "origin": "npcs/penguinhighway/highwaygirulian.npctype",
+            "en": "I would go with you, but I have to stay to call for backup in case worst comes to worst.",
+            "luna_tr": "Seninle gelmek isterdim ama işler iyice kötüye giderse takviye çağırmak için burada kalmalıyım.",
+            "approved_tr": "Seninle gelmek isterdim ama işler iyice kötüye giderse takviye çağırmak için burada kalmalıyım.",
+            "reason": "Worst comes to worst koşulu,takviye çağrısı ve kalma planı korunur;gerçek takviye olayı varsayılmaz."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/penguinhighway/highwaygirulian.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/4",
+            "origin": "npcs/penguinhighway/highwaygirulian.npctype",
+            "en": "Go now! The fate of Techno City lies in your hands!",
+            "luna_tr": "Hemen git! Techno City'nin kaderi senin ellerinde!",
+            "approved_tr": "Hemen git! Techno City'nin kaderi senin ellerinde!",
+            "reason": "Emir ve Techno City kaderi hitabı mevcut özel adla kalır."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+        "type": "highwayjinrei",
+        "base_type": "guard",
+        "identity": {
+          "name": "Jinrei",
+          "gender": "male",
+          "race": "hylotl"
+        },
+        "dialog_mode": "sequence",
+        "fields": 5,
+        "entries": [
+          {
+            "unit_index": 5,
+            "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/penguinhighway/highwayjinrei.npctype",
+            "en": "My apologies for dropping in unannounced. You looked like you needed help.",
+            "luna_tr": "Haber vermeden ortaya çıktığım için özür dilerim. Yardıma ihtiyacın var gibi görünüyordu.",
+            "approved_tr": "Haber vermeden ortaya çıktığım için özür dilerim. Yardıma ihtiyacın var gibi görünüyordu.",
+            "reason": "Haber vermeden gelme özrü ve yardım gerekiyormuş görünümü korunur;kesin yardım başarısı eklenmez."
+          },
+          {
+            "unit_index": 6,
+            "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/1",
+            "origin": "npcs/penguinhighway/highwayjinrei.npctype",
+            "en": "My name is Jinrei; I am a Guardian who fights with SMASH to protect this fine city.",
+            "luna_tr": "Adım Jinrei; bu güzel şehri korumak için SMASH ile birlikte savaşan bir Koruyucuyum.",
+            "approved_tr": "Adım Jinrei; bu güzel şehri korumak için SMASH ile birlikte savaşan bir Koruyucuyum.",
+            "reason": "Jinrei SMASH ile birlikte dövüşen Guardian/Koruyucudur;Protector kimliği verilmez."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/penguinhighway/highwayjinrei.npctype",
+            "en": "I take it you have met Zeldia? Nevertheless, there is little time to lose. More enemies await us.",
+            "luna_tr": "Zeldia ile tanıştığını sanıyorum. Yine de kaybedecek vaktimiz yok. Önümüzde daha fazla düşman var.",
+            "approved_tr": "Zeldia'yla tanıştın sanırım? Yine de kaybedecek pek vaktimiz yok. Önümüzde daha fazla düşman var.",
+            "reason": "I take it...? çıkarım sorusu olarak korundu;little time to lose pek vaktimiz yok olarak kaydedildi,tümüyle hiç vakit yok kesinliği eklenmedi. Son düşman cümlesi aynı."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/3",
+            "origin": "npcs/penguinhighway/highwayjinrei.npctype",
+            "en": "The penguin threat must be eliminated at all costs; I am sure you will find more of my allies ahead to aid you.",
+            "luna_tr": "Penguen tehdidini ne pahasına olursa olsun ortadan kaldırmalıyız; ileride sana yardım edecek başka müttefiklerimle karşılaşacağına eminim.",
+            "approved_tr": "Penguen tehdidi ne pahasına olursa olsun ortadan kaldırılmalı; ileride sana yardım edecek başka müttefiklerimle karşılaşacağına eminim.",
+            "reason": "Must be eliminated edilgendir;ortadan kaldırmalıyız kaynakta olmayan biz failini ekliyordu. İkinci müttefik öngörüsü aynı."
+          },
+          {
+            "unit_index": 9,
+            "asset": "npcs/penguinhighway/highwayjinrei.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/4",
+            "origin": "npcs/penguinhighway/highwayjinrei.npctype",
+            "en": "I will stay to secure this area and ensure the penguins do not re-infest it. Please, move on without me.",
+            "luna_tr": "Bu bölgeyi güvence altına almak ve penguenlerin burayı yeniden istila etmesini önlemek için burada kalacağım. Lütfen bensiz devam et.",
+            "approved_tr": "Bu bölgeyi güvence altına almak ve penguenlerin burayı yeniden istila etmesini önlemek için burada kalacağım. Lütfen bensiz devam et.",
+            "reason": "Bölgeyi güvenceye alma/yeniden istilayı önleme gelecekteki amaçtır;gerçek görev tamamlanması diye sunulmaz."
+          }
+        ]
+      },
+      {
+        "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+        "type": "highwayzeldia",
+        "base_type": "base",
+        "identity": {
+          "name": "Zeldia",
+          "gender": "female",
+          "hairType": "10",
+          "race": "avian"
+        },
+        "dialog_mode": "sequence",
+        "fields": 6,
+        "entries": [
+          {
+            "unit_index": 10,
+            "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/penguinhighway/highwayzeldia.npctype",
+            "en": "Hmm. You responded to our distress signal? You certainly don't look like you're from around these parts. My name's Zeldia.",
+            "luna_tr": "Hımm. Yardım çağrımıza sen mi karşılık verdin? Hiç buralı gibi görünmüyorsun. Benim adım Zeldia.",
+            "approved_tr": "Hımm. Yardım çağrımıza sen mi karşılık verdin? Hiç buralı gibi görünmüyorsun. Benim adım Zeldia.",
+            "reason": "Zeldia yardım çağrısına cevap veren yabancıya sorar;Avian kimliği ve ad korunur."
+          },
+          {
+            "unit_index": 11,
+            "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/1",
+            "origin": "npcs/penguinhighway/highwayzeldia.npctype",
+            "en": "A Protector, you say? Well, that's close enough to being a Guardian...you might not be with SMASH, but we need all the help we can get.",
+            "luna_tr": "Protector olduğunu mu söylüyorsun? Eh, Koruyucu olmaya yeterince yakın... SMASH'ten olmayabilirsin ama alabileceğimiz her türlü yardıma ihtiyacımız var.",
+            "approved_tr": "Protector olduğunu mu söylüyorsun? Eh, Koruyucu olmaya yeterince yakın... SMASH'ten olmayabilirsin ama alabileceğimiz her türlü yardıma ihtiyacımız var.",
+            "reason": "Protector mevcut özel unvandır;Guardian Koruyucu olarak ayrı tutulur. SMASH üyesi olmayabilirsin belirsizliği korunur."
+          },
+          {
+            "unit_index": 12,
+            "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/penguinhighway/highwayzeldia.npctype",
+            "en": "The penguins are swarming all over the highway, causing all sorts of chaos. We're heavily outnumbered here, you'll be facing awful odds.",
+            "luna_tr": "Penguenler otoyolun her yanına üşüşüp ortalığı birbirine katıyor. Burada sayıca çok azız; senin de karşında ezici bir sayısal üstünlük olacak.",
+            "approved_tr": "Penguenler otoyolun her yanına üşüşüp ortalığı birbirine katıyor. Burada sayıca çok gerideyiz; şansın çok düşük olacak.",
+            "reason": "Heavily outnumbered düşmana göre sayısal geride olmayı anlatır;mutlak çok az kişi oldukları iddiası değildir. Awful odds doğal düşük şans ifadesiyle karşılandı;karşında bir sayısal üstünlük olacak yapısı giderildi. İlk penguen cümlesi aynı."
+          },
+          {
+            "unit_index": 13,
+            "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/3",
+            "origin": "npcs/penguinhighway/highwayzeldia.npctype",
+            "en": "Some of my friends are out there, so they might even things out a bit. If you see them, tell them I said hi.",
+            "luna_tr": "Dışarıda birkaç arkadaşım var; belki durumu biraz dengeleyebilirler. Onları görürsen selamımı ilet.",
+            "approved_tr": "Dışarıda birkaç arkadaşım var; belki durumu biraz dengeleyebilirler. Onları görürsen selamımı ilet.",
+            "reason": "Some friends/biraz denge/might olasılığı korunur;önceden kanıtlı eşit savaş gücü iddia edilmez."
+          },
+          {
+            "unit_index": 14,
+            "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/4",
+            "origin": "npcs/penguinhighway/highwayzeldia.npctype",
+            "en": "The penguins won't show you any mercy, so show them none! We've got to restore order to this city!",
+            "luna_tr": "Penguenler sana merhamet etmeyecek; sen de onlara etme! Bu şehirde düzeni yeniden sağlamalıyız!",
+            "approved_tr": "Penguenler sana merhamet etmeyecek; sen de onlara etme! Bu şehirde düzeni yeniden sağlamalıyız!",
+            "reason": "Kaynak merhametsizlik ve şehir düzeni çağrısının sertliği korunur;ek küfür yok."
+          },
+          {
+            "unit_index": 15,
+            "asset": "npcs/penguinhighway/highwayzeldia.npctype",
+            "pointer": "/scriptConfig/dialog/speak/default/default/0",
+            "origin": "npcs/penguinhighway/highwayzeldia.npctype",
+            "en": "A new face...",
+            "luna_tr": "Yeni bir yüz...",
+            "approved_tr": "Yeni bir yüz...",
+            "reason": "A new face kısa ilk karşılaşma deyimidir;Yeni bir yüz ve duraklama korunur."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 16,
+    "layered_fields": 0,
+    "related_review_rows": 4,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "missing_vanilla_dependencies": [
+      "npcs/base.npctype",
+      "npcs/guard.npctype",
+      "npcs/hostile.npctype",
+      "behaviors/npc/simple.behavior"
+    ],
+    "files": {
+      "npcs/penguinhighway/highwayzeldia.npctype": "06be8cafae9cc497d7f9c4aa21f00eb4f3da1c3794c5066a469e53adbd06d670",
+      "npcs/penguinhighway/highwayjinrei.npctype": "ce610c5f21b6d0dd6af0b0e5a15a5a9c5f196f96e84cb4a0290bd1e42337ccf9",
+      "npcs/penguinhighway/highwaygirulian.npctype": "4cc7241ddc6c26e3e53444b1ef6f28b9237715e6ccb4a93a7b6ae4cb47b204da",
+      "npcs/penguinhighway/highwayfrostpenguin.npctype": "ac657248d98d143fb9fbb6a8ab4ba43e2cdef84cd78e062b4ee14a05f1688ae1",
+      "quests/penguinhighway.questtemplate": "233b08c8aa8ca97025acaa154e71fe7e6499e900e8f76d81c06d2433c17a8bb6",
+      "ai/penguinhighway.aimission": "4cdeae15c726e1a3cbdcfac0e951bbbadfe225b9b4862cad7cda6104bf05c11a",
+      "objects/questmaps/penguinhighwaymap.object": "72155d306ff1c3348ca1d2902419ead514fd04f2bb2ecd4406bbb8fb1359374f",
+      "objects/questturnins/penguinhighwayturnin.object": "9f9734367ba1c802b72fb674af7e58ceafe4855688c1dbebe659287424c9a43f",
+      "dungeons/missions/penguinhighway/penguinhighway.dungeon": "c74e376be065f0e624c1516ceea139bd816c1e7bd49b5fe95e6634ccf9dc99e8",
+      "dungeons/missions/penguinhighway/penguinhighway.json": "5e8862112920160b86f05ef1a7e63f2ce837a7ca92c5dc1f754afa7ff7b62642",
+      "codex/missions/extrahighway.codex": "bbba5599b3d74e81033ea4587d5f6165a4df2181a2628a2280a8c9b73a5797ab",
+      "scripts/actions/dialog.lua": "38bc4f74be5dccf511831342b1fc417e91e2ea43c2396ae483051b55e8c4cda0",
+      "tilesets/extradungeons-custom/modstuff.json": "d3a275a74b95b16149af4cd054f885afe3eaff4c30a405e79acd3ea437bd3994",
+      "objects/wired/extranpcspawner/extrainvisiblenpcspawner.object": "72417a0a8204cb915645bb57471c648df84a362f97cbad92862c71ff3ffedd62",
+      "objects/wired/extranpcspawner/extranpcspawner.lua": "db8cc1e3fa8b2b5c1cdc0b9f76352db0ab53e62208ecbaa61af91a7720df77f9"
+    },
+    "mission": {
+      "static_npcs": [
+        {
+          "layer": "npcs and monsters",
+          "object_id": 160,
+          "npc": "avian",
+          "seed": "7",
+          "typeName": "highwayzeldia"
+        }
+      ],
+      "npc_parameter_spawners": [
+        {
+          "layer": "objects",
+          "object_id": 390,
+          "gid": 3991,
+          "spawner": {
+            "npcSpecies": [
+              "hylotl"
+            ],
+            "npcTypes": [
+              "highwayjinrei"
+            ],
+            "npcParams": {},
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              1,
+              1
+            ],
+            "stock": 1,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 569,
+          "gid": 3991,
+          "spawner": {
+            "npcSpecies": [
+              "penguin"
+            ],
+            "npcTypes": [
+              "highwayfrostpenguin"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              4,
+              4
+            ],
+            "stock": 1,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 713,
+          "gid": 3991,
+          "spawner": {
+            "npcSpecies": [
+              "penguin"
+            ],
+            "npcTypes": [
+              "highwayfrostpenguin"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              1
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              3,
+              3
+            ],
+            "stock": 2,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 758,
+          "gid": 3991,
+          "spawner": {
+            "npcSpecies": [
+              "penguin"
+            ],
+            "npcTypes": [
+              "highwayfrostpenguin"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              1
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              3,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 766,
+          "gid": 3991,
+          "spawner": {
+            "npcSpecies": [
+              "penguin"
+            ],
+            "npcTypes": [
+              "highwayfrostpenguin"
+            ],
+            "npcParams": {
+              "aggressive": true
+            },
+            "position": [
+              0,
+              -3
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              3,
+              3
+            ],
+            "stock": 3,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        },
+        {
+          "layer": "objects",
+          "object_id": 768,
+          "gid": 3991,
+          "spawner": {
+            "npcSpecies": [
+              "human"
+            ],
+            "npcTypes": [
+              "highwaygirulian"
+            ],
+            "npcParams": {},
+            "position": [
+              0,
+              0
+            ],
+            "positionVariance": [
+              0,
+              0
+            ],
+            "frequency": [
+              1,
+              1
+            ],
+            "stock": 1,
+            "trigger": "wire",
+            "outOfSight": false
+          }
+        }
+      ],
+      "spawner_gid": 3991,
+      "spawner_fu_tileset": {
+        "firstgid": 3957,
+        "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+        "available": true
+      },
+      "spawner_local_tileid": 34,
+      "spawner_object": "extrainvisiblenpcspawner",
+      "spawner_script": "/objects/wired/extranpcspawner/extranpcspawner.lua",
+      "static_spawner_chain_verified": true,
+      "npc_params_forwarding": "Script calculates self.npcParams.level but passes npcParameter or {} to world.spawnNpc;custom NPC parameters are not assumed forwarded. No gameplay repair.",
+      "radio_stagehands": [],
+      "tilesets": [
+        {
+          "firstgid": 1,
+          "source": "../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+          "available": false
+        },
+        {
+          "firstgid": 21,
+          "source": "../../../../../assets/packed/tilesets/packed/materials.json",
+          "available": false
+        },
+        {
+          "firstgid": 211,
+          "source": "../../../../../assets/packed/tilesets/packed/supports.json",
+          "available": false
+        },
+        {
+          "firstgid": 247,
+          "source": "../../../../../assets/packed/tilesets/packed/liquids.json",
+          "available": false
+        },
+        {
+          "firstgid": 275,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/breakable.json",
+          "available": false
+        },
+        {
+          "firstgid": 579,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/bug.json",
+          "available": false
+        },
+        {
+          "firstgid": 622,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+          "available": false
+        },
+        {
+          "firstgid": 701,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+          "available": false
+        },
+        {
+          "firstgid": 2061,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+          "available": false
+        },
+        {
+          "firstgid": 2178,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+          "available": false
+        },
+        {
+          "firstgid": 2511,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+          "available": false
+        },
+        {
+          "firstgid": 2932,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+          "available": false
+        },
+        {
+          "firstgid": 3230,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/rail.json",
+          "available": false
+        },
+        {
+          "firstgid": 3234,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/refinery.json",
+          "available": false
+        },
+        {
+          "firstgid": 3235,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/seed.json",
+          "available": false
+        },
+        {
+          "firstgid": 3311,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+          "available": false
+        },
+        {
+          "firstgid": 3327,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+          "available": false
+        },
+        {
+          "firstgid": 3548,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/techmanagement.json",
+          "available": false
+        },
+        {
+          "firstgid": 3549,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+          "available": false
+        },
+        {
+          "firstgid": 3753,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+          "available": false
+        },
+        {
+          "firstgid": 3957,
+          "source": "../../../tilesets/extradungeons-custom/modstuff.json",
+          "available": true
+        },
+        {
+          "firstgid": 4003,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+          "available": false
+        },
+        {
+          "firstgid": 4008,
+          "source": "../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+          "available": false
+        }
+      ],
+      "live_spawn_tested": false
+    },
+    "complete_npc_family": true,
+    "terminology_notes": [
+      "Girulian kendini SMASH birliğiyle çalışan Guardian olarak tanıtır;Koruyucu çevrildi,SMASH ve isim değişmez.",
+      "Invigorating enerji/canlılık veren anlamını taşır;yalnız heyecan verici değildi. No doubt...must be near kesin bitiş bilgisi değil,güçlü bir çıkarımdır. İki bağımsız yan tümce düzeltildi.",
+      "İleriden gelen makine sesleri ve yaklaşan lider ifadesi korundu;bu kaynak repliği gerçek hareket/AI sonucu kanıtı değildir.",
+      "Worst comes to worst koşulu,takviye çağrısı ve kalma planı korunur;gerçek takviye olayı varsayılmaz.",
+      "Emir ve Techno City kaderi hitabı mevcut özel adla kalır.",
+      "Haber vermeden gelme özrü ve yardım gerekiyormuş görünümü korunur;kesin yardım başarısı eklenmez.",
+      "Jinrei SMASH ile birlikte dövüşen Guardian/Koruyucudur;Protector kimliği verilmez.",
+      "I take it...? çıkarım sorusu olarak korundu;little time to lose pek vaktimiz yok olarak kaydedildi,tümüyle hiç vakit yok kesinliği eklenmedi. Son düşman cümlesi aynı.",
+      "Must be eliminated edilgendir;ortadan kaldırmalıyız kaynakta olmayan biz failini ekliyordu. İkinci müttefik öngörüsü aynı.",
+      "Bölgeyi güvenceye alma/yeniden istilayı önleme gelecekteki amaçtır;gerçek görev tamamlanması diye sunulmaz.",
+      "Zeldia yardım çağrısına cevap veren yabancıya sorar;Avian kimliği ve ad korunur.",
+      "Protector mevcut özel unvandır;Guardian Koruyucu olarak ayrı tutulur. SMASH üyesi olmayabilirsin belirsizliği korunur.",
+      "Heavily outnumbered düşmana göre sayısal geride olmayı anlatır;mutlak çok az kişi oldukları iddiası değildir. Awful odds doğal düşük şans ifadesiyle karşılandı;karşında bir sayısal üstünlük olacak yapısı giderildi. İlk penguen cümlesi aynı.",
+      "Some friends/biraz denge/might olasılığı korunur;önceden kanıtlı eşit savaş gücü iddia edilmez.",
+      "Kaynak merhametsizlik ve şehir düzeni çağrısının sertliği korunur;ek küfür yok.",
+      "A new face kısa ilk karşılaşma deyimidir;Yeni bir yüz ve duraklama korunur."
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "Every16EN/TR variant and occurrence manually reviewed against3complete NPCs,quest/AI/map/objects/codex and actual FU tileset/object/spawner/dialog script chain.4fields/7independent sentences or short clauses corrected;all20617prior catalog fields unchanged.",
+    "Corrections restore invigorating energy and must-based inference;question/little-time nuance;passive elimination without added we actor;relative numerical disadvantage and natural awful-odds wording. Seven changed clauses counted2+2+1+2 across four fields;unchanged neighboring sentences excluded.",
+    "Guardian is Koruyucu;Protector existing proper title remains Protector. SMASH,Zeldia,Jinrei,Girulian and Techno City preserved.3new NPC-name locks,1scoped SMASH unit/with SMASH phrase lock and16fullsource replies=20newLOCKED/1295total. Generic English smash is excluded. No prior terms changed or global Guardian mapping added.",
+    "Zeldia is one static Avian;Jinrei Hylotl/Girulian human are two wire-triggered parameter-spawners;four other spawners target frostpenguins. All3selectedNPCs use sequence;Zeldia has1speak+5converse,others5converse each.",
+    "Actual GID3991 maps FUmodstuff firstgid3957/localid34 to extrainvisiblenpcspawner and complete Lua. The script calculates self.npcParams.level but passes npcParameter or {} to world.spawnNpc. No custom-parameter forwarding,live effect or gameplay repair claimed.",
+    "23tilesets/22missingpacked/1FU;no map radio. Missing vanilla base/guard/hostile/simple behaviors are not claimed read. Full quest/AI/objects/codex source context does not prove live quest/reward/spawn/wire/backup outcome.",
+    "No context/TM/preserve/format exceptions added;technical identity,equipment,stats,rewards and gameplay unchanged. LQA NOT TESTED. No Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

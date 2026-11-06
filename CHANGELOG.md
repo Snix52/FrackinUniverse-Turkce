@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.97.0 Beta — Techno City SMASH müttefikleri
+
+Üç NPC dosyasında16yeni diyalog alanı/16bağlam/16farklı kaynak metin. Katalog20.633;önceki20.617alan aynı.
+
+Tam Sol dil/kaynak incelemesinde4alanda7cümle/kısa ifade düzeltildi;20yeniLOCKED,toplam1.295. Guardian/Koruyucu ile Protector ayrımı,çıkarım/soru/koşul/edilgen anlam korundu.4technicalreview alanı dışarıda. FU6.5.8pini aynı;LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/penguinhighway-20261106.json) · [Oyun kontrolü](docs/lqa/LQA_V097_20261106.md)
+
 ## v0.96.0 Beta — Renkli Apex köylüsünün anıları
 
 Tam bir NPC dosyasında16yeni konuşma alanı/16bağlam/15farklı kaynak metin. Katalog20.617;önceki20.601alan aynı.
