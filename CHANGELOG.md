@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## v0.104.0 Beta — Karakol kedi ziyaretçisi
+
+Bir NPC dosyasında 4 yeni konuşma, 4 bağlam ve 4 farklı kaynak eklendi. Katalog 20.702 alana ulaştı; önceki 20.698 alan korundu. Tam Sol kaynak/dil incelemesinde dört Türkçe replik korundu; düzeltme yok. Dört yeni tam replik LOCKED; toplam 1.349. Kaynaktaki patili kelime oyunu ve kedi sesi Türkçeye taşındı. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/catvisitor-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V104_20261107.md)
+
 ## v0.103.0 Beta — Protectorate FU yama konuşmaları
 
 Dört FU yama dosyasında 8 yeni konuşma alanı, 8 bağlam ve 8 farklı kaynak eklendi. Katalog 20.698 alana ulaştı; önceki 20.690 alan korundu.

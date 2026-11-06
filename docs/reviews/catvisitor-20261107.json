@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-07",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 27,
+  "run_id": "fu-ten-20261106",
+  "run_round": 5,
+  "base_commit": "80b2cae80785c379fb324c173bdc6a457bcea96d",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 4,
+    "context_groups": 4,
+    "unique_english_strings": 4,
+    "assets": {
+      "npcs/outpost/visitors/catvisitor.npctype": 4
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 4,
+    "dialogue_events": {
+      "converse": 4
+    },
+    "dialogue_fields": 4,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 0,
+    "live_runtime_visibility_verified": false
+  },
+  "changes": {
+    "fields": 0,
+    "sentences_including_repeated_fields": 0,
+    "unique_source_strings_corrected": 0,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 0,
+    "total_corrected_sentences": 0,
+    "count_method": "All4translations retained after full individual review;0corrected fields or expressions."
+  },
+  "new_locked_terms": 4,
+  "new_locked_names": [
+    "Meow! The outpost is full of pawesome shops, huh?",
+    "Meow. ...I had you thinking I was a normal cat, didn't I?",
+    "Mew... The outpost is a bit chilly, huh? Cats prefer warm places, for sure!",
+    "Meow? What's that? Sorry, this thick crowd is messing with my telepathy."
+  ],
+  "reused_locked_names": [],
+  "reused_proper_names": [],
+  "locked_total": 1349,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "4910e9f287be1236a6ff496ef4a37a0aa977f36af21b3f7fc4401603e3b90f63",
+  "luna_original_packet_sha256": "d34292c01d71d440b20e19b0961d60efceaf908e569cdc9ae5095a6fe6fb5e7d",
+  "approved_rows_sha256": "5be808f736fda039aabbafabab085d97c69c292a74a0e7d96b9e2e662ec87f8f",
+  "corrections": [],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "d34292c01d71d440b20e19b0961d60efceaf908e569cdc9ae5095a6fe6fb5e7d",
+    "filled_units": 4
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 4,
+    "context_units": 4,
+    "qa": {
+      "catalog_units_checked": 36034,
+      "raw_units_checked": 115,
+      "locked_terms": 1349
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All4EN/TR variants and4occurrences fully reviewed;all4TR retained,0corrections. Default/default fallback does not identify speaker/target species. Missing vanilla parent and active visitor consumers;LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/outpost/visitors/catvisitor.npctype",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      },
+      {
+        "source": "fu_source/items/armors/hider/hider.chest",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      },
+      {
+        "source": "fu_source/items/armors/hider/hider.legs",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      },
+      {
+        "source": "fu_source/items/armors/hider/hiderback.back",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      },
+      {
+        "source": "fu_source/recipes/spinningwheel/clothes/hiderchest.recipe",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      },
+      {
+        "source": "fu_source/recipes/spinningwheel/clothes/hiderlegs.recipe",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      },
+      {
+        "source": "fu_source/recipes/spinningwheel/clothes/hiderback.recipe",
+        "note": "Complete source read and hashed. Cat NPC dialogue is selected;three hider items and three recipes are context only,not translated in this packet. No live render/spawn proof."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/outpost/visitors/catvisitor.npctype",
+        "type": "catvisitor",
+        "base_type": "outpostvisitor",
+        "fields": 4,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/outpost/visitors/catvisitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/outpost/visitors/catvisitor.npctype",
+            "en": "Meow! The outpost is full of pawesome shops, huh?",
+            "luna_tr": "Miyav! Karakol patişahane dükkânlarla dolu, ha?",
+            "approved_tr": "Miyav! Karakol patişahane dükkânlarla dolu, ha?",
+            "reason": "Meow doğal Miyav ile karşılandı. Pawesome içindeki paw/awesome kelime oyunu pati/şahane birleşimi patişahane ile taşındı;bu kaynak şakasıdır,yeni kedi ürünleri veya dükkân türü eklenmedi. Outpost Karakol ve huh soru/sohbet tonu korunur."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/outpost/visitors/catvisitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/1",
+            "origin": "npcs/outpost/visitors/catvisitor.npctype",
+            "en": "Meow. ...I had you thinking I was a normal cat, didn't I?",
+            "luna_tr": "Miyav. ...Seni sıradan bir kedi olduğuma inandırdım, değil mi?",
+            "approved_tr": "Miyav. ...Seni sıradan bir kedi olduğuma inandırdım, değil mi?",
+            "reason": "Sıradan kedi sanmaya yöneltme anlamı ve değil mi doğrulama sorusu korundu. Normal cat ifadesinden farklı bir tür,uzaylı kimliği,dönüşüm veya kılık değiştirme mekaniği çıkarılmadı. Miyav sonrası nokta ve üç nokta tonu korundu."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/outpost/visitors/catvisitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/2",
+            "origin": "npcs/outpost/visitors/catvisitor.npctype",
+            "en": "Mew... The outpost is a bit chilly, huh? Cats prefer warm places, for sure!",
+            "luna_tr": "Miyav... Karakol biraz serin, ha? Kediler sıcak yerleri tercih eder, orası kesin!",
+            "approved_tr": "Miyav... Karakol biraz serin, ha? Kediler sıcak yerleri tercih eder, orası kesin!",
+            "reason": "A bit chilly biraz serin olarak hafif derecede;prefer sıcak yer tercihi olarak korundu. For sure orası kesin söylemiyle ve kısa kedi sesiyle taşındı. Isı bağışıklığı,zarar,buff veya zorunluluk eklenmedi."
+          },
+          {
+            "unit_index": 3,
+            "asset": "npcs/outpost/visitors/catvisitor.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/3",
+            "origin": "npcs/outpost/visitors/catvisitor.npctype",
+            "en": "Meow? What's that? Sorry, this thick crowd is messing with my telepathy.",
+            "luna_tr": "Miyav? Ne dedin? Kusura bakma, bu yoğun kalabalık telepatimi bozuyor.",
+            "approved_tr": "Miyav? Ne dedin? Kusura bakma, bu yoğun kalabalık telepatimi bozuyor.",
+            "reason": "What is that bu konuşmada duyulan/anlaşılan sözü yeniden isteme anlamındaki Ne dedin ile taşındı. İki kısa soru,özür ve yoğun kalabalığın telepatiyi bozması korundu;kalıcı güç kaybı veya kanıtlı bir oyun yeteneği iddia edilmedi."
+          }
+        ]
+      }
+    ],
+    "direct_fields": 4,
+    "layered_fields": 0,
+    "complete_npc_family": true,
+    "related_review_rows": 0,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "files": {
+      "npcs/outpost/visitors/catvisitor.npctype": "d07bcc03d25aae31c39f7faf5de899ffa0de71e9404020fd43f958281c027461",
+      "items/armors/hider/hider.chest": "ec3beca0f7b9e242aee42e9570febba304d454d632c81a0aa5c0e71896223b64",
+      "items/armors/hider/hider.legs": "884a796222b73b1f8d94a901ed3705e98b78bd135ddab3c3d70ffe60917df5fc",
+      "items/armors/hider/hiderback.back": "bffb90143d1739c690579c160e971e585f919b8a7fa54ace5b4f5a1a206d2004",
+      "recipes/spinningwheel/clothes/hiderchest.recipe": "e652542f46d4aaf90fa13114635b9368157000504935eb0dedc1074d634cd503",
+      "recipes/spinningwheel/clothes/hiderlegs.recipe": "ff80306e338b15eff824dd6906c40d7bdde581c764d1ee5aad247b00f4aae3a2",
+      "recipes/spinningwheel/clothes/hiderback.recipe": "612ccaa271d26fd7845cf7cd5728f0df0265ecd45014ead0d34195e956ec2882"
+    },
+    "source_context": {
+      "status": "PREREAD_ONLY_FULL_LANGUAGE_REVIEW_PENDING",
+      "files": {
+        "npcs/outpost/visitors/catvisitor.npctype": "d07bcc03d25aae31c39f7faf5de899ffa0de71e9404020fd43f958281c027461",
+        "items/armors/hider/hider.chest": "ec3beca0f7b9e242aee42e9570febba304d454d632c81a0aa5c0e71896223b64",
+        "items/armors/hider/hider.legs": "884a796222b73b1f8d94a901ed3705e98b78bd135ddab3c3d70ffe60917df5fc",
+        "items/armors/hider/hiderback.back": "bffb90143d1739c690579c160e971e585f919b8a7fa54ace5b4f5a1a206d2004",
+        "recipes/spinningwheel/clothes/hiderchest.recipe": "e652542f46d4aaf90fa13114635b9368157000504935eb0dedc1074d634cd503",
+        "recipes/spinningwheel/clothes/hiderlegs.recipe": "ff80306e338b15eff824dd6906c40d7bdde581c764d1ee5aad247b00f4aae3a2",
+        "recipes/spinningwheel/clothes/hiderback.recipe": "612ccaa271d26fd7845cf7cd5728f0df0265ecd45014ead0d34195e956ec2882"
+      },
+      "npc_base_type": "outpostvisitor",
+      "vanilla_base_available": false,
+      "literal_catvisitor_references_in_fu": [
+        "npcs/outpost/visitors/catvisitor.npctype"
+      ],
+      "active_outpost_spawn_or_dialogue_consumer_verified": false,
+      "appearance_or_hider_runtime_verified": false,
+      "gear_ids": [
+        "hiderchest",
+        "hiderlegs",
+        "hiderback"
+      ],
+      "gear_scope": "context only;not translation rows",
+      "source_text_notes": [
+        "pawesome combines paw+awesome;retain a natural feline pun",
+        "normal-cat deception tagquestion does not identify a species/disguise mechanic",
+        "a bit chilly retains mildness;warm-place preference is dialogue,not a temperature stat",
+        "crowd interference with telepathy remains character speech,not a verified game ability"
+      ],
+      "lqa": "NOT TESTED"
+    },
+    "terminology_notes": [
+      "Meow doğal Miyav ile karşılandı. Pawesome içindeki paw/awesome kelime oyunu pati/şahane birleşimi patişahane ile taşındı;bu kaynak şakasıdır,yeni kedi ürünleri veya dükkân türü eklenmedi. Outpost Karakol ve huh soru/sohbet tonu korunur.",
+      "Sıradan kedi sanmaya yöneltme anlamı ve değil mi doğrulama sorusu korundu. Normal cat ifadesinden farklı bir tür,uzaylı kimliği,dönüşüm veya kılık değiştirme mekaniği çıkarılmadı. Miyav sonrası nokta ve üç nokta tonu korundu.",
+      "A bit chilly biraz serin olarak hafif derecede;prefer sıcak yer tercihi olarak korundu. For sure orası kesin söylemiyle ve kısa kedi sesiyle taşındı. Isı bağışıklığı,zarar,buff veya zorunluluk eklenmedi.",
+      "What is that bu konuşmada duyulan/anlaşılan sözü yeniden isteme anlamındaki Ne dedin ile taşındı. İki kısa soru,özür ve yoğun kalabalığın telepatiyi bozması korundu;kalıcı güç kaybı veya kanıtlı bir oyun yeteneği iddia edilmedi."
+    ],
+    "speaker_target_fallback_not_species": true,
+    "equipment_scope": "context only;not translated",
+    "appearance_verified": false,
+    "telepathy_mechanic_verified": false
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All4EN/TR variants and4occurrences in the complete FU catvisitor NPC manually reviewed. All4translations retained;0corrections. Previous20698catalog fields unchanged;total20702.",
+    "Pawesome paw/awesome wordplay is rendered with pati/sahane as patisahane in Turkish;this transfers the source joke without inventing cat merchandise. Meow/Mew use natural Turkish cat sounds,not an English preservation exemption.",
+    "The normal-cat tag question preserves the playful mistaken impression without identifying a species or disguise mechanic. Mild chilly/warm-place preference,questions,apology and crowded telepathy interference remain character speech,not tested game mechanics.",
+    "Four new exact fullreply LOCKED,total1349. Existing terms unchanged;no generic cat/paw/shop/crowd/telepathy mapping,context/TM/preserve/format exception or English sentence permission added.",
+    "Default/default is a fallback branch,not a specific speaker/target species. Vanilla outpostvisitor base and outpostvisitors config are absent. Literal catvisitor type appears only in its own FU definition;dynamic vanilla visitor/spawn and active dialogue consumer are unverified. Other FU civilians are not substituted as consumers.",
+    "Three real hider equipment itemName bindings and their three recipes were fully read as context only. They are not translation rows and do not verify rendering,appearance,cat identity or live spawn. Identity,equipment,stats,recipes,rewards and gameplay unchanged;LQA NOT TESTED.",
+    "All4fields belong to the original52source-bound dialogue list. No review/lua_review pool promotion. New run22to32;allbaseline dialogue publications must finish before object/item drafts. No scheduler,Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

@@ -223,6 +223,11 @@ V103_PROTECTORATE_FIELDS = {(r['asset'], r['pointer']) for r in _V103_MANIFEST['
 if len(V103_PROTECTORATE_FIELDS) != 8 or len(_V103_MANIFEST['translations']) != 8:
     raise ValueError('v0.103 Protectorate overlay manifest inventory drift')
 
+_V104_MANIFEST = json.loads(Path(__file__).with_name('v104_translations.json').read_text(encoding='utf-8'))
+V104_CATVISITOR_FIELDS = {(r['asset'], r['pointer']) for r in _V104_MANIFEST['translations']}
+if len(V104_CATVISITOR_FIELDS) != 4 or len(_V104_MANIFEST['translations']) != 4:
+    raise ValueError('v0.104 catvisitor manifest field inventory drift')
+
 # Aktif fu_warcraft ağacındaki bonegear, irongear, telebriumgear ve
 # tungstengear düğümlerinin açtığı; gerçek üretim tarifi bulunan v0.21
 # erken oyun silahları. Önceden kapsanan 3 asset kendi eski allowlist'inde
@@ -865,6 +870,8 @@ if len(V0652_SHIP_DIALOG_FIELDS) != 23:
     raise ValueError('v0.65.2 ship dialogue field inventory drift')
 
 def allowed(a,p):
+    if (a,p) in V104_CATVISITOR_FIELDS:
+        return True
     if (a,p) in V103_PROTECTORATE_FIELDS:
         return True
     if (a,p) in V102_MICRODUNGEONS_FIELDS:
