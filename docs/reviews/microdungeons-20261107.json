@@ -1,0 +1,1733 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-07",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 25,
+  "run_id": "fu-ten-20261106",
+  "run_round": 3,
+  "base_commit": "0459a1a6aee7f703e1bbeaab805f17dc920568f7",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 9,
+    "context_groups": 9,
+    "unique_english_strings": 6,
+    "assets": {
+      "npcs/microdungeons/hydroquestgiver.npctype": 3,
+      "npcs/microdungeons/primevalquestgiver.npctype": 3,
+      "npcs/microdungeons/wastelandquestgiver.npctype": 3
+    },
+    "fu_layered_fields": 0,
+    "direct_source_fields": 9,
+    "dialogue_events": {
+      "converse": 9
+    },
+    "dialogue_fields": 9,
+    "title_fields": 0,
+    "confirmed_family_remainder": true,
+    "excluded_review_fields": 16,
+    "live_runtime_visibility_verified": false
+  },
+  "changes": {
+    "fields": 1,
+    "sentences_including_repeated_fields": 1,
+    "unique_source_strings_corrected": 1,
+    "existing_catalog_corrections": 0,
+    "total_corrected_fields": 1,
+    "total_corrected_sentences": 1,
+    "count_method": "One first-sentence idiomatic/quantifier expression;the separate murder sentence and all other variants unchanged."
+  },
+  "new_locked_terms": 6,
+  "new_locked_names": [
+    "Jersey Shore",
+    "I don't think anyone should eat thumbtacks.",
+    "I've never seen a unicorn that farts fire before. Have you?",
+    "I grew weary of watching Jersey Shore like all the other idiots out there. I turned to murder, instead.",
+    "It makes me happy to see another Apex who has escaped the brutality of the Miniknog.",
+    "I grew weary of watching my Apex brothers and sisters being tormented at the hands of the Miniknog, so I left."
+  ],
+  "reused_locked_names": [],
+  "reused_proper_names": [
+    "Miniknog"
+  ],
+  "locked_total": 1335,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "maintenance": [],
+  "approved_packet_sha256": "61bb4ad5d479c6895063867dcbde1632991599e035389922c065fdbfc9db8a6e",
+  "luna_original_packet_sha256": "e273d096b666903a155faa9e7a34fc297eeca240df71ae6be27fde818609a9d0",
+  "approved_rows_sha256": "b09541f1f2149b33d46e7225c76b8eff705dcd119322270af81375b07a3806d2",
+  "corrections": [
+    {
+      "unit_index": 2,
+      "en": "I grew weary of watching Jersey Shore like all the other idiots out there. I turned to murder, instead.",
+      "before": "Dışarıdaki diğer aptallar gibi Jersey Shore izlemekten bıktım. Onun yerine cinayete yöneldim.",
+      "after": "Diğer bütün aptallar gibi Jersey Shore izlemekten bıktım. Onun yerine cinayete yöneldim.",
+      "occurrences": [
+        {
+          "asset": "npcs/microdungeons/hydroquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/0",
+          "origin": "npcs/microdungeons/hydroquestgiver.npctype"
+        }
+      ],
+      "changed_sentences": 1,
+      "reason": "All the other idiots ifadesindeki bütün kapsamı korundu. Out there deyimsel genelleme olduğundan kaynakta belirli bir dış mekân veya laboratuvar dışı grup varmış izlenimi veren Dışarıdaki kaldırıldı. Jersey Shore adı ve ikinci cinayete yönelme cümlesi aynı kaldı;bir bağımsız ifade düzeltildi."
+    }
+  ],
+  "initial_preflight": {
+    "status": "PASS_LANGUAGE_REVIEW_REQUIRED",
+    "error": null,
+    "packet_sha256": "e273d096b666903a155faa9e7a34fc297eeca240df71ae6be27fde818609a9d0",
+    "filled_units": 9
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 9,
+    "context_units": 9,
+    "qa": {
+      "catalog_units_checked": 36005,
+      "raw_units_checked": 115,
+      "locked_terms": 1335
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "All9EN/TR variants and9occurrences in3complete NPCs reviewed.1field/1expression corrected. Six source-scope questions resolved only for translation of original baseline fields;live visibility remains unverified.16relatedreview excluded,LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "fu_source/npcs/microdungeons/hydroquestgiver.npctype",
+        "note": "Complete NPC and all three converse variants reviewed. First species key is speaker,second target. Existingbaseline source fields only;no pool promotion or live visibility assertion."
+      },
+      {
+        "source": "fu_source/npcs/microdungeons/primevalquestgiver.npctype",
+        "note": "Complete NPC and all three converse variants reviewed. First species key is speaker,second target. Existingbaseline source fields only;no pool promotion or live visibility assertion."
+      },
+      {
+        "source": "fu_source/npcs/microdungeons/wastelandquestgiver.npctype",
+        "note": "Complete NPC and all three converse variants reviewed. First species key is speaker,second target. Existingbaseline source fields only;no pool promotion or live visibility assertion."
+      },
+      {
+        "source": "fu_source/dungeons/microdungeons/biomes/labs/lab1.json; fu_source/dungeons/microdungeons/biomes/labs/fulabs.dungeon; fu_source/dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins.dungeon; fu_source/dungeons/missions/wastelandquests.dungeon",
+        "note": "Lab1 has one static humanhydroquestgiver,38tilesets/34missing,no radio. Primevalhuman brush has zero selectedRGBA pixels in sixPNGimages;thirdpartchance0. WastelandFloran brush has one selected pixel in skyscraperfuobjects.png but activeworld consumer not verified. Metadata,PNGcounts,maxSpawnCount and22minigreen biomeplacement definitions are not live spawning/access proof."
+      },
+      {
+        "source": "fu_source/quests/fu_questlines/other/create_hydrotray.questtemplate; fu_source/quests/fu_questlines/battle/gear/create_warcleaver.questtemplate; fu_source/npcs/avianfirebringer.npctype",
+        "note": "Both complete quest definitions and source TM NPC read as context only. Primevalrooted offered/turnin lines are comments,not parsed active keys. Missingvanilla outpostcivilian not substituted with differentFUcivilian. Questgrant,turnin,spawn,dialogue and reward effects untested. Identity,equipment,stats,rewards and gameplay unchanged."
+      }
+    ]
+  },
+  "source_context": {
+    "npcs": [
+      {
+        "asset": "npcs/microdungeons/hydroquestgiver.npctype",
+        "type": "hydroquestgiver",
+        "base_type": "outpostcivilian",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 0,
+            "asset": "npcs/microdungeons/hydroquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/0",
+            "origin": "npcs/microdungeons/hydroquestgiver.npctype",
+            "en": "I don't think anyone should eat thumbtacks.",
+            "luna_tr": "Bence kimse raptiye yememeli.",
+            "approved_tr": "Bence kimse raptiye yememeli.",
+            "reason": "Raptiye karşılığı ve kimsenin yememesi gerektiği yönündeki kişisel görüş korunur. Kaynak yeni tıbbi mekanik veya mutlak teknik yasak değildir."
+          },
+          {
+            "unit_index": 1,
+            "asset": "npcs/microdungeons/hydroquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/microdungeons/hydroquestgiver.npctype",
+            "en": "I've never seen a unicorn that farts fire before. Have you?",
+            "luna_tr": "Daha önce ateş osuran bir tek boynuzlu at görmedim. Ya sen?",
+            "approved_tr": "Daha önce ateş osuran bir tek boynuzlu at görmedim. Ya sen?",
+            "reason": "Daha önce görmemiş olma,ateş osuran tek boynuzlu at absürt imgesi ve muhataba Ya sen? sorusu korunur. Yeni yaratık kimliği veya yetenek mekaniği eklenmez."
+          },
+          {
+            "unit_index": 2,
+            "asset": "npcs/microdungeons/hydroquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/microdungeons/hydroquestgiver.npctype",
+            "en": "I grew weary of watching Jersey Shore like all the other idiots out there. I turned to murder, instead.",
+            "luna_tr": "Dışarıdaki diğer aptallar gibi Jersey Shore izlemekten bıktım. Onun yerine cinayete yöneldim.",
+            "approved_tr": "Diğer bütün aptallar gibi Jersey Shore izlemekten bıktım. Onun yerine cinayete yöneldim.",
+            "reason": "All the other idiots ifadesindeki bütün kapsamı korundu. Out there deyimsel genelleme olduğundan kaynakta belirli bir dış mekân veya laboratuvar dışı grup varmış izlenimi veren Dışarıdaki kaldırıldı. Jersey Shore adı ve ikinci cinayete yönelme cümlesi aynı kaldı;bir bağımsız ifade düzeltildi."
+          }
+        ],
+        "script_config_quest_links": {
+          "offeredQuests": [
+            "create_hydrotray"
+          ],
+          "turnInQuests": [
+            "create_hydrotray"
+          ]
+        }
+      },
+      {
+        "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+        "type": "primevalquestgiver",
+        "base_type": "outpostcivilian",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 3,
+            "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/0",
+            "origin": "npcs/microdungeons/primevalquestgiver.npctype",
+            "en": "It makes me happy to see another Apex who has escaped the brutality of the Miniknog.",
+            "luna_tr": "Miniknog’un zulmünden kaçmayı başarmış başka bir Apex görmek beni mutlu ediyor.",
+            "approved_tr": "Miniknog’un zulmünden kaçmayı başarmış başka bir Apex görmek beni mutlu ediyor.",
+            "reason": "Apex/apex konuşmacı ve muhatap dalı ile Miniknog zulmünden kaçmış başka bir Apex görme sevinci korunur. Aynı tam kaynak Avianfirebringer TM kaynağında da okundu. Mevcut Miniknog adı aynı;PNG yerleşimi canlı onay değildir."
+          },
+          {
+            "unit_index": 4,
+            "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/microdungeons/primevalquestgiver.npctype",
+            "en": "I grew weary of watching my Apex brothers and sisters  being tormented at the hands of the Miniknog, so I left.",
+            "luna_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "approved_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "reason": "Çift boşluklu raw EN aynen tutulur. Apex kardeşler topluluk söylemidir,biyolojik aile kimliği eklenmez. Eziyeti izlemekten bıkma ve bu yüzden ayrılma korunur;gezegen veya yeni geçmiş eklenmedi. Avianfirebringer exact TM ile karşılaştırıldı."
+          },
+          {
+            "unit_index": 5,
+            "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/microdungeons/primevalquestgiver.npctype",
+            "en": "I grew weary of watching my Apex brothers and sisters being tormented at the hands of the Miniknog, so I left.",
+            "luna_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "approved_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "reason": "Tek boşluklu ayrı raw EN varyantı ve default/default fallback ayrıca okundu;aynı anlam için aynı TR korundu. Primeval PNGbrushının mevcut olması ama altıPNGde seçili piksel olmaması erişim onayı değildir."
+          }
+        ],
+        "script_config_quest_links": {}
+      },
+      {
+        "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+        "type": "wastelandquestgiver",
+        "base_type": "outpostcivilian",
+        "fields": 3,
+        "entries": [
+          {
+            "unit_index": 6,
+            "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/apex/0",
+            "origin": "npcs/microdungeons/wastelandquestgiver.npctype",
+            "en": "It makes me happy to see another Apex who has escaped the brutality of the Miniknog.",
+            "luna_tr": "Miniknog’un zulmünden kaçmayı başarmış başka bir Apex görmek beni mutlu ediyor.",
+            "approved_tr": "Miniknog’un zulmünden kaçmayı başarmış başka bir Apex görmek beni mutlu ediyor.",
+            "reason": "İkinci NPCnin Apex/apex occurrence kaynağı ayrıca okundu;aynı tam kaynak ve anlam için aynı TM karşılığı korundu. Floranbrushından kaynak dışı tıslama veya karakter geçmişi çıkarılmadı."
+          },
+          {
+            "unit_index": 7,
+            "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+            "origin": "npcs/microdungeons/wastelandquestgiver.npctype",
+            "en": "I grew weary of watching my Apex brothers and sisters  being tormented at the hands of the Miniknog, so I left.",
+            "luna_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "approved_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "reason": "İkinci NPCdeki çift boşluklu EN ve Apex/default konuşmacı dalı ayrı incelendi;Apex kardeşlere eziyet ve ayrılma aynı TR ile korundu. Wasteland aktifdünya tüketicisi doğrulanmadı."
+          },
+          {
+            "unit_index": 8,
+            "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+            "pointer": "/scriptConfig/dialog/converse/default/default/0",
+            "origin": "npcs/microdungeons/wastelandquestgiver.npctype",
+            "en": "I grew weary of watching my Apex brothers and sisters being tormented at the hands of the Miniknog, so I left.",
+            "luna_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "approved_tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+            "reason": "İkinci NPCdeki tek boşluklu default/default occurrence ayrı incelendi. Source EN boşluğu değiştirilmedi;aynı TR korundu. Questin ScienceOutpost ifadesinden bu NPCnin orada olduğu iddia edilmedi."
+          }
+        ],
+        "script_config_quest_links": {
+          "offeredQuests": [
+            "create_warcleaver"
+          ],
+          "turnInQuests": [
+            "create_warcleaver"
+          ]
+        }
+      }
+    ],
+    "direct_fields": 9,
+    "layered_fields": 0,
+    "complete_npc_family": true,
+    "related_review_rows": 16,
+    "active_consumer_verified": false,
+    "live_lqa": "NOT TESTED",
+    "files": {
+      "npcs/microdungeons/hydroquestgiver.npctype": "4ee1abf7f89d6cd186b535595546b2c7993bd66b85abd6065d5aa10fce463c4c",
+      "npcs/microdungeons/primevalquestgiver.npctype": "f147827fcaa3be548c57dc4424781a630fca975cab468253e06aadcc550bae4c",
+      "npcs/microdungeons/wastelandquestgiver.npctype": "a6725ee8dc90a5c6cb576adba8bce467f822a9cca6c565308e6ceb82b12e78ac",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins.dungeon": "ca4b3f162a889674a12f12f7d5897ecce8f05043185e67b3bb33a8ba3c2071b9",
+      "dungeons/missions/wastelandquests.dungeon": "c4a5db516ec74b7633e3c3b05e78adb38706286d34cbfb54e4752a4547aad13c",
+      "dungeons/microdungeons/biomes/labs/lab1.json": "74a3991f4da1adb92dae26c80a394f106ddeb2a57a99f8a0e44ae311e3c241bc",
+      "quests/fu_questlines/other/create_hydrotray.questtemplate": "0a8711ac1a7ad620a50c9d8588536058b7a3301570c7f5d00db8adcd9d725a21",
+      "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate": "a2d52ca0a69932a356198dc0ce51630795935972949dc98923a92d037e7a0e82",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins1.png": "131dcdbc18751b83d7b4fdbc58a92e0480ea448f7baa2aa050622a486855cf57",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins1objects.png": "e2c222a29bd3232b70d15226af38379f5abe15c44f81610cec4b0cc6fb52ea0e",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins2.png": "9802c3644a3e3468eddbf9663f048ccd2f25a4cca2828d31d446748de1e1bc2c",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins2objects.png": "b3ea98923f68b18c14be58cc8595ea6edc692956fdb82bd2aea86ed577cf0e5c",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins3.png": "580815c256566f37a9f85eee77151ad51dab21d858de15e8d880087008abeff2",
+      "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins3objects.png": "f35f65f47ae5d41465417a1507aac3dc5621a0a81c6dbb39f9a5b526a6ccf941",
+      "dungeons/missions/skyscraperfu.png": "6d2a278a608e608cfe35d4c1c6ef29a973d60841e2f63a7d65d452ebbd43f513",
+      "dungeons/missions/skyscraperfuobjects.png": "af25f626eb3e008b83081755bb3d8554c9622b8de569b81d4e365e7334328cdd",
+      "biomes/surface/arboreal.biome": "16d75c4fbaa5559eb59962ed029985c23a38de0718635f1470dbb3bbfc637140",
+      "biomes/surface/arboreal2.biome": "8fd2031aa37315388caadb8cac7b3614ab38bb4ab7433ed48861921f6f4fd22c",
+      "biomes/surface/arborealdark.biome": "1e86459bbd6d35f1eb451e933ff74144184ecefc022bd598a0a06b6ba370c49e",
+      "biomes/surface/autumnforest.biome": "ecb1a55a088ec4d30b63318c78d930e34a6c23af5f7fa6cebd5f6133e4a49f1c",
+      "biomes/surface/bog.biome": "66384b336d46031da02263cd7223e28c7cd5a91adfb414c1aafba99814f3d389",
+      "biomes/surface/chromatic.biome": "0c6008e4083d6e9fc382aecc8c50d6260fd333b9685dc788160061bc755083fd",
+      "biomes/surface/desertwastes.biome": "3f9992d4681878b752c8c8f1f245c80087f7d49083f93b047365af2c7e11e37c",
+      "biomes/surface/desertwastesdark.biome": "479b8856b23901b46cf397324f5a888a5e3845a1362bb1133703e2d536f44edd",
+      "biomes/surface/eden.biome": "b1f2ddd6cea619f77278f87e1995c67acc5c087365e1f00bc94ab941da677c1c",
+      "biomes/surface/forest.biome.patch": "5df5c351e0e02396938697f2177fe298823771cfdb3de62b97483dc47bf17bc8",
+      "biomes/surface/infernus.biome": "bfe4d1f35c9b4de110d56ad2e612781a6c274eb17ba9bb1c8e774a2dd9be67e3",
+      "biomes/surface/irradiated.biome": "68a0074b2bb7f16af5a88e87afd661f99833aa8f9b1d077db1fe88c6ada7f588",
+      "biomes/surface/jungle.biome.patch": "edc54045431e9650415a25b663c91a64453e05f243f73074346c6616b5250429",
+      "biomes/surface/savannah.biome.patch": "5c817ed5e8d5ef37f1faadb325fe0f5a1844635e62124584fc8465061c641bab",
+      "biomes/surface/snow.biome.patch": "fce0e77be84c9bc21aad13fcd972fcaf1bc7daa9d7b88629e538171bb5553b26",
+      "biomes/surface/thickjungle.biome": "024a94544f3aff7ac69d261daf31d543012be4db7a0cef39f680482960341763",
+      "biomes/surface/volcanic.biome.patch": "153690e7745a3bb29ab2f8bcb32ee8763f3f267ab08d35b184e9a449b5e1b595",
+      "biomes/surface_detached/atropusgoreforest.biome": "4d0b574530d34d76760b73738d88e8d223baef846b50c5c11bbcc82574517c43",
+      "biomes/surface_detached/fieldofsugar.biome": "a1d0d5da37946de703db902f320ceb8b437335f95d0f6d6f98b0914fc1629c28",
+      "biomes/surface_detached/goreforest.biome": "bb36debdd00e7ec6015361b5fbdb64a619f31bb500d5354f3cb425d12b14c24b",
+      "biomes/surface_detached/hauntedforest.biome": "8ce1fcecc6be0c3111e3c5d3a0601f7b74d51d90f3b75cbbdd9c4347de15f077",
+      "biomes/surface_detached/hauntedgraveyard.biome": "b256ccfa8bdf6fef2057ca885af14aec02fc955505ba5b98b07498d8349c89a4",
+      "dungeons/microdungeons/biomes/labs/fulabs.dungeon": "f7b5d2081076ba8c35ceeabb59d3bea26d7e862f3d135908f9c1bf034f0eeb0c",
+      "npcs/avianfirebringer.npctype": "4fd8fa99ef8b12a9318e3984bb2d3095f7b9f29f4ca521d5b569be3265a58eab"
+    },
+    "mission": {
+      "status": "PREREAD_ONLY_LANGUAGE_APPROVAL_PENDING",
+      "files": {
+        "npcs/microdungeons/hydroquestgiver.npctype": "4ee1abf7f89d6cd186b535595546b2c7993bd66b85abd6065d5aa10fce463c4c",
+        "npcs/microdungeons/primevalquestgiver.npctype": "f147827fcaa3be548c57dc4424781a630fca975cab468253e06aadcc550bae4c",
+        "npcs/microdungeons/wastelandquestgiver.npctype": "a6725ee8dc90a5c6cb576adba8bce467f822a9cca6c565308e6ceb82b12e78ac",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins.dungeon": "ca4b3f162a889674a12f12f7d5897ecce8f05043185e67b3bb33a8ba3c2071b9",
+        "dungeons/missions/wastelandquests.dungeon": "c4a5db516ec74b7633e3c3b05e78adb38706286d34cbfb54e4752a4547aad13c",
+        "dungeons/microdungeons/biomes/labs/lab1.json": "74a3991f4da1adb92dae26c80a394f106ddeb2a57a99f8a0e44ae311e3c241bc",
+        "quests/fu_questlines/other/create_hydrotray.questtemplate": "0a8711ac1a7ad620a50c9d8588536058b7a3301570c7f5d00db8adcd9d725a21",
+        "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate": "a2d52ca0a69932a356198dc0ce51630795935972949dc98923a92d037e7a0e82",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins1.png": "131dcdbc18751b83d7b4fdbc58a92e0480ea448f7baa2aa050622a486855cf57",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins1objects.png": "e2c222a29bd3232b70d15226af38379f5abe15c44f81610cec4b0cc6fb52ea0e",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins2.png": "9802c3644a3e3468eddbf9663f048ccd2f25a4cca2828d31d446748de1e1bc2c",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins2objects.png": "b3ea98923f68b18c14be58cc8595ea6edc692956fdb82bd2aea86ed577cf0e5c",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins3.png": "580815c256566f37a9f85eee77151ad51dab21d858de15e8d880087008abeff2",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins3objects.png": "f35f65f47ae5d41465417a1507aac3dc5621a0a81c6dbb39f9a5b526a6ccf941",
+        "dungeons/missions/skyscraperfu.png": "6d2a278a608e608cfe35d4c1c6ef29a973d60841e2f63a7d65d452ebbd43f513",
+        "dungeons/missions/skyscraperfuobjects.png": "af25f626eb3e008b83081755bb3d8554c9622b8de569b81d4e365e7334328cdd",
+        "biomes/surface/arboreal.biome": "16d75c4fbaa5559eb59962ed029985c23a38de0718635f1470dbb3bbfc637140",
+        "biomes/surface/arboreal2.biome": "8fd2031aa37315388caadb8cac7b3614ab38bb4ab7433ed48861921f6f4fd22c",
+        "biomes/surface/arborealdark.biome": "1e86459bbd6d35f1eb451e933ff74144184ecefc022bd598a0a06b6ba370c49e",
+        "biomes/surface/autumnforest.biome": "ecb1a55a088ec4d30b63318c78d930e34a6c23af5f7fa6cebd5f6133e4a49f1c",
+        "biomes/surface/bog.biome": "66384b336d46031da02263cd7223e28c7cd5a91adfb414c1aafba99814f3d389",
+        "biomes/surface/chromatic.biome": "0c6008e4083d6e9fc382aecc8c50d6260fd333b9685dc788160061bc755083fd",
+        "biomes/surface/desertwastes.biome": "3f9992d4681878b752c8c8f1f245c80087f7d49083f93b047365af2c7e11e37c",
+        "biomes/surface/desertwastesdark.biome": "479b8856b23901b46cf397324f5a888a5e3845a1362bb1133703e2d536f44edd",
+        "biomes/surface/eden.biome": "b1f2ddd6cea619f77278f87e1995c67acc5c087365e1f00bc94ab941da677c1c",
+        "biomes/surface/forest.biome.patch": "5df5c351e0e02396938697f2177fe298823771cfdb3de62b97483dc47bf17bc8",
+        "biomes/surface/infernus.biome": "bfe4d1f35c9b4de110d56ad2e612781a6c274eb17ba9bb1c8e774a2dd9be67e3",
+        "biomes/surface/irradiated.biome": "68a0074b2bb7f16af5a88e87afd661f99833aa8f9b1d077db1fe88c6ada7f588",
+        "biomes/surface/jungle.biome.patch": "edc54045431e9650415a25b663c91a64453e05f243f73074346c6616b5250429",
+        "biomes/surface/savannah.biome.patch": "5c817ed5e8d5ef37f1faadb325fe0f5a1844635e62124584fc8465061c641bab",
+        "biomes/surface/snow.biome.patch": "fce0e77be84c9bc21aad13fcd972fcaf1bc7daa9d7b88629e538171bb5553b26",
+        "biomes/surface/thickjungle.biome": "024a94544f3aff7ac69d261daf31d543012be4db7a0cef39f680482960341763",
+        "biomes/surface/volcanic.biome.patch": "153690e7745a3bb29ab2f8bcb32ee8763f3f267ab08d35b184e9a449b5e1b595",
+        "biomes/surface_detached/atropusgoreforest.biome": "4d0b574530d34d76760b73738d88e8d223baef846b50c5c11bbcc82574517c43",
+        "biomes/surface_detached/fieldofsugar.biome": "a1d0d5da37946de703db902f320ceb8b437335f95d0f6d6f98b0914fc1629c28",
+        "biomes/surface_detached/goreforest.biome": "bb36debdd00e7ec6015361b5fbdb64a619f31bb500d5354f3cb425d12b14c24b",
+        "biomes/surface_detached/hauntedforest.biome": "8ce1fcecc6be0c3111e3c5d3a0601f7b74d51d90f3b75cbbdd9c4347de15f077",
+        "biomes/surface_detached/hauntedgraveyard.biome": "b256ccfa8bdf6fef2057ca885af14aec02fc955505ba5b98b07498d8349c89a4",
+        "dungeons/microdungeons/biomes/labs/fulabs.dungeon": "f7b5d2081076ba8c35ceeabb59d3bea26d7e862f3d135908f9c1bf034f0eeb0c",
+        "npcs/avianfirebringer.npctype": "4fd8fa99ef8b12a9318e3984bb2d3095f7b9f29f4ca521d5b569be3265a58eab"
+      },
+      "image_dungeons": [
+        {
+          "asset": "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins.dungeon",
+          "metadata": {
+            "name": "minigreenruins",
+            "species": "dummy",
+            "rules": [],
+            "maxRadius": 2000,
+            "maxParts": 1,
+            "anchor": [
+              "minigreenruins3",
+              "minigreenruins2",
+              "minigreenruins1"
+            ]
+          },
+          "selected_brushes": [
+            {
+              "value": [
+                150,
+                255,
+                100,
+                255
+              ],
+              "comment": "questgiver",
+              "brush": [
+                [
+                  "npc",
+                  {
+                    "kind": "npc",
+                    "species": "human",
+                    "typeName": "primevalquestgiver"
+                  }
+                ]
+              ]
+            }
+          ],
+          "same_color_definitions": [
+            {
+              "value": [
+                150,
+                255,
+                100,
+                255
+              ],
+              "comment": "questgiver",
+              "brush": [
+                [
+                  "npc",
+                  {
+                    "kind": "npc",
+                    "species": "human",
+                    "typeName": "primevalquestgiver"
+                  }
+                ]
+              ]
+            }
+          ],
+          "parts": [
+            {
+              "name": "minigreenruins1",
+              "rules": [],
+              "def": [
+                "image",
+                [
+                  "minigreenruins1.png",
+                  "minigreenruins1objects.png"
+                ]
+              ]
+            },
+            {
+              "name": "minigreenruins2",
+              "rules": [],
+              "def": [
+                "image",
+                [
+                  "minigreenruins2.png",
+                  "minigreenruins2objects.png"
+                ]
+              ]
+            },
+            {
+              "name": "minigreenruins3",
+              "rules": [],
+              "def": [
+                "image",
+                [
+                  "minigreenruins3.png",
+                  "minigreenruins3objects.png"
+                ]
+              ],
+              "chance": 0
+            }
+          ],
+          "pixels": [
+            {
+              "part": "minigreenruins1",
+              "image": "minigreenruins1.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": null,
+              "part_rules": []
+            },
+            {
+              "part": "minigreenruins1",
+              "image": "minigreenruins1objects.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": null,
+              "part_rules": []
+            },
+            {
+              "part": "minigreenruins2",
+              "image": "minigreenruins2.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": null,
+              "part_rules": []
+            },
+            {
+              "part": "minigreenruins2",
+              "image": "minigreenruins2objects.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": null,
+              "part_rules": []
+            },
+            {
+              "part": "minigreenruins3",
+              "image": "minigreenruins3.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": 0,
+              "part_rules": []
+            },
+            {
+              "part": "minigreenruins3",
+              "image": "minigreenruins3objects.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": 0,
+              "part_rules": []
+            }
+          ],
+          "live_spawn_verified": false
+        },
+        {
+          "asset": "dungeons/missions/wastelandquests.dungeon",
+          "metadata": {
+            "name": "wastelandquests",
+            "species": "dummy",
+            "rules": [],
+            "anchor": [
+              "skyscraperfu"
+            ],
+            "maxRadius": 20000,
+            "maxParts": 100
+          },
+          "selected_brushes": [
+            {
+              "value": [
+                150,
+                255,
+                100,
+                255
+              ],
+              "comment": "questgiver",
+              "brush": [
+                [
+                  "npc",
+                  {
+                    "kind": "npc",
+                    "species": "floran",
+                    "typeName": "wastelandquestgiver"
+                  }
+                ]
+              ]
+            }
+          ],
+          "same_color_definitions": [
+            {
+              "value": [
+                150,
+                255,
+                100,
+                255
+              ],
+              "comment": "questgiver",
+              "brush": [
+                [
+                  "npc",
+                  {
+                    "kind": "npc",
+                    "species": "floran",
+                    "typeName": "wastelandquestgiver"
+                  }
+                ]
+              ]
+            }
+          ],
+          "parts": [
+            {
+              "name": "skyscraperfu",
+              "rules": [],
+              "def": [
+                "image",
+                [
+                  "skyscraperfu.png",
+                  "skyscraperfuobjects.png"
+                ]
+              ]
+            }
+          ],
+          "pixels": [
+            {
+              "part": "skyscraperfu",
+              "image": "skyscraperfu.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 0
+              },
+              "part_chance": null,
+              "part_rules": []
+            },
+            {
+              "part": "skyscraperfu",
+              "image": "skyscraperfuobjects.png",
+              "available": true,
+              "selected_color_pixels": {
+                "150,255,100,255": 1
+              },
+              "part_chance": null,
+              "part_rules": []
+            }
+          ],
+          "live_spawn_verified": false
+        }
+      ],
+      "tmx_maps": [
+        {
+          "asset": "dungeons/microdungeons/biomes/labs/lab1.json",
+          "static_npcs": [
+            {
+              "layer": "monsters & npcs",
+              "object_id": 768,
+              "npc": "human",
+              "typeName": "hydroquestgiver"
+            }
+          ],
+          "selected_static_npcs": [
+            {
+              "layer": "monsters & npcs",
+              "object_id": 768,
+              "npc": "human",
+              "typeName": "hydroquestgiver"
+            }
+          ],
+          "radio_parameters": [],
+          "tilesets": [
+            {
+              "firstgid": 1,
+              "source": "../../../../../../assets/packed/tilesets/packed/materials.json",
+              "available": false
+            },
+            {
+              "firstgid": 191,
+              "source": "../../../../../../assets/packed/tilesets/packed/supports.json",
+              "available": false
+            },
+            {
+              "firstgid": 227,
+              "source": "../../../../../../assets/packed/tilesets/packed/miscellaneous.json",
+              "available": false
+            },
+            {
+              "firstgid": 247,
+              "source": "../../../../../../assets/packed/tilesets/packed/liquids.json",
+              "available": false
+            },
+            {
+              "firstgid": 275,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/generic.json",
+              "available": false
+            },
+            {
+              "firstgid": 2040,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/ancient.json",
+              "available": false
+            },
+            {
+              "firstgid": 2157,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/apex.json",
+              "available": false
+            },
+            {
+              "firstgid": 2525,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/avian.json",
+              "available": false
+            },
+            {
+              "firstgid": 2829,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/floran.json",
+              "available": false
+            },
+            {
+              "firstgid": 3024,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/glitch.json",
+              "available": false
+            },
+            {
+              "firstgid": 3249,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/human.json",
+              "available": false
+            },
+            {
+              "firstgid": 3528,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/hylotl.json",
+              "available": false
+            },
+            {
+              "firstgid": 3759,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-race/novakid.json",
+              "available": false
+            },
+            {
+              "firstgid": 3785,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/crafting.json",
+              "available": false
+            },
+            {
+              "firstgid": 3861,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/decorative.json",
+              "available": false
+            },
+            {
+              "firstgid": 5162,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/door.json",
+              "available": false
+            },
+            {
+              "firstgid": 5278,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/farmable.json",
+              "available": false
+            },
+            {
+              "firstgid": 5353,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/furniture.json",
+              "available": false
+            },
+            {
+              "firstgid": 5679,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/light.json",
+              "available": false
+            },
+            {
+              "firstgid": 6096,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/other.json",
+              "available": false
+            },
+            {
+              "firstgid": 6392,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/pot.json",
+              "available": false
+            },
+            {
+              "firstgid": 6689,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/sapling.json",
+              "available": false
+            },
+            {
+              "firstgid": 6690,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/spawner.json",
+              "available": false
+            },
+            {
+              "firstgid": 6705,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/storage.json",
+              "available": false
+            },
+            {
+              "firstgid": 6923,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/teleporter.json",
+              "available": false
+            },
+            {
+              "firstgid": 6955,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/tools.json",
+              "available": false
+            },
+            {
+              "firstgid": 6960,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/trap.json",
+              "available": false
+            },
+            {
+              "firstgid": 7164,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-category/wire.json",
+              "available": false
+            },
+            {
+              "firstgid": 7349,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/container.json",
+              "available": false
+            },
+            {
+              "firstgid": 7618,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/farmable.json",
+              "available": false
+            },
+            {
+              "firstgid": 7696,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/loungeable.json",
+              "available": false
+            },
+            {
+              "firstgid": 7952,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/noisy.json",
+              "available": false
+            },
+            {
+              "firstgid": 7993,
+              "source": "../../../../../../assets/packed/tilesets/packed/objects-by-type/teleporter.json",
+              "available": false
+            },
+            {
+              "firstgid": 8018,
+              "source": "../../../../../../assets/packed/tilesets/packed/huge-objects.json",
+              "available": false
+            },
+            {
+              "firstgid": 8094,
+              "source": "../../../../tilesets/frackinuniverse-custom/fumaterials2.json",
+              "available": true
+            },
+            {
+              "firstgid": 8192,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_labgear.json",
+              "available": true
+            },
+            {
+              "firstgid": 8295,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_labmaterials.json",
+              "available": true
+            },
+            {
+              "firstgid": 8315,
+              "source": "../../../../tilesets/frackinuniverse-custom/fu_stations.json",
+              "available": true
+            }
+          ]
+        }
+      ],
+      "missing_vanilla": [
+        "npcs/outpostcivilian.npctype"
+      ],
+      "active_dialogue_consumer_verified": false,
+      "lqa": "NOT TESTED",
+      "biome_links": [
+        {
+          "asset": "biomes/surface/arboreal.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/20",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fuencounters",
+                  "fulabs",
+                  "fubandits",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/arboreal2.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/22",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fuencounters",
+                  "fulabs",
+                  "fubandits",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/arborealdark.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/20",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fulabs",
+                  "fuencounters",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuencountercultist",
+                  "fuhives",
+                  "furedhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/autumnforest.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/10",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newavianmicro",
+                  "minigreenruins"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/bog.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/18",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "fungalmini",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fuencounters",
+                  "fulabs",
+                  "fuavali",
+                  "fuelders",
+                  "fuencountercultist",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/chromatic.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/2",
+              "value": {
+                "mode": "floor",
+                "priority": 2.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fuencounters",
+                  "fulabs",
+                  "fuhives",
+                  "furedhives",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "furandomencounter",
+                  "fuglitchencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/desertwastes.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/9",
+              "value": {
+                "mode": "floor",
+                "priority": 2.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fuencounters",
+                  "fulabs",
+                  "fuelders",
+                  "fuhives",
+                  "furedhives",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "furandomencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/desertwastesdark.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/9",
+              "value": {
+                "mode": "floor",
+                "priority": 2.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fuencounters",
+                  "fulabs",
+                  "fuelders",
+                  "fuhives",
+                  "furedhives",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "furandomencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/eden.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/11",
+              "value": {
+                "mode": "floor",
+                "priority": 2.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "fuhives",
+                  "furedhives",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "furandomencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/forest.biome.patch",
+          "placements": [
+            {
+              "pointer": "/6/value",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newavianmicro",
+                  "minigreenruins"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/infernus.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/6",
+              "value": {
+                "mode": "floor",
+                "priority": 1.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounterfire",
+                  "shroomencounterfire",
+                  "eyeencounterfire",
+                  "colourfulencounterfire",
+                  "boneencounterfire",
+                  "humanencounterfire",
+                  "glitchencounterfire",
+                  "apexencounterfire",
+                  "avianencounterfire",
+                  "floranencounterfire",
+                  "bonesmicrodungeons",
+                  "foundrymicrodungeons",
+                  "randomencounter",
+                  "avianencounter",
+                  "glitchencounter",
+                  "shroomencounter",
+                  "fubandits",
+                  "fulabs",
+                  "fuencounters",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuencountercultist",
+                  "fuhives",
+                  "furedhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/irradiated.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/7",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fuencounters",
+                  "fulabs",
+                  "fuelders",
+                  "fuavali",
+                  "fuencountercultist",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuhives",
+                  "furedhives"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/jungle.biome.patch",
+          "placements": [
+            {
+              "pointer": "/5/value",
+              "value": {
+                "mode": "floor",
+                "priority": 1,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:mainBiomeEncounterDungeon",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "randomencounter",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuencounters",
+                  "fulabs",
+                  "fubandits",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "fuhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/savannah.biome.patch",
+          "placements": [
+            {
+              "pointer": "/7/value",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newavianmicro",
+                  "minigreenruins"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/snow.biome.patch",
+          "placements": [
+            {
+              "pointer": "/7/value",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "newavianmicro",
+                  "minigreenruins"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/thickjungle.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/12",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "fu_dae_microdungeons",
+                  "furainforest",
+                  "fuencounters",
+                  "randomencounter",
+                  "minigreenruins",
+                  "shroomencounter",
+                  "eyeencounter",
+                  "colourfulencounter",
+                  "boneencounter",
+                  "humanencounter",
+                  "glitchencounter",
+                  "floranencounter",
+                  "apexencounter",
+                  "avianencounter",
+                  "fubandits",
+                  "fuavali",
+                  "fulabs",
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "fuhives",
+                  "furandomencounter",
+                  "fuapexencounter",
+                  "fuglitchencounter",
+                  "fuavianencounter",
+                  "fuhumanencounter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface/volcanic.biome.patch",
+          "placements": [
+            {
+              "pointer": "/7/value",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newavianmicro",
+                  "minigreenruins"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/atropusgoreforest.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/22",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "randomencounter",
+                  "fuencountercultist"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/fieldofsugar.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/9",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "junglemicrodungeons"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/goreforest.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/13",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "randomencounter",
+                  "fuencountercultist"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/hauntedforest.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/14",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "randomencounter",
+                  "fuencountercultist"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "asset": "biomes/surface_detached/hauntedgraveyard.biome",
+          "placements": [
+            {
+              "pointer": "/surfacePlaceables/items/14",
+              "value": {
+                "mode": "floor",
+                "priority": 3.0,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:randomEncounter",
+                "type": "microdungeon",
+                "microdungeons": [
+                  "newhumanmicro",
+                  "newavianmicro",
+                  "minigreenruins",
+                  "randomencounter",
+                  "fuencountercultist"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "lab_dungeon": {
+        "metadata": {
+          "name": "fulabs",
+          "species": "generic",
+          "rules": [],
+          "anchor": [
+            "lab1",
+            "lab2",
+            "lab3",
+            "lab4",
+            "lab5"
+          ],
+          "gravity": 80,
+          "maxRadius": 1000000,
+          "maxParts": 100,
+          "protected": false
+        },
+        "parts": [
+          {
+            "name": "lab1",
+            "rules": [
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "lab1.json"
+            ]
+          },
+          {
+            "name": "lab2",
+            "rules": [
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "lab2.json"
+            ]
+          },
+          {
+            "name": "lab3",
+            "rules": [
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "lab3.json"
+            ]
+          },
+          {
+            "name": "lab4",
+            "rules": [
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "lab4.json"
+            ]
+          },
+          {
+            "name": "lab5",
+            "rules": [
+              [
+                "maxSpawnCount",
+                [
+                  1
+                ]
+              ]
+            ],
+            "def": [
+              "tmx",
+              "lab5.json"
+            ]
+          }
+        ]
+      },
+      "missing_quest_scripts": [],
+      "primeval_exact_selected_rgba_pixels": 0,
+      "wasteland_active_world_reference_verified": false
+    },
+    "terminology_notes": [
+      "Raptiye karşılığı ve kimsenin yememesi gerektiği yönündeki kişisel görüş korunur. Kaynak yeni tıbbi mekanik veya mutlak teknik yasak değildir.",
+      "Daha önce görmemiş olma,ateş osuran tek boynuzlu at absürt imgesi ve muhataba Ya sen? sorusu korunur. Yeni yaratık kimliği veya yetenek mekaniği eklenmez.",
+      "All the other idiots ifadesindeki bütün kapsamı korundu. Out there deyimsel genelleme olduğundan kaynakta belirli bir dış mekân veya laboratuvar dışı grup varmış izlenimi veren Dışarıdaki kaldırıldı. Jersey Shore adı ve ikinci cinayete yönelme cümlesi aynı kaldı;bir bağımsız ifade düzeltildi.",
+      "Apex/apex konuşmacı ve muhatap dalı ile Miniknog zulmünden kaçmış başka bir Apex görme sevinci korunur. Aynı tam kaynak Avianfirebringer TM kaynağında da okundu. Mevcut Miniknog adı aynı;PNG yerleşimi canlı onay değildir.",
+      "Çift boşluklu raw EN aynen tutulur. Apex kardeşler topluluk söylemidir,biyolojik aile kimliği eklenmez. Eziyeti izlemekten bıkma ve bu yüzden ayrılma korunur;gezegen veya yeni geçmiş eklenmedi. Avianfirebringer exact TM ile karşılaştırıldı.",
+      "Tek boşluklu ayrı raw EN varyantı ve default/default fallback ayrıca okundu;aynı anlam için aynı TR korundu. Primeval PNGbrushının mevcut olması ama altıPNGde seçili piksel olmaması erişim onayı değildir.",
+      "İkinci NPCnin Apex/apex occurrence kaynağı ayrıca okundu;aynı tam kaynak ve anlam için aynı TM karşılığı korundu. Floranbrushından kaynak dışı tıslama veya karakter geçmişi çıkarılmadı.",
+      "İkinci NPCdeki çift boşluklu EN ve Apex/default konuşmacı dalı ayrı incelendi;Apex kardeşlere eziyet ve ayrılma aynı TR ile korundu. Wasteland aktifdünya tüketicisi doğrulanmadı.",
+      "İkinci NPCdeki tek boşluklu default/default occurrence ayrı incelendi. Source EN boşluğu değiştirilmedi;aynı TR korundu. Questin ScienceOutpost ifadesinden bu NPCnin orada olduğu iddia edilmedi."
+    ],
+    "speaker_and_target_branches_distinguished": true,
+    "source_visibility_review": {
+      "status": "SOURCE_REVIEW_RESOLVED",
+      "round": 25,
+      "packet_sha256": "e273d096b666903a155faa9e7a34fc297eeca240df71ae6be27fde818609a9d0",
+      "decision": "APPROVE_EXISTING_BASELINE_SOURCE_TRANSLATION_WITH_UNVERIFIED_RUNTIME",
+      "requests": [
+        {
+          "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/apex/0",
+          "en": "It makes me happy to see another Apex who has escaped the brutality of the Miniknog.",
+          "tr": "Miniknog’un zulmünden kaçmayı başarmış başka bir Apex görmek beni mutlu ediyor.",
+          "reason": "Primeval brush seçili RGBA altı PNGde 0 piksel; aktif spawn/erişim kanıtı yok."
+        },
+        {
+          "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+          "en": "I grew weary of watching my Apex brothers and sisters  being tormented at the hands of the Miniknog, so I left.",
+          "tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+          "reason": "Primeval brush seçili RGBA altı PNGde 0 piksel; aktif spawn/erişim kanıtı yok."
+        },
+        {
+          "asset": "npcs/microdungeons/primevalquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/0",
+          "en": "I grew weary of watching my Apex brothers and sisters being tormented at the hands of the Miniknog, so I left.",
+          "tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+          "reason": "Primeval brush seçili RGBA altı PNGde 0 piksel; aktif spawn/erişim kanıtı yok."
+        },
+        {
+          "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/apex/0",
+          "en": "It makes me happy to see another Apex who has escaped the brutality of the Miniknog.",
+          "tr": "Miniknog’un zulmünden kaçmayı başarmış başka bir Apex görmek beni mutlu ediyor.",
+          "reason": "Wasteland brush pikseli var, fakat etkin dünya/tüketici bağlantısı doğrulanmadı."
+        },
+        {
+          "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/apex/default/0",
+          "en": "I grew weary of watching my Apex brothers and sisters  being tormented at the hands of the Miniknog, so I left.",
+          "tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+          "reason": "Wasteland brush pikseli var, fakat etkin dünya/tüketici bağlantısı doğrulanmadı."
+        },
+        {
+          "asset": "npcs/microdungeons/wastelandquestgiver.npctype",
+          "pointer": "/scriptConfig/dialog/converse/default/default/0",
+          "en": "I grew weary of watching my Apex brothers and sisters being tormented at the hands of the Miniknog, so I left.",
+          "tr": "Miniknog’un Apex kardeşlerime eziyet etmesini izlemekten bıkınca oradan ayrıldım.",
+          "reason": "Wasteland brush pikseli var, fakat etkin dünya/tüketici bağlantısı doğrulanmadı."
+        }
+      ],
+      "translation_source_scope_approved": true,
+      "runtime_visibility_verified": false,
+      "pool_promotion": false,
+      "rule_exception_added": false,
+      "source_files_sha256": {
+        "npcs/microdungeons/hydroquestgiver.npctype": "4ee1abf7f89d6cd186b535595546b2c7993bd66b85abd6065d5aa10fce463c4c",
+        "npcs/microdungeons/primevalquestgiver.npctype": "f147827fcaa3be548c57dc4424781a630fca975cab468253e06aadcc550bae4c",
+        "npcs/microdungeons/wastelandquestgiver.npctype": "a6725ee8dc90a5c6cb576adba8bce467f822a9cca6c565308e6ceb82b12e78ac",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins.dungeon": "ca4b3f162a889674a12f12f7d5897ecce8f05043185e67b3bb33a8ba3c2071b9",
+        "dungeons/missions/wastelandquests.dungeon": "c4a5db516ec74b7633e3c3b05e78adb38706286d34cbfb54e4752a4547aad13c",
+        "dungeons/microdungeons/biomes/labs/lab1.json": "74a3991f4da1adb92dae26c80a394f106ddeb2a57a99f8a0e44ae311e3c241bc",
+        "quests/fu_questlines/other/create_hydrotray.questtemplate": "0a8711ac1a7ad620a50c9d8588536058b7a3301570c7f5d00db8adcd9d725a21",
+        "quests/fu_questlines/battle/gear/create_warcleaver.questtemplate": "a2d52ca0a69932a356198dc0ce51630795935972949dc98923a92d037e7a0e82",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins1.png": "131dcdbc18751b83d7b4fdbc58a92e0480ea448f7baa2aa050622a486855cf57",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins1objects.png": "e2c222a29bd3232b70d15226af38379f5abe15c44f81610cec4b0cc6fb52ea0e",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins2.png": "9802c3644a3e3468eddbf9663f048ccd2f25a4cca2828d31d446748de1e1bc2c",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins2objects.png": "b3ea98923f68b18c14be58cc8595ea6edc692956fdb82bd2aea86ed577cf0e5c",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins3.png": "580815c256566f37a9f85eee77151ad51dab21d858de15e8d880087008abeff2",
+        "dungeons/microdungeons/randomencounter/minigreenruins/minigreenruins3objects.png": "f35f65f47ae5d41465417a1507aac3dc5621a0a81c6dbb39f9a5b526a6ccf941",
+        "dungeons/missions/skyscraperfu.png": "6d2a278a608e608cfe35d4c1c6ef29a973d60841e2f63a7d65d452ebbd43f513",
+        "dungeons/missions/skyscraperfuobjects.png": "af25f626eb3e008b83081755bb3d8554c9622b8de569b81d4e365e7334328cdd",
+        "biomes/surface/arboreal.biome": "16d75c4fbaa5559eb59962ed029985c23a38de0718635f1470dbb3bbfc637140",
+        "biomes/surface/arboreal2.biome": "8fd2031aa37315388caadb8cac7b3614ab38bb4ab7433ed48861921f6f4fd22c",
+        "biomes/surface/arborealdark.biome": "1e86459bbd6d35f1eb451e933ff74144184ecefc022bd598a0a06b6ba370c49e",
+        "biomes/surface/autumnforest.biome": "ecb1a55a088ec4d30b63318c78d930e34a6c23af5f7fa6cebd5f6133e4a49f1c",
+        "biomes/surface/bog.biome": "66384b336d46031da02263cd7223e28c7cd5a91adfb414c1aafba99814f3d389",
+        "biomes/surface/chromatic.biome": "0c6008e4083d6e9fc382aecc8c50d6260fd333b9685dc788160061bc755083fd",
+        "biomes/surface/desertwastes.biome": "3f9992d4681878b752c8c8f1f245c80087f7d49083f93b047365af2c7e11e37c",
+        "biomes/surface/desertwastesdark.biome": "479b8856b23901b46cf397324f5a888a5e3845a1362bb1133703e2d536f44edd",
+        "biomes/surface/eden.biome": "b1f2ddd6cea619f77278f87e1995c67acc5c087365e1f00bc94ab941da677c1c",
+        "biomes/surface/forest.biome.patch": "5df5c351e0e02396938697f2177fe298823771cfdb3de62b97483dc47bf17bc8",
+        "biomes/surface/infernus.biome": "bfe4d1f35c9b4de110d56ad2e612781a6c274eb17ba9bb1c8e774a2dd9be67e3",
+        "biomes/surface/irradiated.biome": "68a0074b2bb7f16af5a88e87afd661f99833aa8f9b1d077db1fe88c6ada7f588",
+        "biomes/surface/jungle.biome.patch": "edc54045431e9650415a25b663c91a64453e05f243f73074346c6616b5250429",
+        "biomes/surface/savannah.biome.patch": "5c817ed5e8d5ef37f1faadb325fe0f5a1844635e62124584fc8465061c641bab",
+        "biomes/surface/snow.biome.patch": "fce0e77be84c9bc21aad13fcd972fcaf1bc7daa9d7b88629e538171bb5553b26",
+        "biomes/surface/thickjungle.biome": "024a94544f3aff7ac69d261daf31d543012be4db7a0cef39f680482960341763",
+        "biomes/surface/volcanic.biome.patch": "153690e7745a3bb29ab2f8bcb32ee8763f3f267ab08d35b184e9a449b5e1b595",
+        "biomes/surface_detached/atropusgoreforest.biome": "4d0b574530d34d76760b73738d88e8d223baef846b50c5c11bbcc82574517c43",
+        "biomes/surface_detached/fieldofsugar.biome": "a1d0d5da37946de703db902f320ceb8b437335f95d0f6d6f98b0914fc1629c28",
+        "biomes/surface_detached/goreforest.biome": "bb36debdd00e7ec6015361b5fbdb64a619f31bb500d5354f3cb425d12b14c24b",
+        "biomes/surface_detached/hauntedforest.biome": "8ce1fcecc6be0c3111e3c5d3a0601f7b74d51d90f3b75cbbdd9c4347de15f077",
+        "biomes/surface_detached/hauntedgraveyard.biome": "b256ccfa8bdf6fef2057ca885af14aec02fc955505ba5b98b07498d8349c89a4",
+        "dungeons/microdungeons/biomes/labs/fulabs.dungeon": "f7b5d2081076ba8c35ceeabb59d3bea26d7e862f3d135908f9c1bf034f0eeb0c",
+        "npcs/avianfirebringer.npctype": "4fd8fa99ef8b12a9318e3984bb2d3095f7b9f29f4ca521d5b569be3265a58eab"
+      },
+      "authority": "Existing52source-bound fields explicitly requested by the human in turn01a1b292-0c97-7321-ad9a-d67b6e8f4fa3/message01a1b292-14ab-7db0-8f81-44fbcb046181;Sol source review,not a new live-visibility attestation.",
+      "reason": "All six exact fields are present in the original user-authorized baseline and real pinned NPC source. Their translations can be reviewed and patched without changing membership or claiming active spawn. Primeval brush has zero matching pixels;Wasteland has one pixel but no verified active-world link. Those limitations remain explicit. No new confirmed candidate,consumer,spawn or LQA approval is asserted."
+    },
+    "source_mechanics_not_live_tested": true
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "All9EN/TR variants and9occurrences in3complete NPCs manually reviewed.1field/1expression corrected;all20681prior catalog fields unchanged. Both single/double-space raw English variants remain exact and share a reviewed Turkish counterpart.",
+    "All the other idiots restores the all quantifier and avoids a literal outside-location reading for idiomatic out there. Jersey Shore title and the separate turned-to-murder sentence retained. Thumbtacks is raptiye;fire-farting unicorn question and target follow-up retained without censoring or adding lore/mechanics.",
+    "Five fullreply locks plus one Jersey Shore proper-title lock added:6newLOCKED,total1335. The two whitespace variants of the Miniknog weary line are separate forms under one term,not rewritten source. Existing Miniknog proper name and source TM reused. No existing terms changed and no generic murder/shore/brothers rule,context/TM/preserve/format exception added.",
+    "Six Primeval/Wasteland source-scope requests resolved only for translation of fields already in the human-authorized frozen52baseline. No new confirmed candidate or live-visibility approval. Original packetSHA and immutable membership retained;runtime limitations remain explicit in source_context.source_visibility_review.",
+    "Apex/default distinguishes speaker from target;Apex/apex selects both. Apex brothers and sisters remains community speech without invented biological family or escape planet. All6repeated occurrences compared with complete Avianfirebringer source TM.",
+    "All3NPCs inherit missingvanilla outpostcivilian;differentFUcivilian is not substituted as active consumer. Hydro/create_hydrotray andWasteland/create_warcleaver static quest links read;Primevalrooted quest lines are comments,not active parsed keys. Questgrant/turnin/reward effects not verified.",
+    "Lab1 contains one static humanhydroquestgiver,38tilesets/34missing,no radio. Primevalhuman brush has0selectedRGBA pixels across6PNGimages,thirdpartchance0;22minigreen biomeplacement definitions do not prove this NPC spawns. WastelandFloran brush has1pixel in skyscraperfuobjects.png but no verified active-world link. PNGcounts/brush/metadata/maxSpawnCount are not live spawn/access proof.",
+    "Identity,equipment,stats,rewards and gameplay unchanged. Existing source strings translated without runtime reachability repair. LQA NOT TESTED. First52baseline dialogue publications must finish before object/item drafts;no new scheduler,Steam/game/shutdown."
+  ],
+  "format_review": {
+    "technical_ids_changed": false,
+    "control_exceptions_added": 0,
+    "tm_exception_added": false,
+    "preserve_bindings_added": 0,
+    "context_exceptions_added": 0
+  }
+}

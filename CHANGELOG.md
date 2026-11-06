@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v0.102.0 Beta — Mikro zindan görev verenleri
+
+Üç NPC dosyasında 9 yeni konuşma alanı, 9 bağlam ve 6 farklı İngilizce kaynak eklendi. Katalog 20.690 alana ulaştı; önceki 20.681 alan korundu.
+
+Tam Sol kaynak/dil incelemesinde 1 alanda 1 ifade düzeltildi. Altı yeni LOCKED kaydı; toplam 1.335. Altı alanın canlı erişimi doğrulanmadı; mevcut kaynak metinleri çevrildi, yeni görünürlük onayı veya oyun mantığı değişikliği eklenmedi. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/microdungeons-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V102_20261107.md)
+
 ## v0.101.0 Beta — Alien Jungle savaş replikleri
 
 İki NPC dosyasında 10 yeni saldırı repliği, 10 bağlam ve 10 farklı kaynak eklendi. Katalog 20.681 alana ulaştı; önceki 20.671 alan korundu.
