@@ -1,0 +1,38 @@
+[
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Headlamp 2^reset;: 2m\n^yellow;^reset;^cyan;Immune^reset;: Poisoned: 90s"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Kafa Lambası 2^reset;: 2 dk\n^yellow;^reset;^cyan;Bağışıklık^reset;: Zehirlenme: 90 sn"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Headlamp 2^reset;: 2m\r\n^yellow;^reset;^cyan;Immune^reset;: Poisoned: 90s"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Kafa Lambası 2^reset;: 2 dk\n^yellow;^reset;^cyan;Bağışıklık^reset;: Zehirlenme: 90 sn"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Gaze Lemon"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Bakış Limonu"
+    }
+  ]
+]

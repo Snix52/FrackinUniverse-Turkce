@@ -1,0 +1,38 @@
+[
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Energy x1.2^reset;: 2m \n^green;Type: Fruit^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Enerji x1.2^reset;: 2 dk \n^green;Tür: Meyve^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Energy x1.2^reset;: 2m \r\n^green;Type: Fruit^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Enerji x1.2^reset;: 2 dk \n^green;Tür: Meyve^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Sweetscoop"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tatlı Kepçe Meyvesi"
+    }
+  ]
+]

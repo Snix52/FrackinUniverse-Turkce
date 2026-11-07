@@ -1,0 +1,38 @@
+[
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Heal 20^reset;: 2s \n^green;Type: Nut^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;20 Can Yenileme^reset;: 2 sn \n^green;Tür: Kuruyemiş^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;Heal 20^reset;: 2s \r\n^green;Type: Nut^reset;"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^cyan;20 Can Yenileme^reset;: 2 sn \n^green;Tür: Kuruyemiş^reset;"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Tearnut"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Tearnut"
+    }
+  ]
+]

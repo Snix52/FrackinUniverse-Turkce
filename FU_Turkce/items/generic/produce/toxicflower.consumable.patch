@@ -1,0 +1,26 @@
+[
+  [
+    {
+      "op": "test",
+      "path": "/description",
+      "value": "^yellow;^reset;^red;Poisoned^reset;: 12s"
+    },
+    {
+      "op": "replace",
+      "path": "/description",
+      "value": "^yellow;^reset;^red;Zehirlenme^reset;: 12 sn"
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/shortdescription",
+      "value": "Toxic Flower"
+    },
+    {
+      "op": "replace",
+      "path": "/shortdescription",
+      "value": "Zehirli Çiçek"
+    }
+  ]
+]
