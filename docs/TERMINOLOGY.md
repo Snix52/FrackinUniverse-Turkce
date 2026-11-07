@@ -1377,6 +1377,16 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | Pearlpea Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | İnci Bezelyesi Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
 | Pussplum Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | İrin Eriği Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
 | Wartweed Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | Wartweed Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
+| Kadavan Spices | Mahsul, malzeme ve tüketilebilir eşya | Tam eşya adı | Kadavan Baharatları | - | LOCKED | Aynı bölge adına ve rafine baharat ailesine bağlı eşya başlığı. |
+| Blizzberry | Hasat ürünü ve ilgili tarifte geçen mahsul adı | Özel ad | Blizzberry | - | LOCKED | Blizzberry Tohumu ve hasat havuzu |
+| Crystal Broccoli | Mahsul, malzeme ve tüketilebilir eşya | Tam eşya adı | Kristal Brokoli | - | LOCKED | Kristal bitki ekstraksiyon çıktısı, yenebilir eşya adı ve Plating Table bağlantısı. |
+| Erithian Algae | Mahsul, malzeme ve tüketilebilir eşya | Tam eşya adı | Erithian Yosunu | - | LOCKED | Yakıt olarak tanımlı eşyanın başlığı ve biyoyakıt açıklaması. |
+| Fayshroom | Hasat ürünü ve ilgili tarifte geçen mahsul adı | Özel ad | Fayshroom | - | LOCKED | Fayshroom Sporu ve hasat havuzu |
+| Refined Kadavan Spices | Mahsul, malzeme ve tüketilebilir eşya | Tam eşya adı | Rafine Kadavan Baharatları | - | LOCKED | Kadavan baharatlarının rafine ürün başlığı. |
+| Gemglow | Hasat ürünü ve ilgili tarifte geçen mahsul adı | Özel ad | Gemglow | - | LOCKED | Gemglow Tohumu ve hasat havuzu |
+| Genesiberry | Hasat ürünü ve ilgili tarifte geçen mahsul adı | Özel ad | Genesiberry | - | LOCKED | Genesiberry Tohumu ve hasat havuzu |
+| Tearnut | Hasat ürünü ve ilgili tarifte geçen mahsul adı | Özel ad | Tearnut | - | LOCKED | Tearnut Ezmesi tarifi ve mevcut katalog adı |
+| Violiroot | Hasat ürünü ve ilgili tarifte geçen mahsul adı | Özel ad | Violiroot | - | LOCKED | Violiroot Tabağı ve hasat havuzu |
 
 ## Kural
 

@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## v0.109.0 Beta — Mahsuller ve tüketilebilir eşyalar
+
+113 mahsul, malzeme ve tüketilebilir eşyaya 225 Türkçe ad ve açıklama eklendi. Kristal bitki açıklaması ile Kristal Brokoli adı ekstraksiyon ve sepet tariflerine göre eşleştirildi. v0.106–v0.108 içerik manifestleriyle birlikte 567 alan bu birleşik v0.109 paketinde yayımlanıyor. Toplam 21.273 katalog alanı. Üç Frogg yüz ifadesi kaynak biçimiyle korunuyor. [İnceleme](docs/reviews/produce-items-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V109_20261107.md)
+
 ## v0.108.0 Beta — Dekoratif mahsul sepetleri
 
 39 mahsul sepetine 337 Türkçe ad, açıklama ve türe özgü inceleme metni eklendi. Sepetlerle ürünleri birbirine bağlayan Plating Table tarifleri terim incelemesinde kullanıldı. Eşya aktarımında kullanılan üç kategori kimliği kalan metin adaylarından çıkarıldı. [İnceleme](docs/reviews/produce-objects-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V108_20261107.md)
