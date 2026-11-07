@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## v0.106.0 Beta — Frogg yüz ifadesi koruması
+
+Üç NPCnin aynı yazarlı `0_o` yüz ifadesi üç exact kaynak alanında korundu. Yeni çevrilmiş cümle ve düzeltme yok; üç yapılandırılmış koruma alanı eklendi. Katalog 20.709 alana ulaştı; önceki 20.706 alan korundu. Bir yeni LOCKED ve üç dar `preserve_utterance` bağı; toplam 1.354 LOCKED. İlk engellenen önkontrol kaydı korundu, gerçek yeni planner basis ile final önkontrol geçti. Genel İngilizce cümle izni veya global QA motoru değişikliği yok. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/frogg-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V106_20261107.md)
+
 ## v0.105.0 Beta — Tekinsiz kiracı tüccar başlıkları
 
 İki NPC dosyasında 4 yeni pencere metni, 4 bağlam ve 4 farklı kaynak eklendi: iki başlık ve iki alt başlık. Katalog 20.706 alana ulaştı; önceki 20.702 alan korundu. Tam Sol kaynak/dil incelemesinde dört Türkçe metin korundu, düzeltme yok. Dört yeni tam UI metni LOCKED; toplam 1.353. Mevcut Delilik ve tekinsiz karşılıkları ile baştaki iki boşluk korundu. 54 ilişkili inceleme alanı dışarıda. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/cultistmerchants-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V105_20261107.md)

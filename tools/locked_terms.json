@@ -16462,6 +16462,22 @@
       "forbidden": "-",
       "status": "LOCKED",
       "note": "v0.105Sol:bütün4EN/TR varyantı ve exactoccurrence kaynakları incelendi. Sanatçı rolü,kâbus ilhamı,yapı taşları kelime oyunu ve mevcut Delilik/tekinsiz karşılıkları korunur. Artist yalnız tam metin denetimidir,enforce_in_text veya stem eklenmez. Genel nightmare/build/temple veya İngilizce koruma izni değildir;eksik vanilla/aktif tüketici ve canlı LQA onayı yok."
+    },
+    {
+      "source": "0_o",
+      "tr": "0_o",
+      "mode": "preserve",
+      "forms": [
+        {
+          "en": "0_o",
+          "tr": "0_o"
+        }
+      ],
+      "context": "Üç Frogg NPCnin exact attack/default/default/3 yüz ifadesi",
+      "type": "Yazarlı yüz ifadesi",
+      "forbidden": "-",
+      "status": "LOCKED",
+      "note": "v0.106Sol:üç exact preserve_utterance bağlamıyla yazarlı yüz ifadesi korunur. Rakam sıfır/küçük o değişmez. Komşu saldırı varyantı,başka konuşma alanı veya sıradan İngilizce cümleyi koruma izni değildir. Kaynak kapsamı onayı canlı görünürlük veya davranış tüketicisi onayı değildir."
     }
   ],
   "context_exceptions": [
@@ -19090,6 +19106,33 @@
       "en": "There are said to be irregularities in the ruin walls that can be dug out with a matter manipulator.",
       "tr": "Harabe duvarlarında Madde Manipülatörü ile kazılabilecek sıra dışı kısımlar olduğu söyleniyor.",
       "reason": "Mount Gigant köylüsü gerçek harabe duvarlarının kazılabilir sıra dışı bölümlerinden söz eder;The Ruin adlı özel varlık değildir. Tam asset/pointer/EN/TR ile sınırlı bağlam onayı;Madde Manipülatörü karşılığı korunur,komşu replik/yanlış Türkçe/ordinary English koruma izni değildir."
+    },
+    {
+      "asset": "npcs/evernight/froggunner.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/3",
+      "en": "0_o",
+      "tr": "0_o",
+      "term_source": "0_o",
+      "preserve_utterance": true,
+      "reason": "Kaynak üç NPCde yazarlı yüz ifadesidir: rakam sıfır,alt çizgi,küçük o. Türkçe konuşma cümlesi veya O_o normalleştirmesi kaynak anlamını/biçimini değiştirir. Yalnız bu exact asset/pointer/EN/TR korunur;komşu varyant,başka NPC veya sıradan İngilizce cümle izni değildir. Canlı görünürlük/tüketici onayı değildir."
+    },
+    {
+      "asset": "npcs/evernight/frogrocketeer.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/3",
+      "en": "0_o",
+      "tr": "0_o",
+      "term_source": "0_o",
+      "preserve_utterance": true,
+      "reason": "Kaynak üç NPCde yazarlı yüz ifadesidir: rakam sıfır,alt çizgi,küçük o. Türkçe konuşma cümlesi veya O_o normalleştirmesi kaynak anlamını/biçimini değiştirir. Yalnız bu exact asset/pointer/EN/TR korunur;komşu varyant,başka NPC veya sıradan İngilizce cümle izni değildir. Canlı görünürlük/tüketici onayı değildir."
+    },
+    {
+      "asset": "npcs/evernight/frogsniper.npctype",
+      "pointer": "/scriptConfig/dialog/attack/default/default/3",
+      "en": "0_o",
+      "tr": "0_o",
+      "term_source": "0_o",
+      "preserve_utterance": true,
+      "reason": "Kaynak üç NPCde yazarlı yüz ifadesidir: rakam sıfır,alt çizgi,küçük o. Türkçe konuşma cümlesi veya O_o normalleştirmesi kaynak anlamını/biçimini değiştirir. Yalnız bu exact asset/pointer/EN/TR korunur;komşu varyant,başka NPC veya sıradan İngilizce cümle izni değildir. Canlı görünürlük/tüketici onayı değildir."
     }
   ],
   "forbidden_regexes": [
