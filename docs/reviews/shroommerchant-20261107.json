@@ -1,0 +1,500 @@
+{
+  "schema": 1,
+  "status": "APPROVED_LANGUAGE_AND_SOURCE_PREFLIGHT",
+  "date": "2026-11-07",
+  "cycle_id": "fu-auto-15-20261017",
+  "cycle_round": 30,
+  "run_id": "fu-ten-20261106",
+  "run_round": 8,
+  "base_commit": "eaaa2141fef588e605f3c3f9307e2c513c7e0c17",
+  "source_pin": "bb58383c0d16c1152e3439e606b39ff82288b586",
+  "scope": {
+    "fields": 2,
+    "context_groups": 2,
+    "unique_english_strings": 2,
+    "assets": {
+      "npcs/biome/shroommerchant.npctype": 2
+    },
+    "direct_source_fields": 2,
+    "fu_layered_fields": 0,
+    "excluded_review_fields": 15,
+    "live_runtime_visibility_verified": false
+  },
+  "changes": {
+    "corrected_fields": 1,
+    "corrected_sentences": 1,
+    "new_locked": 2,
+    "locked_total": 1356
+  },
+  "new_locked_terms": 2,
+  "new_locked_names": [
+    "Shroomy salesman selling stuff",
+    "Agaran Merchant"
+  ],
+  "locked_total": 1356,
+  "existing_terms_modified": [],
+  "preserve_bindings": [],
+  "context_bindings": [],
+  "approved_packet_sha256": "e2abe7fec9319775469e929998a3aa85b19ef4edbd864f91cc7d379f83092ccf",
+  "luna_original_packet_sha256": "d3e93bc3b10db88912a699a9492d19ee0b1b046a30d93fe46cd862b83bc5174b",
+  "approved_rows_sha256": "bea97853a9da70b83a6937a1656569519b1064c5e9aa3a14e2c3d40ad7884a34",
+  "units": [
+    {
+      "unit_id": "00b9b9102fe6519670bcbef268d5135a0e56359e975040eed12c88f4c82e3e51",
+      "occurrences": [
+        {
+          "asset": "npcs/biome/shroommerchant.npctype",
+          "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+          "origin": "npcs/biome/shroommerchant.npctype"
+        }
+      ],
+      "en": "  Shroomy salesman selling stuff",
+      "before": "  Mantar kılıklı satıcı, bir şeyler satar",
+      "after": "  Mantar kılıklı satıcı, öteberi satar",
+      "changes": 1,
+      "reason": "Floran kıyafetindeki shroomhead çeşitleri mantar görünümüne bağlam sağlıyor. Öteberi sözü genel mal satışını kısa ve oyuncu bir üslupla veriyor. Satıcı ve satar tekrarını koruyor."
+    },
+    {
+      "unit_id": "5c5a78ac899fa72b0149b3a83a02810c3af4800a3d35b264c7244a764e5758cc",
+      "occurrences": [
+        {
+          "asset": "npcs/biome/shroommerchant.npctype",
+          "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/title",
+          "origin": "npcs/biome/shroommerchant.npctype"
+        }
+      ],
+      "en": "  Agaran Merchant",
+      "before": "  Agaran Tüccarı",
+      "after": "  Agaran Tüccarı",
+      "changes": 0,
+      "reason": "Mağaza başlığı mevcut Agaran halk adını ve tüccar rolünü koruyor. İki baş boşluğu kaynaktaki pencere düzeniyle eşleşiyor."
+    }
+  ],
+  "corrections": [
+    {
+      "unit_id": "00b9b9102fe6519670bcbef268d5135a0e56359e975040eed12c88f4c82e3e51",
+      "occurrences": [
+        {
+          "asset": "npcs/biome/shroommerchant.npctype",
+          "pointer": "/scriptConfig/merchant/paneLayoutOverride/windowtitle/subtitle",
+          "origin": "npcs/biome/shroommerchant.npctype"
+        }
+      ],
+      "en": "  Shroomy salesman selling stuff",
+      "before": "  Mantar kılıklı satıcı, bir şeyler satar",
+      "after": "  Mantar kılıklı satıcı, öteberi satar",
+      "changes": 1,
+      "reason": "Floran kıyafetindeki shroomhead çeşitleri mantar görünümüne bağlam sağlıyor. Öteberi sözü genel mal satışını kısa ve oyuncu bir üslupla veriyor. Satıcı ve satar tekrarını koruyor."
+    }
+  ],
+  "independent_frozen_preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 2,
+    "context_units": 2,
+    "qa": {
+      "catalog_units_checked": 36054,
+      "raw_units_checked": 115,
+      "locked_terms": 1354
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "preflight": {
+    "status": "TECHNICAL_PREFLIGHT_PASS_LANGUAGE_REVIEW_REQUIRED",
+    "fields": 2,
+    "context_units": 2,
+    "qa": {
+      "catalog_units_checked": 36054,
+      "raw_units_checked": 115,
+      "locked_terms": 1356
+    },
+    "note": "Runtime evidence is human-attested, not automatically proven. Existing exact-source manifests, allowlists, build, CI and LQA remain required."
+  },
+  "source_context": {
+    "status": "SOURCE_PREREAD_ONLY",
+    "files": {
+      "npcs/biome/shroommerchant.npctype": "b65fe3aad94de9f162ef4ea9dd957c91fec09554f21a375d1bfbbf69cc66f238",
+      "npcs/merchantpools.config.patch": "9e02cafeeda0a2e33cd5c647af85aea5c9113330f7c3010d7794e5da342e0d8e",
+      "items/active/crewcontracts/crewcontract_agaran.activeitem": "9326dfb6db2e2b0d677dd2dbe62409feeef77607f6eba949658297ff51de591e",
+      "dungeons/microdungeons/biomes/fungal/agaran2.json": "74689808180ab971992265fa6b42911b4375fb510296c06794eb29efae429e39",
+      "dungeons/microdungeons/biomes/fungal/agaran3.json": "4b58703bcfbffde03f7fbba78f1c99b00f0a1c78cf4fd17db7b4dcb4ea96b660",
+      "dungeons/microdungeons/randomencounter/floran/floranencounter.dungeon": "4be2e676461eee755483fc6bc3f930c4770c02ddafcdfff637ec2c6e348c8937",
+      "dungeons/microdungeons/randomencounter/floran/floranencounterfire.dungeon": "6ca65c8c4a2c2e54f5625ca15ee6037367bb04c2283974eb75441063ce480251",
+      "dungeons/microdungeons/randomencounter/shroomencounter/shroomencounter.dungeon": "211edf6ca12b2426755e653e1d9e81978d90808cbf72773be1709d160cae21b0",
+      "dungeons/microdungeons/randomencounter/shroomencounter/shroomencounterfire.dungeon": "9532400d7e49290e343240d66d42fd2fd4e105f328511b486eb7776580d8c4d2",
+      "dungeons/missions/forestoffae/forestoffae.json": "ef650621223ef65fc1f7ab59ff2a9c9f51b75ac834b45558dce09726ae0d1e36",
+      "dungeons/worldgen/fungalden/anchor1.json": "325d035dc59caa07560d9473c64574fd29a35b3b89c2a1f9d49640ba2b493823",
+      "dungeons/worldgen/fungalden/anchor2.json": "172d82b6f23c8f0bee1a22fec63ef047705889a75381c0a150e9dd9ec56011d9"
+    },
+    "scanned_images": {
+      "dungeons/microdungeons/randomencounter/floran/florancaged1.png": "e1c80f818ee7cd88e28722ac5091e6c4cd0f9df1a35b42a5aa9ace7da376f879",
+      "dungeons/microdungeons/randomencounter/floran/florancaged1objects.png": "99b8e60caba8e14eb540bd1458bf6d09c3d396b32ef3a6282136a3dbe96a9a4a",
+      "dungeons/microdungeons/randomencounter/floran/florancaged2.png": "8e067e2e6b8a9ba5ca11cf3e07c254f724312e72fb1fa2f9b25e8ec9fece81b1",
+      "dungeons/microdungeons/randomencounter/floran/florancaged2objects.png": "7952db91d0224cdc5e7e99a387286fa68e0e47d6f4131dbbbc9c57b266243d40",
+      "dungeons/microdungeons/randomencounter/floran/giantpod.png": "6b1eecb3d99a3b8a6860b837454c847dd414970118afd85dae76cab5d98bb8c4",
+      "dungeons/microdungeons/randomencounter/floran/giantpodobjects1.png": "254e631421281070a1f0cdc4ae935d4c27557c4d597c65533d505ea36f7ab30b",
+      "dungeons/microdungeons/randomencounter/floran/giantpodobjects2.png": "e70e9311b003702d48e6dd946b6dea47da7512eccbcd6ba68ac53db18ab67a38",
+      "dungeons/microdungeons/randomencounter/floran/nomads.png": "a3ded573e4817ec789d341bb23114374f432f55a7497c2853774593c89b81ce5",
+      "dungeons/microdungeons/randomencounter/floran/nomadsobjects.png": "ef997b6b30ee429a6ea44ff61aa2d3bea2ac356d6ef09d3abc04f42c3830e249",
+      "dungeons/microdungeons/randomencounter/floran/outhouse1.png": "39ee46e365e74df69e6e58962655f3f570f3658282afc50e0c4d98fc1f91b73a",
+      "dungeons/microdungeons/randomencounter/floran/outhouse1objects.png": "03381d85d3689c845849fc45c32e623420586ad258aa56e68a8f4c385b1ba309",
+      "dungeons/microdungeons/randomencounter/floran/pincave.png": "46537afc681b575a11d37aa11ab207fc2de03f81f41ea6ebae66ed71eb57bcef",
+      "dungeons/microdungeons/randomencounter/floran/pincaveobjects.png": "e65fc92a277763b0af9160659dccd8cbd58ffa9aaffa49801071f7f4161c4b74",
+      "dungeons/microdungeons/randomencounter/floran/pinfriend.png": "94aea736549d7cc6226a420c577b15a5332f10efadfcd66c9aa11da08fd15e7c",
+      "dungeons/microdungeons/randomencounter/floran/pinfriend2.png": "8e88c44d7380ccc1830b7f6800ed3075d390b17d6223228861cee13220a03a61",
+      "dungeons/microdungeons/randomencounter/floran/pinfriend2objects.png": "058ade9b2410160e6b7475ff55cbe31f8cf0d729a3b0dbdfbcd3823be3918f48",
+      "dungeons/microdungeons/randomencounter/floran/pinfriendobjects.png": "80c5773f80d8d19f7c4a2e820479ca354cf046cce632c2b6614e7bdfdb6c0af9",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp2.png": "556471ff64934d59c8c07b5cc12c6902b96b5e4a896d9febb96134a045e07894",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp2objects.png": "0b592dd0c88bfc0bda4b6afb14f05d924151620240877b372823c4a458f6c7bf",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp3.png": "ac7c05693ffc5c71aa86e7b971ef4e00ef6de4600c8e9b52f8e6a30b5be2e84f",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp3objects1.png": "accacfeef8211073d0c99b0b3babb46a4e0e4a92843fd35b4e4cfb052a36d793",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp3objects2.png": "d6ece7faaa87ffa9a10b94e80d7cf693835c5ba2753896e4a977035324706c97",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp5.png": "1b9a8342cab64352b55e5e5184efa68ab718827d32aca0167fdc756b0dd17e09",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp5objects.png": "5dff258de7092588369fef3ba3841ec40f51b7062d45dddb377912680c1be4db",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp5objects2.png": "1ec76e5241226ef98341913a0e01bf0f3ddb7adfbcca9a4a0fee3a4cb36380d0",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp6.png": "104b374577eb05a0a3af1306aadc4661475e51588bcc0a911fe431c69b365169",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp6objects.png": "230cc4c05b54ca0b05ec80cd21a614c4b3eb051e84f518525dfad5f999470d7c",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp6objects2.png": "733a8dbf1f789a6c81b13931d33ef56bf1274d103c5b6fae730556fe97ac1fd7",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp7.png": "ca4a3ae6e855f077eb25ca81afd611dae31156e9655f490bd016e761d1334a4d",
+      "dungeons/microdungeons/randomencounter/floran/shroomcamp7objects.png": "5021716814abc1f12ea2034bd27c4a10784368e8fe085278ea208c84262f22e7",
+      "dungeons/microdungeons/randomencounter/floran/shroompatch1.png": "c4ab75eded824cd0e6d17da52479255fe2bf283d5157acc6929d463fbf996a35",
+      "dungeons/microdungeons/randomencounter/floran/shroompatch1objects.png": "edf85638890daba37746d593b4430fb48ffae84221248707d9b1fca4ae7bc669",
+      "dungeons/microdungeons/randomencounter/shroomencounter/1.png": "bd611f458246774c104a6db4309966c58991fb26d9f5f211a0dfeb94d69175e5",
+      "dungeons/microdungeons/randomencounter/shroomencounter/1a.png": "0b2f5bdf65bd2c3c293e78d755ca6aa0eaf0ec0734353b237bdd0cc2d7a6a35e",
+      "dungeons/microdungeons/randomencounter/shroomencounter/2.png": "3da488b700791c8b1d217131886f2f02568fb531b88c71ccfd7b0eb8c41ba648",
+      "dungeons/microdungeons/randomencounter/shroomencounter/2a.png": "38e19f0994f5a14e3cad331646007f718e38cf1ba368363371e83f08d39b97f8",
+      "dungeons/microdungeons/randomencounter/shroomencounter/3.png": "8d296bef37506a7fcd45244a7673d847f9ea8cfc00c925d3c618135287ab83d4",
+      "dungeons/microdungeons/randomencounter/shroomencounter/3a.png": "0d56c0c2cb149359b75a60f6e7b9a4d1e2e30b4077524217e9b46674d8371898",
+      "dungeons/microdungeons/randomencounter/shroomencounter/4.png": "4d49d0e1b37ade5d87d846f054163d3b5c49357d363c05e00a737b759a748dd8",
+      "dungeons/microdungeons/randomencounter/shroomencounter/4a.png": "3f4441b4f94553bb94dc4c1db1b8ce7a0c71b34c6e6cbe9fe6966c78835a3c7d",
+      "dungeons/microdungeons/randomencounter/shroomencounter/5.png": "7abaf32988a98812fe368ab759558b2cf4545d456661dbe78ca13c31cbbe6502",
+      "dungeons/microdungeons/randomencounter/shroomencounter/5a.png": "e83d85c16e52ced1cc7e7a12a039d3fd58a52afe663ac68c8d5116ab725937c5",
+      "dungeons/microdungeons/randomencounter/shroomencounter/6.png": "e6be2c9f6bbf28f4500bca8387c7d551d4fe847138aeee97f7d733ef734f9736",
+      "dungeons/microdungeons/randomencounter/shroomencounter/6a.png": "de5ceb7f7d732ad097c282bd4b8c6b078c006bf7fa0896f813fa503478ddf54a"
+    },
+    "merchant_title_fields": {
+      "title": "  Agaran Merchant",
+      "subtitle": "  Shroomy salesman selling stuff"
+    },
+    "placements": [
+      {
+        "asset": "dungeons/microdungeons/biomes/fungal/agaran2.json",
+        "selected_static_references": [
+          {
+            "id": 812,
+            "npc": "floran",
+            "typeName": "shroommerchant",
+            "parameters": null
+          }
+        ],
+        "tilesets": 36,
+        "missing_tilesets": 34
+      },
+      {
+        "asset": "dungeons/microdungeons/biomes/fungal/agaran3.json",
+        "selected_static_references": [
+          {
+            "id": 812,
+            "npc": "floran",
+            "typeName": "shroommerchant",
+            "parameters": null
+          }
+        ],
+        "tilesets": 36,
+        "missing_tilesets": 34
+      },
+      {
+        "asset": "dungeons/missions/forestoffae/forestoffae.json",
+        "selected_static_references": [
+          {
+            "id": 460,
+            "npc": "floran",
+            "typeName": "shroommerchant",
+            "parameters": null
+          }
+        ],
+        "tilesets": 21,
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/anchor1.json",
+        "selected_static_references": [
+          {
+            "id": 169,
+            "npc": "floran",
+            "typeName": "shroommerchant",
+            "parameters": null
+          }
+        ],
+        "tilesets": 21,
+        "missing_tilesets": 20
+      },
+      {
+        "asset": "dungeons/worldgen/fungalden/anchor2.json",
+        "selected_static_references": [
+          {
+            "id": 154,
+            "npc": "floran",
+            "typeName": "shroommerchant",
+            "parameters": null
+          }
+        ],
+        "tilesets": 21,
+        "missing_tilesets": 20
+      }
+    ],
+    "image_dungeons": [
+      {
+        "asset": "dungeons/microdungeons/randomencounter/floran/floranencounter.dungeon",
+        "brush_index": 0,
+        "brush": {
+          "value": [
+            150,
+            255,
+            100,
+            255
+          ],
+          "comment": "shroom merchant",
+          "brush": [
+            [
+              "npc",
+              {
+                "kind": "npc",
+                "species": "floran",
+                "typeName": "shroommerchant",
+                "parameters": {
+                  "persistent": true
+                }
+              }
+            ]
+          ]
+        },
+        "matching_color_definitions": 1,
+        "anchors": [
+          "floranhut1",
+          "nomads",
+          "outhouse1",
+          "outhouse2",
+          "outhouse3",
+          "florancaged1",
+          "florancaged2",
+          "shroomcamp1",
+          "shroomcamp2",
+          "shroomcamp3",
+          "pinfriend",
+          "pinfriend2",
+          "shroomcamp4",
+          "shroomcamp5",
+          "shroomcamp6",
+          "shroomcamp7",
+          "pincave",
+          "shroompatch1",
+          "giantpod"
+        ],
+        "configured_parts": 19,
+        "matching_or_missing_image_layers": []
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/floran/floranencounterfire.dungeon",
+        "brush_index": 0,
+        "brush": {
+          "value": [
+            150,
+            255,
+            100,
+            255
+          ],
+          "comment": "shroom merchant",
+          "brush": [
+            [
+              "npc",
+              {
+                "kind": "npc",
+                "species": "floran",
+                "typeName": "shroommerchant",
+                "parameters": {
+                  "persistent": true
+                }
+              }
+            ]
+          ]
+        },
+        "matching_color_definitions": 1,
+        "anchors": [
+          "floranhut1",
+          "nomads",
+          "outhouse1",
+          "outhouse2",
+          "outhouse3",
+          "florancaged1",
+          "florancaged2",
+          "shroomcamp1",
+          "shroomcamp2",
+          "shroomcamp3",
+          "pinfriend",
+          "pinfriend2",
+          "shroomcamp4",
+          "shroomcamp5",
+          "shroomcamp6",
+          "shroomcamp7",
+          "pincave",
+          "shroompatch1",
+          "giantpod"
+        ],
+        "configured_parts": 19,
+        "matching_or_missing_image_layers": []
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/shroomencounter/shroomencounter.dungeon",
+        "brush_index": 0,
+        "brush": {
+          "value": [
+            150,
+            255,
+            100,
+            255
+          ],
+          "comment": "shroom merchant",
+          "brush": [
+            [
+              "npc",
+              {
+                "kind": "npc",
+                "species": "floran",
+                "typeName": "shroommerchant",
+                "parameters": {
+                  "persistent": true
+                }
+              }
+            ]
+          ]
+        },
+        "matching_color_definitions": 1,
+        "anchors": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "configured_parts": 6,
+        "matching_or_missing_image_layers": [
+          {
+            "asset": "dungeons/microdungeons/randomencounter/shroomencounter/2a.png",
+            "matching_pixels": 1
+          }
+        ]
+      },
+      {
+        "asset": "dungeons/microdungeons/randomencounter/shroomencounter/shroomencounterfire.dungeon",
+        "brush_index": 0,
+        "brush": {
+          "value": [
+            150,
+            255,
+            100,
+            255
+          ],
+          "comment": "shroom merchant",
+          "brush": [
+            [
+              "npc",
+              {
+                "kind": "npc",
+                "species": "floran",
+                "typeName": "shroommerchant",
+                "parameters": {
+                  "persistent": true
+                }
+              }
+            ]
+          ]
+        },
+        "matching_color_definitions": 1,
+        "anchors": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "configured_parts": 6,
+        "matching_or_missing_image_layers": [
+          {
+            "asset": "dungeons/microdungeons/randomencounter/shroomencounter/2a.png",
+            "matching_pixels": 1
+          }
+        ]
+      }
+    ],
+    "shroommerchant_pool_writes": [
+      {
+        "index": 23,
+        "operation": {
+          "op": "add",
+          "path": "/shroommerchant/0/1/-",
+          "value": {
+            "item": {
+              "name": "crewcontract_agaran"
+            },
+            "rarity": 0.9
+          }
+        }
+      },
+      {
+        "index": 24,
+        "operation": {
+          "op": "add",
+          "path": "/shroommerchant/1/1/-",
+          "value": {
+            "item": {
+              "name": "crewcontract_agaran"
+            },
+            "rarity": 0.9
+          }
+        }
+      }
+    ],
+    "missing_vanilla": [
+      "npcs/merchant.npctype",
+      "npcs/merchantpools.config",
+      "interface/merchant/merchant.config",
+      "dialog/shroom.config"
+    ],
+    "active_merchant_consumer_verified": false,
+    "actual_stock_verified": false,
+    "live_spawn_verified": false,
+    "lqa": "NOT TESTED",
+    "evidence": {
+      "npcs/biome/shroommerchant.npctype": "Tam NPC, pencere override, başlıklar, Floran kıyafeti ve diyalog bağlantıları okundu.",
+      "npcs/merchantpools.config.patch": "İki kaynak eklemesi shroommerchant havuzlarına Agaran mürettebat sözleşmesini bağlar.",
+      "items/active/crewcontracts/crewcontract_agaran.activeitem": "Mürettebat sözleşmesi ve Floran alanı bağlam için incelendi."
+    },
+    "active_consumer_verified": false
+  },
+  "runtime_review": {
+    "reviewed": true,
+    "note": "Son iki öncelikli NPC alanı. Bir mağaza başlığı ve bir alt başlık, bir kısa ifade düzeltmesi, iki tam arayüz terimi. Oynanış LQA NOT TESTED.",
+    "evidence": [
+      {
+        "source": "npcs/biome/shroommerchant.npctype",
+        "note": "Tam NPC, pencere override, başlıklar, Floran kıyafeti ve diyalog bağlantıları okundu."
+      },
+      {
+        "source": "npcs/merchantpools.config.patch",
+        "note": "İki kaynak eklemesi shroommerchant havuzlarına Agaran mürettebat sözleşmesini bağlar."
+      },
+      {
+        "source": "items/active/crewcontracts/crewcontract_agaran.activeitem",
+        "note": "Mürettebat sözleşmesi ve Floran alanı bağlam için incelendi."
+      }
+    ]
+  },
+  "lqa_status": "NOT TESTED",
+  "limitations": [
+    "İki alandaki baş boşlukları korundu. Agaran adı ve mağaza alt başlığının mantar görünümüyle ilgili söz oyunu kaynak bağlamıyla incelendi.",
+    "Beş statik NPC referansı, dört dungeon brush kaydı ve kaynak PNG renk eşleşmeleri yerleştirme verisidir. Canlı karşılaşma, stok ve arayüz görünümü doğrulanmadı.",
+    "Vanilla merchant tabanı, mağaza penceresi, temel havuz ve shroom diyalog konfigürasyonu FU kopyasında bulunamadı. İlişkili 15 inceleme alanı kapsam dışında kaldı."
+  ]
+}

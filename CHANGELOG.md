@@ -1,5 +1,9 @@
 # Sürüm notları
 
+## v0.107.0 Beta — Agaran tüccarının dükkân metinleri
+
+Agaran tüccarının mağaza başlığı ve alt başlığı Türkçeleştirildi. Alt başlıkta bir kısa ifade düzeltildi ve iki tam arayüz karşılığı sözlüğe eklendi. Başlangıçtaki 52 NPC ve diyalog alanının kaynak ve dil incelemesi tamamlandı. [İnceleme](docs/reviews/shroommerchant-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V107_20261107.md)
+
 ## v0.106.0 Beta — Frogg yüz ifadesi koruması
 
 Üç NPCnin aynı yazarlı `0_o` yüz ifadesi üç exact kaynak alanında korundu. Yeni çevrilmiş cümle ve düzeltme yok; üç yapılandırılmış koruma alanı eklendi. Katalog 20.709 alana ulaştı; önceki 20.706 alan korundu. Bir yeni LOCKED ve üç dar `preserve_utterance` bağı; toplam 1.354 LOCKED. İlk engellenen önkontrol kaydı korundu, gerçek yeni planner basis ile final önkontrol geçti. Genel İngilizce cümle izni veya global QA motoru değişikliği yok. FU 6.5.8 pini aynı; oynanış LQA NOT TESTED. [Gerekçeli inceleme](docs/reviews/frogg-20261107.json) · [Oyun kontrolü](docs/lqa/LQA_V106_20261107.md)
