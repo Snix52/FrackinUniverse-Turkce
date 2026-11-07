@@ -1372,6 +1372,11 @@ Durumlar: PROPOSED, APPROVED, REVIEW, LOCKED.
 | 0_o | Üç Frogg NPCnin exact attack/default/default/3 yüz ifadesi | Yazarlı yüz ifadesi | 0_o | - | LOCKED | v0.106Sol:üç exact preserve_utterance bağlamıyla yazarlı yüz ifadesi korunur. Rakam sıfır/küçük o değişmez. Komşu saldırı varyantı,başka konuşma alanı veya sıradan İngilizce cümleyi koruma izni değildir. Kaynak kapsamı onayı canlı görünürlük veya davranış tüketicisi onayı değildir. |
 | Shroomy salesman selling stuff | Agaran tüccarı pencere başlığı ve alt başlığı | Tam arayüz metni | Mantar kılıklı satıcı, öteberi satar | - | LOCKED | Floran kıyafetindeki shroomhead çeşitleri mantar görünümüne bağlam sağlıyor. Öteberi sözü genel mal satışını kısa ve oyuncu bir üslupla veriyor. Satıcı ve satar tekrarını koruyor. |
 | Agaran Merchant | Agaran tüccarı pencere başlığı ve alt başlığı | Tam arayüz metni | Agaran Tüccarı | - | LOCKED | Mağaza başlığı mevcut Agaran halk adını ve tüccar rolünü koruyor. İki baş boşluğu kaynaktaki pencere düzeniyle eşleşiyor. |
+| Diodia Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | Diodia Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
+| Orange Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | Portakal Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
+| Pearlpea Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | İnci Bezelyesi Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
+| Pussplum Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | İrin Eriği Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
+| Wartweed Basket | Dekoratif mahsul sepeti adı ve Plating Table tarifleri | Tam nesne adı | Wartweed Sepeti | - | LOCKED | Yerleşik mahsul adı korunarak tarifin iki yönde kullandığı sepet adı doğrulandı. |
 
 ## Kural
 
